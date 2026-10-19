@@ -7,7 +7,7 @@ import { briefDate, createBrief } from '@/lib/server/dailyBrief';
 import { getStripe } from '@/lib/stripe';
 
 /**
- * Cron: the daily update on /admin/opportunities (lib/server/dailyBrief).
+ * Cron: the daily update on the /admin Today tab (lib/server/dailyBrief).
  * Schedule: weekdays 10:00 UTC (vercel.json). Hobby crons fire somewhere in
  * the hour, so it is ready by 7am Eastern in summer and 6am in winter.
  * Writes once per Eastern day; ?force=1 rewrites.

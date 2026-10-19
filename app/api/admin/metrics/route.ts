@@ -9,7 +9,7 @@ import { TEST_REQUEST_PICKS } from '@/lib/test-requests';
 import { LAUNCH_EXPERIMENT, LAUNCH_VARIANTS } from '@/lib/email-launch';
 import type { DocumentSnapshot, QuerySnapshot } from 'firebase-admin/firestore';
 
-// Growth/revenue metrics for /admin/v2. Everything here is derived from two
+// Growth/revenue metrics for the /admin Growth tab. Everything here is derived from two
 // sources of truth: the users collection (signups, activity, subscription) and
 // the payments collection (real Stripe amounts). The client only buckets and
 // renders; all uniqueness-sensitive aggregation (active users) happens here.

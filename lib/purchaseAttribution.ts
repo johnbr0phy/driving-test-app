@@ -5,7 +5,7 @@ import { EXAMS_V2 } from "@/lib/v2/registry";
 // ("training_set_4", "practice_test_4", "stats_page", "results_page"...) or,
 // for v2 exams, "<examId>_<where>" ("sat_dashboard", "act_drill",
 // components/v2/V2Paywall). The webhook stores both on the payment, and
-// /admin/opportunities reads older payments' location back from Stripe.
+// The /admin Today tab reads older payments' location back from Stripe.
 
 /** Which exam a checkout location belongs to: a v2 exam id, else the DMV. */
 export function purchaseExam(location: string | null | undefined): string {

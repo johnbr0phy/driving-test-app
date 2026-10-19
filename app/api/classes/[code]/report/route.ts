@@ -12,7 +12,7 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
   const owner = await requireClassOwner(request, code);
   if (!owner.ok) return owner.response;
   const classRef = getAdminDb().collection("classes").doc(code);
-  // How often the teacher comes back to look, for /admin/teach. A site admin's look doesn't count.
+  // How often the teacher comes back to look, for the /admin Teachers tab. A site admin's look doesn't count.
   if (!owner.admin) {
     await classRef.update({ teacherViews: FieldValue.increment(1), teacherLastViewedAt: new Date().toISOString() }).catch(() => {});
   }

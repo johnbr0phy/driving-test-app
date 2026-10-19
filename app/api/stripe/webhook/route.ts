@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
         currency: session.currency,
         status: 'succeeded',
         email: session.metadata?.email || session.customer_email,
-        // What the buyer paid from, for revenue by exam and paywall on /admin/opportunities.
+        // What the buyer paid from, for revenue by exam and paywall on the /admin Today tab.
         location: session.metadata?.location || null,
         exam: purchaseExam(session.metadata?.location),
         createdAt: new Date().toISOString(),

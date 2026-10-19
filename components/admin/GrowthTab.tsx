@@ -2,15 +2,13 @@
 
 import { runQuestionsBackfill } from "@/lib/questionsBackfillClient";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
-import { useAdmin } from "@/hooks/useAdmin";
-import { RefreshCw, ArrowUpRight, ArrowDownRight, ExternalLink } from "lucide-react";
+import { ArrowUpRight, ArrowDownRight } from "lucide-react";
 import {
   AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, LabelList,
 } from "recharts";
-import Link from "next/link";
+import { TabError, TabHeader, TabLoading, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
 
 // ─── Palette (validated: dataviz reference palette, light mode) ─────────────
 const COLORS = {
@@ -855,45 +853,12 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
 }
 
 // ─── Page ───────────────────────────────────────────────────────────────────
-export default function AdminV2Page() {
-  const { user, loading: authLoading } = useAuth();
-  const isAdmin = useAdmin();
-  const router = useRouter();
-  const [metrics, setMetrics] = useState<Metrics | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [refreshing, setRefreshing] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+// The Growth tab on /admin: the scoreboard over time, from /api/admin/metrics.
+export function GrowthTab() {
+  const { user } = useAuth();
+  const { data: metrics, error, loading, refreshing, reload: fetchMetrics } = useAdminFetch<Metrics>("/api/admin/metrics");
   const [range, setRange] = useState<Range>("90d");
   const [engageMetric, setEngageMetric] = useState<"active" | "questions">("active");
-
-  const fetchMetrics = async (forceRefresh = false) => {
-    forceRefresh ? setRefreshing(true) : setLoading(true);
-    setError(null);
-    try {
-      const idToken = await user?.getIdToken();
-      if (!idToken) { setError("Not authenticated"); return; }
-      const res = await fetch(`/api/admin/metrics${forceRefresh ? "?refresh=true" : ""}`, {
-        headers: { Authorization: `Bearer ${idToken}` },
-      });
-      if (!res.ok) {
-        const err = await res.json().catch(() => ({}));
-        throw new Error(err.error || err.details || `API error: ${res.status}`);
-      }
-      setMetrics(await res.json());
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to load metrics");
-    } finally {
-      setLoading(false);
-      setRefreshing(false);
-    }
-  };
-
-  useEffect(() => {
-    if (!authLoading && !user) { router.push("/login"); return; }
-    if (!authLoading && user && !isAdmin) { router.push("/dashboard"); return; }
-    if (user && isAdmin) fetchMetrics();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user, authLoading, isAdmin, router]);
 
   // One-time history seed for the per-exam split of the questions aggregate:
   // live counts only started when the split shipped, so until the backfill
@@ -957,25 +922,8 @@ export default function AdminV2Page() {
     };
   }, [metrics]);
 
-  if (authLoading || loading) {
-    return (
-      <div className="flex-1 bg-white dark:bg-gray-900 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand" />
-      </div>
-    );
-  }
-
-  if (error || !metrics || !series || !sparks) {
-    return (
-      <div className="flex-1 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-4 py-8 max-w-6xl">
-          <div className="rounded-xl border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950 p-4">
-            <p className="text-red-600 dark:text-red-400 font-medium">{error || "Failed to load metrics"}</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  if (loading) return <TabLoading />;
+  if (error || !metrics || !series || !sparks) return <TabError message={error || "Failed to load metrics"} />;
 
   const { kpis } = metrics;
   const isToday = range === "today";
@@ -992,47 +940,12 @@ export default function AdminV2Page() {
   const revenueBarLabels = series.revenue.length <= 13;
 
   return (
-    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <div className="container mx-auto px-4 py-8 max-w-6xl">
-
-        {/* Header */}
-        <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
-          <div>
-            <h1 className="text-xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">TigerTest Growth</h1>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-              Live Firestore + Stripe data · updated{" "}
-              {new Date(metrics.generatedAt).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}
-            </p>
-          </div>
-          <div className="flex items-center gap-2">
-            <Link
-              href="/admin/teach"
-              className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5"
-            >
-              Teachers <ExternalLink className="h-3 w-3" />
-            </Link>
-            <Link
-              href="/admin/opportunities"
-              className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5"
-            >
-              Opportunities <ExternalLink className="h-3 w-3" />
-            </Link>
-            <Link
-              href="/admin"
-              className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5"
-            >
-              Classic admin <ExternalLink className="h-3 w-3" />
-            </Link>
-            <button
-              onClick={() => fetchMetrics(true)}
-              disabled={refreshing}
-              className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 rounded-lg px-3 py-1.5 shadow-sm"
-            >
-              <RefreshCw className={`h-3.5 w-3.5 ${refreshing ? "animate-spin" : ""}`} />
-              Refresh
-            </button>
-          </div>
-        </div>
+    <>
+      <TabHeader
+        subtitle={<>Live Firestore + Stripe data · updated {fmtUpdated(metrics.generatedAt)}</>}
+        onRefresh={() => fetchMetrics(true)}
+        refreshing={refreshing}
+      />
 
         {/* KPI row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -1269,8 +1182,6 @@ export default function AdminV2Page() {
 
         {/* Funnel: first visit to purchase */}
         {metrics.visitorFunnel && <VisitorFunnel data={metrics.visitorFunnel} />}
-
-      </div>
-    </div>
+    </>
   );
 }

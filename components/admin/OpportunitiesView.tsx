@@ -1,15 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { RefreshCw, ExternalLink, Sparkles, ChevronDown, CheckCircle2, AlertTriangle, XCircle, DollarSign, TrendingUp, Repeat, Wrench } from "lucide-react";
+import { Sparkles, ChevronDown, CheckCircle2, AlertTriangle, XCircle, DollarSign, TrendingUp, Repeat, Wrench } from "lucide-react";
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
 import type { DailyBrief } from "@/lib/server/dailyBrief";
+import { TabHeader, fmtUpdated } from "@/components/admin/AdminTabParts";
 
-// The /admin/opportunities page body, given the API payload. Kept apart
-// from the page so it renders without an admin session.
+// The Opportunities tab body on /admin, given the API payload. Kept apart
+// from the fetch so it renders without an admin session.
 
-// Same validated palette as /admin/v2: blue for people, green for money.
+// Same validated palette as the Growth tab: blue for people, green for money.
 const COLORS = {
   users: "#2a78d6",
   revenue: "#008300",
@@ -176,34 +176,12 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
   const maxPaywallViews = Math.max(...data.paywalls.map((p) => p.hitsAll), 1);
 
   return (
-    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <div className="container mx-auto px-4 py-8 max-w-6xl">
-        {/* Header */}
-        <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
-          <div>
-            <h1 className="text-xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">TigerTest Opportunities</h1>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-              Where the next dollar and the next visitor come from · Firestore + Stripe · updated{" "}
-              {new Date(data.generatedAt).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}
-            </p>
-          </div>
-          <div className="flex items-center gap-2">
-            <Link href="/admin/v2" className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5">
-              Growth <ExternalLink className="h-3 w-3" />
-            </Link>
-            <Link href="/admin" className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5">
-              Classic admin <ExternalLink className="h-3 w-3" />
-            </Link>
-            <button
-              onClick={onRefresh}
-              disabled={refreshing}
-              className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 rounded-lg px-3 py-1.5 shadow-sm"
-            >
-              <RefreshCw className={`h-3.5 w-3.5 ${refreshing ? "animate-spin" : ""}`} />
-              Refresh
-            </button>
-          </div>
-        </div>
+    <>
+      <TabHeader
+        subtitle={<>Where the next dollar and the next visitor come from · Firestore + Stripe · updated {fmtUpdated(data.generatedAt)}</>}
+        onRefresh={onRefresh}
+        refreshing={refreshing}
+      />
 
         <BriefCard brief={data.brief ?? null} onWrite={onWriteBrief} writing={writingBrief} error={briefError} />
 
@@ -488,7 +466,6 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
             })}
           </ul>
         </Card>
-      </div>
-    </div>
+    </>
   );
 }

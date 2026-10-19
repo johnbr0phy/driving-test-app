@@ -2,13 +2,14 @@
 
 import { Fragment, useState } from "react";
 import Link from "next/link";
-import { RefreshCw, ExternalLink, ChevronDown } from "lucide-react";
+import { TabHeader, fmtUpdated } from "@/components/admin/AdminTabParts";
+import { ExternalLink, ChevronDown } from "lucide-react";
 import type { TeachAdminPayload, TeachAdminClass } from "@/lib/server/teachAdmin";
 
-// The /admin/teach page body, given the API payload. Kept apart from the
+// The Teachers tab body on /admin, given the API payload. Kept apart from the
 // page so it renders without an admin session.
 
-// Same validated palette as /admin/v2: blue for people.
+// Same validated palette as the Growth tab: blue for people.
 const BLUE = "#2a78d6";
 const BLUE_LIGHT = "#a9cdf5";
 
@@ -245,33 +246,19 @@ function ClassRow({ c }: { c: TeachAdminClass }) {
 export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdminPayload; onRefresh: () => void; refreshing: boolean }) {
   const t = data.totals;
   return (
-    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <div className="container mx-auto px-4 py-8 max-w-6xl">
-        <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
-          <div>
-            <h1 className="text-xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">Teachers &amp; classes</h1>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-              The /teach channel · updated {new Date(data.generatedAt).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}
-              {t.internalClassesHidden > 0 && ` · ${t.internalClassesHidden} internal ${t.internalClassesHidden === 1 ? "class" : "classes"} hidden`}
-            </p>
-          </div>
-          <div className="flex items-center gap-2">
-            <Link href="/admin/v2" className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5">
-              Growth <ExternalLink className="h-3 w-3" />
-            </Link>
-            <Link href="/teach" className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5">
-              /teach <ExternalLink className="h-3 w-3" />
-            </Link>
-            <button
-              type="button"
-              onClick={onRefresh}
-              disabled={refreshing}
-              className="inline-flex items-center gap-1.5 text-xs rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 py-1.5 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 disabled:opacity-50"
-            >
-              <RefreshCw className={`h-3.5 w-3.5 ${refreshing ? "animate-spin" : ""}`} /> Refresh
-            </button>
-          </div>
-        </div>
+    <>
+      <TabHeader
+        subtitle={<>
+          The /teach channel · updated {fmtUpdated(data.generatedAt)}
+          {t.internalClassesHidden > 0 && ` · ${t.internalClassesHidden} internal ${t.internalClassesHidden === 1 ? "class" : "classes"} hidden`}
+        </>}
+        onRefresh={onRefresh}
+        refreshing={refreshing}
+      >
+        <Link href="/teach" className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5">
+          /teach <ExternalLink className="h-3 w-3" />
+        </Link>
+      </TabHeader>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
           <Tile label="Teachers" value={fmtInt(t.teachers)} sub={`${fmtInt(t.classes)} classes, ${fmtInt(t.classesWithStudents)} with students`} />
@@ -368,7 +355,6 @@ export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdm
             <CountList rows={data.landingReferrers} label={(k) => k} empty="No referring sites yet." />
           </Card>
         </div>
-      </div>
-    </div>
+    </>
   );
 }

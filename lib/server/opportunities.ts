@@ -7,8 +7,8 @@ import { isInternalEmail } from '@/lib/internal';
 import { shareDailyCounts } from '@/lib/shareCounts';
 import { paywallHitFeature, purchaseExam, purchaseLocationLabel } from '@/lib/purchaseAttribution';
 
-// /admin/opportunities: where the next dollar and the next user come from.
-// /admin/v2 says how the site is doing; this page says what to do about it:
+// The /admin Today tab: where the next dollar and the next user come from.
+// The /admin Growth tab says how the site is doing; this page says what to do about it:
 // which exams earn and which could, which paywalls sell, which channels send
 // people, whether they come back, and which numbers can't be trusted yet.
 // Everything is read live from Firestore plus three read-only Stripe listings
@@ -250,7 +250,7 @@ export async function buildOpportunities(
     });
   }
   // Premium accounts with no payment record (granted before payments
-  // existed, or by hand) count at list price on their purchase day, like /admin/v2.
+  // existed, or by hand) count at list price on their purchase day, like the /admin Growth tab.
   let premiumWithoutPayment = 0;
   for (const u of users) {
     if (!u.premium || paidUserIds.has(u.id)) continue;

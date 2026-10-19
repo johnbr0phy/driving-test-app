@@ -6,7 +6,7 @@
  * second run always lands on the same one. Every link goes through
  * /api/email/click, which records the variant that was clicked before
  * redirecting, and the variant is stamped on the user doc at send time
- * (users/{uid}.emailVariants.newTests2026). /admin/v2 compares them.
+ * (users/{uid}.emailVariants.newTests2026). The /admin Growth tab compares them.
  *
  * Readers studying anything other than the DMV are not in the test: these
  * pitches are written for teens just past the permit test.
@@ -152,7 +152,7 @@ function variant(
 }
 
 /**
- * Every variant in the test, sent or retired. /admin/v2 reports on all of
+ * Every variant in the test, sent or retired. The /admin Growth tab reports on all of
  * them, so a retired variant stays here; add its id to RETIRED_VARIANTS to
  * stop sending it. Ids stay fixed (no renumbering) so recorded results keep
  * their meaning.

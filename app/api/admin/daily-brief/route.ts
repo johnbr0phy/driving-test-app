@@ -6,7 +6,7 @@ import { buildOpportunities } from '@/lib/server/opportunities';
 import { createBrief } from '@/lib/server/dailyBrief';
 import { getStripe } from '@/lib/stripe';
 
-// "Write a fresh one" on /admin/opportunities: today's update on demand,
+// "Write a fresh one" on the /admin Today tab: today's update on demand,
 // replacing the morning's (lib/server/dailyBrief).
 export const maxDuration = 60;
 

@@ -4,7 +4,7 @@ import { isInternalEmail } from "@/lib/internal";
 import type { MemberDoc } from "@/lib/server/classReport";
 import { SCHOOL_KIND_LABELS, type SchoolKind } from "@/lib/schoolHosts";
 
-// /admin/teach: is the instructor channel working? From the classes
+// The /admin Teachers tab: is the instructor channel working? From the classes
 // collection (every class and its members) plus the analytics/teach counters
 // written by lib/teachTracking.ts (landing views, create-class clicks, class
 // link views), and the schoolReferrals hosts (lib/schoolReferral.ts): teachers

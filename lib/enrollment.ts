@@ -2,7 +2,7 @@ import { auth } from "@/lib/firebase";
 import { isInternalBrowser } from "@/lib/internal";
 
 // ─── Enrolled per exam ───────────────────────────────────────────────────────
-// "Enrolled" on /admin/v2 = distinct people who answered at least one question
+// "Enrolled" on the /admin Growth tab = distinct people who answered at least one question
 // in an exam. Each (exam, person) is one doc in the enrollments collection,
 // keyed by uid when signed in or by a random browser id for guests, so the
 // count is unique by construction. Signing in claims the browser's guest

@@ -130,7 +130,7 @@ and icon unions), bank import in `lib/examData.ts`, category keys in `types/inde
 `i18n/*.ts`, a `[data-theme]` block in `app/globals.css`, catalog blurb, org line, hub group and
 search aliases in `lib/testCatalog.ts`, the icon in `components/CDLHeader.tsx` and
 `components/TestIcon.tsx`, seven wrappers under `app/<slug>/`, the landing page, a CLAUDE.md
-bullet, and the two landing screenshots (`scripts/shoot_landing.js`).
+bullet, and the landing screenshots, light and dark (`scripts/shoot_landing.js`).
 
 Then `npx tsc --noEmit`, `npm run lint`, `npm run build`, and curl the landing, `/og/<id>`,
 `/tests` and `/sitemaps/exams` for 200s. Commit only when all of that is green.

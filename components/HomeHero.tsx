@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { ThemedScreenshot } from "@/components/ThemedScreenshot";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
@@ -78,7 +78,7 @@ export function HomeHero() {
       <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="relative">
           <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-            <Image
+            <ThemedScreenshot
               src="/mobile.png"
               alt="TigerTest mobile DMV practice test training mode"
               width={280}
@@ -91,7 +91,7 @@ export function HomeHero() {
 
         <div className="relative">
           <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-            <Image
+            <ThemedScreenshot
               src="/desktop.png"
               alt="TigerTest desktop DMV practice test interface"
               width={700}

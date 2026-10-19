@@ -68,6 +68,9 @@ source outline, hub group.
 npm run build && PORT=3123 npm start &
 node .claude/skills/exam-bank/scripts/shoot_landing.js http://localhost:3123 public/landing <id>:<slug>:<idBase+1>
 ```
+This writes four files: `<id>-desktop.png`, `<id>-mobile.png` and their `-dark.png` twins, which
+`ThemedScreenshot` (used by `ExamLandingHero`) shows when the site is dark. Never ship a light shot
+without its dark twin. v2 exams use `<id>:<slug>:v2:<drillKey>`.
 (`playwright` must be resolvable by node; install it in a scratch folder if it is not in
 node_modules. Chromium is preinstalled in cloud sessions.)
 

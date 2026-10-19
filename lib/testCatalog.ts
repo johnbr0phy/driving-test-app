@@ -45,8 +45,8 @@ const dmv: TestCatalogEntry = {
   // Tests 1-2 and training sets 1-2 are free; 3-4 need the one-time premium
   // unlock (app/dashboard/page.tsx), so this card cannot say plain "Free".
   pricing: "2 free, 2 premium",
-  // Spanish for every state; Vietnamese and Korean for selected states.
-  languages: ["en", "es", "vi", "ko"],
+  // Spanish for every state; Vietnamese, Korean and Chinese for selected states.
+  languages: ["en", "es", "vi", "ko", "zh"],
 };
 
 const EXAM_BLURBS: Record<string, string> = {

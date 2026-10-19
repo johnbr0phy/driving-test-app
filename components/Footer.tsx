@@ -7,6 +7,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
 import { isViState } from "@/data/viStates";
 import { isKoState } from "@/data/koStates";
+import { isZhState } from "@/data/zhStates";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { examLanguages, getExamByPath } from "@/lib/exams";
@@ -31,6 +32,7 @@ export function Footer() {
   const isEs = language === "es";
   const isVi = language === "vi";
   const isKo = language === "ko";
+  const isZh = language === "zh";
   const v1Exam = getExamByPath(themePath);
   const v2Exam = getExamV2ByPath(themePath);
   const exam = v1Exam ?? (v2Exam ? { id: v2Exam.id } : undefined);
@@ -49,10 +51,12 @@ export function Footer() {
     pathname?.endsWith("-examen-practica-dmv") ||
     pathname?.endsWith("-thi-thu-dmv") ||
     pathname?.endsWith("-dmv-pilgi-siheom") ||
+    pathname?.endsWith("-dmv-bishi-lianxi") ||
     pathname === "/practice-tests-by-state" ||
     pathname === "/es/examenes-practica-por-estado" ||
     pathname === "/vi/thi-thu-dmv-theo-tieu-bang" ||
-    pathname === "/ko/juibyeol-dmv-pilgi-siheom";
+    pathname === "/ko/juibyeol-dmv-pilgi-siheom" ||
+    pathname === "/zh/gezhou-dmv-bishi-lianxi";
 
   // A translated exam (CDL in Spanish) gets the toggle on its app pages, not
   // on its English landing page.
@@ -79,7 +83,9 @@ export function Footer() {
                           ? `/vi/${state.slug}-thi-thu-dmv`
                           : isKo && isKoState(state.code)
                             ? `/ko/${state.slug}-dmv-pilgi-siheom`
-                            : `/${state.slug}-dmv-practice-test`
+                            : isZh && isZhState(state.code)
+                              ? `/zh/${state.slug}-dmv-bishi-lianxi`
+                              : `/${state.slug}-dmv-practice-test`
                     }
                     className="hover:text-brand"
                   >
@@ -95,7 +101,9 @@ export function Footer() {
                     ? "/vi/thi-thu-dmv-theo-tieu-bang"
                     : isKo
                       ? "/ko/juibyeol-dmv-pilgi-siheom"
-                      : "/practice-tests-by-state"
+                      : isZh
+                        ? "/zh/gezhou-dmv-bishi-lianxi"
+                        : "/practice-tests-by-state"
               }
               className="text-brand-dark hover:text-brand-darker font-medium"
             >

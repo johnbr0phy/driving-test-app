@@ -233,7 +233,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
     }
 
     guestPrompt.record(isCorrect);
-    recordClassAnswer(exam.id, currentQuestion, isCorrect);
+    recordClassAnswer(exam.id, currentQuestion, isCorrect, answer);
 
     // Track progress
     if (isSetMode && setId) {

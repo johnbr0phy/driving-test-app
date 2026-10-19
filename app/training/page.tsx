@@ -237,7 +237,7 @@ function TrainingPageContent() {
       playIncorrectSound();
     }
 
-    recordClassAnswer(DMV_EXAM_ID, currentQuestion, isCorrect);
+    recordClassAnswer(DMV_EXAM_ID, currentQuestion, isCorrect, answer);
 
     // Track progress
     if (isSetMode) {

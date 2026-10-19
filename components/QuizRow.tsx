@@ -28,6 +28,7 @@ export function QuizRow({
   className,
   initialAnswer,
   revealAnswer,
+  optionPicks,
   media,
   expanded: controlledExpanded,
   onToggleExpanded,
@@ -48,6 +49,9 @@ export function QuizRow({
   // Shows the right answer marked and nothing picked, for review rows where
   // the viewer did not answer (the teacher's class page).
   revealAnswer?: boolean;
+  // With revealAnswer: how many times each wrong option was picked, in
+  // option order. Picked wrong options show red with their count.
+  optionPicks?: number[];
   // Optional slot (e.g. a road-sign image) rendered next to the question text.
   media?: React.ReactNode;
   // Omit to let the row manage its own open/closed state (daily quiz, stats,
@@ -132,13 +136,14 @@ export function QuizRow({
               options.map((opt, idx) => {
                 const isCorrect = opt === correctAnswer;
                 const isPicked = picked === idx;
+                const pickCount = !isCorrect ? optionPicks?.[idx] ?? 0 : 0;
                 const letter = ["A", "B", "C", "D"][idx];
 
                 let optionStyle = "bg-gray-50 dark:bg-gray-950 border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200";
                 if (answered) {
                   if (isCorrect) {
                     optionStyle = "bg-green-50 dark:bg-green-950 border-green-200 dark:border-green-800 text-green-900 dark:text-green-200";
-                  } else if (isPicked) {
+                  } else if (isPicked || pickCount > 0) {
                     optionStyle = "bg-red-50 dark:bg-red-950 border-red-200 dark:border-red-800 text-red-700 dark:text-red-300";
                   } else {
                     optionStyle = "bg-gray-50 dark:bg-gray-950 border-gray-100 dark:border-gray-800 text-gray-500 dark:text-gray-400";
@@ -164,7 +169,7 @@ export function QuizRow({
                       className={`font-semibold shrink-0 ${
                         answered && isCorrect
                           ? "text-green-700 dark:text-green-300"
-                          : answered && isPicked
+                          : answered && (isPicked || pickCount > 0)
                             ? "text-red-500 dark:text-red-400"
                             : "text-gray-500 dark:text-gray-400"
                       }`}
@@ -172,6 +177,11 @@ export function QuizRow({
                       {letter}
                     </span>
                     <span className="flex-1 min-w-0">{opt}</span>
+                    {pickCount > 0 && (
+                      <span className="shrink-0 text-xs font-semibold tabular-nums text-red-600 dark:text-red-400">
+                        {pickCount} picked
+                      </span>
+                    )}
                     {answered && <span className="sr-only">{isCorrect ? (picked !== null ? t("trainingCard.correct") : "Right answer") : isPicked ? t("trainingCard.incorrect") : ""}</span>}
                     {answered && isCorrect && (
                       <Check className="h-4 w-4 text-green-600 dark:text-green-400 shrink-0 mt-0.5" strokeWidth={3} />

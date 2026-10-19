@@ -36,7 +36,7 @@ function hasPositionDependentAnswers(question: Question): boolean {
 export function shuffleQuestionOptions(question: Question): Question {
   // Don't shuffle if any option references other options by letter
   if (hasPositionDependentAnswers(question)) {
-    return question;
+    return { ...question, optionOrder: "ABCD" };
   }
 
   const options = [
@@ -61,5 +61,6 @@ export function shuffleQuestionOptions(question: Question): Question {
     optionD: shuffled[3].text,
     correctAnswer: newCorrectLetter,
     correctIndex: newCorrectIndex,
+    optionOrder: shuffled.map((o) => o.letter).join(""),
   };
 }

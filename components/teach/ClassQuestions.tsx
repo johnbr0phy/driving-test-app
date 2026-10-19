@@ -9,8 +9,23 @@ function pct(correct: number, answered: number): number {
   return answered ? Math.round((correct / answered) * 100) : 0;
 }
 
+const LETTERS = ["A", "B", "C", "D", "E", "F"];
+
+/** "Most picked wrong: B" for a row's subtitle, when any wrong pick was recorded. */
+export function topWrongPick(picks: number[]): string | null {
+  const top = picks.reduce((best, n, i) => (n > (picks[best] ?? 0) ? i : best), 0);
+  return picks[top] > 0 ? `Most picked wrong: ${LETTERS[top]}` : null;
+}
+
+/** Misses from before wrong picks were recorded, said once under the options. */
+export function untrackedNote(picks: number[], missed: number): string | null {
+  const untracked = missed - picks.reduce((s, n) => s + n, 0);
+  return untracked > 0 ? `${untracked} ${untracked === 1 ? "miss" : "misses"} from before we recorded which answer was picked.` : null;
+}
+
 // Every question the class answered, as the /stats rows: tap one to see the
-// options with the right answer marked, the class's counts and the explanation.
+// options with the right answer marked, the wrong ones the class picked (with
+// counts), the class's counts and the explanation.
 const QUESTIONS_SHOWN = 10;
 
 export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] }) {
@@ -57,10 +72,11 @@ export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] })
               chipLabel={chip.label}
               chipColorClass={chip.color}
               question={q.question}
-              subtitle={q.topic}
+              subtitle={[q.topic, topWrongPick(q.picks)].filter(Boolean).join(" · ")}
               options={q.options}
               correctAnswer={q.answer}
               revealAnswer
+              optionPicks={q.picks}
               renderFooter={() => (
                 <div className="pt-1 px-1 space-y-1.5">
                   <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
@@ -68,6 +84,7 @@ export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] })
                     <span>Right: <span className={`font-semibold ${scoreText("good")}`}>{q.answered - q.missed}</span></span>
                     <span>Missed: <span className={`font-semibold ${scoreText("low")}`}>{q.missed}</span></span>
                   </div>
+                  {untrackedNote(q.picks, q.missed) && <p className="text-xs text-gray-500 dark:text-gray-400">{untrackedNote(q.picks, q.missed)}</p>}
                   {q.explanation && <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">{q.explanation}</p>}
                 </div>
               )}

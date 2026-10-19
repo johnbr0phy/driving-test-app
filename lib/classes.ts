@@ -184,7 +184,7 @@ export interface ClassStudentDetail {
   /** Judged topics below the pass line, weakest first, at most three. Empty until STUDENT_MIN_ANSWERS. */
   focus: string[];
   /** Questions the student missed (ids into ClassReport.questions), most-missed first. */
-  missed: { questionId: string; missed: number; answered: number }[];
+  missed: { questionId: string; missed: number; answered: number; picks: number[] }[];
   tests: { testNumber: number; best: number; last: number | null; attempts: number }[];
 }
 
@@ -201,6 +201,11 @@ export interface ClassQuestionRow {
   explanation: string;
   answered: number;
   missed: number;
+  /**
+   * Wrong picks per option, in `options` order. Misses recorded before picks
+   * were tracked are not in it, so it can sum to less than `missed`.
+   */
+  picks: number[];
 }
 
 export interface ClassReport extends ClassSummary {
@@ -224,6 +229,8 @@ export interface ClassAnswerEvent {
   c: string;
   /** answered correctly */
   ok: boolean;
+  /** A wrong answer's pick: the option's index in the bank's order. */
+  p?: number;
 }
 
 export interface ClassTestEvent {

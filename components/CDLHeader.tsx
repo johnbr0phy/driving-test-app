@@ -15,6 +15,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { createT, type Language } from "@/i18n";
 import Image from "next/image";
 import { TestSwitcher } from "@/components/TestSwitcher";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { AdminLink } from "@/components/AdminLink";
 import { TeachLink } from "@/components/TeachLink";
 import { useExamStarted } from "@/hooks/useExamStarted";
@@ -123,6 +124,7 @@ export function CDLHeader() {
 
         <div className="flex items-center gap-2 sm:gap-4">
           <TestSwitcher />
+          <ThemeToggle />
           {onLanding && landingLangs.length > 1 && (
             <LanguageSwitcher languages={landingLangs} current={pageLang} onSelect={goToLanding} />
           )}

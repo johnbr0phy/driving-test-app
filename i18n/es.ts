@@ -257,6 +257,12 @@ export const es: TranslationKeys = {
     processing: "Procesamiento",
     embeddingMicrotomy: "Inclusión y microtomía",
     staining: "Tinción",
+    stainRoutine: "Tinción: H&E, colorantes y montaje",
+    stainCarbohydrates: "Tinción: carbohidratos y amiloide",
+    stainConnective: "Tinción: tejido conectivo, músculo y nervio",
+    stainMicroorganisms: "Tinción: microorganismos",
+    stainPigments: "Tinción: pigmentos, minerales y lípidos",
+    stainImmuno: "Tinción: IHQ, IF e ISH",
     laboratoryOperations: "Operaciones de laboratorio",
     // CST (surgical technologist) categories
     preoperativePreparation: "Preoperative Preparation",

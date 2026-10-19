@@ -4,6 +4,7 @@ import { Question, TestSession, UserAnswer, TestAttemptStats, QuestionPerformanc
 import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
+import { splitLegacySets } from '@/lib/legacySetSplits';
 import type { Language } from '@/i18n';
 import { examAnalyticsKey, examFamilyId, examTestIds, getExamById, getExamByStateCode, getExamForQuestionId, getExamForSetId, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
 
@@ -912,7 +913,7 @@ export const useStore = create<AppState>()(
                 masteredQuestionIds: data.training?.masteredQuestionIds || [],
                 lastQuestionId: data.training?.lastQuestionId || null,
               },
-              trainingSets: data.trainingSets || {},
+              trainingSets: splitLegacySets(data.trainingSets || {}),
               trainingAnswerHistory: data.trainingAnswerHistory || [],
               activeDates: data.activeDates || [],
               photoURL: data.photoURL || null,
@@ -1295,6 +1296,10 @@ export const useStore = create<AppState>()(
         };
       }),
       skipHydration: false,
+      merge: (persisted, current) => {
+        const p = (persisted ?? {}) as Partial<AppState>;
+        return { ...current, ...p, trainingSets: splitLegacySets(p.trainingSets ?? current.trainingSets) };
+      },
       migrate: (persistedState: unknown, version: number) => {
         // If upgrading from an older version, reset all data
         if (version < DATA_VERSION) {

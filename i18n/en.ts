@@ -257,6 +257,12 @@ export const en = {
     processing: "Processing",
     embeddingMicrotomy: "Embedding & Microtomy",
     staining: "Staining",
+    stainRoutine: "Staining: H&E, Dyes & Mounting",
+    stainCarbohydrates: "Staining: Carbohydrates & Amyloid",
+    stainConnective: "Staining: Connective Tissue, Muscle & Nerve",
+    stainMicroorganisms: "Staining: Microorganisms",
+    stainPigments: "Staining: Pigments, Minerals & Lipids",
+    stainImmuno: "Staining: IHC, IF & ISH",
     laboratoryOperations: "Laboratory Operations",
     // CST (surgical technologist) categories
     preoperativePreparation: "Preoperative Preparation",

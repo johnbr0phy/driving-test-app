@@ -4,31 +4,82 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { getExamByPath } from "@/lib/exams";
 import { getExamV2ByPath } from "@/lib/v2/registry";
+import { getCatalogEntryByPath } from "@/lib/testCatalog";
+import { useStartedTests } from "@/hooks/useStartedTests";
 
 const AUTH_PATHS = ["/signup", "/login"];
 
 /**
+ * Pages that belong to no test. They keep the header, theme and footer of
+ * the last test the person was in (one they have started, never one they
+ * only browsed), so the logo still reads "SAT" and links
+ * back to the SAT dashboard from /admin, /tests or /settings.
+ */
+const NEUTRAL_PATHS = ["/admin", "/tests", "/settings", "/request-test", "/unsubscribe"];
+
+/** DMV app routes (not the landing or state pages, which anyone may browse). */
+const DMV_APP_PATHS = ["/dmv", "/test", "/training", "/drill", "/stats"];
+
+const LAST_TEST_KEY = "tigertest-last-test-path";
+
+const under = (path: string, bases: string[]) =>
+  bases.some((b) => path === b || path.startsWith(`${b}/`));
+
+/** The path to remember for a page that belongs to a test, else null. */
+function testPathFor(path: string): string | null {
+  const exam = getExamV2ByPath(path) ?? getExamByPath(path);
+  if (exam) return exam.slug;
+  if (under(path, DMV_APP_PATHS)) return "/dmv/dashboard";
+  return null;
+}
+
+/**
  * The path that decides which exam's header, theme and footer to show.
  * Usually the current path; on /signup and /login it is the ?redirect=
- * target, so signing up from /htl/dashboard keeps the HTL tiger.
+ * target, so signing up from /htl/dashboard keeps the HTL tiger; on a
+ * neutral page it is the last test visited on this device.
  * Read from window.location (not useSearchParams) so the root layout's
  * header never needs a Suspense boundary.
  */
 export function useThemePath(): string | null {
   const pathname = usePathname();
-  const [redirect, setRedirect] = useState<string | null>(null);
+  const [override, setOverride] = useState<string | null>(null);
+  const hasStarted = useStartedTests();
+  const started = (path: string) => hasStarted(getCatalogEntryByPath(path).id);
 
   useEffect(() => {
-    if (!pathname || !AUTH_PATHS.includes(pathname)) {
-      setRedirect(null);
+    if (!pathname) {
+      setOverride(null);
       return;
     }
-    const target = new URLSearchParams(window.location.search).get("redirect");
-    // Same-site paths only
-    setRedirect(target && target.startsWith("/") && !target.startsWith("//") ? target.split("?")[0] : null);
-  }, [pathname]);
+    if (AUTH_PATHS.includes(pathname)) {
+      const target = new URLSearchParams(window.location.search).get("redirect");
+      // Same-site paths only
+      if (target && target.startsWith("/") && !target.startsWith("//")) {
+        setOverride(target.split("?")[0]);
+        return;
+      }
+    }
+    if (AUTH_PATHS.includes(pathname) || under(pathname, NEUTRAL_PATHS)) {
+      let last: string | null = null;
+      try {
+        last = localStorage.getItem(LAST_TEST_KEY);
+      } catch {}
+      setOverride(last && testPathFor(last) && started(last) ? last : null);
+      return;
+    }
+    setOverride(null);
+    const testPath = testPathFor(pathname);
+    if (testPath && started(testPath)) {
+      try {
+        localStorage.setItem(LAST_TEST_KEY, testPath);
+      } catch {}
+    }
+    // hasStarted changes once the stores hydrate and when a test is started.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname, hasStarted]);
 
-  return redirect ?? pathname;
+  return override ?? pathname;
 }
 
 /** The exam a ?redirect= target belongs to, for auth page copy. */

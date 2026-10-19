@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useThemePath } from "@/hooks/useThemePath";
 import { ChevronDown, LayoutGrid, Search, X } from "lucide-react";
 import {
   Popover,
@@ -28,7 +29,7 @@ const SEEN_KEY = "tigertest-seen-all-tests";
  * their dashboard instead. Enter opens the first match.
  */
 export function TestSwitcher({ className = "" }: { className?: string }) {
-  const pathname = usePathname();
+  const pathname = useThemePath();
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");

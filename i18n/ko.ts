@@ -964,11 +964,10 @@ export const ko: TranslationKeys = {
   guestSave: {
     streakKicker: "두 문제 연속 정답. 좋아요!",
     keepPracticing: "계속 연습하기",
-    titleFresh: "공부하면서 진행 상황을 저장하세요",
+    titleFresh: "무료 계정으로 진행 상황을 저장하세요",
     titleAnswers: "{{n}}개의 답변이 이 브라우저에만 저장되어 있습니다",
     titleAnswersTests: "{{n}}개의 답변과 시험 점수가 이 브라우저에만 저장되어 있습니다",
     titleScore: "{{score}}/{{total}} 점수가 이 브라우저에만 저장되어 있습니다",
-    sub: "무료 계정, 10초면 됩니다. 어느 기기에서나 사용하세요.",
     benefitSafe: "브라우저 데이터가 지워져도 그대로 유지",
     benefitMisses: "틀린 문제와 점수를 한곳에서 확인",
     emailCta: "이메일로 가입",

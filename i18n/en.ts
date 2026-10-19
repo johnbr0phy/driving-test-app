@@ -962,11 +962,10 @@ export const en = {
   guestSave: {
     streakKicker: "Two in a row. Nice.",
     keepPracticing: "Keep practicing",
-    titleFresh: "Save your progress as you go",
+    titleFresh: "Save your progress with a free account",
     titleAnswers: "Your {{n}} answers are only saved on this browser",
     titleAnswersTests: "Your {{n}} answers and test scores are only saved on this browser",
     titleScore: "Your {{score}}/{{total}} is only saved on this browser",
-    sub: "Free account, takes 10 seconds. Use it on any device.",
     benefitSafe: "Nothing lost if your browser clears",
     benefitMisses: "Every missed question and score in one place",
     emailCta: "Sign up with email",

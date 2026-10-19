@@ -962,11 +962,10 @@ export const vi: TranslationKeys = {
   guestSave: {
     streakKicker: "Đúng hai câu liên tiếp. Tuyệt!",
     keepPracticing: "Tiếp tục luyện tập",
-    titleFresh: "Lưu tiến độ của bạn khi học",
+    titleFresh: "Lưu tiến độ với tài khoản miễn phí",
     titleAnswers: "{{n}} câu trả lời của bạn chỉ được lưu trên trình duyệt này",
     titleAnswersTests: "{{n}} câu trả lời và điểm thi của bạn chỉ được lưu trên trình duyệt này",
     titleScore: "Điểm {{score}}/{{total}} của bạn chỉ được lưu trên trình duyệt này",
-    sub: "Tài khoản miễn phí, chỉ mất 10 giây. Dùng trên mọi thiết bị.",
     benefitSafe: "Không mất gì nếu trình duyệt bị xóa dữ liệu",
     benefitMisses: "Mọi câu sai và điểm số ở cùng một nơi",
     emailCta: "Đăng ký bằng email",

@@ -4,12 +4,15 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { getExamByPath } from "@/lib/exams";
 import { getExamV2ByPath } from "@/lib/v2/registry";
+import { getCatalogEntryByPath } from "@/lib/testCatalog";
+import { useStartedTests } from "@/hooks/useStartedTests";
 
 const AUTH_PATHS = ["/signup", "/login"];
 
 /**
  * Pages that belong to no test. They keep the header, theme and footer of
- * the last test the person was in, so the logo still reads "SAT" and links
+ * the last test the person was in (one they have started, never one they
+ * only browsed), so the logo still reads "SAT" and links
  * back to the SAT dashboard from /admin, /tests or /settings.
  */
 const NEUTRAL_PATHS = ["/admin", "/tests", "/settings", "/request-test", "/unsubscribe"];
@@ -41,6 +44,8 @@ function testPathFor(path: string): string | null {
 export function useThemePath(): string | null {
   const pathname = usePathname();
   const [override, setOverride] = useState<string | null>(null);
+  const hasStarted = useStartedTests();
+  const started = (path: string) => hasStarted(getCatalogEntryByPath(path).id);
 
   useEffect(() => {
     if (!pathname) {
@@ -60,17 +65,19 @@ export function useThemePath(): string | null {
       try {
         last = localStorage.getItem(LAST_TEST_KEY);
       } catch {}
-      setOverride(last && testPathFor(last) ? last : null);
+      setOverride(last && testPathFor(last) && started(last) ? last : null);
       return;
     }
     setOverride(null);
     const testPath = testPathFor(pathname);
-    if (testPath) {
+    if (testPath && started(testPath)) {
       try {
         localStorage.setItem(LAST_TEST_KEY, testPath);
       } catch {}
     }
-  }, [pathname]);
+    // hasStarted changes once the stores hydrate and when a test is started.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname, hasStarted]);
 
   return override ?? pathname;
 }

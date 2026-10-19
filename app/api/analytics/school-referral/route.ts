@@ -4,6 +4,7 @@ import { sendEmail } from '@/lib/resend';
 import { CAMPAIGN_REPLY_TO } from '@/lib/cron-email';
 import { SCHOOL_KIND_LABELS, schoolKind } from '@/lib/schoolHosts';
 import { getCatalogEntryByPath } from '@/lib/testCatalog';
+import { classExamInfo, isClassCode, normalizeClassCode } from '@/lib/classes';
 
 // Visits from a school's LMS or website (lib/schoolReferral.ts). One doc per
 // host in schoolReferrals, with per-course and per-landing counts. The first
@@ -86,20 +87,59 @@ async function alertJohn(a: { host: string; kind: keyof typeof SCHOOL_KIND_LABEL
   if (!allowed) return;
 
   const exam = getCatalogEntryByPath(a.landing);
+  // A class join link (/c/<code>) says nothing about the test in its path, so
+  // the catalog reads it as DMV. Name the class's own test, and its teacher.
+  const cls = await classLanding(a.landing);
+  const examShort = cls?.examName ?? exam.shortName;
+  const examName = cls?.examName ?? exam.name;
   const lms = SCHOOL_KIND_LABELS[a.kind];
   const courseUrl = a.course && a.kind === 'canvas' ? `https://${a.host}/courses/${a.course}` : '';
   const what = a.newHost ? 'A new school sent a visitor' : 'A new course at a known school sent a visitor';
   const result = await sendEmail({
     kind: 'transactional',
     to: CAMPAIGN_REPLY_TO,
-    subject: `${a.newHost ? 'New school' : 'New course'}: ${a.host} (${lms}) → ${exam.shortName}`,
+    subject: `${a.newHost ? 'New school' : 'New course'}: ${a.host} (${lms}) → ${examShort}`,
     html: `<p><strong>${what}.</strong> Someone there posted a TigerTest link, probably a teacher.</p>
 <p>School: ${esc(a.host)} (${lms})<br>
 ${a.course ? `Course id: ${esc(a.course)}${courseUrl ? ` (<a href="${courseUrl}">${esc(courseUrl)}</a>, needs a login there)` : ''}<br>` : ''}
-Landed on: <a href="https://tigertest.io${esc(a.landing)}">${esc(a.landing)}</a> (${esc(exam.name)})</p>
-<p>Look the school up and find the program's instructor: they already chose TigerTest.</p>`,
+Landed on: <a href="https://tigertest.io${esc(a.landing)}">${esc(a.landing)}</a> (${esc(examName)})</p>
+${cls ? `<p>Class: <a href="https://tigertest.io/teach/classes/${cls.code}">${esc(cls.name || cls.code)}</a> (${cls.code})<br>
+Teacher: ${esc(cls.teacherName || 'not given')}<br>
+School: ${esc(cls.school || 'not given')}</p>
+` : ''}<p>Look the school up and find the program's instructor: they already chose TigerTest.</p>`,
   });
   if (!result.ok) console.error('[school-referral] alert failed:', result.error);
+}
+
+interface ClassLanding {
+  code: string;
+  name: string;
+  teacherName: string;
+  school: string;
+  examName?: string;
+}
+
+/** The class behind a /c/<code> landing, or null for any other path or a missing class. */
+async function classLanding(landing: string): Promise<ClassLanding | null> {
+  const m = landing.match(/^\/c\/([^/]+)\/?$/);
+  const code = m ? normalizeClassCode(m[1]) : '';
+  if (!isClassCode(code)) return null;
+  try {
+    const snap = await getAdminDb().collection('classes').doc(code).get();
+    const c = snap.data();
+    if (!c) return null;
+    const str = (v: unknown) => (typeof v === 'string' ? v : '');
+    return {
+      code,
+      name: str(c.name),
+      teacherName: str(c.teacherName),
+      school: str(c.school),
+      examName: typeof c.examId === 'string' ? classExamInfo(c.examId, c.state)?.name : undefined,
+    };
+  } catch (error) {
+    console.error('[school-referral] class lookup failed:', error);
+    return null;
+  }
 }
 
 function esc(s: string): string {

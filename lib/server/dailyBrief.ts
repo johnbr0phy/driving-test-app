@@ -1,6 +1,8 @@
 import Anthropic from '@anthropic-ai/sdk';
 import type { Firestore } from 'firebase-admin/firestore';
 import type { OpportunitiesPayload } from '@/lib/server/opportunities';
+import { buildTeachAdmin, type TeachAdminPayload } from '@/lib/server/teachAdmin';
+import { getInternalUids } from '@/lib/server/internalUsers';
 
 // The daily update at the top of /admin/opportunities: Claude reads the
 // page's numbers (plus the previous update's numbers, to say what changed)
@@ -27,8 +29,40 @@ export function briefDate(now = new Date()): string {
 
 type BriefNumbers = ReturnType<typeof briefNumbers>;
 
+/**
+ * Teachers and schools (lib/server/teachAdmin), with what is new since the
+ * previous update spelled out, so a first class or a first school link is
+ * never buried under the revenue numbers.
+ */
+function schoolNumbers(t: TeachAdminPayload, sinceIso: string | null) {
+  const isNew = (iso: string) => !!iso && (!sinceIso || iso > sinceIso);
+  const week = Date.now() - 7 * 24 * 60 * 60 * 1000;
+  return {
+    allTime: {
+      teachers: t.totals.teachers,
+      classes: t.totals.classes,
+      students: t.totals.students,
+      studentsWhoAnswered: t.totals.practiced,
+      answers: t.totals.answered,
+      testsTaken: t.totals.testsTaken,
+      schoolsLinkingToUs: t.schoolReferrals.length,
+    },
+    studentsActiveThisWeek: t.totals.activeThisWeek,
+    newClassesSincePreviousUpdate: t.classes
+      .filter((c) => isNew(c.createdAt))
+      .map((c) => ({ exam: c.examName, school: c.school || null, createdAt: c.createdAt, students: c.students, studentsWhoAnswered: c.practiced })),
+    newSchoolsLinkingSincePreviousUpdate: t.schoolReferrals
+      .filter((r) => isNew(r.firstSeen))
+      .map((r) => ({ site: r.host, kind: r.kind, visits: r.visits, courses: r.courses, landedOn: r.topLanding })),
+    classesActiveThisWeek: t.classes
+      .filter((c) => c.lastStudentActiveAt && Date.parse(c.lastStudentActiveAt) >= week)
+      .slice(0, 5)
+      .map((c) => ({ exam: c.examName, school: c.school || null, students: c.students, answers: c.answered, testsTaken: c.testsTaken })),
+  };
+}
+
 /** The page's payload cut down to what an update can talk about. */
-export function briefNumbers(p: OpportunitiesPayload) {
+export function briefNumbers(p: OpportunitiesPayload, schools: ReturnType<typeof schoolNumbers> | null = null) {
   const dollars = (cents: number) => Math.round(cents) / 100;
   return {
     last30Days: {
@@ -76,6 +110,8 @@ export function briefNumbers(p: OpportunitiesPayload) {
       .slice(-4)
       .map((c) => ({ signedUp: `${c.start} to ${c.end}`, accounts: c.size, activeInSecondWeek: c.week1, bought: c.bought })),
     trackingProblems: p.health.filter((h) => h.status !== 'ok').map((h) => h.title),
+    // Missing when the classes could not be read; the update goes on without them.
+    teachersAndSchools: schools,
   };
 }
 
@@ -85,7 +121,7 @@ John does not like reading much text. Write:
 - line 1: one headline sentence, at most 15 words, saying the single most important thing today
 - then 3 to 5 lines starting with "- ", each at most 25 words
 
-What to cover, most important first: money (revenue and purchases, and which paywall sold), what changed since the previous update, anything unusual (a spike, a drop, an exam suddenly busy), and one concrete thing worth doing. Skip anything that has not changed and is not actionable.
+What to cover, most important first. A milestone beats everything: a first ever (the first class a teacher made, the first school linking to us, a first sale on a new paywall) is the headline, named specifically (which school, which exam). teachersAndSchools.newClassesSincePreviousUpdate and newSchoolsLinkingSincePreviousUpdate list what is new since the previous update; any entry there is news, and when allTime.classes or allTime.schoolsLinkingToUs equals the number new, it is the first ever. Teachers and schools matter more than their small numbers suggest: one class brings a room of students and the next class. After that: money (revenue and purchases, and which paywall sold), what changed since the previous update, anything unusual (a spike, a drop, an exam suddenly busy), and one concrete thing worth doing. Skip anything that has not changed and is not actionable.
 
 Rules: use only the numbers given, never estimate or invent one. Round to whole numbers and say "$120", "about 1,400". Plain everyday words, no jargon like "cohort", "conversion rate" or "funnel". No em-dashes, no bold, no headings, nothing before the headline or after the last bullet. If the data is too thin to say something, say less rather than padding.`;
 
@@ -140,8 +176,14 @@ export async function latestBrief(db: Firestore, before?: string): Promise<Daily
 /** Writes and saves today's update, replacing one already written today. */
 export async function createBrief(db: Firestore, payload: OpportunitiesPayload): Promise<DailyBrief> {
   const date = briefDate();
-  const numbers = briefNumbers(payload);
   const previous = await latestBrief(db, date);
+  let schools: ReturnType<typeof schoolNumbers> | null = null;
+  try {
+    schools = schoolNumbers(await buildTeachAdmin(db, await getInternalUids()), previous?.generatedAt ?? null);
+  } catch (error) {
+    console.error('[daily-brief] classes unavailable', error);
+  }
+  const numbers = briefNumbers(payload, schools);
   const { headline, bullets } = await writeBrief(numbers, previous);
   const brief: DailyBrief = { date, headline, bullets, generatedAt: new Date().toISOString(), model: BRIEF_MODEL, numbers };
   await db.doc(`dailyBriefs/${date}`).set(brief);

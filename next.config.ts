@@ -92,8 +92,10 @@ const nextConfig: NextConfig = {
       "/es/examenes-practica-por-estado",
       "/vi/thi-thu-dmv-theo-tieu-bang",
       "/ko/juibyeol-dmv-pilgi-siheom",
+      "/zh/gezhou-dmv-bishi-lianxi",
       "/vi/:state(.+-thi-thu-dmv)",
       "/ko/:state(.+-dmv-pilgi-siheom)",
+      "/zh/:state(.+-dmv-bishi-lianxi)",
       "/:state(.+-dmv-practice-test)",
       "/es/:state(.+-examen-practica-dmv)",
     ];

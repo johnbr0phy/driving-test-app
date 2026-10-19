@@ -26,7 +26,7 @@ export const SITE_JSON_LD = {
       url: siteUrl,
       name: "TigerTest",
       publisher: { "@id": ORGANIZATION_ID },
-      inLanguage: ["en-US", "es", "vi", "ko"],
+      inLanguage: ["en-US", "es", "vi", "ko", "zh-Hans"],
     },
   ],
 };

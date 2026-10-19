@@ -283,7 +283,6 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
                   <Th right>Paywall views, 30d</Th>
                   <Th right>Purchases</Th>
                   <Th right>Revenue</Th>
-                  <Th right title="What the last 30 days of answers would have earned at the DMV's revenue per answer. A ceiling on demand, not a forecast.">At DMV rate, /30d</Th>
                 </tr>
               </thead>
               <tbody>
@@ -318,9 +317,6 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
                       ) : (
                         <span className="text-gray-400">·</span>
                       )}
-                    </td>
-                    <td className="py-2 px-2 text-right tabular-nums text-gray-600 dark:text-gray-300">
-                      {e.potential30dCents === null ? <span className="text-gray-400">·</span> : fmtDollars(e.potential30dCents)}
                     </td>
                   </tr>
                 ))}

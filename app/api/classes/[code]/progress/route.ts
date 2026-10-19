@@ -76,12 +76,18 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
         answered: FieldValue.increment(answers.length),
         correct: FieldValue.increment(correct),
         byCategory,
-        missed: Object.fromEntries(Object.entries(missed).map(([q, n]) => [q, FieldValue.increment(n)])),
         seen: Object.fromEntries(Object.entries(seen).map(([q, n]) => [q, FieldValue.increment(n)])),
-        picks: Object.fromEntries(
-          Object.entries(picks).map(([q, byOption]) => [q, Object.fromEntries(Object.entries(byOption).map(([p, n]) => [p, FieldValue.increment(n)]))]),
-        ),
       });
+      // Only when non-empty: a merge write of an empty map replaces the stored
+      // map, so an all-correct batch used to wipe every earlier miss.
+      if (Object.keys(missed).length) {
+        update.missed = Object.fromEntries(Object.entries(missed).map(([q, n]) => [q, FieldValue.increment(n)]));
+      }
+      if (Object.keys(picks).length) {
+        update.picks = Object.fromEntries(
+          Object.entries(picks).map(([q, byOption]) => [q, Object.fromEntries(Object.entries(byOption).map(([p, n]) => [p, FieldValue.increment(n)]))]),
+        );
+      }
     }
 
     if (tests.length) {

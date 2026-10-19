@@ -840,9 +840,10 @@ export const en = {
 
   // Onboarding
   onboarding: {
-    iNeedToPass: "I need to pass the",
-    selectLocation: "select location",
-    drivingTest: "driving test.",
+    takingTestIn: "I'm taking the driving test in",
+    chooseState: "choose a state",
+    takingTestInSuffix: "",
+    stateNote: "Every state gets its own questions from its driver handbook.",
     letsGo: "Let's go",
   },
 

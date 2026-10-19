@@ -842,9 +842,10 @@ export const ko: TranslationKeys = {
 
   // Onboarding
   onboarding: {
-    iNeedToPass: "저는",
-    selectLocation: "지역 선택",
-    drivingTest: "운전면허 시험에 합격해야 합니다.",
+    takingTestIn: "",
+    chooseState: "주 선택",
+    takingTestInSuffix: "에서 운전면허 시험을 봅니다",
+    stateNote: "주마다 운전자 핸드북에서 뽑은 문제가 따로 있습니다.",
     letsGo: "시작하기",
   },
 

@@ -21,6 +21,7 @@ import { computeMissSummary } from "@/lib/missedQuestions";
 import { ExamConfig, TrainingPart, examFamilyId, examLandingPath, getExamById, examTrainingParts, getExamVariant, trainingPartName, trainingPartOf } from "@/lib/exams";
 import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
 import { ClassBanner } from "@/components/exam/ClassBanner";
+import { TeachNudge } from "@/components/TeachNudge";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
@@ -179,6 +180,7 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
             </div>
           </div>
           <ExamStateLine exam={exam} />
+          <TeachNudge dashboardKey={exam.id} examId={exam.variantOf ?? exam.id} done={completedSteps} />
         </div>
 
         {/* Training sets, one per content area */}

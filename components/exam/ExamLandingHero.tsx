@@ -12,7 +12,7 @@ import type { Language } from "@/i18n";
 
 // The homepage hero (components/HomeHero.tsx) for a non-DMV test: short
 // subtitle, black pill CTA that turns into "Go to Dashboard" once there is a
-// session, a quiet secondary link, then the two product screenshots.
+// session, then the two product screenshots.
 // Everything here is free and needs no account, so the CTA always goes
 // straight to the dashboard.
 // Fresh visitors become guests on their way in, exactly like the homepage's
@@ -26,7 +26,6 @@ const COPY = {
   en: {
     start: "Start practicing",
     dashboard: "Go to Dashboard",
-    how: "See how it works",
     mobile: "Train on mobile",
     desktop: "Test on desktop",
     mobileAlt: (name: string) => `TigerTest ${name} practice test training mode on mobile`,
@@ -35,7 +34,6 @@ const COPY = {
   es: {
     start: "Empezar a practicar",
     dashboard: "Ir a mi panel",
-    how: "Cómo funciona",
     mobile: "Practica en el celular",
     desktop: "Haz el examen en la computadora",
     mobileAlt: (name: string) => `Práctica por tema del examen ${name} de TigerTest en el celular`,
@@ -44,7 +42,6 @@ const COPY = {
   vi: {
     start: "Bắt đầu luyện tập",
     dashboard: "Đến bảng điều khiển",
-    how: "Xem cách hoạt động",
     mobile: "Luyện tập trên điện thoại",
     desktop: "Thi thử trên máy tính",
     mobileAlt: (name: string) => `Chế độ luyện tập bài thi thử ${name} của TigerTest trên điện thoại`,
@@ -53,7 +50,6 @@ const COPY = {
   ko: {
     start: "연습 시작하기",
     dashboard: "대시보드로 가기",
-    how: "이용 방법 보기",
     mobile: "휴대폰으로 연습",
     desktop: "컴퓨터로 시험",
     mobileAlt: (name: string) => `휴대폰에서 보는 TigerTest ${name} 연습 시험 연습 모드`,
@@ -102,11 +98,6 @@ export function ExamLandingHero({
             {hasSession ? copy.dashboard : copy.start}
           </Link>
         </Button>
-        {!hasSession && (
-          <a href="#how-it-works" className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline">
-            {copy.how}
-          </a>
-        )}
       </div>
 
       <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">

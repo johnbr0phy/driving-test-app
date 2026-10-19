@@ -3,6 +3,7 @@ import type { TranslationKeys } from './en';
 export const ko: TranslationKeys = {
   // Common
   common: {
+    dmvHeaderTitle: "DMV 모의고사",
     logOut: "로그아웃",
     signIn: "로그인",
     signUp: "회원가입",

@@ -3,6 +3,7 @@ import type { TranslationKeys } from './en';
 export const es: TranslationKeys = {
   // Common
   common: {
+    dmvHeaderTitle: "Examen de Práctica del DMV",
     logOut: "Cerrar sesión",
     signIn: "Iniciar sesión",
     signUp: "Registrarse",

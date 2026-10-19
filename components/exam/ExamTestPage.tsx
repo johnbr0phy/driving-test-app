@@ -4,7 +4,8 @@
 // the premium gate, driven by an ExamConfig.
 
 import { useState, useEffect, useRef } from "react";
-import { useParams, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useExamTestParam } from "@/hooks/useExamTestParam";
 import Link from "next/link";
 import { QuestionCard } from "@/components/QuestionCard";
 import { Button } from "@/components/ui/button";
@@ -21,9 +22,8 @@ import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
 
 export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
   const { exam, routes, ui, lang } = useLocalizedExam(source);
-  const params = useParams();
   const router = useRouter();
-  const testId = parseInt(params.id as string);
+  const testId = useExamTestParam(routes, "test");
   const testNumber = routes.displayTestNumber(testId);
   const hydrated = useHydration();
   const initialized = useRef(false);

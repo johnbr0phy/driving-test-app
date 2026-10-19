@@ -119,7 +119,7 @@ export default function NclexLandingPage() {
             Free NCLEX-RN Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/nclex"
+            dashboardHref="/nclex/dashboard"
             shortName="NCLEX-RN"
             subtitle="200 clinical judgment questions with rationales, including select all that apply. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/nclex-mobile.png", desktop: "/landing/nclex-desktop.png" }}
@@ -269,7 +269,7 @@ export default function NclexLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Start Your NCLEX Practice</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all eight Client Needs areas.</p>
-          <ExamLandingCTA dashboardHref="/nclex" />
+          <ExamLandingCTA dashboardHref="/nclex/dashboard" />
         </div>
       </div>
     </div>

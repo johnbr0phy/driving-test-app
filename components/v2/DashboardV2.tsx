@@ -196,7 +196,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   <div className={`text-2xl font-bold tabular-nums ${doneSteps === totalSteps ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>
                     {doneSteps}/{totalSteps}
                   </div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400">complete</div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">complete!</div>
                 </div>
               </div>
               <GoalStrip exam={exam} goal={goal} best={bestOverall} onEdit={() => setEditingGoal(true)} />

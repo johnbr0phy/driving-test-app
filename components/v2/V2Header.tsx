@@ -26,7 +26,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
   const photoURL = useStore((state) => state.photoURL);
 
   if (pathname?.startsWith(`${exam.slug}/test/`) && !pathname.endsWith("/results")) return null;
-  if (pathname === `${exam.slug}/train`) return null;
+  if (pathname?.startsWith(`${exam.slug}/practice/`)) return null;
 
   const style = { "--brand": exam.theme.brand, "--brand-dark": exam.theme.brandDark, "--brand-light": exam.theme.brandLight } as CSSProperties;
   const displayPhotoURL = photoURL || user?.photoURL;
@@ -34,7 +34,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
   return (
     <header className="border-b bg-white dark:bg-gray-900" style={style}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={exam.slug} aria-label={`${exam.name} home`} className="flex items-center gap-2 group flex-shrink-0">
+        <Link href={`${exam.slug}/dashboard`} aria-label={`${exam.name} home`} className="flex items-center gap-2 group flex-shrink-0">
           {hasTigerSet(exam.id) ? (
             <Image src={getTigerAsset(exam.id)} alt="" width={40} height={40} className="h-10 w-10 object-contain" />
           ) : (
@@ -60,7 +60,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
             </>
           ) : (
             <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
-              <Link href={`/login?redirect=${exam.slug}`}>Sign In</Link>
+              <Link href={`/login?redirect=${exam.slug}/dashboard`}>Sign In</Link>
             </Button>
           )}
         </div>

@@ -281,7 +281,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
     // The exam they bought from goes first, then the other v2 exams, then the DMV.
     const v2Lines = [...premiumV2]
       .sort((a, b) => Number(b.id === v.id) - Number(a.id === v.id))
-      .map((e) => `${link(e.slug, `${e.shortName} practice`)}: Practice Test 2 and ${lockedDrillCount(e.id)} more skill drills`);
+      .map((e) => `${link(`${e.slug}/dashboard`, `${e.shortName} practice`)}: Practice Test 2 and ${lockedDrillCount(e.id)} more skill drills`);
     const lines = lead ? [...v2Lines, dmvLine] : [dmvLine, ...v2Lines];
 
     return emailShell({
@@ -299,7 +299,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
             )
           : p("Open your stats after the next test. It tells you where to spend your study time."),
         lead
-          ? cta(`${SITE}${lead.slug}?${utm(campaign)}`, `Open Your ${lead.shortName} Dashboard`)
+          ? cta(`${SITE}${lead.slug}/dashboard?${utm(campaign)}`, `Open Your ${lead.shortName} Dashboard`)
           : cta(DASH(v, campaign), "Start With Safety & Emergencies"),
         p(
           `Taking the ${[...premiumV2.filter((e) => e.id !== v.id).map((e) => e.shortName), ...(lead ? ["permit test"] : [])].join(" or ")} ${lead ? "too" : "later"}? Bookmark the links above. Your Premium is already there.`,

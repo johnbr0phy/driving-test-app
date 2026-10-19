@@ -36,13 +36,26 @@ export function stagesOf(exam: ExamV2Config) {
   return exam.sections.flatMap((section) => section.modules.map((module) => ({ section, module })));
 }
 
+/** A drill's number in URLs: its 1-based place in the config. */
+function drillNumber(exam: ExamV2Config, key: string): number {
+  return exam.drills.findIndex((d) => d.key === key) + 1;
+}
+
+/** The drill a /practice/[n] value names: its number, or (old links) its key or legacyKey. */
+export function drillFromParam(exam: ExamV2Config, raw: string | null | undefined) {
+  if (!raw) return undefined;
+  if (/^\d+$/.test(raw)) return exam.drills[parseInt(raw, 10) - 1];
+  return exam.drills.find((d) => d.key === raw) ?? exam.drills.find((d) => d.legacyKey === raw);
+}
+
+/** Same shape as every exam: /<exam>/dashboard, /<exam>/practice/<n>, /<exam>/test/<n>. */
 export const v2Routes = (exam: ExamV2Config) => ({
-  dashboard: exam.slug,
+  dashboard: `${exam.slug}/dashboard`,
   test: (n: number) => `${exam.slug}/test/${n}`,
   results: (n: number) => `${exam.slug}/test/${n}/results`,
   /** A drill's front door: the Basics overview when it has one, else the questions. */
-  drill: (key: string) => `${exam.slug}/train?drill=${key}`,
+  drill: (key: string) => `${exam.slug}/practice/${drillNumber(exam, key)}`,
   /** Straight to the exam-level questions (DrillRunner). */
-  drillQuestions: (key: string) => `${exam.slug}/train?drill=${key}&level=exam`,
-  basics: (key: string, skillId: string) => `${exam.slug}/train?drill=${key}&skill=${skillId}`,
+  drillQuestions: (key: string) => `${exam.slug}/practice/${drillNumber(exam, key)}?level=exam`,
+  basics: (key: string, skillId: string) => `${exam.slug}/practice/${drillNumber(exam, key)}?skill=${skillId}`,
 });

@@ -61,7 +61,7 @@ export function CDLHeader() {
 
   // State variants (/real-estate/ca) run their tests under the family's header.
   const bases = [theme.routeBase, ...getExamVariants(theme.id).map((v) => v.slug)];
-  const hideHeader = bases.some((b) => pathname?.startsWith(`${b}/test`) || pathname === `${b}/training`);
+  const hideHeader = bases.some((b) => pathname?.startsWith(`${b}/test`) || pathname?.startsWith(`${b}/practice/`));
 
   if (hideHeader) {
     return null;

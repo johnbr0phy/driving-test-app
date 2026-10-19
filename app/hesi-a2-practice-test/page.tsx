@@ -138,7 +138,7 @@ export default function HesiLandingPage() {
             Free HESI A2 Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/hesi"
+            dashboardHref="/hesi/dashboard"
             shortName="HESI A2"
             subtitle="200 questions across math, reading, vocabulary, grammar, biology, chemistry and A&P. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/hesi-mobile.png", desktop: "/landing/hesi-desktop.png" }}
@@ -312,7 +312,7 @@ export default function HesiLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the HESI A2?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all seven sections.</p>
-          <ExamLandingCTA dashboardHref="/hesi" />
+          <ExamLandingCTA dashboardHref="/hesi/dashboard" />
         </div>
       </div>
     </div>

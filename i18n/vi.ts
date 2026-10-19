@@ -3,6 +3,7 @@ import type { TranslationKeys } from './en';
 export const vi: TranslationKeys = {
   // Common
   common: {
+    dmvHeaderTitle: "Thi Thử DMV",
     logOut: "Đăng xuất",
     signIn: "Đăng nhập",
     signUp: "Đăng ký",

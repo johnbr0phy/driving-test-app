@@ -58,14 +58,23 @@ const nextConfig: NextConfig = {
       // The driving-school program became instructor classes at /teach.
       { source: "/schools", destination: "/teach", permanent: true },
       { source: "/schools/:path*", destination: "/teach", permanent: true },
-      { source: "/htl", destination: "/htl-practice-test", permanent: true },
-      { source: "/cst", destination: "/cst-practice-test", permanent: true },
-      { source: "/crcst", destination: "/crcst-practice-test", permanent: true },
+      // Every exam has the same app URLs: /<exam>/dashboard, /<exam>/practice/<n>
+      // and /<exam>/test/<n> (bare /<exam> redirects to its dashboard). These map
+      // the older shapes: /training?set=n (DMV and v1), /<exam>/train?drill=key
+      // (v2; the page swaps the key for its number). Old store-ID test URLs
+      // (/cdl/test/101) are mapped by the test page itself.
+      { source: "/training", has: [{ type: "query", key: "set", value: "(?<set>\\d+)" }], destination: "/practice/:set", permanent: true },
+      { source: "/:exam/training", has: [{ type: "query", key: "set", value: "(?<set>\\d+)" }], destination: "/:exam/practice/:set", permanent: true },
+      { source: "/:exam/training", destination: "/:exam/dashboard", permanent: true },
+      { source: "/:exam/:state([a-z]{2})/training", has: [{ type: "query", key: "set", value: "(?<set>\\d+)" }], destination: "/:exam/:state/practice/:set", permanent: true },
+      { source: "/:exam/:state([a-z]{2})/training", destination: "/:exam/:state/dashboard", permanent: true },
+      { source: "/:exam/train", has: [{ type: "query", key: "drill", value: "(?<drill>[A-Za-z0-9_-]+)" }], destination: "/:exam/practice/:drill", permanent: true },
+      { source: "/:exam/train", destination: "/:exam/dashboard", permanent: true },
       // These exams moved to the v2 engine (tests 1 and 2); old v1 test ids go to the dashboard.
-      { source: "/emt/test/:id(17\\d\\d)/:rest*", destination: "/emt", permanent: true },
-      { source: "/aws-cloud-practitioner/test/:id(23\\d\\d)/:rest*", destination: "/aws-cloud-practitioner", permanent: true },
-      { source: "/comptia-a-plus/test/:id(24\\d\\d)/:rest*", destination: "/comptia-a-plus", permanent: true },
-      { source: "/comptia-security-plus/test/:id(28\\d\\d)/:rest*", destination: "/comptia-security-plus", permanent: true },
+      { source: "/emt/test/:id(17\\d\\d)/:rest*", destination: "/emt/dashboard", permanent: true },
+      { source: "/aws-cloud-practitioner/test/:id(23\\d\\d)/:rest*", destination: "/aws-cloud-practitioner/dashboard", permanent: true },
+      { source: "/comptia-a-plus/test/:id(24\\d\\d)/:rest*", destination: "/comptia-a-plus/dashboard", permanent: true },
+      { source: "/comptia-security-plus/test/:id(28\\d\\d)/:rest*", destination: "/comptia-security-plus/dashboard", permanent: true },
     ];
   },
   async headers() {

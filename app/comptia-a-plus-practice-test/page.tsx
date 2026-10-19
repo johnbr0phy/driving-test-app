@@ -140,7 +140,7 @@ export default function AplusLandingPage() {
             Free CompTIA A+ Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/comptia-a-plus"
+            dashboardHref="/comptia-a-plus/dashboard"
             shortName="CompTIA A+"
             subtitle="200 questions weighted to the 220-1201 and 220-1202 objectives. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/aplus-mobile.png", desktop: "/landing/aplus-desktop.png" }}
@@ -314,7 +314,7 @@ export default function AplusLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the CompTIA A+?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all nine domains.</p>
-          <ExamLandingCTA dashboardHref="/comptia-a-plus" />
+          <ExamLandingCTA dashboardHref="/comptia-a-plus/dashboard" />
         </div>
       </div>
     </div>

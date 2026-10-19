@@ -17,6 +17,21 @@ import { TestSwitcher } from "@/components/TestSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { EXAMS } from "@/lib/exams";
 import { useExamStarted } from "@/hooks/useExamStarted";
+import { getStateBySlug } from "@/data/states";
+
+const DMV_APP_PREFIXES = ["/dashboard", "/stats", "/drill", "/practice", "/training", "/test/", "/onboarding", "/dmv-practice-test", "/practice-tests-by-state"];
+const DMV_LOCALE_HUBS = ["/es/examenes-practica-por-estado", "/ko/juibyeol-dmv-pilgi-siheom", "/vi/thi-thu-dmv-theo-tieu-bang"];
+
+/** DMV pages wear the "DMV Practice Test" title like every exam wears its own;
+ *  the hub, settings and sign-in pages keep the tigertest.io wordmark. */
+function isDmvPath(pathname: string | null): boolean {
+  if (!pathname) return false;
+  if (DMV_APP_PREFIXES.some((p) => pathname === p || pathname.startsWith(p.endsWith("/") ? p : `${p}/`))) return true;
+  if (DMV_LOCALE_HUBS.includes(pathname)) return true;
+  // State pages: /california-dmv-practice-test and the es/ko/vi equivalents.
+  const m = pathname.match(/^\/(?:(?:es|ko|vi)\/)?([a-z-]+?)-(?:dmv-practice-test|examen-practica-dmv|dmv-pilgi-siheom|thi-thu-dmv)$/);
+  return !!m && !!getStateBySlug(m[1]);
+}
 
 export function Header() {
   const { user } = useAuth();
@@ -38,7 +53,8 @@ export function Header() {
   const hideHeader =
     pathname?.startsWith("/test/") ||
     pathname === "/training" ||
-    EXAMS.some((e) => pathname?.startsWith(`${e.slug}/test`) || pathname === `${e.slug}/training`);
+    pathname?.startsWith("/practice/") ||
+    EXAMS.some((e) => pathname?.startsWith(`${e.slug}/test`) || pathname?.startsWith(`${e.slug}/practice/`));
 
   // Hide sign up prompt on onboarding pages (too early in flow)
   const isOnboarding = pathname?.startsWith("/onboarding");
@@ -56,7 +72,7 @@ export function Header() {
         <Link href={user || isGuest ? "/dashboard" : "/"} className="flex items-center gap-2 group flex-shrink-0">
             <Image src={isPremium ? "/tiger_face_01.png" : "/tiger.png"} alt="tigertest.io" width={40} height={40} className="w-10 h-10" />
             <span className="text-2xl font-bold text-gray-900 dark:text-gray-50 group-hover:opacity-80 transition-opacity hidden sm:inline">
-              tigertest.io
+              {isDmvPath(pathname) ? t("common.dmvHeaderTitle") : "tigertest.io"}
             </span>
           </Link>
 

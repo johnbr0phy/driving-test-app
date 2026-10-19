@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, Suspense, useRef } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -90,7 +90,15 @@ function TrainingPageContent() {
   const isTrainingSetUnlocked = useStore((state) => state.isTrainingSetUnlocked);
 
   // Get set number from URL if present
-  const setParam = searchParams.get('set');
+  const params = useParams();
+  const setParam = (params.n as string | undefined) ?? searchParams.get('set');
+  // An old /training?set=n link redirects here with ?set= still on; drop it.
+  useEffect(() => {
+    if (!params.n || !searchParams.has('set')) return;
+    const rest = new URLSearchParams(searchParams.toString());
+    rest.delete('set');
+    router.replace(`${window.location.pathname}${rest.size ? `?${rest}` : ''}`);
+  }, [params.n, searchParams, router]);
   const setNumber = setParam ? parseInt(setParam) : null;
   const isSetMode = setNumber !== null && setNumber >= 1 && setNumber <= 4 && isOnboardingComplete();
 

@@ -18,7 +18,7 @@ import { QuizRow } from "@/components/QuizRow";
 import { QuestionImage } from "@/components/QuestionImage";
 import { getSignIdForQuestion } from "@/lib/signImages";
 import { computeMissSummary } from "@/lib/missedQuestions";
-import { ExamRoutes } from "@/lib/examRoutes";
+import { ExamRoutes, testIdFromParam } from "@/lib/examRoutes";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
@@ -44,7 +44,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
   const upgrade = useUpgradeFlow("drill");
   const { data: communityData } = useCommunityStats();
 
-  const testFilter = Number(searchParams.get("test")) || null;
+  const testFilter = testIdFromParam(routes, searchParams.get("test"));
   const backHref = routes.dashboard;
 
   const [fixedCount, setFixedCount] = useState(0);

@@ -139,7 +139,7 @@ export default function AsvabLandingPage() {
             Free ASVAB Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/asvab"
+            dashboardHref="/asvab/dashboard"
             shortName="ASVAB"
             subtitle="200 questions across all eight subtests, weighted toward the four AFQT sections that decide whether you enlist. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/asvab-mobile.png", desktop: "/landing/asvab-desktop.png" }}
@@ -313,7 +313,7 @@ export default function AsvabLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Ace the ASVAB?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all eight subtests.</p>
-          <ExamLandingCTA dashboardHref="/asvab" />
+          <ExamLandingCTA dashboardHref="/asvab/dashboard" />
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@
 // readiness meter, plan, re-answerable miss drill) routed through the
 // exam's ExamRoutes. Nothing is premium-gated, so the paywall never opens.
 
-import { useParams } from "next/navigation";
+import { useExamTestParam } from "@/hooks/useExamTestParam";
 import { useTestResults } from "@/hooks/useTestResults";
 import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
 import { TestPageHeader } from "@/components/TestPageHeader";
@@ -15,8 +15,7 @@ import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 
 export function ExamResultsPage({ exam }: { exam: ExamConfig }) {
   const { routes, ui } = useLocalizedExam(exam);
-  const params = useParams();
-  const testId = parseInt(params.id as string);
+  const testId = useExamTestParam(routes, "results");
   const results = useTestResults(testId, routes);
   const upgrade = useUpgradeFlow("results_page");
 

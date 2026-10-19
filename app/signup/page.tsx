@@ -111,6 +111,20 @@ function SignupPageContent() {
     }
   };
 
+  /**
+   * "Continue with Google" also signs in people who already have an account.
+   * Their progress is in Firestore and this browser's store is empty (or a
+   * guest's), so saving it now would overwrite the account. Returns true when
+   * the account existed and was handled as a login.
+   */
+  const handleExistingGoogleAccount = async (uid: string, userEmail: string) => {
+    if (!(await getDoc(doc(db, "users", uid))).exists()) return false;
+    // A guest gets AuthContext's keep-which-progress dialog; never save over it here.
+    if (!useStore.getState().isGuest) await useStore.getState().loadUserData(uid);
+    await handlePostSignup(uid, userEmail);
+    return true;
+  };
+
   // Visitor funnel: opened signup (counted once per signed-out browser)
   useEffect(() => {
     if (!authLoading && !user) trackFunnelStep("signup_view");
@@ -137,6 +151,7 @@ function SignupPageContent() {
 
     (async () => {
       setLoading(true);
+      if (await handleExistingGoogleAccount(user.uid, user.email ?? "")) return;
       useStore.getState().setUserId(user.uid);
       if (stateToUse) {
         setStoreState(stateToUse);
@@ -181,6 +196,7 @@ function SignupPageContent() {
       // doesn't bail before AuthContext's listener has populated it.
       const uid = auth.currentUser?.uid ?? "";
       const userEmail = auth.currentUser?.email ?? "";
+      if (uid && (await handleExistingGoogleAccount(uid, userEmail))) return;
       if (uid) useStore.getState().setUserId(uid);
 
       // Only set state if not a guest (guests already have state set)

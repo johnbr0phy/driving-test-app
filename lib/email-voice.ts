@@ -144,18 +144,28 @@ export function statsUrl(voice: EmailVoice, campaign: string): string {
 }
 
 /**
- * Which exam a signup belongs to, from the signup page's own URL. Exam pages
- * link to /signup?redirect=/<slug>/dashboard; the DMV flow links to /signup.
+ * Which exam a signup belongs to, from the page the person signed up on.
+ * Exam pages link to /signup?redirect=/<slug>/dashboard, so the redirect
+ * target wins. The one-tap Google button on GuestSaveCard signs people up on
+ * the exam page itself (no redirect), so the page's own path is next. Last,
+ * the test this device was in most recently (`lastTestPath`), else the DMV.
  */
-export function examIdFromSignupUrl(url: string | null | undefined): string {
-  if (!url) return "dmv";
-  try {
-    const parsed = new URL(url, SITE);
-    const redirect = parsed.searchParams.get("redirect");
-    return getExamByPath(redirect)?.id ?? getExamV2ByPath(redirect)?.id ?? "dmv";
-  } catch {
-    return "dmv";
+export function examIdFromSignupUrl(
+  url: string | null | undefined,
+  lastTestPath?: string | null,
+): string {
+  const examFor = (path: string | null | undefined) =>
+    path ? (getExamV2ByPath(path)?.id ?? getExamByPath(path)?.id ?? null) : null;
+  let fromUrl: string | null = null;
+  if (url) {
+    try {
+      const parsed = new URL(url, SITE);
+      fromUrl = examFor(parsed.searchParams.get("redirect")) ?? examFor(parsed.pathname);
+    } catch {
+      // fall through
+    }
   }
+  return fromUrl ?? examFor(lastTestPath) ?? "dmv";
 }
 
 /**

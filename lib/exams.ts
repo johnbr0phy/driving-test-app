@@ -1060,7 +1060,7 @@ const realestate: ExamConfig = {
     trainingSub: "Four sets covering all eight national outline areas. Instant feedback, worked math, and missed questions come back until you master them.",
     testsHeading: "Practice tests \u00b7 50 questions weighted like the national exam",
     heroSubs: [
-      "Eight areas, four tests. Contracts weigh most.",
+      "Eight areas, four tests. Contracts is the biggest single area.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",

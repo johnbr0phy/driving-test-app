@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "EPA 608 practice test, EPA 608 universal practice test, EPA 608 core exam, Type I Type II Type III practice test, refrigerant certification exam, HVAC EPA test questions, section 608 study guide",
   alternates: {
     canonical: `${siteUrl}/epa-608-practice-test`,
+    languages: examLandingAlternates("epa608"),
   },
   openGraph: {
     title,

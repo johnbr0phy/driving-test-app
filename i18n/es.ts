@@ -312,10 +312,10 @@ export const es: TranslationKeys = {
     hamAntennas: "Antennas & Feed Lines (T9)",
     hamSafety: "Safety (T0)",
     // EPA Section 608 sections
-    epaCore: "Core",
-    epaType1: "Type I: Small Appliances",
-    epaType2: "Type II: High-Pressure",
-    epaType3: "Type III: Low-Pressure",
+    epaCore: "Core (Básico)",
+    epaType1: "Tipo I: Electrodomésticos pequeños",
+    epaType2: "Tipo II: Alta presión",
+    epaType3: "Tipo III: Baja presión",
     // CNA (NNAAP) content areas
     activitiesDailyLiving: "Actividades de la vida diaria",
     basicNursingSkills: "Habilidades básicas de enfermería",

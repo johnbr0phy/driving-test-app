@@ -1,0 +1,45 @@
+{
+  "landingPath": "/es/examen-epa-608",
+  "name": "Examen de práctica EPA 608",
+  "examLabel": "EPA Sección 608",
+  "fullName": "examen de certificación de técnicos EPA Sección 608",
+  "trainingSets": {
+    "1": {
+      "name": "Core (Básico)",
+      "weightLabel": "Obligatorio para toda certificación",
+      "partNames": ["Ozono, leyes y certificación", "Recuperación, evacuación y seguridad"]
+    },
+    "2": {
+      "name": "Tipo I: Electrodomésticos pequeños",
+      "weightLabel": "Cargas de 5 lb o menos"
+    },
+    "3": {
+      "name": "Tipo II: Alta presión",
+      "weightLabel": "Sistemas divididos, refrigeración comercial"
+    },
+    "4": {
+      "name": "Tipo III: Baja presión",
+      "weightLabel": "Enfriadores de baja presión"
+    }
+  },
+  "categoryLabels": {
+    "epaCore": "Core (Básico)",
+    "epaType1": "Tipo I: Electrodomésticos pequeños",
+    "epaType2": "Tipo II: Alta presión",
+    "epaType3": "Tipo III: Baja presión"
+  },
+  "copy": {
+    "guestPrompt": "para guardar tu progreso de EPA 608 y ver cada pregunta que fallas",
+    "trainingHeading": "Practica una sección a la vez",
+    "trainingSub": "Core y los tres tipos, según el temario del examen de la EPA. Respuesta inmediata, y las preguntas que fallas vuelven hasta que las domines.",
+    "testsHeading": "Exámenes de práctica mixtos · 50 preguntas de las cuatro secciones, 72% para aprobar",
+    "heroSubs": [
+      "Cuatro secciones. Empieza por Core.",
+      "Domina cada grupo y luego haz un examen.",
+      "Vas a la mitad. Prueba un examen de práctica.",
+      "Corrige las fallas y vuelve a intentarlo.",
+      "Todo listo. Reserva tu examen supervisado."
+    ],
+    "sourceLine": "Basado en 40 CFR Parte 82 Subparte F y el temario del examen EPA Sección 608. Cada sección real tiene 25 preguntas y se aprueba con 18."
+  }
+}

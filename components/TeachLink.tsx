@@ -62,7 +62,7 @@ export function TeachLink() {
   return (
     <Link
       href="/teach"
-      className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50 transition-colors"
+      className="flex h-9 w-9 items-center justify-center rounded-full text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50"
       title="Your classes"
       aria-label="Your classes"
     >

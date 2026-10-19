@@ -76,7 +76,7 @@ export function Header() {
             </span>
           </Link>
 
-          <div className="flex items-center gap-2 sm:gap-4">
+          <div className="flex items-center gap-1 sm:gap-2">
             <TestSwitcher />
             <ThemeToggle />
 
@@ -86,7 +86,7 @@ export function Header() {
             {(user || isGuest) && (
               <Link
                 href="/stats"
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50 transition-all duration-200 hover:scale-110 active:scale-95"
+                className="flex h-9 w-9 items-center justify-center rounded-full text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50"
                 title={t("stats.yourStats")}
               >
                 <BarChart3 className="h-5 w-5 stats-icon" />

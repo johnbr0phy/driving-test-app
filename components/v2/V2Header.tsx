@@ -44,7 +44,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
           )}
           <span className="text-2xl font-bold text-gray-900 dark:text-gray-50 group-hover:opacity-80 transition-opacity hidden sm:inline">{exam.name}</span>
         </Link>
-        <div className="flex items-center gap-2 sm:gap-4">
+        <div className="flex items-center gap-1 sm:gap-2">
           <TestSwitcher />
           <ThemeToggle />
           {user ? (

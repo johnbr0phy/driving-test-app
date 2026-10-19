@@ -46,6 +46,8 @@ function Body({ student, report }: { student: ClassStudentRow; report: ClassRepo
   const { detail } = student;
   const pass = report.passPct;
   const byId = new Map<string, ClassQuestionRow>(report.questions.map((q) => [q.questionId, q]));
+  // Misses the per-question counts don't hold (lost before the Oct 19 2026 fix).
+  const unlisted = student.answered - student.correct - detail.missed.reduce((n, m) => n + m.missed, 0);
   const missed = detail.missed.flatMap((m) => {
     const q = byId.get(m.questionId);
     return q ? [{ ...m, q }] : [];
@@ -129,7 +131,7 @@ function Body({ student, report }: { student: ClassStudentRow; report: ClassRepo
       <div>
         <h3 className={section}>Questions {student.name} missed</h3>
         {missed.length === 0 ? (
-          <p className="text-sm text-gray-600 dark:text-gray-300">{student.answered ? "None missed yet." : "No answers yet."}</p>
+          <p className="text-sm text-gray-600 dark:text-gray-300">{!student.answered ? "No answers yet." : unlisted > 0 ? "None listed yet." : "None missed yet."}</p>
         ) : (
           <>
             <div className="space-y-2">
@@ -164,6 +166,12 @@ function Body({ student, report }: { student: ClassStudentRow; report: ClassRepo
               </button>
             )}
           </>
+        )}
+        {unlisted > 0 && (
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+            {unlisted} {unlisted === 1 ? "miss isn't" : "misses aren't"} listed: a bug before Oct 19 dropped them. They come back the next time {student.name} opens
+            this test on the device they joined on.
+          </p>
         )}
       </div>
 

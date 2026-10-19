@@ -29,6 +29,19 @@ function readCached(uid: string): Cached | null {
   }
 }
 
+// What this device last knew: true / false for a uid, or for no uid (auth not
+// settled yet) whether any account on it teaches. null means never checked.
+export function teachesHint(uid?: string): boolean | null {
+  if (uid) return readCached(uid)?.teaches ?? null;
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (k?.startsWith("tigertest-teacher:") && readCached(k.slice(18))?.teaches) return true;
+    }
+  } catch {}
+  return false;
+}
+
 export function markTeacher(uid: string, teaches: boolean) {
   try {
     localStorage.setItem(KEY(uid), JSON.stringify({ teaches, at: Date.now() }));

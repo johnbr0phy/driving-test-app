@@ -268,7 +268,8 @@ export default async function Home() {
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-gray-600 dark:text-gray-300 text-center mb-8 flex items-center justify-center gap-2">
             From r/driving, r/DMV and r/Histology on
-            <Image src="/reddit.png" alt="Reddit" width={72} height={24} className="h-[55px] w-auto inline-block" />
+            <Image src="/reddit.png" alt="Reddit" width={72} height={24} className="h-[55px] w-auto inline-block dark:hidden" />
+            <Image src="/reddit-dark.png" alt="Reddit" width={72} height={24} className="h-[55px] w-auto hidden dark:inline-block" />
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {quotes.map((q) => {

@@ -14,7 +14,11 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
+import { FieldPath } from "firebase-admin/firestore";
 import { getQuestionsData } from "@/lib/testGenerator";
+
+// Reading every account takes about 25s at ~5,000 accounts (Oct 2026).
+export const maxDuration = 60;
 
 function verifyCronSecret(req: NextRequest): boolean {
   const secret = process.env.CRON_SECRET;
@@ -53,8 +57,9 @@ export async function GET(req: NextRequest) {
       pageToken = result.pageToken;
     } while (pageToken);
 
-    // Aggregate answer history across all real users
-    const snap = await db.collection("users").limit(2000).get();
+    // Aggregate answer history across all real users. Paged by document id,
+    // only the two answer fields read: a single limit(2000) read used to stop
+    // at the first 2,000 accounts (4,892 by Oct 2026) and skip everyone after.
     const counts: Record<string, { correct: number; wrong: number }> = {};
 
     // When people study: every timestamped answer (training and practice
@@ -62,6 +67,7 @@ export async function GET(req: NextRequest) {
     const studyGrid: number[][] = Array.from({ length: 7 }, () => new Array(24).fill(0));
     const studyFrom = Date.now() - 90 * 24 * 60 * 60 * 1000;
     let studyAnswers = 0;
+    let sampledUsers = 0;
     const studyUsers = new Set<string>();
     const tally = (uid: string, iso: unknown) => {
       if (typeof iso !== "string") return;
@@ -74,26 +80,36 @@ export async function GET(req: NextRequest) {
       studyUsers.add(uid);
     };
 
-    snap.forEach((doc) => {
-      if (!realUids.has(doc.id)) return;
-      const data = doc.data();
-      for (const entry of data.trainingAnswerHistory || []) tally(doc.id, entry?.answeredAt);
-      for (const test of Array.isArray(data.completedTests) ? data.completedTests : []) {
-        for (const a of Array.isArray(test?.answers) ? test.answers : []) tally(doc.id, a?.answeredAt);
-      }
-    });
-
-    snap.forEach((doc) => {
-      if (!realUids.has(doc.id)) return;
-      const history: any[] = doc.data().trainingAnswerHistory || [];
-      for (const entry of history) {
-        const id: string = entry.questionId;
-        if (!id) continue;
-        if (!counts[id]) counts[id] = { correct: 0, wrong: 0 };
-        if (entry.isCorrect) counts[id].correct++;
-        else counts[id].wrong++;
-      }
-    });
+    const PAGE_SIZE = 500;
+    let cursor: string | null = null;
+    for (;;) {
+      let query = db
+        .collection("users")
+        .select("trainingAnswerHistory", "completedTests")
+        .orderBy(FieldPath.documentId())
+        .limit(PAGE_SIZE);
+      if (cursor) query = query.startAfter(cursor);
+      const page = await query.get();
+      sampledUsers += page.size;
+      page.forEach((doc) => {
+        if (!realUids.has(doc.id)) return;
+        const data = doc.data();
+        const history: any[] = Array.isArray(data.trainingAnswerHistory) ? data.trainingAnswerHistory : [];
+        for (const entry of history) {
+          tally(doc.id, entry?.answeredAt);
+          const id: string = entry?.questionId;
+          if (!id) continue;
+          if (!counts[id]) counts[id] = { correct: 0, wrong: 0 };
+          if (entry.isCorrect) counts[id].correct++;
+          else counts[id].wrong++;
+        }
+        for (const test of Array.isArray(data.completedTests) ? data.completedTests : []) {
+          for (const a of Array.isArray(test?.answers) ? test.answers : []) tally(doc.id, a?.answeredAt);
+        }
+      });
+      if (page.size < PAGE_SIZE) break;
+      cursor = page.docs[page.docs.length - 1].id;
+    }
 
     // Build question lookup map from static data
     const allQuestions = getQuestionsData("en");
@@ -162,7 +178,7 @@ export async function GET(req: NextRequest) {
       grid: Object.fromEntries(studyGrid.map((row, i) => [String(i), row])),
       answers: studyAnswers,
       users: studyUsers.size,
-      sampledUsers: snap.size,
+      sampledUsers,
       days: 90,
       timeZone: "America/New_York",
       updatedAt: new Date().toISOString(),

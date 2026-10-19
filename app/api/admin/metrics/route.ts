@@ -173,10 +173,13 @@ export async function GET(request: NextRequest) {
     let revenueAllTimeCents = 0;
     paymentsSnap.docs.forEach((doc) => {
       const p = doc.data() as Record<string, unknown>;
-      if (p.status !== 'succeeded' || isInternalPayment(p)) return;
-      const amount = typeof p.amount === 'number' ? p.amount : 0;
-      const day = typeof p.createdAt === 'string' ? dayKey(p.createdAt) : null;
+      if (isInternalPayment(p)) return;
+      // A refunded payment (Stripe webhook) still marks its buyer as paid, so
+      // the $9.99 fallback below never counts them, but adds only what was kept.
       if (p.userId) paidUserIds.add(p.userId as string);
+      if (p.status !== 'succeeded' && p.status !== 'partially_refunded') return;
+      const amount = (typeof p.amount === 'number' ? p.amount : 0) - (typeof p.refundedCents === 'number' ? p.refundedCents : 0);
+      const day = typeof p.createdAt === 'string' ? dayKey(p.createdAt) : null;
       revenueAllTimeCents += amount;
       if (day) {
         revenueCentsByDay[day] = (revenueCentsByDay[day] || 0) + amount;

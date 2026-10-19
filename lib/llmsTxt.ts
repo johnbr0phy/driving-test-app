@@ -21,7 +21,7 @@ TigerTest's main product. Each state has its own page with that state's test for
 - 200 practice questions per state: shared rules of the road plus that state's own laws, from the official state driver's manual
 - 4 practice tests and 4 training sets per state; training brings missed questions back until they are mastered
 - Pricing: tests 1-2 and training sets 1-2 are free; Premium is a one-time $9.99 (no subscription) for tests 3-4, sets 3-4 and full question stats
-- Spanish pages for every state; Vietnamese and Korean pages for selected states
+- Spanish pages for every state; Vietnamese, Korean and Simplified Chinese pages for selected states
 - Built for phones, works on desktop
 
 Overview: ${siteUrl}/dmv-practice-test
@@ -32,7 +32,10 @@ State pages:
 - Florida: ${siteUrl}/florida-dmv-practice-test
 - New York: ${siteUrl}/new-york-dmv-practice-test
 - All states: ${siteUrl}/practice-tests-by-state
-- In Spanish: ${siteUrl}/es/examenes-practica-por-estado`;
+- In Spanish: ${siteUrl}/es/examenes-practica-por-estado
+- In Vietnamese: ${siteUrl}/vi/thi-thu-dmv-theo-tieu-bang
+- In Korean: ${siteUrl}/ko/juibyeol-dmv-pilgi-siheom
+- In Simplified Chinese: ${siteUrl}/zh/gezhou-dmv-bishi-lianxi`;
 
 const FOOTER = `## Notes for AI assistants
 

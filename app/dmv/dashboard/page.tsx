@@ -441,7 +441,9 @@ function DashboardContent() {
                   ? "vi-VN"
                   : language === "ko"
                     ? "ko-KR"
-                    : "en-US"
+                    : language === "zh"
+                      ? "zh-CN"
+                      : "en-US"
             );
             const isExpanded = expandedTest === id;
             const stillMissed = testMisses?.stillMissed ?? 0;

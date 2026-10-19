@@ -16,6 +16,7 @@ import {
 import { states, getStateBySlug } from "@/data/states";
 import { getStateLandingInfoEs } from "@/data/stateLandingDataEs";
 import { isViState } from "@/data/viStates";
+import { isZhState } from "@/data/zhStates";
 import { isKoState } from "@/data/koStates";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
@@ -71,6 +72,9 @@ export async function generateMetadata({
           : {}),
         ...(isKoState(state.code)
           ? { "ko": `${siteUrl}/ko/${state.slug}-dmv-pilgi-siheom` }
+          : {}),
+        ...(isZhState(state.code)
+          ? { "zh-Hans": `${siteUrl}/zh/${state.slug}-dmv-bishi-lianxi` }
           : {}),
         "x-default": enUrl,
       },

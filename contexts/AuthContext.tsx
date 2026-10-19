@@ -64,9 +64,14 @@ function shouldUseRedirectSignIn(): boolean {
 
 async function sendWelcomeEmail(userId: string, email: string, displayName: string | null, emailConsent: boolean) {
   try {
-    // Exam pages send people to /signup?redirect=/<slug>/dashboard, so the
-    // page URL says which exam the welcome email should be about.
-    const examId = examIdFromSignupUrl(typeof window !== "undefined" ? window.location.href : null);
+    // The page URL says which exam the welcome email should be about: the
+    // ?redirect= target on /signup, or the exam page itself for one-tap
+    // Google on GuestSaveCard. Else the last test this device was in.
+    let lastTestPath: string | null = null;
+    try {
+      lastTestPath = localStorage.getItem("tigertest-last-test-path");
+    } catch {}
+    const examId = examIdFromSignupUrl(typeof window !== "undefined" ? window.location.href : null, lastTestPath);
     await fetch("/api/send-welcome-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

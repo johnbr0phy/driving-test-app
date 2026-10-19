@@ -1006,6 +1006,12 @@ export default function AdminV2Page() {
           </div>
           <div className="flex items-center gap-2">
             <Link
+              href="/admin/opportunities"
+              className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5"
+            >
+              Opportunities <ExternalLink className="h-3 w-3" />
+            </Link>
+            <Link
               href="/admin"
               className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5"
             >

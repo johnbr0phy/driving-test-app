@@ -10,7 +10,9 @@ import { isInternalBrowser } from "@/lib/internal";
 //   visit        first page view while signed out, also counted by source
 //   answered     first question answered while signed out (tried it first)
 //   signup_view  first time the signup page is opened while signed out
-//   signup       account created; also stamps users/{uid}.signupOrigin
+//   signup       account created; also stamps signupOrigins/{uid} with
+//                whether it practiced first and the first visit's source and
+//                landing page (kept from the visit step in localStorage)
 //
 // Browsers that block storage count on every page load; that's rare enough to
 // ignore, and the alternative (no dedupe) is far worse.
@@ -80,6 +82,30 @@ function isDeepDirect(source: VisitSource): boolean {
 }
 
 const FLAG_PREFIX = "tigertest-funnel:";
+const FIRST_VISIT_KEY = "tigertest-funnel-first-visit";
+
+type FirstVisit = { source: VisitSource; landing: string };
+
+function saveFirstVisit(visit: FirstVisit) {
+  try {
+    localStorage.setItem(FIRST_VISIT_KEY, JSON.stringify(visit));
+  } catch {
+    // Storage blocked: the signup is counted without a source.
+  }
+}
+
+function readFirstVisit(): FirstVisit | null {
+  try {
+    const raw = localStorage.getItem(FIRST_VISIT_KEY);
+    const parsed = raw ? JSON.parse(raw) : null;
+    if (parsed && (VISIT_SOURCES as readonly string[]).includes(parsed.source) && typeof parsed.landing === "string") {
+      return { source: parsed.source, landing: parsed.landing };
+    }
+  } catch {
+    // Unreadable: no source.
+  }
+  return null;
+}
 
 function hasFlag(step: FunnelStep): boolean {
   try {
@@ -103,6 +129,8 @@ export function trackFunnelStep(step: Exclude<FunnelStep, "signup">) {
   setFlag(step);
   if (step !== "visit") return void post({ step });
   const source = visitSource();
+  // The path only, never the query string, which can carry personal data.
+  saveFirstVisit({ source, landing: window.location.pathname.slice(0, 120) });
   void post({ step, source, deep: isDeepDirect(source) || undefined });
 }
 
@@ -110,10 +138,11 @@ export function trackFunnelStep(step: Exclude<FunnelStep, "signup">) {
 export function trackFunnelSignup() {
   if (typeof window === "undefined" || hasFlag("signup") || isInternalBrowser(auth.currentUser?.email)) return;
   setFlag("signup");
-  void post({ step: "signup", triedFirst: hasFlag("answered") });
+  const firstVisit = readFirstVisit();
+  void post({ step: "signup", triedFirst: hasFlag("answered"), source: firstVisit?.source, landing: firstVisit?.landing });
 }
 
-async function post(body: { step: FunnelStep; triedFirst?: boolean; source?: VisitSource; deep?: boolean }) {
+async function post(body: { step: FunnelStep; triedFirst?: boolean; source?: VisitSource; deep?: boolean; landing?: string }) {
   try {
     const headers: Record<string, string> = { "Content-Type": "application/json" };
     const user = auth.currentUser;

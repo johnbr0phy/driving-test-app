@@ -2,10 +2,11 @@ import { en, TranslationKeys } from './en';
 import { es } from './es';
 import { vi } from './vi';
 import { ko } from './ko';
+import { zh } from './zh';
 
-export type Language = 'en' | 'es' | 'vi' | 'ko';
+export type Language = 'en' | 'es' | 'vi' | 'ko' | 'zh';
 
-const translations: Record<Language, TranslationKeys> = { en, es, vi, ko };
+const translations: Record<Language, TranslationKeys> = { en, es, vi, ko, zh };
 
 /** Every supported language, in the order the switcher lists them. */
 export const LANGUAGES: { code: Language; flag: string; label: string; englishName: string }[] = [
@@ -13,6 +14,7 @@ export const LANGUAGES: { code: Language; flag: string; label: string; englishNa
   { code: 'es', flag: '\u{1F1EA}\u{1F1F8}', label: 'Español', englishName: 'Spanish' },
   { code: 'vi', flag: '\u{1F1FB}\u{1F1F3}', label: 'Tiếng Việt', englishName: 'Vietnamese' },
   { code: 'ko', flag: '\u{1F1F0}\u{1F1F7}', label: '한국어', englishName: 'Korean' },
+  { code: 'zh', flag: '\u{1F1E8}\u{1F1F3}', label: '简体中文', englishName: 'Chinese (Simplified)' },
 ];
 
 export function isLanguage(value: unknown): value is Language {
@@ -48,5 +50,5 @@ export function createT(language: Language) {
   };
 }
 
-export { en, es, vi, ko };
+export { en, es, vi, ko, zh };
 export type { TranslationKeys };

@@ -5,6 +5,7 @@ import { sendCronEmail, buildHtml } from '@/lib/cron-email';
 import { EMAIL_TEMPLATES } from '@/lib/email-templates';
 import { voiceFor } from '@/lib/email-voice';
 import Stripe from 'stripe';
+import { purchaseExam } from '@/lib/purchaseAttribution';
 
 export async function POST(request: NextRequest) {
   const body = await request.text();
@@ -77,6 +78,9 @@ export async function POST(request: NextRequest) {
         currency: session.currency,
         status: 'succeeded',
         email: session.metadata?.email || session.customer_email,
+        // What the buyer paid from, for revenue by exam and paywall on /admin/opportunities.
+        location: session.metadata?.location || null,
+        exam: purchaseExam(session.metadata?.location),
         createdAt: new Date().toISOString(),
       });
 
@@ -102,6 +106,25 @@ export async function POST(request: NextRequest) {
       break;
     }
 
+    case 'charge.refunded': {
+      // Recorded for revenue and refund rate only. Premium is left on: taking
+      // it away is a call made by hand in Stripe and Firestore, not here.
+      const charge = event.data.object as Stripe.Charge;
+      const paymentIntentId = typeof charge.payment_intent === 'string' ? charge.payment_intent : charge.payment_intent?.id;
+      if (paymentIntentId) {
+        const paymentRef = getAdminDb().collection('payments').doc(paymentIntentId);
+        const paymentDoc = await paymentRef.get();
+        if (paymentDoc.exists) {
+          await paymentRef.update({
+            status: charge.amount_refunded >= charge.amount ? 'refunded' : 'partially_refunded',
+            refundedCents: charge.amount_refunded,
+            refundedAt: new Date().toISOString(),
+          });
+        }
+      }
+      break;
+    }
+
     case 'payment_intent.payment_failed': {
       const paymentIntent = event.data.object as Stripe.PaymentIntent;
       console.error('Payment failed:', paymentIntent.id);
@@ -114,15 +137,4 @@ export async function POST(request: NextRequest) {
   }
 
   return NextResponse.json({ received: true });
-}
-
-/**
- * Which exam the buyer paid from, from the checkout `location` metadata.
- * SAT and ACT paywalls report "sat_dashboard", "act_drill" and so on
- * (components/v2/V2Paywall); everything else is the DMV.
- */
-function purchaseExam(location: string | undefined): string {
-  if (location?.startsWith("sat_")) return "sat";
-  if (location?.startsWith("act_")) return "act";
-  return "dmv";
 }

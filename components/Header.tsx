@@ -21,7 +21,7 @@ import { getStateBySlug, states } from "@/data/states";
 import { BrandLockup } from "@/components/BrandLockup";
 
 const DMV_APP_PREFIXES = ["/dmv/", "/dashboard", "/stats", "/drill", "/practice", "/training", "/test/", "/onboarding", "/dmv-practice-test", "/practice-tests-by-state"];
-const DMV_LOCALE_HUBS = ["/es/examenes-practica-por-estado", "/ko/juibyeol-dmv-pilgi-siheom", "/vi/thi-thu-dmv-theo-tieu-bang"];
+const DMV_LOCALE_HUBS = ["/es/examenes-practica-por-estado", "/ko/juibyeol-dmv-pilgi-siheom", "/vi/thi-thu-dmv-theo-tieu-bang", "/zh/gezhou-dmv-bishi-lianxi"];
 
 /** DMV pages wear the "DMV Practice Test" title like every exam wears its own;
  *  the hub, settings and sign-in pages keep the tigertest.io wordmark. */
@@ -32,9 +32,9 @@ function isDmvPath(pathname: string | null): boolean {
   return !!dmvLandingState(pathname);
 }
 
-/** The state a DMV state page is about: /california-dmv-practice-test and the es/ko/vi equivalents. */
+/** The state a DMV state page is about: /california-dmv-practice-test and the es/ko/vi/zh equivalents. */
 function dmvLandingState(pathname: string | null) {
-  const m = pathname?.match(/^\/(?:(?:es|ko|vi)\/)?([a-z-]+?)-(?:dmv-practice-test|examen-practica-dmv|dmv-pilgi-siheom|thi-thu-dmv)$/);
+  const m = pathname?.match(/^\/(?:(?:es|ko|vi|zh)\/)?([a-z-]+?)-(?:dmv-practice-test|examen-practica-dmv|dmv-pilgi-siheom|thi-thu-dmv|dmv-bishi-lianxi)$/);
   return m ? getStateBySlug(m[1]) : undefined;
 }
 

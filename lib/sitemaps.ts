@@ -3,6 +3,7 @@ import { EXAMS_V2 } from "./v2/registry";
 import { states, getStateByCode } from "@/data/states";
 import { VI_STATE_CODES } from "@/data/viStates";
 import { KO_STATE_CODES } from "@/data/koStates";
+import { ZH_STATE_CODES } from "@/data/zhStates";
 import {
   DMV_LANGUAGE_PAGES_UPDATED_AT,
   EXAM_LANDINGS_UPDATED_AT,
@@ -15,7 +16,7 @@ import {
 // instead of being averaged with thirty new exam landings.
 //   /sitemap.xml            index
 //   /sitemaps/dmv.xml       home, state hub, 51 state DMV pages
-//   /sitemaps/dmv-es-vi-ko.xml  Spanish, Vietnamese and Korean DMV pages
+//   /sitemaps/dmv-es-vi-ko.xml  Spanish, Vietnamese, Korean and Chinese DMV pages (name kept from before Chinese, so Search Console keeps its history)
 //   /sitemaps/exams.xml     /tests hub and every exam landing
 export const SITEMAP_SEGMENTS = ["dmv", "dmv-es-vi-ko", "exams"] as const;
 export type SitemapSegment = (typeof SITEMAP_SEGMENTS)[number];
@@ -87,6 +88,18 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
         },
         ...KO_STATE_CODES.map((code) => ({
           url: `${SITE_URL}/ko/${getStateByCode(code)!.slug}-dmv-pilgi-siheom`,
+          lastModified: DMV_LANGUAGE_PAGES_UPDATED_AT,
+          changeFrequency: "monthly" as const,
+          priority: 0.7,
+        })),
+        {
+          url: `${SITE_URL}/zh/gezhou-dmv-bishi-lianxi`,
+          lastModified: DMV_LANGUAGE_PAGES_UPDATED_AT,
+          changeFrequency: "weekly",
+          priority: 0.8,
+        },
+        ...ZH_STATE_CODES.map((code) => ({
+          url: `${SITE_URL}/zh/${getStateByCode(code)!.slug}-dmv-bishi-lianxi`,
           lastModified: DMV_LANGUAGE_PAGES_UPDATED_AT,
           changeFrequency: "monthly" as const,
           priority: 0.7,

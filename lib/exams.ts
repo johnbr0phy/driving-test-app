@@ -4248,6 +4248,7 @@ export function trainingPartName(p: TrainingPart, lang: Language = "en"): string
   if (lang === "es") return `${p.set.name}, parte ${p.part} de ${p.partCount}`;
   if (lang === "vi") return `${p.set.name}, phần ${p.part}/${p.partCount}`;
   if (lang === "ko") return `${p.set.name}, ${p.partCount}부 중 ${p.part}부`;
+  if (lang === "zh") return `${p.set.name}，第 ${p.part} 部分（共 ${p.partCount} 部分）`;
   return `${p.set.name}, part ${p.part} of ${p.partCount}`;
 }
 

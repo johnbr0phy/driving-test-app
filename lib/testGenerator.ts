@@ -4,6 +4,7 @@ import questionsDataEn from "@/data/questions.json";
 import questionsDataEs from "@/data/questions_es.json";
 import questionsDataVi from "@/data/questions_vi.json";
 import questionsDataKo from "@/data/questions_ko.json";
+import questionsDataZh from "@/data/questions_zh.json";
 import { shuffleQuestionOptions } from "./shuffleOptions";
 
 export { shuffleQuestionOptions };
@@ -26,6 +27,22 @@ function getQuestionsVi(): Question[] {
   return questionsViMerged;
 }
 
+// The Chinese bank holds only the rows translated so far (the universal
+// questions plus the state-specific ones for data/zhStates.ts), so every other
+// row falls back to its English original here. Built lazily on first request.
+let questionsZhMerged: Question[] | null = null;
+function getQuestionsZh(): Question[] {
+  if (!questionsZhMerged) {
+    const zhById = new Map(
+      (questionsDataZh as Question[]).map((q) => [q.questionId, q])
+    );
+    questionsZhMerged = (questionsDataEn as Question[]).map(
+      (q) => zhById.get(q.questionId) ?? q
+    );
+  }
+  return questionsZhMerged;
+}
+
 // Get questions data for the specified language
 export function getQuestionsData(language: Language = 'en'): Question[] {
   if (language === 'es') return questionsDataEs as Question[];
@@ -34,6 +51,7 @@ export function getQuestionsData(language: Language = 'en'): Question[] {
   // that is not yet translated is emitted as its English original at build
   // time, so no merge step is needed here.
   if (language === 'ko') return questionsDataKo as Question[];
+  if (language === 'zh') return getQuestionsZh();
   return questionsDataEn as Question[];
 }
 

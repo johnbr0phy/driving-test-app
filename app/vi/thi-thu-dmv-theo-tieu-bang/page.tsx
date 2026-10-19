@@ -16,6 +16,8 @@ export const metadata: Metadata = {
       en: `${siteUrl}/practice-tests-by-state`,
       es: `${siteUrl}/es/examenes-practica-por-estado`,
       vi: `${siteUrl}/vi/thi-thu-dmv-theo-tieu-bang`,
+      ko: `${siteUrl}/ko/juibyeol-dmv-pilgi-siheom`,
+      "zh-Hans": `${siteUrl}/zh/gezhou-dmv-bishi-lianxi`,
       "x-default": `${siteUrl}/practice-tests-by-state`,
     },
   },

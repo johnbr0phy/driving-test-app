@@ -237,6 +237,12 @@ interface AppState {
   // bouncing logged-in users on a fresh browsing context where localStorage
   // is empty but Firestore has their state.
   firestoreLoaded: boolean;
+  // The account this browser's progress was read from (or created for) this
+  // page load. saveToFirestore writes only when it equals userId, so a store
+  // that has not loaded the account yet (empty, a guest's, another user's)
+  // can never overwrite it. Not persisted: every load re-reads the account.
+  loadedUid: string | null;
+  markAccountLoaded: (userId: string) => void;
 }
 
 export const useStore = create<AppState>()(
@@ -282,6 +288,7 @@ export const useStore = create<AppState>()(
         stripePaymentId: null,
       },
       firestoreLoaded: false,
+      loadedUid: null,
 
       // Actions
       setLanguage: (lang: Language) => {
@@ -294,6 +301,10 @@ export const useStore = create<AppState>()(
 
       setUserId: (userId: string | null) => {
         set({ userId });
+      },
+
+      markAccountLoaded: (userId: string) => {
+        set({ loadedUid: userId });
       },
 
       setPhotoURL: (photoURL: string | null) => {
@@ -924,10 +935,11 @@ export const useStore = create<AppState>()(
                 stripePaymentId: null,
               },
               firestoreLoaded: true,
+              loadedUid: userId,
             });
           } else {
             // New user - set userId
-            set({ userId, firestoreLoaded: true });
+            set({ userId, firestoreLoaded: true, loadedUid: userId });
           }
         } catch (error) {
           console.error('Error loading user data:', error);
@@ -952,6 +964,9 @@ export const useStore = create<AppState>()(
       saveToFirestore: async () => {
         const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, examStates } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
+        // Never write an account this store has not loaded: it would replace
+        // the saved progress with whatever this browser holds.
+        if (get().loadedUid !== userId) return;
 
         try {
           // Convert currentTests dates to timestamps for Firestore
@@ -1171,6 +1186,7 @@ export const useStore = create<AppState>()(
           trainingAnswerHistory: [],
           activeDates: [],
           userId: null,
+          loadedUid: null,
           photoURL: null,
           superAmazing: {
             enabled: false,
@@ -1197,7 +1213,7 @@ export const useStore = create<AppState>()(
         // Set user ID and clear guest flag. Treat Firestore as "loaded" since
         // we're about to push the local guest state up — there's no remote
         // record to wait on, and gated UI shouldn't block.
-        set({ userId, isGuest: false, firestoreLoaded: true });
+        set({ userId, isGuest: false, firestoreLoaded: true, loadedUid: userId });
         // Save all existing guest progress to Firestore
         await get().saveToFirestore();
       },
@@ -1236,6 +1252,8 @@ export const useStore = create<AppState>()(
     {
       name: 'driving-test-storage',
       version: DATA_VERSION,
+      // loadedUid must come from this page load's own read of the account.
+      partialize: ({ loadedUid: _loadedUid, ...rest }) => rest,
       storage: createJSONStorage(() => {
         // Only use localStorage on the client side
         if (typeof window !== 'undefined') {

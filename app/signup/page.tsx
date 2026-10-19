@@ -152,7 +152,9 @@ function SignupPageContent() {
     (async () => {
       setLoading(true);
       if (await handleExistingGoogleAccount(user.uid, user.email ?? "")) return;
+      // A brand-new account: this browser's progress is the account's to save.
       useStore.getState().setUserId(user.uid);
+      useStore.getState().markAccountLoaded(user.uid);
       if (stateToUse) {
         setStoreState(stateToUse);
       }
@@ -197,7 +199,10 @@ function SignupPageContent() {
       const uid = auth.currentUser?.uid ?? "";
       const userEmail = auth.currentUser?.email ?? "";
       if (uid && (await handleExistingGoogleAccount(uid, userEmail))) return;
-      if (uid) useStore.getState().setUserId(uid);
+      if (uid) {
+        useStore.getState().setUserId(uid);
+        useStore.getState().markAccountLoaded(uid);
+      }
 
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState && stateToUse) {
@@ -243,7 +248,11 @@ function SignupPageContent() {
       // yet, leaving Firestore without a selectedState. The welcome email
       // link would then bounce the user back to onboarding.
       const uid = auth.currentUser?.uid ?? "";
-      if (uid) useStore.getState().setUserId(uid);
+      if (uid) {
+        useStore.getState().setUserId(uid);
+        // signup() just created this account, so there is nothing to overwrite.
+        useStore.getState().markAccountLoaded(uid);
+      }
 
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState && selectedState) {

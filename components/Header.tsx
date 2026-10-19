@@ -87,7 +87,7 @@ export function Header() {
   return (
     <header className="border-b bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={user || isGuest ? "/dmv/dashboard" : "/"} className="flex items-center gap-2 group flex-shrink-0">
+        <Link href={isDmvPath(pathname) && (user || isGuest) ? "/dmv/dashboard" : "/"} className="flex items-center gap-2 group flex-shrink-0">
             <BrandLockup
               icon={<Image src={isPremium ? "/tiger_face_01.png" : "/tiger.png"} alt="tigertest.io" width={40} height={40} className="w-10 h-10" />}
               subtitle={dmvSubtitle}

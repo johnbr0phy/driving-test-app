@@ -7,7 +7,7 @@
  * - globalStats/questionDifficulty — per-question attempt count + error rate for
  *   every question (universal and state-specific) with enough attempts (FastPass)
  * - globalStats/studyTimes — answers in the last 90 days by Eastern weekday and
- *   hour (7 x 24 grid), for picking email send times (/admin/v2)
+ *   hour (7 x 24 grid), for picking email send times (the /admin Growth tab)
  *
  * Each consumer reads one doc — fast, cheap, always fresh.
  */

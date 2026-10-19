@@ -63,6 +63,10 @@ const nextConfig: NextConfig = {
       // The driving-school program became instructor classes at /teach.
       { source: "/schools", destination: "/teach", permanent: true },
       { source: "/schools/:path*", destination: "/teach", permanent: true },
+      // The admin pages became tabs on /admin (Oct 2026).
+      { source: "/admin/opportunities", destination: "/admin", permanent: false },
+      { source: "/admin/v2", destination: "/admin?tab=growth", permanent: false },
+      { source: "/admin/teach", destination: "/admin?tab=teachers", permanent: false },
       // Every exam has the same app URLs: /<exam>/dashboard, /<exam>/practice/<n>
       // and /<exam>/test/<n> (bare /<exam> redirects to its dashboard). These map
       // the older shapes: /training?set=n (DMV and v1), /<exam>/train?drill=key

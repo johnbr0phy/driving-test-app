@@ -63,13 +63,3 @@ export function computeAnswersByExamByDay(data: Record<string, unknown>): Answer
   }
   return result;
 }
-
-export function computeAnswersByDay(data: Record<string, unknown>): Record<string, number> {
-  const answersByDay: Record<string, number> = {};
-  for (const days of Object.values(computeAnswersByExamByDay(data))) {
-    for (const [day, n] of Object.entries(days)) {
-      answersByDay[day] = (answersByDay[day] || 0) + n;
-    }
-  }
-  return answersByDay;
-}

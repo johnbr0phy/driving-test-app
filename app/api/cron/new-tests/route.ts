@@ -20,7 +20,7 @@
  * DMV readers are split across the variants in lib/email-launch (one per
  * user, stable by uid, recorded as emailVariants.newTests2026 on send);
  * everyone else gets the short "what should we build next?" version and is
- * not part of the test. Results are on /admin/v2.
+ * not part of the test. Results are on the /admin Growth tab.
  *
  * Drains at MAX_BATCH per day, most recently active first, so the freshest
  * addresses go out while the budget is tightest. Set CRON_MAX_BATCH and

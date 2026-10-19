@@ -4,7 +4,7 @@ import type { OpportunitiesPayload } from '@/lib/server/opportunities';
 import { buildTeachAdmin, type TeachAdminPayload } from '@/lib/server/teachAdmin';
 import { getInternalUids } from '@/lib/server/internalUsers';
 
-// The daily update at the top of /admin/opportunities: Claude reads the
+// The daily update at the top of the /admin Today tab: Claude reads the
 // page's numbers (plus the previous update's numbers, to say what changed)
 // and writes a headline and a few short bullets. Written each weekday morning
 // by /api/cron/daily-brief, or on demand from the page. One doc per Eastern

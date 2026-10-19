@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
     if (signupUid) {
       try {
         // Where this browser's first visit came from, for signups and
-        // purchases by source on /admin/opportunities. Absent for browsers
+        // purchases by source on the /admin Today tab. Absent for browsers
         // whose first visit predates it (or was made signed in).
         const source = typeof body.source === 'string' && VISIT_SOURCES.has(body.source) ? body.source : null;
         const landing = typeof body.landing === 'string' && /^\/[\w\-/.]{0,119}$/.test(body.landing) ? body.landing : null;

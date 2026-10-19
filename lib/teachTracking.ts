@@ -3,7 +3,7 @@ import { isInternalBrowser } from "@/lib/internal";
 import { visitSource } from "@/lib/funnel";
 
 // ─── Teacher funnel ──────────────────────────────────────────────────────────
-// What classes alone can't show on /admin/teach: how many people saw the
+// What classes alone can't show on the /admin Teachers tab: how many people saw the
 // /teach pitch and how many got partway into making a class. Each step counts
 // a browser once (a localStorage flag), into analytics/teach, total and per
 // UTC day. Classes made and students joined are read from the classes

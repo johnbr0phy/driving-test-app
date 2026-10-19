@@ -2,7 +2,7 @@ import { auth } from "@/lib/firebase";
 import { isInternalBrowser } from "@/lib/internal";
 
 // ─── Visitor funnel ──────────────────────────────────────────────────────────
-// The account funnel on /admin/v2 starts at "Created an account", so it can't
+// The account funnel on the /admin Growth tab starts at "Created an account", so it can't
 // see anyone who left before signing up. These steps count browsers, not
 // accounts, from the first page view on: each step fires at most once per
 // browser (a localStorage flag), into the analytics/funnel aggregate.
@@ -19,7 +19,7 @@ import { isInternalBrowser } from "@/lib/internal";
 
 export type FunnelStep = "visit" | "answered" | "signup_view" | "signup";
 
-// Where a first visit came from, so /admin/v2 can show how many new visitors
+// Where a first visit came from, so the /admin Growth tab can show how many new visitors
 // AI answer engines send. Read from utm_source first (ChatGPT tags its links
 // utm_source=chatgpt.com), then the referrer. Android apps send an
 // android-app://<package>/ referrer, so the AI apps' package names are listed

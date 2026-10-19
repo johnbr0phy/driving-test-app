@@ -4,7 +4,7 @@ import { isAdminEmail } from '@/lib/admin';
 import { getInternalUids } from '@/lib/server/internalUsers';
 import { buildTeachAdmin } from '@/lib/server/teachAdmin';
 
-// Data for /admin/teach (lib/server/teachAdmin). Read-only and read fresh:
+// Data for the /admin Teachers tab (lib/server/teachAdmin). Read-only and read fresh:
 // it is a handful of classes, and a teacher's first students should show at once.
 export const maxDuration = 60;
 

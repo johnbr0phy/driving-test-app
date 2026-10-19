@@ -6,7 +6,7 @@ import { buildOpportunities, type OpportunitiesPayload } from '@/lib/server/oppo
 import { getStripe } from '@/lib/stripe';
 import { latestBrief } from '@/lib/server/dailyBrief';
 
-// Data for /admin/opportunities (lib/server/opportunities). Read-only; cached
+// Data for the /admin Today tab (lib/server/opportunities). Read-only; cached
 // in memory for five minutes because each miss lists Stripe checkouts.
 export const maxDuration = 60;
 

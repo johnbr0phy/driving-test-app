@@ -17,6 +17,8 @@
 //   e.g. node shoot_landing.js http://localhost:3123 public/landing forklift:forklift:3301
 //        node shoot_landing.js http://localhost:3123 public/landing sat:sat:v2:advanced
 // THEMES=dark (or light) shoots only that theme; default is both.
+// SHOT_LANG=es (or vi, ko) shoots the translated app and names files <id>-mobile-es.png and so on,
+// the paths TranslatedExamLanding uses.
 let pw;
 try { pw = require("playwright"); } catch { pw = require("playwright-core"); }
 const { chromium } = pw;
@@ -27,6 +29,7 @@ if (!base || !outDir || pairs.length === 0) {
   process.exit(2);
 }
 const themes = (process.env.THEMES || "light,dark").split(",");
+const lang = process.env.SHOT_LANG || "";
 
 // Hide the Next.js dev badge in case the server is `next dev`.
 const NAV = { waitUntil: "load", timeout: 120000 };
@@ -34,15 +37,19 @@ const HIDE_DEV = "nextjs-portal{display:none!important}";
 
 async function open(browser, theme, opts) {
   const ctx = await browser.newContext({ ...opts, colorScheme: theme });
-  await ctx.addInitScript((t) => {
-    try { localStorage.setItem("tigertest-theme", t); } catch {}
-  }, theme);
+  await ctx.addInitScript(([t, l]) => {
+    try {
+      localStorage.setItem("tigertest-theme", t);
+      if (l && !localStorage.getItem("driving-test-storage"))
+        localStorage.setItem("driving-test-storage", JSON.stringify({ state: { language: l }, version: 2 }));
+    } catch {}
+  }, [theme, lang]);
   const page = await ctx.newPage();
   return { ctx, page };
 }
 
 async function settle(page, selector) {
-  await page.waitForSelector(selector, { timeout: 60000 });
+  await page.waitForSelector(selector, { timeout: 180000 });
   await page.addStyleTag({ content: HIDE_DEV });
   await page.waitForTimeout(1000);
   // The question heading takes focus for screen readers; drop the ring from the picture.
@@ -56,7 +63,7 @@ async function settle(page, selector) {
     const [id, slug, a, b] = pair.split(":");
     const v2 = a === "v2";
     for (const theme of themes) {
-      const suffix = theme === "dark" ? "-dark" : "";
+      const suffix = (lang ? `-${lang}` : "") + (theme === "dark" ? "-dark" : "");
 
       let { ctx, page } = await open(browser, theme, { viewport: { width: 1215, height: 790 }, deviceScaleFactor: 1 });
       if (v2) {

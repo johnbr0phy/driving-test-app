@@ -9,6 +9,8 @@ const DISALLOW = [
   "/test",
   "/training",
   "/practice/", // not "/practice": that would also block /practice-tests-by-state
+  "/drill", // the DMV miss drill; exam drills (/cdl/drill) are noindex instead
+  "/oauth/",
   "/dashboard",
   "/dmv/",
   "/settings",

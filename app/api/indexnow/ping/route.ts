@@ -1,7 +1,5 @@
-import { EXAMS, examLandingPath } from "@/lib/exams";
-import { EXAMS_V2 } from "@/lib/v2/registry";
 import { NextRequest, NextResponse } from "next/server";
-import { states } from "@/data/states";
+import { SITEMAP_SEGMENTS, buildSegment } from "@/lib/sitemaps";
 
 // IndexNow submission endpoint. POSTs the canonical URL list to
 // api.indexnow.org so Bing (and downstream consumers like ChatGPT search
@@ -20,18 +18,12 @@ function verifyAuth(req: NextRequest): boolean {
   return req.headers.get("authorization") === `Bearer ${secret}`;
 }
 
-function buildUrlList(): string[] {
+// The same URLs as the sitemaps, so a page added there (the vi/ko/zh DMV
+// pages, translated exam landings, /teach) is submitted here too.
+async function buildUrlList(): Promise<string[]> {
   const urls = new Set<string>();
-  urls.add(SITE_URL);
-  urls.add(`${SITE_URL}/practice-tests-by-state`);
-  urls.add(`${SITE_URL}/tests`);
-  for (const exam of EXAMS) urls.add(`${SITE_URL}${examLandingPath(exam)}`);
-  for (const exam of EXAMS_V2) urls.add(`${SITE_URL}${exam.landingPath}`);
-  urls.add(`${SITE_URL}/es/examenes-practica-por-estado`);
-
-  for (const state of states) {
-    urls.add(`${SITE_URL}/${state.slug}-dmv-practice-test`);
-    urls.add(`${SITE_URL}/es/${state.slug}-examen-practica-dmv`);
+  for (const segment of SITEMAP_SEGMENTS) {
+    for (const entry of await buildSegment(segment)) urls.add(entry.url);
   }
   return Array.from(urls);
 }
@@ -50,7 +42,7 @@ async function submit(req: NextRequest) {
   }
 
   const host = new URL(SITE_URL).host;
-  const urls = buildUrlList();
+  const urls = await buildUrlList();
 
   const payload = {
     host,

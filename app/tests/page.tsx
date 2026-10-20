@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: `${siteUrl}/tests`,
     siteName: "TigerTest",
     type: "website",
-    images: [{ url: "/og-tests.png", width: 1200, height: 630, alt: "TigerTest: 30 free practice tests" }],
+    images: [{ url: "/og-tests.png", width: 1200, height: 630, alt: `TigerTest: ${TEST_CATALOG.length} free practice tests` }],
   },
   twitter: { card: "summary_large_image", title, description, images: ["/og-tests.png"] },
 };

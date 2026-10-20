@@ -15,11 +15,12 @@ const pick = (s: V2Data): V2Data => ({ sessions: s.sessions, results: s.results,
  */
 export function V2Sync() {
   const { user, loading } = useAuth();
+  const userId = user?.uid ?? null;
   const ready = useRef<string | null>(null);
 
   useEffect(() => {
     if (loading) return;
-    const uid = user?.uid ?? null;
+    const uid = userId;
     const state = useV2Store.getState();
 
     if (!uid) {
@@ -40,6 +41,13 @@ export function V2Sync() {
         const remote = await loadV2(uid);
         if (cancelled) return;
         const merged = remote ? mergeV2(local, remote) : local;
+        // A goal picked while the account was loading is newer than the
+        // account's copy: keep it instead of snapping back to the saved one.
+        const goalsNow = useV2Store.getState().goals;
+        if (goalsNow !== local.goals) {
+          const changed = Object.fromEntries(Object.entries(goalsNow).filter(([k, v]) => local.goals[k] !== v));
+          merged.goals = { ...merged.goals, ...changed };
+        }
         useV2Store.getState().replaceData(merged, uid);
         await saveV2(uid, merged);
         if (cancelled) return;
@@ -67,12 +75,14 @@ export function V2Sync() {
 
     return () => {
       cancelled = true;
+      // Leaving the page (or a re-run) must not drop a save still waiting out its debounce.
+      if (ready.current === uid && timer) saveV2(uid, pick(useV2Store.getState())).catch(() => {});
       ready.current = null;
       unsubscribe?.();
       clearTimeout(timer);
       document.removeEventListener("visibilitychange", flush);
     };
-  }, [user, loading]);
+  }, [userId, loading]);
 
   return null;
 }

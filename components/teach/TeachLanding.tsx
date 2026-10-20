@@ -161,7 +161,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
                 <Icon className="w-7 h-7 text-brand-dark" aria-hidden="true" />
               </div>
               <div className="h-full bg-gray-50 dark:bg-gray-950 rounded-2xl p-6 pt-12 text-center">
-                <p className="text-xs font-semibold text-gray-400 mb-1">Step {i + 1}</p>
+                <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 mb-1">Step {i + 1}</p>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-2">{title}</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300">{body}</p>
               </div>

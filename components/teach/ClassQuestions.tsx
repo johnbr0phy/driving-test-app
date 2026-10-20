@@ -47,6 +47,7 @@ export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] })
             key={key}
             type="button"
             onClick={() => setSort(key)}
+            aria-pressed={sort === key}
             className={`text-sm px-3 py-1 rounded-full border ${
               sort === key
                 ? "bg-gray-900 dark:bg-white border-gray-900 dark:border-white text-white dark:text-gray-900"
@@ -63,7 +64,7 @@ export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] })
           const accuracy = pct(q.answered - q.missed, q.answered);
           const chip =
             sort === "missed"
-              ? { value: `${q.missed}`, label: "missed", color: q.missed > 0 ? scoreText("low") : "text-gray-400" }
+              ? { value: `${q.missed}`, label: "missed", color: q.missed > 0 ? scoreText("low") : "text-gray-500 dark:text-gray-400" }
               : { value: `${accuracy}%`, label: "right", color: scoreText(accuracy >= 70 ? "good" : accuracy >= 50 ? "near" : "low") };
           return (
             <QuizRow

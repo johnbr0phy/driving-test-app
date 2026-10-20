@@ -100,12 +100,12 @@ export function SuperAmazingCard({ dashboardKey, allComplete, totalSteps }: { da
             }`}
           >
             {t("dashboard.samTitle")}
-            {!samUnlocked && <Lock className="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 flex-shrink-0" />}
+            {!samUnlocked && <Lock className="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true" />}
           </h3>
         </div>
         <button
           role="switch"
-          aria-checked={superAmazing}
+          aria-checked={superAmazing && samUnlocked}
           aria-label={t("dashboard.samTitle")}
           disabled={!samUnlocked}
           onClick={toggleSuperAmazing}

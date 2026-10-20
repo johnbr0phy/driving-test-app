@@ -47,7 +47,7 @@ export function LanguageSwitcher({
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
-        aria-label={`Change language — current language ${current.englishName}`}
+        aria-label={`Change language, current: ${current.label}${current.label === current.englishName ? "" : ` (${current.englishName})`}`}
         className={`flex items-center gap-1.5 rounded-full bg-gray-100 dark:bg-gray-800 px-2.5 py-1.5 text-sm text-gray-700 dark:text-gray-200 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-1 ${className}`}
       >
         <Globe className="hidden sm:block h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" />

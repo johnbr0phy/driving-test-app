@@ -128,7 +128,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-sm text-gray-600 dark:text-gray-300 mt-4">
           <p className="text-center md:text-left">
             {t("footer.madeWith")}{" "}
-            <span className="text-red-500 dark:text-red-400" aria-label="love">
+            <span className="text-red-500 dark:text-red-400" role="img" aria-label="love">
               ❤️
             </span>{" "}
             {t("footer.by")}{" "}

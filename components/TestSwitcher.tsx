@@ -70,7 +70,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
-        aria-label={current ? `Switch practice test, currently ${current.shortName}` : "Choose a practice test"}
+        aria-label={current ? `All tests: switch practice test, currently ${current.shortName}` : "All tests: choose a practice test"}
         className={`relative flex items-center gap-1.5 rounded-full bg-gray-100 dark:bg-gray-800 px-2.5 py-1.5 text-sm text-gray-700 dark:text-gray-200 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-1 ${className}`}
       >
         <LayoutGrid className="h-4 w-4 text-gray-500 dark:text-gray-400 sm:hidden" aria-hidden="true" />

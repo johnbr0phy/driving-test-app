@@ -118,8 +118,10 @@ export default function JoinClassPage() {
               maxLength={40}
               autoComplete="name"
               autoFocus={!joined}
+              aria-invalid={error ? true : undefined}
+              aria-describedby={error ? "student-name-error" : undefined}
             />
-            {error && <p className="text-sm text-red-600 dark:text-red-400 mt-2">{error}</p>}
+            {error && <p id="student-name-error" role="alert" className="text-sm text-red-600 dark:text-red-400 mt-2">{error}</p>}
             {otherState && (
               <p className="text-sm text-amber-800 dark:text-amber-200 bg-amber-50 dark:bg-amber-950 rounded-lg px-3 py-2 mt-4">
                 This class practices for {stateName(dmvState)}. You&apos;re set up for {stateName(otherState)}; switching resets your {stateName(otherState)} DMV progress on this device.

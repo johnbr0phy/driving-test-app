@@ -115,6 +115,7 @@ export function QuizRow({
         </div>
         {media && <div className="shrink-0">{media}</div>}
         <ChevronDown
+          aria-hidden="true"
           className={`h-4 w-4 text-gray-500 dark:text-gray-400 shrink-0 transition-transform duration-300 motion-reduce:transition-none ${
             expanded ? "rotate-180" : ""
           }`}
@@ -137,7 +138,7 @@ export function QuizRow({
                 const isCorrect = opt === correctAnswer;
                 const isPicked = picked === idx;
                 const pickCount = !isCorrect ? optionPicks?.[idx] ?? 0 : 0;
-                const letter = ["A", "B", "C", "D"][idx];
+                const letter = ["A", "B", "C", "D", "E", "F"][idx];
 
                 let optionStyle = "bg-gray-50 dark:bg-gray-950 border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200";
                 if (answered) {
@@ -170,7 +171,7 @@ export function QuizRow({
                         answered && isCorrect
                           ? "text-green-700 dark:text-green-300"
                           : answered && (isPicked || pickCount > 0)
-                            ? "text-red-500 dark:text-red-400"
+                            ? "text-red-700 dark:text-red-300"
                             : "text-gray-500 dark:text-gray-400"
                       }`}
                     >
@@ -184,10 +185,10 @@ export function QuizRow({
                     )}
                     {answered && <span className="sr-only">{isCorrect ? (picked !== null ? t("trainingCard.correct") : "Right answer") : isPicked ? t("trainingCard.incorrect") : ""}</span>}
                     {answered && isCorrect && (
-                      <Check className="h-4 w-4 text-green-600 dark:text-green-400 shrink-0 mt-0.5" strokeWidth={3} />
+                      <Check className="h-4 w-4 text-green-600 dark:text-green-400 shrink-0 mt-0.5" strokeWidth={3} aria-hidden="true" />
                     )}
                     {answered && isPicked && !isCorrect && (
-                      <X className="h-4 w-4 text-red-500 dark:text-red-400 shrink-0 mt-0.5" strokeWidth={3} />
+                      <X className="h-4 w-4 text-red-500 dark:text-red-400 shrink-0 mt-0.5" strokeWidth={3} aria-hidden="true" />
                     )}
                   </button>
                 );
@@ -195,7 +196,7 @@ export function QuizRow({
             ) : (
               // No option data — fall back to showing the answer
               <p className="text-sm font-medium text-green-700 dark:text-green-300 leading-snug flex items-start gap-1.5">
-                <Check className="h-4 w-4 mt-0.5 shrink-0" strokeWidth={3} />
+                <Check className="h-4 w-4 mt-0.5 shrink-0" strokeWidth={3} aria-hidden="true" />
                 <span>{correctAnswer}</span>
               </p>
             )}

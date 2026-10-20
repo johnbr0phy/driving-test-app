@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { GuestSaveCard } from "@/components/GuestSaveCard";
 import { useTranslation } from "@/contexts/LanguageContext";
 
@@ -19,9 +20,12 @@ export function GuestPromptStep({
   onSkip: () => void;
 }) {
   const { t } = useTranslation();
+  // It replaces the question whose Next button had focus, so take focus like a new question card does.
+  const kicker = useRef<HTMLParagraphElement>(null);
+  useEffect(() => { kicker.current?.focus({ preventScroll: true }); }, []);
   return (
     <div className="animate-in fade-in duration-200">
-      <p className="text-center text-sm font-bold text-brand-dark mb-2">🔥 {t("guestSave.streakKicker")}</p>
+      <p ref={kicker} tabIndex={-1} className="text-center text-sm font-bold text-brand-dark mb-2 outline-none"><span aria-hidden="true">🔥 </span>{t("guestSave.streakKicker")}</p>
       <GuestSaveCard signupHref={signupHref} answered={answered} dataTheme={dataTheme} promptSource={where}/>
       <button
         type="button"

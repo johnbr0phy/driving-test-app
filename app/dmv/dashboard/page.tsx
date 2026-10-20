@@ -520,6 +520,7 @@ function DashboardContent() {
                           : undefined
                     }
                     attachedBottom={isExpanded && hasAttempts}
+                    expanded={hasAttempts && !testLocked ? isExpanded : undefined}
                   >
                     {hasAttempts && !testLocked && testMisses && (
                       <p className="text-xs mt-1 flex items-center gap-1.5">
@@ -542,7 +543,7 @@ function DashboardContent() {
                                 "{{n}}",
                                 String(testMisses.attempts)
                               )}{" "}
-                          {isExpanded ? "▴" : "▾"}
+                          <span aria-hidden="true">{isExpanded ? "▴" : "▾"}</span>
                         </span>
                       </p>
                     )}

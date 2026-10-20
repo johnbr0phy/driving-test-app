@@ -107,7 +107,7 @@ export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, data
       <ul className="hidden sm:flex flex-wrap gap-x-4 gap-y-1 mt-2">
         {benefits.map((b) => (
           <li key={b} className="flex items-center gap-1.5 text-xs text-gray-700 dark:text-gray-200">
-            <Check className="w-3.5 h-3.5 text-green-600 shrink-0" />
+            <Check className="w-3.5 h-3.5 text-green-600 shrink-0" aria-hidden="true" />
             {b}
           </li>
         ))}

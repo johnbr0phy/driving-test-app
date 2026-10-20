@@ -100,7 +100,7 @@ function NewClassForm() {
                   <p className="font-semibold text-gray-900 dark:text-gray-50">{choice.name}</p>
                   <p className="text-xs text-gray-500 dark:text-gray-400">{choice.org}</p>
                 </div>
-                <button type="button" onClick={() => setChoice(null)} className="text-sm underline text-gray-700 dark:text-gray-200 flex-shrink-0">
+                <button type="button" onClick={() => setChoice(null)} aria-label={`Change test (${choice.name})`} className="text-sm underline text-gray-700 dark:text-gray-200 flex-shrink-0">
                   Change
                 </button>
               </div>
@@ -174,7 +174,7 @@ function NewClassForm() {
               <Input id="school" value={school} onChange={(e) => setSchool(e.target.value)} placeholder="Lakeview Community College" maxLength={40} />
             </div>
           </div>
-          {error && <p className="text-sm text-red-600 dark:text-red-400">{error}</p>}
+          {error && <p role="alert" className="text-sm text-red-600 dark:text-red-400">{error}</p>}
           <Button type="submit" disabled={busy} className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
             {busy ? "Creating…" : (<><Check className="w-4 h-4 mr-1.5" aria-hidden="true" /> Create class</>)}
           </Button>

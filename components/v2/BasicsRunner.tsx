@@ -2,7 +2,7 @@
 
 import { FocusMode } from "./FocusMode";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -74,6 +74,12 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setWalking(false);
     setReadMode(false);
   }, [skillIdParam]);
+
+  // Picking disables the options, so focus goes on to Next (and the feedback is announced).
+  const nextRef = useRef<HTMLButtonElement | null>(null);
+  useEffect(() => {
+    if (picked !== null) nextRef.current?.focus({ preventScroll: true });
+  }, [picked]);
 
   // Basics of a Premium drill is gated like its questions, unless they are already in it.
   const premiumDrill = !!drill && !!exam.premium?.lockedDrills.includes(drill.key);
@@ -246,7 +252,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             <div className="truncate text-sm font-bold">{skill.name}</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">{run.mastered.length} of {total} right{comingBack ? ` · ${comingBack} coming back` : ""}</div>
           </div>
-          <button type="button" onClick={() => setRuleOpen(true)} className="rounded-full border-2 border-gray-200 px-3 py-1.5 text-sm font-semibold text-brand-dark">
+          <button type="button" onClick={() => setRuleOpen(true)} className="rounded-full border-2 border-gray-200 dark:border-gray-800 px-3 py-1.5 text-sm font-semibold text-brand-dark">
             Rule
           </button>
         </div>
@@ -270,16 +276,19 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
                 <button key={i} type="button" disabled={revealed} onClick={() => pick(i)} className={`v2-tap flex min-h-[3.5rem] w-full items-center gap-3 rounded-xl border-2 px-4 py-3 text-left text-[17px] ${cls}`}>
                   {punct ? (
                     <>
-                      <span className="min-w-[1.5rem] text-center text-2xl font-bold">{o === "" ? "∅" : o}</span>
+                      <span className="min-w-[1.5rem] text-center text-2xl font-bold" aria-hidden="true">{o === "" ? "∅" : o}</span>
                       <span className="text-sm text-gray-500 dark:text-gray-400">{PUNCTUATION_NAMES[o]}</span>
                     </>
                   ) : (
                     <span>{o}</span>
                   )}
+                  {revealed && i === q.answer && <span className="sr-only"> (right answer)</span>}
+                  {revealed && i === picked && i !== q.answer && <span className="sr-only"> (your answer)</span>}
                 </button>
               );
             })}
           </div>
+          <div role="status" className="sr-only">{revealed ? `${correct ? "Right" : "Not quite"}. ${q.why}` : ""}</div>
           {revealed && (
             <div className={`v2-pop flex items-start gap-3 rounded-2xl p-4 ${correct ? "bg-green-50 dark:bg-green-950" : "bg-amber-50 dark:bg-amber-950"}`}>
               <Image src={getTigerAsset(exam.id, correct ? 1 : 5)} alt="" width={56} height={56} className="h-14 w-14 shrink-0 object-contain" />
@@ -310,7 +319,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
       <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
         <div className="mx-auto max-w-2xl">
           {revealed ? (
-            <button type="button" onClick={() => next(run)} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">
+            <button ref={nextRef} type="button" onClick={() => next(run)} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">
               {run.mastered.length === total ? "Finish" : "Next"}
             </button>
           ) : (

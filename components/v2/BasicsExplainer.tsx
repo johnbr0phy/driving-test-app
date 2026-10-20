@@ -354,7 +354,7 @@ function BeatBody({ beat, spoken }: { beat: ExplainerBeat; spoken: number }) {
       </p>
       {sentence && showDone && (
         <div className={`v2-pop flex items-center gap-2 text-[15px] font-bold ${beat.id === "bad" ? "text-red-600 dark:text-red-300" : "text-green-700 dark:text-green-300"}`}>
-          <span className="text-xl leading-none">{beat.id === "bad" ? "✗" : "✓"}</span>
+          <span className="text-xl leading-none" aria-hidden="true">{beat.id === "bad" ? "✗" : "✓"}</span>
           {beat.id === "bad" ? "Breaks the rule" : "Follows the rule"}
         </div>
       )}

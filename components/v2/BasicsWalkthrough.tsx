@@ -37,12 +37,23 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
   const [picked, setPicked] = useState<number | null>(null);
   const [wrong, setWrong] = useState<number[]>([]);
   const cardRef = useRef<HTMLDivElement | null>(null);
+  const stepRef = useRef<HTMLParagraphElement | null>(null);
+  const nextRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
     setIndex(0);
     setPicked(null);
     setWrong([]);
   }, [skill.id]);
+
+  // The control that had focus goes away (Next on a new ask step, the options
+  // once solved), so hand focus on: to the new step, then to Next.
+  useEffect(() => {
+    if (index > 0 && steps[index]?.ask) stepRef.current?.focus({ preventScroll: true });
+  }, [index, steps]);
+  useEffect(() => {
+    if (picked !== null) nextRef.current?.focus({ preventScroll: true });
+  }, [picked]);
 
   // Keep the current step in view as the work column grows.
   useEffect(() => {
@@ -116,7 +127,7 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
                 const answer = i === lastLineAt;
                 return (
                   <li key={i} className={`v2-pop flex items-start gap-2.5 text-[16px] leading-snug tabular-nums ${answer ? "font-bold text-green-700 dark:text-green-300" : "text-gray-700 dark:text-gray-200"}`}>
-                    <span className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${answer ? "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300" : "bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-300"}`}>
+                    <span className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${answer ? "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300" : "bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-300"}`} aria-hidden="true">
                       {answer ? "✓" : "·"}
                     </span>
                     <span>{line}</span>
@@ -131,7 +142,7 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
             <Bubble>
               {isAsk ? (
                 <>
-                  <p className="text-[19px] font-medium leading-snug">{step.ask}</p>
+                  <p ref={stepRef} tabIndex={-1} className="text-[19px] font-medium leading-snug outline-none">{step.ask}</p>
                   <div className="mt-3 flex flex-col gap-2">
                     {order.map((i) => {
                       const o = step.options![i];
@@ -139,19 +150,23 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
                       if (solved) cls = i === step.answer ? "border-green-500 bg-green-50 dark:bg-green-950 font-semibold" : "border-gray-200 dark:border-gray-800 opacity-50";
                       else if (wrong.includes(i)) cls = "border-amber-500 bg-amber-50 dark:bg-amber-950 opacity-70";
                       return (
-                        <button key={i} type="button" disabled={solved || wrong.includes(i)} onClick={() => pick(i)} className={`v2-tap flex min-h-[3.25rem] w-full items-center rounded-xl border-2 px-4 py-2.5 text-left text-[17px] leading-snug tabular-nums ${cls}`}>
+                        <button key={i} type="button" disabled={solved} aria-disabled={wrong.includes(i) || undefined} onClick={() => pick(i)} className={`v2-tap flex min-h-[3.25rem] w-full items-center rounded-xl border-2 px-4 py-2.5 text-left text-[17px] leading-snug tabular-nums ${cls}`}>
                           {o}
+                          {solved && i === step.answer && <span className="sr-only"> (right)</span>}
+                          {!solved && wrong.includes(i) && <span className="sr-only"> (not this one)</span>}
                         </button>
                       );
                     })}
                   </div>
-                  {!solved && wrong.length > 0 && (
-                    <p className="v2-pop mt-3 text-[15px] leading-snug text-amber-800 dark:text-amber-300">{step.hint ?? "Not that one. Try again."}</p>
-                  )}
-                  {solved && step.then && <p className="v2-pop mt-3 text-[16px] leading-snug text-green-800 dark:text-green-300">{step.then}</p>}
+                  <div aria-live="polite">
+                    {!solved && wrong.length > 0 && (
+                      <p className="v2-pop mt-3 text-[15px] leading-snug text-amber-800 dark:text-amber-300">{step.hint ?? "Not that one. Try again."}</p>
+                    )}
+                    {solved && step.then && <p className="v2-pop mt-3 text-[16px] leading-snug text-green-800 dark:text-green-300">{step.then}</p>}
+                  </div>
                 </>
               ) : (
-                <p className="text-[19px] leading-snug">{step.say}</p>
+                <p ref={stepRef} tabIndex={-1} className="text-[19px] leading-snug outline-none">{step.say}</p>
               )}
             </Bubble>
           </div>
@@ -161,7 +176,7 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
       <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
         <div className="mx-auto flex max-w-2xl items-center gap-2">
           {solved ? (
-            <button type="button" onClick={next} className="v2-tap flex-1 rounded-xl bg-brand text-base font-bold text-white">
+            <button ref={nextRef} type="button" onClick={next} className="v2-tap flex-1 rounded-xl bg-brand text-base font-bold text-white">
               {last ? doneLabel : "Next"}
             </button>
           ) : (

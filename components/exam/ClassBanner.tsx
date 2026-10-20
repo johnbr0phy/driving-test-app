@@ -25,6 +25,7 @@ export function ClassBanner({ examId, className = "" }: { examId: string; classN
           <button
             type="button"
             className="text-blue-700 dark:text-blue-300 underline flex-shrink-0"
+            aria-label={`Leave ${m.className}`}
             onClick={() => {
               if (!window.confirm(`Leave ${m.className}? ${m.teacherName} will stop seeing new practice from this device.`)) return;
               leaveClass(m.code);

@@ -88,12 +88,7 @@ const jsonLd = {
         "Practice Test 2 held out of the drills for a clean score",
         "Explanations for every question",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

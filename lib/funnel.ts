@@ -38,7 +38,7 @@ const SOURCE_HOSTS: [VisitSource, RegExp][] = [
   // bing.com itself can't be told from Bing search.
   ["copilot", /(^|\.)(copilot\.microsoft\.com|copilot\.cloud\.microsoft|copilot\.com|edgeservices\.bing\.com|com\.microsoft\.copilot)$/],
   ["claude", /(^|\.)(claude\.ai|claude\.com|com\.anthropic\.claude)$/],
-  ["ai_other", /(^|\.)(deepseek\.com|grok\.com|x\.ai|meta\.ai|you\.com|phind\.com|chat\.mistral\.ai|poe\.com|kimi\.com|chat\.qwen\.ai)$/],
+  ["ai_other", /(^|\.)(deepseek\.com|grok\.com|x\.ai|meta\.ai|you\.com|phind\.com|chat\.mistral\.ai|poe\.com|kimi\.com|chat\.qwen\.ai|duck\.ai)$/],
   ["search", /(^|\.)(google\.[a-z.]+|bing\.com|duckduckgo\.com|search\.yahoo\.com|search\.brave\.com|ecosia\.org|com\.google\.android\.googlequicksearchbox)$/],
 ];
 

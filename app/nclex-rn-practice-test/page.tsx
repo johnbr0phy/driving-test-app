@@ -79,6 +79,7 @@ const jsonLd = {
         "Mastery drills for all eight Client Needs areas",
         "Progress syncs between phone and computer",
       ],
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

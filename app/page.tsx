@@ -186,7 +186,10 @@ export default async function Home() {
                 className="flex items-center justify-between bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-4 hover:border-brand-border hover:bg-brand-light transition-colors"
               >
                 <span className="font-medium text-gray-900 dark:text-gray-50 text-sm">{state.name}</span>
-                <span className="text-xs text-gray-500 dark:text-gray-400">{state.writtenTestQuestions}Q</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">
+                  <span aria-hidden="true">{state.writtenTestQuestions}Q</span>
+                  <span className="sr-only">, {state.writtenTestQuestions} questions on the written test</span>
+                </span>
               </Link>
             ))}
           </div>
@@ -297,7 +300,7 @@ export default async function Home() {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-8">
           Every practice test
         </h2>
-        <TestCatalogGrid showPopular={false} />
+        <TestCatalogGrid showPopular={false} nested />
       </div>
 
       {/* FAQ */}

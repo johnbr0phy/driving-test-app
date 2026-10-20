@@ -1,7 +1,8 @@
 import { states } from "@/data/states";
 import { getStateLandingInfo } from "@/data/stateLandingData";
 import { EXAM_FACTS } from "./examFacts";
-import { TEST_GROUPS, type TestCatalogEntry } from "./testCatalog";
+import { EXAMS } from "./exams";
+import { TEST_CATALOG, TEST_GROUPS, getCatalogEntry, type TestCatalogEntry } from "./testCatalog";
 
 // /llms.txt and /llms-full.txt (https://llmstxt.org), built from the test
 // catalog, the exam facts and the state data, so a new exam or a changed
@@ -12,7 +13,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 const HEADER = `# TigerTest
 
-> Free practice tests for the DMV permit test in all 50 US states and DC, plus 40 licensing, certification and admissions exams including the SAT, ACT, CDL, CNA, NREMT EMT and CompTIA. Every question has an explanation, and most tests need no account.`;
+> Free practice tests for the DMV permit test in all 50 US states and DC, plus ${TEST_CATALOG.filter((t) => t.id !== "dmv").length} licensing, certification and admissions exams including the SAT, ACT, CDL, CNA, NREMT EMT and CompTIA. Every question has an explanation, and most tests need no account.`;
 
 const DMV_SECTION = `## DMV permit test (all 50 states + DC)
 
@@ -50,6 +51,21 @@ function examLine(t: TestCatalogEntry): string {
 const nonDmvGroups = () =>
   TEST_GROUPS.map((g) => ({ ...g, tests: g.tests.filter((t) => t.id !== "dmv") })).filter((g) => g.tests.length > 0);
 
+const LANGUAGE_NAMES: Record<string, string> = { es: "Spanish", vi: "Vietnamese", ko: "Korean", zh: "Simplified Chinese" };
+
+// Translated exam landings (/es/examen-cna), from each ExamConfig's translations.
+function translatedSection(): string | null {
+  const lines = EXAMS.flatMap((exam) =>
+    Object.entries(exam.translations ?? {}).map(([lang, tr]) => {
+      const name = getCatalogEntry(exam.id)?.name ?? exam.id;
+      return `- ${name} in ${LANGUAGE_NAMES[lang] ?? lang}: [${tr!.name}](${siteUrl}${tr!.landingPath})`;
+    })
+  );
+  return lines.length ? `## Practice tests in other languages\n\n${lines.join("\n")}` : null;
+}
+
+const TEACH_SECTION = `## For teachers\n\n- [Free instructor classes](${siteUrl}/teach): a teacher makes a class for any test on the site and posts one link; students join with just their name, and the teacher sees who practiced, their test scores and the topics the class misses most.`;
+
 export function renderLlmsTxt(): string {
   const groups = nonDmvGroups()
     .map((g) => `### ${g.title}\n\n${g.tests.map(examLine).join("\n")}`)
@@ -58,9 +74,11 @@ export function renderLlmsTxt(): string {
     HEADER,
     DMV_SECTION,
     `## Other practice tests\n\nAll tests: ${siteUrl}/tests\n\n${groups}`,
+    translatedSection(),
+    TEACH_SECTION,
     `## More detail\n\n- [Full exam facts and the 50-state DMV test table](${siteUrl}/llms-full.txt)`,
     FOOTER,
-  ].join("\n\n") + "\n";
+  ].filter(Boolean).join("\n\n") + "\n";
 }
 
 function stateTable(): string {
@@ -103,6 +121,8 @@ export function renderLlmsFullTxt(): string {
     DMV_SECTION,
     `### DMV written test by state\n\nFormat of each state's written knowledge (permit) test. "Online test" is whether the state lets you take it online. Confirm with your state's agency before test day.\n\n${stateTable()}`,
     exams,
+    translatedSection(),
+    TEACH_SECTION,
     FOOTER,
-  ].join("\n\n") + "\n";
+  ].filter(Boolean).join("\n\n") + "\n";
 }

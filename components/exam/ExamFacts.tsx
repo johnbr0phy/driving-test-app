@@ -33,7 +33,8 @@ export function ExamFacts({ examId }: { examId: string }) {
     "@type": "WebPage",
     "@id": `${url}#webpage`,
     url,
-    name: `${test.name} practice test`,
+    // Catalog names already say "Practice Test" ("CNA Practice Test").
+    name: test.name,
     description: facts.answer,
     dateModified: EXAM_LANDINGS_UPDATED_AT,
     inLanguage: "en-US",

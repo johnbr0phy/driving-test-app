@@ -51,6 +51,7 @@ const jsonLd = {
         "Works on mobile and desktop",
         "Spanish language support",
       ],
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

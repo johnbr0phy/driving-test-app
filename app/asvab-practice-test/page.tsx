@@ -56,12 +56,7 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Progress syncs between phone and computer",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

@@ -8,13 +8,15 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Alcohol Server Certification Practice Test 2026 - Bartender & Seller Exam";
+const title = "Free Alcohol Server Certification Practice Test 2026";
+const metaDescription =
+  "Free alcohol server certification practice tests: 200 questions on BAC, spotting intoxication, checking IDs, refusing service and dram shop liability.";
 const description =
   "Free alcohol server and seller practice tests with 200 questions on standard drinks and BAC, recognizing intoxication, checking IDs and refusing minors, slowing and refusing service, and dram shop liability. Works as prep for any state or provider's responsible beverage service exam.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "alcohol server certification practice test, bartender license test, responsible beverage service practice test, TABC practice test, RBS practice test, alcohol seller server training questions, free alcohol server exam practice 2026",
   alternates: {
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/alcohol-server-practice-test`,
     images: [{ url: "/og/alcohol", width: 1200, height: 630, alt: "TigerTest free alcohol server certification practice test" }],
     siteName: "TigerTest",
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/alcohol"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 
@@ -54,12 +56,7 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

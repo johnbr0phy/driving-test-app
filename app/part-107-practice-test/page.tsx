@@ -8,13 +8,15 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Part 107 Practice Test 2026 - FAA Drone Pilot Exam Prep";
+const title = "Free Part 107 Practice Test 2026 - FAA Drone Exam";
+const metaDescription =
+  "Free FAA Part 107 practice tests: 200 questions on the Remote Pilot ACS, covering regulations, airspace, weather, loading and operations, with explanations.";
 const description =
   "Free FAA Part 107 practice tests with 200 questions weighted to the Remote Pilot ACS: regulations, airspace and charts, weather, loading and performance, operations. Instant feedback and explanations citing the rule.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "Part 107 practice test, FAA drone test, remote pilot knowledge test, UAG practice test, Part 107 exam questions, drone license test prep, sUAS knowledge test",
   alternates: {
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/part-107-practice-test`,
     images: [{ url: "/og/part107", width: 1200, height: 630, alt: "TigerTest free Part 107 practice test" }],
     siteName: "TigerTest",
@@ -32,9 +34,29 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/part107"],
     title,
-    description,
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the Part 107 test?",
+    a: "The FAA Unmanned Aircraft General (UAG) knowledge test has 60 multiple-choice questions, a 2-hour limit, and a 70 percent pass mark (42 correct). It is taken at a PSI testing center and you need an FAA Tracking Number from IACRA to book.",
+  },
+  {
+    q: "What topics does the Part 107 test cover?",
+    a: "Regulations (15 to 25 percent), Airspace and Requirements (15 to 25 percent), Weather (11 to 16 percent), Loading and Performance (7 to 11 percent), and Operations (35 to 45 percent), per the FAA Remote Pilot ACS.",
+  },
+  {
+    q: "Does the Part 107 test use sectional charts?",
+    a: "Yes. Several questions refer to sectional chart excerpts and figures in the FAA testing supplement. This bank cannot show figures, so its airspace questions test what the symbols, numbers and boundaries mean. Pair it with a sectional chart legend before test day.",
+  },
+  {
+    q: "Is the TigerTest Part 107 practice test free?",
+    a: "Yes. All four practice tests and all five training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -54,49 +76,15 @@ const jsonLd = {
         "Explanations that cite the regulation",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "How many questions are on the Part 107 test?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The FAA Unmanned Aircraft General (UAG) knowledge test has 60 multiple-choice questions, a 2-hour limit, and a 70 percent pass mark, which is 42 correct. It is taken at a PSI testing center and you need an FAA Tracking Number from IACRA to book it.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What topics does the Part 107 test cover?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The FAA Remote Pilot Airman Certification Standards list five areas: Regulations (15 to 25 percent), Airspace and Requirements (15 to 25 percent), Weather (11 to 16 percent), Loading and Performance (7 to 11 percent), and Operations (35 to 45 percent).",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does the Part 107 test use sectional charts?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Several questions refer to sectional chart excerpts and figures in the FAA testing supplement. This practice bank cannot show figures, so its airspace questions test what the symbols, numbers and airspace boundaries mean. Pair it with a sectional chart legend before test day.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the TigerTest Part 107 practice test free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. All four practice tests and all five training sets are free, with no account required.",
-          },
-        },
-      ],
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
     },
   ],
 };
@@ -269,36 +257,12 @@ export default function Part107LandingPage() {
           Part 107 Test Frequently Asked Questions
         </h2>
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the Part 107 test?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              60 multiple-choice questions, a 2-hour limit, and a 70 percent pass mark (42 correct).
-              It is taken at a PSI testing center and you need an FAA Tracking Number from IACRA to book.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What topics does the Part 107 test cover?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Regulations (15 to 25 percent), Airspace and Requirements (15 to 25 percent), Weather
-              (11 to 16 percent), Loading and Performance (7 to 11 percent), and Operations (35 to 45
-              percent), per the FAA Remote Pilot ACS.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does the Part 107 test use sectional charts?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. Several questions refer to chart excerpts in the FAA testing supplement. This bank
-              cannot show figures, so its airspace questions test what the symbols, numbers and
-              boundaries mean. Pair it with a sectional chart legend before test day.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest Part 107 practice test free?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all five training sets are free, with no account required.
-              Create a free account if you want your progress saved across devices.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
+            </div>
+          ))}
         </div>
       </div>
 

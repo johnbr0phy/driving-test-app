@@ -304,10 +304,11 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                           : undefined
                     }
                     attachedBottom={isExpanded && hasAttempts}
+                    expanded={hasAttempts && !s.locked ? isExpanded : undefined}
                   >
                     {hasAttempts && (
                       <p className={`text-xs mt-1 ${s.complete ? "text-green-600 dark:text-green-400" : "text-gray-500 dark:text-gray-400"}`}>
-                        {s.attempts.length === 1 ? "1 attempt" : `${s.attempts.length} attempts`} {isExpanded ? "▴" : "▾"}
+                        {s.attempts.length === 1 ? "1 attempt" : `${s.attempts.length} attempts`} <span aria-hidden="true">{isExpanded ? "▴" : "▾"}</span>
                       </p>
                     )}
                   </ProgressCard>

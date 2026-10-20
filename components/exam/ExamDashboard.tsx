@@ -270,6 +270,7 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
                   href={hasAttempts ? undefined : routes.test(testId)}
                   onClick={hasAttempts ? () => setExpandedTest(isExpanded ? null : testId) : undefined}
                   attachedBottom={isExpanded && hasAttempts}
+                  expanded={hasAttempts ? isExpanded : undefined}
                 >
                   {hasAttempts && testMisses && (
                     <p className="text-xs mt-1 flex items-center gap-1.5">
@@ -287,7 +288,7 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
                         {testMisses.attempts === 1
                           ? t("dashboard.attemptsOne")
                           : t("dashboard.attemptsCount").replace("{{n}}", String(testMisses.attempts))}{" "}
-                        {isExpanded ? "▴" : "▾"}
+                        <span aria-hidden="true">{isExpanded ? "▴" : "▾"}</span>
                       </span>
                     </p>
                   )}

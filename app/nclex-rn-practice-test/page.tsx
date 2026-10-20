@@ -9,7 +9,9 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free NCLEX-RN Practice Test 2026 - NGN Questions with Rationales";
+const title = "Free NCLEX-RN Practice Test 2026 - NGN Questions";
+const metaDescription =
+  "Free NCLEX-RN practice questions on the 2026 NCSBN test plan, NGN case studies included: two 85-question tests plus drills for all eight Client Needs areas.";
 const description =
   "Free NCLEX-RN practice questions built on the 2026 NCSBN test plan: prioritization, delegation, pharmacology, labs and select all that apply items with a rationale on every answer. Two 85-question practice tests plus drills for all eight Client Needs areas.";
 
@@ -38,7 +40,7 @@ const faqs = [
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "NCLEX-RN practice test, NCLEX practice questions, free NCLEX questions, NCLEX SATA practice, NGN practice questions, NCLEX prioritization questions, NCLEX pharmacology practice, NCLEX 2026",
   alternates: {
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/nclex-rn-practice-test`,
     images: [{ url: "/og/nclex", width: 1200, height: 630, alt: "TigerTest free NCLEX-RN practice test" }],
     siteName: "TigerTest",
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/nclex"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 
@@ -79,6 +81,7 @@ const jsonLd = {
         "Mastery drills for all eight Client Needs areas",
         "Progress syncs between phone and computer",
       ],
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

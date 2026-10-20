@@ -98,6 +98,14 @@ export function Fireworks({ duration = 3000, onComplete, intensity = "full", con
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    // Reduced motion: draw nothing (the canvas stays transparent) and finish
+    // straight away so whatever follows the show still happens.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      if (continuous) return;
+      const done = setTimeout(() => onComplete?.(), 0);
+      return () => clearTimeout(done);
+    }
+
     // Set canvas size
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;

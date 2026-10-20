@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Dental Assistant Practice Test 2026 - DANB CDA Exam Prep";
+const title = "Free Dental Assistant Practice Test 2026 - DANB CDA";
+const metaDescription =
+  "Free dental assistant practice tests: 200 questions across the three DANB CDA exams, General Chairside, Radiation Health and Safety, and Infection Control.";
 const description =
   "Free dental assistant practice tests with 200 questions across all three DANB CDA component exams: General Chairside (GC), Radiation Health and Safety (RHS) and Infection Control (ICE). Chairside procedures, materials, charting, radiography technique and safety, sterilization and OSHA, with explanations.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "dental assistant practice test, DANB practice test, CDA exam questions, DANB RHS practice test, DANB ICE practice test, general chairside practice exam, dental assistant certification prep 2026, free DANB practice questions",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/dental-assistant-practice-test`,
     images: [{ url: "/og/danb", width: 1200, height: 630, alt: "TigerTest free Dental practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/danb"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 
@@ -55,12 +57,7 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

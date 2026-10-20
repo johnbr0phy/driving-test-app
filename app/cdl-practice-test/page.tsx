@@ -9,9 +9,12 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
+const metaDescription =
+  "Free CDL practice tests with 600 general knowledge questions: 6 practice tests weighted like the real exam, training by topic and instant feedback.";
+
 export const metadata: Metadata = {
   title: "Free CDL Practice Test 2026 - General Knowledge",
-  description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver's License general knowledge test on the first try. 6 practice tests weighted like the real exam, with instant feedback.",
+  description: metaDescription,
   keywords: "CDL practice test, commercial driver's license, CDL general knowledge, truck driver test, CDL exam prep, free CDL test",
   alternates: {
     canonical: `${siteUrl}/cdl-practice-test`,
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Free CDL Practice Test 2026 - General Knowledge",
-    description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver's License general knowledge test on the first try. 6 practice tests weighted like the real exam, with instant feedback.",
+    description: metaDescription,
     url: `${siteUrl}/cdl-practice-test`,
     images: [{ url: "/og/cdl", width: 1200, height: 630, alt: "TigerTest free CDL practice test" }],
     siteName: "TigerTest",
@@ -33,9 +36,37 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/cdl"],
     title: "Free CDL Practice Test 2026 - General Knowledge",
-    description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver's License general knowledge test on the first try.",
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the CDL general knowledge test?",
+    a: "The CDL general knowledge test typically has 50 questions, and you need to answer 40 correctly (80%) to pass. TigerTest offers 600 practice questions to ensure you're fully prepared for every possible question topic.",
+  },
+  {
+    q: "Is TigerTest CDL practice test free?",
+    a: "Yes! You can take all six CDL practice tests and every training set completely free. No hidden costs, premium requirements, or account registration needed.",
+  },
+  {
+    q: "What topics are covered in the CDL practice test?",
+    a: "Our CDL practice tests cover vehicle inspection procedures, safe driving practices, braking systems (including air brakes), cargo handling and securement, hazmat basics, and all other topics from the official federal CDL manual.",
+  },
+  {
+    q: "How should I study for the CDL general knowledge test?",
+    a: "Start with TigerTest's training mode to learn questions with instant feedback. Complete all six topic training sets, focusing on weak areas. Then take the practice tests to simulate the real exam. Most successful candidates score 80%+ consistently on practice tests before taking the real exam.",
+  },
+  {
+    q: "Do I need a CDL permit before taking the general knowledge test?",
+    a: "No, the general knowledge test is typically the first step in getting your CDL permit. After passing the general knowledge test and any required endorsement tests, you'll receive your Commercial Learner's Permit (CLP), which allows you to practice driving.",
+  },
+  {
+    q: "How long should I study before taking the CDL test?",
+    a: "Most successful candidates study for 1-2 weeks using TigerTest. Complete all six training sets (about 30-45 minutes each), then take practice tests until you consistently score 80% or higher. Some people need only a few days, others prefer 2-3 weeks of preparation.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -63,48 +94,16 @@ const jsonLd = {
         "Braking systems and cargo handling",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "How many questions are on the CDL general knowledge test?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The CDL general knowledge test typically has 50 questions, and you need to answer 40 correctly (80%) to pass. TigerTest offers 600 practice questions to ensure you're fully prepared.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is TigerTest CDL practice test free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes! You can take all 6 CDL practice tests and every training set completely free. No hidden costs or premium requirements.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What topics are covered in the CDL practice test?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Our CDL practice tests cover vehicle inspection, safe driving practices, braking systems, cargo handling, hazmat basics, and all topics from the official CDL manual.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How should I study for the CDL general knowledge test?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Start with TigerTest's training mode to learn questions with instant feedback. Work through the six topic training sets, then take the six practice tests to simulate the real exam. Aim for 80%+ scores consistently.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
         classFaqJsonLd("cdl"),
       ],
     },
@@ -317,71 +316,16 @@ export default function CDLLandingPage() {
         </h2>
 
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              How many questions are on the CDL general knowledge test?
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              The CDL general knowledge test typically has 50 questions, and you need to answer 
-              40 correctly (80%) to pass. TigerTest offers 600 practice questions to ensure 
-              you&apos;re fully prepared for every possible question topic.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              Is TigerTest CDL practice test free?
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes! You can take all six CDL practice tests and every training set completely free. 
-              No hidden costs, premium requirements, or account registration needed.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              What topics are covered in the CDL practice test?
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Our CDL practice tests cover vehicle inspection procedures, safe driving practices, 
-              braking systems (including air brakes), cargo handling and securement, hazmat basics, 
-              and all other topics from the official federal CDL manual.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              How should I study for the CDL general knowledge test?
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Start with TigerTest&apos;s training mode to learn questions with instant feedback. 
-              Complete all six topic training sets, focusing on weak areas. Then take the practice tests 
-              to simulate the real exam. Most successful candidates score 80%+ consistently 
-              on practice tests before taking the real exam.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              Do I need a CDL permit before taking the general knowledge test?
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              No, the general knowledge test is typically the first step in getting your CDL permit. 
-              After passing the general knowledge test and any required endorsement tests, 
-              you&apos;ll receive your Commercial Learner&apos;s Permit (CLP), which allows you to practice driving.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              How long should I study before taking the CDL test?
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Most successful candidates study for 1-2 weeks using TigerTest. Complete all six training 
-              sets (about 30-45 minutes each), then take practice tests until you consistently score 
-              80% or higher. Some people need only a few days, others prefer 2-3 weeks of preparation.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
+                {f.q}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                {f.a}
+              </p>
+            </div>
+          ))}
           <ExamClassFaq examId="cdl" />
         </div>
       </div>

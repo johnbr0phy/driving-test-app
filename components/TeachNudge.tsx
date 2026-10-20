@@ -142,7 +142,7 @@ export function TeachNudge({ dashboardKey, examId, done }: { dashboardKey: strin
         type="button"
         onClick={close}
         aria-label="Close"
-        className="flex-shrink-0 -m-1 p-1 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200"
+        className="flex-shrink-0 -m-1 p-1 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-200"
       >
         <X className="w-4 h-4" aria-hidden="true" />
       </button>

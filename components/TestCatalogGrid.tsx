@@ -19,8 +19,10 @@ import { LANGUAGES } from "@/i18n";
  * multilingual tests), a chip row (size, price) and the optional weekly count,
  * with a chevron on the right like the dashboard rows.
  */
-export function TestCard({ test, answered }: { test: TestCatalogEntry; answered?: number | null }) {
+export function TestCard({ test, answered, headingLevel = 3 }: { test: TestCatalogEntry; answered?: number | null; headingLevel?: 3 | 4 }) {
   const tiger = hasTigerSet(test.id);
+  // Cards sit under a section or group heading, so their names are one level below it.
+  const Heading = headingLevel === 4 ? "h4" : "h3";
   return (
     <div data-theme={test.theme} className="h-full">
       <Link
@@ -33,7 +35,7 @@ export function TestCard({ test, answered }: { test: TestCatalogEntry; answered?
               <TestIcon examId={test.id} icon={test.icon} className={tiger ? "h-12 w-12" : "h-6 w-6"} />
             </div>
             <div className="min-w-0">
-              <h2 className="text-balance text-lg font-semibold leading-snug text-gray-900 dark:text-gray-50">{test.name}</h2>
+              <Heading className="text-balance text-lg font-semibold leading-snug text-gray-900 dark:text-gray-50">{test.name}</Heading>
               {/* Two lines tall either way: a long org wraps into the second, a multilingual test puts its flags there. */}
               {test.languages.length > 1 ? (
                 <div className="min-h-[2.5rem] text-sm leading-5 text-gray-500 dark:text-gray-400">
@@ -94,7 +96,9 @@ function LanguageFlags({ languages }: { languages: TestCatalogEntry["languages"]
  * Rendered on the client so typing filters instantly; with an empty query it
  * shows the full catalog exactly as the server would.
  */
-export function TestCatalogGrid({ showPopular = true }: { showPopular?: boolean } = {}) {
+export function TestCatalogGrid({ showPopular = true, nested = false }: { showPopular?: boolean; nested?: boolean } = {}) {
+  // nested: the grid sits under a page section's h2 (the homepage), so groups are h3 and cards h4.
+  const GroupHeading = nested ? "h3" : "h2";
   const [query, setQuery] = useState("");
   // The homepage shows its own live "Popular this week" row above the grid.
   const groups = useMemo(
@@ -156,12 +160,12 @@ export function TestCatalogGrid({ showPopular = true }: { showPopular?: boolean 
 
       {groups.map((group, i) => (
         <div key={group.title} className={i < groups.length - 1 ? "mb-12" : ""}>
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-4">
+          <GroupHeading className="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-4">
             {group.title}
-          </h2>
+          </GroupHeading>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {group.tests.map((t) => (
-              <TestCard key={t.id} test={t} />
+              <TestCard key={t.id} test={t} headingLevel={nested ? 4 : 3} />
             ))}
           </div>
         </div>

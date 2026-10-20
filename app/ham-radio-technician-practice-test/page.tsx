@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Ham Radio Technician Practice Test 2026 - Official 2026-2030 Pool";
+const title = "Free Ham Radio Technician Practice Test 2026";
+const metaDescription =
+  "Free ham radio Technician practice exams from the official NCVEC 2026-2030 pool, with a plain-English explanation for every question. 35 questions, 26 to pass.";
 const description =
   "Free amateur radio Technician class practice exams built from the official NCVEC 2026-2030 question pool, with a plain-English explanation for every question. 35-question exams drawn like the real test, 26 to pass.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "ham radio technician practice test, technician class exam practice, amateur radio license test, NCVEC technician question pool 2026, ham radio test questions, FCC element 2 practice exam",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/ham-radio-technician-practice-test`,
     images: [{ url: "/og/ham", width: 1200, height: 630, alt: "TigerTest free Ham Radio practice test" }],
     siteName: "TigerTest",
@@ -33,9 +35,29 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/ham"],
     title,
-    description,
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the ham radio Technician exam?",
+    a: "The Technician class exam (FCC Element 2) has 35 multiple-choice questions, and you must answer 26 correctly, about 74 percent. Each question comes from one of the 35 groups in the official pool, so every question on the real exam is in the pool word for word.",
+  },
+  {
+    q: "Which question pool is current?",
+    a: "The NCVEC 2026-2030 Technician pool, effective July 1, 2026 through June 30, 2030. It has 409 questions. This practice test uses all of them except the 12 that require a schematic figure.",
+  },
+  {
+    q: "Do I need to know Morse code?",
+    a: "No. The FCC dropped the Morse code requirement in 2007. The Technician exam is written only, given by volunteer examiners, and the license is valid for 10 years.",
+  },
+  {
+    q: "Is the TigerTest Technician practice exam free?",
+    a: "Yes. All four practice exams and all six training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -55,48 +77,16 @@ const jsonLd = {
         "Training sets for all ten subelements",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "How many questions are on the ham radio Technician exam?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The Technician class exam (FCC Element 2) has 35 multiple-choice questions and you must answer 26 correctly, about 74 percent. Each question comes from one of the 35 groups in the official pool, so every question you see on the real exam is in the pool word for word.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Which question pool is current?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The NCVEC 2026-2030 Technician pool, effective July 1, 2026 through June 30, 2030. It has 409 questions. This practice test uses all of them except the 12 that require a schematic figure.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Do I need to know Morse code?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "No. The FCC dropped the Morse code requirement in 2007. The Technician exam is written only, given by volunteer examiners, and the license is valid for 10 years.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the TigerTest Technician practice exam free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. All four practice exams and all six training sets are free, with no account required.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
         classFaqJsonLd("ham"),
       ],
     },
@@ -275,36 +265,12 @@ export default function HamLandingPage() {
           Technician Exam Frequently Asked Questions
         </h2>
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the ham radio Technician exam?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              35 multiple-choice questions, and you must answer 26 correctly, about 74 percent. Each
-              question comes from one of the 35 groups in the official pool, so every question on the
-              real exam is in the pool word for word.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Which question pool is current?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              The NCVEC 2026-2030 Technician pool, effective July 1, 2026 through June 30, 2030. It has
-              409 questions. This practice test uses all of them except the 12 that require a schematic
-              figure.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Do I need to know Morse code?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              No. The FCC dropped the Morse code requirement in 2007. The Technician exam is written
-              only, given by volunteer examiners, and the license is valid for 10 years.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest Technician practice exam free?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice exams and all six training sets are free, with no account required.
-              Create a free account if you want your progress saved across devices.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
+            </div>
+          ))}
           <ExamClassFaq examId="ham" />
         </div>
       </div>

@@ -72,8 +72,8 @@ export function DmvStateLine() {
       <span className="font-semibold text-gray-800 dark:text-gray-100 min-w-0">{name}</span>
       <Select onValueChange={choose} value={selectedState}>
         <SelectTrigger
-          aria-label={t("signup.selectLocation")}
-          className="w-auto h-auto p-0 border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand-dark font-medium text-xs gap-1 flex-shrink-0"
+          aria-label={`${t("common.change")} (${name})`}
+          className="w-auto h-auto px-0 py-1 -my-1 border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand-dark font-medium text-xs gap-1 flex-shrink-0"
         >
           {t("common.change")}
         </SelectTrigger>

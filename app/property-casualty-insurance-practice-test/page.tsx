@@ -79,13 +79,15 @@ const statePractice = [
   // end batch 2
 ];
 
-const title = "Free Property & Casualty Insurance Practice Test 2026 - P&C License Exam";
+const title = "Free Property & Casualty Insurance Practice Test 2026";
+const metaDescription =
+  "Free property and casualty insurance practice tests: 200 questions on the general portion of the license exam, from homeowners and auto to commercial lines.";
 const description =
   "Free property and casualty insurance license practice tests with 200 questions on the general portion every state tests: insurance basics and underwriting, policy provisions, dwelling and homeowners forms, the Personal Auto Policy, commercial property and the BOP, general liability and workers compensation, flood and surety. Worked arithmetic on every coinsurance and split-limit item.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "property and casualty insurance practice test, P&C license exam prep, property casualty practice questions, insurance producer exam 2026, homeowners insurance exam questions, personal auto policy practice test, free P&C practice exam",
   alternates: {
@@ -93,7 +95,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/property-casualty-insurance-practice-test`,
     images: [{ url: "/og/pnc", width: 1200, height: 630, alt: "TigerTest free property and casualty insurance practice test" }],
     siteName: "TigerTest",
@@ -103,7 +105,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/pnc"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 
@@ -125,12 +127,7 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Security Guard Practice Test 2026 - Guard Card & License Exam Prep";
+const title = "Free Security Guard Practice Test 2026 - Guard Card";
+const metaDescription =
+  "Free security guard practice tests: 200 questions for the guard card exam on arrest powers, use of force, patrol, report writing and emergency response.";
 const description =
   "Free security guard practice tests with 200 questions on the topics every unarmed guard card and license exam covers: powers to arrest and use of force, observation and patrol, access control, report writing, radio communication, emergency response and terrorism awareness. Explanations on every answer.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "security guard practice test, guard card practice test, security guard license test, unarmed security exam, security guard test questions, security officer exam prep 2026, free security guard practice test",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/security-guard-practice-test`,
     images: [{ url: "/og/security", width: 1200, height: 630, alt: "TigerTest free security guard practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/security"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 
@@ -55,12 +57,7 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

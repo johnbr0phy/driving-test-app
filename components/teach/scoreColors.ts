@@ -29,7 +29,7 @@ export const scoreChip = (level: ScoreLevel) => CHIP[level];
 
 const TEXT: Record<ScoreLevel, string> = {
   good: "text-[#4A7556] dark:text-[#8FBF9B]",
-  near: "text-[#A87A1F] dark:text-[#DDB25E]",
+  near: "text-[#8A6418] dark:text-[#DDB25E]", // the chip's ochre: #A87A1F was 3.8:1 on white
   low: "text-[#A64B35] dark:text-[#E08A73]",
 };
 

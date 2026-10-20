@@ -101,7 +101,7 @@ export default function ClassPage() {
             <p className="font-mono text-sm text-gray-900 dark:text-gray-50 mb-3 break-all">{classLink(code)}</p>
             <div className="flex gap-2">
               <button type="button" onClick={copy} className="inline-flex items-center gap-1.5 rounded-md border border-gray-300 dark:border-gray-700 px-3 py-1.5 text-sm text-gray-800 dark:text-gray-100">
-                {copied ? <Check className="w-4 h-4" aria-hidden="true" /> : <Copy className="w-4 h-4" aria-hidden="true" />} {copied ? "Copied" : "Copy link"}
+                {copied ? <Check className="w-4 h-4" aria-hidden="true" /> : <Copy className="w-4 h-4" aria-hidden="true" />} <span aria-live="polite">{copied ? "Copied" : "Copy link"}</span>
               </button>
               <button type="button" onClick={() => setShowQr((s) => !s)} className="inline-flex items-center gap-1.5 rounded-md border border-gray-300 dark:border-gray-700 px-3 py-1.5 text-sm text-gray-800 dark:text-gray-100">
                 <QrCode className="w-4 h-4" aria-hidden="true" /> QR code
@@ -109,7 +109,7 @@ export default function ClassPage() {
             </div>
             {showQr && (
               <div className="mt-3 inline-block rounded-lg bg-white p-3">
-                <QRCodeSVG value={classUrl(code)} size={160} />
+                <QRCodeSVG value={classUrl(code)} size={160} title={`QR code for ${classLink(code)}`} />
               </div>
             )}
           </div>
@@ -167,12 +167,12 @@ export default function ClassPage() {
               <table className="w-full min-w-[520px] text-sm">
                 <thead>
                   <tr className="text-left text-gray-500 dark:text-gray-400">
-                    <th className="font-normal py-2">Name</th>
-                    <th className="font-normal">Last active</th>
-                    <th className="font-normal">Answered</th>
-                    <th className="font-normal">Accuracy</th>
-                    <th className="font-normal">Best practice test</th>
-                    <th className="w-6"><span className="sr-only">Open</span></th>
+                    <th scope="col" className="font-normal py-2">Name</th>
+                    <th scope="col" className="font-normal">Last active</th>
+                    <th scope="col" className="font-normal">Answered</th>
+                    <th scope="col" className="font-normal">Accuracy</th>
+                    <th scope="col" className="font-normal">Best practice test</th>
+                    <th scope="col" className="w-6"><span className="sr-only">Open</span></th>
                   </tr>
                 </thead>
                 <tbody>

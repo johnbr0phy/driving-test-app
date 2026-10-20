@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Hunter Safety Practice Test 2026 - Hunter Education Exam Prep";
+const title = "Free Hunter Safety Practice Test 2026 - Hunter Ed";
+const metaDescription =
+  "Free hunter safety practice test: 200 questions on IHEA standards, from firearm safety and zones of fire to ethics and survival. Pass your hunter ed exam.";
 const description =
   "Free hunter safety practice test with 200 questions on the IHEA hunter education standards every state course uses: the four rules of firearm safety, safe carries, zones of fire, ammunition, shot placement, tree stand safety, wildlife identification, conservation, hunting ethics, laws and survival. Pass your hunter education exam.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "hunter safety practice test, hunter education test answers, hunter ed practice exam, hunter safety course test, hunting license test questions, hunter education exam 2026, free hunter safety quiz",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/hunter-safety-practice-test`,
     images: [{ url: "/og/hunter", width: 1200, height: 630, alt: "TigerTest free Hunter Safety practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/hunter"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 
@@ -55,12 +57,7 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free HESI A2 Practice Test 2026 - Nursing Entrance Exam Prep";
+const title = "Free HESI A2 Practice Test 2026 - Nursing Exam Prep";
+const metaDescription =
+  "Free HESI A2 practice tests: 200 questions on all seven scored sections, from math and dosage to reading, vocabulary, grammar and science, with worked math.";
 const description =
   "Free HESI A2 practice tests with 200 questions across all seven scored sections: math with dosage conversions, reading comprehension passages, medical vocabulary, grammar, biology, chemistry, and anatomy and physiology. Worked solutions on every math item.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "HESI A2 practice test, HESI practice questions, HESI A2 math practice, HESI vocabulary practice, HESI anatomy and physiology practice test, HESI entrance exam prep 2026, free HESI A2 practice test",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/hesi-a2-practice-test`,
     images: [{ url: "/og/hesi", width: 1200, height: 630, alt: "TigerTest free HESI A2 practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/hesi"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 
@@ -56,12 +58,7 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Progress syncs between phone and computer",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

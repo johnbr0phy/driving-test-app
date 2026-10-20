@@ -57,7 +57,7 @@ function StateSelect({ familyId, value, onChange, className, placeholder, label 
 }) {
   return (
     <Select onValueChange={onChange} value={value}>
-      <SelectTrigger aria-label="Exam state" className={className}>
+      <SelectTrigger aria-label={label ? `${label} exam state` : "Exam state"} className={className}>
         {label ?? <SelectValue placeholder={placeholder} />}
       </SelectTrigger>
       <SelectContent>
@@ -120,7 +120,7 @@ export function ExamStateLine({ exam }: { exam: ExamConfig }) {
         onChange={choose}
         placeholder="Change"
         label="Change"
-        className="w-auto h-auto p-0 border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand-dark font-medium text-xs gap-1 flex-shrink-0"
+        className="w-auto h-auto px-0 py-1 -my-1 border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand-dark font-medium text-xs gap-1 flex-shrink-0"
       />
     </div>
   );

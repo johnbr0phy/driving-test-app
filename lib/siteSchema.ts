@@ -17,7 +17,7 @@ export const SITE_JSON_LD = {
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
       description:
-        "Free practice tests for the DMV permit test in all 50 states and DC, plus 40 licensing, certification and admissions exams including the SAT, ACT, CDL, CNA, NREMT EMT and CompTIA.",
+        "Free practice tests for the DMV permit test in all 50 states and DC, plus more than 40 licensing, certification and admissions exams including the SAT, ACT, CDL, CNA, NREMT EMT and CompTIA.",
       founder: { "@type": "Person", name: "John Brophy", sameAs: ["https://x.com/JohnBr0"] },
     },
     {

@@ -32,9 +32,10 @@ export function ProgressCard({
   isPremiumLocked,
   stepNumber,
   attachedBottom,
+  expanded,
   children,
 }: {
-  title: string;
+  title: React.ReactNode;
   subtitle: string;
   completed: boolean;
   stamp?: { label: string; color: "green" | "amber" | "red" };
@@ -44,6 +45,8 @@ export function ProgressCard({
   stepNumber?: number;
   // Squares off the bottom so an expansion panel can attach flush below
   attachedBottom?: boolean;
+  // Set when onClick opens or closes an attached panel (the attempt drop-down)
+  expanded?: boolean;
   children?: React.ReactNode;
 }) {
   const content = (
@@ -79,10 +82,16 @@ export function ProgressCard({
 
         {/* Content */}
         <div className="flex-1 min-w-0">
-          <h3 className={`font-medium text-sm flex items-center gap-1.5 ${completed ? "text-green-800 dark:text-green-300" : "text-gray-700 dark:text-gray-200"}`}>
+          {/* A span, not a heading: the card sits inside a button or link, where headings are invalid. */}
+          <span className={`font-medium text-sm flex items-center gap-1.5 ${completed ? "text-green-800 dark:text-green-300" : "text-gray-700 dark:text-gray-200"}`}>
             {title}
-            {isPremiumLocked && <Lock className="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 flex-shrink-0" />}
-          </h3>
+            {isPremiumLocked && (
+              <>
+                <Lock className="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true" />
+                <span className="sr-only">(Premium)</span>
+              </>
+            )}
+          </span>
           <p className={`text-xs mt-0.5 ${completed ? "text-green-600 dark:text-green-400" : "text-gray-500 dark:text-gray-400"}`}>
             {subtitle}
           </p>
@@ -100,7 +109,7 @@ export function ProgressCard({
 
   if (onClick) {
     return (
-      <button onClick={onClick} className="block w-full text-left">
+      <button type="button" onClick={onClick} aria-expanded={expanded} className="block w-full text-left">
         {content}
       </button>
     );

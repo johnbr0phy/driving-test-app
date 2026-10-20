@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free HTL Practice Test 2026 - ASCP Histotechnologist Exam Prep";
+const title = "Free HTL Practice Test 2026 - ASCP Histotechnologist";
+const metaDescription =
+  "Free ASCP HTL and HT practice tests: 214 questions on the 2025 content guideline, covering fixation, processing, microtomy, staining and lab operations.";
 const description =
   "Free ASCP HTL and HT practice tests with 214 questions weighted to the official 2025 content guideline. Fixation, processing, embedding, microtomy, staining, and lab operations with instant feedback.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "HTL practice test, ASCP HTL exam, histotechnologist practice questions, HT ASCP practice test, histotechnician exam prep, histology certification exam, ASCP BOC histotechnology",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/htl-practice-test`,
     images: [{ url: "/og/htl", width: 1200, height: 630, alt: "TigerTest free HTL practice test" }],
     siteName: "TigerTest",
@@ -33,9 +35,29 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/htl"],
     title,
-    description,
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the ASCP HTL exam?",
+    a: "The HTL(ASCP) and HT(ASCP) exams have 100 multiple-choice questions in 2 hours 30 minutes, delivered by computer adaptive testing. Scores are scaled from 100 to 999 and 400 is passing.",
+  },
+  {
+    q: "What topics does the HTL exam cover?",
+    a: "Staining (30 to 40 percent), Fixation (15 to 25 percent), Embedding and Microtomy (15 to 25 percent), Processing (10 to 20 percent), and Laboratory Operations (10 to 15 percent), per the ASCP BOC content guideline revised September 2025.",
+  },
+  {
+    q: "Does this work for the HT exam too?",
+    a: "Yes. HT and HTL share the same content outline. The HTL exam adds deeper chemistry, pathology, immunohistochemistry QC, management, education, and regulation questions, all of which are in this bank.",
+  },
+  {
+    q: "Is the TigerTest HTL practice test free?",
+    a: "Yes. All four practice tests and all ten training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -55,48 +77,16 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "How many questions are on the ASCP HTL exam?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The HTL(ASCP) and HT(ASCP) exams have 100 multiple-choice questions in 2 hours 30 minutes, delivered by computer adaptive testing. Scores are scaled from 100 to 999 and 400 is passing.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What topics does the HTL exam cover?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Per the ASCP BOC content guideline revised September 2025: Staining 30 to 40 percent, Fixation 15 to 25 percent, Embedding and Microtomy 15 to 25 percent, Processing 10 to 20 percent, and Laboratory Operations 10 to 15 percent.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the TigerTest HTL practice test free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. All four practice tests and all five training sets are free, with no account required.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does this work for the HT exam too?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. HT and HTL share the same content outline. HTL adds deeper chemistry, pathology, immunohistochemistry QC, management, education, and regulation questions, which are included in this bank.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
         classFaqJsonLd("htl"),
       ],
     },
@@ -267,35 +257,12 @@ export default function HTLLandingPage() {
           HTL Exam Frequently Asked Questions
         </h2>
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the ASCP HTL exam?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              100 multiple-choice questions in 2 hours 30 minutes, delivered by computer adaptive testing.
-              Scores are scaled from 100 to 999 and 400 is passing.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What topics does the HTL exam cover?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Staining (30 to 40 percent), Fixation (15 to 25 percent), Embedding and Microtomy (15 to 25 percent),
-              Processing (10 to 20 percent), and Laboratory Operations (10 to 15 percent), per the ASCP BOC
-              content guideline revised September 2025.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this work for the HT exam too?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. HT and HTL share the same content outline. The HTL exam adds deeper chemistry, pathology,
-              immunohistochemistry QC, management, education, and regulation questions, all of which are in this bank.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest HTL practice test free?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all five training sets are free, with no account required.
-              Create a free account if you want your progress saved across devices.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
+            </div>
+          ))}
           <ExamClassFaq examId="htl" />
         </div>
       </div>

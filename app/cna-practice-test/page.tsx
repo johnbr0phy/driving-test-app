@@ -10,13 +10,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free CNA Practice Test 2026 - Nurse Aide Written Exam Prep";
+const title = "Free CNA Practice Test 2026 - Nurse Aide Exam Prep";
+const metaDescription =
+  "Free CNA practice tests: 200 questions on the NNAAP written exam outline, from daily living and basic nursing skills to client rights. Every answer explained.";
 const description =
   "Free CNA practice tests with 200 questions weighted to the NNAAP written exam outline: activities of daily living, basic nursing skills, restorative care, psychosocial needs, communication, client rights and the role of the nurse aide. Instant feedback with explanations.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "CNA practice test, nurse aide practice test, CNA written exam questions, NNAAP practice test, certified nursing assistant exam prep, CNA test 2026, free CNA practice questions",
   alternates: {
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/cna-practice-test`,
     images: [{ url: "/og/cna", width: 1200, height: 630, alt: "TigerTest free CNA practice test" }],
     siteName: "TigerTest",
@@ -35,9 +37,29 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/cna"],
     title,
-    description,
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the CNA written exam?",
+    a: "On the NNAAP exam used by most states, the written test has 70 multiple-choice questions, 60 scored and 10 unscored, with about 90 minutes to finish. Most states pass at roughly 70 percent, and you must also pass a separate skills evaluation. States that use Prometric or Headmaster have a similar format.",
+  },
+  {
+    q: "What topics does the CNA exam cover?",
+    a: "Physical care skills are 61 percent (basic nursing skills 39, activities of daily living 14, restorative skills 8), psychosocial care skills 13 percent, and the role of the nurse aide 26 percent (communication, client rights, legal and ethical behavior, and being a member of the health care team).",
+  },
+  {
+    q: "Does this cover the skills test?",
+    a: "No. This prepares you for the written knowledge test. The skills evaluation is a hands-on demonstration of five randomly selected skills, always including handwashing, scored by an evaluator in person.",
+  },
+  {
+    q: "Is the TigerTest CNA practice test free?",
+    a: "Yes. All four practice tests and all four training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -57,48 +79,16 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "How many questions are on the CNA written exam?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "On the NNAAP exam used by most states, the written test has 70 multiple-choice questions, 60 scored and 10 unscored, with about 90 minutes to finish. Most states pass at roughly 70 percent, and you must also pass a separate skills evaluation. States that use Prometric or Headmaster have a similar format.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What topics does the CNA exam cover?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Physical care skills are 61 percent (basic nursing skills 39, activities of daily living 14, restorative skills 8), psychosocial care skills 13 percent, and the role of the nurse aide 26 percent (communication, client rights, legal and ethical behavior, and being a member of the health care team).",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does this cover the skills test?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "No. This prepares you for the written knowledge test. The skills evaluation is a hands-on demonstration of five randomly selected skills, always including handwashing, scored by an evaluator in person.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the TigerTest CNA practice test free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. All four practice tests and all four training sets are free, with no account required.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
         classFaqJsonLd("cna"),
       ],
     },
@@ -278,38 +268,12 @@ export default function CnaLandingPage() {
           CNA Exam Frequently Asked Questions
         </h2>
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the CNA written exam?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              On the NNAAP exam used by most states, 70 multiple-choice questions, 60 scored and 10
-              unscored, with about 90 minutes to finish. Most states pass at roughly 70 percent, and you
-              must also pass a separate skills evaluation.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What topics does the CNA exam cover?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Physical care skills are 61 percent (basic nursing skills 39, activities of daily living
-              14, restorative skills 8), psychosocial care skills 13 percent, and the role of the nurse
-              aide 26 percent (communication, client rights, legal and ethical behavior, and being a
-              member of the health care team).
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover the skills test?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              No. This prepares you for the written knowledge test. The skills evaluation is a hands-on
-              demonstration of five randomly selected skills, always including handwashing, scored by
-              an evaluator in person.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest CNA practice test free?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all four training sets are free, with no account required.
-              Create a free account if you want your progress saved across devices.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
+            </div>
+          ))}
           <ExamClassFaq examId="cna" />
         </div>
       </div>

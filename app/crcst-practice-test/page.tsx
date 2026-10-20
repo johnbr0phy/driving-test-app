@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free CRCST Practice Test 2026 - Sterile Processing Exam Prep";
+const title = "Free CRCST Practice Test 2026 - Sterile Processing";
+const metaDescription =
+  "Free CRCST practice tests: 200 questions on the HSPA outline, covering decontamination, packaging, sterilization and storage. Also covers the CBSPD CSPDT exam.";
 const description =
   "Free HSPA CRCST practice tests with 200 questions weighted to the official exam content outline. Decontamination, preparation and packaging, sterilization, storage, and patient care equipment with instant feedback. Also covers the CBSPD CSPDT.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "CRCST practice test, HSPA CRCST exam, sterile processing practice questions, sterile processing technician exam prep, CSPDT practice test, CBSPD exam, central service technician certification",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/crcst-practice-test`,
     images: [{ url: "/og/crcst", width: 1200, height: 630, alt: "TigerTest free CRCST practice test" }],
     siteName: "TigerTest",
@@ -33,9 +35,29 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/crcst"],
     title,
-    description,
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the CRCST exam?",
+    a: "The HSPA CRCST exam has 150 multiple-choice questions in 3 hours. 140 are scored and 10 are unscored pretest items. A scaled score of 70 out of 100 is passing.",
+  },
+  {
+    q: "What topics does the CRCST exam cover?",
+    a: "Per the HSPA content outline revised November 2023: Departmental Considerations (15 percent), Cleaning, Decontamination and Disinfection (21 percent), Preparation and Packaging (21 percent), Sterilization Process (21 percent), Sterile Storage and Inventory Management (9 percent), Patient Care Equipment and Distribution (5 percent), and Professional Development and Human Relations (8 percent).",
+  },
+  {
+    q: "Does this work for the CBSPD CSPDT exam too?",
+    a: "Yes. The CBSPD Certified Sterile Processing and Distribution Technician (CSPDT) exam covers the same decontamination, packaging, sterilization, storage, and equipment material as the CRCST, so this bank prepares you for either credential.",
+  },
+  {
+    q: "Is the TigerTest CRCST practice test free?",
+    a: "Yes. All four practice tests and all six training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -55,48 +77,16 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "How many questions are on the CRCST exam?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The HSPA CRCST exam has 150 multiple-choice questions in 3 hours. 140 are scored and 10 are unscored pretest items. A scaled score of 70 out of 100 is passing.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What topics does the CRCST exam cover?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Per the HSPA content outline revised November 2023: Departmental Considerations 15 percent, Cleaning, Decontamination and Disinfection 21 percent, Preparation and Packaging 21 percent, Sterilization Process 21 percent, Sterile Storage and Inventory Management 9 percent, Patient Care Equipment and Distribution 5 percent, and Professional Development and Human Relations 8 percent.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the TigerTest CRCST practice test free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. All four practice tests and all six training sets are free, with no account required.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does this work for the CBSPD CSPDT exam too?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. The CBSPD Certified Sterile Processing and Distribution Technician (CSPDT) exam covers the same decontamination, packaging, sterilization, storage, and equipment material, so this bank prepares you for either credential.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
         classFaqJsonLd("crcst"),
       ],
     },
@@ -270,35 +260,12 @@ export default function CRCSTLandingPage() {
           CRCST Exam Frequently Asked Questions
         </h2>
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the CRCST exam?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              150 multiple-choice questions in 3 hours. 140 are scored and 10 are unscored pretest items.
-              A scaled score of 70 out of 100 is passing.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What topics does the CRCST exam cover?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Departmental Considerations (15 percent), Cleaning, Decontamination and Disinfection (21 percent),
-              Preparation and Packaging (21 percent), Sterilization Process (21 percent), Sterile Storage and
-              Inventory (9 percent), Patient Care Equipment (5 percent), and Professional Development (8 percent).
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this work for the CBSPD CSPDT exam too?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. The CBSPD Certified Sterile Processing and Distribution Technician exam covers the same
-              decontamination, packaging, sterilization, storage, and equipment material as the CRCST.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest CRCST practice test free?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all six training sets are free, with no account required.
-              Create a free account if you want your progress saved across devices.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
+            </div>
+          ))}
           <ExamClassFaq examId="crcst" />
         </div>
       </div>

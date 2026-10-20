@@ -236,8 +236,10 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
         <div className="mt-2 flex gap-1">
           {timings.map((tm, k) =>
             beats[k].id === "close" ? null : (
-              <button key={tm.id} type="button" disabled={!running} onClick={() => seek(tm.start)} className="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700" aria-label={`Jump to ${LABELS[tm.id]}`}>
-                <div className="h-full rounded-full bg-brand transition-[width] duration-150" style={{ width: running ? `${Math.round(Math.min(1, Math.max(0, (t - tm.start) / (tm.end - tm.start))) * 100)}%` : "0%" }} />
+              <button key={tm.id} type="button" disabled={!running} onClick={() => seek(tm.start)} className="-my-[9px] flex-1 py-[9px]" aria-label={`Jump to ${LABELS[tm.id]}`}>
+                <span className="block h-1.5 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
+                  <span className="block h-full rounded-full bg-brand transition-[width] duration-150" style={{ width: running ? `${Math.round(Math.min(1, Math.max(0, (t - tm.start) / (tm.end - tm.start))) * 100)}%` : "0%" }} />
+                </span>
               </button>
             )
           )}
@@ -338,8 +340,11 @@ function BeatBody({ beat, spoken }: { beat: ExplainerBeat; spoken: number }) {
       <p className={`${size} ${sentence ? "font-medium" : ""}`}>
         {tokens.map((tok, i) => {
           const lit = spoken > showAt + i;
-          let cls = lit ? "text-gray-900 dark:text-gray-50" : "text-gray-300 dark:text-gray-600";
-          if (sentence && tok.changed && lit) {
+          // Unspoken words stay readable (4.5:1 on the bubble) so a paused
+          // explainer can be read; spoken ones go full strength.
+          let cls = lit ? "text-gray-900 dark:text-gray-50" : "text-gray-500 dark:text-gray-400";
+          const marked = sentence && tok.changed && lit;
+          if (marked) {
             cls = beat.id === "bad"
               ? "rounded bg-red-100 px-1 text-red-700 line-through decoration-red-500 decoration-2 dark:bg-red-950 dark:text-red-300"
               : "rounded bg-green-100 px-1 font-bold text-green-800 dark:bg-green-950 dark:text-green-300";
@@ -347,6 +352,7 @@ function BeatBody({ beat, spoken }: { beat: ExplainerBeat; spoken: number }) {
           return (
             <span key={i} className={`transition-colors duration-150 ${cls}`}>
               {tok.text}
+              {marked && <span className="sr-only">{beat.id === "bad" ? " (wrong word)" : " (fixed)"}</span>}
               {i < tokens.length - 1 ? " " : ""}
             </span>
           );
@@ -354,7 +360,7 @@ function BeatBody({ beat, spoken }: { beat: ExplainerBeat; spoken: number }) {
       </p>
       {sentence && showDone && (
         <div className={`v2-pop flex items-center gap-2 text-[15px] font-bold ${beat.id === "bad" ? "text-red-600 dark:text-red-300" : "text-green-700 dark:text-green-300"}`}>
-          <span className="text-xl leading-none">{beat.id === "bad" ? "✗" : "✓"}</span>
+          <span className="text-xl leading-none" aria-hidden="true">{beat.id === "bad" ? "✗" : "✓"}</span>
           {beat.id === "bad" ? "Breaks the rule" : "Follows the rule"}
         </div>
       )}

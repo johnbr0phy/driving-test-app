@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free CST Practice Test 2026 - Surgical Technologist Exam Prep";
+const title = "Free CST Practice Test 2026 - Surgical Technologist";
+const metaDescription =
+  "Free CST practice tests: 200 questions on the NBSTSA outline, from preop and intraop care to sterilization, anatomy, microbiology and pharmacology.";
 const description =
   "Free NBSTSA CST practice tests with 200 questions weighted to the official exam content outline. Preoperative, intraoperative, postoperative, sterilization, anatomy, microbiology, and pharmacology with instant feedback.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "CST practice test, NBSTSA CST exam, surgical technologist practice questions, surgical tech exam prep, CST certification exam, surgical technology practice test, TS-C practice test",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/cst-practice-test`,
     images: [{ url: "/og/cst", width: 1200, height: 630, alt: "TigerTest free CST practice test" }],
     siteName: "TigerTest",
@@ -33,9 +35,29 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/cst"],
     title,
-    description,
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the CST exam?",
+    a: "The NBSTSA CST exam has 175 multiple-choice questions in 4 hours. 150 are scored and 25 are unscored pretest items. You need 102 of the 150 scored items correct to pass, about 68 percent.",
+  },
+  {
+    q: "What topics does the CST exam cover?",
+    a: "Per the NBSTSA content outline: Perioperative Care (105 scored items: preoperative 19, intraoperative 68, postoperative 10), Ancillary Duties (23: administrative and personnel 7, equipment sterilization and maintenance 16), and Basic Science (30: anatomy and physiology 18, microbiology 6, surgical pharmacology 6).",
+  },
+  {
+    q: "Does this work for the TS-C exam too?",
+    a: "Largely, yes. The NCCT Tech in Surgery - Certified (TS-C) exam covers the same perioperative, sterilization, and basic science material, so this bank is useful preparation, though its exact weighting differs.",
+  },
+  {
+    q: "Is the TigerTest CST practice test free?",
+    a: "Yes. All four practice tests and all five training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -55,48 +77,16 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "How many questions are on the CST exam?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The NBSTSA CST exam has 175 multiple-choice questions, 150 scored and 25 unscored pretest items, in 4 hours. You need 102 of the 150 scored items correct to pass, about 68 percent.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What topics does the CST exam cover?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Per the NBSTSA content outline: Perioperative Care is 105 of 150 scored items (preoperative 19, intraoperative 68, postoperative 10), Ancillary Duties 23 (administrative and personnel 7, equipment sterilization and maintenance 16), and Basic Science 30 (anatomy and physiology 18, microbiology 6, surgical pharmacology 6).",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the TigerTest CST practice test free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. All four practice tests and all five training sets are free, with no account required.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does this work for the TS-C exam too?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Largely, yes. The NCCT Tech in Surgery - Certified (TS-C) exam covers the same perioperative, sterilization, and basic science material, so this bank is useful preparation, though its exact weighting differs.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
         classFaqJsonLd("cst"),
       ],
     },
@@ -270,35 +260,12 @@ export default function CSTLandingPage() {
           CST Exam Frequently Asked Questions
         </h2>
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the CST exam?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              175 multiple-choice questions in 4 hours. 150 are scored and 25 are unscored pretest items.
-              You need 102 of the 150 scored items correct to pass.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What topics does the CST exam cover?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Perioperative Care (105 scored items: preoperative 19, intraoperative 68, postoperative 10),
-              Ancillary Duties (23: administrative and personnel 7, equipment sterilization 16), and Basic
-              Science (30: anatomy and physiology 18, microbiology 6, surgical pharmacology 6).
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this work for the TS-C exam too?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Largely, yes. The NCCT Tech in Surgery - Certified (TS-C) exam covers the same perioperative,
-              sterilization, and basic science material, though its exact weighting differs.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest CST practice test free?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all five training sets are free, with no account required.
-              Create a free account if you want your progress saved across devices.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
+            </div>
+          ))}
           <ExamClassFaq examId="cst" />
         </div>
       </div>

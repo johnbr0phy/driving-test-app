@@ -16,22 +16,23 @@ export const revalidate = 3600;
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 const examCount = TEST_CATALOG.length;
 
-const title = `TigerTest: Free Practice Tests for ${examCount} Exams - DMV, SAT, ACT, Nursing & More`;
+const title = `TigerTest: Free Practice Tests for ${examCount} Exams - DMV, SAT & More`;
 const description = `Free practice tests for ${examCount} exams: the DMV permit test in all 50 states, SAT, ACT, CDL, nursing and healthcare certifications, IT certs, real estate, insurance and more. Every answer explained. No account needed.`;
+const metaDescription = `Free practice tests for ${examCount} exams: the DMV permit test in every state, SAT, ACT, CDL, nursing, IT, real estate and more. Every answer explained.`;
 
 export const metadata: Metadata = {
   title: { absolute: title },
-  description,
+  description: metaDescription,
   alternates: { canonical: siteUrl },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: siteUrl,
     siteName: "TigerTest",
     type: "website",
     images: [{ url: "/og-tests.png", width: 1200, height: 630, alt: `TigerTest: ${examCount} free practice tests` }],
   },
-  twitter: { card: "summary_large_image", title, description, images: ["/og-tests.png"] },
+  twitter: { card: "summary_large_image", title, description: metaDescription, images: ["/og-tests.png"] },
 };
 
 const faqs = [
@@ -186,7 +187,10 @@ export default async function Home() {
                 className="flex items-center justify-between bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-4 hover:border-brand-border hover:bg-brand-light transition-colors"
               >
                 <span className="font-medium text-gray-900 dark:text-gray-50 text-sm">{state.name}</span>
-                <span className="text-xs text-gray-500 dark:text-gray-400">{state.writtenTestQuestions}Q</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">
+                  <span aria-hidden="true">{state.writtenTestQuestions}Q</span>
+                  <span className="sr-only">, {state.writtenTestQuestions} questions on the written test</span>
+                </span>
               </Link>
             ))}
           </div>
@@ -297,7 +301,7 @@ export default async function Home() {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-8">
           Every practice test
         </h2>
-        <TestCatalogGrid showPopular={false} />
+        <TestCatalogGrid showPopular={false} nested />
       </div>
 
       {/* FAQ */}

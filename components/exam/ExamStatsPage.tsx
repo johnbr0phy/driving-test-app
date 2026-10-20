@@ -95,16 +95,16 @@ export function ExamStatsPage({ exam: source }: { exam: ExamConfig }) {
 
   const chipFor = (item: QuestionWithPerformance) => {
     if (sortField === "wrong") {
-      return { value: `${item.wrong}`, label: t("stats.wrongLabel"), color: item.wrong > 0 ? "text-red-600 dark:text-red-400" : "text-gray-300" };
+      return { value: `${item.wrong}`, label: t("stats.wrongLabel"), color: item.wrong > 0 ? "text-red-600 dark:text-red-400" : "text-gray-500 dark:text-gray-400" };
     }
     if (sortField === "correct") {
-      return { value: `${item.correct}`, label: t("stats.correctLabel"), color: item.correct > 0 ? "text-green-600 dark:text-green-400" : "text-gray-300" };
+      return { value: `${item.correct}`, label: t("stats.correctLabel"), color: item.correct > 0 ? "text-green-600 dark:text-green-400" : "text-gray-500 dark:text-gray-400" };
     }
     if (sortField === "timesAnswered") {
-      return { value: `${item.timesAnswered}`, label: t("stats.answered"), color: item.timesAnswered > 0 ? "text-gray-700 dark:text-gray-200" : "text-gray-300" };
+      return { value: `${item.timesAnswered}`, label: t("stats.answered"), color: item.timesAnswered > 0 ? "text-gray-700 dark:text-gray-200" : "text-gray-500 dark:text-gray-400" };
     }
     if (item.timesAnswered === 0) {
-      return { value: "–", label: t("stats.accuracy"), color: "text-gray-300" };
+      return { value: "–", label: t("stats.accuracy"), color: "text-gray-500 dark:text-gray-400" };
     }
     return {
       value: `${item.accuracy}%`,

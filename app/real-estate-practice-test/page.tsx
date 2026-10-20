@@ -89,13 +89,15 @@ const statePractice = [
   // end batch 2
 ];
 
-const title = "Free Real Estate Practice Test 2026 - National Salesperson Exam Prep";
+const title = "Free Real Estate Practice Test 2026 - National Exam";
+const metaDescription =
+  "Free real estate practice tests: 200 questions on the national salesperson exam outline, from ownership and contracts to financing and real estate math.";
 const description =
   "Free real estate practice tests with 200 questions weighted to the national salesperson exam outline used by Pearson VUE and PSI: property, ownership and title, contracts and agency, practice and fair housing, disclosures, financing and real estate math with worked solutions.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "real estate practice test, real estate exam prep, national real estate exam practice questions, real estate salesperson exam 2026, PSI real estate practice test, Pearson VUE real estate exam, real estate math practice, free real estate practice exam",
   alternates: {
@@ -103,7 +105,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/real-estate-practice-test`,
     images: [{ url: "/og/realestate", width: 1200, height: 630, alt: "TigerTest free Real Estate practice test" }],
     siteName: "TigerTest",
@@ -113,7 +115,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/realestate"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 
@@ -135,12 +137,7 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

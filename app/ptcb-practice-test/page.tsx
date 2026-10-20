@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free PTCB Practice Test 2026 - Pharmacy Technician Exam Prep";
+const title = "Free PTCB Practice Test 2026 - Pharmacy Technician";
+const metaDescription =
+  "Free PTCB practice tests: 200 questions on the 2026 PTCE outline, covering medications, patient safety, order entry, pharmacy math and federal law.";
 const description =
   "Free PTCB practice tests with 200 questions weighted to the 2026 PTCE content outline: medications, patient safety and quality assurance, order entry and pharmacy math, and federal requirements. Worked calculations and explanations on every question.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "PTCB practice test, PTCE practice exam, pharmacy technician practice test, pharmacy tech exam questions, PTCB exam prep 2026, pharmacy math practice, free PTCB practice questions",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/ptcb-practice-test`,
     images: [{ url: "/og/ptcb", width: 1200, height: 630, alt: "TigerTest free PTCB practice test" }],
     siteName: "TigerTest",
@@ -33,9 +35,29 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/ptcb"],
     title,
-    description,
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the PTCB exam?",
+    a: "The PTCE has 90 multiple-choice questions, 80 scored and 10 unscored pretest items, with 110 minutes of testing time. It is scored on a scale of 1,000 to 1,600 and 1,400 is passing. Because the score is scaled there is no fixed percentage, but about 70 percent correct is a safe target.",
+  },
+  {
+    q: "What is on the 2026 PTCE content outline?",
+    a: "Four knowledge domains: Medications 35 percent, Patient Safety and Quality Assurance 23.75 percent, Order Entry and Processing 22.5 percent, and Federal Requirements 18.75 percent. The January 2026 update shifted weight from Medications to Federal Requirements and added the Drug Supply Chain Security Act (DSCSA).",
+  },
+  {
+    q: "How much math is on the PTCB exam?",
+    a: "Calculation-based knowledge statements appear in every domain, not just Order Entry: days supply, conversions, dilutions, dosing by weight, pseudoephedrine limits, DEA number checks and expiration dates. Every calculation question here shows the arithmetic in its explanation.",
+  },
+  {
+    q: "Is the TigerTest PTCB practice test free?",
+    a: "Yes. All four practice tests and all four training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -55,48 +77,16 @@ const jsonLd = {
         "Worked pharmacy math on every calculation",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "How many questions are on the PTCB exam?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The PTCE has 90 multiple-choice questions, 80 scored and 10 unscored pretest items, with 110 minutes of testing time. It is scored on a scale of 1,000 to 1,600 and 1,400 is passing. Because the score is scaled there is no fixed percentage, but about 70 percent correct is a safe target.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is on the 2026 PTCE content outline?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Four knowledge domains: Medications 35 percent, Patient Safety and Quality Assurance 23.75 percent, Order Entry and Processing 22.5 percent, and Federal Requirements 18.75 percent. The January 2026 update shifted weight from Medications to Federal Requirements and added the DSCSA.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How much math is on the PTCB exam?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Calculation-based knowledge statements appear in every domain, not just Order Entry: days supply, conversions, dilutions, dosing by weight, pseudoephedrine limits, DEA number checks and expiration dates. Every calculation question here shows the arithmetic in its explanation.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the TigerTest PTCB practice test free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. All four practice tests and all four training sets are free, with no account required.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
         classFaqJsonLd("ptcb"),
       ],
     },
@@ -273,40 +263,12 @@ export default function PtcbLandingPage() {
           PTCB Exam Frequently Asked Questions
         </h2>
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the PTCB exam?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              The PTCE has 90 multiple-choice questions, 80 scored and 10 unscored pretest items, with
-              110 minutes of testing time. It is scored on a scale of 1,000 to 1,600 and 1,400 is
-              passing. Because the score is scaled there is no fixed percentage, but about 70 percent
-              correct is a safe target.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is on the 2026 PTCE content outline?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Four knowledge domains: Medications 35 percent, Patient Safety and Quality Assurance
-              23.75 percent, Order Entry and Processing 22.5 percent, and Federal Requirements 18.75
-              percent. The January 2026 update shifted weight from Medications to Federal Requirements
-              and added the Drug Supply Chain Security Act.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How much math is on the PTCB exam?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Calculation-based knowledge statements appear in every domain, not just Order Entry: days
-              supply, conversions, dilutions, dosing by weight, pseudoephedrine limits, DEA number
-              checks and expiration dates. Every calculation question here shows the arithmetic in its
-              explanation.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest PTCB practice test free?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all four training sets are free, with no account required.
-              Create a free account if you want your progress saved across devices.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
+            </div>
+          ))}
           <ExamClassFaq examId="ptcb" />
         </div>
       </div>

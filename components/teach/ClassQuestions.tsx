@@ -28,7 +28,8 @@ export function untrackedNote(picks: number[], missed: number): string | null {
 // counts), the class's counts and the explanation.
 const QUESTIONS_SHOWN = 10;
 
-export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] }) {
+export function ClassQuestions({ questions, headingLevel = 2 }: { questions: ClassQuestionRow[]; headingLevel?: 2 | 3 }) {
+  const Heading = headingLevel === 3 ? "h3" : "h2";
   const [sort, setSort] = useState<"missed" | "accuracy">("missed");
   const [showAll, setShowAll] = useState(false);
   const sorted = [...questions].sort((a, b) =>
@@ -41,12 +42,13 @@ export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] })
   return (
     <div>
       <div className="flex flex-wrap items-center gap-2 mb-3">
-        <h2 className="font-semibold text-gray-900 dark:text-gray-50 mr-2">Questions</h2>
+        <Heading className="font-semibold text-gray-900 dark:text-gray-50 mr-2">Questions</Heading>
         {([["missed", "Most missed"], ["accuracy", "Lowest accuracy"]] as const).map(([key, label]) => (
           <button
             key={key}
             type="button"
             onClick={() => setSort(key)}
+            aria-pressed={sort === key}
             className={`text-sm px-3 py-1 rounded-full border ${
               sort === key
                 ? "bg-gray-900 dark:bg-white border-gray-900 dark:border-white text-white dark:text-gray-900"
@@ -63,7 +65,7 @@ export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] })
           const accuracy = pct(q.answered - q.missed, q.answered);
           const chip =
             sort === "missed"
-              ? { value: `${q.missed}`, label: "missed", color: q.missed > 0 ? scoreText("low") : "text-gray-400" }
+              ? { value: `${q.missed}`, label: "missed", color: q.missed > 0 ? scoreText("low") : "text-gray-500 dark:text-gray-400" }
               : { value: `${accuracy}%`, label: "right", color: scoreText(accuracy >= 70 ? "good" : accuracy >= 50 ? "near" : "low") };
           return (
             <QuizRow

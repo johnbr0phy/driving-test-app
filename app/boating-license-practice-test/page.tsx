@@ -8,13 +8,15 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Boating License Practice Test 2026 - Boater Safety Exam Prep";
+const title = "Free Boating License Practice Test 2026";
+const metaDescription =
+  "Free boating license practice test: 200 questions on NASBLA standards, navigation rules, buoys, lights, life jackets and emergencies. Pass your boater exam.";
 const description =
   "Free boating license practice test with 200 questions on the NASBLA boater education standards every state exam uses: navigation rules, buoys and markers, lights and sound signals, life jackets and required equipment, safe operation, PWC rules and emergencies. Pass your boater safety card exam.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "boating license practice test, boater safety test, boat ed practice test, boater education exam questions, boating safety certificate test, boating test answers 2026, free boater exam practice",
   alternates: {
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/boating-license-practice-test`,
     images: [{ url: "/og/boating", width: 1200, height: 630, alt: "TigerTest free Boating practice test" }],
     siteName: "TigerTest",
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/boating"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 
@@ -54,12 +56,7 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

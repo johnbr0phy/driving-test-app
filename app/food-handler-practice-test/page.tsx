@@ -9,13 +9,15 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Food Handler Practice Test 2026 - Food Handler Card Exam Prep";
+const title = "Free Food Handler Practice Test 2026 - Card Exam";
+const metaDescription =
+  "Free food handler practice test: 200 FDA Food Code questions on hygiene, handwashing, cross-contamination, allergens and temperatures. Pass your card test.";
 const description =
   "Free food handler practice test with 200 questions on the FDA Food Code topics every ANAB-accredited course tests: personal hygiene, handwashing, cross-contamination, allergens, cooking and holding temperatures, cooling, thawing, cleaning and sanitizing. Pass your food handler card test the first time.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "food handler practice test, food handler card test, food handler certificate practice questions, food safety test answers, servsafe food handler practice test, food handler exam 2026, free food handler test",
   alternates: {
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/food-handler-practice-test`,
     images: [{ url: "/og/foodhandler", width: 1200, height: 630, alt: "TigerTest free Food Handler practice test" }],
     siteName: "TigerTest",
@@ -34,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/foodhandler"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 
@@ -56,12 +58,7 @@ const jsonLd = {
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
-    },
-    {
-      "@type": "Organization",
-      name: "TigerTest",
-      url: siteUrl,
-      logo: `${siteUrl}/tiger.png`,
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
       "@type": "FAQPage",

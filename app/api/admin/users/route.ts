@@ -3,6 +3,8 @@ import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
 import { getInternalUids } from '@/lib/server/internalUsers';
 import { states } from '@/data/states';
+import { resolveUserExamId } from '@/lib/email-voice';
+import { getCatalogEntry, getCatalogEntryByPath } from '@/lib/testCatalog';
 
 const STATE_PASS_PCT: Record<string, number> = states.reduce(
   (acc, s) => {
@@ -45,6 +47,22 @@ function deriveConvertedPaywall(data: Record<string, unknown>) {
     ? before.reduce((a, b) => (b.lastAt > a.lastAt ? b : a))
     : entries.reduce((a, b) => (b.lastAt < a.lastAt ? b : a));
   return { key: pick.key, label: pick.label, location: pick.location };
+}
+
+// ─── Which test an account signed up for ──────────────────────────────────
+// The test page their first visit landed on (signupOrigins/{uid}.landing)
+// when it names one, else their current test (primaryExam, then whatever
+// their progress points at). Landings on the homepage or hub fall back.
+function signupTest(data: Record<string, unknown>, landing: string | null) {
+  const fromLanding = landing ? getCatalogEntryByPath(landing) : null;
+  const entry = fromLanding && fromLanding.id !== 'dmv'
+    ? fromLanding
+    : getCatalogEntry(resolveUserExamId(data));
+  return {
+    id: entry?.id ?? 'dmv',
+    name: entry?.shortName ?? 'DMV',
+    source: fromLanding && fromLanding.id !== 'dmv' ? ('landing' as const) : ('current' as const),
+  };
 }
 
 // ─── Per-user stats from full Firestore doc ─────────────────────────────────
@@ -190,6 +208,14 @@ export async function GET(request: NextRequest) {
       if (typeof sam.firstEnabledAt === 'string') superAmazing.everEnabledUsers++;
     }
 
+    // Signup landings for the table's accounts, read in one batch.
+    const originSnaps = fullDocs.length
+      ? await db.getAll(...fullDocs.map((d) => db.doc(`signupOrigins/${d.id}`)))
+      : [];
+    const landingByUid = new Map(
+      originSnaps.map((s) => [s.id, typeof s.get('landing') === 'string' ? (s.get('landing') as string) : null]),
+    );
+
     const passByStateAgg: Record<string, { passed: number; failed: number }> = {};
     const users = fullDocs.map((doc) => {
       const data = doc.data() as Record<string, unknown>;
@@ -203,6 +229,7 @@ export async function GET(request: NextRequest) {
         uid: doc.id,
         email: (data.email as string) || '',
         selectedState: (data.selectedState as string) || null,
+        test: signupTest(data, landingByUid.get(doc.id) ?? null),
         lastUpdated: (data.lastUpdated as string) || null,
         createdAt: (data.createdAt as string) || null,
         testsCompleted: stats.testsCompleted,

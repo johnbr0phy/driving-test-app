@@ -17,6 +17,8 @@ interface UserData {
   uid: string;
   email: string;
   selectedState: string | null;
+  /** The test they signed up for: their first visit's test landing, else their current test. */
+  test: { id: string; name: string; source: "landing" | "current" };
   lastUpdated: string | null;
   createdAt: string | null;
   testsCompleted: number;
@@ -58,12 +60,12 @@ export function UsersTab() {
   const [deleting, setDeleting] = useState<string | null>(null);
   const [usersPage, setUsersPage] = useState(0);
   const [userSearch, setUserSearch] = useState("");
-  const [stateFilter, setStateFilter] = useState<string>("all");
+  const [testFilter, setTestFilter] = useState<string>("all");
   const [premiumOnly, setPremiumOnly] = useState(false);
 
   useEffect(() => {
     setUsersPage(0);
-  }, [userSearch, stateFilter, premiumOnly]);
+  }, [userSearch, testFilter, premiumOnly]);
 
   if (loading) return <TabLoading />;
   if (error || !data) return <TabError message={error || "Failed to load users"} />;
@@ -86,7 +88,7 @@ export function UsersTab() {
 
   const filteredUsers = users.filter((u) => {
     if (premiumOnly && !u.isPremium) return false;
-    if (stateFilter !== "all" && u.selectedState !== stateFilter) return false;
+    if (testFilter !== "all" && u.test.id !== testFilter) return false;
     if (userSearch.trim()) {
       const q = userSearch.trim().toLowerCase();
       if (!`${u.email || ""} ${u.uid}`.toLowerCase().includes(q)) return false;
@@ -98,9 +100,9 @@ export function UsersTab() {
   const usersPageSafe = Math.min(usersPage, usersPageCount - 1);
   const visibleUsers = filteredUsers.slice(usersPageSafe * PAGE_SIZE, usersPageSafe * PAGE_SIZE + PAGE_SIZE);
 
-  const availableStateCodes = Array.from(
-    new Set(users.map((u) => u.selectedState).filter((s): s is string => Boolean(s))),
-  ).sort();
+  const availableTests = Array.from(new Map(users.map((u) => [u.test.id, u.test.name])).entries()).sort((a, b) =>
+    a[1].localeCompare(b[1]),
+  );
 
   return (
     <>
@@ -180,14 +182,14 @@ export function UsersTab() {
               />
             </div>
             <select
-              value={stateFilter}
-              onChange={(e) => setStateFilter(e.target.value)}
+              value={testFilter}
+              onChange={(e) => setTestFilter(e.target.value)}
               className="text-sm border border-gray-300 dark:border-gray-700 rounded-md px-2 py-1.5 bg-white dark:bg-gray-900 focus:outline-none focus:ring-1 focus:ring-brand"
             >
-              <option value="all">All states</option>
-              {availableStateCodes.map((code) => (
-                <option key={code} value={code}>
-                  {getStateName(code)} ({code})
+              <option value="all">All tests</option>
+              {availableTests.map(([id, name]) => (
+                <option key={id} value={id}>
+                  {name}
                 </option>
               ))}
             </select>
@@ -203,7 +205,7 @@ export function UsersTab() {
             <thead>
               <tr className="border-b border-gray-200 dark:border-gray-800">
                 <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">ID</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">State</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Test</th>
                 <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Last Active</th>
                 <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Training Qs</th>
                 <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Test Qs</th>
@@ -232,13 +234,13 @@ export function UsersTab() {
                     </div>
                   </td>
                   <td className="py-3 px-4">
-                    {u.selectedState ? (
-                      <span className="inline-flex items-center px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-300 rounded text-xs font-medium">
-                        {getStateName(u.selectedState)} ({u.selectedState})
-                      </span>
-                    ) : (
-                      <span className="text-gray-500 dark:text-gray-400">Not selected</span>
-                    )}
+                    <span
+                      className="inline-flex items-center px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-300 rounded text-xs font-medium"
+                      title={u.test.source === "landing" ? "From their signup landing page" : "Their current test (no test landing on signup)"}
+                    >
+                      {u.test.name}
+                      {u.test.id === "dmv" && u.selectedState && ` · ${u.selectedState}`}
+                    </span>
                   </td>
                   <td className="py-3 px-4 text-gray-600 dark:text-gray-300">
                     {u.lastUpdated ? formatDate(u.lastUpdated) : <span className="text-gray-500 dark:text-gray-400">Never</span>}

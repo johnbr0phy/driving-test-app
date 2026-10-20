@@ -9,6 +9,7 @@ import {
   ResponsiveContainer, LabelList,
 } from "recharts";
 import { TabError, TabHeader, TabLoading, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
+import { BasicsProgress } from "@/components/admin/BasicsProgress";
 
 // ─── Palette (validated: dataviz reference palette, light mode) ─────────────
 const COLORS = {
@@ -1163,6 +1164,9 @@ export function GrowthTab() {
           totalQuestions={kpis.totalQuestions}
           backfillPending={metrics.questionsByExamBackfillPending === true}
         />
+
+        {/* SAT, ACT and the other v2 exams with Basics: steps and Basics use */}
+        <BasicsProgress />
 
         {/* Launch email split test */}
         {metrics.launchTest && <LaunchTest rows={metrics.launchTest} />}

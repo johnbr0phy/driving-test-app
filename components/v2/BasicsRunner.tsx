@@ -22,6 +22,7 @@ import { getTigerAsset } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { DrillLockScreen } from "./DrillLockScreen";
+import { trackBasics } from "@/lib/v2/basicsTracking";
 
 /**
  * One Basics skill on the phone: learn it, then a handful of one-line
@@ -92,6 +93,10 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
 
   // Basics of a Premium drill is gated like its questions, unless they are already in it.
   const premiumDrill = !!drill && !!exam.premium?.lockedDrills.includes(drill.key);
+  const openable = hydrated && !!drill && !!skill && (!premiumDrill || premiumReady) && !(isDrillLocked(exam, drill.key, isPremium) && !hasDrillProgress(drillsMap, basicsMap, exam, drill));
+  useEffect(() => {
+    if (openable && drill && skill) trackBasics("skill_open", exam.id, drill.key, { skill: skill.id });
+  }, [openable, exam.id, drill, skill]);
   if (!hydrated || !drill || !skill || (premiumDrill && !premiumReady)) {
     return <FocusMode className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</FocusMode>;
   }
@@ -106,6 +111,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const next = (r: BasicsRun) => {
     if (r.mastered.length === total) {
       completeBasics(basicsKey(exam.id, skill.id), { firstTry: total - r.retried.length, total });
+      trackBasics("skill_learned", exam.id, drill.key, { skill: skill.id });
       setScreen("done");
       return;
     }

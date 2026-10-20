@@ -198,7 +198,7 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
               <ProgressCard
                 key={`${def.id}-${p.part}`}
                 title={trainingPartName(p, lang)}
-                subtitle={`${progress.correct}/${progress.total} · ${def.weightLabel}`}
+                subtitle={progress.complete ? t("trainingPage.masteredSet") : `${progress.correct}/${progress.total} ${t("mastery.masteredSuffix")}`}
                 completed={progress.complete}
                 stepNumber={index + 1}
                 stamp={

@@ -2079,12 +2079,12 @@ const htl: ExamConfig = {
     { setNumber: 2, id: 202, name: "Processing", categories: ["processing"], size: 28, weightLabel: "10–20% of the exam" },
     { setNumber: 3, id: 203, name: "Embedding & Microtomy", categories: ["embeddingMicrotomy"], size: 40, weightLabel: "15–25% of the exam" },
     // Staining was one set (204) until Oct 2026; its progress moves to 206-211 by question id (lib/legacySetSplits.ts).
-    { setNumber: 4, id: 206, name: "H&E, Dyes & Mounting", categories: ["stainRoutine"], size: 16, weightLabel: "Staining, 30–40% of the exam" },
-    { setNumber: 5, id: 207, name: "Carbohydrates & Amyloid", categories: ["stainCarbohydrates"], size: 12, weightLabel: "Staining, 30–40% of the exam" },
-    { setNumber: 6, id: 208, name: "Connective Tissue, Muscle & Nerve", categories: ["stainConnective"], size: 14, weightLabel: "Staining, 30–40% of the exam" },
-    { setNumber: 7, id: 209, name: "Microorganisms", categories: ["stainMicroorganisms"], size: 8, weightLabel: "Staining, 30–40% of the exam" },
-    { setNumber: 8, id: 210, name: "Pigments, Minerals & Lipids", categories: ["stainPigments"], size: 12, weightLabel: "Staining, 30–40% of the exam" },
-    { setNumber: 9, id: 211, name: "IHC, Immunofluorescence & ISH", categories: ["stainImmuno"], size: 24, weightLabel: "Staining, 30–40% of the exam" },
+    { setNumber: 4, id: 206, name: "H&E, Dyes & Mounting", categories: ["stainRoutine"], size: 16, weightLabel: "Staining · 6% of each test" },
+    { setNumber: 5, id: 207, name: "Carbohydrates & Amyloid", categories: ["stainCarbohydrates"], size: 12, weightLabel: "Staining · 6% of each test" },
+    { setNumber: 6, id: 208, name: "Connective Tissue, Muscle & Nerve", categories: ["stainConnective"], size: 14, weightLabel: "Staining · 6% of each test" },
+    { setNumber: 7, id: 209, name: "Microorganisms", categories: ["stainMicroorganisms"], size: 8, weightLabel: "Staining · 4% of each test" },
+    { setNumber: 8, id: 210, name: "Pigments, Minerals & Lipids", categories: ["stainPigments"], size: 12, weightLabel: "Staining · 4% of each test" },
+    { setNumber: 9, id: 211, name: "IHC, Immunofluorescence & ISH", categories: ["stainImmuno"], size: 24, weightLabel: "Staining · 10% of each test" },
     { setNumber: 10, id: 205, name: "Laboratory Operations", categories: ["laboratoryOperations"], size: 20, weightLabel: "10–15% of the exam" },
   ],
   categoryLabels: {

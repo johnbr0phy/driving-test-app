@@ -154,7 +154,7 @@ export default function ClassPage() {
 
             {report.questions.length > 0 && <ClassQuestions questions={report.questions} />}
 
-            <div className={`${card} overflow-x-auto`}>
+            <div className={`${card} relative overflow-x-auto`}>
               <div className="flex items-center justify-between mb-3">
                 <div>
                   <h2 className="font-semibold text-gray-900 dark:text-gray-50">Students</h2>

@@ -26,6 +26,8 @@ import { matchBasicsSkill } from "@/lib/v2/skillMatch";
 import { hasExplainer } from "@/lib/v2/explainer";
 import { BasicsRuleSheet } from "./BasicsRuleSheet";
 import { DrillLockScreen } from "./DrillLockScreen";
+import { basicsDone, basicsFor } from "@/lib/v2/basics";
+import { trackBasics } from "@/lib/v2/basicsTracking";
 import { QuestionView } from "./QuestionView";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 import { useAuth } from "@/contexts/AuthContext";
@@ -107,6 +109,13 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     if (hydrated && drill && gateReady && !locked && !question && !done) load();
   }, [hydrated, drill, gateReady, locked, question, done, load]);
 
+  // Basics usage: a miss that offers the rule sheet (lib/v2/basicsTracking).
+  useEffect(() => {
+    if (!drill || !question || !revealed || isCorrect(question, answer)) return;
+    const skill = matchBasicsSkill(question, drill);
+    if (skill) trackBasics("brushup_shown", exam.id, drill.key, { skill: skill.id });
+  }, [drill, question, revealed, answer, exam.id]);
+
   const check = (value?: AnswerValue) => {
     if (!question || revealed) return;
     const final = value ?? answer;
@@ -117,6 +126,13 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     guestPrompt.record(ok);
     recordClassAnswerById(exam.id, question.id, question.domain, ok, v2Pick(question.format, final));
     answerDrill(key, question.id, ok, drill ? drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions) : undefined);
+    if (drill?.basics?.length) {
+      // Basics usage (lib/v2/basicsTracking): did they learn a skill of this drill first?
+      const basicsFirst = basicsDone(useV2Store.getState().basics, exam.id, basicsFor(drill)) > 0;
+      trackBasics("exam_start", exam.id, drill.key, { basicsFirst });
+      const after = drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions);
+      if (allQuestions.length > 0 && allQuestions.every((q) => after.masteredIds.includes(q.id))) trackBasics("drill_mastered", exam.id, drill.key, { basicsFirst });
+    }
     if (ok) playCorrectSound();
     else {
       playIncorrectSound();
@@ -201,7 +217,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
           {missedSkill && !guestPrompt.showing && (
             <div className="v2-pop mt-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3">
               <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Brush up on the basics</div>
-              <button type="button" onClick={() => setBrushUp(true)} className="v2-tap mt-1 flex w-full items-center gap-3 text-left">
+              <button type="button" onClick={() => { setBrushUp(true); trackBasics("brushup", exam.id, drill.key, { skill: missedSkill.id }); }} className="v2-tap mt-1 flex w-full items-center gap-3 text-left">
                 {hasExplainer(missedSkill) ? <Play className="h-5 w-5 shrink-0 text-brand-dark" /> : <BookOpen className="h-5 w-5 shrink-0 text-brand-dark" />}
                 <span className="min-w-0 flex-1">
                   <span className="block text-[17px] font-bold text-gray-900 dark:text-gray-50">{missedSkill.name}</span>

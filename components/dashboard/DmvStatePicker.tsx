@@ -73,7 +73,7 @@ export function DmvStateLine() {
       <Select onValueChange={choose} value={selectedState}>
         <SelectTrigger
           aria-label={`${t("common.change")} (${name})`}
-          className="w-auto h-auto p-0 border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand-dark font-medium text-xs gap-1 flex-shrink-0"
+          className="w-auto h-auto px-0 py-1 -my-1 border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand-dark font-medium text-xs gap-1 flex-shrink-0"
         >
           {t("common.change")}
         </SelectTrigger>

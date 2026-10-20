@@ -505,7 +505,11 @@ function DashboardContent() {
                 <div className="mt-1.5">
                   <ProgressCard
                     key={`test-${id}`}
-                    title={`🎯 ${t(`practiceTests.${id}`)}`}
+                    title={
+                      <span>
+                        <span aria-hidden="true">🎯</span> {t(`practiceTests.${id}`)}
+                      </span>
+                    }
                     subtitle={testSubtitle}
                     completed={testCompleted}
                     stepNumber={(id - 1) * 2 + 2}

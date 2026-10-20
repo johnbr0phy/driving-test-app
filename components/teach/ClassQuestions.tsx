@@ -28,7 +28,8 @@ export function untrackedNote(picks: number[], missed: number): string | null {
 // counts), the class's counts and the explanation.
 const QUESTIONS_SHOWN = 10;
 
-export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] }) {
+export function ClassQuestions({ questions, headingLevel = 2 }: { questions: ClassQuestionRow[]; headingLevel?: 2 | 3 }) {
+  const Heading = headingLevel === 3 ? "h3" : "h2";
   const [sort, setSort] = useState<"missed" | "accuracy">("missed");
   const [showAll, setShowAll] = useState(false);
   const sorted = [...questions].sort((a, b) =>
@@ -41,7 +42,7 @@ export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] })
   return (
     <div>
       <div className="flex flex-wrap items-center gap-2 mb-3">
-        <h2 className="font-semibold text-gray-900 dark:text-gray-50 mr-2">Questions</h2>
+        <Heading className="font-semibold text-gray-900 dark:text-gray-50 mr-2">Questions</Heading>
         {([["missed", "Most missed"], ["accuracy", "Lowest accuracy"]] as const).map(([key, label]) => (
           <button
             key={key}

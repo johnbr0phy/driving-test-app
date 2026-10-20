@@ -196,7 +196,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
             </ul>
           </div>
           <div className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-4 md:p-5 shadow-xl">
-            <ClassQuestions questions={SAMPLE_QUESTIONS} />
+            <ClassQuestions questions={SAMPLE_QUESTIONS} headingLevel={3} />
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">Sample class. Tap a question.</p>
           </div>
         </div>

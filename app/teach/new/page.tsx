@@ -4,7 +4,7 @@
 // for real estate and insurance, or national), name the class, and say how
 // students know you. ?exam=<catalog id> preselects a test (from /teach).
 
-import { Suspense, useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Check, Search } from "lucide-react";
@@ -50,10 +50,24 @@ function NewClassForm() {
     .map((g) => ({ ...g, exams: g.exams.filter((e) => !q || `${e.name} ${e.org}`.toLowerCase().includes(q)) }))
     .filter((g) => g.exams.length);
 
+  const matchCount = filtered.reduce((n, g) => n + g.exams.length, 0);
+
+  // The control that had focus goes away on pick (the list) and on Change (the
+  // card), so focus moves to what replaced it.
+  const changeRef = useRef<HTMLButtonElement | null>(null);
+  const searchRef = useRef<HTMLInputElement | null>(null);
+  const [focusTo, setFocusTo] = useState<"change" | "search" | null>(null);
+  useEffect(() => {
+    if (focusTo === "change") changeRef.current?.focus();
+    if (focusTo === "search") searchRef.current?.focus();
+    if (focusTo) setFocusTo(null);
+  }, [focusTo]);
+
   const pick = (e: ClassExamChoice) => {
     setChoice(e);
     setStateKey("");
     setError("");
+    setFocusTo("change");
   };
 
   const submit = async (e: React.FormEvent) => {
@@ -94,13 +108,25 @@ function NewClassForm() {
         <form onSubmit={submit} className="space-y-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6">
           <div>
             <p className={fieldClass}>Test</p>
+            <p className="sr-only" aria-live="polite">
+              {!choice && q ? (matchCount === 1 ? "1 test matches" : `${matchCount} tests match`) : ""}
+            </p>
             {choice ? (
               <div className="flex items-center justify-between gap-3 rounded-xl border-2 border-gray-900 dark:border-gray-50 px-4 py-3">
                 <div className="min-w-0">
                   <p className="font-semibold text-gray-900 dark:text-gray-50">{choice.name}</p>
                   <p className="text-xs text-gray-500 dark:text-gray-400">{choice.org}</p>
                 </div>
-                <button type="button" onClick={() => setChoice(null)} aria-label={`Change test (${choice.name})`} className="text-sm underline text-gray-700 dark:text-gray-200 flex-shrink-0">
+                <button
+                  ref={changeRef}
+                  type="button"
+                  onClick={() => {
+                    setChoice(null);
+                    setFocusTo("search");
+                  }}
+                  aria-label={`Change test (${choice.name})`}
+                  className="-my-1 py-1 text-sm underline text-gray-700 dark:text-gray-200 flex-shrink-0"
+                >
                   Change
                 </button>
               </div>
@@ -109,6 +135,7 @@ function NewClassForm() {
                 <div className="relative border-b border-gray-200 dark:border-gray-800">
                   <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" aria-hidden="true" />
                   <input
+                    ref={searchRef}
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="Search: surgical tech, NCLEX, SAT, real estate…"

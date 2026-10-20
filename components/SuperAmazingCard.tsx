@@ -113,7 +113,7 @@ export function SuperAmazingCard({ dashboardKey, allComplete, totalSteps }: { da
             superAmazing && samUnlocked
               ? "bg-brand"
               : samUnlocked
-                ? "bg-gray-200 dark:bg-gray-700"
+                ? "bg-gray-200 ring-1 ring-inset ring-gray-500 dark:bg-gray-700 dark:ring-gray-400"
                 : "bg-gray-100 dark:bg-gray-800 cursor-not-allowed"
           }`}
         >

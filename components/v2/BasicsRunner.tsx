@@ -81,6 +81,15 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     if (picked !== null) nextRef.current?.focus({ preventScroll: true });
   }, [picked]);
 
+  // Next (or the learn screen's button) goes away when a question comes up,
+  // so focus moves to the new prompt. `turn` counts questions shown, so a
+  // retried question that comes straight back still gets focus.
+  const promptRef = useRef<HTMLDivElement | null>(null);
+  const [turn, setTurn] = useState(0);
+  useEffect(() => {
+    if (turn > 0) promptRef.current?.focus({ preventScroll: true });
+  }, [turn]);
+
   // Basics of a Premium drill is gated like its questions, unless they are already in it.
   const premiumDrill = !!drill && !!exam.premium?.lockedDrills.includes(drill.key);
   if (!hydrated || !drill || !skill || (premiumDrill && !premiumReady)) {
@@ -109,6 +118,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setCurrent(r.queue[0]);
     setPicked(null);
     setScreen("question");
+    setTurn((n) => n + 1);
   };
 
   const start = () => {
@@ -265,7 +275,9 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
         <div className="mx-auto flex max-w-2xl flex-col gap-4 px-4 py-5">
           {run.retried.includes(current) && !revealed && <div className="text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-300">Back for another try</div>}
           {q.passage && <Passage text={q.passage} />}
-          <Prompt q={q} revealed={revealed} punct={punct} />
+          <div ref={promptRef} tabIndex={-1} className="outline-none">
+            <Prompt q={q} revealed={revealed} punct={punct} />
+          </div>
           {table && <DataTable table={table} />}
           <div className="flex flex-col gap-2.5">
             {order.map((i) => {

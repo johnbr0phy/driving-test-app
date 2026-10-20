@@ -5,12 +5,14 @@ import Link from "next/link";
 import { Check, Copy, GraduationCap, X } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { getMemberships } from "@/lib/classProgress";
+import { trackTeachNudge } from "@/lib/teachTracking";
 
 // A footer row inside a dashboard hero that tells students teachers can run
 // free classes at /teach. It appears on the first dashboard view after a step
 // turns green, only on exams people usually study for with an instructor
 // (DMV and the self-study tests are left out). X hides it until the next
 // green step; a copy or a tap on the link, or a third close, ends it for good.
+// Shown, copied and tapped are counted for the /admin Teachers tab (lib/teachTracking).
 // Never shown to class members or to teachers. Device-local, never synced.
 
 // Families by id; state versions count as their family (variantOf).
@@ -76,11 +78,17 @@ export function TeachNudge({ dashboardKey, examId, done }: { dashboardKey: strin
     if (done > seen || baselining.current) write({ ...state, seen: { ...state.seen, [dashboardKey]: Math.max(seen, done) } });
     if (baselining.current || state.done || getMemberships().length > 0 || isTeacher(user?.uid)) return;
     setShow(true);
+    trackTeachNudge("shown", examId);
   }, [dashboardKey, examId, done, user?.uid]);
 
   if (!show) return null;
 
   const finish = () => write({ ...read(), done: true });
+
+  const tapLink = () => {
+    trackTeachNudge("link", examId);
+    finish();
+  };
 
   const close = () => {
     const state = read();
@@ -106,6 +114,7 @@ export function TeachNudge({ dashboardKey, examId, done }: { dashboardKey: strin
       if (!ok) return;
     }
     setCopied(true);
+    trackTeachNudge("copy", examId);
     finish();
   };
 
@@ -116,7 +125,7 @@ export function TeachNudge({ dashboardKey, examId, done }: { dashboardKey: strin
         <p className="flex-1 min-w-0 text-gray-600 dark:text-gray-300 leading-snug">
           <span className="font-semibold text-gray-900 dark:text-gray-50">Enjoying TigerTest?</span> Teachers can use it free with
           their classes. Tell yours about{" "}
-          <Link href={LINK} onClick={finish} className="font-semibold text-brand-dark underline-offset-2 hover:underline">
+          <Link href={LINK} onClick={tapLink} className="font-semibold text-brand-dark underline-offset-2 hover:underline">
             tigertest.io/teach
           </Link>
         </p>

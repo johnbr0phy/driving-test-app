@@ -8,13 +8,15 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free ACCUPLACER Practice Test 2026 - Reading, Writing & Math Placement";
+const title = "Free ACCUPLACER Practice Test 2026 - Reading & Math";
+const metaDescription =
+  "Free ACCUPLACER practice tests: 200 Next-Gen questions on reading, writing, arithmetic, QAS and advanced algebra, with the key step on every math answer.";
 const description =
   "Free Next-Generation ACCUPLACER practice tests with 200 questions across reading passages, writing and sentence revision, arithmetic, quantitative reasoning, algebra and statistics, and advanced algebra and functions. The key step is shown on every math answer.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "ACCUPLACER practice test, ACCUPLACER math practice, ACCUPLACER reading practice test, ACCUPLACER writing practice, Next-Generation ACCUPLACER, college placement test practice 2026, free ACCUPLACER practice test",
   alternates: {
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/accuplacer-practice-test`,
     images: [{ url: "/og/accuplacer", width: 1200, height: 630, alt: "TigerTest free ACCUPLACER practice test" }],
     siteName: "TigerTest",
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/accuplacer"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

@@ -8,13 +8,15 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Notary Practice Test 2026 - Notary Public Exam Prep";
+const title = "Free Notary Practice Test 2026 - Notary Public Exam";
+const metaDescription =
+  "Free notary public practice tests: 200 questions on acknowledgments, jurats, oaths, identifying signers, the journal and seal, and prohibited acts, explained.";
 const description =
   "Free notary public practice tests with 200 questions on the notary law every state tests: acknowledgments, jurats, oaths and affirmations, identifying signers, the journal and seal, prohibited acts, fees, the commission and liability. Scenario questions with explanations.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "notary practice test, notary public exam practice questions, notary exam prep 2026, California notary practice test, New York notary practice exam, notary test questions, free notary practice test, notary study guide",
   alternates: {
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/notary-practice-test`,
     images: [{ url: "/og/notary", width: 1200, height: 630, alt: "TigerTest free Notary practice test" }],
     siteName: "TigerTest",
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/notary"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

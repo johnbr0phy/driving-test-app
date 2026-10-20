@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free AWS Cloud Practitioner Practice Test 2026 - CLF-C02 Exam Prep";
+const title = "Free AWS Cloud Practitioner Practice Test 2026";
+const metaDescription =
+  "Free AWS Cloud Practitioner CLF-C02 practice tests: 200 questions on cloud concepts, security and IAM, core services, and billing and pricing, all explained.";
 const description =
   "Free AWS Certified Cloud Practitioner (CLF-C02) practice tests with 200 questions weighted to the exam guide: cloud concepts and the Well-Architected Framework, security and compliance with the shared responsibility model and IAM, core compute, storage, database and networking services, and billing, pricing and support plans.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "AWS Cloud Practitioner practice test, CLF-C02 practice exam, AWS certified cloud practitioner questions, AWS CCP exam prep 2026, free AWS practice test, AWS certification practice questions, cloud practitioner sample questions",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/aws-cloud-practitioner-practice-test`,
     images: [{ url: "/og/aws", width: 1200, height: 630, alt: "TigerTest free AWS CCP practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/aws"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

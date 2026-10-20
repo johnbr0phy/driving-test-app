@@ -10,13 +10,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free OSHA 10 Practice Test 2026 - Construction & General Industry";
+const title = "Free OSHA 10 Practice Test 2026 - 10-Hour Final Exam";
+const metaDescription =
+  "Free OSHA 10 practice tests: 200 questions on worker rights, the Focus Four hazards, HazCom, PPE and fire safety, for construction and general industry.";
 const description =
   "Free OSHA 10 practice tests with 200 questions on the Outreach Training Program topics: worker rights, the Focus Four (falls, electrocution, struck-by, caught-in), hazard communication and PPE, health hazards, tools and fire safety. Every answer cites the rule in plain words.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "OSHA 10 practice test, OSHA 10 final exam questions, OSHA 10 hour construction practice test, OSHA 10 general industry practice test, OSHA 30 practice questions, Focus Four quiz, free OSHA 10 practice test 2026",
   alternates: {
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/osha-10-practice-test`,
     images: [{ url: "/og/osha", width: 1200, height: 630, alt: "TigerTest free OSHA 10 practice test" }],
     siteName: "TigerTest",
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/osha"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Food Manager Practice Test 2026 - ServSafe Manager & CFPM Exam Prep";
+const title = "Free Food Manager Practice Test 2026 - CFPM Exam";
+const metaDescription =
+  "Free food manager practice tests: 200 FDA Food Code questions for the CFPM exam, from the flow of food and temperatures to HACCP. ServSafe Manager prep too.";
 const description =
   "Free certified food protection manager practice tests with 200 questions on the FDA Food Code: foodborne illness and contamination, the flow of food, time and temperature control, personal hygiene, cleaning and sanitizing, facilities and pests, and HACCP. Prep for ServSafe Manager, NRFSP, Prometric and StateFoodSafety exams.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "food manager practice test, ServSafe manager practice test, certified food protection manager exam, CFPM practice questions, food safety manager test 2026, NRFSP practice test, food handler manager certification, free ServSafe practice test",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/food-manager-practice-test`,
     images: [{ url: "/og/foodmgr", width: 1200, height: 630, alt: "TigerTest free Food Safety practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/foodmgr"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

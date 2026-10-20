@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free EKG Technician Practice Test 2026 - NHA CET Exam Prep";
+const title = "Free EKG Technician Practice Test 2026 - NHA CET";
+const metaDescription =
+  "Free EKG technician practice tests: 200 questions on the NHA CET test plan, from lead placement and artifacts to rhythm analysis and patient safety.";
 const description =
   "Free EKG technician practice tests with 200 questions weighted to the NHA CET test plan: EKG acquisition and lead placement, artifacts, Holter and stress testing, safety and patient care, and rhythm analysis and interpretation. Instant feedback with explanations.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "EKG technician practice test, NHA CET practice test, CET exam questions, EKG certification practice exam, ECG technician test prep 2026, EKG rhythm quiz, free EKG practice questions",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/ekg-technician-practice-test`,
     images: [{ url: "/og/cet", width: 1200, height: 630, alt: "TigerTest free EKG practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/cet"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

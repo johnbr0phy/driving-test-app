@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free USCIS 2025 Civics Test Practice - 200 Study Items";
+const title = "Free US Citizenship Test Practice - 2025 Civics Test";
+const metaDescription =
+  "Free practice for the 2025 USCIS civics test: 200 multiple-choice items with explanations. Review the official questions before your citizenship interview.";
 const description =
   "Free multiple-choice study for the 2025 USCIS civics test. Use 200 adapted items with explanations. Review the official questions and your local answers before the oral interview.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "citizenship test practice, civics test practice, USCIS civics test 2025, naturalization test questions, 128 civics questions, US citizenship test questions and answers, N-400 civics test",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/citizenship-test`,
     images: [{ url: "/og/civics", width: 1200, height: 630, alt: "TigerTest free Citizenship practice test" }],
     siteName: "TigerTest",
@@ -33,9 +35,33 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/civics"],
     title,
-    description,
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the US citizenship civics test?",
+    a: "On the 2025 test the officer asks up to 20 questions from the official list of 128, and you must answer 12 correctly. The test stops as soon as you reach 12 correct or 9 incorrect. Applications filed before October 20, 2025 take the 2008 version: 10 questions from 100, 6 to pass.",
+  },
+  {
+    q: "Is the civics test multiple choice?",
+    a: "No. The USCIS civics test is oral. TigerTest uses adapted multiple-choice study items. Practice saying the required answers without the options. Review the official list and prepare your own current and local answers.",
+  },
+  {
+    q: "What is the 65/20 exception?",
+    a: "Qualifying applicants age 65 or older with at least 20 years as lawful permanent residents study the 20 starred questions from their applicable 2008 or 2025 list. Check the filing-time eligibility rules with USCIS. You are asked 10 and need 6 correct, and may use your chosen language. TigerTest does not provide a dedicated 65/20 mode.",
+  },
+  {
+    q: "Do the answers change?",
+    a: "Some answers depend on who holds office at your interview. Check the President, Vice President, Speaker, Chief Justice, your senator, your U.S. representative, and your governor. Also learn your state capital. TigerTest uses D.C. or territory examples for the four local questions; prepare your own answers using USCIS resources.",
+  },
+  {
+    q: "Is the TigerTest citizenship practice test free?",
+    a: "Yes. All four practice tests and all four training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -60,38 +86,11 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "How many questions are on the US citizenship civics test?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "On the 2025 civics test the USCIS officer asks up to 20 questions from the official list of 128, and you must answer 12 correctly. The test stops as soon as you reach 12 correct or 9 incorrect. It applies to naturalization applications filed on or after October 20, 2025; earlier applicants take the 2008 version with 100 questions, 10 asked and 6 to pass.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the civics test multiple choice?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "No. The USCIS civics test is oral. TigerTest uses adapted multiple-choice study items. Practice saying the required answers without the options, and check the official list for current and local answers.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is the 65/20 exception?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "USCIS gives special consideration to qualifying applicants age 65 or older with at least 20 years as lawful permanent residents. Check the filing-time eligibility rules. Use the 20 starred questions from your applicable 2008 or 2025 list. You are asked 10 and need 6 correct, and may use your chosen language. TigerTest does not provide a dedicated 65/20 mode.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Do the answers change?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Some answers depend on who holds office at your interview. Check the President, Vice President, Speaker, Chief Justice, your senator, your U.S. representative, and your governor. Also learn your state capital. TigerTest uses D.C. or territory examples for the four local questions; prepare your own answers using USCIS resources.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
         classFaqJsonLd("civics"),
       ],
     },
@@ -270,39 +269,12 @@ export default function CitizenshipLandingPage() {
           Citizenship Test Frequently Asked Questions
         </h2>
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the US citizenship civics test?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              On the 2025 test the officer asks up to 20 questions from the official list of 128, and you
-              must answer 12 correctly. The test stops as soon as you reach 12 correct or 9 incorrect.
-              Applications filed before October 20, 2025 take the 2008 version: 10 questions from 100,
-              6 to pass.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the civics test multiple choice?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              No. The USCIS civics test is oral. TigerTest uses adapted multiple-choice study items.
-              Practice saying the required answers without the options. Review the official list
-              and prepare your own current and local answers.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is the 65/20 exception?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Qualifying applicants age 65 or older with at least 20 years as lawful permanent residents
-              study the 20 starred questions from their applicable 2008 or 2025 list. Check the
-              filing-time eligibility rules with USCIS. You are asked 10 and need 6 correct, and may
-              use your chosen language. TigerTest does not provide a dedicated 65/20 mode.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest citizenship practice test free?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all four training sets are free, with no account required.
-              Create a free account if you want your progress saved across devices.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
+            </div>
+          ))}
           <ExamClassFaq examId="civics" />
         </div>
       </div>

@@ -7,6 +7,8 @@ import Link from "next/link";
 // page's FAQPage graph; keep the two in step.
 
 const TEACHES: Record<string, string> = {
+  // The DMV landing (/dmv-practice-test)
+  dmv: "driver's ed or run a driving school",
   // Healthcare programs
   cst: "a surgical technology program",
   crcst: "a sterile processing program",
@@ -72,7 +74,7 @@ export function ExamClassFaq({ examId }: { examId: string }) {
       <p className="text-gray-600 dark:text-gray-300">
         Yes, for free.{" "}
         <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">
-          Make a class
+          Make a class at tigertest.io/teach
         </Link>
         {ANSWER_REST}
       </p>

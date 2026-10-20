@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free ASVAB Practice Test 2026 - AFQT and All 8 Subtests";
+const title = "Free ASVAB Practice Test 2026 - AFQT & All 8 Subtests";
+const metaDescription =
+  "Free ASVAB practice tests with 200 questions across all 8 written subtests, weighted toward the AFQT, with the key step shown on every math answer. No account.";
 const description =
   "Free ASVAB practice tests with 200 questions across eight subtests: Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension, Mathematics Knowledge, General Science, Electronics, Auto and Shop, and Mechanical Comprehension. Extra weight on the four AFQT sections, with the key step shown on every math answer.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "ASVAB practice test, free ASVAB practice test, AFQT practice test, ASVAB arithmetic reasoning practice, ASVAB word knowledge practice, ASVAB math knowledge practice, ASVAB paragraph comprehension, ASVAB test prep 2026",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/asvab-practice-test`,
     images: [{ url: "/og/asvab", width: 1200, height: 630, alt: "TigerTest free ASVAB practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/asvab"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

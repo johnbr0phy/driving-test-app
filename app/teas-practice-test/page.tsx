@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free TEAS Practice Test 2026 - ATI TEAS 7 Nursing Entrance Exam Prep";
+const title = "Free TEAS Practice Test 2026 - ATI TEAS 7 Exam Prep";
+const metaDescription =
+  "Free ATI TEAS 7 practice tests: 200 questions across reading, math, science and English, with worked math solutions and an explanation on every answer.";
 const description =
   "Free ATI TEAS 7 practice tests with 200 questions across all four sections: reading with passages, mathematics with worked solutions, science with anatomy and physiology, biology, chemistry and scientific reasoning, and English and language usage. Instant feedback with explanations.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "TEAS practice test, ATI TEAS 7 practice test, TEAS exam prep 2026, TEAS science practice questions, TEAS math practice, nursing school entrance exam practice, free TEAS practice test, TEAS reading practice",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/teas-practice-test`,
     images: [{ url: "/og/teas", width: 1200, height: 630, alt: "TigerTest free TEAS practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/teas"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

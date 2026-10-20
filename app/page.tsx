@@ -16,22 +16,23 @@ export const revalidate = 3600;
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 const examCount = TEST_CATALOG.length;
 
-const title = `TigerTest: Free Practice Tests for ${examCount} Exams - DMV, SAT, ACT, Nursing & More`;
+const title = `TigerTest: Free Practice Tests for ${examCount} Exams - DMV, SAT & More`;
 const description = `Free practice tests for ${examCount} exams: the DMV permit test in all 50 states, SAT, ACT, CDL, nursing and healthcare certifications, IT certs, real estate, insurance and more. Every answer explained. No account needed.`;
+const metaDescription = `Free practice tests for ${examCount} exams: the DMV permit test in every state, SAT, ACT, CDL, nursing, IT, real estate and more. Every answer explained.`;
 
 export const metadata: Metadata = {
   title: { absolute: title },
-  description,
+  description: metaDescription,
   alternates: { canonical: siteUrl },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: siteUrl,
     siteName: "TigerTest",
     type: "website",
     images: [{ url: "/og-tests.png", width: 1200, height: 630, alt: `TigerTest: ${examCount} free practice tests` }],
   },
-  twitter: { card: "summary_large_image", title, description, images: ["/og-tests.png"] },
+  twitter: { card: "summary_large_image", title, description: metaDescription, images: ["/og-tests.png"] },
 };
 
 const faqs = [

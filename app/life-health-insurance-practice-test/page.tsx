@@ -79,13 +79,15 @@ const statePractice = [
   // end batch 2
 ];
 
-const title = "Free Life and Health Insurance Practice Test 2026 - License Exam Prep";
+const title = "Free Life and Health Insurance Practice Test 2026";
+const metaDescription =
+  "Free life and health insurance practice tests: 200 questions on the general portion of the license exam, from policies and riders to annuities and Medicare.";
 const description =
   "Free life and health insurance license practice tests with 200 questions on the general portion every state tests: insurance concepts and regulation, life insurance policies, provisions and riders, annuities and taxation, health insurance basics, provisions and policy types including disability, Medicare supplement and long-term care.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "life and health insurance practice test, insurance license exam prep, life insurance exam practice questions, health insurance license test 2026, life accident and health exam, free insurance practice exam, insurance producer exam",
   alternates: {
@@ -93,7 +95,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/life-health-insurance-practice-test`,
     images: [{ url: "/og/insurance", width: 1200, height: 630, alt: "TigerTest free Insurance practice test" }],
     siteName: "TigerTest",
@@ -103,7 +105,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/insurance"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

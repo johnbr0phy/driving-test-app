@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free ACT Practice Test 2026 - Full-Length, Timed, Enhanced Format";
+const title = "Free ACT Practice Test 2026 - Full-Length & Timed";
+const metaDescription =
+  "Free full-length ACT practice test in the enhanced format: English, Math, Reading and Science, timed by section, with a 1-36 score estimate and skill drills.";
 const description =
   "A free full-length ACT practice test in the enhanced 2025 format: English, Math, Reading and Science with real passages and section timing, four answer choices, and a 1 to 36 score estimate with a composite. Eleven skill drills, one per ACT reporting category and sized for your phone, bring every miss back until you master it. Practice Test 2 and the last drill in each section are a one-time $9.99.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "ACT practice test, free ACT practice test, full length ACT practice test, enhanced ACT practice, ACT English practice, ACT math practice, ACT reading practice, ACT science practice, ACT score calculator, ACT prep 2026",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/act-practice-test`,
     images: [{ url: "/og/act", width: 1200, height: 630, alt: "TigerTest free ACT practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/act"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free CCMA Practice Test 2026 - NHA Clinical Medical Assistant Exam Prep";
+const title = "Free CCMA Practice Test 2026 - NHA Medical Assistant";
+const metaDescription =
+  "Free CCMA practice tests: 200 questions on the NHA test plan, from vitals and patient care to phlebotomy, EKG, infection control and medical law.";
 const description =
   "Free CCMA practice tests with 200 questions weighted to the NHA CCMA test plan: vitals and intake, general patient care, infection control, lab and point-of-care testing, phlebotomy, EKG, care coordination, administrative assisting, communication, and medical law and ethics. Instant feedback with explanations.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "CCMA practice test, NHA CCMA practice exam, clinical medical assistant exam questions, medical assistant certification practice test, CCMA exam prep 2026, free CCMA practice questions, medical assistant test",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/ccma-practice-test`,
     images: [{ url: "/og/ccma", width: 1200, height: 630, alt: "TigerTest free CCMA practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/ccma"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

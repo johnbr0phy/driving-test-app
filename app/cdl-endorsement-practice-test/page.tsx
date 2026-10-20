@@ -10,13 +10,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free CDL Endorsement Practice Tests 2026 - HazMat, Air Brakes, Tanker, Passenger";
+const title = "Free CDL Endorsement Practice Tests 2026 - HazMat";
+const metaDescription =
+  "Free CDL endorsement practice tests from the FMCSA manual: 200 questions on HazMat, air brakes, combination, tanker and passenger, with a set per endorsement.";
 const description =
   "Free CDL endorsement practice tests from the FMCSA manual: hazardous materials (H), air brakes, combination vehicles, tank vehicles (N) and passenger transport (P). 200 questions with a training set per endorsement and instant feedback.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "CDL hazmat practice test, hazardous materials endorsement test, CDL air brakes practice test, combination vehicles practice test, tanker endorsement practice test, passenger endorsement practice test, CDL endorsement test questions",
   alternates: {
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/cdl-endorsement-practice-test`,
     images: [{ url: "/og/cdlx", width: 1200, height: 630, alt: "TigerTest free CDL Endorsements practice test" }],
     siteName: "TigerTest",
@@ -35,9 +37,29 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/cdlx"],
     title,
-    description,
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the CDL HazMat test?",
+    a: "The hazardous materials endorsement knowledge test has 30 questions in most states, and you need 80 percent (24 correct) to pass. You also need a TSA security threat assessment with fingerprinting before the H endorsement is added.",
+  },
+  {
+    q: "Is air brakes an endorsement?",
+    a: "No, it is a restriction. Skip the air brakes knowledge test, or take your skills test in a vehicle without air brakes, and your CDL carries an L restriction that bars you from air-brake vehicles. The knowledge test has 25 questions and needs 80 percent.",
+  },
+  {
+    q: "Which endorsement tests do I need?",
+    a: "Combination vehicles for Class A. Tank (N) for liquid or gas cargo in tanks of 1,000 gallons or more. Passenger (P) for vehicles designed for 16 or more including the driver. Hazardous materials (H) for placarded loads; X combines N and H. Each test needs 80 percent.",
+  },
+  {
+    q: "Is the TigerTest endorsement practice free?",
+    a: "Yes. All five training sets and all four mixed practice tests are free, with no account required. Create a free account if you want your progress saved across devices.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -62,38 +84,11 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "How many questions are on the CDL HazMat test?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The hazardous materials endorsement knowledge test has 30 questions in most states and you need 80 percent, 24 correct, to pass. You also need a TSA security threat assessment with fingerprinting before the H endorsement is added to your license.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is air brakes an endorsement?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "No. Air brakes is a restriction, not an endorsement. If you skip the air brakes knowledge test, or take your skills test in a vehicle without air brakes, your CDL carries an L restriction that bars you from driving air-brake vehicles. The knowledge test has 25 questions and needs 80 percent.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Which endorsement tests do I need?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Combination vehicles is required for a Class A license. Tank vehicles (N) is for liquid or gas cargo in tanks of 1,000 gallons or more. Passenger (P) is for vehicles designed for 16 or more people including the driver. Hazardous materials (H) is for placarded loads; X combines N and H. Each knowledge test needs 80 percent.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the TigerTest endorsement practice free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. All five training sets and all four mixed practice tests are free, with no account required.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
         classFaqJsonLd("cdlx"),
       ],
     },
@@ -271,36 +266,12 @@ export default function CDLEndorsementsLandingPage() {
           CDL Endorsement Test Frequently Asked Questions
         </h2>
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the CDL HazMat test?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              30 questions in most states, 80 percent (24 correct) to pass. You also need a TSA
-              security threat assessment with fingerprinting before the H endorsement is added.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is air brakes an endorsement?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              No, it is a restriction. Skip the air brakes knowledge test, or take your skills test in a
-              vehicle without air brakes, and your CDL carries an L restriction that bars you from
-              air-brake vehicles. The knowledge test has 25 questions and needs 80 percent.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Which endorsement tests do I need?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Combination vehicles for Class A. Tank (N) for liquid or gas cargo in tanks of 1,000
-              gallons or more. Passenger (P) for vehicles designed for 16 or more including the driver.
-              Hazardous materials (H) for placarded loads; X combines N and H. Each test needs 80 percent.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest endorsement practice free?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. All five training sets and all four mixed practice tests are free, with no account
-              required. Create a free account if you want your progress saved across devices.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
+            </div>
+          ))}
           <ExamClassFaq examId="cdlx" />
         </div>
       </div>

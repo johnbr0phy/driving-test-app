@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Phlebotomy Practice Test 2026 - NHA CPT Exam Prep";
+const title = "Free Phlebotomy Practice Test 2026 - NHA CPT Exam";
+const metaDescription =
+  "Free phlebotomy practice tests: 200 questions on the NHA CPT test plan, from order of draw and routine collections to safety and processing. ASCP PBT too.";
 const description =
   "Free phlebotomy practice tests with 200 questions weighted to the NHA CPT test plan: routine blood collections, safety and compliance, patient preparation, processing and special collections. Order of draw, technique and complications with explanations. Also covers ASCP PBT and AMT RPT.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "phlebotomy practice test, NHA CPT practice test, phlebotomy exam questions, order of draw quiz, certified phlebotomy technician exam prep, ASCP PBT practice test, phlebotomy test 2026, free phlebotomy practice questions",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/phlebotomy-practice-test`,
     images: [{ url: "/og/phleb", width: 1200, height: 630, alt: "TigerTest free Phlebotomy practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/phleb"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free CompTIA Security+ Practice Test 2026 - SY0-701 Exam Prep";
+const title = "Free CompTIA Security+ Practice Test 2026 - SY0-701";
+const metaDescription =
+  "Free CompTIA Security+ SY0-701 practice tests: 200 scenario questions on threats, architecture, security operations and program management, with explanations.";
 const description =
   "Free CompTIA Security+ practice tests with 200 questions weighted to the SY0-701 objectives: general security concepts, threats, vulnerabilities and mitigations, security architecture, security operations, and security program management. Scenario questions with explanations.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "CompTIA Security+ practice test, Security+ SY0-701 practice exam, Security plus practice questions, SY0-701 exam prep 2026, free Security+ practice test, CompTIA Security+ questions",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/comptia-security-plus-practice-test`,
     images: [{ url: "/og/secplus", width: 1200, height: 630, alt: "TigerTest free Security+ practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/secplus"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

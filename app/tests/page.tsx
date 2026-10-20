@@ -5,9 +5,9 @@ import { TestCatalogGrid } from "@/components/TestCatalogGrid";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = `Free Practice Tests for ${TEST_CATALOG.length} Exams - DMV, CDL, Nursing, IT & More`;
+const title = `All Practice Tests: Browse ${TEST_CATALOG.length} Free Exams by Category`;
 const description =
-  "Free practice tests for DMV permits in all 50 states, CDL, motorcycle, citizenship, nursing and healthcare certifications, IT certs, real estate, insurance, notary and more. No account needed.";
+  "Browse every TigerTest practice test by category: DMV and CDL, nursing and healthcare, IT certs, trades, real estate, insurance, college entrance and more.";
 
 export const metadata: Metadata = {
   title,

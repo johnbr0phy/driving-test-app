@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
@@ -34,8 +34,7 @@ export function CDLHeader() {
   const displayPhotoURL = photoURL || user?.photoURL;
   // English unless this exam is offered in the person's language (CDL in
   // Spanish); a translated landing (/es/examen-practica-cdl) is in its own.
-  const { language, setLanguage } = useTranslation();
-  const router = useRouter();
+  const { language } = useTranslation();
   const exam = getExamById(theme.id);
   const landingLang = Object.entries(exam?.translations ?? {}).find(([, tr]) => tr.landingPath === pathname)?.[0] as
     | Language
@@ -43,17 +42,20 @@ export function CDLHeader() {
   const contentLang: Language = landingLang ?? (exam ? examLanguage(exam, language) : "en");
   const t = createT(contentLang);
   // A translated exam's landings carry the DMV homepage's language switcher:
-  // each language is its own URL, so picking one goes there (and sets the app
-  // language for the dashboard behind it).
+  // each language is its own URL, so each option is a real link there (crawlers
+  // follow it) and a click also sets the app language for the dashboard behind it.
   const onLanding = !!exam && (pathname === examLandingPath(exam) || !!landingLang);
   const landingLangs = exam ? examLanguages(exam) : [];
   const pageLang: Language = landingLang ?? "en";
-  const goToLanding = (lang: Language) => {
-    if (!exam) return;
-    setLanguage(lang);
-    const href = lang === "en" ? examLandingPath(exam) : exam.translations?.[lang as Exclude<Language, "en">]?.landingPath;
-    if (href && href !== pathname) router.push(href);
-  };
+  // The page's own language stays a button (it only sets the app language).
+  const landingHrefs: Partial<Record<Language, string>> = {};
+  if (exam) {
+    for (const lang of landingLangs) {
+      if (lang === pageLang) continue;
+      const href = lang === "en" ? examLandingPath(exam) : exam.translations?.[lang as Exclude<Language, "en">]?.landingPath;
+      if (href) landingHrefs[lang] = href;
+    }
+  }
 
   // State variants (/real-estate/ca) run their tests under the family's header.
   const variants = getExamVariants(theme.id);
@@ -76,7 +78,7 @@ export function CDLHeader() {
           <TestSwitcher />
           <ThemeToggle />
           {onLanding && landingLangs.length > 1 && (
-            <LanguageSwitcher languages={landingLangs} current={pageLang} onSelect={goToLanding} />
+            <LanguageSwitcher languages={landingLangs} current={pageLang} hrefs={landingHrefs} />
           )}
           {user ? (
             <>

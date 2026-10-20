@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Motorcycle Permit Practice Test 2026 - MSF Manual Questions";
+const title = "Free Motorcycle Permit Practice Test 2026 - MSF";
+const metaDescription =
+  "Free motorcycle permit practice tests: 200 questions from the MSF Motorcycle Operator Manual on gear, control, lane position, hazards and alcohol, explained.";
 const description =
   "Free motorcycle permit practice tests with 200 questions from the MSF Motorcycle Operator Manual that nearly every state test is written from. Gear, control, lane positioning, intersections, hazards and alcohol, with instant feedback.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "motorcycle permit practice test, motorcycle license test, motorcycle written test, MSF motorcycle operator manual, motorcycle DMV test, motorcycle endorsement test, motorcycle permit test questions",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/motorcycle-practice-test`,
     images: [{ url: "/og/moto", width: 1200, height: 630, alt: "TigerTest free Motorcycle practice test" }],
     siteName: "TigerTest",
@@ -33,9 +35,29 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/moto"],
     title,
-    description,
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the motorcycle permit test?",
+    a: "Most states ask 20 to 30 multiple-choice questions and require about 80 percent to pass, for example 20 of 25 in California. A few states let you skip the written test by completing an approved rider course.",
+  },
+  {
+    q: "What is the motorcycle permit test based on?",
+    a: "Nearly every state writes its motorcycle knowledge test from the Motorcycle Safety Foundation (MSF) Motorcycle Operator Manual, often reprinted as the state motorcycle handbook. TigerTest's 200 questions follow that manual chapter by chapter.",
+  },
+  {
+    q: "Does this cover my state's motorcycle laws?",
+    a: "It covers the riding knowledge that is the same everywhere: gear, control, positioning, intersections, hazards and alcohol. Helmet laws, permit restrictions and licensing steps vary by state, so check your state's motorcycle handbook for those.",
+  },
+  {
+    q: "Is the TigerTest motorcycle practice test free?",
+    a: "Yes. All four practice tests and all five training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -60,38 +82,11 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "How many questions are on the motorcycle permit test?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Most states ask 20 to 30 multiple-choice questions and require about 80 percent to pass, for example 20 of 25 in California. A few states let you skip the written test by completing an approved rider course.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is the motorcycle permit test based on?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Nearly every state writes its motorcycle knowledge test from the Motorcycle Safety Foundation (MSF) Motorcycle Operator Manual, often reprinted as the state motorcycle handbook. TigerTest's 200 questions follow that manual chapter by chapter.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the TigerTest motorcycle practice test free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. All four practice tests and all five training sets are free, with no account required.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does this cover my state's motorcycle laws?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The questions cover the riding knowledge that is the same everywhere: gear, control, positioning, intersections, hazards and alcohol. Helmet laws, permit restrictions and licensing steps vary by state, so check your state's motorcycle handbook for those.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
         classFaqJsonLd("moto"),
       ],
     },
@@ -269,37 +264,12 @@ export default function MotorcycleLandingPage() {
           Motorcycle Permit Test Frequently Asked Questions
         </h2>
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the motorcycle permit test?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Most states ask 20 to 30 multiple-choice questions and require about 80 percent to pass,
-              for example 20 of 25 in California. A few states let you skip the written test by
-              completing an approved rider course.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is the motorcycle permit test based on?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Nearly every state writes its test from the Motorcycle Safety Foundation (MSF) Motorcycle
-              Operator Manual, often reprinted as the state motorcycle handbook. These 200 questions
-              follow that manual chapter by chapter.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s motorcycle laws?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              It covers the riding knowledge that is the same everywhere: gear, control, positioning,
-              intersections, hazards and alcohol. Helmet laws, permit restrictions and licensing steps
-              vary by state, so check your state&apos;s motorcycle handbook for those.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest motorcycle practice test free?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all five training sets are free, with no account required.
-              Create a free account if you want your progress saved across devices.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
+            </div>
+          ))}
           <ExamClassFaq examId="moto" />
         </div>
       </div>

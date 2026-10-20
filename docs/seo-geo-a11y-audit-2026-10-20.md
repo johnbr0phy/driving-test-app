@@ -50,6 +50,12 @@ Three parallel static audits (technical SEO, GEO for AI answer engines, WCAG 2.2
 - `/stats` and exam stats "0"/"-" chips gray-300; ProgressCard puts an h3 inside a button; ClassQuestions h2 nested in an h2 on `/teach`; 🎯 emoji in DMV test titles read aloud; `TranslatedExamLanding` decorative tiger has `alt="TigerTest"`; Basics explainer struck words are color/line-through only.
 - DMV state OG image is 512x512 under a large card (left alone per the DMV state page rule).
 
+## Follow-up, same day
+
+Fixed from the open list: items 2 to 8 and most Low items. Titles are 65 chars or less and descriptions 160 or less on all 56 indexable non-state pages (a `metaDescription` per landing; JSON-LD keeps the long copy). FAQ JSON-LD matches visible text word for word on every landing (shared `faqs` arrays on 13 pages, DMV comparative claims replaced with repo facts, DMV question range now 18 to 50). The landing language switcher renders real links. `/tests` has its own title, `/teach/new` and `/teach/classes` drop the inherited canonical.
+
+Still open: item 1 (canonical host, Vercel setting), `<html lang>` on language pages, `ExamRelatedTests` and a localized answer block on translated landings (copy is English-only), the California online-test fact, DMV state OG image. The new DMV FAQ items 5 and 6 in `i18n/{es,vi,ko,zh}.ts` are machine translations.
+
 ## Checked and fine
 
 Sitemaps (189 URLs, no duplicates, nothing noindex or redirected), self-referencing canonicals, OG images, reciprocal hreflang with `x-default`, one h1 on all 64 landings, noindex on every app route, 404s for unknown slugs, no redirect chains, AI crawler access in `robots.ts`, `visitSource()` AI hosts, `examFacts` coverage and numbers, ExamFacts on every landing, homepage JSON-LD, no entities in JSON-LD, skip link and focus-visible, catalog flags, search labels, `lang` on translated content, overlays, no autoplay audio, image alts.

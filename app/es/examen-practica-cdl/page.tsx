@@ -16,12 +16,14 @@ const url = `${siteUrl}/es/examen-practica-cdl`;
 const enUrl = `${siteUrl}/cdl-practice-test`;
 
 const title = "Examen de Práctica CDL en Español 2026 - Gratis";
+const metaDescription =
+  "Examen de práctica CDL gratis en español: 600 preguntas de conocimientos generales con explicaciones y seis exámenes como el real. Sin cuenta.";
 const description =
   "Examen de práctica CDL gratis en español: 600 preguntas de conocimientos generales con explicaciones. Seis exámenes de 50 preguntas como el real y práctica por tema. Sin cuenta.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "examen CDL en español, examen de práctica CDL, licencia de manejo comercial, CDL conocimientos generales, preguntas del examen CDL, examen CDL gratis",
   alternates: {
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url,
     images: [{ url: "/og/cdl", width: 1200, height: 630, alt: "Examen de práctica CDL gratis de TigerTest" }],
     siteName: "TigerTest",
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/cdl"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

@@ -10,13 +10,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Forklift Certification Practice Test 2026 - OSHA Operator Exam";
+const title = "Free Forklift Certification Practice Test 2026 - OSHA";
+const metaDescription =
+  "Free forklift certification practice tests: 200 questions on OSHA 1910.178, from the stability triangle and inspections to pedestrians, ramps and docks.";
 const description =
   "Free forklift certification practice tests with 200 questions on OSHA 29 CFR 1910.178: truck classes and operator rules, the stability triangle and load capacity, pre-shift inspection, propane and battery safety, safe operation around pedestrians, and ramps, docks and trailers. Every answer explained.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "forklift certification practice test, forklift test questions and answers, OSHA forklift test, forklift operator written test, forklift license practice test, powered industrial truck test, free forklift practice test 2026",
   alternates: {
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/forklift-certification-practice-test`,
     images: [{ url: "/og/forklift", width: 1200, height: 630, alt: "TigerTest free forklift certification practice test" }],
     siteName: "TigerTest",
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/forklift"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

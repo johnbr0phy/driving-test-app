@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free CompTIA A+ Practice Test 2026 - 220-1201 & 220-1202 Exam Prep";
+const title = "Free CompTIA A+ Practice Test 2026 - 220-1201 & 1202";
+const metaDescription =
+  "Free CompTIA A+ practice tests: 200 scenario questions on the 220-1201 Core 1 and 220-1202 Core 2 objectives, from hardware and networking to security and OS.";
 const description =
   "Free CompTIA A+ practice tests with 200 questions weighted to the 220-1201 Core 1 and 220-1202 Core 2 objectives: mobile devices, networking, hardware, virtualization and cloud, hardware and network troubleshooting, operating systems, security, software troubleshooting and operational procedures. Scenario questions with explanations.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "CompTIA A+ practice test, A+ 220-1201 practice exam, A+ 220-1202 practice questions, CompTIA A+ Core 1 practice test, A+ Core 2 practice test, CompTIA A+ exam prep 2026, free A+ practice questions",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/comptia-a-plus-practice-test`,
     images: [{ url: "/og/aplus", width: 1200, height: 630, alt: "TigerTest free CompTIA A+ practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/aplus"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

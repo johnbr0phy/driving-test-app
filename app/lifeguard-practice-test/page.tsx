@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Lifeguard Practice Test 2026 - Certification Written Exam Prep";
+const title = "Free Lifeguard Practice Test 2026 - Written Exam Prep";
+const metaDescription =
+  "Free lifeguard practice tests: 200 questions on surveillance, recognizing drowning, water rescues, spinal injuries, first aid, CPR and AED. All explained.";
 const description =
   "Free lifeguard practice tests with 200 questions on surveillance and scanning, recognizing drowning, water rescues with a rescue tube, spinal injury management, first aid, CPR and AED, and facility safety and legal duties. Explanations on every question.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "lifeguard practice test, lifeguard certification test questions, lifeguard written exam practice, lifeguarding test prep 2026, lifeguard CPR AED practice questions, free lifeguard practice test",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/lifeguard-practice-test`,
     images: [{ url: "/og/lifeguard", width: 1200, height: 630, alt: "TigerTest free lifeguard practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/lifeguard"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

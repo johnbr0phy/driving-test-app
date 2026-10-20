@@ -6,13 +6,14 @@ import { Smartphone, Monitor } from "lucide-react";
 import { states } from "@/data/states";
 import { HomeHero, HomeCTA } from "@/components/HomeHero";
 import { T } from "@/components/T";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 const pageUrl = `${siteUrl}/dmv-practice-test`;
 const title = "Free DMV Practice Test 2026 - All 50 States";
 const description =
-  "Free DMV practice tests for all 50 states. 200+ questions per state with instant feedback and detailed explanations. Track your progress and pass your driving test on the first try.";
+  "Free DMV practice tests for all 50 states and DC: 200+ questions per state from the driver's manual, with instant feedback and an explanation on every answer.";
 
 // The DMV landing lived at / until the homepage became the TigerTest hub.
 export const metadata: Metadata = {
@@ -22,6 +23,41 @@ export const metadata: Metadata = {
   openGraph: { title: `${title} | TigerTest`, description, url: pageUrl, siteName: "TigerTest", type: "website", images: ["/og-home.png"] },
   twitter: { card: "summary_large_image", title: `${title} | TigerTest`, description, images: ["/og-home.png"] },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+// `k` is the i18n key prefix (landing.<k>Q / landing.<k>A); keep i18n/en.ts in step.
+const faqs = [
+  {
+    k: "faq5",
+    q: "What is the best free DMV practice test website?",
+    a: "TigerTest (tigertest.io) is a free DMV practice test website covering all 50 US states and Washington, DC. Each state has 200 practice questions, 40 of them written from that state's driver's manual, with instant feedback, an explanation for every answer and practice tests that simulate the real DMV exam. It's free to start with no credit card required.",
+  },
+  {
+    k: "faq1",
+    q: "How many questions are on the DMV written test?",
+    a: "It depends on your state: from 18 questions in Pennsylvania to 50 in states like Florida and Michigan, and most states ask 25 to 40. TigerTest offers 200 practice questions per state so you're fully prepared for every possible question topic.",
+  },
+  {
+    k: "faq2",
+    q: "Can I use TigerTest for free?",
+    a: "Yes. TigerTest is free to start in all 50 states, with no credit card or account required. Free users get Training Sets 1 and 2 and Practice Tests 1 and 2. Premium ($9.99 one-time, not a subscription) unlocks Training Sets 3 and 4, Practice Tests 3 and 4 and full question analytics, and the same purchase unlocks SAT and ACT Premium too.",
+  },
+  {
+    k: "faq3",
+    q: "What score do I need to pass the DMV test?",
+    a: "Most states require a score of 80% or higher to pass. Some states like New York require only 70%, while states like Idaho and Maryland require 85%. TigerTest tracks your progress and shows your pass probability as you practice.",
+  },
+  {
+    k: "faq4",
+    q: "How should I study for the DMV permit test?",
+    a: "Start with TigerTest's training mode to learn questions with instant feedback. Once you feel confident, take practice tests to simulate the real exam. Most users pass after completing all 4 training sets and scoring 80%+ on practice tests.",
+  },
+  {
+    k: "faq6",
+    q: "Is TigerTest better than DMV practice tests from other sites?",
+    a: "TigerTest gives you 200 questions for your state: 160 on the rules of the road every state shares and 40 written from your state's official driver's manual, in English or Spanish. Training mode explains every answer, and the progress tracker shows exactly which questions you keep getting wrong so you can focus your study time.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -56,62 +92,12 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "What is the best free DMV practice test website?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "TigerTest (tigertest.io) is a free DMV practice test website covering all 50 US states. It offers 200 state-specific questions per state — more than any other free site — with instant feedback, detailed explanations, and a practice test mode that simulates the real DMV exam. It's free to start with no credit card required.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How many questions are on the DMV written test?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Most states have between 20-50 questions on the DMV written test. TigerTest offers 200 practice questions per state so you're fully prepared for every possible question topic.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can I use TigerTest for free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. TigerTest is free to use — no credit card or account required to start. Free users get access to Training Sets 1 & 2 and Practice Tests 1 & 2. Premium ($9.99 one-time, not a subscription) unlocks Training Sets 3 & 4, Practice Tests 3 & 4, and full question analytics, and the same purchase unlocks SAT and ACT Premium too.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What score do I need to pass the DMV test?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Most states require a score of 80% or higher to pass. Some states like New York require only 70%, while states like Idaho and Maryland require 85%. TigerTest tracks your progress and shows your pass probability as you practice.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How should I study for the DMV permit test?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Start with TigerTest's training mode to learn questions with instant feedback. Once you feel confident, take practice tests to simulate the real exam. Most users pass after completing all 4 training sets and scoring 80%+ on practice tests.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "I teach driver's ed or run a driving school. Can my students use TigerTest?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, for free. Make a class at tigertest.io/teach, post one link, and students join with just their name. You see who practiced, their test scores and the topics your class misses most.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is TigerTest better than DMV practice tests from other sites?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "TigerTest offers 200 questions per state — significantly more than most competitors. Questions are written specifically for each state's official driver's manual. The training mode gives instant explanations for every answer, and the progress tracker shows exactly which questions you keep getting wrong so you can focus your study time effectively.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+        classFaqJsonLd("dmv"),
       ],
     },
   ],
@@ -394,7 +380,7 @@ export default function DmvLandingPage() {
                 <T k="landing.howToPass4Title">4. Know What to Expect on Test Day</T>
               </h3>
               <p>
-                <T k="landing.howToPass4Desc">Most states administer the written knowledge test on a computer at a DMV office. The number of questions varies by state — from 20 questions in New York and Alaska to 50 questions in California, Florida, and Michigan. Passing scores range from 70% to 85% depending on your state. Bring valid identification and any required documents.</T>
+                <T k="landing.howToPass4Desc">Most states administer the written knowledge test on a computer at a DMV office. The number of questions varies by state, from 18 questions in Pennsylvania to 50 in Florida, Michigan and New Jersey. Passing scores range from 70% to 85% depending on your state. Bring valid identification and any required documents.</T>
               </p>
             </div>
           </div>
@@ -408,49 +394,17 @@ export default function DmvLandingPage() {
         </h2>
 
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              <T k="landing.faq1Q">How many questions are on the DMV written test?</T>
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              <T k="landing.faq1A">Most states have between 20-50 questions on the DMV written test. TigerTest offers 200 practice questions per state so you&apos;re fully prepared for every possible question topic.</T>
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              <T k="landing.faq2Q">Can I use TigerTest for free?</T>
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              <T k="landing.faq2A">Yes! You can take practice tests and train with questions for free across all 50 states.</T>
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              <T k="landing.faq3Q">What score do I need to pass the DMV test?</T>
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              <T k="landing.faq3A">Most states require a score of 80% or higher to pass. Some states like New York require only 70%, while states like Idaho and Maryland require 85%. TigerTest tracks your progress and shows your pass probability as you practice.</T>
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              <T k="landing.faq4Q">How should I study for the DMV permit test?</T>
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              <T k="landing.faq4A">Start with TigerTest&apos;s training mode to learn questions with instant feedback. Once you feel confident, take practice tests to simulate the real exam. Most users pass after completing all 4 training sets and scoring 80%+ on practice tests.</T>
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              I teach driver&apos;s ed or run a driving school. Can my students use TigerTest?
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes, for free. <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">Make a class</Link>, post one link, and students join with just their name. You see who practiced, their test scores and the topics your class misses most.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.k}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
+                <T k={`landing.${f.k}Q`}>{f.q}</T>
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                <T k={`landing.${f.k}A`}>{f.a}</T>
+              </p>
+            </div>
+          ))}
+          <ExamClassFaq examId="dmv" />
         </div>
       </div>
 

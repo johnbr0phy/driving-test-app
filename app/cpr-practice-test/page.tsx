@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free CPR Practice Test 2026 - CPR, AED & First Aid Exam Prep";
+const title = "Free CPR Practice Test 2026 - AED & First Aid";
+const metaDescription =
+  "Free CPR practice tests: 200 questions on adult, child and infant CPR, AED use, choking and first aid under current guidelines. Every answer explained.";
 const description =
   "Free CPR practice tests with 200 questions on adult, child and infant CPR, AED use, choking, anaphylaxis and first aid, based on the 2020 resuscitation guidelines. Compression rates, depths and ratios, naloxone, tourniquets, stroke and heart attack signs, with an explanation on every answer.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "CPR practice test, CPR test questions and answers, BLS practice test, AED practice questions, first aid practice test, CPR certification exam prep 2026, free CPR practice test, infant CPR quiz",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/cpr-practice-test`,
     images: [{ url: "/og/cpr", width: 1200, height: 630, alt: "TigerTest free CPR practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/cpr"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

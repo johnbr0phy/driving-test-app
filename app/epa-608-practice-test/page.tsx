@@ -10,13 +10,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free EPA 608 Practice Test 2026 - Core, Type I, II, III and Universal";
+const title = "Free EPA 608 Practice Test 2026 - Core & Universal";
+const metaDescription =
+  "Free EPA 608 practice tests: 200 questions across Core, Type I, Type II and Type III, with recovery levels, the 2024 HFC rules and the real 72% pass line.";
 const description =
   "Free EPA Section 608 practice tests with 200 questions across Core, Type I, Type II and Type III. Ozone rules, recovery levels, evacuation, safety and the 2024 HFC rules, with instant feedback and the real 72% pass line.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "EPA 608 practice test, EPA 608 universal practice test, EPA 608 core exam, Type I Type II Type III practice test, refrigerant certification exam, HVAC EPA test questions, section 608 study guide",
   alternates: {
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/epa-608-practice-test`,
     images: [{ url: "/og/epa608", width: 1200, height: 630, alt: "TigerTest free EPA 608 practice test" }],
     siteName: "TigerTest",
@@ -35,9 +37,29 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/epa608"],
     title,
-    description,
+    description: metaDescription,
   },
 };
+
+// One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.
+const faqs = [
+  {
+    q: "How many questions are on the EPA 608 exam?",
+    a: "Each section has 25 multiple-choice questions and you need 18 correct, 72 percent. Core is required for any certification. Core plus one type gives that type; Core plus all three gives Universal, 100 questions in total.",
+  },
+  {
+    q: "What is the difference between Type I, II and III?",
+    a: "Type I covers small appliances with 5 pounds or less of refrigerant, such as refrigerators and window units. Type II covers high-pressure appliances such as split systems and commercial refrigeration. Type III covers low-pressure appliances, mainly centrifugal chillers. Universal covers all three.",
+  },
+  {
+    q: "Is the EPA 608 exam open book?",
+    a: "Some providers offer Type I as an open-book online test, but Type II, Type III and Universal must be taken proctored and closed book. Check with your testing organization, since the rules depend on the provider.",
+  },
+  {
+    q: "Is the TigerTest EPA 608 practice test free?",
+    a: "Yes. All four training sets and all four mixed practice tests are free, with no account required. Create a free account if you want your progress saved across devices.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -62,38 +84,11 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
+        ...faqs.map((f) => ({
           "@type": "Question",
-          name: "How many questions are on the EPA 608 exam?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Each section has 25 multiple-choice questions and you need 18 correct, 72 percent, to pass it. Core is required for any certification. Pass Core plus one type for that type's certification, or Core plus all three types for Universal, which is 100 questions in total.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is the difference between Type I, II and III?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Type I covers small appliances with 5 pounds or less of refrigerant, such as refrigerators and window units. Type II covers high-pressure appliances such as split systems and commercial refrigeration. Type III covers low-pressure appliances, mainly centrifugal chillers. Universal covers all three.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the EPA 608 exam open book?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Some providers offer Type I as an open-book online test, but Type II, Type III and Universal must be taken proctored and closed book. Check with your testing organization, since the rules depend on the provider.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the TigerTest EPA 608 practice test free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. All four training sets and all four mixed practice tests are free, with no account required.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
         classFaqJsonLd("epa608"),
       ],
     },
@@ -269,36 +264,12 @@ export default function Epa608LandingPage() {
           EPA 608 Frequently Asked Questions
         </h2>
         <div className="space-y-8">
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the EPA 608 exam?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Each section has 25 multiple-choice questions and you need 18 correct, 72 percent. Core is
-              required for any certification. Core plus one type gives that type; Core plus all three
-              gives Universal, 100 questions in total.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is the difference between Type I, II and III?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Type I covers small appliances with 5 pounds or less of refrigerant. Type II covers
-              high-pressure appliances such as split systems and commercial refrigeration. Type III
-              covers low-pressure appliances, mainly centrifugal chillers. Universal covers all three.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the EPA 608 exam open book?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Some providers offer Type I as an open-book online test, but Type II, Type III and
-              Universal must be taken proctored and closed book. Check with your testing organization.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest EPA 608 practice test free?</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four training sets and all four mixed practice tests are free, with no account
-              required. Create a free account if you want your progress saved across devices.
-            </p>
-          </div>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
+            </div>
+          ))}
           <ExamClassFaq examId="epa608" />
         </div>
       </div>

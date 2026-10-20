@@ -9,13 +9,15 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free EMT Practice Test 2026 - NREMT Cognitive Exam Prep";
+const title = "Free EMT Practice Test 2026 - NREMT Exam Prep";
+const metaDescription =
+  "Free NREMT EMT practice tests: 200 scenario questions on the 2025 test plan, from scene size-up and assessment to treatment, transport and EMS operations.";
 const description =
   "Free NREMT EMT practice tests with 200 questions weighted to the 2025 test plan: scene size-up and safety, primary assessment, secondary assessment, patient treatment and transport, and operations. Scenario questions with vitals and explanations.";
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: metaDescription,
   keywords:
     "EMT practice test, NREMT practice test, EMT exam questions, NREMT cognitive exam prep, EMT basic practice exam 2026, free NREMT practice questions, EMT test",
   alternates: {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title,
-    description,
+    description: metaDescription,
     url: `${siteUrl}/emt-practice-test`,
     images: [{ url: "/og/emt", width: 1200, height: 630, alt: "TigerTest free EMT practice test" }],
     siteName: "TigerTest",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/og/emt"],
     title,
-    description,
+    description: metaDescription,
   },
 };
 

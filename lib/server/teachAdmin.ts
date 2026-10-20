@@ -14,6 +14,9 @@ import { SCHOOL_KIND_LABELS, type SchoolKind } from "@/lib/schoolHosts";
 /** The day the analytics/teach counters started; earlier visits weren't counted. */
 export const TEACH_TRACKING_SINCE = "2026-10-19";
 
+/** The day the dashboard teacher nudge (components/TeachNudge.tsx) started being counted. */
+export const NUDGE_TRACKING_SINCE = "2026-10-20";
+
 const DAY_MS = 24 * 60 * 60 * 1000;
 const WEEK_MS = 7 * DAY_MS;
 const WEEKS_SHOWN = 12;
@@ -66,6 +69,15 @@ export interface TeachAdminPayload {
     internalClassesHidden: number;
   };
   funnel: TeachFunnelStep[];
+  /** The "Teachers can use it free" row at the top of exam dashboards: browsers shown it, then copied or tapped its /teach link. */
+  nudge: {
+    since: string;
+    shown: number;
+    copied: number;
+    tapped: number;
+    last30: { shown: number; copied: number; tapped: number };
+    byExam: { examId: string; examName: string; shown: number; copied: number; tapped: number }[];
+  };
   weeks: { start: string; classes: number; joins: number; landingViews: number; answeringStudents: number }[];
   landingSources: { key: string; count: number }[];
   landingReferrers: { key: string; count: number }[];
@@ -108,6 +120,7 @@ export async function buildTeachAdmin(db: Firestore, internalUids: Set<string>):
     steps?: Record<string, Counter>;
     landingSources?: Record<string, number>;
     landingReferrers?: Record<string, number>;
+    nudgeExams?: Record<string, { shown?: number; copy?: number; link?: number }>;
   };
 
   let internalClassesHidden = 0;
@@ -252,6 +265,20 @@ export async function buildTeachAdmin(db: Firestore, internalUids: Set<string>):
       { key: "practiced", label: "Answered a question", detail: "students with at least one answer", total: practicedAll, last30: practiced30, tracked: false },
       { key: "tested", label: "Finished a practice test", detail: "students with a full test", total: testedAll, last30: tested30, tracked: false },
     ],
+    nudge: {
+      since: NUDGE_TRACKING_SINCE,
+      shown: steps.nudge_shown?.total ?? 0,
+      copied: steps.nudge_copy?.total ?? 0,
+      tapped: steps.nudge_link?.total ?? 0,
+      last30: {
+        shown: sumSince(steps.nudge_shown, since30Day),
+        copied: sumSince(steps.nudge_copy, since30Day),
+        tapped: sumSince(steps.nudge_link, since30Day),
+      },
+      byExam: Object.entries(stats.nudgeExams ?? {})
+        .map(([examId, v]) => ({ examId, examName: classExamNameById(examId), shown: v.shown ?? 0, copied: v.copy ?? 0, tapped: v.link ?? 0 }))
+        .sort((a, b) => b.copied - a.copied || b.shown - a.shown),
+    },
     weeks,
     landingSources: sortedCounts(stats.landingSources),
     landingReferrers: sortedCounts(stats.landingReferrers, true).slice(0, 15),

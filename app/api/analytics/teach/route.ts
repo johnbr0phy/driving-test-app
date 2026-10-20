@@ -7,7 +7,9 @@ import { isClassCode, normalizeClassCode } from '@/lib/classes';
 // total and per UTC day, in analytics/teach. Landing views are also split by
 // source and referrer host; class link views are also counted on the class
 // doc (joinViews, joinReferrers) so the /admin Teachers tab can show views against joins.
-const STEPS = new Set(['landing_view', 'new_open', 'new_form', 'join_view']);
+// The nudge steps are the dashboard teacher row (components/TeachNudge.tsx),
+// also counted by exam in nudgeExams.
+const STEPS = new Set(['landing_view', 'new_open', 'new_form', 'join_view', 'nudge_shown', 'nudge_copy', 'nudge_link']);
 // Mirrors VISIT_SOURCES in lib/funnel.ts (that module imports the client SDK).
 const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'direct', 'other']);
 
@@ -54,6 +56,9 @@ export async function POST(request: NextRequest) {
     if (step === 'landing_view') {
       if (typeof body.source === 'string' && VISIT_SOURCES.has(body.source)) doc.landingSources = { [body.source]: FieldValue.increment(1) };
       if (referrer) doc.landingReferrers = { [referrer]: FieldValue.increment(1) };
+    }
+    if (step.startsWith('nudge_') && typeof body.exam === 'string' && /^[a-z0-9_-]{1,40}$/.test(body.exam)) {
+      doc.nudgeExams = { [body.exam]: { [step.slice('nudge_'.length)]: FieldValue.increment(1) } };
     }
     await db.doc('analytics/teach').set(doc, { merge: true });
     return NextResponse.json({ ok: true });

@@ -120,6 +120,64 @@ function Funnel({ data }: { data: TeachAdminPayload }) {
   );
 }
 
+function Nudge({ nudge }: { nudge: TeachAdminPayload["nudge"] }) {
+  const [range, setRange] = useState<"total" | "last30">("total");
+  const n = range === "total" ? nudge : nudge.last30;
+  return (
+    <Card
+      title="Dashboard nudge"
+      subtitle={
+        <div className="flex items-center gap-1">
+          {(["total", "last30"] as const).map((r) => (
+            <button
+              key={r}
+              type="button"
+              onClick={() => setRange(r)}
+              className={`px-2 py-0.5 rounded-md ${range === r ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900" : "hover:bg-gray-100 dark:hover:bg-gray-800"}`}
+            >
+              {r === "total" ? "All time" : "Last 30 days"}
+            </button>
+          ))}
+        </div>
+      }
+    >
+      <div className="grid grid-cols-3 gap-3">
+        <Tile label="Saw it" value={fmtInt(n.shown)} sub="browsers shown the row" />
+        <Tile label="Copied the link" value={fmtInt(n.copied)} sub={`${fmtPct(n.copied, n.shown)} of those shown`} />
+        <Tile label="Tapped the link" value={fmtInt(n.tapped)} sub={`${fmtPct(n.tapped, n.shown)} of those shown`} />
+      </div>
+      {nudge.byExam.length > 0 && (
+        <div className="overflow-x-auto mt-4">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="text-left text-xs text-gray-500 dark:text-gray-400">
+                <th className="font-normal py-1.5 pr-3">Test</th>
+                <th className="font-normal py-1.5 px-3 text-right">Saw it</th>
+                <th className="font-normal py-1.5 px-3 text-right">Copied</th>
+                <th className="font-normal py-1.5 pl-3 text-right">Tapped</th>
+              </tr>
+            </thead>
+            <tbody>
+              {nudge.byExam.map((e) => (
+                <tr key={e.examId} className="border-t border-gray-100 dark:border-gray-800">
+                  <td className="py-1.5 pr-3">{e.examName}</td>
+                  <td className="py-1.5 px-3 text-right tabular-nums">{fmtInt(e.shown)}</td>
+                  <td className="py-1.5 px-3 text-right tabular-nums">{fmtInt(e.copied)}</td>
+                  <td className="py-1.5 pl-3 text-right tabular-nums">{fmtInt(e.tapped)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+      <p className="text-[11px] text-gray-500 dark:text-gray-400 mt-4">
+        The &ldquo;Teachers can use it free&rdquo; row at the top of exam dashboards, after a step turns green. Counted since {fmtDay(nudge.since)}, once per browser
+        per action, internal browsers excluded; by test is the dashboard it happened on (all time).
+      </p>
+    </Card>
+  );
+}
+
 function Weeks({ weeks }: { weeks: TeachAdminPayload["weeks"] }) {
   const max = Math.max(1, ...weeks.map((w) => w.joins));
   return (
@@ -268,6 +326,8 @@ export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdm
         </div>
 
         <Funnel data={data} />
+
+        <Nudge nudge={data.nudge} />
 
         <Card title="Classes" subtitle="Most recent student activity first · click a class for details">
           {data.classes.length === 0 ? (

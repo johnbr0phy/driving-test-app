@@ -54,6 +54,12 @@ export interface ExamConfig {
   variantOf?: ExamId;
   /** Jurisdiction a variant covers, e.g. { code: "CA", name: "California" }. */
   jurisdiction?: { code: string; name: string };
+  /** Set on a teacher's hand-built course (docs/COURSE_REQUESTS.md): the
+   *  courseRequests doc it answers. Courses are listed in COURSES, never in
+   *  EXAMS, so no catalog, sitemap, landing, email or analytics key sees them;
+   *  students reach one only through its class. Id `course-<key>`, slug
+   *  `/course/<key>`, pages from app/course/[course]/. */
+  course?: { requestId: string };
   /** Pseudo state code sessions/attempts are stored under. */
   stateCode: string;
   /** Store ID base; tests are idBase+1.. and, unless setIdBase is set, so are sets. */
@@ -4157,8 +4163,16 @@ export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa60
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];
+/** Teachers' hand-built courses (see ExamConfig.course). Not in EXAMS. */
+export const COURSES: ExamConfig[] = [];
 /** Every exam the store and app routes resolve, variants first. */
-export const ALL_EXAMS: ExamConfig[] = [...EXAM_VARIANTS, ...EXAMS];
+export const ALL_EXAMS: ExamConfig[] = [...EXAM_VARIANTS, ...EXAMS, ...COURSES];
+
+export const COURSE_SLUG_BASE = "/course";
+
+/** The course named by an app/course/[course] segment. */
+export const getCourseByKey = (key: string | null | undefined): ExamConfig | undefined =>
+  key ? COURSES.find((c) => c.slug === `${COURSE_SLUG_BASE}/${key}`) : undefined;
 
 /** Family an exam belongs to: its own id, or the parent id for a variant. */
 export const examFamilyId = (exam: ExamConfig): ExamId => exam.variantOf ?? exam.id;
@@ -4202,7 +4216,8 @@ export function getExamByPath(pathname: string | null | undefined): ExamConfig |
   if (!pathname) return undefined;
   // Families only: a variant's pages live under its family slug
   // (/real-estate/ca/...), so theme, header and footer follow the family.
-  return EXAMS.find(
+  // Courses are their own family.
+  return [...EXAMS, ...COURSES].find(
     (e) =>
       pathname === e.slug ||
       pathname.startsWith(`${e.slug}/`) ||

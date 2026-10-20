@@ -7,6 +7,7 @@ import { useAdmin } from "@/hooks/useAdmin";
 import { useAdminFetch, TabError, TabLoading } from "@/components/admin/AdminTabParts";
 import { OpportunitiesView } from "@/components/admin/OpportunitiesView";
 import { TeachAdminView } from "@/components/admin/TeachAdminView";
+import { CourseRequestsAdmin } from "@/components/admin/CourseRequestsAdmin";
 import { GrowthTab } from "@/components/admin/GrowthTab";
 import { UsersTab } from "@/components/admin/UsersTab";
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
@@ -71,7 +72,11 @@ function TeachersTab() {
   const { data, error, loading, refreshing, reload } = useAdminFetch<TeachAdminPayload>("/api/admin/teach");
   if (loading) return <TabLoading />;
   if (error || !data) return <TabError message={error || "Failed to load"} />;
-  return <TeachAdminView data={data} onRefresh={() => reload(true)} refreshing={refreshing} />;
+  return (
+    <TeachAdminView data={data} onRefresh={() => reload(true)} refreshing={refreshing}>
+      <CourseRequestsAdmin />
+    </TeachAdminView>
+  );
 }
 
 function AdminTabs() {

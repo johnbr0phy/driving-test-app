@@ -7,7 +7,7 @@
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { Check, Search } from "lucide-react";
+import { Check, ChevronRight, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useAuth } from "@/contexts/AuthContext";
@@ -117,7 +117,12 @@ function NewClassForm() {
                   />
                 </div>
                 <div className="max-h-80 overflow-y-auto p-2">
-                  {filtered.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400 p-3">No test matches “{query}”.</p>}
+                  {filtered.length === 0 && (
+                    <p className="text-sm text-gray-500 dark:text-gray-400 p-3">
+                      No test matches “{query}”.{" "}
+                      <Link href="/teach/course" className="underline text-gray-900 dark:text-gray-50">We can build it for you</Link>
+                    </p>
+                  )}
                   {filtered.map((g) => (
                     <div key={g.title} className="mb-2">
                       <p className="px-2 pt-2 pb-1 text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">{g.title}</p>
@@ -135,6 +140,16 @@ function NewClassForm() {
                     </div>
                   ))}
                 </div>
+                <Link
+                  href="/teach/course"
+                  className="flex items-center justify-between gap-3 border-t border-gray-200 dark:border-gray-800 px-4 py-3 text-sm hover:bg-gray-50 dark:hover:bg-gray-800"
+                >
+                  <span>
+                    <span className="block font-medium text-gray-900 dark:text-gray-50">Don&apos;t see your test? Build your own course</span>
+                    <span className="block text-xs text-gray-500 dark:text-gray-400">List your topics and we write the questions, free</span>
+                  </span>
+                  <ChevronRight className="w-4 h-4 text-gray-400 flex-shrink-0" aria-hidden="true" />
+                </Link>
               </div>
             )}
           </div>

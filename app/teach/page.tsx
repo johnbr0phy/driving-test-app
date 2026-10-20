@@ -4,16 +4,20 @@
 
 import { useEffect, useLayoutEffect, useState } from "react";
 import Link from "next/link";
-import { ChevronRight, Plus, Users } from "lucide-react";
+import { ChevronRight, Plus, Sparkles, Users } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { teachFetch } from "@/lib/teachClient";
 import { TeachLanding } from "@/components/teach/TeachLanding";
 import { markTeacher, teachesHint } from "@/components/TeachLink";
 import type { ClassSummary } from "@/lib/classes";
+import { COURSE_STATUS_LABELS, isCourseRequestOpen, type CourseRequest } from "@/lib/courseRequests";
 
 export default function TeachPage() {
   const { user, loading } = useAuth();
   const [classes, setClasses] = useState<ClassSummary[] | null>(null);
+  // Courses this teacher asked us to build that have no class yet.
+  const [requests, setRequests] = useState<CourseRequest[]>([]);
+  const [showLanding, setShowLanding] = useState(false);
   // Set before first paint, so a teacher opening /teach never sees the landing
   // flash up while sign-in settles on a fresh load (the server render is
   // always the landing, for crawlers and signed-out visitors).
@@ -23,8 +27,12 @@ export default function TeachPage() {
   useEffect(() => {
     if (!user) {
       setClasses(null);
+      setRequests([]);
       return;
     }
+    teachFetch<{ requests: CourseRequest[] }>(user, "/api/course-requests")
+      .then((d) => setRequests(d.requests.filter(isCourseRequestOpen)))
+      .catch(() => setRequests([]));
     teachFetch<{ classes: ClassSummary[] }>(user, "/api/classes")
       .then((d) => {
         setClasses(d.classes);
@@ -38,7 +46,7 @@ export default function TeachPage() {
   const waiting = user ? classes === null && teachesHint(user.uid) !== false : loading && deviceTeaches;
   if (waiting) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
 
-  if (!user || !classes?.length) return <TeachLanding signedIn={!!user} />;
+  if (!user || showLanding || (!classes?.length && !requests.length)) return <TeachLanding signedIn={!!user} />;
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
@@ -54,8 +62,31 @@ export default function TeachPage() {
               <Plus className="w-4 h-4" aria-hidden="true" /> New class
             </Link>
           </div>
+          {requests.length > 0 && (
+            <ul className="space-y-3 mb-3">
+              {requests.map((r) => (
+                <li
+                  key={r.id}
+                  className="flex items-center gap-4 rounded-2xl bg-white dark:bg-gray-900 border border-dashed border-gray-300 dark:border-gray-700 px-5 py-4"
+                >
+                  <div className="w-11 h-11 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="font-semibold text-gray-900 dark:text-gray-50 truncate">{r.courseName}</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 truncate">
+                      {r.status === "review" ? "Check your email for the preview" : "We're writing your questions. We'll email you."}
+                    </p>
+                  </div>
+                  <span className="text-xs font-medium rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 px-2.5 py-1 flex-shrink-0">
+                    {r.status === "requested" ? COURSE_STATUS_LABELS.building : COURSE_STATUS_LABELS[r.status]}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
           <ul className="space-y-3">
-            {classes.map((c) => (
+            {(classes ?? []).map((c) => (
               <li key={c.code}>
                 <Link
                   href={`/teach/classes/${c.code}`}
@@ -76,8 +107,12 @@ export default function TeachPage() {
               </li>
             ))}
           </ul>
+          <p className="text-sm text-gray-600 dark:text-gray-300 mt-6">
+            Teaching something we don&apos;t cover?{" "}
+            <Link href="/teach/course" className="underline">Build your own course</Link>
+          </p>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-8">
-            <button type="button" className="underline" onClick={() => setClasses([])}>
+            <button type="button" className="underline" onClick={() => setShowLanding(true)}>
               How TigerTest classes work
             </button>
           </p>

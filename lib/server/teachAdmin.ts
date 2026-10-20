@@ -7,7 +7,7 @@ import { SCHOOL_KIND_LABELS, type SchoolKind } from "@/lib/schoolHosts";
 // The /admin Teachers tab: is the instructor channel working? From the classes
 // collection (every class and its members) plus the analytics/teach counters
 // written by lib/teachTracking.ts (landing views, create-class clicks, class
-// link views), and the schoolReferrals hosts (lib/schoolReferral.ts): teachers
+// link views), the courseRequests teachers sent (lib/courseRequests.ts), and the schoolReferrals hosts (lib/schoolReferral.ts): teachers
 // who posted a TigerTest link in an LMS without making a class. Classes made
 // by internal accounts are left out.
 
@@ -99,11 +99,15 @@ export async function buildTeachAdmin(db: Firestore, internalUids: Set<string>):
   const since30Day = new Date(since30).toISOString().split("T")[0];
   const weekAgo = now - WEEK_MS;
 
-  const [classSnap, statsSnap, referralSnap] = await Promise.all([
+  const [classSnap, statsSnap, referralSnap, courseSnap] = await Promise.all([
     db.collection("classes").get(),
     db.doc("analytics/teach").get(),
     db.collection("schoolReferrals").get(),
+    db.collection("courseRequests").get(),
   ]);
+  const courseRequests = courseSnap.docs
+    .map((d) => d.data())
+    .filter((r) => !internalUids.has(r.teacherUid) && !isInternalEmail(r.teacherEmail));
   const stats = (statsSnap.data() ?? {}) as {
     steps?: Record<string, Counter>;
     landingSources?: Record<string, number>;
@@ -247,6 +251,15 @@ export async function buildTeachAdmin(db: Firestore, internalUids: Set<string>):
       tracked("new_open", "Clicked Create a class", "clicked Create on /teach, or opened /teach/new"),
       tracked("new_form", "Reached the class form", "signed in and saw the form"),
       { key: "class_created", label: "Made a class", detail: "classes created", total: classes.length, last30: classes30, tracked: false },
+      tracked("course_open", "Opened Build your own course", "saw the course request form"),
+      {
+        key: "course_requested",
+        label: "Asked for a course",
+        detail: "course requests (Course requests, above)",
+        total: courseRequests.length,
+        last30: courseRequests.filter((r) => Date.parse(r.createdAt) >= since30).length,
+        tracked: false,
+      },
       tracked("join_view", "Opened a class link", "browsers that opened a /c/ link, once per class"),
       { key: "joined", label: "Joined a class", detail: "students who typed their name", total: students, last30: joins30, tracked: false },
       { key: "practiced", label: "Answered a question", detail: "students with at least one answer", total: practicedAll, last30: practiced30, tracked: false },

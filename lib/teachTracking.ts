@@ -12,12 +12,13 @@ import { visitSource } from "@/lib/funnel";
 //   landing_view  the /teach landing was shown, with its source and referrer host
 //   new_open      a "Create a free class" click on /teach, or /teach/new opened, signed in or not
 //   new_form      the class form was shown to a signed-in account
+//   course_open   the "Build your own course" form (/teach/course) was opened
 //   join_view     a class link (/c/<code>) was opened and the class was found;
 //                 once per browser per class, also counted on the class doc
 //
 // Internal browsers (lib/internal) send nothing.
 
-export type TeachStep = "landing_view" | "new_open" | "new_form";
+export type TeachStep = "landing_view" | "new_open" | "new_form" | "course_open";
 
 const FLAG_PREFIX = "tigertest-teach:";
 

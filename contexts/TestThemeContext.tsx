@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, ReactNode } from "react";
-import { EXAMS, examLandingPath } from "@/lib/exams";
+import { COURSES, EXAMS, examLandingPath } from "@/lib/exams";
 import { getTigerAsset, hasTigerSet } from "@/lib/tigerAssets";
 
 export interface TestTheme {
@@ -47,7 +47,7 @@ export const themes: Record<string, TestTheme> = {
     loginPath: "/login",
   },
   ...Object.fromEntries(
-    EXAMS.map((exam) => [
+    [...EXAMS, ...COURSES].map((exam) => [
       exam.id,
       {
         id: exam.id,

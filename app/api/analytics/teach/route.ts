@@ -7,7 +7,7 @@ import { isClassCode, normalizeClassCode } from '@/lib/classes';
 // total and per UTC day, in analytics/teach. Landing views are also split by
 // source and referrer host; class link views are also counted on the class
 // doc (joinViews, joinReferrers) so the /admin Teachers tab can show views against joins.
-const STEPS = new Set(['landing_view', 'new_open', 'new_form', 'join_view']);
+const STEPS = new Set(['landing_view', 'new_open', 'new_form', 'course_open', 'join_view']);
 // Mirrors VISIT_SOURCES in lib/funnel.ts (that module imports the client SDK).
 const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'direct', 'other']);
 

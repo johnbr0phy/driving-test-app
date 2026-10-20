@@ -4,6 +4,7 @@
 import "./alcohol";
 import "./boating";
 import "./ccma";
+import "./courses";
 import "./cdl";
 import "./cdlx";
 import "./cet";

@@ -243,7 +243,7 @@ function ClassRow({ c }: { c: TeachAdminClass }) {
   );
 }
 
-export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdminPayload; onRefresh: () => void; refreshing: boolean }) {
+export function TeachAdminView({ data, onRefresh, refreshing, children }: { data: TeachAdminPayload; onRefresh: () => void; refreshing: boolean; children?: React.ReactNode }) {
   const t = data.totals;
   return (
     <>
@@ -266,6 +266,8 @@ export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdm
           <Tile label="Active this week" value={fmtInt(t.activeThisWeek)} sub={`students, in ${fmtInt(t.classesActiveThisWeek)} ${t.classesActiveThisWeek === 1 ? "class" : "classes"}`} />
           <Tile label="Questions answered" value={fmtInt(t.answered)} sub={`${fmtInt(t.testsTaken)} practice tests finished`} />
         </div>
+
+        {children}
 
         <Funnel data={data} />
 

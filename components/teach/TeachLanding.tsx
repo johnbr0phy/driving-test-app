@@ -68,6 +68,10 @@ const FAQ = [
     a: "Students give a name and nothing else: no email, no account, no birthday. Their practice is visible only to you. They see a note on every dashboard that their scores are shared with you, and can leave the class at any time.",
   },
   {
+    q: "What if my test or course isn't on TigerTest?",
+    a: "We'll build it. Choose \"Build your own course\" when you make a class and list the topics you teach. We write the practice questions, training sets and tests, send you a preview to check, then set up your class. Free.",
+  },
+  {
     q: "Can one class cover two tests?",
     a: "A class is for one test, so the topic breakdown means something. Make a second class for a second test; it takes a minute.",
   },

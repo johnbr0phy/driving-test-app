@@ -364,7 +364,10 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
 
         <p className="mt-6 text-center text-[11px] text-gray-500 dark:text-gray-400">
           {exam.copy.sourceLine}{" "}
-          <Link href={examLandingPath(getExamById(examFamilyId(exam)) ?? exam)} className="underline hover:text-gray-600 dark:hover:text-gray-300">{ui.aboutThisTest}</Link>
+          {/* A teacher's course has no landing page to point at. */}
+          {!exam.course && (
+            <Link href={examLandingPath(getExamById(examFamilyId(exam)) ?? exam)} className="underline hover:text-gray-600 dark:hover:text-gray-300">{ui.aboutThisTest}</Link>
+          )}
         </p>
       </div>
       </div>

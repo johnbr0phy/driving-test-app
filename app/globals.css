@@ -84,6 +84,20 @@
     --brand-gradient-to: 190 80% 95%;
   }
 
+  /* Teachers' courses (app/course/[course]): one indigo theme for all of them */
+  [data-theme^="course-"] {
+    --brand: 243 55% 50%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 240 80% 96%;
+    --brand-hover: 243 55% 44%;
+    --brand-dark: 243 55% 38%;
+    --brand-darker: 243 50% 24%;
+    --brand-muted: 243 45% 72%;
+    --brand-border: 243 45% 78%;
+    --brand-border-light: 243 40% 88%;
+    --brand-gradient-to: 260 80% 96%;
+  }
+
   /* CDL endorsements theme: steel blue */
   [data-theme="cdlx"] {
     --brand: 205 70% 38%;
@@ -695,6 +709,18 @@
     --brand-muted: 172 45% 45%;
     --brand-dark: 172 66% 65%;
     --brand-darker: 172 60% 78%;
+  }
+
+  .dark [data-theme^="course-"] {
+    --brand: 243 55% 55%;
+    --brand-hover: 243 55% 50%;
+    --brand-light: 243 40% 14%;
+    --brand-gradient-to: 260 40% 12%;
+    --brand-border-light: 243 35% 26%;
+    --brand-border: 243 40% 36%;
+    --brand-muted: 243 45% 50%;
+    --brand-dark: 243 70% 75%;
+    --brand-darker: 243 60% 85%;
   }
 
   .dark [data-theme="cdlx"] {

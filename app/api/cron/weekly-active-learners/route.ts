@@ -1,11 +1,10 @@
 /**
  * Cron: Weekly Active Learners rollup
+ * Schedule: daily at 03:20 UTC (vercel.json)
  *
- * NOT scheduled. vercel.json does not list this route. John adds the schedule
- * after he approves it. Until then the route does not run in production.
- *
- * Suggested schedule, after approval:
- *   { "path": "/api/cron/weekly-active-learners", "schedule": "20 3 * * *" }
+ * Uses verifyCronSecret from lib/cron-email, the same check as the other
+ * cron routes: Authorization must be "Bearer $CRON_SECRET". An unset secret
+ * fails closed in production.
  *
  * Reads users/{uid}.activeDates (history before guest tracking) and the
  * learnerDays answer docs, then writes analytics/weeklyActiveLearners.

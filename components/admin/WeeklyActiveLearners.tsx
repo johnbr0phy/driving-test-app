@@ -69,8 +69,8 @@ export function WeeklyActiveLearnersCard({ rollup }: { rollup: WalRollup }) {
         </p>
       </div>
 
-      <div className="mt-5" role="img" aria-label="Weekly active learners for the last 8 weeks">
-        <div className="grid grid-cols-8 gap-2 items-end">
+      <div className="mt-5 overflow-x-auto" role="img" aria-label="Weekly active learners for the last 8 weeks">
+        <div className="grid grid-cols-8 gap-2 items-end min-w-[32rem]">
           {rollup.weeks.map((w) => (
             <div key={w.endDate} className="flex flex-col items-center gap-1 min-w-0" title={`${fmt(w.signedIn)} signed in, ${fmt(w.guests)} guests`}>
               <div className="h-16 w-full flex items-end">

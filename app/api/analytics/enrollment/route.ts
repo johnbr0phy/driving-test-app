@@ -4,6 +4,7 @@ import { EXAM_ANALYTICS_KEYS } from '@/lib/exams';
 import { EXAMS_V2 } from '@/lib/v2/registry';
 import { isInternalEmail } from '@/lib/internal';
 import { enrollmentDocId } from '@/lib/server/enrollments';
+import { BROWSER_ID_RE, learnerLinkRef } from '@/lib/server/weeklyActiveLearners';
 
 // Records that a person answered a question in an exam (lib/enrollment).
 // Signed in: one doc per (exam, uid), and the browser's guest docs for the
@@ -11,7 +12,6 @@ import { enrollmentDocId } from '@/lib/server/enrollments';
 // doc per (exam, browser id). Writes are idempotent sets.
 
 const KNOWN_EXAM_KEYS = new Set<string>([...EXAM_ANALYTICS_KEYS, ...EXAMS_V2.map((e) => e.id)]);
-const BROWSER_ID = /^[A-Za-z0-9-]{8,64}$/;
 
 export async function POST(request: NextRequest) {
   try {
@@ -19,8 +19,8 @@ export async function POST(request: NextRequest) {
     const exams = (Array.isArray(body.exams) ? body.exams : [])
       .filter((e: unknown): e is string => typeof e === 'string' && KNOWN_EXAM_KEYS.has(e))
       .slice(0, 80);
-    const browserId = typeof body.browserId === 'string' && BROWSER_ID.test(body.browserId) ? body.browserId : null;
-    if (exams.length === 0 || !browserId) return NextResponse.json({ ok: true });
+    const browserId = typeof body.browserId === 'string' && BROWSER_ID_RE.test(body.browserId) ? body.browserId : null;
+    if (!browserId) return NextResponse.json({ ok: true });
 
     let uid: string | null = null;
     const authHeader = request.headers.get('authorization');
@@ -35,7 +35,11 @@ export async function POST(request: NextRequest) {
     }
 
     const db = getAdminDb();
+    // A signup with no new exams still links the browser id to the account
+    // so Weekly Active Learners counts that person once.
+    if (exams.length === 0 && !uid) return NextResponse.json({ ok: true });
     const batch = db.batch();
+    if (uid) batch.set(learnerLinkRef(db, browserId), { uid }, { merge: true });
     const col = db.collection('enrollments');
     for (const exam of exams) {
       if (uid) {

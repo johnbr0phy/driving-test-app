@@ -97,7 +97,7 @@ interface Metrics {
 
 type CohortStage = "accounts" | "answered" | "paywall" | "purchased";
 
-type Range = "today" | "30d" | "90d" | "all";
+type Range = "today" | "7d" | "30d" | "90d" | "all";
 type Pt = { key: string; label: string; value: number };
 
 // ─── Formatting ─────────────────────────────────────────────────────────────
@@ -122,9 +122,10 @@ function dateKeyDaysAgo(days: number): string {
 }
 
 function bucketize(map: Record<string, number>, range: Range): Pt[] {
-  if (range === "30d") {
-    return Array.from({ length: 30 }, (_, i) => {
-      const key = dateKeyDaysAgo(29 - i);
+  if (range === "7d" || range === "30d") {
+    const days = range === "7d" ? 7 : 30;
+    return Array.from({ length: days }, (_, i) => {
+      const key = dateKeyDaysAgo(days - 1 - i);
       return { key, label: fmtDayLabel(key), value: map[key] || 0 };
     });
   }
@@ -897,16 +898,21 @@ export function GrowthTab() {
     }
     const signupBuckets = bucketize(metrics.daily.signups, range);
     const active =
-      range === "30d"
-        ? bucketize(metrics.daily.active, "30d")
+      range === "7d" || range === "30d"
+        ? bucketize(metrics.daily.active, range)
         : range === "90d"
           ? metrics.activeWeekly.map((p) => ({ key: p.date, label: fmtDayLabel(p.date), value: p.count }))
           : metrics.activeMonthly
               // A unique-user count for a 4-day-old month reads as a cliff — omit it
               .filter((p) => p.date !== new Date().toISOString().slice(0, 7))
               .map((p) => ({ key: p.date, label: fmtMonthLabel(p.date), value: p.count }));
+    // A week is cumulative within the window, like today: a few dozen accounts
+    // stacked on the all-time total would render as seven equal bars.
+    let weekRun = 0;
     return {
-      usersCumulative: cumulative(metrics.daily.signups, signupBuckets),
+      usersCumulative: range === "7d"
+        ? signupBuckets.map((p) => ({ ...p, value: (weekRun += p.value) }))
+        : cumulative(metrics.daily.signups, signupBuckets),
       newSignups: signupBuckets,
       revenue: bucketize(metrics.daily.revenueCents, range),
       active,
@@ -929,7 +935,7 @@ export function GrowthTab() {
 
   const { kpis } = metrics;
   const isToday = range === "today";
-  const bucketNoun = isToday ? "hour" : range === "30d" ? "day" : range === "90d" ? "week" : "month";
+  const bucketNoun = isToday ? "hour" : range === "7d" || range === "30d" ? "day" : range === "90d" ? "week" : "month";
   // All-time charts stop at the last complete month (see bucketize)
   const partialNote = range === "all" ? "Current month omitted (in progress)." : undefined;
   // Present only when the API actually returned the block (see Metrics.today)
@@ -938,7 +944,7 @@ export function GrowthTab() {
     ? `${fmtDayLabel(todayData.date)}, Eastern. Hours shown up to the current one.`
     : undefined;
   const chartNote = todayNote ?? partialNote;
-  const labelEvery = range === "90d" ? 1 : isToday ? 2 : "preserveStartEnd" as const;
+  const labelEvery = range === "7d" ? 0 : range === "90d" ? 1 : isToday ? 2 : "preserveStartEnd" as const;
   const revenueBarLabels = series.revenue.length <= 13;
 
   return (
@@ -992,7 +998,7 @@ export function GrowthTab() {
 
         {/* Range filter — scopes every chart below */}
         <div className="flex items-center gap-1 mb-3 sm:mb-4 bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 w-full sm:w-fit shadow-sm">
-          {([["today", "Today", "Today"], ["30d", "Last 30 days", "30 days"], ["90d", "Last 90 days", "90 days"], ["all", "All time", "All"]] as const).map(([key, label, short]) => (
+          {([["today", "Today", "Today"], ["7d", "Last 7 days", "7 days"], ["30d", "Last 30 days", "30 days"], ["90d", "Last 90 days", "90 days"], ["all", "All time", "All"]] as const).map(([key, label, short]) => (
             <button
               key={key}
               onClick={() => setRange(key)}
@@ -1024,21 +1030,22 @@ export function GrowthTab() {
             title="User growth"
             subtitle={isToday
               ? "accounts added today, cumulative by hour"
-              : `cumulative accounts, by ${bucketNoun}`}
+              : range === "7d"
+                ? "accounts added this week, cumulative by day"
+                : `cumulative accounts, by ${bucketNoun}`}
             footnote={chartNote}>
             <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={series.usersCumulative} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
+              <BarChart data={series.usersCumulative} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
                 <CartesianGrid vertical={false} stroke={COLORS.grid} />
                 <XAxis dataKey="label" tick={axisTickStyle} tickLine={false}
                   axisLine={{ stroke: COLORS.axis }} interval={labelEvery} tickMargin={8} />
                 <YAxis tick={axisTickStyle} tickLine={false} axisLine={false}
                   allowDecimals={false} width={44} tickFormatter={fmtCompact} />
-                <Tooltip content={<ChartTooltip format={(n) => `${fmtInt(n)} accounts`} />} />
-                <Area type="monotone" dataKey="value" stroke={COLORS.users} strokeWidth={2}
-                  fill={COLORS.users} fillOpacity={0.1} isAnimationActive={false}
-                  dot={(props) => makeEndDot(COLORS.users)({ ...props, dataLength: series.usersCumulative.length })}
-                  activeDot={{ r: 4.5, strokeWidth: 2, stroke: "#ffffff" }} />
-              </AreaChart>
+                <Tooltip cursor={{ fill: "rgba(0,0,0,0.03)" }}
+                  content={<ChartTooltip format={(n) => `${fmtInt(n)} accounts`} />} />
+                <Bar dataKey="value" fill={COLORS.users} maxBarSize={24} radius={[4, 4, 0, 0]}
+                  isAnimationActive={false} />
+              </BarChart>
             </ResponsiveContainer>
           </ChartCard>
 

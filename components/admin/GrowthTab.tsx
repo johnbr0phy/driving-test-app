@@ -6,7 +6,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { ArrowUpRight, ArrowDownRight } from "lucide-react";
 import {
   AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
-  ResponsiveContainer, LabelList,
+  ResponsiveContainer, LabelList, Cell,
 } from "recharts";
 import { CARD, ROW, STICKY_COL, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { BasicsProgress } from "@/components/admin/BasicsProgress";
@@ -187,14 +187,33 @@ function hourly(values: number[]): Pt[] {
   }));
 }
 
-// Running total across buckets, seeded with everything before the window
-function cumulative(map: Record<string, number>, buckets: Pt[]): Pt[] {
-  if (buckets.length === 0) return [];
-  const windowStart = buckets[0].key.length === 7 ? buckets[0].key + "-01" : buckets[0].key;
-  let running = Object.entries(map).reduce((n, [d, c]) => (d < windowStart ? n + c : n), 0);
-  return buckets.map((b) => {
-    running += b.value;
-    return { ...b, value: running };
+// New signups by calendar day (last 30), Monday-start week (last 12) or month
+// (last 12), independent of the range filter. The last bucket is the current,
+// unfinished one. Day keys are UTC, like the server's.
+type SignupUnit = "day" | "week" | "month";
+function signupBars(map: Record<string, number>, unit: SignupUnit): Pt[] {
+  const sumRange = (from: string, to: string) =>
+    Object.entries(map).reduce((n, [d, c]) => (d >= from && d <= to ? n + c : n), 0);
+  const today = new Date();
+  today.setUTCHours(12, 0, 0, 0);
+  const iso = (d: Date) => d.toISOString().split("T")[0];
+  if (unit === "day") return bucketize(map, "30d");
+  if (unit === "week") {
+    const monday = new Date(today);
+    monday.setUTCDate(monday.getUTCDate() - ((monday.getUTCDay() + 6) % 7));
+    return Array.from({ length: 12 }, (_, i) => {
+      const start = new Date(monday);
+      start.setUTCDate(start.getUTCDate() - (11 - i) * 7);
+      const end = new Date(start);
+      end.setUTCDate(end.getUTCDate() + 6);
+      const key = iso(start);
+      return { key, label: fmtDayLabel(key), value: sumRange(key, iso(end)) };
+    });
+  }
+  return Array.from({ length: 12 }, (_, i) => {
+    const m = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() - (11 - i), 15));
+    const prefix = m.toISOString().slice(0, 7);
+    return { key: prefix, label: fmtMonthLabel(prefix), value: sumRange(prefix + "-01", prefix + "-31") };
   });
 }
 
@@ -277,14 +296,14 @@ function StatTile({ label, value, sub, spark, accent, delta }: {
   );
 }
 
-function ChartTooltip({ active, payload, label, format }: {
+function ChartTooltip({ active, payload, label, format, labelPrefix = "" }: {
   active?: boolean; payload?: { value?: number | string }[]; label?: string;
-  format: (n: number) => string;
+  format: (n: number) => string; labelPrefix?: string;
 }) {
   if (!active || !payload?.length) return null;
   return (
     <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg shadow-md px-3 py-2">
-      <p className="text-xs text-gray-500 dark:text-gray-400">{label}</p>
+      <p className="text-xs text-gray-500 dark:text-gray-400">{labelPrefix}{label}</p>
       <p className="text-sm font-semibold text-gray-900 dark:text-gray-50">{format(Number(payload[0].value) || 0)}</p>
     </div>
   );
@@ -316,6 +335,73 @@ function makeEndDot(color: string) {
       <circle key={index} cx={cx} cy={cy} r={4.5} fill={color} stroke="#ffffff" strokeWidth={2} />
     );
   };
+}
+
+// New signups per day / week / month, the old bar chart: the last bar is the
+// current period so far, drawn lighter, with the previous full one beside it.
+function NewSignupsCard({ data, unit, onUnit }: {
+  data: Pt[]; unit: SignupUnit; onUnit: (u: SignupUnit) => void;
+}) {
+  const cur = data[data.length - 1]?.value ?? 0;
+  const prev = data[data.length - 2]?.value ?? 0;
+  const noun = unit === "day" ? "Today" : `This ${unit}`;
+  const prevNoun = unit === "day" ? "yesterday" : `last ${unit}`;
+  return (
+    <div className={`${CARD} mb-3 sm:mb-4`}>
+      <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">New signups</h2>
+          <p className="mt-1 text-2xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">
+            {fmtInt(cur)}
+            <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
+              {noun.toLowerCase()} so far vs {fmtInt(prev)} {prevNoun}
+            </span>
+          </p>
+        </div>
+        <div className="flex gap-1">
+          {(["day", "week", "month"] as const).map((u) => (
+            <button
+              key={u}
+              onClick={() => onUnit(u)}
+              className={`text-xs font-medium rounded-md px-3 py-1.5 transition-colors capitalize ${
+                unit === u ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"
+              }`}
+            >
+              {u}
+            </button>
+          ))}
+        </div>
+      </div>
+      <div className="h-56 sm:h-64">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={data} margin={{ top: 18, right: 16, left: 0, bottom: 0 }}>
+            <CartesianGrid vertical={false} stroke={COLORS.grid} />
+            <XAxis dataKey="label" tick={axisTickStyle} tickLine={false}
+              axisLine={{ stroke: COLORS.axis }} interval={unit === "day" ? "preserveStartEnd" : 0} tickMargin={8} />
+            <YAxis tick={axisTickStyle} tickLine={false} axisLine={false}
+              allowDecimals={false} width={44} tickFormatter={fmtCompact} />
+            <Tooltip cursor={{ fill: "rgba(0,0,0,0.03)" }}
+              content={<ChartTooltip format={(n) => `${fmtInt(n)} signups`}
+                labelPrefix={unit === "week" ? "Week of " : ""} />} />
+            <Bar dataKey="value" fill={COLORS.users} maxBarSize={36} radius={[4, 4, 0, 0]}
+              isAnimationActive={false}>
+              {data.map((p, i) => (
+                <Cell key={p.key} fillOpacity={i === data.length - 1 ? 0.45 : 1} />
+              ))}
+              {unit !== "day" && (
+                <LabelList dataKey="value" position="top"
+                  formatter={(v: React.ReactNode) => (Number(v) > 0 ? fmtInt(Number(v)) : "")}
+                  style={{ fontSize: 10, fill: "#52514e" }} />
+              )}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+      <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
+        Weeks start Monday (UTC). The lighter bar is the current {unit}, still in progress.
+      </p>
+    </div>
+  );
 }
 
 type FunnelStage = { label: string; value: number; note?: string; section?: string };
@@ -861,6 +947,7 @@ export function GrowthTab() {
   const { data: metrics, error, loading, refreshing, updating, reload: fetchMetrics } = useAdminFetch<Metrics>("/api/admin/metrics");
   const [range, setRange] = useState<Range>("90d");
   const [engageMetric, setEngageMetric] = useState<"active" | "questions">("active");
+  const [signupUnit, setSignupUnit] = useState<SignupUnit>("week");
 
   // One-time history seed for the per-exam split of the questions aggregate:
   // live counts only started when the split shipped, so until the backfill
@@ -883,19 +970,12 @@ export function GrowthTab() {
   const series = useMemo(() => {
     if (!metrics) return null;
     if (range === "today") {
-      const signupHours = hourly(metrics.today?.hours?.signups ?? []);
-      // Cumulative within the day, not all-time — 27 accounts added onto 3,700
-      // would render as a dead-flat line.
-      let run = 0;
       return {
-        usersCumulative: signupHours.map((p) => ({ ...p, value: (run += p.value) })),
-        newSignups: signupHours,
         revenue: hourly(metrics.today?.hours?.revenueCents ?? []),
         active: [],      // day-resolution only; rendered as a tile instead
         questions: [],   // same
       };
     }
-    const signupBuckets = bucketize(metrics.daily.signups, range);
     const active =
       range === "30d"
         ? bucketize(metrics.daily.active, "30d")
@@ -906,13 +986,16 @@ export function GrowthTab() {
               .filter((p) => p.date !== new Date().toISOString().slice(0, 7))
               .map((p) => ({ key: p.date, label: fmtMonthLabel(p.date), value: p.count }));
     return {
-      usersCumulative: cumulative(metrics.daily.signups, signupBuckets),
-      newSignups: signupBuckets,
       revenue: bucketize(metrics.daily.revenueCents, range),
       active,
       questions: bucketize(metrics.daily.questions, range),
     };
   }, [metrics, range]);
+
+  const signups = useMemo(
+    () => (metrics ? signupBars(metrics.daily.signups, signupUnit) : []),
+    [metrics, signupUnit],
+  );
 
   const sparks = useMemo(() => {
     if (!metrics) return null;
@@ -990,6 +1073,8 @@ export function GrowthTab() {
 
         <WeeklyActiveLearners />
 
+        <NewSignupsCard data={signups} unit={signupUnit} onUnit={setSignupUnit} />
+
         {/* Range filter — scopes every chart below */}
         <div className="flex items-center gap-1 mb-3 sm:mb-4 bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 w-full sm:w-fit shadow-sm">
           {([["today", "Today", "Today"], ["30d", "Last 30 days", "30 days"], ["90d", "Last 90 days", "90 days"], ["all", "All time", "All"]] as const).map(([key, label, short]) => (
@@ -1021,28 +1106,6 @@ export function GrowthTab() {
         {/* Charts */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-4">
           <ChartCard
-            title="User growth"
-            subtitle={isToday
-              ? "accounts added today, cumulative by hour"
-              : `cumulative accounts, by ${bucketNoun}`}
-            footnote={chartNote}>
-            <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={series.usersCumulative} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
-                <CartesianGrid vertical={false} stroke={COLORS.grid} />
-                <XAxis dataKey="label" tick={axisTickStyle} tickLine={false}
-                  axisLine={{ stroke: COLORS.axis }} interval={labelEvery} tickMargin={8} />
-                <YAxis tick={axisTickStyle} tickLine={false} axisLine={false}
-                  allowDecimals={false} width={44} tickFormatter={fmtCompact} />
-                <Tooltip content={<ChartTooltip format={(n) => `${fmtInt(n)} accounts`} />} />
-                <Area type="monotone" dataKey="value" stroke={COLORS.users} strokeWidth={2}
-                  fill={COLORS.users} fillOpacity={0.1} isAnimationActive={false}
-                  dot={(props) => makeEndDot(COLORS.users)({ ...props, dataLength: series.usersCumulative.length })}
-                  activeDot={{ r: 4.5, strokeWidth: 2, stroke: "#ffffff" }} />
-              </AreaChart>
-            </ResponsiveContainer>
-          </ChartCard>
-
-          <ChartCard
             title="Revenue"
             subtitle={`per ${bucketNoun}${!isToday && kpis.estimatedPurchases > 0
               ? ` · ${kpis.estimatedPurchases} pre-Stripe-log purchase${kpis.estimatedPurchases === 1 ? "" : "s"} at $9.99`
@@ -1066,23 +1129,6 @@ export function GrowthTab() {
                       style={{ fontSize: 10, fill: "#52514e" }} />
                   )}
                 </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </ChartCard>
-
-          <ChartCard title="New signups" subtitle={`per ${bucketNoun}`}
-            footnote={chartNote}>
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={series.newSignups} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
-                <CartesianGrid vertical={false} stroke={COLORS.grid} />
-                <XAxis dataKey="label" tick={axisTickStyle} tickLine={false}
-                  axisLine={{ stroke: COLORS.axis }} interval={labelEvery} tickMargin={8} />
-                <YAxis tick={axisTickStyle} tickLine={false} axisLine={false}
-                  allowDecimals={false} width={44} tickFormatter={fmtCompact} />
-                <Tooltip cursor={{ fill: "rgba(0,0,0,0.03)" }}
-                  content={<ChartTooltip format={(n) => `${fmtInt(n)} signups`} />} />
-                <Bar dataKey="value" fill={COLORS.users} maxBarSize={24} radius={[4, 4, 0, 0]}
-                  isAnimationActive={false} />
               </BarChart>
             </ResponsiveContainer>
           </ChartCard>

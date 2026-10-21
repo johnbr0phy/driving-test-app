@@ -1,6 +1,6 @@
 import { auth } from "@/lib/firebase";
 import { DMV_ANALYTICS_KEY, type ExamAnalyticsKey } from "@/lib/exams";
-import { trackEnrollment } from "@/lib/enrollment";
+import { getBrowserId, trackEnrollment } from "@/lib/enrollment";
 import { trackFunnelStep } from "@/lib/funnel";
 import { isInternalBrowser } from "@/lib/internal";
 
@@ -80,6 +80,27 @@ async function recordPaywallHit(itemId: string, itemName: string, location: stri
 const pendingByExam: Record<string, number> = {};
 let answerFlushTimer: ReturnType<typeof setTimeout> | null = null;
 
+// One learner report per identity per UTC day. Later flushes still send the
+// answer counts. The server arrayUnion would dedupe, this just skips the write.
+const WAL_SENT_KEY = "tigertest-wal-sent";
+
+function walAlreadySent(id: string, day: string): boolean {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(WAL_SENT_KEY) || "null") as { id?: string; day?: string } | null;
+    return parsed?.id === id && parsed?.day === day;
+  } catch {
+    return false;
+  }
+}
+
+function markWalSent(id: string, day: string) {
+  try {
+    localStorage.setItem(WAL_SENT_KEY, JSON.stringify({ id, day }));
+  } catch {
+    // The next flush tries again.
+  }
+}
+
 // examKey: a v1 analytics key, or a v2 exam id (sat, act...) from useV2Store.
 export function trackQuestionsAnswered(count = 1, examKey: ExamAnalyticsKey | string = DMV_ANALYTICS_KEY) {
   if (count <= 0 || isInternalBrowser(auth.currentUser?.email)) return;
@@ -100,13 +121,34 @@ async function flushAnsweredQuestions() {
   for (const key of Object.keys(pendingByExam)) delete pendingByExam[key];
   const count = Object.values(byExam).reduce((a, b) => a + b, 0);
   if (count <= 0) return;
+  const user = auth.currentUser;
+  const browserId = getBrowserId();
+  const day = new Date().toISOString().slice(0, 10);
+  const learnerKey = user?.uid ?? browserId;
+  const reportLearner = !!learnerKey && !isInternalBrowser(user?.email) && !walAlreadySent(learnerKey, day);
   try {
-    await fetch("/api/analytics/questions", {
+    const headers: Record<string, string> = { "Content-Type": "application/json" };
+    if (user && reportLearner) {
+      try {
+        headers.Authorization = `Bearer ${await user.getIdToken()}`;
+      } catch {
+        // Record the browser id. The server treats a missing token as logged out.
+      }
+    }
+    const res = await fetch("/api/analytics/questions", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ count, byExam }),
+      headers,
+      body: JSON.stringify({
+        count,
+        byExam,
+        ...(reportLearner && browserId ? { browserId } : {}),
+      }),
       keepalive: true,
     });
+    if (res.ok && reportLearner && learnerKey) {
+      const body = (await res.json().catch(() => ({}))) as { learner?: boolean };
+      if (body.learner) markWalSent(learnerKey, day);
+    }
   } catch {
     // Re-queue so the counts ride along with the next flush.
     for (const [key, n] of Object.entries(byExam)) {

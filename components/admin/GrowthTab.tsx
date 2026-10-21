@@ -10,6 +10,7 @@ import {
 } from "recharts";
 import { TabError, TabHeader, TabLoading, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { BasicsProgress } from "@/components/admin/BasicsProgress";
+import { WeeklyActiveLearners } from "@/components/admin/WeeklyActiveLearners";
 
 // ─── Palette (validated: dataviz reference palette, light mode) ─────────────
 const COLORS = {
@@ -985,6 +986,8 @@ export function GrowthTab() {
             delta={<Delta now={kpis.wau} prev={kpis.wauPrev} suffix="vs previous week" />}
           />
         </div>
+
+        <WeeklyActiveLearners />
 
         {/* Range filter — scopes every chart below */}
         <div className="flex items-center gap-1 mb-4 bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 w-fit shadow-sm">

@@ -6,6 +6,8 @@ import { getInternalUids } from '@/lib/server/internalUsers';
 import { states } from '@/data/states';
 import { resolveUserExamId } from '@/lib/email-voice';
 import { getCatalogEntry, getCatalogEntryByPath } from '@/lib/testCatalog';
+import { isAnswered } from '@/lib/v2/grading';
+import type { AnswerValue } from '@/lib/v2/types';
 
 const STATE_PASS_PCT: Record<string, number> = states.reduce(
   (acc, s) => {
@@ -71,11 +73,11 @@ function processFullDoc(data: Record<string, unknown>) {
   const onboardingMastered = (training.masteredQuestionIds || []) as unknown[];
 
   const trainingSets = (data.trainingSets || {}) as Record<string, Record<string, unknown>>;
+  // Every training set, DMV (1-4) and every registry exam's (121, 701...).
   let trainingQuestionsAnswered = onboardingMastered.length;
-  for (const setId of [1, 2, 3, 4]) {
-    const setData = trainingSets[String(setId)] || trainingSets[setId as unknown as string] || {};
-    const masteredIds = (setData.masteredIds || []) as unknown[];
-    const wrongQueue = (setData.wrongQueue || []) as unknown[];
+  for (const setData of Object.values(trainingSets)) {
+    const masteredIds = (setData?.masteredIds || []) as unknown[];
+    const wrongQueue = (setData?.wrongQueue || []) as unknown[];
     trainingQuestionsAnswered += masteredIds.length + wrongQueue.length;
   }
 
@@ -90,6 +92,29 @@ function processFullDoc(data: Record<string, unknown>) {
     const testData = currentTests[testId];
     if (testData?.answers) {
       testQuestionsAnswered += Object.keys(testData.answers as Record<string, unknown>).length;
+    }
+  }
+
+  // v2 exams (SAT, ACT, HESI, EMT...): drills and Basics count as training,
+  // finished and in-progress tests as test questions.
+  const v2 = (data.v2 || {}) as Record<string, unknown>;
+  for (const d of Object.values((v2.drills || {}) as Record<string, Record<string, unknown>>)) {
+    trainingQuestionsAnswered +=
+      ((d?.masteredIds || []) as unknown[]).length + ((d?.wrongQueue || []) as unknown[]).length;
+  }
+  for (const b of Object.values((v2.basics || {}) as Record<string, Record<string, unknown>>)) {
+    if (typeof b?.total === 'number') trainingQuestionsAnswered += b.total;
+  }
+  const v2Results = (Array.isArray(v2.results) ? v2.results : []) as Record<string, unknown>[];
+  for (const r of v2Results) {
+    const items = (Array.isArray(r?.items) ? r.items : []) as Record<string, unknown>[];
+    testQuestionsAnswered += items.filter((i) => isAnswered(i?.answer as AnswerValue | undefined)).length;
+  }
+  for (const session of Object.values((v2.sessions || {}) as Record<string, Record<string, unknown>>)) {
+    if (session?.completedAt) continue;
+    for (const stage of (Array.isArray(session?.stages) ? session.stages : []) as Record<string, unknown>[]) {
+      const answers = (stage?.answers || {}) as Record<string, unknown>;
+      testQuestionsAnswered += Object.values(answers).filter((a) => isAnswered(a as AnswerValue)).length;
     }
   }
 
@@ -137,7 +162,7 @@ function processFullDoc(data: Record<string, unknown>) {
   }
 
   return {
-    testsCompleted: completedTests.length,
+    testsCompleted: completedTests.length + v2Results.length,
     trainingQuestionsAnswered,
     testQuestionsAnswered,
     isPremium: (data.subscription as Record<string, unknown>)?.isPremium === true,

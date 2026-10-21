@@ -1,9 +1,10 @@
 /**
  * "What test should we build next?"
  *
- * The one-click answers offered in the new-tests email and on the
- * unsubscribe page. A click records a pick in the `testRequests` collection
- * and lands on /request-test, which asks for the exact exam in free text.
+ * The one-click answers offered in the new-tests email, the unsubscribe
+ * page and the homepage's "Request a test" button. A click records a pick
+ * in the `testRequests` collection and lands on /request-test, which asks
+ * for the exact exam in free text.
  * The pick is the cheap signal; the exam name is the one that decides what
  * gets built. Server and client safe.
  */
@@ -16,15 +17,19 @@ export interface TestRequestPick {
   hint: string;
 }
 
+/**
+ * Hints name only exams we do not offer yet, so the examples never suggest
+ * something already on the site. Ids stay fixed: stored answers use them.
+ */
 export const TEST_REQUEST_PICKS: TestRequestPick[] = [
-  { id: "driving", label: "Driving tests", hint: "DMV, CDL, motorcycle, another state" },
-  { id: "healthcare", label: "Healthcare certs", hint: "CNA, pharmacy tech, phlebotomy, EKG, medical assistant, dental" },
-  { id: "nursing", label: "Nursing school & NCLEX", hint: "TEAS, HESI, NCLEX-RN, NCLEX-PN" },
-  { id: "it", label: "IT certifications", hint: "CompTIA, AWS, Azure, Cisco, Google" },
+  { id: "driving", label: "Driving tests", hint: "School bus, taxi or chauffeur license, TWIC card, driver's ed final" },
+  { id: "healthcare", label: "Healthcare certs", hint: "Medical coding (CPC), CMA (AAMA), RMA, patient care tech, massage (MBLEx)" },
+  { id: "nursing", label: "Nursing school & NCLEX", hint: "NCLEX-PN, ATI exit exam, CCRN, CEN, nurse practitioner boards" },
+  { id: "it", label: "IT certifications", hint: "Network+, CySA+, Azure, Google Cloud, Cisco CCNA" },
   { id: "trades", label: "Trade licenses", hint: "Electrician, HVAC, plumbing, contractor, cosmetology, barber" },
-  { id: "finance", label: "Real estate & finance", hint: "Real estate, insurance, notary, Series 7, mortgage" },
-  { id: "safety", label: "Public safety", hint: "EMT, paramedic, firefighter, police, security guard" },
-  { id: "school", label: "School & college", hint: "PSAT, AP, GED, CLEP" },
+  { id: "finance", label: "Real estate & finance", hint: "SIE, Series 7, Series 63, mortgage (NMLS), claims adjuster" },
+  { id: "safety", label: "Public safety", hint: "Paramedic, firefighter, police academy, 911 dispatcher, corrections" },
+  { id: "school", label: "School & college", hint: "GED, HiSET, PSAT, AP, CLEP, GRE" },
   { id: "other", label: "Something else", hint: "Anything at all" },
 ];
 

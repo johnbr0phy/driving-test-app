@@ -176,7 +176,7 @@ export default function GedLandingPage() {
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Built on the GED Subject Areas</h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                Each practice test follows the content weights GED Testing Service publishes for the four subjects, and the drills are split the same way, so your results show which subject is holding you back. The essay (RLA extended response) is not modeled.
+                Each practice test follows the assessment targets in the GED Testing Service Assessment Guide for Educators (October 2020 edition), and the drills are split the same way, so your results show which subject is holding you back. The essay (RLA extended response) is not modeled.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (

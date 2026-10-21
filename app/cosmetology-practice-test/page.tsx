@@ -14,7 +14,7 @@ const title = "Free Cosmetology Practice Test 2026 - State Board Theory Exam Pre
 const metaDescription =
   "Free cosmetology state board practice tests: 200 questions on infection control, anatomy, chemistry, haircutting, texture services, color, skin and nails. All explained.";
 const description =
-  "Free cosmetology state board practice tests with 200 questions on infection control and safety, anatomy and physiology, chemistry and electricity, client consultation, shampooing, haircutting and styling, chemical texture services, haircoloring, skin care and nail care, weighted like the NIC national theory exam. Explanations on every question.";
+  "Free cosmetology state board practice tests with 200 questions on infection control and safety, anatomy and physiology, chemistry and electricity, client consultation, shampooing, haircutting and styling, chemical texture services, haircoloring, skin care and nail care, weighted like the NIC national theory exam only (110 items, 90 minutes). Explanations on every question.";
 
 export const metadata: Metadata = {
   title,
@@ -68,7 +68,7 @@ const jsonLd = {
           name: "What is on the cosmetology state board written exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Most states use the NIC National Cosmetology Theory Examination. Its 2022 content outline has four domains: Scientific Concepts (35 percent: infection control and safety, anatomy and physiology, basic chemistry), Hair Care and Services (45 percent: consultation, tools, shampooing, haircutting and styling, chemical texture services and haircoloring), Skin Care and Services (10 percent) and Nail Care and Services (10 percent). A few states use their own exam, so check your state board's candidate bulletin.",
+            text: "These practice sets follow the NIC National Cosmetology Theory Examination only. Its content outline, effective July 1, 2022, has four domains: Scientific Concepts (35 percent: infection control and safety, anatomy and physiology, basic chemistry), Hair Care and Services (45 percent), Skin Care and Services (10 percent) and Nail Care and Services (10 percent). The candidate bulletin was revised January 1, 2026 and the weights did not change. States that use PSI sit a different exam. Check your state board's candidate bulletin.",
           },
         },
         {
@@ -76,7 +76,7 @@ const jsonLd = {
           name: "How many questions are on the NIC cosmetology theory exam and how long is it?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The NIC cosmetology theory exam has 110 multiple-choice questions, 100 of which are scored; the other 10 are unscored pretest items you cannot tell apart from the rest. You have 90 minutes. Each practice test here is 50 questions in the same proportions, so two practice tests are about one real exam.",
+            text: "The 110-question, 90-minute length is NIC only. The NIC exam has 110 multiple-choice questions, 100 of which are scored, and you have 90 minutes. The PSI national theory exam is also 110 questions with 100 scored, but you have 120 minutes and the topic weights are different. Each practice test here is 50 questions in the NIC proportions.",
           },
         },
         {
@@ -85,6 +85,14 @@ const jsonLd = {
           acceptedAnswer: {
             "@type": "Answer",
             text: "NIC reports a scaled score, and most state boards set the passing score at 75. Because the score is scaled, 75 is not exactly 75 percent correct, and the mark varies by state. The practice tests here use a 75 percent pass line; aim for 85 percent or better before test day so you have room to spare.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does this match the PSI cosmetology exam?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. This bank follows the NIC outline only. PSI lists national cosmetology and barber testing in Alabama, Colorado, Georgia, Kentucky, Maryland, Michigan and Tennessee, and theory testing in California, Massachusetts and Hawaii. The 2025 PSI outline, which the California Board of Barbering and Cosmetology set for April 1, 2026, is 110 questions (100 scored) in 120 minutes: infection control 30 percent, client consultation 19 percent, haircoloring 10 percent, chemical texture 12 percent, hair removal 8 percent, nail care 8 percent, skin care 4 percent, eyelash and eyebrow 4 percent, haircutting 3 percent and hairstyling 2 percent. A PSI-weighted set is not in this bank.",
           },
         },
         {
@@ -171,7 +179,7 @@ export default function CosmetologyLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four 50-question tests weighted the way the NIC theory exam is, with a 75 percent pass line and an explanation of the right answer and the common wrong pick on every item.
+                Four 50-question tests in the NIC proportions only (the NIC exam is 110 items in 90 minutes), with a 75 percent pass line and an explanation of the right answer and the common wrong pick on every item.
               </p>
             </div>
           </div>
@@ -187,7 +195,7 @@ export default function CosmetologyLandingPage() {
                 Built on the NIC Theory Exam Outline
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                Most states use the NIC National Cosmetology Theory Examination; a few use their own, so check your board. The NIC outline gives Scientific Concepts 35 percent, Hair Care and Services 45 percent, and Skin Care and Nail Care 10 percent each. The practice tests here split those domains into the nine topics your textbook teaches and keep the same weights, so hair services and infection control get the most questions, exactly as they do on test day. If you teach a cosmetology program, you can assign it to your class for free at{" "}
+                These sets cover the NIC National Cosmetology Theory Examination only: 110 questions, 100 scored, in 90 minutes. That length is NIC only. The NIC outline gives Scientific Concepts 35 percent, Hair Care and Services 45 percent, and Skin Care and Nail Care 10 percent each. PSI states, including California from April 1, 2026, use a 120-minute outline with different weights, and this bank is not weighted to it. The percentages below are the share of these NIC practice tests. If you teach a cosmetology program, you can assign it to your class for free at{" "}
                 <Link href="/teach" className="text-brand-dark font-medium underline underline-offset-2">
                   tigertest.io/teach
                 </Link>
@@ -277,19 +285,25 @@ export default function CosmetologyLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is on the cosmetology state board written exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Most states use the NIC National Cosmetology Theory Examination. Its 2022 content outline has four domains: Scientific Concepts (35 percent: infection control and safety, anatomy and physiology, basic chemistry), Hair Care and Services (45 percent: consultation, tools, shampooing, haircutting and styling, chemical texture services and haircoloring), Skin Care and Services (10 percent) and Nail Care and Services (10 percent). A few states use their own exam, so check your state board&apos;s candidate bulletin.
+              These practice sets follow the NIC National Cosmetology Theory Examination only. Its content outline, effective July 1, 2022, has four domains: Scientific Concepts (35 percent: infection control and safety, anatomy and physiology, basic chemistry), Hair Care and Services (45 percent), Skin Care and Services (10 percent) and Nail Care and Services (10 percent). The candidate bulletin was revised January 1, 2026 and the weights did not change. States that use PSI sit a different exam. Check your state board&apos;s candidate bulletin.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the NIC cosmetology theory exam and how long is it?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              The NIC cosmetology theory exam has 110 multiple-choice questions, 100 of which are scored; the other 10 are unscored pretest items you cannot tell apart from the rest. You have 90 minutes. Each practice test here is 50 questions in the same proportions, so two practice tests are about one real exam.
+              The 110-question, 90-minute length is NIC only. The NIC exam has 110 multiple-choice questions, 100 of which are scored, and you have 90 minutes. The PSI national theory exam is also 110 questions with 100 scored, but you have 120 minutes and the topic weights are different. Each practice test here is 50 questions in the NIC proportions.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What score do I need to pass the cosmetology written exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
               NIC reports a scaled score, and most state boards set the passing score at 75. Because the score is scaled, 75 is not exactly 75 percent correct, and the mark varies by state. The practice tests here use a 75 percent pass line; aim for 85 percent or better before test day so you have room to spare.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this match the PSI cosmetology exam?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
+              No. This bank follows the NIC outline only. PSI lists national cosmetology and barber testing in Alabama, Colorado, Georgia, Kentucky, Maryland, Michigan and Tennessee, and theory testing in California, Massachusetts and Hawaii. The 2025 PSI outline, which the California Board of Barbering and Cosmetology set for April 1, 2026, is 110 questions (100 scored) in 120 minutes: infection control 30 percent, client consultation 19 percent, haircoloring 10 percent, chemical texture 12 percent, hair removal 8 percent, nail care 8 percent, skin care 4 percent, eyelash and eyebrow 4 percent, haircutting 3 percent and hairstyling 2 percent. A PSI-weighted set is not in this bank.
             </p>
           </div>
           <div>

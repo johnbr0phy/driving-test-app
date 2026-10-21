@@ -100,7 +100,8 @@
     "skill": "Tension pneumothorax",
     "difficulty": 2,
     "format": "multi",
-    "stem": "Which findings point to tension pneumothorax in a ventilated chest-trauma patient? Select all that apply.",
+    "select": 3,
+    "stem": "Which findings point to tension pneumothorax in a ventilated chest-trauma patient? Choose three.",
     "options": [
       "Bilateral crackles",
       "Rising resistance to bag ventilation",
@@ -216,7 +217,8 @@
     "skill": "Trauma center criteria",
     "difficulty": 2,
     "format": "multi",
-    "stem": "Which findings meet the national field triage criteria for transport to the highest-level trauma center? Select all that apply.",
+    "select": 3,
+    "stem": "Which findings meet the national field triage criteria for transport to the highest-level trauma center? Choose three.",
     "options": [
       "Unable to follow commands after the crash",
       "Gunshot wound to the thigh",

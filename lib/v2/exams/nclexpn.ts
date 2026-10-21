@@ -12,7 +12,10 @@ import { percentScale, overallPercent } from "../scales";
 // Reduction of Risk Potential 9-15%, Physiological Adaptation 7-13%.
 // Every item is written for the PN scope: collecting data, reinforcing
 // teaching, contributing to the plan of care, assigning tasks to assistive
-// personnel and reporting changes to the RN or provider. Includes select all
+// personnel and reporting changes to the RN or provider. Each test has one
+// six-item unfolding case study (plus a drill-only case). The shared charts
+// in tools/nclexpn/stimuli.json carry history, medications and the opening
+// vital signs; later findings stay on the item. Also includes select all
 // that apply, matrix, bowtie and other NGN-style items. Fixed practice items
 // use all-or-nothing scoring, not adaptive ability estimation or partial
 // credit. Scores do not predict NCLEX results.

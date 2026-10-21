@@ -308,7 +308,8 @@
     "skill": "Tube confirmation",
     "difficulty": 2,
     "format": "multi",
-    "stem": "Which findings reliably support tracheal placement of an endotracheal tube? Select all that apply.",
+    "select": 3,
+    "stem": "Which findings reliably support tracheal placement of an endotracheal tube? Choose three.",
     "options": [
       "Condensation inside the tube",
       "Tube depth of 21 cm at the teeth",

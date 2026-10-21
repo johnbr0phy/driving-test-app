@@ -35,8 +35,8 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Fee", value: "Per subject; varies by state" },
       { label: "Given by", value: "GED Testing Service, at Pearson VUE test centers or online proctored" },
     ],
-    basedOn: "the GED Testing Service subject areas and published content weights",
-    source: { name: "GED Testing Service", url: "https://ged.com/about_test/test_subjects/" },
+    basedOn: "the assessment targets in the GED Testing Service Assessment Guide for Educators (October 2020 edition)",
+    source: { name: "GED Testing Service Assessment Guide for Educators", url: "https://www.ged.com/content/dam/websites/ged/resources/en/assessment-guide-for-educators-all-subjects.pdf" },
     tigertest:
       "TigerTest has two full-length GED practice tests covering all four subjects, with a percent score per subject and six skill drills that teach the basics first. All of it is free with no account required; the essay is not modeled.",
   },
@@ -479,16 +479,16 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   cosmetology: {
     answer:
-      "Most states license cosmetologists with the NIC National Cosmetology Theory Examination: 110 multiple-choice questions, 100 of them scored, in 90 minutes. The 2022 outline weights Scientific Concepts 35 percent (infection control, anatomy, chemistry), Hair Care and Services 45 percent, Skin Care 10 percent and Nail Care 10 percent. NIC reports a scaled score and most boards pass at 75; a few states use their own exam, and a separate practical exam, training hours and fees vary by state.",
+      "These practice sets follow the NIC National Cosmetology Theory Examination only. That exam is 110 multiple-choice questions, 100 of them scored, in 90 minutes. The 110-question, 90-minute length is NIC only. The content outline effective July 1, 2022 (candidate bulletin revised January 1, 2026, weights unchanged) gives Scientific Concepts 35 percent, Hair Care and Services 45 percent, Skin Care 10 percent and Nail Care 10 percent. PSI gives a different national theory exam: 110 questions (100 scored) in 120 minutes, with infection control 30 percent, client consultation 19 percent, haircoloring 10 percent, chemical texture 12 percent, hair removal 8 percent, nail care 8 percent, skin care 4 percent, eyelash and eyebrow 4 percent, haircutting 3 percent and hairstyling 2 percent. The California Board of Barbering and Cosmetology set April 1, 2026 for that PSI outline. PSI lists national testing in Alabama, Colorado, Georgia, Kentucky, Maryland, Michigan and Tennessee, and theory testing in California, Massachusetts and Hawaii. This bank is not weighted to the PSI outline. A separate practical exam, training hours and fees vary by state.",
     rows: [
-      { label: "Questions", value: "110 (100 scored, 10 unscored pretest)" },
-      { label: "Time", value: "90 minutes" },
-      { label: "Passing score", value: "Scaled score, 75 in most states (varies by state)" },
-      { label: "Also required", value: "Practical exam, training hours and fee vary by state" },
-      { label: "Given by", value: "NIC national theory exam in most states; a few use their own" },
+      { label: "NIC questions", value: "110 (100 scored). NIC only" },
+      { label: "NIC time", value: "90 minutes. NIC only" },
+      { label: "PSI questions and time", value: "110 (100 scored) in 120 minutes. Not this bank" },
+      { label: "Passing score", value: "NIC scaled score, 75 in most NIC states (varies by state)" },
+      { label: "Who uses which", value: "NIC in many states. PSI national: AL, CO, GA, KY, MD, MI, TN. PSI theory: CA, MA, HI" },
     ],
-    basedOn: "the NIC National Cosmetology Theory Examination content outline, effective July 2022",
-    source: { name: "NIC", url: "https://www.nictesting.org" },
+    basedOn: "the NIC National Cosmetology Theory Examination content outline, effective July 1, 2022 (110 items, 90 minutes; NIC only)",
+    source: { name: "NIC Cosmetology Theory CIB", url: "https://prov-testing.github.io/nic_cib/cosmetology_national_theory_english.html" },
   },
   vtne: {
     answer:

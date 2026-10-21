@@ -491,7 +491,8 @@
     "skill": "Severe head injury",
     "difficulty": 3,
     "format": "multi",
-    "stem": "A 19-year-old was ejected from a car. GCS 7, pupils equal at 4 mm, HR 100, BP 130/80, SpO2 91 percent. Which actions are appropriate? Select all that apply.",
+    "select": 3,
+    "stem": "A 19-year-old was ejected from a car. GCS 7, pupils equal at 4 mm, HR 100, BP 130/80, SpO2 91 percent. Which actions are appropriate? Choose three.",
     "options": [
       "Maintain SpO2 at 94 percent or higher",
       "Ventilate to an ETCO2 of 35 to 45 mm Hg",
@@ -512,7 +513,8 @@
     "skill": "Pediatric asthma",
     "difficulty": 2,
     "format": "multi",
-    "stem": "An 8-year-old with asthma is in severe distress: speaking in single words, SpO2 89 percent, RR 40, HR 150. Which treatments are appropriate per local protocol? Select all that apply.",
+    "select": 3,
+    "stem": "An 8-year-old with asthma is in severe distress: speaking in single words, SpO2 89 percent, RR 40, HR 150. Which treatments are appropriate per local protocol? Choose three.",
     "options": [
       "Albuterol nebulized, repeated or continuous",
       "Ipratropium 0.5 mg with the first albuterol",
@@ -991,7 +993,8 @@
     "skill": "Septic shock",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A 58-year-old diabetic with a foot ulcer has a temperature of 39 C, HR 124, BP 86/50 and confusion. Which actions are correct? Select all that apply.",
+    "select": 3,
+    "stem": "A 58-year-old diabetic with a foot ulcer has a temperature of 39 C, HR 124, BP 86/50 and confusion. Which actions are correct? Choose three.",
     "options": [
       "Begin a 30 mL/kg crystalloid bolus",
       "Give a sepsis alert to the receiving hospital",
@@ -1012,7 +1015,8 @@
     "skill": "Multisystem trauma",
     "difficulty": 3,
     "format": "multi",
-    "stem": "A 72-year-old is unresponsive after falling down stairs. GCS 6, snoring respirations, SpO2 90 percent on a nonrebreather, BP 90/50, HR 120, and a flail segment on the right chest. Which actions are appropriate? Select all that apply.",
+    "select": 3,
+    "stem": "A 72-year-old is unresponsive after falling down stairs. GCS 6, snoring respirations, SpO2 90 percent on a nonrebreather, BP 90/50, HR 120, and a flail segment on the right chest. Which actions are appropriate? Choose three.",
     "options": [
       "Jaw thrust, oral airway and bag-valve mask ventilation",
       "Spinal motion restriction",
@@ -1033,7 +1037,8 @@
     "skill": "Beta blocker overdose",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A 16-year-old weighing 50 kg took an unknown quantity of her mother's propranolol an hour ago. HR 40, BP 70/40, glucose 48 mg/dL, drowsy. Which treatments are appropriate per protocol? Select all that apply.",
+    "select": 3,
+    "stem": "A 16-year-old weighing 50 kg took an unknown quantity of her mother's propranolol an hour ago. HR 40, BP 70/40, glucose 48 mg/dL, drowsy. Which treatments are appropriate per protocol? Choose three.",
     "options": [
       "Dextrose for the hypoglycemia",
       "Glucagon 3 to 5 mg IV",
@@ -1244,7 +1249,8 @@
     "skill": "Eclampsia management",
     "difficulty": 3,
     "format": "multi",
-    "stem": "A 30-year-old at 36 weeks of pregnancy is having a generalized seizure. Which actions are correct? Select all that apply.",
+    "select": 3,
+    "stem": "A 30-year-old at 36 weeks of pregnancy is having a generalized seizure. Which actions are correct? Choose three.",
     "options": [
       "Magnesium sulfate 4 to 6 g IV",
       "Position on the left side",

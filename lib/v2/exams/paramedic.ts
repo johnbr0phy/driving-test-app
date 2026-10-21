@@ -6,8 +6,10 @@ import { percentScale, overallPercent } from "../scales";
 // including 20 unscored pilot items, 3.5 hours, answered in order with no
 // going back, at Pearson VUE centers. Item types since the 2024 redesign:
 // multiple choice, multiple response (two or three of five or six), build
-// list (order), drag and drop and options box (matrix here), graphical
-// (ECG strips, described in words here) and scenario-based sets.
+// list (order), drag and drop and options box (matrix here), and graphical
+// items (ECG strips, described in words here). Items with exactly three
+// correct options use Choose three. Each technology-enhanced item stands
+// alone; shared scenario sets are not in this bank.
 //
 // The test plan administered from July 1, 2024 is still the current one
 // (verified October 2026 at nremt.org, "Paramedic-Test-Plan_1July2024"). It
@@ -37,7 +39,7 @@ export const PARAMEDIC: ExamV2Config = {
       shortName: "Paramedic",
       linear: true,
       modules: [{ module: 1, questionCount: 80, timeLimit: minutes(150) }],
-      directions: "80 questions across the six NREMT Paramedic domains. Answer each one before moving on; like the real exam, you cannot go back. Build-list items need every step in order, options-box items need every row, and dose items take a number.",
+      directions: "80 questions across the six NREMT Paramedic domains. Answer each one before moving on; like the real exam, you cannot go back. Choose-three items need three answers, build-list items need every step in order, options-box items need every row, and dose items take a number.",
       scale: percentScale(80),
       domains: ["pmdAirway", "pmdCardio", "pmdTrauma", "pmdMedical", "pmdOps", "pmdJudgment"],
     },

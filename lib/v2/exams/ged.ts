@@ -3,7 +3,8 @@ import { percentScale, overallPercent } from "../scales";
 
 // GED (GED Testing Service): four subject tests, each taken and scored on its
 // own, 100 to 200 with 145 passing (165 college ready, 175 college ready plus
-// credit). The real test: Reasoning Through Language Arts 150 min including a
+// credit). Subject weights below are the assessment targets in the GED Testing
+// Service Assessment Guide for Educators (October 2020 edition). The real test: Reasoning Through Language Arts 150 min including a
 // 45-minute extended response essay (not modeled here; 75% informational,
 // 25% literary passages), Mathematical Reasoning 115 min (45% quantitative
 // problem solving, 55% algebraic problem solving; TI-30XS calculator allowed
@@ -116,7 +117,7 @@ export const GED: ExamV2Config = {
       "Hit your goal on the full test.",
       "Goal hit. Go schedule your GED.",
     ],
-    sourceLine: "Modeled on the GED test's four subject areas and content weights. Original questions; not affiliated with GED Testing Service.",
+    sourceLine: "Based on the assessment targets in the GED Testing Service Assessment Guide for Educators (October 2020 edition). Original questions; not affiliated with GED Testing Service.",
     scoreNote: "Scores here are percent correct per subject. The real GED scores each subject 100 to 200 and 145 passes; that cutoff is not a fixed percent, so aim for a comfortable margin.",
   },
 };

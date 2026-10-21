@@ -147,7 +147,8 @@
     "skill": "Crime scene preservation",
     "difficulty": 1,
     "format": "multi",
-    "stem": "While treating a patient at a crime scene, which practices preserve evidence? Select all that apply.",
+    "select": 3,
+    "stem": "While treating a patient at a crime scene, which practices preserve evidence? Choose three.",
     "options": [
       "Document anything you moved",
       "Wash the patient's hands before transport",
@@ -310,7 +311,8 @@
     "skill": "Crew resource management",
     "difficulty": 2,
     "format": "multi",
-    "stem": "Which practices reflect crew resource management? Select all that apply.",
+    "select": 3,
+    "stem": "Which practices reflect crew resource management? Choose three.",
     "options": [
       "Skipping the checklist on a familiar call",
       "Closed-loop repetition of every drug order",

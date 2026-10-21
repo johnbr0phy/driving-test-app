@@ -359,7 +359,8 @@
     "skill": "Nitroglycerin contraindications",
     "difficulty": 2,
     "format": "multi",
-    "stem": "Which findings contraindicate nitroglycerin in a patient with ischemic chest pain? Select all that apply.",
+    "select": 3,
+    "stem": "Which findings contraindicate nitroglycerin in a patient with ischemic chest pain? Choose three.",
     "options": [
       "ST elevation in lead V4R",
       "Sildenafil taken 12 hours ago",
@@ -468,7 +469,8 @@
     "skill": "Return of circulation",
     "difficulty": 2,
     "format": "multi",
-    "stem": "During CPR, which findings suggest return of spontaneous circulation? Select all that apply.",
+    "select": 3,
+    "stem": "During CPR, which findings suggest return of spontaneous circulation? Choose three.",
     "options": [
       "Abrupt rise in ETCO2 to 45 mm Hg",
       "Organized rhythm with a pulse",

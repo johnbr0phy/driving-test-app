@@ -2063,11 +2063,15 @@ const cosmetology: ExamConfig = {
   testCount: 4,
   questionsPerTest: 50,
   passPct: 75,
-  // NIC National Cosmetology Theory Examination content outline, effective and
-  // revised July 1, 2022 (110 items, 100 scored, 90 minutes): Scientific
-  // Concepts 35%, Hair Care and Services 45%, Skin Care and Services 10%,
-  // Nail Care and Services 10%, split into the nine topics schools teach.
-  // NIC reports a scaled score; most boards pass at 75 (varies by state).
+  // NIC National Cosmetology Theory Examination only. Content outline effective
+  // July 1, 2022; candidate bulletin revised January 1, 2026 with the same
+  // weights: 110 items, 100 scored, 90 minutes. That length is NIC only.
+  // Scientific Concepts 35%, Hair Care and Services 45%, Skin Care 10%,
+  // Nail Care 10%, split into the nine topics schools teach.
+  // PSI national theory (California effective April 1, 2026; PSI also lists
+  // AL, CO, GA, KY, MD, MI, TN, plus theory in MA and HI) is 110 items in
+  // 120 minutes with different weights. This bank is not weighted to PSI.
+  // NIC reports a scaled score; most NIC boards pass at 75 (varies by state).
   blueprint: {
     cosInfection: 9,
     cosAnatomy: 5,
@@ -2099,8 +2103,8 @@ const cosmetology: ExamConfig = {
   copy: {
     guestPrompt: "to save your cosmetology progress and track every question you miss",
     trainingHeading: "Train by topic",
-    trainingSub: "Four sets covering the state board theory exam: the sciences (infection control, anatomy, chemistry), consultation with cutting and styling, chemical services (texture and color), and skin and nails. Missed questions come back until you master them.",
-    testsHeading: "Practice tests · 50 questions in the NIC theory exam's proportions",
+    trainingSub: "Four sets for the NIC theory exam only (110 questions, 100 scored, 90 minutes). Sciences, consultation with cutting and styling, chemical services, and skin and nails. These sets do not follow the PSI outline. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the NIC proportions (NIC only: 110 items, 90 minutes)",
     heroSubs: [
       "Nine topics, four tests. Infection control and hair services carry the most questions.",
       "Master each set, then test.",
@@ -2108,7 +2112,7 @@ const cosmetology: ExamConfig = {
       "Fix the misses, then retake.",
       "All done. Go pass your state board.",
     ],
-    sourceLine: "Based on the NIC National Cosmetology Theory Examination content outline (2022). Most states use the NIC exam; a few use their own. Hours, fees and the practical exam vary by state.",
+    sourceLine: "These sets follow the NIC theory exam only: 110 items, 100 scored, 90 minutes (outline effective July 1, 2022). PSI states, including California from April 1, 2026, use a 120-minute outline. This bank is not weighted to PSI.",
     analyticsKey: "cosmetology",
   },
 };

@@ -344,7 +344,8 @@
     "skill": "Stroke",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A 68-year-old has sudden right arm weakness and slurred speech that started 40 minutes ago. Which actions are part of prehospital stroke care? Select all that apply.",
+    "select": 3,
+    "stem": "A 68-year-old has sudden right arm weakness and slurred speech that started 40 minutes ago. Which actions are part of prehospital stroke care? Choose three.",
     "options": [
       "Check blood glucose",
       "Record the last known well time",
@@ -366,7 +367,8 @@
     "skill": "Heat stroke",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A marathon runner collapses on a hot day with a core temperature of 41 C (105.8 F), confusion and hot skin. Which treatments are indicated? Select all that apply.",
+    "select": 3,
+    "stem": "A marathon runner collapses on a hot day with a core temperature of 41 C (105.8 F), confusion and hot skin. Which treatments are indicated? Choose three.",
     "options": [
       "Cold water immersion when available",
       "Ice packs to the neck, axillae and groin",
@@ -387,7 +389,8 @@
     "skill": "Child abuse",
     "difficulty": 2,
     "format": "multi",
-    "stem": "Which findings should raise suspicion of child abuse? Select all that apply.",
+    "select": 3,
+    "stem": "Which findings should raise suspicion of child abuse? Choose three.",
     "options": [
       "Bruises on the torso of a 3-month-old",
       "A burn in a glove pattern on the hand",
@@ -746,7 +749,8 @@
     "skill": "Snakebite",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A 40-year-old was bitten on the hand by a rattlesnake 20 minutes ago. Which actions are appropriate? Select all that apply.",
+    "select": 3,
+    "stem": "A 40-year-old was bitten on the hand by a rattlesnake 20 minutes ago. Which actions are appropriate? Choose three.",
     "options": [
       "Remove rings and watches",
       "Immobilize the hand in a splint",
@@ -768,7 +772,8 @@
     "skill": "Severe agitation",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A 25-year-old who used a stimulant is violently agitated, hot to the touch and still fighting four officers. Which management steps are correct? Select all that apply.",
+    "select": 3,
+    "stem": "A 25-year-old who used a stimulant is violently agitated, hot to the touch and still fighting four officers. Which management steps are correct? Choose three.",
     "options": [
       "Sedation per local protocol",
       "Continuous capnography and SpO2 after sedation",
@@ -789,7 +794,8 @@
     "skill": "Geriatric assessment",
     "difficulty": 2,
     "format": "multi",
-    "stem": "Which features of aging change how a paramedic interprets vital signs in an 85-year-old? Select all that apply.",
+    "select": 3,
+    "stem": "Which features of aging change how a paramedic interprets vital signs in an 85-year-old? Choose three.",
     "options": [
       "Beta blockers can prevent a tachycardic response to shock",
       "A systolic BP of 110 may be low for a chronically hypertensive patient",
@@ -986,7 +992,8 @@
     "skill": "Anaphylaxis criteria",
     "difficulty": 2,
     "format": "multi",
-    "stem": "Which presentations after a known allergen exposure meet criteria for anaphylaxis? Select all that apply.",
+    "select": 3,
+    "stem": "Which presentations after a known allergen exposure meet criteria for anaphylaxis? Choose three.",
     "options": [
       "Hives with wheezing",
       "Lip swelling with a BP of 80/50",

@@ -1,0 +1,1011 @@
+[
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Anaphylaxis",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 34-year-old woman stung by a wasp has hives, lip swelling, wheezing and a BP of 84/50. Which medication is given first?",
+    "options": [
+      "Epinephrine 0.3 to 0.5 mg IM",
+      "Diphenhydramine 50 mg IV",
+      "Methylprednisolone 125 mg IV",
+      "Albuterol 2.5 mg nebulized"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Epinephrine IM in the lateral thigh is the first-line drug for anaphylaxis and the only one that reverses airway swelling and hypotension. Antihistamines, steroids and bronchodilators are adjuncts that do not treat the shock."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Refractory anaphylaxis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "After two IM doses of epinephrine and 1 L of normal saline, a patient with anaphylaxis is still hypotensive at 78/40 and wheezing. Per local protocol, the next step is:",
+    "options": [
+      "A repeated dose of diphenhydramine 50 mg IM",
+      "An epinephrine infusion titrated to BP",
+      "A third fluid bolus with no more epinephrine",
+      "Nebulized ipratropium 0.5 mg"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Anaphylaxis that does not respond to repeated IM epinephrine and fluid is treated with a titrated epinephrine infusion (or push-dose epinephrine where protocol allows). Antihistamines and ipratropium do not raise blood pressure, and fluid alone has already failed."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Anaphylaxis on beta blockers",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A patient with anaphylaxis who takes metoprolol is not responding to epinephrine. Which medication is specific to this situation?",
+    "options": [
+      "Atropine 1 mg IV",
+      "Calcium chloride 1 g IV",
+      "Glucagon 1 to 2 mg IV",
+      "Sodium bicarbonate 1 mEq/kg IV"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Glucagon raises heart rate and contractility through a pathway that bypasses blocked beta receptors, so it is used when epinephrine fails in a beta-blocked patient. Calcium is the antidote for calcium channel blocker toxicity, not for this problem."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Preeclampsia and eclampsia",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 29-year-old woman at 34 weeks of pregnancy has a headache, blurred vision and a BP of 168/112. Which finding would mean her condition has progressed to eclampsia?",
+    "options": [
+      "Pitting edema of both ankles",
+      "Protein on a urine dipstick",
+      "Epigastric pain with nausea and vomiting",
+      "A generalized tonic-clonic seizure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Eclampsia is preeclampsia plus seizure. Edema, proteinuria and epigastric pain are features of preeclampsia itself, some of them severe, but they do not define the progression."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Eclampsia treatment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A woman at 36 weeks of pregnancy is having a generalized seizure. Which medication is first line per local protocol?",
+    "options": [
+      "Magnesium sulfate 4 g IV",
+      "Lorazepam 4 mg IV, repeated once",
+      "Phenytoin 1 g IV",
+      "Labetalol 20 mg IV"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Magnesium sulfate, 4 to 6 g IV over 15 to 20 minutes per protocol, is the first-line anticonvulsant for eclampsia; a benzodiazepine is added only if seizures continue. Labetalol treats the blood pressure, not the seizure."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Magnesium toxicity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a magnesium sulfate infusion for eclampsia, which finding indicates toxicity and the need to stop the drug?",
+    "options": [
+      "Blood pressure of 150/96 after 1 hour",
+      "Loss of the patellar reflex",
+      "Respiratory rate of 18",
+      "Fetal heart rate of 140"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Loss of deep tendon reflexes is the earliest sign of magnesium toxicity, followed by respiratory depression; the antidote is calcium gluconate or calcium chloride. The other values are normal for this patient."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Prolapsed cord",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a field delivery you see a loop of umbilical cord at the vaginal opening before the baby's head. What should you do?",
+    "options": [
+      "Gently push the cord back into the vagina",
+      "Clamp and cut the exposed loop of cord",
+      "Lift the presenting part off the cord",
+      "Apply firm fundal pressure to speed delivery"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A prolapsed cord is compressed by the presenting part, so gloved fingers hold the part off the cord while the mother is placed knee-chest or in steep Trendelenburg and transported for cesarean delivery. The cord is never pushed back or cut."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Shoulder dystocia",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The head delivers and then pulls back against the perineum, and the shoulders do not follow with gentle traction. Which maneuver is performed first?",
+    "options": [
+      "Firm pressure on the top of the fundus",
+      "Steady downward traction on the head",
+      "Having the mother stand up and bear down hard",
+      "Hyperflexing the mother's hips (McRoberts)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The McRoberts maneuver flattens the sacrum and frees the anterior shoulder in most shoulder dystocias; suprapubic pressure is added next. Fundal pressure wedges the shoulder tighter, and pulling on the head injures the brachial plexus."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Neonatal resuscitation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A newborn has been dried, warmed and stimulated. After 30 seconds the heart rate is 80 and breathing is gasping. The next step is:",
+    "options": [
+      "Positive pressure ventilation",
+      "Chest compressions at 3:1",
+      "Epinephrine 0.01 mg/kg IV",
+      "Blow-by oxygen and reassess in 30 seconds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A heart rate under 100 or gasping after the initial steps calls for positive pressure ventilation at 40 to 60 breaths per minute. Compressions are added only if the rate stays under 60 after 30 seconds of effective ventilation."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Postpartum hemorrhage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ten minutes after delivering the placenta, a mother is bleeding steadily and her uterus feels soft. Your first action is:",
+    "options": [
+      "Pack the vagina with gauze",
+      "Massage the fundus firmly",
+      "Give oxytocin 10 units IM",
+      "Clamp the umbilical cord again"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Uterine atony is the most common cause of postpartum hemorrhage, and firm fundal massage is the immediate step while oxytocin is prepared per protocol. Vaginal packing is not done in the field."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Ectopic pregnancy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 26-year-old woman has sudden left lower quadrant pain, a missed period and pain in her left shoulder. BP 92/60, pulse 124. The most likely diagnosis is:",
+    "options": [
+      "Ovarian cyst",
+      "Appendicitis",
+      "Ruptured ectopic pregnancy",
+      "Pelvic inflammatory disease"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unilateral pelvic pain with a missed period and shock is a ruptured ectopic pregnancy until proven otherwise; the shoulder pain comes from blood irritating the diaphragm. Appendicitis is right sided and rarely causes shock this fast."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Pediatric assessment triangle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The pediatric assessment triangle forms a first impression from three observations: appearance, work of breathing and:",
+    "options": [
+      "Heart rate",
+      "Pupil size and reaction to light",
+      "Blood pressure",
+      "Circulation to the skin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The triangle is built from what can be seen from the doorway: appearance, work of breathing and circulation to the skin (color, mottling, pallor). Heart rate and blood pressure need hands on the child and come later."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Croup",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 2-year-old has a barking cough, inspiratory stridor at rest and retractions. Which medication is indicated first?",
+    "options": [
+      "Nebulized epinephrine",
+      "Epinephrine 0.15 mg IM",
+      "Nebulized albuterol",
+      "Oral amoxicillin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Moderate to severe croup with stridor at rest is treated with nebulized epinephrine (racemic or 1 mg/mL L-epinephrine per protocol) plus dexamethasone. Albuterol relaxes the lower airways and does nothing for subglottic swelling."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Pediatric hypoglycemia",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 12 kg toddler is lethargic with a glucose of 38 mg/dL. Using D10W, how much should be given?",
+    "options": [
+      "24 mL",
+      "60 mL",
+      "120 mL",
+      "240 mL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Children receive dextrose 0.5 g/kg, which is 5 mL/kg of D10W, so a 12 kg child gets 60 mL (6 g). 24 mL is the 2 mL/kg neonatal dose."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Pediatric drug math",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A 25 kg child in status epilepticus is to receive midazolam 0.2 mg/kg IM. The vial contains 5 mg/mL. How many mL do you draw up? Record your answer as a number.",
+    "numeric": {
+      "answers": [
+        "1",
+        "1.0"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "25 kg x 0.2 mg/kg = 5 mg, and 5 mg divided by 5 mg/mL = 1 mL. Drawing up 5 mL would give 25 mg, five times the dose."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Opioid overdose",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A 30-year-old is found unresponsive with pinpoint pupils and 6 breaths per minute. Place the steps in order.",
+    "options": [
+      "Open the airway and ventilate with a bag-valve mask",
+      "Reassess respirations and mental status",
+      "Give naloxone 0.4 to 2 mg IV, IM or IN",
+      "Monitor for recurrent sedation during transport"
+    ],
+    "correct": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "explanation": "Ventilation comes before the antidote because hypoxia kills first. Naloxone is then titrated to adequate breathing, not to full wakefulness, and the patient is watched because naloxone wears off before most opioids do."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Sepsis",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A 70-year-old nursing home resident has a fever, new confusion, HR 118, BP 88/50 and RR 26. Place the steps in order.",
+    "options": [
+      "IV or IO access",
+      "Vasopressor if still hypotensive",
+      "30 mL/kg crystalloid bolus",
+      "Oxygen and cardiac monitor",
+      "Reassess blood pressure and mental status"
+    ],
+    "correct": [
+      3,
+      0,
+      2,
+      4,
+      1
+    ],
+    "explanation": "Septic shock is treated with oxygen and monitoring, access, an early 30 mL/kg crystalloid bolus, then reassessment; a vasopressor (norepinephrine per protocol) is added only when fluid alone fails to restore a MAP of 65."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Toxidromes",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each set of findings, specify the toxidrome it fits.",
+    "rows": [
+      "Pinpoint pupils with slow breathing",
+      "Hot dry skin, dilated pupils, delirium",
+      "Drooling, tearing, wheezing, diarrhea",
+      "Dilated pupils, sweating, tachycardia, agitation"
+    ],
+    "columns": [
+      "Opioid",
+      "Anticholinergic",
+      "Cholinergic",
+      "Sympathomimetic"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Opioids produce miosis and respiratory depression; anticholinergics produce dry skin with dilated pupils and delirium; cholinergic agents such as organophosphates cause secretions everywhere; sympathomimetics cause dilated pupils with sweating. Sweating is the clue that separates a sympathomimetic from an anticholinergic patient."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Stroke",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 3,
+    "stem": "A 68-year-old has sudden right arm weakness and slurred speech that started 40 minutes ago. Which actions are part of prehospital stroke care? Choose three.",
+    "options": [
+      "Check blood glucose",
+      "Record the last known well time",
+      "Perform a stroke severity scale",
+      "Lower the BP with labetalol",
+      "Give aspirin 324 mg",
+      "Give a 500 mL fluid bolus"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Glucose rules out a hypoglycemic mimic, last known well time sets the thrombolysis and thrombectomy windows, and a severity scale guides the destination. Blood pressure is not lowered in the field, aspirin waits until a CT excludes hemorrhage, and fluid is given only for hypotension."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Heat stroke",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 3,
+    "stem": "A marathon runner collapses on a hot day with a core temperature of 41 C (105.8 F), confusion and hot skin. Which treatments are indicated? Choose three.",
+    "options": [
+      "Cold water immersion when available",
+      "Ice packs to the neck, axillae and groin",
+      "Removing clothing and fanning wet skin",
+      "Acetaminophen 1 g for the fever",
+      "Limiting cooling to avoid shivering"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Heat stroke is treated with rapid whole-body cooling, ideally cold water immersion, with ice packs and evaporative cooling when immersion is not possible, continued until about 39 C. Antipyretics do not work because the hypothalamic set point is not the problem."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 1,
+    "skill": "Child abuse",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 3,
+    "stem": "Which findings should raise suspicion of child abuse? Choose three.",
+    "options": [
+      "Bruises on the torso of a 3-month-old",
+      "A burn in a glove pattern on the hand",
+      "A history that changes between caregivers",
+      "Scraped knees on an active 6-year-old",
+      "Bruises on the shins of a toddler"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Bruises on an infant who cannot yet move independently, immersion burns with a sharp glove or stocking line, and an inconsistent story are red flags. Shin and knee injuries on a walking child are typical accidental injuries."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Diabetic ketoacidosis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 19-year-old with type 1 diabetes has vomiting, deep rapid respirations, a fruity breath odor and a glucose reading of HIGH. Which treatment is appropriate in the field?",
+    "options": [
+      "Regular insulin 10 units IV",
+      "Sodium bicarbonate 50 mEq IV",
+      "A 1 L normal saline bolus",
+      "D10W 250 mL IV"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Patients in DKA are profoundly dehydrated, and isotonic fluid is the prehospital treatment. Insulin is started in the hospital with potassium monitoring, bicarbonate is reserved for severe acidosis, and dextrose would worsen the hyperglycemia."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Hyperosmolar hyperglycemic state",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 74-year-old with type 2 diabetes is found confused with a glucose of 920 mg/dL, dry mucous membranes and no ketone odor. This presentation is most consistent with:",
+    "options": [
+      "Diabetic ketoacidosis with dehydration",
+      "Hypoglycemic encephalopathy",
+      "Adrenal crisis",
+      "Hyperosmolar hyperglycemic state"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Very high glucose with severe dehydration and little or no ketosis in an older type 2 diabetic is hyperosmolar hyperglycemic state. DKA produces ketones and Kussmaul breathing and is usually seen in type 1 diabetes."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Adrenal crisis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 45-year-old with Addison's disease has vomiting, weakness, a glucose of 52 mg/dL and a BP of 76/40 that does not improve after 2 L of saline. Which medication addresses the cause?",
+    "options": [
+      "Hydrocortisone 100 mg IV",
+      "Dextrose 25 g IV",
+      "Norepinephrine infusion at 0.1 mcg/kg/min",
+      "Ondansetron 4 mg IV"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Adrenal crisis is a cortisol deficiency and responds to a stress-dose steroid (hydrocortisone 100 mg IV, or methylprednisolone per protocol). Dextrose treats the glucose but not the shock, and vasopressors work poorly until the steroid is replaced."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Status epilepticus",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 40-year-old has been seizing for 6 minutes and has no IV access. Which drug and route is preferred?",
+    "options": [
+      "Diazepam 5 mg orally",
+      "Midazolam 10 mg IM",
+      "Phenobarbital 20 mg/kg IM",
+      "Levetiracetam 1 g IM"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Midazolam 10 mg IM (5 mg for 13 to 40 kg) is the benzodiazepine of choice when there is no IV, with the intranasal route as an alternative. Phenobarbital and levetiracetam are second-line hospital drugs, and nothing is given by mouth to a seizing patient."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Stroke destination",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 72-year-old has left facial droop, left arm drift, her eyes deviated to the right, and cannot say her age or the month. Onset was 90 minutes ago. Which destination is most appropriate per local protocol?",
+    "options": [
+      "The nearest emergency department",
+      "A primary stroke center 10 minutes away",
+      "A thrombectomy-capable center 25 minutes away",
+      "A trauma center 15 minutes away"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Gaze deviation plus cortical signs scores high on a large vessel occlusion screen (LAMS, RACE or FAST-ED), and within the treatment window a thrombectomy-capable center is preferred when it adds no more than about 15 minutes of transport time (the limit varies by region and protocol). A primary stroke center would have to transfer her."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Meningitis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 19-year-old college student has a fever, a stiff neck, photophobia and a spreading purple rash that does not blanch. Which precaution is most important for the crew?",
+    "options": [
+      "Contact precautions with a gown",
+      "Airborne precautions with an N95",
+      "Standard precautions only",
+      "Droplet precautions with a surgical mask"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Meningococcal disease spreads by respiratory droplets, so a surgical mask within about 3 feet of the patient (plus standard precautions) protects the crew, who should also report the exposure for prophylaxis. An N95 is for airborne diseases such as tuberculosis."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Sickle cell crisis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 24-year-old with sickle cell disease has severe pain in both legs and the back, a pulse of 110 and an SpO2 of 97 percent. Appropriate treatment includes:",
+    "options": [
+      "Opioid analgesia and IV fluids",
+      "High-flow oxygen by nonrebreather",
+      "Ice packs to the painful areas",
+      "A 2 L normal saline bolus"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vaso-occlusive crisis is treated with prompt opioid analgesia (fentanyl or morphine per protocol) and maintenance fluids to reduce sickling. Oxygen is given only for hypoxia, cold promotes further sickling, and large boluses risk fluid overload."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Hyperkalemia",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A dialysis patient who missed two sessions is weak, with a heart rate of 40, peaked T waves and a QRS of 0.16 seconds. Which medication is given first?",
+    "options": [
+      "Atropine 1 mg IV",
+      "Calcium chloride 1 g IV",
+      "Adenosine 6 mg IV",
+      "Amiodarone 150 mg IV"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Calcium stabilizes the myocardial membrane within minutes and is the first drug for hyperkalemia with ECG changes; sodium bicarbonate and nebulized albuterol then shift potassium into the cells. Atropine rarely helps, and amiodarone can worsen the conduction block."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Organophosphate poisoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A farm worker sprayed with an insecticide is drooling, vomiting and wheezing, with pinpoint pupils and a heart rate of 48. After decontamination, the first-line drug is:",
+    "options": [
+      "Naloxone 2 mg IV, repeated as needed",
+      "Diphenhydramine 50 mg IV, repeated once",
+      "Atropine 2 mg IV, repeated and doubled",
+      "Epinephrine 0.3 mg IM, repeated once"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Atropine dries the secretions and relieves the bronchospasm of cholinergic poisoning; the dose is doubled every 3 to 5 minutes until secretions dry, and pralidoxime is added per protocol. The pupils are not the endpoint."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Tricyclic overdose",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 35-year-old who took a bottle of amitriptyline 2 hours ago is drowsy with a heart rate of 130 and a QRS of 0.14 seconds. Which medication is indicated?",
+    "options": [
+      "Flumazenil 0.2 mg IV",
+      "Procainamide 20 mg/min IV",
+      "Activated charcoal 50 g orally",
+      "Sodium bicarbonate 1 mEq/kg IV"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A QRS over 0.10 seconds after a tricyclic overdose predicts seizures and dysrhythmia and is treated with sodium bicarbonate boluses until the QRS narrows. Procainamide is another sodium channel blocker and is contraindicated, and charcoal is unsafe in a patient losing consciousness."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Carbon monoxide",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A family of four has headaches and nausea on a winter morning in a home with a gas furnace; pulse oximetry reads 98 percent in each. Which statement is correct?",
+    "options": [
+      "Standard pulse oximetry cannot detect carboxyhemoglobin",
+      "An SpO2 of 98 percent rules out carbon monoxide poisoning",
+      "Oxygen can be withheld until symptoms get worse",
+      "Only the most symptomatic person needs transport"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A standard pulse oximeter reads carboxyhemoglobin as if it were oxygenated hemoglobin, so the reading is falsely normal; a CO-oximeter or a measured level is needed. Everyone exposed gets high-flow oxygen and transport."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Serotonin syndrome",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 28-year-old on sertraline who started tramadol yesterday is agitated with a temperature of 39.5 C, sweating, tremor and inducible clonus at the ankles. The most likely cause is:",
+    "options": [
+      "Neuroleptic malignant syndrome",
+      "Serotonin syndrome",
+      "Anticholinergic toxicity",
+      "Alcohol withdrawal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Clonus and hyperreflexia within 24 hours of adding a second serotonergic drug define serotonin syndrome. Neuroleptic malignant syndrome develops over days with lead-pipe rigidity and reduced reflexes, and anticholinergic toxicity has dry skin."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Severe hypothermia",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 60-year-old pulled from a cold river is unresponsive with a core temperature of 27 C, a pulse of 30 and 4 breaths per minute. Which action is appropriate?",
+    "options": [
+      "Start chest compressions for the slow pulse",
+      "Rub the limbs vigorously to rewarm them",
+      "Handle gently and apply heat packs to the trunk",
+      "Give atropine 1 mg IV for the bradycardia"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A severely hypothermic heart is irritable, and rough handling or limb rewarming (which returns cold acidotic blood to the core) can trigger ventricular fibrillation. Compressions are for a patient with no pulse, and atropine does not work on hypothermic bradycardia."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Frostbite",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hiker has a white, hard, numb foot after 6 hours in the snow and still has 2 hours of walking to reach the trailhead. Which action is correct?",
+    "options": [
+      "Rub the foot briskly with snow to restore circulation",
+      "Thaw the foot in warm water right away",
+      "Break any blisters to relieve the pressure",
+      "Leave the foot frozen until refreezing is not a risk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Thawing followed by refreezing does far more tissue damage than a delay, so a frozen limb that must still be walked on stays frozen until rewarming can be done once, in water at 37 to 39 C. Rubbing and breaking blisters add injury."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Drip math",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Magnesium sulfate 4 g is diluted in 100 mL and ordered to run over 20 minutes through a 10 gtt/mL administration set. How many drops per minute? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "50"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "100 mL x 10 gtt/mL = 1,000 drops, and 1,000 drops over 20 minutes = 50 gtt/min. Using a 60 gtt/mL set by mistake would give 300 gtt/min."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Neonatal resuscitation",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A newborn is limp and not breathing after delivery. Place the resuscitation steps in order.",
+    "options": [
+      "Chest compressions if the rate stays under 60 after 30 seconds of effective ventilation",
+      "Warm, dry, stimulate and position the airway",
+      "Positive pressure ventilation if the heart rate is under 100",
+      "Epinephrine if the rate stays under 60 despite compressions"
+    ],
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "Neonatal resuscitation follows warming and stimulation, then ventilation for a rate under 100, then 3:1 compressions for a rate under 60 after effective ventilation, and epinephrine last. Most newborns respond to ventilation alone, which is why it comes before compressions."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Normal delivery",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A mother is crowning and delivery is imminent. Place the steps in order.",
+    "options": [
+      "Guide the head upward to deliver the posterior shoulder",
+      "Guide the head downward to deliver the anterior shoulder",
+      "Suction the mouth and nose only if the airway is obstructed",
+      "Clamp and cut the cord after it stops pulsating",
+      "Support the head as it crowns and check for a cord around the neck"
+    ],
+    "correct": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ],
+    "explanation": "The head is supported and checked for a nuchal cord, suction is used only for an obstructed airway, then gentle downward and upward guidance delivers the anterior and then the posterior shoulder. Delayed cord clamping is standard for a vigorous newborn."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Pregnancy complications",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each finding in a woman at 32 weeks of pregnancy, specify whether it is a normal change of late pregnancy or a sign of a complication.",
+    "rows": [
+      "Resting heart rate of 88",
+      "Blood pressure of 150/100",
+      "Mild ankle swelling",
+      "Severe headache with visual changes",
+      "Painless bright red vaginal bleeding"
+    ],
+    "columns": [
+      "Normal change",
+      "Complication"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "explanation": "A resting rate up to about 100 and mild dependent swelling are normal in the third trimester. A blood pressure of 140/90 or higher is preeclampsia until proven otherwise, a headache with visual changes is a severe feature, and painless bright red bleeding suggests placenta previa."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Snakebite",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 3,
+    "stem": "A 40-year-old was bitten on the hand by a rattlesnake 20 minutes ago. Which actions are appropriate? Choose three.",
+    "options": [
+      "Remove rings and watches",
+      "Immobilize the hand in a splint",
+      "Mark the edge of the swelling with the time",
+      "Apply a tourniquet above the bite",
+      "Apply ice to the bite",
+      "Cut the wound and suction the venom"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Jewelry is removed before swelling, the limb is splinted to slow venom spread, and the swelling edge is marked so progression can be tracked. Tourniquets, ice and cutting all worsen local tissue damage and do not remove venom; antivenom at the hospital is the treatment."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Severe agitation",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 3,
+    "stem": "A 25-year-old who used a stimulant is violently agitated, hot to the touch and still fighting four officers. Which management steps are correct? Choose three.",
+    "options": [
+      "Sedation per local protocol",
+      "Continuous capnography and SpO2 after sedation",
+      "Transport prone on the stretcher",
+      "Active cooling once the patient is controlled",
+      "Delay sedation until the patient tires out"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Hyperactive delirium with severe agitation is a medical emergency: sedate per protocol (ketamine or a benzodiazepine), monitor ventilation continuously afterward, and cool the hyperthermia. Prone restraint and prolonged struggling both raise the risk of sudden death."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 2,
+    "skill": "Geriatric assessment",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 3,
+    "stem": "Which features of aging change how a paramedic interprets vital signs in an 85-year-old? Choose three.",
+    "options": [
+      "Beta blockers can prevent a tachycardic response to shock",
+      "A systolic BP of 110 may be low for a chronically hypertensive patient",
+      "Fever may be absent with a serious infection",
+      "The resting respiratory rate normally doubles with age",
+      "Capillary refill becomes a reliable indicator of shock"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Older patients on beta blockers may not mount tachycardia, a 'normal' pressure may be well below their baseline, and sepsis often presents without fever. The resting respiratory rate does not change much with age, and capillary refill is less reliable in older adults."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 0,
+    "skill": "Febrile seizure",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 2-year-old had a 2-minute generalized seizure, has a fever of 39.4 C and is now sleepy but rousable. Which statement is accurate?",
+    "options": [
+      "A simple febrile seizure needs evaluation but is usually benign",
+      "Midazolam is needed right now to prevent any second seizure",
+      "Ice water sponging is the treatment of choice",
+      "A seizure with fever proves the child has meningitis"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A brief generalized seizure with fever in a child aged 6 months to 5 years is usually a simple febrile seizure, which is benign but still transported for evaluation of the fever's cause. Benzodiazepines are for a seizure that is still going on, and ice water causes shivering."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 0,
+    "skill": "Pediatric vital signs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the lowest acceptable systolic blood pressure for a 6-year-old?",
+    "options": [
+      "70 mm Hg",
+      "82 mm Hg",
+      "90 mm Hg",
+      "100 mm Hg"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "For children aged 1 to 10 the minimum systolic pressure is 70 + (2 x age in years), so 70 + 12 = 82 mm Hg. 70 is the floor for an infant, and 90 is the adult figure."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 0,
+    "skill": "Geriatric myocardial infarction",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An 82-year-old woman with diabetes reports two hours of nausea, weakness and 'just not feeling right' with no chest pain. The most important next step is:",
+    "options": [
+      "Check for orthostatic blood pressure changes",
+      "Give ondansetron and reassess",
+      "Obtain a 12-lead ECG",
+      "Ask about recent dietary changes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Older adults, women and diabetics often have a myocardial infarction without chest pain, presenting with nausea, weakness or dyspnea instead. A 12-lead ECG within 10 minutes is the test that finds it."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 0,
+    "skill": "Acetaminophen overdose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 17-year-old reports taking 30 extra-strength acetaminophen tablets 90 minutes ago and feels fine. Which statement is correct?",
+    "options": [
+      "She can be released because she has no symptoms",
+      "Naloxone will reverse the drug",
+      "Vomiting within 4 hours means the dose was not absorbed",
+      "Serious liver injury can appear 24 to 72 hours later"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Acetaminophen overdose is typically symptom-free for the first day while liver injury develops, and the antidote (N-acetylcysteine) works best when started early, so she must be transported. Naloxone has no effect on acetaminophen."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 0,
+    "skill": "Alcohol withdrawal",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 50-year-old who stopped drinking heavily 3 days ago is tremulous, sweating and hallucinating, with a heart rate of 128 and a temperature of 38.4 C. This presentation most likely represents:",
+    "options": [
+      "Delirium tremens",
+      "Alcoholic ketoacidosis",
+      "Wernicke encephalopathy",
+      "Hepatic encephalopathy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Autonomic hyperactivity with hallucinations 2 to 4 days after the last drink is delirium tremens, which can be fatal and is treated with benzodiazepines. Wernicke encephalopathy presents with confusion, ataxia and eye movement abnormalities rather than agitation."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 0,
+    "skill": "Diving emergency",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A scuba diver surfaces rapidly from 60 feet and within 5 minutes becomes confused with right-sided weakness. Which treatment is indicated?",
+    "options": [
+      "Place the diver head-down in Trendelenburg",
+      "High-flow oxygen and transport for recompression",
+      "Nitroglycerin for a suspected stroke",
+      "Aspirin 324 mg chewed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Neurologic signs within minutes of a rapid ascent are an arterial gas embolism, treated with 100 percent oxygen, supine positioning and transport to a hyperbaric chamber. Head-down positioning is no longer recommended."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 0,
+    "skill": "Altitude illness",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A climber at 14,000 feet has a cough with frothy sputum, an SpO2 of 78 percent and crackles, without chest pain. The definitive treatment is:",
+    "options": [
+      "Nifedipine 30 mg orally",
+      "Furosemide 40 mg IV",
+      "Immediate descent",
+      "CPAP at 10 cm H2O"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "High altitude pulmonary edema is treated definitively by descent; oxygen and nifedipine are adjuncts. Diuretics worsen the dehydration common at altitude and do not treat the cause."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 0,
+    "skill": "Altered mental status",
+    "difficulty": 1,
+    "format": "order",
+    "stem": "An adult is found unresponsive with no obvious cause. Place the steps in order.",
+    "options": [
+      "Give dextrose or naloxone as indicated",
+      "Check responsiveness, breathing and pulse",
+      "Open the airway and give oxygen or ventilate",
+      "Reassess mental status and vital signs",
+      "Check the blood glucose"
+    ],
+    "correct": [
+      1,
+      2,
+      4,
+      0,
+      3
+    ],
+    "explanation": "Life threats to breathing and circulation come first, then the reversible causes: glucose is checked before any drug so that dextrose or naloxone is given for a reason, and the patient is reassessed after each treatment."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 0,
+    "skill": "Antidotes",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each poisoning, specify the matching antidote.",
+    "rows": [
+      "Beta blocker overdose with bradycardia",
+      "Cyanide poisoning from smoke inhalation",
+      "Heroin overdose with 6 breaths per minute",
+      "Calcium channel blocker overdose"
+    ],
+    "columns": [
+      "Glucagon",
+      "Hydroxocobalamin",
+      "Naloxone",
+      "Calcium chloride"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Glucagon bypasses blocked beta receptors, hydroxocobalamin binds cyanide, naloxone reverses opioids and calcium overcomes calcium channel blockade. Glucagon and calcium are sometimes both used in either cardiac drug overdose, but each is the first-line antidote for its own class."
+  },
+  {
+    "domain": "pmdMedical",
+    "test": 0,
+    "skill": "Anaphylaxis criteria",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 3,
+    "stem": "Which presentations after a known allergen exposure meet criteria for anaphylaxis? Choose three.",
+    "options": [
+      "Hives with wheezing",
+      "Lip swelling with a BP of 80/50",
+      "Vomiting and cramps with throat tightness",
+      "Hives alone with normal vital signs",
+      "Itching only at the sting site"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Anaphylaxis involves two or more body systems (skin, respiratory, cardiovascular, gastrointestinal) or hypotension after an allergen exposure, and each of the first three fits. Hives alone or a local reaction is treated with an antihistamine and observation."
+  }
+]

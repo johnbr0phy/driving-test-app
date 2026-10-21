@@ -1,0 +1,495 @@
+[
+  {
+    "domain": "pnPharm",
+    "test": 1,
+    "skill": "Dosage calculation",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Metoprolol tartrate 75 mg PO is prescribed. The pharmacy supplies 25 mg tablets. How many tablets should the PN give? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "3",
+        "3.0"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "75 mg divided by 25 mg per tablet is 3 tablets. Setting up the problem as 25 divided by 75 gives 0.33 tablet, which cannot be measured and would be one third of the prescribed dose."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 1,
+    "skill": "Dosage calculation",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Amoxicillin 400 mg PO is prescribed. The oral suspension is labeled 250 mg per 5 mL. How many mL should the PN give? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "8",
+        "8.0"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "250 mg per 5 mL is 50 mg per mL, and 400 mg divided by 50 mg/mL is 8 mL. Reading the label as 250 mg per mL would give 1.6 mL, less than half the dose."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 1,
+    "skill": "Warfarin monitoring",
+    "difficulty": 3,
+    "format": "cloze",
+    "passage": "0900 Laboratory result: INR 4.8 (goal 2.0 to 3.0). The PN notes new bruising on both forearms. Warfarin 5 mg PO is due at 1700.",
+    "stem": "Complete the sentence. The PN should [[1]] and report the result to the [[2]].",
+    "blanks": [
+      [
+        "hold the warfarin dose",
+        "give the warfarin as scheduled",
+        "give a double dose of warfarin",
+        "give the dose with vitamin K-rich food"
+      ],
+      [
+        "oncoming shift at the end of the day",
+        "RN or provider now",
+        "pharmacy at the end of the shift",
+        "client's family"
+      ]
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "An INR of 4.8 with new bruising means the blood is too thin and bleeding has started, so the dose is held and the RN or provider is told now, not at shift change, because they may prescribe vitamin K. Vitamin K foods would lower the INR unpredictably and are not how a high INR is managed."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 1,
+    "skill": "Digoxin",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Before giving digoxin to an adult client, the PN counts an apical pulse of 54/min for one full minute. Which action should the PN take?",
+    "options": [
+      "Hold the dose and notify the RN",
+      "Give the dose and recheck the pulse in 1 hour",
+      "Give half the dose and document the pulse",
+      "Give the dose with a full glass of water"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Digoxin slows the heart, so a dose is held and reported when the apical pulse is below 60/min in an adult. Giving any part of the dose at this rate risks a dangerous bradycardia, and the PN does not change a prescribed dose."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 1,
+    "skill": "Insulin peak times",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client received regular insulin subcutaneously at 0730 before breakfast. At which time should the PN watch most closely for hypoglycemia?",
+    "options": [
+      "0745",
+      "1000",
+      "1600",
+      "2200"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Regular insulin starts working in about 30 minutes and peaks 2 to 3 hours after the dose, so the highest hypoglycemia risk is mid-morning. 0745 is before the onset, and 1600 or 2200 fit an intermediate-acting insulin such as NPH."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 1,
+    "skill": "Safe medication administration",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "The PN prepares to give oral medications on a medical unit. Which actions are part of safe administration? Select all that apply.",
+    "options": [
+      "Check two client identifiers at the bedside",
+      "Leave the cup at the bedside for the client to take later",
+      "Compare the MAR with the medication label three times",
+      "Crush an enteric-coated tablet to make it easier to swallow",
+      "Stay until the client has swallowed the medications"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Two identifiers, three label checks and watching the client swallow are the core of the rights of medication administration. Medications are never left unattended, and crushing an enteric-coated tablet destroys the coating that protects the stomach or the drug."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 1,
+    "skill": "Antibiotic teaching",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A clinic client is starting a 10-day course of an oral antibiotic for a skin infection. Which statement shows the reinforced teaching was effective?",
+    "options": [
+      "\"I'll stop as soon as the redness is gone.\"",
+      "\"I'll save any leftover pills for the next time.\"",
+      "\"I'll finish the whole prescription.\"",
+      "\"I'll take two pills if I miss a dose.\""
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Finishing the full course clears the infection and limits resistant bacteria. Stopping early, saving pills or doubling up all lead to treatment failure or side effects."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 1,
+    "skill": "Opioid safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client is receiving oral oxycodone after surgery. Which finding should the PN report to the RN immediately?",
+    "options": [
+      "Reports mild constipation",
+      "Pupils are small",
+      "Drowsy but wakes easily to voice",
+      "Respirations 8/min"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A respiratory rate of 8/min is opioid-induced respiratory depression and calls for holding the drug, stimulating the client and having naloxone given. Small pupils, mild drowsiness and constipation are expected opioid effects that are managed, not emergencies."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 1,
+    "skill": "Phenytoin",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client takes phenytoin for a seizure disorder. Which instruction should the PN reinforce?",
+    "options": [
+      "Brush and floss the teeth carefully every day",
+      "Take the medication only on days a seizure occurs",
+      "Stop the medication if drowsiness develops",
+      "Avoid all dairy products"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Phenytoin causes gum overgrowth, so careful daily oral hygiene and regular dental visits are reinforced. It is taken every day to keep a steady blood level, and stopping it suddenly can trigger seizures."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 1,
+    "skill": "ACE inhibitors and potassium",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client with heart failure takes lisinopril and spironolactone. Which points should the PN reinforce? Select all that apply.",
+    "options": [
+      "Avoid salt substitutes that contain potassium",
+      "Report a dry cough that does not go away",
+      "Rise slowly from sitting or lying",
+      "Take an over-the-counter potassium supplement daily",
+      "Seek emergency care for swelling of the lips or tongue"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "explanation": "Both drugs raise potassium, so potassium-containing salt substitutes and supplements are avoided; lisinopril can also cause a dry cough, dizziness on standing and angioedema, which is an emergency. A daily potassium supplement with these two drugs could cause dangerous hyperkalemia."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 1,
+    "skill": "Metformin and contrast",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A client who takes metformin is scheduled for a CT scan with IV contrast. Which instruction should the PN reinforce?",
+    "options": [
+      "Take an extra dose the morning of the scan",
+      "Hold the metformin as directed around the scan",
+      "Take it with the contrast to prevent nausea",
+      "Stop the metformin permanently after the scan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Iodinated contrast can reduce kidney function for a few days, and metformin builds up in that setting and can cause lactic acidosis, so the provider directs when to hold it and when to restart after kidney function is checked. It is resumed, not stopped for good, once the kidneys are shown to be fine."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 2,
+    "skill": "Dosage calculation",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Ceftriaxone 500 mg IM is prescribed. After reconstitution the vial contains 350 mg per mL. How many mL should the PN draw up? Record your answer to one decimal place.",
+    "numeric": {
+      "answers": [
+        "1.4"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "500 mg divided by 350 mg/mL is 1.43 mL, which rounds to 1.4 mL. Dividing the other way gives 0.7 mL, which would deliver only half the dose."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 2,
+    "skill": "Dosage calculation",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A child who weighs 18 kg is prescribed acetaminophen 15 mg/kg PO. The oral liquid is labeled 160 mg per 5 mL. How many mL should the PN give? Record your answer to one decimal place.",
+    "numeric": {
+      "answers": [
+        "8.4"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "15 mg/kg times 18 kg is 270 mg. 160 mg per 5 mL is 32 mg per mL, and 270 mg divided by 32 mg/mL is 8.44 mL, which rounds to 8.4 mL. Forgetting to multiply by the weight gives 0.5 mL, far below the dose."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 2,
+    "skill": "Hypoglycemia protocol",
+    "difficulty": 2,
+    "format": "multi",
+    "passage": "1135: Capillary glucose 48 mg/dL. The resident is awake, answers to her name and swallows a sip of water without coughing.",
+    "stimulusId": "NCLEXPN-CS2",
+    "caseStep": 4,
+    "stem": "The PN follows the facility's hypoglycemia protocol. Which actions should the PN take? Select all that apply.",
+    "options": [
+      "Give 15 g of fast-acting carbohydrate, such as 4 oz of juice",
+      "Give the scheduled glipizide now with a snack",
+      "Recheck the capillary glucose in 15 minutes",
+      "Give insulin lispro per the sliding scale",
+      "Notify the RN of the episode"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "A conscious resident who can swallow gets 15 g of fast carbohydrate, a recheck in 15 minutes and a report to the RN, who will contact the provider about the glipizide. Any insulin or sulfonylurea now would drive the glucose lower."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 2,
+    "skill": "Treating hypoglycemia",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "1150: Repeat capillary glucose 62 mg/dL. The resident is still shaky but talking and swallowing normally.",
+    "stimulusId": "NCLEXPN-CS2",
+    "caseStep": 5,
+    "stem": "Which action should the PN take next?",
+    "options": [
+      "Bring the lunch tray and let her eat when ready",
+      "Give glucagon 1 mg IM and recheck in 15 minutes",
+      "Repeat 15 g of fast carbohydrate and recheck in 15 minutes",
+      "Give the held glipizide with crackers and recheck at 1300"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The rule of 15 repeats the fast carbohydrate and recheck until the glucose is above 70 mg/dL, and only then is a snack or meal given to hold it there. Glucagon is for a client who cannot swallow safely, and glipizide is what caused the problem."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 2,
+    "skill": "Enoxaparin injection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN gives enoxaparin from a prefilled syringe to a client after hip surgery. Which action is correct?",
+    "options": [
+      "Massage the site for a minute after the injection",
+      "Pull back on the plunger before injecting the drug",
+      "Inject into the deltoid muscle of the nondominant arm",
+      "Leave the air bubble in the syringe when injecting"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The small air bubble in a prefilled enoxaparin syringe is left in so the full dose is delivered and the drug does not leak back along the track. It is given subcutaneously in the abdomen, without aspirating or massaging, because both increase bruising."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 2,
+    "skill": "Levothyroxine",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client is starting levothyroxine for hypothyroidism. Which instruction should the PN reinforce?",
+    "options": [
+      "Take it on an empty stomach in the morning",
+      "Take it with breakfast to prevent stomach upset",
+      "Take it at bedtime with a glass of milk",
+      "Take it only on days you feel tired"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Levothyroxine is absorbed best on an empty stomach, 30 to 60 minutes before breakfast and apart from calcium, iron and antacids. It is a lifelong daily medication, and food, milk or dairy reduce how much is absorbed."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 2,
+    "skill": "Sublingual nitroglycerin",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A client with stable angina has sublingual nitroglycerin tablets. Which points should the PN reinforce? Select all that apply.",
+    "options": [
+      "Sit down before taking a tablet",
+      "Call 911 if the pain is not better 5 minutes after the first tablet",
+      "Swallow the tablet with a glass of water",
+      "Keep the tablets in the original dark glass bottle",
+      "Take no more than 3 tablets, 5 minutes apart"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "explanation": "Nitroglycerin drops the blood pressure, so the client sits first, lets the tablet dissolve under the tongue, and takes up to 3 doses 5 minutes apart while calling 911 if the first dose does not relieve the pain. The drug breaks down in light and moisture, so it stays in its dark bottle."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 2,
+    "skill": "Corticosteroids",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client has taken prednisone daily for 6 months. Which instruction should the PN reinforce?",
+    "options": [
+      "Take it on an empty stomach",
+      "Never stop the medication suddenly",
+      "Expect to lose weight while taking it",
+      "Skip a dose on days you feel well"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Long-term prednisone suppresses the adrenal glands, so stopping it abruptly can cause adrenal crisis; it is tapered under the provider's direction. It is taken with food, and weight gain and fluid retention are expected, not weight loss."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 2,
+    "skill": "Loop diuretic ototoxicity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client who takes furosemide tells the PN about new ringing in both ears. Which action should the PN take?",
+    "options": [
+      "Reassure the client that the ringing will pass on its own",
+      "Give the next dose with food to lessen the side effect",
+      "Report the finding to the RN before the next dose",
+      "Document the complaint and recheck it tomorrow morning"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tinnitus is an early sign of ototoxicity from a loop diuretic, and hearing loss can become permanent, so the finding is reported before another dose is given. Food does not prevent ototoxicity, and waiting a day risks more damage."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 2,
+    "skill": "Drug and antacid interactions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client taking oral ciprofloxacin asks the PN whether an antacid can be taken for heartburn. Which response should the PN reinforce?",
+    "options": [
+      "\"Take them together to reduce the stomach upset from the antibiotic.\"",
+      "\"The antacid makes the antibiotic work better, so take them together.\"",
+      "\"Crush both and mix them in applesauce so they go down easily.\"",
+      "\"Take the antacid at least 2 hours apart from the antibiotic.\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Aluminum, magnesium and calcium in antacids bind ciprofloxacin in the gut so much less is absorbed, so the doses are separated by at least 2 hours. Taking them together, with or without crushing, can leave the infection undertreated."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 2,
+    "skill": "Beta blockers",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "A client is starting oral metoprolol for hypertension. Which points should the PN reinforce? Select all that apply.",
+    "options": [
+      "Check the pulse before each dose",
+      "Report wheezing or new shortness of breath",
+      "Stop the drug if dizziness occurs",
+      "Change positions slowly",
+      "Expect the heart rate to rise with the first doses"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Beta blockers slow the heart and lower blood pressure, so the pulse is checked, positions are changed slowly, and breathing changes are reported. Stopping a beta blocker suddenly can cause rebound tachycardia and chest pain, so dizziness is reported rather than treated by quitting the drug."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 0,
+    "skill": "Dosage calculation",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Morphine 6 mg IM is prescribed for severe pain. The vial is labeled 10 mg per mL. How many mL should the PN draw up? Record your answer to one decimal place.",
+    "numeric": {
+      "answers": [
+        "0.6",
+        ".6"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "6 mg divided by 10 mg/mL is 0.6 mL. Dividing 10 by 6 gives 1.7 mL, almost three times the prescribed dose of an opioid."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 0,
+    "skill": "Insulin storage",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client who is new to insulin asks the PN how to store the vials at home. Which instruction should the PN reinforce?",
+    "options": [
+      "Keep the vial in use at room temperature for up to 28 days",
+      "Freeze the spare vials to keep them fresh until they are needed",
+      "Throw away an open vial after 3 days even if insulin is left",
+      "Shake the vial hard before each dose to mix the insulin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Unopened vials stay in the refrigerator, and the vial in use can stay at room temperature for up to 28 days, which also makes injections less painful. Freezing or shaking damages insulin, and cloudy insulin is rolled gently, not shaken."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 0,
+    "skill": "Eye drop administration",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "The PN instills prescribed eye drops. Which actions are correct? Select all that apply.",
+    "options": [
+      "Pull the lower lid down to form a pocket",
+      "Touch the dropper tip to the eye to aim the drop",
+      "Have the client look up toward the ceiling",
+      "Press gently on the inner corner of the eye after the drop",
+      "Wait about 5 minutes before a second type of eye drop"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explanation": "The drop goes into the lower lid pocket while the client looks up, pressure on the inner canthus keeps it from draining into the nose and bloodstream, and separate drops are spaced about 5 minutes apart. The dropper never touches the eye, which contaminates the bottle and can scratch the cornea."
+  },
+  {
+    "domain": "pnPharm",
+    "test": 0,
+    "skill": "Tetracyclines",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client is prescribed doxycycline for a tick bite. Which instruction should the PN reinforce?",
+    "options": [
+      "Take each dose with a glass of milk",
+      "Use sunscreen and limit time in the sun",
+      "Lie down right after taking the capsule",
+      "Take it at the same time as an iron supplement"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Doxycycline makes the skin burn easily, so sun protection is reinforced. Milk, calcium, iron and antacids bind the drug and block absorption, and lying down after a dose can let the capsule lodge and burn the esophagus."
+  }
+]

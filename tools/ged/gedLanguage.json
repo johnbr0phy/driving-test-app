@@ -1,0 +1,659 @@
+[
+  {
+    "domain": "gedLanguage",
+    "test": 1,
+    "skill": "Subject-verb agreement",
+    "difficulty": 1,
+    "format": "cloze",
+    "basics": "subjectVerb",
+    "stem": "Choose the option that correctly completes the text.\n\nThe box of winter uniforms [[1]] in the storage room behind the office.",
+    "blanks": [
+      [
+        "is",
+        "are",
+        "were",
+        "have been"
+      ]
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The subject is \"box,\" which is singular; \"of winter uniforms\" only describes the box. A singular subject takes \"is.\" \"Are,\" \"were\" and \"have been\" would agree with \"uniforms,\" which is not the subject."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 1,
+    "skill": "Comma splices",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "commaSplices",
+    "passage": "(1) Our team finished the inventory count on Friday. (2) The totals matched the system, we sent the report to the district office. (3) The manager thanked everyone for staying late.",
+    "stem": "Which revision of sentence 2 is correct?",
+    "options": [
+      "The totals matched the system we sent the report to the district office.",
+      "The totals matched the system, so we sent the report to the district office.",
+      "The totals matched the system, therefore we sent the report to the district office.",
+      "The totals matched the system, we sent, the report to the district office."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sentence 2 joins two complete sentences with only a comma, a comma splice. Adding \"so\" after the comma fixes it. Removing the comma makes a run-on, \"therefore\" after a comma is still a splice, and the extra comma after \"sent\" breaks the sentence apart."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 1,
+    "skill": "Apostrophes",
+    "difficulty": 2,
+    "format": "cloze",
+    "basics": "apostrophes",
+    "stem": "Choose the option that correctly completes the text.\n\nThe [[1]] lounge is being repainted this weekend, so please remove [[2]] belongings by Friday.",
+    "blanks": [
+      [
+        "employees'",
+        "employee's",
+        "employees",
+        "employees's"
+      ],
+      [
+        "your",
+        "you're",
+        "yours",
+        "your's"
+      ]
+    ],
+    "correct": [
+      0,
+      0
+    ],
+    "explanation": "The lounge belongs to all the employees, so the plural \"employees\" takes an apostrophe after the s. \"Your\" shows ownership of the belongings; \"you're\" means \"you are,\" and \"your's\" is never correct."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 1,
+    "skill": "Verb tense",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "verbTense",
+    "passage": "(1) Last month the clinic began offering evening appointments. (2) Since then, the number of missed appointments has dropped by half. (3) Patients say they appreciate not having to leave work early, and the front desk managers __will have reported__ fewer no-shows.",
+    "stem": "Which is the best way to write the underlined part of sentence 3?",
+    "options": [
+      "will have reported",
+      "had reported",
+      "reporting",
+      "have reported"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The paragraph describes results that began last month and continue now, and sentence 2 already uses \"has dropped.\" \"Have reported\" keeps that present perfect tense. \"Will have reported\" points to the future, \"had reported\" to a time before another past event, and \"reporting\" leaves the clause without a complete verb."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 1,
+    "skill": "Transitions",
+    "difficulty": 1,
+    "format": "cloze",
+    "basics": "transitions",
+    "stem": "Choose the option that correctly completes the text.\n\nThe new printer is faster than the old one. [[1]], it uses less toner, which will save the office about \\$300 a year.",
+    "blanks": [
+      [
+        "In addition",
+        "However",
+        "For example",
+        "Otherwise"
+      ]
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The second sentence adds another advantage to the first, so the transition should signal addition. \"However\" would signal a contrast, \"for example\" an illustration of the speed, and \"otherwise\" a condition, none of which fits."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 1,
+    "skill": "Pronoun case",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "pronounCase",
+    "passage": "(1) The regional manager asked Priya and I to present the sales figures. (2) We prepared slides showing each store's totals. (3) After the meeting, she thanked us for the clear summary.",
+    "stem": "Which revision of sentence 1 is correct?",
+    "options": [
+      "The regional manager asked Priya and me to present the sales figures.",
+      "The regional manager asked Priya and myself to present the sales figures.",
+      "The regional manager asked I and Priya to present the sales figures.",
+      "The regional manager asked Priya and I to present, the sales figures."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Priya and the writer receive the action of \"asked,\" so the object pronoun \"me\" is needed. A quick check is to drop Priya: \"asked me,\" not \"asked I.\" \"Myself\" is only for reflecting back on the subject, and the comma before \"the sales figures\" is wrong."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 1,
+    "skill": "Commonly confused words",
+    "difficulty": 1,
+    "format": "cloze",
+    "basics": "commonlyConfused",
+    "stem": "Choose the option that correctly completes the text.\n\nThe weather delay will [[1]] every flight this afternoon, and [[2]] are no seats left on tomorrow's planes.",
+    "blanks": [
+      [
+        "affect",
+        "effect",
+        "affects",
+        "effected"
+      ],
+      [
+        "there",
+        "their",
+        "they're",
+        "theirs"
+      ]
+    ],
+    "correct": [
+      0,
+      0
+    ],
+    "explanation": "\"Affect\" is the verb meaning to influence, which is what the delay does to the flights. \"There are\" introduces what exists; \"their\" shows ownership and \"they're\" means \"they are.\""
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 1,
+    "skill": "Parallel structure",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "(1) The training covers three skills: greeting customers, how to process returns, and handling complaints. (2) Each session lasts two hours. (3) New hires must complete all three before working the register.",
+    "stem": "Which revision of sentence 1 is correct?",
+    "options": [
+      "The training covers three skills: to greet customers, processing returns, and handling complaints.",
+      "The training covers three skills: greeting customers, how to process returns, and to handle complaints.",
+      "The training covers three skills: greeting customers, processing returns, and handling complaints.",
+      "The training covers three skills: greet customers, processing returns, and handling complaints."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Items in a list should share the same form. \"Greeting, processing, handling\" are all -ing forms. The other versions mix an -ing form with \"to greet,\" \"how to process\" or the bare verb \"greet.\""
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 1,
+    "skill": "Commas in lists and after openers",
+    "difficulty": 2,
+    "format": "cloze",
+    "basics": "listIntroCommas",
+    "stem": "Choose the option that correctly completes the text.\n\n[[1]] we will review the budget, the hiring [[2]] the holiday schedule.",
+    "blanks": [
+      [
+        "When we meet after lunch,",
+        "When we meet after lunch",
+        "When we meet, after lunch",
+        "When we meet after lunch;"
+      ],
+      [
+        "plan, and",
+        "plan and,",
+        "plan; and",
+        "plan, and,"
+      ]
+    ],
+    "correct": [
+      0,
+      0
+    ],
+    "explanation": "An opening dependent clause (\"When we meet after lunch\") is followed by a comma before the main sentence, so \"When we meet after lunch,\" is correct; a comma inside the clause or a semicolon after it breaks the sentence. In a list of three items, a comma goes between the items, including before \"and\": \"the budget, the hiring plan, and the holiday schedule.\" A comma never goes after \"and,\" and a semicolon does not belong inside a simple list."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 1,
+    "skill": "Concise wording",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "(1) The committee met on Tuesday. (2) At this point in time, the members are of the opinion that the budget should be approved. (3) A final vote is scheduled for next week.",
+    "stem": "Which revision of sentence 2 is most concise?",
+    "options": [
+      "At this point in time, the members believe that the budget should be approved.",
+      "The members are currently of the opinion that the budget should now be approved.",
+      "Now, at this point, the members think that the budget should be approved.",
+      "The members now believe the budget should be approved."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"At this point in time\" means \"now,\" and \"are of the opinion that\" means \"believe.\" The shortest version says the same thing with no wasted words. The other versions keep one or both of the wordy phrases."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 2,
+    "skill": "Subject-verb agreement",
+    "difficulty": 2,
+    "format": "cloze",
+    "basics": "subjectVerb",
+    "stem": "Choose the option that correctly completes the text.\n\nEach of the delivery drivers [[1]] a handheld scanner at the start of the shift.",
+    "blanks": [
+      [
+        "receives",
+        "receive",
+        "are receiving",
+        "have received"
+      ]
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Each\" is the subject and is always singular, even when it is followed by \"of the drivers.\" A singular subject takes \"receives.\" The other choices agree with the plural \"drivers,\" which is not the subject."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 2,
+    "skill": "Apostrophes",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "apostrophes",
+    "passage": "(1) The clinic is closed on Monday for the holiday. (2) Patients who need a refill should call before Friday. (3) The pharmacies hours have not changed, and it's drive-through window will stay open.",
+    "stem": "Which revision of sentence 3 is correct?",
+    "options": [
+      "The pharmacies hours have not changed, and its drive-through window will stay open.",
+      "The pharmacy's hours have not changed, and its drive-through window will stay open.",
+      "The pharmacy's hours have not changed, and it's drive-through window will stay open.",
+      "The pharmacies' hours have not changed, and its' drive-through window will stay open."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The hours belong to one pharmacy, so \"pharmacy's\" takes an apostrophe before the s. \"Its\" shows ownership of the window; \"it's\" means \"it is,\" and \"its'\" is never correct."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 2,
+    "skill": "Verb tense",
+    "difficulty": 2,
+    "format": "cloze",
+    "basics": "verbTense",
+    "stem": "Choose the option that correctly completes the text.\n\nBy the time the inspector arrived, the crew [[1]] the scaffolding and [[2]] for the next job.",
+    "blanks": [
+      [
+        "had removed",
+        "removed",
+        "has removed",
+        "will remove"
+      ],
+      [
+        "was packing",
+        "packs",
+        "will pack",
+        "has packed"
+      ]
+    ],
+    "correct": [
+      0,
+      0
+    ],
+    "explanation": "Removing the scaffolding was finished before another past event, the inspector's arrival, so it takes \"had removed.\" The packing was in progress at that past moment, so \"was packing\" fits. Present and future forms break the past-time frame set by \"arrived.\""
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 2,
+    "skill": "Run-on sentences",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "commaSplices",
+    "passage": "(1) The warehouse will close early on December 24. (2) Orders placed after noon will ship on December 26 customers will receive an email with the new date. (3) Thank you for your understanding.",
+    "stem": "Which revision of sentence 2 is correct?",
+    "options": [
+      "Orders placed after noon will ship on December 26, customers will receive an email with the new date.",
+      "Orders placed after noon will ship on December 26 customers, will receive an email with the new date.",
+      "Orders placed after noon will ship on December 26; customers will receive an email with the new date.",
+      "Orders placed after noon, will ship on December 26 and customers will receive an email with the new date."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sentence 2 runs two complete sentences together with nothing between them. A semicolon joins two closely related complete sentences. A comma alone makes a comma splice, a comma after \"customers\" splits the second sentence from its subject, and a comma between \"Orders placed after noon\" and its verb is wrong."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 2,
+    "skill": "Pronoun case",
+    "difficulty": 2,
+    "format": "cloze",
+    "basics": "pronounCase",
+    "stem": "Choose the option that correctly completes the text.\n\nAfter the inspection, the supervisor gave [[1]] a copy of the report so that [[2]] could fix the problems before Friday.",
+    "blanks": [
+      [
+        "Carlos and me",
+        "Carlos and I",
+        "Carlos and myself",
+        "I and Carlos"
+      ],
+      [
+        "he and I",
+        "him and me",
+        "him and I",
+        "me and him"
+      ]
+    ],
+    "correct": [
+      0,
+      0
+    ],
+    "explanation": "Carlos and the writer receive the report, so the object form \"me\" is needed: \"gave me a copy.\" In the second blank, Carlos and the writer do the fixing, so the subject forms \"he and I\" are needed: \"he and I could fix.\""
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 2,
+    "skill": "Capitalization",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "(1) The sale begins on friday, march 6, and runs through the end of Winter. (2) All coats will be 40 percent off. (3) The sale ends when the store closes.",
+    "stem": "Which revision of sentence 1 is correct?",
+    "options": [
+      "The sale begins on Friday, March 6, and runs through the end of winter.",
+      "The sale begins on Friday, March 6, and runs through the end of Winter.",
+      "The sale begins on friday, March 6, and runs through the end of winter.",
+      "The sale begins on Friday, march 6, and runs through the end of winter."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Days of the week and months are capitalized; the names of seasons are not. Only the first version capitalizes \"Friday\" and \"March\" and keeps \"winter\" lowercase."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 2,
+    "skill": "Transitions",
+    "difficulty": 1,
+    "format": "cloze",
+    "basics": "transitions",
+    "stem": "Choose the option that correctly completes the text.\n\nThe first shipment arrived two days late. [[1]], the second one came a week early, and we had no room to store it.",
+    "blanks": [
+      [
+        "In contrast",
+        "As a result",
+        "Similarly",
+        "In other words"
+      ]
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Late and early are opposites, so the second sentence contrasts with the first. \"As a result\" would mean the early arrival was caused by the late one, \"similarly\" would mean the two were alike, and \"in other words\" would mean the second sentence restates the first."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 2,
+    "skill": "Commonly confused words",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "commonlyConfused",
+    "passage": "(1) Please review the attached schedule. (2) If you have more then two conflicts, let me know by Thursday. (3) Otherwise, I will assume the schedule works for you.",
+    "stem": "Which revision of sentence 2 is correct?",
+    "options": [
+      "If you have more then two conflicts, let me know buy Thursday.",
+      "If you have more then two conflicts let me know by Thursday.",
+      "If your have more than two conflicts, let me know by Thursday.",
+      "If you have more than two conflicts, let me know by Thursday."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Than\" is used for comparisons such as \"more than two\"; \"then\" is about time. The other revisions keep \"then\" or introduce new errors: \"buy\" for \"by,\" a missing comma after the opening clause, or \"your\" for \"you.\""
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 2,
+    "skill": "Commas in lists and after openers",
+    "difficulty": 2,
+    "format": "cloze",
+    "basics": "listIntroCommas",
+    "stem": "Choose the option that correctly completes the text.\n\nThe crew checked the brakes [[1]] replaced the tires before the truck left the yard.",
+    "blanks": [
+      [
+        "and",
+        ", and",
+        "; and",
+        "and,"
+      ]
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Checked\" and \"replaced\" are two verbs that share one subject, \"the crew,\" so no comma goes between them. A comma before \"and\" is for joining two complete sentences, and a semicolon or a comma after \"and\" has no place here."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 2,
+    "skill": "Concise wording",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "(1) Due to the fact that the parking lot is being repaved, employees should park on Oak Street. (2) The work will take three days. (3) We apologize for the inconvenience.",
+    "stem": "Which revision of sentence 1 is most concise?",
+    "options": [
+      "Owing to the fact that the parking lot is in the process of being repaved, employees should park on Oak Street.",
+      "Because the parking lot is being repaved, employees should park on Oak Street.",
+      "Because of the reason that the parking lot is being repaved, employees should park on Oak Street.",
+      "Due to the fact that the parking lot is being repaved, employees should, park on Oak Street."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Due to the fact that\" means \"because,\" so the one-word version says the same thing more directly. The other versions keep a wordy phrase or add an incorrect comma after \"should.\""
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 0,
+    "skill": "Subject-verb agreement",
+    "difficulty": 2,
+    "format": "cloze",
+    "basics": "subjectVerb",
+    "stem": "Choose the option that correctly completes the text.\n\nNeither the manager nor the assistants [[1]] the combination to the new safe.",
+    "blanks": [
+      [
+        "know",
+        "knows",
+        "is knowing",
+        "has known"
+      ]
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With \"neither ... nor,\" the verb agrees with the subject closest to it. \"Assistants\" is plural, so the verb is \"know.\" \"Knows\" and \"has known\" are singular, and \"is knowing\" is not standard here."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 0,
+    "skill": "Apostrophes",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "apostrophes",
+    "passage": "(1) The childrens' coats are hung by the door. (2) Parents may pick them up at 3 p.m. (3) Please sign the log before leaving.",
+    "stem": "Which revision of sentence 1 is correct?",
+    "options": [
+      "The children's coats are hung by the door.",
+      "The childrens coats are hung by the door.",
+      "The childrens' coats are hung by the door.",
+      "The children's coat's are hung by the door."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Children\" is already plural, so the possessive adds an apostrophe and s: \"children's.\" \"Childrens\" is not a word, and \"coat's\" wrongly adds an apostrophe to a simple plural."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 0,
+    "skill": "Commonly confused words",
+    "difficulty": 1,
+    "format": "cloze",
+    "basics": "commonlyConfused",
+    "stem": "Choose the option that correctly completes the text.\n\nThe new policy will [[1]] fewer people [[2]] we expected.",
+    "blanks": [
+      [
+        "affect",
+        "effect",
+        "affects",
+        "effecting"
+      ],
+      [
+        "than",
+        "then",
+        "that",
+        "as"
+      ]
+    ],
+    "correct": [
+      0,
+      0
+    ],
+    "explanation": "\"Affect\" is the verb meaning to influence. \"Than\" is used in a comparison, \"fewer people than we expected\"; \"then\" is about time."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 0,
+    "skill": "Verb tense",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "verbTense",
+    "passage": "(1) The store has been open since 1985. (2) Last year it expanded into the building next door. (3) Since the expansion, sales grew by 20 percent.",
+    "stem": "Which revision of sentence 3 is correct?",
+    "options": [
+      "Since the expansion, sales will grow by 20 percent.",
+      "Since the expansion, sales had grown by 20 percent.",
+      "Since the expansion, sales have grown by 20 percent.",
+      "Since the expansion, sales are growing by 20 percent since then."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"Since the expansion\" describes a change that started in the past and continues now, which takes the present perfect \"have grown,\" matching \"has been open\" in sentence 1. \"Will grow\" is future, \"had grown\" needs a later past event, and the last version repeats \"since.\""
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 0,
+    "skill": "Transitions",
+    "difficulty": 1,
+    "format": "cloze",
+    "basics": "transitions",
+    "stem": "Choose the option that correctly completes the text.\n\nOur old supplier raised prices twice this year. [[1]], we are moving our orders to a company across town.",
+    "blanks": [
+      [
+        "Therefore",
+        "Nevertheless",
+        "Likewise",
+        "For example"
+      ]
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The move is a result of the price increases, so \"therefore\" is the right signal. \"Nevertheless\" would mean the move happened despite the increases, \"likewise\" that the two sentences are alike, and \"for example\" that the move illustrates the first sentence."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 0,
+    "skill": "Pronoun case",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "pronounCase",
+    "passage": "(1) Dana and her assistant finished the report early. (2) The director praised she and the assistant at the staff meeting. (3) Both received a bonus.",
+    "stem": "Which revision of sentence 2 is correct?",
+    "options": [
+      "The director praised she and the assistant at the staff meeting.",
+      "The director praised herself and the assistant at the staff meeting.",
+      "The director praised she and her assistant, at the staff meeting.",
+      "The director praised her and the assistant at the staff meeting."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dana receives the praise, so the object pronoun \"her\" is needed: \"praised her.\" \"She\" is a subject pronoun, \"herself\" would mean the director praised the director, and the comma before \"at the staff meeting\" is wrong."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 0,
+    "skill": "Comma splices",
+    "difficulty": 2,
+    "format": "cloze",
+    "basics": "commaSplices",
+    "stem": "Choose the option that correctly completes the text.\n\nThe forklift needs a new battery [[1]] will not hold a charge overnight.",
+    "blanks": [
+      [
+        "because it",
+        ", it",
+        "it",
+        ", which it"
+      ]
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Because it will not hold a charge\" makes the second part depend on the first, so the two ideas are joined correctly. A comma alone between two complete sentences is a comma splice, nothing at all makes a run-on, and \"which it\" leaves the clause with an extra pronoun."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 0,
+    "skill": "Commas in lists and after openers",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "listIntroCommas",
+    "passage": "(1) Before the store opens each morning the manager counts the registers. (2) The count is recorded in the log. (3) Any difference over \\$5 is reported to the district office.",
+    "stem": "Which revision of sentence 1 is correct?",
+    "options": [
+      "Before the store opens, each morning the manager counts the registers.",
+      "Before the store opens each morning, the manager counts the registers.",
+      "Before the store opens each morning the manager, counts the registers.",
+      "Before, the store opens each morning the manager counts the registers."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Before the store opens each morning\" is an opening clause, so a comma follows it, right before the main sentence. The other versions split the opener in the wrong place or put a comma between the subject \"the manager\" and its verb."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 0,
+    "skill": "Capitalization",
+    "difficulty": 1,
+    "format": "cloze",
+    "stem": "Choose the option that correctly completes the text.\n\nThe meeting with the [[1]] is scheduled for [[2]] at city hall.",
+    "blanks": [
+      [
+        "mayor",
+        "Mayor",
+        "city Mayor"
+      ],
+      [
+        "Tuesday, April 3",
+        "tuesday, april 3",
+        "Tuesday, april 3",
+        "tuesday, April 3"
+      ]
+    ],
+    "correct": [
+      0,
+      0
+    ],
+    "explanation": "A title is capitalized only when it comes right before a name (Mayor Ortiz); \"the mayor\" and \"the city mayor\" by themselves are lowercase. Days and months are always capitalized."
+  },
+  {
+    "domain": "gedLanguage",
+    "test": 0,
+    "skill": "Parallel structure",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "(1) The new hire is punctual, organized, and she works hard. (2) Customers have already mentioned her by name. (3) We plan to offer her more hours.",
+    "stem": "Which revision of sentence 1 is correct?",
+    "options": [
+      "The new hire is punctual, organized, and she is a hard worker.",
+      "The new hire is punctual, organized, and working hard.",
+      "The new hire is punctual, organized, and hardworking.",
+      "The new hire is punctual and organized, and she works hard also."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The list should use the same form for all three items. \"Punctual, organized, and hardworking\" are three adjectives. The other versions mix adjectives with a clause or a verb, or add a wordy \"also.\""
+  }
+]

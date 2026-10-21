@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "PNC" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -310,6 +310,17 @@ export type QuestionCategory =
   | "lgCare"
   | "lgFacility"
 
+  // Cosmetology categories
+  | "cosInfection"
+  | "cosAnatomy"
+  | "cosChemistry"
+  | "cosConsult"
+  | "cosCutStyle"
+  | "cosTexture"
+  | "cosColor"
+  | "cosSkin"
+  | "cosNails"
+
   // Property and casualty categories
   | "pcGeneral"
   | "pcPolicy"
@@ -317,7 +328,19 @@ export type QuestionCategory =
   | "pcAuto"
   | "pcCommercial"
   | "pcLiability"
-  | "pcOther";
+  | "pcOther"
+
+  // VTNE categories
+  | "vtCare"
+  | "vtPharm"
+  | "vtSurgical"
+  | "vtAnesthesia"
+  | "vtLab"
+  | "vtImaging"
+  | "vtDentistry"
+  | "vtEmergency"
+  | "vtPain"
+  | "vtComm";
 
 export interface Question {
   type: QuestionType;

@@ -1,0 +1,729 @@
+[
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Linear equation with variables on both sides",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "solveX",
+    "stem": "What value of $x$ makes the equation $5x - 9 = 2x + 12$ true?",
+    "options": [
+      "$7$",
+      "$1$",
+      "$3$",
+      "$21$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Subtract $2x$ from both sides: $3x - 9 = 12$. Add 9: $3x = 21$. Divide by 3: $x = 7$. Stopping at $3x = 21$ gives 21, and subtracting 9 instead of adding it gives $x = 1$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Slope from two points",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "slope",
+    "stem": "A line passes through the points $(2, 5)$ and $(6, 17)$. What is the slope of the line?",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Slope is the change in $y$ over the change in $x$: $\\frac{17 - 5}{6 - 2} = \\frac{12}{4} = 3$. Putting the change in $x$ on top gives $\\frac{1}{3}$, which is the reciprocal."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Distributive property",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Which expression is equivalent to $3(2x - 4) - 5x$?",
+    "options": [
+      "$x - 4$",
+      "$x - 12$",
+      "$11x - 12$",
+      "$-x - 12$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Distribute the 3 to both terms: $6x - 12$. Then combine like terms: $6x - 5x = x$, giving $x - 12$. Distributing only to the first term gives $x - 4$, and adding $5x$ instead of subtracting gives $11x - 12$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Evaluating an expression",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "What is the value of $2a^2 - 3b$ when $a = 4$ and $b = 5$?",
+    "numeric": {
+      "answers": [
+        "17"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Substitute and follow the order of operations: $2(4)^2 - 3(5) = 2(16) - 15 = 32 - 15 = 17$. Squaring $2a$ as a whole gives $64 - 15 = 49$, which applies the exponent to the 2 as well."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Inequality with a negative coefficient",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Which inequality describes all solutions of $-3x + 4 \\geq 19$?",
+    "options": [
+      "$x \\geq -5$",
+      "$x \\leq 5$",
+      "$x \\leq -5$",
+      "$x \\geq 5$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Subtract 4: $-3x \\geq 15$. Dividing both sides by $-3$ reverses the inequality sign: $x \\leq -5$. Forgetting to flip the sign gives $x \\geq -5$, and dropping the negative gives $x \\leq 5$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Factoring a trinomial",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Which of the following is the factored form of $x^2 - 5x - 14$?",
+    "options": [
+      "$(x - 7)(x + 2)$",
+      "$(x + 7)(x - 2)$",
+      "$(x - 7)(x - 2)$",
+      "$(x + 7)(x + 2)$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Look for two numbers that multiply to $-14$ and add to $-5$: $-7$ and $2$. So $x^2 - 5x - 14 = (x - 7)(x + 2)$. The pair $(x + 7)(x - 2)$ gives $+5x$, and $(x - 7)(x - 2)$ gives $+14$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "System of equations word problem",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "systems",
+    "stem": "A theater sold 30 tickets for a total of \\$300. Adult tickets cost \\$12 and child tickets cost \\$8. How many adult tickets were sold?",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Let $a$ be adult tickets and $c$ child tickets: $a + c = 30$ and $12a + 8c = 300$. From the first, $c = 30 - a$, so $12a + 8(30 - a) = 300$, which gives $4a + 240 = 300$ and $a = 15$. Check: 15 adult tickets at 12 dollars and 15 child tickets at 8 dollars total 180 plus 120, which is 300."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Function rule from a table",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| $x$ | $y$ |\n|---|---|\n| 1 | 5 |\n| 2 | 8 |\n| 3 | 11 |\n| 4 | 14 |",
+    "stem": "Which equation gives $y$ in terms of $x$ for every row of the table?",
+    "options": [
+      "$y = 5x$",
+      "$y = 3x + 2$",
+      "$y = 2x + 3$",
+      "$y = x + 4$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Each time $x$ goes up by 1, $y$ goes up by 3, so the slope is 3. Testing $x = 1$: $3(1) + 2 = 5$, which matches. The rule $y = 5x$ fits only the first row, and $y = 2x + 3$ gives 5 for $x = 1$ but 7 for $x = 2$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Writing and solving a linear equation",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "A plumber charges a \\$65 service call fee plus \\$40 for each hour of work. A customer's bill was \\$225. How many hours did the plumber work?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The bill is $65 + 40h = 225$. Subtract 65: $40h = 160$. Divide by 40: $h = 4$ hours. Dividing the whole bill by 40 without removing the fee gives 5.625, which ignores the service call charge."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Exponent rules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which expression is equivalent to $(2x^3)^2 \\cdot x$?",
+    "options": [
+      "$4x^6$",
+      "$2x^7$",
+      "$4x^7$",
+      "$4x^{12}$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Raising a product to a power raises each factor: $(2x^3)^2 = 4x^6$. Multiplying by $x$ adds 1 to the exponent: $4x^7$. Forgetting to square the 2 gives $2x^7$, and multiplying exponents in the last step gives $4x^{12}$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Solving a quadratic equation",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "What are the solutions of the equation $x^2 = 6x - 8$?",
+    "options": [
+      "$x = -2$ or $x = -4$",
+      "$x = 2$ or $x = -4$",
+      "$x = -2$ or $x = 4$",
+      "$x = 2$ or $x = 4$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Move everything to one side: $x^2 - 6x + 8 = 0$. Factor: $(x - 2)(x - 4) = 0$, so $x = 2$ or $x = 4$. The signs are the most common slip: $(x + 2)(x + 4)$ would expand to $x^2 + 6x + 8$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Finding the y-intercept",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "slope",
+    "stem": "A line has a slope of $-2$ and passes through the point $(3, 1)$. What is the $y$-intercept of the line?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Use $y = mx + b$ with $m = -2$, $x = 3$ and $y = 1$: $1 = -2(3) + b$, so $1 = -6 + b$ and $b = 7$. Adding 6 to the wrong side gives $-5$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Multiplying binomials",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Which expression is equivalent to $(3x + 2)(x - 5)$?",
+    "options": [
+      "$3x^2 - 13x - 10$",
+      "$3x^2 - 10$",
+      "$3x^2 + 13x - 10$",
+      "$3x^2 - 17x - 10$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Multiply each term of the first factor by each term of the second: $3x \\cdot x = 3x^2$, $3x \\cdot (-5) = -15x$, $2 \\cdot x = 2x$, $2 \\cdot (-5) = -10$. Combine: $3x^2 - 13x - 10$. Multiplying only the first and last terms gives $3x^2 - 10$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 1,
+    "skill": "Checking solutions",
+    "difficulty": 1,
+    "format": "multi",
+    "basics": "solveX",
+    "stem": "Which of the following equations are true when $x = 4$? Select all that apply.",
+    "options": [
+      "$2x + 1 = 9$",
+      "$\\frac{x}{2} = 8$",
+      "$3x - 5 = 7$",
+      "$x^2 = 16$",
+      "$5 - x = -1$"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "calculator": true,
+    "explanation": "Substitute 4 for $x$ in each: $2(4) + 1 = 9$ is true, $3(4) - 5 = 7$ is true, and $4^2 = 16$ is true. But $\\frac{4}{2} = 2$, not 8, and $5 - 4 = 1$, not $-1$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Linear equation with a fraction",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "solveX",
+    "stem": "What value of $x$ makes the equation $\\frac{x}{4} + 3 = 8$ true?",
+    "options": [
+      "$1.25$",
+      "$20$",
+      "$29$",
+      "$44$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Subtract 3 from both sides: $\\frac{x}{4} = 5$. Multiply both sides by 4: $x = 20$. Multiplying 8 by 4 before subtracting gives 29, and dividing 5 by 4 instead of multiplying gives 1.25."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Rate of change from a table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "slope",
+    "passage": "| Time (hours) | Distance (miles) |\n|---|---|\n| 0 | 50 |\n| 2 | 170 |\n| 4 | 290 |",
+    "stem": "The table shows a train's distance from a station over time. What is the train's speed, in miles per hour?",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The rate of change is the change in distance over the change in time: $\\frac{170 - 50}{2 - 0} = \\frac{120}{2} = 60$ miles per hour. Dividing 170 by 2 ignores the 50 miles the train had already traveled at time 0."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Distributing a negative",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Which expression is equivalent to $-2(3x - 5) + 4x$?",
+    "options": [
+      "$-2x - 10$",
+      "$2x + 10$",
+      "$-2x + 10$",
+      "$-10x + 10$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Distribute $-2$ to both terms: $-6x + 10$. Add $4x$: $-6x + 4x + 10 = -2x + 10$. Distributing $-2$ to only the first term gives $-2x - 5$ and keeping the $-5$ gives $-2x - 10$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Using a formula",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "The formula $F = \\frac{9}{5}C + 32$ converts a Celsius temperature $C$ to Fahrenheit $F$. What is the Fahrenheit temperature when $C = 25$?",
+    "numeric": {
+      "answers": [
+        "77"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Substitute 25 for $C$: $F = \\frac{9}{5}(25) + 32 = 45 + 32 = 77$ degrees. Adding 32 before multiplying gives $\\frac{9}{5}(57) = 102.6$, which applies the operations in the wrong order."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Inequality word problem",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "A team has at most \\$150 to spend on uniforms. The order has a flat \\$35 printing fee plus \\$23 per shirt. What is the greatest number of shirts the team can order?",
+    "options": [
+      "$3$",
+      "$4$",
+      "$6$",
+      "$5$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The cost is $35 + 23n \\leq 150$. Subtract 35: $23n \\leq 115$. Divide: $n \\leq 5$. So 5 shirts is the most. Six shirts would cost $35 + 138 = 173$, over budget, and dividing 150 by 23 without the fee suggests 6."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Difference of squares",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Which of the following is the factored form of $4x^2 - 25$?",
+    "options": [
+      "$(2x - 5)(2x + 5)$",
+      "$(2x - 5)(2x - 5)$",
+      "$(4x - 5)(x + 5)$",
+      "$(2x - 25)(2x + 1)$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "This is a difference of squares, $a^2 - b^2 = (a - b)(a + b)$, with $a = 2x$ and $b = 5$: $(2x - 5)(2x + 5)$. The product $(2x - 5)(2x - 5)$ expands to $4x^2 - 20x + 25$, and $(4x - 5)(x + 5)$ has a middle term."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Solving a system by substitution",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "systems",
+    "stem": "What is the value of $x$ in the solution of the system $3x + 2y = 19$ and $x - y = 3$?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "From the second equation, $x = y + 3$. Substitute into the first: $3(y + 3) + 2y = 19$, so $5y + 9 = 19$, $y = 2$, and $x = 5$. Check: $3(5) + 2(2) = 19$ and $5 - 2 = 3$. Answering 2 gives $y$, not $x$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Evaluating a function",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "substitution",
+    "stem": "If $f(x) = -4x + 11$, what is the value of $f(-2)$?",
+    "options": [
+      "$3$",
+      "$19$",
+      "$7$",
+      "$-19$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Substitute $-2$ for $x$: $f(-2) = -4(-2) + 11 = 8 + 11 = 19$. Treating $-4(-2)$ as $-8$ gives 3, and using $x = 2$ gives 3 as well."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Quadratic model",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "factoring",
+    "stem": "A ball is thrown upward from the ground. Its height in feet after $t$ seconds is $h = -16t^2 + 64t$. After how many seconds does the ball return to the ground?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "On the ground, $h = 0$: $-16t^2 + 64t = 0$. Factor: $-16t(t - 4) = 0$, so $t = 0$ (the throw) or $t = 4$. The ball lands after 4 seconds. The answer 2 is when the ball is highest, not when it lands."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Simplifying a rational expression",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Which expression is equivalent to $\\frac{x^2 - 9}{x + 3}$ for all values of $x$ except $-3$?",
+    "options": [
+      "$x + 3$",
+      "$x - 9$",
+      "$x - 3$",
+      "$x^2 - 3$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Factor the numerator as a difference of squares: $\\frac{(x - 3)(x + 3)}{x + 3}$. Cancel the common factor $x + 3$ to get $x - 3$. Cancelling the $x^2$ with the $x$, or the 9 with the 3, is not valid because they are terms, not factors."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Dividing monomials",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which expression is equivalent to $\\frac{6x^5}{2x^2}$?",
+    "options": [
+      "$3x^3$",
+      "$4x^3$",
+      "$3x^{2.5}$",
+      "$3x^7$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Divide the coefficients, $6 \\div 2 = 3$, and subtract the exponents, $5 - 2 = 3$: $3x^3$. Dividing the exponents gives $3x^{2.5}$, and adding them gives $3x^7$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Distance, rate and time",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Two cars start 300 miles apart and drive toward each other on the same road. One travels at 55 miles per hour and the other at 65 miles per hour. After how many hours do they meet?",
+    "numeric": {
+      "answers": [
+        "2.5",
+        "5/2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Together the cars close the gap at $55 + 65 = 120$ miles per hour, so they meet after $300 \\div 120 = 2.5$ hours. Dividing 300 by 65 (about 4.6) or by 55 (about 5.5) uses only one car's speed."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Equation of a line from a description",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "slope",
+    "stem": "On a coordinate grid, a line crosses the $y$-axis at $(0, -3)$ and passes through the point $(4, 5)$. Which equation represents the line?",
+    "options": [
+      "$y = \\frac{1}{2}x - 3$",
+      "$y = 2x + 5$",
+      "$y = -3x + 2$",
+      "$y = 2x - 3$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The $y$-intercept is $-3$. The slope is $\\frac{5 - (-3)}{4 - 0} = \\frac{8}{4} = 2$, so $y = 2x - 3$. Using the point's $y$-value 5 as the intercept, or subtracting the $y$-values as $5 - 3 = 2$ and getting a slope of $\\frac{1}{2}$, gives the other choices."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 2,
+    "skill": "Solutions of a compound inequality",
+    "difficulty": 2,
+    "format": "multi",
+    "basics": "inequalities",
+    "stem": "Which of the following values of $x$ are solutions of $-2 < x \\leq 3$? Select all that apply.",
+    "options": [
+      "$-2$",
+      "$0$",
+      "$3$",
+      "$3.5$",
+      "$-1.5$"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "calculator": true,
+    "explanation": "The inequality includes every number greater than $-2$ (not $-2$ itself) up to and including 3. So $-1.5$, $0$ and $3$ are solutions. The value $-2$ is excluded by the strict $<$, and $3.5$ is greater than 3."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 0,
+    "skill": "Linear equation with a negative coefficient",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "solveX",
+    "stem": "What value of $x$ makes the equation $7 - 2x = 15$ true?",
+    "options": [
+      "$4$",
+      "$-4$",
+      "$11$",
+      "$-11$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Subtract 7 from both sides: $-2x = 8$. Divide by $-2$: $x = -4$. Dropping the negative sign gives 4, and adding 7 instead of subtracting gives $-11$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 0,
+    "skill": "Slope from standard form",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "slope",
+    "stem": "What is the slope of the line $3x + 4y = 12$?",
+    "numeric": {
+      "answers": [
+        "-3/4",
+        "-0.75",
+        "-.75"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Solve for $y$: $4y = -3x + 12$, so $y = -\\frac{3}{4}x + 3$. The slope is the coefficient of $x$, $-\\frac{3}{4}$. Reading the slope as 3 or as $\\frac{3}{4}$ skips the division by 4 or loses the sign."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 0,
+    "skill": "Equation with parentheses",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "What value of $x$ makes the equation $4(x + 3) = 2x - 6$ true?",
+    "options": [
+      "$-3$",
+      "$9$",
+      "$-9$",
+      "$-4.5$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Distribute: $4x + 12 = 2x - 6$. Subtract $2x$: $2x + 12 = -6$. Subtract 12: $2x = -18$, so $x = -9$. Distributing the 4 to only the $x$ gives $4x + 3 = 2x - 6$ and $x = -4.5$; a sign slip gives $x = 9$ or $x = -3$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 0,
+    "skill": "Simple interest formula",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "The formula $A = P(1 + rt)$ gives the total amount $A$ after a deposit $P$ earns simple interest at an annual rate $r$ for $t$ years. What is $A$, in dollars, when $P = 2{,}000$, $r = 0.04$ and $t = 3$?",
+    "numeric": {
+      "answers": [
+        "2240",
+        "2,240",
+        "$2,240",
+        "$2240"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Work inside the parentheses first: $rt = 0.04 \\times 3 = 0.12$, so $1 + rt = 1.12$. Then $A = 2{,}000 \\times 1.12 = 2{,}240$ dollars. The value 240 is only the interest earned, not the total amount."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 0,
+    "skill": "Two-step inequality",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Which inequality describes all solutions of $\\frac{x}{2} - 1 < 4$?",
+    "options": [
+      "$x < 6$",
+      "$x > 10$",
+      "$x < 2.5$",
+      "$x < 10$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Add 1 to both sides: $\\frac{x}{2} < 5$. Multiply both sides by 2: $x < 10$. Multiplying by 2 is safe because 2 is positive, so the sign does not flip. Subtracting 1 instead gives $x < 6$, and dividing by 2 gives $x < 2.5$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 0,
+    "skill": "Solving by factoring",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "factoring",
+    "stem": "What is the greater of the two solutions of $x^2 + 7x + 12 = 0$?",
+    "numeric": {
+      "answers": [
+        "-3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Find two numbers that multiply to 12 and add to 7: 3 and 4. So $(x + 3)(x + 4) = 0$ and $x = -3$ or $x = -4$. The greater solution is $-3$. Answering 3 and 4 forgets that each factor is set equal to zero, which flips the signs."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 0,
+    "skill": "Solving a system of two lines",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "systems",
+    "stem": "Which ordered pair is the solution of the system $y = 2x + 1$ and $y = -x + 7$?",
+    "options": [
+      "$(5, 2)$",
+      "$(2, 5)$",
+      "$(2, 3)$",
+      "$(-2, -3)$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Set the expressions for $y$ equal: $2x + 1 = -x + 7$, so $3x = 6$ and $x = 2$. Then $y = 2(2) + 1 = 5$, so the solution is $(2, 5)$. Check in the second equation: $-2 + 7 = 5$. The pair $(5, 2)$ reverses the coordinates."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 0,
+    "skill": "Extending a linear pattern",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "slope",
+    "passage": "| $x$ | $y$ |\n|---|---|\n| 0 | 7 |\n| 1 | 4 |\n| 2 | 1 |\n| 3 | -2 |",
+    "stem": "The table shows a linear relationship between $x$ and $y$. What is the value of $y$ when $x = 10$?",
+    "numeric": {
+      "answers": [
+        "-23"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Each time $x$ increases by 1, $y$ decreases by 3, and $y = 7$ when $x = 0$, so $y = 7 - 3x$. When $x = 10$: $y = 7 - 30 = -23$. Continuing the pattern by hand (from $-2$ at $x = 3$, seven more steps of $-3$) gives the same result."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 0,
+    "skill": "Negative exponents",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the value of $3^{-2}$?",
+    "options": [
+      "$\\frac{1}{9}$",
+      "$-9$",
+      "$-6$",
+      "$\\frac{1}{6}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A negative exponent means the reciprocal: $3^{-2} = \\frac{1}{3^2} = \\frac{1}{9}$. The value is positive. Treating the exponent as a sign gives $-9$, and multiplying $3 \\times (-2)$ gives $-6$."
+  },
+  {
+    "domain": "gedAlgebra",
+    "test": 0,
+    "skill": "Subtracting polynomials",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which expression is equivalent to $(2x^2 + 3x - 1) - (x^2 - 4x + 5)$?",
+    "options": [
+      "$x^2 - x + 4$",
+      "$x^2 - x - 6$",
+      "$x^2 + 7x - 6$",
+      "$x^2 + 7x + 4$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Subtracting the second polynomial changes the sign of every term in it: $2x^2 + 3x - 1 - x^2 + 4x - 5$. Combine like terms: $x^2 + 7x - 6$. Changing only the sign of $x^2$ gives $x^2 - x + 4$, and forgetting to change the sign of the 5 gives $x^2 + 7x + 4$."
+  }
+]

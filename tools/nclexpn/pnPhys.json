@@ -1,0 +1,416 @@
+[
+  {
+    "domain": "pnPhys",
+    "test": 1,
+    "skill": "COPD findings",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "The PN collects data on a long-term care resident with stable COPD. For each finding, specify whether it is expected for this resident or should be reported to the RN.",
+    "rows": [
+      "SpO2 90% on room air",
+      "Barrel-shaped chest",
+      "Breathes out through pursed lips",
+      "New confusion and drowsiness",
+      "Temperature 101.4 F with green sputum"
+    ],
+    "columns": [
+      "Expected",
+      "Report to the RN"
+    ],
+    "correct": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "A resting saturation around 88% to 92%, a barrel chest and pursed-lip breathing are the long-term picture of COPD. New confusion and drowsiness suggest carbon dioxide retention or low oxygen, and fever with green sputum suggests a respiratory infection, both of which need the RN and provider."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 1,
+    "skill": "Hypoglycemia versus hyperglycemia",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client with diabetes becomes sweaty, shaky and anxious an hour before lunch. Which problem should the PN suspect?",
+    "options": [
+      "Hyperglycemia",
+      "Hypoglycemia",
+      "Diabetic ketoacidosis",
+      "Hyperosmolar hyperglycemic state"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sweating, tremor, anxiety and hunger are the adrenergic signs of low blood sugar and come on quickly before a meal. High glucose states develop over hours to days with thirst, frequent urination and dry skin."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 1,
+    "skill": "Seizure care",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client begins a tonic-clonic seizure in bed. Which action should the PN take?",
+    "options": [
+      "Place a padded tongue blade between the teeth to protect the tongue",
+      "Hold the arms and legs still until the movements stop",
+      "Turn the client onto the side and protect the head",
+      "Leave the room to get the RN and the emergency cart"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Side-lying lets saliva drain and keeps the airway open, and padding protects the head while the seizure runs its course. Nothing goes in the mouth, limbs are never restrained because that causes injury, and the PN stays with the client and calls for help."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 1,
+    "skill": "Heart failure data collection",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN collects data on a client with heart failure. Which findings suggest the condition is getting worse and should be reported? Select all that apply.",
+    "options": [
+      "Weight gain of 3 lb in 2 days",
+      "Needs two pillows to breathe at night",
+      "Ankle swelling that is increasing",
+      "Urine output increased after the diuretic",
+      "Heart rate 72/min and regular"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Rapid weight gain, needing to sleep propped up and growing edema all mean fluid is building up. Good urine output after a diuretic and a normal regular pulse show the treatment is working."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 1,
+    "skill": "Stroke recognition",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A long-term care resident suddenly has drooping on one side of the face and slurred speech. Which action should the PN take first?",
+    "options": [
+      "Give aspirin 325 mg from the stock supply",
+      "Offer a sip of water to test swallowing",
+      "Help the resident walk back to bed",
+      "Note the time and alert the RN immediately"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A stroke is treated against the clock, so the time the symptoms were last normal is recorded and the RN activates emergency care at once. Nothing is given by mouth until swallowing is cleared, aspirin is unsafe if the stroke is a bleed, and walking risks a fall."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 1,
+    "skill": "Fluid overload",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client receiving IV fluids develops crackles in both lungs, shortness of breath and a bounding pulse. Which action should the PN take?",
+    "options": [
+      "Raise the head of the bed and call the RN",
+      "Increase the IV rate to support the blood pressure",
+      "Lay the client flat to rest",
+      "Encourage the client to drink more fluids"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Crackles, dyspnea and a bounding pulse during an infusion mean fluid overload, so the client is sat up to ease breathing and the RN is called to slow the fluid and contact the provider. More fluid or lying flat makes it worse."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 1,
+    "skill": "Thyroid disorders",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN collects data on a client with hyperthyroidism. Which findings should the PN expect?",
+    "options": [
+      "Weight gain, cold intolerance and a slow pulse",
+      "Weight loss, heat intolerance and a rapid pulse",
+      "Weight gain, heat intolerance and a slow pulse",
+      "Weight loss, cold intolerance and a slow pulse"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Excess thyroid hormone speeds up metabolism, so the client loses weight, feels hot, sweats and has a fast pulse. Weight gain, cold intolerance and a slow pulse are the opposite picture of hypothyroidism."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 1,
+    "skill": "Anaphylaxis",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A clinic client was stung by a bee 10 minutes ago. Which findings indicate anaphylaxis and require emergency care? Select all that apply.",
+    "options": [
+      "Wheezing with each breath",
+      "Swelling of the lips and tongue",
+      "Hives spreading over the chest and arms",
+      "Redness the size of a quarter at the sting",
+      "BP 80/50 mm Hg"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "explanation": "Airway swelling, wheezing, widespread hives and a falling blood pressure are a whole-body allergic reaction that needs epinephrine and emergency care now. Redness limited to the sting site is a local reaction."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 2,
+    "skill": "Analyzing hypoglycemia cues",
+    "difficulty": 3,
+    "format": "matrix",
+    "passage": "1135: Capillary glucose 48 mg/dL. The 0800 glipizide dose was given, and insulin glargine 20 units was given at 2100 last night.",
+    "stimulusId": "NCLEXPN-CS2",
+    "caseStep": 2,
+    "stem": "For each finding, specify whether it supports hypoglycemia or does not point to hypoglycemia.",
+    "rows": [
+      "Cool, sweaty skin",
+      "Heart rate 104/min",
+      "Repeating the same question",
+      "BP 138/82 mm Hg",
+      "Lungs clear",
+      "Hands shaking"
+    ],
+    "columns": [
+      "Supports hypoglycemia",
+      "Does not point to hypoglycemia"
+    ],
+    "correct": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "explanation": "Sweating, a fast pulse and tremor come from the adrenaline released when glucose falls, and confusion comes from the brain running short of glucose. Her blood pressure is close to her usual and clear lungs do not point to hypoglycemia one way or the other."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 2,
+    "skill": "Hypoglycemia hypotheses",
+    "difficulty": 3,
+    "format": "cloze",
+    "stimulusId": "NCLEXPN-CS2",
+    "caseStep": 3,
+    "stem": "Complete the sentence. The resident is most likely experiencing [[1]] caused by [[2]], and the greatest immediate risk is [[3]].",
+    "blanks": [
+      [
+        "a stroke",
+        "hypoglycemia",
+        "hyperglycemia",
+        "delirium from an infection"
+      ],
+      [
+        "an overdose of insulin glargine",
+        "a urinary tract infection",
+        "poor intake while taking glipizide",
+        "too much fluid at breakfast"
+      ],
+      [
+        "loss of consciousness and a fall",
+        "diabetic ketoacidosis",
+        "a hypertensive crisis"
+      ]
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ],
+    "explanation": "A glucose of 48 mg/dL with sweating, tremor and confusion is hypoglycemia, and the cause is a full dose of a sulfonylurea taken with only a quarter of breakfast, on top of her usual basal insulin. Untreated, she can become unconscious, seize or fall; ketoacidosis is a high-glucose problem and her pressure is near her usual."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 2,
+    "skill": "Chest pain",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client on a medical unit reports chest pressure that spreads to the jaw and has not eased with 10 minutes of rest. Which action should the PN take first?",
+    "options": [
+      "Stay with the client and call the RN",
+      "Help the client walk to relieve the pressure",
+      "Give an antacid from the stock supply",
+      "Document the report and recheck in 30 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chest pressure spreading to the jaw and unrelieved by rest may be a heart attack, so the PN stays with the client, keeps the client at rest and gets the RN so oxygen, an ECG and medications can be started. Walking increases the heart's work, and an antacid or a 30-minute wait delays treatment."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 2,
+    "skill": "Pneumonia recovery",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An older adult is being treated for pneumonia. Which finding shows the PN that the client is improving?",
+    "options": [
+      "Respirations 28/min",
+      "SpO2 95% on room air",
+      "Coughing up rust-colored sputum",
+      "Temperature 101 F"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A saturation of 95% without oxygen means the lungs are exchanging gas well again. Fast breathing, fever and rust-colored sputum are signs the infection is still active."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 2,
+    "skill": "Cirrhosis complications",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with cirrhosis is admitted to a medical unit. Which finding should the PN report to the RN as a sign of bleeding?",
+    "options": [
+      "Yellow color of the sclera",
+      "An enlarged, rounded abdomen",
+      "Black, tarry stools",
+      "Spider-shaped veins on the chest"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Black, tarry stools mean digested blood from the upper gastrointestinal tract, often from varices, and are reported at once. Jaundice, ascites and spider angiomas are chronic signs of liver disease rather than active bleeding."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 2,
+    "skill": "Stoma care",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "The PN changes the appliance on a client's colostomy that was created 2 days ago. Which stoma findings should the PN report to the RN? Select all that apply.",
+    "options": [
+      "Dark purple color",
+      "Moist, pink-red color",
+      "Slight swelling of the stoma",
+      "Dry, dusky appearance",
+      "Bleeding that does not stop with gentle pressure"
+    ],
+    "correct": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "A healthy stoma is moist and pink-red and may be a little swollen for the first days. A purple or dusky, dry stoma has lost its blood supply, and bleeding that will not stop needs the RN and surgeon."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 2,
+    "skill": "Early shock",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A client with a gastrointestinal bleed is being watched for shock. Which finding is an early sign the PN should report?",
+    "options": [
+      "BP 150/90 mm Hg with a headache",
+      "Warm, flushed skin and a strong pulse",
+      "Urine output 60 mL/hr of clear yellow urine",
+      "Pulse 118/min with restlessness"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The body compensates for blood loss first by speeding the heart and narrowing vessels, so a rising pulse with restlessness and cool skin appears before the blood pressure falls. Good urine output and a high blood pressure show the client is still perfusing."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 2,
+    "skill": "Asthma",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A clinic client with asthma has used the rescue inhaler twice in the last hour. Which finding shows the PN that the attack is getting worse?",
+    "options": [
+      "Peak flow reading in the green zone after the second dose",
+      "Mild wheeze heard only when breathing out slowly",
+      "Cannot finish a sentence without stopping for breath",
+      "Cough after walking in from the parking lot in the cold"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Being unable to speak in full sentences means severe airflow limitation and the provider is told at once. A green-zone peak flow, a mild expiratory wheeze and an exercise cough are mild findings."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 0,
+    "skill": "Hypothyroidism",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN collects data on a client with untreated hypothyroidism. Which findings should the PN expect?",
+    "options": [
+      "Fatigue, weight gain and cold intolerance",
+      "Nervousness, weight loss and heavy sweating",
+      "Bulging eyes, heat intolerance and diarrhea",
+      "Rapid pulse, fine hand tremor and insomnia"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Too little thyroid hormone slows the body, so the client is tired, gains weight, feels cold and has dry skin and constipation. The other choices describe the overactive thyroid."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 0,
+    "skill": "Increased intracranial pressure",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN monitors a client after a head injury. Which findings suggest rising intracranial pressure? Select all that apply.",
+    "options": [
+      "Decreasing level of consciousness",
+      "Widening pulse pressure",
+      "Heart rate 120/min",
+      "Vomiting without nausea",
+      "Pupils unequal in size"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "explanation": "Pressure on the brain shows first as a drop in alertness, then as unequal pupils, projectile vomiting and a widening pulse pressure with a slow pulse. A fast heart rate is not part of this picture; the pulse slows as pressure rises."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 0,
+    "skill": "Dehydration in older adults",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A long-term care resident has had vomiting and diarrhea for 2 days. Which findings suggest to the PN that the resident is dehydrated?",
+    "options": [
+      "Bounding pulse and crackles in the lungs",
+      "Dry mouth and dark, scant urine",
+      "Weight gain of 2 kg since yesterday",
+      "Full, bulging neck veins"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fluid loss shows as a dry mouth, concentrated urine, a weak fast pulse, low blood pressure and weight loss. A bounding pulse, crackles, weight gain and full neck veins are signs of too much fluid."
+  },
+  {
+    "domain": "pnPhys",
+    "test": 0,
+    "skill": "Hyperkalemia ECG changes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client's potassium level is 6.4 mEq/L. Which change on the cardiac monitor should the PN expect the RN to be watching for?",
+    "options": [
+      "Flattened T waves",
+      "Prominent U waves",
+      "ST segment elevation",
+      "Tall, peaked T waves"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "High potassium makes the T waves tall and pointed and can widen the QRS and stop the heart. Flat T waves and U waves go with low potassium, and ST elevation points to a heart attack."
+  }
+]

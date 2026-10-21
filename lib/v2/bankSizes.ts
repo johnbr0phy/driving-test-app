@@ -2,6 +2,7 @@
 // (header, footer, hub) never imports a bank. tools/validate_v2_bank.py
 // rewrites the entry for the exam it validates.
 export const BANK_SIZES: Record<string, number> = {
+  ged: 240,
   sat: 474,
   act: 506,
   teas: 200,
@@ -9,7 +10,9 @@ export const BANK_SIZES: Record<string, number> = {
   asvab: 200,
   accuplacer: 200,
   nclex: 200,
+  nclexpn: 200,
   emt: 200,
+  paramedic: 200,
   secplus: 200,
   aplus: 200,
   aws: 200,

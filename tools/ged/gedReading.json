@@ -1,0 +1,797 @@
+[
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Main idea",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "mainIdea",
+    "stimulusId": "GED-R-01",
+    "stem": "What is the main purpose of the memo?",
+    "options": [
+      "To explain how the store's new scheduling app will work",
+      "To announce that the store is hiring more floor staff",
+      "To remind employees to submit their fall availability",
+      "To warn employees about trading shifts without approval"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Every paragraph describes the move from the paper sheet to the app: logins, the availability deadline, how trades will work and where to ask questions. The memo mentions last fall's availability only as what happens if the deadline is missed, not as something to submit."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Supporting detail",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "GED-R-01",
+    "stem": "According to the memo, what happens if an employee does not confirm availability by February 20?",
+    "options": [
+      "The employee loses the ability to trade shifts.",
+      "The employee is scheduled using last fall's availability.",
+      "The employee must sign the paper sheet instead.",
+      "The employee's March shifts are posted one week later than usual."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The second paragraph states that anyone who misses the deadline will be scheduled based on the availability given last fall. Nothing in the memo takes away trading, keeps the paper sheet or delays posting."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Inference",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "GED-R-01",
+    "stem": "Which statement is best supported by the memo?",
+    "options": [
+      "Managers will no longer review shift trades.",
+      "Most employees already use the app at other jobs.",
+      "Under the old system, trade approvals sometimes took days.",
+      "The paper sign-up sheet will stay available as a backup option."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The memo says approvals under the app usually take minutes rather than days, which implies the old process could take days. A manager still approves every trade, the memo asks everyone to download the app, and the store is moving away from the paper sheet."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "wordsInContext",
+    "stimulusId": "GED-R-02",
+    "stem": "As used in the first sentence, \"rich\" most nearly means",
+    "options": [
+      "wealthy",
+      "sweet-tasting",
+      "colorful",
+      "plentiful"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A rich patch of flowers is one with a lot of food to offer, which is why the bee bothers to report it. Wealth, sweetness and color are other meanings of \"rich\" that do not fit a patch of flowers worth flying to."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Author's purpose",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "authorPurpose",
+    "stimulusId": "GED-R-02",
+    "stem": "The author includes the sentence about moving feeders mainly to",
+    "options": [
+      "show how scientists tested what the dance means",
+      "explain why bees prefer some flowers over others",
+      "suggest that bees can be trained by people",
+      "describe how far bees will travel for food"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Moving the feeders and watching the dances change is the evidence that the dance really encodes direction and distance. The sentence is about confirming the meaning of the dance, not about training bees or their preferences."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Main idea",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "mainIdea",
+    "stimulusId": "GED-R-03",
+    "stem": "Which statement best expresses Lincoln's main point in the third paragraph?",
+    "options": [
+      "The ceremony is the most important way to honor the fallen soldiers.",
+      "The soldiers' actions have already made the ground sacred.",
+      "The speech will be remembered for many years.",
+      "The nation cannot survive a long civil war."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lincoln says the living cannot consecrate the ground because the men who struggled there have already consecrated it. He predicts the speech will be forgotten, and the question of whether the nation can endure is raised in the second paragraph, not answered in the third."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Evidence for a claim",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "basics": "claimSupport",
+    "stimulusId": "GED-R-03",
+    "stem": "Lincoln claims that the ceremony itself has limited power. Which two phrases from the passage support that claim? Choose two.",
+    "options": [
+      "far above our poor power to add or detract",
+      "It is altogether fitting and proper that we should do this",
+      "The world will little note, nor long remember what we say here",
+      "conceived in Liberty",
+      "a final resting place for those who here gave their lives"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "\"Our poor power to add or detract\" and \"little note, nor long remember what we say here\" both say the ceremony and speech can do little. Calling the dedication fitting and proper supports the ceremony rather than limiting it, and the other phrases describe the nation and the battlefield."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Inference",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "GED-R-04",
+    "stem": "What can the reader infer about Marisol's connection to the yellow house?",
+    "options": [
+      "She lived there as a child.",
+      "She is planning to buy it.",
+      "She painted its door blue.",
+      "She has never seen it before."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "She remembers her brother's bicycle on the railing, counted the windows from the school bus for eleven years and feels like \"a trespasser in her own memory,\" all of which point to a childhood home. Someone else painted the door, and nothing suggests a purchase."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "wordsInContext",
+    "stimulusId": "GED-R-04",
+    "stem": "In the first paragraph, the phrase \"the road gave up being paved\" suggests that the road",
+    "options": [
+      "was closed to traffic beyond that point",
+      "had recently been repaired by the county",
+      "turns to dirt or gravel at that point",
+      "comes to an end at the yellow house"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The road \"gives up\" pavement at the bend, and Marisol then parks in a gravel driveway, so the road becomes unpaved there. The passage does not say it is closed, repaired or ended."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Author's purpose",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "authorPurpose",
+    "stimulusId": "GED-R-04",
+    "stem": "Why does the author include the detail that a child's bicycle leans where her brother's once leaned?",
+    "options": [
+      "To suggest that her brother has moved back into the yellow house",
+      "To explain why Marisol decides not to knock",
+      "To show that the house has been abandoned",
+      "To show that another family now lives the life hers once did"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A new child's bicycle in the old spot, next to a freshly painted door, shows the house is lived in again by a family much like hers. An abandoned house would not have a painted door and a child's bike, and the passage never explains the knock in terms of the bicycle."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Finding details",
+    "difficulty": 2,
+    "format": "highlight",
+    "basics": "findingDetail",
+    "passage": "Notice to residents: Because of low reservoir levels, the city has entered Stage 2 water restrictions. {{Outdoor watering is allowed only before 8 a.m. or after 7 p.m.}} {{Homes with even-numbered addresses may water on Tuesdays and Saturdays, and odd-numbered addresses on Wednesdays and Sundays.}} {{The city has not yet decided whether restrictions will tighten further in August.}} {{Washing a vehicle at home requires a hose with an automatic shutoff nozzle.}} {{Last summer, residents cut outdoor water use by 18 percent under similar rules.}} {{Filling a swimming pool requires a permit from the water department.}} Violations carry a warning for the first offense and a fine after that. {{Residents can report leaking hydrants through the city's website.}}",
+    "stem": "Highlight the sentences that state a rule residents must follow under Stage 2 restrictions.",
+    "correct": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "explanation": "The watering hours, the odd and even day schedule, the shutoff nozzle requirement and the pool permit are rules residents must follow. The August decision and last summer's results are background information, and reporting a leak is something residents may do, not something they must do."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Author's purpose",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "authorPurpose",
+    "stimulusId": "GED-R-05",
+    "stem": "What is the speaker's main purpose?",
+    "options": [
+      "To recruit new paid staff for the food bank",
+      "To convince volunteers that their work matters",
+      "To explain how donated food is sorted and shipped",
+      "To ask the audience to donate money to the food bank"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The speech is built around the worry that \"one shift does not make a difference\" and answers it with the 150 meals a volunteer packs. The speaker never asks for money or job applicants and describes the sorting work only in passing."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Evidence for a claim",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "claimSupport",
+    "stimulusId": "GED-R-05",
+    "stem": "Which detail does the speaker use to support the claim that one shift makes a difference?",
+    "options": [
+      "The food bank has eleven paid staff members.",
+      "Some volunteers have worked at the warehouse for many years.",
+      "Volunteers often show up in the rain.",
+      "One volunteer packs about 150 meals in three hours."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The speaker answers the worry about a single shift with a number tied to one volunteer and one shift: 150 meals in three hours. The staff size and the rain support the claim that volunteers as a group are essential, not that any single shift counts."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-R-06",
+    "stem": "How does the second writer respond to the first writer's concern about parking?",
+    "options": [
+      "By arguing that cyclists are also customers",
+      "By denying that any parking spaces were removed",
+      "By claiming the bakery's sales have not dropped",
+      "By suggesting the bakery move to another street"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Letter 2 says, \"Riders stop at shops too, and we do not need a parking space to do it,\" which answers the parking complaint by pointing out that riders are customers. The writer does not dispute the lost spaces or the sales figures."
+  },
+  {
+    "domain": "gedReading",
+    "test": 1,
+    "skill": "Fact and opinion",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "factOpinion",
+    "stimulusId": "GED-R-06",
+    "stem": "Which statement from the letters is an opinion rather than a fact?",
+    "options": [
+      "The bike lane opened on Elm Street in May.",
+      "The city's count shows 310 riders a day use the lane.",
+      "Elm Street is finally safe for people who are not in cars.",
+      "The lane removed 40 parking spaces in front of businesses."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Whether the street is \"finally safe\" is a judgment people could disagree about. The opening month, the rider count and the number of spaces removed can all be checked against records."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Supporting detail",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "GED-R-07",
+    "stem": "According to the procedure, what should an employee do when a returned item shows signs of heavy use?",
+    "options": [
+      "Refuse the return.",
+      "Offer store credit instead.",
+      "Note the defect on the form.",
+      "Call a supervisor."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The second paragraph says that if an item shows use beyond normal testing, the employee should call a supervisor rather than refusing the return. Store credit is for returns without a receipt, and the defect note is for defective products."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Inference",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "GED-R-07",
+    "stem": "Which situation would most likely result in a customer receiving less money than they originally paid?",
+    "options": [
+      "Returning an item without a receipt after its price was reduced",
+      "Returning a defective item with a receipt within the 30-day window",
+      "Returning an item that cost more than \\$200 with a receipt",
+      "Returning an item 20 days after purchase with a receipt"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Without a receipt, the customer gets store credit at the current selling price, \"which may be lower than what the customer paid.\" The other three returns all have a receipt within 30 days and qualify for a full refund; the \\$200 rule only adds a supervisor's code."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Main idea",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "mainIdea",
+    "stimulusId": "GED-R-07",
+    "stem": "Which sentence best summarizes the second paragraph?",
+    "options": [
+      "Supervisors must personally handle every return made in the store.",
+      "Employees inspect items and send unusual cases to a supervisor.",
+      "Items that show any sign of use cannot be returned.",
+      "Delivery delays make returns ineligible after 30 days."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The paragraph tells employees to inspect the item and to call a supervisor for heavy use or exceptions. Supervisors handle only the exceptions, used items are not automatically refused, and a documented delivery delay is a reason to allow a late return, not to refuse one."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "wordsInContext",
+    "stimulusId": "GED-R-08",
+    "stem": "As used in the passage, \"span\" most nearly means",
+    "options": [
+      "a period of time",
+      "the width of a hand",
+      "a section of a bridge",
+      "a range of someone's attention"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage says a steel span a thousand feet long can grow six inches, so \"span\" here is a length of the bridge structure itself. The other meanings of the word do not fit something made of steel that expands in summer."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Text structure",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-R-08",
+    "stem": "The passage is mainly organized by",
+    "options": [
+      "comparing two kinds of bridges",
+      "listing events in the order in which they happen",
+      "arguing against a common belief",
+      "describing a problem and then its solution"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The first paragraph explains the problem (bridges grow and shrink with temperature) and the second explains the solution (joints that leave room to move). Minnesota and Florida are a brief example, not the organizing comparison."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Main idea",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "mainIdea",
+    "stimulusId": "GED-R-09",
+    "stem": "Which statement best summarizes the passage's view of when a government may be replaced?",
+    "options": [
+      "Whenever a majority of the people say they are unhappy with it",
+      "Only after it has been in place for a long period of time",
+      "When it attacks the rights it exists to protect, but not for small causes",
+      "Never, because people always prefer the government they are already used to"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage says people may alter or abolish a government that becomes destructive of their rights, and then adds that long-established governments should not be changed \"for light and transient causes.\" Unhappiness alone is not the standard, and the last sentence describes what people tend to do, not what they must do."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "wordsInContext",
+    "stimulusId": "GED-R-09",
+    "stem": "As used in the passage, \"instituted\" most nearly means",
+    "options": [
+      "established",
+      "instructed",
+      "overthrown",
+      "investigated"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Governments are \"instituted among Men\" to secure rights, and later the people may \"institute new Government,\" so the word means set up or established. The passage is about creating governments, not instructing, overthrowing or investigating them."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Inference",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "GED-R-10",
+    "stem": "Why does the grandfather refuse to buy a new boat?",
+    "options": [
+      "He cannot afford a new one.",
+      "He values the daily work more than the boat itself.",
+      "He does not trust the prices the marina charges for new boats.",
+      "He wants Teo to buy one for him."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Teo knows his grandfather can afford a new boat, and the old man's only answer is \"Then what would I do in the mornings?\" The work is what he wants to keep. Money and the marina's prices are not his reasons."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Author's purpose",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "authorPurpose",
+    "stimulusId": "GED-R-10",
+    "stem": "The author compares the grandfather's scraping to working a crossword mainly to show that the work is",
+    "options": [
+      "boring and pointless",
+      "difficult and dangerous",
+      "quick and careless",
+      "patient and steady"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The comparison is explained right after it: \"without hurry and without ever quite stopping.\" A crossword is worked calmly and steadily, which is the point. Nothing in the passage presents the scraping as dangerous, careless or pointless."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Supporting detail",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "GED-R-10",
+    "stem": "Which detail shows that Teo has changed by the end of the passage?",
+    "options": [
+      "He cannot remember what he used to do with his mornings.",
+      "He has seen the prices of new boats at the marina himself.",
+      "He says little when the boat goes into the water.",
+      "He tells his grandfather he could buy a new boat."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At the start Teo thinks the work could be replaced by a purchase; by August the mornings of scraping have become his own, and he cannot remember life without them. Knowing the prices and suggesting a new boat are from before the change."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Inference",
+    "difficulty": 2,
+    "format": "highlight",
+    "basics": "inference",
+    "passage": "Nora had promised herself she would say no. {{The committee had asked her to chair the fundraiser three years running, and each year it had swallowed her autumn whole.}} {{This time she had the speech ready: she was honored, but she needed a year off.}} {{Then Mr. Alvarez stood up, and she saw that his hands were shaking as he read the numbers.}} {{The shelter would close in March without the money.}} {{Nora heard herself say that she would need two assistants this time, not one.}} {{The room laughed with relief, and she laughed too, though not for the same reason.}}",
+    "stem": "Highlight the sentence in which it first becomes clear that Nora has agreed to chair the fundraiser again.",
+    "correct": [
+      4
+    ],
+    "explanation": "Asking for two assistants \"this time\" means she is taking the job, even though she never says yes directly. The earlier sentences show her plan to refuse and what changes her mind; the final sentence comes after the decision is already clear."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Evidence for a claim",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "basics": "claimSupport",
+    "stimulusId": "GED-R-11",
+    "stem": "The mayor claims the library serves needs beyond lending books. Which two details support that claim? Choose two.",
+    "options": [
+      "61,000 people walked through the library's doors",
+      "a job application on a public computer",
+      "the proposed budget cuts Sunday hours",
+      "an English class",
+      "less than one percent of what we spend on roads"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "A job application on a public computer and an English class are uses of the library that have nothing to do with borrowing a book. The visitor count shows how busy the library is, and the budget figures support a different claim, that the cut is small."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Author's purpose",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "authorPurpose",
+    "stimulusId": "GED-R-11",
+    "stem": "The mayor mentions the cost of roads mainly to",
+    "options": [
+      "argue that road spending should be cut",
+      "show that the library's cost is small by comparison",
+      "explain why the potholes have not been filled",
+      "suggest that library staff could help repair the roads"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The \\$140,000 is described as \"less than one percent of what we spend on roads,\" which makes the library cut look tiny next to the road budget. The mayor says \"potholes matter\" and never proposes cutting road money."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-R-12",
+    "stem": "Which statement best describes how the two responses differ?",
+    "options": [
+      "A wants more office days, while B wants fewer.",
+      "A describes problems, while B describes benefits.",
+      "A focuses on finished work, while B focuses on learning the job.",
+      "A is written by a manager, while B is written by a brand-new hire."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Response A measures the policy by finished reports and turnaround time; Response B measures it by how hard it is to learn from coworkers. A wants more remote time, not more office days, and A is an employee who quotes a manager, not a manager."
+  },
+  {
+    "domain": "gedReading",
+    "test": 2,
+    "skill": "Fact and opinion",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factOpinion",
+    "stimulusId": "GED-R-12",
+    "stem": "Which statement from the responses could be checked against records rather than being a matter of opinion?",
+    "options": [
+      "The hybrid schedule has been hard.",
+      "Response A's report turnaround is faster than last year.",
+      "New hires should be in the office full time.",
+      "Working from home makes Response A much better at the job."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Turnaround time on reports can be measured and compared with last year's. Whether the schedule is hard, what new hires should do and whether someone is \"better at the job\" are judgments people could disagree about."
+  },
+  {
+    "domain": "gedReading",
+    "test": 0,
+    "skill": "Supporting detail",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "GED-R-13",
+    "stem": "A full-time employee is hired on April 10. According to the summary, when is that employee first eligible for health insurance?",
+    "options": [
+      "June 9",
+      "July 1",
+      "June 1",
+      "October 10"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sixty days after April 10 is June 9, and coverage begins on the first day of the month after that, which is July 1. June 9 is the end of the waiting period, not the start of coverage."
+  },
+  {
+    "domain": "gedReading",
+    "test": 0,
+    "skill": "Inference",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "GED-R-13",
+    "stem": "Which employee would lose part of the company's retirement match?",
+    "options": [
+      "One who leaves after four years of service",
+      "One who contributes more than 4 percent of pay",
+      "One who leaves after two years of service",
+      "One who works part time for five years"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The match becomes fully the employee's only after three years, and someone who leaves before then keeps only a portion of it. After four years the match is fully earned, contributing more than 4 percent just means the extra is unmatched, and part-time employees can join the plan."
+  },
+  {
+    "domain": "gedReading",
+    "test": 0,
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "wordsInContext",
+    "stimulusId": "GED-R-13",
+    "stem": "As used in the passage, \"cap\" most nearly means",
+    "options": [
+      "a hat",
+      "a bonus",
+      "a deadline",
+      "a limit"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Time off rolls over \"up to a cap of 80 hours,\" and hours above the cap are lost, so the cap is a limit. The other meanings do not fit an amount of hours."
+  },
+  {
+    "domain": "gedReading",
+    "test": 0,
+    "skill": "Main idea",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "mainIdea",
+    "stimulusId": "GED-R-14",
+    "stem": "Which statement best expresses the main idea of the passage?",
+    "options": [
+      "Compost piles can become dangerously hot.",
+      "Grass clippings are the best material to use for making compost.",
+      "Turning a compost pile is unnecessary work.",
+      "Composting works when microbes get the right materials and air."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Every paragraph is about what the microbes need: the right balance of browns and greens, and air from turning. The heat is presented as useful, not dangerous, grass clippings are only one example of a green, and turning is recommended."
+  },
+  {
+    "domain": "gedReading",
+    "test": 0,
+    "skill": "Evidence for a claim",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "basics": "claimSupport",
+    "stimulusId": "GED-R-14",
+    "stem": "The author claims that the balance between browns and greens matters. Which two details support that claim? Choose two.",
+    "options": [
+      "A well-built pile can reach 140 degrees at its center.",
+      "A pile with too many greens turns slimy and smells of ammonia.",
+      "Turning the pile lets oxygen reach the center.",
+      "Too many browns, and the pile sits cold for months.",
+      "Bacteria and fungi break down leaves and scraps."
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "The two details that show what goes wrong when the balance is off, slime and ammonia on one side and a cold pile on the other, are the evidence for the claim. The temperature, turning and the microbes themselves are facts about composting that do not point at the balance."
+  },
+  {
+    "domain": "gedReading",
+    "test": 0,
+    "skill": "Supporting detail",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "GED-R-14",
+    "stem": "According to the passage, why do gardeners turn a compost pile?",
+    "options": [
+      "To let oxygen reach the center",
+      "To cool the pile down",
+      "To add more nitrogen",
+      "To kill weed seeds and disease organisms"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The last paragraph says turning the pile lets oxygen reach the center so the fast bacteria keep working. Heat kills weed seeds, and nitrogen comes from greens, not from turning."
+  },
+  {
+    "domain": "gedReading",
+    "test": 0,
+    "skill": "Inference",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "GED-R-15",
+    "stem": "Which statement best describes how Amal feels about working at night?",
+    "options": [
+      "She resents missing time with her friends.",
+      "She finds the quiet hours satisfying.",
+      "She agrees with her sister but needs the money.",
+      "She feels lonely but hides it from her sister."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Amal \"liked this hour best,\" and the passage says the quiet is \"the point.\" She does not argue with her sister because she disagrees, not because she agrees; there is no mention of money or loneliness."
+  },
+  {
+    "domain": "gedReading",
+    "test": 0,
+    "skill": "Author's purpose",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "authorPurpose",
+    "stimulusId": "GED-R-15",
+    "stem": "Why does the author include the sister's comments?",
+    "options": [
+      "To show that the two sisters argue often",
+      "To explain why the bakery opens so early",
+      "To contrast with Amal's own view of the hours",
+      "To suggest that Amal will soon quit the bakery job"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The sister calls the hours a punishment, which sets up Amal's opposite view that the quiet hours are the best part of her day. Amal \"never argued,\" and nothing suggests she plans to quit."
+  },
+  {
+    "domain": "gedReading",
+    "test": 0,
+    "skill": "Finding details",
+    "difficulty": 1,
+    "format": "highlight",
+    "basics": "findingDetail",
+    "passage": "Curbside recycling guide. {{Rinse food containers before placing them in the blue cart.}} {{Plastic bags jam the sorting machines, so take them to a grocery store drop-off instead.}} {{Last year the city collected 9,000 tons of recyclables.}} {{Flatten cardboard boxes so they fit in the cart with the lid closed.}} {{Greasy pizza boxes go in the trash, not the blue cart.}} {{The sorting center employs 45 people.}} {{Carts must be at the curb by 6 a.m. on collection day.}} Items left beside the cart will not be picked up.",
+    "stem": "Highlight the sentences that tell residents something they must do or must not do.",
+    "correct": [
+      0,
+      1,
+      3,
+      4,
+      6
+    ],
+    "explanation": "Rinsing containers, taking plastic bags elsewhere, flattening boxes, keeping pizza boxes out of the cart and having the cart out by 6 a.m. are all instructions. The tonnage collected and the number of employees are facts about the program, not rules."
+  },
+  {
+    "domain": "gedReading",
+    "test": 0,
+    "skill": "Fact and opinion",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "factOpinion",
+    "passage": "Our town's farmers market moved from the park to the high school parking lot this spring. The new location has 200 parking spaces, compared with 40 at the park, and the market's organizers report that vendor sales rose 22 percent in May. Still, the move was a mistake. A farmers market belongs on grass, under trees, where neighbors linger and children run. Nobody lingers in a parking lot. The organizers should move the market back to the park next year and solve the parking problem some other way, perhaps with a shuttle from the school lot.",
+    "stem": "Which statement from the passage is an opinion?",
+    "options": [
+      "The market moved to the high school parking lot this spring.",
+      "The new location has 200 parking spaces.",
+      "The move was a mistake.",
+      "Vendor sales rose 22 percent in May."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Calling the move a mistake is the writer's judgment, which the organizers clearly do not share. The location, the number of spaces and the sales figure are facts that can be checked."
+  }
+]

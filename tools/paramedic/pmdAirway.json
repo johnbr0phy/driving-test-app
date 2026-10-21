@@ -1,0 +1,403 @@
+[
+  {
+    "domain": "pmdAirway",
+    "test": 1,
+    "skill": "Capnography waveforms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 24-year-old with asthma is wheezing and tiring. Which capnography waveform shape confirms bronchospasm?",
+    "options": [
+      "Slanted, shark-fin upstroke to the plateau",
+      "Flat plateau with a sudden drop to zero",
+      "Notched plateau near the end of exhalation",
+      "Plateau that climbs higher with each breath"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Air trapping empties the alveoli unevenly, so the upstroke slopes instead of rising sharply, the shark-fin shape. A flat plateau with a sudden drop is a normal breath, and a notch in the plateau is a spontaneous breath during ventilation."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 1,
+    "skill": "Tube confirmation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Right after you intubate a 58-year-old who has a pulse, waveform capnography stays flat at 0 mm Hg through six ventilations. You should:",
+    "options": [
+      "Secure the tube, since low readings are expected early",
+      "Remove the tube and ventilate with a bag-mask",
+      "Advance the tube 2 cm and recheck the waveform",
+      "Suction the tube for a mucus plug"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A perfusing patient always produces exhaled CO2, so no waveform means the tube is in the esophagus and must come out. Advancing or suctioning an esophageal tube only delays ventilation."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 1,
+    "skill": "RSI paralytics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which history makes succinylcholine the wrong paralytic for rapid sequence intubation?",
+    "options": [
+      "Asthma controlled with an inhaled steroid",
+      "Open tibia fracture one hour ago",
+      "Burns over 30 percent of the body five days ago",
+      "Chronic kidney disease with a normal potassium today"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Burns, crush injuries and denervation more than 24 hours old upregulate receptors that release potassium when succinylcholine depolarizes muscle, which can cause lethal hyperkalemia; rocuronium is used instead. A fracture one hour old and controlled asthma do not raise that risk."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 1,
+    "skill": "Oxygen titration",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 70-year-old with a COPD exacerbation is alert with an SpO2 of 85 percent on room air. You titrate oxygen to a saturation of:",
+    "options": [
+      "94 to 99 percent",
+      "98 to 100 percent",
+      "80 to 84 percent",
+      "88 to 92 percent"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Patients with chronic CO2 retention are titrated to 88 to 92 percent because higher saturations worsen ventilation-perfusion matching and CO2 retention. Oxygen is never withheld below 88 percent."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 1,
+    "skill": "Surgical airway",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a surgical cricothyrotomy, the incision that enters the airway passes through the:",
+    "options": [
+      "Cricothyroid membrane",
+      "Thyrohyoid membrane",
+      "Tracheal rings below the cricoid",
+      "Thyroid cartilage at the notch"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The cricothyroid membrane lies between the thyroid and cricoid cartilages, is close to the skin and has few vessels, which is why it is the surgical airway site. The thyrohyoid membrane is above the cords and the tracheal rings are deeper and surrounded by the thyroid gland."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 1,
+    "skill": "Rapid sequence intubation",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Place the steps of rapid sequence intubation in the order you perform them.",
+    "options": [
+      "Push the induction agent, then the paralytic",
+      "Secure the tube and start post-intubation sedation",
+      "Pass the tube and confirm with waveform capnography",
+      "Preoxygenate for at least 3 minutes",
+      "Prepare equipment, drugs and a backup airway plan"
+    ],
+    "correct": [
+      4,
+      3,
+      0,
+      2,
+      1
+    ],
+    "explanation": "Preparation and preoxygenation come before any drug, induction and paralysis are given together once the patient is ready, and the tube is confirmed with capnography before it is secured. Sedation after placement keeps the paralyzed patient from being awake on a ventilator."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 1,
+    "skill": "Capnography interpretation",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each capnography reading, select the condition it most likely shows.",
+    "rows": [
+      "ETCO2 55 mm Hg with slow breaths after an opioid overdose",
+      "ETCO2 24 mm Hg at a respiratory rate of 32 in an anxious teen",
+      "Shark-fin upstroke with a prolonged exhalation",
+      "ETCO2 58 mm Hg with a rounded, normal-shaped waveform and 6 breaths per minute",
+      "ETCO2 22 mm Hg in a patient breathing 34 times a minute after a panic attack"
+    ],
+    "columns": [
+      "Hypoventilation",
+      "Hyperventilation",
+      "Bronchospasm"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0,
+      1
+    ],
+    "explanation": "Slow or shallow breathing lets CO2 climb above 45 mm Hg, fast breathing blows it off below 35 mm Hg, and bronchospasm changes the waveform's shape rather than just its height. The shape is the clue: a normal waveform with an abnormal number points to rate, not obstruction."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 1,
+    "skill": "Difficult bag-mask ventilation",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which findings predict difficult bag-mask ventilation? Select all that apply.",
+    "options": [
+      "Marked obesity",
+      "No teeth",
+      "Thick beard",
+      "Loud snoring at home",
+      "Age 30",
+      "Long, thin neck"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Mask seal problems (beard, no teeth), obesity, age over 55, and snoring or stiff lungs predict a hard seal or high airway resistance. A young patient with a thin neck is usually easy to ventilate."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 2,
+    "skill": "Apneic oxygenation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To extend the safe apnea time during rapid sequence intubation, you leave in place during laryngoscopy a:",
+    "options": [
+      "Nonrebreather mask at 15 L/min",
+      "Nasal cannula at 15 L/min",
+      "CPAP mask at 10 cm H2O",
+      "Bag-mask with a reservoir"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A high-flow nasal cannula keeps oxygen diffusing into the alveoli while the patient is apneic and the laryngoscope is in the mouth. A mask of any kind must be removed to intubate."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 2,
+    "skill": "CPAP contraindications",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which finding rules out CPAP for a patient in acute pulmonary edema?",
+    "options": [
+      "Respiratory rate of 32 with accessory muscle use",
+      "SpO2 of 86 percent on a nonrebreather",
+      "Cannot follow commands or hold the mask",
+      "Crackles heard all the way to the apices"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CPAP needs a patient who is breathing spontaneously and can protect the airway and tolerate the mask; a patient who cannot follow commands needs assisted ventilation instead. A fast rate, low saturation and crackles are the reasons to use CPAP."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 2,
+    "skill": "Ventilated patient deterioration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Five minutes after intubation, SpO2 falls and the bag becomes hard to squeeze. Breath sounds are absent on the right and the trachea is shifted left. You should:",
+    "options": [
+      "Pull the tube back 2 cm and listen again",
+      "Suction the tube with a soft catheter",
+      "Increase the tidal volume and the rate",
+      "Decompress the right chest with a needle"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rising ventilation pressure with one-sided absent sounds and tracheal shift is a tension pneumothorax, the P in DOPE, and it needs immediate decompression. A right mainstem tube would not shift the trachea, and more volume would worsen the tension."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 2,
+    "skill": "Ventilation during arrest",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "With a supraglottic airway in place during adult cardiac arrest, you deliver one breath every:",
+    "options": [
+      "6 seconds",
+      "3 seconds",
+      "10 seconds",
+      "15 seconds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Once an advanced airway is placed, compressions continue without pauses and one breath is given every 6 seconds, 10 per minute. Faster ventilation raises intrathoracic pressure and lowers coronary perfusion."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 2,
+    "skill": "Pediatric tube sizing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Using the standard age-based formula, the cuffed endotracheal tube size for a 4-year-old is:",
+    "options": [
+      "5.0 mm",
+      "4.5 mm",
+      "4.0 mm",
+      "5.5 mm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cuffed tube size is age in years divided by 4, plus 3.5, which gives 4.5 mm for a 4-year-old. The 5.0 mm answer comes from the uncuffed formula, age divided by 4 plus 4."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 2,
+    "skill": "Orotracheal intubation",
+    "difficulty": 1,
+    "format": "order",
+    "stem": "Place the steps of orotracheal intubation in order.",
+    "options": [
+      "Insert the laryngoscope and visualize the cords",
+      "Position the head in the sniffing position",
+      "Preoxygenate with a bag-mask or nonrebreather",
+      "Confirm with waveform capnography and secure the tube",
+      "Pass the tube through the cords and inflate the cuff"
+    ],
+    "correct": [
+      2,
+      1,
+      0,
+      4,
+      3
+    ],
+    "explanation": "Oxygen reserve and positioning come before the blade goes in, the cords must be seen before the tube is passed, and capnography confirms placement before the tube is secured. Securing an unconfirmed tube is how esophageal intubations are missed."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 2,
+    "skill": "Respiratory patterns",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each breathing pattern, select the most likely cause.",
+    "rows": [
+      "Deep, rapid, regular breaths in a diabetic with a glucose of 480",
+      "Breaths that grow deeper then shallower with pauses between cycles",
+      "Occasional gasps a few times a minute with no pulse",
+      "Clusters of breaths separated by long apneic periods after a head injury"
+    ],
+    "columns": [
+      "Metabolic acidosis",
+      "Brain injury",
+      "Cardiac arrest"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      1
+    ],
+    "explanation": "Kussmaul breathing blows off CO2 to compensate for ketoacidosis; Cheyne-Stokes and Biot (cluster) patterns come from brainstem or raised-pressure injury; agonal gasps are not breathing and call for CPR. Gasping in a pulseless patient is the one that is most often misread as a sign of life."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 2,
+    "skill": "Tube confirmation",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which findings reliably support tracheal placement of an endotracheal tube? Select all that apply.",
+    "options": [
+      "Condensation inside the tube",
+      "Tube depth of 21 cm at the teeth",
+      "Sustained waveform capnography",
+      "Tube seen passing between the cords",
+      "Equal breath sounds with none over the epigastrium"
+    ],
+    "correct": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Continuous capnography plus direct visualization and the clinical exam are the accepted confirmations. Condensation appears with esophageal tubes too, and a depth mark says nothing about where the tip is."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 0,
+    "skill": "Tracheostomy emergencies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A home-ventilator patient's tracheostomy tube is blocked and a suction catheter will not pass. The next step is:",
+    "options": [
+      "Instill 10 mL of saline and keep trying to suction",
+      "Raise the ventilator pressure until the chest rises",
+      "Replace the tube with the same size or smaller",
+      "Ventilate through the mouth with a bag-mask"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A tube that cannot be cleared by suction is replaced, with a smaller size ready in case the stoma has narrowed. Pushing more pressure through a blocked tube does nothing, and mouth ventilation only works if the stoma is covered and the upper airway is intact."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 0,
+    "skill": "Minute ventilation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 70-kg patient is ventilated at 6 mL/kg and 12 breaths per minute. The minute ventilation is about:",
+    "options": [
+      "8 L/min",
+      "3.5 L/min",
+      "6.5 L/min",
+      "5 L/min"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tidal volume is 6 times 70, or 420 mL, and 420 mL times 12 breaths is 5,040 mL, about 5 L/min. Minute ventilation is tidal volume times rate, so a drop in either lowers CO2 clearance."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 0,
+    "skill": "Surgical airway",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "Place the steps of a surgical cricothyrotomy in order.",
+    "options": [
+      "Inflate the cuff and confirm with capnography",
+      "Make a vertical skin incision over the membrane",
+      "Pass a bougie or tube through the opening",
+      "Identify the cricothyroid membrane and stabilize the larynx",
+      "Incise the membrane horizontally"
+    ],
+    "correct": [
+      3,
+      1,
+      4,
+      2,
+      0
+    ],
+    "explanation": "A vertical skin incision avoids the vessels that run beside the midline, the membrane itself is opened horizontally, and the tube goes in over a bougie before the cuff is inflated and placement is confirmed. Confirmation matters as much here as with any tube."
+  },
+  {
+    "domain": "pmdAirway",
+    "test": 0,
+    "skill": "RSI induction agents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The usual intravenous induction dose of ketamine for rapid sequence intubation in a 100-kg adult is:",
+    "options": [
+      "100 to 200 mg",
+      "20 to 50 mg",
+      "300 to 400 mg",
+      "5 to 10 mg"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ketamine is given at 1 to 2 mg/kg IV for induction, so 100 to 200 mg for a 100-kg patient. Lower doses give analgesia or sedation without reliable intubating conditions."
+  }
+]

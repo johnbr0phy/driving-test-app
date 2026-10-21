@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build a v2 bank from per-domain source files.
 
-Usage: python3 -I tools/build_v2_bank.py <exam>        (nclex, emt, secplus, aplus, aws)
+Usage: python3 -I tools/build_v2_bank.py <exam>        (nclex, emt, secplus, aplus, aws, nclexpn, paramedic, ged)
 
 Sources live in tools/<exam>/<domain>.json (plus an optional stimuli.json for
 case studies). Each source item carries domain, test (1, 2 or 0 = drill only),
@@ -20,6 +20,9 @@ PLANS = {
         "core1": ["aplusMobile", "aplusNetworking", "aplusHardware", "aplusVirtCloud", "aplusHwTroubleshooting"],
         "core2": ["aplusOS", "aplusSecurity", "aplusSwTroubleshooting", "aplusOperational"]}},
     "aws": {"prefix": "AWS", "sections": {"aws": ["cloudConcepts", "securityCompliance", "technologyServices", "billingPricing"]}},
+    "nclexpn": {"prefix": "NCLEXPN", "sections": {"nclexpn": ["pnCare", "pnSafety", "pnHealth", "pnPsych", "pnComfort", "pnPharm", "pnRisk", "pnPhys"]}},
+    "paramedic": {"prefix": "PMD", "sections": {"paramedic": ["pmdAirway", "pmdCardio", "pmdTrauma", "pmdMedical", "pmdOps", "pmdJudgment"]}},
+    "ged": {"prefix": "GED", "sections": {"rla": ["gedReading", "gedLanguage"], "math": ["gedQuant", "gedAlgebra"], "science": ["gedScience"], "social": ["gedSocial"]}},
 }
 SOURCE_ONLY = {"domain", "test", "skill", "difficulty", "format"}
 

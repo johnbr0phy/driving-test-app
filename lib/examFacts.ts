@@ -24,6 +24,22 @@ export interface ExamFacts {
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  ged: {
+    answer:
+      "The GED is four separate subject tests: Reasoning Through Language Arts (150 minutes, including a 45-minute essay), Mathematical Reasoning (115 minutes), Science (90 minutes) and Social Studies (70 minutes), taken on a computer at a Pearson VUE test center or online with a proctor. Each subject is scored 100 to 200, and 145 passes (165 is College Ready, 175 College Ready plus Credit). The fee is set per subject and varies by state.",
+    rows: [
+      { label: "Subjects", value: "RLA, Mathematical Reasoning, Science, Social Studies (taken separately)" },
+      { label: "Time", value: "150, 115, 90 and 70 minutes; RLA includes a 45-minute essay" },
+      { label: "Passing score", value: "145 on a 100 to 200 scale, per subject" },
+      { label: "Calculator", value: "On-screen TI-30XS on Math (all but 5 questions), Science and Social Studies" },
+      { label: "Fee", value: "Per subject; varies by state" },
+      { label: "Given by", value: "GED Testing Service, at Pearson VUE test centers or online proctored" },
+    ],
+    basedOn: "the GED Testing Service subject areas and published content weights",
+    source: { name: "GED Testing Service", url: "https://ged.com/about_test/test_subjects/" },
+    tigertest:
+      "TigerTest has two full-length GED practice tests covering all four subjects, with a percent score per subject and six skill drills that teach the basics first. All of it is free with no account required; the essay is not modeled.",
+  },
   sat: {
     answer:
       "The digital SAT has 98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, two 32-minute modules) and Math (44 questions, two 35-minute modules). It is adaptive by module and scored 400 to 1600, with each section scored 200 to 800. There is no pass mark; colleges set their own expectations.",
@@ -227,6 +243,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the NREMT EMT test plan (April 2025)",
     source: { name: "NREMT", url: "https://www.nremt.org" },
   },
+  paramedic: {
+    answer:
+      "The NREMT Paramedic certification exam is one computer adaptive exam: 110 to 150 questions in 3.5 hours, including 20 unscored pilot items, with no separate psychomotor exam since July 1, 2024. It ends when the computer is 95% confident you are above or below the passing standard, so there is no percentage pass mark. Clinical Judgment is the largest domain at 34 to 38%, and medical, obstetrics and gynecology is next at 24 to 28%.",
+    rows: [
+      { label: "Questions", value: "110 to 150 (adaptive), 20 unscored" },
+      { label: "Time", value: "3.5 hours" },
+      { label: "Passing score", value: "Above the entry-level standard (no percentage)" },
+      { label: "Fee", value: "$175" },
+      { label: "Eligibility", value: "Current EMT plus a CAAHEP-accredited (CoAEMSP) paramedic program or one with a Letter of Review" },
+      { label: "Given by", value: "NREMT, at Pearson VUE centers" },
+    ],
+    basedOn: "the NREMT Paramedic certification examination test plan (July 2024)",
+    source: { name: "NREMT", url: "https://www.nremt.org/Pages/Examinations/AEMT-and-Paramedic-Certification-Examinations" },
+  },
   foodmgr: {
     answer:
       "Certified Food Protection Manager exams (ServSafe Manager, NRFSP, Prometric and other ANAB-accredited exams) test the FDA Food Code. The ServSafe Manager exam has 90 questions, 80 scored, with 2 hours and a 75% pass line; the others are similar. The exam is proctored and accepted by health departments nationwide.",
@@ -321,6 +351,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the NCSBN 2026 NCLEX-RN Test Plan",
     source: { name: "NCSBN", url: "https://www.nclex.com" },
+  },
+  nclexpn: {
+    answer:
+      "The NCLEX-PN is the licensure exam for licensed practical and vocational nurses (LPN/LVN) in the US. It is computerized adaptive: you answer 85 to 150 questions in up to five hours, the test stops once it is 95% certain you are above or below the passing standard, and you get a pass or fail, not a percent. Next Generation NCLEX formats include unfolding case studies and select all that apply items, and the 2026 test plan weights Coordinated Care (18 to 24%) the most, followed by Safety and Infection Prevention and Control and Pharmacological Therapies (10 to 16% each).",
+    rows: [
+      { label: "Questions", value: "85 to 150 (15 unscored)" },
+      { label: "Time", value: "Up to 5 hours" },
+      { label: "Format", value: "Computerized adaptive, no going back" },
+      { label: "Result", value: "Pass or fail" },
+      { label: "Fee", value: "$200 registration (NCSBN; rising to $350 from February 1, 2027)" },
+      { label: "Developed by", value: "NCSBN (given at Pearson VUE centers)" },
+    ],
+    basedOn: "the NCSBN 2026 NCLEX-PN Test Plan (effective April 1, 2026)",
+    source: { name: "NCSBN", url: "https://www.nclex.com/test-plans.page" },
   },
   hesi: {
     answer:
@@ -432,6 +476,33 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Valid for", value: "2 years" },
     ],
     basedOn: "the material every major lifeguard program teaches",
+  },
+  cosmetology: {
+    answer:
+      "Most states license cosmetologists with the NIC National Cosmetology Theory Examination: 110 multiple-choice questions, 100 of them scored, in 90 minutes. The 2022 outline weights Scientific Concepts 35 percent (infection control, anatomy, chemistry), Hair Care and Services 45 percent, Skin Care 10 percent and Nail Care 10 percent. NIC reports a scaled score and most boards pass at 75; a few states use their own exam, and a separate practical exam, training hours and fees vary by state.",
+    rows: [
+      { label: "Questions", value: "110 (100 scored, 10 unscored pretest)" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "Scaled score, 75 in most states (varies by state)" },
+      { label: "Also required", value: "Practical exam, training hours and fee vary by state" },
+      { label: "Given by", value: "NIC national theory exam in most states; a few use their own" },
+    ],
+    basedOn: "the NIC National Cosmetology Theory Examination content outline, effective July 2022",
+    source: { name: "NIC", url: "https://www.nictesting.org" },
+  },
+  vtne: {
+    answer:
+      "The Veterinary Technician National Examination (VTNE), given by the AAVSB, has 170 multiple-choice questions, 150 scored and 20 unscored pilot items, in 3 hours at Prometric centers. It is scored on a 200 to 800 scale and 425 passes. The outline approved in March 2023 has ten domains: animal care and nursing is 20%, pharmacology, surgical nursing and anesthesia about 13% each, laboratory procedures 9%, imaging 6%, and dentistry, emergency and critical care, pain management and communication 5 to 7% each.",
+    rows: [
+      { label: "Questions", value: "170 (150 scored)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "Scaled 425 of 800" },
+      { label: "Fee", value: "$375 per attempt" },
+      { label: "Windows", value: "3 a year: Mar 15 to Apr 15, Jul 15 to Aug 15, Nov 15 to Dec 15" },
+      { label: "Given by", value: "AAVSB, at Prometric test centers" },
+    ],
+    basedOn: "the AAVSB VTNE content outline approved March 2023",
+    source: { name: "AAVSB VTNE Candidate Information Handbook", url: "https://www.aavsb.org/vtne-overview/" },
   },
   cpr: {
     answer:

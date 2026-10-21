@@ -1,0 +1,316 @@
+[
+  {
+    "domain": "pmdTrauma",
+    "test": 1,
+    "skill": "Permissive hypotension",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 30-year-old with a stab wound to the abdomen has a BP of 84/50, a radial pulse and no head injury. Per local protocol, the fluid strategy is:",
+    "options": [
+      "Small boluses to keep a radial pulse",
+      "2 L bolus to reach a systolic of 120",
+      "Withhold all fluids until the hospital",
+      "Run fluids wide open until the pressure is normal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Uncontrolled internal bleeding is managed with permissive hypotension, enough fluid to keep a radial pulse or a systolic near 80 to 90, because raising the pressure pops clots and dilutes clotting factors. Withholding fluid entirely is wrong once the radial pulse is lost."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 1,
+    "skill": "Tranexamic acid",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Tranexamic acid for hemorrhagic shock must be started within what time from the injury?",
+    "options": [
+      "1 hour",
+      "3 hours",
+      "6 hours",
+      "12 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 1 g loading dose given within 3 hours of injury reduces death from bleeding; after 3 hours it is associated with harm. Earlier is better, but 1 hour is not a cutoff."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 1,
+    "skill": "Flail chest",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 55-year-old with paradoxical movement of a right chest segment has an SpO2 of 82 percent on a nonrebreather and is tiring. The best intervention is:",
+    "options": [
+      "Bulky dressing taped over the segment",
+      "Needle decompression of the right chest",
+      "Positive pressure ventilation",
+      "Fentanyl 1 mcg/kg and reassess"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A flail segment with failing oxygenation needs positive pressure, by CPAP or bag-mask and intubation, which splints the chest from inside and treats the underlying pulmonary contusion. Taping the segment restricts ventilation, and analgesia alone will not reverse hypoxia this severe."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 1,
+    "skill": "Burn fluid resuscitation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 70-kg adult has partial and full-thickness burns over 40 percent of the body. Using 2 mL/kg for each percent burned, the first 24-hour fluid estimate is:",
+    "options": [
+      "5.6 L spread evenly over 24 hours",
+      "11.2 L, half in the first 8 hours",
+      "2.8 L over 24 hours",
+      "5.6 L, half in the first 8 hours"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "2 mL times 70 kg times 40 percent is 5,600 mL, with half (2,800 mL) given in the first 8 hours from the time of the burn and the rest over the next 16. The 11.2 L figure uses the older 4 mL/kg formula."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 1,
+    "skill": "Needle decompression",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Place the steps of needle decompression for a tension pneumothorax in order.",
+    "options": [
+      "Insert the catheter over the top of the lower rib",
+      "Secure the catheter and reassess breath sounds",
+      "Withdraw the needle and leave the catheter in place",
+      "Clean the site",
+      "Locate the 4th or 5th intercostal space at the anterior axillary line"
+    ],
+    "correct": [
+      4,
+      3,
+      0,
+      2,
+      1
+    ],
+    "explanation": "The site is found and cleaned first, the catheter passes over the top of the rib to avoid the vessels under its lower edge, and the needle is withdrawn so only the flexible catheter stays in the chest. Reassessment confirms the tension has been relieved."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 1,
+    "skill": "Tension pneumothorax",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which findings point to tension pneumothorax in a ventilated chest-trauma patient? Select all that apply.",
+    "options": [
+      "Bilateral crackles",
+      "Rising resistance to bag ventilation",
+      "Bradycardia with a bounding pulse",
+      "Distended neck veins",
+      "Absent breath sounds on one side"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Air under pressure makes the lung hard to inflate, blocks venous return so the neck veins fill, and silences one side of the chest. Crackles on both sides suggest contusion or fluid, and a tension pneumothorax produces tachycardia with a weak pulse."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 2,
+    "skill": "Glasgow Coma Scale",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A trauma patient opens the eyes to pain, moans without words and pulls the arm away from a pinch. The Glasgow Coma Scale score is:",
+    "options": [
+      "8",
+      "6",
+      "9",
+      "10"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Eyes to pain is 2, incomprehensible sounds is 2 and withdrawal from pain is 4, for a total of 8. Localizing to pain would score 5 and give 9."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 2,
+    "skill": "Head injury ventilation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An intubated head-injured patient with no signs of herniation should be ventilated to an ETCO2 of:",
+    "options": [
+      "25 to 30 mm Hg",
+      "35 to 40 mm Hg",
+      "45 to 50 mm Hg",
+      "20 to 25 mm Hg"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Normal CO2 keeps cerebral blood flow steady; hyperventilation constricts cerebral vessels and worsens ischemia, so it is reserved for active herniation and only to 30 to 35 mm Hg. Letting CO2 rise to 45 to 50 dilates vessels and raises intracranial pressure."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 2,
+    "skill": "Pelvic binder",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A pelvic binder for an unstable pelvis in a hypotensive patient is centered over the:",
+    "options": [
+      "Iliac crests",
+      "Umbilicus",
+      "Greater trochanters",
+      "Lower margin of the ribs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Centering the binder on the greater trochanters closes the pelvic ring and reduces bleeding volume. A binder over the iliac crests can open the ring further."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 2,
+    "skill": "Cardiac tamponade",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A stab wound just left of the sternum with hypotension, distended neck veins, muffled heart sounds and clear lungs suggests:",
+    "options": [
+      "Tension pneumothorax",
+      "Massive hemothorax",
+      "Myocardial contusion",
+      "Cardiac tamponade"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hypotension, jugular distension and muffled heart tones are Beck's triad, and equal clear breath sounds argue against a chest problem on one side. Massive hemothorax collapses the neck veins, and a contusion comes from blunt force."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 2,
+    "skill": "Primary survey",
+    "difficulty": 1,
+    "format": "order",
+    "stem": "Place the steps of the trauma primary survey in order.",
+    "options": [
+      "Control life-threatening external bleeding",
+      "Open the airway with spinal motion restriction",
+      "Assess perfusion, pulses and skin",
+      "Check pupils and the Glasgow Coma Scale",
+      "Assess breathing and the chest wall"
+    ],
+    "correct": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ],
+    "explanation": "Exsanguinating hemorrhage is the X in front of ABCDE because it kills faster than an airway problem, and the rest follow in airway, breathing, circulation, disability order. Neurologic assessment comes last because nothing found there is treated before the first four are stable."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 2,
+    "skill": "Trauma center criteria",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which findings meet the national field triage criteria for transport to the highest-level trauma center? Select all that apply.",
+    "options": [
+      "Unable to follow commands after the crash",
+      "Gunshot wound to the thigh",
+      "Respiratory rate of 18",
+      "Systolic BP of 84 mm Hg in a 40-year-old",
+      "Isolated closed forearm fracture"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "The red criteria include inability to follow commands (motor GCS below 6), a systolic under 90 in adults 10 to 64, and penetrating injury to the head, neck, torso or proximal extremities. A single closed forearm fracture and a normal respiratory rate are not criteria."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 0,
+    "skill": "Neurogenic shock",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient with a cervical fracture has a BP of 80/50, a pulse of 52 and warm, dry skin below the injury. This presentation is:",
+    "options": [
+      "Neurogenic shock",
+      "Hypovolemic shock",
+      "Cardiogenic shock",
+      "Septic shock"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Loss of sympathetic tone below a cord injury causes vasodilation without the tachycardia and pale, cool skin that hypovolemia produces. The slow pulse and warm skin are the giveaway, though bleeding must still be ruled out."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 0,
+    "skill": "Open chest wound",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A sucking chest wound is managed with a:",
+    "options": [
+      "Tight circumferential wrap",
+      "Vented chest seal",
+      "Moist gauze packed into the wound",
+      "Pressure dressing over an occlusive seal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A vented seal lets air out but not in, which prevents the open pneumothorax from becoming a tension pneumothorax. A fully occlusive dressing must be lifted if tension develops, and packing or wrapping the chest restricts breathing."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 0,
+    "skill": "Burn depth",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "For each burn description, select its depth.",
+    "rows": [
+      "Red, dry and painful with no blisters",
+      "Blistered, moist and very painful",
+      "Leathery, white or charred and painless",
+      "Blanching red skin after a day in the sun",
+      "Waxy white with no capillary refill"
+    ],
+    "columns": [
+      "Superficial",
+      "Partial thickness",
+      "Full thickness"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0,
+      2
+    ],
+    "explanation": "Superficial burns involve only the epidermis and are red and dry; partial-thickness burns blister because the dermis is injured; full-thickness burns destroy the nerve endings and vessels, so they are painless, leathery or waxy and do not blanch. Pain is a sign of a shallower burn, not a deeper one."
+  },
+  {
+    "domain": "pmdTrauma",
+    "test": 0,
+    "skill": "Needle decompression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which site is preferred for needle decompression in a muscular adult?",
+    "options": [
+      "2nd intercostal space, posterior axillary line",
+      "7th intercostal space, midclavicular line",
+      "4th or 5th intercostal space, anterior axillary line",
+      "3rd intercostal space, posterior axillary line"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The chest wall is thinnest at the 4th or 5th intercostal space just anterior to the midaxillary line, so a standard catheter reaches the pleural space there in adults; the 2nd intercostal space at the midclavicular line is the alternative. The 7th space risks the liver or spleen."
+  }
+]

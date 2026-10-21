@@ -1,0 +1,634 @@
+[
+  {
+    "domain": "gedQuant",
+    "test": 1,
+    "skill": "Multiplying fractions",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "fractionOps",
+    "stem": "A bread recipe calls for $\\frac{3}{4}$ cup of sugar for each batch. How many cups of sugar are needed for 6 batches?",
+    "options": [
+      "$4\\frac{1}{2}$",
+      "$4\\frac{3}{4}$",
+      "$6\\frac{3}{4}$",
+      "$8$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Multiply $\\frac{3}{4} \\times 6 = \\frac{18}{4} = 4\\frac{1}{2}$ cups. Adding $\\frac{3}{4} + 6$ gives $6\\frac{3}{4}$, and dividing 6 by $\\frac{3}{4}$ gives 8, both common slips."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 1,
+    "skill": "Percent increase",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "A warehouse worker earns \\$18.50 per hour. She receives a 6% raise. What is her new hourly wage, in dollars?",
+    "numeric": {
+      "answers": [
+        "19.61",
+        "$19.61"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Six percent of 18.50 is $0.06 \\times 18.50 = 1.11$, so the new wage is $18.50 + 1.11 = 19.61$ dollars. Equivalently, $18.50 \\times 1.06 = 19.61$. Answering 1.11 gives only the raise, not the new wage."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 1,
+    "skill": "Map scale",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "ratios",
+    "stem": "On a road map, 1 inch represents 35 miles. Two towns are $4\\frac{1}{2}$ inches apart on the map. How many miles apart are the towns?",
+    "options": [
+      "$140$",
+      "$157.5$",
+      "$175$",
+      "$192.5$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Multiply the map distance by the scale: $4.5 \\times 35 = 157.5$ miles. Using 4 inches gives 140 and using 5 inches gives 175; the half inch must be included."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 1,
+    "skill": "Area of a composite shape",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A rectangular room measures 14 feet by 10 feet. A closet in one corner, 4 feet by 3 feet, is walled off and will not be carpeted. How many square feet of carpet are needed for the rest of the room?",
+    "numeric": {
+      "answers": [
+        "128"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The whole room is $14 \\times 10 = 140$ square feet and the closet is $4 \\times 3 = 12$ square feet, so $140 - 12 = 128$ square feet are carpeted. Forgetting to subtract the closet gives 140."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 1,
+    "skill": "Mean of a data set",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "meanMedian",
+    "stem": "A student scored 78, 85, 92 and 88 on four tests. What score does the student need on the fifth test to have a mean of exactly 85 for all five tests?",
+    "options": [
+      "$74$",
+      "$78$",
+      "$82$",
+      "$85$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A mean of 85 over five tests requires a total of $85 \\times 5 = 425$ points. The first four tests total $78 + 85 + 92 + 88 = 343$, so the fifth must be $425 - 343 = 82$. Answering 85 ignores the scores already earned, and 78 or 74 come from subtracting in the wrong direction."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 1,
+    "skill": "Median from a table",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "meanMedian",
+    "passage": "| Employee | Hours last week |\n|---|---|\n| Ana | 32 |\n| Ben | 40 |\n| Cho | 40 |\n| Dee | 25 |\n| Eli | 38 |\n| Fay | 44 |\n| Gus | 36 |",
+    "stem": "What is the median number of hours worked?",
+    "options": [
+      "$25$",
+      "$36.4$",
+      "$38$",
+      "$40$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Put the values in order: 25, 32, 36, 38, 40, 40, 44. The middle (fourth) value is 38. The mode, 40, is the most frequent value, the mean is about 36.4, and 25 is the smallest value; none of these is the median."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 1,
+    "skill": "Unit conversion",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "unitConversion",
+    "stem": "A board is 8 feet long. A carpenter cuts it into pieces that are each 18 inches long. How many whole 18-inch pieces can be cut from the board?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Convert to inches: $8 \\times 12 = 96$ inches. Then $96 \\div 18 = 5.33$, so 5 whole pieces can be cut, with 6 inches left over. Dividing 8 by 18 without converting gives a fraction of a piece, which makes no sense here."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 1,
+    "skill": "Probability",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A bag holds 4 red, 6 blue and 10 green marbles. One marble is drawn at random. What is the probability that it is not green?",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{3}{10}$",
+      "$\\frac{3}{4}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "There are $4 + 6 + 10 = 20$ marbles and $4 + 6 = 10$ are not green, so the probability is $\\frac{10}{20} = \\frac{1}{2}$. The probability of green is also $\\frac{1}{2}$ here, but $\\frac{1}{5}$ counts only the red marbles and $\\frac{3}{10}$ only the blue."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 1,
+    "skill": "Percent of a total",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "percents",
+    "passage": "| Category | Monthly amount |\n|---|---|\n| Rent | \\$1,200 |\n| Food | \\$450 |\n| Transportation | \\$300 |\n| Other | \\$550 |",
+    "stem": "What percent of the total monthly spending goes to rent?",
+    "options": [
+      "$24\\%$",
+      "$40\\%$",
+      "$44\\%$",
+      "$48\\%$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Total spending is $1{,}200 + 450 + 300 + 550 = 2{,}500$. Rent is $\\frac{1{,}200}{2{,}500} = 0.48 = 48\\%$. The value 44% comes from a slip in the total, 40% from using 3,000 as the total, and 24% from dividing by 5,000."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 1,
+    "skill": "Volume of a cylinder",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A cylindrical water tank has a radius of 3 feet and a height of 5 feet. What is the volume of the tank, in cubic feet? Use $3.14$ for $\\pi$ and round to the nearest tenth.",
+    "numeric": {
+      "answers": [
+        "141.3",
+        "141.37"
+      ],
+      "tolerance": 0.3
+    },
+    "calculator": true,
+    "explanation": "The volume of a cylinder is $V = \\pi r^2 h = 3.14 \\times 3^2 \\times 5 = 3.14 \\times 45 = 141.3$ cubic feet. Using the radius without squaring it gives 47.1, and using the diameter squared gives 565.2."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 1,
+    "skill": "Equivalent forms of a number",
+    "difficulty": 1,
+    "format": "multi",
+    "basics": "decimals",
+    "stem": "Which of the following are equal to 0.6? Select all that apply.",
+    "options": [
+      "$\\frac{3}{5}$",
+      "$60\\%$",
+      "$\\frac{6}{100}$",
+      "$0.06$",
+      "$\\frac{6}{10}$"
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "calculator": true,
+    "explanation": "The decimal 0.6 is six tenths, so it equals $\\frac{6}{10}$, which reduces to $\\frac{3}{5}$, and it equals $60\\%$. The values $\\frac{6}{100}$ and $0.06$ are six hundredths, ten times smaller."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 2,
+    "skill": "Subtracting mixed numbers",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "fractionOps",
+    "stem": "A tailor has $2\\frac{3}{4}$ yards of fabric and uses $1\\frac{1}{8}$ yards for a project. How many yards of fabric are left?",
+    "options": [
+      "$1\\frac{1}{4}$",
+      "$1\\frac{3}{8}$",
+      "$1\\frac{1}{2}$",
+      "$1\\frac{5}{8}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Write both with eighths: $2\\frac{6}{8} - 1\\frac{1}{8} = 1\\frac{5}{8}$ yards. Subtracting the fractions without a common denominator ($3 - 1$ over $8 - 4$) gives $1\\frac{1}{2}$, and $1\\frac{3}{8}$ or $1\\frac{1}{4}$ come from borrowing when no borrowing is needed."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 2,
+    "skill": "Percent change",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "Attendance at a community fair rose from 1,250 people last year to 1,450 people this year. By what percent did attendance increase?",
+    "numeric": {
+      "answers": [
+        "16",
+        "16%"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The increase is $1{,}450 - 1{,}250 = 200$ people. Percent increase compares the change with the original amount: $\\frac{200}{1{,}250} = 0.16 = 16\\%$. Dividing by the new figure, 1,450, gives about 13.8%, which is wrong."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 2,
+    "skill": "Unit rate",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "ratios",
+    "stem": "A car travels 375 miles on 12.5 gallons of gasoline. How many miles per gallon does the car get?",
+    "options": [
+      "$30$",
+      "$32$",
+      "$35$",
+      "$37.5$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Miles per gallon is miles divided by gallons: $375 \\div 12.5 = 30$. Dividing the other way gives $\\frac{1}{30}$ gallon per mile. The value 37.5 comes from dividing by 10 gallons instead of 12.5, and 32 and 35 are arithmetic slips."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 2,
+    "skill": "Perimeter",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A rectangular yard is 36 feet long and 24 feet wide. A fence will go all the way around it except for a 4-foot-wide gate opening. How many feet of fencing are needed?",
+    "numeric": {
+      "answers": [
+        "116"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The perimeter is $2(36) + 2(24) = 72 + 48 = 120$ feet. Subtracting the 4-foot gate leaves $120 - 4 = 116$ feet of fencing. Using $36 + 24 = 60$ counts only two sides."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 2,
+    "skill": "Mean from a table",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "meanMedian",
+    "passage": "| Day | Sales |\n|---|---|\n| Monday | \\$320 |\n| Tuesday | \\$275 |\n| Wednesday | \\$410 |\n| Thursday | \\$365 |\n| Friday | \\$280 |",
+    "stem": "What were the mean daily sales for the week?",
+    "options": [
+      "\\$320",
+      "\\$330",
+      "\\$365",
+      "\\$412.50"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Add the five days: $320 + 275 + 410 + 365 + 280 = 1{,}650$, then divide by 5: $1{,}650 \\div 5 = 330$. The value 320 is the median (middle value when sorted), not the mean, and 412.5 comes from dividing by 4."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 2,
+    "skill": "Converting pounds to kilograms",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "unitConversion",
+    "stem": "A patient weighs 154 pounds. Using 1 kilogram = 2.2 pounds, what is the patient's weight in kilograms?",
+    "options": [
+      "$70$",
+      "$77$",
+      "$154$",
+      "$338.8$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Pounds to kilograms means dividing by 2.2: $154 \\div 2.2 = 70$ kilograms. Multiplying by 2.2 gives 338.8, which would be far heavier than the patient, 77 comes from dividing by 2 instead of 2.2, and 154 is the weight left in pounds."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 2,
+    "skill": "Probability of an event",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A spinner has 8 equal sections numbered 1 through 8. What is the probability that one spin lands on a prime number? Give your answer as a fraction or decimal.",
+    "numeric": {
+      "answers": [
+        "1/2",
+        "4/8",
+        "0.5",
+        ".5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The prime numbers from 1 to 8 are 2, 3, 5 and 7, so 4 of the 8 sections are prime: $\\frac{4}{8} = \\frac{1}{2}$. Counting 1 as prime gives $\\frac{5}{8}$; 1 is not a prime number."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 2,
+    "skill": "Order of operations",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "orderOfOperations",
+    "stem": "What is the value of $3 + 2 \\times (8 - 3)^2$?",
+    "options": [
+      "$23$",
+      "$53$",
+      "$103$",
+      "$125$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Parentheses first: $8 - 3 = 5$. Then the exponent: $5^2 = 25$. Multiply: $2 \\times 25 = 50$. Add: $3 + 50 = 53$. Adding $3 + 2$ before multiplying gives 125, and doubling instead of squaring gives 23."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 2,
+    "skill": "Surface area",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A closed cardboard box is 10 inches long, 6 inches wide and 4 inches tall. How many square inches of cardboard make up the surface of the box?",
+    "options": [
+      "$124$",
+      "$208$",
+      "$240$",
+      "$248$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A box has three pairs of faces: $10 \\times 6 = 60$, $10 \\times 4 = 40$ and $6 \\times 4 = 24$. Surface area is $2(60 + 40 + 24) = 248$ square inches. The value 240 is the volume, and 124 counts each face only once."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 2,
+    "skill": "Mode from described data",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "A shoe store's bar chart shows pairs sold last week by size: size 7, 5 pairs; size 8, 9 pairs; size 9, 12 pairs; size 10, 9 pairs; size 11, 4 pairs. What is the mode of the shoe sizes sold?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The mode is the value that occurs most often. Size 9 sold 12 pairs, more than any other size, so the mode is 9. The answer 12 is the number of pairs, not the size."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 2,
+    "skill": "Area and factors",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A rectangle has an area of 36 square centimeters, and both side lengths are whole numbers. Which of the following could be the dimensions of the rectangle? Choose two.",
+    "options": [
+      "$4$ cm by $9$ cm",
+      "$3$ cm by $13$ cm",
+      "$6$ cm by $6$ cm",
+      "$2$ cm by $16$ cm",
+      "$5$ cm by $7$ cm"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2,
+    "calculator": true,
+    "explanation": "Area is length times width, so the sides must multiply to 36: $4 \\times 9 = 36$ and $6 \\times 6 = 36$. The other pairs do not: $3 \\times 13 = 39$, $2 \\times 16 = 32$ and $5 \\times 7 = 35$."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 0,
+    "skill": "Decimals and money",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "decimals",
+    "stem": "A shopper buys items priced at \\$4.79, \\$12.50 and \\$0.99 and pays with a \\$20 bill. How much change should the shopper receive?",
+    "options": [
+      "\\$0.72",
+      "\\$1.28",
+      "\\$1.62",
+      "\\$1.72"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The total is $4.79 + 12.50 + 0.99 = 18.28$ dollars, so the change is $20.00 - 18.28 = 1.72$ dollars. The value 1.28 is what 18.72 would leave, 1.62 comes from adding 0.89 instead of 0.99, and 0.72 from dropping a dollar in the subtraction."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 0,
+    "skill": "Ratios and parts",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "A painter mixes blue and yellow paint in a ratio of 3 parts blue to 5 parts yellow. How many ounces of blue paint are in 24 ounces of the mixture?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The ratio 3 to 5 has $3 + 5 = 8$ parts in all, so each part is $24 \\div 8 = 3$ ounces. Blue is 3 parts: $3 \\times 3 = 9$ ounces. Using $\\frac{3}{5}$ of 24 (14.4) compares blue with yellow instead of with the whole mixture."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 0,
+    "skill": "Finding the whole from a percent",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "percents",
+    "stem": "A store sold 24 laptops during a sale, which was 30% of the laptops it had in stock. How many laptops did the store have in stock before the sale?",
+    "options": [
+      "$54$",
+      "$72$",
+      "$80$",
+      "$96$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "If 30% of the stock is 24, the stock is $24 \\div 0.30 = 80$ laptops. Multiplying $24 \\times 0.30 = 7.2$ finds 30% of 24 instead, and 54 comes from adding 30 to 24."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 0,
+    "skill": "Area of a circle",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A circular patio has a diameter of 10 feet. What is the area of the patio, in square feet? Use $3.14$ for $\\pi$ and round to the nearest tenth.",
+    "numeric": {
+      "answers": [
+        "78.5",
+        "78.54"
+      ],
+      "tolerance": 0.3
+    },
+    "calculator": true,
+    "explanation": "The radius is half the diameter, 5 feet. Area is $\\pi r^2 = 3.14 \\times 5^2 = 3.14 \\times 25 = 78.5$ square feet. Using the diameter in place of the radius gives 314, four times too large."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 0,
+    "skill": "Median of an even set",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "meanMedian",
+    "stem": "Six customers waited 12, 15, 9, 20, 18 and 11 minutes for service. What is the median wait time, in minutes?",
+    "options": [
+      "$12$",
+      "$13.5$",
+      "$14.2$",
+      "$15$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "In order the times are 9, 11, 12, 15, 18, 20. With six values, the median is the mean of the middle two: $\\frac{12 + 15}{2} = 13.5$ minutes. The value 14.2 is the mean of all six, and 15 is only the fourth value."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 0,
+    "skill": "Unit price",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "A 24-ounce jar of peanut butter costs \\$3.60. What is the cost per ounce, in dollars?",
+    "numeric": {
+      "answers": [
+        "0.15",
+        ".15",
+        "$0.15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Unit price is total cost divided by the number of units: $3.60 \\div 24 = 0.15$, so 15 cents per ounce. Dividing 24 by 3.60 gives about 6.67 ounces per dollar, the reverse rate."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 0,
+    "skill": "Fractions of a whole",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "fractionOps",
+    "stem": "In a survey, $\\frac{1}{3}$ of the respondents chose plan A and $\\frac{1}{4}$ chose plan B. Everyone else chose plan C. What fraction of the respondents chose plan C?",
+    "options": [
+      "$\\frac{5}{12}$",
+      "$\\frac{7}{12}$",
+      "$\\frac{2}{7}$",
+      "$\\frac{1}{12}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Plans A and B together are $\\frac{1}{3} + \\frac{1}{4} = \\frac{4}{12} + \\frac{3}{12} = \\frac{7}{12}$. The rest is $1 - \\frac{7}{12} = \\frac{5}{12}$. Adding numerators and denominators gives $\\frac{2}{7}$, which is not how fractions add."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 0,
+    "skill": "Pythagorean theorem",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A rectangular garden is 9 meters wide and 12 meters long. A straight path runs from one corner to the opposite corner. How long is the path, in meters?",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The path is the hypotenuse of a right triangle with legs 9 and 12: $9^2 + 12^2 = 81 + 144 = 225$, and $\\sqrt{225} = 15$ meters. Adding the legs, 21, overstates the length; a diagonal is always shorter than the two sides it replaces."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 0,
+    "skill": "Order of operations with a fraction bar",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "orderOfOperations",
+    "stem": "What is the value of $\\frac{18 - 6}{2} + 4 \\times 3$?",
+    "options": [
+      "$6$",
+      "$10$",
+      "$18$",
+      "$30$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A fraction bar groups what is above it: $18 - 6 = 12$, then $12 \\div 2 = 6$. Multiply $4 \\times 3 = 12$, then add: $6 + 12 = 18$. Adding 4 before multiplying gives 30, stopping after $6 + 4$ gives 10, and dividing 12 by $2 + 4$ gives 6."
+  },
+  {
+    "domain": "gedQuant",
+    "test": 0,
+    "skill": "Reading a data table",
+    "difficulty": 2,
+    "format": "multi",
+    "basics": "meanMedian",
+    "passage": "| Month | Rainfall (inches) |\n|---|---|\n| January | 3.2 |\n| February | 2.8 |\n| March | 4.1 |\n| April | 3.9 |",
+    "stem": "Which statements about the rainfall data are true? Select all that apply.",
+    "options": [
+      "The mean monthly rainfall is 3.5 inches.",
+      "The range of the data is 1.3 inches.",
+      "March had twice as much rain as February.",
+      "The median monthly rainfall is 3.5 inches.",
+      "Total rainfall for the four months was 14 inches."
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "calculator": true,
+    "explanation": "The total is $3.2 + 2.8 + 4.1 + 3.9 = 14.0$ inches and the mean is $14.0 \\div 4 = 3.5$. The range is $4.1 - 2.8 = 1.3$. The median is the mean of the middle two sorted values, $\\frac{3.2 + 3.9}{2} = 3.55$, not 3.5, and twice February's rainfall would be 5.6, more than March's 4.1."
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "NCLEXPN-CS1",
+    "title": "Case study: fall in long-term care",
+    "text": "Long-term care facility, 0240. An 84-year-old resident with Parkinson disease, atrial fibrillation treated with apixaban, osteoporosis and mild dementia is found sitting on the floor beside the bed by the assistive personnel (AP), who calls the PN. The resident says, \"I needed the bathroom and didn't want to bother anyone.\" Baseline: walks with a walker with standby assistance, oriented to person and place, uses the call light inconsistently.\n\nMedications: carbidopa-levodopa 25/100 mg PO three times daily, apixaban 5 mg PO twice daily, alendronate 70 mg PO weekly, donepezil 5 mg PO at bedtime, and zolpidem 5 mg PO at bedtime, started 3 nights ago.\n\n| 0245 data collection | Finding |\n|---|---|\n| BP | 104/62 mm Hg sitting (afternoon reading 132/78) |\n| Heart rate | 92/min, irregular |\n| Respirations | 18/min |\n| Temperature | 97.8 F |\n| Pain | Right hip 2 of 10; no shortening or rotation of the leg |\n| Head | Small bump above the left ear, skin intact |\n| Orientation | Person and place, same as baseline |\n| Room | Bed in low position, call light on the floor, floor dry, resident barefoot |"
+  },
+  {
+    "id": "NCLEXPN-CS2",
+    "title": "Case study: hypoglycemia in a long-term care resident",
+    "text": "Long-term care facility, 1130. A 79-year-old resident with type 2 diabetes for 20 years, hypertension and mild chronic kidney disease. Weight 61 kg. Baseline per the assistive personnel who care for her every day: alert, oriented to person and place, chats during care, walks to the dining room with a walker.\n\nMedications: glipizide 10 mg PO before breakfast, insulin glargine 20 units subcut at bedtime, lisinopril 20 mg PO daily, atorvastatin 20 mg PO at bedtime. No known allergies.\n\nThe AP reports that the resident ate about 25% of breakfast at 0800, saying her stomach was upset, and that her 0800 medications were given. At 1130 the AP finds her in her room and calls the PN.\n\n| 1130 data | Finding |\n|---|---|\n| BP | 138/82 mm Hg (usual 130s/80s) |\n| Heart rate | 104/min |\n| Respirations | 20/min |\n| Temperature | 97.9 F |\n| SpO2 | 96% on room air |\n| Skin | Cool and sweaty |"
+  },
+  {
+    "id": "NCLEXPN-CS3",
+    "title": "Case study: depression at a diabetes clinic visit",
+    "text": "Outpatient diabetes clinic, 1000. A 58-year-old client with type 2 diabetes, hypertension and obesity comes in for a 3-month follow-up. The client's spouse died 5 months ago. The client lives alone and has stopped attending the diabetes support group. Medications: metformin 1,000 mg PO twice daily, lisinopril 20 mg PO daily, atorvastatin 20 mg PO at bedtime. The client says, \"I don't see the point in checking my sugar anymore.\"\n\n| Clinic data | Today | 3 months ago |\n|---|---|---|\n| Weight | 88 kg | 95 kg |\n| BP | 148/88 mm Hg | 134/82 mm Hg |\n| A1C | 9.4% | 7.6% |\n| Glucose log | 6 entries in 3 months | 2 entries daily |\n| Sleep | \"4 hours, up at 3 a.m. most nights\" | 7 hours |\n| PHQ-2 score | 5 of 6 | 1 of 6 |"
+  }
+]

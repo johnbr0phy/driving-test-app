@@ -1,0 +1,391 @@
+[
+  {
+    "domain": "pnComfort",
+    "test": 1,
+    "skill": "Walker use",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN observes a client with weakness in the left leg walking with a standard walker. Which observation shows correct technique?",
+    "options": [
+      "Moves the walker, then steps in with the weaker leg",
+      "Lifts the walker off the floor to turn around in the hall",
+      "Leans the trunk forward over the walker while walking",
+      "Steps the stronger leg forward before moving the walker"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The walker is moved forward first, then the weaker leg steps into it so the arms share that leg's load, and the stronger leg follows. Leaning over the walker or leading with the strong leg leaves the weak leg unsupported, and the walker should stay on the floor while turning in small steps."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 1,
+    "skill": "Pressure injury staging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While bathing a client, the PN finds a shallow open area over the coccyx with a pink-red, moist wound bed and no slough or bruising. Which stage should the PN report to the RN?",
+    "options": [
+      "Stage 1",
+      "Stage 2",
+      "Stage 3",
+      "Unstageable"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A shallow open wound with a pink-red bed and no slough is a stage 2 pressure injury (partial-thickness skin loss). Stage 1 skin is intact, stage 3 shows fat in the wound bed, and unstageable means slough or eschar hides the base."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 1,
+    "skill": "Positioning after hip replacement",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client is 1 day after a total hip replacement through a posterior approach. Which position should the PN maintain?",
+    "options": [
+      "Hips flexed past 90 degrees for comfort",
+      "Operative leg crossed over the other leg",
+      "Legs separated with an abduction pillow",
+      "Lying on the operative side"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After a posterior approach, the legs are kept abducted with a wedge pillow and the hip is not flexed beyond 90 degrees, crossed or turned inward, because those positions can dislocate the new joint. Lying on the operative side is avoided in the early days."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 1,
+    "skill": "Opioid constipation",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "A long-term care resident taking scheduled oxycodone for arthritis pain has not had a bowel movement in 3 days. Which actions should the PN take? Select all that apply.",
+    "options": [
+      "Offer fluids throughout the day",
+      "Encourage walking in the hall",
+      "Hold the oxycodone until a bowel movement",
+      "Give the prescribed stool softener",
+      "Give a soap suds enema every day"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Opioid constipation is managed with fluids, activity, fiber and the prescribed bowel regimen, usually a stool softener with a stimulant laxative. Holding pain medication causes needless pain, and daily enemas irritate the bowel and are not a prevention plan."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 1,
+    "skill": "Oral care for an unconscious client",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN provides mouth care to an unconscious client. Which action is correct?",
+    "options": [
+      "Rinse the mouth with a large amount of water and let it drain",
+      "Sit the client straight up at 90 degrees for the procedure",
+      "Use lemon and glycerin swabs to moisten the dry mucosa",
+      "Turn the client to the side with the head turned toward the PN"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A side-lying position with the head turned lets fluid drain out of the mouth instead of into the airway, and only small amounts of fluid are used with suction nearby. Lemon-glycerin swabs dry and irritate the mucosa, and an unconscious client cannot be safely propped straight up for oral care."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 1,
+    "skill": "Gastrostomy bolus feeding",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "The PN gives an intermittent bolus feeding through an established gastrostomy tube. Place the steps in the order the PN should perform them.",
+    "options": [
+      "Raise the head of the bed to at least 30 degrees",
+      "Check tube placement and residual per facility policy",
+      "Flush the tube with 30 mL of water",
+      "Pour the formula into the syringe and let it flow by gravity",
+      "Flush the tube with water after the formula",
+      "Keep the head of the bed raised for 30 to 60 minutes"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "The head is raised before anything goes in to reduce aspiration risk, placement and residual are checked per policy, the tube is flushed, the formula runs in by gravity, the tube is flushed again to keep it open, and the client stays upright afterward. Flushing after the feeding and leaving the head up are what keep the tube patent and the stomach contents down."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 1,
+    "skill": "Low-potassium diet",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with chronic kidney disease is on a potassium-restricted diet. Which lunch choice shows the client understands the reinforced teaching?",
+    "options": [
+      "Apple slices and white rice",
+      "Baked potato with the skin on",
+      "Orange juice and a sliced banana",
+      "Tomato soup with cooked spinach"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Apples and white rice are low in potassium. Potatoes with skin, oranges, bananas, tomatoes and spinach are all high-potassium foods that a client with kidney disease must limit."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 1,
+    "skill": "Sleep and rest",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A newly admitted long-term care resident tells the PN, \"I just can't fall asleep here.\" Which action should the PN take first?",
+    "options": [
+      "Request a prescription for a sleeping pill from the provider",
+      "Ask about the resident's bedtime routine at home",
+      "Encourage a long nap after lunch to make up the lost sleep",
+      "Serve the evening meal right before bed so she is full"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The PN collects data first: learning the resident's usual routine (bedtime, snack, lighting, prayer, reading) lets the team recreate it, which is the safest sleep aid for an older adult. Sedatives raise fall risk, daytime naps and a late heavy meal make nighttime sleep worse."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 1,
+    "skill": "Heat application",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client with chronic low back pain asks the PN about using a heating pad at home. Which instruction should the PN reinforce?",
+    "options": [
+      "Place the heating pad directly on bare skin",
+      "Use the highest setting for faster relief",
+      "Leave the heat on all night while sleeping",
+      "Limit each application to about 20 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Heat is applied over a cloth layer on a low to medium setting for about 20 minutes at a time; longer or hotter applications cause burns and rebound vasoconstriction. Falling asleep on a heating pad is a common cause of burns in older adults."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 2,
+    "skill": "Bed to wheelchair transfer",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "The PN transfers a client with right-sided weakness from the bed to a wheelchair placed on the client's left side. Place the steps in the order the PN should perform them.",
+    "options": [
+      "Lock the wheelchair brakes",
+      "Help the client sit on the edge of the bed",
+      "Fasten the gait belt around the client's waist",
+      "Stand the client up on a count of three",
+      "Pivot the client toward the chair on the stronger leg",
+      "Lower the client into the seat"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "The chair is locked before the client moves, the client sits and dangles so dizziness shows up while still on the bed, the gait belt goes on before standing, and the client stands, pivots on the strong left leg toward the chair on that side, and is lowered into the seat. A belt fastened after standing or an unlocked chair is where falls happen."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 2,
+    "skill": "Evaluating hypoglycemia care",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "1230: The resident ate a cheese sandwich and milk from the lunch tray. The AP reports the resident \"seems like herself.\"",
+    "stimulusId": "NCLEXPN-CS2",
+    "caseStep": 6,
+    "stem": "The PN evaluates the resident's response. Which finding best shows that the hypoglycemia has resolved?",
+    "options": [
+      "Glucose 112 mg/dL, alert and oriented at baseline",
+      "Asleep and does not rouse for the afternoon snack",
+      "Glucose 68 mg/dL, skin still sweaty",
+      "Awake but refusing the afternoon snack"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A glucose above 70 mg/dL together with a return to her baseline mental status shows the episode has resolved; the sandwich adds protein and complex carbohydrate so the glucose holds. A glucose of 68 mg/dL with sweating is still hypoglycemia, and being hard to rouse is a worsening sign that the PN reports at once."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 2,
+    "skill": "Feeding a client with dysphagia",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN feeds a client who has dysphagia after a stroke. Which action is correct?",
+    "options": [
+      "Offer thin liquids through a straw between bites",
+      "Sit the client upright with the chin tucked",
+      "Place each bite of food on the weak side of the mouth",
+      "Feed quickly so the client does not become tired"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An upright position with a slight chin tuck narrows the airway entrance and makes swallowing safer. Thin liquids and straws are the easiest things to aspirate, food goes on the strong side of the mouth, and feeding is slow with a check that each bite is swallowed."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 2,
+    "skill": "Complications of immobility",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "A client has been on bed rest for 3 days after a fall. Which measures should the PN use to prevent complications of immobility? Select all that apply.",
+    "options": [
+      "Encourage use of the incentive spirometer",
+      "Keep a pillow under the knees at all times",
+      "Perform range-of-motion exercises",
+      "Reposition at least every 2 hours",
+      "Restrict fluids to reduce voiding"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Deep breathing, range of motion and regular turning protect the lungs, joints, skin and circulation of a client on bed rest. A pillow kept under the knees slows venous return and promotes clots and contractures, and restricting fluids thickens secretions and concentrates urine."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 2,
+    "skill": "Indwelling catheter care",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN cares for a client with an indwelling urinary catheter. Which action is correct?",
+    "options": [
+      "Disconnect the tubing to collect a urine specimen",
+      "Rest the drainage bag on the floor during transfers",
+      "Keep the drainage bag below the level of the bladder",
+      "Clamp the catheter for 2 hours every shift to train the bladder"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The bag stays below the bladder and off the floor so urine drains freely and does not flow back toward the bladder. Specimens come from the sampling port with the system kept closed, and routine clamping holds urine in the bladder and raises infection risk."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 2,
+    "skill": "Hearing aid care",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A resident tells the PN that the hearing aid keeps whistling. Which action should the PN take first?",
+    "options": [
+      "Replace the battery with a fresh one from the drawer",
+      "Turn the volume up to the maximum setting",
+      "Send the aid out for repair and document the problem",
+      "Check that the earmold is seated firmly in the ear"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Whistling (feedback) is most often caused by a loose or poorly seated earmold or by earwax, so reseating the mold is the first check. Turning the volume up makes feedback louder, and a weak battery causes a faint or dead aid, not whistling."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 2,
+    "skill": "Comfort at the end of life",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A hospice client in long-term care has stopped eating and drinks only sips. Which comfort measures should the PN provide? Select all that apply.",
+    "options": [
+      "Offer mouth care with moistened swabs every 2 hours",
+      "Insist that the client eat three full meals a day",
+      "Offer small amounts of favorite foods if the client wants them",
+      "Apply lip balm to the dry lips",
+      "Tell the RN the client needs a feeding tube"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "At the end of life, comfort comes from a moist mouth, soft lips and the pleasure of a few bites of something liked. Forcing meals causes distress, and a feeding tube does not extend comfort or life for a dying client and is not a decision the PN makes."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 2,
+    "skill": "Antiembolism stockings",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN assigns an assistive personnel to apply antiembolism stockings. Which statement by the AP shows correct understanding?",
+    "options": [
+      "\"I'll put them on before she gets out of bed in the morning.\"",
+      "\"I'll roll the tops down if they feel tight.\"",
+      "\"I'll leave them on all week without taking them off.\"",
+      "\"I'll apply them after she has sat in the chair for an hour.\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Stockings go on before the legs are dependent, so the veins are empty and the fit is right. Rolled tops act like a tourniquet, and the stockings are removed at least once a shift so the skin can be checked and washed."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 2,
+    "skill": "Cold application",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client in the clinic sprained an ankle 2 hours ago. Which care should the PN reinforce for the first 24 to 48 hours?",
+    "options": [
+      "Soak the ankle in warm water twice a day to loosen it",
+      "Apply a cloth-wrapped ice pack for 20 minutes at a time",
+      "Keep the ankle hanging below the level of the heart while resting",
+      "Walk on the ankle as much as possible to keep it from stiffening"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rest, ice, compression and elevation limit swelling in the first 1 to 2 days, with the ice wrapped and applied about 20 minutes at a time. Heat, dependent positioning and weight bearing all increase swelling in an acute sprain."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 0,
+    "skill": "Perineal care",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN provides perineal care for a female client. Which action is correct?",
+    "options": [
+      "Wipe from the rectal area toward the pubic area with firm strokes",
+      "Use the same part of the washcloth for each stroke to save linen",
+      "Cleanse from front to back with a clean area of the cloth",
+      "Use very hot water to kill the bacteria on the skin"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Washing from front to back with a fresh area of the cloth for each stroke keeps rectal bacteria away from the urethra. Hot water burns delicate skin, and reusing the same cloth surface moves organisms around."
+  },
+  {
+    "domain": "pnComfort",
+    "test": 0,
+    "skill": "Iron-rich foods",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "A client with iron-deficiency anemia asks which foods to eat. Which foods should the PN reinforce as good sources of iron? Select all that apply.",
+    "options": [
+      "Lean red meat",
+      "Cooked spinach",
+      "Milk and cheese",
+      "Iron-fortified cereal",
+      "Apple slices"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Red meat, dark leafy greens and fortified cereals supply iron, and vitamin C taken with them improves absorption. Dairy products are low in iron and calcium can reduce iron absorption, and apples add little iron."
+  }
+]

@@ -1,0 +1,959 @@
+[
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Founding documents",
+    "difficulty": 1,
+    "format": "single",
+    "stimulusId": "GED-SS-01",
+    "caseStep": 1,
+    "stem": "According to the excerpt, where does a government get its just powers?",
+    "options": [
+      "From the consent of the governed",
+      "From the authority of a hereditary monarch",
+      "From the rulings of its judges",
+      "From the strength of its army"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Declaration says governments derive 'their just powers from the consent of the governed,' meaning the people are the source of government authority. Kings, judges and armies are not named as the source."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Founding documents",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SS-01",
+    "caseStep": 2,
+    "stem": "According to the excerpt, what may the people do when a government becomes destructive of their rights?",
+    "options": [
+      "Petition the king for a new colonial charter",
+      "Ask the courts to appoint new leaders",
+      "Refuse to obey whichever laws they happen to dislike",
+      "Alter or abolish it and form a new government"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The excerpt states it is 'the Right of the People to alter or to abolish it, and to institute new Government.' This idea justified the colonies' break with Britain."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Powers of Congress",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Under the U.S. Constitution, which body has the power to declare war?",
+    "options": [
+      "Congress",
+      "The President",
+      "The Supreme Court",
+      "The Joint Chiefs of Staff"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article I, Section 8 gives Congress the power to declare war. The President is commander in chief of the armed forces but cannot declare war alone."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Checks and balances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Congress passes a bill and the President vetoes it. What vote in each house is needed to override the veto and make the bill law?",
+    "options": [
+      "A simple majority",
+      "Three-fifths",
+      "Three-fourths",
+      "Two-thirds"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article I, Section 7 requires a two-thirds vote of both the House and the Senate to override a presidential veto. A simple majority is only what it takes to pass the bill the first time."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Amending the Constitution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After Congress proposes an amendment to the Constitution, how is the amendment ratified?",
+    "options": [
+      "Approval by three-fourths of the states",
+      "A majority vote in both houses of Congress",
+      "The signature of the President",
+      "A ruling by the Supreme Court"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article V requires ratification by three-fourths of the states (38 of 50), by their legislatures or by state conventions. The President has no formal role, and Congress's two-thirds vote only proposes the amendment."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Federalism",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each power, specify whether it belongs to the federal government only, to state governments only, or to both.",
+    "rows": [
+      "Coin money",
+      "Establish local governments",
+      "Collect taxes",
+      "Declare war",
+      "Issue marriage licenses"
+    ],
+    "columns": [
+      "Federal only",
+      "State only",
+      "Both"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0,
+      1
+    ],
+    "explanation": "Coining money and declaring war are delegated to the federal government in Article I. Setting up local governments and licensing marriages are reserved to the states under the Tenth Amendment. Taxing is a concurrent power, shared by both levels."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Bill of Rights",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "stem": "Which TWO of the following rights are protected by the First Amendment?",
+    "options": [
+      "Freedom of the press",
+      "The right to petition the government",
+      "The right to keep and bear arms",
+      "Protection from unreasonable searches",
+      "The right to a speedy trial"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "The First Amendment protects religion, speech, the press, assembly and petition. Bearing arms is the Second Amendment, searches the Fourth, and a speedy trial the Sixth."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Judicial branch",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The power of the federal courts to decide whether a law or government action violates the Constitution is called:",
+    "options": [
+      "judicial restraint",
+      "due process",
+      "executive privilege",
+      "judicial review"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Judicial review, established in Marbury v. Madison (1803), lets courts strike down laws that conflict with the Constitution. Due process is a right of individuals, and executive privilege belongs to the President."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Elections",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "There are 538 electoral votes. How many must a candidate win to be elected President?",
+    "options": [
+      "269",
+      "270",
+      "300",
+      "435"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A candidate needs a majority of the 538 electoral votes, which is 270. If no candidate reaches 270, the House of Representatives chooses the President. 435 is the number of House seats, not an electoral threshold."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Voting amendments",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which amendment guaranteed women the right to vote in the United States?",
+    "options": [
+      "Fifteenth Amendment",
+      "Nineteenth Amendment",
+      "Twenty-fourth Amendment",
+      "Twenty-sixth Amendment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Nineteenth Amendment (1920) says the right to vote shall not be denied on account of sex. The Fifteenth (1870) covers race, the Twenty-fourth (1964) banned poll taxes in federal elections, and the Twenty-sixth (1971) lowered the voting age to 18."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Timeline of U.S. history",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Place these events in the order in which they happened, earliest first.",
+    "options": [
+      "The Declaration of Independence is adopted",
+      "The U.S. Constitution is ratified",
+      "The Civil War begins",
+      "The Nineteenth Amendment gives women the vote"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "The Declaration was adopted in 1776, the Constitution was ratified in 1788, the Civil War began in 1861, and the Nineteenth Amendment was ratified in 1920."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Civil War era",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What did the Emancipation Proclamation of 1863 do?",
+    "options": [
+      "Declared enslaved people in Confederate-held areas free",
+      "Ended slavery in every state and territory of the United States",
+      "Gave formerly enslaved men the right to vote",
+      "Admitted new free states to the Union"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lincoln's proclamation freed enslaved people in areas still in rebellion against the Union. Slavery was abolished everywhere by the Thirteenth Amendment in 1865, and voting rights came with the Fifteenth Amendment in 1870."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Founding era",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The Articles of Confederation were replaced by the Constitution in 1788 mainly because the national government under the Articles:",
+    "options": [
+      "gave the President too much power",
+      "was controlled by the largest states",
+      "was too weak to tax or regulate trade",
+      "allowed federal courts to overturn state laws"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Under the Articles, Congress could not collect taxes or regulate commerce among the states, and there was no President or national court system. The Constitution created a stronger national government to fix these weaknesses."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Cold War",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The Marshall Plan (1948) sent billions of dollars in U.S. aid to rebuild Western Europe after World War II. A major goal of the plan was to:",
+    "options": [
+      "punish Germany for starting the war",
+      "replace the armies of Western Europe with permanent U.S. troops",
+      "create a single currency for all of Europe",
+      "prevent the spread of communism by restoring European economies"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The United States believed that poverty and ruined economies made communism more appealing, so rebuilding Western Europe was meant to keep it stable and allied with the West during the early Cold War."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Supply and demand",
+    "difficulty": 1,
+    "format": "single",
+    "stimulusId": "GED-SS-02",
+    "caseStep": 1,
+    "stem": "At which price does the quantity demanded equal the quantity supplied?",
+    "options": [
+      "\\$100",
+      "\\$150",
+      "\\$200",
+      "\\$250"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At \\$200, buyers want 75 bicycles and sellers offer 75, so the market is in equilibrium. At every lower price demand exceeds supply, and at every higher price supply exceeds demand."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Supply and demand",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SS-02",
+    "caseStep": 2,
+    "stem": "If the price of a used bicycle is \\$100, what will most likely happen in this market?",
+    "options": [
+      "A shortage, because buyers want more bicycles than sellers offer",
+      "A surplus, because sellers offer more bicycles than buyers will purchase",
+      "Sellers will cut the price further to attract more buyers",
+      "The quantity supplied will fall to zero"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At \\$100 the quantity demanded is 120 but only 40 are supplied, a shortage of 80. Shortages tend to push the price up toward the \\$200 equilibrium, not down."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Taxes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following is an example of a progressive tax?",
+    "options": [
+      "A sales tax paid at the same rate by every shopper",
+      "An income tax whose rate rises as income rises",
+      "A flat fee charged for a driver's license",
+      "A toll charged for each crossing of a bridge"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A progressive tax takes a larger percentage from higher incomes. A sales tax, flat fee or toll charges everyone the same amount regardless of income, so they are not progressive."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Reading maps",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A map of the United States uses dark shading for areas with more than 1,000 people per square mile. The darkest band runs from Boston through New York City to Washington, D.C., with other dark patches around Chicago, Houston and Los Angeles. What does this map show?",
+    "options": [
+      "Annual rainfall",
+      "Elevation above sea level",
+      "Population density",
+      "Acres of farmland"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "People per square mile is the definition of population density. The dark patches are the country's largest metropolitan areas, which is what a population density map highlights."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "Physical geography",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which river forms the border between Texas and Mexico?",
+    "options": [
+      "The Colorado River",
+      "The Mississippi River",
+      "The Missouri River",
+      "The Rio Grande"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Rio Grande runs along the entire Texas-Mexico border. The Mississippi and Missouri flow through the center of the country, and the Colorado forms part of Arizona's border with California and Mexico."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 1,
+    "skill": "World history and geography",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The Industrial Revolution began in Great Britain in the late 1700s. Which geographic factor most helped it start there?",
+    "options": [
+      "Large deposits of coal and iron near rivers and ports",
+      "A tropical climate well suited to growing cotton and sugar",
+      "A small population with little demand for goods",
+      "Vast open plains far from any coastline"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Britain had coal to power steam engines, iron for machines, and rivers and harbors to move raw materials and finished goods cheaply. Its climate is temperate, not tropical, and its cities created strong demand."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Founding documents",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SS-03",
+    "caseStep": 1,
+    "stem": "According to the author, why are controls on government necessary?",
+    "options": [
+      "Because the people cannot be trusted to choose their own leaders",
+      "Because governments are run by people, who are not angels",
+      "Because angels would govern too strictly",
+      "Because the states refuse to obey national laws"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The author says that if men were angels no government would be needed, but since people govern people, the government must be made to control itself. Nothing in the excerpt distrusts voters or blames the states."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Founding documents",
+    "difficulty": 3,
+    "format": "single",
+    "stimulusId": "GED-SS-03",
+    "caseStep": 2,
+    "stem": "The 'auxiliary precautions' the author mentions were built into the Constitution mainly through:",
+    "options": [
+      "a hereditary ruler placed above the branches",
+      "a ban on forming political parties",
+      "checks and balances among separate branches",
+      "a single legislature with only one house"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Federalist No. 51 argues that beyond elections ('a dependence on the people'), the structure of government itself must check power, which the Constitution does through separation of powers and checks and balances. The Constitution has no hereditary ruler and a two-house Congress."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Powers of Congress",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following is a power of the Senate but not of the House of Representatives?",
+    "options": [
+      "Introducing all bills that raise revenue",
+      "Choosing the President when no candidate wins a majority",
+      "Bringing impeachment charges against an official",
+      "Approving treaties and presidential appointments"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Senate ratifies treaties and confirms appointments. Revenue bills must start in the House, the House picks the President if the Electoral College does not produce a majority, and the House brings impeachment charges while the Senate holds the trial."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Structure of Congress",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How long is one term for a United States Senator?",
+    "options": [
+      "2 years",
+      "4 years",
+      "6 years",
+      "8 years"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Senators serve six-year terms, with about one-third of the Senate up for election every two years. Members of the House serve two-year terms, and the President serves four."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Bill of Rights",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The Bill of Rights is the name given to:",
+    "options": [
+      "the first ten amendments to the Constitution",
+      "the opening paragraph of the Constitution",
+      "the list of grievances in the Declaration of Independence",
+      "the three amendments passed after the Civil War"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first ten amendments, ratified in 1791, are the Bill of Rights. The opening paragraph of the Constitution is the Preamble, and the Thirteenth, Fourteenth and Fifteenth Amendments are the Reconstruction amendments."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Rights of the accused",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Police officers want to search a person's home for evidence of a crime. Under the Fourth Amendment, in most cases they must first obtain:",
+    "options": [
+      "written permission from the mayor",
+      "a warrant based on probable cause",
+      "a guilty verdict from a jury",
+      "a vote of the city council"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Fourth Amendment bans unreasonable searches and requires that warrants be supported by probable cause. A jury verdict comes after a trial, and mayors and councils have no role in authorizing searches."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Citizenship",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "Which TWO of the following are responsibilities of U.S. citizens only, not of everyone living in the United States?",
+    "options": [
+      "Serving on a jury",
+      "Voting in federal elections",
+      "Paying income tax",
+      "Obeying federal and state laws",
+      "Registering a car"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Only citizens may vote in federal elections and serve on juries. Everyone living in the country, citizen or not, must pay taxes on income earned here, obey the law, and register a vehicle."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Branches of government",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each action, specify which branch of the federal government performs it.",
+    "rows": [
+      "Vetoes a bill",
+      "Interprets what a law means in a case",
+      "Passes the federal budget",
+      "Nominates federal judges",
+      "Confirms federal judges"
+    ],
+    "columns": [
+      "Legislative",
+      "Executive",
+      "Judicial"
+    ],
+    "correct": [
+      1,
+      2,
+      0,
+      1,
+      0
+    ],
+    "explanation": "The President (executive) vetoes bills and nominates judges. Congress (legislative) passes the budget and, through the Senate, confirms judges. The courts (judicial) interpret laws when deciding cases."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Reconstruction amendments",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The Fourteenth Amendment (1868) says that no state may deny to any person within its jurisdiction:",
+    "options": [
+      "the right to own land in another state",
+      "a free college education",
+      "the equal protection of the laws",
+      "the right to vote at age 18"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Fourteenth Amendment's Equal Protection Clause requires states to treat people equally under the law and was the basis of many civil rights rulings. The voting age of 18 comes from the Twenty-sixth Amendment (1971)."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Constitutional principles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The Constitution opens with the words 'We the People of the United States.' This phrase expresses the principle of:",
+    "options": [
+      "federalism",
+      "separation of powers",
+      "judicial review",
+      "popular sovereignty"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Popular sovereignty means the authority of the government comes from the people. Federalism is the division of power between national and state governments, and separation of powers divides it among three branches."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "American Revolution",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Place these events of the American Revolution in the order in which they happened, earliest first.",
+    "options": [
+      "Colonists dump tea into Boston Harbor",
+      "Fighting breaks out at Lexington and Concord",
+      "The Declaration of Independence is adopted",
+      "The Treaty of Paris ends the war"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "The Boston Tea Party was in December 1773, Lexington and Concord in April 1775, the Declaration in July 1776, and the Treaty of Paris, in which Britain recognized American independence, in 1783."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Civil War era",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The central dispute that led to the Civil War in 1861 was over:",
+    "options": [
+      "whether slavery would expand into new western territories",
+      "whether the United States should join a war between European powers",
+      "whether women should be allowed to vote",
+      "whether to buy Alaska from Russia"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Conflict over the spread of slavery into territories gained from Mexico and the Louisiana Purchase split the nation, and Southern states seceded after Lincoln's election in 1860. Alaska was purchased in 1867, after the war."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Great Depression and New Deal",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "President Franklin D. Roosevelt's New Deal programs of the 1930s were mainly a response to:",
+    "options": [
+      "the Spanish-American War",
+      "the Great Depression",
+      "the end of Reconstruction",
+      "the energy crisis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The New Deal created jobs programs, banking reforms and Social Security to fight the mass unemployment of the Great Depression, which began with the stock market crash of 1929."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Civil rights movement",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The Civil Rights Act of 1964:",
+    "options": [
+      "gave women the right to vote in every state and federal election",
+      "ended slavery in the United States",
+      "outlawed discrimination in public places and employment",
+      "lowered the voting age to 18"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Civil Rights Act of 1964 banned discrimination based on race, color, religion, sex or national origin in public accommodations and employment. The other options describe the Nineteenth, Thirteenth and Twenty-sixth Amendments."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Economic measures",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Gross domestic product (GDP) measures:",
+    "options": [
+      "the total amount of taxes a government collects from its people in a year",
+      "the number of people in a country who have jobs",
+      "the average change in prices paid by consumers",
+      "the total value of goods and services a country produces in a year"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "GDP is the market value of all final goods and services produced within a country in a period. Employment and consumer prices are measured separately, by the unemployment rate and the consumer price index."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Opportunity cost",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A student has \\$60 and chooses to buy a textbook instead of a concert ticket that costs the same amount. The concert ticket is the student's:",
+    "options": [
+      "opportunity cost",
+      "fixed cost",
+      "marginal cost",
+      "accounting profit"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Opportunity cost is the value of the next best choice given up when a decision is made. The student gave up the concert, so that is the opportunity cost of the textbook."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Budgeting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Monthly budget\n\n| Item | Amount |\n|---|---|\n| Take-home pay | \\$2,400 |\n| Rent | \\$1,100 |\n| Food | \\$400 |\n| Transportation | \\$250 |\n| Utilities | \\$150 |",
+    "stem": "After paying the four expenses listed, how much of the monthly take-home pay is left for savings and other spending?",
+    "options": [
+      "\\$400",
+      "\\$500",
+      "\\$600",
+      "\\$1,300"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The expenses total 1,100 + 400 + 250 + 150 = \\$1,900. Take-home pay of \\$2,400 minus \\$1,900 leaves \\$500."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Reading tables",
+    "difficulty": 1,
+    "format": "single",
+    "stimulusId": "GED-SS-04",
+    "caseStep": 1,
+    "stem": "Which region gained the most people between 2010 and 2020?",
+    "options": [
+      "Northeast",
+      "Midwest",
+      "South",
+      "West"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The South grew from 114.6 million to 126.3 million, a gain of 11.7 million. The West gained 6.7 million, the Northeast 2.3 million and the Midwest 2.1 million."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Population and representation",
+    "difficulty": 3,
+    "format": "single",
+    "stimulusId": "GED-SS-04",
+    "caseStep": 2,
+    "stem": "Seats in the House of Representatives are divided among the states by population after each census. Based on the table, which result was most likely after the 2020 census?",
+    "options": [
+      "Every Northeastern state gained House seats",
+      "Some Southern states gained House seats",
+      "The Midwest lost all of its House seats",
+      "The West lost its seats in the Senate"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The South had the largest growth, so its states were most likely to gain seats when the 435 seats were reapportioned. Every state keeps at least one House seat and exactly two Senate seats no matter how its population changes."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 2,
+    "skill": "Settlement patterns",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following best explains why early American cities such as Boston, New York and Philadelphia grew where they did?",
+    "options": [
+      "They were built near large deposits of gold",
+      "They had the warmest climate on the continent",
+      "They had natural harbors for trade by ship",
+      "They were located at the center of the continent"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Colonial cities grew around sheltered harbors on the Atlantic coast, where ships could bring goods and settlers from Europe. No city on that list sits in a gold region, a warm southern climate, or the interior."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 0,
+    "skill": "Checks and balances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following is a check that the judicial branch has on the legislative branch?",
+    "options": [
+      "Vetoing a bill passed by Congress",
+      "Impeaching a member of Congress",
+      "Refusing to fund a program",
+      "Declaring a law unconstitutional"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Courts can strike down a law that conflicts with the Constitution. Vetoes belong to the President, impeachment and funding decisions belong to Congress itself."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 0,
+    "skill": "Judicial branch",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How many justices currently serve on the United States Supreme Court?",
+    "options": [
+      "7",
+      "9",
+      "11",
+      "12"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Supreme Court has had nine justices, one chief justice and eight associate justices, since 1869. The number is set by Congress, not by the Constitution."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 0,
+    "skill": "Federalism",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Under the Tenth Amendment, powers that the Constitution does not give to the federal government are reserved to:",
+    "options": [
+      "the states or the people",
+      "the President and the cabinet",
+      "the Supreme Court",
+      "federal agencies"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Tenth Amendment says powers not delegated to the United States, nor prohibited to the states, are reserved to the states or to the people. This is the basis of federalism."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 0,
+    "skill": "Elections",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the purpose of a political party's primary election?",
+    "options": [
+      "To elect the President directly through a national popular vote",
+      "To choose the party's candidate for the general election",
+      "To ratify amendments to the Constitution",
+      "To confirm justices to the Supreme Court"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In a primary, a party's voters pick which candidate will represent the party in the general election. Amendments are ratified by the states, and justices are confirmed by the Senate."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 0,
+    "skill": "Checks and balances",
+    "difficulty": 3,
+    "format": "multi",
+    "select": 2,
+    "stem": "Which TWO of the following are checks the Constitution gives one branch over another?",
+    "options": [
+      "The President can veto a bill passed by Congress",
+      "The Senate must confirm the President's nominees for federal judgeships",
+      "The President also serves as a justice of the Supreme Court",
+      "Congress can remove a Supreme Court justice by a simple majority vote",
+      "The states can overturn a ruling of a federal court"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "The veto and Senate confirmation are two of the best known checks. The President never sits on the Court, removing a justice requires impeachment by the House and a two-thirds Senate vote, and states cannot overturn federal rulings."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 0,
+    "skill": "Civil War era",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SS-05",
+    "caseStep": 1,
+    "stem": "Lincoln spoke in 1863. 'Four score and seven years ago' points to 1776 and to which event?",
+    "options": [
+      "The ratification of the Constitution",
+      "The end of the Revolutionary War",
+      "The Declaration of Independence",
+      "The Louisiana Purchase"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A score is 20 years, so four score and seven is 87 years; 1863 minus 87 is 1776, the year of the Declaration. Lincoln echoes its line that 'all men are created equal.' The Constitution was ratified in 1788 and the Louisiana Purchase was in 1803."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 0,
+    "skill": "Forms of government",
+    "difficulty": 1,
+    "format": "single",
+    "stimulusId": "GED-SS-05",
+    "caseStep": 2,
+    "stem": "The phrase 'government of the people, by the people, for the people' describes which form of government?",
+    "options": [
+      "A monarchy, in which a king or queen rules",
+      "An oligarchy, in which a few families rule",
+      "A theocracy, in which religious leaders rule",
+      "A democracy, in which the people hold power"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Government that comes from the people and serves the people is the definition of democracy. In a monarchy, oligarchy or theocracy, power rests with a ruler, a small group or religious authorities rather than the people."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 0,
+    "skill": "Inflation and the Federal Reserve",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Inflation is a general rise in prices over time. When prices climb faster than wages, each dollar buys less, so people say the dollar has lost purchasing power. The Federal Reserve, the nation's central bank, tries to keep inflation low and steady. One of its main tools is the interest rate. Raising rates makes borrowing more expensive, which tends to slow spending and ease the pressure on prices. Lowering rates does the opposite: it encourages borrowing and spending when the economy is weak and prices are not rising much.",
+    "stem": "Based on the passage, what would the Federal Reserve most likely do if inflation rose sharply?",
+    "options": [
+      "Raise interest rates to slow spending",
+      "Lower interest rates to encourage borrowing",
+      "Print more money so people can pay higher prices",
+      "Cut income taxes to increase spending"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The passage says raising rates slows spending and eases pressure on prices, which is what a central bank wants when inflation is high. Lowering rates or adding money would push prices up, and tax rates are set by Congress, not the Federal Reserve."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 0,
+    "skill": "Supply and demand",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A factory decides to build more bicycles when the price of bicycles rises. This decision illustrates the:",
+    "options": [
+      "law of demand",
+      "law of supply",
+      "law of diminishing returns",
+      "principle of scarcity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The law of supply says producers offer more of a good as its price rises. The law of demand describes buyers, who want less as the price rises."
+  },
+  {
+    "domain": "gedSocial",
+    "test": 0,
+    "skill": "Time zones",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A map shows the four time zones of the continental United States: Eastern, Central, Mountain and Pacific, each one hour earlier than the zone to its east. When it is 3:00 p.m. in New York (Eastern Time), what time is it in Los Angeles (Pacific Time)?",
+    "options": [
+      "1:00 p.m.",
+      "11:00 a.m.",
+      "12:00 p.m.",
+      "6:00 p.m."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pacific Time is three zones west of Eastern Time, so it is three hours earlier: 3 in the afternoon minus 3 hours is 12 noon. Six in the evening would be three hours later, the wrong direction."
+  }
+]

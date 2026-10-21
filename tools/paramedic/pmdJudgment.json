@@ -1,0 +1,1279 @@
+[
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Inferior STEMI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 58-year-old man has 30 minutes of crushing chest pain. HR 48, BP 86/54, lungs clear, and the 12-lead shows ST elevation in II, III and aVF. Which finding changes the plan for nitroglycerin?",
+    "options": [
+      "Inferior ST elevation with hypotension",
+      "A heart rate under 50 with clear lungs",
+      "The clear lung sounds alone",
+      "Pain that has lasted over 20 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Inferior STEMI with hypotension and clear lungs suggests right ventricular involvement, where the heart depends on preload; nitroglycerin can collapse the pressure. Obtain V4R, withhold nitrates and give a fluid bolus per protocol."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Asthma deterioration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 24-year-old with asthma has received continuous albuterol for 15 minutes. He is now drowsy, his loud wheezing has become quiet, and ETCO2 has risen from 32 to 58 mm Hg. What does this change indicate?",
+    "options": [
+      "Improvement, since the wheezing has resolved",
+      "Impending respiratory failure",
+      "A need for a higher albuterol dose",
+      "Mucus plugging that needs suctioning"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A silent chest with drowsiness and a rising ETCO2 means he is no longer moving enough air to wheeze and is retaining CO2: respiratory failure is minutes away. Prepare to assist ventilation, give IM epinephrine and magnesium per protocol, and plan for intubation."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Hemorrhage control priority",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 30-year-old motorcyclist has an open femur fracture bleeding heavily, a deformed wrist, and is confused with a BP of 88/60. What is the first intervention?",
+    "options": [
+      "Splint the femur in a traction splint",
+      "Establish two large-bore IVs",
+      "Apply a tourniquet to the thigh",
+      "Apply a cervical collar"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Exsanguinating extremity hemorrhage is controlled before anything else, and a tourniquet high on the thigh does that in seconds. IVs and splinting follow, and nothing replaces the blood a tourniquet keeps in the body."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Bronchiolitis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 6-month-old has had a runny nose for 3 days and now has RR 64, diffuse wheezing and crackles, nasal flaring, an SpO2 of 88 percent and is feeding poorly. Which intervention is most likely to help?",
+    "options": [
+      "Nebulized albuterol 2.5 mg, repeated twice",
+      "Dexamethasone 0.6 mg/kg orally",
+      "Nebulized epinephrine",
+      "Nasal suction and humidified oxygen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Wheezing with crackles after a cold in an infant is bronchiolitis, and nasal suction plus oxygen is the treatment that reliably helps. Albuterol and steroids do not improve bronchiolitis, and nebulized epinephrine is for croup."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Stroke mimic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 66-year-old with diabetes has slurred speech and left-sided weakness that began 20 minutes ago. Glucose is 41 mg/dL. After dextrose, the deficits resolve completely within minutes. What is the most appropriate plan?",
+    "options": [
+      "Downgrade the stroke alert but still transport",
+      "Release the patient to family with glucose instructions",
+      "Maintain the stroke alert to the thrombectomy center",
+      "Give aspirin 324 mg since a stroke is still possible"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Deficits that resolve fully with dextrose were caused by hypoglycemia, so the stroke alert can be downgraded, but the patient still needs transport to find out why the glucose dropped. Aspirin is never given before a stroke is confirmed by imaging."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Sepsis and capnography",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 78-year-old from a nursing home has a temperature of 38.9 C, HR 122, RR 28, BP 92/58 and new confusion. ETCO2 reads 22 mm Hg. What does the low ETCO2 most likely reflect?",
+    "options": [
+      "Hyperventilation from anxiety",
+      "Metabolic acidosis from poor perfusion",
+      "A pulmonary embolism",
+      "A calibration error in the capnography monitor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In sepsis an ETCO2 under 25 mm Hg tracks a lactate above 4 and a higher mortality, because the patient blows off CO2 to compensate for lactic acidosis. It is a marker of shock, not anxiety, and supports early fluid and a sepsis alert."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Anaphylaxis recognition",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 20-year-old at a restaurant has throat tightness, difficulty swallowing, flushing and a BP of 94/60 ten minutes after eating shrimp; she says she might be having a panic attack. What is your priority?",
+    "options": [
+      "Coach slow breathing and reassess",
+      "Give diphenhydramine 50 mg IM",
+      "Give epinephrine 0.3 mg IM now",
+      "Obtain a 12-lead ECG first"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Throat tightness with hypotension minutes after a likely allergen is anaphylaxis, and the patient's own explanation does not change that. Epinephrine IM is given immediately; antihistamines are adjuncts and do nothing for airway swelling."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Post-seizure reassessment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 35-year-old received midazolam 10 mg IM for a seizure that has now stopped. Five minutes later RR is 6, SpO2 86 percent and ETCO2 62 mm Hg. What is the next action?",
+    "options": [
+      "Give naloxone 2 mg IV",
+      "Give flumazenil 0.2 mg IV",
+      "Place in the recovery position and observe",
+      "Assist ventilations with a bag-valve mask"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Respiratory depression after a benzodiazepine is managed with assisted ventilation. Naloxone does not reverse benzodiazepines, and flumazenil can provoke another seizure, so it is avoided in a patient treated for seizures."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Neurogenic shock",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 45-year-old fell 20 feet onto his back. His skin is warm and pink below the chest, HR 52, BP 78/40, and he cannot move his legs. Which type of shock is most likely?",
+    "options": [
+      "Neurogenic",
+      "Hemorrhagic",
+      "Cardiogenic",
+      "Obstructive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hypotension with bradycardia and warm skin after a spinal injury is neurogenic shock from loss of sympathetic tone. Hemorrhagic shock produces tachycardia and cool pale skin, but internal bleeding must still be ruled out in a fall this high."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Pediatric dehydration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 3-year-old weighing 14 kg has had vomiting and diarrhea for 2 days and is lethargic, with a capillary refill of 4 seconds, sunken eyes and HR 168. After oxygen, the most appropriate fluid order is:",
+    "options": [
+      "140 mL normal saline dripped in over 1 hour",
+      "280 mL normal saline bolus, then reassess",
+      "700 mL normal saline bolus",
+      "D10W 70 mL bolus"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A child in hypovolemic shock gets a 20 mL/kg isotonic bolus (280 mL here), pushed quickly and repeated after reassessment. 700 mL is 50 mL/kg in one bolus, and dextrose is given only for a measured low glucose."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Return of circulation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "During CPR on a 60-year-old, the rhythm check shows an organized rhythm at 70, and ETCO2 jumped from 14 to 42 mm Hg over the previous minute. What should you do?",
+    "options": [
+      "Continue compressions for another 2 minutes",
+      "Give epinephrine 1 mg IV",
+      "Check for a pulse",
+      "Defibrillate at 200 J"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A sudden sustained rise in ETCO2 is the earliest sign of return of spontaneous circulation, and with an organized rhythm it is time to check a pulse. Epinephrine after ROSC can cause hypertension and dysrhythmia."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Naloxone titration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 22-year-old is found with pinpoint pupils, RR 4 and SpO2 80 percent, with empty fentanyl patches nearby. After bag-valve mask ventilation you give naloxone 0.4 mg IV. Two minutes later RR is 12, SpO2 95 percent, and he is still drowsy. What next?",
+    "options": [
+      "Give naloxone 2 mg more to fully awaken him",
+      "Intubate because he remains drowsy",
+      "Allow him to refuse transport once alert",
+      "Monitor and repeat naloxone if breathing slows"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The goal of naloxone is adequate ventilation, not full alertness; pushing more causes withdrawal, vomiting and agitation. He is transported and watched because fentanyl outlasts naloxone."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Mesenteric ischemia",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 76-year-old man with atrial fibrillation has sudden severe diffuse abdominal pain, but his abdomen is soft and only mildly tender. HR 110 irregular, BP 128/80. What should this pattern suggest?",
+    "options": [
+      "Mesenteric ischemia",
+      "Acute appendicitis",
+      "Kidney stone",
+      "Perforated peptic ulcer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pain out of proportion to a soft, mildly tender abdomen in an older patient with atrial fibrillation is mesenteric ischemia from an embolus until proven otherwise. A perforated ulcer gives a rigid, board-like abdomen."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Pediatric trauma",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 4-year-old struck by a car is crying, with abrasions on the chest, RR 44, HR 150, BP 92/60, capillary refill of 3 seconds and a distended abdomen. Which finding is most concerning?",
+    "options": [
+      "Crying that stops when the parent arrives",
+      "A distended abdomen with delayed capillary refill",
+      "Chest abrasions without respiratory distress",
+      "The blood pressure of 92/60"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Children keep their blood pressure until they have lost a large share of their volume, so a distended abdomen with delayed refill and tachycardia is compensated shock from intra-abdominal bleeding. The pressure is normal for his age and gives false reassurance."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "COPD and oxygen",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 70-year-old with COPD is drowsy, SpO2 84 percent, RR 30 with pursed lips, ETCO2 70 mm Hg. After 10 minutes on a nonrebreather, SpO2 is 96 percent but he is now barely responsive with RR 8. The best next step is:",
+    "options": [
+      "Remove the oxygen and let him rebreathe",
+      "Lower to a nasal cannula at 2 L and wait",
+      "Assist ventilations with a bag-valve mask",
+      "Give naloxone in case of opioid use"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hypercapnic failure with a falling respiratory rate needs ventilation support now, with CPAP or BiPAP if he recovers enough to protect his airway and intubation if not. Removing or lowering oxygen in a hypoxic patient does not fix the ventilation problem."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Inhalation injury",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 40-year-old rescued from a house fire has singed nasal hairs, a hoarse voice, carbonaceous sputum, an SpO2 of 99 percent and no distress. Transport to the burn center will take 45 minutes. What is the most appropriate airway plan?",
+    "options": [
+      "Nasal cannula oxygen and reassess at the hospital",
+      "CPAP to splint the upper airway",
+      "Nebulized epinephrine for the swelling",
+      "Early intubation before the airway swells shut"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hoarseness with carbonaceous sputum means the upper airway is burned, and swelling over the next hour can make a later intubation impossible. With a long transport, a controlled early intubation is safer than a crash airway."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Exertional syncope",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 68-year-old fainted while walking up stairs, had no warning, and woke within a minute. He has a harsh systolic murmur. HR 80, BP 118/74. Which should the paramedic suspect?",
+    "options": [
+      "Aortic stenosis with exertional syncope",
+      "Vasovagal syncope from standing too long",
+      "Orthostatic hypotension from dehydration",
+      "Hypoglycemia from a missed meal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Syncope during exertion without warning in an older adult with a systolic murmur points to aortic stenosis or a dysrhythmia, both potentially lethal. Vasovagal episodes come with warning and a trigger, and orthostatic syncope happens on standing up."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Unstable SVT",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 55-year-old has palpitations with a regular narrow-complex rhythm at 180, BP 72/40, confusion and chest pain. Vagal maneuvers have failed. What is the next step?",
+    "options": [
+      "Adenosine 6 mg rapid IV push",
+      "Synchronized cardioversion",
+      "Amiodarone 150 mg over 10 minutes",
+      "Diltiazem 0.25 mg/kg IV"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Hypotension, altered mental status and ischemic chest pain make this tachycardia unstable, and the treatment is immediate synchronized cardioversion (sedation if time allows). Adenosine is for stable SVT, and diltiazem would lower the pressure further."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Tension pneumothorax",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A stabbing victim with a wound to the left chest has jugular venous distension, absent left breath sounds, tracheal deviation, a BP of 70/40 and worsening dyspnea. What is the first intervention?",
+    "options": [
+      "Rapid transport before any procedure",
+      "Occlusive dressing and a fluid bolus",
+      "Needle decompression of the left chest",
+      "Intubation and positive pressure ventilation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "These are the signs of tension pneumothorax, which is decompressed at once with a needle or finger thoracostomy. Positive pressure ventilation before decompression pushes more air into the pleural space and can cause arrest."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Anticoagulated head injury",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An 84-year-old on warfarin tripped and struck her head. She is alert and oriented, has a small scalp hematoma and no complaints, and her daughter wants her to refuse transport. The best response is:",
+    "options": [
+      "Agree, since she has no neurologic deficits",
+      "Have her sign a refusal and advise ice",
+      "Transport only if she vomits in the next hour",
+      "Strongly advise transport for a CT scan"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An anticoagulated older adult can bleed slowly into the skull with no early signs, so a head strike on warfarin needs a CT scan even when she seems fine. Waiting for vomiting means waiting for a bleed that has already expanded."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Shockable arrest sequence",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A 50-year-old collapsed, bystander CPR is in progress, and the monitor shows ventricular fibrillation. Place the steps in order.",
+    "options": [
+      "Amiodarone 300 mg after the third shock",
+      "Shock at the manufacturer's recommended energy",
+      "Rhythm check and second shock if VF persists",
+      "Epinephrine 1 mg IV or IO",
+      "Resume compressions for 2 minutes"
+    ],
+    "correct": [
+      1,
+      4,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Shockable rhythms are shocked first, with compressions resumed at once. Epinephrine is given after the second shock and amiodarone (or lidocaine) after the third, each during CPR, so drugs never delay a shock."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Entrapped trauma",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A driver pinned in a car has a traumatic leg amputation bleeding heavily, is unresponsive with gurgling respirations, and will take 10 minutes to free. Place the actions in order.",
+    "options": [
+      "Assist ventilation with a bag-valve mask",
+      "Rapid extrication to a scoop or long board",
+      "Suction and open the airway with a jaw thrust",
+      "Apply a cervical collar",
+      "Apply a tourniquet high on the thigh"
+    ],
+    "correct": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ],
+    "explanation": "Massive hemorrhage is stopped first, then the airway is cleared and ventilation supported, all inside the car since extrication will take time. The collar goes on before movement and the patient is extricated as soon as the car is opened."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Cardiac arrest rhythms",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "For each rhythm found at a pulse check during a cardiac arrest, specify the next action.",
+    "rows": [
+      "Coarse ventricular fibrillation",
+      "Asystole confirmed in two leads",
+      "Pulseless electrical activity at 40",
+      "Pulseless ventricular tachycardia",
+      "Organized rhythm at 80 with a palpable pulse"
+    ],
+    "columns": [
+      "Defibrillate",
+      "CPR and epinephrine",
+      "Post-arrest care"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0,
+      2
+    ],
+    "explanation": "VF and pulseless VT are shocked; asystole and PEA get CPR with epinephrine every 3 to 5 minutes while reversible causes are hunted. An organized rhythm with a pulse is ROSC, so the focus shifts to oxygenation, blood pressure and a 12-lead."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Post-seizure findings",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "A 30-year-old with a known seizure disorder had a seizure 10 minutes ago. For each finding, specify whether it is expected after a seizure or needs another explanation.",
+    "rows": [
+      "Confusion that clears over 15 minutes",
+      "Glucose of 38 mg/dL",
+      "Temperature of 39.8 C with a stiff neck",
+      "A laceration on the side of the tongue",
+      "Left pupil 6 mm and fixed",
+      "Missed levetiracetam for 2 days"
+    ],
+    "columns": [
+      "Expected after a seizure",
+      "Needs another explanation"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "explanation": "A postictal state that clears, a tongue bite and a missed dose all fit an uncomplicated seizure. Hypoglycemia may have caused the seizure, fever with a stiff neck suggests meningitis, and a fixed dilated pupil points to an intracranial lesion."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "STEMI care",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A 62-year-old has crushing chest pain and the 12-lead shows 3 mm ST elevation in V2 through V4. Which actions are part of the STEMI plan? Select all that apply.",
+    "options": [
+      "Aspirin 324 mg chewed",
+      "Transmit the ECG and notify the PCI center",
+      "Nitroglycerin 0.4 mg SL if the BP allows",
+      "A 500 mL fluid bolus",
+      "Serial 12-leads during transport",
+      "Delay transport to start a second IV"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "explanation": "Aspirin, early PCI center notification with the transmitted ECG, nitroglycerin with an adequate pressure and repeat 12-leads are the field STEMI bundle. Fluid is given only for hypotension, and nothing delays the trip to the cath lab."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Severe head injury",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A 19-year-old was ejected from a car. GCS 7, pupils equal at 4 mm, HR 100, BP 130/80, SpO2 91 percent. Which actions are appropriate? Select all that apply.",
+    "options": [
+      "Maintain SpO2 at 94 percent or higher",
+      "Ventilate to an ETCO2 of 35 to 45 mm Hg",
+      "Hyperventilate to an ETCO2 of 25 mm Hg",
+      "Keep the systolic pressure at or above 110",
+      "Withhold oxygen unless SpO2 falls below 85 percent"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "A single episode of hypoxia or hypotension doubles mortality in severe head injury, so oxygen is kept at 94 percent or more and systolic at or above 110 in this age group. Normal ventilation is the target; hyperventilation is reserved for signs of herniation, and never to an ETCO2 of 25."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 1,
+    "skill": "Pediatric asthma",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "An 8-year-old with asthma is in severe distress: speaking in single words, SpO2 89 percent, RR 40, HR 150. Which treatments are appropriate per local protocol? Select all that apply.",
+    "options": [
+      "Albuterol nebulized, repeated or continuous",
+      "Ipratropium 0.5 mg with the first albuterol",
+      "Epinephrine 0.01 mg/kg IM if deteriorating",
+      "Furosemide 1 mg/kg IV",
+      "Routine intubation for an SpO2 under 90 percent"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Severe pediatric asthma gets continuous albuterol with ipratropium, systemic steroids, and IM epinephrine or magnesium if it is not responding. Furosemide treats pulmonary edema, not bronchospasm, and intubating an asthmatic is a last resort because positive pressure worsens air trapping."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Pulmonary embolism",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 45-year-old woman has sudden pleuritic chest pain and dyspnea 5 days after knee surgery. HR 118, RR 28, SpO2 89 percent, lungs clear, and the 12-lead shows sinus tachycardia. The most likely cause is:",
+    "options": [
+      "Pulmonary embolism",
+      "Pneumonia",
+      "Acute coronary syndrome",
+      "Panic attack"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sudden pleuritic pain with hypoxia, tachycardia and clear lungs after recent surgery is a pulmonary embolism until proven otherwise. Pneumonia produces fever and crackles over days, and a panic attack does not cause hypoxia."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Pacemaker failure",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 70-year-old woman with a pacemaker is dizzy. The monitor shows pacer spikes at 70 per minute with no QRS after them, and a native rhythm at 38. This represents:",
+    "options": [
+      "Oversensing",
+      "Failure to capture",
+      "Failure to sense",
+      "Normal pacemaker function"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Spikes that are delivered but not followed by a QRS are failure to capture, and the patient is managed as a symptomatic bradycardia with transcutaneous pacing. Failure to sense shows spikes landing on top of native beats."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Hypoglycemia refusal",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 55-year-old diabetic was treated for hypoglycemia with D10W, is now alert with a glucose of 110 and wants to refuse transport. Which detail makes a refusal unsafe?",
+    "options": [
+      "He uses short-acting insulin and has eaten",
+      "A responsible adult will stay with him",
+      "The episode was caused by a sulfonylurea",
+      "His glucose was rechecked 15 minutes later"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sulfonylureas such as glipizide and glyburide stimulate insulin release for many hours, so hypoglycemia recurs after the dextrose wears off and the patient needs hospital observation. A short-acting insulin episode with a meal and a watcher is the situation refusals are designed for."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Subarachnoid hemorrhage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 54-year-old has the worst headache of her life, which peaked within seconds, with vomiting and neck stiffness. BP 190/110, GCS 14. What is the most important management point?",
+    "options": [
+      "Give nitroglycerin for the hypertension",
+      "Give ketorolac 30 mg IV for the headache pain",
+      "Encourage sleep, since migraine is most likely",
+      "Suspect subarachnoid hemorrhage and transport fast"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A thunderclap headache with vomiting and meningismus is a subarachnoid hemorrhage until a CT says otherwise. Nitroglycerin raises intracranial pressure and ketorolac impairs platelets, so neither is given."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Pregnant trauma patient",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 35-year-old at 32 weeks of pregnancy was in a frontal crash wearing a lap belt. She is alert, BP 108/70, HR 112, with abdominal pain and some vaginal spotting. Which action is most important?",
+    "options": [
+      "Tilt her to the left and treat as major trauma",
+      "Delay transport to listen for fetal heart tones",
+      "Give a 2 L fluid bolus for the tachycardia",
+      "Advise observation at home for the cramping"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Abdominal pain with bleeding after a lap-belt crash suggests placental abruption, and the fetus is best treated by resuscitating the mother: left lateral tilt to relieve vena cava compression, oxygen, access and rapid transport. Fetal monitoring happens in the hospital."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Fentanyl patch",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 40-year-old man with chronic back pain is found unresponsive with RR 6, pinpoint pupils and a fentanyl patch on his arm. After ventilation and naloxone, he wakes up. What should you do with the patch?",
+    "options": [
+      "Leave it, since the naloxone is working",
+      "Remove it and wipe the skin",
+      "Cut it in half to reduce the dose",
+      "Cover it with a dressing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The patch keeps delivering fentanyl through the skin, and a depot in the skin continues absorbing after removal, so it is taken off, the skin wiped, and the patient watched for recurrent sedation. Cutting a patch can release the drug faster."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Evolving STEMI",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 60-year-old with chest pain received aspirin and nitroglycerin, and the pain fell from 8 to 4. A repeat 12-lead now shows new ST elevation in V1 through V3 that was not present 10 minutes ago. What does the change mean?",
+    "options": [
+      "A reperfusion artifact caused by the nitroglycerin",
+      "Pain relief that confirms stable angina",
+      "An evolving anterior STEMI",
+      "A benign early repolarization pattern"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "New ST elevation on a serial ECG is an evolving anterior infarction, and partial pain relief from nitroglycerin does not rule out infarction. Activate the PCI center now; early repolarization does not appear between two ECGs minutes apart."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Pediatric anaphylaxis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 7-year-old with a peanut allergy ate a cookie 15 minutes ago. He broke out in hives and vomited, and a parent gave one epinephrine auto-injector 5 minutes ago. The hives are fading, he is breathing comfortably and no longer vomiting, BP 98/64. What is the best next step?",
+    "options": [
+      "Hold further treatment because he looks stable",
+      "Give diphenhydramine only and allow refusal",
+      "Repeat the auto-injector immediately",
+      "Transport and monitor for a biphasic reaction"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "He has had anaphylaxis (skin plus gastrointestinal involvement) and is responding to epinephrine, so he is transported with monitoring and IV access because symptoms can return hours later. A repeat dose is given only if symptoms persist or recur 5 to 15 minutes after the first."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Hyperkalemic arrest",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 50-year-old dialysis patient collapsed and the monitor shows a wide-complex slow rhythm at 30 with no pulse. CPR is under way. Beyond standard ACLS, which drug is most likely to address the cause?",
+    "options": [
+      "Calcium chloride 1 g IV",
+      "Atropine 1 mg IV",
+      "Adenosine 12 mg IV",
+      "Magnesium sulfate 2 g IV"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A wide slow pulseless rhythm in a dialysis patient is hyperkalemia until proven otherwise, and calcium (with sodium bicarbonate per protocol) treats it. Magnesium is for torsades, and atropine and adenosine have no role in a pulseless rhythm."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Meningococcal disease",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 22-year-old college student has fever, headache and a stiff neck, and you notice petechiae on his legs. The hospital is 50 minutes away. Besides droplet precautions, what should you prioritize?",
+    "options": [
+      "Cold compresses to bring the fever down",
+      "Early hospital notification for antibiotics",
+      "Acetaminophen 1 g orally for the fever",
+      "Dexamethasone 10 mg IV"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Meningococcal sepsis kills within hours and the treatment is antibiotics, so the receiving hospital is warned early so the first dose is ready on arrival (some systems give it in the field per protocol). Fever control does not change the outcome, and steroids are a hospital decision made alongside the antibiotics."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "First-trimester bleeding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 33-year-old woman who is 8 weeks pregnant has vaginal bleeding and cramping and has passed tissue. BP 110/70, HR 96. Which action is correct?",
+    "options": [
+      "Perform a vaginal examination to assess the cervix",
+      "Pack the vagina with gauze to stop the bleeding",
+      "Save the tissue and transport, monitoring for shock",
+      "Give oxytocin 10 units IM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A spontaneous abortion is managed with emotional support, any passed tissue saved for the hospital, and monitoring for hemorrhage. Vaginal examinations and packing are not done in the field, and oxytocin is for postpartum atony."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Cardiac asthma",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 68-year-old man with COPD and heart failure has dyspnea, bilateral wheezing, ankle edema, jugular venous distension and a BP of 170/100. SpO2 88 percent. Which treatment best fits the most likely cause?",
+    "options": [
+      "Albuterol 2.5 mg, repeated",
+      "A 500 mL fluid bolus",
+      "Ipratropium 0.5 mg",
+      "CPAP and nitroglycerin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Wheezing with edema, JVD and hypertension is pulmonary edema (cardiac asthma), not a COPD flare, and is treated with CPAP and nitroglycerin to drop preload. Albuterol alone treats the wrong disease, and fluid would make it worse."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Lightning triage",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 30-year-old struck by lightning is in cardiac arrest. Two other victims nearby are conscious with burns. How should you triage?",
+    "options": [
+      "Begin resuscitation on the arrest victim first",
+      "Tag the arrest victim black and treat the others",
+      "Treat the burns first since they are survivable",
+      "Wait for a second unit before approaching"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lightning uses reverse triage: the arrest victim often has a stunned heart and apnea that respond well to ventilation and CPR, while the conscious victims will survive a wait. The scene is safe to enter once the storm has moved."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Migraine or stroke",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 42-year-old woman with a migraine history reports a headache like her usual migraines, but this one came with new numbness in her right hand and difficulty finding words that persist after 40 minutes. What is the appropriate plan?",
+    "options": [
+      "Treat as migraine with ondansetron and a dark room",
+      "Activate a stroke alert and note last known well",
+      "Give sumatriptan per protocol",
+      "Encourage her to take her usual medication"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "New focal deficits, even in a migraine sufferer, are a stroke until imaging proves otherwise, and triptans are contraindicated with focal signs. The headache history is the trap."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Wide-complex tachycardia",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 55-year-old has a regular wide-complex tachycardia at 170, BP 118/76, is alert, with mild chest discomfort. Which drug is contraindicated?",
+    "options": [
+      "Amiodarone 150 mg IV",
+      "Procainamide 20 mg/min IV",
+      "Diltiazem 0.25 mg/kg IV",
+      "Lidocaine 1 mg/kg IV"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A wide-complex tachycardia is treated as ventricular tachycardia, and calcium channel blockers can cause hemodynamic collapse in VT or in pre-excited atrial fibrillation. Amiodarone, procainamide and lidocaine are all acceptable per protocol."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Iron ingestion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 2-year-old swallowed an unknown number of her grandmother's iron tablets an hour ago. She has vomited twice and is now playful. Her parent asks if she can stay home. The best response is:",
+    "options": [
+      "Yes, since the vomiting removed the tablets",
+      "Yes, if she drinks milk to coat the stomach",
+      "Give activated charcoal and recheck in 2 hours",
+      "No, iron poisoning can worsen hours later"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Iron ingestion has a deceptive quiet phase after early vomiting, followed by shock, acidosis and liver failure, so the child needs hospital evaluation and a serum iron level. Activated charcoal does not bind iron."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Rhabdomyolysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 62-year-old man found down for 12 hours after a stroke has a firm swollen thigh and dark brown urine. HR 110, BP 100/60, and the ECG shows peaked T waves. Besides fluid, which treatment addresses the ECG finding?",
+    "options": [
+      "Calcium chloride 1 g IV",
+      "Furosemide 40 mg IV",
+      "Amiodarone 150 mg IV",
+      "Potassium chloride 10 mEq IV"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Crushed muscle releases potassium, and peaked T waves mean the hyperkalemia is already affecting the heart, so calcium is given to stabilize the membrane. Potassium would be lethal, and furosemide needs the kidneys that myoglobin is damaging."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Imminent delivery",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 28-year-old woman at 38 weeks says her water broke an hour ago and she feels the urge to push; contractions are 90 seconds apart. The hospital is 30 minutes away. What should you do?",
+    "options": [
+      "Transport immediately with lights and sirens",
+      "Prepare for delivery on scene",
+      "Have her cross her legs to delay delivery",
+      "Give terbutaline to slow the contractions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The urge to push with contractions this close means birth is minutes away, and a controlled delivery on scene is safer than one in a moving ambulance. Delaying delivery by holding the legs together endangers the baby."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Symptomatic bradycardia",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 48-year-old man has acute nausea, pallor and sweating. HR 44, BP 82/50, and the 12-lead shows a 2:1 AV block. He is alert. Which is the most appropriate first step?",
+    "options": [
+      "Adenosine 6 mg rapid IV push",
+      "Nitroglycerin 0.4 mg SL for a suspected MI",
+      "Atropine 1 mg IV while preparing to pace",
+      "A 1 L normal saline bolus"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A symptomatic bradycardia gets atropine 1 mg while transcutaneous pacing is set up, since atropine often fails in a high-grade block. Nitroglycerin would drop the pressure further, and adenosine slows the heart."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Bowel obstruction",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 70-year-old woman has had 3 days of vomiting with no bowel movement, a distended tympanic abdomen with high-pitched bowel sounds, and an old surgical scar. HR 118, BP 96/60. What is the priority?",
+    "options": [
+      "Ondansetron 4 mg and sips of oral fluid",
+      "Encourage walking to help pass gas",
+      "An enema per protocol",
+      "IV fluids and transport for obstruction"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Distension, high-pitched bowel sounds and prior surgery point to a small bowel obstruction from adhesions, and she is dehydrated and tachycardic from third spacing. Nothing goes by mouth, and fluid is replaced on the way to surgical evaluation."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Rapid sequence intubation",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A 40-year-old with a severe head injury needs rapid sequence intubation. Place the steps in order.",
+    "options": [
+      "Secure the tube and begin post-intubation sedation",
+      "Give the induction agent and then the paralytic",
+      "Preoxygenate with high-flow oxygen for 3 minutes",
+      "Confirm placement with waveform capnography",
+      "Place the tube with video or direct laryngoscopy"
+    ],
+    "correct": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ],
+    "explanation": "Preoxygenation buys apnea time, the induction agent is pushed before the paralytic so the patient is never awake and paralyzed, and waveform capnography confirms the tube before it is secured. Sedation after paralysis is essential."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Stable SVT",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A 65-year-old has a regular narrow-complex tachycardia at 190 with palpitations and a BP of 128/80. Place the treatment steps in order.",
+    "options": [
+      "Vagal maneuver such as a modified Valsalva",
+      "Adenosine 12 mg if there is no conversion",
+      "Synchronized cardioversion if the patient becomes unstable",
+      "Diltiazem or a beta blocker per protocol",
+      "Adenosine 6 mg rapid IV push with a flush"
+    ],
+    "correct": [
+      0,
+      4,
+      1,
+      3,
+      2
+    ],
+    "explanation": "Stable SVT is treated from least to most invasive: vagal maneuvers, adenosine 6 mg then 12 mg, a calcium channel blocker or beta blocker, with cardioversion reserved for instability at any point."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Shock staging",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "For each patient, specify whether the findings indicate compensated or decompensated shock.",
+    "rows": [
+      "Adult, HR 118, BP 124/84, cool skin, anxious",
+      "Adult, HR 134, BP 78/40, confused",
+      "5-year-old, HR 160, BP 94/60, capillary refill 4 seconds",
+      "5-year-old, HR 170, BP 62/40, lethargic"
+    ],
+    "columns": [
+      "Compensated",
+      "Decompensated"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Shock is compensated while vasoconstriction and tachycardia hold the blood pressure, and decompensated once pressure or mental status falls. For a 5-year-old the minimum systolic is 80, so 62/40 with lethargy is decompensated."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Nitroglycerin decisions",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each finding in a patient with chest pain, specify whether nitroglycerin may be given or must be withheld.",
+    "rows": [
+      "Systolic BP 136",
+      "Sildenafil taken 12 hours ago",
+      "Inferior STEMI with suspected right ventricular involvement",
+      "Heart rate 92",
+      "Systolic BP 86"
+    ],
+    "columns": [
+      "May give",
+      "Withhold"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Nitroglycerin is withheld for a systolic under 90 to 100 per protocol, a phosphodiesterase inhibitor within 24 hours (48 for tadalafil) and right ventricular infarction, where the heart depends on preload. A normal pressure and heart rate are not barriers."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Septic shock",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A 58-year-old diabetic with a foot ulcer has a temperature of 39 C, HR 124, BP 86/50 and confusion. Which actions are correct? Select all that apply.",
+    "options": [
+      "Begin a 30 mL/kg crystalloid bolus",
+      "Give a sepsis alert to the receiving hospital",
+      "Start a norepinephrine infusion before any fluid",
+      "Measure ETCO2 as a perfusion marker",
+      "Withhold fluids because of his diabetes"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Suspected septic shock gets early fluid, a sepsis alert so antibiotics are ready, and ETCO2 as a field proxy for lactate. Vasopressors are added after fluid, not instead of it, and diabetes is no reason to withhold resuscitation."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Multisystem trauma",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A 72-year-old is unresponsive after falling down stairs. GCS 6, snoring respirations, SpO2 90 percent on a nonrebreather, BP 90/50, HR 120, and a flail segment on the right chest. Which actions are appropriate? Select all that apply.",
+    "options": [
+      "Jaw thrust, oral airway and bag-valve mask ventilation",
+      "Spinal motion restriction",
+      "Needle decompression if tension develops",
+      "Permissive hypotension to a systolic of 60",
+      "Tie a sandbag over the flail segment"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Snoring at a GCS of 6 is an obstructed airway that needs a jaw thrust, adjunct and assisted ventilation, with spinal precautions and readiness to decompress a tension pneumothorax under a flail segment. Permissive hypotension does not apply with a head injury, and sandbags restrict breathing."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 2,
+    "skill": "Beta blocker overdose",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A 16-year-old weighing 50 kg took an unknown quantity of her mother's propranolol an hour ago. HR 40, BP 70/40, glucose 48 mg/dL, drowsy. Which treatments are appropriate per protocol? Select all that apply.",
+    "options": [
+      "Dextrose for the hypoglycemia",
+      "Glucagon 3 to 5 mg IV",
+      "Transcutaneous pacing if drugs fail",
+      "Adenosine 6 mg IV",
+      "Flumazenil 0.2 mg IV"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Beta blocker toxicity causes bradycardia, hypotension and hypoglycemia; treatment is dextrose, high-dose glucagon, atropine and fluid, with pacing or vasopressors if those fail. Adenosine slows the heart further and flumazenil reverses benzodiazepines, not beta blockers."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "Orthostatic vital signs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 29-year-old has had vomiting and diarrhea for 2 days and feels lightheaded on standing. Supine HR 96, BP 118/76; standing HR 128, BP 96/60. This change indicates:",
+    "options": [
+      "Volume depletion needing IV fluid",
+      "A vasovagal response to standing",
+      "Normal variation with position",
+      "Cardiogenic shock"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A rise of 30 or more in heart rate or a fall of 20 or more in systolic pressure on standing is a positive orthostatic test and, with this history, means significant fluid loss. A vasovagal response would slow the heart."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "Atypical chest pain",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 59-year-old reports indigestion and belching for 2 hours with sweating, and antacids have not helped. What is the most appropriate action?",
+    "options": [
+      "Give ondansetron and transport nonemergent",
+      "Obtain a 12-lead ECG within 10 minutes",
+      "Give oral famotidine",
+      "Assess for abdominal tenderness"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Indigestion with diaphoresis that does not respond to antacids is a myocardial infarction until the ECG says otherwise. The abdominal exam can wait the 10 minutes it takes to find a STEMI."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "Vasopressors in sepsis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 44-year-old with septic shock has received 30 mL/kg of crystalloid; BP is still 76/40 with a MAP of 52. Per protocol, the next step is:",
+    "options": [
+      "Another 2 L of crystalloid",
+      "Dopamine 2 mcg/kg/min",
+      "Norepinephrine titrated to a MAP of 65",
+      "Epinephrine 1 mg IV push"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Norepinephrine is the first-line vasopressor for septic shock that persists after the initial bolus, titrated to a MAP of 65. Low-dose dopamine does not raise blood pressure, and 1 mg of epinephrine is the cardiac arrest dose."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "Delirium versus dementia",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An 80-year-old nursing home resident is newly confused and agitated this afternoon; staff say she was normal yesterday. Temperature 37.9 C, glucose 142. Which conclusion is correct?",
+    "options": [
+      "This is progression of her dementia",
+      "This is sundowning and needs no evaluation",
+      "A psychiatric evaluation is the priority",
+      "Acute delirium requires a medical workup"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Confusion that appears over hours is delirium, which has a medical cause (infection, drugs, hypoxia, stroke) until proven otherwise. Dementia declines over months, and sundowning is a pattern in a known dementia, not a new change."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "Local allergic reaction",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 35-year-old was stung by bees 20 minutes ago and has only hives and itching, with normal vital signs and a clear chest. Which plan is appropriate?",
+    "options": [
+      "Diphenhydramine and watch for systemic signs",
+      "Epinephrine 0.3 mg IM immediately for the hives",
+      "Methylprednisolone only, then release",
+      "Release without any treatment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hives alone with normal breathing and blood pressure is a mild reaction treated with an antihistamine and observation; epinephrine is given the moment a second system (airway, breathing, circulation, gut) is involved. Steroids act too slowly to be the sole treatment."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "APGAR score",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A newborn at 1 minute has a heart rate of 110, a weak cry, good flexion of the limbs, a grimace when suctioned, and a pink body with blue hands and feet. What is the APGAR score?",
+    "options": [
+      "5",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Heart rate over 100 scores 2, a weak cry 1, good flexion 2, a grimace 1 and acrocyanosis 1, for a total of 7. A 9 would require a strong cry and a fully pink body."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "Upper GI bleed",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 50-year-old with a history of heavy drinking vomits a large amount of bright red blood. HR 124, BP 88/56, and his abdomen is distended with spider angiomas on the chest. Which is the priority?",
+    "options": [
+      "Ondansetron 4 mg IV",
+      "Nasogastric tube placement",
+      "Two large-bore IVs and rapid transport",
+      "Oral antacids"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hematemesis with shock in a patient with signs of cirrhosis is likely variceal bleeding, which needs blood, endoscopy and medication in the hospital; the field priority is access, careful fluid per protocol and speed. Nothing goes by mouth."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "Carbon monoxide exposure",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 23-year-old is found drowsy with a headache in a running car inside a closed garage. SpO2 reads 97 percent. The most important intervention is:",
+    "options": [
+      "Naloxone 2 mg intranasal",
+      "Dextrose 25 g IV",
+      "Observation in fresh air for 30 minutes",
+      "High-flow oxygen by nonrebreather"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Carbon monoxide poisoning is treated with 100 percent oxygen, which shortens the half-life of carboxyhemoglobin from about 5 hours to about 1, and the pulse oximeter reading is falsely normal. Fresh air alone clears the gas far too slowly."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "Acute pulmonary edema",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A 70-year-old woman has sudden dyspnea with crackles to the mid-chest, BP 180/110, SpO2 84 percent, and is alert. Place the steps in order.",
+    "options": [
+      "Reassess work of breathing and SpO2",
+      "Sit upright and apply high-flow oxygen",
+      "Apply CPAP at 5 to 10 cm H2O",
+      "Give nitroglycerin 0.4 mg SL under the mask and repeat per protocol"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Hypertensive pulmonary edema is treated with positioning and oxygen, then CPAP to drive fluid out of the alveoli, then nitroglycerin to reduce preload once the mask is on (lifting it briefly for each dose), with reassessment after each step. Diuretics are no longer first line in the field."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "STEMI criteria",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each 12-lead finding in a 60-year-old man with chest pain, specify whether it meets STEMI criteria.",
+    "rows": [
+      "2 mm ST elevation in V2 and V3",
+      "1 mm ST elevation in II, III and aVF",
+      "ST depression in V5 and V6 only",
+      "0.5 mm ST elevation in a single lead"
+    ],
+    "columns": [
+      "Meets STEMI criteria",
+      "Does not meet criteria"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "STEMI requires ST elevation in two contiguous leads: at least 1 mm in most leads, and at least 2 mm in V2 and V3 for a man aged 40 or over (2.5 mm under 40, 1.5 mm for women). Elevation in one lead or depression alone does not qualify, though depression in V1 through V3 can mean a posterior infarction."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "Eclampsia management",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A 30-year-old at 36 weeks of pregnancy is having a generalized seizure. Which actions are correct? Select all that apply.",
+    "options": [
+      "Magnesium sulfate 4 to 6 g IV",
+      "Position on the left side",
+      "Midazolam if seizures continue after magnesium",
+      "Nitroglycerin for the blood pressure",
+      "Fundal massage"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Eclampsia is treated with magnesium, left lateral positioning to protect the airway and uterine blood flow, and a benzodiazepine only if the seizure continues. Blood pressure is lowered with labetalol or hydralazine per protocol, and fundal massage is for postpartum bleeding."
+  },
+  {
+    "domain": "pmdJudgment",
+    "test": 0,
+    "skill": "Pediatric epinephrine math",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A 30 kg child in anaphylaxis needs epinephrine 0.01 mg/kg IM from a 1 mg/mL vial. How many mL do you draw up? Record your answer as a decimal.",
+    "numeric": {
+      "answers": [
+        "0.3",
+        ".3",
+        "0.30"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "30 kg x 0.01 mg/kg = 0.3 mg, and at 1 mg/mL that is 0.3 mL. Using the 0.1 mg/mL cardiac arrest concentration by mistake would mean 3 mL for the same dose."
+  }
+]

@@ -7,6 +7,8 @@
  *   HTL   200s  (tests 201-204, sets 201-211; 204 retired)
  *   CST   300s  (tests 301-304, sets 301-305)
  *   CRCST 400s  (tests 401-404, sets 401-406)
+ *   COSMO 6000s (tests 6001-6004, sets 6001-6004)
+ *   VTNE  6100s (tests 6101-6104, sets 6101-6104)
  *
  * Adding an exam = one entry here, a question bank in data/, a bank module
  * lib/banks/<examId>.ts imported by its test, training and stats pages, a
@@ -25,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -76,7 +78,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield" | "sparkles" | "paw";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -2043,6 +2045,141 @@ const pnc: ExamConfig = {
     ],
     sourceLine: "Based on the general (national) portion of the property and casualty producer exam outlines. State laws and the state portion are not covered.",
     analyticsKey: "pnc",
+  },
+};
+
+const cosmetology: ExamConfig = {
+  id: "cosmetology",
+  stateCode: "COSMO",
+  idBase: 6000,
+  slug: "/cosmetology",
+  landingPath: "/cosmetology-practice-test",
+  name: "Cosmetology Practice Test",
+  shortName: "Cosmetology",
+  examLabel: "Cosmetology state board",
+  fullName: "Cosmetology state board written (theory) exam",
+  questionIdPrefix: "COSMO-",
+  icon: "sparkles",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // NIC National Cosmetology Theory Examination content outline, effective and
+  // revised July 1, 2022 (110 items, 100 scored, 90 minutes): Scientific
+  // Concepts 35%, Hair Care and Services 45%, Skin Care and Services 10%,
+  // Nail Care and Services 10%, split into the nine topics schools teach.
+  // NIC reports a scaled score; most boards pass at 75 (varies by state).
+  blueprint: {
+    cosInfection: 9,
+    cosAnatomy: 5,
+    cosChemistry: 4,
+    cosConsult: 4,
+    cosCutStyle: 8,
+    cosTexture: 5,
+    cosColor: 5,
+    cosSkin: 5,
+    cosNails: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 6001, name: "Sciences", categories: ["cosInfection", "cosAnatomy", "cosChemistry"], size: 72, weightLabel: "36% of the tests", partNames: ["Anatomy, Chemistry & Electricity", "Infection Control & Safety"] },
+    { setNumber: 2, id: 6002, name: "Consultation, Cutting & Styling", categories: ["cosConsult", "cosCutStyle"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 3, id: 6003, name: "Chemical Services", categories: ["cosTexture", "cosColor"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 4, id: 6004, name: "Skin & Nails", categories: ["cosSkin", "cosNails"], size: 40, weightLabel: "20% of the tests" },
+  ],
+  categoryLabels: {
+    cosInfection: "Infection Control & Safety",
+    cosAnatomy: "Anatomy & Physiology",
+    cosChemistry: "Chemistry & Electricity",
+    cosConsult: "Client Consultation & Hair Analysis",
+    cosCutStyle: "Shampooing, Haircutting & Styling",
+    cosTexture: "Chemical Texture Services",
+    cosColor: "Haircoloring",
+    cosSkin: "Skin Care Services",
+    cosNails: "Nail Care Services",
+  },
+  copy: {
+    guestPrompt: "to save your cosmetology progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the state board theory exam: the sciences (infection control, anatomy, chemistry), consultation with cutting and styling, chemical services (texture and color), and skin and nails. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the NIC theory exam's proportions",
+    heroSubs: [
+      "Nine topics, four tests. Infection control and hair services carry the most questions.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Go pass your state board.",
+    ],
+    sourceLine: "Based on the NIC National Cosmetology Theory Examination content outline (2022). Most states use the NIC exam; a few use their own. Hours, fees and the practical exam vary by state.",
+    analyticsKey: "cosmetology",
+  },
+};
+
+const vtne: ExamConfig = {
+  id: "vtne",
+  stateCode: "VTNE",
+  idBase: 6100,
+  slug: "/vtne",
+  landingPath: "/vtne-practice-test",
+  name: "VTNE Practice Test",
+  shortName: "VTNE",
+  examLabel: "VTNE",
+  fullName: "Veterinary Technician National Examination (VTNE)",
+  questionIdPrefix: "VTNE-",
+  icon: "paw",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AAVSB VTNE Content Outline approved by the AAVSB Board of Directors in
+  // March 2023 (reproduced in the current VTNE Candidate Information Handbook,
+  // aavsb.org): 150 scored items of 170 in 3 hours. Animal Care and Nursing 20%,
+  // Pharmacy and Pharmacology 13%, Surgical Nursing 13%, Anesthesia 13%,
+  // Laboratory Procedures 9%, Diagnostic Imaging 6%, Dentistry, Emergency
+  // Medicine and Critical Care, Pain Management and Analgesia, and
+  // Communication and Veterinary Professional Support Services 5 to 7% each.
+  // The real exam passes on a scaled 425 of 800; 70% is a practice target.
+  blueprint: {
+    vtCare: 10,
+    vtPharm: 7,
+    vtSurgical: 7,
+    vtAnesthesia: 7,
+    vtLab: 5,
+    vtImaging: 3,
+    vtDentistry: 3,
+    vtEmergency: 3,
+    vtPain: 2,
+    vtComm: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 6101, name: "Animal Care & Communication", categories: ["vtCare", "vtComm"], size: 52, weightLabel: "26% of the tests" },
+    { setNumber: 2, id: 6102, name: "Pharmacology & Lab Procedures", categories: ["vtPharm", "vtLab"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 3, id: 6103, name: "Anesthesia, Pain & Emergency", categories: ["vtAnesthesia", "vtPain", "vtEmergency"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 4, id: 6104, name: "Surgery, Dentistry & Imaging", categories: ["vtSurgical", "vtDentistry", "vtImaging"], size: 52, weightLabel: "26% of the tests" },
+  ],
+  categoryLabels: {
+    vtCare: "Animal Care & Nursing",
+    vtPharm: "Pharmacy & Pharmacology",
+    vtSurgical: "Surgical Nursing",
+    vtAnesthesia: "Anesthesia",
+    vtLab: "Laboratory Procedures",
+    vtImaging: "Diagnostic Imaging",
+    vtDentistry: "Dentistry",
+    vtEmergency: "Emergency Medicine & Critical Care",
+    vtPain: "Pain Management & Analgesia",
+    vtComm: "Communication & Professional Support",
+  },
+  copy: {
+    guestPrompt: "to save your VTNE progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Four sets covering the ten VTNE domains: animal care and communication, pharmacology and lab procedures, anesthesia with pain management and emergency care, and surgery with dentistry and imaging. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the VTNE's proportions",
+    heroSubs: [
+      "Ten domains, four tests. Animal care and nursing is the biggest single domain.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your VTNE window.",
+    ],
+    sourceLine: "Based on the AAVSB VTNE content outline approved March 2023. The real exam passes on a scaled score of 425; 70% here is a practice target.",
+    analyticsKey: "vtne",
   },
 };
 
@@ -4153,7 +4290,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

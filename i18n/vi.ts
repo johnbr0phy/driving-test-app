@@ -516,6 +516,16 @@ export const vi: TranslationKeys = {
     lgRescue: "Water Rescue & Spinal Injury",
     lgCare: "First Aid, CPR & AED",
     lgFacility: "Facility Safety & Legal",
+    // Cosmetology categories
+    cosInfection: "Infection Control & Safety",
+    cosAnatomy: "Anatomy & Physiology",
+    cosChemistry: "Chemistry & Electricity",
+    cosConsult: "Client Consultation & Hair Analysis",
+    cosCutStyle: "Shampooing, Haircutting & Styling",
+    cosTexture: "Chemical Texture Services",
+    cosColor: "Haircoloring",
+    cosSkin: "Skin Care Services",
+    cosNails: "Nail Care Services",
     // Property and casualty categories
     pcGeneral: "Insurance Basics & Underwriting",
     pcPolicy: "Policy Provisions & Conditions",
@@ -524,6 +534,17 @@ export const vi: TranslationKeys = {
     pcCommercial: "Commercial Property & BOP",
     pcLiability: "Commercial Liability & Workers Comp",
     pcOther: "Flood, Surety & Other Coverages",
+    // VTNE categories
+    vtCare: "Animal Care & Nursing",
+    vtPharm: "Pharmacy & Pharmacology",
+    vtSurgical: "Surgical Nursing",
+    vtAnesthesia: "Anesthesia",
+    vtLab: "Laboratory Procedures",
+    vtImaging: "Diagnostic Imaging",
+    vtDentistry: "Dentistry",
+    vtEmergency: "Emergency Medicine & Critical Care",
+    vtPain: "Pain Management & Analgesia",
+    vtComm: "Communication & Professional Support",
   } as Record<string, string>,
 
   // Training set names

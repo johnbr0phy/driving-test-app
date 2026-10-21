@@ -1,0 +1,448 @@
+[
+  {
+    "domain": "pnRisk",
+    "test": 1,
+    "skill": "Postoperative complications",
+    "difficulty": 2,
+    "format": "highlight",
+    "passage": "0800 Nurses' note, postoperative day 1 after an open bowel resection: {{Temperature 101.6 F}}. {{Incision edges together with slight pink redness along the line}}. {{Right calf tender and swollen compared with the left}}. {{Bowel sounds hypoactive in all four quadrants}}. {{Pain 3 of 10 after the morning dose of oxycodone}}. {{Urine output 25 mL/hr for the last 2 hours}}. {{Crackles heard in both lung bases}}.",
+    "stem": "The PN collects data on the client. Highlight the findings that should be reported to the RN.",
+    "correct": [
+      0,
+      2,
+      5,
+      6
+    ],
+    "explanation": "A fever of 101.6 F, a tender swollen calf (possible deep vein thrombosis), urine output below 30 mL/hr and crackles in the bases (atelectasis or fluid) are all complications that need the RN and provider. Hypoactive bowel sounds, slight incisional redness and well-controlled pain are expected the day after bowel surgery."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 1,
+    "skill": "Hypokalemia",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client's morning potassium level is 2.9 mEq/L. Which finding should the PN watch for and report?",
+    "options": [
+      "Muscle weakness and an irregular pulse",
+      "Tall, peaked T waves on the monitor",
+      "Twitching around the mouth",
+      "Watery diarrhea and cramping"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Low potassium weakens skeletal muscle and makes the heart irritable, so weakness, leg cramps and an irregular pulse are the signs to report. Peaked T waves go with high potassium, and twitching around the mouth suggests low calcium."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 1,
+    "skill": "Preoperative care",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client scheduled for surgery at 0800 tells the PN at 0700, \"I had a piece of toast an hour ago.\" Which action should the PN take?",
+    "options": [
+      "Document the intake and send the client to surgery",
+      "Notify the RN right away",
+      "Give an antacid and continue the preoperative checklist",
+      "Reschedule the surgery for the afternoon"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Food within the fasting window raises the risk of aspiration during anesthesia, so the RN and surgical team must know before the client leaves the unit; they decide whether to delay. The PN reports the data and does not reschedule surgery or cover the problem with an antacid."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 1,
+    "skill": "Preventing atelectasis",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "A client is 1 day after abdominal surgery. Which measures should the PN use to prevent atelectasis and pneumonia? Select all that apply.",
+    "options": [
+      "Encourage 10 breaths an hour on the incentive spirometer while awake",
+      "Keep the client flat in bed to rest the incision",
+      "Help the client splint the incision with a pillow while coughing",
+      "Help the client walk in the hall as prescribed",
+      "Hold the pain medication so the client stays alert"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Deep breathing with the spirometer, coughing with the incision supported and early walking re-expand the lungs. Lying flat and uncontrolled pain both keep breaths shallow, which is what causes atelectasis."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 1,
+    "skill": "Colonoscopy preparation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A clinic client is scheduled for a colonoscopy. Which statement shows the client understands the reinforced preparation instructions?",
+    "options": [
+      "\"I can eat a light breakfast the morning of the test.\"",
+      "\"I'll stop the bowel prep once I have diarrhea.\"",
+      "\"I'll have only clear liquids the day before.\"",
+      "\"Red gelatin is a good clear liquid to choose.\""
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A clear liquid diet the day before and the full bowel preparation are what let the provider see the colon wall. Diarrhea means the prep is working and it is finished as directed, nothing is eaten the morning of the test, and red or purple liquids are avoided because they look like blood."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 1,
+    "skill": "Laboratory monitoring",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client takes warfarin after a deep vein thrombosis. Which laboratory value should the PN check before giving the dose?",
+    "options": [
+      "aPTT",
+      "Platelet count",
+      "Hemoglobin",
+      "INR"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Warfarin is monitored with the INR (goal usually 2.0 to 3.0). The aPTT monitors heparin, and platelets and hemoglobin do not show how much the blood is thinned."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 1,
+    "skill": "Wound infection",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "The PN changes a dressing on a surgical incision that is 4 days old. Which findings should the PN report to the RN as possible infection? Select all that apply.",
+    "options": [
+      "Thick yellow drainage from the incision",
+      "Warmth and redness spreading away from the incision",
+      "Pink, slightly raised edges along the incision",
+      "Temperature 101.2 F",
+      "Scant pink drainage on the old dressing"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Purulent drainage, spreading redness and warmth, and fever are the signs of wound infection. Pink raised edges and a small amount of serosanguineous drainage are part of normal healing."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 1,
+    "skill": "After cardiac catheterization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A client returned 1 hour ago from a cardiac catheterization through the right femoral artery. Which finding should the PN report to the RN immediately?",
+    "options": [
+      "The right foot is cool and pale",
+      "A quarter-sized bruise at the puncture site",
+      "Pedal pulses equal on both feet",
+      "The client reports the urge to void"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A cool, pale foot on the side of the puncture means blood flow to the leg is blocked by a clot or spasm and is an emergency. A small bruise, equal pulses and a full bladder are expected after the procedure and the fluids given with it."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 1,
+    "skill": "Transfusion reaction",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The RN started a blood transfusion 30 minutes ago and, per facility policy and state scope, asked the PN to help monitor the client. The client now reports chills and low back pain. Which action should the PN take first?",
+    "options": [
+      "Slow the rate and continue to observe",
+      "Stop the transfusion and call the RN",
+      "Give the prescribed acetaminophen and continue",
+      "Document the complaint and recheck in 15 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Chills and low back pain during a transfusion are classic signs of a hemolytic reaction, so the blood is stopped at once, the line is kept open with normal saline per policy, and the RN takes over. Slowing the rate or treating the symptoms lets more incompatible blood run in. The RN stays with the client for the first 15 minutes, when reactions are most likely; the PN helps monitor afterward only where policy and state scope allow."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 1,
+    "skill": "Cast complications",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A client with a new forearm cast reports pain that is getting worse despite the prescribed analgesic, with numbness and tingling in the fingers. Which problem should the PN suspect and report?",
+    "options": [
+      "Normal discomfort as the cast dries",
+      "Fat embolism",
+      "Compartment syndrome",
+      "Osteomyelitis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pain out of proportion that medication does not relieve, with numbness and tingling, is compartment syndrome from pressure inside the cast and needs the RN and provider at once. Fat embolism causes breathing changes and confusion, and osteomyelitis develops over days with fever."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 2,
+    "skill": "Recognizing hypoglycemia cues",
+    "difficulty": 1,
+    "format": "highlight",
+    "passage": "1130 Nurses' note: {{Skin cool and sweaty}}. {{Hands shaking}}. {{Asks what time lunch is three times in 5 minutes}}. {{BP 138/82 mm Hg}}. {{Heart rate 104/min}}. {{Lungs clear in all fields}}. {{Says, \"I feel funny and weak.\"}}",
+    "stimulusId": "NCLEXPN-CS2",
+    "caseStep": 1,
+    "stem": "The PN compares these findings with the resident's baseline. Highlight the findings that require follow-up.",
+    "correct": [
+      0,
+      1,
+      2,
+      4,
+      6
+    ],
+    "explanation": "Sweating, tremor, a fast pulse, weakness and new repetitive questioning in a resident who is usually oriented and conversational are the early signs of low blood sugar after a sulfonylurea with little breakfast. The blood pressure is near her usual range and clear lungs are reassuring."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 2,
+    "skill": "Lithium level",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client who takes lithium has a morning level of 0.8 mEq/L and no new symptoms. Which action should the PN take?",
+    "options": [
+      "Hold the dose and notify the RN",
+      "Encourage the client to limit fluids",
+      "Give a double dose to raise the level",
+      "Give the dose as scheduled"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A lithium level of 0.8 mEq/L is within the usual maintenance range of about 0.6 to 1.2 mEq/L, so the dose is given. Fluids are kept steady, not limited, because dehydration raises the level, and only the provider changes a dose."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 2,
+    "skill": "Chest tube monitoring",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "The PN helps care for a client with a chest tube connected to a water-seal drainage system. Which findings should the PN report to the RN? Select all that apply.",
+    "options": [
+      "Continuous bubbling in the water-seal chamber",
+      "The water level in the water seal rises and falls with breathing",
+      "New crackling felt under the skin around the insertion site",
+      "300 mL of bright red drainage in the last hour",
+      "The drainage system is positioned below the chest"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Constant bubbling in the water seal means an air leak, crepitus around the site means air is escaping into the tissue, and 300 mL of bright red blood in an hour is active bleeding. Tidaling with breathing and a system kept below the chest are what is expected."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 2,
+    "skill": "Hemoglobin A1c",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A clinic client with type 2 diabetes has a hemoglobin A1c of 9.2%. The PN understands that this result shows which of the following?",
+    "options": [
+      "Blood glucose has averaged high over the last 2 to 3 months",
+      "Blood glucose was high only at the time the blood was drawn",
+      "Blood glucose control has been at the usual goal for most adults",
+      "The client had a recent episode of hypoglycemia that needs follow-up"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The A1c reflects average glucose over the life of the red blood cell, about 2 to 3 months, and the usual goal for most adults is below 7%. A single fasting glucose shows one moment, which an A1c does not."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 2,
+    "skill": "Hyponatremia",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client's sodium level is 128 mEq/L. Which findings should the PN watch for?",
+    "options": [
+      "Thirst and dry, sticky mucous membranes",
+      "Confusion and headache",
+      "Tall, peaked T waves",
+      "Twitching of the face when the cheek is tapped"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Low sodium pulls water into brain cells, so headache, confusion, nausea and, if severe, seizures are the signs to watch. Thirst and dry membranes go with high sodium, peaked T waves with high potassium, and facial twitching with low calcium."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 2,
+    "skill": "After a lumbar puncture",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client has just had a lumbar puncture. Which instruction should the PN reinforce?",
+    "options": [
+      "Sit up right away to prevent a headache from forming",
+      "Limit fluids for the next 24 hours to reduce pressure",
+      "Lie flat for the time the provider prescribed",
+      "Walk in the hall as soon as possible to prevent clots"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lying flat for the prescribed period and taking extra fluids lower the chance of a spinal headache from leaking cerebrospinal fluid. Sitting up or walking right away and limiting fluids all make a headache more likely."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 2,
+    "skill": "Paracentesis preparation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN prepares a client with ascites for a paracentesis. Which action should the PN take just before the procedure?",
+    "options": [
+      "Give the client a full meal",
+      "Position the client flat on the left side",
+      "Encourage the client to drink several glasses of water",
+      "Have the client empty the bladder"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An empty bladder keeps the needle from puncturing it when the abdomen is entered. The client sits upright or with the head raised so fluid pools low in the abdomen, and a full stomach or bladder is a hazard."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 2,
+    "skill": "After cataract surgery",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "A client is going home after cataract surgery on the right eye. Which instructions should the PN reinforce? Select all that apply.",
+    "options": [
+      "Avoid bending over at the waist",
+      "Report sudden eye pain or a sudden loss of vision",
+      "Sleep on the right side",
+      "Wear the eye shield at night",
+      "Carry heavy groceries as usual"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Bending, lifting and straining raise pressure in the eye, the shield protects it during sleep, and sudden pain or vision loss can mean bleeding, infection or high pressure. The client sleeps on the unoperated side."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 2,
+    "skill": "Neurologic checks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client admitted for observation after a fall with a head injury is checked every 2 hours. Which change should the PN report to the RN immediately?",
+    "options": [
+      "The client is becoming harder to wake",
+      "The client reports a mild headache",
+      "The client vomits once after eating",
+      "The client sleeps between checks but wakes easily"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A falling level of consciousness is the earliest and most important sign of rising pressure inside the skull and is reported at once. A mild headache, a single vomit and sleeping that is easily interrupted are watched but are not the same emergency."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 2,
+    "skill": "Hyperkalemia",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with chronic kidney disease has a potassium level of 6.1 mEq/L. Which action should the PN take first?",
+    "options": [
+      "Encourage a glass of orange juice",
+      "Report the result to the RN immediately",
+      "Give the scheduled potassium chloride tablet",
+      "Document the value and recheck tomorrow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A potassium of 6.1 mEq/L can cause fatal dysrhythmias, so the RN is told at once so the provider can order treatment and cardiac monitoring. Orange juice and the potassium tablet would raise it further."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 0,
+    "skill": "Deep vein thrombosis",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "The PN collects data on a client 3 days after knee replacement. Which findings suggest a deep vein thrombosis? Select all that apply.",
+    "options": [
+      "Swelling of one calf",
+      "Warmth over the calf",
+      "Tenderness in the calf",
+      "A pale, cool foot with no pulse",
+      "Mild swelling of both ankles"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "A clot in a deep leg vein causes one-sided swelling, warmth and tenderness. A pale, cool, pulseless foot is an arterial blockage, and swelling of both ankles usually comes from fluid or dependent position."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 0,
+    "skill": "Urine specific gravity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client's urine specific gravity is 1.035. Which problem should the PN suspect?",
+    "options": [
+      "Fluid volume excess",
+      "Diabetes insipidus",
+      "Fluid volume deficit",
+      "A urinary tract infection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A specific gravity above about 1.030 means the urine is concentrated because the body is holding on to water, which points to dehydration. Fluid excess and diabetes insipidus produce dilute urine with a low specific gravity."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 0,
+    "skill": "Cardiac markers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client's troponin level is elevated. The PN understands that this result points to which problem?",
+    "options": [
+      "A bacterial infection",
+      "Kidney damage",
+      "Liver injury",
+      "Heart muscle damage"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Troponin is a protein released from injured heart muscle and is the main blood test for a heart attack. Infection raises the white count, kidney damage raises creatinine, and liver injury raises the liver enzymes."
+  },
+  {
+    "domain": "pnRisk",
+    "test": 0,
+    "skill": "MRI preparation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client is scheduled for an MRI of the spine. Which question is most important for the PN to ask before the test?",
+    "options": [
+      "\"Do you have a pacemaker or any metal in your body?\"",
+      "\"Are you allergic to shellfish or iodine contrast dye?\"",
+      "\"When did you last have anything to eat or drink?\"",
+      "\"Do you have a latex allergy or any skin sensitivity?\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The MRI magnet can move or heat metal and disable a pacemaker, so implants, clips, fragments and devices must be identified before the client enters the room. Fasting and contrast allergy questions matter for other tests, not a plain MRI."
+  }
+]

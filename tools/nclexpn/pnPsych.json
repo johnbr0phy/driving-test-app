@@ -1,0 +1,508 @@
+[
+  {
+    "domain": "pnPsych",
+    "test": 1,
+    "skill": "Therapeutic communication",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client who has just learned of a cancer diagnosis says to the PN, \"Why did this happen to me?\" Which response is therapeutic?",
+    "options": [
+      "\"This must be very hard to take in.\"",
+      "\"Everything happens for a reason.\"",
+      "\"The doctors here are the best.\"",
+      "\"Try not to think about it right now.\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Reflecting the client's feelings invites the client to keep talking. Cliches, false reassurance and telling the client not to think about it all shut the conversation down."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 1,
+    "skill": "Grief",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A resident whose spouse died 1 month ago cries during care and says, \"I keep expecting him to call.\" How should the PN interpret this?",
+    "options": [
+      "A sign of complicated grief",
+      "An expected grief response",
+      "A symptom of major depression",
+      "The start of dementia"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crying, yearning and momentarily expecting the person to still be there are normal in the first months after a loss. Grief is considered complicated when intense symptoms persist for a year or more or stop the person from functioning."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 1,
+    "skill": "Dementia care",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A resident with dementia becomes agitated every evening and insists on \"going home to make dinner.\" Which approach should the PN use?",
+    "options": [
+      "Remind the resident that this is her home now",
+      "Explain that her house was sold years ago",
+      "Offer a simple task such as folding towels",
+      "Ask the resident why she wants to leave"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Redirecting to a familiar, purposeful activity calms a resident with dementia without arguing about facts she cannot retain. Reality orientation and explanations about the sold house increase distress, and asking why requires reasoning the resident no longer has."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 1,
+    "skill": "Suspected abuse",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At a clinic, the PN notices bruises in different stages of healing on a 6-year-old's back. The parent says the child \"falls a lot.\" What should the PN do?",
+    "options": [
+      "Ask the parent to explain each bruise",
+      "Accept the explanation and document it",
+      "Confront the parent about abuse",
+      "Report suspected abuse per state law"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Nurses are mandated reporters, so suspected child abuse is reported to the RN and provider and to the child protective agency according to state law; proof is not required. Confronting the parent can put the child at greater risk, and accepting an explanation that does not fit the injuries fails the child."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 1,
+    "skill": "Anxiety",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client scheduled for surgery in an hour is pacing, has trembling hands and says, \"I can't stop thinking about it.\" Which action should the PN take first?",
+    "options": [
+      "Stay with the client and speak calmly",
+      "Ask the client to describe the surgery",
+      "Give the preoperative sedative early",
+      "Leave the client alone to calm down"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A calm presence lowers anxiety and lets the PN find out what the client is worried about. Asking for details of the surgery can increase fear, medications are given as prescribed, and leaving an anxious client alone increases distress."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 1,
+    "skill": "Coping mechanisms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with a new colostomy refuses to look at the stoma and says, \"There's nothing wrong with me. The surgery was a mistake.\" The PN recognizes this as which coping mechanism?",
+    "options": [
+      "Projection",
+      "Denial",
+      "Regression",
+      "Rationalization"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Refusing to accept that the illness and surgery were real is denial, a common early response to a change in body image. Projection blames others for one's own feelings, regression is a return to earlier behavior, and rationalization invents acceptable reasons."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 1,
+    "skill": "Cultural awareness",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hospitalized client from a culture different from the PN's does not make eye contact during teaching. How should the PN interpret this?",
+    "options": [
+      "A lack of interest in the teaching",
+      "Confirmation that the client is depressed",
+      "A possible sign of respect",
+      "A sign that the client does not understand"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In many cultures avoiding direct eye contact with a caregiver is a sign of respect, so the PN continues the teaching and checks understanding by asking the client to repeat it. Reading the behavior as disinterest, depression or confusion assumes the PN's own cultural norms."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 1,
+    "skill": "Alcohol withdrawal",
+    "difficulty": 3,
+    "format": "bowtie",
+    "passage": "Medical unit, day 2, 0800. A 54-year-old client admitted 36 hours ago for cellulitis of the leg is sweating, tremulous and anxious and says, \"I feel like bugs are crawling on me.\" BP 162/98 mm Hg, HR 118/min, temperature 100.2 F, lungs clear. The client reports drinking \"six or seven beers a night\" at home and had the last drink the evening before admission.",
+    "stem": "Complete the diagram by choosing 2 actions the PN should take, the condition the client is most likely experiencing, and 2 parameters the PN should monitor.",
+    "groups": [
+      {
+        "label": "Actions to take",
+        "pick": 2,
+        "options": [
+          "Notify the RN immediately",
+          "Implement seizure precautions",
+          "Give the client black coffee",
+          "Turn off the lights and close the door",
+          "Apply wrist restraints"
+        ]
+      },
+      {
+        "label": "Condition most likely experiencing",
+        "pick": 1,
+        "options": [
+          "Alcohol withdrawal",
+          "Sepsis from the cellulitis",
+          "Panic attack",
+          "Hypoglycemia"
+        ]
+      },
+      {
+        "label": "Parameters to monitor",
+        "pick": 2,
+        "options": [
+          "Orientation and hallucinations",
+          "Blood pressure and heart rate",
+          "Urine output",
+          "Serum sodium"
+        ]
+      }
+    ],
+    "correct": [
+      0,
+      1,
+      5,
+      9,
+      10
+    ],
+    "explanation": "Tremor, sweating, tachycardia, hypertension and tactile hallucinations 36 hours after the last drink in a heavy drinker are alcohol withdrawal, which can progress to seizures and delirium tremens, so the PN reports to the RN at once and sets up seizure precautions. Sepsis is less likely with a low-grade fever and clear lungs and would not cause tremor and crawling sensations; a dark, closed room and restraints worsen agitation and hallucinations."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 1,
+    "skill": "Suicide risk",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client with a history of depression tells the PN, \"I've been giving away my things, and I feel calm now.\" Which actions should the PN take? Select all that apply.",
+    "options": [
+      "Ask the client directly about thoughts of suicide",
+      "Notify the RN immediately",
+      "Stay with the client",
+      "Promise to keep the conversation private",
+      "Remove items that could be used for self-harm per policy",
+      "Tell the client that things will look better tomorrow"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "explanation": "Giving away possessions and sudden calm can mean a decision to die, so the PN asks directly, stays with the client, secures the environment and gets the RN. Promising secrecy is unsafe and cannot be kept, and false reassurance dismisses what the client said."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 1,
+    "skill": "Fear of falling",
+    "difficulty": 2,
+    "format": "multi",
+    "passage": "Two weeks later. The CT scan at the hospital showed no bleeding and the resident returned the next day. Zolpidem was stopped and the resident joined an afternoon exercise group. The AP reports the resident \"used the call light every night this week\" and walked to the bathroom with the walker. The resident says, \"I'm scared of falling in the dining room, so I eat in my room.\"",
+    "stimulusId": "NCLEXPN-CS1",
+    "caseStep": 6,
+    "stem": "The PN evaluates the resident's progress. Which findings show that the plan of care is working? Select all that apply.",
+    "options": [
+      "Uses the call light before getting up at night",
+      "Walks to the bathroom with the walker and standby assistance",
+      "Eats meals alone in the room",
+      "Has had no further falls",
+      "Attends the exercise group",
+      "Avoids the dining room out of fear"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "explanation": "Calling for help, walking safely with the walker, no new falls and joining the exercise group are the goals of the fall plan being met. Eating alone because of fear of falling is social withdrawal that the PN reports to the RN so the plan can address the fear."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 2,
+    "skill": "Delusions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with schizophrenia tells the PN, \"The TV is sending me messages to leave.\" Which response is best?",
+    "options": [
+      "\"The TV cannot send anyone any messages at all.\"",
+      "\"What do you think the messages mean?\"",
+      "\"Let's turn the TV off so it stops.\"",
+      "\"I don't get messages from the TV, but that sounds frightening.\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The PN presents reality without arguing and acknowledges the feeling behind the delusion. Flatly contradicting the client provokes defensiveness, exploring the content reinforces the delusion, and turning off the TV implies the messages are real."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 2,
+    "skill": "Eating disorders",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 17-year-old with anorexia nervosa is admitted to a medical unit. Which action by the PN is appropriate at mealtimes?",
+    "options": [
+      "Sit with the client during the meal",
+      "Let the client eat alone to reduce stress",
+      "Discuss calorie counts while the client eats",
+      "Allow bathroom use right after the meal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Staying with the client during and for a period after meals supports eating and prevents hiding food or purging. Eating alone and unsupervised bathroom trips allow the behaviors to continue, and talking about calories raises anxiety."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 2,
+    "skill": "End-of-life communication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client receiving hospice care says to the PN, \"I'm ready to go, but my family keeps telling me to fight.\" Which response is therapeutic?",
+    "options": [
+      "\"Your family just wants more time with you.\"",
+      "\"Tell me more about feeling ready.\"",
+      "\"You should keep fighting for your family.\"",
+      "\"Would you like me to call the chaplain now?\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An open invitation lets the client talk about acceptance and the strain with the family. Speaking for the family, urging the client to fight or handing the conversation to someone else all stop the client from being heard."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 2,
+    "skill": "De-escalation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client on a medical unit is shouting, clenching his fists and pacing near the door. What should the PN do first?",
+    "options": [
+      "Block the doorway so the client stays in the room",
+      "Tell the client to sit down right now",
+      "Stay out of reach and speak calmly",
+      "Touch the client's arm to reassure him"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Keeping a safe distance, a calm voice and an open path to the door protects the PN and gives the client room to settle while help is called. Blocking the exit, commands and touch all feel threatening and can trigger an assault."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 2,
+    "skill": "Spiritual care",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client asks the PN to pray with him before surgery. The PN does not share the client's faith. Which response is appropriate?",
+    "options": [
+      "Explain that the PN cannot pray with clients",
+      "Suggest the client wait for the chaplain",
+      "Pretend to share the client's beliefs",
+      "Stay with the client while he prays"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Being present while the client prays meets the spiritual need without the PN having to share the belief, and a chaplain can be offered in addition. Refusing or deferring leaves the client without support before surgery, and pretending is dishonest."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 2,
+    "skill": "Sudden change in behavior",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A resident with dementia who is usually calm suddenly becomes confused, picks at the sheets and does not recognize the AP. What should the PN do?",
+    "options": [
+      "Report the sudden change to the RN",
+      "Reorient the resident and recheck in 2 hours",
+      "Document the behavior as sundowning",
+      "Ask the family to visit more often"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A sudden change in mental status in a resident with dementia is usually delirium from an infection, a medication or pain, which needs the RN's assessment and the provider's evaluation. Labeling it sundowning or waiting 2 hours can delay treatment of a serious cause."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 2,
+    "skill": "Recognizing suicide risk",
+    "difficulty": 2,
+    "format": "highlight",
+    "passage": "1400 PN note: A 44-year-old client admitted 2 days ago after a back injury. {{Says, \"My family would be better off without me.\"}} {{Rates pain 4 of 10 after an oral analgesic}}. {{Has eaten only a few bites since admission and says, \"Why bother?\"}}. {{Asks whether the pain pills would be dangerous in large amounts}}. {{Sleeps with the television on}}. {{Lost a job 2 months ago}}. {{Spouse visits every evening}}. {{Declines to walk in the hall and says, \"What's the point?\"}}",
+    "stem": "Highlight the findings that indicate the client may be at risk for suicide and should be reported to the RN.",
+    "correct": [
+      0,
+      2,
+      3,
+      5,
+      7
+    ],
+    "explanation": "Feeling like a burden, asking about a lethal dose, hopelessness about walking and eating, and a recent job loss are warning signs of suicide risk that the PN reports to the RN right away. Controlled pain, a sleeping habit and a supportive spouse who visits are not risk factors."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 2,
+    "skill": "Post-traumatic stress disorder",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN is caring for a client with post-traumatic stress disorder after a car crash. Which approaches are appropriate? Select all that apply.",
+    "options": [
+      "Tell the client before touching him",
+      "Keep the environment calm and predictable",
+      "Insist that the client describe the crash in detail",
+      "Approach from the front and speak clearly",
+      "Wake the client by shaking his shoulder",
+      "Ask what helps when he feels anxious"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "explanation": "Warning before touch, a calm routine, approaching where the client can see and asking about coping strategies reduce the startle and hyperarousal of PTSD. Forcing a retelling of the trauma and sudden physical contact can trigger flashbacks."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 2,
+    "skill": "Alzheimer disease",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "The PN is reinforcing teaching with the family of a resident who has moderate Alzheimer disease. Which points should the PN include? Select all that apply.",
+    "options": [
+      "Use short, simple sentences",
+      "Correct the resident each time a memory is wrong",
+      "Keep a consistent daily routine",
+      "Offer two choices rather than open questions",
+      "Argue gently to bring the resident back to reality",
+      "Stay calm when the resident repeats questions"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "explanation": "Simple language, routine, limited choices and patience match what a person with moderate dementia can process. Correcting and arguing about facts the resident cannot retain cause frustration and agitation."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 2,
+    "skill": "Substance use stigma",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client with opioid use disorder is admitted for surgery and says to the PN, \"The nurses probably think I'm just drug seeking.\" Which responses are therapeutic? Select all that apply.",
+    "options": [
+      "\"Your pain will be treated like anyone else's.\"",
+      "\"Tell me how your pain feels right now.\"",
+      "\"You'll have to manage with less medication.\"",
+      "\"We will check your pain regularly.\"",
+      "\"Most people in your situation do exaggerate.\"",
+      "\"I'll pass your concern along to the RN.\""
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "explanation": "Reassuring the client that pain will be assessed and treated, asking about the pain now and passing the concern to the RN respond to the real worry about being judged. Warning about less medication and agreeing that clients exaggerate confirm the stigma and undertreat pain."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 0,
+    "skill": "Recognizing depression cues",
+    "difficulty": 2,
+    "format": "highlight",
+    "passage": "1005 PN note: Client arrives alone, {{speaks slowly and avoids eye contact}}. {{Says, \"I don't see the point in checking my sugar anymore.\"}} {{Reports sleeping about 4 hours a night}}. {{Took lisinopril this morning}}. {{Drinks 2 cups of coffee a day}}. {{Says, \"Some days I wish I just wouldn't wake up.\"}} {{Walks 10 minutes most days}}. {{Denies chest pain}}.",
+    "stimulusId": "NCLEXPN-CS3",
+    "caseStep": 1,
+    "stem": "The PN collects data at the start of the visit. Highlight the findings that require follow-up.",
+    "correct": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "explanation": "Slowed speech with no eye contact, hopelessness about self-care, little sleep and a wish not to wake up are signs of depression and possible suicide risk that the PN reports to the RN. Taking lisinopril, moderate coffee, daily walks and no chest pain are expected or reassuring."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 0,
+    "skill": "Depression hypotheses",
+    "difficulty": 2,
+    "format": "cloze",
+    "passage": "1020: The PN reports the findings to the RN. The RN completes a full depression screen (PHQ-9 score 18) and asks about suicidal thoughts; the client denies a plan or intent.",
+    "stimulusId": "NCLEXPN-CS3",
+    "caseStep": 3,
+    "stem": "Complete the sentence. The client is most likely experiencing [[1]], and the finding that needs the most immediate follow-up is [[2]].",
+    "blanks": [
+      [
+        "major depression after the spouse's death",
+        "normal grief that will resolve on its own",
+        "hypoglycemia from metformin",
+        "early dementia"
+      ],
+      [
+        "the wish not to wake up",
+        "the A1C of 9.4%",
+        "the 7 kg weight loss",
+        "the BP of 148/88 mm Hg"
+      ]
+    ],
+    "correct": [
+      0,
+      0
+    ],
+    "explanation": "Five months of hopelessness, early waking, weight loss, withdrawal and a PHQ-9 of 18 are major depression, not grief that is resolving on its own. A passive wish to die comes before the diabetes numbers because safety is checked first, even when the client denies a plan."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 0,
+    "skill": "Safety planning",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "1045: The provider prescribes sertraline 50 mg PO daily, refers the client to a grief support group and schedules a 2-week follow-up. The RN asks the PN to reinforce the safety teaching before the client leaves.",
+    "stimulusId": "NCLEXPN-CS3",
+    "caseStep": 5,
+    "stem": "Which statement should the PN include?",
+    "options": [
+      "\"Try to stay busy so you don't think about it.\"",
+      "\"Call 988 if you feel you might hurt yourself.\"",
+      "\"The new medication will fix how you feel.\"",
+      "\"Come back if the sadness gets much worse.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A client with a passive death wish leaves with a concrete crisis plan: the 988 Suicide and Crisis Lifeline, the clinic number and someone to call. Telling the client to stay busy, promising the medication will fix everything or waiting for things to get worse leave no plan for a crisis."
+  },
+  {
+    "domain": "pnPsych",
+    "test": 0,
+    "skill": "Mania",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client in a manic phase of bipolar disorder is talking rapidly, has not slept in 2 days and is not eating. Which action by the PN is most helpful?",
+    "options": [
+      "Encourage the client to join the group activity",
+      "Ask the client to sit down for a full meal",
+      "Offer finger foods to eat on the move",
+      "Explain that the behavior disturbs the other clients"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A client in mania cannot sit still long enough for a meal, so high-calorie finger foods and fluids offered while moving keep nutrition up. Group activities add stimulation, and confronting the behavior increases agitation."
+  }
+]

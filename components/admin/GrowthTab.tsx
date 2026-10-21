@@ -8,7 +8,7 @@ import {
   AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, LabelList,
 } from "recharts";
-import { TabError, TabHeader, TabLoading, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
+import { CARD, ROW, STICKY_COL, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { BasicsProgress } from "@/components/admin/BasicsProgress";
 
 // ─── Palette (validated: dataviz reference palette, light mode) ─────────────
@@ -228,7 +228,7 @@ function Sparkline({ points, accent }: { points: number[]; accent: string }) {
   const path = xy.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
   const [lx, ly] = xy[xy.length - 1];
   return (
-    <svg width={w} height={h} className="shrink-0" aria-hidden="true">
+    <svg width={w} height={h} className="shrink-0 hidden sm:block" aria-hidden="true">
       <polyline points={path} fill="none" stroke={COLORS.sparkline} strokeWidth="2"
         strokeLinecap="round" strokeLinejoin="round" />
       <circle cx={lx} cy={ly} r="4" fill={accent} stroke="#ffffff" strokeWidth="2" />
@@ -264,10 +264,10 @@ function StatTile({ label, value, sub, spark, accent, delta }: {
   spark?: number[]; accent: string; delta?: React.ReactNode;
 }) {
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 flex flex-col gap-1.5">
+    <div className={`${CARD} flex flex-col gap-1.5`}>
       <p className="text-[13px] font-medium text-gray-500 dark:text-gray-400">{label}</p>
       <div className="flex items-end justify-between gap-3">
-        <p className="text-[32px] leading-none font-semibold text-gray-900 dark:text-gray-50 tracking-tight">{value}</p>
+        <p className="text-2xl sm:text-[32px] leading-none font-semibold text-gray-900 dark:text-gray-50 tracking-tight">{value}</p>
         {spark && <Sparkline points={spark} accent={accent} />}
       </div>
       {delta}
@@ -295,12 +295,12 @@ function ChartCard({ title, subtitle, children, footnote }: {
   title: string; subtitle?: string; children: React.ReactNode; footnote?: string;
 }) {
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
-      <div className="mb-4 flex items-baseline justify-between gap-2">
+    <div className={CARD}>
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">{title}</h2>
         {subtitle && <p className="text-xs text-gray-500 dark:text-gray-400">{subtitle}</p>}
       </div>
-      <div className="h-56">{children}</div>
+      <div className="h-48 sm:h-56">{children}</div>
       {footnote && <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">{footnote}</p>}
     </div>
   );
@@ -338,9 +338,9 @@ function Funnel({ data }: { data: FunnelStage[] }) {
                 {stage.section}
               </p>
             )}
-            <div className="grid grid-cols-[150px_1fr_140px] items-center gap-3">
-              <p className="text-sm text-gray-600 dark:text-gray-300">{stage.label}</p>
-              <div className="h-7 bg-gray-50 dark:bg-gray-950 rounded-md overflow-hidden relative">
+            <div className="grid grid-cols-[minmax(0,1fr)_auto] sm:grid-cols-[150px_1fr_140px] items-center gap-x-3 gap-y-1 sm:gap-3">
+              <p className="order-1 sm:order-none text-sm text-gray-600 dark:text-gray-300">{stage.label}</p>
+              <div className="order-3 sm:order-none col-span-2 sm:col-span-1 h-7 bg-gray-50 dark:bg-gray-950 rounded-md overflow-hidden relative">
                 <div
                   className="h-full rounded-r-md flex items-center"
                   style={{ width: `${Math.max(pctOfTop, 2)}%`, backgroundColor: COLORS.funnelRamp[i] }}
@@ -357,7 +357,7 @@ function Funnel({ data }: { data: FunnelStage[] }) {
                   {fmtInt(stage.value)}
                 </span>
               </div>
-              <p className="text-xs text-gray-500 dark:text-gray-400 text-right">
+              <p className="order-2 sm:order-none text-xs text-gray-500 dark:text-gray-400 text-right">
                 {stage.note ?? (stepRate != null
                   ? `${stepRate}% of previous`
                   : `${Math.round((stage.value / max) * 100)}% baseline`)}
@@ -454,7 +454,7 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
   const purchased = rows.tried.purchased + rows.cold.purchased;
 
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
+    <div className={CARD}>
       <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">Funnel</h2>
         <div className="flex items-center gap-3">
@@ -518,11 +518,11 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
             </div>
           </div>
           <VisitSources sum={sum} />
-          <div className="mt-5 overflow-x-auto">
+          <TableScroll className="mt-5">
             <table className="w-full text-sm">
               <thead>
-                <tr className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                  <th className="text-left font-medium pb-2">Accounts created in range</th>
+                <tr className={`${ROW} text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400`}>
+                  <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Accounts created in range</th>
                   <th className="text-right font-medium pb-2 pl-4">Accounts</th>
                   <th className="text-right font-medium pb-2 pl-4">Answered</th>
                   <th className="text-right font-medium pb-2 pl-4">Hit paywall</th>
@@ -535,8 +535,8 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
                   ["Tried before signing up", rows.tried],
                   ["Signed up cold", rows.cold],
                 ] as const).map(([label, o]) => (
-                  <tr key={label} className="border-t border-gray-100 dark:border-gray-800">
-                    <td className="py-2 font-medium text-gray-900 dark:text-gray-50">{label}</td>
+                  <tr key={label} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                    <td className={`py-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{label}</td>
                     <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.accounts)}</td>
                     <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.answered)}</td>
                     <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.paywall)}</td>
@@ -546,7 +546,7 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
                 ))}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
           <p className="mt-4 text-[11px] text-gray-500 dark:text-gray-400">
             Counts browsers, not people: each step fires once per browser while signed out, from{" "}
             {fmtDayLabel(data.startedAt)}. A returning user on a new device counts as a visitor. After
@@ -568,8 +568,8 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
   const attributed = rows.reduce((n, r) => n + r.total, 0);
   const max = rows.length > 0 ? rows[0].total : 0;
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
-      <div className="mb-4 flex items-baseline justify-between gap-2">
+    <div className={CARD}>
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">Questions by exam</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400">
           {fmtInt(attributed)} attributed of {fmtInt(totalQuestions)} all-time
@@ -580,24 +580,24 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
           {backfillPending ? "Seeding history from user records…" : "No answers recorded yet."}
         </p>
       ) : (
-        <div className="overflow-x-auto">
+        <TableScroll>
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                <th className="text-left font-medium pb-2">Exam</th>
+              <tr className={`${ROW} text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400`}>
+                <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Exam</th>
                 <th className="text-right font-medium pb-2 pl-4">Today</th>
                 <th className="text-right font-medium pb-2 pl-4">Last 7d</th>
                 <th className="text-right font-medium pb-2 pl-4">All-time</th>
                 <th className="text-right font-medium pb-2 pl-4" title="Distinct people who answered at least one question">Enrolled</th>
-                <th className="text-right font-medium pb-2 pl-4 w-1/3">Share</th>
+                <th className="text-right font-medium pb-2 pl-4 w-1/3 hidden sm:table-cell">Share</th>
               </tr>
             </thead>
             <tbody>
               {rows.map((r) => (
-                <tr key={r.id} className="border-t border-gray-100 dark:border-gray-800">
-                  <td className="py-2 font-medium text-gray-900 dark:text-gray-50">{r.label}</td>
+                <tr key={r.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                  <td className={`py-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{r.label}</td>
                   <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.today)}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300 whitespace-nowrap">
                     {fmtInt(r.last7d)}
                     <span className="ml-1.5 text-[11px]">
                       <Delta now={r.last7d} prev={r.prev7d} suffix="vs prior 7d" />
@@ -607,7 +607,7 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
                   <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50">
                     {r.enrolled !== undefined ? fmtInt(r.enrolled) : "—"}
                   </td>
-                  <td className="py-2 pl-4">
+                  <td className="py-2 pl-4 hidden sm:table-cell">
                     <div className="flex items-center gap-2 justify-end">
                       <div className="h-1.5 w-full max-w-[160px] bg-gray-100 dark:bg-gray-800 rounded overflow-hidden">
                         <div
@@ -624,7 +624,7 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
               ))}
             </tbody>
           </table>
-        </div>
+        </TableScroll>
       )}
       <p className="mt-4 text-[11px] text-gray-500 dark:text-gray-400">
         Every training and test answer, guests included, filed under the exam it belongs to.
@@ -641,8 +641,8 @@ function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) 
   const max = data.byPick.reduce((m, r) => Math.max(m, r.clicks), 0);
   const pickLabel = (id: string) => data.byPick.find((p) => p.id === id)?.label ?? id;
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
-      <div className="mb-4 flex items-baseline justify-between gap-2">
+    <div className={CARD}>
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">What should we build next?</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400">{fmtInt(data.total)} answers</p>
       </div>
@@ -708,19 +708,19 @@ function LaunchTest({ rows }: { rows: NonNullable<Metrics["launchTest"]> }) {
   const rate = (n: number, d: number) => (d > 0 ? `${((n / d) * 100).toFixed(1)}%` : "—");
   const bestCtr = Math.max(...rows.map((r) => (r.sent > 0 ? r.clicked / r.sent : 0)));
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
-      <div className="mb-4 flex items-baseline justify-between gap-2">
+    <div className={CARD}>
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">SAT/ACT launch email split test</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400">{fmtInt(sent)} sent to DMV readers</p>
       </div>
       {sent === 0 ? (
         <p className="text-sm text-gray-500 dark:text-gray-400">Nothing sent yet. The email is paused until NEW_TESTS_CAMPAIGN=send is set in Vercel.</p>
       ) : (
-        <div className="overflow-x-auto">
+        <TableScroll>
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                <th className="text-left font-medium pb-2">Variant</th>
+              <tr className={`${ROW} text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400`}>
+                <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Variant</th>
                 <th className="text-right font-medium pb-2 pl-4">Sent</th>
                 <th className="text-right font-medium pb-2 pl-4">Clicked</th>
                 <th className="text-right font-medium pb-2 pl-4">Click rate</th>
@@ -732,8 +732,8 @@ function LaunchTest({ rows }: { rows: NonNullable<Metrics["launchTest"]> }) {
               {rows.map((r) => {
                 const lead = r.sent > 0 && r.clicked / r.sent === bestCtr && bestCtr > 0;
                 return (
-                  <tr key={r.id} className="border-t border-gray-100 dark:border-gray-800">
-                    <td className="py-2">
+                  <tr key={r.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                    <td className={`py-2 ${STICKY_COL}`}>
                       <div className="font-medium text-gray-900 dark:text-gray-50">{r.id} · {r.name}{lead ? " ★" : ""}</div>
                       <div className="text-[11px] text-gray-500 dark:text-gray-400">{r.subject}</div>
                     </td>
@@ -747,7 +747,7 @@ function LaunchTest({ rows }: { rows: NonNullable<Metrics["launchTest"]> }) {
               })}
             </tbody>
           </table>
-        </div>
+        </TableScroll>
       )}
       <p className="mt-4 text-[11px] text-gray-500 dark:text-gray-400">
         Each DMV reader gets one variant, fixed by their account. Clicked counts people, not clicks. Bought is Premium
@@ -780,8 +780,8 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
   const fill = (n: number) => (n === 0 ? "#f6f5f2" : `color-mix(in srgb, ${COLORS.engagement} ${Math.round(12 + (n / max) * 88)}%, #ffffff)`);
 
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
-      <div className="mb-4 flex items-baseline justify-between gap-2">
+    <div className={CARD}>
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">When people study</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400">
           {fmtInt(data.answers)} answers · last {data.days} days · Eastern time
@@ -791,11 +791,11 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
         <p className="text-sm text-gray-500 dark:text-gray-400">No timestamped answers yet.</p>
       ) : (
         <>
-          <div className="overflow-x-auto">
+          <TableScroll>
             <table className="border-separate" style={{ borderSpacing: 2 }}>
               <thead>
-                <tr>
-                  <th />
+                <tr className={ROW}>
+                  <th className={STICKY_COL} />
                   {byHour.map((_, h) => (
                     <th key={h} className="text-[10px] font-normal text-gray-500 dark:text-gray-400 text-left w-5 min-w-[18px]">
                       {h % 3 === 0 ? hourLabel(h) : ""}
@@ -805,8 +805,8 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
               </thead>
               <tbody>
                 {rows.map((r) => (
-                  <tr key={r.day}>
-                    <td className="pr-2 text-[11px] text-gray-500 dark:text-gray-400">{DAY_NAMES[r.day]}</td>
+                  <tr key={r.day} className={ROW}>
+                    <td className={`pr-2 text-[11px] text-gray-500 dark:text-gray-400 ${STICKY_COL}`}>{DAY_NAMES[r.day]}</td>
                     {r.cells.map((n, h) => (
                       <td
                         key={h}
@@ -819,7 +819,7 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
                 ))}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
           <div className="mt-2 flex items-center gap-2 text-[10px] text-gray-500 dark:text-gray-400">
             <span>Fewer</span>
             <span
@@ -857,7 +857,7 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
 // The Growth tab on /admin: the scoreboard over time, from /api/admin/metrics.
 export function GrowthTab() {
   const { user } = useAuth();
-  const { data: metrics, error, loading, refreshing, reload: fetchMetrics } = useAdminFetch<Metrics>("/api/admin/metrics");
+  const { data: metrics, error, loading, refreshing, updating, reload: fetchMetrics } = useAdminFetch<Metrics>("/api/admin/metrics");
   const [range, setRange] = useState<Range>("90d");
   const [engageMetric, setEngageMetric] = useState<"active" | "questions">("active");
 
@@ -946,10 +946,11 @@ export function GrowthTab() {
         subtitle={<>Live Firestore + Stripe data · updated {fmtUpdated(metrics.generatedAt)}</>}
         onRefresh={() => fetchMetrics(true)}
         refreshing={refreshing}
+        updating={updating}
       />
 
         {/* KPI row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6">
           <StatTile
             label="Revenue (all-time)"
             value={fmtDollarsExact(kpis.revenueAllTimeCents)}
@@ -987,16 +988,17 @@ export function GrowthTab() {
         </div>
 
         {/* Range filter — scopes every chart below */}
-        <div className="flex items-center gap-1 mb-4 bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 w-fit shadow-sm">
-          {([["today", "Today"], ["30d", "Last 30 days"], ["90d", "Last 90 days"], ["all", "All time"]] as const).map(([key, label]) => (
+        <div className="flex items-center gap-1 mb-3 sm:mb-4 bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 w-full sm:w-fit shadow-sm">
+          {([["today", "Today", "Today"], ["30d", "Last 30 days", "30 days"], ["90d", "Last 90 days", "90 days"], ["all", "All time", "All"]] as const).map(([key, label, short]) => (
             <button
               key={key}
               onClick={() => setRange(key)}
-              className={`text-xs font-medium rounded-md px-3 py-1.5 transition-colors ${
+              className={`flex-1 sm:flex-none text-xs font-medium rounded-md px-3 py-2 sm:py-1.5 transition-colors ${
                 range === key ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"
               }`}
             >
-              {label}
+              <span className="sm:hidden">{short}</span>
+              <span className="hidden sm:inline">{label}</span>
             </button>
           ))}
         </div>
@@ -1014,7 +1016,7 @@ export function GrowthTab() {
         )}
 
         {/* Charts */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-4">
           <ChartCard
             title="User growth"
             subtitle={isToday
@@ -1175,7 +1177,7 @@ export function GrowthTab() {
         {metrics.studyTimes ? (
           <StudyTimes data={metrics.studyTimes} />
         ) : (
-          <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 text-sm text-gray-500 dark:text-gray-400">
+          <div className={`${CARD} text-sm text-gray-500 dark:text-gray-400`}>
             When people study: no data yet. It is built by the nightly stats job (03:00 UTC), or run
             aggregate-stats from Vercel → Settings → Cron Jobs.
           </div>

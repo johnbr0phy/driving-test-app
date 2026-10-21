@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown, Lock } from "lucide-react";
-import { useAdminFetch } from "@/components/admin/AdminTabParts";
+import { CARD, ROW, STICKY_COL, TableScroll, useAdminFetch } from "@/components/admin/AdminTabParts";
 import type { V2ProgressExam, V2ProgressPayload } from "@/lib/server/v2Progress";
 
 // "Basics" card on the /admin Growth tab (/api/admin/v2-progress): how far
@@ -95,11 +95,11 @@ function ExamView({ exam, since }: { exam: V2ProgressExam; since: string }) {
 
       <div>
         <h3 className="text-xs font-semibold text-gray-900 dark:text-gray-50 mb-1">How far they get (accounts, dashboard order)</h3>
-        <div className="overflow-x-auto">
+        <TableScroll>
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                <th className="text-left font-medium py-1">Step</th>
+              <tr className={`${ROW} text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400`}>
+                <th className={`text-left font-medium py-1 ${STICKY_COL}`}>Step</th>
                 <th className="text-right font-medium py-1 pl-3">Started</th>
                 <th className="text-right font-medium py-1 pl-3">Done</th>
                 <th className="text-right font-medium py-1 pl-3 w-1/3">Done, of students</th>
@@ -107,8 +107,8 @@ function ExamView({ exam, since }: { exam: V2ProgressExam; since: string }) {
             </thead>
             <tbody>
               {exam.steps.map((s, i) => (
-                <tr key={i} className="border-t border-gray-100 dark:border-gray-800">
-                  <td className={`py-1.5 ${s.kind === "basics" ? "pl-3 text-gray-500 dark:text-gray-400" : "text-gray-900 dark:text-gray-50"}`}>
+                <tr key={i} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                  <td className={`py-1.5 ${STICKY_COL} ${s.kind === "basics" ? "pl-3 text-gray-500 dark:text-gray-400" : "text-gray-900 dark:text-gray-50"}`}>
                     <span className="tabular-nums text-gray-400 mr-1.5">{i + 1}.</span>
                     {s.label}
                     {s.premium && <Lock className="inline ml-1 h-3 w-3 text-gray-400" aria-label="Premium" />}
@@ -127,7 +127,7 @@ function ExamView({ exam, since }: { exam: V2ProgressExam; since: string }) {
               ))}
             </tbody>
           </table>
-        </div>
+        </TableScroll>
         <p className="mt-1.5 text-[11px] text-gray-500 dark:text-gray-400">
           Basics step: started = one skill learned, done = all of them. Test step: done = best score at or above the student&apos;s goal. <Lock className="inline h-3 w-3" /> needs Premium.
         </p>
@@ -139,11 +139,11 @@ function ExamView({ exam, since }: { exam: V2ProgressExam; since: string }) {
           Every skill ({exam.skills.length})
         </button>
         {showSkills && (
-          <div className="mt-2 overflow-x-auto">
+          <TableScroll className="mt-2">
             <table className="w-full text-sm">
               <thead>
-                <tr className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                  <th className="text-left font-medium py-1">Skill</th>
+                <tr className={`${ROW} text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400`}>
+                  <th className={`text-left font-medium py-1 ${STICKY_COL}`}>Skill</th>
                   <th className="text-right font-medium py-1 pl-3" title="Accounts that learned it, all-time">Learned</th>
                   <th className="text-right font-medium py-1 pl-3" title="Questions right on the first try, accounts">1st try</th>
                   <th className="text-right font-medium py-1 pl-3" title="All browsers: opened / learned">Opened → learned</th>
@@ -154,8 +154,8 @@ function ExamView({ exam, since }: { exam: V2ProgressExam; since: string }) {
                 {exam.skills.map((s) => {
                   const e = exam.skillEvents[s.id] ?? {};
                   return (
-                    <tr key={s.id} className="border-t border-gray-100 dark:border-gray-800">
-                      <td className="py-1.5 text-gray-900 dark:text-gray-50">
+                    <tr key={s.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                      <td className={`py-1.5 text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>
                         {s.name}
                         <span className="ml-1.5 text-[11px] text-gray-500 dark:text-gray-400">{s.drill}</span>
                       </td>
@@ -172,7 +172,7 @@ function ExamView({ exam, since }: { exam: V2ProgressExam; since: string }) {
                 })}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
         )}
       </div>
     </div>
@@ -185,7 +185,7 @@ export function BasicsProgress() {
   const exam = data?.exams.find((e) => e.id === (selected ?? data.exams[0]?.id));
 
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
+    <div className={CARD}>
       <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">Basics and course progress</h2>
         {data && (

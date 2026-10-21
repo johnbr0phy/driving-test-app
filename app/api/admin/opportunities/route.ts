@@ -1,49 +1,44 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
-import { isAdminEmail } from '@/lib/admin';
+import { getAdminDb } from '@/lib/firebase-admin';
+import { requireAdmin } from '@/lib/server/adminAuth';
+import { cachedAdminPayload, cachedJson, wantsRefresh } from '@/lib/server/adminCache';
 import { getInternalUids } from '@/lib/server/internalUsers';
-import { buildOpportunities, type OpportunitiesPayload } from '@/lib/server/opportunities';
+import { buildOpportunities } from '@/lib/server/opportunities';
 import { getStripe } from '@/lib/stripe';
 import { latestBrief } from '@/lib/server/dailyBrief';
 
-// Data for the /admin Today tab (lib/server/opportunities). Read-only; cached
-// in memory for five minutes because each miss lists Stripe checkouts.
+// Data for the /admin Today tab (lib/server/opportunities). Read-only; the
+// payload is kept in lib/server/adminCache for five minutes because each
+// rebuild lists Stripe checkouts, and an older copy is served at once while
+// a rebuild runs after the response.
 export const maxDuration = 60;
 
-const CACHE_TTL_MS = 5 * 60_000;
-let cached: { payload: OpportunitiesPayload; at: number } | null = null;
+async function build() {
+  let stripe = null;
+  try {
+    stripe = getStripe();
+  } catch {
+    // Not configured: the page shows Firestore data and says Stripe is missing.
+  }
+  return buildOpportunities(getAdminDb(), stripe, await getInternalUids());
+}
 
 export async function GET(request: NextRequest) {
-  const authHeader = request.headers.get('authorization');
-  if (!authHeader?.startsWith('Bearer ')) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-  }
-  let email: string | undefined;
+  const denied = await requireAdmin(request);
+  if (denied) return denied;
   try {
-    email = (await getAdminAuth().verifyIdToken(authHeader.split('Bearer ')[1])).email;
-  } catch {
-    return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
-  }
-  if (!isAdminEmail(email)) {
-    return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
-  }
-
-  try {
-    const refresh = request.nextUrl.searchParams.get('refresh') === 'true';
     // The daily update is read fresh every time, so a new one shows at once.
-    const brief = await latestBrief(getAdminDb()).catch(() => null);
-    if (!refresh && cached && Date.now() - cached.at < CACHE_TTL_MS) {
-      return NextResponse.json({ ...cached.payload, brief }, { headers: { 'Cache-Control': 'no-store', 'X-Cache': 'HIT' } });
-    }
-    let stripe = null;
-    try {
-      stripe = getStripe();
-    } catch {
-      // Not configured: the page shows Firestore data and says Stripe is missing.
-    }
-    const payload = await buildOpportunities(getAdminDb(), stripe, await getInternalUids());
-    cached = { payload, at: Date.now() };
-    return NextResponse.json({ ...payload, brief }, { headers: { 'Cache-Control': 'no-store', 'X-Cache': 'MISS' } });
+    const [brief, { payload, cache, at }] = await Promise.all([
+      latestBrief(getAdminDb()).catch(() => null),
+      cachedAdminPayload({
+        key: 'opportunities',
+        ttlMs: 5 * 60_000,
+        staleMs: 24 * 3_600_000,
+        refresh: wantsRefresh(request),
+        build,
+      }),
+    ]);
+    return cachedJson({ ...payload, brief }, cache, at);
   } catch (error) {
     console.error('[admin/opportunities]', error);
     return NextResponse.json(

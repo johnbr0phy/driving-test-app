@@ -1,14 +1,12 @@
 "use client";
 
 import { Suspense, useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { useAdmin } from "@/hooks/useAdmin";
 import { useAdminFetch, TabError, TabLoading } from "@/components/admin/AdminTabParts";
 import { OpportunitiesView } from "@/components/admin/OpportunitiesView";
-import { TeachAdminView } from "@/components/admin/TeachAdminView";
-import { GrowthTab } from "@/components/admin/GrowthTab";
-import { UsersTab } from "@/components/admin/UsersTab";
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
 import type { DailyBrief } from "@/lib/server/dailyBrief";
 import type { TeachAdminPayload } from "@/lib/server/teachAdmin";
@@ -16,6 +14,23 @@ import type { TeachAdminPayload } from "@/lib/server/teachAdmin";
 // The one admin page. Each tab loads its own API the first time it is opened
 // and stays mounted after, so switching back is instant. The tab is in the
 // URL (?tab=growth) so a link or a reload lands on it.
+//
+// Only the Today tab is in the page's bundle. The others, Growth above all
+// (it carries the chart library), download when first opened, so the page
+// shows its first numbers sooner on a phone.
+const GrowthTab = dynamic(() => import("@/components/admin/GrowthTab").then((m) => m.GrowthTab), {
+  ssr: false,
+  loading: () => <TabLoading />,
+});
+const TeachAdminView = dynamic(() => import("@/components/admin/TeachAdminView").then((m) => m.TeachAdminView), {
+  ssr: false,
+  loading: () => <TabLoading />,
+});
+const UsersTab = dynamic(() => import("@/components/admin/UsersTab").then((m) => m.UsersTab), {
+  ssr: false,
+  loading: () => <TabLoading />,
+});
+
 const TABS = [
   { id: "today", label: "Today" },
   { id: "growth", label: "Growth" },
@@ -30,7 +45,7 @@ const isTab = (v: string | null): v is TabId => TABS.some((t) => t.id === v);
 // numbers, from /api/admin/opportunities (lib/server/opportunities).
 function TodayTab() {
   const { user } = useAuth();
-  const { data, setData, error, loading, refreshing, reload } =
+  const { data, setData, error, loading, refreshing, updating, reload } =
     useAdminFetch<OpportunitiesPayload & { brief?: DailyBrief | null }>("/api/admin/opportunities");
   const [writingBrief, setWritingBrief] = useState(false);
   const [briefError, setBriefError] = useState<string | null>(null);
@@ -59,6 +74,7 @@ function TodayTab() {
       data={data}
       onRefresh={() => reload(true)}
       refreshing={refreshing}
+      updating={updating}
       onWriteBrief={writeBrief}
       writingBrief={writingBrief}
       briefError={briefError}
@@ -68,10 +84,10 @@ function TodayTab() {
 
 // The instructor channel, from /api/admin/teach (lib/server/teachAdmin).
 function TeachersTab() {
-  const { data, error, loading, refreshing, reload } = useAdminFetch<TeachAdminPayload>("/api/admin/teach");
+  const { data, error, loading, refreshing, updating, reload } = useAdminFetch<TeachAdminPayload>("/api/admin/teach");
   if (loading) return <TabLoading />;
   if (error || !data) return <TabError message={error || "Failed to load"} />;
-  return <TeachAdminView data={data} onRefresh={() => reload(true)} refreshing={refreshing} />;
+  return <TeachAdminView data={data} onRefresh={() => reload(true)} refreshing={refreshing} updating={updating} />;
 }
 
 function AdminTabs() {
@@ -91,17 +107,20 @@ function AdminTabs() {
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <div className="container mx-auto px-4 py-6 max-w-6xl">
-        <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
-          <h1 className="text-xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">TigerTest admin</h1>
-          <div role="tablist" className="flex items-center gap-1 bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 shadow-sm overflow-x-auto">
+      <div className="container mx-auto px-4 pb-6 max-w-6xl">
+        {/* The tab bar stays at the top of the screen, so on a phone a tab is
+            always one tap away however far down a table the reader is. The
+            title only fits beside it from sm up. */}
+        <div className="sticky top-0 z-20 -mx-4 px-4 py-3 sm:py-4 mb-3 sm:mb-2 bg-gray-50/90 dark:bg-gray-950/90 backdrop-blur flex items-center justify-between gap-3">
+          <h1 className="sr-only sm:not-sr-only text-xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">TigerTest admin</h1>
+          <div role="tablist" className="flex items-center gap-1 w-full sm:w-auto bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 shadow-sm">
             {TABS.map((t) => (
               <button
                 key={t.id}
                 role="tab"
                 aria-selected={tab === t.id}
                 onClick={() => select(t.id)}
-                className={`text-sm font-medium rounded-md px-3 py-1.5 whitespace-nowrap transition-colors ${
+                className={`flex-1 sm:flex-none text-sm font-medium rounded-md px-3 py-2 sm:py-1.5 whitespace-nowrap transition-colors ${
                   tab === t.id
                     ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900"
                     : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"

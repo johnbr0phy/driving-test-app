@@ -7,11 +7,12 @@ import { ChevronLeft, ChevronRight, GraduationCap, RefreshCw, Search, Sparkles, 
 import { db } from "@/lib/firebase";
 import { states } from "@/data/states";
 import { Button } from "@/components/ui/button";
-import { TabError, TabHeader, TabLoading, useAdminFetch } from "@/components/admin/AdminTabParts";
+import { CARD, TabError, TabHeader, TabLoading, useAdminFetch } from "@/components/admin/AdminTabParts";
 
 // The Users tab on /admin: the 100 most recently active accounts (search,
 // filter, delete), DMV pass rate by state and Super Amazing adoption, from
 // /api/admin/users. Trends, revenue and paywalls are on the other tabs.
+// The accounts are a table from sm up and a card list on a phone.
 
 interface UserData {
   uid: string;
@@ -53,10 +54,74 @@ const formatDate = (dateString: string) =>
     minute: "2-digit",
   });
 
-const cardClass = "bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 mb-4";
+const cardClass = `${CARD} mb-4`;
+
+// ─── Pieces shared by the table row and the phone card ──────────────────────
+
+function UserId({ u }: { u: UserData }) {
+  return (
+    <div className="flex items-center gap-1.5 min-w-0">
+      <span className="text-xs text-gray-600 dark:text-gray-300 font-mono truncate">{u.uid}</span>
+      {u.isPremium && (
+        <Image src="/tiger_face_01.png" alt="Premium user" width={20} height={20} title="Premium user" className="w-5 h-5 shrink-0" />
+      )}
+      {u.superAmazingEnabled ? (
+        <span title="Super Amazing Mode on" className="shrink-0">
+          <Sparkles className="h-4 w-4 text-amber-500 dark:text-amber-400" />
+        </span>
+      ) : u.superAmazingEligible ? (
+        <span title="8/8 complete, Super Amazing Mode unlocked but not turned on" className="shrink-0">
+          <Sparkles className="h-4 w-4 text-gray-300" />
+        </span>
+      ) : null}
+    </div>
+  );
+}
+
+function TestBadge({ u }: { u: UserData }) {
+  return (
+    <span
+      className="inline-flex items-center px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-300 rounded text-xs font-medium"
+      title={u.test.source === "landing" ? "From their signup landing page" : "Their current test (no test landing on signup)"}
+    >
+      {u.test.name}
+      {u.test.id === "dmv" && u.selectedState && ` · ${u.selectedState}`}
+    </span>
+  );
+}
+
+function ConvertedVia({ u }: { u: UserData }) {
+  if (u.convertedPaywall) {
+    return (
+      <span
+        className="inline-flex items-center px-2 py-1 bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-300 rounded text-xs font-medium"
+        title={u.convertedPaywall.key}
+      >
+        {u.convertedPaywall.label}
+      </span>
+    );
+  }
+  if (u.isPremium) return <span className="text-gray-500 dark:text-gray-400 text-xs">Unknown</span>;
+  return <span className="text-gray-500 dark:text-gray-400">-</span>;
+}
+
+function DeleteButton({ uid, deleting, onDelete }: { uid: string; deleting: string | null; onDelete: (uid: string) => void }) {
+  return (
+    <Button
+      variant="ghost"
+      size="sm"
+      onClick={() => onDelete(uid)}
+      disabled={deleting === uid}
+      aria-label="Delete user"
+      className="text-red-500 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 hover:bg-red-50 dark:hover:bg-red-950"
+    >
+      {deleting === uid ? <RefreshCw className="h-4 w-4 animate-spin" /> : <Trash2 className="h-4 w-4" />}
+    </Button>
+  );
+}
 
 export function UsersTab() {
-  const { data, setData, error, loading, refreshing, reload } = useAdminFetch<UsersPayload>("/api/admin/users");
+  const { data, setData, error, loading, refreshing, updating, reload } = useAdminFetch<UsersPayload>("/api/admin/users");
   const [deleting, setDeleting] = useState<string | null>(null);
   const [usersPage, setUsersPage] = useState(0);
   const [userSearch, setUserSearch] = useState("");
@@ -110,9 +175,10 @@ export function UsersTab() {
         subtitle={<>{data.totalUsers.toLocaleString()} accounts · table shows the 100 most recently active</>}
         onRefresh={() => reload(true)}
         refreshing={refreshing}
+        updating={updating}
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4 mb-4">
         {/* Super Amazing adoption */}
         <div className={`${cardClass} mb-0`}>
           <div className="flex items-center gap-2 mb-3">
@@ -127,7 +193,7 @@ export function UsersTab() {
 
         {/* Pass Rate by State */}
         <div className={`${cardClass} mb-0 lg:col-span-2`}>
-          <div className="flex items-center gap-2 mb-3">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mb-3">
             <GraduationCap className="h-4 w-4 text-emerald-500 dark:text-emerald-400" />
             <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">DMV pass rate by state</h2>
             <span className="text-xs text-gray-500 dark:text-gray-400">top 100 active users</span>
@@ -162,7 +228,7 @@ export function UsersTab() {
 
       {/* User List */}
       <div className={cardClass}>
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 mb-4">
           <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">
             Recent users{" "}
             <span className="font-normal text-gray-500 dark:text-gray-400">
@@ -171,20 +237,20 @@ export function UsersTab() {
             </span>
           </h2>
           <div className="flex flex-wrap items-center gap-2">
-            <div className="relative">
+            <div className="relative flex-1 min-w-[12rem] sm:flex-none">
               <Search className="h-4 w-4 absolute left-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400" />
               <input
                 type="text"
                 value={userSearch}
                 onChange={(e) => setUserSearch(e.target.value)}
                 placeholder="Search email or UID"
-                className="pl-8 pr-3 py-1.5 text-sm border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 rounded-md focus:outline-none focus:ring-1 focus:ring-brand w-56"
+                className="pl-8 pr-3 py-1.5 text-sm border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 rounded-md focus:outline-none focus:ring-1 focus:ring-brand w-full sm:w-56"
               />
             </div>
             <select
               value={testFilter}
               onChange={(e) => setTestFilter(e.target.value)}
-              className="text-sm border border-gray-300 dark:border-gray-700 rounded-md px-2 py-1.5 bg-white dark:bg-gray-900 focus:outline-none focus:ring-1 focus:ring-brand"
+              className="text-sm border border-gray-300 dark:border-gray-700 rounded-md px-2 py-1.5 bg-white dark:bg-gray-900 focus:outline-none focus:ring-1 focus:ring-brand max-w-full"
             >
               <option value="all">All tests</option>
               {availableTests.map(([id, name]) => (
@@ -200,7 +266,32 @@ export function UsersTab() {
           </div>
         </div>
 
-        <div className="overflow-x-auto">
+        {/* Phone: one card per account */}
+        <ul className="sm:hidden divide-y divide-gray-200 dark:divide-gray-800 -mt-2">
+          {visibleUsers.map((u) => (
+            <li key={u.uid} className="py-3 flex items-start justify-between gap-2">
+              <div className="min-w-0 flex-1">
+                <UserId u={u} />
+                <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
+                  <TestBadge u={u} />
+                  {(u.convertedPaywall || u.isPremium) && <ConvertedVia u={u} />}
+                </div>
+                <p className="mt-1.5 text-xs text-gray-600 dark:text-gray-300">
+                  <span className="font-medium">{u.trainingQuestionsAnswered}</span> training ·{" "}
+                  <span className="font-medium">{u.testQuestionsAnswered}</span> test Qs ({u.testsCompleted} tests)
+                </p>
+                <p className="text-xs text-gray-500 dark:text-gray-400">
+                  {u.lastUpdated ? `Active ${formatDate(u.lastUpdated)}` : "Never active"}
+                </p>
+              </div>
+              <DeleteButton uid={u.uid} deleting={deleting} onDelete={deleteUser} />
+            </li>
+          ))}
+          {visibleUsers.length === 0 && <li className="py-3 text-sm text-gray-500 dark:text-gray-400">No accounts match.</li>}
+        </ul>
+
+        {/* From sm up: the table */}
+        <div className="hidden sm:block overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-gray-200 dark:border-gray-800">
@@ -217,95 +308,57 @@ export function UsersTab() {
               {visibleUsers.map((u) => (
                 <tr key={u.uid} className="border-b border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800">
                   <td className="py-3 px-4">
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-xs text-gray-600 dark:text-gray-300 font-mono">{u.uid}</span>
-                      {u.isPremium && (
-                        <Image src="/tiger_face_01.png" alt="Premium user" width={20} height={20} title="Premium user" className="w-5 h-5" />
-                      )}
-                      {u.superAmazingEnabled ? (
-                        <span title="Super Amazing Mode on">
-                          <Sparkles className="h-4 w-4 text-amber-500 dark:text-amber-400" />
-                        </span>
-                      ) : u.superAmazingEligible ? (
-                        <span title="8/8 complete, Super Amazing Mode unlocked but not turned on">
-                          <Sparkles className="h-4 w-4 text-gray-300" />
-                        </span>
-                      ) : null}
-                    </div>
+                    <UserId u={u} />
                   </td>
                   <td className="py-3 px-4">
-                    <span
-                      className="inline-flex items-center px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-300 rounded text-xs font-medium"
-                      title={u.test.source === "landing" ? "From their signup landing page" : "Their current test (no test landing on signup)"}
-                    >
-                      {u.test.name}
-                      {u.test.id === "dmv" && u.selectedState && ` · ${u.selectedState}`}
-                    </span>
+                    <TestBadge u={u} />
                   </td>
-                  <td className="py-3 px-4 text-gray-600 dark:text-gray-300">
+                  <td className="py-3 px-4 text-gray-600 dark:text-gray-300 whitespace-nowrap">
                     {u.lastUpdated ? formatDate(u.lastUpdated) : <span className="text-gray-500 dark:text-gray-400">Never</span>}
                   </td>
                   <td className="py-3 px-4">
                     <span className="font-medium">{u.trainingQuestionsAnswered}</span>
                   </td>
-                  <td className="py-3 px-4">
+                  <td className="py-3 px-4 whitespace-nowrap">
                     <span className="font-medium">{u.testQuestionsAnswered}</span>
                     <span className="text-gray-500 dark:text-gray-400 text-xs ml-1">({u.testsCompleted} tests)</span>
                   </td>
                   <td className="py-3 px-4">
-                    {u.convertedPaywall ? (
-                      <span
-                        className="inline-flex items-center px-2 py-1 bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-300 rounded text-xs font-medium"
-                        title={u.convertedPaywall.key}
-                      >
-                        {u.convertedPaywall.label}
-                      </span>
-                    ) : u.isPremium ? (
-                      <span className="text-gray-500 dark:text-gray-400 text-xs">Unknown</span>
-                    ) : (
-                      <span className="text-gray-500 dark:text-gray-400">-</span>
-                    )}
+                    <ConvertedVia u={u} />
                   </td>
                   <td className="py-3 px-4 text-right">
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => deleteUser(u.uid)}
-                      disabled={deleting === u.uid}
-                      className="text-red-500 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 hover:bg-red-50 dark:hover:bg-red-950"
-                    >
-                      {deleting === u.uid ? <RefreshCw className="h-4 w-4 animate-spin" /> : <Trash2 className="h-4 w-4" />}
-                    </Button>
+                    <DeleteButton uid={u.uid} deleting={deleting} onDelete={deleteUser} />
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
-          {usersPageCount > 1 && (
-            <div className="flex items-center justify-between mt-4 text-sm text-gray-600 dark:text-gray-300">
-              <span>
-                Showing {usersPageSafe * PAGE_SIZE + 1} to {Math.min((usersPageSafe + 1) * PAGE_SIZE, filteredUsers.length)} of{" "}
-                {filteredUsers.length}
-              </span>
-              <div className="flex items-center gap-2">
-                <Button variant="outline" size="sm" onClick={() => setUsersPage((p) => Math.max(0, p - 1))} disabled={usersPageSafe === 0}>
-                  <ChevronLeft className="h-4 w-4" />
-                </Button>
-                <span className="text-xs">
-                  Page {usersPageSafe + 1} of {usersPageCount}
-                </span>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setUsersPage((p) => Math.min(usersPageCount - 1, p + 1))}
-                  disabled={usersPageSafe >= usersPageCount - 1}
-                >
-                  <ChevronRight className="h-4 w-4" />
-                </Button>
-              </div>
-            </div>
-          )}
         </div>
+
+        {usersPageCount > 1 && (
+          <div className="flex items-center justify-between mt-4 text-sm text-gray-600 dark:text-gray-300">
+            <span>
+              {usersPageSafe * PAGE_SIZE + 1} to {Math.min((usersPageSafe + 1) * PAGE_SIZE, filteredUsers.length)} of {filteredUsers.length}
+            </span>
+            <div className="flex items-center gap-2">
+              <Button variant="outline" size="sm" onClick={() => setUsersPage((p) => Math.max(0, p - 1))} disabled={usersPageSafe === 0} aria-label="Previous page">
+                <ChevronLeft className="h-4 w-4" />
+              </Button>
+              <span className="text-xs whitespace-nowrap">
+                Page {usersPageSafe + 1} of {usersPageCount}
+              </span>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setUsersPage((p) => Math.min(usersPageCount - 1, p + 1))}
+                disabled={usersPageSafe >= usersPageCount - 1}
+                aria-label="Next page"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

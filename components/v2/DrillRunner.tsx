@@ -26,6 +26,7 @@ import { matchBasicsSkill } from "@/lib/v2/skillMatch";
 import { hasExplainer } from "@/lib/v2/explainer";
 import { BasicsRuleSheet } from "./BasicsRuleSheet";
 import { DrillLockScreen } from "./DrillLockScreen";
+import { Fireworks } from "@/components/Fireworks";
 import { basicsDone, basicsFor } from "@/lib/v2/basics";
 import { trackBasics } from "@/lib/v2/basicsTracking";
 import { QuestionView } from "./QuestionView";
@@ -80,6 +81,9 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const [confirmReset, setConfirmReset] = useState(false);
   // The Basics rule sheet offered under a miss.
   const [brushUp, setBrushUp] = useState(false);
+  // One burst when this answer masters the drill (same canvas as Super Amazing Mode);
+  // reopening a mastered drill from the dashboard lands on the same screen without it.
+  const [fireworks, setFireworks] = useState(false);
   const currentId = useRef<string | null>(null);
   const scroller = useRef<HTMLDivElement>(null);
 
@@ -126,6 +130,10 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     guestPrompt.record(ok);
     recordClassAnswerById(exam.id, question.id, question.domain, ok, v2Pick(question.format, final));
     answerDrill(key, question.id, ok, drill ? drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions) : undefined);
+    if (ok && drill) {
+      const after = drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions);
+      if (questions.length > 0 && questions.every((q) => after.masteredIds.includes(q.id))) setFireworks(true);
+    }
     if (drill?.basics?.length) {
       // Basics usage (lib/v2/basicsTracking): did they learn a skill of this drill first?
       const basicsFirst = basicsDone(useV2Store.getState().basics, exam.id, basicsFor(drill)) > 0;
@@ -162,6 +170,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
 
   return (
     <FocusMode className="v2-focus">
+      {fireworks && done && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
       <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
         <div className="flex items-center gap-2">
           <Link href={backHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Back">
@@ -189,7 +198,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
               <p className="mt-1 text-sm text-green-800 dark:text-green-300">Every {drill.name} question answered correctly. Take a full test to see it show up in your score.</p>
               <div className="mt-5 flex flex-col gap-2">
                 <Link href={routes.dashboard} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-sm font-bold text-white">Back to dashboard</Link>
-                <button type="button" onClick={() => { resetDrill(key); currentId.current = null; setDone(false); }} className="v2-tap rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">Run it again</button>
+                <button type="button" onClick={() => { resetDrill(key); currentId.current = null; setFireworks(false); setDone(false); }} className="v2-tap rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">Run it again</button>
               </div>
             </div>
           ) : guestPrompt.showing ? (
@@ -254,7 +263,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">Mastery for {drill.name} starts over. Your test scores are not affected.</p>
             <div className="mt-4 flex gap-2">
               <button type="button" onClick={() => setConfirmReset(false)} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 text-sm font-semibold">Cancel</button>
-              <button type="button" onClick={() => { resetDrill(key); setConfirmReset(false); currentId.current = null; setQuestion(null); setDone(false); }} className="v2-tap flex-1 rounded-xl bg-brand text-sm font-bold text-white">Reset</button>
+              <button type="button" onClick={() => { resetDrill(key); setConfirmReset(false); currentId.current = null; setQuestion(null); setFireworks(false); setDone(false); }} className="v2-tap flex-1 rounded-xl bg-brand text-sm font-bold text-white">Reset</button>
             </div>
           </div>
         </AccessibleOverlay>

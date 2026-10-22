@@ -22,6 +22,7 @@ import { getTigerAsset } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { DrillLockScreen } from "./DrillLockScreen";
+import { Fireworks } from "@/components/Fireworks";
 import { trackBasics } from "@/lib/v2/basicsTracking";
 
 /**
@@ -49,7 +50,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const skill: BasicsSkill | undefined = skills[skillIndex];
 
   type Screen = "learn" | "review" | "question" | "done";
-  const [screen, setScreen] = useState<Screen>("learn");
+  // null until the store is hydrated and the skill's stored state has picked the opening screen.
+  const [screen, setScreen] = useState<Screen | null>(null);
   const [run, setRun] = useState<BasicsRun | null>(null);
   const [current, setCurrent] = useState<number | null>(null);
   const [picked, setPicked] = useState<number | null>(null);
@@ -59,14 +61,19 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [explainer, setExplainer] = useState(false);
   const [walking, setWalking] = useState(false);
   const [readMode, setReadMode] = useState(false);
+  // The one-shot fireworks on the "Skill learned" screen (same canvas as Super Amazing Mode).
+  const [fireworks, setFireworks] = useState(false);
 
   useEffect(() => {
     if (hydrated && (!drill || !skill)) router.replace(drill ? routes.drill(drill.key) : routes.dashboard);
   }, [hydrated, drill, skill, router, routes]);
 
-  // A new skill id in the URL starts a fresh run.
+  // A new skill id in the URL starts a fresh run; a skill already learned
+  // opens on its "Skill learned" page, with the lesson a tap away.
   useEffect(() => {
-    setScreen("learn");
+    if (!hydrated) return;
+    const learned = !!useV2Store.getState().basics[basicsKey(exam.id, skillIdParam ?? "")]?.done;
+    setScreen(learned ? "done" : "learn");
     setRun(null);
     setCurrent(null);
     setPicked(null);
@@ -74,7 +81,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setExplainer(false);
     setWalking(false);
     setReadMode(false);
-  }, [skillIdParam]);
+    setFireworks(false);
+  }, [hydrated, exam.id, skillIdParam]);
 
   // Picking disables the options, so focus goes on to Next (and the feedback is announced).
   const nextRef = useRef<HTMLButtonElement | null>(null);
@@ -97,7 +105,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   useEffect(() => {
     if (openable && drill && skill) trackBasics("skill_open", exam.id, drill.key, { skill: skill.id });
   }, [openable, exam.id, drill, skill]);
-  if (!hydrated || !drill || !skill || (premiumDrill && !premiumReady)) {
+  if (!hydrated || !drill || !skill || screen === null || (premiumDrill && !premiumReady)) {
     return <FocusMode className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</FocusMode>;
   }
   const overviewHref = routes.drill(drill.key);
@@ -113,6 +121,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
       completeBasics(basicsKey(exam.id, skill.id), { firstTry: total - r.retried.length, total });
       trackBasics("skill_learned", exam.id, drill.key, { skill: skill.id });
       setScreen("done");
+      setFireworks(true);
       return;
     }
     if (r.misses >= 2 && !r.reviewed) {
@@ -210,36 +219,56 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     );
   }
 
-  // ---- Done ----
-  if (screen === "done" && run) {
-    const firstTry = total - run.retried.length;
+  // ---- Done: just finished (with fireworks), or opened again from the Basics list ----
+  const stored = basicsMap[basicsKey(exam.id, skill.id)];
+  if (screen === "done" && (run || stored?.done)) {
+    const outOf = run ? total : stored!.total;
+    const firstTry = run ? total - run.retried.length : stored!.firstTry;
+    const retried = outOf - firstTry;
+    const revisit = !run;
+    const learnAgain = () => {
+      setRun(null);
+      setReadMode(false);
+      setScreen("learn");
+    };
     return (
       <FocusMode className="v2-focus">
+        {fireworks && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
+        {revisit && <Header title={skill.name} sub={`Basics · ${drill.name}`} closeHref={overviewHref} />}
         <div className="v2-scroll">
           <div className="v2-pop mx-auto flex max-w-md flex-col items-center gap-3 px-6 pt-10 text-center">
             <Image src={getTigerAsset(exam.id, 1)} alt="" width={120} height={120} className="h-28 w-28 object-contain" />
             <div className="text-xs font-semibold uppercase tracking-wider text-brand-dark">Skill learned</div>
             <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50">{skill.name}</h1>
             <div className="flex flex-wrap justify-center gap-2 text-xs font-semibold">
-              <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1.5">{firstTry} of {total} right first try</span>
-              {run.retried.length > 0 && <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1.5">{run.retried.length} fixed on a retry</span>}
+              <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1.5">{firstTry} of {outOf} right first try</span>
+              {retried > 0 && <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1.5">{retried} fixed on a retry</span>}
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-300">{run.retried.length ? "Every miss came back until you got it. That's how it sticks." : "Clean sweep. This rule shows up all over the real test."}</p>
+            <p className="text-sm text-gray-600 dark:text-gray-300">
+              {revisit
+                ? "You've already got this one. Run through it again any time for a refresher."
+                : retried
+                  ? "Every miss came back until you got it. That's how it sticks."
+                  : "Clean sweep. This rule shows up all over the real test."}
+            </p>
           </div>
         </div>
         <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto flex max-w-2xl flex-col gap-2">
             {nextSkill ? (
-              <>
-                <Link href={routes.basics(drill.key, nextSkill.id)} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-base font-bold text-white">
-                  Next skill: {nextSkill.name}
-                </Link>
-                <Link href={overviewHref} className="v2-tap flex items-center justify-center text-sm font-semibold text-gray-500 dark:text-gray-400">Back to the drill</Link>
-              </>
+              <Link href={routes.basics(drill.key, nextSkill.id)} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-base font-bold text-white">
+                Next skill: {nextSkill.name}
+              </Link>
             ) : (
               <Link href={overviewHref} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-base font-bold text-white">
                 Basics done: see exam level
               </Link>
+            )}
+            <button type="button" onClick={learnAgain} className="v2-tap flex items-center justify-center rounded-xl border-2 border-gray-200 dark:border-gray-800 text-base font-semibold text-gray-900 dark:text-gray-50">
+              Learn it again
+            </button>
+            {nextSkill && (
+              <Link href={overviewHref} className="v2-tap flex items-center justify-center text-sm font-semibold text-gray-500 dark:text-gray-400">Back to the drill</Link>
             )}
           </div>
         </div>

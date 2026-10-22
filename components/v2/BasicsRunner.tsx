@@ -22,6 +22,7 @@ import { getTigerAsset } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { DrillLockScreen } from "./DrillLockScreen";
+import { Fireworks } from "@/components/Fireworks";
 import { trackBasics } from "@/lib/v2/basicsTracking";
 
 /**
@@ -59,6 +60,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [explainer, setExplainer] = useState(false);
   const [walking, setWalking] = useState(false);
   const [readMode, setReadMode] = useState(false);
+  // The one-shot fireworks on the "Skill learned" screen (same canvas as Super Amazing Mode).
+  const [fireworks, setFireworks] = useState(false);
 
   useEffect(() => {
     if (hydrated && (!drill || !skill)) router.replace(drill ? routes.drill(drill.key) : routes.dashboard);
@@ -74,6 +77,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setExplainer(false);
     setWalking(false);
     setReadMode(false);
+    setFireworks(false);
   }, [skillIdParam]);
 
   // Picking disables the options, so focus goes on to Next (and the feedback is announced).
@@ -113,6 +117,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
       completeBasics(basicsKey(exam.id, skill.id), { firstTry: total - r.retried.length, total });
       trackBasics("skill_learned", exam.id, drill.key, { skill: skill.id });
       setScreen("done");
+      setFireworks(true);
       return;
     }
     if (r.misses >= 2 && !r.reviewed) {
@@ -215,6 +220,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     const firstTry = total - run.retried.length;
     return (
       <FocusMode className="v2-focus">
+        {fireworks && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
         <div className="v2-scroll">
           <div className="v2-pop mx-auto flex max-w-md flex-col items-center gap-3 px-6 pt-10 text-center">
             <Image src={getTigerAsset(exam.id, 1)} alt="" width={120} height={120} className="h-28 w-28 object-contain" />

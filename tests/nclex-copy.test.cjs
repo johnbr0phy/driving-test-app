@@ -8,6 +8,8 @@ const path = require('node:path');
 const { createRequire } = require('node:module');
 const ts = require('typescript');
 const React = require('react');
+// Imported child views also pass through tsx under the repo's JSX-preserve config.
+global.React = React;
 const { renderToStaticMarkup } = require('react-dom/server');
 const { NCLEX } = require('../lib/v2/exams/nclex.ts');
 const { SAT } = require('../lib/v2/exams/sat.ts');

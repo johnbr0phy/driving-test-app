@@ -40,7 +40,7 @@ import {
   type QuizOwner,
 } from '@/lib/server/quizzes';
 import { buildClassReport, type MemberDoc } from '@/lib/server/classReport';
-import { QUIZ_WRITING_EXAMPLE, QUIZ_WRITING_GUIDE } from '@/lib/quizWritingGuide';
+import { QUIZ_CONTEXT_GUIDANCE, QUIZ_WRITING_EXAMPLE, QUIZ_WRITING_GUIDE } from '@/lib/quizWritingGuide';
 import { answerQuizQuestion, findQuizzes, loadPlayableQuiz, nextQuizQuestion, resetQuizPlay } from '@/lib/server/mcpQuizPlay';
 
 const questionMeta = new Map<string, { question: string; category: string }>(
@@ -275,6 +275,7 @@ const quizVisibilitySchema = z
   .describe('"link" (default): anyone with the link can play. "private": only the creator. "public": also listed in the tigertest.io/quizzes library once enough people have played it.');
 
 const QUIZ_WRITING_HINT =
+  `${QUIZ_CONTEXT_GUIDANCE} ` +
   `Write every question from the person's material: ${QUIZ_OPTION_COUNT} options, exactly one correct, three plausible distractors in the same style and length as the right answer, a one-sentence explanation of why the answer is right, and a short topic label (one to three words, reused across questions). Vary the position of the correct answer. ` +
   `At least ${QUIZ_MIN_QUESTIONS} questions; a free account can save ${QUIZ_LIMITS.free.questions} questions per quiz and keep ${QUIZ_LIMITS.free.quizzes} quizzes, Premium ($9.99 one time) ${QUIZ_LIMITS.premium.questions} and ${QUIZ_LIMITS.premium.quizzes}. ` +
   `Use the material's own title (a chapter name, a course and unit, a set name) and only ask the person for a title when the material has no obvious one.`;
@@ -905,7 +906,7 @@ const tools: ToolEntry[] = [
   {
     name: 'get_quiz_writing_guide',
     description:
-      'The TigerTest rules for writing good practice-test questions: research first, four short options, a correct answer that never stands out, distractors that are plausible mistakes, rotated answer letters. Call this before writing questions for create_quiz or add_quiz_questions.',
+      'The TigerTest rules for useful, coherent quizzes: establish missing audience, purpose, scope and source facts before writing; do not invent context or personal facts. Then research, write balanced questions and check the whole set. Call this before writing questions for create_quiz or add_quiz_questions.',
     register(server) {
       server.registerTool('get_quiz_writing_guide', { description: this.description, inputSchema: {} }, async () => ({
         content: [{ type: 'text', text: `${QUIZ_WRITING_GUIDE}\n\n${QUIZ_WRITING_EXAMPLE}` }],
@@ -1289,9 +1290,9 @@ function registerPrompts(server: McpServer): void {
     {
       title: 'Write a TigerTest quiz',
       description:
-        'Write a practice test from your own material and save it with create_quiz. Includes the TigerTest question-writing rules.',
+        'First establish any missing audience, purpose, scope and reliable facts; ask focused follow-ups when material is too sparse. Then write a coherent practice test and save it with create_quiz. Includes the TigerTest question-writing rules.',
       argsSchema: {
-        material: z.string().optional().describe('The notes, chapter, syllabus or term list to write the quiz from. Optional: leave it out to be asked for it.'),
+        material: z.string().optional().describe('Source material and any audience, level, purpose, scope or length preferences already known. A short topic alone may need clarification before writing. Optional: reuse conversation context before asking for more.'),
       },
     },
     ({ material }) => ({
@@ -1304,7 +1305,7 @@ function registerPrompts(server: McpServer): void {
               `${QUIZ_WRITING_GUIDE}\n\n${QUIZ_WRITING_EXAMPLE}` +
               (material && material.trim()
                 ? `\n\nMaterial:\n${material.trim()}`
-                : '\n\nAsk me for the material (notes, a chapter, a syllabus or a term list) if I have not given it yet.'),
+                : '\n\nUse the context and sources already in our conversation. If key context or reliable facts are missing, ask only the focused questions needed before writing or saving.'),
           },
         },
       ],

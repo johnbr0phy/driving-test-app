@@ -18,6 +18,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 import { ALL_EXAMS, TRAINING_PART_MAX, TRAINING_PART_TARGET } from "@/lib/exams";
 import { getExamQuestions } from "@/lib/examData";
+import { getExamTrainingSetQuestions } from "@/lib/examTestGenerator";
 // Banks register from lib/banks/*, not from examData itself.
 import "@/lib/banks/all";
 
@@ -59,10 +60,7 @@ const problems: string[] = [];
 for (const exam of ALL_EXAMS) {
   const bank = getExamQuestions(exam.id);
   for (const def of exam.trainingSets) {
-    const ids = bank
-      .filter((q) => def.categories.includes(q.category))
-      .map((q) => q.questionId)
-      .sort((a, b) => a.localeCompare(b));
+    const ids = getExamTrainingSetQuestions(exam, def.setNumber).map((q) => q.questionId);
     if (ids.length !== def.size) problems.push(`${exam.id} set ${def.setNumber}: size ${def.size}, bank has ${ids.length}`);
     if (ids.length <= TRAINING_PART_MAX) continue;
     const category = new Map(bank.map((q) => [q.questionId, q.category]));

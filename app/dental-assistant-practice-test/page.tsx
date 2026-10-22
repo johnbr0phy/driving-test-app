@@ -53,7 +53,7 @@ const jsonLd = {
       featureList: [
         "200 dental assistant practice questions",
         "4 practice tests across the DANB GC, RHS and ICE outlines",
-        "Training sets for every domain",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -83,7 +83,7 @@ const jsonLd = {
           name: "Can I take just the RHS or ICE exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Many states require RHS or ICE on their own for expanded functions, and DANB offers each component separately. The training sets here map to the components, so you can study RHS or ICE alone and skip the rest.",
+            text: "Yes. Many states require RHS or ICE on their own for expanded functions, and DANB offers each component separately. Every practice test covers all three, and your stats show RHS and ICE accuracy on their own, so you can see where you stand on the one you need.",
           },
         },
         {
@@ -144,11 +144,11 @@ export default function DentalAssistantLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets mapped to the DANB components: chairside dentistry, the rest of General
-                Chairside, Radiation Health and Safety, and Infection Control. Questions you miss come
-                back until you have mastered them.
+                Four training sets, one for each practice test: Set 1 holds exactly the 50 questions of Test
+                1, and so on. Master the set, then take its test. Questions you miss come back until you
+                have mastered them.
               </p>
             </div>
           </div>
@@ -234,7 +234,7 @@ export default function DentalAssistantLandingPage() {
               <p>
                 The clock zones, instrument transfer, HVE placement, rubber dam steps, the amalgam and
                 composite sequence, matrix and wedge, crown and bridge, endo, perio, surgery aftercare,
-                pediatric and ortho, anesthesia setup. The chairside set is 52 questions on exactly that.
+                pediatric and ortho, anesthesia setup. 52 of the 200 questions here are on exactly that.
               </p>
             </div>
             <div>
@@ -258,8 +258,8 @@ export default function DentalAssistantLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain</h3>
               <p>
-                TigerTest tracks your accuracy by domain. After each practice test, go back to the set
-                you missed most and retake until you clear 70 percent with room to spare.
+                TigerTest tracks your accuracy by domain. After each practice test, drill the questions
+                you missed from the results, retrain that test&apos;s set, and retake until you clear 70 percent.
               </p>
             </div>
           </div>
@@ -295,8 +295,8 @@ export default function DentalAssistantLandingPage() {
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Can I take just the RHS or ICE exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
               Yes. Many states require RHS or ICE on their own for expanded functions, and DANB offers
-              each component separately. The training sets here map to the components, so you can study
-              RHS or ICE alone and skip the rest.
+              each component separately. Every practice test covers all three, and your stats show RHS and
+              ICE accuracy on their own, so you can see where you stand on the one you need.
             </p>
           </div>
           <div>

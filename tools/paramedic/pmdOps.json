@@ -1,0 +1,402 @@
+[
+  {
+    "domain": "pmdOps",
+    "test": 1,
+    "skill": "Emergency driving",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Responding with lights and siren, a paramedic approaching a red light should:",
+    "options": [
+      "Slow or stop, then proceed once every lane yields",
+      "Proceed at speed because the siren gives the right of way",
+      "Turn off the siren so drivers are not startled",
+      "Pass through at the posted speed limit"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Due regard means lights and siren request the right of way; they do not take it, and an intersection is cleared lane by lane. Most ambulance crashes happen at intersections against the light."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 1,
+    "skill": "Incident command",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In the Incident Command System, the recommended span of control for one supervisor is:",
+    "options": [
+      "1 to 2 people",
+      "3 to 7 people",
+      "8 to 12 people",
+      "15 to 20 people"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "One supervisor manages 3 to 7 people, 5 being ideal, so that orders can be given and tracked. Larger groups are split with another layer of supervision."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 1,
+    "skill": "Hazardous materials",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "At a hazardous materials incident, patient decontamination takes place in the:",
+    "options": [
+      "Hot zone",
+      "Cold zone",
+      "Warm zone",
+      "Staging area"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The warm zone is the corridor between the contaminated hot zone and the clean cold zone where decontamination happens, so nothing contaminated reaches treatment or command. Patient care beyond life-saving steps waits for the cold zone."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 1,
+    "skill": "Refusal of care",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An alert adult with decision-making capacity refuses transport after you explain the risks. You should:",
+    "options": [
+      "Transport anyway under implied consent",
+      "Ask police to place the patient on a protective hold",
+      "Leave without documenting since no care was given",
+      "Obtain a witnessed, signed refusal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A competent adult may refuse after an informed discussion, and the refusal is documented in detail and signed with a witness. Implied consent applies only when a patient cannot make decisions."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 1,
+    "skill": "Air medical safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When approaching a helicopter that has landed, the crew should:",
+    "options": [
+      "Wait for the crew's signal and approach from the front",
+      "Approach from the rear so the pilot is not distracted by the crew",
+      "Walk upslope toward the aircraft on a hillside",
+      "Carry IV poles upright to keep the lines clear"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The pilot must see everyone, so the approach is from the front or side after a crew signal, never from the tail rotor side. Approaching from uphill and carrying tall objects both put people into the rotor arc."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 1,
+    "skill": "SALT triage",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Place the steps of the SALT mass casualty approach in order.",
+    "options": [
+      "Assign a triage category and begin treatment",
+      "Sort patients globally: those who walk, those who wave, those who are still",
+      "Perform lifesaving interventions such as bleeding control and opening the airway",
+      "Assess each patient individually, the still and silent first",
+      "Transport by priority"
+    ],
+    "correct": [
+      1,
+      3,
+      2,
+      0,
+      4
+    ],
+    "explanation": "SALT begins with a global sort so the most endangered are reached first, then an individual assessment during which only quick lifesaving steps are done before a category is assigned. Treatment and transport follow the categories."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 1,
+    "skill": "START triage",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Using START triage, select the category for each patient.",
+    "rows": [
+      "Walks to the collection point with a forearm laceration",
+      "Respirations 36, radial pulse present",
+      "Not breathing after the airway is opened",
+      "Respirations 20, capillary refill under 2 seconds, follows commands, deformed femur",
+      "Respirations 24, no radial pulse"
+    ],
+    "columns": [
+      "Immediate",
+      "Delayed",
+      "Minor",
+      "Expectant or dead"
+    ],
+    "correct": [
+      2,
+      0,
+      3,
+      1,
+      0
+    ],
+    "explanation": "Walking patients are minor, respirations over 30 or an absent radial pulse make a patient immediate, a patient who passes the breathing, perfusion and mental status checks is delayed, and one who does not breathe after the airway is opened is expectant. The femur deformity does not change a delayed category."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 1,
+    "skill": "Crime scene preservation",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 3,
+    "stem": "While treating a patient at a crime scene, which practices preserve evidence? Choose three.",
+    "options": [
+      "Document anything you moved",
+      "Wash the patient's hands before transport",
+      "Enter and leave by one path",
+      "Secure the weapon in the ambulance",
+      "Avoid cutting through holes in the clothing"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "One path limits what the crew disturbs, holes in clothing tell investigators about the weapon, and a record of what was moved explains the scene later. Weapons are left for police and the patient's hands are not cleaned unless care requires it."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 2,
+    "skill": "Patient privacy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which disclosure of patient information is permitted without the patient's consent?",
+    "options": [
+      "Update to a reporter who arrives at the scene",
+      "Handoff report to the receiving emergency staff",
+      "Post in a crew group chat for case discussion",
+      "Call to the patient's employer about the absence"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Information shared for treatment, such as the handoff to the receiving team, is permitted. Reporters, employers and social chats are not part of the patient's care."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 2,
+    "skill": "Crew safety",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The most effective way to reduce crew injury during transport is to:",
+    "options": [
+      "Stand to reach equipment while the unit is moving",
+      "Have the driver avoid all hard braking",
+      "Stay belted whenever the ambulance is moving",
+      "Secure the stretcher at the head end only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An unrestrained provider in the patient compartment is the most common serious injury in ambulance crashes, so belts stay on and equipment is placed within reach before moving. The stretcher is locked at every mount."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 2,
+    "skill": "Advance directives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On arrival the family shows a valid out-of-hospital DNR order for a pulseless patient. You should:",
+    "options": [
+      "Start CPR until online medical control reviews the form",
+      "Start CPR because the family seems unsure",
+      "Attach the monitor and shock if the rhythm is shockable",
+      "Withhold resuscitation and support the family"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A valid DNR directs the crew to withhold CPR, defibrillation and advanced airways; comfort and family support are still provided. Starting CPR and then calling violates the order, and which forms are valid varies by state."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 2,
+    "skill": "Mandated reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A toddler has bruises in different stages of healing and the story does not match the injuries. Besides treating the child, you should:",
+    "options": [
+      "Report it through the channel your state requires",
+      "Confront the caregiver with the evidence on scene",
+      "Wait for the hospital to decide whether to report",
+      "Photograph the child instead of writing it down"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "EMS providers are mandated reporters; the report is made through the required channel, which varies by state, and the findings are documented objectively. Confronting the caregiver endangers the child and the crew."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 2,
+    "skill": "Medical direction",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Standing orders that let a paramedic give a drug before contacting a physician are a form of:",
+    "options": [
+      "Online medical direction",
+      "Offline medical direction",
+      "Implied consent for treatment",
+      "Continuous quality assurance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Protocols and standing orders written in advance are offline medical direction. Online direction is real-time contact by radio or phone."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 2,
+    "skill": "Radio report",
+    "difficulty": 1,
+    "format": "order",
+    "stem": "Place the elements of a radio report to the receiving hospital in the usual order.",
+    "options": [
+      "Unit identifier and estimated arrival time",
+      "Age, sex and chief complaint",
+      "Treatment given and the response to it",
+      "Assessment findings and vital signs",
+      "Pertinent history"
+    ],
+    "correct": [
+      0,
+      1,
+      4,
+      3,
+      2
+    ],
+    "explanation": "The report moves from who and when to who the patient is, then what you found and what you did, so the receiving team can prepare while you talk. Starting with treatment leaves the listener without the context."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 2,
+    "skill": "Incident command sections",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each task at a large incident, select the Incident Command System section responsible.",
+    "rows": [
+      "Ordering more backboards and oxygen cylinders",
+      "Running triage and treatment on scene",
+      "Tracking resource status and writing the action plan",
+      "Recording crew hours and equipment costs",
+      "Setting up a rehab area with food and fluids"
+    ],
+    "columns": [
+      "Operations",
+      "Planning",
+      "Logistics",
+      "Finance"
+    ],
+    "correct": [
+      2,
+      0,
+      1,
+      3,
+      2
+    ],
+    "explanation": "Operations does the work, planning tracks resources and plans the next period, logistics supplies everything from oxygen to food and rehab, and finance keeps the accounts. Rehab is a logistics function even though it serves operations crews."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 2,
+    "skill": "Crew resource management",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 3,
+    "stem": "Which practices reflect crew resource management? Choose three.",
+    "options": [
+      "Skipping the checklist on a familiar call",
+      "Closed-loop repetition of every drug order",
+      "The senior medic decides without input",
+      "Any crew member may voice a safety concern",
+      "Assigning roles before arriving at a cardiac arrest"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Crew resource management flattens the hierarchy so errors are caught: orders are read back, concerns are heard from anyone and roles are set before the pressure starts. Silent deference and skipped checklists are the failures it was designed to prevent."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 0,
+    "skill": "Exposure control",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After a needlestick during an IV start, the first action is:",
+    "options": [
+      "Squeeze the site to make it bleed",
+      "Apply bleach to the wound",
+      "Wash the site with soap and water",
+      "Finish the call and report it later"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Washing right away reduces the inoculum, and the exposure is reported immediately so that post-exposure prophylaxis can start within hours. Squeezing and bleach cause injury without benefit."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 0,
+    "skill": "Interfacility transfer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During an interfacility transfer, the sending nurse hands over a patient on a medication infusion outside your protocols. You should:",
+    "options": [
+      "Accept the patient and titrate as the nurse directed",
+      "Stop the infusion for the length of the ride",
+      "Refuse the transfer without further discussion",
+      "Contact medical direction before accepting"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A paramedic cannot manage a drug outside the scope of practice or protocol, so medical direction decides whether the transfer needs a nurse or a different drug. Stopping a needed infusion or titrating blindly both harm the patient."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 0,
+    "skill": "Quality improvement",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The purpose of a continuous quality improvement review is to:",
+    "options": [
+      "Find system fixes that prevent a repeat",
+      "Discipline the crew member who made the error",
+      "Satisfy insurance billing requirements",
+      "Replace online medical direction on calls"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Quality improvement looks at processes, not people, so that the same mistake is harder to make next time. Punishment drives errors underground."
+  },
+  {
+    "domain": "pmdOps",
+    "test": 0,
+    "skill": "Documentation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "To correct an error in a handwritten patient care report you should:",
+    "options": [
+      "Erase it completely so it cannot be read",
+      "Draw a single line through it, initial and date it",
+      "Cover it with correction fluid and write over it",
+      "Rewrite the whole report and destroy the original"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A single line leaves the original legible, and the initials and date show who changed it and when. Erasing, covering or destroying a record looks like concealment in court."
+  }
+]

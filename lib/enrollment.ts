@@ -11,21 +11,32 @@ import { isInternalBrowser } from "@/lib/internal";
 
 const KEY = "tigertest-enrolled";
 
-type EnrollRecord = { browserId: string; seen: string[]; sent: Record<string, string[]> };
+type EnrollRecord = { browserId: string; seen: string[]; sent: Record<string, string[]>; linkedUid?: string };
 
 function load(): EnrollRecord | null {
   try {
     const raw = localStorage.getItem(KEY);
     const parsed = raw ? (JSON.parse(raw) as Partial<EnrollRecord>) : {};
-    return {
-      browserId: typeof parsed.browserId === "string" ? parsed.browserId : crypto.randomUUID(),
+    const storedId = typeof parsed.browserId === "string" ? parsed.browserId : "";
+    const hadId = storedId.length > 0;
+    const rec: EnrollRecord = {
+      browserId: hadId ? storedId : crypto.randomUUID(),
       seen: Array.isArray(parsed.seen) ? parsed.seen : [],
       sent: parsed.sent && typeof parsed.sent === "object" ? parsed.sent : {},
+      linkedUid: typeof parsed.linkedUid === "string" ? parsed.linkedUid : undefined,
     };
+    // Persist a new id immediately so a later answer flush uses the same one.
+    if (!hadId) save(rec);
+    return rec;
   } catch {
     // Storage blocked: skip rather than count the same browser on every answer.
     return null;
   }
+}
+
+/** Stable logged-out id for this browser. Same id enrollments already use. */
+export function getBrowserId(): string | null {
+  return load()?.browserId ?? null;
 }
 
 function save(rec: EnrollRecord) {
@@ -37,9 +48,10 @@ function save(rec: EnrollRecord) {
 }
 
 const inFlight = new Set<string>();
+let linkInFlight = false;
 
-async function send(exams: string[]) {
-  if (typeof window === "undefined" || exams.length === 0) return;
+async function send(exams: string[], link = false) {
+  if (typeof window === "undefined") return;
   const user = auth.currentUser;
   if (isInternalBrowser(user?.email)) return;
   const rec = load();
@@ -49,8 +61,11 @@ async function send(exams: string[]) {
   for (const e of exams) if (!rec.seen.includes(e)) rec.seen.push(e);
   save(rec);
   const todo = exams.filter((e) => !sent.has(e) && !inFlight.has(`${identity}:${e}`));
-  if (todo.length === 0) return;
+  // Signup links this browser to the account even when every exam was already sent.
+  const needLink = link && !!user && rec.linkedUid !== user.uid && !linkInFlight;
+  if (todo.length === 0 && !needLink) return;
   todo.forEach((e) => inFlight.add(`${identity}:${e}`));
+  if (needLink) linkInFlight = true;
   try {
     const headers: Record<string, string> = { "Content-Type": "application/json" };
     if (user) headers.Authorization = `Bearer ${await user.getIdToken()}`;
@@ -62,23 +77,35 @@ async function send(exams: string[]) {
     });
     if (res.ok) {
       const latest = load() ?? rec;
-      latest.sent[identity] = [...new Set([...(latest.sent[identity] ?? []), ...todo])];
+      if (todo.length > 0) {
+        latest.sent[identity] = [...new Set([...(latest.sent[identity] ?? []), ...todo])];
+      }
+      if (needLink && user) latest.linkedUid = user.uid;
       save(latest);
     }
   } catch {
-    // Retried on the next answer in that exam.
+    // Retried on the next answer in that exam, or the next sign-in.
   } finally {
     todo.forEach((e) => inFlight.delete(`${identity}:${e}`));
+    if (needLink) linkInFlight = false;
   }
 }
 
 /** First answer in an exam on this browser, per signed-in identity. */
 export function trackEnrollment(examKey: string) {
-  void send([examKey]);
+  void send([examKey], !!auth.currentUser);
 }
 
-/** On sign-in: move every exam this browser answered as a guest onto the account. */
+/**
+ * On sign-in: move every exam this browser answered as a guest onto the
+ * account, and link the browser id to the uid so Weekly Active Learners
+ * counts that person once.
+ */
 export function claimEnrollments() {
+  const user = auth.currentUser;
   const rec = typeof window === "undefined" ? null : load();
-  if (rec && rec.seen.length > 0) void send(rec.seen);
+  if (!user || !rec || isInternalBrowser(user.email)) return;
+  const needLink = rec.linkedUid !== user.uid;
+  if (rec.seen.length === 0 && !needLink) return;
+  void send(rec.seen, needLink);
 }

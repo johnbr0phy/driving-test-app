@@ -1,0 +1,709 @@
+[
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Accepting an assignment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The RN is making assignments on a medical-surgical unit. Which client is the most appropriate for the RN to assign to the PN?",
+    "options": [
+      "Stable client with COPD taking oral antibiotics",
+      "Newly admitted client with chest pain awaiting evaluation",
+      "Client whose blood transfusion started 10 minutes ago",
+      "Client with new confusion the morning after surgery"
+    ],
+    "correct": [0],
+    "explanation": "The PN cares for clients whose condition is stable and predictable, such as a client with COPD who is improving on oral antibiotics. A new admission with chest pain, the first 15 minutes of a transfusion and new postoperative confusion all need the RN's assessment and judgment."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Assigning tasks to AP",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN is assigning tasks to assistive personnel (AP) on a long-term care unit. Which task is appropriate to assign to the AP?",
+    "options": [
+      "Reinforce teaching about a new inhaler",
+      "Walk a stable resident in the hallway",
+      "Check a new skin tear and describe it",
+      "Give a scheduled oral medication"
+    ],
+    "correct": [1],
+    "explanation": "Walking a stable resident is a routine task with a predictable outcome that AP can perform. Reinforcing teaching, collecting data on a new skin tear and giving medications require nursing knowledge and stay with the PN."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Reporting to the RN",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN is caring for a client 1 day after abdominal surgery. Which finding should the PN report to the RN immediately?",
+    "options": [
+      "Pain 4 of 10 after an oral analgesic",
+      "Bowel sounds absent in all four quadrants",
+      "Dressing saturated with bright red blood",
+      "Urine output of 60 mL over the past hour"
+    ],
+    "correct": [2],
+    "explanation": "A dressing saturated with bright red blood signals active bleeding and must be reported at once. Absent bowel sounds on the first day after abdominal surgery, mild pain after an analgesic and an output of 60 mL/hr are expected findings."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Right to refuse",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A competent adult client refuses the scheduled morning dose of warfarin. What should the PN do?",
+    "options": [
+      "Ask the family to persuade the client",
+      "Mix the crushed tablet into applesauce",
+      "Hold the dose and chart it as given",
+      "Document the refusal and notify the RN"
+    ],
+    "correct": [3],
+    "explanation": "A competent adult has the right to refuse any medication, so the PN documents the refusal and tells the RN, who informs the provider. Hiding a medication in food or charting a held dose as given is deceptive and falsifies the record."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Confidentiality",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a crowded elevator, a coworker asks the PN about the diagnosis of a well-known client on the unit. Which response is appropriate?",
+    "options": [
+      "\"I can't discuss any client here.\"",
+      "\"Only if you promise not to repeat it.\"",
+      "\"It has already been in the news.\"",
+      "\"Ask the charge nurse after the shift.\""
+    ],
+    "correct": [0],
+    "explanation": "Client information is shared only with staff who need it for care and never in a public place. A promise of secrecy or the diagnosis being in the news does not remove the client's right to privacy."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Do-not-resuscitate orders",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A resident with a do-not-resuscitate (DNR) order chokes during lunch and is coughing forcefully. What should the PN do?",
+    "options": [
+      "Perform abdominal thrusts immediately",
+      "Stay with the resident and encourage coughing",
+      "Take no action because of the DNR order",
+      "Call the provider to confirm the DNR order"
+    ],
+    "correct": [1],
+    "explanation": "A DNR order applies only to resuscitation after cardiac or respiratory arrest; the resident still receives every other treatment, including help with choking. A forceful cough means air is moving, so the PN encourages coughing and intervenes with abdominal thrusts only if the airway becomes blocked."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Advance directives",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client asks the PN what a durable power of attorney for health care does. Which explanation is correct?",
+    "options": [
+      "Lists the treatments you refuse at the end of life",
+      "Gives your lawyer control of your finances",
+      "Names someone to make care decisions if you can't",
+      "Takes effect only after a terminal diagnosis"
+    ],
+    "correct": [2],
+    "explanation": "A durable power of attorney for health care names a person to make health decisions when the client can no longer make them. A living will is the document that lists treatment wishes, and neither document deals with finances."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Handoff report",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN is giving a handoff report at the end of the shift. Which information is most important to include?",
+    "options": [
+      "The client walked in the hall twice",
+      "The client's family asked about visiting hours",
+      "The client prefers the window blinds closed",
+      "A pending potassium level for a digoxin client"
+    ],
+    "correct": [3],
+    "explanation": "A pending lab result that can change care, such as a potassium level in a client taking digoxin, must be handed off so the next nurse follows it up. Routine activity and preferences are documented but are not safety-critical."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Ethical practice",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN sees a coworker take a client's oral opioid from the medication cart and put it in a pocket. What should the PN do?",
+    "options": [
+      "Report the observation to the supervisor",
+      "Confront the coworker privately first",
+      "Wait to see whether it happens again",
+      "Ask the client whether the dose was given"
+    ],
+    "correct": [0],
+    "explanation": "Suspected drug diversion is reported to the supervisor right away so the client is protected and the facility can investigate. Confronting the coworker or waiting for a second event delays protection of the client and can allow evidence to disappear."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Scope of practice",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A provider calls the unit with a new prescription for a high-alert IV medication. The PN answers the phone. Per facility policy and state scope, PNs on the unit do not take telephone orders for high-alert medications. What should the PN do?",
+    "options": [
+      "Write the order and read it back",
+      "Transfer the call to the RN",
+      "Ask the provider to call back later",
+      "Enter the order for the RN to co-sign"
+    ],
+    "correct": [1],
+    "explanation": "When policy and state scope exclude the PN from taking the order, the PN hands the call to the RN, who takes and reads back the prescription. Writing or entering the order, even for a co-signature, is practicing outside the allowed role."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Informed consent",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client scheduled for a colonoscopy tells the PN, \"I signed the form, but I don't know what they're going to do.\" What should the PN do?",
+    "options": [
+      "Explain the risks of the procedure to the client",
+      "Reassure the client that the form is signed",
+      "Notify the RN before the procedure",
+      "Ask the family to explain the procedure"
+    ],
+    "correct": [2],
+    "explanation": "A signed form is not valid consent if the client does not understand the procedure, so the PN tells the RN, who contacts the provider to explain it again. Explaining risks and benefits is the provider's responsibility, not the nurse's or the family's."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Prioritizing residents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN has four residents to see at the start of the shift. Which resident should the PN see first?",
+    "options": [
+      "Resident asking for a sleeping pill",
+      "Resident due for a dressing change",
+      "Resident whose glucose was 142 mg/dL",
+      "Resident with new slurred speech"
+    ],
+    "correct": [3],
+    "explanation": "New slurred speech can be a stroke, which is time-critical, so the PN collects data and reports to the RN at once. A sleep aid, a routine dressing change and a glucose of 142 mg/dL can wait."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Assigning tasks to AP",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "Which tasks can the PN assign to assistive personnel (AP) on a long-term care unit? Select all that apply.",
+    "options": [
+      "Help a resident with a shower",
+      "Record how much of a meal a resident ate",
+      "Reinforce teaching about a low-sodium diet",
+      "Empty a urinary drainage bag and record the output",
+      "Collect data on a resident's new rash",
+      "Turn and reposition a resident every 2 hours"
+    ],
+    "correct": [0, 1, 3, 5],
+    "explanation": "Hygiene, measuring intake and output and repositioning are routine tasks AP perform for stable residents. Reinforcing teaching and collecting data on a new finding require nursing knowledge and stay with the PN, who reports the rash to the RN."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Resident rights",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "The PN is reviewing resident rights with a newly admitted long-term care resident. Which rights should the PN include? Select all that apply.",
+    "options": [
+      "Refuse a prescribed treatment",
+      "Be free from restraints used for staff convenience",
+      "Review their own medical record",
+      "Choose which staff member gives their care",
+      "Have another resident's diagnosis explained on request",
+      "Have personal mail opened only by the resident"
+    ],
+    "correct": [0, 1, 2, 5],
+    "explanation": "Residents may refuse treatment, cannot be restrained for convenience, may see their own record and have their mail kept private. They cannot pick individual staff members or learn another resident's private health information."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Incident reporting",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN finds a client on the bathroom floor. The client is alert and reports no pain. Which actions should the PN take? Select all that apply.",
+    "options": [
+      "Collect vital signs and check for injury",
+      "Notify the RN",
+      "Complete an incident report per facility policy",
+      "Chart that an incident report was filed",
+      "Describe the fall objectively in the client's record",
+      "Tell the family that a staff member was at fault"
+    ],
+    "correct": [0, 1, 2, 4],
+    "explanation": "After a fall the PN collects data, notifies the RN, documents what was found in objective terms and completes an incident report. The report is a quality tool that is not mentioned in the client's record, and blame is never assigned to the family or in the chart."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Reinforcing discharge teaching",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN is reinforcing discharge teaching with a client who had a hip replacement. Which actions are within the PN's role? Select all that apply.",
+    "options": [
+      "Review the written instructions the RN prepared",
+      "Create the discharge teaching plan",
+      "Answer questions about using the walker as taught",
+      "Report to the RN that the client cannot describe the medication schedule",
+      "Decide the client no longer needs home health",
+      "Demonstrate the hip precautions again"
+    ],
+    "correct": [0, 2, 3, 5],
+    "explanation": "The PN reinforces teaching the RN has planned, repeats demonstrations, answers questions within the plan and reports gaps in the client's understanding. Creating the teaching plan and changing the discharge plan are RN and provider decisions."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Planning care after a fall",
+    "difficulty": 2,
+    "format": "multi",
+    "passage": "0300: The RN has evaluated the resident and notified the provider. New orders: neurologic checks every hour for 4 hours, then every 4 hours for 24 hours; hold zolpidem; orthostatic vital signs; right hip x-ray in the morning; fall precautions.",
+    "stimulusId": "NCLEXPN-CS1",
+    "caseStep": 4,
+    "stem": "The PN is planning care for the rest of the night. Which tasks can the PN assign to the AP? Select all that apply.",
+    "options": [
+      "Keep the bed low with the call light in reach",
+      "Perform the hourly neurologic checks",
+      "Check on the resident every hour during rounding",
+      "Decide whether the hip x-ray is still needed",
+      "Help the resident to the bathroom with the walker",
+      "Report any vomiting or increased sleepiness at once"
+    ],
+    "correct": [0, 2, 4, 5],
+    "explanation": "The AP can keep the room safe, round hourly, assist with walking and report what they observe. Neurologic checks require nursing judgment, so the PN performs them and reports changes to the RN, and the x-ray decision belongs to the provider."
+  },
+  {
+    "domain": "pnCare",
+    "test": 1,
+    "skill": "Reporting a change in condition",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "0315: The resident is drowsier than at 0245, vomited once and now answers only to name. Right pupil 3 mm, left pupil 5 mm, both react slowly.",
+    "stimulusId": "NCLEXPN-CS1",
+    "caseStep": 5,
+    "stem": "Which action should the PN take first?",
+    "options": [
+      "Notify the RN immediately",
+      "Give the scheduled carbidopa-levodopa early",
+      "Apply a cold pack to the bump on the head",
+      "Repeat the neurologic check in 15 minutes"
+    ],
+    "correct": [0],
+    "explanation": "New drowsiness, vomiting and unequal pupils after a head strike in a resident taking apixaban point to bleeding inside the skull, so the PN reports to the RN at once so emergency transfer can be arranged. Waiting 15 minutes to recheck delays treatment, and a cold pack does nothing for intracranial bleeding."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Scope of practice",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN's shift assignment includes a client receiving a continuous IV heparin infusion whose rate is adjusted from lab results. Per facility policy and state scope, PNs do not titrate IV infusions. What should the PN do?",
+    "options": [
+      "Accept the client and change the rate only when the RN is busy",
+      "Tell the charge RN before accepting the assignment",
+      "Refuse the whole assignment for the shift",
+      "Ask the AP to watch the pump for alarms"
+    ],
+    "correct": [1],
+    "explanation": "The PN raises the scope issue with the charge RN before the shift starts so the titration is reassigned to an RN while the PN keeps the rest of the care. Changing the rate at any time is outside the PN's role, and refusing the entire assignment is not necessary."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Confidentiality",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "At a clinic, a caller who says he is a client's employer asks the PN whether the client was seen today. What should the PN do?",
+    "options": [
+      "Confirm the visit but not the reason",
+      "Transfer the call to the provider",
+      "Decline to share any information",
+      "Ask the employer to put the request in writing"
+    ],
+    "correct": [2],
+    "explanation": "Even confirming that someone is a client is protected health information and cannot be released without the client's written authorization. The provider has the same limits, and a written request from the employer does not replace the client's permission."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Rights of delegation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before assigning the AP to walk a resident in the hall, which question is most important for the PN to answer?",
+    "options": [
+      "Does the AP want to do the task?",
+      "Will the task take more than 10 minutes?",
+      "Has the AP walked other residents today?",
+      "Is the resident's condition stable?"
+    ],
+    "correct": [3],
+    "explanation": "A task is assigned only when the resident's condition is stable and the outcome predictable, which is the right circumstance for delegation. The AP's preference and the time the task takes do not decide whether it is safe to assign."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Medication error",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN gives a client's 0900 medications 2 hours late. The client is unharmed. What should the PN do?",
+    "options": [
+      "Notify the RN and file an incident report",
+      "Document the medications as given at 0900",
+      "Tell the client not to mention the delay",
+      "Skip the next dose to avoid an overlap"
+    ],
+    "correct": [0],
+    "explanation": "A late dose is a medication error even when no harm results, so the PN reports it to the RN and completes an incident report so the cause can be found. Charting the wrong time or hiding the delay falsifies the record, and skipping the next dose is a second error."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Client autonomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with advanced cancer tells the PN, \"I want to stop the chemotherapy, but my son will be angry.\" Which response is appropriate?",
+    "options": [
+      "\"Your son only wants what's best for you.\"",
+      "\"Tell me more about what you want.\"",
+      "\"You should finish the course your doctor ordered.\"",
+      "\"Let me call your son so you can talk.\""
+    ],
+    "correct": [1],
+    "explanation": "An open question lets the client explore the decision, which belongs to the client alone. Siding with the son or the provider pressures the client, and calling the son shifts the focus away from the client's own wishes."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Living will",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client's living will refuses intubation. The client's daughter tells the PN that she wants \"everything done\" if her mother stops breathing. What should the PN do?",
+    "options": [
+      "Tell the daughter the living will cannot be changed",
+      "Ask the daughter to sign a new consent form",
+      "Notify the RN of the daughter's request",
+      "Remove the living will from the chart"
+    ],
+    "correct": [2],
+    "explanation": "A conflict between a family member and a client's advance directive is reported to the RN so the provider, the client if able and the family can meet. The client's documented wishes stand unless the client changes them; a family member cannot sign them away."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "PN role in admission",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The RN asks the PN to help admit a stable client transferred from another unit. Which part of the admission is within the PN's role?",
+    "options": [
+      "Completing the comprehensive admission assessment",
+      "Developing the initial plan of care",
+      "Deciding which nursing problems take priority",
+      "Collecting vital signs and health history data"
+    ],
+    "correct": [3],
+    "explanation": "The PN collects data such as vital signs, weight, allergies and history, and contributes it to the plan. The comprehensive assessment, the initial plan of care and setting priorities are the RN's responsibilities."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Prioritizing clients",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN is assigned four clients on a medical unit. Which client should the PN check first?",
+    "options": [
+      "Client on oxygen whose SpO2 alarm is sounding",
+      "Client requesting a pain medication that is due",
+      "Client whose IV bag has 50 mL remaining",
+      "Client asking to speak with the dietitian"
+    ],
+    "correct": [0],
+    "explanation": "An oxygen saturation alarm may mean a client is not breathing adequately, which comes before pain, an IV bag that is nearly empty or a dietitian request. The PN checks the client, not just the monitor, and reports a low reading to the RN."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Time management",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN has 30 minutes left in the shift and four tasks remaining. Which task should the PN complete first?",
+    "options": [
+      "Restock the linen cart in the supply hallway",
+      "Give an antibiotic due 20 minutes ago",
+      "Document a routine dressing change",
+      "Return a family member's phone call"
+    ],
+    "correct": [1],
+    "explanation": "A late antibiotic affects the client's treatment, so it comes before documentation, restocking and a non-urgent phone call. The dressing change should still be charted before the shift ends."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Interdisciplinary team",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A long-term care resident who had a stroke coughs during meals and has lost weight. The PN reports this to the RN. Which team member evaluates the resident's swallowing?",
+    "options": [
+      "Occupational therapist",
+      "Registered dietitian nutritionist",
+      "Speech-language pathologist",
+      "Physical therapy assistant"
+    ],
+    "correct": [2],
+    "explanation": "Speech-language pathologists evaluate swallowing and recommend diet textures and feeding strategies. The dietitian addresses nutrition after the swallowing evaluation, and occupational therapy works on self-feeding skills."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Chain of command",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN tells the RN that a resident has new 2+ ankle swelling, and the RN says it can wait until the provider's rounds tomorrow. The PN disagrees. What should the PN do first?",
+    "options": [
+      "Call the provider without telling the RN",
+      "Report the RN to the state board of nursing",
+      "Chart the disagreement in the resident's record",
+      "Discuss the concern with the RN directly"
+    ],
+    "correct": [3],
+    "explanation": "The chain of command starts with talking directly to the RN about why the finding worries the PN; if the concern is not resolved, the PN goes to the charge nurse or supervisor. Going around the RN or writing a disagreement in the chart does not solve the problem for the resident."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Privacy rules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client asks the PN, \"Will my medical record be shared with my insurance company?\" Which response is accurate?",
+    "options": [
+      "\"Only what is needed for payment is shared.\"",
+      "\"Nothing can be shared without your signature.\"",
+      "\"Your whole record goes to the insurer automatically.\"",
+      "\"Only your provider can answer that question.\""
+    ],
+    "correct": [0],
+    "explanation": "Privacy rules allow the minimum necessary information to be shared for treatment, payment and health care operations without a separate authorization. The insurer does not receive the whole record, and the PN can answer this common question."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Organizing care",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "The PN is organizing care for a stable long-term care resident. For each task, specify whether the PN should assign it to the AP, perform it personally, or report it to the RN.",
+    "rows": [
+      "Weigh the resident before breakfast",
+      "Give the scheduled oral medications",
+      "Reinforce teaching about leg exercises",
+      "The resident's new complaint of chest pain",
+      "Make the bed and tidy the room",
+      "Set a new goal for the plan of care"
+    ],
+    "columns": ["Assign to AP", "PN performs", "Report to RN"],
+    "correct": [0, 1, 1, 2, 0, 2],
+    "explanation": "Weighing and housekeeping are routine tasks for the AP, while medications and reinforcing teaching stay with the PN. A new symptom and any change to the plan of care go to the RN, who assesses the resident and revises the plan."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "SBAR communication",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "The PN is calling the RN about a resident's new finding using SBAR. Place the statements in the order the PN should say them.",
+    "options": [
+      "\"Mr. Lee in room 12 has new swelling in his left calf.\"",
+      "\"He had a right knee replacement 5 days ago and finished enoxaparin 2 days ago.\"",
+      "\"The calf is warm, 3 cm larger than the right, and he rates the pain 5 of 10.\"",
+      "\"Can you come and look at him and call the provider?\""
+    ],
+    "correct": [0, 1, 2, 3],
+    "explanation": "SBAR goes Situation (what is happening now), Background (the relevant history), Assessment (the data collected) and Recommendation (what the PN is asking for). Starting with the request or the history buries the problem the RN needs to hear first."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Confidentiality",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "Which actions by the PN protect client confidentiality? Select all that apply.",
+    "options": [
+      "Log off the computer before leaving the station",
+      "Discuss a client's condition only with staff involved in the care",
+      "Post a photo of a client's wound in a private staff chat",
+      "Give lab results to a caller who says she is the client's sister",
+      "Turn the monitor away from visitors",
+      "Shred printed handoff sheets at the end of the shift"
+    ],
+    "correct": [0, 1, 4, 5],
+    "explanation": "Logging off, limiting discussion to the care team, hiding screens and shredding papers all keep information private. A photo in any chat and results given to an unverified caller are breaches, even if the group is private or the caller is honest."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Transfer report",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A long-term care resident is being transferred to the hospital for new chest pain. Which information should the PN include in the transfer report? Select all that apply.",
+    "options": [
+      "Current medications with the time of the last doses",
+      "The resident's code status",
+      "The resident's favorite activities",
+      "Allergies",
+      "Vital signs and when the chest pain started",
+      "The name of the resident's roommate"
+    ],
+    "correct": [0, 1, 3, 4],
+    "explanation": "The receiving team needs the medication list, code status, allergies and the data about the current problem to treat the resident safely. Activities and the roommate's name do not affect emergency care."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Contributing to the plan of care",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN is reviewing the plan of care with the RN for a client who has heart failure. Which contributions are within the PN's role? Select all that apply.",
+    "options": [
+      "Report the client's daily weight trend to the RN",
+      "Reinforce the low-sodium diet teaching the RN gave",
+      "Write the initial nursing diagnoses",
+      "Suggest adding a fluid intake log to the plan",
+      "Change the diuretic dose based on the weight"
+    ],
+    "correct": [0, 1, 3],
+    "explanation": "The PN contributes data, suggests interventions and reinforces teaching already planned by the RN. Writing nursing diagnoses is the RN's role, and changing a dose requires a provider's prescription."
+  },
+  {
+    "domain": "pnCare",
+    "test": 2,
+    "skill": "Reporting to the RN",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which findings require the PN to notify the RN right away? Select all that apply.",
+    "options": [
+      "New confusion in an older adult",
+      "Pain 2 of 10 after walking in the hall",
+      "Respiratory rate 28/min at rest",
+      "Blood glucose 58 mg/dL",
+      "Urine output 400 mL over 8 hours",
+      "Oral temperature 98.9 F"
+    ],
+    "correct": [0, 2, 3],
+    "explanation": "New confusion, a resting respiratory rate of 28 and a glucose of 58 mg/dL are changes that need the RN's assessment and treatment now. Mild pain with activity, 50 mL/hr of urine and a normal temperature are expected findings."
+  },
+  {
+    "domain": "pnCare",
+    "test": 0,
+    "skill": "Accepting an assignment",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN's written assignment includes a procedure the PN has never performed. What should the PN do?",
+    "options": [
+      "Look up the procedure and perform it",
+      "Tell the RN the procedure is new to the PN",
+      "Ask an AP to demonstrate the procedure",
+      "Skip the procedure and chart it as refused"
+    ],
+    "correct": [1],
+    "explanation": "A nurse performs only tasks for which they have the training and competence, so the PN tells the RN, who can reassign the task or supervise. Reading about a procedure does not make the PN competent, and an AP cannot teach a nursing skill."
+  },
+  {
+    "domain": "pnCare",
+    "test": 0,
+    "skill": "Medication administration policy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A resident's daughter asks the PN to leave the morning medications at the bedside so her mother can take them later. What should the PN do?",
+    "options": [
+      "Leave the cup and chart the dose as given",
+      "Ask the daughter to give the medications later",
+      "Stay until the resident takes the medications",
+      "Hold the medications until the next scheduled time"
+    ],
+    "correct": [2],
+    "explanation": "The nurse who prepares a medication stays with the client until it is taken and then documents it. Medications left at the bedside can be lost, taken twice or taken by someone else, and the daughter is not authorized to give them."
+  },
+  {
+    "domain": "pnCare",
+    "test": 0,
+    "skill": "Floating to another unit",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN is floated from a long-term care unit to a surgical unit for one shift. Which client is the most appropriate assignment for the floated PN?",
+    "options": [
+      "Client 2 hours after a carotid endarterectomy",
+      "Client receiving the first dose of a new IV antibiotic",
+      "Client with a chest tube on the first day after surgery",
+      "Client 3 days after a hip repair who is stable"
+    ],
+    "correct": [3],
+    "explanation": "A floated nurse is assigned clients whose needs match the skills used on the home unit, such as a stable client recovering from hip surgery. The other three clients need frequent assessment for complications that the surgical RN should manage."
+  },
+  {
+    "domain": "pnCare",
+    "test": 0,
+    "skill": "Continuity of care",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "Which actions by the PN support continuity of care across shifts? Select all that apply.",
+    "options": [
+      "Use a standardized handoff tool",
+      "Report the care plan goals and today's progress",
+      "Leave pending tasks for the next shift without mentioning them",
+      "Update the care plan with the RN as problems change",
+      "Report only the abnormal findings",
+      "Introduce the oncoming nurse to the client at the bedside"
+    ],
+    "correct": [0, 1, 3, 5],
+    "explanation": "A structured tool, progress toward goals, an updated plan and a bedside introduction keep care consistent from shift to shift. Unmentioned pending tasks and a report limited to abnormal findings leave gaps the next nurse cannot see."
+  },
+  {
+    "domain": "pnCare",
+    "test": 0,
+    "skill": "Delegation principles",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN is assigning tasks to two APs at the start of a long-term care shift. Which statements reflect correct delegation? Select all that apply.",
+    "options": [
+      "The PN remains accountable for the outcome of an assigned task",
+      "The AP can be assigned to assess a resident's pain",
+      "The AP must be told what to report and when",
+      "Tasks with a predictable outcome are the safest to assign",
+      "The AP decides which residents need vital signs",
+      "The PN follows up on the completion of each task"
+    ],
+    "correct": [0, 2, 3, 5],
+    "explanation": "The nurse who assigns a task keeps accountability, gives clear directions about what to report, chooses routine tasks with predictable outcomes and follows up. Assessment is never assigned to AP, and the nurse decides which residents need monitoring."
+  },
+  {
+    "domain": "pnCare",
+    "test": 0,
+    "skill": "Contributing to the plan of care",
+    "difficulty": 2,
+    "format": "multi",
+    "passage": "1040: The RN reviews the findings with the provider. The client agrees to treatment for depression and to referrals.",
+    "stimulusId": "NCLEXPN-CS3",
+    "caseStep": 4,
+    "stem": "The PN contributes to the plan of care. Which suggestions are appropriate for the PN to make? Select all that apply.",
+    "options": [
+      "A referral to the diabetes educator for a refresher",
+      "A referral to a grief support group",
+      "A social work consult about living alone",
+      "A diagnosis of major depressive disorder",
+      "A prescription for an antidepressant",
+      "A follow-up phone call from the clinic in 1 week"
+    ],
+    "correct": [0, 1, 2, 5],
+    "explanation": "The PN can suggest referrals, supports and follow-up that address the client's grief, isolation and lapsed self-care. Diagnosing depression and prescribing medication belong to the provider."
+  }
+]

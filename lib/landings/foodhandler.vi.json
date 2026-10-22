@@ -37,8 +37,8 @@
     "h2": "Cách hoạt động",
     "cards": [
       {
-        "h3": "Luyện tập theo chủ đề",
-        "p": "Bốn bộ: kiến thức cơ bản về an toàn thực phẩm và vệ sinh cá nhân, nhiễm bẩn và chất gây dị ứng, kiểm soát thời gian và nhiệt độ, và làm sạch và khử trùng. Những câu bạn trả lời sai sẽ quay lại cho đến khi bạn nắm vững."
+        "h3": "Luyện tập rồi thi thử",
+        "p": "Bốn bộ luyện tập, mỗi bộ cho một bài thi thử: Bộ luyện tập 1 có đúng 50 câu hỏi của Bài thi 1, và cứ thế tiếp tục. Nắm vững Bộ luyện tập 1, làm Bài thi 1 rồi đi tiếp. Những câu bạn trả lời sai sẽ quay lại cho đến khi bạn nắm vững."
       },
       {
         "h3": "Bài thi thử",
@@ -73,8 +73,8 @@
         "p": "Gà sống đặt phía trên món salad trong tủ lạnh, một tấm thớt dùng hai lần, một chai thuốc khử trùng trên bàn sơ chế, một đầu bếp bị đau bụng. Hầu hết các câu hỏi tình huống đều yêu cầu bạn nhận ra mối nguy."
       },
       {
-        "h3": "4. Luyện kỹ chủ đề bạn còn yếu",
-        "p": "TigerTest theo dõi độ chính xác của bạn theo từng chủ đề. Hầu hết các khóa học yêu cầu đạt 75% trong bài thi 40 câu, vì vậy hãy làm lại bộ bạn sai nhiều nhất cho đến khi đạt trên 85% để có dư điểm."
+        "h3": "4. Ôn lại những câu bạn sai",
+        "p": "TigerTest theo dõi độ chính xác của bạn theo từng chủ đề. Hầu hết các khóa học yêu cầu đạt 75% trong bài thi 40 câu, vì vậy sau mỗi bài thi thử, hãy ôn lại những câu bạn sai, luyện lại bộ của bài thi đó và làm lại bài thi cho đến khi đạt trên 85% để có dư điểm."
       }
     ]
   },
@@ -102,7 +102,7 @@
     },
     {
       "q": "Bài thi thử food handler của TigerTest có miễn phí không?",
-      "a": "Có. Cả bốn bài thi thử và tất cả các bộ luyện tập đều miễn phí, không cần tài khoản. Hãy tạo tài khoản miễn phí nếu bạn muốn lưu tiến độ trên nhiều thiết bị."
+      "a": "Có. Cả bốn bài thi thử và cả bốn bộ luyện tập đều miễn phí, không cần tài khoản. Hãy tạo tài khoản miễn phí nếu bạn muốn lưu tiến độ trên nhiều thiết bị."
     }
   ],
   "finalCta": {

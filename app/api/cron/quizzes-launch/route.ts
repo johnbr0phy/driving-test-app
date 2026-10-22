@@ -4,7 +4,7 @@
  *
  * One-off campaign to the whole consented base announcing quizzes
  * (lib/quizzes.ts): the person's own material as a practice test, from
- * Claude or ChatGPT through the MCP server or from the paste box on /create.
+ * connected Claude or ChatGPT through MCP, Quizlet import or the manual editor.
  * Sends to users who:
  * - Signed up 7+ days ago
  * - Were active within the last 365 days (older addresses bounce and get

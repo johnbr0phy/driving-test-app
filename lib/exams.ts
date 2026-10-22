@@ -5,8 +5,10 @@
  * Each exam is namespaced in the store by an ID range and a pseudo state
  * code so its progress never collides with DMV data:
  *   HTL   200s  (tests 201-204, sets 201-211; 204 retired)
- *   CST   300s  (tests 301-304, sets 301-305)
- *   CRCST 400s  (tests 401-404, sets 401-406)
+ *   CST   300s  (tests 301-304, sets 301-304; 305 retired)
+ *   CRCST 400s  (tests 401-404, sets 401-404; 405-406 retired)
+ *   COSMO 6000s (tests 6001-6004, sets 6001-6004)
+ *   VTNE  6100s (tests 6101-6104, sets 6101-6104)
  *
  * Adding an exam = one entry here, a question bank in data/, a bank module
  * lib/banks/<examId>.ts imported by its test, training and stats pages, a
@@ -25,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -43,6 +45,9 @@ export interface ExamTrainingSetDef {
    *  part order, so the dashboard says what each part covers instead of
    *  "part 2 of 3". scripts/build-training-parts.ts checks the count. */
   partNames?: string[];
+  /** Set on a DMV-style set (see testSets): it holds exactly practice test
+   *  N's questions, and `categories` is empty. */
+  test?: number;
 }
 
 export interface ExamConfig {
@@ -76,7 +81,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield" | "sparkles" | "paw" | "calculator";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -110,8 +115,8 @@ export interface ExamTranslation {
   name: string;
   examLabel: string;
   fullName: string;
-  /** By setNumber. */
-  trainingSets: Record<number, { name: string; weightLabel: string; partNames?: string[] }>;
+  /** By setNumber. Not used for test sets (testSets), which are named by number. */
+  trainingSets?: Record<number, { name: string; weightLabel: string; partNames?: string[] }>;
   categoryLabels: Record<string, string>;
   copy: Omit<ExamConfig["copy"], "analyticsKey">;
 }
@@ -122,6 +127,37 @@ function examTranslation(json: Omit<ExamTranslation, "copy"> & { copy: Omit<Exam
   if (json.copy.heroSubs.length !== 5) throw new Error(`${json.landingPath}: heroSubs needs 5 lines`);
   return json as ExamTranslation;
 }
+
+/**
+ * DMV-style training: set N holds exactly practice test N's 50 questions, and
+ * the dashboard runs Set 1, Test 1, Set 2, Test 2... Used by every exam whose
+ * tests cover its whole bank, except CDL Endorsements and EPA 608 (people
+ * certify one section at a time, so they train by section). Set IDs are the
+ * ones the old content-area sets used; lib/testSetMigration.ts moves their
+ * progress over by question.
+ */
+function testSets(setBase: number, testCount: number): ExamTrainingSetDef[] {
+  return Array.from({ length: testCount }, (_, i) => ({
+    setNumber: i + 1,
+    id: setBase + i + 1,
+    name: `Training Set ${i + 1}`,
+    categories: [],
+    size: 50,
+    weightLabel: "",
+    test: i + 1,
+  }));
+}
+
+/** True when the exam trains DMV-style, one set per practice test. */
+export const hasTestSets = (exam: ExamConfig) => exam.trainingSets.some((s) => s.test !== undefined);
+
+const TEST_SET_NAMES: Record<Language, (n: number) => string> = {
+  en: (n) => `Training Set ${n}`,
+  es: (n) => `Entrenamiento ${n}`,
+  vi: (n) => `Bộ luyện tập ${n}`,
+  ko: (n) => `연습 세트 ${n}`,
+  zh: (n) => `练习组 ${n}`,
+};
 
 const cdl: ExamConfig = {
   id: "cdl",
@@ -326,13 +362,7 @@ const moto: ExamConfig = {
     specialSituations: 6,
     alcoholDrugs: 5,
   },
-  trainingSets: [
-    { setNumber: 1, id: 501, name: "Preparing to Ride", categories: ["ridingPreparation"], size: 28, weightLabel: "14% of each test" },
-    { setNumber: 2, id: 502, name: "Controlling the Motorcycle", categories: ["basicControl"], size: 40, weightLabel: "20% of each test" },
-    { setNumber: 3, id: 503, name: "Positioning & Being Seen", categories: ["laneStrategy"], size: 36, weightLabel: "18% of each test" },
-    { setNumber: 4, id: 504, name: "Intersections, Passing & Hazards", categories: ["intersectionsPassing", "roadHazards"], size: 52, weightLabel: "26% of each test" },
-    { setNumber: 5, id: 505, name: "Special Situations, Alcohol & Drugs", categories: ["specialSituations", "alcoholDrugs"], size: 44, weightLabel: "22% of each test" },
-  ],
+  trainingSets: testSets(500, 4),
   categoryLabels: {
     ridingPreparation: "Preparing to Ride",
     basicControl: "Basic Vehicle Control",
@@ -348,7 +378,7 @@ const moto: ExamConfig = {
     trainingSub: "Five sets following the MSF Motorcycle Operator Manual. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions, 80% to pass",
     heroSubs: [
-      "Five chapters, four tests. Start with control.",
+      "Five chapters, four tests. Start with Training Set 1.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
@@ -385,12 +415,7 @@ const civics: ExamConfig = {
     recentHistory: 7,
     symbolsHolidays: 4,
   },
-  trainingSets: [
-    { setNumber: 1, id: 601, name: "Principles, Rights & Responsibilities", categories: ["principlesDemocracy", "rightsResponsibilities"], size: 40, weightLabel: "20% of each test" },
-    { setNumber: 2, id: 602, name: "System of Government", categories: ["systemGovernment"], size: 72, weightLabel: "36% of each test", partNames: ["Congress & Elected Officials", "President, Courts & Powers"] },
-    { setNumber: 3, id: 603, name: "American History", categories: ["colonialIndependence", "history1800s", "recentHistory"], size: 72, weightLabel: "36% of each test", partNames: ["Colonial Era & the 1800s", "Recent American History"] },
-    { setNumber: 4, id: 604, name: "Symbols & Holidays", categories: ["symbolsHolidays"], size: 16, weightLabel: "8% of each test" },
-  ],
+  trainingSets: testSets(600, 4),
   categoryLabels: {
     principlesDemocracy: "Principles of American Government",
     systemGovernment: "System of Government",
@@ -441,13 +466,7 @@ const part107: ExamConfig = {
     loadingPerformance: 5,
     operations: 18,
   },
-  trainingSets: [
-    { setNumber: 1, id: 801, name: "Regulations", categories: ["regulations"], size: 40, weightLabel: "15-25% of the exam" },
-    { setNumber: 2, id: 802, name: "Airspace & Charts", categories: ["airspace"], size: 40, weightLabel: "15-25% of the exam" },
-    { setNumber: 3, id: 803, name: "Weather", categories: ["weather"], size: 28, weightLabel: "11-16% of the exam" },
-    { setNumber: 4, id: 804, name: "Loading & Performance", categories: ["loadingPerformance"], size: 20, weightLabel: "7-11% of the exam" },
-    { setNumber: 5, id: 805, name: "Operations", categories: ["operations"], size: 72, weightLabel: "35-45% of the exam", partNames: ["Airports, Radio & Emergencies", "Pilot Health & Preflight"] },
-  ],
+  trainingSets: testSets(800, 4),
   categoryLabels: {
     regulations: "Regulations",
     airspace: "Airspace & Charts",
@@ -622,12 +641,7 @@ const cna: ExamConfig = {
     legalEthical: 1,
     healthCareTeam: 4,
   },
-  trainingSets: [
-    { setNumber: 1, id: 1101, name: "Daily Living & Restorative Care", categories: ["activitiesDailyLiving", "restorativeSkills"], size: 48, weightLabel: "22% of the exam" },
-    { setNumber: 2, id: 1102, name: "Basic Nursing Skills", categories: ["basicNursingSkills"], size: 76, weightLabel: "39% of the exam", partNames: ["Infection Control & Safety", "Vital Signs, Skin & Reporting"] },
-    { setNumber: 3, id: 1103, name: "Psychosocial Care", categories: ["emotionalMentalHealth", "spiritualCultural"], size: 24, weightLabel: "13% of the exam" },
-    { setNumber: 4, id: 1104, name: "Role of the Nurse Aide", categories: ["communication", "clientRights", "legalEthical", "healthCareTeam"], size: 52, weightLabel: "26% of the exam" },
-  ],
+  trainingSets: testSets(1100, 4),
   categoryLabels: {
     activitiesDailyLiving: "Activities of Daily Living",
     basicNursingSkills: "Basic Nursing Skills",
@@ -683,12 +697,7 @@ const ptcb: ExamConfig = {
     ptcbOrderEntry: 11,
     ptcbFederal: 9,
   },
-  trainingSets: [
-    { setNumber: 1, id: 1201, name: "Medications", categories: ["ptcbMedications"], size: 72, weightLabel: "35% of the exam", partNames: ["Drug Names & Dose Math", "Side Effects, Uses & Storage"] },
-    { setNumber: 2, id: 1202, name: "Patient Safety & Quality Assurance", categories: ["ptcbPatientSafety"], size: 48, weightLabel: "24% of the exam" },
-    { setNumber: 3, id: 1203, name: "Order Entry & Processing", categories: ["ptcbOrderEntry"], size: 44, weightLabel: "22% of the exam" },
-    { setNumber: 4, id: 1204, name: "Federal Requirements", categories: ["ptcbFederal"], size: 36, weightLabel: "19% of the exam" },
-  ],
+  trainingSets: testSets(1200, 4),
   categoryLabels: {
     ptcbMedications: "Medications",
     ptcbPatientSafety: "Patient Safety & Quality Assurance",
@@ -738,12 +747,7 @@ const phleb: ExamConfig = {
     specimenProcessing: 7,
     specialCollections: 6,
   },
-  trainingSets: [
-    { setNumber: 1, id: 1301, name: "Routine Blood Collections", categories: ["routineCollections"], size: 56, weightLabel: "28% of the exam" },
-    { setNumber: 2, id: 1302, name: "Safety & Compliance", categories: ["safetyCompliance"], size: 52, weightLabel: "26% of the exam" },
-    { setNumber: 3, id: 1303, name: "Patient Preparation", categories: ["patientPreparation"], size: 40, weightLabel: "20% of the exam" },
-    { setNumber: 4, id: 1304, name: "Processing & Special Collections", categories: ["specimenProcessing", "specialCollections"], size: 52, weightLabel: "26% of the exam" },
-  ],
+  trainingSets: testSets(1300, 4),
   categoryLabels: {
     routineCollections: "Routine Blood Collections",
     safetyCompliance: "Safety & Compliance",
@@ -803,12 +807,7 @@ const ccma: ExamConfig = {
     ccmaCommunication: 4,
     ccmaLawEthics: 2,
   },
-  trainingSets: [
-    { setNumber: 1, id: 1401, name: "Foundations & Anatomy", categories: ["ccmaFoundations", "ccmaAnatomy"], size: 32, weightLabel: "15% of the exam" },
-    { setNumber: 2, id: 1402, name: "Intake, Vitals & Patient Care", categories: ["ccmaIntakeVitals", "ccmaGeneralCare"], size: 56, weightLabel: "28% of the exam" },
-    { setNumber: 3, id: 1403, name: "Infection Control, Lab, Phlebotomy & EKG", categories: ["ccmaInfectionSafety", "ccmaLabProcedures", "ccmaPhlebotomy", "ccmaEkg"], size: 56, weightLabel: "28% of the exam" },
-    { setNumber: 4, id: 1404, name: "Coordination, Admin, Communication & Law", categories: ["ccmaCareCoordination", "ccmaAdministrative", "ccmaCommunication", "ccmaLawEthics"], size: 56, weightLabel: "29% of the exam" },
-  ],
+  trainingSets: testSets(1400, 4),
   categoryLabels: {
     ccmaFoundations: "Foundational Knowledge & Basic Science",
     ccmaAnatomy: "Anatomy & Physiology",
@@ -864,11 +863,7 @@ const cet: ExamConfig = {
     ekgSafetyPatientCare: 16,
     ekgAnalysis: 12,
   },
-  trainingSets: [
-    { setNumber: 1, id: 1501, name: "EKG Acquisition: Setup & Leads", categories: ["ekgAcquisition"], size: 88, weightLabel: "44% of the exam", partNames: ["Machine Setup & Lead Placement", "Artifact, Holter & Stress Tests"] },
-    { setNumber: 2, id: 1502, name: "Safety, Compliance & Patient Care", categories: ["ekgSafetyPatientCare"], size: 64, weightLabel: "32% of the exam", partNames: ["Privacy, Infection Control & Ethics", "Vitals, Communication & Emergencies"] },
-    { setNumber: 3, id: 1503, name: "EKG Analysis & Interpretation", categories: ["ekgAnalysis"], size: 48, weightLabel: "24% of the exam" },
-  ],
+  trainingSets: testSets(1500, 4),
   categoryLabels: {
     ekgAcquisition: "EKG Acquisition",
     ekgSafetyPatientCare: "Safety, Compliance & Patient Care",
@@ -919,12 +914,7 @@ const danb: ExamConfig = {
     rhsRadiography: 13,
     iceInfectionControl: 12,
   },
-  trainingSets: [
-    { setNumber: 1, id: 1601, name: "Chairside Dentistry (GC)", categories: ["gcChairside"], size: 52, weightLabel: "26% of the tests" },
-    { setNumber: 2, id: 1602, name: "Evaluation, Patient Management & Materials (GC)", categories: ["gcEvaluation", "gcPatientManagement", "gcDentalMaterials"], size: 48, weightLabel: "24% of the tests" },
-    { setNumber: 3, id: 1603, name: "Radiation Health & Safety (RHS)", categories: ["rhsRadiography"], size: 52, weightLabel: "26% of the tests" },
-    { setNumber: 4, id: 1604, name: "Infection Control (ICE)", categories: ["iceInfectionControl"], size: 48, weightLabel: "24% of the tests" },
-  ],
+  trainingSets: testSets(1600, 4),
   categoryLabels: {
     gcEvaluation: "Collection & Recording of Clinical Data",
     gcPatientManagement: "Patient Management & Administration",
@@ -977,12 +967,7 @@ const foodmgr: ExamConfig = {
     facilitiesPests: 3,
     managementSystems: 3,
   },
-  trainingSets: [
-    { setNumber: 1, id: 1801, name: "Contamination & Personal Hygiene", categories: ["foodborneContamination", "personalHygiene"], size: 64, weightLabel: "32% of the exam", partNames: ["Foodborne Illness & Contamination", "Personal Hygiene & Employee Health"] },
-    { setNumber: 2, id: 1802, name: "The Flow of Food", categories: ["flowOfFood"], size: 48, weightLabel: "24% of the exam" },
-    { setNumber: 3, id: 1803, name: "Time & Temperature Control", categories: ["timeTemperature"], size: 40, weightLabel: "20% of the exam" },
-    { setNumber: 4, id: 1804, name: "Cleaning, Facilities & Management", categories: ["cleaningSanitizing", "facilitiesPests", "managementSystems"], size: 48, weightLabel: "24% of the exam" },
-  ],
+  trainingSets: testSets(1800, 4),
   categoryLabels: {
     foodborneContamination: "Foodborne Illness & Contamination",
     flowOfFood: "The Flow of Food",
@@ -1038,12 +1023,7 @@ const realestate: ExamConfig = {
     reFinancing: 4,
     reMath: 5,
   },
-  trainingSets: [
-    { setNumber: 1, id: 1901, name: "Property, Ownership & Title", categories: ["rePropertyCharacteristics", "reOwnershipTitle"], size: 52, weightLabel: "25% of the exam" },
-    { setNumber: 2, id: 1902, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 40, weightLabel: "20% of the exam" },
-    { setNumber: 3, id: 1903, name: "Practice, Disclosures & Financing", categories: ["rePractice", "reDisclosures", "reFinancing"], size: 60, weightLabel: "32% of the exam" },
-    { setNumber: 4, id: 1904, name: "Valuation & Real Estate Math", categories: ["reValuation", "reMath"], size: 48, weightLabel: "23% of the exam" },
-  ],
+  trainingSets: testSets(1900, 4),
   categoryLabels: {
     rePropertyCharacteristics: "Property Characteristics, Descriptions & Use",
     reOwnershipTitle: "Ownership, Transfer & Title",
@@ -1375,12 +1355,7 @@ const insurance: ExamConfig = {
     healthProvisions: 5,
     healthPolicyTypes: 7,
   },
-  trainingSets: [
-    { setNumber: 1, id: 2001, name: "Insurance Basics & Regulation", categories: ["insuranceRegulation", "generalInsurance"], size: 36, weightLabel: "18% of the exam" },
-    { setNumber: 2, id: 2002, name: "Life Insurance Policies & Provisions", categories: ["lifeBasics", "lifePolicyTypes", "lifeProvisions"], size: 76, weightLabel: "38% of the exam", partNames: ["Life Basics & Policy Provisions", "Life Policy Types"] },
-    { setNumber: 3, id: 2003, name: "Annuities, Taxation & Health Basics", categories: ["annuitiesRetirement", "healthBasics"], size: 40, weightLabel: "20% of the exam" },
-    { setNumber: 4, id: 2004, name: "Health Policy Provisions & Types", categories: ["healthProvisions", "healthPolicyTypes"], size: 48, weightLabel: "24% of the exam" },
-  ],
+  trainingSets: testSets(2000, 4),
   categoryLabels: {
     insuranceRegulation: "Insurance Regulation",
     generalInsurance: "General Insurance Concepts",
@@ -1435,12 +1410,7 @@ const notary: ExamConfig = {
     ethicsProhibitedActs: 10,
     commissionLiability: 6,
   },
-  trainingSets: [
-    { setNumber: 1, id: 2101, name: "Notarial Acts & Certificates", categories: ["notarialActs"], size: 56, weightLabel: "28% of the tests" },
-    { setNumber: 2, id: 2102, name: "Identification & Signers", categories: ["signerIdentification"], size: 40, weightLabel: "20% of the tests" },
-    { setNumber: 3, id: 2103, name: "Journal, Seal & Records", categories: ["journalSealRecords"], size: 40, weightLabel: "20% of the tests" },
-    { setNumber: 4, id: 2104, name: "Ethics, Commission & Liability", categories: ["ethicsProhibitedActs", "commissionLiability"], size: 64, weightLabel: "32% of the tests", partNames: ["Commission & Liability", "Ethics & Prohibited Acts"] },
-  ],
+  trainingSets: testSets(2100, 4),
   categoryLabels: {
     notarialActs: "Notarial Acts & Certificates",
     signerIdentification: "Identification & Signers",
@@ -1491,12 +1461,7 @@ const foodhandler: ExamConfig = {
     fhTimeTemp: 12,
     fhCleaning: 8,
   },
-  trainingSets: [
-    { setNumber: 1, id: 2501, name: "Food Safety Basics & Personal Hygiene", categories: ["fhBasics", "fhHygiene"], size: 80, weightLabel: "40% of the tests", partNames: ["Food Safety Basics", "Personal Hygiene"] },
-    { setNumber: 2, id: 2502, name: "Contamination & Allergens", categories: ["fhContamination"], size: 40, weightLabel: "20% of the tests" },
-    { setNumber: 3, id: 2503, name: "Time & Temperature Control", categories: ["fhTimeTemp"], size: 48, weightLabel: "24% of the tests" },
-    { setNumber: 4, id: 2504, name: "Cleaning, Sanitizing & Pests", categories: ["fhCleaning"], size: 32, weightLabel: "16% of the tests" },
-  ],
+  trainingSets: testSets(2500, 4),
   categoryLabels: {
     fhBasics: "Food Safety Basics",
     fhHygiene: "Personal Hygiene",
@@ -1551,13 +1516,7 @@ const boating: ExamConfig = {
     boatOperation: 12,
     boatEmergencies: 8,
   },
-  trainingSets: [
-    { setNumber: 1, id: 2601, name: "Boat Basics & Trailering", categories: ["boatBasics"], size: 32, weightLabel: "16% of the tests" },
-    { setNumber: 2, id: 2602, name: "Required Equipment", categories: ["boatEquipment"], size: 40, weightLabel: "20% of the tests" },
-    { setNumber: 3, id: 2603, name: "Navigation Rules & Buoys", categories: ["boatNavigation"], size: 48, weightLabel: "24% of the tests" },
-    { setNumber: 4, id: 2604, name: "Safe Operation", categories: ["boatOperation"], size: 48, weightLabel: "24% of the tests" },
-    { setNumber: 5, id: 2605, name: "Emergencies", categories: ["boatEmergencies"], size: 32, weightLabel: "16% of the tests" },
-  ],
+  trainingSets: testSets(2600, 4),
   categoryLabels: {
     boatBasics: "Boat Basics",
     boatEquipment: "Required Equipment",
@@ -1608,13 +1567,7 @@ const hunter: ExamConfig = {
     hsEthicsLaws: 6,
     hsSurvival: 5,
   },
-  trainingSets: [
-    { setNumber: 1, id: 2701, name: "Firearm Safety", categories: ["hsFirearmSafety"], size: 60, weightLabel: "30% of the tests" },
-    { setNumber: 2, id: 2702, name: "Firearms, Ammunition & Archery", categories: ["hsFirearmsAmmo"], size: 32, weightLabel: "16% of the tests" },
-    { setNumber: 3, id: 2703, name: "Hunting Techniques & Game Care", categories: ["hsTechniques"], size: 32, weightLabel: "16% of the tests" },
-    { setNumber: 4, id: 2704, name: "Wildlife ID & Conservation", categories: ["hsWildlife"], size: 32, weightLabel: "16% of the tests" },
-    { setNumber: 5, id: 2705, name: "Ethics, Laws & Survival", categories: ["hsEthicsLaws", "hsSurvival"], size: 44, weightLabel: "22% of the tests" },
-  ],
+  trainingSets: testSets(2700, 4),
   categoryLabels: {
     hsFirearmSafety: "Firearm Safety",
     hsFirearmsAmmo: "Firearms & Ammunition",
@@ -1665,12 +1618,7 @@ const cpr: ExamConfig = {
     cprChoking: 6,
     cprFirstAid: 14,
   },
-  trainingSets: [
-    { setNumber: 1, id: 3101, name: "Basics, Chain of Survival & Choking", categories: ["cprBasics", "cprChoking"], size: 56, weightLabel: "28% of the tests" },
-    { setNumber: 2, id: 3102, name: "Adult CPR & AED", categories: ["cprAdult"], size: 48, weightLabel: "24% of the tests" },
-    { setNumber: 3, id: 3103, name: "Child & Infant CPR", categories: ["cprChildInfant"], size: 40, weightLabel: "20% of the tests" },
-    { setNumber: 4, id: 3104, name: "First Aid", categories: ["cprFirstAid"], size: 56, weightLabel: "28% of the tests" },
-  ],
+  trainingSets: testSets(3100, 4),
   categoryLabels: {
     cprBasics: "Basics & Chain of Survival",
     cprAdult: "Adult CPR & AED",
@@ -1722,13 +1670,7 @@ const osha: ExamConfig = {
     oshaHazcom: 10,
     oshaHealth: 9,
   },
-  trainingSets: [
-    { setNumber: 1, id: 3201, name: "Intro to OSHA & Worker Rights", categories: ["oshaIntro"], size: 32, weightLabel: "16% of the tests" },
-    { setNumber: 2, id: 3202, name: "Fall Protection", categories: ["oshaFalls"], size: 36, weightLabel: "18% of the tests" },
-    { setNumber: 3, id: 3203, name: "Electrical, Struck-By & Caught-In", categories: ["oshaElectrical", "oshaStruckCaught"], size: 56, weightLabel: "28% of the tests" },
-    { setNumber: 4, id: 3204, name: "Hazard Communication & PPE", categories: ["oshaHazcom"], size: 40, weightLabel: "20% of the tests" },
-    { setNumber: 5, id: 3205, name: "Health Hazards, Tools & Fire Safety", categories: ["oshaHealth"], size: 36, weightLabel: "18% of the tests" },
-  ],
+  trainingSets: testSets(3200, 4),
   categoryLabels: {
     oshaIntro: "Intro to OSHA & Worker Rights",
     oshaFalls: "Fall Protection",
@@ -1783,12 +1725,7 @@ const forklift: ExamConfig = {
     forkOperation: 12,
     forkLoads: 8,
   },
-  trainingSets: [
-    { setNumber: 1, id: 3301, name: "Basics, Rules & Inspection", categories: ["forkBasics", "forkInspection"], size: 72, weightLabel: "36% of the tests", partNames: ["Forklift Basics & OSHA Rules", "Inspection, Fueling & Charging"] },
-    { setNumber: 2, id: 3302, name: "Stability & Load Capacity", categories: ["forkStability"], size: 48, weightLabel: "24% of the tests" },
-    { setNumber: 3, id: 3303, name: "Safe Operation", categories: ["forkOperation"], size: 48, weightLabel: "24% of the tests" },
-    { setNumber: 4, id: 3304, name: "Load Handling, Docks & Ramps", categories: ["forkLoads"], size: 32, weightLabel: "16% of the tests" },
-  ],
+  trainingSets: testSets(3300, 4),
   categoryLabels: {
     forkBasics: "Forklift Basics & OSHA Rules",
     forkStability: "Stability & Load Capacity",
@@ -1841,12 +1778,7 @@ const alcohol: ExamConfig = {
     alcIntervention: 10,
     alcLaw: 9,
   },
-  trainingSets: [
-    { setNumber: 1, id: 3401, name: "Alcohol & the Body", categories: ["alcEffects"], size: 44, weightLabel: "22% of the tests" },
-    { setNumber: 2, id: 3402, name: "Recognizing Intoxication & Intervening", categories: ["alcIntoxication", "alcIntervention"], size: 80, weightLabel: "40% of the tests", partNames: ["Recognizing Intoxication", "Intervention & Refusing Service"] },
-    { setNumber: 3, id: 3403, name: "Checking IDs & Minors", categories: ["alcChecking"], size: 40, weightLabel: "20% of the tests" },
-    { setNumber: 4, id: 3404, name: "Laws & Liability", categories: ["alcLaw"], size: 36, weightLabel: "18% of the tests" },
-  ],
+  trainingSets: testSets(3400, 4),
   categoryLabels: {
     alcEffects: "Alcohol & the Body",
     alcIntoxication: "Recognizing Intoxication",
@@ -1899,12 +1831,7 @@ const security: ExamConfig = {
     sgEmergency: 9,
     sgSafety: 4,
   },
-  trainingSets: [
-    { setNumber: 1, id: 3601, name: "Role, Ethics & Legal Powers", categories: ["sgRole", "sgLegal"], size: 76, weightLabel: "38% of the tests", partNames: ["Legal Powers & Limits", "Role & Professionalism"] },
-    { setNumber: 2, id: 3602, name: "Observation, Patrol & Access Control", categories: ["sgObservation"], size: 40, weightLabel: "20% of the tests" },
-    { setNumber: 3, id: 3603, name: "Report Writing & Communication", categories: ["sgReports"], size: 32, weightLabel: "16% of the tests" },
-    { setNumber: 4, id: 3604, name: "Emergencies, Safety & Terrorism Awareness", categories: ["sgEmergency", "sgSafety"], size: 52, weightLabel: "26% of the tests" },
-  ],
+  trainingSets: testSets(3600, 4),
   categoryLabels: {
     sgRole: "Role & Professionalism",
     sgLegal: "Legal Powers & Limits",
@@ -1955,12 +1882,7 @@ const lifeguard: ExamConfig = {
     lgCare: 12,
     lgFacility: 8,
   },
-  trainingSets: [
-    { setNumber: 1, id: 3701, name: "Surveillance & Victim Recognition", categories: ["lgProfessional", "lgRecognition"], size: 72, weightLabel: "36% of the tests", partNames: ["Lifeguard Duties & Surveillance", "Recognizing Drowning & Distress"] },
-    { setNumber: 2, id: 3702, name: "Water Rescue Skills", categories: ["lgRescue"], size: 48, weightLabel: "24% of the tests" },
-    { setNumber: 3, id: 3703, name: "First Aid, CPR & AED", categories: ["lgCare"], size: 48, weightLabel: "24% of the tests" },
-    { setNumber: 4, id: 3704, name: "Facility Safety & Legal", categories: ["lgFacility"], size: 32, weightLabel: "16% of the tests" },
-  ],
+  trainingSets: testSets(3700, 4),
   categoryLabels: {
     lgProfessional: "Professional Lifeguard & Surveillance",
     lgRecognition: "Recognizing Drowning & Distress",
@@ -2014,12 +1936,7 @@ const pnc: ExamConfig = {
     pcLiability: 6,
     pcOther: 4,
   },
-  trainingSets: [
-    { setNumber: 1, id: 3801, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 56, weightLabel: "28% of the tests" },
-    { setNumber: 2, id: 3802, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 36, weightLabel: "18% of the tests" },
-    { setNumber: 3, id: 3803, name: "Personal Auto", categories: ["pcAuto"], size: 36, weightLabel: "18% of the tests" },
-    { setNumber: 4, id: 3804, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 72, weightLabel: "36% of the tests", partNames: ["Commercial Property & BOP", "Liability, Workers Comp & Other"] },
-  ],
+  trainingSets: testSets(3800, 4),
   categoryLabels: {
     pcGeneral: "Insurance Basics & Underwriting",
     pcPolicy: "Policy Provisions & Conditions",
@@ -2043,6 +1960,135 @@ const pnc: ExamConfig = {
     ],
     sourceLine: "Based on the general (national) portion of the property and casualty producer exam outlines. State laws and the state portion are not covered.",
     analyticsKey: "pnc",
+  },
+};
+
+const cosmetology: ExamConfig = {
+  id: "cosmetology",
+  stateCode: "COSMO",
+  idBase: 6000,
+  slug: "/cosmetology",
+  landingPath: "/cosmetology-practice-test",
+  name: "Cosmetology Practice Test",
+  shortName: "Cosmetology",
+  examLabel: "Cosmetology state board",
+  fullName: "Cosmetology state board written (theory) exam",
+  questionIdPrefix: "COSMO-",
+  icon: "sparkles",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // NIC National Cosmetology Theory Examination only. Content outline effective
+  // July 1, 2022; candidate bulletin revised January 1, 2026 with the same
+  // weights: 110 items, 100 scored, 90 minutes. That length is NIC only.
+  // Scientific Concepts 35%, Hair Care and Services 45%, Skin Care 10%,
+  // Nail Care 10%, split into the nine topics schools teach.
+  // PSI national theory (California effective April 1, 2026; PSI also lists
+  // AL, CO, GA, KY, MD, MI, TN, plus theory in MA and HI) is 110 items in
+  // 120 minutes with different weights. This bank is not weighted to PSI.
+  // NIC reports a scaled score; most NIC boards pass at 75 (varies by state).
+  blueprint: {
+    cosInfection: 9,
+    cosAnatomy: 5,
+    cosChemistry: 4,
+    cosConsult: 4,
+    cosCutStyle: 8,
+    cosTexture: 5,
+    cosColor: 5,
+    cosSkin: 5,
+    cosNails: 5,
+  },
+  trainingSets: testSets(6000, 4),
+  categoryLabels: {
+    cosInfection: "Infection Control & Safety",
+    cosAnatomy: "Anatomy & Physiology",
+    cosChemistry: "Chemistry & Electricity",
+    cosConsult: "Client Consultation & Hair Analysis",
+    cosCutStyle: "Shampooing, Haircutting & Styling",
+    cosTexture: "Chemical Texture Services",
+    cosColor: "Haircoloring",
+    cosSkin: "Skin Care Services",
+    cosNails: "Nail Care Services",
+  },
+  copy: {
+    guestPrompt: "to save your cosmetology progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets for the NIC theory exam only (110 questions, 100 scored, 90 minutes). Sciences, consultation with cutting and styling, chemical services, and skin and nails. These sets do not follow the PSI outline. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the NIC proportions (NIC only: 110 items, 90 minutes)",
+    heroSubs: [
+      "Nine topics, four tests. Infection control and hair services carry the most questions.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Go pass your state board.",
+    ],
+    sourceLine: "These sets follow the NIC theory exam only: 110 items, 100 scored, 90 minutes (outline effective July 1, 2022). PSI states, including California from April 1, 2026, use a 120-minute outline. This bank is not weighted to PSI.",
+    analyticsKey: "cosmetology",
+  },
+};
+
+const vtne: ExamConfig = {
+  id: "vtne",
+  stateCode: "VTNE",
+  idBase: 6100,
+  slug: "/vtne",
+  landingPath: "/vtne-practice-test",
+  name: "VTNE Practice Test",
+  shortName: "VTNE",
+  examLabel: "VTNE",
+  fullName: "Veterinary Technician National Examination (VTNE)",
+  questionIdPrefix: "VTNE-",
+  icon: "paw",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AAVSB VTNE Content Outline approved by the AAVSB Board of Directors in
+  // March 2023 (reproduced in the current VTNE Candidate Information Handbook,
+  // aavsb.org): 150 scored items of 170 in 3 hours. Animal Care and Nursing 20%,
+  // Pharmacy and Pharmacology 13%, Surgical Nursing 13%, Anesthesia 13%,
+  // Laboratory Procedures 9%, Diagnostic Imaging 6%, Dentistry, Emergency
+  // Medicine and Critical Care, Pain Management and Analgesia, and
+  // Communication and Veterinary Professional Support Services 5 to 7% each.
+  // The real exam passes on a scaled 425 of 800; 70% is a practice target.
+  blueprint: {
+    vtCare: 10,
+    vtPharm: 7,
+    vtSurgical: 7,
+    vtAnesthesia: 7,
+    vtLab: 5,
+    vtImaging: 3,
+    vtDentistry: 3,
+    vtEmergency: 3,
+    vtPain: 2,
+    vtComm: 3,
+  },
+  trainingSets: testSets(6100, 4),
+  categoryLabels: {
+    vtCare: "Animal Care & Nursing",
+    vtPharm: "Pharmacy & Pharmacology",
+    vtSurgical: "Surgical Nursing",
+    vtAnesthesia: "Anesthesia",
+    vtLab: "Laboratory Procedures",
+    vtImaging: "Diagnostic Imaging",
+    vtDentistry: "Dentistry",
+    vtEmergency: "Emergency Medicine & Critical Care",
+    vtPain: "Pain Management & Analgesia",
+    vtComm: "Communication & Professional Support",
+  },
+  copy: {
+    guestPrompt: "to save your VTNE progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Four sets covering the ten VTNE domains: animal care and communication, pharmacology and lab procedures, anesthesia with pain management and emergency care, and surgery with dentistry and imaging. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the VTNE's proportions",
+    heroSubs: [
+      "Ten domains, four tests. Animal care and nursing is the biggest single domain.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your VTNE window.",
+    ],
+    sourceLine: "Based on the AAVSB VTNE content outline approved March 2023. The real exam passes on a scaled score of 425; 70% here is a practice target.",
+    analyticsKey: "vtne",
   },
 };
 
@@ -2144,13 +2190,7 @@ const cst: ExamConfig = {
     microbiology: 2,
     surgicalPharmacology: 3,
   },
-  trainingSets: [
-    { setNumber: 1, id: 301, name: "Preoperative Preparation", categories: ["preoperativePreparation"], size: 24, weightLabel: "13% of the exam" },
-    { setNumber: 2, id: 302, name: "Intraoperative Procedures", categories: ["intraoperativeProcedures"], size: 92, weightLabel: "45% of the exam", partNames: ["Sterile Technique, Counts & Instruments", "Equipment, Meds & Emergencies"] },
-    { setNumber: 3, id: 303, name: "Postoperative Procedures", categories: ["postoperativeProcedures"], size: 12, weightLabel: "7% of the exam" },
-    { setNumber: 4, id: 304, name: "Ancillary Duties", categories: ["administrativePersonnel", "equipmentSterilization"], size: 28, weightLabel: "15% of the exam" },
-    { setNumber: 5, id: 305, name: "Basic Science", categories: ["anatomyPhysiology", "microbiology", "surgicalPharmacology"], size: 44, weightLabel: "20% of the exam" },
-  ],
+  trainingSets: testSets(300, 4),
   categoryLabels: {
     preoperativePreparation: "Preoperative Preparation",
     intraoperativeProcedures: "Intraoperative Procedures",
@@ -2203,14 +2243,7 @@ const crcst: ExamConfig = {
     patientCareEquipment: 2,
     professionalDevelopment: 4,
   },
-  trainingSets: [
-    { setNumber: 1, id: 401, name: "Departmental Considerations", categories: ["departmentalConsiderations"], size: 28, weightLabel: "15% of the exam" },
-    { setNumber: 2, id: 402, name: "Cleaning, Decontamination & Disinfection", categories: ["cleaningDecontamination"], size: 44, weightLabel: "21% of the exam" },
-    { setNumber: 3, id: 403, name: "Preparation & Packaging", categories: ["preparationPackaging"], size: 40, weightLabel: "21% of the exam" },
-    { setNumber: 4, id: 404, name: "Sterilization Process", categories: ["sterilizationProcess"], size: 44, weightLabel: "21% of the exam" },
-    { setNumber: 5, id: 405, name: "Storage, Inventory & Patient Equipment", categories: ["sterileStorageInventory", "patientCareEquipment"], size: 28, weightLabel: "14% of the exam" },
-    { setNumber: 6, id: 406, name: "Professional Skills", categories: ["professionalDevelopment"], size: 16, weightLabel: "8% of the exam" },
-  ],
+  trainingSets: testSets(400, 4),
   categoryLabels: {
     departmentalConsiderations: "Departmental Considerations",
     cleaningDecontamination: "Cleaning, Decontamination & Disinfection",
@@ -4153,7 +4186,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];
@@ -4298,7 +4331,11 @@ export function localizeExam(exam: ExamConfig, lang: Language): ExamConfig {
     fullName: tr.fullName,
     // English part names never show in another language: a translation
     // brings its own or the part falls back to "<set>, parte 2 de 3".
-    trainingSets: exam.trainingSets.map((s) => ({ ...s, partNames: undefined, ...tr.trainingSets[s.setNumber] })),
+    trainingSets: exam.trainingSets.map((s) =>
+      s.test !== undefined
+        ? { ...s, name: TEST_SET_NAMES[lang](s.setNumber) }
+        : { ...s, partNames: undefined, ...tr.trainingSets?.[s.setNumber] }
+    ),
     categoryLabels: { ...exam.categoryLabels, ...tr.categoryLabels },
     copy: { ...exam.copy, ...tr.copy },
   };

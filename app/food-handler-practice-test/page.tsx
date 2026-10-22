@@ -54,7 +54,7 @@ const jsonLd = {
       featureList: [
         "200 food handler practice questions",
         "4 practice tests in the real test's topic proportions",
-        "Training sets for every domain",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -153,9 +153,9 @@ export default function FoodhandlerLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets: food safety basics and personal hygiene, contamination and allergens, time and temperature control, and cleaning and sanitizing. Questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: each holds exactly the 50 questions of its test. Master Set 1, then take Test 1, and so on. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -252,7 +252,7 @@ export default function FoodhandlerLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak topic</h3>
               <p>
-                TigerTest tracks your accuracy by topic. Most courses require 75 percent on a 40-question test, so retake the set you miss most until you clear 85 percent with room to spare.
+                TigerTest tracks your accuracy by topic. Most courses require 75 percent on a 40-question test, so drill the questions you missed, retrain that test&apos;s set and retake until you clear 85 percent with room to spare.
               </p>
             </div>
           </div>

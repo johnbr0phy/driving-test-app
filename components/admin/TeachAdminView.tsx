@@ -2,7 +2,7 @@
 
 import { Fragment, useState } from "react";
 import Link from "next/link";
-import { TabHeader, fmtUpdated } from "@/components/admin/AdminTabParts";
+import { CARD, ROW, STICKY_COL, TabHeader, TableScroll, fmtUpdated } from "@/components/admin/AdminTabParts";
 import { ExternalLink, ChevronDown } from "lucide-react";
 import type { TeachAdminPayload, TeachAdminClass } from "@/lib/server/teachAdmin";
 
@@ -40,7 +40,7 @@ const SOURCE_LABELS: Record<string, string> = {
 
 function Card({ title, subtitle, children }: { title: string; subtitle?: React.ReactNode; children: React.ReactNode }) {
   return (
-    <section className="text-gray-900 dark:text-gray-50 bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 mb-6">
+    <section className={`text-gray-900 dark:text-gray-50 ${CARD} mb-4 sm:mb-6`}>
       <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">{title}</h2>
         {subtitle && <div className="text-xs text-gray-500 dark:text-gray-400">{subtitle}</div>}
@@ -52,9 +52,9 @@ function Card({ title, subtitle, children }: { title: string; subtitle?: React.R
 
 function Tile({ label, value, sub }: { label: string; value: string; sub: React.ReactNode }) {
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-4">
+    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-3 sm:p-4">
       <p className="text-xs text-gray-500 dark:text-gray-400">{label}</p>
-      <p className="text-2xl font-semibold text-gray-900 dark:text-gray-50 tabular-nums mt-1">{value}</p>
+      <p className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-50 tabular-nums mt-1">{value}</p>
       <p className="text-[11px] text-gray-500 dark:text-gray-400 mt-1">{sub}</p>
     </div>
   );
@@ -141,17 +141,17 @@ function Nudge({ nudge }: { nudge: TeachAdminPayload["nudge"] }) {
         </div>
       }
     >
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-3 gap-2 sm:gap-3">
         <Tile label="Saw it" value={fmtInt(n.shown)} sub="browsers shown the row" />
         <Tile label="Copied the link" value={fmtInt(n.copied)} sub={`${fmtPct(n.copied, n.shown)} of those shown`} />
         <Tile label="Tapped the link" value={fmtInt(n.tapped)} sub={`${fmtPct(n.tapped, n.shown)} of those shown`} />
       </div>
       {nudge.byExam.length > 0 && (
-        <div className="overflow-x-auto mt-4">
+        <TableScroll className="mt-4">
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-left text-xs text-gray-500 dark:text-gray-400">
-                <th className="font-normal py-1.5 pr-3">Test</th>
+              <tr className={`${ROW} text-left text-xs text-gray-500 dark:text-gray-400`}>
+                <th className={`font-normal py-1.5 pr-3 ${STICKY_COL}`}>Test</th>
                 <th className="font-normal py-1.5 px-3 text-right">Saw it</th>
                 <th className="font-normal py-1.5 px-3 text-right">Copied</th>
                 <th className="font-normal py-1.5 pl-3 text-right">Tapped</th>
@@ -159,8 +159,8 @@ function Nudge({ nudge }: { nudge: TeachAdminPayload["nudge"] }) {
             </thead>
             <tbody>
               {nudge.byExam.map((e) => (
-                <tr key={e.examId} className="border-t border-gray-100 dark:border-gray-800">
-                  <td className="py-1.5 pr-3">{e.examName}</td>
+                <tr key={e.examId} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                  <td className={`py-1.5 pr-3 ${STICKY_COL}`}>{e.examName}</td>
                   <td className="py-1.5 px-3 text-right tabular-nums">{fmtInt(e.shown)}</td>
                   <td className="py-1.5 px-3 text-right tabular-nums">{fmtInt(e.copied)}</td>
                   <td className="py-1.5 pl-3 text-right tabular-nums">{fmtInt(e.tapped)}</td>
@@ -168,7 +168,7 @@ function Nudge({ nudge }: { nudge: TeachAdminPayload["nudge"] }) {
               ))}
             </tbody>
           </table>
-        </div>
+        </TableScroll>
       )}
       <p className="text-[11px] text-gray-500 dark:text-gray-400 mt-4">
         The &ldquo;Teachers can use it free&rdquo; row at the top of exam dashboards, after a step turns green. Counted since {fmtDay(nudge.since)}, once per browser
@@ -182,11 +182,11 @@ function Weeks({ weeks }: { weeks: TeachAdminPayload["weeks"] }) {
   const max = Math.max(1, ...weeks.map((w) => w.joins));
   return (
     <Card title="By week" subtitle="Weeks start Monday (UTC)">
-      <div className="overflow-x-auto">
+      <TableScroll>
         <table className="w-full text-sm">
           <thead>
-            <tr className="text-left text-xs text-gray-500 dark:text-gray-400">
-              <th className="font-normal py-1.5 pr-3">Week of</th>
+            <tr className={`${ROW} text-left text-xs text-gray-500 dark:text-gray-400`}>
+              <th className={`font-normal py-1.5 pr-3 ${STICKY_COL}`}>Week of</th>
               <th className="font-normal py-1.5 px-3 text-right">Landing views</th>
               <th className="font-normal py-1.5 px-3 text-right">Classes made</th>
               <th className="font-normal py-1.5 px-3">Students joined</th>
@@ -195,8 +195,8 @@ function Weeks({ weeks }: { weeks: TeachAdminPayload["weeks"] }) {
           </thead>
           <tbody>
             {[...weeks].reverse().map((w) => (
-              <tr key={w.start} className="border-t border-gray-100 dark:border-gray-800">
-                <td className="py-1.5 pr-3 whitespace-nowrap">{fmtDay(w.start)}</td>
+              <tr key={w.start} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                <td className={`py-1.5 pr-3 whitespace-nowrap ${STICKY_COL}`}>{fmtDay(w.start)}</td>
                 <td className="py-1.5 px-3 text-right tabular-nums">{fmtInt(w.landingViews)}</td>
                 <td className="py-1.5 px-3 text-right tabular-nums">{fmtInt(w.classes)}</td>
                 <td className="py-1.5 px-3 min-w-[10rem]">
@@ -210,7 +210,7 @@ function Weeks({ weeks }: { weeks: TeachAdminPayload["weeks"] }) {
             ))}
           </tbody>
         </table>
-      </div>
+      </TableScroll>
     </Card>
   );
 }
@@ -237,8 +237,8 @@ function ClassRow({ c }: { c: TeachAdminClass }) {
   const dormant = c.students === 0;
   return (
     <>
-      <tr className="border-t border-gray-100 dark:border-gray-800 align-top">
-        <td className="py-2 pr-3">
+      <tr className={`${ROW} border-t border-gray-100 dark:border-gray-800 align-top`}>
+        <td className={`py-2 pr-3 ${STICKY_COL}`}>
           <button type="button" onClick={() => setOpen((o) => !o)} className="flex items-start gap-1 text-left">
             <ChevronDown className={`h-4 w-4 mt-0.5 flex-shrink-0 text-gray-400 transition-transform ${open ? "" : "-rotate-90"}`} />
             <span>
@@ -301,7 +301,12 @@ function ClassRow({ c }: { c: TeachAdminClass }) {
   );
 }
 
-export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdminPayload; onRefresh: () => void; refreshing: boolean }) {
+export function TeachAdminView({ data, onRefresh, refreshing, updating = false }: {
+  data: TeachAdminPayload;
+  onRefresh: () => void;
+  refreshing: boolean;
+  updating?: boolean;
+}) {
   const t = data.totals;
   return (
     <>
@@ -312,13 +317,14 @@ export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdm
         </>}
         onRefresh={onRefresh}
         refreshing={refreshing}
+        updating={updating}
       >
         <Link href="/teach" className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5">
           /teach <ExternalLink className="h-3 w-3" />
         </Link>
       </TabHeader>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 mb-4 sm:mb-6">
           <Tile label="Teachers" value={fmtInt(t.teachers)} sub={`${fmtInt(t.classes)} classes, ${fmtInt(t.classesWithStudents)} with students`} />
           <Tile label="Students joined" value={fmtInt(t.students)} sub={`${fmtInt(t.practiced)} answered at least one question`} />
           <Tile label="Active this week" value={fmtInt(t.activeThisWeek)} sub={`students, in ${fmtInt(t.classesActiveThisWeek)} ${t.classesActiveThisWeek === 1 ? "class" : "classes"}`} />
@@ -333,19 +339,19 @@ export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdm
           {data.classes.length === 0 ? (
             <p className="text-sm text-gray-500 dark:text-gray-400">No classes yet.</p>
           ) : (
-            <div className="overflow-x-auto -mx-5 px-5">
+            <TableScroll>
               <table className="w-full text-sm min-w-[56rem]">
                 <thead>
-                  <tr className="text-left text-xs text-gray-500 dark:text-gray-400">
-                    <th className="font-normal py-1.5 pr-3">Class</th>
+                  <tr className={`${ROW} text-left text-xs text-gray-500 dark:text-gray-400`}>
+                    <th className={`font-normal py-1.5 pr-3 ${STICKY_COL}`}>Class</th>
                     <th className="font-normal py-1.5 px-3">Teacher</th>
                     <th className="font-normal py-1.5 px-3">Made</th>
-                    <th className="font-normal py-1.5 px-3 text-right">Link views → joined</th>
+                    <th className="font-normal py-1.5 px-3 text-right whitespace-nowrap">Link views → joined</th>
                     <th className="font-normal py-1.5 px-3 text-right">Practiced</th>
                     <th className="font-normal py-1.5 px-3 text-right">Answers</th>
                     <th className="font-normal py-1.5 px-3 text-right">Tests</th>
-                    <th className="font-normal py-1.5 px-3">Last student</th>
-                    <th className="font-normal py-1.5 pl-3">Teacher looked</th>
+                    <th className="font-normal py-1.5 px-3 whitespace-nowrap">Last student</th>
+                    <th className="font-normal py-1.5 pl-3 whitespace-nowrap">Teacher looked</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -354,7 +360,7 @@ export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdm
                   ))}
                 </tbody>
               </table>
-            </div>
+            </TableScroll>
           )}
         </Card>
 
@@ -362,11 +368,11 @@ export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdm
           {data.schoolReferrals.length === 0 ? (
             <p className="text-sm text-gray-500 dark:text-gray-400">No school referrals yet.</p>
           ) : (
-            <div className="overflow-x-auto -mx-5 px-5">
+            <TableScroll>
               <table className="w-full text-sm min-w-[40rem]">
                 <thead>
-                  <tr className="text-left text-xs text-gray-500 dark:text-gray-400">
-                    <th className="font-normal py-1.5 pr-3">School site</th>
+                  <tr className={`${ROW} text-left text-xs text-gray-500 dark:text-gray-400`}>
+                    <th className={`font-normal py-1.5 pr-3 ${STICKY_COL}`}>School site</th>
                     <th className="font-normal py-1.5 px-3 text-right">Visits</th>
                     <th className="font-normal py-1.5 px-3 text-right">Courses</th>
                     <th className="font-normal py-1.5 px-3">Mostly landed on</th>
@@ -376,8 +382,8 @@ export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdm
                 </thead>
                 <tbody>
                   {data.schoolReferrals.map((r) => (
-                    <tr key={r.host} className="border-t border-gray-100 dark:border-gray-800">
-                      <td className="py-1.5 pr-3">
+                    <tr key={r.host} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                      <td className={`py-1.5 pr-3 ${STICKY_COL}`}>
                         {r.host}
                         <span className="block text-[11px] text-gray-500 dark:text-gray-400">{r.kind}</span>
                       </td>
@@ -390,13 +396,13 @@ export function TeachAdminView({ data, onRefresh, refreshing }: { data: TeachAdm
                   ))}
                 </tbody>
               </table>
-            </div>
+            </TableScroll>
           )}
         </Card>
 
         <Weeks weeks={data.weeks} />
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
           <Card title="Classes by test">
             <CountList
               rows={data.exams.map((e) => ({ key: e.examName, count: e.students }))}

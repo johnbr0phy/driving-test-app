@@ -1,9 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getAdminDb } from '@/lib/firebase-admin';
+import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { EXAM_ANALYTICS_KEYS } from '@/lib/exams';
 import { EXAMS_V2 } from '@/lib/v2/registry';
+import { isInternalEmail } from '@/lib/internal';
 import { grantAnswers, requestIp } from '@/lib/server/answerRateLimit';
+import { BROWSER_ID_RE, recordAnswerActivity } from '@/lib/server/weeklyActiveLearners';
 
 // Largest batch a client can legitimately accumulate: a full test completion
 // (171 questions on the ACT) plus a burst of training answers.
@@ -71,7 +73,31 @@ export async function POST(request: NextRequest) {
     }
     await db.doc('analytics/questions').set(update, { merge: true });
 
-    return NextResponse.json({ ok: true });
+    // Distinct learner for WAL. Counts stay on analytics/questions; the id
+    // goes to learnerDays. A bad token still counts the answers.
+    let learner = false;
+    const browserId = typeof body.browserId === 'string' && BROWSER_ID_RE.test(body.browserId) ? body.browserId : null;
+    let uid: string | null = null;
+    let internal = false;
+    const authHeader = request.headers.get('authorization');
+    if (authHeader?.startsWith('Bearer ')) {
+      try {
+        const decoded = await getAdminAuth().verifyIdToken(authHeader.split('Bearer ')[1]);
+        if (isInternalEmail(decoded.email)) internal = true;
+        else uid = decoded.uid;
+      } catch {
+        uid = null;
+      }
+    }
+    if (!internal && (uid || browserId)) {
+      try {
+        learner = await recordAnswerActivity(db, { uid, browserId });
+      } catch (err) {
+        console.error('Error recording learner activity:', err);
+      }
+    }
+
+    return NextResponse.json({ ok: true, learner });
   } catch (error) {
     console.error('Error tracking answered questions:', error);
     return NextResponse.json({ ok: false }, { status: 500 });

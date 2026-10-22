@@ -35,6 +35,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
   useEffect(() => { if (focusOnChange) stem.current?.focus({ preventScroll: true }); }, [question.id, focusOnChange]);
   const [passageOpen, setPassageOpen] = useState(true);
   const correct = reveal ? isCorrect(question, answer) : false;
+  const wholeNumber = !!question.numeric?.wholeNumber;
   const numericValue = useMemo(() => (typeof answer === "string" ? parseNumeric(answer) : null), [answer]);
 
   const selected = (orig: number) => Array.isArray(answer) && answer.includes(orig);
@@ -126,14 +127,14 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
             aria-describedby={`${id}-numeric-help`}
             aria-invalid={typeof answer === "string" && answer.trim() !== "" && numericValue === null}
             type="text"
-            inputMode="decimal"
+            inputMode={wholeNumber ? "numeric" : "decimal"}
             autoComplete="off"
             autoCorrect="off"
             spellCheck={false}
             disabled={disabled || reveal}
             value={typeof answer === "string" ? answer : ""}
-            onChange={(e) => onAnswer(e.target.value.replace(/[^0-9./-]/g, "").slice(0, 7))}
-            placeholder="e.g. 12, 3/4, -0.5"
+            onChange={(e) => onAnswer(e.target.value.replace(wholeNumber ? /[^0-9]/g : /[^0-9./-]/g, "").slice(0, 7))}
+            placeholder={wholeNumber ? "Type a number" : "e.g. 12, 3/4, -0.5"}
             className={`v2-tap mt-1 w-full max-w-xs rounded-lg border-2 px-4 text-xl font-semibold tabular-nums outline-none focus:border-brand ${
               reveal ? (correct ? "border-green-500 bg-green-50 dark:bg-green-950" : "border-red-400 dark:border-red-600 bg-red-50 dark:bg-red-950") : "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900"
             }`}
@@ -141,7 +142,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
           <div id={`${id}-numeric-help`} className="mt-1 text-xs text-gray-500 dark:text-gray-400">
             {typeof answer === "string" && answer.trim() !== "" && numericValue === null ? (
               <span className="text-red-600 dark:text-red-400">Enter a number, decimal, or fraction like 3/4.</span>
-            ) : (
+            ) : wholeNumber ? null : (
               "Digits, a decimal point, a slash for fractions, and a leading minus sign."
             )}
           </div>

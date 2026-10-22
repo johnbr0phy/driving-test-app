@@ -1,0 +1,391 @@
+[
+  {
+    "domain": "pnHealth",
+    "test": 1,
+    "skill": "Pregnancy nutrition",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client at 10 weeks of pregnancy asks the PN which foods to avoid. Which food should the PN say to avoid?",
+    "options": [
+      "Unpasteurized soft cheese",
+      "Cooked salmon twice a week",
+      "Pasteurized yogurt",
+      "Peanut butter on toast"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Unpasteurized dairy can carry Listeria, which crosses the placenta and can cause miscarriage or stillbirth. Low-mercury cooked fish, pasteurized dairy and peanut butter are safe and nutritious in pregnancy."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 1,
+    "skill": "Newborn safe sleep",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN is reinforcing teaching with the parents of a 2-day-old newborn. Which statement shows the teaching was effective?",
+    "options": [
+      "\"We'll put a small pillow in the crib for comfort.\"",
+      "\"We'll place the baby on the back to sleep.\"",
+      "\"We'll keep the bedroom at 80 degrees.\"",
+      "\"We'll give water between feedings.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Back sleeping on a firm, bare surface is the main way to lower the risk of sudden infant death. Pillows and soft bedding, an overheated room and water feedings in a newborn are all unsafe."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 1,
+    "skill": "Infant milestones",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A parent asks the PN whether a 12-month-old's development is on track. Which milestone is expected at 12 months?",
+    "options": [
+      "Walks up stairs alternating feet",
+      "Builds a tower of six blocks",
+      "Pulls to a stand",
+      "Speaks in two-word sentences"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "By 12 months most infants pull to stand, cruise along furniture and say one or two words. Alternating feet on stairs and six-block towers come around age 3, and two-word sentences around age 2."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 1,
+    "skill": "Cancer screening",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 42-year-old client at average risk asks the PN at what age colorectal cancer screening should start. Which response is accurate?",
+    "options": [
+      "\"At age 40.\"",
+      "\"At age 50.\"",
+      "\"At age 60.\"",
+      "\"At age 45.\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Current guidelines recommend that adults at average risk begin colorectal cancer screening at age 45. Earlier screening is for people with a family history or other risk factors, and 50 was the former starting age."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 1,
+    "skill": "Aging changes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN is collecting data on a 78-year-old resident. Which finding is an expected change of aging?",
+    "options": [
+      "Decreased sense of thirst",
+      "New confusion in the evening",
+      "Loss of bladder control",
+      "Resting tremor in one hand"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Thirst sensation declines with age, which is why older adults are at risk for dehydration and need fluids offered regularly. Confusion, incontinence and a resting tremor are signs of illness, not normal aging, and are reported to the RN."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 1,
+    "skill": "Breastfeeding",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN is reinforcing teaching about breastfeeding with a new mother. Which points should the PN include? Select all that apply.",
+    "options": [
+      "Feed the newborn 8 to 12 times in 24 hours",
+      "Expect at least 6 wet diapers a day after the first week",
+      "Give formula after each feeding to be sure the baby is full",
+      "Bring the baby to the breast with the mouth wide open",
+      "Limit each feeding to 5 minutes per breast",
+      "Refrigerated breast milk is good for up to 4 days"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "explanation": "Frequent feeding, six or more wet diapers, a wide-open latch and safe milk storage are the basics of successful breastfeeding. Routine formula top-ups reduce the milk supply, and feedings are not timed; the baby decides when to finish."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 1,
+    "skill": "Prediabetes lifestyle",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "The PN at a clinic is reinforcing lifestyle teaching with a 45-year-old client who has prediabetes. Which recommendations are correct? Select all that apply.",
+    "options": [
+      "At least 150 minutes of moderate activity a week",
+      "Losing 5 to 7 percent of body weight",
+      "Replacing sugary drinks with water",
+      "Cutting out all carbohydrates",
+      "Checking blood glucose four times a day",
+      "Quitting tobacco use"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "explanation": "Moderate weight loss, regular activity, fewer sugary drinks and stopping tobacco are the proven ways to delay type 2 diabetes. Carbohydrates are reduced and chosen well, not eliminated, and prediabetes does not need glucose checks four times a day."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 1,
+    "skill": "Aging and fall risk",
+    "difficulty": 2,
+    "format": "matrix",
+    "stimulusId": "NCLEXPN-CS1",
+    "caseStep": 2,
+    "stem": "The PN analyzes the resident's history. For each factor, specify whether it raises the risk of falling, raises the risk of injury from a fall, or does neither.",
+    "rows": [
+      "Parkinson disease",
+      "Zolpidem started 3 nights ago",
+      "Apixaban twice daily",
+      "Osteoporosis",
+      "Alendronate weekly",
+      "Mild dementia"
+    ],
+    "columns": [
+      "Raises the risk of falling",
+      "Raises the risk of injury from a fall",
+      "Neither"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Parkinson disease, a new sedative and dementia all make a fall more likely through unsteady gait, drowsiness and poor judgment about calling for help. Apixaban and osteoporosis do not cause falls but make bleeding and fractures more likely when one happens; alendronate treats the osteoporosis and does neither."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 2,
+    "skill": "Toddler nutrition",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A parent tells the PN that a 2-year-old eats \"almost nothing\" at dinner. Which response is appropriate?",
+    "options": [
+      "\"Offer a sweet dessert as a reward for eating.\"",
+      "\"Appetite drops as growth slows in toddlers.\"",
+      "\"Give a large glass of milk with each meal.\"",
+      "\"Have the child sit until the plate is finished.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Growth slows after the first year, so toddlers eat less and in bursts, and small servings with healthy snacks meet their needs. Food rewards, forced sitting and large amounts of milk that replace food all create poor eating habits."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 2,
+    "skill": "Adolescent interview",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN is collecting data from a 15-year-old at a sports physical. The parent is in the room. Which action is appropriate?",
+    "options": [
+      "Direct all of the questions to the parent",
+      "Skip the questions about sexual activity",
+      "Interview the teen alone for part of it",
+      "Have the parent answer about substance use"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Adolescents give honest answers about mood, substances and sexual activity when they are interviewed privately, so part of the visit is done without the parent. Skipping those questions or routing them through the parent misses the main health risks of this age group."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 2,
+    "skill": "Pregnancy warning signs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client at 32 weeks of pregnancy calls the clinic. Which report should the PN tell the RN about immediately?",
+    "options": [
+      "Swollen feet at the end of the day",
+      "Heartburn after large meals",
+      "Leg cramps at night",
+      "Blurred vision and a headache"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Headache with visual changes in the third trimester is a warning sign of preeclampsia and needs evaluation the same day. Ankle swelling by evening, heartburn and leg cramps are common discomforts of late pregnancy."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 2,
+    "skill": "Menopause",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 50-year-old client asks the PN how to cope with hot flashes during menopause. Which suggestion is appropriate?",
+    "options": [
+      "Dress in layers and keep the room cool",
+      "Drink a cup of hot tea before bedtime",
+      "Skip exercise until the hot flashes stop",
+      "Have a glass of wine in the evening"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Layers that can be removed, a cool room and avoiding triggers reduce the discomfort of hot flashes. Hot drinks, alcohol and inactivity make them worse."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 2,
+    "skill": "Infant car seat",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN is reinforcing car seat teaching with the parent of a newborn. Which statement by the parent is correct?",
+    "options": [
+      "\"The seat goes in the front passenger seat.\"",
+      "\"The seat faces the rear of the car.\"",
+      "\"A coat keeps the baby warm under the straps.\"",
+      "\"The chest clip sits at the baby's belly.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Infants ride rear-facing in the back seat, with the harness snug against the body and the chest clip at armpit level. A front seat airbag can kill an infant, and a bulky coat leaves the straps loose in a crash."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 2,
+    "skill": "Infant milestones",
+    "difficulty": 2,
+    "format": "cloze",
+    "stem": "Complete the sentence. A healthy 6-month-old infant is expected to [[1]] and to have [[2]].",
+    "blanks": [
+      [
+        "sit with support",
+        "walk while holding furniture",
+        "wave bye-bye",
+        "say single words"
+      ],
+      [
+        "doubled the birth weight",
+        "tripled the birth weight",
+        "the first molars",
+        "a closed anterior fontanel"
+      ]
+    ],
+    "correct": [
+      0,
+      0
+    ],
+    "explanation": "At 6 months an infant sits with support, rolls both ways and has about doubled the birth weight. Cruising, waving and first words come at 9 to 12 months, the birth weight triples by 1 year, and the anterior fontanel closes at 12 to 18 months."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 2,
+    "skill": "Adult immunizations",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN at a clinic is reinforcing teaching about recommended vaccines with a 66-year-old client. Which vaccines should the PN mention? Select all that apply.",
+    "options": [
+      "Influenza vaccine every year",
+      "Pneumococcal vaccine",
+      "Recombinant zoster (shingles) vaccine",
+      "MMR booster every 10 years",
+      "Tdap or Td booster every 10 years",
+      "HPV vaccine series"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "explanation": "Adults 65 and older are advised to have the yearly influenza vaccine, pneumococcal vaccination, the two-dose recombinant zoster vaccine and a tetanus booster every 10 years. MMR is not boosted every 10 years, and HPV vaccination is not routinely given after age 26."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 2,
+    "skill": "Well-child visit",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN is collecting data on a 4-month-old at a well-child visit. Which findings are expected? Select all that apply.",
+    "options": [
+      "Holds the head steady when held upright",
+      "Posterior fontanel closed",
+      "Brings the hands to the mouth",
+      "Transfers a toy from hand to hand",
+      "Grasps a rattle placed in the hand",
+      "Sits without support"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "explanation": "By 4 months the head is steady, the posterior fontanel has closed, and the infant brings the hands to the mouth and holds a rattle. Passing objects between hands and sitting unsupported appear closer to 6 to 8 months."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 0,
+    "skill": "Analyzing self-care cues",
+    "difficulty": 2,
+    "format": "matrix",
+    "passage": "1010 PN data collection: The client reports little appetite, \"a sandwich a day,\" has taken lisinopril \"most days,\" and has not been checking blood glucose or taking the evening metformin.",
+    "stimulusId": "NCLEXPN-CS3",
+    "caseStep": 2,
+    "stem": "The PN analyzes the findings. For each finding, specify whether it is a symptom of depression or a consequence of reduced self-care.",
+    "rows": [
+      "Waking at 3 a.m. most nights",
+      "Little appetite, \"a sandwich a day\"",
+      "\"I don't see the point in checking my sugar\"",
+      "A1C risen from 7.6% to 9.4%",
+      "6 glucose log entries in 3 months",
+      "BP 148/88 mm Hg"
+    ],
+    "columns": [
+      "Symptom of depression",
+      "Consequence of reduced self-care"
+    ],
+    "correct": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "explanation": "Early waking, a poor appetite and hopelessness about self-care are symptoms of depression after a loss. The rising A1C, the empty glucose log and the higher blood pressure follow from missed metformin doses, no monitoring and missed lisinopril."
+  },
+  {
+    "domain": "pnHealth",
+    "test": 0,
+    "skill": "Evaluating self-care outcomes",
+    "difficulty": 2,
+    "format": "multi",
+    "passage": "Six weeks later. The client started sertraline 4 weeks ago, attends a weekly grief support group and brought a glucose log. Weight 89 kg. BP 136/84 mm Hg. The client says, \"I check my sugar before breakfast and dinner now. I still miss my wife, but I'm sleeping until 6.\"",
+    "stimulusId": "NCLEXPN-CS3",
+    "caseStep": 6,
+    "stem": "The PN evaluates the client's progress. Which findings show that the plan of care is effective? Select all that apply.",
+    "options": [
+      "Blood glucose checked twice a day",
+      "Sleeping until 6 a.m.",
+      "Weight stable at 89 kg",
+      "Still grieving the spouse",
+      "BP 136/84 mm Hg",
+      "Sertraline started 4 weeks ago"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "explanation": "Regular glucose checks, longer sleep, a weight that has stopped falling and a lower blood pressure are the outcomes the plan aimed for. Continued grief is expected and not a failure, and starting a medication is an intervention, not a result."
+  }
+]

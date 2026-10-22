@@ -23,6 +23,8 @@ export interface NumericAnswer {
   answers: string[];
   /** Absolute tolerance when comparing numerically. 0 = exact. */
   tolerance?: number;
+  /** Whole-number answers only (times tables): a digits keypad and plain "Type a number" copy, no fraction or decimal hints. */
+  wholeNumber?: boolean;
 }
 
 export interface QuestionV2 {

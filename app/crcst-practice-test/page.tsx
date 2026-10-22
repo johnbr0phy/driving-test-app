@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "Is the TigerTest CRCST practice test free?",
-    a: "Yes. All four practice tests and all six training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+    a: "Yes. All four practice tests and all four training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
   },
 ];
 
@@ -73,7 +73,7 @@ const jsonLd = {
       featureList: [
         "200 CRCST practice questions",
         "4 blueprint-weighted practice tests",
-        "Training sets for all 7 HSPA exam sections",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -140,10 +140,11 @@ export default function CRCSTLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Exam Section</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Sets follow the seven HSPA sections. Get instant feedback after each answer, and
-                questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1,
+                and so on. Master Set 1, take Test 1, then move on. Get instant feedback after each
+                answer, and questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -233,7 +234,7 @@ export default function CRCSTLandingPage() {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Weight your study like the exam</h3>
               <p>
                 Decontamination, preparation and packaging, and sterilization are 21 percent each, so
-                start with those three training sets. Departmental considerations is next at 15 percent.
+                every practice test gives them the most questions. Departmental considerations is next at 15 percent.
               </p>
             </div>
             <div>
@@ -246,8 +247,8 @@ export default function CRCSTLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
-                TigerTest tracks your accuracy by content area. After each practice test, go back to the
-                training set for the area you missed most.
+                TigerTest tracks your accuracy by content area. After each practice test, drill the
+                questions you missed, retrain that test&apos;s set, and retake until you clear 70 percent.
               </p>
             </div>
           </div>

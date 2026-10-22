@@ -306,57 +306,6 @@ export function quizExamId(code: string): string {
   return `quiz:${code}`;
 }
 
-// ─── A quiz pasted back from the person's own assistant ────────────────────
-
-export interface AssistantQuiz {
-  title: string;
-  description: string;
-  questions: QuizQuestionInput[];
-}
-
-/**
- * Parse what ChatGPT or Claude replied to the copied prompt (lib/quizWritingGuide.ts
- * quizAssistantPrompt): a JSON object {title, description, questions}, or a
- * bare array of questions, possibly inside a code fence or prose. Questions
- * that fail validation are dropped; the count of drops is returned.
- */
-export function parseAssistantQuiz(text: string): { ok: true; quiz: AssistantQuiz; dropped: number } | { ok: false; error: string } {
-  const body = text.replace(/```(?:json)?/gi, "");
-  const objStart = body.indexOf("{");
-  const arrStart = body.indexOf("[");
-  const useArray = arrStart >= 0 && (objStart < 0 || arrStart < objStart);
-  const start = useArray ? arrStart : objStart;
-  const end = useArray ? body.lastIndexOf("]") : body.lastIndexOf("}");
-  if (start < 0 || end <= start) return { ok: false, error: "That doesn't look like the assistant's answer. Paste the whole reply, including the curly braces." };
-  let parsed: unknown;
-  try {
-    parsed = JSON.parse(body.slice(start, end + 1));
-  } catch {
-    return { ok: false, error: "The reply isn't valid JSON. Ask the assistant to send it again as JSON only, then paste the whole thing." };
-  }
-  const obj = Array.isArray(parsed) ? { questions: parsed } : ((parsed ?? {}) as Record<string, unknown>);
-  const raw = Array.isArray(obj.questions) ? obj.questions : [];
-  const questions: QuizQuestionInput[] = [];
-  let dropped = 0;
-  for (const q of raw) {
-    const r = validateQuizQuestion(q);
-    if (r.ok) questions.push(r.question);
-    else dropped++;
-  }
-  if (questions.length < QUIZ_MIN_QUESTIONS) {
-    return { ok: false, error: questions.length ? `Only ${questions.length} usable questions in that reply. A quiz needs at least ${QUIZ_MIN_QUESTIONS}.` : "No questions found in that reply." };
-  }
-  return {
-    ok: true,
-    dropped,
-    quiz: {
-      title: cleanQuizTitle(obj.title),
-      description: cleanQuizDescription(obj.description),
-      questions,
-    },
-  };
-}
-
 // ─── Quizlet import ─────────────────────────────────────────────────────────
 
 /**

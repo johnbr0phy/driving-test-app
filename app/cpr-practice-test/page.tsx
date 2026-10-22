@@ -53,7 +53,7 @@ const jsonLd = {
       featureList: [
         "200 CPR, AED and first aid practice questions",
         "4 practice tests weighted like the written exam",
-        "Training sets for every topic",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -153,9 +153,9 @@ export default function CprLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Topic</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets: basics and choking, adult CPR and AED, child and infant CPR, and first aid. Questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: each holds exactly the 50 questions of its test. Master Set 1, then take Test 1, and so on. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -252,7 +252,7 @@ export default function CprLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill the first aid recognition items</h3>
               <p>
-                FAST for stroke, chewed aspirin for a heart attack with no allergy or bleeding, epinephrine in the outer thigh for anaphylaxis, direct pressure then a tourniquet for severe bleeding, cool water not ice for burns, and nothing by mouth for anyone who is not fully alert. TigerTest tracks your accuracy by topic so you can retake the set you miss most until you clear 90 percent.
+                FAST for stroke, chewed aspirin for a heart attack with no allergy or bleeding, epinephrine in the outer thigh for anaphylaxis, direct pressure then a tourniquet for severe bleeding, cool water not ice for burns, and nothing by mouth for anyone who is not fully alert. TigerTest tracks your accuracy by topic, so drill the questions you missed, retrain that test&apos;s set and retake until you clear 90 percent.
               </p>
             </div>
           </div>

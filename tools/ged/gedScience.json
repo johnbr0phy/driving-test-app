@@ -1,0 +1,1001 @@
+[
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Mean of trials",
+    "difficulty": 1,
+    "format": "numeric",
+    "stimulusId": "GED-SC-01",
+    "caseStep": 1,
+    "calculator": true,
+    "stem": "Based on Table 1, what was the mean height, in centimeters, of the three plants that received 2 g of fertilizer? Record your answer to the nearest tenth.",
+    "numeric": {
+      "answers": [
+        "14.3"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Add the three heights at 2 g, 13.8 + 14.4 + 14.7 = 42.9 cm, and divide by 3 to get 14.3 cm. Averaging the whole table or only two of the pots gives a different number."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Independent variable",
+    "difficulty": 1,
+    "format": "single",
+    "stimulusId": "GED-SC-01",
+    "caseStep": 2,
+    "stem": "Which variable did the students change on purpose in this experiment?",
+    "options": [
+      "The amount of fertilizer in each pot",
+      "The height of each plant after 4 weeks",
+      "The amount of water given to each pot",
+      "The type of soil used in the pots"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The independent variable is the one the experimenters deliberately change, and here only the fertilizer amount differed between groups. Plant height is the dependent variable that was measured, and water and soil were kept the same for every pot."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Drawing conclusions from data",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SC-01",
+    "caseStep": 3,
+    "stem": "Which conclusion is best supported by the data in Table 1?",
+    "options": [
+      "Plants grew taller with every increase in the amount of fertilizer",
+      "Fertilizer helped growth up to 2 g, then larger amounts reduced it",
+      "Fertilizer had no measurable effect on plant height",
+      "Plants given no fertilizer grew taller than all other groups"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mean height rose from about 10.1 cm with no fertilizer to 14.3 cm at 2 g, then fell to 13.8 cm at 3 g and to 8.9 cm at 4 g, below the unfertilized plants. So more fertilizer did not always mean more growth."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Food webs",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In a grassland, grasses are eaten by rabbits and grasshoppers. Rabbits are eaten by foxes and by hawks. Grasshoppers are eaten by songbirds, which are also eaten by hawks. One summer a disease spreads through the rabbit population and kills most of the rabbits.",
+    "stem": "Based on the passage, which change in the grassland is most likely in the months after the disease?",
+    "options": [
+      "Grasshopper numbers fall because hawks eat more of them",
+      "Songbirds die out because they lose their food supply",
+      "Foxes decline because most of their food is gone",
+      "Grasses decline because fewer rabbits spread their seeds"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Foxes eat only rabbits in this food web, so losing most rabbits leaves them short of food and their numbers are likely to fall. Hawks can switch to songbirds, hawks do not eat grasshoppers, and with fewer rabbits grazing, the grasses would more likely increase than decline."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Punnett square probability",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In pea plants, the allele for tall stems (T) is dominant over the allele for short stems (t). A plant with the genotype Tt is crossed with another Tt plant.",
+    "stem": "What percentage of the offspring are expected to have short stems?",
+    "options": [
+      "0%",
+      "25%",
+      "50%",
+      "75%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Tt x Tt cross gives TT, Tt, Tt and tt in equal shares, and only the tt plants, one in four, are short because a single T allele makes a plant tall. 75% is the share expected to be tall."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Cell structures",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each cell structure, select whether it is found only in plant cells or in both plant and animal cells.",
+    "rows": [
+      "Cell wall",
+      "Chloroplast",
+      "Mitochondrion",
+      "Cell membrane",
+      "Nucleus"
+    ],
+    "columns": [
+      "Plant cells only",
+      "Both plant and animal cells"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "explanation": "Plant cells have a rigid cell wall outside the membrane and chloroplasts for photosynthesis, which animal cells lack. Both kinds of cells have a membrane, a nucleus that holds the DNA, and mitochondria that release energy from food."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Photosynthesis",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A student places a sprig of a water plant in a beaker of water and sets a lamp beside it. Within minutes, small gas bubbles begin rising from the plant. When the lamp is moved farther away, bubbles rise more slowly. When the lamp is turned off, the bubbling stops.",
+    "stem": "What is the best explanation for the bubbles?",
+    "options": [
+      "The plant is releasing carbon dioxide as it breaks down stored sugar",
+      "Heat from the lamp is boiling the water around the plant",
+      "Air trapped inside the plant is escaping as the leaves warm",
+      "The plant is releasing oxygen as it carries out photosynthesis"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The bubbling rises and falls with the light, which is what photosynthesis needs, and oxygen is the gas it gives off. Cellular respiration releases carbon dioxide but happens with or without light, and a desk lamp does not boil a beaker of water."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Natural selection",
+    "difficulty": 3,
+    "format": "multi",
+    "select": 2,
+    "passage": "On an island, a species of beetle comes in green and brown forms. A study counted the two forms over 10 years, during which a long drought turned most of the island's grasses brown. Birds that eat the beetles hunt by sight. In year 1, green beetles were 70% of the population. In year 10, green beetles were 20% of the population and brown beetles were 80%. The total number of beetles was about the same in both years.",
+    "stem": "Which two conclusions are supported by the study? Choose two.",
+    "options": [
+      "Brown beetles became harder for birds to spot after the drought",
+      "The drought caused green beetles to change their color to brown",
+      "Beetles with the brown trait left more offspring than green beetles did",
+      "The total beetle population fell sharply during the drought",
+      "Green beetles stopped reproducing once the grasses turned brown"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Against brown grass, brown beetles are camouflaged, so more of them survive to reproduce and the brown share of the population grows. Individual beetles do not change color, the passage says the total stayed about the same, and some green beetles must still reproduce since 20% remain."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Density calculation",
+    "difficulty": 2,
+    "format": "numeric",
+    "calculator": true,
+    "stem": "A student measures a block of metal. Its mass is 54.0 g, and when it is placed in a graduated cylinder it raises the water level from 30.0 mL to 50.0 mL. Density is mass divided by volume, and 1 mL equals 1 cubic centimeter. What is the density of the metal in grams per cubic centimeter? Record your answer to the nearest tenth.",
+    "numeric": {
+      "answers": [
+        "2.7",
+        "2.70"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The volume is the water the block displaced, 50.0 - 30.0 = 20.0 mL, so the density is 54.0 g / 20.0 cm³ = 2.7 g/cm³, the density of aluminum. Dividing by 50.0 mL, the final reading, gives 1.1 and is a common error."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Patterns in data",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SC-02",
+    "caseStep": 1,
+    "stem": "Which statement is best supported by the data in Table 1?",
+    "options": [
+      "Doubling the ramp height from 10 cm to 20 cm more than tripled the distance",
+      "The car rolled about the same distance at every ramp height",
+      "Each 10 cm added to the ramp height added about 60 cm to the distance",
+      "The distance rolled decreased as the ramp was raised"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The mean distances go 60, 121, 180, 241 cm, rising by about 60 cm for each 10 cm of height, so distance and height are roughly proportional. Doubling the height from 10 to 20 cm doubled, not tripled, the distance."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Controlled variables",
+    "difficulty": 1,
+    "format": "single",
+    "stimulusId": "GED-SC-02",
+    "caseStep": 2,
+    "stem": "Which of the following was held constant in every trial?",
+    "options": [
+      "The height of the raised end of the ramp",
+      "The distance the car rolled across the floor",
+      "The speed of the car at the bottom of the ramp",
+      "The toy car and the ramp that were used"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage says the same car and the same ramp were used in every trial, so they are controlled variables. Ramp height was changed on purpose, and the rolling distance and the car's speed were results that changed with it."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Predicting from a trend",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SC-02",
+    "caseStep": 3,
+    "stem": "If the students raised the ramp to 50 cm, the car would most likely roll a distance of about:",
+    "options": [
+      "300 cm",
+      "241 cm",
+      "360 cm",
+      "480 cm"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The distance rose by about 60 cm for each 10 cm of ramp height, so one more step past 241 cm at 40 cm gives about 300 cm. 241 cm is the 40 cm result, and 480 cm would need the distance to double between 40 cm and 50 cm."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Balanced equations",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Hydrogen gas burns in oxygen to form water. The balanced equation is 2H₂ + O₂ → 2H₂O. In a balanced equation, the number of atoms of each element is the same before and after the reaction, so 2 molecules of hydrogen and 1 molecule of oxygen always make 2 molecules of water.",
+    "stem": "A student starts with 6 molecules of hydrogen (H₂) and 3 molecules of oxygen (O₂). If all of it reacts, how many molecules of water are formed?",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "12"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The equation shows 2 hydrogen molecules and 1 oxygen molecule make 2 water molecules, so 6 H₂ and 3 O₂ are three times that recipe and give 6 H₂O. Adding the reactant molecules, 9, or counting atoms, 12, is not what the equation says."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Phase changes",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "A student heats a beaker of ice on a hot plate and records the temperature every minute. The temperature holds at 0°C for several minutes while the ice melts, then rises steadily. At 100°C the temperature stops rising and stays there for the rest of the experiment, even though the hot plate keeps adding heat and the water boils away.",
+    "stem": "Why does the temperature stay at 100°C while the water boils?",
+    "options": [
+      "The hot plate cannot heat anything above 100°C",
+      "The steam carries the heat away before the thermometer can read it",
+      "The added energy goes into changing liquid water into gas",
+      "The beaker absorbs the extra heat instead of the water"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "During a phase change, the energy added separates the molecules from one another instead of raising their average speed, so the temperature holds steady until all the liquid has become gas. The same thing happened at 0°C while the ice melted."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Force and acceleration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 5 kg cart on a smooth floor is pushed with a steady force of 20 N. Using force = mass x acceleration, what is the cart's acceleration?",
+    "options": [
+      "4 m/s²",
+      "15 m/s²",
+      "25 m/s²",
+      "100 m/s²"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rearranging force = mass x acceleration gives acceleration = force / mass = 20 N / 5 kg = 4 m/s². Multiplying gives 100 and subtracting gives 15; neither is a valid rearrangement of the formula."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Chemical and physical changes",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which of the following are chemical changes, in which a new substance forms? Select all that apply.",
+    "options": [
+      "Iron rusting on a wet fence",
+      "Wood burning in a campfire",
+      "Ice melting in a glass",
+      "Sugar dissolving in tea",
+      "Bread dough rising and baking"
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Rust, ash and smoke, and baked bread are new substances with different properties from what you started with. Melting and dissolving change only the state or the mixture; the ice is still water and the sugar can be recovered by evaporating the tea."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Climate data",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SC-03",
+    "caseStep": 1,
+    "stem": "In which hemisphere is this city most likely located, and why?",
+    "options": [
+      "Northern, because July is the wettest month and the rainy season is summer",
+      "Southern, because the warmest months are December through February",
+      "Northern, because temperatures peak in January",
+      "Southern, because the driest month is February"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The highest temperatures fall in December, January and February, which are summer months south of the equator and winter months north of it. Rainfall patterns alone do not tell you the hemisphere."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Reading a data table",
+    "difficulty": 1,
+    "format": "single",
+    "stimulusId": "GED-SC-03",
+    "caseStep": 2,
+    "stem": "Which statement is supported by the table?",
+    "options": [
+      "Precipitation is highest in the warmest months",
+      "Temperatures stay within 5°C of each other all year",
+      "The wettest months are also the coolest months",
+      "The driest month is also the coolest month"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "June, July and August have the lowest highs (14 to 15°C) and the most precipitation (98 to 120 mm). The warm months are the drier ones, and the driest month, February at 70 mm, is one of the warmest."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Plate tectonics",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Earth's outer layer is broken into large plates that move slowly, a few centimeters each year. Most earthquakes and volcanoes occur where two plates meet. Along the edges of the Pacific Ocean, a band of volcanoes and frequent earthquakes is known as the Ring of Fire.",
+    "stem": "Based on the passage, why do earthquakes and volcanoes cluster around the Pacific Ocean?",
+    "options": [
+      "The ocean water weakens the rock along the coast",
+      "The Pacific is the deepest ocean, so its floor is thinner and cracks easily",
+      "The weather is more violent over the Pacific",
+      "The edges of the Pacific lie along boundaries between plates"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage links earthquakes and volcanoes to places where plates meet, and the Ring of Fire follows the edges of the Pacific plate. Ocean depth, water and weather are not given as causes."
+  },
+  {
+    "domain": "gedScience",
+    "test": 1,
+    "skill": "Seasons",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Many people believe winter happens when Earth is farthest from the Sun. In fact, Earth is closest to the Sun in early January, when it is winter in the Northern Hemisphere. Earth's axis is tilted about 23.5 degrees. As Earth orbits the Sun, the Northern Hemisphere is tilted away from the Sun in January and toward it in July.",
+    "stem": "Based on the passage, why is January cold in the Northern Hemisphere?",
+    "options": [
+      "Its tilt away from the Sun means sunlight strikes it less directly",
+      "Earth is farther from the Sun in January than at any other time of year",
+      "The Sun gives off less energy during the winter months",
+      "Earth moves more slowly in its orbit during January"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The tilt points the Northern Hemisphere away from the Sun in January, so sunlight arrives at a low angle and the days are short. The passage rules out distance by noting that Earth is actually closest to the Sun then."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Mean of trials",
+    "difficulty": 1,
+    "format": "numeric",
+    "stimulusId": "GED-SC-04",
+    "caseStep": 1,
+    "calculator": true,
+    "stem": "Based on Table 1, what was the mean diameter, in millimeters, of the zone of inhibition for antibiotic B across the four dishes? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "22",
+        "22.0"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Add 19 + 21 + 26 + 22 = 88 mm and divide by 4 dishes to get 22 mm. Dividing by 3, the number of antibiotics, or averaging the wrong row gives a different value."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Interpreting results",
+    "difficulty": 1,
+    "format": "single",
+    "stimulusId": "GED-SC-04",
+    "caseStep": 2,
+    "stem": "Which antibiotic was most effective against this bacterium, and why?",
+    "options": [
+      "Antibiotic B, because it produced the largest clear zones",
+      "Antibiotic C, because it produced the smallest clear zones",
+      "Antibiotic A, because its results varied the least",
+      "Antibiotic A, because its zones were closest to the average"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A larger clear zone means the antibiotic stopped bacterial growth over a wider area, and B's zones averaged 22 mm compared with about 12.5 mm for A and 6 mm for C. Small or consistent zones do not show effectiveness."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Experimental controls",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SC-04",
+    "caseStep": 3,
+    "stem": "What was the purpose of the disc soaked in sterile water?",
+    "options": [
+      "To measure how quickly the bacteria grow when given extra water",
+      "To show that the paper disc alone does not stop growth",
+      "To keep the gel moist during the 24 hours",
+      "To test whether water kills the bacteria"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The water disc is the control: it is identical to the others except that it carries no antibiotic, so any clear zone around it would mean the disc or the water, not the drug, was stopping growth. Its zone of 0 mm shows the antibiotics caused the clear zones."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Roles in an ecosystem",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Classify each organism by its role in a pond ecosystem.",
+    "rows": [
+      "Algae floating near the surface make food using sunlight",
+      "A frog eats insects",
+      "Bacteria break down a dead fish on the bottom",
+      "Cattails along the shore grow using sunlight",
+      "A fungus feeds on a rotting log at the water's edge",
+      "A heron catches a frog"
+    ],
+    "columns": [
+      "Producer",
+      "Consumer",
+      "Decomposer"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0,
+      2,
+      1
+    ],
+    "explanation": "Producers make their own food from sunlight, consumers eat other organisms, and decomposers break down dead matter and return its nutrients to the water and soil. Fungi and bacteria are the pond's main decomposers."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Body systems",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "During hard exercise, a person's breathing rate and heart rate both rise. Muscle cells are working harder, so they carry out cellular respiration faster, using more oxygen and glucose and producing more carbon dioxide and waste heat.",
+    "stem": "Based on the passage, why does breathing rate increase during exercise?",
+    "options": [
+      "To cool the body by releasing waste heat through the lungs",
+      "To bring in more glucose for the working muscles",
+      "To take in more oxygen and remove more carbon dioxide",
+      "To slow cellular respiration back to its resting rate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Faster cellular respiration uses oxygen and makes carbon dioxide, and the lungs are where both gases are exchanged with the blood. Glucose comes from food and the blood, not the air, and the body cools mainly by sweating."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Inheritance",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "In pea plants, purple flowers (P) are dominant over white flowers (p). A gardener crosses two purple-flowered plants. Of the 40 offspring, 31 have purple flowers and 9 have white flowers.",
+    "stem": "What must be true about the two parent plants?",
+    "options": [
+      "Both parents have the genotype PP",
+      "One parent is PP and the other is pp",
+      "One parent is PP and the other is Pp",
+      "Both parents have the genotype Pp"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A white-flowered offspring must be pp, receiving a p allele from each parent, so both purple parents carry a hidden p and are Pp. A PP parent cannot pass on p, so any cross involving PP gives only purple flowers; about one in four white offspring is what a Pp x Pp cross predicts."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Natural selection",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "On a dry island, a population of seed-eating birds showed a range of beak sizes. In a drought year, plants produced few small, soft seeds, and most of the seeds left were large and hard. Birds with larger, stronger beaks could crack these seeds, while many birds with small beaks could not. Two years later, the average beak size of the population was noticeably larger than before the drought.",
+    "stem": "Which statement best explains the increase in average beak size?",
+    "options": [
+      "Large-beaked birds survived and bred more than small-beaked birds",
+      "Each bird's beak slowly grew larger as it struggled with the hard seeds",
+      "The birds chose to develop larger beaks to match the seeds",
+      "Large seeds contain more nutrients, which made beaks grow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "This is natural selection: beak size varied, large beaks helped birds survive the drought and leave offspring, and the inherited trait became more common. Individual beaks do not grow because of effort or diet, and birds cannot choose their traits."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Energy pyramids",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "passage": "An energy pyramid shows how energy moves through a food chain. In a meadow, the producers (grasses) store about 10,000 units of energy. The grasshoppers that eat them hold about 1,000 units, the birds that eat grasshoppers about 100 units, and the hawks that eat the birds about 10 units. The energy that does not pass to the next level is mostly used by the organisms to live and lost as heat.",
+    "stem": "Which two statements are supported by the passage? Choose two.",
+    "options": [
+      "About 10% of the energy at each level passes to the level above it",
+      "Hawks need less food than grasshoppers because they are at the top",
+      "The meadow can support far fewer hawks than grasshoppers",
+      "Most of the energy in the grasses passes directly to the hawks",
+      "Each level stores more energy than the level below it"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Each level holds about one tenth of the energy of the level below, so the energy available shrinks quickly and only a small number of top predators can be fed. Most energy is used or lost as heat at each step rather than passed up the chain."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Speed calculation",
+    "difficulty": 2,
+    "format": "numeric",
+    "calculator": true,
+    "stem": "A train leaves a station at 9:00 a.m. and arrives at a city 150 km away at 11:30 a.m. What was the train's average speed in kilometers per hour? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "60",
+        "60.0"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The trip took 2.5 hours, so the average speed is 150 km / 2.5 h = 60 km/h. Dividing by 2 hours, or by 2.3 after reading 2 h 30 min as 2.3 h, gives the wrong rate."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Drawing conclusions from data",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SC-05",
+    "caseStep": 1,
+    "stem": "Which conclusion is supported by the data?",
+    "options": [
+      "Stirring made no difference to how fast the sugar dissolved at any temperature",
+      "Sugar dissolved faster in warmer water and faster when stirred",
+      "Warmer water dissolved the sugar more slowly",
+      "Stirring mattered only when the water was cold"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In both columns the time falls as the water warms, and at every temperature the stirred cup finished in about a third of the time of the unstirred cup. So both temperature and stirring sped up dissolving."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Predicting from a trend",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SC-05",
+    "caseStep": 2,
+    "stem": "If the students repeat the stirred test with water at 60°C, the time to dissolve would most likely be:",
+    "options": [
+      "less than 27 seconds",
+      "between 27 and 38 seconds",
+      "between 38 and 52 seconds",
+      "more than 85 seconds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The stirred times drop at each 10°C step, 95, 70, 52, 38, 27 s, so at 60°C the time should fall further, below 27 s. The other ranges all belong to cooler water in the table."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Dependent variable",
+    "difficulty": 1,
+    "format": "single",
+    "stimulusId": "GED-SC-05",
+    "caseStep": 3,
+    "stem": "What is the dependent variable in this experiment?",
+    "options": [
+      "The temperature of the water",
+      "The amount of sugar added to each cup",
+      "The time it took the sugar to dissolve",
+      "Whether the cup was stirred"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The dependent variable is what is measured to see the effect of the changes, and here that is the dissolving time. Temperature and stirring were the two variables the students changed, and the amount of sugar was kept the same."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Atomic structure",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "On the periodic table, each element has an atomic number, which is the number of protons in one atom of that element. Sodium (Na) has atomic number 11 and a mass number of 23. The mass number is the total number of protons and neutrons in the nucleus. A neutral atom has the same number of electrons as protons.",
+    "stem": "How many neutrons are in the nucleus of a sodium atom with mass number 23?",
+    "options": [
+      "11",
+      "12",
+      "23",
+      "34"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Neutrons = mass number - atomic number = 23 - 11 = 12. The number 11 is the count of protons (and of electrons in a neutral atom), 23 counts protons and neutrons together, and 34 adds the two numbers."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Sound waves",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Sound travels as a wave. The frequency of a sound wave is the number of waves that pass a point each second, measured in hertz (Hz). The amplitude is the height of the wave, which depends on how much energy it carries. A guitar player tightens a string, and the string now vibrates 440 times per second instead of 392.",
+    "stem": "How will the sound of the tightened string differ from before?",
+    "options": [
+      "It will be louder, because the amplitude increased",
+      "It will be quieter, because the energy decreased",
+      "It will be lower in pitch, because the waves are now farther apart",
+      "It will be higher in pitch, because the frequency increased"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pitch is set by frequency, and 440 Hz is a higher frequency than 392 Hz, so the note sounds higher. Loudness depends on amplitude, which the passage ties to energy, and nothing in the passage says that changed."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Heat transfer",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A metal spoon is left standing in a pot of hot soup. After a few minutes the handle, which never touched the soup, is too hot to hold. By which process did heat reach the handle?",
+    "options": [
+      "Conduction through the metal of the spoon",
+      "Convection in the air above the pot",
+      "Radiation from the surface of the soup",
+      "Evaporation of water from the soup"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In conduction, heat passes from particle to particle through a solid, and metals conduct especially well, so the handle warms along the length of the spoon. Convection moves heat through a flowing liquid or gas, and radiation travels as waves without needing contact."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Acids and bases",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "passage": "The pH scale runs from 0 to 14. A pH below 7 is acidic, 7 is neutral, and above 7 is basic. The lower the pH, the stronger the acid. Students tested five household liquids.\n\n| Liquid | pH |\n|---|---|\n| Lemon juice | 2.3 |\n| Pure water | 7.0 |\n| Baking soda solution | 8.4 |\n| Vinegar | 2.9 |\n| Ammonia cleaner | 11.5 |",
+    "stem": "Which two liquids are acids? Choose two.",
+    "options": [
+      "Lemon juice",
+      "Pure water",
+      "Baking soda solution",
+      "Vinegar",
+      "Ammonia cleaner"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Only lemon juice (pH 2.3) and vinegar (pH 2.9) are below 7, so they are acids, and lemon juice is the stronger of the two. Water is neutral, and the baking soda solution and ammonia cleaner are bases."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Relative age of rock layers",
+    "difficulty": 1,
+    "format": "single",
+    "stimulusId": "GED-SC-06",
+    "caseStep": 1,
+    "stem": "Which layer is the oldest?",
+    "options": [
+      "Layer 1",
+      "Layer 2",
+      "Layer 3",
+      "Layer 4"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In undisturbed sedimentary rock each layer forms on top of the ones already there, so the bottom layer, Layer 4, was deposited first and is the oldest. Layer 1 at the top is the youngest."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Fossil evidence",
+    "difficulty": 2,
+    "format": "single",
+    "stimulusId": "GED-SC-06",
+    "caseStep": 2,
+    "stem": "What do the fossils in Layers 3, 2 and 1 suggest about the history of the area?",
+    "options": [
+      "The area was always dry land",
+      "The area was once covered by sea and later became land",
+      "The area was dry land at first and only later sank beneath the sea",
+      "The area has been underwater for its whole history"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Corals and clams in Layer 3 and fish in Layer 2 show a marine environment, and the leaves and animal footprints in the younger Layer 1 show land. Reading from oldest to youngest, the area went from sea to land, not the reverse."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Carbon cycle",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Carbon moves constantly between the air, living things, the oceans and rocks. Plants take carbon dioxide out of the air during photosynthesis and build it into sugars. Animals and plants return carbon dioxide to the air through respiration, and decomposers release it as they break down dead matter. Burning fossil fuels releases carbon that was stored underground for millions of years.",
+    "stem": "According to the passage, which process removes carbon dioxide from the atmosphere?",
+    "options": [
+      "Respiration by animals",
+      "Decomposition of dead plants",
+      "Photosynthesis by plants",
+      "Burning of fossil fuels"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Photosynthesis is the only process in the passage that takes carbon dioxide out of the air; respiration, decomposition and burning fuels all add it. That is why forests are called carbon sinks."
+  },
+  {
+    "domain": "gedScience",
+    "test": 2,
+    "skill": "Moon phases",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The Moon makes no light of its own; we see it because it reflects sunlight. Half of the Moon is always lit by the Sun. As the Moon orbits Earth about once a month, we see different amounts of its lit half, from a thin crescent to a full circle and back.",
+    "stem": "Based on the passage, what causes the phases of the Moon?",
+    "options": [
+      "Our changing view of the Moon's sunlit half as it orbits Earth",
+      "Earth's shadow falling across different amounts of the Moon each night",
+      "Clouds in Earth's atmosphere blocking part of the Moon",
+      "The Moon's own glow becoming brighter and dimmer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The lit half never changes, but as the Moon moves around Earth we see it from different angles, so the visible lit portion grows and shrinks. Earth's shadow on the Moon is a lunar eclipse, which happens only occasionally."
+  },
+  {
+    "domain": "gedScience",
+    "test": 0,
+    "skill": "Immune system",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "When a virus enters the body for the first time, the immune system takes several days to make antibodies that fit that virus. Some of the white blood cells that made those antibodies remain in the body for years as memory cells. If the same virus enters again, memory cells recognize it and produce antibodies within hours. A vaccine exposes the body to a harmless form or piece of a virus.",
+    "stem": "Based on the passage, why does a vaccine help protect a person from a disease?",
+    "options": [
+      "It kills any copy of the virus already in the body",
+      "It causes memory cells to form before the real virus arrives",
+      "It blocks the virus from entering the body through the nose and mouth",
+      "It makes antibodies that stay in the blood for life"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A vaccine gives the immune system a safe first exposure, so memory cells are ready and antibodies appear within hours of a real infection instead of days. The passage says memory cells, not the antibodies themselves, last for years, and a vaccine does not block entry or kill existing virus."
+  },
+  {
+    "domain": "gedScience",
+    "test": 0,
+    "skill": "Cellular respiration",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Cells release the energy stored in glucose through cellular respiration, a process that takes place mainly in the mitochondria. Glucose and oxygen are used up, and carbon dioxide, water and usable energy are produced. Muscle cells and nerve cells contain many more mitochondria than skin cells do.",
+    "stem": "Which conclusion is best supported by the passage?",
+    "options": [
+      "Skin cells do not carry out cellular respiration",
+      "Mitochondria produce the glucose that cells use",
+      "Cells that use more energy contain more mitochondria",
+      "Muscle cells need less oxygen than skin cells"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mitochondria release energy from glucose, so cells with high energy demands, such as muscle and nerve cells, have more of them. Skin cells still have some mitochondria, glucose comes from food rather than from mitochondria, and cells with more mitochondria use more oxygen, not less."
+  },
+  {
+    "domain": "gedScience",
+    "test": 0,
+    "skill": "Biotic and abiotic factors",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "For each part of a pond ecosystem, select whether it is a biotic (living) factor or an abiotic (nonliving) factor.",
+    "rows": [
+      "Sunlight reaching the water",
+      "Fish",
+      "Water temperature",
+      "Algae",
+      "Dissolved oxygen",
+      "Frogs"
+    ],
+    "columns": [
+      "Biotic",
+      "Abiotic"
+    ],
+    "correct": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "explanation": "Biotic factors are the living organisms, including tiny ones like algae; abiotic factors are nonliving conditions such as light, temperature and dissolved gases. Dissolved oxygen is made by living things but is itself a nonliving part of the water."
+  },
+  {
+    "domain": "gedScience",
+    "test": 0,
+    "skill": "Homeostasis",
+    "difficulty": 2,
+    "format": "multi",
+    "passage": "Homeostasis is the way the body keeps its internal conditions, such as temperature, blood sugar and water balance, within a narrow range even when the outside environment changes.",
+    "stem": "Which of the following are examples of homeostasis? Select all that apply.",
+    "options": [
+      "Sweating to cool the body on a hot day",
+      "Shivering to warm the body in cold air",
+      "A caterpillar changing into a butterfly",
+      "The pancreas releasing insulin after a sugary meal",
+      "A flock of geese flying south for the winter"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Sweating and shivering hold body temperature steady, and insulin brings blood sugar back down after a meal; each keeps an internal condition in its normal range. Metamorphosis is development and migration is a behavior, not a correction of an internal condition."
+  },
+  {
+    "domain": "gedScience",
+    "test": 0,
+    "skill": "Interpreting results",
+    "difficulty": 1,
+    "format": "single",
+    "stimulusId": "GED-SC-07",
+    "caseStep": 1,
+    "stem": "Which material kept the water warmest, and how does the table show it?",
+    "options": [
+      "The bare cup, because its temperature changed the most",
+      "Aluminum foil, because metal holds heat well",
+      "Cotton cloth, because its results were the most consistent",
+      "Foam, because the water in that cup lost the least heat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The best insulator is the one with the smallest temperature drop, and the foam-wrapped cup dropped only about 5°C in 30 minutes compared with 12°C for cotton, 20°C for foil and 24°C for the bare cup. A metal wrap conducts heat away rather than holding it in."
+  },
+  {
+    "domain": "gedScience",
+    "test": 0,
+    "skill": "Mean of trials",
+    "difficulty": 1,
+    "format": "numeric",
+    "stimulusId": "GED-SC-07",
+    "caseStep": 2,
+    "calculator": true,
+    "stem": "What was the mean temperature drop, in degrees Celsius, for the foam-wrapped cup across the three trials? Record your answer to the nearest tenth.",
+    "numeric": {
+      "answers": [
+        "5.1"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Add 5.2 + 4.6 + 5.5 = 15.3°C and divide by 3 trials to get 5.1°C. Dividing by 4, the number of cups, or by 30 minutes gives a different number."
+  },
+  {
+    "domain": "gedScience",
+    "test": 0,
+    "skill": "Work and energy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Work is done when a force moves an object, and work = force x distance. A mover pushes a crate with a force of 50 N across 4 m of floor. How much work is done on the crate?",
+    "options": [
+      "12.5 J",
+      "46 J",
+      "54 J",
+      "200 J"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Work = 50 N x 4 m = 200 joules. Dividing gives 12.5, and adding or subtracting the two numbers does not combine a force and a distance into work."
+  },
+  {
+    "domain": "gedScience",
+    "test": 0,
+    "skill": "Conservation of mass",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "A student places 5 g of baking soda in a bottle and pours in 20 g of vinegar, then quickly seals the bottle with a balloon stretched over its mouth. The two substances fizz, the balloon inflates with gas, and the mixture stops bubbling after a minute. The student weighs the sealed bottle, balloon and contents before and after the reaction.",
+    "stem": "What should the student find, and why?",
+    "options": [
+      "The mass decreased, because gas weighs nothing",
+      "The mass increased, because the balloon trapped extra gas from the air",
+      "The mass was unchanged, because no matter was created or destroyed",
+      "The mass decreased, because the vinegar was used up"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In a sealed system the atoms are only rearranged, so the total mass of the bottle, balloon and contents is the same before and after; the carbon dioxide in the balloon has the mass that left the liquid. The mass would appear to drop only if the bottle were open and the gas escaped."
+  },
+  {
+    "domain": "gedScience",
+    "test": 0,
+    "skill": "Weather and climate",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Weather is the condition of the atmosphere at a particular place and time: today's temperature, wind and rain. Climate is the average pattern of weather in a place over many years, usually 30 or more.",
+    "stem": "Which statement describes climate rather than weather?",
+    "options": [
+      "Summers in the region are hot and dry, and most rain falls in winter",
+      "A thunderstorm dropped 3 cm of rain on the north side of the city last night",
+      "The high temperature today reached 35°C",
+      "Winds from the northwest will reach 40 km/h this afternoon"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Climate describes the long-term pattern, so a statement about typical summers and the usual rainy season is climate. A single storm, today's high and this afternoon's wind are all weather."
+  },
+  {
+    "domain": "gedScience",
+    "test": 0,
+    "skill": "Erosion and deposition",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A river carries sand, silt and clay downstream. The faster the water moves, the more sediment it can carry. Where the river enters a lake or the sea, the water slows down sharply. Over time, a fan-shaped area of new land called a delta builds up at the river's mouth.",
+    "stem": "Based on the passage, how does a delta form?",
+    "options": [
+      "Waves erode the coastline and push sand up the river",
+      "The slowing river drops the sediment it was carrying",
+      "The river cuts a deeper channel through the sea floor",
+      "Wind piles sand into dunes at the river's mouth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Slow water cannot carry as much sediment, so when the river slows at its mouth the sand and silt settle out and build up into a delta. This is deposition; erosion is the removal of material, which happens upstream where the water is fast."
+  }
+]

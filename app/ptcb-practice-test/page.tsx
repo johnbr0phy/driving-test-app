@@ -73,7 +73,7 @@ const jsonLd = {
       featureList: [
         "200 PTCE practice questions",
         "4 practice tests weighted to the 2026 PTCE outline",
-        "Training sets for every knowledge domain",
+        "4 training sets, one per practice test",
         "Worked pharmacy math on every calculation",
         "Auto-save progress",
       ],
@@ -137,11 +137,11 @@ export default function PtcbLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets matching the four PTCE domains: medications, patient safety and quality
-                assurance, order entry and processing, and federal requirements. Questions you miss
-                come back until you have mastered them.
+                Four training sets, one for each practice test: Set 1 holds exactly the 50 questions of Test
+                1, and so on. Master the set, then take its test. Questions you miss come back until you
+                have mastered them.
               </p>
             </div>
           </div>
@@ -249,8 +249,8 @@ export default function PtcbLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain</h3>
               <p>
-                TigerTest tracks your accuracy by domain. After each practice test, go back to the set
-                you missed most and retake until you clear 70 percent with room to spare.
+                TigerTest tracks your accuracy by domain. After each practice test, drill the questions
+                you missed from the results, retrain that test&apos;s set, and retake until you clear 70 percent.
               </p>
             </div>
           </div>

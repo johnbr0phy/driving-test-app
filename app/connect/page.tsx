@@ -27,15 +27,15 @@ const faqs = [
   },
   {
     q: "Which Claude and ChatGPT plans can add it?",
-    a: "Custom connectors are a feature of the paid Claude plans (Pro, Max, Team and Enterprise) and of paid ChatGPT plans with developer mode turned on. The menus move around, so look for Connectors under Settings in either app.",
+    a: "Claude supports custom connectors, including one on its Free plan. ChatGPT custom MCP access depends on your plan and workspace permissions. Check the official setup guides below for current availability.",
   },
   {
-    q: "Can I use it without a paid chat plan?",
-    a: "Yes. On tigertest.io/create, copy our question-writing prompt into any ChatGPT or Claude, free plans included, paste your notes under it, and paste the reply back. Or import a Quizlet set, or write the questions yourself. DMV practice is at tigertest.io/dmv/dashboard either way.",
+    q: "Can I make a quiz without a connector?",
+    a: "Yes. On tigertest.io/create, import a Quizlet set or write the questions yourself. To have an assistant write and save a quiz, connect TigerTest to your own supported chat account.",
   },
   {
     q: "What does the connector see?",
-    a: "Only the signed-in account's own quizzes and practice progress. It cannot read other people's quizzes or results, and nothing works until you sign in to TigerTest during setup.",
+    a: "It can manage your own quizzes and practice progress, and find or play quizzes shared by link or publicly. Private quizzes and creator reports remain restricted. Sign in to TigerTest and review the permissions during setup.",
   },
   {
     q: "Where do my quizzes live?",
@@ -163,16 +163,16 @@ export default function ConnectPage() {
           <h2 id="claude-heading" className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-1">
             Add it to Claude
           </h2>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Available on paid Claude plans. The exact menu names change now and then.</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Claude supports custom connectors, including one on its Free plan. Team and Enterprise workspaces may require an owner to add it first.</p>
           <div className={cardClass}>
             <Steps
               steps={[
-                <>Open Claude.ai and go to Settings. Look for Connectors.</>,
-                <>Choose Add custom connector.</>,
+                <>Open Claude and find Connectors under Customize (or Settings in older menus).</>,
+                <>Choose Add, then Add custom connector.</>,
                 <>
                   Name it TigerTest and paste the URL <UrlChip />.
                 </>,
-                <>Press Add. When Claude asks, sign in to TigerTest (or make a free account) and allow the connection.</>,
+                <>Follow the connector setup prompts. Use OAuth and automatic client registration if asked. Sign in to TigerTest (or make a free account), review the permissions and allow the connection.</>,
                 <>In a new chat, make sure TigerTest is switched on under the tools menu, then ask for a quiz.</>,
               ]}
             />
@@ -184,22 +184,30 @@ export default function ConnectPage() {
             Add it to ChatGPT
           </h2>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-            Available on paid ChatGPT plans with developer mode turned on. The exact menu names change now and then.
+            Custom MCP access depends on your plan and workspace permissions. If the option is missing, check the official guide or ask your workspace admin.
           </p>
           <div className={cardClass}>
             <Steps
               steps={[
-                <>Open ChatGPT and go to Settings. Look for Connectors, then Advanced (or Developer mode) and turn it on.</>,
-                <>Choose Create (a new connector).</>,
+                <>Open ChatGPT on the web. Go to Plugins and select Add custom MCP server. Older interfaces may use Settings → Apps → Create.</>,
+                <>Name the connection TigerTest. Follow the current setup guide if your menus differ.</>,
                 <>
-                  Name it TigerTest and paste the MCP server URL <UrlChip />. Pick OAuth for authentication.
+                  Enter the MCP server URL <UrlChip />. Pick OAuth for authentication.
                 </>,
-                <>Press Create. When ChatGPT asks, sign in to TigerTest (or make a free account) and allow the connection.</>,
-                <>In a new chat, pick TigerTest from the tools or connectors menu, then ask for a quiz.</>,
+                <>Review the risk warning and discovered tools. When ChatGPT asks, sign in to TigerTest (or make a free account), review the permissions and allow the connection.</>,
+                <>Install or enable the connection, then select TigerTest in a new chat and ask for a quiz.</>,
               ]}
             />
           </div>
         </section>
+
+        <p className="text-sm text-gray-600 dark:text-gray-300">
+          These steps explain setup; they do not connect an account automatically. For current menus and availability, see the{" "}
+          <a href="https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp" className="underline">official Claude guide</a>{" "}
+          and the{" "}
+          <a href="https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt" className="underline">official ChatGPT guide</a>.
+          Your assistant writes the questions using your chat account, then saves them through TigerTest&apos;s MCP tools. TigerTest does not call an AI model to generate them.
+        </p>
 
         <section aria-labelledby="try-heading">
           <h2 id="try-heading" className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-4">
@@ -224,7 +232,7 @@ export default function ConnectPage() {
               </h2>
               <p className="text-gray-600 dark:text-gray-300">
                 Nothing works without a TigerTest account: setup ends with a sign-in on tigertest.io, and every call runs as that account. The connector
-                only ever sees the signed-in account&apos;s own quizzes and progress, never anyone else&apos;s. Remove it from your chat app&apos;s
+                can manage your own quizzes and progress and play quizzes shared by link or publicly. Private quizzes and creator reports remain restricted. Remove it from your chat app&apos;s
                 connector settings at any time.
               </p>
             </div>
@@ -248,7 +256,7 @@ export default function ConnectPage() {
         <section className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">No chat app needed</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-5 max-w-xl mx-auto">
-            Copy our question-writing prompt into any free ChatGPT or Claude and paste the reply back, import a Quizlet set, or write the questions yourself.
+            Import a Quizlet set or write the questions yourself. These are separate options, with no chat app or connector required.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link

@@ -616,6 +616,90 @@
     --brand-gradient-to: 210 100% 95%;
   }
 
+  /* Cosmetology theme: magenta */
+  [data-theme="cosmetology"] {
+    --brand: 320 60% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 320 75% 96%;
+    --brand-hover: 320 60% 34%;
+    --brand-dark: 320 60% 27%;
+    --brand-darker: 320 50% 17%;
+    --brand-muted: 320 40% 72%;
+    --brand-border: 320 40% 78%;
+    --brand-border-light: 320 35% 88%;
+    --brand-gradient-to: 345 80% 96%;
+  }
+
+  /* VTNE theme: teal green */
+  [data-theme="vtne"] {
+    --brand: 158 60% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 158 65% 95%;
+    --brand-hover: 158 60% 28%;
+    --brand-dark: 158 60% 22%;
+    --brand-darker: 158 50% 16%;
+    --brand-muted: 158 40% 72%;
+    --brand-border: 158 40% 78%;
+    --brand-border-light: 158 35% 88%;
+    --brand-gradient-to: 135 65% 95%;
+  }
+
+  /* NCLEX-PN theme: teal (v2 exam; matches lib/v2/exams/nclexpn.ts theme) */
+  [data-theme="nclexpn"] {
+    --brand: 185 70% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 185 70% 95%;
+    --brand-hover: 185 70% 29%;
+    --brand-dark: 185 70% 24%;
+    --brand-darker: 185 60% 13%;
+    --brand-muted: 185 40% 70%;
+    --brand-border: 185 45% 76%;
+    --brand-border-light: 185 40% 87%;
+    --brand-gradient-to: 170 60% 95%;
+  }
+
+  /* Paramedic theme: crimson shifted warm, since CPR holds 355 */
+  [data-theme="paramedic"] {
+    --brand: 10 65% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 10 75% 95%;
+    --brand-hover: 10 65% 36%;
+    --brand-dark: 10 65% 31%;
+    --brand-darker: 10 55% 16%;
+    --brand-muted: 10 45% 72%;
+    --brand-border: 10 45% 78%;
+    --brand-border-light: 10 40% 88%;
+    --brand-gradient-to: 30 70% 95%;
+  }
+
+  /* GED theme: violet (v2 exam; matches lib/v2/exams/ged.ts theme) */
+  [data-theme="ged"] {
+    --brand: 265 55% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 265 100% 96%;
+    --brand-hover: 265 55% 38%;
+    --brand-dark: 265 55% 32%;
+    --brand-darker: 265 50% 22%;
+    --brand-muted: 265 45% 75%;
+    --brand-border: 265 45% 80%;
+    --brand-border-light: 265 45% 90%;
+    --brand-gradient-to: 290 80% 95%;
+  }
+
+  /* Times Tables theme: magenta (v2 exam; matches lib/v2/exams/timestables.ts theme) */
+  [data-theme="timestables"] {
+    --brand: 300 60% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 300 100% 96%;
+    --brand-hover: 300 60% 36%;
+    --brand-dark: 300 60% 30%;
+    --brand-darker: 300 55% 20%;
+    --brand-muted: 300 45% 75%;
+    --brand-border: 300 45% 80%;
+    --brand-border-light: 300 45% 90%;
+    --brand-gradient-to: 320 80% 95%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -1149,6 +1233,74 @@
     --brand-muted: 195 45% 45%;
     --brand-dark: 195 85% 65%;
     --brand-darker: 195 70% 78%;
+  }
+
+  .dark [data-theme="cosmetology"] {
+    --brand: 320 60% 50%;
+    --brand-hover: 320 60% 42%;
+    --brand-light: 320 45% 13%;
+    --brand-gradient-to: 345 40% 11%;
+    --brand-border-light: 320 35% 24%;
+    --brand-border: 320 40% 34%;
+    --brand-muted: 320 40% 45%;
+    --brand-dark: 320 60% 65%;
+    --brand-darker: 320 50% 78%;
+  }
+
+  .dark [data-theme="vtne"] {
+    --brand-light: 158 45% 13%;
+    --brand-gradient-to: 135 40% 11%;
+    --brand-border-light: 158 35% 24%;
+    --brand-border: 158 40% 34%;
+    --brand-muted: 158 40% 45%;
+    --brand-dark: 158 60% 65%;
+    --brand-darker: 158 50% 78%;
+  }
+
+  .dark [data-theme="nclexpn"] {
+    --brand-light: 185 45% 13%;
+    --brand-gradient-to: 170 40% 11%;
+    --brand-border-light: 185 35% 24%;
+    --brand-border: 185 40% 34%;
+    --brand-muted: 185 40% 45%;
+    --brand-dark: 185 70% 65%;
+    --brand-darker: 185 60% 78%;
+  }
+
+  .dark [data-theme="paramedic"] {
+    --brand: 10 65% 49%;
+    --brand-hover: 10 65% 41%;
+    --brand-light: 10 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 10 35% 24%;
+    --brand-border: 10 40% 34%;
+    --brand-muted: 10 45% 45%;
+    --brand-dark: 10 65% 65%;
+    --brand-darker: 10 55% 78%;
+  }
+
+  .dark [data-theme="ged"] {
+    --brand: 265 55% 50%;
+    --brand-hover: 265 55% 42%;
+    --brand-light: 265 45% 13%;
+    --brand-gradient-to: 290 40% 11%;
+    --brand-border-light: 265 35% 24%;
+    --brand-border: 265 40% 34%;
+    --brand-muted: 265 45% 45%;
+    --brand-dark: 265 55% 65%;
+    --brand-darker: 265 50% 78%;
+  }
+
+  .dark [data-theme="timestables"] {
+    --brand: 300 60% 47.9%;
+    --brand-hover: 300 60% 39.9%;
+    --brand-light: 300 45% 13%;
+    --brand-gradient-to: 320 40% 11%;
+    --brand-border-light: 300 35% 24%;
+    --brand-border: 300 40% 34%;
+    --brand-muted: 300 45% 45%;
+    --brand-dark: 300 60% 65%;
+    --brand-darker: 300 55% 78%;
   }
 
 }

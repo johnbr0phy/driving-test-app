@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Sparkles, ChevronDown, CheckCircle2, AlertTriangle, XCircle, DollarSign, TrendingUp, Repeat, Wrench } from "lucide-react";
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
 import type { DailyBrief } from "@/lib/server/dailyBrief";
-import { TabHeader, fmtUpdated } from "@/components/admin/AdminTabParts";
+import { CARD, ROW, STICKY_COL, TabHeader, TableScroll, fmtUpdated } from "@/components/admin/AdminTabParts";
 
 // The Opportunities tab body on /admin, given the API payload. Kept apart
 // from the fetch so it renders without an admin session.
@@ -41,7 +41,7 @@ function Delta({ now, prev, format = fmtInt }: { now: number; prev: number | nul
 
 function Card({ title, subtitle, children }: { title: string; subtitle?: React.ReactNode; children: React.ReactNode }) {
   return (
-    <section className="text-gray-900 dark:text-gray-50 bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 mb-6">
+    <section className={`text-gray-900 dark:text-gray-50 ${CARD} mb-4 sm:mb-6`}>
       <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">{title}</h2>
         {subtitle && <div className="text-xs text-gray-500 dark:text-gray-400">{subtitle}</div>}
@@ -53,9 +53,9 @@ function Card({ title, subtitle, children }: { title: string; subtitle?: React.R
 
 function Tile({ label, value, sub }: { label: string; value: string; sub: React.ReactNode }) {
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-4">
+    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-3 sm:p-4">
       <p className="text-xs text-gray-500 dark:text-gray-400">{label}</p>
-      <p className="text-2xl font-semibold text-gray-900 dark:text-gray-50 tabular-nums mt-1">{value}</p>
+      <p className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-50 tabular-nums mt-1">{value}</p>
       <p className="text-[11px] mt-1">{sub}</p>
     </div>
   );
@@ -74,9 +74,9 @@ function Bar({ value, max, color, label }: { value: number; max: number; color: 
   );
 }
 
-function Th({ children, right, title }: { children: React.ReactNode; right?: boolean; title?: string }) {
+function Th({ children, right, title, sticky }: { children: React.ReactNode; right?: boolean; title?: string; sticky?: boolean }) {
   return (
-    <th title={title} className={`font-medium pb-2 px-2 whitespace-nowrap ${right ? "text-right" : "text-left"}`}>
+    <th title={title} className={`font-medium pb-2 px-2 whitespace-nowrap ${right ? "text-right" : "text-left"} ${sticky ? STICKY_COL : ""}`}>
       {children}
     </th>
   );
@@ -116,7 +116,7 @@ function BriefCard({ brief, onWrite, writing, error }: {
     ? new Date(brief.generatedAt).toLocaleString("en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })
     : null;
   return (
-    <section className="text-gray-900 dark:text-gray-50 bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 mb-6">
+    <section className={`text-gray-900 dark:text-gray-50 ${CARD} mb-4 sm:mb-6`}>
       <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
         <p className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-500 dark:text-gray-400">
           <Sparkles className="h-3.5 w-3.5" aria-hidden />
@@ -154,10 +154,11 @@ function BriefCard({ brief, onWrite, writing, error }: {
   );
 }
 
-export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, writingBrief = false, briefError = null }: {
+export function OpportunitiesView({ data, onRefresh, refreshing, updating = false, onWriteBrief, writingBrief = false, briefError = null }: {
   data: OpportunitiesPayload & { brief?: DailyBrief | null };
   onRefresh: () => void;
   refreshing: boolean;
+  updating?: boolean;
   onWriteBrief?: () => void;
   writingBrief?: boolean;
   briefError?: string | null;
@@ -181,6 +182,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
         subtitle={<>Where the next dollar and the next visitor come from · Firestore + Stripe · updated {fmtUpdated(data.generatedAt)}</>}
         onRefresh={onRefresh}
         refreshing={refreshing}
+        updating={updating}
       />
 
         <BriefCard brief={data.brief ?? null} onWrite={onWriteBrief} writing={writingBrief} error={briefError} />
@@ -196,7 +198,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
           </button>
         )}
         {showNotes && data.insights.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
             {data.insights.map((ins) => {
               const Icon = INSIGHT_ICON[ins.kind];
               return (
@@ -213,7 +215,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
         )}
 
         {/* Scoreboard, last 30 days */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3 sm:gap-4 mb-4 sm:mb-6">
           <Tile label="Revenue, 30 days" value={fmtDollars(s.revenue.cur30)} sub={<Delta now={s.revenue.cur30} prev={s.revenue.prev30} format={fmtDollars} />} />
           <Tile label="Purchases, 30 days" value={fmtInt(s.purchases.cur30)} sub={<Delta now={s.purchases.cur30} prev={s.purchases.prev30} />} />
           <Tile label="New accounts, 30 days" value={fmtInt(s.signups.cur30)} sub={<Delta now={s.signups.cur30} prev={s.signups.prev30} />} />
@@ -249,11 +251,11 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
             )
           }
         >
-          <div className="overflow-x-auto -mx-2">
+          <TableScroll className="-mx-2">
             <table className="w-full text-sm">
               <thead className="text-xs text-gray-500 dark:text-gray-400">
-                <tr>
-                  <Th>Exam</Th>
+                <tr className={ROW}>
+                  <Th sticky>Exam</Th>
                   <Th>Sells</Th>
                   <Th right title="Distinct people (accounts and guest browsers) with at least one answer, all time">People</Th>
                   <Th right>Answers, 30d</Th>
@@ -265,10 +267,10 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
               </thead>
               <tbody>
                 {shownExams.map((e) => (
-                  <tr key={e.id} className="border-t border-gray-100 dark:border-gray-800">
-                    <td className="py-2 px-2">
-                      <p className="font-medium text-gray-900 dark:text-gray-50">{e.label}</p>
-                      <p className="text-[11px] text-gray-500 dark:text-gray-400">{e.group}</p>
+                  <tr key={e.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                    <td className={`py-2 px-2 ${STICKY_COL}`}>
+                      <p className="font-medium text-gray-900 dark:text-gray-50 whitespace-nowrap">{e.label}</p>
+                      <p className="text-[11px] text-gray-500 dark:text-gray-400 truncate max-w-[8.5rem] sm:max-w-none" title={e.group}>{e.group}</p>
                     </td>
                     <td className="py-2 px-2">
                       {e.monetized ? (
@@ -300,7 +302,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
                 ))}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
           <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
             Revenue is net of refunds and lifetime. Older payments are placed by the paywall saved on their Stripe checkout. Answers per exam were split out
             in October 2026, so most exams have no prior 30 days.
@@ -309,11 +311,11 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
 
         {/* Paywalls */}
         <Card title="Which paywalls sell" subtitle="Views from analytics/paywalls, purchases from Stripe checkouts">
-          <div className="overflow-x-auto -mx-2">
+          <TableScroll className="-mx-2">
             <table className="w-full text-sm">
               <thead className="text-xs text-gray-500 dark:text-gray-400">
-                <tr>
-                  <Th>Paywall</Th>
+                <tr className={ROW}>
+                  <Th sticky>Paywall</Th>
                   <Th right>Views, 30d</Th>
                   <Th right>Views, all time</Th>
                   <Th right title="Signed-in accounts that saw it at least once">Accounts</Th>
@@ -325,8 +327,8 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
               </thead>
               <tbody>
                 {data.paywalls.map((p) => (
-                  <tr key={p.feature} className="border-t border-gray-100 dark:border-gray-800">
-                    <td className="py-2 px-2 font-medium text-gray-900 dark:text-gray-50">{p.label}</td>
+                  <tr key={p.feature} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                    <td className={`py-2 px-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{p.label}</td>
                     <td className="py-2 px-2 text-right tabular-nums">{fmtInt(p.hits30d)}</td>
                     <td className="py-2 px-2 text-right">
                       <Bar value={p.hitsAll} max={maxPaywallViews} color={COLORS.users} label={fmtInt(p.hitsAll)} />
@@ -342,7 +344,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
                 ))}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
           <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
             Views are counted per open, including signed-out visitors, so per 100 views is a floor on the true rate. The dashboard sends one checkout name
             for both locked training sets (3 and 4) and both locked tests.
@@ -354,11 +356,11 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
           title="Where new visitors come from"
           subtitle={data.sourcesSince ? `First visits by source, counted since ${fmtDay(data.sourcesSince)}` : "First visits by source"}
         >
-          <div className="overflow-x-auto -mx-2">
+          <TableScroll className="-mx-2">
             <table className="w-full text-sm">
               <thead className="text-xs text-gray-500 dark:text-gray-400">
-                <tr>
-                  <Th>Source</Th>
+                <tr className={ROW}>
+                  <Th sticky>Source</Th>
                   <Th right>Visitors, 7d</Th>
                   <Th right>vs prior 7d</Th>
                   <Th right>Share, 7d</Th>
@@ -369,8 +371,8 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
               </thead>
               <tbody>
                 {data.sources.map((x) => (
-                  <tr key={x.id} className="border-t border-gray-100 dark:border-gray-800">
-                    <td className="py-2 px-2 font-medium text-gray-900 dark:text-gray-50">
+                  <tr key={x.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                    <td className={`py-2 px-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>
                       {x.label}
                       {x.ai && <span className="ml-2 text-[10px] uppercase tracking-wide text-gray-500 dark:text-gray-400">AI</span>}
                     </td>
@@ -388,7 +390,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
                 ))}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
           {data.landings.length > 0 ? (
             <div className="mt-5">
               <h3 className="text-xs font-semibold text-gray-700 dark:text-gray-200 mb-2">Landing pages that make accounts</h3>
@@ -412,11 +414,11 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
 
         {/* Retention */}
         <Card title="Do new accounts come back?" subtitle="Weekly signup cohorts, share active again">
-          <div className="overflow-x-auto -mx-2">
+          <TableScroll className="-mx-2">
             <table className="w-full text-sm">
               <thead className="text-xs text-gray-500 dark:text-gray-400">
-                <tr>
-                  <Th>Signed up</Th>
+                <tr className={ROW}>
+                  <Th sticky>Signed up</Th>
                   <Th right>Accounts</Th>
                   <Th right title="Any active day from day 1 to day 29 after signup">Ever back</Th>
                   <Th right title="Active on day 7 to 13">Week 2</Th>
@@ -427,8 +429,8 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
               </thead>
               <tbody>
                 {data.cohorts.map((c) => (
-                  <tr key={c.start} className="border-t border-gray-100 dark:border-gray-800">
-                    <td className="py-2 px-2 whitespace-nowrap">{fmtDay(c.start)} to {fmtDay(c.end)}</td>
+                  <tr key={c.start} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                    <td className={`py-2 px-2 whitespace-nowrap ${STICKY_COL}`}>{fmtDay(c.start)} to {fmtDay(c.end)}</td>
                     <td className="py-2 px-2 text-right tabular-nums">{fmtInt(c.size)}</td>
                     <RateCell value={c.cameBack} />
                     <RateCell value={c.week1} />
@@ -441,7 +443,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, w
                 ))}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
           <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
             A dot means that week has not fully passed for everyone in the cohort. Accounts only: guests have no activity record.
           </p>

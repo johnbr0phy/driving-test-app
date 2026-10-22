@@ -128,7 +128,8 @@ export async function createQuiz(owner: QuizOwner, input: CreateQuizInput, db: F
       nextQuestionId: next,
     };
     try {
-      await db.collection("quizzes").doc(code).create({ ...doc, ...rankFields(visibility, 0) });
+      // A create cannot contain FieldValue.delete(); non-public quizzes simply omit the rank.
+      await db.collection("quizzes").doc(code).create({ ...doc, ...(visibility === "public" ? { publicRank: 0 } : {}) });
       await bumpCounter(db, `created_${input.createdVia}`);
       return doc;
     } catch (error: unknown) {

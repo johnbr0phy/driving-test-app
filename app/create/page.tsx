@@ -1,7 +1,7 @@
 "use client";
 
 // /create: turn anything into a practice test. Step 1 picks the source
-// (your own ChatGPT or Claude via a copied prompt, Quizlet import, write your
+// (your connected ChatGPT or Claude, Quizlet import, write your
 // own), step 2 is the editor
 // (components/quiz/create/QuizEditor.tsx). Sign-in required, like /teach/new.
 

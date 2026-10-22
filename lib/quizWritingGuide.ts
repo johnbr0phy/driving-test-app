@@ -39,27 +39,6 @@ You are writing multiple-choice questions for a practice test on TigerTest. The 
 
 Tell the person the link (tigertest.io/q/CODE), that it opens as Practice, Test and Flashcards, that they can share the link, and that get_quiz_report shows who played and which questions were missed most. Offer to add more questions with add_quiz_questions or fix one with update_quiz.`;
 
-/**
- * The prompt /create hands to someone without the connector: the same guide,
- * then the JSON shape to reply in, then a place for their material. They
- * paste it into any ChatGPT or Claude (free plans included), paste the
- * reply back, and lib/quizzes.ts parseAssistantQuiz() turns it into the
- * editor's questions. TigerTest never makes the model call.
- */
-export function quizAssistantPrompt(count = 20): string {
-  return `${QUIZ_WRITING_GUIDE.replace(/\n## 4\. After[\s\S]*$/, "")}
-## 4. Reply format
-
-Write ${count} questions (fewer if the material supports fewer). Reply with JSON only, no prose before or after, in exactly this shape:
-
-{"title": "...", "description": "...", "questions": [{"question": "...", "options": ["...", "...", "...", "..."], "correctIndex": 0, "explanation": "...", "topic": "..."}]}
-
-## 5. My material
-
-(paste your notes, chapter, syllabus or term list below this line)
-`;
-}
-
 /** The guide with one example item, for the MCP prompt. */
 export const QUIZ_WRITING_EXAMPLE = `Example of a well-formed item (this one keys A, the next should key B):
 {

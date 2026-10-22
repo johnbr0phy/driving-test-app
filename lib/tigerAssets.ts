@@ -6,6 +6,7 @@ export const TIGER_EXAM_IDS = [
   "teas", "aws", "aplus", "foodhandler", "boating", "hunter", "secplus", "hesi",
   "asvab", "cpr", "osha", "forklift", "alcohol", "accuplacer",
   "security", "lifeguard", "pnc", "sat", "act", "nclex",
+  "cosmetology", "vtne", "paramedic", "nclexpn", "ged", "timestables",
 ] as const;
 
 export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;

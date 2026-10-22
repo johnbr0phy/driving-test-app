@@ -68,7 +68,7 @@ const TEACH_SECTION = `## For teachers\n\n- [Free instructor classes](${siteUrl}
 
 const QUIZ_SECTION = `## Quizzes: a practice test from your own material
 
-- Anyone with a free TigerTest account can turn notes, a chapter, a syllabus or a Quizlet export into a practice test at ${siteUrl}/create (the questions are written by the person's own ChatGPT or Claude from a copied prompt, imported from Quizlet, or typed), played at tigertest.io/q/<code> in three modes: Practice (misses come back until mastered), Test (timed, with a pass mark) and Flashcards.
+- Anyone with a free TigerTest account can turn notes, a chapter, a syllabus or a Quizlet export into a practice test at ${siteUrl}/create (connect the person's own ChatGPT or Claude via /connect to write and save questions through MCP, import from Quizlet, or type them), played at tigertest.io/q/<code> in three modes: Practice (misses come back until mastered), Test (timed, with a pass mark) and Flashcards.
 - Share the link with a study group or class; the creator's report shows who played, their scores and the questions and topics missed most.
 - ChatGPT and Claude can make quizzes directly through TigerTest's MCP server at ${siteUrl}/api/mcp (OAuth sign-in; tools: create_quiz, add_quiz_questions, list_my_quizzes, get_quiz, update_quiz, delete_quiz, get_quiz_report, plus DMV tutoring tools). Setup: ${siteUrl}/connect
 - Public quizzes that enough people have played are listed at ${siteUrl}/quizzes.

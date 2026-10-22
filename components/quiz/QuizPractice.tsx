@@ -242,16 +242,20 @@ export function ReportQuestion({ code, questionId }: { code: string; questionId:
   const [reason, setReason] = useState("wrong_answer");
   const [note, setNote] = useState("");
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
 
   const send = async (e: React.FormEvent) => {
     e.preventDefault();
     setBusy(true);
+    setError("");
     try {
       await reportQuizQuestion(code, questionId, reason, note);
+      setSent(true);
+    } catch {
+      setError("Could not send the report. Please try again.");
     } finally {
       setBusy(false);
-      setSent(true);
     }
   };
 
@@ -288,6 +292,7 @@ export function ReportQuestion({ code, questionId }: { code: string; questionId:
               className="mt-1 block w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 px-2 py-1.5 text-sm"
             />
           </label>
+          {error && <p role="alert" className="text-xs text-red-600 dark:text-red-400">{error}</p>}
           <div className="flex gap-2">
             <Button type="submit" size="sm" disabled={busy} className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
               {busy ? "Sending..." : "Send"}

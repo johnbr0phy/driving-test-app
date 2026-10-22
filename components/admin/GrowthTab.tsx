@@ -6,10 +6,11 @@ import { useAuth } from "@/contexts/AuthContext";
 import { ArrowUpRight, ArrowDownRight } from "lucide-react";
 import {
   AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
-  ResponsiveContainer, LabelList,
+  ResponsiveContainer, LabelList, Cell,
 } from "recharts";
-import { TabError, TabHeader, TabLoading, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
+import { CARD, ROW, STICKY_COL, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { BasicsProgress } from "@/components/admin/BasicsProgress";
+import { WeeklyActiveLearners } from "@/components/admin/WeeklyActiveLearners";
 
 // ─── Palette (validated: dataviz reference palette, light mode) ─────────────
 const COLORS = {
@@ -63,8 +64,6 @@ interface Metrics {
     createdImport: number;
     createdMcp: number;
     plays: number;
-    generated: number;
-    generatedQuestions?: number;
     questionReports: number;
     total: number;
   };
@@ -197,14 +196,33 @@ function hourly(values: number[]): Pt[] {
   }));
 }
 
-// Running total across buckets, seeded with everything before the window
-function cumulative(map: Record<string, number>, buckets: Pt[]): Pt[] {
-  if (buckets.length === 0) return [];
-  const windowStart = buckets[0].key.length === 7 ? buckets[0].key + "-01" : buckets[0].key;
-  let running = Object.entries(map).reduce((n, [d, c]) => (d < windowStart ? n + c : n), 0);
-  return buckets.map((b) => {
-    running += b.value;
-    return { ...b, value: running };
+// New signups by calendar day (last 30), Monday-start week (last 12) or month
+// (last 12), independent of the range filter. The last bucket is the current,
+// unfinished one. Day keys are UTC, like the server's.
+type SignupUnit = "day" | "week" | "month";
+function signupBars(map: Record<string, number>, unit: SignupUnit): Pt[] {
+  const sumRange = (from: string, to: string) =>
+    Object.entries(map).reduce((n, [d, c]) => (d >= from && d <= to ? n + c : n), 0);
+  const today = new Date();
+  today.setUTCHours(12, 0, 0, 0);
+  const iso = (d: Date) => d.toISOString().split("T")[0];
+  if (unit === "day") return bucketize(map, "30d");
+  if (unit === "week") {
+    const monday = new Date(today);
+    monday.setUTCDate(monday.getUTCDate() - ((monday.getUTCDay() + 6) % 7));
+    return Array.from({ length: 12 }, (_, i) => {
+      const start = new Date(monday);
+      start.setUTCDate(start.getUTCDate() - (11 - i) * 7);
+      const end = new Date(start);
+      end.setUTCDate(end.getUTCDate() + 6);
+      const key = iso(start);
+      return { key, label: fmtDayLabel(key), value: sumRange(key, iso(end)) };
+    });
+  }
+  return Array.from({ length: 12 }, (_, i) => {
+    const m = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() - (11 - i), 15));
+    const prefix = m.toISOString().slice(0, 7);
+    return { key: prefix, label: fmtMonthLabel(prefix), value: sumRange(prefix + "-01", prefix + "-31") };
   });
 }
 
@@ -239,7 +257,7 @@ function Sparkline({ points, accent }: { points: number[]; accent: string }) {
   const path = xy.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
   const [lx, ly] = xy[xy.length - 1];
   return (
-    <svg width={w} height={h} className="shrink-0" aria-hidden="true">
+    <svg width={w} height={h} className="shrink-0 hidden sm:block" aria-hidden="true">
       <polyline points={path} fill="none" stroke={COLORS.sparkline} strokeWidth="2"
         strokeLinecap="round" strokeLinejoin="round" />
       <circle cx={lx} cy={ly} r="4" fill={accent} stroke="#ffffff" strokeWidth="2" />
@@ -275,10 +293,10 @@ function StatTile({ label, value, sub, spark, accent, delta }: {
   spark?: number[]; accent: string; delta?: React.ReactNode;
 }) {
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 flex flex-col gap-1.5">
+    <div className={`${CARD} flex flex-col gap-1.5`}>
       <p className="text-[13px] font-medium text-gray-500 dark:text-gray-400">{label}</p>
       <div className="flex items-end justify-between gap-3">
-        <p className="text-[32px] leading-none font-semibold text-gray-900 dark:text-gray-50 tracking-tight">{value}</p>
+        <p className="text-2xl sm:text-[32px] leading-none font-semibold text-gray-900 dark:text-gray-50 tracking-tight">{value}</p>
         {spark && <Sparkline points={spark} accent={accent} />}
       </div>
       {delta}
@@ -287,14 +305,14 @@ function StatTile({ label, value, sub, spark, accent, delta }: {
   );
 }
 
-function ChartTooltip({ active, payload, label, format }: {
+function ChartTooltip({ active, payload, label, format, labelPrefix = "" }: {
   active?: boolean; payload?: { value?: number | string }[]; label?: string;
-  format: (n: number) => string;
+  format: (n: number) => string; labelPrefix?: string;
 }) {
   if (!active || !payload?.length) return null;
   return (
     <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg shadow-md px-3 py-2">
-      <p className="text-xs text-gray-500 dark:text-gray-400">{label}</p>
+      <p className="text-xs text-gray-500 dark:text-gray-400">{labelPrefix}{label}</p>
       <p className="text-sm font-semibold text-gray-900 dark:text-gray-50">{format(Number(payload[0].value) || 0)}</p>
     </div>
   );
@@ -306,12 +324,12 @@ function ChartCard({ title, subtitle, children, footnote }: {
   title: string; subtitle?: string; children: React.ReactNode; footnote?: string;
 }) {
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
-      <div className="mb-4 flex items-baseline justify-between gap-2">
+    <div className={CARD}>
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">{title}</h2>
         {subtitle && <p className="text-xs text-gray-500 dark:text-gray-400">{subtitle}</p>}
       </div>
-      <div className="h-56">{children}</div>
+      <div className="h-48 sm:h-56">{children}</div>
       {footnote && <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">{footnote}</p>}
     </div>
   );
@@ -326,6 +344,73 @@ function makeEndDot(color: string) {
       <circle key={index} cx={cx} cy={cy} r={4.5} fill={color} stroke="#ffffff" strokeWidth={2} />
     );
   };
+}
+
+// New signups per day / week / month, the old bar chart: the last bar is the
+// current period so far, drawn lighter, with the previous full one beside it.
+function NewSignupsCard({ data, unit, onUnit }: {
+  data: Pt[]; unit: SignupUnit; onUnit: (u: SignupUnit) => void;
+}) {
+  const cur = data[data.length - 1]?.value ?? 0;
+  const prev = data[data.length - 2]?.value ?? 0;
+  const noun = unit === "day" ? "Today" : `This ${unit}`;
+  const prevNoun = unit === "day" ? "yesterday" : `last ${unit}`;
+  return (
+    <div className={`${CARD} mb-3 sm:mb-4`}>
+      <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">New signups</h2>
+          <p className="mt-1 text-2xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">
+            {fmtInt(cur)}
+            <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
+              {noun.toLowerCase()} so far vs {fmtInt(prev)} {prevNoun}
+            </span>
+          </p>
+        </div>
+        <div className="flex gap-1">
+          {(["day", "week", "month"] as const).map((u) => (
+            <button
+              key={u}
+              onClick={() => onUnit(u)}
+              className={`text-xs font-medium rounded-md px-3 py-1.5 transition-colors capitalize ${
+                unit === u ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"
+              }`}
+            >
+              {u}
+            </button>
+          ))}
+        </div>
+      </div>
+      <div className="h-56 sm:h-64">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={data} margin={{ top: 18, right: 16, left: 0, bottom: 0 }}>
+            <CartesianGrid vertical={false} stroke={COLORS.grid} />
+            <XAxis dataKey="label" tick={axisTickStyle} tickLine={false}
+              axisLine={{ stroke: COLORS.axis }} interval={unit === "day" ? "preserveStartEnd" : 0} tickMargin={8} />
+            <YAxis tick={axisTickStyle} tickLine={false} axisLine={false}
+              allowDecimals={false} width={44} tickFormatter={fmtCompact} />
+            <Tooltip cursor={{ fill: "rgba(0,0,0,0.03)" }}
+              content={<ChartTooltip format={(n) => `${fmtInt(n)} signups`}
+                labelPrefix={unit === "week" ? "Week of " : ""} />} />
+            <Bar dataKey="value" fill={COLORS.users} maxBarSize={36} radius={[4, 4, 0, 0]}
+              isAnimationActive={false}>
+              {data.map((p, i) => (
+                <Cell key={p.key} fillOpacity={i === data.length - 1 ? 0.45 : 1} />
+              ))}
+              {unit !== "day" && (
+                <LabelList dataKey="value" position="top"
+                  formatter={(v: React.ReactNode) => (Number(v) > 0 ? fmtInt(Number(v)) : "")}
+                  style={{ fontSize: 10, fill: "#52514e" }} />
+              )}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+      <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
+        Weeks start Monday (UTC). The lighter bar is the current {unit}, still in progress.
+      </p>
+    </div>
+  );
 }
 
 // ─── Quizzes (lib/quizzes.ts): the site-wide counters in analytics/quizzes ──
@@ -380,9 +465,9 @@ function Funnel({ data }: { data: FunnelStage[] }) {
                 {stage.section}
               </p>
             )}
-            <div className="grid grid-cols-[150px_1fr_140px] items-center gap-3">
-              <p className="text-sm text-gray-600 dark:text-gray-300">{stage.label}</p>
-              <div className="h-7 bg-gray-50 dark:bg-gray-950 rounded-md overflow-hidden relative">
+            <div className="grid grid-cols-[minmax(0,1fr)_auto] sm:grid-cols-[150px_1fr_140px] items-center gap-x-3 gap-y-1 sm:gap-3">
+              <p className="order-1 sm:order-none text-sm text-gray-600 dark:text-gray-300">{stage.label}</p>
+              <div className="order-3 sm:order-none col-span-2 sm:col-span-1 h-7 bg-gray-50 dark:bg-gray-950 rounded-md overflow-hidden relative">
                 <div
                   className="h-full rounded-r-md flex items-center"
                   style={{ width: `${Math.max(pctOfTop, 2)}%`, backgroundColor: COLORS.funnelRamp[i] }}
@@ -399,7 +484,7 @@ function Funnel({ data }: { data: FunnelStage[] }) {
                   {fmtInt(stage.value)}
                 </span>
               </div>
-              <p className="text-xs text-gray-500 dark:text-gray-400 text-right">
+              <p className="order-2 sm:order-none text-xs text-gray-500 dark:text-gray-400 text-right">
                 {stage.note ?? (stepRate != null
                   ? `${stepRate}% of previous`
                   : `${Math.round((stage.value / max) * 100)}% baseline`)}
@@ -496,7 +581,7 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
   const purchased = rows.tried.purchased + rows.cold.purchased;
 
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
+    <div className={CARD}>
       <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">Funnel</h2>
         <div className="flex items-center gap-3">
@@ -560,11 +645,11 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
             </div>
           </div>
           <VisitSources sum={sum} />
-          <div className="mt-5 overflow-x-auto">
+          <TableScroll className="mt-5">
             <table className="w-full text-sm">
               <thead>
-                <tr className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                  <th className="text-left font-medium pb-2">Accounts created in range</th>
+                <tr className={`${ROW} text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400`}>
+                  <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Accounts created in range</th>
                   <th className="text-right font-medium pb-2 pl-4">Accounts</th>
                   <th className="text-right font-medium pb-2 pl-4">Answered</th>
                   <th className="text-right font-medium pb-2 pl-4">Hit paywall</th>
@@ -577,8 +662,8 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
                   ["Tried before signing up", rows.tried],
                   ["Signed up cold", rows.cold],
                 ] as const).map(([label, o]) => (
-                  <tr key={label} className="border-t border-gray-100 dark:border-gray-800">
-                    <td className="py-2 font-medium text-gray-900 dark:text-gray-50">{label}</td>
+                  <tr key={label} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                    <td className={`py-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{label}</td>
                     <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.accounts)}</td>
                     <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.answered)}</td>
                     <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.paywall)}</td>
@@ -588,7 +673,7 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
                 ))}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
           <p className="mt-4 text-[11px] text-gray-500 dark:text-gray-400">
             Counts browsers, not people: each step fires once per browser while signed out, from{" "}
             {fmtDayLabel(data.startedAt)}. A returning user on a new device counts as a visitor. After
@@ -610,8 +695,8 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
   const attributed = rows.reduce((n, r) => n + r.total, 0);
   const max = rows.length > 0 ? rows[0].total : 0;
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
-      <div className="mb-4 flex items-baseline justify-between gap-2">
+    <div className={CARD}>
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">Questions by exam</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400">
           {fmtInt(attributed)} attributed of {fmtInt(totalQuestions)} all-time
@@ -622,24 +707,24 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
           {backfillPending ? "Seeding history from user records…" : "No answers recorded yet."}
         </p>
       ) : (
-        <div className="overflow-x-auto">
+        <TableScroll>
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                <th className="text-left font-medium pb-2">Exam</th>
+              <tr className={`${ROW} text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400`}>
+                <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Exam</th>
                 <th className="text-right font-medium pb-2 pl-4">Today</th>
                 <th className="text-right font-medium pb-2 pl-4">Last 7d</th>
                 <th className="text-right font-medium pb-2 pl-4">All-time</th>
                 <th className="text-right font-medium pb-2 pl-4" title="Distinct people who answered at least one question">Enrolled</th>
-                <th className="text-right font-medium pb-2 pl-4 w-1/3">Share</th>
+                <th className="text-right font-medium pb-2 pl-4 w-1/3 hidden sm:table-cell">Share</th>
               </tr>
             </thead>
             <tbody>
               {rows.map((r) => (
-                <tr key={r.id} className="border-t border-gray-100 dark:border-gray-800">
-                  <td className="py-2 font-medium text-gray-900 dark:text-gray-50">{r.label}</td>
+                <tr key={r.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                  <td className={`py-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{r.label}</td>
                   <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.today)}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300 whitespace-nowrap">
                     {fmtInt(r.last7d)}
                     <span className="ml-1.5 text-[11px]">
                       <Delta now={r.last7d} prev={r.prev7d} suffix="vs prior 7d" />
@@ -649,7 +734,7 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
                   <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50">
                     {r.enrolled !== undefined ? fmtInt(r.enrolled) : "—"}
                   </td>
-                  <td className="py-2 pl-4">
+                  <td className="py-2 pl-4 hidden sm:table-cell">
                     <div className="flex items-center gap-2 justify-end">
                       <div className="h-1.5 w-full max-w-[160px] bg-gray-100 dark:bg-gray-800 rounded overflow-hidden">
                         <div
@@ -666,7 +751,7 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
               ))}
             </tbody>
           </table>
-        </div>
+        </TableScroll>
       )}
       <p className="mt-4 text-[11px] text-gray-500 dark:text-gray-400">
         Every training and test answer, guests included, filed under the exam it belongs to.
@@ -683,8 +768,8 @@ function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) 
   const max = data.byPick.reduce((m, r) => Math.max(m, r.clicks), 0);
   const pickLabel = (id: string) => data.byPick.find((p) => p.id === id)?.label ?? id;
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
-      <div className="mb-4 flex items-baseline justify-between gap-2">
+    <div className={CARD}>
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">What should we build next?</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400">{fmtInt(data.total)} answers</p>
       </div>
@@ -750,19 +835,19 @@ function LaunchTest({ rows }: { rows: NonNullable<Metrics["launchTest"]> }) {
   const rate = (n: number, d: number) => (d > 0 ? `${((n / d) * 100).toFixed(1)}%` : "—");
   const bestCtr = Math.max(...rows.map((r) => (r.sent > 0 ? r.clicked / r.sent : 0)));
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
-      <div className="mb-4 flex items-baseline justify-between gap-2">
+    <div className={CARD}>
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">SAT/ACT launch email split test</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400">{fmtInt(sent)} sent to DMV readers</p>
       </div>
       {sent === 0 ? (
         <p className="text-sm text-gray-500 dark:text-gray-400">Nothing sent yet. The email is paused until NEW_TESTS_CAMPAIGN=send is set in Vercel.</p>
       ) : (
-        <div className="overflow-x-auto">
+        <TableScroll>
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                <th className="text-left font-medium pb-2">Variant</th>
+              <tr className={`${ROW} text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400`}>
+                <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Variant</th>
                 <th className="text-right font-medium pb-2 pl-4">Sent</th>
                 <th className="text-right font-medium pb-2 pl-4">Clicked</th>
                 <th className="text-right font-medium pb-2 pl-4">Click rate</th>
@@ -774,8 +859,8 @@ function LaunchTest({ rows }: { rows: NonNullable<Metrics["launchTest"]> }) {
               {rows.map((r) => {
                 const lead = r.sent > 0 && r.clicked / r.sent === bestCtr && bestCtr > 0;
                 return (
-                  <tr key={r.id} className="border-t border-gray-100 dark:border-gray-800">
-                    <td className="py-2">
+                  <tr key={r.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                    <td className={`py-2 ${STICKY_COL}`}>
                       <div className="font-medium text-gray-900 dark:text-gray-50">{r.id} · {r.name}{lead ? " ★" : ""}</div>
                       <div className="text-[11px] text-gray-500 dark:text-gray-400">{r.subject}</div>
                     </td>
@@ -789,7 +874,7 @@ function LaunchTest({ rows }: { rows: NonNullable<Metrics["launchTest"]> }) {
               })}
             </tbody>
           </table>
-        </div>
+        </TableScroll>
       )}
       <p className="mt-4 text-[11px] text-gray-500 dark:text-gray-400">
         Each DMV reader gets one variant, fixed by their account. Clicked counts people, not clicks. Bought is Premium
@@ -822,8 +907,8 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
   const fill = (n: number) => (n === 0 ? "#f6f5f2" : `color-mix(in srgb, ${COLORS.engagement} ${Math.round(12 + (n / max) * 88)}%, #ffffff)`);
 
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
-      <div className="mb-4 flex items-baseline justify-between gap-2">
+    <div className={CARD}>
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">When people study</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400">
           {fmtInt(data.answers)} answers · last {data.days} days · Eastern time
@@ -833,11 +918,11 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
         <p className="text-sm text-gray-500 dark:text-gray-400">No timestamped answers yet.</p>
       ) : (
         <>
-          <div className="overflow-x-auto">
+          <TableScroll>
             <table className="border-separate" style={{ borderSpacing: 2 }}>
               <thead>
-                <tr>
-                  <th />
+                <tr className={ROW}>
+                  <th className={STICKY_COL} />
                   {byHour.map((_, h) => (
                     <th key={h} className="text-[10px] font-normal text-gray-500 dark:text-gray-400 text-left w-5 min-w-[18px]">
                       {h % 3 === 0 ? hourLabel(h) : ""}
@@ -847,8 +932,8 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
               </thead>
               <tbody>
                 {rows.map((r) => (
-                  <tr key={r.day}>
-                    <td className="pr-2 text-[11px] text-gray-500 dark:text-gray-400">{DAY_NAMES[r.day]}</td>
+                  <tr key={r.day} className={ROW}>
+                    <td className={`pr-2 text-[11px] text-gray-500 dark:text-gray-400 ${STICKY_COL}`}>{DAY_NAMES[r.day]}</td>
                     {r.cells.map((n, h) => (
                       <td
                         key={h}
@@ -861,7 +946,7 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
                 ))}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
           <div className="mt-2 flex items-center gap-2 text-[10px] text-gray-500 dark:text-gray-400">
             <span>Fewer</span>
             <span
@@ -899,9 +984,10 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
 // The Growth tab on /admin: the scoreboard over time, from /api/admin/metrics.
 export function GrowthTab() {
   const { user } = useAuth();
-  const { data: metrics, error, loading, refreshing, reload: fetchMetrics } = useAdminFetch<Metrics>("/api/admin/metrics");
+  const { data: metrics, error, loading, refreshing, updating, reload: fetchMetrics } = useAdminFetch<Metrics>("/api/admin/metrics");
   const [range, setRange] = useState<Range>("90d");
   const [engageMetric, setEngageMetric] = useState<"active" | "questions">("active");
+  const [signupUnit, setSignupUnit] = useState<SignupUnit>("week");
 
   // One-time history seed for the per-exam split of the questions aggregate:
   // live counts only started when the split shipped, so until the backfill
@@ -924,19 +1010,12 @@ export function GrowthTab() {
   const series = useMemo(() => {
     if (!metrics) return null;
     if (range === "today") {
-      const signupHours = hourly(metrics.today?.hours?.signups ?? []);
-      // Cumulative within the day, not all-time — 27 accounts added onto 3,700
-      // would render as a dead-flat line.
-      let run = 0;
       return {
-        usersCumulative: signupHours.map((p) => ({ ...p, value: (run += p.value) })),
-        newSignups: signupHours,
         revenue: hourly(metrics.today?.hours?.revenueCents ?? []),
         active: [],      // day-resolution only; rendered as a tile instead
         questions: [],   // same
       };
     }
-    const signupBuckets = bucketize(metrics.daily.signups, range);
     const active =
       range === "30d"
         ? bucketize(metrics.daily.active, "30d")
@@ -947,13 +1026,16 @@ export function GrowthTab() {
               .filter((p) => p.date !== new Date().toISOString().slice(0, 7))
               .map((p) => ({ key: p.date, label: fmtMonthLabel(p.date), value: p.count }));
     return {
-      usersCumulative: cumulative(metrics.daily.signups, signupBuckets),
-      newSignups: signupBuckets,
       revenue: bucketize(metrics.daily.revenueCents, range),
       active,
       questions: bucketize(metrics.daily.questions, range),
     };
   }, [metrics, range]);
+
+  const signups = useMemo(
+    () => (metrics ? signupBars(metrics.daily.signups, signupUnit) : []),
+    [metrics, signupUnit],
+  );
 
   const sparks = useMemo(() => {
     if (!metrics) return null;
@@ -988,10 +1070,11 @@ export function GrowthTab() {
         subtitle={<>Live Firestore + Stripe data · updated {fmtUpdated(metrics.generatedAt)}</>}
         onRefresh={() => fetchMetrics(true)}
         refreshing={refreshing}
+        updating={updating}
       />
 
         {/* KPI row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6">
           <StatTile
             label="Revenue (all-time)"
             value={fmtDollarsExact(kpis.revenueAllTimeCents)}
@@ -1028,17 +1111,22 @@ export function GrowthTab() {
           />
         </div>
 
+        <WeeklyActiveLearners />
+
+        <NewSignupsCard data={signups} unit={signupUnit} onUnit={setSignupUnit} />
+
         {/* Range filter — scopes every chart below */}
-        <div className="flex items-center gap-1 mb-4 bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 w-fit shadow-sm">
-          {([["today", "Today"], ["30d", "Last 30 days"], ["90d", "Last 90 days"], ["all", "All time"]] as const).map(([key, label]) => (
+        <div className="flex items-center gap-1 mb-3 sm:mb-4 bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 w-full sm:w-fit shadow-sm">
+          {([["today", "Today", "Today"], ["30d", "Last 30 days", "30 days"], ["90d", "Last 90 days", "90 days"], ["all", "All time", "All"]] as const).map(([key, label, short]) => (
             <button
               key={key}
               onClick={() => setRange(key)}
-              className={`text-xs font-medium rounded-md px-3 py-1.5 transition-colors ${
+              className={`flex-1 sm:flex-none text-xs font-medium rounded-md px-3 py-2 sm:py-1.5 transition-colors ${
                 range === key ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"
               }`}
             >
-              {label}
+              <span className="sm:hidden">{short}</span>
+              <span className="hidden sm:inline">{label}</span>
             </button>
           ))}
         </div>
@@ -1056,29 +1144,7 @@ export function GrowthTab() {
         )}
 
         {/* Charts */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
-          <ChartCard
-            title="User growth"
-            subtitle={isToday
-              ? "accounts added today, cumulative by hour"
-              : `cumulative accounts, by ${bucketNoun}`}
-            footnote={chartNote}>
-            <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={series.usersCumulative} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
-                <CartesianGrid vertical={false} stroke={COLORS.grid} />
-                <XAxis dataKey="label" tick={axisTickStyle} tickLine={false}
-                  axisLine={{ stroke: COLORS.axis }} interval={labelEvery} tickMargin={8} />
-                <YAxis tick={axisTickStyle} tickLine={false} axisLine={false}
-                  allowDecimals={false} width={44} tickFormatter={fmtCompact} />
-                <Tooltip content={<ChartTooltip format={(n) => `${fmtInt(n)} accounts`} />} />
-                <Area type="monotone" dataKey="value" stroke={COLORS.users} strokeWidth={2}
-                  fill={COLORS.users} fillOpacity={0.1} isAnimationActive={false}
-                  dot={(props) => makeEndDot(COLORS.users)({ ...props, dataLength: series.usersCumulative.length })}
-                  activeDot={{ r: 4.5, strokeWidth: 2, stroke: "#ffffff" }} />
-              </AreaChart>
-            </ResponsiveContainer>
-          </ChartCard>
-
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-4">
           <ChartCard
             title="Revenue"
             subtitle={`per ${bucketNoun}${!isToday && kpis.estimatedPurchases > 0
@@ -1103,23 +1169,6 @@ export function GrowthTab() {
                       style={{ fontSize: 10, fill: "#52514e" }} />
                   )}
                 </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </ChartCard>
-
-          <ChartCard title="New signups" subtitle={`per ${bucketNoun}`}
-            footnote={chartNote}>
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={series.newSignups} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
-                <CartesianGrid vertical={false} stroke={COLORS.grid} />
-                <XAxis dataKey="label" tick={axisTickStyle} tickLine={false}
-                  axisLine={{ stroke: COLORS.axis }} interval={labelEvery} tickMargin={8} />
-                <YAxis tick={axisTickStyle} tickLine={false} axisLine={false}
-                  allowDecimals={false} width={44} tickFormatter={fmtCompact} />
-                <Tooltip cursor={{ fill: "rgba(0,0,0,0.03)" }}
-                  content={<ChartTooltip format={(n) => `${fmtInt(n)} signups`} />} />
-                <Bar dataKey="value" fill={COLORS.users} maxBarSize={24} radius={[4, 4, 0, 0]}
-                  isAnimationActive={false} />
               </BarChart>
             </ResponsiveContainer>
           </ChartCard>
@@ -1210,7 +1259,7 @@ export function GrowthTab() {
         {/* SAT, ACT and the other v2 exams with Basics: steps and Basics use */}
         <BasicsProgress />
 
-        {/* Quizzes: made, played, generated, reported (analytics/quizzes) */}
+        {/* Quiz creation, play and report counters. */}
         {metrics.quizzes && <QuizzesCard data={metrics.quizzes} />}
 
         {/* Launch email split test */}
@@ -1220,7 +1269,7 @@ export function GrowthTab() {
         {metrics.studyTimes ? (
           <StudyTimes data={metrics.studyTimes} />
         ) : (
-          <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 text-sm text-gray-500 dark:text-gray-400">
+          <div className={`${CARD} text-sm text-gray-500 dark:text-gray-400`}>
             When people study: no data yet. It is built by the nightly stats job (03:00 UTC), or run
             aggregate-stats from Vercel → Settings → Cron Jobs.
           </div>

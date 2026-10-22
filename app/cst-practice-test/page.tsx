@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "Is the TigerTest CST practice test free?",
-    a: "Yes. All four practice tests and all five training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+    a: "Yes. All four practice tests and all four training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
   },
 ];
 
@@ -73,7 +73,7 @@ const jsonLd = {
       featureList: [
         "200 CST practice questions",
         "4 blueprint-weighted practice tests",
-        "Training sets for every NBSTSA exam domain",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -141,10 +141,11 @@ export default function CSTLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Exam Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Sets follow the NBSTSA outline: preoperative, intraoperative, postoperative, ancillary
-                duties, and basic science. Questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1,
+                and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until
+                you have mastered them.
               </p>
             </div>
           </div>
@@ -232,8 +233,8 @@ export default function CSTLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Weight your study like the exam</h3>
               <p>
-                Intraoperative procedures are 68 of the 150 scored items, so start with the Intraoperative
-                training set. Preoperative preparation and anatomy and physiology are next at 19 and 18.
+                Intraoperative procedures are 68 of the 150 scored items, so every practice test gives
+                them the most questions. Preoperative preparation and anatomy and physiology are next at 19 and 18.
               </p>
             </div>
             <div>
@@ -246,8 +247,8 @@ export default function CSTLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
-                TigerTest tracks your accuracy by content area. After each practice test, go back to the
-                training set for the area you missed most.
+                TigerTest tracks your accuracy by content area. After each practice test, drill the
+                questions you missed, retrain that test&apos;s set, and retake until you clear 70 percent.
               </p>
             </div>
           </div>

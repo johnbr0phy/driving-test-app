@@ -1,31 +1,28 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
-import { isAdminEmail } from '@/lib/admin';
+import { getAdminDb } from '@/lib/firebase-admin';
+import { requireAdmin } from '@/lib/server/adminAuth';
+import { cachedAdminPayload, cachedJson, wantsRefresh } from '@/lib/server/adminCache';
 import { getInternalUids } from '@/lib/server/internalUsers';
 import { buildTeachAdmin } from '@/lib/server/teachAdmin';
 
-// Data for the /admin Teachers tab (lib/server/teachAdmin). Read-only and read fresh:
-// it is a handful of classes, and a teacher's first students should show at once.
+// Data for the /admin Teachers tab (lib/server/teachAdmin). Read-only. A
+// teacher's first students should show soon, so the payload is fresh for
+// only a minute; an older copy is served at once while a rebuild runs after
+// the response (lib/server/adminCache).
 export const maxDuration = 60;
 
 export async function GET(request: NextRequest) {
-  const authHeader = request.headers.get('authorization');
-  if (!authHeader?.startsWith('Bearer ')) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-  }
-  let email: string | undefined;
+  const denied = await requireAdmin(request);
+  if (denied) return denied;
   try {
-    email = (await getAdminAuth().verifyIdToken(authHeader.split('Bearer ')[1])).email;
-  } catch {
-    return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
-  }
-  if (!isAdminEmail(email)) {
-    return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
-  }
-
-  try {
-    const payload = await buildTeachAdmin(getAdminDb(), await getInternalUids());
-    return NextResponse.json(payload, { headers: { 'Cache-Control': 'no-store' } });
+    const { payload, cache, at } = await cachedAdminPayload({
+      key: 'teach',
+      ttlMs: 60_000,
+      staleMs: 24 * 3_600_000,
+      refresh: wantsRefresh(request),
+      build: async () => buildTeachAdmin(getAdminDb(), await getInternalUids()),
+    });
+    return cachedJson(payload, cache, at);
   } catch (error) {
     console.error('[admin/teach]', error);
     return NextResponse.json(

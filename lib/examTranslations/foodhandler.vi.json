@@ -3,25 +3,6 @@
   "name": "Thi thử thẻ Food Handler",
   "examLabel": "Thẻ Food Handler",
   "fullName": "bài thi chứng chỉ an toàn thực phẩm cho nhân viên (food handler)",
-  "trainingSets": {
-    "1": {
-      "name": "Kiến thức cơ bản về an toàn thực phẩm & Vệ sinh cá nhân",
-      "weightLabel": "40% bài thi",
-      "partNames": ["Kiến thức cơ bản về an toàn thực phẩm", "Vệ sinh cá nhân"]
-    },
-    "2": {
-      "name": "Nhiễm bẩn & Chất gây dị ứng",
-      "weightLabel": "20% bài thi"
-    },
-    "3": {
-      "name": "Kiểm soát thời gian & nhiệt độ",
-      "weightLabel": "24% bài thi"
-    },
-    "4": {
-      "name": "Làm sạch, khử trùng & Côn trùng gây hại",
-      "weightLabel": "16% bài thi"
-    }
-  },
   "categoryLabels": {
     "fhBasics": "Kiến thức cơ bản về an toàn thực phẩm",
     "fhHygiene": "Vệ sinh cá nhân",

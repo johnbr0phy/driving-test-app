@@ -1,0 +1,873 @@
+[
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 3,
+    "skill": "2 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "7 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 2 = 14. Double 7: 7 + 7 = 14."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 3,
+    "skill": "5 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "6 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 5 = 30. Count in 5s 6 times: 5, 10, 15, 20, 25, 30."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 3,
+    "skill": "10 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "8 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "80"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 10 = 80. Multiply by 10 and the digits move one place to the left: 8 becomes 80."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 3,
+    "skill": "5 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "4 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 5 = 20. Count in 5s 4 times: 5, 10, 15, 20."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 0,
+    "skill": "Counting in 2s",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "Count in 2s. What comes next? 10, 12, 14, ?",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Add 2 each time: 14 + 2 = 16."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 0,
+    "skill": "Counting in 5s",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "Count in 5s. What comes next? 20, 25, 30, ?",
+    "numeric": {
+      "answers": [
+        "35"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Add 5 each time: 30 + 5 = 35."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 0,
+    "skill": "Counting in 10s",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "Count in 10s. What comes next? 60, 70, 80, ?",
+    "numeric": {
+      "answers": [
+        "90"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Add 10 each time: 80 + 10 = 90."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 0,
+    "skill": "2 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "□ × 2 = 16. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 2 = 16, so 8 goes in the box. Double 8: 8 + 8 = 16."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 0,
+    "skill": "5 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "5 × □ = 30. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 5 = 30, so 6 goes in the box. Count in 5s 6 times: 5, 10, 15, 20, 25, 30."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 0,
+    "skill": "10 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "□ × 10 = 90. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 10 = 90, so 9 goes in the box. Multiply by 10 and the digits move one place to the left: 9 becomes 90."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 0,
+    "skill": "5 times table",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "ttFives",
+    "stem": "Which number is in the 5 times table?",
+    "options": [
+      "35",
+      "32",
+      "53",
+      "38"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "35 ends in 5, and 7 × 5 = 35. 5 times table answers end in 5 or 0."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 0,
+    "skill": "2 times table",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "ttTwos",
+    "stem": "Which number is in the 2 times table?",
+    "options": [
+      "15",
+      "16",
+      "9",
+      "21"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "16 is even, and 8 × 2 = 16. 2 times table answers are always even."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 0,
+    "skill": "10 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "10 × 12 = ?",
+    "numeric": {
+      "answers": [
+        "120"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 12 = 120. Multiply by 10 and the digits move one place to the left: 12 becomes 120."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 0,
+    "skill": "5 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "11 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "55"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "11 × 5 = 55. Count in 5s 11 times: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "2 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "5 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 2 = 10. Double 5: 5 + 5 = 10."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "2 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "11 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "22"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "11 × 2 = 22. Double 11: 11 + 11 = 22."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "2 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "9 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "18"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 2 = 18. Double 9: 9 + 9 = 18."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "2 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "2 × 7 = ?",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "2 × 7 = 14. Double 7: 7 + 7 = 14."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "2 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "2 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "2 × 10 = 20. Double 10: 10 + 10 = 20."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "2 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "2 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "2 × 2 = 4. Double 2: 2 + 2 = 4."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "2 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "12 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 2 = 24. Double 12: 12 + 12 = 24."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "2 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "2 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "2 × 3 = 6. Double 3: 3 + 3 = 6."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "2 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "1 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "1 × 2 = 2. Double 1: 1 + 1 = 2."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "5 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "10 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "50"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 5 = 50. Count in 5s 10 times: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "5 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "5 × 7 = ?",
+    "numeric": {
+      "answers": [
+        "35"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 7 = 35. Count in 5s 7 times: 5, 10, 15, 20, 25, 30, 35."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "5 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "5 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 5 = 25. Count in 5s 5 times: 5, 10, 15, 20, 25."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "5 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "5 × 12 = ?",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 12 = 60. Count in 5s 12 times: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "5 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "1 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "1 × 5 = 5. Count in 5s 1 times: 5."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "5 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "3 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 5 = 15. Count in 5s 3 times: 5, 10, 15."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "5 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "9 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "45"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 5 = 45. Count in 5s 9 times: 5, 10, 15, 20, 25, 30, 35, 40, 45."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "5 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "5 × 4 = ?",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 4 = 20. Count in 5s 4 times: 5, 10, 15, 20."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "10 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "9 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "90"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 10 = 90. Multiply by 10 and the digits move one place to the left: 9 becomes 90."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "10 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "10 × 1 = ?",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 1 = 10. Multiply by 10 and the digits move one place to the left: 1 becomes 10."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "10 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "10 × 11 = ?",
+    "numeric": {
+      "answers": [
+        "110"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 11 = 110. Multiply by 10 and the digits move one place to the left: 11 becomes 110."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "10 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "3 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 10 = 30. Multiply by 10 and the digits move one place to the left: 3 becomes 30."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "10 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "10 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "100"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 10 = 100. Multiply by 10 and the digits move one place to the left: 10 becomes 100."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "10 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "10 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "80"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 8 = 80. Multiply by 10 and the digits move one place to the left: 8 becomes 80."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "10 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "10 × 7 = ?",
+    "numeric": {
+      "answers": [
+        "70"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 7 = 70. Multiply by 10 and the digits move one place to the left: 7 becomes 70."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 1,
+    "skill": "10 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "10 × 6 = ?",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 6 = 60. Multiply by 10 and the digits move one place to the left: 6 becomes 60."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 2,
+    "skill": "2 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "3 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 2 = 6. Double 3: 3 + 3 = 6."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 2,
+    "skill": "2 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "2 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "2 × 5 = 10. Double 5: 5 + 5 = 10."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 2,
+    "skill": "5 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "12 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 5 = 60. Count in 5s 12 times: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 2,
+    "skill": "5 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "5 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "50"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 10 = 50. Count in 5s 10 times: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 2,
+    "skill": "5 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "8 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "40"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 5 = 40. Count in 5s 8 times: 5, 10, 15, 20, 25, 30, 35, 40."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 2,
+    "skill": "10 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "10 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 3 = 30. Multiply by 10 and the digits move one place to the left: 3 becomes 30."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 2,
+    "skill": "10 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "10 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 2 = 20. Multiply by 10 and the digits move one place to the left: 2 becomes 20."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 2,
+    "skill": "2 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "6 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 2 = 12. Double 6: 6 + 6 = 12."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 4,
+    "skill": "2 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTwos",
+    "stem": "3 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 2 = 6. Double 3: 3 + 3 = 6."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 4,
+    "skill": "5 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "5 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 5 = 25. Count in 5s 5 times: 5, 10, 15, 20, 25."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 4,
+    "skill": "10 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttTens",
+    "stem": "3 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 10 = 30. Multiply by 10 and the digits move one place to the left: 3 becomes 30."
+  },
+  {
+    "domain": "ttTwoFiveTen",
+    "test": 4,
+    "skill": "5 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFives",
+    "stem": "7 × 5 = ?",
+    "numeric": {
+      "answers": [
+        "35"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 5 = 35. Count in 5s 7 times: 5, 10, 15, 20, 25, 30, 35."
+  }
+]

@@ -61,9 +61,10 @@ export function recordQuizPlayOnce(code: string) {
 
 /** "Report this question" from the play pages. */
 export async function reportQuizQuestion(code: string, questionId: string, reason: string, note = ""): Promise<void> {
-  await fetch(`/api/quizzes/${code}/report-question`, {
+  const response = await fetch(`/api/quizzes/${code}/report-question`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ questionId, reason, note }),
   });
+  if (!response.ok) throw new Error("Could not send the report. Please try again.");
 }

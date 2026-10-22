@@ -449,7 +449,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       heading: "Turn anything into a practice test",
       body: [
         p(
-          `TigerTest now works with ChatGPT and Claude. Paste your notes, a chapter or a syllabus into either one, say "make this a TigerTest quiz", and you get a link to a real practice test:`,
+          `Connect TigerTest to your own ChatGPT or Claude account. Add your notes, a chapter or a syllabus to a chat with TigerTest enabled, say "make this a TigerTest quiz", and you get a link to a real practice test:`,
         ),
         ul([
           "Timed tests",
@@ -460,7 +460,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         p("Share the link with your study group or class and see who got what."),
         cta(create, "Make a quiz"),
         p(
-          `No paid chat plan? Copy our question-writing prompt at ${link(create, "tigertest.io/create")} into any free ChatGPT or Claude and paste the reply back. Bring your Quizlet sets too (export, paste).`,
+          `Prefer to work on TigerTest? Import a Quizlet set or write your own questions at ${link(create, "tigertest.io/create")}.`,
         ),
         p(`To connect ChatGPT or Claude to your account, the steps are at ${link(connect, "tigertest.io/connect")}.`),
         p(`Your ${v.testName} practice is still here, unchanged: ${link(DASH(v, campaign), "open your dashboard")}.`),

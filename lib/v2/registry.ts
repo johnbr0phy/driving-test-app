@@ -3,15 +3,19 @@ import { SAT } from "./exams/sat";
 import { TEAS } from "./exams/teas";
 import { HESI } from "./exams/hesi";
 import { NCLEX } from "./exams/nclex";
+import { NCLEXPN } from "./exams/nclexpn";
 import { EMT } from "./exams/emt";
+import { PARAMEDIC } from "./exams/paramedic";
 import { SECPLUS } from "./exams/secplus";
 import { APLUS } from "./exams/aplus";
 import { AWS } from "./exams/aws";
 import { ASVAB } from "./exams/asvab";
 import { ACCUPLACER } from "./exams/accuplacer";
 import { ACT } from "./exams/act";
+import { GED } from "./exams/ged";
+import { TIMESTABLES } from "./exams/timestables";
 
-export const EXAMS_V2: ExamV2Config[] = [SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, EMT, SECPLUS, APLUS, AWS];
+export const EXAMS_V2: ExamV2Config[] = [GED, SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, EMT, PARAMEDIC, SECPLUS, APLUS, AWS, TIMESTABLES];
 
 export function getExamV2(id: string): ExamV2Config {
   const exam = EXAMS_V2.find((e) => e.id === id);

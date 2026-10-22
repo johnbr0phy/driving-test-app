@@ -123,7 +123,7 @@ const jsonLd = {
       featureList: [
         "200 property and casualty practice questions",
         "4 practice tests weighted to the general portion of the P&C exam",
-        "Training sets for every domain",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -169,7 +169,7 @@ const jsonLd = {
           name: "Is this the same as the life and health insurance exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Property and casualty and life and health are separate license lines with separate exams, though both share the same insurance basics and agency law. TigerTest has a separate Life & Health practice test. All four P&C practice tests and all training sets here are free, with no account required.",
+            text: "No. Property and casualty and life and health are separate license lines with separate exams, though both share the same insurance basics and agency law. TigerTest has a separate Life & Health practice test. All four P&C practice tests and all four training sets here are free, with no account required.",
           },
         },
         classFaqJsonLd("pnc"),
@@ -225,9 +225,9 @@ export default function PncLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets: basics and policy provisions, dwelling and homeowners, personal auto, and commercial lines with flood and surety. Questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, then take Test 1 and aim for 70 percent. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -348,9 +348,9 @@ export default function PncLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain, then book the state portion</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then book the state portion</h3>
               <p>
-                TigerTest tracks your accuracy by content area. Most states pass at 70 percent, so retake the set you miss most until you clear 85 percent with room to spare, then spend your last week on your state&apos;s own license law, which this site covers for 12 states.
+                TigerTest tracks your accuracy by content area. Most states pass at 70 percent, so after each practice test drill the questions you missed, retrain that test&apos;s set, and retake until you clear 85 percent with room to spare, then spend your last week on your state&apos;s own license law, which this site covers for 12 states.
               </p>
             </div>
           </div>
@@ -390,7 +390,7 @@ export default function PncLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is this the same as the life and health insurance exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. Property and casualty and life and health are separate license lines with separate exams, though both share the same insurance basics and agency law. TigerTest has a separate Life &amp; Health practice test. All four P&amp;C practice tests and all training sets here are free, with no account required.
+              No. Property and casualty and life and health are separate license lines with separate exams, though both share the same insurance basics and agency law. TigerTest has a separate Life &amp; Health practice test. All four P&amp;C practice tests and all four training sets here are free, with no account required.
             </p>
           </div>
           <ExamClassFaq examId="pnc" />

@@ -77,7 +77,7 @@ const jsonLd = {
       featureList: [
         "Practice based on USCIS 2025 civics topics",
         "200 multiple-choice practice items",
-        "4 practice tests and 4 training sets by section",
+        "4 practice tests and 4 training sets, one per test",
         "Explanations with accepted-answer examples",
         "Auto-save progress",
       ],
@@ -144,11 +144,11 @@ export default function CitizenshipLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Section</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets that follow the official list: principles and rights, system of government,
-                American history, symbols and holidays. Questions you miss come back until you have
-                mastered them. Read the explanations, then review the official list and prepare your own local answers.
+                Four training sets, one for each practice test: Set 1 holds exactly the 50 questions of Test
+                1, and so on. Master the set, then take its test. Read the explanations, then review the
+                official list and prepare your own local answers.
               </p>
             </div>
           </div>

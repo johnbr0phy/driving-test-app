@@ -1,10 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
-import { isAdminEmail } from '@/lib/admin';
+import { getAdminDb } from '@/lib/firebase-admin';
+import { requireAdmin } from '@/lib/server/adminAuth';
+import { cachedAdminPayload, cachedJson, wantsRefresh } from '@/lib/server/adminCache';
 import { getInternalUids } from '@/lib/server/internalUsers';
 import { states } from '@/data/states';
 import { resolveUserExamId } from '@/lib/email-voice';
 import { getCatalogEntry, getCatalogEntryByPath } from '@/lib/testCatalog';
+import { isAnswered } from '@/lib/v2/grading';
+import type { AnswerValue } from '@/lib/v2/types';
 
 const STATE_PASS_PCT: Record<string, number> = states.reduce(
   (acc, s) => {
@@ -14,10 +17,9 @@ const STATE_PASS_PCT: Record<string, number> = states.reduce(
   {} as Record<string, number>,
 );
 
-// ─── Server-side in-memory cache ───────────────────────────────────────────
-const CACHE_TTL_MS = 120_000; // 2 minutes
-let cachedPayload: Record<string, unknown> | null = null;
-let cacheTimestamp = 0;
+// The payload is kept in lib/server/adminCache: fresh for two minutes, and
+// an older copy is served at once while a rebuild runs after the response.
+export const maxDuration = 60;
 
 // ─── Conversion paywall: which paywall a premium user converted through ─────
 // Best available attribution: the paywall the user last hit before purchase
@@ -71,11 +73,11 @@ function processFullDoc(data: Record<string, unknown>) {
   const onboardingMastered = (training.masteredQuestionIds || []) as unknown[];
 
   const trainingSets = (data.trainingSets || {}) as Record<string, Record<string, unknown>>;
+  // Every training set, DMV (1-4) and every registry exam's (121, 701...).
   let trainingQuestionsAnswered = onboardingMastered.length;
-  for (const setId of [1, 2, 3, 4]) {
-    const setData = trainingSets[String(setId)] || trainingSets[setId as unknown as string] || {};
-    const masteredIds = (setData.masteredIds || []) as unknown[];
-    const wrongQueue = (setData.wrongQueue || []) as unknown[];
+  for (const setData of Object.values(trainingSets)) {
+    const masteredIds = (setData?.masteredIds || []) as unknown[];
+    const wrongQueue = (setData?.wrongQueue || []) as unknown[];
     trainingQuestionsAnswered += masteredIds.length + wrongQueue.length;
   }
 
@@ -90,6 +92,29 @@ function processFullDoc(data: Record<string, unknown>) {
     const testData = currentTests[testId];
     if (testData?.answers) {
       testQuestionsAnswered += Object.keys(testData.answers as Record<string, unknown>).length;
+    }
+  }
+
+  // v2 exams (SAT, ACT, HESI, EMT...): drills and Basics count as training,
+  // finished and in-progress tests as test questions.
+  const v2 = (data.v2 || {}) as Record<string, unknown>;
+  for (const d of Object.values((v2.drills || {}) as Record<string, Record<string, unknown>>)) {
+    trainingQuestionsAnswered +=
+      ((d?.masteredIds || []) as unknown[]).length + ((d?.wrongQueue || []) as unknown[]).length;
+  }
+  for (const b of Object.values((v2.basics || {}) as Record<string, Record<string, unknown>>)) {
+    if (typeof b?.total === 'number') trainingQuestionsAnswered += b.total;
+  }
+  const v2Results = (Array.isArray(v2.results) ? v2.results : []) as Record<string, unknown>[];
+  for (const r of v2Results) {
+    const items = (Array.isArray(r?.items) ? r.items : []) as Record<string, unknown>[];
+    testQuestionsAnswered += items.filter((i) => isAnswered(i?.answer as AnswerValue | undefined)).length;
+  }
+  for (const session of Object.values((v2.sessions || {}) as Record<string, Record<string, unknown>>)) {
+    if (session?.completedAt) continue;
+    for (const stage of (Array.isArray(session?.stages) ? session.stages : []) as Record<string, unknown>[]) {
+      const answers = (stage?.answers || {}) as Record<string, unknown>;
+      testQuestionsAnswered += Object.values(answers).filter((a) => isAnswered(a as AnswerValue)).length;
     }
   }
 
@@ -137,7 +162,7 @@ function processFullDoc(data: Record<string, unknown>) {
   }
 
   return {
-    testsCompleted: completedTests.length,
+    testsCompleted: completedTests.length + v2Results.length,
     trainingQuestionsAnswered,
     testQuestionsAnswered,
     isPremium: (data.subscription as Record<string, unknown>)?.isPremium === true,
@@ -153,117 +178,94 @@ function processFullDoc(data: Record<string, unknown>) {
 // rate by state from those accounts, and Super Amazing adoption. Everything
 // trend- or revenue-shaped lives on the Growth and Opportunities tabs.
 export async function GET(request: NextRequest) {
+  const denied = await requireAdmin(request);
+  if (denied) return denied;
   try {
-    const authHeader = request.headers.get('authorization');
-    if (!authHeader?.startsWith('Bearer ')) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const idToken = authHeader.split('Bearer ')[1];
-    const auth = getAdminAuth();
-
-    let decodedToken;
-    try {
-      decodedToken = await auth.verifyIdToken(idToken);
-    } catch {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
-    }
-
-    if (!isAdminEmail(decodedToken.email)) {
-      return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
-    }
-
-    // ── Cache hit ──────────────────────────────────────────────────────────
-    const forceRefresh = request.nextUrl.searchParams.get('refresh') === 'true';
-    const cacheAge = Date.now() - cacheTimestamp;
-    if (!forceRefresh && cachedPayload && cacheAge < CACHE_TTL_MS) {
-      const res = NextResponse.json(cachedPayload);
-      res.headers.set('X-Cache', 'HIT');
-      res.headers.set('X-Cache-Age', String(Math.round(cacheAge / 1000)));
-      return res;
-    }
-
-    // Query A: a light scan of every user for the Super Amazing counts.
-    // Query B: full docs for the 100 most recently active users (the table).
-    const db = getAdminDb();
-    const [lightSnapRaw, fullSnapRaw, internalUids] = await Promise.all([
-      db.collection('users').select('_stats', 'superAmazing').get(),
-      db.collection('users').orderBy('lastUpdated', 'desc').limit(100).get(),
-      getInternalUids(),
-    ]);
-    // Internal accounts (lib/internal) are left out of every stat and the table.
-    const lightDocs = lightSnapRaw.docs.filter((d) => !internalUids.has(d.id));
-    const fullDocs = fullSnapRaw.docs.filter((d) => !internalUids.has(d.id));
-
-    // Super Amazing Mode adoption across ALL users. Eligibility comes from
-    // the denormalized _stats flag (written on client save, so it only covers
-    // users who saved since it shipped); enabled/ever-enabled come from the
-    // synced toggle itself.
-    const superAmazing = { eligibleUsers: 0, enabledUsers: 0, everEnabledUsers: 0 };
-    for (const doc of lightDocs) {
-      const data = doc.data() as Record<string, unknown>;
-      const sam = (data.superAmazing || {}) as Record<string, unknown>;
-      if (((data._stats || {}) as Record<string, unknown>).superAmazingEligible === true) superAmazing.eligibleUsers++;
-      if (sam.enabled === true) superAmazing.enabledUsers++;
-      if (typeof sam.firstEnabledAt === 'string') superAmazing.everEnabledUsers++;
-    }
-
-    // Signup landings for the table's accounts, read in one batch.
-    const originSnaps = fullDocs.length
-      ? await db.getAll(...fullDocs.map((d) => db.doc(`signupOrigins/${d.id}`)))
-      : [];
-    const landingByUid = new Map(
-      originSnaps.map((s) => [s.id, typeof s.get('landing') === 'string' ? (s.get('landing') as string) : null]),
-    );
-
-    const passByStateAgg: Record<string, { passed: number; failed: number }> = {};
-    const users = fullDocs.map((doc) => {
-      const data = doc.data() as Record<string, unknown>;
-      const stats = processFullDoc(data);
-      for (const [code, r] of Object.entries(stats.stateResults)) {
-        const bucket = (passByStateAgg[code] ||= { passed: 0, failed: 0 });
-        bucket.passed += r.passed;
-        bucket.failed += r.failed;
-      }
-      return {
-        uid: doc.id,
-        email: (data.email as string) || '',
-        selectedState: (data.selectedState as string) || null,
-        test: signupTest(data, landingByUid.get(doc.id) ?? null),
-        lastUpdated: (data.lastUpdated as string) || null,
-        createdAt: (data.createdAt as string) || null,
-        testsCompleted: stats.testsCompleted,
-        trainingQuestionsAnswered: stats.trainingQuestionsAnswered,
-        testQuestionsAnswered: stats.testQuestionsAnswered,
-        isPremium: stats.isPremium,
-        convertedPaywall: stats.convertedPaywall,
-        superAmazingEligible: stats.superAmazingEligible,
-        superAmazingEnabled: stats.superAmazingEnabled,
-      };
+    const { payload, cache, at } = await cachedAdminPayload({
+      key: 'users',
+      ttlMs: 2 * 60_000,
+      staleMs: 24 * 3_600_000,
+      refresh: wantsRefresh(request),
+      build: buildUsers,
     });
-
-    const passRateByState = Object.entries(passByStateAgg)
-      .map(([code, r]) => {
-        const attempts = r.passed + r.failed;
-        return { code, attempts, passed: r.passed, passRate: attempts > 0 ? r.passed / attempts : 0 };
-      })
-      .sort((a, b) => b.attempts - a.attempts);
-
-    const payload = { users, totalUsers: lightDocs.length, superAmazing, passRateByState };
-
-    cachedPayload = payload;
-    cacheTimestamp = Date.now();
-
-    const res = NextResponse.json(payload);
-    res.headers.set('Cache-Control', 'private, max-age=120');
-    res.headers.set('X-Cache', 'MISS');
-    return res;
-
+    return cachedJson(payload, cache, at);
   } catch (error) {
     console.error('[admin/users]', error);
     return NextResponse.json(
       { error: 'Internal server error', details: error instanceof Error ? error.message : 'Unknown' },
-      { status: 500 }
+      { status: 500 },
     );
   }
+}
+
+async function buildUsers() {
+  // Query A: a light scan of every user for the Super Amazing counts.
+  // Query B: full docs for the 100 most recently active users (the table).
+  const db = getAdminDb();
+  const [lightSnapRaw, fullSnapRaw, internalUids] = await Promise.all([
+    db.collection('users').select('_stats', 'superAmazing').get(),
+    db.collection('users').orderBy('lastUpdated', 'desc').limit(100).get(),
+    getInternalUids(),
+  ]);
+  // Internal accounts (lib/internal) are left out of every stat and the table.
+  const lightDocs = lightSnapRaw.docs.filter((d) => !internalUids.has(d.id));
+  const fullDocs = fullSnapRaw.docs.filter((d) => !internalUids.has(d.id));
+
+  // Super Amazing Mode adoption across ALL users. Eligibility comes from
+  // the denormalized _stats flag (written on client save, so it only covers
+  // users who saved since it shipped); enabled/ever-enabled come from the
+  // synced toggle itself.
+  const superAmazing = { eligibleUsers: 0, enabledUsers: 0, everEnabledUsers: 0 };
+  for (const doc of lightDocs) {
+    const data = doc.data() as Record<string, unknown>;
+    const sam = (data.superAmazing || {}) as Record<string, unknown>;
+    if (((data._stats || {}) as Record<string, unknown>).superAmazingEligible === true) superAmazing.eligibleUsers++;
+    if (sam.enabled === true) superAmazing.enabledUsers++;
+    if (typeof sam.firstEnabledAt === 'string') superAmazing.everEnabledUsers++;
+  }
+
+  // Signup landings for the table's accounts, read in one batch.
+  const originSnaps = fullDocs.length
+    ? await db.getAll(...fullDocs.map((d) => db.doc(`signupOrigins/${d.id}`)))
+    : [];
+  const landingByUid = new Map(
+    originSnaps.map((s) => [s.id, typeof s.get('landing') === 'string' ? (s.get('landing') as string) : null]),
+  );
+
+  const passByStateAgg: Record<string, { passed: number; failed: number }> = {};
+  const users = fullDocs.map((doc) => {
+    const data = doc.data() as Record<string, unknown>;
+    const stats = processFullDoc(data);
+    for (const [code, r] of Object.entries(stats.stateResults)) {
+      const bucket = (passByStateAgg[code] ||= { passed: 0, failed: 0 });
+      bucket.passed += r.passed;
+      bucket.failed += r.failed;
+    }
+    return {
+      uid: doc.id,
+      email: (data.email as string) || '',
+      selectedState: (data.selectedState as string) || null,
+      test: signupTest(data, landingByUid.get(doc.id) ?? null),
+      lastUpdated: (data.lastUpdated as string) || null,
+      createdAt: (data.createdAt as string) || null,
+      testsCompleted: stats.testsCompleted,
+      trainingQuestionsAnswered: stats.trainingQuestionsAnswered,
+      testQuestionsAnswered: stats.testQuestionsAnswered,
+      isPremium: stats.isPremium,
+      convertedPaywall: stats.convertedPaywall,
+      superAmazingEligible: stats.superAmazingEligible,
+      superAmazingEnabled: stats.superAmazingEnabled,
+    };
+  });
+
+  const passRateByState = Object.entries(passByStateAgg)
+    .map(([code, r]) => {
+      const attempts = r.passed + r.failed;
+      return { code, attempts, passed: r.passed, passRate: attempts > 0 ? r.passed / attempts : 0 };
+    })
+    .sort((a, b) => b.attempts - a.attempts);
+
+  const payload = { users, totalUsers: lightDocs.length, superAmazing, passRateByState };
+
+  return payload;
 }

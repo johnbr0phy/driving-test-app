@@ -275,8 +275,10 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               const def = s.session ? stageDefs[s.session.stage] : undefined;
 
               const adaptive = exam.sections.some((x) => x.modules.some((m) => m.adaptive));
-              let subtitle = `${exam.sections.length} sections · ${exam.testLength}${adaptive ? " · adaptive" : ""}${s.def.heldOut ? " · never in drills" : ""}`;
-              if (s.locked) subtitle = `Premium · ${exam.sections.length} sections · ${exam.testLength} · never in drills`;
+              // One-section exams name their length in questions, not "1 sections".
+              const shape = exam.sections.length === 1 ? `${exam.sections[0].modules.reduce((n, m) => n + m.questionCount, 0)} questions` : `${exam.sections.length} sections`;
+              let subtitle = `${shape} · ${exam.testLength}${adaptive ? " · adaptive" : ""}${s.def.heldOut ? " · never in drills" : ""}`;
+              if (s.locked) subtitle = `Premium · ${shape} · ${exam.testLength} · never in drills`;
               else if (s.session && def) subtitle = `In progress · ${def.section.name}, module ${def.module.module}`;
               else if (s.complete && s.best !== null) subtitle = `Best ${s.best} · goal ${goal} hit`;
               else if (s.best !== null) subtitle = `Best ${s.best} · ${goal - s.best} to your goal of ${goal}`;

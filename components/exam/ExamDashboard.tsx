@@ -1,9 +1,10 @@
 "use client";
 
-// Shared dashboard for registry exams (HTL, CST, CRCST): the DMV dashboard's
-// step list (content-area training sets, then practice tests, each with
-// stamps and a per-test attempt drop-down with the score chart and miss
-// drill), driven by an ExamConfig. All registry exams are free.
+// Shared dashboard for registry exams: the DMV dashboard's step list, driven
+// by an ExamConfig. Exams with DMV-style test sets alternate Set 1, Test 1,
+// Set 2, Test 2...; the rest list content-area sets, then practice tests.
+// Tests carry stamps and a per-test attempt drop-down with the score chart
+// and miss drill. All registry exams are free.
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -18,7 +19,8 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart";
 import { computeMissSummary } from "@/lib/missedQuestions";
-import { ExamConfig, TrainingPart, examFamilyId, examLandingPath, getExamById, examTrainingParts, getExamVariant, trainingPartName, trainingPartOf } from "@/lib/exams";
+import { ExamConfig, TrainingPart, examFamilyId, examLandingPath, getExamById, examTrainingParts, getExamVariant, hasTestSets, trainingPartName, trainingPartOf } from "@/lib/exams";
+import { useTestSetMigration } from "@/hooks/useTestSetMigration";
 import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { ClassMissRecovery } from "@/components/exam/ClassMissRecovery";
@@ -61,6 +63,8 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
   const completeTest = useStore((state) => state.completeTest);
   const completedTests = useStore((state) => state.completedTests);
   const trainingAnswerHistory = useStore((state) => state.trainingAnswerHistory);
+
+  useTestSetMigration(source);
 
   const PASS_SCORE = Math.ceil((exam.passPct / 100) * exam.questionsPerTest);
 
@@ -139,6 +143,156 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
     completedSteps > 0 ||
     exam.trainingSets.some((s) => hydrated && getTrainingSetProgress(s.id).correct > 0);
 
+  // DMV-style exams alternate Set 1, Test 1, Set 2, Test 2...
+  const interleaved = hasTestSets(exam) && parts.length === routes.testIds.length;
+
+  // One card per training step and per practice test; the list below puts
+  // them in order.
+  const renderPart = (p: TrainingPart, stepNumber: number) => {
+    const def = p.set;
+    const progress = partProgress(p);
+    const isStartHere = stepNumber === 1 && !anyProgress;
+    return (
+      <ProgressCard
+        title={trainingPartName(p, lang)}
+        subtitle={def.weightLabel ? `${progress.correct}/${progress.total} · ${def.weightLabel}` : `${progress.correct}/${progress.total}`}
+        completed={progress.complete}
+        stepNumber={stepNumber}
+        stamp={
+          progress.complete
+            ? { label: t("dashboard.stampComplete"), color: "green" as const }
+            : isStartHere
+              ? { label: t("dashboard.stampStartHere"), color: "amber" as const }
+              : progress.correct > 0
+                ? { label: t("dashboard.stampContinue"), color: "amber" as const }
+                : undefined
+        }
+        href={routes.training(def.setNumber, p.partCount > 1 ? p.part : undefined)}
+      />
+    );
+  };
+
+  const renderTest = (testId: number, stepNumber: number) => {
+    const n = routes.displayTestNumber(testId);
+    const stats = hydrated ? getTestAttemptStats(testId) : undefined;
+    const bestRaw = stats?.bestScore ?? null;
+    const bestPct = bestRaw !== null ? Math.round((bestRaw / exam.questionsPerTest) * 100) : null;
+    const completed = testComplete(testId);
+    const current = hydrated ? getCurrentTest(testId) : undefined;
+    const answeredCount = Object.keys(current?.answers ?? {}).length;
+    const activelyInProgress = !!current && current.questions.length > 0 && answeredCount > 0;
+
+    const testMisses = missSummary.perTest.get(testId);
+    const hasAttempts = !!testMisses && testMisses.attempts > 0;
+    const testSessions = hydrated
+      ? completedTests.filter((s) => s.state === exam.stateCode && s.testNumber === testId)
+      : [];
+    const attemptPoints = sessionsToAttemptPoints(testSessions, ui.dateLocale, exam.passPct);
+    const isExpanded = expandedTest === testId;
+    const stillMissed = testMisses?.stillMissed ?? 0;
+
+    // The translated string only covers 50-question tests (ham has 35, CA real estate 150).
+    let subtitle = exam.questionsPerTest === 50 ? t("testCard.fiftyQuestions") : ui.questionsCount(exam.questionsPerTest);
+    if (activelyInProgress) {
+      subtitle = `${answeredCount}/${exam.questionsPerTest} ${t("testCard.answered")}`;
+    } else if (completed && bestPct !== null) {
+      subtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
+    } else if (bestPct !== null) {
+      subtitle = `${t("dashboard.bestScore")}: ${bestPct}%. ${ui.needToPass(exam.passPct)}`;
+    }
+
+    let stamp: { label: string; color: "green" | "amber" | "red" } | undefined;
+    if (activelyInProgress) {
+      stamp = { label: t("dashboard.stampContinue"), color: "amber" };
+    } else if (bestRaw !== null) {
+      if (bestRaw === exam.questionsPerTest) stamp = { label: t("dashboard.stampMastered"), color: "green" };
+      else if (bestRaw >= PASS_SCORE) stamp = { label: t("dashboard.stampPassed"), color: "green" };
+      else stamp = { label: t("dashboard.stampKeepGoing"), color: "amber" };
+    }
+
+    return (
+      <div>
+        <ProgressCard
+          title={exam.testCount === 1 ? ui.fullLengthExam : ui.testN(n)}
+          subtitle={subtitle}
+          completed={completed}
+          stepNumber={stepNumber}
+          stamp={stamp}
+          href={hasAttempts ? undefined : routes.test(testId)}
+          onClick={hasAttempts ? () => setExpandedTest(isExpanded ? null : testId) : undefined}
+          attachedBottom={isExpanded && hasAttempts}
+          expanded={hasAttempts ? isExpanded : undefined}
+        >
+          {hasAttempts && testMisses && (
+            <p className="text-xs mt-1 flex items-center gap-1.5">
+              {stillMissed === 0 && (
+                <>
+                  <span className="text-green-600 dark:text-green-400 font-semibold">
+                    {testMisses.everMissed > 0
+                      ? t("dashboard.allMissesFixed")
+                      : t("dashboard.perfectRecord")}
+                  </span>
+                  <span className={completed ? "text-green-300" : "text-gray-300"}>·</span>
+                </>
+              )}
+              <span className={completed ? "text-green-600 dark:text-green-400" : "text-gray-500 dark:text-gray-400"}>
+                {testMisses.attempts === 1
+                  ? t("dashboard.attemptsOne")
+                  : t("dashboard.attemptsCount").replace("{{n}}", String(testMisses.attempts))}{" "}
+                <span aria-hidden="true">{isExpanded ? "▴" : "▾"}</span>
+              </span>
+            </p>
+          )}
+        </ProgressCard>
+
+        {hasAttempts && attemptPoints.length > 0 && (
+          <Collapse open={isExpanded}>
+            <div
+              className={`rounded-b-xl border border-t-0 px-4 pb-4 ${
+                completed
+                  ? "bg-gradient-to-r from-green-50 dark:from-green-950 to-emerald-50 dark:to-emerald-950 border-green-200 dark:border-green-800"
+                  : "bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-800"
+              }`}
+            >
+              <AttemptChart
+                attempts={attemptPoints}
+                passPct={exam.passPct}
+                passLabel={ui.pctToPass(exam.passPct)}
+              />
+              <div className="mt-2 space-y-2">
+                {stillMissed > 0 && (
+                  <button
+                    onClick={() => router.push(routes.drill(testId))}
+                    className="w-full flex items-center justify-center gap-2 rounded-lg bg-brand text-white font-bold text-sm px-4 py-3 hover:bg-brand-hover transition-colors"
+                  >
+                    {t("dashboard.drillWrongCta").replace("{{n}}", String(stillMissed))}
+                    <ChevronRight className="h-4 w-4" />
+                  </button>
+                )}
+                <button
+                  onClick={() => router.push(routes.test(testId))}
+                  className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-100 font-bold text-sm px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                >
+                  {activelyInProgress
+                    ? t("dashboard.continueTest").replace("{{n}}", String(answeredCount))
+                    : t("dashboard.retakeTest")}
+                  <ChevronRight className="h-4 w-4" />
+                </button>
+                {stillMissed > 0 && (
+                  <p className="text-center text-[11px] text-gray-500 dark:text-gray-400">
+                    {t("dashboard.drillTip")
+                      .replace("{{n}}", String(stillMissed))
+                      .replace("{{pct}}", String(Math.max(...attemptPoints.map((p) => p.pct))))}
+                  </p>
+                )}
+              </div>
+            </div>
+          </Collapse>
+        )}
+      </div>
+    );
+  };
+
   // Forwarding to the remembered state: skip a flash of the general dashboard.
   if (hydrated && forwardTo) return null;
 
@@ -185,163 +339,37 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
           <TeachNudge dashboardKey={exam.id} examId={exam.variantOf ?? exam.id} done={completedSteps} />
         </div>
 
-        {/* Training sets, one per content area */}
-        <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
-          {exam.copy.trainingHeading}
-        </p>
-        <div className="mb-6 space-y-1.5">
-          {parts.map((p, index) => {
-            const def = p.set;
-            const progress = partProgress(p);
-            const isStartHere = index === 0 && !anyProgress;
-            return (
-              <ProgressCard
-                key={`${def.id}-${p.part}`}
-                title={trainingPartName(p, lang)}
-                subtitle={`${progress.correct}/${progress.total} · ${def.weightLabel}`}
-                completed={progress.complete}
-                stepNumber={index + 1}
-                stamp={
-                  progress.complete
-                    ? { label: t("dashboard.stampComplete"), color: "green" as const }
-                    : isStartHere
-                      ? { label: t("dashboard.stampStartHere"), color: "amber" as const }
-                      : progress.correct > 0
-                        ? { label: t("dashboard.stampContinue"), color: "amber" as const }
-                        : undefined
-                }
-                href={routes.training(def.setNumber, p.partCount > 1 ? p.part : undefined)}
-              />
-            );
-          })}
-        </div>
-
-        {/* Practice tests */}
-        <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
-          {exam.copy.testsHeading}
-        </p>
-        <div className="mb-6 space-y-1.5">
-          {routes.testIds.map((testId, index) => {
-            const n = routes.displayTestNumber(testId);
-            const stats = hydrated ? getTestAttemptStats(testId) : undefined;
-            const bestRaw = stats?.bestScore ?? null;
-            const bestPct = bestRaw !== null ? Math.round((bestRaw / exam.questionsPerTest) * 100) : null;
-            const completed = testComplete(testId);
-            const current = hydrated ? getCurrentTest(testId) : undefined;
-            const answeredCount = Object.keys(current?.answers ?? {}).length;
-            const activelyInProgress = !!current && current.questions.length > 0 && answeredCount > 0;
-
-            const testMisses = missSummary.perTest.get(testId);
-            const hasAttempts = !!testMisses && testMisses.attempts > 0;
-            const testSessions = hydrated
-              ? completedTests.filter((s) => s.state === exam.stateCode && s.testNumber === testId)
-              : [];
-            const attemptPoints = sessionsToAttemptPoints(testSessions, ui.dateLocale, exam.passPct);
-            const isExpanded = expandedTest === testId;
-            const stillMissed = testMisses?.stillMissed ?? 0;
-
-            // The translated string only covers 50-question tests (ham has 35, CA real estate 150).
-            let subtitle = exam.questionsPerTest === 50 ? t("testCard.fiftyQuestions") : ui.questionsCount(exam.questionsPerTest);
-            if (activelyInProgress) {
-              subtitle = `${answeredCount}/${exam.questionsPerTest} ${t("testCard.answered")}`;
-            } else if (completed && bestPct !== null) {
-              subtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
-            } else if (bestPct !== null) {
-              subtitle = `${t("dashboard.bestScore")}: ${bestPct}%. ${ui.needToPass(exam.passPct)}`;
-            }
-
-            let stamp: { label: string; color: "green" | "amber" | "red" } | undefined;
-            if (activelyInProgress) {
-              stamp = { label: t("dashboard.stampContinue"), color: "amber" };
-            } else if (bestRaw !== null) {
-              if (bestRaw === exam.questionsPerTest) stamp = { label: t("dashboard.stampMastered"), color: "green" };
-              else if (bestRaw >= PASS_SCORE) stamp = { label: t("dashboard.stampPassed"), color: "green" };
-              else stamp = { label: t("dashboard.stampKeepGoing"), color: "amber" };
-            }
-
-            return (
+        {interleaved ? (
+          // DMV-style: each set holds its test's questions, so train, then test.
+          <div className="mb-6 space-y-2">
+            {routes.testIds.map((testId, i) => (
               <div key={testId}>
-                <ProgressCard
-                  title={exam.testCount === 1 ? ui.fullLengthExam : ui.testN(n)}
-                  subtitle={subtitle}
-                  completed={completed}
-                  stepNumber={parts.length + index + 1}
-                  stamp={stamp}
-                  href={hasAttempts ? undefined : routes.test(testId)}
-                  onClick={hasAttempts ? () => setExpandedTest(isExpanded ? null : testId) : undefined}
-                  attachedBottom={isExpanded && hasAttempts}
-                  expanded={hasAttempts ? isExpanded : undefined}
-                >
-                  {hasAttempts && testMisses && (
-                    <p className="text-xs mt-1 flex items-center gap-1.5">
-                      {stillMissed === 0 && (
-                        <>
-                          <span className="text-green-600 dark:text-green-400 font-semibold">
-                            {testMisses.everMissed > 0
-                              ? t("dashboard.allMissesFixed")
-                              : t("dashboard.perfectRecord")}
-                          </span>
-                          <span className={completed ? "text-green-300" : "text-gray-300"}>·</span>
-                        </>
-                      )}
-                      <span className={completed ? "text-green-600 dark:text-green-400" : "text-gray-500 dark:text-gray-400"}>
-                        {testMisses.attempts === 1
-                          ? t("dashboard.attemptsOne")
-                          : t("dashboard.attemptsCount").replace("{{n}}", String(testMisses.attempts))}{" "}
-                        <span aria-hidden="true">{isExpanded ? "▴" : "▾"}</span>
-                      </span>
-                    </p>
-                  )}
-                </ProgressCard>
-
-                {hasAttempts && attemptPoints.length > 0 && (
-                  <Collapse open={isExpanded}>
-                    <div
-                      className={`rounded-b-xl border border-t-0 px-4 pb-4 ${
-                        completed
-                          ? "bg-gradient-to-r from-green-50 dark:from-green-950 to-emerald-50 dark:to-emerald-950 border-green-200 dark:border-green-800"
-                          : "bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-800"
-                      }`}
-                    >
-                      <AttemptChart
-                        attempts={attemptPoints}
-                        passPct={exam.passPct}
-                        passLabel={ui.pctToPass(exam.passPct)}
-                      />
-                      <div className="mt-2 space-y-2">
-                        {stillMissed > 0 && (
-                          <button
-                            onClick={() => router.push(routes.drill(testId))}
-                            className="w-full flex items-center justify-center gap-2 rounded-lg bg-brand text-white font-bold text-sm px-4 py-3 hover:bg-brand-hover transition-colors"
-                          >
-                            {t("dashboard.drillWrongCta").replace("{{n}}", String(stillMissed))}
-                            <ChevronRight className="h-4 w-4" />
-                          </button>
-                        )}
-                        <button
-                          onClick={() => router.push(routes.test(testId))}
-                          className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-100 font-bold text-sm px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
-                        >
-                          {activelyInProgress
-                            ? t("dashboard.continueTest").replace("{{n}}", String(answeredCount))
-                            : t("dashboard.retakeTest")}
-                          <ChevronRight className="h-4 w-4" />
-                        </button>
-                        {stillMissed > 0 && (
-                          <p className="text-center text-[11px] text-gray-500 dark:text-gray-400">
-                            {t("dashboard.drillTip")
-                              .replace("{{n}}", String(stillMissed))
-                              .replace("{{pct}}", String(Math.max(...attemptPoints.map((p) => p.pct))))}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  </Collapse>
-                )}
+                {renderPart(parts[i], i * 2 + 1)}
+                <div className="mt-1.5">{renderTest(testId, i * 2 + 2)}</div>
               </div>
-            );
-          })}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <>
+            {/* Training sets, one per content area */}
+            <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
+              {exam.copy.trainingHeading}
+            </p>
+            <div className="mb-6 space-y-1.5">
+              {parts.map((p, index) => <div key={`${p.set.id}-${p.part}`}>{renderPart(p, index + 1)}</div>)}
+            </div>
+
+            {/* Practice tests */}
+            <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
+              {exam.copy.testsHeading}
+            </p>
+            <div className="mb-6 space-y-1.5">
+              {routes.testIds.map((testId, index) => (
+                <div key={testId}>{renderTest(testId, parts.length + index + 1)}</div>
+              ))}
+            </div>
+          </>
+        )}
 
         {/* Stats entry */}
         {!isGuest && (

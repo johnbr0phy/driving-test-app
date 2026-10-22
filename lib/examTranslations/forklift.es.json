@@ -3,25 +3,6 @@
   "name": "Examen de práctica de montacargas",
   "examLabel": "Operador de montacargas",
   "fullName": "examen de certificación de operador de montacargas",
-  "trainingSets": {
-    "1": {
-      "name": "Conceptos básicos, reglas e inspección",
-      "weightLabel": "36% de los exámenes",
-      "partNames": ["Conceptos básicos y reglas de OSHA", "Inspección, combustible y carga de baterías"]
-    },
-    "2": {
-      "name": "Estabilidad y capacidad de carga",
-      "weightLabel": "24% de los exámenes"
-    },
-    "3": {
-      "name": "Operación segura",
-      "weightLabel": "24% de los exámenes"
-    },
-    "4": {
-      "name": "Manejo de cargas, muelles y rampas",
-      "weightLabel": "16% de los exámenes"
-    }
-  },
   "categoryLabels": {
     "forkBasics": "Conceptos básicos y reglas de OSHA",
     "forkStability": "Estabilidad y capacidad de carga",

@@ -1,0 +1,472 @@
+[
+  {
+    "domain": "pnSafety",
+    "test": 1,
+    "skill": "Client identification",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN is preparing to give medications to a resident who has dementia and cannot state her name. How should the PN identify the resident?",
+    "options": [
+      "Check the wristband against the medication record",
+      "Ask the roommate to confirm the resident's full name",
+      "Use the photo on the door as the only check",
+      "Ask the resident to nod when her name is said"
+    ],
+    "correct": [0],
+    "explanation": "Two identifiers from the wristband, such as name and date of birth, are checked against the medication record every time. A roommate, a door photo alone or a nod from a confused resident are not reliable identifiers."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 1,
+    "skill": "Restraints",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A provider prescribes a soft wrist restraint for a confused client who keeps pulling at a nasogastric tube. Which action by the PN is correct?",
+    "options": [
+      "Tie it to the movable side rail with a square knot",
+      "Tie it to the bed frame with a quick-release knot",
+      "Remove it only when the family is visiting",
+      "Keep it on for 48 hours before the order is renewed"
+    ],
+    "correct": [1],
+    "explanation": "A restraint is tied to a part of the bed frame that moves with the client, using a knot that staff can release in one pull. A side rail can trap the limb when it is lowered, the restraint is released and the skin checked at regular intervals per policy, and orders are renewed at least every 24 hours."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 1,
+    "skill": "C. difficile precautions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN is caring for a client with Clostridioides difficile diarrhea. Which action is most important for preventing transmission?",
+    "options": [
+      "Use alcohol-based hand rub after care",
+      "Wear an N95 respirator in the room",
+      "Wash hands with soap and water after care",
+      "Place the client in a negative-pressure room"
+    ],
+    "correct": [2],
+    "explanation": "C. difficile spores are not killed by alcohol, so hands are washed with soap and water to remove them, along with contact precautions and bleach cleaning. The infection spreads by contact, not through the air, so respirators and negative pressure are not needed."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 1,
+    "skill": "Fire response",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN discovers a small fire in a trash can in an empty client room. The PN moves nearby clients away and pulls the alarm. Which action is next?",
+    "options": [
+      "Turn off the oxygen to the whole unit",
+      "Call the fire department from the room",
+      "Use the extinguisher on the fire",
+      "Close the doors to confine the fire"
+    ],
+    "correct": [3],
+    "explanation": "RACE is Rescue, Alarm, Confine, Extinguish, so after rescue and the alarm the PN closes doors to contain the smoke and fire, then extinguishes a small fire if it is safe. Oxygen shutoff is done by the person designated in the facility plan, usually the charge nurse."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 1,
+    "skill": "Sharps safety",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN is giving a subcutaneous injection. Which action prevents a needlestick injury?",
+    "options": [
+      "Activate the safety shield right after the injection",
+      "Recap the needle with two hands before disposal",
+      "Set the used syringe on the tray to discard later",
+      "Bend the needle before placing it in the sharps box"
+    ],
+    "correct": [0],
+    "explanation": "The safety device is activated immediately and the syringe goes straight into a sharps container at the point of use. Two-handed recapping, carrying an uncovered needle and bending needles are the actions that cause needlesticks."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 1,
+    "skill": "Removing PPE",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "The PN wore gloves, a gown and a surgical mask to care for a client on contact and droplet precautions. Place the steps for removing the equipment in the order the PN should perform them.",
+    "options": [
+      "Remove the gloves",
+      "Remove the gown",
+      "Leave the room and perform hand hygiene",
+      "Remove the mask by its ties or loops",
+      "Perform hand hygiene again"
+    ],
+    "correct": [0, 1, 2, 3, 4],
+    "explanation": "Gloves are the most contaminated item and come off first, then the gown, and the mask is removed last, outside the room, touching only the ties, with hand hygiene after the gown and again after the mask. Removing the mask before the gloves brings contaminated gloves to the face."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 1,
+    "skill": "Airborne precautions",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN is caring for a client on airborne precautions for suspected pulmonary tuberculosis. Which actions are correct? Select all that apply.",
+    "options": [
+      "Wear a fit-tested N95 respirator in the room",
+      "Keep the room door closed",
+      "Place a surgical mask on the client during transport",
+      "Use a negative-pressure room",
+      "Remove the N95 before leaving the room",
+      "Limit visits to 15 minutes without a respirator"
+    ],
+    "correct": [0, 1, 2, 3],
+    "explanation": "Tuberculosis spreads by tiny droplet nuclei that stay in the air, so staff wear a fit-tested N95, the door stays closed on a negative-pressure room, and the client wears a surgical mask when outside the room. The respirator is removed after leaving the room, and no one enters without one."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 1,
+    "skill": "Fall prevention",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "Which actions by the PN reduce the risk of falls for a long-term care resident? Select all that apply.",
+    "options": [
+      "Keep the bed in the lowest position",
+      "Raise all four side rails at night",
+      "Make sure the resident wears non-skid footwear",
+      "Answer call lights promptly",
+      "Keep the walker by the far wall so the floor is clear",
+      "Orient the resident to the room and the call light"
+    ],
+    "correct": [0, 2, 3, 5],
+    "explanation": "A low bed, non-skid footwear, quick answers to the call light and orientation to the room all lower fall risk. Four raised side rails are a restraint that residents climb over, and a walker out of reach makes the resident walk without it."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 1,
+    "skill": "Medication safety",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "The PN is preparing to give a client's oral medications. Which actions follow the rights of medication administration? Select all that apply.",
+    "options": [
+      "Check the label against the medication record three times",
+      "Use two identifiers before giving the dose",
+      "Give a medication that a coworker prepared",
+      "Document the dose before it is given",
+      "Check the allergy band before a new antibiotic",
+      "Stay with the client until the medications are swallowed"
+    ],
+    "correct": [0, 1, 4, 5],
+    "explanation": "Three label checks, two identifiers, an allergy check and staying until the dose is taken are the safeguards of safe administration. A nurse gives only medications they prepared and documents only after the dose is taken."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 1,
+    "skill": "Recognizing fall-related cues",
+    "difficulty": 2,
+    "format": "highlight",
+    "passage": "0250 AP note: Found resident sitting on the floor at 0240 beside the bed. {{Call light on the floor}}. {{Bed in the low position}}. {{Resident barefoot}}. {{Says the new sleeping pill made her \"woozy\"}}. {{Floor dry}}. {{Small bump above the left ear}}. {{Oriented to person and place}}. {{BP 104/62 sitting; 132/78 this afternoon}}.",
+    "stimulusId": "NCLEXPN-CS1",
+    "caseStep": 1,
+    "stem": "The PN reviews the AP's note and the data collected. Highlight the findings that require follow-up.",
+    "correct": [0, 2, 3, 5, 7],
+    "explanation": "A call light out of reach, bare feet, sedation from a new sleep aid, a head strike in a resident taking an anticoagulant and a 28-point drop in systolic pressure all need action or reporting. A low bed, a dry floor and orientation at baseline are expected and need no follow-up."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 1,
+    "skill": "Fall hypotheses",
+    "difficulty": 2,
+    "format": "cloze",
+    "passage": "0300: Orthostatic vital signs: lying BP 128/76 mm Hg, HR 88/min; standing BP 100/60 mm Hg, HR 98/min. The resident reports dizziness on standing.",
+    "stimulusId": "NCLEXPN-CS1",
+    "caseStep": 3,
+    "stem": "Complete the sentence. The resident's fall was most likely caused by [[1]], and the resident is now at greatest risk for [[2]].",
+    "blanks": [
+      [
+        "orthostatic hypotension worsened by zolpidem",
+        "a seizure from Parkinson disease",
+        "hypoglycemia during the night",
+        "a new stroke"
+      ],
+      [
+        "bleeding inside the skull",
+        "a pressure injury on the hip",
+        "aspiration pneumonia",
+        "urinary retention"
+      ]
+    ],
+    "correct": [0, 0],
+    "explanation": "A 28 mm Hg drop in systolic pressure on standing with dizziness, in a resident with Parkinson disease who started a sedative 3 nights ago, explains the fall. Hitting the head while taking apixaban makes intracranial bleeding the greatest danger, which is why neurologic checks are ordered."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 2,
+    "skill": "Contact precautions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A resident on contact precautions for MRSA in a wound asks why the PN wears a gown and gloves but no mask. Which response is accurate?",
+    "options": [
+      "\"A mask is only needed when the wound is open.\"",
+      "\"This germ spreads by touch, not through the air.\"",
+      "\"The gown and gloves protect me from your coughing.\"",
+      "\"I will put on a mask as well, to be safe.\""
+    ],
+    "correct": [1],
+    "explanation": "MRSA in a wound spreads by direct and indirect contact, so a gown and gloves block transmission and a mask adds nothing. A mask would be added only for a procedure likely to splash or if the organism were in the sputum."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 2,
+    "skill": "Chemical exposure",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "While wiping a counter, the PN splashes a cleaning solution into one eye. What should the PN do first?",
+    "options": [
+      "Read the safety data sheet for the chemical",
+      "Report the exposure to the supervisor",
+      "Flush the eye with water for 15 minutes",
+      "Apply an ophthalmic ointment to the eye"
+    ],
+    "correct": [2],
+    "explanation": "Immediate flushing with water limits chemical damage to the eye, which is why eyewash stations are in work areas. The safety data sheet and the report to the supervisor follow the flushing, and ointment is not applied to a chemical exposure."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 2,
+    "skill": "Electrical safety",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN notices that a client's personal electric razor has a frayed cord. What should the PN do?",
+    "options": [
+      "Wrap the frayed area with tape",
+      "Allow its use only when the PN is present",
+      "Ask the family to take it home at the next visit",
+      "Take the razor out of use and report it"
+    ],
+    "correct": [3],
+    "explanation": "A frayed cord can shock the client or start a fire, so the device is removed from use at once and reported so it can be checked or replaced. Tape, supervision and waiting for a visit all leave the hazard in the room."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 2,
+    "skill": "Seizure safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client in bed begins having a tonic-clonic seizure. Which action should the PN take?",
+    "options": [
+      "Turn the client onto the side",
+      "Hold the client's arms still",
+      "Place a padded tongue blade in the mouth",
+      "Move the client to the floor"
+    ],
+    "correct": [0],
+    "explanation": "Turning the client to the side lets saliva drain and keeps the airway open while the PN protects the head and times the seizure. Nothing goes in the mouth, the limbs are never held, and a client already in bed is kept there with the rails padded."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 2,
+    "skill": "Home oxygen safety",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN is reinforcing teaching with a client who uses home oxygen. Which statement by the client shows a need for further teaching?",
+    "options": [
+      "\"I post no-smoking signs on my doors.\"",
+      "\"I keep the tank by the stove while I cook.\"",
+      "\"I use water-based lotion on my face.\"",
+      "\"I keep the tubing away from the space heater.\""
+    ],
+    "correct": [1],
+    "explanation": "Oxygen feeds a fire, so the tank and tubing stay at least 10 feet from stoves, heaters and open flames. No-smoking signs, water-based lotion instead of petroleum products and distance from heaters are correct practices."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 2,
+    "skill": "Safe transfers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PN and an AP are moving a resident who cannot bear weight from the bed to a wheelchair. Which action is correct?",
+    "options": [
+      "Have the resident hold onto the PN's neck",
+      "Lift under the resident's arms on the count of three",
+      "Use a mechanical lift with the sling",
+      "Keep the feet together and twist at the waist"
+    ],
+    "correct": [2],
+    "explanation": "A resident who cannot bear weight is moved with a mechanical lift, which protects both the resident's shoulders and the staff's backs. Lifting under the arms can injure the resident's shoulders, and holding a staff member's neck or twisting at the waist injures the staff."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 2,
+    "skill": "Specimen labeling",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN collects a urine specimen for culture from a resident. Which action is correct?",
+    "options": [
+      "Use the room and bed number as the identifiers",
+      "Label the container at the nurses' station",
+      "Have the AP label the container after the next task",
+      "Label the container in the resident's presence"
+    ],
+    "correct": [3],
+    "explanation": "The specimen is labeled at the bedside, in the presence of the resident, with two identifiers such as name and date of birth, so it cannot be mixed up with another specimen. Room numbers change and a label added later is the way specimens get mislabeled."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 2,
+    "skill": "Carbon monoxide poisoning",
+    "difficulty": 3,
+    "format": "bowtie",
+    "passage": "Home visit, 0900, during the first cold week of the year. The PN arrives at the home of a 70-year-old client with COPD. The client reports a headache, nausea and dizziness since last night and says the spouse \"has the same flu.\" The furnace was turned on 2 days ago. The client's skin is flushed, respirations 22/min, pulse 98/min, SpO2 97% by pulse oximetry, lungs clear.",
+    "stem": "Complete the diagram by choosing 2 actions the PN should take, the condition the client is most likely experiencing, and 2 parameters the PN should monitor.",
+    "groups": [
+      {
+        "label": "Actions to take",
+        "pick": 2,
+        "options": [
+          "Move the client and spouse outdoors",
+          "Call emergency services",
+          "Open a window and continue the visit",
+          "Give the client's rescue inhaler",
+          "Have the client lie down and rest"
+        ]
+      },
+      {
+        "label": "Condition most likely experiencing",
+        "pick": 1,
+        "options": [
+          "Carbon monoxide poisoning",
+          "Influenza",
+          "COPD exacerbation",
+          "Food poisoning"
+        ]
+      },
+      {
+        "label": "Parameters to monitor",
+        "pick": 2,
+        "options": [
+          "Level of consciousness",
+          "Rate and effort of breathing",
+          "SpO2 by pulse oximetry",
+          "Temperature"
+        ]
+      }
+    ],
+    "correct": [0, 1, 5, 9, 10],
+    "explanation": "Two people in one house with headache, nausea and dizziness right after a furnace starts is carbon monoxide poisoning until proven otherwise, so everyone leaves the house and emergency services are called. A standard pulse oximeter reads carbon monoxide bound to hemoglobin as if it were oxygen, so the 97% is false reassurance and the PN watches consciousness and breathing instead."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 2,
+    "skill": "Influenza control",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "The PN is reinforcing teaching with staff about limiting the spread of influenza on a long-term care unit. Which points should the PN include? Select all that apply.",
+    "options": [
+      "Perform hand hygiene before and after resident contact",
+      "Stay home when you have a fever",
+      "Keep residents on droplet precautions in their rooms",
+      "Serve meals to all residents together in the dining room",
+      "Clean shared equipment between residents",
+      "Open the windows to clear the air"
+    ],
+    "correct": [0, 1, 2, 4],
+    "explanation": "Hand hygiene, keeping ill staff home, room restriction for residents with influenza and cleaning shared equipment break the chain of droplet transmission. Gathering residents together spreads droplets, and open windows do not remove them."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 2,
+    "skill": "Environmental hazards",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "Which findings should the PN report as hazards in a client's hospital room? Select all that apply.",
+    "options": [
+      "Oxygen tubing stretched across the walkway",
+      "A space heater brought from home",
+      "Water pooled on the bathroom floor",
+      "The bed in the lowest position",
+      "A chair placed beside the bed",
+      "A frayed cord on the bedside lamp"
+    ],
+    "correct": [0, 1, 2, 5],
+    "explanation": "Tubing across a walkway and a wet floor cause falls, and a personal space heater and a frayed cord cause fires and shocks, especially near oxygen. A low bed and a chair beside it are part of a safe room."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 2,
+    "skill": "Neutropenic precautions",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN is caring for a client with neutropenia from chemotherapy. Which precautions are correct? Select all that apply.",
+    "options": [
+      "Perform hand hygiene before entering the room",
+      "Keep fresh flowers and plants out of the room",
+      "Avoid rectal temperatures and suppositories",
+      "Screen visitors for signs of infection",
+      "Place the client on airborne precautions",
+      "Give the client a live-virus vaccine"
+    ],
+    "correct": [0, 1, 2, 3],
+    "explanation": "A client with few neutrophils is protected from organisms carried in on hands, in soil and water, through the rectal mucosa and by ill visitors. Airborne precautions protect others from the client, which is not the problem here, and live vaccines can cause infection in an immunocompromised client."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 0,
+    "skill": "Transmission-based precautions",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each client, specify the transmission-based precaution the PN should use in addition to standard precautions.",
+    "rows": [
+      "Client with active pulmonary tuberculosis",
+      "Client with influenza",
+      "Client with C. difficile diarrhea",
+      "Client with measles",
+      "Client with pertussis",
+      "Client with scabies"
+    ],
+    "columns": ["Airborne", "Droplet", "Contact"],
+    "correct": [0, 1, 2, 0, 1, 2],
+    "explanation": "Tuberculosis and measles travel on tiny particles that stay in the air, so they need airborne precautions with an N95 and a negative-pressure room. Influenza and pertussis spread by large droplets within about 6 feet, and C. difficile and scabies spread by contact with the client or the environment."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 0,
+    "skill": "Latex allergy",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The PN is caring for a client with a latex allergy. Which actions are correct? Select all that apply.",
+    "options": [
+      "Check gloves and catheters for latex before use",
+      "Place an allergy band on the client",
+      "Flag the allergy on the front of the record",
+      "Use a latex-free blood pressure cuff or cover the cuff",
+      "Use powdered latex gloves because the powder is safe",
+      "Give an antihistamine before every procedure"
+    ],
+    "correct": [0, 1, 2, 3],
+    "explanation": "Every product that touches the client is checked for latex, and the allergy is marked on the band and the record so all staff know. Powder from latex gloves carries latex protein into the air and is worse, and an antihistamine does not prevent a serious reaction."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 0,
+    "skill": "Oxygen and smoking",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN finds a resident smoking in bed while wearing a nasal cannula. What should the PN do first?",
+    "options": [
+      "Put out the cigarette at once",
+      "Open the window to clear the room",
+      "Call the fire department",
+      "Fill out an incident report"
+    ],
+    "correct": [0],
+    "explanation": "The flame is the immediate danger in an oxygen-rich area, so it is extinguished first, then the oxygen is turned off and the resident is moved from the hazard. The incident report and reinforcement of the no-smoking rule come afterward."
+  },
+  {
+    "domain": "pnSafety",
+    "test": 0,
+    "skill": "Visitor injury",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The PN sees a visitor slip and fall in the hallway. The visitor reports knee pain. What should the PN do?",
+    "options": [
+      "Help the visitor stand and walk to a chair",
+      "Keep the visitor still and call for help",
+      "Tell the visitor to see a provider at home",
+      "Take the visitor to the emergency department by wheelchair"
+    ],
+    "correct": [1],
+    "explanation": "An injured person is not moved until checked, so the PN keeps the visitor still, gets help and later completes an incident report per facility policy. Standing on an injured knee or sending the visitor home can make the injury worse."
+  }
+]

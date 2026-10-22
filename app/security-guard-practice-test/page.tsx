@@ -53,7 +53,7 @@ const jsonLd = {
       featureList: [
         "200 security guard practice questions",
         "4 practice tests across all six content areas",
-        "Training sets for every domain",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -99,7 +99,7 @@ const jsonLd = {
           name: "Who can take the security guard exam, and is the TigerTest practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The minimum age is typically 18 for unarmed guards, with a clean criminal background check; some states set 21 for armed work. The TigerTest practice test is free: all four practice tests and all training sets, with no account required. Create a free account if you want progress saved across devices.",
+            text: "The minimum age is typically 18 for unarmed guards, with a clean criminal background check; some states set 21 for armed work. The TigerTest practice test is free: all four practice tests and all four training sets, with no account required. Create a free account if you want progress saved across devices.",
           },
         },
         classFaqJsonLd("security"),
@@ -154,9 +154,9 @@ export default function SecurityGuardLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets: role, ethics and legal powers; observation, patrol and access control; report writing and communication; and emergencies, safety and terrorism awareness. Questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -293,7 +293,7 @@ export default function SecurityGuardLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Who can take the security guard exam, and is the TigerTest practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              The minimum age is typically 18 for unarmed guards, with a clean criminal background check; some states set 21 for armed work. The TigerTest practice test is free: all four practice tests and all training sets, with no account required. Create a free account if you want progress saved across devices.
+              The minimum age is typically 18 for unarmed guards, with a clean criminal background check; some states set 21 for armed work. The TigerTest practice test is free: all four practice tests and all four training sets, with no account required. Create a free account if you want progress saved across devices.
             </p>
           </div>
           <ExamClassFaq examId="security" />

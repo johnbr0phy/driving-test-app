@@ -168,7 +168,7 @@ export function QuizResults({ code }: { code: string }) {
             <p className="text-sm text-gray-600 dark:text-gray-300">Every answer was right. Try the practice mode to keep it that way.</p>
           ) : (
             <div className="space-y-2">
-              {missed.map((r, i) => (
+              {missed.map((r) => (
                 <QuizRow
                   key={r.engineId}
                   chipValue={`${rows.findIndex((x) => x.engineId === r.engineId) + 1}`}
@@ -182,7 +182,6 @@ export function QuizResults({ code }: { code: string }) {
                   renderFooter={() =>
                     r.q.explanation ? <p className="pt-1 px-1 text-xs text-gray-500 dark:text-gray-400 leading-relaxed">{r.q.explanation}</p> : null
                   }
-                  className={i === 0 ? "" : undefined}
                 />
               ))}
             </div>

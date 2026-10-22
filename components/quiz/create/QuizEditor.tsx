@@ -125,8 +125,9 @@ export function QuizEditor({ mode, code, initial, createdVia = "web", children, 
 
   const duplicate = (i: number) => {
     setQuestions((qs) => {
-      const { id: _id, ...rest } = qs[i]; // eslint-disable-line @typescript-eslint/no-unused-vars
-      const copy: DraftQuestion = { ...rest, key: nextKey(), options: [...rest.options] };
+      // A copy is a new question: it never carries the original's server id.
+      const copy: DraftQuestion = { ...qs[i], key: nextKey(), options: [...qs[i].options] };
+      delete copy.id;
       return [...qs.slice(0, i + 1), copy, ...qs.slice(i + 1)];
     });
   };

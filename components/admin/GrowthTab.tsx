@@ -348,16 +348,11 @@ function QuizzesCard({ data }: { data: NonNullable<Metrics["quizzes"]> }) {
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">Quizzes</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400">All time. Made on /create, imported from Quizlet, or from Claude and ChatGPT.</p>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
         <QuizTile label="Quizzes made" value={made} />
         <QuizTile label="From Claude / ChatGPT" value={data.createdMcp} sub={share(data.createdMcp)} />
         <QuizTile label="Quizlet imports" value={data.createdImport} sub={share(data.createdImport)} />
         <QuizTile label="Plays" value={data.plays} sub="browsers that answered one question" />
-        <QuizTile
-          label="Paste-box generations"
-          value={data.generated}
-          sub={data.generatedQuestions ? `${fmtInt(data.generatedQuestions)} questions written` : undefined}
-        />
         <QuizTile label="Question reports" value={data.questionReports} sub="players flagging a bad question" />
       </div>
     </div>

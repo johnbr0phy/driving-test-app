@@ -1,23 +1,25 @@
 "use client";
 
-// Step 1 of /create: where the questions come from. Paste notes (the server
-// writes them), import a Quizlet export (lib/quizzes.ts parses it), or start
-// an empty editor. Each hands a QuizEditorInitial to the editor.
+// Step 1 of /create: where the questions come from. The person's own
+// ChatGPT or Claude (a copied prompt, the reply pasted back; TigerTest makes
+// no model call), import a Quizlet export (lib/quizzes.ts parses it), or
+// start an empty editor. Each hands a QuizEditorInitial to the editor.
 
 import { useMemo, useState } from "react";
-import { ClipboardPaste, FileDown, Loader2, PenLine, Sparkles } from "lucide-react";
+import Link from "next/link";
+import { Check, ClipboardPaste, Copy, FileDown, PenLine, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useAuth } from "@/contexts/AuthContext";
-import { quizFetch } from "@/lib/quizClient";
-import { QUIZ_DEFAULT_PASS_PCT, QUIZ_MAX_TITLE, QUIZ_MAX_TOPIC, QUIZ_MIN_QUESTIONS, QUIZ_OPTION_COUNT, parseTermList, termsToQuestions, type QuizQuestionInput } from "@/lib/quizzes";
-import { GENERATE_COUNT_CHOICES, GENERATE_MAX_CHARS, GENERATE_MIN_WORDS, suggestedChoice, wordCount } from "@/lib/quizGenerateLimits";
+import { QUIZ_DEFAULT_PASS_PCT, QUIZ_MAX_TOPIC, QUIZ_MIN_QUESTIONS, QUIZ_OPTION_COUNT, parseAssistantQuiz, parseTermList, termsToQuestions } from "@/lib/quizzes";
+import { quizAssistantPrompt } from "@/lib/quizWritingGuide";
 import type { QuizEditorInitial } from "./QuizEditor";
 
-export type SourceKind = "paste" | "quizlet" | "own";
+export type SourceKind = "assistant" | "quizlet" | "own";
+
+const ASSISTANT_COUNTS = [10, 15, 20, 30, 40, 50];
 
 const SOURCES: { kind: SourceKind; name: string; hint: string; icon: typeof Sparkles }[] = [
-  { kind: "paste", name: "Paste notes", hint: "We write the questions", icon: Sparkles },
+  { kind: "assistant", name: "Use ChatGPT or Claude", hint: "Free, any chat app", icon: Sparkles },
   { kind: "quizlet", name: "Import from Quizlet", hint: "Term and definition list", icon: FileDown },
   { kind: "own", name: "Write your own", hint: "Start with a blank quiz", icon: PenLine },
 ];
@@ -32,7 +34,7 @@ interface Props {
 }
 
 export function CreateSources({ onReady }: Props) {
-  const [kind, setKind] = useState<SourceKind>("paste");
+  const [kind, setKind] = useState<SourceKind>("assistant");
 
   return (
     <div className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-4 sm:p-6">
@@ -61,115 +63,108 @@ export function CreateSources({ onReady }: Props) {
         })}
       </div>
 
-      {kind === "paste" && <PasteNotes onReady={(initial) => onReady(initial, "web")} />}
+      {kind === "assistant" && <UseAssistant onReady={(initial) => onReady(initial, "web")} />}
       {kind === "quizlet" && <QuizletImport onReady={(initial) => onReady(initial, "import")} />}
       {kind === "own" && <WriteOwn onReady={(initial) => onReady(initial, "web")} />}
     </div>
   );
 }
 
-function PasteNotes({ onReady }: { onReady: (initial: QuizEditorInitial) => void }) {
-  const { user } = useAuth();
-  const [text, setText] = useState("");
-  const [title, setTitle] = useState("");
-  const [pickedCount, setPickedCount] = useState<number | null>(null);
-  const [busy, setBusy] = useState(false);
+function UseAssistant({ onReady }: { onReady: (initial: QuizEditorInitial) => void }) {
+  const [count, setCount] = useState(20);
+  const [copied, setCopied] = useState<"idle" | "copied" | "manual">("idle");
+  const [reply, setReply] = useState("");
   const [error, setError] = useState("");
+  const [note, setNote] = useState("");
+  const prompt = useMemo(() => quizAssistantPrompt(count), [count]);
 
-  const words = wordCount(text);
-  const count = pickedCount ?? suggestedChoice(text);
-  const enough = words >= GENERATE_MIN_WORDS;
-
-  const generate = async () => {
-    if (!user || busy || !enough) return;
-    setBusy(true);
-    setError("");
+  const copy = async () => {
     try {
-      const res = await quizFetch<{ title: string; description: string; questions: QuizQuestionInput[] }>(user, "/api/quizzes/generate", {
-        method: "POST",
-        body: JSON.stringify({ text, count, ...(title.trim() ? { title: title.trim() } : {}) }),
-      });
-      onReady({ title: res.title, description: res.description, visibility: "link", passPct: QUIZ_DEFAULT_PASS_PCT, questions: res.questions });
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Couldn't write the questions. Try again.");
-      setBusy(false);
+      await navigator.clipboard.writeText(prompt);
+      setCopied("copied");
+      setTimeout(() => setCopied("idle"), 2500);
+    } catch {
+      setCopied("manual");
     }
   };
 
-  if (busy) {
-    return (
-      <div className="py-10 text-center">
-        <Loader2 className="w-8 h-8 mx-auto animate-spin text-gray-500 dark:text-gray-400" aria-hidden="true" />
-        <p role="status" className="mt-4 text-lg font-semibold text-gray-900 dark:text-gray-50">Writing {count} questions...</p>
-        <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">This takes 20 to 60 seconds. Keep this tab open.</p>
-      </div>
-    );
-  }
+  const build = () => {
+    const r = parseAssistantQuiz(reply);
+    if (!r.ok) {
+      setError(r.error);
+      return;
+    }
+    setNote(r.dropped ? `${r.dropped} ${r.dropped === 1 ? "question was" : "questions were"} left out because they were not well formed.` : "");
+    onReady({ title: r.quiz.title, description: r.quiz.description, visibility: "link", passPct: QUIZ_DEFAULT_PASS_PCT, questions: r.quiz.questions });
+  };
 
   return (
-    <div className="space-y-4">
-      <div>
-        <label htmlFor="create-notes" className={fieldClass}>Your material</label>
-        <textarea
-          id="create-notes"
-          value={text}
-          onChange={(e) => setText(e.target.value.slice(0, GENERATE_MAX_CHARS))}
-          rows={10}
-          maxLength={GENERATE_MAX_CHARS}
-          placeholder="Paste class notes, a textbook section, a study guide, a slide deck's text, a syllabus... anything with facts in it."
-          className={textareaClass}
-        />
-        <div className="mt-1 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-          <span>{enough ? `${words.toLocaleString()} words` : `Paste at least ${GENERATE_MIN_WORDS} words`}</span>
-          <span>
-            {text.length.toLocaleString()} / {GENERATE_MAX_CHARS.toLocaleString()}
-          </span>
-        </div>
-      </div>
+    <div className="space-y-5">
+      <p className="text-sm text-gray-600 dark:text-gray-300">
+        Your own ChatGPT or Claude writes the questions, free plans included. Nothing to install and nothing to pay. Already connected one?{" "}
+        <Link href="/connect" className="underline text-gray-900 dark:text-gray-50">Just ask it to make a TigerTest quiz</Link>.
+      </p>
 
-      <div className="grid sm:grid-cols-[1fr_10rem] gap-4">
-        <div>
-          <label htmlFor="create-title" className={fieldClass}>
-            Title <span className="font-normal text-gray-500 dark:text-gray-400">(optional)</span>
-          </label>
-          <Input
-            id="create-title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value.slice(0, QUIZ_MAX_TITLE))}
-            placeholder="We suggest one if you leave this blank"
-            maxLength={QUIZ_MAX_TITLE}
+      <ol className="space-y-5">
+        <li>
+          <p className={fieldClass}>1. Copy our question-writing prompt</p>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+            <label htmlFor="create-ai-count" className="text-sm text-gray-700 dark:text-gray-200">
+              Questions to ask for
+            </label>
+            <select
+              id="create-ai-count"
+              value={count}
+              onChange={(e) => setCount(Number(e.target.value))}
+              className="h-10 rounded-md border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 px-3 text-sm sm:w-28"
+            >
+              {ASSISTANT_COUNTS.map((n) => (
+                <option key={n} value={n}>{n}</option>
+              ))}
+            </select>
+            <Button type="button" onClick={copy} className={ctaClass}>
+              {copied === "copied" ? <Check className="w-4 h-4" aria-hidden="true" /> : <Copy className="w-4 h-4" aria-hidden="true" />}
+              {copied === "copied" ? "Copied" : "Copy the prompt"}
+            </Button>
+          </div>
+          {copied === "manual" && (
+            <textarea readOnly value={prompt} rows={6} aria-label="The prompt to copy" className={`${textareaClass} mt-3 font-mono text-xs`} onFocus={(e) => e.currentTarget.select()} />
+          )}
+          <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+            It carries the same rules our own question banks are written to: research first, four short options, a right answer that never stands out.
+          </p>
+        </li>
+        <li>
+          <p className={fieldClass}>2. Paste it into ChatGPT, Claude or any assistant, put your notes under it, and send</p>
+          <p className="text-sm text-gray-600 dark:text-gray-300">Class notes, a chapter, a study guide, a syllabus, a term list. The reply comes back as a block of JSON.</p>
+        </li>
+        <li>
+          <label htmlFor="create-ai-reply" className={fieldClass}>3. Paste the reply here</label>
+          <textarea
+            id="create-ai-reply"
+            value={reply}
+            onChange={(e) => {
+              setReply(e.target.value);
+              setError("");
+            }}
+            rows={8}
+            placeholder='{"title": "...", "questions": [...]}'
+            className={`${textareaClass} font-mono text-sm`}
           />
-        </div>
-        <div>
-          <label htmlFor="create-count" className={fieldClass}>How many questions</label>
-          <select
-            id="create-count"
-            value={count}
-            onChange={(e) => setPickedCount(Number(e.target.value))}
-            className="w-full h-10 rounded-md border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 px-3 text-sm"
-          >
-            {GENERATE_COUNT_CHOICES.map((n) => (
-              <option key={n} value={n}>
-                {n}
-                {pickedCount === null && n === count ? " (suggested)" : ""}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
+        </li>
+      </ol>
 
       {error && (
         <p role="alert" className="text-sm text-red-600 dark:text-red-400">
           {error}
         </p>
       )}
+      {note && <p className="text-sm text-gray-600 dark:text-gray-300">{note}</p>}
 
-      <Button type="button" onClick={generate} disabled={!enough} className={ctaClass}>
-        <Sparkles className="w-4 h-4" aria-hidden="true" /> Write the questions
+      <Button type="button" onClick={build} disabled={!reply.trim()} className={ctaClass}>
+        <Sparkles className="w-4 h-4" aria-hidden="true" /> Build the quiz
       </Button>
-      <p className="text-xs text-gray-500 dark:text-gray-400">
-        You review every question before anything is saved. Nothing you paste is kept after the questions are written.
-      </p>
+      <p className="text-xs text-gray-500 dark:text-gray-400">You review and can edit every question before anything is saved.</p>
     </div>
   );
 }

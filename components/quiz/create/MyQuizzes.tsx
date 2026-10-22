@@ -13,7 +13,7 @@ const VISIBILITY_LABEL: Record<QuizVisibility, string> = { private: "Private", l
 
 interface MyQuizzesResponse {
   quizzes: QuizSummary[];
-  limits: { quizzes: number; questions: number; generationsPerDay: number };
+  limits: { quizzes: number; questions: number };
   isPremium: boolean;
 }
 

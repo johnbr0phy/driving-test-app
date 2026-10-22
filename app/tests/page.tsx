@@ -54,7 +54,7 @@ export default function TestsHubPage() {
         <div className="mt-14 rounded-2xl bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">Make your own practice test</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-5 max-w-xl mx-auto">
-            Paste your notes, import a Quizlet set or write the questions yourself, and get a link anyone can play in Practice, Test and Flashcards
+            Have ChatGPT or Claude write the questions from your notes, import a Quizlet set or write them yourself, and get a link anyone can play in Practice, Test and Flashcards
             modes.
           </p>
           <Link

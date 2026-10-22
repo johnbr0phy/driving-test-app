@@ -96,8 +96,8 @@ export async function GET(request: NextRequest) {
     // ── Quizzes (lib/quizzes.ts) ────────────────────────────────────────────
     // Site-wide counters bumped by lib/server/quizzes.ts: quizzes made on
     // /create, by Quizlet import and from Claude/ChatGPT through the MCP
-    // server, browsers that played one, paste-box generations and bad-question
-    // reports. Zeros until the first quiz.
+    // server, browsers that played one and bad-question reports. Zeros until
+    // the first quiz.
     const quizCounters = quizzesDoc.exists ? (quizzesDoc.data() as Record<string, unknown>) : {};
     const quizCount = (key: string) => (typeof quizCounters[key] === 'number' ? (quizCounters[key] as number) : 0);
     const quizzes = {
@@ -105,8 +105,6 @@ export async function GET(request: NextRequest) {
       createdImport: quizCount('created_import'),
       createdMcp: quizCount('created_mcp'),
       plays: quizCount('plays'),
-      generated: quizCount('generated'),
-      generatedQuestions: quizCount('generatedQuestions'),
       questionReports: quizCount('questionReports'),
       total: quizCount('created_web') + quizCount('created_import') + quizCount('created_mcp'),
     };

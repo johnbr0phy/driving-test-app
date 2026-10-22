@@ -17,7 +17,6 @@ import { QUIZ_LIMITS } from "@/lib/quizzes";
 
 const BENEFITS = [
   `Up to ${QUIZ_LIMITS.premium.quizzes} quizzes with ${QUIZ_LIMITS.premium.questions} questions each`,
-  `${QUIZ_LIMITS.premium.generationsPerDay} quiz generations a day from pasted notes`,
   "All four DMV practice tests and training sets",
   "One-time purchase, no subscription",
 ];

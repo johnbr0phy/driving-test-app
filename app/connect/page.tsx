@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "Can I use it without a paid chat plan?",
-    a: "Yes. Everything the connector does is on the site too: paste your notes at tigertest.io/create and the questions are written for you, or practice the DMV test at tigertest.io/dmv/dashboard.",
+    a: "Yes. On tigertest.io/create, copy our question-writing prompt into any ChatGPT or Claude, free plans included, paste your notes under it, and paste the reply back. Or import a Quizlet set, or write the questions yourself. DMV practice is at tigertest.io/dmv/dashboard either way.",
   },
   {
     q: "What does the connector see?",
@@ -247,7 +247,7 @@ export default function ConnectPage() {
         <section className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">No chat app needed</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-5 max-w-xl mx-auto">
-            Paste your notes on the site and the questions are written for you, or play a quiz someone sent you.
+            Copy our question-writing prompt into any free ChatGPT or Claude and paste the reply back, import a Quizlet set, or write the questions yourself.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link

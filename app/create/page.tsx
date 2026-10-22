@@ -1,7 +1,8 @@
 "use client";
 
 // /create: turn anything into a practice test. Step 1 picks the source
-// (paste notes, Quizlet import, write your own), step 2 is the editor
+// (your own ChatGPT or Claude via a copied prompt, Quizlet import, write your
+// own), step 2 is the editor
 // (components/quiz/create/QuizEditor.tsx). Sign-in required, like /teach/new.
 
 import { useEffect, useState } from "react";
@@ -37,7 +38,7 @@ export default function CreateQuizPage() {
           <div className="mb-8 max-w-2xl">
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-50">Turn anything into a practice test</h1>
             <p className="mt-3 text-gray-600 dark:text-gray-300">
-              Paste your notes, import a Quizlet set or write the questions yourself. You get a link anyone can open and play in Practice, Test and
+              Have ChatGPT or Claude write the questions from your notes, import a Quizlet set, or write them yourself. You get a link anyone can open and play in Practice, Test and
               Flashcards modes, and you see who played and what they missed.
             </p>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">

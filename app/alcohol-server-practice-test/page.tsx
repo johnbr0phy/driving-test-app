@@ -52,7 +52,7 @@ const jsonLd = {
       featureList: [
         "200 alcohol server and seller practice questions",
         "4 practice tests weighted like real certification exams",
-        "Training sets for every topic area",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -98,7 +98,7 @@ const jsonLd = {
           name: "Does passing the TigerTest practice test give me a certificate?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. TigerTest is free practice to prepare you for any state or provider's responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. All four practice tests and all training sets here are free, with no account required.",
+            text: "No. TigerTest is free practice to prepare you for any state or provider's responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. All four practice tests and all four training sets here are free, with no account required.",
           },
         },
       ],
@@ -151,9 +151,9 @@ export default function AlcoholServerLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Topic</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets: alcohol and the body, recognizing intoxication and intervening, checking IDs and minors, and laws and liability. Questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -290,7 +290,7 @@ export default function AlcoholServerLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does passing the TigerTest practice test give me a certificate?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. TigerTest is free practice to prepare you for any state or provider&apos;s responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. All four practice tests and all training sets here are free, with no account required.
+              No. TigerTest is free practice to prepare you for any state or provider&apos;s responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. All four practice tests and all four training sets here are free, with no account required.
             </p>
           </div>
         </div>

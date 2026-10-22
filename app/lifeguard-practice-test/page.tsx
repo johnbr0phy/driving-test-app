@@ -53,7 +53,7 @@ const jsonLd = {
       featureList: [
         "200 lifeguard practice questions",
         "4 practice tests across all five content areas",
-        "Training sets for every domain",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -153,9 +153,9 @@ export default function LifeguardLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets: surveillance and victim recognition, water rescue skills, first aid with CPR and AED, and facility safety and legal duties. Questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, then take Test 1 and aim for 80 percent. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -250,9 +250,9 @@ export default function LifeguardLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain to 90 percent</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest to 90 percent</h3>
               <p>
-                TigerTest tracks your accuracy by content area. Most courses require 80 percent on the written exam, so retake the training set you miss most until you clear 90 percent with room to spare, then take all four practice tests back to back.
+                TigerTest tracks your accuracy by content area. Most courses require 80 percent on the written exam, so after each practice test drill the questions you missed, retrain that test&apos;s set, and retake until you clear 90 percent with room to spare, then take all four practice tests back to back.
               </p>
             </div>
           </div>

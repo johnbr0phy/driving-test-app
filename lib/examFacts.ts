@@ -24,6 +24,22 @@ export interface ExamFacts {
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  timestables: {
+    answer:
+      "The Multiplication Tables Check (MTC) is a statutory on-screen check for Year 4 pupils in England, taken at school in June. Children answer 25 multiplication questions on the 2 to 12 times tables, with 6 seconds to type each answer and a 3-second pause between questions. It is multiplication only, the 6, 7, 8, 9 and 12 times tables come up most, and a fact and its reverse (such as 8 × 6 and 6 × 8) never appear in the same check. There is no pass mark; schools see each child's score out of 25.",
+    rows: [
+      { label: "Who takes it", value: "Year 4 pupils in England, in June" },
+      { label: "Questions", value: "25, multiplication only, 2 to 12 times tables" },
+      { label: "Time", value: "6 seconds a question, 3-second pause between" },
+      { label: "Passing score", value: "No pass mark; a score out of 25" },
+      { label: "Curriculum", value: "2, 5 and 10 in Year 2; 3, 4 and 8 in Year 3; all to 12 × 12 in Year 4" },
+      { label: "Given by", value: "The child's school, on the Standards and Testing Agency service" },
+    ],
+    basedOn: "the national curriculum in England for mathematics and the Standards and Testing Agency's multiplication tables check assessment framework",
+    source: { name: "Standards and Testing Agency: multiplication tables check assessment framework", url: "https://www.gov.uk/government/publications/multiplication-tables-check-assessment-framework" },
+    tigertest:
+      "TigerTest has four 25-question practice checks (the Year 2 tables, the Year 3 tables, then two full Year 4 checks) and six drills that each start with a short lesson: a trick for every table, dividing and word problems. All of it is free with no account required.",
+  },
   ged: {
     answer:
       "The GED is four separate subject tests: Reasoning Through Language Arts (150 minutes, including a 45-minute essay), Mathematical Reasoning (115 minutes), Science (90 minutes) and Social Studies (70 minutes), taken on a computer at a Pearson VUE test center or online with a proctor. Each subject is scored 100 to 200, and 145 passes (165 is College Ready, 175 College Ready plus Credit). The fee is set per subject and varies by state.",

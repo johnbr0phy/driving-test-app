@@ -686,6 +686,20 @@
     --brand-gradient-to: 290 80% 95%;
   }
 
+  /* Times Tables theme: magenta (v2 exam; matches lib/v2/exams/timestables.ts theme) */
+  [data-theme="timestables"] {
+    --brand: 300 60% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 300 100% 96%;
+    --brand-hover: 300 60% 36%;
+    --brand-dark: 300 60% 30%;
+    --brand-darker: 300 55% 20%;
+    --brand-muted: 300 45% 75%;
+    --brand-border: 300 45% 80%;
+    --brand-border-light: 300 45% 90%;
+    --brand-gradient-to: 320 80% 95%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -1275,6 +1289,18 @@
     --brand-muted: 265 45% 45%;
     --brand-dark: 265 55% 65%;
     --brand-darker: 265 50% 78%;
+  }
+
+  .dark [data-theme="timestables"] {
+    --brand: 300 60% 47.9%;
+    --brand-hover: 300 60% 39.9%;
+    --brand-light: 300 45% 13%;
+    --brand-gradient-to: 320 40% 11%;
+    --brand-border-light: 300 35% 24%;
+    --brand-border: 300 40% 34%;
+    --brand-muted: 300 45% 45%;
+    --brand-dark: 300 60% 65%;
+    --brand-darker: 300 55% 78%;
   }
 
 }

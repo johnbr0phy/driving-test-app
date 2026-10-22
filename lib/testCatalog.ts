@@ -76,6 +76,7 @@ const EXAM_BLURBS: Record<string, string> = {
   nclex: "NCLEX-RN licensure exam practice weighted by the 2026 NCSBN test plan: prioritization, delegation, pharmacology, labs and select-all-that-apply items, answered in order like the real CAT.",
   nclexpn: "NCLEX-PN licensure exam practice for LPN/LVN students, weighted by the 2026 NCSBN PN test plan: coordinated care, assigning tasks to AP, when to notify the RN, pharmacology, data collection and select-all-that-apply items, answered in order like the real CAT.",
   hesi: "HESI A2 nursing entrance exam with seven timed sections scored like the real report: math with dosage conversions, reading passages, vocabulary, grammar, biology, chemistry and anatomy and physiology.",
+  timestables: "Times tables for primary school in England, from the 2s, 5s and 10s up to 12 × 12, in national curriculum order: short lessons with a trick for each table, drills, dividing, word problems and four 25-question checks like the Year 4 Multiplication Tables Check. Free.",
   ged: "Two full-length GED practice tests covering all four subjects: Reasoning Through Language Arts, Math, Science and Social Studies, timed like the real test and scored per subject, plus six drills that teach the basics first. Free.",
   sat: "Two full-length digital SAT practice tests: two timed sections with adaptive modules, a calculator, and a 400 to 1600 score estimate, plus skill drills built for your phone.",
   act: "Two full-length ACT practice tests in the enhanced 2025 format: English, Math, Reading and Science with real passages and timing, scored 1 to 36 with a composite, plus drills for your phone.",
@@ -99,7 +100,7 @@ const EXAM_BLURBS: Record<string, string> = {
 };
 
 // Short issuing-body line for menus; defaults to the exam label.
-const EXAM_ORG: Record<string, string> = { ged: "High school equivalency · RLA, Math, Science, Social Studies", sat: "Digital SAT · Reading and Writing, Math", act: "Enhanced ACT · English, Math, Reading, Science", cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician practice", epa608: "EPA Section 608 practice", cna: "Nurse aide written exam", ptcb: "Pharmacy technician certification", phleb: "Phlebotomy certification practice", ccma: "NHA medical assistant exam", cet: "NHA EKG technician exam", danb: "DANB CDA: GC, RHS, ICE", emt: "NREMT cognitive exam", paramedic: "NREMT Paramedic exam", foodmgr: "Food-protection manager practice", realestate: "National portion, Pearson VUE and PSI", insurance: "Life, accident & health producer exam", notary: "Notary practice; state requirements vary", teas: "Nursing & allied health admissions", aws: "AWS CLF-C02", aplus: "CompTIA 220-1201 / 220-1202", foodhandler: "Supplemental food-safety practice", boating: "NASBLA state boater exams", hunter: "IHEA state hunter education exams", secplus: "CompTIA SY0-701", hesi: "Nursing school admissions", nclex: "NCSBN 2026 RN test plan", nclexpn: "NCSBN 2026 PN test plan", asvab: "Military aptitude practice", cpr: "Lay rescuer & healthcare BLS courses", osha: "OSHA Outreach course final", forklift: "OSHA 1910.178 operator evaluation", alcohol: "Supplemental alcohol-service practice", accuplacer: "College placement", security: "State guard card exams", lifeguard: "Certification written exam", pnc: "P&C producer exam, general portion", cosmetology: "NIC national theory exam; a few states use their own", vtne: "AAVSB vet tech credentialing exam" };
+const EXAM_ORG: Record<string, string> = { timestables: "Primary school · Year 2 to Year 4 MTC", ged: "High school equivalency · RLA, Math, Science, Social Studies", sat: "Digital SAT · Reading and Writing, Math", act: "Enhanced ACT · English, Math, Reading, Science", cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician practice", epa608: "EPA Section 608 practice", cna: "Nurse aide written exam", ptcb: "Pharmacy technician certification", phleb: "Phlebotomy certification practice", ccma: "NHA medical assistant exam", cet: "NHA EKG technician exam", danb: "DANB CDA: GC, RHS, ICE", emt: "NREMT cognitive exam", paramedic: "NREMT Paramedic exam", foodmgr: "Food-protection manager practice", realestate: "National portion, Pearson VUE and PSI", insurance: "Life, accident & health producer exam", notary: "Notary practice; state requirements vary", teas: "Nursing & allied health admissions", aws: "AWS CLF-C02", aplus: "CompTIA 220-1201 / 220-1202", foodhandler: "Supplemental food-safety practice", boating: "NASBLA state boater exams", hunter: "IHEA state hunter education exams", secplus: "CompTIA SY0-701", hesi: "Nursing school admissions", nclex: "NCSBN 2026 RN test plan", nclexpn: "NCSBN 2026 PN test plan", asvab: "Military aptitude practice", cpr: "Lay rescuer & healthcare BLS courses", osha: "OSHA Outreach course final", forklift: "OSHA 1910.178 operator evaluation", alcohol: "Supplemental alcohol-service practice", accuplacer: "College placement", security: "State guard card exams", lifeguard: "Certification written exam", pnc: "P&C producer exam, general portion", cosmetology: "NIC national theory exam; a few states use their own", vtne: "AAVSB vet tech credentialing exam" };
 
 const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   id: exam.id,
@@ -144,6 +145,7 @@ const GROUPS: { title: string; ids: string[] }[] = [
   { title: "Workplace & job certifications", ids: ["foodhandler", "osha", "forklift", "alcohol", "security", "cosmetology"] },
   { title: "Aviation, radio & trade licenses", ids: ["part107", "ham", "epa608", "foodmgr"] },
   { title: "Real estate, insurance & notary licenses", ids: ["realestate", "insurance", "pnc", "notary"] },
+  { title: "Primary school", ids: ["timestables"] },
   { title: "GED, college, military & nursing school entrance", ids: ["ged", "sat", "act", "accuplacer", "asvab", "teas", "hesi"] },
   { title: "IT certifications", ids: ["aplus", "secplus", "aws"] },
   { title: "Emergency services", ids: ["emt", "paramedic", "cpr"] },
@@ -157,6 +159,7 @@ export const TEST_GROUPS: { title: string; tests: TestCatalogEntry[] }[] = [
 /** Extra words people type that do not appear in the name, org or blurb. */
 const SEARCH_ALIASES: Record<string, string> = {
   dmv: "driver license permit learners written knowledge road signs state",
+  timestables: "times tables multiplication tables check mtc year 2 year 3 year 4 ks1 ks2 key stage maths math kids children primary school multiplication division",
   ged: "ged hiset high school equivalency diploma adult education tasc high school equivalency test ged math ged rla ged science ged social studies",
   sat: "digital sat psat college board college admissions high school reading writing math bluebook",
   act: "act test college admissions high school english math reading science composite enhanced act",
@@ -277,6 +280,7 @@ const RELATED_OVERRIDES: Record<string, string[]> = {
   asvab: ["dmv", "cpr"],
   accuplacer: ["sat", "teas", "hesi"],
   ged: ["asvab", "accuplacer", "teas"],
+  timestables: ["sat", "act", "ged"],
   cosmetology: ["cpr", "foodhandler", "osha"],
   vtne: ["phleb", "cna", "ptcb"],
   sat: ["act", "accuplacer", "asvab"],

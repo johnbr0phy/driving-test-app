@@ -13,8 +13,9 @@ import { ASVAB } from "./exams/asvab";
 import { ACCUPLACER } from "./exams/accuplacer";
 import { ACT } from "./exams/act";
 import { GED } from "./exams/ged";
+import { TIMESTABLES } from "./exams/timestables";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, EMT, PARAMEDIC, SECPLUS, APLUS, AWS];
+export const EXAMS_V2: ExamV2Config[] = [GED, SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, EMT, PARAMEDIC, SECPLUS, APLUS, AWS, TIMESTABLES];
 
 export function getExamV2(id: string): ExamV2Config {
   const exam = EXAMS_V2.find((e) => e.id === id);

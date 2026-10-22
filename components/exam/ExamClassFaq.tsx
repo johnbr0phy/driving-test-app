@@ -29,6 +29,7 @@ const TEACHES: Record<string, string> = {
   vtne: "a veterinary technology program",
   // High school, military and college classes
   ged: "a GED or adult education class",
+  timestables: "a primary school class",
   sat: "SAT prep",
   act: "ACT prep",
   asvab: "ASVAB prep",

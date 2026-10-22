@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     q: "Is the TigerTest Part 107 practice test free?",
-    a: "Yes. All four practice tests and all five training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+    a: "Yes. All four practice tests and all four training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
   },
 ];
 
@@ -72,7 +72,7 @@ const jsonLd = {
       featureList: [
         "200 Part 107 practice questions",
         "4 practice tests weighted to the FAA ACS",
-        "Training sets for all 5 ACS areas",
+        "4 training sets, one per practice test",
         "Explanations that cite the regulation",
         "Auto-save progress",
       ],
@@ -134,11 +134,11 @@ export default function Part107LandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by ACS Area</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                One set per area of the FAA Airman Certification Standards. Instant feedback, an
-                explanation that cites the rule, and questions you miss come back until you have
-                mastered them.
+                Four training sets, one for each practice test: Set 1 holds exactly the 50 questions of Test
+                1, and so on. Instant feedback and an explanation that cites the rule, and questions you
+                miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -237,14 +237,14 @@ export default function Part107LandingPage() {
               <p>
                 400 feet AGL, 100 mph, 3 statute miles, 500 below and 2,000 horizontal from clouds,
                 8 hours bottle to throttle and 0.04 BAC, 10 days to report an accident, 24 calendar
-                months for recurrent training. The regulations set drills every one.
+                months for recurrent training. The tests drill every one.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
-                TigerTest tracks your accuracy by ACS area. After each practice test, go back to the
-                set you missed most and retake until you clear 70 percent with room to spare.
+                TigerTest tracks your accuracy by ACS area. After each practice test, drill the questions
+                you missed from the results, retrain that test&apos;s set, and retake until you clear 70 percent.
               </p>
             </div>
           </div>

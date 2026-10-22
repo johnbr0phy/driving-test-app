@@ -75,7 +75,7 @@ const jsonLd = {
       featureList: [
         "200 CNA practice questions",
         "4 practice tests weighted to the NNAAP outline",
-        "Training sets for every content area",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -144,11 +144,11 @@ export default function CnaLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Content Area</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets that follow the NNAAP outline: daily living and restorative care, basic
-                nursing skills, psychosocial care, and the role of the nurse aide. Questions you miss
-                come back until you have mastered them.
+                Four training sets, one for each practice test: Set 1 holds exactly the 50 questions of Test
+                1, and so on. Master the set, then take its test. Questions you miss come back until you
+                have mastered them.
               </p>
             </div>
           </div>
@@ -248,14 +248,15 @@ export default function CnaLandingPage() {
               <p>
                 Normal vital sign ranges, 20 seconds of handwashing, repositioning every 2 hours,
                 restraints checked every 15 minutes and released every 2 hours, bath water at 105 to 115
-                degrees, dressing the weak side first. The basic nursing set drills them.
+                degrees, dressing the weak side first. The training sets drill every one.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
-                TigerTest tracks your accuracy by content area. After each practice test, go back to the
-                set you missed most and retake until you clear 70 percent with room to spare.
+                TigerTest tracks your accuracy by content area. After each practice test, drill the
+                questions you missed from the results, retrain that test&apos;s set, and retake until you clear
+                70 percent.
               </p>
             </div>
           </div>

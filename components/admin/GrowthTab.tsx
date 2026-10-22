@@ -57,6 +57,17 @@ interface Metrics {
   // Optional: older cached payloads predate the per-exam split.
   questionsByExam?: { id: string; label: string; total: number; last7d: number; prev7d: number; today: number; enrolled?: number }[];
   launchTest?: { id: string; name: string; subject: string; sent: number; clicked: number; bought: number }[];
+  // Optional: absent from payloads that predate quizzes (lib/quizzes.ts).
+  quizzes?: {
+    createdWeb: number;
+    createdImport: number;
+    createdMcp: number;
+    plays: number;
+    generated: number;
+    generatedQuestions?: number;
+    questionReports: number;
+    total: number;
+  };
   studyTimes?: {
     grid: Record<string, number[]>;
     answers: number;
@@ -315,6 +326,42 @@ function makeEndDot(color: string) {
       <circle key={index} cx={cx} cy={cy} r={4.5} fill={color} stroke="#ffffff" strokeWidth={2} />
     );
   };
+}
+
+// ─── Quizzes (lib/quizzes.ts): the site-wide counters in analytics/quizzes ──
+function QuizTile({ label, value, sub }: { label: string; value: number; sub?: string }) {
+  return (
+    <div className="rounded-lg border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950 px-3 py-2.5">
+      <div className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</div>
+      <div className="mt-0.5 text-lg font-semibold tabular-nums text-gray-900 dark:text-gray-50">{fmtInt(value)}</div>
+      {sub && <div className="text-[11px] text-gray-500 dark:text-gray-400">{sub}</div>}
+    </div>
+  );
+}
+
+function QuizzesCard({ data }: { data: NonNullable<Metrics["quizzes"]> }) {
+  const made = data.total;
+  const share = (n: number) => (made ? `${Math.round((n / made) * 100)}% of quizzes` : undefined);
+  return (
+    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
+      <div className="mb-4 flex items-baseline justify-between gap-2">
+        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">Quizzes</h2>
+        <p className="text-xs text-gray-500 dark:text-gray-400">All time. Made on /create, imported from Quizlet, or from Claude and ChatGPT.</p>
+      </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+        <QuizTile label="Quizzes made" value={made} />
+        <QuizTile label="From Claude / ChatGPT" value={data.createdMcp} sub={share(data.createdMcp)} />
+        <QuizTile label="Quizlet imports" value={data.createdImport} sub={share(data.createdImport)} />
+        <QuizTile label="Plays" value={data.plays} sub="browsers that answered one question" />
+        <QuizTile
+          label="Paste-box generations"
+          value={data.generated}
+          sub={data.generatedQuestions ? `${fmtInt(data.generatedQuestions)} questions written` : undefined}
+        />
+        <QuizTile label="Question reports" value={data.questionReports} sub="players flagging a bad question" />
+      </div>
+    </div>
+  );
 }
 
 type FunnelStage = { label: string; value: number; note?: string; section?: string };
@@ -1167,6 +1214,9 @@ export function GrowthTab() {
 
         {/* SAT, ACT and the other v2 exams with Basics: steps and Basics use */}
         <BasicsProgress />
+
+        {/* Quizzes: made, played, generated, reported (analytics/quizzes) */}
+        {metrics.quizzes && <QuizzesCard data={metrics.quizzes} />}
 
         {/* Launch email split test */}
         {metrics.launchTest && <LaunchTest rows={metrics.launchTest} />}

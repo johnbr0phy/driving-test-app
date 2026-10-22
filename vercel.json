@@ -29,6 +29,10 @@
       "schedule": "0 13 * * *"
     },
     {
+      "path": "/api/cron/quizzes-launch",
+      "schedule": "30 13 * * *"
+    },
+    {
       "path": "/api/cron/second-test-nudge",
       "schedule": "0 14 * * *"
     },

@@ -8,6 +8,7 @@ import {
   DMV_LANGUAGE_PAGES_UPDATED_AT,
   EXAM_LANDINGS_UPDATED_AT,
   HUB_PAGES_UPDATED_AT,
+  QUIZZES_PAGES_UPDATED_AT,
   STATE_PAGES_UPDATED_AT,
 } from "./seoDates";
 
@@ -18,7 +19,8 @@ import {
 //   /sitemaps/dmv.xml       home, state hub, 51 state DMV pages
 //   /sitemaps/dmv-es-vi-ko.xml  Spanish, Vietnamese, Korean and Chinese DMV pages (name kept from before Chinese, so Search Console keeps its history)
 //   /sitemaps/exams.xml     /tests hub and every exam landing
-export const SITEMAP_SEGMENTS = ["dmv", "dmv-es-vi-ko", "exams"] as const;
+//   /sitemaps/quizzes.xml   /quizzes library, /connect, and every public quiz with enough plays (read from Firestore)
+export const SITEMAP_SEGMENTS = ["dmv", "dmv-es-vi-ko", "exams", "quizzes"] as const;
 export type SitemapSegment = (typeof SITEMAP_SEGMENTS)[number];
 
 export interface SitemapEntry {
@@ -131,6 +133,35 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
           }))
         ),
       ];
+    case "quizzes":
+      return [
+        { url: `${SITE_URL}/quizzes`, lastModified: QUIZZES_PAGES_UPDATED_AT, changeFrequency: "daily", priority: 0.7 },
+        { url: `${SITE_URL}/connect`, lastModified: QUIZZES_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.6 },
+        ...(await publicQuizEntries()),
+      ];
+  }
+}
+
+/**
+ * Public quizzes with enough plays (lib/server/quizzes.ts), most played first.
+ * Loaded on demand so this module stays free of firebase-admin for robots.ts
+ * and the static index; without a Firestore credential the segment is just
+ * the two hub pages.
+ */
+async function publicQuizEntries(): Promise<SitemapEntry[]> {
+  try {
+    const { listPublicQuizzes } = await import("@/lib/server/quizzes");
+    const { quizPath } = await import("@/lib/quizzes");
+    const quizzes = await listPublicQuizzes(500);
+    return quizzes.map((q) => ({
+      url: `${SITE_URL}${quizPath(q.code)}`,
+      lastModified: (q.updatedAt || q.createdAt || QUIZZES_PAGES_UPDATED_AT).slice(0, 10),
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+    }));
+  } catch (error) {
+    console.warn("[sitemaps] public quizzes unavailable:", error instanceof Error ? error.message : error);
+    return [];
   }
 }
 
@@ -161,6 +192,7 @@ export function renderIndex(): string {
     DMV_LANGUAGE_PAGES_UPDATED_AT,
     EXAM_LANDINGS_UPDATED_AT,
     HUB_PAGES_UPDATED_AT,
+    QUIZZES_PAGES_UPDATED_AT,
   ].sort().at(-1);
   const body = SITEMAP_SEGMENTS.map(
     (segment) =>

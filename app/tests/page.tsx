@@ -52,6 +52,24 @@ export default function TestsHubPage() {
         <TestCatalogGrid />
 
         <div className="mt-14 rounded-2xl bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 p-8 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">Make your own practice test</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-5 max-w-xl mx-auto">
+            Paste your notes, import a Quizlet set or write the questions yourself, and get a link anyone can play in Practice, Test and Flashcards
+            modes.
+          </p>
+          <Link
+            href="/create"
+            className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-6 py-3 rounded-full font-medium transition-colors"
+          >
+            Make a quiz
+          </Link>
+          <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+            <Link href="/quizzes" className="underline">Browse quizzes members made</Link> or{" "}
+            <Link href="/connect" className="underline">use TigerTest in ChatGPT and Claude</Link>.
+          </p>
+        </div>
+
+        <div className="mt-6 rounded-2xl bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">Don&apos;t see your exam?</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-5 max-w-xl mx-auto">
             We add new tests based on requests. Tell us which certification you are studying for.

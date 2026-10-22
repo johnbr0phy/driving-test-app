@@ -10,6 +10,7 @@ import { Check, Copy, Flag, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { useAuth } from "@/contexts/AuthContext";
+import { useAdmin } from "@/hooks/useAdmin";
 import { QuizSync } from "@/components/quiz/QuizSync";
 import { QuizEditor } from "@/components/quiz/create/QuizEditor";
 import { loadQuiz, quizFetch } from "@/lib/quizClient";
@@ -21,6 +22,7 @@ export default function EditQuizPage() {
   const code = normalizeQuizCode(String(params?.code ?? ""));
   const { user, loading } = useAuth();
   const router = useRouter();
+  const isAdmin = useAdmin();
   const forgetQuiz = useQuizStore((s) => s.forgetQuiz);
   const [quiz, setQuiz] = useState<QuizPublic | null>(null);
   const [state, setState] = useState<"loading" | "ready" | "missing" | "error">("loading");
@@ -28,6 +30,9 @@ export default function EditQuizPage() {
   const [copied, setCopied] = useState(false);
   const [confirming, setConfirming] = useState(false);
   const [deleting, setDeleting] = useState(false);
+  const [featured, setFeatured] = useState(false);
+  const [featuredBusy, setFeaturedBusy] = useState(false);
+  const [featuredError, setFeaturedError] = useState("");
 
   useEffect(() => {
     if (loading) return;
@@ -42,6 +47,7 @@ export default function EditQuizPage() {
         if (!q) return setState("missing");
         if (!q.mine) return router.replace(quizPath(code));
         setQuiz(q);
+        setFeatured(!!q.featured);
         setState("ready");
       })
       .catch((e) => {
@@ -61,6 +67,23 @@ export default function EditQuizPage() {
       setTimeout(() => setCopied(false), 2000);
     } catch {
       window.prompt("Copy this link", quizUrl(code));
+    }
+  };
+
+  // Admin only: feature the quiz in the /quizzes library, saved at once, apart from Save.
+  const toggleFeatured = async (next: boolean) => {
+    if (!user || featuredBusy) return;
+    setFeaturedBusy(true);
+    setFeaturedError("");
+    setFeatured(next);
+    try {
+      const updated = await quizFetch<QuizPublic>(user, `/api/quizzes/${code}`, { method: "PATCH", body: JSON.stringify({ featured: next }) });
+      setFeatured(!!updated.featured);
+    } catch (e) {
+      setFeatured(!next);
+      setFeaturedError(e instanceof Error ? e.message : "Couldn't update the featured flag.");
+    } finally {
+      setFeaturedBusy(false);
     }
   };
 
@@ -114,6 +137,27 @@ export default function EditQuizPage() {
               passPct: quiz.passPct,
               questions: quiz.questions,
             }}
+            featuredControl={
+              isAdmin ? (
+                <div className="mt-3">
+                  <label className="inline-flex items-center gap-2 text-sm text-gray-800 dark:text-gray-100">
+                    <input
+                      type="checkbox"
+                      checked={featured}
+                      disabled={featuredBusy}
+                      onChange={(e) => toggleFeatured(e.target.checked)}
+                      className="h-4 w-4 accent-green-600"
+                    />
+                    Feature in the library (admin)
+                  </label>
+                  {featuredError && (
+                    <p role="alert" className="mt-1 text-xs text-red-600 dark:text-red-400">
+                      {featuredError}
+                    </p>
+                  )}
+                </div>
+              ) : null
+            }
           >
             <div className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-4 sm:p-5 mb-6 space-y-3 text-sm">
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1">

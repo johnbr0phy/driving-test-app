@@ -49,6 +49,8 @@ interface Props {
   /** A "start over" control shown next to the heading. */
   onBack?: () => void;
   backLabel?: string;
+  /** Rendered under the visibility choice (the admin's "feature in the library" checkbox). */
+  featuredControl?: ReactNode;
 }
 
 const VISIBILITY_CHOICES: { value: QuizVisibility; name: string; hint: string }[] = [
@@ -87,7 +89,7 @@ export function emptyInitial(): QuizEditorInitial {
   return { title: "", description: "", visibility: "link", passPct: QUIZ_DEFAULT_PASS_PCT, questions: [] };
 }
 
-export function QuizEditor({ mode, code, initial, createdVia = "web", children, onBack, backLabel = "Start over" }: Props) {
+export function QuizEditor({ mode, code, initial, createdVia = "web", children, onBack, backLabel = "Start over", featuredControl }: Props) {
   const { user } = useAuth();
   const { isPremium } = useIsPremium();
   const router = useRouter();
@@ -289,6 +291,7 @@ export function QuizEditor({ mode, code, initial, createdVia = "web", children, 
               );
             })}
           </div>
+          {featuredControl}
         </fieldset>
 
         <div className="sm:max-w-[12rem]">

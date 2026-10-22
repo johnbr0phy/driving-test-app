@@ -207,7 +207,7 @@ const tools: ToolEntry[] = [
   {
     name: 'ping',
     description:
-      'Health check. Returns the authenticated user\'s UID and a timestamp. Use to verify the MCP connection works. This server does two things: DMV permit test tutoring (list_states, get_progress, the training set and practice test tools) and quizzes, which turn the person\'s own material into a shareable TigerTest practice test (create_quiz, add_quiz_questions, list_my_quizzes, get_quiz, update_quiz, delete_quiz, get_quiz_report).',
+      'Health check. Returns the authenticated user\'s UID and a timestamp. Use to verify the MCP connection works. This server does two things: DMV permit test tutoring (list_states, get_progress, the training set and practice test tools) and quizzes, which turn the person\'s own material into a shareable TigerTest practice test (get_quiz_writing_guide, create_quiz, add_quiz_questions, list_my_quizzes, get_quiz, update_quiz, delete_quiz, get_quiz_report).',
     register(server, ctx) {
       server.registerTool(
         'ping',

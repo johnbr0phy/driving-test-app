@@ -5,16 +5,17 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { Search } from "lucide-react";
+import { Search, Star } from "lucide-react";
 import { quizPath, type QuizSummary } from "@/lib/quizzes";
 
 export function QuizLibrary({ quizzes }: { quizzes: QuizSummary[] }) {
   const [query, setQuery] = useState("");
   const q = query.trim().toLowerCase();
-  const shown = useMemo(
-    () => (q ? quizzes.filter((z) => `${z.title} ${z.description} ${z.topics.join(" ")} ${z.ownerName}`.toLowerCase().includes(q)) : quizzes),
-    [quizzes, q],
-  );
+  const shown = useMemo(() => {
+    const list = q ? quizzes.filter((z) => `${z.title} ${z.description} ${z.topics.join(" ")} ${z.ownerName}`.toLowerCase().includes(q)) : quizzes;
+    // The API already puts featured quizzes first; keep that order whatever the server sent.
+    return [...list].sort((a, b) => Number(!!b.featured) - Number(!!a.featured));
+  }, [quizzes, q]);
 
   if (quizzes.length === 0) {
     return (
@@ -52,6 +53,11 @@ export function QuizLibrary({ quizzes }: { quizzes: QuizSummary[] }) {
                 href={quizPath(z.code)}
                 className="block h-full rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-5 hover:border-gray-400 dark:hover:border-gray-600"
               >
+                {z.featured && (
+                  <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 dark:bg-amber-950 px-2 py-0.5 text-xs font-semibold text-amber-800 dark:text-amber-300 mb-2">
+                    <Star className="w-3 h-3" aria-hidden="true" /> Editor&apos;s pick
+                  </span>
+                )}
                 <p className="font-semibold text-gray-900 dark:text-gray-50 break-words">{z.title}</p>
                 <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
                   by {z.ownerName} · {z.questionCount} {z.questionCount === 1 ? "question" : "questions"} · {z.plays} {z.plays === 1 ? "play" : "plays"}

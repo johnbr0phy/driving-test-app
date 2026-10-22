@@ -63,12 +63,13 @@ const jsonLd = {
 };
 
 const PROMPTS = [
+  "Quiz me on my biology notes until I get them all right.",
+  "Quiz me on the British phrases quiz my friend sent me (tigertest.io/q/ABC234).",
   "Turn these notes into a TigerTest quiz with 20 questions.",
   "Make a quiz from this PDF, one topic per chapter, and give me the link.",
   "Add five harder questions to my Cell Biology quiz.",
   "Which of my quizzes has been played the most, and which question do people miss?",
-  "Quiz me on the Texas DMV test, ten questions at a time.",
-  "Run training set 2 for California and stop me when I miss one.",
+  "Quiz me for the Texas DMV test.",
   "What are my weakest DMV topics? Give me five questions on them.",
 ];
 

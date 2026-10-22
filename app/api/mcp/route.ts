@@ -28,15 +28,19 @@ function checkRateLimit(userId: string): { allowed: boolean; retryAfterMs: numbe
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS',
-  'Access-Control-Allow-Headers': 'authorization, content-type, mcp-session-id',
+  'Access-Control-Allow-Headers': 'authorization, content-type, mcp-session-id, mcp-protocol-version',
 } as const;
 
 function unauthorized(): Response {
+  // RFC 9728: tell the client where the protected-resource metadata lives so
+  // it can discover the authorization server and start OAuth on its own.
+  const issuer = (process.env.MCP_OAUTH_ISSUER_URL ?? '').replace(/\/$/, '');
+  const hint = issuer ? `, resource_metadata="${issuer}/.well-known/oauth-protected-resource"` : '';
   return new Response(JSON.stringify({ error: 'invalid_token' }), {
     status: 401,
     headers: {
       ...CORS_HEADERS,
-      'WWW-Authenticate': 'Bearer realm="mcp", error="invalid_token"',
+      'WWW-Authenticate': `Bearer realm="mcp", error="invalid_token"${hint}`,
       'Content-Type': 'application/json',
     },
   });

@@ -54,7 +54,7 @@ const jsonLd = {
       featureList: [
         "200 cosmetology theory practice questions",
         "4 practice tests weighted like the NIC national theory exam",
-        "Training sets for every content area",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -68,7 +68,7 @@ const jsonLd = {
           name: "What is on the cosmetology state board written exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "These practice sets follow the NIC National Cosmetology Theory Examination only. Its content outline, effective July 1, 2022, has four domains: Scientific Concepts (35 percent: infection control and safety, anatomy and physiology, basic chemistry), Hair Care and Services (45 percent), Skin Care and Services (10 percent) and Nail Care and Services (10 percent). The candidate bulletin was revised January 1, 2026 and the weights did not change. States that use PSI sit a different exam. Check your state board's candidate bulletin.",
+            text: "These practice tests follow the NIC National Cosmetology Theory Examination only. Its content outline, effective July 1, 2022, has four domains: Scientific Concepts (35 percent: infection control and safety, anatomy and physiology, basic chemistry), Hair Care and Services (45 percent), Skin Care and Services (10 percent) and Nail Care and Services (10 percent). The candidate bulletin was revised January 1, 2026 and the weights did not change. States that use PSI sit a different exam. Check your state board's candidate bulletin.",
           },
         },
         {
@@ -108,7 +108,7 @@ const jsonLd = {
           name: "Is this the same exam for esthetics, nail technology and barbering?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. NIC gives separate national theory exams for esthetics, nail technology and barbering, each with its own outline. The infection control, anatomy and chemistry questions here overlap with those exams, and the skin and nail sets are a useful warm-up, but this bank follows the cosmetology outline.",
+            text: "No. NIC gives separate national theory exams for esthetics, nail technology and barbering, each with its own outline. The infection control, anatomy and chemistry questions here overlap with those exams, and the skin and nail questions are a useful warm-up, but this bank follows the cosmetology outline.",
           },
         },
         classFaqJsonLd("cosmetology"),
@@ -166,9 +166,9 @@ export default function CosmetologyLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Topic</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets: the sciences (infection control, anatomy, chemistry), consultation with cutting and styling, chemical services (texture and color), and skin and nails. Questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, then take Test 1 and aim for 75 percent. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -195,7 +195,7 @@ export default function CosmetologyLandingPage() {
                 Built on the NIC Theory Exam Outline
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                These sets cover the NIC National Cosmetology Theory Examination only: 110 questions, 100 scored, in 90 minutes. That length is NIC only. The NIC outline gives Scientific Concepts 35 percent, Hair Care and Services 45 percent, and Skin Care and Nail Care 10 percent each. PSI states, including California from April 1, 2026, use a 120-minute outline with different weights, and this bank is not weighted to it. The percentages below are the share of these NIC practice tests. If you teach a cosmetology program, you can assign it to your class for free at{" "}
+                These practice tests cover the NIC National Cosmetology Theory Examination only: 110 questions, 100 scored, in 90 minutes. That length is NIC only. The NIC outline gives Scientific Concepts 35 percent, Hair Care and Services 45 percent, and Skin Care and Nail Care 10 percent each. PSI states, including California from April 1, 2026, use a 120-minute outline with different weights, and this bank is not weighted to it. The percentages below are the share of these NIC practice tests. If you teach a cosmetology program, you can assign it to your class for free at{" "}
                 <Link href="/teach" className="text-brand-dark font-medium underline underline-offset-2">
                   tigertest.io/teach
                 </Link>
@@ -267,9 +267,9 @@ export default function CosmetologyLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weakest set to 90 percent, then test</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest to 90 percent</h3>
               <p>
-                TigerTest tracks your accuracy by topic. Most boards pass at a scaled 75, so retake the training set you miss most until you clear 90 percent with room to spare, then take all four practice tests back to back. Two of them together are about the length of the real exam.
+                TigerTest tracks your accuracy by topic. Most boards pass at a scaled 75, so after each practice test drill the questions you missed, retrain that test&apos;s set, and retake until you clear 90 percent with room to spare, then take all four practice tests back to back. Two of them together are about the length of the real exam.
               </p>
             </div>
           </div>
@@ -285,7 +285,7 @@ export default function CosmetologyLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is on the cosmetology state board written exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              These practice sets follow the NIC National Cosmetology Theory Examination only. Its content outline, effective July 1, 2022, has four domains: Scientific Concepts (35 percent: infection control and safety, anatomy and physiology, basic chemistry), Hair Care and Services (45 percent), Skin Care and Services (10 percent) and Nail Care and Services (10 percent). The candidate bulletin was revised January 1, 2026 and the weights did not change. States that use PSI sit a different exam. Check your state board&apos;s candidate bulletin.
+              These practice tests follow the NIC National Cosmetology Theory Examination only. Its content outline, effective July 1, 2022, has four domains: Scientific Concepts (35 percent: infection control and safety, anatomy and physiology, basic chemistry), Hair Care and Services (45 percent), Skin Care and Services (10 percent) and Nail Care and Services (10 percent). The candidate bulletin was revised January 1, 2026 and the weights did not change. States that use PSI sit a different exam. Check your state board&apos;s candidate bulletin.
             </p>
           </div>
           <div>
@@ -315,7 +315,7 @@ export default function CosmetologyLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is this the same exam for esthetics, nail technology and barbering?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. NIC gives separate national theory exams for esthetics, nail technology and barbering, each with its own outline. The infection control, anatomy and chemistry questions here overlap with those exams, and the skin and nail sets are a useful warm-up, but this bank follows the cosmetology outline.
+              No. NIC gives separate national theory exams for esthetics, nail technology and barbering, each with its own outline. The infection control, anatomy and chemistry questions here overlap with those exams, and the skin and nail questions are a useful warm-up, but this bank follows the cosmetology outline.
             </p>
           </div>
           <ExamClassFaq examId="cosmetology" />

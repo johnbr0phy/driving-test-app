@@ -55,7 +55,7 @@ const jsonLd = {
       featureList: [
         "200 forklift operator practice questions",
         "4 practice tests weighted like a real operator written test",
-        "Training sets for every topic area",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -101,7 +101,7 @@ const jsonLd = {
           name: "Is the TigerTest forklift practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "Yes. All four practice tests and all four training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
           },
         },
         classFaqJsonLd("forklift"),
@@ -155,9 +155,9 @@ export default function ForkliftLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Topic</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets: basics, rules and inspection; stability and load capacity; safe operation; and load handling, docks and ramps. Questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -254,7 +254,7 @@ export default function ForkliftLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill the operating rules until they are reflexes</h3>
               <p>
-                Forks low and tilted back, travel in reverse when the load blocks your view, horn at every blind corner, pedestrians always have the right of way, nobody under the forks, nobody riding, stay in the seat if the truck tips. TigerTest tracks your accuracy by topic, so retake the set you miss most until you clear 90 percent.
+                Forks low and tilted back, travel in reverse when the load blocks your view, horn at every blind corner, pedestrians always have the right of way, nobody under the forks, nobody riding, stay in the seat if the truck tips. TigerTest tracks your accuracy by topic, so after each practice test drill the questions you missed, retrain that test&apos;s set, and retake until you clear 90 percent.
               </p>
             </div>
           </div>
@@ -294,7 +294,7 @@ export default function ForkliftLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest forklift practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.
+              Yes. All four practice tests and all four training sets are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>
           </div>
           <ExamClassFaq examId="forklift" />

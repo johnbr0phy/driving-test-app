@@ -41,8 +41,8 @@
     "h2": "Cómo funciona",
     "cards": [
       {
-        "h3": "Práctica por tema",
-        "p": "Cinco grupos: introducción a OSHA y derechos del trabajador, protección contra caídas, electricidad más golpeado por y atrapado en, comunicación de peligros y EPP, y peligros a la salud, herramientas e incendios. Las preguntas que fallas vuelven hasta que las domines."
+        "h3": "Entrena y luego haz el examen",
+        "p": "Cuatro grupos de entrenamiento, uno por examen de práctica: el Entrenamiento 1 tiene exactamente las 50 preguntas del Examen 1, y así con cada uno. Domina el Entrenamiento 1, haz el Examen 1 y sigue. Las preguntas que fallas vuelven hasta que las domines."
       },
       {
         "h3": "Exámenes de práctica",
@@ -78,8 +78,8 @@
         "p": "Conoce los nueve pictogramas del GHS, las dos palabras de advertencia y las 16 secciones de la hoja de datos de seguridad (SDS) lo bastante bien para saber que los primeros auxilios están en la Sección 4, el combate de incendios en la Sección 5 y el EPP en la Sección 8. Luego memoriza la jerarquía de controles, desde la eliminación hasta el EPP; al examen le encanta preguntar qué control es el más o el menos eficaz."
       },
       {
-        "h3": "4. Repasa tu tema más débil",
-        "p": "TigerTest mide tu precisión por tema. El examen final real es corto, así que un solo tema débil te puede costar el 70% que necesitas. Repite el grupo donde más fallas hasta pasar de 85% y luego haz los cuatro exámenes de práctica seguidos."
+        "h3": "4. Repasa lo que fallas",
+        "p": "TigerTest mide tu precisión por tema. El examen final real es corto, así que un solo tema débil te puede costar el 70% que necesitas. Después de cada examen, repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar de 85%."
       }
     ]
   },
@@ -107,7 +107,7 @@
     },
     {
       "q": "¿El examen de práctica OSHA 10 de TigerTest es un curso oficial de OSHA?",
-      "a": "No. TigerTest es una herramienta de estudio gratis, no un curso Outreach autorizado por OSHA, y no da tarjetas. Úsalo para aprender el material y medir si estás listo, y luego toma el curso real con un entrenador autorizado por OSHA. Los cuatro exámenes de práctica y todos los grupos de práctica son gratis, sin cuenta."
+      "a": "No. TigerTest es una herramienta de estudio gratis, no un curso Outreach autorizado por OSHA, y no da tarjetas. Úsalo para aprender el material y medir si estás listo, y luego toma el curso real con un entrenador autorizado por OSHA. Los cuatro exámenes de práctica y los cuatro grupos de entrenamiento son gratis, sin cuenta."
     }
   ],
   "finalCta": {

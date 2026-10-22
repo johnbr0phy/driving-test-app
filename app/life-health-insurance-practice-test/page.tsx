@@ -123,7 +123,7 @@ const jsonLd = {
       featureList: [
         "200 insurance practice questions",
         "4 practice tests weighted to the general portion of the life and health exam",
-        "Training sets for every domain",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -153,7 +153,7 @@ const jsonLd = {
           name: "Can I use this for a life-only or health-only exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. The training sets split life from health, so a life-only candidate can work sets 1 and 2 plus the annuities set, and a health-only candidate can work sets 1, 3 and 4. The mixed practice tests cover both.",
+            text: "Yes. Each training set and practice test mixes life and health the way the general portion does, and your stats show your accuracy by topic, so a life-only or health-only candidate can see exactly how they do on their own lines.",
           },
         },
         {
@@ -227,9 +227,9 @@ export default function InsuranceLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets covering the general portion: insurance basics and regulation; life insurance policies and provisions; annuities, taxation and health basics; and health policy provisions and types. Questions you miss come back until you have mastered them.
+                Four training sets for the general portion, one per practice test: each holds exactly the 50 questions of its test. Master Set 1, then take Test 1, and so on. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -380,7 +380,7 @@ export default function InsuranceLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Can I use this for a life-only or health-only exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. The training sets split life from health, so a life-only candidate can work sets 1 and 2 plus the annuities set, and a health-only candidate can work sets 1, 3 and 4. The mixed practice tests cover both.
+              Yes. Each training set and practice test mixes life and health the way the general portion does, and your stats show your accuracy by topic, so a life-only or health-only candidate can see exactly how they do on their own lines.
             </p>
           </div>
           <div>

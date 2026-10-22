@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "Is the TigerTest motorcycle practice test free?",
-    a: "Yes. All four practice tests and all five training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+    a: "Yes. All four practice tests and all four training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
   },
 ];
 
@@ -73,7 +73,7 @@ const jsonLd = {
       featureList: [
         "200 motorcycle permit practice questions",
         "4 practice tests weighted like the real exam",
-        "Training sets for every chapter of the MSF manual",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -140,11 +140,11 @@ export default function MotorcycleLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Manual Chapter</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Five sets that follow the MSF Motorcycle Operator Manual: preparing to ride, control,
-                positioning, intersections and hazards, special situations. Questions you miss come
-                back until you have mastered them.
+                Four training sets, one for each practice test: Set 1 holds exactly the 50 questions of Test
+                1, and so on. Master the set, then take its test. Questions you miss come back until you
+                have mastered them.
               </p>
             </div>
           </div>
@@ -250,8 +250,8 @@ export default function MotorcycleLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
-                TigerTest tracks your accuracy by chapter. After each practice test, go back to the
-                training set for the chapter you missed most, then retake until you clear 80 percent.
+                TigerTest tracks your accuracy by chapter. After each practice test, drill the questions you
+                missed from the results, retrain that test&apos;s set, and retake until you clear 80 percent.
               </p>
             </div>
           </div>

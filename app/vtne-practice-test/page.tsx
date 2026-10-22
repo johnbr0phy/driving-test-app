@@ -54,7 +54,7 @@ const jsonLd = {
       featureList: [
         "200 VTNE practice questions",
         "4 practice tests across all ten content domains",
-        "Training sets for every domain",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -159,9 +159,9 @@ export default function VtneLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets: animal care and communication, pharmacology and lab procedures, anesthesia with pain management and emergency care, and surgery with dentistry and imaging. Questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -258,9 +258,9 @@ export default function VtneLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain to 85 percent</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                TigerTest tracks your accuracy by domain. The VTNE passes on a scaled score, so there is no magic percentage, but students who clear 85 percent in every training set and 70 percent on all four practice tests have covered the outline. Retake the set you miss most, then take the four tests back to back the week before your window.
+                TigerTest tracks your accuracy by domain. The VTNE passes on a scaled score, so there is no magic percentage, but students who master all four training sets and clear 70 percent on all four practice tests have covered the outline. After each test, drill the questions you missed and retrain that test&apos;s set, then take the four tests back to back the week before your window.
               </p>
             </div>
           </div>

@@ -3,25 +3,6 @@
   "name": "푸드 핸들러 연습 시험",
   "examLabel": "푸드 핸들러 카드",
   "fullName": "푸드 핸들러(식품 취급자) 자격 시험",
-  "trainingSets": {
-    "1": {
-      "name": "식품 안전 기초와 개인 위생",
-      "weightLabel": "시험의 40%",
-      "partNames": ["식품 안전 기초", "개인 위생"]
-    },
-    "2": {
-      "name": "오염과 알레르기 유발 물질",
-      "weightLabel": "시험의 20%"
-    },
-    "3": {
-      "name": "시간과 온도 관리",
-      "weightLabel": "시험의 24%"
-    },
-    "4": {
-      "name": "세척, 소독과 해충",
-      "weightLabel": "시험의 16%"
-    }
-  },
   "categoryLabels": {
     "fhBasics": "식품 안전 기초",
     "fhHygiene": "개인 위생",

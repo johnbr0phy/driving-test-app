@@ -3,25 +3,6 @@
   "name": "Examen de práctica de manipulador de alimentos",
   "examLabel": "Tarjeta de manipulador de alimentos",
   "fullName": "examen del certificado de manipulador de alimentos",
-  "trainingSets": {
-    "1": {
-      "name": "Conceptos básicos e higiene personal",
-      "weightLabel": "40% de los exámenes",
-      "partNames": ["Conceptos básicos de seguridad alimentaria", "Higiene personal"]
-    },
-    "2": {
-      "name": "Contaminación y alérgenos",
-      "weightLabel": "20% de los exámenes"
-    },
-    "3": {
-      "name": "Control de tiempo y temperatura",
-      "weightLabel": "24% de los exámenes"
-    },
-    "4": {
-      "name": "Limpieza, desinfección y plagas",
-      "weightLabel": "16% de los exámenes"
-    }
-  },
   "categoryLabels": {
     "fhBasics": "Conceptos básicos de seguridad alimentaria",
     "fhHygiene": "Higiene personal",

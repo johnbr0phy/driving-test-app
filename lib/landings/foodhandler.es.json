@@ -37,8 +37,8 @@
     "h2": "Cómo funciona",
     "cards": [
       {
-        "h3": "Práctica por tema",
-        "p": "Cuatro grupos: conceptos básicos e higiene personal, contaminación y alérgenos, control de tiempo y temperatura, y limpieza y desinfección. Las preguntas que fallas vuelven hasta que las domines."
+        "h3": "Entrena y luego haz el examen",
+        "p": "Cuatro grupos de entrenamiento, uno por examen de práctica: el Entrenamiento 1 tiene exactamente las 50 preguntas del Examen 1, y así con cada uno. Domina el Entrenamiento 1, haz el Examen 1 y sigue. Las preguntas que fallas vuelven hasta que las domines."
       },
       {
         "h3": "Exámenes de práctica",
@@ -73,8 +73,8 @@
         "p": "Pollo crudo encima de una ensalada en el refrigerador, una tabla de cortar usada dos veces, una botella de desinfectante en la mesa de preparación, un cocinero con un malestar estomacal. La mayoría de las preguntas de situaciones te piden encontrar el peligro."
       },
       {
-        "h3": "4. Repasa tu tema más débil",
-        "p": "TigerTest mide tu precisión por tema. La mayoría de los cursos piden 75% en un examen de 40 preguntas, así que repite el grupo donde más fallas hasta pasar de 85% con margen."
+        "h3": "4. Repasa lo que fallas",
+        "p": "TigerTest mide tu precisión por tema. La mayoría de los cursos piden 75% en un examen de 40 preguntas, así que repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar de 85% con margen."
       }
     ]
   },
@@ -102,7 +102,7 @@
     },
     {
       "q": "¿El examen de práctica de manipulador de alimentos de TigerTest es gratis?",
-      "a": "Sí. Los cuatro exámenes de práctica y todos los grupos de práctica son gratis, sin necesidad de cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
+      "a": "Sí. Los cuatro exámenes de práctica y los cuatro grupos de entrenamiento son gratis, sin necesidad de cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
     }
   ],
   "finalCta": {

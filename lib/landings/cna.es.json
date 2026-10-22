@@ -1,6 +1,6 @@
 {
   "metaTitle": "Examen CNA en Español 2026 - Práctica Gratis",
-  "metaDescription": "Examen de práctica CNA gratis en español: 200 preguntas con explicaciones según el temario del examen NNAAP. Cuatro exámenes y práctica por tema, sin cuenta.",
+  "metaDescription": "Examen de práctica CNA gratis en español: 200 preguntas con explicaciones según el temario del examen NNAAP. Cuatro exámenes y cuatro grupos de entrenamiento, sin cuenta.",
   "keywords": "examen CNA en español, examen de práctica CNA, examen de asistente de enfermería, preguntas del examen CNA, examen escrito CNA, NNAAP en español, examen CNA gratis 2026",
   "breadcrumb": {
     "home": "Inicio",
@@ -37,8 +37,8 @@
     "h2": "Cómo funciona",
     "cards": [
       {
-        "h3": "Práctica por área de contenido",
-        "p": "Cuatro grupos que siguen el temario NNAAP: vida diaria y cuidado restaurativo, habilidades básicas de enfermería, cuidado psicosocial y el rol del asistente de enfermería. Las preguntas que fallas vuelven hasta que las domines."
+        "h3": "Entrena y luego haz el examen",
+        "p": "Cuatro grupos de entrenamiento, uno por examen de práctica: el Entrenamiento 1 tiene exactamente las 50 preguntas del Examen 1, y así con cada uno. Domina el Entrenamiento 1, haz el Examen 1 y sigue. Las preguntas que fallas vuelven hasta que las domines."
       },
       {
         "h3": "Exámenes de práctica",
@@ -74,11 +74,11 @@
       },
       {
         "h3": "3. Aprende los números y el orden de las cosas",
-        "p": "Los rangos normales de los signos vitales, 20 segundos para lavarse las manos, cambiar de posición cada 2 horas, revisar las restricciones cada 15 minutos y soltarlas cada 2 horas, agua del baño a 105 a 115 grados, vestir primero el lado débil. El grupo de habilidades básicas de enfermería los repasa."
+        "p": "Los rangos normales de los signos vitales, 20 segundos para lavarse las manos, cambiar de posición cada 2 horas, revisar las restricciones cada 15 minutos y soltarlas cada 2 horas, agua del baño a 105 a 115 grados, vestir primero el lado débil. Salen en todos los grupos de entrenamiento."
       },
       {
-        "h3": "4. Repasa tus áreas débiles",
-        "p": "TigerTest mide tu precisión por área de contenido. Después de cada examen de práctica, vuelve al grupo donde fallaste más y repítelo hasta pasar el 70% con margen."
+        "h3": "4. Repasa lo que fallas",
+        "p": "TigerTest mide tu precisión por área de contenido. Después de cada examen de práctica, repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar el 70% con margen."
       }
     ]
   },
@@ -102,7 +102,7 @@
     },
     {
       "q": "¿El examen de práctica CNA de TigerTest es gratis?",
-      "a": "Sí. Los cuatro exámenes de práctica y los cuatro grupos de práctica son gratis, sin necesidad de cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
+      "a": "Sí. Los cuatro exámenes de práctica y los cuatro grupos de entrenamiento son gratis, sin necesidad de cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
     }
   ],
   "finalCta": {

@@ -155,7 +155,8 @@ export const useQuizStore = create<QuizStore>()(
       finishTest: (code, attempt) =>
         set((state) =>
           withCode(state, code, (p) => {
-            const { current: _current, ...rest } = p; // eslint-disable-line @typescript-eslint/no-unused-vars
+            const rest = { ...p };
+            delete rest.current;
             const answers = [
               ...p.answers,
               ...attempt.questionIds.map((q) => ({ q, ok: !attempt.missedIds.includes(q), t: attempt.at })),
@@ -167,14 +168,16 @@ export const useQuizStore = create<QuizStore>()(
       abandonTest: (code) =>
         set((state) =>
           withCode(state, code, (p) => {
-            const { current: _current, ...rest } = p; // eslint-disable-line @typescript-eslint/no-unused-vars
+            const rest = { ...p };
+            delete rest.current;
             return rest;
           }),
         ),
 
       forgetQuiz: (code) =>
         set((state) => {
-          const { [code]: _gone, ...progress } = state.progress; // eslint-disable-line @typescript-eslint/no-unused-vars
+          const progress = { ...state.progress };
+          delete progress[code];
           return { progress, recent: state.recent.filter((r) => r.code !== code) };
         }),
 

@@ -1,6 +1,6 @@
-// Client-side mirror of the generation bounds in lib/server/quizGenerate.ts.
-// That module imports the Anthropic SDK and firebase-admin, so the /create
-// page cannot import it; keep these two in step with it.
+// Bounds for quiz generation from pasted material, shared by the /create
+// page and lib/server/quizGenerate.ts (which imports the Anthropic SDK and
+// firebase-admin, so the client cannot import it directly).
 
 export const GENERATE_MAX_CHARS = 24_000;
 export const GENERATE_MIN_COUNT = 5;

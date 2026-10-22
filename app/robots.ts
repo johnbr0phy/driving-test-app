@@ -21,6 +21,7 @@ const DISALLOW = [
   "/signup",
   "/unsubscribe",
   "/request-test",
+  "/upgrade",
   "/create", // the quiz maker; /q/<code> quiz pages and /quizzes stay crawlable
   // Exam app routes (/cdl/dashboard, /teas/test/...) are not listed
   // here: they carry a noindex meta tag (lib/examSeo.ts), which

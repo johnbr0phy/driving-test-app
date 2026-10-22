@@ -3,6 +3,9 @@ import { FieldValue, type Firestore } from "firebase-admin/firestore";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { QUIZ_OPTION_COUNT, cleanQuizTitle, validateQuizQuestion, type QuizQuestionInput } from "@/lib/quizzes";
 import { QuizError, bumpCounter, quizLimits } from "@/lib/server/quizzes";
+import { GENERATE_MAX_CHARS, GENERATE_MAX_COUNT, GENERATE_MIN_COUNT, GENERATE_MIN_WORDS, suggestedCount } from "@/lib/quizGenerateLimits";
+
+export { GENERATE_MAX_CHARS, suggestedCount };
 
 // Turn pasted material (notes, a chapter, a syllabus, a term list) into
 // four-option questions with explanations, for /create's paste box. The MCP
@@ -10,9 +13,6 @@ import { QuizError, bumpCounter, quizLimits } from "@/lib/server/quizzes";
 // itself and calls create_quiz. Per-account daily quota in users/{uid}.quizGen.
 
 export const GENERATE_MODEL = "claude-sonnet-5-5";
-export const GENERATE_MAX_CHARS = 24_000;
-export const GENERATE_MIN_COUNT = 5;
-export const GENERATE_MAX_COUNT = 50;
 
 const SYSTEM = `You write multiple-choice practice questions for TigerTest, a study site. You will be given study material and a number of questions to write.
 
@@ -32,12 +32,6 @@ export interface GeneratedQuiz {
   title: string;
   description: string;
   questions: QuizQuestionInput[];
-}
-
-/** How many questions a piece of text supports: about one per 60 words, within bounds. */
-export function suggestedCount(text: string): number {
-  const words = text.trim().split(/\s+/).length;
-  return Math.max(GENERATE_MIN_COUNT, Math.min(GENERATE_MAX_COUNT, Math.round(words / 60)));
 }
 
 function parseGenerated(text: string): GeneratedQuiz {
@@ -91,7 +85,7 @@ export async function generateQuiz(
 ): Promise<GeneratedQuiz> {
   if (!process.env.ANTHROPIC_API_KEY) throw new QuizError("Quiz generation is not set up on this server.", 503);
   const text = typeof input.text === "string" ? input.text.trim().slice(0, GENERATE_MAX_CHARS) : "";
-  if (text.split(/\s+/).length < 30) throw new QuizError("Paste at least a paragraph or so of material (30 words or more).");
+  if (text.split(/\s+/).length < GENERATE_MIN_WORDS) throw new QuizError(`Paste at least a paragraph or so of material (${GENERATE_MIN_WORDS} words or more).`);
   const requested = Number(input.count);
   const count = Number.isInteger(requested) ? Math.max(GENERATE_MIN_COUNT, Math.min(GENERATE_MAX_COUNT, requested)) : suggestedCount(text);
   const hint = cleanQuizTitle(input.title);

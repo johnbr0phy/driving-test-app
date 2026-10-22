@@ -203,7 +203,8 @@ export async function updateQuiz(owner: QuizOwner, code: string, input: UpdateQu
     Object.assign(update, rankFields(visibility, current.plays ?? 0));
 
     tx.update(ref, update);
-    const { publicRank: _rank, ...rest } = update; // eslint-disable-line @typescript-eslint/no-unused-vars
+    const rest = { ...update };
+    delete rest.publicRank;
     return { ...current, ...(rest as Partial<QuizDoc>) };
   });
 }

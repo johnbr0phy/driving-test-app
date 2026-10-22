@@ -28,7 +28,16 @@ export function untrackedNote(picks: number[], missed: number): string | null {
 // counts), the class's counts and the explanation.
 const QUESTIONS_SHOWN = 10;
 
-export function ClassQuestions({ questions, headingLevel = 2 }: { questions: ClassQuestionRow[]; headingLevel?: 2 | 3 }) {
+export function ClassQuestions({
+  questions,
+  headingLevel = 2,
+  groupLabel = "your class",
+}: {
+  questions: ClassQuestionRow[];
+  headingLevel?: 2 | 3;
+  /** Who answered them: "your class" on the teacher page, "players" on a quiz's report. */
+  groupLabel?: string;
+}) {
   const Heading = headingLevel === 3 ? "h3" : "h2";
   const [sort, setSort] = useState<"missed" | "accuracy">("missed");
   const [showAll, setShowAll] = useState(false);
@@ -58,7 +67,7 @@ export function ClassQuestions({ questions, headingLevel = 2 }: { questions: Cla
             {label}
           </button>
         ))}
-        <span className="ml-auto text-xs text-gray-500 dark:text-gray-400">{questions.length} answered by your class</span>
+        <span className="ml-auto text-xs text-gray-500 dark:text-gray-400">{questions.length} answered by {groupLabel}</span>
       </div>
       <div className="space-y-2">
         {shown.map((q) => {

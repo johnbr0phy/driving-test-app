@@ -11,7 +11,7 @@ import { Input } from "@/components/ui/input";
 import { useAuth } from "@/contexts/AuthContext";
 import { quizFetch } from "@/lib/quizClient";
 import { QUIZ_DEFAULT_PASS_PCT, QUIZ_MAX_TITLE, QUIZ_MAX_TOPIC, QUIZ_MIN_QUESTIONS, QUIZ_OPTION_COUNT, parseTermList, termsToQuestions, type QuizQuestionInput } from "@/lib/quizzes";
-import { GENERATE_COUNT_CHOICES, GENERATE_MAX_CHARS, GENERATE_MIN_WORDS, suggestedChoice, wordCount } from "./generateLimits";
+import { GENERATE_COUNT_CHOICES, GENERATE_MAX_CHARS, GENERATE_MIN_WORDS, suggestedChoice, wordCount } from "@/lib/quizGenerateLimits";
 import type { QuizEditorInitial } from "./QuizEditor";
 
 export type SourceKind = "paste" | "quizlet" | "own";

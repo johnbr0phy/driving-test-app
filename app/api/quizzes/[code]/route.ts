@@ -29,8 +29,8 @@ export async function PATCH(request: NextRequest, { params }: { params: Promise<
     // A site admin may feature any quiz (the gallery's editor's picks) without owning it.
     if (auth.caller.admin && typeof body.featured === "boolean") {
       await setQuizFeatured(code, body.featured);
-      const { featured: _f, ...rest } = body; // eslint-disable-line @typescript-eslint/no-unused-vars
-      if (!Object.keys(rest).length) return NextResponse.json(quizPublic((await getQuiz(code))!, true));
+      const rest = Object.keys(body).filter((k) => k !== "featured");
+      if (!rest.length) return NextResponse.json(quizPublic((await getQuiz(code))!, true));
     }
     const quiz = await updateQuiz(auth.owner, code, body);
     return NextResponse.json(quizPublic(quiz, true));

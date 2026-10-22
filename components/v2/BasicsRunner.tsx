@@ -233,9 +233,9 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     };
     return (
       <FocusMode className="v2-focus">
-        {fireworks && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
+        {fireworks && <Fireworks duration={3000} onComplete={() => setFireworks(false)} className="absolute inset-0 pointer-events-none" />}
         {revisit && <Header title={skill.name} sub={`Basics · ${drill.name}`} closeHref={overviewHref} />}
-        <div className="v2-scroll">
+        <div className="v2-scroll relative">
           <div className="v2-pop mx-auto flex max-w-md flex-col items-center gap-3 px-6 pt-10 text-center">
             <Image src={getTigerAsset(exam.id, 1)} alt="" width={120} height={120} className="h-28 w-28 object-contain" />
             <div className="text-xs font-semibold uppercase tracking-wider text-brand-dark">Skill learned</div>
@@ -253,7 +253,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             </p>
           </div>
         </div>
-        <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
+        <div className="v2-safe-bottom relative shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto flex max-w-2xl flex-col gap-2">
             {nextSkill ? (
               <Link href={routes.basics(drill.key, nextSkill.id)} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-base font-bold text-white">
@@ -383,7 +383,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
 
 function Header({ title, sub, closeHref }: { title: string; sub: string; closeHref: string }) {
   return (
-    <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
+    <div className="v2-safe-top relative shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
       <div className="flex items-center gap-2">
         <Link href={closeHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Back to the drill">
           <X className="h-5 w-5" />

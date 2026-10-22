@@ -170,8 +170,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
 
   return (
     <FocusMode className="v2-focus">
-      {fireworks && done && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
-      <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
+      {fireworks && done && <Fireworks duration={3000} onComplete={() => setFireworks(false)} className="absolute inset-0 pointer-events-none" />}
+      <div className="v2-safe-top relative shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
         <div className="flex items-center gap-2">
           <Link href={backHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Back">
             <X className="h-5 w-5" />
@@ -189,7 +189,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
         </div>
       </div>
 
-      <div className="v2-scroll" ref={scroller}>
+      <div className="v2-scroll relative" ref={scroller}>
         <div className="mx-auto max-w-2xl px-4 py-4">
           {done ? (
             <div className="v2-pop rounded-2xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950 p-6 text-center">
@@ -239,7 +239,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
       </div>
 
       {!done && question && !guestPrompt.showing && (
-        <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
+        <div className="v2-safe-bottom relative shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto flex max-w-2xl gap-2">
             {revealed ? (
               <button type="button" onClick={() => { if (!guestPrompt.takeStep()) load(); }} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">Next</button>

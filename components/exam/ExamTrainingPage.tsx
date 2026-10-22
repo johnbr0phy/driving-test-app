@@ -28,6 +28,7 @@ import { useGuestPrompt } from "@/hooks/useGuestPrompt";
 import { GuestPromptStep } from "@/components/GuestPromptStep";
 import { v1GuestCounts } from "@/components/GuestSaveCard";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
+import { useTestSetMigration } from "@/hooks/useTestSetMigration";
 
 // Shared training page for registry exams: the DMV training page (set mode
 // with mastery + wrong-answer queue, set-complete share card) on the exam's
@@ -48,6 +49,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
   // Signed-out visitors get the sign-up prompt in place of a question now and then.
   const guestPrompt = useGuestPrompt(!authLoading && !user, "training");
   useClassMissRecovery(exam.id);
+  useTestSetMigration(exam);
 
   const training = useStore((state) => state.training);
   const trainingSets = useStore((state) => state.trainingSets);

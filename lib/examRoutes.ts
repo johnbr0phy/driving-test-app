@@ -3,7 +3,7 @@
  * other exams. DMV_ROUTES reproduces the original behaviour exactly; HTL
  * maps the same flow onto its namespaced IDs (201-204) under /htl.
  */
-import { ALL_EXAMS, ExamConfig, examTestIds, getExamById, localizeExam } from "./exams";
+import { ALL_EXAMS, ExamConfig, examTestIds, getExamById, hasTestSets, localizeExam } from "./exams";
 import type { Language } from "@/i18n";
 import { isDrillFree as isDmvDrillFree } from "./missedQuestions";
 
@@ -85,9 +85,10 @@ export function routesForExam(exam: ExamConfig, lang: Language = "en"): ExamRout
     stateFilter: () => exam.stateCode,
     examLabel: exam.examLabel,
     chartPassPct: exam.passPct,
-    // Sets are per content area, so point at the weakest area from this
-    // attempt (falls back to the largest set).
-    planTrainingSet: (_testId, weakCategories) => {
+    // DMV-style test sets mirror the tests one-to-one. Content-area sets:
+    // point at the weakest area from this attempt (falls back to the largest set).
+    planTrainingSet: (testId, weakCategories) => {
+      if (hasTestSets(exam)) return { setNumber: testId - exam.idBase };
       const weakest = weakCategories[0]?.category;
       const set =
         exam.trainingSets.find((s) => weakest !== undefined && s.categories.includes(weakest)) ??

@@ -3,25 +3,6 @@
   "name": "Examen de práctica CNA",
   "examLabel": "Examen escrito CNA",
   "fullName": "examen escrito (de conocimientos) de asistente de enfermería",
-  "trainingSets": {
-    "1": {
-      "name": "Vida diaria y cuidado restaurativo",
-      "weightLabel": "22% del examen"
-    },
-    "2": {
-      "name": "Habilidades básicas de enfermería",
-      "weightLabel": "39% del examen",
-      "partNames": ["Control de infecciones y seguridad", "Signos vitales, piel e informes"]
-    },
-    "3": {
-      "name": "Cuidado psicosocial",
-      "weightLabel": "13% del examen"
-    },
-    "4": {
-      "name": "El rol del asistente de enfermería",
-      "weightLabel": "26% del examen"
-    }
-  },
   "categoryLabels": {
     "activitiesDailyLiving": "Actividades de la vida diaria",
     "basicNursingSkills": "Habilidades básicas de enfermería",

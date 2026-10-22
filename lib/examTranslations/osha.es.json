@@ -3,28 +3,6 @@
   "name": "Examen de práctica OSHA 10",
   "examLabel": "OSHA 10 horas",
   "fullName": "examen final del curso Outreach de 10 horas de OSHA",
-  "trainingSets": {
-    "1": {
-      "name": "Introducción a OSHA y derechos del trabajador",
-      "weightLabel": "16% de los exámenes"
-    },
-    "2": {
-      "name": "Protección contra caídas",
-      "weightLabel": "18% de los exámenes"
-    },
-    "3": {
-      "name": "Electricidad, golpeado por y atrapado en",
-      "weightLabel": "28% de los exámenes"
-    },
-    "4": {
-      "name": "Comunicación de peligros y EPP",
-      "weightLabel": "20% de los exámenes"
-    },
-    "5": {
-      "name": "Peligros a la salud, herramientas e incendios",
-      "weightLabel": "18% de los exámenes"
-    }
-  },
   "categoryLabels": {
     "oshaIntro": "Introducción a OSHA y derechos del trabajador",
     "oshaFalls": "Protección contra caídas",

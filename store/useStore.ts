@@ -129,6 +129,8 @@ interface AppState {
   getTrainingSetProgress: (setId: number) => { correct: number; total: number; complete: boolean };
   /** Clears a set, or only the given question IDs (one part of a split set). */
   resetTrainingSet: (setId: number, onlyIds?: string[]) => void;
+  /** Replace (or, with undefined, remove) whole training sets; see lib/testSetMigration.ts. */
+  patchTrainingSets: (patch: Record<number, { masteredIds: string[]; wrongQueue: string[] } | undefined>) => void;
 
   // Training answer history (for question performance tracking)
   trainingAnswerHistory: { questionId: string; isCorrect: boolean; answeredAt?: string }[];
@@ -695,6 +697,18 @@ export const useStore = create<AppState>()(
               [setId]: { masteredIds: current.masteredIds.filter(keep), wrongQueue: current.wrongQueue.filter(keep) },
             },
           };
+        });
+        get().saveToFirestore();
+      },
+
+      patchTrainingSets: (patch) => {
+        set((state) => {
+          const trainingSets = { ...state.trainingSets };
+          for (const [id, value] of Object.entries(patch)) {
+            if (value) trainingSets[Number(id)] = value;
+            else delete trainingSets[Number(id)];
+          }
+          return { trainingSets };
         });
         get().saveToFirestore();
       },

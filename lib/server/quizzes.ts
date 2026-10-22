@@ -229,13 +229,22 @@ export async function listMyQuizzes(uid: string, db: Firestore = getAdminDb()): 
     .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
 }
 
-/** Public quizzes, most played first, for the /quizzes library and the sitemap. */
+/** Public quizzes for the /quizzes library and the sitemap: featured first, then most played. */
 export async function listPublicQuizzes(limit = 60, minPlays = QUIZ_PUBLIC_MIN_PLAYS, db: Firestore = getAdminDb()): Promise<QuizSummary[]> {
   const snap = await db.collection("quizzes").orderBy("publicRank", "desc").limit(limit).get();
   return snap.docs
     .map((d) => d.data() as QuizDoc)
-    .filter((q) => q.visibility === "public" && (q.plays ?? 0) >= minPlays)
-    .map(quizSummary);
+    .filter((q) => q.visibility === "public" && (q.featured || (q.plays ?? 0) >= minPlays))
+    .map(quizSummary)
+    .sort((a, b) => Number(!!b.featured) - Number(!!a.featured) || b.plays - a.plays);
+}
+
+/** A site admin features (or unfeatures) a public quiz so it lists before it has QUIZ_PUBLIC_MIN_PLAYS plays. */
+export async function setQuizFeatured(code: string, featured: boolean, db: Firestore = getAdminDb()): Promise<void> {
+  const ref = db.collection("quizzes").doc(code);
+  const snap = await ref.get();
+  if (!snap.exists) throw new QuizError("No such quiz", 404);
+  await ref.update(featured ? { featured: true } : { featured: FieldValue.delete() });
 }
 
 /** A browser's first answer on a quiz. */

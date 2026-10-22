@@ -87,6 +87,8 @@ export interface QuizDoc {
    * the sitemap can order public quizzes with a single-field index.
    */
   publicRank?: number;
+  /** Set by a site admin: listed in the library and the sitemap before QUIZ_PUBLIC_MIN_PLAYS plays, and shown first. */
+  featured?: boolean;
 }
 
 /** What the play page gets (never the owner's uid). */
@@ -102,6 +104,7 @@ export interface QuizPublic {
   updatedAt: string;
   plays: number;
   memberCount: number;
+  featured?: boolean;
   /** True when the caller is the owner (owner-only fields are then included). */
   mine?: boolean;
   reports?: number;
@@ -120,6 +123,7 @@ export interface QuizSummary {
   createdAt: string;
   updatedAt: string;
   topics: string[];
+  featured?: boolean;
 }
 
 /** A question as the creation UI and the MCP tools send it (no id yet). */
@@ -222,6 +226,7 @@ export function quizSummary(doc: QuizDoc): QuizSummary {
     createdAt: doc.createdAt,
     updatedAt: doc.updatedAt,
     topics: quizTopics(doc.questions),
+    ...(doc.featured ? { featured: true } : {}),
   };
 }
 
@@ -238,6 +243,7 @@ export function quizPublic(doc: QuizDoc, mine = false): QuizPublic {
     updatedAt: doc.updatedAt,
     plays: doc.plays ?? 0,
     memberCount: doc.memberCount ?? 0,
+    ...(doc.featured ? { featured: true } : {}),
     ...(mine ? { mine: true, reports: doc.reports ?? 0 } : {}),
   };
 }

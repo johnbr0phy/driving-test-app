@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { optionalCaller, requireQuizOwner } from "@/lib/server/quizAuth";
-import { QuizError, deleteQuiz, getQuiz, updateQuiz } from "@/lib/server/quizzes";
+import { QuizError, deleteQuiz, getQuiz, setQuizFeatured, updateQuiz } from "@/lib/server/quizzes";
 import { isQuizCode, normalizeQuizCode, quizPublic } from "@/lib/quizzes";
 
 // One quiz. GET is what the play page shows (anyone with the link, or only
@@ -26,6 +26,12 @@ export async function PATCH(request: NextRequest, { params }: { params: Promise<
   if (!auth.ok) return auth.response;
   const body = await request.json().catch(() => ({}));
   try {
+    // A site admin may feature any quiz (the gallery's editor's picks) without owning it.
+    if (auth.caller.admin && typeof body.featured === "boolean") {
+      await setQuizFeatured(code, body.featured);
+      const { featured: _f, ...rest } = body; // eslint-disable-line @typescript-eslint/no-unused-vars
+      if (!Object.keys(rest).length) return NextResponse.json(quizPublic((await getQuiz(code))!, true));
+    }
     const quiz = await updateQuiz(auth.owner, code, body);
     return NextResponse.json(quizPublic(quiz, true));
   } catch (error) {

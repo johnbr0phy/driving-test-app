@@ -1,0 +1,342 @@
+[
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "14 ÷ 2 = ?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 2 = 14, so 14 ÷ 2 = 7."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "35 ÷ 5 = ?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 5 = 35, so 35 ÷ 5 = 7."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "70 ÷ 10 = ?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 10 = 70, so 70 ÷ 10 = 7."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "18 ÷ 3 = ?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 3 = 18, so 18 ÷ 3 = 6."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "28 ÷ 4 = ?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 4 = 28, so 28 ÷ 4 = 7."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "40 ÷ 8 = ?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 8 = 40, so 40 ÷ 8 = 5."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "42 ÷ 6 = ?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 6 = 42, so 42 ÷ 6 = 7."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "63 ÷ 7 = ?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 7 = 63, so 63 ÷ 7 = 9."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "36 ÷ 9 = ?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 9 = 36, so 36 ÷ 9 = 4."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "48 ÷ 12 = ?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 12 = 48, so 48 ÷ 12 = 4."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "How many 5s make 25?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 5 = 25, so 5 lots of 5 make 25."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "How many 4s make 16?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 4 = 16, so 4 lots of 4 make 16."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "How many 8s make 24?",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 8 = 24, so 3 lots of 8 make 24."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Dividing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "How many 9s make 45?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 9 = 45, so 5 lots of 9 make 45."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Fact families",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "6 × 4 = 24. So what is 24 ÷ 4?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Same family: 6 × 4 = 24, so 24 ÷ 4 = 6."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Fact families",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttFactFamilies",
+    "stem": "7 × 8 = 56. So what is 56 ÷ 8?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Same family: 7 × 8 = 56, so 56 ÷ 8 = 7."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Sharing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSharing",
+    "stem": "Share 15 grapes equally between 3 friends. How many grapes does each friend get?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "15 ÷ 3 = 5, because 5 × 3 = 15."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Sharing",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttSharing",
+    "stem": "Share 20 stickers equally between 5 children. How many stickers does each child get?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "20 ÷ 5 = 4, because 4 × 5 = 20."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Sharing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSharing",
+    "stem": "Share 24 conkers equally between 4 pockets. How many conkers go in each pocket?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "24 ÷ 4 = 6, because 6 × 4 = 24."
+  },
+  {
+    "domain": "ttDivide",
+    "test": 0,
+    "skill": "Sharing",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttSharing",
+    "stem": "Share 30 pencils equally between 10 tables. How many pencils go on each table?",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "30 ÷ 10 = 3, because 3 × 10 = 30."
+  }
+]

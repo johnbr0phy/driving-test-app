@@ -1,0 +1,427 @@
+[
+  {
+    "domain": "ttElevenTwelve",
+    "test": 3,
+    "skill": "12 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "12 × 12 = ?",
+    "numeric": {
+      "answers": [
+        "144"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 12 = 144. 10 lots and 2 lots: 120 + 24 = 144."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 3,
+    "skill": "12 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "12 × 6 = ?",
+    "numeric": {
+      "answers": [
+        "72"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 6 = 72. 10 lots and 2 lots: 60 + 12 = 72."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 3,
+    "skill": "12 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "12 × 7 = ?",
+    "numeric": {
+      "answers": [
+        "84"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 7 = 84. 10 lots and 2 lots: 70 + 14 = 84."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 3,
+    "skill": "12 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "12 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "120"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 10 = 120. 10 lots and 2 lots: 100 + 20 = 120."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 3,
+    "skill": "11 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "2 × 11 = ?",
+    "numeric": {
+      "answers": [
+        "22"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "2 × 11 = 22. Up to 9 × 11, write the number twice: 2 and 2 make 22."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "Counting in 11s",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "Count in 11s. What comes next? 33, 44, 55, ?",
+    "numeric": {
+      "answers": [
+        "66"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Add 11 each time: 55 + 11 = 66."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "Counting in 12s",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "Count in 12s. What comes next? 24, 36, 48, ?",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Add 12 each time: 48 + 12 = 60."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "11 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "□ × 11 = 77. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 11 = 77, so 7 goes in the box. Up to 9 × 11, write the number twice: 7 and 7 make 77."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "12 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "12 × □ = 60. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 12 = 60, so 5 goes in the box. 10 lots and 2 lots: 50 + 10 = 60."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "12 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "□ × 12 = 108. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 12 = 108, so 9 goes in the box. 10 lots and 2 lots: 90 + 18 = 108."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "11 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "11 × □ = 132. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 11 = 132, so 12 goes in the box. 10 lots and 1 more lot: 120 + 12 = 132."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "11 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "11 × 4 = ?",
+    "numeric": {
+      "answers": [
+        "44"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "11 × 4 = 44. Up to 9 × 11, write the number twice: 4 and 4 make 44."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "11 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "9 × 11 = ?",
+    "numeric": {
+      "answers": [
+        "99"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 11 = 99. Up to 9 × 11, write the number twice: 9 and 9 make 99."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "11 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "11 × 11 = ?",
+    "numeric": {
+      "answers": [
+        "121"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "11 × 11 = 121. 10 lots and 1 more lot: 110 + 11 = 121."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "11 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "3 × 11 = ?",
+    "numeric": {
+      "answers": [
+        "33"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 11 = 33. Up to 9 × 11, write the number twice: 3 and 3 make 33."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "11 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "8 × 11 = ?",
+    "numeric": {
+      "answers": [
+        "88"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 11 = 88. Up to 9 × 11, write the number twice: 8 and 8 make 88."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "12 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "3 × 12 = ?",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 12 = 36. 10 lots and 2 lots: 30 + 6 = 36."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "12 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "8 × 12 = ?",
+    "numeric": {
+      "answers": [
+        "96"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 12 = 96. 10 lots and 2 lots: 80 + 16 = 96."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "11 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "7 × 11 = ?",
+    "numeric": {
+      "answers": [
+        "77"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 11 = 77. Up to 9 × 11, write the number twice: 7 and 7 make 77."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 0,
+    "skill": "11 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "5 × 11 = ?",
+    "numeric": {
+      "answers": [
+        "55"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 11 = 55. Up to 9 × 11, write the number twice: 5 and 5 make 55."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 4,
+    "skill": "12 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "4 × 12 = ?",
+    "numeric": {
+      "answers": [
+        "48"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 12 = 48. 10 lots and 2 lots: 40 + 8 = 48."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 4,
+    "skill": "12 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "5 × 12 = ?",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 12 = 60. 10 lots and 2 lots: 50 + 10 = 60."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 4,
+    "skill": "12 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "12 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 2 = 24. 10 lots and 2 lots: 20 + 4 = 24."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 4,
+    "skill": "12 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttTwelves",
+    "stem": "3 × 12 = ?",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 12 = 36. 10 lots and 2 lots: 30 + 6 = 36."
+  },
+  {
+    "domain": "ttElevenTwelve",
+    "test": 4,
+    "skill": "11 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttElevens",
+    "stem": "11 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "110"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "11 × 10 = 110. 10 lots and 1 more lot: 100 + 10 = 110."
+  }
+]

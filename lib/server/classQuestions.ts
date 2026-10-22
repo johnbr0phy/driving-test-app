@@ -16,6 +16,7 @@ import "@/lib/v2/banks/paramedic";
 import "@/lib/v2/banks/sat";
 import "@/lib/v2/banks/secplus";
 import "@/lib/v2/banks/teas";
+import "@/lib/v2/banks/timestables";
 import { DMV_EXAM_ID, classExamInfo } from "@/lib/classes";
 import type { Question } from "@/types";
 import type { QuestionV2 } from "@/lib/v2/types";

@@ -16,4 +16,5 @@ export const BANK_SIZES: Record<string, number> = {
   secplus: 200,
   aplus: 200,
   aws: 200,
+  timestables: 200,
 };

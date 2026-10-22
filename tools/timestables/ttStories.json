@@ -1,0 +1,342 @@
+[
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "There are 4 cars in the car park. Each car has 4 wheels. How many wheels are there altogether?",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "'Each' means times: 4 × 4 = 16 wheels. Double 4 is 8, and double 8 is 16."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "Isla has 5 bags of marbles. Each bag holds 2 marbles. How many marbles does she have?",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 2 = 10 marbles. Count in 2s five times: 2, 4, 6, 8, 10."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "A pack of pencils costs 10p. How many pence do 6 packs cost?",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 10 = 60, so 60p. The 6 moves into the tens place."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "Sam puts 3 strawberries on each of 5 plates. How many strawberries is that?",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 3 = 15. Count in 3s five times: 3, 6, 9, 12, 15."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "A spider has 8 legs. How many legs do 3 spiders have?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 lots of 8: double 8 is 16, then add one more 8: 16 + 8 = 24."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "There are 7 days in a week. How many days are in 2 weeks?",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "2 × 7 = 14. Double 7 is 14."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "Noah plants 4 rows of tulips with 5 tulips in every row. How many tulips does he plant?",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "'Every' means times: 4 × 5 = 20 tulips."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "A football team has 11 players. How many players are there in 2 teams?",
+    "numeric": {
+      "answers": [
+        "22"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "2 × 11 = 22. Double 11 is 22."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "Eggs come in boxes of 6. How many eggs are in 4 boxes?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 6 = 24. 4 × 3 = 12, and double 12 is 24."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "Priya reads 3 pages every night. How many pages does she read in 7 nights?",
+    "numeric": {
+      "answers": [
+        "21"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 3 = 21. 5 × 3 = 15 and 2 × 3 = 6, so 15 + 6 = 21."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "A box holds 12 crayons. How many crayons are in 3 boxes?",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 12 = 36. 3 × 10 = 30 and 3 × 2 = 6, so 30 + 6 = 36."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "Oliver saves 5p every day for 9 days. How many pence does he save?",
+    "numeric": {
+      "answers": [
+        "45"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 5 = 45, so 45p. 10 × 5 = 50, take away one 5."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "A ladybird has 6 legs. How many legs do 5 ladybirds have?",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 lots of 6 is the same as 6 lots of 5. Count in 5s six times: 5, 10, 15, 20, 25, 30."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "There are 9 benches. 4 children sit on each bench. How many children are there?",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 4 = 36. 10 × 4 = 40, take away one 4."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "Share 12 biscuits equally between 3 friends. How many biscuits does each friend get?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "'Share equally' means divide: 12 ÷ 3 = 4, because 4 × 3 = 12."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "20 children get into teams of 5. How many teams are there?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "How many 5s make 20? 4 × 5 = 20, so there are 4 teams."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "Amara has 16 stickers. She puts them into 2 equal piles. How many stickers are in each pile?",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "16 ÷ 2 = 8. Half of 16 is 8."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "30 sweets are shared equally into 10 party bags. How many sweets go in each bag?",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "30 ÷ 10 = 3, because 3 × 10 = 30."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "A car has 4 wheels. Jack counts 24 wheels. How many cars are there?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "How many 4s make 24? 6 × 4 = 24, so there are 6 cars."
+  },
+  {
+    "domain": "ttStories",
+    "test": 0,
+    "skill": "Word problems",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttStoryWords",
+    "stem": "Mum shares 18 grapes equally between 3 bowls. How many grapes go in each bowl?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "18 ÷ 3 = 6, because 6 × 3 = 18."
+  }
+]

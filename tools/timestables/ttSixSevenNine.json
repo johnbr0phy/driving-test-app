@@ -1,0 +1,652 @@
+[
+  {
+    "domain": "ttSixSevenNine",
+    "test": 3,
+    "skill": "9 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttNines",
+    "stem": "10 × 9 = ?",
+    "numeric": {
+      "answers": [
+        "90"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 9 = 90. 10 lots take away 1 lot: 100 − 10 = 90."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 3,
+    "skill": "9 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttNines",
+    "stem": "2 × 9 = ?",
+    "numeric": {
+      "answers": [
+        "18"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "2 × 9 = 18. 10 lots take away 1 lot: 20 − 2 = 18."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 3,
+    "skill": "9 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttNines",
+    "stem": "4 × 9 = ?",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 9 = 36. 10 lots take away 1 lot: 40 − 4 = 36."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 3,
+    "skill": "7 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "7 × 7 = ?",
+    "numeric": {
+      "answers": [
+        "49"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 7 = 49. Split 7 into 5 and 2: 35 + 14 = 49."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 3,
+    "skill": "7 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "7 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "70"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 10 = 70. Split 7 into 5 and 2: 50 + 20 = 70."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 3,
+    "skill": "7 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "9 × 7 = ?",
+    "numeric": {
+      "answers": [
+        "63"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 7 = 63. Split 7 into 5 and 2: 45 + 18 = 63."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 3,
+    "skill": "6 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "9 × 6 = ?",
+    "numeric": {
+      "answers": [
+        "54"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 6 = 54. Do the 5s, then add one more 9: 45 + 9 = 54."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 3,
+    "skill": "6 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "8 × 6 = ?",
+    "numeric": {
+      "answers": [
+        "48"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 6 = 48. Do the 5s, then add one more 8: 40 + 8 = 48."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 3,
+    "skill": "6 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "11 × 6 = ?",
+    "numeric": {
+      "answers": [
+        "66"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "11 × 6 = 66. Do the 5s, then add one more 11: 55 + 11 = 66."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "Counting in 6s",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "Count in 6s. What comes next? 18, 24, 30, ?",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Add 6 each time: 30 + 6 = 36."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "Counting in 7s",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "Count in 7s. What comes next? 14, 21, 28, ?",
+    "numeric": {
+      "answers": [
+        "35"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Add 7 each time: 28 + 7 = 35."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "Counting in 9s",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttNines",
+    "stem": "Count in 9s. What comes next? 36, 45, 54, ?",
+    "numeric": {
+      "answers": [
+        "63"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Add 9 each time: 54 + 9 = 63."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "6 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "□ × 6 = 48. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 6 = 48, so 8 goes in the box. Do the 5s, then add one more 8: 40 + 8 = 48."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "7 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "7 × □ = 42. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 7 = 42, so 6 goes in the box. Split 7 into 5 and 2: 30 + 12 = 42."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "9 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttNines",
+    "stem": "□ × 9 = 63. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 9 = 63, so 7 goes in the box. 10 lots take away 1 lot: 70 − 7 = 63."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "7 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "□ × 7 = 63. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 7 = 63, so 9 goes in the box. Split 7 into 5 and 2: 45 + 18 = 63."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "6 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "6 × □ = 72. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 6 = 72, so 12 goes in the box. Do the 5s, then add one more 12: 60 + 12 = 72."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "7 times table",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "ttSplitIt",
+    "stem": "Which is the answer to 8 × 7?",
+    "options": [
+      "54",
+      "48",
+      "56",
+      "64"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "8 × 7 = 56. Split 7 into 5 and 2: 40 + 16 = 56."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "9 times table",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "ttNines",
+    "stem": "Which is the answer to 6 × 9?",
+    "options": [
+      "54",
+      "56",
+      "45",
+      "63"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "6 × 9 = 54. 60 − 6 = 54. Check: 5 + 4 = 9."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "6 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "4 × 6 = ?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 6 = 24. Do the 5s, then add one more 4: 20 + 4 = 24."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "6 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "7 × 6 = ?",
+    "numeric": {
+      "answers": [
+        "42"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 6 = 42. Do the 5s, then add one more 7: 35 + 7 = 42."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "6 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "6 × 9 = ?",
+    "numeric": {
+      "answers": [
+        "54"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 9 = 54. Do the 5s, then add one more 9: 45 + 9 = 54."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "7 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "3 × 7 = ?",
+    "numeric": {
+      "answers": [
+        "21"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 7 = 21. Split 7 into 5 and 2: 15 + 6 = 21."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "7 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "8 × 7 = ?",
+    "numeric": {
+      "answers": [
+        "56"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 7 = 56. Split 7 into 5 and 2: 40 + 16 = 56."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "7 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "7 × 12 = ?",
+    "numeric": {
+      "answers": [
+        "84"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 12 = 84. Split 7 into 5 and 2: 60 + 24 = 84."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "9 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttNines",
+    "stem": "3 × 9 = ?",
+    "numeric": {
+      "answers": [
+        "27"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 9 = 27. 10 lots take away 1 lot: 30 − 3 = 27."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "9 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttNines",
+    "stem": "9 × 9 = ?",
+    "numeric": {
+      "answers": [
+        "81"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 9 = 81. 10 lots take away 1 lot: 90 − 9 = 81."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "9 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttNines",
+    "stem": "11 × 9 = ?",
+    "numeric": {
+      "answers": [
+        "99"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "11 × 9 = 99. 10 lots take away 1 lot: 110 − 11 = 99."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 0,
+    "skill": "6 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "6 × 11 = ?",
+    "numeric": {
+      "answers": [
+        "66"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 11 = 66. Do the 5s, then add one more 11: 55 + 11 = 66."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 4,
+    "skill": "9 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttNines",
+    "stem": "12 × 9 = ?",
+    "numeric": {
+      "answers": [
+        "108"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 9 = 108. 10 lots take away 1 lot: 120 − 12 = 108."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 4,
+    "skill": "9 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttNines",
+    "stem": "5 × 9 = ?",
+    "numeric": {
+      "answers": [
+        "45"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "5 × 9 = 45. 10 lots take away 1 lot: 50 − 5 = 45."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 4,
+    "skill": "9 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttNines",
+    "stem": "9 × 9 = ?",
+    "numeric": {
+      "answers": [
+        "81"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 9 = 81. 10 lots take away 1 lot: 90 − 9 = 81."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 4,
+    "skill": "7 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "7 × 6 = ?",
+    "numeric": {
+      "answers": [
+        "42"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 6 = 42. Split 7 into 5 and 2: 30 + 12 = 42."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 4,
+    "skill": "7 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "7 × 4 = ?",
+    "numeric": {
+      "answers": [
+        "28"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 4 = 28. Split 7 into 5 and 2: 20 + 8 = 28."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 4,
+    "skill": "7 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSplitIt",
+    "stem": "11 × 7 = ?",
+    "numeric": {
+      "answers": [
+        "77"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "11 × 7 = 77. Split 7 into 5 and 2: 55 + 22 = 77."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 4,
+    "skill": "6 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "6 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 10 = 60. Do the 5s, then add one more 10: 50 + 10 = 60."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 4,
+    "skill": "6 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "6 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 2 = 12. Do the 5s, then add one more 2: 10 + 2 = 12."
+  },
+  {
+    "domain": "ttSixSevenNine",
+    "test": 4,
+    "skill": "6 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttSixes",
+    "stem": "6 × 4 = ?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 4 = 24. Do the 5s, then add one more 4: 20 + 4 = 24."
+  }
+]

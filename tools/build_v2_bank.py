@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build a v2 bank from per-domain source files.
 
-Usage: python3 -I tools/build_v2_bank.py <exam>        (nclex, emt, secplus, aplus, aws, nclexpn, paramedic, ged)
+Usage: python3 -I tools/build_v2_bank.py <exam>        (nclex, emt, secplus, aplus, aws, nclexpn, paramedic, ged, timestables)
 
 Sources live in tools/<exam>/<domain>.json (plus an optional stimuli.json for
 case studies). Each source item carries domain, test (1, 2 or 0 = drill only),
@@ -22,6 +22,7 @@ PLANS = {
     "aws": {"prefix": "AWS", "sections": {"aws": ["cloudConcepts", "securityCompliance", "technologyServices", "billingPricing"]}},
     "nclexpn": {"prefix": "NCLEXPN", "sections": {"nclexpn": ["pnCare", "pnSafety", "pnHealth", "pnPsych", "pnComfort", "pnPharm", "pnRisk", "pnPhys"]}},
     "paramedic": {"prefix": "PMD", "sections": {"paramedic": ["pmdAirway", "pmdCardio", "pmdTrauma", "pmdMedical", "pmdOps", "pmdJudgment"]}},
+    "timestables": {"prefix": "TT", "sections": {"tt": ["ttTwoFiveTen", "ttThreeFourEight", "ttSixSevenNine", "ttElevenTwelve", "ttDivide", "ttStories"]}},
     "ged": {"prefix": "GED", "sections": {"rla": ["gedReading", "gedLanguage"], "math": ["gedQuant", "gedAlgebra"], "science": ["gedScience"], "social": ["gedSocial"]}},
 }
 SOURCE_ONLY = {"domain", "test", "skill", "difficulty", "format"}
@@ -35,8 +36,9 @@ def build(exam):
     section_of = {d: s for s, ds in plan["sections"].items() for d in ds}
     items = {d: json.load(open(os.path.join(src, f"{d}.json"))) for d in domains}
     out = []
-    for test in (1, 2, 0):
-        tag = {1: "T1", 2: "T2", 0: "D"}[test]
+    tests = sorted({q["test"] for qs in items.values() for q in qs} - {0}) + [0]
+    for test in tests:
+        tag = f"T{test}" if test else "D"
         n = 0
         for section, sec_domains in plan["sections"].items():
             # A case study is one block placed where its first item falls.

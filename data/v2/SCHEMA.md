@@ -50,7 +50,7 @@ merge and analytics need nothing new. Scoring is all or nothing per item.
 |---|---|---|---|
 | `single` | `options` (2 to 6) | `[i]` | `[i]` |
 | `multi` | `options` (2 to 6), optional `select: N` ("Choose two"; exactly N correct) | option indices | chosen indices |
-| `numeric` | `numeric.answers`, `tolerance` | none | typed string |
+| `numeric` | `numeric.answers`, `tolerance`, optional `wholeNumber` (digits keypad, no fraction hint) | none | typed string |
 | `order` | `options` (3 to 6) are the steps, shown shuffled | every option index, in the right order | indices in the order tapped |
 | `highlight` | `{{phrase}}` markers in `passage` (or in `stem` when there is no passage); 4 to 10 markers; no `options` | marker indices (0-based, order of appearance) that should be selected | selected marker indices |
 | `matrix` | `rows` (2 to 6 statements), `columns` (2 to 4 headings) | column index per row | column per row, -1 = unanswered |

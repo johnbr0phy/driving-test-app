@@ -1,0 +1,790 @@
+[
+  {
+    "domain": "ttThreeFourEight",
+    "test": 3,
+    "skill": "8 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "3 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 8 = 24. Double three times: 3, 6, 12, 24."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 3,
+    "skill": "8 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "8 × 9 = ?",
+    "numeric": {
+      "answers": [
+        "72"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 9 = 72. Double three times: 9, 18, 36, 72."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 3,
+    "skill": "8 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "8 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 2 = 16. Double three times: 2, 4, 8, 16."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 3,
+    "skill": "8 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "8 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "64"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 8 = 64. Double three times: 8, 16, 32, 64."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 3,
+    "skill": "3 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "6 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "18"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 3 = 18. Double 6 is 12, then add one more 6: 12 + 6 = 18."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 3,
+    "skill": "4 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "4 × 10 = ?",
+    "numeric": {
+      "answers": [
+        "40"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 10 = 40. Double, then double again: 10, 20, 40."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 3,
+    "skill": "4 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "4 × 11 = ?",
+    "numeric": {
+      "answers": [
+        "44"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 11 = 44. Double, then double again: 11, 22, 44."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "Counting in 3s",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "Count in 3s. What comes next? 12, 15, 18, ?",
+    "numeric": {
+      "answers": [
+        "21"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Add 3 each time: 18 + 3 = 21."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "Counting in 4s",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "Count in 4s. What comes next? 12, 16, 20, ?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Add 4 each time: 20 + 4 = 24."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "Counting in 8s",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "Count in 8s. What comes next? 16, 24, 32, ?",
+    "numeric": {
+      "answers": [
+        "40"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Add 8 each time: 32 + 8 = 40."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "3 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "□ × 3 = 21. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 3 = 21, so 7 goes in the box. Double 7 is 14, then add one more 7: 14 + 7 = 21."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "4 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "4 × □ = 36. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 4 = 36, so 9 goes in the box. Double, then double again: 9, 18, 36."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "8 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "□ × 8 = 48. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 8 = 48, so 6 goes in the box. Double three times: 6, 12, 24, 48."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "8 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "8 × □ = 32. What number goes in the box?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 8 = 32, so 4 goes in the box. Double three times: 4, 8, 16, 32."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "Swapping round",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "ttSwapAround",
+    "stem": "Which has the same answer as 3 × 8?",
+    "options": [
+      "8 + 3",
+      "3 × 3",
+      "8 × 3",
+      "8 × 8"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Swap the numbers round and the answer stays the same: 3 × 8 = 8 × 3 = 24."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "Swapping round",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "ttSwapAround",
+    "stem": "Which has the same answer as 4 × 7?",
+    "options": [
+      "7 + 4",
+      "4 × 4",
+      "7 × 7",
+      "7 × 4"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Swap the numbers round and the answer stays the same: 4 × 7 = 7 × 4 = 28."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "Swapping round",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "ttSwapAround",
+    "stem": "Which has the same answer as 8 × 9?",
+    "options": [
+      "9 + 8",
+      "9 × 8",
+      "8 × 8",
+      "9 × 9"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Swap the numbers round and the answer stays the same: 8 × 9 = 9 × 8 = 72."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "3 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "9 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "27"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 3 = 27. Double 9 is 18, then add one more 9: 18 + 9 = 27."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "4 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "6 × 4 = ?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 4 = 24. Double, then double again: 6, 12, 24."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "8 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "7 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "56"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 8 = 56. Double three times: 7, 14, 28, 56."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "3 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "12 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 3 = 36. Double 12 is 24, then add one more 12: 24 + 12 = 36."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 0,
+    "skill": "8 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "11 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "88"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "11 × 8 = 88. Double three times: 11, 22, 44, 88."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "3 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "4 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 3 = 12. Double 4 is 8, then add one more 4: 8 + 4 = 12."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "3 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "11 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "33"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "11 × 3 = 33. Double 11 is 22, then add one more 11: 22 + 11 = 33."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "3 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "3 × 6 = ?",
+    "numeric": {
+      "answers": [
+        "18"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 6 = 18. Double 6 is 12, then add one more 6: 12 + 6 = 18."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "3 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "3 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 3 = 9. Double 3 is 6, then add one more 3: 6 + 3 = 9."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "3 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "8 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 3 = 24. Double 8 is 16, then add one more 8: 16 + 8 = 24."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "4 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "4 × 2 = ?",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 2 = 8. Double, then double again: 2, 4, 8."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "4 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "10 × 4 = ?",
+    "numeric": {
+      "answers": [
+        "40"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 × 4 = 40. Double, then double again: 10, 20, 40."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "4 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "4 × 12 = ?",
+    "numeric": {
+      "answers": [
+        "48"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 12 = 48. Double, then double again: 12, 24, 48."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "4 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "7 × 4 = ?",
+    "numeric": {
+      "answers": [
+        "28"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 4 = 28. Double, then double again: 7, 14, 28."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "4 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "4 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "32"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 8 = 32. Double, then double again: 8, 16, 32."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "4 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "4 × 4 = ?",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 4 = 16. Double, then double again: 4, 8, 16."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "8 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "9 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "72"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 8 = 72. Double three times: 9, 18, 36, 72."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "8 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "6 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "48"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "6 × 8 = 48. Double three times: 6, 12, 24, 48."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "8 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "12 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "96"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "12 × 8 = 96. Double three times: 12, 24, 48, 96."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "8 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "2 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "2 × 8 = 16. Double three times: 2, 4, 8, 16."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "3 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "7 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "21"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 3 = 21. Double 7 is 14, then add one more 7: 14 + 7 = 21."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 2,
+    "skill": "4 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "9 × 4 = ?",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "9 × 4 = 36. Double, then double again: 9, 18, 36."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 4,
+    "skill": "8 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "11 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "88"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "11 × 8 = 88. Double three times: 11, 22, 44, 88."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 4,
+    "skill": "8 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "7 × 8 = ?",
+    "numeric": {
+      "answers": [
+        "56"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "7 × 8 = 56. Double three times: 7, 14, 28, 56."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 4,
+    "skill": "8 times table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "8 × 12 = ?",
+    "numeric": {
+      "answers": [
+        "96"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 12 = 96. Double three times: 12, 24, 48, 96."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 4,
+    "skill": "8 times table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "8 × 4 = ?",
+    "numeric": {
+      "answers": [
+        "32"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "8 × 4 = 32. Double three times: 4, 8, 16, 32."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 4,
+    "skill": "3 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttThrees",
+    "stem": "3 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "3 × 3 = 9. Double 3 is 6, then add one more 3: 6 + 3 = 9."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 4,
+    "skill": "4 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "4 × 3 = ?",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 3 = 12. Double, then double again: 3, 6, 12."
+  },
+  {
+    "domain": "ttThreeFourEight",
+    "test": 4,
+    "skill": "4 times table",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ttDoubleDouble",
+    "stem": "4 × 4 = ?",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "4 × 4 = 16. Double, then double again: 4, 8, 16."
+  }
+]

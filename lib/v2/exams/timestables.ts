@@ -63,7 +63,8 @@ export const TIMESTABLES: ExamV2Config = {
     { key: "stories", name: "Times table stories", section: "tt", domains: ["ttStories"], blurb: "Word problems about wheels, eggs, biscuits and pocket money.", basics: ["ttStoryWords"] },
   ],
   composite: { name: "Score", min: 0, max: 100, combine: overallPercent },
-  defaultGoal: 80,
+  fixedGoal: 100,
+  defaultGoal: 100,
   goalChoices: [60, 70, 80, 90, 100],
   goalNotes: {
     60: "A good start: 15 out of 25",

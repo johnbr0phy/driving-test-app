@@ -5,6 +5,7 @@ import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
 import { splitLegacySets } from '@/lib/legacySetSplits';
+import { queueAchievementCelebration } from '@/lib/achievementCelebration';
 import type { Language } from '@/i18n';
 import { examAnalyticsKey, examFamilyId, examTestIds, getExamById, getExamByStateCode, getExamForQuestionId, getExamForSetId, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
 
@@ -519,6 +520,7 @@ export const useStore = create<AppState>()(
           completedTests: [...state.completedTests, session],
           testAttempts: updatedTestAttempts,
         }));
+        queueAchievementCelebration(session.id);
 
         trackQuestionsAnswered(questions.length, examAnalyticsKey(getExamForTestId(testId)));
 

@@ -7,7 +7,6 @@ import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import { X, RotateCcw, Lock, BookOpen, Play } from "lucide-react";
 import { ExamV2Config, AnswerValue, QuestionV2 } from "@/lib/v2/types";
 import { getBank, getStimulus } from "@/lib/v2/bank";
@@ -18,7 +17,6 @@ import { isComplete, isCorrect } from "@/lib/v2/grading";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
-import { getTigerAsset } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
@@ -36,6 +34,7 @@ import { useGuestPrompt } from "@/hooks/useGuestPrompt";
 import { GuestPromptStep } from "@/components/GuestPromptStep";
 import { v2GuestAnswered } from "@/components/GuestSaveCard";
 import { recordClassAnswerById, v2Pick } from "@/lib/classProgress";
+import { AchievementCelebration } from "@/components/AchievementCelebration";
 
 /**
  * Phone-first mastery drill: one question, one tap, instant feedback, big
@@ -84,7 +83,9 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   // One burst when this answer masters the drill (same canvas as Super Amazing Mode);
   // reopening a mastered drill from the dashboard lands on the same screen without it.
   const [fireworks, setFireworks] = useState(false);
+  const [earnedMastery, setEarnedMastery] = useState(false);
   const currentId = useRef<string | null>(null);
+  const answerSubmitted = useRef(false);
   const scroller = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -103,6 +104,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     setQuestion(next);
     setOrder(optionOrderFor(next));
     setAnswer(undefined);
+    answerSubmitted.current = false;
     setRevealed(false);
     setBrushUp(false);
     setDone(false);
@@ -121,18 +123,23 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   }, [drill, question, revealed, answer, exam.id]);
 
   const check = (value?: AnswerValue) => {
-    if (!question || revealed) return;
+    if (!question || revealed || answerSubmitted.current) return;
     const final = value ?? answer;
     if (!isComplete(question, final)) return;
+    answerSubmitted.current = true;
     setAnswer(final);
     const ok = isCorrect(question, final);
     setRevealed(true);
     guestPrompt.record(ok);
     recordClassAnswerById(exam.id, question.id, question.domain, ok, v2Pick(question.format, final));
-    answerDrill(key, question.id, ok, drill ? drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions) : undefined);
+    const before = drill ? drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions) : undefined;
+    answerDrill(key, question.id, ok, before);
     if (ok && drill) {
       const after = drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions);
-      if (questions.length > 0 && questions.every((q) => after.masteredIds.includes(q.id))) setFireworks(true);
+      if (questions.length > 0 && questions.some((q) => !before?.masteredIds.includes(q.id)) && questions.every((q) => after.masteredIds.includes(q.id))) {
+        setFireworks(true);
+        setEarnedMastery(true);
+      }
     }
     if (drill?.basics?.length) {
       // Basics usage (lib/v2/basicsTracking): did they learn a skill of this drill first?
@@ -192,15 +199,17 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
       <div className="v2-scroll" ref={scroller}>
         <div className="mx-auto max-w-2xl px-4 py-4">
           {done ? (
-            <div className="v2-pop rounded-2xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950 p-6 text-center">
-              <Image src={getTigerAsset(exam.id, 1)} alt="" width={112} height={112} className="mx-auto h-28 w-28 object-contain" />
-              <h2 className="mt-2 text-xl font-bold text-green-900 dark:text-green-200">Drill mastered</h2>
-              <p className="mt-1 text-sm text-green-800 dark:text-green-300">Every {drill.name} question answered correctly. Take a full test to see it show up in your score.</p>
-              <div className="mt-5 flex flex-col gap-2">
-                <Link href={routes.dashboard} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-sm font-bold text-white">Back to dashboard</Link>
-                <button type="button" onClick={() => { resetDrill(key); currentId.current = null; setFireworks(false); setDone(false); }} className="v2-tap rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">Run it again</button>
-              </div>
-            </div>
+            <AchievementCelebration
+              examId={exam.id}
+              earned={earnedMastery}
+              eyebrow="Drill mastered"
+              title={exam.id === "timestables" ? "You did it! All green!" : "Every question. Mastered."}
+              description={`You answered every question in ${drill.name} correctly. ${exam.id === "timestables" ? "Look how far you've come!" : "Your practice has paid off."}`}
+              detail={`${questions.length} of ${questions.length} questions mastered · ${drill.name}`}
+            >
+              <Link href={`${routes.dashboard}?completed=${encodeURIComponent(`drill:${drill.key}`)}`} className="v2-tap flex items-center justify-center rounded-xl bg-brand px-4 text-base font-bold text-white">See your progress</Link>
+              <button type="button" onClick={() => setConfirmReset(true)} className="v2-tap rounded-xl border-2 border-gray-200 bg-white text-sm font-semibold dark:border-gray-700 dark:bg-gray-900">Practise again</button>
+            </AchievementCelebration>
           ) : guestPrompt.showing ? (
             <GuestPromptStep
               signupHref={`/signup?redirect=${encodeURIComponent(routes.drillQuestions(drill.key))}`}
@@ -242,7 +251,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
         <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto flex max-w-2xl gap-2">
             {revealed ? (
-              <button type="button" onClick={() => { if (!guestPrompt.takeStep()) load(); }} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">Next</button>
+              <button type="button" onClick={() => { if (earnedMastery || !guestPrompt.takeStep()) load(); }} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">Next</button>
             ) : question.format === "single" ? (
               <div className="v2-tap flex w-full items-center justify-center text-sm text-gray-500 dark:text-gray-400">Tap an answer to check it</div>
             ) : (
@@ -263,7 +272,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">Mastery for {drill.name} starts over. Your test scores are not affected.</p>
             <div className="mt-4 flex gap-2">
               <button type="button" onClick={() => setConfirmReset(false)} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 text-sm font-semibold">Cancel</button>
-              <button type="button" onClick={() => { resetDrill(key); setConfirmReset(false); currentId.current = null; setQuestion(null); setFireworks(false); setDone(false); }} className="v2-tap flex-1 rounded-xl bg-brand text-sm font-bold text-white">Reset</button>
+              <button type="button" onClick={() => { resetDrill(key); setConfirmReset(false); currentId.current = null; setQuestion(null); setFireworks(false); setEarnedMastery(false); setDone(false); }} className="v2-tap flex-1 rounded-xl bg-brand text-sm font-bold text-white">Reset</button>
             </div>
           </div>
         </AccessibleOverlay>

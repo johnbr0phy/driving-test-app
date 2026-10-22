@@ -1,13 +1,10 @@
 "use client";
 
-import { useState, useEffect, Suspense, useRef } from "react";
+import { useState, useEffect, Suspense, useRef, useCallback } from "react";
 import { usePathname, useRouter, useSearchParams, useParams } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft } from "lucide-react";
-import Image from "next/image";
 import { ShareButton } from "@/components/ShareButton";
 import { useStore } from "@/store/useStore";
 import { shuffleQuestionOptions } from "@/lib/shuffleOptions";
@@ -15,11 +12,12 @@ import { recordClassAnswer } from "@/lib/classProgress";
 import { useClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 import { getExamTrainingSetQuestions, getNextExamTrainingSetQuestion } from "@/lib/examTestGenerator";
 import { ExamConfig, examSetId, trainingPartName, trainingParts } from "@/lib/exams";
-import { getTigerAsset } from "@/lib/tigerAssets";
 import { Question } from "@/types";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
 import { Fireworks } from "@/components/Fireworks";
+import { AchievementCelebration } from "@/components/AchievementCelebration";
+import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 import { TestPageHeader } from "@/components/TestPageHeader";
 import Link from "next/link";
 import { useTranslation } from "@/contexts/LanguageContext";
@@ -91,10 +89,11 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
   // This avoids stale closure issues with the currentQuestion state
   const currentQuestionIdRef = useRef<string | null>(null);
   const [showFireworks, setShowFireworks] = useState(false);
-  const [showCelebration, setShowCelebration] = useState(false);
   const [showSetComplete, setShowSetComplete] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
-  const [prevCorrectCount, setPrevCorrectCount] = useState(training.totalCorrectAllTime);
+  const retryButtonRef = useRef<HTMLButtonElement>(null);
+  const [earnedCompletion, setEarnedCompletion] = useState(false);
+  const pendingCompletion = useRef(false);
 
   // Get current set progress
   const setProgress = isSetMode && setId ? getTrainingSetProgress(setId) : null;
@@ -142,29 +141,15 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
       return;
     }
     setShowSetComplete(false);
+    setEarnedCompletion(false);
+    pendingCompletion.current = false;
     setShowFireworks(false);
     setShowResetConfirm(false);
     currentQuestionIdRef.current = null;
     setCurrentQuestion(null);
-  }, [part]);
+  }, [part, setNumber]);
 
-  // Detect when user unlocks practice tests (crosses 10 correct answers) - onboarding only
-  useEffect(() => {
-    if (!isSetMode && training.totalCorrectAllTime >= 10 && prevCorrectCount < 10) {
-      setShowFireworks(true);
-    }
-    setPrevCorrectCount(training.totalCorrectAllTime);
-  }, [training.totalCorrectAllTime, prevCorrectCount, isSetMode]);
-
-  const handleFireworksComplete = () => {
-    setShowFireworks(false);
-    if (isSetMode) {
-      // Set complete overlay is already showing — just dismiss fireworks
-      if (!showSetComplete) setShowSetComplete(true);
-    } else {
-      setShowCelebration(true);
-    }
-  };
+  const handleFireworksComplete = useCallback(() => setShowFireworks(false), []);
 
   // Load first question on mount
   useEffect(() => {
@@ -193,10 +178,14 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
         lang
       );
 
-      // If all questions are mastered, show completion overlay with fireworks on top
+      // Restored mastery can show the result, but only an answer in this visit
+      // earns the animation. Opening a completed part must not replay fireworks.
       if (!question) {
+        const earned = pendingCompletion.current;
+        pendingCompletion.current = false;
+        setEarnedCompletion(earned);
         setShowSetComplete(true);
-        setShowFireworks(true);
+        setShowFireworks(earned);
         return;
       }
 
@@ -241,14 +230,20 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
 
     // Track progress
     if (isSetMode && setId) {
+      const questionIds = getExamTrainingSetQuestions(exam, setNumber!, part, lang).map((q) => q.questionId);
+      const before = useStore.getState().trainingSets[setId]?.masteredIds ?? [];
+      const wasComplete = questionIds.length > 0 && questionIds.every((id) => before.includes(id));
       answerTrainingSetQuestion(setId, currentQuestion.questionId, isCorrect);
+      const after = useStore.getState().trainingSets[setId]?.masteredIds ?? [];
+      pendingCompletion.current = isCorrect && !wasComplete && questionIds.length > 0 && questionIds.every((id) => after.includes(id));
     } else {
       answerTrainingQuestion(currentQuestion.questionId, isCorrect);
     }
   };
 
   const handleNext = () => {
-    if (guestPrompt.takeStep()) return;
+    // Let the earned result come before an optional sign-up step.
+    if (!pendingCompletion.current && guestPrompt.takeStep()) return;
     loadNextQuestion();
   };
 
@@ -262,6 +257,10 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
       // In a part, only that part's questions start over.
       resetTrainingSet(setId, partQuestionIds ?? undefined);
       setShowSetComplete(false);
+      setShowResetConfirm(false);
+      setShowFireworks(false);
+      setEarnedCompletion(false);
+      pendingCompletion.current = false;
       // Load the first question after reset
       setTimeout(() => loadNextQuestion(), 0);
     }
@@ -273,6 +272,15 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
 
   const setLabel = partInfo ? trainingPartName(partInfo, lang) : setDef?.name ?? ui.setN(setNumber ?? 0);
   const followingPart = part ? unfinishedPart(part) : undefined;
+  const dashboardHref = `${routes.dashboard}?completed=training:${setNumber}${part ? `&part=${part}` : ""}`;
+  const celebrationCopy = {
+    en: { title: "You turned this step green!", part: "Part complete", set: "Training complete", progress: "See your progress", description: "Your practice paid off. This step is now green on your dashboard.", remaining: "You finished this part. Keep going to complete the rest of the set.", resetPart: "This will reset your progress in this part only. Are you sure?" },
+    es: { title: "¡Este paso ya está en verde!", part: "Parte completada", set: "Entrenamiento completado", progress: "Ver tu progreso", description: "Tu práctica dio resultado. Este paso ya está en verde en tu panel.", remaining: "Terminaste esta parte. Sigue para completar el resto del grupo.", resetPart: "Esto reiniciará tu progreso solo en esta parte. ¿Estás seguro/a?" },
+    vi: { title: "Bước này đã chuyển sang màu xanh!", part: "Hoàn thành phần", set: "Hoàn thành luyện tập", progress: "Xem tiến độ của bạn", description: "Việc luyện tập đã mang lại kết quả. Bước này giờ đã có màu xanh trên bảng tiến độ.", remaining: "Bạn đã hoàn thành phần này. Hãy tiếp tục để hoàn thành các phần còn lại.", resetPart: "Thao tác này chỉ đặt lại tiến độ của phần này. Bạn có chắc không?" },
+    ko: { title: "이 단계가 초록색이 되었어요!", part: "파트 완료", set: "학습 완료", progress: "내 진행 상황 보기", description: "연습의 결실이에요. 대시보드에서 이 단계가 초록색으로 바뀌었어요.", remaining: "이 파트를 완료했어요. 세트의 나머지 파트도 계속해 보세요.", resetPart: "이 파트의 진행 상황만 초기화됩니다. 계속하시겠습니까?" },
+    zh: { title: "这一步变绿了！", part: "部分已完成", set: "练习已完成", progress: "查看你的进度", description: "你的练习有了成果。面板上的这一步现在变绿了。", remaining: "你已完成这一部分。继续完成这组练习的其他部分吧。", resetPart: "这将仅重置这一部分的进度。确定吗？" },
+  }[lang];
+  const resetMessage = partInfo ? celebrationCopy.resetPart : t("trainingPage.resetConfirm");
 
   return (
     <div className="flex-1 bg-gradient-to-br from-brand-light to-brand-gradient-to">
@@ -281,175 +289,58 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
         <Fireworks duration={3000} onComplete={handleFireworksComplete} />
       )}
 
-      {/* Onboarding Celebration Modal */}
-      {showCelebration && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-in fade-in duration-300">
-          <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 mx-4 max-w-md text-center shadow-2xl animate-in zoom-in-95 duration-300">
-            <div className="mb-4">
-              <img
-                src={getTigerAsset(exam.id, 2)}
-                alt="Happy celebrating tiger"
-                className="w-32 h-32 mx-auto"
-              />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 mb-2">
-              {t("trainingPage.congratulations")}
-            </h2>
-            <p className="text-xl text-brand-dark font-semibold mb-4">
-              {t("trainingPage.youUnlocked")}
-            </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              {t("trainingPage.answeredTenCorrectly")}
-            </p>
-            <div className="flex flex-col gap-3">
-              <Button asChild className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 text-lg py-6">
-                <Link href={routes.dashboard}>
-                  {t("trainingPage.chooseTrainingSet")}
-                </Link>
-              </Button>
-              <Button
-                variant="outline"
-                className="w-full"
-                onClick={() => setShowCelebration(false)}
-              >
-                {t("trainingPage.keepGoing")}
-              </Button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Set Complete - Full-bleed Score Card */}
       {showSetComplete && isSetMode && (
-        <div className="fixed inset-0 z-50 overflow-y-auto animate-in fade-in duration-300">
-          <div className="min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
-            {/* Back button */}
-            <div className="relative max-w-6xl mx-auto px-4 pt-4">
-              <Button asChild variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/10 -ml-2">
-                <Link href={routes.dashboard}>
-                  <ArrowLeft className="h-4 w-4 mr-2" />
-                  {t("common.back")}
-                </Link>
+        <AccessibleOverlay
+          aria-label={partInfo ? celebrationCopy.part : celebrationCopy.set}
+          onClose={() => router.push(dashboardHref)}
+          onOpenAutoFocus={earnedCompletion ? (event) => event.preventDefault() : undefined}
+          className="fixed inset-0 z-50 overflow-y-auto bg-gray-950/50 px-4 py-6 backdrop-blur-sm sm:py-10"
+        >
+          <div className="flex min-h-full items-center">
+            <AchievementCelebration
+              examId={exam.id}
+              eyebrow={partInfo ? celebrationCopy.part : celebrationCopy.set}
+              title={celebrationCopy.title}
+              description={followingPart ? celebrationCopy.remaining : celebrationCopy.description}
+              detail={<><span className="block">{setLabel}</span><span className="block mt-1 font-normal">{progress?.correct}/{progress?.total} {t("trainingPage.questionsCorrect")}</span></>}
+              earned={earnedCompletion}
+            >
+              <Button asChild className="h-auto min-h-12 w-full whitespace-normal bg-green-700 px-5 py-3 text-base font-bold text-white hover:bg-green-800">
+                <Link href={dashboardHref}>{celebrationCopy.progress}</Link>
               </Button>
-            </div>
-
-            <div className="relative text-center px-6 pt-4 pb-10 max-w-lg mx-auto">
-              {/* Branding header */}
-              <div className="mb-6">
-                <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
-                <div className="text-gray-400 text-xs uppercase tracking-widest mt-1">
-                  {ui.trainingBadge(exam.shortName)}
-                </div>
-              </div>
-
-              {/* Tiger face */}
-              <div className="flex justify-center mb-5">
-                <Image
-                  src={getTigerAsset(exam.id, 1)}
-                  alt="Tiger mascot"
-                  width={160}
-                  height={160}
-                  className="w-[120px] h-[120px] md:w-[160px] md:h-[160px]"
-                />
-              </div>
-
-              {/* Tagline */}
-              <div className="text-base md:text-lg font-extrabold uppercase tracking-widest mb-4 text-green-300">
-                {ui.masteredMyTraining(exam.shortName)}
-              </div>
-
-              {/* Giant percentage */}
-              <div className="text-7xl md:text-8xl font-black mb-3 leading-none text-green-500 dark:text-green-400">
-                100%
-              </div>
-
-              {/* 50 out of 50 correct */}
-              <div className="text-xl md:text-2xl text-gray-400 mb-5">
-                {progress?.total ?? 50} {t("results.outOf")} {progress?.total ?? 50} {t("results.correctLabel")}
-              </div>
-
-              {/* MASTERED badge */}
-              <Badge className="text-lg px-6 py-2 mb-5 bg-green-600 hover:bg-green-700">
-                {ui.mastered}
-              </Badge>
-
-              {/* Exam + set name */}
-              <div className="text-gray-400 text-base mb-2">
-                {exam.examLabel} · {setLabel}
-              </div>
-
-              {/* Branding footer */}
-              <div className="text-gray-400 text-sm tracking-wider mb-8">tigertest.io</div>
-
-              {/* Split set: straight on to the next unfinished part */}
               {followingPart && setNumber && (
-                <Button asChild className="w-full max-w-xs mx-auto mb-3 flex bg-green-500 hover:bg-green-600 text-white font-bold uppercase tracking-wide h-12 text-base">
-                  <Link href={routes.training(setNumber, followingPart.part)}>
-                    {ui.nextPart(trainingPartName(followingPart, lang))}
-                  </Link>
+                <Button asChild variant="outline" className="h-auto min-h-11 w-full whitespace-normal py-3">
+                  <Link href={routes.training(setNumber, followingPart.part)}>{ui.nextPart(trainingPartName(followingPart, lang))}</Link>
                 </Button>
               )}
-
-              {/* SHARE + TRY AGAIN buttons */}
-              <div className="flex gap-3 max-w-xs mx-auto">
-                {setNumber && (
+              <div className="flex flex-wrap items-center justify-center gap-2">
+                {/* A share image describes a whole set, so never claim it for just one part. */}
+                {setNumber && setProgress?.complete && (
                   <ShareButton
-                    score={progress?.total ?? 50}
-                    totalQuestions={progress?.total ?? 50}
+                    score={setProgress.total}
+                    totalQuestions={setProgress.total}
                     percentage={100}
                     passed={true}
                     setId={setNumber}
                     stateCode={exam.stateCode}
-                    className="flex-1 bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 font-bold uppercase tracking-wide h-12 text-base"
+                    className="h-auto min-h-11 whitespace-normal border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800"
                   />
                 )}
-                {!isGuest && (
-                  <Button asChild
-                      className="w-full bg-transparent text-white hover:bg-white/10 border border-white/30 font-bold uppercase tracking-wide h-12 text-base"
-                    >
-                    <Link href={routes.stats} className="flex-1">
-                      {t("results.viewStats")}
-                    </Link>
-                  </Button>
-                )}
+                {!isGuest && <Button asChild variant="ghost"><Link href={routes.stats}>{t("results.viewStats")}</Link></Button>}
+                <Button ref={retryButtonRef} variant="ghost" onClick={() => setShowResetConfirm(true)}>{t("results.tryAgain")}</Button>
               </div>
-
-
-              {/* Reset confirmation */}
               {showResetConfirm && (
-                <div className="mt-4 bg-white/10 backdrop-blur-sm rounded-xl p-4 max-w-xs mx-auto animate-in fade-in duration-200">
-                  <p className="text-gray-200 text-sm mb-3">
-                    {t("trainingPage.resetConfirm")}
-                  </p>
+                <div role="group" aria-label={resetMessage} className="mt-2 rounded-xl border border-gray-200 bg-white p-4 text-left dark:border-gray-700 dark:bg-gray-900">
+                  <p className="mb-3 text-sm text-gray-600 dark:text-gray-300">{resetMessage}</p>
                   <div className="flex gap-2">
-                    <Button
-                      className="flex-1 bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold h-10 text-sm"
-                      onClick={handlePracticeAgain}
-                    >
-                      {t("trainingPage.resetYes")}
-                    </Button>
-                    <Button
-                      className="flex-1 bg-transparent text-white hover:bg-white/10 border border-white/30 font-semibold h-10 text-sm"
-                      onClick={() => setShowResetConfirm(false)}
-                    >
-                      {t("common.cancel")}
-                    </Button>
+                    <Button variant="outline" className="flex-1" onClick={handlePracticeAgain}>{t("trainingPage.resetYes")}</Button>
+                    <Button variant="ghost" className="flex-1" onClick={() => { setShowResetConfirm(false); retryButtonRef.current?.focus(); }}>{t("common.cancel")}</Button>
                   </div>
                 </div>
               )}
-            </div>
-
-            {/* Try Again link */}
-            <div className="text-center py-5">
-              <button
-                onClick={() => setShowResetConfirm(true)}
-                className="text-gray-400 hover:text-gray-300 text-sm font-medium transition-colors"
-              >
-                {t("results.tryAgain")} →
-              </button>
-            </div>
+            </AchievementCelebration>
           </div>
-        </div>
+        </AccessibleOverlay>
       )}
 
       <TestPageHeader

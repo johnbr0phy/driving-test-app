@@ -1,0 +1,48 @@
+.card {
+  background-image: radial-gradient(ellipse at 50% 0%, rgb(34 197 94 / 0.08), transparent 65%);
+}
+
+/* One short welcome, not a looping animation. Saved achievements stay still. */
+.earned .tiger {
+  animation: tiger-cheer 800ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  transform-origin: 50% 85%;
+}
+
+.earned .badge {
+  animation: badge-arrive 450ms 180ms ease-out both;
+}
+
+.earned .star,
+.earned .sparkle {
+  animation: sparkle-arrive 800ms 120ms ease-out both;
+}
+
+.earned .sparkle {
+  animation-delay: 240ms;
+}
+
+@keyframes tiger-cheer {
+  0% { transform: translateY(8px) scale(0.94); }
+  45% { transform: translateY(-9px) rotate(-4deg) scale(1.04); }
+  75% { transform: translateY(1px) rotate(2deg); }
+  100% { transform: translateY(0) rotate(0) scale(1); }
+}
+
+@keyframes badge-arrive {
+  from { opacity: 0; transform: scale(0.6); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes sparkle-arrive {
+  from { opacity: 0; transform: scale(0.6) rotate(-15deg); }
+  to { opacity: 1; transform: scale(1) rotate(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .earned .tiger,
+  .earned .badge,
+  .earned .star,
+  .earned .sparkle {
+    animation: none;
+  }
+}

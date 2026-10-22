@@ -186,6 +186,8 @@ export interface ExamV2Config {
   /** Composite from the scored sections (scaled, raw and total per section, in exam order). */
   composite: { name: string; min: number; max: number; combine: (sections: SectionResult[]) => number };
   /** Default goal for the goal picker. */
+  /** Fixed targets skip the picker and override previously saved goals. */
+  fixedGoal?: number;
   defaultGoal: number;
   goalChoices: number[];
   /** One line under each goal choice, e.g. "Top 25% of test takers". */

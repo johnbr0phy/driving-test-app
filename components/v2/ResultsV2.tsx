@@ -1,6 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { takeAchievementCelebration } from "@/lib/achievementCelebration";
+import { Fireworks } from "@/components/Fireworks";
+import { AchievementCelebration } from "@/components/AchievementCelebration";
+import { goalFor } from "@/lib/v2/goals";
+
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown, ChevronUp } from "lucide-react";
@@ -16,12 +21,24 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
   const routes = v2Routes(exam);
   const hydrated = useHydration();
   const results = useV2Store((s) => s.results);
-  const goal = useV2Store((s) => s.goals[exam.id]) ?? exam.defaultGoal;
+  const savedGoal = useV2Store((s) => s.goals[exam.id]);
+  const goal = goalFor(exam, savedGoal);
   const byId = useMemo(() => getQuestionIndex(exam.id), [exam.id]);
   const history = useMemo(() => resultsForExam(results, exam.id).filter((r) => r.testNumber === testNumber), [results, exam.id, testNumber]);
   const [filter, setFilter] = useState<"wrong" | "all">("all");
   const [open, setOpen] = useState<string | null>(null);
   const [sectionFilter, setSectionFilter] = useState<string>("all");
+
+  const latestResult = history[0];
+  const [earnedResult, setEarnedResult] = useState<string | null>(null);
+  useEffect(() => {
+    if (!hydrated || !latestResult) return;
+    const eventId = `v2:${latestResult.key}:${latestResult.completedAt}`;
+    if (takeAchievementCelebration(eventId) && latestResult.composite >= goal) {
+      setEarnedResult(eventId);
+    }
+  }, [hydrated, latestResult, goal]);
+  const earned = !!latestResult && earnedResult === `v2:${latestResult.key}:${latestResult.completedAt}`;
 
   if (!hydrated) return <div className="p-8 text-center text-gray-600 dark:text-gray-300">Loading...</div>;
   const result: TestResultV2 | undefined = history[0];
@@ -50,7 +67,30 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
+      {earned && <Fireworks duration={5000} />}
       <div className="text-sm font-semibold uppercase tracking-wide text-brand-dark">{exam.shortName} · Practice Test {testNumber}</div>
+      {result.composite >= goal ? (
+        <AchievementCelebration
+          examId={exam.id}
+          earned={earned}
+          headingLevel={1}
+          className="mt-4"
+          eyebrow="Practice goal reached"
+          title={exam.id === "timestables" ? "Full marks!" : "You hit your goal!"}
+          description={`Practice Test ${testNumber} is complete. See it turn green on your dashboard.`}
+          detail={
+            <>
+              <span className="block text-4xl font-black tabular-nums">{result.composite}{exam.composite.max === 100 ? "%" : ""}</span>
+              <span className="block mt-1">{exam.copy.scoreLabel ?? `${exam.composite.name} estimate`} · goal {goal}</span>
+              <span className="block mt-1">At your goal</span>
+              {delta !== null && <span className="block mt-1">{delta >= 0 ? "+" : ""}{delta} vs last attempt</span>}
+            </>
+          }
+        >
+          <Link href={`${routes.dashboard}?completed=test:${testNumber}`} className="v2-tap flex items-center justify-center rounded-xl bg-brand px-4 py-3 font-bold text-white">See your progress</Link>
+          <a href="#result-breakdown" className="v2-tap flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200">Review your answers</a>
+        </AchievementCelebration>
+      ) : (
       <div className="mt-2 flex flex-wrap items-end gap-x-6 gap-y-2">
         <Image src={getTigerAsset(exam.id, result.composite >= goal ? 2 : 4)} alt="" width={80} height={80} className="h-20 w-20 shrink-0 object-contain" />
         <div>
@@ -66,10 +106,11 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
           {result.composite >= goal ? "At your goal" : `${goal - result.composite} to your goal`}
         </div>
       </div>
+      )}
       <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">{exam.copy.scoreNote}</p>
       {result.timing === "untimed" && <p className="mt-1 text-sm font-semibold">Untimed practice. This attempt did not simulate the exam time limit.</p>}
 
-      <div className="mt-6 grid gap-4 md:grid-cols-2">
+      <div id="result-breakdown" className="mt-6 grid gap-4 md:grid-cols-2">
         {result.sections.map((s) => {
           const def = getSectionV2(exam, s.section);
           return (

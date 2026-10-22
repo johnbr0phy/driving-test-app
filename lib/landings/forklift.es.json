@@ -41,8 +41,8 @@
     "h2": "Cómo funciona",
     "cards": [
       {
-        "h3": "Práctica por tema",
-        "p": "Cuatro grupos: conceptos básicos, reglas e inspección; estabilidad y capacidad de carga; operación segura; y manejo de cargas, muelles y rampas. Las preguntas que fallas vuelven hasta que las domines."
+        "h3": "Entrena y luego haz el examen",
+        "p": "Cuatro grupos de entrenamiento, uno por examen de práctica: el Entrenamiento 1 tiene exactamente las 50 preguntas del Examen 1, y así con cada uno. Domina el Entrenamiento 1, haz el Examen 1 y sigue. Las preguntas que fallas vuelven hasta que las domines."
       },
       {
         "h3": "Exámenes de práctica",
@@ -78,7 +78,7 @@
       },
       {
         "h3": "4. Practica las reglas de operación hasta que sean reflejos",
-        "p": "Horquillas abajo e inclinadas hacia atrás, maneja en reversa cuando la carga te tape la vista, toca el claxon en cada esquina ciega, los peatones siempre tienen el derecho de paso, nadie debajo de las horquillas, nadie de pasajero, y quédate en el asiento si el montacargas se vuelca. TigerTest mide tu precisión por tema, así que repite el grupo que más fallas hasta pasar del 90 por ciento."
+        "p": "Horquillas abajo e inclinadas hacia atrás, maneja en reversa cuando la carga te tape la vista, toca el claxon en cada esquina ciega, los peatones siempre tienen el derecho de paso, nadie debajo de las horquillas, nadie de pasajero, y quédate en el asiento si el montacargas se vuelca. TigerTest mide tu precisión por tema, así que repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar del 90 por ciento."
       }
     ]
   },
@@ -106,7 +106,7 @@
     },
     {
       "q": "¿El examen de práctica de montacargas de TigerTest es gratis?",
-      "a": "Sí. Los cuatro exámenes de práctica y todos los grupos de práctica por tema son gratis y no necesitas crear una cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
+      "a": "Sí. Los cuatro exámenes de práctica y los cuatro grupos de entrenamiento son gratis y no necesitas crear una cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
     }
   ],
   "finalCta": {

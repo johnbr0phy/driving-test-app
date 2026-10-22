@@ -133,7 +133,7 @@ const jsonLd = {
       featureList: [
         "200 real estate practice questions",
         "4 practice tests weighted to the national salesperson outline",
-        "Training sets for every domain",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -236,9 +236,9 @@ export default function RealestateLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets covering all eight outline areas: property, ownership and title; contracts and agency; practice, disclosures and financing; and valuation with real estate math. Questions you miss come back until you have mastered them.
+                Four training sets for the national portion, one per practice test: each holds exactly the 50 questions of its test. Master Set 1, then take Test 1, and so on. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>

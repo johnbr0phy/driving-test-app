@@ -55,7 +55,7 @@ const jsonLd = {
       featureList: [
         "200 OSHA 10 practice questions",
         "4 practice tests weighted like the Outreach course",
-        "Training sets for every topic including the Focus Four",
+        "4 training sets, one per practice test",
         "Instant feedback with explanations that cite the rule",
         "Auto-save progress",
       ],
@@ -156,9 +156,9 @@ export default function OshaLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Topic</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Five sets: intro to OSHA and worker rights, fall protection, electrical plus struck-by and caught-in, hazard communication and PPE, and health hazards, tools and fire safety. Questions you miss come back until you have mastered them.
+                Four training sets, one per practice test: each holds exactly the 50 questions of its test. Master Set 1, then take Test 1, and so on. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -255,7 +255,7 @@ export default function OshaLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak topic</h3>
               <p>
-                TigerTest tracks your accuracy by topic. The real final is short, so a single weak area can cost you the 70 percent you need. Retake the training set you miss most until you clear 85 percent, then take all four practice tests in a row.
+                TigerTest tracks your accuracy by topic. The real final is short, so a single weak area can cost you the 70 percent you need. Drill the questions you missed, retrain that test&apos;s set and retake until you clear 85 percent, then take all four practice tests in a row.
               </p>
             </div>
           </div>

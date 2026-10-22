@@ -58,12 +58,25 @@ function parseGenerated(text: string): GeneratedQuiz {
 }
 
 /** Today's generations for the account, enforced before the call and counted after. */
+/**
+ * Site-wide ceiling on generations a day, since every paste-box call runs on
+ * our key (about 4 cents each on Sonnet). Default 500, about $25 a day at the
+ * worst; QUIZ_GEN_DAILY_CAP overrides it. The per-account quota is the first
+ * line; this is the backstop against a signup wave. Counted in
+ * analytics/quizzes.gen = { day, count }.
+ */
+export const GENERATE_SITE_DAILY_CAP = Math.max(1, Number(process.env.QUIZ_GEN_DAILY_CAP) || 500);
+
+export const SITE_CAP_MESSAGE =
+  "The quiz writer has hit its daily limit. Try again tomorrow, paste a Quizlet export instead, or have Claude or ChatGPT write it through the TigerTest connector (tigertest.io/connect).";
+
 async function takeQuota(db: Firestore, uid: string, isPremium: boolean): Promise<void> {
   const limit = quizLimits(isPremium).generationsPerDay;
   const day = new Date().toISOString().slice(0, 10);
-  const ref = db.collection("users").doc(uid);
+  const userRef = db.collection("users").doc(uid);
+  const siteRef = db.collection("analytics").doc("quizzes");
   await db.runTransaction(async (tx) => {
-    const snap = await tx.get(ref);
+    const [snap, site] = await Promise.all([tx.get(userRef), tx.get(siteRef)]);
     const gen = (snap.data()?.quizGen ?? {}) as { day?: string; count?: number };
     const count = gen.day === day ? gen.count ?? 0 : 0;
     if (count >= limit) {
@@ -74,7 +87,11 @@ async function takeQuota(db: Firestore, uid: string, isPremium: boolean): Promis
         429,
       );
     }
-    tx.set(ref, { quizGen: { day, count: count + 1 } }, { merge: true });
+    const siteGen = (site.data()?.gen ?? {}) as { day?: string; count?: number };
+    const siteCount = siteGen.day === day ? siteGen.count ?? 0 : 0;
+    if (siteCount >= GENERATE_SITE_DAILY_CAP) throw new QuizError(SITE_CAP_MESSAGE, 503);
+    tx.set(userRef, { quizGen: { day, count: count + 1 } }, { merge: true });
+    tx.set(siteRef, { gen: { day, count: siteCount + 1 } }, { merge: true });
   });
 }
 

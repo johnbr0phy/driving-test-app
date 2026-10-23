@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Check, ChevronDown, FileText, Library, Link2, Lock, Sparkles, Wrench } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, FileText, Library, Lock, Wrench } from "lucide-react";
 import { CopyUrl } from "@/components/connect/CopyUrl";
+import { ClaudeLogo, OpenAILogo } from "@/components/connect/AssistantLogos";
 import { CreateYourQuizzes } from "@/components/quiz/create/CreateYourQuizzes";
 
 // /create: make a quiz. Quizzes are written by the person's own Claude or
@@ -214,10 +215,7 @@ export default function CreatePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-orange-50 via-amber-50/40 to-gray-50 dark:from-orange-950/40 dark:via-transparent dark:to-transparent pointer-events-none" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-20 md:pt-20 md:pb-28 grid grid-cols-1 gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-16 items-center">
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 rounded-full border border-orange-200 dark:border-orange-900 bg-white/70 dark:bg-gray-900/70 px-3 py-1 text-sm font-medium text-orange-700 dark:text-orange-300">
-              <Sparkles className="w-4 h-4" aria-hidden="true" /> Works in Claude and ChatGPT
-            </div>
-            <h1 className="mt-5 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-gray-50 leading-[1.05]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-gray-50 leading-[1.05]">
               Turn any chat into a <span className="text-orange-600 dark:text-orange-400">practice test</span>
             </h1>
             <p className="mt-5 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto lg:mx-0">
@@ -228,16 +226,15 @@ export default function CreatePage() {
                 href="#add-to-claude"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-6 py-3.5 font-semibold"
               >
-                <Link2 className="w-4 h-4" aria-hidden="true" /> Add it to Claude
+                <ClaudeLogo /> Add it to Claude
               </a>
               <a
                 href="#add-to-chatgpt"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 bg-white/60 dark:bg-gray-900/60 text-gray-900 dark:text-gray-50 hover:bg-white dark:hover:bg-gray-900 px-6 py-3.5 font-semibold"
               >
-                <Link2 className="w-4 h-4" aria-hidden="true" /> Add it to ChatGPT
+                <OpenAILogo /> Add it to ChatGPT
               </a>
             </div>
-            <p className="mt-5 text-sm text-gray-500 dark:text-gray-400">Free · takes 2 minutes</p>
           </div>
           <ChatMock />
         </div>

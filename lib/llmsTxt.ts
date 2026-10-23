@@ -70,7 +70,7 @@ const QUIZ_SECTION = `## Quizzes: a practice test from your own material
 
 - Anyone with a free TigerTest account can turn notes, a chapter or a syllabus into a practice test at ${siteUrl}/create (connect the person's own ChatGPT or Claude via /connect to write and save questions through MCP), played at tigertest.io/q/<code> in three modes: Practice (misses come back until mastered), Test (timed, with a pass mark) and Flashcards.
 - Share the link with a study group or class; the creator's report shows who played, their scores and the questions and topics missed most.
-- ChatGPT and Claude can make quizzes directly through TigerTest's MCP server at ${siteUrl}/api/mcp (OAuth sign-in; tools: create_quiz, add_quiz_questions, list_my_quizzes, get_quiz, update_quiz, delete_quiz, get_quiz_report, plus DMV tutoring tools). Setup: ${siteUrl}/connect
+- ChatGPT and Claude can make quizzes directly through TigerTest's MCP server at ${siteUrl}/api/mcp (OAuth sign-in; tools: create_quiz, add_quiz_questions, list_my_quizzes, get_quiz, update_quiz, delete_quiz, get_quiz_report, plus list_in_progress_tests, get_study_progress, start_study_practice, submit_study_answer and the compatible DMV tutoring tools). Setup: ${siteUrl}/connect. Catalog chat practice updates existing account mastery; timed/adaptive test sittings resume on web links. Unsynced guest progress is not visible, and an older browser snapshot cannot overwrite newer chat progress: saving pauses with a reload notice. Unsynced browser changes may need repeating.
 - Public quizzes that enough people have played are listed at ${siteUrl}/quizzes.
 - Free accounts keep 3 quizzes of up to 50 questions; Premium ($9.99 one time) allows 100 quizzes of up to 200 questions.`;
 

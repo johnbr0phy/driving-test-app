@@ -1,6 +1,7 @@
-import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
+import { doc, getDoc, runTransaction } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { EMPTY_CODE_PROGRESS, EMPTY_QUIZ_DATA, type QuizCodeProgress, type QuizData } from "@/store/useQuizStore";
+import { assertMcpProgressRevision, captureMcpProgressRevision, throwIfMcpProgressConflict } from "@/lib/mcpProgressGuard";
 
 // Firestore mirror for the quiz store, in one `quizProgress` field on
 // users/{uid}, written whole with updateDoc so v1 and v2 fields are untouched
@@ -13,24 +14,28 @@ function clean<T>(value: T): T {
 const MAX_CODES = 100;
 
 export async function loadQuizData(uid: string): Promise<QuizData | null> {
+  throwIfMcpProgressConflict(uid, 'quiz');
   const snap = await getDoc(doc(db, "users", uid));
+  captureMcpProgressRevision(uid, 'quiz', snap.data());
   const data = snap.exists() ? (snap.data().quizProgress as Partial<QuizData> | undefined) : undefined;
   if (!data) return null;
   return { ...EMPTY_QUIZ_DATA, ...data };
 }
 
 export async function saveQuizData(uid: string, data: QuizData): Promise<void> {
+  throwIfMcpProgressConflict(uid, 'quiz');
   // Keep the most recently played quizzes so the document stays small.
   const codes = Object.entries(data.progress)
     .sort((a, b) => (b[1].lastPlayedAt ?? "").localeCompare(a[1].lastPlayedAt ?? ""))
     .slice(0, MAX_CODES);
   const payload = clean({ progress: Object.fromEntries(codes), recent: data.recent, updatedAt: new Date().toISOString() });
   const ref = doc(db, "users", uid);
-  try {
-    await updateDoc(ref, { quizProgress: payload });
-  } catch {
-    await setDoc(ref, { quizProgress: payload }, { merge: true });
-  }
+  await runTransaction(db, async (tx) => {
+    const snap = await tx.get(ref);
+    assertMcpProgressRevision(uid, 'quiz', snap.data());
+    if (snap.exists()) tx.update(ref, { quizProgress: payload });
+    else tx.set(ref, { quizProgress: payload }, { merge: true });
+  });
 }
 
 function union<T>(a: T[], b: T[]): T[] {

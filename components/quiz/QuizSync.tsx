@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { EMPTY_QUIZ_DATA, useQuizStore, type QuizData } from "@/store/useQuizStore";
 import { loadQuizData, mergeQuizData, saveQuizData } from "@/lib/quizSync";
+import { shouldPreferRemoteMcpProgress } from "@/lib/mcpProgressGuard";
 
 const pick = (s: QuizData): QuizData => ({ progress: s.progress, recent: s.recent });
 
@@ -37,7 +38,12 @@ export function QuizSync() {
         const local = state.syncedUid && state.syncedUid !== uid ? EMPTY_QUIZ_DATA : pick(useQuizStore.getState());
         const remote = await loadQuizData(uid);
         if (cancelled) return;
-        const merged = remote ? mergeQuizData(local, remote) : local;
+        // A same-account snapshot may predate an assistant reset. After an
+        // explicit reload, prefer its revised account copy, even if empty.
+        // Genuine guest progress still merges on first sign-in.
+        const merged = shouldPreferRemoteMcpProgress(uid, 'quiz', state.syncedUid)
+          ? remote ?? EMPTY_QUIZ_DATA
+          : remote ? mergeQuizData(local, remote) : local;
         useQuizStore.getState().replaceData(merged, uid);
         await saveQuizData(uid, merged);
         if (cancelled) return;

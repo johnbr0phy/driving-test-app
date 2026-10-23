@@ -1,5 +1,7 @@
 "use client";
 
+import { ProgressSyncConflictNotice } from '@/components/ProgressSyncConflictNotice';
+
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { AuthProvider, useAuth } from "@/contexts/AuthContext";
@@ -56,6 +58,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       <LanguageProvider>
         <AuthProvider>
           {children}
+          <ProgressSyncConflictNotice />
           <PremiumTheme />
           <FunnelVisit />
           <SchoolReferral />

@@ -3,7 +3,7 @@ import { cache } from "react";
 import { notFound } from "next/navigation";
 import { getQuiz } from "@/lib/server/quizzes";
 import { QUIZ_PUBLIC_MIN_PLAYS, isQuizCode, normalizeQuizCode, quizPublic, type QuizDoc } from "@/lib/quizzes";
-import { QuizHome } from "@/components/quiz/QuizHome";
+import { QuizLanding } from "@/components/quiz/QuizLanding";
 
 // A quiz's home, tigertest.io/q/<code>: rendered on the server so a shared
 // link carries the quiz's own title and description. A private quiz is sent
@@ -54,5 +54,5 @@ export default async function QuizPage({ params }: { params: Promise<{ code: str
   if (loaded.ok && !loaded.quiz) notFound();
   const quiz = loaded.ok ? loaded.quiz : null;
   const initial = quiz && quiz.visibility !== "private" ? quizPublic(quiz) : null;
-  return <QuizHome code={code} initial={initial} />;
+  return <QuizLanding code={code} initial={initial} />;
 }

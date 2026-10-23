@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { TestPageHeader } from "@/components/TestPageHeader";
 import { useHydration } from "@/hooks/useHydration";
 import { recordQuizPlayOnce } from "@/lib/quizProgress";
-import { quizPath, quizQuestionId, type QuizQuestion } from "@/lib/quizzes";
+import { quizDashboardPath, quizQuestionId, type QuizQuestion } from "@/lib/quizzes";
 import { codeProgress, useQuizStore } from "@/store/useQuizStore";
 import { QuizStates, useQuiz } from "@/components/quiz/QuizLoader";
 
@@ -64,7 +64,7 @@ export function QuizFlashcards({ code }: { code: string }) {
   }, [index, pos]);
 
   if (!quiz) return <QuizStates code={code} state={state} />;
-  const home = quizPath(code);
+  const home = quizDashboardPath(code);
 
   const flip = () => {
     setFlipped((f) => !f);

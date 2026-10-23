@@ -204,6 +204,7 @@ function quizLinks(code: string) {
   const base = `${siteUrl()}${quizPath(code)}`;
   return {
     url: base,
+    dashboard: `${base}/dashboard`,
     modes: { practice: `${base}/practice`, test: `${base}/test`, flashcards: `${base}/flashcards` },
     report: `${base}/report`,
     edit: `${base}/edit`,
@@ -917,7 +918,7 @@ const tools: ToolEntry[] = [
     name: 'create_quiz',
     description:
       `Call get_quiz_writing_guide first and follow it. Turns the person's own material (notes, a chapter, a syllabus, a term list, anything they paste or describe) into a TigerTest practice test they can play and share by link. ${QUIZ_WRITING_HINT} ` +
-      'Returns the quiz code and its links: `url` is the play page (show it to the person as the link to share), `modes.practice` is the mastery training set that brings back what they miss, `modes.test` is a timed test over every question, `modes.flashcards` is flashcards, and `report` is where the creator sees who played and what they missed. ' +
+      'Returns the quiz code and its links: `url` is the share landing page (show it to the person as the link to share), `dashboard` opens their modes and progress, `modes.practice` is the mastery training set that brings back what they miss, `modes.test` is a timed test over every question, `modes.flashcards` is flashcards, and `report` is where the creator sees who played and what they missed. ' +
       'On LIMIT_REACHED tell the person the limit from the message (they can delete a quiz, shorten this one, or get Premium); on INVALID_QUIZ fix the question named in the message and call again.',
     register(server, ctx) {
       server.registerTool(

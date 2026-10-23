@@ -13,7 +13,7 @@ import { Fireworks } from "@/components/Fireworks";
 import { QuizRow } from "@/components/QuizRow";
 import { TestPageHeader } from "@/components/TestPageHeader";
 import { useHydration } from "@/hooks/useHydration";
-import { quizPath, quizQuestionId, type QuizPublic, type QuizQuestion } from "@/lib/quizzes";
+import { quizDashboardPath, quizPath, quizQuestionId, type QuizPublic, type QuizQuestion } from "@/lib/quizzes";
 import { codeProgress, useQuizStore, type QuizTestAttempt } from "@/store/useQuizStore";
 import { QuizStates, useQuiz } from "@/components/quiz/QuizLoader";
 
@@ -57,7 +57,7 @@ export function QuizResults({ code }: { code: string }) {
   }, [hydrated, passed, at]);
 
   if (!quiz) return <QuizStates code={code} state={state} />;
-  const home = quizPath(code);
+  const home = quizDashboardPath(code);
 
   if (!hydrated) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
 
@@ -69,7 +69,7 @@ export function QuizResults({ code }: { code: string }) {
           <h1 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-2">No test yet</h1>
           <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">Take the test and your score will show here.</p>
           <Button asChild className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
-            <Link href={`${home}/test`}>Take the test</Link>
+            <Link href={`${quizPath(code)}/test`}>Take the test</Link>
           </Button>
         </div>
       </div>
@@ -94,7 +94,7 @@ export function QuizResults({ code }: { code: string }) {
 
   const takeAgain = () => {
     abandonTest(code);
-    router.push(`${home}/test`);
+    router.push(`${quizPath(code)}/test`);
   };
 
   const previous = [...tests].filter((t) => t.at !== attempt.at).reverse();
@@ -120,7 +120,7 @@ export function QuizResults({ code }: { code: string }) {
         <div className="grid gap-2 sm:grid-cols-3">
           {missedQuizIds.length > 0 && (
             <Button asChild className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 sm:col-span-3">
-              <Link href={`${home}/practice?ids=${encodeURIComponent(missedQuizIds.join(","))}`}>
+              <Link href={`${quizPath(code)}/practice?ids=${encodeURIComponent(missedQuizIds.join(","))}`}>
                 <Target className="w-4 h-4 mr-2" aria-hidden="true" /> Practice what you missed ({missedQuizIds.length})
               </Link>
             </Button>
@@ -196,7 +196,7 @@ export function QuizResults({ code }: { code: string }) {
                 const p = pct(t.correct, t.total);
                 return (
                   <li key={t.at} className="flex items-center justify-between py-2 text-sm">
-                    <Link href={`${home}/test/results?at=${encodeURIComponent(t.at)}`} className="underline text-gray-700 dark:text-gray-200">
+                    <Link href={`${quizPath(code)}/test/results?at=${encodeURIComponent(t.at)}`} className="underline text-gray-700 dark:text-gray-200">
                       {when(t.at)}
                     </Link>
                     <span className={`font-semibold tabular-nums ${p >= quiz.passPct ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"}`}>

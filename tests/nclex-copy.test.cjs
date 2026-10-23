@@ -8,7 +8,7 @@ const path = require('node:path');
 const { createRequire } = require('node:module');
 const ts = require('typescript');
 const React = require('react');
-// Imported child views also pass through tsx under the repo's JSX-preserve config.
+// tsx respects this repository's preserved JSX when loading nested views.
 global.React = React;
 const { renderToStaticMarkup } = require('react-dom/server');
 const { NCLEX } = require('../lib/v2/exams/nclex.ts');

@@ -291,6 +291,11 @@ export function quizPath(code: string): string {
   return `/q/${code}`;
 }
 
+/** Personal learning dashboard; quizPath remains the canonical share landing. */
+export function quizDashboardPath(code: string): string {
+  return `${quizPath(code)}/dashboard`;
+}
+
 export function quizUrl(code: string): string {
   const origin = typeof window === "undefined" ? "https://tigertest.io" : window.location.origin;
   return `${origin}${quizPath(code)}`;

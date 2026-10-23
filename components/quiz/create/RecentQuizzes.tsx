@@ -5,7 +5,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { quizPath } from "@/lib/quizzes";
+import { quizDashboardPath } from "@/lib/quizzes";
 import { useQuizStore } from "@/store/useQuizStore";
 
 export function RecentQuizzes({ limit = 8 }: { limit?: number }) {
@@ -23,7 +23,7 @@ export function RecentQuizzes({ limit = 8 }: { limit?: number }) {
       <ul className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 divide-y divide-gray-200 dark:divide-gray-800">
         {recent.slice(0, limit).map((r) => (
           <li key={r.code}>
-            <Link href={quizPath(r.code)} className="block p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+            <Link href={quizDashboardPath(r.code)} className="block p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
               <span className="block font-semibold text-gray-900 dark:text-gray-50 break-words">{r.title}</span>
               <span className="block text-xs text-gray-500 dark:text-gray-400 mt-0.5">
                 by {r.ownerName} · {r.questionCount} {r.questionCount === 1 ? "question" : "questions"}

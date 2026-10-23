@@ -12,7 +12,7 @@ import { QRCodeSVG } from "qrcode.react";
 import { Check, ChevronRight, Copy, QrCode, RefreshCw } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { quizFetch } from "@/lib/quizClient";
-import { quizLink, quizPath, quizUrl } from "@/lib/quizzes";
+import { quizLink, quizDashboardPath, quizPath, quizUrl } from "@/lib/quizzes";
 import type { ClassReport, ClassStudentRow } from "@/lib/classes";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
 import { StudentDetail } from "@/components/teach/StudentDetail";
@@ -43,7 +43,7 @@ export function QuizReport({ code }: { code: string }) {
   const [showQr, setShowQr] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
-  const home = quizPath(code);
+  const home = quizDashboardPath(code);
 
   const load = useCallback(async () => {
     if (!user) return;
@@ -60,9 +60,9 @@ export function QuizReport({ code }: { code: string }) {
 
   useEffect(() => {
     if (loading) return;
-    if (!user) router.replace(`/login?redirect=${encodeURIComponent(`${home}/report`)}`);
+    if (!user) router.replace(`/login?redirect=${encodeURIComponent(`${quizPath(code)}/report`)}`);
     else void load();
-  }, [loading, user, router, home, load]);
+  }, [loading, user, router, code, load]);
 
   const copy = async () => {
     try {

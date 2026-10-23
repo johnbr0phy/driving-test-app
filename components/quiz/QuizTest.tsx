@@ -14,7 +14,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { shuffleQuestionOptions } from "@/lib/shuffleOptions";
 import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
 import { recordQuizPlayOnce } from "@/lib/quizProgress";
-import { QUIZ_TEST_MAX_QUESTIONS, quizEngineQuestions, quizExamId, quizPath, type QuizPublic } from "@/lib/quizzes";
+import { QUIZ_TEST_MAX_QUESTIONS, quizEngineQuestions, quizExamId, quizDashboardPath, quizPath, type QuizPublic } from "@/lib/quizzes";
 import { codeProgress, useQuizStore, type QuizTestAttempt } from "@/store/useQuizStore";
 import { QuizStates, useQuiz } from "@/components/quiz/QuizLoader";
 import type { Question } from "@/types";
@@ -169,7 +169,7 @@ export function QuizTest({ code }: { code: string }) {
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <TestPageHeader
-        backHref={quizPath(code)}
+        backHref={quizDashboardPath(code)}
         right={
           <span className="inline-flex items-center gap-1.5 text-sm tabular-nums text-gray-700 dark:text-gray-200" aria-label="Time elapsed">
             <Clock className="w-4 h-4" aria-hidden="true" />

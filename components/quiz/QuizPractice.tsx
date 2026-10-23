@@ -21,7 +21,7 @@ import { useSound } from "@/hooks/useSound";
 import { shuffleQuestionOptions } from "@/lib/shuffleOptions";
 import { recordClassAnswer } from "@/lib/classProgress";
 import { recordQuizPlayOnce, reportQuizQuestion } from "@/lib/quizProgress";
-import { quizEngineQuestions, quizExamId, quizPath, quizQuestionId, type QuizPublic } from "@/lib/quizzes";
+import { quizEngineQuestions, quizExamId, quizDashboardPath, quizPath, quizQuestionId, type QuizPublic } from "@/lib/quizzes";
 import { codeProgress, useQuizStore } from "@/store/useQuizStore";
 import { QuizStates, useQuiz } from "@/components/quiz/QuizLoader";
 import type { Question } from "@/types";
@@ -131,7 +131,7 @@ export function QuizPractice({ code }: { code: string }) {
     setCurrent(null);
   };
 
-  const home = quizPath(code);
+  const home = quizDashboardPath(code);
   const total = questions.length;
 
   return (
@@ -218,7 +218,7 @@ export function QuizPractice({ code }: { code: string }) {
           </div>
           {idsParam && (
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-              Practicing {total} of {quiz.questions.length}. <Link href={`${home}/practice`} className="underline">Practice the whole quiz</Link>
+              Practicing {total} of {quiz.questions.length}. <Link href={`${quizPath(code)}/practice`} className="underline">Practice the whole quiz</Link>
             </p>
           )}
         </div>

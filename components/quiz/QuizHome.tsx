@@ -1,6 +1,6 @@
 "use client";
 
-// A quiz's home (/q/<code>): what it is, who made it, the three ways to play
+// A quiz's dashboard (/q/<code>/dashboard): what it is, who made it, the three ways to play
 // it, the link to share, and the name a player gives so the creator can see
 // how they did.
 
@@ -139,7 +139,7 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 py-8 max-w-lg md:max-w-2xl space-y-5">
         <div>
-          <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">TigerTest quiz</p>
+          <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">Your quiz dashboard</p>
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50">{quiz.title}</h1>
           {quiz.description && <p className="text-gray-600 dark:text-gray-300 mt-2">{quiz.description}</p>}
           <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
@@ -171,6 +171,8 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
             </Button>
           </div>
         )}
+
+        <Link href={quizPath(code)} className="inline-block text-sm underline text-gray-600 dark:text-gray-300">View share page</Link>
 
         <div className="grid gap-3">
           {modes.map((m) => (
@@ -241,7 +243,7 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
         )}
 
         <div className={`${card} p-5`}>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Share this quiz</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">{quiz.visibility === "private" ? "Private quiz: only you can open this link" : "Share this quiz"}</p>
           <p className="font-mono text-sm text-gray-900 dark:text-gray-50 mb-3 break-all">{quizLink(code)}</p>
           <div className="flex flex-wrap gap-2">
             <button

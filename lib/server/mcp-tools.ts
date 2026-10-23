@@ -288,7 +288,7 @@ const quizQuestionsSchema = z.array(quizQuestionSchema).min(1).describe('The que
 
 const quizVisibilitySchema = z
   .enum(['private', 'link', 'public', 'class'])
-  .describe('Who can play it. "link" (default): anyone with the link. "public": anyone, and also listed in the tigertest.io/quizzes library once enough people have played it. "private": only the creator. "class": only students in one of the creator\'s Tigertest classes (pass `classCode`; see list_my_classes). Use "class" when the person says "share it with my class", "just my students" or names a class.');
+  .describe('Who can play it. "link" (default): anyone with the link. "public": anyone, and also listed in the tigertest.io/quizzes library. "private": only the creator. "class": only students in one of the creator\'s Tigertest classes (pass `classCode`; see list_my_classes). Use "class" when the person says "share it with my class", "just my students" or names a class.');
 
 const quizClassCodeSchema = z
   .string()

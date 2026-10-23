@@ -352,7 +352,7 @@ export function QuizEditor({ mode, code, initial, createdVia = "web", children, 
                 <Link href="/quizzes" className="underline">
                   Tigertest library
                 </Link>
-                <span className="block text-xs text-gray-600 dark:text-gray-300">Shown there once 5 people have played it.</span>
+                <span className="block text-xs text-gray-600 dark:text-gray-300">Anyone browsing quizzes can find and play it.</span>
               </span>
             </label>
           )}

@@ -71,16 +71,23 @@ const jsonLd = {
   ],
 };
 
+// What to type, and what happens when you do.
 const PROMPT_GROUPS = [
   {
     label: "Make a quiz",
-    accent: "border-orange-400",
-    prompts: ["Turn these notes into a 20-question quiz.", "Make a quiz from this PDF and give me the link.", "Which question do people miss most?"],
+    prompts: [
+      { say: "Turn these notes into a 20-question quiz.", does: "Writes the questions and saves them to your account." },
+      { say: "Make a quiz from this PDF and give me the link.", does: "Hands back a tigertest.io/q link anyone can play." },
+      { say: "Which question do people miss most?", does: "Reads your quiz report: who played, what they got wrong." },
+    ],
   },
   {
     label: "Get quizzed",
-    accent: "border-sky-400",
-    prompts: ["Which tests do I have in progress?", "Continue my practice where I left off.", "Which topics am I getting wrong?"],
+    prompts: [
+      { say: "Which tests do I have in progress?", does: "Lists your saved exams and quizzes." },
+      { say: "Continue my practice where I left off.", does: "Picks up your practice one question at a time." },
+      { say: "Which topics am I getting wrong?", does: "Ranks your weakest topics from your answers." },
+    ],
   },
 ];
 
@@ -321,20 +328,18 @@ export default function ConnectPage() {
               Just ask
             </h2>
           </div>
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid gap-x-16 gap-y-10 md:grid-cols-2">
             {PROMPT_GROUPS.map((g) => (
-              <div key={g.label} className={`${card} p-6 md:p-7`}>
-                <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 mb-4">{g.label}</h3>
-                <ul className="space-y-2.5">
+              <div key={g.label}>
+                <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 pb-3 border-b border-gray-300 dark:border-gray-700">{g.label}</h3>
+                <dl>
                   {g.prompts.map((p) => (
-                    <li
-                      key={p}
-                      className={`rounded-xl bg-gray-50 dark:bg-gray-950 border-l-4 ${g.accent} px-4 py-3 text-gray-800 dark:text-gray-100`}
-                    >
-                      &ldquo;{p}&rdquo;
-                    </li>
+                    <div key={p.say} className="py-4 border-b border-gray-200 dark:border-gray-800">
+                      <dt className="text-lg font-medium text-gray-900 dark:text-gray-50">{p.say}</dt>
+                      <dd className="mt-1 text-gray-500 dark:text-gray-400">{p.does}</dd>
+                    </div>
                   ))}
-                </ul>
+                </dl>
               </div>
             ))}
           </div>

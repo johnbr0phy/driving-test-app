@@ -1,4 +1,4 @@
-import { ScaleSpec } from "./types";
+import { ScaleSpec, SectionDef } from "./types";
 
 /** Piecewise-linear raw-to-scaled curve through anchor points (raw, scaled), rounded to `step`. */
 export function curve(maxRaw: number, anchors: [number, number][], band: number, step = 10): ScaleSpec {
@@ -26,4 +26,9 @@ export function overallPercent(sections: { raw: number; total: number }[]): numb
   const raw = sections.reduce((a, s) => a + s.raw, 0);
   const total = sections.reduce((a, s) => a + s.total, 0);
   return total ? Math.round((raw / total) * 100) : 0;
+}
+
+/** The scale a section result is read on: the lower-path scale when its adaptive module was the easier one. */
+export function scaleFor(section: SectionDef, byModule: { variant?: string }[]): ScaleSpec {
+  return section.lowerScale && byModule.some((m) => m.variant === "lower") ? section.lowerScale : section.scale;
 }

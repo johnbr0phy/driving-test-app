@@ -1,6 +1,7 @@
 import { AnswerValue, ExamV2Config, QuestionV2, SectionDef, StageState, TestSessionV2, TestResultV2, SectionResult } from "./types";
 import { stagesOf } from "./registry";
 import { isCorrect } from "./grading";
+import { scaleFor } from "./scales";
 
 function shuffle<T>(array: T[]): T[] {
   const out = [...array];
@@ -126,7 +127,8 @@ export function scoreSession(exam: ExamV2Config, session: TestSessionV2, byId: M
       }
       byModule.push({ module: stage.module, variant: stage.variant, raw: moduleRaw, total: stage.questionIds.length });
     }
-    const scaled = section.scale.table[Math.min(raw, section.scale.table.length - 1)] ?? section.scale.min;
+    const scale = scaleFor(section, byModule);
+    const scaled = scale.table[Math.min(raw, scale.table.length - 1)] ?? scale.min;
     return { section: section.key, raw, total, scaled, byDomain, byModule };
   });
   return {

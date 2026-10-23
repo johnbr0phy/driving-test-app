@@ -121,6 +121,12 @@ export interface SectionDef {
   directions: string;
   /** Scaled score for this section from raw correct count. */
   scale: ScaleSpec;
+  /**
+   * Scale for a sitting routed to the lower (easier) adaptive module. Its top
+   * is the cap that path can reach, as on the real digital SAT; without it
+   * both paths use `scale`.
+   */
+  lowerScale?: ScaleSpec;
   /** Domain keys in this section, in reporting order. */
   domains: string[];
 }

@@ -12,6 +12,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 import { getQuestionIndex, getStimulus } from "@/lib/v2/bank";
 import { getSectionV2, v2Routes } from "@/lib/v2/registry";
+import { scaleFor } from "@/lib/v2/scales";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { getTigerAsset } from "@/lib/tigerAssets";
@@ -113,6 +114,8 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
       <div id="result-breakdown" className="mt-6 grid gap-4 md:grid-cols-2">
         {result.sections.map((s) => {
           const def = getSectionV2(exam, s.section);
+          const scale = scaleFor(def, s.byModule);
+          const capped = scale !== def.scale;
           return (
             <div key={s.section} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5">
               <div className="flex items-baseline justify-between">
@@ -120,12 +123,17 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
                 <div className="text-sm text-gray-500 dark:text-gray-400">{s.raw} / {s.total} correct</div>
               </div>
               <div className="mt-1 text-3xl font-black tabular-nums">
-                {s.scaled}{def.scale.max === 100 && def.scale.min === 0 ? "%" : ""}{" "}
-                {def.scale.band > 0 && <span className="text-sm font-semibold text-gray-500 dark:text-gray-400">({Math.max(def.scale.min, s.scaled - def.scale.band)} to {Math.min(def.scale.max, s.scaled + def.scale.band)})</span>}
+                {s.scaled}{scale.max === 100 && scale.min === 0 ? "%" : ""}{" "}
+                {scale.band > 0 && <span className="text-sm font-semibold text-gray-500 dark:text-gray-400">({Math.max(scale.min, s.scaled - scale.band)} to {Math.min(scale.max, s.scaled + scale.band)})</span>}
               </div>
               <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">
                 {s.byModule.map((m) => `Module ${m.module}${m.variant ? ` (${m.variant === "upper" ? "harder" : "easier"})` : ""}: ${m.raw}/${m.total}`).join(" · ")}
               </div>
+              {capped && (
+                <p className="mt-2 text-xs font-medium text-amber-800 dark:text-amber-300">
+                  Module 1 sent you to the easier Module 2, which caps this section near {scale.max}. Get {Math.round((def.modules.find((m) => m.adaptive)?.adaptive?.threshold ?? 0.6) * 100)}% of Module 1 right to reach the harder path and the full {def.scale.max}.
+                </p>
+              )}
               <div className="mt-4 space-y-2">
                 {def.domains.map((d) => {
                   const v = s.byDomain[d] ?? { correct: 0, total: 0 };

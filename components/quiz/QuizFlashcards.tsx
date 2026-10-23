@@ -119,7 +119,7 @@ export function QuizFlashcards({ code }: { code: string }) {
           </button>
         }
       />
-      <div className="container mx-auto px-4 py-6 max-w-lg md:max-w-2xl">
+      <div className="container mx-auto px-4 py-6 max-w-lg md:max-w-2xl lg:max-w-4xl">
         <div className="flex items-baseline justify-between mb-3">
           <p className="text-sm text-gray-600 dark:text-gray-300 truncate">{quiz.title}</p>
           <p className="text-sm tabular-nums text-gray-600 dark:text-gray-300 shrink-0">

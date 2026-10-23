@@ -231,7 +231,9 @@ export function QuizPractice({ code }: { code: string }) {
           )}
         </div>
 
-        {current && <ReportQuestion key={current.questionId} code={code} questionId={current.questionId.slice(code.length + 1)} />}
+        {/* Its own key: the card above is keyed by the question id in this same
+            list, and a duplicate key leaves the old card on screen in production. */}
+        {current && <ReportQuestion key={`report-${current.questionId}`} code={code} questionId={current.questionId.slice(code.length + 1)} />}
       </div>
     </div>
   );

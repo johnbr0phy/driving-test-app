@@ -245,6 +245,43 @@ export function quizTopics(questions: Pick<QuizQuestion, "topic">[]): string[] {
   return [...seen];
 }
 
+export interface QuizPracticeSet {
+  /** 1-based, the ?set= number. */
+  n: number;
+  /** The topic, or "Set N" when the quiz is split by size. */
+  name: string;
+  /** Quiz question ids (not engine ids), in quiz order. */
+  ids: string[];
+}
+
+const PRACTICE_SET_TARGET = 25;
+const PRACTICE_SET_MAX_TOPICS = 10;
+const PRACTICE_SET_MIN_TOPIC = 4;
+
+/**
+ * The dashboard's practice steps, like an exam's training sets: one per
+ * topic when the topics make sensible sets (2 to 10 of them, none tiny),
+ * otherwise even slices of about 25. Questions without a topic join "More".
+ */
+export function quizPracticeSets(questions: Pick<QuizQuestion, "id" | "topic">[]): QuizPracticeSet[] {
+  const byTopic = new Map<string, string[]>();
+  for (const q of questions) {
+    const key = q.topic || "More";
+    byTopic.set(key, [...(byTopic.get(key) ?? []), q.id]);
+  }
+  const groups = [...byTopic.entries()];
+  if (groups.length >= 2 && groups.length <= PRACTICE_SET_MAX_TOPICS && groups.every(([, ids]) => ids.length >= PRACTICE_SET_MIN_TOPIC)) {
+    return groups.map(([name, ids], i) => ({ n: i + 1, name, ids }));
+  }
+  const count = Math.max(1, Math.ceil(questions.length / PRACTICE_SET_TARGET));
+  const size = Math.ceil(questions.length / count);
+  return Array.from({ length: count }, (_, i) => ({
+    n: i + 1,
+    name: count === 1 ? "Practice" : `Set ${i + 1}`,
+    ids: questions.slice(i * size, (i + 1) * size).map((q) => q.id),
+  }));
+}
+
 export function quizSummary(doc: QuizDoc): QuizSummary {
   return {
     code: doc.code,

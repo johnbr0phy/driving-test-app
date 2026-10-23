@@ -2,8 +2,9 @@
 
 // Practice a quiz the way a training set works: every question until it is
 // mastered, misses queued to come back, options reshuffled on the way back.
-// ?ids=q1,q2 narrows it to those questions (the results page links here with
-// the misses); progress still lives on the whole quiz.
+// ?set=N narrows it to one dashboard practice set (quizPracticeSets) and
+// ?ids=q1,q2 to those questions (the results page links here with the
+// misses); progress still lives on the whole quiz.
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
@@ -21,7 +22,7 @@ import { useSound } from "@/hooks/useSound";
 import { shuffleQuestionOptions } from "@/lib/shuffleOptions";
 import { recordClassAnswer } from "@/lib/classProgress";
 import { recordQuizPlayOnce, reportQuizQuestion } from "@/lib/quizProgress";
-import { quizEngineQuestions, quizExamId, quizDashboardPath, quizPath, quizQuestionId, type QuizPublic } from "@/lib/quizzes";
+import { quizEngineQuestions, quizExamId, quizDashboardPath, quizPath, quizPracticeSets, quizQuestionId, type QuizPublic } from "@/lib/quizzes";
 import { codeProgress, useQuizStore } from "@/store/useQuizStore";
 import { QuizStates, useQuiz } from "@/components/quiz/QuizLoader";
 import type { Question } from "@/types";
@@ -44,11 +45,16 @@ export function nextPracticeQuestion(questions: Question[], masteredIds: string[
   return unmastered[0];
 }
 
-/** The quiz question ids from ?ids=, as engine ids, keeping only ones the quiz has. */
-function scopedQuestions(quiz: QuizPublic, idsParam: string | null): Question[] {
+/** The questions ?ids= (or else ?set=) names, as engine questions, keeping only ones the quiz has. */
+function scopedQuestions(quiz: QuizPublic, idsParam: string | null, setParam: string | null): Question[] {
   const all = quizEngineQuestions(quiz);
-  if (!idsParam) return all;
-  const wanted = new Set(idsParam.split(",").map((id) => quizQuestionId(quiz.code, id.trim())));
+  const ids = idsParam
+    ? idsParam.split(",").map((id) => id.trim())
+    : setParam
+      ? quizPracticeSets(quiz.questions).find((s) => String(s.n) === setParam)?.ids
+      : undefined;
+  if (!ids) return all;
+  const wanted = new Set(ids.map((id) => quizQuestionId(quiz.code, id)));
   const scoped = all.filter((q) => wanted.has(q.questionId));
   return scoped.length ? scoped : all;
 }
@@ -58,6 +64,8 @@ export function QuizPractice({ code }: { code: string }) {
   const quiz = state.quiz;
   const searchParams = useSearchParams();
   const idsParam = searchParams.get("ids");
+  const setParam = idsParam ? null : searchParams.get("set");
+  const scope = idsParam ?? setParam;
   const hydrated = useHydration();
   const { playCorrectSound, playIncorrectSound } = useSound();
 
@@ -72,7 +80,7 @@ export function QuizPractice({ code }: { code: string }) {
   const [resetConfirm, setResetConfirm] = useState(false);
   const currentIdRef = useRef<string | null>(null);
 
-  const questions = quiz ? scopedQuestions(quiz, idsParam) : [];
+  const questions = quiz ? scopedQuestions(quiz, idsParam, setParam) : [];
   const scopedIds = questions.map((q) => q.questionId);
   const mastered = progress.masteredIds.filter((id) => scopedIds.includes(id)).length;
 
@@ -108,7 +116,7 @@ export function QuizPractice({ code }: { code: string }) {
     setCurrent(null);
     setComplete(false);
     setFireworks(false);
-  }, [idsParam]);
+  }, [scope]);
 
   if (!quiz) return <QuizStates code={code} state={state} />;
 
@@ -124,7 +132,7 @@ export function QuizPractice({ code }: { code: string }) {
   };
 
   const practiceAgain = () => {
-    resetPractice(code, idsParam ? scopedIds : undefined);
+    resetPractice(code, scope ? scopedIds : undefined);
     setComplete(false);
     setResetConfirm(false);
     currentIdRef.current = null;
@@ -158,7 +166,7 @@ export function QuizPractice({ code }: { code: string }) {
                 <Image src="/tiger_face_01.png" alt="Tiger mascot" width={160} height={160} className="w-[120px] h-[120px] md:w-[160px] md:h-[160px]" />
               </div>
               <div className="text-base md:text-lg font-extrabold uppercase tracking-widest mb-4 text-green-300">
-                {idsParam ? "Misses cleared" : "Every question mastered"}
+                {idsParam ? "Misses cleared" : setParam ? "Set mastered" : "Every question mastered"}
               </div>
               <div className="text-7xl md:text-8xl font-black mb-3 leading-none text-green-500 dark:text-green-400">100%</div>
               <div className="text-xl md:text-2xl text-gray-400 mb-5">
@@ -216,7 +224,7 @@ export function QuizPractice({ code }: { code: string }) {
           <div className="w-full bg-brand-border-light rounded-full h-2 mt-2 max-w-md mx-auto">
             <div className="bg-brand h-2 rounded-full transition-all" style={{ width: `${total ? (mastered / total) * 100 : 0}%` }} />
           </div>
-          {idsParam && (
+          {scope && total < quiz.questions.length && (
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
               Practicing {total} of {quiz.questions.length}. <Link href={`${quizPath(code)}/practice`} className="underline">Practice the whole quiz</Link>
             </p>

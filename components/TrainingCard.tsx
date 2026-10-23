@@ -6,6 +6,8 @@ import { useState, useEffect, useId, useRef } from "react";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { QuestionImage } from "@/components/QuestionImage";
 
+const READY_MS = 300;
+
 interface TrainingCardProps {
   question: Question;
   selectedAnswer: string | null;
@@ -24,11 +26,28 @@ export function TrainingCard({
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => { heading.current?.focus({ preventScroll: true }); }, [question.questionId]);
   const [isReady, setIsReady] = useState(false);
+  // When this question appeared and when the current press on an option began.
+  // A press counts only if it began READY_MS after the question appeared, so the
+  // second tap of a double tap on "Next Question" never answers the new question
+  // (its press starts inside the window even when its click lands after it).
+  const shownAt = useRef(0);
+  const pressedAt = useRef<number | null>(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsReady(true), 300);
+    shownAt.current = performance.now();
+    pressedAt.current = null;
+    setIsReady(false);
+    const timer = setTimeout(() => setIsReady(true), READY_MS);
     return () => clearTimeout(timer);
-  }, []);
+  }, [question]);
+
+  const choose = (letter: string, e: React.MouseEvent) => {
+    // A keyboard press (detail 0) has no pointer down; it counts from now.
+    const start = e.detail === 0 ? performance.now() : pressedAt.current ?? performance.now();
+    pressedAt.current = null;
+    if (answered || start - shownAt.current < READY_MS) return;
+    onAnswerSelect(letter);
+  };
 
   const answered = selectedAnswer !== null;
   const isCorrect = selectedAnswer === question.correctAnswer;
@@ -74,7 +93,8 @@ export function TrainingCard({
               type="button"
               aria-pressed={selectedAnswer === option.letter}
               aria-disabled={!isReady || answered}
-              onClick={() => isReady && !answered && onAnswerSelect(option.letter)}
+              onPointerDown={() => { pressedAt.current = performance.now(); }}
+              onClick={(e) => choose(option.letter, e)}
               className={`w-full text-left border-2 rounded-lg p-3 md:p-4 transition-all ${getOptionClasses(option.letter)}`}
             >
               <div className="flex items-center gap-2 md:gap-3">

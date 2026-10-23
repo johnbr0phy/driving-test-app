@@ -3,7 +3,7 @@
 // every test on the site, FAQ, final call to action.
 
 import Link from "next/link";
-import { BarChart3, Gift, Link2, Lock, MonitorSmartphone, Plus, Smartphone } from "lucide-react";
+import { BarChart3, FileText, Gift, Link2, Lock, MonitorSmartphone, Plus, Smartphone } from "lucide-react";
 import { TEST_CATALOG, TEST_GROUPS } from "@/lib/testCatalog";
 import { BrowserPreview, PhonePreview } from "@/components/teach/TeachPreviews";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
@@ -244,6 +244,23 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-10 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-5 md:gap-8">
+            <div className="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+              <FileText className="w-6 h-6 text-brand-dark" aria-hidden="true" />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-1">Teaching something that isn&apos;t here? Make your own quiz</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Turn your notes, a study guide or a Quizlet set into a practice quiz, share it with just your class, and see who played and what they missed.
+              </p>
+            </div>
+            <Link
+              href="/create"
+              className="inline-flex items-center justify-center gap-1.5 flex-shrink-0 rounded-full border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-50 hover:border-gray-900 dark:hover:border-gray-50 px-6 py-3 font-medium"
+            >
+              <Plus className="w-4 h-4" aria-hidden="true" /> Create a quiz
+            </Link>
           </div>
         </div>
       </div>

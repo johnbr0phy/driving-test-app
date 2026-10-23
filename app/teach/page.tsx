@@ -8,6 +8,7 @@ import { ChevronRight, Plus, Users } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { teachFetch } from "@/lib/teachClient";
 import { TeachLanding } from "@/components/teach/TeachLanding";
+import { TeachQuizzes } from "@/components/teach/TeachQuizzes";
 import { markTeacher, teachesHint } from "@/components/TeachLink";
 import type { ClassSummary } from "@/lib/classes";
 
@@ -76,6 +77,7 @@ export default function TeachPage() {
               </li>
             ))}
           </ul>
+          <TeachQuizzes />
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-8">
             <button type="button" className="underline" onClick={() => setClasses([])}>
               How Tigertest classes work

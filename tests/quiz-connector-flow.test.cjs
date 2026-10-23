@@ -27,5 +27,5 @@ test('product help and email no longer offer the assistant copy/paste round trip
  for(const file of ['app/connect/page.tsx','lib/email-templates.ts','lib/llmsTxt.ts','lib/quizWritingGuide.ts','lib/quizzes.ts']){
  const text=readFileSync(file,'utf8');assert.doesNotMatch(text,/quizAssistantPrompt|parseAssistantQuiz|paste the reply back|copied prompt|Copy our question-writing prompt/i,file);
  }
- const help=readFileSync('app/connect/page.tsx','utf8');assert.match(help,/help.openai.com\/en\/articles\/12584461/);assert.match(help,/support.claude.com\/en\/articles\/11175166/);
+ const help=readFileSync('app/connect/page.tsx','utf8');assert.match(help,/const MCP_URL = "https:\/\/www.tigertest.io\/api\/mcp"/);assert.match(help,/help.openai.com\/en\/articles\/12584461/);assert.match(help,/support.claude.com\/en\/articles\/11175166/);
 });

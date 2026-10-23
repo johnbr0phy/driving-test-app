@@ -6,7 +6,7 @@ import { BookOpen, Car, Link2, Lock, MessageSquare, Plus } from "lucide-react";
 // ChatGPT as a custom connector, what it can do, and a short FAQ.
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
-const MCP_URL = "https://tigertest.io/api/mcp";
+const MCP_URL = "https://www.tigertest.io/api/mcp";
 
 const title = "Use TigerTest in ChatGPT and Claude";
 const description =

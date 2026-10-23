@@ -19,7 +19,7 @@ export function CreateSources() {
         </Button>
       </div>
       <ol className="list-decimal pl-5 space-y-3 text-sm text-gray-600 dark:text-gray-300">
-        <li>Follow your assistant's setup guide. Sign in to TigerTest and approve the connection.</li>
+        <li>Follow your assistant&apos;s setup guide. Sign in to TigerTest and approve the connection.</li>
         <li>In a chat with TigerTest enabled, share your material, who the quiz is for and what they should learn. Ask your assistant to make a TigerTest quiz.</li>
         <li>Answer any questions about missing context. Review and approve the save when your assistant asks, then open your quiz link to practice, edit or share.</li>
       </ol>

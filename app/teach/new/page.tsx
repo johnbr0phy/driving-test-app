@@ -96,7 +96,7 @@ function NewClassForm() {
     }
   };
 
-  if (loading || !user) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
+  if (loading || !user) return <div className="flex-1 flex items-center justify-center py-24 bg-gray-50 dark:bg-gray-950"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand" /></div>;
 
   const stateOptions = choice?.states ?? [];
 

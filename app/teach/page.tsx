@@ -42,13 +42,13 @@ export default function TeachPage() {
       .catch(() => setClasses([]));
   }, [user]);
 
-  // Hold an empty page instead of the landing while we find out, unless this
+  // Show the admin spinner instead of the landing while we find out, unless this
   // device already knows the account has no classes; a teacher's page also
   // waits for their quizzes so that section never pops in late.
   const waiting = user
     ? (classes === null && teachesHint(user.uid) !== false) || (!!classes?.length && quizzes === null)
     : loading && deviceTeaches;
-  if (waiting) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
+  if (waiting) return <div className="flex-1 flex items-center justify-center py-24 bg-gray-50 dark:bg-gray-950"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand" /></div>;
 
   if (!user || !classes?.length) return <TeachLanding signedIn={!!user} />;
 

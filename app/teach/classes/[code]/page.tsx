@@ -79,7 +79,7 @@ export default function ClassPage() {
       </div>
     );
   }
-  if (!report) return <div className="flex-1 bg-gray-50 dark:bg-gray-950 px-4 py-12 text-center text-sm text-gray-500 dark:text-gray-400">Loading your class…</div>;
+  if (!report) return <div className="flex-1 flex items-center justify-center py-24 bg-gray-50 dark:bg-gray-950"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand" /></div>;
 
   const accuracy = pct(report.correct, report.answered);
   const card = "rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-5";

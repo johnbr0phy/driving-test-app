@@ -33,9 +33,10 @@ export function Header() {
   const displayPhotoURL = photoURL || user?.photoURL;
   const selectedState = useStore((state) => state.selectedState);
 
-  // Hide header on test and training pages (DMV and registry exams)
+  // Hide header on test and training pages (DMV, registry exams and quizzes)
   const hideHeader =
     pathname?.startsWith("/test/") ||
+    /^\/q\/[^/]+\/(practice|test)(\/|$)/.test(pathname ?? "") ||
     pathname === "/training" ||
     pathname?.startsWith("/practice/") ||
     EXAMS.some((e) => pathname?.startsWith(`${e.slug}/test`) || pathname?.startsWith(`${e.slug}/practice/`));

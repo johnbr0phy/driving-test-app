@@ -7,14 +7,17 @@ import Link from "next/link";
 import { ChevronRight, Plus, Users } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { teachFetch } from "@/lib/teachClient";
+import { quizFetch } from "@/lib/quizClient";
 import { TeachLanding } from "@/components/teach/TeachLanding";
 import { TeachQuizzes } from "@/components/teach/TeachQuizzes";
 import { markTeacher, teachesHint } from "@/components/TeachLink";
 import type { ClassSummary } from "@/lib/classes";
+import type { QuizSummary } from "@/lib/quizzes";
 
 export default function TeachPage() {
   const { user, loading } = useAuth();
   const [classes, setClasses] = useState<ClassSummary[] | null>(null);
+  const [quizzes, setQuizzes] = useState<QuizSummary[] | null>(null);
   // Set before first paint, so a teacher opening /teach never sees the landing
   // flash up while sign-in settles on a fresh load (the server render is
   // always the landing, for crawlers and signed-out visitors).
@@ -24,8 +27,13 @@ export default function TeachPage() {
   useEffect(() => {
     if (!user) {
       setClasses(null);
+      setQuizzes(null);
       return;
     }
+    // Quizzes load alongside classes so the page appears in one piece.
+    quizFetch<{ quizzes: QuizSummary[] }>(user, "/api/quizzes")
+      .then((d) => setQuizzes(d.quizzes))
+      .catch(() => setQuizzes([]));
     teachFetch<{ classes: ClassSummary[] }>(user, "/api/classes")
       .then((d) => {
         setClasses(d.classes);
@@ -35,8 +43,11 @@ export default function TeachPage() {
   }, [user]);
 
   // Hold an empty page instead of the landing while we find out, unless this
-  // device already knows the account has no classes.
-  const waiting = user ? classes === null && teachesHint(user.uid) !== false : loading && deviceTeaches;
+  // device already knows the account has no classes; a teacher's page also
+  // waits for their quizzes so that section never pops in late.
+  const waiting = user
+    ? (classes === null && teachesHint(user.uid) !== false) || (!!classes?.length && quizzes === null)
+    : loading && deviceTeaches;
   if (waiting) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
 
   if (!user || !classes?.length) return <TeachLanding signedIn={!!user} />;
@@ -77,7 +88,7 @@ export default function TeachPage() {
               </li>
             ))}
           </ul>
-          <TeachQuizzes />
+          <TeachQuizzes quizzes={quizzes ?? []} />
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-8">
             <button type="button" className="underline" onClick={() => setClasses([])}>
               How Tigertest classes work

@@ -42,6 +42,11 @@ import {
 } from '@/lib/server/quizzes';
 import { buildClassReport, type MemberDoc } from '@/lib/server/classReport';
 import { QUIZ_CONTEXT_GUIDANCE, QUIZ_WRITING_EXAMPLE, QUIZ_WRITING_GUIDE } from '@/lib/quizWritingGuide';
+import { listInProgressTests, studyProgress } from '@/lib/server/mcpStudyProgress';
+import { nextCatalogPractice, answerCatalogPractice } from '@/lib/server/mcpCatalogPractice';
+import { nextV2Practice, answerV2Practice } from '@/lib/server/mcpV2Practice';
+import { EXAMS_V2 } from '@/lib/v2/registry';
+import { getExamById } from '@/lib/exams';
 import { answerQuizQuestion, findQuizzes, loadPlayableQuiz, nextQuizQuestion, resetQuizPlay, type PlayableQuizError } from '@/lib/server/mcpQuizPlay';
 
 const questionMeta = new Map<string, { question: string; category: string }>(
@@ -297,9 +302,37 @@ const QUIZ_WRITING_HINT =
 
 const tools: ToolEntry[] = [
   {
+    name: 'list_in_progress_tests',
+    description: "Discover this person's signed-in TigerTest exams and custom quizzes from synced progress, using the site's In progress semantics. Start here when asked to quiz them on what they are studying. Ask them to choose when multiple are listed. Returns exact IDs, available practice and web-resume links. Guest-only/unsynced browser progress is unavailable.",
+    register(server,ctx){server.registerTool(this.name,{description:this.description,inputSchema:{}},async()=>{const r=await listInProgressTests(ctx.userId);return r.ok?ok(r.data):fail(r.code,r.message);});},
+  },
+  {
+    name: 'get_study_progress',
+    description: 'Get mastery, weak topics/drills and active web test links for an exact examId from list_in_progress_tests. DMV uses get_progress/get_weak_areas. A web test link preserves timed/adaptive test rules; chat practice does not advance that sitting.',
+    register(server,ctx){server.registerTool(this.name,{description:this.description,inputSchema:{examId:z.string().min(1).max(80)}},async({examId})=>{const r=await studyProgress(ctx.userId,examId);return r.ok?ok(r.data):fail(r.code,r.message);});},
+  },
+  {
+    name: 'start_study_practice',
+    description: 'Start or resume untimed practice for an exact catalog examId from list_in_progress_tests. Uses the existing account mastery queue. Optionally select a v1 setNumber or v2 drillKey from get_study_progress to target a weak area. Timed/adaptive tests remain on their web-resume links. Show the full question, passage, figure and structured answer instructions; never force complex formats into A-D. Submit with submit_study_answer and its attemptId. DMV/custom quizzes retain quiz_me/answer.',
+    register(server,ctx){server.registerTool(this.name,{description:this.description,inputSchema:{examId:z.string().min(1).max(80),setNumber:z.number().int().min(1).max(100).optional(),drillKey:z.string().min(1).max(100).optional()}},async({examId,setNumber,drillKey})=>{
+      if ((setNumber !== undefined && drillKey !== undefined) || (getExamById(examId) && drillKey !== undefined) || (EXAMS_V2.some(e=>e.id===examId) && setNumber !== undefined) || ((examId==='dmv'||examId.startsWith('quiz:')) && (setNumber!==undefined||drillKey!==undefined))) return fail('INVALID_SELECTOR','Use setNumber only for a catalog training set, or drillKey only for a v2 drill. Use the dedicated DMV tools to choose a DMV set.');
+      if(examId==='dmv')return dmvQuizMe(ctx.userId);
+      if(examId.startsWith('quiz:')){const found=await loadPlayableQuiz(ctx.userId,examId.slice(5));return 'error'in found?quizPlayFail(found.error,examId.slice(5)):ok(await quizMeResult(ctx.userId,found.quiz));}
+      const r=getExamById(examId)?await nextCatalogPractice(ctx.userId,examId,undefined,setNumber):EXAMS_V2.some(e=>e.id===examId)?await nextV2Practice(ctx.userId,examId,undefined,{drillKey,practice:true}):{ok:false as const,code:'EXAM_NOT_FOUND',message:'Use an exact ID returned by list_in_progress_tests.'};return r.ok?ok(r.data):fail(r.code,r.message);
+    });},
+  },
+  {
+    name: 'submit_study_answer',
+    description: 'Answer the exact pending catalog practice question. Copy examId, questionId and attemptId from the previous response. Follow its answerFormat: letter for v1, numeric text or structured zero-based index array for v2. A stale/replayed attempt is rejected without recording another answer. Returns feedback and next question. Use the NEW attemptId for each next answer. DMV/custom quizzes use answer instead.',
+    register(server,ctx){server.registerTool(this.name,{description:this.description,inputSchema:{examId:z.string().min(1).max(80),questionId:z.string().min(1).max(160),attemptId:z.string().min(1).max(100),answer:z.union([z.string().max(200),z.array(z.number().int().min(0).max(100)).max(100)])}},async({examId,questionId,attemptId,answer})=>{
+      const r=getExamById(examId)?typeof answer==='string'?await answerCatalogPractice(ctx.userId,examId,questionId,answer,attemptId):{ok:false as const,code:'BAD_ANSWER',message:'Use a letter A-D for this question.'}:EXAMS_V2.some(e=>e.id===examId)?await answerV2Practice(ctx.userId,examId,questionId,answer,undefined,attemptId):{ok:false as const,code:'EXAM_NOT_FOUND',message:'Use an exact catalog exam ID.'};return r.ok?ok(r.data):fail(r.code,r.message);
+    });},
+  },
+
+  {
     name: 'ping',
     description:
-      'Health check. Returns the authenticated user\'s UID and a timestamp. Use to verify the MCP connection works. This server does two things: DMV permit test tutoring (list_states, get_progress, the training set and practice test tools) and quizzes, which turn the person\'s own material into a shareable TigerTest practice test (get_quiz_writing_guide, create_quiz, add_quiz_questions, list_my_quizzes, list_my_classes, get_quiz, update_quiz, delete_quiz, get_quiz_report).',
+      'Health check. Returns the authenticated user\'s UID and a timestamp. Use to verify the MCP connection works. Call list_in_progress_tests to discover the person\'s saved catalog exams and custom quizzes; start_study_practice supports catalog practice with shared account mastery. Existing tools support DMV permit test tutoring (list_states, get_progress, the training set and practice test tools) and quizzes, which turn the person\'s own material into a shareable TigerTest practice test (get_quiz_writing_guide, create_quiz, add_quiz_questions, list_my_quizzes, list_my_classes, get_quiz, update_quiz, delete_quiz, get_quiz_report).',
     register(server, ctx) {
       server.registerTool(
         'ping',

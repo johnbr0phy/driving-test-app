@@ -29,3 +29,12 @@ test('product help and email no longer offer the assistant copy/paste round trip
  }
  const help=readFileSync('app/connect/page.tsx','utf8');assert.match(help,/const MCP_URL = "https:\/\/www.tigertest.io\/api\/mcp"/);assert.match(help,/help.openai.com\/en\/articles\/12584461/);assert.match(help,/support.claude.com\/en\/articles\/11175166/);
 });
+test('in-progress guidance preserves the redesigned connect page and canonical setup',()=>{
+ const help=readFileSync('app/connect/page.tsx','utf8');
+ assert.match(help,/Keep learning your tests in progress/);
+ assert.match(help,/Continue timed or adaptive test sittings on the website/);
+ assert.match(help,/Unsynced browser work may need repeating/);
+ assert.match(help,/components\/connect\/CopyUrl/);
+ assert.match(help,/\/og\/connect/);
+ assert.doesNotMatch(help,/Get quizzed on the DMV test/);
+});

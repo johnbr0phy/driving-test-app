@@ -7,13 +7,13 @@ import { QUIZZES_PAGES_UPDATED_AT } from "@/lib/seoDates";
 // ask for. Endpoint, auth, the tool list and example prompts. /connect is
 // the version for people; this one is for reviewers and builders.
 
-const SITE = "https://tigertest.io";
+const SITE = "https://www.tigertest.io";
 const SUPPORT_EMAIL = "john@johnbrophy.net";
 
 export const metadata: Metadata = {
   title: "TigerTest for agents and developers",
   description:
-    "Connect any AI agent to TigerTest over MCP: quiz a person on their own material or the DMV test in two tool calls, make quizzes, and read who played. OAuth 2.1 with PKCE, no API key.",
+    "Connect any AI agent to TigerTest over MCP: discover their tests in progress and practice catalog exams or custom quizzes, make quizzes, and read who played. OAuth 2.1 with PKCE, no API key.",
   alternates: { canonical: `${SITE}/developers` },
   openGraph: { title: "TigerTest for agents and developers", description: "Quiz a person in two tool calls over MCP.", url: `${SITE}/developers`, type: "website" },
 };
@@ -42,6 +42,16 @@ const TOOL_GROUPS: { title: string; blurb: string; tools: { name: string; what: 
       { name: "list_my_classes", what: "The person's Tigertest classes, to share a quiz with just one class." },
       { name: "delete_quiz", what: "Delete a quiz (confirm first)." },
       { name: "get_quiz_report", what: "Who played, which questions and topics they missed most." },
+    ],
+  },
+  {
+    title: "Continue tests in progress",
+    blurb: "Discover signed-in progress across catalog exams and custom quizzes. Chat practice uses existing account mastery; timed or adaptive test sittings resume on the website.",
+    tools: [
+      { name: "list_in_progress_tests", what: "Find the person's saved exams and quizzes. Ask which one when several are listed." },
+      { name: "get_study_progress", what: "Mastery, weak topics or drills, and active web-test links for an exact exam ID." },
+      { name: "start_study_practice", what: "Resume untimed catalog practice, optionally choosing a set or drill. Includes passages, figures and format-specific answer instructions." },
+      { name: "submit_study_answer", what: "Grade a pending practice answer with its one-use attemptId. Updates shared mastery and returns the next question." },
     ],
   },
   {
@@ -85,7 +95,7 @@ export default function DevelopersPage() {
         <header>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-50">TigerTest for agents</h1>
           <p className="mt-3 text-gray-600 dark:text-gray-300">
-            One MCP server. Any agent that speaks it can quiz a person on their own material or the DMV test, make quizzes, and read
+            One MCP server. Any agent that speaks it can discover their tests in progress, practice catalog exams or custom quizzes, make quizzes, and read
             who played. Two tool calls run a whole session. TigerTest never runs a model on your behalf: your agent writes the
             questions and does the talking, TigerTest keeps the questions, the mastery queue and the scores.
           </p>
@@ -114,8 +124,8 @@ export default function DevelopersPage() {
         <section>
           <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2">Add it to a client</h2>
           <ul className="list-disc pl-5 text-sm text-gray-600 dark:text-gray-300 space-y-1.5">
-            <li>Claude: Settings, Connectors, Add custom connector, URL <span className={code}>{SITE}/api/mcp</span>.</li>
-            <li>ChatGPT: Settings, Connectors (developer mode), Create, MCP server URL <span className={code}>{SITE}/api/mcp</span>, OAuth.</li>
+            <li>Claude: follow the current setup guide on /connect#add-to-claude. Use URL <span className={code}>{SITE}/api/mcp</span>.</li>
+            <li>ChatGPT: follow the current setup guide on /connect#add-to-chatgpt for your plan and workspace. Use MCP server URL <span className={code}>{SITE}/api/mcp</span>, OAuth.</li>
             <li>Meta Muse and other agent platforms: submit the same endpoint as an existing MCP connector with OAuth and PKCE.</li>
             <li>
               Any MCP SDK or MCP Inspector: point at the endpoint; the 401 carries a <span className={code}>resource_metadata</span> hint, so the OAuth flow starts on its own.
@@ -159,7 +169,7 @@ export default function DevelopersPage() {
             <dt className="text-gray-600 dark:text-gray-300">Name</dt>
             <dd className="text-gray-900 dark:text-gray-50">TigerTest</dd>
             <dt className="text-gray-600 dark:text-gray-300">One line</dt>
-            <dd className="text-gray-900 dark:text-gray-50">Practice tests from your own notes, plus the DMV test. Quiz me, track what I miss, share with my class.</dd>
+            <dd className="text-gray-900 dark:text-gray-50">Practice your saved TigerTest exams and quizzes. Discover progress, review weak areas and resume timed tests on the website.</dd>
             <dt className="text-gray-600 dark:text-gray-300">Icon</dt>
             <dd><a href="/icon-512.png" className="underline text-gray-900 dark:text-gray-50">{SITE}/icon-512.png</a> (512 by 512 PNG)</dd>
             <dt className="text-gray-600 dark:text-gray-300">Privacy</dt>

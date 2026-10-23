@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useV2Store, EMPTY_V2, V2Data } from "@/store/useV2Store";
 import { loadV2, mergeV2, saveV2 } from "@/lib/v2/sync";
+import { shouldPreferRemoteMcpProgress } from "@/lib/mcpProgressGuard";
 
 const pick = (s: V2Data): V2Data => ({ sessions: s.sessions, results: s.results, drills: s.drills, basics: s.basics, goals: s.goals });
 
@@ -40,7 +41,11 @@ export function V2Sync() {
         const local = state.syncedUid && state.syncedUid !== uid ? EMPTY_V2 : pick(useV2Store.getState());
         const remote = await loadV2(uid);
         if (cancelled) return;
-        const merged = remote ? mergeV2(local, remote) : local;
+        // Do not resurrect an assistant reset by unioning the stale account
+        // copy on reload. Guests still merge, and other accounts stay isolated.
+        const merged = shouldPreferRemoteMcpProgress(uid, 'v2', state.syncedUid)
+          ? remote ?? EMPTY_V2
+          : remote ? mergeV2(local, remote) : local;
         // A goal picked while the account was loading is newer than the
         // account's copy: keep it instead of snapping back to the saved one.
         const goalsNow = useV2Store.getState().goals;

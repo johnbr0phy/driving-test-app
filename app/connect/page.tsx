@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, BookOpen, Car, Check, ChevronDown, FileText, Link2, Lock, Plus, Sparkles, Wrench } from "lucide-react";
+import { ArrowRight, BookOpen, Check, ChevronDown, FileText, Link2, Lock, Plus, Sparkles, Wrench } from "lucide-react";
 import { CopyUrl } from "@/components/connect/CopyUrl";
 
 // /connect: how to add the TigerTest MCP server (app/api/mcp) to Claude or
@@ -12,7 +12,7 @@ const MCP_URL = "https://www.tigertest.io/api/mcp";
 
 const title = "Use TigerTest in ChatGPT and Claude";
 const description =
-  "Add TigerTest to Claude or ChatGPT: turn your notes into a shareable practice quiz, or get quizzed on your state's DMV test.";
+  "Add TigerTest to Claude or ChatGPT: turn your notes into a shareable practice quiz, or keep practicing the tests you have in progress.";
 
 export const metadata: Metadata = {
   title,
@@ -30,6 +30,10 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
+  {
+    q: "What if I study in chat and the browser at the same time?",
+    a: "An older browser tab cannot save over newer chat progress. Saving pauses with a notice; reopen TigerTest to load saved changes. Unsynced browser work may need repeating. Guest-only progress is not visible in chat.",
+  },
   {
     q: "Is it free?",
     a: "Yes. A free account keeps 3 quizzes of up to 50 questions. Premium ($9.99 once) raises that to 100 quizzes of up to 200.",
@@ -74,7 +78,7 @@ const PROMPT_GROUPS = [
   },
   {
     label: "Get quizzed",
-    prompts: ["Quiz me on my biology notes.", "Quiz me for the Texas DMV test.", "What are my weakest DMV topics?"],
+    prompts: ["Which tests do I have in progress?", "Continue my practice where I left off.", "Which topics am I getting wrong?"],
   },
 ];
 
@@ -256,14 +260,15 @@ export default function ConnectPage() {
             </div>
             <div className={`${card} p-7 md:p-8 flex flex-col`}>
               <div className="w-12 h-12 rounded-2xl bg-sky-100 dark:bg-sky-950 text-sky-600 dark:text-sky-400 flex items-center justify-center mb-5">
-                <Car className="w-6 h-6" aria-hidden="true" />
+                <BookOpen className="w-6 h-6" aria-hidden="true" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-3">Get quizzed on the DMV test</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-3">Keep learning your tests in progress</h3>
               <ul className="space-y-2.5 text-gray-600 dark:text-gray-300">
                 {[
-                  "Practice tests for all 50 states.",
-                  "Drill the topics you keep missing.",
-                  "Progress syncs with tigertest.io.",
+                  "Choose from your saved exams and custom quizzes.",
+                  "Resume practice and drill the topics you keep missing.",
+                  "Chat practice updates your TigerTest account progress.",
+                  "Continue timed or adaptive test sittings on the website.",
                 ].map((t) => (
                   <li key={t} className="flex gap-2.5">
                     <Check className="w-5 h-5 mt-0.5 flex-shrink-0 text-sky-500" aria-hidden="true" />

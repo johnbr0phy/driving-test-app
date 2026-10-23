@@ -1,7 +1,8 @@
+import { captureMcpProgressRevision, assertMcpProgressRevision, throwIfMcpProgressConflict } from '@/lib/mcpProgressGuard';
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { Question, TestSession, UserAnswer, TestAttemptStats, QuestionPerformance, Subscription } from '@/types';
-import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
+import { doc, getDoc, updateDoc, runTransaction } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
 import { splitLegacySets } from '@/lib/legacySetSplits';
@@ -912,10 +913,12 @@ export const useStore = create<AppState>()(
       loadUserData: async (userId: string) => {
         try {
           const userDoc = await getDoc(doc(db, 'users', userId));
+          captureMcpProgressRevision(userId, 'catalog', userDoc.data());
           if (userDoc.exists()) {
             const data = userDoc.data();
             set({
               selectedState: data.selectedState || null,
+              language: data.language === 'en' || data.language === 'es' ? data.language : get().language,
               currentTests: data.currentTests || {},
               completedTests: data.completedTests || [],
               testAttempts: data.testAttempts || [],
@@ -1011,6 +1014,7 @@ export const useStore = create<AppState>()(
         if (get().loadedUid !== userId) return;
 
         try {
+          throwIfMcpProgressConflict(userId, 'catalog');
           // Convert currentTests dates to timestamps for Firestore
           const currentTestsForFirestore = Object.keys(currentTests).reduce((acc, testId) => {
             const test = currentTests[parseInt(testId)];
@@ -1116,21 +1120,12 @@ export const useStore = create<AppState>()(
               superAmazingEligible: samEligible,
             },
           };
-          try {
-            await updateDoc(userRef, payload);
-          } catch (err) {
-            // Doc doesn't exist yet (first save for a new user) - fall back to
-            // setDoc with merge so we don't accidentally overwrite anything
-            // the server may have stamped (e.g., referredBy from a claim that
-            // raced ahead of the first save). Stamp createdAt here too so
-            // users who skip the welcome email (no consent / network error)
-            // still get a signup timestamp for conversion analytics.
-            if ((err as { code?: string })?.code === 'not-found') {
-              await setDoc(userRef, { ...payload, createdAt: new Date().toISOString() }, { merge: true });
-            } else {
-              throw err;
-            }
-          }
+          await runTransaction(db, async (transaction) => {
+            const remote = await transaction.get(userRef);
+            assertMcpProgressRevision(userId, 'catalog', remote.data());
+            if (remote.exists()) transaction.update(userRef, payload);
+            else transaction.set(userRef, { ...payload, createdAt: new Date().toISOString() }, { merge: true });
+          });
         } catch (error) {
           console.error('Error saving to Firestore:', error);
         }

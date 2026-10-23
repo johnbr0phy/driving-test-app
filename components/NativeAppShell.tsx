@@ -5,7 +5,7 @@ import { isNativeApp } from "@/lib/native-app";
 
 /**
  * Tags <html> with .native-app when the site is loaded inside the
- * TigerTest mobile shell, so CSS can apply safe-area insets (see
+ * Tigertest mobile shell, so CSS can apply safe-area insets (see
  * globals.css), and extends the viewport meta with viewport-fit=cover so
  * the WebView draws behind the notch/home indicator. Both are shell-only:
  * on the mobile web, viewport-fit=cover lets iOS browser chrome overlap the

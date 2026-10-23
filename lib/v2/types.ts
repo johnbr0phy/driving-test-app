@@ -1,5 +1,5 @@
 /**
- * TigerTest v2: question model and exam configuration for sectioned, timed,
+ * Tigertest v2: question model and exam configuration for sectioned, timed,
  * navigable exams (SAT, ACT, AP, ASVAB, GED). Lives beside the v1 flow and
  * shares nothing with it: separate store, routes, components and banks.
  */
@@ -195,7 +195,7 @@ export interface ExamV2Config {
   /** Total test time shown on the test step, e.g. "2 hr 14 min". */
   testLength: string;
   /**
-   * What the one-time TigerTest Premium unlocks on this exam (lib/v2/premium).
+   * What the one-time Tigertest Premium unlocks on this exam (lib/v2/premium).
    * Omitted means the whole exam is free.
    */
   premium?: {

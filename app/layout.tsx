@@ -29,8 +29,8 @@ const assetOrigin = siteUrl.replace("://tigertest.io", "://www.tigertest.io");
 export const metadata: Metadata = {
   metadataBase: new URL(assetOrigin),
   title: {
-    default: "Free DMV Practice Test 2026 - All 50 States | TigerTest",
-    template: "%s | TigerTest",
+    default: "Free DMV Practice Test 2026 - All 50 States | Tigertest",
+    template: "%s | Tigertest",
   },
   description:
     "Free DMV practice tests for all 50 states. 200+ questions per state with instant feedback and detailed explanations. Track your progress and pass your driving test on the first try.",
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     "free driving test",
     "driving test prep",
   ],
-  authors: [{ name: "TigerTest" }],
-  creator: "TigerTest",
-  publisher: "TigerTest",
+  authors: [{ name: "Tigertest" }],
+  creator: "Tigertest",
+  publisher: "Tigertest",
   robots: {
     index: true,
     follow: true,
@@ -64,8 +64,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "TigerTest",
-    title: "Free DMV Practice Test 2026 | TigerTest",
+    siteName: "Tigertest",
+    title: "Free DMV Practice Test 2026 | Tigertest",
     description:
       "Free DMV practice tests for all 50 states. 200+ questions per state with instant feedback and detailed explanations.",
     images: [
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
         url: "/og-home.png",
         width: 1200,
         height: 630,
-        alt: "TigerTest: free practice tests for DMV, CDL, nursing and more",
+        alt: "Tigertest: free practice tests for DMV, CDL, nursing and more",
       },
     ],
   },

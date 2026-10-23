@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/sat-practice-test`,
-    images: [{ url: "/og/sat", width: 1200, height: 630, alt: "TigerTest free SAT practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/sat", width: 1200, height: 630, alt: "Tigertest free SAT practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -42,15 +42,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is on the digital SAT?",
-    a: "Two sections, each split into two modules. Reading and Writing has 54 questions in two 32-minute modules, and Math has 44 questions in two 35-minute modules, with a 10-minute break between sections. That is 98 questions in 2 hours and 14 minutes. The TigerTest practice test uses the same structure and timing.",
+    a: "Two sections, each split into two modules. Reading and Writing has 54 questions in two 32-minute modules, and Math has 44 questions in two 35-minute modules, with a 10-minute break between sections. That is 98 questions in 2 hours and 14 minutes. The Tigertest practice test uses the same structure and timing.",
   },
   {
     q: "How is the SAT scored?",
-    a: "Each section is scored from 200 to 800, for a total from 400 to 1600. The test is adaptive: how you do on the first module of a section decides whether the second module is easier or harder, and the harder path can reach higher scores. TigerTest converts your correct answers into an estimated section score with a typical curve. It is an estimate, not an official score.",
+    a: "Each section is scored from 200 to 800, for a total from 400 to 1600. The test is adaptive: how you do on the first module of a section decides whether the second module is easier or harder, and the harder path can reach higher scores. Tigertest converts your correct answers into an estimated section score with a typical curve. It is an estimate, not an official score.",
   },
   {
     q: "Can I use a calculator on the SAT?",
-    a: "Yes, on the whole Math section. The real test has a built-in graphing calculator and a reference sheet of formulas, and you can bring an approved handheld calculator. The TigerTest practice test has a calculator and the reference sheet one tap away on every Math question.",
+    a: "Yes, on the whole Math section. The real test has a built-in graphing calculator and a reference sheet of formulas, and you can bring an approved handheld calculator. The Tigertest practice test has a calculator and the reference sheet one tap away on every Math question.",
   },
   {
     q: "What is a good SAT score?",
@@ -58,15 +58,15 @@ const faqs = [
   },
   {
     q: "Why are there two practice tests?",
-    a: "Take Practice Test 1 cold for a baseline, drill for a week or two, then take Practice Test 2. Test 2 is held out of the drills, so none of its questions appear anywhere else on TigerTest. Both tests are adaptive: a strong first module sends you to the harder second module, as in Bluebook.",
+    a: "Take Practice Test 1 cold for a baseline, drill for a week or two, then take Practice Test 2. Test 2 is held out of the drills, so none of its questions appear anywhere else on Tigertest. Both tests are adaptive: a strong first module sends you to the harder second module, as in Bluebook.",
   },
   {
     q: "Is this an official SAT practice test?",
-    a: "No. Every question is original, written to the published digital SAT specifications for content, question types and difficulty. TigerTest is not affiliated with or endorsed by College Board. Use it alongside the official practice tests in Bluebook.",
+    a: "No. Every question is original, written to the published digital SAT specifications for content, question types and difficulty. Tigertest is not affiliated with or endorsed by College Board. Use it alongside the official practice tests in Bluebook.",
   },
   {
-    q: "Is the TigerTest SAT practice test free?",
-    a: "Yes, to start. Practice Test 1, its score and every explanation, and six of the eight skill drills are free with no account required. TigerTest Premium, a one-time $9.99 with no subscription, unlocks Practice Test 2 and the Expression of Ideas and Geometry and Trigonometry drills, and the same purchase covers the DMV and the ACT too.",
+    q: "Is the Tigertest SAT practice test free?",
+    a: "Yes, to start. Practice Test 1, its score and every explanation, and six of the eight skill drills are free with no account required. Tigertest Premium, a one-time $9.99 with no subscription, unlocks Practice Test 2 and the Expression of Ideas and Geometry and Trigonometry drills, and the same purchase covers the DMV and the ACT too.",
   },
 ];
 
@@ -75,7 +75,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free SAT Practice Test",
+      name: "Tigertest - Free SAT Practice Test",
       description,
       url: `${siteUrl}/sat-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -191,7 +191,7 @@ export default function SatLandingPage() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <Image src={getTigerAsset("sat", 1)} alt="TigerTest mascot" width={180} height={180} className="w-32 md:w-44" />
+              <Image src={getTigerAsset("sat", 1)} alt="Tigertest mascot" width={180} height={180} className="w-32 md:w-44" />
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function SatLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>

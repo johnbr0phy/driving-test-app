@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-// The "Can my students use TigerTest?" FAQ on the landings of exams people
+// The "Can my students use Tigertest?" FAQ on the landings of exams people
 // usually study for with an instructor (the TEACHER_LED set in
 // components/TeachNudge.tsx). Teachers find these pages through search, so the
 // last FAQ points them at /teach. classFaqJsonLd() is the same item for the
@@ -56,7 +56,7 @@ const TEACHES: Record<string, string> = {
 };
 
 function question(examId: string): string {
-  return `I teach ${TEACHES[examId] ?? "this course"}. Can my students use TigerTest?`;
+  return `I teach ${TEACHES[examId] ?? "this course"}. Can my students use Tigertest?`;
 }
 
 const ANSWER_REST =

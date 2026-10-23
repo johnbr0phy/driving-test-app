@@ -48,7 +48,7 @@ function OAuthLoginContent() {
   const [password, setPassword] = useState('');
   const [formError, setFormError] = useState('');
   const [submitting, setSubmitting] = useState(false);
-  // Connecting from a chat app is many people's first contact with TigerTest,
+  // Connecting from a chat app is many people's first contact with Tigertest,
   // so the consent screen can create the account too (same as /signup:
   // welcome email, email consent on).
   const [mode, setMode] = useState<'signin' | 'signup'>('signin');
@@ -224,10 +224,10 @@ function OAuthLoginContent() {
       <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
       <Card className="relative w-full max-w-md">
         <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold text-center">Connect TigerTest</CardTitle>
+          <CardTitle className="text-2xl font-bold text-center">Connect Tigertest</CardTitle>
           <CardDescription className="text-center">
             {mode === 'signup' ? 'Create a free account' : 'Sign in'} to let <span className="font-semibold">{clientName}</span> quiz you and keep your
-            TigerTest progress.
+            Tigertest progress.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -313,7 +313,7 @@ function OAuthLoginContent() {
             </form>
 
             <p className="text-center text-sm text-gray-600 dark:text-gray-300">
-              {mode === 'signup' ? 'Already have an account?' : 'New to TigerTest?'}{' '}
+              {mode === 'signup' ? 'Already have an account?' : 'New to Tigertest?'}{' '}
               <button
                 type="button"
                 className="underline font-medium text-gray-900 dark:text-gray-50"
@@ -328,7 +328,7 @@ function OAuthLoginContent() {
             </p>
 
             <p className="text-center text-xs text-gray-500 dark:text-gray-400">
-              By signing in, you allow {clientName} to read and update your TigerTest practice test
+              By signing in, you allow {clientName} to read and update your Tigertest practice test
               progress.
             </p>
           </div>

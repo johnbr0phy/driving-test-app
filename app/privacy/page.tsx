@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | TigerTest",
-  description: "TigerTest privacy policy and data practices.",
+  title: "Privacy Policy | Tigertest",
+  description: "Tigertest privacy policy and data practices.",
 };
 
 export default function PrivacyPage() {
@@ -19,14 +19,14 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Overview</h2>
             <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-              TigerTest (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) operates tigertest.io. This page explains how we collect, use, and protect your personal information.
+              Tigertest (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) operates tigertest.io. This page explains how we collect, use, and protect your personal information.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">Information We Collect</h2>
             <p className="text-gray-700 dark:text-gray-200 leading-relaxed mb-3">
-              We collect the following information when you use TigerTest:
+              We collect the following information when you use Tigertest:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-200">
               <li><strong>Account Information:</strong> Email address and display name (if you sign up with Google)</li>
@@ -53,7 +53,7 @@ export default function PrivacyPage() {
               We do not sell your personal information. We share data only with:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-200 mt-3">
-              <li><strong>Google Analytics:</strong> For understanding how users interact with TigerTest</li>
+              <li><strong>Google Analytics:</strong> For understanding how users interact with Tigertest</li>
               <li><strong>Stripe:</strong> For processing premium payments securely</li>
               <li><strong>Resend:</strong> For sending transactional emails</li>
             </ul>
@@ -98,7 +98,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Children&apos;s Privacy</h2>
             <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-              TigerTest is intended for users preparing for their driver&apos;s permit test (typically ages 15+). We do not knowingly collect data from children under 13. If you believe a child under 13 has created an account, please contact us.
+              Tigertest is intended for users preparing for their driver&apos;s permit test (typically ages 15+). We do not knowingly collect data from children under 13. If you believe a child under 13 has created an account, please contact us.
             </p>
           </section>
 

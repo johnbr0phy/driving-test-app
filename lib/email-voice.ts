@@ -1,7 +1,7 @@
 /**
  * The exam-specific words and links every email is written against.
  *
- * TigerTest emails were all written for the DMV test: "your DMV test",
+ * Tigertest emails were all written for the DMV test: "your DMV test",
  * "/dmv/dashboard", "50 questions", "$9.99 unlocks State Laws". A citizenship or
  * Security+ user signing up got the same copy, and every button sent them to
  * the DMV dashboard, which bounced them to "pick your state". Every template

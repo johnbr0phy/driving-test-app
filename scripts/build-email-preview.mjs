@@ -12,7 +12,7 @@ const tigerData = `data:image/png;base64,${readFileSync(TIGER).toString('base64'
 const EMAILS = [
   {
     key: 'welcome', stage: 1, name: 'Welcome', status: 'unchanged',
-    subject: 'Welcome to TigerTest',
+    subject: 'Welcome to Tigertest',
     trigger: 'Account created', timing: 'Immediate', volume: '671 / mo',
     words: [132, 132],
     note: 'Untouched. The only email that was already live and working, so it keeps its original wording and renders byte-for-byte identical to what production sends today.',
@@ -26,7 +26,7 @@ const EMAILS = [
   },
   {
     key: 'firstTestReminder', stage: 3, name: 'Stalled study', status: 'changed',
-    subject: 'Quick check-in from TigerTest',
+    subject: 'Quick check-in from Tigertest',
     trigger: '25+ questions answered · 0 tests · idle 6h–3d',
     timing: 'Hourly', volume: '173 / mo', words: [130, 62],
     note: 'Was "24h after signup with 0 tests", which fired a day after most people had already left and ignored whether they had ever answered a question.',
@@ -127,7 +127,7 @@ const totalAfter = trimmed.reduce((s, e) => s + e.words[1], 0);
 const countNew = EMAILS.filter((e) => e.status === 'new').length;
 const countChanged = EMAILS.filter((e) => e.status === 'changed').length;
 
-const page = `<title>TigerTest lifecycle emails</title>
+const page = `<title>Tigertest lifecycle emails</title>
 <style>
   :root {
     --ground: #EFEBE4;
@@ -268,7 +268,7 @@ const page = `<title>TigerTest lifecycle emails</title>
 
 <div class="wrap">
   <div class="masthead">
-    <h1>TigerTest lifecycle emails</h1>
+    <h1>Tigertest lifecycle emails</h1>
     <p>All eight emails in the journey, each shown with the trigger that fires it. Rendered from <code>lib/email-templates.ts</code>, so this is exactly what recipients receive.</p>
     <div class="totals">
       <span><b>${EMAILS.length}</b> emails</span>

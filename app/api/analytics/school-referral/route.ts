@@ -9,7 +9,7 @@ import { classExamInfo, isClassCode, normalizeClassCode } from '@/lib/classes';
 // Visits from a school's LMS or website (lib/schoolReferral.ts). One doc per
 // host in schoolReferrals, with per-course and per-landing counts. The first
 // visit from a new host, or from a new course at a known host, emails John:
-// each is a teacher who chose to post a TigerTest link. Anyone can call this,
+// each is a teacher who chose to post a Tigertest link. Anyone can call this,
 // so the host must classify as a school and alerts are capped per day.
 
 const MAX_ALERTS_PER_DAY = 20;
@@ -97,7 +97,7 @@ async function alertJohn(a: { host: string; kind: keyof typeof SCHOOL_KIND_LABEL
     kind: 'transactional',
     to: CAMPAIGN_REPLY_TO,
     subject: `${a.newHost ? 'New school' : 'New course'}: ${a.host} (${lms}) → ${exam.shortName}`,
-    html: `<p><strong>${what}.</strong> Someone there posted a TigerTest link, probably a teacher.</p>
+    html: `<p><strong>${what}.</strong> Someone there posted a Tigertest link, probably a teacher.</p>
 <p>School: ${esc(a.host)} (${lms})<br>
 ${a.course ? `Course id: ${esc(a.course)}${courseUrl ? ` (<a href="${courseUrl}">${esc(courseUrl)}</a>, needs a login there)` : ''}<br>` : ''}
 Landed on: <a href="https://tigertest.io${esc(a.landing)}">${esc(a.landing)}</a> (${esc(exam.name)})</p>
@@ -109,7 +109,7 @@ Teacher: ${esc(cls.teacherName || 'not given')}<br>
 School: ${esc(cls.school || 'not given')}</p>
 `
     : ''
-}<p>Look the school up and find the program's instructor: they already chose TigerTest.</p>`,
+}<p>Look the school up and find the program's instructor: they already chose Tigertest.</p>`,
   });
   if (!result.ok) console.error('[school-referral] alert failed:', result.error);
 }

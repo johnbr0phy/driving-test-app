@@ -14,7 +14,7 @@ function monthYear(iso: string): string {
 // "At a glance" block under an exam landing's hero: a plain answer about the
 // real exam, a facts table, and a dated "based on" line with the official
 // source. This is the passage AI answer engines lift, so it states the exam's
-// facts before anything about TigerTest. Also emits a WebPage node with
+// facts before anything about Tigertest. Also emits a WebPage node with
 // dateModified, which the landing's own JSON-LD graph does not carry.
 export function ExamFacts({ examId }: { examId: string }) {
   const facts = EXAM_FACTS[examId];
@@ -24,7 +24,7 @@ export function ExamFacts({ examId }: { examId: string }) {
   const url = `${siteUrl}${test.href}`;
   const tigertest =
     facts.tigertest ??
-    `TigerTest has ${test.questions.toLocaleString("en-US")} ${test.shortName} practice questions with explanations${
+    `Tigertest has ${test.questions.toLocaleString("en-US")} ${test.shortName} practice questions with explanations${
       test.pricing ? "" : ", all free with no account required"
     }.`;
 
@@ -62,7 +62,7 @@ export function ExamFacts({ examId }: { examId: string }) {
         </dl>
         <p className="mt-5 text-sm text-gray-500 dark:text-gray-400">
           Updated <time dateTime={EXAM_LANDINGS_UPDATED_AT}>{monthYear(EXAM_LANDINGS_UPDATED_AT)}</time> by the
-          TigerTest team. Practice questions follow {facts.basedOn}. Exam rules change, so confirm current details
+          Tigertest team. Practice questions follow {facts.basedOn}. Exam rules change, so confirm current details
           {facts.source ? (
             <>
               {" "}with{" "}

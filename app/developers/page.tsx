@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { QUIZZES_PAGES_UPDATED_AT } from "@/lib/seoDates";
 
-// /developers: the technical page for anyone wiring an agent to TigerTest,
+// /developers: the technical page for anyone wiring an agent to Tigertest,
 // and the docs URL the connector directories (Claude, ChatGPT, Meta's Muse)
 // ask for. Endpoint, auth, the tool list and example prompts. /create is
 // the version for people; this one is for reviewers and builders.
@@ -11,17 +11,17 @@ const SITE = "https://www.tigertest.io";
 const SUPPORT_EMAIL = "john@johnbrophy.net";
 
 export const metadata: Metadata = {
-  title: "TigerTest for agents and developers",
+  title: "Tigertest for agents and developers",
   description:
-    "Connect any AI agent to TigerTest over MCP: discover their tests in progress and practice catalog exams or custom quizzes, make quizzes, and read who played. OAuth 2.1 with PKCE, no API key.",
+    "Connect any AI agent to Tigertest over MCP: discover their tests in progress and practice catalog exams or custom quizzes, make quizzes, and read who played. OAuth 2.1 with PKCE, no API key.",
   alternates: { canonical: `${SITE}/developers` },
-  openGraph: { title: "TigerTest for agents and developers", description: "Quiz a person in two tool calls over MCP.", url: `${SITE}/developers`, type: "website" },
+  openGraph: { title: "Tigertest for agents and developers", description: "Quiz a person in two tool calls over MCP.", url: `${SITE}/developers`, type: "website" },
 };
 
 const TOOL_GROUPS: { title: string; blurb: string; tools: { name: string; what: string }[] }[] = [
   {
     title: "Quiz the person (two calls)",
-    blurb: "The whole loop an agent needs. No state on the agent's side: TigerTest keeps the mastery queue and sends the next question back with every graded answer.",
+    blurb: "The whole loop an agent needs. No state on the agent's side: Tigertest keeps the mastery queue and sends the next question back with every graded answer.",
     tools: [
       { name: "quiz_me", what: "Start or continue a quiz by code, by \"dmv\", or by words (\"British phrases\"). Returns one question with options A to D." },
       { name: "answer", what: "Grade the person's letter. Returns right or wrong, the explanation, progress, and the next question." },
@@ -31,7 +31,7 @@ const TOOL_GROUPS: { title: string; blurb: string; tools: { name: string; what: 
   },
   {
     title: "Make and track quizzes",
-    blurb: "The agent writes the questions (call get_quiz_writing_guide first) and TigerTest stores them. The creator can share the link and see who played.",
+    blurb: "The agent writes the questions (call get_quiz_writing_guide first) and Tigertest stores them. The creator can share the link and see who played.",
     tools: [
       { name: "get_quiz_writing_guide", what: "The rules our own question banks follow: research first, four short options, a key that never stands out." },
       { name: "create_quiz", what: "Save a quiz (title, questions, visibility). Returns the share link." },
@@ -68,7 +68,7 @@ const TOOL_GROUPS: { title: string; blurb: string; tools: { name: string; what: 
 
 const PROMPTS = [
   "Quiz me on my biology notes until I get them all right.",
-  "Turn these notes into a TigerTest quiz and give me the link for my study group.",
+  "Turn these notes into a Tigertest quiz and give me the link for my study group.",
   "Quiz me for the California DMV test.",
   "How did people do on my British phrases quiz? Which questions did they miss?",
   "Where am I weakest on the DMV test? Drill me on that.",
@@ -82,7 +82,7 @@ export default function DevelopersPage() {
     "@type": "WebPage",
     "@id": `${SITE}/developers#webpage`,
     url: `${SITE}/developers`,
-    name: "TigerTest for agents and developers",
+    name: "Tigertest for agents and developers",
     description: metadata.description,
     dateModified: QUIZZES_PAGES_UPDATED_AT,
     isPartOf: { "@id": `${SITE}/#website` },
@@ -93,11 +93,11 @@ export default function DevelopersPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-3xl mx-auto px-4 py-12 space-y-10">
         <header>
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-50">TigerTest for agents</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-50">Tigertest for agents</h1>
           <p className="mt-3 text-gray-600 dark:text-gray-300">
             One MCP server. Any agent that speaks it can discover their tests in progress, practice catalog exams or custom quizzes, make quizzes, and read
-            who played. Two tool calls run a whole session. TigerTest never runs a model on your behalf: your agent writes the
-            questions and does the talking, TigerTest keeps the questions, the mastery queue and the scores.
+            who played. Two tool calls run a whole session. Tigertest never runs a model on your behalf: your agent writes the
+            questions and does the talking, Tigertest keeps the questions, the mastery queue and the scores.
           </p>
         </header>
 
@@ -107,7 +107,7 @@ export default function DevelopersPage() {
             <dt className="text-gray-600 dark:text-gray-300">MCP server</dt>
             <dd><span className={code}>{SITE}/api/mcp</span> (Streamable HTTP, stateless)</dd>
             <dt className="text-gray-600 dark:text-gray-300">Auth</dt>
-            <dd className="text-gray-900 dark:text-gray-50">OAuth 2.1 with PKCE, dynamic client registration, no API keys. The person signs in to TigerTest once (or creates an account on the consent screen).</dd>
+            <dd className="text-gray-900 dark:text-gray-50">OAuth 2.1 with PKCE, dynamic client registration, no API keys. The person signs in to Tigertest once (or creates an account on the consent screen).</dd>
             <dt className="text-gray-600 dark:text-gray-300">Discovery</dt>
             <dd>
               <span className={code}>/.well-known/oauth-protected-resource</span> and <span className={code}>/.well-known/oauth-authorization-server</span>
@@ -167,9 +167,9 @@ export default function DevelopersPage() {
           <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">For directory listings</h2>
           <dl className="grid sm:grid-cols-[11rem_1fr] gap-y-2 gap-x-4">
             <dt className="text-gray-600 dark:text-gray-300">Name</dt>
-            <dd className="text-gray-900 dark:text-gray-50">TigerTest</dd>
+            <dd className="text-gray-900 dark:text-gray-50">Tigertest</dd>
             <dt className="text-gray-600 dark:text-gray-300">One line</dt>
-            <dd className="text-gray-900 dark:text-gray-50">Practice your saved TigerTest exams and quizzes. Discover progress, review weak areas and resume timed tests on the website.</dd>
+            <dd className="text-gray-900 dark:text-gray-50">Practice your saved Tigertest exams and quizzes. Discover progress, review weak areas and resume timed tests on the website.</dd>
             <dt className="text-gray-600 dark:text-gray-300">Icon</dt>
             <dd><a href="/icon-512.png" className="underline text-gray-900 dark:text-gray-50">{SITE}/icon-512.png</a> (512 by 512 PNG)</dd>
             <dt className="text-gray-600 dark:text-gray-300">Privacy</dt>

@@ -28,19 +28,19 @@ export async function generateMetadata({ params }: { params: Promise<{ code: str
   const code = normalizeQuizCode((await params).code);
   if (!isQuizCode(code)) notFound();
   const loaded = await loadQuizDoc(code);
-  if (!loaded.ok) return { title: "TigerTest quiz", robots: { index: false, follow: false } };
+  if (!loaded.ok) return { title: "Tigertest quiz", robots: { index: false, follow: false } };
   const { quiz } = loaded;
   if (!quiz) notFound();
   const canonical = `${SITE}/q/${code}`;
   if (quiz.visibility === "private") {
-    return { title: "Private quiz | TigerTest", alternates: { canonical }, robots: { index: false, follow: false } };
+    return { title: "Private quiz | Tigertest", alternates: { canonical }, robots: { index: false, follow: false } };
   }
   if (quiz.visibility === "class") {
     const title = `${quiz.title} | Class quiz`;
     const description = `A practice quiz for ${quiz.classTeacherName || quiz.ownerName}'s class on Tigertest.`;
-    return { title, description, alternates: { canonical }, robots: { index: false, follow: false }, openGraph: { title, description, url: canonical, siteName: "TigerTest", type: "website" } };
+    return { title, description, alternates: { canonical }, robots: { index: false, follow: false }, openGraph: { title, description, url: canonical, siteName: "Tigertest", type: "website" } };
   }
-  const title = `${quiz.title} | TigerTest quiz`;
+  const title = `${quiz.title} | Tigertest quiz`;
   const description = quiz.description || `${quiz.questions.length} practice questions on ${quiz.title}`;
   const indexable = quiz.visibility === "public" && (quiz.plays ?? 0) >= QUIZ_PUBLIC_MIN_PLAYS;
   return {
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ code: str
     description,
     alternates: { canonical },
     robots: indexable ? { index: true, follow: true } : { index: false, follow: true },
-    openGraph: { title, description, url: canonical, siteName: "TigerTest", type: "website" },
+    openGraph: { title, description, url: canonical, siteName: "Tigertest", type: "website" },
     twitter: { card: "summary", title, description },
   };
 }

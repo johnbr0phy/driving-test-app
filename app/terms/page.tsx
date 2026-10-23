@@ -12,7 +12,7 @@ const CONTACT = "john@johnbrophy.net";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "The terms for using TigerTest: accounts, Premium, quizzes you make, and the AI connector.",
+  description: "The terms for using Tigertest: accounts, Premium, quizzes you make, and the AI connector.",
   alternates: { canonical: `${SITE}/terms` },
   robots: { index: true, follow: true },
 };
@@ -27,12 +27,12 @@ export default function TermsPage() {
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50">Terms of Service</h1>
         <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Last updated {QUIZZES_PAGES_UPDATED_AT}</p>
         <p className={`${p} mt-6`}>
-          TigerTest (tigertest.io) is a practice-test site run by John Brophy. By using it you agree to these terms. If you do not agree, please do not use the site.
+          Tigertest (tigertest.io) is a practice-test site run by John Brophy. By using it you agree to these terms. If you do not agree, please do not use the site.
         </p>
 
-        <h2 className={h2}>1. What TigerTest is</h2>
+        <h2 className={h2}>1. What Tigertest is</h2>
         <p className={p}>
-          TigerTest offers practice questions for licence, certification and entrance exams, and lets you make your own practice tests. It is a study aid. It is not affiliated with any DMV, licensing board, test maker or school, and passing a TigerTest practice test does not guarantee a result on a real exam.
+          Tigertest offers practice questions for licence, certification and entrance exams, and lets you make your own practice tests. It is a study aid. It is not affiliated with any DMV, licensing board, test maker or school, and passing a Tigertest practice test does not guarantee a result on a real exam.
         </p>
 
         <h2 className={h2}>2. Accounts</h2>
@@ -47,7 +47,7 @@ export default function TermsPage() {
 
         <h2 className={h2}>4. Quizzes you make</h2>
         <p className={p}>
-          You own the questions you write or import. By saving a quiz on TigerTest you give us permission to store it, show it to the people you share it with (anyone with the link, or everyone if you set it to public), and display it on the site. You can edit or delete your quizzes at any time. Do not upload material you do not have the right to share, anything illegal, hateful, harassing or sexual, or anyone else&apos;s personal information. We may remove quizzes that break these rules, and we may feature public quizzes in the library.
+          You own the questions you write or import. By saving a quiz on Tigertest you give us permission to store it, show it to the people you share it with (anyone with the link, or everyone if you set it to public), and display it on the site. You can edit or delete your quizzes at any time. Do not upload material you do not have the right to share, anything illegal, hateful, harassing or sexual, or anyone else&apos;s personal information. We may remove quizzes that break these rules, and we may feature public quizzes in the library.
         </p>
         <p className={`${p} mt-3`}>
           When you play someone else&apos;s quiz and enter a name, the quiz&apos;s creator can see that name, your answers and your scores on that quiz. Play without a name if you do not want that.
@@ -55,17 +55,17 @@ export default function TermsPage() {
 
         <h2 className={h2}>5. AI assistants and the connector</h2>
         <p className={p}>
-          You can connect AI assistants (such as Claude, ChatGPT or Meta&apos;s Muse) to your TigerTest account. The connector only reaches your own quizzes and practice progress. Questions an assistant writes are the assistant&apos;s output, not ours: review them before you rely on them. You can disconnect an assistant at any time from that assistant&apos;s settings.
+          You can connect AI assistants (such as Claude, ChatGPT or Meta&apos;s Muse) to your Tigertest account. The connector only reaches your own quizzes and practice progress. Questions an assistant writes are the assistant&apos;s output, not ours: review them before you rely on them. You can disconnect an assistant at any time from that assistant&apos;s settings.
         </p>
 
         <h2 className={h2}>6. Our content</h2>
         <p className={p}>
-          TigerTest&apos;s own question banks, explanations, design and software are ours. You may use them to study. You may not copy, resell or scrape them, or use them to train a machine-learning model.
+          Tigertest&apos;s own question banks, explanations, design and software are ours. You may use them to study. You may not copy, resell or scrape them, or use them to train a machine-learning model.
         </p>
 
         <h2 className={h2}>7. Acceptable use</h2>
         <p className={p}>
-          Do not try to break the site, overload it, get around its limits, or access other people&apos;s accounts or data. Do not use TigerTest to cheat on a real exam.
+          Do not try to break the site, overload it, get around its limits, or access other people&apos;s accounts or data. Do not use Tigertest to cheat on a real exam.
         </p>
 
         <h2 className={h2}>8. Privacy</h2>
@@ -75,7 +75,7 @@ export default function TermsPage() {
 
         <h2 className={h2}>9. No warranty, limited liability</h2>
         <p className={p}>
-          TigerTest is provided as is. We work hard to keep questions accurate and the site up, but we do not promise either, and we are not liable for exam results or for losses from using the site, beyond what you paid us in the last 12 months.
+          Tigertest is provided as is. We work hard to keep questions accurate and the site up, but we do not promise either, and we are not liable for exam results or for losses from using the site, beyond what you paid us in the last 12 months.
         </p>
 
         <h2 className={h2}>10. Changes and contact</h2>

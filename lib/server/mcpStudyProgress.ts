@@ -25,7 +25,7 @@ export async function listInProgressTests(uid:string,db:Firestore=getAdminDb()){
   const found=await loadPlayableQuiz(uid,code,db);if('error' in found)continue;
   entries.push({id:`quiz:${found.quiz.code}`,title:found.quiz.title,kind:'quiz',dashboard:publicUrl(`/q/${found.quiz.code}/dashboard`),practice:{tool:'quiz_me',quiz:found.quiz.code},hasActiveTest:!!data.quizProgress?.progress?.[code]?.current,testUrl:publicUrl(`/q/${found.quiz.code}/test`)});
  }
- return {ok:true as const,data:{tests:entries,scope:'Signed-in progress synced to this TigerTest account. Guest-only or unsynced browser progress is not visible. In progress follows the site switcher: started exams may already have completed steps.',instruction:'Ask which test if several are listed. Use exact id, not a guessed title. start_study_practice is untimed training, not a timed test sitting. Reopen the website to load account changes; an older browser save pauses instead of overwriting newer chat progress. Unsynced browser changes may need repeating.'}};
+ return {ok:true as const,data:{tests:entries,scope:'Signed-in progress synced to this Tigertest account. Guest-only or unsynced browser progress is not visible. In progress follows the site switcher: started exams may already have completed steps.',instruction:'Ask which test if several are listed. Use exact id, not a guessed title. start_study_practice is untimed training, not a timed test sitting. Reopen the website to load account changes; an older browser save pauses instead of overwriting newer chat progress. Unsynced browser changes may need repeating.'}};
 }
 
 export async function studyProgress(uid:string,id:string,db:Firestore=getAdminDb()){

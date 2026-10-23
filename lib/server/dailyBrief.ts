@@ -115,7 +115,7 @@ export function briefNumbers(p: OpportunitiesPayload, schools: ReturnType<typeof
   };
 }
 
-const SYSTEM = `You write the morning update for John, who runs TigerTest (tigertest.io), a site of free practice tests (DMV permit tests plus about forty other exams) with a $9.99 one-time Premium unlock that only the DMV, SAT and ACT sell.
+const SYSTEM = `You write the morning update for John, who runs Tigertest (tigertest.io), a site of free practice tests (DMV permit tests plus about forty other exams) with a $9.99 one-time Premium unlock that only the DMV, SAT and ACT sell.
 
 John does not like reading much text. Write:
 - line 1: one headline sentence, at most 15 words, saying the single most important thing today

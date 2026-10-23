@@ -1,6 +1,6 @@
 "use client";
 
-// v2 dashboard in the TigerTest style: goal first, then a numbered step list
+// v2 dashboard in the Tigertest style: goal first, then a numbered step list
 // (one mastery drill per skill area, then the full timed test) with stamps
 // that turn green, and the tiger calming down as steps complete. Built on the
 // same ProgressCard and tiger artwork as the v1 exam dashboards.

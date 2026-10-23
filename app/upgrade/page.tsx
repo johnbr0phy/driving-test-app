@@ -1,6 +1,6 @@
 "use client";
 
-// /upgrade: the one TigerTest Premium purchase ($9.99 one-time), opened as a
+// /upgrade: the one Tigertest Premium purchase ($9.99 one-time), opened as a
 // page so links from the quiz limits (and the MCP tools' LIMIT_REACHED hint)
 // have somewhere to go. It shows the same PaywallModal the DMV dashboard
 // uses, with quiz benefits listed, and sends the buyer back to ?redirect
@@ -41,7 +41,7 @@ function UpgradeContent() {
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950 px-4 py-12">
       <div className="max-w-md mx-auto text-center">
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-2">TigerTest Premium</h1>
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-2">Tigertest Premium</h1>
         <p className="text-gray-600 dark:text-gray-300 mb-6">
           {isPremium ? "You already have Premium. Taking you back." : "One purchase unlocks more quizzes, more questions and the full DMV course."}
         </p>

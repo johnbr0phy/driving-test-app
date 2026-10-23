@@ -7,7 +7,7 @@ import { KO_STATE_CODES } from "@/data/koStates";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 export const metadata: Metadata = {
-  title: { absolute: "주별 DMV 필기시험 연습문제 2026 - 무료 | TigerTest" },
+  title: { absolute: "주별 DMV 필기시험 연습문제 2026 - 무료 | Tigertest" },
   description:
     "미국 주별 무료 DMV 운전면허 필기시험 연습문제. 각 주의 공식 운전자 교본을 바탕으로 주당 200문제를 제공합니다. 한 번에 합격하세요.",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "주별 DMV 필기시험 연습문제 2026 | TigerTest",
+    title: "주별 DMV 필기시험 연습문제 2026 | Tigertest",
     description:
       "무료 DMV 운전면허 필기시험 연습문제. 주당 200문제, 풀 때마다 즉시 해설을 확인하세요.",
     type: "website",
@@ -102,7 +102,7 @@ export default function KoreanPracticeTestsByStatePage() {
               href="/practice-tests-by-state"
               className="text-brand-dark hover:text-brand-darker font-medium underline"
             >
-              TigerTest 영어 페이지
+              Tigertest 영어 페이지
             </Link>
             에서 50개 주 전체를 확인하실 수 있습니다. 실제 DMV 필기시험을 어떤
             언어로 볼 수 있는지는 주마다 다르므로, 해당 주 DMV에 직접 확인하시기
@@ -134,11 +134,11 @@ export default function KoreanPracticeTestsByStatePage() {
         {/* Summary Section */}
         <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-6 md:p-8 mb-12">
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-4">
-            TigerTest 주별 연습문제 소개
+            Tigertest 주별 연습문제 소개
           </h2>
           <div className="text-gray-600 dark:text-gray-300 space-y-3">
             <p>
-              주마다 교통법규와 시험 형식, 합격 기준 점수가 다릅니다. TigerTest는{" "}
+              주마다 교통법규와 시험 형식, 합격 기준 점수가 다릅니다. Tigertest는{" "}
               <strong>주당 200문제</strong>를 제공하며, 지역 법규와 제한 속도 등
               해당 주에만 적용되는 규정을 다루는 문제도 함께 담고 있습니다.
             </p>

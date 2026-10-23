@@ -15,7 +15,7 @@ const templates = {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to TigerTest</title>
+  <title>Welcome to Tigertest</title>
 </head>
 <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #FFF9F5;">
   <table role="presentation" style="width: 100%; border-collapse: collapse;">
@@ -24,8 +24,8 @@ const templates = {
         <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
-              <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">Welcome to TigerTest</h1>
+              <img src="https://tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">Welcome to Tigertest</h1>
             </td>
           </tr>
           <tr>
@@ -34,7 +34,7 @@ const templates = {
                 {{greeting}}
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Welcome to TigerTest.
+                Welcome to Tigertest.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 Trust us - <strong style="font-weight: 600;">the best way to prep is to spend 30 minutes doing practice tests</strong>. Set some time aside. Practice actually answering questions one after the other where you don't get instant feedback on whether you're right or wrong.
@@ -54,7 +54,7 @@ const templates = {
               </p>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 Good luck,<br>
-                The TigerTest Team
+                The Tigertest Team
               </p>
             </td>
           </tr>
@@ -88,7 +88,7 @@ const templates = {
         <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <img src="https://tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
               <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">You signed up yesterday</h1>
             </td>
           </tr>
@@ -98,7 +98,7 @@ const templates = {
                 Quick check-in.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                You signed up for TigerTest yesterday but haven't taken a practice test yet.
+                You signed up for Tigertest yesterday but haven't taken a practice test yet.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 We get it - it feels easier to keep reading or put it off. But here's what we've learned from 560+ users: the ones who pass on their first try are the ones who actually test themselves, not just study.
@@ -117,7 +117,7 @@ const templates = {
                 Even if you bomb it (and some people do on their first try), you'll know exactly what to focus on. Way more useful than guessing whether you're ready.
               </p>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                The TigerTest Team
+                The Tigertest Team
               </p>
             </td>
           </tr>
@@ -151,7 +151,7 @@ const templates = {
         <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <img src="https://tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
               <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">Nice work on test #1! 🎉</h1>
             </td>
           </tr>
@@ -183,7 +183,7 @@ const templates = {
                 If you bombed the first test, don't sweat it. Most people do. The second test is where you see real progress.
               </p>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                The TigerTest Team
+                The Tigertest Team
               </p>
             </td>
           </tr>
@@ -217,7 +217,7 @@ const templates = {
         <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <img src="https://tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
               <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">You're doing the work 💪</h1>
             </td>
           </tr>
@@ -251,7 +251,7 @@ const templates = {
                 If you're not ready yet, no problem. The free tier is still there. But if you want to see your weak spots and keep practicing, now's a good time.
               </p>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                The TigerTest Team
+                The Tigertest Team
               </p>
             </td>
           </tr>
@@ -285,14 +285,14 @@ const templates = {
         <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <img src="https://tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
               <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">Test coming up soon?</h1>
             </td>
           </tr>
           <tr>
             <td style="padding: 24px 40px 40px;">
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Haven't seen you in TigerTest for a bit.
+                Haven't seen you in Tigertest for a bit.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 If your DMV test is coming up, now's the time to get back into it. A week away from practice questions is enough to forget a lot of the details.
@@ -312,7 +312,7 @@ const templates = {
               </p>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 Good luck,<br>
-                The TigerTest Team
+                The Tigertest Team
               </p>
             </td>
           </tr>
@@ -337,7 +337,7 @@ const templates = {
 async function sendEmail(to: string, subject: string, html: string) {
   try {
     const result = await resend.emails.send({
-      from: "TigerTest <noreply@tigertest.io>",
+      from: "Tigertest <noreply@tigertest.io>",
       to,
       subject,
       html,
@@ -376,7 +376,7 @@ export const sendWelcomeEmail = functions.auth.user().onCreate(async (user) => {
       .replace(/{{unsubscribeToken}}/g, unsubscribeToken);
 
     // Send email
-    await sendEmail(user.email!, "Welcome to TigerTest", html);
+    await sendEmail(user.email!, "Welcome to Tigertest", html);
 
     // Update user document with email sent timestamp
     await db.collection("users").doc(user.uid).update({
@@ -451,7 +451,7 @@ export const sendFirstTestReminder = functions.pubsub
 
         // Send email
         emailPromises.push(
-          sendEmail(userRecord.email, "Quick check-in from TigerTest", html)
+          sendEmail(userRecord.email, "Quick check-in from Tigertest", html)
             .then(() => {
               // Update user document
               return db.collection("users").doc(userId).update({

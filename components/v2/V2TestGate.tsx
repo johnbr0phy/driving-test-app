@@ -51,7 +51,7 @@ export function V2TestGate({
           <Lock className="h-5 w-5 text-gray-500 dark:text-gray-400" /> {exam.shortName} {test?.name ?? `Practice Test ${testNumber}`}
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
-          This test never appears in the drills, so it shows how ready you really are. It&apos;s part of TigerTest
+          This test never appears in the drills, so it shows how ready you really are. It&apos;s part of Tigertest
           Premium, along with every drill question and {otherPremiumExams(exam)}.
         </p>
         <button

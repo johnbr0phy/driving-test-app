@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/food-handler-practice-test`,
-    images: [{ url: "/og/foodhandler", width: 1200, height: 630, alt: "TigerTest free Food Handler practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/foodhandler", width: 1200, height: 630, alt: "Tigertest free Food Handler practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -45,7 +45,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free Food Handler Practice Tests",
+      name: "Tigertest - Free Food Handler Practice Tests",
       description,
       url: `${siteUrl}/food-handler-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -84,7 +84,7 @@ const jsonLd = {
           name: "Is this the same as the food manager exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. The food handler card is for line staff and covers safe practices. The Certified Food Protection Manager exam is longer, proctored, and adds management systems. TigerTest has a separate Food Manager practice test for that.",
+            text: "No. The food handler card is for line staff and covers safe practices. The Certified Food Protection Manager exam is longer, proctored, and adds management systems. Tigertest has a separate Food Manager practice test for that.",
           },
         },
         {
@@ -97,7 +97,7 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Is the TigerTest food handler practice test free?",
+          name: "Is the Tigertest food handler practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
@@ -196,7 +196,7 @@ export default function FoodhandlerLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("foodhandler", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -209,7 +209,7 @@ export default function FoodhandlerLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -252,7 +252,7 @@ export default function FoodhandlerLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak topic</h3>
               <p>
-                TigerTest tracks your accuracy by topic. Most courses require 75 percent on a 40-question test, so drill the questions you missed, retrain that test&apos;s set and retake until you clear 85 percent with room to spare.
+                Tigertest tracks your accuracy by topic. Most courses require 75 percent on a 40-question test, so drill the questions you missed, retrain that test&apos;s set and retake until you clear 85 percent with room to spare.
               </p>
             </div>
           </div>
@@ -280,7 +280,7 @@ export default function FoodhandlerLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is this the same as the food manager exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. The food handler card is for line staff and covers safe practices. The Certified Food Protection Manager exam is longer, proctored, and adds management systems. TigerTest has a separate Food Manager practice test for that.
+              No. The food handler card is for line staff and covers safe practices. The Certified Food Protection Manager exam is longer, proctored, and adds management systems. Tigertest has a separate Food Manager practice test for that.
             </p>
           </div>
           <div>
@@ -290,7 +290,7 @@ export default function FoodhandlerLandingPage() {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest food handler practice test free?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest food handler practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
               Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>

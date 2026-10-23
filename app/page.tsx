@@ -16,7 +16,7 @@ export const revalidate = 3600;
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 const examCount = TEST_CATALOG.length;
 
-const title = `TigerTest: Free Practice Tests for ${examCount} Exams - DMV, SAT & More`;
+const title = `Tigertest: Free Practice Tests for ${examCount} Exams - DMV, SAT & More`;
 const description = `Free practice tests for ${examCount} exams: the DMV permit test in all 50 states, SAT, ACT, CDL, nursing and healthcare certifications, IT certs, real estate, insurance and more. Every answer explained. No account needed.`;
 const metaDescription = `Free practice tests for ${examCount} exams: the DMV permit test in every state, SAT, ACT, CDL, nursing, IT, real estate and more. Every answer explained.`;
 
@@ -28,20 +28,20 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: siteUrl,
-    siteName: "TigerTest",
+    siteName: "Tigertest",
     type: "website",
-    images: [{ url: "/og-tests.png", width: 1200, height: 630, alt: `TigerTest: ${examCount} free practice tests` }],
+    images: [{ url: "/og-tests.png", width: 1200, height: 630, alt: `Tigertest: ${examCount} free practice tests` }],
   },
   twitter: { card: "summary_large_image", title, description: metaDescription, images: ["/og-tests.png"] },
 };
 
 const faqs = [
   {
-    q: "What is TigerTest?",
-    a: `TigerTest is a free practice test site for ${examCount} exams, from the DMV permit test in every state to the SAT, ACT, nursing, healthcare, IT, trade and licensing exams. Each test follows the real exam's published outline, and every question explains the right answer.`,
+    q: "What is Tigertest?",
+    a: `Tigertest is a free practice test site for ${examCount} exams, from the DMV permit test in every state to the SAT, ACT, nursing, healthcare, IT, trade and licensing exams. Each test follows the real exam's published outline, and every question explains the right answer.`,
   },
   {
-    q: "Is TigerTest free?",
+    q: "Is Tigertest free?",
     a: "Yes. Most tests are completely free. The DMV, SAT and ACT have free practice tests and training plus an optional one-time $9.99 Premium purchase (not a subscription) that unlocks the extra tests for all three.",
   },
   {
@@ -49,12 +49,12 @@ const faqs = [
     a: "No. You can start any test without signing up. Make a free account if you want your progress saved across devices.",
   },
   {
-    q: "How does TigerTest help me pass?",
+    q: "How does Tigertest help me pass?",
     a: "Training mode gives instant feedback and brings back the questions you miss until you know them. Full practice tests then simulate the real exam, and your results show which topics still need work.",
   },
   {
-    q: "Is TigerTest affiliated with the DMV or any testing company?",
-    a: "No. TigerTest is independent and is not affiliated with any DMV, testing company or certification body.",
+    q: "Is Tigertest affiliated with the DMV or any testing company?",
+    a: "No. Tigertest is independent and is not affiliated with any DMV, testing company or certification body.",
   },
 ];
 
@@ -72,7 +72,7 @@ const jsonLd = {
     },
     {
       "@type": "ItemList",
-      name: "TigerTest practice tests",
+      name: "Tigertest practice tests",
       itemListElement: TEST_CATALOG.map((t, i) => ({
         "@type": "ListItem",
         position: i + 1,
@@ -205,7 +205,7 @@ export default async function Home() {
       {/* How it works: real screens from the app, one step per row */}
       <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-14 md:mb-20">
-          How TigerTest works
+          How Tigertest works
         </h2>
 
         <div className="space-y-16 md:space-y-24">
@@ -261,7 +261,7 @@ export default async function Home() {
             </div>
             <div className="md:col-span-3">
               <div className="rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-                <ThemedScreenshot src="/dashboard.png" alt="TigerTest DMV dashboard with training sets and practice tests" width={1320} height={1143} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
+                <ThemedScreenshot src="/dashboard.png" alt="Tigertest DMV dashboard with training sets and practice tests" width={1320} height={1143} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
               </div>
             </div>
           </div>

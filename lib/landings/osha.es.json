@@ -12,7 +12,7 @@
   "facts": {
     "h2": "El examen OSHA 10 en resumen",
     "answer": "OSHA 10 es un curso de 10 horas de concientización sobre seguridad del Programa de Capacitación Outreach de OSHA, con versiones para construcción e industria general. La mayoría de los proveedores lo terminan con un examen final de opción múltiple de 20 a 40 preguntas, piden 70% para aprobar y permiten hasta tres intentos. La tarjeta del Departamento de Trabajo te llega por medio de tu entrenador autorizado por OSHA.",
-    "tigertest": "TigerTest tiene 200 preguntas de práctica de OSHA 10 en español con explicaciones, todas gratis y sin cuenta.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica de OSHA 10 en español con explicaciones, todas gratis y sin cuenta.",
     "rows": [
       {
         "label": "Examen final",
@@ -79,7 +79,7 @@
       },
       {
         "h3": "4. Repasa lo que fallas",
-        "p": "TigerTest mide tu precisión por tema. El examen final real es corto, así que un solo tema débil te puede costar el 70% que necesitas. Después de cada examen, repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar de 85%."
+        "p": "Tigertest mide tu precisión por tema. El examen final real es corto, así que un solo tema débil te puede costar el 70% que necesitas. Después de cada examen, repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar de 85%."
       }
     ]
   },
@@ -106,8 +106,8 @@
       "a": "OSHA 10 es un curso de concientización de 10 horas para trabajadores de nivel inicial. OSHA 30 es un curso de 30 horas para supervisores, capataces y cualquier persona con responsabilidad de seguridad; cubre los mismos temas básicos con más detalle, además de cómo manejar programas de seguridad. Los dos tienen versiones para construcción e industria general, y ninguno reemplaza la capacitación específica de cada peligro que las normas de OSHA exigen a los empleadores."
     },
     {
-      "q": "¿El examen de práctica OSHA 10 de TigerTest es un curso oficial de OSHA?",
-      "a": "No. TigerTest es una herramienta de estudio gratis, no un curso Outreach autorizado por OSHA, y no da tarjetas. Úsalo para aprender el material y medir si estás listo, y luego toma el curso real con un entrenador autorizado por OSHA. Los cuatro exámenes de práctica y los cuatro grupos de entrenamiento son gratis, sin cuenta."
+      "q": "¿El examen de práctica OSHA 10 de Tigertest es un curso oficial de OSHA?",
+      "a": "No. Tigertest es una herramienta de estudio gratis, no un curso Outreach autorizado por OSHA, y no da tarjetas. Úsalo para aprender el material y medir si estás listo, y luego toma el curso real con un entrenador autorizado por OSHA. Los cuatro exámenes de práctica y los cuatro grupos de entrenamiento son gratis, sin cuenta."
     }
   ],
   "finalCta": {

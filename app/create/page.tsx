@@ -7,16 +7,16 @@ import { ClaudeLogo, OpenAILogo } from "@/components/connect/AssistantLogos";
 import { CreateYourQuizzes } from "@/components/quiz/create/CreateYourQuizzes";
 
 // /create: make a quiz. Quizzes are written by the person's own Claude or
-// ChatGPT, so this is how to add the TigerTest MCP server (app/api/mcp) as a
+// ChatGPT, so this is how to add the Tigertest MCP server (app/api/mcp) as a
 // custom connector, what it can do and a short FAQ, with the account's own
 // quizzes under the hero once signed in. /connect redirects here.
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 const MCP_URL = "https://www.tigertest.io/api/mcp";
 
-const title = "Use TigerTest in ChatGPT and Claude";
+const title = "Use Tigertest in ChatGPT and Claude";
 const description =
-  "Add TigerTest to Claude or ChatGPT: turn your notes into a shareable practice quiz, or keep practicing the tests you have in progress.";
+  "Add Tigertest to Claude or ChatGPT: turn your notes into a shareable practice quiz, or keep practicing the tests you have in progress.";
 
 export const metadata: Metadata = {
   title,
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     title,
     description,
     url: `${siteUrl}/create`,
-    siteName: "TigerTest",
+    siteName: "Tigertest",
     type: "website",
-    images: [{ url: `${siteUrl}/og/connect`, width: 1200, height: 630, alt: "TigerTest in ChatGPT and Claude: turn any chat into a practice test" }],
+    images: [{ url: `${siteUrl}/og/connect`, width: 1200, height: 630, alt: "Tigertest in ChatGPT and Claude: turn any chat into a practice test" }],
   },
   twitter: { card: "summary_large_image", title, description, images: [`${siteUrl}/og/connect`] },
 };
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What if I study in chat and the browser at the same time?",
-    a: "An older browser tab cannot save over newer chat progress. Saving pauses with a notice; reopen TigerTest to load saved changes. Unsynced browser work may need repeating. Guest-only progress is not visible in chat.",
+    a: "An older browser tab cannot save over newer chat progress. Saving pauses with a notice; reopen Tigertest to load saved changes. Unsynced browser work may need repeating. Guest-only progress is not visible in chat.",
   },
   {
     q: "Is it free?",
@@ -98,16 +98,16 @@ const PROMPT_GROUPS = [
 const CLAUDE_STEPS: React.ReactNode[] = [
   <>Open Customize → Connectors (Settings in older menus).</>,
   <>Click Add custom connector.</>,
-  <>Name it TigerTest and paste the URL.</>,
-  <>Sign in to TigerTest and allow access.</>,
+  <>Name it Tigertest and paste the URL.</>,
+  <>Sign in to Tigertest and allow access.</>,
   <>Turn it on in a new chat and ask for a quiz.</>,
 ];
 
 const CHATGPT_STEPS: React.ReactNode[] = [
   <>On the web, open Plugins → Add custom MCP server (or Settings → Apps → Create).</>,
-  <>Name it TigerTest, paste the URL and pick OAuth.</>,
-  <>Sign in to TigerTest and allow access.</>,
-  <>Select TigerTest in a new chat and ask for a quiz.</>,
+  <>Name it Tigertest, paste the URL and pick OAuth.</>,
+  <>Sign in to Tigertest and allow access.</>,
+  <>Select Tigertest in a new chat and ask for a quiz.</>,
 ];
 
 const card = "rounded-3xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800";
@@ -132,7 +132,7 @@ function Steps({ steps }: { steps: React.ReactNode[] }) {
   );
 }
 
-// The hero picture: a made-up chat where a pasted PDF becomes a TigerTest
+// The hero picture: a made-up chat where a pasted PDF becomes a Tigertest
 // quiz link, with the quiz itself floating beside it as it looks on a phone.
 function ChatMock() {
   return (
@@ -152,12 +152,12 @@ function ChatMock() {
               bio-chapter-4.pdf
             </div>
             <div className="max-w-[85%] rounded-2xl rounded-br-md bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-4 py-2.5">
-              Turn this into a TigerTest quiz with 20 questions.
+              Turn this into a Tigertest quiz with 20 questions.
             </div>
           </div>
           <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 dark:bg-orange-950 text-orange-700 dark:text-orange-300 px-3 py-1 text-xs font-medium">
             <Wrench className="w-3.5 h-3.5" />
-            Used TigerTest: create quiz
+            Used Tigertest: create quiz
           </div>
           <div className="space-y-3 text-gray-800 dark:text-gray-100">
             <p>Done! Here&apos;s your quiz:</p>
@@ -272,7 +272,7 @@ export default function CreatePage() {
                 {[
                   "Choose from your saved exams and custom quizzes.",
                   "Resume practice and drill the topics you keep missing.",
-                  "Chat practice updates your TigerTest account progress.",
+                  "Chat practice updates your Tigertest account progress.",
                   "Continue timed or adaptive test sittings on the website.",
                 ].map((t) => (
                   <li key={t} className="flex gap-2.5">
@@ -319,7 +319,7 @@ export default function CreatePage() {
             <a href="https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt" className="underline hover:text-gray-900 dark:hover:text-gray-50">
               official ChatGPT guide
             </a>
-            . Your assistant writes the questions; TigerTest just saves them.
+            . Your assistant writes the questions; Tigertest just saves them.
           </p>
         </section>
 
@@ -356,7 +356,7 @@ export default function CreatePage() {
               What the connector can see
             </h2>
             <p className="text-gray-300 leading-relaxed">
-              Only your own quizzes and progress, the names of your classes, plus quizzes shared with you. It runs as your TigerTest account, and you can remove it anytime.
+              Only your own quizzes and progress, the names of your classes, plus quizzes shared with you. It runs as your Tigertest account, and you can remove it anytime.
             </p>
           </section>
 
@@ -381,7 +381,7 @@ export default function CreatePage() {
         <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-orange-500 to-amber-500 px-6 py-12 md:px-12 md:py-14 text-white">
           <div className="relative grid gap-8 md:grid-cols-[1fr_auto] items-center">
             <div className="text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Your quizzes stay on TigerTest</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Your quizzes stay on Tigertest</h2>
               <p className="mt-3 text-lg text-orange-50 max-w-xl mx-auto md:mx-0">
                 Edit, share and play them here, no chat needed.
               </p>

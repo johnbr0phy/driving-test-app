@@ -12,7 +12,7 @@
   "facts": {
     "h2": "El examen CNA en resumen",
     "answer": "El examen escrito CNA (NNAAP, el que usan la mayoría de los estados) tiene 70 preguntas de opción múltiple, 60 que cuentan para la calificación, en unos 90 minutos, y en la mayoría de los estados se aprueba con alrededor de 70%. También debes aprobar una evaluación práctica de habilidades por separado. Las habilidades de cuidado físico son el 61% del examen, el cuidado psicosocial el 13% y el rol del asistente de enfermería el 26%.",
-    "tigertest": "TigerTest tiene 200 preguntas de práctica del examen CNA en español con explicaciones, todas gratis y sin cuenta.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica del examen CNA en español con explicaciones, todas gratis y sin cuenta.",
     "rows": [
       {
         "label": "Preguntas",
@@ -78,7 +78,7 @@
       },
       {
         "h3": "4. Repasa lo que fallas",
-        "p": "TigerTest mide tu precisión por área de contenido. Después de cada examen de práctica, repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar el 70% con margen."
+        "p": "Tigertest mide tu precisión por área de contenido. Después de cada examen de práctica, repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar el 70% con margen."
       }
     ]
   },
@@ -101,7 +101,7 @@
       "a": "No. Esto te prepara para el examen escrito de conocimientos. La evaluación de habilidades es una demostración práctica de cinco habilidades elegidas al azar, que siempre incluye el lavado de manos, calificada en persona por un evaluador."
     },
     {
-      "q": "¿El examen de práctica CNA de TigerTest es gratis?",
+      "q": "¿El examen de práctica CNA de Tigertest es gratis?",
       "a": "Sí. Los cuatro exámenes de práctica y los cuatro grupos de entrenamiento son gratis, sin necesidad de cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
     }
   ],

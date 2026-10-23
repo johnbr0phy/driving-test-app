@@ -33,7 +33,7 @@ export interface Sender {
   replyTo: string;
 }
 export const JOHN_SENDER: Sender = {
-  from: "John from TigerTest <john@tigertest.io>",
+  from: "John from Tigertest <john@tigertest.io>",
   replyTo: "john@tigertest.io",
 };
 
@@ -114,7 +114,7 @@ export interface UserDoc {
 
 /**
  * Nobody hears from us after a stretch of quiet days. Someone who stopped
- * using TigerTest for the DMV has almost always taken the test and moved on,
+ * using Tigertest for the DMV has almost always taken the test and moved on,
  * so a later email reaches a person who no longer has the problem. The
  * stretch is per exam (EmailVoice.inactiveDays: 3 for the DMV, longer for
  * certification and entrance exams with multi-week study cycles) and is

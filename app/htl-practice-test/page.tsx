@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/htl-practice-test`,
-    images: [{ url: "/og/htl", width: 1200, height: 630, alt: "TigerTest free HTL practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/htl", width: 1200, height: 630, alt: "Tigertest free HTL practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -54,7 +54,7 @@ const faqs = [
     a: "Yes. HT and HTL share the same content outline. The HTL exam adds deeper chemistry, pathology, immunohistochemistry QC, management, education, and regulation questions, all of which are in this bank.",
   },
   {
-    q: "Is the TigerTest HTL practice test free?",
+    q: "Is the Tigertest HTL practice test free?",
     a: "Yes. All four practice tests and all ten training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
   },
 ];
@@ -64,7 +64,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free HTL (ASCP) Practice Tests",
+      name: "Tigertest - Free HTL (ASCP) Practice Tests",
       description,
       url: `${siteUrl}/htl-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -184,7 +184,7 @@ export default function HTLLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("htl", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -197,7 +197,7 @@ export default function HTLLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -243,7 +243,7 @@ export default function HTLLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
-                TigerTest tracks your accuracy by content area. After each practice test, go back to the
+                Tigertest tracks your accuracy by content area. After each practice test, go back to the
                 training set for the area you missed most.
               </p>
             </div>

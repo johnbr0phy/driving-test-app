@@ -6,9 +6,9 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 /** The exam's own share card, so a shared app link never shows the DMV card. */
 function shareTags(id: string, title: string, description: string, landing: string): Metadata {
-  const image = { url: `/og/${id}`, width: 1200, height: 630, alt: `TigerTest ${title}` };
+  const image = { url: `/og/${id}`, width: 1200, height: 630, alt: `Tigertest ${title}` };
   return {
-    openGraph: { type: "website", siteName: "TigerTest", title, description, url: `${siteUrl}${landing}`, images: [image] },
+    openGraph: { type: "website", siteName: "Tigertest", title, description, url: `${siteUrl}${landing}`, images: [image] },
     twitter: { card: "summary_large_image", title, description, images: [image.url] },
   };
 }
@@ -43,12 +43,12 @@ export function examV2AppMetadata(exam: ExamV2Config): Metadata {
   };
 }
 
-/** Neutral TigerTest card for site pages that belong to no one exam (login, signup...). */
+/** Neutral Tigertest card for site pages that belong to no one exam (login, signup...). */
 export function siteShareMetadata(title: string): Metadata {
   const description = "Free practice tests for 40+ exams: DMV, CDL, NCLEX, SAT, ACT, CompTIA and more, with instant feedback.";
-  const image = { url: "/tiger.png", width: 1024, height: 1024, alt: "TigerTest" };
+  const image = { url: "/tiger.png", width: 1024, height: 1024, alt: "Tigertest" };
   return {
-    openGraph: { type: "website", siteName: "TigerTest", title, description, url: siteUrl, images: [image] },
+    openGraph: { type: "website", siteName: "Tigertest", title, description, url: siteUrl, images: [image] },
     twitter: { card: "summary", title, description, images: [image.url] },
   };
 }

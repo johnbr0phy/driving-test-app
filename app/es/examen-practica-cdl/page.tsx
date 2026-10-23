@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url,
-    images: [{ url: "/og/cdl", width: 1200, height: 630, alt: "Examen de práctica CDL gratis de TigerTest" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/cdl", width: 1200, height: 630, alt: "Examen de práctica CDL gratis de Tigertest" }],
+    siteName: "Tigertest",
     type: "website",
     locale: "es_US",
   },
@@ -61,10 +61,10 @@ const faqs = [
   },
   {
     q: "¿Cuántas preguntas tiene el examen de conocimientos generales de la CDL?",
-    a: "Normalmente tiene 50 preguntas y necesitas 40 correctas (80%) para aprobar. TigerTest tiene 600 preguntas de práctica para que llegues preparado a cualquier tema.",
+    a: "Normalmente tiene 50 preguntas y necesitas 40 correctas (80%) para aprobar. Tigertest tiene 600 preguntas de práctica para que llegues preparado a cualquier tema.",
   },
   {
-    q: "¿El examen de práctica CDL de TigerTest es gratis?",
+    q: "¿El examen de práctica CDL de Tigertest es gratis?",
     a: "Sí. Los seis exámenes de práctica y todos los grupos de práctica por tema son gratis. No hay costos ocultos ni necesitas crear una cuenta.",
   },
   {
@@ -107,7 +107,7 @@ const jsonLd = {
     },
     {
       "@type": "WebApplication",
-      name: "TigerTest - Examen de práctica CDL gratis",
+      name: "Tigertest - Examen de práctica CDL gratis",
       description:
         "600 preguntas de práctica en español para el examen de conocimientos generales de la licencia de manejo comercial (CDL).",
       url,
@@ -165,7 +165,7 @@ export default function CDLLandingPageEs() {
             segura, frenos, carga y emergencias.
           </p>
           <p className="text-gray-600 dark:text-gray-300 mb-6">
-            TigerTest tiene 600 preguntas de práctica de la CDL en español con explicaciones, todas gratis y sin cuenta.
+            Tigertest tiene 600 preguntas de práctica de la CDL en español con explicaciones, todas gratis y sin cuenta.
           </p>
           <dl className="grid sm:grid-cols-2 gap-x-8 border-t border-gray-200 dark:border-gray-800">
             {facts.map((row) => (
@@ -245,7 +245,7 @@ export default function CDLLandingPageEs() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <Image src={getTigerAsset("cdl", 1)} alt="Mascota de TigerTest" width={180} height={180} className="w-32 md:w-44" />
+              <Image src={getTigerAsset("cdl", 1)} alt="Mascota de Tigertest" width={180} height={180} className="w-32 md:w-44" />
             </div>
           </div>
         </div>
@@ -281,7 +281,7 @@ export default function CDLLandingPageEs() {
           <div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Repasa lo que fallas</h3>
             <p>
-              TigerTest guarda cada pregunta que fallas y te deja repasarlas hasta corregirlas. Dedica más tiempo a los
+              Tigertest guarda cada pregunta que fallas y te deja repasarlas hasta corregirlas. Dedica más tiempo a los
               temas donde más fallas.
             </p>
           </div>

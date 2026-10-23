@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/lifeguard-practice-test`,
-    images: [{ url: "/og/lifeguard", width: 1200, height: 630, alt: "TigerTest free lifeguard practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/lifeguard", width: 1200, height: 630, alt: "Tigertest free lifeguard practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -44,7 +44,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free Lifeguard Practice Tests",
+      name: "Tigertest - Free Lifeguard Practice Tests",
       description,
       url: `${siteUrl}/lifeguard-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -196,7 +196,7 @@ export default function LifeguardLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("lifeguard", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -209,7 +209,7 @@ export default function LifeguardLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -252,7 +252,7 @@ export default function LifeguardLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest to 90 percent</h3>
               <p>
-                TigerTest tracks your accuracy by content area. Most courses require 80 percent on the written exam, so after each practice test drill the questions you missed, retrain that test&apos;s set, and retake until you clear 90 percent with room to spare, then take all four practice tests back to back.
+                Tigertest tracks your accuracy by content area. Most courses require 80 percent on the written exam, so after each practice test drill the questions you missed, retrain that test&apos;s set, and retake until you clear 90 percent with room to spare, then take all four practice tests back to back.
               </p>
             </div>
           </div>

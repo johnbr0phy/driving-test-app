@@ -1,5 +1,5 @@
 /**
- * What TigerTest Premium unlocks on a v2 exam. One purchase, the same flag
+ * What Tigertest Premium unlocks on a v2 exam. One purchase, the same flag
  * as the DMV (users/{uid}.subscription.isPremium), covers every exam that
  * declares `premium` in its config. Exams without it are entirely free.
  *

@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from "@capacitor/cli";
 
 /**
- * TigerTest mobile shell.
+ * Tigertest mobile shell.
  *
  * The app is a thin native wrapper that loads the production site. The
  * site detects the shell via the appended user-agent token (see
@@ -14,7 +14,7 @@ import type { CapacitorConfig } from "@capacitor/cli";
  */
 const config: CapacitorConfig = {
   appId: "io.tigertest.app",
-  appName: "TigerTest",
+  appName: "Tigertest",
   webDir: "www",
   server: {
     url: "https://www.tigertest.io",

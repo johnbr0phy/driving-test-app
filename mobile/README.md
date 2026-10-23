@@ -1,4 +1,4 @@
-# TigerTest Mobile (iOS + Android)
+# Tigertest Mobile (iOS + Android)
 
 Capacitor 8 shell around **https://www.tigertest.io**. The native apps are a
 thin WebView; all product UI is the live site, so web deploys update the apps

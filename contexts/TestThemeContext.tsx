@@ -30,7 +30,7 @@ export interface TestTheme {
 export const themes: Record<string, TestTheme> = {
   dmv: {
     id: "dmv",
-    name: "TigerTest",
+    name: "Tigertest",
     slug: "dmv",
     headerTitle: "tigertest.io",
     logoHome: "/dmv/dashboard",

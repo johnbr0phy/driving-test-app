@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/alcohol-server-practice-test`,
-    images: [{ url: "/og/alcohol", width: 1200, height: 630, alt: "TigerTest free alcohol server certification practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/alcohol", width: 1200, height: 630, alt: "Tigertest free alcohol server certification practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -43,7 +43,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free Alcohol Server Certification Practice Tests",
+      name: "Tigertest - Free Alcohol Server Certification Practice Tests",
       description,
       url: `${siteUrl}/alcohol-server-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -82,7 +82,7 @@ const jsonLd = {
           name: "What score do I need to pass?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Most state and provider exams require 70 to 80 percent, and many allow a retake if you miss. TigerTest marks a practice test as passed at 70 percent, so aim for 85 or better here to leave a margin on exam day.",
+            text: "Most state and provider exams require 70 to 80 percent, and many allow a retake if you miss. Tigertest marks a practice test as passed at 70 percent, so aim for 85 or better here to leave a margin on exam day.",
           },
         },
         {
@@ -95,10 +95,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Does passing the TigerTest practice test give me a certificate?",
+          name: "Does passing the Tigertest practice test give me a certificate?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. TigerTest is free practice to prepare you for any state or provider's responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. All four practice tests and all four training sets here are free, with no account required.",
+            text: "No. Tigertest is free practice to prepare you for any state or provider's responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. All four practice tests and all four training sets here are free, with no account required.",
           },
         },
       ],
@@ -194,7 +194,7 @@ export default function AlcoholServerLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("alcohol", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -207,7 +207,7 @@ export default function AlcoholServerLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -278,7 +278,7 @@ export default function AlcoholServerLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What score do I need to pass?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Most state and provider exams require 70 to 80 percent, and many allow a retake if you miss. TigerTest marks a practice test as passed at 70 percent, so aim for 85 or better here to leave a margin on exam day.
+              Most state and provider exams require 70 to 80 percent, and many allow a retake if you miss. Tigertest marks a practice test as passed at 70 percent, so aim for 85 or better here to leave a margin on exam day.
             </p>
           </div>
           <div>
@@ -288,9 +288,9 @@ export default function AlcoholServerLandingPage() {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does passing the TigerTest practice test give me a certificate?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does passing the Tigertest practice test give me a certificate?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. TigerTest is free practice to prepare you for any state or provider&apos;s responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. All four practice tests and all four training sets here are free, with no account required.
+              No. Tigertest is free practice to prepare you for any state or provider&apos;s responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. All four practice tests and all four training sets here are free, with no account required.
             </p>
           </div>
         </div>

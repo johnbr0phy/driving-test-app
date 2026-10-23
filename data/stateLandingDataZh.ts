@@ -1,6 +1,6 @@
 import { StateLandingInfo } from "./stateLandingData";
 
-// Simplified Chinese (简体中文) landing-page copy for TigerTest. Coverage is
+// Simplified Chinese (简体中文) landing-page copy for Tigertest. Coverage is
 // intentionally limited to the states listed in zhStates.ts. Only the same
 // fields the Korean and Vietnamese mirrors translate are localized here
 // (retakeWaitTime, retakeInfo, notableRules, onlineTestInfo,
@@ -33,7 +33,7 @@ export const stateLandingDataZh: Record<string, StateLandingInfo> = {
     ],
     neighboringSlugs: ["new-jersey", "pennsylvania", "connecticut", "massachusetts", "vermont"],
     onlineTestInfo: "不可以。纽约州DMV知识考试必须亲自到DMV办公室参加。",
-    examManualChapters: "根据纽约州DMV的说明，笔试内容出自New York State Driver's Manual的第4章至第11章，涵盖交通标志、信号和车道标线，路口与转弯，安全驾驶与超车技巧，防御性驾驶，与其他道路使用者共享道路，酒精和其他药物的影响，停车规定以及紧急情况的处理。TigerTest的200道纽约州练习题也是根据同样的资料编写的，因此答错的题目都可以直接对照官方手册查证。"
+    examManualChapters: "根据纽约州DMV的说明，笔试内容出自New York State Driver's Manual的第4章至第11章，涵盖交通标志、信号和车道标线，路口与转弯，安全驾驶与超车技巧，防御性驾驶，与其他道路使用者共享道路，酒精和其他药物的影响，停车规定以及紧急情况的处理。Tigertest的200道纽约州练习题也是根据同样的资料编写的，因此答错的题目都可以直接对照官方手册查证。"
   },
   NJ: {
     retakeWaitTime: "14天",

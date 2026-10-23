@@ -126,7 +126,7 @@ function AdminTabs() {
             always one tap away however far down a table the reader is. The
             title only fits beside it from sm up. */}
         <div className="sticky top-0 z-20 -mx-4 px-4 py-3 sm:py-4 mb-3 sm:mb-2 bg-gray-50/90 dark:bg-gray-950/90 backdrop-blur flex items-center justify-between gap-3">
-          <h1 className="sr-only sm:not-sr-only text-xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">TigerTest admin</h1>
+          <h1 className="sr-only sm:not-sr-only text-xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">Tigertest admin</h1>
           <div role="tablist" className="flex items-center gap-1 w-full sm:w-auto bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 shadow-sm">
             {TABS.map((t) => (
               <button

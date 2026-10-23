@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/teas-practice-test`,
-    images: [{ url: "/og/teas", width: 1200, height: 630, alt: "TigerTest free TEAS practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/teas", width: 1200, height: 630, alt: "Tigertest free TEAS practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -44,7 +44,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free TEAS Full-Length Test on a Computer",
+      name: "Tigertest - Free TEAS Full-Length Test on a Computer",
       description,
       url: `${siteUrl}/teas-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -85,7 +85,7 @@ const jsonLd = {
           name: "Does this have the same question types as the real TEAS?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. TigerTest includes select-all-that-apply, fill-in and ordered-response items alongside multiple choice, with each reading passage shown beside its question. Image hot spots are the one format not modelled here.",
+            text: "The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. Tigertest includes select-all-that-apply, fill-in and ordered-response items alongside multiple choice, with each reading passage shown beside its question. Image hot spots are the one format not modelled here.",
           },
         },
         {
@@ -98,7 +98,7 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Is the TigerTest TEAS practice test free?",
+          name: "Is the Tigertest TEAS practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Yes. The full-length test and all six drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
@@ -197,7 +197,7 @@ export default function TeasLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("teas", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -210,7 +210,7 @@ export default function TeasLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -253,7 +253,7 @@ export default function TeasLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak section</h3>
               <p>
-                TigerTest tracks your accuracy by section. Programs usually want 60 to 70 percent overall and some set section minimums, so retake the set you missed most until you clear 75 percent with room to spare.
+                Tigertest tracks your accuracy by section. Programs usually want 60 to 70 percent overall and some set section minimums, so retake the set you missed most until you clear 75 percent with room to spare.
               </p>
             </div>
           </div>
@@ -281,7 +281,7 @@ export default function TeasLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this have the same question types as the real TEAS?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. TigerTest includes select-all-that-apply, fill-in and ordered-response items alongside multiple choice, with each reading passage shown beside its question. Image hot spots are the one format not modelled here.
+              The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. Tigertest includes select-all-that-apply, fill-in and ordered-response items alongside multiple choice, with each reading passage shown beside its question. Image hot spots are the one format not modelled here.
             </p>
           </div>
           <div>
@@ -291,7 +291,7 @@ export default function TeasLandingPage() {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest TEAS practice test free?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest TEAS practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
               Yes. The full-length test and all six drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
             </p>

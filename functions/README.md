@@ -1,6 +1,6 @@
-# TigerTest Email Functions
+# Tigertest Email Functions
 
-Firebase Cloud Functions for TigerTest email automation.
+Firebase Cloud Functions for Tigertest email automation.
 
 > **Superseded — do not deploy.** The welcome / first-test-reminder /
 > second-test-nudge / upgrade-pitch / reengagement emails now run as Vercel

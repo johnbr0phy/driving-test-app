@@ -53,14 +53,14 @@ export async function generateMetadata({
     return { title: "找不到该州" };
   }
 
-  const title = `${state.name} DMV 笔试模拟考试 2026 - 免费 | TigerTest`;
+  const title = `${state.name} DMV 笔试模拟考试 2026 - 免费 | Tigertest`;
   const description = `一次通过${state.name}驾照笔试。真实考试共${state.writtenTestQuestions}道题，用根据${state.name}驾驶手册编写的200道免费模拟题做好准备。现在就开始练习吧。`;
   const canonicalUrl = `${siteUrl}/zh/${state.slug}-dmv-bishi-lianxi`;
   const enUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
   const esUrl = `${siteUrl}/es/${state.slug}-examen-practica-dmv`;
 
   return {
-    // The string already carries the brand; skip the root layout's "%s | TigerTest" template.
+    // The string already carries the brand; skip the root layout's "%s | Tigertest" template.
     title: { absolute: title },
     description,
     alternates: {
@@ -84,13 +84,13 @@ export async function generateMetadata({
       type: "website",
       url: canonicalUrl,
       locale: "zh_CN",
-      siteName: "TigerTest",
+      siteName: "Tigertest",
       images: [
         {
           url: "/tiger.png",
           width: 512,
           height: 512,
-          alt: `${state.name} DMV 笔试模拟考试 - TigerTest`,
+          alt: `${state.name} DMV 笔试模拟考试 - Tigertest`,
         },
       ],
     },
@@ -129,7 +129,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
   const faqItems = [
     {
       question: `${state.name}驾照笔试有多少道题？`,
-      answer: `${state.name} ${state.dmvName}的笔试共有${state.writtenTestQuestions}道题。至少答对${rawPassing}道题（${state.passingScore}%）才能通过。TigerTest提供200道模拟题，帮助你充分准备。`,
+      answer: `${state.name} ${state.dmvName}的笔试共有${state.writtenTestQuestions}道题。至少答对${rawPassing}道题（${state.passingScore}%）才能通过。Tigertest提供200道模拟题，帮助你充分准备。`,
     },
     {
       question: `${state.name} DMV笔试要考多少分才能通过？`,
@@ -195,7 +195,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
   const courseJsonLd = {
     "@context": "https://schema.org",
     "@type": ["WebApplication", "LearningResource"],
-    name: `${state.name} DMV 笔试模拟考试 - TigerTest`,
+    name: `${state.name} DMV 笔试模拟考试 - Tigertest`,
     description: `免费的${state.name} DMV笔试模拟考试，共200道题，根据${state.name} ${state.dmvName}官方驾驶手册编写。`,
     url: `${siteUrl}/zh/${state.slug}-dmv-bishi-lianxi`,
     inLanguage: "zh-Hans",
@@ -208,12 +208,12 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
     dateModified: lastModifiedIso,
     author: {
       "@type": "Organization",
-      name: "TigerTest",
+      name: "Tigertest",
       url: siteUrl,
     },
     publisher: {
       "@type": "Organization",
-      name: "TigerTest",
+      name: "Tigertest",
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
     },
@@ -238,7 +238,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
     },
     supply: [
       { "@type": "HowToSupply", name: `${landingInfo.handbookName}` },
-      { "@type": "HowToSupply", name: "TigerTest 模拟题" },
+      { "@type": "HowToSupply", name: "Tigertest 模拟题" },
     ],
     step: [
       {
@@ -252,7 +252,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
         "@type": "HowToStep",
         position: 2,
         name: "用学习模式练习",
-        text: `逐题完成TigerTest为${state.name}准备的200道模拟题。每答一题都会立即显示对错和解析。`,
+        text: `逐题完成Tigertest为${state.name}准备的200道模拟题。每答一题都会立即显示对错和解析。`,
         url: `${siteUrl}/zh/${state.slug}-dmv-bishi-lianxi`,
       },
       {
@@ -265,7 +265,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
         "@type": "HowToStep",
         position: 4,
         name: "复习所有答错的题目",
-        text: "重新阅读答错题目的解析。TigerTest会把答错的题目放进复习列表，更频繁地让你再练。",
+        text: "重新阅读答错题目的解析。Tigertest会把答错的题目放进复习列表，更频繁地让你再练。",
       },
       {
         "@type": "HowToStep",
@@ -487,7 +487,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
                   准备笔试，请认真学习
                   <strong>{landingInfo.handbookName}</strong>
-                  。TigerTest的模拟题也是根据这本手册的内容编写的。
+                  。Tigertest的模拟题也是根据这本手册的内容编写的。
                 </p>
                 <a
                   href={landingInfo.handbookUrl}
@@ -553,7 +553,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
             准备好通过{state.name} DMV笔试了吗？
           </h2>
           <p className="text-brand-light text-lg mb-6">
-            和众多用TigerTest一次通过的{state.name}驾驶者一起备考
+            和众多用Tigertest一次通过的{state.name}驾驶者一起备考
           </p>
           <Button asChild
               size="lg"

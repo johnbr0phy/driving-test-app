@@ -22,18 +22,18 @@ const faqs = [
   },
   {
     q: "What percentage do I need to pass the NCLEX?",
-    a: "There is no percentage pass mark. The real NCLEX is adaptive: it assesses ability against a passing standard and reports pass or fail. TigerTest reports percent correct on fixed practice items. Practice percentages do not predict your NCLEX result or tell you when to schedule the exam. Use them to track practice progress and choose topics to review.",
+    a: "There is no percentage pass mark. The real NCLEX is adaptive: it assesses ability against a passing standard and reports pass or fail. Tigertest reports percent correct on fixed practice items. Practice percentages do not predict your NCLEX result or tell you when to schedule the exam. Use them to track practice progress and choose topics to review.",
   },
   {
     q: "What is on the 2026 NCLEX-RN test plan?",
     a: "Eight Client Needs categories: Management of Care (15 to 21%), Safety and Infection Prevention and Control (10 to 16%), Health Promotion and Maintenance (6 to 12%), Psychosocial Integrity (6 to 12%), Basic Care and Comfort (6 to 12%), Pharmacological and Parenteral Therapies (13 to 19%), Reduction of Risk Potential (9 to 15%) and Physiological Adaptation (11 to 17%). The 2026 plan took effect April 1, 2026 and kept the same weights as 2023.",
   },
   {
-    q: "Does TigerTest have Next Generation NCLEX questions?",
-    a: "Yes. The bank includes select all that apply, matrix, bowtie, drop-down, highlight, ordering and numeric items, plus case studies with charts. TigerTest scores each item all or nothing. It does not reproduce the real exam's partial-credit scoring or adaptive ability assessment.",
+    q: "Does Tigertest have Next Generation NCLEX questions?",
+    a: "Yes. The bank includes select all that apply, matrix, bowtie, drop-down, highlight, ordering and numeric items, plus case studies with charts. Tigertest scores each item all or nothing. It does not reproduce the real exam's partial-credit scoring or adaptive ability assessment.",
   },
   {
-    q: "Is the TigerTest NCLEX practice test free?",
+    q: "Is the Tigertest NCLEX practice test free?",
     a: "Yes. Both practice tests and all eight drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
   },
 ];
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/nclex-rn-practice-test`,
-    images: [{ url: "/og/nclex", width: 1200, height: 630, alt: "TigerTest free NCLEX-RN practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/nclex", width: 1200, height: 630, alt: "Tigertest free NCLEX-RN practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -67,7 +67,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free NCLEX-RN Practice Test",
+      name: "Tigertest - Free NCLEX-RN Practice Test",
       description,
       url: `${siteUrl}/nclex-rn-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -188,7 +188,7 @@ export default function NclexLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("nclex", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -201,7 +201,7 @@ export default function NclexLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -244,7 +244,7 @@ export default function NclexLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Read the rationales, then drill your weakest area</h3>
               <p>
-                TigerTest shows practice scores by Client Needs category. Review the rationales in the area you miss most, then use Practice Test 2 to check your progress on a separate set of questions. These scores do not predict your result on the real adaptive exam.
+                Tigertest shows practice scores by Client Needs category. Review the rationales in the area you miss most, then use Practice Test 2 to check your progress on a separate set of questions. These scores do not predict your result on the real adaptive exam.
               </p>
             </div>
           </div>

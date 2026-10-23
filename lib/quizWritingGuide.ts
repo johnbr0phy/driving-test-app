@@ -1,4 +1,4 @@
-// The TigerTest question-writing rules, distilled from the exam-bank skill
+// The Tigertest question-writing rules, distilled from the exam-bank skill
 // the site's own banks are written to (.claude/skills/exam-bank/SKILL.md),
 // for the AI assistants that write quizzes through the MCP server. The MCP
 // server offers it as a prompt and a tool (lib/server/mcp-tools.ts), and
@@ -10,9 +10,9 @@
 /** Shared by the full guide and authoring tool descriptions. Guidance, not a server-side model call. */
 export const QUIZ_CONTEXT_GUIDANCE = `Before writing or saving, establish the audience and level, purpose, scope, reliable source facts, and a useful question count. Reuse context already supplied; ask only for gaps that affect question quality. If the request is too sparse, ask a short, focused follow-up and wait instead of generating or calling create_quiz. For a private person such as "my mate Dave", ask for user-provided facts and the intended scope; do not guess their identity, search for an arbitrary person with that name, or invent personal facts. Prefer fewer distinct, supported questions to padding.`;
 
-export const QUIZ_WRITING_GUIDE = `# How to write a TigerTest quiz
+export const QUIZ_WRITING_GUIDE = `# How to write a Tigertest quiz
 
-You are writing multiple-choice questions for a practice test on TigerTest. The questions go into a mastery engine (a missed question keeps coming back until it is answered right) and a timed test with a pass mark, so every question must have exactly one defensible answer. Work in this order.
+You are writing multiple-choice questions for a practice test on Tigertest. The questions go into a mastery engine (a missed question keeps coming back until it is answered right) and a timed test with a pass mark, so every question must have exactly one defensible answer. Work in this order.
 
 ## 1. Establish enough context
 
@@ -47,7 +47,7 @@ ${QUIZ_CONTEXT_GUIDANCE}
 - Re-read every item asking "could a well-prepared person defend a different option?" Fix or drop any where the answer is yes.
 - Check that no two stems ask the same thing and no option appears twice in one question.
 - Check the letter rotation and that the correct option is not the longest in more than a quarter of items.
-- Suggest a title under 60 characters and a one-sentence description. Default visibility is "link" (anyone with the link). Offer "public" if the person wants it in the TigerTest library, "private" if it is only for them, and "class" if it is for their students (a teacher with a Tigertest class: list_my_classes gives the classCode).
+- Suggest a title under 60 characters and a one-sentence description. Default visibility is "link" (anyone with the link). Offer "public" if the person wants it in the Tigertest library, "private" if it is only for them, and "class" if it is for their students (a teacher with a Tigertest class: list_my_classes gives the classCode).
 
 ## 5. After
 

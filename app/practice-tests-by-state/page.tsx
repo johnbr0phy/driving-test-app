@@ -6,7 +6,7 @@ import { states } from "@/data/states";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 export const metadata: Metadata = {
-  title: { absolute: "DMV Practice Tests by State 2026 - Free Permit Practice | TigerTest" },
+  title: { absolute: "DMV Practice Tests by State 2026 - Free Permit Practice | Tigertest" },
   description:
     "Free DMV practice tests for all 50 states. Choose your state and start practicing with 200 questions based on your state's driver's manual. Pass your permit test on the first try.",
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "DMV Practice Tests by State 2026 | TigerTest",
+    title: "DMV Practice Tests by State 2026 | Tigertest",
     description:
       "Free DMV practice tests for all 50 states. 200 questions per state with instant feedback.",
     type: "website",
@@ -126,7 +126,7 @@ export default function PracticeTestsByStatePage() {
             <strong>20–50 question</strong> exam with a{" "}
             <strong>70%–85% passing score</strong>. Minimum permit age ranges
             from <strong>14 to 16</strong>. The table below compares all 50
-            states plus Washington D.C., and TigerTest provides 200 free
+            states plus Washington D.C., and Tigertest provides 200 free
             practice questions for each.
           </p>
         </div>
@@ -236,12 +236,12 @@ export default function PracticeTestsByStatePage() {
         {/* Summary Section */}
         <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-6 md:p-8 mb-12">
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-4">
-            About TigerTest State Practice Tests
+            About Tigertest State Practice Tests
           </h2>
           <div className="text-gray-600 dark:text-gray-300 space-y-3">
             <p>
               Every state has different driving laws, test formats, and passing
-              requirements. TigerTest provides <strong>200 questions per state</strong>,
+              requirements. Tigertest provides <strong>200 questions per state</strong>,
               including state-specific questions about local traffic laws, speed
               limits, and regulations unique to your state.
             </p>

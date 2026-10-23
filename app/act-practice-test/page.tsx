@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/act-practice-test`,
-    images: [{ url: "/og/act", width: 1200, height: 630, alt: "TigerTest free ACT practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/act", width: 1200, height: 630, alt: "Tigertest free ACT practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -42,15 +42,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is on the enhanced ACT?",
-    a: "Since 2025 the ACT has English (50 questions, 35 minutes), Math (45 questions, 50 minutes) and Reading (36 questions, 40 minutes), with Science (40 questions, 40 minutes) and Writing optional. Every question has four answer choices. The TigerTest practice test uses the same sections, counts and timing, with Science included.",
+    a: "Since 2025 the ACT has English (50 questions, 35 minutes), Math (45 questions, 50 minutes) and Reading (36 questions, 40 minutes), with Science (40 questions, 40 minutes) and Writing optional. Every question has four answer choices. The Tigertest practice test uses the same sections, counts and timing, with Science included.",
   },
   {
     q: "How is the ACT scored?",
-    a: "Each section is scaled from 1 to 36. The composite is the average of English, Math and Reading, rounded. If you take Science, it is reported separately and combined with Math into a STEM score. TigerTest converts your correct answers to an estimated section score with a typical conversion. It is an estimate, not an official score.",
+    a: "Each section is scaled from 1 to 36. The composite is the average of English, Math and Reading, rounded. If you take Science, it is reported separately and combined with Math into a STEM score. Tigertest converts your correct answers to an estimated section score with a typical conversion. It is an estimate, not an official score.",
   },
   {
     q: "Can I use a calculator on the ACT?",
-    a: "Yes, on the whole Math section, as long as it is a permitted model. No calculator is needed or allowed on the other sections. The TigerTest practice test has a calculator one tap away on every Math question.",
+    a: "Yes, on the whole Math section, as long as it is a permitted model. No calculator is needed or allowed on the other sections. The Tigertest practice test has a calculator one tap away on every Math question.",
   },
   {
     q: "What is a good ACT score?",
@@ -58,15 +58,15 @@ const faqs = [
   },
   {
     q: "Why are there two practice tests?",
-    a: "Take Practice Test 1 cold for a baseline, drill for a week or two, then take Practice Test 2. Test 2 is held out of the drills, so none of its passages or questions appear anywhere else on TigerTest. That makes it a clean measure of what you have learned, not of what you remember.",
+    a: "Take Practice Test 1 cold for a baseline, drill for a week or two, then take Practice Test 2. Test 2 is held out of the drills, so none of its passages or questions appear anywhere else on Tigertest. That makes it a clean measure of what you have learned, not of what you remember.",
   },
   {
     q: "Is this an official ACT practice test?",
-    a: "No. Every passage and question is original, written to the published enhanced ACT specifications for content, question types, timing and difficulty. TigerTest is not affiliated with or endorsed by ACT, Inc. Use it alongside the free official practice test from ACT.",
+    a: "No. Every passage and question is original, written to the published enhanced ACT specifications for content, question types, timing and difficulty. Tigertest is not affiliated with or endorsed by ACT, Inc. Use it alongside the free official practice test from ACT.",
   },
   {
-    q: "Is the TigerTest ACT practice test free?",
-    a: "Yes, to start. Practice Test 1, its score and every explanation, and seven of the eleven skill drills are free with no account required. TigerTest Premium, a one-time $9.99 with no subscription, unlocks Practice Test 2 and the Knowledge of Language, Essential Skills and Modeling, Craft and Integration, and Evaluation of Models drills, and the same purchase covers the DMV and the SAT too.",
+    q: "Is the Tigertest ACT practice test free?",
+    a: "Yes, to start. Practice Test 1, its score and every explanation, and seven of the eleven skill drills are free with no account required. Tigertest Premium, a one-time $9.99 with no subscription, unlocks Practice Test 2 and the Knowledge of Language, Essential Skills and Modeling, Craft and Integration, and Evaluation of Models drills, and the same purchase covers the DMV and the SAT too.",
   },
 ];
 
@@ -75,7 +75,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free ACT Practice Test",
+      name: "Tigertest - Free ACT Practice Test",
       description,
       url: `${siteUrl}/act-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -187,7 +187,7 @@ export default function ActLandingPage() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <Image src={getTigerAsset("act", 1)} alt="TigerTest mascot" width={180} height={180} className="w-32 md:w-44" />
+              <Image src={getTigerAsset("act", 1)} alt="Tigertest mascot" width={180} height={180} className="w-32 md:w-44" />
             </div>
           </div>
         </div>
@@ -196,7 +196,7 @@ export default function ActLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate a TigerTest exam bank against the schema and house style.
+"""Validate a Tigertest exam bank against the schema and house style.
 
 Usage:
   python3 -I validate_bank.py data/<bank>.json [--pool cat=N ...] [--max-key-longest 0.20]

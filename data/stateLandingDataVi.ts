@@ -1,6 +1,6 @@
 import { StateLandingInfo } from "./stateLandingData";
 
-// Vietnamese landing-page copy for TigerTest. Coverage is intentionally
+// Vietnamese landing-page copy for Tigertest. Coverage is intentionally
 // limited to the 10 states whose DMV offers the real knowledge test in
 // Vietnamese: CA, WA, OR, AZ, VA, GA, MA, PA, MN, MD. Only the same fields the
 // Spanish mirror translates are localized here (retakeWaitTime, retakeInfo,

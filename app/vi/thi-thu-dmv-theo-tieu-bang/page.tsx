@@ -7,7 +7,7 @@ import { VI_STATE_CODES } from "@/data/viStates";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 export const metadata: Metadata = {
-  title: { absolute: "Thi Thử DMV Bằng Tiếng Việt Theo Tiểu Bang 2026 - Miễn Phí | TigerTest" },
+  title: { absolute: "Thi Thử DMV Bằng Tiếng Việt Theo Tiểu Bang 2026 - Miễn Phí | Tigertest" },
   description:
     "Bài thi thử DMV miễn phí bằng tiếng Việt cho các tiểu bang cho phép thi bằng viết bằng tiếng Việt. 200 câu hỏi mỗi tiểu bang, dựa trên cẩm nang lái xe chính thức. Đậu ngay lần thi đầu tiên.",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Thi Thử DMV Bằng Tiếng Việt Theo Tiểu Bang 2026 | TigerTest",
+    title: "Thi Thử DMV Bằng Tiếng Việt Theo Tiểu Bang 2026 | Tigertest",
     description:
       "Bài thi thử DMV miễn phí bằng tiếng Việt. 200 câu hỏi mỗi tiểu bang với phản hồi ngay lập tức.",
     type: "website",
@@ -101,14 +101,14 @@ export default function VietnamesePracticeTestsByStatePage() {
           <p className="text-gray-700 dark:text-gray-200">
             Các tiểu bang dưới đây cho phép làm{" "}
             <strong>bài thi viết thật bằng tiếng Việt</strong> tại DMV. Bạn có
-            thể ôn bằng tiếng Việt với TigerTest rồi thi thật bằng tiếng Việt.
+            thể ôn bằng tiếng Việt với Tigertest rồi thi thật bằng tiếng Việt.
             Nếu tiểu bang của bạn không có trong danh sách, bài thi thật thường
             chỉ có tiếng Anh hoặc các ngôn ngữ khác — bạn có thể luyện bằng{" "}
             <Link
               href="/practice-tests-by-state"
               className="text-brand-dark hover:text-brand-darker font-medium underline"
             >
-              bản tiếng Anh của TigerTest
+              bản tiếng Anh của Tigertest
             </Link>
             .
           </p>
@@ -139,12 +139,12 @@ export default function VietnamesePracticeTestsByStatePage() {
         {/* Summary Section */}
         <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-6 md:p-8 mb-12">
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-4">
-            Về Bài Thi Thử Theo Tiểu Bang Của TigerTest
+            Về Bài Thi Thử Theo Tiểu Bang Của Tigertest
           </h2>
           <div className="text-gray-600 dark:text-gray-300 space-y-3">
             <p>
               Mỗi tiểu bang có luật giao thông, hình thức thi và điểm đậu khác
-              nhau. TigerTest có <strong>200 câu hỏi cho mỗi tiểu bang</strong>,
+              nhau. Tigertest có <strong>200 câu hỏi cho mỗi tiểu bang</strong>,
               bao gồm các câu hỏi riêng về luật địa phương, giới hạn tốc độ và
               những quy định đặc thù của tiểu bang bạn.
             </p>

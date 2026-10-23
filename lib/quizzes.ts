@@ -1,7 +1,7 @@
 import type { Question, QuestionCategory } from "@/types";
 import { CLASS_CODE_ALPHABET, cleanName } from "@/lib/classes";
 
-// Quizzes: anyone with an account turns their own material into a TigerTest
+// Quizzes: anyone with an account turns their own material into a Tigertest
 // practice test. A quiz is made on /create (paste notes, import a Quizlet
 // set, or write questions by hand), from Claude or ChatGPT through the MCP
 // server (create_quiz), and played at tigertest.io/q/<code> in three modes:
@@ -41,7 +41,7 @@ export const QUIZ_PUBLIC_MIN_PLAYS = 5;
 
 /**
  * What a free account and a Premium account can keep. Creator reports are
- * free, like classes. Nothing here costs TigerTest a model call: questions
+ * free, like classes. Nothing here costs Tigertest a model call: questions
  * are written by the person's own assistant (the connector, or the copied
  * prompt on /create), imported from Quizlet, or typed.
  */

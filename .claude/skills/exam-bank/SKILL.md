@@ -1,6 +1,6 @@
 ---
 name: exam-bank
-description: Write, validate and wire a new TigerTest practice exam (a 200-question bank in data/, its ExamConfig, app routes, landing page and screenshots). Use this whenever the user asks to add, build, generate or rewrite a practice test, question bank, exam, or quiz for any certification, license, entrance or permit test, or to review or fix the quality of an existing bank in data/*-questions.json. Also use it when adding questions to an existing exam, even if the word "skill" or "bank" never appears.
+description: Write, validate and wire a new Tigertest practice exam (a 200-question bank in data/, its ExamConfig, app routes, landing page and screenshots). Use this whenever the user asks to add, build, generate or rewrite a practice test, question bank, exam, or quiz for any certification, license, entrance or permit test, or to review or fix the quality of an existing bank in data/*-questions.json. Also use it when adding questions to an existing exam, even if the word "skill" or "bank" never appears.
 ---
 
 # Exam bank

@@ -55,7 +55,7 @@ export function translatedLandingMetadata(examId: string, lang: Language, c: Tra
       description: c.metaDescription,
       url,
       images: [{ url: `/og/${examId}`, width: 1200, height: 630, alt: c.h1 }],
-      siteName: "TigerTest",
+      siteName: "Tigertest",
       type: "website",
       locale: (LOCALES[lang] ?? lang).replace("-", "_"),
     },
@@ -93,7 +93,7 @@ export function TranslatedExamLanding({
       },
       {
         "@type": "WebApplication",
-        name: `TigerTest - ${c.h1}`,
+        name: `Tigertest - ${c.h1}`,
         description: c.subtitle,
         url,
         inLanguage,

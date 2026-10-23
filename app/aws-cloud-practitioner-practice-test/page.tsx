@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/aws-cloud-practitioner-practice-test`,
-    images: [{ url: "/og/aws", width: 1200, height: 630, alt: "TigerTest free AWS CCP practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/aws", width: 1200, height: 630, alt: "Tigertest free AWS CCP practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -44,7 +44,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free AWS Cloud Practitioner Practice Tests",
+      name: "Tigertest - Free AWS Cloud Practitioner Practice Tests",
       description,
       url: `${siteUrl}/aws-cloud-practitioner-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -97,7 +97,7 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Is the TigerTest AWS practice test free?",
+          name: "Is the Tigertest AWS practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Yes. Both practice tests and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.",
@@ -196,7 +196,7 @@ export default function AwsLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("aws", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -209,7 +209,7 @@ export default function AwsLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -252,7 +252,7 @@ export default function AwsLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain</h3>
               <p>
-                TigerTest tracks your accuracy by domain. The exam is scored on a 100 to 1000 scale with 700 to pass, which is not a fixed percent. Retake the drill you missed most until you clear 80 percent with room to spare.
+                Tigertest tracks your accuracy by domain. The exam is scored on a 100 to 1000 scale with 700 to pass, which is not a fixed percent. Retake the drill you missed most until you clear 80 percent with room to spare.
               </p>
             </div>
           </div>
@@ -290,7 +290,7 @@ export default function AwsLandingPage() {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest AWS practice test free?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest AWS practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
               Yes. Both practice tests and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>

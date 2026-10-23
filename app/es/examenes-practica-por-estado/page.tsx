@@ -6,7 +6,7 @@ import { states } from "@/data/states";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 export const metadata: Metadata = {
-  title: { absolute: "Exámenes de Práctica DMV por Estado 2026 - Gratis | TigerTest" },
+  title: { absolute: "Exámenes de Práctica DMV por Estado 2026 - Gratis | Tigertest" },
   description:
     "Exámenes de práctica DMV gratuitos para los 50 estados. Elige tu estado y empieza a practicar con 200 preguntas basadas en el manual de conducir de tu estado. Aprueba tu examen de permiso en el primer intento.",
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Exámenes de Práctica DMV por Estado 2026 | TigerTest",
+    title: "Exámenes de Práctica DMV por Estado 2026 | Tigertest",
     description:
       "Exámenes de práctica DMV gratuitos para los 50 estados. 200 preguntas por estado con retroalimentación instantánea.",
     type: "website",
@@ -137,12 +137,12 @@ export default function SpanishPracticeTestsByStatePage() {
         {/* Summary Section */}
         <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-6 md:p-8 mb-12">
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-4">
-            Sobre los Exámenes de Práctica por Estado de TigerTest
+            Sobre los Exámenes de Práctica por Estado de Tigertest
           </h2>
           <div className="text-gray-600 dark:text-gray-300 space-y-3">
             <p>
               Cada estado tiene diferentes leyes de tránsito, formatos de examen
-              y requisitos para aprobar. TigerTest ofrece{" "}
+              y requisitos para aprobar. Tigertest ofrece{" "}
               <strong>200 preguntas por estado</strong>, incluyendo preguntas
               específicas sobre leyes de tránsito locales, límites de velocidad
               y regulaciones únicas de tu estado.

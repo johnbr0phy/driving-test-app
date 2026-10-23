@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
     const confirmation = await sendEmail({
       kind: "transactional",
       to: email,
-      subject: "Thanks for your interest in TigerTest",
+      subject: "Thanks for your interest in Tigertest",
       html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
         <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <img src="https://tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
               <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">Thanks for reaching out!</h1>
             </td>
           </tr>
@@ -57,21 +57,21 @@ export async function POST(request: NextRequest) {
                 Hey ${contactName},
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Thanks for your interest in bringing TigerTest to ${schoolName}. We&rsquo;ll put together a custom quote and send it your way within one business day.
+                Thanks for your interest in bringing Tigertest to ${schoolName}. We&rsquo;ll put together a custom quote and send it your way within one business day.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                In the meantime, feel free to try TigerTest yourself &mdash; it&rsquo;s the same experience your students will get.
+                In the meantime, feel free to try Tigertest yourself &mdash; it&rsquo;s the same experience your students will get.
               </p>
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=school_lead" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Try TigerTest</a>
+                    <a href="https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=school_lead" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Try Tigertest</a>
                   </td>
                 </tr>
               </table>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 Talk soon,<br>
-                John at TigerTest
+                John at Tigertest
               </p>
             </td>
           </tr>

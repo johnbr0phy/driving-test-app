@@ -1,12 +1,12 @@
-// All TigerTest transactional and lifecycle emails.
+// All Tigertest transactional and lifecycle emails.
 //
 // Every email is built from one shared shell (`emailShell`) so the house style
 // lives in exactly one place: cream page, 600px white card, 48px tiger, 24px
-// heading, 15px/1.7 body, black pill CTA, "John @ TigerTest.io" sign-off.
+// heading, 15px/1.7 body, black pill CTA, "John @ Tigertest.io" sign-off.
 //
 // The canonical layout was previously duplicated inline in
 // /api/send-welcome-email, which is why the cron emails had drifted: wrong
-// outer padding, wrong footer border, and a "The TigerTest Team" sign-off that
+// outer padding, wrong footer border, and a "The Tigertest Team" sign-off that
 // no live email actually used. That route now renders EMAIL_TEMPLATES.welcome.
 //
 // Every template is a function of an EmailVoice (lib/email-voice), so the
@@ -60,7 +60,7 @@ export function cta(href: string, label: string): string {
 export function signoff(lead = "Good luck,"): string {
   return `              <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 ${lead}<br>
-                John @ TigerTest.io
+                John @ Tigertest.io
               </p>`;
 }
 
@@ -90,7 +90,7 @@ function emailShell({
         <table role="presentation" width="100%" style="width: 100%; max-width: 600px; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://www.tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <img src="https://www.tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
               <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">${heading}</h1>
             </td>
           </tr>
@@ -153,15 +153,15 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   // Sent immediately at signup by /api/send-welcome-email.
   welcome: (v) =>
     emailShell({
-      title: "Welcome to TigerTest",
-      heading: "Welcome to TigerTest",
+      title: "Welcome to Tigertest",
+      heading: "Welcome to Tigertest",
       body: [
         // The DMV wording is the one email that was already live and working,
         // so it is unchanged in the DMV voice; other exams swap in their test
         // name, their test length, and one line on what the bank is built from.
         p("{{greeting}}"),
         p(
-          `Fear not. Thousands of people have used TigerTest to pass their ${v.testName}, and the ones who pass on their first try all have one thing in common: they actually tested themselves.`,
+          `Fear not. Thousands of people have used Tigertest to pass their ${v.testName}, and the ones who pass on their first try all have one thing in common: they actually tested themselves.`,
         ),
         ...(v.sourceLine ? [p(v.sourceLine)] : []),
         p(
@@ -363,14 +363,14 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           `We haven't seen you in a while, so we're guessing you went out and passed ${your(v)}. Congrats!`,
         ),
         p(
-          `If TigerTest helped, <strong style="font-weight: 600;">please share it with a friend</strong>. Word of mouth is the #1 way people find us.`,
+          `If Tigertest helped, <strong style="font-weight: 600;">please share it with a friend</strong>. Word of mouth is the #1 way people find us.`,
         ),
         cta(
           "https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share",
-          "Share TigerTest.io",
+          "Share Tigertest.io",
         ),
         p("And if you haven't taken your test yet, no rush. We're still here."),
-        signoff("Thanks for using TigerTest,"),
+        signoff("Thanks for using Tigertest,"),
       ].join("\n"),
     }),
 
@@ -386,7 +386,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       `<a href="${href}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${label}</a>`;
     const question = [
       p(
-        `<strong style="font-weight: 600;">Now a question.</strong> What test are you studying for next, or what do you wish existed? I'm one person building TigerTest and I build what people ask for. One click:`,
+        `<strong style="font-weight: 600;">Now a question.</strong> What test are you studying for next, or what do you wish existed? I'm one person building Tigertest and I build what people ask for. One click:`,
       ),
       testRequestButtons(campaign),
       p("Or just hit reply. I read every one."),
@@ -394,11 +394,11 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
 
     if (v.id === "dmv") {
       return emailShell({
-        title: "SAT and ACT, the TigerTest way",
-        heading: "SAT and ACT, the TigerTest way",
+        title: "SAT and ACT, the Tigertest way",
+        heading: "SAT and ACT, the Tigertest way",
         body: [
           p(
-            "You used TigerTest for your permit test. For a lot of you, the next big test is the SAT or ACT, so we built both the same way: a full practice test first, then short drills on exactly what you missed.",
+            "You used Tigertest for your permit test. For a lot of you, the next big test is the SAT or ACT, so we built both the same way: a full practice test first, then short drills on exactly what you missed.",
           ),
           ul([
             "The digital SAT, timed and adaptive like the real one",
@@ -425,8 +425,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       body: [
         p(
           studyingSatOrAct
-            ? `Quick note while you prep for the ${v.shortName}: TigerTest now has both the ${link(sat, "digital SAT")} and the ${link(act, "new 2025 ACT")}, each with a free full-length practice test. Plenty of students take both.`
-            : `Quick news: TigerTest now has full-length practice tests for the ${link(sat, "SAT")} and the ${link(act, "ACT")}, built the same way as the ${v.testName}. Got a high schooler at home? Practice Test 1 is free.`,
+            ? `Quick note while you prep for the ${v.shortName}: Tigertest now has both the ${link(sat, "digital SAT")} and the ${link(act, "new 2025 ACT")}, each with a free full-length practice test. Plenty of students take both.`
+            : `Quick news: Tigertest now has full-length practice tests for the ${link(sat, "SAT")} and the ${link(act, "ACT")}, built the same way as the ${v.testName}. Got a high schooler at home? Practice Test 1 is free.`,
         ),
         ...question,
         signoff("Thanks,"),
@@ -437,7 +437,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   // One-off announcement of quizzes (lib/quizzes.ts): the person's own
   // material as a practice test, from Claude or ChatGPT through the MCP
   // server; setup and the account's quizzes are both on /create. Sent by
-  // /api/cron/quizzes-launch. TigerTest never pays for the questions.
+  // /api/cron/quizzes-launch. Tigertest never pays for the questions.
   quizzesLaunch: (v) => {
     const campaign = "quizzes_launch";
     const create = `${SITE}/create?utm_source=email&utm_campaign=${campaign}`;
@@ -448,7 +448,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       heading: "Turn anything into a practice test",
       body: [
         p(
-          `Connect TigerTest to your own ChatGPT or Claude account. Add your notes, a chapter or a syllabus to a chat with TigerTest enabled, say "make this a TigerTest quiz", and you get a link to a real practice test:`,
+          `Connect Tigertest to your own ChatGPT or Claude account. Add your notes, a chapter or a syllabus to a chat with Tigertest enabled, say "make this a Tigertest quiz", and you get a link to a real practice test:`,
         ),
         ul([
           "Timed tests",

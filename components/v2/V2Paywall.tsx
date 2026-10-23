@@ -9,7 +9,7 @@ import { v2Routes } from "@/lib/v2/registry";
 import { V2_PAYWALL_PREFIX } from "@/lib/v2/premium";
 
 /**
- * The shared TigerTest Premium paywall, worded for a v2 exam. Checkout
+ * The shared Tigertest Premium paywall, worded for a v2 exam. Checkout
  * returns to the exam's dashboard, which verifies the purchase.
  */
 export function useV2Paywall(exam: ExamV2Config, location: string) {

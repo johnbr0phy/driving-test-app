@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Tóm tắt về bài thi thẻ Food Handler",
     "answer": "Hầu hết các bài thi của khóa food handler được công nhận có 40 câu trắc nghiệm, cần đạt 75% để đậu và không giới hạn thời gian. Nội dung gồm vệ sinh cá nhân, nhiễm bẩn và chất gây dị ứng, thời gian và nhiệt độ, và làm sạch. Bạn có cần thẻ hay không tùy thuộc vào tiểu bang và quận; thẻ thường có hiệu lực từ hai đến ba năm.",
-    "tigertest": "TigerTest có 200 câu hỏi thi thử food handler bằng tiếng Việt kèm giải thích, tất cả đều miễn phí và không cần tài khoản.",
+    "tigertest": "Tigertest có 200 câu hỏi thi thử food handler bằng tiếng Việt kèm giải thích, tất cả đều miễn phí và không cần tài khoản.",
     "rows": [
       {
         "label": "Số câu hỏi",
@@ -74,7 +74,7 @@
       },
       {
         "h3": "4. Ôn lại những câu bạn sai",
-        "p": "TigerTest theo dõi độ chính xác của bạn theo từng chủ đề. Hầu hết các khóa học yêu cầu đạt 75% trong bài thi 40 câu, vì vậy sau mỗi bài thi thử, hãy ôn lại những câu bạn sai, luyện lại bộ của bài thi đó và làm lại bài thi cho đến khi đạt trên 85% để có dư điểm."
+        "p": "Tigertest theo dõi độ chính xác của bạn theo từng chủ đề. Hầu hết các khóa học yêu cầu đạt 75% trong bài thi 40 câu, vì vậy sau mỗi bài thi thử, hãy ôn lại những câu bạn sai, luyện lại bộ của bài thi đó và làm lại bài thi cho đến khi đạt trên 85% để có dư điểm."
       }
     ]
   },
@@ -94,14 +94,14 @@
     },
     {
       "q": "Đây có giống bài thi food manager không?",
-      "a": "Không. Thẻ food handler dành cho nhân viên trực tiếp làm việc và bao gồm các cách làm an toàn. Bài thi Certified Food Protection Manager dài hơn, có giám thị, và có thêm phần hệ thống quản lý. TigerTest có một bài thi thử Food Manager riêng cho kỳ thi đó."
+      "a": "Không. Thẻ food handler dành cho nhân viên trực tiếp làm việc và bao gồm các cách làm an toàn. Bài thi Certified Food Protection Manager dài hơn, có giám thị, và có thêm phần hệ thống quản lý. Tigertest có một bài thi thử Food Manager riêng cho kỳ thi đó."
     },
     {
       "q": "Bài thi thử này giúp tôi chuẩn bị cho khóa học nào?",
       "a": "Bất kỳ khóa food handler được công nhận nào: nội dung là FDA Food Code, điều mà tất cả các khóa đều dạy. Bạn vẫn phải học khóa học và làm bài thi của khóa đó để nhận thẻ; hãy dùng trang này để chắc chắn bạn đậu ngay lần đầu."
     },
     {
-      "q": "Bài thi thử food handler của TigerTest có miễn phí không?",
+      "q": "Bài thi thử food handler của Tigertest có miễn phí không?",
       "a": "Có. Cả bốn bài thi thử và cả bốn bộ luyện tập đều miễn phí, không cần tài khoản. Hãy tạo tài khoản miễn phí nếu bạn muốn lưu tiến độ trên nhiều thiết bị."
     }
   ],

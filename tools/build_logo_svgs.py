@@ -1,6 +1,6 @@
 """Builds the header logo lockups as standalone SVGs in public/logos/.
 
-Each logo is the exam's tiger, the "tigertest" wordmark and the test name in
+Each logo is the exam's tiger, the "Tigertest" wordmark and the test name in
 the exam's brand color, the same layout as components/BrandLockup.tsx. Every
 logo comes in a light version (<id>.svg) and one for dark backgrounds
 (<id>-dark.svg). Text is live with a system font stack, sized from Helvetica
@@ -70,7 +70,7 @@ def tiger_data_uri(path):
 
 def svg(logo, brand_hex, dark):
     # San Francisco and Segoe run about 6% wider than Helvetica Neue.
-    word_w = text_width(BOLD, "tigertest", WORD, -0.025) * 1.06
+    word_w = text_width(BOLD, "Tigertest", WORD, -0.025) * 1.06
     sub_w = text_width(MEDIUM, logo["subtitle"], SUB) * 1.07
     width = ICON + GAP + max(word_w, sub_w) + 2
     # Wordmark cap height + gap + subtitle, centred on the 40px tiger.
@@ -80,11 +80,11 @@ def svg(logo, brand_hex, dark):
     sub_y = word_y + LINE_GAP + 2 + SUB * 0.72
     ink = "#f9fafb" if dark else "#111827"
     x = ICON + GAP
-    label = escape(f"tigertest {logo['subtitle']}")
+    label = escape(f"Tigertest {logo['subtitle']}")
     return f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {width:.1f} {ICON}" width="{width * 2:.0f}" height="{ICON * 2}" role="img" aria-label="{label}">
   <title>{label}</title>
   <image href="{tiger_data_uri(logo["tiger"])}" x="0" y="0" width="{ICON}" height="{ICON}"/>
-  <text x="{x}" y="{word_y:.2f}" font-family="{FONT}" font-size="{WORD}" font-weight="800" letter-spacing="-0.6" fill="{ink}">tigertest</text>
+  <text x="{x}" y="{word_y:.2f}" font-family="{FONT}" font-size="{WORD}" font-weight="800" letter-spacing="-0.6" fill="{ink}">Tigertest</text>
   <text x="{x}" y="{sub_y:.2f}" font-family="{FONT}" font-size="{SUB}" font-weight="500" fill="{brand_hex}">{escape(logo["subtitle"])}</text>
 </svg>
 '''

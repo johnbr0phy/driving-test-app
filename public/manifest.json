@@ -1,6 +1,6 @@
 {
-  "name": "TigerTest - US Driving Test Practice",
-  "short_name": "TigerTest",
+  "name": "Tigertest - US Driving Test Practice",
+  "short_name": "Tigertest",
   "description": "Pass your US driving knowledge test with 200 state-specific practice questions. Free for all 50 states.",
   "start_url": "/",
   "display": "standalone",

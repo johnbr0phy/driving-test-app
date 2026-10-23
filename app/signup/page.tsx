@@ -247,7 +247,7 @@ function SignupPageContent() {
   // School-context banner shown on the credentials step
   const schoolBanner = schoolSlug ? (
     <div className="bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 text-blue-800 dark:text-blue-300 px-4 py-3 rounded-lg mb-4 text-sm">
-      🏫 You&apos;re joining a school on TigerTest. Create a free account to get started.
+      🏫 You&apos;re joining a school on Tigertest. Create a free account to get started.
     </div>
   ) : null;
 
@@ -352,7 +352,7 @@ function SignupPageContent() {
                     disabled={loading}
                   />
                   <span>
-                    I agree to receive helpful emails from TigerTest about my test preparation.{" "}
+                    I agree to receive helpful emails from Tigertest about my test preparation.{" "}
                     <Link href="/privacy" className="text-brand-dark underline" target="_blank">
                       Privacy Policy
                     </Link>

@@ -55,7 +55,7 @@ export function HomeHero() {
           <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
             <ThemedScreenshot
               src="/mobile.png"
-              alt="TigerTest mobile DMV practice test training mode"
+              alt="Tigertest mobile DMV practice test training mode"
               width={280}
               height={560}
               className="w-[200px] md:w-[240px]"
@@ -68,7 +68,7 @@ export function HomeHero() {
           <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
             <ThemedScreenshot
               src="/desktop.png"
-              alt="TigerTest desktop DMV practice test interface"
+              alt="Tigertest desktop DMV practice test interface"
               width={700}
               height={480}
               className="w-[320px] md:w-[500px]"

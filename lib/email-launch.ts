@@ -86,7 +86,7 @@ function shell(v: { subject: string; preheader: string }, heroHtml: string, head
             <td style="padding: 20px 36px 32px;">
               <h1 style="margin: 0 0 16px; color: #1a1a1a; font-size: 26px; line-height: 1.25; font-weight: 700;">${heading}</h1>
               ${body}
-              <p style="margin: 8px 0 0; ${TEXT}">John @ TigerTest.io</p>
+              <p style="margin: 8px 0 0; ${TEXT}">John @ Tigertest.io</p>
             </td>
           </tr>
           <tr>
@@ -127,7 +127,7 @@ function moreTests(id: string): string {
     .map(([label, path]) => `<li style="margin: 0 0 6px;">${plain(path, label)}</li>`)
     .join("");
   return (
-    `<p style="margin: 0 0 8px; ${TEXT}"><strong>Also new on TigerTest:</strong></p>` +
+    `<p style="margin: 0 0 8px; ${TEXT}"><strong>Also new on Tigertest:</strong></p>` +
     `<ul style="margin: 0 0 22px; padding-left: 22px; ${TEXT}">${items}</ul>`
   );
 }
@@ -158,20 +158,20 @@ function variant(
  * their meaning.
  */
 export const LAUNCH_VARIANTS: LaunchVariant[] = [
-  variant("v1", "Next step", "Permit test: done. SAT: next.", "Same TigerTest format, now for the SAT and ACT. First practice test is free.", ({ sat, act }) => ({
+  variant("v1", "Next step", "Permit test: done. SAT: next.", "Same Tigertest format, now for the SAT and ACT. First practice test is free.", ({ sat, act }) => ({
     hero: hero(3, 3),
     heading: "Permit test: done.<br>SAT: next.",
     body:
-      p("You prepped for your permit test with TigerTest. Now do it for the SAT and ACT.") +
+      p("You prepped for your permit test with Tigertest. Now do it for the SAT and ACT.") +
       p("<strong>Full-length timed tests. Short drills for your phone.</strong> Practice Test 1 is free.") +
       button(sat, "Take a free SAT practice test") +
       p(`Taking the ACT instead? ${link(act, "Start here", ACT)}.`, true),
   })),
-  variant("v3", "Price", "SAT and ACT prep. $9.99. Once.", "Prep courses cost hundreds. TigerTest Premium covers the SAT, ACT and your permit test.", ({ sat, act }) => ({
+  variant("v3", "Price", "SAT and ACT prep. $9.99. Once.", "Prep courses cost hundreds. Tigertest Premium covers the SAT, ACT and your permit test.", ({ sat, act }) => ({
     hero: hero(1, 1),
     heading: "SAT and ACT prep.<br>$9.99. Once.",
     body:
-      p("Prep courses cost hundreds. TigerTest Premium is <strong>$9.99, one time</strong>, and covers the SAT, the ACT and your permit test.") +
+      p("Prep courses cost hundreds. Tigertest Premium is <strong>$9.99, one time</strong>, and covers the SAT, the ACT and your permit test.") +
       p("Start with a free full-length practice test.") +
       button(sat, "Try it free") +
       p(`${link(sat, "SAT", SAT)} &nbsp;&bull;&nbsp; ${link(act, "ACT", ACT)}`, true),
@@ -189,8 +189,8 @@ export const LAUNCH_VARIANTS: LaunchVariant[] = [
     hero: hero(2, 2),
     heading: "I built the SAT and ACT",
     body:
-      p("Hey, it's John from TigerTest.") +
-      p("The permit test was step one. For most of you the SAT or ACT is next, so I built both the TigerTest way. Your first practice test is free.") +
+      p("Hey, it's John from Tigertest.") +
+      p("The permit test was step one. For most of you the SAT or ACT is next, so I built both the Tigertest way. Your first practice test is free.") +
       button(sat, "Take the SAT") +
       p(`Or ${link(act, "take the ACT", ACT)}. What should I build after that? Hit reply.`, true),
   })),

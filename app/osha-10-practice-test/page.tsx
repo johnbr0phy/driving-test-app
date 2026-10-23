@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/osha-10-practice-test`,
-    images: [{ url: "/og/osha", width: 1200, height: 630, alt: "TigerTest free OSHA 10 practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/osha", width: 1200, height: 630, alt: "Tigertest free OSHA 10 practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -46,7 +46,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free OSHA 10 Practice Tests",
+      name: "Tigertest - Free OSHA 10 Practice Tests",
       description,
       url: `${siteUrl}/osha-10-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -98,10 +98,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Is the TigerTest OSHA 10 practice test an official OSHA course?",
+          name: "Is the Tigertest OSHA 10 practice test an official OSHA course?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. TigerTest is a free study tool, not an OSHA-authorized Outreach course, and it does not issue a card. Use it to learn the material and check your readiness, then take the real course from an OSHA-authorized trainer. All four practice tests and all training sets are free, with no account required.",
+            text: "No. Tigertest is a free study tool, not an OSHA-authorized Outreach course, and it does not issue a card. Use it to learn the material and check your readiness, then take the real course from an OSHA-authorized trainer. All four practice tests and all training sets are free, with no account required.",
           },
         },
         classFaqJsonLd("osha"),
@@ -199,7 +199,7 @@ export default function OshaLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("osha", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -212,7 +212,7 @@ export default function OshaLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -255,7 +255,7 @@ export default function OshaLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak topic</h3>
               <p>
-                TigerTest tracks your accuracy by topic. The real final is short, so a single weak area can cost you the 70 percent you need. Drill the questions you missed, retrain that test&apos;s set and retake until you clear 85 percent, then take all four practice tests in a row.
+                Tigertest tracks your accuracy by topic. The real final is short, so a single weak area can cost you the 70 percent you need. Drill the questions you missed, retrain that test&apos;s set and retake until you clear 85 percent, then take all four practice tests in a row.
               </p>
             </div>
           </div>
@@ -293,9 +293,9 @@ export default function OshaLandingPage() {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest OSHA 10 practice test an official OSHA course?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest OSHA 10 practice test an official OSHA course?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. TigerTest is a free study tool, not an OSHA-authorized Outreach course, and it does not issue a card. Use it to learn the material and check your readiness, then take the real course from an OSHA-authorized trainer. All four practice tests and all training sets are free, with no account required.
+              No. Tigertest is a free study tool, not an OSHA-authorized Outreach course, and it does not issue a card. Use it to learn the material and check your readiness, then take the real course from an OSHA-authorized trainer. All four practice tests and all training sets are free, with no account required.
             </p>
           </div>
           <ExamClassFaq examId="osha" />

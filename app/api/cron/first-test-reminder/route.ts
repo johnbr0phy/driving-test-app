@@ -59,7 +59,7 @@ export async function GET(req: NextRequest) {
     const result = await processBatch({
       label: "first-test-reminder",
       emailKey: EMAIL_KEY,
-      subject: "Quick check-in from TigerTest",
+      subject: "Quick check-in from Tigertest",
       template: (u) => EMAIL_TEMPLATES.firstTestReminder(u.voice),
       users: eligible,
       extras: (u) => ({ questionCount: u.questionsAnswered.toString() }),

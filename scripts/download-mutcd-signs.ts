@@ -77,7 +77,7 @@ const MUTCD_FILENAMES: Record<string, string[]> = {
 };
 
 const USER_AGENT =
-  "TigerTest-AssetDownloader/1.0 (https://tigertest.io; admin@tigertest.io)";
+  "Tigertest-AssetDownloader/1.0 (https://tigertest.io; admin@tigertest.io)";
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 

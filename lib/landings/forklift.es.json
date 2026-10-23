@@ -12,7 +12,7 @@
   "facts": {
     "h2": "La certificación de montacargas en resumen",
     "answer": "En Estados Unidos no existe una licencia de montacargas del gobierno. Según OSHA 1910.178, tu empleador te certifica después de instrucción formal, capacitación práctica y una evaluación de tu desempeño en el montacargas que vas a manejar, y debe volver a evaluarte por lo menos cada tres años. Los operadores deben tener al menos 18 años en trabajos no agrícolas.",
-    "tigertest": "TigerTest tiene 200 preguntas de práctica de montacargas en español con explicaciones, todas gratis y sin cuenta.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica de montacargas en español con explicaciones, todas gratis y sin cuenta.",
     "rows": [
       {
         "label": "Quién certifica",
@@ -78,7 +78,7 @@
       },
       {
         "h3": "4. Practica las reglas de operación hasta que sean reflejos",
-        "p": "Horquillas abajo e inclinadas hacia atrás, maneja en reversa cuando la carga te tape la vista, toca el claxon en cada esquina ciega, los peatones siempre tienen el derecho de paso, nadie debajo de las horquillas, nadie de pasajero, y quédate en el asiento si el montacargas se vuelca. TigerTest mide tu precisión por tema, así que repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar del 90 por ciento."
+        "p": "Horquillas abajo e inclinadas hacia atrás, maneja en reversa cuando la carga te tape la vista, toca el claxon en cada esquina ciega, los peatones siempre tienen el derecho de paso, nadie debajo de las horquillas, nadie de pasajero, y quédate en el asiento si el montacargas se vuelca. Tigertest mide tu precisión por tema, así que repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar del 90 por ciento."
       }
     ]
   },
@@ -105,7 +105,7 @@
       "a": "Al menos 18 años en trabajos no agrícolas. La ley federal de normas laborales justas (FLSA) clasifica manejar un montacargas como una ocupación peligrosa prohibida para trabajadores menores de 18. Algunos trabajos agrícolas tienen reglas distintas, así que revisa los requisitos de tu estado si trabajas en una granja."
     },
     {
-      "q": "¿El examen de práctica de montacargas de TigerTest es gratis?",
+      "q": "¿El examen de práctica de montacargas de Tigertest es gratis?",
       "a": "Sí. Los cuatro exámenes de práctica y los cuatro grupos de entrenamiento son gratis y no necesitas crear una cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
     }
   ],

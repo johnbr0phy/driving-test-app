@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, BookOpen, Check, ChevronDown, FileText, Link2, Lock, Plus, Sparkles, Wrench } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, FileText, Library, Link2, Lock, Plus, Sparkles, Wrench } from "lucide-react";
 import { CopyUrl } from "@/components/connect/CopyUrl";
 
 // /connect: how to add the TigerTest MCP server (app/api/mcp) to Claude or
@@ -70,10 +70,12 @@ const jsonLd = {
 const PROMPT_GROUPS = [
   {
     label: "Make a quiz",
+    accent: "border-orange-400",
     prompts: ["Turn these notes into a 20-question quiz.", "Make a quiz from this PDF and give me the link.", "Which question do people miss most?"],
   },
   {
     label: "Get quizzed",
+    accent: "border-sky-400",
     prompts: ["Which tests do I have in progress?", "Continue my practice where I left off.", "Which topics am I getting wrong?"],
   },
 ];
@@ -237,9 +239,6 @@ export default function ConnectPage() {
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             <div className={`${card} p-7 md:p-8 flex flex-col`}>
-              <div className="w-12 h-12 rounded-2xl bg-orange-100 dark:bg-orange-950 text-orange-600 dark:text-orange-400 flex items-center justify-center mb-5">
-                <BookOpen className="w-6 h-6" aria-hidden="true" />
-              </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-3">Make a quiz from anything</h3>
               <ul className="space-y-2.5 text-gray-600 dark:text-gray-300">
                 {[
@@ -255,9 +254,6 @@ export default function ConnectPage() {
               </ul>
             </div>
             <div className={`${card} p-7 md:p-8 flex flex-col`}>
-              <div className="w-12 h-12 rounded-2xl bg-sky-100 dark:bg-sky-950 text-sky-600 dark:text-sky-400 flex items-center justify-center mb-5">
-                <BookOpen className="w-6 h-6" aria-hidden="true" />
-              </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-3">Keep learning your tests in progress</h3>
               <ul className="space-y-2.5 text-gray-600 dark:text-gray-300">
                 {[
@@ -321,16 +317,17 @@ export default function ConnectPage() {
               Just ask
             </h2>
           </div>
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-5 md:grid-cols-2">
             {PROMPT_GROUPS.map((g) => (
-              <div key={g.label}>
-                <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3 text-center md:text-left">{g.label}</h3>
-                <ul className="space-y-3">
+              <div key={g.label} className={`${card} p-6 md:p-7`}>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 mb-4">{g.label}</h3>
+                <ul className="space-y-2.5">
                   {g.prompts.map((p) => (
-                    <li key={p} className="flex justify-end">
-                      <span className="max-w-[92%] rounded-2xl rounded-br-md bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 px-4 py-3 text-gray-800 dark:text-gray-100 shadow-sm">
-                        {p}
-                      </span>
+                    <li
+                      key={p}
+                      className={`rounded-xl bg-gray-50 dark:bg-gray-950 border-l-4 ${g.accent} px-4 py-3 text-gray-800 dark:text-gray-100`}
+                    >
+                      &ldquo;{p}&rdquo;
                     </li>
                   ))}
                 </ul>
@@ -383,6 +380,12 @@ export default function ConnectPage() {
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-white text-gray-900 hover:bg-orange-50 px-6 py-3.5 font-semibold"
                 >
                   <Plus className="w-4 h-4" aria-hidden="true" /> Make a quiz
+                </Link>
+                <Link
+                  href="/quizzes"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/60 text-white hover:bg-white/10 px-6 py-3.5 font-semibold"
+                >
+                  <Library className="w-4 h-4" aria-hidden="true" /> Browse the library
                 </Link>
                 <Link
                   href="/q"

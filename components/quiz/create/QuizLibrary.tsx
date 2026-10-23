@@ -22,7 +22,7 @@ export function QuizLibrary({ quizzes }: { quizzes: QuizSummary[] }) {
       <div className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8 text-center">
         <p className="text-lg font-semibold text-gray-900 dark:text-gray-50">Nothing here yet</p>
         <p className="mt-2 text-gray-600 dark:text-gray-300 max-w-md mx-auto">
-          A quiz is listed once its maker sets it to Public and five people have played it. Make one, share the link, and it will show up here.
+          A quiz is listed as soon as its maker sets it to Public. Make one, set it to Public, and it will show up here.
         </p>
       </div>
     );

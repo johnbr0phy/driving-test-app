@@ -10,6 +10,7 @@ import { OpportunitiesView } from "@/components/admin/OpportunitiesView";
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
 import type { DailyBrief } from "@/lib/server/dailyBrief";
 import type { TeachAdminPayload } from "@/lib/server/teachAdmin";
+import type { QuizAdminPayload } from "@/lib/server/quizAdmin";
 
 // The one admin page. Each tab loads its own API the first time it is opened
 // and stays mounted after, so switching back is instant. The tab is in the
@@ -26,6 +27,10 @@ const TeachAdminView = dynamic(() => import("@/components/admin/TeachAdminView")
   ssr: false,
   loading: () => <TabLoading />,
 });
+const QuizAdminView = dynamic(() => import("@/components/admin/QuizAdminView").then((m) => m.QuizAdminView), {
+  ssr: false,
+  loading: () => <TabLoading />,
+});
 const UsersTab = dynamic(() => import("@/components/admin/UsersTab").then((m) => m.UsersTab), {
   ssr: false,
   loading: () => <TabLoading />,
@@ -35,6 +40,7 @@ const TABS = [
   { id: "today", label: "Today" },
   { id: "growth", label: "Growth" },
   { id: "teachers", label: "Teachers" },
+  { id: "quizzes", label: "Quizzes" },
   { id: "users", label: "Users" },
 ] as const;
 type TabId = (typeof TABS)[number]["id"];
@@ -90,6 +96,14 @@ function TeachersTab() {
   return <TeachAdminView data={data} onRefresh={() => reload(true)} refreshing={refreshing} updating={updating} />;
 }
 
+// Make a quiz, from /api/admin/quizzes (lib/server/quizAdmin).
+function QuizzesTab() {
+  const { data, error, loading, refreshing, updating, reload } = useAdminFetch<QuizAdminPayload>("/api/admin/quizzes");
+  if (loading) return <TabLoading />;
+  if (error || !data) return <TabError message={error || "Failed to load"} />;
+  return <QuizAdminView data={data} onRefresh={() => reload(true)} refreshing={refreshing} updating={updating} />;
+}
+
 function AdminTabs() {
   const router = useRouter();
   const pathname = usePathname();
@@ -137,6 +151,7 @@ function AdminTabs() {
             {t.id === "today" && <TodayTab />}
             {t.id === "growth" && <GrowthTab />}
             {t.id === "teachers" && <TeachersTab />}
+            {t.id === "quizzes" && <QuizzesTab />}
             {t.id === "users" && <UsersTab />}
           </div>
         ))}

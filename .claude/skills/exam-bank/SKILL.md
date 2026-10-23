@@ -126,11 +126,18 @@ and validate again.
 ## 4. Wire it in
 
 Follow `references/wiring.md` exactly. In short: `ExamConfig` in `lib/exams.ts` (plus the `ExamId`
-and icon unions), bank import in `lib/examData.ts`, category keys in `types/index.ts` and all four
-`i18n/*.ts`, a `[data-theme]` block in `app/globals.css`, catalog blurb, org line, hub group and
-search aliases in `lib/testCatalog.ts`, the icon in `components/CDLHeader.tsx` and
-`components/TestIcon.tsx`, seven wrappers under `app/<slug>/`, the landing page, a CLAUDE.md
-bullet, and the landing screenshots, light and dark (`scripts/shoot_landing.js`).
+and icon unions), a bank module `lib/banks/<id>.ts` and its line in `lib/banks/all.ts`, category
+keys in `types/index.ts` and all five `i18n/*.ts`, a `[data-theme]` block in `app/globals.css`,
+catalog blurb, org line, hub group and search aliases in `lib/testCatalog.ts`, the icon in
+`components/CDLHeader.tsx` and `components/TestIcon.tsx`, eight wrappers under `app/<slug>/`
+copied from the newest exam, `scripts/build-training-parts.ts`, the landing page with its
+`lib/examFacts.ts` entry and `lib/seoDates.ts` bump, the teacher-led lists when it is taught in a
+class, a CLAUDE.md bullet, and the landing screenshots, light and dark (`scripts/shoot_landing.js`).
+
+The wrappers only point at shared components, so a new exam gets every dashboard, results,
+landing, header and footer change already made to the others. Keep it that way: when an exam
+needs something different, change the shared component or add an `ExamConfig` field, never a
+copy in the exam's folder. Write the brand as "Tigertest".
 
 Then `npx tsc --noEmit`, `npm run lint`, `npm run build`, and curl the landing, `/og/<id>`,
 `/tests` and `/sitemaps/exams` for 200s. Commit only when all of that is green.

@@ -1,9 +1,26 @@
 # Wiring a new exam into the app
 
-Everything below is keyed off one `ExamConfig`. Use the most recently added exam in
-`lib/exams.ts` as the template and diff a previous "Add N exams" commit if anything here is stale.
+Everything below is keyed off one `ExamConfig`. Use the most recently added v1 exam (VTNE,
+`app/vtne/` and `app/vtne-practice-test/`, as of October 2026) as the template and diff the
+latest "Add ... exams" commit (`git log --oneline --grep "exams"`) if anything here is stale.
 Placeholders: `<id>` exam id (e.g. `forklift`), `<CODE>` stateCode, `<slug>` route folder
 (e.g. `forklift` or `osha-10`), `<landing>` landing folder (e.g. `forklift-certification-practice-test`).
+
+Sectioned, timed exams (SAT-style modules, NGN item formats, adaptive) are v2 exams: follow
+"To add a v2 exam" in CLAUDE.md instead, copying the newest v2 exam (`lib/v2/exams/ged.ts`).
+
+## 0. Inherit the site, never fork it
+A new exam looks and behaves like every other exam because its pages are thin wrappers around
+shared components. Never copy a shared component into an exam folder to change it; change the
+shared one (and check the other exams) or add a field to `ExamConfig`. The shared pieces:
+- Dashboard, practice sets, tests, results, drill, stats: `components/exam/*` (`ExamDashboard`,
+  `ExamTrainingPage`, `ExamTestPage`, `ExamResultsPage`, `ExamDrillPage`, `ExamStatsPage`) and
+  `components/dashboard/ProgressCard.tsx`.
+- Header logo, header and footer: `components/BrandLockup.tsx`, `HeaderSwitch`, `Footer.tsx`
+  (they pick the exam by path; nothing to add per exam).
+- Landing hero, facts, class FAQ, related tests: `ExamLandingHero`, `ExamFacts`,
+  `ExamClassFaq`, `ExamRelatedTests`. No breadcrumb above the hero (removed in #488).
+- Copy says "Tigertest", never "TigerTest" or "tigertest" (URLs and storage keys excepted).
 
 ## 1. `lib/exams.ts`
 - Add `"<id>"` to the `ExamId` union.
@@ -17,15 +34,17 @@ Placeholders: `<id>` exam id (e.g. `forklift`), `<CODE>` stateCode, `<slug>` rou
   analyticsKey = id).
 - Append `<id>` to the `EXAMS` array before `htl`.
 
-## 2. `lib/examData.ts`
-- `import <id>Questions from "@/data/<file>.json";` and `<id>: <id>Questions as Question[],` in `BANKS`.
+## 2. Bank module `lib/banks/<id>.ts`
+- Copy `lib/banks/vtne.ts`: import `@/data/<file>.json` and call `registerExamBanks({ <id>: ... })`.
+  Each exam page imports it for that side effect, so a page bundles only its own bank.
+- Add `import "./<id>";` to `lib/banks/all.ts` (server code and the MCP tools load every bank there).
 
 ## 3. `types/index.ts`
 - Add `"<CODE>"` to `QuestionType`.
 - Add each category key to the `QuestionCategory` union under a comment naming the exam.
 
-## 4. `i18n/en.ts`, `es.ts`, `ko.ts`, `vi.ts`
-- Add each category key with its English label to the category label map in all four files
+## 4. `i18n/en.ts`, `es.ts`, `ko.ts`, `vi.ts`, `zh.ts`
+- Add each category key with its English label to the category label map in all five files
   (the other languages keep English labels for exam categories).
 
 ## 5. `app/globals.css`
@@ -43,19 +62,34 @@ Placeholders: `<id>` exam id (e.g. `forklift`), `<CODE>` stateCode, `<slug>` rou
 - `components/CDLHeader.tsx` and `components/TestIcon.tsx`: import the lucide icon and add the
   `if (icon === "<key>")` line. Check the icon exists: `node -e "console.log(typeof require('lucide-react').<Name>)"`.
 
-## 8. `app/<slug>/` wrappers (seven files)
-Copy `app/hesi/` and replace `hesi` with `<id>` in `getExamById`, `examAppMetadata`,
-`data-theme`, and `Hesi` with the exam's PascalCase name in component names:
-`layout.tsx`, `dashboard/page.tsx`, `drill/page.tsx`, `stats/page.tsx`, `test/[id]/page.tsx`,
-`test/[id]/results/page.tsx`, `training/page.tsx`.
+## 8. `app/<slug>/` wrappers (eight files)
+Copy `app/vtne/` and replace `vtne` with `<id>` (in `getExamById`, `examAppMetadata`,
+`data-theme`, the `@/lib/banks/<id>` import and the redirect) and `Vtne` with the exam's
+PascalCase name in component names: `layout.tsx`, `page.tsx` (redirects to the dashboard),
+`dashboard/page.tsx`, `drill/page.tsx`, `practice/[n]/page.tsx`, `stats/page.tsx`,
+`test/[id]/page.tsx`, `test/[id]/results/page.tsx`. Each is a few lines around a shared
+component; if a wrapper needs more than that, the change belongs in the shared component.
+
+Then run `npx tsx scripts/build-training-parts.ts` (it writes the exam's practice-set split to
+`lib/trainingParts.json`).
 
 ## 9. `app/<landing>/page.tsx`
-Model on `app/hesi-a2-practice-test/page.tsx`. Keep the structure: metadata (title with the
+Model on `app/vtne-practice-test/page.tsx`. Keep the structure: metadata (title with the
 year, description, keywords, canonical, OG image `/og/<id>`), `WebApplication` + `Organization`
-+ `FAQPage` JSON-LD, hero with `shots` at
-`/landing/<id>-mobile.png` and `/landing/<id>-desktop.png`, How It Works, blueprint list with
-weights (per-test count x 2), `getTigerAsset("<id>", 1)`, We Just Launched, four study tips, five
-FAQs whose JSX text matches the JSON-LD text exactly, `<ExamRelatedTests examId>`, final CTA.
++ `FAQPage` JSON-LD, `<ExamLandingHero>` with `shots` at
+`/landing/<id>-mobile.png` and `/landing/<id>-desktop.png` (it shows the dark twins and turns the
+button into Go to Dashboard once the test is started), `<ExamFacts examId>` right under it, How It
+Works, blueprint list with weights (per-test count x 2), `getTigerAsset("<id>", 1)`, We Just
+Launched, four study tips, five FAQs whose JSX text matches the JSON-LD text exactly,
+`<ExamClassFaq examId>` (and `classFaqJsonLd`) for a teacher-led exam, `<ExamRelatedTests examId>`,
+`<ExamLandingCTA>`.
+
+Alongside the landing:
+- `lib/examFacts.ts`: an entry for `<id>` (plain answer, facts table, official source, dated).
+- `lib/seoDates.ts`: bump `EXAM_LANDINGS_UPDATED_AT` with a comment naming the new exam.
+- Teacher-led exams (taught in a program or class: healthcare, school, military): add `<id>` to
+  `TEACHER_LED` in `components/TeachNudge.tsx` and a line to `TEACHES` in
+  `components/exam/ExamClassFaq.tsx`.
 Plain apostrophes in metadata and JSON-LD; `&apos;` only inside JSX text. No em-dashes.
 
 ## 10. `CLAUDE.md`

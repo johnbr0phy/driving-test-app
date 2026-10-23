@@ -32,13 +32,15 @@ export async function generateMetadata({ params }: { params: Promise<{ code: str
   const { quiz } = loaded;
   if (!quiz) notFound();
   const canonical = `${SITE}/q/${code}`;
+  // The share card (app/og/q/[code]/route.tsx); ?v= changes with every edit so a cached card never outlives it.
+  const images = [{ url: `${SITE}/og/q/${code}?v=${encodeURIComponent(quiz.updatedAt)}`, width: 1200, height: 630, alt: quiz.title }];
   if (quiz.visibility === "private") {
     return { title: "Private quiz | Tigertest", alternates: { canonical }, robots: { index: false, follow: false } };
   }
   if (quiz.visibility === "class") {
     const title = `${quiz.title} | Class quiz`;
     const description = `A practice quiz for ${quiz.classTeacherName || quiz.ownerName}'s class on Tigertest.`;
-    return { title, description, alternates: { canonical }, robots: { index: false, follow: false }, openGraph: { title, description, url: canonical, siteName: "Tigertest", type: "website" } };
+    return { title, description, alternates: { canonical }, robots: { index: false, follow: false }, openGraph: { title, description, url: canonical, siteName: "Tigertest", type: "website", images }, twitter: { card: "summary_large_image", title, description, images } };
   }
   const title = `${quiz.title} | Tigertest quiz`;
   const description = quiz.description || `${quiz.questions.length} practice questions on ${quiz.title}`;
@@ -48,8 +50,8 @@ export async function generateMetadata({ params }: { params: Promise<{ code: str
     description,
     alternates: { canonical },
     robots: indexable ? { index: true, follow: true } : { index: false, follow: true },
-    openGraph: { title, description, url: canonical, siteName: "Tigertest", type: "website" },
-    twitter: { card: "summary", title, description },
+    openGraph: { title, description, url: canonical, siteName: "Tigertest", type: "website", images },
+    twitter: { card: "summary_large_image", title, description, images },
   };
 }
 

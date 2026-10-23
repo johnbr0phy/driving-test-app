@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
 import { readFile } from "fs/promises";
 import { join } from "path";
+import { interFonts } from "@/lib/ogFonts";
 
 export const runtime = "nodejs";
 
@@ -8,25 +9,9 @@ export const runtime = "nodejs";
 // where a pasted PDF becomes a Tigertest quiz link, like the page's hero.
 // A static segment, so it wins over /og/[examId].
 
-// Inter from Google Fonts (TTF, which is what ImageResponse can read). The
-// built-in font has no bold, so a failed fetch only costs the weights.
-async function inter(weight: number): Promise<ArrayBuffer | null> {
-  try {
-    const css = await (await fetch(`https://fonts.googleapis.com/css2?family=Inter:wght@${weight}`)).text();
-    const url = css.match(/src: url\((.+?)\) format\('(?:opentype|truetype)'\)/)?.[1];
-    return url ? await (await fetch(url)).arrayBuffer() : null;
-  } catch {
-    return null;
-  }
-}
-
 export async function GET() {
   const read = async (file: string) => `data:image/png;base64,${(await readFile(join(process.cwd(), "public", file))).toString("base64")}`;
-  const [tiger, face, medium, bold] = await Promise.all([read("tiger.png"), read("tiger_face_03.png"), inter(500), inter(800)]);
-  const fonts = [
-    ...(medium ? [{ name: "Inter", data: medium, weight: 500 as const, style: "normal" as const }] : []),
-    ...(bold ? [{ name: "Inter", data: bold, weight: 800 as const, style: "normal" as const }] : []),
-  ];
+  const [tiger, face, fonts] = await Promise.all([read("tiger.png"), read("tiger_face_03.png"), interFonts()]);
 
   const bubble = { display: "flex", borderRadius: 22, padding: "16px 22px", fontSize: 26, lineHeight: 1.3 } as const;
 

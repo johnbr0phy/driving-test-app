@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/accuplacer-practice-test`,
-    images: [{ url: "/og/accuplacer", width: 1200, height: 630, alt: "TigerTest free ACCUPLACER practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/accuplacer", width: 1200, height: 630, alt: "Tigertest free ACCUPLACER practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -43,7 +43,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free ACCUPLACER Placement Tests on a Computer",
+      name: "Tigertest - Free ACCUPLACER Placement Tests on a Computer",
       description,
       url: `${siteUrl}/accuplacer-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -96,10 +96,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Is the TigerTest ACCUPLACER practice test free?",
+          name: "Is the Tigertest ACCUPLACER practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Both practice tests and all five drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer. TigerTest is not affiliated with the College Board.",
+            text: "Yes. Both practice tests and all five drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer. Tigertest is not affiliated with the College Board.",
           },
         },
       ],
@@ -195,7 +195,7 @@ export default function AccuplacerLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("accuplacer", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -208,7 +208,7 @@ export default function AccuplacerLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -251,7 +251,7 @@ export default function AccuplacerLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Treat every question as if it counts</h3>
               <p>
-                The real test is adaptive and untimed, and you cannot go back to a question once you answer it. Early answers shape which questions come next, so slow down rather than guessing. TigerTest tracks your accuracy by section; aim to clear 70 percent on each set before test day, and retake the set you miss most.
+                The real test is adaptive and untimed, and you cannot go back to a question once you answer it. Early answers shape which questions come next, so slow down rather than guessing. Tigertest tracks your accuracy by section; aim to clear 70 percent on each set before test day, and retake the set you miss most.
               </p>
             </div>
           </div>
@@ -289,9 +289,9 @@ export default function AccuplacerLandingPage() {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest ACCUPLACER practice test free?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest ACCUPLACER practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. Both practice tests and all five drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer. TigerTest is not affiliated with the College Board.
+              Yes. Both practice tests and all five drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer. Tigertest is not affiliated with the College Board.
             </p>
           </div>
         </div>

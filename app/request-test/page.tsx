@@ -63,7 +63,7 @@ function RequestTestContent() {
               </h1>
               <p className="text-gray-600 dark:text-gray-300">
                 Name the exam you&apos;re studying for, or wish existed. If it&apos;s not on
-                TigerTest yet, there&apos;s a good chance it will be.
+                Tigertest yet, there&apos;s a good chance it will be.
               </p>
             </div>
 

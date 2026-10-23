@@ -53,13 +53,13 @@ export async function generateMetadata({
     return { title: "Estado No Encontrado" };
   }
 
-  const title = `Examen de Práctica DMV de ${state.name} 2026 - Gratis | TigerTest`;
+  const title = `Examen de Práctica DMV de ${state.name} 2026 - Gratis | Tigertest`;
   const description = `Aprueba tu examen de permiso de ${state.name} en el primer intento. ${state.writtenTestQuestions} preguntas de práctica gratuitas basadas en el manual de conducir de ${state.name}. Empieza a practicar ahora.`;
   const canonicalUrl = `${siteUrl}/es/${state.slug}-examen-practica-dmv`;
   const enUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
 
   return {
-    // The string already carries the brand; skip the root layout's "%s | TigerTest" template.
+    // The string already carries the brand; skip the root layout's "%s | Tigertest" template.
     title: { absolute: title },
     description,
     alternates: {
@@ -85,13 +85,13 @@ export async function generateMetadata({
       type: "website",
       url: canonicalUrl,
       locale: "es_US",
-      siteName: "TigerTest",
+      siteName: "Tigertest",
       images: [
         {
           url: "/tiger.png",
           width: 512,
           height: 512,
-          alt: `Examen de Práctica DMV de ${state.name} - TigerTest`,
+          alt: `Examen de Práctica DMV de ${state.name} - Tigertest`,
         },
       ],
     },
@@ -130,7 +130,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
   const faqItems = [
     {
       question: `¿Cuántas preguntas tiene el examen de permiso de ${state.name}?`,
-      answer: `El examen escrito de conocimientos del ${state.dmvName} de ${state.name} tiene ${state.writtenTestQuestions} preguntas. Necesitas responder correctamente al menos ${rawPassing} (${state.passingScore}%) para aprobar. TigerTest ofrece 200 preguntas de práctica para prepararte a fondo.`,
+      answer: `El examen escrito de conocimientos del ${state.dmvName} de ${state.name} tiene ${state.writtenTestQuestions} preguntas. Necesitas responder correctamente al menos ${rawPassing} (${state.passingScore}%) para aprobar. Tigertest ofrece 200 preguntas de práctica para prepararte a fondo.`,
     },
     {
       question: `¿Qué calificación necesito para aprobar el examen del DMV de ${state.name}?`,
@@ -196,7 +196,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
   const courseJsonLd = {
     "@context": "https://schema.org",
     "@type": ["WebApplication", "LearningResource"],
-    name: `Examen de Práctica DMV de ${state.name} - TigerTest`,
+    name: `Examen de Práctica DMV de ${state.name} - Tigertest`,
     description: `Examen de práctica gratuito del DMV de ${state.name} con 200 preguntas basadas en el manual oficial de conducir del ${state.dmvName} de ${state.name}.`,
     url: `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
     inLanguage: "es-US",
@@ -209,12 +209,12 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     dateModified: lastModifiedIso,
     author: {
       "@type": "Organization",
-      name: "TigerTest",
+      name: "Tigertest",
       url: siteUrl,
     },
     publisher: {
       "@type": "Organization",
-      name: "TigerTest",
+      name: "Tigertest",
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
     },
@@ -239,7 +239,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     },
     supply: [
       { "@type": "HowToSupply", name: `${landingInfo.handbookName}` },
-      { "@type": "HowToSupply", name: "Preguntas de práctica de TigerTest" },
+      { "@type": "HowToSupply", name: "Preguntas de práctica de Tigertest" },
     ],
     step: [
       {
@@ -253,7 +253,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         "@type": "HowToStep",
         position: 2,
         name: "Practica en el modo de entrenamiento",
-        text: `Repasa las 200 preguntas de práctica específicas de ${state.name} de TigerTest una por una, con retroalimentación instantánea y explicaciones para cada respuesta.`,
+        text: `Repasa las 200 preguntas de práctica específicas de ${state.name} de Tigertest una por una, con retroalimentación instantánea y explicaciones para cada respuesta.`,
         url: `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
       },
       {
@@ -266,7 +266,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         "@type": "HowToStep",
         position: 4,
         name: "Repasa cada respuesta incorrecta",
-        text: "Vuelve a leer la explicación de cualquier pregunta que falles. TigerTest pone en cola las preguntas falladas para repetición espaciada, para que las estudies con más frecuencia.",
+        text: "Vuelve a leer la explicación de cualquier pregunta que falles. Tigertest pone en cola las preguntas falladas para repetición espaciada, para que las estudies con más frecuencia.",
       },
       {
         "@type": "HowToStep",
@@ -485,7 +485,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
                   Estudia el{" "}
                   <strong>{landingInfo.handbookName}</strong> para prepararte
-                  para el examen escrito. Las preguntas de práctica de TigerTest
+                  para el examen escrito. Las preguntas de práctica de Tigertest
                   están basadas en el material de este manual.
                 </p>
                 <a
@@ -558,7 +558,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
           </h2>
           <p className="text-brand-light text-lg mb-6">
             Únete a miles de conductores de {state.name} que aprobaron en su
-            primer intento con TigerTest
+            primer intento con Tigertest
           </p>
           <Button asChild
               size="lg"

@@ -90,7 +90,7 @@ export function quizLimits(isPremium: boolean) {
   return isPremium ? QUIZ_LIMITS.premium : QUIZ_LIMITS.free;
 }
 
-/** Whether users/{uid} carries the one TigerTest Premium flag. */
+/** Whether users/{uid} carries the one Tigertest Premium flag. */
 export async function isPremiumUid(uid: string, db: Firestore = getAdminDb()): Promise<boolean> {
   const snap = await db.collection("users").doc(uid).get();
   return snap.exists && snap.data()?.subscription?.isPremium === true;
@@ -159,7 +159,7 @@ export async function createQuiz(owner: QuizOwner, input: CreateQuizInput, db: F
       title,
       description: cleanQuizDescription(input.description),
       ownerUid: owner.uid,
-      ownerName: cleanOwnerName(owner.name) || "A TigerTest member",
+      ownerName: cleanOwnerName(owner.name) || "A Tigertest member",
       visibility,
       passPct: input.passPct === undefined ? QUIZ_DEFAULT_PASS_PCT : clampPassPct(input.passPct),
       questions,

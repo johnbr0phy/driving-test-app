@@ -5,19 +5,19 @@ import { requireSchoolAdmin } from "@/lib/server/school-auth";
 
 const TIERS = {
   starter: {
-    name: "TigerTest School — Starter (10 seats)",
+    name: "Tigertest School — Starter (10 seats)",
     description: "Up to 10 reusable student seats, admin dashboard, progress tracking",
     unit_amount: 14900, // $149.00
     seats: 10,
   },
   growth: {
-    name: "TigerTest School — Growth (30 seats)",
+    name: "Tigertest School — Growth (30 seats)",
     description: "Up to 30 reusable student seats, bulk invites, priority support",
     unit_amount: 34900, // $349.00
     seats: 30,
   },
   school: {
-    name: "TigerTest School — School (Unlimited seats)",
+    name: "Tigertest School — School (Unlimited seats)",
     description: "Unlimited student seats, dedicated account manager, custom reporting",
     unit_amount: 69900, // $699.00
     seats: null,

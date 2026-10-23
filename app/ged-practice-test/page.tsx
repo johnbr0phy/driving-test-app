@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/ged-practice-test`,
-    images: [{ url: "/og/ged", width: 1200, height: 630, alt: "TigerTest free GED practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/ged", width: 1200, height: 630, alt: "Tigertest free GED practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -43,30 +43,30 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is on the GED test?",
-    a: "Four subject tests, each taken and scored separately: Reasoning Through Language Arts (150 minutes, including a 45-minute essay), Mathematical Reasoning (115 minutes), Science (90 minutes) and Social Studies (70 minutes). You can take them one at a time on different days. The TigerTest practice test covers the same four subjects with shorter timed sections, and a full practice test runs about 3 hours 20 minutes with breaks.",
+    a: "Four subject tests, each taken and scored separately: Reasoning Through Language Arts (150 minutes, including a 45-minute essay), Mathematical Reasoning (115 minutes), Science (90 minutes) and Social Studies (70 minutes). You can take them one at a time on different days. The Tigertest practice test covers the same four subjects with shorter timed sections, and a full practice test runs about 3 hours 20 minutes with breaks.",
   },
   {
     q: "What score do you need to pass the GED?",
-    a: "Each subject is scored from 100 to 200, and 145 passes. A score of 165 or higher is GED College Ready, and 175 or higher is College Ready plus Credit, which some colleges accept for course credit. TigerTest reports percent correct per subject rather than the 100 to 200 scale, because the real cutoff is not a fixed percent. Aim for a comfortable margin, 65 percent or better, before you book.",
+    a: "Each subject is scored from 100 to 200, and 145 passes. A score of 165 or higher is GED College Ready, and 175 or higher is College Ready plus Credit, which some colleges accept for course credit. Tigertest reports percent correct per subject rather than the 100 to 200 scale, because the real cutoff is not a fixed percent. Aim for a comfortable margin, 65 percent or better, before you book.",
   },
   {
     q: "Can I use a calculator on the GED?",
-    a: "Yes, on Mathematical Reasoning (all but the first five questions), Science and Social Studies. The real test gives you an on-screen TI-30XS scientific calculator, and you can bring your own TI-30XS to a test center. The TigerTest practice test has a calculator one tap away on every Math and Science question.",
+    a: "Yes, on Mathematical Reasoning (all but the first five questions), Science and Social Studies. The real test gives you an on-screen TI-30XS scientific calculator, and you can bring your own TI-30XS to a test center. The Tigertest practice test has a calculator one tap away on every Math and Science question.",
   },
   {
     q: "Is the essay included?",
-    a: "No. The Reasoning Through Language Arts test on the real GED includes an extended response, a 45-minute essay that analyzes two passages. TigerTest does not model the essay. Everything else in RLA is covered: reading comprehension and language and editing questions, including the dropdown and choose-two formats the real test uses.",
+    a: "No. The Reasoning Through Language Arts test on the real GED includes an extended response, a 45-minute essay that analyzes two passages. Tigertest does not model the essay. Everything else in RLA is covered: reading comprehension and language and editing questions, including the dropdown and choose-two formats the real test uses.",
   },
   {
     q: "What if I am taking the HiSET instead?",
-    a: "The HiSET covers the same four subject areas with reading and writing as separate tests, so the same practice helps. The question styles differ a little: the HiSET is multiple choice plus an essay, while the GED also uses fill-in, dropdown and choose-two items. TigerTest is modeled on the GED.",
+    a: "The HiSET covers the same four subject areas with reading and writing as separate tests, so the same practice helps. The question styles differ a little: the HiSET is multiple choice plus an essay, while the GED also uses fill-in, dropdown and choose-two items. Tigertest is modeled on the GED.",
   },
   {
     q: "How do I prepare for the GED on my own?",
     a: "Start with the four skill drills that teach the basics: each one opens with short rule cards and one-line questions before the test-level items, so a fraction or a comma rule is taught before it is tested. Ten minutes a night on your phone is enough. Take Practice Test 1 for a baseline, drill your weakest subject, then take Practice Test 2, which is held out of the drills, to see if you are ready.",
   },
   {
-    q: "Is the TigerTest GED practice test free?",
+    q: "Is the Tigertest GED practice test free?",
     a: "Yes, all of it: both full practice tests, all six drills, the basics lessons and every explanation, with no account required. An account saves your progress across devices.",
   },
 ];
@@ -76,7 +76,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free GED Practice Test",
+      name: "Tigertest - Free GED Practice Test",
       description,
       url: `${siteUrl}/ged-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -191,7 +191,7 @@ export default function GedLandingPage() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <Image src={getTigerAsset("ged", 1)} alt="TigerTest mascot" width={180} height={180} className="w-32 md:w-44" />
+              <Image src={getTigerAsset("ged", 1)} alt="Tigertest mascot" width={180} height={180} className="w-32 md:w-44" />
             </div>
           </div>
         </div>

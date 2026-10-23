@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/motorcycle-practice-test`,
-    images: [{ url: "/og/moto", width: 1200, height: 630, alt: "TigerTest free Motorcycle practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/moto", width: 1200, height: 630, alt: "Tigertest free Motorcycle practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -47,14 +47,14 @@ const faqs = [
   },
   {
     q: "What is the motorcycle permit test based on?",
-    a: "Nearly every state writes its motorcycle knowledge test from the Motorcycle Safety Foundation (MSF) Motorcycle Operator Manual, often reprinted as the state motorcycle handbook. TigerTest's 200 questions follow that manual chapter by chapter.",
+    a: "Nearly every state writes its motorcycle knowledge test from the Motorcycle Safety Foundation (MSF) Motorcycle Operator Manual, often reprinted as the state motorcycle handbook. Tigertest's 200 questions follow that manual chapter by chapter.",
   },
   {
     q: "Does this cover my state's motorcycle laws?",
     a: "It covers the riding knowledge that is the same everywhere: gear, control, positioning, intersections, hazards and alcohol. Helmet laws, permit restrictions and licensing steps vary by state, so check your state's motorcycle handbook for those.",
   },
   {
-    q: "Is the TigerTest motorcycle practice test free?",
+    q: "Is the Tigertest motorcycle practice test free?",
     a: "Yes. All four practice tests and all four training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
   },
 ];
@@ -64,7 +64,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free Motorcycle Permit Practice Tests",
+      name: "Tigertest - Free Motorcycle Permit Practice Tests",
       description,
       url: `${siteUrl}/motorcycle-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -188,7 +188,7 @@ export default function MotorcycleLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("moto", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -201,7 +201,7 @@ export default function MotorcycleLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -250,7 +250,7 @@ export default function MotorcycleLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
-                TigerTest tracks your accuracy by chapter. After each practice test, drill the questions you
+                Tigertest tracks your accuracy by chapter. After each practice test, drill the questions you
                 missed from the results, retrain that test&apos;s set, and retake until you clear 80 percent.
               </p>
             </div>

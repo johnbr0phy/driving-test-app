@@ -11,7 +11,7 @@
  * - Haven't received any other cron email in the last 24 hours
  *
  * Exempt from the quiet-days rule on purpose: the people it is for are the
- * ones who finished with TigerTest and may need it for something else.
+ * ones who finished with Tigertest and may need it for something else.
  *
  * PAUSED unless NEW_TESTS_CAMPAIGN=send is set in the environment. While
  * paused, each run only counts and logs who would get it (a daily dry run),
@@ -82,7 +82,7 @@ export async function GET(req: NextRequest) {
       subject: (u) =>
         u.voice.id === "dmv"
           ? pickLaunchVariant(u.uid).subject
-          : "SAT and ACT are on TigerTest, and a question for you",
+          : "SAT and ACT are on Tigertest, and a question for you",
       template: (u) =>
         u.voice.id === "dmv" ? pickLaunchVariant(u.uid).html() : EMAIL_TEMPLATES.newTests(u.voice),
       record: (u) =>

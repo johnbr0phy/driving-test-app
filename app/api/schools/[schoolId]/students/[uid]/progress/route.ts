@@ -22,7 +22,7 @@ function buildPassEmail(studentName: string, studentEmail: string, schoolName: s
         <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <img src="https://tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
               <div style="font-size: 48px; margin-bottom: 12px;">🎉</div>
               <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">A student just passed all 8 sections!</h1>
             </td>
@@ -65,7 +65,7 @@ function buildPassEmail(studentName: string, studentEmail: string, schoolName: s
                 </tr>
               </table>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                They've completed every practice section on TigerTest — they should be ready for the real DMV exam.
+                They've completed every practice section on Tigertest — they should be ready for the real DMV exam.
               </p>
               <table role="presentation" style="margin: 24px 0; border-collapse: collapse;">
                 <tr>
@@ -76,14 +76,14 @@ function buildPassEmail(studentName: string, studentEmail: string, schoolName: s
               </table>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 Keep up the great work,<br>
-                John @ TigerTest.io
+                John @ Tigertest.io
               </p>
             </td>
           </tr>
           <tr>
             <td style="padding: 24px 40px; background-color: #FFF9F5; border-top: 1px solid #f0f0f0;">
               <p style="margin: 0; color: #999999; font-size: 12px; line-height: 1.6; text-align: center;">
-                You're receiving this because you're the admin of ${schoolName} on TigerTest.
+                You're receiving this because you're the admin of ${schoolName} on Tigertest.
                 &nbsp;|&nbsp;
                 <a href="https://tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>
               </p>
@@ -187,7 +187,7 @@ export async function POST(
         const result = await sendEmail({
           kind: "transactional",
           to: adminEmail,
-          subject: `🎉 ${resolvedStudentName} passed all 8 sections on TigerTest!`,
+          subject: `🎉 ${resolvedStudentName} passed all 8 sections on Tigertest!`,
           html: buildPassEmail(resolvedStudentName, resolvedStudentEmail, schoolName),
         });
         if (result.ok) {

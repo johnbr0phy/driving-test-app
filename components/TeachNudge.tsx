@@ -125,7 +125,7 @@ export function TeachNudge({ dashboardKey, examId, done }: { dashboardKey: strin
       <GraduationCap className="w-5 h-5 flex-shrink-0 text-brand-dark mt-0.5 sm:mt-0" aria-hidden="true" />
       <div className="flex-1 min-w-0 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
         <p className="flex-1 min-w-0 text-gray-600 dark:text-gray-300 leading-snug">
-          <span className="font-semibold text-gray-900 dark:text-gray-50">Enjoying TigerTest?</span> Teachers can use it free with
+          <span className="font-semibold text-gray-900 dark:text-gray-50">Enjoying Tigertest?</span> Teachers can use it free with
           their classes. Tell yours about{" "}
           <Link href={LINK} onClick={tapLink} className="font-semibold text-brand-dark underline-offset-2 hover:underline">
             tigertest.io/teach

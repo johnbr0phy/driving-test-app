@@ -27,7 +27,7 @@ export function protectedResourceMetadata(): NextResponse {
       authorization_servers: [issuer],
       scopes_supported: ['mcp'],
       bearer_methods_supported: ['header'],
-      resource_name: 'TigerTest',
+      resource_name: 'Tigertest',
       resource_documentation: `${issuer}/developers`,
     },
     { headers: { ...RESOURCE_CORS_HEADERS, 'Cache-Control': 'public, max-age=3600' } },

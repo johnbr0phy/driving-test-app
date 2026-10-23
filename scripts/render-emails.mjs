@@ -31,8 +31,8 @@ const SAMPLE_OVERRIDES = {
 };
 
 const SUBJECTS = {
-  welcome: 'Welcome to TigerTest',
-  firstTestReminder: 'Quick check-in from TigerTest',
+  welcome: 'Welcome to Tigertest',
+  firstTestReminder: 'Quick check-in from Tigertest',
   secondTestNudge: 'Nice work on test #1!',
   paywallAbandon: 'Safety & Emergencies is still waiting',
   upgradePitch: "You're doing the work 💪",

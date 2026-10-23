@@ -78,7 +78,7 @@ export default function TeachPage() {
           </ul>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-8">
             <button type="button" className="underline" onClick={() => setClasses([])}>
-              How TigerTest classes work
+              How Tigertest classes work
             </button>
           </p>
         </div>

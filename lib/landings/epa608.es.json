@@ -12,7 +12,7 @@
   "facts": {
     "h2": "El examen EPA 608 en resumen",
     "answer": "El examen EPA Sección 608 tiene cuatro secciones (Core, Tipo I, Tipo II y Tipo III) de 25 preguntas de opción múltiple cada una, y necesitas 18 correctas (72%) en cada sección. Core más un tipo te certifica en ese tipo; Core más los tres tipos es la certificación Universal, 100 preguntas en total. Los Tipos II y III siempre son supervisados y a libro cerrado.",
-    "tigertest": "TigerTest tiene 200 preguntas de práctica EPA 608 en español con explicaciones, todas gratis y sin cuenta.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica EPA 608 en español con explicaciones, todas gratis y sin cuenta.",
     "rows": [
       { "label": "Preguntas", "value": "25 por sección, 100 para Universal" },
       { "label": "Para aprobar", "value": "18 de 25 (72%) por sección" },
@@ -62,7 +62,7 @@
       },
       {
         "h3": "4. Repite la sección que más fallas",
-        "p": "TigerTest mide tu precisión por sección. Después de cada examen mixto, regresa al grupo que más fallaste y repítelo hasta pasar del 72 por ciento con margen."
+        "p": "Tigertest mide tu precisión por sección. Después de cada examen mixto, regresa al grupo que más fallaste y repítelo hasta pasar del 72 por ciento con margen."
       }
     ]
   },
@@ -89,7 +89,7 @@
       "a": "No. La certificación de técnico de la Sección 608 no vence y no hay que renovarla. Guarda tu tarjeta, porque los proveedores de refrigerante pueden pedirla antes de venderte refrigerante."
     },
     {
-      "q": "¿El examen de práctica EPA 608 de TigerTest es gratis?",
+      "q": "¿El examen de práctica EPA 608 de Tigertest es gratis?",
       "a": "Sí. Los cuatro grupos de práctica y los cuatro exámenes mixtos son gratis y no necesitas crear una cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
     }
   ],

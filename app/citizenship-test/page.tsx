@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/citizenship-test`,
-    images: [{ url: "/og/civics", width: 1200, height: 630, alt: "TigerTest free Citizenship practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/civics", width: 1200, height: 630, alt: "Tigertest free Citizenship practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -47,18 +47,18 @@ const faqs = [
   },
   {
     q: "Is the civics test multiple choice?",
-    a: "No. The USCIS civics test is oral. TigerTest uses adapted multiple-choice study items. Practice saying the required answers without the options. Review the official list and prepare your own current and local answers.",
+    a: "No. The USCIS civics test is oral. Tigertest uses adapted multiple-choice study items. Practice saying the required answers without the options. Review the official list and prepare your own current and local answers.",
   },
   {
     q: "What is the 65/20 exception?",
-    a: "Qualifying applicants age 65 or older with at least 20 years as lawful permanent residents study the 20 starred questions from their applicable 2008 or 2025 list. Check the filing-time eligibility rules with USCIS. You are asked 10 and need 6 correct, and may use your chosen language. TigerTest does not provide a dedicated 65/20 mode.",
+    a: "Qualifying applicants age 65 or older with at least 20 years as lawful permanent residents study the 20 starred questions from their applicable 2008 or 2025 list. Check the filing-time eligibility rules with USCIS. You are asked 10 and need 6 correct, and may use your chosen language. Tigertest does not provide a dedicated 65/20 mode.",
   },
   {
     q: "Do the answers change?",
-    a: "Some answers depend on who holds office at your interview. Check the President, Vice President, Speaker, Chief Justice, your senator, your U.S. representative, and your governor. Also learn your state capital. TigerTest uses D.C. or territory examples for the four local questions; prepare your own answers using USCIS resources.",
+    a: "Some answers depend on who holds office at your interview. Check the President, Vice President, Speaker, Chief Justice, your senator, your U.S. representative, and your governor. Also learn your state capital. Tigertest uses D.C. or territory examples for the four local questions; prepare your own answers using USCIS resources.",
   },
   {
-    q: "Is the TigerTest citizenship practice test free?",
+    q: "Is the Tigertest citizenship practice test free?",
     a: "Yes. All four practice tests and all four training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
   },
 ];
@@ -68,7 +68,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free US Citizenship Civics Test Practice",
+      name: "Tigertest - Free US Citizenship Civics Test Practice",
       description,
       url: `${siteUrl}/citizenship-test`,
       applicationCategory: "EducationalApplication",
@@ -191,7 +191,7 @@ export default function CitizenshipLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("civics", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -204,7 +204,7 @@ export default function CitizenshipLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>

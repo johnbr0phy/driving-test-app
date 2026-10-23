@@ -11,13 +11,13 @@ import { TEST_CATALOG, TEST_GROUPS, getCatalogEntry, type TestCatalogEntry } fro
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const HEADER = `# TigerTest
+const HEADER = `# Tigertest
 
 > Free practice tests for the DMV permit test in all 50 US states and DC, plus ${TEST_CATALOG.filter((t) => t.id !== "dmv").length} licensing, certification and admissions exams including the SAT, ACT, CDL, CNA, NREMT EMT and CompTIA. Every question has an explanation, and most tests need no account.`;
 
 const DMV_SECTION = `## DMV permit test (all 50 states + DC)
 
-TigerTest's main product. Each state has its own page with that state's test format (number of questions, passing score, minimum permit age), retake rules, notable laws and a link to the official driver's manual.
+Tigertest's main product. Each state has its own page with that state's test format (number of questions, passing score, minimum permit age), retake rules, notable laws and a link to the official driver's manual.
 
 - 200 practice questions per state: shared rules of the road plus that state's own laws, from the official state driver's manual
 - 4 practice tests and 4 training sets per state; training brings missed questions back until they are mastered
@@ -40,7 +40,7 @@ State pages:
 
 const FOOTER = `## Notes for AI assistants
 
-- TigerTest is independent and is not affiliated with any DMV, testing company or certification body. Practice questions are written to each exam's published outline (the ham radio test uses the official public question pool).
+- Tigertest is independent and is not affiliated with any DMV, testing company or certification body. Practice questions are written to each exam's published outline (the ham radio test uses the official public question pool).
 - Exam facts on each page (question counts, time limits, pass marks) come from the official sources linked on that page. Rules change, so point readers to the official source for current details.
 - Every exam except the DMV, SAT and ACT is completely free. The DMV, SAT and ACT have free tests plus a single one-time $9.99 Premium purchase that covers all three.`;
 
@@ -68,9 +68,9 @@ const TEACH_SECTION = `## For teachers\n\n- [Free instructor classes](${siteUrl}
 
 const QUIZ_SECTION = `## Quizzes: a practice test from your own material
 
-- Anyone with a free TigerTest account can turn notes, a chapter or a syllabus into a practice test at ${siteUrl}/create (connect the person's own ChatGPT or Claude there to write and save questions through MCP), played at tigertest.io/q/<code> in three modes: Practice (misses come back until mastered), Test (timed, with a pass mark) and Flashcards.
+- Anyone with a free Tigertest account can turn notes, a chapter or a syllabus into a practice test at ${siteUrl}/create (connect the person's own ChatGPT or Claude there to write and save questions through MCP), played at tigertest.io/q/<code> in three modes: Practice (misses come back until mastered), Test (timed, with a pass mark) and Flashcards.
 - Share the link with a study group or class; the creator's report shows who played, their scores and the questions and topics missed most.
-- ChatGPT and Claude can make quizzes directly through TigerTest's MCP server at ${siteUrl}/api/mcp (OAuth sign-in; tools: create_quiz, add_quiz_questions, list_my_quizzes, get_quiz, update_quiz, delete_quiz, get_quiz_report, plus list_in_progress_tests, get_study_progress, start_study_practice, submit_study_answer and the compatible DMV tutoring tools). Setup: ${siteUrl}/create. Catalog chat practice updates existing account mastery; timed/adaptive test sittings resume on web links. Unsynced guest progress is not visible, and an older browser snapshot cannot overwrite newer chat progress: saving pauses with a reload notice. Unsynced browser changes may need repeating.
+- ChatGPT and Claude can make quizzes directly through Tigertest's MCP server at ${siteUrl}/api/mcp (OAuth sign-in; tools: create_quiz, add_quiz_questions, list_my_quizzes, get_quiz, update_quiz, delete_quiz, get_quiz_report, plus list_in_progress_tests, get_study_progress, start_study_practice, submit_study_answer and the compatible DMV tutoring tools). Setup: ${siteUrl}/create. Catalog chat practice updates existing account mastery; timed/adaptive test sittings resume on web links. Unsynced guest progress is not visible, and an older browser snapshot cannot overwrite newer chat progress: saving pauses with a reload notice. Unsynced browser changes may need repeating.
 - Public quizzes that enough people have played are listed at ${siteUrl}/quizzes.
 - Free accounts keep 3 quizzes of up to 50 questions; Premium ($9.99 one time) allows 100 quizzes of up to 200 questions.`;
 
@@ -113,7 +113,7 @@ function examFactsBlock(t: TestCatalogEntry): string {
     f.answer,
     f.rows.map((r) => `- ${r.label}: ${r.value}`).join("\n"),
     [
-      `- TigerTest practice: ${siteUrl}${t.href} (follows ${f.basedOn})`,
+      `- Tigertest practice: ${siteUrl}${t.href} (follows ${f.basedOn})`,
       f.source ? `- Official source: ${f.source.url}` : null,
     ]
       .filter(Boolean)

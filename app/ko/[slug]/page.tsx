@@ -53,14 +53,14 @@ export async function generateMetadata({
     return { title: "해당 주를 찾을 수 없습니다" };
   }
 
-  const title = `${state.name} DMV 필기시험 연습문제 2026 - 무료 | TigerTest`;
+  const title = `${state.name} DMV 필기시험 연습문제 2026 - 무료 | Tigertest`;
   const description = `${state.name} 운전면허 필기시험을 한 번에 합격하세요. 실제 시험은 ${state.writtenTestQuestions}문제이며, ${state.name} 운전자 교본을 바탕으로 만든 무료 연습문제 200개로 대비할 수 있습니다. 지금 바로 연습을 시작하세요.`;
   const canonicalUrl = `${siteUrl}/ko/${state.slug}-dmv-pilgi-siheom`;
   const enUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
   const esUrl = `${siteUrl}/es/${state.slug}-examen-practica-dmv`;
 
   return {
-    // The string already carries the brand; skip the root layout's "%s | TigerTest" template.
+    // The string already carries the brand; skip the root layout's "%s | Tigertest" template.
     title: { absolute: title },
     description,
     alternates: {
@@ -84,13 +84,13 @@ export async function generateMetadata({
       type: "website",
       url: canonicalUrl,
       locale: "ko_KR",
-      siteName: "TigerTest",
+      siteName: "Tigertest",
       images: [
         {
           url: "/tiger.png",
           width: 512,
           height: 512,
-          alt: `${state.name} DMV 필기시험 연습문제 - TigerTest`,
+          alt: `${state.name} DMV 필기시험 연습문제 - Tigertest`,
         },
       ],
     },
@@ -129,7 +129,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
   const faqItems = [
     {
       question: `${state.name} 운전면허 필기시험은 몇 문제인가요?`,
-      answer: `${state.name} ${state.dmvName}의 필기시험은 ${state.writtenTestQuestions}문제입니다. 합격하려면 최소 ${rawPassing}문제(${state.passingScore}%)를 맞혀야 합니다. TigerTest는 충분히 대비할 수 있도록 200개의 연습문제를 제공합니다.`,
+      answer: `${state.name} ${state.dmvName}의 필기시험은 ${state.writtenTestQuestions}문제입니다. 합격하려면 최소 ${rawPassing}문제(${state.passingScore}%)를 맞혀야 합니다. Tigertest는 충분히 대비할 수 있도록 200개의 연습문제를 제공합니다.`,
     },
     {
       question: `${state.name} DMV 시험은 몇 점을 받아야 합격인가요?`,
@@ -195,7 +195,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
   const courseJsonLd = {
     "@context": "https://schema.org",
     "@type": ["WebApplication", "LearningResource"],
-    name: `${state.name} DMV 필기시험 연습문제 - TigerTest`,
+    name: `${state.name} DMV 필기시험 연습문제 - Tigertest`,
     description: `${state.name} ${state.dmvName}의 공식 운전자 교본을 바탕으로 만든 200개의 문제로 구성된 무료 ${state.name} DMV 필기시험 연습문제입니다.`,
     url: `${siteUrl}/ko/${state.slug}-dmv-pilgi-siheom`,
     inLanguage: "ko",
@@ -208,12 +208,12 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
     dateModified: lastModifiedIso,
     author: {
       "@type": "Organization",
-      name: "TigerTest",
+      name: "Tigertest",
       url: siteUrl,
     },
     publisher: {
       "@type": "Organization",
-      name: "TigerTest",
+      name: "Tigertest",
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
     },
@@ -238,7 +238,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
     },
     supply: [
       { "@type": "HowToSupply", name: `${landingInfo.handbookName}` },
-      { "@type": "HowToSupply", name: "TigerTest 연습문제" },
+      { "@type": "HowToSupply", name: "Tigertest 연습문제" },
     ],
     step: [
       {
@@ -252,7 +252,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
         "@type": "HowToStep",
         position: 2,
         name: "학습 모드로 연습하세요",
-        text: `TigerTest의 ${state.name} 맞춤 연습문제 200개를 하나씩 풀어보세요. 답할 때마다 즉시 결과와 해설이 나옵니다.`,
+        text: `Tigertest의 ${state.name} 맞춤 연습문제 200개를 하나씩 풀어보세요. 답할 때마다 즉시 결과와 해설이 나옵니다.`,
         url: `${siteUrl}/ko/${state.slug}-dmv-pilgi-siheom`,
       },
       {
@@ -265,7 +265,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
         "@type": "HowToStep",
         position: 4,
         name: "틀린 문제를 모두 복습하세요",
-        text: "틀린 문제의 해설을 다시 읽어보세요. TigerTest는 틀린 문제를 복습 목록에 넣어 더 자주 다시 보여줍니다.",
+        text: "틀린 문제의 해설을 다시 읽어보세요. Tigertest는 틀린 문제를 복습 목록에 넣어 더 자주 다시 보여줍니다.",
       },
       {
         "@type": "HowToStep",
@@ -489,7 +489,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
                   필기시험을 준비하려면{" "}
                   <strong>{landingInfo.handbookName}</strong>을 공부하세요.
-                  TigerTest의 연습문제도 이 교본의 내용을 바탕으로 만들었습니다.
+                  Tigertest의 연습문제도 이 교본의 내용을 바탕으로 만들었습니다.
                 </p>
                 <a
                   href={landingInfo.handbookUrl}
@@ -558,7 +558,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
             {state.name} DMV 시험, 합격할 준비 되셨나요?
           </h2>
           <p className="text-brand-light text-lg mb-6">
-            TigerTest로 첫 응시에 합격한 수많은 {state.name} 운전자들과 함께하세요
+            Tigertest로 첫 응시에 합격한 수많은 {state.name} 운전자들과 함께하세요
           </p>
           <Button asChild
               size="lg"

@@ -1,6 +1,6 @@
 import { StateLandingInfo } from "./stateLandingData";
 
-// Korean landing-page copy for TigerTest. Coverage is intentionally limited to
+// Korean landing-page copy for Tigertest. Coverage is intentionally limited to
 // the 10 states listed in koStates.ts. Only the same fields the Vietnamese
 // mirror translates are localized here (retakeWaitTime, retakeInfo,
 // notableRules, onlineTestInfo, examManualChapters); handbook names/URLs, state
@@ -31,7 +31,7 @@ export const stateLandingDataKo: Record<string, StateLandingInfo> = {
     ],
     neighboringSlugs: ["new-jersey", "pennsylvania", "connecticut", "massachusetts", "vermont"],
     onlineTestInfo: "아니요. 뉴욕 DMV 필기시험은 DMV 사무소를 직접 방문해서 봐야 합니다.",
-    examManualChapters: "뉴욕주 DMV에 따르면 필기시험 문제는 New York State Driver's Manual의 4장부터 11장까지에서 출제됩니다. 도로 표지판·신호·차선 표시, 교차로와 회전, 안전 운전과 추월 요령, 방어 운전, 도로 함께 쓰기, 음주 및 약물의 영향, 주차 규정, 비상 상황 대처가 여기에 포함됩니다. TigerTest의 뉴욕 연습문제 200개도 같은 자료를 바탕으로 만들었기 때문에, 틀린 문제는 공식 교본에서 바로 찾아 확인할 수 있습니다."
+    examManualChapters: "뉴욕주 DMV에 따르면 필기시험 문제는 New York State Driver's Manual의 4장부터 11장까지에서 출제됩니다. 도로 표지판·신호·차선 표시, 교차로와 회전, 안전 운전과 추월 요령, 방어 운전, 도로 함께 쓰기, 음주 및 약물의 영향, 주차 규정, 비상 상황 대처가 여기에 포함됩니다. Tigertest의 뉴욕 연습문제 200개도 같은 자료를 바탕으로 만들었기 때문에, 틀린 문제는 공식 교본에서 바로 찾아 확인할 수 있습니다."
   },
   NJ: {
     retakeWaitTime: "14일",

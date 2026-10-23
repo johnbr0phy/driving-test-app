@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/asvab-practice-test`,
-    images: [{ url: "/og/asvab", width: 1200, height: 630, alt: "TigerTest free ASVAB practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/asvab", width: 1200, height: 630, alt: "Tigertest free ASVAB practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -44,7 +44,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free ASVAB Full CAT-ASVAB on a Computer",
+      name: "Tigertest - Free ASVAB Full CAT-ASVAB on a Computer",
       description,
       url: `${siteUrl}/asvab-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -68,7 +68,7 @@ const jsonLd = {
           name: "What subtests are on the ASVAB?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The computer version (CAT-ASVAB) has ten subtests: General Science, Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension, Mathematics Knowledge, Electronics Information, Auto Information, Shop Information, Mechanical Comprehension, and Assembling Objects. The paper version combines Auto and Shop into one subtest. TigerTest covers the first nine; Assembling Objects is a picture-based spatial test and is not included here.",
+            text: "The computer version (CAT-ASVAB) has ten subtests: General Science, Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension, Mathematics Knowledge, Electronics Information, Auto Information, Shop Information, Mechanical Comprehension, and Assembling Objects. The paper version combines Auto and Shop into one subtest. Tigertest covers the first nine; Assembling Objects is a picture-based spatial test and is not included here.",
           },
         },
         {
@@ -97,7 +97,7 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Is the TigerTest ASVAB practice test free?",
+          name: "Is the Tigertest ASVAB practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Yes. The full CAT-ASVAB simulation and all eight drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
@@ -200,7 +200,7 @@ export default function AsvabLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("asvab", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -213,7 +213,7 @@ export default function AsvabLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -256,7 +256,7 @@ export default function AsvabLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Answer everything and keep moving</h3>
               <p>
-                The CAT-ASVAB adapts to you and will not let you go back, and unanswered questions count against you. Make your best pick and move on. Use TigerTest&apos;s per-subtest accuracy to find your weakest area, then run that subtest&apos;s drill until every question is mastered.
+                The CAT-ASVAB adapts to you and will not let you go back, and unanswered questions count against you. Make your best pick and move on. Use Tigertest&apos;s per-subtest accuracy to find your weakest area, then run that subtest&apos;s drill until every question is mastered.
               </p>
             </div>
           </div>
@@ -272,7 +272,7 @@ export default function AsvabLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What subtests are on the ASVAB?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              The computer version (CAT-ASVAB) has ten subtests: General Science, Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension, Mathematics Knowledge, Electronics Information, Auto Information, Shop Information, Mechanical Comprehension, and Assembling Objects. The paper version combines Auto and Shop into one subtest. TigerTest covers the first nine; Assembling Objects is a picture-based spatial test and is not included here.
+              The computer version (CAT-ASVAB) has ten subtests: General Science, Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension, Mathematics Knowledge, Electronics Information, Auto Information, Shop Information, Mechanical Comprehension, and Assembling Objects. The paper version combines Auto and Shop into one subtest. Tigertest covers the first nine; Assembling Objects is a picture-based spatial test and is not included here.
             </p>
           </div>
           <div>
@@ -294,7 +294,7 @@ export default function AsvabLandingPage() {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest ASVAB practice test free?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest ASVAB practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
               Yes. The full CAT-ASVAB simulation and all eight drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
             </p>

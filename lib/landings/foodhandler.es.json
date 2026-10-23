@@ -12,7 +12,7 @@
   "facts": {
     "h2": "El examen de manipulador de alimentos en resumen",
     "answer": "La mayoría de los exámenes de los cursos acreditados de manipulador de alimentos tienen 40 preguntas de opción múltiple, se aprueban con 75% y no tienen límite de tiempo. Cubren higiene personal, contaminación y alérgenos, tiempo y temperatura, y limpieza. Si necesitas la tarjeta depende de tu estado y condado; las tarjetas suelen durar de dos a tres años.",
-    "tigertest": "TigerTest tiene 200 preguntas de práctica de manipulador de alimentos en español con explicaciones, todas gratis y sin cuenta.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica de manipulador de alimentos en español con explicaciones, todas gratis y sin cuenta.",
     "rows": [
       {
         "label": "Preguntas",
@@ -74,7 +74,7 @@
       },
       {
         "h3": "4. Repasa lo que fallas",
-        "p": "TigerTest mide tu precisión por tema. La mayoría de los cursos piden 75% en un examen de 40 preguntas, así que repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar de 85% con margen."
+        "p": "Tigertest mide tu precisión por tema. La mayoría de los cursos piden 75% en un examen de 40 preguntas, así que repasa las preguntas que fallaste, vuelve a entrenar el grupo de ese examen y repite el examen hasta pasar de 85% con margen."
       }
     ]
   },
@@ -94,14 +94,14 @@
     },
     {
       "q": "¿Es lo mismo que el examen de gerente de alimentos?",
-      "a": "No. La tarjeta de manipulador de alimentos es para el personal de línea y cubre las prácticas seguras. El examen de Gerente Certificado en Protección de Alimentos es más largo, se hace con supervisión y añade sistemas de gestión. TigerTest tiene un examen de práctica aparte para Food Manager."
+      "a": "No. La tarjeta de manipulador de alimentos es para el personal de línea y cubre las prácticas seguras. El examen de Gerente Certificado en Protección de Alimentos es más largo, se hace con supervisión y añade sistemas de gestión. Tigertest tiene un examen de práctica aparte para Food Manager."
     },
     {
       "q": "¿Para qué curso me prepara?",
       "a": "Para cualquier curso acreditado de manipulador de alimentos: el material es el Código de Alimentos de la FDA, que todos enseñan. Igual tienes que tomar el curso y su propio examen para obtener la tarjeta; usa esto para asegurarte de aprobarlo a la primera."
     },
     {
-      "q": "¿El examen de práctica de manipulador de alimentos de TigerTest es gratis?",
+      "q": "¿El examen de práctica de manipulador de alimentos de Tigertest es gratis?",
       "a": "Sí. Los cuatro exámenes de práctica y los cuatro grupos de entrenamiento son gratis, sin necesidad de cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
     }
   ],

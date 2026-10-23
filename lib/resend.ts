@@ -71,7 +71,7 @@ export interface SendEmailPayload {
   kind: SendKind;
 }
 
-export const DEFAULT_FROM = "TigerTest <noreply@tigertest.io>";
+export const DEFAULT_FROM = "Tigertest <noreply@tigertest.io>";
 
 /**
  * Send one email, charged against the account-wide daily budget, and report the

@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/cdl-endorsement-practice-test`,
-    images: [{ url: "/og/cdlx", width: 1200, height: 630, alt: "TigerTest free CDL Endorsements practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/cdlx", width: 1200, height: 630, alt: "Tigertest free CDL Endorsements practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -56,7 +56,7 @@ const faqs = [
     a: "Combination vehicles for Class A. Tank (N) for liquid or gas cargo in tanks of 1,000 gallons or more. Passenger (P) for vehicles designed for 16 or more including the driver. Hazardous materials (H) for placarded loads; X combines N and H. Each test needs 80 percent.",
   },
   {
-    q: "Is the TigerTest endorsement practice free?",
+    q: "Is the Tigertest endorsement practice free?",
     a: "Yes. All five training sets and all four mixed practice tests are free, with no account required. Create a free account if you want your progress saved across devices.",
   },
 ];
@@ -66,7 +66,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free CDL Endorsement Practice Tests",
+      name: "Tigertest - Free CDL Endorsement Practice Tests",
       description,
       url: `${siteUrl}/cdl-endorsement-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -189,7 +189,7 @@ export default function CDLEndorsementsLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("cdlx", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -202,7 +202,7 @@ export default function CDLEndorsementsLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -252,7 +252,7 @@ export default function CDLEndorsementsLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
-                TigerTest tracks your accuracy by endorsement. After a mixed test, go back to the set
+                Tigertest tracks your accuracy by endorsement. After a mixed test, go back to the set
                 you missed most and retake until you clear 80 percent.
               </p>
             </div>

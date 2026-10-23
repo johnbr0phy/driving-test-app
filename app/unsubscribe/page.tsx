@@ -67,7 +67,7 @@ function UnsubscribeContent() {
 
   const isDmv = testName === "DMV test";
   const tweetText = encodeURIComponent(
-    `Just passed my ${isDmv ? "driving test" : testName}! 🎉 Studied with TigerTest — free practice tests that actually work. tigertest.io`
+    `Just passed my ${isDmv ? "driving test" : testName}! 🎉 Studied with Tigertest — free practice tests that actually work. tigertest.io`
   );
   const requestHref = `/request-test?t=${encodeURIComponent(token ?? "")}&src=unsubscribe`;
 
@@ -111,7 +111,7 @@ function UnsubscribeContent() {
           <>
             <div className="text-6xl mb-6">🎉</div>
             <h1 className="text-2xl font-semibold mb-3">Congratulations!</h1>
-            <p className="text-gray-600 dark:text-gray-300 mb-2">That&apos;s what TigerTest is all about.</p>
+            <p className="text-gray-600 dark:text-gray-300 mb-2">That&apos;s what Tigertest is all about.</p>
             <p className="text-gray-500 dark:text-gray-400 mb-8">{isDmv ? "Go enjoy the open road. 🚗" : "Go celebrate. You earned it."}</p>
             <a
               href={`https://twitter.com/intent/tweet?text=${tweetText}`}
@@ -146,7 +146,7 @@ function UnsubscribeContent() {
             </p>
             <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
               <Link href="/dmv/dashboard">
-                Back to TigerTest
+                Back to Tigertest
               </Link>
             </Button>
             <div className="mt-6">

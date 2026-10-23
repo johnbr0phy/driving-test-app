@@ -54,7 +54,7 @@ function buildInviteEmail(schoolName: string): string {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>You've been invited to TigerTest</title>
+  <title>You've been invited to Tigertest</title>
 </head>
 <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #FFF9F5;">
   <table role="presentation" style="width: 100%; border-collapse: collapse;">
@@ -63,17 +63,17 @@ function buildInviteEmail(schoolName: string): string {
         <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
-              <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">Your instructor invited you to TigerTest</h1>
+              <img src="https://tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">Your instructor invited you to Tigertest</h1>
             </td>
           </tr>
           <tr>
             <td style="padding: 0 40px 40px;">
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                <strong style="font-weight: 600;">${schoolName}</strong> has set you up on TigerTest to help you prepare for your DMV written test.
+                <strong style="font-weight: 600;">${schoolName}</strong> has set you up on Tigertest to help you prepare for your DMV written test.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                TigerTest gives you 8 practice sections that cover everything on the real exam. Work through them at your own pace. The goal is simple: pass all 8.
+                Tigertest gives you 8 practice sections that cover everything on the real exam. Work through them at your own pace. The goal is simple: pass all 8.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 <strong style="font-weight: 600;">Sign up with this email address</strong> and your progress will be tracked automatically.
@@ -87,7 +87,7 @@ function buildInviteEmail(schoolName: string): string {
               </table>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 Good luck,<br>
-                John @ TigerTest.io
+                John @ Tigertest.io
               </p>
             </td>
           </tr>
@@ -190,7 +190,7 @@ export async function POST(
         sendEmail({
           kind: "transactional",
           to: email,
-          subject: `${schoolName} invited you to TigerTest`,
+          subject: `${schoolName} invited you to Tigertest`,
           html: htmlBody,
         })
       )

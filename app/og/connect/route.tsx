@@ -5,7 +5,7 @@ import { join } from "path";
 export const runtime = "nodejs";
 
 // Open Graph / Twitter card for /create (the route keeps its old /connect name): the headline beside a small chat
-// where a pasted PDF becomes a TigerTest quiz link, like the page's hero.
+// where a pasted PDF becomes a Tigertest quiz link, like the page's hero.
 // A static segment, so it wins over /og/[examId].
 
 // Inter from Google Fonts (TTF, which is what ImageResponse can read). The
@@ -50,7 +50,7 @@ export async function GET() {
           <div style={{ display: "flex", alignItems: "center", marginBottom: 30 }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={tiger} width={64} height={64} alt="" style={{ width: 64, height: 64, marginRight: 14 }} />
-            <div style={{ display: "flex", fontSize: 34, fontWeight: 800 }}>tigertest</div>
+            <div style={{ display: "flex", fontSize: 34, fontWeight: 800 }}>Tigertest</div>
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", fontSize: 68, fontWeight: 800, lineHeight: 1.05, letterSpacing: -1.5 }}>
             Turn any chat into a&nbsp;<span style={{ color: "#ea580c" }}>practice test</span>
@@ -80,7 +80,7 @@ export async function GET() {
           </div>
           <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 22 }}>
             <div style={{ ...bubble, background: "#111827", color: "#ffffff", maxWidth: 400, borderBottomRightRadius: 6 }}>
-              Turn this into a TigerTest quiz with 20 questions.
+              Turn this into a Tigertest quiz with 20 questions.
             </div>
           </div>
           <div style={{ display: "flex", fontSize: 24, color: "#1f2937", marginBottom: 14 }}>Done! 20 questions. Here&apos;s your link:</div>

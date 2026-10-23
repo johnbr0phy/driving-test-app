@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "What percentage do I need to pass the NCLEX-PN?",
-    a: "There is no percentage pass mark. The real NCLEX-PN is adaptive: it assesses ability against a passing standard and reports pass or fail. TigerTest reports percent correct on fixed practice items. Practice percentages do not predict your NCLEX-PN result or tell you when to schedule the exam. Use them to track practice progress and choose topics to review.",
+    a: "There is no percentage pass mark. The real NCLEX-PN is adaptive: it assesses ability against a passing standard and reports pass or fail. Tigertest reports percent correct on fixed practice items. Practice percentages do not predict your NCLEX-PN result or tell you when to schedule the exam. Use them to track practice progress and choose topics to review.",
   },
   {
     q: "What is on the 2026 NCLEX-PN test plan?",
@@ -31,10 +31,10 @@ const faqs = [
   },
   {
     q: "How is the NCLEX-PN different from the NCLEX-RN?",
-    a: "The PN exam tests the practical nurse's scope. The PN collects data rather than performing the initial comprehensive assessment, reinforces teaching rather than creating the teaching plan, contributes to the plan of care, assigns tasks to assistive personnel and reports changes to the RN or provider. Coordinated Care replaces the RN plan's Management of Care and carries the largest share of questions. Every TigerTest item is written for that scope, with state-specific limits such as IV medications stated as varying by state and facility policy.",
+    a: "The PN exam tests the practical nurse's scope. The PN collects data rather than performing the initial comprehensive assessment, reinforces teaching rather than creating the teaching plan, contributes to the plan of care, assigns tasks to assistive personnel and reports changes to the RN or provider. Coordinated Care replaces the RN plan's Management of Care and carries the largest share of questions. Every Tigertest item is written for that scope, with state-specific limits such as IV medications stated as varying by state and facility policy.",
   },
   {
-    q: "Is the TigerTest NCLEX-PN practice test free?",
+    q: "Is the Tigertest NCLEX-PN practice test free?",
     a: "Yes. Both practice tests and all eight drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
   },
 ];
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/nclex-pn-practice-test`,
-    images: [{ url: "/og/nclexpn", width: 1200, height: 630, alt: "TigerTest free NCLEX-PN practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/nclexpn", width: 1200, height: 630, alt: "Tigertest free NCLEX-PN practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -68,7 +68,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free NCLEX-PN Practice Test",
+      name: "Tigertest - Free NCLEX-PN Practice Test",
       description,
       url: `${siteUrl}/nclex-pn-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -189,7 +189,7 @@ export default function NclexPnLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("nclexpn", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -202,7 +202,7 @@ export default function NclexPnLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -245,7 +245,7 @@ export default function NclexPnLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Treat every SATA option as true or false, then drill your weakest area</h3>
               <p>
-                Read every select all that apply option against the stem as its own true or false question, and do not hunt for a set number of answers. TigerTest shows practice scores by Client Needs category: review the rationales in the area you miss most, then use Practice Test 2 to check your progress on a separate set of questions. These scores do not predict your result on the real adaptive exam. Practical nursing programs can assign TigerTest as a class and see what the class misses most, free, at <Link href="/teach" className="text-brand-dark underline">/teach</Link>.
+                Read every select all that apply option against the stem as its own true or false question, and do not hunt for a set number of answers. Tigertest shows practice scores by Client Needs category: review the rationales in the area you miss most, then use Practice Test 2 to check your progress on a separate set of questions. These scores do not predict your result on the real adaptive exam. Practical nursing programs can assign Tigertest as a class and see what the class misses most, free, at <Link href="/teach" className="text-brand-dark underline">/teach</Link>.
               </p>
             </div>
           </div>

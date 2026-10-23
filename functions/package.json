@@ -1,7 +1,7 @@
 {
   "name": "tigertest-functions",
   "version": "1.0.0",
-  "description": "TigerTest email automation functions",
+  "description": "Tigertest email automation functions",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",

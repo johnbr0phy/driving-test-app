@@ -59,7 +59,7 @@ export function PaywallModal({
           <div className="flex items-center gap-3">
             <Image
               src="/tiger_face_01.png"
-              alt="TigerTest"
+              alt="Tigertest"
               width={56}
               height={56}
               className="flex-shrink-0"

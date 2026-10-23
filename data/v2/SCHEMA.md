@@ -1,4 +1,4 @@
-# TigerTest question model v2
+# Tigertest question model v2
 
 Banks live in `data/v2/<exam>/*.json` as arrays of `QuestionV2`. Rich text
 (`passage`, `stem`, `options[]`, `explanation`) supports: `$...$` inline KaTeX,

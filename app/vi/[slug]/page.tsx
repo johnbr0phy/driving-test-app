@@ -54,14 +54,14 @@ export async function generateMetadata({
     return { title: "Không Tìm Thấy Tiểu Bang" };
   }
 
-  const title = `Thi Thử DMV ${state.name} 2026 - Miễn Phí | TigerTest`;
+  const title = `Thi Thử DMV ${state.name} 2026 - Miễn Phí | Tigertest`;
   const description = `Đậu bài thi viết lấy bằng lái xe ở ${state.name} ngay lần đầu. ${state.writtenTestQuestions} câu hỏi trong bài thi thật; luyện với 200 câu hỏi tiếng Việt miễn phí dựa trên cẩm nang lái xe của ${state.name}. Bắt đầu luyện thi ngay.`;
   const canonicalUrl = `${siteUrl}/vi/${state.slug}-thi-thu-dmv`;
   const enUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
   const esUrl = `${siteUrl}/es/${state.slug}-examen-practica-dmv`;
 
   return {
-    // The string already carries the brand; skip the root layout's "%s | TigerTest" template.
+    // The string already carries the brand; skip the root layout's "%s | Tigertest" template.
     title: { absolute: title },
     description,
     alternates: {
@@ -85,13 +85,13 @@ export async function generateMetadata({
       type: "website",
       url: canonicalUrl,
       locale: "vi_VN",
-      siteName: "TigerTest",
+      siteName: "Tigertest",
       images: [
         {
           url: "/tiger.png",
           width: 512,
           height: 512,
-          alt: `Thi Thử DMV ${state.name} - TigerTest`,
+          alt: `Thi Thử DMV ${state.name} - Tigertest`,
         },
       ],
     },
@@ -133,11 +133,11 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
   const faqItems = [
     {
       question: `Tôi có thể thi bằng viết ở ${state.name} bằng tiếng Việt không?`,
-      answer: `Có. ${state.dmvName} của ${state.name} cho phép làm bài thi viết (knowledge test) bằng tiếng Việt. Bạn có thể luyện thi bằng tiếng Việt với TigerTest, và khi đi thi thật chỉ cần yêu cầu làm bài bằng tiếng Việt.`,
+      answer: `Có. ${state.dmvName} của ${state.name} cho phép làm bài thi viết (knowledge test) bằng tiếng Việt. Bạn có thể luyện thi bằng tiếng Việt với Tigertest, và khi đi thi thật chỉ cần yêu cầu làm bài bằng tiếng Việt.`,
     },
     {
       question: `Bài thi lấy giấy phép tập lái ở ${state.name} có bao nhiêu câu hỏi?`,
-      answer: `Bài thi viết của ${state.dmvName} ở ${state.name} có ${state.writtenTestQuestions} câu hỏi. Bạn cần trả lời đúng ít nhất ${rawPassing} câu (${state.passingScore}%) để đậu. TigerTest có 200 câu hỏi luyện thi giúp bạn chuẩn bị kỹ càng.`,
+      answer: `Bài thi viết của ${state.dmvName} ở ${state.name} có ${state.writtenTestQuestions} câu hỏi. Bạn cần trả lời đúng ít nhất ${rawPassing} câu (${state.passingScore}%) để đậu. Tigertest có 200 câu hỏi luyện thi giúp bạn chuẩn bị kỹ càng.`,
     },
     {
       question: `Tôi cần bao nhiêu điểm để đậu bài thi DMV ở ${state.name}?`,
@@ -203,7 +203,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
   const courseJsonLd = {
     "@context": "https://schema.org",
     "@type": ["WebApplication", "LearningResource"],
-    name: `Thi Thử DMV ${state.name} - TigerTest`,
+    name: `Thi Thử DMV ${state.name} - Tigertest`,
     description: `Bài thi thử DMV ${state.name} miễn phí với 200 câu hỏi tiếng Việt dựa trên cẩm nang lái xe chính thức của ${state.dmvName} ${state.name}.`,
     url: `${siteUrl}/vi/${state.slug}-thi-thu-dmv`,
     inLanguage: "vi",
@@ -216,12 +216,12 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
     dateModified: lastModifiedIso,
     author: {
       "@type": "Organization",
-      name: "TigerTest",
+      name: "Tigertest",
       url: siteUrl,
     },
     publisher: {
       "@type": "Organization",
-      name: "TigerTest",
+      name: "Tigertest",
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
     },
@@ -246,7 +246,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
     },
     supply: [
       { "@type": "HowToSupply", name: `${landingInfo.handbookName}` },
-      { "@type": "HowToSupply", name: "Câu hỏi luyện thi TigerTest" },
+      { "@type": "HowToSupply", name: "Câu hỏi luyện thi Tigertest" },
     ],
     step: [
       {
@@ -260,7 +260,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
         "@type": "HowToStep",
         position: 2,
         name: "Luyện tập ở chế độ ôn luyện",
-        text: `Ôn 200 câu hỏi luyện thi dành riêng cho ${state.name} của TigerTest từng câu một, với phản hồi ngay lập tức và giải thích cho từng đáp án.`,
+        text: `Ôn 200 câu hỏi luyện thi dành riêng cho ${state.name} của Tigertest từng câu một, với phản hồi ngay lập tức và giải thích cho từng đáp án.`,
         url: `${siteUrl}/vi/${state.slug}-thi-thu-dmv`,
       },
       {
@@ -273,7 +273,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
         "@type": "HowToStep",
         position: 4,
         name: "Xem lại từng câu trả lời sai",
-        text: "Đọc lại phần giải thích của những câu bạn làm sai. TigerTest tự động đưa các câu sai vào hàng chờ ôn tập ngắt quãng để bạn gặp lại chúng thường xuyên hơn.",
+        text: "Đọc lại phần giải thích của những câu bạn làm sai. Tigertest tự động đưa các câu sai vào hàng chờ ôn tập ngắt quãng để bạn gặp lại chúng thường xuyên hơn.",
       },
       {
         "@type": "HowToStep",
@@ -391,7 +391,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
                 <p className="text-gray-700 dark:text-gray-200">
                   {state.dmvName} của {state.name} cho phép làm bài thi viết
                   (knowledge test) <strong>bằng tiếng Việt</strong>. Bạn có thể
-                  ôn luyện bằng tiếng Việt với TigerTest rồi thi thật bằng
+                  ôn luyện bằng tiếng Việt với Tigertest rồi thi thật bằng
                   tiếng Việt — không cần lo về rào cản ngôn ngữ.
                 </p>
               </div>
@@ -506,7 +506,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
                   Học <strong>{landingInfo.handbookName}</strong> để chuẩn bị
-                  cho bài thi viết. Các câu hỏi luyện thi của TigerTest đều dựa
+                  cho bài thi viết. Các câu hỏi luyện thi của Tigertest đều dựa
                   trên nội dung cẩm nang này.
                 </p>
                 <a
@@ -578,7 +578,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
           </h2>
           <p className="text-brand-light text-lg mb-6">
             Hãy cùng hàng ngàn người lái xe ở {state.name} đã đậu ngay lần đầu
-            với TigerTest
+            với Tigertest
           </p>
           <Button asChild
               size="lg"

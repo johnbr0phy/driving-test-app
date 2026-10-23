@@ -1,7 +1,7 @@
 // The real exam's format, stated up front on each exam landing page
 // (components/exam/ExamFacts.tsx) and in /llms-full.txt. AI answer engines
 // quote the first plain, factual sentence they find, so `answer` leads with
-// the exam itself, not with TigerTest. Keep every figure in step with the
+// the exam itself, not with Tigertest. Keep every figure in step with the
 // landing page's FAQ, which is where these numbers were sourced and checked.
 // DMV state pages carry their own facts and are deliberately not listed here.
 
@@ -19,7 +19,7 @@ export interface ExamFacts {
   basedOn: string;
   /** Official source to verify current rules. Omitted where none is universal. */
   source?: { name: string; url: string };
-  /** Replaces the generated TigerTest sentence when the catalog count or pricing misleads. */
+  /** Replaces the generated Tigertest sentence when the catalog count or pricing misleads. */
   tigertest?: string;
 }
 
@@ -38,7 +38,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the national curriculum in England for mathematics and the Standards and Testing Agency's multiplication tables check assessment framework",
     source: { name: "Standards and Testing Agency: multiplication tables check assessment framework", url: "https://www.gov.uk/government/publications/multiplication-tables-check-assessment-framework" },
     tigertest:
-      "TigerTest has four 25-question practice checks (the Year 2 tables, the Year 3 tables, then two full Year 4 checks) and six drills that each start with a short lesson: a trick for every table, dividing and word problems. All of it is free with no account required.",
+      "Tigertest has four 25-question practice checks (the Year 2 tables, the Year 3 tables, then two full Year 4 checks) and six drills that each start with a short lesson: a trick for every table, dividing and word problems. All of it is free with no account required.",
   },
   ged: {
     answer:
@@ -54,7 +54,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the assessment targets in the GED Testing Service Assessment Guide for Educators (October 2020 edition)",
     source: { name: "GED Testing Service Assessment Guide for Educators", url: "https://www.ged.com/content/dam/websites/ged/resources/en/assessment-guide-for-educators-all-subjects.pdf" },
     tigertest:
-      "TigerTest has two full-length GED practice tests covering all four subjects, with a percent score per subject and six skill drills that teach the basics first. All of it is free with no account required; the essay is not modeled.",
+      "Tigertest has two full-length GED practice tests covering all four subjects, with a percent score per subject and six skill drills that teach the basics first. All of it is free with no account required; the essay is not modeled.",
   },
   sat: {
     answer:
@@ -69,7 +69,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the published digital SAT specifications",
     source: { name: "College Board", url: "https://satsuite.collegeboard.org/sat" },
     tigertest:
-      "TigerTest has two full-length adaptive SAT practice tests with score estimates and skill drills. Practice Test 1 and most drills are free with no account required.",
+      "Tigertest has two full-length adaptive SAT practice tests with score estimates and skill drills. Practice Test 1 and most drills are free with no account required.",
   },
   act: {
     answer:
@@ -84,7 +84,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the published enhanced ACT specifications",
     source: { name: "ACT", url: "https://www.act.org" },
     tigertest:
-      "TigerTest has two full-length ACT practice tests in the enhanced format with score estimates and skill drills. Practice Test 1 and most drills are free with no account required.",
+      "Tigertest has two full-length ACT practice tests in the enhanced format with score estimates and skill drills. Practice Test 1 and most drills are free with no account required.",
   },
   cdl: {
     answer:
@@ -160,7 +160,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the official NCVEC 2026-2030 Technician pool",
     source: { name: "NCVEC", url: "https://www.ncvec.org" },
     tigertest:
-      "TigerTest has 397 of the 409 official pool questions with explanations (the 12 that need a schematic figure are left out), all free with no account required.",
+      "Tigertest has 397 of the 409 official pool questions with explanations (the 12 that need a schematic figure are left out), all free with no account required.",
   },
   epa608: {
     answer:

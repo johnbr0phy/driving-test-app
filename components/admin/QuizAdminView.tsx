@@ -75,7 +75,7 @@ function Bars({ rows }: { rows: { label: string; value: number; light?: boolean;
 function Connector({ data }: { data: QuizAdminPayload }) {
   const c = data.connector;
   return (
-    <Card title="Connector to quiz" subtitle="Accounts that connected Claude or ChatGPT to TigerTest">
+    <Card title="Connector to quiz" subtitle="Accounts that connected Claude or ChatGPT to Tigertest">
       <Bars
         rows={[
           { label: "Connected an assistant", value: c.accounts, note: `${fmtInt(c.last30)} in 30 days` },

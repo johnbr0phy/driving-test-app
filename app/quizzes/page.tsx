@@ -12,15 +12,15 @@ import { QuizLibrary } from "@/components/quiz/create/QuizLibrary";
 export const revalidate = 300;
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
-const title = "Practice tests made by TigerTest members";
+const title = "Practice tests made by Tigertest members";
 const description =
-  "Browse practice tests other TigerTest members made from their own notes and study sets, play any in Practice, Test or Flashcards mode, or make your own.";
+  "Browse practice tests other Tigertest members made from their own notes and study sets, play any in Practice, Test or Flashcards mode, or make your own.";
 
 export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: `${siteUrl}/quizzes` },
-  openGraph: { title, description, url: `${siteUrl}/quizzes`, siteName: "TigerTest", type: "website" },
+  openGraph: { title, description, url: `${siteUrl}/quizzes`, siteName: "Tigertest", type: "website" },
   twitter: { card: "summary", title, description },
 };
 

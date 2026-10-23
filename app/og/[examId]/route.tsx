@@ -60,7 +60,7 @@ export async function GET(
       >
         <div style={{ display: "flex", flexDirection: "column", maxWidth: 720 }}>
           <div style={{ display: "flex", fontSize: 28, fontWeight: 700, color: "#ea580c", marginBottom: 24 }}>
-            TigerTest
+            Tigertest
           </div>
           <div style={{ display: "flex", fontSize: 64, fontWeight: 800, lineHeight: 1.1, marginBottom: 24 }}>
             Free {exam.shortName} Practice Test

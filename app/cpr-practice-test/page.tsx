@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/cpr-practice-test`,
-    images: [{ url: "/og/cpr", width: 1200, height: 630, alt: "TigerTest free CPR practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/cpr", width: 1200, height: 630, alt: "Tigertest free CPR practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -44,7 +44,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free CPR, AED and First Aid Practice Tests",
+      name: "Tigertest - Free CPR, AED and First Aid Practice Tests",
       description,
       url: `${siteUrl}/cpr-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -75,7 +75,7 @@ const jsonLd = {
           name: "What score do I need to pass?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Most training providers require 84 percent or higher on the written portion, which is 21 of 25 questions on a typical 25-question exam. Some first aid only courses use a lower cutoff. TigerTest marks a pass at 84 percent so you practice against the stricter standard.",
+            text: "Most training providers require 84 percent or higher on the written portion, which is 21 of 25 questions on a typical 25-question exam. Some first aid only courses use a lower cutoff. Tigertest marks a pass at 84 percent so you practice against the stricter standard.",
           },
         },
         {
@@ -83,7 +83,7 @@ const jsonLd = {
           name: "Does passing a written test get me certified?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Every recognized CPR certification also requires a hands-on skills session where an instructor watches you perform compressions, breaths and AED use on a manikin. The written test is one part of the course. TigerTest prepares you for the written part only and is not affiliated with any training provider.",
+            text: "No. Every recognized CPR certification also requires a hands-on skills session where an instructor watches you perform compressions, breaths and AED use on a manikin. The written test is one part of the course. Tigertest prepares you for the written part only and is not affiliated with any training provider.",
           },
         },
         {
@@ -196,7 +196,7 @@ export default function CprLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("cpr", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -209,7 +209,7 @@ export default function CprLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make Tigertest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
@@ -252,7 +252,7 @@ export default function CprLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill the first aid recognition items</h3>
               <p>
-                FAST for stroke, chewed aspirin for a heart attack with no allergy or bleeding, epinephrine in the outer thigh for anaphylaxis, direct pressure then a tourniquet for severe bleeding, cool water not ice for burns, and nothing by mouth for anyone who is not fully alert. TigerTest tracks your accuracy by topic, so drill the questions you missed, retrain that test&apos;s set and retake until you clear 90 percent.
+                FAST for stroke, chewed aspirin for a heart attack with no allergy or bleeding, epinephrine in the outer thigh for anaphylaxis, direct pressure then a tourniquet for severe bleeding, cool water not ice for burns, and nothing by mouth for anyone who is not fully alert. Tigertest tracks your accuracy by topic, so drill the questions you missed, retrain that test&apos;s set and retake until you clear 90 percent.
               </p>
             </div>
           </div>
@@ -274,13 +274,13 @@ export default function CprLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What score do I need to pass?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Most training providers require 84 percent or higher on the written portion, which is 21 of 25 questions on a typical 25-question exam. Some first aid only courses use a lower cutoff. TigerTest marks a pass at 84 percent so you practice against the stricter standard.
+              Most training providers require 84 percent or higher on the written portion, which is 21 of 25 questions on a typical 25-question exam. Some first aid only courses use a lower cutoff. Tigertest marks a pass at 84 percent so you practice against the stricter standard.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does passing a written test get me certified?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. Every recognized CPR certification also requires a hands-on skills session where an instructor watches you perform compressions, breaths and AED use on a manikin. The written test is one part of the course. TigerTest prepares you for the written part only and is not affiliated with any training provider.
+              No. Every recognized CPR certification also requires a hands-on skills session where an instructor watches you perform compressions, breaths and AED use on a manikin. The written test is one part of the course. Tigertest prepares you for the written part only and is not affiliated with any training provider.
             </p>
           </div>
           <div>

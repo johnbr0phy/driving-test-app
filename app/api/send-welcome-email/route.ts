@@ -77,7 +77,7 @@ export async function POST(request: NextRequest) {
 
     const result = await sendEmail({
       to: email,
-      subject: "Welcome to TigerTest",
+      subject: "Welcome to Tigertest",
       html,
       kind: "transactional",
     });

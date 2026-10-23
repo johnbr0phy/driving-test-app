@@ -78,7 +78,7 @@ export interface QuizAdminPayload {
   };
   bySource: Record<QuizCreatedVia, number>;
   byVisibility: Record<QuizVisibility, number>;
-  /** Accounts that connected Claude or ChatGPT to TigerTest, and how many of them made a quiz. */
+  /** Accounts that connected Claude or ChatGPT to Tigertest, and how many of them made a quiz. */
   connector: {
     accounts: number;
     madeQuiz: number;

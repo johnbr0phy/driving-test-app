@@ -1,5 +1,5 @@
 /**
- * Registry of the non-DMV exams that run on the shared TigerTest
+ * Registry of the non-DMV exams that run on the shared Tigertest
  * flow (dashboard, tests, training, results debrief, drill, stats).
  *
  * Each exam is namespaced in the store by an ID range and a pseudo state

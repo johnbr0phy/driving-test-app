@@ -8,7 +8,7 @@ import { SCHOOL_KIND_LABELS, type SchoolKind } from "@/lib/schoolHosts";
 // collection (every class and its members) plus the analytics/teach counters
 // written by lib/teachTracking.ts (landing views, create-class clicks, class
 // link views), and the schoolReferrals hosts (lib/schoolReferral.ts): teachers
-// who posted a TigerTest link in an LMS without making a class. Classes made
+// who posted a Tigertest link in an LMS without making a class. Classes made
 // by internal accounts are left out.
 
 /** The day the analytics/teach counters started; earlier visits weren't counted. */

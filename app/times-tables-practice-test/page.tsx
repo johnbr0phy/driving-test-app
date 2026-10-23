@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/times-tables-practice-test`,
-    images: [{ url: "/og/timestables", width: 1200, height: 630, alt: "TigerTest free times tables practice" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/timestables", width: 1200, height: 630, alt: "Tigertest free times tables practice" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Which times tables should my child know by which year?",
-    a: "The national curriculum in England sets the order. In Year 2 children learn the 2, 5 and 10 times tables, in Year 3 the 3, 4 and 8 times tables, and by the end of Year 4 every table up to 12 × 12. The TigerTest drills follow exactly that order, so a Year 2 child can start at the top and stop when they reach the tables their class has not done yet.",
+    a: "The national curriculum in England sets the order. In Year 2 children learn the 2, 5 and 10 times tables, in Year 3 the 3, 4 and 8 times tables, and by the end of Year 4 every table up to 12 × 12. The Tigertest drills follow exactly that order, so a Year 2 child can start at the top and stop when they reach the tables their class has not done yet.",
   },
   {
     q: "What is the Multiplication Tables Check?",
@@ -72,7 +72,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free Times Tables Practice",
+      name: "Tigertest - Free Times Tables Practice",
       description,
       url: `${siteUrl}/times-tables-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -186,7 +186,7 @@ export default function TimesTablesLandingPage() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <Image src={getTigerAsset("timestables", 1)} alt="TigerTest mascot" width={180} height={180} className="w-32 md:w-44" />
+              <Image src={getTigerAsset("timestables", 1)} alt="Tigertest mascot" width={180} height={180} className="w-32 md:w-44" />
             </div>
           </div>
         </div>

@@ -30,7 +30,7 @@ export function QuizLandingContent({ quiz }: { quiz: QuizPublic }) {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">A TigerTest quiz by {quiz.ownerName}</p>
+          <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">A Tigertest quiz by {quiz.ownerName}</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight break-words">{quiz.title}</h1>
           <LandingIntro subtitle={quiz.description || `Practice ${total} ${total === 1 ? "question" : "questions"} in three ways: Practice, Test and Flashcards.`} action={start}>
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">

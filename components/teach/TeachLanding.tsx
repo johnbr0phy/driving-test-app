@@ -49,11 +49,11 @@ const SAMPLE_QUESTIONS: ClassQuestionRow[] = [
 const FAQ = [
   {
     q: "Is it really free?",
-    a: "Yes. Classes are free for teachers and students, with no limit on how many classes you make. TigerTest is paid for by optional upgrades on a few tests, never by your class.",
+    a: "Yes. Classes are free for teachers and students, with no limit on how many classes you make. Tigertest is paid for by optional upgrades on a few tests, never by your class.",
   },
   {
     q: "Do my students need accounts?",
-    a: "No. They open your link, type the name you know them by, and start practicing. If they already have a TigerTest account they can stay signed in.",
+    a: "No. They open your link, type the name you know them by, and start practicing. If they already have a Tigertest account they can stay signed in.",
   },
   {
     q: "What do I see?",
@@ -114,7 +114,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
             <Link href={newClass()} className={ctaClass}>Create a free class</Link>
             {!signedIn && (
               <Link href="/login?redirect=/teach" className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline">
-                Already teaching with TigerTest? Sign in
+                Already teaching with Tigertest? Sign in
               </Link>
             )}
           </div>
@@ -207,7 +207,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We&apos;re building this for instructors</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            We want to work with teachers to make TigerTest great for your class. Get in touch and tell us what you teach and what would help, and we&apos;ll build it with you.
+            We want to work with teachers to make Tigertest great for your class. Get in touch and tell us what you teach and what would help, and we&apos;ll build it with you.
           </p>
           <a
             href="https://johnbrophy.net/#contact"
@@ -223,7 +223,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
       {/* Every test */}
       <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">Works with every test on TigerTest</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">Works with every test on Tigertest</h2>
           <p className="text-gray-600 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto">
             Driver&apos;s ed, nursing and allied health programs, trade schools, test prep. Pick a test to start a class for it.
           </p>

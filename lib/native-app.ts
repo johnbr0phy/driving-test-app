@@ -1,5 +1,5 @@
 /**
- * Detects the TigerTest native mobile app (Capacitor shell in /mobile).
+ * Detects the Tigertest native mobile app (Capacitor shell in /mobile).
  *
  * The shell appends "TigerTestApp/<version> (<platform>)" to the WebView
  * user agent (see mobile/capacitor.config.ts), which lets the site adapt:

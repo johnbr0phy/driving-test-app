@@ -250,9 +250,9 @@ export async function answerQuizQuestion(uid: string, quiz: QuizDoc, questionId:
 async function playerName(uid: string): Promise<string> {
   try {
     const u = await getAdminAuth().getUser(uid);
-    return (u.displayName ?? u.email?.split('@')[0] ?? 'A TigerTest member').slice(0, 40);
+    return (u.displayName ?? u.email?.split('@')[0] ?? 'A Tigertest member').slice(0, 40);
   } catch {
-    return 'A TigerTest member';
+    return 'A Tigertest member';
   }
 }
 

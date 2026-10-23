@@ -1,6 +1,6 @@
 // Site-wide JSON-LD, rendered once in app/layout.tsx. Pages point at these
 // nodes by @id (publisher, isPartOf) so search and AI answer engines read one
-// TigerTest entity across the DMV pages and every exam, instead of a loose
+// Tigertest entity across the DMV pages and every exam, instead of a loose
 // Organization blob per page.
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -13,7 +13,7 @@ export const SITE_JSON_LD = {
     {
       "@type": "Organization",
       "@id": ORGANIZATION_ID,
-      name: "TigerTest",
+      name: "Tigertest",
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
       description:
@@ -24,7 +24,7 @@ export const SITE_JSON_LD = {
       "@type": "WebSite",
       "@id": WEBSITE_ID,
       url: siteUrl,
-      name: "TigerTest",
+      name: "Tigertest",
       publisher: { "@id": ORGANIZATION_ID },
       inLanguage: ["en-US", "es", "vi", "ko", "zh-Hans"],
     },

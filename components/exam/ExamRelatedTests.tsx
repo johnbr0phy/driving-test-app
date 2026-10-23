@@ -14,7 +14,7 @@ export function ExamRelatedTests({ examId }: { examId: string }) {
         Related practice tests
       </h2>
       <p className="text-gray-600 dark:text-gray-300 text-center mb-8">
-        Every test on TigerTest is free and needs no account to start.
+        Every test on Tigertest is free and needs no account to start.
       </p>
       <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {tests.map((test) => (

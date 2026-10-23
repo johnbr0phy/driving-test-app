@@ -7,7 +7,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 const title = `All Practice Tests: Browse ${TEST_CATALOG.length} Free Exams by Category`;
 const description =
-  "Browse every TigerTest practice test by category: DMV and CDL, nursing and healthcare, IT certs, trades, real estate, insurance, college entrance and more.";
+  "Browse every Tigertest practice test by category: DMV and CDL, nursing and healthcare, IT certs, trades, real estate, insurance, college entrance and more.";
 
 export const metadata: Metadata = {
   title,
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     title,
     description,
     url: `${siteUrl}/tests`,
-    siteName: "TigerTest",
+    siteName: "Tigertest",
     type: "website",
-    images: [{ url: "/og-tests.png", width: 1200, height: 630, alt: `TigerTest: ${TEST_CATALOG.length} free practice tests` }],
+    images: [{ url: "/og-tests.png", width: 1200, height: 630, alt: `Tigertest: ${TEST_CATALOG.length} free practice tests` }],
   },
   twitter: { card: "summary_large_image", title, description, images: ["/og-tests.png"] },
 };
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "TigerTest practice tests",
+  name: "Tigertest practice tests",
   itemListElement: TEST_CATALOG.map((t, i) => ({
     "@type": "ListItem",
     position: i + 1,

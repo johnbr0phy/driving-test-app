@@ -56,12 +56,12 @@ export async function generateMetadata({
   const rawPassing = Math.ceil(
     (state.writtenTestQuestions * state.passingScore) / 100
   );
-  const title = `${state.name} DMV Practice Test 2026 - Free Permit Practice | TigerTest`;
+  const title = `${state.name} DMV Practice Test 2026 - Free Permit Practice | Tigertest`;
   const description = `Pass your ${state.name} permit test on the first try. ${state.writtenTestQuestions} free practice questions based on the ${state.name} driver's manual. Start practicing now.`;
   const canonicalUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
 
   return {
-    // The string already carries the brand; skip the root layout's "%s | TigerTest" template.
+    // The string already carries the brand; skip the root layout's "%s | Tigertest" template.
     title: { absolute: title },
     description,
     alternates: {
@@ -86,13 +86,13 @@ export async function generateMetadata({
       description,
       type: "website",
       url: canonicalUrl,
-      siteName: "TigerTest",
+      siteName: "Tigertest",
       images: [
         {
           url: "/tiger.png",
           width: 512,
           height: 512,
-          alt: `${state.name} DMV Practice Test - TigerTest`,
+          alt: `${state.name} DMV Practice Test - Tigertest`,
         },
       ],
     },
@@ -133,7 +133,7 @@ export default async function StateDMVPracticeTestPage({
   const faqItems = [
     {
       question: `How many questions are on the ${state.name} permit test?`,
-      answer: `The ${state.name} ${state.dmvName} written knowledge test has ${state.writtenTestQuestions} questions. You need to answer at least ${rawPassing} correctly (${state.passingScore}%) to pass. TigerTest provides 200 practice questions to thoroughly prepare you.`,
+      answer: `The ${state.name} ${state.dmvName} written knowledge test has ${state.writtenTestQuestions} questions. You need to answer at least ${rawPassing} correctly (${state.passingScore}%) to pass. Tigertest provides 200 practice questions to thoroughly prepare you.`,
     },
     {
       question: `What score do I need to pass the ${state.name} DMV test?`,
@@ -175,7 +175,7 @@ export default async function StateDMVPracticeTestPage({
   const courseJsonLd = {
     "@context": "https://schema.org",
     "@type": ["WebApplication", "LearningResource"],
-    name: `${state.name} DMV Practice Test - TigerTest`,
+    name: `${state.name} DMV Practice Test - Tigertest`,
     description: `Free ${state.name} DMV practice test with 200 questions based on the official ${state.dmvName} driver's manual.`,
     url: `${siteUrl}/${state.slug}-dmv-practice-test`,
     inLanguage: "en-US",
@@ -188,12 +188,12 @@ export default async function StateDMVPracticeTestPage({
     dateModified: lastModifiedIso,
     author: {
       "@type": "Organization",
-      name: "TigerTest",
+      name: "Tigertest",
       url: siteUrl,
     },
     publisher: {
       "@type": "Organization",
-      name: "TigerTest",
+      name: "Tigertest",
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
     },
@@ -218,7 +218,7 @@ export default async function StateDMVPracticeTestPage({
     },
     supply: [
       { "@type": "HowToSupply", name: `${landingInfo.handbookName}` },
-      { "@type": "HowToSupply", name: "TigerTest practice questions" },
+      { "@type": "HowToSupply", name: "Tigertest practice questions" },
     ],
     step: [
       {
@@ -232,7 +232,7 @@ export default async function StateDMVPracticeTestPage({
         "@type": "HowToStep",
         position: 2,
         name: "Practice in training mode",
-        text: `Work through TigerTest's 200 ${state.name}-specific practice questions one at a time with instant feedback and explanations for every answer.`,
+        text: `Work through Tigertest's 200 ${state.name}-specific practice questions one at a time with instant feedback and explanations for every answer.`,
         url: `${siteUrl}/${state.slug}-dmv-practice-test`,
       },
       {
@@ -245,7 +245,7 @@ export default async function StateDMVPracticeTestPage({
         "@type": "HowToStep",
         position: 4,
         name: "Review every wrong answer",
-        text: "Re-read the explanation for any question you miss. TigerTest queues missed questions for spaced repetition so you study them more often.",
+        text: "Re-read the explanation for any question you miss. Tigertest queues missed questions for spaced repetition so you study them more often.",
       },
       {
         "@type": "HowToStep",
@@ -371,7 +371,7 @@ export default async function StateDMVPracticeTestPage({
             <strong>{state.writtenTestQuestions} multiple-choice questions</strong>{" "}
             and requires a <strong>{state.passingScore}% score</strong> ({rawPassing}{" "}
             correct) to pass. Applicants must be at least{" "}
-            <strong>{state.minPermitAge}</strong> years old. TigerTest offers 200
+            <strong>{state.minPermitAge}</strong> years old. Tigertest offers 200
             free practice questions drawn from the official{" "}
             {landingInfo.handbookName} so you pass on your first try.
           </p>
@@ -498,7 +498,7 @@ export default async function StateDMVPracticeTestPage({
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
                   Study the{" "}
                   <strong>{landingInfo.handbookName}</strong> to
-                  prepare for the written test. TigerTest&apos;s practice
+                  prepare for the written test. Tigertest&apos;s practice
                   questions are based on the material in this manual.
                 </p>
                 <a
@@ -581,7 +581,7 @@ export default async function StateDMVPracticeTestPage({
           </h2>
           <p className="text-brand-light text-lg mb-6">
             Join thousands of {state.name} drivers who passed on their first
-            try with TigerTest
+            try with Tigertest
           </p>
           <Button asChild
               size="lg"

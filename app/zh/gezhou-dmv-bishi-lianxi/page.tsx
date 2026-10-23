@@ -7,7 +7,7 @@ import { ZH_STATE_CODES } from "@/data/zhStates";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 export const metadata: Metadata = {
-  title: { absolute: "各州DMV笔试模拟考试 2026 - 免费 | TigerTest" },
+  title: { absolute: "各州DMV笔试模拟考试 2026 - 免费 | Tigertest" },
   description:
     "美国各州免费DMV驾照笔试模拟考试。根据各州官方驾驶手册编写，每州200道题。一次通过笔试。",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "各州DMV笔试模拟考试 2026 | TigerTest",
+    title: "各州DMV笔试模拟考试 2026 | Tigertest",
     description:
       "免费DMV驾照笔试模拟考试。每州200道题，每道题都能立即查看解析。",
     type: "website",
@@ -100,7 +100,7 @@ export default function ChinesePracticeTestsByStatePage() {
               href="/practice-tests-by-state"
               className="text-brand-dark hover:text-brand-darker font-medium underline"
             >
-              TigerTest英文页面
+              Tigertest英文页面
             </Link>
             查看全部50个州。各州可选择的考试语言可能会有变化，请向你所在州的DMV确认最新的语言选项。
           </p>
@@ -130,11 +130,11 @@ export default function ChinesePracticeTestsByStatePage() {
         {/* Summary Section */}
         <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-6 md:p-8 mb-12">
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-4">
-            关于TigerTest各州模拟考试
+            关于Tigertest各州模拟考试
           </h2>
           <div className="text-gray-600 dark:text-gray-300 space-y-3">
             <p>
-              每个州的交通法规、考试形式和及格分数线都不一样。TigerTest为
+              每个州的交通法规、考试形式和及格分数线都不一样。Tigertest为
               <strong>每个州提供200道题</strong>
               ，其中包括当地法规、限速等只适用于该州的规定。
             </p>

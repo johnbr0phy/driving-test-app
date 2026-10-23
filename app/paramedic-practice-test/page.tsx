@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/paramedic-practice-test`,
-    images: [{ url: "/og/paramedic", width: 1200, height: 630, alt: "TigerTest free Paramedic practice test" }],
-    siteName: "TigerTest",
+    images: [{ url: "/og/paramedic", width: 1200, height: 630, alt: "Tigertest free Paramedic practice test" }],
+    siteName: "Tigertest",
     type: "website",
   },
   twitter: {
@@ -45,7 +45,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free Paramedic Practice Tests",
+      name: "Tigertest - Free Paramedic Practice Tests",
       description,
       url: `${siteUrl}/paramedic-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -98,7 +98,7 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Is the TigerTest Paramedic practice test free?",
+          name: "Is the Tigertest Paramedic practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Yes. Both practice tests and all six drills are free, with no account required. Create a free account if you want your progress saved across devices.",
@@ -199,7 +199,7 @@ export default function ParamedicLandingPage() {
             <div className="flex-shrink-0">
               <Image
                 src={getTigerAsset("paramedic", 1)}
-                alt="TigerTest mascot"
+                alt="Tigertest mascot"
                 width={180}
                 height={180}
                 className="w-32 md:w-44"
@@ -214,7 +214,7 @@ export default function ParamedicLandingPage() {
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Teaching a Paramedic Program?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
-            Paramedic programs can assign TigerTest as a class for free: post one link, students join with just their name, and you see who practiced, their test scores and the domains your cohort misses most before the National Registry does.
+            Paramedic programs can assign Tigertest as a class for free: post one link, students join with just their name, and you see who practiced, their test scores and the domains your cohort misses most before the National Registry does.
           </p>
           <Link
             href="/teach"
@@ -253,7 +253,7 @@ export default function ParamedicLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain</h3>
               <p>
-                TigerTest tracks your accuracy by domain. The real exam is adaptive and ends when it is confident about you, so there is no room to be weak in a domain. Retake each drill until you clear 75 percent with room to spare, and sit Practice Test 2 only when the drills are green.
+                Tigertest tracks your accuracy by domain. The real exam is adaptive and ends when it is confident about you, so there is no room to be weak in a domain. Retake each drill until you clear 75 percent with room to spare, and sit Practice Test 2 only when the drills are green.
               </p>
             </div>
           </div>
@@ -291,7 +291,7 @@ export default function ParamedicLandingPage() {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest Paramedic practice test free?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest Paramedic practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
               Yes. Both practice tests and all six drills are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>

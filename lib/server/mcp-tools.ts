@@ -266,7 +266,7 @@ function quizFail(error: unknown, owner?: QuizOwner) {
     });
   }
   console.error('[mcp quiz]', error);
-  return fail('INTERNAL_ERROR', 'Something went wrong on the TigerTest side. Try again in a moment.');
+  return fail('INTERNAL_ERROR', 'Something went wrong on the Tigertest side. Try again in a moment.');
 }
 
 const quizCodeSchema = z
@@ -303,7 +303,7 @@ const QUIZ_WRITING_HINT =
 const tools: ToolEntry[] = [
   {
     name: 'list_in_progress_tests',
-    description: "Discover this person's signed-in TigerTest exams and custom quizzes from synced progress, using the site's In progress semantics. Start here when asked to quiz them on what they are studying. Ask them to choose when multiple are listed. Returns exact IDs, available practice and web-resume links. Guest-only/unsynced browser progress is unavailable.",
+    description: "Discover this person's signed-in Tigertest exams and custom quizzes from synced progress, using the site's In progress semantics. Start here when asked to quiz them on what they are studying. Ask them to choose when multiple are listed. Returns exact IDs, available practice and web-resume links. Guest-only/unsynced browser progress is unavailable.",
     register(server,ctx){server.registerTool(this.name,{description:this.description,inputSchema:{}},async()=>{const r=await listInProgressTests(ctx.userId);return r.ok?ok(r.data):fail(r.code,r.message);});},
   },
   {
@@ -332,7 +332,7 @@ const tools: ToolEntry[] = [
   {
     name: 'ping',
     description:
-      'Health check. Returns the authenticated user\'s UID and a timestamp. Use to verify the MCP connection works. Call list_in_progress_tests to discover the person\'s saved catalog exams and custom quizzes; start_study_practice supports catalog practice with shared account mastery. Existing tools support DMV permit test tutoring (list_states, get_progress, the training set and practice test tools) and quizzes, which turn the person\'s own material into a shareable TigerTest practice test (get_quiz_writing_guide, create_quiz, add_quiz_questions, list_my_quizzes, list_my_classes, get_quiz, update_quiz, delete_quiz, get_quiz_report).',
+      'Health check. Returns the authenticated user\'s UID and a timestamp. Use to verify the MCP connection works. Call list_in_progress_tests to discover the person\'s saved catalog exams and custom quizzes; start_study_practice supports catalog practice with shared account mastery. Existing tools support DMV permit test tutoring (list_states, get_progress, the training set and practice test tools) and quizzes, which turn the person\'s own material into a shareable Tigertest practice test (get_quiz_writing_guide, create_quiz, add_quiz_questions, list_my_quizzes, list_my_classes, get_quiz, update_quiz, delete_quiz, get_quiz_report).',
     register(server, ctx) {
       server.registerTool(
         'ping',
@@ -954,7 +954,7 @@ const tools: ToolEntry[] = [
   {
     name: 'get_quiz_writing_guide',
     description:
-      'The TigerTest rules for useful, coherent quizzes: establish missing audience, purpose, scope and source facts before writing; do not invent context or personal facts. Then research, write balanced questions and check the whole set. Call this before writing questions for create_quiz or add_quiz_questions.',
+      'The Tigertest rules for useful, coherent quizzes: establish missing audience, purpose, scope and source facts before writing; do not invent context or personal facts. Then research, write balanced questions and check the whole set. Call this before writing questions for create_quiz or add_quiz_questions.',
     register(server) {
       server.registerTool('get_quiz_writing_guide', { description: this.description, inputSchema: {} }, async () => ({
         content: [{ type: 'text', text: `${QUIZ_WRITING_GUIDE}\n\n${QUIZ_WRITING_EXAMPLE}` }],
@@ -964,7 +964,7 @@ const tools: ToolEntry[] = [
   {
     name: 'create_quiz',
     description:
-      `Call get_quiz_writing_guide first and follow it. Turns the person's own material (notes, a chapter, a syllabus, a term list, anything they paste or describe) into a TigerTest practice test they can play and share by link. ${QUIZ_WRITING_HINT} ` +
+      `Call get_quiz_writing_guide first and follow it. Turns the person's own material (notes, a chapter, a syllabus, a term list, anything they paste or describe) into a Tigertest practice test they can play and share by link. ${QUIZ_WRITING_HINT} ` +
       'Returns the quiz code and its links: `url` is the share landing page (show it to the person as the link to share), `dashboard` opens their modes and progress, `modes.practice` is the mastery training set that brings back what they miss, `modes.test` is a timed test over every question, `modes.flashcards` is flashcards, and `report` is where the creator sees who played and what they missed. ' +
       'On LIMIT_REACHED tell the person the limit from the message (they can delete a quiz, shorten this one, or get Premium); on INVALID_QUIZ fix the question named in the message and call again. ' +
       'For a class quiz (visibility "class"): on CLASS_REQUIRED ask which of the returned `classes` and call again with its classCode; on NO_CLASSES offer `makeClassUrl`. Tell the person students already in the class go straight in and anyone else is asked for the class code.',
@@ -1241,7 +1241,7 @@ const tools: ToolEntry[] = [
   {
     name: 'quiz_me',
     description:
-      'Start (or continue) quizzing the person and get the first question. `quiz` is a 6-character quiz code from a tigertest.io/q/<CODE> link, the word "dmv" for their DMV permit test, or a few words to search their own quizzes and the public library (e.g. "British phrases"). If the words match several quizzes, the result lists candidates and asks you to pick one by code. Then show the question with all four options on separate lines ("A. ...", "B. ...") and wait for the person to answer; send their letter to `answer`, which grades it and returns the next question, so you only need these two tools for a whole session. Missed questions come back until they are answered right; progress is saved to their TigerTest account and, for someone else\'s quiz, shows up on the creator\'s report.',
+      'Start (or continue) quizzing the person and get the first question. `quiz` is a 6-character quiz code from a tigertest.io/q/<CODE> link, the word "dmv" for their DMV permit test, or a few words to search their own quizzes and the public library (e.g. "British phrases"). If the words match several quizzes, the result lists candidates and asks you to pick one by code. Then show the question with all four options on separate lines ("A. ...", "B. ...") and wait for the person to answer; send their letter to `answer`, which grades it and returns the next question, so you only need these two tools for a whole session. Missed questions come back until they are answered right; progress is saved to their Tigertest account and, for someone else\'s quiz, shows up on the creator\'s report.',
     register(server, ctx) {
       server.registerTool(
         'quiz_me',
@@ -1312,7 +1312,7 @@ const tools: ToolEntry[] = [
   {
     name: 'find_quiz',
     description:
-      'Search the person\'s own quizzes and TigerTest\'s public library by words (title, topic, maker). Returns up to 10 matches with their codes, so you can offer a choice or pass a code to quiz_me. An empty query lists their own quizzes first, then popular public ones.',
+      'Search the person\'s own quizzes and Tigertest\'s public library by words (title, topic, maker). Returns up to 10 matches with their codes, so you can offer a choice or pass a code to quiz_me. An empty query lists their own quizzes first, then popular public ones.',
     register(server, ctx) {
       server.registerTool(
         'find_quiz',
@@ -1360,9 +1360,9 @@ function registerPrompts(server: McpServer): void {
   server.registerPrompt(
     'write_quiz',
     {
-      title: 'Write a TigerTest quiz',
+      title: 'Write a Tigertest quiz',
       description:
-        'First establish any missing audience, purpose, scope and reliable facts; ask focused follow-ups when material is too sparse. Then write a coherent practice test and save it with create_quiz. Includes the TigerTest question-writing rules.',
+        'First establish any missing audience, purpose, scope and reliable facts; ask focused follow-ups when material is too sparse. Then write a coherent practice test and save it with create_quiz. Includes the Tigertest question-writing rules.',
       argsSchema: {
         material: z.string().optional().describe('Source material and any audience, level, purpose, scope or length preferences already known. A short topic alone may need clarification before writing. Optional: reuse conversation context before asking for more.'),
       },

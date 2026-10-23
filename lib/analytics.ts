@@ -12,7 +12,7 @@ declare global {
 
 const PREMIUM_ITEM = {
   item_id: "tigertest_premium",
-  item_name: "TigerTest Premium",
+  item_name: "Tigertest Premium",
   price: 9.99,
   currency: "USD",
   quantity: 1,

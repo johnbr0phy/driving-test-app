@@ -181,7 +181,7 @@ export async function GET(request: NextRequest) {
           padding: "60px",
         }}
       >
-        {/* TigerTest branding */}
+        {/* Tigertest branding */}
         <div
           style={{
             display: "flex",

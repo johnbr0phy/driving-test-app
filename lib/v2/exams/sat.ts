@@ -36,6 +36,8 @@ export const SAT: ExamV2Config = {
       directions:
         "The questions in this section cover reading and writing skills. Each question has one or more passages. Read each passage and question carefully, then choose the best answer based on the passage. All questions are multiple choice with four choices and exactly one correct answer.",
       scale: curve(54, [[0, 200], [10, 330], [20, 450], [30, 540], [40, 630], [48, 710], [52, 770], [54, 800]], 30),
+      // Easier module 2: at most 16 + 27 = 43 correct, topping out near 610.
+      lowerScale: curve(54, [[0, 200], [10, 320], [20, 420], [30, 500], [38, 570], [43, 610], [54, 610]], 30),
       domains: ["craftStructure", "infoIdeas", "conventions", "expressionIdeas"],
     },
     {
@@ -51,6 +53,8 @@ export const SAT: ExamV2Config = {
       directions:
         "The questions in this section cover math skills. You may use the calculator for every question. Figures are drawn to scale unless noted. For student-produced response questions, type your answer: an integer, a decimal, or a fraction such as 3/4. Do not type symbols, units, or commas.",
       scale: curve(44, [[0, 200], [8, 350], [16, 450], [24, 540], [32, 630], [38, 710], [42, 770], [44, 800]], 30),
+      // Easier module 2: at most 13 + 22 = 35 correct, topping out near 610.
+      lowerScale: curve(44, [[0, 200], [8, 340], [16, 430], [24, 510], [30, 570], [35, 610], [44, 610]], 30),
       domains: ["algebra", "advancedMath", "dataAnalysis", "geometryTrig"],
     },
   ],
@@ -109,6 +113,6 @@ export const SAT: ExamV2Config = {
       "Goal hit. Go book your SAT.",
     ],
     sourceLine: "Original questions written to the digital SAT specifications. Not affiliated with College Board. Score estimates are unofficial.",
-    scoreNote: "Section scores are estimates from a typical conversion. Real scores vary by test form by about 30 points per section.",
+    scoreNote: "Section scores are estimates from a typical conversion. As on the real SAT, the easier second module caps a section near 610, so a strong first module matters. Real scores vary by test form by about 30 points per section.",
   },
 };

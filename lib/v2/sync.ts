@@ -1,7 +1,8 @@
-import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
+import { doc, getDoc, runTransaction } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { EMPTY_V2, V2Data, useV2Store } from "@/store/useV2Store";
 import { mergeV2, withoutExamV2 } from "./merge";
+import { assertMcpProgressRevision, captureMcpProgressRevision, throwIfMcpProgressConflict } from "@/lib/mcpProgressGuard";
 
 export { mergeV2 } from "./merge";
 
@@ -20,25 +21,28 @@ function clean<T>(value: T): T {
 const MAX_RESULTS = 40;
 
 export async function loadV2(uid: string): Promise<V2Data | null> {
+  throwIfMcpProgressConflict(uid, 'v2');
   const snap = await getDoc(doc(db, "users", uid));
+  captureMcpProgressRevision(uid, 'v2', snap.data());
   const v2 = snap.exists() ? (snap.data().v2 as Partial<V2Data> | undefined) : undefined;
   if (!v2) return null;
   return { ...EMPTY_V2, ...v2 };
 }
 
 export async function saveV2(uid: string, data: V2Data): Promise<void> {
+  throwIfMcpProgressConflict(uid, 'v2');
   const payload = clean({
     ...data,
     results: [...data.results].sort((a, b) => b.completedAt.localeCompare(a.completedAt)).slice(0, MAX_RESULTS),
     updatedAt: new Date().toISOString(),
   });
   const ref = doc(db, "users", uid);
-  try {
-    await updateDoc(ref, { v2: payload });
-  } catch {
-    // updateDoc needs the document to exist; a brand-new account may not have one yet.
-    await setDoc(ref, { v2: payload }, { merge: true });
-  }
+  await runTransaction(db, async (tx) => {
+    const snap = await tx.get(ref);
+    assertMcpProgressRevision(uid, 'v2', snap.data());
+    if (snap.exists()) tx.update(ref, { v2: payload });
+    else tx.set(ref, { v2: payload }, { merge: true });
+  });
 }
 
 /**

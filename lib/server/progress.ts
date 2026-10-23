@@ -1,3 +1,4 @@
+import { FieldValue as ProgressFieldValue } from 'firebase-admin/firestore';
 /*
  * Firestore user document shape — users/{uid}
  * Source of truth: store/useStore.ts → saveToFirestore() + loadUserData()
@@ -118,6 +119,8 @@
  */
 
 import { getAdminDb } from '@/lib/firebase-admin';
+import type { Firestore } from 'firebase-admin/firestore';
+import { getExamByStateCode, isExamQuestionId } from '@/lib/exams';
 import type { Question, TestSession, UserAnswer, Subscription } from '@/types';
 
 // ─── Internal Firestore document types ───────────────────────────────────────
@@ -542,43 +545,35 @@ export async function incrementDailyQuestionCount(
 
 export async function setSelectedState(
   userId: string,
-  stateCode: string
+  stateCode: string,
+  db: Firestore = getAdminDb()
 ): Promise<MutatorResult<{ selectedState: string }>> {
-  const db = getAdminDb();
   const userRef = db.collection('users').doc(userId);
-
-  const snap = await userRef.get();
-  const now = new Date().toISOString();
-
-  const emptyTraining: FirestoreTraining = {
-    questionsAnswered: [],
-    correctCount: 0,
-    incorrectCount: 0,
-    currentStreak: 0,
-    bestStreak: 0,
-    totalCorrectAllTime: 0,
-    masteredQuestionIds: [],
-    lastQuestionId: null,
-  };
-
-  const payload: Partial<FirestoreUserDoc> & { lastUpdated: string } = {
-    selectedState: stateCode,
-    currentTests: {},
-    completedTests: [],
-    testAttempts: [],
-    training: emptyTraining,
-    trainingSets: {},
-    trainingAnswerHistory: [],
-    lastUpdated: now,
-  };
-
-  if (!snap.exists) {
-    await userRef.set(payload, { merge: true });
-  } else {
-    await userRef.update(payload);
-  }
-
-  return { ok: true, data: { selectedState: stateCode } };
+  return db.runTransaction(async (tx) => {
+    const snap = await tx.get(userRef);
+    const data = (snap.data() ?? {}) as FirestoreUserDoc;
+    const now = new Date().toISOString();
+    // Match useStore.setSelectedState: only DMV progress is reset. Registry
+    // exams use IDs 101+ and pseudo state codes and must survive a DMV choice.
+    // Keep the read and filtered replacement atomic against another answer.
+    const payload = {
+      selectedState: stateCode,
+      currentTests: Object.fromEntries(Object.entries(data.currentTests ?? {}).filter(([id]) => Number(id) >= 101)),
+      completedTests: (data.completedTests ?? []).filter((test) => !!getExamByStateCode(test.state)),
+      testAttempts: (data.testAttempts ?? []).filter((attempt) => !!getExamByStateCode(attempt.state)),
+      training: {
+        questionsAnswered: [], correctCount: 0, incorrectCount: 0,
+        currentStreak: 0, bestStreak: 0, totalCorrectAllTime: 0,
+        masteredQuestionIds: [], lastQuestionId: null,
+      } satisfies FirestoreTraining,
+      trainingSets: Object.fromEntries(Object.entries(data.trainingSets ?? {}).filter(([id]) => Number(id) >= 101)),
+      trainingAnswerHistory: (data.trainingAnswerHistory ?? []).filter((answer) => isExamQuestionId(answer.questionId)),
+      lastUpdated: now,
+    };
+    if (snap.exists) tx.update(userRef, { ...payload, 'mcpProgressRevisions.catalog': ProgressFieldValue.increment(1) });
+    else tx.set(userRef, { ...payload, mcpProgressRevisions: { catalog: ProgressFieldValue.increment(1) } }, { merge: true });
+    return { ok: true as const, data: { selectedState: stateCode } };
+  });
 }
 
 export async function setLanguage(
@@ -592,9 +587,9 @@ export async function setLanguage(
   const now = new Date().toISOString();
 
   if (!snap.exists) {
-    await userRef.set({ language: lang, lastUpdated: now }, { merge: true });
+    await userRef.set({ language: lang, lastUpdated: now, mcpProgressRevisions: { catalog: ProgressFieldValue.increment(1) } }, { merge: true });
   } else {
-    await userRef.update({ language: lang, lastUpdated: now });
+    await userRef.update({ language: lang, lastUpdated: now, 'mcpProgressRevisions.catalog': ProgressFieldValue.increment(1) });
   }
 
   return { ok: true, data: { language: lang } };
@@ -628,6 +623,7 @@ export async function startTest(
 
   const now = new Date().toISOString();
   await userRef.update({
+    'mcpProgressRevisions.catalog': ProgressFieldValue.increment(1),
     [`currentTests.${testId}`]: {
       questions,
       answers: {},
@@ -657,6 +653,7 @@ export async function setTestAnswer(
 
   const now = new Date().toISOString();
   await userRef.update({
+    'mcpProgressRevisions.catalog': ProgressFieldValue.increment(1),
     [`currentTests.${testId}.answers.${questionIndex}`]: answer,
     lastUpdated: now,
   });
@@ -677,6 +674,7 @@ export async function clearCurrentTest(
 
   const now = new Date().toISOString();
   await userRef.update({
+    'mcpProgressRevisions.catalog': ProgressFieldValue.increment(1),
     [`currentTests.${testId}`]: FieldValue.delete(),
     lastUpdated: now,
   });
@@ -765,6 +763,7 @@ export async function completeTest(
         ];
 
     tx.update(userRef, {
+      'mcpProgressRevisions.catalog': ProgressFieldValue.increment(1),
       completedTests,
       testAttempts: updatedTestAttempts,
       [`currentTests.${testId}`]: FieldValue.delete(),
@@ -826,6 +825,7 @@ export async function answerTrainingSetQuestion(
     const historyEntry: FirestoreTrainingAnswerHistory = { questionId, isCorrect, answeredAt: now };
 
     tx.update(userRef, {
+      'mcpProgressRevisions.catalog': ProgressFieldValue.increment(1),
       [`trainingSets.${setId}`]: { masteredIds: newMasteredIds, wrongQueue: newWrongQueue },
       trainingAnswerHistory: [...(data.trainingAnswerHistory ?? []), historyEntry],
       lastUpdated: now,
@@ -856,6 +856,7 @@ export async function resetTrainingSet(
 
   const now = new Date().toISOString();
   await userRef.update({
+    'mcpProgressRevisions.catalog': ProgressFieldValue.increment(1),
     [`trainingSets.${setId}`]: { masteredIds: [], wrongQueue: [] },
     lastUpdated: now,
   });

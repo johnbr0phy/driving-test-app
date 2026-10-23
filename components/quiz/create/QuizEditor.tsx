@@ -4,10 +4,10 @@
 // description, visibility, pass mark and the question list, validated with
 // lib/quizzes.ts before it is sent to POST or PATCH /api/quizzes.
 
-import { useCallback, useMemo, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { Check, Plus } from "lucide-react";
+import { Check, Lock, Plus, Users, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useAuth } from "@/contexts/AuthContext";
@@ -33,6 +33,8 @@ export interface QuizEditorInitial {
   title: string;
   description: string;
   visibility: QuizVisibility;
+  /** visibility "class": the class it is shared with. */
+  classCode?: string;
   passPct: number;
   questions: (QuizQuestionInput & { id?: string })[];
 }
@@ -53,11 +55,24 @@ interface Props {
   featuredControl?: ReactNode;
 }
 
-const VISIBILITY_CHOICES: { value: QuizVisibility; name: string; hint: string }[] = [
-  { value: "private", name: "Private", hint: "Only you" },
-  { value: "link", name: "Link", hint: "Anyone with the link" },
-  { value: "public", name: "Public", hint: "Listed in the TigerTest library for anyone to play" },
+// Three choices on screen; "Everyone" is "link", or "public" with the library box ticked.
+type Audience = "everyone" | "me" | "class";
+const AUDIENCE_CHOICES: { value: Audience; name: string; hint: string; icon: ReactNode }[] = [
+  { value: "everyone", name: "Everyone", hint: "Anyone with the link", icon: <Globe className="w-4 h-4" aria-hidden="true" /> },
+  { value: "me", name: "Only me", hint: "Just for your own practice", icon: <Lock className="w-4 h-4" aria-hidden="true" /> },
+  { value: "class", name: "My class", hint: "Only students in one of your classes", icon: <Users className="w-4 h-4" aria-hidden="true" /> },
 ];
+
+function audienceOf(v: QuizVisibility): Audience {
+  return v === "private" ? "me" : v === "class" ? "class" : "everyone";
+}
+
+interface TeacherClass {
+  code: string;
+  name: string;
+  examName: string;
+  memberCount: number;
+}
 
 const fieldClass = "block text-sm font-medium text-gray-800 dark:text-gray-100 mb-1.5";
 const textareaClass =
@@ -98,6 +113,10 @@ export function QuizEditor({ mode, code, initial, createdVia = "web", children, 
   const [title, setTitle] = useState(initial.title);
   const [description, setDescription] = useState(initial.description);
   const [visibility, setVisibility] = useState<QuizVisibility>(initial.visibility);
+  const [classCode, setClassCode] = useState(initial.classCode ?? "");
+  // The teacher's /teach classes, for the "My class" picker (null while loading).
+  const [classes, setClasses] = useState<TeacherClass[] | null>(null);
+  const audience = audienceOf(visibility);
   const [passPct, setPassPct] = useState(String(initial.passPct));
   const [questions, setQuestions] = useState<DraftQuestion[]>(() =>
     initial.questions.length ? initial.questions.map(toDraft) : Array.from({ length: QUIZ_MIN_QUESTIONS }, blankDraft),
@@ -105,6 +124,29 @@ export function QuizEditor({ mode, code, initial, createdVia = "web", children, 
   const [error, setError] = useState<{ message: string; key?: string; upgrade?: boolean } | null>(null);
   const [busy, setBusy] = useState(false);
   const [saved, setSaved] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!user) return;
+    let alive = true;
+    quizFetch<{ classes: TeacherClass[] }>(user, "/api/classes")
+      .then((r) => alive && setClasses(r.classes))
+      .catch(() => alive && setClasses([]));
+    return () => {
+      alive = false;
+    };
+  }, [user]);
+
+  // Picking "My class" with one class picks it; a class that is gone falls back to the first.
+  useEffect(() => {
+    if (audience !== "class" || !classes?.length) return;
+    if (!classes.some((c) => c.code === classCode)) setClassCode(classes[0].code);
+  }, [audience, classes, classCode]);
+
+  const chooseAudience = (a: Audience) => {
+    if (a === "me") setVisibility("private");
+    else if (a === "class") setVisibility("class");
+    else setVisibility(visibility === "public" ? "public" : "link");
+  };
 
   const topics = useMemo(() => quizTopics(questions.map((q) => ({ topic: q.topic.trim() || undefined }))), [questions]);
 
@@ -154,6 +196,7 @@ export function QuizEditor({ mode, code, initial, createdVia = "web", children, 
     setError(null);
 
     if (!title.trim()) return setError({ message: "Give the quiz a title" });
+    if (visibility === "class" && !classCode) return setError({ message: "Make a class first, or choose Everyone or Only me" });
     if (questions.length < QUIZ_MIN_QUESTIONS) return setError({ message: `A quiz needs at least ${QUIZ_MIN_QUESTIONS} questions` });
     if (questions.length > limits.questions) {
       return setError({
@@ -190,6 +233,7 @@ export function QuizEditor({ mode, code, initial, createdVia = "web", children, 
       description: description.trim(),
       questions: payload,
       visibility,
+      ...(visibility === "class" ? { classCode } : {}),
       passPct: Number(passPct) || QUIZ_DEFAULT_PASS_PCT,
     };
 
@@ -267,8 +311,8 @@ export function QuizEditor({ mode, code, initial, createdVia = "web", children, 
         <fieldset>
           <legend className={fieldClass}>Who can play it</legend>
           <div className="grid sm:grid-cols-3 gap-2">
-            {VISIBILITY_CHOICES.map((c) => {
-              const checked = visibility === c.value;
+            {AUDIENCE_CHOICES.map((c) => {
+              const checked = audience === c.value;
               return (
                 <label
                   key={c.value}
@@ -283,15 +327,71 @@ export function QuizEditor({ mode, code, initial, createdVia = "web", children, 
                     name="quiz-visibility"
                     value={c.value}
                     checked={checked}
-                    onChange={() => setVisibility(c.value)}
+                    onChange={() => chooseAudience(c.value)}
                     className="sr-only"
                   />
-                  <span className="block text-sm font-semibold text-gray-900 dark:text-gray-50">{c.name}</span>
+                  <span className="flex items-center gap-1.5 text-sm font-semibold text-gray-900 dark:text-gray-50">
+                    {c.icon}
+                    {c.name}
+                  </span>
                   <span className="block text-xs text-gray-600 dark:text-gray-300">{c.hint}</span>
                 </label>
               );
             })}
           </div>
+          {audience === "everyone" && (
+            <label className="mt-3 flex items-start gap-2 text-sm text-gray-800 dark:text-gray-100">
+              <input
+                type="checkbox"
+                checked={visibility === "public"}
+                onChange={(e) => setVisibility(e.target.checked ? "public" : "link")}
+                className="mt-0.5 h-4 w-4 accent-gray-900 dark:accent-gray-50"
+              />
+              <span>
+                Also list it in the{" "}
+                <Link href="/quizzes" className="underline">
+                  Tigertest library
+                </Link>
+                <span className="block text-xs text-gray-600 dark:text-gray-300">Anyone browsing quizzes can find and play it.</span>
+              </span>
+            </label>
+          )}
+          {audience === "class" && (
+            <div className="mt-3">
+              {classes === null ? (
+                <p className="text-sm text-gray-500 dark:text-gray-400">Loading your classes...</p>
+              ) : classes.length === 0 ? (
+                <p className="text-sm text-gray-700 dark:text-gray-200">
+                  You don&apos;t have a class yet.{" "}
+                  <Link href="/teach/new" className="underline font-medium">
+                    Make a class
+                  </Link>{" "}
+                  (free), then come back and pick it here.
+                </p>
+              ) : (
+                <>
+                  <label htmlFor="quiz-class" className="block text-sm text-gray-700 dark:text-gray-200 mb-1.5">
+                    Which class
+                  </label>
+                  <select
+                    id="quiz-class"
+                    value={classCode}
+                    onChange={(e) => setClassCode(e.target.value)}
+                    className="w-full sm:max-w-sm rounded-md border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 py-2 text-base md:text-sm text-gray-900 dark:text-gray-50"
+                  >
+                    {classes.map((c) => (
+                      <option key={c.code} value={c.code}>
+                        {c.name} ({c.memberCount} {c.memberCount === 1 ? "student" : "students"})
+                      </option>
+                    ))}
+                  </select>
+                  <p className="mt-1.5 text-xs text-gray-600 dark:text-gray-300">
+                    Students already in the class open the link and go straight in. Anyone else is asked for the class code.
+                  </p>
+                </>
+              )}
+            </div>
+          )}
           {featuredControl}
         </fieldset>
 

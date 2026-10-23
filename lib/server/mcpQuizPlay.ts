@@ -110,13 +110,21 @@ export async function getPlayState(uid: string, code: string, db: Firestore = ge
   return (await readProgress(uid, code, db)).state;
 }
 
-/** The quiz if the caller may play it: public or link quizzes for anyone, private ones for the owner. */
-export async function loadPlayableQuiz(uid: string, rawCode: string, db: Firestore = getAdminDb()): Promise<{ quiz: QuizDoc } | { error: 'QUIZ_NOT_FOUND' | 'QUIZ_PRIVATE' }> {
+export type PlayableQuizError = 'QUIZ_NOT_FOUND' | 'QUIZ_PRIVATE' | 'QUIZ_CLASS_ONLY';
+
+/**
+ * The quiz if the caller may play it: public or link quizzes for anyone,
+ * private and class ones for the owner. A class quiz's students prove they
+ * are in the class from their browser (lib/server/quizAccess.ts), which an
+ * assistant cannot, so they play it on the site.
+ */
+export async function loadPlayableQuiz(uid: string, rawCode: string, db: Firestore = getAdminDb()): Promise<{ quiz: QuizDoc } | { error: PlayableQuizError }> {
   const code = normalizeQuizCode(rawCode);
   if (!isQuizCode(code)) return { error: 'QUIZ_NOT_FOUND' };
   const quiz = await getQuiz(code, db);
   if (!quiz) return { error: 'QUIZ_NOT_FOUND' };
   if (quiz.visibility === 'private' && quiz.ownerUid !== uid) return { error: 'QUIZ_PRIVATE' };
+  if (quiz.visibility === 'class' && quiz.ownerUid !== uid) return { error: 'QUIZ_CLASS_ONLY' };
   return { quiz };
 }
 

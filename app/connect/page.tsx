@@ -46,6 +46,10 @@ const faqs = [
     q: "Can I edit a quiz afterwards?",
     a: "Yes, at tigertest.io/create. Edit, share or delete it there, no chat needed.",
   },
+  {
+    q: "Can I limit who plays my quiz?",
+    a: "Yes. Pick Everyone (anyone with the link, and you can list it in the library), Only me, or My class. Teachers can share a quiz with just one of their Tigertest classes: say \"share it with my class\" in the chat. Students already in the class go straight in; anyone else needs the class code.",
+  },
 ];
 
 const jsonLd = {
@@ -345,7 +349,7 @@ export default function ConnectPage() {
               What the connector can see
             </h2>
             <p className="text-gray-300 leading-relaxed">
-              Only your own quizzes and progress, plus quizzes shared with you. It runs as your TigerTest account, and you can remove it anytime.
+              Only your own quizzes and progress, the names of your classes, plus quizzes shared with you. It runs as your TigerTest account, and you can remove it anytime.
             </p>
           </section>
 

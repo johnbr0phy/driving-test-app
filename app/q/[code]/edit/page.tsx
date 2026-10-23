@@ -134,6 +134,7 @@ export default function EditQuizPage() {
               title: quiz.title,
               description: quiz.description,
               visibility: quiz.visibility,
+              classCode: quiz.classCode,
               passPct: quiz.passPct,
               questions: quiz.questions,
             }}

@@ -34,7 +34,7 @@ export function QuizLandingContent({ quiz }: { quiz: QuizPublic }) {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight break-words">{quiz.title}</h1>
           <LandingIntro subtitle={quiz.description || `Practice ${total} ${total === 1 ? "question" : "questions"} in three ways: Practice, Test and Flashcards.`} action={start}>
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
-              {total} {total === 1 ? "question" : "questions"} · {quiz.visibility === "private" ? "Private to the creator" : "Free to play, no account needed"}
+              {total} {total === 1 ? "question" : "questions"} · {quiz.visibility === "private" ? "Private to the creator" : quiz.visibility === "class" ? `For ${quiz.className || "a class"}, no account needed` : "Free to play, no account needed"}
             </p>
             {preview && (
               <div className="mt-12 mx-auto max-w-xl rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6 md:p-8 shadow-lg text-left">

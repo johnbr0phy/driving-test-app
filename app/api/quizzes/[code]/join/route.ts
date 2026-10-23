@@ -2,11 +2,14 @@ import { NextRequest, NextResponse } from "next/server";
 import { FieldValue } from "firebase-admin/firestore";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { cleanName, isMemberId } from "@/lib/classes";
-import { QUIZ_MAX_MEMBERS, isQuizCode, normalizeQuizCode } from "@/lib/quizzes";
+import { QUIZ_MAX_MEMBERS, isQuizCode, normalizeQuizCode, type QuizDoc } from "@/lib/quizzes";
+import { isClassMember } from "@/lib/server/quizAccess";
 
 // A player gives a name on the quiz page and becomes a member (same shape as
 // a class member, lib/classes.ts), so the creator's report lists them.
-// Joining again from the same browser renames them.
+// Joining again from the same browser renames them. A class quiz takes only
+// students of its class: the body carries the browser's `classMemberId` for
+// that class (lib/server/quizAccess.ts).
 export async function POST(request: NextRequest, { params }: { params: Promise<{ code: string }> }) {
   const code = normalizeQuizCode((await params).code);
   const body = await request.json().catch(() => ({}));
@@ -16,6 +19,10 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
 
   const db = getAdminDb();
   const quizRef = db.collection("quizzes").doc(code);
+  const quizDoc = (await quizRef.get()).data() as QuizDoc | undefined;
+  if (quizDoc?.visibility === "class" && !(await isClassMember(quizDoc.classCode ?? "", body.classMemberId, db))) {
+    return NextResponse.json({ error: "Join the class first", classOnly: true }, { status: 403 });
+  }
   const memberRef = quizRef.collection("members").doc(body.memberId);
   const result = await db.runTransaction(async (tx) => {
     const [quiz, member] = await Promise.all([tx.get(quizRef), tx.get(memberRef)]);

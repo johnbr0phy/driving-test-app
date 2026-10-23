@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
     const quiz = await createQuiz(auth.owner, { ...body, createdVia });
     return NextResponse.json({ code: quiz.code, quiz: quizSummary(quiz) });
   } catch (error) {
-    if (error instanceof QuizError) return NextResponse.json({ error: error.message }, { status: error.status });
+    if (error instanceof QuizError) return NextResponse.json({ error: error.message, ...(error.reason ? { reason: error.reason } : {}) }, { status: error.status });
     throw error;
   }
 }

@@ -64,13 +64,6 @@ export default async function QuizzesPage() {
           >
             <Plus className="w-4 h-4" aria-hidden="true" /> Make your own
           </Link>
-          <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-            Or do it from a chat:{" "}
-            <Link href="/connect" className="underline">
-              use TigerTest in ChatGPT and Claude
-            </Link>
-            .
-          </p>
         </div>
       </div>
     </div>

@@ -54,6 +54,9 @@ const nextConfig: NextConfig = {
       // bookmarks) keep working and their query strings carry over.
       { source: "/dashboard", destination: "/dmv/dashboard", permanent: false },
       { source: "/onboarding/select-state", destination: "/dmv/dashboard", permanent: false },
+      // Connector setup and the quiz maker are one page now; #add-to-claude
+      // and #add-to-chatgpt anchors survive the redirect.
+      { source: "/connect", destination: "/create", permanent: true },
       {
         source: "/questions",
         destination: "/stats",

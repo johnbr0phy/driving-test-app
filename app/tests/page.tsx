@@ -64,8 +64,7 @@ export default function TestsHubPage() {
             Make a quiz
           </Link>
           <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-            <Link href="/quizzes" className="underline">Browse quizzes members made</Link> or{" "}
-            <Link href="/connect" className="underline">use TigerTest in ChatGPT and Claude</Link>.
+            <Link href="/quizzes" className="underline">Browse quizzes members made</Link>.
           </p>
         </div>
 

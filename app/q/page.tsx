@@ -63,7 +63,6 @@ export default function QuizIndexPage() {
           <div className="flex flex-wrap gap-3 text-sm">
             <Link href="/create" className="underline text-gray-900 dark:text-gray-50">Make a quiz</Link>
             <Link href="/quizzes" className="underline text-gray-700 dark:text-gray-200">Browse the library</Link>
-            <Link href="/connect" className="underline text-gray-700 dark:text-gray-200">Use it in ChatGPT or Claude</Link>
           </div>
         </div>
       </div>

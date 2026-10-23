@@ -4,7 +4,7 @@ import { join } from "path";
 
 export const runtime = "nodejs";
 
-// Open Graph / Twitter card for /connect: the headline beside a small chat
+// Open Graph / Twitter card for /create (the route keeps its old /connect name): the headline beside a small chat
 // where a pasted PDF becomes a TigerTest quiz link, like the page's hero.
 // A static segment, so it wins over /og/[examId].
 

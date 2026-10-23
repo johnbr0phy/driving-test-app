@@ -47,7 +47,7 @@ ${QUIZ_CONTEXT_GUIDANCE}
 - Re-read every item asking "could a well-prepared person defend a different option?" Fix or drop any where the answer is yes.
 - Check that no two stems ask the same thing and no option appears twice in one question.
 - Check the letter rotation and that the correct option is not the longest in more than a quarter of items.
-- Suggest a title under 60 characters and a one-sentence description. Default visibility is "link" (anyone with the link). Offer "public" if the person wants it in the TigerTest library, and "private" if it is only for them.
+- Suggest a title under 60 characters and a one-sentence description. Default visibility is "link" (anyone with the link). Offer "public" if the person wants it in the TigerTest library, "private" if it is only for them, and "class" if it is for their students (a teacher with a Tigertest class: list_my_classes gives the classCode).
 
 ## 5. After
 

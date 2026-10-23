@@ -23,6 +23,7 @@ import {
   type QuizSummary,
   type QuizVisibility,
 } from "@/lib/quizzes";
+import { classExamNameById, cleanName, isClassCode, normalizeClassCode } from "@/lib/classes";
 import type { ClassQuestionDisplay } from "@/lib/server/classQuestions";
 import type { ReportSubject } from "@/lib/server/classReport";
 
@@ -33,9 +34,49 @@ import type { ReportSubject } from "@/lib/server/classReport";
 // and one made on /create go through exactly the same checks.
 
 export class QuizError extends Error {
-  constructor(message: string, public status: number = 400) {
+  /** `reason` "CLASS_REQUIRED" / "NO_CLASSES": a class quiz needs a class picked (the MCP tools pass the class list on). */
+  constructor(message: string, public status: number = 400, public reason?: string, public classes?: QuizClassChoice[]) {
     super(message);
   }
+}
+
+/** One of the owner's /teach classes, as the class picker and the MCP tools show it. */
+export interface QuizClassChoice {
+  code: string;
+  name: string;
+  examName: string;
+  memberCount: number;
+}
+
+/** The owner's classes, newest first. */
+export async function listOwnerClasses(uid: string, db: Firestore = getAdminDb()): Promise<QuizClassChoice[]> {
+  const snap = await db.collection("classes").where("teacherUid", "==", uid).get();
+  return snap.docs
+    .map((d) => d.data())
+    .sort((a, b) => String(b.createdAt ?? "").localeCompare(String(a.createdAt ?? "")))
+    .map((c) => ({ code: c.code, name: c.name, examName: classExamNameById(c.examId, c.state), memberCount: c.memberCount ?? 0 }));
+}
+
+/**
+ * The class fields a "class" quiz stores: the named class if the owner
+ * teaches it, else the one already set, else the owner's only class. Throws
+ * when there is no class or the choice is ambiguous.
+ */
+async function classFields(db: Firestore, ownerUid: string, rawCode: unknown, keep?: string): Promise<{ classCode: string; className: string; classTeacherName: string }> {
+  const wanted = typeof rawCode === "string" && rawCode.trim() ? normalizeClassCode(rawCode) : keep;
+  if (wanted) {
+    if (!isClassCode(wanted)) throw new QuizError(`"${String(rawCode)}" is not a class code`);
+    const snap = await db.collection("classes").doc(wanted).get();
+    if (!snap.exists || snap.data()?.teacherUid !== ownerUid) {
+      throw new QuizError("You can only share a quiz with a class you teach", 403, "CLASS_REQUIRED", await listOwnerClasses(ownerUid, db));
+    }
+    const c = snap.data()!;
+    return { classCode: wanted, className: cleanName(c.name), classTeacherName: cleanName(c.teacherName) };
+  }
+  const classes = await listOwnerClasses(ownerUid, db);
+  if (!classes.length) throw new QuizError("Make a class first at tigertest.io/teach/new, then share the quiz with it", 400, "NO_CLASSES", []);
+  if (classes.length > 1) throw new QuizError("Pick which class to share the quiz with", 400, "CLASS_REQUIRED", classes);
+  return classFields(db, ownerUid, classes[0].code);
 }
 
 export interface QuizOwner {
@@ -82,6 +123,8 @@ export interface CreateQuizInput {
   description?: unknown;
   questions: unknown;
   visibility?: unknown;
+  /** visibility "class": which of the owner's classes (optional when they have one). */
+  classCode?: unknown;
   passPct?: unknown;
   createdVia: QuizCreatedVia;
 }
@@ -94,6 +137,7 @@ export async function createQuiz(owner: QuizOwner, input: CreateQuizInput, db: F
   if (!validated.ok) throw new QuizError(validated.error);
   if (validated.questions.length < QUIZ_MIN_QUESTIONS) throw new QuizError(`A quiz needs at least ${QUIZ_MIN_QUESTIONS} questions`);
   const visibility: QuizVisibility = isQuizVisibility(input.visibility) ? input.visibility : "link";
+  const cls = visibility === "class" ? await classFields(db, owner.uid, input.classCode) : null;
 
   const mine = await db.collection("quizzes").where("ownerUid", "==", owner.uid).count().get();
   if (mine.data().count >= limits.quizzes) {
@@ -126,6 +170,7 @@ export async function createQuiz(owner: QuizOwner, input: CreateQuizInput, db: F
       memberCount: 0,
       reports: 0,
       nextQuestionId: next,
+      ...(cls ?? {}),
     };
     try {
       // A create cannot contain FieldValue.delete(); non-public quizzes simply omit the rank.
@@ -147,6 +192,8 @@ export interface UpdateQuizInput {
   /** Appends to the existing questions. */
   addQuestions?: unknown;
   visibility?: unknown;
+  /** visibility "class": which of the owner's classes; kept when omitted. */
+  classCode?: unknown;
   passPct?: unknown;
 }
 
@@ -154,6 +201,14 @@ export interface UpdateQuizInput {
 export async function updateQuiz(owner: QuizOwner, code: string, input: UpdateQuizInput, db: Firestore = getAdminDb()): Promise<QuizDoc> {
   const limits = quizLimits(owner.isPremium);
   const ref = db.collection("quizzes").doc(code);
+  // The class is checked before the transaction (a class read inside it would only add contention).
+  const before = await getQuiz(code, db);
+  if (!before || before.ownerUid !== owner.uid) throw new QuizError("Not your quiz", 403);
+  const nextVisibility = isQuizVisibility(input.visibility) ? input.visibility : before.visibility;
+  const cls =
+    nextVisibility === "class" && (input.visibility !== undefined || input.classCode !== undefined)
+      ? await classFields(db, owner.uid, input.classCode, before.classCode)
+      : null;
   return db.runTransaction(async (tx) => {
     const snap = await tx.get(ref);
     if (!snap.exists || snap.data()?.ownerUid !== owner.uid) throw new QuizError("Not your quiz", 403);
@@ -202,11 +257,22 @@ export async function updateQuiz(owner: QuizOwner, code: string, input: UpdateQu
     const visibility = isQuizVisibility(input.visibility) ? input.visibility : current.visibility;
     if (visibility !== current.visibility) update.visibility = visibility;
     Object.assign(update, rankFields(visibility, current.plays ?? 0));
+    if (visibility === "class") {
+      if (cls) Object.assign(update, cls);
+    } else if (current.classCode) {
+      Object.assign(update, { classCode: FieldValue.delete(), className: FieldValue.delete(), classTeacherName: FieldValue.delete() });
+    }
 
     tx.update(ref, update);
     const rest = { ...update };
     delete rest.publicRank;
-    return { ...current, ...(rest as Partial<QuizDoc>) };
+    const out = { ...current, ...(rest as Partial<QuizDoc>) };
+    if (visibility !== "class") {
+      delete out.classCode;
+      delete out.className;
+      delete out.classTeacherName;
+    }
+    return out;
   });
 }
 

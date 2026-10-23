@@ -35,6 +35,10 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
   const [canShare, setCanShare] = useState(false);
 
   useEffect(() => {
+    if (state.joinedAs) setMembership(quizMembership(code));
+  }, [state.joinedAs, code]);
+
+  useEffect(() => {
     setMembership(quizMembership(code));
     try {
       setAnonymous(sessionStorage.getItem(anonKey(code)) === "1");
@@ -202,9 +206,12 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
                     Playing as <span className="font-semibold">{membership.name}</span>
                   </p>
                 </div>
-                <button type="button" onClick={leave} className="text-sm underline text-gray-600 dark:text-gray-300 shrink-0">
-                  Leave
-                </button>
+                {/* A class quiz's students are its players by being in the class. */}
+                {quiz.visibility !== "class" && (
+                  <button type="button" onClick={leave} className="text-sm underline text-gray-600 dark:text-gray-300 shrink-0">
+                    Leave
+                  </button>
+                )}
               </div>
             ) : (
               <form onSubmit={join}>
@@ -243,8 +250,19 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
         )}
 
         <div className={`${card} p-5`}>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">{quiz.visibility === "private" ? "Private quiz: only you can open this link" : "Share this quiz"}</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">
+            {quiz.visibility === "private"
+              ? "Private quiz: only you can open this link"
+              : quiz.visibility === "class"
+                ? `Only students in ${quiz.className || "your class"} can open this link`
+                : "Share this quiz"}
+          </p>
           <p className="font-mono text-sm text-gray-900 dark:text-gray-50 mb-3 break-all">{quizLink(code)}</p>
+          {mine && quiz.visibility === "class" && quiz.classCode && (
+            <p className="text-xs text-gray-600 dark:text-gray-300 -mt-2 mb-3">
+              Students already in the class go straight in. New ones type the class code <span className="font-mono font-semibold">{quiz.classCode}</span> on the link.
+            </p>
+          )}
           <div className="flex flex-wrap gap-2">
             <button
               type="button"
@@ -267,7 +285,7 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
         </div>
 
         <p className="text-xs text-gray-500 dark:text-gray-400">
-          Free to play, no account needed. Made with TigerTest; <Link href="/create" className="underline">make your own quiz</Link>.
+          {quiz.visibility === "class" ? "No account needed." : "Free to play, no account needed."} Made with TigerTest; <Link href="/create" className="underline">make your own quiz</Link>.
         </p>
       </div>
     </div>

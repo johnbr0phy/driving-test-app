@@ -1,10 +1,33 @@
 import { FieldValue, type DocumentReference, type Firestore } from "firebase-admin/firestore";
-import type { ClassAnswerEvent, ClassTestEvent } from "@/lib/classes";
+import { MAX_CLASS_MEMBERS, type ClassAnswerEvent, type ClassTestEvent } from "@/lib/classes";
 
 // A member's practice batch, applied to classes/{code}/members/{memberId} or
 // quizzes/{code}/members/{memberId}: the two share one member shape so the
 // class report (lib/server/classReport.ts) reads either. Only a browser that
 // holds the memberId can write to that member, and the member must exist.
+
+/**
+ * A student joins classes/{code} with a name and their browser's memberId
+ * (a rename when that browser already joined). Used by the class link and by
+ * a class-only quiz's join card. Returns an error message, or null.
+ */
+export async function joinClassMember(db: Firestore, code: string, memberId: string, name: string): Promise<{ status: number; error?: string }> {
+  const classRef = db.collection("classes").doc(code);
+  const memberRef = classRef.collection("members").doc(memberId);
+  return db.runTransaction(async (tx) => {
+    const [cls, member] = await Promise.all([tx.get(classRef), tx.get(memberRef)]);
+    if (!cls.exists) return { status: 404, error: "No such class" };
+    if (member.exists) {
+      tx.update(memberRef, { name });
+      return { status: 200 };
+    }
+    if ((cls.data()?.memberCount ?? 0) >= MAX_CLASS_MEMBERS) return { status: 400, error: "This class is full" };
+    const now = new Date().toISOString();
+    tx.create(memberRef, { name, joinedAt: now, lastActive: now, answered: 0, correct: 0, byCategory: {}, missed: {}, tests: {} });
+    tx.update(classRef, { memberCount: FieldValue.increment(1) });
+    return { status: 200 };
+  });
+}
 
 export const MAX_PROGRESS_ANSWERS = 200;
 export const MAX_PROGRESS_TESTS = 5;

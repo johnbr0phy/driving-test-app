@@ -50,8 +50,15 @@ export const QUIZ_LIMITS = {
   premium: { quizzes: 100, questions: 200 },
 } as const;
 
-export type QuizVisibility = "private" | "link" | "public";
-export const QUIZ_VISIBILITIES: QuizVisibility[] = ["private", "link", "public"];
+/**
+ * Who can play a quiz. "link" (the default) and "public" are both "Everyone"
+ * on the edit page, public with "Also list it in the library" ticked;
+ * "private" is "Only me"; "class" is "My class": only the owner and browsers
+ * that joined the quiz's class (`classCode`, one of the owner's /teach
+ * classes) can open it, checked on the server by lib/server/quizAccess.ts.
+ */
+export type QuizVisibility = "private" | "link" | "public" | "class";
+export const QUIZ_VISIBILITIES: QuizVisibility[] = ["private", "link", "public", "class"];
 export type QuizCreatedVia = "web" | "mcp" | "import";
 
 export interface QuizQuestion {
@@ -94,6 +101,10 @@ export interface QuizDoc {
   publicRank?: number;
   /** Set by a site admin: listed in the library and the sitemap before QUIZ_PUBLIC_MIN_PLAYS plays, and shown first. */
   featured?: boolean;
+  /** visibility "class" only: the owner's class (classes/{code}) whose students may play it, with its name and teacher name copied in for display. */
+  classCode?: string;
+  className?: string;
+  classTeacherName?: string;
 }
 
 /** What the play page gets (never the owner's uid). */
@@ -113,6 +124,18 @@ export interface QuizPublic {
   /** True when the caller is the owner (owner-only fields are then included). */
   mine?: boolean;
   reports?: number;
+  /** visibility "class": the class it is shared with (only the owner and its students get this far). */
+  classCode?: string;
+  className?: string;
+}
+
+/** What someone outside a class-only quiz's class gets instead of the quiz (403, `classOnly: true`). */
+export interface QuizClassLocked {
+  classOnly: true;
+  title: string;
+  /** The class's teacher name ("Ms. Smith"), never the class code. */
+  teacherName: string;
+  error: string;
 }
 
 export interface QuizSummary {
@@ -129,6 +152,8 @@ export interface QuizSummary {
   updatedAt: string;
   topics: string[];
   featured?: boolean;
+  classCode?: string;
+  className?: string;
 }
 
 /** A question as the creation UI and the MCP tools send it (no id yet). */
@@ -147,6 +172,9 @@ export function isQuizCode(code: unknown): code is string {
 export function normalizeQuizCode(code: string): string {
   return code.trim().toUpperCase();
 }
+
+/** The request header a browser proves its class memberships with ("CODE:memberId,..."), read by lib/server/quizAccess.ts. */
+export const CLASS_PROOF_HEADER = "x-tigertest-classes";
 
 export function isQuizVisibility(v: unknown): v is QuizVisibility {
   return typeof v === "string" && (QUIZ_VISIBILITIES as string[]).includes(v);
@@ -232,6 +260,7 @@ export function quizSummary(doc: QuizDoc): QuizSummary {
     updatedAt: doc.updatedAt,
     topics: quizTopics(doc.questions),
     ...(doc.featured ? { featured: true } : {}),
+    ...quizClassFields(doc),
   };
 }
 
@@ -249,8 +278,21 @@ export function quizPublic(doc: QuizDoc, mine = false): QuizPublic {
     plays: doc.plays ?? 0,
     memberCount: doc.memberCount ?? 0,
     ...(doc.featured ? { featured: true } : {}),
+    ...quizClassFields(doc),
     ...(mine ? { mine: true, reports: doc.reports ?? 0 } : {}),
   };
+}
+
+function quizClassFields(doc: QuizDoc): { classCode?: string; className?: string } {
+  return doc.visibility === "class" && doc.classCode ? { classCode: doc.classCode, className: doc.className ?? "" } : {};
+}
+
+/** "Everyone", "Only me" or "Period 3 Biology only", for lists and the share box. */
+export function quizAudienceLabel(q: Pick<QuizSummary, "visibility" | "className">): string {
+  if (q.visibility === "private") return "Only me";
+  if (q.visibility === "class") return q.className ? `${q.className} only` : "My class only";
+  if (q.visibility === "public") return "Everyone, in the library";
+  return "Anyone with the link";
 }
 
 // ─── Playing: a quiz question as the v1 engine's Question ───────────────────

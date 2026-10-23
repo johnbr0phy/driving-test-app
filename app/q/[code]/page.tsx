@@ -6,8 +6,9 @@ import { QUIZ_PUBLIC_MIN_PLAYS, isQuizCode, normalizeQuizCode, quizPublic, type 
 import { QuizLanding } from "@/components/quiz/QuizLanding";
 
 // A quiz's home, tigertest.io/q/<code>: rendered on the server so a shared
-// link carries the quiz's own title and description. A private quiz is sent
-// to the client empty, which fetches it with the owner's token.
+// link carries the quiz's own title and description. A private or class quiz
+// is sent to the client empty, which fetches it with the owner's token or the
+// browser's class membership (lib/server/quizAccess.ts).
 
 const SITE = "https://tigertest.io";
 
@@ -34,6 +35,11 @@ export async function generateMetadata({ params }: { params: Promise<{ code: str
   if (quiz.visibility === "private") {
     return { title: "Private quiz | TigerTest", alternates: { canonical }, robots: { index: false, follow: false } };
   }
+  if (quiz.visibility === "class") {
+    const title = `${quiz.title} | Class quiz`;
+    const description = `A practice quiz for ${quiz.classTeacherName || quiz.ownerName}'s class on Tigertest.`;
+    return { title, description, alternates: { canonical }, robots: { index: false, follow: false }, openGraph: { title, description, url: canonical, siteName: "TigerTest", type: "website" } };
+  }
   const title = `${quiz.title} | TigerTest quiz`;
   const description = quiz.description || `${quiz.questions.length} practice questions on ${quiz.title}`;
   const indexable = quiz.visibility === "public" && (quiz.plays ?? 0) >= QUIZ_PUBLIC_MIN_PLAYS;
@@ -53,6 +59,6 @@ export default async function QuizPage({ params }: { params: Promise<{ code: str
   const loaded = await loadQuizDoc(code);
   if (loaded.ok && !loaded.quiz) notFound();
   const quiz = loaded.ok ? loaded.quiz : null;
-  const initial = quiz && quiz.visibility !== "private" ? quizPublic(quiz) : null;
+  const initial = quiz && (quiz.visibility === "link" || quiz.visibility === "public") ? quizPublic(quiz) : null;
   return <QuizLanding code={code} initial={initial} />;
 }

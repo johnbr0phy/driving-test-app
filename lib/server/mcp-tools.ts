@@ -28,6 +28,7 @@ import {
 } from '@/lib/quizzes';
 import {
   QuizError,
+  listOwnerClasses,
   createQuiz,
   deleteQuiz,
   getQuiz,
@@ -41,7 +42,7 @@ import {
 } from '@/lib/server/quizzes';
 import { buildClassReport, type MemberDoc } from '@/lib/server/classReport';
 import { QUIZ_CONTEXT_GUIDANCE, QUIZ_WRITING_EXAMPLE, QUIZ_WRITING_GUIDE } from '@/lib/quizWritingGuide';
-import { answerQuizQuestion, findQuizzes, loadPlayableQuiz, nextQuizQuestion, resetQuizPlay } from '@/lib/server/mcpQuizPlay';
+import { answerQuizQuestion, findQuizzes, loadPlayableQuiz, nextQuizQuestion, resetQuizPlay, type PlayableQuizError } from '@/lib/server/mcpQuizPlay';
 
 const questionMeta = new Map<string, { question: string; category: string }>(
   (questionsRaw as Array<{ questionId: string; question: string; category: string }>).map(
@@ -120,7 +121,10 @@ function formatQuestion(q: ReturnType<typeof shuffleQuestionOptions>, issuerUrl:
 
 // ─── quiz_me / answer helpers (lib/server/mcpQuizPlay.ts) ───────────────────
 
-function quizPlayFail(error: 'QUIZ_NOT_FOUND' | 'QUIZ_PRIVATE', code: string) {
+function quizPlayFail(error: PlayableQuizError, code: string) {
+  if (error === 'QUIZ_CLASS_ONLY') {
+    return fail('QUIZ_CLASS_ONLY', `Quiz ${code.toUpperCase()} is only for one teacher's class, so it is played on the site: ${siteUrl()}/q/${code.toUpperCase()} (students type their class code there).`);
+  }
   return error === 'QUIZ_PRIVATE'
     ? fail('QUIZ_PRIVATE', `Quiz ${code.toUpperCase()} is private to its creator.`)
     : fail('QUIZ_NOT_FOUND', `No quiz with code ${code.toUpperCase()}. Check the link (tigertest.io/q/<CODE>) or search with find_quiz.`);
@@ -233,6 +237,12 @@ async function quizOwner(uid: string, withName = false): Promise<QuizOwner> {
 /** A QuizError as a fail(): the message is written for the person, the code tells the assistant what kind of problem it is. */
 function quizFail(error: unknown, owner?: QuizOwner) {
   if (error instanceof QuizError) {
+    if (error.reason === 'CLASS_REQUIRED' || error.reason === 'NO_CLASSES') {
+      return fail(error.reason, `${error.message}.${error.reason === 'CLASS_REQUIRED' ? ' Ask the person which class, then call again with its classCode.' : ' Offer the link to make one (free); students join it with a class code, no account needed.'}`, {
+        classes: error.classes ?? [],
+        makeClassUrl: `${siteUrl()}/teach/new`,
+      });
+    }
     const code =
       error.status === 402 || error.status === 429 ? 'LIMIT_REACHED'
       : error.status === 403 ? 'NOT_YOUR_QUIZ'
@@ -272,8 +282,12 @@ const quizQuestionSchema = z.object({
 const quizQuestionsSchema = z.array(quizQuestionSchema).min(1).describe('The questions, in the order they should appear.');
 
 const quizVisibilitySchema = z
-  .enum(['private', 'link', 'public'])
-  .describe('"link" (default): anyone with the link can play. "private": only the creator. "public": also listed in the tigertest.io/quizzes library once enough people have played it.');
+  .enum(['private', 'link', 'public', 'class'])
+  .describe('Who can play it. "link" (default): anyone with the link. "public": anyone, and also listed in the tigertest.io/quizzes library once enough people have played it. "private": only the creator. "class": only students in one of the creator\'s Tigertest classes (pass `classCode`; see list_my_classes). Use "class" when the person says "share it with my class", "just my students" or names a class.');
+
+const quizClassCodeSchema = z
+  .string()
+  .describe('visibility "class" only: the 5-character code of one of the person\'s classes, from list_my_classes. May be left out when they have exactly one class.');
 
 const QUIZ_WRITING_HINT =
   `${QUIZ_CONTEXT_GUIDANCE} ` +
@@ -285,7 +299,7 @@ const tools: ToolEntry[] = [
   {
     name: 'ping',
     description:
-      'Health check. Returns the authenticated user\'s UID and a timestamp. Use to verify the MCP connection works. This server does two things: DMV permit test tutoring (list_states, get_progress, the training set and practice test tools) and quizzes, which turn the person\'s own material into a shareable TigerTest practice test (get_quiz_writing_guide, create_quiz, add_quiz_questions, list_my_quizzes, get_quiz, update_quiz, delete_quiz, get_quiz_report).',
+      'Health check. Returns the authenticated user\'s UID and a timestamp. Use to verify the MCP connection works. This server does two things: DMV permit test tutoring (list_states, get_progress, the training set and practice test tools) and quizzes, which turn the person\'s own material into a shareable TigerTest practice test (get_quiz_writing_guide, create_quiz, add_quiz_questions, list_my_quizzes, list_my_classes, get_quiz, update_quiz, delete_quiz, get_quiz_report).',
     register(server, ctx) {
       server.registerTool(
         'ping',
@@ -919,7 +933,8 @@ const tools: ToolEntry[] = [
     description:
       `Call get_quiz_writing_guide first and follow it. Turns the person's own material (notes, a chapter, a syllabus, a term list, anything they paste or describe) into a TigerTest practice test they can play and share by link. ${QUIZ_WRITING_HINT} ` +
       'Returns the quiz code and its links: `url` is the share landing page (show it to the person as the link to share), `dashboard` opens their modes and progress, `modes.practice` is the mastery training set that brings back what they miss, `modes.test` is a timed test over every question, `modes.flashcards` is flashcards, and `report` is where the creator sees who played and what they missed. ' +
-      'On LIMIT_REACHED tell the person the limit from the message (they can delete a quiz, shorten this one, or get Premium); on INVALID_QUIZ fix the question named in the message and call again.',
+      'On LIMIT_REACHED tell the person the limit from the message (they can delete a quiz, shorten this one, or get Premium); on INVALID_QUIZ fix the question named in the message and call again. ' +
+      'For a class quiz (visibility "class"): on CLASS_REQUIRED ask which of the returned `classes` and call again with its classCode; on NO_CLASSES offer `makeClassUrl`. Tell the person students already in the class go straight in and anyone else is asked for the class code.',
     register(server, ctx) {
       server.registerTool(
         'create_quiz',
@@ -930,6 +945,7 @@ const tools: ToolEntry[] = [
             description: z.string().optional().describe(`One sentence on what the quiz covers, up to ${QUIZ_MAX_DESCRIPTION} characters. Optional.`),
             questions: quizQuestionsSchema,
             visibility: quizVisibilitySchema.optional(),
+            classCode: quizClassCodeSchema.optional(),
             passPct: z.number().int().min(50).max(100).optional().describe('Pass mark for the Test mode as a percentage (50-100). Default 80.'),
           },
         },
@@ -941,6 +957,7 @@ const tools: ToolEntry[] = [
               description: args.description,
               questions: args.questions,
               visibility: args.visibility ?? 'link',
+              classCode: args.classCode,
               passPct: args.passPct,
               createdVia: 'mcp',
             });
@@ -951,6 +968,7 @@ const tools: ToolEntry[] = [
               questionCount: quiz.questions.length,
               topics: quizTopics(quiz.questions),
               visibility: quiz.visibility,
+              ...(quiz.classCode ? { classCode: quiz.classCode, className: quiz.className } : {}),
               passPct: quiz.passPct,
               ...quizLinks(quiz.code),
             });
@@ -1014,9 +1032,24 @@ const tools: ToolEntry[] = [
     },
   },
   {
+    name: 'list_my_classes',
+    description:
+      "Lists the person's Tigertest classes (from tigertest.io/teach): code, name, the exam the class practices for, and how many students joined. Use it before create_quiz or update_quiz with visibility \"class\" to pick the classCode, and ask which class when there is more than one. Empty when they have no class yet (offer `makeClassUrl`).",
+    register(server, ctx) {
+      server.registerTool('list_my_classes', { description: this.description, inputSchema: {} }, async () => {
+        try {
+          const classes = await listOwnerClasses(ctx.userId);
+          return ok({ classes, count: classes.length, makeClassUrl: `${siteUrl()}/teach/new`, teachUrl: `${siteUrl()}/teach` });
+        } catch (error) {
+          return quizFail(error);
+        }
+      });
+    },
+  },
+  {
     name: 'get_quiz',
     description:
-      "Returns one quiz by code. For a quiz the person owns: every question with its options, correct answer, explanation and topic, plus plays, members and reports. For someone else's quiz that is shared by link or public: the title, description, creator, question count, topics and links only, never the answers (the person can play it at `url`). A private quiz someone else owns reads as not found.",
+      "Returns one quiz by code. For a quiz the person owns: every question with its options, correct answer, explanation and topic, plus plays, members and reports. For someone else's quiz that is shared by link or public: the title, description, creator, question count, topics and links only, never the answers (the person can play it at `url`). A private quiz someone else owns reads as not found; a class quiz someone else owns returns QUIZ_CLASS_ONLY (students play it on the site).",
     register(server, ctx) {
       server.registerTool('get_quiz', { description: this.description, inputSchema: { code: quizCodeSchema } }, async (args) => {
         const code = normalizeQuizCode(args.code);
@@ -1029,6 +1062,9 @@ const tools: ToolEntry[] = [
             return ok({ ...mine, mine: true, questionCount: mine.questions.length, topics: quizTopics(mine.questions), ...quizLinks(code) });
           }
           if (quiz.visibility === 'private') return fail('QUIZ_NOT_FOUND', `No quiz with code ${code}.`);
+          if (quiz.visibility === 'class') {
+            return fail('QUIZ_CLASS_ONLY', `Quiz ${code} is for ${quiz.classTeacherName || quiz.ownerName}'s class. Students open it at ${quizLinks(code).url} and type the class code their teacher gave them.`);
+          }
           const s = quizSummary(quiz);
           return ok({
             code: s.code,
@@ -1052,7 +1088,7 @@ const tools: ToolEntry[] = [
   {
     name: 'update_quiz',
     description:
-      'Changes a quiz the person owns: title, description, visibility ("private", "link" or "public") or passPct. Only the fields given change; questions are not touched (use add_quiz_questions, or the edit page at `edit` to rewrite one). Returns the updated summary and links.',
+      'Changes a quiz the person owns: title, description, visibility ("private", "link", "public" or "class" with classCode) or passPct. "Share it with my class" is visibility "class" (classCode from list_my_classes; on CLASS_REQUIRED ask which class, on NO_CLASSES offer `makeClassUrl`). Only the fields given change; questions are not touched (use add_quiz_questions, or the edit page at `edit` to rewrite one). Returns the updated summary and links.',
     register(server, ctx) {
       server.registerTool(
         'update_quiz',
@@ -1063,14 +1099,15 @@ const tools: ToolEntry[] = [
             title: z.string().min(1).optional().describe(`New title, up to ${QUIZ_MAX_TITLE} characters.`),
             description: z.string().optional().describe(`New description, up to ${QUIZ_MAX_DESCRIPTION} characters (empty string clears it).`),
             visibility: quizVisibilitySchema.optional(),
+            classCode: quizClassCodeSchema.optional(),
             passPct: z.number().int().min(50).max(100).optional().describe('New pass mark for Test mode (50-100).'),
           },
         },
         async (args) => {
           const code = normalizeQuizCode(args.code);
           if (!isQuizCode(code)) return fail('QUIZ_NOT_FOUND', `"${args.code}" is not a quiz code.`);
-          if (args.title === undefined && args.description === undefined && args.visibility === undefined && args.passPct === undefined) {
-            return fail('INVALID_QUIZ', 'Give at least one of title, description, visibility or passPct.');
+          if (args.title === undefined && args.description === undefined && args.visibility === undefined && args.classCode === undefined && args.passPct === undefined) {
+            return fail('INVALID_QUIZ', 'Give at least one of title, description, visibility, classCode or passPct.');
           }
           const owner = await quizOwner(ctx.userId);
           try {
@@ -1078,6 +1115,7 @@ const tools: ToolEntry[] = [
               ...(args.title !== undefined ? { title: args.title } : {}),
               ...(args.description !== undefined ? { description: args.description } : {}),
               ...(args.visibility !== undefined ? { visibility: args.visibility } : {}),
+              ...(args.classCode !== undefined ? { classCode: args.classCode } : {}),
               ...(args.passPct !== undefined ? { passPct: args.passPct } : {}),
             });
             return ok({ ...summaryWithLinks(quizSummary(quiz)), passPct: quiz.passPct });

@@ -7,9 +7,9 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
 import { quizFetch } from "@/lib/quizClient";
-import { QUIZ_LIMITS, quizPath, type QuizSummary, type QuizVisibility } from "@/lib/quizzes";
+import { QUIZ_LIMITS, quizAudienceLabel, quizPath, type QuizSummary } from "@/lib/quizzes";
 
-const VISIBILITY_LABEL: Record<QuizVisibility, string> = { private: "Private", link: "Link", public: "Public" };
+
 
 interface MyQuizzesResponse {
   quizzes: QuizSummary[];
@@ -69,7 +69,7 @@ export function MyQuizzes({ refreshKey = 0 }: { refreshKey?: number }) {
                     {q.title}
                   </Link>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-                    {q.questionCount} {q.questionCount === 1 ? "question" : "questions"} · {VISIBILITY_LABEL[q.visibility]} · {q.plays}{" "}
+                    {q.questionCount} {q.questionCount === 1 ? "question" : "questions"} · {quizAudienceLabel(q)} · {q.plays}{" "}
                     {q.plays === 1 ? "play" : "plays"} · {q.memberCount} {q.memberCount === 1 ? "player" : "players"}
                     {q.reports > 0 && (
                       <>

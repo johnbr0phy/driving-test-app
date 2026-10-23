@@ -46,6 +46,14 @@ export function saveMembership(membership: ClassMembership) {
   saveMemberships([...getMemberships().filter((m) => m.code !== membership.code), membership]);
 }
 
+/** This browser's class memberships as "CODE:memberId,..." for CLASS_PROOF_HEADER, so a class-only quiz opens for its students. */
+export function classProofHeader(): string {
+  return getMemberships()
+    .filter((m) => m.kind !== "quiz")
+    .map((m) => `${m.code}:${m.memberId}`)
+    .join(",");
+}
+
 function progressUrl(m: Pick<ClassMembership, "code" | "kind">): string {
   return m.kind === "quiz" ? `/api/quizzes/${m.code}/progress` : `/api/classes/${m.code}/progress`;
 }
@@ -74,6 +82,41 @@ export async function joinClass(info: ClassPublicInfo, name: string): Promise<Cl
   };
   saveMembership(membership);
   return membership;
+}
+
+/**
+ * Join the class a class-only quiz is shared with, from the quiz's join card
+ * (/api/quizzes/[code]/class-join checks the code is that class's). Throws
+ * with a readable message.
+ */
+export async function joinQuizClass(quizCode: string, classCode: string, name: string): Promise<ClassMembership> {
+  const code = classCode.trim().toUpperCase();
+  const existing = getMembership(code);
+  const memberId = existing?.memberId ?? crypto.randomUUID();
+  const res = await fetch(`/api/quizzes/${quizCode}/class-join`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ classCode: code, memberId, name }),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error ?? "Couldn't join. Try again.");
+  const info = data as ClassPublicInfo;
+  const membership: ClassMembership = {
+    code: info.code,
+    examId: info.examId,
+    memberId,
+    name: name.trim(),
+    className: info.name,
+    teacherName: info.teacherName,
+  };
+  saveMembership(membership);
+  return membership;
+}
+
+/** This browser's membership of a class (not a quiz). */
+export function classMembership(code: string): ClassMembership | undefined {
+  const m = getMembership(code);
+  return m && m.kind !== "quiz" ? m : undefined;
 }
 
 export function leaveClass(code: string) {

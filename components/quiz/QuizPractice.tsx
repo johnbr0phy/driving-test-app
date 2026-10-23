@@ -206,7 +206,7 @@ export function QuizPractice({ code }: { code: string }) {
       )}
 
       <TestPageHeader backHref={home} right={<span className="text-sm text-gray-600 dark:text-gray-300 truncate max-w-[12rem]">{quiz.title}</span>} />
-      <div className="relative container mx-auto px-4 py-4 max-w-lg md:max-w-2xl">
+      <div className="relative container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
         {current ? (
           <TrainingCard key={current.questionId} question={current} selectedAnswer={selected} onAnswerSelect={answer} onNext={loadNext} />
         ) : (

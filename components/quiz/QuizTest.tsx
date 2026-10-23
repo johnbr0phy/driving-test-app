@@ -177,7 +177,7 @@ export function QuizTest({ code }: { code: string }) {
           </span>
         }
       />
-      <div className="relative container mx-auto px-4 py-8 max-w-lg md:max-w-2xl">
+      <div className="relative container mx-auto px-4 py-8 max-w-lg md:max-w-2xl lg:max-w-4xl">
         <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
           {quiz.title} · Question {index + 1} of {total}
         </p>

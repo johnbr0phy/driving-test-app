@@ -460,7 +460,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         p("Share the link with your study group or class and see who got what."),
         cta(create, "Make a quiz"),
         p(
-          `Prefer to work on TigerTest? Import a Quizlet set or write your own questions at ${link(create, "tigertest.io/create")}.`,
+          `Choose ChatGPT or Claude to create your quiz, or manage existing quizzes at ${link(create, "tigertest.io/create")}.`,
         ),
         p(`To connect ChatGPT or Claude to your account, the steps are at ${link(connect, "tigertest.io/connect")}.`),
         p(`Your ${v.testName} practice is still here, unchanged: ${link(DASH(v, campaign), "open your dashboard")}.`),

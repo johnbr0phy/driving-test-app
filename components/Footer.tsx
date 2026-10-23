@@ -145,6 +145,9 @@ export function Footer() {
           <div className="flex items-center justify-center md:justify-end gap-x-4 text-gray-500 dark:text-gray-400">
             {showLanguageToggle && <LanguageSwitcher languages={isAltExam ? examLangs : undefined} />}
             <ThemeToggle className="h-7 w-7" />
+            <Link href="/connect" className="hover:text-brand hover:underline">
+              Make a quiz
+            </Link>
             <Link href="/teach" className="hover:text-brand hover:underline">
               For Teachers
             </Link>

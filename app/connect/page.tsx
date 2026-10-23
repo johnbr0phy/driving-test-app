@@ -30,8 +30,8 @@ const faqs = [
     a: "Claude supports custom connectors, including one on its Free plan. ChatGPT custom MCP access depends on your plan and workspace permissions. Check the official setup guides below for current availability.",
   },
   {
-    q: "Can I make a quiz without a connector?",
-    a: "Yes. On tigertest.io/create, import a Quizlet set or write the questions yourself. To have an assistant write and save a quiz, connect TigerTest to your own supported chat account.",
+    q: "Can I edit a quiz after my assistant creates it?",
+    a: "Yes. Open your quiz from tigertest.io/create to edit its questions and settings. To create a new quiz, connect TigerTest to your own supported ChatGPT or Claude account.",
   },
   {
     q: "What does the connector see?",
@@ -254,9 +254,9 @@ export default function ConnectPage() {
         </section>
 
         <section className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">No chat app needed</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">Your quizzes stay on TigerTest</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-5 max-w-xl mx-auto">
-            Import a Quizlet set or write the questions yourself. These are separate options, with no chat app or connector required.
+            Create with your connected ChatGPT or Claude, then manage your quizzes on TigerTest. You can edit existing quizzes and play without returning to the chat app.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link

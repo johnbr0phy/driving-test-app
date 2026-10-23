@@ -58,7 +58,7 @@ export default function QuizIndexPage() {
         <div className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6">
           <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-1">Make your own</h2>
           <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">
-            Connect your own Claude or ChatGPT to write and save a quiz, import a Quizlet set, or use the manual editor.
+            Connect your own ChatGPT or Claude to write and save a quiz.
           </p>
           <div className="flex flex-wrap gap-3 text-sm">
             <Link href="/create" className="underline text-gray-900 dark:text-gray-50">Make a quiz</Link>

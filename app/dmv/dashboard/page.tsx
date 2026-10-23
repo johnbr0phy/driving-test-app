@@ -48,6 +48,8 @@ function DashboardContent() {
   const missSummary = computeMissSummary(hydrated ? completedTests : [], selectedState);
   // Which test card's attempt panel is dropped down
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
+  const [highlightedStep, setHighlightedStep] = useState<string | null>(null);
+  const trainingSets = useStore((state) => state.trainingSets);
 
   // Hero subtitle variants (5 per progress state, picked randomly on mount)
   const heroSubVariants: string[][] = [
@@ -252,6 +254,31 @@ function DashboardContent() {
     const currentTest = getCurrentTest(testNumber);
     return !!(currentTest && currentTest.questions.length > 0);
   };
+
+  // Return to a genuinely green row, using this dashboard's actual pass rule.
+  // Consume the marker so Back/refresh does not replay the focus and scroll.
+  useEffect(() => {
+    if (!hydrated || authLoading || (user && !firestoreLoaded)) return;
+    const url = new URL(window.location.href);
+    const marker = url.searchParams.get("completed");
+    if (!marker) return;
+    const match = /^(training|test):([1-4])$/.exec(marker);
+    const id = match ? Number(match[2]) : null;
+    const complete = id && (match?.[1] === "training"
+      ? getTrainingSetProgress(id).complete
+      : (getTestAttemptStats(id)?.bestScore ?? -1) >= 40);
+    if (selectedState && id && complete) {
+      const rowId = `${match![1]}-${id}`;
+      const row = document.getElementById(rowId);
+      if (row) {
+        setHighlightedStep(rowId);
+        row.querySelector<HTMLElement>("a, button")?.focus({ preventScroll: true });
+        row.scrollIntoView({ block: "center", behavior: "instant" });
+      }
+    }
+    url.searchParams.delete("completed");
+    window.history.replaceState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
+  }, [hydrated, authLoading, user, firestoreLoaded, selectedState, trainingSets, completedTests, getTrainingSetProgress, getTestAttemptStats]);
 
   // Count completed steps (training sets + practice tests)
   const completedSteps = [
@@ -477,32 +504,34 @@ function DashboardContent() {
             return (
               <div key={id}>
                 {/* Training card */}
-                <ProgressCard
-                  key={`training-${id}`}
-                  title={t(`trainingSets.${id}`)}
-                  subtitle={`${trainingLocked ? 0 : trainingProgress.correct}/${trainingProgress.total}`}
-                  completed={trainingComplete}
-                  stepNumber={(id - 1) * 2 + 1}
-                  stamp={
-                    trainingComplete
-                      ? { label: t("dashboard.stampComplete"), color: "green" as const }
-                      : isStartHere
-                        ? { label: t("dashboard.stampStartHere"), color: "amber" as const }
-                        : trainingProgress.correct > 0
-                          ? { label: t("dashboard.stampContinue"), color: "amber" as const }
-                          : undefined
-                  }
-                  isPremiumLocked={trainingLocked}
-                  href={trainingLocked ? undefined : `/practice/${id}`}
-                  onClick={
-                    trainingLocked
-                      ? () => handlePremiumClick("training_set_4", `set_${id}`, `Training Set ${id}`)
-                      : undefined
-                  }
-                />
+                <div id={`training-${id}`} className={`scroll-mt-24 rounded-lg ${highlightedStep === `training-${id}` ? "ring-2 ring-green-500 ring-offset-4 ring-offset-white dark:ring-offset-gray-950" : ""}`}>
+                  <ProgressCard
+                    key={`training-${id}`}
+                    title={t(`trainingSets.${id}`)}
+                    subtitle={`${trainingLocked ? 0 : trainingProgress.correct}/${trainingProgress.total}`}
+                    completed={trainingComplete}
+                    stepNumber={(id - 1) * 2 + 1}
+                    stamp={
+                      trainingComplete
+                        ? { label: t("dashboard.stampComplete"), color: "green" as const }
+                        : isStartHere
+                          ? { label: t("dashboard.stampStartHere"), color: "amber" as const }
+                          : trainingProgress.correct > 0
+                            ? { label: t("dashboard.stampContinue"), color: "amber" as const }
+                            : undefined
+                    }
+                    isPremiumLocked={trainingLocked}
+                    href={trainingLocked ? undefined : `/practice/${id}`}
+                    onClick={
+                      trainingLocked
+                        ? () => handlePremiumClick("training_set_4", `set_${id}`, `Training Set ${id}`)
+                        : undefined
+                    }
+                  />
+                </div>
 
                 {/* Practice test card */}
-                <div className="mt-1.5">
+                <div id={`test-${id}`} className={`mt-1.5 scroll-mt-24 rounded-lg ${highlightedStep === `test-${id}` ? "ring-2 ring-green-500 ring-offset-4 ring-offset-white dark:ring-offset-gray-950" : ""}`}>
                   <ProgressCard
                     key={`test-${id}`}
                     title={

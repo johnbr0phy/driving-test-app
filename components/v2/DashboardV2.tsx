@@ -10,6 +10,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight, Smartphone, Monitor, Pencil, CheckCircle } from "lucide-react";
 import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
+import { goalFor } from "@/lib/v2/goals";
 import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, stagesOf, v2Routes } from "@/lib/v2/registry";
 import { sessionKey } from "@/lib/v2/session";
@@ -90,8 +91,9 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   // What a signed-out visitor stands to lose: drill answers plus test items.
   const guestAnswered = useMemo(() => v2GuestAnswered(drills, history, exam.id), [drills, history, exam.id]);
 
-  const goal = savedGoal ?? exam.defaultGoal;
-  const hasGoal = hydrated && savedGoal !== undefined;
+  const fixedGoal = exam.fixedGoal !== undefined;
+  const goal = goalFor(exam, savedGoal);
+  const hasGoal = hydrated && (fixedGoal || savedGoal !== undefined);
 
   // ---- Step state ----
   const drillSteps = exam.drills.map((d) => {
@@ -127,6 +129,27 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const doneSteps = phoneSteps.filter((s) => s.complete).length + testSteps.filter((s) => s.complete).length;
   const anyProgress = drillSteps.some((s) => s.started) || testSteps.some((s) => s.attempts.length > 0 || s.session);
   const bestOverall = history.length ? Math.max(...history.map((r) => r.composite)) : null;
+
+  // A celebration returns here deliberately, to show the persisted progress.
+  // Consume the marker so Back/re-entry does not replay the focus treatment.
+  useEffect(() => {
+    if (!hydrated) return;
+    const url = new URL(window.location.href);
+    const completed = url.searchParams.get("completed");
+    if (!completed) return;
+    const [kind, key] = completed.split(":");
+    const drill = drillSteps.find((step) => step.def.key === key);
+    const hasProgress = kind === "basics" ? !!drill && drill.learned > 0
+      : kind === "drill" ? !!drill?.complete
+      : kind === "test" && testSteps.some((step) => String(step.def.number) === key && step.complete);
+    const target = hasProgress ? document.getElementById(`progress-${completed}`) : null;
+    if (target) {
+      target.focus({ preventScroll: true });
+      target.scrollIntoView({ block: "center", behavior: "instant" });
+    }
+    url.searchParams.delete("completed");
+    window.history.replaceState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
+  }, [hydrated, exam.id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ---- Goal picker: the first thing a new student sees ----
   const goalPicker = (
@@ -188,7 +211,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
           )}
           {!hydrated ? (
             <div className="h-40" />
-          ) : !hasGoal || editingGoal ? (
+          ) : !fixedGoal && (!hasGoal || editingGoal) ? (
             goalPicker
           ) : (
             /* Hero: tiger, steps title, counter, then the goal strip */
@@ -206,7 +229,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   <div className="text-xs text-gray-500 dark:text-gray-400">complete!</div>
                 </div>
               </div>
-              <GoalStrip exam={exam} goal={goal} best={bestOverall} onEdit={() => setEditingGoal(true)} />
+              <GoalStrip exam={exam} goal={goal} best={bestOverall} onEdit={fixedGoal ? undefined : () => setEditingGoal(true)} />
               {exam.copy.progressNote && <p className="mt-3 text-xs text-gray-600 dark:text-gray-300">{exam.copy.progressNote}</p>}
               <TeachNudge dashboardKey={`v2:${exam.id}`} examId={exam.id} done={doneSteps} />
             </div>
@@ -243,9 +266,20 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   : `${s.mastered}/${s.total} mastered`;
               // Basics opens the skill list; the exam step goes straight to the
               // questions. Anyone who already knows the basics just taps step 2.
-              const href = basics ? routes.drill(s.def.key) : routes.drillQuestions(s.def.key);
+              const firstSkill = basicsFor(s.def)[0];
+              const href = basics
+                ? fixedGoal && isStartHere && firstSkill
+                  ? routes.basics(s.def.key, firstSkill.id)
+                  : routes.drill(s.def.key)
+                : routes.drillQuestions(s.def.key);
               return (
-                <div key={`${s.def.key}-${step.kind}`}>
+                <div
+                  key={`${s.def.key}-${step.kind}`}
+                  id={`progress-${basics ? "basics" : "drill"}:${s.def.key}`}
+                  tabIndex={-1}
+                  aria-label={`${s.def.name}${basics ? " Basics" : ""}: ${subtitle}`}
+                  className={`rounded-xl scroll-mt-6 focus:outline-none focus:ring-2 ${step.complete ? "focus:ring-green-500" : "focus:ring-brand"} focus:ring-offset-4 dark:focus:ring-offset-gray-950`}
+                >
                   {newSection && (
                     <p className={`text-[11px] font-semibold text-gray-500 dark:text-gray-400 mb-1.5 ${index === 0 ? "" : "mt-3"}`}>{section.name}</p>
                   )}
@@ -289,7 +323,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               else if (hasAttempts) stamp = { label: "Retake it", color: "amber" };
 
               return (
-                <div key={s.def.number}>
+                <div key={s.def.number} id={`progress-test:${s.def.number}`} tabIndex={-1} aria-label={`${s.def.name}: ${subtitle}`} className="rounded-xl scroll-mt-6 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-4 dark:focus:ring-offset-gray-950">
                   <ProgressCard
                     title={`🎯 ${s.def.name}`}
                     subtitle={subtitle}
@@ -365,8 +399,8 @@ function PurchaseBanner({ exam }: { exam: ExamV2Config }) {
   );
 }
 
-/** Goal vs best on the 400-1600 scale, with an edit button. Green once hit. */
-function GoalStrip({ exam, goal, best, onEdit }: { exam: ExamV2Config; goal: number; best: number | null; onEdit: () => void }) {
+/** Goal vs best on the exam scale. Fixed targets have no edit control. */
+function GoalStrip({ exam, goal, best, onEdit }: { exam: ExamV2Config; goal: number; best: number | null; onEdit?: () => void }) {
   const { min, max } = exam.composite;
   const pos = (v: number) => `${Math.max(0, Math.min(100, ((v - min) / (max - min)) * 100))}%`;
   const hit = best !== null && best >= goal;
@@ -374,16 +408,16 @@ function GoalStrip({ exam, goal, best, onEdit }: { exam: ExamV2Config; goal: num
     <div className="mt-4 border-t border-gray-100 dark:border-gray-800 pt-3">
       <div className="flex items-center justify-between text-xs">
         <span className="text-gray-500 dark:text-gray-400">
-          Goal <span className="font-bold text-gray-900 dark:text-gray-50 tabular-nums">{goal}</span>
+          Goal <span className="font-bold text-gray-900 dark:text-gray-50 tabular-nums">{goal}{exam.fixedGoal !== undefined && exam.composite.max === 100 ? "%" : ""}</span>
           {best !== null && (
             <>
               {" · "}Best <span className={`font-bold tabular-nums ${hit ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>{best}</span>
             </>
           )}
         </span>
-        <button type="button" onClick={onEdit} className="flex items-center gap-1 font-semibold text-brand-dark">
+        {onEdit && <button type="button" onClick={onEdit} className="flex items-center gap-1 font-semibold text-brand-dark">
           <Pencil className="h-3 w-3" /> Change
-        </button>
+        </button>}
       </div>
       <div className="relative mt-2 h-2 rounded-full bg-gray-100 dark:bg-gray-800">
         {best !== null && <div className={`absolute inset-y-0 left-0 rounded-full ${hit ? "bg-green-500" : "bg-brand"}`} style={{ width: pos(best) }} />}

@@ -24,6 +24,7 @@ import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { DrillLockScreen } from "./DrillLockScreen";
 import { Fireworks } from "@/components/Fireworks";
 import { trackBasics } from "@/lib/v2/basicsTracking";
+import { AchievementCelebration } from "@/components/AchievementCelebration";
 
 /**
  * One Basics skill on the phone: learn it, then a handful of one-line
@@ -63,6 +64,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [readMode, setReadMode] = useState(false);
   // The one-shot fireworks on the "Skill learned" screen (same canvas as Super Amazing Mode).
   const [fireworks, setFireworks] = useState(false);
+  const [earnedMilestone, setEarnedMilestone] = useState<"skill" | "basics" | null>(null);
+  const completionHandled = useRef(false);
 
   useEffect(() => {
     if (hydrated && (!drill || !skill)) router.replace(drill ? routes.drill(drill.key) : routes.dashboard);
@@ -82,6 +85,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setWalking(false);
     setReadMode(false);
     setFireworks(false);
+    setEarnedMilestone(null);
+    completionHandled.current = false;
   }, [hydrated, exam.id, skillIdParam]);
 
   // Picking disables the options, so focus goes on to Next (and the feedback is announced).
@@ -118,10 +123,16 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
 
   const next = (r: BasicsRun) => {
     if (r.mastered.length === total) {
+      if (completionHandled.current) return;
+      completionHandled.current = true;
+      const before = useV2Store.getState().basics;
+      const newlyLearned = !before[basicsKey(exam.id, skill.id)]?.done;
+      const completesBasics = newlyLearned && skills.every((s) => s.id === skill.id || before[basicsKey(exam.id, s.id)]?.done);
       completeBasics(basicsKey(exam.id, skill.id), { firstTry: total - r.retried.length, total });
       trackBasics("skill_learned", exam.id, drill.key, { skill: skill.id });
       setScreen("done");
-      setFireworks(true);
+      setEarnedMilestone(newlyLearned ? (completesBasics ? "basics" : "skill") : null);
+      setFireworks(newlyLearned);
       return;
     }
     if (r.misses >= 2 && !r.reviewed) {
@@ -226,9 +237,15 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     const firstTry = run ? total - run.retried.length : stored!.firstTry;
     const retried = outOf - firstTry;
     const revisit = !run;
+    const allBasicsDone = !nextSkill;
+    const childFriendly = exam.id === "timestables";
+    const dashboardHref = `${routes.dashboard}?completed=${encodeURIComponent(`basics:${drill.key}`)}`;
     const learnAgain = () => {
       setRun(null);
       setReadMode(false);
+      setFireworks(false);
+      setEarnedMilestone(null);
+      completionHandled.current = false;
       setScreen("learn");
     };
     return (
@@ -236,42 +253,33 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
         {fireworks && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
         {revisit && <Header title={skill.name} sub={`Basics · ${drill.name}`} closeHref={overviewHref} />}
         <div className="v2-scroll">
-          <div className="v2-pop mx-auto flex max-w-md flex-col items-center gap-3 px-6 pt-10 text-center">
-            <Image src={getTigerAsset(exam.id, 1)} alt="" width={120} height={120} className="h-28 w-28 object-contain" />
-            <div className="text-xs font-semibold uppercase tracking-wider text-brand-dark">Skill learned</div>
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50">{skill.name}</h1>
-            <div className="flex flex-wrap justify-center gap-2 text-xs font-semibold">
-              <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1.5">{firstTry} of {outOf} right first try</span>
-              {retried > 0 && <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1.5">{retried} fixed on a retry</span>}
-            </div>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
-              {revisit
-                ? "You've already got this one. Run through it again any time for a refresher."
-                : retried
-                  ? "Every miss came back until you got it. That's how it sticks."
-                  : "Clean sweep. This rule shows up all over the real test."}
-            </p>
+          <div className="px-4 py-6 sm:py-10">
+            <AchievementCelebration
+              examId={exam.id}
+              headingLevel={1}
+              earned={earnedMilestone !== null}
+              eyebrow={allBasicsDone ? "Basics complete" : "Skill learned"}
+              title={allBasicsDone ? (childFriendly ? "All your basics are green!" : "A strong foundation, complete.") : (childFriendly && !revisit ? "One more skill is green!" : skill.name)}
+              description={allBasicsDone
+                ? `You learned all ${skills.length} ${skills.length === 1 ? "skill" : "skills"} in ${drill.name}. ${childFriendly ? "Your practice questions are next." : "You're ready to put them into practice."}`
+                : childFriendly
+                  ? `You've learned ${skill.name}. ${revisit ? "You can practise it again any time." : "That's another step forward."}`
+                  : revisit ? "You've already learned this skill. Come back any time for a refresher." : retried ? "You worked through every question, including the ones that needed another try." : "Every question answered correctly on your first try."}
+              detail={allBasicsDone
+                ? `${skills.length} of ${skills.length} basics skills learned · ${drill.name}`
+                : <><span>{firstTry} of {outOf} right first try</span>{retried > 0 && <span className="block">{retried} fixed on a retry</span>}</>}
+            >
+              <Link href={dashboardHref} className="v2-tap flex items-center justify-center rounded-xl bg-brand px-4 text-base font-bold text-white">See your progress</Link>
+              {nextSkill ? (
+                <Link href={routes.basics(drill.key, nextSkill.id)} className="v2-tap flex items-center justify-center rounded-xl border-2 border-gray-200 bg-white px-3 text-sm font-semibold text-gray-900 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-50">Next skill: {nextSkill.name}</Link>
+              ) : (
+                <Link href={routes.drillQuestions(drill.key)} className="v2-tap flex items-center justify-center rounded-xl border-2 border-gray-200 bg-white px-3 text-sm font-semibold text-gray-900 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-50">{childFriendly ? "Try the practice questions" : "Try exam-level questions"}</Link>
+              )}
+              <button type="button" onClick={learnAgain} className="v2-tap rounded-xl text-sm font-semibold text-gray-600 dark:text-gray-300">Learn it again</button>
+            </AchievementCelebration>
           </div>
         </div>
-        <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
-          <div className="mx-auto flex max-w-2xl flex-col gap-2">
-            {nextSkill ? (
-              <Link href={routes.basics(drill.key, nextSkill.id)} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-base font-bold text-white">
-                Next skill: {nextSkill.name}
-              </Link>
-            ) : (
-              <Link href={overviewHref} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-base font-bold text-white">
-                Basics done: see exam level
-              </Link>
-            )}
-            <button type="button" onClick={learnAgain} className="v2-tap flex items-center justify-center rounded-xl border-2 border-gray-200 dark:border-gray-800 text-base font-semibold text-gray-900 dark:text-gray-50">
-              Learn it again
-            </button>
-            {nextSkill && (
-              <Link href={overviewHref} className="v2-tap flex items-center justify-center text-sm font-semibold text-gray-500 dark:text-gray-400">Back to the drill</Link>
-            )}
-          </div>
-        </div>
+        <div className="v2-safe-bottom shrink-0" />
       </FocusMode>
     );
   }

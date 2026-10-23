@@ -57,6 +57,10 @@ export function Fireworks({ duration = 3000, onComplete, intensity = "full", con
   const fireworksRef = useRef<Firework[]>([]);
   const particlesRef = useRef<Particle[]>([]);
   const startTimeRef = useRef<number>(0);
+  // Inline completion callbacks change on ordinary rerenders. They must not
+  // restart a celebration or launch a second set of rockets.
+  const onCompleteRef = useRef(onComplete);
+  onCompleteRef.current = onComplete;
 
   const createParticles = useCallback((x: number, y: number, color: string) => {
     const particleCount = 80 + Math.floor(Math.random() * 40);
@@ -95,16 +99,30 @@ export function Fireworks({ duration = 3000, onComplete, intensity = "full", con
     const canvas = canvasRef.current;
     if (!canvas) return;
 
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     // Reduced motion: draw nothing (the canvas stays transparent) and finish
     // straight away so whatever follows the show still happens.
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (motion.matches) {
       if (continuous) return;
-      const done = setTimeout(() => onComplete?.(), 0);
+      const done = setTimeout(() => onCompleteRef.current?.(), 0);
       return () => clearTimeout(done);
     }
+
+    let active = true;
+    const pendingLaunches = new Set<ReturnType<typeof setTimeout>>();
+    const scheduleLaunch = (delay: number) => {
+      const timeout = setTimeout(() => {
+        pendingLaunches.delete(timeout);
+        if (active) launchFirework(canvas);
+      }, delay);
+      pendingLaunches.add(timeout);
+    };
+    fireworksRef.current = [];
+    particlesRef.current = [];
 
     // Set canvas size
     const resizeCanvas = () => {
@@ -118,7 +136,7 @@ export function Fireworks({ duration = 3000, onComplete, intensity = "full", con
 
     // Initial burst of fireworks
     for (let i = 0; i < initialBurstCount; i++) {
-      setTimeout(() => launchFirework(canvas), i * 150);
+      scheduleLaunch(i * 150);
     }
 
     // Continue launching fireworks
@@ -126,12 +144,31 @@ export function Fireworks({ duration = 3000, onComplete, intensity = "full", con
       if (continuous || Date.now() - startTimeRef.current < duration - 500) {
         launchFirework(canvas);
         if (Math.random() > burstChanceThreshold) {
-          setTimeout(() => launchFirework(canvas), 100);
+          scheduleLaunch(100);
         }
       }
     }, launchIntervalMs);
 
+    const stop = () => {
+      active = false;
+      clearInterval(launchInterval);
+      pendingLaunches.forEach(clearTimeout);
+      pendingLaunches.clear();
+      if (animationRef.current !== null) cancelAnimationFrame(animationRef.current);
+      fireworksRef.current = [];
+      particlesRef.current = [];
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    };
+    // Respect a preference change while a show is already running too.
+    const onMotionChange = () => {
+      if (!motion.matches || !active) return;
+      stop();
+      if (!continuous) onCompleteRef.current?.();
+    };
+    motion.addEventListener("change", onMotionChange);
+
     const animate = () => {
+      if (!active) return;
       // Clear canvas for transparency (UI shows through)
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -189,9 +226,8 @@ export function Fireworks({ duration = 3000, onComplete, intensity = "full", con
       // Check if animation should end
       const elapsed = Date.now() - startTimeRef.current;
       if (!continuous && elapsed >= duration && particlesRef.current.length === 0) {
-        cancelAnimationFrame(animationRef.current!);
-        clearInterval(launchInterval);
-        onComplete?.();
+        stop();
+        onCompleteRef.current?.();
         return;
       }
 
@@ -202,16 +238,15 @@ export function Fireworks({ duration = 3000, onComplete, intensity = "full", con
 
     return () => {
       window.removeEventListener("resize", resizeCanvas);
-      clearInterval(launchInterval);
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
+      motion.removeEventListener("change", onMotionChange);
+      stop();
     };
-  }, [duration, onComplete, createParticles, launchFirework, initialBurstCount, launchIntervalMs, burstChanceThreshold, continuous]);
+  }, [duration, createParticles, launchFirework, initialBurstCount, launchIntervalMs, burstChanceThreshold, continuous]);
 
   return (
     <canvas
       ref={canvasRef}
+      aria-hidden="true"
       className={className ?? "fixed inset-0 z-[60] pointer-events-none"}
       style={{ background: "transparent" }}
     />

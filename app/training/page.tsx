@@ -1,13 +1,10 @@
 "use client";
 
-import { useState, useEffect, Suspense, useRef } from "react";
+import { useState, useEffect, Suspense, useRef, useCallback } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft } from "lucide-react";
-import Image from "next/image";
 import { ShareButton } from "@/components/ShareButton";
 import { useStore } from "@/store/useStore";
 import { getTrainingQuestion, getNextTrainingSetQuestion, shuffleQuestionOptions } from "@/lib/testGenerator";
@@ -15,6 +12,9 @@ import { Question } from "@/types";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
 import { Fireworks } from "@/components/Fireworks";
+import { AchievementCelebration } from "@/components/AchievementCelebration";
+import { AccessibleOverlay } from "@/components/AccessibleOverlay";
+import { DMV_ROUTES } from "@/lib/examRoutes";
 import { TestPageHeader } from "@/components/TestPageHeader";
 import Link from "next/link";
 import { useTranslation } from "@/contexts/LanguageContext";
@@ -114,7 +114,9 @@ function TrainingPageContent() {
   const [showCelebration, setShowCelebration] = useState(false);
   const [showSetComplete, setShowSetComplete] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
-  const [prevCorrectCount, setPrevCorrectCount] = useState(training.totalCorrectAllTime);
+  const retryButtonRef = useRef<HTMLButtonElement>(null);
+  const [earnedCompletion, setEarnedCompletion] = useState(false);
+  const pendingCompletion = useRef(false);
 
   // Get current set progress
   const setProgress = isSetMode ? getTrainingSetProgress(setNumber) : null;
@@ -138,30 +140,14 @@ function TrainingPageContent() {
     }
   }, [hydrated, selectedState, setNumber, isTrainingSetUnlocked, router]);
 
-  // Detect when user unlocks practice tests (crosses 10 correct answers) - onboarding only
-  useEffect(() => {
-    if (!isSetMode && training.totalCorrectAllTime >= 10 && prevCorrectCount < 10) {
-      setShowFireworks(true);
-    }
-    setPrevCorrectCount(training.totalCorrectAllTime);
-  }, [training.totalCorrectAllTime, prevCorrectCount, isSetMode]);
-
-  const handleFireworksComplete = () => {
-    setShowFireworks(false);
-    if (isSetMode) {
-      // Set complete overlay is already showing — just dismiss fireworks
-      if (!showSetComplete) setShowSetComplete(true);
-    } else {
-      setShowCelebration(true);
-    }
-  };
+  const handleFireworksComplete = useCallback(() => setShowFireworks(false), []);
 
   // Load first question on mount
   useEffect(() => {
     if (hydrated && selectedState && !currentQuestion && !accessLocked) {
       loadNextQuestion();
     }
-  }, [hydrated, selectedState, currentQuestion, accessLocked]);
+  }, [hydrated, selectedState, currentQuestion, accessLocked]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const loadNextQuestion = () => {
     if (!selectedState) return;
@@ -184,10 +170,13 @@ function TrainingPageContent() {
         language
       );
 
-      // If all questions are mastered, show completion overlay with fireworks on top
+      // Restore the completion screen without replaying an earned moment.
       if (!question) {
+        const earned = pendingCompletion.current;
+        pendingCompletion.current = false;
+        setEarnedCompletion(earned);
         setShowSetComplete(true);
-        setShowFireworks(true);
+        setShowFireworks(earned);
         return;
       }
 
@@ -243,9 +232,17 @@ function TrainingPageContent() {
 
     // Track progress
     if (isSetMode) {
+      const wasComplete = useStore.getState().getTrainingSetProgress(setNumber).complete;
       answerTrainingSetQuestion(setNumber, currentQuestion.questionId, isCorrect);
+      pendingCompletion.current = isCorrect && !wasComplete && useStore.getState().getTrainingSetProgress(setNumber).complete;
     } else {
+      const before = useStore.getState().training.totalCorrectAllTime;
       answerTrainingQuestion(currentQuestion.questionId, isCorrect);
+      // Hydration and synced counters never trigger this milestone.
+      if (isCorrect && before < 10 && useStore.getState().training.totalCorrectAllTime >= 10) {
+        setShowCelebration(true);
+        setShowFireworks(true);
+      }
     }
   };
 
@@ -257,6 +254,10 @@ function TrainingPageContent() {
     if (setNumber) {
       resetTrainingSet(setNumber);
       setShowSetComplete(false);
+      setShowResetConfirm(false);
+      setShowFireworks(false);
+      setEarnedCompletion(false);
+      pendingCompletion.current = false;
       // Load the first question after reset
       setTimeout(() => loadNextQuestion(), 0);
     }
@@ -266,6 +267,15 @@ function TrainingPageContent() {
     return null;
   }
 
+  const dashboardHref = `${DMV_ROUTES.dashboard}?completed=training:${setNumber}`;
+  const celebrationCopy = {
+    en: { title: "You turned this step green!", set: "Training complete", progress: "See your progress", description: "Your practice paid off. This training set is now green on your dashboard." },
+    es: { title: "¡Este paso ya está en verde!", set: "Entrenamiento completado", progress: "Ver tu progreso", description: "Tu práctica dio resultado. Este grupo ya está en verde en tu panel." },
+    vi: { title: "Bước này đã chuyển sang màu xanh!", set: "Hoàn thành luyện tập", progress: "Xem tiến độ của bạn", description: "Việc luyện tập đã mang lại kết quả. Bộ luyện tập này giờ đã có màu xanh trên bảng tiến độ." },
+    ko: { title: "이 단계가 초록색이 되었어요!", set: "학습 완료", progress: "내 진행 상황 보기", description: "연습의 결실이에요. 대시보드에서 이 학습 세트가 초록색으로 바뀌었어요." },
+    zh: { title: "这一步变绿了！", set: "练习已完成", progress: "查看你的进度", description: "你的练习有了成果。面板上的这组练习现在变绿了。" },
+  }[language];
+
   return (
     <div className="flex-1 bg-gradient-to-br from-brand-light to-brand-gradient-to">
       {/* Fireworks Animation */}
@@ -273,176 +283,79 @@ function TrainingPageContent() {
         <Fireworks duration={3000} onComplete={handleFireworksComplete} />
       )}
 
-      {/* Onboarding Celebration Modal */}
       {showCelebration && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-in fade-in duration-300">
-          <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 mx-4 max-w-md text-center shadow-2xl animate-in zoom-in-95 duration-300">
-            <div className="mb-4">
-              <img
-                src="/tiger_face_02.png"
-                alt="Happy celebrating tiger"
-                className="w-32 h-32 mx-auto"
-              />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 mb-2">
-              {t("trainingPage.congratulations")}
-            </h2>
-            <p className="text-xl text-brand-dark font-semibold mb-4">
-              {t("trainingPage.youUnlocked")}
-            </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              {t("trainingPage.answeredTenCorrectly")}
-            </p>
-            <div className="flex flex-col gap-3">
-              <Button asChild className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 text-lg py-6">
-                <Link href="/dmv/dashboard">
-                  {t("trainingPage.chooseTrainingSet")}
-                </Link>
+        <AccessibleOverlay
+          aria-label={t("trainingPage.youUnlocked")}
+          onClose={() => { setShowCelebration(false); setShowFireworks(false); }}
+          onOpenAutoFocus={(event) => event.preventDefault()}
+          className="fixed inset-0 z-50 overflow-y-auto bg-gray-950/50 px-4 py-6 backdrop-blur-sm sm:py-10"
+        >
+          <div className="flex min-h-full items-center">
+            <AchievementCelebration
+              eyebrow={t("trainingPage.congratulations")}
+              title={t("trainingPage.youUnlocked")}
+              description={t("trainingPage.answeredTenCorrectly")}
+              earned
+            >
+              <Button asChild className="h-auto min-h-12 w-full whitespace-normal bg-green-700 px-5 py-3 text-base font-bold text-white hover:bg-green-800">
+                <Link href={DMV_ROUTES.dashboard}>{celebrationCopy.progress}</Link>
               </Button>
-              <Button
-                variant="outline"
-                className="w-full"
-                onClick={() => setShowCelebration(false)}
-              >
-                {t("trainingPage.keepGoing")}
-              </Button>
-            </div>
+              <Button variant="ghost" onClick={() => { setShowCelebration(false); setShowFireworks(false); }}>{t("trainingPage.keepGoing")}</Button>
+            </AchievementCelebration>
           </div>
-        </div>
+        </AccessibleOverlay>
       )}
 
-      {/* Set Complete - Full-bleed Score Card */}
       {showSetComplete && isSetMode && (
-        <div className="fixed inset-0 z-50 overflow-y-auto animate-in fade-in duration-300">
-          <div className="min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
-            {/* Back button */}
-            <div className="relative max-w-6xl mx-auto px-4 pt-4">
-              <Button asChild variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/10 -ml-2">
-                <Link href="/dmv/dashboard">
-                  <ArrowLeft className="h-4 w-4 mr-2" />
-                  {t("common.back")}
-                </Link>
+        <AccessibleOverlay
+          aria-label={celebrationCopy.set}
+          onClose={() => router.push(dashboardHref)}
+          onOpenAutoFocus={earnedCompletion ? (event) => event.preventDefault() : undefined}
+          className="fixed inset-0 z-50 overflow-y-auto bg-gray-950/50 px-4 py-6 backdrop-blur-sm sm:py-10"
+        >
+          <div className="flex min-h-full items-center">
+            <AchievementCelebration
+              eyebrow={celebrationCopy.set}
+              title={celebrationCopy.title}
+              description={celebrationCopy.description}
+              detail={<><span className="block">{t(`trainingSets.${setNumber}`)}</span><span className="mt-1 block font-normal">{setProgress?.correct}/{setProgress?.total} {t("trainingPage.questionsCorrect")}</span><span className="mt-1 block font-normal">{states.find((s) => s.code === selectedState)?.name || selectedState}</span></>}
+              earned={earnedCompletion}
+            >
+              <Button asChild className="h-auto min-h-12 w-full whitespace-normal bg-green-700 px-5 py-3 text-base font-bold text-white hover:bg-green-800">
+                <Link href={dashboardHref}>{celebrationCopy.progress}</Link>
               </Button>
-            </div>
-
-            <div className="relative text-center px-6 pt-4 pb-10 max-w-lg mx-auto">
-              {/* Branding header */}
-              <div className="mb-6">
-                <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
-                <div className="text-gray-400 text-xs uppercase tracking-widest mt-1">
-                  {language === "es" ? "ENTRENAMIENTO DMV" : language === "vi" ? "LUYỆN TẬP DMV" : language === "ko" ? "DMV 학습" : language === "zh" ? "DMV 练习" : "DMV TRAINING"}
-                </div>
-              </div>
-
-              {/* Tiger face */}
-              <div className="flex justify-center mb-5">
-                <Image
-                  src="/tiger_face_01.png"
-                  alt="Tiger mascot"
-                  width={160}
-                  height={160}
-                  className="w-[120px] h-[120px] md:w-[160px] md:h-[160px]"
-                />
-              </div>
-
-              {/* Tagline */}
-              <div className="text-base md:text-lg font-extrabold uppercase tracking-widest mb-4 text-green-300">
-                {language === "es" ? "DOMINÉ MI ENTRENAMIENTO DEL DMV" : language === "vi" ? "ĐÃ THÀNH THẠO PHẦN LUYỆN TẬP DMV" : language === "ko" ? "DMV 학습을 완전히 정복했습니다" : language === "zh" ? "我已掌握 DMV 练习" : "MASTERED MY DMV TRAINING"}
-              </div>
-
-              {/* Giant percentage */}
-              <div className="text-7xl md:text-8xl font-black mb-3 leading-none text-green-500 dark:text-green-400">
-                100%
-              </div>
-
-              {/* 50 out of 50 correct */}
-              <div className="text-xl md:text-2xl text-gray-400 mb-5">
-                50 {t("results.outOf")} 50 {t("results.correctLabel")}
-              </div>
-
-              {/* MASTERED badge */}
-              <Badge className="text-lg px-6 py-2 mb-5 bg-green-600 hover:bg-green-700">
-                {language === "es" ? "DOMINADO" : language === "vi" ? "THÀNH THẠO" : language === "ko" ? "정복 완료" : language === "zh" ? "已掌握" : "MASTERED"}
-              </Badge>
-
-              {/* State + Set name */}
-              <div className="text-gray-400 text-base mb-2">
-                {states.find((s) => s.code === selectedState)?.name || selectedState} · {t(`trainingSets.${setNumber}`)}
-              </div>
-
-              {/* Branding footer */}
-              <div className="text-gray-400 text-sm tracking-wider mb-8">tigertest.io</div>
-
-              {/* SHARE + TRY AGAIN buttons */}
-              <div className="flex gap-3 max-w-xs mx-auto">
-                {selectedState && setNumber && (
+              <div className="flex flex-wrap items-center justify-center gap-2">
+                {selectedState && setNumber && setProgress && (
                   <ShareButton
-                    score={50}
-                    totalQuestions={50}
+                    score={setProgress.total}
+                    totalQuestions={setProgress.total}
                     percentage={100}
                     passed={true}
                     setId={setNumber}
                     stateCode={selectedState}
-                    className="flex-1 bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 font-bold uppercase tracking-wide h-12 text-base"
+                    className="h-auto min-h-11 whitespace-normal border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800"
                   />
                 )}
-                {!isGuest && (
-                  <Button asChild
-                      className="w-full bg-transparent text-white hover:bg-white/10 border border-white/30 font-bold uppercase tracking-wide h-12 text-base"
-                    >
-                    <Link href="/stats" className="flex-1">
-                      {t("results.viewStats")}
-                    </Link>
-                  </Button>
-                )}
+                {!isGuest && <Button asChild variant="ghost"><Link href={DMV_ROUTES.stats}>{t("results.viewStats")}</Link></Button>}
+                <Button ref={retryButtonRef} variant="ghost" onClick={() => setShowResetConfirm(true)}>{t("results.tryAgain")}</Button>
               </div>
-
-              {/* Community wrong-questions challenge */}
               {!isGuest && (
-                <Link
-                  href="/stats?tab=community"
-                  onClick={() => trackStatsEntry("training_complete", "community")}
-                  className="inline-block mt-5 text-sm font-medium text-green-200/80 hover:text-white transition-colors"
-                >
+                <Link href="/stats?tab=community" onClick={() => trackStatsEntry("training_complete", "community")} className="mt-1 rounded-md px-2 py-2 text-sm font-medium text-green-800 hover:underline dark:text-green-200">
                   {t("trainingPage.beatMostMissed")} →
                 </Link>
               )}
-
-              {/* Reset confirmation */}
               {showResetConfirm && (
-                <div className="mt-4 bg-white/10 backdrop-blur-sm rounded-xl p-4 max-w-xs mx-auto animate-in fade-in duration-200">
-                  <p className="text-gray-200 text-sm mb-3">
-                    {t("trainingPage.resetConfirm")}
-                  </p>
+                <div role="group" aria-label={t("trainingPage.resetConfirm")} className="mt-2 rounded-xl border border-gray-200 bg-white p-4 text-left dark:border-gray-700 dark:bg-gray-900">
+                  <p className="mb-3 text-sm text-gray-600 dark:text-gray-300">{t("trainingPage.resetConfirm")}</p>
                   <div className="flex gap-2">
-                    <Button
-                      className="flex-1 bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold h-10 text-sm"
-                      onClick={handlePracticeAgain}
-                    >
-                      {t("trainingPage.resetYes")}
-                    </Button>
-                    <Button
-                      className="flex-1 bg-transparent text-white hover:bg-white/10 border border-white/30 font-semibold h-10 text-sm"
-                      onClick={() => setShowResetConfirm(false)}
-                    >
-                      {t("common.cancel")}
-                    </Button>
+                    <Button variant="outline" className="flex-1" onClick={handlePracticeAgain}>{t("trainingPage.resetYes")}</Button>
+                    <Button variant="ghost" className="flex-1" onClick={() => { setShowResetConfirm(false); retryButtonRef.current?.focus(); }}>{t("common.cancel")}</Button>
                   </div>
                 </div>
               )}
-            </div>
-
-            {/* Try Again link */}
-            <div className="text-center py-5">
-              <button
-                onClick={() => setShowResetConfirm(true)}
-                className="text-gray-400 hover:text-gray-300 text-sm font-medium transition-colors"
-              >
-                {t("results.tryAgain")} →
-              </button>
-            </div>
+            </AchievementCelebration>
           </div>
-        </div>
+        </AccessibleOverlay>
       )}
 
       <TestPageHeader

@@ -1,6 +1,8 @@
 // Run: node --test tests/nclex-copy.test.cjs
 // Render the real views with deterministic local state; no Firebase or browser needed.
 require('tsx/cjs');
+// Node's SSR harness does not load bundled CSS modules.
+require.extensions['.css'] = (module) => { module.exports = {}; };
 const assert = require('node:assert/strict');
 const { test } = require('node:test');
 const { readFileSync } = require('node:fs');
@@ -8,6 +10,8 @@ const path = require('node:path');
 const { createRequire } = require('node:module');
 const ts = require('typescript');
 const React = require('react');
+// tsx respects this repository's preserved JSX when loading nested views.
+global.React = React;
 const { renderToStaticMarkup } = require('react-dom/server');
 const { NCLEX } = require('../lib/v2/exams/nclex.ts');
 const { SAT } = require('../lib/v2/exams/sat.ts');

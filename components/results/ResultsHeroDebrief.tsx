@@ -1,7 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { AchievementCelebration } from "@/components/AchievementCelebration";
+import { takeAchievementCelebration } from "@/lib/achievementCelebration";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Fireworks } from "@/components/Fireworks";
@@ -25,6 +28,8 @@ export function ResultsHeroDebrief({
 }) {
   const router = useRouter();
   const [showFireworks, setShowFireworks] = useState(false);
+  const [earned, setEarned] = useState(false);
+  const checkedResult = useRef<string | null>(null);
 
   const {
     testId,
@@ -44,11 +49,19 @@ export function ResultsHeroDebrief({
     routes,
     displayTestNumber,
     t,
+    language,
   } = results;
 
   useEffect(() => {
-    if (passed) setShowFireworks(true);
-  }, [passed]);
+    if (checkedResult.current === testSession.id) return;
+    checkedResult.current = testSession.id;
+    const newlyCompleted = takeAchievementCelebration(testSession.id);
+    setEarned(passed && newlyCompleted);
+    setShowFireworks(passed && newlyCompleted);
+  }, [passed, testSession.id]);
+
+  const progressLabel = { en: "See your progress", es: "Ver tu progreso", vi: "Xem tiến độ của bạn", ko: "내 진행 상황 보기", zh: "查看你的进步" }[language];
+  const completedLabel = { en: "Practice test complete", es: "Prueba de práctica completada", vi: "Hoàn thành bài thi thử", ko: "모의시험 완료", zh: "模拟考试完成" }[language];
 
   const passThreshold = Math.ceil(totalQuestions * 0.7);
   const answersFromPass = Math.max(passThreshold - score, 1);
@@ -106,6 +119,26 @@ export function ResultsHeroDebrief({
       )}
 
       <div className="relative container mx-auto px-4 pt-8 pb-4 max-w-lg md:max-w-2xl lg:max-w-4xl space-y-3">
+        {passed ? (
+          <AchievementCelebration
+            examId={routes.id}
+            earned={earned}
+            headingLevel={1}
+            eyebrow={completedLabel}
+            title={coachLine}
+            description={coachSub}
+            detail={<><span className="block text-3xl font-extrabold tabular-nums">{percentage}%</span><span>{t("results.chipCorrect").replace("{{score}}", String(score)).replace("{{total}}", String(totalQuestions))}</span></>}
+          >
+            <Button asChild className="h-12 w-full bg-brand text-base font-bold text-white hover:bg-brand-hover">
+              <Link href={`${routes.dashboard}?completed=${encodeURIComponent(`test:${displayTestNumber(testId)}`)}`}>{progressLabel}</Link>
+            </Button>
+            <Button variant="outline" onClick={startNext} className="h-12 w-full bg-white font-semibold dark:bg-gray-900">{passCtaLabel}</Button>
+            <div className="flex flex-wrap gap-2">
+              {missCount > 0 && <Button variant="ghost" onClick={onDrill} className="h-11 flex-1 whitespace-normal">{passGhostLabel}</Button>}
+              <ShareButton score={score} totalQuestions={totalQuestions} percentage={percentage} passed={passed} testId={testId} stateCode={testSession.state} className="h-11 flex-1 border border-gray-200 bg-white font-semibold text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800" />
+            </div>
+          </AchievementCelebration>
+        ) : (
         <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 pt-4 pb-5 shadow-sm">
           {isBaseline ? (
             <>
@@ -173,13 +206,14 @@ export function ResultsHeroDebrief({
             </div>
           </div>
         </div>
+        )}
 
         <div className="flex gap-1.5 flex-wrap">
-          <span className="rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 px-2.5 py-1 text-[11px] font-medium text-gray-600 dark:text-gray-300">
+          {!passed && <span className="rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 px-2.5 py-1 text-[11px] font-medium text-gray-600 dark:text-gray-300">
             {t("results.chipCorrect")
               .replace("{{score}}", String(score))
               .replace("{{total}}", String(totalQuestions))}
-          </span>
+          </span>}
           {attemptNumber > 1 && improvement > 0 && (
             <span className="rounded-full bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 px-2.5 py-1 text-[11px] font-medium text-green-700 dark:text-green-300">
               {t("results.chipVsFirst").replace("{{n}}", String(improvement))}
@@ -198,36 +232,7 @@ export function ResultsHeroDebrief({
           )}
         </div>
 
-        {passed ? (
-          <div className="flex flex-col sm:flex-row gap-2">
-            <Button
-              onClick={startNext}
-              className="w-full sm:flex-1 h-12 bg-brand text-white hover:bg-brand-hover font-bold text-base"
-            >
-              {passCtaLabel}
-            </Button>
-            <div className="flex gap-2 sm:flex-1">
-              {missCount > 0 && (
-                <Button
-                  variant="outline"
-                  onClick={onDrill}
-                  className="flex-1 h-12 bg-white dark:bg-gray-900 font-semibold text-gray-700 dark:text-gray-200"
-                >
-                  {passGhostLabel}
-                </Button>
-              )}
-              <ShareButton
-                score={score}
-                totalQuestions={totalQuestions}
-                percentage={percentage}
-                passed={passed}
-                testId={testId}
-                stateCode={testSession.state}
-                className="flex-1 h-12 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold"
-              />
-            </div>
-          </div>
-        ) : isBaseline ? (
+        {passed ? null : isBaseline ? (
           <div className="flex flex-col sm:flex-row gap-2">
             <Button
               onClick={() => router.push(routes.test(testId))}

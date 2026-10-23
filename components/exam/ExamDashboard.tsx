@@ -52,6 +52,8 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
   const { exam, routes, ui, lang } = useLocalizedExam(source);
   const router = useRouter();
   const hydrated = useHydration();
+  const firestoreLoaded = useStore((state) => state.firestoreLoaded);
+  const [highlightedStep, setHighlightedStep] = useState<string | null>(null);
   const { t } = useTranslation();
   const isGuest = useStore((state) => state.isGuest);
   const startGuestSession = useStore((state) => state.startGuestSession);
@@ -128,6 +130,41 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
     const correct = Math.min(p.size, mastered.filter((id) => trainingPartOf(p.set.id, id) === p.part).length);
     return { correct, total: p.size, complete: correct >= p.size };
   };
+  // The completion CTA points at a genuinely green row. A split part never
+  // claims its whole set. Consume the marker so Back/refresh does not replay it.
+  useEffect(() => {
+    if (!hydrated || authLoading || (user && !firestoreLoaded) || forwardTo) return;
+    const url = new URL(window.location.href);
+    const marker = url.searchParams.get("completed");
+    if (!marker) return;
+    const match = /^(training|test):([1-9]\d*)$/.exec(marker);
+    let rowId: string | undefined;
+    if (match?.[1] === "training") {
+      const requestedPart = url.searchParams.get("part");
+      const completedPart = parts.find((p) =>
+        p.set.setNumber === Number(match[2]) &&
+        (requestedPart ? p.part === Number(requestedPart) : p.partCount === 1)
+      );
+      if (completedPart && partProgress(completedPart).complete) {
+        rowId = `training-${completedPart.set.setNumber}-${completedPart.part}`;
+      }
+    } else if (match?.[1] === "test") {
+      const testId = routes.testIds.find((id) => routes.displayTestNumber(id) === Number(match[2]));
+      if (testId && (getTestAttemptStats(testId)?.bestScore ?? -1) >= PASS_SCORE) {
+        rowId = `test-${Number(match[2])}`;
+      }
+    }
+    const row = rowId ? document.getElementById(rowId) : null;
+    if (row && rowId) {
+      setHighlightedStep(rowId);
+      row.querySelector<HTMLElement>("a, button")?.focus({ preventScroll: true });
+      row.scrollIntoView({ block: "center", behavior: "instant" });
+    }
+    url.searchParams.delete("completed");
+    if (match?.[1] === "training") url.searchParams.delete("part");
+    window.history.replaceState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
+  }, [hydrated, authLoading, user, firestoreLoaded, forwardTo, trainingSets, completedTests, exam.id]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const testComplete = (testId: number) => {
     if (!hydrated) return false;
     const stats = getTestAttemptStats(testId);
@@ -152,23 +189,26 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
     const def = p.set;
     const progress = partProgress(p);
     const isStartHere = stepNumber === 1 && !anyProgress;
+    const rowId = `training-${def.setNumber}-${p.part}`;
     return (
-      <ProgressCard
-        title={trainingPartName(p, lang)}
-        subtitle={def.weightLabel ? `${progress.correct}/${progress.total} · ${def.weightLabel}` : `${progress.correct}/${progress.total}`}
-        completed={progress.complete}
-        stepNumber={stepNumber}
-        stamp={
-          progress.complete
-            ? { label: t("dashboard.stampComplete"), color: "green" as const }
-            : isStartHere
-              ? { label: t("dashboard.stampStartHere"), color: "amber" as const }
-              : progress.correct > 0
-                ? { label: t("dashboard.stampContinue"), color: "amber" as const }
-                : undefined
-        }
-        href={routes.training(def.setNumber, p.partCount > 1 ? p.part : undefined)}
-      />
+      <div id={rowId} className={`scroll-mt-24 rounded-lg ${highlightedStep === rowId ? "ring-2 ring-green-500 ring-offset-4 ring-offset-white dark:ring-offset-gray-950" : ""}`}>
+        <ProgressCard
+          title={trainingPartName(p, lang)}
+          subtitle={def.weightLabel ? `${progress.correct}/${progress.total} · ${def.weightLabel}` : `${progress.correct}/${progress.total}`}
+          completed={progress.complete}
+          stepNumber={stepNumber}
+          stamp={
+            progress.complete
+              ? { label: t("dashboard.stampComplete"), color: "green" as const }
+              : isStartHere
+                ? { label: t("dashboard.stampStartHere"), color: "amber" as const }
+                : progress.correct > 0
+                  ? { label: t("dashboard.stampContinue"), color: "amber" as const }
+                  : undefined
+          }
+          href={routes.training(def.setNumber, p.partCount > 1 ? p.part : undefined)}
+        />
+      </div>
     );
   };
 
@@ -211,7 +251,7 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
     }
 
     return (
-      <div>
+      <div id={`test-${n}`} className={`scroll-mt-24 rounded-lg ${highlightedStep === `test-${n}` ? "ring-2 ring-green-500 ring-offset-4 ring-offset-white dark:ring-offset-gray-950" : ""}`}>
         <ProgressCard
           title={exam.testCount === 1 ? ui.fullLengthExam : ui.testN(n)}
           subtitle={subtitle}

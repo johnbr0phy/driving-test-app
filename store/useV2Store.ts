@@ -1,3 +1,4 @@
+import { queueAchievementCelebration } from "@/lib/achievementCelebration";
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { withoutExamV2 } from "@/lib/v2/merge";
@@ -61,6 +62,7 @@ export const useV2Store = create<V2State>()(
           return { sessions };
         }),
       addResult: (result) => {
+        queueAchievementCelebration(`v2:${result.key}:${result.completedAt}`);
         trackFunnelStep("answered");
         trackQuestionsAnswered(result.items.filter((i) => isAnswered(i.answer)).length, result.examId);
         set((s) => ({ results: [...s.results, result] }));

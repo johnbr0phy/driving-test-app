@@ -223,7 +223,7 @@ export function QuizPractice({ code }: { code: string }) {
           )}
         </div>
 
-        {current && <ReportQuestion key={current.questionId} code={code} questionId={current.questionId.slice(code.length + 1)} />}
+        {current && <ReportQuestion key={`report-${current.questionId}`} code={code} questionId={current.questionId.slice(code.length + 1)} />}
       </div>
     </div>
   );

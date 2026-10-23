@@ -278,7 +278,7 @@ const quizQuestionsSchema = z.array(quizQuestionSchema).min(1).describe('The que
 
 const quizVisibilitySchema = z
   .enum(['private', 'link', 'public'])
-  .describe('"link" (default): anyone with the link can play. "private": only the creator. "public": also listed in the tigertest.io/quizzes library once enough people have played it.');
+  .describe('"link" (default): anyone with the link can play. "private": only the creator. "public": also listed in the tigertest.io/quizzes library.');
 
 const QUIZ_WRITING_HINT =
   `${QUIZ_CONTEXT_GUIDANCE} ` +

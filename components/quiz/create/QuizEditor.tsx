@@ -56,7 +56,7 @@ interface Props {
 const VISIBILITY_CHOICES: { value: QuizVisibility; name: string; hint: string }[] = [
   { value: "private", name: "Private", hint: "Only you" },
   { value: "link", name: "Link", hint: "Anyone with the link" },
-  { value: "public", name: "Public", hint: "Listed in the TigerTest library once 5 people have played it" },
+  { value: "public", name: "Public", hint: "Listed in the TigerTest library for anyone to play" },
 ];
 
 const fieldClass = "block text-sm font-medium text-gray-800 dark:text-gray-100 mb-1.5";

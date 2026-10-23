@@ -5,8 +5,9 @@ import { listPublicQuizzes } from "@/lib/server/quizzes";
 import type { QuizSummary } from "@/lib/quizzes";
 import { QuizLibrary } from "@/components/quiz/create/QuizLibrary";
 
-// The public quiz library: quizzes members set to Public that enough people
-// have played, most played first. Rebuilt every five minutes.
+// The public quiz library: every quiz a member set to Public, featured first,
+// then most played. Rebuilt every five minutes. (The sitemap and the quiz
+// page's index tag still wait for QUIZ_PUBLIC_MIN_PLAYS plays.)
 
 export const revalidate = 300;
 
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
 export default async function QuizzesPage() {
   let quizzes: QuizSummary[] = [];
   try {
-    quizzes = await listPublicQuizzes(100);
+    quizzes = await listPublicQuizzes(500, 0);
   } catch (e) {
     // No Firestore (a build without credentials) or a read error: show the empty library rather than fail the page.
     console.error("[quizzes] could not list public quizzes", e);

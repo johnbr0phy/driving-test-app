@@ -1,23 +1,49 @@
 "use client";
 
-// A quiz's dashboard (/q/<code>/dashboard): what it is, who made it, the three ways to play
-// it, the link to share, and the name a player gives so the creator can see
-// how they did.
+// A quiz's dashboard (/q/<code>/dashboard), laid out like an exam dashboard
+// (components/exam/ExamDashboard.tsx): the tiger hero with an N/M step count,
+// numbered practice sets (quizPracticeSets: one per topic, or about 25
+// questions each), then the practice test as the last step. Flashcards and
+// the share link sit below as entry cards; the owner gets See who played and
+// Edit in the hero; a player gives their name so the owner can see them.
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { BarChart3, Check, Copy, Layers, ListChecks, Pencil, Share2, Target, Users } from "lucide-react";
+import Image from "next/image";
+import { BarChart3, Check, ChevronRight, Copy, Layers, Pencil, Share2, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { ProgressCard } from "@/components/dashboard/ProgressCard";
 import { useHydration } from "@/hooks/useHydration";
-import { quizLink, quizPath, quizTopics, quizUrl, type QuizPublic } from "@/lib/quizzes";
+import { getTigerAsset } from "@/lib/tigerAssets";
+import { QUIZ_TEST_MAX_QUESTIONS, quizLink, quizPath, quizPracticeSets, quizQuestionId, quizUrl, type QuizPublic } from "@/lib/quizzes";
 import { joinQuiz, quizMembership } from "@/lib/quizProgress";
 import { leaveClass, type ClassMembership } from "@/lib/classProgress";
 import { codeProgress, useQuizStore } from "@/store/useQuizStore";
 import { QuizStates, useQuiz } from "@/components/quiz/QuizLoader";
 
-const card = "rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800";
+type Stamp = { label: string; color: "green" | "amber" | "red" };
+
+const card = "rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800";
 const anonKey = (code: string) => `tigertest-quiz-anon-${code}`;
+
+function heroSub(done: number, total: number): string {
+  const frac = total > 0 ? done / total : 0;
+  if (done === 0) return "Start with step 1. Misses come back until you get them right.";
+  if (frac >= 1) return "Every step done. You know this quiz.";
+  if (frac < 0.4) return "Good start. Keep working down the list.";
+  if (frac < 0.7) return "Halfway there. Keep it going.";
+  return "Nearly there. Pass the practice test to finish.";
+}
+
+function getTigerFace(complete: number, total: number): string {
+  const pct = Math.round((complete / total) * 100);
+  if (pct >= 100) return getTigerAsset("dmv", 1);
+  if (pct >= 75) return getTigerAsset("dmv", 2);
+  if (pct >= 50) return getTigerAsset("dmv", 4);
+  if (pct >= 25) return getTigerAsset("dmv", 6);
+  return getTigerAsset("dmv", 8);
+}
 
 export function QuizHome({ code, initial }: { code: string; initial: QuizPublic | null }) {
   const state = useQuiz(code, initial);
@@ -56,7 +82,6 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
   if (!quiz) return <QuizStates code={code} state={state} />;
 
   const total = quiz.questions.length;
-  const topics = quizTopics(quiz.questions);
   const mastered = hydrated ? progress.masteredIds.length : 0;
   const known = hydrated ? progress.known.length : 0;
   const best = hydrated && progress.tests.length ? Math.max(...progress.tests.map((t) => Math.round((t.correct / t.total) * 100))) : null;
@@ -75,7 +100,7 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
 
   const share = async () => {
     try {
-      await navigator.share({ title: quiz.title, text: `${quiz.title}: ${total} practice questions on TigerTest`, url: quizUrl(code) });
+      await navigator.share({ title: quiz.title, text: `${quiz.title}: ${total} practice questions on Tigertest`, url: quizUrl(code) });
     } catch {
       // Cancelled or unsupported: nothing to do.
     }
@@ -112,92 +137,40 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
     setMembership(undefined);
   };
 
-  const modes: { href: string; icon: React.ReactNode; title: string; line: string; pct: number | null; extra?: string }[] = [
-    {
-      href: `${quizPath(code)}/practice`,
-      icon: <Target className="w-5 h-5 text-brand-dark" aria-hidden="true" />,
-      title: "Practice",
-      line: `${mastered}/${total} mastered`,
-      pct: total ? (mastered / total) * 100 : 0,
-      extra: "Answer, see why, and misses come back until you get them right.",
-    },
-    {
-      href: `${quizPath(code)}/test`,
-      icon: <ListChecks className="w-5 h-5 text-brand-dark" aria-hidden="true" />,
-      title: inProgress ? "Resume your test" : "Test",
-      line: best === null ? "Not taken yet" : `Best ${best}%`,
-      pct: best,
-      extra: `${Math.min(total, 50)} questions, no feedback until the end. Pass line ${quiz.passPct}%.`,
-    },
-    {
-      href: `${quizPath(code)}/flashcards`,
-      icon: <Layers className="w-5 h-5 text-brand-dark" aria-hidden="true" />,
-      title: "Flashcards",
-      line: `${known}/${total} known`,
-      pct: total ? (known / total) * 100 : 0,
-      extra: "Flip, then mark what you know.",
-    },
-  ];
+  const sets = quizPracticeSets(quiz.questions);
+  const setProgress = sets.map((set) => {
+    const ids = set.ids.map((id) => quizQuestionId(code, id));
+    const correct = hydrated ? ids.filter((id) => progress.masteredIds.includes(id)).length : 0;
+    return { correct, total: ids.length, complete: correct >= ids.length };
+  });
+  const testSize = Math.min(total, QUIZ_TEST_MAX_QUESTIONS);
+  const testPassed = best !== null && best >= quiz.passPct;
+  const answered = inProgress ? Object.keys(progress.current?.answers ?? {}).length : 0;
+  const completedSteps = setProgress.filter((p) => p.complete).length + (testPassed ? 1 : 0);
+  const totalSteps = sets.length + 1;
+  const anyProgress = mastered > 0 || progress.tests.length > 0 || inProgress;
+
+  let testSubtitle = `${testSize} questions, ${quiz.passPct}% to pass`;
+  if (inProgress) testSubtitle = `${answered}/${progress.current?.questionIds.length ?? testSize} answered`;
+  else if (best !== null) testSubtitle = testPassed ? `Best score: ${best}%` : `Best score: ${best}%. You need ${quiz.passPct}% to pass`;
+  let testStamp: Stamp | undefined;
+  if (inProgress) testStamp = { label: "Continue", color: "amber" };
+  else if (best === 100) testStamp = { label: "Mastered", color: "green" };
+  else if (testPassed) testStamp = { label: "Passed", color: "green" };
+  else if (best !== null) testStamp = { label: "Keep going", color: "amber" };
+
+  const playerLine = mine && (quiz.plays > 0 || quiz.memberCount > 0)
+    ? ` · ${quiz.memberCount} ${quiz.memberCount === 1 ? "player" : "players"}`
+    : "";
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <div className="container mx-auto px-4 py-8 max-w-lg md:max-w-2xl space-y-5">
-        <div>
-          <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">Your quiz dashboard</p>
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50">{quiz.title}</h1>
-          {quiz.description && <p className="text-gray-600 dark:text-gray-300 mt-2">{quiz.description}</p>}
-          <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
-            by {quiz.ownerName} · {total} {total === 1 ? "question" : "questions"} · {quiz.plays} {quiz.plays === 1 ? "play" : "plays"} · {quiz.memberCount}{" "}
-            {quiz.memberCount === 1 ? "player" : "players"}
-          </p>
-          {topics.length > 0 && (
-            <ul className="flex flex-wrap gap-1.5 mt-3" aria-label="Topics">
-              {topics.map((t) => (
-                <li key={t} className="rounded-full bg-brand-light text-brand-darker px-2.5 py-0.5 text-xs font-medium">
-                  {t}
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-
-        {mine && (
-          <div className="flex flex-wrap gap-2">
-            <Button asChild variant="outline" className="border-gray-300 dark:border-gray-700">
-              <Link href={`${quizPath(code)}/edit`}>
-                <Pencil className="w-4 h-4 mr-2" aria-hidden="true" /> Edit
-              </Link>
-            </Button>
-            <Button asChild className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
-              <Link href={`${quizPath(code)}/report`}>
-                <BarChart3 className="w-4 h-4 mr-2" aria-hidden="true" /> See who played
-              </Link>
-            </Button>
-          </div>
-        )}
-
-        <Link href={quizPath(code)} className="inline-block text-sm underline text-gray-600 dark:text-gray-300">View share page</Link>
-
-        <div className="grid gap-3">
-          {modes.map((m) => (
-            <Link key={m.href} href={m.href} className={`${card} p-4 flex items-center gap-4 hover:border-brand transition-colors`}>
-              <div className="w-10 h-10 rounded-full bg-brand-light flex items-center justify-center shrink-0">{m.icon}</div>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-baseline justify-between gap-3">
-                  <span className="font-semibold text-gray-900 dark:text-gray-50">{m.title}</span>
-                  <span className="text-sm tabular-nums text-gray-600 dark:text-gray-300 shrink-0">{m.line}</span>
-                </div>
-                {m.extra && <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{m.extra}</p>}
-                <div className="w-full bg-brand-border-light rounded-full h-1.5 mt-2">
-                  <div className="bg-brand h-1.5 rounded-full transition-all" style={{ width: `${Math.min(100, m.pct ?? 0)}%` }} />
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+      <div className="relative">
+      <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
+      <div className="relative container mx-auto px-4 sm:px-6 py-6 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {!mine && hydrated && !anonymous && (
-          <div className={`${card} p-5`}>
+          <div className={`${card} p-4 mb-4`}>
             {membership ? (
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-2 min-w-0">
@@ -249,44 +222,146 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
           </div>
         )}
 
-        <div className={`${card} p-5`}>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">
-            {quiz.visibility === "private"
-              ? "Private quiz: only you can open this link"
-              : quiz.visibility === "class"
-                ? `Only students in ${quiz.className || "your class"} can open this link`
-                : "Share this quiz"}
+        {/* Hero card with progress */}
+        <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
+          <div className="flex items-center gap-4">
+            <Image
+              src={getTigerFace(completedSteps, totalSteps)}
+              alt="Tiger mascot"
+              width={48}
+              height={48}
+              className="w-12 h-12 flex-shrink-0"
+            />
+            <div className="flex-1 min-w-0">
+              <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{quiz.title}</h1>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroSub(completedSteps, totalSteps)}</p>
+            </div>
+            <div className="flex-shrink-0 text-right">
+              <div className="text-2xl font-bold tabular-nums text-gray-900 dark:text-gray-50">{completedSteps}/{totalSteps}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">complete</div>
+            </div>
+          </div>
+          <p className="mt-3 pt-3 border-t border-gray-100 dark:border-gray-800 text-xs text-gray-500 dark:text-gray-400">
+            {mine ? "Your quiz" : `By ${quiz.ownerName}`} · {total} {total === 1 ? "question" : "questions"}{playerLine}
           </p>
-          <p className="font-mono text-sm text-gray-900 dark:text-gray-50 mb-3 break-all">{quizLink(code)}</p>
-          {mine && quiz.visibility === "class" && quiz.classCode && (
-            <p className="text-xs text-gray-600 dark:text-gray-300 -mt-2 mb-3">
-              Students already in the class go straight in. New ones type the class code <span className="font-mono font-semibold">{quiz.classCode}</span> on the link.
-            </p>
+          {mine && (
+            <div className="mt-3 flex flex-wrap gap-2">
+              <Link
+                href={`${quizPath(code)}/report`}
+                className="inline-flex items-center gap-1.5 rounded-lg bg-black dark:bg-white text-white dark:text-gray-900 font-bold text-sm px-3 py-2 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
+              >
+                <BarChart3 className="w-4 h-4" aria-hidden="true" /> See who played
+              </Link>
+              <Link
+                href={`${quizPath(code)}/edit`}
+                className="inline-flex items-center gap-1.5 rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-100 font-bold text-sm px-3 py-2 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+              >
+                <Pencil className="w-4 h-4" aria-hidden="true" /> Edit quiz
+              </Link>
+            </div>
           )}
-          <div className="flex flex-wrap gap-2">
+        </div>
+
+        {/* Practice sets, one per topic (or about 25 questions) */}
+        <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
+          {sets.length === 1 ? "Practice" : "Practice sets"}
+        </p>
+        <div className="mb-6 space-y-1.5">
+          {sets.map((set, i) => {
+            const p = setProgress[i];
+            return (
+              <ProgressCard
+                key={set.n}
+                title={set.name}
+                subtitle={`${p.correct}/${p.total} mastered`}
+                completed={p.complete}
+                stepNumber={i + 1}
+                stamp={
+                  p.complete
+                    ? { label: "Complete", color: "green" }
+                    : i === 0 && !anyProgress
+                      ? { label: "Start here", color: "amber" }
+                      : p.correct > 0
+                        ? { label: "Continue", color: "amber" }
+                        : undefined
+                }
+                href={sets.length === 1 ? `${quizPath(code)}/practice` : `${quizPath(code)}/practice?set=${set.n}`}
+              />
+            );
+          })}
+        </div>
+
+        {/* The practice test */}
+        <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">Practice test</p>
+        <div className="mb-6">
+          <ProgressCard
+            title="Practice test"
+            subtitle={testSubtitle}
+            completed={testPassed}
+            stepNumber={totalSteps}
+            stamp={testStamp}
+            href={`${quizPath(code)}/test`}
+          />
+        </div>
+
+        {/* Flashcards: a way to study, not a step */}
+        <Link href={`${quizPath(code)}/flashcards`} className="block mb-3">
+          <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 flex items-center gap-3 hover:shadow-md transition-shadow">
+            <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+              <Layers className="h-4 w-4 text-brand-dark" aria-hidden="true" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h2 className="font-semibold text-sm text-gray-900 dark:text-gray-50">Flashcards</h2>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{known}/{total} known. Flip, then mark what you know.</p>
+            </div>
+            <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" aria-hidden="true" />
+          </div>
+        </Link>
+
+        {/* Share */}
+        <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 flex items-center gap-3">
+          <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+            <Share2 className="h-4 w-4 text-brand-dark" aria-hidden="true" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <h2 className="font-semibold text-sm text-gray-900 dark:text-gray-50">
+              {quiz.visibility === "private" ? "Private quiz" : quiz.visibility === "class" ? `Shared with ${quiz.className || "your class"}` : "Share this quiz"}
+            </h2>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 font-mono truncate">{quizLink(code)}</p>
+            {mine && quiz.visibility === "class" && quiz.classCode && (
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                New students type the class code <span className="font-mono font-semibold">{quiz.classCode}</span> on the link.
+              </p>
+            )}
+          </div>
+          <div className="flex gap-1.5 flex-shrink-0">
             <button
               type="button"
               onClick={copy}
-              className="inline-flex items-center gap-1.5 rounded-md border border-gray-300 dark:border-gray-700 px-3 py-1.5 text-sm text-gray-800 dark:text-gray-100"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 dark:border-gray-800 px-2.5 py-1.5 text-xs font-bold text-gray-800 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
             >
-              {copied ? <Check className="w-4 h-4" aria-hidden="true" /> : <Copy className="w-4 h-4" aria-hidden="true" />}
-              <span aria-live="polite">{copied ? "Copied" : "Copy link"}</span>
+              {copied ? <Check className="w-3.5 h-3.5" aria-hidden="true" /> : <Copy className="w-3.5 h-3.5" aria-hidden="true" />}
+              <span aria-live="polite">{copied ? "Copied" : "Copy"}</span>
             </button>
-            {canShare && (
+            {canShare && quiz.visibility !== "private" && (
               <button
                 type="button"
                 onClick={share}
-                className="inline-flex items-center gap-1.5 rounded-md border border-gray-300 dark:border-gray-700 px-3 py-1.5 text-sm text-gray-800 dark:text-gray-100"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 dark:border-gray-800 px-2.5 py-1.5 text-xs font-bold text-gray-800 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
               >
-                <Share2 className="w-4 h-4" aria-hidden="true" /> Share
+                Share
               </button>
             )}
           </div>
         </div>
 
-        <p className="text-xs text-gray-500 dark:text-gray-400">
-          {quiz.visibility === "class" ? "No account needed." : "Free to play, no account needed."} Made with TigerTest; <Link href="/create" className="underline">make your own quiz</Link>.
+        <p className="mt-6 text-center text-[11px] text-gray-500 dark:text-gray-400">
+          {mine ? "Made" : `Made by ${quiz.ownerName}`} with Tigertest.{" "}
+          <Link href={quizPath(code)} className="underline hover:text-gray-600 dark:hover:text-gray-300">About this quiz</Link>
+          {" · "}
+          <Link href="/create" className="underline hover:text-gray-600 dark:hover:text-gray-300">Make your own quiz</Link>
         </p>
+      </div>
       </div>
     </div>
   );

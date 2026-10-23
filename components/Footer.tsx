@@ -42,6 +42,9 @@ export function Footer() {
   // DMV pages, nursing on nursing pages...). The /tests hub links everything.
   const footerTests = relatedTests(exam?.id ?? "dmv", 8);
   const isHomepage = pathname === "/dmv-practice-test";
+  // User-made quizzes are not a test cluster: no state or test links there.
+  const isQuizPage =
+    pathname === "/q" || !!pathname?.startsWith("/q/") || pathname === "/quizzes" || pathname === "/create";
   // Driving schools only belong next to driving tests (DMV, CDL, motorcycle).
 
   // SEO landing pages have dedicated /es/ and /vi/ URLs, so they manage
@@ -62,14 +65,14 @@ export function Footer() {
   // on its English landing page.
   const examLangs = v1Exam ? examLanguages(v1Exam) : [];
   const onTranslatedExamApp = !!v1Exam && examLangs.length > 1 && !!pathname?.startsWith(`${v1Exam.slug}/`);
-  const showLanguageToggle = !isHomepage && !isSeoPage && (!isAltExam || onTranslatedExamApp);
+  const showLanguageToggle = !isHomepage && !isSeoPage && !isQuizPage && (!isAltExam || onTranslatedExamApp);
 
   const dataTheme = exam?.id;
 
   return (
     <footer className="relative border-t bg-white dark:bg-gray-900 mt-auto" data-theme={dataTheme}>
       <div className="container mx-auto px-4 py-6">
-        {!isAltExam && (
+        {!isAltExam && !isQuizPage && (
           <div className="flex flex-wrap justify-center md:justify-between gap-x-3 gap-y-1 text-sm text-gray-500 dark:text-gray-400">
             {popularStates.map(
               (state) =>
@@ -111,21 +114,23 @@ export function Footer() {
             </Link>
           </div>
         )}
-        <nav
-          aria-label={t("footer.practiceTests")}
-          className={`flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-1 text-sm text-gray-500 dark:text-gray-400 ${isAltExam ? "" : "mt-3"}`}
-        >
-          <span className="font-medium text-gray-700 dark:text-gray-200">{t("footer.practiceTests")}:</span>
-          {footerTests.map((test) => (
-            <Link key={test.id} href={test.href} className="hover:text-brand">
-              {test.shortName}
+        {!isQuizPage && (
+          <nav
+            aria-label={t("footer.practiceTests")}
+            className={`flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-1 text-sm text-gray-500 dark:text-gray-400 ${isAltExam ? "" : "mt-3"}`}
+          >
+            <span className="font-medium text-gray-700 dark:text-gray-200">{t("footer.practiceTests")}:</span>
+            {footerTests.map((test) => (
+              <Link key={test.id} href={test.href} className="hover:text-brand">
+                {test.shortName}
+              </Link>
+            ))}
+            <Link href="/tests" className="text-brand-dark hover:text-brand-darker font-medium">
+              {t("footer.allTests")}
             </Link>
-          ))}
-          <Link href="/tests" className="text-brand-dark hover:text-brand-darker font-medium">
-            {t("footer.allTests")}
-          </Link>
-        </nav>
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-sm text-gray-600 dark:text-gray-300 mt-4">
+          </nav>
+        )}
+        <div className={`flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-sm text-gray-600 dark:text-gray-300 ${isQuizPage ? "" : "mt-4"}`}>
           <p className="text-center md:text-left">
             {t("footer.madeWith")}{" "}
             <span className="text-red-500 dark:text-red-400" role="img" aria-label="love">

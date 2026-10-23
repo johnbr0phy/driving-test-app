@@ -27,21 +27,24 @@ export function StudentDetail({
   student,
   report,
   onClose,
+  groupName = "Class",
 }: {
   student: ClassStudentRow | null;
   report: ClassReport;
   onClose: () => void;
+  /** The rest of the group in the per-question line: "Class" on the teacher page, "Players" on a quiz's report. */
+  groupName?: string;
 }) {
   return (
     <Dialog open={!!student} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-white dark:bg-gray-900">
-        {student && <Body key={student.name + student.joinedAt} student={student} report={report} />}
+        {student && <Body key={student.name + student.joinedAt} student={student} report={report} groupName={groupName} />}
       </DialogContent>
     </Dialog>
   );
 }
 
-function Body({ student, report }: { student: ClassStudentRow; report: ClassReport }) {
+function Body({ student, report, groupName }: { student: ClassStudentRow; report: ClassReport; groupName: string }) {
   const [showAll, setShowAll] = useState(false);
   const { detail } = student;
   const pass = report.passPct;
@@ -151,7 +154,7 @@ function Body({ student, report }: { student: ClassStudentRow; report: ClassRepo
                     <div className="pt-1 px-1 space-y-1.5">
                       <p className="text-xs text-gray-500 dark:text-gray-400">
                         {student.name}: missed {m.missed} of {m.answered} {m.answered === 1 ? "try" : "tries"}
-. Class: {m.q.answered - m.q.missed} of {m.q.answered} right.
+. {groupName}: {m.q.answered - m.q.missed} of {m.q.answered} right.
                       </p>
                       {untrackedNote(m.picks, m.missed) && <p className="text-xs text-gray-500 dark:text-gray-400">{untrackedNote(m.picks, m.missed)}</p>}
                       {m.q.explanation && <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">{m.q.explanation}</p>}

@@ -3,6 +3,7 @@
 import { Suspense, useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import {
+  createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signInWithPopup,
   GoogleAuthProvider,
@@ -47,6 +48,10 @@ function OAuthLoginContent() {
   const [password, setPassword] = useState('');
   const [formError, setFormError] = useState('');
   const [submitting, setSubmitting] = useState(false);
+  // Connecting from a chat app is many people's first contact with TigerTest,
+  // so the consent screen can create the account too (same as /signup:
+  // welcome email, email consent on).
+  const [mode, setMode] = useState<'signin' | 'signup'>('signin');
 
   // Fetch display info for consent screen (does not consume the pending record).
   useEffect(() => {
@@ -123,6 +128,16 @@ function OAuthLoginContent() {
 
     try {
       const auth = getAuth(firebaseApp);
+      if (mode === 'signup') {
+        const credential = await createUserWithEmailAndPassword(auth, email, password);
+        fetch('/api/send-welcome-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ userId: credential.user.uid, email, displayName: null, emailConsent: true, examId: null }),
+        }).catch(() => {});
+        await completeAuthorization(credential.user.getIdToken());
+        return;
+      }
       const credential = await signInWithEmailAndPassword(auth, email, password);
       await completeAuthorization(credential.user.getIdToken());
     } catch (err: unknown) {
@@ -131,7 +146,11 @@ function OAuthLoginContent() {
       if (code === 'auth/invalid-credential' || code === 'auth/wrong-password') {
         setFormError('Incorrect email or password.');
       } else if (code === 'auth/user-not-found') {
-        setFormError('No account found with that email.');
+        setFormError('No account found with that email. Choose "Create an account" below.');
+      } else if (code === 'auth/email-already-in-use') {
+        setFormError('There is already an account with that email. Sign in instead.');
+      } else if (code === 'auth/weak-password') {
+        setFormError('Use a password of at least 6 characters.');
       } else if (code === 'auth/too-many-requests') {
         setFormError('Too many attempts. Please wait a moment and try again.');
       } else {
@@ -205,10 +224,10 @@ function OAuthLoginContent() {
       <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
       <Card className="relative w-full max-w-md">
         <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold text-center">Authorize Access</CardTitle>
+          <CardTitle className="text-2xl font-bold text-center">Connect TigerTest</CardTitle>
           <CardDescription className="text-center">
-            Sign in to authorize <span className="font-semibold">{clientName}</span> to access your
-            TigerTest data.
+            {mode === 'signup' ? 'Create a free account' : 'Sign in'} to let <span className="font-semibold">{clientName}</span> quiz you and keep your
+            TigerTest progress.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -275,7 +294,8 @@ function OAuthLoginContent() {
                 <Input
                   id="password"
                   type="password"
-                  placeholder="••••••••"
+                  placeholder={mode === 'signup' ? 'At least 6 characters' : '••••••••'}
+                  autoComplete={mode === 'signup' ? 'new-password' : 'current-password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
@@ -288,9 +308,24 @@ function OAuthLoginContent() {
                 className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
                 disabled={submitting}
               >
-                {submitting ? 'Signing in...' : 'Sign in and Authorize'}
+                {submitting ? (mode === 'signup' ? 'Creating account...' : 'Signing in...') : mode === 'signup' ? 'Create account and connect' : 'Sign in and connect'}
               </Button>
             </form>
+
+            <p className="text-center text-sm text-gray-600 dark:text-gray-300">
+              {mode === 'signup' ? 'Already have an account?' : 'New to TigerTest?'}{' '}
+              <button
+                type="button"
+                className="underline font-medium text-gray-900 dark:text-gray-50"
+                onClick={() => {
+                  setMode(mode === 'signup' ? 'signin' : 'signup');
+                  setFormError('');
+                }}
+                disabled={submitting}
+              >
+                {mode === 'signup' ? 'Sign in' : 'Create an account'}
+              </button>
+            </p>
 
             <p className="text-center text-xs text-gray-500 dark:text-gray-400">
               By signing in, you allow {clientName} to read and update your TigerTest practice test

@@ -6,7 +6,7 @@ import {
   type ClassStudentDetail,
   type ClassStudentRow,
 } from "@/lib/classes";
-import { classQuestionLookup } from "@/lib/server/classQuestions";
+import { classQuestionLookup, type ClassQuestionDisplay } from "@/lib/server/classQuestions";
 
 // The teacher's view of a class, from the class doc and its member docs:
 // totals, topics weakest first, the most-missed questions (with the right
@@ -85,17 +85,30 @@ function studentDetail(
   return { topics, focus, missed, tests };
 }
 
+/**
+ * What a report is measured against. Classes derive it from the class's exam;
+ * a quiz (lib/server/quizzes.ts) passes its own title, pass line, topic
+ * labels and question lookup, since its questions are not in any bank.
+ */
+export interface ReportSubject {
+  name: string;
+  passPct: number;
+  topicLabel: (key: string) => string;
+  lookup: (questionId: string) => ClassQuestionDisplay | undefined;
+}
+
 export function buildClassReport(
   code: string,
   c: FirebaseFirestore.DocumentData,
   members: MemberDoc[],
   now = Date.now(),
+  subject?: ReportSubject,
 ): ClassReport {
-  const exam = classExamInfo(c.examId, c.state);
-  const passPct = exam?.passPct ?? 70;
-  const label = (k: string) => exam?.topicLabel(k) ?? k;
+  const exam = subject ? undefined : classExamInfo(c.examId, c.state);
+  const passPct = subject?.passPct ?? exam?.passPct ?? 70;
+  const label = (k: string) => subject?.topicLabel(k) ?? exam?.topicLabel(k) ?? k;
   const weekAgo = now - WEEK_MS;
-  const lookup = classQuestionLookup(c.examId);
+  const lookup = subject?.lookup ?? classQuestionLookup(c.examId);
   const optionCount = (id: string) => lookup(id)?.options.length ?? 0;
 
   const topicTotals: Record<string, { a: number; c: number }> = {};
@@ -157,7 +170,7 @@ export function buildClassReport(
     code,
     name: c.name,
     examId: c.examId,
-    examName: exam?.name ?? c.examId,
+    examName: subject?.name ?? exam?.name ?? c.examId,
     ...(c.state ? { state: c.state } : {}),
     teacherName: c.teacherName,
     school: c.school ?? "",

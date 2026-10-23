@@ -6,6 +6,42 @@ import { getUser, getProgress, getTestAttemptStats, getTrainingSetProgress, getT
 import { generateTest, getNextTrainingSetQuestion, getTrainingSetQuestions, shuffleQuestionOptions } from '@/lib/testGenerator';
 import { SIGN_BY_QUESTION_ID } from '@/lib/signImages';
 import questionsRaw from '@/data/questions.json';
+import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
+import {
+  QUIZ_LIMITS,
+  QUIZ_MAX_DESCRIPTION,
+  QUIZ_MAX_EXPLANATION,
+  QUIZ_MAX_OPTION_TEXT,
+  QUIZ_MAX_QUESTION_TEXT,
+  QUIZ_MAX_TITLE,
+  QUIZ_MAX_TOPIC,
+  QUIZ_MIN_QUESTIONS,
+  QUIZ_OPTION_COUNT,
+  isQuizCode,
+  normalizeQuizCode,
+  quizPath,
+  quizPublic,
+  quizSummary,
+  quizTopics,
+  type QuizDoc,
+  type QuizSummary,
+} from '@/lib/quizzes';
+import {
+  QuizError,
+  createQuiz,
+  deleteQuiz,
+  getQuiz,
+  isPremiumUid,
+  listMyQuizzes,
+  quizAsClassDoc,
+  quizLimits,
+  quizReportSubject,
+  updateQuiz,
+  type QuizOwner,
+} from '@/lib/server/quizzes';
+import { buildClassReport, type MemberDoc } from '@/lib/server/classReport';
+import { QUIZ_CONTEXT_GUIDANCE, QUIZ_WRITING_EXAMPLE, QUIZ_WRITING_GUIDE } from '@/lib/quizWritingGuide';
+import { answerQuizQuestion, findQuizzes, loadPlayableQuiz, nextQuizQuestion, resetQuizPlay } from '@/lib/server/mcpQuizPlay';
 
 const questionMeta = new Map<string, { question: string; category: string }>(
   (questionsRaw as Array<{ questionId: string; question: string; category: string }>).map(
@@ -82,11 +118,174 @@ function formatQuestion(q: ReturnType<typeof shuffleQuestionOptions>, issuerUrl:
   };
 }
 
+// ─── quiz_me / answer helpers (lib/server/mcpQuizPlay.ts) ───────────────────
+
+function quizPlayFail(error: 'QUIZ_NOT_FOUND' | 'QUIZ_PRIVATE', code: string) {
+  return error === 'QUIZ_PRIVATE'
+    ? fail('QUIZ_PRIVATE', `Quiz ${code.toUpperCase()} is private to its creator.`)
+    : fail('QUIZ_NOT_FOUND', `No quiz with code ${code.toUpperCase()}. Check the link (tigertest.io/q/<CODE>) or search with find_quiz.`);
+}
+
+async function quizMeResult(uid: string, quiz: QuizDoc) {
+  const next = await nextQuizQuestion(uid, quiz);
+  const links = quizLinks(quiz.code);
+  if (next.complete) {
+    return {
+      quiz: quiz.code,
+      title: quiz.title,
+      complete: true,
+      progress: next.progress,
+      message: 'Every question is mastered. Offer to start over (reset_quiz_play) or to try another quiz (find_quiz).',
+      url: links.url,
+    };
+  }
+  return { quiz: quiz.code, title: quiz.title, by: quiz.ownerName, complete: false, question: next.question, progress: next.progress, answerWith: { tool: 'answer', quiz: quiz.code }, url: links.url };
+}
+
+/** The DMV side of quiz_me: the first training set that is not yet mastered, on the person's state. */
+async function dmvQuizMe(uid: string) {
+  const user = await getUser(uid);
+  if (!user) return fail('USER_NOT_FOUND', 'User not found.');
+  if (!user.selectedState) {
+    return fail('STATE_REQUIRED', 'Ask which US state the person is taking the DMV test in, call set_user_state with its two-letter code, then call quiz_me with "dmv" again.');
+  }
+  const issuerUrl = process.env.MCP_OAUTH_ISSUER_URL ?? '';
+  for (const setId of [1, 2, 3, 4] as const) {
+    const [progress, setData] = await Promise.all([getTrainingSetProgress(uid, setId), getTrainingSetData(uid, setId)]);
+    if (!progress || !setData) return fail('USER_NOT_FOUND', 'User not found.');
+    const raw = getNextTrainingSetQuestion(setId, user.selectedState, setData.masteredIds, setData.wrongQueue, null, user.language as 'en' | 'es');
+    if (!raw) continue;
+    return ok({
+      quiz: 'dmv',
+      title: `${user.selectedState} DMV practice, training set ${setId}`,
+      complete: false,
+      question: formatQuestion(raw, issuerUrl),
+      progress: { set: setId, mastered: progress.masteredCount, total: progress.total, wrongQueueSize: progress.wrongQueueLength },
+      answerWith: { tool: 'answer', quiz: 'dmv' },
+    });
+  }
+  return ok({ quiz: 'dmv', complete: true, message: 'All four DMV training sets are mastered. Suggest a full practice test (start_practice_test) or reset_training_set.' });
+}
+
+async function dmvAnswer(uid: string, questionId: string, letter: string) {
+  const user = await getUser(uid);
+  if (!user) return fail('USER_NOT_FOUND', 'User not found.');
+  if (!user.selectedState) return formatStateRequiredError();
+  const lang = user.language as 'en' | 'es';
+  for (const setId of [1, 2, 3, 4] as const) {
+    const question = getTrainingSetQuestions(setId, user.selectedState, lang).find((q) => q.questionId === questionId);
+    if (!question) continue;
+    const isCorrect = letter === question.correctAnswer;
+    const result = await answerTrainingSetQuestion(uid, setId, questionId, isCorrect);
+    if (!result.ok) return fail(result.code, result.message);
+    const after = await dmvQuizMe(uid);
+    const nextQuestion = 'isError' in after ? null : (JSON.parse(after.content[0].text) as { question?: unknown; complete?: boolean });
+    return ok({
+      quiz: 'dmv',
+      isCorrect,
+      correctAnswer: question.correctAnswer,
+      explanation: question.explanation,
+      progress: { set: setId, mastered: result.data.masteredCount, total: 50, wrongQueueSize: result.data.wrongQueueLength, complete: result.data.complete },
+      next: nextQuestion?.question ?? null,
+    });
+  }
+  return fail('QUESTION_NOT_FOUND', `Question ${questionId} is not in the person's DMV training sets. Call quiz_me with "dmv" for a fresh one.`);
+}
+
+// ─── Quizzes (lib/quizzes.ts): the person's own material as a practice test ─
+
+/** The public site, for links an AI client shows the person. */
+function siteUrl(): string {
+  return (process.env.MCP_OAUTH_ISSUER_URL || 'https://tigertest.io').replace(/\/$/, '');
+}
+
+/** Every link for one quiz: the play page, its three modes and the creator's report. */
+function quizLinks(code: string) {
+  const base = `${siteUrl()}${quizPath(code)}`;
+  return {
+    url: base,
+    dashboard: `${base}/dashboard`,
+    modes: { practice: `${base}/practice`, test: `${base}/test`, flashcards: `${base}/flashcards` },
+    report: `${base}/report`,
+    edit: `${base}/edit`,
+  };
+}
+
+function summaryWithLinks(s: QuizSummary) {
+  return { ...s, ...quizLinks(s.code) };
+}
+
+/** The caller as a quiz owner. The display name is one Auth lookup; it only seeds `ownerName` on create. */
+async function quizOwner(uid: string, withName = false): Promise<QuizOwner> {
+  const isPremium = await isPremiumUid(uid);
+  let name: string | null = null;
+  if (withName) {
+    try {
+      const u = await getAdminAuth().getUser(uid);
+      name = u.displayName ?? u.email?.split('@')[0] ?? null;
+    } catch {
+      name = null;
+    }
+  }
+  return { uid, name, isPremium };
+}
+
+/** A QuizError as a fail(): the message is written for the person, the code tells the assistant what kind of problem it is. */
+function quizFail(error: unknown, owner?: QuizOwner) {
+  if (error instanceof QuizError) {
+    const code =
+      error.status === 402 || error.status === 429 ? 'LIMIT_REACHED'
+      : error.status === 403 ? 'NOT_YOUR_QUIZ'
+      : error.status === 404 ? 'QUIZ_NOT_FOUND'
+      : error.status >= 500 ? 'INTERNAL_ERROR'
+      : 'INVALID_QUIZ';
+    return fail(code, error.message, {
+      status: error.status,
+      ...(owner
+        ? {
+            plan: owner.isPremium ? 'premium' : 'free',
+            limits: quizLimits(owner.isPremium),
+            ...(owner.isPremium ? {} : { premium: { ...QUIZ_LIMITS.premium, price: '$9.99 one time', url: `${siteUrl()}/upgrade` } }),
+          }
+        : {}),
+    });
+  }
+  console.error('[mcp quiz]', error);
+  return fail('INTERNAL_ERROR', 'Something went wrong on the TigerTest side. Try again in a moment.');
+}
+
+const quizCodeSchema = z
+  .string()
+  .describe('The 6-character quiz code from the quiz link (tigertest.io/q/<CODE>), case-insensitive.');
+
+const quizQuestionSchema = z.object({
+  question: z.string().min(1).describe(`The question, one idea, up to ${QUIZ_MAX_QUESTION_TEXT} characters. No "which is NOT".`),
+  options: z
+    .array(z.string().min(1))
+    .length(QUIZ_OPTION_COUNT)
+    .describe(`Exactly ${QUIZ_OPTION_COUNT} answer options (up to ${QUIZ_MAX_OPTION_TEXT} characters each), one correct and three plausible wrong ones of the same length and style. No "all of the above", no duplicates.`),
+  correctIndex: z.number().int().min(0).max(QUIZ_OPTION_COUNT - 1).describe('Index of the correct option in `options` (0-3). Vary it across questions.'),
+  explanation: z.string().optional().describe(`One sentence saying why the answer is right, up to ${QUIZ_MAX_EXPLANATION} characters. Strongly recommended: the person sees it after every answer.`),
+  topic: z.string().optional().describe(`A short topic label, one to three words, up to ${QUIZ_MAX_TOPIC} characters (e.g. "Cell biology"). Reuse labels so a 20-question quiz has about 3 to 6 topics; the report groups misses by topic.`),
+});
+
+const quizQuestionsSchema = z.array(quizQuestionSchema).min(1).describe('The questions, in the order they should appear.');
+
+const quizVisibilitySchema = z
+  .enum(['private', 'link', 'public'])
+  .describe('"link" (default): anyone with the link can play. "private": only the creator. "public": also listed in the tigertest.io/quizzes library once enough people have played it.');
+
+const QUIZ_WRITING_HINT =
+  `${QUIZ_CONTEXT_GUIDANCE} ` +
+  `Write every question from the person's material: ${QUIZ_OPTION_COUNT} options, exactly one correct, three plausible distractors in the same style and length as the right answer, a one-sentence explanation of why the answer is right, and a short topic label (one to three words, reused across questions). Vary the position of the correct answer. ` +
+  `At least ${QUIZ_MIN_QUESTIONS} questions; a free account can save ${QUIZ_LIMITS.free.questions} questions per quiz and keep ${QUIZ_LIMITS.free.quizzes} quizzes, Premium ($9.99 one time) ${QUIZ_LIMITS.premium.questions} and ${QUIZ_LIMITS.premium.quizzes}. ` +
+  `Use the material's own title (a chapter name, a course and unit, a set name) and only ask the person for a title when the material has no obvious one.`;
+
 const tools: ToolEntry[] = [
   {
     name: 'ping',
     description:
-      'Health check. Returns the authenticated user\'s UID and a timestamp. Use to verify the MCP connection works.',
+      'Health check. Returns the authenticated user\'s UID and a timestamp. Use to verify the MCP connection works. This server does two things: DMV permit test tutoring (list_states, get_progress, the training set and practice test tools) and quizzes, which turn the person\'s own material into a shareable TigerTest practice test (get_quiz_writing_guide, create_quiz, add_quiz_questions, list_my_quizzes, get_quiz, update_quiz, delete_quiz, get_quiz_report).',
     register(server, ctx) {
       server.registerTool(
         'ping',
@@ -703,10 +902,414 @@ const tools: ToolEntry[] = [
       );
     },
   },
+
+  // ─── Quizzes ───────────────────────────────────────────────────────────────
+  {
+    name: 'get_quiz_writing_guide',
+    description:
+      'The TigerTest rules for useful, coherent quizzes: establish missing audience, purpose, scope and source facts before writing; do not invent context or personal facts. Then research, write balanced questions and check the whole set. Call this before writing questions for create_quiz or add_quiz_questions.',
+    register(server) {
+      server.registerTool('get_quiz_writing_guide', { description: this.description, inputSchema: {} }, async () => ({
+        content: [{ type: 'text', text: `${QUIZ_WRITING_GUIDE}\n\n${QUIZ_WRITING_EXAMPLE}` }],
+      }));
+    },
+  },
+  {
+    name: 'create_quiz',
+    description:
+      `Call get_quiz_writing_guide first and follow it. Turns the person's own material (notes, a chapter, a syllabus, a term list, anything they paste or describe) into a TigerTest practice test they can play and share by link. ${QUIZ_WRITING_HINT} ` +
+      'Returns the quiz code and its links: `url` is the share landing page (show it to the person as the link to share), `dashboard` opens their modes and progress, `modes.practice` is the mastery training set that brings back what they miss, `modes.test` is a timed test over every question, `modes.flashcards` is flashcards, and `report` is where the creator sees who played and what they missed. ' +
+      'On LIMIT_REACHED tell the person the limit from the message (they can delete a quiz, shorten this one, or get Premium); on INVALID_QUIZ fix the question named in the message and call again.',
+    register(server, ctx) {
+      server.registerTool(
+        'create_quiz',
+        {
+          description: this.description,
+          inputSchema: {
+            title: z.string().min(1).describe(`The quiz title, up to ${QUIZ_MAX_TITLE} characters.`),
+            description: z.string().optional().describe(`One sentence on what the quiz covers, up to ${QUIZ_MAX_DESCRIPTION} characters. Optional.`),
+            questions: quizQuestionsSchema,
+            visibility: quizVisibilitySchema.optional(),
+            passPct: z.number().int().min(50).max(100).optional().describe('Pass mark for the Test mode as a percentage (50-100). Default 80.'),
+          },
+        },
+        async (args) => {
+          const owner = await quizOwner(ctx.userId, true);
+          try {
+            const quiz = await createQuiz(owner, {
+              title: args.title,
+              description: args.description,
+              questions: args.questions,
+              visibility: args.visibility ?? 'link',
+              passPct: args.passPct,
+              createdVia: 'mcp',
+            });
+            return ok({
+              code: quiz.code,
+              title: quiz.title,
+              description: quiz.description,
+              questionCount: quiz.questions.length,
+              topics: quizTopics(quiz.questions),
+              visibility: quiz.visibility,
+              passPct: quiz.passPct,
+              ...quizLinks(quiz.code),
+            });
+          } catch (error) {
+            return quizFail(error, owner);
+          }
+        },
+      );
+    },
+  },
+  {
+    name: 'add_quiz_questions',
+    description:
+      `Call get_quiz_writing_guide first and follow it. Appends questions to a quiz the person owns (more material, a second chapter). ${QUIZ_WRITING_HINT} Existing questions and anyone's progress on them are untouched. Returns the new question count and the quiz links. On LIMIT_REACHED the quiz is at the plan's per-quiz limit: tell the person how many it holds now and the limit.`,
+    register(server, ctx) {
+      server.registerTool(
+        'add_quiz_questions',
+        { description: this.description, inputSchema: { code: quizCodeSchema, questions: quizQuestionsSchema } },
+        async (args) => {
+          const code = normalizeQuizCode(args.code);
+          if (!isQuizCode(code)) return fail('QUIZ_NOT_FOUND', `"${args.code}" is not a quiz code.`);
+          const owner = await quizOwner(ctx.userId);
+          try {
+            const quiz = await updateQuiz(owner, code, { addQuestions: args.questions });
+            return ok({
+              code: quiz.code,
+              title: quiz.title,
+              questionCount: quiz.questions.length,
+              added: args.questions.length,
+              topics: quizTopics(quiz.questions),
+              ...quizLinks(quiz.code),
+            });
+          } catch (error) {
+            return quizFail(error, owner);
+          }
+        },
+      );
+    },
+  },
+  {
+    name: 'list_my_quizzes',
+    description:
+      "Lists the quizzes the person has made, most recently updated first: code, title, description, visibility, question count, topics, plays (browsers that answered at least one question), memberCount (players who gave their name, so they appear in the report), and the links. Use it to find a quiz's code before get_quiz, add_quiz_questions, update_quiz, delete_quiz or get_quiz_report, and to show the person what they have. Also returns the plan's limits and how many quizzes are left.",
+    register(server, ctx) {
+      server.registerTool('list_my_quizzes', { description: this.description, inputSchema: {} }, async () => {
+        try {
+          const [owner, quizzes] = await Promise.all([quizOwner(ctx.userId), listMyQuizzes(ctx.userId)]);
+          const limits = quizLimits(owner.isPremium);
+          return ok({
+            quizzes: quizzes.map(summaryWithLinks),
+            count: quizzes.length,
+            plan: owner.isPremium ? 'premium' : 'free',
+            limits,
+            remaining: Math.max(0, limits.quizzes - quizzes.length),
+            createUrl: `${siteUrl()}/create`,
+          });
+        } catch (error) {
+          return quizFail(error);
+        }
+      });
+    },
+  },
+  {
+    name: 'get_quiz',
+    description:
+      "Returns one quiz by code. For a quiz the person owns: every question with its options, correct answer, explanation and topic, plus plays, members and reports. For someone else's quiz that is shared by link or public: the title, description, creator, question count, topics and links only, never the answers (the person can play it at `url`). A private quiz someone else owns reads as not found.",
+    register(server, ctx) {
+      server.registerTool('get_quiz', { description: this.description, inputSchema: { code: quizCodeSchema } }, async (args) => {
+        const code = normalizeQuizCode(args.code);
+        if (!isQuizCode(code)) return fail('QUIZ_NOT_FOUND', `"${args.code}" is not a quiz code.`);
+        try {
+          const quiz = await getQuiz(code);
+          if (!quiz) return fail('QUIZ_NOT_FOUND', `No quiz with code ${code}.`);
+          if (quiz.ownerUid === ctx.userId) {
+            const mine = quizPublic(quiz, true);
+            return ok({ ...mine, mine: true, questionCount: mine.questions.length, topics: quizTopics(mine.questions), ...quizLinks(code) });
+          }
+          if (quiz.visibility === 'private') return fail('QUIZ_NOT_FOUND', `No quiz with code ${code}.`);
+          const s = quizSummary(quiz);
+          return ok({
+            code: s.code,
+            title: s.title,
+            description: s.description,
+            ownerName: s.ownerName,
+            visibility: s.visibility,
+            questionCount: s.questionCount,
+            topics: s.topics,
+            plays: s.plays,
+            mine: false,
+            url: quizLinks(code).url,
+            modes: quizLinks(code).modes,
+          });
+        } catch (error) {
+          return quizFail(error);
+        }
+      });
+    },
+  },
+  {
+    name: 'update_quiz',
+    description:
+      'Changes a quiz the person owns: title, description, visibility ("private", "link" or "public") or passPct. Only the fields given change; questions are not touched (use add_quiz_questions, or the edit page at `edit` to rewrite one). Returns the updated summary and links.',
+    register(server, ctx) {
+      server.registerTool(
+        'update_quiz',
+        {
+          description: this.description,
+          inputSchema: {
+            code: quizCodeSchema,
+            title: z.string().min(1).optional().describe(`New title, up to ${QUIZ_MAX_TITLE} characters.`),
+            description: z.string().optional().describe(`New description, up to ${QUIZ_MAX_DESCRIPTION} characters (empty string clears it).`),
+            visibility: quizVisibilitySchema.optional(),
+            passPct: z.number().int().min(50).max(100).optional().describe('New pass mark for Test mode (50-100).'),
+          },
+        },
+        async (args) => {
+          const code = normalizeQuizCode(args.code);
+          if (!isQuizCode(code)) return fail('QUIZ_NOT_FOUND', `"${args.code}" is not a quiz code.`);
+          if (args.title === undefined && args.description === undefined && args.visibility === undefined && args.passPct === undefined) {
+            return fail('INVALID_QUIZ', 'Give at least one of title, description, visibility or passPct.');
+          }
+          const owner = await quizOwner(ctx.userId);
+          try {
+            const quiz = await updateQuiz(owner, code, {
+              ...(args.title !== undefined ? { title: args.title } : {}),
+              ...(args.description !== undefined ? { description: args.description } : {}),
+              ...(args.visibility !== undefined ? { visibility: args.visibility } : {}),
+              ...(args.passPct !== undefined ? { passPct: args.passPct } : {}),
+            });
+            return ok({ ...summaryWithLinks(quizSummary(quiz)), passPct: quiz.passPct });
+          } catch (error) {
+            return quizFail(error, owner);
+          }
+        },
+      );
+    },
+  },
+  {
+    name: 'delete_quiz',
+    description:
+      'Deletes a quiz the person owns, with its link and every player\'s record. DESTRUCTIVE and permanent. You MUST confirm with the person first, naming the quiz title. The `confirm: true` argument is required.',
+    register(server, ctx) {
+      server.registerTool(
+        'delete_quiz',
+        { description: this.description, inputSchema: { code: quizCodeSchema, confirm: z.literal(true) } },
+        async (args) => {
+          const code = normalizeQuizCode(args.code);
+          if (!isQuizCode(code)) return fail('QUIZ_NOT_FOUND', `"${args.code}" is not a quiz code.`);
+          const owner = await quizOwner(ctx.userId);
+          try {
+            await deleteQuiz(owner, code);
+            return ok({ deleted: true, code });
+          } catch (error) {
+            return quizFail(error, owner);
+          }
+        },
+      );
+    },
+  },
+  {
+    name: 'get_quiz_report',
+    description:
+      "The creator's report for a quiz the person owns: who played and what they missed. Returns plays (browsers that answered at least once), players (people who gave their name), answered, accuracy, activeThisWeek, passedATest, topics weakest first (accuracy per topic), the 10 most-missed questions with their miss counts and correct answers, and one row per player (name, answered, accuracy, best test score, topics to focus on). " +
+      'Use it to tell the creator which questions and topics to go over with the group, which players need help, and who has not played yet; the full report with every question and pick count is at `report`. Players only appear once they give their name on the quiz page; anonymous play counts in plays alone.',
+    register(server, ctx) {
+      server.registerTool('get_quiz_report', { description: this.description, inputSchema: { code: quizCodeSchema } }, async (args) => {
+        const code = normalizeQuizCode(args.code);
+        if (!isQuizCode(code)) return fail('QUIZ_NOT_FOUND', `"${args.code}" is not a quiz code.`);
+        try {
+          const quiz = await getQuiz(code);
+          if (!quiz) return fail('QUIZ_NOT_FOUND', `No quiz with code ${code}.`);
+          if (quiz.ownerUid !== ctx.userId) return fail('NOT_YOUR_QUIZ', 'Only the quiz creator can see its report.');
+          const snap = await getAdminDb().collection('quizzes').doc(code).collection('members').get();
+          const members = snap.docs.map((d) => d.data() as MemberDoc);
+          const report = buildClassReport(code, quizAsClassDoc(quiz), members, Date.now(), quizReportSubject(quiz));
+          const pct = (c: number, a: number) => (a ? Math.round((c / a) * 100) : null);
+          return ok({
+            code,
+            title: quiz.title,
+            questionCount: quiz.questions.length,
+            passPct: report.passPct,
+            plays: quiz.plays ?? 0,
+            players: report.students.length,
+            answered: report.answered,
+            correct: report.correct,
+            accuracy: pct(report.correct, report.answered),
+            activeThisWeek: report.activeThisWeek,
+            passedATest: report.passedATest,
+            topics: report.topics.map((t) => ({ topic: t.label, answered: t.answered, correct: t.correct, accuracy: pct(t.correct, t.answered) })),
+            mostMissed: report.questions.slice(0, 10).map((q) => ({
+              questionId: q.questionId,
+              question: q.question,
+              topic: q.topic,
+              answer: q.answer,
+              answered: q.answered,
+              missed: q.missed,
+            })),
+            students: report.students.map((s) => ({
+              name: s.name,
+              answered: s.answered,
+              correct: s.correct,
+              accuracy: pct(s.correct, s.answered),
+              testsTaken: s.testsTaken,
+              bestTest: s.bestTest ? s.bestTest.pct : null,
+              lastActive: s.lastActive,
+              focus: s.detail.focus,
+            })),
+            ...quizLinks(code),
+          });
+        } catch (error) {
+          return quizFail(error);
+        }
+      });
+    },
+  },
+  // ─── The two-call quiz loop: any agent can quiz the person with no state of its own ───
+  {
+    name: 'quiz_me',
+    description:
+      'Start (or continue) quizzing the person and get the first question. `quiz` is a 6-character quiz code from a tigertest.io/q/<CODE> link, the word "dmv" for their DMV permit test, or a few words to search their own quizzes and the public library (e.g. "British phrases"). If the words match several quizzes, the result lists candidates and asks you to pick one by code. Then show the question with all four options on separate lines ("A. ...", "B. ...") and wait for the person to answer; send their letter to `answer`, which grades it and returns the next question, so you only need these two tools for a whole session. Missed questions come back until they are answered right; progress is saved to their TigerTest account and, for someone else\'s quiz, shows up on the creator\'s report.',
+    register(server, ctx) {
+      server.registerTool(
+        'quiz_me',
+        {
+          description: this.description,
+          inputSchema: { quiz: z.string().min(1).max(120).describe('A quiz code, "dmv", or words to search for a quiz') },
+        },
+        async (args) => {
+          const raw = String(args.quiz).trim();
+          if (raw.toLowerCase() === 'dmv') return dmvQuizMe(ctx.userId);
+          if (isQuizCode(normalizeQuizCode(raw))) {
+            const found = await loadPlayableQuiz(ctx.userId, raw);
+            if ('error' in found) return quizPlayFail(found.error, raw);
+            return ok(await quizMeResult(ctx.userId, found.quiz));
+          }
+          const matches = await findQuizzes(ctx.userId, raw, 8);
+          if (!matches.length) {
+            return fail('QUIZ_NOT_FOUND', `No quiz matches "${raw}". The person can make one at ${siteUrl()}/create (or you can with create_quiz), or say "dmv" for the DMV test.`);
+          }
+          const top = matches[0];
+          const clear = matches.length === 1 || top.title.toLowerCase() === raw.toLowerCase() || (top.mine && !matches[1]?.mine);
+          if (!clear) {
+            return ok({
+              needsChoice: true,
+              message: 'Several quizzes match. Ask the person which one, then call quiz_me with its code.',
+              candidates: matches.map((m) => ({ code: m.code, title: m.title, by: m.ownerName, questions: m.questionCount, mine: m.mine, url: quizLinks(m.code).url })),
+            });
+          }
+          const found = await loadPlayableQuiz(ctx.userId, top.code);
+          if ('error' in found) return quizPlayFail(found.error, top.code);
+          return ok(await quizMeResult(ctx.userId, found.quiz));
+        },
+      );
+    },
+  },
+  {
+    name: 'answer',
+    description:
+      'Submit the person\'s answer (A, B, C or D) to the question quiz_me or a previous answer returned, for the same `quiz` (the code, or "dmv"). Returns isCorrect, the correct letter, a short explanation to read to them, their progress, and `next` (the next question, or null when every question is mastered). Show the result, then the next question with all four options.',
+    register(server, ctx) {
+      server.registerTool(
+        'answer',
+        {
+          description: this.description,
+          inputSchema: {
+            quiz: z.string().min(1).max(120).describe('The quiz code from quiz_me, or "dmv"'),
+            questionId: z.string().min(1).max(64),
+            answer: z.enum(['A', 'B', 'C', 'D', 'a', 'b', 'c', 'd']),
+          },
+        },
+        async (args) => {
+          const raw = String(args.quiz).trim();
+          const letter = String(args.answer).toUpperCase();
+          if (raw.toLowerCase() === 'dmv') return dmvAnswer(ctx.userId, String(args.questionId), letter);
+          const found = await loadPlayableQuiz(ctx.userId, raw);
+          if ('error' in found) return quizPlayFail(found.error, raw);
+          const result = await answerQuizQuestion(ctx.userId, found.quiz, String(args.questionId), letter);
+          if ('error' in result) {
+            return result.error === 'QUESTION_NOT_FOUND'
+              ? fail('QUESTION_NOT_FOUND', `Question ${args.questionId} is not in quiz ${found.quiz.code}. Call quiz_me again to get a fresh one.`)
+              : fail('BAD_ANSWER', 'The answer must be A, B, C or D.');
+          }
+          return ok({ quiz: found.quiz.code, title: found.quiz.title, ...result });
+        },
+      );
+    },
+  },
+  {
+    name: 'find_quiz',
+    description:
+      'Search the person\'s own quizzes and TigerTest\'s public library by words (title, topic, maker). Returns up to 10 matches with their codes, so you can offer a choice or pass a code to quiz_me. An empty query lists their own quizzes first, then popular public ones.',
+    register(server, ctx) {
+      server.registerTool(
+        'find_quiz',
+        { description: this.description, inputSchema: { query: z.string().max(120).default('').optional() } },
+        async (args) => {
+          const matches = await findQuizzes(ctx.userId, String(args.query ?? ''), 10);
+          return ok(matches.map((m) => ({ code: m.code, title: m.title, description: m.description, by: m.ownerName, questions: m.questionCount, topics: m.topics, plays: m.plays, mine: m.mine, url: quizLinks(m.code).url })));
+        },
+      );
+    },
+  },
+  {
+    name: 'reset_quiz_play',
+    description:
+      'Start a quiz over from the first question for this person (clears their mastery on it; the creator\'s report keeps the history). Confirm with the person first; `confirm: true` is required.',
+    register(server, ctx) {
+      server.registerTool(
+        'reset_quiz_play',
+        { description: this.description, inputSchema: { quiz: quizCodeSchema, confirm: z.literal(true) } },
+        async (args) => {
+          const code = normalizeQuizCode(String(args.quiz));
+          if (!isQuizCode(code)) return fail('QUIZ_NOT_FOUND', 'That is not a quiz code.');
+          await resetQuizPlay(ctx.userId, code);
+          return ok({ quiz: code, reset: true });
+        },
+      );
+    },
+  },
 ];
 
 export function registerTools(server: McpServer, ctx: ToolContext): void {
   for (const tool of tools) {
     tool.register(server, ctx);
   }
+  registerPrompts(server);
+}
+
+/**
+ * MCP prompts. "write_quiz" is the question-writing guide
+ * (lib/quizWritingGuide.ts) with the person's material appended, so a client
+ * that lists prompts can start a quiz from it. Registering a prompt turns on
+ * the server's prompts capability, so the route needs no change.
+ */
+function registerPrompts(server: McpServer): void {
+  server.registerPrompt(
+    'write_quiz',
+    {
+      title: 'Write a TigerTest quiz',
+      description:
+        'First establish any missing audience, purpose, scope and reliable facts; ask focused follow-ups when material is too sparse. Then write a coherent practice test and save it with create_quiz. Includes the TigerTest question-writing rules.',
+      argsSchema: {
+        material: z.string().optional().describe('Source material and any audience, level, purpose, scope or length preferences already known. A short topic alone may need clarification before writing. Optional: reuse conversation context before asking for more.'),
+      },
+    },
+    ({ material }) => ({
+      messages: [
+        {
+          role: 'user',
+          content: {
+            type: 'text',
+            text:
+              `${QUIZ_WRITING_GUIDE}\n\n${QUIZ_WRITING_EXAMPLE}` +
+              (material && material.trim()
+                ? `\n\nMaterial:\n${material.trim()}`
+                : '\n\nUse the context and sources already in our conversation. If key context or reliable facts are missing, ask only the focused questions needed before writing or saving.'),
+          },
+        },
+      ],
+    }),
+  );
 }

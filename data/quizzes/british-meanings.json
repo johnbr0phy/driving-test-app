@@ -1,0 +1,176 @@
+{
+  "title": "What British people actually mean",
+  "description": "Twenty-four everyday British phrases and what the speaker really means. Decode the understatement before your next meeting, pub night or weather chat.",
+  "visibility": "public",
+  "passPct": 80,
+  "questions": [
+    {
+      "question": "A British colleague reads your plan and says it's \"quite good\". What do they most likely mean?",
+      "options": ["Rather disappointing", "Excellent", "Ready to ship", "Better than expected"],
+      "correctIndex": 0,
+      "explanation": "\"Quite\" is a dimmer switch. \"Quite good\" sits a notch below \"good\" and usually means the plan needs work. Real enthusiasm sounds like \"not bad at all\".",
+      "topic": "Understatement"
+    },
+    {
+      "question": "Someone opens with \"with the greatest respect\". What is coming next?",
+      "options": ["Admiration for your view", "A disagreement", "An apology", "A compliment"],
+      "correctIndex": 1,
+      "explanation": "The more respect is announced, the less is meant. \"With the greatest respect\" introduces the speaker's view that you are wrong, said politely.",
+      "topic": "At work"
+    },
+    {
+      "question": "You suggest a change and the reply is \"I'll bear it in mind\". What will happen to your suggestion?",
+      "options": ["It's done next week", "It gets a careful review", "Nothing", "It goes to the boss"],
+      "correctIndex": 2,
+      "explanation": "\"I'll bear it in mind\" closes the subject. The suggestion has been heard, filed and forgotten, and no action is planned.",
+      "topic": "At work"
+    },
+    {
+      "question": "Your proposal is described as \"very brave\". How does the speaker rate it?",
+      "options": ["Bold and admirable", "Risky but worth it", "Unusual", "Reckless"],
+      "correctIndex": 3,
+      "explanation": "\"Brave\" is not praise here. It means the speaker thinks the idea will fail and is amazed you said it out loud.",
+      "topic": "At work"
+    },
+    {
+      "question": "A friend tastes your cooking and says \"not bad\". What do they mean?",
+      "options": ["It's good", "It's mediocre", "It's awful", "It's average"],
+      "correctIndex": 0,
+      "explanation": "\"Not bad\" runs the other way from \"quite good\": it is genuine approval, and \"not bad at all\" is high praise.",
+      "topic": "Understatement"
+    },
+    {
+      "question": "You pitch an idea and get a flat \"interesting\". What is the verdict?",
+      "options": ["They're fascinated", "They don't like it", "They want details", "They find it original"],
+      "correctIndex": 1,
+      "explanation": "Said flatly and on its own, \"interesting\" means \"I don't like that and I'm not going to say why\". Real interest comes with a follow-up question.",
+      "topic": "Understatement"
+    },
+    {
+      "question": "In a debate someone says \"I hear what you say\". What do they mean?",
+      "options": ["They agree", "They're listening closely", "They disagree and are done", "Please repeat it"],
+      "correctIndex": 2,
+      "explanation": "\"I hear what you say\" means \"I disagree and do not want to discuss it further\". It ends the exchange rather than continuing it.",
+      "topic": "At work"
+    },
+    {
+      "question": "A neighbour says \"you must come for dinner sometime\". What should you do?",
+      "options": ["Pick a Friday", "Bring wine", "Ask for a date", "Nothing"],
+      "correctIndex": 3,
+      "explanation": "\"Sometime\" is the tell. This is a warm way of ending a conversation, not an invitation. A real invitation names a day.",
+      "topic": "Social"
+    },
+    {
+      "question": "Someone bumps into you in a shop and you say \"sorry\". Why?",
+      "options": ["It's a reflex", "You think it's your fault", "You want their apology", "You're upset"],
+      "correctIndex": 0,
+      "explanation": "\"Sorry\" is said by both parties as a reflex that smooths the moment. It does not admit fault and nobody expects an apology back.",
+      "topic": "Everyday"
+    },
+    {
+      "question": "Sleet is blowing sideways and a colleague says \"it's a bit cold out\". What is the weather like?",
+      "options": ["Slightly chilly", "Freezing", "Mild for the season", "Fine with a coat"],
+      "correctIndex": 1,
+      "explanation": "\"A bit\" scales the opposite way. \"A bit cold\" is freezing, \"a bit wet\" is a downpour, and \"a bit of a problem\" is a crisis.",
+      "topic": "Understatement"
+    },
+    {
+      "question": "Your manager asks \"could we consider some other options?\" What do they think of your option?",
+      "options": ["Keep it as a backup", "Let's brainstorm", "They don't like it", "They need more time"],
+      "correctIndex": 2,
+      "explanation": "This is a polite no. \"Other options\" means \"anything but that one\", and the brainstorm, if it happens, is a search for a replacement.",
+      "topic": "At work"
+    },
+    {
+      "question": "You get your draft back with \"a few minor comments\". What should you expect?",
+      "options": ["Some typos", "It's nearly done", "Sign-off with notes", "A rewrite"],
+      "correctIndex": 3,
+      "explanation": "\"A few minor comments\" is the standard cover for \"please start again\". Count the comments before you relax.",
+      "topic": "At work"
+    },
+    {
+      "question": "A workmate asks \"fancy a pint?\" at five o'clock. What are they suggesting?",
+      "options": ["A drink together", "That you buy them a beer", "That you look stressed", "A beer tasting"],
+      "correctIndex": 0,
+      "explanation": "\"Fancy a pint?\" is an invitation to the pub, often where the real conversation of the day happens. Saying yes once is good for your career.",
+      "topic": "Social"
+    },
+    {
+      "question": "You knock over someone's drink and they say \"it's fine\". Is it fine?",
+      "options": ["Yes, no harm done", "No, not at all", "Yes, if you apologise", "Only if you buy another"],
+      "correctIndex": 1,
+      "explanation": "A clipped \"it's fine\" means it is not fine. The speaker is choosing not to make a scene, which is not the same as forgiving you.",
+      "topic": "Everyday"
+    },
+    {
+      "question": "A shop assistant hands you your change and says \"cheers\". What do they mean?",
+      "options": ["A toast", "Goodbye only", "Thanks", "Well done"],
+      "correctIndex": 2,
+      "explanation": "\"Cheers\" is an everyday \"thanks\", and often \"thanks and bye\" in one word. The toast is the same word doing a different job.",
+      "topic": "Everyday"
+    },
+    {
+      "question": "After a missed deadline, your client says \"I'm a bit disappointed\". How do they feel?",
+      "options": ["Mildly let down", "It's no big deal", "Slightly surprised", "Furious"],
+      "correctIndex": 3,
+      "explanation": "\"A bit disappointed\" is as angry as a British client gets in writing. Treat it as a formal warning and fix things fast.",
+      "topic": "At work"
+    },
+    {
+      "question": "As a meeting wraps up someone says \"oh, by the way...\". How important is what follows?",
+      "options": ["It's the real point", "An afterthought", "Not important", "A reminder"],
+      "correctIndex": 0,
+      "explanation": "\"By the way\" is where the real purpose of the meeting finally surfaces, raised casually so it does not look like a demand. Listen hardest here.",
+      "topic": "At work"
+    },
+    {
+      "question": "You ask whether someone agrees with your plan and they say \"up to a point\". How far do they agree?",
+      "options": ["Mostly", "Not at all", "About halfway", "On the details"],
+      "correctIndex": 1,
+      "explanation": "\"Up to a point\" is a complete no wearing a cardigan. There is no point up to which they agree.",
+      "topic": "Understatement"
+    },
+    {
+      "question": "Your design is \"not quite what I had in mind\". How far off is it?",
+      "options": ["Close enough", "A small tweak away", "Completely wrong", "Right, wrong colour"],
+      "correctIndex": 2,
+      "explanation": "\"Not quite\" softens a total miss. The speaker had something entirely different in mind and is sparing your feelings.",
+      "topic": "Understatement"
+    },
+    {
+      "question": "A colleague says \"I almost agree with you\". Where do they stand?",
+      "options": ["Nearly convinced", "Agree on most points", "One fact short", "They don't agree"],
+      "correctIndex": 3,
+      "explanation": "\"Almost agree\" means \"don't agree at all\". The \"almost\" is politeness, not distance.",
+      "topic": "At work"
+    },
+    {
+      "question": "Your boss says \"perhaps you'd like to think again\". What do they think of your idea?",
+      "options": ["It's a bad idea", "Take your time", "Good, but refine it", "Sleep on it"],
+      "correctIndex": 0,
+      "explanation": "This is an instruction to drop the idea, phrased as if it were your choice. Thinking again and arriving at the same answer is not an option.",
+      "topic": "At work"
+    },
+    {
+      "question": "A shopkeeper greets you with \"are you all right?\" What are they asking?",
+      "options": ["Whether you look ill", "Whether they can help", "Whether you're lost", "Whether you're upset"],
+      "correctIndex": 1,
+      "explanation": "\"You all right?\" is a greeting that means \"hello, can I help?\". The answer is \"yeah, you?\", not a health update.",
+      "topic": "Everyday"
+    },
+    {
+      "question": "It is pouring and a stranger at the bus stop says \"lovely weather\". What do they mean?",
+      "options": ["They enjoy rain", "It's genuinely nice", "The opposite, said dryly", "The forecast was wrong"],
+      "correctIndex": 2,
+      "explanation": "Weather talk is an invitation to agree, and \"lovely weather\" in the rain is the national joke. Reply \"gorgeous\" and you've made a friend.",
+      "topic": "Social"
+    },
+    {
+      "question": "You invite someone to the pub and they say \"I might join you later\". Will they come?",
+      "options": ["Yes, in an hour", "Yes, after texting first", "Yes, save a seat", "No"],
+      "correctIndex": 3,
+      "explanation": "\"Might join you later\" is a no that leaves the door open in case the evening is going well. Do not save a seat.",
+      "topic": "Social"
+    }
+  ]
+}

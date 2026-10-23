@@ -9,6 +9,8 @@ import type { ClassAnswerEvent, ClassHistoryAnswer, ClassPublicInfo, ClassTestEv
 export interface ClassMembership {
   code: string;
   examId: string;
+  /** A quiz membership (lib/quizProgress.ts) reports to /api/quizzes instead of /api/classes. */
+  kind?: "quiz";
   memberId: string;
   name: string;
   className: string;
@@ -39,6 +41,15 @@ export function getMembership(code: string): ClassMembership | undefined {
   return getMemberships().find((m) => m.code === code);
 }
 
+/** Add or replace one membership (a class's or a quiz's). */
+export function saveMembership(membership: ClassMembership) {
+  saveMemberships([...getMemberships().filter((m) => m.code !== membership.code), membership]);
+}
+
+function progressUrl(m: Pick<ClassMembership, "code" | "kind">): string {
+  return m.kind === "quiz" ? `/api/quizzes/${m.code}/progress` : `/api/classes/${m.code}/progress`;
+}
+
 export function membershipsForExam(examId: string): ClassMembership[] {
   return getMemberships().filter((m) => m.examId === examId);
 }
@@ -61,7 +72,7 @@ export async function joinClass(info: ClassPublicInfo, name: string): Promise<Cl
     className: info.name,
     teacherName: info.teacherName,
   };
-  saveMemberships([...getMemberships().filter((m) => m.code !== info.code), membership]);
+  saveMembership(membership);
   return membership;
 }
 
@@ -71,7 +82,7 @@ export function leaveClass(code: string) {
 
 // ─── Reporting ──────────────────────────────────────────────────────────────
 
-const queues = new Map<string, { memberId: string; answers: ClassAnswerEvent[]; tests: ClassTestEvent[] }>();
+const queues = new Map<string, { memberId: string; url: string; answers: ClassAnswerEvent[]; tests: ClassTestEvent[] }>();
 let timer: ReturnType<typeof setTimeout> | null = null;
 let listening = false;
 
@@ -80,7 +91,7 @@ function enqueue(examId: string, add: (q: { answers: ClassAnswerEvent[]; tests: 
   const classes = membershipsForExam(examId);
   if (!classes.length) return;
   for (const m of classes) {
-    const q = queues.get(m.code) ?? { memberId: m.memberId, answers: [], tests: [] };
+    const q = queues.get(m.code) ?? { memberId: m.memberId, url: progressUrl(m), answers: [], tests: [] };
     add(q);
     queues.set(m.code, q);
   }
@@ -136,7 +147,7 @@ export function flushClassProgress() {
   for (const [code, q] of queues) {
     queues.delete(code);
     if (!q.answers.length && !q.tests.length) continue;
-    void fetch(`/api/classes/${code}/progress`, {
+    void fetch(q.url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ memberId: q.memberId, answers: q.answers.slice(0, 200), tests: q.tests }),

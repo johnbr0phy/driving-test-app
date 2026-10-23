@@ -145,6 +145,11 @@ const CAMPAIGNS = [
     if (u.creationTime.getTime() > now - 7 * DAY) return false;
     return u.lastActiveAt.getTime() >= now - 365 * DAY;
   }],
+  // Quizzes launch: same whole-base audience, paused unless QUIZZES_CAMPAIGN=send.
+  ['quizzesLaunch2026', DAY, (u) => {
+    if (u.creationTime.getTime() > now - 7 * DAY) return false;
+    return u.lastActiveAt.getTime() >= now - 365 * DAY;
+  }],
 ];
 
 console.log(`INCLUDE_LEGACY_CONSENT=${INCLUDE_LEGACY}`);

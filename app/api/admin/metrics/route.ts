@@ -76,7 +76,7 @@ export async function GET(request: NextRequest) {
 
 async function buildMetrics() {
   const db = getAdminDb();
-  const [usersSnapRaw, paymentsSnap, questionsDoc, testRequestsSnap, studyTimesDoc, funnelDoc, originsSnap, internalUids] = await Promise.all([
+  const [usersSnapRaw, paymentsSnap, questionsDoc, testRequestsSnap, studyTimesDoc, funnelDoc, originsSnap, internalUids, quizzesDoc] = await Promise.all([
     db.collection('users')
       .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats', 'emailVariants', 'emailClicks')
       .get(),
@@ -87,7 +87,23 @@ async function buildMetrics() {
     db.doc('analytics/funnel').get(),
     db.collection('signupOrigins').get(),
     getInternalUids(),
+    db.doc('analytics/quizzes').get(),
   ]);
+  // ── Quizzes (lib/quizzes.ts) ────────────────────────────────────────────
+  // Site-wide counters bumped by lib/server/quizzes.ts: quizzes made on
+  // /create, by Quizlet import and from Claude/ChatGPT through the MCP
+  // server, browsers that played one and bad-question reports. Zeros until
+  // the first quiz.
+  const quizCounters = quizzesDoc.exists ? (quizzesDoc.data() as Record<string, unknown>) : {};
+  const quizCount = (key: string) => (typeof quizCounters[key] === 'number' ? (quizCounters[key] as number) : 0);
+  const quizzes = {
+    createdWeb: quizCount('created_web'),
+    createdImport: quizCount('created_import'),
+    createdMcp: quizCount('created_mcp'),
+    plays: quizCount('plays'),
+    questionReports: quizCount('questionReports'),
+    total: quizCount('created_web') + quizCount('created_import') + quizCount('created_mcp'),
+  };
   // Internal accounts (lib/internal) never count: drop their users, payments,
   // test requests and signup origins before anything is aggregated.
   const usersSnap = { docs: usersSnapRaw.docs.filter((d) => !internalUids.has(d.id)) };
@@ -410,6 +426,7 @@ async function buildMetrics() {
     // Built nightly by /api/cron/aggregate-stats.
     studyTimes: studyTimesDoc.exists ? studyTimesDoc.data() : null,
     launchTest,
+    quizzes,
     // The "today" range. Signups and revenue are bucketed by the hour in
     // Eastern time off real timestamps. Questions and active users have no
     // clock time anywhere in their write path, so they can only be day

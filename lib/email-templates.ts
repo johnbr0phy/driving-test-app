@@ -433,4 +433,39 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       ].join("\n"),
     });
   },
+
+  // One-off announcement of quizzes (lib/quizzes.ts): the person's own
+  // material as a practice test, from Claude or ChatGPT through the MCP
+  // server, or by copying the prompt on /create into any chat app. Sent by
+  // /api/cron/quizzes-launch. TigerTest never pays for the questions.
+  quizzesLaunch: (v) => {
+    const campaign = "quizzes_launch";
+    const create = `${SITE}/create?utm_source=email&utm_campaign=${campaign}`;
+    const connect = `${SITE}/connect?utm_source=email&utm_campaign=${campaign}`;
+    const link = (href: string, label: string) =>
+      `<a href="${href}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${label}</a>`;
+    return emailShell({
+      title: "Turn anything into a practice test",
+      heading: "Turn anything into a practice test",
+      body: [
+        p(
+          `Connect TigerTest to your own ChatGPT or Claude account. Add your notes, a chapter or a syllabus to a chat with TigerTest enabled, say "make this a TigerTest quiz", and you get a link to a real practice test:`,
+        ),
+        ul([
+          "Timed tests",
+          "A training set that keeps bringing back what you miss",
+          "Flashcards",
+          "A score that says if you are ready",
+        ]),
+        p("Share the link with your study group or class and see who got what."),
+        cta(create, "Make a quiz"),
+        p(
+          `Prefer to work on TigerTest? Import a Quizlet set or write your own questions at ${link(create, "tigertest.io/create")}.`,
+        ),
+        p(`To connect ChatGPT or Claude to your account, the steps are at ${link(connect, "tigertest.io/connect")}.`),
+        p(`Your ${v.testName} practice is still here, unchanged: ${link(DASH(v, campaign), "open your dashboard")}.`),
+        signoff("Thanks,"),
+      ].join("\n"),
+    });
+  },
 };

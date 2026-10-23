@@ -66,6 +66,14 @@ function translatedSection(): string | null {
 
 const TEACH_SECTION = `## For teachers\n\n- [Free instructor classes](${siteUrl}/teach): a teacher makes a class for any test on the site and posts one link; students join with just their name, and the teacher sees who practiced, their test scores and the topics the class misses most.`;
 
+const QUIZ_SECTION = `## Quizzes: a practice test from your own material
+
+- Anyone with a free TigerTest account can turn notes, a chapter, a syllabus or a Quizlet export into a practice test at ${siteUrl}/create (connect the person's own ChatGPT or Claude via /connect to write and save questions through MCP, import from Quizlet, or type them), played at tigertest.io/q/<code> in three modes: Practice (misses come back until mastered), Test (timed, with a pass mark) and Flashcards.
+- Share the link with a study group or class; the creator's report shows who played, their scores and the questions and topics missed most.
+- ChatGPT and Claude can make quizzes directly through TigerTest's MCP server at ${siteUrl}/api/mcp (OAuth sign-in; tools: create_quiz, add_quiz_questions, list_my_quizzes, get_quiz, update_quiz, delete_quiz, get_quiz_report, plus DMV tutoring tools). Setup: ${siteUrl}/connect
+- Public quizzes that enough people have played are listed at ${siteUrl}/quizzes.
+- Free accounts keep 3 quizzes of up to 50 questions; Premium ($9.99 one time) allows 100 quizzes of up to 200 questions.`;
+
 export function renderLlmsTxt(): string {
   const groups = nonDmvGroups()
     .map((g) => `### ${g.title}\n\n${g.tests.map(examLine).join("\n")}`)
@@ -76,6 +84,7 @@ export function renderLlmsTxt(): string {
     `## Other practice tests\n\nAll tests: ${siteUrl}/tests\n\n${groups}`,
     translatedSection(),
     TEACH_SECTION,
+    QUIZ_SECTION,
     `## More detail\n\n- [Full exam facts and the 50-state DMV test table](${siteUrl}/llms-full.txt)`,
     FOOTER,
   ].filter(Boolean).join("\n\n") + "\n";
@@ -123,6 +132,7 @@ export function renderLlmsFullTxt(): string {
     exams,
     translatedSection(),
     TEACH_SECTION,
+    QUIZ_SECTION,
     FOOTER,
   ].filter(Boolean).join("\n\n") + "\n";
 }

@@ -436,12 +436,11 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
 
   // One-off announcement of quizzes (lib/quizzes.ts): the person's own
   // material as a practice test, from Claude or ChatGPT through the MCP
-  // server, or by copying the prompt on /create into any chat app. Sent by
+  // server; setup and the account's quizzes are both on /create. Sent by
   // /api/cron/quizzes-launch. TigerTest never pays for the questions.
   quizzesLaunch: (v) => {
     const campaign = "quizzes_launch";
     const create = `${SITE}/create?utm_source=email&utm_campaign=${campaign}`;
-    const connect = `${SITE}/connect?utm_source=email&utm_campaign=${campaign}`;
     const link = (href: string, label: string) =>
       `<a href="${href}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${label}</a>`;
     return emailShell({
@@ -460,9 +459,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         p("Share the link with your study group or class and see who got what."),
         cta(create, "Make a quiz"),
         p(
-          `Choose ChatGPT or Claude to create your quiz, or manage existing quizzes at ${link(create, "tigertest.io/create")}.`,
+          `The steps to connect ChatGPT or Claude, and the quizzes you have made, are at ${link(create, "tigertest.io/create")}.`,
         ),
-        p(`To connect ChatGPT or Claude to your account, the steps are at ${link(connect, "tigertest.io/connect")}.`),
         p(`Your ${v.testName} practice is still here, unchanged: ${link(DASH(v, campaign), "open your dashboard")}.`),
         signoff("Thanks,"),
       ].join("\n"),

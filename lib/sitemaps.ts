@@ -19,7 +19,7 @@ import {
 //   /sitemaps/dmv.xml       home, state hub, 51 state DMV pages
 //   /sitemaps/dmv-es-vi-ko.xml  Spanish, Vietnamese, Korean and Chinese DMV pages (name kept from before Chinese, so Search Console keeps its history)
 //   /sitemaps/exams.xml     /tests hub and every exam landing
-//   /sitemaps/quizzes.xml   /quizzes library, /connect, /developers, /terms, and every public quiz with enough plays (read from Firestore)
+//   /sitemaps/quizzes.xml   /quizzes library, /create, /developers, /terms, and every public quiz with enough plays (read from Firestore)
 export const SITEMAP_SEGMENTS = ["dmv", "dmv-es-vi-ko", "exams", "quizzes"] as const;
 export type SitemapSegment = (typeof SITEMAP_SEGMENTS)[number];
 
@@ -136,7 +136,7 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
     case "quizzes":
       return [
         { url: `${SITE_URL}/quizzes`, lastModified: QUIZZES_PAGES_UPDATED_AT, changeFrequency: "daily", priority: 0.7 },
-        { url: `${SITE_URL}/connect`, lastModified: QUIZZES_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${SITE_URL}/create`, lastModified: QUIZZES_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.6 },
         { url: `${SITE_URL}/developers`, lastModified: QUIZZES_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.5 },
         { url: `${SITE_URL}/terms`, lastModified: QUIZZES_PAGES_UPDATED_AT, changeFrequency: "yearly", priority: 0.2 },
         ...(await publicQuizEntries()),

@@ -4,7 +4,7 @@ import { QUIZZES_PAGES_UPDATED_AT } from "@/lib/seoDates";
 
 // /developers: the technical page for anyone wiring an agent to TigerTest,
 // and the docs URL the connector directories (Claude, ChatGPT, Meta's Muse)
-// ask for. Endpoint, auth, the tool list and example prompts. /connect is
+// ask for. Endpoint, auth, the tool list and example prompts. /create is
 // the version for people; this one is for reviewers and builders.
 
 const SITE = "https://www.tigertest.io";
@@ -124,15 +124,15 @@ export default function DevelopersPage() {
         <section>
           <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2">Add it to a client</h2>
           <ul className="list-disc pl-5 text-sm text-gray-600 dark:text-gray-300 space-y-1.5">
-            <li>Claude: follow the current setup guide on /connect#add-to-claude. Use URL <span className={code}>{SITE}/api/mcp</span>.</li>
-            <li>ChatGPT: follow the current setup guide on /connect#add-to-chatgpt for your plan and workspace. Use MCP server URL <span className={code}>{SITE}/api/mcp</span>, OAuth.</li>
+            <li>Claude: follow the current setup guide on /create#add-to-claude. Use URL <span className={code}>{SITE}/api/mcp</span>.</li>
+            <li>ChatGPT: follow the current setup guide on /create#add-to-chatgpt for your plan and workspace. Use MCP server URL <span className={code}>{SITE}/api/mcp</span>, OAuth.</li>
             <li>Meta Muse and other agent platforms: submit the same endpoint as an existing MCP connector with OAuth and PKCE.</li>
             <li>
               Any MCP SDK or MCP Inspector: point at the endpoint; the 401 carries a <span className={code}>resource_metadata</span> hint, so the OAuth flow starts on its own.
             </li>
           </ul>
           <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
-            Step-by-step screenshots for people are on <Link href="/connect" className="underline text-gray-900 dark:text-gray-50">/connect</Link>.
+            Step-by-step screenshots for people are on <Link href="/create" className="underline text-gray-900 dark:text-gray-50">/create</Link>.
           </p>
         </section>
 

@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Layers, ListChecks, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { LandingIntro } from "@/components/exam/LandingIntro";
 import { QuizStates, useQuiz } from "@/components/quiz/QuizLoader";
@@ -61,10 +60,10 @@ export function QuizLandingContent({ quiz }: { quiz: QuizPublic }) {
           <h2 id="quiz-modes-heading" className="text-2xl md:text-3xl text-center font-bold text-gray-900 dark:text-gray-50 mb-8">Three ways to learn</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              {title:"Practice",icon:Target,text:"Answer a question, see why, and revisit misses until you get them right."},
-              {title:"Test",icon:ListChecks,text:`Answer up to ${Math.min(total, QUIZ_TEST_MAX_QUESTIONS)} questions with feedback at the end. This quiz's practice pass line is ${quiz.passPct}%.`},
-              {title:"Flashcards",icon:Layers,text:"Flip each card to see the answer and explanation. Mark what you know and revisit what you are still learning."},
-            ].map(({title,icon:Icon,text})=>(<div key={title} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-950 p-6"><Icon className="w-6 h-6 text-brand-dark mb-4" aria-hidden="true"/><h3 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-2">{title}</h3><p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">{text}</p></div>))}
+              {title:"Practice",text:"Answer a question, see why, and revisit misses until you get them right."},
+              {title:"Test",text:`Answer up to ${Math.min(total, QUIZ_TEST_MAX_QUESTIONS)} questions with feedback at the end. This quiz's practice pass line is ${quiz.passPct}%.`},
+              {title:"Flashcards",text:"Flip each card to see the answer and explanation. Mark what you know and revisit what you are still learning."},
+            ].map(({title,text})=>(<div key={title} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-950 p-6"><h3 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-2">{title}</h3><p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">{text}</p></div>))}
           </div>
         </section>
         <section className="text-center border-t border-gray-200 dark:border-gray-800 pt-12">

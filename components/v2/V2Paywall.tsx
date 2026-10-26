@@ -48,7 +48,7 @@ export function V2Paywall({
       onUpgrade={onUpgrade}
       isGuest={isGuest}
       onSignUp={() => router.push(`/signup?redirect=${encodeURIComponent(routes.dashboard)}`)}
-      benefits={[...(exam.premium?.benefits ?? []), "One payment, yours forever"]}
+      benefits={exam.premium?.benefits}
     />
   );
 }

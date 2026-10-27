@@ -14,6 +14,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { en, es, vi, ko, zh } from "@/i18n";
 import Image from "next/image";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
+import { SupportPaywallModal } from "@/components/SupportPaywallModal";
 
 interface PaywallModalProps {
   open: boolean;
@@ -42,6 +43,22 @@ export function PaywallModal({
   // In the native app, Stripe checkout would violate Apple's/Google's
   // in-app purchase rules — show an informational notice instead.
   const isNative = useIsNativeApp();
+
+  // English readers get John's "chip in" paywall; the other languages keep
+  // this translated one until that copy is translated too.
+  if (language === "en") {
+    return (
+      <SupportPaywallModal
+        open={open}
+        onOpenChange={onOpenChange}
+        feature={feature}
+        onUpgrade={onUpgrade}
+        benefits={benefits}
+        isGuest={isGuest}
+        onSignUp={onSignUp}
+      />
+    );
+  }
 
   const handleUpgrade = async () => {
     setLoading(true);

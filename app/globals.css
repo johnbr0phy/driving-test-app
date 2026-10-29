@@ -644,6 +644,20 @@
     --brand-gradient-to: 135 65% 95%;
   }
 
+  /* WA learner's test theme (Australia) */
+  [data-theme="auwa"] {
+    --brand: 150 60% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 150 65% 95%;
+    --brand-hover: 150 60% 22%;
+    --brand-dark: 150 60% 16%;
+    --brand-darker: 150 50% 8%;
+    --brand-muted: 150 40% 72%;
+    --brand-border: 150 40% 78%;
+    --brand-border-light: 150 35% 88%;
+    --brand-gradient-to: 120 65% 95%;
+  }
+
   /* NCLEX-PN theme: teal (v2 exam; matches lib/v2/exams/nclexpn.ts theme) */
   [data-theme="nclexpn"] {
     --brand: 185 70% 34%;

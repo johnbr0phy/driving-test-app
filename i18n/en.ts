@@ -545,6 +545,15 @@ export const en = {
     vtEmergency: "Emergency Medicine & Critical Care",
     vtPain: "Pain Management & Analgesia",
     vtComm: "Communication & Professional Support",
+    // WA learner's test categories
+    auwaLicence: "Licences, P Plates & Demerits",
+    auwaSafety: "Alcohol, Fatigue & Seat Belts",
+    auwaSpeed: "Speed, Space & Conditions",
+    auwaSigns: "Signs, Signals & Markings",
+    auwaIntersect: "Intersections & Roundabouts",
+    auwaLanes: "Lanes, Overtaking & Freeways",
+    auwaSharing: "Sharing the Road",
+    auwaParking: "Parking, Crashes & Emergencies",
   } as Record<string, string>,
 
   // Training set names

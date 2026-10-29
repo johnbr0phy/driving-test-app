@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "auwa" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -2089,6 +2089,69 @@ const vtne: ExamConfig = {
     ],
     sourceLine: "Based on the AAVSB VTNE content outline approved March 2023. The real exam passes on a scaled score of 425; 70% here is a practice target.",
     analyticsKey: "vtne",
+  },
+};
+
+const auwa: ExamConfig = {
+  id: "auwa",
+  stateCode: "AUWA",
+  idBase: 7500,
+  slug: "/wa-learners",
+  landingPath: "/wa-learners-practice-test",
+  name: "WA Learner's Practice Test",
+  shortName: "WA Learners",
+  examLabel: "WA learner's test",
+  fullName: "Western Australia learner's permit theory test (Computerised Theory Test)",
+  questionIdPrefix: "AUWA-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Western Australia car (C class) learner's permit Computerised Theory Test, Department of
+  // Transport and Major Infrastructure, Driver and Vehicle Services: 30 multiple-choice questions on
+  // the road rules and safe driving, 24 correct to pass (80%), a pass valid 5 years (transport.wa.gov.au,
+  // Take the theory test, read Oct 2026). Questions come from Drive Safe: A handbook for Western
+  // Australian road users, revised edition 5 August 2026. DoT publishes no topic weighting, so the eight
+  // categories follow the handbook's parts: licensing and demerits (Part 2, 5), alcohol, fatigue and
+  // restraints (Part 1), speed and conditions (3.1 to 3.3), signs, signals and markings (3.8 to 3.10),
+  // intersections, roundabouts and railway crossings, lanes, overtaking and freeways, sharing the road,
+  // and stopping, parking and emergencies (3.17 to 3.19, Part 4). The separate Hazard Perception Test
+  // (video clips) is not modelled.
+  blueprint: {
+    auwaLicence: 7,
+    auwaSafety: 7,
+    auwaSpeed: 6,
+    auwaSigns: 7,
+    auwaIntersect: 8,
+    auwaLanes: 5,
+    auwaSharing: 5,
+    auwaParking: 5,
+  },
+  trainingSets: testSets(7500, 4),
+  categoryLabels: {
+    auwaLicence: "Licences, P Plates & Demerits",
+    auwaSafety: "Alcohol, Fatigue & Seat Belts",
+    auwaSpeed: "Speed, Space & Conditions",
+    auwaSigns: "Signs, Signals & Markings",
+    auwaIntersect: "Intersections & Roundabouts",
+    auwaLanes: "Lanes, Overtaking & Freeways",
+    auwaSharing: "Sharing the Road",
+    auwaParking: "Parking, Crashes & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your WA learner's test progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on, covering the road rules in the Drive Safe handbook. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions on the Drive Safe road rules",
+    heroSubs: [
+      "Eight topics, four tests. Give way and intersections come up most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test at a DVS centre.",
+    ],
+    sourceLine: "Based on Drive Safe, the WA road users' handbook (edition of 5 August 2026). The real test is 30 questions and you need 24 right (80%). The Hazard Perception Test is not modelled.",
+    analyticsKey: "auwa",
   },
 };
 
@@ -4186,7 +4249,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, auwa, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

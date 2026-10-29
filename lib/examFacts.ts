@@ -520,6 +520,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the AAVSB VTNE content outline approved March 2023",
     source: { name: "AAVSB VTNE Candidate Information Handbook", url: "https://www.aavsb.org/vtne-overview/" },
   },
+  auwa: {
+    answer:
+      "The Western Australia car learner's theory test (the Computerised Theory Test) is 30 multiple-choice questions on the road rules and safe driving from the Drive Safe handbook, and you need at least 24 correct (80%) to pass. You can sit it at a Driver and Vehicle Services centre or regional agent from age 16, the same day you apply for your learner's permit, and a pass is valid for 5 years. Learners then need 6 months and the Hazard Perception Test, and 50 supervised hours including 5 at night, before the driving assessment at 17.",
+    rows: [
+      { label: "Questions", value: "30 multiple choice" },
+      { label: "Passing score", value: "24 of 30 (80%)" },
+      { label: "Minimum age", value: "16 for a car learner's permit" },
+      { label: "Pass valid for", value: "5 years" },
+      { label: "Handbook", value: "Drive Safe (edition of 5 August 2026)" },
+      { label: "Next steps", value: "Hazard Perception Test, 50 logged hours, driving assessment at 17" },
+      { label: "Given by", value: "WA Department of Transport and Major Infrastructure, at DVS centres and agents" },
+    ],
+    basedOn: "Drive Safe, a handbook for Western Australian road users (revised 5 August 2026)",
+    source: { name: "Transport WA: Take the theory test", url: "https://www.transport.wa.gov.au/licensing/drivers-licence/get-a-licence/car/take-theory-test" },
+  },
   cpr: {
     answer:
       "Most CPR, AED and first aid written exams require 84% to pass, which is 21 of 25 on a typical 25-question exam. They cover scene safety, adult, child and infant CPR, AED use, choking and basic first aid. Certification also needs a hands-on skills check and usually lasts two years.",

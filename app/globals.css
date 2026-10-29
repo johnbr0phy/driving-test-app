@@ -672,6 +672,132 @@
     --brand-gradient-to: 15 65% 95%;
   }
 
+  /* Ontario G1 theme (Canada) */
+  [data-theme="caon"] {
+    --brand: 356 68% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 356 65% 95%;
+    --brand-hover: 356 68% 34%;
+    --brand-dark: 356 68% 28%;
+    --brand-darker: 356 58% 20%;
+    --brand-muted: 356 40% 72%;
+    --brand-border: 356 40% 78%;
+    --brand-border-light: 356 35% 88%;
+    --brand-gradient-to: 15 65% 95%;
+  }
+
+  /* Alberta Class 7 theme (Canada) */
+  [data-theme="caab"] {
+    --brand: 356 68% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 356 65% 95%;
+    --brand-hover: 356 68% 34%;
+    --brand-dark: 356 68% 28%;
+    --brand-darker: 356 58% 20%;
+    --brand-muted: 356 40% 72%;
+    --brand-border: 356 40% 78%;
+    --brand-border-light: 356 35% 88%;
+    --brand-gradient-to: 15 65% 95%;
+  }
+
+  /* UK motorcycle theory theme (UK) */
+  [data-theme="ukmoto"] {
+    --brand: 222 62% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 65% 95%;
+    --brand-hover: 222 62% 32%;
+    --brand-dark: 222 62% 26%;
+    --brand-darker: 222 52% 18%;
+    --brand-muted: 222 40% 72%;
+    --brand-border: 222 40% 78%;
+    --brand-border-light: 222 35% 88%;
+    --brand-gradient-to: 200 65% 95%;
+  }
+
+  /* NSW DKT theme (Australia) */
+  [data-theme="aunsw"] {
+    --brand: 150 60% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 150 65% 95%;
+    --brand-hover: 150 60% 22%;
+    --brand-dark: 150 60% 16%;
+    --brand-darker: 150 50% 8%;
+    --brand-muted: 150 40% 72%;
+    --brand-border: 150 40% 78%;
+    --brand-border-light: 150 35% 88%;
+    --brand-gradient-to: 120 65% 95%;
+  }
+
+  /* ICBC knowledge test theme (Canada) */
+  [data-theme="cabc"] {
+    --brand: 356 68% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 356 65% 95%;
+    --brand-hover: 356 68% 34%;
+    --brand-dark: 356 68% 28%;
+    --brand-darker: 356 58% 20%;
+    --brand-muted: 356 40% 72%;
+    --brand-border: 356 40% 78%;
+    --brand-border-light: 356 35% 88%;
+    --brand-gradient-to: 15 65% 95%;
+  }
+
+  /* PCV theory test theme (UK) */
+  [data-theme="ukpcv"] {
+    --brand: 222 62% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 65% 95%;
+    --brand-hover: 222 62% 32%;
+    --brand-dark: 222 62% 26%;
+    --brand-darker: 222 52% 18%;
+    --brand-muted: 222 40% 72%;
+    --brand-border: 222 40% 78%;
+    --brand-border-light: 222 35% 88%;
+    --brand-gradient-to: 200 65% 95%;
+  }
+
+  /* UK car theory test theme (UK) */
+  [data-theme="ukcar"] {
+    --brand: 222 62% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 65% 95%;
+    --brand-hover: 222 62% 32%;
+    --brand-dark: 222 62% 26%;
+    --brand-darker: 222 52% 18%;
+    --brand-muted: 222 40% 72%;
+    --brand-border: 222 40% 78%;
+    --brand-border-light: 222 35% 88%;
+    --brand-gradient-to: 200 65% 95%;
+  }
+
+  /* ADI part 1 theme (UK) */
+  [data-theme="ukadi"] {
+    --brand: 222 62% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 65% 95%;
+    --brand-hover: 222 62% 32%;
+    --brand-dark: 222 62% 26%;
+    --brand-darker: 222 52% 18%;
+    --brand-muted: 222 40% 72%;
+    --brand-border: 222 40% 78%;
+    --brand-border-light: 222 35% 88%;
+    --brand-gradient-to: 200 65% 95%;
+  }
+
+  /* Victoria learner permit theme (Australia) */
+  [data-theme="auvic"] {
+    --brand: 150 60% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 150 65% 95%;
+    --brand-hover: 150 60% 22%;
+    --brand-dark: 150 60% 16%;
+    --brand-darker: 150 50% 8%;
+    --brand-muted: 150 40% 72%;
+    --brand-border: 150 40% 78%;
+    --brand-border-light: 150 35% 88%;
+    --brand-gradient-to: 120 65% 95%;
+  }
+
   /* NCLEX-PN theme: teal (v2 exam; matches lib/v2/exams/nclexpn.ts theme) */
   [data-theme="nclexpn"] {
     --brand: 185 70% 34%;

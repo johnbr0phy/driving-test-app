@@ -50,6 +50,15 @@ const dmv: TestCatalogEntry = {
 };
 
 const EXAM_BLURBS: Record<string, string> = {
+  auvic: "Victoria's learner permit knowledge test: give way rules, speed limits, signs, alcohol limits and the P plate rules from Road to Solo Driving.",
+  ukadi: "Practice for the DVSA ADI part 1 theory test with 200 original questions across all four bands, from road procedure to instructional techniques.",
+  ukcar: "Free mock tests for the multiple-choice part of the UK car theory test: the Highway Code, road signs, motorways and hazards, with the real 43 of 50 pass mark.",
+  ukpcv: "Free UK bus and coach (PCV) theory practice: drivers' hours, tachographs, passengers, brakes, the road and signs, with the real 85% pass mark.",
+  cabc: "Free ICBC knowledge test practice for your B.C. learner's licence: 200 questions from Learn to Drive Smart, with 40 of 50 to pass like the real test.",
+  aunsw: "Practice for the NSW Driver Knowledge Test with 200 questions from the Road User Handbook: P plate rules, speed limits, BAC, giving way, roundabouts, parking and more.",
+  ukmoto: "The multiple-choice part of the DVSA motorcycle theory test: Highway Code rules, signs, riding skills and your licence, 43 of 50 to pass.",
+  caab: "Alberta Class 7 learner's licence knowledge test prep from the 2026 Driver's Guide: signs, signals, right-of-way, GDL rules, demerits and impaired driving.",
+  caon: "Ontario's G1 knowledge test: road signs, traffic lights, right-of-way, graduated licensing, demerit points and safe driving, from the Official MTO Driver's Handbook.",
   camb: "Free Manitoba Class 5 learner knowledge test practice: 200 questions from the MPI Driver's Handbook on signs, right-of-way, GDL rules, winter driving and impaired driving.",
   auwa: "Practise for the Western Australia learner's permit theory test with 200 questions from the Drive Safe handbook: give way, roundabouts, P plates, demerits and BAC.",
   cdl: "600 questions on the CDL general knowledge exam. Six blueprint-weighted tests and six training sets by topic.",
@@ -102,7 +111,7 @@ const EXAM_BLURBS: Record<string, string> = {
 };
 
 // Short issuing-body line for menus; defaults to the exam label.
-const EXAM_ORG: Record<string, string> = { camb: "Manitoba Public Insurance (MPI)", auwa: "WA Department of Transport and Major Infrastructure", timestables: "Primary school · Year 2 to Year 4 MTC", ged: "High school equivalency · RLA, Math, Science, Social Studies", sat: "Digital SAT · Reading and Writing, Math", act: "Enhanced ACT · English, Math, Reading, Science", cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician practice", epa608: "EPA Section 608 practice", cna: "Nurse aide written exam", ptcb: "Pharmacy technician certification", phleb: "Phlebotomy certification practice", ccma: "NHA medical assistant exam", cet: "NHA EKG technician exam", danb: "DANB CDA: GC, RHS, ICE", emt: "NREMT cognitive exam", paramedic: "NREMT Paramedic exam", foodmgr: "Food-protection manager practice", realestate: "National portion, Pearson VUE and PSI", insurance: "Life, accident & health producer exam", notary: "Notary practice; state requirements vary", teas: "Nursing & allied health admissions", aws: "AWS CLF-C02", aplus: "CompTIA 220-1201 / 220-1202", foodhandler: "Supplemental food-safety practice", boating: "NASBLA state boater exams", hunter: "IHEA state hunter education exams", secplus: "CompTIA SY0-701", hesi: "Nursing school admissions", nclex: "NCSBN 2026 RN test plan", nclexpn: "NCSBN 2026 PN test plan", asvab: "Military aptitude practice", cpr: "Lay rescuer & healthcare BLS courses", osha: "OSHA Outreach course final", forklift: "OSHA 1910.178 operator evaluation", alcohol: "Supplemental alcohol-service practice", accuplacer: "College placement", security: "State guard card exams", lifeguard: "Certification written exam", pnc: "P&C producer exam, general portion", cosmetology: "NIC national theory exam; a few states use their own", vtne: "AAVSB vet tech credentialing exam" };
+const EXAM_ORG: Record<string, string> = { auvic: "VicRoads, Victoria", ukadi: "DVSA, Great Britain", ukcar: "DVSA (Great Britain)", ukpcv: "DVSA (Great Britain)", cabc: "ICBC, British Columbia", aunsw: "Transport for NSW", ukmoto: "DVSA, Great Britain", caab: "Alberta registry agents · Class 7 learner's licence", caon: "Ontario MTO, DriveTest", camb: "Manitoba Public Insurance (MPI)", auwa: "WA Department of Transport and Major Infrastructure", timestables: "Primary school · Year 2 to Year 4 MTC", ged: "High school equivalency · RLA, Math, Science, Social Studies", sat: "Digital SAT · Reading and Writing, Math", act: "Enhanced ACT · English, Math, Reading, Science", cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician practice", epa608: "EPA Section 608 practice", cna: "Nurse aide written exam", ptcb: "Pharmacy technician certification", phleb: "Phlebotomy certification practice", ccma: "NHA medical assistant exam", cet: "NHA EKG technician exam", danb: "DANB CDA: GC, RHS, ICE", emt: "NREMT cognitive exam", paramedic: "NREMT Paramedic exam", foodmgr: "Food-protection manager practice", realestate: "National portion, Pearson VUE and PSI", insurance: "Life, accident & health producer exam", notary: "Notary practice; state requirements vary", teas: "Nursing & allied health admissions", aws: "AWS CLF-C02", aplus: "CompTIA 220-1201 / 220-1202", foodhandler: "Supplemental food-safety practice", boating: "NASBLA state boater exams", hunter: "IHEA state hunter education exams", secplus: "CompTIA SY0-701", hesi: "Nursing school admissions", nclex: "NCSBN 2026 RN test plan", nclexpn: "NCSBN 2026 PN test plan", asvab: "Military aptitude practice", cpr: "Lay rescuer & healthcare BLS courses", osha: "OSHA Outreach course final", forklift: "OSHA 1910.178 operator evaluation", alcohol: "Supplemental alcohol-service practice", accuplacer: "College placement", security: "State guard card exams", lifeguard: "Certification written exam", pnc: "P&C producer exam, general portion", cosmetology: "NIC national theory exam; a few states use their own", vtne: "AAVSB vet tech credentialing exam" };
 
 const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   id: exam.id,
@@ -142,8 +151,9 @@ export const TEST_CATALOG: TestCatalogEntry[] = [dmv, ...EXAMS_V2.map(v2Entry), 
 /** Hub groupings, in display order. Anything not listed falls into "Other exams". */
 const GROUPS: { title: string; ids: string[] }[] = [
   { title: "Driving tests", ids: ["dmv", "cdl", "cdlx", "moto"] },
-  { title: "Australia learner driver tests", ids: ["auwa"] },
-  { title: "Canada driving tests", ids: ["camb"] },
+  { title: "Australia learner driver tests", ids: ["auwa", "aunsw", "auvic"] },
+  { title: "Canada driving tests", ids: ["camb", "caon", "caab", "cabc"] },
+  { title: "UK driving and instructor theory tests", ids: ["ukmoto", "ukpcv", "ukcar", "ukadi"] },
   { title: "Citizenship", ids: ["civics"] },
   { title: "Outdoor & recreation licenses", ids: ["boating", "hunter", "lifeguard"] },
   { title: "Workplace & job certifications", ids: ["foodhandler", "osha", "forklift", "alcohol", "security", "cosmetology"] },
@@ -162,6 +172,15 @@ export const TEST_GROUPS: { title: string; tests: TestCatalogEntry[] }[] = [
 
 /** Extra words people type that do not appear in the name, org or blurb. */
 const SEARCH_ALIASES: Record<string, string> = {
+  auvic: "vicroads learners test ls learner permit victoria vic melbourne australia road to solo driving knowledge test l plates",
+  ukadi: "adi part 1 adi theory test driving instructor theory dvsa approved driving instructor uk instructor test part one pdi",
+  ukcar: "uk theory test driving theory dvsa highway code mock test car theory british england scotland wales learner provisional",
+  ukpcv: "pcv bus coach theory test uk dvsa driver cpc part 1 psv minibus d1 category d licence bus driver tachograph drivers hours highway code",
+  cabc: "icbc bc british columbia learners licence learner's permit class 7 7l knowledge test learn to drive smart canada driving test l n glp",
+  aunsw: "nsw dkt driver knowledge test learner licence l plates learners permit australia sydney new south wales road user handbook rta myrta service nsw",
+  ukmoto: "uk motorcycle theory test motorbike moped dvsa cbt highway code britain england scotland wales a1 a2 bike theory",
+  caab: "alberta class 7 learners licence learner's permit knowledge test ab drivers test written test registry calgary edmonton gdl canada",
+  caon: "ontario g1 g1 test g1 knowledge test g1 practice test mto drivetest ontario driver's licence ontario drivers test canada learner permit g2 written test",
   camb: "manitoba mpi class 5 5l learner knowledge test permit driving test winnipeg brandon autopac driver handbook gdl canada",
   auwa: "wa learners permit theory test western australia perth drive safe handbook l plates p plates road rules dot dvs computerised theory test ctt australia",
   dmv: "driver license permit learners written knowledge road signs state",

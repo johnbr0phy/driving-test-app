@@ -715,6 +715,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Queensland TMR licensing, road rules and road safety pages and the Queensland Road Rules, October 2026",
     source: { name: "Queensland Government: driver tests", url: "https://www.qld.gov.au/transport/licensing/getting/tests" },
   },
+  uklgv: {
+    answer:
+      "The lorry theory test is part 1 of the Driver CPC, set by the DVSA. The multiple-choice part has 100 questions in 1 hour 55 minutes and you need 85 right to pass; hazard perception is a separate part of 19 video clips with a pass mark of 67 out of 100. The certificate lasts 2 years from passing the first part, and you must pass both parts within 2 years of each other.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "1 hour 55 minutes" },
+      { label: "Passing score", value: "85 out of 100" },
+      { label: "Hazard perception", value: "Separate part: 19 clips, pass mark 67 of 100" },
+      { label: "Fee", value: "£26 (multiple choice), £11 (hazard perception)" },
+      { label: "Certificate valid", value: "2 years from passing the first part" },
+      { label: "Given by", value: "DVSA, at theory test centres" },
+    ],
+    basedOn: "the DVSA lorry theory test topics, The Highway Code and the GB drivers' hours rules",
+    source: { name: "GOV.UK: Driver CPC part 1 theory test", url: "https://www.gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test" },
+  },
   cpr: {
     answer:
       "Most CPR, AED and first aid written exams require 84% to pass, which is 21 of 25 on a typical 25-question exam. They cover scene safety, adult, child and infant CPR, AED use, choking and basic first aid. Certification also needs a hands-on skills check and usually lasts two years.",

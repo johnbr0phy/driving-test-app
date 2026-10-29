@@ -655,6 +655,14 @@ export const vi: TranslationKeys = {
     auqldSigns: "Signs, Lines & Traffic Lights",
     auqldRoad: "Lanes, Turning & Parking",
     auqldSafety: "Speed, Alcohol & Safe Driving",
+    // UK LGV theory categories
+    uklgvHours: "Drivers' Hours & the Driver",
+    uklgvVehicle: "Vehicle Condition & Brakes",
+    uklgvLoading: "Weights, Dimensions & Loading",
+    uklgvRoad: "The Road & Other Road Users",
+    uklgvDocs: "Documents, Security & Environment",
+    uklgvIncidents: "Incidents & Emergencies",
+    uklgvSigns: "Traffic Signs",
   } as Record<string, string>,
 
   // Training set names

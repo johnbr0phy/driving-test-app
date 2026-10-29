@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "auqld" | "ausa" | "auvic" | "ukadi" | "ukcar" | "ukpcv" | "cabc" | "aunsw" | "ukmoto" | "caab" | "caon" | "camb" | "auwa" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "uklgv" | "auqld" | "ausa" | "auvic" | "ukadi" | "ukcar" | "ukpcv" | "cabc" | "aunsw" | "ukmoto" | "caab" | "caon" | "camb" | "auwa" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -2874,6 +2874,66 @@ const auqld: ExamConfig = {
   },
 };
 
+const uklgv: ExamConfig = {
+  id: "uklgv",
+  stateCode: "UKLGV",
+  idBase: 6900,
+  slug: "/lgv-theory",
+  landingPath: "/lgv-theory-test",
+  name: "LGV Theory Test Practice",
+  shortName: "LGV Theory",
+  examLabel: "UK LGV theory",
+  fullName: "UK DVSA lorry (LGV) theory test, multiple-choice part",
+  questionIdPrefix: "UKLGV-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 85,
+  // DVSA Driver CPC part 1a (lorry theory test, multiple-choice part): 100 questions in
+  // 1 hour 55 minutes, pass mark 85 (gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test,
+  // checked Oct 2026). Questions come from The Highway Code, Know Your Traffic Signs and The Official
+  // DVSA Guide to Driving Goods Vehicles. DVSA's 14 lorry topics merged into 7: drivers' hours and the
+  // driver; braking systems and vehicle condition; vehicle weights and dimensions with vehicle loading;
+  // the road, restricted view and other road users; documents, leaving the vehicle and environmental
+  // issues; accident handling; traffic signs. DVSA publishes no per-topic weights, so counts are by
+  // topic breadth. Part 1b hazard perception (19 clips, pass mark 67) is not modelled. All questions
+  // are original; rules asserted are Great Britain's (drivers' hours, speed limits, Highway Code).
+  blueprint: {
+    uklgvHours: 9,
+    uklgvVehicle: 8,
+    uklgvLoading: 8,
+    uklgvRoad: 8,
+    uklgvDocs: 6,
+    uklgvIncidents: 5,
+    uklgvSigns: 6,
+  },
+  trainingSets: testSets(6900, 4),
+  categoryLabels: {
+    uklgvHours: "Drivers' Hours & the Driver",
+    uklgvVehicle: "Vehicle Condition & Brakes",
+    uklgvLoading: "Weights, Dimensions & Loading",
+    uklgvRoad: "The Road & Other Road Users",
+    uklgvDocs: "Documents, Security & Environment",
+    uklgvIncidents: "Incidents & Emergencies",
+    uklgvSigns: "Traffic Signs",
+  },
+  copy: {
+    guestPrompt: "to save your LGV theory progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly Test 1's 50 questions, and so on. Each covers drivers' hours, brakes, loading, the road, documents, incidents and signs. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every DVSA lorry topic",
+    heroSubs: [
+      "Seven topics, four tests. Drivers' hours is the biggest.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Aim for 85% on every test.",
+      "All done. Book your theory test.",
+    ],
+    sourceLine: "Based on the DVSA lorry theory test topics, The Highway Code and GB drivers' hours rules. Multiple-choice part only; hazard perception is not included.",
+    analyticsKey: "uklgv",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -4968,7 +5028,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, auwa, camb, caon, caab, ukmoto, aunsw, cabc, ukpcv, ukcar, ukadi, auvic, ausa, auqld, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, auwa, camb, caon, caab, ukmoto, aunsw, cabc, ukpcv, ukcar, ukadi, auvic, ausa, auqld, uklgv, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

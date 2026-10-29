@@ -826,6 +826,20 @@
     --brand-gradient-to: 120 65% 95%;
   }
 
+  /* UK LGV theory theme (UK) */
+  [data-theme="uklgv"] {
+    --brand: 222 62% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 65% 95%;
+    --brand-hover: 222 62% 32%;
+    --brand-dark: 222 62% 26%;
+    --brand-darker: 222 52% 18%;
+    --brand-muted: 222 40% 72%;
+    --brand-border: 222 40% 78%;
+    --brand-border-light: 222 35% 88%;
+    --brand-gradient-to: 200 65% 95%;
+  }
+
   /* NCLEX-PN theme: teal (v2 exam; matches lib/v2/exams/nclexpn.ts theme) */
   [data-theme="nclexpn"] {
     --brand: 185 70% 34%;

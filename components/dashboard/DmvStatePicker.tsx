@@ -8,10 +8,13 @@
 // Unlike an exam family, switching DMV states deletes the current state's
 // progress (setSelectedState), so Change asks first when there is any.
 
+import { useEffect } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useStore } from "@/store/useStore";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
+import { trackStateSelected } from "@/lib/analytics";
+import { trackFunnelStep } from "@/lib/funnel";
 
 function useDmvStateChoice() {
   const { t } = useTranslation();
@@ -24,6 +27,7 @@ function useDmvStateChoice() {
     if (code === selectedState) return;
     if (selectedState && hasProgress && !window.confirm(t("settings.switchStateWarning"))) return;
     setSelectedState(code);
+    if (!selectedState) trackStateSelected(code, "picker");
   };
   return { selectedState, choose };
 }
@@ -32,6 +36,10 @@ function useDmvStateChoice() {
 export function DmvStatePrompt() {
   const { t } = useTranslation();
   const { selectedState, choose } = useDmvStateChoice();
+  // Counted once per signed-out browser; dmv_state is the matching choice.
+  useEffect(() => {
+    if (!selectedState) trackFunnelStep("dmv_picker");
+  }, [selectedState]);
   if (selectedState) return null;
 
   return (

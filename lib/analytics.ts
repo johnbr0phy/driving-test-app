@@ -188,6 +188,12 @@ export function trackPurchase(transactionId: string) {
 
 // The in-training sign-up prompt (components/GuestPromptStep): shown, skipped,
 // or one of its buttons tapped. where: "training" (v1 exam sets) | "drill" (v2).
+/** A DMV state set on the dashboard: from its picker, or from a state landing's ?state= link. */
+export function trackStateSelected(state: string, via: "picker" | "link") {
+  window.gtag?.("event", "state_selected", { state, via });
+  if (via === "picker") trackFunnelStep("dmv_state");
+}
+
 export function trackGuestPrompt(action: "shown" | "skipped" | "google" | "email", where: string) {
   window.gtag?.("event", "guest_prompt", { action, where });
 }

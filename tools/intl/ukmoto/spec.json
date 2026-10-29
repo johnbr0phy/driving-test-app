@@ -1,0 +1,54 @@
+{
+  "id": "ukmoto",
+  "stateCode": "UKMOTO",
+  "idBase": 6800,
+  "prefix": "UKMOTO-",
+  "slug": "/uk-motorcycle-theory",
+  "landingPath": "/uk-motorcycle-theory-test",
+  "dataFile": "data/uk-motorcycle-theory-questions.json",
+  "name": "UK Motorcycle Theory Test",
+  "shortName": "UK Moto",
+  "examLabel": "UK motorcycle theory",
+  "fullName": "UK DVSA motorcycle theory test",
+  "icon": "bike",
+  "passPct": 86,
+  "outlineComment": "DVSA motorcycle theory test, multiple-choice part (GOV.UK, checked October 2026):\n50 questions in 57 minutes, pass mark 43 of 50 (86%). From 5 November 2026\nthree of the 50 are based on a short silent video (before then, a 5-question\ncase study); neither is modelled here, nor the hazard perception part\n(14 clips, 44 of 75 to pass). Questions are drawn from The Highway Code,\nKnow your traffic signs and Riding - the essential skills. DVSA's 14 topics\n(alertness, attitude, hazard awareness, safety and your motorcycle, motorcycle\nloading, safety margins, road conditions and motorcycle handling, vulnerable\nroad users, other types of vehicle, rules of the road, motorway rules, road\nand traffic signs, documents, incidents accidents and emergencies) are merged\ninto seven. DVSA publishes no per-topic weighting; counts follow the size of\neach topic group. All questions are original, not from the licensed DVSA bank.",
+  "categories": [
+    {"key": "ukmotoAware", "label": "Alertness, Attitude & Hazards", "perTest": 8, "segment": "AWR"},
+    {"key": "ukmotoMachine", "label": "Your Motorcycle & Loading", "perTest": 8, "segment": "MCH"},
+    {"key": "ukmotoHandling", "label": "Safety Margins & Handling", "perTest": 8, "segment": "HDL"},
+    {"key": "ukmotoVulnerable", "label": "Vulnerable Road Users & Other Vehicles", "perTest": 6, "segment": "VUL"},
+    {"key": "ukmotoRules", "label": "Rules of the Road & Motorways", "perTest": 8, "segment": "RUL"},
+    {"key": "ukmotoSigns", "label": "Road & Traffic Signs", "perTest": 7, "segment": "SGN"},
+    {"key": "ukmotoDocs", "label": "Documents, Incidents & Emergencies", "perTest": 5, "segment": "DOC"}
+  ],
+  "copy": {
+    "guestPrompt": "to save your motorcycle theory progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on, across all seven DVSA topic groups. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions, 43 to pass, like the real multiple-choice part",
+    "heroSubs": [
+      "Seven topic groups, four tests. You need 43 of 50 to pass.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Practise hazard perception, then book."
+    ],
+    "sourceLine": "Based on the DVSA motorcycle theory test and The Highway Code, checked October 2026. Hazard perception and the video questions are not included."
+  },
+  "blurb": "The multiple-choice part of the DVSA motorcycle theory test: Highway Code rules, signs, riding skills and your licence, 43 of 50 to pass.",
+  "org": "DVSA, Great Britain",
+  "searchAliases": "uk motorcycle theory test motorbike moped dvsa cbt highway code britain england scotland wales a1 a2 bike theory",
+  "facts": {
+    "answer": "The DVSA motorcycle theory test has two parts taken on the same day: 50 multiple-choice questions in 57 minutes, where you need 43 to pass, and a hazard perception test of 14 video clips, where you need 44 of 75. You must pass both, it costs 23 pounds and the pass certificate lasts 2 years. From 5 November 2026, three of the multiple-choice questions are based on a short silent riding video.",
+    "rows": [
+      {"label": "Multiple-choice", "value": "50 questions in 57 minutes"},
+      {"label": "Pass mark", "value": "43 of 50 (86%)"},
+      {"label": "Hazard perception", "value": "14 clips, 44 of 75 to pass"},
+      {"label": "Fee", "value": "£23"},
+      {"label": "Minimum age", "value": "16 for a moped, 17 for a motorcycle"},
+      {"label": "Certificate valid", "value": "2 years"}
+    ],
+    "basedOn": "the DVSA motorcycle theory test guidance and The Highway Code",
+    "source": {"name": "GOV.UK: Motorcycle theory test", "url": "https://www.gov.uk/motorcycle-theory-test"}
+  }
+}

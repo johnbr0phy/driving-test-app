@@ -1,0 +1,56 @@
+{
+  "id": "uklgv",
+  "stateCode": "UKLGV",
+  "idBase": 6900,
+  "prefix": "UKLGV-",
+  "slug": "/lgv-theory",
+  "landingPath": "/lgv-theory-test",
+  "dataFile": "data/uk-lgv-theory-questions.json",
+  "name": "LGV Theory Test Practice",
+  "shortName": "LGV Theory",
+  "examLabel": "UK LGV theory",
+  "fullName": "UK DVSA lorry (LGV) theory test, multiple-choice part",
+  "icon": "truck",
+  "passPct": 85,
+  "outlineComment": "DVSA Driver CPC part 1a (lorry theory test, multiple-choice part): 100 questions in\n1 hour 55 minutes, pass mark 85 (gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test,\nchecked Oct 2026). Questions come from The Highway Code, Know Your Traffic Signs and The Official\nDVSA Guide to Driving Goods Vehicles. DVSA's 14 lorry topics merged into 7: drivers' hours and the\ndriver; braking systems and vehicle condition; vehicle weights and dimensions with vehicle loading;\nthe road, restricted view and other road users; documents, leaving the vehicle and environmental\nissues; accident handling; traffic signs. DVSA publishes no per-topic weights, so counts are by\ntopic breadth. Part 1b hazard perception (19 clips, pass mark 67) is not modelled. All questions\nare original; rules asserted are Great Britain's (drivers' hours, speed limits, Highway Code).",
+  "categories": [
+    {"key": "uklgvHours", "label": "Drivers' Hours & the Driver", "perTest": 9, "segment": "HRS"},
+    {"key": "uklgvVehicle", "label": "Vehicle Condition & Brakes", "perTest": 8, "segment": "VEH"},
+    {"key": "uklgvLoading", "label": "Weights, Dimensions & Loading", "perTest": 8, "segment": "LOAD"},
+    {"key": "uklgvRoad", "label": "The Road & Other Road Users", "perTest": 8, "segment": "ROAD"},
+    {"key": "uklgvDocs", "label": "Documents, Security & Environment", "perTest": 6, "segment": "DOC"},
+    {"key": "uklgvIncidents", "label": "Incidents & Emergencies", "perTest": 5, "segment": "INC"},
+    {"key": "uklgvSigns", "label": "Traffic Signs", "perTest": 6, "segment": "SIGN"}
+  ],
+  "copy": {
+    "guestPrompt": "to save your LGV theory progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test: Set 1 holds exactly Test 1's 50 questions, and so on. Each covers drivers' hours, brakes, loading, the road, documents, incidents and signs. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions across every DVSA lorry topic",
+    "heroSubs": [
+      "Seven topics, four tests. Drivers' hours is the biggest.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Aim for 85% on every test.",
+      "All done. Book your theory test."
+    ],
+    "sourceLine": "Based on the DVSA lorry theory test topics, The Highway Code and GB drivers' hours rules. Multiple-choice part only; hazard perception is not included.",
+    "analyticsKey": "uklgv"
+  },
+  "blurb": "Practise for the UK lorry (LGV/HGV) theory test: drivers' hours, tachographs, air brakes, load security, weights and dimensions, and signs, with an 85% pass line like the real test.",
+  "org": "DVSA (UK)",
+  "searchAliases": "lgv hgv lorry truck theory test uk dvsa driver cpc part 1 cat c c1 ce class 1 class 2 drivers hours tachograph",
+  "facts": {
+    "answer": "The lorry theory test is part 1 of the Driver CPC, set by the DVSA. The multiple-choice part has 100 questions in 1 hour 55 minutes and you need 85 right to pass; hazard perception is a separate part of 19 video clips with a pass mark of 67 out of 100. The certificate lasts 2 years from passing the first part, and you must pass both parts within 2 years of each other.",
+    "rows": [
+      {"label": "Questions", "value": "100 multiple choice"},
+      {"label": "Time", "value": "1 hour 55 minutes"},
+      {"label": "Passing score", "value": "85 out of 100"},
+      {"label": "Hazard perception", "value": "Separate part: 19 clips, pass mark 67 of 100"},
+      {"label": "Fee", "value": "£26 (multiple choice), £11 (hazard perception)"},
+      {"label": "Certificate valid", "value": "2 years from passing the first part"},
+      {"label": "Given by", "value": "DVSA, at theory test centres"}
+    ],
+    "basedOn": "the DVSA lorry theory test topics, The Highway Code and the GB drivers' hours rules",
+    "source": {"name": "GOV.UK: Driver CPC part 1 theory test", "url": "https://www.gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test"}
+  }
+}

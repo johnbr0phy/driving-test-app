@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "uklgv" | "auqld" | "ausa" | "auvic" | "ukadi" | "ukcar" | "ukpcv" | "cabc" | "aunsw" | "ukmoto" | "caab" | "caon" | "camb" | "auwa" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -2934,6 +2934,68 @@ const uklgv: ExamConfig = {
   },
 };
 
+const caqc: ExamConfig = {
+  id: "caqc",
+  stateCode: "CAQC",
+  idBase: 6500,
+  slug: "/saaq",
+  landingPath: "/saaq-practice-test",
+  name: "SAAQ Practice Test",
+  shortName: "SAAQ",
+  examLabel: "Quebec SAAQ",
+  fullName: "Quebec SAAQ Class 5 knowledge test",
+  questionIdPrefix: "CAQC-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // SAAQ Class 5 (passenger vehicle) knowledge test, taken at an SAAQ service centre after
+  // holding the learner's licence for 10 months. Three multiple-choice parts (Highway Safety Code;
+  // road signs and traffic signals; behaviours and techniques for driving a passenger vehicle), 75%
+  // required on each part. The SAAQ does not publish the question count. Content from the SAAQ Road
+  // Safety Education Program modules (English, 2023 to 2025 editions), the SAAQ Demerit Points and
+  // Class 5 Quick Reference Guide (C-6963-A, 25-07) leaflets, and the Gouvernement du Quebec
+  // traffic rules and road sign pages (quebec.ca, updated July to October 2026). Per test:
+  // 15 Code (licences 6, rules 9), 14 signs and signals (signs 8, lights and markings 6),
+  // 21 behaviours (right of way 6, sharing the road 6, risk 5, techniques 4).
+  blueprint: {
+    caqcLicence: 6,
+    caqcRules: 9,
+    caqcSigns: 8,
+    caqcSignals: 6,
+    caqcRightOfWay: 6,
+    caqcSharing: 6,
+    caqcRisk: 5,
+    caqcDriving: 4,
+  },
+  trainingSets: testSets(6500, 4),
+  categoryLabels: {
+    caqcLicence: "Licences & Demerit Points",
+    caqcRules: "Highway Safety Code Rules",
+    caqcSigns: "Road Signs",
+    caqcSignals: "Traffic Lights & Pavement Markings",
+    caqcRightOfWay: "Intersections & Right of Way",
+    caqcSharing: "Sharing the Road",
+    caqcRisk: "Alcohol, Drugs, Fatigue & Distraction",
+    caqcDriving: "Driving Techniques & Conditions",
+  },
+  copy: {
+    guestPrompt: "to save your SAAQ test progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across all three parts of the SAAQ test",
+    heroSubs: [
+      "Code, signs and driving behaviours. You need 75% on each part.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your SAAQ knowledge test.",
+    ],
+    sourceLine: "Based on the SAAQ driving course modules, SAAQ leaflets and Quebec's Highway Safety Code rules as published on quebec.ca (2026). The real test needs 75% on each of its three parts.",
+    analyticsKey: "caqc",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -5028,7 +5090,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, auwa, camb, caon, caab, ukmoto, aunsw, cabc, ukpcv, ukcar, ukadi, auvic, ausa, auqld, uklgv, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, ukcar, ukmoto, uklgv, ukpcv, ukadi, caon, caqc, cabc, caab, camb, aunsw, auvic, auqld, auwa, ausa, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

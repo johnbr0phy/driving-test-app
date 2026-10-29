@@ -730,6 +730,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the DVSA lorry theory test topics, The Highway Code and the GB drivers' hours rules",
     source: { name: "GOV.UK: Driver CPC part 1 theory test", url: "https://www.gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test" },
   },
+  caqc: {
+    answer:
+      "The SAAQ knowledge test is the written test for a Quebec Class 5 (passenger vehicle) licence. You take it at an SAAQ service centre after holding your learner's licence for at least 10 months. It is multiple choice in three parts, the Highway Safety Code, road signs and traffic signals, and driving behaviours and techniques, and you need 75% on each part. If you fail, you wait at least 28 days to retake it.",
+    rows: [
+      { label: "Format", value: "Multiple choice, three parts" },
+      { label: "Passing score", value: "75% on each part" },
+      { label: "When", value: "After 10 months with a learner's licence" },
+      { label: "Retake", value: "Wait at least 28 days" },
+      { label: "Languages", value: "French or English; Spanish, Mandarin or Arabic on request" },
+      { label: "Next step", value: "Road test after 12 months, then a 2-year probationary licence" },
+      { label: "Given by", value: "SAAQ, at its service centres" },
+    ],
+    basedOn: "the SAAQ Road Safety Education Program and Quebec's Highway Safety Code, 2026",
+    source: { name: "SAAQ, Obtaining a Passenger Vehicle (Class 5) Driver's Licence", url: "https://saaq.gouv.qc.ca/en/drivers-licences/obtaining-licence/passenger-vehicle-class-5" },
+  },
   cpr: {
     answer:
       "Most CPR, AED and first aid written exams require 84% to pass, which is 21 of 25 on a typical 25-question exam. They cover scene safety, adult, child and infant CPR, AED use, choking and basic first aid. Certification also needs a hands-on skills check and usually lasts two years.",

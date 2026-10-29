@@ -1,0 +1,56 @@
+{
+  "id": "cabc",
+  "stateCode": "CABC",
+  "idBase": 6300,
+  "prefix": "CABC-",
+  "slug": "/icbc",
+  "landingPath": "/icbc-practice-test",
+  "dataFile": "data/icbc-questions.json",
+  "name": "ICBC Practice Test",
+  "shortName": "ICBC",
+  "examLabel": "ICBC knowledge test",
+  "fullName": "ICBC Class 7L knowledge test (British Columbia)",
+  "icon": "car",
+  "passPct": 80,
+  "outlineComment": "ICBC Class 7L passenger vehicle knowledge test, British Columbia: 50 multiple-choice\nquestions from Learn to Drive Smart (ICBC), 40 correct to pass (80%), 45 minutes, 12 languages\n(ICBC tip sheet MV2654, June 2026; MV2022, October 2026). Categories follow the handbook's\nchapters: signs, signals and road markings (ch 3, about one question in five), intersections and\nright-of-way and lanes and parking (ch 4), see-think-do (ch 5), sharing the road (ch 6), personal\nstrategies and impairment (ch 7), emergency strategies (ch 8), and your licence and vehicle (ch 2, 9).\nGLP items follow the ICBC changes effective October 19, 2026 (Driving Record Assessment, supervisor 22+).",
+  "categories": [
+    {"key": "cabcSigns", "label": "Signs, Signals & Road Markings", "perTest": 10, "segment": "SGN"},
+    {"key": "cabcRow", "label": "Intersections & Right-of-Way", "perTest": 7, "segment": "ROW"},
+    {"key": "cabcLanes", "label": "Lanes, Passing & Parking", "perTest": 6, "segment": "LAN"},
+    {"key": "cabcSafe", "label": "See-Think-Do & Speed", "perTest": 7, "segment": "STD"},
+    {"key": "cabcShare", "label": "Sharing the Road", "perTest": 7, "segment": "SHR"},
+    {"key": "cabcImpair", "label": "Impairment & Distraction", "perTest": 4, "segment": "IMP"},
+    {"key": "cabcEmerg", "label": "Emergencies & Conditions", "perTest": 5, "segment": "EMG"},
+    {"key": "cabcLicence", "label": "Your Licence, GLP & Vehicle", "perTest": 4, "segment": "LIC"}
+  ],
+  "copy": {
+    "guestPrompt": "to save your ICBC knowledge test progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions, 40 to pass, like the real ICBC test",
+    "heroSubs": [
+      "Signs, right-of-way and sharing the road, straight from Learn to Drive Smart.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your knowledge test."
+    ],
+    "sourceLine": "Based on ICBC's Learn to Drive Smart and the 50-question, 40-to-pass Class 7L knowledge test, with GLP rules as of October 19, 2026."
+  },
+  "blurb": "Free ICBC knowledge test practice for your B.C. learner's licence: 200 questions from Learn to Drive Smart, with 40 of 50 to pass like the real test.",
+  "org": "ICBC, British Columbia",
+  "searchAliases": "icbc bc british columbia learners licence learner's permit class 7 7l knowledge test learn to drive smart canada driving test l n glp",
+  "facts": {
+    "answer": "The ICBC Class 7L knowledge test for a British Columbia learner's licence has 50 multiple-choice questions taken from ICBC's Learn to Drive Smart guide, and you need 40 correct (80%) to pass. You have up to 45 minutes, can take it online or at an ICBC driver licensing office from age 16, and must also pass a vision screening. It is offered in 12 languages.",
+    "rows": [
+      {"label": "Questions", "value": "50 multiple choice"},
+      {"label": "Passing score", "value": "40 of 50 (80%)"},
+      {"label": "Time", "value": "Up to 45 minutes"},
+      {"label": "Minimum age", "value": "16"},
+      {"label": "Fee", "value": "$15 test, $10 Class 7L licence"},
+      {"label": "Where", "value": "Online or at an ICBC driver licensing office"},
+      {"label": "Languages", "value": "12, including French, Punjabi, Mandarin and Cantonese"}
+    ],
+    "basedOn": "ICBC's Learn to Drive Smart guide and knowledge test tip sheet (June 2026)",
+    "source": {"name": "ICBC: Get your L", "url": "https://icbc.com/driver-licensing/new-drivers/Get-your-L"}
+  }
+}

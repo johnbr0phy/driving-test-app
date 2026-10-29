@@ -1,0 +1,138 @@
+{
+  "id": "ukadi",
+  "stateCode": "UKADI",
+  "idBase": 7100,
+  "prefix": "UKADI-",
+  "slug": "/adi-part-1",
+  "landingPath": "/adi-part-1-practice-test",
+  "dataFile": "data/uk-adi-part-1-questions.json",
+  "name": "ADI Part 1 Practice Test",
+  "shortName": "ADI Part 1",
+  "examLabel": "ADI part 1",
+  "fullName": "DVSA Approved Driving Instructor (ADI) part 1 theory test",
+  "icon": "graduation",
+  "passPct": 85,
+  "outlineComment": "DVSA ADI part 1 theory test (gov.uk/adi-part-1-test, checked October 2026): 100 multiple-choice\nquestions in 1 hour 30 minutes, 25 in each of four bands: road procedure; traffic signs and signals,\ncar control, pedestrians and mechanical knowledge; driving test, disabilities and the law; publications\nand instructional techniques. Pass is 85 of 100 overall and at least 20 of 25 in every band. Each band\nis split in two here, keeping the bands at 13/12/13/12 of 50. Content from the Highway Code, Know Your\nTraffic Signs, the DVSA national standards, the ADI code of practice and the ADI part 2 and 3 rules.\nThe hazard perception part (14 clips, 57 of 75) is not modelled. All questions are original; DVSA's\nlicensed revision bank was not used.",
+  "categories": [
+    {
+      "key": "ukadiRoad",
+      "label": "Road Procedure",
+      "perTest": 7,
+      "segment": "RDP"
+    },
+    {
+      "key": "ukadiConditions",
+      "label": "Speed, Motorways & Conditions",
+      "perTest": 6,
+      "segment": "MWN"
+    },
+    {
+      "key": "ukadiSigns",
+      "label": "Traffic Signs & Signals",
+      "perTest": 6,
+      "segment": "SGN"
+    },
+    {
+      "key": "ukadiControl",
+      "label": "Car Control, Pedestrians & Mechanical",
+      "perTest": 6,
+      "segment": "CTL"
+    },
+    {
+      "key": "ukadiTest",
+      "label": "The Driving Test",
+      "perTest": 6,
+      "segment": "TST"
+    },
+    {
+      "key": "ukadiLaw",
+      "label": "Disabilities & the Law",
+      "perTest": 7,
+      "segment": "LAW"
+    },
+    {
+      "key": "ukadiPublications",
+      "label": "Publications & ADI Rules",
+      "perTest": 6,
+      "segment": "PUB"
+    },
+    {
+      "key": "ukadiInstruction",
+      "label": "Instructional Techniques",
+      "perTest": 6,
+      "segment": "INS"
+    }
+  ],
+  "bands": {
+    "Road procedure": [
+      "ukadiRoad",
+      "ukadiConditions"
+    ],
+    "Traffic signs and signals, car control, pedestrians and mechanical knowledge": [
+      "ukadiSigns",
+      "ukadiControl"
+    ],
+    "Driving test, disabilities and the law": [
+      "ukadiTest",
+      "ukadiLaw"
+    ],
+    "Publications and instructional techniques": [
+      "ukadiPublications",
+      "ukadiInstruction"
+    ]
+  },
+  "copy": {
+    "guestPrompt": "to save your ADI part 1 progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on, across all four DVSA bands. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions across the four DVSA bands",
+    "heroSubs": [
+      "Four bands, four tests. You need 85% overall and 80% in every band.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your ADI part 1."
+    ],
+    "sourceLine": "Based on the DVSA ADI part 1 test: 100 questions in four bands of 25, pass 85 overall and 20 in each band. The hazard perception part is not modelled here."
+  },
+  "blurb": "Practice for the DVSA ADI part 1 theory test with 200 original questions across all four bands, from road procedure to instructional techniques.",
+  "org": "DVSA, Great Britain",
+  "searchAliases": "adi part 1 adi theory test driving instructor theory dvsa approved driving instructor uk instructor test part one pdi",
+  "facts": {
+    "answer": "The ADI part 1 test is the first of three DVSA tests to become an approved driving instructor in Great Britain. It has 100 multiple-choice questions in 1 hour 30 minutes, 25 in each of four bands, and you need 85 overall and at least 20 in every band, plus 57 out of 75 on a hazard perception part taken in the same sitting. It costs 81 pounds, and after passing you have 2 years to pass parts 2 and 3.",
+    "rows": [
+      {
+        "label": "Questions",
+        "value": "100 multiple choice, 25 per band"
+      },
+      {
+        "label": "Time",
+        "value": "1 hour 30 minutes"
+      },
+      {
+        "label": "Pass mark",
+        "value": "85 of 100, and 20 of 25 in each band"
+      },
+      {
+        "label": "Hazard perception",
+        "value": "14 clips, 57 of 75 to pass"
+      },
+      {
+        "label": "Fee",
+        "value": "81 GBP"
+      },
+      {
+        "label": "Retake",
+        "value": "After at least 3 working days"
+      },
+      {
+        "label": "Given by",
+        "value": "DVSA, at theory test centres"
+      }
+    ],
+    "basedOn": "the DVSA ADI part 1 test guidance on GOV.UK, checked October 2026",
+    "source": {
+      "name": "GOV.UK: Approved driving instructor (ADI) part 1 test",
+      "url": "https://www.gov.uk/adi-part-1-test"
+    }
+  }
+}

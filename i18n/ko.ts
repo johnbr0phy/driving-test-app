@@ -665,6 +665,15 @@ export const ko: TranslationKeys = {
     uklgvDocs: "Documents, Security & Environment",
     uklgvIncidents: "Incidents & Emergencies",
     uklgvSigns: "Traffic Signs",
+    // Quebec SAAQ categories
+    caqcLicence: "Licences & Demerit Points",
+    caqcRules: "Highway Safety Code Rules",
+    caqcSigns: "Road Signs",
+    caqcSignals: "Traffic Lights & Pavement Markings",
+    caqcRightOfWay: "Intersections & Right of Way",
+    caqcSharing: "Sharing the Road",
+    caqcRisk: "Alcohol, Drugs, Fatigue & Distraction",
+    caqcDriving: "Driving Techniques & Conditions",
   } as Record<string, string>,
 
   // Training set names

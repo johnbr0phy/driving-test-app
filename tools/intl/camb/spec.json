@@ -1,0 +1,118 @@
+{
+  "id": "camb",
+  "stateCode": "CAMB",
+  "idBase": 6600,
+  "prefix": "CAMB-",
+  "slug": "/manitoba-class-5",
+  "landingPath": "/manitoba-class-5-practice-test",
+  "dataFile": "data/manitoba-class-5-questions.json",
+  "name": "Manitoba Class 5 Practice Test",
+  "shortName": "MB Class 5",
+  "examLabel": "Manitoba Class 5",
+  "fullName": "Manitoba Class 5 learner knowledge test",
+  "icon": "car",
+  "passPct": 80,
+  "outlineComment": "Manitoba Public Insurance (MPI) Driver's Handbook, DVL0019, edition dated 20/10/2026\n(mpi.mb.ca/en/PDFs/completehandbook.pdf). The Class 5 knowledge test assesses\ntraffic laws, safe driving practices and road signs; it is computer based, 30 minutes,\nnot open book, $12, and is reported as 30 multiple-choice questions. MPI publishes no\ntopic weighting or pass mark (prep sites say 24 or 25 of 30), so the blueprint follows\nthe handbook's chapters: signs and signals 20%, right-of-way and turning 18%, sharing\nthe road 16%, GDL and licensing 12%, speed, parking and equipment 12%, poor conditions\nand emergencies 12%, impaired and distracted driving 10%. 80% is a practice target.",
+  "categories": [
+    {
+      "key": "cambLicence",
+      "label": "Licensing & GDL",
+      "perTest": 6,
+      "segment": "GDL"
+    },
+    {
+      "key": "cambSigns",
+      "label": "Signs, Signals & Markings",
+      "perTest": 10,
+      "segment": "SGN"
+    },
+    {
+      "key": "cambRules",
+      "label": "Right-of-Way, Turns & Passing",
+      "perTest": 9,
+      "segment": "ROW"
+    },
+    {
+      "key": "cambSharing",
+      "label": "Sharing the Road",
+      "perTest": 8,
+      "segment": "SHR"
+    },
+    {
+      "key": "cambSpeed",
+      "label": "Speed, Parking & Equipment",
+      "perTest": 6,
+      "segment": "SPD"
+    },
+    {
+      "key": "cambConditions",
+      "label": "Poor Conditions & Emergencies",
+      "perTest": 6,
+      "segment": "EMG"
+    },
+    {
+      "key": "cambImpaired",
+      "label": "Impaired & Distracted Driving",
+      "perTest": 5,
+      "segment": "IMP"
+    }
+  ],
+  "copy": {
+    "guestPrompt": "to save your Manitoba Class 5 progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Every set covers signs, right-of-way, sharing the road, GDL rules, parking, winter driving and impaired driving. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions from the MPI Driver's Handbook",
+    "heroSubs": [
+      "Seven handbook topics, four tests. Signs and right-of-way come up most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your knowledge test with an Autopac agent."
+    ],
+    "sourceLine": "Based on the MPI Driver's Handbook (October 2026 edition). MPI does not publish a pass mark; 80% here is a practice target."
+  },
+  "blurb": "Free Manitoba Class 5 learner knowledge test practice: 200 questions from the MPI Driver's Handbook on signs, right-of-way, GDL rules, winter driving and impaired driving.",
+  "org": "Manitoba Public Insurance (MPI)",
+  "searchAliases": "manitoba mpi class 5 5l learner knowledge test permit driving test winnipeg brandon autopac driver handbook gdl canada",
+  "facts": {
+    "answer": "The Manitoba Class 5 knowledge test is the written test for a Class 5L learner licence. Manitoba Public Insurance (MPI) gives it on a computer, booked through an Autopac agent, with a 30-minute time limit and a $12 fee; it is not open book and covers traffic laws, safe driving practices and road signs from the MPI Driver's Handbook, and is usually reported as 30 multiple-choice questions. You must be 16 (15 and a half in a high school driver education course), and GDL applicants who fail wait seven days to retake it.",
+    "rows": [
+      {
+        "label": "Questions",
+        "value": "30 multiple choice (reported; MPI does not publish a count)"
+      },
+      {
+        "label": "Time",
+        "value": "30 minutes"
+      },
+      {
+        "label": "Passing score",
+        "value": "Not published by MPI (prep sites say 24 or 25 of 30)"
+      },
+      {
+        "label": "Fee",
+        "value": "$12 per test"
+      },
+      {
+        "label": "Minimum age",
+        "value": "16, or 15 and a half in high school driver education"
+      },
+      {
+        "label": "Retake wait",
+        "value": "7 days (GDL applicants)"
+      },
+      {
+        "label": "Languages",
+        "value": "English, French and 28 other languages, with audio"
+      },
+      {
+        "label": "Next stage",
+        "value": "Class 5L Learner Stage, at least 9 months"
+      }
+    ],
+    "basedOn": "the MPI Driver's Handbook, October 2026 edition",
+    "source": {
+      "name": "Manitoba Public Insurance: Testing for your Class 5 licence",
+      "url": "https://www.mpi.mb.ca/testing-for-your-class-5-licence/"
+    }
+  }
+}

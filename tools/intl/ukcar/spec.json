@@ -1,0 +1,67 @@
+{
+  "id": "ukcar",
+  "stateCode": "UKCAR",
+  "idBase": 6700,
+  "prefix": "UKCAR-",
+  "slug": "/uk-theory",
+  "landingPath": "/uk-driving-theory-test",
+  "dataFile": "data/uk-car-theory-questions.json",
+  "name": "UK Theory Test Practice",
+  "shortName": "Theory Test",
+  "examLabel": "UK car theory test",
+  "fullName": "DVSA car theory test (multiple-choice part)",
+  "icon": "car",
+  "passPct": 86,
+  "outlineComment": "DVSA car theory test, multiple-choice part (gov.uk/theory-test, checked Oct 2026):\n50 questions in 57 minutes, 3 of them on a short silent video; pass 43 of 50 (86%).\nThe hazard perception part (14 clips, 44 of 75) is not modelled. Questions come from\nThe Highway Code (GB edition, incl. the January 2022 hierarchy of road users),\nKnow Your Traffic Signs and Driving: the essential skills. DVSA's 14 topics are merged\ninto 8 categories; DVSA publishes no per-topic weights, so counts are ours. All items original.",
+  "categories": [
+    {"key": "ukcarAlert", "label": "Alertness & Attitude", "perTest": 5, "segment": "ALT"},
+    {"key": "ukcarVehicle", "label": "Safety & Your Vehicle", "perTest": 6, "segment": "VEH"},
+    {"key": "ukcarMargins", "label": "Safety Margins & Vehicle Handling", "perTest": 7, "segment": "MAR"},
+    {"key": "ukcarHazard", "label": "Hazards & Vulnerable Road Users", "perTest": 8, "segment": "HAZ"},
+    {"key": "ukcarMotorway", "label": "Motorway Rules", "perTest": 5, "segment": "MWY"},
+    {"key": "ukcarRules", "label": "Rules of the Road", "perTest": 8, "segment": "RUL"},
+    {"key": "ukcarSigns", "label": "Road & Traffic Signs", "perTest": 6, "segment": "SGN"},
+    {"key": "ukcarEmerg", "label": "Documents, Incidents & Emergencies", "perTest": 5, "segment": "EMG"}
+  ],
+  "categoryNotes": {
+    "ukcarAlert": "DVSA alertness + attitude",
+    "ukcarVehicle": "safety and your vehicle + vehicle loading",
+    "ukcarMargins": "safety margins + vehicle handling",
+    "ukcarHazard": "hazard awareness + vulnerable road users + other types of vehicle",
+    "ukcarMotorway": "motorway rules",
+    "ukcarRules": "rules of the road",
+    "ukcarSigns": "road and traffic signs",
+    "ukcarEmerg": "essential documents + incidents, accidents and emergencies"
+  },
+  "copy": {
+    "guestPrompt": "to save your theory test progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test, each holding exactly that test's 50 questions across all eight topic groups. Missed questions come back until you master them.",
+    "testsHeading": "Mock tests · 50 questions, 43 to pass, like the real multiple-choice part",
+    "heroSubs": [
+      "Eight topic groups, four mock tests. You need 43 of 50 to pass.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Practise hazard perception and book your test."
+    ],
+    "sourceLine": "Based on The Highway Code, Know Your Traffic Signs and DVSA's 14 theory test topics. Original questions; the hazard perception part is not modelled."
+  },
+  "blurb": "Free mock tests for the multiple-choice part of the UK car theory test: the Highway Code, road signs, motorways and hazards, with the real 43 of 50 pass mark.",
+  "org": "DVSA (Great Britain)",
+  "searchAliases": "uk theory test driving theory dvsa highway code mock test car theory british england scotland wales learner provisional",
+  "facts": {
+    "answer": "The DVSA car theory test has two parts taken in one sitting: 50 multiple-choice questions in 57 minutes, where you need 43 to pass, then a hazard perception test of 14 video clips scored out of 75, where you need 44. You must pass both, need a provisional licence and must be at least 17 (16 with the higher mobility rate of PIP), and the pass certificate lasts 2 years.",
+    "rows": [
+      {"label": "Questions", "value": "50 multiple choice (3 on a video clip)"},
+      {"label": "Time", "value": "57 minutes"},
+      {"label": "Pass mark", "value": "43 of 50 (86%)"},
+      {"label": "Hazard perception", "value": "14 clips, 44 of 75 to pass"},
+      {"label": "Fee", "value": "£23"},
+      {"label": "Minimum age", "value": "17 (16 with higher-rate PIP mobility)"},
+      {"label": "Certificate valid", "value": "2 years"},
+      {"label": "Given by", "value": "DVSA, in England, Scotland and Wales"}
+    ],
+    "basedOn": "The Highway Code and the DVSA theory test rules on GOV.UK",
+    "source": {"name": "GOV.UK: Theory test", "url": "https://www.gov.uk/theory-test"}
+  }
+}

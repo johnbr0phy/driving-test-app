@@ -1,0 +1,52 @@
+{
+  "id": "auqld",
+  "stateCode": "AUQLD",
+  "idBase": 7400,
+  "prefix": "AUQLD-",
+  "slug": "/qld-learner-licence",
+  "landingPath": "/qld-learner-licence-practice-test",
+  "dataFile": "data/qld-learner-licence-questions.json",
+  "name": "QLD Learner Licence Practice Test",
+  "shortName": "QLD Learner",
+  "examLabel": "QLD learner licence",
+  "fullName": "Queensland written road rules test (class C learner licence)",
+  "icon": "car",
+  "passPct": 90,
+  "outlineComment": "Queensland Department of Transport and Main Roads (TMR) class C written road rules test and PrepL\n(qld.gov.au/transport/licensing/getting/tests, updated 1 October 2026): 30 multiple-choice questions\nfrom Your Keys to Driving in Queensland. The written test has two sections, at least 9 of 10 on giving\nway and 18 of 20 on road rules and driver licence requirements; PrepL needs 27 of 30 (90%). Rules are\nfrom the qld.gov.au road rules, licensing, demerit and road safety pages (Oct 2026) and the Transport\nOperations (Road Use Management) Road Rules Regulation 2009. Per test: 12 giving way, then the road\nrules and licence section split 10 licence and demerits, 10 signs, lines and lights, 9 lanes, turning\nand parking, 9 speed, alcohol, phones and safety. Hazard perception (video) is a separate test, not modelled.",
+  "categories": [
+    {"key": "auqldGiveWay", "label": "Giving Way", "perTest": 12, "segment": "GW"},
+    {"key": "auqldLicence", "label": "Licence Rules & Demerit Points", "perTest": 10, "segment": "LIC"},
+    {"key": "auqldSigns", "label": "Signs, Lines & Traffic Lights", "perTest": 10, "segment": "SIG"},
+    {"key": "auqldRoad", "label": "Lanes, Turning & Parking", "perTest": 9, "segment": "ROAD"},
+    {"key": "auqldSafety", "label": "Speed, Alcohol & Safe Driving", "perTest": 9, "segment": "SAFE"}
+  ],
+  "copy": {
+    "guestPrompt": "to save your Queensland learner licence progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Every set mixes giving way, licence rules, signs, lanes and safe driving. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions on Queensland road rules",
+    "heroSubs": [
+      "Giving way is its own section on the real test. Start with Set 1.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your test or start PrepL."
+    ],
+    "sourceLine": "Based on Queensland TMR road rules, licensing and road safety pages (October 2026) and the Queensland Road Rules. The real test needs 9 of 10 on giving way and 18 of 20 on road rules (PrepL: 27 of 30). Hazard perception is a separate test and is not covered here."
+  },
+  "blurb": "Queensland's written road rules test for a car learner licence: giving way, L and P plate rules, demerit points, signs and safe driving.",
+  "org": "Queensland TMR",
+  "searchAliases": "queensland qld learner licence learners permit road rules test prepl l plates australia driving test dkt your keys to driving tmr brisbane gold coast",
+  "facts": {
+    "answer": "To get a car learner licence in Queensland you must be at least 16 and pass PrepL online or the written road rules test at a TMR customer service centre. Both have 30 multiple-choice questions. The written test is in two sections: you need at least 9 of 10 giving way questions and 18 of 20 road rules and licence questions right, while PrepL needs 27 of 30 (90%).",
+    "rows": [
+      {"label": "Questions", "value": "30 multiple choice"},
+      {"label": "Passing score", "value": "9 of 10 giving way and 18 of 20 road rules (PrepL: 27 of 30)"},
+      {"label": "Minimum age", "value": "16 (PrepL enrolment from 15 years 11 months)"},
+      {"label": "Fee", "value": "$29.70 per attempt (PrepL: one fee, 12 months access)"},
+      {"label": "Retakes", "value": "Once a day; a pass is valid for 5 years"},
+      {"label": "Given by", "value": "Queensland Department of Transport and Main Roads"}
+    ],
+    "basedOn": "Queensland TMR licensing, road rules and road safety pages and the Queensland Road Rules, October 2026",
+    "source": {"name": "Queensland Government: driver tests", "url": "https://www.qld.gov.au/transport/licensing/getting/tests"}
+  }
+}

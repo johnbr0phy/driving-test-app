@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ausa" | "auvic" | "ukadi" | "ukcar" | "ukpcv" | "cabc" | "aunsw" | "ukmoto" | "caab" | "caon" | "camb" | "auwa" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "auqld" | "ausa" | "auvic" | "ukadi" | "ukcar" | "ukpcv" | "cabc" | "aunsw" | "ukmoto" | "caab" | "caon" | "camb" | "auwa" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -2819,6 +2819,61 @@ const ausa: ExamConfig = {
   },
 };
 
+const auqld: ExamConfig = {
+  id: "auqld",
+  stateCode: "AUQLD",
+  idBase: 7400,
+  slug: "/qld-learner-licence",
+  landingPath: "/qld-learner-licence-practice-test",
+  name: "QLD Learner Licence Practice Test",
+  shortName: "QLD Learner",
+  examLabel: "QLD learner licence",
+  fullName: "Queensland written road rules test (class C learner licence)",
+  questionIdPrefix: "AUQLD-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 90,
+  // Queensland Department of Transport and Main Roads (TMR) class C written road rules test and PrepL
+  // (qld.gov.au/transport/licensing/getting/tests, updated 1 October 2026): 30 multiple-choice questions
+  // from Your Keys to Driving in Queensland. The written test has two sections, at least 9 of 10 on giving
+  // way and 18 of 20 on road rules and driver licence requirements; PrepL needs 27 of 30 (90%). Rules are
+  // from the qld.gov.au road rules, licensing, demerit and road safety pages (Oct 2026) and the Transport
+  // Operations (Road Use Management) Road Rules Regulation 2009. Per test: 12 giving way, then the road
+  // rules and licence section split 10 licence and demerits, 10 signs, lines and lights, 9 lanes, turning
+  // and parking, 9 speed, alcohol, phones and safety. Hazard perception (video) is a separate test, not modelled.
+  blueprint: {
+    auqldGiveWay: 12,
+    auqldLicence: 10,
+    auqldSigns: 10,
+    auqldRoad: 9,
+    auqldSafety: 9,
+  },
+  trainingSets: testSets(7400, 4),
+  categoryLabels: {
+    auqldGiveWay: "Giving Way",
+    auqldLicence: "Licence Rules & Demerit Points",
+    auqldSigns: "Signs, Lines & Traffic Lights",
+    auqldRoad: "Lanes, Turning & Parking",
+    auqldSafety: "Speed, Alcohol & Safe Driving",
+  },
+  copy: {
+    guestPrompt: "to save your Queensland learner licence progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Every set mixes giving way, licence rules, signs, lanes and safe driving. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions on Queensland road rules",
+    heroSubs: [
+      "Giving way is its own section on the real test. Start with Set 1.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your test or start PrepL.",
+    ],
+    sourceLine: "Based on Queensland TMR road rules, licensing and road safety pages (October 2026) and the Queensland Road Rules. The real test needs 9 of 10 on giving way and 18 of 20 on road rules (PrepL: 27 of 30). Hazard perception is a separate test and is not covered here.",
+    analyticsKey: "auqld",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -4913,7 +4968,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, auwa, camb, caon, caab, ukmoto, aunsw, cabc, ukpcv, ukcar, ukadi, auvic, ausa, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, auwa, camb, caon, caab, ukmoto, aunsw, cabc, ukpcv, ukcar, ukadi, auvic, ausa, auqld, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

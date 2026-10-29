@@ -701,6 +701,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The Driver's Handbook, South Australia (February 2026 edition)",
     source: { name: "My Licence SA: The Driver's Handbook", url: "https://mylicence.sa.gov.au/road-rules/the-drivers-handbook/obtaining-permit" },
   },
+  auqld: {
+    answer:
+      "To get a car learner licence in Queensland you must be at least 16 and pass PrepL online or the written road rules test at a TMR customer service centre. Both have 30 multiple-choice questions. The written test is in two sections: you need at least 9 of 10 giving way questions and 18 of 20 road rules and licence questions right, while PrepL needs 27 of 30 (90%).",
+    rows: [
+      { label: "Questions", value: "30 multiple choice" },
+      { label: "Passing score", value: "9 of 10 giving way and 18 of 20 road rules (PrepL: 27 of 30)" },
+      { label: "Minimum age", value: "16 (PrepL enrolment from 15 years 11 months)" },
+      { label: "Fee", value: "$29.70 per attempt (PrepL: one fee, 12 months access)" },
+      { label: "Retakes", value: "Once a day; a pass is valid for 5 years" },
+      { label: "Given by", value: "Queensland Department of Transport and Main Roads" },
+    ],
+    basedOn: "Queensland TMR licensing, road rules and road safety pages and the Queensland Road Rules, October 2026",
+    source: { name: "Queensland Government: driver tests", url: "https://www.qld.gov.au/transport/licensing/getting/tests" },
+  },
   cpr: {
     answer:
       "Most CPR, AED and first aid written exams require 84% to pass, which is 21 of 25 on a typical 25-question exam. They cover scene safety, adult, child and infant CPR, AED use, choking and basic first aid. Certification also needs a hands-on skills check and usually lasts two years.",

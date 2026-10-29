@@ -651,6 +651,12 @@ export const ko: TranslationKeys = {
     ausaShare: "Sharing the Road",
     ausaParking: "Parking & Stopping",
     ausaSafety: "Alcohol, Phones & Safe Driving",
+    // QLD learner licence categories
+    auqldGiveWay: "Giving Way",
+    auqldLicence: "Licence Rules & Demerit Points",
+    auqldSigns: "Signs, Lines & Traffic Lights",
+    auqldRoad: "Lanes, Turning & Parking",
+    auqldSafety: "Speed, Alcohol & Safe Driving",
   } as Record<string, string>,
 
   // Training set names

@@ -686,6 +686,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Road to Solo Driving (VicRoads, September 2026 edition)",
     source: { name: "VicRoads Road to Solo Driving handbook", url: "https://transport.vic.gov.au/road-and-active-transport/registration-and-licensing/licences/driver-history-handbooks-and-logbooks/driver-handbooks-and-logbooks" },
   },
+  ausa: {
+    answer:
+      "The South Australia learner's theory test at Service SA has 50 questions: 8 give-way diagram questions, which you must all get right, then 42 multiple-choice questions on the road rules and safe driving, of which you need 32. You can sit it from age 16, or instead complete the online myLs course and its 30-question test (27 correct to pass). All questions come from The Driver's Handbook. Learners then hold the permit for at least 12 months if under 25, log 75 supervised hours including 15 at night, and pass the Hazard Perception Test and a practical test before P1.",
+    rows: [
+      { label: "Questions", value: "50 at Service SA (8 give way + 42 multiple choice)" },
+      { label: "Passing score", value: "All 8 give-way questions and 32 of 42" },
+      { label: "Online option", value: "myLs course and test: 27 of 30 to pass" },
+      { label: "Minimum age", value: "16 for a learner's permit" },
+      { label: "Handbook", value: "The Driver's Handbook (February 2026 edition)" },
+      { label: "Next steps", value: "12 months on L (under 25), 75 logged hours, Hazard Perception Test, VORT or CBT&A" },
+      { label: "Given by", value: "SA Department for Infrastructure and Transport, at Service SA" },
+    ],
+    basedOn: "The Driver's Handbook, South Australia (February 2026 edition)",
+    source: { name: "My Licence SA: The Driver's Handbook", url: "https://mylicence.sa.gov.au/road-rules/the-drivers-handbook/obtaining-permit" },
+  },
   cpr: {
     answer:
       "Most CPR, AED and first aid written exams require 84% to pass, which is 21 of 25 on a typical 25-question exam. They cover scene safety, adult, child and infant CPR, AED use, choking and basic first aid. Certification also needs a hands-on skills check and usually lasts two years.",

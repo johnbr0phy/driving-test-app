@@ -640,6 +640,15 @@ export const es: TranslationKeys = {
     auvicGiveWay: "Give Way & Intersections",
     auvicTurning: "Turning, Overtaking & Freeways",
     auvicSharing: "Sharing the Road",
+    // SA learner's test categories
+    ausaGiveWay: "Giving Way",
+    ausaLicence: "Learner, P1 & P2 Rules",
+    ausaSpeed: "Speed Limits & Following Distance",
+    ausaSigns: "Signs, Signals & Markings",
+    ausaRoad: "Lanes, Turning & Overtaking",
+    ausaShare: "Sharing the Road",
+    ausaParking: "Parking & Stopping",
+    ausaSafety: "Alcohol, Phones & Safe Driving",
   } as Record<string, string>,
 
   // Training set names

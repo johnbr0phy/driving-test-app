@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "auvic" | "ukadi" | "ukcar" | "ukpcv" | "cabc" | "aunsw" | "ukmoto" | "caab" | "caon" | "camb" | "auwa" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ausa" | "auvic" | "ukadi" | "ukcar" | "ukpcv" | "cabc" | "aunsw" | "ukmoto" | "caab" | "caon" | "camb" | "auwa" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -2756,6 +2756,69 @@ const auvic: ExamConfig = {
   },
 };
 
+const ausa: ExamConfig = {
+  id: "ausa",
+  stateCode: "AUSA",
+  idBase: 7600,
+  slug: "/sa-learners",
+  landingPath: "/sa-learners-practice-test",
+  name: "SA Learner's Practice Test",
+  shortName: "SA Learners",
+  examLabel: "SA learner's test",
+  fullName: "South Australia learner's theory test",
+  questionIdPrefix: "AUSA-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // South Australia learner's theory test, Department for Infrastructure and Transport (mylicence.sa.gov.au,
+  // read Oct 2026). At Service SA it is 50 questions: Part 1 is 8 give-way diagram questions that must all
+  // be correct, Part 2 is 42 multiple-choice questions on road rules and safe driving, 32 correct to pass
+  // (40 of 50, so 80% here; the all-8 give-way rule is not modelled). The online myLs route ends in a
+  // 30-question test needing 27 correct. Questions come from The Driver's Handbook (February 2026 edition).
+  // DIT publishes no topic weighting beyond the 8 give-way items, so giving way is 8 per test and the
+  // other 42 follow the handbook's road rules and licensing chapters: licensing and demerits, speed
+  // limits and following distance, signs, signals and markings, lanes, turning and overtaking, sharing
+  // the road (trams, bike riders, trucks, trains), parking, and alcohol, phones and safe driving.
+  // The separate Hazard Perception Test (needed before P1) is not modelled.
+  blueprint: {
+    ausaGiveWay: 8,
+    ausaLicence: 7,
+    ausaSpeed: 6,
+    ausaSigns: 7,
+    ausaRoad: 7,
+    ausaShare: 6,
+    ausaParking: 3,
+    ausaSafety: 6,
+  },
+  trainingSets: testSets(7600, 4),
+  categoryLabels: {
+    ausaGiveWay: "Giving Way",
+    ausaLicence: "Learner, P1 & P2 Rules",
+    ausaSpeed: "Speed Limits & Following Distance",
+    ausaSigns: "Signs, Signals & Markings",
+    ausaRoad: "Lanes, Turning & Overtaking",
+    ausaShare: "Sharing the Road",
+    ausaParking: "Parking & Stopping",
+    ausaSafety: "Alcohol, Phones & Safe Driving",
+  },
+  copy: {
+    guestPrompt: "to save your SA learner's test progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on, covering giving way and the road rules in The Driver's Handbook. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions like the Service SA test",
+    heroSubs: [
+      "Eight topics, four tests. Giving way comes first, like the real test.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test or finish myLs.",
+    ],
+    sourceLine: "Based on The Driver's Handbook (South Australia, February 2026 edition). The Service SA test is 50 questions: all 8 give-way questions right and 32 of the other 42. The Hazard Perception Test is not modelled.",
+    analyticsKey: "ausa",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -4850,7 +4913,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, auwa, camb, caon, caab, ukmoto, aunsw, cabc, ukpcv, ukcar, ukadi, auvic, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, auwa, camb, caon, caab, ukmoto, aunsw, cabc, ukpcv, ukcar, ukadi, auvic, ausa, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -446,7 +446,17 @@ export type QuestionCategory =
   | "auvicSigns"
   | "auvicGiveWay"
   | "auvicTurning"
-  | "auvicSharing";
+  | "auvicSharing"
+
+  // SA learner's test categories
+  | "ausaGiveWay"
+  | "ausaLicence"
+  | "ausaSpeed"
+  | "ausaSigns"
+  | "ausaRoad"
+  | "ausaShare"
+  | "ausaParking"
+  | "ausaSafety";
 
 export interface Question {
   type: QuestionType;

@@ -556,6 +556,14 @@ export const ko: TranslationKeys = {
     auwaLanes: "Lanes, Overtaking & Freeways",
     auwaSharing: "Sharing the Road",
     auwaParking: "Parking, Crashes & Emergencies",
+    // Manitoba Class 5 categories
+    cambLicence: "Licensing & GDL",
+    cambSigns: "Signs, Signals & Markings",
+    cambRules: "Right-of-Way, Turns & Passing",
+    cambSharing: "Sharing the Road",
+    cambSpeed: "Speed, Parking & Equipment",
+    cambConditions: "Poor Conditions & Emergencies",
+    cambImpaired: "Impaired & Distracted Driving",
   } as Record<string, string>,
 
   // Training set names

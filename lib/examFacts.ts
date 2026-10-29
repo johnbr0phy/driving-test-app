@@ -535,6 +535,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Drive Safe, a handbook for Western Australian road users (revised 5 August 2026)",
     source: { name: "Transport WA: Take the theory test", url: "https://www.transport.wa.gov.au/licensing/drivers-licence/get-a-licence/car/take-theory-test" },
   },
+  camb: {
+    answer:
+      "The Manitoba Class 5 knowledge test is the written test for a Class 5L learner licence. Manitoba Public Insurance (MPI) gives it on a computer, booked through an Autopac agent, with a 30-minute time limit and a $12 fee; it is not open book and covers traffic laws, safe driving practices and road signs from the MPI Driver's Handbook, and is usually reported as 30 multiple-choice questions. You must be 16 (15 and a half in a high school driver education course), and GDL applicants who fail wait seven days to retake it.",
+    rows: [
+      { label: "Questions", value: "30 multiple choice (reported; MPI does not publish a count)" },
+      { label: "Time", value: "30 minutes" },
+      { label: "Passing score", value: "Not published by MPI (prep sites say 24 or 25 of 30)" },
+      { label: "Fee", value: "$12 per test" },
+      { label: "Minimum age", value: "16, or 15 and a half in high school driver education" },
+      { label: "Retake wait", value: "7 days (GDL applicants)" },
+      { label: "Languages", value: "English, French and 28 other languages, with audio" },
+      { label: "Next stage", value: "Class 5L Learner Stage, at least 9 months" },
+    ],
+    basedOn: "the MPI Driver's Handbook, October 2026 edition",
+    source: { name: "Manitoba Public Insurance: Testing for your Class 5 licence", url: "https://www.mpi.mb.ca/testing-for-your-class-5-licence/" },
+  },
   cpr: {
     answer:
       "Most CPR, AED and first aid written exams require 84% to pass, which is 21 of 25 on a typical 25-question exam. They cover scene safety, adult, child and infant CPR, AED use, choking and basic first aid. Certification also needs a hands-on skills check and usually lasts two years.",

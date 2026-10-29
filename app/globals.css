@@ -658,6 +658,20 @@
     --brand-gradient-to: 120 65% 95%;
   }
 
+  /* Manitoba Class 5 theme (Canada) */
+  [data-theme="camb"] {
+    --brand: 356 68% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 356 65% 95%;
+    --brand-hover: 356 68% 34%;
+    --brand-dark: 356 68% 28%;
+    --brand-darker: 356 58% 20%;
+    --brand-muted: 356 40% 72%;
+    --brand-border: 356 40% 78%;
+    --brand-border-light: 356 35% 88%;
+    --brand-gradient-to: 15 65% 95%;
+  }
+
   /* NCLEX-PN theme: teal (v2 exam; matches lib/v2/exams/nclexpn.ts theme) */
   [data-theme="nclexpn"] {
     --brand: 185 70% 34%;

@@ -2155,6 +2155,65 @@ const auwa: ExamConfig = {
   },
 };
 
+const camb: ExamConfig = {
+  id: "camb",
+  stateCode: "CAMB",
+  idBase: 6600,
+  slug: "/manitoba-class-5",
+  landingPath: "/manitoba-class-5-practice-test",
+  name: "Manitoba Class 5 Practice Test",
+  shortName: "MB Class 5",
+  examLabel: "Manitoba Class 5",
+  fullName: "Manitoba Class 5 learner knowledge test",
+  questionIdPrefix: "CAMB-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Manitoba Public Insurance (MPI) Driver's Handbook, DVL0019, edition dated 20/10/2026
+  // (mpi.mb.ca/en/PDFs/completehandbook.pdf). The Class 5 knowledge test assesses
+  // traffic laws, safe driving practices and road signs; it is computer based, 30 minutes,
+  // not open book, $12, and is reported as 30 multiple-choice questions. MPI publishes no
+  // topic weighting or pass mark (prep sites say 24 or 25 of 30), so the blueprint follows
+  // the handbook's chapters: signs and signals 20%, right-of-way and turning 18%, sharing
+  // the road 16%, GDL and licensing 12%, speed, parking and equipment 12%, poor conditions
+  // and emergencies 12%, impaired and distracted driving 10%. 80% is a practice target.
+  blueprint: {
+    cambLicence: 6,
+    cambSigns: 10,
+    cambRules: 9,
+    cambSharing: 8,
+    cambSpeed: 6,
+    cambConditions: 6,
+    cambImpaired: 5,
+  },
+  trainingSets: testSets(6600, 4),
+  categoryLabels: {
+    cambLicence: "Licensing & GDL",
+    cambSigns: "Signs, Signals & Markings",
+    cambRules: "Right-of-Way, Turns & Passing",
+    cambSharing: "Sharing the Road",
+    cambSpeed: "Speed, Parking & Equipment",
+    cambConditions: "Poor Conditions & Emergencies",
+    cambImpaired: "Impaired & Distracted Driving",
+  },
+  copy: {
+    guestPrompt: "to save your Manitoba Class 5 progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Every set covers signs, right-of-way, sharing the road, GDL rules, parking, winter driving and impaired driving. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions from the MPI Driver's Handbook",
+    heroSubs: [
+      "Seven handbook topics, four tests. Signs and right-of-way come up most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your knowledge test with an Autopac agent.",
+    ],
+    sourceLine: "Based on the MPI Driver's Handbook (October 2026 edition). MPI does not publish a pass mark; 80% here is a practice target.",
+    analyticsKey: "camb",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -4249,7 +4308,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, auwa, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, auwa, camb, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

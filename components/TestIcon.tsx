@@ -1,4 +1,4 @@
-import { Car, Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Cpu, ChefHat, Sailboat, Target, LockKeyhole, BookOpenCheck, Medal, Bandage, HardHat, Forklift, Wine, PencilLine, BadgeCheck, LifeBuoy, Building2, Microscope, Scissors, ShieldCheck, Sparkles, PawPrint, Calculator } from "lucide-react";
+import { Car, Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Cpu, ChefHat, Sailboat, Target, LockKeyhole, BookOpenCheck, Medal, Bandage, HardHat, Forklift, Wine, PencilLine, BadgeCheck, LifeBuoy, Building2, Microscope, Scissors, ShieldCheck, Sparkles, PawPrint, Calculator, Bus } from "lucide-react";
 import type { TestCatalogEntry } from "@/lib/testCatalog";
 import Image from "next/image";
 import { getTigerAsset, hasTigerSet } from "@/lib/tigerAssets";
@@ -47,5 +47,6 @@ export function TestIcon({ icon, examId, className = "h-5 w-5" }: { icon: TestCa
   if (icon === "sparkles") return <Sparkles className={className} aria-hidden="true" />;
   if (icon === "paw") return <PawPrint className={className} aria-hidden="true" />;
   if (icon === "calculator") return <Calculator className={className} aria-hidden="true" />;
+  if (icon === "bus") return <Bus className={className} aria-hidden="true" />;
   return <ShieldCheck className={className} aria-hidden="true" />;
 }

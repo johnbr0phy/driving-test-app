@@ -81,10 +81,14 @@ export async function POST(request: NextRequest) {
         // What the buyer paid from, for revenue by exam and paywall on the /admin Today tab.
         location: session.metadata?.location || null,
         exam: purchaseExam(session.metadata?.location),
+        // The English paywall test's variant (lib/paywallTest.ts), when the buyer saw it.
+        paywallVariant: session.metadata?.paywallVariant || null,
         createdAt: new Date().toISOString(),
       });
 
-      console.log(`Premium activated for user ${userId}`);
+      console.log(
+        `Premium activated for user ${userId} (location ${session.metadata?.location || 'none'}, paywall ${session.metadata?.paywallVariant || 'none'})`
+      );
 
       // Tell the buyer what they just unlocked. Best-effort: a mail failure must
       // never fail the webhook, or Stripe will retry a purchase we already

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -15,6 +15,7 @@ import { en, es, vi, ko, zh } from "@/i18n";
 import Image from "next/image";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { SupportPaywallModal } from "@/components/SupportPaywallModal";
+import { paywallVariant, recordPaywallTestView, type PaywallVariant } from "@/lib/paywallTest";
 
 interface PaywallModalProps {
   open: boolean;
@@ -44,9 +45,19 @@ export function PaywallModal({
   // in-app purchase rules — show an informational notice instead.
   const isNative = useIsNativeApp();
 
-  // English readers get John's "chip in" paywall; the other languages keep
-  // this translated one until that copy is translated too.
-  if (language === "en") {
+  // English readers are split 50/50 between John's "chip in" paywall and this
+  // one (lib/paywallTest.ts); the other languages keep this translated one
+  // until that copy is translated too.
+  // Read once open (a closed modal renders the same on the server) and kept
+  // through the closing animation.
+  const shown = useRef<PaywallVariant | null>(null);
+  if (open && language === "en") shown.current = paywallVariant();
+  const variant = shown.current;
+  useEffect(() => {
+    if (open && language === "en" && variant) void recordPaywallTestView(variant);
+  }, [open, language, variant]);
+
+  if (language === "en" && variant !== "classic") {
     return (
       <SupportPaywallModal
         open={open}

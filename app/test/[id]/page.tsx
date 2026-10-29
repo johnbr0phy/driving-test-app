@@ -19,6 +19,7 @@ import { auth } from "@/lib/firebase";
 import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
+import { paywallVariantForCheckout } from "@/lib/paywallTest";
 
 export default function TestPage() {
   const params = useParams();
@@ -59,6 +60,7 @@ export default function TestPage() {
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          paywallVariant: paywallVariantForCheckout(),
           location: "practice_test_4",
         }),
       });

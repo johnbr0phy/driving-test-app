@@ -1,0 +1,3850 @@
+[
+  {
+    "id": "CAPM-T1-001",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "When to use an adaptive approach",
+    "stem": "When is an adaptive approach usually the best fit?",
+    "options": [
+      "When the scope is fixed by contract and every change is very expensive",
+      "When the product can only be used once every part of it is complete",
+      "When requirements are uncertain and early, frequent feedback is valuable",
+      "When regulators require a full design to be approved before any work starts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Adaptive approaches suit work with high uncertainty or changing requirements, where delivering in small increments and learning from feedback reduces risk. Fixed scope, upfront approval and all-or-nothing delivery favor a predictive approach."
+  },
+  {
+    "id": "CAPM-T1-002",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "What best distinguishes a project from operations?",
+    "options": [
+      "A project is run by a functional manager; operations are run by a project manager",
+      "A project has no fixed end date; operations end when the annual budget runs out",
+      "A project is temporary and creates a unique result; operations are ongoing and repetitive",
+      "A project always costs more than operations and needs approval from the board of directors"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "PMI defines a project as a temporary endeavor undertaken to create a unique product, service or result. Operations are the ongoing, repetitive work that sustains the organization. Cost, who runs it and budget cycles do not define the difference."
+  },
+  {
+    "id": "CAPM-T1-003",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "What is the main role of a project management office (PMO)?",
+    "options": [
+      "To replace project managers so that teams report directly to senior executives",
+      "To standardize project governance and share methods, templates and resources",
+      "To carry out the day-to-day work that produces each project's deliverables",
+      "To provide the funding for every project and sign each of the project charters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A PMO standardizes project-related governance processes and makes it easier to share resources, methodologies, tools and techniques. The team produces deliverables, the sponsor funds and authorizes, and a PMO supports rather than replaces project managers."
+  },
+  {
+    "id": "CAPM-T1-004",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "When to use a predictive approach",
+    "stem": "Why does a predictive project put so much effort into planning at the start?",
+    "options": [
+      "Because the plan can never be changed once the project charter has been signed",
+      "Because the customer is not allowed to see the product until the very last phase",
+      "Because a detailed plan removes all of the risks from the project before work begins",
+      "Because changes cost more the later they are made, so defining the scope early saves money"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In a predictive approach, scope, schedule and cost are defined as early as possible because the cost of change rises as the work progresses. The plan can still change through change control, planning reduces but never removes risk, and customers can review deliverables along the way."
+  },
+  {
+    "id": "CAPM-T1-005",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Business analysis roles",
+    "stem": "What is the main role of a business analyst on a project?",
+    "options": [
+      "To write all of the code and test scripts for the software being delivered",
+      "To approve the project budget and decide whether the project should continue or be stopped",
+      "To manage the schedule and assign tasks to each member of the project team",
+      "To elicit, analyze and manage requirements so the solution meets business needs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Business analysts identify business needs and work with stakeholders to elicit, analyze, document and manage requirements so that the solution delivers value. Funding decisions belong to the sponsor, building to the team, and schedule management to the project manager."
+  },
+  {
+    "id": "CAPM-T1-006",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product roadmaps",
+    "stem": "What is a product roadmap?",
+    "options": [
+      "A detailed list of every task the team will do in the next sprint",
+      "A legal document that commits the company to fixed release dates for each feature",
+      "A high-level view of how a product is expected to evolve over time",
+      "A map of the offices where each member of the project team works"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A product roadmap is a high-level visual summary of the product's direction, showing planned themes, features or releases over time. It is not a task list, and it is usually expected to change as the company learns more."
+  },
+  {
+    "id": "CAPM-T1-007",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adaptive frameworks",
+    "stem": "Which statement is one of the four values of the Agile Manifesto?",
+    "options": [
+      "Contract negotiation over customer collaboration",
+      "Comprehensive documentation over working software",
+      "Following a detailed plan over responding to any change",
+      "Individuals and interactions over processes and tools"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The manifesto values individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan. The other options reverse those values."
+  },
+  {
+    "id": "CAPM-T1-008",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "Which term describes a collection of projects, programs and operations managed together to achieve strategic objectives?",
+    "options": [
+      "Portfolio",
+      "Work breakdown structure",
+      "Program",
+      "Project management office"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A portfolio groups projects, programs and operations to meet strategic objectives. A program groups related projects managed together for benefits they could not deliver alone. The WBS decomposes one project's scope, and a PMO is an organizational unit, not a collection of work."
+  },
+  {
+    "id": "CAPM-T1-009",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "Who usually provides the funding for a project, champions it in the organization and approves the charter?",
+    "options": [
+      "The project manager",
+      "The quality assurance lead on the team",
+      "The business analyst",
+      "The sponsor"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The sponsor provides resources and support, promotes the project at senior levels and authorizes it by approving the charter. The project manager leads the team to deliver the objectives."
+  },
+  {
+    "id": "CAPM-T1-010",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "What is a work breakdown structure (WBS)?",
+    "options": [
+      "A chart showing which person reports to which manager in the company",
+      "A hierarchical breakdown of the total scope of work the team must do",
+      "A list of activities in date order with their start and finish dates",
+      "A diagram that shows the dependencies between scheduled activities"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The WBS is a hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the objectives and create the deliverables. The other items describe an org chart, a schedule and a network diagram."
+  },
+  {
+    "id": "CAPM-T1-011",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business analysis roles",
+    "stem": "How do the roles of the project manager and the business analyst usually differ?",
+    "options": [
+      "The project manager writes requirements; the analyst manages the budget and the schedule",
+      "The project manager works only with the team; the analyst works only with the sponsor",
+      "The project manager joins at closing; the analyst joins at the start of the project",
+      "The project manager leads the project; the analyst focuses on the product's requirements"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The project manager is accountable for delivering the project, while the business analyst is responsible for the product and its requirements. They work closely together throughout, and both work with many stakeholders."
+  },
+  {
+    "id": "CAPM-T1-012",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adaptive frameworks",
+    "stem": "In Scrum, who creates the sprint backlog, the plan for how the sprint's work will be done?",
+    "options": [
+      "The product owner",
+      "The developers",
+      "The project sponsor",
+      "The Scrum Master"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Guide makes the developers accountable for creating the plan for the sprint, the sprint backlog, and they adapt it each day toward the sprint goal. The product owner orders the product backlog and the Scrum Master supports the team; neither plans the developers' work for them."
+  },
+  {
+    "id": "CAPM-T1-013",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product roadmaps",
+    "stem": "How does a product roadmap differ from a release plan?",
+    "options": [
+      "The roadmap shows long-term direction; the release plan details a nearer release",
+      "The roadmap is fixed for the product's life; the release plan changes daily",
+      "The roadmap is used only by the team; the release plan only by customers",
+      "The roadmap lists each developer's tasks; the release plan shows the overall strategy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A roadmap communicates the product's longer-term direction at a high level, while a release plan describes in more detail which features are expected in an upcoming release. Both are updated as plans change."
+  },
+  {
+    "id": "CAPM-T1-014",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "Which life cycle defines scope, schedule and cost early in the project and handles later changes through formal change control?",
+    "options": [
+      "Iterative with no baselines",
+      "Predictive",
+      "Incremental with weekly releases to customers",
+      "Adaptive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A predictive (plan-based or waterfall) life cycle determines scope, time and cost as early as possible and manages changes carefully through change control. Adaptive life cycles expect scope to evolve and replan each iteration."
+  },
+  {
+    "id": "CAPM-T1-015",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "In a functional organization, who usually has the most authority over the people working on a project?",
+    "options": [
+      "The functional manager",
+      "The customer who requested the work",
+      "The project manager",
+      "The most experienced team member"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In a functional structure staff are grouped by specialty and report to their functional manager, who controls their time; the project manager, if there is one, has little authority. Project managers have the most authority in projectized structures."
+  },
+  {
+    "id": "CAPM-T1-016",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "In a work breakdown structure, what is a control account?",
+    "options": [
+      "A record of every change request that the change control board has approved",
+      "A bank account set up by the sponsor to hold the money reserved for the project",
+      "The lowest level of the WBS, where the work is estimated and assigned to a single owner",
+      "A management point where scope, budget and actual cost are compared to measure performance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A control account is a management control point where scope, budget, actual cost and schedule are integrated and compared with earned value for performance measurement. It sits above one or more work packages; the work package is the lowest WBS level, and approved changes go in the change log."
+  },
+  {
+    "id": "CAPM-T1-017",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "A requirement says: \"The company must reduce customer complaints by 20 percent within a year.\" What type of requirement is this?",
+    "options": [
+      "A technical design specification",
+      "A business requirement",
+      "A non-functional requirement",
+      "A transition requirement"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Business requirements describe the higher-level needs of the organization, such as goals and objectives. Transition requirements cover moving to the new state, non-functional requirements describe qualities of a solution, and a design specification is not a requirement type."
+  },
+  {
+    "id": "CAPM-T1-018",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adaptive frameworks",
+    "stem": "Which statement best describes the Scrum Master's role?",
+    "options": [
+      "A business expert who writes all of the user stories for the whole development team",
+      "A tester who signs off on each increment before it is released",
+      "A servant leader who coaches the team in Scrum and helps remove impediments",
+      "A manager who assigns tasks to developers and approves their daily work"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Scrum Master serves the team and organization by coaching Scrum, helping the team improve and causing impediments to be removed. Developers choose their own tasks, the product owner manages the backlog, and quality is the whole team's job."
+  },
+  {
+    "id": "CAPM-T1-019",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "On a new office project, the team writes down that the landlord will finish the electrical work by June. Nobody has confirmed this yet. How should this statement be classified?",
+    "options": [
+      "An issue",
+      "A constraint",
+      "An assumption",
+      "A lesson learned that is recorded for future projects"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An assumption is a factor considered true for planning without proof, so it belongs in the assumption log and should be validated. A constraint is a known limit, an issue is a current problem, and a lesson learned is knowledge gained from experience."
+  },
+  {
+    "id": "CAPM-T1-020",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "How does leadership differ from management?",
+    "options": [
+      "Leadership is done only by executives; management is done only by the project managers",
+      "Leadership guides people toward a vision; management directs work through processes",
+      "Leadership focuses on budgets and controls; management focuses on inspiring people",
+      "Leadership is needed only on agile projects; management only on predictive ones"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Leadership is about influencing, motivating and aligning people toward a shared vision, while management is about directing and controlling the use of resources and processes to reach goals. Project managers need both on every type of project."
+  },
+  {
+    "id": "CAPM-T1-021",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "What does a WBS dictionary provide?",
+    "options": [
+      "Detailed information about each WBS element, such as its description and owner",
+      "Definitions of general project management terms for new members of the team",
+      "A list of the vendors who will deliver each separate part of the project's scope",
+      "A translation of the project documents for stakeholders in other countries"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The WBS dictionary gives deliverable, activity and scheduling details for each WBS component, such as a description of the work, the responsible organization, milestones and acceptance criteria. It is part of the scope baseline."
+  },
+  {
+    "id": "CAPM-T1-022",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Methodology and business analysis",
+    "stem": "On a predictive project, which artifact usually holds the detailed requirements that stakeholders have approved?",
+    "options": [
+      "A requirements document that has been signed off and baselined",
+      "A product backlog that is reordered at the start of every sprint",
+      "An information radiator on the wall of the team room",
+      "A sprint backlog owned by the developers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Predictive projects elicit and document requirements in detail early, get them approved and baseline them, so later changes go through change control. Backlogs and information radiators are adaptive artifacts that support just-in-time elaboration."
+  },
+  {
+    "id": "CAPM-T1-023",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning iterations",
+    "stem": "Which items are created during sprint planning?",
+    "options": [
+      "A risk register and an issue log",
+      "A final report and a lessons register",
+      "A project charter and a business case",
+      "A sprint goal and a sprint backlog"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sprint planning produces a sprint goal and the sprint backlog: the selected product backlog items plus a plan for delivering them. Charters and business cases come at initiation, and final reports at closing."
+  },
+  {
+    "id": "CAPM-T1-024",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "Which of these is a non-functional requirement?",
+    "options": [
+      "The system must email a receipt after each payment",
+      "The system must calculate sales tax on each order",
+      "The system must let users reset their own passwords",
+      "The system must display search results within 2 seconds"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Non-functional requirements describe qualities or conditions a solution must have, such as performance, security or usability. Resetting passwords, calculating tax and emailing receipts are functions, so they are functional requirements."
+  },
+  {
+    "id": "CAPM-T1-025",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "What is the main difference between a risk and an issue?",
+    "options": [
+      "A risk is always negative, while an issue can be either good or bad for the project",
+      "A risk is an uncertain event that may happen; an issue is a condition that exists now",
+      "A risk is logged by the sponsor, while an issue is always logged by the project team",
+      "A risk affects only the budget, while an issue affects only the project schedule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A risk is an uncertain future event or condition that could affect objectives, positively or negatively. An issue is a current condition that must be dealt with now. Both can affect any objective and either can be logged by anyone on the project."
+  },
+  {
+    "id": "CAPM-T1-026",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "During a tense meeting, a project manager notices that she is becoming frustrated as it happens. Which part of emotional intelligence is she showing?",
+    "options": [
+      "Self-awareness",
+      "Relationship management",
+      "Technical project management",
+      "Social awareness"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Recognizing one's own emotions as they occur is self-awareness. Social awareness is reading other people's emotions, and relationship management is handling interactions with others. Technical project management is a skill area, not part of emotional intelligence."
+  },
+  {
+    "id": "CAPM-T1-027",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "What is the critical path in a project schedule?",
+    "options": [
+      "The shortest path through the network, which gives the earliest finish",
+      "The path containing the riskiest activities, as rated by the team in its risk workshop",
+      "The path containing the activities with the highest cost in the project",
+      "The longest path through the network, which sets the shortest project duration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The critical path is the longest sequence of activities through the schedule network, and it determines the shortest possible project duration. Any delay on it delays the project unless the schedule is changed. Cost and risk do not define it."
+  },
+  {
+    "id": "CAPM-T1-028",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Planning iterations",
+    "stem": "What is the purpose of the daily scrum?",
+    "options": [
+      "To decide which items from the product backlog go into the next release",
+      "To demonstrate the finished increment to customers and other stakeholders",
+      "To inspect progress toward the sprint goal and adapt the plan for the next day",
+      "To report each developer's hours to the project manager for the weekly timesheets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The daily scrum is a 15-minute event for the developers to inspect progress toward the sprint goal and adapt the upcoming planned work. Demonstrating the increment happens at the sprint review, and ordering the backlog is the product owner's job."
+  },
+  {
+    "id": "CAPM-T1-029",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Methodology and business analysis",
+    "stem": "On an adaptive project, how are requirements usually handled?",
+    "options": [
+      "They are frozen after the first sprint and cannot change in any way after that",
+      "They are fully specified and signed off before any work can start",
+      "They evolve in a backlog and are detailed just before they are built",
+      "They are written by the Scrum Master at the end of the project"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Adaptive projects keep requirements in a prioritized backlog and elaborate them progressively, adding detail just in time as items near development, so the product can respond to feedback."
+  },
+  {
+    "id": "CAPM-T1-030",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Life cycles and processes",
+    "stem": "Which two are among the four values in the PMI Code of Ethics and Professional Conduct? Choose two.",
+    "select": 2,
+    "options": [
+      "Speed",
+      "Honesty",
+      "Seniority",
+      "Profitability",
+      "Respect"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "The four values of the PMI Code of Ethics and Professional Conduct are responsibility, respect, fairness and honesty. Profitability, seniority and speed may matter to organizations but are not among the code's values."
+  },
+  {
+    "id": "CAPM-T1-031",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "A business analyst needs detailed, confidential information about how a senior manager approves budgets. Which elicitation technique fits best?",
+    "options": [
+      "A one-on-one interview",
+      "A public focus group with customers",
+      "An online survey sent to all staff",
+      "A large facilitated workshop"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Interviews are well suited to gathering detailed or sensitive information from one person, because the analyst can ask follow-up questions in private. Group settings and broad surveys are not suited to confidential detail from a single expert."
+  },
+  {
+    "id": "CAPM-T1-032",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "During a brainstorming session, what is the project manager's main role?",
+    "options": [
+      "Judge who evaluates each idea as soon as it is suggested to save time",
+      "Decision maker who chooses the best idea before the session begins",
+      "Facilitator who guides the discussion and encourages everyone to contribute",
+      "Note-taker who stays silent and leaves the session to the most senior members"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In brainstorming the project manager acts as a facilitator, drawing out ideas from everyone without criticizing them during idea generation. Judging ideas early discourages contributions."
+  },
+  {
+    "id": "CAPM-T1-033",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Project schedule",
+    "stem": "A project has four activities. A takes 3 days. B takes 5 days and C takes 4 days; both start after A finishes. D takes 2 days and starts after both B and C finish. What is the shortest possible duration of the project in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "There are two paths: A-B-D = 3 + 5 + 2 = 10 days and A-C-D = 3 + 4 + 2 = 9 days. The longest path, A-B-D, is the critical path, so the project needs at least 10 days."
+  },
+  {
+    "id": "CAPM-T1-034",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adaptive project controls",
+    "stem": "What is the definition of done?",
+    "options": [
+      "A shared description of the quality an increment must meet to be complete",
+      "The signature of the sponsor accepting the whole project at its formal close",
+      "The date by which the product owner wants every feature to be released",
+      "The list of tasks that each developer plans to complete during the day"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The definition of done is a formal description of the state of the increment when it meets the quality measures required for the product. Work that does not meet it is not part of the increment."
+  },
+  {
+    "id": "CAPM-T1-035",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "You are asked to help choose a supplier for your project. One of the bidding companies is owned by your brother-in-law. What should you do?",
+    "options": [
+      "Keep quiet about it, since you are confident you can score every bid fairly",
+      "Ask your brother-in-law to withdraw his bid so that the conflict goes away",
+      "Score your brother-in-law's company lower than the others to avoid any appearance of favoritism",
+      "Disclose the relationship to your manager and step back from the decision unless told otherwise"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The fairness standard of the PMI Code of Ethics asks practitioners to disclose real or potential conflicts of interest to the appropriate stakeholders and to refrain from the decision unless they are told to continue. Hiding the relationship, scoring unfairly or pressuring the bidder are not fair or transparent."
+  },
+  {
+    "id": "CAPM-T1-036",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Executing planned strategies",
+    "stem": "What does a communications management plan describe?",
+    "options": [
+      "The exact wording of every message the project will send to its stakeholders",
+      "The technical design of the project's email and file storage systems",
+      "Who needs what information, when they need it, and how it will be delivered",
+      "How the team will handle conflicts between members during the project"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The communications management plan describes how, when and by whom information will be planned, structured, delivered and monitored, including stakeholder needs, formats and frequency. It does not script every message or cover IT system design."
+  },
+  {
+    "id": "CAPM-T1-037",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "What does a Gantt chart show?",
+    "options": [
+      "The probability and impact of each of the risks that the team has identified so far",
+      "The number of defects found in each category, ranked from high to low",
+      "Activities as bars against a calendar, showing when each one is scheduled",
+      "The authority of each stakeholder compared with their level of interest"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A Gantt chart is a bar chart of schedule information: activities are listed on one axis and dates on the other, with bars showing durations. Risk matrices, Pareto charts and power and interest grids show the other information."
+  },
+  {
+    "id": "CAPM-T1-038",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Planning iterations",
+    "stem": "Which format is commonly used to write a user story?",
+    "options": [
+      "Given <budget>, when <date>, then <approval>",
+      "Task <number>, owner <name>, hours <estimate>",
+      "Risk <event>, probability <level>, impact <cost>",
+      "As a <role>, I want <goal>, so that <benefit>"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A user story describes a need from the user's point of view: who wants it, what they want and why. The other formats describe budgets, task tracking and risk entries rather than user needs."
+  },
+  {
+    "id": "CAPM-T1-039",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "Warehouse staff find it hard to explain the steps they follow when packing orders. Which technique would help the analyst understand the process best?",
+    "options": [
+      "A questionnaire with yes or no answers",
+      "Reviewing the project's risk register",
+      "Observation of the staff as they work",
+      "Benchmarking against other companies"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Observation, also called job shadowing, lets the analyst see how work is actually done, which is useful when people find it hard to describe their process or take steps for granted. A closed questionnaire would miss the detail."
+  },
+  {
+    "id": "CAPM-T1-040",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Validating requirements",
+    "stem": "What are acceptance criteria?",
+    "options": [
+      "The steps the customer takes to pay for each finished release",
+      "The rules for choosing which suppliers can bid on the work",
+      "The standards used to hire new members of the project team",
+      "The conditions a deliverable or story must meet to be accepted"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Acceptance criteria are the conditions that must be met before a deliverable or user story is accepted, which makes requirements testable. They are not payment, procurement or hiring rules."
+  },
+  {
+    "id": "CAPM-T1-041",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "Which document formally authorizes a project and gives the project manager authority to use organizational resources?",
+    "options": [
+      "Project charter",
+      "Scope statement",
+      "Project management plan",
+      "Stakeholder register for the project"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The project charter, issued by the sponsor, formally authorizes the project and names the project manager with the authority to apply resources. The project management plan and scope statement come later, during planning."
+  },
+  {
+    "id": "CAPM-T1-042",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Adaptive project controls",
+    "stem": "A team completed 18, 22 and 20 story points in its last three sprints. What is its average velocity in story points per sprint? Type the number only.",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Average velocity = (18 + 22 + 20) / 3 = 60 / 3 = 20 story points per sprint. Velocity helps the team forecast how much work fits in future sprints."
+  },
+  {
+    "id": "CAPM-T1-043",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Executing planned strategies",
+    "stem": "Your project team has 8 people, including you. How many communication channels exist between them? Type the number only.",
+    "numeric": {
+      "answers": [
+        "28"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Communication channels = n(n - 1) / 2, where n is the number of people. 8 x 7 / 2 = 28."
+  },
+  {
+    "id": "CAPM-T1-044",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "In a finish-to-start relationship between activities A and B, what is true?",
+    "options": [
+      "B cannot start until A has finished",
+      "A and B must finish on the same day",
+      "B cannot finish until A has started",
+      "A and B must start on the same day"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Finish-to-start, the most common dependency, means the successor cannot start until the predecessor has finished. Start-to-finish, start-to-start and finish-to-finish describe the other relationships."
+  },
+  {
+    "id": "CAPM-T1-045",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "What does a requirements traceability matrix do?",
+    "options": [
+      "Ranks each requirement by the cost to build it, from the highest to the lowest",
+      "Lists the stakeholders who are allowed to change the project's requirements",
+      "Links each requirement to its source and to the deliverables that satisfy it",
+      "Records the time each analyst spent on writing each of the requirements"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A traceability matrix links requirements from their origin to the deliverables, tests and objectives that satisfy them, which helps ensure each requirement adds value and is delivered and tested. It is not a permissions list, cost ranking or timesheet."
+  },
+  {
+    "id": "CAPM-T1-046",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "What does the project management plan describe?",
+    "options": [
+      "The business reasons for the project and its expected financial return",
+      "How the project will be executed, monitored and controlled, and closed",
+      "The list of every stakeholder and their power and interest levels",
+      "Only the features of the product and how customers will use them"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The project management plan integrates the subsidiary plans and baselines and explains how the project will be executed, monitored, controlled and closed. Product features belong in requirements and scope documents, stakeholders in the stakeholder register, and financial justification in the business case."
+  },
+  {
+    "id": "CAPM-T1-047",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Validating requirements",
+    "stem": "What is the difference between verification and validation?",
+    "options": [
+      "Verification happens only at the end; validation happens only at the start of the work",
+      "Verification checks the budget; validation checks the schedule of the whole project",
+      "Verification is done by the customer; validation is always done by the project's own development team",
+      "Verification checks the product meets its specification; validation checks it meets the need"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Verification asks whether the product was built right, meaning it conforms to requirements and specifications. Validation asks whether the right product was built, meaning it meets the customer's and stakeholders' actual needs."
+  },
+  {
+    "id": "CAPM-T1-048",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adaptive project controls",
+    "stem": "What does a burndown chart show?",
+    "options": [
+      "The cost spent each month compared with the budget",
+      "The work remaining over time in a sprint or release",
+      "The number of team members available each week",
+      "The order of priority of items in the backlog"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A burndown chart plots the remaining work against time, so the team can see whether it is on track to finish. Cost, staffing and backlog order are tracked in other ways."
+  },
+  {
+    "id": "CAPM-T1-049",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Executing planned strategies",
+    "stem": "What does a benefits management plan describe?",
+    "options": [
+      "How and when the project's benefits will be delivered and measured",
+      "Which tasks are on the critical path and how much float they have",
+      "Which project deliverables the customer has formally accepted so far",
+      "How the team members' salary and leave benefits will be administered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The benefits management plan describes how and when the benefits of the project will be delivered and how they will be measured. Employee benefits, acceptance records and schedule float are covered elsewhere."
+  },
+  {
+    "id": "CAPM-T1-050",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Predictive project controls",
+    "stem": "A project has an earned value (EV) of \\$40,000 and an actual cost (AC) of \\$46,000. What is the cost variance (CV)? Type the number only, with no commas or currency sign, and use a minus sign for a negative value.",
+    "numeric": {
+      "answers": [
+        "-6000"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "CV = EV - AC = 40,000 - 46,000 = -6,000. A negative cost variance means the work done so far has cost more than was budgeted for it."
+  },
+  {
+    "id": "CAPM-T1-051",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "What is progressive elaboration?",
+    "options": [
+      "Adding new features to the product without going through change control",
+      "Moving each activity later in the schedule to match available resources",
+      "Adding more detail to a plan as more information becomes available",
+      "Repeating the same project several times until the customer is satisfied"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Progressive elaboration is the iterative process of increasing the level of detail in a plan as greater amounts of information and more accurate estimates become available. Adding unapproved features is scope creep, and moving activities to match resources is resource leveling."
+  },
+  {
+    "id": "CAPM-T1-052",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Gathering requirements",
+    "stem": "An analyst must collect input from 2,000 users spread across several countries within two weeks. Which two techniques fit best? Choose two.",
+    "select": 2,
+    "options": [
+      "An online questionnaire",
+      "One-on-one interviews with each user",
+      "Analysis of the current system's usage reports",
+      "Job shadowing every user at their desk",
+      "A single in-person workshop at headquarters"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Questionnaires reach large, dispersed groups quickly, and analyzing existing usage data shows what users actually do without needing their time. Interviewing or shadowing 2,000 people would take far too long, and one in-person workshop cannot include them."
+  },
+  {
+    "id": "CAPM-T1-053",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adaptive frameworks",
+    "stem": "What is the main purpose of work in progress (WIP) limits on a Kanban board?",
+    "options": [
+      "To make sure every team member always has at least three items to work on",
+      "To set the maximum number of sprints the project is allowed to run",
+      "To improve flow by stopping the team from starting too many items at once",
+      "To cap the number of items the customer may add to the backlog each month"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "WIP limits restrict how many items can be in each stage at once, which exposes bottlenecks, reduces multitasking and improves flow. Kanban does not use sprints, and WIP limits do not control the backlog."
+  },
+  {
+    "id": "CAPM-T1-054",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Validating requirements",
+    "stem": "Before go-live, real users test the new system to confirm it supports their work. What is this testing called?",
+    "options": [
+      "User acceptance testing",
+      "Code review",
+      "Unit testing",
+      "Load testing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "User acceptance testing (UAT) has end users confirm that the solution meets their needs in realistic conditions, which is a form of validation. Unit tests, load tests and code reviews are technical checks done by the team."
+  },
+  {
+    "id": "CAPM-T1-055",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Executing planned strategies",
+    "stem": "Before a project is approved, which document explains why it is worth doing, for example its expected costs and benefits?",
+    "options": [
+      "The business case",
+      "The issue log",
+      "The final project report",
+      "The project schedule"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The business case documents the economic feasibility and justification for a project and is used to decide whether to approve it. The issue log, schedule and final report come after approval."
+  },
+  {
+    "id": "CAPM-T1-056",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Predictive project controls",
+    "stem": "A project's schedule performance index (SPI) is 0.85. What does this mean?",
+    "options": [
+      "The project is ahead of schedule",
+      "The project is behind schedule",
+      "The project is over its budget",
+      "The project is under its budget"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SPI = EV / PV. A value below 1.0 means less work has been completed than was planned by this point, so the project is behind schedule. SPI says nothing directly about cost; that is what CPI measures."
+  },
+  {
+    "id": "CAPM-T1-057",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "A team member hears that a key supplier may go out of business in the coming months. Nothing has happened yet. Where should this be recorded so it can be tracked?",
+    "options": [
+      "The change log",
+      "The lessons learned register",
+      "The risk register",
+      "The issue log"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A possible future event that could affect the project is a risk, so it goes in the risk register with an owner, an assessment and a planned response. The issue log is for problems that exist now, the change log for change requests, and the lessons learned register for knowledge gained."
+  },
+  {
+    "id": "CAPM-T1-058",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adaptive frameworks",
+    "stem": "Which practice is most associated with Extreme Programming (XP)?",
+    "options": [
+      "Program increment planning",
+      "Earned value analysis",
+      "Phase gate reviews",
+      "Pair programming"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "XP includes engineering practices such as pair programming, test-driven development, continuous integration and small releases. Phase gates and earned value are predictive tools, and PI planning belongs to SAFe."
+  },
+  {
+    "id": "CAPM-T1-059",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholder communication",
+    "stem": "The analyst must update senior executives on the status of the requirements. What is the best way to present it?",
+    "options": [
+      "A short summary focused on business impact, decisions needed and key risks",
+      "The full requirements document with every detailed technical specification",
+      "A copy of the team's daily task list with every developer's progress shown",
+      "Nothing until the requirements are complete, to avoid confusing executives"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Communication should be tailored to the audience. Executives usually need a concise view of business impact, decisions and risks, not technical detail. Withholding status until the end leaves them unable to act."
+  },
+  {
+    "id": "CAPM-T1-060",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Problem-solving tools",
+    "stem": "A team wants to find the root causes of late deliveries by grouping possible causes into categories such as people, process and equipment. Which tool fits best?",
+    "options": [
+      "A milestone list with planned dates",
+      "A RACI chart for the delivery team",
+      "A Gantt chart of the delivery activities",
+      "A cause-and-effect (fishbone) diagram"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A cause-and-effect diagram, also called a fishbone or Ishikawa diagram, breaks a problem into categories of possible causes to help find root causes. Gantt charts and milestone lists show schedule, and a RACI chart shows responsibilities."
+  },
+  {
+    "id": "CAPM-T1-061",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Predictive project controls",
+    "stem": "On a predictive project, who usually reviews significant change requests and approves or rejects them?",
+    "options": [
+      "The newest member of the team",
+      "Any team member who is affected",
+      "The customer's purchasing team",
+      "A change control board"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In integrated change control, change requests are evaluated for impact and then approved, deferred or rejected by an authorized person or group, often a change control board (CCB). Individual team members do not approve changes to baselines."
+  },
+  {
+    "id": "CAPM-T1-062",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "A new project manager wants to know which stakeholders are most influential and how each one is likely to react to the project. Which document should she check first?",
+    "options": [
+      "The work breakdown structure",
+      "The quality management plan for the project",
+      "The stakeholder register",
+      "The issue log for the current phase"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The stakeholder register holds identification details, assessment information such as influence, interest and expectations, and classification for each stakeholder. The WBS, issue log and quality plan do not assess stakeholders."
+  },
+  {
+    "id": "CAPM-T1-063",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Planning iterations",
+    "stem": "Which two are formal events in Scrum? Choose two.",
+    "select": 2,
+    "options": [
+      "Project closure meeting",
+      "Change control board meeting",
+      "Sprint review",
+      "Phase gate review",
+      "Sprint retrospective"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "The Scrum events are the sprint, sprint planning, the daily scrum, the sprint review and the sprint retrospective. Phase gates, change control boards and closure meetings belong to predictive governance."
+  },
+  {
+    "id": "CAPM-T1-064",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Methodology and business analysis",
+    "stem": "How does business analysis usually change when a project uses an adaptive approach? Choose two.",
+    "select": 2,
+    "options": [
+      "Business analysis work ends once construction begins",
+      "The analyst collaborates with the team and stakeholders continuously",
+      "All requirements are frozen before any design begins",
+      "A full specification must be signed off before work starts",
+      "Requirements are elaborated just in time, close to when they are built"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "In adaptive work, analysis continues throughout: requirements are refined just in time and the analyst or product owner collaborates continuously with the team and stakeholders. Freezing requirements and full upfront sign-off are predictive practices."
+  },
+  {
+    "id": "CAPM-T1-065",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "Using MoSCoW, a stakeholder labels a feature as Could have. What does that mean?",
+    "options": [
+      "It has been agreed that it will not be delivered in this release",
+      "It is desirable but will be dropped first if time or money runs short",
+      "It must be delivered first, before any of the other requirements in the release",
+      "It is essential, and the solution cannot be released without it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "MoSCoW groups requirements as Must have, Should have, Could have and Won't have (this time). Could have items are nice to have and are the first to be cut if constraints tighten."
+  },
+  {
+    "id": "CAPM-T1-066",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Problem-solving tools",
+    "stem": "Which practice most improves the effectiveness of a project meeting?",
+    "options": [
+      "Inviting every stakeholder to every meeting so that no one ever feels excluded",
+      "Sending an agenda in advance and ending with action items that have owners",
+      "Avoiding notes so that people feel free to speak openly during the meeting",
+      "Letting the discussion run with no time limit until everyone has agreed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Effective meetings have a clear purpose and agenda shared beforehand, the right attendees, a time limit, and recorded decisions and action items with owners and dates. Inviting everyone and running without limits wastes time."
+  },
+  {
+    "id": "CAPM-T1-067",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Predictive project controls",
+    "stem": "Which two artifacts are typical of a predictive, plan-based project? Choose two.",
+    "select": 2,
+    "options": [
+      "Schedule baseline",
+      "Iteration backlog",
+      "Product backlog",
+      "Change log",
+      "Sprint burndown chart"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Predictive projects control work against approved baselines such as the schedule baseline and track changes in a change log. Product backlogs, burndown charts and iteration backlogs are adaptive artifacts, although hybrid projects may use some of them."
+  },
+  {
+    "id": "CAPM-T1-068",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Project management planning",
+    "stem": "Select the document that best matches each purpose.",
+    "rows": [
+      "Lists the people and groups affected by the project and their interest",
+      "Captures knowledge gained so far so it can be reused",
+      "Formally starts the project and names the project manager",
+      "Tracks uncertain events and the responses planned for them"
+    ],
+    "columns": [
+      "Project charter",
+      "Risk register",
+      "Stakeholder register",
+      "Lessons learned register"
+    ],
+    "correct": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explanation": "The charter authorizes the project and names the project manager. The risk register tracks risks and responses. The stakeholder register lists stakeholders with their interests and influence. The lessons learned register records knowledge gained during the project for current and future use."
+  },
+  {
+    "id": "CAPM-T1-069",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Adaptive frameworks",
+    "stem": "Select the framework each practice is most closely associated with.",
+    "rows": [
+      "Test-driven development",
+      "Fixed-length sprints with a sprint goal",
+      "Pulling work forward only when a column's WIP limit allows",
+      "Pair programming"
+    ],
+    "columns": [
+      "Scrum",
+      "Kanban",
+      "Extreme Programming (XP)"
+    ],
+    "correct": [
+      2,
+      0,
+      1,
+      2
+    ],
+    "explanation": "Test-driven development and pair programming are XP engineering practices. Fixed-length sprints with a sprint goal are Scrum. Pull systems with WIP limits are Kanban."
+  },
+  {
+    "id": "CAPM-T1-070",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Validating requirements",
+    "stem": "A new self-service portal has been live for three months. How should the team judge whether it is delivering value?",
+    "options": [
+      "Count how many features were delivered in the final release",
+      "Measure results against the business objectives set at the start",
+      "Ask the developers whether they are proud of the finished work",
+      "Check that the project closed on the date set in the original project plan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Solution evaluation compares actual results, such as reduced call volumes or faster service, with the business objectives and measures defined earlier. Feature counts and closing dates do not show whether value was realized."
+  },
+  {
+    "id": "CAPM-T1-071",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Gathering requirements",
+    "stem": "Classify each requirement for a new online banking service.",
+    "rows": [
+      "Customers can transfer money between their own accounts",
+      "Existing customer data must be moved to the new system before launch",
+      "The bank must cut branch transaction costs by 15 percent",
+      "Pages must meet accessibility standards for screen readers"
+    ],
+    "columns": [
+      "Business",
+      "Functional",
+      "Non-functional",
+      "Transition"
+    ],
+    "correct": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explanation": "Transferring money is something the system does, so it is functional. Moving existing data is needed only to get from the old state to the new one, so it is a transition requirement. Cutting costs is an organizational goal, so it is a business requirement. Accessibility is a quality of the solution, so it is non-functional."
+  },
+  {
+    "id": "CAPM-T1-072",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Problem-solving tools",
+    "stem": "Select the technique that best matches each purpose.",
+    "rows": [
+      "Find the vital few causes behind most of the defects",
+      "Generate many ideas quickly without judging them",
+      "Ask why repeatedly until the underlying cause appears",
+      "Gather opinions from a small group of prequalified stakeholders"
+    ],
+    "columns": [
+      "Brainstorming",
+      "Focus group",
+      "Five whys",
+      "Pareto chart"
+    ],
+    "correct": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "explanation": "A Pareto chart ranks causes by frequency to show the vital few. Brainstorming generates many ideas quickly. The five whys technique keeps asking why to reach a root cause. A focus group brings together prequalified stakeholders and subject matter experts to learn their expectations and attitudes."
+  },
+  {
+    "id": "CAPM-T1-073",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Predictive project controls",
+    "stem": "Select the earned value term that matches each description.",
+    "rows": [
+      "The value of the work actually completed, measured in budget terms",
+      "The total budget for all of the project's work",
+      "The cost actually incurred for the work done so far",
+      "The authorized budget for the work scheduled to be done by now"
+    ],
+    "columns": [
+      "Planned value (PV)",
+      "Earned value (EV)",
+      "Actual cost (AC)",
+      "Budget at completion (BAC)"
+    ],
+    "correct": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "explanation": "EV is the budgeted value of the work actually performed. BAC is the sum of all budgets for the work. AC is the cost actually incurred. PV is the authorized budget for the work scheduled to be complete at a given point."
+  },
+  {
+    "id": "CAPM-T1-074",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "Your project has delivered its final product. What should happen before the project is formally closed?",
+    "options": [
+      "The customer formally accepts the deliverables and the product is handed over to operations",
+      "The budget that is left over is spent so it is not lost at the end of the year",
+      "The project manager deletes all working files and drafts so that only the final product remains",
+      "The team starts work on any new features that the customer has requested"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Closing confirms formal acceptance of the deliverables, transitions the product to the people who will operate or support it, archives records and releases resources. New features need a new project or approved change, records are archived rather than deleted, and unused budget is returned."
+  },
+  {
+    "id": "CAPM-T1-075",
+    "section": "capm",
+    "test": 1,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adaptive project controls",
+    "stem": "What is the purpose of a sprint retrospective?",
+    "options": [
+      "For stakeholders to accept or reject the work of the sprint",
+      "For the product owner to add new items to the product backlog",
+      "For the Scrum Master to rate each developer's performance",
+      "For the team to inspect how it worked and plan improvements"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The retrospective is where the Scrum team inspects its people, interactions, processes and tools and plans ways to increase quality and effectiveness. Stakeholders inspect the increment at the sprint review."
+  },
+  {
+    "id": "CAPM-T2-001",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "When to use an adaptive approach",
+    "stem": "A start-up is building a mobile app for a new market. Nobody is sure which features users will value. Which approach fits best?",
+    "options": [
+      "Predictive, defining every feature in detail before any design begins",
+      "Predictive, since a fixed plan reduces uncertainty about user needs",
+      "Adaptive, but with all feedback held back until the final release",
+      "Adaptive, releasing small increments and learning from user feedback"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "High uncertainty about what users value calls for an adaptive approach with frequent releases and feedback. A detailed upfront plan cannot remove uncertainty about needs, and holding back feedback defeats the purpose of adapting."
+  },
+  {
+    "id": "CAPM-T2-002",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "Which term describes a group of related projects managed in a coordinated way to obtain benefits that would not be available from managing them individually?",
+    "options": [
+      "Portfolio",
+      "Operations",
+      "Program",
+      "Phase"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "That is PMI's definition of a program. A portfolio is broader and is organized around strategic objectives, a phase is part of one project's life cycle, and operations are ongoing work."
+  },
+  {
+    "id": "CAPM-T2-003",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "What is the main responsibility of the project team?",
+    "options": [
+      "Performing the work that produces the project's deliverables",
+      "Approving the charter and funding the project from the start",
+      "Selecting which projects belong in the company's portfolio",
+      "Setting the strategic objectives of the whole organization"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The project team performs the work of the project to create its deliverables. Sponsors approve and fund, executives set strategy, and portfolio management selects projects."
+  },
+  {
+    "id": "CAPM-T2-004",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "When to use a predictive approach",
+    "stem": "A company is building a bridge under strict safety regulations, with a fixed-price contract and a design that has already been approved. Which approach fits best?",
+    "options": [
+      "Predictive, because the scope is defined and late changes are expensive",
+      "Adaptive, because the team should discover the design as the work goes on",
+      "Adaptive, because regulators prefer frequent releases to the public",
+      "Predictive, because adaptive methods can only be used for software"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Defined scope, regulatory control and high cost of change point to a predictive approach. Adaptive methods are used well beyond software, so that is not the reason; the reason is the stable, approved design."
+  },
+  {
+    "id": "CAPM-T2-005",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Business analysis roles",
+    "stem": "On an adaptive project, which role typically owns and prioritizes the product backlog where requirements are kept?",
+    "options": [
+      "The project sponsor",
+      "The change control board",
+      "The product owner",
+      "The functional manager"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "On adaptive projects the product owner owns and orders the backlog, often with help from a business analyst. Change control boards belong to predictive governance, and sponsors and functional managers do not manage the backlog."
+  },
+  {
+    "id": "CAPM-T2-006",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product roadmaps",
+    "stem": "What is the main reason to share a product roadmap with stakeholders?",
+    "options": [
+      "To align them on the product's direction and priorities",
+      "To replace the need for any further communication",
+      "To lock in exact dates that can never be changed later",
+      "To give them the hourly plan for the developers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A roadmap communicates direction, priorities and the reasons behind them so stakeholders can align and give input. It is not an hourly plan or a fixed commitment, and it supports rather than replaces ongoing communication."
+  },
+  {
+    "id": "CAPM-T2-007",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adaptive frameworks",
+    "stem": "According to the Agile Manifesto principles, what is the primary measure of progress?",
+    "options": [
+      "Documents approved",
+      "Percentage of budget spent",
+      "Hours worked by the team",
+      "Working software"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The principle states that working software is the primary measure of progress. Hours, documents and spending do not show whether value has been delivered."
+  },
+  {
+    "id": "CAPM-T2-008",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "A team delivers a usable piece of a payroll system every few months, with each delivery adding new working functions to the last one. Which development life cycle is this?",
+    "options": [
+      "Incremental",
+      "Linear with a single handover",
+      "Predictive",
+      "Waterfall with one final release"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An incremental life cycle produces the deliverable through a series of additions, each one a usable piece of the whole. Predictive, linear and waterfall approaches deliver the finished product once, at the end."
+  },
+  {
+    "id": "CAPM-T2-009",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "In a strong matrix organization, who usually has more authority over the project: the project manager or the functional manager?",
+    "options": [
+      "They always have exactly equal authority",
+      "The project manager",
+      "Neither, since the customer holds all authority",
+      "The functional manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In a strong matrix the project manager has moderate to high authority, more than the functional manager. In a weak matrix the balance tips toward the functional manager, and in a balanced matrix authority is shared."
+  },
+  {
+    "id": "CAPM-T2-010",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "What does the 100 percent rule say about a work breakdown structure?",
+    "options": [
+      "Every work package must be at least 100 hours long so it can be managed",
+      "Each level of the WBS must contain exactly the same number of elements",
+      "The WBS must be fully approved by all stakeholders before it can be used",
+      "The WBS includes all of the project's work and nothing outside its scope"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under the 100 percent rule, the WBS captures all of the work defined by the project scope, including project management work, and the children of any element add up to 100 percent of that element. Work outside scope does not belong in it."
+  },
+  {
+    "id": "CAPM-T2-011",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "What is a stakeholder requirement?",
+    "options": [
+      "A need of a particular stakeholder or group that the solution must meet",
+      "A request from a stakeholder for the project manager to be replaced",
+      "A list of stakeholders who must attend every one of the project meetings",
+      "A rule that limits who is allowed to join the project's steering committee"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Stakeholder requirements describe the needs of a stakeholder or group of stakeholders. They bridge business requirements and the solution requirements that describe what the product must do."
+  },
+  {
+    "id": "CAPM-T2-012",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Planning iterations",
+    "stem": "What is a timebox?",
+    "options": [
+      "A storage area where the team keeps finished deliverables until release",
+      "A calendar in which the project manager records the team's leave days",
+      "A reserve of extra time added to the end of the project for any unexpected delays",
+      "A fixed period of time in which an activity or piece of work must be done"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A timebox is a fixed, short period of time, such as a two-week sprint or a 15-minute daily scrum, within which work is done. It is not storage, a leave calendar or a schedule reserve."
+  },
+  {
+    "id": "CAPM-T2-013",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product roadmaps",
+    "stem": "A competitor launches a new feature that changes customer expectations. What should happen to the product roadmap?",
+    "options": [
+      "Leave it unchanged, since a roadmap is a fixed commitment once published",
+      "Throw it away and stop planning until the market becomes stable again",
+      "Add the competitor's feature at the top without assessing its value",
+      "Review it and update the priorities if the new information warrants it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A roadmap is a living document that is reviewed and updated as market conditions, feedback and strategy change. Changes should still be based on an assessment of value, not copied without thought."
+  },
+  {
+    "id": "CAPM-T2-014",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "What is a hybrid project life cycle?",
+    "options": [
+      "A mix of predictive and adaptive approaches chosen for different parts of the work",
+      "A predictive life cycle that is used only for projects with very large budgets",
+      "A life cycle in which two project managers share authority equally over the whole team",
+      "An adaptive life cycle in which the product owner also serves as the sponsor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A hybrid life cycle combines predictive and adaptive elements, for example fixed-plan hardware work alongside iterative software development. It is about how the work is approached, not about who leads or how large the budget is."
+  },
+  {
+    "id": "CAPM-T2-015",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "A project manager meets a functional manager to agree that a database specialist will join the project for two months. Which role is the project manager mainly playing?",
+    "options": [
+      "Sponsor",
+      "Negotiator",
+      "Product owner",
+      "Quality auditor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Securing resources from functional managers requires negotiation. The sponsor funds and champions the project, the product owner manages the backlog in agile work, and a quality auditor reviews processes."
+  },
+  {
+    "id": "CAPM-T2-016",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "A project manager compresses the schedule by doing activities in parallel that were planned to run one after the other. What is this technique called?",
+    "options": [
+      "Rolling wave planning",
+      "Crashing",
+      "Resource leveling",
+      "Fast tracking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fast tracking performs activities or phases in parallel for at least part of their duration, which saves time but adds risk and possible rework. Crashing adds resources, leveling adjusts for resource limits, and rolling wave planning is about level of detail."
+  },
+  {
+    "id": "CAPM-T2-017",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "Which of these is an example of a transition requirement?",
+    "options": [
+      "The company must increase online sales by 10 percent this year",
+      "The system must let a manager approve expense claims from a phone",
+      "Training staff to use the new system before the old one is switched off",
+      "The new system must handle 5,000 users at the same time without any noticeable delay"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Transition requirements describe temporary capabilities needed to move from the current state to the future state, such as training and data conversion. The others are non-functional, functional and business requirements."
+  },
+  {
+    "id": "CAPM-T2-018",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning iterations",
+    "stem": "What happens during product backlog refinement?",
+    "options": [
+      "Backlog items are broken down, clarified, estimated and ordered",
+      "The sponsor approves the budget for the next release of the product",
+      "Finished items are released to the customer and the sprint is closed",
+      "The team reviews its own process and agrees ways to work better"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Refinement is the ongoing act of breaking down and adding detail, such as descriptions, order and size, to product backlog items so they are ready for future sprints. The retrospective is where the team reviews its process."
+  },
+  {
+    "id": "CAPM-T2-019",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "Why are projects often described as a vehicle for change in an organization?",
+    "options": [
+      "They replace operations once the organization's strategy has been agreed",
+      "They let the organization avoid changing its daily operational processes",
+      "They are used only when a company is being reorganized or merged with another",
+      "They move the organization from its current state to a desired future state"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Projects drive change: they take the organization from a current state to a future state, for example a new product, system or process. They do not replace operations and are used far more widely than reorganizations."
+  },
+  {
+    "id": "CAPM-T2-020",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "A junior team member is unsure how to estimate her tasks. The project manager sits with her, asks questions and helps her work out an approach. Which role is this?",
+    "options": [
+      "Contract administrator",
+      "Coach",
+      "Initiator",
+      "Controller"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Helping a person build their own skills by guiding rather than doing the work for them is coaching. The other roles are about starting, controlling or administering work, not developing people."
+  },
+  {
+    "id": "CAPM-T2-021",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "What is usually a result of crashing a schedule?",
+    "options": [
+      "The duration gets longer but the cost goes down",
+      "The quality standards are lowered for each task",
+      "The duration gets shorter but the cost goes up",
+      "The scope is reduced so the dates can be met"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Crashing shortens duration at the lowest added cost by adding resources, such as overtime or extra staff, to critical path activities. It increases cost; it does not cut scope or quality by design."
+  },
+  {
+    "id": "CAPM-T2-022",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Methodology and business analysis",
+    "stem": "On a hybrid project, the hardware is built with a predictive approach and the software with sprints. How should business analysis be handled?",
+    "options": [
+      "Define the hardware requirements up front and refine the software ones in a backlog",
+      "Skip formal requirements on the hardware, since sprints are used on the project",
+      "Treat every requirement the same way, so all of them are fixed before work starts",
+      "Let each developer decide whether the requirements need to be written at all"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "On hybrid projects business analysis is tailored to each part: stable, high-cost-of-change hardware requirements are defined and baselined early, while software requirements can evolve in a backlog."
+  },
+  {
+    "id": "CAPM-T2-023",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning iterations",
+    "stem": "What do story points estimate?",
+    "options": [
+      "The relative effort and complexity of a backlog item",
+      "The exact number of hours a developer needs for an item",
+      "The amount of money the item will earn once released",
+      "The number of people needed to finish an item in a day"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Story points are a relative measure of the effort, complexity and uncertainty of an item compared with other items. They are deliberately not hours, money or headcount."
+  },
+  {
+    "id": "CAPM-T2-024",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "Sales, finance and IT disagree about how the new ordering process should work. Which technique is most likely to resolve the differences quickly?",
+    "options": [
+      "Asking the IT group to decide, since it will build the solution",
+      "A facilitated workshop with representatives of all three groups",
+      "Separate surveys sent to each group, compared after a month",
+      "Reading the old system's user manual in place of talking to users"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Facilitated workshops bring cross-functional stakeholders together to define requirements and reconcile differences quickly, building trust and consensus. Separate surveys delay agreement, and letting one group decide ignores the others."
+  },
+  {
+    "id": "CAPM-T2-025",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "The client says the new website must go live before the trade show on 1 March. In project terms, what is this date?",
+    "options": [
+      "A risk",
+      "An issue that is already affecting the work",
+      "A constraint",
+      "An assumption"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A constraint is a limiting factor on the project, here a fixed deadline. An assumption is believed true without proof, a risk is an uncertain event, and an issue is a problem that exists now."
+  },
+  {
+    "id": "CAPM-T2-026",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Executing planned strategies",
+    "stem": "On a power and interest grid, how should you usually manage a stakeholder with high power but low interest in the project?",
+    "options": [
+      "Keep them satisfied",
+      "Monitor them with minimum effort",
+      "Keep them informed in detail",
+      "Manage them closely"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The common guidance is: high power and high interest, manage closely; high power and low interest, keep satisfied; low power and high interest, keep informed; low power and low interest, monitor."
+  },
+  {
+    "id": "CAPM-T2-027",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Project schedule",
+    "stem": "Activity A takes 4 days. B takes 6 days and C takes 2 days; both start after A finishes. D takes 3 days and starts after both B and C finish. What is the total float of activity C, in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Path A-B-D = 4 + 6 + 3 = 13 days (critical). Path A-C-D = 4 + 2 + 3 = 9 days. C can slip by 13 - 9 = 4 days without delaying the project, so its total float is 4 days."
+  },
+  {
+    "id": "CAPM-T2-028",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning iterations",
+    "stem": "In planning poker, team members reveal their estimates at the same time. Why?",
+    "options": [
+      "To finish the estimation without any discussion",
+      "To stop early estimates from influencing the others",
+      "To let the product owner choose the lowest estimate",
+      "To allow the most senior person to set the answer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Revealing at once avoids anchoring, where the first number spoken sways everyone else. Differences then lead to discussion, and the team estimates again until it converges."
+  },
+  {
+    "id": "CAPM-T2-029",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Methodology and business analysis",
+    "stem": "On a predictive project, why do stakeholders usually sign off on the requirements document?",
+    "options": [
+      "To show they have read it, although it has no further purpose",
+      "To transfer all project risks from the company to the stakeholders",
+      "To approve a baseline that later changes are controlled against",
+      "To give the team permission to skip the testing of each feature"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sign-off confirms agreement and creates the requirements baseline, so any later change is assessed through change control. It does not transfer risk or remove the need for testing."
+  },
+  {
+    "id": "CAPM-T2-030",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "What is the purpose of an assumption log?",
+    "options": [
+      "To record approved changes to scope so the baselines can be updated by the team",
+      "To record assumptions and constraints so they can be checked as the project goes on",
+      "To record the costs the team expects so they can be compared to the actual supplier bills",
+      "To record each team member's working hours for the payroll department to process"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The assumption log records assumptions and constraints identified during the project so they can be validated over time. Cost tracking, timesheets and the change log serve the other purposes."
+  },
+  {
+    "id": "CAPM-T2-031",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "Users struggle to describe what they want from a new screen. How would a prototype help?",
+    "options": [
+      "It gives them a model to react to, so they can give concrete feedback",
+      "It proves the screen will be delivered under budget and on time",
+      "It replaces the need to talk to users about the screen at any stage",
+      "It is the finished screen, so no further work on it will be needed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A prototype is an early model of the product that stakeholders can try, which makes it easier to give concrete feedback and refine requirements. It is not the final product and does not replace conversation."
+  },
+  {
+    "id": "CAPM-T2-032",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Roles and responsibilities",
+    "stem": "Which two are commonly listed as parts of emotional intelligence? Choose two.",
+    "select": 2,
+    "options": [
+      "Technical expertise",
+      "Social skills",
+      "Schedule compression",
+      "Self-awareness",
+      "Budget authority"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Common models of emotional intelligence include self-awareness, self-management (self-regulation), social awareness (empathy) and social skills. Technical expertise, budget authority and schedule compression are not emotional abilities."
+  },
+  {
+    "id": "CAPM-T2-033",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "After concrete is poured, the team must wait three days for it to cure before building on it. In scheduling, what is this waiting time?",
+    "options": [
+      "A lag",
+      "A milestone",
+      "A lead",
+      "Float"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A lag is a delay placed between a predecessor and successor, such as curing time. A lead lets a successor start early, float is scheduling flexibility, and a milestone marks a point in time."
+  },
+  {
+    "id": "CAPM-T2-034",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adaptive project controls",
+    "stem": "What happens at the sprint review?",
+    "options": [
+      "The team signs the contract for the next phase with the customer",
+      "The Scrum Master reports team members' performance to their line managers each sprint",
+      "The team and stakeholders inspect the increment and discuss what to do next",
+      "The developers plan the tasks for the next sprint in hourly detail"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At the sprint review the Scrum team presents the results of its work to key stakeholders, and progress toward the product goal is discussed so the backlog can be adapted. Task planning happens at sprint planning."
+  },
+  {
+    "id": "CAPM-T2-035",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "You are offered a role leading a data migration, but you have never worked on one and the sponsor assumes you have. What does the PMI Code of Ethics expect you to do?",
+    "options": [
+      "Accept the role and assign all migration decisions to the most senior developer",
+      "Decline the role without explaining why so that you avoid any embarrassment",
+      "Accept the role and quietly learn about data migration as the work goes on",
+      "Tell the sponsor honestly about your experience before accepting the role"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under responsibility and honesty, practitioners accept only assignments consistent with their background, experience and skills, or are open about their gaps so others can decide. Hiding the gap or quietly delegating every decision misleads the sponsor."
+  },
+  {
+    "id": "CAPM-T2-036",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Executing planned strategies",
+    "stem": "The project manager posts monthly reports on the intranet so that stakeholders can read them whenever they choose. Which communication method is this?",
+    "options": [
+      "Formal verbal communication",
+      "Interactive communication",
+      "Push communication",
+      "Pull communication"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pull communication places information where recipients can access it at their own discretion, such as intranet sites or knowledge repositories. Push sends it directly to recipients, and interactive is a real-time exchange."
+  },
+  {
+    "id": "CAPM-T2-037",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "Which kind of schedule is most useful for briefing senior executives?",
+    "options": [
+      "A list of every activity with its float",
+      "A detailed network diagram",
+      "A milestone schedule",
+      "A daily task list for each team member"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Executives usually want key dates, so a milestone schedule that shows major events is the most useful summary. Detailed network diagrams and task lists are for the team doing the work."
+  },
+  {
+    "id": "CAPM-T2-038",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adaptive project controls",
+    "stem": "What does a burnup chart show that a burndown chart usually does not?",
+    "options": [
+      "The individual tasks each team member is working on today",
+      "The cost of each completed story compared with its original budget",
+      "The total scope as a separate line, so added work is visible",
+      "The names of the stakeholders who approved each feature"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A burnup chart plots completed work rising toward a separate total-scope line, so growth in scope shows up as that line rising. A burndown chart shows only remaining work, which can hide scope changes."
+  },
+  {
+    "id": "CAPM-T2-039",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "An analyst studies existing process manuals, contracts and regulations to find requirements. Which technique is this?",
+    "options": [
+      "Document analysis",
+      "Observation",
+      "Interviewing",
+      "A focus group"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Document analysis elicits requirements by reviewing existing documentation such as policies, procedures, contracts and regulations. Observation watches people work, and focus groups and interviews talk to people."
+  },
+  {
+    "id": "CAPM-T2-040",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Validating requirements",
+    "stem": "How does the sprint review help validate requirements?",
+    "options": [
+      "The Scrum Master confirms that every developer followed the agreed sprint plan",
+      "The sponsor signs a contract to accept the full product at the review",
+      "The team checks that the code meets the coding standards for the product",
+      "Stakeholders see the working increment and say whether it meets their needs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "At the sprint review stakeholders see and try the working increment, so they can confirm it meets their needs or ask for changes, which then go into the backlog. That feedback is validation in practice."
+  },
+  {
+    "id": "CAPM-T2-041",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "During a scope review, a stakeholder asks for a reporting feature that is not in the approved scope statement. What should the project manager do?",
+    "options": [
+      "Reject the request at once, since the approved scope can never be changed",
+      "Compare the request with the scope baseline and submit it through change control",
+      "Ask a developer to build the feature quietly in spare time at no extra cost",
+      "Add the feature right away, since keeping stakeholders happy is the project's main goal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scope changes are compared with the scope baseline and handled through the change control process so their impact on time, cost and risk is evaluated before a decision. Adding it directly or secretly is scope creep, and approved scope can change through the right process."
+  },
+  {
+    "id": "CAPM-T2-042",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Adaptive project controls",
+    "stem": "A release backlog holds 120 story points of work, and the team's velocity is 24 story points per sprint. How many sprints should the team plan for the release? Type the number only.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Number of sprints = remaining work / velocity = 120 / 24 = 5 sprints. Teams round up when the result is not a whole number."
+  },
+  {
+    "id": "CAPM-T2-043",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Executing planned strategies",
+    "stem": "What is the main purpose of a project kick-off meeting?",
+    "options": [
+      "To align the team and stakeholders on the project's goals, roles and approach",
+      "To approve the final deliverables and formally close the project with the client",
+      "To review the defects found in the last release and agree the fixes for them",
+      "To decide whether the organization should fund the project for the next year"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A kick-off meeting communicates the project's objectives, gains commitment, and explains roles and responsibilities at the start of the project or a phase. Acceptance and closure come at the end, and funding decisions come before."
+  },
+  {
+    "id": "CAPM-T2-044",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Predictive project controls",
+    "stem": "A project has an earned value (EV) of \\$25,000 and a planned value (PV) of \\$30,000. What is the schedule variance (SV)? Type the number only, with no commas or currency sign, and use a minus sign for a negative value.",
+    "numeric": {
+      "answers": [
+        "-5000"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "SV = EV - PV = 25,000 - 30,000 = -5,000. A negative schedule variance means less work has been completed than planned by this date."
+  },
+  {
+    "id": "CAPM-T2-045",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business analysis roles",
+    "stem": "Which model shows a system's boundary and the people and systems that interact with it?",
+    "options": [
+      "A burndown chart",
+      "A Gantt chart",
+      "A context diagram",
+      "A control chart"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A context diagram is a scope model that shows the system in the middle and the external actors and systems that send it inputs or receive its outputs. The other charts track schedule, remaining work or process stability."
+  },
+  {
+    "id": "CAPM-T2-046",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "What does a quality management plan describe?",
+    "options": [
+      "How the team will be rewarded for finishing the project ahead of the schedule",
+      "Which risks are most likely and which reserves will be set aside to cover them",
+      "Which suppliers will be hired for the work and the contract type that will be used for each",
+      "How quality policies and standards will be applied to the project and its deliverables"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The quality management plan describes how applicable policies, procedures and standards will be implemented to meet quality objectives. Suppliers belong in the procurement plan, rewards in the resource plan, and risks in risk planning."
+  },
+  {
+    "id": "CAPM-T2-047",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Validating requirements",
+    "stem": "What is a definition of ready?",
+    "options": [
+      "Criteria a backlog item must meet before the team starts work on it",
+      "Criteria the finished increment must meet before it can be released",
+      "The list of risks that must be closed before a project can begin",
+      "The date by which every team member must be available to the project"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A definition of ready, used by many agile teams, lists conditions such as clear acceptance criteria and an estimate that a backlog item must meet before it is pulled into a sprint. The definition of done applies to finished work."
+  },
+  {
+    "id": "CAPM-T2-048",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adaptive frameworks",
+    "stem": "What is the Scaled Agile Framework (SAFe) mainly used for?",
+    "options": [
+      "Coordinating many agile teams that work on the same large solution",
+      "Running a single small team without any events or roles at all",
+      "Managing large construction projects that have a fixed, upfront design",
+      "Replacing all agile practices with traditional phase gates"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAFe is a framework for applying agile and lean practices at enterprise scale, aligning many teams through events such as program increment (PI) planning. It is not meant for single teams without structure."
+  },
+  {
+    "id": "CAPM-T2-049",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Executing planned strategies",
+    "stem": "A new system costs \\$120,000 to build and is expected to save \\$30,000 a year. What is the payback period in years? Type the number only.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Payback period = initial investment / annual savings = 120,000 / 30,000 = 4 years. It is a simple benefit measurement used when selecting projects, although it ignores the time value of money."
+  },
+  {
+    "id": "CAPM-T2-050",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Predictive project controls",
+    "stem": "A project has an earned value (EV) of \\$50,000 and an actual cost (AC) of \\$40,000. What is the cost performance index (CPI)? Type the number only, to two decimal places.",
+    "numeric": {
+      "answers": [
+        "1.25"
+      ],
+      "tolerance": 0.005
+    },
+    "explanation": "CPI = EV / AC = 50,000 / 40,000 = 1.25. A CPI above 1.0 means the project is getting more value than it is spending, so it is under budget for the work done."
+  },
+  {
+    "id": "CAPM-T2-051",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "Which three baselines are part of the project management plan on a predictive project?",
+    "options": [
+      "Risk, quality and procurement",
+      "Team, stakeholder and communication",
+      "Scope, schedule and cost",
+      "Charter, business case and benefits"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The scope, schedule and cost baselines are the approved versions against which performance is measured; together they form the performance measurement baseline. The other items are plans or business documents, not baselines."
+  },
+  {
+    "id": "CAPM-T2-052",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholder communication",
+    "stem": "In a RACI chart, how many people should be Accountable for each activity?",
+    "options": [
+      "At least two",
+      "As many as are responsible",
+      "Everyone who is consulted",
+      "Exactly one"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A RACI chart shows who is Responsible, Accountable, Consulted and Informed. Each activity should have exactly one accountable person so ownership is clear; several people can be responsible, consulted or informed."
+  },
+  {
+    "id": "CAPM-T2-053",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Task management",
+    "stem": "What is the main purpose of a Kanban board?",
+    "options": [
+      "To record the project's approved budget changes",
+      "To make the flow of work visible across its stages",
+      "To rank team members by the work they complete",
+      "To store the signed contracts with each supplier"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Kanban board visualizes work items moving through workflow stages such as To do, In progress and Done, which helps the team spot bottlenecks and manage flow."
+  },
+  {
+    "id": "CAPM-T2-054",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Validating requirements",
+    "stem": "A report passes every test against its written specification, but the finance team says it does not help them close the month. What has gone wrong?",
+    "options": [
+      "The product was verified but not validated against the users' real need",
+      "The product was validated but not verified against the specification",
+      "The product met the need, so the finance team's view can safely be ignored",
+      "The product failed unit testing and should be rebuilt from the start"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Passing tests against the specification is verification. Not meeting the users' actual need is a validation failure, which usually points to missing or misunderstood requirements."
+  },
+  {
+    "id": "CAPM-T2-055",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Problem-solving tools",
+    "stem": "During a daily stand-up, two team members start a detailed debate about a technical problem. What is the best response?",
+    "options": [
+      "Ask them to continue the discussion right after the stand-up with those who are needed",
+      "Let the debate continue, since solving problems is the main purpose of the daily stand-up",
+      "Make a decision for them on the spot so the stand-up can move on to the next person",
+      "End the stand-up early and reschedule it for the following morning instead"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A stand-up is short and focused on progress, plans and blockers. Detailed problem-solving is taken offline right after with only the people needed. Deciding for the team removes their ownership."
+  },
+  {
+    "id": "CAPM-T2-056",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Predictive project controls",
+    "stem": "What does earned value (EV) measure?",
+    "options": [
+      "The amount of budget remaining for the work still to be completed",
+      "The money received from the customer for each finished deliverable",
+      "The profit the company expects to make once the project is finished",
+      "The budgeted value of the work that has actually been completed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "EV is the measure of work performed expressed in terms of the budget authorized for that work. It is not income, profit or remaining budget."
+  },
+  {
+    "id": "CAPM-T2-057",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "What is a resource breakdown structure?",
+    "options": [
+      "A chart of who reports to the sponsor in the organization",
+      "A list of deliverables broken into smaller work packages",
+      "A hierarchy of resources organized by category and type",
+      "A schedule that shows when each team member is on leave"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A resource breakdown structure lists the resources a project needs, organized by category (such as labor, equipment and materials) and type. Breaking deliverables into work packages is the WBS, and the reporting chart is an organizational breakdown structure."
+  },
+  {
+    "id": "CAPM-T2-058",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adaptive project controls",
+    "stem": "A team keeps a large, visible chart on the wall showing its current sprint progress, which anyone walking past can see. What is this called?",
+    "options": [
+      "A work package",
+      "A RACI chart",
+      "A risk breakdown structure",
+      "An information radiator"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An information radiator is a highly visible display, physical or electronic, that shares up-to-date information with the team and others without anyone having to ask. The other items are planning artifacts."
+  },
+  {
+    "id": "CAPM-T2-059",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Gathering requirements",
+    "stem": "Which two qualities make a requirement well written? Choose two.",
+    "select": 2,
+    "options": [
+      "It can be tested or verified",
+      "It is left open so that it can mean different things",
+      "It is unambiguous",
+      "It describes the detailed design of the solution",
+      "It uses as much technical jargon as possible"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Good requirements are clear and unambiguous, testable, complete, consistent and feasible. They state what is needed rather than prescribing the design, and they avoid jargon and vague wording that different people could read differently."
+  },
+  {
+    "id": "CAPM-T2-060",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Problem-solving tools",
+    "stem": "A team must choose a supplier by scoring each option against weighted criteria such as cost, quality and delivery time. Which technique are they using?",
+    "options": [
+      "Multicriteria decision analysis",
+      "Critical path method",
+      "Root cause analysis",
+      "Monte Carlo simulation of the outcomes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multicriteria decision analysis uses a decision matrix to evaluate options against several weighted criteria. Root cause analysis finds causes of problems, the critical path method analyzes schedules, and Monte Carlo simulation models uncertainty."
+  },
+  {
+    "id": "CAPM-T2-061",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Predictive project controls",
+    "stem": "Which three items make up the scope baseline?",
+    "options": [
+      "The charter, the business case and the risk register",
+      "The schedule, the budget and the quality management plan",
+      "The scope statement, the WBS and the WBS dictionary",
+      "The product backlog, the roadmap and the release plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The approved project scope statement, WBS and WBS dictionary together form the scope baseline, which can change only through formal change control."
+  },
+  {
+    "id": "CAPM-T2-062",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Project management planning",
+    "stem": "Which two items are commonly recorded for each entry in a risk register? Choose two.",
+    "select": 2,
+    "options": [
+      "The salary of each team member",
+      "The sponsor's home phone number",
+      "The planned risk response",
+      "The date the charter was signed",
+      "The risk owner"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Each risk entry typically records a description, owner, probability and impact, and the planned response, among other details. Salaries, charter dates and personal phone numbers do not belong in the risk register."
+  },
+  {
+    "id": "CAPM-T2-063",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Planning iterations",
+    "stem": "The INVEST criteria describe a good user story. Which two qualities are part of INVEST? Choose two.",
+    "select": 2,
+    "options": [
+      "Inexpensive",
+      "Testable",
+      "Immutable",
+      "Exhaustive",
+      "Independent"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "INVEST stands for Independent, Negotiable, Valuable, Estimable, Small and Testable. Stories should be negotiable, not immutable, and small rather than exhaustive; cost is not one of the criteria."
+  },
+  {
+    "id": "CAPM-T2-064",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Validating requirements",
+    "stem": "Classify each activity as verification or validation.",
+    "rows": [
+      "Users try the new booking screen to see if it helps them book faster",
+      "The team checks the screen against the documented requirements",
+      "A tester confirms each field rejects invalid dates as specified",
+      "Customers review a demo and confirm it solves their problem"
+    ],
+    "columns": [
+      "Verification",
+      "Validation"
+    ],
+    "correct": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "explanation": "Checking against documented requirements and specifications is verification. Having users or customers confirm the product meets their real needs is validation."
+  },
+  {
+    "id": "CAPM-T2-065",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholder communication",
+    "stem": "During an interview, the analyst summarizes what the stakeholder said and asks whether the summary is correct. Which skill is she using?",
+    "options": [
+      "Decomposition",
+      "Negotiation",
+      "Benchmarking",
+      "Active listening"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Active listening includes acknowledging, clarifying and confirming what was heard, for example by paraphrasing, to remove misunderstandings. Negotiation reaches agreement, decomposition breaks work down and benchmarking compares with others."
+  },
+  {
+    "id": "CAPM-T2-066",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Problem-solving tools",
+    "stem": "What is the first step in a structured problem-solving approach?",
+    "options": [
+      "Implement a solution at once",
+      "Assign blame for the problem",
+      "Define the problem clearly",
+      "Choose the cheapest fix"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Problem-solving starts by defining the problem, then identifying root causes, generating and choosing solutions, implementing, and checking that the solution worked. Jumping to a fix risks solving the wrong problem."
+  },
+  {
+    "id": "CAPM-T2-067",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Predictive project controls",
+    "stem": "A change request to add a feature has been approved by the change control board. What should happen next?",
+    "options": [
+      "Keep the current baselines unchanged so that performance can still be compared",
+      "Update the affected plans and baselines and record the decision in the change log",
+      "Ask the team to start the work and update the documents when the whole project ends",
+      "Send the change back to the sponsor so it can be approved for a second time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Once a change is approved, the project management plan, baselines and other documents it affects are updated, the change log records the decision, and the work is carried out. Leaving baselines unchanged would make performance measurement misleading."
+  },
+  {
+    "id": "CAPM-T2-068",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "At the end of a project phase, the steering committee reviews performance and decides whether the project should continue. What is this review called?",
+    "options": [
+      "A sprint retrospective",
+      "A daily stand-up",
+      "A team-building workshop",
+      "A phase gate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A phase gate (also called a stage gate or kill point) is held at the end of a phase to decide whether to continue to the next phase, continue with changes, or end the project. The other meetings do not make go or no-go decisions."
+  },
+  {
+    "id": "CAPM-T2-069",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Adaptive frameworks",
+    "stem": "Select the Scrum role that is accountable for each responsibility.",
+    "rows": [
+      "Removing impediments to the team's progress",
+      "Deciding how to turn backlog items into a working increment",
+      "Ordering the product backlog",
+      "Creating a usable increment each sprint"
+    ],
+    "columns": [
+      "Product owner",
+      "Scrum Master",
+      "Developers"
+    ],
+    "correct": [
+      1,
+      2,
+      0,
+      2
+    ],
+    "explanation": "The Scrum Master causes impediments to be removed. The developers decide how to turn backlog items into an increment and create that increment each sprint. The product owner orders the product backlog."
+  },
+  {
+    "id": "CAPM-T2-070",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Validating requirements",
+    "stem": "A stakeholder asks to change a requirement late in a predictive project. How does a traceability matrix help?",
+    "options": [
+      "It approves the change automatically when the requirement has a low priority",
+      "It records the stakeholder's name, which is enough to put the change in place",
+      "It removes the requirement from the baseline so that the change can be made quickly",
+      "It shows the related designs, deliverables and tests, so the impact can be assessed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Because the matrix links each requirement to its source, design elements, deliverables and tests, it supports impact analysis of a proposed change. The change is still decided through change control."
+  },
+  {
+    "id": "CAPM-T2-071",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "What does a use case describe?",
+    "options": [
+      "The test results recorded for each requirement in a release",
+      "The steps an actor and the system go through to achieve a goal",
+      "The business reasons the company has for funding the whole project",
+      "The order in which the team will build the product's features"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A use case describes how an actor, such as a user or another system, interacts with the system to reach a goal, including the main flow and alternatives. It is not a business case, test log or build plan."
+  },
+  {
+    "id": "CAPM-T2-072",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Problem-solving tools",
+    "stem": "After a brainstorming session produced 80 ideas, the team wants to sort them into natural groups. Which tool should they use?",
+    "options": [
+      "An affinity diagram",
+      "A project network diagram",
+      "A control chart",
+      "A burndown chart"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An affinity diagram organizes a large number of ideas into groups based on their natural relationships. Control charts monitor process stability, network diagrams show activity dependencies, and burndown charts show remaining work."
+  },
+  {
+    "id": "CAPM-T2-073",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Predictive project controls",
+    "stem": "A project has a CPI of 0.9 and an SPI of 1.1. Which two statements are true? Choose two.",
+    "select": 2,
+    "options": [
+      "The project is behind schedule",
+      "The project is over budget for the work done",
+      "The project is ahead of schedule",
+      "The project is under budget for the work done",
+      "The project has completed all of its planned work"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "A CPI below 1.0 means the work done has cost more than planned, so the project is over budget. An SPI above 1.0 means more work has been done than planned by now, so it is ahead of schedule. Neither index says the work is finished."
+  },
+  {
+    "id": "CAPM-T2-074",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Life cycles and processes",
+    "stem": "Classify each statement about a new restaurant opening.",
+    "rows": [
+      "The team expects the local council to approve signage without delay",
+      "The supplier may deliver the kitchen equipment two weeks late",
+      "The budget for the opening cannot exceed \\$250,000",
+      "The building permit was refused yesterday and work has stopped"
+    ],
+    "columns": [
+      "Risk",
+      "Issue",
+      "Constraint",
+      "Assumption"
+    ],
+    "correct": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "explanation": "A possible late delivery is a risk because it may or may not happen. A refused permit that has stopped work is an issue because it exists now. A budget ceiling is a constraint. An expectation that the council will approve, without proof, is an assumption."
+  },
+  {
+    "id": "CAPM-T2-075",
+    "section": "capm",
+    "test": 2,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Task management",
+    "stem": "On an agile team, how is work usually assigned during an iteration?",
+    "options": [
+      "The sponsor approves each task before it begins",
+      "Team members select, or pull, tasks themselves",
+      "The product owner assigns tasks to each developer",
+      "The project manager assigns each task in advance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Agile teams are self-managing: members pull tasks from the iteration backlog based on priority and capacity. The product owner decides what is most valuable, not who does each task."
+  },
+  {
+    "id": "CAPM-D-001",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "A finance department processes the payroll on the last day of every month. How is this work best classified?",
+    "options": [
+      "A project",
+      "A program",
+      "A portfolio",
+      "Operations"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Monthly payroll is ongoing, repetitive work, which is operations. A project is temporary and creates a unique result; programs and portfolios are groupings of projects and other work."
+  },
+  {
+    "id": "CAPM-D-002",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Executing planned strategies",
+    "stem": "After explaining a change to a stakeholder, the project manager asks her to summarize what she understood. Which part of the communication model is this?",
+    "options": [
+      "Encoding of the message by the person sending it",
+      "Feedback that confirms the message was understood",
+      "The medium that is used to transmit the message",
+      "Noise that interferes with the message being sent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In the sender-receiver model, the receiver decodes the message and the sender checks understanding through acknowledgment and feedback. Asking for a summary is a way to get that feedback."
+  },
+  {
+    "id": "CAPM-D-003",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "A team plans the next three months in detail but leaves later work at a high level until more is known. What is this technique called?",
+    "options": [
+      "Fast tracking",
+      "Crashing",
+      "Rolling wave planning",
+      "Resource smoothing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rolling wave planning is iterative planning in which near-term work is planned in detail and later work stays at a higher level until it gets closer. Fast tracking and crashing compress schedules, and smoothing adjusts resources within float."
+  },
+  {
+    "id": "CAPM-D-004",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "When to use an adaptive approach",
+    "stem": "A start-up wants to learn whether restaurants will pay for its booking app before building the full product. It releases a simple version with only the booking feature to a few restaurants. What is this version called?",
+    "options": [
+      "An information radiator",
+      "A definition of done",
+      "A minimum viable product",
+      "A work breakdown structure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A minimum viable product has just enough features to be used by real customers, so the team can test its assumptions and learn what to build next. The other terms are a scope breakdown, a quality standard for increments and a visible progress display."
+  },
+  {
+    "id": "CAPM-D-005",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Business analysis roles",
+    "stem": "What should a business analyst usually do first when a new initiative is proposed?",
+    "options": [
+      "Choose the software product the company should purchase",
+      "Understand the business problem or opportunity behind it",
+      "Write the detailed test cases for the planned solution",
+      "Set the release dates for every feature in the solution"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Business analysis starts by understanding the need: the problem to solve or opportunity to pursue. Choosing products, writing tests and setting dates come after the need and requirements are understood."
+  },
+  {
+    "id": "CAPM-D-006",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product roadmaps",
+    "stem": "A roadmap is organized into three columns: Now, Next and Later. What is the main advantage of this format?",
+    "options": [
+      "It lists every task with its exact start and finish date in the plan",
+      "It shows which team member is assigned to each of the features",
+      "It replaces the product backlog, so no backlog needs to be kept",
+      "It shows priorities without committing to exact dates far in the future"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A Now, Next, Later roadmap shows the order of priorities and the level of certainty without promising precise dates for later work, which keeps it flexible. It does not replace detailed planning or the backlog."
+  },
+  {
+    "id": "CAPM-D-007",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "Which term describes the series of phases a project passes through from its start to its completion?",
+    "options": [
+      "Project life cycle",
+      "Work breakdown structure",
+      "Product life cycle",
+      "Performance measurement baseline"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The project life cycle is the series of phases a project passes through from start to completion. The product life cycle covers a product from concept through retirement and usually spans many projects."
+  },
+  {
+    "id": "CAPM-D-008",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "Two senior engineers disagree about a design. The project manager brings them together to explore both views and find a solution that meets both concerns. Which conflict resolution technique is this?",
+    "options": [
+      "Smoothing, also called accommodating",
+      "Withdrawing, also called avoiding",
+      "Forcing, also called directing",
+      "Collaborating, also called problem solving"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Collaborating incorporates multiple viewpoints to reach consensus and commitment, which often leads to a lasting win-win result. Forcing imposes one view, smoothing plays down differences, and withdrawing leaves the conflict unresolved."
+  },
+  {
+    "id": "CAPM-D-009",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "What can happen when a schedule is resource leveled?",
+    "options": [
+      "The project's end date always moves earlier because resources are freed",
+      "The cost baseline is removed so that resources can be used as needed",
+      "The project's end date may move later and the critical path may change",
+      "The scope of the project is reduced to match the available resources"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Resource leveling adjusts start and finish dates to balance demand with supply, which can extend the schedule and change the critical path. It does not cut scope or remove baselines."
+  },
+  {
+    "id": "CAPM-D-010",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning iterations",
+    "stem": "A team does not know enough about a new technology to estimate a story. It sets aside a short, timeboxed piece of work to research it. What is this called?",
+    "options": [
+      "A sprint review",
+      "A release",
+      "A burnup",
+      "A spike"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A spike is a short, timeboxed piece of research or experimentation used to reduce uncertainty so a story can be estimated or designed. It is not an event, a release or a chart."
+  },
+  {
+    "id": "CAPM-D-011",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business analysis roles",
+    "stem": "What does a requirements management plan describe?",
+    "options": [
+      "The list of final requirements that the customer has approved so far",
+      "How requirements will be analyzed, documented, prioritized and managed",
+      "How the company will market the product once it has been released",
+      "Which developer will build each requirement and in what order of work"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The requirements management plan describes how requirements will be analyzed, documented and managed, including prioritization, configuration management and traceability. The approved list itself is the requirements documentation."
+  },
+  {
+    "id": "CAPM-D-012",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product roadmaps",
+    "stem": "What is the purpose of release planning on an adaptive project?",
+    "options": [
+      "To decide which features will go into an upcoming release and roughly when",
+      "To decide the hourly tasks each developer will do on each day of the sprint",
+      "To assign blame for features that were not delivered in the last release",
+      "To approve the budget for the whole product for the next five years"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Release planning looks ahead several iterations to forecast which features or stories will be in a release and when, using velocity and priorities. Daily tasks are planned within sprints."
+  },
+  {
+    "id": "CAPM-D-013",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles and processes",
+    "stem": "A team member asks you not to mention a known defect in the status report so the release date is not questioned. What should you do?",
+    "options": [
+      "Move the release date quietly without saying why it has been changed",
+      "Mention the defect only to the team, since stakeholders do not need detail",
+      "Leave the defect out of the report, since the team plans to fix it soon",
+      "Report the defect accurately and discuss the effect on the release date"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The honesty standard asks practitioners to provide accurate and timely information. Hiding a known defect, even with good intentions, misleads stakeholders who rely on the report to make decisions."
+  },
+  {
+    "id": "CAPM-D-014",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Roles and responsibilities",
+    "stem": "Which type of PMO directly manages and controls projects?",
+    "options": [
+      "Supportive",
+      "Consultative",
+      "Directive",
+      "Controlling"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A directive PMO takes control of projects by directly managing them, so its degree of control is high. A supportive PMO provides templates and lessons, and a controlling PMO requires compliance with frameworks and tools. Consultative is not one of the three PMO types PMI describes."
+  },
+  {
+    "id": "CAPM-D-015",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project schedule",
+    "stem": "In a start-to-start relationship between activities A and B, what is true?",
+    "options": [
+      "B cannot finish until A has finished",
+      "B cannot start until A has started",
+      "B cannot start until A has finished",
+      "A cannot finish until B has started"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Start-to-start means the successor cannot start until the predecessor has started, for example leveling concrete cannot start until pouring has started. The other options describe finish-to-start, finish-to-finish and start-to-finish."
+  },
+  {
+    "id": "CAPM-D-016",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Task management",
+    "stem": "In Kanban, what does cycle time measure?",
+    "options": [
+      "The time from when work starts on an item until it is done",
+      "The length of each sprint, agreed when the project starts",
+      "The number of items the team completes in each sprint",
+      "The time from when an item is requested until a sprint ends"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cycle time measures how long an item takes from the start of work to completion. Lead time runs from the request to delivery, throughput counts items completed, and Kanban does not require sprints."
+  },
+  {
+    "id": "CAPM-D-017",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "An analyst compares the company's checkout process with the processes of industry leaders to find ideas for improvement. Which technique is this?",
+    "options": [
+      "Prototyping",
+      "Decomposition",
+      "Benchmarking",
+      "Interviewing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Benchmarking compares practices, processes or products with those of comparable organizations to find best practices and ideas for improvement. Prototyping builds a model, decomposition breaks work down and interviewing questions individuals."
+  },
+  {
+    "id": "CAPM-D-018",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Methodology and business analysis",
+    "stem": "What does a gap analysis compare?",
+    "options": [
+      "The planned budget with the actual budget spent",
+      "The current state with the desired future state",
+      "Planned value with earned value on the schedule",
+      "Two vendors' prices for the same product"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gap analysis compares the current state of a process, capability or product with the desired future state to identify what must change. Budget and earned value comparisons are cost and schedule controls."
+  },
+  {
+    "id": "CAPM-D-019",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "At the end of a project, where should its lessons learned be placed so that future projects can use them?",
+    "options": [
+      "In the risk register of the next project the team starts",
+      "In the organization's lessons learned repository",
+      "In the project charter, before it is archived with the records",
+      "In the team's sprint backlog for the following sprint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At closing, the project's lessons learned register is transferred to the organization's lessons learned repository, an organizational process asset that future projects draw on. The charter, a later project's risk register and a sprint backlog are not where an organization keeps its knowledge."
+  },
+  {
+    "id": "CAPM-D-020",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Problem-solving tools",
+    "stem": "What does the Pareto principle, often called the 80/20 rule, suggest?",
+    "options": [
+      "A small number of causes often produce most of the problems",
+      "Teams should spend 80 percent of their time planning work",
+      "Most projects finish with about 80 percent of their scope",
+      "About 20 percent of risks are positive opportunities"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Pareto principle states that a relatively small number of causes typically produce most of the problems or defects, so effort should focus on those vital few. The other statements are not what the principle says."
+  },
+  {
+    "id": "CAPM-D-021",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Predictive project controls",
+    "stem": "What is the performance measurement baseline?",
+    "options": [
+      "The quality metrics agreed with the customer for each of the deliverables",
+      "The list of key performance indicators set for each team member's review",
+      "The benchmark of other companies' results used to set project targets",
+      "The integrated scope, schedule and cost baselines used to measure performance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The performance measurement baseline integrates the scope, schedule and cost baselines and is used to compare actual performance, for example in earned value management."
+  },
+  {
+    "id": "CAPM-D-022",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "When to use an adaptive approach",
+    "stem": "What is the difference between iterative and incremental development?",
+    "options": [
+      "Iterative releases the product once at the end; incremental never releases it at all",
+      "Iterative requires a fixed contract; incremental requires the work to have no budget",
+      "Iterative is used only for hardware; incremental is used only for software projects",
+      "Iterative refines the product through repeated cycles; incremental adds usable pieces"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Iterative development improves the product through repeated cycles of feedback and refinement, while incremental development delivers the product in usable additions. Many agile approaches combine both."
+  },
+  {
+    "id": "CAPM-D-023",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholder communication",
+    "stem": "An analyst describes a fictional user, \"Maria, a 34-year-old nurse who orders supplies on night shifts\", to help the team understand users. What is this called?",
+    "options": [
+      "A persona",
+      "A user story map",
+      "A stakeholder register",
+      "A use case"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A persona is a fictional character that represents a group of real users, with goals and behaviors, to help the team keep users in mind. A use case describes interaction steps, a story map arranges stories, and the register lists real stakeholders."
+  },
+  {
+    "id": "CAPM-D-024",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Validating requirements",
+    "stem": "An acceptance criterion reads: \"Given a customer has items in the basket, when they apply a valid code, then the total is reduced.\" What style is this?",
+    "options": [
+      "INVEST, a checklist for writing user stories",
+      "Given, when, then, from behavior-driven development",
+      "RACI, a chart of roles and responsibilities",
+      "MoSCoW, a technique for prioritizing requirements"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The given, when, then format comes from behavior-driven development. It states the starting context, the action and the expected outcome, which makes acceptance criteria easy to test."
+  },
+  {
+    "id": "CAPM-D-025",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmLifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project management planning",
+    "stem": "Which activity belongs to closing a project or phase?",
+    "options": [
+      "Estimating the duration of each planned activity",
+      "Creating the work breakdown structure for the work",
+      "Identifying stakeholders and issuing the charter",
+      "Archiving project records and releasing resources"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Closing includes obtaining acceptance, transferring the product, archiving records, capturing final lessons and releasing team members and other resources. The WBS and estimates belong to planning; stakeholder identification and the charter belong to initiating."
+  },
+  {
+    "id": "CAPM-D-026",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmRoles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Problem-solving tools",
+    "stem": "Which technique gathers opinions from experts anonymously in several rounds to reach consensus?",
+    "options": [
+      "Nominal group technique",
+      "A focus group",
+      "The Delphi technique",
+      "A facilitated workshop"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Delphi technique uses anonymous, repeated rounds of expert input with a facilitator summarizing results, which reduces bias and undue influence. Focus groups, nominal group technique and workshops are face-to-face and not anonymous."
+  },
+  {
+    "id": "CAPM-D-027",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmPredictive",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Predictive project controls",
+    "stem": "A project has an earned value (EV) of \\$36,000 and a planned value (PV) of \\$40,000. What is the schedule performance index (SPI)? Type the number only, to one decimal place.",
+    "numeric": {
+      "answers": [
+        "0.9"
+      ],
+      "tolerance": 0.005
+    },
+    "explanation": "SPI = EV / PV = 36,000 / 40,000 = 0.9. The project has completed 90 percent of the work it planned to have done by now, so it is behind schedule."
+  },
+  {
+    "id": "CAPM-D-028",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmAgile",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Planning iterations",
+    "stem": "Partway through a sprint, the company cancels the product the sprint goal was meant to support. In Scrum, who has the authority to cancel the sprint?",
+    "options": [
+      "The product owner",
+      "Any of the developers",
+      "The team's line manager",
+      "The Scrum Master"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A sprint can be cancelled if its goal becomes obsolete, and only the product owner has the authority to cancel it. The Scrum Master and developers do not, and line managers are outside the Scrum team."
+  },
+  {
+    "id": "CAPM-D-029",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmBaRequirements",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gathering requirements",
+    "stem": "After a workshop, what should the analyst do with the notes on what stakeholders said?",
+    "options": [
+      "Remove any points that disagree with what the sponsor said before",
+      "Confirm them with the stakeholders to check they are accurate and complete",
+      "Send them straight to the developers so they can start building at once",
+      "File them away, since anything that was said in the room is already agreed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Elicitation results should be confirmed with stakeholders to make sure they were understood correctly before they are analyzed and used. Skipping confirmation risks building on misunderstandings."
+  },
+  {
+    "id": "CAPM-D-030",
+    "section": "capm",
+    "test": 0,
+    "module": 1,
+    "domain": "capmBaDelivery",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Methodology and business analysis",
+    "stem": "After the requirements on a predictive project have been baselined, a stakeholder wants to change one. What should happen?",
+    "options": [
+      "The analyst edits the document directly and tells no one",
+      "The change goes through the project's change control process",
+      "The request is refused, since baselines can never change",
+      "The team builds both versions and lets the users choose"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Baselined requirements can change, but only through change control so the impact on scope, schedule, cost and risk is assessed before a decision. Unrecorded edits and building both versions are poor practice."
+  }
+]

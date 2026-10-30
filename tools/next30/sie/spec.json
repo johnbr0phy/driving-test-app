@@ -1,0 +1,33 @@
+{
+  "id": "sie",
+  "stateCode": "SIE",
+  "idBase": 11400,
+  "prefix": "SIE-",
+  "slug": "/sie",
+  "landingPath": "/sie-exam-practice-test",
+  "dataFile": "data/sie-questions.json",
+  "name": "SIE Exam Practice Test",
+  "shortName": "SIE",
+  "examLabel": "SIE exam",
+  "fullName": "FINRA Securities Industry Essentials (SIE) exam",
+  "icon": "building",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "sieMarkets", "label": "Knowledge of Capital Markets", "perTest": 8, "pool": 32, "segment": "MKT"},
+    {"key": "sieEquityDebt", "label": "Equity & Debt Securities", "perTest": 11, "pool": 44, "segment": "EQD"},
+    {"key": "sieFunds", "label": "Funds, Options & Investment Risk", "perTest": 11, "pool": 44, "segment": "FND"},
+    {"key": "sieTrading", "label": "Trading & Settlement", "perTest": 8, "pool": 32, "segment": "TRD"},
+    {"key": "sieAccounts", "label": "Customer Accounts & Prohibited Activities", "perTest": 8, "pool": 32, "segment": "ACT"},
+    {"key": "sieRegulation", "label": "Regulatory Framework", "perTest": 4, "pool": 16, "segment": "REG"}
+  ],
+  "notes": "Per-test counts scale FINRA's 12/33/23/7 of 75 to 50: section 1 = 8, section 2 = 22 (11 + 11), section 3 = 16 (8 + 8), section 4 = 4.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 11401, "name": "Capital Markets", "categories": ["sieMarkets"], "size": 32},
+    {"setNumber": 2, "id": 11402, "name": "Equity & Debt Securities", "categories": ["sieEquityDebt"], "size": 44},
+    {"setNumber": 3, "id": 11403, "name": "Funds, Options & Risk", "categories": ["sieFunds"], "size": 44},
+    {"setNumber": 4, "id": 11404, "name": "Trading & Settlement", "categories": ["sieTrading"], "size": 32},
+    {"setNumber": 5, "id": 11405, "name": "Accounts, Conduct & Regulation", "categories": ["sieAccounts", "sieRegulation"], "size": 48}
+  ]
+}

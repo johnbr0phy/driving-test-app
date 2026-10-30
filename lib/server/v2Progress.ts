@@ -10,6 +10,9 @@ import '@/lib/v2/banks/asvab';
 import '@/lib/v2/banks/hesi';
 import '@/lib/v2/banks/sat';
 import '@/lib/v2/banks/teas';
+import '@/lib/v2/banks/praxis';
+import '@/lib/v2/banks/psat';
+import '@/lib/v2/banks/rrbntpc';
 
 // How far students get through the v2 exams that have Basics (SAT, ACT,
 // TEAS, HESI, ASVAB, ACCUPLACER), for the "Basics" card on the /admin Growth

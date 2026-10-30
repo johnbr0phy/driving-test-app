@@ -1,0 +1,623 @@
+[
+ {
+  "id": "PSAT-RW-101",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "African elephants can communicate across several kilometers using deep rumbles, many of them too low for human ears to hear. These calls ______ information about which elephant is calling and how it is feeling, allowing family members that are far apart to find one another.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "postpone",
+   "conceal",
+   "exaggerate",
+   "convey"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The rumbles let distant family members find one another, so they must carry, or convey, the information. Calls that concealed or exaggerated the information would not help the elephants find each other, and nothing in the text is delayed."
+ },
+ {
+  "id": "PSAT-RW-102",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "Visitors to the new public library often remark on how ______ its design is. Architect Lina Okoye positioned every reading room to receive daylight, yet she angled the windows so that no shelf is ever struck by direct sunlight, which would fade the book spines.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "extravagant",
+   "improvised",
+   "temporary",
+   "meticulous"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "Planning daylight for every room while making sure no shelf gets direct sun shows careful attention to detail, which is what meticulous means. Improvised suggests the opposite of planning, and nothing in the text points to excess cost or a short life."
+ },
+ {
+  "id": "PSAT-RW-103",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "When the novel first appeared, several critics dismissed its spare, simple sentences as ______, the work of a writer who had not bothered to revise. Later readers came to see that plainness as a deliberate choice, one that lets the story's quiet moments carry great weight.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "nostalgic",
+   "persuasive",
+   "ornate",
+   "careless"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The critics thought the writer had not bothered to revise, so they saw the sentences as careless. Ornate means elaborate, the opposite of spare and simple, and the critics' complaint has nothing to do with persuasion or longing for the past."
+ },
+ {
+  "id": "PSAT-RW-104",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Tardigrades, tiny animals less than a millimeter long, can survive being completely dried out for years. In this dormant state their metabolism becomes nearly ______, slowing to a tiny fraction of its normal rate, and resumes only when the animal absorbs water again.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "accelerated",
+   "undetectable",
+   "inherited",
+   "unpredictable"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "A metabolism slowed to a tiny fraction of its normal rate is so low that it can barely be measured, which fits undetectable. Accelerated is the reverse of slowing, and the text describes a steady shutdown rather than an unpredictable or inherited trait."
+ },
+ {
+  "id": "PSAT-RW-105",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "craftStructure",
+  "skill": "Text structure and purpose",
+  "basics": "textStructure",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "For decades, historians assumed that people in inland medieval European villages ate little sea fish, since fresh fish would spoil long before it arrived. A team led by archaeologist Ruth Adeyemi analyzed food residues in cooking pots from inland sites and found traces of marine fish oils in nearly a third of them. The finding suggests that preserved fish, salted or dried, traveled along trade routes much farther from the coast than scholars had believed.",
+  "stem": "Which choice best describes the overall structure of the text?",
+  "options": [
+   "It describes a long-held assumption, presents research that challenges it, and explains what the research suggests.",
+   "It presents a finding about medieval trade, raises doubts about how the finding was obtained, and calls for more research.",
+   "It describes the diet of inland villages, lists the foods they ate most often, and explains why fish was not among them.",
+   "It explains how medieval fish was preserved, compares several methods, and argues that one method was the most effective."
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The text opens with what historians assumed, reports Adeyemi's residue findings that cut against that assumption, and ends with what the findings suggest about trade. It never compares preservation methods or questions the team's methods, and it shows that fish was eaten inland."
+ },
+ {
+  "id": "PSAT-RW-106",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "craftStructure",
+  "skill": "Text structure and purpose",
+  "basics": "authorPurpose",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "Many people picture a glacier as a block of ice frozen in place, but glaciers flow. Under its own enormous weight, the ice deep inside a glacier slowly deforms, much like very thick syrup, and meltwater at the base can let the whole mass slide over the rock below. Some fast-moving glaciers in Greenland travel tens of meters in a single day.",
+  "stem": "Which choice best states the main purpose of the text?",
+  "options": [
+   "To correct a common belief by explaining how glaciers move",
+   "To compare the flow of glacier ice with the flow of liquid water",
+   "To describe how scientists measure the speed of a moving glacier",
+   "To argue that glaciers in Greenland are melting faster than expected"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The text begins with the belief that glaciers are frozen in place and then explains the two ways they move, deforming and sliding. Greenland appears only as an example of speed, the syrup comparison is a brief image, and the text never explains measurement."
+ },
+ {
+  "id": "PSAT-RW-107",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "craftStructure",
+  "skill": "Cross-text connections",
+  "basics": "crossText",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "**Text 1**\n\nRestoring a damaged stream does not have to be expensive. Ecologist Mara Lindqvist points out that beavers, once reintroduced, build dams that slow the water, spread it across the floodplain, and raise the water table, bringing back wetland plants within a few years. Letting beavers do the work, she argues, costs a fraction of what engineered restoration does.\n\n**Text 2**\n\nBeaver dams can transform a stream, but only where beavers can hold a dam in place. Hydrologist Kofi Mensah has found that in streams that have eroded into deep, narrow channels, fast water washes out new dams before they can trap sediment. In such streams, his team first installs simple wooden posts woven with branches, which give beavers a stable starting point.",
+  "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+  "options": [
+   "By questioning whether beaver dams actually raise the water table, since fast water in deep channels washes the dams away",
+   "By agreeing that beavers can restore streams while noting that some badly eroded streams need human help before beavers can succeed",
+   "By claiming that beavers should be reintroduced only to streams that have already been restored by engineers",
+   "By arguing that engineered restoration is cheaper than reintroducing beavers once the cost of building wooden structures is included"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Mensah accepts that beaver dams can transform a stream but shows that deeply eroded streams first need simple human-built supports. He never compares total costs, never doubts that working dams raise the water table, and does not require full engineered restoration first."
+ },
+ {
+  "id": "PSAT-RW-108",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "toneWords",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "The review panel's report on the city's after-school tutoring program was notably ______. It stated the program's weaknesses plainly, including uneven attendance and a shortage of trained tutors, but it stopped short of recommending that the program end, observing that its long-term benefits had not yet been studied.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "evasive",
+   "celebratory",
+   "scathing",
+   "measured"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The report names the problems plainly but holds back from a harsh conclusion because the evidence is incomplete, which is a measured, or restrained, tone. Scathing would mean harshly critical, evasive conflicts with stating weaknesses plainly, and the report does not praise the program."
+ },
+ {
+  "id": "PSAT-RW-109",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "infoIdeas",
+  "skill": "Central ideas and details",
+  "basics": "mainIdea",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "In parts of Mozambique, honey hunters follow a small bird called the greater honeyguide to the nests of wild bees. The bird eats beeswax but cannot easily break into a nest on its own, so it chatters and flits from tree to tree, leading the hunters to one. After the people open the nest and take the honey, they leave the wax behind for the bird.",
+  "stem": "Which choice best states the main idea of the text?",
+  "options": [
+   "Honey hunters in Mozambique have trained honeyguides to eat beeswax.",
+   "Wild bees build their nests in trees to keep them away from people.",
+   "Honey hunters and honeyguide birds work together in a way that benefits both.",
+   "Honeyguide birds can open bees' nests more easily than people can."
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "The bird leads people to nests it cannot open, and the people leave it the wax after taking the honey, so each side gains something. The text says the bird cannot easily open nests, never says people trained it, and does not explain where bees build nests."
+ },
+ {
+  "id": "PSAT-RW-110",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "infoIdeas",
+  "skill": "Central ideas and details",
+  "basics": "findingDetail",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "In 2019 the public library in the small town of Alder Falls began lending more than books. After a survey showed that many residents needed tools such as ladders, drills, and pressure washers only once or twice a year, the library created a \"library of things.\" Residents can now borrow a tool with their library card instead of buying one.",
+  "stem": "According to the text, what led the library to start lending tools?",
+  "options": [
+   "Hardware stores in Alder Falls had closed and residents had nowhere to buy tools.",
+   "A survey found that many residents needed certain tools only occasionally.",
+   "The library wanted to raise money by charging fees to rent tools.",
+   "Residents complained that the library's book collection was too small."
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "The text says the library created the collection after a survey showed residents needed tools only once or twice a year. It mentions no store closures, no complaints about books, and residents borrow the tools with a library card rather than paying a fee."
+ },
+ {
+  "id": "PSAT-RW-111",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "infoIdeas",
+  "skill": "Command of evidence (textual)",
+  "basics": "claimSupport",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Botanist Ines Varga studies how plants respond to pests. She hypothesizes that bean plants attacked by spider mites release airborne chemicals that attract predatory mites, which feed on spider mites.",
+  "stem": "Which finding, if true, would most directly support Varga's hypothesis?",
+  "options": [
+   "Given a choice between air drawn from spider-mite-infested bean plants and air drawn from uninfested bean plants, predatory mites moved toward the air from infested plants far more often.",
+   "Bean plants attacked by spider mites produced fewer new leaves over a month than bean plants that were never attacked.",
+   "Spider mites given a choice of bean leaves laid more eggs on young leaves than on older leaves of the same plant.",
+   "Predatory mites placed directly on infested bean plants ate spider mites faster in warm rooms than in cool ones."
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The hypothesis is that something in the air from attacked plants draws predatory mites, so the best support shows predatory mites choosing air from infested plants over air from uninfested ones. Lost leaves, the effect of temperature on feeding and egg-laying preferences say nothing about an airborne signal that attracts predators."
+ },
+ {
+  "id": "PSAT-RW-112",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "infoIdeas",
+  "skill": "Command of evidence (quantitative)",
+  "basics": "readingTable",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "For a science project, a student placed identical ice cubes on plates made of four different materials in the same room and recorded how long each cube took to melt completely. The student predicted that the ice would melt fastest on aluminum, the material in the experiment that conducts heat best.\n\n| Plate material | Time to melt completely (minutes) |\n|---|---|\n| Aluminum | 6 |\n| Glass | 12 |\n| Ceramic | 14 |\n| Plastic | 21 |\n\nThe results support the student's prediction, since ______",
+  "stem": "Which choice most effectively uses data from the table to complete the statement?",
+  "options": [
+   "the ice cube on the aluminum plate melted completely in 6 minutes, sooner than the cube on any other plate.",
+   "the ice cubes on the glass and ceramic plates melted within 2 minutes of each other, at 12 and 14 minutes.",
+   "the ice cube on the plastic plate took 21 minutes to melt, longer than the cube on any of the other three plates.",
+   "the ice cube on the aluminum plate took 14 minutes to melt, which was faster than the cube on the plastic plate."
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The prediction is that aluminum gives the fastest melting, and the table shows 6 minutes for aluminum, the shortest time of all. The plastic and glass-versus-ceramic results are accurate but do not address aluminum, and aluminum's time was 6 minutes, not 14."
+ },
+ {
+  "id": "PSAT-RW-113",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "infoIdeas",
+  "skill": "Inferences",
+  "basics": "inference",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Archaeologists excavating a cave in a dry mountain region found well-preserved seeds of a squash plant in layers dated to about 9,000 years ago. Wild relatives of this squash grow only in humid lowlands more than 300 kilometers away, and the seeds are too large and heavy to be carried that far by wind or birds. These observations suggest that ______",
+  "stem": "Which choice most logically completes the text?",
+  "options": [
+   "squash plants once grew wild inside the cave itself.",
+   "people brought the squash seeds to the cave from the distant lowlands.",
+   "birds in the region once fed mainly on squash seeds.",
+   "the mountain region was humid lowland about 9,000 years ago."
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "The squash grows wild only far away, and its seeds are too heavy for wind or birds to carry that distance, which leaves human transport as the likely explanation. The text gives no evidence that a mountain region was once lowland, and a dark cave is not a place where squash grows."
+ },
+ {
+  "id": "PSAT-RW-114",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "infoIdeas",
+  "skill": "Central ideas and details",
+  "basics": "inference",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "The following text is from a story. Mira, a high school student, has just moved to a new city.\n\nMira unpacked her books slowly, setting each one on the empty shelf as if it might tell her where she was. Through the window she could hear buses she did not know the routes of and voices calling names she did not recognize. She missed the creek behind her old house. Still, when a girl on the sidewalk below looked up and waved, Mira found herself waving back before she had decided to.",
+  "stem": "Which choice best describes Mira's feelings as presented in the text?",
+  "options": [
+   "She is excited to explore the new city and has already forgotten her old home.",
+   "She is so unhappy in the new city that she refuses to unpack or speak to anyone.",
+   "She misses her old home but is beginning, almost without meaning to, to respond to her new one.",
+   "She is annoyed by the noise of the city and wishes she lived somewhere quieter."
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Mira feels unsettled and misses the creek, yet she waves back at the girl \"before she had decided to,\" a first unplanned connection. She is unpacking, so she does not refuse, she clearly has not forgotten home, and the sounds are unfamiliar rather than annoying."
+ },
+ {
+  "id": "PSAT-RW-115",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "infoIdeas",
+  "skill": "Command of evidence (quantitative)",
+  "basics": "readingTable",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "A city transportation office counted bike-share trips that began at four stations during one week in June. Two stations are next to large parks. An analyst claims that weekend use of the bike-share system is driven by recreational riders heading to parks.\n\n| Station | Next to a park? | Weekday trips | Weekend trips |\n|---|---|---|---|\n| Riverside | Yes | 210 | 340 |\n| Central | No | 520 | 180 |\n| Hill Street | No | 300 | 150 |\n| Lakeview | Yes | 160 | 290 |\n\nThe data in the table support the analyst's claim, since ______",
+  "stem": "Which choice most effectively uses data from the table to complete the statement?",
+  "options": [
+   "Central station recorded 520 weekday trips, more trips than any station recorded on weekdays or on weekends that week.",
+   "the two stations next to parks recorded more weekend trips than weekday trips, while the two other stations recorded fewer.",
+   "the four stations together recorded more weekday trips than weekend trips, which shows the system is mainly used for commuting.",
+   "Lakeview station recorded the fewest weekday trips of the four stations, with only 160 trips during the five weekdays."
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "The claim links weekend riding to parks, so the useful pattern is that only the park stations, Riverside and Lakeview, had more weekend than weekday trips. Central's and Lakeview's weekday totals say nothing about weekends near parks, and the overall weekday total argues about commuting rather than supporting the claim."
+ },
+ {
+  "id": "PSAT-RW-116",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "conventions",
+  "skill": "Boundaries",
+  "basics": "semicolons",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "Many of the monuments in the ancient city of Petra, in present-day Jordan, were carved directly into the sandstone ______ some of them have survived for about two thousand years.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "cliffs, which",
+   "cliffs",
+   "cliffs;",
+   "cliffs,"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Both parts are complete sentences, so they need a semicolon between them. A comma alone creates a comma splice, no punctuation creates a run-on, and \"which\" leaves \"some of them have survived\" without a place in the sentence."
+ },
+ {
+  "id": "PSAT-RW-117",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "subjectVerb",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "In 2015 a box of letters exchanged by two sisters during the 1920s ______ discovered in the attic of a farmhouse in Iowa.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "was",
+   "are being",
+   "have been",
+   "were"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The subject is the singular \"box,\" not \"letters\" or \"sisters,\" which belong to modifying phrases, so the verb must be singular. \"In 2015\" also calls for the simple past, which rules out \"are being.\""
+ },
+ {
+  "id": "PSAT-RW-118",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "apostrophes",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "The two neighboring ______ libraries now share a single online catalog, so a reader in one town can request books from the other.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "town's",
+   "towns's",
+   "towns",
+   "towns'"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The libraries belong to two towns, so the plural possessive \"towns'\" is needed. \"Town's\" refers to only one town, \"towns\" is a plain plural with no possession, and \"towns's\" is not a standard form."
+ },
+ {
+  "id": "PSAT-RW-119",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "verbTense",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "When the Golden Gate Bridge opened to traffic in 1937, construction crews ______ on the project for more than four years, often in fierce winds and thick fog.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "work",
+   "will have worked",
+   "are working",
+   "had worked"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The work came before another past event, the 1937 opening, so the past perfect \"had worked\" is needed. The present and future forms do not fit an event completed in 1937."
+ },
+ {
+  "id": "PSAT-RW-120",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "pronounCase",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "The first handheld mobile phones of the 1980s weighed nearly a kilogram, and ______ batteries could power only around thirty minutes of conversation before needing a recharge.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "its",
+   "they're",
+   "there",
+   "their"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The pronoun refers to the plural \"phones\" and shows possession, so \"their\" is correct. \"Its\" is singular, \"they're\" means \"they are,\" and \"there\" refers to a place."
+ },
+ {
+  "id": "PSAT-RW-121",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "conventions",
+  "skill": "Boundaries",
+  "basics": "colons",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "The ecologists needed only three tools for their survey of the meadow's ______ a tape measure, a field guide, and a notebook.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "wildflowers:",
+   "wildflowers;",
+   "wildflowers",
+   "wildflowers, and"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A colon correctly introduces a list after a complete sentence. A semicolon must join two complete sentences, \", and\" would need another clause after it, and no punctuation runs the list into the sentence without a break."
+ },
+ {
+  "id": "PSAT-RW-122",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "danglingModifiers",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "Having studied the night sky from her backyard for more than twenty years, ______",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "it was amateur astronomer Rosa Delgado who recognized the faint smudge near Orion as a comet no one had reported.",
+   "a comet no one had reported was what amateur astronomer Rosa Delgado recognized near Orion.",
+   "the faint smudge near Orion was recognized as a new comet by amateur astronomer Rosa Delgado.",
+   "amateur astronomer Rosa Delgado recognized the faint smudge near Orion as a comet no one had reported."
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The opening phrase describes someone who studied the sky for twenty years, so the subject right after the comma must be that person, Rosa Delgado. The other choices place \"the faint smudge,\" \"a comet,\" or \"it\" there, making the comet seem to have done the studying."
+ },
+ {
+  "id": "PSAT-RW-123",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "expressionIdeas",
+  "skill": "Transitions",
+  "basics": "transitions",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "Snow leopards live in steep, remote mountains across Central Asia, and their pale, spotted coats blend into the rocks. Even researchers who study them for years may never see one. ______ scientists rely on motion-activated cameras to estimate how many snow leopards remain.",
+  "stem": "Which choice completes the text with the most logical transition?",
+  "options": [
+   "On the other hand,",
+   "Similarly,",
+   "However,",
+   "For this reason,"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The difficulty of seeing snow leopards is the reason scientists use cameras, so a cause-and-effect transition fits. \"However\" and \"on the other hand\" signal opposition, and \"similarly\" signals a comparison the text does not make."
+ },
+ {
+  "id": "PSAT-RW-124",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "expressionIdeas",
+  "skill": "Transitions",
+  "basics": "transitions",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Most bats find their food in the dark by echolocation, producing high-pitched calls and listening for the echoes that bounce back from insects. ______ the large fruit bats known as flying foxes rely mainly on keen eyesight and a strong sense of smell to locate ripe fruit.",
+  "stem": "Which choice completes the text with the most logical transition?",
+  "options": [
+   "By contrast,",
+   "Therefore,",
+   "Likewise,",
+   "For example,"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Flying foxes find food differently from most bats, so a contrast transition is needed. \"Therefore\" implies a result, while \"for example\" and \"likewise\" would wrongly present flying foxes as typical of echolocating bats."
+ },
+ {
+  "id": "PSAT-RW-125",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "expressionIdeas",
+  "skill": "Transitions",
+  "basics": "transitions",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "City planners expect the new light-rail line to cut the average commute from the eastern suburbs by about fifteen minutes. ______ the line is projected to remove several thousand cars a day from the highway that connects those suburbs to downtown.",
+  "stem": "Which choice completes the text with the most logical transition?",
+  "options": [
+   "Nevertheless,",
+   "Instead,",
+   "In addition,",
+   "In other words,"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "The second sentence adds a separate benefit of the line, so \"in addition\" fits. \"Nevertheless\" and \"instead\" signal a contrast or replacement, and \"in other words\" would wrongly suggest that fewer cars is just a restatement of shorter commutes."
+ },
+ {
+  "id": "PSAT-RW-126",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "expressionIdeas",
+  "skill": "Rhetorical synthesis",
+  "basics": "notesToSentence",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "While researching a topic, a student has taken the following notes:\n\n- Wangari Maathai (1940 to 2011) was a Kenyan environmental activist.\n- In 1977 she founded the Green Belt Movement.\n- The movement trained women in rural Kenya to plant trees.\n- It has planted tens of millions of trees across Kenya.\n- In 2004 Maathai received the Nobel Peace Prize.\n\nThe student wants to emphasize the scale of the Green Belt Movement's work. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "options": [
+   "In 1977 Wangari Maathai founded the Green Belt Movement, which trained women in rural Kenya.",
+   "Wangari Maathai was a Kenyan activist who founded a movement focused on the environment.",
+   "The Green Belt Movement, founded by Wangari Maathai in 1977, has planted tens of millions of trees across Kenya.",
+   "Wangari Maathai, a Kenyan environmental activist who lived from 1940 to 2011, received the Nobel Peace Prize in 2004."
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Only the sentence about tens of millions of trees states how many trees the movement planted, which is what shows its scale. The others mention the Nobel Prize, the training of women, or the founding without any sense of how much the movement accomplished."
+ },
+ {
+  "id": "PSAT-RW-127",
+  "section": "rw",
+  "test": 1,
+  "module": 1,
+  "domain": "expressionIdeas",
+  "skill": "Rhetorical synthesis",
+  "basics": "notesToSentence",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "While researching a topic, a student has taken the following notes:\n\n- Lake Superior, in North America, has a surface area of about 82,000 square kilometers.\n- Its greatest depth is about 400 meters.\n- Lake Baikal, in Russia, has a surface area of about 31,700 square kilometers.\n- Its greatest depth is about 1,640 meters, making it the deepest lake in the world.\n- Both lakes are freshwater lakes.\n\nThe student wants to contrast the two lakes. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "options": [
+   "Although Lake Superior covers a much larger area than Lake Baikal, Baikal is far deeper, reaching about 1,640 meters.",
+   "Lake Superior, in North America, and Lake Baikal, in Russia, are both large freshwater lakes that attract many visitors.",
+   "Lake Baikal, in Russia, has a surface area of about 31,700 square kilometers and is the deepest lake in the world.",
+   "Lake Superior has a surface area of about 82,000 square kilometers and a greatest depth of about 400 meters."
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The goal is a contrast, and only the sentence beginning with \"Although\" sets the two lakes against each other, Superior wider and Baikal deeper. The sentence about two freshwater lakes stresses a similarity, and the other two describe only one lake each."
+ }
+]

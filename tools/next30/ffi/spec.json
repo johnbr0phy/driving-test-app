@@ -1,0 +1,28 @@
+{
+  "id": "ffi",
+  "stateCode": "FFI",
+  "idBase": 11200,
+  "prefix": "FFI-",
+  "slug": "/firefighter",
+  "landingPath": "/firefighter-practice-test",
+  "dataFile": "data/firefighter-questions.json",
+  "name": "Firefighter I Practice Test",
+  "shortName": "Firefighter I",
+  "examLabel": "Firefighter I exam",
+  "fullName": "Firefighter I written certification exam (NFPA 1010)",
+  "icon": "siren",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "ffiSafety", "label": "Safety, Communications & Command", "perTest": 7, "pool": 28, "segment": "SAF"},
+    {"key": "ffiBehavior", "label": "Fire Behavior & Building Construction", "perTest": 7, "pool": 28, "segment": "BEH"},
+    {"key": "ffiPpe", "label": "PPE & SCBA", "perTest": 7, "pool": 28, "segment": "PPE"},
+    {"key": "ffiTools", "label": "Extinguishers, Ropes & Forcible Entry", "perTest": 6, "pool": 24, "segment": "TLS"},
+    {"key": "ffiLadders", "label": "Ground Ladders", "perTest": 5, "pool": 20, "segment": "LAD"},
+    {"key": "ffiRescue", "label": "Search, Rescue & Ventilation", "perTest": 6, "pool": 24, "segment": "RES"},
+    {"key": "ffiWater", "label": "Water Supply, Hose & Fire Streams", "perTest": 8, "pool": 32, "segment": "WAT"},
+    {"key": "ffiAttack", "label": "Fire Control, Overhaul & Utilities", "perTest": 4, "pool": 16, "segment": "ATK"}
+  ],
+  "trainingSets": "testSets(11200, 4): set N holds exactly test N's 50 questions"
+}

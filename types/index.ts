@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "NASM" | "RBT" | "CPC" | "JELEC" | "BARBER" | "FFI" | "POLICE" | "SIE" | "SERIES7" | "PCOC" | "CASK" | "CANS" | "UKSERU" | "NZROAD" | "IEDTT" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -684,6 +684,170 @@ export type QuestionCategory =
   | "inrtoParking"
   | "inrtoSafety"
   | "inrtoDuties"
+
+  // nasm
+  | "nasmScience"
+  | "nasmClient"
+  | "nasmAssess"
+  | "nasmProgram"
+  | "nasmTechnique"
+  | "nasmProfessional"
+
+  // rbt
+  | "rbtData"
+  | "rbtAssess"
+  | "rbtAcq"
+  | "rbtReduce"
+  | "rbtDoc"
+  | "rbtEthics"
+
+  // cpc
+  | "cpcTerm"
+  | "cpcAnat"
+  | "cpcComp"
+  | "cpcGuide"
+  | "cpcIcd"
+  | "cpcHcpcs"
+  | "cpcInteg"
+  | "cpcMusc"
+  | "cpcCardio"
+  | "cpcDigest"
+  | "cpcUro"
+  | "cpcNerve"
+  | "cpcRad"
+  | "cpcLab"
+  | "cpcMed"
+  | "cpcEm"
+  | "cpcAnes"
+  | "cpcCases"
+
+  // jelec
+  | "jelecGeneral"
+  | "jelecTheory"
+  | "jelecBranch"
+  | "jelecServices"
+  | "jelecGround"
+  | "jelecWiring"
+  | "jelecEquip"
+  | "jelecMotors"
+  | "jelecSpecial"
+
+  // barber
+  | "barInfection"
+  | "barAnatomy"
+  | "barChemistry"
+  | "barTools"
+  | "barConsult"
+  | "barCutting"
+  | "barStyling"
+  | "barChemical"
+  | "barShaving"
+  | "barFacial"
+
+  // ffi
+  | "ffiSafety"
+  | "ffiBehavior"
+  | "ffiPpe"
+  | "ffiTools"
+  | "ffiLadders"
+  | "ffiRescue"
+  | "ffiWater"
+  | "ffiAttack"
+
+  // police
+  | "polReading"
+  | "polGrammar"
+  | "polReports"
+  | "polMath"
+  | "polJudgment"
+  | "polReasoning"
+
+  // sie
+  | "sieMarkets"
+  | "sieEquityDebt"
+  | "sieFunds"
+  | "sieTrading"
+  | "sieAccounts"
+  | "sieRegulation"
+
+  // series7
+  | "s7Business"
+  | "s7Accounts"
+  | "s7Equity"
+  | "s7Debt"
+  | "s7Options"
+  | "s7Funds"
+  | "s7Suitability"
+  | "s7Trading"
+
+  // pcoc
+  | "pcocRules"
+  | "pcocEquipment"
+  | "pcocBefore"
+  | "pcocRoadRules"
+  | "pcocAids"
+  | "pcocEmergencies"
+
+  // cask
+  | "caskSigns"
+  | "caskSignals"
+  | "caskLicence"
+  | "caskRightOfWay"
+  | "caskSharing"
+  | "caskDriving"
+  | "caskConditions"
+
+  // cans
+  | "cansRegSigns"
+  | "cansWarnSigns"
+  | "cansWorkSigns"
+  | "cansSignals"
+  | "cansLicence"
+  | "cansRightOfWay"
+  | "cansDriving"
+  | "cansSharing"
+  | "cansConditions"
+
+  // ukseru
+  | "serLicensing"
+  | "serVehicles"
+  | "serJourneys"
+  | "serSafety"
+  | "serBehaviour"
+  | "serParking"
+  | "serDriving"
+  | "serEquality"
+  | "serSafeguarding"
+  | "serRideshare"
+
+  // nzroad
+  | "nzLicence"
+  | "nzSigns"
+  | "nzGiveWay"
+  | "nzRoad"
+  | "nzSharing"
+  | "nzParking"
+  | "nzConditions"
+
+  // iedtt
+  | "iedttLicence"
+  | "iedttSigns"
+  | "iedttMarkings"
+  | "iedttRules"
+  | "iedttMotorway"
+  | "iedttUsers"
+  | "iedttSafety"
+  | "iedttConditions"
+
+  // CompTIA Network+ N10-009 domains
+  | "netModels"
+  | "netInfra"
+  | "netSwitchRoute"
+  | "netWireless"
+  | "netOps"
+  | "netSecurity"
+  | "netTroubleMethod"
+  | "netTroubleServices"
 
   // Life in the UK test
   | "lituValues"

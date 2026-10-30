@@ -1,0 +1,27 @@
+{
+  "id": "nasm",
+  "stateCode": "NASM",
+  "idBase": 10700,
+  "prefix": "NASM-",
+  "slug": "/nasm-cpt",
+  "landingPath": "/nasm-cpt-practice-test",
+  "dataFile": "data/nasm-cpt-questions.json",
+  "name": "NASM CPT Practice Test",
+  "shortName": "NASM CPT",
+  "examLabel": "NASM-CPT exam",
+  "fullName": "NASM Certified Personal Trainer (NASM-CPT) Exam",
+  "icon": "activity",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "nasmScience", "label": "Basic & Applied Sciences and Nutrition", "perTest": 8, "pool": 32, "segment": "SCI"},
+    {"key": "nasmClient", "label": "Client Relations & Behavioral Coaching", "perTest": 7, "pool": 28, "segment": "CLI"},
+    {"key": "nasmAssess", "label": "Assessment", "perTest": 8, "pool": 32, "segment": "ASM"},
+    {"key": "nasmProgram", "label": "Program Design", "perTest": 10, "pool": 40, "segment": "PRG"},
+    {"key": "nasmTechnique", "label": "Exercise Technique & Training Instruction", "perTest": 12, "pool": 48, "segment": "TEC"},
+    {"key": "nasmProfessional", "label": "Professional Development & Responsibility", "perTest": 5, "pool": 20, "segment": "PRO"}
+  ],
+  "blueprintSource": "NASM CPT7 exam blueprint (2019 job analysis): 15/15/16/20/24/10 percent, scaled to 50 per test",
+  "trainingSets": "testSets(10700, 4): one set per mock test, each holding that test's 50 questions"
+}

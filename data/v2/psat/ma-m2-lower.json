@@ -1,0 +1,520 @@
+[
+ {
+  "id": "PSAT-MA-145",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "algebra",
+  "skill": "Linear equations in one variable",
+  "basics": "solveX",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "If $x + 9 = 23$, what is the value of $x$?",
+  "options": [
+   "$\\frac{23}{9}$",
+   "$14$",
+   "$32$",
+   "$207$"
+  ],
+  "correct": [
+   1
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Subtract $9$ from both sides: $x = 23 - 9 = 14$. The choice $32$ adds $9$ instead of subtracting it, and the other two divide or multiply instead of subtracting."
+ },
+ {
+  "id": "PSAT-MA-146",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "dataAnalysis",
+  "skill": "Ratios, rates, and proportions",
+  "basics": "rateProblems",
+  "difficulty": 1,
+  "format": "numeric",
+  "stem": "A runner jogs at a steady speed of $6$ miles per hour. How many miles does the runner jog in $2.5$ hours? Type the number only.",
+  "numeric": {
+   "answers": [
+    "15"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "Distance equals rate times time: $6 \\times 2.5 = 15$ miles."
+ },
+ {
+  "id": "PSAT-MA-147",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "algebra",
+  "skill": "Linear functions",
+  "basics": "substitution",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "Which point lies on the graph of $y = 2x + 3$ in the $xy$-plane?",
+  "options": [
+   "$(3, 2)$",
+   "$(2, 7)$",
+   "$(0, 2)$",
+   "$(2, 5)$"
+  ],
+  "correct": [
+   1
+  ],
+  "calculator": true,
+  "explanation": "Substitute each $x$-value: when $x = 2$, $y = 2(2) + 3 = 7$, so $(2, 7)$ is on the line. When $x = 0$ the line gives $y = 3$, not $2$, and when $x = 3$ it gives $y = 9$."
+ },
+ {
+  "id": "PSAT-MA-148",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "advancedMath",
+  "skill": "Function notation",
+  "basics": "functionNotation",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "If $g(x) = 2x^2$, what is the value of $g(5)$?",
+  "options": [
+   "$10$",
+   "$20$",
+   "$50$",
+   "$100$"
+  ],
+  "correct": [
+   2
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Square first, then multiply: $5^2 = 25$ and $2 \\times 25 = 50$. The choice $100$ squares $2 \\times 5$, and $20$ multiplies $2 \\times 5 \\times 2$."
+ },
+ {
+  "id": "PSAT-MA-149",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "geometryTrig",
+  "skill": "Area and perimeter",
+  "basics": "areaPerimeter",
+  "difficulty": 1,
+  "format": "numeric",
+  "stem": "A rectangle has a perimeter of $30$ meters and a length of $9$ meters. What is the width of the rectangle, in meters? Type the number only.",
+  "numeric": {
+   "answers": [
+    "6"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "The perimeter is $2 \\times \\text{length} + 2 \\times \\text{width}$, so $2(9) + 2w = 30$. Then $2w = 12$ and $w = 6$ meters."
+ },
+ {
+  "id": "PSAT-MA-150",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "dataAnalysis",
+  "skill": "Percentages",
+  "basics": "percents",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "What is $30\\%$ of $80$?",
+  "options": [
+   "$2.4$",
+   "$24$",
+   "$50$",
+   "$56$"
+  ],
+  "correct": [
+   1
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Write $30\\%$ as $0.30$: $0.30 \\times 80 = 24$. The choice $56$ is what is left after taking $30\\%$ away, and $50$ subtracts $30$ from $80$."
+ },
+ {
+  "id": "PSAT-MA-151",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "algebra",
+  "skill": "Linear equations in one variable",
+  "basics": "solveX",
+  "difficulty": 1,
+  "format": "numeric",
+  "stem": "If $4n = 52$, what is the value of $n$? Type the number only.",
+  "numeric": {
+   "answers": [
+    "13"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "Divide both sides by $4$: $n = 52 \\div 4 = 13$."
+ },
+ {
+  "id": "PSAT-MA-152",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "advancedMath",
+  "skill": "Equivalent expressions",
+  "basics": "distributing",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "Which expression is equivalent to $3(x + 4) - x$?",
+  "options": [
+   "$2x + 12$",
+   "$4x + 12$",
+   "$3x + 12$",
+   "$2x + 4$"
+  ],
+  "correct": [
+   0
+  ],
+  "calculator": true,
+  "explanation": "Distribute the $3$: $3x + 12 - x$. Combine like terms: $2x + 12$. The choice $2x + 4$ forgets to multiply the $4$ by $3$, and $3x + 12$ forgets to subtract $x$."
+ },
+ {
+  "id": "PSAT-MA-153",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "algebra",
+  "skill": "Linear equations in one variable",
+  "basics": "wordProblems",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "Maria buys $n$ notebooks that cost $3$ dollars each and one backpack that costs $20$ dollars. She spends $35$ dollars in all. Which equation represents this situation?",
+  "options": [
+   "$3n - 20 = 35$",
+   "$3n + 20 = 35$",
+   "$23n = 35$",
+   "$20n + 3 = 35$"
+  ],
+  "correct": [
+   1
+  ],
+  "calculator": true,
+  "explanation": "The notebooks cost $3n$ dollars and the backpack adds $20$, so $3n + 20 = 35$. The choice $20n + 3$ swaps the prices, and $23n$ treats the backpack as if it were bought $n$ times."
+ },
+ {
+  "id": "PSAT-MA-154",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "advancedMath",
+  "skill": "Quadratic equations",
+  "basics": "squareRoots",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "If $x^2 = 49$ and $x < 0$, what is the value of $x$?",
+  "options": [
+   "$-49$",
+   "$-24.5$",
+   "$-7$",
+   "$7$"
+  ],
+  "correct": [
+   2
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "The numbers whose square is $49$ are $7$ and $-7$. Since $x$ is negative, $x = -7$. The choice $-24.5$ halves $49$ instead of taking its square root."
+ },
+ {
+  "id": "PSAT-MA-155",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "dataAnalysis",
+  "skill": "Ratios, rates, and proportions",
+  "basics": "ratios",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "A bag contains only red and blue marbles in a ratio of $2$ red to $5$ blue. If there are $35$ marbles in the bag, how many are red? Type the number only.",
+  "numeric": {
+   "answers": [
+    "10"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "The ratio $2 : 5$ has $2 + 5 = 7$ parts, and $35 \\div 7 = 5$ marbles per part. Red has $2$ parts, so there are $2 \\times 5 = 10$ red marbles."
+ },
+ {
+  "id": "PSAT-MA-156",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "geometryTrig",
+  "skill": "Area and perimeter",
+  "basics": "areaPerimeter",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A square has an area of $64$ square inches. What is the perimeter of the square, in inches?",
+  "options": [
+   "$8$",
+   "$16$",
+   "$32$",
+   "$256$"
+  ],
+  "correct": [
+   2
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Each side is $\\sqrt{64} = 8$ inches, and a square has $4$ equal sides, so the perimeter is $4 \\times 8 = 32$ inches. The choice $8$ is one side, and $256$ multiplies the area by $4$."
+ },
+ {
+  "id": "PSAT-MA-157",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "algebra",
+  "skill": "Linear functions",
+  "basics": "slope",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Which equation defines a line in the $xy$-plane with a slope of $-3$ and a $y$-intercept of $4$?",
+  "options": [
+   "$y = 4x - 3$",
+   "$y = -3x + 4$",
+   "$y = -3x - 4$",
+   "$y = 3x + 4$"
+  ],
+  "correct": [
+   1
+  ],
+  "calculator": true,
+  "explanation": "In $y = mx + b$, $m$ is the slope and $b$ is the $y$-intercept, so $y = -3x + 4$. The choice $y = 4x - 3$ swaps the two numbers, and the other choices change a sign."
+ },
+ {
+  "id": "PSAT-MA-158",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "advancedMath",
+  "skill": "Equivalent expressions",
+  "basics": "factoring",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Which of the following is a factor of $x^2 + 7x + 10$?",
+  "options": [
+   "$x + 7$",
+   "$x + 3$",
+   "$x + 5$",
+   "$x - 2$"
+  ],
+  "correct": [
+   2
+  ],
+  "calculator": true,
+  "explanation": "Find two numbers that multiply to $10$ and add to $7$: $2$ and $5$. So $x^2 + 7x + 10 = (x + 2)(x + 5)$, and $x + 5$ is a factor. The choice $x - 2$ has the wrong sign."
+ },
+ {
+  "id": "PSAT-MA-159",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "dataAnalysis",
+  "skill": "One-variable data",
+  "basics": "meanMedian",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "What is the median of the data set $3$, $8$, $5$, $12$, $6$?",
+  "options": [
+   "$5$",
+   "$6$",
+   "$6.8$",
+   "$8$"
+  ],
+  "correct": [
+   1
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Put the values in order: $3, 5, 6, 8, 12$. The median is the middle value, $6$. The choice $6.8$ is the mean, and $5$ is the middle of the list before it is put in order."
+ },
+ {
+  "id": "PSAT-MA-160",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "algebra",
+  "skill": "Systems of linear equations",
+  "basics": "substitution",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "$2x + y = 11$\n\n$y = 3$\n\nWhat is the value of $x$ in the solution to the system of equations above? Type the number only.",
+  "numeric": {
+   "answers": [
+    "4"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "Substitute $y = 3$ into the first equation: $2x + 3 = 11$, so $2x = 8$ and $x = 4$."
+ },
+ {
+  "id": "PSAT-MA-161",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "advancedMath",
+  "skill": "Exponential functions",
+  "basics": "exponentialGrowth",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A plant is $4$ centimeters tall and its height increases by $10\\%$ each week. Which expression gives the plant's height, in centimeters, after $w$ weeks?",
+  "options": [
+   "$4(1.1)^w$",
+   "$4(0.1)^w$",
+   "$4 + 0.1w$",
+   "$4(1.1w)$"
+  ],
+  "correct": [
+   0
+  ],
+  "calculator": true,
+  "explanation": "Growing by $10\\%$ means multiplying by $1 + 0.10 = 1.1$ each week, so after $w$ weeks the height is $4(1.1)^w$. Multiplying by $0.1$ would shrink the plant, and $4 + 0.1w$ adds a fixed amount instead of a percent."
+ },
+ {
+  "id": "PSAT-MA-162",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "algebra",
+  "skill": "Linear inequalities",
+  "basics": "inequalities",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Which inequality describes all solutions to $5x - 2 \\leq 18$?",
+  "options": [
+   "$x \\leq 4$",
+   "$x \\geq 4$",
+   "$x \\leq 20$",
+   "$x \\leq \\frac{16}{5}$"
+  ],
+  "correct": [
+   0
+  ],
+  "calculator": true,
+  "explanation": "Add $2$ to both sides: $5x \\leq 20$. Divide by $5$, a positive number, so the sign stays the same: $x \\leq 4$. The choice $\\frac{16}{5}$ subtracts $2$ instead of adding it."
+ },
+ {
+  "id": "PSAT-MA-163",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "advancedMath",
+  "skill": "Function notation",
+  "basics": "functionNotation",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "The function $f$ is defined by $f(x) = \\frac{x + 6}{2}$. For what value of $x$ does $f(x) = 10$? Type the number only.",
+  "numeric": {
+   "answers": [
+    "14"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "Set $\\frac{x + 6}{2} = 10$. Multiply both sides by $2$: $x + 6 = 20$, so $x = 14$."
+ },
+ {
+  "id": "PSAT-MA-164",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "geometryTrig",
+  "skill": "Circles",
+  "basics": "circleBasics",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A circle has a radius of $4$ feet. What is the circumference of the circle, in feet?",
+  "options": [
+   "$8\\pi$",
+   "$2\\pi$",
+   "$16\\pi$",
+   "$4\\pi$"
+  ],
+  "correct": [
+   0
+  ],
+  "calculator": true,
+  "explanation": "Circumference is $2\\pi r = 2\\pi(4) = 8\\pi$ feet. The choice $16\\pi$ is the area, $\\pi r^2$."
+ },
+ {
+  "id": "PSAT-MA-165",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "advancedMath",
+  "skill": "Exponents",
+  "basics": "exponentRules",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "If $2^{x + 1} = 16$, what is the value of $x$?",
+  "options": [
+   "$3$",
+   "$4$",
+   "$7$",
+   "$8$"
+  ],
+  "correct": [
+   0
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Write $16$ as a power of $2$: $16 = 2^4$. So $x + 1 = 4$ and $x = 3$. The choice $4$ is the exponent $x + 1$, not $x$, and $7$ comes from $8 - 1$, halving $16$ instead of using powers."
+ },
+ {
+  "id": "PSAT-MA-166",
+  "section": "math",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "algebra",
+  "skill": "Linear equations in two variables",
+  "basics": "wordProblems",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "Gym A charges $30$ dollars a month. Gym B charges $10$ dollars a month plus $5$ dollars for each visit. For how many visits in a month do the two gyms cost the same amount?",
+  "options": [
+   "$2$",
+   "$4$",
+   "$6$",
+   "$8$"
+  ],
+  "correct": [
+   1
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Set the costs equal: $10 + 5v = 30$. Then $5v = 20$ and $v = 4$ visits. Check: Gym B costs $10 + 5(4) = 30$ dollars, the same as Gym A. The choice $6$ divides $30$ by $5$ without subtracting the $10$ dollar fee."
+ }
+]

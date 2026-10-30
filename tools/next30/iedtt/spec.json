@@ -1,0 +1,63 @@
+{
+  "id": "iedtt",
+  "stateCode": "IEDTT",
+  "idBase": 12100,
+  "prefix": "IEDTT-",
+  "slug": "/ireland-driver-theory",
+  "landingPath": "/ireland-driver-theory-test",
+  "dataFile": "data/ireland-driver-theory-questions.json",
+  "testCount": 5,
+  "questionsPerTest": 40,
+  "passPct": 87,
+  "region": "IE",
+  "categories": [
+    {
+      "key": "iedttLicence",
+      "label": "Licences, Permits & Documents",
+      "perTest": 4,
+      "segment": "LIC"
+    },
+    {
+      "key": "iedttSigns",
+      "label": "Traffic Signs",
+      "perTest": 8,
+      "segment": "SGN"
+    },
+    {
+      "key": "iedttMarkings",
+      "label": "Road Markings & Traffic Lights",
+      "perTest": 4,
+      "segment": "MRK"
+    },
+    {
+      "key": "iedttRules",
+      "label": "Speed, Junctions & Overtaking",
+      "perTest": 8,
+      "segment": "ROW"
+    },
+    {
+      "key": "iedttMotorway",
+      "label": "Motorways, Tunnels & Parking",
+      "perTest": 3,
+      "segment": "MWY"
+    },
+    {
+      "key": "iedttUsers",
+      "label": "Vulnerable Road Users",
+      "perTest": 5,
+      "segment": "USR"
+    },
+    {
+      "key": "iedttSafety",
+      "label": "Alcohol, Distraction & Seatbelts",
+      "perTest": 5,
+      "segment": "SAF"
+    },
+    {
+      "key": "iedttConditions",
+      "label": "Weather, Breakdowns & Collisions",
+      "perTest": 3,
+      "segment": "CON"
+    }
+  ]
+}

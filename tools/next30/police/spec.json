@@ -1,0 +1,33 @@
+{
+  "id": "police",
+  "stateCode": "POLICE",
+  "idBase": 11300,
+  "prefix": "POLICE-",
+  "slug": "/police-exam",
+  "landingPath": "/police-exam-practice-test",
+  "dataFile": "data/police-exam-questions.json",
+  "name": "Police Exam Practice Test",
+  "shortName": "Police Exam",
+  "examLabel": "police officer written exam",
+  "fullName": "police officer entrance written exam",
+  "icon": "badge",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "polReading", "label": "Reading Comprehension", "perTest": 10, "pool": 40, "segment": "RDG"},
+    {"key": "polGrammar", "label": "Grammar, Spelling & Vocabulary", "perTest": 10, "pool": 40, "segment": "GRM"},
+    {"key": "polReports", "label": "Report Writing & Clarity", "perTest": 8, "pool": 32, "segment": "RPT"},
+    {"key": "polMath", "label": "Math", "perTest": 8, "pool": 32, "segment": "MTH"},
+    {"key": "polJudgment", "label": "Situational Judgment & Ethics", "perTest": 8, "pool": 32, "segment": "JDG"},
+    {"key": "polReasoning", "label": "Reasoning & Problem Solving", "perTest": 6, "pool": 24, "segment": "RSN"}
+  ],
+  "trainingSets": [
+    {"setNumber": 1, "id": 11301, "name": "Reading Comprehension", "categories": ["polReading"], "size": 40},
+    {"setNumber": 2, "id": 11302, "name": "Grammar, Spelling & Vocabulary", "categories": ["polGrammar"], "size": 40},
+    {"setNumber": 3, "id": 11303, "name": "Report Writing & Clarity", "categories": ["polReports"], "size": 32},
+    {"setNumber": 4, "id": 11304, "name": "Math", "categories": ["polMath"], "size": 32},
+    {"setNumber": 5, "id": 11305, "name": "Judgment & Reasoning", "categories": ["polJudgment", "polReasoning"], "size": 56}
+  ],
+  "notes": "4 tests x 50 = 200; each pool is exactly 4x its per-test count, so no item repeats across tests. Dashboard = 5 sets + 4 tests = 9 steps."
+}

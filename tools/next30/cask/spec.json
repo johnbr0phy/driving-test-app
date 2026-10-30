@@ -1,0 +1,28 @@
+{
+  "id": "cask",
+  "stateCode": "CASK",
+  "idBase": 11700,
+  "prefix": "CASK-",
+  "slug": "/saskatchewan-learners",
+  "landingPath": "/saskatchewan-learners-practice-test",
+  "dataFile": "data/saskatchewan-learners-questions.json",
+  "name": "Saskatchewan Class 7 Practice Test",
+  "shortName": "SK Class 7",
+  "examLabel": "Saskatchewan Class 7",
+  "fullName": "Saskatchewan Class 7 learner's licence knowledge test",
+  "icon": "car",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {"key": "caskSigns", "label": "Traffic Signs", "perTest": 14, "pool": 56, "segment": "SGN"},
+    {"key": "caskSignals", "label": "Lights, Markings & Railway Crossings", "perTest": 7, "pool": 28, "segment": "SIG"},
+    {"key": "caskLicence", "label": "GDL, Licensing & the Law", "perTest": 7, "pool": 28, "segment": "LIC"},
+    {"key": "caskRightOfWay", "label": "Right-of-Way & Turns", "perTest": 7, "pool": 28, "segment": "ROW"},
+    {"key": "caskSharing", "label": "Sharing the Road", "perTest": 6, "pool": 24, "segment": "SHR"},
+    {"key": "caskDriving", "label": "Safe Driving Skills", "perTest": 5, "pool": 20, "segment": "DRV"},
+    {"key": "caskConditions", "label": "Winter, Emergencies & Impairment", "perTest": 4, "pool": 16, "segment": "CON"}
+  ],
+  "trainingSets": "testSets(11700, 4): DMV-style, Set N = the 50 questions of Test N",
+  "notes": "Dashboard = 4 sets + 4 tests = 8 steps. Test N takes slice N of each pool, sorted by question ID, so no item repeats across tests."
+}

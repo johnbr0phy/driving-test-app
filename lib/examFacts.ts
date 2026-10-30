@@ -1629,4 +1629,456 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the PMI PMP Examination Content Outline (July 2026)",
     source: { name: "PMI", url: "https://www.pmi.org/certifications/project-management-pmp/new-exam" },
   },
+  nasm: {
+    answer:
+      "The NASM Certified Personal Trainer (NASM-CPT) exam is a proctored, NCCA-accredited computer test of 120 multiple-choice questions in 2 hours. 100 questions are scored and 20 are unscored research items, and you need a scaled score of 70 to pass. To sit it you need a high school diploma or equivalent and current CPR and AED certification. The CPT7 blueprint weights six domains: basic and applied sciences and nutrition 15%, client relations and behavioral coaching 15%, assessment 16%, program design 20%, exercise technique and training instruction 24%, and professional development and responsibility 10%.",
+    rows: [
+      { label: "Questions", value: "120 (100 scored, 20 research)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Passing score", value: "Scaled score of 70" },
+      { label: "Prerequisites", value: "High school diploma or GED, current CPR and AED" },
+      { label: "Largest domain", value: "Exercise technique and training instruction, 24%" },
+      { label: "Recertification", value: "Every 2 years, 2.0 CEUs" },
+      { label: "Run by", value: "National Academy of Sports Medicine (NASM)" },
+    ],
+    basedOn: "NASM's exam information and support pages and the CPT7 exam blueprint, checked October 2026",
+    source: { name: "NASM: CPT exam information", url: "https://www.nasm.org/certified-personal-trainer/exam-information" },
+  },
+  rbt: {
+    answer:
+      "The RBT exam is the Behavior Analyst Certification Board's certification exam for Registered Behavior Technicians, the entry-level practitioners who deliver ABA services under supervision. It has 85 multiple-choice questions in 90 minutes, 75 scored and 10 unscored pilot items, taken at a Pearson VUE test center. Since January 1, 2026 it follows the RBT Test Content Outline (3rd edition): data collection and graphing, behavior assessment, behavior acquisition, behavior reduction, documentation and reporting, and ethics. The result is pass or fail against a passing score set by the modified Angoff method, not published as a percentage.",
+    rows: [
+      { label: "Questions", value: "85 multiple choice (75 scored, 10 pilot)" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Pass mark", value: "Pass/fail; passing score set by modified Angoff, no published percentage" },
+      { label: "Content", value: "6 domains, 43 tasks (3rd ed. outline)" },
+      { label: "Biggest domain", value: "Behavior Acquisition, 19 of 75" },
+      { label: "Before the exam", value: "40-hour training and competency assessment" },
+      { label: "Where", value: "Pearson VUE test centers" },
+      { label: "Run by", value: "Behavior Analyst Certification Board (BACB)" },
+    ],
+    basedOn: "The BACB RBT Test Content Outline (3rd ed.), effective January 2026, checked October 2026",
+    source: { name: "BACB: RBT Certification", url: "https://www.bacb.com/rbt/" },
+  },
+  cpc: {
+    answer:
+      "The CPC exam is AAPC's certification test for professional medical coders. It has 100 multiple-choice questions in one 4-hour sitting, and you need 70 percent overall, at least 70 correct, to pass. It is open code book: you bring the AMA CPT Professional Edition and ICD-10-CM and HCPCS Level II manuals, and the questions cover 17 areas, from terminology, anatomy and compliance to every CPT section, plus 10 medical record cases. You can take it at a testing center or at home with a live remote proctor.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "4 hours, one sitting" },
+      { label: "Pass mark", value: "70% overall (70 of 100)" },
+      { label: "Code books", value: "CPT, ICD-10-CM, HCPCS Level II (open book)" },
+      { label: "Cases", value: "10 medical records, 1 question each" },
+      { label: "Where", value: "Testing center or live remote proctor" },
+      { label: "Run by", value: "AAPC" },
+    ],
+    basedOn: "AAPC's Taking the CPC Exam page, checked October 2026",
+    source: { name: "AAPC: Taking the CPC Exam", url: "https://www.aapc.com/certifications/cpc/taking-the-cpc-exam" },
+  },
+  jelec: {
+    answer:
+      "The journeyman electrician exam is a state or city licensing exam on the National Electrical Code, electrical theory and calculations, taken after a set amount of supervised work, often about 8,000 hours or a completed apprenticeship. There is no single national version: many places use the ICC national journeyman exam of about 80 multiple-choice questions in 4 hours, open book with the NEC, and 70 percent is the most common passing score. Most exams now test the 2023 NEC, but each state sets its own edition, eligibility and pass mark.",
+    rows: [
+      { label: "Questions", value: "About 80 multiple choice (varies by state)" },
+      { label: "Time", value: "About 4 hours" },
+      { label: "Passing score", value: "Usually 70% (some states 75%)" },
+      { label: "Format", value: "Open book with the NEC in most states" },
+      { label: "Code edition", value: "The edition your state adopted, often 2023 NEC" },
+      { label: "Given by", value: "State boards via ICC, PSI or Prometric" },
+    ],
+    basedOn: "NFPA 70, National Electrical Code 2023, and state journeyman exam bulletins, checked October 2026",
+    source: { name: "NFPA 70: National Electrical Code", url: "https://www.nfpa.org/codes-and-standards/nfpa-70-standard-development/70" },
+  },
+  barber: {
+    answer:
+      "In states that use it, the NIC National Barber Theory Examination is 60 multiple-choice questions, 50 of them scored, in 90 minutes. Its content outline (candidate bulletin effective June 1, 2025) gives Scientific Concepts 35 percent (infection control, anatomy and physiology, product chemistry), Implements and Equipment 10 percent, Hair Care Services 40 percent and Facial Hair and Skin Care Services 15 percent. NIC reports a scaled score and each state board sets the pass mark, 75 in most NIC states. Some states write their own barber exam or use another testing company, and most also require a practical exam.",
+    rows: [
+      { label: "Questions", value: "60 (50 scored)" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "Scaled, set by each state (75 in most NIC states)" },
+      { label: "Largest domain", value: "Hair Care Services, 40%" },
+      { label: "Also required", value: "Practical exam in most states" },
+      { label: "Run by", value: "NIC, through each state board" },
+    ],
+    basedOn: "the NIC National Barber Theory Examination candidate bulletin, effective June 1, 2025 (revised September 1, 2025), checked October 2026",
+    source: { name: "NIC Barber Theory CIB", url: "https://prov-testing.github.io/nic_cib/barber_national_theory_english.html" },
+  },
+  ffi: {
+    answer:
+      "Firefighter I is the entry-level firefighter certification, defined by the job performance requirements in NFPA 1010 (2024), which replaced NFPA 1001. Candidates usually finish a fire academy course, then pass a written exam and a practical skills exam given by their state fire training agency or another accredited certifying body. The written test is multiple choice; many agencies use about 100 questions and a 70 percent pass mark, but each sets its own count, time limit and passing score.",
+    rows: [
+      { label: "Standard", value: "NFPA 1010 (2024), Firefighter I" },
+      { label: "Format", value: "Written multiple choice plus a skills exam" },
+      { label: "Questions", value: "Set by the agency, often about 100" },
+      { label: "Pass mark", value: "Set by the agency, often 70%" },
+      { label: "Given by", value: "State fire training agency or accredited body" },
+      { label: "Usually taken", value: "At the end of a fire academy course" },
+      { label: "Often paired with", value: "Hazmat awareness and operations" },
+    ],
+    basedOn: "NFPA 1010 (2024 edition) and state fire certification guidance, checked October 2026",
+    source: { name: "NFPA 1010: Standard on Professional Qualifications for Firefighters", url: "https://www.nfpa.org/codes-and-standards/nfpa-1010-standard-development/1010" },
+  },
+  police: {
+    answer:
+      "There is no single national police exam. Most US agencies start hiring with a multiple-choice written test, from a testing company, a state board such as California POST (the PELLETB) or a civil service commission, that checks reading comprehension, writing and grammar, report writing, basic math and judgment. Each agency sets its own passing score, often 70 percent, and many rank candidates by score. Passing leads to a physical ability test, an oral board, a background investigation and psychological and medical exams.",
+    rows: [
+      { label: "Format", value: "Multiple choice, by agency" },
+      { label: "Sections", value: "Reading, writing, math, judgment" },
+      { label: "Passing score", value: "Set by the agency (often 70%)" },
+      { label: "Given by", value: "Agency, civil service or state board" },
+      { label: "Next steps", value: "Physical test, oral board, background" },
+    ],
+    basedOn: "common police entrance test formats and California POST's PELLETB guide, checked October 2026",
+    source: { name: "California POST: PELLETB", url: "https://post.ca.gov/portals/0/post_docs/publications/Applicant_Preparation_Guide_for-the-POST_Entry-Level-Law-Enforcement-Test-Battery.pdf" },
+  },
+  sie: {
+    answer:
+      "The Securities Industry Essentials (SIE) exam is FINRA's entry-level securities exam: 75 scored multiple-choice questions, plus a few unscored pretest questions, in 1 hour and 45 minutes, with a passing score of 70. It covers capital markets, products and their risks, trading, customer accounts and prohibited activities, and the regulatory framework. Anyone 18 or older can take it without a sponsoring firm, a pass is valid for four years, and it is a corequisite for representative exams such as the Series 7.",
+    rows: [
+      { label: "Questions", value: "75 scored, plus unscored pretest items" },
+      { label: "Time", value: "1 hour 45 minutes" },
+      { label: "Passing score", value: "70" },
+      { label: "Eligibility", value: "Age 18+, no firm sponsorship needed" },
+      { label: "Result valid", value: "4 years" },
+      { label: "Largest section", value: "Products and their risks, 44%" },
+      { label: "Run by", value: "FINRA, delivered by Prometric" },
+    ],
+    basedOn: "FINRA's SIE exam page and content outline, checked October 2026",
+    source: { name: "FINRA: Securities Industry Essentials Exam", url: "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam" },
+  },
+  series7: {
+    answer:
+      "The Series 7 is FINRA's General Securities Representative exam: 125 scored multiple-choice questions, plus 5 unscored pretest questions, in 3 hours 45 minutes, with a passing score of 72. Together with the Securities Industry Essentials (SIE) exam, a corequisite, it qualifies a registered representative to sell most securities, including stocks, bonds, options, municipal securities and investment company products. Candidates must be sponsored by a FINRA member firm, and almost three quarters of the questions cover investment information, recommendations and records.",
+    rows: [
+      { label: "Questions", value: "125 scored, plus 5 unscored" },
+      { label: "Time", value: "3 hours 45 minutes" },
+      { label: "Passing score", value: "72" },
+      { label: "Corequisite", value: "SIE exam" },
+      { label: "Eligibility", value: "Sponsored by a FINRA member firm" },
+      { label: "Largest function", value: "Information and recommendations, 73%" },
+      { label: "Run by", value: "FINRA, delivered by Prometric" },
+    ],
+    basedOn: "FINRA's Series 7 exam page and content outline, checked October 2026",
+    source: { name: "FINRA: Series 7 Exam", url: "https://www.finra.org/registration-exams-ce/qualification-exams/series7" },
+  },
+  pcoc: {
+    answer:
+      "The Pleasure Craft Operator Card (PCOC) is the most common proof of competency needed to operate a recreational boat with any motor in Canada, electric trolling motors included. You earn it by passing a test of 50 multiple-choice questions with a course provider accredited by Transport Canada, scoring at least 75 percent (38 of 50). The card is valid for life. Operators under 16 have horsepower limits and no one under 16 may operate a personal watercraft.",
+    rows: [
+      { label: "Questions", value: "50 multiple choice" },
+      { label: "Pass mark", value: "75% (38 of 50)" },
+      { label: "Time", value: "Up to 75 minutes online, set by the provider" },
+      { label: "Who needs it", value: "Operators of any motorized pleasure craft" },
+      { label: "Valid for", value: "Life, no renewal" },
+      { label: "Youth limits", value: "Under 12: 10 hp; 12 to 15: 40 hp unless supervised; no PWC under 16" },
+      { label: "Study material", value: "Transport Canada Safe Boating Guide (TP 511E)" },
+      { label: "Run by", value: "Transport Canada-accredited course providers" },
+    ],
+    basedOn: "Transport Canada's proof of competency rules and the Small Vessel Regulations, checked October 2026",
+    source: { name: "Transport Canada: Proof of competency for recreational boaters", url: "https://tc.canada.ca/en/marine-transportation/marine-safety/proof-competency-recreational-boaters" },
+  },
+  cask: {
+    answer:
+      "The Saskatchewan Class 7 knowledge test is the written test for a learner's licence, given by SGI through motor licence issuers and driver examination offices. It has two parts, Basic (driving situations and the rules of the road) and Sign (sign identification), both from the Saskatchewan Driver's Handbook; if you fail one part you rewrite only that part, you may write once a day, and passing results last one year. SGI does not publish the question count or pass mark. You must be 16, or 15 in high school driver education, and pass a vision test, then hold the Class 7 for at least nine months before the Class 5 road test.",
+    rows: [
+      { label: "Format", value: "Two parts: Basic (rules of the road) and Sign" },
+      { label: "Passing score", value: "Not published by SGI (prep sites report 80% per part)" },
+      { label: "Retakes", value: "Rewrite only the failed part, once per day" },
+      { label: "Results valid", value: "One year" },
+      { label: "Minimum age", value: "16, or 15 in high school driver education" },
+      { label: "Also required", value: "Vision test, original ID, parental consent under 18" },
+      { label: "Learner stage", value: "At least 9 months with a supervising driver" },
+      { label: "Given by", value: "SGI, at motor licence issuers and driver exam offices" },
+    ],
+    basedOn: "the Saskatchewan Driver's Handbook, 2026-27 edition",
+    source: { name: "SGI: Saskatchewan Driver's Handbook", url: "https://sgi.sk.ca/handbook" },
+  },
+  cans: {
+    answer:
+      "The Nova Scotia Class 7 knowledge test is the written test for a learner's licence. It has two parts, a rules of the road test and a road sign test, each with 20 multiple-choice questions, and you need at least 16 correct on each part (80 percent), with 30 minutes per part. You can take it online in English or French with a webcam, or in person at a Registry of Motor Vehicles office or Access Nova Scotia centre. You must be at least 16, with a parent's written consent at 16 or 17, and you also pass a vision test before the licence is issued.",
+    rows: [
+      { label: "Format", value: "Two parts: rules of the road and road signs" },
+      { label: "Questions", value: "20 multiple choice per part" },
+      { label: "Passing score", value: "16 of 20 on each part (80%)" },
+      { label: "Time", value: "30 minutes per part" },
+      { label: "Where", value: "Online (English or French, webcam) or at the RMV / Access Nova Scotia" },
+      { label: "Minimum age", value: "16 (written parental consent at 16 or 17)" },
+      { label: "Also required", value: "Vision test, ID, photo" },
+      { label: "Retake", value: "Only the failed part; next day in person, no wait online" },
+      { label: "Next step", value: "Road test after 12 months (9 with approved driver education)" },
+    ],
+    basedOn: "novascotia.ca learner's licence test and RMV pages and the Nova Scotia Driver's Handbook, checked October 2026",
+    source: { name: "Nova Scotia: Take a driver knowledge test, Learner's Licence (class 7)", url: "https://www.novascotia.ca/take-driver-knowledge-test-learners-licence-class-7" },
+  },
+  ukseru: {
+    answer:
+      "SERU (Safety, Equality and Regulatory Understanding) is the computer-based assessment that people applying for or holding a London private hire (PHV) driver's licence take at a TfL assessment centre. It tests the PHV Driver's Handbook: licensing rules, carrying out bookings, staying safe, driver behaviour, driving and parking in London, equality and disability, safeguarding and ridesharing. Passing it also shows the English reading and writing a London PHV licence needs. TfL does not publish the question count; driver guides report about 36 to 37 multiple-choice and sentence-completion questions with a 60 percent pass mark.",
+    rows: [
+      { label: "Questions", value: "About 36 to 37 (reported)" },
+      { label: "Format", value: "Multiple choice and sentence completion" },
+      { label: "Time", value: "45 to 60 minutes (reported)" },
+      { label: "Pass mark", value: "About 60% (reported)" },
+      { label: "Where", value: "TfL assessment centre, on a computer" },
+      { label: "Study material", value: "PHV Driver's Handbook, version 1.0" },
+      { label: "Also counts for", value: "English reading and writing" },
+      { label: "Needed for", value: "A London PHV driver's licence" },
+    ],
+    basedOn: "the PHV Driver's Handbook (version 1.0, September 2021) and TfL's SERU requirement page, checked October 2026",
+    source: { name: "TfL: Safety, equality and regulatory understanding requirement", url: "https://tfl.gov.uk/info-for/taxis-and-private-hire/safety-equality-and-regulatory-understanding-requirement" },
+  },
+  nzroad: {
+    answer:
+      "The learner licence theory test is the first step to driving a car in New Zealand. It is 35 multi-choice questions on a computer about the Official New Zealand Road Code, and you need at least 32 right to pass; you get 30 minutes. You must be at least 16, pass an eyesight check and show proof of identity. With a learner licence you may drive only with a supervisor who has held a full licence for at least two years, with L plates on the front and back.",
+    rows: [
+      { label: "Questions", value: "35 multi-choice" },
+      { label: "Pass mark", value: "32 of 35" },
+      { label: "Time", value: "30 minutes" },
+      { label: "Minimum age", value: "16" },
+      { label: "Also required", value: "Eyesight check and proof of identity" },
+      { label: "Retakes", value: "Fail twice in a day: wait 10 working days" },
+      { label: "Study material", value: "Official New Zealand Road Code" },
+      { label: "Run by", value: "NZTA Waka Kotahi, at licensing agents" },
+    ],
+    basedOn: "drive.govt.nz learner licence guidance and the Official New Zealand Road Code, checked October 2026",
+    source: { name: "drive.govt.nz: Doing the learner licence test", url: "https://drive.govt.nz/learner-licence/doing-the-learner-licence-test" },
+  },
+  iedtt: {
+    answer:
+      "The Driver Theory Test is the computer test you must pass in Ireland before you can apply for your first learner permit. The car test is 40 multiple-choice questions in 45 minutes, and you need 35 correct to pass. It is run for the Road Safety Authority (RSA) at test centres around the country, the questions are based on the Rules of the Road, and your pass certificate is valid for two years.",
+    rows: [
+      { label: "Questions", value: "40 multiple choice" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "35 of 40 (87.5%)" },
+      { label: "Where", value: "On computer at a test centre, booked at theorytest.ie" },
+      { label: "Needed for", value: "Your first learner permit" },
+      { label: "Certificate valid", value: "2 years" },
+      { label: "Study material", value: "RSA Rules of the Road" },
+      { label: "Run by", value: "Road Safety Authority (RSA)" },
+    ],
+    basedOn: "theorytest.ie FAQs and the RSA Rules of the Road, checked October 2026",
+    source: { name: "Official RSA Driver Theory Test", url: "https://www.theorytest.ie/" },
+  },
+  faapvt: {
+    answer:
+      "The FAA Private Pilot Airplane (PAR) knowledge test has 60 multiple-choice questions with three answer choices each, a 2-hour time limit and a passing score of 70 percent. You must be at least 15 and have an instructor or home-study endorsement to take it at an FAA testing center. Questions come from the Private Pilot Airplane ACS and many use a figure supplement of charts and performance tables. A pass is valid for 24 calendar months.",
+    rows: [
+      { label: "Questions", value: "60, three choices each" },
+      { label: "Time", value: "2 hours" },
+      { label: "Passing score", value: "70%" },
+      { label: "Minimum age", value: "15" },
+      { label: "Result valid", value: "24 calendar months" },
+      { label: "Given by", value: "FAA, at authorized testing centers" },
+    ],
+    basedOn: "the FAA Private Pilot for Airplane Category ACS (FAA-S-ACS-6C) and the FAA ACS knowledge test table",
+    source: { name: "FAA", url: "https://www.faa.gov/training_testing/testing/acs" },
+  },
+  psat: {
+    answer:
+      "The digital PSAT/NMSQT has 98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, two 32-minute modules) and Math (44 questions, two 35-minute modules), with a calculator allowed on all of Math. It is adaptive by module and scored 320 to 1520, with each section scored 160 to 760. It is given to 10th and 11th graders in the fall (the PSAT 10 is the same test in the spring), and juniors' scores are used for the National Merit Scholarship Program through a Selection Index of 48 to 228.",
+    rows: [
+      { label: "Questions", value: "98 (54 Reading and Writing, 44 Math)" },
+      { label: "Time", value: "2 hours 14 minutes, plus a 10-minute break" },
+      { label: "Score", value: "320 to 1520 (160 to 760 per section)" },
+      { label: "National Merit", value: "Selection Index: (2 x Reading and Writing + Math) / 10" },
+      { label: "Calculator", value: "Allowed on all of Math (built-in graphing calculator)" },
+      { label: "Given by", value: "College Board, in the Bluebook app at school" },
+    ],
+    basedOn: "the published digital PSAT/NMSQT specifications",
+    source: { name: "College Board", url: "https://satsuite.collegeboard.org/psat-nmsqt/whats-on-the-test" },
+    tigertest:
+      "Tigertest has a full-length adaptive PSAT practice test with a score estimate and four skill drills that teach the basics first. All of it is free with no account required.",
+  },
+  praxis: {
+    answer:
+      "The Praxis Core Academic Skills for Educators is three ETS tests that teacher preparation programs and states use for admission or licensure, taken separately or together as the combined test 5752. Reading (5713) is 56 selected-response questions in 85 minutes. Writing (5723) is a 40-minute section of 40 selected-response questions (usage, sentence correction, revision in context and research skills) followed by two 30-minute essays. Mathematics (5733) is 56 questions in 90 minutes with an on-screen four-function calculator: Number and Quantity 36 percent, Data Interpretation, Statistics and Probability 32 percent, Algebra and Geometry 32 percent. Each test is scored 100 to 200, and each state sets its own passing score.",
+    rows: [
+      { label: "Reading (5713)", value: "56 questions, 85 minutes" },
+      { label: "Writing (5723)", value: "40 questions in 40 minutes, plus two 30-minute essays" },
+      { label: "Math (5733)", value: "56 questions, 90 minutes, four-function calculator" },
+      { label: "Question types", value: "Five-choice, select one or more, numeric entry (Math)" },
+      { label: "Scores", value: "100 to 200 per test; passing score set by each state" },
+      { label: "Common cutoffs", value: "Reading 156, Writing 162, Math 150 in many states" },
+      { label: "Given by", value: "ETS, at test centers or at home" },
+    ],
+    basedOn: "the ETS Praxis Study Companions for Core Reading (5713), Writing (5723) and Mathematics (5733)",
+    source: { name: "ETS Praxis", url: "https://praxis.ets.org/scores" },
+  },
+  gre: {
+    answer:
+      "The GRE General Test takes about 1 hour 58 minutes since its September 2023 update. It has one Analytical Writing task (30 minutes), two Verbal Reasoning sections (12 questions in 18 minutes and 15 in 23 minutes) and two Quantitative Reasoning sections (12 questions in 21 minutes and 15 in 26 minutes). Verbal and Quant are section-level adaptive and each scored 130 to 170; Analytical Writing is scored 0 to 6. There is no pass mark: graduate programs set their own expectations.",
+    rows: [
+      { label: "Questions", value: "54 (27 Verbal, 27 Quant) plus 1 essay" },
+      { label: "Time", value: "About 1 hour 58 minutes, no scheduled break" },
+      { label: "Score", value: "130 to 170 for Verbal and for Quant; 0 to 6 for writing" },
+      { label: "Adaptive", value: "Second section of each measure set by the first" },
+      { label: "Calculator", value: "On-screen calculator for Quant" },
+      { label: "Given by", value: "ETS, at test centers or at home" },
+    ],
+    basedOn: "the ETS description of the GRE General Test structure",
+    source: { name: "ETS", url: "https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html" },
+    tigertest:
+      "Tigertest has two full adaptive GRE practice tests with Verbal and Quant score estimates and seven drills, all free with no account required. The essay is not included.",
+  },
+  gmat: {
+    answer:
+      "The GMAT Focus Edition has 64 questions in 2 hours 15 minutes: Quantitative Reasoning (21 questions), Verbal Reasoning (23) and Data Insights (20), 45 minutes each, in any order you choose, with one optional 10-minute break. Each section is scored 60 to 90 and the total runs from 205 to 805; the exam is computer adaptive, and you may review and change up to three answers per section. There is no essay, no geometry and no sentence correction; an on-screen calculator is allowed only in Data Insights.",
+    rows: [
+      { label: "Questions", value: "64: Quant 21, Verbal 23, Data Insights 20" },
+      { label: "Time", value: "2 hr 15 min, 45 minutes per section" },
+      { label: "Break", value: "One optional 10-minute break" },
+      { label: "Score", value: "205 to 805 total; 60 to 90 per section" },
+      { label: "Calculator", value: "Data Insights only" },
+      { label: "Format", value: "Computer adaptive; up to 3 answer changes per section" },
+      { label: "Given by", value: "GMAC, at test centers or online" },
+    ],
+    basedOn: "GMAC's GMAT Focus Edition exam structure (as of October 2026)",
+    source: { name: "GMAC (mba.com)", url: "https://www.mba.com/exams/gmat-exam/about/exam-structure" },
+  },
+  netplus: {
+    answer:
+      "The CompTIA Network+ exam (N10-009) has a maximum of 90 questions in 90 minutes, multiple choice and performance-based, and you need 720 on a 100 to 900 scale to pass. It covers Networking Concepts 23%, Network Implementation 20%, Network Operations 19%, Network Security 14% and Network Troubleshooting 24%. N10-009 launched in June 2024; CompTIA estimates it will retire in 2027.",
+    rows: [
+      { label: "Questions", value: "Up to 90" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "720 on a 100 to 900 scale" },
+      { label: "Exam code", value: "N10-009" },
+      { label: "Valid for", value: "3 years" },
+      { label: "Given by", value: "CompTIA, at Pearson VUE or online" },
+    ],
+    basedOn: "the CompTIA Network+ N10-009 exam objectives",
+    source: { name: "CompTIA", url: "https://www.comptia.org/en-us/certifications/network/" },
+  },
+  cissp: {
+    answer:
+      "The CISSP exam is computerized adaptive in every language: 100 to 150 questions in 3 hours, answered in order with no going back. It is scored on a 0 to 1000 scale and 700 passes. The April 15, 2024 outline weights eight domains: Security and Risk Management 16%, Asset Security 10%, Security Architecture and Engineering 13%, Communication and Network Security 13%, Identity and Access Management 13%, Security Assessment and Testing 12%, Security Operations 13% and Software Development Security 10%. Certification also needs five years of paid work in two or more domains.",
+    rows: [
+      { label: "Questions", value: "100 to 150 (adaptive)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "700 on a 0 to 1000 scale" },
+      { label: "Domains", value: "8, weighted 10% to 16%" },
+      { label: "Experience", value: "5 years in 2 or more domains (or Associate of ISC2)" },
+      { label: "Given by", value: "ISC2, at Pearson VUE test centers" },
+    ],
+    basedOn: "the ISC2 CISSP exam outline effective April 15, 2024",
+    source: { name: "ISC2", url: "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" },
+  },
+  itil: {
+    answer:
+      "The ITIL 4 Foundation exam has 40 multiple-choice questions in 60 minutes. It is closed book and the pass mark is 65 percent, 26 of 40, with no negative marking. It covers key service management concepts, the seven guiding principles, the four dimensions, the service value system and value chain, the purpose of 15 practices and seven practices in detail. PeopleCert released ITIL (Version 5) in early 2026 and still offers ITIL 4 Foundation alongside it; its current plan is to retire all ITIL 4 modules on 31 December 2027.",
+    rows: [
+      { label: "Questions", value: "40 multiple choice, one answer each" },
+      { label: "Time", value: "60 minutes, closed book" },
+      { label: "Pass mark", value: "65 percent (26 of 40)" },
+      { label: "Biggest area", value: "Seven practices in detail, 17 of 40 marks" },
+      { label: "Prerequisites", value: "None" },
+      { label: "Newer version", value: "ITIL (Version 5) since early 2026; ITIL 4 modules planned to retire 31 December 2027" },
+      { label: "Given by", value: "PeopleCert, online or at a test centre" },
+    ],
+    basedOn: "the ITIL 4 Foundation candidate syllabus, PeopleCert's exam page and PeopleCert's ITIL FAQ (checked October 2026)",
+    source: { name: "PeopleCert", url: "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565" },
+  },
+  psm: {
+    answer:
+      "The Professional Scrum Master I (PSM I) assessment from Scrum.org has 80 questions in 60 minutes, taken online in English. Questions are multiple choice, multiple answer and true/false, all based on the Scrum Guide (2020 edition), and you need 85 percent, 68 of 80, to pass. No course is required and the certification does not expire.",
+    rows: [
+      { label: "Questions", value: "80" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Pass mark", value: "85% (68 of 80)" },
+      { label: "Question types", value: "Multiple choice, multiple answer, true/false" },
+      { label: "Based on", value: "The Scrum Guide (November 2020)" },
+      { label: "Renewal", value: "None: the certification does not expire" },
+      { label: "Given by", value: "Scrum.org, online" },
+    ],
+    basedOn: "Scrum.org's PSM I assessment page and the Scrum Guide (November 2020)",
+    source: { name: "Scrum.org", url: "https://www.scrum.org/assessments/professional-scrum-master-i-certification" },
+  },
+  capm: {
+    answer:
+      "The CAPM exam has 150 questions in 3 hours, of which 135 are scored and 15 are unscored pretest items. It follows PMI's CAPM Examination Content Outline: Project Management Fundamentals and Core Concepts 36%, Predictive Plan-Based Methodologies 17%, Agile Frameworks and Methodologies 20% and Business Analysis Frameworks 27%. PMI does not publish a pass mark: results are pass or fail with a rating for each domain from Above Target to Needs Improvement. Candidates need a secondary diploma and 23 hours of project management education.",
+    rows: [
+      { label: "Questions", value: "150 (135 scored)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Domains", value: "Fundamentals 36%, Predictive 17%, Agile 20%, Business Analysis 27%" },
+      { label: "Question types", value: "Multiple choice, multiple response, matching, hotspot, fill-in-the-blank" },
+      { label: "Result", value: "Pass or fail, plus a rating per domain" },
+      { label: "Eligibility", value: "Secondary diploma and 23 hours of project management education" },
+      { label: "Given by", value: "PMI, at Pearson VUE test centers or online" },
+    ],
+    basedOn: "the PMI CAPM Examination Content Outline (2023, current in 2026)",
+    source: { name: "PMI", url: "https://www.pmi.org/certifications/certified-associate-capm" },
+  },
+  gcdl: {
+    answer:
+      "The Google Cloud Digital Leader exam has 50 to 60 multiple choice and multiple select questions in 90 minutes and costs 99 USD. Google reports pass or fail and does not publish a passing score. The exam guide launched on August 12, 2026 weights Digital Transformation, Data Transformation, Innovating with AI, Modernize Infrastructure and Applications, and Trust and Security at about 18 percent each, and Scaling with Google Cloud Operations at about 10 percent.",
+    rows: [
+      { label: "Questions", value: "50 to 60" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "Pass or fail; no published cut score" },
+      { label: "Fee", value: "99 USD" },
+      { label: "Given by", value: "Google Cloud, online or at a test center" },
+    ],
+    basedOn: "the Cloud Digital Leader exam guide launched August 12, 2026",
+    source: { name: "Google Cloud", url: "https://cloud.google.com/learn/certification/cloud-digital-leader" },
+  },
+  ssccgl: {
+    answer:
+      "SSC CGL Tier 1 is a computer-based paper of 100 multiple-choice questions in 60 minutes, set by the Staff Selection Commission. It has four parts of 25 questions: General Intelligence and Reasoning, General Awareness, Quantitative Aptitude and English Comprehension. Each right answer earns 2 marks (200 in all) and each wrong answer loses 0.50 marks. Tier 1 is qualifying: candidates who clear the cut-off for their category go on to Tier 2, which decides the final merit.",
+    rows: [
+      { label: "Questions", value: "100 (25 per part)" },
+      { label: "Time", value: "60 minutes, no sectional timing" },
+      { label: "Marks", value: "2 per right answer, 200 in all" },
+      { label: "Negative marking", value: "0.50 per wrong answer" },
+      { label: "Parts", value: "Reasoning, General Awareness, Quantitative Aptitude, English" },
+      { label: "Result", value: "Qualifying cut-off by category, then Tier 2" },
+      { label: "Given by", value: "Staff Selection Commission, computer-based" },
+    ],
+    basedOn: "the SSC Combined Graduate Level Examination notice and Tier 1 syllabus",
+    source: { name: "Staff Selection Commission", url: "https://ssc.gov.in" },
+  },
+  rrbntpc: {
+    answer:
+      "RRB NTPC CBT 1 is the first-stage computer-based test for the Railway Recruitment Boards' Non-Technical Popular Categories posts, at both graduate and undergraduate level. It has 100 multiple-choice questions in 90 minutes: 40 on General Awareness, 30 on Mathematics and 30 on General Intelligence and Reasoning, with 1/3 mark deducted for each wrong answer. The minimum qualifying marks are 40 percent for UR and EWS, 30 percent for OBC and SC and 25 percent for ST; CBT 1 only shortlists candidates for CBT 2 on normalised marks and does not count in the final merit.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "90 minutes (120 for eligible PwBD with a scribe)" },
+      { label: "Sections", value: "General Awareness 40, Mathematics 30, Reasoning 30" },
+      { label: "Negative marking", value: "1/3 mark per wrong answer" },
+      { label: "Qualifying marks", value: "UR and EWS 40%, OBC and SC 30%, ST 25%" },
+      { label: "Next stage", value: "CBT 2, then a typing or aptitude test where the post needs one" },
+      { label: "Given by", value: "Railway Recruitment Boards (RRBs)" },
+    ],
+    basedOn: "the RRB NTPC notices CEN 05/2024 and 06/2024, the same pattern as CEN 06/2025 and 07/2025",
+    source: { name: "Railway Recruitment Boards", url: "https://www.rrbcdg.gov.in" },
+  },
+  ctet: {
+    answer:
+      "CTET Paper I is the Central Teacher Eligibility Test for teachers of Classes 1 to 5, conducted by CBSE. It has 150 one-mark multiple-choice questions in 2 hours 30 minutes, in five sections of 30: Child Development and Pedagogy, Language I, Language II, Mathematics and Environmental Studies, with half of each subject section on pedagogy. There is no negative marking. General candidates qualify with 60 percent (90 of 150); recruiters may give reserved categories a concession, usually to 55 percent, and the certificate is valid for life.",
+    rows: [
+      { label: "Questions", value: "150 MCQs, 1 mark each" },
+      { label: "Time", value: "2 hours 30 minutes" },
+      { label: "Sections", value: "CDP, Language I, Language II, Maths, EVS (30 each)" },
+      { label: "Negative marking", value: "None" },
+      { label: "Qualifying mark", value: "60% (90/150); recruiters may give reserved categories a concession, usually to 55%" },
+      { label: "Mode", value: "Pen and paper (OMR) in recent sessions" },
+      { label: "Certificate", value: "Valid for life" },
+      { label: "Conducted by", value: "CBSE, usually twice a year" },
+    ],
+    basedOn: "the CBSE CTET information bulletin and Paper I syllabus, checked October 2026",
+    source: { name: "CBSE CTET", url: "https://ctet.nic.in/" },
+  },
+  ibpspo: {
+    answer:
+      "The IBPS PO Preliminary Examination is one online objective paper of 100 questions in 60 minutes, with each section timed separately: English Language 30 questions in 20 minutes, Quantitative Aptitude 35 in 20 minutes and Reasoning Ability 35 in 20 minutes. Each question carries one mark and a quarter of a mark is deducted for every wrong answer. IBPS sets sectional and overall cutoffs for each category every year; Prelims is qualifying for the Mains and its marks do not count in the final merit list.",
+    rows: [
+      { label: "Questions", value: "100, five options each" },
+      { label: "Time", value: "60 minutes, 20 per section" },
+      { label: "Sections", value: "English 30, Quantitative Aptitude 35, Reasoning Ability 35" },
+      { label: "Marks", value: "1 per question, 100 in all" },
+      { label: "Negative marking", value: "1/4 mark per wrong answer" },
+      { label: "Result", value: "Sectional and overall cutoffs by category, then the Mains" },
+      { label: "Given by", value: "Institute of Banking Personnel Selection (IBPS), online" },
+    ],
+    basedOn: "the IBPS CRP PO/MT notification and Preliminary Examination pattern",
+    source: { name: "IBPS", url: "https://www.ibps.in" },
+  },
 };

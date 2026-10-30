@@ -35,8 +35,23 @@ import { NAPLAN7 } from "./exams/naplan7";
 import { OCNSW } from "./exams/ocnsw";
 import { VICSEL } from "./exams/vicsel";
 import { HSCMATHS } from "./exams/hscmaths";
+import { FAAPVT } from "./exams/faapvt";
+import { PSAT } from "./exams/psat";
+import { PRAXIS } from "./exams/praxis";
+import { GRE } from "./exams/gre";
+import { GMAT } from "./exams/gmat";
+import { NETPLUS } from "./exams/netplus";
+import { CISSP } from "./exams/cissp";
+import { ITIL } from "./exams/itil";
+import { PSM } from "./exams/psm";
+import { CAPM } from "./exams/capm";
+import { GCDL } from "./exams/gcdl";
+import { SSCCGL } from "./exams/ssccgl";
+import { RRBNTPC } from "./exams/rrbntpc";
+import { CTET } from "./exams/ctet";
+import { IBPSPO } from "./exams/ibpspo";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, SECPLUS, APLUS, AWS, AWSSAA, AZ900, CCNA, PMP, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
+export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, GRE, GMAT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, CCNA, PMP, CAPM, PSM, ITIL, SSCCGL, RRBNTPC, IBPSPO, CTET, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
 
 export function getExamV2(id: string): ExamV2Config {
   const exam = EXAMS_V2.find((e) => e.id === id);

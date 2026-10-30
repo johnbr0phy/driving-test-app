@@ -1,0 +1,33 @@
+{
+  "id": "pcoc",
+  "stateCode": "PCOC",
+  "idBase": 11600,
+  "prefix": "PCOC-",
+  "slug": "/boating-canada",
+  "landingPath": "/pcoc-practice-test",
+  "dataFile": "data/pcoc-questions.json",
+  "name": "PCOC Practice Test",
+  "shortName": "Boating Canada",
+  "examLabel": "PCOC test",
+  "fullName": "Pleasure Craft Operator Card test (Canada)",
+  "icon": "sailboat",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "pcocRules", "label": "Regulations & Licensing", "perTest": 7, "pool": 28, "segment": "REG"},
+    {"key": "pcocEquipment", "label": "Minimum Safety Equipment", "perTest": 10, "pool": 40, "segment": "EQP"},
+    {"key": "pcocBefore", "label": "Before You Go", "perTest": 8, "pool": 32, "segment": "BEF"},
+    {"key": "pcocRoadRules", "label": "Rules of the Road", "perTest": 10, "pool": 40, "segment": "ROR"},
+    {"key": "pcocAids", "label": "Buoys & Navigation Aids", "perTest": 7, "pool": 28, "segment": "AID"},
+    {"key": "pcocEmergencies", "label": "Emergencies & Cold Water", "perTest": 8, "pool": 32, "segment": "EMG"}
+  ],
+  "notes": "4 tests x 50 = 200, every item in exactly one test. Real test: 50 questions, 75% (38 of 50). The 36-question format was replaced around 2011.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 11601, "name": "Regulations & Before You Go", "categories": ["pcocRules", "pcocBefore"], "size": 60},
+    {"setNumber": 2, "id": 11602, "name": "Minimum Safety Equipment", "categories": ["pcocEquipment"], "size": 40},
+    {"setNumber": 3, "id": 11603, "name": "Rules of the Road", "categories": ["pcocRoadRules"], "size": 40},
+    {"setNumber": 4, "id": 11604, "name": "Buoys & Navigation Aids", "categories": ["pcocAids"], "size": 28},
+    {"setNumber": 5, "id": 11605, "name": "Emergencies & Cold Water", "categories": ["pcocEmergencies"], "size": 32}
+  ]
+}

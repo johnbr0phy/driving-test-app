@@ -1,0 +1,650 @@
+[
+ {
+  "id": "PSAT-RW-128",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Historian Amara Diallo's account of the eighteenth-century dispute between two rival trading companies is notably ______. She presents the arguments of merchants on both sides in equal detail and leaves readers to reach their own conclusions about who was in the right.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "cursory",
+   "partisan",
+   "evenhanded",
+   "speculative"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Giving both sides equal detail and withholding judgment is the definition of an evenhanded account. Partisan means favoring one side, speculative suggests guesswork the text does not describe, and cursory, meaning hasty, conflicts with \"equal detail.\""
+ },
+ {
+  "id": "PSAT-RW-129",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "Although the fossil was only a small fragment of jawbone, paleontologist Teodor Haas insisted that its importance was hardly ______. The pattern of the teeth placed the species millions of years earlier than any known relative, forcing scientists to redraw the group's family tree.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "profound",
+   "original",
+   "verifiable",
+   "negligible"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "\"Although\" sets up a contrast with the fossil's small size: small, yet its importance was hardly negligible, meaning it was very important, as the redrawn family tree shows. \"Hardly profound\" would say the opposite, and verifiable and original do not complete the contrast with size."
+ },
+ {
+  "id": "PSAT-RW-130",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Many of composer Lucia Ferrante's early symphonies ______ the folk songs she heard in her grandmother's village. Listeners can recognize fragments of harvest tunes and lullabies woven into the strings and woodwinds, transformed but never hidden.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "parody",
+   "predate",
+   "dispense with",
+   "draw on"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "Fragments of the folk songs appear throughout the symphonies, so the music uses them as a source, or draws on them. Dispensing with them would mean leaving them out, nothing suggests mockery, and the songs came before the symphonies rather than the reverse."
+ },
+ {
+  "id": "PSAT-RW-131",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "Early published accounts of the discovery ______ the role of laboratory technician Mei Lin, crediting the result entirely to the project's lead scientist. Only decades later, after Lin's notebooks were donated to an archive, did historians recognize that she had designed the experiment that made the discovery possible.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "obscured",
+   "highlighted",
+   "replicated",
+   "exaggerated"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The early accounts credited someone else entirely, hiding Lin's contribution until her notebooks surfaced, so they obscured her role. Highlighted and exaggerated suggest her role was emphasized, the opposite of what happened, and replicated refers to repeating an experiment."
+ },
+ {
+  "id": "PSAT-RW-132",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "craftStructure",
+  "skill": "Text structure and purpose",
+  "basics": "textStructure",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "Many cities have tried to shrink their pigeon populations by banning people from feeding the birds. __Yet such bans rarely reduce pigeon numbers for long, because the birds find plenty of food in overflowing trash bins and discarded takeout.__ When one city paired its feeding ban with lidded bins and more frequent litter collection, its pigeon count fell by nearly half over five years.",
+  "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+  "options": [
+   "It offers evidence that pigeon populations in cities are larger than most residents believe.",
+   "It argues that feeding bans should be replaced entirely by more frequent litter collection.",
+   "It explains why people continue to feed pigeons even in cities where it has been banned.",
+   "It identifies a weakness in a common approach, which the rest of the text shows how to address."
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The underlined sentence explains why feeding bans alone fall short, and the final sentence shows a city fixing that gap with lidded bins and litter collection. It does not estimate population size, the city kept its ban rather than replacing it, and the sentence is about where pigeons find food, not why people feed them."
+ },
+ {
+  "id": "PSAT-RW-133",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "craftStructure",
+  "skill": "Text structure and purpose",
+  "basics": "authorPurpose",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "For about two weeks each June, thousands of fireflies of one species in the Great Smoky Mountains flash in near unison, so that whole hillsides pulse with light and then go dark together. Most fireflies flash on their own schedules. Researchers who tested how females of this species respond to flashing lights have found that females answer most reliably when the flashes are synchronized, which suggests that flashing together helps females pick out males of their own species.",
+  "stem": "Which choice best states the main purpose of the text?",
+  "options": [
+   "To argue that synchronized flashing is more common among fireflies than scientists thought",
+   "To describe an unusual behavior and present a possible explanation for it",
+   "To describe the research methods used to count fireflies in the Great Smoky Mountains",
+   "To explain why most species of fireflies flash on their own schedules"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "The text describes the synchronized flashing, notes that it is unusual, and then reports research suggesting why it happens. It says most fireflies do not synchronize, gives no reason for their independent flashing, and never discusses counting fireflies."
+ },
+ {
+  "id": "PSAT-RW-134",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "craftStructure",
+  "skill": "Cross-text connections",
+  "basics": "crossText",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "**Text 1**\n\nSeveral recent trials of a four-day workweek have reported encouraging results. In one trial involving dozens of companies, employees worked about 20 percent fewer hours, yet the companies reported that output stayed the same or rose. Economist Rafael Ortiz argues that such findings show that shorter weeks can raise productivity across the economy.\n\n**Text 2**\n\nThe companies in most four-day-week trials chose to take part, and most were offices whose managers expected the change to work. Labor researcher Hana Sato notes that such firms may be unusually well suited to a shorter week. Whether hospitals, factories, or stores, where staff must cover set hours, would see the same results remains largely untested.",
+  "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+  "options": [
+   "By noting that the trials may not represent workplaces in general, so their results may not apply across the economy",
+   "By claiming that a four-day workweek reduces productivity because employees work about 20 percent fewer hours",
+   "By agreeing that the trials show higher productivity in every type of workplace, including hospitals and factories",
+   "By arguing that the companies in the trials exaggerated their output to make the four-day week look successful"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Sato points out that the trial companies chose to join and were mostly offices, so the results may not carry over to workplaces like hospitals or factories. She does not accuse the companies of exaggerating, she says other workplaces are untested, and she makes no claim that productivity falls."
+ },
+ {
+  "id": "PSAT-RW-135",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Critics who knew only sculptor Ingrid Solberg's early work found her 2019 exhibition thoroughly ______. The delicate porcelain birds that had made her name were gone, replaced by massive forms of rusted steel that towered over the gallery's visitors.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "fragile",
+   "predictable",
+   "unfamiliar",
+   "derivative"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "The new work was completely different from what those critics knew, so it seemed unfamiliar. Derivative means copied from others, predictable conflicts with the sudden change, and fragile describes the old porcelain birds rather than the massive steel forms."
+ },
+ {
+  "id": "PSAT-RW-136",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "infoIdeas",
+  "skill": "Central ideas and details",
+  "basics": "mainIdea",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "In a study of how students learn, psychologists had one group read a short science passage four times and another group read it once and then take three practice quizzes on it. Right after the session, the rereading group felt more confident about remembering the material. A week later, however, the quiz group recalled far more of the passage than the rereading group did.",
+  "stem": "Which choice best states the main idea of the text?",
+  "options": [
+   "Science passages are harder for students to remember than passages on other subjects.",
+   "Students who read a passage several times are more confident and remember more of it a week later.",
+   "Testing oneself on material helps people remember it longer than rereading it does, even though rereading feels more effective.",
+   "Practice quizzes make students less confident because they reveal how little the students know."
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "The rereaders felt more confident, but a week later the quiz group remembered far more, so self-testing works better despite feeling less effective. The rereaders did not remember more, the study compares no subjects, and the text never says quizzes lowered confidence."
+ },
+ {
+  "id": "PSAT-RW-137",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "infoIdeas",
+  "skill": "Command of evidence (textual)",
+  "basics": "claimSupport",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "An ancient road in a mountainous region runs almost perfectly straight for about 80 kilometers between two hilltop forts. Archaeologist Pavel Novak claims that the road was built for military purposes, to move troops quickly between the forts.",
+  "stem": "Which finding, if true, would most directly weaken Novak's claim?",
+  "options": [
+   "Soldiers' equipment, including weapons and armor fittings, has been found in ditches beside the road near both forts.",
+   "Pottery and coins buried beneath the road's oldest sections show that those sections were built centuries before either fort existed.",
+   "Similar straight roads connecting forts have been found in two other regions controlled by the same ancient state.",
+   "The road is wide enough for several soldiers to march side by side, wider than most roads from the same period."
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "If the road was built centuries before the forts, it cannot have been built to connect them, which undercuts Novak's claim. Similar roads elsewhere, soldiers' equipment along the road, and a width suited to marching troops would all tend to support the claim instead."
+ },
+ {
+  "id": "PSAT-RW-138",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "infoIdeas",
+  "skill": "Command of evidence (quantitative)",
+  "basics": "readingTable",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "An energy analyst examined the share of electricity in one region that came from solar and wind power in three years. The analyst claims that solar power's share grew more than wind power's share between 2016 and 2022.\n\n| Year | Share from solar (%) | Share from wind (%) |\n|---|---|---|\n| 2016 | 2 | 8 |\n| 2019 | 5 | 10 |\n| 2022 | 11 | 12 |",
+  "stem": "Which choice most effectively uses data from the table to support the analyst's claim?",
+  "options": [
+   "Wind's share rose from 8 percent in 2016 to 10 percent in 2019 and then to 12 percent in 2022.",
+   "In every year shown, a larger share of the region's electricity came from wind than from solar.",
+   "In 2022, solar and wind together supplied 23 percent of the region's electricity.",
+   "From 2016 to 2022, solar's share rose by 9 percentage points, while wind's share rose by only 4 percentage points."
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The claim compares growth, so the support must compare how much each share rose: solar went from 2 to 11 percent, up 9 points, and wind from 8 to 12, up 4. The other choices give accurate figures but describe levels or only one source, not which grew more."
+ },
+ {
+  "id": "PSAT-RW-139",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "infoIdeas",
+  "skill": "Inferences",
+  "basics": "inference",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "On Caribbean islands where predators hunt on the ground, one species of lizard spends most of its time high in shrubs, where shorter legs help it grip thin branches. On islands without such predators, the lizards stay mostly on the ground, where longer legs let them sprint. If ground-hunting predators were introduced to an island that had none, researchers would therefore expect that over many generations ______",
+  "stem": "Which choice most logically completes the text?",
+  "options": [
+   "the lizards on that island would tend to have longer legs.",
+   "the lizards on that island would tend to have shorter legs.",
+   "the predators on that island would begin hunting in shrubs.",
+   "the lizards would leave the island for one without predators."
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "With ground predators present, lizards move up into shrubs, where shorter legs are an advantage, so over generations their legs would be expected to shorten. Longer legs suit the ground, which the lizards would be avoiding, and the text says nothing about predators changing habits or lizards leaving."
+ },
+ {
+  "id": "PSAT-RW-140",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "infoIdeas",
+  "skill": "Central ideas and details",
+  "basics": "inference",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "The following text is from a story. Anselm, an elderly clockmaker, is training an apprentice named Tomas.\n\nTomas held up the tiny gear, proud that he had cut it in a single morning. Anselm turned it under the lamp for a long time without speaking. Then he set it down beside one of his own, older and dull with use. \"Yours is sharper,\" he said. \"Mine has turned ten thousand times without a fault. Come back when yours can say the same.\"",
+  "stem": "Based on the text, what does Anselm most value in a gear?",
+  "options": [
+   "The speed with which it was cut and finished",
+   "Its proven reliability over long use",
+   "The age of the clock it belongs to",
+   "Its sharp, bright appearance"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Anselm concedes that Tomas's gear is sharper but praises his own because it has turned ten thousand times without a fault, so reliability proven by use is what he values. He is unimpressed by speed or sharpness, and he never mentions the age of any clock."
+ },
+ {
+  "id": "PSAT-RW-141",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "infoIdeas",
+  "skill": "Central ideas and details",
+  "basics": "findingDetail",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Japanese artist Katsushika Hokusai's print The Great Wave off Kanagawa, made around 1831, shows a towering wave about to crash over three boats, with Mount Fuji small in the distance. It is a woodblock print: the image was carved into wooden blocks, one for each color, which were inked and pressed onto paper. Because the same blocks could print the image again and again, thousands of impressions were made, and many museums around the world own one.",
+  "stem": "According to the text, why do many museums own a copy of The Great Wave off Kanagawa?",
+  "options": [
+   "Because it was printed from carved blocks that could be reused to make many impressions",
+   "Because Hokusai painted a separate original for each museum that asked for one",
+   "Because the image shows Mount Fuji, which is a popular subject for museums",
+   "Because the print was made around 1831 and has become valuable with age"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The text explains that reusable carved blocks allowed thousands of impressions, which is why many museums have one. Hokusai did not paint separate originals, and the date and the image of Mount Fuji do not explain why copies are common."
+ },
+ {
+  "id": "PSAT-RW-142",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "infoIdeas",
+  "skill": "Inferences",
+  "basics": "inference",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "Stars twinkle because their light reaches Earth from a single tiny point, and moving pockets of air bend that thin beam first one way and then another. Planets are much closer, so through the atmosphere they appear as tiny disks rather than points. Light from different parts of the disk is bent in different directions, and these shifts largely cancel out. An observer who sees a bright point of light high in the sky that shines steadily without twinkling is therefore most likely ______",
+  "stem": "Which choice most logically completes the text?",
+  "options": [
+   "looking at a planet rather than a star.",
+   "observing on a night with very turbulent air.",
+   "looking at a star that is unusually close to Earth.",
+   "seeing a star whose light is bent in one direction."
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The text says planets shine steadily because the bending of light from their disks cancels out, while stars twinkle, so a steady point is most likely a planet. Turbulent air would increase twinkling, and the text never suggests that any star appears as a disk or shines steadily."
+ },
+ {
+  "id": "PSAT-RW-143",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "conventions",
+  "skill": "Boundaries",
+  "basics": "listIntroCommas",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Arctic ground squirrels hibernate for as long as eight months a year. Because the animal's body temperature can fall slightly below the freezing point of water during ______ it uses so little energy that the fat it stored over the summer lasts until spring.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "hibernation:",
+   "hibernation,",
+   "hibernation;",
+   "hibernation. It"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "An introductory dependent clause beginning with \"Because\" is followed by a comma before the main clause. A semicolon or period would cut the dependent clause off as a fragment, and a colon is not used after a dependent clause."
+ },
+ {
+  "id": "PSAT-RW-144",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "conventions",
+  "skill": "Boundaries",
+  "basics": "commaInterrupters",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "The Hope Diamond, a deep blue gem of about 45 ______ has been on display at the Smithsonian's National Museum of Natural History in Washington, DC, since 1958.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "carats:",
+   "carats",
+   "carats,",
+   "carats;"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "The phrase \"a deep blue gem of about 45 carats\" interrupts the sentence and opens with a comma, so it must close with a comma too. Leaving it out runs the phrase into the verb, and a semicolon or colon would split the subject from its verb \"has been.\""
+ },
+ {
+  "id": "PSAT-RW-145",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "subjectVerb",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "The results of the national survey, which asked more than two thousand teenagers about their sleep habits on school nights, ______ that most of them get less than eight hours of sleep.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "suggest",
+   "suggests",
+   "is suggesting",
+   "has suggested"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The subject is the plural \"results\"; the clause about the survey and teenagers only interrupts it. A plural subject takes the plural verb \"suggest,\" while the other choices are singular."
+ },
+ {
+  "id": "PSAT-RW-146",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "verbTense",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "The Rosetta Stone, ______ by French soldiers in Egypt in 1799, carries the same decree written in three different scripts.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "which found",
+   "found",
+   "finding",
+   "it was found"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "The phrase describes the stone, which was found by soldiers, so the past participle \"found\" is correct. \"Finding\" would mean the stone did the finding, \"it was found\" creates a second main clause without a joining word, and \"which found\" also makes the stone the one doing the finding."
+ },
+ {
+  "id": "PSAT-RW-147",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "pronounCase",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "After nearly a year of rehearsals in borrowed school gyms, the city's new youth orchestra performed ______ first concert in the restored opera house downtown.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "they're",
+   "its",
+   "it's",
+   "their"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "\"Orchestra\" is a singular noun here, the group acting as one, so the singular possessive \"its\" is correct. \"Their\" is plural, while \"it's\" and \"they're\" are contractions for \"it is\" and \"they are.\""
+ },
+ {
+  "id": "PSAT-RW-148",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "conventions",
+  "skill": "Boundaries",
+  "basics": "commaInterrupters",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "Most of the world's volcanoes form along the edges of tectonic plates, where plates pull apart or collide. The volcanoes of ______ rose in the middle of the Pacific Plate, above a hot spot deep in Earth's mantle.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "Hawaii, however",
+   "Hawaii; however,",
+   "Hawaii, however,",
+   "Hawaii however,"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "\"However\" interrupts a single clause here, so it needs a comma on both sides. A semicolon would cut off \"The volcanoes of Hawaii\" from its verb, and the other choices leave out one of the two commas."
+ },
+ {
+  "id": "PSAT-RW-149",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "verbTense",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "Every summer, volunteers at the wildlife refuge count the sea turtle nests on the beach and ______ the location of each nest on a map.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "will have marked",
+   "mark",
+   "had marked",
+   "marked"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "The sentence describes something that happens every summer, so the verb must stay in the present tense to match \"count.\" The past and future forms break that parallel structure."
+ },
+ {
+  "id": "PSAT-RW-150",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "expressionIdeas",
+  "skill": "Transitions",
+  "basics": "transitions",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "Scholars in medieval Europe knew that Earth is a sphere; they had learned it from ancient Greek and Arabic texts, and the idea appears in many textbooks of the period. ______ the popular belief that people before Columbus thought Earth was flat spread widely in the nineteenth century and is still repeated today.",
+  "stem": "Which choice completes the text with the most logical transition?",
+  "options": [
+   "As a result,",
+   "Similarly,",
+   "Despite this,",
+   "For instance,"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Medieval scholars knew Earth was round, yet the myth spread anyway, so a contrast transition is needed. \"As a result\" would make the myth a consequence of their knowledge, and \"similarly\" and \"for instance\" present the myth as agreeing with or illustrating what came before."
+ },
+ {
+  "id": "PSAT-RW-151",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "expressionIdeas",
+  "skill": "Transitions",
+  "basics": "transitions",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Some trees have adapted to survive, and even depend on, wildfires. ______ the cones of the jack pine stay sealed shut with resin until the heat of a fire melts it, releasing the seeds onto freshly cleared ground.",
+  "stem": "Which choice completes the text with the most logical transition?",
+  "options": [
+   "Nevertheless,",
+   "For example,",
+   "In conclusion,",
+   "Meanwhile,"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "The jack pine is a specific case of a tree adapted to fire, so \"for example\" fits. \"Nevertheless\" signals contrast, \"in conclusion\" signals a summary, and \"meanwhile\" signals something happening at the same time."
+ },
+ {
+  "id": "PSAT-RW-152",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "expressionIdeas",
+  "skill": "Transitions",
+  "basics": "transitions",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "The Sahara has not always been a desert. ______ rock paintings found deep in the desert show giraffes, herds of cattle, and even people swimming, scenes from thousands of years ago when the region was green.",
+  "stem": "Which choice completes the text with the most logical transition?",
+  "options": [
+   "Even so,",
+   "However,",
+   "Otherwise,",
+   "Indeed,"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The paintings back up the claim that the Sahara was once green, so a transition that adds supporting evidence, \"indeed,\" fits. \"However\" and \"even so\" signal a contrast, and \"otherwise\" suggests an alternative."
+ },
+ {
+  "id": "PSAT-RW-153",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "expressionIdeas",
+  "skill": "Rhetorical synthesis",
+  "basics": "notesToSentence",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "While researching a topic, a student has taken the following notes:\n\n- Researchers fitted 30 coyotes living in a large city with GPS collars.\n- They wanted to learn how coyotes avoid people while living among them.\n- The coyotes were most active between midnight and 4 a.m.\n- Most of them stayed in parks, cemeteries, and along rail lines.\n- Only a few were ever recorded in busy shopping areas.\n\nThe student wants to present the aim and method of the study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "options": [
+   "To learn how coyotes avoid people while living among them, researchers tracked 30 city coyotes using GPS collars.",
+   "Coyotes living in a large city mostly stayed in parks, cemeteries, and along rail lines, and few entered shopping areas.",
+   "Researchers found that city coyotes are active at night and prefer parks, cemeteries, and rail lines to busy streets.",
+   "The 30 coyotes in the study were most active between midnight and 4 a.m., when few people are outside in the city."
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The aim is learning how coyotes avoid people, and the method is GPS collars on 30 coyotes; only the sentence about tracking 30 city coyotes with GPS collars to learn how they avoid people gives both. The other choices report the study's findings rather than its purpose and method."
+ },
+ {
+  "id": "PSAT-RW-154",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "upper",
+  "domain": "expressionIdeas",
+  "skill": "Rhetorical synthesis",
+  "basics": "notesToSentence",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "While researching a topic, a student has taken the following notes:\n\n- Hedy Lamarr was a film actress in the 1930s and 1940s.\n- In 1942 she and composer George Antheil received a patent for a frequency-hopping system meant to guide torpedoes.\n- The US Navy did not use the system during World War II.\n- Frequency hopping later became part of some wireless communication technologies.\n- In 1997 Lamarr and Antheil received a Pioneer Award from the Electronic Frontier Foundation for the invention.\n\nThe student wants to emphasize how long it took for Lamarr and Antheil's invention to be honored. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "options": [
+   "Lamarr and Antheil patented their frequency-hopping system in 1942, but they were not given a Pioneer Award for it until 1997, more than fifty years later.",
+   "In 1942 film actress Hedy Lamarr and composer George Antheil received a patent for a frequency-hopping system meant to guide torpedoes.",
+   "The frequency-hopping system patented by Lamarr and Antheil was not used by the US Navy but later became part of wireless technology.",
+   "Hedy Lamarr, a film actress, and George Antheil, a composer, received a Pioneer Award from the Electronic Frontier Foundation."
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "To show how long recognition took, a sentence must connect the 1942 patent with the 1997 award; only the sentence naming both years does, and it states the gap of more than fifty years. The others mention only one of the two dates or none."
+ }
+]

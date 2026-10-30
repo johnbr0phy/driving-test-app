@@ -1,0 +1,31 @@
+{
+  "id": "barber",
+  "stateCode": "BARBER",
+  "idBase": 11100,
+  "prefix": "BARBER-",
+  "slug": "/barber",
+  "landingPath": "/barber-practice-test",
+  "dataFile": "data/barber-questions.json",
+  "name": "Barber Practice Test",
+  "shortName": "Barber",
+  "examLabel": "Barber state board",
+  "fullName": "Barber state board written (theory) exam",
+  "icon": "scissors",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "barInfection", "label": "Infection Control & Safety", "perTest": 8, "pool": 32, "segment": "INF"},
+    {"key": "barAnatomy", "label": "Anatomy, Hair & Skin Disorders", "perTest": 7, "pool": 28, "segment": "ANA"},
+    {"key": "barChemistry", "label": "Chemistry of Barbering Products", "perTest": 3, "pool": 12, "segment": "CHE"},
+    {"key": "barTools", "label": "Implements & Equipment", "perTest": 5, "pool": 20, "segment": "TOO"},
+    {"key": "barConsult", "label": "Consultation, Shampoo & Scalp Care", "perTest": 5, "pool": 20, "segment": "CON"},
+    {"key": "barCutting", "label": "Haircutting & Head Shaving", "perTest": 7, "pool": 28, "segment": "CUT"},
+    {"key": "barStyling", "label": "Hairstyling & Natural Hair", "perTest": 3, "pool": 12, "segment": "STY"},
+    {"key": "barChemical", "label": "Haircolor, Perms & Relaxers", "perTest": 5, "pool": 20, "segment": "CHM"},
+    {"key": "barShaving", "label": "Shaving & Facial Hair Design", "perTest": 4, "pool": 16, "segment": "SHV"},
+    {"key": "barFacial", "label": "Facials & Electrotherapy", "perTest": 3, "pool": 12, "segment": "FAC"}
+  ],
+  "notes": "NIC domains: Scientific Concepts 35% -> INF+ANA+CHE 18/50 (36%); Implements 10% -> TOO 5/50; Hair Care Services 40% -> CON+CUT+STY+CHM 20/50; Facial Hair and Skin Care 15% -> SHV+FAC 7/50 (14%). 4 tests x 50, training sets via testSets(11100, 4): one set per test, 8 dashboard steps.",
+  "trainingSets": "testSets(11100, 4): ids 11101-11104, one per practice test"
+}

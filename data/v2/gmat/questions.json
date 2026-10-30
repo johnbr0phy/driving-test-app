@@ -1,0 +1,4129 @@
+{
+  "stimuli": [
+    {
+      "id": "GMAT-RC1",
+      "title": "Corporate venture capital",
+      "text": "Large companies have long invested in young firms, but the motives behind these investments differ from those of independent venture capitalists. An independent fund succeeds only if its investments return more cash than they cost, usually within about a decade. A corporate venture arm, by contrast, often accepts a lower financial return in exchange for a strategic benefit: an early look at a technology that could reshape the parent company's market.\n\nThis strategic motive has a cost that researchers have only recently measured. Startups backed by corporate investors tend to be valued more highly at each funding round, which looks like good news for founders. Yet several studies find that these startups are somewhat less likely to be acquired by a company other than their corporate backer. Rival buyers, it seems, hesitate to bid for a firm whose investor may already know its secrets or may hold the right to match any offer.\n\nSome founders respond by limiting what a corporate investor may see, refusing it a board seat or keeping key technical data out of its reach. Such limits protect a startup's options, but they also weaken the very relationship that made the corporate investor attractive, since much of the value a large company offers, such as access to its distribution network or its engineers, depends on close cooperation. The choice of investor, in short, is less a question of who offers the most money than of which future the founders want to keep open."
+    },
+    {
+      "id": "GMAT-RC2",
+      "title": "The honeybee waggle dance",
+      "text": "For decades, biologists treated the honeybee waggle dance as a precise map. A forager returning to the hive runs a straight line whose angle from vertical gives the direction of a food source relative to the sun, and whose duration signals its distance. Recruits that follow the dance then fly out and, in principle, find the food.\n\nField experiments have complicated this picture. When researchers disrupted dances by turning hives on their sides, so that dancers could not orient their runs, colonies in some landscapes gathered almost as much food as normal colonies. In landscapes where food was patchy and scarce, however, the disrupted colonies did markedly worse. The dance, it appears, matters most when good food is hard to find; in rich landscapes, recruits can do nearly as well by relying on scent and on their own searching.\n\nThese findings do not mean the dance is a poor signal. Measurements show that individual dances are noisy, with successive runs pointing in slightly different directions, and that recruits often need several trips to locate a source. A colony, though, averages over many dancers and many recruits, so imprecise individual messages still steer the colony's foraging effort as a whole toward its richest patches."
+    },
+    {
+      "id": "GMAT-RC3",
+      "title": "Default options in retirement saving",
+      "text": "When employers enroll workers in a retirement plan automatically, letting them opt out rather than requiring them to sign up, participation rises sharply, in some firms from under half of new hires to over 90 percent. Economists in the behavioral tradition took this as evidence that many workers want to save but fail to act, and that a well-chosen default can help them do what they would choose with more time and attention.\n\nLater work added a complication. Automatically enrolled workers tended to stay at the default contribution rate, often a modest 3 percent of pay, even though many of them would previously have chosen a higher rate on their own. Some ended up saving less than they would have under the old system. The default, it turned out, set not only whether people saved but how much.\n\nPlan designers have since experimented with automatic escalation, in which contributions rise by a percentage point each year until they reach a higher ceiling. Early results suggest that most workers accept the increases as readily as they accepted enrollment. If so, the lesson of the first studies needs restating: defaults do not simply rescue people from inaction; they carry the designer's judgment about what people should do, which makes choosing them a responsibility rather than a technicality."
+    },
+    {
+      "id": "GMAT-RC4",
+      "title": "Printing and English spelling",
+      "text": "It is often said that the printing press fixed English spelling. The claim is half right. Printers did spread uniform spellings faster than scribes ever could, but for more than a century after the first English presses opened in the 1470s, spelling in printed books remained strikingly loose. The same compositor might set a word two ways on one page, and some did so on purpose: before printers took up the practice of widening the spaces between words to fill out a line, adding or dropping a letter was a convenient way to make each line reach the right margin.\n\nWhat finally narrowed the variation was less the press itself than the people and institutions around it. Schoolmasters published spelling books that were widely used in teaching; dictionary makers, culminating in Samuel Johnson in 1755, offered word lists that printers could treat as authorities; and large printing houses issued house rules so that work done by many hands would look consistent. The press made a fixed spelling possible, and it made inconsistency more visible, but the decision to fix spelling was a social one."
+    },
+    {
+      "id": "GMAT-RC5",
+      "title": "Dynamic pricing and fairness",
+      "text": "Economists generally welcome dynamic pricing, in which a seller adjusts prices as demand changes. Higher prices at peak times ration scarce capacity toward the buyers who value it most, and they give sellers a reason to add capacity when it is most needed. Yet customers often react to price increases during a surge with anger that seems out of proportion to the sums involved, and firms that ignore this reaction can pay heavily.\n\nResearch on perceived fairness helps explain the anger. People tend to judge a price against a reference point, usually the price they are used to paying, and they accept increases that seem to reflect a seller's higher costs far more readily than increases that seem to exploit a buyer's urgent need. A snow shovel that costs more after a storm violates this norm, since the shop's costs have not changed; a shovel that costs more because steel prices rose does not.\n\nFirms have learned to work around the norm rather than against it. Some present the normal price as the peak price and offer discounts in quiet periods, which shifts the reference point. Others tie surges to visible costs, such as paying drivers more to come out in bad weather. Neither tactic changes the economics of dynamic pricing, but each changes how customers read it."
+    },
+    {
+      "id": "GMAT-RC6",
+      "title": "Finding planets by transit",
+      "text": "Most of the planets known outside our solar system were found by the transit method: a telescope watches thousands of stars at once and records the slight, regular dimming that occurs when a planet passes in front of its star. The method has been remarkably productive, but it sees the galaxy through a narrow window. A transit can be observed only when a planet's orbit is aligned almost edge-on to our line of sight, and the closer a planet orbits its star, the more likely that alignment is. A planet orbiting close in also transits more often, so a short survey can catch several passes and confirm the signal.\n\nAs a result, early catalogs were crowded with large planets on tight orbits, and some astronomers briefly concluded that such planets were common. Statistical corrections have since reversed much of that impression. Once the odds of detection are accounted for, close-orbiting giant planets turn out to be rare, accompanying perhaps one star in a hundred, while smaller planets on wider orbits are far more numerous than the raw counts suggest. The lesson extends beyond astronomy: a sample tells us about the world only after we understand how the sample was drawn."
+    },
+    {
+      "id": "GMAT-RC7",
+      "title": "Reviving a language",
+      "text": "Efforts to revive endangered languages have often begun with documentation: linguists record the last fluent speakers, write grammars and compile dictionaries. Such work preserves a language for scholars, but it rarely produces new speakers. A language survives only if children acquire it, and children acquire languages they hear used for real purposes, not languages they meet in archives.\n\nThe revival of Hawaiian illustrates the difference. By the 1980s, fewer than fifty children spoke the language. Parents and teachers then founded preschools in which caregivers used only Hawaiian, followed by immersion schools in which the whole curriculum was taught in it. Since then thousands of students have been educated in Hawaiian, and a generation of parents is raising children who hear it at home.\n\nThe immersion model is demanding. It requires teachers fluent enough to teach mathematics or science in the language, along with books and technical terms that may not yet exist. Documentation, far from being made obsolete, becomes indispensable at this stage, since the grammars and recordings that once served only scholars now supply the raw material from which teachers build lessons."
+    },
+    {
+      "id": "GMAT-RC8",
+      "title": "The paint tube and Impressionism",
+      "text": "Accounts of Impressionism often credit a humble invention, the collapsible metal paint tube, introduced in the 1840s. Before it, painters stored ground pigment mixed with oil in pig bladders that leaked and dried out, which made sustained work outdoors awkward. The tube kept paint fresh and portable, and Renoir is reported to have said that without it there would have been no Impressionism.\n\nSuch remarks deserve some skepticism. Painters had sketched outdoors in oils long before the tube, and many Impressionist canvases that look spontaneous were finished, or painted entirely, in the studio. Yet the tube mattered in a less obvious way. The manufacturers who sold paint in tubes also sold new, intense pigments, such as cobalt violet and synthetic ultramarine, ready-mixed and consistent from one tube to the next. Painters could therefore lay bright colors directly on the canvas without first grinding and mixing them, a practice that helps account for the high-keyed palette the movement is known for."
+    },
+    {
+      "id": "GMAT-RC9",
+      "title": "Network effects",
+      "text": "A platform such as a ride-hailing app or an online marketplace becomes more valuable to each user as more users join, since buyers attract sellers and sellers attract buyers. This network effect is often said to produce winner-take-all markets: once one platform leads, newcomers cannot match its value, and the leader's position becomes unassailable.\n\nThe history of such markets is less tidy. Several once-dominant platforms lost their lead within a few years, among them early social networks and, in some countries, online auction sites. Two features help explain why network effects protect some leaders and not others. The first is multihoming: if users can easily use several platforms at once, as many drivers and riders do with competing ride-hailing apps, a newcomer need not pull users away from the leader to attract them. The second is locality. A ride-hailing network is valuable only within a city, so a rival can win one city at a time, whereas a messaging network that connects people across the world offers a newcomer no such foothold.\n\nNetwork effects, then, raise the cost of entry, but whether they lock up a market depends on how users behave and on how far the network's value extends."
+    },
+    {
+      "id": "GMAT-RC10",
+      "title": "Coral heat tolerance",
+      "text": "Corals bleach when water that is too warm causes them to expel the algae living in their tissues, which supply most of their food. A coral that stays bleached for long starves. For years it was assumed that each coral species had a fixed heat tolerance, so that a given amount of warming would kill reefs in a predictable way.\n\nSurveys after recent marine heat waves suggest more flexibility. Corals of a single species on reefs that regularly experience brief spikes in temperature often survive heat that kills the same species on steadier reefs. Experiments point to two sources of this tolerance: some corals host strains of algae that cope better with heat, and corals exposed to moderate stress appear to adjust their own cellular responses.\n\nThe finding is hopeful but limited. Tolerance gained in these ways raises the temperature a coral can survive by perhaps one degree Celsius, while the warming projected for many reefs this century is larger. Flexibility may buy reefs time; it does not make them safe."
+    },
+    {
+      "id": "GMAT-MSR1",
+      "title": "Lumen lamp launch",
+      "text": "**Email from the marketing director**\n\nWe plan to launch the Lumen desk lamp in three markets in March. Based on our pilot, we expect first-year sales of 18,000 units in Market A, 12,000 units in Market B and 9,000 units in Market C. We will spend \\$4 on advertising for each expected unit in each market.\n\n**Cost sheet (per unit)**\n\n| Item | Amount |\n|---|---|\n| Retail price | \\$60 |\n| Retailer margin | 30% of retail price |\n| Manufacturing | \\$22 |\n| Shipping to Market A | \\$3 |\n| Shipping to Market B | \\$4 |\n| Shipping to Market C | \\$6 |\n\n**Note from finance**\n\nThe board approves a launch in a market only if the expected first-year contribution in that market, after advertising, is at least \\$150,000. Contribution per unit is the retail price minus the retailer margin, manufacturing and shipping."
+    },
+    {
+      "id": "GMAT-MSR2",
+      "title": "Warehouse supervisor hiring",
+      "text": "**Job posting**\n\nNorthgate Logistics is hiring a warehouse supervisor. Requirements: at least 3 years of supervisory experience, a forklift certification, and availability for night shifts. Preferred: a degree in logistics.\n\n**Candidates**\n\n| Candidate | Supervisory experience (years) | Forklift certified | Available nights | Degree |\n|---|---|---|---|---|\n| Ruiz | 5 | Yes | Yes | None |\n| Patel | 2 | Yes | Yes | Logistics |\n| Okafor | 4 | No | Yes | History |\n| Nguyen | 6 | Yes | No | Logistics |\n| Brandt | 3 | Yes | Yes | Logistics |\n\n**Note from human resources**\n\nEvery candidate who meets all three requirements is invited to a second interview. Okafor's forklift exam is scheduled before the start date, and we will treat it as meeting the certification requirement. Among the candidates invited, anyone with the preferred degree is ranked ahead of anyone without it; candidates with the same degree status are ranked by years of supervisory experience."
+    },
+    {
+      "id": "GMAT-MSR3",
+      "title": "Conference venue",
+      "text": "**Email from the event planner**\n\nWe need a venue for 180 attendees on June 12, for the whole day, with at least one breakout room. The total budget for the venue and catering together is \\$20,000.\n\n**Venue quotes**\n\n| Venue | Capacity | Breakout rooms | Room fee | Catering per person |\n|---|---|---|---|---|\n| Lakeside | 200 | 2 | \\$6,000 | \\$65 |\n| Granary | 160 | 3 | \\$4,000 | \\$55 |\n| Civic Hall | 250 | 0 | \\$3,500 | \\$60 |\n| Riverside | 220 | 1 | \\$8,500 | \\$70 |\n\n**Venue notes**\n\nCivic Hall can rent portable partitions that create one breakout room for \\$900. Lakeside is booked until 2 p.m. on June 12. Catering must be ordered for every attendee."
+    }
+  ],
+  "questions": [
+    {
+      "id": "GMAT-T1-001",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percents",
+      "stem": "A store raises the price of a jacket by 20 percent and later lowers the new price by 25 percent. The final price is what percent of the original price?",
+      "options": [
+        "85%",
+        "90%",
+        "95%",
+        "100%",
+        "105%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Multiply the factors: $1.2 \\times 0.75 = 0.9$, so the final price is 90 percent of the original. The changes do not cancel because the 25 percent cut is taken from a larger number."
+    },
+    {
+      "id": "GMAT-T1-002",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear equations",
+      "stem": "If $\\frac{x+3}{2} = \\frac{2x-1}{3}$, what is the value of $x$?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "11",
+        "13"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Cross-multiply: $3(x+3) = 2(2x-1)$, so $3x + 9 = 4x - 2$ and $x = 11$."
+    },
+    {
+      "id": "GMAT-T1-003",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number properties",
+      "stem": "If $n$ is a positive integer and $n^2$ is divisible by 72, what is the least possible value of $n$?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12",
+        "24"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "$72 = 2^3 \\cdot 3^2$. For $n^2$ to contain $2^3$, $n$ needs at least $2^2$ (since $n^2$ then has $2^4$); for $3^2$, $n$ needs one 3. The least $n$ is $2^2 \\cdot 3 = 12$. Check: $144 / 72 = 2$."
+    },
+    {
+      "id": "GMAT-T1-004",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Exponents",
+      "stem": "If $2^x \\cdot 4^{x+1} = 2^{11}$, what is the value of $x$?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Write 4 as $2^2$: $2^x \\cdot 2^{2x+2} = 2^{3x+2}$. Then $3x + 2 = 11$, so $x = 3$."
+    },
+    {
+      "id": "GMAT-T1-005",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ratios",
+      "stem": "In a class, the ratio of first-year to second-year students is 3 to 5. After 6 more first-year students join and no one leaves, the ratio becomes 3 to 4. How many second-year students are in the class?",
+      "options": [
+        "24",
+        "32",
+        "40",
+        "48",
+        "56"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Let the counts be $3k$ and $5k$. Then $\\frac{3k+6}{5k} = \\frac{3}{4}$, so $12k + 24 = 15k$ and $k = 8$. Second-year students: $5 \\cdot 8 = 40$."
+    },
+    {
+      "id": "GMAT-T1-006",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Word problems",
+      "stem": "A theater sold 40 tickets for a total of \\$380. Adult tickets cost \\$12 and child tickets cost \\$7. How many adult tickets were sold?",
+      "options": [
+        "20",
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "With $a$ adult tickets, $12a + 7(40 - a) = 380$, so $5a + 280 = 380$ and $a = 20$."
+    },
+    {
+      "id": "GMAT-T1-007",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Averages",
+      "stem": "The average (arithmetic mean) of five numbers is 18. When one of the numbers is removed, the average of the remaining four numbers is 16. What number was removed?",
+      "options": [
+        "26",
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The five numbers sum to $5 \\cdot 18 = 90$ and the four to $4 \\cdot 16 = 64$. The removed number is $90 - 64 = 26$."
+    },
+    {
+      "id": "GMAT-T1-008",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Quadratics",
+      "stem": "If $r$ and $s$ are the two solutions of $x^2 - 5x - 14 = 0$, what is the value of $r^2 + s^2$?",
+      "options": [
+        "45",
+        "49",
+        "53",
+        "57",
+        "65"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Factor: $(x - 7)(x + 2) = 0$, so the solutions are 7 and $-2$. Then $49 + 4 = 53$. (Or use $r^2 + s^2 = (r+s)^2 - 2rs = 25 + 28 = 53$.)"
+    },
+    {
+      "id": "GMAT-T1-009",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rates and work",
+      "stem": "Working alone at a constant rate, machine A makes 120 parts in 4 hours. Machine B, also at a constant rate, makes 120 parts in 6 hours. Working together, how many hours will the two machines take to make 300 parts?",
+      "options": [
+        "2.5",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "A makes 30 parts an hour and B makes 20, so together they make 50 an hour. $300 / 50 = 6$ hours."
+    },
+    {
+      "id": "GMAT-T1-010",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequalities",
+      "stem": "How many integers $x$ satisfy $-3 < 2x + 5 \\le 9$?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Subtract 5: $-8 < 2x \\le 4$. Divide by 2: $-4 < x \\le 2$. The integers are $-3, -2, -1, 0, 1, 2$: six of them."
+    },
+    {
+      "id": "GMAT-T1-011",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Counting",
+      "stem": "How many three-digit positive integers have only odd digits?",
+      "options": [
+        "100",
+        "125",
+        "150",
+        "225",
+        "250"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Each of the three places can be 1, 3, 5, 7 or 9, so there are $5 \\cdot 5 \\cdot 5 = 125$ such integers."
+    },
+    {
+      "id": "GMAT-T1-012",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Absolute value",
+      "stem": "What is the sum of all values of $x$ for which $|x - 4| = 2x + 1$?",
+      "options": [
+        "$-5$",
+        "$-4$",
+        "1",
+        "3",
+        "5"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "If $x - 4 = 2x + 1$, then $x = -5$, but then $2x + 1 = -9$, which cannot equal an absolute value, so reject it. If $4 - x = 2x + 1$, then $x = 1$, and $|1 - 4| = 3 = 2(1) + 1$. The only solution is 1, so the sum is 1."
+    },
+    {
+      "id": "GMAT-T1-013",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "A bag holds 4 red marbles and 6 blue marbles. Two marbles are drawn at random without replacement. What is the probability that both are blue?",
+      "options": [
+        "$\\frac{1}{5}$",
+        "$\\frac{4}{15}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{9}{25}$",
+        "$\\frac{2}{5}$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\frac{6}{10} \\cdot \\frac{5}{9} = \\frac{30}{90} = \\frac{1}{3}$. The answer $\\frac{9}{25}$ would be right only with replacement."
+    },
+    {
+      "id": "GMAT-T1-014",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Functions",
+      "stem": "If $f(x) = 2x^2 - 3$, what is the value of $f(f(1))$?",
+      "options": [
+        "$-5$",
+        "$-1$",
+        "1",
+        "3",
+        "5"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$f(1) = 2 - 3 = -1$, and $f(-1) = 2(1) - 3 = -1$. So $f(f(1)) = -1$."
+    },
+    {
+      "id": "GMAT-T1-015",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Remainders",
+      "stem": "When the positive integer $k$ is divided by 6, the remainder is 4. What is the remainder when $5k$ is divided by 6?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Write $k = 6q + 4$. Then $5k = 30q + 20 = 6(5q + 3) + 2$, so the remainder is 2. A quick check: $k = 4$ gives $5k = 20$, remainder 2."
+    },
+    {
+      "id": "GMAT-T1-016",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rate equations",
+      "stem": "A delivery van travels 90 miles to a depot at 45 miles per hour and returns along the same road at 30 miles per hour. What is the average speed, in miles per hour, for the whole trip?",
+      "options": [
+        "35",
+        "36",
+        "37.5",
+        "38",
+        "40"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Average speed is total distance over total time: $\\frac{180}{2 + 3} = 36$. Averaging 45 and 30 to get 37.5 ignores that more time is spent at the slower speed."
+    },
+    {
+      "id": "GMAT-T1-017",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "An investment of \\$5,000 earns 4 percent annual interest, compounded annually. To the nearest dollar, what is it worth after 2 years?",
+      "options": [
+        "\\$5,200",
+        "\\$5,300",
+        "\\$5,400",
+        "\\$5,408",
+        "\\$5,500"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "$5{,}000 \\times 1.04^2 = 5{,}000 \\times 1.0816 = 5{,}408$. Simple interest would give \\$5,400; compounding adds interest on the first year's \\$200."
+    },
+    {
+      "id": "GMAT-T1-018",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sequences",
+      "stem": "In a sequence, $a_1 = 3$ and each term after the first is 2 more than twice the term before it. What is $a_4$?",
+      "options": [
+        "38",
+        "42",
+        "46",
+        "74",
+        "78"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "$a_2 = 2(3) + 2 = 8$, $a_3 = 2(8) + 2 = 18$, $a_4 = 2(18) + 2 = 38$."
+    },
+    {
+      "id": "GMAT-T1-019",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Roots",
+      "stem": "What is the value of $\\sqrt{50} + \\sqrt{18}$?",
+      "options": [
+        "$4\\sqrt{2}$",
+        "$5\\sqrt{2}$",
+        "$6\\sqrt{2}$",
+        "$7\\sqrt{2}$",
+        "$8\\sqrt{2}$"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\sqrt{50} = 5\\sqrt{2}$ and $\\sqrt{18} = 3\\sqrt{2}$, so the sum is $8\\sqrt{2}$. Roots of a sum do not combine as $\\sqrt{68}$."
+    },
+    {
+      "id": "GMAT-T1-020",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Ratios in expressions",
+      "stem": "If $\\frac{a}{b} = \\frac{3}{4}$ and $b \\ne 0$, what is the value of $\\frac{2a + b}{a - 2b}$?",
+      "options": [
+        "$-2$",
+        "$-1$",
+        "0",
+        "1",
+        "2"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Any pair in the ratio works, so let $a = 3$ and $b = 4$: $\\frac{6 + 4}{3 - 8} = \\frac{10}{-5} = -2$."
+    },
+    {
+      "id": "GMAT-T1-021",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Statistics",
+      "stem": "The set $\\{3, 7, 7, 10, x\\}$ has a median equal to its mean. Which of the following could be the value of $x$?",
+      "options": [
+        "3",
+        "5",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Whatever $x$ is, the middle value of the sorted set is 7 (two 7s sit in the middle unless $x$ moves one of them, and either way the third value is 7). So the mean must be 7: $\\frac{27 + x}{5} = 7$ gives $x = 8$."
+    },
+    {
+      "id": "GMAT-T1-022",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Weaken",
+      "passage": "Riverton's city council installed speed cameras on Elm Avenue in January. In the twelve months that followed, collisions on Elm Avenue fell by 30 percent compared with the previous twelve months. The council concludes that the cameras caused the decline and plans to install cameras on five more streets.",
+      "stem": "Which of the following, if true, most seriously weakens the argument?",
+      "options": [
+        "Some drivers photographed by the cameras have disputed the fines they received.",
+        "Most collisions on Elm Avenue before January occurred during the evening rush hour.",
+        "That January a new bypass opened that cut traffic on Elm Avenue by about a third.",
+        "Speed cameras in several other cities have been criticized as a way to raise revenue.",
+        "Collisions on the five streets proposed for cameras have risen slightly in recent years."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The council credits the cameras for the drop. If traffic on the avenue fell by about a third at the same time, fewer cars alone could explain 30 percent fewer collisions. The other choices do not offer another cause for the decline."
+    },
+    {
+      "id": "GMAT-T1-023",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Assumption",
+      "passage": "Kestrel Foods plans to replace its paper packaging with a new plant-based film that costs 15 percent less per unit. Kestrel's managers conclude that the switch will reduce the company's total packaging costs.",
+      "stem": "The argument depends on which of the following assumptions?",
+      "options": [
+        "Kestrel's main competitors have not yet switched to plant-based film.",
+        "Most of Kestrel's customers prefer plant-based film to the paper packaging it uses now.",
+        "The price of paper packaging is likely to rise during the coming year.",
+        "Any added costs of switching will not outweigh the saving from the lower price.",
+        "Plant-based film can be produced in the factories that now make paper."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A lower price per unit lowers total cost only if switching does not bring other costs, such as new machines or more waste, that outweigh the saving; if it did, total packaging costs could rise. The other choices are not needed for the conclusion."
+    },
+    {
+      "id": "GMAT-T1-024",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "GMAT-RC1",
+      "stem": "The primary purpose of the passage is to",
+      "options": [
+        "describe the process by which corporate investors decide which young startups they will fund",
+        "argue that corporate venture capital usually harms the startups it funds",
+        "explain a trade-off founders face in taking corporate money",
+        "compare the financial returns of corporate and independent venture funds",
+        "recommend that founders refuse to give board seats to corporate investors"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage sets out a benefit of corporate investors (higher valuations, strategic help) against a cost (fewer rival buyers), then shows that limiting the investor trades one for the other. It does not claim the investment is harmful overall or recommend one choice."
+    },
+    {
+      "id": "GMAT-T1-025",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "GMAT-RC1",
+      "stem": "According to the passage, rival buyers may hesitate to bid for a startup that has a corporate backer because",
+      "options": [
+        "corporate backers usually forbid any sale of the startup to their rivals",
+        "corporate investors make startups share technical data with every buyer",
+        "the backer may know the startup's secrets or hold a right to match offers",
+        "startups with corporate backers rarely grow large enough to be acquired",
+        "the startup's valuation has been raised far above what it is really worth"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The second paragraph says rivals hesitate to bid for a firm whose investor 'may already know its secrets or may hold the right to match any offer.' The passage never says backers forbid sales outright."
+    },
+    {
+      "id": "GMAT-T1-026",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "GMAT-RC1",
+      "stem": "It can be inferred from the passage that an independent venture fund would be least likely to",
+      "options": [
+        "accept a lower financial return in exchange for early access to a technology",
+        "take a seat on the board of a startup in which it has invested",
+        "value a startup's shares at a higher price than its founders had hoped",
+        "invest in a startup that is also backed by a large corporate investor",
+        "expect its investments to return more cash than they cost within a decade"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage contrasts the two kinds of investor: an independent fund succeeds only on cash returns, while a corporate arm 'often accepts a lower financial return' for a strategic benefit. Trading return for strategy is what the independent fund would least likely do."
+    },
+    {
+      "id": "GMAT-T1-027",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Function",
+      "stimulusId": "GMAT-RC1",
+      "stem": "The third paragraph serves mainly to",
+      "options": [
+        "summarize the advantages that independent venture funds offer founders",
+        "explain why corporate investors place so much value on strategic benefits",
+        "propose a new and more reliable way to measure the cost of accepting corporate investment",
+        "describe a response to the problem raised earlier and its drawback",
+        "present evidence that contradicts the studies cited in the second paragraph"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The problem is that corporate backing deters rival buyers. The third paragraph gives the founders' response (limiting the investor's access) and its cost (a weaker relationship with the investor)."
+    },
+    {
+      "id": "GMAT-T1-028",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Strengthen",
+      "passage": "Researchers found that office workers who took a ten-minute walk after lunch made fewer errors on afternoon data-entry tasks than workers who stayed at their desks. The researchers concluded that a short walk after lunch improves afternoon concentration.",
+      "stem": "Which of the following, if true, most strengthens the argument?",
+      "options": [
+        "The workers who walked said they enjoyed their lunch break more than the others.",
+        "The workers were randomly assigned either to walk or to stay at their desks.",
+        "Some of the workers who walked chose to walk with colleagues rather than alone.",
+        "Data-entry errors are more common in the afternoon than in the morning.",
+        "Many companies already encourage their employees to take short breaks."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Without random assignment, workers who chose to walk might differ in ways (fitness, diligence) that explain their fewer errors. Random assignment rules that out, so the walk itself becomes the likeliest cause."
+    },
+    {
+      "id": "GMAT-T1-029",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "passage": "In Velmont, every licensed electrician must complete 16 hours of training each year. Some licensed electricians in Velmont also hold a plumbing license. No one in Velmont who holds a plumbing license is permitted to inspect gas lines.",
+      "stem": "If the statements above are true, which of the following must also be true?",
+      "options": [
+        "Some licensed plumbers in Velmont complete no training of any kind each year.",
+        "Everyone who inspects gas lines in Velmont holds an electrician's license.",
+        "Most licensed electricians in Velmont also hold a plumbing license.",
+        "Some people who must train each year are not allowed to inspect gas lines.",
+        "No licensed electrician in Velmont is permitted to inspect gas lines."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Some electricians hold a plumbing license. Those people must train each year (they are electricians) and may not inspect gas lines (they hold a plumbing license). So some people who must train cannot inspect gas lines. The statements say nothing about electricians without a plumbing license."
+    },
+    {
+      "id": "GMAT-T1-030",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Flaw",
+      "passage": "Sales of Brand X running shoes rose 40 percent in the year after the company hired a famous athlete to endorse them. Therefore, the endorsement deal was profitable for the company.",
+      "stem": "The reasoning above is flawed because it",
+      "options": [
+        "relies on sales figures from only a single brand of running shoes",
+        "ignores what the athlete was paid for the endorsement",
+        "treats a rise in sales as evidence that the shoes themselves are of high quality",
+        "assumes that the athlete actually wears Brand X shoes when competing",
+        "fails to consider that other brands also hire famous athletes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Profitability depends on costs as well as sales. A 40 percent sales rise shows the deal was profitable only if the extra profit was larger than what the company paid the athlete, which the argument never considers."
+    },
+    {
+      "id": "GMAT-T1-031",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "GMAT-RC2",
+      "stem": "The passage is primarily concerned with",
+      "options": [
+        "describing how researchers first worked out the meaning of the waggle dance",
+        "revising a view of the dance's precision and value",
+        "explaining why each individual waggle dance gives imprecise directions",
+        "comparing the foraging of honeybees with the foraging of other insects",
+        "arguing that the waggle dance matters less to honeybees than their sense of scent"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage revises the 'precise map' view in two steps: the dance matters most where food is scarce, and its value comes from averaging many noisy dances across the colony. The imprecision of single dances is one detail, not the main point."
+    },
+    {
+      "id": "GMAT-T1-032",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "GMAT-RC2",
+      "stem": "The passage suggests that turning a hive on its side would most reduce the food gathered by a colony in a landscape where",
+      "options": [
+        "recruits need several trips to find a food source",
+        "dancers usually orient their runs by gravity",
+        "food sources are close to the hive and plentiful",
+        "flowering plants are few and widely scattered",
+        "most foragers locate food mainly by scent"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Disrupted colonies 'did markedly worse' where food was 'patchy and scarce' and did almost as well where food was rich. A landscape with few, scattered flowers is the patchy, scarce case."
+    },
+    {
+      "id": "GMAT-T1-033",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Function",
+      "stimulusId": "GMAT-RC2",
+      "stem": "The author mentions that successive runs of a dance point in slightly different directions in order to",
+      "options": [
+        "suggest that the dance signals distance but not direction",
+        "explain why disrupted colonies did well in rich landscapes",
+        "support the claim that recruits rely mainly on scent to find food",
+        "concede a weakness of single dances before explaining why it matters little",
+        "show that earlier researchers measured the angle and length of the dance in the wrong way"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The third paragraph admits that individual dances are noisy, then argues that a colony averages over many dancers, so the noise does not make the dance a poor signal."
+    },
+    {
+      "id": "GMAT-T1-034",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Explain a discrepancy",
+      "passage": "Over the past decade, the number of public libraries in Darnell County has fallen by a quarter. Yet the total number of books borrowed from the county's libraries each year has risen.",
+      "stem": "Which of the following, if true, most helps to explain the apparent discrepancy described above?",
+      "options": [
+        "The remaining libraries now lend e-books, and those loans are counted.",
+        "The county's population has stayed about the same over the decade.",
+        "The libraries that closed were mostly in the county's smallest towns.",
+        "Many county residents now buy their books from online retailers instead of borrowing them.",
+        "Several libraries in neighboring counties have also closed in recent years."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Fewer libraries but more loans is explained if each remaining library now lends far more, and adding e-book loans to the count does exactly that. Buying books online would lower loans, and the other facts do not raise them."
+    },
+    {
+      "id": "GMAT-T1-035",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Evaluate",
+      "passage": "A school district plans to replace printed textbooks with tablets. The district argues that the change will save money, because each tablet costs less than the five printed textbooks that a student now uses.",
+      "stem": "Which of the following would be most useful to know in evaluating the district's argument?",
+      "options": [
+        "How many teachers in the district already use tablets in their classes",
+        "Whether students in the district would rather read on tablets or on printed paper",
+        "Which publisher supplies most of the district's printed textbooks",
+        "How often tablets will need repair or replacement compared with textbooks",
+        "Whether neighboring school districts have already adopted tablets"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The argument compares purchase prices only. If tablets break or wear out much faster than textbooks, replacing them could erase the saving, so their repair and replacement rate decides whether money is really saved."
+    },
+    {
+      "id": "GMAT-T1-036",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "GMAT-RC3",
+      "stem": "The passage is primarily concerned with",
+      "options": [
+        "comparing behavioral economics with more traditional economics",
+        "tracing how thinking about a policy tool has changed",
+        "explaining why so many workers fail to save enough money for their retirement",
+        "describing the history of employer-sponsored retirement plans",
+        "arguing that employers should stop enrolling workers automatically"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage follows research on automatic enrollment from its first finding (participation rises), through a complication (people stay at the default rate), to a restated lesson about the responsibility of choosing defaults."
+    },
+    {
+      "id": "GMAT-T1-037",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "GMAT-RC3",
+      "stem": "According to the passage, a drawback of early automatic enrollment plans was that",
+      "options": [
+        "some workers saved at a lower rate than they would have chosen themselves",
+        "the default contribution rate rose too quickly for many workers",
+        "workers often did not realize that they had been enrolled at all",
+        "employers found the plans much more expensive to run than they had expected",
+        "many of the enrolled workers opted out soon after they were enrolled"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The second paragraph says enrolled workers tended to stay at the modest default rate, and 'some ended up saving less than they would have under the old system.'"
+    },
+    {
+      "id": "GMAT-T1-038",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "GMAT-RC3",
+      "stem": "The author would most likely agree with which of the following statements?",
+      "options": [
+        "Whoever sets a default shapes the outcomes of the people who accept it.",
+        "Automatic escalation will eventually replace automatic enrollment.",
+        "Defaults help only workers who lack the time to make a choice.",
+        "The early studies of default options were poorly designed.",
+        "Workers who opt out of a retirement plan are acting against their own interests."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The last sentence says defaults 'carry the designer's judgment about what people should do,' which makes choosing them a responsibility. The author does not fault the early studies; later work only added to them."
+    },
+    {
+      "id": "GMAT-T1-039",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Boldface",
+      "passage": "**Many economists predict that the new tariff on imported steel will raise costs for domestic car makers.** However, domestic steel mills currently have large unused capacity, and they have signaled that they will hold their prices steady to win market share. **Domestic car makers are therefore unlikely to face higher steel costs in the near term.**",
+      "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+      "options": [
+        "The first is a prediction the argument accepts; the second is a consequence of that prediction.",
+        "The first is the argument's main conclusion; the second is evidence offered in support of it.",
+        "The first is a prediction the argument rejects; the second is the argument's main conclusion.",
+        "The first and the second are both predictions that the argument goes on to reject.",
+        "The first is evidence that supports the second; the second is the argument's main conclusion."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The argument cites the economists' prediction, then gives evidence against it (spare capacity, steady prices) and concludes, with 'therefore', that car makers are unlikely to face higher costs. So the first is rejected and the second is the conclusion."
+    },
+    {
+      "id": "GMAT-T1-040",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Complete the argument",
+      "passage": "Wildlife officials want to reduce collisions between cars and deer on Route 9 by building fences along the road. Critics argue that the fences will simply push deer to cross the road where the fences end. The plan is likely to reduce collisions nonetheless, since ______.",
+      "stem": "Which of the following most logically completes the argument?",
+      "options": [
+        "deer are most active at dawn and dusk, when traffic on Route 9 is heaviest",
+        "the fences will cost less than a year of collisions between cars and deer",
+        "fences of the same design have been built along several other highways",
+        "most drivers on Route 9 are local residents who know where deer cross",
+        "the fences will end at an existing overpass that deer already use to cross"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The critics' worry is that deer will cross at the fences' ends. If the ends lead deer to an overpass they already use, crossings shift off the road, which answers the objection. The cost comparison does not show the plan will work."
+    },
+    {
+      "id": "GMAT-T1-041",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "GMAT-RC4",
+      "stem": "The author's primary purpose is to",
+      "options": [
+        "qualify a common claim about how spelling became standard",
+        "explain how compositors made each line of type reach the right margin",
+        "show that Samuel Johnson's dictionary alone fixed English spelling",
+        "argue that the early printers actively resisted efforts to standardize English spelling",
+        "describe the daily work of the earliest English printers"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage calls the claim that printing fixed spelling 'half right' and then gives the social causes that did the fixing. It qualifies the claim rather than rejecting it."
+    },
+    {
+      "id": "GMAT-T1-042",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "GMAT-RC4",
+      "stem": "According to the passage, early compositors sometimes varied the spelling of a word in order to",
+      "options": [
+        "save the cost of buying extra pieces of type",
+        "copy the spellings used in the manuscripts they set",
+        "make a line of type fill the full width of the page",
+        "show readers that more than one spelling was correct",
+        "follow house rules set by the large printing houses"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Before printers widened word spaces to fill a line, 'adding or dropping a letter was a convenient way to make each line reach the right margin.'"
+    },
+    {
+      "id": "GMAT-T1-043",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "GMAT-RC4",
+      "stem": "The author would most likely agree with which of the following statements about the printing press?",
+      "options": [
+        "It made English spelling less consistent than scribes had made it.",
+        "It standardized English spelling within a decade of the first presses.",
+        "It made a fixed spelling possible but did not by itself produce one.",
+        "It mattered less to spelling than the word lists kept by medieval scribes.",
+        "It had little effect of any kind on how English words were spelled."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The last sentence says the press 'made a fixed spelling possible' but that 'the decision to fix spelling was a social one.' The author also says printers spread uniform spellings faster than scribes, so the press was not without effect."
+    },
+    {
+      "id": "GMAT-T1-044",
+      "section": "verbal",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Weaken a plan",
+      "passage": "To increase revenue, a museum plans to raise its admission price from \\$15 to \\$20. The museum's director argues that, because attendance has grown every year for the past five years, the higher price will not reduce the number of visitors enough to lower total admission revenue.",
+      "stem": "Which of the following, if true, casts the most doubt on the director's argument?",
+      "options": [
+        "The museum's operating costs have risen faster than its admission revenue in recent years.",
+        "Other museums in the region charge between \\$18 and \\$25 for admission.",
+        "The museum has added several popular exhibitions over the past five years.",
+        "Some visitors buy annual memberships rather than paying at the door.",
+        "Most new visitors say they came mainly because the price is low."
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The director infers from rising attendance that visitors will not be put off by a higher price. If the recent growth came from people drawn mainly by the low price, those are the visitors most likely to stop coming, which could cut revenue."
+    },
+    {
+      "id": "GMAT-T1-045",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Values",
+      "stem": "What is the value of the integer $n$?\n\n(1) $n^3 = -27$\n\n(2) $n^2 = 9$",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) The only number whose cube is $-27$ is $-3$: sufficient. (2) $n$ could be 3 or $-3$: not sufficient."
+    },
+    {
+      "id": "GMAT-T1-046",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 1,
+      "format": "cloze",
+      "skill": "Graphics interpretation",
+      "passage": "**Line graph: monthly active users of a budgeting app (millions)**\n\n| Month | Jan | Feb | Mar | Apr | May | Jun |\n|---|---|---|---|---|---|---|\n| Users | 2.0 | 2.4 | 2.9 | 3.1 | 3.8 | 4.2 |",
+      "stem": "The increase in monthly active users from January to June was closest to [[1]] percent, and the largest month-to-month increase occurred from [[2]].",
+      "blanks": [
+        [
+          "90",
+          "110",
+          "120",
+          "210"
+        ],
+        [
+          "January to February",
+          "February to March",
+          "April to May",
+          "May to June"
+        ]
+      ],
+      "correct": [
+        1,
+        2
+      ],
+      "explanation": "From 2.0 million to 4.2 million is an increase of 2.2 million, or $2.2 / 2.0 = 110$ percent. The monthly increases are 0.4, 0.5, 0.2, 0.7 and 0.4 million, so the largest is April to May."
+    },
+    {
+      "id": "GMAT-T1-047",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Table analysis",
+      "passage": "**2025 results for six stores**\n\n| Store | Region | 2025 sales (\\$ thousands) | Change from 2024 | Employees |\n|---|---|---|---|---|\n| Alder | North | 840 | +5% | 12 |\n| Birch | South | 1,120 | -3% | 15 |\n| Cedar | North | 650 | +12% | 9 |\n| Dogwood | East | 980 | +8% | 14 |\n| Elm | South | 720 | -6% | 10 |\n| Fir | East | 1,300 | +2% | 18 |",
+      "stem": "For each statement, select True if it is supported by the information in the table. Otherwise select False.",
+      "rows": [
+        "The store with the greatest 2025 sales also had the most employees.",
+        "More than four of the six stores had higher sales in 2025 than in 2024.",
+        "Cedar had the highest 2025 sales per employee of the six stores."
+      ],
+      "columns": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0,
+        1,
+        1
+      ],
+      "explanation": "Fir has both the greatest sales (1,300) and the most employees (18): true. Four stores (Alder, Cedar, Dogwood and Fir) grew, and four is not more than four: false. Sales per employee: Birch's 1,120 / 15, about 74.7 thousand, is highest; Cedar's is 650 / 9, about 72.2: false."
+    },
+    {
+      "id": "GMAT-T1-048",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Word problems",
+      "stem": "A store sold 120 shirts last month, each priced at either \\$20 or \\$30. How many of the shirts sold were priced at \\$30?\n\n(1) The store's revenue from the 120 shirts was \\$2,900.\n\n(2) The store sold 20 more \\$20 shirts than \\$30 shirts.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) If $x$ shirts sold at \\$30, $30x + 20(120 - x) = 2{,}900$, so $10x = 500$ and $x = 50$: sufficient. (2) $x + (x + 20) = 120$, so $x = 50$: sufficient. Each statement alone gives 50."
+    },
+    {
+      "id": "GMAT-T1-049",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Two-part analysis",
+      "stem": "A bakery sells muffins for \\$3 each and loaves of bread for \\$5 each. Yesterday it sold 50 items in all for a total of \\$190. Select the number of muffins sold and the number of loaves sold.",
+      "rows": [
+        "Muffins sold",
+        "Loaves sold"
+      ],
+      "columns": [
+        "15",
+        "20",
+        "30",
+        "35"
+      ],
+      "correct": [
+        2,
+        1
+      ],
+      "explanation": "With $m$ muffins and $50 - m$ loaves, $3m + 5(50 - m) = 190$, so $250 - 2m = 190$ and $m = 30$. Loaves: $50 - 30 = 20$."
+    },
+    {
+      "id": "GMAT-T1-050",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number properties",
+      "stem": "Is $xy > 0$?\n\n(1) $x + y > 0$\n\n(2) $x - y > 0$",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Try $x = 3, y = 1$: both statements hold and $xy > 0$. Try $x = 3, y = -1$: both statements still hold ($3 - 1 > 0$ and $3 + 1 > 0$), but $xy < 0$. Even together the statements allow both answers: not sufficient."
+    },
+    {
+      "id": "GMAT-T1-051",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 1,
+      "format": "cloze",
+      "skill": "Graphics interpretation",
+      "passage": "**Bar chart: average weekday riders on a city's four bus routes (thousands)**\n\n| Route | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| Riders | 12 | 18 | 9 | 21 |",
+      "stem": "Route 4 carries [[1]] of the riders on the four routes, and the ratio of Route 2 riders to Route 3 riders is [[2]].",
+      "blanks": [
+        [
+          "25%",
+          "30%",
+          "35%",
+          "40%"
+        ],
+        [
+          "1 to 2",
+          "2 to 1",
+          "3 to 2",
+          "3 to 1"
+        ]
+      ],
+      "correct": [
+        2,
+        1
+      ],
+      "explanation": "Total ridership is $12 + 18 + 9 + 21 = 60$ thousand. Route 4: $21 / 60 = 35$ percent. Route 2 to Route 3: $18 : 9 = 2 : 1$."
+    },
+    {
+      "id": "GMAT-T1-052",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 3,
+      "format": "matrix",
+      "skill": "Two-part analysis",
+      "stem": "Analyst: Average wait times at our call center rose this quarter even though we hired ten new agents. New agents take longer on each call while they learn, and call volume rose by a quarter after we launched a new product. So the rise in wait times does not show that the hiring was a mistake.\n\nFor each statement, select whether, if true, it would strengthen the analyst's conclusion, weaken it, or do neither.",
+      "rows": [
+        "Agents hired in past years reached the team's average call time within two months.",
+        "Most of the extra calls this quarter were handled by an automated system, not by agents.",
+        "The call center moved to a larger office building last year.",
+        "The firm pays new agents the same hourly wage as experienced agents."
+      ],
+      "columns": [
+        "Strengthens",
+        "Weakens",
+        "Neither"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "explanation": "If new agents soon reach normal speed, the slowdown is temporary and the hiring should pay off: strengthens. If agents did not handle the extra calls, the volume rise cannot explain longer waits, which leaves the hiring itself as a likelier cause: weakens. The office move and wage rates do not bear on why waits rose."
+    },
+    {
+      "id": "GMAT-T1-053",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 2,
+      "format": "cloze",
+      "skill": "Graphics interpretation",
+      "passage": "**Scatter plot with a fitted line**\n\nA scatter plot shows advertising spending $x$ (in thousands of dollars) and sales $y$ (in thousands of dollars) for 20 stores, with $x$ from 4 to 16. The least-squares line is $y = 4.5x + 30$.",
+      "stem": "Based on the line, a store that spends \\$10,000 on advertising is predicted to have sales of [[1]], and each additional \\$1,000 of advertising is associated with [[2]] in sales.",
+      "blanks": [
+        [
+          "\\$75,000",
+          "\\$45,000",
+          "\\$60,000",
+          "\\$90,000"
+        ],
+        [
+          "\\$450 more",
+          "\\$4,500 more",
+          "\\$30,000 more",
+          "\\$45,000 more"
+        ]
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "explanation": "Both variables are in thousands of dollars, so $x = 10$ gives $y = 4.5(10) + 30 = 75$, that is, \\$75,000. The slope 4.5 means each extra 1 (thousand) of advertising goes with 4.5 thousand, or \\$4,500, more in sales."
+    },
+    {
+      "id": "GMAT-T1-054",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Divisibility",
+      "stem": "If $p$ is a positive integer, is $p$ divisible by 6?\n\n(1) $p$ is divisible by 3.\n\n(2) $p$ is divisible by 18.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) 3 is divisible by 3 but not by 6, while 6 is divisible by both: not sufficient. (2) 18 is a multiple of 6, so every multiple of 18 is divisible by 6: sufficient."
+    },
+    {
+      "id": "GMAT-T1-055",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Multi-source reasoning",
+      "stimulusId": "GMAT-MSR1",
+      "stem": "What is the expected first-year contribution in Market A after advertising?",
+      "options": [
+        "\\$216,000",
+        "\\$234,000",
+        "\\$288,000",
+        "\\$306,000",
+        "\\$378,000"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Per unit in Market A: \\$60 minus the 30 percent margin (\\$18), manufacturing (\\$22) and shipping (\\$3) leaves \\$17; minus \\$4 of advertising leaves \\$13. $13 \\times 18{,}000 = 234{,}000$."
+    },
+    {
+      "id": "GMAT-T1-056",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Multi-source reasoning",
+      "stimulusId": "GMAT-MSR1",
+      "stem": "For each market, select whether a launch there meets the board's rule.",
+      "rows": [
+        "Market A",
+        "Market B",
+        "Market C"
+      ],
+      "columns": [
+        "Meets the rule",
+        "Does not"
+      ],
+      "correct": [
+        0,
+        1,
+        1
+      ],
+      "explanation": "After the margin (\\$18), manufacturing (\\$22), shipping and advertising (\\$4), each unit earns \\$13 in A, \\$12 in B and \\$10 in C. Totals: A $13 \\times 18{,}000 = 234{,}000$; B $12 \\times 12{,}000 = 144{,}000$; C $10 \\times 9{,}000 = 90{,}000$. Only A reaches \\$150,000."
+    },
+    {
+      "id": "GMAT-T1-057",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Multi-source reasoning",
+      "stimulusId": "GMAT-MSR1",
+      "stem": "If the retail price in Market B were raised to \\$65 and expected unit sales did not change, what would the expected first-year contribution in Market B be after advertising?",
+      "options": [
+        "\\$144,000",
+        "\\$165,000",
+        "\\$186,000",
+        "\\$204,000",
+        "\\$240,000"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "At \\$65 the retailer margin is \\$19.50, so each unit earns $65 - 19.5 - 22 - 4 - 4 = 15.5$ dollars, and $15.5 \\times 12{,}000 = 186{,}000$. Forgetting that the margin grows with the price gives \\$204,000."
+    },
+    {
+      "id": "GMAT-T1-058",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Statistics",
+      "stem": "Set $S$ consists of the five numbers 4, 9, 13, 20 and $x$. What is the median of $S$?\n\n(1) $x$ is a prime number.\n\n(2) $x$ is an integer and $10 < x < 13$.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) $x = 2$ gives median 9, and $x = 17$ gives median 13: not sufficient. (2) $x$ is 11 or 12, and either one is the median: not sufficient. Together $x = 11$ (12 is not prime), so the median is 11: sufficient."
+    },
+    {
+      "id": "GMAT-T1-059",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Table analysis",
+      "passage": "**Sales and returns for five products**\n\n| Product | Units sold | Units returned | Average price |\n|---|---|---|---|\n| P1 | 4,000 | 120 | \\$25 |\n| P2 | 2,500 | 125 | \\$40 |\n| P3 | 6,000 | 90 | \\$15 |\n| P4 | 1,500 | 60 | \\$80 |\n| P5 | 3,000 | 150 | \\$32 |",
+      "stem": "For each statement, select True if it is supported by the information in the table. Otherwise select False.",
+      "rows": [
+        "The median number of units sold for the five products is 3,000.",
+        "The product with the lowest return rate also had the lowest sales revenue.",
+        "More than 4 percent of all units sold across the five products were returned."
+      ],
+      "columns": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0,
+        0,
+        1
+      ],
+      "explanation": "Sorted, units sold are 1,500, 2,500, 3,000, 4,000 and 6,000, so the median is 3,000: true. Return rates: P1 3%, P2 5%, P3 1.5%, P4 4%, P5 5%, so P3 is lowest; revenues are P1 \\$100,000, P2 \\$100,000, P3 \\$90,000, P4 \\$120,000 and P5 \\$96,000, so P3 is also lowest: true. Returns total 545 of 17,000 units, about 3.2 percent: false."
+    },
+    {
+      "id": "GMAT-T1-060",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 2,
+      "format": "cloze",
+      "skill": "Graphics interpretation",
+      "passage": "**Pie chart: a company's \\$2.4 million annual budget**\n\n| Category | Share |\n|---|---|\n| Salaries | 45% |\n| Marketing | 20% |\n| Operations | 15% |\n| Research | 12% |\n| Other | 8% |",
+      "stem": "The company plans to spend [[1]] on marketing. If the research budget were doubled while the total budget stayed the same, research would make up [[2]] of the budget.",
+      "blanks": [
+        [
+          "\\$400,000",
+          "\\$480,000",
+          "\\$500,000",
+          "\\$520,000"
+        ],
+        [
+          "12%",
+          "20%",
+          "24%",
+          "32%"
+        ]
+      ],
+      "correct": [
+        1,
+        2
+      ],
+      "explanation": "Marketing: $0.20 \\times 2{,}400{,}000 = 480{,}000$. Research is 12 percent; doubling it with the same total makes it 24 percent (the other categories would shrink to make room)."
+    },
+    {
+      "id": "GMAT-T1-061",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rates and work",
+      "stem": "Working together at their constant rates, machines A and B fill an order in 4 hours. How many hours would machine A take to fill the order alone?\n\n(1) Machine B alone would take 12 hours to fill the order.\n\n(2) Machine A works twice as fast as machine B.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) A's rate is $\\frac{1}{4} - \\frac{1}{12} = \\frac{1}{6}$ of the order an hour, so 6 hours: sufficient. (2) If B does $r$ an hour and A does $2r$, then $3r = \\frac{1}{4}$, so $r = \\frac{1}{12}$ and A's rate is $\\frac{1}{6}$: 6 hours, sufficient."
+    },
+    {
+      "id": "GMAT-T1-062",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Two-part analysis",
+      "stem": "A recipe mixes juice and soda in the ratio 3 to 5 by volume. A cook wants to make 4 liters of the mix but has only 2 liters of soda. Select the greatest amount of mix, in liters, the cook can make with the soda on hand, and the amount of juice, in liters, that this mix needs.",
+      "rows": [
+        "Greatest amount of mix",
+        "Juice needed"
+      ],
+      "columns": [
+        "1.2",
+        "2",
+        "3.2",
+        "4"
+      ],
+      "correct": [
+        2,
+        0
+      ],
+      "explanation": "Soda is $\\frac{5}{8}$ of the mix, so 2 liters of soda makes $2 \\div \\frac{5}{8} = 3.2$ liters of mix. Juice is the other $\\frac{3}{8}$: $3.2 \\times \\frac{3}{8} = 1.2$ liters."
+    },
+    {
+      "id": "GMAT-T1-063",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 3,
+      "format": "matrix",
+      "skill": "Table analysis",
+      "passage": "**Commuting in five cities**\n\n| City | Median commute (minutes) | Commute by transit | Work from home |\n|---|---|---|---|\n| Northport | 28 | 22% | 18% |\n| Eastvale | 34 | 35% | 12% |\n| Lindon | 22 | 8% | 25% |\n| Marsh City | 31 | 15% | 20% |\n| Westbrook | 26 | 12% | 14% |",
+      "stem": "For each statement, select True if it is supported by the information in the table. Otherwise select False.",
+      "rows": [
+        "The city with the longest median commute has the highest share commuting by transit.",
+        "In every city where more than 15 percent work from home, the median commute is under 30 minutes.",
+        "The city with the highest work-from-home share has the lowest transit share."
+      ],
+      "columns": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0,
+        1,
+        0
+      ],
+      "explanation": "Eastvale has both the longest commute (34) and the highest transit share (35%): true. Marsh City has 20 percent working from home but a 31-minute commute: false. Lindon has the highest work-from-home share (25%) and the lowest transit share (8%): true."
+    },
+    {
+      "id": "GMAT-T1-064",
+      "section": "di",
+      "test": 1,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percents",
+      "stem": "By what percent did the price of a share of Company Q change from Monday's close to Wednesday's close?\n\n(1) The price rose 10 percent from Monday's close to Tuesday's close.\n\n(2) The price at Wednesday's close was \\$4 less than at Tuesday's close.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Together: if Monday's price is $m$, Tuesday's is $1.1m$ and Wednesday's is $1.1m - 4$. The percent change, $\\frac{1.1m - 4 - m}{m} = 0.1 - \\frac{4}{m}$, depends on $m$, which neither statement gives. For $m = 40$ the change is 0; for $m = 80$ it is 5 percent: not sufficient."
+    },
+    {
+      "id": "GMAT-T2-001",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percents",
+      "stem": "A company's revenue rose 25 percent in one year and fell 20 percent the next year. Over the two years, revenue",
+      "options": [
+        "decreased by 5%",
+        "decreased by 1%",
+        "did not change",
+        "increased by 1%",
+        "increased by 5%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "$1.25 \\times 0.8 = 1$, so revenue ended exactly where it started."
+    },
+    {
+      "id": "GMAT-T2-002",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear equations",
+      "stem": "If $5(x - 2) - 3(2x + 1) = -20$, what is the value of $x$?",
+      "options": [
+        "$-7$",
+        "$-3$",
+        "3",
+        "7",
+        "33"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Expand: $5x - 10 - 6x - 3 = -x - 13$. Then $-x - 13 = -20$, so $x = 7$."
+    },
+    {
+      "id": "GMAT-T2-003",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number properties",
+      "stem": "How many positive divisors does 180 have?",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "16",
+        "18"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "$180 = 2^2 \\cdot 3^2 \\cdot 5$. The number of divisors is $(2+1)(2+1)(1+1) = 18$."
+    },
+    {
+      "id": "GMAT-T2-004",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratics",
+      "stem": "If $(x - 3)^2 = 49$, what is the product of the possible values of $x$?",
+      "options": [
+        "$-40$",
+        "$-21$",
+        "$-4$",
+        "10",
+        "40"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "$x - 3 = 7$ or $x - 3 = -7$, so $x = 10$ or $x = -4$. Their product is $-40$."
+    },
+    {
+      "id": "GMAT-T2-005",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mixtures",
+      "stem": "A 40-liter solution is 25 percent acid. How many liters of pure acid must be added to make a solution that is 40 percent acid?",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "16",
+        "20"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The solution has 10 liters of acid. Adding $x$ liters: $\\frac{10 + x}{40 + x} = 0.4$, so $10 + x = 16 + 0.4x$, $0.6x = 6$ and $x = 10$."
+    },
+    {
+      "id": "GMAT-T2-006",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Systems of equations",
+      "stem": "If $2x + 3y = 13$ and $4x - y = 5$, what is the value of $x + y$?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "From the second equation, $y = 4x - 5$. Substitute: $2x + 12x - 15 = 13$, so $x = 2$ and $y = 3$. Then $x + y = 5$."
+    },
+    {
+      "id": "GMAT-T2-007",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Weighted averages",
+      "stem": "Group A has 20 students with an average score of 70. Group B has 30 students with an average score of 80. What is the average score of all 50 students?",
+      "options": [
+        "74",
+        "75",
+        "76",
+        "77",
+        "78"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\frac{20 \\cdot 70 + 30 \\cdot 80}{50} = \\frac{1{,}400 + 2{,}400}{50} = 76$. It is closer to 80 because group B is larger."
+    },
+    {
+      "id": "GMAT-T2-008",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequalities",
+      "stem": "A phone plan costs \\$30 a month plus \\$0.10 for each minute over 300 minutes. If a month's bill is at most \\$45, what is the greatest number of minutes that could have been used?",
+      "options": [
+        "150",
+        "350",
+        "400",
+        "450",
+        "500"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The overage is at most \\$15, which buys $15 / 0.10 = 150$ extra minutes. So at most $300 + 150 = 450$ minutes."
+    },
+    {
+      "id": "GMAT-T2-009",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rates",
+      "stem": "Two trains start 300 miles apart and travel toward each other on parallel tracks, one at 70 miles per hour and the other at 80 miles per hour. When they pass each other, how many miles has the slower train traveled?",
+      "options": [
+        "140",
+        "150",
+        "160",
+        "170",
+        "180"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "They close the gap at $70 + 80 = 150$ miles per hour, so they meet after 2 hours. The slower train has gone $70 \\cdot 2 = 140$ miles."
+    },
+    {
+      "id": "GMAT-T2-010",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Exponents",
+      "stem": "What is the value of $\\frac{9^4 \\cdot 27^2}{3^{12}}$?",
+      "options": [
+        "3",
+        "9",
+        "27",
+        "81",
+        "243"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$9^4 = 3^8$ and $27^2 = 3^6$, so the fraction is $\\frac{3^{14}}{3^{12}} = 3^2 = 9$."
+    },
+    {
+      "id": "GMAT-T2-011",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Counting",
+      "stem": "A committee of 3 people is chosen from 5 men and 4 women. How many different committees include at least one woman?",
+      "options": [
+        "64",
+        "70",
+        "74",
+        "80",
+        "84"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "All committees: $\\binom{9}{3} = 84$. Committees with no woman: $\\binom{5}{3} = 10$. So $84 - 10 = 74$ include at least one woman."
+    },
+    {
+      "id": "GMAT-T2-012",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Functions",
+      "stem": "If $g(x) = 3x + k$ and $g(g(2)) = 30$, what is the value of $k$?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6",
+        "8"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$g(2) = 6 + k$. Then $g(6 + k) = 3(6 + k) + k = 18 + 4k = 30$, so $k = 3$."
+    },
+    {
+      "id": "GMAT-T2-013",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "Two fair six-sided dice are rolled. What is the probability that the sum of the numbers rolled is 8?",
+      "options": [
+        "$\\frac{1}{9}$",
+        "$\\frac{5}{36}$",
+        "$\\frac{1}{6}$",
+        "$\\frac{7}{36}$",
+        "$\\frac{2}{9}$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The pairs (2,6), (3,5), (4,4), (5,3) and (6,2) give 8: five of the 36 equally likely outcomes."
+    },
+    {
+      "id": "GMAT-T2-014",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Work problems",
+      "stem": "Working alone, Ana takes 4 hours longer than Ben to paint a room. Working together at their usual rates, they paint the room in 3 hours and 45 minutes. How many hours does Ben take working alone?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "10"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Together they take $\\frac{15}{4}$ hours. If Ben takes $b$ hours, $\\frac{1}{b} + \\frac{1}{b+4} = \\frac{4}{15}$. Testing the choices: $b = 6$ gives $\\frac{1}{6} + \\frac{1}{10} = \\frac{5 + 3}{30} = \\frac{4}{15}$."
+    },
+    {
+      "id": "GMAT-T2-015",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Units digits",
+      "stem": "What is the units digit of $3^{25} \\cdot 7^{10}$?",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Units digits of powers of 3 cycle 3, 9, 7, 1, and $25 = 4 \\cdot 6 + 1$, so $3^{25}$ ends in 3. Powers of 7 cycle 7, 9, 3, 1, and $10 = 4 \\cdot 2 + 2$, so $7^{10}$ ends in 9. $3 \\cdot 9 = 27$ ends in 7."
+    },
+    {
+      "id": "GMAT-T2-016",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percent expressions",
+      "stem": "If $x$ is 50 percent greater than $y$ and $y$ is 20 percent less than $z$, then $x$ is what percent of $z$?",
+      "options": [
+        "120%",
+        "125%",
+        "130%",
+        "140%",
+        "150%"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "$x = 1.5y$ and $y = 0.8z$, so $x = 1.5 \\cdot 0.8z = 1.2z$, which is 120 percent of $z$."
+    },
+    {
+      "id": "GMAT-T2-017",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fractions",
+      "stem": "At a firm, $\\frac{2}{5}$ of the employees work remotely. Of the rest, $\\frac{3}{4}$ work in the office full time, and the remaining 24 employees work a hybrid schedule. How many employees does the firm have?",
+      "options": [
+        "160",
+        "180",
+        "200",
+        "240",
+        "320"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The non-remote share is $\\frac{3}{5}$, and a quarter of it is hybrid: $\\frac{1}{4} \\cdot \\frac{3}{5} = \\frac{3}{20}$ of all employees. $\\frac{3}{20}E = 24$ gives $E = 160$."
+    },
+    {
+      "id": "GMAT-T2-018",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Absolute value",
+      "stem": "How many integers $x$ satisfy $|2x - 3| < 7$?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "$-7 < 2x - 3 < 7$ gives $-4 < 2x < 10$, so $-2 < x < 5$. The integers are $-1, 0, 1, 2, 3, 4$: six."
+    },
+    {
+      "id": "GMAT-T2-019",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Standard deviation",
+      "stem": "Which of the following sets of numbers has the greatest standard deviation?",
+      "options": [
+        "$\\{10, 10, 10, 10, 10\\}$",
+        "$\\{6, 8, 10, 12, 14\\}$",
+        "$\\{2, 10, 10, 10, 18\\}$",
+        "$\\{2, 6, 10, 14, 18\\}$",
+        "$\\{9, 10, 10, 10, 11\\}$"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Every set has mean 10, so compare the squared distances from 10. $\\{2, 6, 10, 14, 18\\}$ gives $64 + 16 + 0 + 16 + 64 = 160$, more than $\\{2, 10, 10, 10, 18\\}$ with $128$ and $\\{6, 8, 10, 12, 14\\}$ with $40$."
+    },
+    {
+      "id": "GMAT-T2-020",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Consecutive integers",
+      "stem": "The sum of five consecutive even integers is 170. What is the greatest of the five?",
+      "options": [
+        "30",
+        "32",
+        "34",
+        "36",
+        "38"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The middle integer is the average, $170 / 5 = 34$, so the five are 30, 32, 34, 36 and 38. The greatest is 38."
+    },
+    {
+      "id": "GMAT-T2-021",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparing fractions",
+      "stem": "Which of the following fractions is greatest?",
+      "options": [
+        "$\\frac{5}{8}$",
+        "$\\frac{11}{17}$",
+        "$\\frac{7}{11}$",
+        "$\\frac{9}{14}$",
+        "$\\frac{3}{5}$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Compare each with its distance below 1, or convert: $\\frac{5}{8} = 0.625$, $\\frac{7}{11} \\approx 0.636$, $\\frac{9}{14} \\approx 0.643$, $\\frac{3}{5} = 0.6$ and $\\frac{11}{17} \\approx 0.647$. The greatest is $\\frac{11}{17}$."
+    },
+    {
+      "id": "GMAT-T2-022",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Weaken",
+      "passage": "In a survey, customers of Pellora Bank who use its mobile app rated their satisfaction with the bank higher than customers who do not use the app. Pellora's marketing director concludes that persuading more customers to use the app would raise customer satisfaction across the bank.",
+      "stem": "Which of the following, if true, most seriously weakens the argument?",
+      "options": [
+        "Customer satisfaction at Pellora has risen slightly over the past three years.",
+        "Pellora offers the app only to customers with no recent problems on their accounts.",
+        "Customers who use the app visit the bank's branches less often than other customers.",
+        "Some of the customers surveyed did not answer every question asked.",
+        "Many of Pellora's competitors also offer their customers mobile apps."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "If only customers without recent account problems may use the app, app users differ from other customers in a way that could itself explain their higher satisfaction. Getting more customers onto the app then need not raise satisfaction."
+    },
+    {
+      "id": "GMAT-T2-023",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "GMAT-RC5",
+      "stem": "The primary purpose of the passage is to",
+      "options": [
+        "compare the costs and benefits to firms of several different pricing strategies",
+        "argue that dynamic pricing harms the customers who pay peak prices",
+        "explain resistance to a pricing practice and how firms adapt",
+        "defend dynamic pricing against the economists who criticize it",
+        "describe how sellers decide how much new capacity to add"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage notes that economists favor dynamic pricing, explains customers' anger through reference prices and fairness, and describes how firms work around that norm."
+    },
+    {
+      "id": "GMAT-T2-024",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "GMAT-RC5",
+      "stem": "According to the passage, customers are more likely to accept a price increase that",
+      "options": [
+        "is announced well before it takes effect",
+        "applies to goods that the buyer needs urgently",
+        "is smaller than the increase economists predict",
+        "occurs during a period of unusually high demand",
+        "seems to reflect higher costs for the seller"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "People 'accept increases that seem to reflect a seller's higher costs far more readily than increases that seem to exploit a buyer's urgent need.'"
+    },
+    {
+      "id": "GMAT-T2-025",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "GMAT-RC5",
+      "stem": "Presenting the normal price as the peak price would most likely reduce customer anger by",
+      "options": [
+        "removing the need to change the price at all during a surge",
+        "persuading most customers to shift their purchases from busy periods into quiet periods",
+        "raising the prices that rival sellers charge in busy periods",
+        "lowering the costs that the seller faces during its busiest periods",
+        "making quiet-period prices seem like discounts"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Customers judge a price against the one they are used to. If the usual price is the high one, lower prices in quiet periods read as discounts, and a surge no longer reads as a jump above the reference point."
+    },
+    {
+      "id": "GMAT-T2-026",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Function",
+      "stimulusId": "GMAT-RC5",
+      "stem": "The example of the snow shovel serves mainly to",
+      "options": [
+        "illustrate which price increases customers accept and which they resent",
+        "explain why some sellers add capacity when demand is high",
+        "suggest that steel prices largely determine the cost of many household goods",
+        "prove that customers judge prices by what other sellers charge",
+        "show that most sellers avoid raising their prices during storms"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The two shovels make the fairness norm concrete: the same higher price is resented when it exploits need after a storm and accepted when it follows a rise in costs."
+    },
+    {
+      "id": "GMAT-T2-027",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Assumption",
+      "passage": "A regional airline will add a daily flight from Corby to Lisle. Because every flight on the airline's existing Corby-Lisle route is at least 90 percent full, the airline expects the new flight to be profitable.",
+      "stem": "The argument depends on which of the following assumptions?",
+      "options": [
+        "Demand on the route is greater than the seats the current flights offer.",
+        "The new flight will use the same type of aircraft as the current flights.",
+        "Most passengers on the route travel for business rather than for leisure.",
+        "Fares on the Corby-Lisle route are higher than on the airline's other routes.",
+        "The Corby-Lisle route earns more profit than any of the airline's other routes."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Full flights suggest unmet demand but do not prove it. The new flight will fill only if more people want to fly the route than the existing seats can carry; if demand just matches current capacity, the new flight would draw passengers away from the old ones."
+    },
+    {
+      "id": "GMAT-T2-028",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "passage": "In 2025, Marlow's software exports grew faster than any other category of its exports, but software still made up less than 5 percent of Marlow's total exports. Machinery exports, which make up about 40 percent of the total, grew by 2 percent.",
+      "stem": "Which of the following is most strongly supported by the information above?",
+      "options": [
+        "Software exports added more value in 2025 than machinery exports did.",
+        "Software exports grew by more than 2 percent in 2025.",
+        "Software will become Marlow's largest export within a decade.",
+        "Marlow's total exports grew by more than 2 percent in 2025.",
+        "Machinery will remain Marlow's largest category of exports."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Software grew faster than every other category, including machinery, which grew 2 percent, so software must have grown by more than 2 percent. Because software is a small share, its growth in value may well be smaller than machinery's."
+    },
+    {
+      "id": "GMAT-T2-029",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Strengthen",
+      "passage": "Bees foraging in fields treated with pesticide P visited fewer flowers than bees foraging in untreated fields. Scientists conclude that pesticide P impairs bees' ability to forage.",
+      "stem": "Which of the following, if true, most strengthens the argument?",
+      "options": [
+        "The treated and untreated fields had the same kinds and numbers of flowers.",
+        "Bees are not the only insects that pollinate the crops in these fields.",
+        "Pesticide P is used on more farmland than any other pesticide in the region.",
+        "The scientists counted flower visits for one week in early summer.",
+        "Some farmers have stopped using pesticide P because of its rising cost."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "If the treated fields simply had fewer flowers, bees there would visit fewer flowers whatever the pesticide did. Showing the fields offered the same flowers removes that explanation."
+    },
+    {
+      "id": "GMAT-T2-030",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "GMAT-RC6",
+      "stem": "Which of the following best states the main idea of the passage?",
+      "options": [
+        "A detection method's built-in bias once gave a misleading picture of planets.",
+        "Astronomers should no longer rely on the transit method to find planets.",
+        "The transit method has found more planets than any other detection method.",
+        "Large planets on tight orbits are more common than astronomers once thought.",
+        "Small planets are harder for telescopes to detect than large planets are."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage explains why the transit method favors close-orbiting planets, how that crowded early catalogs with giant close-in planets, and how corrections reversed the impression."
+    },
+    {
+      "id": "GMAT-T2-031",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "GMAT-RC6",
+      "stem": "According to the passage, a planet that orbits close to its star is more likely to be found by the transit method partly because",
+      "options": [
+        "it is usually larger than planets that follow wider orbits",
+        "its orbit is more likely to be aligned so that we can see it transit",
+        "it makes its star dim more deeply than a distant planet does",
+        "it reflects more of its star's light than a planet farther away does",
+        "it is less often hidden from view by the system's other planets"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'The closer a planet orbits its star, the more likely that alignment is', and it also transits more often. The passage does not say close planets are larger or dim their stars more."
+    },
+    {
+      "id": "GMAT-T2-032",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Function",
+      "stimulusId": "GMAT-RC6",
+      "stem": "The final sentence of the passage primarily serves to",
+      "options": [
+        "suggest that other sciences have made the same mistake",
+        "question the statistical corrections that astronomers have made",
+        "introduce a new problem with the transit method of finding planets",
+        "draw a general principle from the example the passage has discussed",
+        "restate the evidence that giant planets on tight orbits are rare"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "After the astronomy example, the last sentence says 'the lesson extends beyond astronomy' and states it generally: understand how a sample was drawn before trusting it."
+    },
+    {
+      "id": "GMAT-T2-033",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Explain a discrepancy",
+      "passage": "After a city introduced a fee on plastic shopping bags, the number of plastic bags handed out by stores fell by 80 percent. Yet sales of plastic bin liners at the same stores more than doubled.",
+      "stem": "Which of the following, if true, most helps to explain the facts above?",
+      "options": [
+        "Many residents now bring reusable cloth bags when they go shopping.",
+        "Stores are allowed to keep the money they collect from the bag fee.",
+        "The fee applies to plastic shopping bags but not to paper shopping bags.",
+        "Bin liners are usually sold in packs that last most households for several months.",
+        "Many residents once lined their bins with free store bags."
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "If free shopping bags used to serve as bin liners, residents who stopped getting them would need to buy liners instead, so liner sales would rise as bag handouts fell."
+    },
+    {
+      "id": "GMAT-T2-034",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Flaw",
+      "passage": "Every candidate who won a seat on the city council last year spent more on advertising than her opponent did. So, to win a seat this year, a candidate needs only to outspend her opponent on advertising.",
+      "stem": "The argument is flawed because it",
+      "options": [
+        "treats something that accompanied every win as enough to guarantee a win",
+        "ignores the fact that some candidates pay for their advertising with their own money",
+        "treats the opinions of voters as evidence about the election result",
+        "assumes that the candidates who lost will run again next year",
+        "fails to say how much the winning candidates spent on advertising"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Outspending the opponent went with every win, but that does not make it sufficient. Other things (incumbency, the issues, the candidate) may decide races, so outspending alone need not win a seat."
+    },
+    {
+      "id": "GMAT-T2-035",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "GMAT-RC7",
+      "stem": "The passage is primarily concerned with",
+      "options": [
+        "describing the history of the Hawaiian language before the 1980s",
+        "explaining what language revival requires and where documentation fits in it",
+        "comparing the revival of Hawaiian with that of other languages",
+        "criticizing linguists for ignoring the needs of young children",
+        "arguing that the documentation of endangered languages wastes scarce resources"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage argues that revival needs children who hear a language used, illustrates this with Hawaiian immersion schools, and then shows documentation becoming essential to that effort."
+    },
+    {
+      "id": "GMAT-T2-036",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "GMAT-RC7",
+      "stem": "It can be inferred that the author regards immersion schools as more effective than documentation alone at reviving a language because such schools",
+      "options": [
+        "give children a setting where the language is used for real purposes",
+        "were founded by parents rather than by trained linguists",
+        "produce better grammars and dictionaries than professional linguists do",
+        "teach mathematics and science more effectively than others",
+        "need fewer fluent teachers than other kinds of schools do"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The first paragraph says children acquire 'languages they hear used for real purposes', and immersion schools teach the whole curriculum in the language. The passage says immersion needs more fluent teachers, not fewer."
+    },
+    {
+      "id": "GMAT-T2-037",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Attitude",
+      "stimulusId": "GMAT-RC7",
+      "stem": "The author's attitude toward documentation of endangered languages is best described as",
+      "options": [
+        "dismissive, because documentation seldom produces any new speakers",
+        "skeptical, because recordings of speakers are often inaccurate",
+        "neutral, because documentation serves the needs of scholars only",
+        "enthusiastic, because documentation alone can save a language",
+        "appreciative of its value once paired with teaching the language"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The author notes documentation rarely makes new speakers on its own but calls it 'indispensable' once immersion teaching begins, since it supplies the material for lessons."
+    },
+    {
+      "id": "GMAT-T2-038",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Boldface",
+      "passage": "Some analysts argue that the rise in home prices in Fenwick shows that the city's economy is booming. **But home prices can rise simply because few new homes are being built**, and Fenwick has issued almost no building permits in five years. Meanwhile, **the number of jobs in Fenwick has fallen for three straight years**. The rise in home prices is therefore poor evidence of a booming economy.",
+      "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+      "options": [
+        "The first is evidence the analysts cite; the second is evidence the argument cites against them.",
+        "The first offers another explanation for an observation; the second is evidence for the main conclusion.",
+        "The first is a claim the argument rejects; the second is a claim that the argument accepts.",
+        "The first is the argument's main conclusion; the second is evidence that supports that conclusion.",
+        "The first offers another explanation for an observation; the second is the argument's main conclusion."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The analysts read rising prices as a booming economy. The first portion offers another reason prices can rise (few new homes). The second, falling jobs, is evidence for the conclusion stated in the last sentence, that rising prices are poor evidence of a boom."
+    },
+    {
+      "id": "GMAT-T2-039",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Evaluate",
+      "passage": "A hospital plans to reduce patient falls by installing bed alarms that alert nurses when a high-risk patient gets out of bed. Hospital managers predict that, once the alarms are installed, the number of falls will drop sharply.",
+      "stem": "Which of the following would be most useful to know in evaluating the managers' prediction?",
+      "options": [
+        "Whether patients' families have asked the hospital for bed alarms",
+        "How many of the hospital's beds are in private rooms",
+        "How much the bed alarms cost compared with other kinds of patient safety equipment",
+        "Whether nurses can reach a room within seconds of an alarm",
+        "Whether the alarm maker also produces other medical devices"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An alarm prevents a fall only if a nurse arrives before the patient falls. If nurses usually cannot get there in time, the alarms will do little; if they can, the prediction is more plausible."
+    },
+    {
+      "id": "GMAT-T2-040",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "GMAT-RC8",
+      "stem": "The primary purpose of the passage is to",
+      "options": [
+        "explain why Renoir preferred certain new pigments to others",
+        "argue that the Impressionists painted mainly in their studios rather than outdoors",
+        "revise a common account of how a technology influenced an art movement",
+        "describe how painters stored their paint before the 1840s",
+        "show that the paint tube had little effect on painting"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage doubts the usual story (the tube made outdoor painting possible) and replaces it with a less obvious one (the tube brought ready-mixed bright pigments)."
+    },
+    {
+      "id": "GMAT-T2-041",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Function",
+      "stimulusId": "GMAT-RC8",
+      "stem": "The author mentions that painters had sketched outdoors in oils long before the tube in order to",
+      "options": [
+        "support Renoir's remark about the importance of the tube",
+        "show that the Impressionists learned their methods from earlier painters",
+        "cast doubt on the claim that the tube made outdoor painting possible",
+        "explain why painters stored their paint in pig bladders",
+        "suggest that outdoor sketches were valued less than studio work"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The fact follows 'Such remarks deserve some skepticism': if painters worked outdoors before the tube existed, the tube cannot be what made outdoor work possible."
+    },
+    {
+      "id": "GMAT-T2-042",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "GMAT-RC8",
+      "stem": "According to the passage, the paint tube contributed to the Impressionists' bright palette by",
+      "options": [
+        "making intense new ready-mixed pigments easy for painters to use",
+        "letting painters blend their colors directly on the canvas",
+        "keeping pigments from fading after they had been applied",
+        "allowing painters to work outdoors in the brightest sunlight",
+        "lowering the price of pigments such as synthetic ultramarine"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Tube makers sold new, intense pigments ready-mixed, so painters could lay bright colors directly on the canvas 'without first grinding and mixing them.'"
+    },
+    {
+      "id": "GMAT-T2-043",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Weaken a plan",
+      "passage": "To reduce traffic congestion, the city of Lanport will charge drivers \\$8 to enter the city center on weekdays. City planners predict that, as a result, weekday traffic in the city center will fall by about 20 percent.",
+      "stem": "Which of the following, if true, most seriously weakens the planners' prediction?",
+      "options": [
+        "Traffic downtown is much lighter on weekends than it is on weekdays.",
+        "Lanport plans to spend the money raised by the charge on improving its bus service.",
+        "Some downtown shop owners worry that the charge will reduce their number of customers.",
+        "Similar charges in other cities were unpopular when they were first introduced.",
+        "Most weekday drivers downtown have their tolls paid by employers."
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A charge cuts traffic by making driving cost more. If most drivers' employers pay it for them, the drivers feel no added cost and have little reason to stop driving downtown."
+    },
+    {
+      "id": "GMAT-T2-044",
+      "section": "verbal",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Assumption",
+      "passage": "Grovetech will move its call center from a city where it pays workers \\$22 an hour to a town where comparable workers earn \\$16 an hour. Grovetech's managers conclude that the move will lower the call center's operating costs.",
+      "stem": "The argument depends on which of the following assumptions?",
+      "options": [
+        "Workers in the town are as happy in their jobs as workers in the city are.",
+        "The town has offered Grovetech a tax break to open the call center there.",
+        "Grovetech's competitors pay their call center staff more than \\$16 an hour.",
+        "Savings on wages will not be offset by higher costs for training, travel or rent.",
+        "Most of Grovetech's customers live much closer to the town than they do to the city."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Lower wages cut total operating costs only if other costs do not rise by more. If the move brought much higher training, travel or rent costs, operating costs could go up despite the wage saving."
+    },
+    {
+      "id": "GMAT-T2-045",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear equations",
+      "stem": "What is the value of $x + y$?\n\n(1) $2x + 2y = 18$\n\n(2) $x - y = 3$",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) Divide by 2: $x + y = 9$: sufficient. (2) Gives only the difference; $x = 5, y = 2$ and $x = 4, y = 1$ both work: not sufficient."
+    },
+    {
+      "id": "GMAT-T2-046",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Table analysis",
+      "passage": "**Five hotels on an average night**\n\n| Hotel | Rooms | Occupancy | Average nightly rate |\n|---|---|---|---|\n| Harbor | 120 | 85% | \\$180 |\n| Summit | 200 | 70% | \\$150 |\n| Meadow | 80 | 90% | \\$220 |\n| Station | 150 | 78% | \\$140 |\n| Garden | 100 | 82% | \\$195 |",
+      "stem": "For each statement, select True if it is supported by the information in the table. Otherwise select False.",
+      "rows": [
+        "The hotel with the most rooms also has the most occupied rooms on an average night.",
+        "Meadow earns more room revenue on an average night than Harbor does.",
+        "Across the five hotels, more than 80 percent of all rooms are occupied on an average night."
+      ],
+      "columns": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0,
+        1,
+        1
+      ],
+      "explanation": "Occupied rooms: Harbor 102, Summit 140, Meadow 72, Station 117, Garden 82, so Summit, with the most rooms, also has the most occupied: true. Revenue: Meadow $72 \\times 220 = 15{,}840$; Harbor $102 \\times 180 = 18{,}360$: false. Occupied rooms total 513 of 650, about 78.9 percent: false."
+    },
+    {
+      "id": "GMAT-T2-047",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 1,
+      "format": "cloze",
+      "skill": "Graphics interpretation",
+      "passage": "**Line graph: annual revenue of a software firm (\\$ millions)**\n\n| Year | 2021 | 2022 | 2023 | 2024 | 2025 |\n|---|---|---|---|---|---|\n| Revenue | 40 | 46 | 50 | 48 | 57 |",
+      "stem": "Revenue grew by about [[1]] from 2024 to 2025, and revenue fell in [[2]] of the four year-to-year changes shown.",
+      "blanks": [
+        [
+          "9%",
+          "16%",
+          "19%",
+          "24%"
+        ],
+        [
+          "none",
+          "one",
+          "two",
+          "three"
+        ]
+      ],
+      "correct": [
+        2,
+        1
+      ],
+      "explanation": "From 48 to 57 is a rise of 9 on a base of 48: $9 / 48 \\approx 18.75$ percent, about 19 percent. Revenue fell only from 2023 to 2024 (50 to 48): one change."
+    },
+    {
+      "id": "GMAT-T2-048",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Two-part analysis",
+      "stem": "An investor puts a total of \\$12,000 into two funds, one earning 5 percent a year and the other 8 percent a year. After one year the investments have earned \\$816 in total. Select the amount invested in each fund.",
+      "rows": [
+        "Amount in the 5 percent fund",
+        "Amount in the 8 percent fund"
+      ],
+      "columns": [
+        "\\$4,800",
+        "\\$6,000",
+        "\\$7,200",
+        "\\$8,400"
+      ],
+      "correct": [
+        0,
+        2
+      ],
+      "explanation": "With $a$ in the 5 percent fund, $0.05a + 0.08(12{,}000 - a) = 816$, so $960 - 0.03a = 816$ and $a = 4{,}800$. The 8 percent fund holds $12{,}000 - 4{,}800 = 7{,}200$."
+    },
+    {
+      "id": "GMAT-T2-049",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Odd and even",
+      "stem": "If $k$ is an integer, is $k$ odd?\n\n(1) $k^2 + k$ is even.\n\n(2) $3k + 1$ is even.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) $k^2 + k = k(k + 1)$ is a product of consecutive integers, so it is even for every $k$: not sufficient. (2) $3k$ must be odd, so $k$ is odd: sufficient."
+    },
+    {
+      "id": "GMAT-T2-050",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 2,
+      "format": "cloze",
+      "skill": "Graphics interpretation",
+      "passage": "**Histogram: test scores of 50 applicants**\n\n| Score | 50-59 | 60-69 | 70-79 | 80-89 | 90-99 |\n|---|---|---|---|---|---|\n| Applicants | 4 | 9 | 17 | 14 | 6 |",
+      "stem": "The median score falls in the [[1]] group, and [[2]] percent of the applicants scored 80 or higher.",
+      "blanks": [
+        [
+          "60-69",
+          "70-79",
+          "80-89"
+        ],
+        [
+          "20",
+          "28",
+          "40",
+          "46"
+        ]
+      ],
+      "correct": [
+        1,
+        2
+      ],
+      "explanation": "With 50 scores the median is between the 25th and 26th. The running totals are 4, 13 and 30, so both fall in 70-79. Scores of 80 or more: $14 + 6 = 20$ of 50, which is 40 percent."
+    },
+    {
+      "id": "GMAT-T2-051",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Overlapping sets",
+      "stem": "Firm F has 80 employees. How many of them speak both French and German?\n\n(1) 30 of the employees speak French and 25 speak German.\n\n(2) 35 of the employees speak neither French nor German.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) Anywhere from 0 to 25 could speak both: not sufficient. (2) 45 speak at least one language, but the split is unknown: not sufficient. Together: $30 + 25 - \\text{both} = 45$, so 10 speak both: sufficient."
+    },
+    {
+      "id": "GMAT-T2-052",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Multi-source reasoning",
+      "stimulusId": "GMAT-MSR2",
+      "stem": "For each candidate, select whether the candidate is invited to a second interview.",
+      "rows": [
+        "Ruiz",
+        "Patel",
+        "Okafor",
+        "Nguyen"
+      ],
+      "columns": [
+        "Invited",
+        "Not invited"
+      ],
+      "correct": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "explanation": "Ruiz meets all three requirements. Patel has only 2 years of supervisory experience. Okafor's scheduled forklift exam counts as meeting the requirement, and Okafor meets the other two. Nguyen is not available for night shifts."
+    },
+    {
+      "id": "GMAT-T2-053",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Multi-source reasoning",
+      "stimulusId": "GMAT-MSR2",
+      "stem": "Which candidate will be ranked first among those invited to a second interview?",
+      "options": [
+        "Nguyen",
+        "Brandt",
+        "Okafor",
+        "Patel",
+        "Ruiz"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The invited candidates are Ruiz, Okafor and Brandt. Only Brandt has the preferred logistics degree, so Brandt ranks first even though Ruiz has more experience. Patel and Nguyen are not invited."
+    },
+    {
+      "id": "GMAT-T2-054",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Multi-source reasoning",
+      "stimulusId": "GMAT-MSR2",
+      "stem": "Which of the following, if it happened, would increase the number of candidates invited to a second interview?",
+      "options": [
+        "Ruiz completes a degree in logistics.",
+        "Okafor's forklift exam is moved past the start date.",
+        "Brandt withdraws from consideration.",
+        "Patel passes a second forklift exam.",
+        "Nguyen becomes available for night shifts."
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Nguyen meets every requirement except night availability, so becoming available would make Nguyen a fourth invitee. A degree changes ranking, not invitations; Patel still lacks experience; moving Okafor's exam or Brandt withdrawing would reduce the number."
+    },
+    {
+      "id": "GMAT-T2-055",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Two-part analysis",
+      "stem": "A cyclist rides 30 kilometers to a town and returns by the same road. The trip out takes 1.5 hours, and the return trip, against the wind, takes 2 hours. Select the cyclist's average speed for the round trip and the cyclist's speed on the return trip, both in kilometers per hour.",
+      "rows": [
+        "Average speed for the round trip",
+        "Speed on the return trip"
+      ],
+      "columns": [
+        "15",
+        "17.1",
+        "17.5",
+        "20"
+      ],
+      "correct": [
+        1,
+        0
+      ],
+      "explanation": "The round trip is 60 kilometers in 3.5 hours: $60 / 3.5 \\approx 17.1$. The return is 30 kilometers in 2 hours: 15. Averaging the two speeds, 20 and 15, to get 17.5 ignores that more time was spent at the slower speed."
+    },
+    {
+      "id": "GMAT-T2-056",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequalities",
+      "stem": "If $a$ and $b$ are positive, is $\\frac{a}{b} > 1$?\n\n(1) $a - b > 0$\n\n(2) $a^2 > b^2$",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Because $b > 0$, $\\frac{a}{b} > 1$ exactly when $a > b$. (1) says $a > b$: sufficient. (2) For positive numbers, $a^2 > b^2$ means $a > b$: sufficient."
+    },
+    {
+      "id": "GMAT-T2-057",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Table analysis",
+      "passage": "**End-of-term results in five courses**\n\n| Course | Students | Passed | Average score |\n|---|---|---|---|\n| Accounting | 64 | 48 | 71 |\n| Biology | 80 | 52 | 68 |\n| Chemistry | 45 | 36 | 74 |\n| Design | 30 | 27 | 82 |\n| Economics | 72 | 54 | 70 |",
+      "stem": "For each statement, select True if it is supported by the information in the table. Otherwise select False.",
+      "rows": [
+        "Two of the courses had the same pass rate.",
+        "The course with the highest average score also had the highest pass rate.",
+        "More than 75 percent of all the students in the five courses passed."
+      ],
+      "columns": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0,
+        0,
+        1
+      ],
+      "explanation": "Pass rates: Accounting 48/64 = 75%, Biology 52/80 = 65%, Chemistry 36/45 = 80%, Design 27/30 = 90%, Economics 54/72 = 75%. Accounting and Economics match: true. Design has both the highest average (82) and the highest pass rate: true. In all, 217 of 291 students passed, about 74.6 percent: false."
+    },
+    {
+      "id": "GMAT-T2-058",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 2,
+      "format": "cloze",
+      "skill": "Graphics interpretation",
+      "passage": "**Line graph: weekly output of two plants (units)**\n\nTwo straight lines start at week 0. Plant A starts at 500 units and rises by 40 units each week. Plant B starts at 800 units and falls by 20 units each week.",
+      "stem": "Plant A's weekly output first exceeds Plant B's in week [[1]], when Plant A produces [[2]] more units than Plant B.",
+      "blanks": [
+        [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        [
+          "20",
+          "40",
+          "60",
+          "80"
+        ]
+      ],
+      "correct": [
+        1,
+        2
+      ],
+      "explanation": "Plant A makes $500 + 40w$ and Plant B $800 - 20w$ in week $w$. They are equal when $60w = 300$, at week 5, so A first exceeds B in week 6: $740 - 680 = 60$ units."
+    },
+    {
+      "id": "GMAT-T2-059",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "A jar contains only red marbles and green marbles. If one marble is chosen at random, what is the probability that it is red?\n\n(1) There are 24 marbles in the jar.\n\n(2) The ratio of red marbles to green marbles is 1 to 3.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) The total alone says nothing about the colors: not sufficient. (2) Red is 1 of every 4 marbles, so the probability is $\\frac{1}{4}$: sufficient."
+    },
+    {
+      "id": "GMAT-T2-060",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 3,
+      "format": "matrix",
+      "skill": "Two-part analysis",
+      "stem": "To encourage people to ride its new light-rail line, a city plans to remove 20 percent of the parking spaces downtown. City planners say the change will not hurt downtown shops.\n\nFor each statement, select whether, if true, it would strengthen the planners' claim, weaken it, or do neither.",
+      "rows": [
+        "Most downtown shoppers live in areas that the rail line does not serve.",
+        "Downtown parking meters were last replaced ten years ago.",
+        "Since the line opened, downtown sales to rail riders have grown faster than total downtown sales.",
+        "The rail line was built with federal as well as city funds."
+      ],
+      "columns": [
+        "Strengthens",
+        "Weakens",
+        "Neither"
+      ],
+      "correct": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "explanation": "If most shoppers cannot use the rail line, losing parking may keep them away: weakens. Growing sales to rail riders show shops gaining customers who do not need parking: strengthens. The age of the parking meters and the line's funding do not bear on shop sales."
+    },
+    {
+      "id": "GMAT-T2-061",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 3,
+      "format": "matrix",
+      "skill": "Table analysis",
+      "passage": "**One day's delivery routes**\n\n| Route | Distance (km) | Stops | Fuel used (liters) |\n|---|---|---|---|\n| R1 | 120 | 18 | 14.4 |\n| R2 | 85 | 25 | 11.9 |\n| R3 | 150 | 12 | 15.0 |\n| R4 | 60 | 30 | 9.6 |\n| R5 | 100 | 20 | 13.0 |",
+      "stem": "For each statement, select True if it is supported by the information in the table. Otherwise select False.",
+      "rows": [
+        "The route with the most stops has the highest fuel use per 100 kilometers.",
+        "The route with the fewest stops uses the least fuel in total.",
+        "R2 uses more fuel per kilometer than R5 does."
+      ],
+      "columns": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0,
+        1,
+        0
+      ],
+      "explanation": "Fuel per 100 km: R1 12, R2 14, R3 10, R4 16, R5 13. R4 has the most stops (30) and the highest rate: true. R3 has the fewest stops but uses 15.0 liters, more than R4's 9.6: false. R2 uses 0.14 liter per km against R5's 0.13: true."
+    },
+    {
+      "id": "GMAT-T2-062",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rates",
+      "stem": "What was Ana's average speed, in miles per hour, for her 120-mile trip?\n\n(1) She drove the first 60 miles at 40 miles per hour.\n\n(2) She drove the last 60 miles in 1 hour.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Average speed is total distance over total time. (1) gives the first 1.5 hours only; (2) gives the last hour only: neither is sufficient. Together the trip took 2.5 hours, so $120 / 2.5 = 48$: sufficient."
+    },
+    {
+      "id": "GMAT-T2-063",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 3,
+      "format": "cloze",
+      "skill": "Graphics interpretation",
+      "passage": "**Stacked bar chart: smartphone shipments by brand (millions)**\n\n| Year | Brand X | Brand Y | Brand Z | Others | Total |\n|---|---|---|---|---|---|\n| 2024 | 30 | 25 | 15 | 30 | 100 |\n| 2025 | 33 | 22 | 21 | 34 | 110 |",
+      "stem": "Brand Z's market share rose by about [[1]] percentage points from 2024 to 2025, and the group whose shipments grew by the largest percent was [[2]].",
+      "blanks": [
+        [
+          "4",
+          "6",
+          "10",
+          "40"
+        ],
+        [
+          "Brand X",
+          "Brand Y",
+          "Brand Z",
+          "Others"
+        ]
+      ],
+      "correct": [
+        0,
+        2
+      ],
+      "explanation": "Brand Z's share went from $15 / 100 = 15$ percent to $21 / 110 \\approx 19.1$ percent, a rise of about 4 points (6 is the change in units, 40 the percent growth). Growth: X 10%, Y -12%, Z 40%, Others about 13%."
+    },
+    {
+      "id": "GMAT-T2-064",
+      "section": "di",
+      "test": 2,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Divisibility",
+      "stem": "If $n$ is a positive integer, is $n$ divisible by 8?\n\n(1) $n$ is divisible by 4.\n\n(2) $n$ is divisible by 6.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Together, $n$ is a multiple of 12. 12 is not divisible by 8, but 24 is: not sufficient. Each statement alone allows both answers too."
+    },
+    {
+      "id": "GMAT-D-001",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percents",
+      "stem": "What is 0.6 percent of 450?",
+      "options": [
+        "0.027",
+        "0.27",
+        "2.7",
+        "27",
+        "270"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "0.6 percent is $0.006$, and $0.006 \\cdot 450 = 2.7$. Answering 270 treats 0.6 percent as 0.6."
+    },
+    {
+      "id": "GMAT-D-002",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Difference of squares",
+      "stem": "If $x^2 - y^2 = 48$ and $x + y = 12$, what is the value of $x$?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12",
+        "16"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$x^2 - y^2 = (x + y)(x - y)$, so $x - y = 4$. Adding $x + y = 12$ gives $2x = 16$ and $x = 8$."
+    },
+    {
+      "id": "GMAT-D-003",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Least common multiple",
+      "stem": "Bus A leaves a station every 12 minutes and bus B every 18 minutes. Both leave at 8:00 a.m. At what time do they next leave together?",
+      "options": [
+        "8:36 a.m.",
+        "8:54 a.m.",
+        "9:00 a.m.",
+        "9:12 a.m.",
+        "11:36 a.m."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "They leave together every $\\text{lcm}(12, 18) = 36$ minutes, so next at 8:36 a.m."
+    },
+    {
+      "id": "GMAT-D-004",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rational equations",
+      "stem": "If $\\frac{1}{x} + \\frac{1}{y} = \\frac{1}{4}$ and $xy = 48$, what is the value of $x + y$?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\frac{1}{x} + \\frac{1}{y} = \\frac{x + y}{xy}$, so $\\frac{x + y}{48} = \\frac{1}{4}$ and $x + y = 12$."
+    },
+    {
+      "id": "GMAT-D-005",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Successive percents",
+      "stem": "A coat lists for \\$80. It is discounted 15 percent, and then 8 percent sales tax is added to the discounted price. What is the total cost?",
+      "options": [
+        "\\$70.20",
+        "\\$71.40",
+        "\\$72.20",
+        "\\$73.10",
+        "\\$73.44"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Discounted price: $80 \\cdot 0.85 = 68$. With tax: $68 \\cdot 1.08 = 73.44$."
+    },
+    {
+      "id": "GMAT-D-006",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic inequalities",
+      "stem": "Which of the following describes every value of $x$ for which $x^2 < 4x$?",
+      "options": [
+        "$x < 0$",
+        "$0 < x < 4$",
+        "$x > 4$",
+        "$x < 0$ or $x > 4$",
+        "$-4 < x < 4$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$x^2 - 4x < 0$ means $x(x - 4) < 0$, which holds when the factors have opposite signs: $0 < x < 4$. Test $x = 2$: $4 < 8$, true."
+    },
+    {
+      "id": "GMAT-D-007",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Prime factors",
+      "stem": "What is the greatest prime factor of $3^8 - 1$?",
+      "options": [
+        "5",
+        "13",
+        "17",
+        "41",
+        "82"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "$3^8 - 1 = (3^4 - 1)(3^4 + 1) = 80 \\cdot 82 = 2^5 \\cdot 5 \\cdot 41$. The greatest prime factor is 41; 82 is $2 \\cdot 41$, not a prime."
+    },
+    {
+      "id": "GMAT-D-008",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Exponential growth",
+      "stem": "A town's population doubles every 6 years. If the population is 5,000 now, in how many years will it be 40,000?",
+      "options": [
+        "9",
+        "12",
+        "15",
+        "18",
+        "24"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "40,000 is $8 = 2^3$ times 5,000, so three doublings are needed: $3 \\cdot 6 = 18$ years."
+    },
+    {
+      "id": "GMAT-D-009",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "The probability of rain on Saturday is 0.4 and on Sunday is 0.3, and the two events are independent. What is the probability that it rains on at least one of the two days?",
+      "options": [
+        "0.42",
+        "0.58",
+        "0.62",
+        "0.7",
+        "0.88"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The chance of no rain on either day is $0.6 \\cdot 0.7 = 0.42$, so the chance of rain on at least one day is $1 - 0.42 = 0.58$. Adding 0.4 and 0.3 counts rain on both days twice."
+    },
+    {
+      "id": "GMAT-D-010",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Functions",
+      "stem": "The function $f(x) = x^2 + bx + c$ has zeros at $x = 2$ and $x = -5$. What is the value of $f(0)$?",
+      "options": [
+        "$-10$",
+        "$-7$",
+        "$-3$",
+        "3",
+        "10"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "$f(x) = (x - 2)(x + 5) = x^2 + 3x - 10$, so $f(0) = c = -10$."
+    },
+    {
+      "id": "GMAT-D-011",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medians",
+      "stem": "What is the median of the first 20 positive multiples of 3?",
+      "options": [
+        "27",
+        "28.5",
+        "30",
+        "31.5",
+        "33"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The multiples run 3, 6, ..., 60. With 20 values the median is the average of the 10th and 11th, 30 and 33, which is 31.5."
+    },
+    {
+      "id": "GMAT-D-012",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rates of change",
+      "stem": "A tank holds 300 liters of water. It is drained at 12 liters per minute while it is filled at 8 liters per minute. After how many minutes will it hold 180 liters?",
+      "options": [
+        "15",
+        "24",
+        "30",
+        "36",
+        "45"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The net loss is $12 - 8 = 4$ liters a minute. Losing $300 - 180 = 120$ liters takes $120 / 4 = 30$ minutes."
+    },
+    {
+      "id": "GMAT-D-013",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Weaken",
+      "passage": "A study found that people who drink green tea every day have lower rates of heart disease than people who do not. A tea company concludes that drinking green tea protects against heart disease.",
+      "stem": "Which of the following, if true, most seriously weakens the argument?",
+      "options": [
+        "Green tea contains less caffeine per cup than coffee or than most black teas do.",
+        "Some people in the study drank several cups of green tea every day.",
+        "The tea company sells green tea along with several kinds of black tea.",
+        "People who drink green tea daily also tend to exercise more and smoke less.",
+        "Heart disease is much more common in older people than in younger people."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "If green-tea drinkers also exercise more and smoke less, those habits could explain their lower heart disease rates, so the tea need not be the cause."
+    },
+    {
+      "id": "GMAT-D-014",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "GMAT-RC9",
+      "stem": "The primary purpose of the passage is to",
+      "options": [
+        "compare the ride-hailing business with the messaging business",
+        "explain why online platforms become more valuable to each of their users as they grow",
+        "argue that network effects protect leaders only in some conditions",
+        "show that winner-take-all markets have never existed among platforms",
+        "describe how several early social networks lost their lead"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage tests the claim that network effects make a leader unassailable, shows leaders have fallen, and names the conditions (multihoming, locality) that decide whether the effect protects a leader."
+    },
+    {
+      "id": "GMAT-D-015",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "GMAT-RC9",
+      "stem": "The passage describes multihoming as a situation in which",
+      "options": [
+        "a single platform operates in several different cities at once",
+        "a market leader buys the platforms that compete with it",
+        "buyers and sellers both use the same platform to trade",
+        "users take part in more than one competing platform at the same time",
+        "a newcomer copies the most popular features of a market leader"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Multihoming is when 'users can easily use several platforms at once, as many drivers and riders do with competing ride-hailing apps.'"
+    },
+    {
+      "id": "GMAT-D-016",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "GMAT-RC9",
+      "stem": "The passage suggests that a newcomer would find it hardest to challenge a leading platform that",
+      "options": [
+        "charges its users more than its main rivals charge them",
+        "operates only within individual cities rather than nationally",
+        "links users worldwide and that users seldom use alongside a rival",
+        "has lost a large number of users to its rivals in the past",
+        "lets its drivers also work for competing ride-hailing apps"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Both features that let newcomers in are absent here: no multihoming (users seldom use a rival too) and no locality (the network's value is worldwide, so there is no city to win first)."
+    },
+    {
+      "id": "GMAT-D-017",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Function",
+      "stimulusId": "GMAT-RC9",
+      "stem": "The examples of early social networks and online auction sites are mentioned in order to",
+      "options": [
+        "challenge the view that a platform's lead cannot be overcome",
+        "explain why network effects raise the cost of entry",
+        "show that local networks are easier for newcomers to enter",
+        "illustrate how multihoming works in practice for users",
+        "suggest that platforms are less valuable than they appear"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "They follow 'The history of such markets is less tidy' as cases of once-dominant platforms that lost their lead, which contradicts the winner-take-all claim."
+    },
+    {
+      "id": "GMAT-D-018",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Assumption",
+      "passage": "New software lets each claims processor at Brentwood Insurance handle 30 percent more claims per day. Brentwood's managers conclude that the company will be able to process its claims with fewer staff.",
+      "stem": "The argument depends on which of the following assumptions?",
+      "options": [
+        "Brentwood's claim volume will not rise sharply after the change.",
+        "The new software costs less each year than hiring and training new claims processors.",
+        "Most of the claims Brentwood receives are for automobile insurance.",
+        "Claims processors at Brentwood prefer the new software to the old system.",
+        "Several of Brentwood's competitors already use similar claims software."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Faster processing means fewer staff are needed only for the same volume of claims. If claims rose by as much as productivity, Brentwood would still need its current staff."
+    },
+    {
+      "id": "GMAT-D-019",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "passage": "Every vehicle in Sanford's delivery fleet is either electric or hybrid. None of the fleet's hybrid vehicles has a range of more than 500 miles. Some of the fleet's vehicles have a range of more than 500 miles.",
+      "stem": "If the statements above are true, which of the following must also be true?",
+      "options": [
+        "Some of the fleet's electric vehicles have a range of more than 500 miles.",
+        "None of the fleet's electric vehicles has a range of under 500 miles.",
+        "Every electric vehicle sold in Sanford has a range over 500 miles.",
+        "The fleet has more electric vehicles than it has hybrid vehicles.",
+        "Most of the vehicles in Sanford's delivery fleet are electric rather than hybrid."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Some fleet vehicles go more than 500 miles, and no hybrid does, so those vehicles must be electric. Nothing tells us how many electric vehicles there are or the range of the others."
+    },
+    {
+      "id": "GMAT-D-020",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "GMAT-RC10",
+      "stem": "The passage is primarily concerned with",
+      "options": [
+        "arguing that most coral reefs will survive the ocean warming expected over this century",
+        "describing evidence that coral heat tolerance varies, and its limits",
+        "comparing several coral species that differ in their heat tolerance",
+        "proposing experiments that could raise the heat tolerance of corals",
+        "explaining how corals obtain most of their food from the algae they host"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage overturns the idea of a fixed tolerance with survey and experimental evidence, then limits the hope it raises: the gain is about one degree, less than projected warming."
+    },
+    {
+      "id": "GMAT-D-021",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "GMAT-RC10",
+      "stem": "According to the passage, corals of one species living on reefs with regular brief temperature spikes",
+      "options": [
+        "often survive heat that kills the same species on steadier reefs",
+        "bleach more often but take longer to recover than other corals",
+        "never expel their algae, however warm the water becomes",
+        "host fewer algae in their tissues than corals on steadier reefs",
+        "grow faster than the same species on steadier reefs"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The second paragraph says such corals 'often survive heat that kills the same species on steadier reefs.'"
+    },
+    {
+      "id": "GMAT-D-022",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "GMAT-RC10",
+      "stem": "The author's statement that flexibility 'may buy reefs time' suggests that added heat tolerance",
+      "options": [
+        "will let corals adapt completely as long as the warming happens slowly enough",
+        "could delay but not prevent the damage that projected warming will cause",
+        "should be studied in experiments that run for several decades",
+        "has already been lost by most reefs in the recent heat waves",
+        "shows that this century's warming will be smaller than projected"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Tolerance rises by about one degree while projected warming is larger, so it postpones harm without preventing it: 'it does not make them safe.'"
+    },
+    {
+      "id": "GMAT-D-023",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Explain a discrepancy",
+      "passage": "Over the past five years, the price of solar panels has fallen sharply. Yet the share of homes in Pellham with rooftop solar panels has barely changed.",
+      "stem": "Which of the following, if true, most helps to explain the facts above?",
+      "options": [
+        "Pellham gets more sunshine each year than most towns in the region.",
+        "Homes in nearby towns have added solar panels at a faster rate.",
+        "Solar panels now turn more sunlight into electricity than they did before.",
+        "Labor and permit fees, which are most of a home system's cost, have risen.",
+        "Most Pellham homes with solar panels installed them over five years ago."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "If panels are only a small part of what a homeowner pays, and the larger part (labor and permits) has gone up, the total cost may not have fallen, so adoption need not rise."
+    },
+    {
+      "id": "GMAT-D-024",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Flaw",
+      "passage": "Professor Lin argues that the city's new bike lanes have harmed local businesses. But Professor Lin drives a car to work every day, so her argument should be dismissed.",
+      "stem": "The reasoning above is most vulnerable to the criticism that it",
+      "options": [
+        "assumes that bike lanes cannot help any local businesses",
+        "rejects an argument by attacking the person who makes it",
+        "relies on evidence from a single business district",
+        "fails to define what counts as a local business",
+        "treats an opinion about bike lanes as a fact"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "How Professor Lin gets to work says nothing about whether her evidence about local businesses is sound. The response attacks her rather than her argument."
+    },
+    {
+      "id": "GMAT-D-025",
+      "section": "verbal",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatCR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Strengthen",
+      "passage": "A grocery chain added self-checkout lanes to half of its stores. A year later, the average customer waiting time in those stores had fallen by 40 percent, while in the chain's other stores it was unchanged. The chain concludes that the self-checkout lanes reduced waiting times.",
+      "stem": "Which of the following, if true, most strengthens the argument?",
+      "options": [
+        "Waiting times in grocery stores are longest on weekend afternoons.",
+        "Self-checkout lanes cost less to operate than staffed checkout lanes.",
+        "The chain plans to add self-checkout lanes to its remaining stores next year.",
+        "Before the change, both store groups had similar traffic and waits.",
+        "Some customers say that they strongly prefer staffed checkout lanes to self-checkout lanes."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The comparison is persuasive only if the two groups of stores were alike to begin with. Showing similar traffic and waits before the change makes the self-checkout lanes the likeliest cause of the difference."
+    },
+    {
+      "id": "GMAT-D-026",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear equations",
+      "stem": "What is the value of $y$?\n\n(1) $3y - 2x = 10$\n\n(2) $x = 4$",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) One equation in two unknowns: not sufficient. (2) Says nothing about $y$: not sufficient. Together $3y - 8 = 10$, so $y = 6$: sufficient."
+    },
+    {
+      "id": "GMAT-D-027",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 1,
+      "format": "cloze",
+      "skill": "Graphics interpretation",
+      "passage": "**Line graph: unemployment rate by quarter (%)**\n\n| Quarter | Q1 | Q2 | Q3 | Q4 |\n|---|---|---|---|---|\n| Rate | 5.2 | 4.8 | 4.5 | 4.9 |",
+      "stem": "The unemployment rate fell by [[1]] percentage points from Q1 to Q3, and the change from Q3 to Q4 was [[2]].",
+      "blanks": [
+        [
+          "0.3",
+          "0.4",
+          "0.7",
+          "1.1"
+        ],
+        [
+          "a rise of 0.4 points",
+          "a rise of 0.9 points",
+          "a fall of 0.4 points"
+        ]
+      ],
+      "correct": [
+        2,
+        0
+      ],
+      "explanation": "From 5.2 to 4.5 is a fall of 0.7 points. From 4.5 to 4.9 is a rise of 0.4 points."
+    },
+    {
+      "id": "GMAT-D-028",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Table analysis",
+      "passage": "**Streaming service plans**\n\n| Plan | Subscribers (thousands) | Monthly price | Monthly churn |\n|---|---|---|---|\n| Basic | 420 | \\$9 | 4.0% |\n| Standard | 310 | \\$15 | 2.5% |\n| Premium | 150 | \\$24 | 1.5% |\n| Family | 120 | \\$30 | 2.0% |",
+      "stem": "For each statement, select True if it is supported by the information in the table. Otherwise select False.",
+      "rows": [
+        "Standard brings in more monthly revenue than any other plan.",
+        "The plan with the highest price has the lowest monthly churn.",
+        "Each month Basic loses more subscribers than the other three plans combined."
+      ],
+      "columns": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0,
+        1,
+        0
+      ],
+      "explanation": "Monthly revenue (thousands of dollars): Basic $420 \\times 9 = 3{,}780$, Standard $310 \\times 15 = 4{,}650$, Premium 3,600, Family 3,600: true. Family has the highest price but Premium has the lowest churn: false. Basic loses $4\\% \\times 420 = 16.8$ thousand; the others lose $7.75 + 2.25 + 2.4 = 12.4$ thousand: true."
+    },
+    {
+      "id": "GMAT-D-029",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Signs",
+      "stem": "Is $x$ negative?\n\n(1) $x^3 < 0$\n\n(2) $x^2 > 0$",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) A cube is negative only when the number is negative: sufficient. (2) Any nonzero $x$, positive or negative, has $x^2 > 0$: not sufficient."
+    },
+    {
+      "id": "GMAT-D-030",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Two-part analysis",
+      "stem": "A print shop charges a fixed setup fee plus a fixed price for each copy. An order of 200 copies costs \\$70, and an order of 500 copies costs \\$130. Select the setup fee and the price per copy.",
+      "rows": [
+        "Setup fee",
+        "Price per copy"
+      ],
+      "columns": [
+        "\\$0.20",
+        "\\$0.25",
+        "\\$20",
+        "\\$30"
+      ],
+      "correct": [
+        3,
+        0
+      ],
+      "explanation": "The extra 300 copies cost \\$60 more, so each copy costs $60 / 300 = 0.20$ dollars. Then the fee is $70 - 200 \\times 0.20 = 30$ dollars."
+    },
+    {
+      "id": "GMAT-D-031",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Multi-source reasoning",
+      "stimulusId": "GMAT-MSR3",
+      "stem": "For each venue, select whether it meets every requirement in the planner's email and the venue notes.",
+      "rows": [
+        "Lakeside",
+        "Granary",
+        "Civic Hall",
+        "Riverside"
+      ],
+      "columns": [
+        "Meets all",
+        "Does not"
+      ],
+      "correct": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "explanation": "Lakeside is booked until 2 p.m., and the event runs all day. Granary holds only 160. Civic Hall costs $3{,}500 + 180 \\times 60 + 900 = 15{,}200$ dollars with the partitions, within budget. Riverside costs $8{,}500 + 180 \\times 70 = 21{,}100$ dollars, over budget."
+    },
+    {
+      "id": "GMAT-D-032",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Multi-source reasoning",
+      "stimulusId": "GMAT-MSR3",
+      "stem": "What is the total cost of using Civic Hall for the event, including everything needed to meet the planner's requirements?",
+      "options": [
+        "\\$14,300",
+        "\\$14,700",
+        "\\$15,200",
+        "\\$15,500",
+        "\\$16,100"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Room fee \\$3,500, catering $180 \\times 60 = 10{,}800$ dollars, and \\$900 of partitions for the required breakout room: \\$15,200. Leaving out the partitions gives \\$14,300."
+    },
+    {
+      "id": "GMAT-D-033",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Multi-source reasoning",
+      "stimulusId": "GMAT-MSR3",
+      "stem": "What is the smallest whole-dollar cut in Riverside's catering price per person that would bring Riverside within the planner's budget for 180 attendees?",
+      "options": [
+        "\\$6",
+        "\\$7",
+        "\\$8",
+        "\\$10",
+        "\\$12"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The budget leaves $20{,}000 - 8{,}500 = 11{,}500$ dollars for catering, or about \\$63.89 a person. A \\$6 cut (to \\$64) costs $180 \\times 64 = 11{,}520$ dollars, still \\$20 over; a \\$7 cut (to \\$63) costs 11,340 dollars and fits."
+    },
+    {
+      "id": "GMAT-D-034",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Remainders",
+      "stem": "What is the remainder when the positive integer $n$ is divided by 5?\n\n(1) When $n$ is divided by 15, the remainder is 12.\n\n(2) When $n$ is divided by 10, the remainder is 7.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) $n = 15q + 12$, and since $15q$ is a multiple of 5, the remainder is that of 12: 2. Sufficient. (2) $n = 10q + 7$, so the remainder is that of 7: 2. Sufficient."
+    },
+    {
+      "id": "GMAT-D-035",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 2,
+      "format": "cloze",
+      "skill": "Graphics interpretation",
+      "passage": "**Scatter plot with a fitted line**\n\nA scatter plot shows hours studied $x$ and test score $y$ for 40 students, with $x$ from 2 to 8. The least-squares line is $y = 5x + 52$.",
+      "stem": "The line predicts a score of [[1]] for a student who studies 6 hours, and to raise the predicted score by 15 points a student would need to study [[2]] more hours.",
+      "blanks": [
+        [
+          "72",
+          "77",
+          "82",
+          "87"
+        ],
+        [
+          "1.5",
+          "3",
+          "5",
+          "15"
+        ]
+      ],
+      "correct": [
+        2,
+        1
+      ],
+      "explanation": "$5(6) + 52 = 82$. Each hour adds 5 points, so 15 points takes $15 / 5 = 3$ more hours."
+    },
+    {
+      "id": "GMAT-D-036",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percents",
+      "stem": "Last year a charity raised money only from individuals and corporations. What percent of the total came from corporations?\n\n(1) Individuals gave \\$240,000.\n\n(2) Individuals gave 40 percent as much as corporations gave.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "(1) Without the corporate amount, no percent can be found: not sufficient. (2) For every \\$100 from corporations, individuals gave \\$40, so corporations gave $\\frac{100}{140} \\approx 71$ percent: sufficient."
+    },
+    {
+      "id": "GMAT-D-037",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 3,
+      "format": "matrix",
+      "skill": "Table analysis",
+      "passage": "**Electricity generation, 2025**\n\n| Country | Total generated (TWh) | Renewable share |\n|---|---|---|\n| A | 300 | 40% |\n| B | 120 | 75% |\n| C | 500 | 22% |\n| D | 80 | 60% |\n| E | 220 | 35% |",
+      "stem": "For each statement, select True if it is supported by the information in the table. Otherwise select False.",
+      "rows": [
+        "The country with the highest renewable share also generates the most renewable electricity.",
+        "Country C generates more renewable electricity than country B does.",
+        "Renewables make up more than 40 percent of the five countries' combined generation."
+      ],
+      "columns": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1,
+        0,
+        1
+      ],
+      "explanation": "Renewable output (TWh): A $300 \\times 0.40 = 120$, B 90, C 110, D 48, E 77. B has the highest share but A generates the most: false. C's 110 is more than B's 90: true. Combined, 445 of 1,220 TWh is about 36.5 percent: false."
+    },
+    {
+      "id": "GMAT-D-038",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatTwoPart",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Two-part analysis",
+      "stem": "A university says its new online degree is as rigorous as its campus degree, because students in both programs take the same final exams.\n\nFor each statement, select whether, if true, it would strengthen the university's claim, weaken it, or do neither.",
+      "rows": [
+        "Online students may take the exams at home without any supervision.",
+        "Graduates of the two programs are hired at similar rates and salaries.",
+        "The online degree costs less than the campus degree.",
+        "More students enrolled in the online degree this year than last year."
+      ],
+      "columns": [
+        "Strengthens",
+        "Weakens",
+        "Neither"
+      ],
+      "correct": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "explanation": "Unsupervised exams mean the same exam may not test online students the same way: weakens. Similar hiring outcomes suggest employers find the degrees comparable: strengthens. Cost and enrollment say nothing about rigor."
+    },
+    {
+      "id": "GMAT-D-039",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Word problems",
+      "stem": "Each of a team's games this season ended in a win or a loss, and the team won 60 percent of its games. How many games did the team lose this season?\n\n(1) The team won 12 more games than it won last season.\n\n(2) The team played 5 more games than it played last season.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Both statements compare this season with last season, but nothing gives last season's numbers, so this season's total is unknown. For example, 25 games this season (15 wins, 10 losses) and 50 games (30 wins, 20 losses) can each fit both statements with a suitable last season: not sufficient."
+    },
+    {
+      "id": "GMAT-D-040",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatTables",
+      "difficulty": 2,
+      "format": "cloze",
+      "skill": "Graphics interpretation",
+      "passage": "**Bar chart: one week of pizza orders**\n\n| Size | Small | Medium | Large |\n|---|---|---|---|\n| Orders | 120 | 200 | 180 |\n| Average price | \\$10 | \\$14 | \\$18 |",
+      "stem": "Large pizzas made up [[1]] of the orders, and they brought in [[2]] of the revenue.",
+      "blanks": [
+        [
+          "30%",
+          "36%",
+          "40%",
+          "45%"
+        ],
+        [
+          "about 36%",
+          "about 40%",
+          "about 45%",
+          "about 50%"
+        ]
+      ],
+      "correct": [
+        1,
+        2
+      ],
+      "explanation": "Orders: $120 + 200 + 180 = 500$, and $180 / 500 = 36$ percent. Revenue: $1{,}200 + 2{,}800 + 3{,}240 = 7{,}240$ dollars, and $3{,}240 / 7{,}240 \\approx 44.8$ percent."
+    },
+    {
+      "id": "GMAT-D-041",
+      "section": "di",
+      "test": 0,
+      "module": 1,
+      "domain": "gmatDS",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Standard deviation",
+      "stem": "Set $T$ contains six integers. Is the standard deviation of $T$ greater than 0?\n\n(1) The integers in $T$ are not all equal.\n\n(2) The range of $T$ is 4.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are not sufficient."
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The standard deviation is 0 only when every number equals the mean, that is, when all are equal. (1) says they are not all equal: sufficient. (2) A range of 4 means at least two differ: sufficient."
+    }
+  ]
+}

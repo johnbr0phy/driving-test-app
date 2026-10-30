@@ -1,0 +1,4231 @@
+[
+  {
+    "id": "PSM-T1-001",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "What is the maximum length of a Sprint?",
+    "options": [
+      "As long as the release needs",
+      "Two weeks",
+      "Six weeks",
+      "One month"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sprints are fixed-length events of one month or less. Two weeks is a common choice but not a rule."
+  },
+  {
+    "id": "PSM-T1-002",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "How many Product Owners does a Scrum Team have?",
+    "options": [
+      "One, and that person is accountable for the Product Backlog",
+      "As many as the stakeholders need, working as a committee",
+      "One for each group of related features in the Product Backlog",
+      "None; the Developers share the Product Owner's accountability"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A Scrum Team has one Product Owner. The Product Owner is one person, not a committee, and is accountable for effective Product Backlog management."
+  },
+  {
+    "id": "PSM-T1-003",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Artifacts",
+    "stem": "Which three are Scrum artifacts? (Choose three.)",
+    "select": 3,
+    "options": [
+      "Definition of Done",
+      "Product Backlog",
+      "Sprint Backlog",
+      "Burn-down chart",
+      "Increment"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "The three Scrum artifacts are the Product Backlog, the Sprint Backlog and the Increment. The Definition of Done is the commitment for the Increment, not an artifact, and burn-down charts are an optional practice."
+  },
+  {
+    "id": "PSM-T1-004",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Empiricism",
+    "stem": "Which statement best describes empiricism as Scrum uses it?",
+    "options": [
+      "Detailed upfront analysis removes most uncertainty before any work starts",
+      "Knowledge comes from experience, and decisions are made on what is observed",
+      "Plans are fixed early, and progress is measured by how closely they are followed",
+      "Experts predict the outcome from past projects so that the team avoids experiments"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scrum is founded on empiricism: knowledge comes from experience and decisions are based on what is observed. Upfront analysis, fixed plans and expert prediction are the opposite of an empirical approach to complex work."
+  },
+  {
+    "id": "PSM-T1-005",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Removing impediments",
+    "stem": "The Developers raise an impediment: approvals from another department take a week. What should the Scrum Master do?",
+    "options": [
+      "Work to cause its removal, for example by working with the department on faster approvals",
+      "Tell the Developers to skip the approval so that the Sprint is not delayed by the department",
+      "Add the delay to the Sprint Backlog and extend the Sprint by a week so that the work fits",
+      "Log the impediment and raise it at the next Retrospective, without acting on it before then"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Master serves the team by causing the removal of impediments to its progress. Bypassing controls, extending a Sprint or waiting are not good options."
+  },
+  {
+    "id": "PSM-T1-006",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ordering the backlog",
+    "stem": "A stakeholder insists their feature move to the top of the Product Backlog. The Product Owner believes another item has more value. Who decides the order?",
+    "options": [
+      "The Developers, by a majority vote at the next Sprint Planning",
+      "The Product Owner, who listens to the stakeholder but makes the call",
+      "The Scrum Master, acting as a neutral mediator between the two",
+      "The stakeholder, since they are the one funding most of the work"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Product Owner is accountable for ordering the Product Backlog, and the organization must respect those decisions. Stakeholders influence the order by convincing the Product Owner."
+  },
+  {
+    "id": "PSM-T1-007",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "When does a new Sprint start?",
+    "options": [
+      "After the Product Owner approves a release",
+      "On the first Monday after the last Sprint",
+      "Once the whole Product Backlog is refined",
+      "Immediately after the previous Sprint ends"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A new Sprint starts immediately after the conclusion of the previous Sprint. There are no gaps between Sprints."
+  },
+  {
+    "id": "PSM-T1-008",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "What size does the Scrum Guide suggest for a Scrum Team?",
+    "options": [
+      "At least 12 people, to cover all skills",
+      "Exactly 7 people, plus or minus 2",
+      "No more than 5, including the Scrum Master",
+      "Typically 10 or fewer people"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Scrum Team is typically 10 or fewer people: small enough to remain nimble and large enough to complete significant work within a Sprint."
+  },
+  {
+    "id": "PSM-T1-009",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Goal",
+    "stem": "Which commitment belongs to the Product Backlog?",
+    "options": [
+      "The Sprint Goal",
+      "The Definition of Done",
+      "The release plan",
+      "The Product Goal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each artifact has a commitment: the Product Backlog has the Product Goal, the Sprint Backlog the Sprint Goal and the Increment the Definition of Done."
+  },
+  {
+    "id": "PSM-T1-010",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Pillars",
+    "stem": "Which three are the pillars of Scrum's empirical process? (Choose three.)",
+    "select": 3,
+    "options": [
+      "Adaptation",
+      "Estimation",
+      "Transparency",
+      "Commitment",
+      "Inspection"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Transparency, inspection and adaptation are the three empirical pillars. Commitment is one of the five Scrum Values, not a pillar, and estimation is a practice Scrum leaves to the team."
+  },
+  {
+    "id": "PSM-T1-011",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Self-management",
+    "stem": "The Developers ask the Scrum Master to decide which of them should work on each task. What should the Scrum Master do?",
+    "options": [
+      "Assign the tasks, since the Scrum Master knows everyone's skills",
+      "Ask the Product Owner to assign them in business priority order",
+      "Coach them to decide it together, since they are self-managing",
+      "Assign them for the first Sprint, then let the team take over"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scrum Teams are self-managing and decide who does what. The Scrum Master coaches the team in self-management rather than taking the decision from them."
+  },
+  {
+    "id": "PSM-T1-012",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Planning",
+    "stem": "What is the timebox for Sprint Planning in a one-month Sprint?",
+    "options": [
+      "4 hours at most",
+      "8 hours at most",
+      "One day per week of the Sprint",
+      "2 hours at most"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sprint Planning is timeboxed to a maximum of eight hours for a one-month Sprint, and is usually shorter for shorter Sprints."
+  },
+  {
+    "id": "PSM-T1-013",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "A sponsor asks for a guaranteed delivery date for everything in the Product Backlog. Which response fits Scrum best?",
+    "options": [
+      "Dates are never discussed in Scrum, so the request should simply be declined",
+      "Forecasts can be made from what has already happened, but they are not guarantees",
+      "The Scrum Master can calculate a fixed date from the team's planned capacity for it",
+      "A guaranteed date is possible once every item has been estimated in hours"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In complex environments what will happen is unknown, and only what has already happened may be used for forward-looking decisions. Forecasts are useful, but they do not replace empiricism and are not promises."
+  },
+  {
+    "id": "PSM-T1-014",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "A Scrum Team has grown to 15 people, and coordination is slowing it down. What does the Scrum Guide suggest?",
+    "options": [
+      "Keep one team but add a second Product Owner so that each one manages half of the Product Backlog",
+      "Reorganize into several cohesive Scrum Teams that share one Product Goal, Product Backlog and Product Owner",
+      "Split into a design sub-team and a build sub-team that both report to one lead Developer for all the hand-offs",
+      "Keep one team and lengthen the Sprint to six weeks so that there is more time for all the coordination"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If a Scrum Team becomes too large, it should consider reorganizing into multiple cohesive Scrum Teams, each focused on the same product, sharing the same Product Goal, Product Backlog and Product Owner. Sub-teams, two Product Owners and Sprints over a month are not allowed in Scrum."
+  },
+  {
+    "id": "PSM-T1-015",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Definition of Done",
+    "stem": "Which commitment belongs to the Increment?",
+    "options": [
+      "The Product Goal",
+      "The Definition of Ready",
+      "The Definition of Done",
+      "The Sprint Goal"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Increment's commitment is the Definition of Done. The Scrum Guide has no Definition of Ready."
+  },
+  {
+    "id": "PSM-T1-016",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Daily Scrum",
+    "stem": "What is the timebox for the Daily Scrum?",
+    "options": [
+      "1 hour",
+      "15 minutes",
+      "2 minutes per Developer",
+      "30 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Daily Scrum is a 15-minute event for the Developers, whatever the length of the Sprint."
+  },
+  {
+    "id": "PSM-T1-017",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pillars",
+    "stem": "According to the Scrum Guide, inspection without transparency is:",
+    "options": [
+      "The Scrum Master's concern, since only they inspect the artifacts",
+      "Misleading and wasteful, because decisions rest on a false picture",
+      "Harmless, because each Sprint Review corrects any wrong decision",
+      "Acceptable early on, as long as the team adapts later in the Sprint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Transparency enables inspection. If the artifacts do not show the real state of the work, inspecting them leads to poor decisions, which the Scrum Guide calls misleading and wasteful."
+  },
+  {
+    "id": "PSM-T1-018",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Serving the organization",
+    "stem": "Which three are ways the Scrum Master serves the organization? (Choose three.)",
+    "select": 3,
+    "options": [
+      "Approving each Increment before it is released",
+      "Writing performance reviews for the Developers",
+      "Removing barriers between stakeholders and Scrum Teams",
+      "Leading, training and coaching the organization in its Scrum adoption",
+      "Helping employees and stakeholders understand an empirical approach"
+    ],
+    "correct": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "The Scrum Master serves the organization by leading, training and coaching its Scrum adoption, planning and advising Scrum implementations, helping people understand an empirical approach for complex work and removing barriers between stakeholders and Scrum Teams."
+  },
+  {
+    "id": "PSM-T1-019",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Developers",
+    "stem": "Who is accountable for creating the plan for the Sprint, the Sprint Backlog?",
+    "options": [
+      "The Scrum Team's manager",
+      "The Developers",
+      "The Scrum Master",
+      "The Product Owner"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Creating a plan for the Sprint, the Sprint Backlog, is one of the Developers' accountabilities. The Product Owner proposes the value and the Scrum Master coaches, but the plan belongs to the Developers."
+  },
+  {
+    "id": "PSM-T1-020",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Sprint Planning",
+    "stem": "Which three topics does Sprint Planning address? (Choose three.)",
+    "select": 3,
+    "options": [
+      "When will the next release ship?",
+      "Why is this Sprint valuable?",
+      "What can be Done this Sprint?",
+      "How will the chosen work get done?",
+      "Who will be assigned each task?"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Sprint Planning addresses why the Sprint is valuable (leading to the Sprint Goal), what can be Done this Sprint, and how the chosen work will get done. Developers organize who does what themselves."
+  },
+  {
+    "id": "PSM-T1-021",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Increment",
+    "stem": "When is an Increment born?",
+    "options": [
+      "When the whole Sprint Backlog is finished at the Sprint's end",
+      "When the item is deployed to production after release approval",
+      "When the Product Owner accepts the item at the Sprint Review",
+      "The moment a Product Backlog item meets the Definition of Done"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The moment a Product Backlog item meets the Definition of Done, an Increment is born. Acceptance at a review, the end of the Sprint or a deployment are not what makes it an Increment."
+  },
+  {
+    "id": "PSM-T1-022",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Forecasting",
+    "stem": "Which three practices does the Scrum Guide mention as ways to forecast progress? (Choose three.)",
+    "select": 3,
+    "options": [
+      "Burn-ups",
+      "Burn-downs",
+      "Earned value analysis",
+      "Gantt charts",
+      "Cumulative flows"
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "The Scrum Guide mentions burn-downs, burn-ups and cumulative flows as practices for forecasting progress, adding that while proven useful, they do not replace the importance of empiricism."
+  },
+  {
+    "id": "PSM-T1-023",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum definition",
+    "stem": "True or false: Scrum is designed to give a complete, detailed method for every part of product development.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scrum is purposefully incomplete. It defines only the parts needed to put Scrum theory into practice and relies on the collective intelligence of the people using it for the rest."
+  },
+  {
+    "id": "PSM-T1-024",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum events",
+    "stem": "What is the Scrum Master's responsibility for the Scrum events?",
+    "options": [
+      "Running each event personally and setting the agenda for every single one of them",
+      "Ensuring they take place and are positive, productive and within the timebox",
+      "Approving who may attend each event and what topics may be discussed",
+      "Recording the minutes of each event and sending them to management"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Master ensures that all Scrum events take place and are positive, productive and kept within the timebox. The events belong to the Scrum Team; the Daily Scrum, for example, is the Developers' event."
+  },
+  {
+    "id": "PSM-T1-025",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "Midway through the Sprint, the Developers see they cannot finish every selected item, but the Sprint Goal is still achievable. What should they do?",
+    "options": [
+      "Extend the Sprint by a few more days so that every selected item can be finished",
+      "Cancel the Sprint and plan a new one with a smaller selection of the items",
+      "Relax the Definition of Done for the remaining items to save some time",
+      "Work with the Product Owner to renegotiate scope while keeping the Sprint Goal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "During the Sprint, scope may be clarified and renegotiated with the Product Owner as more is learned, as long as the Sprint Goal is not endangered. Sprints are fixed length, cancellation is for an obsolete Sprint Goal, and quality does not decrease."
+  },
+  {
+    "id": "PSM-T1-026",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Developers",
+    "stem": "Which two are accountabilities of the Developers? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Instilling quality by adhering to a Definition of Done",
+      "Ensuring every Scrum event is kept within its timebox",
+      "Adapting their plan each day toward the Sprint Goal",
+      "Deciding which stakeholders attend the Sprint Review",
+      "Ordering the Product Backlog items to maximize value"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Developers create the Sprint Backlog, instill quality by adhering to a Definition of Done, adapt their plan each day toward the Sprint Goal and hold each other accountable as professionals. Ordering the backlog belongs to the Product Owner, and making sure events happen within their timebox belongs to the Scrum Master."
+  },
+  {
+    "id": "PSM-T1-027",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Increment",
+    "stem": "True or false: Multiple Increments may be created within a single Sprint.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiple Increments may be created within a Sprint. Their sum is presented at the Sprint Review."
+  },
+  {
+    "id": "PSM-T1-028",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ordering the backlog",
+    "stem": "What is the Product Owner's main tool for balancing many stakeholders' requests?",
+    "options": [
+      "Ordering the Product Backlog to maximize value",
+      "Adding every request to the current Sprint",
+      "Asking the Scrum Master to choose among requests",
+      "Splitting the team so each stakeholder gets some"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Owner represents the needs of many stakeholders in the Product Backlog and orders it to maximize the value of the product."
+  },
+  {
+    "id": "PSM-T1-029",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "Who has the authority to cancel a Sprint?",
+    "options": [
+      "The Scrum Master",
+      "The Developers, by majority",
+      "Any key stakeholder",
+      "Only the Product Owner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Only the Product Owner has the authority to cancel the Sprint."
+  },
+  {
+    "id": "PSM-T1-030",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Values",
+    "stem": "The Scrum Team and its stakeholders agree to be open about all the work and the challenges with performing it. Which Scrum value is this?",
+    "options": [
+      "Courage",
+      "Commitment",
+      "Openness",
+      "Respect"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Openness means being open about the work and its challenges. Commitment is about achieving goals and supporting each other, courage about doing the right thing, and respect about treating each other as capable, independent people."
+  },
+  {
+    "id": "PSM-T1-031",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum events",
+    "stem": "True or false: The Scrum Master must facilitate every Daily Scrum.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Daily Scrum is an event for the Developers. The Scrum Master ensures it takes place and helps the team keep it effective, but does not have to facilitate it."
+  },
+  {
+    "id": "PSM-T1-032",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "Within a Scrum Team, who decides who does what, when and how?",
+    "options": [
+      "The Scrum Team itself, because it is self-managing",
+      "The Product Owner, who knows the priorities best",
+      "The line manager, who knows each person's skills",
+      "The Scrum Master, who shares out all the tasks fairly"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Scrum Teams are self-managing, meaning they internally decide who does what, when and how."
+  },
+  {
+    "id": "PSM-T1-033",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Definition of Done",
+    "stem": "At the end of the Sprint, one item is coded but not tested as the Definition of Done requires. What happens to it?",
+    "options": [
+      "It is not presented as Done, and it returns to the Product Backlog for future consideration",
+      "It is included in the Increment, since the coding is the most valuable part of the item",
+      "It stays in the Sprint Backlog, and the Sprint is extended until the item has been tested",
+      "It is shown at the Sprint Review as done, with all of its testing finished in the next Sprint"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review. Instead, it returns to the Product Backlog for future consideration."
+  },
+  {
+    "id": "PSM-T1-034",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "When might a Sprint be cancelled?",
+    "options": [
+      "When a stakeholder wants an early demo",
+      "When the team falls behind its forecast",
+      "When one of the Developers falls ill",
+      "When the Sprint Goal becomes obsolete"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A Sprint could be cancelled if the Sprint Goal becomes obsolete. Being behind, illness or an early demo request are handled within the Sprint."
+  },
+  {
+    "id": "PSM-T1-035",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "At the Sprint Review, what do stakeholders and the Scrum Team do together?",
+    "options": [
+      "Collaborate on what to do next",
+      "Assign new tasks to individual Developers",
+      "Approve or reject each Developer's work",
+      "Sign the Increment off for production"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At the Sprint Review the Scrum Team presents its results and attendees collaborate on what to do next. It is a working session, not a sign-off or tasking meeting."
+  },
+  {
+    "id": "PSM-T1-036",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scrum theory",
+    "stem": "Besides empiricism, which way of thinking does the Scrum Guide say Scrum is founded on?",
+    "options": [
+      "Critical chain thinking, which protects the plan with shared buffers",
+      "Six Sigma, which removes all variation from the delivery process",
+      "Systems engineering, which specifies every component before build",
+      "Lean thinking, which reduces waste and focuses on the essentials"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Scrum Guide names empiricism and lean thinking. Lean thinking reduces waste and focuses on the essentials. The other approaches are not part of Scrum's foundation."
+  },
+  {
+    "id": "PSM-T1-037",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Serving the organization",
+    "stem": "A functional manager wants to attend Sprint Retrospectives to monitor the team, and the Developers feel uneasy. What should the Scrum Master do?",
+    "options": [
+      "Hold two Retrospectives each Sprint: one with the manager present and a private one without them",
+      "Explain that the Retrospective is for the Scrum Team, and help the manager see progress at the Sprint Review",
+      "Let the manager attend, since managers have the right to see how their staff are doing every Sprint",
+      "Send the manager a summary of what each Developer said so the manager can follow the team's issues"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Sprint Retrospective is where the Scrum Team inspects itself and plans improvements, which needs openness and trust. The Sprint Review is where stakeholders inspect the outcome, so the Scrum Master helps the manager use it."
+  },
+  {
+    "id": "PSM-T1-038",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "True or false: The Product Owner may have others do Product Backlog work but remains accountable for it.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Owner may do the Product Backlog work or delegate the responsibility to others. Either way, the Product Owner remains accountable."
+  },
+  {
+    "id": "PSM-T1-039",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Backlog",
+    "stem": "What does the Sprint Backlog consist of?",
+    "options": [
+      "Every task for the release, assigned to named Developers by the Scrum Master at the start",
+      "The Sprint Goal, the selected Product Backlog items and a plan for delivering the Increment",
+      "A frozen copy of the top of the Product Backlog, agreed with the stakeholders at the start",
+      "The Product Owner's ordered list of all the features planned for the whole product"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Sprint Backlog is composed of the Sprint Goal (why), the Product Backlog items selected for the Sprint (what) and an actionable plan for delivering the Increment (how). It is a plan by and for the Developers."
+  },
+  {
+    "id": "PSM-T1-040",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Daily Scrum",
+    "stem": "True or false: The Daily Scrum is the only time the Developers may adjust their plan during the Sprint.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Daily Scrum is not the only time Developers may adjust their plan. They often meet throughout the day for more detailed discussions about adapting or re-planning the rest of the Sprint's work."
+  },
+  {
+    "id": "PSM-T1-041",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Daily Scrum",
+    "stem": "Who is the Daily Scrum for?",
+    "options": [
+      "The whole Scrum Team and the stakeholders",
+      "The Product Owner, who receives the status",
+      "The Scrum Master, who uses it to track tasks",
+      "The Developers; it is their event"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Daily Scrum is an event for the Developers of the Scrum Team. Its purpose is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary."
+  },
+  {
+    "id": "PSM-T1-042",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "A senior manager tells two Developers to add a client's feature to the current Sprint. What should happen?",
+    "options": [
+      "The Scrum Master adds it and removes an item of similar size from the Sprint Backlog to fit it",
+      "The Developers add it and work overtime so that nothing else in the Sprint has to be dropped",
+      "The Developers add it straight away, since senior managers can change the scope of a Sprint",
+      "The request goes to the Product Owner, who decides if and where it fits in the Product Backlog"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Those wanting to change the Product Backlog do so by convincing the Product Owner, and the whole organization must respect the Product Owner's decisions. Any change to the Sprint's scope is negotiated with the Product Owner and must not endanger the Sprint Goal."
+  },
+  {
+    "id": "PSM-T1-043",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Definition of Done",
+    "stem": "Your organization has a Definition of Done as a standard. What must the Scrum Team do?",
+    "options": [
+      "Follow it as a minimum",
+      "Replace it with its own if the team prefers",
+      "Ignore it, since each team defines its own Done",
+      "Follow it only for items marked as high risk"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the Definition of Done for an Increment is part of the organization's standards, all Scrum Teams must follow it as a minimum. If it is not, the Scrum Team must create one appropriate for the product."
+  },
+  {
+    "id": "PSM-T1-044",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pillars",
+    "stem": "An inspection shows that part of the product has drifted outside acceptable limits. When should the adjustment be made?",
+    "options": [
+      "Only after the Scrum Master approves a formal change request",
+      "At the next Sprint Retrospective, where all changes are agreed",
+      "As soon as possible, to minimize further deviation",
+      "At the end of the release, once the full impact is clearly known"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Scrum Guide says an adjustment must be made as soon as possible to minimize further deviation. Waiting for a later event or an approval lets the problem grow."
+  },
+  {
+    "id": "PSM-T1-045",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Facilitation",
+    "stem": "At a Sprint Review, stakeholders and the Product Owner start arguing, and nothing gets discussed. What should the Scrum Master do?",
+    "options": [
+      "End the Sprint Review and reschedule it for a day when tempers have cooled",
+      "Decide the disputed point personally so that the meeting can move on to other topics",
+      "Facilitate so the session stays a productive collaboration within its timebox",
+      "Let them argue it out, since the Sprint Review belongs to the stakeholders"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Scrum Master ensures events are positive, productive and kept within the timebox, and facilitates stakeholder collaboration as requested or needed. Product decisions stay with the Product Owner."
+  },
+  {
+    "id": "PSM-T1-046",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Scrum Master and Product Owner",
+    "stem": "Which two are ways the Scrum Master serves the Product Owner? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Facilitating stakeholder collaboration as requested or needed",
+      "Writing the acceptance criteria on the Product Owner's behalf",
+      "Ordering the Product Backlog when the Product Owner is busy",
+      "Helping find techniques for defining the Product Goal and managing the Product Backlog",
+      "Approving which Increments the Product Owner may release"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "The Scrum Master serves the Product Owner by helping find techniques for effective Product Goal definition and Product Backlog management, helping the team understand the need for clear items, helping establish empirical product planning and facilitating stakeholder collaboration as requested or needed."
+  },
+  {
+    "id": "PSM-T1-047",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Review",
+    "stem": "What is the purpose of the Sprint Review?",
+    "options": [
+      "To plan all the tasks for the next Sprint in full, final detail",
+      "To review each Developer's individual performance in the Sprint",
+      "To inspect the outcome of the Sprint and decide future adaptations",
+      "To approve the Increment formally so that it can be released to production"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The purpose of the Sprint Review is to inspect the outcome of the Sprint and determine future adaptations. It should never be considered a gate to releasing value."
+  },
+  {
+    "id": "PSM-T1-048",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Master",
+    "stem": "Who is accountable for the Scrum Team's effectiveness?",
+    "options": [
+      "The Product Owner",
+      "The Developers",
+      "The Scrum Master",
+      "The organization's agile coach"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Scrum Guide makes the Scrum Master accountable for the Scrum Team's effectiveness, by enabling the team to improve its practices within the Scrum framework."
+  },
+  {
+    "id": "PSM-T1-049",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Definition of Done",
+    "stem": "Several Scrum Teams work on the same product. What is true about their Definition of Done?",
+    "options": [
+      "They must mutually define and comply with the same Definition of Done",
+      "The strictest team's definition applies to the other teams' work only",
+      "The Product Owner writes it alone, and each team then adapts its copy",
+      "Each team must create its own, because every team is self-managing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If there are multiple Scrum Teams working together on a product, they must mutually define and comply with the same Definition of Done, so their work integrates into one Increment."
+  },
+  {
+    "id": "PSM-T1-050",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scrum definition",
+    "stem": "An organization adopts Scrum but drops the Sprint Retrospective and keeps everything else. What does the Scrum Guide say about this?",
+    "options": [
+      "Using only parts of Scrum is possible, but the result is not Scrum",
+      "It is still Scrum, because the Sprint Review covers improvement too",
+      "It is still Scrum as long as the Sprints stay one month or shorter",
+      "It is a valid variant of Scrum if the Scrum Master documents it well"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum framework is immutable. Implementing only parts of it is possible, but the result is not Scrum, which exists only in its entirety. Dropping the Retrospective also removes the team's main chance to improve how it works."
+  },
+  {
+    "id": "PSM-T1-051",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coaching the team",
+    "stem": "In what does the Scrum Master coach the team members?",
+    "options": [
+      "Following the plan the managers have set",
+      "Reporting their own status to management",
+      "Self-management and cross-functionality",
+      "Estimating every task in exact hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Serving the Scrum Team includes coaching the team members in self-management and cross-functionality."
+  },
+  {
+    "id": "PSM-T1-052",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Review",
+    "stem": "What is the timebox for the Sprint Review in a one-month Sprint?",
+    "options": [
+      "8 hours at most",
+      "2 hours at most",
+      "4 hours at most",
+      "1 hour at most"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Sprint Review is timeboxed to a maximum of four hours for a one-month Sprint, and is usually shorter for shorter Sprints."
+  },
+  {
+    "id": "PSM-T1-053",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog management",
+    "stem": "The Product Backlog has 600 items, many of them years old, and nobody knows which still matter. What should the Product Owner do?",
+    "options": [
+      "Ask the Developers to estimate all 600 items in detail before the next Sprint",
+      "Freeze it and only work on brand-new items from now on to avoid any more confusion",
+      "Hand it to the Scrum Master to clean up and order while the team keeps working",
+      "Refine and reorder it, removing items that no longer help reach the Product Goal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Product Backlog is an emergent, ordered list of what is needed to improve the product. Keeping it transparent, ordered and pointed at the Product Goal is the Product Owner's accountability."
+  },
+  {
+    "id": "PSM-T1-054",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "What does it mean for a Scrum Team to be cross-functional?",
+    "options": [
+      "Its members rotate between teams to spread their skills around",
+      "Specialists from other teams join it whenever their skill is needed",
+      "Its members have all the skills needed to create value each Sprint",
+      "Each member can do every type of work on the product equally well"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A cross-functional Scrum Team has all the skills necessary to create value each Sprint as a team. It does not mean each person has every skill."
+  },
+  {
+    "id": "PSM-T1-055",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Goal",
+    "stem": "What is the Product Goal?",
+    "options": [
+      "A future state of the product: a long-term objective for the Scrum Team",
+      "The target velocity that the team must reach for the current product release",
+      "The goal for the current Sprint, created during Sprint Planning",
+      "The list of features that must be finished by a fixed deadline"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Goal describes a future state of the product that serves as a target for the Scrum Team to plan against. It is the long-term objective for the Scrum Team."
+  },
+  {
+    "id": "PSM-T1-056",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Retrospective",
+    "stem": "According to the Scrum Guide, the Sprint Retrospective exists to:",
+    "options": [
+      "To refine and size all the items for the next Sprint",
+      "To report each Developer's velocity to management",
+      "To demonstrate the Increment to the stakeholders",
+      "To plan ways to increase quality and effectiveness"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The purpose of the Sprint Retrospective is to plan ways to increase quality and effectiveness. Demonstrating the Increment happens at the Sprint Review."
+  },
+  {
+    "id": "PSM-T1-057",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pillars",
+    "stem": "True or false: Adaptation becomes more difficult when the people involved are not empowered or self-managing.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide expects a Scrum Team to adapt the moment it learns anything new through inspection, and notes that adaptation becomes more difficult when people are not empowered or self-managing."
+  },
+  {
+    "id": "PSM-T1-058",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Serving the organization",
+    "stem": "Management wants each Scrum Team to send a weekly status report on top of the Sprint Review. What should the Scrum Master do?",
+    "options": [
+      "Help management see how the Increment and artifacts already show progress, and find out what they really need",
+      "Refuse the request outright, because the Scrum Guide does not list status reports as an artifact",
+      "Write the weekly reports personally so that the Developers are not distracted by the extra paperwork",
+      "Ask the Developers to spend part of each Daily Scrum preparing the weekly report for management"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Master helps the organization understand an empirical approach and removes barriers between stakeholders and Scrum Teams. Understanding the real need and pointing to the transparency Scrum already provides is better than adding work or refusing outright."
+  },
+  {
+    "id": "PSM-T1-059",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "Are there sub-teams or hierarchies inside a Scrum Team?",
+    "options": [
+      "Yes; testers and programmers usually form separate sub-teams",
+      "Yes; the Scrum Master leads it, and the Developers all report to them",
+      "Only when the team has more than ten people in it at one time",
+      "No; it is a cohesive unit of professionals focused on one objective"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Within a Scrum Team there are no sub-teams or hierarchies. It is a cohesive unit of professionals focused on one objective at a time, the Product Goal."
+  },
+  {
+    "id": "PSM-T1-060",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Retrospective",
+    "stem": "Which event concludes the Sprint?",
+    "options": [
+      "Product Backlog refinement",
+      "The Sprint Review",
+      "The Sprint Retrospective",
+      "The release to users"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Sprint Retrospective concludes the Sprint. The Sprint Review is the second to last event, and refinement is an ongoing activity, not an event."
+  },
+  {
+    "id": "PSM-T1-061",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Goal",
+    "stem": "True or false: The Scrum Team must fulfill or abandon one Product Goal before taking on the next.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Goal is the long-term objective for the Scrum Team, which must fulfill (or abandon) one objective before taking on the next."
+  },
+  {
+    "id": "PSM-T1-062",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Goal",
+    "stem": "What does the Product Goal give the Scrum Team?",
+    "options": [
+      "A set of rules for how the Developers work",
+      "A future state of the product to plan against",
+      "A fixed date that the release must meet",
+      "A list of the tasks to finish in the next Sprint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Product Goal describes a future state of the product which can serve as a target for the Scrum Team to plan against."
+  },
+  {
+    "id": "PSM-T1-063",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum theory",
+    "stem": "Why does Scrum use an iterative, incremental approach?",
+    "options": [
+      "To let each specialist finish a phase before handing off",
+      "To optimize predictability and to control risk",
+      "To make long-range plans more precise from the start",
+      "To reduce how often stakeholders need to be consulted"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scrum uses an iterative, incremental approach to optimize predictability and control risk. Each Sprint produces something to inspect, so the team learns instead of relying on long-range predictions."
+  },
+  {
+    "id": "PSM-T1-064",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Serving the Product Owner",
+    "stem": "True or false: The Scrum Master helps the Product Owner establish empirical product planning for a complex environment.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "This is one of the ways the Scrum Guide says the Scrum Master serves the Product Owner."
+  },
+  {
+    "id": "PSM-T1-065",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "The Sprint",
+    "stem": "According to the Scrum Guide, which two statements hold during a Sprint? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Only the Scrum Master may add new Sprint items",
+      "The Product Backlog is frozen until the Sprint ends",
+      "The Sprint can be extended if work is unfinished",
+      "No changes are made that would endanger the Sprint Goal",
+      "Quality does not decrease"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "During the Sprint no changes are made that would endanger the Sprint Goal, quality does not decrease, the Product Backlog is refined as needed, and scope may be clarified and renegotiated with the Product Owner. Sprints are fixed length."
+  },
+  {
+    "id": "PSM-T1-066",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "True or false: The Product Owner's decisions are visible in the content and ordering of the Product Backlog.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says the Product Owner's decisions are visible in the content and ordering of the Product Backlog, and through the inspectable Increment at the Sprint Review."
+  },
+  {
+    "id": "PSM-T1-067",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "Who is responsible for sizing Product Backlog items?",
+    "options": [
+      "The Scrum Master, as a neutral party",
+      "The Developers who will do the work",
+      "The Product Owner, who knows the value",
+      "The stakeholders who asked for the items"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Developers who will be doing the work are responsible for the sizing. The Product Owner may influence them by helping them understand and select trade-offs."
+  },
+  {
+    "id": "PSM-T1-068",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "True or false: Scrum requires the Product Owner to be the person who funds the product.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Guide makes the Product Owner accountable for maximizing value and for Product Backlog management. It says nothing about the Product Owner funding the product."
+  },
+  {
+    "id": "PSM-T1-069",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Retrospective",
+    "stem": "True or false: The most impactful improvements from a Sprint Retrospective may be added to the Sprint Backlog for the next Sprint.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Team identifies the most helpful changes to improve its effectiveness, and the most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint."
+  },
+  {
+    "id": "PSM-T1-070",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Values",
+    "stem": "Which statement about the Scrum Values matches the Scrum Guide?",
+    "options": [
+      "They are inspected and scored by the Scrum Master at the end of every Sprint",
+      "They apply to the Developers only, not to Product Owners or to Scrum Masters",
+      "They are optional guidance that mature teams may replace with values of their own",
+      "Successful use of Scrum depends on people becoming more proficient in living them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Scrum Guide says the successful use of Scrum depends on people becoming more proficient in living the five values. They apply to the whole Scrum Team and the people it works with."
+  },
+  {
+    "id": "PSM-T1-071",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Retrospective",
+    "stem": "The Developers have stopped holding Retrospectives because 'nothing ever changes'. What should the Scrum Master do?",
+    "options": [
+      "Ask the Product Owner to make attendance compulsory and record who misses each one",
+      "Agree to drop them, since the team is self-managing and can choose which events it holds",
+      "Help them run Retrospectives that lead to a few concrete improvements, and follow up on them",
+      "Run them alone and then send the team a list of the improvements it is expected to make"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Retrospective is a required event and the Scrum Master ensures it takes place and is productive. Making sure the most impactful improvements are acted on gives the team a reason to value it."
+  },
+  {
+    "id": "PSM-T1-072",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Scrum Team",
+    "stem": "According to the Scrum Guide, which three product-related activities is the Scrum Team responsible for? (Choose three.)",
+    "select": 3,
+    "options": [
+      "Approving the organization's budget",
+      "Hiring and appraising team members",
+      "Experimentation, research and development",
+      "Verifying and maintaining the product",
+      "Collaborating with stakeholders"
+    ],
+    "correct": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "The Scrum Team is responsible for all product-related activities, from stakeholder collaboration, verification, maintenance and operation to experimentation, research and development. Budgets and personnel appraisal are not product activities in the Scrum Guide."
+  },
+  {
+    "id": "PSM-T1-073",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "When are Product Backlog items ready for selection in Sprint Planning?",
+    "options": [
+      "When every task for them has been estimated in hours",
+      "When the Scrum Master has approved their acceptance criteria",
+      "When the stakeholders have signed off a written specification",
+      "When they can be Done by the Scrum Team within one Sprint"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Product Backlog items that can be Done by the Scrum Team within one Sprint are deemed ready for selection in a Sprint Planning event, usually after refinement."
+  },
+  {
+    "id": "PSM-T1-074",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Daily Scrum",
+    "stem": "The Daily Scrum takes 30 minutes because each Developer gives a detailed status report to the Scrum Master. What should the Scrum Master do?",
+    "options": [
+      "Ask the Product Owner to run the Daily Scrum from now on so that it stays on track and on time",
+      "Collect each Developer's status report by email every morning and cancel the Daily Scrum altogether",
+      "Allow the full 30 minutes, since the detailed reports help the Scrum Master keep track of every task",
+      "Coach the Developers that it is their 15-minute event for inspecting progress toward the Sprint Goal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Daily Scrum is the Developers' 15-minute event for inspecting progress toward the Sprint Goal and adapting their plan. The Scrum Master coaches the team toward that purpose rather than turning it into a status meeting or removing it."
+  },
+  {
+    "id": "PSM-T1-075",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint scope",
+    "stem": "Halfway through a Sprint, an urgent new item appears. The Product Owner and Developers think it should be worked on now. How can this happen?",
+    "options": [
+      "It cannot; the Sprint Backlog is frozen until the next Sprint Planning",
+      "They can agree to bring it in if it does not endanger the Sprint Goal",
+      "The Scrum Master decides whether the item may enter the current Sprint",
+      "The Developers add it and quietly drop other items without telling anyone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "During the Sprint, scope may be clarified and renegotiated with the Product Owner as more is learned, provided no change endangers the Sprint Goal. Changes are made transparently."
+  },
+  {
+    "id": "PSM-T1-076",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Scrum definition",
+    "stem": "Which two statements describe how Scrum relates to other practices? (Choose two.)",
+    "select": 2,
+    "options": [
+      "It can wrap around practices a team already uses, or make some unnecessary",
+      "It makes visible how well current practices work so they can be improved",
+      "It forbids any technique that is not described in the Scrum Guide",
+      "It requires every team to adopt one specific estimation technique",
+      "It replaces all engineering practices with prescribed ones of its own"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Scrum is a framework within which various processes, techniques and methods can be used. It wraps around existing practices or renders them unnecessary, and makes their relative efficacy visible so that improvements can be made."
+  },
+  {
+    "id": "PSM-T1-077",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Serving the team",
+    "stem": "Which two are part of how the Scrum Master serves the Scrum Team? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Assigning work to Developers based on their capacity",
+      "Reporting individual performance to line managers",
+      "Helping the team focus on high-value Increments that meet the Definition of Done",
+      "Choosing the Sprint Goal on the Product Owner's behalf",
+      "Causing the removal of impediments to the team's progress"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "The Scrum Master serves the team by coaching self-management and cross-functionality, helping it focus on high-value Increments that meet the Definition of Done, causing the removal of impediments and ensuring events take place."
+  },
+  {
+    "id": "PSM-T1-078",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "What is the Product Owner accountable for?",
+    "options": [
+      "Maximizing the productivity of each Developer during the Sprint",
+      "Maximizing the value of the product resulting from the team's work",
+      "Making sure the product ships on the exact date fixed at the very start",
+      "Making sure that the Scrum Team follows the framework correctly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team. Establishing Scrum is the Scrum Master's accountability."
+  },
+  {
+    "id": "PSM-T1-079",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Sprint Goal",
+    "stem": "Which two statements about the Sprint Goal are correct? (Choose two.)",
+    "select": 2,
+    "options": [
+      "It leaves the Developers flexibility in the exact work needed to reach it",
+      "It can be changed by stakeholders during the Sprint",
+      "It must list every item in the Sprint Backlog",
+      "It is written by the Scrum Master after Sprint Planning",
+      "It is the single objective for the Sprint"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "The Sprint Goal is the single objective for the Sprint. It creates coherence and focus while giving the Developers flexibility in the exact work needed to achieve it. The whole Scrum Team creates it during Sprint Planning."
+  },
+  {
+    "id": "PSM-T1-080",
+    "section": "psm",
+    "test": 1,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Planning",
+    "stem": "Who attends Sprint Planning?",
+    "options": [
+      "The Scrum Team and every stakeholder, who must all be there",
+      "The entire Scrum Team, plus anyone they invite to give advice",
+      "The Developers only; the Product Owner joins at the very end",
+      "The Product Owner and Scrum Master, who then brief Developers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sprint Planning is the collaborative work of the entire Scrum Team. The team may also invite other people to attend to provide advice."
+  },
+  {
+    "id": "PSM-T2-001",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Daily Scrum",
+    "stem": "Why do the Developers hold a Daily Scrum?",
+    "options": [
+      "To let the Product Owner check that each Developer is busy with priority work",
+      "To inspect progress toward the Sprint Goal and adapt the Sprint Backlog as needed",
+      "To report status to the Scrum Master so the burn-down can be updated for managers",
+      "To solve every technical problem in detail before the day's work can begin"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Daily Scrum's purpose is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work."
+  },
+  {
+    "id": "PSM-T2-002",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "For the Product Owner to succeed, what does the Scrum Guide say about the rest of the organization?",
+    "options": [
+      "It must approve each change to the backlog",
+      "It must name a backup Product Owner each Sprint",
+      "It must review the Product Backlog every week",
+      "It must respect the Product Owner's decisions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For Product Owners to succeed, the entire organization must respect their decisions. Those decisions are visible in the content and ordering of the Product Backlog and in the inspectable Increment at the Sprint Review."
+  },
+  {
+    "id": "PSM-T2-003",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "What is Product Backlog refinement?",
+    "options": [
+      "A phase at the start of the project to complete all of the requirements",
+      "Breaking items down and adding detail such as a description, order and size",
+      "A meeting where the Scrum Master assigns the items to individual Developers",
+      "A gate where stakeholders approve each item before Sprint Planning starts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Product Backlog refinement is the act of breaking down and further defining Product Backlog items into smaller, more precise items. It is an ongoing activity that adds details such as a description, order and size."
+  },
+  {
+    "id": "PSM-T2-004",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pillars",
+    "stem": "What does transparency require in Scrum?",
+    "options": [
+      "Every decision is approved and recorded by the Scrum Master in a central project log",
+      "Only the Product Owner may see the Sprint Backlog, to protect the forecast",
+      "Status reports go to management each week, in addition to the Scrum events",
+      "The process and the work are visible to those doing it and those receiving it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The emergent process and work must be visible to those performing the work as well as those receiving it. A log kept by the Scrum Master, hidden backlogs or extra reports do not create that shared view."
+  },
+  {
+    "id": "PSM-T2-005",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coaching the team",
+    "stem": "A new Scrum Team asks the Scrum Master which estimation technique Scrum requires. What is the answer?",
+    "options": [
+      "Ideal hours for every task in the Sprint Backlog each day",
+      "None; the Developers choose a technique that works for them",
+      "Story points, using a Fibonacci-like scale for every single item",
+      "T-shirt sizes agreed with the stakeholders before planning"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scrum requires sizing as part of refinement but prescribes no technique. The Developers who do the work choose how to size it."
+  },
+  {
+    "id": "PSM-T2-006",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "A key stakeholder has missed every Sprint Review and now complains the product is off track. What is the best action for the Product Owner?",
+    "options": [
+      "Find ways to involve the stakeholder in inspecting the Increment and giving feedback",
+      "Send the stakeholder a weekly written status report instead of showing the Increment",
+      "Freeze the Product Backlog until the stakeholder is able to attend a Sprint Review",
+      "Ask the Scrum Master to approve the product direction on the stakeholder's behalf"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Inspection and adaptation depend on the right people seeing the real product. Getting the stakeholder to inspect the Increment and give feedback lets the Product Backlog adapt."
+  },
+  {
+    "id": "PSM-T2-007",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Retrospective",
+    "stem": "What is the timebox for the Sprint Retrospective in a one-month Sprint?",
+    "options": [
+      "3 hours at most",
+      "90 minutes at most",
+      "4 hours at most",
+      "8 hours at most"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Sprint Retrospective is timeboxed to a maximum of three hours for a one-month Sprint, and is usually shorter for shorter Sprints."
+  },
+  {
+    "id": "PSM-T2-008",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Developers",
+    "stem": "The Product Owner and the Scrum Master are both working on Sprint Backlog items this Sprint. How do they take part in the Daily Scrum?",
+    "options": [
+      "They participate as Developers, since they work on Sprint Backlog items",
+      "They give a separate status update after the Developers have all finished",
+      "They only observe, since the Daily Scrum is for the Developers alone",
+      "They lead it, since they have the widest view of all the work going on"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Daily Scrum is for the Developers. If the Product Owner or Scrum Master are actively working on items in the Sprint Backlog, they participate as Developers."
+  },
+  {
+    "id": "PSM-T2-009",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Increment",
+    "stem": "What is an Increment?",
+    "options": [
+      "All the work done in a Sprint, whether or not that work meets the Definition of Done",
+      "A usable stepping stone toward the Product Goal, additive to all prior Increments",
+      "The set of tasks that the Developers plan to finish during the current Sprint",
+      "A release package that has to be approved at the Sprint Review before shipping"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An Increment is a concrete stepping stone toward the Product Goal. Each Increment is additive to all prior Increments and thoroughly verified, and it must be usable to provide value."
+  },
+  {
+    "id": "PSM-T2-010",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pillars",
+    "stem": "According to the Scrum Guide, what are Scrum's artifacts designed to do?",
+    "options": [
+      "Replace conversations with the stakeholders",
+      "Maximize transparency of key information",
+      "Give managers a fixed baseline to measure against",
+      "Document every decision for audit purposes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scrum's artifacts represent work or value and are designed to maximize the transparency of key information, so that everyone inspecting them has the same basis for adaptation."
+  },
+  {
+    "id": "PSM-T2-011",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Removing impediments",
+    "stem": "The Developers keep running out of time because of unplanned support requests from another team. What is the Scrum Master's best first action?",
+    "options": [
+      "Shorten the Sprint to one week so that there are fewer interruptions in each Sprint",
+      "Make the problem transparent and help the team and Product Owner decide how to handle it",
+      "Refuse every support request on the team's behalf from now on, whatever its business impact",
+      "Ask the Developers to work extra hours each week to absorb the support requests"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Transparency comes first: once the impact is visible, the Scrum Team and Product Owner can decide how to handle the work, and the Scrum Master can work with the other team to remove the impediment."
+  },
+  {
+    "id": "PSM-T2-012",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scrum events",
+    "stem": "For Sprints shorter than one month, the timeboxes of Sprint Planning, the Sprint Review and the Sprint Retrospective are:",
+    "options": [
+      "The same as for a one-month Sprint",
+      "Set by the Product Owner each Sprint",
+      "Always cut in exact proportion to the Sprint",
+      "Usually shorter"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Scrum Guide gives the maximum for a one-month Sprint and says that for shorter Sprints the event is usually shorter. It does not require an exact proportion."
+  },
+  {
+    "id": "PSM-T2-013",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Backlog management",
+    "stem": "Which is part of the Product Owner's accountability for the Product Backlog?",
+    "options": [
+      "Making sure each item is assigned to one Developer",
+      "Making sure it is fully estimated before every Sprint",
+      "Making sure it is transparent, visible and understood",
+      "Making sure it never changes once a release begins"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Product Backlog management includes ensuring that the Product Backlog is transparent, visible and understood, along with communicating the Product Goal and creating and ordering items."
+  },
+  {
+    "id": "PSM-T2-014",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "Which is part of the Product Owner's Product Backlog management?",
+    "options": [
+      "Developing and explicitly communicating the Product Goal",
+      "Estimating the effort of each item for the Developers",
+      "Running the Daily Scrum whenever the Scrum Master is away",
+      "Deciding how the Developers will build each item"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Product Backlog management includes developing and explicitly communicating the Product Goal, creating and clearly communicating Product Backlog items, ordering them, and making sure the backlog is transparent, visible and understood. Sizing and the how belong to the Developers."
+  },
+  {
+    "id": "PSM-T2-015",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Increment",
+    "stem": "True or false: The sum of the Increments created during a Sprint is presented at the Sprint Review.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Work cannot be considered part of an Increment unless it meets the Definition of Done. Several Increments may be created in a Sprint, and their sum is presented at the Sprint Review."
+  },
+  {
+    "id": "PSM-T2-016",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Daily Scrum",
+    "stem": "One Developer is off sick today. What should happen to the Daily Scrum?",
+    "options": [
+      "Replace it with an email update for the day",
+      "Hold it only if the Scrum Master is present",
+      "Skip it, since the whole team is not there today",
+      "Hold it as usual with the Developers who are there"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Daily Scrum is held every working day of the Sprint. The Developers who are present still inspect progress toward the Sprint Goal and adapt their plan."
+  },
+  {
+    "id": "PSM-T2-017",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Values",
+    "stem": "Scrum Team members respect each other to be capable, independent people. Which value is this?",
+    "options": [
+      "Respect",
+      "Focus",
+      "Commitment",
+      "Openness"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "This is the value of respect. Openness is about being open about the work and its challenges, commitment about achieving goals and supporting each other, and focus about the work of the Sprint."
+  },
+  {
+    "id": "PSM-T2-018",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Master",
+    "stem": "True or false: The Scrum Master is accountable for establishing Scrum as defined in the Scrum Guide.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says the Scrum Master is accountable for establishing Scrum as defined in the Scrum Guide, by helping everyone understand Scrum theory and practice."
+  },
+  {
+    "id": "PSM-T2-019",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Scrum Team",
+    "stem": "Which two describe a Scrum Team? (Choose two.)",
+    "select": 2,
+    "options": [
+      "It is led by a Scrum Master who assigns the tasks",
+      "It is cross-functional",
+      "It contains a dedicated testing sub-team",
+      "It is self-managing",
+      "It is formed anew at the start of each Sprint"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Scrum Teams are cross-functional, with all the skills needed to create value each Sprint, and self-managing, deciding internally who does what, when and how. There are no sub-teams or hierarchies."
+  },
+  {
+    "id": "PSM-T2-020",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "Why are Sprints limited to one month or less?",
+    "options": [
+      "Longer Sprints are not allowed to contain a Sprint Review event at the end",
+      "Developers cannot size any work that is more than one month in the future",
+      "Stakeholders cannot attend Sprint Reviews held more than a month apart",
+      "Longer horizons let the Sprint Goal go stale and raise complexity and risk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "When a Sprint's horizon is too long, the Sprint Goal may become invalid, complexity may rise and risk may increase. Shorter Sprints give more learning cycles and limit risk."
+  },
+  {
+    "id": "PSM-T2-021",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Increment",
+    "stem": "The Product Owner says nothing may be released until the Sprint Review approves it. What does the Scrum Guide say?",
+    "options": [
+      "Releases need the Scrum Master's approval rather than the Review's",
+      "That is correct, because the Sprint Review is where releases are approved",
+      "That is correct, but only for the first Increment of each new product",
+      "The Sprint Review should never be considered a gate to releasing value"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Scrum Guide says the Sprint Review should never be considered a gate to releasing value. An Increment may be delivered to stakeholders before the end of the Sprint."
+  },
+  {
+    "id": "PSM-T2-022",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "True or false: Scrum requires stakeholders to sign off Product Backlog items before the Developers start work on them.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Guide has no stakeholder sign-off step. The Product Owner manages the Product Backlog, and stakeholders collaborate with the team, especially at the Sprint Review."
+  },
+  {
+    "id": "PSM-T2-023",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum definition",
+    "stem": "True or false: Because Scrum is a framework, the Scrum Guide prescribes which estimation technique the Developers must use.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Guide prescribes no estimation technique. Scrum is a framework within which teams use whatever processes and techniques work for them."
+  },
+  {
+    "id": "PSM-T2-024",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coaching the team",
+    "stem": "At Sprint Planning, the Developers are about to take on far more work than they have ever finished in a Sprint. What should the Scrum Master do?",
+    "options": [
+      "Ask questions that help them weigh their past performance and capacity in the forecast",
+      "Accept it and add overtime to the plan so that every selected item gets finished",
+      "Remove items until the forecast exactly matches what the team finished last Sprint",
+      "Ask the Product Owner to set the forecast for the Developers this time around instead"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Developers own the forecast. The Scrum Master coaches them to use their past performance and upcoming capacity, which the Scrum Guide says makes forecasts more reliable, without taking the decision away."
+  },
+  {
+    "id": "PSM-T2-025",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Sprint Planning",
+    "stem": "In Sprint Planning, which two things help the Developers forecast how much they can take into the Sprint? (Choose two.)",
+    "select": 2,
+    "options": [
+      "The number of stakeholders",
+      "The size of the whole Product Backlog",
+      "Their upcoming capacity",
+      "A velocity target set by the Scrum Master",
+      "Their past performance"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "The more the Developers know about their past performance, their upcoming capacity and their Definition of Done, the more confident they will be in their Sprint forecasts. Targets set by others are not part of it."
+  },
+  {
+    "id": "PSM-T2-026",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "True or false: Operating and maintaining the product are outside the Scrum Team's responsibility.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Team is responsible for all product-related activities, from stakeholder collaboration, verification, maintenance and operation to experimentation, research and development."
+  },
+  {
+    "id": "PSM-T2-027",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Definition of Done",
+    "stem": "There is no organizational Definition of Done. Who creates one?",
+    "options": [
+      "The Product Owner, who writes it alone and hands it to the team",
+      "The Scrum Master, who writes it from industry standards",
+      "The Scrum Team, which creates one appropriate for the product",
+      "No one; the team works without one until a standard exists"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If the Definition of Done is not an organizational standard, the Scrum Team must create a Definition of Done appropriate for the product."
+  },
+  {
+    "id": "PSM-T2-028",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Releasing value",
+    "stem": "Which is a valid reason to release an Increment before the Sprint Review?",
+    "options": [
+      "It is Done, and the Product Owner sees value in getting it to users sooner",
+      "It meets most of the Definition of Done and the rest can follow next Sprint",
+      "Stakeholders asked for it urgently, even though it does not yet meet Done",
+      "The Sprint Review has been cancelled, so this is the only chance to show it"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An Increment may be delivered to stakeholders before the end of the Sprint, and the Sprint Review is never a gate to releasing value. Only work that meets the Definition of Done is part of an Increment."
+  },
+  {
+    "id": "PSM-T2-029",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Review",
+    "stem": "Who presents the results of the Sprint's work to key stakeholders at the Sprint Review?",
+    "options": [
+      "The Product Owner alone",
+      "A key stakeholder",
+      "The Scrum Team",
+      "The Scrum Master"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "During the Sprint Review, the Scrum Team presents the results of its work to key stakeholders and progress toward the Product Goal is discussed."
+  },
+  {
+    "id": "PSM-T2-030",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pillars",
+    "stem": "The Sprint Backlog has not been updated for three days, so nobody can tell whether the Sprint Goal is at risk. Which pillar has broken down first?",
+    "options": [
+      "Inspection",
+      "Cross-functionality",
+      "Adaptation",
+      "Transparency"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The artifact no longer shows the real state of the work, so transparency has failed. Inspection and adaptation both depend on it; without transparency, inspecting the Sprint Backlog gives a false picture. Cross-functionality is a team characteristic, not a pillar."
+  },
+  {
+    "id": "PSM-T2-031",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Serving the organization",
+    "stem": "Which is one way the Scrum Master serves the organization?",
+    "options": [
+      "Hiring the Developers and conducting their annual reviews",
+      "Planning and advising Scrum implementations within the organization",
+      "Setting a velocity target for each of the Scrum Teams for the coming year",
+      "Approving the order of every Scrum Team's Product Backlog"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Planning and advising Scrum implementations within the organization is one of the Scrum Master's services to the organization. Ordering backlogs belongs to Product Owners."
+  },
+  {
+    "id": "PSM-T2-032",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Developers",
+    "stem": "Two Developers disagree about how to build a Product Backlog item, and the Product Owner wants a say. Who decides how the work is done?",
+    "options": [
+      "The Developers, because how to build an item is their decision",
+      "The most senior Developer, because they have the most experience",
+      "The Scrum Master, because they are accountable for effectiveness",
+      "The Product Owner, because they are accountable for the value"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "How the Developers turn Product Backlog items into an Increment is at their sole discretion; no one else tells them how. The Product Owner can explain the need and the value, but not dictate the method."
+  },
+  {
+    "id": "PSM-T2-033",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Goal",
+    "stem": "Which commitment belongs to the Sprint Backlog?",
+    "options": [
+      "The Sprint Goal",
+      "The Product Goal",
+      "The Definition of Done",
+      "The Sprint forecast"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Sprint Backlog's commitment is the Sprint Goal. The Product Goal belongs to the Product Backlog and the Definition of Done to the Increment."
+  },
+  {
+    "id": "PSM-T2-034",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Review",
+    "stem": "True or false: At the Sprint Review, the Scrum Team and stakeholders also review what has changed in their environment.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Team and stakeholders review what was accomplished in the Sprint and what has changed in their environment, and on that basis collaborate on what to do next."
+  },
+  {
+    "id": "PSM-T2-035",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Maximizing value",
+    "stem": "Which two help a Product Owner maximize the value of the product? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Fixing the full scope at the start to avoid any rework",
+      "Assigning the most valuable items to the fastest Developers",
+      "Asking the Developers to skip testing on urgent items",
+      "Collaborating with stakeholders to understand their needs",
+      "Ordering the Product Backlog so the most valuable work is done first"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "The Product Owner maximizes value through effective Product Backlog management and by representing stakeholders' needs. Assigning work, fixing scope up front and lowering quality are not part of Scrum."
+  },
+  {
+    "id": "PSM-T2-036",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum theory",
+    "stem": "Scrum is best suited to which kind of work?",
+    "options": [
+      "Projects whose requirements are fully known at the start",
+      "Complex work, where more is unknown than known",
+      "Simple, repeatable work with predictable results",
+      "Work that one specialist can finish without collaboration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scrum helps people generate value through adaptive solutions for complex problems, where outcomes cannot be predicted up front and empiricism pays off."
+  },
+  {
+    "id": "PSM-T2-037",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Self-management",
+    "stem": "A Developer complains to the Scrum Master that another Developer never shares information. What should the Scrum Master do first?",
+    "options": [
+      "Move the other Developer to a different Scrum Team as soon as possible",
+      "Encourage them to talk it through, and help the team resolve it itself",
+      "Ask the Product Owner to give the two of them completely separate work",
+      "Report the other Developer to their line manager for a formal warning"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Developers hold each other accountable as professionals, and the Scrum Master coaches self-management. Helping the people involved resolve it themselves comes before escalation."
+  },
+  {
+    "id": "PSM-T2-038",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Developers",
+    "stem": "Which accountability belongs to the Developers?",
+    "options": [
+      "Coaching the organization in its Scrum adoption",
+      "Removing impediments for the other Scrum Teams",
+      "Holding each other accountable as professionals",
+      "Ordering the Product Backlog to maximize value"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Developers are accountable for holding each other accountable as professionals, alongside creating the Sprint Backlog, adhering to the Definition of Done and adapting their plan daily. The other options belong to the Product Owner or Scrum Master."
+  },
+  {
+    "id": "PSM-T2-039",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Backlog",
+    "stem": "How often is the Sprint Backlog updated?",
+    "options": [
+      "Only during the Daily Scrum each day",
+      "Only during Sprint Planning at the start",
+      "Throughout the Sprint, as more is learned",
+      "Once a week, by the Scrum Master on Fridays"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Sprint Backlog is a highly visible, real-time picture of the Developers' work and is updated throughout the Sprint as more is learned."
+  },
+  {
+    "id": "PSM-T2-040",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Review",
+    "stem": "During the Sprint Review, the Product Backlog:",
+    "options": [
+      "Is handed over to the stakeholders to reorder",
+      "Is frozen until the next Sprint Planning",
+      "Is replaced by a fixed plan for the year",
+      "May be adjusted to meet new opportunities"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Based on what is learned at the Sprint Review, the Product Backlog may also be adjusted to meet new opportunities. The Product Owner remains accountable for its order."
+  },
+  {
+    "id": "PSM-T2-041",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "Mid-Sprint, the Product Owner learns that a competitor's launch has made the Sprint Goal worthless. What should the Product Owner do?",
+    "options": [
+      "Ask the Developers to finish it, since a Sprint is fixed",
+      "Swap in a new Sprint Goal and carry on with the same plan",
+      "Let the Scrum Master decide whether to cancel the Sprint",
+      "Cancel the Sprint, since the Sprint Goal is now obsolete"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A Sprint could be cancelled if the Sprint Goal becomes obsolete, and only the Product Owner has the authority to cancel it. Continuing toward a worthless goal wastes effort, and the Sprint Goal is not swapped mid-Sprint."
+  },
+  {
+    "id": "PSM-T2-042",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "Why does the Scrum Guide favour small Scrum Teams?",
+    "options": [
+      "Smaller teams communicate better and tend to be more productive",
+      "Small teams are allowed to skip the Daily Scrum when they are busy",
+      "Small teams may use Sprints longer than one month if they need to",
+      "Small teams can work without a Product Owner or a Scrum Master"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide notes that, in general, smaller teams communicate better and are more productive. Team size never removes an accountability, an event or the one-month Sprint limit."
+  },
+  {
+    "id": "PSM-T2-043",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Product Backlog",
+    "stem": "Which two describe the Product Backlog? (Choose two.)",
+    "select": 2,
+    "options": [
+      "It is owned by the Developers and ordered by effort",
+      "It is complete and frozen before the first Sprint begins",
+      "It holds only items that are ready for the next Sprint",
+      "It is an emergent, ordered list of what is needed to improve the product",
+      "It is the single source of work undertaken by the Scrum Team"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "The Product Backlog is an emergent, ordered list of what is needed to improve the product, and it is the single source of work undertaken by the Scrum Team. The Product Owner is accountable for it."
+  },
+  {
+    "id": "PSM-T2-044",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Values",
+    "stem": "Keeping the team concentrated on the work of the Sprint to make the best possible progress toward its goals reflects which value?",
+    "options": [
+      "Respect",
+      "Focus",
+      "Commitment",
+      "Openness"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Guide describes focus as the team's primary attention on the work of the Sprint to make the best possible progress toward its goals."
+  },
+  {
+    "id": "PSM-T2-045",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Definition of Done",
+    "stem": "The Scrum Master notices that the team calls items Done without meeting the Definition of Done, to show more at the Sprint Review. What should the Scrum Master do?",
+    "options": [
+      "Make the gap transparent and coach the team that only Done work is part of the Increment",
+      "Accept it just this once, since the stakeholders want to see as much progress as possible",
+      "Report the Developers to management for presenting unfinished work as finished",
+      "Quietly fix the Definition of Done so that it matches what the team is delivering"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Work that does not meet the Definition of Done is not part of the Increment and must not be presented as Done. The Scrum Master restores transparency and coaches the team on quality."
+  },
+  {
+    "id": "PSM-T2-046",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "In a complex environment, what does the Scrum Guide say may be used for forward-looking decisions?",
+    "options": [
+      "Detailed predictions made at the start",
+      "The most optimistic team estimate",
+      "The plan agreed with the sponsor",
+      "Only what has already happened"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In complex environments, what will happen is unknown. Only what has already happened may be used for forward-looking decision making."
+  },
+  {
+    "id": "PSM-T2-047",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Retrospective",
+    "stem": "What does the Scrum Team inspect in the Sprint Retrospective?",
+    "options": [
+      "How the last Sprint went: people, interactions, processes, tools and the Definition of Done",
+      "The Increment, together with the stakeholders, to decide what to build in the following Sprint",
+      "Each Developer's individual output for the Sprint, to rank them in performance reviews",
+      "The order of the Product Backlog, to decide which items the Product Owner should move up"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Team inspects how the last Sprint went with regard to individuals, interactions, processes, tools and its Definition of Done. Inspecting the Increment with stakeholders happens at the Sprint Review."
+  },
+  {
+    "id": "PSM-T2-048",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "The Product Owner is often away, and the Developers wait days for answers about Product Backlog items. What should the Scrum Master do?",
+    "options": [
+      "Let the Developers set the priorities themselves until the Product Owner returns",
+      "Make all the Product Backlog decisions personally while the Product Owner is away",
+      "Ask management to appoint a deputy Product Owner who can overrule the absent one",
+      "Help the Product Owner see the impact and find ways to be more available to the team"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Scrum Master serves the Product Owner and the team by making problems transparent and helping solve them. The Product Owner stays accountable for the Product Backlog; there is still one Product Owner, and the Scrum Master does not take over that accountability."
+  },
+  {
+    "id": "PSM-T2-049",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Artifacts",
+    "stem": "Why does the Scrum Guide pair each artifact with a commitment?",
+    "options": [
+      "To enhance transparency and focus against which progress can be measured",
+      "To give management a fixed contract to hold the Scrum Team to its dates",
+      "To make sure each artifact is formally signed off before the next Sprint",
+      "To let the Scrum Master audit how well the team is complying with Scrum"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each artifact contains a commitment to ensure it provides information that enhances transparency and focus against which progress can be measured."
+  },
+  {
+    "id": "PSM-T2-050",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Values",
+    "stem": "According to the Scrum Guide, which two things happen when the Scrum Team and the people it works with embody the Scrum Values? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Sprints can be extended when the work demands it",
+      "The need for a Scrum Master disappears",
+      "Trust is built",
+      "The pillars of transparency, inspection and adaptation come to life",
+      "The Product Owner no longer needs to order the backlog"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "When the values are embodied, the empirical pillars of transparency, inspection and adaptation come to life, building trust. Accountabilities and Sprint rules stay the same."
+  },
+  {
+    "id": "PSM-T2-051",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Serving the Product Owner",
+    "stem": "True or false: The Scrum Master helps the Scrum Team understand the need for clear and concise Product Backlog items.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "This is one of the ways the Scrum Guide says the Scrum Master serves the Product Owner."
+  },
+  {
+    "id": "PSM-T2-052",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "Which statement about the Sprint is correct?",
+    "options": [
+      "It may be extended by a few days when the Sprint Goal is very close to being met",
+      "Its length may vary from one Sprint to the next to fit the size of the work that was selected",
+      "It starts after Sprint Planning is over and ends just before the Sprint Review begins",
+      "Sprint Planning, the Daily Scrums, the Review and the Retrospective all happen within it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Sprint is a container for all other events: all the work needed to achieve the Product Goal, including Sprint Planning, Daily Scrums, the Sprint Review and the Sprint Retrospective, happens within Sprints. Sprints are fixed length."
+  },
+  {
+    "id": "PSM-T2-053",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering the backlog",
+    "stem": "Two departments give the Product Owner conflicting priorities. What should the Product Owner do?",
+    "options": [
+      "Put both at the top and ask the Developers to build them both in parallel",
+      "Ask the Scrum Master to choose, since the Scrum Master is the neutral party here",
+      "Weigh both against the Product Goal, decide the order and explain the reasons",
+      "Let the departments vote and order the Product Backlog by the voting result"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Product Owner is one person accountable for ordering the Product Backlog to maximize value. Making the decision transparent helps stakeholders respect it."
+  },
+  {
+    "id": "PSM-T2-054",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "True or false: Each Developer on a Scrum Team must personally have every skill the product needs.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cross-functionality is a property of the team as a whole: together the members have all the skills needed to create value each Sprint."
+  },
+  {
+    "id": "PSM-T2-055",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Definition of Done",
+    "stem": "True or false: The Definition of Done can be lowered near the end of a Sprint so that more items count as Done.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Quality does not decrease during a Sprint. Work that does not meet the Definition of Done is not part of the Increment and returns to the Product Backlog."
+  },
+  {
+    "id": "PSM-T2-056",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Daily Scrum",
+    "stem": "Which two statements about the Daily Scrum are true? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Stakeholders use it to give the team new requests",
+      "The Developers can choose its structure and techniques",
+      "It may be skipped when the team is on track",
+      "It is held at the same time and place each working day",
+      "It is a status meeting run for the Scrum Master"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "To reduce complexity, the Daily Scrum is held at the same time and place every working day of the Sprint. The Developers can select whatever structure and techniques they want, as long as it focuses on progress toward the Sprint Goal."
+  },
+  {
+    "id": "PSM-T2-057",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scrum definition",
+    "stem": "Which sequence matches the Scrum Guide's short summary of how Scrum works?",
+    "options": [
+      "The Product Owner orders the work, the team turns a selection into an Increment, the team and stakeholders inspect and adjust, and the cycle repeats",
+      "Stakeholders define the full scope, the team estimates all of it, the plan is baselined, and progress is then tracked against that plan",
+      "The Scrum Master assigns the work, the Developers build it, the Product Owner tests it, and the whole release ships once at the end",
+      "The Developers write all the requirements, the Product Owner approves them, separate testers verify the result, and operations then deploys it at the end"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide summarizes Scrum as: the Product Owner orders the work for a complex problem into a Product Backlog, the Scrum Team turns a selection into an Increment of value during a Sprint, the team and its stakeholders inspect the results and adjust, and then it repeats."
+  },
+  {
+    "id": "PSM-T2-058",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Removing impediments",
+    "stem": "A change board takes two weeks to approve every release, so Done Increments sit waiting. What should the Scrum Master do?",
+    "options": [
+      "Make the Sprints two weeks longer so that the board's approval step fits inside each one",
+      "Tell the Developers to release without the board's approval to save the two weeks",
+      "Work with the organization to remove the barrier so Done Increments reach users sooner",
+      "Accept the delay, because release approval is outside the Scrum Team's concern"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Removing barriers between stakeholders and Scrum Teams is part of the Scrum Master's service to the organization. Ignoring the board's rules or changing the Sprint length does not solve the impediment."
+  },
+  {
+    "id": "PSM-T2-059",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "Who makes up the Scrum Team?",
+    "options": [
+      "The Developers, the Scrum Master and the key stakeholders",
+      "The Product Owner, the Developers and their line manager",
+      "The Product Owner, the Scrum Master and the Developers",
+      "The Developers and the Scrum Master, but not the Product Owner"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Scrum Team consists of one Scrum Master, one Product Owner and Developers. Stakeholders and managers work with the team but are not part of it."
+  },
+  {
+    "id": "PSM-T2-060",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Daily Scrum",
+    "stem": "According to the Scrum Guide, which three does the Daily Scrum improve or promote? (Choose three.)",
+    "select": 3,
+    "options": [
+      "Quick decision-making",
+      "Identifying impediments",
+      "Individual performance tracking",
+      "Detailed status reporting",
+      "Communication"
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Daily Scrums improve communications, identify impediments, promote quick decision-making and consequently eliminate the need for other meetings."
+  },
+  {
+    "id": "PSM-T2-061",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "Two Scrum Teams on one product each keep their own Product Backlog and Product Owner. What should change?",
+    "options": [
+      "The Scrum Masters should order both backlogs to keep the teams aligned",
+      "They should merge into one team of 18 people so that there is only one backlog",
+      "They should share one Product Backlog and one Product Owner for the product",
+      "They should keep both backlogs but hold a joint Sprint Review each quarter"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scrum Teams working on the same product share the same Product Goal, Product Backlog and Product Owner. Teams far above 10 people are discouraged, and ordering the backlog is the Product Owner's accountability."
+  },
+  {
+    "id": "PSM-T2-062",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "At the Sprint Review, the Product Owner learns that market conditions have changed. What is likely to happen?",
+    "options": [
+      "The change waits until the next yearly planning cycle before it is considered",
+      "The current Sprint is extended by a week or more so that it can absorb the change",
+      "The Product Backlog is adjusted, which may change what the next Sprint aims for",
+      "The Definition of Done is changed so that it suits the new market conditions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Based on what is learned at the Sprint Review, the Product Backlog may be adjusted to meet new opportunities. The next Sprint Planning then works from the updated backlog."
+  },
+  {
+    "id": "PSM-T2-063",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Values",
+    "stem": "True or false: Scrum Team members commit to achieving their goals and to supporting each other.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "This is the value of commitment as the Scrum Guide describes it."
+  },
+  {
+    "id": "PSM-T2-064",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Facilitation",
+    "stem": "Stakeholders want the Scrum Master to turn Sprint Reviews into a slide presentation to save time. What is the best response?",
+    "options": [
+      "Ask the Product Owner to present alone, without the Developers or the Increment",
+      "Agree, and send the slides in advance so that the Sprint Review itself can be skipped",
+      "Explain that the Review is a working session to inspect the Increment and decide next steps",
+      "Agree, since a presentation is the fastest way to show the stakeholders the Sprint's results"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Scrum Team should avoid limiting the Sprint Review to a presentation. It is a working session where attendees inspect the outcome and collaborate on what to do next."
+  },
+  {
+    "id": "PSM-T2-065",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Planning",
+    "stem": "What does the Product Owner contribute to the 'why' topic of Sprint Planning?",
+    "options": [
+      "The tasks in the Sprint Backlog that the Developers will work on each day",
+      "A list of the selected items, assigned to the Developers who will build them",
+      "A proposal for how the product could increase its value in this Sprint",
+      "An estimate of how long each item will take, so the Sprint can be filled"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Product Owner proposes how the product could increase its value and utility in the current Sprint, and the whole Scrum Team then collaborates to define a Sprint Goal. Selecting, sizing and planning the work belong to the Developers."
+  },
+  {
+    "id": "PSM-T2-066",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scrum Master",
+    "stem": "How does the Scrum Guide describe the Scrum Master?",
+    "options": [
+      "As a project manager who assigns work and reports progress upward",
+      "As an administrator who books the meetings and takes notes in them",
+      "As a true leader who serves the Scrum Team and the larger organization",
+      "As a technical lead who makes all the final design decisions for the team"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scrum Masters are true leaders who serve the Scrum Team and the larger organization. They do not assign work, make the technical decisions or act as meeting administrators."
+  },
+  {
+    "id": "PSM-T2-067",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Definition of Done",
+    "stem": "What does the Definition of Done give everyone?",
+    "options": [
+      "A checklist the Product Owner uses to accept or reject each Developer's tasks",
+      "A contract the stakeholders use to hold the Developers to their deadlines",
+      "A shared understanding of what work was completed as part of the Increment",
+      "A list of tasks the Scrum Master uses to track each Developer's daily work"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Definition of Done creates transparency by providing everyone a shared understanding of what work was completed as part of the Increment."
+  },
+  {
+    "id": "PSM-T2-068",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "True or false: The Product Owner is accountable for effective Product Backlog management.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says the Product Owner is accountable for effective Product Backlog management."
+  },
+  {
+    "id": "PSM-T2-069",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Review",
+    "stem": "True or false: The Sprint Review is the second to last event of the Sprint.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Sprint Review is the second to last event; the Sprint Retrospective concludes the Sprint."
+  },
+  {
+    "id": "PSM-T2-070",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pillars",
+    "stem": "What happens when a Scrum event is skipped or not run as prescribed?",
+    "options": [
+      "The Scrum Master must report it to management",
+      "The next event's timebox doubles to cover both",
+      "An opportunity to inspect and adapt is lost",
+      "The Sprint must be cancelled and replanned"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each event is a formal opportunity to inspect and adapt. The Scrum Guide says that failing to operate any event as prescribed results in lost opportunities to inspect and adapt."
+  },
+  {
+    "id": "PSM-T2-071",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Scrum events",
+    "stem": "A team is new to Scrum, and the Scrum Master wants its events to be effective. Which two actions fit? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Teach the team the purpose of each event so it can run them well",
+      "Make sure each event takes place and stays within its timebox",
+      "Merge the Sprint Review and Retrospective to save time",
+      "Skip the events the team finds boring until it matures",
+      "Run each event and decide its outcomes for the team"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "The Scrum Master ensures all events take place and are positive, productive and within the timebox, and helps everyone understand Scrum theory and practice. Skipping or merging events loses inspection and adaptation."
+  },
+  {
+    "id": "PSM-T2-072",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Product Owner",
+    "stem": "Which two statements about the Product Owner are true? (Choose two.)",
+    "select": 2,
+    "options": [
+      "The Product Owner decides how many items the Developers select",
+      "The Product Owner is one person, not a committee",
+      "The Product Owner must attend and run every Daily Scrum",
+      "The Product Owner assigns Sprint Backlog items to Developers",
+      "The Product Owner may represent the needs of many stakeholders"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "The Product Owner is one person and may represent many stakeholders' needs in the Product Backlog. The Developers select the items for the Sprint in discussion with the Product Owner, the Daily Scrum is the Developers' event, and the Developers organize their own work."
+  },
+  {
+    "id": "PSM-T2-073",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "Who may influence the Developers' sizing of Product Backlog items, and how?",
+    "options": [
+      "The Scrum Master, by setting a target velocity for the whole team",
+      "Stakeholders, by setting deadlines that the sizes must fit into",
+      "The Product Owner, by helping them understand and select trade-offs",
+      "Managers, by comparing the team's sizes with those of all the other teams"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Developers who will do the work size the items. The Product Owner may influence the Developers by helping them understand and select trade-offs."
+  },
+  {
+    "id": "PSM-T2-074",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Planning",
+    "stem": "By when must the Sprint Goal be finalized?",
+    "options": [
+      "At the Sprint Review, once results are in",
+      "Whenever the Product Owner decides to",
+      "Before the end of Sprint Planning",
+      "At the first Daily Scrum of the Sprint"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The whole Scrum Team collaborates to define the Sprint Goal, which must be finalized prior to the end of Sprint Planning."
+  },
+  {
+    "id": "PSM-T2-075",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "The Product Owner is asked whether 40 specific items will be finished by a trade show three Sprints away. The team has a history of Sprints. What is the best response?",
+    "options": [
+      "Have the Developers estimate all the tasks in hours and then promise the total to the stakeholder",
+      "Commit to all 40 items in writing, since the Product Owner is the one who decides the scope",
+      "Refuse to answer, since Scrum does not allow any planning that goes beyond a single Sprint",
+      "Give a forecast based on the team's past progress and update it each Sprint as more is learned"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Forecasts based on what has already happened are useful, and updating them each Sprint keeps them honest. A guaranteed promise ignores the uncertainty of complex work, and Scrum does not forbid looking beyond one Sprint."
+  },
+  {
+    "id": "PSM-T2-076",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scrum definition",
+    "stem": "The Scrum Guide says Scrum is built upon:",
+    "options": [
+      "Instructions given to the team by its managers",
+      "A fixed set of tools that every team must use",
+      "Detailed processes defined by a central project office",
+      "The collective intelligence of the people using it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rather than giving detailed instructions, the rules of Scrum guide relationships and interactions, and Scrum is built upon the collective intelligence of the people using it."
+  },
+  {
+    "id": "PSM-T2-077",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Facilitation",
+    "stem": "The Product Owner and the Developers disagree about how much scope can change mid-Sprint. What is the Scrum Master's role?",
+    "options": [
+      "Side with the Developers, since the Sprint Backlog belongs only to the Developers",
+      "Facilitate the discussion so they reach a decision that protects the Sprint Goal",
+      "Side with the Product Owner, since the Product Owner owns the Product Backlog",
+      "Decide the scope personally so that the Sprint can continue without further delay"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scope can be clarified and renegotiated between the Product Owner and Developers as long as the Sprint Goal is not endangered. The Scrum Master facilitates rather than making the decision for either side."
+  },
+  {
+    "id": "PSM-T2-078",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "True or false: Scrum Teams are structured and empowered by the organization to manage their own work.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says Scrum Teams are structured and empowered by the organization to manage their own work."
+  },
+  {
+    "id": "PSM-T2-079",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Goal",
+    "stem": "Which part of the Sprint Backlog stays fixed during the Sprint?",
+    "options": [
+      "The list of selected items",
+      "The plan for each item",
+      "The Sprint Goal",
+      "The task estimates"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Sprint Goal is the commitment and does not change during the Sprint. The selected items can be renegotiated with the Product Owner and the plan is adapted daily as more is learned."
+  },
+  {
+    "id": "PSM-T2-080",
+    "section": "psm",
+    "test": 2,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Daily Scrum",
+    "stem": "Stakeholders ask to attend the Daily Scrum to hear progress and give feedback. What is the best response?",
+    "options": [
+      "Cancel it and send the stakeholders a daily written status report on the team's work instead",
+      "Let the stakeholders lead it so that they can ask every single Developer for an update on their own tasks",
+      "Move it to a weekly slot so that the stakeholders can attend more easily and give feedback",
+      "Explain that it is the Developers' event and that stakeholders inspect results at the Sprint Review"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Daily Scrum is the Developers' event for inspecting progress toward the Sprint Goal and adapting their plan. The Sprint Review is where the Scrum Team and stakeholders inspect results and collaborate on what to do next."
+  },
+  {
+    "id": "PSM-D-001",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "Who is accountable for ordering Product Backlog items?",
+    "options": [
+      "The Scrum Master",
+      "The Product Owner",
+      "The Developers",
+      "The key stakeholders"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ordering Product Backlog items is part of the Product Owner's accountability for effective Product Backlog management."
+  },
+  {
+    "id": "PSM-D-002",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "What can shorter Sprints be used for, according to the Scrum Guide?",
+    "options": [
+      "Removing the need for a Sprint Review or a Sprint Retrospective in each Sprint",
+      "Giving the Scrum Master more chances to assign work to each Developer",
+      "Generating more learning cycles and limiting risk to a smaller time frame",
+      "Letting the team skip Sprint Planning when the backlog is already clear"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Shorter Sprints can be employed to generate more learning cycles and limit the risk of cost and effort to a smaller time frame. All events still happen in every Sprint."
+  },
+  {
+    "id": "PSM-D-003",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Definition of Done",
+    "stem": "Can items that do not meet the Definition of Done be presented at the Sprint Review?",
+    "options": [
+      "Yes, if they are labelled as unfinished during the demo",
+      "Yes, if the Product Owner agrees that they are nearly done",
+      "Only if the stakeholders asked for those items specifically",
+      "No; work that is not Done is neither presented nor released"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review."
+  },
+  {
+    "id": "PSM-D-004",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Backlog management",
+    "stem": "Which artifact is the Product Owner accountable for managing?",
+    "options": [
+      "The Product Backlog",
+      "The Increment",
+      "The burn-down chart",
+      "The Sprint Backlog"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Owner is accountable for effective Product Backlog management. The Sprint Backlog belongs to the Developers."
+  },
+  {
+    "id": "PSM-D-005",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum theory",
+    "stem": "What is lean thinking's main contribution to Scrum?",
+    "options": [
+      "Adding review gates between project phases",
+      "Reducing waste and focusing on the essentials",
+      "Giving each task to the most efficient specialist",
+      "Fixing the scope early to protect the budget"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lean thinking reduces waste and focuses on the essentials. Fixed scope, phase gates and specialist hand-offs are not part of Scrum's foundation."
+  },
+  {
+    "id": "PSM-D-006",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Self-management",
+    "stem": "A Developer asks the Scrum Master to update the Sprint Backlog for the team every morning. What should the Scrum Master do?",
+    "options": [
+      "Ask the Product Owner to take on updating the Sprint Backlog each morning",
+      "Agree, but only on days when the Developers are especially busy with work",
+      "Coach the Developers that the Sprint Backlog is their plan to keep up to date",
+      "Agree, since keeping the Sprint Backlog current is part of the Scrum Master's job"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Sprint Backlog is a plan by and for the Developers, and keeping it current is part of their self-management."
+  },
+  {
+    "id": "PSM-D-007",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "True or false: The entire Scrum Team is accountable for creating a valuable, useful Increment every Sprint.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says the entire Scrum Team is accountable for creating a valuable, useful Increment every Sprint."
+  },
+  {
+    "id": "PSM-D-008",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "True or false: Each Sprint may be considered a short project.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says each Sprint may be considered a short project."
+  },
+  {
+    "id": "PSM-D-009",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Artifacts",
+    "stem": "True or false: A burn-down chart is a required Scrum artifact.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The three artifacts are the Product Backlog, Sprint Backlog and Increment. Burn-downs are one of several optional ways to forecast progress."
+  },
+  {
+    "id": "PSM-D-010",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ordering the backlog",
+    "stem": "True or false: The Product Owner may reorder the Product Backlog at any time.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Backlog is emergent, and ordering it is the Product Owner's accountability. Only changes to the current Sprint's scope are limited by the Sprint Goal."
+  },
+  {
+    "id": "PSM-D-011",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum definition",
+    "stem": "True or false: A team may change Scrum's rules and still call the result Scrum, as long as the Scrum Master agrees.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum framework as described in the Scrum Guide is immutable. A team can use extra practices inside it, but changing or dropping its rules means the result is not Scrum."
+  },
+  {
+    "id": "PSM-D-012",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum Master",
+    "stem": "True or false: The Scrum Master helps everyone understand Scrum theory and practice, both within the Scrum Team and in the organization.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says the Scrum Master does this by helping everyone understand Scrum theory and practice, within the Scrum Team and the organization."
+  },
+  {
+    "id": "PSM-D-013",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Developers",
+    "stem": "What does the Scrum Guide say about the Developers' skills?",
+    "options": [
+      "They must each hold a certificate in at least one technology",
+      "They must all be software programmers with the same training",
+      "They are often broad and vary with the domain of the work",
+      "They are narrow specialists who each own one product layer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The specific skills the Developers need are often broad and vary with the domain of work. Scrum is used well beyond software."
+  },
+  {
+    "id": "PSM-D-014",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Planning",
+    "stem": "What happens in Sprint Planning's 'how' topic?",
+    "options": [
+      "The Scrum Master assigns the selected items to the Developers with the most suitable skills",
+      "The stakeholders approve the technical design before the Developers start any of the work",
+      "The Product Owner writes the detailed tasks so that the Developers know exactly what to do",
+      "The Developers plan the work needed to create an Increment that meets the Definition of Done"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For each selected item, the Developers plan the work necessary to create an Increment that meets the Definition of Done, often by decomposing it into smaller work items. How this is done is at their sole discretion."
+  },
+  {
+    "id": "PSM-D-015",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Goal",
+    "stem": "How does the Product Goal relate to the Product Backlog?",
+    "options": [
+      "It is in the Product Backlog, and the rest of it emerges to define what will fulfill the goal",
+      "It sits outside the Product Backlog in a separate charter that only the sponsor may change",
+      "It is the top item of the Product Backlog and is completed in the very next Sprint",
+      "It replaces the Product Backlog once the Scrum Team has been working for a few Sprints"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Goal is in the Product Backlog. The rest of the Product Backlog emerges to define what will fulfill the Product Goal."
+  },
+  {
+    "id": "PSM-D-016",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "How should the Product Owner treat feedback from the Sprint Review?",
+    "options": [
+      "As a list of changes the team must make now",
+      "As a score for the Developers' performance",
+      "As input that may change the Product Backlog",
+      "As a formal approval of the Sprint's results"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Feedback at the Sprint Review is input for adapting the Product Backlog. The Product Owner decides how it affects the order."
+  },
+  {
+    "id": "PSM-D-017",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Values",
+    "stem": "Which value helps Scrum Team members do the right thing and work on tough problems even when it is uncomfortable?",
+    "options": [
+      "Commitment",
+      "Openness",
+      "Courage",
+      "Respect"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Scrum Guide describes courage as having the courage to do the right thing and to work on tough problems."
+  },
+  {
+    "id": "PSM-D-018",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Serving the Product Owner",
+    "stem": "When does the Scrum Master facilitate stakeholder collaboration?",
+    "options": [
+      "As requested or needed",
+      "Only during the Sprint Review",
+      "Only with written approval",
+      "Instead of the Product Owner"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says the Scrum Master serves the Product Owner by facilitating stakeholder collaboration as requested or needed."
+  },
+  {
+    "id": "PSM-D-019",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "Stakeholders keep emailing Developers directly with new requests. What should the Developers do?",
+    "options": [
+      "Ask the Scrum Master to decide which of the requests deserve to be worked on",
+      "Work on the quickest requests first to keep the stakeholders happy and engaged",
+      "Point the stakeholders to the Product Owner, who manages the Product Backlog",
+      "Add the requests to the Sprint Backlog so nothing gets lost during the Sprint"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "New work goes through the Product Owner, who decides whether and where it belongs in the Product Backlog. Adding requests directly to the Sprint bypasses the Product Owner and can endanger the Sprint Goal."
+  },
+  {
+    "id": "PSM-D-020",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Retrospective",
+    "stem": "The Sprint Retrospective keeps running well over its timebox. What should the Scrum Master do?",
+    "options": [
+      "Let it run as long as it needs, since improvement matters more than any timebox in Scrum",
+      "Replace it with a survey that the Developers fill in on their own after each Sprint",
+      "Hold it only every other Sprint so that the team has more time for each one of them",
+      "Help the team keep within the timebox, for example by focusing on the most helpful changes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Scrum Master ensures that all Scrum events take place and are positive, productive and kept within the timebox. Focusing on the most helpful changes is one way to do that."
+  },
+  {
+    "id": "PSM-D-021",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Backlog",
+    "stem": "Which statement about the Sprint Backlog is correct?",
+    "options": [
+      "It is owned by the Product Owner, who updates it after each Daily Scrum",
+      "It is a fixed list that cannot change once Sprint Planning has been completed",
+      "It is a highly visible, real-time picture of the work the Developers plan to do",
+      "It is hidden from the stakeholders so that they do not interfere with the work"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Sprint Backlog is a plan by and for the Developers: a highly visible, real-time picture of the work they plan to accomplish to achieve the Sprint Goal."
+  },
+  {
+    "id": "PSM-D-022",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Product Backlog management",
+    "stem": "Which two are part of the Product Owner's accountability? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Facilitating the Daily Scrum",
+      "Creating and clearly communicating Product Backlog items",
+      "Ordering Product Backlog items",
+      "Deciding how many hours each task takes",
+      "Removing the Developers' impediments"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Creating, communicating and ordering Product Backlog items are part of the Product Owner's accountability. Sizing belongs to the Developers, and causing impediments to be removed to the Scrum Master."
+  },
+  {
+    "id": "PSM-D-023",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scrum theory",
+    "stem": "Why does Scrum rely on short, repeated cycles in a complex environment?",
+    "options": [
+      "Short cycles let the team avoid planning and simply work on whatever arrives first",
+      "Short cycles make the full scope and date fixed and certain from day one",
+      "Each cycle is a phase gate where managers approve or stop the next one",
+      "Each cycle produces something to inspect, so the team learns and adapts early"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In complex work what will happen is unknown, so Scrum uses short cycles that each produce a result to inspect. That feedback lets the team adapt early instead of following a prediction."
+  },
+  {
+    "id": "PSM-D-024",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Self-management",
+    "stem": "The Product Owner uses the Daily Scrum to hand out new tasks to Developers. What should the Scrum Master do?",
+    "options": [
+      "Coach the Product Owner and Developers that the Developers plan their own work",
+      "Run the Daily Scrum personally so that all the tasks are shared out fairly among them",
+      "Let it continue, since the Product Owner knows which work matters most",
+      "Ask the Product Owner to send the tasks by email before the Daily Scrum"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Daily Scrum is the Developers' event, and they decide how to do the work. The Product Owner influences what is built through the Product Backlog, not by assigning tasks."
+  },
+  {
+    "id": "PSM-D-025",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Scrum Team",
+    "stem": "Which three are accountabilities within a Scrum Team? (Choose three.)",
+    "select": 3,
+    "options": [
+      "Developers",
+      "Project Manager",
+      "Scrum Master",
+      "Team Lead",
+      "Product Owner"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "The Scrum Guide defines three accountabilities: Product Owner, Scrum Master and Developers. There is no project manager or team lead accountability in Scrum."
+  },
+  {
+    "id": "PSM-D-026",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Scrum events",
+    "stem": "Which two of these are Scrum events? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Release planning",
+      "Sprint Review",
+      "Sprint Zero",
+      "Sprint Planning",
+      "Product Backlog refinement"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "The Scrum events are the Sprint, Sprint Planning, Daily Scrum, Sprint Review and Sprint Retrospective. Product Backlog refinement is an ongoing activity, and release planning and Sprint Zero are not in the Scrum Guide."
+  },
+  {
+    "id": "PSM-D-027",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Artifacts",
+    "stem": "Which two of these are commitments in Scrum? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Definition of Ready",
+      "Velocity",
+      "Sprint forecast",
+      "Definition of Done",
+      "Product Goal"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "The three commitments are the Product Goal, the Sprint Goal and the Definition of Done. Velocity, forecasts and a Definition of Ready are not Scrum commitments."
+  },
+  {
+    "id": "PSM-D-028",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "A stakeholder asks the Product Owner for a fixed, detailed plan for the next 12 months. What is the best response?",
+    "options": [
+      "Decline to plan past the current Sprint, since Scrum does not allow longer-term planning",
+      "Produce a detailed task plan for all 12 months and hold the whole team to it without any changes",
+      "Share the Product Goal and a forecast, and explain that the plan will adapt as the team learns",
+      "Ask the Scrum Master to write the 12-month plan, since planning is part of their role"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scrum supports longer-term direction through the Product Goal and forecasts based on real progress, while keeping the plan open to adaptation as more is learned."
+  },
+  {
+    "id": "PSM-D-029",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Values",
+    "stem": "Which two of these are Scrum Values? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Simplicity",
+      "Transparency",
+      "Respect",
+      "Inspection",
+      "Focus"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "The five Scrum Values are commitment, focus, openness, respect and courage. Transparency and inspection are empirical pillars, and simplicity is not one of the Scrum Values."
+  },
+  {
+    "id": "PSM-D-030",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Removing impediments",
+    "stem": "Which two of these are impediments a Scrum Master might help remove? (Choose two.)",
+    "select": 2,
+    "options": [
+      "A shared test environment that is often unavailable",
+      "Slow decisions from a department outside the team",
+      "The Product Owner ordering the backlog",
+      "The Sprint Retrospective",
+      "The Definition of Done"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Impediments are things that block the team's progress, such as unavailable environments or slow outside decisions. Scrum events, the Definition of Done and the Product Owner's accountability are part of the framework, not impediments."
+  },
+  {
+    "id": "PSM-D-031",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scrum Team",
+    "stem": "What should a Scrum Team's size allow it to do?",
+    "options": [
+      "Remain nimble yet complete significant work in a Sprint",
+      "Give every single stakeholder a representative on the team",
+      "Cover every possible skill with a dedicated specialist",
+      "Run two Sprints in parallel when deadlines are tight"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Team should be small enough to remain nimble and large enough to complete significant work within a Sprint, typically 10 or fewer people."
+  },
+  {
+    "id": "PSM-D-032",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "Can Product Backlog refinement happen during a Sprint?",
+    "options": [
+      "No; refinement happens only in a special Sprint before development",
+      "Yes; refinement is ongoing, and the backlog is refined as needed",
+      "Only during Sprint Planning, when the Product Owner is present",
+      "Only in the Sprint Review, when stakeholders can give approval"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "During the Sprint, the Product Backlog is refined as needed. Refinement is an ongoing activity to add detail, such as description, order and size."
+  },
+  {
+    "id": "PSM-D-033",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Increment",
+    "stem": "Why must each Increment be thoroughly verified?",
+    "options": [
+      "So that the Scrum Master can sign each Increment off",
+      "So that the Sprint Review can act as a release gate",
+      "So that testing can be skipped in the following Sprints",
+      "So that all Increments work together and the result is usable"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each Increment is additive to all prior Increments and thoroughly verified, ensuring that all Increments work together. To provide value, the Increment must be usable."
+  },
+  {
+    "id": "PSM-D-034",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Maximizing value",
+    "stem": "In Scrum, value is delivered mainly through:",
+    "options": [
+      "Usable Increments that meet the Definition of Done",
+      "Detailed documents that are reviewed at phase gates",
+      "Status reports that are sent to stakeholders weekly",
+      "Tasks that each Developer completes on their own"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Value comes from usable Increments that meet the Definition of Done. Documents and reports may support the work but are not the product."
+  },
+  {
+    "id": "PSM-D-035",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTheory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum definition",
+    "stem": "Which is the best description of Scrum?",
+    "options": [
+      "A project management process for planning a fixed scope against a fixed date and budget",
+      "A set of software engineering practices for writing and testing code faster than before",
+      "A detailed methodology that prescribes every single practice a team needs to deliver a product",
+      "A lightweight framework for generating value through adaptive solutions to complex problems"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Scrum Guide defines Scrum as a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems. It is not limited to software and does not prescribe every practice."
+  },
+  {
+    "id": "PSM-D-036",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmFacilitation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coaching the team",
+    "stem": "The team lacks a skill it needs for upcoming work. What fits Scrum best?",
+    "options": [
+      "The Product Owner removes every item that needs the skill from the Product Backlog",
+      "The team works out how to gain or obtain the skill, since it is cross-functional as a whole",
+      "The Scrum Master hires a specialist for the team and assigns all of the related tasks to them",
+      "The work is handed to another department, and the team waits for it to be returned"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Scrum Team is cross-functional, with all the skills needed to create value each Sprint. A self-managing team decides how to close a skill gap, coached by the Scrum Master."
+  },
+  {
+    "id": "PSM-D-037",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmTeam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Developers",
+    "stem": "Which statement about Developers is correct?",
+    "options": [
+      "They must each specialize in a single layer of the product and stay in that layer",
+      "They report to the Scrum Master, who decides which of the tasks each of them works on",
+      "They are only the programmers; testers and designers sit outside the Scrum Team",
+      "They are the people committed to creating any aspect of a usable Increment each Sprint"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Developers are the people in the Scrum Team committed to creating any aspect of a usable Increment each Sprint, whatever their specialty."
+  },
+  {
+    "id": "PSM-D-038",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmEvents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Daily Scrum",
+    "stem": "According to the Scrum Guide, why is the Daily Scrum held at the same time and place every working day?",
+    "options": [
+      "To meet a compliance requirement",
+      "To let managers attend it easily",
+      "To let stakeholders plan their day",
+      "To reduce complexity"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Scrum Guide says the Daily Scrum is held at the same time and place every working day of the Sprint to reduce complexity."
+  },
+  {
+    "id": "PSM-D-039",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmArtifacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Definition of Done",
+    "stem": "There is no organizational standard. The Developers want to add 'performance tested' to their Definition of Done. Who decides?",
+    "options": [
+      "The Product Owner alone, since quality affects the value",
+      "Management, since the change affects all the release dates",
+      "The Scrum Team, since it creates its own Definition of Done",
+      "The Scrum Master, since the Scrum Master owns the process"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When the Definition of Done is not an organizational standard, the Scrum Team creates one appropriate for the product, and it can strengthen it, for example after a Retrospective."
+  },
+  {
+    "id": "PSM-D-040",
+    "section": "psm",
+    "test": 0,
+    "module": 1,
+    "domain": "psmValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog management",
+    "stem": "The Developers often build items that turn out to be misunderstood. Which practice helps most?",
+    "options": [
+      "Refining items together so the Developers understand them before Sprint Planning",
+      "Asking the Scrum Master to check each item after it is built and before review",
+      "Having the Product Owner write longer specifications and stop answering questions",
+      "Letting stakeholders test each item in production and report the problems found"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Product Backlog refinement adds detail and shared understanding so items can be Done within a Sprint. The Product Owner and Developers work on it together as an ongoing activity."
+  }
+]

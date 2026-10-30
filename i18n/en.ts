@@ -1008,7 +1008,7 @@ export const en = {
     takingTestIn: "I'm taking the driving test in",
     chooseState: "choose a state",
     takingTestInSuffix: "",
-    stateNote: "Every state gets its own questions from its driver handbook.",
+    stateNote: "Choose your state to unlock your 8 steps. Every state gets its own questions from its driver handbook.",
     letsGo: "Let's go",
   },
 

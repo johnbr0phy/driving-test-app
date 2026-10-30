@@ -6,7 +6,7 @@ import { isInternalEmail } from '@/lib/internal';
 // Visitor funnel aggregate (see lib/funnel.ts). One counter per step, total
 // and per UTC day; signups are also split by whether the browser practiced
 // before signing up.
-const STEPS = new Set(['visit', 'answered', 'signup_view', 'signup']);
+const STEPS = new Set(['visit', 'answered', 'signup_view', 'dmv_picker', 'dmv_state', 'signup']);
 // Mirrors VISIT_SOURCES in lib/funnel.ts (that module imports the client SDK).
 const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'direct', 'other']);
 

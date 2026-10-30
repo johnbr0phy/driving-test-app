@@ -1008,7 +1008,7 @@ export const es: TranslationKeys = {
     takingTestIn: "Voy a tomar el examen de manejo en",
     chooseState: "elige un estado",
     takingTestInSuffix: "",
-    stateNote: "Cada estado tiene sus propias preguntas, tomadas de su manual del conductor.",
+    stateNote: "Elige tu estado para desbloquear tus 8 pasos. Cada estado tiene sus propias preguntas, tomadas de su manual del conductor.",
     letsGo: "¡Vamos!",
   },
 

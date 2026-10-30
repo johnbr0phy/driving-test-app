@@ -27,6 +27,7 @@ import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer } from "@/lib/classProgress";
 import { useClassMissRecovery } from "@/components/exam/ClassMissRecovery";
+import { paywallVariantForCheckout } from "@/lib/paywallTest";
 
 function TrainingPageContent() {
   const router = useRouter();
@@ -65,6 +66,7 @@ function TrainingPageContent() {
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          paywallVariant: paywallVariantForCheckout(),
           location: "training_set_4",
         }),
       });

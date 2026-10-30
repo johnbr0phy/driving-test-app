@@ -351,6 +351,52 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
           </p>
         </Card>
 
+        {/* English paywall test */}
+        {data.paywallTest && (
+          <Card
+            title="Paywall test, English readers"
+            subtitle={`50/50 by browser${data.paywallTest.since ? `, since ${fmtDay(data.paywallTest.since.slice(0, 10))}` : ""}`}
+          >
+            <TableScroll className="-mx-2">
+              <table className="w-full text-sm">
+                <thead className="text-xs text-gray-500 dark:text-gray-400">
+                  <tr className={ROW}>
+                    <Th sticky>Paywall</Th>
+                    <Th right title="Browsers that saw it at least once">Browsers</Th>
+                    <Th right>Views</Th>
+                    <Th right>Purchases</Th>
+                    <Th right title="Purchases per 100 browsers that saw it">Per 100 browsers</Th>
+                    <Th right>Revenue</Th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.paywallTest.variants.map((v) => (
+                    <tr key={v.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                      <td className={`py-2 px-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{v.label}</td>
+                      <td className="py-2 px-2 text-right tabular-nums">{fmtInt(v.browsers)}</td>
+                      <td className="py-2 px-2 text-right tabular-nums">{fmtInt(v.views)}</td>
+                      <td className="py-2 px-2 text-right tabular-nums">{fmtInt(v.purchases)}</td>
+                      <td className="py-2 px-2 text-right tabular-nums">
+                        {v.browsers > 0 ? ((v.purchases / v.browsers) * 100).toFixed(2) : <span className="text-gray-400">·</span>}
+                      </td>
+                      <td className="py-2 px-2 text-right tabular-nums">{v.revenueCents > 0 ? fmtDollars(v.revenueCents) : <span className="text-gray-400">·</span>}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </TableScroll>
+            <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
+              {data.paywallTest.pValue === null
+                ? "No purchases from the test yet."
+                : data.paywallTest.pValue < 0.05
+                  ? `The difference is unlikely to be chance (p = ${data.paywallTest.pValue.toFixed(3)}).`
+                  : `Too close to call so far (p = ${data.paywallTest.pValue.toFixed(2)}); keep it running.`}{" "}
+              Each browser keeps its side. Spanish, Vietnamese, Korean and Chinese readers are not in the test. Preview a side with ?paywall=john or
+              ?paywall=classic.
+            </p>
+          </Card>
+        )}
+
         {/* Sources */}
         <Card
           title="Where new visitors come from"

@@ -1008,7 +1008,7 @@ export const vi: TranslationKeys = {
     takingTestIn: "Tôi sẽ thi lái xe ở",
     chooseState: "chọn tiểu bang",
     takingTestInSuffix: "",
-    stateNote: "Mỗi tiểu bang có bộ câu hỏi riêng theo sổ tay lái xe của tiểu bang đó.",
+    stateNote: "Chọn tiểu bang để mở khóa 8 bước của bạn. Mỗi tiểu bang có bộ câu hỏi riêng theo sổ tay lái xe của tiểu bang đó.",
     letsGo: "Bắt đầu thôi",
   },
 

@@ -6,6 +6,7 @@ import { examAnalyticsLabel } from '@/lib/exams';
 import { isInternalEmail } from '@/lib/internal';
 import { shareDailyCounts } from '@/lib/shareCounts';
 import { paywallHitFeature, purchaseExam, purchaseLocationLabel } from '@/lib/purchaseAttribution';
+import { PAYWALL_TEST_ID, PAYWALL_VARIANTS } from '@/lib/paywallTestIds';
 
 // The /admin Today tab: where the next dollar and the next user come from.
 // The /admin Growth tab says how the site is doing; this page says what to do about it:
@@ -22,7 +23,6 @@ const SOURCE_LABELS: Record<string, string> = {
   ai_other: 'Other AI', search: 'Search engines', direct: 'Direct / unknown', other: 'Other sites',
 };
 const PREMIUM_PRICE_CENTS = 999;
-const STATS_CRON_OLD_CAP = 2000;
 
 // Current and previous 7 and 30 days. A previous window that starts before
 // the series was first recorded is null, not a misleading zero; `since` is
@@ -69,6 +69,21 @@ export interface OpportunitiesPayload {
     purchasesAll: number;
     revenueAllCents: number;
   }[];
+  /** The English paywall test (lib/paywallTest.ts), null before its first view. */
+  paywallTest: {
+    test: string;
+    since: string | null;
+    variants: {
+      id: string;
+      label: string;
+      views: number;
+      browsers: number;
+      purchases: number;
+      revenueCents: number;
+    }[];
+    /** Two-sided p-value for buyers per browser, john vs classic; null until both have buyers or views. */
+    pValue: number | null;
+  } | null;
   sourcesSince: string | null;
   sources: {
     id: string;
@@ -180,7 +195,7 @@ export async function buildOpportunities(
   now = Date.now(),
 ): Promise<OpportunitiesPayload> {
   const w = windows(now);
-  const [usersSnap, paymentsSnap, questionsDoc, funnelDoc, paywallsDoc, sharesDoc, originsSnap, studyTimesDoc, stripeFacts] = await Promise.all([
+  const [usersSnap, paymentsSnap, questionsDoc, funnelDoc, paywallsDoc, sharesDoc, originsSnap, studyTimesDoc, stripeFacts, paywallTestDoc] = await Promise.all([
     db.collection('users').select('createdAt', 'activeDates', 'lastUpdated', 'subscription', 'paywallHits').get(),
     db.collection('payments').get(),
     db.doc('analytics/questions').get(),
@@ -190,6 +205,7 @@ export async function buildOpportunities(
     db.collection('signupOrigins').get(),
     db.doc('globalStats/studyTimes').get(),
     readStripe(stripe),
+    db.doc('analytics/paywallTest').get(),
   ]);
 
   // ── Users ──────────────────────────────────────────────────────────────
@@ -217,7 +233,15 @@ export async function buildOpportunities(
   const userById = new Map(users.map((u) => [u.id, u]));
 
   // ── Payments, with the paywall each came from ──────────────────────────
-  type P = { day: string | null; net: number; refunded: number; location: string | null; exam: string; userId: string | null };
+  type P = {
+    day: string | null;
+    net: number;
+    refunded: number;
+    location: string | null;
+    exam: string;
+    userId: string | null;
+    paywallVariant?: string;
+  };
   const payments: P[] = [];
   let paymentsMissingLocation = 0;
   let paymentsLocatedFromStripe = 0;
@@ -247,6 +271,7 @@ export async function buildOpportunities(
       location,
       exam: typeof p.exam === 'string' ? p.exam : purchaseExam(location),
       userId,
+      ...(typeof p.paywallVariant === 'string' && { paywallVariant: p.paywallVariant }),
     });
   }
   // Premium accounts with no payment record (granted before payments
@@ -368,6 +393,7 @@ export async function buildOpportunities(
       };
     })
     .sort((a, b) => b.revenueAllCents - a.revenueAllCents || b.hits30d - a.hits30d);
+  const paywallTest = buildPaywallTest(paywallTestDoc.data(), payments);
   const unattributed = payments.filter((p) => !p.location);
   if (unattributed.length > 0) {
     paywalls.push({
@@ -508,16 +534,23 @@ export async function buildOpportunities(
   });
   const studyTimes = studyTimesDoc.data();
   const sampled = typeof studyTimes?.sampledUsers === 'number' ? studyTimes.sampledUsers : null;
+  const statsAt = typeof studyTimes?.updatedAt === 'string' ? Date.parse(studyTimes.updatedAt) : NaN;
+  const statsStale = Number.isNaN(statsAt) || Date.now() - statsAt > 36 * 60 * 60 * 1000;
+  const statsDate = Number.isNaN(statsAt)
+    ? null
+    : new Date(statsAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'America/New_York' });
   health.push({
     id: 'stats-cron',
-    status: sampled === null ? 'warn' : sampled >= usersSnap.size * 0.95 ? 'ok' : 'bad',
+    status: sampled === null ? 'warn' : statsStale || sampled < usersSnap.size * 0.95 ? 'bad' : 'ok',
     title: 'Nightly community stats',
     detail:
       sampled === null
         ? 'The 3am stats job has not reported how many accounts it read.'
-        : sampled >= usersSnap.size * 0.95
-          ? `The 3am stats job read ${sampled.toLocaleString('en-US')} accounts last night.`
-          : `The 3am stats job read ${sampled.toLocaleString('en-US')} of ${usersSnap.size.toLocaleString('en-US')} accounts (it stopped at ${STATS_CRON_OLD_CAP.toLocaleString('en-US')}), so most-missed questions, FastPass difficulty and study times leave out the rest. Fixed to read every account in pages.`,
+        : statsStale
+          ? `The 3am stats job last finished ${statsDate ?? 'at an unknown date'} (it read ${sampled.toLocaleString('en-US')} accounts), so most-missed questions, FastPass difficulty and study times are out of date. Check the aggregate-stats logs in Vercel.`
+          : sampled >= usersSnap.size * 0.95
+            ? `The 3am stats job read ${sampled.toLocaleString('en-US')} accounts last night.`
+            : `The 3am stats job read ${sampled.toLocaleString('en-US')} of ${usersSnap.size.toLocaleString('en-US')} accounts, so most-missed questions, FastPass difficulty and study times leave out the rest.`,
   });
   const rateLimited30 = w.sum(questions.rateLimited?.daily, 29, 0);
   health.push({
@@ -642,6 +675,7 @@ export async function buildOpportunities(
     },
     exams,
     paywalls,
+    paywallTest,
     sourcesSince: sourceSince,
     sources,
     sourceSignupsTracked,
@@ -650,4 +684,54 @@ export async function buildOpportunities(
     health,
     insights,
   };
+}
+
+// ─── English paywall test ────────────────────────────────────────────────────
+const PAYWALL_VARIANT_LABELS: Record<string, string> = {
+  john: '"Hi, I\'m John" (chip in)',
+  classic: 'Classic Premium',
+};
+
+function buildPaywallTest(
+  doc: Record<string, any> | undefined,
+  payments: { net: number; paywallVariant?: string }[],
+): OpportunitiesPayload['paywallTest'] {
+  if (!doc || doc.test !== PAYWALL_TEST_ID) return null;
+  const stored = (doc.variants || {}) as Record<string, { views?: number; browsers?: number }>;
+  const variants = PAYWALL_VARIANTS.map((id) => {
+    const sold = payments.filter((p) => p.paywallVariant === id);
+    return {
+      id,
+      label: PAYWALL_VARIANT_LABELS[id] ?? id,
+      views: stored[id]?.views ?? 0,
+      browsers: stored[id]?.browsers ?? 0,
+      purchases: sold.length,
+      revenueCents: sold.reduce((n, p) => n + p.net, 0),
+    };
+  });
+  const [a, b] = variants;
+  return {
+    test: PAYWALL_TEST_ID,
+    since: typeof doc.since === 'string' ? doc.since : null,
+    variants,
+    pValue: twoProportionP(a.purchases, a.browsers, b.purchases, b.browsers),
+  };
+}
+
+// Two-sided p-value of a pooled two-proportion z-test.
+function twoProportionP(x1: number, n1: number, x2: number, n2: number): number | null {
+  if (n1 === 0 || n2 === 0 || x1 + x2 === 0) return null;
+  const pool = (x1 + x2) / (n1 + n2);
+  const se = Math.sqrt(pool * (1 - pool) * (1 / n1 + 1 / n2));
+  if (se === 0) return null;
+  const z = Math.abs(x1 / n1 - x2 / n2) / se;
+  return 2 * (1 - normalCdf(z));
+}
+
+// Abramowitz and Stegun 26.2.17, good to about 1e-7.
+function normalCdf(z: number): number {
+  const t = 1 / (1 + 0.2316419 * z);
+  const d = 0.3989422804014327 * Math.exp((-z * z) / 2);
+  const tail = d * t * (0.31938153 + t * (-0.356563782 + t * (1.781477937 + t * (-1.821255978 + t * 1.330274429))));
+  return 1 - tail;
 }

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getStripe, PREMIUM_PRICE_ID, PREMIUM_PRODUCT } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
+import { isPaywallVariant } from '@/lib/paywallTestIds';
 
 export async function POST(request: NextRequest) {
   try {
@@ -21,7 +22,7 @@ export async function POST(request: NextRequest) {
     const decodedToken = await getAdminAuth().verifyIdToken(token);
 
     const body = await request.json();
-    const { email, returnUrl, returnPath: rawReturnPath, location } = body;
+    const { email, returnUrl, returnPath: rawReturnPath, location, paywallVariant } = body;
     // Where the buyer lands afterwards (and where the purchase is verified).
     // Same-site paths only: "/sat", never "//evil.com" or a full URL.
     const returnPath =
@@ -101,6 +102,8 @@ export async function POST(request: NextRequest) {
         userId,
         email,
         ...(location && { location }),
+        // Which side of the English paywall test (lib/paywallTest.ts) the buyer saw.
+        ...(isPaywallVariant(paywallVariant) && { paywallVariant }),
       },
     });
 

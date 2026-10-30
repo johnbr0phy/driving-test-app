@@ -478,7 +478,7 @@ function buildVisitorFunnel(
     | Record<string, { daily?: Record<string, number> }>
     | null;
   const daily: Record<string, Record<string, number>> = {};
-  for (const key of ['visit', 'answered', 'signup_view', 'signup', 'signup_tried', 'signup_cold']) {
+  for (const key of ['visit', 'answered', 'signup_view', 'signup', 'signup_tried', 'signup_cold', 'dmv_picker', 'dmv_state']) {
     daily[key] = steps?.[key]?.daily || {};
   }
   // Visits by source (visit_chatgpt, visit_search...), counted from the AI

@@ -10,6 +10,10 @@ import { isInternalBrowser } from "@/lib/internal";
 //   visit        first page view while signed out, also counted by source
 //   answered     first question answered while signed out (tried it first)
 //   signup_view  first time the signup page is opened while signed out
+//   dmv_picker   the DMV dashboard's state picker shown (no state yet, not
+//                arriving with a ?state= link from a state landing)
+//   dmv_state    a state chosen in that picker; dmv_picker minus dmv_state is
+//                the browsers that met the picker and never chose a state
 //   signup       account created; also stamps signupOrigins/{uid} with
 //                whether it practiced first and the first visit's source and
 //                landing page (kept from the visit step in localStorage)
@@ -17,7 +21,7 @@ import { isInternalBrowser } from "@/lib/internal";
 // Browsers that block storage count on every page load; that's rare enough to
 // ignore, and the alternative (no dedupe) is far worse.
 
-export type FunnelStep = "visit" | "answered" | "signup_view" | "signup";
+export type FunnelStep = "visit" | "answered" | "signup_view" | "dmv_picker" | "dmv_state" | "signup";
 
 // Where a first visit came from, so the /admin Growth tab can show how many new visitors
 // AI answer engines send. Read from utm_source first (ChatGPT tags its links

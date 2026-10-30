@@ -1010,7 +1010,7 @@ export const ko: TranslationKeys = {
     takingTestIn: "",
     chooseState: "주 선택",
     takingTestInSuffix: "에서 운전면허 시험을 봅니다",
-    stateNote: "주마다 운전자 핸드북에서 뽑은 문제가 따로 있습니다.",
+    stateNote: "주를 선택하면 8단계가 열립니다. 주마다 운전자 핸드북에서 뽑은 문제가 따로 있습니다.",
     letsGo: "시작하기",
   },
 

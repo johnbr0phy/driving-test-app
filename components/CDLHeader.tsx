@@ -18,8 +18,6 @@ import { AdminLink } from "@/components/AdminLink";
 import { TeachLink } from "@/components/TeachLink";
 import { useExamStarted } from "@/hooks/useExamStarted";
 import { BrandLockup } from "@/components/BrandLockup";
-import { HeaderTestName, headerTestLabel } from "@/components/HeaderTestName";
-import { getCatalogEntry } from "@/lib/testCatalog";
 
 export function CDLHeader() {
   const { user } = useAuth();
@@ -71,14 +69,10 @@ export function CDLHeader() {
     return null;
   }
 
-  const entry = getCatalogEntry(theme.id);
-  const variant = variants.find((v) => pathname?.startsWith(v.slug));
-
   return (
     <header className="border-b bg-white dark:bg-gray-900">
-      <div className="container relative mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <BrandLockup />
-        {entry && <HeaderTestName entry={entry} label={variant ? headerTestLabel(variant.name) : undefined} />}
 
         <div className="flex items-center gap-1 sm:gap-2">
           <TestSwitcher />

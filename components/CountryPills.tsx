@@ -11,6 +11,7 @@ import {
   regionHomePath,
   regionInfo,
 } from "@/lib/region";
+import { useStore } from "@/store/useStore";
 
 const FLAGS: Record<Region, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", AU: "🇦🇺" };
 
@@ -62,6 +63,31 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
   const [source, setSource] = useState<string | null>(null);
   useEffect(() => setSource(readCookie(REGION_SOURCE_COOKIE)), []);
 
+  // The account remembers the picked country (useStore region, synced like
+  // primaryExam). Keep this device's cookie in step with it once the account
+  // has loaded: a pick from another device moves this one to that country's
+  // page (once, the first time this device learns it), and a pick saved only
+  // in this device's cookie goes up to the account.
+  const storeRegion = useStore((st) => st.region);
+  const userId = useStore((st) => st.userId);
+  const loaded = useStore((st) => st.firestoreLoaded);
+  useEffect(() => {
+    if (userId && !loaded) return;
+    const cookie = readRegionCookie();
+    const chosen = readCookie(REGION_SOURCE_COOKIE) === "chosen";
+    if (!storeRegion) {
+      if (cookie && chosen) useStore.getState().setRegion(cookie);
+      return;
+    }
+    if (cookie === storeRegion && chosen) return;
+    writeCookie(REGION_COOKIE, storeRegion);
+    writeCookie(REGION_SOURCE_COOKIE, "chosen");
+    setSource("chosen");
+    if (storeRegion === current) return;
+    if (onChange) onChange(storeRegion);
+    else window.location.replace(regionHomePath(storeRegion));
+  }, [storeRegion, userId, loaded, current, onChange]);
+
   // A new country page has different content above the pills, so keep the
   // pills where the visitor's thumb is instead of letting the page jump.
   const box = useRef<HTMLDivElement>(null);
@@ -80,6 +106,7 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
   }, []);
 
   function save(r: Region) {
+    useStore.getState().setRegion(r);
     writeCookie(REGION_COOKIE, r);
     writeCookie(REGION_SOURCE_COOKIE, "chosen");
     setSource("chosen");

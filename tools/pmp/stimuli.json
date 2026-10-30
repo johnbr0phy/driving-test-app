@@ -1,0 +1,12 @@
+[
+  {
+    "id": "PMP-CS1",
+    "title": "Case study: warehouse system replacement",
+    "text": "You are the project manager for Northgate Logistics, which is replacing the warehouse management system at its three regional distribution centers. The project has two tracks. The facilities track (new scanners, network cabling and racking changes) is planned predictively with a baselined schedule and a fixed-price contract with an installer. The software track uses two agile teams working in two-week sprints with a product owner from the operations department.\n\nThe sponsor is the VP of Operations. Shift supervisors at the largest site were not interviewed during planning and have told their teams that the new system will slow picking down. The installer has reported that one of its two certified technicians is leaving the company next month.\n\nStatus at the end of month 6 (facilities track):\n\n| Measure | Value |\n|---|---|\n| Budget at completion (BAC) | $800,000 |\n| Planned value (PV) | $400,000 |\n| Earned value (EV) | $360,000 |\n| Actual cost (AC) | $450,000 |"
+  },
+  {
+    "id": "PMP-CS2",
+    "title": "Case study: smart water meter rollout",
+    "text": "You are the project manager for a city water utility that is replacing 40,000 mechanical meters with smart meters and launching a customer app that shows daily water use. Meter installation is planned predictively in four geographic phases and is done by a contractor under a fixed-price contract. The app is built by an internal agile team that releases every two weeks.\n\nThe project reports monthly to a steering committee chaired by the utility's general manager, and quarterly to the city council. The utility has a sustainability target of cutting water loss by 15 percent, and the business case depends on leak alerts in the app. The national privacy regulator has just published draft guidance on how utilities may store hourly usage data.\n\nStatus at the end of phase 2 (installation track):\n\n| Measure | Value |\n|---|---|\n| Budget at completion (BAC) | $2,000,000 |\n| Planned value (PV) | $1,000,000 |\n| Earned value (EV) | $800,000 |\n| Actual cost (AC) | $800,000 |"
+  }
+]

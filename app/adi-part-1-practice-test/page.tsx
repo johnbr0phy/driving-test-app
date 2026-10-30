@@ -167,7 +167,7 @@ export default function AdiPart1LandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four 50-question tests with the four DVSA bands in equal measure, an 85 percent pass line like the real test, and an explanation of the right answer and the common wrong pick on every item.
+                Four 50-question tests with the four DVSA bands in near-equal measure (13, 12, 13 and 12 questions), an 85 percent pass line like the real test, and an explanation of the right answer and the common wrong pick on every item.
               </p>
             </div>
           </div>

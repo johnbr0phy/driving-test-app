@@ -6,7 +6,7 @@
     "category": "ukadiRoad",
     "question": "Under Highway Code rule H2, at a junction a driver should give way to pedestrians who are:",
     "optionA": "Crossing or waiting to cross",
-    "optionB": "Already partway across the road",
+    "optionB": "Holding up a hand to you",
     "optionC": "On a marked crossing only",
     "optionD": "Walking with a child",
     "correctAnswer": "A",
@@ -158,7 +158,7 @@
     "state": "ALL",
     "questionId": "UKADI-RDP-012",
     "category": "ukadiRoad",
-    "question": "Rule 167 says you must not overtake:",
+    "question": "Rule 167 says do not overtake:",
     "optionA": "On any dual carriageway",
     "optionB": "In a one-way street",
     "optionC": "Past a van on a straight road",
@@ -286,12 +286,12 @@
     "category": "ukadiRoad",
     "question": "When passing a parked car, a useful rule of thumb is to leave room for:",
     "optionA": "A car door opening",
-    "optionB": "Half a car width",
+    "optionB": "A tyre's width",
     "optionC": "A small child's height",
     "optionD": "Roughly 30 centimetres",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Allow at least a car door's width when passing parked vehicles, as a door may open or someone may step out. Rule 152 also warns about children between parked cars."
+    "explanation": "Allow at least a car door's width when passing parked vehicles, as a door may open or someone may step out. Rule 213 gives the same door's width, about 1 metre, as the gap cyclists should keep from parked cars."
   },
   {
     "type": "UKADI",
@@ -319,7 +319,7 @@
     "optionD": "You stay under 20 mph",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Rule 141 says you must not drive or stop in a bus lane during its period of operation unless signs show your type of vehicle may use it."
+    "explanation": "Rule 141 says that, unless signs show your type of vehicle may use it, you should not drive in a bus lane during its period of operation. You may enter one only to stop, load or unload where that is not prohibited."
   },
   {
     "type": "UKADI",
@@ -501,7 +501,7 @@
     "optionD": "Get out left, wait behind barrier",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Rule 275 says to get out by the left-hand door and wait well behind the barrier where possible. Do not put a warning triangle on a motorway, as walking back is too dangerous."
+    "explanation": "Rule 277 says to get out by the side furthest from traffic if it is safe, and to wait behind a safety barrier where there is one. Never place a warning triangle on a motorway."
   },
   {
     "type": "UKADI",
@@ -515,7 +515,7 @@
     "optionD": "An electric car",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Rule 265 says vehicles towing trailers, goods vehicles over 3.5 tonnes and vehicles required to have a speed limiter must not use the right-hand lane of a motorway with three or more lanes, except in some roadwork layouts."
+    "explanation": "Rule 265 says vehicles towing trailers, goods vehicles over 7.5 tonnes and some lighter goods and passenger vehicles fitted with speed limiters must not use the right-hand lane of a motorway with three or more lanes, except in some roadwork layouts."
   },
   {
     "type": "UKADI",
@@ -781,7 +781,7 @@
     "optionD": "Stop even if the road is clear",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The octagonal STOP sign requires you to stop at the solid white line every time, then give way to traffic on the major road. It is the only octagonal sign so it can be read from behind or when covered in snow."
+    "explanation": "The octagonal STOP sign requires you to stop at the solid white line every time, then give way to traffic on the major road. Its unique octagonal shape means it can be recognised even when its face is covered in snow."
   },
   {
     "type": "UKADI",
@@ -963,7 +963,7 @@
     "optionD": "Buses only at those times",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Rule 238 and Know Your Traffic Signs say you must not stop on yellow zigzag school markings when an upright sign shows a mandatory prohibition, even to drop off or pick up."
+    "explanation": "Know Your Traffic Signs says that where an upright sign shows a mandatory prohibition, you must not stop on yellow zigzag school markings during the times shown, even to drop off or pick up."
   },
   {
     "type": "UKADI",
@@ -971,13 +971,13 @@
     "questionId": "UKADI-SGN-018",
     "category": "ukadiSigns",
     "question": "White zigzag lines on each side of a zebra crossing mean you must not:",
-    "optionA": "Wait there for more than five minutes",
+    "optionA": "Stop to give way to people",
     "optionB": "Park or overtake the lead vehicle",
-    "optionC": "Stop to let anyone out",
-    "optionD": "Drive through above 20 mph",
+    "optionC": "Drive at the posted limit",
+    "optionD": "Use dipped headlights there",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Rule 191 says you must not park on the zigzags and must not overtake the moving vehicle nearest the crossing or the one stopped to give way to pedestrians."
+    "explanation": "Rule 191 says you must not park on the zigzags and must not overtake the moving vehicle nearest the crossing or the one stopped to give way to pedestrians. Stopping to give way to people crossing is expected."
   },
   {
     "type": "UKADI",
@@ -1040,7 +1040,7 @@
     "state": "ALL",
     "questionId": "UKADI-SGN-023",
     "category": "ukadiSigns",
-    "question": "A red-bordered circle shows a red car on the left and a black car on the right. It means:",
+    "question": "A red-bordered circle shows two cars side by side, one red and one black. It means:",
     "optionA": "Two-way traffic",
     "optionB": "Priority to oncoming cars",
     "optionC": "No overtaking",
@@ -1061,7 +1061,7 @@
     "optionD": "Priority over oncoming traffic",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The blue rectangle with the larger white arrow means you have priority over vehicles from the opposite direction. The red-ringed circle with a large black arrow up and a red arrow is the give way to oncoming sign."
+    "explanation": "The blue rectangle with the larger white arrow means you have priority over vehicles from the opposite direction. A red-ringed circle with one red and one black arrow is the give way to oncoming vehicles sign."
   },
   {
     "type": "UKADI",
@@ -1271,7 +1271,7 @@
     "optionD": "Edge forward to show your intent",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Rule 206 says to be patient with older pedestrians, who may need more time to cross. Anyone still crossing when your light turns green must be allowed to finish."
+    "explanation": "Rule 207 says to be patient with older pedestrians, who may need more time to cross. Anyone still crossing when your light turns green must be allowed to finish."
   },
   {
     "type": "UKADI",
@@ -2097,7 +2097,7 @@
     "optionD": "Only if the police ask you to",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Rule 286 says that if you do not produce insurance at the time, you must report the incident to the police as soon as possible, and in any case within 24 hours."
+    "explanation": "Rule 287 says that if someone is injured and you do not produce insurance at the time, you must report the incident to the police as soon as possible, and in any case within 24 hours."
   },
   {
     "type": "UKADI",
@@ -2402,10 +2402,10 @@
     "optionA": "Keep records of lessons",
     "optionB": "Attend the pupil's test",
     "optionC": "Look after money paid in advance",
-    "optionD": "Publish footage of driving tests",
+    "optionD": "Post test footage without consent",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The code says not to distribute, circulate or publish footage of driving tests. Keeping progress records, attending the test if asked and safeguarding prepaid money are all expected."
+    "explanation": "The code says not to distribute, circulate or publish in-car footage of driving tests without permission from DVSA and the client. Keeping progress records, attending the test if asked and safeguarding prepaid money are all expected."
   },
   {
     "type": "UKADI",

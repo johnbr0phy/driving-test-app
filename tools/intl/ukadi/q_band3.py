@@ -203,7 +203,7 @@ LAW = [
 ("After a crash causing injury, if you do not give your insurance details at the scene you must report it to the police:",
  "As soon as possible, within 24 hours",
  ["As soon as possible, within 48 hours", "Within 7 days, at any station", "Only if the police ask you to"],
- "Rule 286 says that if you do not produce insurance at the time, you must report the incident to the police as soon as possible, and in any case within 24 hours."),
+ "Rule 287 says that if someone is injured and you do not produce insurance at the time, you must report the incident to the police as soon as possible, and in any case within 24 hours."),
 ("When may a driver use a hand-held phone for a call?",
  "999 or 112 when unsafe to stop",
  ["When stopped in a queue", "When moving under 10 mph", "Whenever stopped at red lights"],

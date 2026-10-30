@@ -53,7 +53,7 @@ export function getShareCard(id: string, language = "en"): ShareCard | undefined
   const color = theme ? `hsl(${theme.brand.replace(/ /g, ", ")})` : SHARE_COLORS[id]?.color ?? SHARE_COLORS[id.split("-")[0]]?.color ?? general.color;
   const tint = theme ? `hsl(${theme.brandLight.replace(/ /g, ", ")})` : SHARE_COLORS[id]?.tint ?? SHARE_COLORS[id.split("-")[0]]?.tint ?? general.tint;
   const ink = color.replace(/(hsl\([^,]+,[^,]+,)\s*([\d.]+)%\)/, (_, prefix, lightness) => `${prefix} ${Math.min(35, Number(lightness))}%)`);
-  return { ...general, title: copy?.title ?? exam.name.replace(/ Practice Tests?$/i, ""), description: copy?.description ?? ("blurb" in exam ? exam.blurb : `Practise ${exam.fullName}. Review the topics to work on next.`), color: ink, tint, mascots: [hasTigerSet(id) ? id : hasTigerSet(id.split("-")[0]) ? id.split("-")[0] : "dmv"] };
+  return { ...general, title: copy?.title ?? exam.name.replace(/ Practice Tests?$/i, ""), description: copy?.description ?? ("blurb" in exam ? exam.blurb : `Practise ${exam.fullName}. Review the topics to work on next.`), color: ink, tint, mascots: [hasTigerSet(id) ? id : hasTigerSet(id.split("-")[0]) ? id.split("-")[0] : id] };
 }
 
 // Light-mode exam brand colours, matching globals.css.

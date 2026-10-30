@@ -53,3 +53,9 @@ Forty dedicated sets (320 PNGs) replace the borrowed/default artwork for the exa
 `app/og/[examId]/route.tsx` renders 1200 × 630 cards using happy expression 03, never the crowned results expression. `lib/shareCards.ts` resolves home, country, exam, state and DMV-language cards; `lib/shareCardCopy.ts` holds short subject-specific exam copy. The background fades from white to the exam's light theme colour, with no side stripe. The home and country cards use three relevant smiling mascots. State-specific professional exams reuse their family's mascot with their own title and copy.
 
 Metadata calls `shareImageUrl` for a versioned `/og/<id>?v=...` URL. Root, country, test, translated and DMV state-page images use the same renderer. Social images retain the existing `/og` path outside the API crawl restrictions. The production file trace includes the tiger PNGs and local OFL-licensed Inter fonts. Explicit score-sharing images remain unchanged.
+
+## Car-driving mascot
+
+The `driving` set contains all eight reviewed 512 × 512 transparent expressions using the corrected **round-wheel-v2** artwork. The original rejected flat-bottom steering-wheel exports are not included. `dmv`, UK car/ADI, Canadian provincial car tests, Australian learner tests and India RTO resolve directly to this set. Motorcycle and commercial-driving sets retain their own art.
+
+`getSiteTigerAsset` preserves the original root mascot for the site brand and generic custom quizzes. Root PNGs, favicons, global header/premium logo, emails and the small share-card brand mark are unchanged. The DMV dashboard, landing celebration and training nudge use the test resolver; results, training celebrations, shared score cards and test icons pick up the set through their existing resolver calls. Link-preview URLs are versioned to refresh the new driving mascot, including the homepage collage.

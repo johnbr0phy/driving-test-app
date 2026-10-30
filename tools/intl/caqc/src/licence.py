@@ -50,7 +50,7 @@ ITEMS = [
     ("What must a learner bring to the SAAQ to get a learner's licence?",
      "Phase 1 course attestation", "Road test results", "Proof of insurance", "A signed logbook",
      "You need the driving school's attestation that you passed Phase 1 of the course, plus ID, parental consent if under 18, a vision test and payment."),
-    ("What happens to a learner's licence revoked for 4 demerit points?",
+    ("A learner reaches 4 demerit points. Besides losing the licence, what happens?",
      "Learning period extended", "Learning period shortened", "Points erased after a course", "Nothing if you pay the fine",
      "The learner's licence is revoked for at least 3 months and the learning period is extended by at least 3 months."),
     ("Who must give consent for a 16-year-old to get a learner's licence?",

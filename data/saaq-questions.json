@@ -228,7 +228,7 @@
     "state": "ALL",
     "questionId": "CAQC-LIC-017",
     "category": "caqcLicence",
-    "question": "What happens to a learner's licence revoked for 4 demerit points?",
+    "question": "A learner reaches 4 demerit points. Besides losing the licence, what happens?",
     "optionA": "Learning period extended",
     "optionB": "Learning period shortened",
     "optionC": "Points erased after a course",
@@ -564,14 +564,14 @@
     "state": "ALL",
     "questionId": "CAQC-RUL-017",
     "category": "caqcRules",
-    "question": "On a road with two or more lanes in your direction and a 90 km/h limit, which lane must you use?",
+    "question": "On a road with two lanes in your direction and a 90 km/h limit, which lane must you use?",
     "optionA": "The far-right lane",
     "optionB": "The far-left lane",
     "optionC": "Any lane you choose",
     "optionD": "The centre lane",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Keep to the right-hand lane, using another lane to pass or turn left. Only where the limit is under 80 km/h may you use any lane."
+    "explanation": "Keep to the right-hand lane, using the other lane to pass or turn left. With three or more lanes, use one of the right-hand lanes; only where the limit is under 80 km/h may you use any lane."
   },
   {
     "type": "CAQC",
@@ -725,7 +725,7 @@
     "optionD": "90 km/h",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Excessive speeding means 40 km/h or more over the limit in a zone of 60 km/h or less, 50 over in zones up to 90 km/h and 60 over in a 100 km/h zone."
+    "explanation": "Excessive speeding means 40 km/h or more over the limit in a zone of 60 km/h or less, 50 over in zones above 60 and up to 90 km/h, and 60 over in a 100 km/h zone."
   },
   {
     "type": "CAQC",
@@ -998,14 +998,14 @@
     "state": "ALL",
     "questionId": "CAQC-SGN-012",
     "category": "caqcSigns",
-    "question": "What do yellow signs with black chevrons placed along a curve mean?",
+    "question": "What do red signs with a white chevron placed along a curve mean?",
     "optionA": "A lane change",
     "optionB": "A one-way road",
     "optionC": "A divided highway",
     "optionD": "A sharp curve",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Chevron alignment signs mark the outer edge of a sharp curve. They are used where you must slow down a lot to take the curve safely."
+    "explanation": "In Quebec, chevron alignment signs are red with a white chevron and mark the outer edge of a sharp curve, where you must slow down a lot to take it safely."
   },
   {
     "type": "CAQC",
@@ -1194,14 +1194,14 @@
     "state": "ALL",
     "questionId": "CAQC-SGN-026",
     "category": "caqcSigns",
-    "question": "What does a sign with a white voided diamond (lozenge) indicate?",
+    "question": "What does a white voided diamond (lozenge) marked on a lane indicate?",
     "optionA": "A pedestrian crossing",
     "optionB": "A reserved lane",
     "optionC": "A school bus stop",
     "optionD": "A railway crossing",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The voided white lozenge marks a lane reserved for certain vehicles, such as buses, taxis or carpools, as the sign states."
+    "explanation": "The voided white lozenge marks a lane reserved for certain vehicles, such as buses, taxis or carpools, as posted signs state."
   },
   {
     "type": "CAQC",
@@ -1530,14 +1530,14 @@
     "state": "ALL",
     "questionId": "CAQC-SIG-018",
     "category": "caqcSignals",
-    "question": "A flagperson's barrier is lowered and its red light is on. Where must you stop?",
-    "optionA": "Right at the barrier",
-    "optionB": "At least 5 m from it",
-    "optionC": "At least 1 m from it",
-    "optionD": "At least 15 m from it",
+    "question": "In a work zone, a traffic control barrier is lowered and its red light is on. What must you do?",
+    "optionA": "Slow down and go",
+    "optionB": "Stop and wait",
+    "optionC": "Drive around it",
+    "optionD": "Use the shoulder",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Facing a lowered barrier with a red light, stop at least 5 metres away. When the yellow light flashes and the barrier rises, drive slowly."
+    "explanation": "A flagperson controls the barrier remotely. Red light and barrier down means stop; when the yellow light comes on and the barrier rises, drive slowly."
   },
   {
     "type": "CAQC",
@@ -2524,14 +2524,14 @@
     "state": "ALL",
     "questionId": "CAQC-RSK-017",
     "category": "caqcRisk",
-    "question": "Besides speed and alcohol, what is one of the three main causes of crashes in Quebec?",
+    "question": "Besides speed and alcohol, what is a leading cause of fatal crashes in Quebec?",
     "optionA": "Fatigue",
     "optionB": "Flat tires",
     "optionC": "Potholes",
     "optionD": "Wildlife",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Fatigue, alcohol-impaired driving and speeding are named among the main causes of accidents in Quebec, along with distraction."
+    "explanation": "The SAAQ course names alcohol, speed, fatigue and distraction as leading causes of fatal crashes. Fatigue cannot be beaten by willpower; only sleep fixes it."
   },
   {
     "type": "CAQC",

@@ -1,0 +1,4434 @@
+[
+  {
+    "id": "GCSECS-T1-001",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 1,
+    "format": "matrix",
+    "skill": "Data types",
+    "stem": "Choose the most suitable data type for each item.",
+    "explanation": "Whole numbers are integers, numbers with a fractional part are real (float), yes or no values are Boolean, and a mix of letters, digits and spaces is a string.",
+    "rows": [
+      "A pupil's age in whole years",
+      "Whether a pupil has paid for a trip",
+      "The price of a ticket, 4.50",
+      "A postcode such as SW1A 1AA"
+    ],
+    "columns": [
+      "Integer",
+      "Real",
+      "Boolean",
+      "String"
+    ],
+    "correct": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-002",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Abstraction",
+    "stem": "A route-planning app shows a railway as stations joined by straight coloured lines, ignoring the real distances and bends of the track. Which computational thinking technique is this?",
+    "explanation": "Abstraction removes detail that is not needed for the problem, here the real shape of the track. Decomposition would mean breaking the problem into smaller parts, which is not what the map does.",
+    "options": [
+      "Abstraction",
+      "Decomposition",
+      "Iteration",
+      "Validation"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T1-003",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AND gate",
+    "basics": "csTruthTables",
+    "stem": "When does A AND B give 1 (true)?",
+    "explanation": "AND is true only when every input is true. \"Either input is 1\" describes OR.",
+    "options": [
+      "When either input is 1",
+      "When A and B are both 1",
+      "When both inputs are 0",
+      "When exactly one input is 1"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T1-004",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Arithmetic operators",
+    "stem": "What is the value of 17 MOD 5?",
+    "explanation": "MOD gives the remainder after whole-number division: 17 = 3 × 5 + 2, so the remainder is 2. 17 DIV 5 would give the 3.",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T1-005",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decomposition",
+    "stem": "A student plans a quiz program by splitting it into four parts: load the questions, ask a question, check the answer and keep the score. What is this technique called?",
+    "explanation": "Decomposition is breaking a problem into smaller sub-problems that are easier to solve. Abstraction would be hiding unneeded detail rather than splitting the task up.",
+    "options": [
+      "Abstraction",
+      "Decomposition",
+      "Selection",
+      "Iteration"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T1-006",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Arithmetic operators",
+    "stem": "What is the value of 23 DIV 4?",
+    "explanation": "DIV is integer division and keeps only the whole part: 4 goes into 23 five times (20) with 3 left over. The 3 would be 23 MOD 4.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T1-007",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Boolean expressions",
+    "basics": "csTruthTables",
+    "stem": "A = 1, B = 0 and C = 1. Give the value of each expression.",
+    "explanation": "A AND B is 0 because B is 0; A OR B is 1 because A is 1; NOT C flips 1 to 0; and (A AND B) OR C is 0 OR 1, which is 1. Work out the brackets first.",
+    "rows": [
+      "A AND B",
+      "A OR B",
+      "NOT C",
+      "(A AND B) OR C"
+    ],
+    "columns": [
+      "1",
+      "0"
+    ],
+    "correct": [
+      1,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T1-008",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Binary search",
+    "stem": "What must be true of a list before a binary search can be used on it?",
+    "explanation": "Binary search discards half the list after each comparison, which only works if the items are in order. It can search sorted strings, lists of any length and lists with repeats.",
+    "options": [
+      "It must hold only numbers",
+      "It must have an even length",
+      "It must be sorted",
+      "It must have no repeated values"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T1-009",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Trace tables",
+    "basics": "csTraceTables",
+    "stem": "In this pseudocode, ← means assignment. What does the program output?\n\n| Line | Code |\n|---|---|\n| 1 | total ← 0 |\n| 2 | FOR i ← 1 TO 4 |\n| 3 | total ← total + i |\n| 4 | ENDFOR |\n| 5 | OUTPUT total |",
+    "explanation": "The loop runs with i = 1, 2, 3 and 4, so total goes 1, 3, 6, 10. FOR i ← 1 TO 4 includes the 4.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T1-010",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Trace tables",
+    "basics": "csTraceTables",
+    "stem": "What does this program output?\n\n| Line | Code |\n|---|---|\n| 1 | n ← 20 |\n| 2 | count ← 0 |\n| 3 | WHILE n > 1 |\n| 4 | n ← n DIV 2 |\n| 5 | count ← count + 1 |\n| 6 | ENDWHILE |\n| 7 | OUTPUT count |",
+    "explanation": "n goes 20, 10, 5, 2, 1 and count goes up once for each halving, so it reaches 4. When n is 1 the condition n > 1 is false and the loop stops.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T1-011",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Linear search",
+    "stem": "A linear search checks a list of 60 names one at a time, starting from the first. In the worst case, how many names does it compare with the target?",
+    "explanation": "In the worst case the target is the last item or is not in the list at all, so all 60 names are checked. The best case is 1 comparison, when the target is first.",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T1-012",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Logic from a description",
+    "basics": "csTruthTables",
+    "stem": "An alarm Q sounds if the door is open (D) and the system is armed (A), or if the panic button (P) is pressed. Which expression describes Q?",
+    "explanation": "The door and armed conditions must both be true together, so they are joined by AND in brackets, and the panic button works on its own, so it is joined by OR. D AND (A OR P) would never sound with the door shut, even when the panic button is pressed.",
+    "options": [
+      "Q = D AND (A OR P)",
+      "Q = (D OR A) AND P",
+      "Q = D AND A AND P",
+      "Q = (D AND A) OR P"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-013",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Selection",
+    "stem": "What does this program output?\n\n| Line | Code |\n|---|---|\n| 1 | mark ← 64 |\n| 2 | IF mark ≥ 70 THEN |\n| 3 | OUTPUT \"Distinction\" |\n| 4 | ELSE IF mark ≥ 50 THEN |\n| 5 | OUTPUT \"Pass\" |\n| 6 | ELSE |\n| 7 | OUTPUT \"Fail\" |\n| 8 | ENDIF |",
+    "explanation": "64 is not 70 or more, so the first branch is skipped; it is 50 or more, so \"Pass\" is output and the rest of the IF is skipped. Only one branch of an IF ... ELSE IF ... ELSE ever runs.",
+    "options": [
+      "Distinction",
+      "Fail",
+      "Pass, then Fail",
+      "Pass"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-014",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Binary search",
+    "stem": "A binary search looks for 52 in this sorted list, with positions 0 to 8. The middle position is (low + high) DIV 2.\n\n| Position | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |\n|---|---|---|---|---|---|---|---|---|---|\n| Value | 3 | 8 | 12 | 19 | 24 | 31 | 40 | 52 | 67 |\n\nWhich values are compared with 52, in order?",
+    "explanation": "First mid = (0 + 8) DIV 2 = 4, value 24, too small, so low = 5. Then mid = (5 + 8) DIV 2 = 6, value 40, too small, so low = 7. Then mid = (7 + 8) DIV 2 = 7, value 52, found.",
+    "options": [
+      "24, 40, 52",
+      "24, 31, 40, 52",
+      "31, 40, 52",
+      "24, 52"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T1-015",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Arrays",
+    "stem": "What does this program output? Arrays start at index 0.\n\n| Line | Code |\n|---|---|\n| 1 | names ← [\"Ali\", \"Beth\", \"Cai\", \"Dev\"] |\n| 2 | OUTPUT names[2] |",
+    "explanation": "With zero-based indexing, names[0] is Ali, names[1] is Beth and names[2] is Cai. Beth would be the answer if the array started at 1.",
+    "options": [
+      "Cai",
+      "Beth",
+      "Dev",
+      "Ali"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T1-016",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Truth tables",
+    "basics": "csTruthTables",
+    "stem": "How many rows does a truth table for an expression with three inputs need, not counting the heading row?",
+    "explanation": "Each input can be 0 or 1, so three inputs give 2 × 2 × 2 = 8 combinations. Two inputs need 4 rows.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T1-017",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bubble sort",
+    "stem": "A bubble sort puts the list 5, 2, 9, 1, 7 into ascending order. What is the list after the first pass?",
+    "explanation": "The first pass swaps 5 and 2, leaves 5 and 9, swaps 9 and 1, then swaps 9 and 7, giving 2, 5, 1, 7, 9 with the largest value at the end. 2, 1, 5, 7, 9 is the list after the second pass.",
+    "options": [
+      "1, 2, 5, 7, 9",
+      "2, 5, 1, 7, 9",
+      "2, 5, 9, 1, 7",
+      "2, 1, 5, 7, 9"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T1-018",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "2D arrays",
+    "stem": "scores is a two-dimensional array accessed as scores[row][column], starting at 0. What is output?\n\n| Line | Code |\n|---|---|\n| 1 | scores ← [[4, 7, 2], [9, 1, 5]] |\n| 2 | OUTPUT scores[1][2] |",
+    "explanation": "Row 1 is the second row, [9, 1, 5], and column 2 is its third value, 5. 7 is scores[0][1], a mix-up of row and column.",
+    "options": [
+      "7",
+      "5",
+      "1",
+      "2"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T1-019",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Levels of language",
+    "stem": "Why are most programs written in a high-level language?",
+    "explanation": "High-level languages use English-like keywords, so code is quicker to write, read and fix, and it can run on different processors after translation. It still has to be compiled or interpreted, and direct register control is a feature of low-level languages.",
+    "options": [
+      "They run faster than machine code",
+      "They are easier to write and debug",
+      "They need no translation",
+      "They control each register directly"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T1-020",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Merge sort",
+    "stem": "Put the stages of a merge sort in order.",
+    "explanation": "Merge sort first divides the list all the way down to single items, which are sorted by definition. It then merges sorted lists in pairs, each time taking the smaller front item, until one list is left.",
+    "options": [
+      "Split the list in half again and again until every sub-list holds one item",
+      "Merge pairs of one-item lists into sorted lists of two",
+      "Merge pairs of sorted lists by comparing the first item of each",
+      "Keep merging until a single sorted list remains"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-021",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Testing",
+    "stem": "A program should accept ages from 11 to 16 inclusive. Classify each piece of test data.",
+    "explanation": "13 is typical valid data, so normal. 11 and 16 are the edges of the valid range, so boundary. \"twelve\" is the wrong data type, so erroneous and should be rejected.",
+    "rows": [
+      "13",
+      "11",
+      "16",
+      "twelve"
+    ],
+    "columns": [
+      "Normal",
+      "Boundary",
+      "Erroneous"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T1-022",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Validation",
+    "stem": "A sign-up form rejects any password shorter than 8 characters. Which kind of validation check is this?",
+    "explanation": "Checking the number of characters is a length check. A range check tests that a number lies between limits, and a presence check only tests that something was entered.",
+    "options": [
+      "Range check",
+      "Presence check",
+      "Format check",
+      "Length check"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-023",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Comparing sorts",
+    "stem": "Which is an advantage of merge sort over bubble sort when sorting a list of 100,000 items?",
+    "explanation": "Merge sort's divide-and-merge approach makes far fewer comparisons on large lists. Bubble sort is the one that needs less memory, since it sorts in place while merge sort builds new sub-lists.",
+    "options": [
+      "It needs less memory",
+      "It is shorter to code",
+      "It leaves the list unchanged",
+      "It is usually much faster"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-024",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Translators",
+    "stem": "Match each description to the translator it describes.",
+    "explanation": "A compiler translates everything up front into an executable that runs without it. An interpreter works line by line, so it halts at an error after earlier lines have run. An assembler turns assembly mnemonics into machine code.",
+    "rows": [
+      "Translates the whole program before it runs",
+      "Translates and runs one line at a time",
+      "Produces an executable file",
+      "Stops at the first error it meets while running",
+      "Translates assembly language into machine code"
+    ],
+    "columns": [
+      "Compiler",
+      "Interpreter",
+      "Assembler"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T1-025",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Errors",
+    "stem": "This line should output \"Adult\" for anyone aged 18 or over.\n\n| Line | Code |\n|---|---|\n| 1 | IF age > 18 THEN OUTPUT \"Adult\" ENDIF |\n\nWhat is wrong with it?",
+    "explanation": "The line runs without crashing but gives the wrong result for an 18-year-old, which makes it a logic error; it needs ≥ (greater than or equal to). Using < would reverse the meaning.",
+    "options": [
+      "A logic error: it should be age ≥ 18",
+      "A syntax error: a keyword is missing",
+      "A logic error: it should be age < 18",
+      "A syntax error: OUTPUT needs brackets"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T1-026",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 1,
+    "format": "matrix",
+    "skill": "Flowcharts",
+    "stem": "Match each flowchart step to the symbol used for it.",
+    "explanation": "A decision is a diamond with yes and no exits, input and output are parallelograms, a process is a rectangle, and the terminal (start or stop) is a rounded rectangle.",
+    "rows": [
+      "Is score > 50?",
+      "Ask the user for their name",
+      "total ← total + 1",
+      "Start"
+    ],
+    "columns": [
+      "Diamond",
+      "Parallelogram",
+      "Rectangle",
+      "Rounded rectangle"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-027",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Subroutines",
+    "stem": "What is the main difference between a function and a procedure?",
+    "explanation": "A function always returns a value to the code that called it, for example total ← square(4). A procedure carries out a task without returning a value. Either can take parameters.",
+    "options": [
+      "A procedure must take parameters",
+      "A function returns a value",
+      "A function can be called only once",
+      "A procedure cannot contain loops"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T1-028",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IDEs",
+    "stem": "Which IDE tool lets a programmer pause a program at a chosen line and look at the values of its variables?",
+    "explanation": "A breakpoint stops execution at a chosen line so variables can be inspected, which helps find logic errors. Syntax highlighting and auto-indentation only change how the code looks in the editor.",
+    "options": [
+      "Syntax highlighting",
+      "Auto-indentation",
+      "The code editor's line numbers",
+      "Breakpoints in the debugger"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-029",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Insertion sort",
+    "stem": "Insertion sort (on the OCR specification) builds a sorted part at the start of the list, taking the next item each time and moving it left past every larger item. It is putting 6, 3, 8, 2 into ascending order, and the 6 starts as the sorted part. What is the list after the 3 and then the 8 have each been inserted?",
+    "explanation": "Inserting 3 puts it before 6, giving 3, 6, 8, 2; inserting 8 leaves it where it is, since it is larger than 6. The 2 has not been inserted yet, so 2, 3, 6, 8 is the finished list, one step later.",
+    "options": [
+      "2, 3, 6, 8",
+      "3, 6, 8, 2",
+      "3, 6, 2, 8",
+      "6, 3, 8, 2"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T1-030",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "String handling",
+    "stem": "word.substring(3, 4) returns 4 characters starting at position 3, where the first character is position 0. What does this output?\n\n| Line | Code |\n|---|---|\n| 1 | word ← \"COMPUTER\" |\n| 2 | OUTPUT word.substring(3, 4) |",
+    "explanation": "C is position 0, O 1, M 2 and P 3, so 4 characters from position 3 are P, U, T, E. Starting the count at 1 instead of 0 gives MPUT.",
+    "options": [
+      "MPUT",
+      "PUT",
+      "PUTE",
+      "UTER"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T1-031",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Binary to denary",
+    "basics": "csBinary",
+    "stem": "Convert the 8-bit binary number 10110110 to denary.",
+    "explanation": "Add the place values under each 1: 128 + 32 + 16 + 4 + 2 = 182.",
+    "numeric": {
+      "answers": [
+        "182"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T1-032",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Fetch-execute cycle",
+    "stem": "Put the stages of the fetch-execute cycle in order.",
+    "explanation": "The program counter holds the next instruction's address, which goes to the MAR; memory sends the instruction back to the MDR. The control unit then decodes it and it is executed, and the cycle repeats.",
+    "options": [
+      "The address in the program counter is copied to the MAR",
+      "The instruction at that address is copied into the MDR and the program counter goes up by 1",
+      "The control unit decodes the instruction",
+      "The instruction is executed"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-033",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Types of network",
+    "stem": "What makes a network a WAN rather than a LAN?",
+    "explanation": "A wide area network spans a large geographical area and usually relies on infrastructure owned by others, such as telecoms companies. A LAN covers one site and can also be wireless or use switches.",
+    "options": [
+      "It uses wireless connections",
+      "It joins more than 10 computers in one building",
+      "It uses a switch",
+      "It covers a large area using others' links"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-034",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Legislation",
+    "stem": "A student guesses a classmate's password to read their messages. Which law does this break?",
+    "explanation": "Accessing a computer account without permission is an offence under the Computer Misuse Act, even just to look. The Data Protection Act covers how organisations handle personal data.",
+    "options": [
+      "The Copyright, Designs and Patents Act 1988",
+      "The Data Protection Act 2018",
+      "The Computer Misuse Act 1990",
+      "The Freedom of Information Act 2000"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T1-035",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Denary to binary",
+    "basics": "csBinary",
+    "stem": "What is the denary number 75 as an 8-bit binary number?",
+    "explanation": "75 = 64 + 8 + 2 + 1, so there are 1s under 64, 8, 2 and 1: 01001011. 01001101 is 77, and 11010010 is the right bits written backwards.",
+    "options": [
+      "01001101",
+      "01001011",
+      "01011001",
+      "11010010"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T1-036",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "CPU components",
+    "stem": "Which part of the CPU carries out calculations and logical comparisons?",
+    "explanation": "The arithmetic logic unit does arithmetic, such as addition, and logic, such as comparing two values. The control unit decodes instructions and coordinates the other parts.",
+    "options": [
+      "The control unit",
+      "The cache",
+      "The program counter",
+      "The ALU"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-037",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Topologies",
+    "stem": "In a star network, one computer's cable is cut. What happens?",
+    "explanation": "Each device has its own link to the central switch, so a single cable fault affects only that device. The star's weak point is the switch itself: if it fails, the whole network goes down.",
+    "options": [
+      "Only that computer loses its connection",
+      "The whole network stops working",
+      "The central switch fails",
+      "All the data stored on the network is lost"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T1-038",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Hexadecimal",
+    "basics": "csHex",
+    "stem": "Convert the hexadecimal number 3C to denary.",
+    "explanation": "3 sixteens is 48 and C is 12, so 48 + 12 = 60.",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T1-039",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CPU performance",
+    "stem": "Why does a larger cache usually improve a CPU's performance?",
+    "explanation": "Cache is small, very fast memory on or near the CPU, so instructions and data kept there avoid slower trips to RAM. It does not change the clock speed or the number of cores.",
+    "options": [
+      "Often-used data is fetched faster than from RAM",
+      "It raises the clock speed",
+      "It keeps files safe when the power is switched off",
+      "It adds more processor cores"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T1-040",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hexadecimal",
+    "basics": "csHex",
+    "stem": "What is the binary number 1101 0111 in hexadecimal?",
+    "explanation": "Convert each nibble on its own: 1101 is 13, which is D, and 0111 is 7, giving D7. 7D has the nibbles the wrong way round.",
+    "options": [
+      "7D",
+      "C7",
+      "E7",
+      "D7"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-041",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Protocols",
+    "stem": "Match each task to the protocol it uses.",
+    "explanation": "SMTP sends email, HTTPS is HTTP with encryption for web pages, FTP transfers files, and IMAP keeps mail on the server so every device sees the same inbox.",
+    "rows": [
+      "Sending an email to a mail server",
+      "Loading a web page with encryption",
+      "Uploading files to a server",
+      "Keeping emails synced across devices"
+    ],
+    "columns": [
+      "SMTP",
+      "HTTPS",
+      "FTP",
+      "IMAP"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-042",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data protection",
+    "stem": "A shop keeps former customers' details for 20 years \"just in case\". Which data protection principle does this break?",
+    "explanation": "The Data Protection Act 2018 says personal data must not be kept longer than it is needed for its purpose. Nothing suggests the data is wrong, misused or insecure.",
+    "options": [
+      "Keep data accurate",
+      "Use data only for its stated purpose",
+      "Keep data secure",
+      "Keep data no longer than necessary"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-043",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 1,
+    "format": "matrix",
+    "skill": "RAM and ROM",
+    "stem": "Decide whether each statement describes RAM or ROM.",
+    "explanation": "RAM is volatile working memory for whatever is currently running. ROM is non-volatile and read-only, which suits the boot instructions the computer needs at switch-on.",
+    "rows": [
+      "Its contents are lost when the power is off",
+      "It holds the start-up (boot) instructions",
+      "It holds the programs and data in use",
+      "Its contents cannot normally be changed"
+    ],
+    "columns": [
+      "RAM",
+      "ROM"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T1-044",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Binary addition",
+    "basics": "csBinaryAdd",
+    "stem": "Add the 8-bit binary numbers 01101011 and 00110110.",
+    "explanation": "107 + 54 = 161, which is 10100001 (128 + 32 + 1). Working right to left, the carries ripple through bits 1 to 7.",
+    "options": [
+      "10100001",
+      "10100011",
+      "10010001",
+      "01011101"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T1-045",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Virtual memory",
+    "stem": "When does a computer use virtual memory?",
+    "explanation": "When RAM runs out, part of secondary storage is used as extra memory, with data swapped in and out as needed. This keeps programs running but slows the computer, because storage is much slower than RAM.",
+    "options": [
+      "When the cache is full",
+      "When ROM is updated",
+      "When RAM is full",
+      "When secondary storage is full"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T1-046",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DNS",
+    "stem": "What does the Domain Name System (DNS) do?",
+    "explanation": "When you type a web address, a DNS server looks up the matching IP address so your device knows where to send its request. MAC addresses are set in the network hardware.",
+    "options": [
+      "Encrypts every web page sent over the internet",
+      "Gives each device a MAC address",
+      "Converts a domain name into an IP address",
+      "Blocks malware from websites"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T1-047",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Overflow",
+    "stem": "Adding two 8-bit binary numbers gives the 9-bit result 1 0010 1100. What has happened?",
+    "explanation": "The answer needs 9 bits but only 8 are available, so the extra bit is lost: this is overflow. The stored result would be wrong.",
+    "options": [
+      "An underflow error",
+      "An overflow error",
+      "A logic error",
+      "A syntax error"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T1-048",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Secondary storage",
+    "stem": "A sales rep's laptop is carried around all day and sometimes dropped. Which type of storage is the best choice for it?",
+    "explanation": "Solid state storage has no moving parts, so it survives knocks and is fast and light. A magnetic hard disk's spinning platters and moving head can be damaged if it is dropped.",
+    "options": [
+      "Magnetic hard disk",
+      "Optical disc",
+      "Magnetic tape",
+      "Solid state"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-049",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Environmental impact",
+    "stem": "Which two of these are environmental impacts of digital technology? Choose two.",
+    "explanation": "E-waste and the energy used by data centres affect the environment directly. Price comparison, cyberbullying and online banking are economic or social effects.",
+    "options": [
+      "People can compare prices online",
+      "Data centres use large amounts of electricity",
+      "Old devices in landfill can leak toxic materials",
+      "Online banking at any time",
+      "Cyberbullying on social media"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "GCSECS-T1-050",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Threats",
+    "stem": "An email that looks like it is from a bank asks you to confirm your password using a link. What kind of attack is this?",
+    "explanation": "Phishing uses fake messages to trick people into giving away details such as passwords. A brute-force attack guesses passwords automatically rather than asking for them.",
+    "options": [
+      "Brute force",
+      "Denial of service",
+      "SQL injection",
+      "Phishing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-051",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Binary shifts",
+    "basics": "csBinaryAdd",
+    "stem": "What is the result of a left shift of 2 places on 00010110?",
+    "explanation": "Each bit moves 2 places left and 0s fill the right: 00010110 becomes 01011000. That is 22 × 4 = 88, since each left place doubles the value. 00101100 is a shift of only 1 place.",
+    "options": [
+      "00000101",
+      "00101100",
+      "01011000",
+      "01011001"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T1-052",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Embedded systems",
+    "stem": "Which of these is an embedded system?",
+    "explanation": "An embedded system is a computer built into a larger device to do one dedicated job, like running a wash cycle. Laptops, desktops and servers are general-purpose computers.",
+    "options": [
+      "A washing machine's controller",
+      "A laptop",
+      "A desktop PC used for homework",
+      "A school's file server"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T1-053",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Image file size",
+    "basics": "csDataUnits",
+    "stem": "An image is 800 × 600 pixels with a colour depth of 8 bits. Ignoring metadata, what is its file size in kilobytes, using 1 KB = 1,000 bytes?",
+    "explanation": "800 × 600 = 480,000 pixels, each needing 8 bits (1 byte), so 480,000 bytes. 480,000 ÷ 1,000 = 480 KB.",
+    "numeric": {
+      "answers": [
+        "480"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T1-054",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prevention",
+    "stem": "Which measure best protects an online account against a brute-force password attack?",
+    "explanation": "A brute-force attack tries huge numbers of passwords, so locking the account after a few failures stops it. Backups help with recovery but do nothing to stop the guessing.",
+    "options": [
+      "Locking it after several failed logins",
+      "Encrypting the network",
+      "Using a star topology",
+      "Taking a full backup of the account every day"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T1-055",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Operating systems",
+    "stem": "Which two of these are functions of an operating system? Choose two.",
+    "explanation": "The operating system allocates memory to programs and talks to hardware such as printers through drivers. Word processing and photo editing are application software, and writing code happens in an editor or IDE.",
+    "options": [
+      "Editing photos",
+      "Writing source code",
+      "Memory management",
+      "Word processing",
+      "Managing peripherals with drivers"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "GCSECS-T1-056",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Characters",
+    "stem": "Why is Unicode used as well as ASCII?",
+    "explanation": "Standard ASCII uses 7 bits, giving 128 characters, enough for English but not for other scripts or emoji. Unicode uses more bits per character, so it can represent far more characters.",
+    "options": [
+      "ASCII has too few codes for every alphabet",
+      "Unicode uses fewer bits to store each character",
+      "ASCII cannot store digits",
+      "Unicode stores only numbers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T1-057",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Software licensing",
+    "stem": "Which statement describes open-source software?",
+    "explanation": "Open-source licences publish the source code and let people modify and share it, usually for free. Hidden source code and paid licences are typical of proprietary software.",
+    "options": [
+      "Its source code is kept secret",
+      "Users can view and change its source code",
+      "It always costs money",
+      "It cannot legally be copied, shared or given away"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T1-058",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 3,
+    "format": "order",
+    "skill": "Packet switching",
+    "stem": "Put the stages of sending a file across the internet by packet switching in order.",
+    "explanation": "Packets are numbered so they can travel independently and still be reassembled. Only when every packet is present can the file be rebuilt in the right order.",
+    "options": [
+      "The file is split into numbered packets, each with a destination address",
+      "Routers forward each packet by the best route available, so packets may travel different ways",
+      "The receiver checks all the packets have arrived and asks for any missing ones again",
+      "The packets are put back in order to rebuild the file"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T1-059",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CPU performance",
+    "stem": "A CPU has a clock speed of 3.2 GHz. What does this mean?",
+    "explanation": "Giga means billion and hertz means cycles per second, so 3.2 GHz is about 3.2 billion fetch-execute cycles each second. Cores and cache size are separate measures.",
+    "options": [
+      "It has 3.2 processor cores",
+      "It has 3.2 GB of cache",
+      "About 3.2 billion cycles each second",
+      "It moves 3.2 billion bytes each second"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T1-060",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Compression",
+    "stem": "Classify each description as lossy or lossless compression.",
+    "explanation": "Lossy compression discards data, so the original cannot be rebuilt, which is acceptable for music and photos. Lossless methods such as RLE rebuild the original exactly, which program and text files need.",
+    "rows": [
+      "Permanently removes detail the user is unlikely to notice",
+      "Run-length encoding (RLE)",
+      "Typical for MP3 music files",
+      "Needed for a program or text file"
+    ],
+    "columns": [
+      "Lossy",
+      "Lossless"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T2-001",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Constants",
+    "stem": "A program uses VAT_RATE ← 0.2 throughout. Why should VAT_RATE be a constant rather than a variable?",
+    "explanation": "A constant's value is fixed while the program runs, so no line can change it by accident, and if the rate changes it is updated in one place. Letting the user type a value would need a variable.",
+    "options": [
+      "It always uses less memory",
+      "The user can type in a new rate each time the program runs",
+      "It makes the code run in a loop",
+      "It cannot be changed by mistake as the program runs"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-002",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Abstraction",
+    "stem": "A weather app shows a single icon saying \"rain likely\" instead of the readings from every sensor it used. Which technique does this show?",
+    "explanation": "Hiding detail the user does not need and showing only what matters is abstraction. Decomposition would split the forecasting problem into smaller tasks.",
+    "options": [
+      "Decomposition",
+      "Iteration",
+      "Abstraction",
+      "Validation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-003",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "OR gate",
+    "basics": "csTruthTables",
+    "stem": "Which row of the truth table for A OR B gives 0?",
+    "explanation": "OR gives 1 if at least one input is 1, so the only 0 is when both inputs are 0. AND is the gate whose only 1 is when both inputs are 1.",
+    "options": [
+      "A = 0, B = 0",
+      "A = 1, B = 0",
+      "A = 0, B = 1",
+      "A = 1, B = 1"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T2-004",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Iteration",
+    "stem": "Which of these is a count-controlled loop?",
+    "explanation": "A FOR loop repeats a set number of times. WHILE and REPEAT ... UNTIL loops are condition-controlled: they run until a condition changes, however many times that takes.",
+    "options": [
+      "FOR i ← 1 TO 10",
+      "WHILE answer ≠ \"yes\"",
+      "REPEAT ... UNTIL score > 100",
+      "WHILE lives > 0"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T2-005",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Algorithms",
+    "stem": "What is an algorithm?",
+    "explanation": "An algorithm is the set of steps, independent of any language. A program is one way of writing an algorithm so that a computer can run it.",
+    "options": [
+      "A program written in Python",
+      "A diagram of a computer's hardware",
+      "A table of test data",
+      "A sequence of steps that solves a problem"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-006",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Casting",
+    "stem": "x and y hold strings. What does this program output?\n\n| Line | Code |\n|---|---|\n| 1 | x ← \"5\" |\n| 2 | y ← \"3\" |\n| 3 | OUTPUT x + y |",
+    "explanation": "Using + on two strings joins them (concatenation), giving \"53\". To get 8 the strings would first need casting to integers, for example STR_TO_INT(x) + STR_TO_INT(y).",
+    "options": [
+      "8",
+      "53",
+      "15",
+      "2"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T2-007",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "cloze",
+    "skill": "Boolean expressions",
+    "basics": "csTruthTables",
+    "stem": "With A = 1 and B = 1, A AND B is [[1]], so NOT (A AND B) is [[2]].",
+    "explanation": "Both inputs are 1, so A AND B is 1; NOT flips it to 0. Working out the bracket before applying NOT is the key step.",
+    "blanks": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "correct": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T2-008",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Linear search",
+    "stem": "Which statement about linear search is true?",
+    "explanation": "A linear search checks each item in turn, so the order of the list does not matter. Halving the list and needing sorted data describe binary search, which is usually faster on large lists.",
+    "options": [
+      "It works on an unsorted list",
+      "It always beats binary search",
+      "It needs the list sorted first",
+      "It halves the list at each step"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T2-009",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Trace tables",
+    "basics": "csTraceTables",
+    "stem": "What does this program output?\n\n| Line | Code |\n|---|---|\n| 1 | x ← 3 |\n| 2 | y ← 1 |\n| 3 | WHILE x > 0 |\n| 4 | y ← y * 2 |\n| 5 | x ← x - 1 |\n| 6 | ENDWHILE |\n| 7 | OUTPUT y |",
+    "explanation": "The loop runs three times (x = 3, 2, 1) and doubles y each time: 2, 4, 8. When x reaches 0 the condition is false.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T2-010",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boolean operators",
+    "stem": "What does this program output?\n\n| Line | Code |\n|---|---|\n| 1 | age ← 11 |\n| 2 | hasTicket ← True |\n| 3 | IF age ≥ 12 AND hasTicket = True THEN |\n| 4 | OUTPUT \"Enter\" |\n| 5 | ELSE |\n| 6 | OUTPUT \"Refused\" |\n| 7 | ENDIF |",
+    "explanation": "AND needs both conditions to be true. hasTicket is true but 11 is not 12 or more, so the condition is false and the ELSE branch outputs \"Refused\".",
+    "options": [
+      "Enter",
+      "Enter, then Refused",
+      "Nothing",
+      "Refused"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-011",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Binary search",
+    "stem": "A binary search is used on a sorted list of 31 items. What is the largest number of items it could compare with the target?",
+    "explanation": "Each comparison halves what is left: 31, then 15, 7, 3 and 1, so at most 5 comparisons. A linear search could need all 31.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T2-012",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Logic from a description",
+    "basics": "csTruthTables",
+    "stem": "A heater H comes on when the room is NOT warm (W) and the room is occupied (O). Which expression describes H?",
+    "explanation": "Both conditions are needed (AND), and only the warmth is reversed, so NOT applies to W alone. NOT (W AND O) would switch the heater on in an empty, cold room.",
+    "options": [
+      "H = NOT (W AND O)",
+      "H = W AND O",
+      "H = (NOT W) AND O",
+      "H = (NOT W) OR O"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-013",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Trace tables",
+    "basics": "csTraceTables",
+    "stem": "What does this program output?\n\n| Line | Code |\n|---|---|\n| 1 | nums ← [4, 8, 15, 16] |\n| 2 | total ← 0 |\n| 3 | FOR i ← 0 TO 3 |\n| 4 | IF nums[i] MOD 2 = 0 THEN |\n| 5 | total ← total + nums[i] |\n| 6 | ENDIF |\n| 7 | ENDFOR |\n| 8 | OUTPUT total |",
+    "explanation": "Only even numbers (remainder 0 when divided by 2) are added: 4 + 8 + 16 = 28. 15 is odd, so it is skipped; adding everything would give 43.",
+    "numeric": {
+      "answers": [
+        "28"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T2-014",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Binary search",
+    "stem": "A binary search looks for \"Cedar\" in this sorted list, with positions 0 to 9. The middle position is (low + high) DIV 2.\n\n| Position | Value |\n|---|---|\n| 0 | Ash |\n| 1 | Beech |\n| 2 | Cedar |\n| 3 | Elm |\n| 4 | Fir |\n| 5 | Hazel |\n| 6 | Larch |\n| 7 | Oak |\n| 8 | Pine |\n| 9 | Yew |\n\nWhich values are compared with \"Cedar\", in order?",
+    "explanation": "mid = (0 + 9) DIV 2 = 4 is Fir, which comes after Cedar, so high = 3. mid = (0 + 3) DIV 2 = 1 is Beech, which comes before Cedar, so low = 2. mid = (2 + 3) DIV 2 = 2 is Cedar, found. Starting at Ash is a linear search.",
+    "options": [
+      "Ash, Beech, Cedar",
+      "Fir, Elm, Cedar",
+      "Fir, Beech, Cedar",
+      "Fir, Cedar"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-015",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Records",
+    "stem": "Which statement describes a record?",
+    "explanation": "A record such as a pupil record can hold a name (string), an age (integer) and a paid flag (Boolean) together. An array, by contrast, usually holds items of one data type.",
+    "options": [
+      "It holds a list of values that must all share one data type",
+      "It groups fields of different data types about one item",
+      "It is always two-dimensional",
+      "It can store only numbers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T2-016",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Truth tables",
+    "basics": "csTruthTables",
+    "stem": "Q = A OR (NOT B). In how many of the four rows of the truth table is Q = 1?",
+    "explanation": "Q is 1 whenever A is 1 (2 rows) and also when A = 0 and B = 0, since NOT B is then 1. Only A = 0, B = 1 gives 0, so 3 rows give 1.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T2-017",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Bubble sort",
+    "stem": "A bubble sort stops as soon as a pass makes no swaps. How many passes does it make on the list 1, 2, 3, 5, 4?",
+    "explanation": "Pass 1 swaps 5 and 4, so the list is sorted, but the algorithm only knows that after pass 2 makes no swaps. So it makes 2 passes.",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T2-018",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Local and global variables",
+    "stem": "A variable is declared inside a subroutine. What is it called, and where can it be used?",
+    "explanation": "Local variables exist only while their subroutine runs and cannot be seen from outside it. Global variables are declared in the main program and can be used anywhere, which makes bugs harder to track down.",
+    "options": [
+      "A global variable, anywhere in the program",
+      "A constant, only in the main program",
+      "A local variable, only inside that subroutine",
+      "A parameter, usable only when the program first starts"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-019",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Machine code",
+    "stem": "Which kind of language can a CPU execute directly, with no translation?",
+    "explanation": "The CPU decodes and executes binary machine code instructions. Assembly language is close to it but still needs an assembler, and pseudocode cannot be run at all.",
+    "options": [
+      "Machine code",
+      "Assembly language",
+      "A high-level language",
+      "Pseudocode"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T2-020",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Merge sort",
+    "stem": "A merge sort splits 7, 3, 9, 4 into single items and then merges them. Which two lists are merged in the final merge?",
+    "explanation": "The halves 7, 3 and 9, 4 are each split into single items and merged back in order, giving 3, 7 and 4, 9. Merging those two sorted lists gives 3, 4, 7, 9.",
+    "options": [
+      "3, 7 and 4, 9",
+      "3, 4 and 7, 9",
+      "7, 3 and 9, 4",
+      "3, 7, 9 and 4"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T2-021",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Authentication",
+    "stem": "Put the steps of a simple login check in order.",
+    "explanation": "The program needs the input first, then the stored record to compare it against, then the comparison, and only then the decision. Authentication checks that a user is who they claim to be.",
+    "options": [
+      "Ask the user for their username and password",
+      "Look up the stored password for that username",
+      "Compare the typed password with the stored one",
+      "Grant access if they match, otherwise show an error"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-022",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Validation",
+    "stem": "Match each rule to its type of validation check.",
+    "explanation": "Presence checks that data was entered, range checks limits on a value, format checks a pattern such as an @ sign, and length checks the number of characters.",
+    "rows": [
+      "A date of birth must be filled in",
+      "A quantity must be between 1 and 10",
+      "An email address must contain @",
+      "A postcode can be no more than 8 characters"
+    ],
+    "columns": [
+      "Presence",
+      "Range",
+      "Format",
+      "Length"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-023",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Binary search",
+    "stem": "Put the steps of a binary search in order.",
+    "explanation": "Binary search repeatedly checks the middle item and throws away the half that cannot hold the target. It stops when it finds the target or the list is empty, which means the target is not there.",
+    "options": [
+      "Find the middle item of the remaining list",
+      "Compare it with the target and stop if they match",
+      "If the target is smaller, discard the middle item and everything after it; otherwise discard it and everything before it",
+      "Repeat until the target is found or no items are left"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-024",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Assembly language",
+    "stem": "Which statement about assembly language is true?",
+    "explanation": "Assembly uses short mnemonics, each matching one machine code instruction for a particular processor, so it is not portable. It is translated by an assembler.",
+    "options": [
+      "It runs unchanged on every type of CPU",
+      "It uses mnemonics such as LDA and ADD",
+      "It is translated by a compiler",
+      "It is written as English sentences"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T2-025",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Maintainability",
+    "stem": "Which two of these make a program easier for another programmer to maintain? Choose two.",
+    "explanation": "Clear names and comments help a reader understand what the code does. One long block, single-letter names and no indentation all make code harder to follow and to fix.",
+    "options": [
+      "All the code in one long block",
+      "Comments explaining each section",
+      "No indentation at all",
+      "Single-letter names for every variable",
+      "Meaningful variable names"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "GCSECS-T2-026",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Efficiency",
+    "stem": "A sorted list grows from 1,000 to 2,000 items. Roughly how much does the worst-case number of comparisons for a binary search go up?",
+    "explanation": "Doubling the list adds just one halving step, so the worst case rises from about 10 to about 11 comparisons. A linear search's worst case would double, from 1,000 to 2,000.",
+    "options": [
+      "By about 1,000",
+      "It doubles",
+      "By about 1",
+      "By about 10"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-027",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Random numbers",
+    "stem": "num ← RANDOM_INT(1, 6) gives a random whole number between its two arguments, inclusive. Which values can num take?",
+    "explanation": "Inclusive means both ends are possible, so num is one of 1, 2, 3, 4, 5 or 6, like a dice roll. RANDOM_INT only gives whole numbers.",
+    "options": [
+      "Any whole number from 1 to 5",
+      "Any whole number from 0 to 6",
+      "Any whole number from 1 to 6",
+      "Any real number from 1 to 6"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-028",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "IDEs",
+    "stem": "Which two IDE features help a programmer spot syntax errors before the program is run? Choose two.",
+    "explanation": "Error diagnostics flag mistakes such as a missing bracket, and syntax highlighting makes a mistyped keyword stand out because it does not change colour. Breakpoints, stepping and the run-time environment are used while the program runs.",
+    "options": [
+      "Syntax highlighting of keywords",
+      "Breakpoints",
+      "Stepping through the code",
+      "A run-time environment",
+      "Error diagnostics that mark mistakes"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "GCSECS-T2-029",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 1,
+    "format": "matrix",
+    "skill": "Input, process, output",
+    "stem": "A program asks for a weight in kilograms, checks it is above 0, multiplies it by 2.2 and shows the weight in pounds. Classify each part.",
+    "explanation": "Data entering the program is input, anything done to it (checking and calculating) is processing, and what the user sees is output.",
+    "rows": [
+      "The weight typed in",
+      "Checking it is above 0",
+      "Multiplying by 2.2",
+      "Showing the result"
+    ],
+    "columns": [
+      "Input",
+      "Process",
+      "Output"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-030",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 3,
+    "format": "highlight",
+    "skill": "Errors",
+    "basics": "csTraceTables",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | {{count ← 0}} |\n| 2 | {{FOR i ← 0 TO 4}} |\n| 3 | {{IF data[i] > 10 THEN}} |\n| 4 | {{count ← 1}} |\n| 5 | {{ENDIF}} |\n| 6 | {{ENDFOR}} |\n| 7 | {{OUTPUT count}} |",
+    "stem": "This program should count how many of the 5 values in data are greater than 10, but it always outputs 0 or 1. Highlight the line that causes the problem.",
+    "explanation": "Line 4 sets count to 1 every time instead of adding 1, so the count never goes past 1. It should be count ← count + 1. Line 1 is correct: the count must start at 0.",
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-031",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Binary to denary",
+    "basics": "csBinary",
+    "stem": "Convert the 8-bit binary number 01011101 to denary.",
+    "explanation": "64 + 16 + 8 + 4 + 1 = 93.",
+    "numeric": {
+      "answers": [
+        "93"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T2-032",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Von Neumann architecture",
+    "stem": "What is the key feature of Von Neumann architecture?",
+    "explanation": "In a Von Neumann computer, program instructions and data are stored together in the same main memory and travel to the CPU the same way. Separate memories for each is a different design.",
+    "options": [
+      "Instructions and data use separate memories",
+      "The CPU has no registers",
+      "Programs run only from ROM",
+      "Instructions and data share one memory"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-033",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Network hardware",
+    "stem": "Match each description to the network hardware.",
+    "explanation": "A switch directs data within a LAN using MAC addresses, a router links different networks using IP addresses, a wireless access point adds Wi-Fi, and a network interface card connects one device.",
+    "rows": [
+      "Sends data only to the device on the LAN it is for",
+      "Sends packets between networks, such as a LAN and the internet",
+      "Lets wireless devices join a wired network",
+      "Lets one device connect to a network"
+    ],
+    "columns": [
+      "Switch",
+      "Router",
+      "Wireless access point",
+      "NIC"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-034",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Legislation",
+    "stem": "Someone copies a commercial video game and shares it free online. Which law does this break?",
+    "explanation": "Software, music, films and other creative works are protected by copyright, so copying and sharing them without permission breaks the Copyright, Designs and Patents Act. No computer was accessed without permission.",
+    "options": [
+      "The Computer Misuse Act 1990",
+      "The Data Protection Act 2018",
+      "The Copyright, Designs and Patents Act 1988",
+      "The Freedom of Information Act 2000"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-035",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hexadecimal",
+    "basics": "csHex",
+    "stem": "What is the denary number 200 in hexadecimal?",
+    "explanation": "200 ÷ 16 = 12 remainder 8. 12 is C, so 200 is C8 (12 × 16 + 8 = 192 + 8). 8C is the digits reversed, which is 140.",
+    "options": [
+      "8C",
+      "B8",
+      "CA",
+      "C8"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-036",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Registers",
+    "stem": "Match each description to its register.",
+    "explanation": "The program counter points to the next instruction, the memory address register holds the address in use, the memory data register holds the data travelling to or from memory, and the accumulator stores ALU results.",
+    "rows": [
+      "Holds the address of the next instruction",
+      "Holds the address to read from or write to",
+      "Holds data just fetched or about to be stored",
+      "Holds the result of a calculation"
+    ],
+    "columns": [
+      "PC",
+      "MAR",
+      "MDR",
+      "Accumulator"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-037",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wired and wireless",
+    "stem": "Which is an advantage of a wired connection over a wireless one?",
+    "explanation": "Cables suffer less interference and usually give higher, steadier speeds. Freedom to move and no cabling are the advantages of wireless.",
+    "options": [
+      "Devices can be moved around freely",
+      "No cables are needed",
+      "It is cheaper to fit in an old building",
+      "It is usually faster and more reliable"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-038",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hexadecimal",
+    "basics": "csHex",
+    "stem": "What is the hexadecimal number 9F in binary?",
+    "explanation": "Each hex digit becomes one nibble: 9 is 1001 and F (15) is 1111. 1111 1001 is the nibbles reversed.",
+    "options": [
+      "1001 1111",
+      "1111 1001",
+      "1001 1110",
+      "1010 1111"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T2-039",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "CPU performance",
+    "stem": "Why might a program not run four times faster on a quad-core CPU than on a single-core one?",
+    "explanation": "Extra cores only help if work can be divided and done in parallel. Many programs, or parts of them, must run step by step, and coordinating the cores also takes time.",
+    "options": [
+      "The four cores must take turns sharing one clock",
+      "It may not split into tasks that run at once",
+      "Quad-core CPUs have less cache",
+      "Only one core can ever use RAM"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T2-040",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hexadecimal",
+    "basics": "csHex",
+    "stem": "Why do programmers often use hexadecimal instead of binary?",
+    "explanation": "One hex digit stands for four bits, so values are shorter and mistakes are less likely. The computer still stores and processes everything in binary.",
+    "options": [
+      "Computers store data in hexadecimal",
+      "It is shorter and easier to read",
+      "It uses less memory",
+      "It makes calculations faster"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T2-041",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Network models",
+    "stem": "Why would a school choose a client-server network rather than a peer-to-peer network?",
+    "explanation": "A server lets the network manager control user accounts, access rights and backups from one place. Its weakness is the reverse of the last option: if the server fails, clients lose access to its services.",
+    "options": [
+      "Security and backups are managed centrally",
+      "It needs no server",
+      "It is the cheapest option",
+      "It keeps working normally even if the server fails"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T2-042",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ethical impact",
+    "stem": "What is meant by the digital divide?",
+    "explanation": "Some people lack devices, fast internet or the skills to use them, often because of cost, age or where they live, which can shut them out of services, learning and jobs.",
+    "options": [
+      "The split between a computer's hardware and its software",
+      "The difference between binary and denary",
+      "The distance between two servers",
+      "The gap in access to technology between people"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-043",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "CPU components",
+    "stem": "What does the control unit do?",
+    "explanation": "The control unit decodes each instruction and sends control signals to the ALU, memory and other parts. Arithmetic is the ALU's job, and frequently used data sits in cache.",
+    "options": [
+      "Carries out arithmetic",
+      "Stores data permanently",
+      "Decodes instructions and coordinates the CPU",
+      "Holds frequently used data close to the processor"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-044",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Binary addition",
+    "basics": "csBinaryAdd",
+    "stem": "Add the 8-bit binary numbers 01011010 and 00101111.",
+    "explanation": "90 + 47 = 137, which is 10001001 (128 + 8 + 1). Check by converting both numbers to denary first.",
+    "options": [
+      "10001011",
+      "01111001",
+      "10001001",
+      "10011001"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-045",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Secondary storage",
+    "stem": "Why do computers need secondary storage?",
+    "explanation": "RAM is volatile, so files and programs must be kept on non-volatile secondary storage between uses. The current instruction sits in CPU registers.",
+    "options": [
+      "To speed up the CPU",
+      "To hold the instruction currently being executed",
+      "To keep the processor cool",
+      "To keep data when the power is off"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-046",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Addressing",
+    "stem": "Which statement about IP and MAC addresses is true?",
+    "explanation": "A MAC address is assigned to the network interface when it is made and identifies the device. An IP address identifies it on a network and can change, for example when a phone joins a different Wi-Fi network.",
+    "options": [
+      "A MAC address changes every time it joins a new network",
+      "A device's IP address can change; its MAC stays",
+      "An IP address is fixed in the hardware",
+      "IP and MAC addresses are the same"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T2-047",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Binary shifts",
+    "basics": "csBinaryAdd",
+    "stem": "01101000 is shifted 3 places to the right. What is the result, and what does it do to the number?",
+    "explanation": "Each place right halves the value, so 3 places divide by 2 × 2 × 2 = 8: 104 becomes 13, which is 00001101. Shifting 2 places would give 00011010 and divide by 4.",
+    "options": [
+      "01000000, multiplying it by 8",
+      "00001101, dividing it by 3",
+      "00011010, dividing it by 4",
+      "00001101, dividing it by 8"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-048",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Secondary storage",
+    "stem": "Match each description to the type of storage.",
+    "explanation": "Solid state uses flash memory, optical discs such as Blu-ray are read by a laser, and magnetic hard disks use spinning platters. Only magnetic storage can be wiped or damaged by a strong magnet.",
+    "rows": [
+      "Flash memory with no moving parts",
+      "Read and written using a laser",
+      "Spinning platters and a moving head",
+      "Can be damaged by a strong magnet"
+    ],
+    "columns": [
+      "Magnetic",
+      "Optical",
+      "Solid state"
+    ],
+    "correct": [
+      2,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T2-049",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Legislation",
+    "stem": "Which law does each action most directly break?",
+    "explanation": "Passing on personal data without a lawful basis breaks data protection law, and using someone's photo without permission breaks copyright. Planting malware and unauthorised access to an account are both Computer Misuse Act offences.",
+    "rows": [
+      "Selling customers' emails to another firm without consent",
+      "Using a photo from a website in your own advert without permission",
+      "Spreading ransomware across a school network",
+      "Logging into a colleague's account to read their files"
+    ],
+    "columns": [
+      "Data Protection Act 2018",
+      "Computer Misuse Act 1990",
+      "Copyright, Designs and Patents Act 1988"
+    ],
+    "correct": [
+      0,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T2-050",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Layers",
+    "stem": "Why are network protocols organised into layers?",
+    "explanation": "Each layer has its own job and only passes data to the layers next to it, so one layer's protocol can be improved or replaced without rewriting the rest. This also lets different makers build parts that work together.",
+    "options": [
+      "Layers make data travel faster",
+      "Layers encrypt all the data",
+      "Each layer can change without affecting others",
+      "Layers reduce all the different protocols to a single one"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-051",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Binary to denary",
+    "basics": "csBinary",
+    "stem": "What is the largest denary number that can be stored in 6 bits?",
+    "explanation": "Six 1s give 32 + 16 + 8 + 4 + 2 + 1 = 63, which is 2 to the power 6, minus 1. The 64 combinations run from 0 to 63.",
+    "numeric": {
+      "answers": [
+        "63"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T2-052",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Utility software",
+    "stem": "Match each task to the utility software that does it.",
+    "explanation": "Defragmentation puts the parts of each file back together so the read head moves less, compression reduces file size, and encryption makes data unreadable without the key.",
+    "rows": [
+      "Rearranges a file's scattered pieces on a hard disk",
+      "Makes a file smaller to save space",
+      "Scrambles data so only key holders can read it"
+    ],
+    "columns": [
+      "Defragmentation",
+      "Compression",
+      "Encryption"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-053",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Images",
+    "basics": "csDataUnits",
+    "stem": "An image uses 16 different colours. What is the smallest number of bits per pixel (colour depth) it needs?",
+    "explanation": "n bits give 2 to the power n colours, and 4 bits give 16. 3 bits would give only 8 colours.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T2-054",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Threats",
+    "stem": "A hacker types ' OR 1=1 -- into a website's login box so that its database query returns every user. What is this attack called?",
+    "explanation": "SQL injection puts database code into an input box that is not properly validated, changing the query the website runs. Validating and sanitising input prevents it.",
+    "options": [
+      "Phishing",
+      "Denial of service",
+      "Shoulder surfing",
+      "SQL injection"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-055",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Utility software",
+    "stem": "Why is a solid state drive not defragmented?",
+    "explanation": "Fragmentation slows a magnetic disk because its head must move between pieces, but an SSD reads any location equally fast. Defragmenting would only add unnecessary writes, which shorten an SSD's life.",
+    "options": [
+      "It cannot store fragmented files",
+      "Defragmenting an SSD would delete all of the files on it",
+      "There is no read head to slow down, and writes wear it",
+      "It has too little capacity"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-T2-056",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Sound file size",
+    "basics": "csDataUnits",
+    "stem": "A mono sound clip lasts 10 seconds, with a sample rate of 44,100 samples per second and a bit depth of 16 bits. Ignoring metadata, what is the file size in bytes?",
+    "explanation": "Size in bits = 44,100 × 16 × 10 = 7,056,000 bits. Dividing by 8 gives 882,000 bytes.",
+    "numeric": {
+      "answers": [
+        "882000"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-T2-057",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ethical impact",
+    "stem": "A company trains software to sort job applications using its past hiring data, in which most people hired were men. What is the main ethical concern?",
+    "explanation": "Software trained on biased decisions tends to repeat them, so applicants could be judged unfairly. Checking the training data and testing the results for bias reduces the risk.",
+    "options": [
+      "It will be slower than human staff",
+      "It may learn the bias and unfairly reject women",
+      "It will use far too much electricity to run every day",
+      "It breaks copyright law"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-T2-058",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prevention",
+    "stem": "What is penetration testing?",
+    "explanation": "An organisation hires or uses testers to attack its own systems, with permission, so weaknesses are found and fixed before criminals exploit them.",
+    "options": [
+      "Authorised testers try to break into a system",
+      "Scanning files for viruses",
+      "Checking that the nightly backups can be restored",
+      "Setting a password policy"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-T2-059",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Operating systems",
+    "stem": "Which operating system function provides the windows, icons and menus that a user clicks?",
+    "explanation": "The user interface, here a graphical one, is how people interact with the computer. File management organises files and folders behind the scenes.",
+    "options": [
+      "File management",
+      "Memory management",
+      "Processor scheduling",
+      "The user interface"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-T2-060",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 1,
+    "format": "order",
+    "skill": "Units",
+    "basics": "csDataUnits",
+    "stem": "Put these units in order, from smallest to largest.",
+    "explanation": "A nibble is 4 bits and a byte is 8 bits. Each of kilo, mega and giga is 1,000 times the one before (or 1,024 with kibi, mebi and gibi).",
+    "options": [
+      "Bit",
+      "Nibble",
+      "Byte",
+      "Kilobyte",
+      "Megabyte",
+      "Gigabyte"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "GCSECS-D-001",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "NOT gate",
+    "basics": "csTruthTables",
+    "stem": "What does a NOT gate do?",
+    "explanation": "NOT has a single input and inverts it: 0 becomes 1 and 1 becomes 0. The other descriptions are AND and OR, which take two inputs.",
+    "options": [
+      "Outputs 1 only if both inputs are 1",
+      "Always outputs 0",
+      "Outputs 1 if either input is 1",
+      "Outputs the opposite of its one input"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-002",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decomposition",
+    "stem": "Which of these is an example of decomposition?",
+    "explanation": "Decomposition breaks a big problem into smaller parts that can be solved one at a time. Showing the player as a simple shape is abstraction.",
+    "options": [
+      "Splitting a game into movement, scoring and levels",
+      "Showing each player as a simple shape on the screen",
+      "Repeating a loop 10 times",
+      "Converting a number to binary"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-003",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SQL",
+    "stem": "A database table called Pupils holds this data.\n\n| PupilID | Name | Form | Age |\n|---|---|---|---|\n| 1 | Asha | 10B | 15 |\n| 2 | Ben | 10A | 14 |\n| 3 | Chloe | 10B | 14 |\n| 4 | Dan | 10C | 15 |\n\nWhat does this query return?\n\nSELECT Name FROM Pupils WHERE Form = '10B'",
+    "explanation": "WHERE keeps only rows whose Form is 10B, which are Asha and Chloe, and SELECT Name returns just that field. Asha and Dan are the pupils aged 15.",
+    "options": [
+      "Asha and Chloe",
+      "Ben and Dan",
+      "Every pupil's name",
+      "Asha and Dan"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-004",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boolean expressions",
+    "basics": "csTruthTables",
+    "stem": "A = 0, B = 1 and C = 1. What is (NOT A) AND (B OR C)?",
+    "explanation": "NOT A is 1, and B OR C is 1, so 1 AND 1 is 1. A common slip is to apply AND to A itself and get 0.",
+    "options": [
+      "1",
+      "0"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "GCSECS-D-005",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bubble sort",
+    "stem": "A bubble sort puts 4, 9, 2, 6 into descending order (largest first). What is the list after the first pass?",
+    "explanation": "For descending order a pair is swapped when the first is smaller: 4 and 9 swap, 4 and 2 stay, 2 and 6 swap, giving 9, 4, 6, 2. The smallest value has moved to the end, but the list is not fully sorted yet.",
+    "options": [
+      "9, 6, 4, 2",
+      "9, 4, 6, 2",
+      "9, 4, 2, 6",
+      "4, 9, 6, 2"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-006",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SQL",
+    "stem": "Using the Pupils table (fields PupilID, Name, Form, Age), which query lists the names of all pupils aged 15 in alphabetical order?",
+    "explanation": "SELECT names the field, FROM names the table, WHERE filters the rows and ORDER BY ... ASC sorts A to Z. The second option swaps the field and table names.",
+    "options": [
+      "SELECT Pupils FROM Name WHERE Age = 15 ORDER BY Name ASC",
+      "SELECT Name FROM Pupils WHERE Age = 15 ORDER BY Name ASC",
+      "SELECT Name FROM Pupils ORDER BY Age = 15 ASC",
+      "SELECT Name FROM Pupils WHERE Name = 15 ORDER BY Age ASC"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-007",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Logic diagrams",
+    "basics": "csTruthTables",
+    "stem": "Inputs A and B go into an AND gate. Its output and input C go into an OR gate, which gives output Q. Which expression describes Q?",
+    "explanation": "The AND gate combines A and B first, so A AND B goes in brackets; that result is then ORed with C. A AND (B OR C) would mean B and C met first.",
+    "options": [
+      "Q = A AND (B OR C)",
+      "Q = (A AND B) OR C",
+      "Q = (A OR B) AND C",
+      "Q = NOT (A AND B) OR C"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-008",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Merge sort",
+    "stem": "Merge sort merges the sorted lists 2, 5, 8 and 3, 4, 9. What is the result?",
+    "explanation": "Each step takes the smaller of the two front items: 2, then 3, 4, 5, 8, and finally 9. Taking items in pairs, one from each list, gives 2, 3, 5, 4, 8, 9, which is not sorted.",
+    "options": [
+      "2, 5, 8, 3, 4, 9",
+      "2, 3, 5, 4, 8, 9",
+      "2, 3, 4, 5, 8, 9",
+      "3, 4, 9, 2, 5, 8"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-009",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Truth tables",
+    "basics": "csTruthTables",
+    "stem": "Complete the truth table for Q = A AND (NOT B).",
+    "explanation": "Q needs A to be 1 and B to be 0 (so that NOT B is 1). Only the row A = 1, B = 0 does that.",
+    "rows": [
+      "A = 0, B = 0",
+      "A = 0, B = 1",
+      "A = 1, B = 0",
+      "A = 1, B = 1"
+    ],
+    "columns": [
+      "Q = 0",
+      "Q = 1"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-010",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Trace tables",
+    "basics": "csTraceTables",
+    "stem": "What does this program output?\n\n| Line | Code |\n|---|---|\n| 1 | n ← 1 |\n| 2 | REPEAT |\n| 3 | n ← n + 3 |\n| 4 | UNTIL n > 10 |\n| 5 | OUTPUT n |",
+    "explanation": "n goes 4, 7, 10, 13. At 10 the condition n > 10 is still false, so the loop runs once more and stops at 13.",
+    "numeric": {
+      "answers": [
+        "13"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-D-011",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Logic from a description",
+    "basics": "csTruthTables",
+    "stem": "A car's warning light W comes on when the engine is running (E) and either a door is open (D) or a seatbelt is unfastened (S). Which expression describes W?",
+    "explanation": "The engine must be running in every case, so E is ANDed with the bracket, and either problem is enough, so D and S are joined by OR. (E AND D) OR S would light up with the engine off.",
+    "options": [
+      "W = (E AND D) OR S",
+      "W = E OR D OR S",
+      "W = E AND D AND S",
+      "W = E AND (D OR S)"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-012",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Linear search",
+    "stem": "When does a linear search make the fewest comparisons?",
+    "explanation": "A linear search starts at the first item, so if that is the target it stops after one comparison. A missing target is the worst case, as every item is checked.",
+    "options": [
+      "When the target is last",
+      "When the target is in the middle",
+      "When the target is missing",
+      "When the target is first"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-013",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Subroutines",
+    "stem": "What does this program output?\n\n| Line | Code |\n|---|---|\n| 1 | FUNCTION area(w, h) |\n| 2 | RETURN w * h |\n| 3 | ENDFUNCTION |\n| 4 | OUTPUT area(3, 4) + area(2, 5) |",
+    "explanation": "area(3, 4) returns 12 and area(2, 5) returns 10, and the two returned values are added: 12 + 10 = 22.",
+    "numeric": {
+      "answers": [
+        "22"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-D-014",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Truth tables",
+    "basics": "csTruthTables",
+    "stem": "How many rows does a truth table for four inputs need, not counting the heading row?",
+    "explanation": "Each extra input doubles the number of combinations: 2 × 2 × 2 × 2 = 16.",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-D-015",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Binary search",
+    "stem": "A binary search looks for 15 in the sorted list 2, 5, 7, 10, 14, 18, 21 (positions 0 to 6), using middle = (low + high) DIV 2. How many comparisons does it make before it reports that 15 is not in the list?",
+    "explanation": "It compares 10 (position 3), then 18 (position 5), then 14 (position 4). After that low is 5 and high is 4, so no items are left after 3 comparisons.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-D-016",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Subroutines",
+    "stem": "In the call area(3, 4), what are 3 and 4?",
+    "explanation": "3 and 4 are arguments: they are passed into the parameters w and h when the function is called. The function's return value is what comes back, 12.",
+    "options": [
+      "Values passed in for the parameters",
+      "Local variables of the main program",
+      "Constants inside the function",
+      "Values the function returns"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-017",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Translators",
+    "stem": "What does an assembler do?",
+    "explanation": "An assembler converts assembly language mnemonics into the matching machine code instructions. Compilers and interpreters translate high-level languages.",
+    "options": [
+      "Compiles a high-level program",
+      "Turns assembly into machine code",
+      "Runs code one line at a time",
+      "Turns machine code into Python"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-018",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algorithms",
+    "stem": "What is the difference between an algorithm and a program?",
+    "explanation": "An algorithm is the set of steps, which can be written as pseudocode, a flowchart or plain English. A program puts those steps into a programming language.",
+    "options": [
+      "A program always has fewer steps",
+      "A program is an algorithm in a language a computer can run",
+      "An algorithm only works on numbers, never on text or images",
+      "An algorithm must be a flowchart"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-019",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Translators",
+    "stem": "Why might a programmer use an interpreter while writing and testing a program?",
+    "explanation": "An interpreter needs no separate compile step and halts on the line with the error, which makes testing quick. Faster running, a stand-alone executable and hidden source code are advantages of a compiler.",
+    "options": [
+      "It makes the final program run faster",
+      "It hides the source code from the people who use it",
+      "It runs code at once and stops at the error",
+      "It creates a stand-alone executable"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-020",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "File handling",
+    "stem": "Put the steps for reading every line of a text file in order.",
+    "explanation": "A file must be opened before it can be read, and it should be closed once reading is finished so other programs can use it.",
+    "options": [
+      "Open the file",
+      "Read one line",
+      "Repeat reading until the end of the file",
+      "Close the file"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-021",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Bubble sort",
+    "stem": "How many comparisons does the first pass of a bubble sort make on a list of 8 items?",
+    "explanation": "Each pass compares neighbouring pairs, and 8 items make 7 pairs. Later passes can make fewer if the sorted end is skipped.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-D-022",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Translators",
+    "stem": "Why do software companies usually distribute compiled programs?",
+    "explanation": "A compiled executable runs on its own, and its machine code is hard to read, which protects the company's work. Compiled code is built for one type of processor, so it is not universal.",
+    "options": [
+      "Compiled code runs on every type of processor without changes",
+      "Users can edit the compiled code easily",
+      "Compiled code keeps the programmer's comments",
+      "Users need no translator and cannot easily read the code"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-023",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "String handling",
+    "stem": "LEN gives the number of characters in a string, spaces included. What does this program output?\n\n| Line | Code |\n|---|---|\n| 1 | first ← \"Sam\" |\n| 2 | last ← \"Lee\" |\n| 3 | full ← first + \" \" + last |\n| 4 | OUTPUT LEN(full) |",
+    "explanation": "full is \"Sam Lee\": 3 letters, a space and 3 letters, which is 7 characters. Forgetting the space gives 6.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-D-024",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Levels of language",
+    "stem": "Which is the best reason to write part of a program in a low-level language?",
+    "explanation": "Low-level code gives direct control of registers and memory, useful for device drivers and small embedded systems. It is tied to one type of processor and slower to write and maintain.",
+    "options": [
+      "It must control hardware precisely with little memory",
+      "It must run on many different types of CPU without changes",
+      "It must be written very quickly",
+      "Beginners will maintain it"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-025",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 1,
+    "format": "order",
+    "skill": "Linear search",
+    "stem": "Put the steps of a linear search in order.",
+    "explanation": "A linear search works through the list from the start, checking one item at a time. It can only say the target is missing once every item has been checked.",
+    "options": [
+      "Start at the first item",
+      "Compare the item with the target",
+      "If they match, report it was found and stop",
+      "Otherwise move on to the next item and compare again",
+      "If the end of the list is reached, report it was not found"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "GCSECS-D-026",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "IDEs",
+    "stem": "Match each IDE feature to what it does.",
+    "explanation": "The editor is where code is typed and displayed, the debugger helps find errors while the program runs, and the built-in translator compiles or interprets the code.",
+    "rows": [
+      "Shows line numbers and colours keywords",
+      "Pauses the program at a chosen line",
+      "Turns source code into code the CPU can run"
+    ],
+    "columns": [
+      "Editor",
+      "Debugger",
+      "Translator"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-027",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data types",
+    "stem": "Which data type is most suitable for a UK phone number such as 07700 900123?",
+    "explanation": "A phone number is never used in arithmetic and starts with 0, which an integer would drop. It can also contain a space, so it is stored as a string.",
+    "options": [
+      "Integer",
+      "Real",
+      "Boolean",
+      "String"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-028",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Abstraction",
+    "stem": "A student writes a program to produce school timetables. Which detail is most likely to be removed by abstraction?",
+    "explanation": "Abstraction removes detail that does not affect the problem. Times, teachers and rooms all matter to a timetable; the wall colour does not.",
+    "options": [
+      "The colour of each room's walls",
+      "The lesson start times",
+      "The teacher for each lesson",
+      "The room numbers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-029",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boolean operators",
+    "basics": "csTruthTables",
+    "stem": "What does this program output?\n\n| Line | Code |\n|---|---|\n| 1 | temp ← 25 |\n| 2 | raining ← True |\n| 3 | IF temp > 30 OR raining = True THEN |\n| 4 | OUTPUT \"Stay in\" |\n| 5 | ENDIF |",
+    "explanation": "OR needs only one condition to be true. 25 is not above 30, but raining is True, so \"Stay in\" is output once.",
+    "options": [
+      "Nothing",
+      "An error message",
+      "Stay in",
+      "Stay in, twice"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-030",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsProgramming",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Iteration",
+    "stem": "A program must keep asking for a password until the correct one is typed. Which construct fits best?",
+    "explanation": "Nobody knows in advance how many tries it will take, so the loop must run until a condition is met, using WHILE or REPEAT ... UNTIL. A FOR loop runs a fixed number of times.",
+    "options": [
+      "A condition-controlled loop",
+      "A count-controlled loop",
+      "A single IF statement",
+      "A one-dimensional array"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-031",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Insertion sort",
+    "stem": "What does an insertion sort do on each pass?",
+    "explanation": "Insertion sort grows a sorted part at the start of the list, placing one more item in its correct position each pass. Swapping neighbouring pairs across the list is bubble sort.",
+    "options": [
+      "Swaps neighbouring items that are in the wrong order",
+      "Moves the next item into place in the sorted part",
+      "Splits the list in half",
+      "Checks the middle item"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-032",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsLogic",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Levels of language",
+    "stem": "Which two are features of high-level languages? Choose two.",
+    "explanation": "High-level statements such as a FOR loop translate into many machine instructions, and the same source can be translated for different processors. One-to-one instructions and direct register use describe assembly language.",
+    "options": [
+      "Code can run on different processors once translated",
+      "The CPU runs the code without translation",
+      "One statement can stand for many machine instructions",
+      "Each statement matches one machine instruction",
+      "Programs work with named CPU registers"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "GCSECS-D-033",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data protection",
+    "stem": "Under the Data Protection Act 2018, what can a person ask an organisation for?",
+    "explanation": "A subject access request lets people see the data an organisation holds about them. The law protects personal data, so it never gives access to other people's.",
+    "options": [
+      "A copy of its software's source code",
+      "Other customers' personal data",
+      "A copy of the personal data it holds about them",
+      "Access to any government computer system they choose"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-034",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Topologies",
+    "stem": "What is the main advantage of a mesh topology?",
+    "explanation": "Devices in a mesh have several connections, so there is no single point of failure. The trade-off is the extra cabling and cost.",
+    "options": [
+      "It needs the least cabling",
+      "If one link fails, data can take another route",
+      "It relies on one central switch to connect every device",
+      "It connects the fewest devices"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-035",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Registers",
+    "stem": "Which register holds the data or instruction that has just been fetched from memory?",
+    "explanation": "The memory data register holds whatever has just been read from, or is about to be written to, memory. The MAR holds the address, not the data.",
+    "options": [
+      "The MDR",
+      "The MAR",
+      "The program counter",
+      "The accumulator"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-036",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Binary to denary",
+    "basics": "csBinary",
+    "stem": "Convert the 8-bit binary number 11111111 to denary.",
+    "explanation": "128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255, the largest value 8 bits can hold.",
+    "numeric": {
+      "answers": [
+        "255"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-D-037",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data protection",
+    "stem": "In data protection law, who is the data subject?",
+    "explanation": "The data subject is the living person the personal data identifies. The organisation that decides how the data is used is the data controller.",
+    "options": [
+      "The organisation storing the data",
+      "The employee entering the data",
+      "The government regulator",
+      "The person the data is about"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-038",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Malware",
+    "stem": "Match each description to the type of malware.",
+    "explanation": "A virus needs a user to run an infected file, a worm copies itself across networks without help, a Trojan hides inside software that looks genuine, and ransomware holds files to ransom.",
+    "rows": [
+      "Attaches to files and spreads when they are opened",
+      "Spreads across a network by itself",
+      "Pretends to be useful software",
+      "Encrypts files and demands payment"
+    ],
+    "columns": [
+      "Virus",
+      "Worm",
+      "Trojan",
+      "Ransomware"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-039",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "CPU performance",
+    "stem": "Which two changes would usually make a CPU process instructions faster? Choose two.",
+    "explanation": "More cycles per second and more fast memory close to the CPU both speed up processing. Storage size, screens and internet speed do not change how fast the CPU executes instructions.",
+    "options": [
+      "A higher clock speed",
+      "A larger monitor",
+      "A faster internet connection",
+      "A larger hard disk",
+      "A larger cache"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "GCSECS-D-040",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Denary to binary",
+    "basics": "csBinary",
+    "stem": "What is the denary number 37 as an 8-bit binary number?",
+    "explanation": "37 = 32 + 4 + 1, so 00100101. 00100111 is 39, and 10100100 is the right bits written backwards.",
+    "options": [
+      "00100111",
+      "00100101",
+      "00110101",
+      "10100100"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-041",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data protection",
+    "stem": "Which body enforces data protection law in the UK?",
+    "explanation": "The ICO investigates complaints and can fine organisations that break data protection law. Ofcom regulates communications and broadcasting.",
+    "options": [
+      "The Information Commissioner's Office",
+      "Ofcom",
+      "Ofqual",
+      "The Department for Education"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-042",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Threats",
+    "stem": "Someone phones an office pretending to be from IT support and asks staff for their passwords. What is this?",
+    "explanation": "Social engineering targets people rather than computers; inventing a believable story to get information is called blagging or pretexting. Staff training is the main defence.",
+    "options": [
+      "A brute-force attack",
+      "A denial-of-service attack",
+      "A worm attack",
+      "Blagging, a form of social engineering"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-043",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Legislation",
+    "stem": "Which of these is an unauthorised act intended to impair a computer, the Computer Misuse Act offence that covers malware?",
+    "explanation": "Deliberately damaging data or stopping a computer working is a more serious offence under the Act than simply getting in, with a longer maximum sentence. Reading emails without permission is the basic unauthorised access offence.",
+    "options": [
+      "Reading a friend's emails without permission",
+      "Planting a virus that deletes a firm's files",
+      "Copying an album and sharing it",
+      "Keeping customer data too long"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-044",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Virtual memory",
+    "stem": "A computer slows down because it keeps using virtual memory. What will adding more RAM do?",
+    "explanation": "With more RAM, programs fit in main memory and data no longer has to be swapped to slower secondary storage. RAM is not permanent storage and does not change the CPU itself.",
+    "options": [
+      "Raise the CPU's clock speed",
+      "Give it more permanent storage space for files",
+      "Let it run more programs without slowing",
+      "Add more processor cores"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-045",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Hexadecimal",
+    "basics": "csHex",
+    "stem": "Convert the hexadecimal number A4 to denary.",
+    "explanation": "A is 10, so 10 × 16 = 160, plus 4 gives 164.",
+    "numeric": {
+      "answers": [
+        "164"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-D-046",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Threats",
+    "stem": "What does a denial-of-service (DoS) attack do?",
+    "explanation": "A DoS attack sends so much traffic that the server or network is overwhelmed and legitimate users are shut out. Ransom demands are ransomware.",
+    "options": [
+      "Floods a server so real users cannot reach it",
+      "Steals passwords from a website's user database",
+      "Encrypts files for a ransom",
+      "Guesses passwords automatically"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-047",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Software licensing",
+    "stem": "What is one advantage of proprietary software for a business?",
+    "explanation": "The company that owns proprietary software supplies support, updates and guarantees, which many businesses want. Changing and sharing the code are features of open source.",
+    "options": [
+      "Staff can change its source code",
+      "It never needs a licence",
+      "Official support and updates from its owner",
+      "Its code can be freely shared and changed by anyone"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-048",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Utility software",
+    "stem": "What does an incremental backup copy?",
+    "explanation": "An incremental backup copies just what has changed since the previous backup, so it is quick and small. A full backup copies everything every time.",
+    "options": [
+      "Every file on the system",
+      "Only the operating system",
+      "Only files never backed up before",
+      "Only files changed since the last backup"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-049",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Software licensing",
+    "stem": "Does each statement describe open-source or proprietary software?",
+    "explanation": "Open-source code is published for anyone to study and improve, often by volunteers. Proprietary software is owned by a company that keeps the code private and sells licences to use it.",
+    "rows": [
+      "Its source code can be viewed and changed",
+      "It usually needs a paid licence",
+      "It is often maintained by a community",
+      "Its owner keeps the source code secret"
+    ],
+    "columns": [
+      "Open source",
+      "Proprietary"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-050",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Prevention",
+    "stem": "What does a firewall do?",
+    "explanation": "A firewall checks data coming in and going out of a network against a set of rules and blocks anything not allowed. Removing viruses is the job of anti-malware software.",
+    "options": [
+      "Removes viruses from files",
+      "Blocks traffic that breaks its rules",
+      "Backs up data each night",
+      "Stores encrypted passwords"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-051",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compression",
+    "stem": "What is WWWWBBBWW in run-length encoding, written as count then character?",
+    "explanation": "RLE stores each run of the same character as a count and the character: 4 Ws, 3 Bs, then 2 Ws. Merging the two W runs into 6W loses their position, so the data could not be rebuilt.",
+    "options": [
+      "4W 3B 3W",
+      "6W 3B",
+      "9W",
+      "4W 3B 2W"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-052",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privacy",
+    "stem": "A free app records its users' locations all day and sells the data to advertisers. What is the main concern?",
+    "explanation": "Collecting and selling detailed location data reveals where people live, work and go, often without them fully understanding. It is also a data protection issue if consent is not properly given.",
+    "options": [
+      "Privacy",
+      "E-waste",
+      "Copyright",
+      "The digital divide"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-053",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Secondary storage",
+    "stem": "A studio wants to sell a film on a disc in shops. Which type of storage fits best?",
+    "explanation": "Optical discs such as Blu-ray are cheap to make in large numbers and light to post. RAM is volatile and cannot hold a film once the power is off.",
+    "options": [
+      "Optical",
+      "Magnetic tape",
+      "Solid state",
+      "RAM"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-054",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prevention",
+    "stem": "Why is two-factor authentication more secure than a password alone?",
+    "explanation": "The attacker would also need a second factor, such as a code sent to the user's phone. Phishing emails can still arrive; they just become less useful to the attacker.",
+    "options": [
+      "It makes passwords longer",
+      "It encrypts all stored data",
+      "A stolen password alone is not enough",
+      "It stops phishing emails arriving"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-055",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Images",
+    "stem": "What is metadata in an image file?",
+    "explanation": "Metadata describes the image, such as its width, height and colour depth, so the computer can display the pixel data correctly. The pixel colours themselves are the image data.",
+    "options": [
+      "Data about the image, such as its width and height",
+      "The colour value of every pixel",
+      "A compressed copy of the image",
+      "A backup copy of the image kept on a separate drive"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-056",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environmental impact",
+    "stem": "What is the best way to reduce the environmental impact of an old mobile phone?",
+    "explanation": "Reuse extends a device's life, and proper recycling recovers metals and keeps toxic materials out of landfill.",
+    "options": [
+      "Put it in the household bin",
+      "Reuse it or recycle it properly",
+      "Burn it",
+      "Bury it in the garden"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-057",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Embedded systems",
+    "stem": "Which is a typical feature of an embedded system?",
+    "explanation": "Embedded systems such as a microwave controller do one task and rarely change their program. General-purpose computers run many user-installed applications.",
+    "options": [
+      "Many different apps installed by the user over time",
+      "One dedicated job, its program often in ROM",
+      "Very large secondary storage",
+      "Always a keyboard and screen"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-058",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prevention",
+    "stem": "Data is encrypted before it is sent. Someone intercepts it. What does the encryption achieve?",
+    "explanation": "Encryption does not prevent interception, but the scrambled data is useless to anyone without the key to decrypt it.",
+    "options": [
+      "It stops the data being intercepted",
+      "It deletes the data",
+      "It slows the hacker's computer",
+      "They cannot understand it without the key"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-059",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ethical impact",
+    "stem": "A self-driving car is involved in a crash. Which is the key ethical question this raises?",
+    "explanation": "When software makes driving decisions, responsibility could lie with the owner, the manufacturer or the programmers, and the law is still catching up. The other questions are not ethical issues.",
+    "options": [
+      "How fast its processor runs",
+      "Which colour the car is",
+      "Who is responsible for the crash",
+      "Who holds copyright in its maps"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-060",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Images",
+    "basics": "csDataUnits",
+    "stem": "An image's colour depth goes from 8 bits to 16 bits, with the same number of pixels. What happens?",
+    "explanation": "16 bits allow 65,536 colours instead of 256, and every pixel now takes twice the space, so the file size doubles. The number of pixels (resolution) does not change.",
+    "options": [
+      "More colours and half the file size",
+      "More colours and double the file size",
+      "More pixels and the same file size",
+      "No change at all"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-061",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prevention",
+    "stem": "Why does a company give staff different user access levels?",
+    "explanation": "Limiting access means a careless or dishonest user, or someone who has stolen their login, can only reach a small part of the data.",
+    "options": [
+      "Each person reaches only the data they need",
+      "It speeds up the network",
+      "So everyone can edit every file",
+      "To stop viruses spreading between staff by email"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-062",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Operating systems",
+    "stem": "What is a device driver?",
+    "explanation": "A driver translates between the operating system and a particular device, such as a printer, so the OS does not need to know how every model works.",
+    "options": [
+      "A utility that compresses files to save space",
+      "A part of the CPU",
+      "Software that lets the OS talk to hardware",
+      "A type of secondary storage"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-063",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privacy",
+    "stem": "What is the main argument against widespread facial recognition cameras in public places?",
+    "explanation": "Recognising faces automatically lets authorities or companies track where people go, which reduces privacy, and errors can lead to the wrong person being stopped.",
+    "options": [
+      "The cameras use too little power",
+      "They make crime more likely",
+      "They break copyright law",
+      "People can be tracked without consent"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-064",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sound",
+    "stem": "What is the bit depth (sample resolution) of a sound file?",
+    "explanation": "Bit depth is how many bits record each sample's amplitude; more bits mean finer steps. Samples per second is the sample rate.",
+    "options": [
+      "The samples taken each second",
+      "The length of the clip",
+      "The bits used to store each sample",
+      "The number of speakers"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-065",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "The internet",
+    "stem": "What is the World Wide Web?",
+    "explanation": "The internet is the worldwide network of networks; the web is one service that runs on it, a collection of linked pages. Email is a different service on the same internet.",
+    "options": [
+      "Another name for the internet",
+      "The web pages reached over the internet",
+      "A type of network cable",
+      "A protocol for sending email"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-066",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environmental impact",
+    "stem": "Which is a positive environmental impact of digital technology?",
+    "explanation": "Meeting online instead of travelling cuts fuel use and emissions. The other options are all environmental costs.",
+    "options": [
+      "Video calls replace some journeys",
+      "Mining metals for new devices",
+      "Running large data centres",
+      "Throwing away old devices"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-067",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Operating systems",
+    "stem": "How does an operating system let several programs seem to run at once on a single-core CPU?",
+    "explanation": "Processor scheduling gives each program a short turn on the CPU and switches quickly, so they appear to run together. This is multitasking.",
+    "options": [
+      "It runs them all on the graphics card at the same time",
+      "It copies them into ROM",
+      "It runs each program only once",
+      "It switches between them in short time slices"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-068",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data protection",
+    "stem": "A school records a pupil's allergy wrongly and does not correct it after the parents point it out. Which data protection principle is broken?",
+    "explanation": "Organisations must correct inaccurate personal data, especially when it could cause harm. The data is not being kept too long, misused or exposed.",
+    "options": [
+      "Data must be kept no longer than needed",
+      "Data must be accurate and up to date",
+      "Data must be used only for its purpose",
+      "Data must be kept secure"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-069",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Network performance",
+    "stem": "Which two factors can slow down a network? Choose two.",
+    "explanation": "When many users share the same bandwidth each gets less, and wireless interference causes errors and resent data. MAC addresses, domain names and passwords do not reduce speed.",
+    "options": [
+      "Many users sharing the bandwidth at once",
+      "Having a domain name",
+      "Interference on a wireless connection",
+      "Giving each device a MAC address",
+      "Using a password on the router"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "GCSECS-D-070",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Overflow",
+    "basics": "csBinaryAdd",
+    "stem": "Which of these 8-bit additions causes an overflow?",
+    "explanation": "192 + 64 = 256, which needs 9 bits, since 8 bits hold at most 255. The other three sums are 127, 255 and 255, which all fit.",
+    "options": [
+      "01000000 + 00111111",
+      "10000000 + 01111111",
+      "00000001 + 11111110",
+      "11000000 + 01000000"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-071",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Operating systems",
+    "stem": "Which operating system function lets users name, move, copy and delete files and organise them into folders?",
+    "explanation": "File management handles where files are stored and how they are organised. User management deals with accounts and access rights.",
+    "options": [
+      "File management",
+      "Memory management",
+      "Peripheral management",
+      "User management"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-072",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data protection",
+    "stem": "A gym collects members' email addresses to confirm class bookings, then uses them to sell holidays. Which principle is broken?",
+    "explanation": "This is purpose limitation: personal data collected for one purpose must not be used for an unrelated one without a lawful basis such as consent.",
+    "options": [
+      "Data must be accurate",
+      "Data must be kept secure",
+      "Use data only for the purpose it was collected for",
+      "Data must be kept for no longer than it is really needed"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-073",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud storage",
+    "stem": "What is one disadvantage of cloud storage?",
+    "explanation": "Cloud files sit on remote servers, so without internet access they cannot be reached. Access from any device and easy extra space are advantages.",
+    "options": [
+      "Files can't be shared between devices",
+      "The data is never backed up",
+      "Space can never be added",
+      "Files need an internet connection"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-074",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data protection",
+    "stem": "A teacher leaves a laptop holding unencrypted pupil records on a train. Which principle has the school failed to meet?",
+    "explanation": "The law requires appropriate security, such as encryption, so lost or stolen devices do not expose personal data.",
+    "options": [
+      "Personal data must be accurate",
+      "Personal data must be used only for its purpose",
+      "Personal data must be kept only as long as needed",
+      "Personal data must be kept secure"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSECS-D-075",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Characters",
+    "stem": "In ASCII, the character A has the code 65 and letters follow in order. What is the code for E?",
+    "explanation": "A is 65, B 66, C 67, D 68 and E 69. Character codes for letters are consecutive, which is how programs can sort text.",
+    "numeric": {
+      "answers": [
+        "69"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-D-076",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fetch-execute cycle",
+    "stem": "During the fetch stage, which bus carries the address from the MAR to main memory?",
+    "explanation": "Addresses travel on the address bus, from the CPU to memory only. The instruction then comes back on the data bus, and the control bus carries signals such as read and write.",
+    "options": [
+      "The data bus",
+      "The address bus",
+      "The control bus",
+      "The USB bus"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-077",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Threats",
+    "stem": "Watching someone type their PIN at a cash machine to learn it is called what?",
+    "explanation": "Shoulder surfing means observing someone directly as they enter details. Covering the keypad defeats it.",
+    "options": [
+      "Shoulder surfing",
+      "Phishing",
+      "Pharming",
+      "Brute force"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-078",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Legislation",
+    "stem": "What does copyright protect in a piece of software?",
+    "explanation": "Copyright protects the actual work, such as the source code, graphics and music, from being copied without permission. A general idea, such as a puzzle game with falling blocks, is not protected.",
+    "options": [
+      "Its code from being copied",
+      "The general idea behind it",
+      "The hardware it runs on",
+      "The users who buy it"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSECS-D-079",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsData",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Units",
+    "basics": "csDataUnits",
+    "stem": "A memory stick holds 2 GB. Using 1 GB = 1,000 MB, how many 4 MB photos can it hold?",
+    "explanation": "2 GB is 2,000 MB, and 2,000 ÷ 4 = 500 photos.",
+    "numeric": {
+      "answers": [
+        "500"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "GCSECS-D-080",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsSystems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cache",
+    "stem": "Which statement describes cache memory?",
+    "explanation": "Cache holds copies of frequently used instructions and data so the CPU can reach them faster than from RAM. It is small because it is expensive.",
+    "options": [
+      "Large, slow, permanent storage",
+      "Part of ROM that holds the program used to boot up",
+      "Small, very fast memory on or near the CPU",
+      "A type of optical disc"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSECS-D-081",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsNetworks",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Protocols",
+    "stem": "In the TCP/IP model, which job is done by TCP?",
+    "explanation": "TCP, on the transport layer, breaks data into packets and makes sure they all arrive. Routing by address is the job of IP on the internet layer, and DNS turns names into addresses.",
+    "options": [
+      "Routing each packet between networks by IP address",
+      "Splitting data into packets and checking arrival",
+      "Turning domain names into IP addresses",
+      "Encrypting web pages"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSECS-D-082",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsecsImpacts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ethical impact",
+    "stem": "Which statement about automation and jobs is fairest?",
+    "explanation": "Machines replace some tasks, for example on production lines, while creating work in designing, programming and maintaining them. People may need retraining to move between the two.",
+    "options": [
+      "Automation never causes anyone to lose their job",
+      "Some jobs go, while new ones are created",
+      "Automation affects only office jobs",
+      "New jobs created need no skills"
+    ],
+    "correct": [
+      1
+    ]
+  }
+]

@@ -1,0 +1,344 @@
+[
+ {
+  "test": 1,
+  "skill": "Pressure injury prevention",
+  "difficulty": 1,
+  "format": "multi",
+  "stem": "A client who is bedridden has a Braden score of 12. Which measures help prevent pressure injuries? Select all that apply.",
+  "options": [
+   "Reposition at least every 2 hours",
+   "Use a pressure-redistributing mattress",
+   "Keep the skin clean and dry",
+   "Massage reddened bony areas firmly",
+   "Keep the head of the bed at 60 degrees all day"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "A Braden score of 12 means high risk. Regular turning, a pressure-redistributing surface and dry skin protect it; massaging red areas damages tissue, and a high head of bed increases shear on the sacrum."
+ },
+ {
+  "test": 1,
+  "skill": "Enteral feeding",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client receives continuous feeding through a nasogastric tube. Which position lowers the risk of aspiration?",
+  "options": [
+   "Head of the bed raised at least 30 degrees",
+   "Flat on the back with one pillow",
+   "Flat on the left side",
+   "Feet raised above the head"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Keeping the head of the bed at 30 to 45 degrees during feeding and for some time after helps keep feed in the stomach and out of the lungs."
+ },
+ {
+  "test": 1,
+  "skill": "Elimination",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "An older client on bed rest has not had a bowel movement in 4 days. Which measure should the nurse encourage first?",
+  "options": [
+   "More fluids and fibre, and more activity as allowed",
+   "A daily enema until stools are regular",
+   "Limiting fluids to prevent incontinence",
+   "Holding stools until a commode is available"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Fluids, fibre and movement are the first-line measures for constipation. Regular enemas cause dependence, and limiting fluids makes stools harder."
+ },
+ {
+  "test": 1,
+  "skill": "Urinary retention",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client has not voided for 7 hours after surgery and has lower abdominal discomfort. What should the nurse do first?",
+  "options": [
+   "Check the bladder volume with a bladder scanner",
+   "Insert an indwelling catheter right away",
+   "Restrict fluids until the client voids",
+   "Give a laxative to relieve the discomfort"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A bladder scan confirms retention without the infection risk of a catheter. Non-invasive measures such as privacy and running water are tried, and catheterization follows the order or protocol."
+ },
+ {
+  "test": 1,
+  "skill": "Intake and output",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "During an 8-hour shift a client drinks 2 cups of tea of 250 mL each and 180 mL of juice, and receives 500 mL of IV fluid. The client voids 450 mL and 300 mL. What is the client's total intake for the shift in mL? Record your answer as a whole number.",
+  "numeric": {
+   "answers": [
+    "1180"
+   ],
+   "tolerance": 0
+  },
+  "explanation": "Intake is 250 + 250 + 180 + 500 = 1180 mL. The 750 mL of urine is output and is not part of intake."
+ },
+ {
+  "test": 1,
+  "skill": "Non-pharmacological comfort",
+  "difficulty": 1,
+  "format": "multi",
+  "stem": "Which non-drug measures can help relieve a client's pain? Select all that apply.",
+  "options": [
+   "Repositioning with pillows",
+   "Guided imagery or music",
+   "Cold packs for a recent sprain",
+   "Telling the client to ignore the pain",
+   "Keeping the room bright and noisy"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Positioning, distraction and cold applied to a recent injury reduce pain. Dismissing pain and a noisy, bright room make it worse."
+ },
+ {
+  "test": 1,
+  "skill": "Assistive devices",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with a weak right leg is learning to walk with a cane. What should the nurse reinforce?",
+  "options": [
+   "Hold the cane in the left hand",
+   "Hold the cane in the right hand",
+   "Move the cane after the weak leg",
+   "Use the cane only on stairs"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The cane is held on the strong side and moves forward with the weak leg, which gives the widest base of support."
+ },
+ {
+  "test": 1,
+  "skill": "Postmortem care",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client has just died, and no autopsy or coroner's review is expected. What should the nurse do as part of postmortem care?",
+  "options": [
+   "Place the body flat with a pillow under the head",
+   "Leave all tubes in place for the family",
+   "Keep the head of the bed raised 45 degrees",
+   "Remove dentures and put them in a drawer"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The body is placed flat with the head slightly raised to prevent pooling of blood in the face, and dentures are left in place to keep the face natural. Tubes are removed per policy unless a coroner's case requires them."
+ },
+ {
+  "test": 2,
+  "skill": "Dysphagia",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with dysphagia after a stroke is eating lunch. Which action reduces the risk of aspiration?",
+  "options": [
+   "Sit the client upright with the chin tucked",
+   "Give thin liquids with a straw",
+   "Feed the client lying on the right side",
+   "Offer large bites to speed up the meal"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Sitting upright with the chin tucked helps protect the airway. Straws and thin liquids are often unsafe, and small bites and a slow pace are safer."
+ },
+ {
+  "test": 2,
+  "skill": "Venous return",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client is ordered anti-embolism stockings. When should the nurse apply them?",
+  "options": [
+   "In the morning before the client gets up",
+   "After the client has walked for an hour",
+   "Only at night while the client sleeps",
+   "Only when the ankles are swollen"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Stockings are applied before the legs swell, ideally while the client is still lying down in the morning."
+ },
+ {
+  "test": 2,
+  "skill": "Cast care",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client has a new plaster cast on the forearm. Which finding should the nurse report right away?",
+  "options": [
+   "Fingers that are cool and numb",
+   "Mild itching under the cast",
+   "A cast that feels warm while drying",
+   "Slight swelling the first evening"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Cool, numb fingers suggest impaired circulation or nerve compression and need urgent action. Warmth while plaster dries, itching and mild swelling with elevation are expected."
+ },
+ {
+  "test": 2,
+  "skill": "Incontinence care",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client is incontinent of urine several times a day. Which skin care measure is best?",
+  "options": [
+   "Clean gently after each episode and apply a barrier cream",
+   "Use hot water and scrub the skin",
+   "Leave the brief on until the next scheduled change",
+   "Powder the skin heavily with talc"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Prompt gentle cleansing and a barrier product protect the skin from moisture damage. Scrubbing and wet briefs break down skin, and talc can cake and irritate."
+ },
+ {
+  "test": 2,
+  "skill": "Intake and output",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "Over 12 hours, a client's urinary catheter drains 1050 mL. A continuous bladder irrigation ran 600 mL into the bladder over the same period. What is the client's true urine output in mL? Record your answer as a whole number.",
+  "numeric": {
+   "answers": [
+    "450"
+   ],
+   "tolerance": 0
+  },
+  "explanation": "Irrigation fluid comes back out with the urine, so it is subtracted: 1050 - 600 = 450 mL of true urine output."
+ },
+ {
+  "test": 2,
+  "skill": "Assistive devices",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client says her hearing aid is whistling. What should the nurse check first?",
+  "options": [
+   "That the aid is seated properly in the ear",
+   "That the volume is turned all the way up",
+   "That the battery has been removed",
+   "That the client's ear canal is dry"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Whistling, or feedback, is most often caused by an aid that is not seated well or by earwax. Turning the volume up makes it worse."
+ },
+ {
+  "test": 2,
+  "skill": "Irrigations",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse is irrigating a client's eye after a chemical splash. Which technique is correct?",
+  "options": [
+   "Flow from the inner corner toward the outer corner",
+   "Flow from the outer corner toward the nose",
+   "Aim the stream directly onto the cornea",
+   "Stop once the client's eye stops stinging"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Irrigating from inner to outer canthus carries the chemical away from the other eye and the tear duct. The stream is not aimed at the cornea, and irrigation continues for the ordered time."
+ },
+ {
+  "test": 2,
+  "skill": "Activities of daily living",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client with right-sided weakness is learning to put on a shirt. What should the nurse reinforce?",
+  "options": [
+   "Dress the right arm first",
+   "Dress the left arm first",
+   "Put both arms in at the same time",
+   "Wear only pullover shirts"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Clothes go on the weak side first and come off the strong side first, which needs the least movement of the weak limb."
+ },
+ {
+  "test": 0,
+  "skill": "Enteral medications",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse gives medications through a feeding tube. What should the nurse do between each medication?",
+  "options": [
+   "Flush the tube with water",
+   "Mix all medications together first",
+   "Add each medication to the feed bag",
+   "Clamp the tube for an hour"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Each medication is given separately with a water flush before, between and after, to keep the tube open and prevent drug interactions."
+ },
+ {
+  "test": 0,
+  "skill": "Sleep",
+  "difficulty": 1,
+  "format": "multi",
+  "stem": "Which suggestions promote sleep for a client in hospital? Select all that apply.",
+  "options": [
+   "Group care to limit night-time waking",
+   "Offer a back rub at bedtime",
+   "Offer a large meal at bedtime",
+   "Offer strong coffee after supper",
+   "Keep the TV on all night"
+  ],
+  "correct": [
+   0,
+   1
+  ],
+  "explanation": "Fewer interruptions and relaxation support sleep. A heavy meal, caffeine and constant TV noise disturb it."
+ },
+ {
+  "test": 0,
+  "skill": "Hip precautions",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client had a posterior approach hip replacement. Which action should the client avoid?",
+  "options": [
+   "Bending the hip past 90 degrees",
+   "Sitting in a raised chair",
+   "Using a raised toilet seat",
+   "Sleeping with a pillow between the knees"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "After a posterior approach, bending the hip past 90 degrees, crossing the legs and turning the leg inward can dislocate the new joint. Raised seats and an abduction pillow help prevent this."
+ },
+ {
+  "test": 0,
+  "skill": "Heat therapy",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client with chronic low back stiffness has an order for a warm pack. What should the nurse do?",
+  "options": [
+   "Wrap the pack and check the skin often",
+   "Apply it directly to bare skin",
+   "Leave it on for at least 1 hour",
+   "Let the client lie on top of it"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A cover between the pack and the skin, limited time and frequent skin checks prevent burns. Lying on a heat source traps heat against the skin."
+ }
+]

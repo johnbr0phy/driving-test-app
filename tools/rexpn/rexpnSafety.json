@@ -1,0 +1,499 @@
+[
+ {
+  "test": 1,
+  "skill": "C. difficile",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse leaves the room of a client with Clostridioides difficile infection. How should the nurse clean their hands?",
+  "options": [
+   "Soap and water",
+   "Alcohol-based hand rub",
+   "Antiseptic wipes",
+   "Removing gloves is enough"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "C. difficile spores are not killed by alcohol, so they must be physically washed off with soap and water. Gloves reduce contamination but hand hygiene is still needed after removing them."
+ },
+ {
+  "test": 1,
+  "skill": "Airborne precautions",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client is admitted with suspected active pulmonary tuberculosis. Which precaution should the nurse use when entering the room?",
+  "options": [
+   "A fit-tested N95 respirator",
+   "A surgical mask and face shield",
+   "A gown and gloves only",
+   "A surgical mask on the nurse only"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Tuberculosis spreads by the airborne route, so staff wear a fit-tested N95 respirator and the client stays in an airborne infection isolation room with the door closed."
+ },
+ {
+  "test": 1,
+  "skill": "Droplet precautions",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client has confirmed influenza. Which room arrangement is appropriate?",
+  "options": [
+   "A single room with droplet and contact precautions",
+   "A shared room with a client who has pneumonia",
+   "A negative-pressure room with the door open",
+   "Any room, since influenza is not contagious in hospital"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Influenza spreads by large droplets and contact, so the client needs a single room or a cohort with the same infection, plus a mask and eye protection within 2 metres. Negative pressure is for airborne diseases."
+ },
+ {
+  "test": 1,
+  "skill": "Least restraint",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A confused client keeps trying to pull at an IV line. What should the nurse try first?",
+  "options": [
+   "Hide the site and offer something to hold",
+   "Apply soft wrist restraints to both arms",
+   "Ask the provider to order a sedative now",
+   "Remove the IV and give fluids by mouth"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Least-restraint policies require alternatives first: hiding the line, distraction, frequent checks and involving family. Restraints and sedation are last resorts that need an order and close monitoring."
+ },
+ {
+  "test": 1,
+  "skill": "Fall prevention",
+  "difficulty": 1,
+  "format": "multi",
+  "stem": "Which interventions reduce the risk of falls for an older adult in hospital? Select all that apply.",
+  "options": [
+   "Keep the bed in the lowest position",
+   "Place the call bell within reach",
+   "Use non-slip footwear",
+   "Offer toileting on a regular schedule",
+   "Raise all four bed rails at night",
+   "Dim the lights completely at night"
+  ],
+  "correct": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explanation": "A low bed, a reachable call bell, non-slip footwear and scheduled toileting address the main causes of falls. Four raised rails are a restraint and can lead to worse falls, and a dark room makes it harder to see."
+ },
+ {
+  "test": 1,
+  "skill": "Client identification",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "Before giving a medication, which method correctly identifies the client?",
+  "options": [
+   "Name and birth date against the wristband",
+   "Asking the client, \"Are you Mr. Novak?\"",
+   "The room and bed number on the census",
+   "Confirmation from the client's roommate"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Two client-specific identifiers, such as full name and date of birth, are checked against the order or wristband. Room numbers change, and a leading question can be answered yes by a confused client."
+ },
+ {
+  "test": 1,
+  "skill": "Fire response",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "The nurse discovers smoke coming from a client's room. Following RACE, what should the nurse do first?",
+  "options": [
+   "Remove the client from danger",
+   "Activate the fire alarm",
+   "Close the doors on the unit",
+   "Use the fire extinguisher"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "RACE stands for Rescue, Alarm, Contain and Extinguish or Evacuate. Clients in immediate danger are moved first, then the alarm is pulled."
+ },
+ {
+  "test": 1,
+  "skill": "Latex allergy",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with a latex allergy is admitted. Which food allergy reported by the client is most likely related?",
+  "options": [
+   "Banana",
+   "Peanut",
+   "Shellfish",
+   "Wheat"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Banana, avocado, kiwi and chestnut share proteins with latex, so reactions to both are common. Peanut, shellfish and wheat are not cross-reactive with latex."
+ },
+ {
+  "test": 1,
+  "skill": "Seizure precautions",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "A client with a new seizure disorder is admitted. Which seizure precautions should the nurse put in place? Select all that apply.",
+  "options": [
+   "Have suction and oxygen ready at the bedside",
+   "Keep the bed in a low position",
+   "Pad the bed rails if policy allows",
+   "Tape a tongue blade to the headboard",
+   "Keep the client on strict bed rest",
+   "Remove all pillows from the bed"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Working suction and oxygen, a low bed and padded rails protect the airway and prevent injury. Nothing is ever put in the mouth during a seizure, and bed rest or removing pillows is not part of precautions."
+ },
+ {
+  "test": 1,
+  "skill": "Sharps safety",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "What should the nurse do with a used insulin syringe?",
+  "options": [
+   "Drop it straight into a sharps container",
+   "Recap it with both hands, then discard it",
+   "Bend the needle before discarding it",
+   "Put it in a biohazard bag with dressings"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Used needles go uncapped into a puncture-resistant sharps container right away. Recapping and bending needles cause needlestick injuries."
+ },
+ {
+  "test": 1,
+  "skill": "Equipment safety",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "The nurse notices that the cord on a client's IV pump is frayed. What should the nurse do?",
+  "options": [
+   "Replace the pump and tag it for repair",
+   "Wrap the frayed area with tape",
+   "Keep using it until the infusion ends",
+   "Unplug it and run the pump on battery"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Damaged electrical equipment is a shock and fire hazard. It is removed from use, labelled and reported according to policy, and a safe pump is used instead."
+ },
+ {
+  "test": 1,
+  "skill": "Allergies",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client's chart lists a penicillin allergy. A new order is written for amoxicillin. What should the nurse do?",
+  "options": [
+   "Hold the dose and contact the prescriber",
+   "Give the dose and watch for a rash",
+   "Give half the dose as a test",
+   "Ask the pharmacy for a liquid form"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Amoxicillin is a penicillin, so the order may cause an allergic reaction. The nurse holds it, clarifies the allergy and asks for a different drug."
+ },
+ {
+  "test": 2,
+  "skill": "Contact precautions",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client has a wound infected with methicillin-resistant Staphylococcus aureus (MRSA). Which precautions should the nurse use for wound care?",
+  "options": [
+   "Gown and gloves",
+   "N95 respirator only",
+   "Surgical mask only",
+   "Hand hygiene only"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "MRSA spreads by contact, so a gown and gloves are worn for contact with the client or environment. Respirators are for airborne diseases."
+ },
+ {
+  "test": 2,
+  "skill": "Surgical asepsis",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "While setting up a sterile field for a dressing change, the nurse reaches across the field. What should the nurse do?",
+  "options": [
+   "Set up a new sterile field",
+   "Continue, since nothing was touched",
+   "Wipe the area with alcohol",
+   "Cover that side with a sterile drape"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Reaching over a sterile field can drop contaminants onto it, so the field is considered contaminated and must be replaced."
+ },
+ {
+  "test": 2,
+  "skill": "Neutropenic precautions",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "A client receiving chemotherapy has a neutrophil count of 0.4 × 10⁹/L. Which actions protect the client? Select all that apply.",
+  "options": [
+   "Strict hand hygiene for everyone entering",
+   "Screen visitors for signs of illness",
+   "Avoid fresh flowers in the room",
+   "Take rectal temperatures every 4 hours",
+   "Encourage raw fruit with skins on",
+   "Share equipment with the roommate"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "A neutrophil count this low leaves the client unable to fight infection. Hand hygiene, screening visitors and avoiding flowers lower exposure; rectal temperatures can injure the mucosa, and unwashed raw produce and shared equipment carry germs."
+ },
+ {
+  "test": 2,
+  "skill": "Emergency response",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A disaster plan is activated and beds are needed. Which client is most appropriate to recommend for early discharge?",
+  "options": [
+   "Client with cellulitis on oral antibiotics since yesterday",
+   "Client admitted 2 hours ago with chest pain",
+   "Client on day 1 after abdominal surgery",
+   "Client with diabetic ketoacidosis on an insulin infusion"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A stable client who can continue oral treatment at home is the safest choice. New chest pain, fresh surgery and an insulin infusion all need ongoing hospital care."
+ },
+ {
+  "test": 2,
+  "skill": "Hazardous materials",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A housekeeper splashes an unfamiliar cleaning chemical on her arm. Where should the nurse look for first aid instructions for that product?",
+  "options": [
+   "The product's safety data sheet (SDS)",
+   "The facility's infection control manual",
+   "The poison control website",
+   "The product's purchase invoice"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Under WHMIS, every hazardous product has a safety data sheet that lists first aid measures, hazards and safe handling. The skin is rinsed while the SDS is checked."
+ },
+ {
+  "test": 2,
+  "skill": "Infant security",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A woman in scrubs without a hospital badge tells a new mother she will take the baby for a test. What should the mother be taught to do?",
+  "options": [
+   "Refuse and call the nurse",
+   "Let her take the baby if she knows the baby's name",
+   "Go along and carry the baby herself",
+   "Ask her which test it is"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Infant security teaching tells parents to hand their baby only to staff with the correct identification. Knowing the baby's name or giving a plausible reason does not confirm identity."
+ },
+ {
+  "test": 2,
+  "skill": "Car seats",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "Parents ask how their newborn should ride in the car on the way home. What should the nurse reinforce?",
+  "options": [
+   "In a rear-facing seat in the back seat",
+   "In a forward-facing seat in the front",
+   "Held securely on a parent's lap",
+   "In a booster seat with a lap belt"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Infants ride rear-facing in the back seat in a car seat that meets Canadian safety standards. When to move to a forward-facing seat depends on the seat's limits and provincial law, which varies."
+ },
+ {
+  "test": 2,
+  "skill": "Verifying orders",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "An order reads \"morphine 40 mg subcut every 4 hours as needed\" for an opioid-naive older adult. What should the nurse do?",
+  "options": [
+   "Hold it and clarify the dose with the prescriber",
+   "Give the dose and monitor respirations closely",
+   "Give a quarter of the dose to be safe",
+   "Give it only if the pain is 10 out of 10"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "This is a very high dose for a client who has not taken opioids before. The nurse is accountable for every dose given and must verify an order that appears unsafe; changing the dose without an order is not allowed."
+ },
+ {
+  "test": 2,
+  "skill": "Near misses",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse catches that the pharmacy sent the wrong strength of a tablet before giving it. What should the nurse do after getting the correct medication?",
+  "options": [
+   "Report the near miss as the agency requires",
+   "Do nothing, since the client was not harmed",
+   "Tell the client the pharmacy made an error",
+   "Return the tablet without comment"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Near misses are reported because they show weak spots in the system before someone is harmed. The report supports learning, not blame."
+ },
+ {
+  "test": 2,
+  "skill": "Safe client handling",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client who weighs 120 kg and cannot bear weight needs to move from bed to a chair. What should the nurse use?",
+  "options": [
+   "A mechanical lift with trained help",
+   "A pivot transfer with one assistant",
+   "A gait belt and the nurse alone",
+   "A sliding board with the client's help"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A client who cannot bear weight is moved with a mechanical lift according to safe client handling policy, which protects both the client and staff."
+ },
+ {
+  "test": 2,
+  "skill": "Home safety",
+  "difficulty": 1,
+  "format": "multi",
+  "stem": "The nurse visits an 82-year-old client at home. Which changes would make the home safer? Select all that apply.",
+  "options": [
+   "Remove loose scatter rugs",
+   "Install grab bars beside the toilet",
+   "Add night lights in the hallway",
+   "Keep a cordless phone within reach",
+   "Wax the floors to make cleaning easier",
+   "Store daily items on high shelves"
+  ],
+  "correct": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explanation": "Removing trip hazards, grab bars, night lights and a reachable phone lower fall risk and help the client get help. Waxed floors are slippery, and high shelves lead to climbing and reaching."
+ },
+ {
+  "test": 2,
+  "skill": "Removing PPE",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse is leaving the room of a client on contact and droplet precautions. Which item of personal protective equipment should the nurse remove first?",
+  "options": [
+   "Gloves",
+   "Gown",
+   "Eye protection",
+   "Mask"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Gloves are the most contaminated item, so they come off first, followed by the gown, hand hygiene, eye protection and the mask, with hand hygiene again at the end."
+ },
+ {
+  "test": 0,
+  "skill": "Herpes zoster",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "An immunocompromised client has shingles spread over several dermatomes. Which precautions are needed?",
+  "options": [
+   "Airborne and contact precautions",
+   "Standard precautions only",
+   "Droplet precautions only",
+   "Contact precautions only"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Disseminated zoster, or zoster in an immunocompromised client, can spread varicella through the air, so airborne and contact precautions are used until lesions crust. Staff who are not immune should not provide care."
+ },
+ {
+  "test": 0,
+  "skill": "Oxygen safety",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client using home oxygen asks what safety rule matters most. What should the nurse reinforce?",
+  "options": [
+   "No smoking or open flames near the oxygen",
+   "Keep the tank in a closed closet",
+   "Turn the flow up when short of breath",
+   "Use petroleum jelly inside the nostrils"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Oxygen makes things burn faster, so smoking, candles and open flames are dangerous near it. Tanks need ventilation, flow changes need an order, and water-based lubricant is used instead of petroleum products."
+ },
+ {
+  "test": 0,
+  "skill": "Restraint monitoring",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "A client is in soft wrist restraints by order. Which actions should the nurse take? Select all that apply.",
+  "options": [
+   "Check circulation in the hands regularly",
+   "Release each restraint to give range of motion",
+   "Tie the restraints to the bed frame",
+   "Tie the restraints to the side rails",
+   "Leave the call bell out of reach"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Restraints are tied to the frame, which moves with the bed, and are released regularly to check skin and circulation and move the joints. Tying to rails can injure the client when the rail is lowered."
+ },
+ {
+  "test": 0,
+  "skill": "Needlestick injury",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse gets a needlestick from a used needle. What should the nurse do first?",
+  "options": [
+   "Wash the site with soap and water",
+   "Squeeze the site hard to make it bleed",
+   "Apply bleach to the puncture",
+   "Finish the shift, then report it"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The site is washed right away, then the injury is reported at once so testing and any preventive treatment can start quickly. Squeezing and harsh chemicals damage tissue and are not recommended."
+ }
+]

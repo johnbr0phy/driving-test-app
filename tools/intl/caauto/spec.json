@@ -1,0 +1,46 @@
+{
+  "id": "caauto",
+  "stateCode": "CAAUTO",
+  "idBase": 8700,
+  "prefix": "CAAUTO-",
+  "slug": "/red-seal-automotive",
+  "landingPath": "/red-seal-automotive-service-technician-practice-test",
+  "dataFile": "data/red-seal-automotive-questions.json",
+  "name": "Red Seal Automotive Service Technician Practice Test",
+  "shortName": "Red Seal Auto",
+  "examLabel": "Red Seal Automotive Service Technician exam",
+  "fullName": "Red Seal Automotive Service Technician (310S) interprovincial exam",
+  "icon": "car",
+  "passPct": 70,
+  "outlineComment": "Red Seal Automotive Service Technician exam (310S in Ontario), breakdown by Major Work Activity on\nred-seal.ca (exam-information and exam-weightings pages, checked October 2026), which follows the 2023 RSOS\n(MWA H, hybrid and electric vehicles, is new in it): 125 questions, A 9, B 22, C 12, D 17, E 23, F 23, G 10, H 9.\nScaled to 50 per test: 4/9/5/7/9/9/4/3. 4 hours, 70% pass (Red Seal Exam Preparation Guide). All items original.",
+  "categories": [
+    {"key": "caautoOcc", "label": "Common Occupational Skills", "perTest": 4, "segment": "OCC", "mwa": "A"},
+    {"key": "caautoEngine", "label": "Engine & Engine Support Systems", "perTest": 9, "segment": "ENG", "mwa": "B"},
+    {"key": "caautoNetwork", "label": "Module Communication Networks", "perTest": 5, "segment": "NET", "mwa": "C"},
+    {"key": "caautoDriveline", "label": "Driveline Systems", "perTest": 7, "segment": "DRV", "mwa": "D"},
+    {"key": "caautoElectrical", "label": "Electrical & Comfort Control (HVAC)", "perTest": 9, "segment": "ELE", "mwa": "E"},
+    {"key": "caautoChassis", "label": "Steering, Suspension, Brakes & Tires", "perTest": 9, "segment": "CHS", "mwa": "F"},
+    {"key": "caautoBody", "label": "Restraints, Body & Accessories", "perTest": 4, "segment": "BOD", "mwa": "G"},
+    {"key": "caautoHev", "label": "Hybrid & Electric Vehicles", "perTest": 3, "segment": "HEV", "mwa": "H"}
+  ],
+  "pools": {"caautoOcc": 16, "caautoEngine": 36, "caautoNetwork": 20, "caautoDriveline": 28, "caautoElectrical": 36, "caautoChassis": 36, "caautoBody": 16, "caautoHev": 12},
+  "trainingSets": "testSets(8700, 4): sets 8701-8704, one per practice test; tests 8701-8704",
+  "copy": {
+    "guestPrompt": "to save your Red Seal progress and track every question you miss",
+    "trainingHeading": "Train for each test",
+    "trainingSub": "Four sets, one per practice test, each holding exactly that test's 50 questions across all eight Major Work Activities. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions in the Red Seal exam's proportions, 70% to pass",
+    "heroSubs": [
+      "Eight Major Work Activities, four tests. Electrical, chassis and engine are the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Red Seal exam."
+    ],
+    "sourceLine": "Based on the Red Seal exam breakdown for Automotive Service Technician (2023 RSOS). Original questions; the real exam has 125 questions in 4 hours."
+  },
+  "blurb": "Free practice for the Red Seal Automotive Service Technician exam (310S in Ontario): engines, networks, driveline, electrical and HVAC, brakes and steering, restraints and hybrid and EV systems, with the real 70% pass mark.",
+  "org": "Red Seal Program · interprovincial trade exam",
+  "searchAliases": "red seal auto mechanic automotive technician 310s interprovincial exam ccda journeyperson certificate of qualification ontario alberta bc canada apprentice licensed mechanic",
+  "hubGroup": "Canada school and trade tests"
+}

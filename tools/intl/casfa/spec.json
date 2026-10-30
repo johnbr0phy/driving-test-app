@@ -1,0 +1,24 @@
+{
+  "id": "casfa",
+  "stateCode": "CASFA",
+  "idBase": 9400,
+  "prefix": "CASFA-",
+  "slug": "/standard-first-aid",
+  "landingPath": "/standard-first-aid-canada-practice-test",
+  "dataFile": "data/standard-first-aid-questions.json",
+  "name": "Standard First Aid Practice Test",
+  "shortName": "Standard First Aid",
+  "examLabel": "Standard First Aid & CPR C",
+  "fullName": "Standard (Intermediate) First Aid with CPR Level C and AED written evaluation",
+  "icon": "bandage",
+  "passPct": 75,
+  "categories": [
+    {"key": "casfaRole", "label": "The First Aider's Role, Consent & Assessment", "perTest": 7, "segment": "ROL", "module": "role"},
+    {"key": "casfaCpr", "label": "CPR Level C & AED", "perTest": 9, "segment": "CPR", "module": "cpr"},
+    {"key": "casfaAirway", "label": "Choking & Breathing Emergencies", "perTest": 6, "segment": "AIR", "module": "airway"},
+    {"key": "casfaBleed", "label": "Wounds, Bleeding & Shock", "perTest": 7, "segment": "BLD", "module": "bleed"},
+    {"key": "casfaInjury", "label": "Bone, Joint, Head, Spine & Chest Injuries", "perTest": 7, "segment": "INJ", "module": "injury"},
+    {"key": "casfaMedical", "label": "Sudden Medical Emergencies", "perTest": 8, "segment": "MED", "module": "medical"},
+    {"key": "casfaEnviro", "label": "Burns, Eyes, Poisons & Environment", "perTest": 6, "segment": "ENV", "module": "env"}
+  ]
+}

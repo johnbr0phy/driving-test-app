@@ -1,0 +1,417 @@
+[
+ {
+  "test": 1,
+  "skill": "Therapeutic communication",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client scheduled for a mastectomy says, \"I keep wondering what my husband will think.\" Which response is most therapeutic?",
+  "options": [
+   "\"Tell me more about what worries you.\"",
+   "\"I'm sure he will love you just the same.\"",
+   "\"Many women feel fine after this surgery.\"",
+   "\"Why do you think he will be upset?\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "An open invitation lets the client explore her feelings. False reassurance shuts the conversation down, and \"why\" questions can sound judgmental."
+ },
+ {
+  "test": 1,
+  "skill": "Suicide risk",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with depression says, \"Soon none of this will matter.\" What should the nurse do first?",
+  "options": [
+   "Ask directly whether the client is thinking of suicide",
+   "Change the subject to something more cheerful",
+   "Tell the client that things will get better",
+   "Leave the client alone to rest"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Indirect statements can signal suicidal thinking. Asking directly does not plant the idea; it opens the conversation and guides the next steps for safety."
+ },
+ {
+  "test": 1,
+  "skill": "Alcohol withdrawal",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client who drinks heavily every day was admitted for surgery 24 hours ago. Which finding suggests alcohol withdrawal?",
+  "options": [
+   "Hand tremor, sweating and anxiety",
+   "Slow pulse and low blood pressure",
+   "Pinpoint pupils and drowsiness",
+   "Warm, flushed skin and slurred speech"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Withdrawal usually starts 6 to 24 hours after the last drink, with tremor, sweating, anxiety and a fast pulse. The other findings fit intoxication or opioid effects."
+ },
+ {
+  "test": 1,
+  "skill": "Delirium",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "An 83-year-old with a urinary tract infection became confused over a few hours. Which finding helps the nurse recognize delirium rather than dementia?",
+  "options": [
+   "Sudden onset with attention that varies",
+   "Gradual memory loss over two years",
+   "The same level of confusion all day long",
+   "Long-held habits and daily routines"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Delirium starts suddenly, fluctuates and impairs attention; it often has a treatable cause such as infection. Dementia develops gradually and is more stable from hour to hour."
+ },
+ {
+  "test": 1,
+  "skill": "Dementia care",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "Which approaches help a client with moderate Alzheimer disease at mealtimes? Select all that apply.",
+  "options": [
+   "Offer finger foods the client can eat while walking",
+   "Serve meals in a quiet setting",
+   "Give one simple instruction at a time",
+   "Offer a long menu with many choices",
+   "Rush the meal to keep the client focused"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Finger foods, a calm setting and one-step cues support eating. Many choices overwhelm the client, and rushing increases agitation."
+ },
+ {
+  "test": 1,
+  "skill": "Anxiety",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client is having a panic attack, breathing fast and saying, \"I'm going to die.\" What should the nurse do first?",
+  "options": [
+   "Stay with the client and speak in short, calm sentences",
+   "Teach the client about the causes of panic",
+   "Leave the client alone in a quiet room",
+   "Ask the client to describe the attack in detail"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "During panic, the client cannot absorb teaching or detailed questions. A calm presence and simple directions, such as slow breathing, help most."
+ },
+ {
+  "test": 1,
+  "skill": "Grief",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A widow says, \"I keep thinking I hear him in the kitchen.\" It has been 3 weeks since her husband died. How should the nurse respond?",
+  "options": [
+   "\"That is common after a loss. How are you coping?\"",
+   "\"You need to see a psychiatrist about that.\"",
+   "\"Try to keep busy so you don't think about him.\"",
+   "\"It's time to start moving on.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Sensing the presence of the person who died is a common part of normal grief. The nurse normalizes it and assesses coping and support."
+ },
+ {
+  "test": 1,
+  "skill": "Intimate partner violence",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse suspects intimate partner violence in a client who comes to the clinic with her partner. How should the nurse screen?",
+  "options": [
+   "Ask the client privately, away from the partner",
+   "Ask both of them together to save time",
+   "Ask the partner whether he has hit her",
+   "Wait until the client brings it up"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Screening is done in private so the client can answer safely. Questioning in front of the partner can put her at greater risk."
+ },
+ {
+  "test": 1,
+  "skill": "Hallucinations",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with schizophrenia says, \"The voices are telling me I'm evil.\" Which response is best?",
+  "options": [
+   "\"I don't hear them, but you seem frightened.\"",
+   "\"What else are the voices telling you?\"",
+   "\"The voices are not real, so ignore them.\"",
+   "\"You are not evil, so don't worry.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The nurse gently presents reality without arguing and responds to the feeling behind the experience. Exploring the content in detail reinforces it, and dismissing it damages trust."
+ },
+ {
+  "test": 1,
+  "skill": "Indigenous health practices",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A First Nations client asks to have an Elder come to perform a smudging ceremony in hospital. What should the nurse do?",
+  "options": [
+   "Arrange it following the hospital's smudging policy",
+   "Explain that ceremonies are not allowed in hospital",
+   "Suggest waiting until the client goes home",
+   "Ask the provider whether the ceremony is medically needed"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Incorporating Indigenous health knowledge and practices is part of culturally safe care. Many hospitals have smudging policies and Indigenous health staff to support it while keeping smoke alarms and oxygen safe."
+ },
+ {
+  "test": 2,
+  "skill": "Depression in older adults",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Since her husband died 6 months ago, an 80-year-old has lost weight, stopped going to church and says she is \"just tired.\" What should the nurse do?",
+  "options": [
+   "Report possible depression for assessment",
+   "Tell the family this is normal aging",
+   "Suggest she move to a care home",
+   "Encourage her to take a daily nap"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Withdrawal, weight loss and fatigue months after a loss can signal depression, which is common and treatable in older adults but often mistaken for aging."
+ },
+ {
+  "test": 2,
+  "skill": "Antipsychotic adherence",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with schizophrenia stopped taking olanzapine because \"I'm putting on weight.\" What is the nurse's best action?",
+  "options": [
+   "Discuss the concern and report it to the prescriber",
+   "Tell the client weight gain is a small price to pay",
+   "Advise the client to take half the dose",
+   "Accept the decision and close the file"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Exploring reasons for non-adherence and involving the prescriber can lead to diet support or another drug. Changing the dose without an order is not safe."
+ },
+ {
+  "test": 2,
+  "skill": "De-escalation",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client in the emergency department is pacing, shouting and clenching his fists. What should the nurse do first?",
+  "options": [
+   "Speak calmly and keep a safe distance near the exit",
+   "Stand close and touch his arm to calm him",
+   "Tell him security will remove him if he continues",
+   "Turn away and ignore the behaviour"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A calm voice and space reduce the sense of threat, and staying near the exit keeps the nurse safe. Touch, threats and ignoring the client can make escalation worse."
+ },
+ {
+  "test": 2,
+  "skill": "Defense mechanisms",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client who was just told he has diabetes says, \"The lab must have mixed up my blood.\" Which defense mechanism is he using?",
+  "options": [
+   "Denial",
+   "Projection",
+   "Displacement",
+   "Sublimation"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Denial is refusing to accept a painful reality, common right after bad news. Projection blames others for one's own feelings, displacement redirects emotion, and sublimation channels it into acceptable activity."
+ },
+ {
+  "test": 2,
+  "skill": "End-of-life care",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "A client is in the last days of life. Which nursing actions support the client and family? Select all that apply.",
+  "options": [
+   "Offer mouth care for a dry mouth",
+   "Explain that breathing changes are expected",
+   "Invite the family to help with care if they wish",
+   "Keep talking to the client, who may still hear",
+   "Wake the client to eat full meals"
+  ],
+  "correct": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explanation": "Comfort care, preparing the family for expected changes, involving them if they wish and speaking to the client, since hearing may last until the end, are central to end-of-life care. Waking the client to eat full meals does not support comfort."
+ },
+ {
+  "test": 2,
+  "skill": "Cultural care",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A Muslim client is fasting for Ramadan and is scheduled for a morning dose of an oral medication. What should the nurse do?",
+  "options": [
+   "Ask the client how they would like to manage the fast",
+   "Give the dose without discussing it",
+   "Tell the client fasting is not allowed in hospital",
+   "Skip all of the client's medications"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Respecting cultural and religious practice means asking the client. Many people who are ill are exempt from fasting, and timing can sometimes be changed with the prescriber and pharmacist."
+ },
+ {
+  "test": 2,
+  "skill": "Crisis intervention",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client whose house burned down last night is crying and cannot decide what to do next. What is the nurse's priority?",
+  "options": [
+   "Help the client meet immediate needs such as shelter",
+   "Explore the client's childhood coping patterns",
+   "Refer the client for long-term therapy only",
+   "Tell the client to be grateful no one was hurt"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Crisis intervention focuses on the present problem and immediate safety and needs, with direct help to solve them. Long-term exploration comes later."
+ },
+ {
+  "test": 2,
+  "skill": "Mania",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client in an acute manic episode will not sit down to eat. Which approach should the nurse use?",
+  "options": [
+   "Offer high-calorie finger foods and drinks",
+   "Wait until the client asks for food",
+   "Serve three large meals at the table",
+   "Tell the client meals are only at set times"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Clients in mania burn many calories and cannot sit still, so portable high-calorie foods they can eat on the move help keep up nutrition."
+ },
+ {
+  "test": 2,
+  "skill": "Body image",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client who had a below-the-knee amputation refuses to look at the stump. What should the nurse do?",
+  "options": [
+   "Accept this and offer chances to look when ready",
+   "Insist the client looks during each dressing change",
+   "Cover the area so the client never has to see it",
+   "Tell the client that looking will make it easier"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Adjusting to a changed body takes time. The nurse respects the client's pace while offering gentle opportunities to look and to talk about the loss."
+ },
+ {
+  "test": 2,
+  "skill": "Opioid use disorder",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with opioid use disorder asks about treatment options. Which response is accurate?",
+  "options": [
+   "\"Medications such as buprenorphine-naloxone reduce cravings.\"",
+   "\"Stopping all opioids at once at home is safest.\"",
+   "\"Treatment only works if you are admitted for a year.\"",
+   "\"Naloxone is a daily medicine to stop cravings.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Opioid agonist treatment such as buprenorphine-naloxone or methadone is first-line care in Canada. Naloxone reverses an overdose; it is not a daily treatment."
+ },
+ {
+  "test": 0,
+  "skill": "Non-substance dependencies",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client says he has spent his rent money on online betting again. Which response is most helpful?",
+  "options": [
+   "\"Would you like to hear about gambling supports?\"",
+   "\"You just need to stop logging in to those sites.\"",
+   "\"Lots of people bet online, so it's nothing.\"",
+   "\"Why would you do that with your rent money?\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Problem gambling is a recognized dependency. Offering resources without judgment supports change; provincial helplines and counselling are available."
+ },
+ {
+  "test": 0,
+  "skill": "Eating disorders",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A teen with anorexia nervosa is starting nutritional rehabilitation. Which finding should the nurse report right away?",
+  "options": [
+   "A serum phosphate below the normal range",
+   "Asking to choose her own meal times",
+   "Feeling full after small meals",
+   "Saying she is afraid of gaining weight"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Low phosphate early in refeeding signals refeeding syndrome, which can cause heart failure and dysrhythmias. Fullness and fear of weight gain are expected."
+ },
+ {
+  "test": 0,
+  "skill": "Trauma-informed care",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with post-traumatic stress disorder startles when staff enter the room. Which approach is trauma-informed?",
+  "options": [
+   "Knock, say who you are and explain what you will do",
+   "Enter quietly to avoid disturbing the client",
+   "Approach from behind to keep the client calm",
+   "Ask the client to describe the trauma in detail"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Predictability and choice help a client with trauma feel safe. Surprises and pressure to relive the trauma can trigger symptoms."
+ },
+ {
+  "test": 0,
+  "skill": "Spiritual distress",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client with a new cancer diagnosis says, \"I don't understand why God would do this to me.\" Which response is best?",
+  "options": [
+   "\"This seems to be shaking your faith. Can you tell me more?\"",
+   "\"God doesn't give us more than we can handle.\"",
+   "\"You shouldn't question your beliefs right now.\"",
+   "\"Let's focus on your treatment plan instead.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The nurse reflects the feeling and invites the client to talk, and can offer a spiritual care referral. Clichés and redirecting dismiss the client's distress."
+ }
+]

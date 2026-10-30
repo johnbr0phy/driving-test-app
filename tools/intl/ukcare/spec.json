@@ -1,0 +1,26 @@
+{
+  "id": "ukcare",
+  "stateCode": "UKCARE",
+  "idBase": 8600,
+  "prefix": "UKCARE-",
+  "slug": "/care-certificate",
+  "landingPath": "/care-certificate-practice-test",
+  "dataFile": "data/uk-care-certificate-questions.json",
+  "name": "Care Certificate Practice Test",
+  "shortName": "Care Certificate",
+  "examLabel": "Care Certificate",
+  "fullName": "Care Certificate (16 standards, England)",
+  "icon": "heart",
+  "passPct": 80,
+  "outlineComment": "The Care Certificate standards, updated March 2025 (NHS England, Skills for Care and Skills for Health; 16 standards, to be met within 12 weeks of starting). There is no national exam: workplace assessors sign off knowledge and observed practice. The 16 standards are grouped into 8 categories; counts are ours. 80% is a readiness line, not an official pass mark. All items original.",
+  "categories": [
+    {"key": "ukcareRole", "label": "Your Role & Personal Development", "perTest": 5, "segment": "ROL", "standards": "1, 2"},
+    {"key": "ukcareDuty", "label": "Duty of Care & Equality", "perTest": 6, "segment": "DUT", "standards": "3, 4"},
+    {"key": "ukcarePerson", "label": "Person-Centred Care, Privacy & Dignity", "perTest": 8, "segment": "PCW", "standards": "5, 7"},
+    {"key": "ukcareComms", "label": "Communication & Handling Information", "perTest": 6, "segment": "COM", "standards": "6, 14"},
+    {"key": "ukcareNutrition", "label": "Fluids, Nutrition & Basic Life Support", "perTest": 5, "segment": "FNB", "standards": "8, 12"},
+    {"key": "ukcareAwareness", "label": "Mental Health, Dementia, Learning Disability & Autism", "perTest": 6, "segment": "AWR", "standards": "9, 16"},
+    {"key": "ukcareSafeguard", "label": "Safeguarding Adults & Children", "perTest": 7, "segment": "SAF", "standards": "10, 11"},
+    {"key": "ukcareSafety", "label": "Health & Safety, Infection Control", "perTest": 7, "segment": "HSI", "standards": "13, 15"}
+  ]
+}

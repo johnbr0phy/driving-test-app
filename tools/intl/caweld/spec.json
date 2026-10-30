@@ -1,0 +1,26 @@
+{
+  "id": "caweld",
+  "stateCode": "CAWELD",
+  "idBase": 9000,
+  "prefix": "CAWELD-",
+  "slug": "/red-seal-welder",
+  "landingPath": "/red-seal-welder-practice-test",
+  "dataFile": "data/red-seal-welder-questions.json",
+  "name": "Red Seal Welder Practice Test",
+  "shortName": "Red Seal Welder",
+  "examLabel": "Red Seal Welder exam",
+  "fullName": "Red Seal Welder interprovincial exam (456A in Ontario)",
+  "icon": "hardhat",
+  "passPct": 70,
+  "outlineSource": "Red Seal exam breakdown for Welder (red-seal.ca, 2023 RSOS, in force from early 2026): 125 questions; MWA A 20, B 28, C 23, D 54",
+  "categories": [
+    {"key": "caweldCommon", "label": "Common Occupational Skills", "perTest": 8, "segment": "COM", "mwa": "A (20 of 125)"},
+    {"key": "caweldLayout", "label": "Layout & Drawings", "perTest": 5, "segment": "LAY", "mwa": "B-7 (12)"},
+    {"key": "caweldFab", "label": "Fabrication & Fit-Up", "perTest": 6, "segment": "FAB", "mwa": "B-8 (16)"},
+    {"key": "caweldCut", "label": "Cutting & Gouging", "perTest": 9, "segment": "CUT", "mwa": "C (23)"},
+    {"key": "caweldSmaw", "label": "Shielded Metal Arc Welding (SMAW)", "perTest": 8, "segment": "SMW", "mwa": "D-13 (18)"},
+    {"key": "caweldWire", "label": "GMAW, FCAW & MCAW", "perTest": 7, "segment": "GMW", "mwa": "D-14 (18)"},
+    {"key": "caweldGtaw", "label": "GTAW & Submerged Arc (SAW)", "perTest": 7, "segment": "GTW", "mwa": "D-15 + D-16 (13 + 5)"}
+  ],
+  "trainingSets": "testSets(9000, 4): one set per practice test, 4 tests + 4 sets = 8 dashboard steps"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "aurcg",
+  "stateCode": "AURCG",
+  "idBase": 9600,
+  "prefix": "AURCG-",
+  "slug": "/rcg",
+  "landingPath": "/rcg-practice-test",
+  "dataFile": "data/au-rcg-questions.json",
+  "name": "RCG Practice Test",
+  "shortName": "RCG",
+  "examLabel": "RCG / RSG assessment",
+  "fullName": "SITHGAM022 Provide responsible gambling services (RCG / RSG)",
+  "icon": "shield",
+  "passPct": 80,
+  "outlineComment": "SITHGAM022 Provide responsible gambling services, SIT Tourism, Travel and Hospitality training package, Release 1 (current on training.gov.au, checked 30 Oct 2026; supersedes SITHGAM001, no successor). Elements: 1 implement responsible gambling practices, 2 provide information and assistance on gambling harm and harm minimisation; categories follow the unit's knowledge and performance evidence. The unit is competency based and states call it RCG (NSW), RSG (Vic, Qld) or similar; there is no national pass mark, so 80% is a readiness line. State rules are 'varies by state'. All items original.",
+  "categories": [
+    {"key": "aurcgLaw", "label": "Laws, Codes & Compliance", "perTest": 8, "segment": "LAW"},
+    {"key": "aurcgHarm", "label": "Gambling Harm & Warning Signs", "perTest": 9, "segment": "HRM"},
+    {"key": "aurcgOdds", "label": "Odds, Chance & Gambling Myths", "perTest": 7, "segment": "ODD"},
+    {"key": "aurcgEnv", "label": "Safer Gambling Environment", "perTest": 8, "segment": "ENV"},
+    {"key": "aurcgExcl", "label": "Self-Exclusion & Exclusion", "perTest": 7, "segment": "EXC"},
+    {"key": "aurcgAssist", "label": "Helping Customers & Support Services", "perTest": 7, "segment": "AST"},
+    {"key": "aurcgIncident", "label": "Incidents, Complaints & Records", "perTest": 4, "segment": "INC"}
+  ],
+  "categoryNotes": {
+    "aurcgLaw": "PC 1.1, 1.2; KE legislation, codes of practice, roles of staff/supervisors/managers, ramifications of non-compliance, public interest reasons; PE under-age gambling, refusal of credit",
+    "aurcgHarm": "PC 2.1; KE signs and impacts of harm from gambling (the 10 listed signs), economic costs",
+    "aurcgOdds": "KE signage on chances of winning and probability; PC 2.1 accurate information",
+    "aurcgEnv": "PC 1.4, 2.3; KE harm minimisation principles (signage inside venue, clocks, no machine advertising, ATMs, no credit withdrawals); PE passage of time, breaks in play, signage and promotions",
+    "aurcgExcl": "PC 2.2; KE self, third-party and venue exclusion, breaches, referral; BetStop for online",
+    "aurcgAssist": "PC 2.1, 2.4; KE counselling services and referral, confidentiality and privacy; foundation skills: courteous, discreet, non-confrontational language",
+    "aurcgIncident": "PC 1.2, 1.3; KE records of incidents and staff action; PE disputes or complaints"
+  },
+  "trainingSets": "testSets(9600, 4): sets 9601-9604, one per test"
+}

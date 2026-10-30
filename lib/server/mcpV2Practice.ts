@@ -13,21 +13,32 @@ import '@/lib/v2/banks/act';
 import '@/lib/v2/banks/aplus';
 import '@/lib/v2/banks/asvab';
 import '@/lib/v2/banks/aws';
+import '@/lib/v2/banks/elevenplus';
 import '@/lib/v2/banks/emt';
+import '@/lib/v2/banks/eqao9';
+import '@/lib/v2/banks/fsmaths';
+import '@/lib/v2/banks/gcsecs';
+import '@/lib/v2/banks/gcsehigher';
 import '@/lib/v2/banks/gcsemaths';
+import '@/lib/v2/banks/gcsescience';
 import '@/lib/v2/banks/ged';
 import '@/lib/v2/banks/hesi';
+import '@/lib/v2/banks/hscmaths';
 import '@/lib/v2/banks/ks2';
 import '@/lib/v2/banks/naplan';
+import '@/lib/v2/banks/naplan7';
 import '@/lib/v2/banks/nclex';
 import '@/lib/v2/banks/nclexpn';
+import '@/lib/v2/banks/rexpn';
 import '@/lib/v2/banks/nswsel';
+import '@/lib/v2/banks/ocnsw';
 import '@/lib/v2/banks/osslt';
 import '@/lib/v2/banks/paramedic';
 import '@/lib/v2/banks/sat';
 import '@/lib/v2/banks/secplus';
 import '@/lib/v2/banks/teas';
 import '@/lib/v2/banks/timestables';
+import '@/lib/v2/banks/vicsel';
 
 // MCP is another view of the site's drills, NOT a second mastery store.
 // The transport document only remembers the presented item/order and a

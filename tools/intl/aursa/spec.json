@@ -1,0 +1,25 @@
+{
+  "id": "aursa",
+  "stateCode": "AURSA",
+  "idBase": 9500,
+  "prefix": "AURSA-",
+  "slug": "/rsa",
+  "landingPath": "/rsa-practice-test",
+  "dataFile": "data/au-rsa-questions.json",
+  "name": "RSA Practice Test",
+  "shortName": "RSA",
+  "examLabel": "RSA assessment (SITHFAB021)",
+  "fullName": "SITHFAB021 Provide responsible service of alcohol (Australia)",
+  "icon": "wine",
+  "passPct": 80,
+  "outlineComment": "SITHFAB021 Provide responsible service of alcohol, Release 1 (training.gov.au, checked Oct 2026): 4 elements, knowledge evidence. No national exam or published weights; RTOs assess, usually requiring every knowledge question correct. 80% is a readiness line. State rules (ID, minors, certification) are 'varies by state'. All items original.",
+  "categories": [
+    {"key": "aursaLaw", "label": "RSA Law & Harm Minimisation", "perTest": 9, "segment": "LAW"},
+    {"key": "aursaAge", "label": "Minors & Proof of Age", "perTest": 9, "segment": "AGE"},
+    {"key": "aursaDrinks", "label": "Standard Drinks & Effects", "perTest": 9, "segment": "DRK"},
+    {"key": "aursaIntox", "label": "Recognising Intoxication", "perTest": 9, "segment": "INT"},
+    {"key": "aursaRefuse", "label": "Refusing Service", "perTest": 8, "segment": "REF"},
+    {"key": "aursaCare", "label": "At-Risk Customers & Safety", "perTest": 6, "segment": "CAR"}
+  ],
+  "trainingSets": "testSets(9500, 4)"
+}

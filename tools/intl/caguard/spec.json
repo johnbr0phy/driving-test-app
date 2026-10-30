@@ -1,0 +1,27 @@
+{
+  "id": "caguard",
+  "stateCode": "CAGUARD",
+  "idBase": 9300,
+  "prefix": "CAGUARD-",
+  "slug": "/ontario-security-guard",
+  "landingPath": "/ontario-security-guard-practice-test",
+  "dataFile": "data/ontario-security-guard-questions.json",
+  "name": "Ontario Security Guard Practice Test",
+  "shortName": "Security Guard",
+  "examLabel": "Ontario security guard test",
+  "fullName": "Ontario security guard licence test (ministry basic test)",
+  "icon": "badge",
+  "passPct": 62,
+  "categories": [
+    {"key": "caguardIndustry", "label": "The Industry, PSISA & Code of Conduct", "perTest": 7, "segment": "IND", "syllabus": "1 + 2 (4 + 5 h)"},
+    {"key": "caguardProcedures", "label": "Basic Security Procedures", "perTest": 5, "segment": "PRO", "syllabus": "3 (8 h)"},
+    {"key": "caguardReports", "label": "Report Writing", "perTest": 4, "segment": "REP", "syllabus": "4 (4 h)"},
+    {"key": "caguardEmergency", "label": "Health, Safety & Emergency Response", "perTest": 7, "segment": "EMG", "syllabus": "5 + 6 (2 + 8 h)"},
+    {"key": "caguardLaw", "label": "Canadian Law & Legal Authorities", "perTest": 13, "segment": "LAW", "syllabus": "7 + 8 (9 + 17.5 h)"},
+    {"key": "caguardCommunication", "label": "Communication & Sensitivity", "perTest": 6, "segment": "COM", "syllabus": "9 + 10 (7 + 5 h)"},
+    {"key": "caguardForce", "label": "Use of Force", "perTest": 4, "segment": "FOR", "syllabus": "11 (4 h)"},
+    {"key": "caguardFirstAid", "label": "Emergency First Aid", "perTest": 4, "segment": "FAI", "syllabus": "12 (6.5 h)"}
+  ],
+  "weighting": "Per-test counts follow the syllabus's suggested total hours (80 h incl. outside class), with legal authorities capped at 13 so smaller sections still get 4 items.",
+  "trainingSets": "testSets(9300, 4): sets 9301-9304, one per practice test; tests 9301-9304"
+}

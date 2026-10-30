@@ -1,0 +1,25 @@
+{
+  "id": "aufirstaid",
+  "stateCode": "AUFIRSTAID",
+  "idBase": 9800,
+  "prefix": "AUFIRSTAID-",
+  "slug": "/au-first-aid",
+  "landingPath": "/first-aid-course-practice-test-australia",
+  "dataFile": "data/au-first-aid-questions.json",
+  "name": "HLTAID011 Provide First Aid Practice Test",
+  "shortName": "First Aid (HLTAID011)",
+  "examLabel": "HLTAID011 Provide First Aid",
+  "fullName": "HLTAID011 Provide First Aid knowledge assessment (Australia)",
+  "icon": "bandage",
+  "passPct": 80,
+  "categories": [
+    {"key": "aufirstaidRole", "label": "Role, Legal & DRSABCD", "perTest": 7, "segment": "ROL", "module": "role"},
+    {"key": "aufirstaidCpr", "label": "CPR, AED & the Unconscious Casualty", "perTest": 9, "segment": "CPR", "module": "cpr"},
+    {"key": "aufirstaidAirway", "label": "Choking, Asthma & Anaphylaxis", "perTest": 7, "segment": "AIR", "module": "airway"},
+    {"key": "aufirstaidBleed", "label": "Bleeding, Shock, Wounds & Eyes", "perTest": 7, "segment": "BLD", "module": "bleed"},
+    {"key": "aufirstaidBones", "label": "Fractures, Sprains, Head & Spine", "perTest": 6, "segment": "BON", "module": "bones"},
+    {"key": "aufirstaidMedical", "label": "Heart, Stroke, Diabetes, Seizures & Poisons", "perTest": 6, "segment": "MED", "module": "medical"},
+    {"key": "aufirstaidEnviro", "label": "Burns, Heat, Cold & Smoke", "perTest": 4, "segment": "ENV", "module": "enviro"},
+    {"key": "aufirstaidVenom", "label": "Bites & Stings", "perTest": 4, "segment": "VEN", "module": "venom"}
+  ]
+}

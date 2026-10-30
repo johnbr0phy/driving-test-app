@@ -1,0 +1,36 @@
+"""Build data/red-seal-automotive-questions.json from q_*.py.
+
+Usage: python3 -I tools/intl/caauto/build.py [out]
+Each q_<name>.py holds CAT, SEG and Q = [(stem, key, [3 wrong], explanation), ...].
+The key is placed in slot i % 4 so letters rotate A, B, C, D within each category.
+"""
+import importlib.util, json, os, sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
+ORDER = ["occ", "engine", "network", "driveline", "electrical", "chassis", "body", "hev"]
+out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "red-seal-automotive-questions.json")
+
+rows = []
+for m in ORDER:
+    p = os.path.join(HERE, f"q_{m}.py")
+    spec = importlib.util.spec_from_file_location(m, p)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    for i, (q, key, wrong, expl) in enumerate(mod.Q):
+        assert len(wrong) == 3, (m, i)
+        assert key not in wrong, (m, i)
+        k = i % 4
+        opts = list(wrong)
+        opts.insert(k, key)
+        rows.append({
+            "type": "CAAUTO", "state": "ALL", "questionId": f"CAAUTO-{mod.SEG}-{i+1:03d}",
+            "category": mod.CAT, "question": q, "optionA": opts[0], "optionB": opts[1],
+            "optionC": opts[2], "optionD": opts[3], "correctAnswer": "ABCD"[k],
+            "correctIndex": k, "explanation": expl,
+        })
+
+with open(out, "w", encoding="utf-8") as f:
+    json.dump(rows, f, ensure_ascii=False, indent=2)
+    f.write("\n")
+print(len(rows), "rows ->", out)

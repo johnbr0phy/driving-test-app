@@ -1,0 +1,22 @@
+{
+  "id": "caplumb",
+  "stateCode": "CAPLUMB",
+  "idBase": 8800,
+  "prefix": "CAPLUMB-",
+  "slug": "/red-seal-plumber",
+  "landingPath": "/red-seal-plumber-practice-test",
+  "dataFile": "data/red-seal-plumber-questions.json",
+  "passPct": 70,
+  "outline": "Red Seal Plumber exam weightings by Major Work Activity (red-seal.ca, current page, 2023 RSOS; checked 30 Oct 2026): A 11, B 10, C 26, D 19, E 13, F 13, G 8 percent of 125 questions. Scaled to 50 per test.",
+  "categories": [
+    {"key": "caplumbCommon", "label": "Common Occupational Skills", "perTest": 6, "segment": "COM", "mwa": "A 11%"},
+    {"key": "caplumbPipe", "label": "Pipe Preparation & Joining", "perTest": 5, "segment": "PIP", "mwa": "B 10%"},
+    {"key": "caplumbDwv", "label": "Sewers, Sewage Treatment & DWV", "perTest": 13, "segment": "DWV", "mwa": "C 26%"},
+    {"key": "caplumbWater", "label": "Water Service & Distribution", "perTest": 10, "segment": "WAT", "mwa": "D 19%"},
+    {"key": "caplumbFixtures", "label": "Fixtures, Appliances & Water Treatment", "perTest": 6, "segment": "FIX", "mwa": "E 13%"},
+    {"key": "caplumbHydronic", "label": "Hydronic & Low-Pressure Steam", "perTest": 6, "segment": "HYD", "mwa": "F 13%"},
+    {"key": "caplumbSpecial", "label": "Specialized Systems", "perTest": 4, "segment": "SPC", "mwa": "G 8%"}
+  ],
+  "trainingSets": "testSets(8800, 4): one per practice test, 8801-8804",
+  "tests": "8801-8804"
+}

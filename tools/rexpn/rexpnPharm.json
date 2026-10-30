@@ -1,0 +1,562 @@
+[
+ {
+  "test": 1,
+  "skill": "IV flow rate",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "A client is to receive 1000 mL of 0.9% sodium chloride over 8 hours by gravity. The tubing drop factor is 15 gtt/mL. How many gtt/min should the nurse set? Record your answer as a whole number.",
+  "numeric": {
+   "answers": [
+    "31"
+   ],
+   "tolerance": 0
+  },
+  "explanation": "1000 mL over 480 minutes, times 15 gtt/mL, is 31.25 gtt/min, which rounds to 31. Forgetting to convert hours to minutes gives an impossible rate."
+ },
+ {
+  "test": 1,
+  "skill": "Dosage calculation",
+  "difficulty": 1,
+  "format": "numeric",
+  "stem": "Metoprolol 12.5 mg PO is ordered. The tablets on hand are 25 mg and scored. How many tablets should the nurse give? Record your answer to one decimal place.",
+  "numeric": {
+   "answers": [
+    "0.5"
+   ],
+   "tolerance": 0
+  },
+  "explanation": "12.5 mg divided by 25 mg per tablet is 0.5, or half a scored tablet."
+ },
+ {
+  "test": 1,
+  "skill": "Dosage calculation",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "Acetaminophen 480 mg PO is ordered for a child. The oral solution contains 160 mg per 5 mL. How many mL should the nurse give? Record your answer as a whole number.",
+  "numeric": {
+   "answers": [
+    "15"
+   ],
+   "tolerance": 0
+  },
+  "explanation": "160 mg per 5 mL is 32 mg per mL, and 480 mg divided by 32 mg/mL is 15 mL."
+ },
+ {
+  "test": 1,
+  "skill": "Dosage calculation",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "Heparin 5000 units subcut is ordered. The vial contains 10 000 units per mL. How many mL should the nurse give? Record your answer to one decimal place.",
+  "numeric": {
+   "answers": [
+    "0.5"
+   ],
+   "tolerance": 0
+  },
+  "explanation": "5000 units divided by 10 000 units/mL is 0.5 mL. Heparin is a high-alert drug, so many agencies require an independent double check."
+ },
+ {
+  "test": 1,
+  "skill": "Insulin",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client takes insulin lispro with meals. When should the nurse give the dose?",
+  "options": [
+   "Within 15 minutes before the meal",
+   "1 hour before the meal",
+   "At bedtime with a snack",
+   "2 hours after the meal"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Lispro is rapid-acting, starting in about 15 minutes, so it is given right before the meal. Giving it an hour early without food risks hypoglycemia."
+ },
+ {
+  "test": 1,
+  "skill": "Anticoagulants",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client taking warfarin has an INR of 4.6 and bleeding gums. What should the nurse do?",
+  "options": [
+   "Hold the warfarin and notify the prescriber",
+   "Give the warfarin with a glass of milk",
+   "Give the dose and recheck the INR next week",
+   "Double the next day's dose"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "An INR well above the usual target of 2 to 3, with bleeding, means too much anticoagulation. The dose is held and the prescriber may order vitamin K."
+ },
+ {
+  "test": 1,
+  "skill": "Cardiac medications",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Before giving digoxin 0.125 mg, the nurse counts an apical pulse of 52/min. The client's usual rate is 72/min. What should the nurse do?",
+  "options": [
+   "Hold the dose and report the heart rate",
+   "Give the dose and recheck the pulse in 1 hour",
+   "Give half the dose",
+   "Give the dose with food"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Digoxin slows the heart, and a rate below 60/min or a large drop from baseline can signal toxicity. The dose is held and the finding reported."
+ },
+ {
+  "test": 1,
+  "skill": "Diuretics",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client taking furosemide 40 mg daily has a potassium level of 3.1 mmol/L. Which finding should the nurse watch for?",
+  "options": [
+   "Muscle weakness and an irregular pulse",
+   "Tall, peaked T waves",
+   "Flushed skin and a fever",
+   "Increased thirst and weight gain"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Furosemide wastes potassium, and a level below 3.5 mmol/L can cause weakness, cramps and dysrhythmias. Peaked T waves happen with high potassium."
+ },
+ {
+  "test": 1,
+  "skill": "Opioids",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A client received hydromorphone 2 mg subcut 30 minutes ago. The client is hard to rouse, with a respiratory rate of 7/min. What should the nurse do first?",
+  "options": [
+   "Stimulate the client and call for help to give naloxone",
+   "Recheck the respiratory rate in 15 minutes",
+   "Raise the head of the bed and leave the room",
+   "Record the findings in the chart"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Sedation with a respiratory rate of 7/min is opioid-induced respiratory depression. The nurse stays, stimulates the client, supports breathing and gets naloxone given per order or protocol."
+ },
+ {
+  "test": 1,
+  "skill": "IV therapy",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client's peripheral IV site is cool, pale and swollen, and the infusion has slowed. What should the nurse do?",
+  "options": [
+   "Stop the infusion and remove the catheter",
+   "Flush the line hard to clear it",
+   "Raise the bag higher to speed the flow",
+   "Apply a tight dressing over the swelling"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Cool, pale swelling is infiltration: fluid is leaking into the tissue. The infusion is stopped, the catheter removed, the arm elevated and a new site started elsewhere."
+ },
+ {
+  "test": 1,
+  "skill": "Blood products",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "Ten minutes into a red blood cell transfusion, a client has chills, back pain and a temperature of 38.6 °C. What should the nurse do first?",
+  "options": [
+   "Stop the transfusion and keep the IV open with saline",
+   "Slow the transfusion and give acetaminophen",
+   "Finish the unit quickly and then call the provider",
+   "Stop the transfusion and remove the IV"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "These signs suggest an acute transfusion reaction. The transfusion is stopped at once, the line kept open with new tubing and normal saline for treatment, and the provider and blood bank are notified."
+ },
+ {
+  "test": 1,
+  "skill": "Thyroid medications",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "What should the nurse reinforce about taking levothyroxine?",
+  "options": [
+   "Take it on an empty stomach in the morning",
+   "Take it with an iron tablet at breakfast",
+   "Stop it when your energy improves",
+   "Take it at bedtime with milk"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Levothyroxine is absorbed best on an empty stomach, 30 to 60 minutes before breakfast. Iron, calcium and food reduce absorption, and the drug is usually lifelong."
+ },
+ {
+  "test": 1,
+  "skill": "Antihypertensives",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "A client is starting ramipril. Which findings should the client report? Select all that apply.",
+  "options": [
+   "Swelling of the lips or tongue",
+   "Dizziness when standing up",
+   "A persistent dry cough",
+   "Increased energy",
+   "Better sleep"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Angioedema is a rare emergency with ACE inhibitors, dizziness signals low blood pressure, and a dry cough is a common reason to switch drugs. More energy and better sleep are not side effects to report."
+ },
+ {
+  "test": 1,
+  "skill": "Controlled substances",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "At the end-of-shift narcotic count, the hydromorphone count is short by one tablet. What should the nurse do?",
+  "options": [
+   "Report it before either nurse leaves the unit",
+   "Correct the count sheet to match",
+   "Recount tomorrow when it is less busy",
+   "Let the oncoming nurse sort it out"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A count discrepancy is reported right away, following agency policy and federal and provincial rules, and both nurses stay until it is reviewed. Changing the record is falsification."
+ },
+ {
+  "test": 1,
+  "skill": "Inhaled medications",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "A client with asthma uses a salbutamol inhaler and a fluticasone inhaler. Which instructions should the nurse reinforce? Select all that apply.",
+  "options": [
+   "Use the salbutamol first when both are due",
+   "Rinse your mouth after the fluticasone",
+   "Use salbutamol for sudden shortness of breath",
+   "Use fluticasone to stop an asthma attack",
+   "Skip fluticasone on days with no symptoms"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Salbutamol opens the airways quickly, so it is the rescue drug and goes first. Fluticasone is a daily controller that does not stop an attack, and rinsing afterward prevents oral thrush."
+ },
+ {
+  "test": 2,
+  "skill": "IV flow rate",
+  "difficulty": 1,
+  "format": "numeric",
+  "stem": "A client is to receive 500 mL of IV fluid over 4 hours by infusion pump. At how many mL/h should the nurse set the pump? Record your answer as a whole number.",
+  "numeric": {
+   "answers": [
+    "125"
+   ],
+   "tolerance": 0
+  },
+  "explanation": "500 mL divided by 4 hours is 125 mL/h."
+ },
+ {
+  "test": 2,
+  "skill": "Weight-based dosing",
+  "difficulty": 3,
+  "format": "numeric",
+  "stem": "A child who weighs 18 kg is ordered amoxicillin 40 mg/kg/day PO, divided into three equal doses. How many mg should the nurse give per dose? Record your answer as a whole number.",
+  "numeric": {
+   "answers": [
+    "240"
+   ],
+   "tolerance": 0
+  },
+  "explanation": "40 mg/kg times 18 kg is 720 mg a day, and 720 divided by 3 doses is 240 mg per dose. Giving 720 mg each time would triple the daily dose."
+ },
+ {
+  "test": 2,
+  "skill": "Weight-based dosing",
+  "difficulty": 3,
+  "format": "numeric",
+  "stem": "Enoxaparin 1 mg/kg subcut every 12 hours is ordered for a client who weighs 70 kg. The prefilled syringe holds 80 mg in 0.8 mL. How many mL should the nurse give? Record your answer to one decimal place.",
+  "numeric": {
+   "answers": [
+    "0.7"
+   ],
+   "tolerance": 0
+  },
+  "explanation": "The dose is 1 mg/kg times 70 kg, or 70 mg. The syringe holds 100 mg/mL, so 70 mg is 0.7 mL; the extra 0.1 mL is expelled before injecting."
+ },
+ {
+  "test": 2,
+  "skill": "IV flow rate",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "An antibiotic in 100 mL is to infuse over 30 minutes by pump. At how many mL/h should the nurse set the pump? Record your answer as a whole number.",
+  "numeric": {
+   "answers": [
+    "200"
+   ],
+   "tolerance": 0
+  },
+  "explanation": "Pumps run in mL per hour: 100 mL in half an hour is 200 mL/h. Setting 100 mL/h would take a full hour."
+ },
+ {
+  "test": 2,
+  "skill": "Lithium",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client taking lithium has vomiting, diarrhea and a coarse hand tremor. What should the nurse do?",
+  "options": [
+   "Hold the dose and report possible toxicity",
+   "Give the dose with extra salt",
+   "Tell the client to drink less water",
+   "Give the dose and an antiemetic"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Vomiting, diarrhea and coarse tremor are signs of lithium toxicity. The dose is held and a serum level is needed. Dehydration and low sodium raise lithium levels."
+ },
+ {
+  "test": 2,
+  "skill": "IV antibiotics",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "During a vancomycin infusion, a client develops flushing and an itchy rash on the face and neck. What should the nurse do first?",
+  "options": [
+   "Stop the infusion and notify the prescriber",
+   "Speed up the infusion to finish it",
+   "Apply ice to the client's face",
+   "Document it as an expected effect"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Flushing of the upper body is an infusion reaction often linked to running vancomycin too fast. The infusion is stopped, the client assessed and the prescriber informed; it usually resumes more slowly."
+ },
+ {
+  "test": 2,
+  "skill": "Anticonvulsants",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Which teaching is most important for a client starting phenytoin?",
+  "options": [
+   "Brush, floss and see a dentist regularly",
+   "Stop taking the drug if you have a seizure",
+   "Take it only on days you feel an aura coming",
+   "Expect your urine to turn bright green"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Phenytoin commonly causes gum overgrowth, which good oral care limits. It is taken every day, and stopping it suddenly can trigger seizures."
+ },
+ {
+  "test": 2,
+  "skill": "Anticoagulants",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "A client is going home on apixaban. Which instructions should the nurse reinforce? Select all that apply.",
+  "options": [
+   "Use a soft toothbrush and an electric razor",
+   "Report black stools or blood in the urine",
+   "Do not stop the drug without asking your prescriber",
+   "Take ASA for headaches",
+   "Double the next dose if you miss one"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Bleeding precautions and reporting signs of bleeding are key, and stopping suddenly raises the risk of clots. ASA adds to bleeding risk, and missed doses are never doubled."
+ },
+ {
+  "test": 2,
+  "skill": "Nitroglycerin",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with angina has chest pain at rest. Which instruction about sublingual nitroglycerin is correct?",
+  "options": [
+   "Sit, take one dose, call 911 if no better in 5 minutes",
+   "Take three doses at once for the fastest relief",
+   "Swallow the tablet whole with a glass of water",
+   "Lie flat and wait 30 minutes before any dose"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Current teaching is one dose while seated, and a call to 911 if pain is unchanged or worse after 5 minutes, since it may be a heart attack. Doses are taken one at a time under the tongue."
+ },
+ {
+  "test": 2,
+  "skill": "Central venous access devices",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse is changing the transparent dressing on a client's PICC. Which action is correct?",
+  "options": [
+   "Use sterile technique and clean with chlorhexidine",
+   "Use clean technique and soap and water",
+   "Remove the stabilizing device each time",
+   "Pull the catheter back if it looks too long"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Central line dressings are changed with sterile technique and a chlorhexidine-based antiseptic to prevent bloodstream infection. The catheter is never pulled back or pushed in."
+ },
+ {
+  "test": 2,
+  "skill": "Serotonin syndrome",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A client taking sertraline was started on tramadol 2 days ago and now has agitation, sweating, a heart rate of 124/min and muscle twitching. What should the nurse suspect?",
+  "options": [
+   "Serotonin syndrome",
+   "Opioid withdrawal",
+   "Hypoglycemia",
+   "Alcohol withdrawal"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "An SSRI combined with tramadol can cause serotonin syndrome: agitation, sweating, fast heart rate and twitching or clonus. It needs prompt reporting and stopping the drugs."
+ },
+ {
+  "test": 2,
+  "skill": "Transdermal medications",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client has a fentanyl patch for cancer pain. Which instruction should the nurse reinforce?",
+  "options": [
+   "Do not use a heating pad over the patch",
+   "Cut the patch in half for a smaller dose",
+   "Apply a new patch over the old one",
+   "Place it on the same spot each time"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Heat speeds absorption and can cause an overdose. Patches are not cut, the old one is removed before the new one goes on, and sites are rotated."
+ },
+ {
+  "test": 2,
+  "skill": "Eye medications",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client has two different eye drops due at the same time. What should the nurse do?",
+  "options": [
+   "Wait about 5 minutes between the drops",
+   "Give both drops in the same second",
+   "Mix them together in one bottle",
+   "Give one drop in each eye only"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Waiting about 5 minutes lets the first drop absorb so the second does not wash it out."
+ },
+ {
+  "test": 2,
+  "skill": "Medication reconciliation",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "During admission medication reconciliation, a client says she also takes St. John's wort. What should the nurse do?",
+  "options": [
+   "Add it to the list and tell the prescriber",
+   "Leave it off the list because it is herbal",
+   "Tell the client to double it in hospital",
+   "Throw away the client's supply"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Natural health products count in reconciliation because they can interact with drugs. St. John's wort interacts with many medications, including antidepressants and warfarin."
+ },
+ {
+  "test": 2,
+  "skill": "Subcutaneous infusions",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A palliative client has a continuous subcutaneous infusion of hydromorphone. Which finding at the site should the nurse act on?",
+  "options": [
+   "Redness and a firm lump around the needle",
+   "A clear, intact dressing",
+   "A small subcutaneous catheter in the upper chest",
+   "No pain when the site is touched"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Redness and hardness mean irritation or leakage that slows absorption, so the site is changed. A clean, intact, painless site in a suitable area is expected."
+ },
+ {
+  "test": 0,
+  "skill": "IV flow rate",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "A client is to receive 250 mL of IV fluid over 2 hours by gravity. The tubing drop factor is 20 gtt/mL. How many gtt/min should the nurse set? Record your answer as a whole number.",
+  "numeric": {
+   "answers": [
+    "42"
+   ],
+   "tolerance": 0
+  },
+  "explanation": "250 mL times 20 gtt/mL is 5000 drops, and 5000 divided by 120 minutes is 41.7, which rounds to 42 gtt/min."
+ },
+ {
+  "test": 0,
+  "skill": "Corticosteroids",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client has been on prednisone 40 mg daily for 6 weeks. What should the nurse reinforce?",
+  "options": [
+   "Do not stop the drug suddenly; follow the taper",
+   "Stop the drug as soon as you feel better",
+   "Take it on an empty stomach at bedtime",
+   "Expect your blood sugar to fall"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Long-term steroids suppress the adrenal glands, so stopping suddenly can cause adrenal crisis. Prednisone is taken with food in the morning, and it raises blood sugar."
+ },
+ {
+  "test": 0,
+  "skill": "Parenteral nutrition",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A client's bag of parenteral nutrition runs out and the next bag has not arrived from pharmacy. What should the nurse hang?",
+  "options": [
+   "Dextrose 10% at the same rate, per protocol",
+   "0.9% sodium chloride at the same rate",
+   "Nothing until the new bag arrives",
+   "Dextrose 5% at double the rate"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Stopping parenteral nutrition suddenly can cause rebound hypoglycemia, so D10W is usually run at the same rate until the new bag arrives. Capillary glucose is checked."
+ },
+ {
+  "test": 0,
+  "skill": "Oral hypoglycemics",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client taking metformin is scheduled for a CT scan with IV contrast. What should the nurse expect?",
+  "options": [
+   "Metformin may be held around the scan, per protocol",
+   "Metformin will be doubled before the scan",
+   "Insulin will replace metformin permanently",
+   "No change is needed with contrast"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Iodinated contrast can impair kidney function, and metformin then raises the risk of lactic acidosis. Many protocols hold it at or before the scan and restart it once kidney function is confirmed."
+ }
+]

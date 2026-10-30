@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CAPAL" | "CAELEC" | "AUWHITE" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -478,6 +478,53 @@ export type QuestionCategory =
   | "uk18edSpecial"
   | "uk18edAppendices"
 
+  // CITB HS&E test for Operatives (CSCS)
+  | "cscsLegal"
+  | "cscsWelfare"
+  | "cscsHealth"
+  | "cscsSafety"
+  | "cscsHeights"
+  | "cscsExcav"
+  | "cscsEnv"
+
+  // Level 2 food hygiene (UK)
+  | "ukfoodLaw"
+  | "ukfoodHazards"
+  | "ukfoodHygiene"
+  | "ukfoodTemp"
+  | "ukfoodStorage"
+  | "ukfoodClean"
+  | "ukfoodAllergen"
+
+  // Personal licence (APLH, England and Wales)
+  | "ukaplhAuth"
+  | "ukaplhPersonal"
+  | "ukaplhPremises"
+  | "ukaplhDps"
+  | "ukaplhActivities"
+  | "ukaplhPowers"
+  | "ukaplhChildren"
+  | "ukaplhAlcohol"
+
+  // First Aid at Work (UK)
+  | "ukfawRole"
+  | "ukfawResus"
+  | "ukfawBleed"
+  | "ukfawBones"
+  | "ukfawChest"
+  | "ukfawBurns"
+  | "ukfawIllness"
+
+  // Care Certificate (UK)
+  | "ukcareRole"
+  | "ukcareDuty"
+  | "ukcarePerson"
+  | "ukcareComms"
+  | "ukcareNutrition"
+  | "ukcareAwareness"
+  | "ukcareSafeguard"
+  | "ukcareSafety"
+
   // Canadian Firearms Safety Course (capal)
   | "capalHistory"
   | "capalActions"
@@ -496,6 +543,80 @@ export type QuestionCategory =
   | "caelecMotors"
   | "caelecSignal"
 
+  // Ontario PSW (capsw)
+  | "capswRole"
+  | "capswComm"
+  | "capswRights"
+  | "capswSafety"
+  | "capswAdl"
+  | "capswHome"
+  | "capswPal"
+  | "capswMental"
+
+  // Standard First Aid with CPR Level C, Canada (casfa)
+  | "casfaRole"
+  | "casfaCpr"
+  | "casfaAirway"
+  | "casfaBleed"
+  | "casfaInjury"
+  | "casfaMedical"
+  | "casfaEnviro"
+
+  // WHMIS 2015, Canada (cawhmis)
+  | "cawhmisBasics"
+  | "cawhmisHazards"
+  | "cawhmisPictos"
+  | "cawhmisLabels"
+  | "cawhmisSds"
+  | "cawhmisSafe"
+
+  // Ontario security guard (caguard)
+  | "caguardIndustry"
+  | "caguardProcedures"
+  | "caguardReports"
+  | "caguardEmergency"
+  | "caguardLaw"
+  | "caguardCommunication"
+  | "caguardForce"
+  | "caguardFirstAid"
+
+  // Red Seal Automotive Service Technician (caauto)
+  | "caautoOcc"
+  | "caautoEngine"
+  | "caautoNetwork"
+  | "caautoDriveline"
+  | "caautoElectrical"
+  | "caautoChassis"
+  | "caautoBody"
+  | "caautoHev"
+
+  // Red Seal Plumber (caplumb)
+  | "caplumbCommon"
+  | "caplumbPipe"
+  | "caplumbDwv"
+  | "caplumbWater"
+  | "caplumbFixtures"
+  | "caplumbHydronic"
+  | "caplumbSpecial"
+
+  // Red Seal Carpenter (cacarp)
+  | "cacarpCommon"
+  | "cacarpLayout"
+  | "cacarpConcrete"
+  | "cacarpFraming"
+  | "cacarpExterior"
+  | "cacarpInterior"
+  | "cacarpReno"
+
+  // Red Seal Welder (caweld)
+  | "caweldCommon"
+  | "caweldLayout"
+  | "caweldFab"
+  | "caweldCut"
+  | "caweldSmaw"
+  | "caweldWire"
+  | "caweldGtaw"
+
   // White Card, CPCWHS1001 (auwhite)
   | "auwhiteLaw"
   | "auwhiteRisk"
@@ -505,6 +626,54 @@ export type QuestionCategory =
   | "auwhiteEnv"
   | "auwhiteSigns"
   | "auwhiteEmerg"
+  // RSA, SITHFAB021 (aursa)
+  | "aursaLaw"
+  | "aursaAge"
+  | "aursaDrinks"
+  | "aursaIntox"
+  | "aursaRefuse"
+  | "aursaCare"
+  // RCG / RSG, SITHGAM022 (aurcg)
+  | "aurcgLaw"
+  | "aurcgHarm"
+  | "aurcgOdds"
+  | "aurcgEnv"
+  | "aurcgExcl"
+  | "aurcgAssist"
+  | "aurcgIncident"
+  // Food Safety Supervisor, Australia (aufss)
+  | "aufssLaw"
+  | "aufssHazards"
+  | "aufssHygiene"
+  | "aufssTemp"
+  | "aufssHandling"
+  | "aufssClean"
+  | "aufssAllergen"
+  // HLTAID011 Provide First Aid (aufirstaid)
+  | "aufirstaidRole"
+  | "aufirstaidCpr"
+  | "aufirstaidAirway"
+  | "aufirstaidBleed"
+  | "aufirstaidBones"
+  | "aufirstaidMedical"
+  | "aufirstaidEnviro"
+  | "aufirstaidVenom"
+  // Forklift licence LF, Australia (auforklift)
+  | "auforkliftLicence"
+  | "auforkliftPlan"
+  | "auforkliftChecks"
+  | "auforkliftLoads"
+  | "auforkliftOperate"
+  | "auforkliftPower"
+  // Work safely at heights, RIIWHS204 (auwah)
+  | "auwahLaw"
+  | "auwahRisk"
+  | "auwahControl"
+  | "auwahPlatform"
+  | "auwahLadder"
+  | "auwahHarness"
+  | "auwahRoof"
+  | "auwahRescue"
 
   // QLD learner licence categories
   | "auqldGiveWay"

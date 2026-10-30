@@ -1,0 +1,18 @@
+{
+  "id": "auforklift",
+  "stateCode": "AUFORKLIFT",
+  "idBase": 9900,
+  "prefix": "AUFORKLIFT-",
+  "slug": "/au-forklift-licence",
+  "landingPath": "/forklift-licence-practice-test-australia",
+  "dataFile": "data/au-forklift-licence-questions.json",
+  "passPct": 80,
+  "categories": [
+    {"key": "auforkliftLicence", "label": "Licensing, WHS Law & Duties", "perTest": 7, "segment": "LIC"},
+    {"key": "auforkliftPlan", "label": "Planning, Hazards & Traffic", "perTest": 9, "segment": "PLN"},
+    {"key": "auforkliftChecks", "label": "Pre-start & Operational Checks", "perTest": 8, "segment": "CHK"},
+    {"key": "auforkliftLoads", "label": "Load Charts, Stability & Calculations", "perTest": 10, "segment": "LDS"},
+    {"key": "auforkliftOperate", "label": "Safe Operation & Load Handling", "perTest": 10, "segment": "OPR"},
+    {"key": "auforkliftPower", "label": "Attachments, Fuel & Shutdown", "perTest": 6, "segment": "PWR"}
+  ]
+}

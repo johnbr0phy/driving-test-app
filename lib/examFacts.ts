@@ -382,6 +382,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the NCSBN 2026 NCLEX-PN Test Plan (effective April 1, 2026)",
     source: { name: "NCSBN", url: "https://www.nclex.com/test-plans.page" },
   },
+  rexpn: {
+    answer:
+      "The REx-PN (Regulatory Exam - Practical Nurse) is the entry-to-practice exam for Registered Practical Nurses in Ontario and Licensed Practical Nurses in British Columbia, built by NCSBN for those regulators. It is computerized adaptive: you answer 90 to 150 questions, 30 of them unscored pretest items, within four hours, with no going back, and the exam stops once it is 95% certain you are above or below the passing standard. The result is pass or fail, and since January 2026 select all that apply items earn partial credit. Management of Care (18 to 24%) and Pharmacological and Parenteral Therapies (14 to 20%) carry the most questions.",
+    rows: [
+      { label: "Questions", value: "90 to 150 (30 unscored)" },
+      { label: "Time", value: "Up to 4 hours, including breaks" },
+      { label: "Format", value: "Computerized adaptive, no going back" },
+      { label: "Result", value: "Pass or fail" },
+      { label: "Fee", value: "350 CAD plus tax per attempt (paid to Pearson VUE)" },
+      { label: "Retakes", value: "Wait at least 60 days between attempts" },
+      { label: "Who writes it", value: "RPN applicants (CNO, Ontario) and LPN applicants (BCCNM, British Columbia)" },
+    ],
+    basedOn: "the NCSBN REx-PN Test Plan (effective January 2022, revised 2025)",
+    source: { name: "NCSBN REx-PN", url: "https://www.ncsbn.org/publications/2022-rexpn-test-plan" },
+  },
   hesi: {
     answer:
       "The HESI A2 is a nursing school entrance exam with separately scored sections: math, reading, vocabulary, grammar, biology, chemistry, anatomy and physiology, and physics. Programs choose which sections you take; a full battery takes about four hours. Most programs want 75% or higher on each required section.",
@@ -902,6 +917,129 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Red Seal Construction Electrician exam breakdown and Exam Preparation Guide on red-seal.ca, checked October 2026",
     source: { name: "Red Seal: Construction Electrician exam information", url: "https://red-seal.ca/eng/trades/constelectric/exam-information.shtml" },
   },
+  capsw: {
+    answer:
+      "Ontario has no single government PSW licensing exam. Every Personal Support Worker program, at public colleges, private career colleges and district school boards, must meet the 14 vocational learning outcomes of the Ministry of Colleges and Universities PSW program standard released in January 2022, and students sit their program's final exams; career college students usually write the NACC final exam, an online theory test taken after both placements. PSWs are not a regulated health profession, but since 1 December 2024 the Health and Supportive Care Providers Oversight Authority (HSCPOA) has kept a public register of PSWs.",
+    rows: [
+      { label: "Program standard", value: "Ontario PSW standard, January 2022 (14 learning outcomes)" },
+      { label: "Final exam", value: "Set by each program; NACC final for career colleges (online, theory)" },
+      { label: "Pass mark", value: "Set by the program (70% here is a readiness line)" },
+      { label: "NACC program length", value: "700 hours, including placements" },
+      { label: "Key laws", value: "Fixing Long-Term Care Act 2021, Health Care Consent Act, PHIPA, RHPA" },
+      { label: "Oversight", value: "HSCPOA public register since December 2024" },
+      { label: "Where PSWs work", value: "Long-term care, retirement homes, home and community care, hospitals" },
+    ],
+    basedOn: "the Ontario Personal Support Worker program standard (Ministry of Colleges and Universities, January 2022)",
+    source: { name: "Ontario.ca: College program standard, Personal Support Worker", url: "https://www.ontario.ca/page/college-program-standard-personal-support-worker" },
+  },
+  casfa: {
+    answer:
+      "Standard First Aid with CPR Level C is the intermediate level of workplace first aid in Canada under the CSA Z1210 standard, usually a two-day course. You pass a hands-on skills check and a written multiple-choice test set by the training agency, most often at 75%, and the certificate usually lasts three years. Which workers need it, and how many first aiders a workplace needs, vary by province and territory.",
+    rows: [
+      { label: "Course length", value: "About 2 days (13 to 16 hours)" },
+      { label: "Written test", value: "Multiple choice, set by the training agency" },
+      { label: "Pass mark", value: "Usually 75% (70 to 80% by agency)" },
+      { label: "Also required", value: "Hands-on skills check" },
+      { label: "CPR level", value: "C: adult, child and infant, with AED" },
+      { label: "Valid for", value: "Usually 3 years" },
+      { label: "Standard", value: "CSA Z1210 intermediate level" },
+      { label: "Workplace rules", value: "Vary by province and territory" },
+    ],
+    basedOn: "the CSA Z1210 first aid training standard and current Canadian first aid guidelines",
+    source: { name: "Standards Council of Canada: CSA Z1210:24", url: "https://scc-ccn.ca/standardsdb/standards/4032281" },
+  },
+  cawhmis: {
+    answer:
+      "WHMIS is Canada's hazard communication system for hazardous products at work, aligned with the GHS. There is no single national WHMIS exam: every worker who may be exposed must get general WHMIS education and workplace-specific training, which usually ends with the employer's or trainer's own quiz. Suppliers must provide bilingual labels and 16-section safety data sheets under the Hazardous Products Regulations, amended in December 2022 with a transition that ended on December 14, 2025.",
+    rows: [
+      { label: "Exam", value: "No national exam; a course quiz set by the employer or trainer" },
+      { label: "Pass mark", value: "Set by the trainer (practice line here: 80%)" },
+      { label: "Who needs it", value: "Workers who use or may be exposed to hazardous products" },
+      { label: "Training review", value: "At least yearly in most jurisdictions; varies" },
+      { label: "Safety data sheet", value: "16 sections, English and French" },
+      { label: "Pictograms", value: "GHS set in a red diamond, plus the WHMIS biohazard in a circle" },
+      { label: "Latest change", value: "HPR amended Dec 15, 2022; transition ended Dec 14, 2025" },
+      { label: "Rules set by", value: "Health Canada (suppliers) and provincial, territorial or federal OHS law (workplaces)" },
+    ],
+    basedOn: "Health Canada's amended Hazardous Products Regulations page and CCOHS WHMIS fact sheets, checked October 2026",
+    source: { name: "Health Canada: Amended Hazardous Products Regulations", url: "https://www.canada.ca/en/health-canada/services/environmental-workplace-health/occupational-health-safety/workplace-hazardous-materials-information-system/amendments-hazardous-products-regulations.html" },
+  },
+  caguard: {
+    answer:
+      "The Ontario security guard test is the ministry's basic test you must pass before applying for a security guard licence. It has 60 multiple-choice questions in 75 minutes on the topics of the mandatory 40-hour basic training course, and the cut score is 62%. You book it with the training completion number from your course and take it online or at select DriveTest centres; you must be 18, entitled to work in Canada and have a clean criminal record to be licensed.",
+    rows: [
+      { label: "Questions", value: "60 multiple choice" },
+      { label: "Time", value: "75 minutes (2-hour appointment)" },
+      { label: "Passing score", value: "62%" },
+      { label: "Training first", value: "40 hours incl. emergency first aid (33.5 without)" },
+      { label: "Minimum age", value: "18" },
+      { label: "Licence", value: "Digital, $80, renewed every two years" },
+      { label: "Where", value: "Online or at select DriveTest centres" },
+      { label: "Given by", value: "Ontario Ministry of the Solicitor General" },
+    ],
+    basedOn: "the Ontario Training Syllabus for Security Guards (updated July 2026) and the ministry security guard study guide, checked October 2026",
+    source: { name: "Ontario.ca: Security guard and private investigator testing", url: "https://www.ontario.ca/page/security-guard-and-private-investigator-testing" },
+  },
+  caauto: {
+    answer:
+      "The Red Seal Automotive Service Technician exam is the interprovincial certification exam for auto service technicians in Canada (trade code 310S in Ontario). It has 125 four-option multiple-choice questions, you have up to 4 hours, and you need 70% to pass. Questions follow the 2023 Red Seal Occupational Standard's eight Major Work Activities, with electrical and comfort control, steering, suspension and brakes, and engine systems the largest.",
+    rows: [
+      { label: "Questions", value: "125 multiple choice, 4 options each" },
+      { label: "Time", value: "Up to 4 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Largest areas", value: "Electrical and HVAC 23, chassis and brakes 23, engine 22" },
+      { label: "Hybrid and EV", value: "9 questions (new in the 2023 standard)" },
+      { label: "Fees and eligibility", value: "Set by each province or territory" },
+      { label: "Given by", value: "Provincial and territorial apprenticeship authorities, for the Red Seal Program" },
+    ],
+    basedOn: "the Red Seal Automotive Service Technician exam breakdown and weightings (2023 RSOS) and the Red Seal Exam Preparation Guide, checked October 2026",
+    source: { name: "Red Seal: Automotive Service Technician exam information", url: "https://red-seal.ca/eng/trades/autoservtech/exam-information.shtml" },
+  },
+  caplumb: {
+    answer:
+      "The Red Seal Plumber exam is the interprovincial certification exam for plumbers in Canada (trade code 306A in Ontario). It has 125 four-option multiple-choice questions, you have up to 4 hours, and you need 70% to pass. Questions follow the 2023 Red Seal Occupational Standard's seven Major Work Activities, with sewers, sewage treatment and DWV systems (26%) and water service and distribution (19%) the largest, and code questions are based on the National Plumbing Code of Canada 2020.",
+    rows: [
+      { label: "Questions", value: "125 multiple choice, 4 options each" },
+      { label: "Time", value: "Up to 4 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Largest areas", value: "Sewers, septic and DWV 26%, water service and distribution 19%" },
+      { label: "Code", value: "National Plumbing Code of Canada 2020" },
+      { label: "Fees and eligibility", value: "Set by each province or territory" },
+      { label: "Given by", value: "Provincial and territorial apprenticeship authorities, for the Red Seal Program" },
+    ],
+    basedOn: "the Red Seal Plumber exam information and weightings (2023 RSOS) and the Red Seal Exam Preparation Guide, checked October 2026",
+    source: { name: "Red Seal: Plumber exam information", url: "https://red-seal.ca/eng/trades/plumbers/exam-information.shtml" },
+  },
+  cacarp: {
+    answer:
+      "The Red Seal Carpenter exam is the interprovincial journeyperson exam for carpenters in Canada. It has 100 multiple-choice questions with four options each, you have up to four hours, and you need 70% to pass. Questions follow the 2022 Red Seal Occupational Standard across seven major work activities, and candidates are given the 2020 National Building Code (Volume 2) and a reference booklet. Passing adds the Red Seal endorsement to your provincial or territorial certificate.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, 4 options each" },
+      { label: "Time", value: "Up to 4 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Largest areas", value: "Framing 20%, concrete work 16%" },
+      { label: "Reference supplied", value: "2020 National Building Code, Volume 2" },
+      { label: "Who can write it", value: "Apprentices and experienced tradespeople (hours vary by province)" },
+      { label: "Run by", value: "Provincial and territorial apprenticeship authorities, Red Seal Program" },
+    ],
+    basedOn: "the Red Seal carpenter exam weightings (2022 standard) and the Red Seal Exam Preparation Guide, checked October 2026",
+    source: { name: "Red Seal: Carpenter exam weightings", url: "https://red-seal.ca/eng/trades/carpenters/exam-weightings.shtml" },
+  },
+  caweld: {
+    answer:
+      "The Red Seal Welder exam is the interprovincial certificate of qualification exam for welders in Canada (trade code 456A in Ontario). It has 125 multiple-choice questions with four options each, a four-hour time limit and a pass mark of 70%. Since 2026 it follows the 2023 Red Seal Occupational Standard: common occupational skills 20 questions, layout and fabrication 28, cutting and gouging 23, and welding processes 54.",
+    rows: [
+      { label: "Questions", value: "125 multiple choice, 4 options each" },
+      { label: "Time", value: "Up to 4 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Welding processes", value: "54 questions: SMAW 18, GMAW/FCAW/MCAW 18, GTAW 13, SAW 5" },
+      { label: "Other areas", value: "Common skills 20, layout and fabrication 28, cutting and gouging 23" },
+      { label: "Standard", value: "2023 Red Seal Occupational Standard for Welder" },
+      { label: "Booked through", value: "Your provincial or territorial apprenticeship authority" },
+    ],
+    basedOn: "the Red Seal Welder exam breakdown and the Red Seal Exam Preparation Guide, checked October 2026",
+    source: { name: "Red Seal: Welder exam information", url: "https://red-seal.ca/eng/trades/weld/exam-information.shtml" },
+  },
   auwhite: {
     answer:
       "The White Card is the general construction induction card everyone needs before doing construction work in Australia. You get it by completing the nationally recognised unit CPCWHS1001 Prepare to work safely in the construction industry with a registered training organisation (RTO), usually face to face in one day. There is no exam with a set pass mark: the trainer assesses you as competent through written and oral questions and practical tasks such as fitting PPE and reporting hazards. The card is recognised in every state and territory, but in most states it lapses if you do no construction work for 2 years.",
@@ -968,6 +1106,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two 35-question OSSLT practice tests that follow the EQAO blueprint (all four reading forms and the 12 writing questions) and four drills that teach the basics first. All of it is free with no account required; the opinion essay and the written reading answer are not modelled.",
   },
+  eqao9: {
+    answer:
+      "The EQAO Grade 9 Assessment of Mathematics is an online, computer-adaptive test that Ontario students write at school at the end of the de-streamed Grade 9 math course (MTH1W). It has two sessions of about 60 minutes, with 54 questions: 50 that count and 4 field-test questions. Each session starts with a medium set and then gives an easier or harder set. The 50 scored questions are 18 algebra (including coding), 10 number, 8 data, 8 geometry and measurement and 6 financial literacy. Results are reported as levels 1 to 4, with Level 3 the provincial standard, and from 2026-2027 the result is 20% of the MTH1W final mark.",
+    rows: [
+      { label: "Who takes it", value: "Ontario students finishing Grade 9 math (MTH1W), in a winter or spring window" },
+      { label: "Format", value: "Online, two sessions of about 60 minutes, multi-stage adaptive" },
+      { label: "Questions", value: "54 (50 scored, 4 field test)" },
+      { label: "Strands", value: "Algebra 18, number 10, data 8, geometry and measurement 8, financial literacy 6" },
+      { label: "Question types", value: "Single and multiple selection, drag and drop, drop-down, key entry" },
+      { label: "Tools", value: "Built-in calculator (own calculator allowed) and the EQAO formula sheet" },
+      { label: "Results", value: "Levels 1 to 4 (Level 3 is the provincial standard); 20% of the course mark from 2026-2027" },
+    ],
+    basedOn: "EQAO's Grade 9 Assessment of Mathematics framework and blueprint and the Ontario Grade 9 mathematics curriculum (MTH1W, 2021)",
+    source: { name: "EQAO: Grade 9 Assessment of Mathematics", url: "https://eqao.com/the-assessments/grade-9-math" },
+    tigertest:
+      "Tigertest has two EQAO Grade 9 Math practice tests of two adaptive sessions each (25 scored questions per session, in EQAO's strand counts) and five strand drills that open with short Basics lessons. All of it is free with no account required; scores are percent correct, not EQAO levels.",
+  },
   naplan: {
     answer:
       "NAPLAN (the National Assessment Program, Literacy and Numeracy) is sat online by Australian students in Years 3, 5, 7 and 9 each March. Year 9 sits four tests in a set order: Writing (42 minutes), Reading (65 minutes), Conventions of Language (45 minutes, spelling then grammar and punctuation) and Numeracy (65 minutes, a short non-calculator section, then an online calculator). The tests are tailored: how a student does on the first set of questions decides whether the next set is harder or easier. Since 2023 each domain is reported as one of four proficiency levels: Exceeding, Strong, Developing or Needs additional support. There is no pass mark.",
@@ -1002,5 +1157,328 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "NSW Department of Education: get ready for the Selective High School Placement Test", url: "https://education.nsw.gov.au/schooling/students/oc-and-shs/going-to-a-selective-high-school/get-ready-for-the-selective-high-school-placement-test" },
     tigertest:
       "Tigertest has two full practice tests covering Reading, Mathematical Reasoning and Thinking Skills at the real lengths and times, a percent score per section, and five drills that teach the basics first. All of it is free with no account required; Writing is not modelled.",
+  },
+  naplan7: {
+    answer:
+      "NAPLAN (the National Assessment Program, Literacy and Numeracy) is sat online by Australian students in Years 3, 5, 7 and 9 each March. Year 7 sits four tests in a set order: Writing (42 minutes), Reading (65 minutes), Conventions of Language (45 minutes, spelling then grammar and punctuation) and Numeracy (65 minutes, a short non-calculator section, then an online calculator). The tests are tailored: how a student does on the first set of questions decides whether the next set is harder or easier. Since 2023 each domain is reported as one of four proficiency levels: Exceeding, Strong, Developing or Needs additional support. There is no pass mark.",
+    rows: [
+      { label: "Who takes it", value: "Students in Years 3, 5, 7 and 9 across Australia, in March" },
+      { label: "Year 7 tests", value: "Writing 42 min, Reading 65 min, Conventions of Language 45 min, Numeracy 65 min" },
+      { label: "Calculator", value: "Numeracy only, after a short non-calculator section that is locked once left" },
+      { label: "Format", value: "Online, tailored: later testlets are harder or easier depending on earlier answers" },
+      { label: "Results", value: "Exceeding, Strong, Developing or Needs additional support per domain; no pass mark" },
+      { label: "Year 7 Strong from", value: "Reading 500, Spelling 497, Grammar and punctuation 513, Numeracy 500" },
+      { label: "Given by", value: "The student's school, on ACARA's national assessment platform" },
+    ],
+    basedOn: "ACARA's published NAPLAN test design, tailored test structure and 2023 proficiency standards, and the Year 7 Australian Curriculum (Version 9.0)",
+    source: { name: "ACARA: NAPLAN results and reports", url: "https://www.nap.edu.au/naplan/results-and-reports" },
+    tigertest:
+      "Tigertest has two NAPLAN Year 7 practice tests covering Reading, Conventions of Language and Numeracy in tailored parts, an estimated scale score per domain against the Year 7 proficiency levels, and six drills that teach the basics first. All of it is free with no account required; Writing and the spelling dictation are not modelled.",
+  },
+  ocnsw: {
+    answer:
+      "The Opportunity Class Placement Test is the NSW Department of Education's test for Year 5 places in opportunity classes, sat on a computer in mid-May of Year 4. It has three multiple-choice tests, each weighted one third: Reading (14 questions with 33 answers in 40 minutes), Mathematical Reasoning (35 questions in 40 minutes, five options each, no calculator) and Thinking Skills (30 questions in 30 minutes, four options each). There is no writing test and no pass mark: results are scaled, places are offered in order of merit, and each school's minimum entry score changes every year.",
+    rows: [
+      { label: "Who takes it", value: "Year 4 students applying for a Year 5 opportunity class in NSW" },
+      { label: "Reading", value: "14 questions, 33 answers, 40 minutes, multiple choice" },
+      { label: "Mathematical Reasoning", value: "35 questions, 40 minutes, five options, no calculator" },
+      { label: "Thinking Skills", value: "30 questions, 30 minutes, four options" },
+      { label: "Writing", value: "None" },
+      { label: "Weighting", value: "Each test one third" },
+      { label: "Passing score", value: "No pass mark; places offered in order of merit" },
+      { label: "Given by", value: "NSW Department of Education, on computers at test centres, in mid-May" },
+    ],
+    basedOn: "the NSW Department of Education's published test format for the Opportunity Class Placement Test",
+    source: { name: "NSW Department of Education: get ready for the Opportunity Class Placement Test", url: "https://education.nsw.gov.au/schooling/students/oc-and-shs/going-to-an-opportunity-class/get-ready-for-the-opportunity-class-placement-test" },
+    tigertest:
+      "Tigertest has two full practice tests covering Reading, Mathematical Reasoning and Thinking Skills at the real lengths and times, a percent score per section, and five drills that teach the basics first. All of it is free with no account required.",
+  },
+  vicsel: {
+    answer:
+      "The Victorian Selective Entry High Schools exam is the entry test for Year 9 places at Nossal High School, Suzanne Cory High School, The Mac.Robertson Girls' High School and Melbourne High School, sat on paper in June of Year 8. ACER runs applications, the exam and offers for the Victorian Department of Education. The exam has Mathematics and Quantitative Reasoning (60 minutes, multiple choice), a 20-minute break, Reading and Verbal Reasoning (55 minutes, multiple choice) and Writing (two tasks in 40 minutes). Calculators are not allowed and no section goes beyond the Year 8 curriculum. There is no pass mark: about 85 percent of the roughly 1,000 places are offered in rank order of exam performance.",
+    rows: [
+      { label: "Who takes it", value: "Year 8 students in Victoria applying for Year 9 at a selective entry high school" },
+      { label: "Mathematics and Quantitative Reasoning", value: "60 minutes, multiple choice, no calculator" },
+      { label: "Reading and Verbal Reasoning", value: "55 minutes, multiple choice" },
+      { label: "Writing", value: "2 tasks, 40 minutes" },
+      { label: "Content level", value: "Nothing beyond the Year 8 curriculum" },
+      { label: "Places", value: "About 1,000 across four schools; 85% standard merit, up to 10% equity, up to 5% principal discretion" },
+      { label: "Passing score", value: "No pass mark; places offered in rank order" },
+      { label: "Given by", value: "ACER for the Victorian Department of Education, on paper at exam centres in June" },
+    ],
+    basedOn: "the Victorian Government's selective entry high schools page and ACER's published exam format",
+    source: { name: "Victorian Government: selective entry high schools", url: "https://www.vic.gov.au/selective-entry-high-schools" },
+    tigertest:
+      "Tigertest has two full practice tests covering Mathematics and Quantitative Reasoning and Reading and Verbal Reasoning at the real times, 40 questions per section, a percent score per section, and four drills that teach the basics first. All of it is free with no account required; Writing is not modelled.",
+  },
+  hscmaths: {
+    answer:
+      "HSC Mathematics Standard 2 is one written paper sat by Year 12 students in NSW in the HSC exam period: 100 marks in 2 hours 30 minutes plus 10 minutes reading time, with NESA-approved calculators and a reference sheet. Section I is objective-response (multiple-choice) questions worth 15 marks; Section II is 35 to 40 items worth 85 marks, some with parts and at least two worth 4 or 5 marks. From the 2027 HSC it examines the Mathematics Standard 11-12 Syllabus (2024), focusing on Year 12 with Year 11 as assumed knowledge.",
+    rows: [
+      { label: "Who takes it", value: "Year 12 students in NSW, in the October to November HSC exam period" },
+      { label: "Paper", value: "100 marks, 2 hr 30 min plus 10 min reading time" },
+      { label: "Sections", value: "Section I: 15 marks objective response; Section II: 85 marks, 35 to 40 items" },
+      { label: "Calculator and formulas", value: "NESA-approved calculator; reference sheet provided" },
+      { label: "Syllabus", value: "Mathematics Standard 11-12 (2024), first examined in 2027" },
+      { label: "Results", value: "HSC mark (exam and school assessment) reported in Bands 1 to 6" },
+      { label: "Given by", value: "NSW Education Standards Authority (NESA)" },
+    ],
+    basedOn: "the NESA Mathematics Standard 11-12 Syllabus (2024) and its HSC examination specifications for Mathematics Standard 2",
+    source: { name: "NESA: Mathematics Standard 11-12 Syllabus (2024), HSC examinations", url: "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/assessment/hsc-examinations" },
+    tigertest:
+      "Tigertest has two HSC Maths Standard 2 practice papers (15 multiple-choice and 25 short-answer questions each, with a reference sheet) and six topic drills, three of which open with short Basics lessons. All of it is free with no account required; scores are percent correct, not bands.",
+  },
+  aursa: {
+    answer:
+      "SITHFAB021 Provide responsible service of alcohol is the national RSA unit for anyone who sells, serves or supplies alcohol in Australia. It is a short course, often a few hours online or in a classroom, assessed by a registered training organisation with knowledge questions and practical tasks rather than a single national exam; most providers require every knowledge question to be correct. Each state and territory sets its own certification rules, such as approved courses, photo cards and refreshers.",
+    rows: [
+      { label: "Unit", value: "SITHFAB021 (replaced SITHFAB002)" },
+      { label: "Format", value: "RTO knowledge questions plus practical tasks" },
+      { label: "Pass mark", value: "Set by the RTO, usually all knowledge questions correct (80% here is a readiness line)" },
+      { label: "Course length", value: "Usually a few hours, by provider" },
+      { label: "Legal drinking age", value: "18 in every state and territory" },
+      { label: "Standard drink", value: "10 g of alcohol" },
+      { label: "Certificate validity", value: "Varies by state (some require refreshers)" },
+    ],
+    basedOn: "the SITHFAB021 unit and assessment requirements on training.gov.au and the national alcohol guidelines, checked October 2026",
+    source: { name: "training.gov.au: SITHFAB021 Provide responsible service of alcohol", url: "https://training.gov.au/Training/Details/SITHFAB021" },
+  },
+  aurcg: {
+    answer:
+      "RCG (Responsible Conduct of Gambling) or RSG (Responsible Service of Gambling) is the training staff need before working with gaming machines, Keno, wagering or table games in Australian hotels, clubs and casinos. Most courses deliver the national unit SITHGAM022 Provide responsible gambling services, assessed by a registered training organisation as competent or not yet competent, with no national pass mark. Each state or territory adds its own rules, approved courses and refresher periods.",
+    rows: [
+      { label: "National unit", value: "SITHGAM022 Provide responsible gambling services" },
+      { label: "Replaced", value: "SITHGAM001 (equivalent, 2022)" },
+      { label: "Assessment", value: "Competency based: questions, scenarios, observation" },
+      { label: "Pass mark", value: "None nationally; competent or not yet competent" },
+      { label: "Course length", value: "Usually under a day; varies by provider" },
+      { label: "Names", value: "RCG in NSW, RSG in Victoria and Queensland" },
+      { label: "State rules", value: "Set by each state or territory regulator" },
+    ],
+    basedOn: "the SITHGAM022 unit and assessment requirements on training.gov.au, checked October 2026",
+    source: { name: "training.gov.au: SITHGAM022 unit file", url: "https://training.gov.au/TrainingComponentFiles/SIT/SITHGAM022_R1.xml" },
+  },
+  aufss: {
+    answer:
+      "A food safety supervisor (FSS) is the certified person that Australian caterers, food service and related retail businesses must appoint under Standard 3.2.2A of the Food Standards Code, which has applied since December 2023. The certificate comes from a registered training organisation, usually for units SITXFSA005 and SITXFSA006 in hospitality, and must have been obtained within the past five years. Assessment is competency based, with knowledge questions and practical tasks and no fixed pass mark. NSW adds its own key focus areas.",
+    rows: [
+      { label: "Who needs one", value: "Category one and two food businesses" },
+      { label: "Units (hospitality)", value: "SITXFSA005 and SITXFSA006" },
+      { label: "Assessment", value: "Competency based, no pass mark" },
+      { label: "Certificate valid", value: "Obtained within the past 5 years" },
+      { label: "Key temperatures", value: "5°C or below, 60°C or above" },
+      { label: "Cooling", value: "60°C to 21°C in 2 h, to 5°C in 4 more" },
+      { label: "Records (category one)", value: "Kept at least 3 months" },
+      { label: "NSW extras", value: "Allergens, eggs, cleaning, Food Act offences" },
+    ],
+    basedOn: "FSANZ Standards 3.2.2 and 3.2.2A and the SITXFSA005 and SITXFSA006 units, checked October 2026",
+    source: { name: "FSANZ: Food safety supervisor", url: "https://www.foodstandards.gov.au/business/food-safety/food-safety-supervisor" },
+  },
+  aufirstaid: {
+    answer:
+      "HLTAID011 Provide First Aid is the national unit of competency that most Australian workplaces require of their first aiders. It is taught by registered training organisations and assessed by practical demonstration, including at least 2 minutes of uninterrupted CPR on adult and infant manikins and use of an AED, plus a knowledge assessment set by the training organisation. Answers follow Australian Resuscitation Council guidelines, and the certificate is usually renewed every 3 years with CPR refreshed every 12 months.",
+    rows: [
+      { label: "Unit", value: "HLTAID011 Provide First Aid (includes CPR)" },
+      { label: "Assessment", value: "Practical skills plus a knowledge quiz" },
+      { label: "CPR requirement", value: "2 minutes uninterrupted on a floor manikin" },
+      { label: "Pass mark", value: "Set by each training organisation" },
+      { label: "Renewal", value: "Usually every 3 years" },
+      { label: "CPR refresher", value: "Every 12 months" },
+      { label: "Guidelines", value: "Australian Resuscitation Council (ANZCOR)" },
+      { label: "Emergency number", value: "000 (112 from mobiles)" },
+    ],
+    basedOn: "The HLTAID011 unit and assessment requirements on training.gov.au, the Australian Resuscitation Council guidelines and Safe Work Australia's model Code of Practice on first aid, checked October 2026",
+    source: { name: "training.gov.au: HLTAID011 Provide First Aid", url: "https://training.gov.au/Training/Details/HLTAID011" },
+  },
+  auforklift: {
+    answer:
+      "In Australia, operating a forklift truck at work needs a high risk work licence of class LF. You are assessed by an accredited assessor against the national unit TLILIC0003 Licence to operate a forklift truck: a knowledge assessment, including load weight calculations, and a practical on a real forklift (simulators are not allowed). You then apply to your state or territory WHS regulator, generally within 60 days. Applicants must be 18 or older, and the licence lasts 5 years and is recognised in every state and territory.",
+    rows: [
+      { label: "Licence", value: "High risk work licence, class LF (order-pickers are class LO)" },
+      { label: "Unit of competency", value: "TLILIC0003 Licence to operate a forklift truck" },
+      { label: "Assessment", value: "Knowledge (incl. calculations) and practical, by an accredited assessor" },
+      { label: "Pass mark", value: "Set by the national assessment materials (practice line here: 80%)" },
+      { label: "Minimum age", value: "18" },
+      { label: "Apply within", value: "60 days of the assessment (check your regulator)" },
+      { label: "Licence valid", value: "5 years, recognised nationally" },
+      { label: "Issued by", value: "State or territory WHS regulator; fees vary by state" },
+    ],
+    basedOn: "The TLILIC0003 Assessment Requirements on training.gov.au and state regulator high risk work licence pages, checked October 2026",
+    source: { name: "training.gov.au: TLILIC0003 Licence to operate a forklift truck", url: "https://training.gov.au/Training/Details/tlilic0003" },
+  },
+  auwah: {
+    answer:
+      "Working at heights training in Australia is the nationally recognised unit RIIWHS204 Work safely at heights, which replaced RIIWHS204E in September 2026 as an equivalent unit. It is usually a one-day course with a registered training organisation, assessed by practical tasks plus a written knowledge assessment that each RTO sets, with no national pass mark. The unit has no expiry date, though some employers set their own refresher requirements, and site rules vary by state and territory.",
+    rows: [
+      { label: "Unit", value: "RIIWHS204 (formerly RIIWHS204E)" },
+      { label: "Course length", value: "Usually 1 day" },
+      { label: "Assessment", value: "Practical tasks plus a knowledge test" },
+      { label: "Pass mark", value: "Set by each RTO (competency based)" },
+      { label: "Delivered by", value: "Registered training organisations" },
+      { label: "Expiry", value: "None set; some employers require refreshers" },
+      { label: "Rules", value: "Model WHS Regulations and falls codes" },
+      { label: "State differences", value: "Vary by state and territory" },
+    ],
+    basedOn: "the RIIWHS204 unit, the model WHS Regulations and the Safe Work Australia falls codes of practice",
+    source: { name: "training.gov.au: RIIWHS204 Work safely at heights", url: "https://training.gov.au/Training/Details/RIIWHS204" },
+  },
+  gcsehigher: {
+    answer:
+      "GCSE Mathematics Higher tier is three written papers sat at the end of Year 11 in England: 1 hour 30 minutes and 80 marks each, with Paper 1 non-calculator and Papers 2 and 3 calculator. Any topic can appear on any paper, weighted 30% algebra, 20% ratio, proportion and rates of change, 20% geometry and measures, 15% number and 15% probability and statistics. Higher tier awards grades 9 to 4, with an allowed grade 3, and grade boundaries are set after each exam series.",
+    rows: [
+      { label: "Who takes it", value: "Year 11 students in England (and resit students), usually in May and June" },
+      { label: "Papers", value: "3 papers, 1 hr 30 min and 80 marks each (240 marks)" },
+      { label: "Calculator", value: "Paper 1 non-calculator; Papers 2 and 3 calculator" },
+      { label: "Grades", value: "9 to 4, with an allowed grade 3; boundaries change each year" },
+      { label: "Content weighting", value: "Algebra 30%, ratio 20%, geometry 20%, number 15%, probability and statistics 15%" },
+      { label: "Given by", value: "AQA, Pearson Edexcel or OCR, to the DfE subject content" },
+    ],
+    basedOn: "the Department for Education's GCSE mathematics subject content and assessment objectives (2013) and its Higher tier weightings",
+    source: { name: "DfE: GCSE mathematics subject content and assessment objectives", url: "https://www.gov.uk/government/publications/gcse-mathematics-subject-content-and-assessment-objectives" },
+    tigertest:
+      "Tigertest has two GCSE Maths Higher practice tests of three timed papers each (20 questions per paper, Paper 1 without a calculator) and five topic drills, four of which open with short Basics lessons. All of it is free with no account required; scores are percent correct, not grades.",
+  },
+  gcsescience: {
+    answer:
+      "GCSE Combined Science is a double award worth two GCSEs, taken by most students in England at the end of Year 11 and graded 9-9 down to 1-1. Students sit six written papers, two each for biology, chemistry and physics; on the most widely taken specification each paper lasts 1 hour 15 minutes, is worth 70 marks and counts for a sixth of the grade. There are Foundation (grades 1-1 to 5-5) and Higher (up to 9-9) tiers, calculators are allowed, and for the 2025 to 2027 exams every candidate is given a physics equation sheet.",
+    rows: [
+      { label: "Who takes it", value: "Most Year 11 students in England, in May and June" },
+      { label: "Papers", value: "Six: two biology, two chemistry, two physics" },
+      { label: "Time", value: "1 hour 15 minutes a paper on the largest specification" },
+      { label: "Grades", value: "9-9 to 1-1 (double award); Foundation tier up to 5-5" },
+      { label: "Given on the day", value: "Calculator; physics equation sheet (2025 to 2027)" },
+      { label: "Set by", value: "Exam boards (AQA, Pearson Edexcel, OCR, Eduqas) on DfE subject content" },
+    ],
+    basedOn: "the Department for Education GCSE combined science subject content and the 2024 decision on equation sheets for 2025 to 2027",
+    source: { name: "Department for Education: GCSE combined science subject content", url: "https://www.gov.uk/government/publications/gcse-combined-science" },
+    tigertest:
+      "Tigertest has two timed practice tests (20 biology, 20 chemistry and 20 physics questions each) and six drills split by paper 1 and paper 2 topics, four of which start with short lessons on the maths skills. All of it is free with no account required.",
+  },
+  gcsecs: {
+    answer:
+      "GCSE Computer Science is two written exams of equal weight, sat at the end of Year 11 in England: one on computational thinking, algorithms and programming, and one on computer systems (data representation, hardware, networks, security and the impact of technology). AQA's papers are 2 hours and 1 hour 45 minutes for 90 marks each; OCR's are 1 hour 30 minutes for 80 marks each; Pearson Edexcel's programming paper is a 2-hour on-screen exam. Grades run 9 to 1, with boundaries set after each exam series.",
+    rows: [
+      { label: "Who takes it", value: "Year 11 students in England, in May and June" },
+      { label: "Papers", value: "2 papers, 50% each: programming and computer systems" },
+      { label: "Time and marks", value: "AQA 2 h and 1 h 45 min, 90 marks each; OCR 1 h 30 min, 80 marks each" },
+      { label: "Calculator", value: "Not allowed on the written papers" },
+      { label: "Grades", value: "9 to 1; boundaries change each year" },
+      { label: "Given by", value: "AQA, OCR or Pearson Edexcel, to the DfE subject content" },
+    ],
+    basedOn: "the Department for Education's GCSE subject content for computer science (updated March 2025) and the AQA 8525, OCR J277 and Pearson Edexcel 1CP2 schemes of assessment",
+    source: { name: "DfE: GCSE subject content for computer science", url: "https://www.gov.uk/government/publications/gcse-computer-science/gcse-subject-content-for-computer-science" },
+    tigertest:
+      "Tigertest has two GCSE Computer Science practice tests of two timed 30-question papers each and seven topic drills, three of which open with step-by-step basics (binary, hex, binary addition, file sizes, trace tables and truth tables). All of it is free with no account required; scores are percent correct, not grades.",
+  },
+  elevenplus: {
+    answer:
+      "The 11+ is the entrance test for grammar schools in parts of England and in Northern Ireland, usually sat in September of Year 6. There is no single national test: each area or school sets its own. Most multiple-choice 11+ tests are drawn from English (comprehension, spelling, punctuation and grammar), maths (Key Stage 2), verbal reasoning (word and code puzzles) and non-verbal reasoning (shape puzzles), with papers of about 45 to 60 minutes marked by computer. Raw marks are turned into an age-standardised score, and each area or school sets its own qualifying score.",
+    rows: [
+      { label: "Who takes it", value: "Year 6 pupils applying to grammar schools, usually in September" },
+      { label: "Papers", value: "English, maths, verbal reasoning and non-verbal reasoning; areas choose and combine them" },
+      { label: "Format", value: "Multiple choice on a separate answer sheet, computer marked" },
+      { label: "Typical length", value: "About 45 to 60 minutes a paper" },
+      { label: "Passing score", value: "No single pass mark; an age-standardised score against a local qualifying score" },
+      { label: "Set by", value: "Each local authority, consortium or grammar school" },
+    ],
+    basedOn: "the national curriculum in England for Key Stage 2 English and mathematics and the published formats of multiple-choice 11+ tests such as the Kent Test",
+    source: { name: "Kent County Council: prepare for the Kent Test", url: "https://www.kent.gov.uk/education-and-children/schools/school-places/kent-test/prepare-for-the-kent-test" },
+    tigertest:
+      "Tigertest has two timed practice tests (English, Maths and Verbal Reasoning, 90 questions each) and six drills, four of which start with short click-through lessons on skills like hidden words, letter codes and fractions of amounts. Non-verbal reasoning is not covered. All of it is free with no account required.",
+  },
+  fsmaths: {
+    answer:
+      "Functional Skills Maths Level 2 is an Ofqual-regulated qualification in England that tests using maths to solve real-life problems. It is one exam set by the awarding body you register with, with a non-calculator part worth 25% of the marks and a calculator part for the rest; about three-quarters of the marks are for multi-step problems. It covers using numbers (including fractions, percentages, ratio and formulas), measures, shape and space, and handling data and probability. Each awarding body sets its own paper length and pass mark.",
+    rows: [
+      { label: "Who takes it", value: "Adults, apprentices and college learners in England" },
+      { label: "Format", value: "One exam: a non-calculator section (25% of marks) and a calculator section" },
+      { label: "Time", value: "Set by the awarding body, often around 2 hours (Pearson Edexcel: 25 min + 1 hr 30 min)" },
+      { label: "Passing score", value: "Set for each paper by the awarding body" },
+      { label: "Content", value: "Number; measures, shape and space; handling information and data" },
+      { label: "Given by", value: "Ofqual-regulated awarding bodies, on paper or on screen" },
+    ],
+    basedOn: "the Department for Education's Functional Skills mathematics subject content (Level 2) and Ofqual's assessment weightings",
+    source: { name: "DfE: Functional Skills subject content, mathematics", url: "https://www.gov.uk/government/publications/functional-skills-subject-content-mathematics" },
+    tigertest:
+      "Tigertest has two Functional Skills Maths Level 2 practice papers (10 non-calculator and 30 calculator questions each) and four topic drills, each opening with short click-through lessons. All of it is free with no account required; scores are percent correct.",
+  },
+  cscs: {
+    answer:
+      "Most CSCS cards need a pass in the CITB Health, Safety and Environment test taken in the last 2 years. The operatives version, for site workers, has 50 multiple-choice questions in 45 minutes and you need 45 right (90%). It costs 23.50 pounds and is taken at a Pearson Professional Centre. Supervisors and managers take a separate managers and professionals test, and some trades a specialist test.",
+    rows: [
+      { label: "Questions", value: "50 multiple choice" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "45 of 50 (90%)" },
+      { label: "Fee", value: "£23.50" },
+      { label: "Where", value: "Pearson Professional Centres" },
+      { label: "Pass valid for a card", value: "2 years" },
+      { label: "Versions", value: "Operatives, Specialists, Managers and Professionals" },
+      { label: "Given by", value: "CITB, for CSCS cards in Great Britain" },
+    ],
+    basedOn: "the CITB HS&E test pages and the CSCS test FAQ",
+    source: { name: "CITB: Operatives test", url: "https://www.citb.co.uk/courses-tests/health-safety-and-environment-hse-test/operatives-test" },
+  },
+  ukfood: {
+    answer:
+      "The Level 2 Award in Food Safety (or Food Safety and Hygiene) for Catering is a short regulated qualification for anyone who prepares or serves food in the UK, usually a one-day course ending in a multiple-choice exam of 20 to 30 questions. Pass marks are set by each awarding body, usually 60 to 70 percent. The law does not require the certificate itself, but food handlers must be supervised and trained in food hygiene to suit their work, and most employers use the Level 2 to show it.",
+    rows: [
+      { label: "Exam", value: "Multiple choice, usually 20 to 30 questions" },
+      { label: "Time", value: "Up to about 1 hour" },
+      { label: "Pass mark", value: "Set by awarding body, about 60 to 70%" },
+      { label: "Course length", value: "About 6 to 9 guided hours" },
+      { label: "Legally required?", value: "Training yes; a certificate no" },
+      { label: "Key temperatures", value: "8°C chill, 63°C hot hold, 75°C cook" },
+      { label: "Allergens to know", value: "14, plus Natasha's Law labels" },
+      { label: "Regulated by", value: "Ofqual, Qualifications Wales and CCEA" },
+    ],
+    basedOn: "the Level 2 Food Safety in Catering unit and Food Standards Agency guidance, checked October 2026",
+    source: { name: "Food Standards Agency: Safer food, better business", url: "https://www.food.gov.uk/business-guidance/safer-food-better-business" },
+  },
+  ukaplh: {
+    answer:
+      "The Level 2 Award for Personal Licence Holders (APLH) is the accredited qualification you need before applying for a personal licence to sell alcohol in England and Wales. It is a one-unit course on the Licensing Act 2003, usually taught in a day, ending in a 40-question multiple-choice exam where you need 28 correct (70%). You then apply to the licensing authority where you live; the licence lasts indefinitely.",
+    rows: [
+      { label: "Questions", value: "40 multiple choice" },
+      { label: "Time", value: "40 to 60 minutes, by awarding body" },
+      { label: "Pass mark", value: "28 of 40 (70%)" },
+      { label: "Level", value: "Level 2 (RQF), one unit" },
+      { label: "Minimum age for the licence", value: "18" },
+      { label: "Licence lasts", value: "Indefinitely (no renewal since 2015)" },
+      { label: "Applies in", value: "England and Wales (Licensing Act 2003)" },
+    ],
+    basedOn: "the Licensing Act 2003, the GOV.UK personal licence guidance and awarding body specifications for the Level 2 APLH, checked October 2026",
+    source: { name: "GOV.UK: Personal licence to sell alcohol", url: "https://www.gov.uk/personal-licence-to-sell-alcohol" },
+  },
+  ukfaw: {
+    answer:
+      "First Aid at Work (FAW) is the three-day workplace first aid course set out in HSE's guidance on the Health and Safety (First-Aid) Regulations 1981, usually certificated as a Level 3 Award in First Aid at Work. You are assessed on practical skills such as CPR, AED use and bandaging, and on theory through a written or multiple-choice paper set by the awarding body, with pass marks around 70%. The certificate lasts 3 years, and requalifying takes a 2-day course.",
+    rows: [
+      { label: "Course length", value: "3 days (EFAW is 1 day)" },
+      { label: "Assessment", value: "Practical observation plus a theory paper" },
+      { label: "Pass mark", value: "Set by each awarding body, about 70%" },
+      { label: "Certificate valid", value: "3 years" },
+      { label: "Requalification", value: "2-day course before expiry" },
+      { label: "Refresher", value: "Annual, strongly recommended by HSE" },
+      { label: "Guidelines", value: "Resuscitation Council UK, 2025" },
+      { label: "Content set by", value: "HSE (L74, Appendices 5 and 6)" },
+    ],
+    basedOn: "HSE guidance L74 on the Health and Safety (First-Aid) Regulations 1981 and the Resuscitation Council UK 2025 guidelines, checked October 2026",
+    source: { name: "HSE: First aid at work (L74)", url: "https://www.hse.gov.uk/pubns/books/l74.htm" },
+  },
+  ukcare: {
+    answer:
+      "The Care Certificate is the set of 16 standards that new health and social care support workers in England are expected to meet during induction, updated in March 2025 with a new standard on learning disability and autism. It is not a qualification and has no national exam or pass mark: your employer's assessor checks your knowledge and watches your practice, and guidance says it should be completed within 12 weeks of starting.",
+    rows: [
+      { label: "Standards", value: "16 (updated March 2025)" },
+      { label: "Exam", value: "None; workplace assessment of knowledge and practice" },
+      { label: "Pass mark", value: "None official (80% here is a readiness line)" },
+      { label: "Time to complete", value: "Within 12 weeks of starting" },
+      { label: "Who takes it", value: "New care workers, healthcare assistants and support workers" },
+      { label: "Fee", value: "None; part of employer induction" },
+      { label: "Next step", value: "Level 2 Adult Social Care Certificate (qualification)" },
+      { label: "Developed by", value: "Skills for Care, Skills for Health and NHS England" },
+    ],
+    basedOn: "The Care Certificate standards and guidance published by Skills for Care",
+    source: { name: "Skills for Care: Care Certificate", url: "https://www.skillsforcare.org.uk/Developing-your-workforce/Care-Certificate/Care-Certificate.aspx" },
   },
 };

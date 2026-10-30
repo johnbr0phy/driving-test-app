@@ -1,0 +1,26 @@
+{
+  "id": "auwah",
+  "stateCode": "AUWAH",
+  "idBase": 10000,
+  "prefix": "AUWAH-",
+  "slug": "/working-at-heights",
+  "landingPath": "/working-at-heights-practice-test",
+  "dataFile": "data/working-at-heights-questions.json",
+  "name": "Working at Heights Practice Test",
+  "shortName": "Working at Heights",
+  "examLabel": "Working at heights (RIIWHS204)",
+  "fullName": "RIIWHS204 Work safely at heights (formerly RIIWHS204E) knowledge assessment",
+  "icon": "hardhat",
+  "passPct": 80,
+  "outlineComment": "RIIWHS204 Work safely at heights (RII Training Package, release 1, 2 Sept 2026; supersedes and is equivalent to RIIWHS204E, training.gov.au checked 30 Oct 2026). Knowledge evidence: WHS legislation, policies and documentation, heights safety systems, safe work methods, equipment names and functions, manufacturer instructions, shifting tools and materials, hazards and emergencies, communication. Content from the model WHS Regulations falls provisions (regs 78 to 80) and the Safe Work Australia model Codes of Practice 'Managing the risk of falls at workplaces' and 'Managing the risk of falls in housing construction'. RTOs set their own knowledge test; the unit sets no question count or pass mark, so the 80% line is a readiness marker and the counts are ours. State and territory differences are 'varies'. All items original.",
+  "categories": [
+    {"key": "auwahLaw", "label": "WHS Laws, Duties & Licences", "perTest": 6, "segment": "LAW"},
+    {"key": "auwahRisk", "label": "Hazards & Risk Assessment", "perTest": 7, "segment": "RSK"},
+    {"key": "auwahControl", "label": "Hierarchy of Control for Falls", "perTest": 7, "segment": "HOC"},
+    {"key": "auwahPlatform", "label": "Edge Protection, Scaffolds & EWPs", "perTest": 7, "segment": "PLT"},
+    {"key": "auwahLadder", "label": "Ladders", "perTest": 6, "segment": "LAD"},
+    {"key": "auwahHarness", "label": "Harnesses, Lanyards & Anchors", "perTest": 8, "segment": "HAR"},
+    {"key": "auwahRoof", "label": "Roof Work & Housing Construction", "perTest": 5, "segment": "ROF"},
+    {"key": "auwahRescue", "label": "Rescue, Emergencies & Clean-up", "perTest": 4, "segment": "EMR"}
+  ]
+}

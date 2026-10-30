@@ -1,0 +1,4575 @@
+[
+  {
+    "id": "EQAO9-T1-001",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Writing expressions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A taxi charges a \\$4.50 flat fee plus \\$1.75 per kilometre. Which expression gives the cost, in dollars, of a trip of k kilometres?",
+    "options": [
+      "4.50 + 1.75k",
+      "1.75 + 4.50k",
+      "6.25k",
+      "4.50k + 1.75k"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The flat fee is paid once and the \\$1.75 is paid for each kilometre, so the cost is 4.50 + 1.75k. 6.25k would charge the flat fee again for every kilometre."
+  },
+  {
+    "id": "EQAO9-T1-002",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Number sets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which number is rational but not an integer?",
+    "options": [
+      "−12",
+      "−3/4",
+      "√2",
+      "π"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "−3/4 is a ratio of two integers, so it is rational, and it is not a whole step on the number line, so it is not an integer. −12 is an integer, and √2 and π are irrational."
+  },
+  {
+    "id": "EQAO9-T1-003",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Quartiles and IQR",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "Here are the times, in minutes, that 8 students took to finish a puzzle: 12, 15, 17, 18, 21, 24, 26, 30. What is the interquartile range, in minutes? Type the number only.",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Split the data into two halves of 4. The lower half 12, 15, 17, 18 has median Q1 = 16, and the upper half 21, 24, 26, 30 has median Q3 = 25. IQR = 25 − 16 = 9."
+  },
+  {
+    "id": "EQAO9-T1-004",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Pythagorean relationship",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "pythagorean",
+    "stem": "A 6.5 m ladder leans against a wall with its foot 2.5 m from the wall. How high up the wall does the ladder reach? Type the number of metres only.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "The ladder is the hypotenuse: h² + 2.5² = 6.5², so h² = 42.25 − 6.25 = 36 and h = 6 m."
+  },
+  {
+    "id": "EQAO9-T1-005",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Simple interest",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "Maya puts \\$800 in a savings account that pays 3% simple interest per year. How much interest does she earn in 4 years? Type the number of dollars only.",
+    "numeric": {
+      "answers": [
+        "96"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Simple interest = principal × rate × time = 800 × 0.03 × 4 = \\$96."
+  },
+  {
+    "id": "EQAO9-T1-006",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Solving equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve 3(x − 4) = 2x + 5.",
+    "numeric": {
+      "answers": [
+        "17"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Expand: 3x − 12 = 2x + 5. Subtract 2x from both sides: x − 12 = 5, so x = 17. Check: 3(13) = 39 and 2(17) + 5 = 39."
+  },
+  {
+    "id": "EQAO9-T1-007",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Negative exponents",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "exponentRules",
+    "stem": "Evaluate 2⁻³. Type your answer as a decimal or a fraction.",
+    "numeric": {
+      "answers": [
+        "0.125",
+        ".125",
+        "1/8"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "A negative exponent means the reciprocal: 2⁻³ = 1/2³ = 1/8 = 0.125. It is not −8, because the sign of the exponent does not make the value negative."
+  },
+  {
+    "id": "EQAO9-T1-008",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Reading code",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | total = 0 |\n| 2 | for n in range(1, 5): |\n| 3 | total = total + 3 |\n| 4 | print(total) |",
+    "stem": "What does this Python code print? Line 3 is indented, so it runs inside the loop. range(1, 5) gives 1, 2, 3, 4.",
+    "options": [
+      "15",
+      "3",
+      "12",
+      "10"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The loop runs once for each of 1, 2, 3 and 4, so 3 is added four times: 0 + 3 + 3 + 3 + 3 = 12. range(1, 5) stops before 5, which is why it is not 15."
+  },
+  {
+    "id": "EQAO9-T1-009",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Correlation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A scatter plot of daily screen time (x) and hours of sleep (y) for 30 students shows points falling from upper left to lower right, all close to a line. Which best describes the correlation?",
+    "options": [
+      "Weak negative",
+      "Strong positive",
+      "No correlation",
+      "Strong negative"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Points falling from left to right show a negative correlation, and points close to a line show a strong one."
+  },
+  {
+    "id": "EQAO9-T1-010",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Cylinder and cone volume",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cylinder and a cone have the same radius and the same height. The cylinder holds 900 mL. How much does the cone hold?",
+    "options": [
+      "300 mL",
+      "450 mL",
+      "900 mL",
+      "2700 mL"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A cone's volume is one third of the cylinder with the same base and height: 900 ÷ 3 = 300 mL."
+  },
+  {
+    "id": "EQAO9-T1-011",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Depreciation",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "A new car costs \\$32 000 and loses 15% of its value each year. What is it worth after 2 years?",
+    "options": [
+      "\\$22 400",
+      "\\$23 120",
+      "\\$27 200",
+      "\\$24 000"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Each year it keeps 85% of the value it had: 32 000 × 0.85 = 27 200, then 27 200 × 0.85 = 23 120. \\$22 400 takes 15% of the original price off twice."
+  },
+  {
+    "id": "EQAO9-T1-012",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Comparing unit rates",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "ratios",
+    "stem": "A 1.89 L jug of juice costs \\$4.29 and a 2.5 L jug costs \\$5.49. Which jug is the better buy, and by about how much per litre?",
+    "options": [
+      "1.89 L jug, by about \\$0.07 per litre",
+      "2.5 L jug, by about \\$1.20 per litre",
+      "2.5 L jug, by about \\$0.07 per litre",
+      "1.89 L jug, by about \\$1.20 per litre"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Unit prices: \\$4.29 ÷ 1.89 ≈ \\$2.27 per litre and \\$5.49 ÷ 2.5 ≈ \\$2.20 per litre, so the 2.5 L jug is cheaper by about \\$0.07 per litre. \\$1.20 is the difference in the jug prices, not the price per litre."
+  },
+  {
+    "id": "EQAO9-T1-013",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Equation from a table",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "slope",
+    "passage": "| x | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| y | 5 | 8 | 11 | 14 |",
+    "stem": "Which equation matches this table of values?",
+    "options": [
+      "y = 5x + 3",
+      "y = x + 3",
+      "y = 3x",
+      "y = 3x + 5"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "y goes up by 3 each time x goes up by 1, so the rate of change is 3, and y = 5 when x = 0, so the initial value is 5: y = 3x + 5."
+  },
+  {
+    "id": "EQAO9-T1-014",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Collecting like terms",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Simplify 4a + 3b − a + 2b.",
+    "options": [
+      "3a + 5b",
+      "5a + 5b",
+      "3a + b",
+      "8ab"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Combine the a terms (4a − a = 3a) and the b terms (3b + 2b = 5b). Unlike terms such as a and b cannot be combined into one term like 8ab."
+  },
+  {
+    "id": "EQAO9-T1-015",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Number",
+    "skill": "Multiplying powers",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Simplify x⁵ × x³.",
+    "options": [
+      "x¹⁵",
+      "x⁸",
+      "x²",
+      "2x⁸"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "When you multiply powers with the same base, add the exponents: 5 + 3 = 8, so x⁸. Multiplying the exponents (x¹⁵) is the rule for a power of a power."
+  },
+  {
+    "id": "EQAO9-T1-016",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Data",
+    "skill": "Median",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "meanMedian",
+    "stem": "What is the median of 7, 3, 9, 4, 15?",
+    "options": [
+      "7.6",
+      "9",
+      "7",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "In order: 3, 4, 7, 9, 15. The middle value is 7. 7.6 is the mean and 12 is the range."
+  },
+  {
+    "id": "EQAO9-T1-017",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Geometry",
+    "skill": "Metric conversions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How many centimetres are in 3.2 m?",
+    "options": [
+      "32 cm",
+      "3200 cm",
+      "0.032 cm",
+      "320 cm"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "There are 100 cm in a metre, so 3.2 × 100 = 320 cm. 3200 would be millimetres."
+  },
+  {
+    "id": "EQAO9-T1-018",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Substitution",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "Evaluate 2x² − 3 when x = 4.",
+    "numeric": {
+      "answers": [
+        "29"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Square first: 4² = 16. Then 2 × 16 − 3 = 29."
+  },
+  {
+    "id": "EQAO9-T1-019",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Graphs of y = k and x = k",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which equation's graph is a horizontal line?",
+    "options": [
+      "y = 3",
+      "x = 3",
+      "y = 3x",
+      "x + y = 3"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "On y = 3 every point has a y-coordinate of 3 whatever x is, so the line is horizontal. x = 3 is a vertical line."
+  },
+  {
+    "id": "EQAO9-T1-020",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Financial",
+    "skill": "Modifying a budget",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "| Monthly budget | Amount |\n|---|---|\n| Rent | \\$600 |\n| Food | \\$350 |\n| Transit | \\$150 |\n| Phone | \\$60 |\n| Savings | \\$200 |\n| Other | \\$140 |\n| Total | \\$1500 |",
+    "stem": "Jas's rent goes up by \\$75 a month. She wants to keep saving \\$200, so she takes the extra rent out of Other. How much is left for Other?",
+    "options": [
+      "\\$140",
+      "\\$65",
+      "\\$215",
+      "\\$125"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Other was \\$140, and \\$140 − \\$75 = \\$65. The total stays \\$1500 because the \\$75 moves from Other to rent."
+  },
+  {
+    "id": "EQAO9-T1-021",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Variables in code",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | a = 5 |\n| 2 | b = a + 2 |\n| 3 | a = b * 3 |\n| 4 | print(a) |",
+    "stem": "What does this Python code print?",
+    "options": [
+      "15",
+      "7",
+      "21",
+      "17"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "b = 5 + 2 = 7. Then a is replaced by 7 × 3 = 21, so the code prints 21. 15 uses the old value of a."
+  },
+  {
+    "id": "EQAO9-T1-022",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Number",
+    "skill": "Multiplying fractions",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "fractionOps",
+    "stem": "A recipe uses 3/4 of a cup of flour for each batch. How many cups of flour are needed for 6 batches? Type the number of cups only, as a decimal.",
+    "numeric": {
+      "answers": [
+        "4.5",
+        "9/2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "6 × 3/4 = 18/4 = 4.5 cups."
+  },
+  {
+    "id": "EQAO9-T1-023",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Data",
+    "skill": "Types of data",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which survey question collects numerical data?",
+    "options": [
+      "Which way do you usually travel to school?",
+      "What is your favourite subject at school?",
+      "Do you eat breakfast before school?",
+      "How many minutes is your trip to school?"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Minutes are counted or measured, so the answers are numbers. The other questions give categories such as bus, math or yes."
+  },
+  {
+    "id": "EQAO9-T1-024",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Geometry",
+    "skill": "Angles in a triangle",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "triangleAngles",
+    "stem": "Two angles of a triangle measure 47° and 68°. What is the third angle, in degrees? Type the number only.",
+    "numeric": {
+      "answers": [
+        "65"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "The angles of a triangle add to 180°: 180 − 47 − 68 = 65°."
+  },
+  {
+    "id": "EQAO9-T1-025",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Solving equations",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve x/3 + 2 = 9.",
+    "numeric": {
+      "answers": [
+        "21"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Subtract 2: x/3 = 7. Multiply by 3: x = 21."
+  },
+  {
+    "id": "EQAO9-T1-026",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Point of intersection in context",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Phone plan A costs \\$25 a month plus \\$0.10 per text. Plan B costs \\$15 a month plus \\$0.15 per text. For how many texts in a month do the two plans cost the same?",
+    "options": [
+      "200",
+      "100",
+      "250",
+      "40"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Set the costs equal: 25 + 0.10t = 15 + 0.15t, so 10 = 0.05t and t = 200. Both plans then cost \\$45."
+  },
+  {
+    "id": "EQAO9-T1-027",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Number",
+    "skill": "Power of a product",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Simplify (2x³)² ÷ (4x²).",
+    "options": [
+      "2x⁴",
+      "x⁴",
+      "x³",
+      "4x⁴"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "(2x³)² = 4x⁶, because both the 2 and the x³ are squared. Then 4x⁶ ÷ 4x² = x⁴: the 4s cancel and the exponents subtract, 6 − 2 = 4. 2x⁴ and 4x⁴ leave a number in front, but the 4 on top and the 4 below cancel to 1."
+  },
+  {
+    "id": "EQAO9-T1-028",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Data",
+    "skill": "Reading a box plot",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A box plot of quiz scores shows: minimum 4, first quartile 9, median 12, third quartile 15, maximum 20. Which statement must be true?",
+    "options": [
+      "The mean score is 12",
+      "About a quarter of the scores are above 12",
+      "About half the scores are from 9 to 15",
+      "The range of the scores is 6"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The box runs from Q1 to Q3 and holds the middle half of the data. A box plot shows the median, not the mean, and half the scores (not a quarter) are above the median. The range is 20 − 4 = 16."
+  },
+  {
+    "id": "EQAO9-T1-029",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Geometry",
+    "skill": "Changing dimensions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Each dimension of a rectangular prism is doubled. What happens to its volume?",
+    "options": [
+      "It doubles",
+      "It is multiplied by 4",
+      "It is multiplied by 6",
+      "It is multiplied by 8"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "V = lwh, and doubling all three gives (2l)(2w)(2h) = 8lwh. Multiplying by 4 is what happens to the area of a face."
+  },
+  {
+    "id": "EQAO9-T1-030",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Reflecting a line",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The line y = 2x is reflected in the x-axis. What is the equation of the new line?",
+    "options": [
+      "y = −2x",
+      "y = x/2",
+      "y = −x/2",
+      "y = 2x − 2"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Reflecting in the x-axis changes every y-coordinate to its opposite, so y = 2x becomes y = −2x. y = −x/2 is what a 90° rotation gives."
+  },
+  {
+    "id": "EQAO9-T1-031",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Equations with fractions",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve (2x + 1)/5 = (x − 1)/2.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Multiply both sides by 10: 2(2x + 1) = 5(x − 1), so 4x + 2 = 5x − 5 and x = 7. Check: 15/5 = 3 and 6/2 = 3."
+  },
+  {
+    "id": "EQAO9-T1-032",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Financial",
+    "skill": "Simple and compound interest",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "How much more interest does \\$2000 earn in 5 years at 4% compounded annually than at 4% simple interest?",
+    "options": [
+      "\\$0",
+      "\\$33.31",
+      "\\$433.31",
+      "\\$16.65"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Simple: 2000 × 0.04 × 5 = \\$400. Compound: 2000 × 1.04⁵ = \\$2433.31, so \\$433.31 interest. Compound interest earns interest on interest, here \\$33.31 more."
+  },
+  {
+    "id": "EQAO9-T1-033",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Tracing a loop",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | x = 1 |\n| 2 | while x < 50: |\n| 3 | x = x * 3 |\n| 4 | print(x) |",
+    "stem": "What does this Python code print? Line 3 is indented, so it repeats while the condition on line 2 is true.",
+    "options": [
+      "27",
+      "50",
+      "81",
+      "243"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "x goes 1, 3, 9, 27. Since 27 is still less than 50, the loop runs once more and x becomes 81. Now 81 < 50 is false, so the loop stops and 81 is printed."
+  },
+  {
+    "id": "EQAO9-T1-034",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Number",
+    "skill": "Scale and proportion",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "A map has a scale of 1 : 50 000. Two towns are 7.4 cm apart on the map. How far apart are they in real life, in kilometres? Type the number only.",
+    "numeric": {
+      "answers": [
+        "3.7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "7.4 cm × 50 000 = 370 000 cm. There are 100 000 cm in a kilometre, so the distance is 3.7 km."
+  },
+  {
+    "id": "EQAO9-T1-035",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Data",
+    "skill": "Predicting with a line of best fit",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "For a café, the line of best fit for hot chocolate sales is s = −4t + 120, where t is the temperature in °C and s is the number of cups sold in a day. Predict the number of cups sold on a day when it is −5°C. Type the number of cups only.",
+    "numeric": {
+      "answers": [
+        "140"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "s = −4(−5) + 120 = 20 + 120 = 140 cups. A colder day gives more sales, which fits the negative slope."
+  },
+  {
+    "id": "EQAO9-T1-036",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Geometry",
+    "skill": "Pythagorean relationship in context",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "pythagorean",
+    "stem": "A rectangular park is 120 m long and 50 m wide. How many metres shorter is it to walk straight across the diagonal than to walk along two sides? Type the number of metres only.",
+    "numeric": {
+      "answers": [
+        "40"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Diagonal: √(120² + 50²) = √16 900 = 130 m. Along two sides: 120 + 50 = 170 m. The diagonal is 170 − 130 = 40 m shorter."
+  },
+  {
+    "id": "EQAO9-T1-037",
+    "section": "a",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Equivalent expressions",
+    "difficulty": 2,
+    "format": "multi",
+    "basics": "distributing",
+    "stem": "Select the two expressions that are equivalent to 6x − 9.",
+    "options": [
+      "−3(2x − 3)",
+      "3(2x − 3)",
+      "−3(3 − 2x)",
+      "6(x − 9)",
+      "3(2x − 9)"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2,
+    "calculator": true,
+    "explanation": "3(2x − 3) = 6x − 9 and −3(3 − 2x) = −9 + 6x, which is the same. 6(x − 9) = 6x − 54, and −3(2x − 3) = −6x + 9."
+  },
+  {
+    "id": "EQAO9-T1-038",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Linear or non-linear",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In each table, x takes the values 0, 1, 2, 3. Which list of y-values shows a linear relation?",
+    "options": [
+      "1, 2, 4, 8",
+      "0, 1, 4, 9",
+      "5, 6, 8, 11",
+      "4, 7, 10, 13"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "4, 7, 10, 13 goes up by the same amount (3) each time, so the rate of change is constant. 1, 2, 4, 8 doubles, and the other two go up by more each time."
+  },
+  {
+    "id": "EQAO9-T1-039",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Scientific notation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A dust particle has a mass of 0.000 000 753 g. Which shows this mass in scientific notation?",
+    "options": [
+      "7.53 × 10⁻⁷ g",
+      "7.53 × 10⁷ g",
+      "7.53 × 10⁻⁶ g",
+      "7.53 × 10⁻⁸ g"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Move the decimal point 7 places to the right to get 7.53, so the exponent is −7. A small number has a negative exponent, which rules out 10⁷."
+  },
+  {
+    "id": "EQAO9-T1-040",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Effect of an outlier",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The ages of the members of a youth choir are 13, 14, 14, 15, 16, 16 and 17. The director, who is 52, is added to the data. Which measure of centre changes the most?",
+    "options": [
+      "The median",
+      "The mean",
+      "The mode",
+      "They all change by the same amount"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The mean goes from 105 ÷ 7 = 15 to 157 ÷ 8 ≈ 19.6. The median only moves from 15 to 15.5, and the modes, 14 and 16, do not change."
+  },
+  {
+    "id": "EQAO9-T1-041",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Volume of a cylinder",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A cylindrical water tank has a radius of 0.5 m and a height of 1.2 m. What is its volume in cubic metres? Round to two decimal places and type the number only.",
+    "numeric": {
+      "answers": [
+        "0.94"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "V = πr²h = π × 0.5² × 1.2 = 0.3π ≈ 0.942, so 0.94 m³."
+  },
+  {
+    "id": "EQAO9-T1-042",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Cost of borrowing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Rosa is taking out a loan for a \\$24 000 car. Which choice makes the total interest she pays the lowest?",
+    "options": [
+      "Smaller down payment, shorter loan",
+      "Larger down payment, longer loan",
+      "Larger down payment, shorter loan",
+      "Smaller down payment, longer loan"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "A larger down payment means less is borrowed, and a shorter loan means interest is charged for less time. Both lower the total interest."
+  },
+  {
+    "id": "EQAO9-T1-043",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Slope from two points",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "slope",
+    "stem": "A line passes through (2, 5) and (6, 17). What is its slope?",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Slope = rise ÷ run = (17 − 5) ÷ (6 − 2) = 12 ÷ 4 = 3."
+  },
+  {
+    "id": "EQAO9-T1-044",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Integers in context",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "At 6 a.m. the temperature in Thunder Bay was −14°C. By 3 p.m. it had risen 9°C, and by midnight it had fallen 6°C from there. What was the temperature at midnight, in °C? Type the number only.",
+    "numeric": {
+      "answers": [
+        "-11"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "−14 + 9 = −5, and −5 − 6 = −11°C."
+  },
+  {
+    "id": "EQAO9-T1-045",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Meaning of rate of change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pool is being drained. The volume in litres after t hours is V = 48 000 − 3000t. What does the 3000 represent?",
+    "options": [
+      "The volume of the full pool",
+      "The hours it takes to empty",
+      "The litres left after one hour",
+      "The litres drained each hour"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "3000 is multiplied by the time, so it is the rate of change: the volume drops by 3000 L each hour. 48 000 is the initial volume."
+  },
+  {
+    "id": "EQAO9-T1-046",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Choosing a model",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A science class counts the bacteria in a dish every hour: 50, 100, 200, 400, 800. Which kind of model fits the data best?",
+    "options": [
+      "An exponential model",
+      "A linear model",
+      "A constant model",
+      "A decreasing linear model"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The count doubles every hour, so it is multiplied by the same number each step. That is exponential growth. A linear model would add the same amount each hour."
+  },
+  {
+    "id": "EQAO9-T1-047",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Converting between systems",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A hockey stick is 60 inches long. Using 1 inch = 2.54 cm, how long is it in centimetres?",
+    "options": [
+      "23.6 cm",
+      "152.4 cm",
+      "62.54 cm",
+      "15.24 cm"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Each inch is 2.54 cm, so multiply: 60 × 2.54 = 152.4 cm. Dividing gives 23.6, which would make the stick shorter in smaller units."
+  },
+  {
+    "id": "EQAO9-T1-048",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Appreciation",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "A painting bought for \\$5000 increases in value by 6% each year. What is it worth after 3 years? Round to the nearest dollar and type the number only.",
+    "numeric": {
+      "answers": [
+        "5955"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true,
+    "explanation": "5000 × 1.06³ = 5000 × 1.191016 = 5955.08, so about \\$5955. Adding 6% of \\$5000 three times gives \\$5900, which misses the growth on growth."
+  },
+  {
+    "id": "EQAO9-T1-049",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Percent with tax",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hoodie with a regular price of \\$60 is on sale for 30% off. Then 13% HST is added to the sale price. What is the total cost?",
+    "options": [
+      "\\$49.80",
+      "\\$42.00",
+      "\\$47.46",
+      "\\$46.20"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Sale price: \\$60 × 0.70 = \\$42.00. With HST: \\$42.00 × 1.13 = \\$47.46. \\$49.80 adds 13% of the regular price instead of 13% of the sale price."
+  },
+  {
+    "id": "EQAO9-T1-050",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Code that makes a table",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | for x in range(0, 4): |\n| 2 | y = 2 * x + 1 |\n| 3 | print(x, y) |",
+    "stem": "This Python code prints pairs of x and y. Lines 2 and 3 are indented inside the loop. Which pairs does it print?",
+    "options": [
+      "(0, 1), (1, 3), (2, 5), (3, 7), (4, 9)",
+      "(1, 3), (2, 5), (3, 7), (4, 9)",
+      "(0, 2), (1, 4), (2, 6), (3, 8)",
+      "(0, 1), (1, 3), (2, 5), (3, 7)"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "range(0, 4) gives x = 0, 1, 2, 3 (it stops before 4), and y = 2x + 1 gives 1, 3, 5, 7."
+  },
+  {
+    "id": "EQAO9-T1-051",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Expanding",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Expand 5(2x − 3).",
+    "options": [
+      "10x − 15",
+      "10x − 3",
+      "7x − 8",
+      "10x + 15"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Multiply each term inside the brackets by 5: 5 × 2x = 10x and 5 × (−3) = −15. 10x − 3 forgets to multiply the second term."
+  },
+  {
+    "id": "EQAO9-T1-052",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Number",
+    "skill": "Number sets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which statement describes −7?",
+    "options": [
+      "A whole number that is not a natural number",
+      "An integer that is not a whole number",
+      "A natural number",
+      "An irrational number"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Whole numbers are 0, 1, 2, 3 and so on, so a negative number is not one. −7 is an integer, and every integer is rational, so it is not irrational."
+  },
+  {
+    "id": "EQAO9-T1-053",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Data",
+    "skill": "Mode",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "meanMedian",
+    "stem": "Here are some shoe sizes: 7, 8, 8, 9, 9, 9, 10, 11. What is the mode?",
+    "options": [
+      "8",
+      "8.875",
+      "9",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The mode is the value that appears most often: 9 appears three times. 8.875 is the mean and 4 is the range."
+  },
+  {
+    "id": "EQAO9-T1-054",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Geometry",
+    "skill": "Circumference",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "circleBasics",
+    "stem": "A circle has a diameter of 14 cm. What is its circumference, to the nearest tenth?",
+    "options": [
+      "153.9 cm",
+      "22.0 cm",
+      "88.0 cm",
+      "44.0 cm"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "C = πd = π × 14 ≈ 44.0 cm. 153.9 is the area, πr² with r = 7, and 88.0 doubles the diameter again."
+  },
+  {
+    "id": "EQAO9-T1-055",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Solving equations",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve 4x − 7 = 21.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Add 7: 4x = 28. Divide by 4: x = 7."
+  },
+  {
+    "id": "EQAO9-T1-056",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Points on a line",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which point lies on the line y = 2x − 1?",
+    "options": [
+      "(3, 5)",
+      "(5, 3)",
+      "(2, 5)",
+      "(0, 1)"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Substitute x = 3: y = 2(3) − 1 = 5, which matches. At x = 0 the line has y = −1, not 1."
+  },
+  {
+    "id": "EQAO9-T1-057",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Financial",
+    "skill": "Appreciation and depreciation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these usually depreciates?",
+    "options": [
+      "A house in a growing city",
+      "A new phone",
+      "A rare hockey card",
+      "Land near a new transit line"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Electronics lose value as they age and newer models come out. Homes, land and rare collectibles often gain value."
+  },
+  {
+    "id": "EQAO9-T1-058",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Linear or non-linear",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which relation is non-linear?",
+    "options": [
+      "y = 4x",
+      "y = 3 − x",
+      "y = x²",
+      "y = x/2 + 7"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "x² makes y grow by more each time x goes up by 1 (1, 4, 9, 16), so the graph is a curve. The others have x to the power 1 and graph as straight lines."
+  },
+  {
+    "id": "EQAO9-T1-059",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Number",
+    "skill": "Zero exponent",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Evaluate 5⁰ + 3².",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Any non-zero number to the power 0 is 1, and 3² = 9, so the sum is 1 + 9 = 10."
+  },
+  {
+    "id": "EQAO9-T1-060",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Data",
+    "skill": "Correlation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which pair of variables would most likely show no correlation?",
+    "options": [
+      "Hours spent studying and a student's test mark",
+      "Outdoor temperature and a home's heating bill",
+      "The age of a car and its resale value",
+      "Shoe size and the month a person was born"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Birth month has nothing to do with shoe size. Study time and marks tend to rise together, and the other two pairs tend to move in opposite directions."
+  },
+  {
+    "id": "EQAO9-T1-061",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Geometry",
+    "skill": "Isosceles triangles",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "triangleAngles",
+    "stem": "The two equal angles of an isosceles triangle each measure 52°. What does the third angle measure?",
+    "options": [
+      "76°",
+      "52°",
+      "128°",
+      "38°"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "180 − 52 − 52 = 76°. 128° subtracts only one of the 52° angles."
+  },
+  {
+    "id": "EQAO9-T1-062",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Rate of change and initial value",
+    "difficulty": 1,
+    "format": "cloze",
+    "basics": "slope",
+    "stem": "In the relation y = 4x + 9, the rate of change is [[1]] and the initial value is [[2]].",
+    "blanks": [
+      [
+        "4x",
+        "4",
+        "13",
+        "9"
+      ],
+      [
+        "9",
+        "4",
+        "13",
+        "0"
+      ]
+    ],
+    "correct": [
+      1,
+      0
+    ],
+    "calculator": true,
+    "explanation": "In y = mx + b, m is the rate of change and b is the initial value (the value of y when x = 0). Here m = 4 and b = 9."
+  },
+  {
+    "id": "EQAO9-T1-063",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Linear inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Which point is in the region defined by x + y < 6?",
+    "options": [
+      "(4, 2)",
+      "(2, 3)",
+      "(5, 3)",
+      "(6, 1)"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "2 + 3 = 5, which is less than 6. (4, 2) gives exactly 6, which is on the boundary line, and the inequality is strict, so it is not included."
+  },
+  {
+    "id": "EQAO9-T1-064",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Number",
+    "skill": "Density of rational numbers",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which statement about rational numbers is true?",
+    "options": [
+      "There is a smallest positive rational number greater than 0",
+      "No rational number lies between 0.1 and 0.11 on a number line",
+      "Between any two different rational numbers there is another one",
+      "Every rational number has a decimal form that ends after a few digits"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Rational numbers are dense: the mean of any two of them is another rational number between them. 0.105 lies between 0.1 and 0.11, and 1/3 = 0.333... is rational but its decimal never ends."
+  },
+  {
+    "id": "EQAO9-T1-065",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Data",
+    "skill": "The modelling process",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the steps of the mathematical modelling process in order.",
+    "options": [
+      "Pose a question of interest",
+      "Plan how to collect data and note assumptions",
+      "Collect the data",
+      "Display and analyse the data to build a model",
+      "Report how well the model answers the question"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "calculator": true,
+    "explanation": "Modelling starts with a question, then a plan for the data needed, then collecting it. Only then can the data be analysed into a model, and the last step is to report what the model shows and its limits."
+  },
+  {
+    "id": "EQAO9-T1-066",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Geometry",
+    "skill": "Volume of a pyramid",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A square-based pyramid has a base 6 m by 6 m and a height of 10 m. What is its volume?",
+    "options": [
+      "360 m³",
+      "180 m³",
+      "40 m³",
+      "120 m³"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "V = (area of base)(height) ÷ 3 = 36 × 10 ÷ 3 = 120 m³. 360 m³ is the prism with the same base and height."
+  },
+  {
+    "id": "EQAO9-T1-067",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Rotating a line",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The line y = 3x is rotated 90° about the origin. Which equation describes the new line?",
+    "options": [
+      "y = −x/3",
+      "y = −3x",
+      "y = x/3",
+      "y = 3x + 3"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A 90° rotation about the origin turns a line through the origin with slope 3 into one perpendicular to it, with slope −1/3. y = −3x is a reflection, not a rotation."
+  },
+  {
+    "id": "EQAO9-T1-068",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Equations with decimals",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve 0.4(x + 5) = 1.2x − 6.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Expand: 0.4x + 2 = 1.2x − 6. Then 8 = 0.8x, so x = 10. Check: 0.4(15) = 6 and 1.2(10) − 6 = 6."
+  },
+  {
+    "id": "EQAO9-T1-069",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Financial",
+    "skill": "Comparing interest rates",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Ali owes \\$1500 on a credit card that charges 19.99% a year. A line of credit charges 8% a year. If he cannot pay the debt off for a year, about how much interest does he save by moving it to the line of credit? Ignore compounding.",
+    "options": [
+      "About \\$300",
+      "About \\$180",
+      "About \\$120",
+      "About \\$12"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The rates differ by 19.99 − 8 = 11.99 percentage points, and 0.1199 × 1500 ≈ \\$180. \\$300 is the card's interest alone and \\$120 is the line of credit's."
+  },
+  {
+    "id": "EQAO9-T1-070",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Altering code",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | hours = 3 |\n| 2 | cost = 20 + 12 * hours |\n| 3 | print(cost) |",
+    "stem": "This Python code prints the cost of renting a canoe: a \\$20 fee plus \\$12 an hour. The shop drops the fee and raises the rate to \\$15 an hour. Which new line 2 gives the new cost?",
+    "options": [
+      "cost = 20 + 15 * hours",
+      "cost = 15 + 12 * hours",
+      "cost = 15 * hours",
+      "cost = 12 * hours + 15"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "With no fee, the cost is only the hourly rate times the hours: 15 × hours. Keeping the 20 would still charge the old fee."
+  },
+  {
+    "id": "EQAO9-T1-071",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Number",
+    "skill": "Dividing in scientific notation",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Light travels about 3 × 10⁸ metres per second. About how many seconds does light take to travel 1.5 × 10¹¹ metres, the distance from the Sun to Earth? Type the number of seconds only.",
+    "numeric": {
+      "answers": [
+        "500"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Time = distance ÷ speed = (1.5 × 10¹¹) ÷ (3 × 10⁸) = 0.5 × 10³ = 500 seconds."
+  },
+  {
+    "id": "EQAO9-T1-072",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Data",
+    "skill": "Implications of data collection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fitness app collects location data from millions of users and publishes a map of popular running routes. Which is a privacy risk?",
+    "options": [
+      "Popular routes may become more crowded",
+      "Rural runners appear less often on the map than city runners",
+      "The map can be out of date after a few months",
+      "Route start points can reveal users' homes"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Many runs start and end at home, so a route can point to where a person lives. The other choices are real effects of the map, but they are not about anyone's personal information."
+  },
+  {
+    "id": "EQAO9-T1-073",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Geometry",
+    "skill": "Chords and the Pythagorean relationship",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "pythagorean",
+    "stem": "A chord of a circle is 16 cm long and its midpoint is 6 cm from the centre. What is the radius of the circle?",
+    "options": [
+      "10 cm",
+      "8 cm",
+      "14 cm",
+      "17 cm"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The line from the centre to the midpoint of a chord is perpendicular to it, which makes a right triangle with legs 8 cm (half the chord) and 6 cm. The radius is √(8² + 6²) = √100 = 10 cm."
+  },
+  {
+    "id": "EQAO9-T1-074",
+    "section": "b",
+    "test": 1,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Graphs of special equations",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Drag each equation to the shape of its graph.",
+    "rows": [
+      "x = −2",
+      "y = 5",
+      "x + y = 4",
+      "xy = 12"
+    ],
+    "columns": [
+      "Vertical line",
+      "Horizontal line",
+      "Slanted line",
+      "Curve"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "calculator": true,
+    "explanation": "x = k is vertical and y = k is horizontal. x + y = 4 is y = −x + 4, a slanted line. xy = 12 is y = 12/x, a curve in two parts that never touches the axes."
+  },
+  {
+    "id": "EQAO9-T2-001",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Expressions from patterns",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a tile pattern, Figure 1 has 5 tiles and each figure has 3 more tiles than the one before. Which expression gives the number of tiles in Figure n?",
+    "options": [
+      "3n + 5",
+      "3n + 2",
+      "5n + 3",
+      "2n + 3"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The pattern goes up by 3 each time, so it starts 3n + something. Figure 1 has 5 tiles, and 3(1) + 2 = 5. 3n + 5 gives 8 tiles in Figure 1."
+  },
+  {
+    "id": "EQAO9-T2-002",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Number sets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which number is irrational?",
+    "options": [
+      "√49",
+      "0.333... (the 3 repeats)",
+      "√50",
+      "−22/7"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "50 is not a perfect square, so √50 = 7.071... never ends or repeats. √49 = 7, a repeating decimal is rational, and −22/7 is a ratio of integers."
+  },
+  {
+    "id": "EQAO9-T2-003",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Missing value from a mean",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "Five test marks have a mean of 76. Four of the marks are 68, 80, 71 and 77. What is the fifth mark?",
+    "numeric": {
+      "answers": [
+        "84"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "The five marks must total 5 × 76 = 380. The four known marks total 296, so the fifth is 380 − 296 = 84."
+  },
+  {
+    "id": "EQAO9-T2-004",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Surface area of a cube",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A cube has edges 4 cm long. What is its total surface area?",
+    "options": [
+      "64 cm²",
+      "16 cm²",
+      "48 cm²",
+      "96 cm²"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "A cube has 6 square faces of 4 × 4 = 16 cm² each: 6 × 16 = 96 cm². 64 is the volume in cm³."
+  },
+  {
+    "id": "EQAO9-T2-005",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Simple interest rate",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "percents",
+    "stem": "A \\$500 loan for 2 years costs \\$70 in simple interest. What is the annual interest rate?",
+    "options": [
+      "7%",
+      "14%",
+      "3.5%",
+      "70%"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Interest per year is \\$70 ÷ 2 = \\$35, and 35 ÷ 500 = 0.07 = 7%. 14% forgets that the interest covers two years."
+  },
+  {
+    "id": "EQAO9-T2-006",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Variables on both sides",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve 5x + 8 = 2x − 13.",
+    "numeric": {
+      "answers": [
+        "-7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Subtract 2x: 3x + 8 = −13. Subtract 8: 3x = −21, so x = −7."
+  },
+  {
+    "id": "EQAO9-T2-007",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Integer operations with powers",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Evaluate (−2)³ − (−3)².",
+    "numeric": {
+      "answers": [
+        "-17"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "(−2)³ = −8 because an odd power of a negative is negative, and (−3)² = 9. Then −8 − 9 = −17."
+  },
+  {
+    "id": "EQAO9-T2-008",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Loops and conditions",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | count = 0 |\n| 2 | for i in range(10): |\n| 3 | if i % 2 == 0: |\n| 4 | count = count + 1 |\n| 5 | print(count) |",
+    "stem": "What does this Python code print? Lines 3 and 4 run inside the loop, and line 4 runs only when the condition on line 3 is true. i % 2 is the remainder when i is divided by 2, and range(10) gives 0 to 9.",
+    "options": [
+      "4",
+      "5",
+      "10",
+      "6"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The condition is true for the even numbers 0, 2, 4, 6 and 8, so count goes up 5 times. Forgetting that 0 counts gives 4."
+  },
+  {
+    "id": "EQAO9-T2-009",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Interpolation and extrapolation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A line of best fit was made from the heights of plants measured from 0 to 30 days old. Which prediction from the line is least reliable?",
+    "options": [
+      "The height at 15 days",
+      "The height at 22 days",
+      "The height at 90 days",
+      "The height at 28 days"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Predicting inside the data (0 to 30 days) is interpolation. 90 days is far outside it, and the plant may stop growing in a straight line, so extrapolating that far is risky."
+  },
+  {
+    "id": "EQAO9-T2-010",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Converting area units",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A rug has an area of 2.4 m². What is its area in square centimetres? Type the number only, with no commas or spaces.",
+    "numeric": {
+      "answers": [
+        "24000"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "1 m = 100 cm, so 1 m² = 100 × 100 = 10 000 cm². 2.4 × 10 000 = 24 000 cm². Multiplying by only 100 gives 240."
+  },
+  {
+    "id": "EQAO9-T2-011",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Depreciation",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "percentChange",
+    "stem": "A snowmobile is worth \\$12 000 new, \\$9600 after 1 year and \\$7680 after 2 years. Which describes how it depreciates?",
+    "options": [
+      "It loses \\$2400 each year",
+      "It loses 25% of its value each year",
+      "It loses 20% of the original price each year",
+      "It loses 20% of its value each year"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "9600 ÷ 12 000 = 0.8 and 7680 ÷ 9600 = 0.8, so it keeps 80% each year. The second drop is \\$1920, not \\$2400, so it is not losing a fixed amount."
+  },
+  {
+    "id": "EQAO9-T2-012",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Rates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Amira types 312 words in 6 minutes. At this rate, how long will it take her to type a 1300-word essay?",
+    "options": [
+      "25 minutes",
+      "22 minutes",
+      "26 minutes",
+      "30 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Her rate is 312 ÷ 6 = 52 words per minute, and 1300 ÷ 52 = 25 minutes."
+  },
+  {
+    "id": "EQAO9-T2-013",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Equation from two points",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "slope",
+    "stem": "A line passes through (0, −2) and (3, 4). What is its equation?",
+    "options": [
+      "y = 2x + 4",
+      "y = 2x − 2",
+      "y = −2x + 2",
+      "y = x/2 − 2"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The slope is (4 − (−2)) ÷ (3 − 0) = 6 ÷ 3 = 2, and the line crosses the y-axis at −2, so y = 2x − 2. y = x/2 − 2 divides run by rise."
+  },
+  {
+    "id": "EQAO9-T2-014",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Expanding and simplifying",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Simplify 3(x + 2) − x.",
+    "options": [
+      "2x + 2",
+      "4x + 6",
+      "2x + 6",
+      "3x + 5"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "3(x + 2) = 3x + 6, and 3x + 6 − x = 2x + 6. 2x + 2 forgets to multiply the 2 by 3."
+  },
+  {
+    "id": "EQAO9-T2-015",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Number",
+    "skill": "Fraction of an amount",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "fractionOps",
+    "stem": "What is 5/8 of 72?",
+    "numeric": {
+      "answers": [
+        "45"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "72 ÷ 8 = 9, and 5 × 9 = 45."
+  },
+  {
+    "id": "EQAO9-T2-016",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Data",
+    "skill": "Range",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the range of 18, 25, 11, 30, 22?",
+    "options": [
+      "22",
+      "30",
+      "21.2",
+      "19"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Range = greatest − least = 30 − 11 = 19. 22 is the median and 21.2 is the mean."
+  },
+  {
+    "id": "EQAO9-T2-017",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Geometry",
+    "skill": "Pythagorean relationship",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "pythagorean",
+    "stem": "A right triangle has legs of 9 cm and 12 cm. How long is the hypotenuse?",
+    "options": [
+      "15 cm",
+      "21 cm",
+      "7.9 cm",
+      "225 cm"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "c² = 9² + 12² = 81 + 144 = 225, so c = 15 cm. 225 is c², before the square root."
+  },
+  {
+    "id": "EQAO9-T2-018",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Substitution",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "What is the value of 4n + 20 when n = −3?",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "4 × (−3) = −12, and −12 + 20 = 8."
+  },
+  {
+    "id": "EQAO9-T2-019",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Graphs of y = k and x = k",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which equation describes the vertical line through the point (5, 2)?",
+    "options": [
+      "y = 5",
+      "x = 5",
+      "y = 2",
+      "x = 2"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Every point on a vertical line has the same x-coordinate. This one goes through (5, 2), so x = 5. y = 2 is the horizontal line through that point."
+  },
+  {
+    "id": "EQAO9-T2-020",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Financial",
+    "skill": "Sales tax",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "A jacket costs \\$80 before tax. With 13% HST added, what is the total? Type the number of dollars only.",
+    "numeric": {
+      "answers": [
+        "90.40",
+        "90.4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "13% of \\$80 is \\$10.40, so the total is \\$90.40. Or multiply: 80 × 1.13 = 90.40."
+  },
+  {
+    "id": "EQAO9-T2-021",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Reading code",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | width = 4 |\n| 2 | length = 7 |\n| 3 | area = width * length |\n| 4 | print(area) |",
+    "stem": "What does this Python code print?",
+    "options": [
+      "11",
+      "22",
+      "28",
+      "47"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "area = 4 × 7 = 28. 11 is the sum and 22 is the perimeter of the rectangle."
+  },
+  {
+    "id": "EQAO9-T2-022",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Number",
+    "skill": "Dividing powers",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Simplify y⁸ ÷ y².",
+    "options": [
+      "y⁴",
+      "y¹⁰",
+      "y¹⁶",
+      "y⁶"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "When you divide powers with the same base, subtract the exponents: 8 − 2 = 6. Dividing the exponents gives y⁴, which is not a rule for powers."
+  },
+  {
+    "id": "EQAO9-T2-023",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Data",
+    "skill": "Choosing a display",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which display is best for showing how the price of a monthly bus pass changed each year from 2015 to 2025?",
+    "options": [
+      "A line graph",
+      "A circle graph",
+      "A box plot",
+      "A stem-and-leaf plot"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A line graph shows how one quantity changes over time. A circle graph shows parts of a whole, and a box plot shows the spread of one set of values."
+  },
+  {
+    "id": "EQAO9-T2-024",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Geometry",
+    "skill": "Volume of a prism",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the volume of a rectangular prism 5 cm long, 4 cm wide and 3 cm high?",
+    "options": [
+      "94 cm³",
+      "60 cm³",
+      "12 cm³",
+      "20 cm³"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "V = lwh = 5 × 4 × 3 = 60 cm³. 94 is the surface area in cm², 2(20 + 15 + 12)."
+  },
+  {
+    "id": "EQAO9-T2-025",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Solving equations",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve 2(x + 3) = 20.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Divide both sides by 2: x + 3 = 10, so x = 7."
+  },
+  {
+    "id": "EQAO9-T2-026",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Point of intersection in context",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Ravi starts at a trailhead and cycles at 18 km/h, so his distance is d = 18t. Mei starts 6 km along the same trail and cycles at 15 km/h, so d = 15t + 6. What does the point of intersection of the two lines tell you?",
+    "options": [
+      "Mei catches Ravi after 2 hours, 36 km along",
+      "Ravi catches Mei after 6 hours, 108 km along",
+      "Ravi catches Mei after 2 hours, 36 km along",
+      "They are 6 km apart after 2 hours, at 36 km"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "18t = 15t + 6 gives 3t = 6, so t = 2, and d = 18 × 2 = 36 km. Ravi is faster and started behind, so he is the one who catches up."
+  },
+  {
+    "id": "EQAO9-T2-027",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Number",
+    "skill": "Multiplying in scientific notation",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "scientificNotation",
+    "stem": "Write (3 × 10⁴)(5 × 10⁻⁷) in scientific notation.",
+    "options": [
+      "1.5 × 10⁻³",
+      "8 × 10⁻³",
+      "1.5 × 10⁻²⁸",
+      "1.5 × 10⁻²"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "3 × 5 = 15 and 10⁴ × 10⁻⁷ = 10⁻³, giving 15 × 10⁻³. In scientific notation the first number must be from 1 to under 10, so 15 × 10⁻³ = 1.5 × 10⁻²."
+  },
+  {
+    "id": "EQAO9-T2-028",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Data",
+    "skill": "Comparing box plots",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "readingTable",
+    "passage": "| Class | Minimum | Q1 | Median | Q3 | Maximum |\n|---|---|---|---|---|---|\n| A | 52 | 64 | 71 | 80 | 95 |\n| B | 58 | 66 | 74 | 78 | 88 |",
+    "stem": "Which statement is supported by the box plot summaries in the table?",
+    "options": [
+      "Class B's middle half of marks is less spread out",
+      "Class A has the higher median mark",
+      "Class B has the larger range of marks",
+      "Class A's lowest mark is higher than Class B's lowest mark"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The middle half is the IQR: Class A 80 − 64 = 16 and Class B 78 − 66 = 12, so Class B's is less spread out. Class B has the higher median (74), and Class A has the larger range (43 vs 30)."
+  },
+  {
+    "id": "EQAO9-T2-029",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Geometry",
+    "skill": "Changing dimensions",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "circleBasics",
+    "stem": "The radius of a circle is tripled. What happens to its area?",
+    "options": [
+      "It is multiplied by 3",
+      "It is multiplied by 9",
+      "It is multiplied by 6",
+      "It is multiplied by 27"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "A = πr², so tripling r gives π(3r)² = 9πr². The circumference is what triples."
+  },
+  {
+    "id": "EQAO9-T2-030",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Equivalent expressions",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Which expression is equivalent to 2(3x − 1) − 4(x − 2)?",
+    "options": [
+      "2x − 10",
+      "2x + 1",
+      "2x + 6",
+      "10x + 6"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "2(3x − 1) = 6x − 2 and −4(x − 2) = −4x + 8. Together: 2x + 6. 2x − 10 comes from multiplying −4 by −2 and getting −8."
+  },
+  {
+    "id": "EQAO9-T2-031",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Solving inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Which describes the solution of 3x − 5 > 7?",
+    "options": [
+      "x < 4",
+      "x > 2/3",
+      "x > 12",
+      "x > 4"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Add 5: 3x > 12. Divide by 3, a positive number, so the sign stays the same: x > 4."
+  },
+  {
+    "id": "EQAO9-T2-032",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Financial",
+    "skill": "Length of borrowing",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "percents",
+    "stem": "Two loans of \\$10 000 both charge 6% simple interest a year. One lasts 3 years and the other 5 years. How much more interest does the 5-year loan cost?",
+    "options": [
+      "\\$1200",
+      "\\$600",
+      "\\$3000",
+      "\\$1800"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Each year costs 10 000 × 0.06 = \\$600 in interest. Two extra years cost 2 × \\$600 = \\$1200. \\$3000 is the total interest on the 5-year loan."
+  },
+  {
+    "id": "EQAO9-T2-033",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Altering code",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | term = 3 |\n| 2 | for i in range(5): |\n| 3 | print(term) |\n| 4 | term = term + 4 |",
+    "stem": "This Python code prints 3, 7, 11, 15, 19. Lines 3 and 4 run inside the loop. Which change makes it print 3, 6, 12, 24, 48?",
+    "options": [
+      "Change line 4 to term = term + 3",
+      "Change line 4 to term = term * 2",
+      "Change line 1 to term = 6",
+      "Change line 4 to term = term * 3"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "3, 6, 12, 24, 48 doubles each time, so each step should multiply by 2 instead of adding 4. Multiplying by 3 gives 3, 9, 27, 81, 243."
+  },
+  {
+    "id": "EQAO9-T2-034",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Number",
+    "skill": "Unit price",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "A 2.4 kg bag of rice costs \\$7.92. At the same price per kilogram, what would 5 kg cost? Type the number of dollars only.",
+    "numeric": {
+      "answers": [
+        "16.50",
+        "16.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Price per kilogram: \\$7.92 ÷ 2.4 = \\$3.30. For 5 kg: 5 × \\$3.30 = \\$16.50."
+  },
+  {
+    "id": "EQAO9-T2-035",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Data",
+    "skill": "Correlation and causation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Over a summer, a town finds a strong positive correlation between daily ice cream sales and the number of swimming pool visits. Which conclusion is best?",
+    "options": [
+      "Eating ice cream makes people swim",
+      "Swimming makes people buy ice cream",
+      "Hot weather may cause both to rise",
+      "The data must contain an error"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "A correlation does not show that one variable causes the other. A third variable, the temperature, can push both up on hot days."
+  },
+  {
+    "id": "EQAO9-T2-036",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Geometry",
+    "skill": "Volume of a cone",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "pythagorean",
+    "stem": "A cone has a radius of 3 cm and a slant height of 5 cm. What is its volume in cubic centimetres? Round to one decimal place and type the number only.",
+    "numeric": {
+      "answers": [
+        "37.7"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "First find the height: h² + 3² = 5², so h = 4 cm. Then V = πr²h ÷ 3 = π × 9 × 4 ÷ 3 = 12π ≈ 37.7 cm³. Using the slant height as the height gives 47.1."
+  },
+  {
+    "id": "EQAO9-T2-037",
+    "section": "a",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Using slope and initial value",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "slope",
+    "stem": "A line has slope −2/3 and crosses the y-axis at 4. What is y when x = 9?",
+    "numeric": {
+      "answers": [
+        "-2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The equation is y = −(2/3)x + 4. When x = 9: y = −6 + 4 = −2."
+  },
+  {
+    "id": "EQAO9-T2-038",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Equation from a table",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "slope",
+    "passage": "| x | −1 | 0 | 1 | 2 |\n|---|---|---|---|---|\n| y | 7 | 4 | 1 | −2 |",
+    "stem": "Which equation matches this table of values?",
+    "options": [
+      "y = 3x + 4",
+      "y = −3x + 7",
+      "y = 4x − 3",
+      "y = −3x + 4"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Each time x goes up by 1, y goes down by 3, so the rate of change is −3. When x = 0, y = 4. y = −3x + 7 uses the y-value at x = −1 as the initial value."
+  },
+  {
+    "id": "EQAO9-T2-039",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Dividing mixed numbers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A board is 2 and 3/4 m long. Pieces 3/8 m long are cut from it. How many full pieces can be cut?",
+    "options": [
+      "7",
+      "8",
+      "6",
+      "10"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "2 and 3/4 = 22/8, and 22/8 ÷ 3/8 = 22 ÷ 3 = 7.33..., so 7 full pieces fit, with a short piece left over."
+  },
+  {
+    "id": "EQAO9-T2-040",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Quartiles",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "meanMedian",
+    "stem": "What are the first and third quartiles of 3, 5, 6, 8, 9, 11, 12, 14, 15, 18, 20? Split the data at the median, leave the median out of both halves, and take the median of each half.",
+    "options": [
+      "Q1 = 5 and Q3 = 18",
+      "Q1 = 6 and Q3 = 15",
+      "Q1 = 8 and Q3 = 14",
+      "Q1 = 9 and Q3 = 12"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "There are 11 values, so the median is the 6th, 11. Leave it out: the lower half 3, 5, 6, 8, 9 has median 6, and the upper half 12, 14, 15, 18, 20 has median 15."
+  },
+  {
+    "id": "EQAO9-T2-041",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Exterior angles",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "triangleAngles",
+    "stem": "An exterior angle of a triangle measures 125°. One of the two interior angles that are not next to it measures 70°. What does the other one measure?",
+    "options": [
+      "35°",
+      "65°",
+      "55°",
+      "110°"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "An exterior angle equals the sum of the two interior angles opposite it: 125 − 70 = 55°."
+  },
+  {
+    "id": "EQAO9-T2-042",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Budgets and percents",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "percents",
+    "stem": "Nadia's take-home pay is \\$2400 a month, and her rent is 35% of it. Her rent goes up by \\$90. What percent of her pay is rent now?",
+    "options": [
+      "3.75%",
+      "38.5%",
+      "45%",
+      "38.75%"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Rent was 0.35 × 2400 = \\$840. Now it is \\$930, and 930 ÷ 2400 = 0.3875 = 38.75%. 3.75% is only the increase as a percent of her pay."
+  },
+  {
+    "id": "EQAO9-T2-043",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Solving equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve 7 − 2x = 19.",
+    "numeric": {
+      "answers": [
+        "-6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Subtract 7: −2x = 12. Divide by −2: x = −6. Check: 7 − 2(−6) = 7 + 12 = 19."
+  },
+  {
+    "id": "EQAO9-T2-044",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Percent of an amount",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A school has 840 students, and 35% of them take the bus. How many students take the bus? Type the number only.",
+    "numeric": {
+      "answers": [
+        "294"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "35% of 840 = 0.35 × 840 = 294."
+  },
+  {
+    "id": "EQAO9-T2-045",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Conditions in code",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | speed = int(input()) |\n| 2 | if speed > 50: |\n| 3 | print(\"Too fast\") |\n| 4 | else: |\n| 5 | print(\"OK\") |",
+    "stem": "This Python code asks for a speed. Line 3 runs only when the condition on line 2 is true, and line 5 runs otherwise. Which input makes it print Too fast?",
+    "options": [
+      "55",
+      "50",
+      "45",
+      "30"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Only a speed greater than 50 makes the condition true. 50 is not greater than 50, so it would print OK."
+  },
+  {
+    "id": "EQAO9-T2-046",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Bias in data collection",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "To find out how Grade 9 students get to school, Jordan surveys only the students waiting at the bus stop. Why might the results be biased?",
+    "options": [
+      "The sample has too many Grade 9 students",
+      "Students who walk or get driven are left out",
+      "Bus riders are too young to answer the question honestly",
+      "Surveys cannot collect categorical data"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Everyone at the bus stop takes the bus, so the survey will overstate bus riders and miss students who walk, cycle or get a ride."
+  },
+  {
+    "id": "EQAO9-T2-047",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Surface area of a cylinder",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A can has a radius of 4 cm and a height of 10 cm. How much metal is needed for the whole can, top, bottom and side, to the nearest square centimetre?",
+    "options": [
+      "503 cm²",
+      "251 cm²",
+      "352 cm²",
+      "302 cm²"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Two circles: 2π(4²) = 32π. The side: 2π(4)(10) = 80π. Total 112π ≈ 352 cm². 503 is the volume, π(4²)(10), which is in cm³."
+  },
+  {
+    "id": "EQAO9-T2-048",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "How interest is calculated",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "Which account holds the most money after 1 year if \\$1000 is deposited?",
+    "options": [
+      "5% simple interest",
+      "5% compounded annually",
+      "4.9% simple interest",
+      "5% compounded monthly"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "In one year, 5% simple and 5% compounded annually both give \\$1050. Compounding monthly adds interest to the balance each month, so later months earn interest on it, about \\$1051.16."
+  },
+  {
+    "id": "EQAO9-T2-049",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Reading a measuring tool",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tape measure is marked in sixteenths of an inch. A bolt reaches 3 marks past 1 and 1/2 inches. How long is the bolt?",
+    "options": [
+      "1 and 11/16 inches",
+      "1 and 5/8 inches",
+      "1 and 13/16 inches",
+      "1 and 3/16 inches"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "1/2 inch is 8/16, so 3 marks past it is 11/16. The bolt is 1 and 11/16 inches. 1 and 3/16 forgets the half inch."
+  },
+  {
+    "id": "EQAO9-T2-050",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Rate of change in non-linear relations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A ball is dropped from a tower. Its height at 0, 1, 2 and 3 seconds is 80 m, 75 m, 60 m and 35 m. Which describes the rate of change?",
+    "options": [
+      "Constant: it falls 15 m each second",
+      "Not constant: it falls further each second",
+      "Constant: it falls 5 m each second",
+      "Not constant: it falls a shorter distance each second"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The drops are 5 m, 15 m and 25 m, so the rate of change is not constant and the ball speeds up. A constant rate would give the same drop every second."
+  },
+  {
+    "id": "EQAO9-T2-051",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Collecting like terms",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Simplify 7m − 2 + 3 − 4m.",
+    "options": [
+      "3m − 5",
+      "11m + 1",
+      "3m + 1",
+      "4m"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "7m − 4m = 3m and −2 + 3 = 1, so the result is 3m + 1. 11m adds the m terms instead of subtracting."
+  },
+  {
+    "id": "EQAO9-T2-052",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Number",
+    "skill": "Integer operations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate −6 × (−4) ÷ 3.",
+    "options": [
+      "−8",
+      "72",
+      "−72",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Two negatives multiply to a positive: −6 × (−4) = 24, and 24 ÷ 3 = 8."
+  },
+  {
+    "id": "EQAO9-T2-053",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Data",
+    "skill": "Mean",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "meanMedian",
+    "stem": "Which data set has a mean of 6?",
+    "options": [
+      "4, 5, 6, 9",
+      "2, 6, 6, 12",
+      "5, 6, 7, 8",
+      "3, 6, 9, 10"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "4 + 5 + 6 + 9 = 24, and 24 ÷ 4 = 6. The set 2, 6, 6, 12 has a median and mode of 6, but its mean is 26 ÷ 4 = 6.5."
+  },
+  {
+    "id": "EQAO9-T2-054",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Geometry",
+    "skill": "Perimeter",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A rectangle is 7.5 m long and 3 m wide. What is its perimeter?",
+    "options": [
+      "22.5 m",
+      "21 m",
+      "10.5 m",
+      "42 m"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "P = 2(l + w) = 2(7.5 + 3) = 21 m. 22.5 is the area in m²."
+  },
+  {
+    "id": "EQAO9-T2-055",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Substitution",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "The perimeter of a rectangle is P = 2(l + w). Find P when l = 8.5 and w = 4.",
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "l + w = 12.5, and 2 × 12.5 = 25."
+  },
+  {
+    "id": "EQAO9-T2-056",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Direct variation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which equation has a graph that passes through the origin?",
+    "options": [
+      "y = 5x + 1",
+      "y = 5",
+      "y = 5x",
+      "x + y = 5"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "When x = 0, y = 5(0) = 0, so y = 5x goes through (0, 0). The others have y = 1 or y = 5 when x = 0."
+  },
+  {
+    "id": "EQAO9-T2-057",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Financial",
+    "skill": "Linear depreciation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A phone is worth \\$900 when new and loses \\$150 of value each year. What is it worth after 4 years?",
+    "options": [
+      "\\$600",
+      "\\$150",
+      "\\$750",
+      "\\$300"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "It loses 4 × \\$150 = \\$600, so it is worth \\$900 − \\$600 = \\$300. \\$600 is the loss, not the value."
+  },
+  {
+    "id": "EQAO9-T2-058",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Reading code",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | n = 10 |\n| 2 | n = n - 3 |\n| 3 | n = n * 2 |\n| 4 | print(n) |",
+    "stem": "What does this Python code print?",
+    "options": [
+      "14",
+      "4",
+      "17",
+      "7"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "n starts at 10, then becomes 10 − 3 = 7, then 7 × 2 = 14. Stopping after line 2 gives 7."
+  },
+  {
+    "id": "EQAO9-T2-059",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Number",
+    "skill": "Scientific notation to standard form",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Write 4.2 × 10⁵ as a standard number. Type it with no commas or spaces.",
+    "numeric": {
+      "answers": [
+        "420000"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Multiplying by 10⁵ moves the decimal point 5 places right: 420 000."
+  },
+  {
+    "id": "EQAO9-T2-060",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Data",
+    "skill": "Predicting with a line of best fit",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A class plots arm span (x) against height (y), both in centimetres. The line of best fit is y = 0.9x + 17. Predict the height of a student whose arm span is 160 cm. Type the number of centimetres only.",
+    "numeric": {
+      "answers": [
+        "161"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "y = 0.9(160) + 17 = 144 + 17 = 161 cm."
+  },
+  {
+    "id": "EQAO9-T2-061",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Geometry",
+    "skill": "Metric conversions",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "How many millilitres are in 2.75 L? Type the number only.",
+    "numeric": {
+      "answers": [
+        "2750"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "There are 1000 mL in a litre, so 2.75 × 1000 = 2750 mL."
+  },
+  {
+    "id": "EQAO9-T2-062",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "eqao9Algebra",
+    "skill": "Linear models",
+    "difficulty": 1,
+    "format": "cloze",
+    "basics": "slope",
+    "stem": "A gym charges a \\$50 sign-up fee and \\$20 a month, so the cost is C = 20m + 50. The graph of C against m is a [[1]] line that crosses the C-axis at [[2]].",
+    "blanks": [
+      [
+        "curved",
+        "straight",
+        "vertical"
+      ],
+      [
+        "20",
+        "50",
+        "0",
+        "70"
+      ]
+    ],
+    "correct": [
+      1,
+      1
+    ],
+    "calculator": true,
+    "explanation": "The rate of change is a constant \\$20 a month, so the graph is a straight line, and when m = 0 the cost is the \\$50 fee."
+  },
+  {
+    "id": "EQAO9-T2-063",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Points on a line",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For which value of k does the line kx + 2y = 8 pass through the point (2, 1)?",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Substitute x = 2 and y = 1: 2k + 2 = 8, so 2k = 6 and k = 3."
+  },
+  {
+    "id": "EQAO9-T2-064",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Number",
+    "skill": "Power of a power with a negative exponent",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the value of (2³)⁻¹ × 2⁵?",
+    "options": [
+      "1/4",
+      "16",
+      "4",
+      "1/16"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "(2³)⁻¹ = 2⁻³, and 2⁻³ × 2⁵ = 2². So the value is 4."
+  },
+  {
+    "id": "EQAO9-T2-065",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Data",
+    "skill": "Interpreting an exponential model",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A model for a town's population is P = 12 000(1.03)ᵗ, where t is the number of years from now. What does the 1.03 tell you?",
+    "options": [
+      "The population grows by 1.03 people each year",
+      "The population grows 103% each year",
+      "The population starts at 1.03 thousand",
+      "The population grows 3% each year"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Multiplying by 1.03 each year keeps 100% of the population and adds 3% more. 12 000 is the starting population."
+  },
+  {
+    "id": "EQAO9-T2-066",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Geometry",
+    "skill": "Prism and pyramid volume",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A triangular prism and a triangular pyramid have the same base and the same height. The pyramid's volume is 45 cm³. What is the prism's volume?",
+    "options": [
+      "135 cm³",
+      "15 cm³",
+      "90 cm³",
+      "45 cm³"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A pyramid holds one third of the prism with the same base and height, so the prism holds 3 × 45 = 135 cm³."
+  },
+  {
+    "id": "EQAO9-T2-067",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Translating a line",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The line y = −x is translated 4 units up. Which equation describes the new line?",
+    "options": [
+      "y = −x − 4",
+      "y = −x + 4",
+      "y = −4x",
+      "y = x + 4"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Moving a line up 4 units adds 4 to every y-value, so y = −x becomes y = −x + 4. The slope stays −1."
+  },
+  {
+    "id": "EQAO9-T2-068",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Expanding and solving",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "distributing",
+    "stem": "Solve 3(2x − 5) − 2(x + 1) = 7.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Expand: 6x − 15 − 2x − 2 = 7, so 4x − 17 = 7, 4x = 24 and x = 6."
+  },
+  {
+    "id": "EQAO9-T2-069",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Financial",
+    "skill": "Cost of a payment plan",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A \\$1500 e-bike can be bought with \\$300 down plus 12 monthly payments of \\$112. How much more does the plan cost than paying the full price now? Type the number of dollars only.",
+    "numeric": {
+      "answers": [
+        "144"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "The plan costs 300 + 12 × 112 = 300 + 1344 = \\$1644. That is \\$1644 − \\$1500 = \\$144 more, which is the cost of borrowing."
+  },
+  {
+    "id": "EQAO9-T2-070",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Regions of inequalities",
+    "difficulty": 3,
+    "format": "multi",
+    "basics": "inequalities",
+    "stem": "Select the two points that satisfy y ≥ 2x + 1.",
+    "options": [
+      "(0, 3)",
+      "(2, 4)",
+      "(1, 2)",
+      "(−2, 0)",
+      "(3, 6)"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2,
+    "calculator": true,
+    "explanation": "(0, 3): 3 ≥ 1 is true. (−2, 0): 0 ≥ −3 is true. (1, 2) gives 2 ≥ 3, (3, 6) gives 6 ≥ 7 and (2, 4) gives 4 ≥ 5, all false."
+  },
+  {
+    "id": "EQAO9-T2-071",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Number",
+    "skill": "Rates",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A car uses 7.6 L of fuel per 100 km. How many litres does it use on a 425 km trip? Type the number only.",
+    "numeric": {
+      "answers": [
+        "32.3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "425 km is 4.25 lots of 100 km, so it uses 7.6 × 4.25 = 32.3 L."
+  },
+  {
+    "id": "EQAO9-T2-072",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Data",
+    "skill": "Measures of centre and outliers",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A data set is 2, 4, 4, 5, 7, 9, 30. Select the two statements that are true.",
+    "options": [
+      "The range is 26",
+      "The mean is less than the median",
+      "The median is 5",
+      "30 is an outlier",
+      "The mode is 5"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2,
+    "calculator": true,
+    "explanation": "The middle value is 5. Q1 = 4 and Q3 = 9, so IQR = 5, and anything above 9 + 1.5 × 5 = 16.5 is an outlier, so 30 is one. The mean is 61 ÷ 7 ≈ 8.7, above the median; the mode is 4 and the range is 28."
+  },
+  {
+    "id": "EQAO9-T2-073",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Geometry",
+    "skill": "Changing dimensions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Every edge of a cube is halved. What fraction of the original surface area does the new cube have?",
+    "options": [
+      "1/2",
+      "1/8",
+      "1/4",
+      "1/6"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Each face is a square, and halving its side makes its area (1/2)² = 1/4 as big. All six faces shrink the same way. 1/8 is what happens to the volume."
+  },
+  {
+    "id": "EQAO9-T2-074",
+    "section": "b",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "eqao9Algebra",
+    "skill": "Coding a model",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | savings = 40 |\n| 2 | week = 0 |\n| 3 | while savings < 150: |\n| 4 | savings = savings + 15 |\n| 5 | week = week + 1 |\n| 6 | print(week) |",
+    "stem": "Leo has \\$40 saved and adds \\$15 each week. Lines 4 and 5 run inside the loop. What does this Python code print?",
+    "options": [
+      "7",
+      "110",
+      "160",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "After 7 weeks Leo has 40 + 105 = 145, still under 150, so the loop runs again. After week 8 he has 160 and the loop stops, so week is 8."
+  },
+  {
+    "id": "EQAO9-D-001",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Percent of an amount",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "What is 15% of \\$240? Type the number of dollars only.",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "0.15 × 240 = 36, so \\$36. Or: 10% is \\$24 and 5% is \\$12."
+  },
+  {
+    "id": "EQAO9-D-002",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Mean",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "meanMedian",
+    "stem": "What is the mean of 12, 15, 9 and 14?",
+    "options": [
+      "12.5",
+      "13",
+      "12",
+      "50"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The total is 50, and 50 ÷ 4 = 12.5. 13 is the median."
+  },
+  {
+    "id": "EQAO9-D-003",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Pythagorean relationship",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "pythagorean",
+    "stem": "Which set of side lengths makes a right triangle?",
+    "options": [
+      "4, 5, 6",
+      "5, 12, 13",
+      "6, 8, 12",
+      "7, 7, 10"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "5² + 12² = 25 + 144 = 169 = 13². For 6, 8, 12: 36 + 64 = 100, which is not 144."
+  },
+  {
+    "id": "EQAO9-D-004",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Number sets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which number is a whole number but not a natural number?",
+    "options": [
+      "−1",
+      "1",
+      "0",
+      "1/2"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Natural numbers start at 1, and whole numbers are the natural numbers with 0 added. So 0 is the only whole number that is not natural."
+  },
+  {
+    "id": "EQAO9-D-005",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Writing expressions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which expression means 5 less than twice a number n?",
+    "options": [
+      "5 − 2n",
+      "2(n − 5)",
+      "5n − 2",
+      "2n − 5"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Twice the number is 2n, and 5 less than that subtracts 5 from it: 2n − 5. 5 − 2n subtracts the other way round."
+  },
+  {
+    "id": "EQAO9-D-006",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Discounts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "percents",
+    "stem": "A \\$45 hoodie is 20% off. What is the sale price?",
+    "options": [
+      "\\$36",
+      "\\$9",
+      "\\$25",
+      "\\$40"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "20% of \\$45 is \\$9, and \\$45 − \\$9 = \\$36. \\$9 is the discount, not the price."
+  },
+  {
+    "id": "EQAO9-D-007",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Median of an even count",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "What is the median of 4, 9, 2, 7, 5, 8?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "In order: 2, 4, 5, 7, 8, 9. With six values the median is halfway between the 3rd and 4th: (5 + 7) ÷ 2 = 6."
+  },
+  {
+    "id": "EQAO9-D-008",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Pythagorean relationship",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "pythagorean",
+    "stem": "A rectangular screen is 48 cm wide and 36 cm tall. How long is its diagonal, in centimetres? Type the number only.",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "d² = 48² + 36² = 2304 + 1296 = 3600, so d = 60 cm."
+  },
+  {
+    "id": "EQAO9-D-009",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Negative exponents",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "exponentRules",
+    "stem": "Evaluate 10⁻². Type your answer as a decimal.",
+    "numeric": {
+      "answers": [
+        "0.01",
+        ".01",
+        "1/100"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "10⁻² = 1/10² = 1/100 = 0.01."
+  },
+  {
+    "id": "EQAO9-D-010",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Expanding with negatives",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Expand −2(4 − 3x).",
+    "options": [
+      "−8 − 6x",
+      "−8 + 6x",
+      "8 − 6x",
+      "−6 + 6x"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "−2 × 4 = −8 and −2 × (−3x) = +6x. Two negatives multiply to a positive, which is what −8 − 6x misses."
+  },
+  {
+    "id": "EQAO9-D-011",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Simple interest",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "percents",
+    "stem": "How much simple interest does \\$1500 earn at 4% a year for 3 years?",
+    "options": [
+      "\\$60",
+      "\\$1680",
+      "\\$180",
+      "\\$187.30"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "1500 × 0.04 × 3 = \\$180. \\$1680 is the balance including the \\$1500, and \\$187.30 is what compound interest would earn."
+  },
+  {
+    "id": "EQAO9-D-012",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Interquartile range",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "readingTable",
+    "passage": "| Minimum | Q1 | Median | Q3 | Maximum |\n|---|---|---|---|---|\n| 20 | 35 | 42 | 50 | 70 |",
+    "stem": "The table summarizes a box plot of practice times in minutes. What is the interquartile range?",
+    "options": [
+      "50",
+      "8",
+      "30",
+      "15"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "IQR = Q3 − Q1 = 50 − 35 = 15. 50 is the range (70 − 20)."
+  },
+  {
+    "id": "EQAO9-D-013",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Area of a circle",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "circleBasics",
+    "stem": "A circle has a radius of 6 m. What is its area, to the nearest square metre?",
+    "options": [
+      "113 m²",
+      "38 m²",
+      "36 m²",
+      "452 m²"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A = πr² = π × 36 ≈ 113 m². 38 is the circumference in metres, and 452 squares the diameter instead of the radius."
+  },
+  {
+    "id": "EQAO9-D-014",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Power of a power",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Simplify (m⁴)³.",
+    "options": [
+      "m⁷",
+      "m¹²",
+      "m⁶⁴",
+      "3m⁴"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "A power of a power multiplies the exponents: 4 × 3 = 12. Adding them (m⁷) is the rule for multiplying powers."
+  },
+  {
+    "id": "EQAO9-D-015",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Appreciation",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "percentChange",
+    "stem": "A house bought for \\$400 000 later sold for \\$460 000. By what percent did it appreciate?",
+    "options": [
+      "13%",
+      "60%",
+      "15%",
+      "1.15%"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The gain is \\$60 000, and 60 000 ÷ 400 000 = 0.15 = 15%. 13% divides by the selling price instead."
+  },
+  {
+    "id": "EQAO9-D-016",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Solving equations",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve 6x + 4 = 40.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Subtract 4: 6x = 36. Divide by 6: x = 6."
+  },
+  {
+    "id": "EQAO9-D-017",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Correlation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A scatter plot shows points spread across the whole graph with no pattern. Which describes the correlation?",
+    "options": [
+      "Strong positive",
+      "Weak negative",
+      "Strong negative",
+      "No correlation"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "When the points show no upward or downward trend, the two variables are not correlated."
+  },
+  {
+    "id": "EQAO9-D-018",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Circumference",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "circleBasics",
+    "stem": "A circle has a circumference of 50 cm. What is its diameter, to the nearest tenth?",
+    "options": [
+      "15.9 cm",
+      "8.0 cm",
+      "25.0 cm",
+      "157.1 cm"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "C = πd, so d = 50 ÷ π ≈ 15.9 cm. 8.0 cm is the radius."
+  },
+  {
+    "id": "EQAO9-D-019",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Scientific notation",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "scientificNotation",
+    "stem": "Which is 0.0042 written in scientific notation?",
+    "options": [
+      "4.2 × 10³",
+      "4.2 × 10⁻³",
+      "4.2 × 10⁻²",
+      "4.2 × 10⁻⁴"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Move the decimal point 3 places right to get 4.2, so the exponent is −3."
+  },
+  {
+    "id": "EQAO9-D-020",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Depreciation",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "percentChange",
+    "stem": "A bike's value drops from \\$800 to \\$600. What is the percent depreciation?",
+    "options": [
+      "33%",
+      "20%",
+      "25%",
+      "75%"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The drop is \\$200, and 200 ÷ 800 = 0.25 = 25%. 33% divides by the new value."
+  },
+  {
+    "id": "EQAO9-D-021",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Reading a table",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "readingTable",
+    "passage": "| Year | 2020 | 2021 | 2022 | 2023 | 2024 |\n|---|---|---|---|---|---|\n| Bike lanes (km) | 40 | 52 | 61 | 75 | 83 |",
+    "stem": "Between which two years did the city add the most kilometres of bike lanes?",
+    "options": [
+      "2020 and 2021",
+      "2021 and 2022",
+      "2023 and 2024",
+      "2022 and 2023"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The increases are 12, 9, 14 and 8 km. The biggest is 75 − 61 = 14 km, from 2022 to 2023."
+  },
+  {
+    "id": "EQAO9-D-022",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Angles in a triangle",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "triangleAngles",
+    "stem": "A right triangle has one angle of 34°. What is the third angle, in degrees? Type the number only.",
+    "numeric": {
+      "answers": [
+        "56"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "The angles add to 180°, and one is the 90° right angle: 180 − 90 − 34 = 56°."
+  },
+  {
+    "id": "EQAO9-D-023",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Substitution",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "Evaluate 3a² − b when a = −2 and b = 5.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "a² = (−2)² = 4, so 3a² = 12, and 12 − 5 = 7."
+  },
+  {
+    "id": "EQAO9-D-024",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Adding fractions with negatives",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "fractionOps",
+    "stem": "Calculate −3/4 + 5/6. Type your answer as a fraction.",
+    "numeric": {
+      "answers": [
+        "1/12"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Use 12ths: −9/12 + 10/12 = 1/12."
+  },
+  {
+    "id": "EQAO9-D-025",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Compound growth formula",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "Which formula gives the value of a \\$5000 investment that grows 4% a year, compounded annually, after t years?",
+    "options": [
+      "V = 5000(1.04)ᵗ",
+      "V = 5000(0.04)ᵗ",
+      "V = 5000 + 0.04t",
+      "V = 5000(1.4)ᵗ"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Growing 4% means keeping 100% and adding 4%, so the value is multiplied by 1.04 each year. 1.4 would be 40% growth."
+  },
+  {
+    "id": "EQAO9-D-026",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Interpolation",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "trends",
+    "passage": "| Time (min) | 0 | 10 | 20 | 30 |\n|---|---|---|---|---|\n| Temperature (°C) | 90 | 70 | 56 | 46 |",
+    "stem": "A cup of tea cools as shown. Estimate its temperature at 15 minutes.",
+    "options": [
+      "About 70°C",
+      "About 63°C",
+      "About 51°C",
+      "About 80°C"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "15 minutes is halfway between 10 and 20 minutes, so the temperature is about halfway between 70°C and 56°C, which is 63°C."
+  },
+  {
+    "id": "EQAO9-D-027",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Equilateral triangles",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "triangleAngles",
+    "stem": "What does each angle of an equilateral triangle measure?",
+    "options": [
+      "90°",
+      "45°",
+      "60°",
+      "120°"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The three angles are equal and add to 180°, so each is 180 ÷ 3 = 60°."
+  },
+  {
+    "id": "EQAO9-D-028",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Depreciation formula",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "Which formula gives the value of a \\$20 000 truck that loses 12% of its value each year, after t years?",
+    "options": [
+      "V = 20 000(1.12)ᵗ",
+      "V = 20 000(0.12)ᵗ",
+      "V = 20 000 − 0.12t",
+      "V = 20 000(0.88)ᵗ"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Losing 12% leaves 88% each year, so multiply by 0.88 for each year. 1.12 would be 12% growth."
+  },
+  {
+    "id": "EQAO9-D-029",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Dividing fractions",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "fractionOps",
+    "stem": "Calculate 2/3 ÷ 4/9.",
+    "options": [
+      "3/2",
+      "8/27",
+      "1/6",
+      "2/3"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Multiply by the reciprocal: 2/3 × 9/4 = 18/12 = 3/2. 8/27 multiplies the fractions without flipping the second one."
+  },
+  {
+    "id": "EQAO9-D-030",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Slope from two points",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "slope",
+    "stem": "What is the slope of the line through (−1, 3) and (3, −5)?",
+    "options": [
+      "2",
+      "−2",
+      "−1/2",
+      "1/2"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Slope = (−5 − 3) ÷ (3 − (−1)) = −8 ÷ 4 = −2. The line falls from left to right, so the slope is negative."
+  },
+  {
+    "id": "EQAO9-D-031",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Extrapolation",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "trends",
+    "stem": "A plant is 4 cm tall in week 1, 7 cm in week 2, 10 cm in week 3 and 13 cm in week 4. If the pattern continues, how tall will it be in week 6?",
+    "options": [
+      "16 cm",
+      "22 cm",
+      "19 cm",
+      "26 cm"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "It grows 3 cm a week, so week 5 is 16 cm and week 6 is 19 cm."
+  },
+  {
+    "id": "EQAO9-D-032",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Volume of a cylinder",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cylinder has a radius of 2 cm and a height of 7 cm. What is its volume, to the nearest cubic centimetre?",
+    "options": [
+      "44 cm³",
+      "28 cm³",
+      "176 cm³",
+      "88 cm³"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "V = πr²h = π × 4 × 7 = 28π ≈ 88 cm³. 44 uses the radius instead of r², and 28 leaves out π."
+  },
+  {
+    "id": "EQAO9-D-033",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Budgets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is usually a fixed expense in a monthly budget?",
+    "options": [
+      "Rent",
+      "Groceries",
+      "Entertainment",
+      "Clothing"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Rent is the same amount every month. Groceries, entertainment and clothing change from month to month, so they are variable expenses."
+  },
+  {
+    "id": "EQAO9-D-034",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Integers in context",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "negativeNumbers",
+    "stem": "A submarine is at −120 m. It rises 45 m and then dives 70 m. What is its new position in metres? Type the number, with a negative sign for below sea level.",
+    "numeric": {
+      "answers": [
+        "-145"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "−120 + 45 = −75, and −75 − 70 = −145 m."
+  },
+  {
+    "id": "EQAO9-D-035",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Types of data",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is categorical data?",
+    "options": [
+      "Height in centimetres",
+      "Favourite music genre",
+      "Number of siblings",
+      "Time to run 100 m"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "A music genre is a category, not a number. The others are counted or measured."
+  },
+  {
+    "id": "EQAO9-D-036",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Metric conversions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A recipe needs 750 g of flour. How many kilograms is that?",
+    "options": [
+      "7.5 kg",
+      "75 kg",
+      "0.75 kg",
+      "0.075 kg"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "There are 1000 g in a kilogram, so 750 ÷ 1000 = 0.75 kg."
+  },
+  {
+    "id": "EQAO9-D-037",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Solving inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Which describes the solution of −4x ≤ 12?",
+    "options": [
+      "x ≤ −3",
+      "x ≥ 3",
+      "x ≤ 3",
+      "x ≥ −3"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Dividing both sides by −4 gives −3, and dividing by a negative number flips the inequality sign: x ≥ −3."
+  },
+  {
+    "id": "EQAO9-D-038",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Budgets",
+    "difficulty": 1,
+    "format": "numeric",
+    "passage": "| Item | Amount |\n|---|---|\n| Take-home pay | \\$1800 |\n| Rent | \\$750 |\n| Food | \\$400 |\n| Transit | \\$120 |\n| Phone | \\$55 |\n| Savings | ? |",
+    "stem": "Tariq's monthly budget is shown. How much is left for savings? Type the number of dollars only.",
+    "numeric": {
+      "answers": [
+        "475"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "His expenses total 750 + 400 + 120 + 55 = \\$1325, and \\$1800 − \\$1325 = \\$475."
+  },
+  {
+    "id": "EQAO9-D-039",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Signs and powers",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "negativeNumbers",
+    "stem": "Which expression has a negative value?",
+    "options": [
+      "−2⁴",
+      "(−2)⁴",
+      "(−3)(−5)",
+      "(−1)⁶"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "In −2⁴ only the 2 is raised to the power, so it is −(16) = −16. In (−2)⁴ the brackets make the base −2, and an even power of a negative is positive."
+  },
+  {
+    "id": "EQAO9-D-040",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Sampling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which sample is most likely to represent all the students in a school?",
+    "options": [
+      "The first 20 students to arrive in the morning",
+      "20 names drawn at random from the full list",
+      "20 students on the basketball team",
+      "20 volunteers who answer an online poll"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "A random sample from the whole school gives every student the same chance. Early arrivals, a team and volunteers are each a particular kind of student."
+  },
+  {
+    "id": "EQAO9-D-041",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Converting between systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sign says a bridge has 12 feet of clearance. Using 1 foot = 0.3048 m, about how high is that in metres?",
+    "options": [
+      "About 39.4 m",
+      "About 12.3 m",
+      "About 3.7 m",
+      "About 1.2 m"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Multiply: 12 × 0.3048 ≈ 3.66 m, about 3.7 m. Dividing by 0.3048 gives 39.4, which would make a metre smaller than a foot."
+  },
+  {
+    "id": "EQAO9-D-042",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Length of borrowing",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "percents",
+    "stem": "Kai borrows \\$2000 at 5% simple interest a year. How much more interest does he pay if he takes 4 years to repay instead of 2?",
+    "options": [
+      "\\$100",
+      "\\$400",
+      "\\$2200",
+      "\\$200"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Each year costs 2000 × 0.05 = \\$100. Two more years cost \\$200. \\$400 is the total interest over 4 years."
+  },
+  {
+    "id": "EQAO9-D-043",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Tracing a loop",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Line | Code |\n|---|---|\n| 1 | x = 2 |\n| 2 | for i in range(3): |\n| 3 | x = x + i |\n| 4 | print(x) |",
+    "stem": "What does this Python code print? Line 3 runs inside the loop, and range(3) gives 0, 1, 2.",
+    "options": [
+      "5",
+      "8",
+      "6",
+      "2"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "x starts at 2 and the loop adds 0, then 1, then 2: 2 + 0 + 1 + 2 = 5. Adding 1, 2 and 3 instead gives 8."
+  },
+  {
+    "id": "EQAO9-D-044",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Ratios",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "Paint is mixed blue to white in the ratio 3 : 5. How many litres of blue paint are in 12 L of the mixture? Type the number of litres only.",
+    "numeric": {
+      "answers": [
+        "4.5",
+        "9/2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The ratio has 3 + 5 = 8 parts, so each part is 12 ÷ 8 = 1.5 L. Blue is 3 parts: 3 × 1.5 = 4.5 L."
+  },
+  {
+    "id": "EQAO9-D-045",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Mean",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "meanMedian",
+    "stem": "Adding which value to the data set 10, 12, 14, 16 would not change the mean?",
+    "options": [
+      "10",
+      "13",
+      "16",
+      "52"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The mean is 52 ÷ 4 = 13. Adding a value equal to the mean keeps it the same: 65 ÷ 5 = 13. 52 is the total, not the mean."
+  },
+  {
+    "id": "EQAO9-D-046",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Circle properties",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "circleBasics",
+    "stem": "Which line always passes through the centre of a circle?",
+    "options": [
+      "Any line that crosses the circle at two points",
+      "A tangent line drawn at any point on the circle",
+      "The perpendicular bisector of any chord",
+      "Any line through the midpoint of a chord"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The perpendicular bisector of a chord is the set of points the same distance from both ends of the chord, and the centre is one of them. A tangent touches the circle once and never passes through the centre."
+  },
+  {
+    "id": "EQAO9-D-047",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Down payments",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "percents",
+    "stem": "Sam buys a \\$28 000 car and makes a 20% down payment. How much does Sam need to borrow?",
+    "options": [
+      "\\$5600",
+      "\\$27 980",
+      "\\$33 600",
+      "\\$22 400"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The down payment is 0.20 × 28 000 = \\$5600, so the amount borrowed is \\$28 000 − \\$5600 = \\$22 400."
+  },
+  {
+    "id": "EQAO9-D-048",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Algebra",
+    "skill": "Linear or non-linear",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "Sort each relation as linear or non-linear.",
+    "rows": [
+      "y = 3x − 2",
+      "y = x² + 1",
+      "y = 2ˣ",
+      "x + y = 10",
+      "xy = 12"
+    ],
+    "columns": [
+      "Linear",
+      "Non-linear"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "calculator": true,
+    "explanation": "A relation is linear when x appears only to the power 1 and is not multiplied by y: y = 3x − 2 and x + y = 10. x², 2ˣ and xy = 12 all make curves."
+  },
+  {
+    "id": "EQAO9-D-049",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Number",
+    "skill": "Percent change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A monthly bus pass went up from \\$120 to \\$129. What was the percent increase?",
+    "options": [
+      "7.5%",
+      "9%",
+      "7.0%",
+      "6.98%"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The increase is \\$9, and percent change compares it to the starting price: 9 ÷ 120 = 0.075 = 7.5%. 6.98% divides by the new price instead."
+  },
+  {
+    "id": "EQAO9-D-050",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Data",
+    "skill": "Correlation",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each pair of variables, choose the correlation you would expect.",
+    "rows": [
+      "Distance driven and fuel used",
+      "Outdoor temperature and furnace use",
+      "Last digit of a phone number and height",
+      "Hours of practice and free throws made"
+    ],
+    "columns": [
+      "Positive",
+      "Negative",
+      "None"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "calculator": true,
+    "explanation": "More driving uses more fuel and more practice tends to bring more baskets, so both are positive. Warmer days mean less heating, a negative correlation. A phone number has no link to height."
+  },
+  {
+    "id": "EQAO9-D-051",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Geometry",
+    "skill": "Measurement formulas",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each measurement to its formula.",
+    "rows": [
+      "Volume of a cone",
+      "Area of a circle",
+      "Volume of a cylinder",
+      "Circumference of a circle"
+    ],
+    "columns": [
+      "πr²",
+      "πr²h",
+      "πr²h/3",
+      "2πr"
+    ],
+    "correct": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "calculator": true,
+    "explanation": "A cylinder is a circle's area times the height, πr²h, and a cone is one third of that. A circle's area is πr² and its circumference is 2πr."
+  },
+  {
+    "id": "EQAO9-D-052",
+    "section": "a",
+    "test": 0,
+    "module": 1,
+    "domain": "eqao9Financial",
+    "skill": "Appreciation and depreciation",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "Does each item usually appreciate or depreciate?",
+    "rows": [
+      "A new car",
+      "A house in a growing town",
+      "A laptop",
+      "A rare collectible coin"
+    ],
+    "columns": [
+      "Appreciates",
+      "Depreciates"
+    ],
+    "correct": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "calculator": true,
+    "explanation": "Cars and laptops lose value with age and use. Homes in growing towns and rare collectibles tend to gain value over time."
+  }
+]

@@ -1,0 +1,4408 @@
+[
+  {
+    "id": "GCSES-T1-001",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Organelles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In which part of an animal cell does aerobic respiration take place?",
+    "explanation": "Mitochondria are where aerobic respiration releases energy from glucose. Ribosomes make proteins and the nucleus holds the genetic material.",
+    "options": [
+      "Ribosomes",
+      "Mitochondria",
+      "Nucleus",
+      "Cell membrane"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T1-002",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Reflex arc",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the parts of a reflex arc in order, starting from the stimulus.",
+    "explanation": "A receptor detects the stimulus and a sensory neurone carries the impulse to a relay neurone in the spinal cord. A motor neurone then carries it to the effector, a muscle or gland.",
+    "options": [
+      "Receptor",
+      "Sensory neurone",
+      "Relay neurone",
+      "Motor neurone",
+      "Effector"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "GCSES-T1-003",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Prokaryotic cells",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which structure is found in bacterial cells but not in animal cells?",
+    "explanation": "Bacteria carry small rings of DNA called plasmids, which animal cells do not have. Bacteria have no nucleus or mitochondria, and both cell types have a cell membrane.",
+    "options": [
+      "A nucleus",
+      "Mitochondria",
+      "A cell membrane",
+      "Plasmids"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-004",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Blood glucose",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which organ releases insulin when blood glucose concentration rises?",
+    "explanation": "The pancreas monitors blood glucose and releases insulin when it is too high. The liver then stores the extra glucose as glycogen.",
+    "options": [
+      "Pancreas",
+      "Liver",
+      "Pituitary gland",
+      "Kidney"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T1-005",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Magnification",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A drawing of a cell is 24 mm long. The real cell is 0.08 mm long. Use magnification = image size ÷ real size. What is the magnification? Type the number only.",
+    "explanation": "Both sizes are in mm, so divide: 24 ÷ 0.08 = 300. The magnification is ×300 and has no units.",
+    "basics": "gcsesciMagnification",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "300",
+        "x300",
+        "×300"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-006",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Diabetes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What causes type 1 diabetes?",
+    "explanation": "In type 1 diabetes the pancreas produces too little insulin, so it is treated with insulin injections. Cells no longer responding to insulin describes type 2.",
+    "options": [
+      "Body cells stop responding to insulin",
+      "The liver stores too much glycogen",
+      "The pancreas makes too little insulin",
+      "The kidneys remove too much glucose"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T1-007",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Osmosis practical",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Potato cylinders are left in a concentrated sugar solution for an hour and lose mass. Why?",
+    "explanation": "The solution outside is more concentrated, so water leaves the potato cells by osmosis and the cylinders get lighter. Osmosis is the movement of water, not of sugar.",
+    "options": [
+      "Sugar moved out of the cells by diffusion",
+      "Water moved in by active transport",
+      "Sugar moved into the cells by osmosis",
+      "Water moved out of the cells by osmosis"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-008",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Reproductive hormones",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which hormone causes eggs to mature in the ovaries?",
+    "explanation": "FSH from the pituitary gland causes an egg to mature and makes the ovaries release oestrogen. LH triggers ovulation, the release of the egg.",
+    "options": [
+      "FSH",
+      "LH",
+      "Progesterone",
+      "Testosterone"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T1-009",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Enzymes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What happens to an enzyme's active site when it is heated well above its optimum temperature?",
+    "explanation": "High temperatures break the bonds holding the enzyme's shape, so the active site changes and the enzyme is denatured. Enzymes are not used up in reactions.",
+    "options": [
+      "It gets bigger so more substrate can fit",
+      "It changes shape so the substrate no longer fits",
+      "It is used up in the reaction",
+      "It works faster as particles speed up"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T1-010",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Genetic crosses",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Cystic fibrosis is caused by a recessive allele (f). Two parents are both Ff. What is the percentage chance that their child will have cystic fibrosis? Type the number only.",
+    "explanation": "A Punnett square of Ff × Ff gives FF, Ff, Ff and ff. Only ff has the disorder, which is 1 in 4, or 25%.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "25",
+        "25%"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-011",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Food tests",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which reagent is used to test a food for protein?",
+    "explanation": "Biuret reagent turns from blue to purple when protein is present. Benedict's tests for sugars, iodine for starch and ethanol for lipids.",
+    "options": [
+      "Benedict's solution",
+      "Iodine solution",
+      "Ethanol",
+      "Biuret reagent"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-012",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Meiosis",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How many cells does meiosis produce from one cell?",
+    "explanation": "Meiosis makes gametes: four cells, each with half the chromosomes and each genetically different. Mitosis makes two identical cells.",
+    "options": [
+      "Four, all genetically different",
+      "Two, genetically identical",
+      "Four, genetically identical",
+      "Two, genetically different"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T1-013",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "The heart",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which chamber of the heart pumps blood to the lungs?",
+    "explanation": "The right ventricle pumps deoxygenated blood to the lungs through the pulmonary artery. The left ventricle pumps blood round the rest of the body.",
+    "options": [
+      "Left ventricle",
+      "Right ventricle",
+      "Right atrium",
+      "Left atrium"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T1-014",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Evolution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A few bacteria in a population have a mutation that makes them resistant to an antibiotic. What happens when the antibiotic is used?",
+    "explanation": "The antibiotic kills the non-resistant bacteria, so the resistant ones survive, reproduce and pass on the allele. This is natural selection; the mutation happened by chance before the antibiotic was used.",
+    "options": [
+      "All the bacteria become resistant at once",
+      "The antibiotic causes the mutation",
+      "Resistant bacteria survive and reproduce",
+      "Resistant bacteria die first"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T1-015",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Pathogens",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two diseases are caused by viruses? Choose two.",
+    "explanation": "Measles and HIV are viral diseases. Salmonella is a bacterium, malaria is caused by a protist and rose black spot by a fungus.",
+    "select": 2,
+    "options": [
+      "Measles",
+      "Salmonella food poisoning",
+      "Malaria",
+      "HIV",
+      "Rose black spot"
+    ],
+    "correct": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-016",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Sampling with quadrats",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A student places 10 quadrats, each 1 m², at random in a field with an area of 2,000 m². They count 36 daisies in total. Estimate the number of daisies in the whole field. Type the number only.",
+    "explanation": "Mean per quadrat = 36 ÷ 10 = 3.6 daisies per m². Multiply by the field area: 3.6 × 2,000 = 7,200 daisies.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "7200",
+        "7,200"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-017",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Antibiotics",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why should a doctor not prescribe antibiotics for a common cold?",
+    "explanation": "Colds are caused by viruses, which live inside body cells where antibiotics cannot reach them. Antibiotics kill bacteria.",
+    "options": [
+      "Antibiotics only kill fungi",
+      "Antibiotics do not kill viruses",
+      "Antibiotics destroy white blood cells",
+      "Colds are caused by protists"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T1-018",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Food chains",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In the food chain grass → rabbit → fox, which organism is the primary consumer?",
+    "explanation": "The primary consumer eats the producer. Grass is the producer, the rabbit eats it, and the fox is the secondary consumer.",
+    "options": [
+      "Grass",
+      "Fox",
+      "Rabbit",
+      "The Sun"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T1-019",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Photosynthesis",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which word equation shows photosynthesis?",
+    "explanation": "Photosynthesis uses carbon dioxide and water with energy from light to make glucose and oxygen. The reverse equation is aerobic respiration.",
+    "options": [
+      "glucose + oxygen → carbon dioxide + water",
+      "carbon dioxide + oxygen → glucose + water",
+      "glucose → lactic acid",
+      "carbon dioxide + water → glucose + oxygen"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-020",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Carbon cycle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which process removes carbon dioxide from the atmosphere?",
+    "explanation": "Plants and algae take in carbon dioxide for photosynthesis. Respiration, combustion and decay by microorganisms all release carbon dioxide.",
+    "options": [
+      "Photosynthesis",
+      "Respiration",
+      "Combustion",
+      "Decay by microorganisms"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T1-021",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Atomic structure",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An atom of sodium has atomic number 11 and mass number 23. How many neutrons does it have?",
+    "explanation": "Neutrons = mass number − atomic number = 23 − 11 = 12. The atomic number, 11, is the number of protons (and electrons).",
+    "options": [
+      "11",
+      "12",
+      "23",
+      "34"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T1-022",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Rates of reaction",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which change would slow down the reaction between marble chips and hydrochloric acid?",
+    "explanation": "Larger chips have a smaller surface area to volume ratio, so there are fewer collisions each second. The other three changes all speed the reaction up.",
+    "options": [
+      "Warming the acid",
+      "Using more concentrated acid",
+      "Using larger marble chips",
+      "Crushing the chips to powder"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T1-023",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Isotopes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What are isotopes?",
+    "explanation": "Isotopes have the same number of protons, so they are the same element, but different numbers of neutrons and so different mass numbers. Changing the protons would change the element.",
+    "options": [
+      "Atoms of different elements with the same mass number",
+      "Atoms of one element with different numbers of protons",
+      "Ions of one element with different charges",
+      "Atoms of one element with different numbers of neutrons"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-024",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Catalysts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a catalyst speed up a reaction?",
+    "explanation": "A catalyst provides a different reaction pathway with a lower activation energy, so more collisions are successful. It is not used up.",
+    "options": [
+      "It gives a route with lower activation energy",
+      "It gives the particles more energy",
+      "It increases the concentration",
+      "It is used up in the reaction to make more product"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T1-025",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Electron configuration",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the electron configuration of magnesium, atomic number 12?",
+    "explanation": "The first shell holds up to 2 electrons and the second up to 8, so 12 electrons are arranged 2,8,2. Magnesium is in group 2 because it has 2 outer electrons.",
+    "options": [
+      "2,10",
+      "2,8,2",
+      "2,8,1,1",
+      "8,2,2"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T1-026",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Rates of reaction",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A reaction produces 60 cm³ of gas in 30 seconds. Use mean rate = volume of gas ÷ time. What is the mean rate in cm³/s? Type the number only.",
+    "explanation": "60 ÷ 30 = 2 cm³/s. The rate is the amount of product made per second.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-027",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Group 1",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How does the reactivity of the group 1 metals change going down the group?",
+    "explanation": "Further down, the outer electron is further from the nucleus and more easily lost, so potassium reacts more vigorously than sodium and sodium more than lithium.",
+    "options": [
+      "It decreases",
+      "It stays the same",
+      "It rises, then falls",
+      "It increases"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-028",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Reversible reactions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does the symbol ⇌ show in an equation?",
+    "explanation": "⇌ shows the products can react to form the reactants again. In a closed system the reaction can reach equilibrium.",
+    "options": [
+      "The reaction is reversible",
+      "The reaction is exothermic",
+      "A gas is given off",
+      "A catalyst is used"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T1-029",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Ionic bonding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What happens when sodium reacts with chlorine to form sodium chloride?",
+    "explanation": "Sodium loses its single outer electron to become Na⁺ and chlorine gains it to become Cl⁻. Sharing electrons is covalent bonding, between non-metals.",
+    "options": [
+      "Chlorine gives one electron to sodium",
+      "Sodium gives one electron to chlorine",
+      "They share a pair of electrons",
+      "Sodium gives one proton to chlorine"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T1-030",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Alkanes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the formula of propane?",
+    "explanation": "Alkanes follow CₙH₂ₙ₊₂, so three carbons need 2 × 3 + 2 = 8 hydrogens. C₃H₆ is propene, an alkene.",
+    "options": [
+      "C₃H₆",
+      "C₄H₁₀",
+      "C₃H₈",
+      "CH₄"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T1-031",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Carbon structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does graphite conduct electricity?",
+    "explanation": "Each carbon in graphite forms three covalent bonds, leaving one electron per atom free to move and carry charge. Layers sliding explains why graphite is soft, not why it conducts.",
+    "options": [
+      "It has ionic bonds",
+      "Each carbon forms four bonds",
+      "Its layers slide over each other",
+      "It has delocalised electrons"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-032",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Crude oil fractions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Compared with short-chain hydrocarbons, long-chain hydrocarbons are...",
+    "explanation": "As chain length increases, boiling point and viscosity rise and flammability falls. That is why short-chain fractions make good fuels.",
+    "options": [
+      "more viscous and less flammable",
+      "less viscous and more flammable",
+      "more viscous and more flammable",
+      "less viscous and less flammable"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T1-033",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Relative formula mass",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Calculate the relative formula mass (Mr) of calcium carbonate, CaCO₃. Relative atomic masses: Ca = 40, C = 12, O = 16. Type the number only.",
+    "explanation": "Add the masses of every atom: 40 + 12 + (3 × 16) = 40 + 12 + 48 = 100.",
+    "basics": "gcsesciRelativeMass",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "100"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-034",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Cracking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which test shows that cracking has produced an alkene?",
+    "explanation": "Alkenes have a C=C double bond that reacts with bromine, decolourising orange bromine water. Alkanes leave it orange.",
+    "options": [
+      "Limewater turns milky",
+      "A lit splint gives a squeaky pop",
+      "Bromine water turns orange to colourless",
+      "Damp litmus paper is bleached"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T1-035",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Balancing equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is the balanced equation for magnesium burning in oxygen?",
+    "explanation": "Each side must have the same number of each atom. 2Mg + O₂ → 2MgO has 2 Mg and 2 O on both sides; the others leave one element unbalanced.",
+    "basics": "gcsesciBalancing",
+    "options": [
+      "Mg + O₂ → MgO",
+      "Mg + O₂ → 2MgO",
+      "2Mg + 2O₂ → 2MgO",
+      "2Mg + O₂ → 2MgO"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-036",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Chromatography",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "On a chromatogram the solvent front moved 8.0 cm and a spot moved 2.0 cm. Use Rf = distance moved by spot ÷ distance moved by solvent. What is the Rf value? Type the number only.",
+    "explanation": "Rf = 2.0 ÷ 8.0 = 0.25. An Rf value is always less than 1 because the spot cannot move further than the solvent.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "0.25",
+        ".25"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-037",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Making salts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which salt forms when zinc reacts with sulfuric acid?",
+    "explanation": "Sulfuric acid makes sulfates, hydrochloric acid chlorides and nitric acid nitrates. The other product is hydrogen gas.",
+    "options": [
+      "Zinc chloride",
+      "Zinc sulfate",
+      "Zinc nitrate",
+      "Zinc sulfide"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T1-038",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Testing for gases",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which test shows that a gas is oxygen?",
+    "explanation": "Oxygen relights a glowing splint. Carbon dioxide turns limewater milky, hydrogen gives a squeaky pop and chlorine bleaches damp litmus paper.",
+    "options": [
+      "It turns limewater milky",
+      "It gives a squeaky pop",
+      "It relights a glowing splint",
+      "It bleaches damp litmus paper"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T1-039",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Energy changes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which observation shows that a reaction is exothermic?",
+    "explanation": "An exothermic reaction transfers energy to the surroundings, so a thermometer in the mixture shows a rise. A fall in temperature means the reaction is endothermic.",
+    "options": [
+      "The temperature of the surroundings falls",
+      "A gas is given off",
+      "The products store more energy",
+      "The temperature of the surroundings rises"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-040",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "The atmosphere",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Roughly what fraction of today's dry air is nitrogen?",
+    "explanation": "Dry air is about 78% nitrogen, roughly four-fifths, and about 21% oxygen, roughly one-fifth. Carbon dioxide, argon and other gases make up the small remainder.",
+    "options": [
+      "About four-fifths",
+      "About one-fifth",
+      "About half",
+      "Less than 1%"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T1-041",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Kinetic energy",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A 2 kg ball moves at 3 m/s. Use kinetic energy = 0.5 × mass × speed². What is its kinetic energy in J? Type the number only.",
+    "explanation": "Square the speed first: 3² = 9. Then 0.5 × 2 × 9 = 9 J.",
+    "basics": "gcsesciSubstitute",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-042",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Scalars and vectors",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which quantity is a vector?",
+    "explanation": "A vector has both size and direction. Velocity is speed in a given direction; speed, mass and energy have size only, so they are scalars.",
+    "options": [
+      "Speed",
+      "Mass",
+      "Velocity",
+      "Kinetic energy"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T1-043",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Gravitational potential energy",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A 50 kg student climbs stairs 4 m high. Use change in gravitational potential energy = mass × gravitational field strength × height, with g = 9.8 N/kg. What is the increase in GPE in J? Type the number only.",
+    "explanation": "50 × 9.8 × 4 = 1,960 J.",
+    "basics": "gcsesciSubstitute",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "1960",
+        "1,960"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-044",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Weight",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "What is the weight of a 60 kg person on Earth? Use weight = mass × gravitational field strength, with g = 9.8 N/kg. Give your answer in N. Type the number only.",
+    "explanation": "60 × 9.8 = 588 N. Mass is in kilograms; weight is a force, in newtons.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "588"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-045",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Efficiency",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A motor is supplied with 500 J and transfers 350 J usefully. Use efficiency = useful output energy ÷ total input energy. What is the efficiency as a percentage? Type the number only.",
+    "explanation": "350 ÷ 500 = 0.7, and 0.7 × 100 = 70%. The other 150 J is dissipated, mostly by heating the surroundings.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "70",
+        "70%"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-046",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Speed",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A cyclist travels 600 m in 120 s. Use distance travelled = speed × time. What is the cyclist's speed in m/s? Type the number only.",
+    "explanation": "Rearrange to speed = distance ÷ time: 600 ÷ 120 = 5 m/s.",
+    "basics": "gcsesciRearrange",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-047",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Energy resources",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "For each energy resource, choose whether it is renewable or non-renewable.",
+    "explanation": "Tides and biofuels are replenished as they are used. Coal and the uranium used as nuclear fuel will run out.",
+    "rows": [
+      "Tidal",
+      "Coal",
+      "Biofuel",
+      "Nuclear fuel"
+    ],
+    "columns": [
+      "Renewable",
+      "Non-renewable"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T1-048",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Acceleration",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A car speeds up from 5 m/s to 25 m/s in 4 s. Use acceleration = change in velocity ÷ time taken. What is its acceleration in m/s²? Type the number only.",
+    "explanation": "Change in velocity = 25 − 5 = 20 m/s. Then 20 ÷ 4 = 5 m/s².",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-049",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Potential difference",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A current of 0.5 A flows through a 12 Ω resistor. Use potential difference = current × resistance. What is the potential difference in V? Type the number only.",
+    "explanation": "0.5 × 12 = 6 V.",
+    "basics": "gcsesciSubstitute",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-050",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Newton's second law",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A resultant force of 1200 N gives a car an acceleration of 1.5 m/s². Use resultant force = mass × acceleration. What is the mass of the car in kg? Type the number only.",
+    "explanation": "Rearrange to mass = force ÷ acceleration: 1200 ÷ 1.5 = 800 kg.",
+    "basics": "gcsesciRearrange",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "800"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-051",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Series circuits",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two lamps are connected in series with a cell. What is true about the current?",
+    "explanation": "A series circuit has only one path, so the same current flows through every component. The potential difference is shared between them.",
+    "options": [
+      "It splits between the lamps",
+      "It is larger in the first lamp",
+      "It is zero in the second lamp",
+      "It is the same through both lamps"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-052",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Stopping distance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which factor increases a driver's thinking distance?",
+    "explanation": "Thinking distance depends on reaction time, which tiredness, alcohol, drugs and distractions increase. Wet roads, worn tyres and worn brakes affect the braking distance.",
+    "options": [
+      "Tiredness",
+      "Wet roads",
+      "Worn tyres",
+      "Worn brakes"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T1-053",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Thermistors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What happens to the resistance of a thermistor as it gets hotter?",
+    "explanation": "A thermistor's resistance falls as temperature rises, which is why thermistors are used in thermostats and fire alarms.",
+    "options": [
+      "It increases",
+      "It decreases",
+      "It stays the same",
+      "It rises, then falls"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T1-054",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Distance-time graphs",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "On a distance-time graph, what does a horizontal line show?",
+    "explanation": "A horizontal line means the distance is not changing, so the object is not moving. A straight sloping line shows constant speed.",
+    "options": [
+      "It moves at constant speed",
+      "It is accelerating",
+      "The object is stationary",
+      "It is slowing down"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T1-055",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Mains electricity",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What colour is the earth wire in a UK plug?",
+    "explanation": "The earth wire is green and yellow, the live wire brown and the neutral wire blue. The earth wire carries current away safely if there is a fault.",
+    "options": [
+      "Brown",
+      "Blue",
+      "Red and black stripes",
+      "Green and yellow stripes"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T1-056",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Wave speed",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A wave has a frequency of 50 Hz and a wavelength of 4 m. Use wave speed = frequency × wavelength. What is the wave speed in m/s? Type the number only.",
+    "explanation": "50 × 4 = 200 m/s.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "200"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-057",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Density",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A block has a mass of 600 g and a volume of 200 cm³. Use density = mass ÷ volume. What is its density in g/cm³? Type the number only.",
+    "explanation": "600 ÷ 200 = 3 g/cm³.",
+    "basics": "gcsesciSubstitute",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T1-058",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Electromagnetic spectrum",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which list is in order of increasing wavelength?",
+    "explanation": "Gamma rays have the shortest wavelength, then X-rays, ultraviolet and visible light, with radio waves the longest. The first list follows that order.",
+    "options": [
+      "Visible, ultraviolet, X-rays, gamma",
+      "X-rays, gamma, visible, ultraviolet",
+      "Gamma, X-rays, ultraviolet, visible",
+      "Ultraviolet, gamma, visible, X-rays"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T1-059",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Nuclear radiation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which type of radiation is stopped by a sheet of paper?",
+    "explanation": "Alpha particles are the most ionising and least penetrating, so paper or a few centimetres of air stops them. Beta needs aluminium and gamma needs thick lead or concrete.",
+    "options": [
+      "Beta",
+      "Gamma",
+      "Alpha"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T1-060",
+    "section": "physics",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Electromagnets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which change makes an electromagnet stronger?",
+    "explanation": "More turns, a bigger current or an iron core all make the magnetic field of a solenoid stronger.",
+    "options": [
+      "More turns on the coil",
+      "A smaller current",
+      "Removing the iron core",
+      "Using a plastic core"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T2-001",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Organelles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which part of a plant cell absorbs light for photosynthesis?",
+    "explanation": "Chloroplasts contain chlorophyll, which absorbs light energy. The vacuole holds cell sap and the cell wall strengthens the cell.",
+    "options": [
+      "Vacuole",
+      "Chloroplast",
+      "Cell wall",
+      "Ribosome"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T2-002",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Synapses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a nerve impulse cross a synapse?",
+    "explanation": "At a synapse the impulse triggers the release of a chemical, which diffuses across the gap and starts a new impulse in the next neurone. The neurones do not touch.",
+    "options": [
+      "An electrical impulse jumps the gap",
+      "The two neurones touch",
+      "A chemical diffuses across the gap",
+      "Blood carries it across"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-003",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Active transport",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Root hair cells take in mineral ions from soil water where the ions are less concentrated than inside the cell. Which process is this?",
+    "explanation": "Moving ions from a dilute solution to a more concentrated one is against the concentration gradient, which needs energy from respiration. That is active transport.",
+    "options": [
+      "Diffusion",
+      "Osmosis",
+      "Transpiration",
+      "Active transport"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-004",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Blood glucose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a meal, insulin is released into the blood. What does it cause liver and muscle cells to do?",
+    "explanation": "Insulin makes cells take up glucose from the blood, and the liver and muscles store the extra as glycogen. Plants, not animals, store glucose as starch.",
+    "options": [
+      "Store glucose as glycogen",
+      "Release glucose into the blood",
+      "Turn glucose into starch",
+      "Make more bile"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T2-005",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Magnification",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A cell is 40 µm across. It is viewed at a magnification of ×400. What is the size of the image in mm? (1 mm = 1000 µm) Type the number only.",
+    "explanation": "Image size = real size × magnification = 40 × 400 = 16,000 µm. Divide by 1000 to convert to millimetres: 16 mm.",
+    "basics": "gcsesciMagnification",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-006",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Homeostasis",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is homeostasis?",
+    "explanation": "Homeostasis is the regulation of internal conditions, such as blood glucose and body temperature, so cells work properly as things change.",
+    "options": [
+      "Fighting pathogens in the blood",
+      "Releasing energy from glucose",
+      "Keeping internal conditions constant",
+      "Passing genes to offspring"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-007",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Stem cells",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Where are stem cells found in plants?",
+    "explanation": "Meristem tissue at the tips of roots and shoots can divide and become any type of plant cell. Xylem, guard cells and palisade cells are already specialised.",
+    "options": [
+      "In xylem",
+      "In guard cells",
+      "In the palisade layer",
+      "In meristems"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-008",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Reproductive hormones",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which hormone maintains the lining of the uterus?",
+    "explanation": "Progesterone keeps the uterus lining thick in the second half of the cycle. When progesterone falls, the lining breaks down.",
+    "options": [
+      "Progesterone",
+      "FSH",
+      "LH",
+      "Testosterone"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T2-009",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Digestion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does bile do in digestion?",
+    "explanation": "Bile is made in the liver and stored in the gall bladder. It neutralises stomach acid and breaks fat into droplets, giving lipase a bigger surface area; it is not an enzyme.",
+    "options": [
+      "Breaks starch down into sugars",
+      "Neutralises acid and emulsifies fats",
+      "Breaks proteins into amino acids",
+      "Absorbs digested food into blood"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T2-010",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Sex determination",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the chance that a baby will be male?",
+    "explanation": "The mother gives an X chromosome and the father an X or a Y with equal chance. XY is male, so the chance is 1 in 2, or 50%.",
+    "options": [
+      "25%",
+      "75%",
+      "50%",
+      "100%"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-011",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Blood vessels",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which blood vessels have walls only one cell thick?",
+    "explanation": "Capillary walls are one cell thick, so substances diffuse quickly between the blood and the tissues. Arteries have thick muscular walls to cope with high pressure.",
+    "options": [
+      "Arteries",
+      "Veins",
+      "Coronary arteries",
+      "Capillaries"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-012",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Genetic terms",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An organism has two identical alleles for a gene. What is it called?",
+    "explanation": "Homozygous means two copies of the same allele, such as BB or bb. Heterozygous means two different alleles, such as Bb.",
+    "options": [
+      "Homozygous",
+      "Heterozygous",
+      "Recessive",
+      "A phenotype"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T2-013",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Transpiration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which change would increase the rate of transpiration from a plant?",
+    "explanation": "Warmer air makes water evaporate and diffuse out of the leaves faster. Higher humidity, still air and dim light all slow transpiration down.",
+    "options": [
+      "A rise in humidity",
+      "A rise in temperature",
+      "Less air movement",
+      "Lower light intensity"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T2-014",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Selective breeding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is an example of selective breeding?",
+    "explanation": "Selective breeding chooses parents with a desired characteristic and breeds them over many generations. Adding a gene is genetic engineering and cuttings are cloning.",
+    "options": [
+      "Putting a human gene into bacteria",
+      "Taking cuttings from a plant",
+      "Breeding the cows that give the most milk",
+      "Giving antibiotics to farm animals"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-015",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Vaccination",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a vaccine protect a person from a disease?",
+    "explanation": "A vaccine contains dead or inactive pathogens, so white blood cells learn to make the right antibodies. If the real pathogen arrives, antibodies are made quickly before the person becomes ill.",
+    "options": [
+      "It kills any pathogens already in the body",
+      "It gives antibiotics that stay in the blood",
+      "It thickens the skin so pathogens cannot enter",
+      "It primes white blood cells to make antibodies fast"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-016",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the binomial name Panthera leo, what does Panthera name?",
+    "explanation": "In the binomial system the first word is the genus and the second is the species. Lions are Panthera leo; tigers are Panthera tigris, in the same genus.",
+    "options": [
+      "The genus",
+      "The species",
+      "The kingdom",
+      "The family"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T2-017",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Respiration",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is made when muscle cells respire anaerobically?",
+    "explanation": "Anaerobic respiration in muscles makes lactic acid, which builds up and creates an oxygen debt. Ethanol and carbon dioxide are made by yeast in fermentation.",
+    "options": [
+      "Ethanol and carbon dioxide",
+      "Lactic acid",
+      "Glucose",
+      "Carbon dioxide and water"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T2-018",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Ecosystems",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these is an abiotic factor?",
+    "explanation": "Abiotic factors are non-living, such as pH, temperature and light. Competition, predators and pathogens are biotic, living factors.",
+    "options": [
+      "Competition for food",
+      "A new predator",
+      "Soil pH",
+      "Disease from pathogens"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-019",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Drug testing",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the stages of testing a new medicine in order, starting with the earliest.",
+    "explanation": "Preclinical testing uses cells, tissues and then live animals. Clinical trials start with low doses in healthy volunteers to check safety, then move to patients to find the optimum dose.",
+    "options": [
+      "Tested on cells and tissues in the lab",
+      "Tested on live animals",
+      "Low doses given to healthy volunteers",
+      "Given to patients to find the best dose"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-020",
+    "section": "biology",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Biodiversity",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two human activities reduce biodiversity? Choose two.",
+    "explanation": "Clearing forest and draining peat bogs destroy habitats and the species living in them. Hedgerows and breeding programmes are ways of protecting biodiversity.",
+    "select": 2,
+    "options": [
+      "Planting hedgerows round fields",
+      "Setting up breeding programmes",
+      "Clearing tropical forest for cattle",
+      "Draining peat bogs for compost",
+      "Recycling to cut landfill"
+    ],
+    "correct": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-021",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Atomic structure",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the relative charge of an electron?",
+    "explanation": "Electrons have a relative charge of −1, protons +1 and neutrons 0. An atom has equal numbers of protons and electrons, so it has no overall charge.",
+    "options": [
+      "+1",
+      "−1",
+      "0",
+      "+2"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T2-022",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Collision theory",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does raising the temperature increase the rate of a reaction?",
+    "explanation": "Faster particles collide more often, and more collisions have at least the activation energy. Only a catalyst lowers the activation energy.",
+    "options": [
+      "The activation energy is lowered",
+      "There are more particles in the same volume",
+      "Particles collide more often and with more energy",
+      "The surface area increases"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-023",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Models of the atom",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the alpha particle scattering experiment, a few alpha particles bounced back. What did this show?",
+    "explanation": "Most alpha particles passed straight through, so the atom is mostly empty space, and the few that bounced back must have hit a small, dense, positive nucleus. This replaced the plum pudding model.",
+    "options": [
+      "Atoms are solid spheres that cannot be divided",
+      "Electrons are spread through a ball of charge",
+      "Most of the atom is filled with neutrons",
+      "Mass and positive charge sit in a tiny nucleus"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-024",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Rates practical",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the steps of the disappearing cross experiment in order.",
+    "explanation": "The acid goes in at the moment the timer starts. The sulfur precipitate makes the mixture cloudy, and the time for the cross to vanish measures the rate. Repeating at other concentrations shows how concentration affects the rate.",
+    "options": [
+      "Stand a flask of sodium thiosulfate solution on a cross drawn on paper",
+      "Add hydrochloric acid and start the timer",
+      "Stop the timer when the cross can no longer be seen",
+      "Repeat with a different concentration of sodium thiosulfate"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-025",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Group 7",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Chlorine water is added to potassium bromide solution. What happens?",
+    "explanation": "Chlorine is more reactive than bromine, so it takes bromine's place and the solution turns orange as bromine forms. Reactivity in group 7 decreases down the group.",
+    "options": [
+      "Bromine displaces chlorine",
+      "Chlorine displaces bromine",
+      "Nothing happens",
+      "Potassium is displaced"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T2-026",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Rates of reaction",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The mass of a flask falls by 1.8 g in 60 s as gas escapes. Use mean rate = mass lost ÷ time. What is the mean rate in g/s? Type the number only.",
+    "explanation": "1.8 ÷ 60 = 0.03 g/s. The mass falls because a gas product leaves the open flask.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "0.03",
+        ".03"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-027",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Group 0",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why are the noble gases unreactive?",
+    "explanation": "Noble gas atoms have a full outer shell, a stable arrangement, so they do not easily gain, lose or share electrons.",
+    "options": [
+      "They have one outer electron",
+      "They are metals",
+      "Their atoms have no neutrons",
+      "Their outer shells are full"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-028",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Equilibrium",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When has a reversible reaction in a closed system reached equilibrium?",
+    "explanation": "At equilibrium both reactions still happen, at the same rate, so the amounts of reactants and products stay constant. The reactions do not stop.",
+    "options": [
+      "When forward and reverse rates are equal",
+      "When all the reactants are used up",
+      "When the reaction stops completely",
+      "When the products are removed"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T2-029",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Simple molecules",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why does methane have a low boiling point?",
+    "explanation": "Boiling separates the molecules, so only the weak intermolecular forces are overcome. The strong covalent bonds inside each molecule do not break.",
+    "options": [
+      "The covalent bonds in each molecule are weak",
+      "The forces between its molecules are weak",
+      "It has a giant ionic lattice",
+      "It has delocalised electrons"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T2-030",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Combustion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What are the products of the complete combustion of a hydrocarbon?",
+    "explanation": "With plenty of oxygen, the carbon is oxidised to carbon dioxide and the hydrogen to water. Carbon monoxide and soot come from incomplete combustion.",
+    "options": [
+      "Carbon monoxide and water",
+      "Carbon and hydrogen",
+      "Carbon dioxide and water",
+      "Hydrogen and oxygen"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-031",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Metals and alloys",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why are alloys harder than pure metals?",
+    "explanation": "In a pure metal the layers of identical atoms slide easily. Atoms of a different size distort the layers, so they slide over each other less easily.",
+    "options": [
+      "The atoms in alloys are held by ionic bonds",
+      "Alloys have no free electrons",
+      "All the atoms in alloys are larger",
+      "Different-sized atoms stop the layers sliding"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-032",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Pure substances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a melting point show that a substance is pure?",
+    "explanation": "A pure substance melts and boils at specific temperatures. Impurities lower the melting point and make it melt over a range.",
+    "options": [
+      "It melts at one sharp temperature",
+      "It melts over a range of temperatures",
+      "It melts above 100 °C",
+      "It does not melt at all"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T2-033",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Percentage by mass",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "What is the percentage by mass of oxygen in water, H₂O? Give your answer to the nearest whole number. Relative atomic masses: H = 1, O = 16. Type the number only.",
+    "explanation": "Mr of H₂O = (2 × 1) + 16 = 18. Percentage of oxygen = 16 ÷ 18 × 100 = 88.9%, which rounds to 89%.",
+    "basics": "gcsesciRelativeMass",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "89",
+        "89%"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-034",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Testing for gases",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which test shows that a gas is carbon dioxide?",
+    "explanation": "Carbon dioxide bubbled through limewater makes it milky (cloudy). A glowing splint relighting shows oxygen.",
+    "options": [
+      "It relights a glowing splint",
+      "It gives a squeaky pop",
+      "It turns limewater milky",
+      "It bleaches damp litmus paper"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-035",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Concentration",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "25 g of salt is dissolved to make 0.5 dm³ of solution. Use concentration = mass ÷ volume. What is the concentration in g/dm³? Type the number only.",
+    "explanation": "25 ÷ 0.5 = 50 g/dm³. Dividing by a number less than 1 makes the answer bigger than the mass.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "50"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-036",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Evolution of the atmosphere",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How did oxygen first build up in Earth's atmosphere?",
+    "explanation": "Algae and later plants produced oxygen by photosynthesis over billions of years. Early volcanoes released mainly carbon dioxide, water vapour and nitrogen.",
+    "options": [
+      "Algae and plants made it by photosynthesis",
+      "Volcanoes released it",
+      "It condensed from water vapour",
+      "Rocks gave it off as the crust cooled and hardened"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T2-037",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Extracting metals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which metal is extracted from its oxide by heating with carbon?",
+    "explanation": "Carbon can reduce oxides of metals below it in the reactivity series, such as iron. Aluminium, sodium and potassium are more reactive than carbon and are extracted by electrolysis.",
+    "options": [
+      "Aluminium",
+      "Iron",
+      "Sodium",
+      "Potassium"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T2-038",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Air pollution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which pollutant comes from incomplete combustion and is toxic because it stops blood carrying oxygen?",
+    "explanation": "Carbon monoxide combines with haemoglobin in red blood cells and reduces how much oxygen the blood can carry. It is colourless and odourless, so it is hard to detect.",
+    "options": [
+      "Sulfur dioxide",
+      "Carbon dioxide",
+      "Carbon monoxide",
+      "Nitrogen"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-039",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Electrolysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Molten lead bromide is electrolysed. What forms at the cathode?",
+    "explanation": "Positive lead ions are attracted to the negative cathode and gain electrons to form lead. Bromide ions go to the anode and form bromine.",
+    "options": [
+      "Bromine",
+      "Hydrogen",
+      "Oxygen",
+      "Lead"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-040",
+    "section": "chemistry",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Potable water",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which step in treating fresh water for drinking kills microbes?",
+    "explanation": "Filtering removes solids, then sterilising with chlorine, ozone or ultraviolet light kills microbes. Adding salt would make it less drinkable.",
+    "options": [
+      "Sterilising with chlorine",
+      "Passing it through filter beds",
+      "Letting solids settle",
+      "Adding salt"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T2-041",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Specific heat capacity",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "How much energy is needed to warm 2 kg of water by 5 °C? Use change in thermal energy = mass × specific heat capacity × temperature change. The specific heat capacity of water is 4200 J/kg °C. Give your answer in J. Type the number only.",
+    "explanation": "2 × 4200 × 5 = 42,000 J.",
+    "basics": "gcsesciSubstitute",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "42000",
+        "42,000"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-042",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Contact and non-contact forces",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is a non-contact force?",
+    "explanation": "Magnetic, electrostatic and gravitational forces act at a distance. Friction, air resistance and tension need the objects to touch.",
+    "options": [
+      "Friction",
+      "Air resistance",
+      "Magnetic force",
+      "Tension"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-043",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Power",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A kettle transfers 180,000 J of energy in 60 s. Use power = energy transferred ÷ time. What is its power in W? Type the number only.",
+    "explanation": "180,000 ÷ 60 = 3,000 W, which is 3 kW.",
+    "basics": "gcsesciSubstitute",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "3000",
+        "3,000"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-044",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Work done",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A force of 50 N pushes a box 3 m along the floor. Use work done = force × distance. How much work is done, in J? Type the number only.",
+    "explanation": "50 × 3 = 150 J. One joule of work is done when a force of 1 N moves an object 1 m.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "150"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-045",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Reducing energy transfers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which change reduces energy loss through the walls of a house?",
+    "explanation": "Insulation has a low thermal conductivity, so energy passes through the wall more slowly. Thinner walls and higher conductivity would increase the loss.",
+    "options": [
+      "Thinner walls",
+      "Cavity wall insulation",
+      "Walls of higher thermal conductivity",
+      "Leaving windows open"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T2-046",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Hooke's law",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A spring with a spring constant of 40 N/m is stretched by 0.05 m. Use force = spring constant × extension. What force is needed, in N? Type the number only.",
+    "explanation": "40 × 0.05 = 2 N.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-047",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Charge",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A current of 2 A flows for 30 s. Use charge flow = current × time. How much charge flows, in C? Type the number only.",
+    "explanation": "2 × 30 = 60 C.",
+    "basics": "gcsesciSubstitute",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-048",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Hooke's law",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A spring stretches by 0.2 m when a 10 N force is applied. Use force = spring constant × extension. What is the spring constant in N/m? Type the number only.",
+    "explanation": "Rearrange to spring constant = force ÷ extension: 10 ÷ 0.2 = 50 N/m.",
+    "basics": "gcsesciRearrange",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "50"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-049",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Electrical power",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A heater is connected to a 230 V supply and a current of 10 A flows. Use power = potential difference × current. What is its power in W? Type the number only.",
+    "explanation": "230 × 10 = 2,300 W, which is 2.3 kW.",
+    "basics": "gcsesciSubstitute",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "2300",
+        "2,300"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-050",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Speed",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A student walks 300 m at 1.5 m/s. Use distance travelled = speed × time. How long does the walk take, in s? Type the number only.",
+    "explanation": "Rearrange to time = distance ÷ speed: 300 ÷ 1.5 = 200 s.",
+    "basics": "gcsesciRearrange",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "200"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-051",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Parallel circuits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a parallel circuit, what is true of the potential difference across each branch?",
+    "explanation": "Each branch is connected directly across the supply, so each gets the full potential difference. The current is what splits between branches.",
+    "options": [
+      "It is shared between the branches",
+      "It is zero",
+      "It is double the supply",
+      "It equals the supply potential difference"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-052",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Newton's first law",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A car moves at a steady speed along a straight road. What is the resultant force on it?",
+    "explanation": "If the velocity is not changing, the forces are balanced and the resultant force is zero. The driving force equals the resistive forces.",
+    "options": [
+      "Zero",
+      "A forward force",
+      "A backward force",
+      "Equal to its weight"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T2-053",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "LDRs",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What happens to the resistance of an LDR as the light gets brighter?",
+    "explanation": "A light-dependent resistor has a lower resistance in bright light, so it is used in circuits for automatic night lights.",
+    "options": [
+      "It increases",
+      "It decreases",
+      "It stays the same",
+      "It rises, then falls"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T2-054",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Braking distance",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why does braking distance increase on an icy road?",
+    "explanation": "Ice reduces the grip between the tyres and the road, so the braking force is smaller and the car takes further to stop. Reaction time affects thinking distance.",
+    "options": [
+      "The driver's reaction time becomes longer",
+      "The car has more mass",
+      "There is less friction between tyres and road",
+      "The brakes get hotter"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-055",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "The National Grid",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does the National Grid transmit electricity at a very high potential difference?",
+    "explanation": "Step-up transformers raise the potential difference so the same power is carried by a smaller current. A smaller current heats the cables less, so less energy is wasted.",
+    "options": [
+      "So the current is higher and cables stay cool",
+      "So power stations generate more energy",
+      "So the electricity reaches homes faster",
+      "So the current is lower and less energy is lost"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-T2-056",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Types of wave",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these is a longitudinal wave?",
+    "explanation": "In a longitudinal wave the vibrations are parallel to the direction of travel, as in sound. Light, microwaves and water ripples are transverse.",
+    "options": [
+      "A sound wave",
+      "A light wave",
+      "A ripple on water",
+      "A microwave"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-T2-057",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Gas pressure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does a gas in a sealed container exert more pressure when it is heated?",
+    "explanation": "Heating increases the particles' kinetic energy, so they collide with the walls more often and harder. The number and size of particles do not change.",
+    "options": [
+      "Each particle expands and takes up more space",
+      "Particles move faster and hit the walls more often",
+      "More particles are made",
+      "The particles stick to the walls"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-T2-058",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Uses of EM waves",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which part of the electromagnetic spectrum is used to sterilise surgical instruments?",
+    "explanation": "Gamma rays kill microorganisms without heating or damaging the instruments much. Radio waves are used for broadcasting and infrared for heating.",
+    "options": [
+      "Radio waves",
+      "Infrared",
+      "Gamma rays",
+      "Microwaves"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-T2-059",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Half-life",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A radioactive sample has a count rate of 800 counts per minute. Its half-life is 2 hours. What will the count rate be after 6 hours, in counts per minute? Type the number only.",
+    "explanation": "6 hours is 3 half-lives: 800 → 400 → 200 → 100 counts per minute.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "100"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-T2-060",
+    "section": "physics",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Magnetic materials",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "Which two materials are magnetic? Choose two.",
+    "explanation": "Iron, nickel, cobalt and steel are magnetic materials. Copper, aluminium and brass are metals, but magnets do not attract them.",
+    "select": 2,
+    "options": [
+      "Copper",
+      "Aluminium",
+      "Iron",
+      "Brass",
+      "Nickel"
+    ],
+    "correct": [
+      2,
+      4
+    ]
+  },
+  {
+    "id": "GCSES-D-001",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Organelles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the job of ribosomes?",
+    "explanation": "Ribosomes are where proteins are made (protein synthesis). Mitochondria release energy and the nucleus controls the cell.",
+    "options": [
+      "Releasing energy",
+      "Making proteins",
+      "Controlling the cell",
+      "Absorbing light"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-002",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Nervous system",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What makes up the central nervous system?",
+    "explanation": "The central nervous system is the brain and spinal cord, which coordinate the response. Sense organs contain receptors and muscles are effectors.",
+    "options": [
+      "The brain and sense organs",
+      "Every nerve in the body",
+      "The brain and spinal cord",
+      "The spinal cord and muscles"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-003",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Microscopy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why can an electron microscope show ribosomes when a light microscope cannot?",
+    "explanation": "Resolution is the ability to tell two close points apart, and electron microscopes resolve far smaller detail. They cannot view living cells and do not use light.",
+    "options": [
+      "It uses stains to colour the cells",
+      "It can view living cells",
+      "It uses brighter light",
+      "It has a much higher resolution"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-004",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Reaction time practical",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student uses the ruler drop test to see whether drinking cola changes reaction time. Which is a control variable?",
+    "explanation": "Drinking cola is the independent variable and the distance fallen is measured to find the reaction time. Using the same hand each time keeps the test fair.",
+    "options": [
+      "The hand used to catch the ruler",
+      "Whether the person drinks cola",
+      "The distance the ruler falls",
+      "The reaction time worked out"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-005",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Magnification",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "An image of a cheek cell is 30 mm across at a magnification of ×500. Use real size = image size ÷ magnification. What is the real size of the cell in mm? Type the number only.",
+    "explanation": "Real size = 30 ÷ 500 = 0.06 mm. Multiplying instead would give a cell 15 metres across, which shows the answer must be small.",
+    "basics": "gcsesciMagnification",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "0.06",
+        ".06"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-006",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Endocrine system",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is the pituitary gland called the master gland?",
+    "explanation": "The pituitary gland in the brain releases hormones, such as FSH and LH, that act on other glands and make them release their own hormones.",
+    "options": [
+      "It makes insulin for the whole body",
+      "It controls every reflex",
+      "Its hormones act on other glands",
+      "It is the largest gland"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-007",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Magnification",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A drawing of a bacterium is 15 mm long. The real bacterium is 3 µm long. What is the magnification? (1 mm = 1000 µm) Type the number only.",
+    "explanation": "Put both sizes in the same unit first: 15 mm = 15,000 µm. Then 15,000 ÷ 3 = 5,000, so the magnification is ×5,000.",
+    "basics": "gcsesciMagnification",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "5000",
+        "5,000",
+        "x5000",
+        "×5000"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-008",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Hormones",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How does a hormone reach its target organ?",
+    "explanation": "Endocrine glands release hormones straight into the bloodstream, which carries them to their target organs. That is why hormones act more slowly than nerve impulses, but their effects last longer.",
+    "options": [
+      "It is carried in the blood",
+      "It travels along neurones",
+      "It diffuses across a synapse",
+      "It moves through the digestive system"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-009",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Diffusion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which change increases the rate of diffusion?",
+    "explanation": "The bigger the difference in concentration, the faster the net movement of particles. A smaller area, a lower temperature and a longer path all slow diffusion down.",
+    "options": [
+      "A smaller surface area for exchange",
+      "A steeper concentration gradient",
+      "A lower temperature",
+      "A thicker membrane"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-010",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Diabetes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How is type 2 diabetes often treated first?",
+    "explanation": "Type 2 diabetes is linked to obesity, so a controlled diet and more exercise are the first treatment, with medicines if needed. Regular insulin injections are the main treatment for type 1.",
+    "options": [
+      "A pancreas transplant",
+      "A course of antibiotics",
+      "Diet control and exercise",
+      "Insulin before every meal"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-011",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Cell division",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does mitosis produce?",
+    "explanation": "Mitosis copies the chromosomes and splits the cell into two identical cells for growth and repair. Four different cells with half the chromosomes come from meiosis.",
+    "options": [
+      "Four genetically different cells",
+      "Two cells with half the chromosomes",
+      "Four gametes",
+      "Two genetically identical cells"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-012",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Contraception",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How does a condom prevent pregnancy?",
+    "explanation": "A condom is a barrier method, so sperm cannot reach the egg. It also protects against sexually transmitted infections, which hormonal methods do not.",
+    "options": [
+      "It stops sperm reaching an egg",
+      "It stops eggs maturing",
+      "It releases hormones",
+      "It thickens the uterus lining"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-013",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Enzyme practical",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the amylase practical, a drop of the mixture is added to iodine every 30 seconds. What shows that all the starch has been broken down?",
+    "explanation": "Iodine turns blue-black only when starch is present. Once it stays orange-brown, the amylase has digested all the starch.",
+    "options": [
+      "The iodine turns blue-black",
+      "The iodine stays orange-brown",
+      "The mixture turns brick red",
+      "The mixture turns purple"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-014",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "DNA",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is a gene?",
+    "explanation": "A gene is a small section of DNA that codes for a particular sequence of amino acids, making a protein. All the DNA of an organism is its genome.",
+    "options": [
+      "One whole chromosome",
+      "All the DNA in a cell",
+      "A section of DNA coding for a protein",
+      "A pair of matching chromosomes"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-015",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student investigates how temperature affects the time amylase takes to digest starch. Which is a control variable?",
+    "explanation": "Temperature is the independent variable and the time taken is the dependent variable. The volume of amylase must be kept the same so it is a fair test.",
+    "basics": "gcsesciVariables",
+    "options": [
+      "The temperature of the water bath",
+      "The time for the starch to disappear",
+      "The colour of the iodine",
+      "The volume of amylase solution"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-016",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Inherited disorders",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Polydactyly is caused by a dominant allele, D. Which genotypes give a person polydactyly?",
+    "explanation": "A dominant allele shows its effect with one copy, so both DD and Dd have polydactyly. Only dd has the usual number of fingers and toes.",
+    "options": [
+      "DD or Dd",
+      "dd only",
+      "DD only",
+      "Dd only"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-017",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student measures how the concentration of a sugar solution affects the change in mass of potato cylinders. What is the dependent variable?",
+    "explanation": "The dependent variable is what is measured, here the change in mass. The concentration is the independent variable, and length and time are control variables.",
+    "basics": "gcsesciVariables",
+    "options": [
+      "The concentration of the solution",
+      "The change in mass of the cylinders",
+      "The length of each cylinder",
+      "The time left in the solution"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-018",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Genetic engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is an example of genetic engineering?",
+    "explanation": "Genetic engineering moves a gene from one organism into another, so bacteria with the human insulin gene make insulin. Crossing varieties and breeding dogs are selective breeding.",
+    "options": [
+      "Crossing two wheat varieties for higher yield",
+      "Taking cuttings from a plant",
+      "Giving bacteria a human gene for insulin",
+      "Breeding calm dogs together"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-019",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Heart disease",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does a stent do?",
+    "explanation": "A stent is a mesh tube placed in a narrowed coronary artery so blood can flow to the heart muscle. Statins lower cholesterol and a pacemaker controls the heart rate.",
+    "options": [
+      "Lowers blood cholesterol",
+      "Replaces a faulty heart valve",
+      "Sets the resting heart rate",
+      "Holds a narrowed artery open"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-020",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Fossils",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is the fossil record incomplete?",
+    "explanation": "Fossils only form in rare conditions, so most organisms decayed completely. Many early life forms were soft-bodied and left few traces, and geological activity has destroyed others.",
+    "options": [
+      "Most dead organisms decayed instead",
+      "Only mammals can form fossils",
+      "Fossils dissolve after a million years",
+      "Early life was too large to fossilise"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-021",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "The heart",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Where is the group of cells that controls the natural resting heart rate?",
+    "explanation": "The natural pacemaker is a group of cells in the wall of the right atrium. If it fails, an artificial pacemaker can be fitted.",
+    "options": [
+      "In the left ventricle",
+      "In the right atrium",
+      "In the aorta",
+      "In the left atrium"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-022",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who proposed the three-domain system of classification?",
+    "explanation": "Carl Woese used chemical analysis to split living things into archaea, bacteria and eukaryota. Linnaeus devised the earlier kingdom system and binomial names.",
+    "options": [
+      "Charles Darwin",
+      "Carl Linnaeus",
+      "Carl Woese",
+      "Gregor Mendel"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-023",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Gas exchange",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which feature of the alveoli speeds up gas exchange?",
+    "explanation": "A rich blood supply keeps the concentration gradient steep. Alveoli have thin walls, a huge surface area and a moist lining.",
+    "options": [
+      "Thick walls",
+      "A small total surface area",
+      "A dry surface",
+      "A good blood supply"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-024",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Predators and prey",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a stable community, what usually happens after the number of prey rises?",
+    "explanation": "More prey means more food, so more predators survive and breed. Their numbers rise a little after the prey, then the prey fall as more are eaten.",
+    "options": [
+      "The number of predators rises",
+      "The number of predators falls",
+      "The prey become extinct",
+      "The producers increase"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-025",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Body defences",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are ways the body stops pathogens getting in? Choose two.",
+    "explanation": "Mucus traps pathogens and cilia sweep it away, and stomach acid kills pathogens in food. Antibodies come from white blood cells, not red ones.",
+    "select": 2,
+    "options": [
+      "Antibodies made by red blood cells",
+      "Mucus and cilia in the airways",
+      "Acid in the stomach",
+      "Antibiotics made by the liver",
+      "Platelets that digest bacteria"
+    ],
+    "correct": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-026",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Decomposition",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which conditions speed up decay by microorganisms?",
+    "explanation": "Decomposers work fastest when it is warm, moist and there is oxygen for respiration. That is why compost heaps are kept damp and turned.",
+    "options": [
+      "Cold, dry and no oxygen",
+      "Hot, dry and with very little oxygen",
+      "Warm, moist and plenty of oxygen",
+      "Freezing and moist"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-027",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Limiting factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A plant in bright, warm conditions photosynthesises faster when more carbon dioxide is added. What was limiting the rate?",
+    "explanation": "If adding carbon dioxide speeds the rate up, carbon dioxide was the factor in shortest supply. Light and warmth were already plentiful.",
+    "options": [
+      "Light intensity",
+      "Temperature",
+      "Amount of chlorophyll in the leaves",
+      "Carbon dioxide concentration"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-028",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Adaptations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is an extremophile?",
+    "explanation": "Extremophiles survive very high temperatures, pressures or salt concentrations, such as bacteria in deep-sea vents. The word has nothing to do with diet or resistance.",
+    "options": [
+      "An organism that lives in extreme conditions",
+      "An animal that eats only meat",
+      "A predator at the top of a food chain",
+      "A bacterium resistant to antibiotics"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-029",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio1",
+    "skill": "Respiration",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What are the products of fermentation by yeast?",
+    "explanation": "Yeast respiring anaerobically makes ethanol and carbon dioxide, which is used in brewing and baking. Muscles make lactic acid instead.",
+    "options": [
+      "Lactic acid",
+      "Ethanol and carbon dioxide",
+      "Oxygen and glucose",
+      "Carbon dioxide and water"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-030",
+    "section": "biology",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceBio2",
+    "skill": "Deforestation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does deforestation increase carbon dioxide in the atmosphere?",
+    "explanation": "Fewer trees take in less carbon dioxide for photosynthesis, and burning or rotting the wood releases the carbon it stored.",
+    "options": [
+      "Cut trees give out more oxygen",
+      "Cleared land is used for more roads and cars",
+      "Less photosynthesis, and burning releases it",
+      "Animals breathe faster in open land"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-031",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Atomic structure",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which particle has a relative mass of 1 and no charge?",
+    "explanation": "Neutrons have a relative mass of 1 and no charge. Protons also have mass 1 but a charge of +1, and electrons have very little mass.",
+    "options": [
+      "Proton",
+      "Electron",
+      "Ion",
+      "Neutron"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-032",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Rates of reaction",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why does powdered calcium carbonate react faster with acid than lumps of the same mass?",
+    "explanation": "Powder exposes more particles to the acid, so collisions happen more often. The mass is the same, so the total number of particles is the same.",
+    "options": [
+      "It has a larger surface area",
+      "It has a lower activation energy",
+      "It has more particles in total",
+      "Its particles move faster"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-033",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Periodic table",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why did Mendeleev leave gaps in his periodic table?",
+    "explanation": "Mendeleev left gaps so that elements with similar properties lined up, and predicted the properties of missing elements. When they were discovered, they fitted his predictions.",
+    "options": [
+      "For radioactive elements",
+      "For elements not yet discovered",
+      "For groups with no metals",
+      "To separate gases from solids"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-034",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Collision theory",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does more concentrated acid react faster?",
+    "explanation": "Higher concentration means more reacting particles in each cm³, so collisions are more frequent. The energy of each collision does not change.",
+    "options": [
+      "Each particle has more energy when it collides",
+      "The activation energy is lower",
+      "More particles in the same volume collide more often",
+      "A catalyst forms in the acid"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-035",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Group 1",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What forms when lithium reacts with water?",
+    "explanation": "Group 1 metals react with water to make a metal hydroxide, an alkali, and hydrogen gas: 2Li + 2H₂O → 2LiOH + H₂.",
+    "options": [
+      "Lithium oxide and oxygen",
+      "Lithium chloride and water",
+      "Lithium hydroxide and oxygen",
+      "Lithium hydroxide and hydrogen"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-036",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Rate graphs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a graph of gas volume against time, when is the reaction fastest?",
+    "explanation": "The gradient of the line is the rate. It is steepest at the start, when the reactants are most concentrated, and flat when the reaction has stopped.",
+    "options": [
+      "At the start, where the line is steepest",
+      "At the end, where the line is flat",
+      "Halfway through",
+      "When the most gas has been made"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-037",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Ionic compounds",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When can sodium chloride conduct electricity?",
+    "explanation": "The ions must be free to move to carry charge. In the solid they are fixed in the lattice, so solid sodium chloride does not conduct.",
+    "options": [
+      "Only as a solid at room temperature",
+      "When molten or dissolved in water",
+      "At any temperature",
+      "Only when cold"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-038",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Reversible reactions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Heated ammonium chloride breaks down into ammonia and hydrogen chloride. On cooling, they form ammonium chloride again. What does this show?",
+    "explanation": "The products react to re-form the reactant, so the reaction goes both ways. The forward reaction is endothermic and the reverse is exothermic.",
+    "options": [
+      "The reaction is combustion",
+      "Ammonium chloride is an element",
+      "The reaction is reversible",
+      "Mass is lost on cooling"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-039",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Carbon structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is diamond very hard?",
+    "explanation": "In diamond every carbon atom is bonded to four others in a rigid giant covalent structure. Weak forces between layers describe graphite, which is soft.",
+    "options": [
+      "It has weak forces between layers",
+      "It has delocalised electrons",
+      "Its ions attract each other strongly",
+      "Each carbon forms four strong covalent bonds"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-040",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Crude oil",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is crude oil?",
+    "explanation": "Crude oil is a finite resource made from ancient plankton. It is a mixture of many hydrocarbons, mostly alkanes, separated by fractional distillation.",
+    "options": [
+      "A mixture of hydrocarbons",
+      "A pure compound",
+      "A single alkane",
+      "A renewable resource"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-041",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Relative formula mass",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Calculate the relative formula mass (Mr) of carbon dioxide, CO₂. Relative atomic masses: C = 12, O = 16. Type the number only.",
+    "explanation": "One carbon and two oxygens: 12 + (2 × 16) = 12 + 32 = 44.",
+    "basics": "gcsesciRelativeMass",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "44"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-042",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Fractional distillation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In fractional distillation, where do the fractions with the lowest boiling points collect?",
+    "explanation": "The column is hottest at the bottom and coolest at the top. Fractions with low boiling points, such as petrol and gases, rise furthest before they condense.",
+    "options": [
+      "At the bottom of the column",
+      "In the middle of the column",
+      "At the top of the column",
+      "In the furnace"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-043",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Relative formula mass",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Calculate the relative formula mass (Mr) of magnesium hydroxide, Mg(OH)₂. Relative atomic masses: Mg = 24, O = 16, H = 1. Type the number only.",
+    "explanation": "The 2 outside the bracket doubles everything inside: 2 × (16 + 1) = 34. Then add magnesium: 24 + 34 = 58.",
+    "basics": "gcsesciRelativeMass",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "58"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-044",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Cracking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why are long-chain hydrocarbons cracked?",
+    "explanation": "Long chains are less in demand, so cracking breaks them into shorter alkanes for fuel and alkenes for making polymers.",
+    "options": [
+      "To make shorter, more useful molecules",
+      "To turn alkenes back into crude oil",
+      "To make longer chains for fuel",
+      "To remove sulfur from petrol"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-045",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Balancing equations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Balance the equation: __H₂ + O₂ → 2H₂O. Which number goes in the space?",
+    "explanation": "2H₂O contains 4 hydrogen atoms, so 2H₂ is needed on the left. Oxygen is already balanced with 2 atoms on each side.",
+    "basics": "gcsesciBalancing",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-046",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Alkenes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which formula is an alkene?",
+    "explanation": "Alkenes follow CₙH₂ₙ, so C₂H₄ (ethene) is an alkene. C₂H₆, CH₄ and C₃H₈ follow CₙH₂ₙ₊₂ and are alkanes.",
+    "options": [
+      "C₂H₆",
+      "CH₄",
+      "C₂H₄",
+      "C₃H₈"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-047",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Balancing equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which numbers balance the equation N₂ + __H₂ → __NH₃? (First space, then second.)",
+    "explanation": "Two nitrogen atoms on the left need 2NH₃ on the right, which has 6 hydrogen atoms. 3H₂ supplies those 6, giving N₂ + 3H₂ → 2NH₃.",
+    "basics": "gcsesciBalancing",
+    "options": [
+      "2 and 3",
+      "3 and 3",
+      "1 and 2",
+      "3 and 2"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-048",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Formulations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is a formulation?",
+    "explanation": "A formulation is a mixture designed as a useful product, with each component in a measured quantity. Sea water is a mixture but not a designed one.",
+    "options": [
+      "A paint made from set amounts of ingredients",
+      "Distilled water",
+      "A lump of pure copper",
+      "Sea water containing dissolved salts"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-049",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Conservation of mass",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Calcium carbonate is heated in an open tube and the mass of the tube's contents falls. Why?",
+    "explanation": "Calcium carbonate breaks down into calcium oxide and carbon dioxide. Mass is conserved, but the gas escapes from the open tube so it is not weighed.",
+    "options": [
+      "Atoms are destroyed by heating",
+      "Carbon dioxide gas escapes",
+      "Mass is not conserved when heated",
+      "The tube absorbs some of the solid"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-050",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Testing for gases",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which gas bleaches damp litmus paper?",
+    "explanation": "Chlorine bleaches damp litmus paper white. The test should be done in a fume cupboard because chlorine is toxic.",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Chlorine",
+      "Carbon dioxide"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-051",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Neutralisation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which ions react together in every neutralisation of an acid by an alkali?",
+    "explanation": "Acids contain H⁺ ions and alkalis contain OH⁻ ions. They combine to make water: H⁺ + OH⁻ → H₂O.",
+    "options": [
+      "Na⁺ and Cl⁻",
+      "H⁺ and Cl⁻",
+      "OH⁻ and Na⁺",
+      "H⁺ and OH⁻"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-052",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Testing for gases",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which result shows that a gas is hydrogen?",
+    "explanation": "Hydrogen burns with a squeaky pop when a lit splint is held at the mouth of the tube.",
+    "options": [
+      "A squeaky pop with a lit splint",
+      "A glowing splint relights",
+      "Limewater turns milky",
+      "Damp litmus paper is bleached"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-053",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "pH scale",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A solution has a pH of 13. How would you describe it?",
+    "explanation": "pH 7 is neutral, below 7 is acidic and above 7 is alkaline. pH 13 is near the top of the scale, so it is strongly alkaline.",
+    "options": [
+      "Weakly acidic",
+      "Strongly alkaline",
+      "Neutral",
+      "Strongly acidic"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-054",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Greenhouse gases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How do greenhouse gases keep the Earth warm?",
+    "explanation": "The Earth's surface gives off infrared radiation, which carbon dioxide, methane and water vapour absorb and re-emit, warming the atmosphere.",
+    "options": [
+      "They stop sunlight reaching the ground",
+      "They make the ozone layer thicker",
+      "They absorb heat radiated from the surface",
+      "They reflect sunlight back into space"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-055",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Making salts practical",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the steps for making copper sulfate crystals from copper oxide in order.",
+    "explanation": "Adding the insoluble base in excess makes sure all the acid reacts. Filtering removes the leftover solid, and evaporating then cooling the solution forms crystals.",
+    "options": [
+      "Warm some dilute sulfuric acid",
+      "Add copper oxide until no more dissolves",
+      "Filter off the excess copper oxide",
+      "Heat to evaporate some water, then leave to crystallise"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-056",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Air pollution",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which gas from burning fuels containing sulfur causes acid rain?",
+    "explanation": "Sulfur impurities in fuels burn to form sulfur dioxide, which dissolves in rain to make it acidic. Oxides of nitrogen also add to acid rain.",
+    "options": [
+      "Sulfur dioxide",
+      "Carbon monoxide",
+      "Methane",
+      "Argon"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-057",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Oxidation and reduction",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Iron oxide is heated with carbon to make iron. What happens to the iron oxide?",
+    "explanation": "Reduction is the loss of oxygen, and the carbon removes oxygen from the iron oxide. The carbon gains oxygen, so it is oxidised.",
+    "options": [
+      "It is oxidised",
+      "It is reduced",
+      "It is neutralised",
+      "It is electrolysed"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-058",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Potable water",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is desalination of sea water an expensive way to get drinking water?",
+    "explanation": "Distillation and reverse osmosis both use a lot of energy, so desalination is mainly used where fresh water is scarce.",
+    "options": [
+      "Sea water is already pure",
+      "It produces carbon monoxide",
+      "It needs large amounts of energy",
+      "It cannot remove the salt"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-059",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem1",
+    "skill": "Energy changes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which reaction is endothermic?",
+    "explanation": "Thermal decomposition takes in energy from the surroundings, so it is endothermic. Combustion, neutralisation and metals reacting with acids all give out energy.",
+    "options": [
+      "Burning methane",
+      "Neutralising an acid with an alkali",
+      "Magnesium reacting with acid",
+      "Thermal decomposition of calcium carbonate"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-060",
+    "section": "chemistry",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsescienceChem2",
+    "skill": "Life cycle assessment",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two stages are included in a life cycle assessment of a product? Choose two.",
+    "explanation": "A life cycle assessment looks at the environmental impact of extracting raw materials, manufacturing, using and disposing of a product. Colour, adverts and price are not part of it.",
+    "select": 2,
+    "options": [
+      "Choosing its colour",
+      "Extracting the raw materials",
+      "Advertising it on television",
+      "Disposing of it at the end of its life",
+      "Setting its shop price"
+    ],
+    "correct": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-061",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Kinetic energy",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A 1500 kg car travels at 20 m/s. Use kinetic energy = 0.5 × mass × speed². What is its kinetic energy in kJ? Type the number only.",
+    "explanation": "0.5 × 1500 × 20² = 0.5 × 1500 × 400 = 300,000 J. Divide by 1000 to get 300 kJ.",
+    "basics": "gcsesciPrefixes",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "300"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-062",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Speed",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A runner covers 100 m in 12.5 s. Use distance travelled = speed × time. What is the runner's mean speed in m/s? Type the number only.",
+    "explanation": "Rearrange to speed = distance ÷ time: 100 ÷ 12.5 = 8 m/s.",
+    "basics": "gcsesciRearrange",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-063",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Energy and power",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A 2 kW heater runs for 60 s. Use energy transferred = power × time. How much energy does it transfer, in J? Type the number only.",
+    "explanation": "Convert to watts first: 2 kW = 2,000 W. Then 2,000 × 60 = 120,000 J.",
+    "basics": "gcsesciPrefixes",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "120000",
+        "120,000"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-064",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Newton's second law",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A resultant force acts on a 2 kg mass, giving it an acceleration of 3 m/s². Use resultant force = mass × acceleration. What is the resultant force in N? Type the number only.",
+    "explanation": "2 × 3 = 6 N.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-065",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Charge",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A current of 250 mA flows for 4 s. Use charge flow = current × time. How much charge flows, in C? Type the number only.",
+    "explanation": "Convert to amps first: 250 mA = 0.25 A. Then 0.25 × 4 = 1 C.",
+    "basics": "gcsesciPrefixes",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "1"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-066",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Newton's second law",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A resultant force of 30 N gives a trolley an acceleration of 6 m/s². Use resultant force = mass × acceleration. What is the mass of the trolley in kg? Type the number only.",
+    "explanation": "Rearrange to mass = force ÷ acceleration: 30 ÷ 6 = 5 kg.",
+    "basics": "gcsesciRearrange",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-067",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Specific heat capacity",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Heating 0.5 kg of oil by 10 °C takes 9,000 J. Use change in thermal energy = mass × specific heat capacity × temperature change. What is the specific heat capacity of the oil in J/kg °C? Type the number only.",
+    "explanation": "Divide the energy by mass × temperature change: 9,000 ÷ (0.5 × 10) = 9,000 ÷ 5 = 1,800 J/kg °C.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "1800",
+        "1,800"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-068",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Velocity-time graphs",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A car accelerates steadily from rest to 10 m/s in 5 s. The distance travelled is the area under its velocity-time graph. How far does it travel in those 5 s, in m? Type the number only.",
+    "explanation": "The graph is a triangle with base 5 s and height 10 m/s. Area = 0.5 × 5 × 10 = 25 m.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-069",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Energy stores",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A ball is thrown straight up. As it rises, which energy store increases?",
+    "explanation": "As the ball rises it slows down, so energy moves from its kinetic store to its gravitational potential store.",
+    "options": [
+      "Kinetic",
+      "Gravitational potential",
+      "Elastic potential",
+      "Electrostatic potential"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-070",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Velocity-time graphs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does the gradient of a velocity-time graph show?",
+    "explanation": "Gradient = change in velocity ÷ time, which is acceleration. The area under the line gives the distance travelled.",
+    "options": [
+      "Distance travelled",
+      "Total time",
+      "Acceleration",
+      "Displacement"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-071",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Conservation of energy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What happens to the energy a machine wastes?",
+    "explanation": "Energy cannot be created or destroyed. Wasted energy is dissipated, usually heating the surroundings, where it is no longer useful.",
+    "options": [
+      "It is destroyed",
+      "It is stored in the machine for later",
+      "It turns into mass",
+      "It spreads out, warming the surroundings"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-072",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Typical speeds",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is a typical walking speed?",
+    "explanation": "People walk at about 1.5 m/s, run at about 3 m/s and cycle at about 6 m/s. 15 m/s is about the speed of a car in town.",
+    "options": [
+      "1.5 m/s",
+      "15 m/s",
+      "0.15 m/s",
+      "150 m/s"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-073",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Diodes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does a diode do in a circuit?",
+    "explanation": "A diode has a very high resistance in the reverse direction, so current flows through it in one direction only. Changing resistance with light describes an LDR.",
+    "options": [
+      "Stores charge",
+      "Lets current flow one way only",
+      "Increases the current",
+      "Changes resistance with light"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-074",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Reaction time",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a typical human reaction time?",
+    "explanation": "Reaction times usually range from about 0.2 s to 0.9 s, and tiredness, drugs, alcohol and distractions make them longer.",
+    "options": [
+      "2 s to 9 s",
+      "0.002 s to 0.009 s",
+      "0.2 s to 0.9 s",
+      "20 s to 90 s"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-075",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Filament lamps",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does the resistance of a filament lamp increase as the current through it increases?",
+    "explanation": "A bigger current heats the filament, and the hotter metal ions vibrate more and get in the way of the electrons. That is why its I-V graph curves.",
+    "options": [
+      "The filament gets shorter",
+      "The potential difference falls",
+      "Fewer electrons flow",
+      "The filament gets hotter"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-076",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Newton's third law",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A person pushes on a wall with a force of 100 N. What force does the wall exert on the person?",
+    "explanation": "Newton's third law: when two objects interact, they exert equal and opposite forces on each other.",
+    "options": [
+      "100 N in the opposite direction",
+      "0 N",
+      "100 N in the same direction",
+      "50 N in the opposite direction"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-077",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Series circuits",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Resistors of 4 Ω and 6 Ω are connected in series. What is the total resistance in Ω? Type the number only.",
+    "explanation": "In series the resistances add: 4 + 6 = 10 Ω.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-078",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Resultant forces",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two forces act on a box: 15 N to the right and 9 N to the left. What is the resultant force?",
+    "explanation": "Forces in opposite directions are subtracted: 15 − 9 = 6 N, in the direction of the larger force.",
+    "options": [
+      "24 N to the right",
+      "6 N to the left",
+      "6 N to the right",
+      "24 N to the left"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-079",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Mains electricity",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What are the frequency and potential difference of UK mains electricity?",
+    "explanation": "UK mains is alternating current at a frequency of 50 Hz and about 230 V.",
+    "options": [
+      "60 Hz and about 120 V",
+      "50 Hz and about 12 V",
+      "230 Hz and about 50 V",
+      "50 Hz and about 230 V"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "GCSES-D-080",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Wave period",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A wave has a frequency of 20 Hz. Use period = 1 ÷ frequency. What is its period in s? Type the number only.",
+    "explanation": "1 ÷ 20 = 0.05 s, so one complete wave passes a point every 0.05 seconds.",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "0.05",
+        ".05"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-081",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Energy transferred",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A charge of 5 C moves through a potential difference of 12 V. Use energy transferred = charge flow × potential difference. How much energy is transferred, in J? Type the number only.",
+    "explanation": "5 × 12 = 60 J.",
+    "basics": "gcsesciSubstitute",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-082",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Wave properties",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the amplitude of a wave?",
+    "explanation": "Amplitude is the maximum displacement of a point from its rest position. The distance between crests is the wavelength and waves per second is the frequency.",
+    "options": [
+      "The distance between two crests",
+      "The number of waves per second",
+      "The maximum displacement from rest",
+      "The time for one wave"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-083",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Specific latent heat",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "How much energy is needed to melt 0.2 kg of ice at 0 °C? Use energy = mass × specific latent heat. The specific latent heat of fusion of ice is 334,000 J/kg. Give your answer in J. Type the number only.",
+    "explanation": "0.2 × 334,000 = 66,800 J. The temperature stays at 0 °C while the ice melts.",
+    "basics": "gcsesciSubstitute",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "66800",
+        "66,800"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "GCSES-D-084",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Hazards of EM waves",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is a hazard of too much ultraviolet radiation?",
+    "explanation": "Ultraviolet can damage skin cells, causing premature ageing and an increased risk of skin cancer. X-rays and gamma rays are ionising and can cause mutations.",
+    "options": [
+      "Skin cancer",
+      "Hearing loss",
+      "Electric shock",
+      "Broken bones"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-085",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Changes of state",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What happens to the temperature of ice while it is melting?",
+    "explanation": "During a change of state the energy breaks bonds between particles instead of raising the temperature, so it stays at the melting point until all the ice has melted.",
+    "options": [
+      "It rises steadily",
+      "It stays the same",
+      "It falls",
+      "It rises, then falls"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-086",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Uses of EM waves",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which waves are used to communicate with satellites?",
+    "explanation": "Microwaves pass through the atmosphere, so they carry signals to and from satellites. Gamma, ultraviolet and X-rays are absorbed or are harmful.",
+    "options": [
+      "Gamma rays",
+      "Ultraviolet",
+      "Microwaves",
+      "X-rays"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "GCSES-D-087",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Nuclear radiation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which type of nuclear radiation is an electromagnetic wave?",
+    "explanation": "Gamma rays are electromagnetic waves from the nucleus. Alpha particles are helium nuclei and beta particles are fast electrons.",
+    "options": [
+      "Gamma",
+      "Alpha",
+      "Beta"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-088",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Magnetic fields",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which way do magnetic field lines point outside a bar magnet?",
+    "explanation": "Field lines show the direction a north pole would be pushed, so they run from north to south outside the magnet.",
+    "options": [
+      "From the north pole to the south pole",
+      "From the south pole to the north pole",
+      "In circles around the middle",
+      "Straight out of both poles"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "GCSES-D-089",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys1",
+    "skill": "Contamination and irradiation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is radioactive contamination?",
+    "explanation": "Contamination means radioactive material is on or inside something, so it keeps being exposed. Exposure from a source outside is irradiation, which does not make the object radioactive.",
+    "options": [
+      "Exposure to radiation from an outside source",
+      "Unwanted radioactive atoms on or in an object",
+      "An object turning radioactive after an X-ray",
+      "A nucleus decaying by itself"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "GCSES-D-090",
+    "section": "physics",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsesciencePhys2",
+    "skill": "Induced magnets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What happens when an iron nail is moved away from a permanent magnet?",
+    "explanation": "The nail was an induced magnet, magnetic only while in the field. Induced magnets are always attracted to the permanent magnet.",
+    "options": [
+      "It stays magnetised as a permanent magnet",
+      "It becomes a north pole",
+      "It loses most or all of its magnetism",
+      "It repels the magnet"
+    ],
+    "correct": [
+      2
+    ]
+  }
+]

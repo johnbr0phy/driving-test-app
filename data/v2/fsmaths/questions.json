@@ -1,0 +1,4268 @@
+[
+  {
+    "id": "FSM-T1-001",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Negative numbers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "At 6am the temperature in Aberdeen was −4°C. By 2pm it had risen by 11 degrees. What was the temperature at 2pm?",
+    "explanation": "Start at −4 and count up 11: 4 degrees takes you to 0, and 7 more takes you to 7°C. −15°C comes from going down instead of up.",
+    "basics": "fsmNegatives",
+    "options": [
+      "7°C",
+      "−15°C",
+      "15°C",
+      "−7°C"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FSM-T1-002",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions, decimals and percentages",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is equal to 3/8?",
+    "explanation": "3/8 = 3 ÷ 8 = 0.375, and 0.375 × 100 = 37.5%. Half of 1/4 (25%) is 12.5%, and 25% + 12.5% = 37.5%. 38% and 0.38 are rounded, so not equal.",
+    "basics": "fsmFdp",
+    "options": [
+      "37.5%",
+      "38%",
+      "0.38",
+      "3.8%"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FSM-T1-003",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Area",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A rectangular bedroom floor is 4.5 m long and 3 m wide. What is its area?",
+    "explanation": "Area of a rectangle = length × width = 4.5 × 3 = 13.5 m². 15 m is the perimeter, a length round the edge, not an area.",
+    "basics": "fsmArea",
+    "options": [
+      "15 m²",
+      "13.5 m²",
+      "7.5 m²",
+      "27 m²"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FSM-T1-004",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Order of operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Work out 3 + 4 × 2²",
+    "explanation": "Indices first: 2² = 4. Then multiply: 4 × 4 = 16. Then add: 3 + 16 = 19. Adding first gives 7 × 4 = 28, which breaks BIDMAS.",
+    "basics": "fsmOrderOps",
+    "options": [
+      "28",
+      "19",
+      "67",
+      "121"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FSM-T1-005",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Percentage of an amount",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Work out 35% of £240. Give your answer in pounds. Type the number only.",
+    "explanation": "10% of £240 is £24, so 30% is £72. 5% is half of 10%: £12. 35% = £72 + £12 = £84.",
+    "basics": "fsmPercentOf",
+    "numeric": {
+      "answers": [
+        "84"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "FSM-T1-006",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Median",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Five delivery drivers made these numbers of drops on Monday:\n\n14, 9, 21, 6, 17\n\nWhat is the median?",
+    "explanation": "Put them in order first: 6, 9, 14, 17, 21. The middle value is 14. 21 is the middle of the list before it was ordered, and 13.4 is the mean.",
+    "basics": "fsmAverages",
+    "options": [
+      "21",
+      "13.4",
+      "15",
+      "14"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FSM-T1-007",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Formulae",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A plumber works out a bill with the formula\n\ncost (£) = 45 + 30 × hours\n\nHow much is the bill for a job that takes 3.5 hours? Give your answer in pounds. Type the number only.",
+    "explanation": "30 × 3.5 = 105 (30 × 3 = 90 plus half of 30 = 15). Then 45 + 105 = £150. Multiply before you add.",
+    "basics": "fsmFormula",
+    "numeric": {
+      "answers": [
+        "150"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "FSM-T1-008",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Coordinates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three corners of a rectangle are at (−2, 3), (4, 3) and (4, −1). Where is the fourth corner?",
+    "explanation": "The fourth corner is below (−2, 3) and level with (4, −1), so it has x = −2 and y = −1. (−1, −2) has the numbers the wrong way round: x always comes first.",
+    "options": [
+      "(−1, −2)",
+      "(2, −1)",
+      "(−2, −1)",
+      "(−2, 1)"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FSM-T1-009",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Ratio",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three friends share £450 in the ratio 2 : 3 : 4. How much is the largest share?",
+    "explanation": "2 + 3 + 4 = 9 parts. One part is £450 ÷ 9 = £50. The largest share is 4 parts: 4 × £50 = £200. £112.50 is £450 ÷ 4, which ignores the other parts.",
+    "basics": "fsmRatio",
+    "options": [
+      "£150",
+      "£200",
+      "£100",
+      "£112.50"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FSM-T1-010",
+    "section": "a",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Estimation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Estimate 412 × 19.8 by rounding each number to 1 significant figure.",
+    "explanation": "412 rounds to 400 and 19.8 rounds to 20. 400 × 20 = 8,000. 8,240 rounds only one number, so it is not the estimate asked for.",
+    "basics": "fsmEstimate",
+    "options": [
+      "8,240",
+      "80,000",
+      "8,000",
+      "800"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FSM-T1-011",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Area of a circle",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A circular pond has a radius of 1.8 m. What is its area? Use the π button and give your answer in m² to 1 decimal place. Type the number only.",
+    "explanation": "Area = π × r² = π × 1.8 × 1.8 = 10.18, which is 10.2 m² to 1 decimal place. π × 1.8 × 2 = 11.3 is the circumference, not the area.",
+    "basics": "fsmArea",
+    "numeric": {
+      "answers": [
+        "10.2"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-012",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "VAT",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Hiring a van costs £185 plus VAT at 20%. What is the total cost, in pounds? Type the number only.",
+    "explanation": "20% of £185 is £37. £185 + £37 = £222. Or in one step: 185 × 1.2 = 222.",
+    "basics": "fsmPercentOf",
+    "numeric": {
+      "answers": [
+        "222"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-013",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Mean from grouped data",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A survey asked 40 people how many text messages they sent yesterday.\n\n| Texts sent | Number of people |\n|---|---|\n| 0 to 4 | 6 |\n| 5 to 9 | 10 |\n| 10 to 14 | 14 |\n| 15 to 19 | 10 |\n\nEstimate the mean number of texts sent per person. Type the number only.",
+    "explanation": "Use the middle of each group: 2, 7, 12 and 17. Multiply by the frequencies: 12 + 70 + 168 + 170 = 420. Divide by 40 people: 420 ÷ 40 = 10.5.",
+    "basics": "fsmGroupedMean",
+    "numeric": {
+      "answers": [
+        "10.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-014",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Formulae",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A van hire company uses the formula C = 28d + 0.15m, where C is the cost in pounds, d is the number of days and m is the number of miles driven. Work out the cost of hiring the van for 3 days and driving 240 miles. Type the number only.",
+    "explanation": "28 × 3 = 84 and 0.15 × 240 = 36. C = 84 + 36 = £120.",
+    "basics": "fsmFormula",
+    "numeric": {
+      "answers": [
+        "120"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-015",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Perimeter",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An L-shaped room is a 6 m by 5 m rectangle with a 2 m by 3 m rectangle cut out of one corner. Skirting board will go all the way round the edge. How much skirting board is needed? (Ignore the door.)",
+    "explanation": "Cutting a rectangle out of a corner leaves the perimeter the same as the full rectangle: the two new edges replace the two removed ones. 2 × (6 + 5) = 22 m. 24 m is the area in m².",
+    "basics": "fsmArea",
+    "options": [
+      "24 m",
+      "17 m",
+      "16 m",
+      "22 m"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-016",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Percentage change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The price of a printer cartridge falls from £64 to £52. What is the percentage decrease?",
+    "explanation": "The decrease is £12. Divide by the original price: 12 ÷ 64 = 0.1875 = 18.75%. Dividing by £52, the new price, gives 23.08%, which is wrong.",
+    "basics": "fsmPercentChange",
+    "options": [
+      "23.08%",
+      "12%",
+      "81.25%",
+      "18.75%"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-017",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Volume of a cylinder",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A water butt is a cylinder with a diameter of 60 cm and a height of 90 cm. How many litres does it hold when full? Use 1 litre = 1,000 cm³ and give your answer to the nearest litre. Type the number only.",
+    "explanation": "The radius is 30 cm. Volume = π × 30² × 90 = 254,469 cm³. Divide by 1,000: 254.5, so 254 litres. Using 60 as the radius makes it four times too big.",
+    "basics": "fsmVolume",
+    "numeric": {
+      "answers": [
+        "254"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-018",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Comparing data sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two quiz teams played ten rounds. Team A's mean score was 24 with a range of 6. Team B's mean score was 26 with a range of 19. Which statement is best supported by these figures?",
+    "explanation": "The higher mean (26) shows B scored more on average. The smaller range (6) shows A's scores were closer together, so A was more consistent.",
+    "basics": "fsmAverages",
+    "options": [
+      "B scored more on average, but A was more consistent",
+      "A scored more on average, and B was more consistent",
+      "B scored more on average and was more consistent",
+      "A scored more on average, but B was less consistent"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-019",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Reverse percentages",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a sale, a coat is reduced by 15%. It now costs £68. What was the original price?",
+    "explanation": "After a 15% cut the coat costs 85% of the original. 85% is £68, so 1% is £0.80 and 100% is £80. Adding 15% to £68 gives £78.20, but the 15% was of the original price, not of £68.",
+    "basics": "fsmPercentChange",
+    "options": [
+      "£80.00",
+      "£78.20",
+      "£83.00",
+      "£57.80"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-020",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Calculating with large numbers",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A charity appeal raised £1,247,400 from 6,300 donors. What was the mean amount given per donor, in pounds? Type the number only.",
+    "explanation": "Divide the total by the number of donors: 1,247,400 ÷ 6,300 = 198. A quick check: about 1,200,000 ÷ 6,000 = 200, so 198 is sensible.",
+    "numeric": {
+      "answers": [
+        "198"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-021",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Scale drawings",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A house plan is drawn to a scale of 1 : 50. A room is 9.2 cm long on the plan. How long is the real room, in metres? Type the number only.",
+    "explanation": "Real length = 9.2 × 50 = 460 cm. 100 cm = 1 m, so 460 cm = 4.6 m.",
+    "basics": "fsmScale",
+    "numeric": {
+      "answers": [
+        "4.6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-022",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Compound interest",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Leah puts £2,500 in a savings account that pays 3% compound interest a year. How much is in the account after 2 years, in pounds? Type the number only.",
+    "explanation": "Each year multiply by 1.03: 2,500 × 1.03 = 2,575, then 2,575 × 1.03 = £2,652.25. Simple interest would give only £2,650.",
+    "basics": "fsmPercentOf",
+    "numeric": {
+      "answers": [
+        "2652.25"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-023",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Two-way tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A care home has 60 staff.\n\n|  | Day shift | Night shift | Total |\n|---|---|---|---|\n| Full-time | 22 | 14 | 36 |\n| Part-time | 18 | 6 | 24 |\n| Total | 40 | 20 | 60 |\n\nOne member of staff is chosen at random. What is the probability that they work part-time on the night shift?",
+    "explanation": "6 of the 60 staff are part-time night shift workers. 6/60 = 1/10. 3/10 (6 out of 20) only counts the night shift, and 1/4 (6 out of 24) only counts part-timers.",
+    "basics": "fsmProbability",
+    "options": [
+      "3/10",
+      "1/10",
+      "1/4",
+      "2/5"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-024",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Speed",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A coach travels 186 miles in 3 hours 6 minutes. What is its average speed?",
+    "explanation": "6 minutes is 6/60 = 0.1 of an hour, so the time is 3.1 hours. Speed = distance ÷ time = 186 ÷ 3.1 = 60 mph. Typing 3 hours 6 minutes as 3.6 gives 51.7 mph.",
+    "basics": "fsmSpeed",
+    "options": [
+      "60 mph",
+      "62 mph",
+      "51.7 mph",
+      "58 mph"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-025",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Decimals",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A machine cuts pieces of wire 0.375 m long from a 13 m reel. How many complete pieces can it cut? Type the number only.",
+    "explanation": "13 ÷ 0.375 = 34.67 to 2 decimal places. Only whole pieces count, so round down to 34; the 35th piece would be too short.",
+    "numeric": {
+      "answers": [
+        "34"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-026",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Inverse proportion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "It takes 6 decorators 10 days to paint a block of flats. How long would it take 4 decorators working at the same rate?",
+    "explanation": "The job is 6 × 10 = 60 decorator-days of work. With 4 decorators: 60 ÷ 4 = 15 days. Fewer workers take longer, so any answer under 10 days must be wrong.",
+    "basics": "fsmRatio",
+    "options": [
+      "6.7 days",
+      "15 days",
+      "8 days",
+      "12 days"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-027",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Density",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Oak has a density of about 0.75 g/cm³. What is the mass of an oak block measuring 20 cm by 15 cm by 4 cm, in grams? Type the number only.",
+    "explanation": "Volume = 20 × 15 × 4 = 1,200 cm³. Mass = density × volume = 0.75 × 1,200 = 900 g.",
+    "basics": "fsmSpeed",
+    "numeric": {
+      "answers": [
+        "900"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-028",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Combined events",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two fair six-sided dice are rolled and their scores are added. What is the probability of a total of 4?",
+    "explanation": "There are 6 × 6 = 36 equally likely outcomes. A total of 4 comes from 1+3, 2+2 and 3+1: 3 outcomes. 3/36 = 1/12. 1/11 wrongly treats the 11 possible totals as equally likely.",
+    "basics": "fsmProbability",
+    "options": [
+      "1/9",
+      "1/6",
+      "1/12",
+      "1/11"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-029",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Ratio",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Concrete is mixed from cement, sand and gravel in the ratio 1 : 2 : 4 by weight. A builder needs 280 kg of concrete. How much sand does he need, in kg? Type the number only.",
+    "explanation": "1 + 2 + 4 = 7 parts. One part is 280 ÷ 7 = 40 kg. Sand is 2 parts: 80 kg.",
+    "basics": "fsmRatio",
+    "numeric": {
+      "answers": [
+        "80"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-030",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Rates of pay",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Ravi is paid £12.75 an hour. He works from 7:45am to 4:15pm with a 30-minute unpaid lunch break, five days a week. How much does he earn in a week, in pounds? Type the number only.",
+    "explanation": "7:45am to 4:15pm is 8 hours 30 minutes. Take off the 30-minute break: 8 paid hours a day, 40 hours a week. 40 × £12.75 = £510.",
+    "basics": "fsmSpeed",
+    "numeric": {
+      "answers": [
+        "510"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-031",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Formulae",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The formula d = v + v² ÷ 20 gives a car's typical stopping distance d, in feet, at a speed of v miles per hour. What is the stopping distance at 40 mph?",
+    "explanation": "Square first: 40² = 1,600. Then 1,600 ÷ 20 = 80. Then 40 + 80 = 120 feet. 80 feet forgets to add the v at the start.",
+    "basics": "fsmFormula",
+    "options": [
+      "80 feet",
+      "120 feet",
+      "320 feet",
+      "42 feet"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-032",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Best buy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 400 g box of cereal costs £2.60. A 750 g box of the same cereal costs £4.65. Which box is better value, and by how much per 100 g?",
+    "explanation": "400 g box: £2.60 ÷ 4 = 65p per 100 g. 750 g box: £4.65 ÷ 7.5 = 62p per 100 g. The bigger box is cheaper by 3p per 100 g.",
+    "basics": "fsmRatio",
+    "options": [
+      "400 g box, by 3p per 100 g",
+      "750 g box, by 5p per 100 g",
+      "750 g box, by 3p per 100 g",
+      "400 g box, by 2p per 100 g"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-033",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Surface area",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A closed cardboard box measures 40 cm by 30 cm by 20 cm. What area of card covers its outside?",
+    "explanation": "There are two of each face: 40 × 30 = 1,200, 40 × 20 = 800 and 30 × 20 = 600. 2 × (1,200 + 800 + 600) = 5,200 cm². 24,000 is the volume in cm³, and 2,600 counts each face once.",
+    "basics": "fsmVolume",
+    "options": [
+      "24,000 cm²",
+      "5,200 cm²",
+      "2,600 cm²",
+      "4,000 cm²"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-034",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Scatter diagrams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which pair of measurements would most likely show negative correlation on a scatter diagram?",
+    "explanation": "As a car gets older its value usually falls: one goes up as the other goes down, which is negative correlation. Height and shoe size, and temperature and ice cream sales, rise together (positive). House numbers and salaries are not related.",
+    "basics": "fsmScatter",
+    "options": [
+      "A person's height and shoe size",
+      "Outdoor temperature and ice cream sales",
+      "A person's house number and their salary",
+      "The age of a car and its value"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-035",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Budgeting",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Dan's take-home pay is £1,850 a month. His rent is 42% of his take-home pay and his bills are £230 a month. How much does he have left each month after rent and bills, in pounds? Type the number only.",
+    "explanation": "Rent: 42% of £1,850 = £777. £1,850 − £777 − £230 = £843.",
+    "basics": "fsmPercentOf",
+    "numeric": {
+      "answers": [
+        "843"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-036",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Metric and imperial conversion",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An airline's baggage limit is 23 kg. Ian's suitcase weighs 48 lb. Use 1 kg ≈ 2.2 lb. Is his case over or under the limit, and by about how much?",
+    "explanation": "48 ÷ 2.2 = 21.8 kg, which is about 1.2 kg under 23 kg. 2.6 is the gap in pounds (23 × 2.2 = 50.6 lb, and 50.6 − 48 = 2.6), not kilograms.",
+    "options": [
+      "Over, by about 1.2 kg",
+      "Under, by about 2.6 kg",
+      "Under, by about 1.2 kg",
+      "Over, by about 25 kg"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-037",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Negative numbers",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A small business records its profit each month. A loss is shown as a negative number.\n\n| Month | Profit |\n|---|---|\n| January | −£2,340 |\n| February | £1,875 |\n| March | −£560 |\n| April | £3,105 |\n\nWhat was the total profit over the four months, in pounds? Type the number only.",
+    "explanation": "−2,340 + 1,875 − 560 + 3,105 = 2,080. The two losses total −2,900 and the two profits total 4,980, so the business is £2,080 up.",
+    "basics": "fsmNegatives",
+    "numeric": {
+      "answers": [
+        "2080"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-038",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Mode",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A shop recorded the shoe sizes of 30 customers.\n\n| Shoe size | Number of customers |\n|---|---|\n| 5 | 3 |\n| 6 | 7 |\n| 7 | 11 |\n| 8 | 6 |\n| 9 | 3 |\n\nWhat is the modal shoe size?",
+    "explanation": "The mode is the size with the highest frequency. Size 7 has 11 customers, more than any other. 11 is the frequency, not the shoe size, and 4 is the range of sizes.",
+    "basics": "fsmAverages",
+    "options": [
+      "7",
+      "11",
+      "6",
+      "4"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-039",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A water tank is 2/3 full and holds 54 litres. How many litres does it hold when it is completely full? Type the number only.",
+    "explanation": "2/3 is 54 litres, so 1/3 is 27 litres and 3/3 is 3 × 27 = 81 litres. 2/3 of 54 (36 litres) works the wrong way round.",
+    "basics": "fsmFdp",
+    "numeric": {
+      "answers": [
+        "81"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T1-040",
+    "section": "b",
+    "test": 1,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Plans and elevations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 3-D shape has a plan view (from above) that is a circle and a front elevation that is a triangle. What shape is it?",
+    "explanation": "From above a cone looks like a circle; from the front it looks like a triangle. A cylinder's front view is a rectangle, and a pyramid's plan view is a square.",
+    "options": [
+      "A cylinder",
+      "A sphere",
+      "A square-based pyramid",
+      "A cone"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-001",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Ordering decimals",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put these lengths in order, from smallest to largest (in metres).",
+    "explanation": "Write them all to 3 decimal places: 0.053, 0.300, 0.305, 0.350. Now compare as whole thousandths: 53, 300, 305, 350.",
+    "options": [
+      "0.053",
+      "0.3",
+      "0.305",
+      "0.35"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "FSM-T2-002",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a garden, 1/4 of the area is lawn and 2/5 is patio. The rest is flower beds. What fraction of the garden is flower beds?",
+    "explanation": "Use twentieths: 1/4 = 5/20 and 2/5 = 8/20. Lawn and patio are 13/20, so flower beds are 20/20 − 13/20 = 7/20. 13/20 is the lawn and patio together.",
+    "basics": "fsmFdp",
+    "options": [
+      "3/9",
+      "1/3",
+      "7/20",
+      "13/20"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FSM-T2-003",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Metric and imperial conversion",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Use 1 mile ≈ 1.6 km. About how many kilometres is 25 miles? Type the number only.",
+    "explanation": "Miles to kilometres: multiply by 1.6. 25 × 1.6 = 40 km (25 × 1 = 25, plus 25 × 0.6 = 15).",
+    "numeric": {
+      "answers": [
+        "40"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "FSM-T2-004",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Negative numbers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Sam's bank account is overdrawn: the balance is −£45. He pays in £120 and then spends £90. What is his balance now?",
+    "explanation": "−45 + 120 = 75, then 75 − 90 = −15. He is £15 overdrawn. £165 comes from adding the £90 instead of taking it away.",
+    "basics": "fsmNegatives",
+    "options": [
+      "£15",
+      "£165",
+      "−£75",
+      "−£15"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FSM-T2-005",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "One amount as a percentage of another",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Mia gets 18 out of 24 questions right in a quiz. What percentage is that? Type the number only.",
+    "explanation": "18/24 simplifies to 3/4 (divide both by 6), and 3/4 = 75%.",
+    "basics": "fsmPercentOf",
+    "numeric": {
+      "answers": [
+        "75"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "FSM-T2-006",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Probability",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A bag holds 3 red, 5 blue and 12 green counters. One counter is taken at random. What is the probability that it is blue, as a percentage? Type the number only.",
+    "explanation": "There are 3 + 5 + 12 = 20 counters and 5 are blue. 5/20 = 1/4 = 25%.",
+    "basics": "fsmProbability",
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "FSM-T2-007",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Order of operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Work out (18 − 3²) × 4 ÷ 2",
+    "explanation": "Brackets first, and inside them the index: 3² = 9, so 18 − 9 = 9. Then 9 × 4 = 36 and 36 ÷ 2 = 18.",
+    "basics": "fsmOrderOps",
+    "options": [
+      "18",
+      "450",
+      "0",
+      "72"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FSM-T2-008",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Angles",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Two angles of a triangle are 48° and 67°. What is the third angle, in degrees? Type the number only.",
+    "explanation": "The angles in a triangle add up to 180°. 48 + 67 = 115, and 180 − 115 = 65°.",
+    "numeric": {
+      "answers": [
+        "65"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "FSM-T2-009",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Direct proportion",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A recipe for 5 people uses 400 g of flour. How much flour is needed for 8 people, in grams? Type the number only.",
+    "explanation": "For 1 person: 400 ÷ 5 = 80 g. For 8 people: 80 × 8 = 640 g.",
+    "basics": "fsmRatio",
+    "numeric": {
+      "answers": [
+        "640"
+      ],
+      "tolerance": 0
+    }
+  },
+  {
+    "id": "FSM-T2-010",
+    "section": "a",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Calculating with large numbers",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A music festival sold 48,500 tickets for Friday and 61,250 tickets for Saturday. How many more tickets were sold for Saturday than for Friday? Type the number only.",
+    "explanation": "61,250 − 48,500 = 12,750. Check: 48,500 + 12,750 = 61,250.",
+    "numeric": {
+      "answers": [
+        "12750"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "FSM-T2-011",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Area of a triangle",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The triangular end wall of a house extension has a base of 7.2 m and a height of 3.5 m. What is its area in m²? Type the number only.",
+    "explanation": "Area of a triangle = ½ × base × height = 0.5 × 7.2 × 3.5 = 12.6 m². Forgetting the half gives 25.2 m².",
+    "basics": "fsmArea",
+    "numeric": {
+      "answers": [
+        "12.6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-012",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Percentage change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Kerry's rent goes up from £725 to £783 a month. What is the percentage increase?",
+    "explanation": "The increase is £58. 58 ÷ 725 = 0.08 = 8%. 7.4% comes from dividing by the new rent, £783.",
+    "basics": "fsmPercentChange",
+    "options": [
+      "7.4%",
+      "5.8%",
+      "58%",
+      "8%"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-013",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Mean from grouped data",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A college recorded the number of days each of 30 students was absent last term.\n\n| Days absent | Number of students |\n|---|---|\n| 0 to 2 | 14 |\n| 3 to 5 | 9 |\n| 6 to 8 | 5 |\n| 9 to 11 | 2 |\n\nEstimate the mean number of days absent per student. Type the number only.",
+    "explanation": "Midpoints: 1, 4, 7 and 10. 1 × 14 + 4 × 9 + 7 × 5 + 10 × 2 = 14 + 36 + 35 + 20 = 105. 105 ÷ 30 = 3.5 days.",
+    "basics": "fsmGroupedMean",
+    "numeric": {
+      "answers": [
+        "3.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-014",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Formulae",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Food labels give energy in kilojoules (kJ) and kilocalories (kcal), where kcal = kJ ÷ 4.184. A snack bar contains 1,046 kJ. How many kcal is that, to the nearest whole number? Type the number only.",
+    "explanation": "1,046 ÷ 4.184 = 250. Multiplying by 4.184 instead would give 4,376, far too many for one snack bar.",
+    "basics": "fsmFormula",
+    "numeric": {
+      "answers": [
+        "250"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-015",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Composite area",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A lawn is a 12 m by 8 m rectangle with a semicircle added to one 8 m end. What is the area of the lawn, in m² to the nearest whole number? Type the number only.",
+    "explanation": "Rectangle: 12 × 8 = 96 m². The semicircle has diameter 8 m, so radius 4 m: ½ × π × 4² = 25.13 m². Total 121.13, which is 121 m².",
+    "basics": "fsmArea",
+    "numeric": {
+      "answers": [
+        "121"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-016",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Reverse percentages",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "After a 4% pay rise, Jodie earns £24,960 a year. What did she earn before the rise, in pounds? Type the number only.",
+    "explanation": "The new salary is 104% of the old one. 24,960 ÷ 1.04 = £24,000. Taking 4% off £24,960 gives £23,961.60, which is not the same.",
+    "basics": "fsmPercentChange",
+    "numeric": {
+      "answers": [
+        "24000"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-017",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Area problem",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Turf is sold in rolls that each cover 1 m² and cost £4.25. A garden needs a rectangle of turf 6.5 m by 4 m, and the gardener buys 10% extra to allow for cutting. Rolls are only sold whole. How much will the turf cost, in pounds? Type the number only.",
+    "explanation": "Area = 6.5 × 4 = 26 m². Add 10%: 28.6 m². Whole rolls only, so buy 29. 29 × £4.25 = £123.25.",
+    "basics": "fsmArea",
+    "numeric": {
+      "answers": [
+        "123.25"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-018",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Comparing data sets",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Daily sales of a sandwich at two shops over five days:\n\nShop A: 12, 15, 15, 18, 20\n\nShop B: 8, 14, 19, 21, 23\n\nFor each statement, choose True or False.",
+    "explanation": "Means: A = 80 ÷ 5 = 16, B = 85 ÷ 5 = 17, so B is higher. Ranges: A = 20 − 12 = 8, B = 23 − 8 = 15, so A's is smaller and A is more consistent. Medians: A = 15, B = 19, not the same.",
+    "basics": "fsmAverages",
+    "rows": [
+      "Shop B has the higher mean",
+      "Shop A has the larger range",
+      "Both shops have the same median",
+      "Shop A's sales are more consistent"
+    ],
+    "columns": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-019",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Depreciation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A van bought for £14,000 loses 15% of its value each year. What is it worth after 3 years?",
+    "explanation": "Each year the value is multiplied by 0.85: 14,000 × 0.85³ = £8,597.75. Taking 45% off in one go (£7,700) is wrong because each 15% is taken from a smaller value.",
+    "basics": "fsmPercentChange",
+    "options": [
+      "£8,597.75",
+      "£7,700.00",
+      "£10,115.00",
+      "£7,308.09"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-020",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Rounding",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A football stadium holds 52,682 people. What is this to the nearest thousand?",
+    "explanation": "The thousands digit is 2 and the digit after it is 6, so round up: 53,000. 52,700 is to the nearest hundred.",
+    "basics": "fsmEstimate",
+    "options": [
+      "52,000",
+      "52,700",
+      "53,000",
+      "50,000"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-021",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Volume",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A skip is shaped like a cuboid 3.6 m long, 1.8 m wide and 1.2 m deep. What is its volume?",
+    "explanation": "Volume = length × width × depth = 3.6 × 1.8 × 1.2 = 7.776 m³. 6.6 adds the lengths instead of multiplying them.",
+    "basics": "fsmVolume",
+    "options": [
+      "7.776 m³",
+      "6.6 m³",
+      "6.48 m³",
+      "77.76 m³"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-022",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Interest",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Ruth has £5,000 to save for 3 years. Account A pays 4% simple interest a year. Account B pays 3.8% compound interest a year. Which earns more interest, and by about how much?",
+    "explanation": "A: 4% of £5,000 is £200 a year, so £600. B: 5,000 × 1.038³ = £5,591.93, which is £591.93 interest. A earns about £8 more.",
+    "basics": "fsmPercentOf",
+    "options": [
+      "Account B, by about £8",
+      "Account A, by about £8",
+      "Account A, by about £20",
+      "They earn the same"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-023",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Combined events",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Spinner A is numbered 1, 2 and 3. Spinner B is numbered 1, 2, 3 and 4. Both are spun and the scores are added. What is the probability of a total of 5?",
+    "explanation": "There are 3 × 4 = 12 equally likely outcomes. A total of 5 comes from 1+4, 2+3 and 3+2: 3 outcomes. 3/12 = 1/4.",
+    "basics": "fsmProbability",
+    "options": [
+      "1/12",
+      "1/4",
+      "3/7",
+      "5/12"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-024",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Speed",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A train leaves at 09:47 and arrives at 12:17. The journey is 205 km. What is the average speed in km/h? Type the number only.",
+    "explanation": "09:47 to 12:17 is 2 hours 30 minutes, which is 2.5 hours. 205 ÷ 2.5 = 82 km/h.",
+    "basics": "fsmSpeed",
+    "numeric": {
+      "answers": [
+        "82"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-025",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Calculating with large numbers",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A town has a population of 184,250. A new estate will add 3,450 homes, with an average of 2.4 people in each home. What will the new population be? Type the number only.",
+    "explanation": "3,450 × 2.4 = 8,280 new residents. 184,250 + 8,280 = 192,530.",
+    "numeric": {
+      "answers": [
+        "192530"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-026",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Ratio",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "In a youth club the ratio of boys to girls is 5 : 7. There are 18 more girls than boys. How many young people are in the club altogether? Type the number only.",
+    "explanation": "The difference is 7 − 5 = 2 parts, and that is 18 people, so 1 part is 9. Altogether is 5 + 7 = 12 parts: 12 × 9 = 108.",
+    "basics": "fsmRatio",
+    "numeric": {
+      "answers": [
+        "108"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-027",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Speed",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Fiona drives 135 miles at an average speed of 60 mph. She leaves at 2:40pm. What time does she arrive?",
+    "explanation": "Time = 135 ÷ 60 = 2.25 hours, which is 2 hours 15 minutes (0.25 of an hour is 15 minutes). 2:40pm + 2 h 15 min = 4:55pm. 5:05pm reads 2.25 hours as 2 h 25 min.",
+    "basics": "fsmSpeed",
+    "options": [
+      "5:05pm",
+      "4:55pm",
+      "4:45pm",
+      "5:15pm"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-028",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Probability",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A raffle sells 400 tickets. Jamie buys 12 of them. What is the probability that Jamie wins first prize, as a percentage? Type the number only.",
+    "explanation": "12/400 = 0.03 = 3%.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-029",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions, decimals and percentages",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is the greatest?",
+    "explanation": "Change them all to decimals: 5/8 = 0.625, 0.6, 61% = 0.61 and 0.615. 0.625 is the greatest.",
+    "basics": "fsmFdp",
+    "options": [
+      "0.6",
+      "61%",
+      "5/8",
+      "0.615"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-030",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Scale drawings",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A walking map has a scale of 1 : 25,000. Two farms are 6.4 cm apart on the map. How far apart are they in real life, in kilometres? Type the number only.",
+    "explanation": "6.4 × 25,000 = 160,000 cm. 100 cm = 1 m, so that is 1,600 m, and 1,000 m = 1 km, so 1.6 km.",
+    "basics": "fsmScale",
+    "numeric": {
+      "answers": [
+        "1.6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-031",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Decimals",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Diesel costs £1.459 per litre. How much do 42.5 litres cost? Give your answer in pounds to the nearest penny. Type the number only.",
+    "explanation": "1.459 × 42.5 = 62.0075. To the nearest penny (2 decimal places) that is £62.01.",
+    "numeric": {
+      "answers": [
+        "62.01"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-032",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In a village of 1,240 adults, 3/5 voted in a local election. 3/8 of those who voted chose the Green candidate. How many people voted for the Green candidate? Type the number only.",
+    "explanation": "3/5 of 1,240 = 744 voted. 3/8 of 744 = 279.",
+    "basics": "fsmFdp",
+    "numeric": {
+      "answers": [
+        "279"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-033",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Angles in shapes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Patio tiles are regular hexagons. What is the size of each interior angle of a regular hexagon?",
+    "explanation": "A hexagon splits into 4 triangles, so its angles add up to 4 × 180 = 720°. 720 ÷ 6 = 120°. 108° is a pentagon and 135° is an octagon.",
+    "options": [
+      "60°",
+      "108°",
+      "120°",
+      "135°"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-034",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Scatter diagrams",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A scatter diagram shows engine size (litres) against fuel economy (miles per gallon) for some cars. The line of best fit passes through (1.0, 60) and (3.0, 30). Use the line to estimate the fuel economy of a car with a 2.0 litre engine, in miles per gallon. Type the number only.",
+    "explanation": "2.0 litres is halfway between 1.0 and 3.0, so the estimate is halfway between 60 and 30: 45 mpg.",
+    "basics": "fsmScatter",
+    "numeric": {
+      "answers": [
+        "45"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-035",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Currency conversion",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The exchange rate is £1 = €1.14. How many euros do you get for £450? Type the number only.",
+    "explanation": "Pounds to euros: multiply by the rate. 450 × 1.14 = €513.",
+    "basics": "fsmRatio",
+    "numeric": {
+      "answers": [
+        "513"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-036",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Metric units",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "An electrician needs 3,750 cm of cable. The cable is sold in 25 m reels. How many reels does she need to buy? Type the number only.",
+    "explanation": "3,750 cm = 37.5 m (divide by 100). One reel is 25 m, so she needs 2 reels; one reel would be 12.5 m short.",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-037",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Order of operations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Work out (4.2 + 1.8)² ÷ (3² − 5)",
+    "explanation": "Brackets first: 4.2 + 1.8 = 6 and 3² − 5 = 9 − 5 = 4. Then 6² = 36 and 36 ÷ 4 = 9. On a calculator, type the brackets in or it will divide too early.",
+    "basics": "fsmOrderOps",
+    "options": [
+      "5.01",
+      "36",
+      "−1",
+      "9"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-038",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Median",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "30 people were asked how many pets they have.\n\n| Number of pets | Number of people |\n|---|---|\n| 0 | 9 |\n| 1 | 11 |\n| 2 | 6 |\n| 3 | 4 |\n\nWhat is the median number of pets?",
+    "explanation": "With 30 people, the median is between the 15th and 16th. The first 9 have 0 pets and the next 11 (10th to 20th) have 1, so both are 1. 7.5 is the median of the frequencies, which is not what is asked.",
+    "basics": "fsmAverages",
+    "options": [
+      "1.5",
+      "7.5",
+      "1",
+      "11"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-039",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Percentage of an amount",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A flat's council tax is £1,936 a year. A person living alone gets a 25% discount. The bill is paid in 10 equal monthly instalments. How much is each instalment, in pounds? Type the number only.",
+    "explanation": "With the discount she pays 75%: 1,936 × 0.75 = £1,452. Divided into 10 instalments: £145.20.",
+    "basics": "fsmPercentOf",
+    "numeric": {
+      "answers": [
+        "145.20"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-T2-040",
+    "section": "b",
+    "test": 2,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Plans and elevations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A garden shed's front elevation is a rectangle with a triangle on top, making a pentagon. Its side elevation and its plan view are both rectangles. Which 3-D shape is it?",
+    "explanation": "The same pentagon runs all the way along the shed, which makes it a prism with a pentagon cross-section. A cuboid's front would be a plain rectangle, and a triangular prism's front would be just a triangle.",
+    "options": [
+      "A square-based pyramid",
+      "A cuboid",
+      "A triangular prism",
+      "A pentagonal prism"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-001",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Negative numbers",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The lowest temperature one night was −7°C. The highest temperature the next day was 12°C. What is the difference between the two temperatures, in degrees? Type the number only.",
+    "explanation": "From −7 up to 0 is 7 degrees, and from 0 up to 12 is 12 more: 7 + 12 = 19 degrees.",
+    "basics": "fsmNegatives",
+    "numeric": {
+      "answers": [
+        "19"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-002",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions, decimals and percentages",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Write 0.45 as a fraction in its simplest form.",
+    "explanation": "0.45 = 45/100. Divide top and bottom by 5: 9/20. 45/10 would be 4.5.",
+    "basics": "fsmFdp",
+    "options": [
+      "45/10",
+      "4/5",
+      "1/45",
+      "9/20"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-003",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Area",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A floor measures 5.2 m by 3.5 m. Carpet costs £18.99 per m². How much does it cost to carpet the floor, in pounds to the nearest penny? Type the number only.",
+    "explanation": "Area = 5.2 × 3.5 = 18.2 m². 18.2 × £18.99 = 345.618, which is £345.62.",
+    "basics": "fsmArea",
+    "numeric": {
+      "answers": [
+        "345.62"
+      ],
+      "tolerance": 0.011
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-004",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Mean",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Hannah's phone bills for five months were £24, £31, £27, £36 and £22. What was the mean monthly bill, in pounds? Type the number only.",
+    "explanation": "Add them: 24 + 31 + 27 + 36 + 22 = 140. Divide by 5: £28.",
+    "basics": "fsmAverages",
+    "numeric": {
+      "answers": [
+        "28"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-005",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Negative numbers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A diver is 14 m below the surface (−14 m). She rises 5 m and then goes down 9 m. Where is she now?",
+    "explanation": "−14 + 5 = −9, then −9 − 9 = −18 m. −10 m comes from rising 9 m and going down 5 m, the wrong way round.",
+    "basics": "fsmNegatives",
+    "options": [
+      "−18 m",
+      "−10 m",
+      "0 m",
+      "−28 m"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-006",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions, decimals and percentages",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Write 7/20 as a percentage. Type the number only.",
+    "explanation": "Multiply top and bottom by 5 to get 35/100, which is 35%.",
+    "basics": "fsmFdp",
+    "numeric": {
+      "answers": [
+        "35"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-007",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Area problem",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A wall is 4.8 m wide and 2.4 m high, with a window 1.2 m by 1 m. Paint covers 12 m² per litre and the wall needs two coats. Paint is sold in 1-litre tins. How many tins are needed? Type the number only.",
+    "explanation": "Wall: 4.8 × 2.4 = 11.52 m². Take off the window: 10.32 m². Two coats: 20.64 m². 20.64 ÷ 12 = 1.72 litres, so 2 tins.",
+    "basics": "fsmArea",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-008",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Mean",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The mean of four numbers is 13. Three of the numbers are 11, 16 and 8. What is the fourth number? Type the number only.",
+    "explanation": "Four numbers with a mean of 13 add up to 4 × 13 = 52. 11 + 16 + 8 = 35, so the fourth is 52 − 35 = 17.",
+    "basics": "fsmAverages",
+    "numeric": {
+      "answers": [
+        "17"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-009",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Negative numbers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which list is in order from lowest to highest?",
+    "explanation": "The further below zero, the lower the number, so −8 is lower than −3. −3, −8, 0, 2 puts −3 first, but −3 is the higher of the two.",
+    "basics": "fsmNegatives",
+    "options": [
+      "−3, −8, 0, 2",
+      "−8, −3, 0, 2",
+      "0, −3, −8, 2",
+      "2, 0, −3, −8"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-010",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions, decimals and percentages",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these is not equal to 3/4?",
+    "explanation": "3/4 = 0.75 = 75% = 6/8. 0.34 just uses the digits 3 and 4, but it is less than half.",
+    "basics": "fsmFdp",
+    "options": [
+      "0.34",
+      "0.75",
+      "75%",
+      "6/8"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-011",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Circumference",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A round table has a diameter of 1.2 m. Ribbon is to go once round its edge. How much ribbon is needed, in metres to 2 decimal places? Type the number only.",
+    "explanation": "Circumference = π × diameter = π × 1.2 = 3.7699, so 3.77 m. π × 1.2² would be the area of a circle of radius 1.2 m.",
+    "basics": "fsmArea",
+    "numeric": {
+      "answers": [
+        "3.77"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-012",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Median",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Find the median of: 23, 17, 31, 26, 19, 28 Type the number only.",
+    "explanation": "In order: 17, 19, 23, 26, 28, 31. There are two middle values, 23 and 26. Halfway between them is 24.5.",
+    "basics": "fsmAverages",
+    "numeric": {
+      "answers": [
+        "24.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-013",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Place value",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these numbers is the largest?",
+    "explanation": "2.3 million is 2,300,000, which is 500 less than 2,300,500. 2,030,000 and 2.03 million are both about 270,000 smaller.",
+    "options": [
+      "2.3 million",
+      "2,030,000",
+      "2,300,500",
+      "2.03 million"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-014",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Work out 1 2/3 + 3/4",
+    "explanation": "Use twelfths: 2/3 = 8/12 and 3/4 = 9/12. 8/12 + 9/12 = 17/12 = 1 5/12. Add the whole 1: 2 5/12. 1 5/7 adds the tops and the bottoms, which never works.",
+    "basics": "fsmFdp",
+    "options": [
+      "1 5/7",
+      "2 5/12",
+      "2 1/12",
+      "1 11/12"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-015",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Area of a circle",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A pizza shop sells one 30 cm pizza for the same price as two 20 cm pizzas (the sizes are diameters). Which gives more pizza, and by about how much?",
+    "explanation": "30 cm pizza: π × 15² = 707 cm². Two 20 cm pizzas: 2 × π × 10² = 628 cm². The single pizza is about 79 cm² bigger. Adding diameters (40 cm against 30 cm) misleads.",
+    "basics": "fsmArea",
+    "options": [
+      "One 30 cm pizza, by about 79 cm²",
+      "Two 20 cm pizzas, by about 79 cm²",
+      "Two 20 cm pizzas, by about 10 cm²",
+      "They are the same size"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-016",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Mode",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the mode of: 3, 7, 4, 7, 2, 9, 4, 7",
+    "explanation": "The mode is the value that appears most often. 7 appears three times; 4 appears only twice.",
+    "basics": "fsmAverages",
+    "options": [
+      "4",
+      "5.375",
+      "9",
+      "7"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-017",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Place value",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Write four million, sixty thousand and five in figures.",
+    "explanation": "Four million is 4,000,000. Sixty thousand is 60,000. Five is 5. Together: 4,060,005. 4,600,005 has six hundred thousand, not sixty thousand.",
+    "options": [
+      "4,600,005",
+      "4,060,050",
+      "4,006,005",
+      "4,060,005"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-018",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shelf is 3 1/2 m long. Jay cuts off 1 3/4 m. How long is the piece that is left?",
+    "explanation": "3 1/2 = 3 2/4. Take away 1 3/4: 3 2/4 − 1 3/4 = 2 6/4 − 1 3/4 = 1 3/4 m.",
+    "basics": "fsmFdp",
+    "options": [
+      "2 1/4 m",
+      "1 1/4 m",
+      "1 3/4 m",
+      "2 3/4 m"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-019",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Area of a triangle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A triangular sail has a base of 2.4 m and a height of 5 m. What is its area?",
+    "explanation": "½ × 2.4 × 5 = 6 m². 12 m² forgets to halve, and 7.4 adds the lengths.",
+    "basics": "fsmArea",
+    "options": [
+      "12 m²",
+      "6 m²",
+      "7.4 m²",
+      "3 m²"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-020",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Range",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The lowest overnight temperatures one week were −3°C, 2°C, −6°C, 1°C and 4°C. What is the range, in degrees? Type the number only.",
+    "explanation": "Range = highest − lowest = 4 − (−6) = 10 degrees.",
+    "basics": "fsmAverages",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-021",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Calculating with large numbers",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A wind farm produces 1,250,000 kWh of electricity a month. An average home uses 225 kWh a month. How many homes can it fully supply? Type the number only.",
+    "explanation": "1,250,000 ÷ 225 = 5,555.6. Only complete homes count, so round down to 5,555.",
+    "numeric": {
+      "answers": [
+        "5555"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-022",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "One number as a fraction of another",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What fraction of 2 hours is 45 minutes? Give it in its simplest form.",
+    "explanation": "Use the same units: 2 hours is 120 minutes. 45/120 simplifies to 3/8 (divide by 15). 3/4 is 45 minutes as a fraction of 1 hour.",
+    "basics": "fsmFdp",
+    "options": [
+      "9/20",
+      "3/4",
+      "2/5",
+      "3/8"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-023",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Volume of a cylinder",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A tin of beans is a cylinder with radius 3.7 cm and height 11 cm. What is its volume, in cm³ to the nearest whole number? Type the number only.",
+    "explanation": "Volume = π × r² × h = π × 3.7² × 11 = 473.1, so 473 cm³.",
+    "basics": "fsmVolume",
+    "numeric": {
+      "answers": [
+        "473"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-024",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Comparing data sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two machines fill bags of flour that should weigh 500 g. Machine A: median 502 g, range 4 g. Machine B: median 500 g, range 15 g. Which machine is better, and why?",
+    "explanation": "Both medians are close to 500 g, but B's range of 15 g means some bags are far from the target. A's bags are all within a few grams, which matters more.",
+    "basics": "fsmAverages",
+    "options": [
+      "A, because its weights vary much less",
+      "B, because its median is exactly 500 g",
+      "A, because its median is higher",
+      "B, because its range is larger"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-025",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Estimation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Priya uses a calculator to work out 28.7 × 41.2 and gets 11,824.44. Which estimate shows that she has made a mistake?",
+    "explanation": "30 × 40 = 1,200, so the true answer (1,182.44) is about ten times smaller than hers; she probably slipped a decimal point. 29 × 41 = 1,189 is close to the truth, not to her 11,824, so it does not back her answer up.",
+    "basics": "fsmEstimate",
+    "options": [
+      "30 × 40 = 1,200, so it should be about 1,200",
+      "30 × 40 = 12,000, so her answer is about right",
+      "29 × 41 = 1,189, so her answer is about right",
+      "28 × 41 = 11,480, so her answer is about right"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-026",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Percentage of an amount",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Work out 17.5% of £360. Give your answer in pounds. Type the number only.",
+    "explanation": "0.175 × 360 = 63, so £63. Or: 10% = £36, 5% = £18, 2.5% = £9, and £36 + £18 + £9 = £63.",
+    "basics": "fsmPercentOf",
+    "numeric": {
+      "answers": [
+        "63"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-027",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Volume and capacity",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A fish tank is 80 cm long, 35 cm wide and 40 cm high. How many litres does it hold when full? (1 litre = 1,000 cm³) Type the number only.",
+    "explanation": "80 × 35 × 40 = 112,000 cm³. 112,000 ÷ 1,000 = 112 litres.",
+    "basics": "fsmVolume",
+    "numeric": {
+      "answers": [
+        "112"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-028",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Mean from grouped data",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "This table shows how late 20 buses were.\n\n| Minutes late | Number of buses |\n|---|---|\n| 0 to 4 | 10 |\n| 5 to 9 | 6 |\n| 10 to 14 | 3 |\n| 15 to 19 | 1 |\n\nEstimate the mean number of minutes late. Type the number only.",
+    "explanation": "Midpoints 2, 7, 12, 17. 2 × 10 + 7 × 6 + 12 × 3 + 17 × 1 = 20 + 42 + 36 + 17 = 115. 115 ÷ 20 = 5.75 minutes.",
+    "basics": "fsmGroupedMean",
+    "numeric": {
+      "answers": [
+        "5.75"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-029",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Formulae",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A taxi fare in pounds is worked out with F = 3.20 + 1.85m, where m is the number of miles. What is the fare for 7.4 miles? Type the number only.",
+    "explanation": "1.85 × 7.4 = 13.69. Then 3.20 + 13.69 = £16.89.",
+    "basics": "fsmFormula",
+    "numeric": {
+      "answers": [
+        "16.89"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-030",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "One amount as a percentage of another",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A netball team won 23 of its 40 matches. What percentage of its matches did it win? Type the number only.",
+    "explanation": "23 ÷ 40 = 0.575 = 57.5%.",
+    "basics": "fsmPercentOf",
+    "numeric": {
+      "answers": [
+        "57.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-031",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Volume and capacity",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A garden pond holds 2.4 m³ of water. A hose fills it at 15 litres a minute. How long will it take to fill? (1 m³ = 1,000 litres)",
+    "explanation": "2.4 m³ = 2,400 litres. 2,400 ÷ 15 = 160 minutes = 2 hours 40 minutes. 2 hours 24 minutes reads 160 minutes as 2.4 hours.",
+    "basics": "fsmVolume",
+    "options": [
+      "2 hours 24 minutes",
+      "16 hours",
+      "2 hours 40 minutes",
+      "1 hour 36 minutes"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-032",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Mean from grouped data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is a mean worked out from a grouped frequency table only an estimate?",
+    "explanation": "The table says how many values are in each group, not what they are. Using the midpoint assumes they sit in the middle on average, so the answer is an estimate.",
+    "basics": "fsmGroupedMean",
+    "options": [
+      "The groups are not all the same size",
+      "The exact values in each group are not known",
+      "The total frequency might be wrong",
+      "Midpoints are always bigger than the real values"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-033",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Formulae",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The same taxi uses F = 3.20 + 1.85m, where F is the fare in pounds and m the number of miles. Jo's fare was £21.70. How many miles did she travel? Type the number only.",
+    "explanation": "Work backwards: take off the fixed £3.20 to get 18.50, then divide by the price per mile: 18.50 ÷ 1.85 = 10 miles.",
+    "basics": "fsmFormula",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-034",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Percentage change",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A gym's membership rises from 240 to 282. What is the percentage increase? Type the number only.",
+    "explanation": "The increase is 42. 42 ÷ 240 = 0.175 = 17.5%.",
+    "basics": "fsmPercentChange",
+    "numeric": {
+      "answers": [
+        "17.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-035",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Surface area",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A closed cylinder has a radius of 5 cm and a height of 12 cm. Its surface area is 2πr² + 2πrh. What is its surface area, in cm² to the nearest whole number? Type the number only.",
+    "explanation": "2 × π × 5² = 157.08 for the two ends, and 2 × π × 5 × 12 = 376.99 for the curved side. Total 534.07, so 534 cm².",
+    "basics": "fsmVolume",
+    "numeric": {
+      "answers": [
+        "534"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-036",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Modal class",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "This table shows how late 20 buses were.\n\n| Minutes late | Number of buses |\n|---|---|\n| 0 to 4 | 10 |\n| 5 to 9 | 6 |\n| 10 to 14 | 3 |\n| 15 to 19 | 1 |\n\nWhich is the modal class?",
+    "explanation": "The modal class is the group with the highest frequency: 10 buses were 0 to 4 minutes late.",
+    "basics": "fsmGroupedMean",
+    "options": [
+      "5 to 9 minutes",
+      "10 to 14 minutes",
+      "0 to 4 minutes",
+      "15 to 19 minutes"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-037",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Formulae",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A recipe says: roast lamb for 20 minutes per 500 g, plus an extra 20 minutes. How long should a 2.25 kg joint be roasted?",
+    "explanation": "2.25 kg = 2,250 g, which is 4.5 lots of 500 g. 4.5 × 20 = 90 minutes, plus 20 = 110 minutes, or 1 hour 50 minutes.",
+    "basics": "fsmFormula",
+    "options": [
+      "1 hour 30 minutes",
+      "1 hour 50 minutes",
+      "1 hour 10 minutes",
+      "2 hours 10 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-038",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Percentage change",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Gareth's weight goes down from 92 kg to 85.1 kg. What is the percentage decrease? Type the number only.",
+    "explanation": "The decrease is 6.9 kg. 6.9 ÷ 92 = 0.075 = 7.5%. Always divide by the starting value.",
+    "basics": "fsmPercentChange",
+    "numeric": {
+      "answers": [
+        "7.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-039",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Scale drawings",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A garden is 14 m long. It is drawn on a plan with a scale of 1 : 200. How long is it on the plan, in centimetres? Type the number only.",
+    "explanation": "14 m = 1,400 cm. Divide by 200: 1,400 ÷ 200 = 7 cm. Real to drawing means dividing by the scale.",
+    "basics": "fsmScale",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-040",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Mean from a frequency table",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A football team's goals in 20 matches:\n\n| Goals scored | Number of matches |\n|---|---|\n| 0 | 4 |\n| 1 | 7 |\n| 2 | 6 |\n| 3 | 3 |\n\nWhat is the mean number of goals per match? Type the number only.",
+    "explanation": "Total goals: 0 × 4 + 1 × 7 + 2 × 6 + 3 × 3 = 0 + 7 + 12 + 9 = 28. 28 ÷ 20 = 1.4 goals per match.",
+    "basics": "fsmGroupedMean",
+    "numeric": {
+      "answers": [
+        "1.4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-041",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Order of operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Work out 5 + 3 × (8 − 2)² ÷ 4",
+    "explanation": "Brackets: 8 − 2 = 6. Index: 6² = 36. Then 3 × 36 = 108 and 108 ÷ 4 = 27. Add last: 5 + 27 = 32.",
+    "basics": "fsmOrderOps",
+    "options": [
+      "72",
+      "9.5",
+      "32",
+      "50"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-042",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Reverse percentages",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A pair of boots costs £42 after 30% has been taken off. What was the original price, in pounds? Type the number only.",
+    "explanation": "After 30% off, £42 is 70% of the original. 42 ÷ 0.7 = £60. Check: 30% of £60 is £18, and £60 − £18 = £42.",
+    "basics": "fsmPercentChange",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-043",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Scale drawings",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A model car is made to a scale of 1 : 43. The real car is 4.3 m long. How long is the model, in centimetres? Type the number only.",
+    "explanation": "4.3 m = 430 cm. 430 ÷ 43 = 10 cm.",
+    "basics": "fsmScale",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-044",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Two-way tables",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "This two-way table shows how pupils travel to school. Some cells are blank.\n\n|  | Walk | Bus | Car | Total |\n|---|---|---|---|---|\n| Year 7 | 25 |  | 10 | 60 |\n| Year 8 | 18 | 30 |  | 55 |\n| Total |  |  |  | 115 |\n\nHow many Year 8 pupils travel by car? Type the number only.",
+    "explanation": "The Year 8 row adds up to 55. 18 walk and 30 take the bus, so 55 − 48 = 7 come by car.",
+    "basics": "fsmProbability",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-045",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Indices",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is 2⁵?",
+    "explanation": "2⁵ means five 2s multiplied: 2 × 2 × 2 × 2 × 2 = 32. 10 is 2 × 5, which is not the same thing.",
+    "basics": "fsmOrderOps",
+    "options": [
+      "10",
+      "25",
+      "7",
+      "32"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-046",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "VAT",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A price including VAT at 20% is £150. What was the price before VAT was added?",
+    "explanation": "£150 is 120% of the price before VAT. 150 ÷ 1.2 = £125. Taking 20% off £150 gives £120, but the 20% was of the smaller price.",
+    "basics": "fsmPercentChange",
+    "options": [
+      "£125",
+      "£120",
+      "£130",
+      "£180"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-047",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Speed",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A cyclist rides 15 km in 40 minutes. What is her average speed in km/h? Type the number only.",
+    "explanation": "40 minutes is 2/3 of an hour. 15 km in 40 minutes is 7.5 km every 20 minutes, and there are three lots of 20 minutes in an hour: 3 × 7.5 = 22.5 km/h.",
+    "basics": "fsmSpeed",
+    "numeric": {
+      "answers": [
+        "22.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-048",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Two-way tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "This two-way table shows how pupils travel to school.\n\n|  | Walk | Bus | Car | Total |\n|---|---|---|---|---|\n| Year 7 | 25 | 25 | 10 | 60 |\n| Year 8 | 18 | 30 | 7 | 55 |\n| Total | 43 | 55 | 17 | 115 |\n\nOne pupil is chosen at random from all 115. What is the probability that the pupil walks?",
+    "explanation": "43 of the 115 pupils walk, so the probability is 43/115. 25/60 is the chance only among Year 7.",
+    "basics": "fsmProbability",
+    "options": [
+      "25/60",
+      "18/55",
+      "43/72",
+      "43/115"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-049",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Formulae",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The number of bacteria in a sample doubles every hour. The formula N = 300 × 2ʰ gives the number after h hours. How many bacteria are there after 6 hours? Type the number only.",
+    "explanation": "2⁶ = 64, and 300 × 64 = 19,200. Doubling 300 six times (600, 1,200, 2,400, 4,800, 9,600, 19,200) gives the same.",
+    "basics": "fsmFormula",
+    "numeric": {
+      "answers": [
+        "19200"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-050",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Compound interest",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "£800 is invested at 2.5% compound interest a year. How much interest has it earned after 3 years? Give your answer in pounds to the nearest penny. Type the number only.",
+    "explanation": "800 × 1.025³ = 861.5125, so £861.51 in the account. Take off the £800 invested: £61.51 interest.",
+    "basics": "fsmPercentOf",
+    "numeric": {
+      "answers": [
+        "61.51"
+      ],
+      "tolerance": 0.011
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-051",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Speed",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A lorry travels at an average speed of 52 mph for 2 hours 15 minutes. How far does it travel, in miles? Type the number only.",
+    "explanation": "2 hours 15 minutes = 2.25 hours. Distance = speed × time = 52 × 2.25 = 117 miles.",
+    "basics": "fsmSpeed",
+    "numeric": {
+      "answers": [
+        "117"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-052",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Two-way tables",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "This two-way table shows how pupils travel to school.\n\n|  | Walk | Bus | Car | Total |\n|---|---|---|---|---|\n| Year 7 | 25 | 25 | 10 | 60 |\n| Year 8 | 18 | 30 | 7 | 55 |\n| Total | 43 | 55 | 17 | 115 |\n\nA Year 7 pupil is chosen at random. What is the probability that they come by bus?",
+    "explanation": "Only Year 7 counts now: 25 of the 60 come by bus. 25/60 = 5/12. 5/23 is 25 out of all 115 pupils, and 5/11 is 25 out of all 55 bus users.",
+    "basics": "fsmProbability",
+    "options": [
+      "5/12",
+      "5/23",
+      "5/11",
+      "1/4"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-053",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Decimals",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A delivery has three parcels weighing 2.375 kg, 0.85 kg and 1.4 kg. What is the total weight in kg? Type the number only.",
+    "explanation": "Line up the decimal points: 2.375 + 0.850 + 1.400 = 4.625 kg.",
+    "numeric": {
+      "answers": [
+        "4.625"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-054",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Simple interest",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "£3,000 is saved at 4% simple interest a year. How much interest does it earn in 5 years?",
+    "explanation": "Simple interest is the same each year: 4% of £3,000 = £120, and 5 × £120 = £600. £3,600 is the total in the account, not the interest.",
+    "basics": "fsmPercentOf",
+    "options": [
+      "£649.96",
+      "£600",
+      "£120",
+      "£3,600"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-055",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Density",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Gold has a density of 19.3 g/cm³. A gold ring has a volume of 2.5 cm³. What is its mass in grams? Type the number only.",
+    "explanation": "Mass = density × volume = 19.3 × 2.5 = 48.25 g.",
+    "basics": "fsmSpeed",
+    "numeric": {
+      "answers": [
+        "48.25"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-056",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Combined events",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two fair coins are flipped. What is the probability of getting one head and one tail?",
+    "explanation": "The outcomes are HH, HT, TH and TT. Two of the four (HT and TH) are one of each, so 2/4 = 1/2. 1/3 wrongly treats 'one of each' as a single outcome.",
+    "basics": "fsmProbability",
+    "options": [
+      "1/3",
+      "1/2",
+      "1/4",
+      "2/3"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-057",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Ordering decimals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these numbers is closest to 0.4?",
+    "explanation": "0.409 is 0.009 away from 0.4. 0.388 is 0.012 away, 0.44 is 0.04 away and 0.35 is 0.05 away.",
+    "options": [
+      "0.409",
+      "0.35",
+      "0.44",
+      "0.388"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-058",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Discounts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A £150 jacket is reduced by 20%, then by a further 10% of the sale price. What is the final price?",
+    "explanation": "150 × 0.8 = 120, then 120 × 0.9 = £108. It is not 30% off (£105) because the 10% is taken from £120, not £150.",
+    "basics": "fsmPercentChange",
+    "options": [
+      "£105",
+      "£120",
+      "£108",
+      "£135"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-059",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Rates of pay",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A job pays £27,300 a year for a 37.5-hour week, 52 weeks a year. What is the hourly rate, in pounds? Type the number only.",
+    "explanation": "Hours a year: 37.5 × 52 = 1,950. £27,300 ÷ 1,950 = £14.00 an hour.",
+    "basics": "fsmSpeed",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-060",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Combined events",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A fair six-sided dice is rolled twice. What is the probability of getting two sixes?",
+    "explanation": "1/6 × 1/6 = 1/36. A table of both rolls has 36 squares and only one is 6 and 6.",
+    "basics": "fsmProbability",
+    "options": [
+      "1/12",
+      "1/6",
+      "1/36",
+      "1/3"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-061",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Decimals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Work out 0.125 × 0.4",
+    "explanation": "125 × 4 = 500. The question has 3 + 1 = 4 decimal places, so 0.0500, which is 0.05.",
+    "options": [
+      "0.5",
+      "0.05",
+      "0.005",
+      "0.0125"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-062",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Budgeting",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Nadia's monthly income is £2,140. Each month she spends £780 on rent, £320 on food, £145 on travel, £265 on bills and £410 on other things. How much can she save each month, in pounds? Type the number only.",
+    "explanation": "Her spending adds up to £1,920. £2,140 − £1,920 = £220.",
+    "numeric": {
+      "answers": [
+        "220"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-063",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Rates of pay",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Job A pays £13.20 an hour for 35 hours a week. Job B pays £475 a week. Which pays more each week, and by how much?",
+    "explanation": "Job A: 13.20 × 35 = £462 a week. Job B pays £475, which is £13 more.",
+    "basics": "fsmSpeed",
+    "options": [
+      "Job A, by £13",
+      "Job B, by £475",
+      "Job A, by £1.80",
+      "Job B, by £13"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-064",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Combined events",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A spinner has four colours: red, blue, green and yellow. It is spun once and a coin is flipped once. How many different outcomes are there? Type the number only.",
+    "explanation": "Each of the 4 colours can go with heads or tails: 4 × 2 = 8 outcomes.",
+    "basics": "fsmProbability",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-065",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Decimals",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A 2.4 m plank is cut into pieces 0.15 m long. How many pieces does it make? Type the number only.",
+    "explanation": "2.4 ÷ 0.15 = 16. Multiplying both by 100 gives 240 ÷ 15, which is easier: 16.",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-066",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Ratio",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Write the ratio 36 : 84 in its simplest form.",
+    "explanation": "Both numbers divide by 12: 36 ÷ 12 = 3 and 84 ÷ 12 = 7. 9 : 21 is simpler but can still be divided by 3.",
+    "basics": "fsmRatio",
+    "options": [
+      "9 : 21",
+      "7 : 3",
+      "1 : 2",
+      "3 : 7"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-067",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Metric and imperial conversion",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A TV screen measures 55 inches. Use 1 inch = 2.54 cm. How many centimetres is that, to the nearest centimetre? Type the number only.",
+    "explanation": "55 × 2.54 = 139.7 cm, which is 140 cm to the nearest centimetre.",
+    "numeric": {
+      "answers": [
+        "140"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-068",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Probability as fractions, decimals and percentages",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The probability that a game piece lands on a star is 3/8. What is this as a decimal?",
+    "explanation": "3 ÷ 8 = 0.375. 0.38 is rounded, and a probability can never be more than 1, so 3.8 is impossible.",
+    "basics": "fsmProbability",
+    "options": [
+      "0.38",
+      "3.8",
+      "0.0375",
+      "0.375"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-069",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Rounding",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Round 3.4762 to 2 decimal places.",
+    "explanation": "The second decimal place is 7 and the next digit is 6, so round the 7 up to 8: 3.48. 3.47 cuts the digits off without rounding.",
+    "basics": "fsmEstimate",
+    "options": [
+      "3.47",
+      "3.5",
+      "3.48",
+      "3.476"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-070",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Ratio",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Two friends put £3 and £5 into a lottery syndicate and agree to share any winnings in the same ratio. They win £28,000. How much does the friend who paid £5 get, in pounds? Type the number only.",
+    "explanation": "3 : 5 is 8 parts. One part is £28,000 ÷ 8 = £3,500. Five parts: £17,500.",
+    "basics": "fsmRatio",
+    "numeric": {
+      "answers": [
+        "17500"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-071",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Metric and imperial conversion",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A car does 52 miles per gallon. Use 1 gallon ≈ 4.55 litres. How many litres of fuel does it use on a 312-mile journey? Type the number only.",
+    "explanation": "312 ÷ 52 = 6 gallons. 6 × 4.55 = 27.3 litres.",
+    "numeric": {
+      "answers": [
+        "27.3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-072",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Probability as fractions, decimals and percentages",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The probability that a train is late is 0.07. What is this as a percentage? Type the number only.",
+    "explanation": "Multiply by 100: 0.07 × 100 = 7%.",
+    "basics": "fsmProbability",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-073",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Rounding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Round 0.04867 to 2 significant figures.",
+    "explanation": "The first significant figure is the 4 (zeros at the front do not count). The next digit is 8, and the one after it is 6, so 8 rounds up to 9: 0.049.",
+    "basics": "fsmEstimate",
+    "options": [
+      "0.05",
+      "0.048",
+      "0.0487",
+      "0.049"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-074",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Ratio",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Orange squash is mixed with water in the ratio 1 : 6. How much squash is in 1.4 litres of the drink? Give your answer in millilitres. Type the number only.",
+    "explanation": "1 + 6 = 7 parts. 1.4 litres = 1,400 ml, and 1,400 ÷ 7 = 200 ml of squash.",
+    "basics": "fsmRatio",
+    "numeric": {
+      "answers": [
+        "200"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-075",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Time",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A night shift starts at 22:45 and ends at 07:15 the next morning. How long is the shift?",
+    "explanation": "22:45 to midnight is 1 hour 15 minutes. Midnight to 07:15 is 7 hours 15 minutes. Total: 8 hours 30 minutes. 15 hours 30 minutes is 22:45 − 07:15, which runs the clock backwards.",
+    "options": [
+      "8 hours 30 minutes",
+      "9 hours 30 minutes",
+      "15 hours 30 minutes",
+      "7 hours 30 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-076",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Probability",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The probability that Owen wins a game is 0.18. What is the probability that he does not win? Type the number only.",
+    "explanation": "The probabilities of something happening and not happening add up to 1. 1 − 0.18 = 0.82.",
+    "basics": "fsmProbability",
+    "numeric": {
+      "answers": [
+        "0.82"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-077",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Calculating with large numbers",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A company pays each of its 38 staff £1,850 a month. What is its total wage bill for a year, in pounds? Type the number only.",
+    "explanation": "38 × 1,850 = 70,300 a month. 70,300 × 12 = £843,600 a year.",
+    "numeric": {
+      "answers": [
+        "843600"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-078",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Direct proportion",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "8 m of curtain fabric costs £46. How much would 13 m cost, in pounds? Type the number only.",
+    "explanation": "1 m costs £46 ÷ 8 = £5.75. 13 × £5.75 = £74.75.",
+    "basics": "fsmRatio",
+    "numeric": {
+      "answers": [
+        "74.75"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-079",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Metric units",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many square millimetres are there in 1 square centimetre?",
+    "explanation": "1 cm = 10 mm, so 1 cm² is 10 mm by 10 mm = 100 mm². 10 is right for lengths but not for areas.",
+    "basics": "fsmArea",
+    "options": [
+      "10",
+      "100",
+      "1,000",
+      "10,000"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-080",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Probability",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The probability that a seed grows is 0.85. A gardener plants 140 seeds. How many would she expect to grow? Type the number only.",
+    "explanation": "Expected number = probability × number of tries = 0.85 × 140 = 119.",
+    "basics": "fsmProbability",
+    "numeric": {
+      "answers": [
+        "119"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-081",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Estimation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Tom buys 19 tins of paint at £4.95 each. Which is the best estimate of the total cost?",
+    "explanation": "Round 19 to 20 and £4.95 to £5: 20 × £5 = £100. The exact cost is £94.05, close to the estimate.",
+    "basics": "fsmEstimate",
+    "options": [
+      "£100",
+      "£80",
+      "£120",
+      "£1,000"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-082",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Inverse proportion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A farmer has enough feed for 15 cows for 12 days. How long would the same feed last 20 cows?",
+    "explanation": "The feed is 15 × 12 = 180 cow-days. 180 ÷ 20 = 9 days. More cows means the feed runs out sooner, so 16 days must be wrong.",
+    "basics": "fsmRatio",
+    "options": [
+      "9 days",
+      "16 days",
+      "7 days",
+      "10 days"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-083",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Coordinates",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which describes how to get from the origin (0, 0) to the point (3, −2)?",
+    "explanation": "The first number is across (x): 3 right. The second is up or down (y): −2 means 2 down.",
+    "options": [
+      "3 down and 2 right",
+      "3 left and 2 up",
+      "3 right and 2 down",
+      "3 right and 2 up"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-084",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Scatter diagrams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The points on a scatter diagram are spread all over the grid with no pattern. What does this show?",
+    "explanation": "When the points show no upward or downward trend, the two things are not related: no correlation.",
+    "options": [
+      "No correlation",
+      "Positive correlation",
+      "Negative correlation",
+      "Strong correlation"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-085",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Negative numbers",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "One winter morning it was −23°C in Moscow and 4°C in London. How many degrees warmer was London? Type the number only.",
+    "explanation": "From −23 to 0 is 23 degrees, then 4 more: 23 + 4 = 27 degrees warmer.",
+    "basics": "fsmNegatives",
+    "numeric": {
+      "answers": [
+        "27"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-086",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Best buy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Kitchen roll comes in a pack of 6 for £3.30 or a pack of 9 for £4.77. Which pack is better value?",
+    "explanation": "£3.30 ÷ 6 = 55p a roll. £4.77 ÷ 9 = 53p a roll. The 9-pack is cheaper per roll.",
+    "basics": "fsmRatio",
+    "options": [
+      "The 6-pack, at 55p a roll",
+      "The 9-pack, at 53p a roll",
+      "The 9-pack, at 55p a roll",
+      "The 6-pack, at 53p a roll"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-087",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Coordinates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A square ABCD has A at (−1, 4), B at (3, 4) and C at (3, 0). Where is D?",
+    "explanation": "D is level with C (y = 0) and directly below A (x = −1), so D is (−1, 0). Each side is 4 units long, which checks it is a square.",
+    "options": [
+      "(0, −1)",
+      "(−1, −4)",
+      "(3, −1)",
+      "(−1, 0)"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-088",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Scatter diagrams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scatter diagram shows strong positive correlation between hours of sunshine and the number of sunglasses a shop sells. Which statement is true?",
+    "explanation": "Positive correlation means that as one goes up the other tends to go up. It does not prove cause, and individual days can still break the pattern.",
+    "basics": "fsmScatter",
+    "options": [
+      "Sunshine is proved to cause the sales",
+      "The two tend to rise together",
+      "Every sunny day has high sales",
+      "There is no link between them"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-089",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Formulae",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Use F = 1.8C + 32 to convert −15°C to degrees Fahrenheit.",
+    "explanation": "1.8 × −15 = −27. Then −27 + 32 = 5°F. −59°F comes from taking 32 away instead of adding it.",
+    "basics": "fsmFormula",
+    "options": [
+      "−59°F",
+      "5°F",
+      "59°F",
+      "−5°F"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-090",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Currency conversion",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "After a holiday, Ellie changes €95 back into pounds. The bank's rate is £1 = €1.18. How many pounds does she get, to the nearest penny? Type the number only.",
+    "explanation": "Euros to pounds: divide by the rate. 95 ÷ 1.18 = 80.5085, so £80.51. Multiplying would give more pounds than euros, which cannot be right when €1.18 is worth only £1.",
+    "basics": "fsmRatio",
+    "numeric": {
+      "answers": [
+        "80.51"
+      ],
+      "tolerance": 0.011
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-091",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Angles",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A ladder leans against a wall. On one side it makes an angle of 72° with the flat ground. What is the angle on the other side of the ladder, along the same straight ground? Type the number only.",
+    "explanation": "Angles on a straight line add up to 180°. 180 − 72 = 108°.",
+    "numeric": {
+      "answers": [
+        "108"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-092",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Scatter diagrams",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A line of best fit on a scatter diagram passes through (10, 22) and (30, 58). Use the line to estimate the value of y when x = 20. Type the number only.",
+    "explanation": "x = 20 is halfway between 10 and 30, so y is halfway between 22 and 58: (22 + 58) ÷ 2 = 40.",
+    "basics": "fsmScatter",
+    "numeric": {
+      "answers": [
+        "40"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-093",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Formulae",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Use C = (F − 32) ÷ 1.8 to convert 77°F to degrees Celsius. Type the number only.",
+    "explanation": "Brackets first: 77 − 32 = 45. Then 45 ÷ 1.8 = 25°C.",
+    "basics": "fsmFormula",
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-094",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Tax",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Use these figures for this question: no income tax is paid on the first £12,570 of earnings, and tax is 20% of everything earned above that. Sam earns £31,000 a year. How much income tax does he pay, in pounds? Type the number only.",
+    "explanation": "Taxable income: £31,000 − £12,570 = £18,430. 20% of £18,430 = £3,686.",
+    "numeric": {
+      "answers": [
+        "3686"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-095",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Angles",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Three of the angles in a four-sided shape are 85°, 110° and 75°. What is the fourth angle, in degrees? Type the number only.",
+    "explanation": "The angles in a quadrilateral add up to 360°. 85 + 110 + 75 = 270, and 360 − 270 = 90°.",
+    "numeric": {
+      "answers": [
+        "90"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-096",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Scatter diagrams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "On a scatter diagram, what do we call one point that lies far away from the pattern of all the others?",
+    "explanation": "A point that does not fit the pattern of the rest is an outlier. It is often left out when drawing the line of best fit.",
+    "options": [
+      "The mode",
+      "The line of best fit",
+      "An outlier",
+      "The median"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-097",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Decimals",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Electricity costs 24.5p per unit (kWh). A household uses 1,284 units in a quarter. How much does it cost, in pounds to the nearest penny? Type the number only.",
+    "explanation": "24.5p is £0.245. 1,284 × 0.245 = 314.58, so £314.58. Multiplying by 24.5 gives pence, so remember to divide by 100.",
+    "numeric": {
+      "answers": [
+        "314.58"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-098",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Percentage of an amount",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A mortgage lender wants a 15% deposit on a £185,000 house. Zara has saved £21,400. How much more does she need to save, in pounds? Type the number only.",
+    "explanation": "15% of £185,000 is £27,750. £27,750 − £21,400 = £6,350.",
+    "basics": "fsmPercentOf",
+    "numeric": {
+      "answers": [
+        "6350"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-099",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "3-D shapes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many faces, edges and vertices (corners) does a triangular prism have?",
+    "explanation": "Two triangle ends and three rectangle sides make 5 faces. Each triangle has 3 edges, plus 3 edges joining them: 9. Each triangle has 3 corners: 6. 6, 12, 8 is a cuboid.",
+    "options": [
+      "5 faces, 9 edges, 6 vertices",
+      "6 faces, 12 edges, 8 vertices",
+      "5 faces, 8 edges, 5 vertices",
+      "4 faces, 6 edges, 4 vertices"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-100",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Scatter diagrams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A line of best fit is drawn using data for people aged 20 to 50. Why is it unreliable to use it to estimate a value for someone aged 80?",
+    "explanation": "Estimating outside the range of the data (extrapolating) assumes the trend carries on, which it may not. Estimates inside the range are more reliable.",
+    "basics": "fsmScatter",
+    "options": [
+      "The line of best fit is always wrong",
+      "Older people are never included in surveys",
+      "Lines of best fit only work for middle values",
+      "The trend may not carry on past the data"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-101",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Order of operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ali wants the mean of 12 and 18. She types 12 + 18 ÷ 2 into her calculator and gets 21, which is wrong. What should she type?",
+    "explanation": "The calculator divides before it adds, so it worked out 18 ÷ 2 first. Brackets make it add first: 30 ÷ 2 = 15.",
+    "basics": "fsmOrderOps",
+    "options": [
+      "12 + (18 ÷ 2)",
+      "12 ÷ 2 + 18",
+      "(12 + 18) ÷ 2",
+      "2 ÷ (12 + 18)"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-102",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A theatre has 1,200 seats. It is 5/6 full, and 30% of the audience are under 18. How many under-18s are in the audience? Type the number only.",
+    "explanation": "5/6 of 1,200 = 1,000 people. 30% of 1,000 = 300.",
+    "basics": "fsmFdp",
+    "numeric": {
+      "answers": [
+        "300"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-103",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Plans and elevations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A cylinder stands upright on a table. What does its plan view (looking down from above) look like?",
+    "explanation": "From directly above you see only the round top, a circle. A rectangle is what you see from the front or side.",
+    "options": [
+      "A rectangle",
+      "A circle",
+      "A triangle",
+      "A square"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-104",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Comparing data sets",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Class A's test scores have a mean of 62 and a range of 30. Class B's scores have a mean of 58 and a range of 12. For each statement, choose True or False.",
+    "explanation": "A's mean (62) is higher than B's (58), so B did not do better on average. B's range (12) is smaller, so A's scores were more spread out.",
+    "basics": "fsmAverages",
+    "rows": [
+      "Class A had the higher mean",
+      "Class B had the smaller range",
+      "Class A's scores were more spread out",
+      "Class B did better on average"
+    ],
+    "columns": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-105",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Calculating with large numbers",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A school needs 1,450 exercise books. They come in packs of 25, and each pack costs £11.40. How much will the books cost, in pounds? Type the number only.",
+    "explanation": "1,450 ÷ 25 = 58 packs. 58 × £11.40 = £661.20.",
+    "numeric": {
+      "answers": [
+        "661.20"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-106",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Percentage of an amount",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Owen earns £26,500 a year. His employer offers either a 3.5% pay rise or a flat £900 a year. Which is worth more, and by how much?",
+    "explanation": "3.5% of £26,500 = £927.50. That beats £900 by £27.50.",
+    "basics": "fsmPercentOf",
+    "options": [
+      "£900, by £27.50",
+      "3.5%, by £72.50",
+      "3.5%, by £27.50",
+      "£900, by £72.50"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-107",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Plans and elevations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A box is 4 cm long, 2 cm wide and 3 cm tall. It stands on its 4 cm by 2 cm face. What are the measurements of its side elevation, looking at the 2 cm end?",
+    "explanation": "From the end you see the width (2 cm) and the height (3 cm). 4 cm by 3 cm is the front elevation and 4 cm by 2 cm is the plan.",
+    "options": [
+      "4 cm by 3 cm",
+      "4 cm by 2 cm",
+      "2 cm by 3 cm",
+      "3 cm by 3 cm"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-108",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Median",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Five runners' times in seconds were: 12.4, 11.8, 13.1, 12.0, 12.9. What is the median time?",
+    "explanation": "In order: 11.8, 12.0, 12.4, 12.9, 13.1. The middle value is 12.4. 13.1 is the middle of the unordered list, 12.44 is the mean and 1.3 is the range.",
+    "basics": "fsmAverages",
+    "options": [
+      "12.4 seconds",
+      "13.1 seconds",
+      "12.44 seconds",
+      "1.3 seconds"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-109",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Calculating with large numbers",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A minibus seats 16 passengers. 150 pupils are going on a school trip. How many minibuses are needed? Type the number only.",
+    "explanation": "150 ÷ 16 = 9.375. Nine minibuses would leave 6 pupils behind, so round up to 10.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-110",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Fractions, decimals and percentages",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Choose two amounts that are equal to 2/5 of £85.",
+    "explanation": "2/5 = 0.4 = 40%, and 0.4 × £85 = £34. £17 is only 1/5 and £42.50 is half.",
+    "basics": "fsmFdp",
+    "options": [
+      "£42.50",
+      "0.25 × £85",
+      "£17",
+      "40% of £85",
+      "£34"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2,
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-111",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Angles in shapes",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A roof truss is an isosceles triangle with an angle of 110° at the top. What is each of the two equal angles at the bottom, in degrees? Type the number only.",
+    "explanation": "180 − 110 = 70, shared equally between the two base angles: 70 ÷ 2 = 35°.",
+    "numeric": {
+      "answers": [
+        "35"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-112",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Range",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A set of temperatures has a lowest value of 2.6°C and a range of 5.9 degrees. What is the highest value, in °C? Type the number only.",
+    "explanation": "Range = highest − lowest, so highest = lowest + range = 2.6 + 5.9 = 8.5°C.",
+    "basics": "fsmAverages",
+    "numeric": {
+      "answers": [
+        "8.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-113",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Negative numbers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these temperatures is the lowest?",
+    "explanation": "Below zero, the bigger the number after the minus sign, the colder. 3.5 is bigger than 3.45 and 3.05, so −3.5°C is lowest.",
+    "basics": "fsmNegatives",
+    "options": [
+      "−3.05°C",
+      "−0.35°C",
+      "−3.45°C",
+      "−3.5°C"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-114",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Ratio",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A biscuit recipe uses flour, butter and sugar in the ratio 6 : 4 : 3 by weight. Alfie has 500 g of butter and plenty of flour and sugar. If he uses all the butter, how much flour does he need, in grams? Type the number only.",
+    "explanation": "4 parts of butter is 500 g, so 1 part is 125 g. Flour is 6 parts: 6 × 125 = 750 g.",
+    "basics": "fsmRatio",
+    "numeric": {
+      "answers": [
+        "750"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-115",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Volume of a cylinder",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A cylindrical tank holds 500 litres when full. Its radius is 40 cm. How tall is it, in centimetres to the nearest whole number? (1 litre = 1,000 cm³) Type the number only.",
+    "explanation": "500 litres = 500,000 cm³. Volume = π × r² × h, so h = 500,000 ÷ (π × 40²) = 500,000 ÷ 5026.5 = 99.47, so 99 cm.",
+    "basics": "fsmVolume",
+    "numeric": {
+      "answers": [
+        "99"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-116",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Mean",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The mean number of hours worked by 5 staff is 32. A sixth person joins who works 20 hours. What is the new mean for all 6 staff, in hours? Type the number only.",
+    "explanation": "Total for 5 staff: 5 × 32 = 160 hours. Add 20: 180 hours. 180 ÷ 6 = 30 hours.",
+    "basics": "fsmAverages",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-117",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmNumber",
+    "skill": "Formulae",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Weekly pay = (basic hours × rate) + (overtime hours × rate × 1.5)\n\nKai's rate is £12.80 an hour. One week he works 37.5 basic hours and 6 overtime hours. What is his pay, in pounds? Type the number only.",
+    "explanation": "Basic: 37.5 × 12.80 = 480. Overtime rate: 12.80 × 1.5 = 19.20, and 6 × 19.20 = 115.20. Total: 480 + 115.20 = £595.20.",
+    "basics": "fsmFormula",
+    "numeric": {
+      "answers": [
+        "595.20"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-118",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmPercent",
+    "skill": "Percentage change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which calculation gives the new price after a 6% increase on a price of £P?",
+    "explanation": "The new price is 100% + 6% = 106% of the old one, and 106% = 1.06. P × 0.06 gives only the increase, and P × 1.6 is a 60% increase.",
+    "basics": "fsmPercentChange",
+    "options": [
+      "P × 1.06",
+      "P × 0.06",
+      "P × 1.6",
+      "P + 6"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-119",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmMeasure",
+    "skill": "Compound measures",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A 2.5 kW heater is left on for 3 hours 20 minutes. Electricity costs 26p per kWh (kW × hours). How much does it cost to run, in pounds to the nearest penny? Type the number only.",
+    "explanation": "3 hours 20 minutes is 3⅓ hours. 2.5 × 3⅓ = 8.333 kWh. × £0.26 = 2.1667, so £2.17.",
+    "basics": "fsmSpeed",
+    "numeric": {
+      "answers": [
+        "2.17"
+      ],
+      "tolerance": 0.011
+    },
+    "calculator": true
+  },
+  {
+    "id": "FSM-D-120",
+    "section": "b",
+    "test": 0,
+    "module": 1,
+    "domain": "fsmData",
+    "skill": "Median from grouped data",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The ages of 35 people at a training day:\n\n| Age | Number of people |\n|---|---|\n| 16 to 25 | 7 |\n| 26 to 35 | 12 |\n| 36 to 45 | 9 |\n| 46 to 55 | 6 |\n| 56 to 65 | 1 |\n\nWhich age group contains the median?",
+    "explanation": "With 35 people the median is the 18th. The first 7 are 16 to 25 and the next 12 (8th to 19th) are 26 to 35, so the 18th is in 26 to 35.",
+    "basics": "fsmGroupedMean",
+    "options": [
+      "36 to 45",
+      "26 to 35",
+      "16 to 25",
+      "46 to 55"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true
+  }
+]

@@ -178,6 +178,8 @@ export interface ExamV2Config {
   sections: SectionDef[];
   /** Order of sections in a full test and a break between each pair. */
   breakSeconds: number;
+  /** Break screen copy when the real exam has no timed break, e.g. papers sat on different days. */
+  breakNote?: string;
   /** Full tests. A held-out test's items never appear in drills, so it stays a clean measurement. */
   tests: { number: number; name: string; heldOut?: boolean }[];
   domainLabels: Record<string, string>;

@@ -60,6 +60,7 @@ export const NAPLAN: ExamV2Config = {
   icon: "graduation",
   theme: { brand: "142 64% 30%", brandDark: "142 64% 21%", brandLight: "142 60% 95%" },
   breakSeconds: 600,
+  breakNote: "The real tests are sat in separate sessions, usually on different days.",
   sections: [
     {
       key: "reading",

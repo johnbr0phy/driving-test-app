@@ -532,8 +532,7 @@
     "stem": "The price of a coat falls from £85 to £68. Work out the percentage decrease.",
     "numeric": {
       "answers": [
-        "20",
-        "20%"
+        "20"
       ],
       "tolerance": 0
     },
@@ -2149,8 +2148,7 @@
     "stem": "The population of a town rose from 42 000 to 45 360. Work out the percentage increase.",
     "numeric": {
       "answers": [
-        "8",
-        "8%"
+        "8"
       ],
       "tolerance": 0
     },
@@ -3335,8 +3333,7 @@
     "stem": "A phone's price drops from £250 to £200. What is the percentage decrease?",
     "numeric": {
       "answers": [
-        "20",
-        "20%"
+        "20"
       ],
       "tolerance": 0
     },
@@ -3356,8 +3353,7 @@
     "stem": "A plant grows from 40 cm to 52 cm tall. What is the percentage increase?",
     "numeric": {
       "answers": [
-        "30",
-        "30%"
+        "30"
       ],
       "tolerance": 0
     },

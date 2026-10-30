@@ -2,8 +2,9 @@
 
 // Shared stats page for registry exams: the DMV "Your Stats" tab, every
 // question in the bank as a re-answerable QuizRow sortable by what you keep
-// missing. Premium-gated like the DMV page (the first few rows free, the rest
-// behind the paywall), except for students in a class on this exam. No
+// missing. On US exams it is Premium-gated like the DMV page (the first few
+// rows free, the rest behind the paywall), except for students in a class on
+// this exam; other countries' exams stay free (checkout is US dollars). No
 // community tab (community miss rates are aggregated for DMV only).
 
 import { Suspense, useEffect, useMemo, useState } from "react";
@@ -18,6 +19,7 @@ import { auth } from "@/lib/firebase";
 import { trackBeginCheckout, trackDailyQuizAnswer, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
 import { isClassStudent } from "@/lib/classProgress";
+import { regionOfTest } from "@/lib/region";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { PaywallModal } from "@/components/PaywallModal";
 import { Question } from "@/types";
@@ -73,7 +75,8 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const [paywallOpen, setPaywallOpen] = useState(false);
   const [inClass, setInClass] = useState(false);
   useEffect(() => setInClass(isClassStudent(source.id) || (!!source.variantOf && isClassStudent(source.variantOf))), [source.id, source.variantOf]);
-  const isPremium = hydrated ? hasPremiumAccess() || inClass : false;
+  const usExam = regionOfTest(source.variantOf ?? source.id) === "US";
+  const isPremium = hydrated ? !usExam || hasPremiumAccess() || inClass : false;
 
   // Paywall hits and checkouts are keyed "<examId>_stats" (the family id for a
   // state version, since the analytics keys allow no hyphens).

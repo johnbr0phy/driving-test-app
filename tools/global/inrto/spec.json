@@ -1,0 +1,26 @@
+{
+  "id": "inrto",
+  "stateCode": "INRTO",
+  "idBase": 10600,
+  "prefix": "INRTO-",
+  "slug": "/india-learners-licence",
+  "landingPath": "/rto-learners-licence-test",
+  "dataFile": "data/india-learners-licence-questions.json",
+  "name": "RTO Learner's Licence Practice Test",
+  "shortName": "LL Test",
+  "examLabel": "learner's licence test",
+  "fullName": "Learner's Licence (LL) Test, RTO / Sarathi Parivahan (India)",
+  "icon": "car",
+  "passPct": 60,
+  "categories": [
+    {"key": "inrtoLicence", "label": "Licences, Learner Rules & Documents", "perTest": 6, "segment": "LIC"},
+    {"key": "inrtoMandatory", "label": "Mandatory Road Signs", "perTest": 8, "segment": "MAN"},
+    {"key": "inrtoCaution", "label": "Cautionary & Informatory Signs", "perTest": 7, "segment": "CAU"},
+    {"key": "inrtoSignals", "label": "Traffic Lights, Hand Signals & Markings", "perTest": 6, "segment": "SIG"},
+    {"key": "inrtoRules", "label": "Rules of the Road", "perTest": 9, "segment": "ROR"},
+    {"key": "inrtoParking", "label": "Parking, Horn, Lights & Towing", "perTest": 5, "segment": "PRK"},
+    {"key": "inrtoSafety", "label": "Helmets, Seat Belts, Alcohol & Phones", "perTest": 5, "segment": "SAF"},
+    {"key": "inrtoDuties", "label": "Accidents, Insurance, PUC & RC", "perTest": 4, "segment": "DUT"}
+  ],
+  "trainingSets": "testSets(10600, 4)"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "cacit",
+  "stateCode": "CACIT",
+  "idBase": 10200,
+  "prefix": "CACIT-",
+  "slug": "/canadian-citizenship",
+  "landingPath": "/canadian-citizenship-test",
+  "dataFile": "data/canadian-citizenship-questions.json",
+  "name": "Canadian Citizenship Test Practice",
+  "shortName": "Citizenship (Canada)",
+  "examLabel": "Canadian citizenship test",
+  "fullName": "Canadian citizenship test (IRCC)",
+  "icon": "flag",
+  "passPct": 75,
+  "testCount": 8,
+  "questionsPerTest": 20,
+  "categories": [
+    {"key": "cacitRights", "label": "Rights & Responsibilities", "perTest": 2, "pool": 20, "segment": "RTS"},
+    {"key": "cacitPeople", "label": "Who We Are", "perTest": 2, "pool": 20, "segment": "WHO"},
+    {"key": "cacitHistory", "label": "Canada's History", "perTest": 4, "pool": 40, "segment": "HIS"},
+    {"key": "cacitModern", "label": "Modern Canada", "perTest": 1, "pool": 12, "segment": "MOD"},
+    {"key": "cacitGov", "label": "How Canadians Govern Themselves", "perTest": 3, "pool": 28, "segment": "GOV"},
+    {"key": "cacitElect", "label": "Federal Elections", "perTest": 2, "pool": 20, "segment": "ELE"},
+    {"key": "cacitJustice", "label": "The Justice System", "perTest": 1, "pool": 12, "segment": "JUS"},
+    {"key": "cacitSymbols", "label": "Canadian Symbols", "perTest": 2, "pool": 20, "segment": "SYM"},
+    {"key": "cacitEconomy", "label": "Canada's Economy", "perTest": 1, "pool": 12, "segment": "ECO"},
+    {"key": "cacitRegions", "label": "Regions & Capitals", "perTest": 2, "pool": 16, "segment": "REG"}
+  ],
+  "trainingSets": [
+    {"setNumber": 1, "id": 10201, "categories": ["cacitRights", "cacitPeople"], "size": 40},
+    {"setNumber": 2, "id": 10202, "categories": ["cacitHistory", "cacitModern"], "size": 52},
+    {"setNumber": 3, "id": 10203, "categories": ["cacitGov", "cacitElect", "cacitJustice"], "size": 60},
+    {"setNumber": 4, "id": 10204, "categories": ["cacitSymbols", "cacitEconomy", "cacitRegions"], "size": 48}
+  ],
+  "note": "8 tests x 20 = 160 items in tests (test N takes slice N of each pool, sorted by id); the last 40 items (4 per pool except history 8, modern 4, gov 4, regions 0) are training-only. Dashboard: 4 sets + 8 tests = 12 steps."
+}

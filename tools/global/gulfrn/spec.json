@@ -1,0 +1,28 @@
+{
+  "id": "gulfrn",
+  "engine": "v1",
+  "stateCode": "GULFRN",
+  "idBase": 10500,
+  "prefix": "GULFRN-",
+  "slug": "/gulf-nursing-exam",
+  "landingPath": "/prometric-nursing-exam-practice-test",
+  "dataFile": "data/gulf-nursing-questions.json",
+  "name": "Gulf Nursing Licensing Exam Practice Test",
+  "shortName": "Gulf RN",
+  "examLabel": "Gulf nursing exam",
+  "fullName": "Registered Nurse Licensing Exam (DHA, DOH, MOHAP, SCFHS, DHP, Oman, Kuwait, Bahrain)",
+  "icon": "stethoscope",
+  "passPct": 60,
+  "categories": [
+    {"key": "gulfrnFund", "label": "Nursing Fundamentals", "perTest": 7, "segment": "FUN"},
+    {"key": "gulfrnPharm", "label": "Pharmacology & Dosage", "perTest": 4, "segment": "PHA"},
+    {"key": "gulfrnCardioResp", "label": "Cardiovascular & Respiratory", "perTest": 7, "segment": "CVR"},
+    {"key": "gulfrnMedSurg", "label": "Medical-Surgical Nursing", "perTest": 8, "segment": "MSG"},
+    {"key": "gulfrnMental", "label": "Mental Health Nursing", "perTest": 3, "segment": "PSY"},
+    {"key": "gulfrnCommunity", "label": "Community Health Nursing", "perTest": 2, "segment": "COM"},
+    {"key": "gulfrnMaternal", "label": "Maternal & Newborn Nursing", "perTest": 7, "segment": "MAT"},
+    {"key": "gulfrnPeds", "label": "Pediatric Nursing", "perTest": 7, "segment": "PED"},
+    {"key": "gulfrnLead", "label": "Leadership, Ethics & Infection Control", "perTest": 5, "segment": "LEA"}
+  ],
+  "trainingSets": "testSets(10500, 4)"
+}

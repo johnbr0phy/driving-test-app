@@ -1,0 +1,27 @@
+{
+  "id": "aucit",
+  "engine": "v1",
+  "stateCode": "AUCIT",
+  "idBase": 10300,
+  "prefix": "AUCIT-",
+  "slug": "/australian-citizenship",
+  "landingPath": "/australian-citizenship-test",
+  "dataFile": "data/aucit-questions.json",
+  "name": "Australian Citizenship Test Practice",
+  "shortName": "Citizenship",
+  "examLabel": "Australian citizenship test",
+  "fullName": "Australian citizenship test (Our Common Bond)",
+  "icon": "flag",
+  "testCount": 8,
+  "questionsPerTest": 20,
+  "passPct": 75,
+  "categories": [
+    {"key": "aucitPeople", "label": "Australia and Its People", "perTest": 5, "pool": 48, "segment": "PEO"},
+    {"key": "aucitDemocracy", "label": "Democratic Beliefs, Rights & Liberties", "perTest": 4, "pool": 42, "segment": "DEM"},
+    {"key": "aucitGov", "label": "Government & the Law", "perTest": 6, "pool": 60, "segment": "GOV"},
+    {"key": "aucitValues", "label": "Australian Values", "perTest": 5, "pool": 50, "segment": "VAL"}
+  ],
+  "trainingSets": "one per part: 10301 People (48), 10302 Democracy (42), 10303 Government (60), 10304 Values (50)",
+  "dashboardSteps": "4 sets + 8 tests = 12",
+  "notes": "Tests use the first 8 x perTest items of each pool by questionId; the rest (8 people, 10 democracy, 12 government, 10 values) are training-only."
+}

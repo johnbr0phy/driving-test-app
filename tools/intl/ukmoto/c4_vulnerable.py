@@ -56,7 +56,7 @@ ITEMS = [
  'Cyclists are small and may be hidden by other traffic or appear on your inside. Look carefully before turning.'),
 ('Why are trams a particular hazard?',
  'They are quiet and cannot steer', ['They give way to motorcycles', 'They stop at every junction', 'They travel very slowly'],
- 'Trams move quietly and cannot steer round you. Never ride between platforms or stop on the rails.'),
+ 'Rule 224 says trams move quickly but silently and cannot steer to avoid you. Watch for them and never stop on the rails.'),
 ('Horse riders ahead are in the middle of a narrow lane. What should you do?',
  'Slow down, ready to stop', ['Rev your engine to warn them', 'Sound your horn as you pass', 'Overtake as fast as you can'],
  'Horses can be startled by noise. Slow down, give plenty of room and pass only when it is safe.'),

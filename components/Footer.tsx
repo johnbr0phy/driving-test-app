@@ -8,6 +8,7 @@ import { states } from "@/data/states";
 import { isViState } from "@/data/viStates";
 import { isKoState } from "@/data/koStates";
 import { isZhState } from "@/data/zhStates";
+import { CountrySwitcher } from "@/components/CountrySwitcher";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { examLanguages, getExamByPath } from "@/lib/exams";
@@ -147,7 +148,8 @@ export function Footer() {
             </a>
             .
           </p>
-          <div className="flex items-center justify-center md:justify-end gap-x-4 text-gray-500 dark:text-gray-400">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-4 gap-y-2 text-gray-500 dark:text-gray-400">
+            <CountrySwitcher />
             {showLanguageToggle && <LanguageSwitcher languages={isAltExam ? examLangs : undefined} />}
             <ThemeToggle className="h-7 w-7" />
             <Link href="/create" className="hover:text-brand hover:underline">

@@ -2,17 +2,24 @@
 
 // Shared stats page for registry exams: the DMV "Your Stats" tab, every
 // question in the bank as a re-answerable QuizRow sortable by what you keep
-// missing. No premium gate and no community tab (community miss rates are
-// aggregated for DMV only).
+// missing. Premium-gated like the DMV page (the first few rows free, the rest
+// behind the paywall), except for students in a class on this exam. No
+// community tab (community miss rates are aggregated for DMV only).
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import { ArrowLeft, Lock } from "lucide-react";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { trackDailyQuizAnswer } from "@/lib/analytics";
+import { useAuth } from "@/contexts/AuthContext";
+import { auth } from "@/lib/firebase";
+import { trackBeginCheckout, trackDailyQuizAnswer, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
+import { paywallVariantForCheckout } from "@/lib/paywallTest";
+import { isClassStudent } from "@/lib/classProgress";
+import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
+import { PaywallModal } from "@/components/PaywallModal";
 import { Question } from "@/types";
 import { getExamQuestions } from "@/lib/examData";
 import { ExamConfig } from "@/lib/exams";
@@ -37,17 +44,81 @@ function optionText(q: Question, letter: string): string {
   return map[letter] ?? "";
 }
 
-export function ExamStatsPage({ exam: source }: { exam: ExamConfig }) {
+const FREE_QUESTION_LIMIT = 5;
+const FREE_QUESTION_LIMIT_MOBILE = 2;
+
+export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
+  return (
+    <Suspense fallback={<div className="flex-1 bg-gray-50 dark:bg-gray-950" />}>
+      <ExamStatsContent exam={exam} />
+    </Suspense>
+  );
+}
+
+function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const { exam, routes, ui, lang } = useLocalizedExam(source);
   const router = useRouter();
+  const pathname = usePathname();
   const hydrated = useHydration();
   const { t } = useTranslation();
+  const { user } = useAuth();
+  usePurchaseReturn();
 
   const isGuest = useStore((state) => state.isGuest);
   const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
+  const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
 
   const [sortField, setSortField] = useState<SortField>("wrong");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
+  const [paywallOpen, setPaywallOpen] = useState(false);
+  const [inClass, setInClass] = useState(false);
+  useEffect(() => setInClass(isClassStudent(source.id) || (!!source.variantOf && isClassStudent(source.variantOf))), [source.id, source.variantOf]);
+  const isPremium = hydrated ? hasPremiumAccess() || inClass : false;
+
+  // Paywall hits and checkouts are keyed "<examId>_stats" (the family id for a
+  // state version, since the analytics keys allow no hyphens).
+  const paywallLocation = `${source.variantOf ?? source.id}_stats`;
+
+  const handleUpgrade = async () => {
+    if (!user?.email || !user?.uid) {
+      router.push(routes.signup);
+      return;
+    }
+    try {
+      const idToken = await auth.currentUser?.getIdToken();
+      if (!idToken) {
+        alert("Authentication error. Please sign in again.");
+        return;
+      }
+      const response = await fetch("/api/stripe/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${idToken}` },
+        body: JSON.stringify({
+          email: user.email,
+          returnUrl: window.location.origin,
+          returnPath: pathname,
+          paywallVariant: paywallVariantForCheckout(),
+          location: paywallLocation,
+        }),
+      });
+      const data = await response.json();
+      if (data.error) {
+        console.error("Checkout error:", data.error);
+        alert(`Error: ${data.error}`);
+        return;
+      }
+      if (data.checkoutUrl) {
+        trackBeginCheckout(paywallLocation);
+        window.location.href = data.checkoutUrl;
+      } else {
+        console.error("No checkout URL returned:", data);
+        alert("Failed to start checkout. Please try again.");
+      }
+    } catch (error) {
+      console.error("Checkout error:", error);
+      alert("Failed to start checkout. Please check your connection and try again.");
+    }
+  };
 
   // Redirect guests to signup
   useEffect(() => {
@@ -115,6 +186,44 @@ export function ExamStatsPage({ exam: source }: { exam: ExamConfig }) {
     };
   };
 
+  const statsRow = (item: QuestionWithPerformance) => {
+    const chip = chipFor(item);
+    return (
+      <QuizRow
+        key={item.question.questionId}
+        chipValue={chip.value}
+        chipLabel={chip.label}
+        chipColorClass={chip.color}
+        question={item.question.question}
+        media={getSignIdForQuestion(item.question.questionId) ? <QuestionImage questionId={item.question.questionId} /> : undefined}
+        subtitle={exam.categoryLabels[item.question.category] ?? item.question.category}
+        options={[item.question.optionA, item.question.optionB, item.question.optionC, item.question.optionD].filter(Boolean)}
+        correctAnswer={optionText(item.question, item.question.correctAnswer)}
+        onAnswer={(correct) => trackDailyQuizAnswer(correct, `stats_${exam.copy.analyticsKey}`)}
+        renderFooter={({ answered }) => (
+          <div className="pt-1 px-1 space-y-1.5">
+            <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
+              <span>
+                {t("stats.answered")}: <span className="font-semibold text-gray-700 dark:text-gray-200">{item.timesAnswered}</span>
+              </span>
+              <span>
+                {t("stats.correctLabel")}: <span className="font-semibold text-green-600 dark:text-green-400">{item.correct}</span>
+              </span>
+              <span>
+                {t("stats.wrongLabel")}: <span className="font-semibold text-red-600 dark:text-red-400">{item.wrong}</span>
+              </span>
+            </div>
+            {answered && item.question.explanation && (
+              <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed animate-in fade-in duration-300">
+                {item.question.explanation}
+              </p>
+            )}
+          </div>
+        )}
+      />
+    );
+  };
+
   if (!hydrated || isGuest) return null;
 
   const answeredCount = questionsWithPerformance.filter((q) => q.timesAnswered > 0).length;
@@ -124,6 +233,25 @@ export function ExamStatsPage({ exam: source }: { exam: ExamConfig }) {
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
         <div className="relative container mx-auto px-4 py-6 max-w-3xl">
+          <PaywallModal
+            open={paywallOpen}
+            onOpenChange={(open) => {
+              if (open) trackPaywallHit("full_stats", "Full Stats", paywallLocation);
+              if (!open && paywallOpen) trackPaywallDismissed(paywallLocation);
+              setPaywallOpen(open);
+            }}
+            feature="full_stats"
+            onUpgrade={handleUpgrade}
+            benefits={[
+              `See your accuracy on all ${examQuestions.length} ${exam.shortName} questions`,
+              "See what you keep getting wrong, worst first",
+              "Premium on every Tigertest exam, the DMV, SAT and ACT included",
+              "One payment, yours forever",
+            ]}
+            isGuest={isGuest}
+            onSignUp={() => router.push(routes.signup)}
+          />
+
           <Link
             href={routes.dashboard}
             className="inline-flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 mb-4"
@@ -165,43 +293,59 @@ export function ExamStatsPage({ exam: source }: { exam: ExamConfig }) {
           </div>
 
           <div className="space-y-2">
-            {sortedQuestions.map((item) => {
-              const chip = chipFor(item);
-              return (
-                <QuizRow
-                  key={item.question.questionId}
-                  chipValue={chip.value}
-                  chipLabel={chip.label}
-                  chipColorClass={chip.color}
-                  question={item.question.question}
-                  media={getSignIdForQuestion(item.question.questionId) ? <QuestionImage questionId={item.question.questionId} /> : undefined}
-                  subtitle={exam.categoryLabels[item.question.category] ?? item.question.category}
-                  options={[item.question.optionA, item.question.optionB, item.question.optionC, item.question.optionD].filter(Boolean)}
-                  correctAnswer={optionText(item.question, item.question.correctAnswer)}
-                  onAnswer={(correct) => trackDailyQuizAnswer(correct, `stats_${exam.copy.analyticsKey}`)}
-                  renderFooter={({ answered }) => (
-                    <div className="pt-1 px-1 space-y-1.5">
-                      <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
-                        <span>
-                          {t("stats.answered")}: <span className="font-semibold text-gray-700 dark:text-gray-200">{item.timesAnswered}</span>
-                        </span>
-                        <span>
-                          {t("stats.correctLabel")}: <span className="font-semibold text-green-600 dark:text-green-400">{item.correct}</span>
-                        </span>
-                        <span>
-                          {t("stats.wrongLabel")}: <span className="font-semibold text-red-600 dark:text-red-400">{item.wrong}</span>
-                        </span>
-                      </div>
-                      {answered && item.question.explanation && (
-                        <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed animate-in fade-in duration-300">
-                          {item.question.explanation}
+            {isPremium
+              ? sortedQuestions.map(statsRow)
+              : sortedQuestions.slice(0, FREE_QUESTION_LIMIT).map((item, idx) => (
+                  <div key={item.question.questionId} className={idx >= FREE_QUESTION_LIMIT_MOBILE ? "hidden md:block" : undefined}>
+                    {statsRow(item)}
+                  </div>
+                ))}
+
+            {!isPremium && sortedQuestions.length > FREE_QUESTION_LIMIT && (
+              <div className="relative">
+                {/* Faded preview of the locked rows, with the unlock CTA overlaid */}
+                <div
+                  className="space-y-2 overflow-hidden h-60 blur-[2px] opacity-40 pointer-events-none select-none [mask-image:linear-gradient(to_bottom,black,transparent)]"
+                  aria-hidden="true"
+                >
+                  {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 4).map((item) => {
+                    const chip = chipFor(item);
+                    return (
+                      <div
+                        key={item.question.questionId}
+                        className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 py-3 flex items-center gap-4"
+                      >
+                        <div className="shrink-0 text-center min-w-[3rem]">
+                          <div className={`text-base font-bold tabular-nums leading-none ${chip.color}`}>{chip.value}</div>
+                          <div className="text-[9px] uppercase tracking-wide text-gray-500 dark:text-gray-400 mt-0.5">{chip.label}</div>
+                        </div>
+                        <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 dark:text-gray-50 line-clamp-2">
+                          {item.question.question}
                         </p>
-                      )}
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                  <div className="rounded-2xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm px-6 py-4 flex flex-col items-center shadow-sm border border-gray-200 dark:border-gray-800">
+                    <div className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-brand-light mb-2">
+                      <Lock className="h-4 w-4 text-brand-dark" />
                     </div>
-                  )}
-                />
-              );
-            })}
+                    <p className="text-sm font-semibold text-gray-900 dark:text-gray-50 mb-1">
+                      {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
+                    </p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mb-2.5">{t("stats.unlockPremiumStats")}</p>
+                    <button
+                      onClick={() => { trackPaywallHit("stats_question_list", "Stats Question List", paywallLocation); trackViewItem(paywallLocation); setPaywallOpen(true); }}
+                      className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors shadow-lg"
+                    >
+                      Unlock Premium for $9.99
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -62,6 +62,11 @@ export function membershipsForExam(examId: string): ClassMembership[] {
   return getMemberships().filter((m) => m.examId === examId);
 }
 
+/** True when this browser practises this exam in a teacher's class, which keeps Premium-only stats open. */
+export function isClassStudent(examId: string): boolean {
+  return getMemberships().some((m) => m.examId === examId && m.kind !== "quiz");
+}
+
 /** Join (or rename in) a class from this browser. Throws with a readable message. */
 export async function joinClass(info: ClassPublicInfo, name: string): Promise<ClassMembership> {
   const existing = getMembership(info.code);

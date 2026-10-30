@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,6 +16,26 @@ const metaDescription =
   "Free White Card practice test for CPCWHS1001: 200 original questions on WHS laws, hazards, SWMS, asbestos, silica, signs, PPE and emergencies, with every answer explained.";
 const description =
   "Free practice for the White Card course, CPCWHS1001 Prepare to work safely in the construction industry: 200 original questions on WHS laws, duties and rights, risk management and SWMS, working at heights and excavations, electrical, plant and traffic, asbestos, silica dust, chemicals and confined spaces, manual handling, noise and sun, safety signs and PPE, and incidents, emergencies and first aid. Four 50-question practice tests with an 80 percent readiness line and an explanation on every question.";
+
+export const metadata: Metadata = {
+  title,
+  description: metaDescription,
+  alternates: { canonical: `${siteUrl}/white-card-practice-test` },
+  openGraph: {
+    title,
+    description: metaDescription,
+    url: `${siteUrl}/white-card-practice-test`,
+    siteName: "Tigertest",
+    type: "website",
+    images: [{ url: shareImageUrl("auwhite"), width: 1200, height: 630, alt: "White Card construction safety practice tests | Tigertest" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description: metaDescription,
+    images: [shareImageUrl("auwhite")],
+  },
+};
 
 const faqs = [
   {

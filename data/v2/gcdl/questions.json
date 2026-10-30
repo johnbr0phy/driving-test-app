@@ -1,0 +1,4250 @@
+[
+  {
+    "id": "GCDL-T1-001",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Digital transformation",
+    "stem": "Which statement best describes digital transformation?",
+    "options": [
+      "Replacing every on-premises server with a newer model that has more memory and storage",
+      "Moving the IT department into a separate company that sells its old hardware to other businesses",
+      "Using cloud technology to change how the organization operates and delivers value to customers",
+      "Scanning paper records into PDF files so that staff can find documents more quickly"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Digital transformation is a change in how the business works and creates value, enabled by technology such as the cloud, data and AI. Digitizing documents or buying faster servers changes tools but not the business model or ways of working."
+  },
+  {
+    "id": "GCDL-T1-002",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Warehouse vs lake",
+    "stem": "How does a data lake differ from a data warehouse?",
+    "options": [
+      "A lake is used for daily transactions; a warehouse is used to run the checkout system",
+      "A lake is kept on premises, while a warehouse is hosted on a public cloud",
+      "A lake stores raw data of any type; a warehouse stores structured data organized for analysis",
+      "A lake stores only structured tables; a warehouse stores only images and video files"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A data lake holds large volumes of raw structured, semi-structured and unstructured data in its native format. A data warehouse holds cleaned, structured data modeled for analytics and reporting. Transaction processing is the job of operational databases."
+  },
+  {
+    "id": "GCDL-T1-003",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AI vs ML",
+    "stem": "How is machine learning related to artificial intelligence?",
+    "options": [
+      "ML and AI are unrelated fields: one is about statistics and the other is about robots only",
+      "ML is a subset of AI in which systems learn patterns from data instead of following fixed rules",
+      "ML is a broader field than AI, and AI is one technique inside ML",
+      "ML is a type of database, while AI is the reporting tool that reads from that database"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Artificial intelligence is the broad field of making machines perform tasks that normally need human intelligence. Machine learning is a subset that learns from data. Generative AI is a further subset that creates new content."
+  },
+  {
+    "id": "GCDL-T1-004",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "DDoS",
+    "stem": "Attackers flood a company's website with traffic from thousands of machines until real customers cannot reach it. What attack is this?",
+    "options": [
+      "Distributed denial of service (DDoS)",
+      "Phishing campaign",
+      "Ransomware encryption",
+      "Cryptomining malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A DDoS attack overwhelms a service with traffic from many sources to make it unavailable. Google Cloud Armor and Google's global network help absorb and filter such attacks."
+  },
+  {
+    "id": "GCDL-T1-005",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rehost",
+    "stem": "A company moves its VMs to Compute Engine with no changes to the applications, to exit its data center quickly. Which migration approach is this?",
+    "options": [
+      "Retire the application",
+      "Rehost (lift and shift)",
+      "Refactor the application",
+      "Reimagine the application"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rehosting moves workloads as they are, which is the fastest path but brings few cloud-native benefits. Refactoring changes the code; reimagining rebuilds the solution; retiring switches it off."
+  },
+  {
+    "id": "GCDL-T1-006",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CapEx to OpEx",
+    "stem": "How does moving from on-premises servers to the cloud change how a company spends on IT?",
+    "options": [
+      "It shifts spending from up-front capital purchases to ongoing operating costs",
+      "It removes all IT costs, since cloud providers do not charge for computing",
+      "It requires the company to prepay for ten years of capacity on day one",
+      "It shifts spending from monthly operating costs to large up-front capital purchases"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "On premises, companies buy hardware up front (capital expenditure). In the cloud, they pay for what they use as an operating expense, which preserves cash and matches cost to demand."
+  },
+  {
+    "id": "GCDL-T1-007",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agentic AI",
+    "stem": "A retailer wants software that can take a customer's goal, plan the steps, use tools such as the order system, and complete the task with limited human direction. What is this called?",
+    "options": [
+      "Agentic AI",
+      "Data warehousing",
+      "Business intelligence",
+      "Rule-based automation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Agentic AI systems pursue a goal on a user's behalf: they reason about the steps, call tools and systems, and act, with people setting guardrails. Rule-based automation only follows fixed instructions written in advance."
+  },
+  {
+    "id": "GCDL-T1-008",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data types",
+    "stem": "A store collects purchase history from its own loyalty program. What type of data is this?",
+    "options": [
+      "Synthetic data",
+      "Third-party data",
+      "Second-party data",
+      "First-party data"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "First-party data is collected directly by the organization from its own customers and channels. Second-party data is another organization's first-party data shared with you; third-party data is aggregated by outside providers."
+  },
+  {
+    "id": "GCDL-T1-009",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Generative AI",
+    "stem": "Which task is an example of generative AI?",
+    "options": [
+      "Sorting customer records alphabetically by family name in a database",
+      "Showing a bar chart of yesterday's web traffic on a static dashboard",
+      "Drafting a first version of a product description from a short prompt",
+      "Adding up last month's sales by region in a fixed spreadsheet formula"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Generative AI creates new content, such as text, images, code or audio, in response to a prompt. Totals, sorting and fixed charts are standard computing or business intelligence."
+  },
+  {
+    "id": "GCDL-T1-010",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "Which statement about security in the cloud compared with on premises is correct?",
+    "options": [
+      "Security works the same as on premises, with the customer running every layer itself",
+      "The customer becomes responsible for the physical security of the provider's data centers",
+      "The provider secures the underlying infrastructure, while the customer still secures its data and access",
+      "The provider takes over every security task, so the customer has none left"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cloud security is shared: Google secures the infrastructure it runs, and customers remain responsible for what they put in the cloud, such as identities, permissions, data and configuration. The split depends on the service model."
+  },
+  {
+    "id": "GCDL-T1-011",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Replatform",
+    "stem": "During migration, a team moves its app to a VM but swaps its self-managed database for Cloud SQL. Which approach is this?",
+    "options": [
+      "Replatform (move and improve)",
+      "Rehost (lift and shift) as is",
+      "Retain the app on premises",
+      "Retire the app completely"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Replatforming makes a few targeted changes, such as adopting a managed database, to gain cloud benefits without rewriting the application."
+  },
+  {
+    "id": "GCDL-T1-012",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cloud benefits",
+    "stem": "A startup does not know whether its app will have 100 or 100,000 users next month. Which cloud benefit matters most to it?",
+    "options": [
+      "Data residency: data stays inside a single country",
+      "Open source: the code can be read by anyone at all",
+      "Scalability: capacity grows and shrinks with demand",
+      "Private cloud: the hardware is used by one tenant only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scalability lets the startup add resources when users arrive and release them when demand falls, paying only for what it uses. The other options are real cloud features but do not address unpredictable demand."
+  },
+  {
+    "id": "GCDL-T1-013",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unstructured data",
+    "stem": "Which of these is an example of unstructured data?",
+    "options": [
+      "Product prices in a relational table",
+      "Bank balances stored in a SQL database",
+      "Recorded customer service calls",
+      "A table of orders with fixed columns"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unstructured data has no predefined schema: audio, video, images and free text. Tables with fixed columns are structured. JSON with flexible fields is semi-structured."
+  },
+  {
+    "id": "GCDL-T1-014",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "ML use cases",
+    "stem": "A bank's fraud rules have grown into thousands of hand-written conditions that miss new fraud patterns. Why is ML a good fit?",
+    "options": [
+      "ML is the only way to store transactions safely, so the database can be removed",
+      "ML can learn complex patterns from past transactions and adapt as new data arrives",
+      "ML guarantees that every prediction will be correct for each transaction",
+      "ML needs no data at all, so the bank can stop collecting its transaction history"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ML is well suited to replacing or simplifying complex rule-based systems: it learns patterns from historical data and can be retrained as patterns change. It needs good data and still makes some errors."
+  },
+  {
+    "id": "GCDL-T1-015",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Least privilege",
+    "stem": "A contractor needs to read reports in one project for a month. Applying least privilege, what should the administrator grant?",
+    "options": [
+      "Editor access on every project, since the contractor is trusted",
+      "A read-only role on that one project, removed when the work ends",
+      "The Owner role on the whole organization, so nothing is ever blocked",
+      "The administrator's own password, shared for the length of the work"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Least privilege grants only the access needed for the task, on the narrowest resource, for only as long as needed. Broad roles and shared credentials increase the damage if an account is misused."
+  },
+  {
+    "id": "GCDL-T1-016",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discovery and assessment",
+    "stem": "What happens in the discovery and assessment phase of a cloud migration?",
+    "options": [
+      "Rewriting every application into microservices before planning",
+      "Switching off the old data center on the same day the project begins",
+      "Inventorying workloads and their dependencies to decide what to move and how",
+      "Signing up every employee for Google Workspace accounts in one batch"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Discovery and assessment catalogs servers, applications and dependencies and evaluates each workload, so the team can choose an approach (retire, retain, rehost, replatform, refactor, reimagine) and plan the order of moves."
+  },
+  {
+    "id": "GCDL-T1-017",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Resource hierarchy",
+    "stem": "In what order does Google Cloud's resource hierarchy run, from top to bottom?",
+    "options": [
+      "Resources, projects, folders, organization",
+      "Folders, resources, organization, projects",
+      "Organization, folders, projects, resources",
+      "Projects, organization, resources, folders"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The organization node sits at the top, folders group projects (for example by department), projects hold resources, and resources such as VMs and buckets sit at the bottom."
+  },
+  {
+    "id": "GCDL-T1-018",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk of not adopting cloud",
+    "stem": "A bank's leaders ask what happens if they keep everything on premises while competitors move to the cloud. Which risk is most likely?",
+    "options": [
+      "Being legally barred from storing financial records in its own data center",
+      "Losing all customer data because on-premises servers cannot be backed up",
+      "Slower product releases that let more agile rivals win customers",
+      "Being forced to rewrite every application in a different programming language"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The main risk of not adopting cloud is falling behind: slower innovation and time to market, higher fixed costs and weaker access to data and AI. On-premises systems can be backed up, and staying on premises does not force rewrites or break the law."
+  },
+  {
+    "id": "GCDL-T1-019",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "BigQuery",
+    "stem": "A company wants to analyze petabytes of sales data with SQL without managing any servers or clusters. Which product fits?",
+    "options": [
+      "Cloud SQL",
+      "Firestore",
+      "BigQuery",
+      "Bigtable"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "BigQuery is Google Cloud's serverless, highly scalable data warehouse for SQL analytics. Cloud SQL is for transactional relational workloads, Firestore for app documents and Bigtable for very high throughput NoSQL key lookups."
+  },
+  {
+    "id": "GCDL-T1-020",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data quality",
+    "stem": "A model predicting delivery times performs poorly because a third of the records have no delivery date. Which data quality dimension is the problem?",
+    "options": [
+      "Uniqueness",
+      "Timeliness",
+      "Completeness",
+      "Consistency"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Completeness measures whether required values are present. Uniqueness is about duplicates, timeliness about how current the data is and consistency about whether values agree across systems."
+  },
+  {
+    "id": "GCDL-T1-021",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Encryption in transit",
+    "stem": "Data is moving from a user's browser to a web application. Which encryption state protects it?",
+    "options": [
+      "Encryption in transit",
+      "Data loss prevention (DLP)",
+      "Encryption in use",
+      "Encryption at rest"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Encryption in transit, for example TLS, protects data as it travels across networks. Encryption at rest protects stored data, and encryption in use (Confidential Computing) protects data while it is being processed."
+  },
+  {
+    "id": "GCDL-T1-022",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Containers",
+    "stem": "What is a container?",
+    "options": [
+      "A full virtual machine that includes its own separate guest operating system and kernel",
+      "A physical server cabinet that holds the hardware in a Google Cloud data center",
+      "A storage class in Cloud Storage for objects that are only accessed about once a year",
+      "A lightweight package of an application and its dependencies that runs the same anywhere"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Containers bundle code with its libraries and settings and share the host operating system kernel, so they start fast and behave the same across environments. VMs include a full guest operating system."
+  },
+  {
+    "id": "GCDL-T1-023",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Open standards",
+    "stem": "An organization worries about vendor lock-in. Why does Google Cloud's support for open source and open standards, such as Kubernetes, help?",
+    "options": [
+      "Workloads built on them can move between environments with less rework",
+      "Open source software never needs security updates or any maintenance",
+      "Open standards make every Google Cloud product free of charge to use",
+      "Workloads built on them can run only in Google's data centers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Open source and open standards give portability: an application packaged for Kubernetes, for example, can run on premises, on Google Cloud or on another cloud. Open source still needs patching and is not a pricing model."
+  },
+  {
+    "id": "GCDL-T1-024",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spanner",
+    "stem": "A global payments company needs a relational database that is strongly consistent across continents and scales horizontally for both reads and writes. Which product fits?",
+    "options": [
+      "Firestore",
+      "Cloud SQL",
+      "Cloud Storage",
+      "Spanner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Spanner is a fully managed relational database with strong consistency and horizontal scale across regions, suited to global transactional systems. Cloud SQL is managed MySQL, PostgreSQL or SQL Server for regional workloads."
+  },
+  {
+    "id": "GCDL-T1-025",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Responsible AI",
+    "stem": "A lender uses an AI model to approve loans. Why does explainable AI matter here?",
+    "options": [
+      "Explainability removes the need to test the model with any real data",
+      "Explainable AI lets the bank skip collecting training data",
+      "Explainable models always run faster and use less compute than others",
+      "Customers and regulators may need to know why an application was declined"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Explainable AI helps people understand which factors drove a prediction. In high-impact decisions such as lending, that supports fairness checks, regulatory compliance and customer trust, which are part of responsible AI."
+  },
+  {
+    "id": "GCDL-T1-026",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Authentication vs authorization",
+    "stem": "A user signs in with a password and a code from a phone app, then can view but not delete files. Which step decides what the user may do?",
+    "options": [
+      "Authorization",
+      "Encryption",
+      "Authentication",
+      "Auditing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Authentication proves who someone is, here with multi-factor authentication. Authorization decides what that identity can do, for example through IAM roles. Auditing records what was done."
+  },
+  {
+    "id": "GCDL-T1-027",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Budgets",
+    "stem": "A team wants to be emailed when a project's spending reaches 50, 90 and 100 percent of its monthly plan. What should it set up?",
+    "options": [
+      "A resource quota on the number of CPUs per region",
+      "A Cloud Storage lifecycle rule on the project's buckets",
+      "An IAM role that blocks all spending in the project",
+      "A Cloud Billing budget with threshold alert rules"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cloud Billing budgets send alerts when actual or forecast costs cross set thresholds. Alerts do not stop spending on their own; quotas and automated responses can enforce limits."
+  },
+  {
+    "id": "GCDL-T1-028",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compute Engine",
+    "stem": "A company needs full control over the operating system to run a legacy application that requires specific OS settings. Which product fits?",
+    "options": [
+      "Looker",
+      "Compute Engine",
+      "Cloud Run functions",
+      "Firestore"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Compute Engine provides virtual machines on Google's infrastructure, with full control of the OS, machine type and software. It is IaaS and a common landing spot for rehosted applications."
+  },
+  {
+    "id": "GCDL-T1-029",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hybrid cloud",
+    "stem": "A hospital keeps patient records in its own data center but runs its new appointment app on Google Cloud, and the two are connected. Which architecture is this?",
+    "options": [
+      "Hybrid cloud",
+      "Public cloud only",
+      "Private cloud",
+      "Multicloud"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hybrid cloud combines on-premises (or private cloud) infrastructure with public cloud, working together. Multicloud means using more than one public cloud provider."
+  },
+  {
+    "id": "GCDL-T1-030",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Storage classes",
+    "stem": "A company must keep scanned contracts for ten years for legal reasons and expects to read them less than once a year. Which Cloud Storage class costs least for storage?",
+    "options": [
+      "Archive",
+      "Coldline",
+      "Standard",
+      "Nearline"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Archive has the lowest storage price and suits data accessed less than once a year, with a longer minimum storage duration and higher retrieval cost. Nearline suits roughly monthly access and Coldline roughly quarterly."
+  },
+  {
+    "id": "GCDL-T1-031",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choosing an AI approach",
+    "stem": "A company needs to add image labeling to its app next week and has no ML team. The labeling does not need to be unique to the company. Which approach fits?",
+    "options": [
+      "Train a custom model from scratch on TPUs",
+      "Hire a research team to design a brand new model",
+      "Build a rule-based system for every image",
+      "Use a pre-trained API such as the Vision API"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pre-trained APIs offer the fastest implementation and least effort, needing no ML expertise. Custom models take more time and skill and are worth it when the use case is a source of differentiation."
+  },
+  {
+    "id": "GCDL-T1-032",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security Command Center",
+    "stem": "A security team wants one place to find misconfigurations, vulnerabilities and threats across its Google Cloud resources, ranked by risk. Which product fits?",
+    "options": [
+      "Security Command Center",
+      "Certificate Manager",
+      "Cloud Interconnect",
+      "Cloud Billing reports view"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Security Command Center is Google Cloud's security and risk management platform. It discovers assets and finds misconfigurations, vulnerabilities and threats, and helps prioritize and fix them."
+  },
+  {
+    "id": "GCDL-T1-033",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "GKE",
+    "stem": "A company runs dozens of containerized microservices and wants Google to manage the Kubernetes control plane. Which product fits?",
+    "options": [
+      "Cloud Storage Nearline buckets",
+      "Compute Engine with one large VM",
+      "BigQuery ML with SQL models",
+      "Google Kubernetes Engine (GKE)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "GKE is Google's managed Kubernetes service for deploying, scaling and managing containers. In Autopilot mode Google also manages the nodes."
+  },
+  {
+    "id": "GCDL-T1-034",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Golden signals",
+    "stem": "Which are the four golden signals for monitoring a user-facing system?",
+    "options": [
+      "Uptime, budgets, roles and folders",
+      "Latency, traffic, errors and saturation",
+      "Cost, regions, zones and projects",
+      "Encryption, backups, audit logs and keys"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Google's SRE practice measures latency (how long requests take), traffic (demand), errors (failed requests) and saturation (how full resources are)."
+  },
+  {
+    "id": "GCDL-T1-035",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Regions and zones",
+    "stem": "How are Google Cloud regions and zones related?",
+    "options": [
+      "Regions and zones are two names for the same data center",
+      "A zone is a geographic area that contains several regions",
+      "A zone is a network edge location used only for caching",
+      "A region is a geographic area that contains several zones"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A region is a specific geographic location, such as a city area, and is divided into zones, which are separate deployment areas. Running across several zones in a region protects against the failure of one zone."
+  },
+  {
+    "id": "GCDL-T1-036",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Looker",
+    "stem": "How does Looker help democratize access to data?",
+    "options": [
+      "It removes the need to define any metrics, since each user is free to calculate revenue their own way",
+      "It replaces the data warehouse with a single shared spreadsheet that everyone edits at the same time",
+      "It gives business users governed, consistent metrics in dashboards and reports they can explore themselves",
+      "It copies every table to employees' laptops for private spreadsheets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Looker is Google Cloud's business intelligence platform. Its semantic model defines metrics once, so everyone sees the same governed numbers, and business users can explore data and build dashboards without writing SQL."
+  },
+  {
+    "id": "GCDL-T1-037",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gemini Enterprise Agent Platform",
+    "stem": "What is Gemini Enterprise Agent Platform?",
+    "options": [
+      "A spreadsheet add-on that only formats charts and has no access to AI models",
+      "A Google Cloud storage class for keeping old machine learning data at low cost",
+      "A hardware appliance that customers install to run email and file shares",
+      "Google Cloud's unified platform for building, deploying and managing AI models and agents"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gemini Enterprise Agent Platform (the successor to Vertex AI) brings together access to Gemini and other models, tools to build and tune custom models and agents, and the runtime and governance to deploy and manage them."
+  },
+  {
+    "id": "GCDL-T1-038",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Google Threat Intelligence",
+    "stem": "What powers Google Threat Intelligence?",
+    "options": [
+      "Customer billing data, which shows where each company spends most of its money",
+      "Google's global visibility, Mandiant's incident response expertise and VirusTotal's crowdsourced detection",
+      "Passwords that customers send to Google each month for strength checks",
+      "A single antivirus product installed on each of a customer's laptops and phones"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Google Threat Intelligence combines what Google sees across its products and network, Mandiant's frontline incident response knowledge and VirusTotal's crowdsourced malware data to give proactive insight into threats."
+  },
+  {
+    "id": "GCDL-T1-039",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud Run",
+    "stem": "A team wants to deploy a containerized web app that scales to zero when idle, with no servers or clusters to manage, paying only while it handles requests. Which product fits?",
+    "options": [
+      "Cloud Run",
+      "Cloud VPN",
+      "Compute Engine",
+      "Bigtable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cloud Run is a serverless platform that runs containers, scales automatically with traffic, including down to zero, and bills for the resources used while serving."
+  },
+  {
+    "id": "GCDL-T1-040",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Latency",
+    "stem": "Users in Sydney complain that a web app hosted far away feels slow to respond to each click, even though downloads are fast once they start. Which network measure describes the problem?",
+    "options": [
+      "Latency",
+      "IP addressing",
+      "Bandwidth",
+      "Throughput cap"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Latency is the delay for data to travel from one point to another, felt as slow responses. Bandwidth is how much data can move per second, which is why large downloads can still be fast. Serving users from a nearby region or edge location cuts latency."
+  },
+  {
+    "id": "GCDL-T1-041",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pub/Sub",
+    "stem": "Thousands of delivery trucks send location events every few seconds. Which product ingests these events reliably so other systems can process them?",
+    "options": [
+      "Archive storage",
+      "Pub/Sub",
+      "Looker",
+      "Cloud SQL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pub/Sub is a scalable messaging and event ingestion service: producers publish messages and subscribers receive them asynchronously. It is a common entry point for streaming pipelines, often followed by Dataflow."
+  },
+  {
+    "id": "GCDL-T1-042",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Translation API",
+    "stem": "An online store wants product pages available in 20 languages without training its own model. Which offering fits?",
+    "options": [
+      "BigQuery ML",
+      "Cloud Translation API",
+      "Speech-to-Text API for audio",
+      "Vision API"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Cloud Translation API is a pre-trained model that translates text between many languages through a simple API call. Speech-to-Text converts audio to text, and the Vision API analyzes images."
+  },
+  {
+    "id": "GCDL-T1-043",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Model Armor",
+    "stem": "A company launches a generative AI chatbot and worries about prompt injection and the bot leaking sensitive data in its replies. Which offering screens prompts and responses?",
+    "options": [
+      "BigQuery Omni",
+      "Cloud CDN",
+      "Cloud VPN",
+      "Model Armor"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Model Armor inspects prompts and model responses to detect and block risks such as prompt injection, jailbreak attempts, harmful content and sensitive data leakage. It is one of Google Cloud's AI-focused security offerings."
+  },
+  {
+    "id": "GCDL-T1-044",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "APIs",
+    "stem": "What is an application programming interface (API)?",
+    "options": [
+      "A defined way for one piece of software to request data or services from another",
+      "A dashboard that shows business users the sales results for each region",
+      "A type of virtual machine that runs only on Google's own custom hardware",
+      "A storage class for files kept for legal reasons for ten years"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An API is a contract that lets software systems communicate: one exposes operations and data, the other calls them, without needing to know how they are built inside."
+  },
+  {
+    "id": "GCDL-T1-045",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SLI, SLO and SLA",
+    "stem": "A team commits internally that 99.9 percent of requests each month will succeed, measured by the share of successful requests. Which term is the 99.9 percent target?",
+    "options": [
+      "Service level objective (SLO)",
+      "Service level indicator (SLI)",
+      "Error reporting threshold",
+      "Service level agreement (SLA)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The SLI is the measurement (share of successful requests). The SLO is the target for it (99.9 percent). The SLA is a contract with customers, usually looser than the SLO, with consequences if it is missed."
+  },
+  {
+    "id": "GCDL-T1-046",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service models",
+    "stem": "A team wants to deploy its code without managing operating systems or servers, but still write and own its application. Which service model fits?",
+    "options": [
+      "Platform as a Service (PaaS)",
+      "Infrastructure as a Service (IaaS)",
+      "On-premises colocation hosting",
+      "Software as a Service (SaaS)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "PaaS manages the runtime, operating system and infrastructure so developers focus on code. IaaS gives the most control but the team still manages the OS. SaaS is finished software, so there is no code of their own to deploy."
+  },
+  {
+    "id": "GCDL-T1-047",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data governance",
+    "stem": "Why is data governance important to a data-driven organization?",
+    "options": [
+      "It sets who owns, may access and must protect each data set, so data is trusted and compliant",
+      "It is only needed by companies that keep their data on premises and never in the cloud",
+      "It deletes all historic data after each quarter so that storage costs stay as low as possible",
+      "It lets every employee copy any data set to any system without asking or leaving a record"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Data governance is the set of policies, roles and processes that keep data accurate, secure, private and compliant: who owns it, who can use it and how. Good governance builds trust in the data that feeds analytics and AI."
+  },
+  {
+    "id": "GCDL-T1-048",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "BigQuery ML",
+    "stem": "Data analysts who know SQL but not Python want to build a model that forecasts sales from data already in BigQuery. Which option fits?",
+    "options": [
+      "Firestore",
+      "BigQuery ML",
+      "Cloud Translation API",
+      "Cloud Armor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "BigQuery ML lets users create, train and run ML models with standard SQL inside BigQuery, so data does not have to move and analysts can use skills they already have."
+  },
+  {
+    "id": "GCDL-T1-049",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud Armor",
+    "stem": "Which product protects internet-facing applications from DDoS attacks and common web attacks such as SQL injection?",
+    "options": [
+      "Google Cloud Armor",
+      "Cloud Interconnect",
+      "Certificate Manager",
+      "Identity-Aware Proxy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cloud Armor provides DDoS protection and a web application firewall at Google's network edge, in front of load-balanced applications."
+  },
+  {
+    "id": "GCDL-T1-050",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hybrid and multicloud products",
+    "stem": "A company wants to query data stored in another cloud provider's storage using BigQuery, without moving the data. Which offering fits?",
+    "options": [
+      "Compute Engine Spot VMs",
+      "BigQuery Omni",
+      "Cloud Run functions",
+      "Cloud Storage Autoclass"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "BigQuery Omni runs BigQuery analytics on data in other clouds, such as AWS and Azure, so it does not need to be copied. It is one of Google Cloud's multicloud offerings."
+  },
+  {
+    "id": "GCDL-T1-051",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DNS",
+    "stem": "What does the Domain Name System (DNS) do?",
+    "options": [
+      "Encrypts traffic between a browser and a web server",
+      "Assigns each data center to a region and to a zone",
+      "Translates names like example.com into IP addresses",
+      "Stores copies of web pages close to the end users"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DNS is the internet's directory: it resolves human-readable domain names to the numeric IP addresses computers use. Encryption is handled by TLS, and caching near users is the job of a CDN."
+  },
+  {
+    "id": "GCDL-T1-052",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Database migration",
+    "stem": "A company wants to move its on-premises MySQL database to Google Cloud with as little change to the application as possible. Which target fits best?",
+    "options": [
+      "Bigtable wide-column store",
+      "BigQuery data warehouse",
+      "Cloud Storage Archive class",
+      "Cloud SQL for MySQL"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cloud SQL offers managed MySQL, PostgreSQL and SQL Server, so a MySQL application can move with minimal change, for example with Database Migration Service. BigQuery and Bigtable would need the application redesigned."
+  },
+  {
+    "id": "GCDL-T1-053",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TPUs",
+    "stem": "What are Tensor Processing Units (TPUs)?",
+    "options": [
+      "Google-designed chips built to speed up machine learning",
+      "Storage classes for rarely accessed training data",
+      "Software licenses for SQL Server databases in the cloud",
+      "Network cables that link two Google Cloud regions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "TPUs are custom accelerators Google designed for training and serving ML models. Along with GPUs they are part of the AI Hypercomputer's hardware layer."
+  },
+  {
+    "id": "GCDL-T1-054",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data residency",
+    "stem": "A European company must keep customer data stored inside the EU. How does Google Cloud help?",
+    "options": [
+      "It lets the company choose the regions where its data is stored",
+      "It requires the company to keep the data on premises instead",
+      "It stores every customer's data in one global location only",
+      "It moves all data to the region with the lowest price each night"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Data residency means controlling where data is stored. Customers choose regions for their resources, and Google Cloud offers controls for data sovereignty, such as limiting resources to approved locations."
+  },
+  {
+    "id": "GCDL-T1-055",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud Monitoring",
+    "stem": "An operations team wants dashboards of CPU use and request latency, with alerts when they cross thresholds. Which product fits?",
+    "options": [
+      "Cloud Interconnect",
+      "Cloud Translation",
+      "Cloud Profiler",
+      "Cloud Monitoring"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cloud Monitoring collects metrics, builds dashboards and sends alerts. Cloud Logging stores logs, Cloud Trace shows request latency across services and Cloud Profiler shows which code uses the most CPU and memory."
+  },
+  {
+    "id": "GCDL-T1-056",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Modern app development",
+    "select": 2,
+    "stem": "Which two are business benefits of modern application development with microservices and managed services? (Choose two.)",
+    "options": [
+      "Releases speed up because managed services handle routine operations",
+      "Teams can update one service without redeploying the whole app",
+      "Managed services require the team to patch all of the servers by hand",
+      "The whole app must stop running whenever any single service is updated",
+      "Every service must be written in the same language as all the others"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Microservices let teams deploy, scale and fix parts of an application independently, and managed services remove operational chores, which speeds releases and improves resilience. Services can use different languages."
+  },
+  {
+    "id": "GCDL-T1-057",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Cloud benefits",
+    "select": 2,
+    "stem": "A manufacturer is moving its analytics platform to the cloud. Which two outcomes are typical business benefits of that move? (Choose two.)",
+    "options": [
+      "Removing the need for any staff to understand the data",
+      "Guaranteed zero downtime for every application, forever",
+      "Faster experiments, since new environments start in minutes",
+      "No need to plan any security or access controls at all",
+      "Paying for capacity as it is used, not buying for peak load"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Agility (spinning up environments quickly) and cost-effectiveness (pay for use instead of buying for peak) are core cloud benefits. Cloud improves availability but cannot promise zero downtime, and the customer still owns access control and data skills."
+  },
+  {
+    "id": "GCDL-T1-058",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Streaming analytics",
+    "select": 2,
+    "stem": "Which two are reasons real-time streaming analytics is valuable to a modern business? (Choose two.)",
+    "options": [
+      "It means batch reports can never be used again by anyone",
+      "Stock levels and prices can react to demand within seconds",
+      "It guarantees that every incoming event is free of all errors",
+      "It removes any need to store data once the event has passed",
+      "Fraud can be flagged while a transaction is still happening"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Streaming analytics processes data as it arrives, so the business can act in the moment: blocking fraud, personalizing offers, adjusting stock or prices. Batch analytics and storage still have their place, and data quality still has to be managed."
+  },
+  {
+    "id": "GCDL-T1-059",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Agentic AI at work",
+    "select": 2,
+    "stem": "Which two are examples of agentic AI reshaping how people work? (Choose two.)",
+    "options": [
+      "A printed manual that lists every step of the company's return policy",
+      "A sales agent that researches a prospect and drafts a tailored proposal",
+      "A static report emailed to managers at the end of every single month",
+      "A support agent that looks up an order and processes the refund itself",
+      "A database index that makes customer lookups by ID run more quickly"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "AI agents act toward a goal: they reason, use tools and complete multi-step tasks, such as resolving a support case or preparing sales material, with people supervising. Reports, manuals and indexes do not act on their own."
+  },
+  {
+    "id": "GCDL-T1-060",
+    "section": "gcdl",
+    "test": 1,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Zero trust",
+    "select": 2,
+    "stem": "Which two statements describe a zero-trust security model? (Choose two.)",
+    "options": [
+      "Once a user signs in, all systems trust them for the year",
+      "A strong perimeter firewall removes the need for any sign-in",
+      "Users on the office network are trusted automatically",
+      "Access depends on identity and context such as device health",
+      "Every access request is verified, even from inside the network"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "Zero trust assumes no implicit trust based on network location. Each request is checked against identity and context, such as user, device and location. Google's BeyondCorp approach and Identity-Aware Proxy apply it."
+  },
+  {
+    "id": "GCDL-T2-001",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cloud definition",
+    "stem": "Which is the best definition of cloud computing?",
+    "options": [
+      "On-demand access to computing resources over a network, paid for as they are used",
+      "A single large computer that every customer shares at the same time on one OS",
+      "A company's own servers in a locked closet that only its staff can reach",
+      "Software that is installed from a disc and runs only on the user's own laptop"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cloud computing delivers compute, storage, databases and other services on demand over a network, usually the internet, with metered pay-as-you-go pricing. Self-managed servers are on-premises infrastructure."
+  },
+  {
+    "id": "GCDL-T2-002",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Why data is valuable",
+    "stem": "Which statement best explains why data is central to digital transformation?",
+    "options": [
+      "It must be printed regularly to stay accurate",
+      "It only matters for companies that sell data",
+      "It reveals trends, informs decisions and fuels AI",
+      "It replaces the need for any company strategy at all"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Data generates real-time insight, shows trends, guides strategic decisions and is the raw material for AI and ML. Its value comes from being collected, governed and activated, not from being printed or sold."
+  },
+  {
+    "id": "GCDL-T2-003",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Business intelligence",
+    "stem": "Which best describes business intelligence (BI)?",
+    "options": [
+      "Tools and practices for analyzing business data and showing it in reports and dashboards",
+      "A model that writes new marketing copy in response to a prompt from a business user",
+      "A chip designed by Google to train very large models much faster than general processors",
+      "A rule that every business decision must be made by an automated AI agent alone"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Business intelligence turns business data into reports, dashboards and analysis that help people make decisions. It describes what happened; ML and generative AI predict or create."
+  },
+  {
+    "id": "GCDL-T2-004",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ransomware",
+    "stem": "Malware encrypts a company's files and demands payment for the key. Which defense best limits the business impact?",
+    "options": [
+      "Regular, protected backups that can be restored",
+      "Storing every file in one shared folder",
+      "A larger monitor for each employee's desk",
+      "A faster internet connection for the whole office"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ransomware is malware that encrypts data and demands payment. Isolated, regularly tested backups let an organization restore without paying; cyber resilience also includes detection and response."
+  },
+  {
+    "id": "GCDL-T2-005",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Retire and retain",
+    "stem": "During assessment, a company finds an old reporting tool nobody has used in two years. What is the right migration decision for it?",
+    "options": [
+      "Retire it",
+      "Rehost it",
+      "Reimagine it",
+      "Refactor it"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Retiring switches off applications that are no longer needed, which reduces migration effort and cost. Retaining keeps an application where it is for now, for example because of a recent hardware purchase or a dependency."
+  },
+  {
+    "id": "GCDL-T2-006",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TCO",
+    "stem": "When comparing on-premises and cloud costs, why should a company look at total cost of ownership (TCO)?",
+    "options": [
+      "It ignores hardware costs, since servers last forever once they are bought",
+      "It only counts the monthly bill from the cloud provider and nothing else",
+      "It is a security score that measures how well a company handles risk",
+      "It includes hidden costs such as power, cooling, space and staff time"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "TCO adds up every cost of running a system over its life: hardware, software licenses, facilities, power, cooling, maintenance and people. Comparing only server prices understates the on-premises cost."
+  },
+  {
+    "id": "GCDL-T2-007",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Drivers of transformation",
+    "stem": "Which of these most often motivates an organization to pursue digital transformation?",
+    "options": [
+      "A wish to keep the same processes for the next decade",
+      "Customers expecting faster, more personal digital service",
+      "A rule that every company must move to the cloud by law soon",
+      "A need to buy more on-premises hardware every year"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Changing customer expectations and competitive pressure are the most common drivers. No general law requires cloud adoption, and keeping processes unchanged is the opposite of transformation."
+  },
+  {
+    "id": "GCDL-T2-008",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Second-party data",
+    "stem": "An airline shares its customer travel data with a hotel partner under an agreement. To the hotel, what type of data is this?",
+    "options": [
+      "Public open data",
+      "Second-party data",
+      "First-party data",
+      "Third-party data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Second-party data is another organization's first-party data that it shares directly with you, usually through a partnership. Third-party data is bought from aggregators who did not collect it from their own customers."
+  },
+  {
+    "id": "GCDL-T2-009",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data analytics vs ML",
+    "stem": "What is the difference between data analytics and machine learning?",
+    "options": [
+      "There is no difference: both terms describe the exact same activity and tools",
+      "Analytics is a type of storage, while ML is a type of firewall that blocks attacks",
+      "Analytics examines data to find insights; ML builds models that learn from data to make predictions",
+      "Analytics needs no data at all, while ML works only on data that has first been printed out on paper"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Data analytics studies data to answer questions and find patterns. ML uses data to train models that then make predictions or decisions on new data. They often work together."
+  },
+  {
+    "id": "GCDL-T2-010",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Phishing",
+    "stem": "An employee receives an email that looks like it is from IT, asking them to sign in through a link to keep their account. What threat is this, and what protects best?",
+    "options": [
+      "Phishing; security keys or other phishing-resistant two-step verification",
+      "DDoS; a larger web server that can handle more traffic at peak times",
+      "Physical damage; moving the office to a building with stronger walls",
+      "Cryptomining; turning off every VM at the end of each day"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Phishing tricks people into giving credentials. Strong 2-step verification, especially phishing-resistant security keys, means a stolen password alone is not enough to take over the account."
+  },
+  {
+    "id": "GCDL-T2-011",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Refactor",
+    "stem": "A company rewrites its monolithic order system into containerized microservices to use autoscaling and managed services. Which approach is this?",
+    "options": [
+      "Replatform",
+      "Rehost",
+      "Refactor",
+      "Retire"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Refactoring changes the application's code and architecture to become cloud-native. It costs more effort than rehosting or replatforming but gives the most cloud benefit short of reimagining the solution entirely."
+  },
+  {
+    "id": "GCDL-T2-012",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transformation hurdles",
+    "stem": "A company's cloud program is stalling even though the technology works. Which hurdle is the most common cause?",
+    "options": [
+      "Cloud providers refusing to sign enterprise contracts",
+      "A culture and skills gap: teams resist new ways of working",
+      "The cloud being unable to run any kind of database",
+      "Cloud regions that cannot reach the company's branch offices"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Transformation is as much about people and culture as technology. Skills gaps, siloed teams and fear of change are leading hurdles; training and executive sponsorship address them."
+  },
+  {
+    "id": "GCDL-T2-013",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Semi-structured data",
+    "stem": "Which is an example of semi-structured data?",
+    "options": [
+      "JSON records whose fields vary from record to record",
+      "A photograph of a handwritten delivery note",
+      "A video recording of a store's checkout lane",
+      "A relational table with a fixed set of typed columns"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Semi-structured data has tags or keys that give it some organization but no rigid schema; JSON and XML are typical. Video and images are unstructured; fixed-column tables are structured."
+  },
+  {
+    "id": "GCDL-T2-014",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Timeliness",
+    "stem": "A demand forecasting model is trained on sales data that is two years old, and its forecasts miss recent trends. Which data quality dimension is lacking?",
+    "options": [
+      "Timeliness",
+      "Validity",
+      "Uniqueness",
+      "Completeness"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Timeliness means data is current enough for its use. Old data can be complete and accurate yet still lead a model astray when conditions have changed."
+  },
+  {
+    "id": "GCDL-T2-015",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "CIA triad",
+    "stem": "Which security principle ensures that data has not been changed without authorization?",
+    "options": [
+      "Integrity",
+      "Compliance",
+      "Availability",
+      "Confidentiality"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Integrity means data is accurate and unaltered except by authorized changes. Confidentiality keeps data from unauthorized people, and availability keeps systems usable when needed."
+  },
+  {
+    "id": "GCDL-T2-016",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Workload",
+    "stem": "In cloud migration, what is a workload?",
+    "options": [
+      "The number of hours an IT employee works each week on projects",
+      "A contract that sets the price of Google Cloud for one year",
+      "An application or service and the resources it needs to run",
+      "A list of every file kept in an Archive storage class bucket"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A workload is a specific application, service or capability together with the compute, storage and network resources it uses. Migrations are planned workload by workload."
+  },
+  {
+    "id": "GCDL-T2-017",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Policy inheritance",
+    "stem": "An administrator grants a group a role on a folder. What happens to the projects inside that folder?",
+    "options": [
+      "The projects are deleted and recreated with new IDs",
+      "The projects move up to become part of the organization",
+      "The projects ignore it until each one is granted again",
+      "The projects inherit the access granted at the folder"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "IAM policies propagate down the resource hierarchy: access granted on an organization or folder applies to the projects and resources beneath it. That makes it efficient to manage access for whole departments."
+  },
+  {
+    "id": "GCDL-T2-018",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Differentiators",
+    "stem": "Which is one of Google Cloud's stated top differentiators?",
+    "options": [
+      "Data centers located only in one country for simplicity",
+      "A promise never to support any open source software",
+      "A rule that customers use only one programming language",
+      "An AI-ready data platform with AI built into its products"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Google Cloud highlights world-leading AI, an AI-ready data platform, the AI Hypercomputer, security, its global network and a commitment to openness and interoperability."
+  },
+  {
+    "id": "GCDL-T2-019",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data supply chain",
+    "stem": "In the data supply chain, what does data activation mean?",
+    "options": [
+      "Putting insights to work, such as triggering offers or decisions in business systems",
+      "Creating the data for the first time, such as when a customer places an order online",
+      "Deleting old data that is no longer needed so that storage stays tidy",
+      "Moving raw data from one system to another without changing its format at all"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The data supply chain runs from genesis (data is created) through collection, processing, storage and analysis to activation, where insight drives action, such as personalized recommendations or automated decisions."
+  },
+  {
+    "id": "GCDL-T2-020",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Validity",
+    "stem": "A data set contains birth dates in the future and ages of 300 years. Which data quality dimension do these records fail?",
+    "options": [
+      "Validity",
+      "Timeliness",
+      "Uniqueness",
+      "Completeness"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Validity checks whether values follow the rules and allowed ranges for the field. A future birth date or impossible age is invalid even if the field is filled in."
+  },
+  {
+    "id": "GCDL-T2-021",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Encryption at rest",
+    "stem": "How does Google Cloud treat customer data stored in its services?",
+    "options": [
+      "It is encrypted at rest by default, with options for customers to manage keys",
+      "It is stored unencrypted unless the customer writes their own encryption code",
+      "It is encrypted only for customers who buy a premium support plan each year",
+      "It is encrypted only when it is sent over the internet and never once stored"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Google Cloud encrypts customer data at rest by default. Customers who need more control can use customer-managed encryption keys in Cloud KMS, or supply their own keys."
+  },
+  {
+    "id": "GCDL-T2-022",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Serverless",
+    "stem": "What does serverless computing mean for a development team?",
+    "options": [
+      "The team must buy its own servers and install them in a colocation data center",
+      "The team must manually add a new virtual machine each time traffic goes up",
+      "There are no servers anywhere, so the code runs on no hardware",
+      "The provider manages the servers and scaling, and the team pays for what its code uses"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Serverless platforms such as Cloud Run and Cloud Run functions still run on servers, but the provider provisions, scales and maintains them, so developers focus on code and pay per use."
+  },
+  {
+    "id": "GCDL-T2-023",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Multicloud",
+    "stem": "A media company runs its analytics on Google Cloud and its billing system on another public cloud provider. What is this arrangement called?",
+    "options": [
+      "Hybrid on-premises",
+      "Multicloud",
+      "Single-tenant cloud",
+      "Private cloud"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Using services from two or more public cloud providers is multicloud. Organizations choose it for best-of-breed services, resilience or to meet regulatory needs, and often manage it with open, portable tools."
+  },
+  {
+    "id": "GCDL-T2-024",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bigtable",
+    "stem": "An IoT platform stores billions of sensor readings and needs single-digit millisecond reads and writes at very high throughput. Which database fits?",
+    "options": [
+      "Looker",
+      "Spanner",
+      "Cloud SQL",
+      "Bigtable"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bigtable is a fully managed NoSQL wide-column database built for very large volumes and high read and write throughput with low latency, which suits time series and IoT data. Spanner is relational and chosen when you need global transactions."
+  },
+  {
+    "id": "GCDL-T2-025",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Custom models",
+    "stem": "A retailer wants a model that recognizes its own product line on store shelves, which generic image APIs label poorly. Its team has little ML expertise. Which option fits best?",
+    "options": [
+      "Use BigQuery ML to run a SQL query that counts products in the sales table",
+      "Train a custom model with AutoML on Agent Platform using its own labeled images",
+      "Write thousands of hand-coded rules that describe the pixels of each product",
+      "Use the Cloud Translation API to translate the product names into other languages"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AutoML trains custom models on an organization's own labeled data with little ML expertise, which suits specialized needs that pre-trained APIs do not cover. It sits in Gemini Enterprise Agent Platform (formerly Vertex AI)."
+  },
+  {
+    "id": "GCDL-T2-026",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Confidential Computing",
+    "stem": "A healthcare company wants data to stay encrypted even while it is being processed in memory. Which offering fits?",
+    "options": [
+      "Confidential Computing",
+      "Cloud Armor web firewall",
+      "Cloud VPN",
+      "Cloud CDN"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Confidential Computing encrypts data in use, inside the processor's memory, using hardware-based trusted execution environments. Cloud VPN protects data in transit and Cloud Armor protects web apps."
+  },
+  {
+    "id": "GCDL-T2-027",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cloud financial governance",
+    "stem": "Which is a Google-recommended practice for cloud financial governance?",
+    "options": [
+      "Let each engineer create resources with no labels at all so that the billing stays simple to read",
+      "Give all cost decisions to one engineer who does not talk with the finance team",
+      "Review cloud spending once a year, after the annual budget has already been spent",
+      "Name clear owners for cloud costs and have finance, tech and business teams review them together"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Google recommends a cross-functional approach, often a central cloud cost team, with clear ownership of costs, visibility through labels and reports, and regular review. It is about people and process as well as tools."
+  },
+  {
+    "id": "GCDL-T2-028",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud Run functions",
+    "stem": "A team wants a small piece of code to run automatically each time a file is uploaded to a Cloud Storage bucket. Which product fits?",
+    "options": [
+      "Spanner",
+      "Apigee",
+      "Cloud Run functions",
+      "Compute Engine VM fleet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cloud Run functions (formerly Cloud Functions) runs single-purpose code in response to events, such as a file upload or a Pub/Sub message, with no servers to manage."
+  },
+  {
+    "id": "GCDL-T2-029",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Private cloud",
+    "stem": "When is a private cloud most likely the right choice?",
+    "options": [
+      "When the company wants to avoid running and paying for any hardware of its own",
+      "When strict rules require dedicated infrastructure under the company's own control",
+      "When the company needs to scale to millions of new users within the next few minutes",
+      "When the company wants a provider to handle all patching of its hardware for it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A private cloud gives cloud-style self-service on infrastructure dedicated to one organization, which suits strict control or regulatory requirements. It gives up much of the elasticity and reduced hardware burden of public cloud."
+  },
+  {
+    "id": "GCDL-T2-030",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Firestore",
+    "stem": "A mobile app needs a serverless document database that syncs data to phones in real time and works offline. Which product fits?",
+    "options": [
+      "Cloud SQL",
+      "BigQuery",
+      "Bigtable",
+      "Firestore"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Firestore is a serverless NoSQL document database with real-time listeners and offline support for mobile and web apps. BigQuery is for analytics, not app back ends."
+  },
+  {
+    "id": "GCDL-T2-031",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speech-to-Text",
+    "stem": "A call center wants written transcripts of its recorded calls to search them for common complaints. Which pre-trained API fits?",
+    "options": [
+      "Cloud Translation API",
+      "BigQuery ML",
+      "Vision API",
+      "Speech-to-Text API"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Speech-to-Text API converts audio to text using pre-trained models. The transcripts can then be searched or analyzed, for example with Gemini, for themes and sentiment."
+  },
+  {
+    "id": "GCDL-T2-032",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Auditing",
+    "stem": "An auditor asks who changed a firewall rule last Tuesday. Which security function answers this?",
+    "options": [
+      "Encryption of the firewall rule at rest",
+      "Auditing through logs such as Cloud Audit Logs",
+      "Authentication with a password and a code on a phone",
+      "Authorization through an IAM role binding"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Auditing records who did what, where and when. Cloud Audit Logs, viewed in Cloud Logging, keep records of administrative actions and data access for review."
+  },
+  {
+    "id": "GCDL-T2-033",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Autoscaling and load balancing",
+    "stem": "An online store's traffic triples during a sale. What do autoscaling and load balancing do together?",
+    "options": [
+      "Add instances as demand rises and spread requests across the healthy ones",
+      "Move all traffic to a single larger server so that it is easier to manage",
+      "Block all new visitors until traffic returns to its usual daily level",
+      "Store copies of the store's database in an Archive storage class bucket"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Autoscaling adds or removes instances to match demand, and load balancing distributes incoming requests across them and away from unhealthy ones, keeping the site responsive."
+  },
+  {
+    "id": "GCDL-T2-034",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quotas",
+    "stem": "How can an organization stop a test project from creating more than 50 virtual CPUs in a region?",
+    "options": [
+      "Set a resource quota for that project",
+      "Move the project into a new folder",
+      "Create a monthly budget alert",
+      "Turn on Cloud Trace for the project"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Quotas cap how much of a resource a project can use, which controls consumption and cost. Budgets alert on spending but do not cap it by themselves."
+  },
+  {
+    "id": "GCDL-T2-035",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Edge locations",
+    "stem": "What role do Google's edge locations (points of presence) play?",
+    "options": [
+      "They bring traffic onto Google's network close to users, cutting latency",
+      "They store the master copy of every customer's database records",
+      "They are the only places where customers' VMs can run",
+      "They replace regions, so that zones are no longer required at all"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Edge points of presence connect Google's private global network to internet providers near users and host content caches. Traffic then travels on Google's own backbone, which lowers latency. Workloads themselves run in regions and zones."
+  },
+  {
+    "id": "GCDL-T2-036",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AlloyDB",
+    "stem": "A company runs a demanding PostgreSQL application and wants a fully managed, PostgreSQL-compatible database with higher performance for both transactions and analytical queries. Which product fits best?",
+    "options": [
+      "Bigtable",
+      "Firestore",
+      "Archive storage",
+      "AlloyDB"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AlloyDB is a fully managed, PostgreSQL-compatible database built for high performance on transactional workloads with fast analytical queries. Firestore and Bigtable are NoSQL and would mean rewriting the application."
+  },
+  {
+    "id": "GCDL-T2-037",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gemini",
+    "stem": "What makes Gemini models useful for many business tasks?",
+    "options": [
+      "They only handle numbers and cannot read or write text",
+      "They are firewalls that inspect network traffic for known attacks",
+      "They are databases that store each customer's records for reporting",
+      "They are multimodal: they can work with text, images, audio, video and code"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gemini is Google's family of multimodal foundation models. Because it understands and generates across text, images, audio, video and code, one model family can serve many use cases, from summarizing documents to analyzing images."
+  },
+  {
+    "id": "GCDL-T2-038",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Google Security Operations",
+    "stem": "A security operations center wants to ingest large volumes of logs and telemetry, detect threats and automate responses on one platform. Which product fits?",
+    "options": [
+      "Certificate Manager",
+      "Cloud Translation API",
+      "Google Security Operations",
+      "Cloud Storage Autoclass buckets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Google Security Operations (Google SecOps) is a unified security operations platform with SIEM and SOAR capabilities: it ingests telemetry at scale, applies threat intelligence, and speeds detection, investigation and response. Gemini in Google SecOps assists analysts."
+  },
+  {
+    "id": "GCDL-T2-039",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spot VMs",
+    "stem": "A research team runs batch jobs that can be stopped and restarted without harm. How can it cut Compute Engine costs?",
+    "options": [
+      "Use Spot VMs, which are deeply discounted but can be reclaimed at short notice",
+      "Use the largest machine type, which always costs less per hour than small ones",
+      "Keep all of its VMs running all week even when no jobs are waiting to run",
+      "Move the batch jobs to the Archive storage class instead of running them"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Spot VMs use spare Compute Engine capacity at a large discount, but Google can stop them when it needs the capacity back. That suits fault-tolerant batch work, not critical always-on services."
+  },
+  {
+    "id": "GCDL-T2-040",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bandwidth",
+    "stem": "A video studio uploads very large files every night, and the uploads take too long. Which network property should it increase?",
+    "options": [
+      "IP version",
+      "Latency",
+      "Domain names",
+      "Bandwidth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bandwidth is the maximum amount of data a connection can carry per second, so more bandwidth moves large files faster. Latency is the delay per round trip, which matters more for interactive apps."
+  },
+  {
+    "id": "GCDL-T2-041",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Autoclass",
+    "stem": "A team stores millions of objects in Cloud Storage and cannot predict which will be read often. What does Autoclass do for them?",
+    "options": [
+      "Moves each object to a colder or warmer class automatically based on its access",
+      "Encrypts each object with a new key every time that it is read again",
+      "Deletes any object that has not been read by anyone within the last thirty days",
+      "Copies every object into BigQuery so that it can be queried with SQL"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Autoclass automatically transitions objects between storage classes based on how often each one is accessed, which saves money when access patterns are unknown or change over time."
+  },
+  {
+    "id": "GCDL-T2-042",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AI Hypercomputer consumption",
+    "stem": "How does AI Hypercomputer help an organization control the cost of AI workloads?",
+    "options": [
+      "It offers flexible consumption models, such as committed, on-demand and Spot capacity",
+      "It makes every AI workload free once a company signs any kind of Google Cloud contract",
+      "It removes the need to choose hardware, since all AI runs on standard CPUs",
+      "It limits each customer to one small model so that bills never grow at all"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AI Hypercomputer combines performance-optimized hardware (TPUs, GPUs), open software and flexible consumption models, such as committed use discounts, Spot capacity and the Dynamic Workload Scheduler, so organizations can match cost to need."
+  },
+  {
+    "id": "GCDL-T2-043",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identity-Aware Proxy",
+    "stem": "A company wants employees to reach an internal web app from anywhere without a VPN, with access based on identity and device. Which product fits?",
+    "options": [
+      "Bigtable",
+      "Identity-Aware Proxy (IAP)",
+      "Cloud Interconnect (Partner)",
+      "Cloud CDN"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Identity-Aware Proxy checks each user's identity and context before letting them reach an application, an application of zero trust that replaces broad network access through a VPN."
+  },
+  {
+    "id": "GCDL-T2-044",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "GKE Enterprise",
+    "stem": "A company runs Kubernetes clusters on premises, on Google Cloud and on another cloud, and wants consistent management and policy across all of them. Which offering fits?",
+    "options": [
+      "GKE Enterprise",
+      "BigQuery ML",
+      "Cloud Run functions",
+      "Cloud Storage"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "GKE Enterprise extends GKE with fleet management, consistent configuration and policy, and security across clusters running on Google Cloud, on premises and on other clouds."
+  },
+  {
+    "id": "GCDL-T2-045",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Resilient design",
+    "stem": "Which design choice most improves the resilience of a critical database?",
+    "options": [
+      "Turning off monitoring so the database uses fewer resources",
+      "Replicating it across zones or regions and keeping tested backups",
+      "Running it on one large VM in a single zone to keep it simple",
+      "Storing its only copy on an employee's laptop for quick access"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Resilient systems remove single points of failure through redundancy and replication, scale to demand and keep backups that are tested by restoring them."
+  },
+  {
+    "id": "GCDL-T2-046",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SaaS",
+    "stem": "A company adopts Google Workspace for email and documents. Which statement about this service model is true?",
+    "options": [
+      "It is IaaS: the company installs and patches the operating systems on servers",
+      "It is SaaS: the provider runs the whole application and the company just uses it",
+      "It is on-premises: the company buys the servers and places them in its offices",
+      "It is PaaS: the company writes and deploys the email app code itself"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Google Workspace is Software as a Service: complete applications delivered over the internet, with the provider managing infrastructure, platform and software. The customer manages its users, data and settings."
+  },
+  {
+    "id": "GCDL-T2-047",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relational vs NoSQL",
+    "stem": "What is a key difference between relational and NoSQL databases?",
+    "options": [
+      "Relational databases use tables with a fixed schema and SQL; NoSQL databases use flexible data models",
+      "Relational databases can only store images and video, while NoSQL databases can only store numbers",
+      "NoSQL databases must always run on premises; relational ones must always run in the cloud",
+      "Relational databases have no structure at all, while NoSQL databases always require a fixed schema"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Relational databases organize data into related tables with a defined schema and are queried with SQL. NoSQL databases (document, key-value, wide-column) use flexible schemas suited to different access patterns and scale."
+  },
+  {
+    "id": "GCDL-T2-048",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Google Cloud AI benefits",
+    "stem": "Which is a key benefit of Google Cloud's AI offerings according to Google?",
+    "options": [
+      "A single fixed model that cannot be tuned or grounded on company data",
+      "A rule that models train only on data stored outside Google Cloud",
+      "An all-in-one AI developer platform with access to first-party and other models",
+      "A guarantee that AI projects need no data preparation or governance work"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Google points to its AI infrastructure, AI-ready data cloud, its own Gemini models (plus partner and open models), an all-in-one developer platform, and pre-built agents and applications."
+  },
+  {
+    "id": "GCDL-T2-049",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud VPN vs Interconnect",
+    "stem": "A trading firm moves large data sets between its own data center and Google Cloud every hour and wants a private physical link with high bandwidth, not encrypted tunnels over the internet. Which product fits?",
+    "options": [
+      "Cloud VPN",
+      "Cloud Interconnect",
+      "Cloud Run",
+      "Cloud Armor security policies"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cloud Interconnect provides private physical connections, directly or through a partner, with high bandwidth. Cloud VPN creates encrypted tunnels over the public internet, which is quicker to set up but has lower throughput."
+  },
+  {
+    "id": "GCDL-T2-050",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Apigee",
+    "stem": "A bank wants to expose account APIs to fintech partners securely, track how each partner uses them, and charge for usage. Which product fits?",
+    "options": [
+      "Compute Engine VMs",
+      "Apigee API Management",
+      "Cloud Storage Nearline",
+      "Cloud Run functions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Apigee is Google Cloud's API management platform: it secures APIs, applies rate limits and access control, gives analytics on usage, offers a developer portal and supports monetization."
+  },
+  {
+    "id": "GCDL-T2-051",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Global reach",
+    "stem": "A retailer opening stores in Europe and Asia wants its online shop to respond quickly for shoppers there, without leasing any facilities. Which cloud benefit does it rely on?",
+    "options": [
+      "A private cloud that is dedicated to the retailer's own use",
+      "Global reach through the provider's regions around the world",
+      "Capital spending on new local servers in each of those cities",
+      "Open standards that run the same code on any laptop at home"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cloud providers operate regions on several continents, so a company can deploy close to new customers in minutes instead of building or leasing facilities, which would be capital spending."
+  },
+  {
+    "id": "GCDL-T2-052",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data pipelines",
+    "stem": "A company wants a single managed service to transform data in both streaming and batch pipelines without managing clusters. Which product fits?",
+    "options": [
+      "Pub/Sub",
+      "Firestore",
+      "Looker",
+      "Dataflow"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dataflow is a fully managed service for unified stream and batch data processing, based on Apache Beam. Pub/Sub moves messages but does not transform them; Managed Service for Apache Spark suits teams that want Spark."
+  },
+  {
+    "id": "GCDL-T2-053",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Strategic considerations",
+    "stem": "When should an organization invest in building a custom AI model rather than using a pre-built solution?",
+    "options": [
+      "When the use case gives a competitive edge and it has the data and skills to build it",
+      "When it needs a common capability such as translation working by next week",
+      "When it has no relevant data and no one on its staff who understands machine learning",
+      "When it wants the lowest possible development effort and the fastest launch date"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pre-built APIs and agents offer speed and low effort; custom models need more data, expertise and time but can deliver differentiation. The choice weighs implementation speed, effort, differentiation, skills and flexibility."
+  },
+  {
+    "id": "GCDL-T2-054",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Secure by design",
+    "stem": "Which is part of Google's secure-by-design infrastructure?",
+    "options": [
+      "Letting every Google employee access any customer's data whenever they want",
+      "Purpose-built servers with custom security chips that verify the boot process",
+      "Running all customer workloads on hardware bought from an online auction",
+      "Relying only on a perimeter firewall around each of Google's office buildings"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Google designs its own servers, networking and data centers and adds custom hardware such as the Titan security chip, which establishes a hardware root of trust so machines boot only verified software."
+  },
+  {
+    "id": "GCDL-T2-055",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud Trace and Error Reporting",
+    "stem": "A request passes through ten microservices and is sometimes slow. Which tool shows where the time is spent?",
+    "options": [
+      "Cloud Profiler",
+      "Cloud Billing",
+      "Error Reporting",
+      "Cloud Trace"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cloud Trace follows requests across services and shows how long each step takes. Error Reporting groups application errors, and Cloud Profiler shows resource use inside the code."
+  },
+  {
+    "id": "GCDL-T2-056",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Monetizing APIs",
+    "select": 2,
+    "stem": "How can exposing public-facing APIs create new business opportunities? (Choose two.)",
+    "options": [
+      "APIs mean the company's own apps no longer need to be maintained",
+      "Partners can build new products on the company's data and services",
+      "APIs stop competitors from ever building similar products of their own",
+      "APIs remove any need to secure the data that they expose to others",
+      "The company can charge for access, creating a new revenue stream"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Public APIs turn a company's capabilities into a platform that partners and developers can build on, extending reach, and can be monetized directly. They still need security, which API management provides."
+  },
+  {
+    "id": "GCDL-T2-057",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Service models",
+    "select": 2,
+    "stem": "Which two statements about IaaS are true? (Choose two.)",
+    "options": [
+      "The customer manages the operating system and applications",
+      "It is a finished application used through a web browser only",
+      "The customer must buy and rack the physical servers itself",
+      "It offers the most control of the three main service models",
+      "The provider manages the customer's application code for it"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "With IaaS, such as Compute Engine, the provider runs the physical hardware and virtualization, while the customer manages the OS, middleware and apps. That gives the most control and the most management work. Finished applications are SaaS."
+  },
+  {
+    "id": "GCDL-T2-058",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Openness and silos",
+    "select": 2,
+    "stem": "Why do open, interoperable data platforms matter to an organization? (Choose two.)",
+    "options": [
+      "They mean no access controls are needed on the data",
+      "They guarantee all data is accurate as soon as it lands",
+      "They help break down data silos between teams and systems",
+      "They prevent data from ever being shared with partners",
+      "They reduce the risk of being locked in to one vendor"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Open formats and interoperable platforms let data flow between tools, teams and even clouds, which removes silos and keeps the organization free to change vendors. Governance and data quality work are still needed."
+  },
+  {
+    "id": "GCDL-T2-059",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Responsible AI",
+    "select": 2,
+    "stem": "Which two practices support responsible AI? (Choose two.)",
+    "options": [
+      "Keeping humans accountable for high-impact automated decisions",
+      "Hiding how a model was trained from everyone who relies on it",
+      "Using any personal data available without checking consent",
+      "Testing models for unfair bias across different groups of people",
+      "Deploying models without monitoring once they have launched"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Responsible AI includes fairness testing, transparency, privacy, safety and human accountability, plus monitoring after launch. Google publishes AI Principles that guide its own development."
+  },
+  {
+    "id": "GCDL-T2-060",
+    "section": "gcdl",
+    "test": 2,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Trust in the cloud",
+    "select": 2,
+    "stem": "Which two help Google Cloud earn and keep customer trust? (Choose two.)",
+    "options": [
+      "Hiding which locations store a customer's data from them",
+      "Selling customer data to advertisers to keep prices low",
+      "Transparency reports about requests for customer data",
+      "Letting staff access customer data without any records",
+      "Independent third-party audits and compliance certifications"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Google Cloud publishes transparency reports, undergoes third-party audits for standards such as ISO 27001 and SOC 2, gives customers control over data location, and states that it does not use customer data for advertising."
+  },
+  {
+    "id": "GCDL-D-001",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Infrastructure",
+    "stem": "In cloud terms, what does infrastructure refer to?",
+    "options": [
+      "The finished software that customers buy and then use through a web browser each day",
+      "The staff handbook that lists each employee's role, manager and allowed working hours",
+      "The physical and virtual resources, such as servers, storage and networks, that run applications",
+      "The business plan that describes how a company will earn revenue next year"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Infrastructure is the foundation of compute, storage and networking that applications run on. In the cloud, it is delivered as a service and paid for as used."
+  },
+  {
+    "id": "GCDL-D-002",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Databases",
+    "stem": "What is the main job of an operational (transactional) database?",
+    "options": [
+      "Recording day-to-day transactions, such as orders and payments, as they happen",
+      "Holding raw files of every format before anyone has decided how to use them",
+      "Displaying dashboards and charts to managers who make business decisions",
+      "Storing years of history for complex analytical queries across the whole business"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Operational databases support the applications that run the business, handling many small reads and writes quickly and reliably. Warehouses handle analysis, lakes hold raw data and BI tools show dashboards."
+  },
+  {
+    "id": "GCDL-D-003",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Generative AI definition",
+    "stem": "What is generative AI?",
+    "options": [
+      "A database that stores AI models and never runs them on any request from users",
+      "AI that only sorts existing records into folders by date and cannot create anything",
+      "AI that creates new content, such as text, images or code, from what it has learned",
+      "A security product that blocks attacks on websites at the edge of the network"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Generative AI models learn patterns from large amounts of data and use them to produce new content in response to prompts. It is a subset of machine learning."
+  },
+  {
+    "id": "GCDL-D-004",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reimagine",
+    "stem": "A taxi company replaces its phone dispatch system with an entirely new app-based service built on cloud-native services and AI. Which migration approach is this?",
+    "options": [
+      "Retain",
+      "Replatform",
+      "Reimagine",
+      "Rehost"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reimagining rethinks the business process itself and builds a new solution, rather than moving or rewriting the old one."
+  },
+  {
+    "id": "GCDL-D-005",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Misconfiguration",
+    "stem": "A storage bucket holding customer records was accidentally set to allow public access. What type of security risk is this?",
+    "options": [
+      "DDoS attack",
+      "Misconfiguration",
+      "Physical damage",
+      "Cryptomining"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Misconfiguration, such as public buckets or overly broad permissions, is one of the most common causes of cloud data exposure. Tools such as Security Command Center detect it."
+  },
+  {
+    "id": "GCDL-D-006",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "People, process, technology",
+    "stem": "Why does controlling cloud costs need people and process, not just tools?",
+    "options": [
+      "Costs control themselves once a company has moved to the cloud fully",
+      "People and process matter only on premises and never in the public cloud",
+      "Tools show spending, but people must own costs and processes must act on them",
+      "Tools are not available in Google Cloud, so people must track every cost on paper"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Billing reports and recommendations reveal waste, but someone must be accountable and regular processes, such as reviews and approval rules, must turn insight into savings."
+  },
+  {
+    "id": "GCDL-D-007",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Open source",
+    "stem": "What is open source software?",
+    "options": [
+      "Software that is free of every license term and obligation",
+      "Software whose source code is publicly available to use, study and change",
+      "Software that only runs on public cloud and never on premises servers",
+      "Software that a single vendor keeps secret and sells under a license"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Open source code is published under licenses that let anyone use, study, modify and share it, subject to the license terms. Kubernetes and TensorFlow both began at Google and were released as open source."
+  },
+  {
+    "id": "GCDL-D-008",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Structured data",
+    "stem": "Which is an example of structured data?",
+    "options": [
+      "A folder of photos taken at the company's annual summer staff picnic",
+      "Free-text reviews that customers post on a product page",
+      "Recordings of the support calls from the past six months",
+      "A spreadsheet of employees with name, ID and start date columns"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Structured data fits a defined schema of rows and columns, so it is easy to search and analyze with SQL. Photos, audio and free text are unstructured."
+  },
+  {
+    "id": "GCDL-D-009",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agentic AI in operations",
+    "stem": "A logistics company deploys an AI agent that watches for delayed shipments, reroutes them and notifies customers. What makes this agentic rather than a simple chatbot?",
+    "options": [
+      "It stores shipment records in a relational database for later analysis",
+      "It only answers questions when a person types in a message to it each time",
+      "It displays a fixed dashboard of shipments that someone must read and act on",
+      "It acts on its own toward a goal, using tools and systems to complete tasks"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An agent goes beyond answering: it plans and takes actions across systems to reach a goal, within guardrails set by people."
+  },
+  {
+    "id": "GCDL-D-010",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Retain",
+    "stem": "A company keeps one application on premises because it bought new hardware for it last year and will revisit the decision in three years. Which approach is this?",
+    "options": [
+      "Refactor",
+      "Rehost",
+      "Retain",
+      "Retire"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Retain means leaving a workload where it is for now, for reasons such as recent investment, licensing or dependencies, and revisiting it later."
+  },
+  {
+    "id": "GCDL-D-011",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cryptomining",
+    "stem": "A company sees a sudden bill spike from many new VMs running at full CPU that nobody on the team created. What is the likely cause?",
+    "options": [
+      "Cryptomining by an attacker using stolen credentials",
+      "Physical damage to a disk in a Google data center",
+      "A phishing email sent to an employee last year",
+      "A DDoS attack against the company's website"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Attackers who steal cloud credentials often create resources to mine cryptocurrency, leaving the victim with the bill. Strong authentication, least privilege and threat detection reduce the risk."
+  },
+  {
+    "id": "GCDL-D-012",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Billing reports and labels",
+    "stem": "A finance team wants to see cloud costs broken down by department and application. What helps most?",
+    "options": [
+      "Creating one project for the whole company with no labels",
+      "Labeling resources and using Cloud Billing reports to group costs by label",
+      "Asking each team to estimate its spending from memory every month",
+      "Turning off billing exports so the console shows only a single total"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Labels are key-value tags on resources that flow into billing data, so Cloud Billing reports and exports to BigQuery can break costs down by team, app or environment."
+  },
+  {
+    "id": "GCDL-D-013",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Open standard",
+    "stem": "How does an open standard differ from open source?",
+    "options": [
+      "An open standard is a cloud region; open source is a zone inside that same region",
+      "They are the same thing, and both terms refer to software that has no license at all",
+      "An open standard is a published specification anyone can implement; open source is published code",
+      "An open standard is code that only one vendor may ever change; open source is a paid support plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An open standard, such as an API or file format specification, is publicly documented so many vendors can build compatible products. Open source refers to code that is publicly available. Both reduce lock-in."
+  },
+  {
+    "id": "GCDL-D-014",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Third-party data",
+    "stem": "A marketing team buys demographic data compiled by an outside company from many public and commercial sources. What type of data is this?",
+    "options": [
+      "Internal data",
+      "Third-party data",
+      "Second-party data",
+      "First-party data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Third-party data is collected and aggregated by an organization with no direct relationship to the people it describes, then sold or licensed. It is less precise than first-party data and raises privacy questions."
+  },
+  {
+    "id": "GCDL-D-015",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uniqueness",
+    "stem": "A training data set contains the same customer transaction recorded five times. Which data quality dimension is affected?",
+    "options": [
+      "Uniqueness",
+      "Timeliness",
+      "Completeness",
+      "Validity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Uniqueness means each real-world entity or event appears once. Duplicates skew models and counts, so deduplication is part of data preparation."
+  },
+  {
+    "id": "GCDL-D-016",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Virtual machines",
+    "stem": "What is a virtual machine (VM)?",
+    "options": [
+      "A software-defined computer with its own operating system, running on shared physical hardware",
+      "A physical laptop that an employee takes home each evening to work on cloud projects at night",
+      "A database table that stores the names and sizes of a company's servers",
+      "A container that shares the host's kernel and holds only one application"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A VM emulates a full computer, including its own guest operating system, on top of a hypervisor that shares physical hardware among many VMs."
+  },
+  {
+    "id": "GCDL-D-017",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LLM attacks",
+    "stem": "A user types instructions into a chatbot designed to make the model ignore its rules and reveal internal data. What is this called?",
+    "options": [
+      "Phishing, a type of fake email lure",
+      "Ransomware, a type of file encryption attack",
+      "DDoS, a type of traffic flood attack",
+      "Prompt injection, a type of LLM attack"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Prompt injection manipulates a large language model with crafted input to bypass its instructions. Model Armor and careful design of what the model can access help defend against it."
+  },
+  {
+    "id": "GCDL-D-018",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cost-effectiveness",
+    "stem": "Why is the cloud often more cost-effective for workloads with large seasonal peaks?",
+    "options": [
+      "Cloud resources have no cost at all outside of business hours",
+      "Seasonal workloads are always free on any public cloud platform",
+      "You pay for extra capacity only during the peak, not all year",
+      "The provider pays for the hardware the customer keeps in-house"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "On premises, a company must buy enough hardware for the peak and let it sit idle the rest of the year. In the cloud, capacity scales up for the peak and back down afterwards, so the company pays for what it actually uses."
+  },
+  {
+    "id": "GCDL-D-019",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data supply chain order",
+    "stem": "Which order matches the data supply chain?",
+    "options": [
+      "Activation, analysis, storage, processing, collection, genesis",
+      "Genesis, collection, processing, storage, analysis, activation",
+      "Storage, genesis, analysis, collection, activation, processing",
+      "Collection, activation, genesis, storage, analysis, processing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Data is created (genesis), collected, processed, stored, analyzed and finally activated as action in the business."
+  },
+  {
+    "id": "GCDL-D-020",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Accuracy and consistency",
+    "stem": "A customer's address is different in the billing system and the shipping system. Which data quality dimension is this?",
+    "options": [
+      "Timeliness",
+      "Validity",
+      "Uniqueness",
+      "Consistency"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Consistency means the same data agrees across systems and data sets. Accuracy asks whether a value matches the real world; when two systems disagree, at least one is inaccurate and they are inconsistent."
+  },
+  {
+    "id": "GCDL-D-021",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Kubernetes",
+    "stem": "What is Kubernetes?",
+    "options": [
+      "A Google Cloud storage class for rarely accessed backup files",
+      "A firewall that protects websites from DDoS attacks",
+      "A pre-trained API that translates text between many languages",
+      "An open source system for deploying, scaling and managing containers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Kubernetes orchestrates containers: it schedules them, restarts failed ones and scales them. Google created it and released it as open source; GKE is Google's managed version."
+  },
+  {
+    "id": "GCDL-D-022",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Confidentiality",
+    "stem": "Which principle is about keeping data hidden from people who are not authorized to see it?",
+    "options": [
+      "Availability",
+      "Confidentiality",
+      "Resilience",
+      "Integrity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Confidentiality limits access to authorized users, using controls such as IAM and encryption."
+  },
+  {
+    "id": "GCDL-D-023",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Dynamic Workload Scheduler",
+    "stem": "A research team needs a batch of GPUs for a training job and wants to obtain them cost-effectively when capacity is available. Which Google Cloud capability fits?",
+    "options": [
+      "Certificate Manager",
+      "Dynamic Workload Scheduler",
+      "Cloud Billing budget alerts",
+      "Identity-Aware Proxy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dynamic Workload Scheduler helps obtain GPU and TPU capacity for AI and batch jobs, for example starting a job when all the requested accelerators are available, which improves access and cost efficiency."
+  },
+  {
+    "id": "GCDL-D-024",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data-driven insights",
+    "stem": "Which benefit of cloud technology is a company using when it combines sales, web and supply data in one platform to spot trends quickly?",
+    "options": [
+      "Physical security controls",
+      "Reduced latency",
+      "Data-driven insights",
+      "Single tenancy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cloud data platforms bring data from many sources together at scale, so teams can analyze it and act on trends faster, which the guide lists as data-driven insights."
+  },
+  {
+    "id": "GCDL-D-025",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Object storage",
+    "stem": "Which Google Cloud product is object storage for files such as images, backups and videos?",
+    "options": [
+      "Cloud Storage",
+      "Bigtable",
+      "Cloud SQL for MySQL",
+      "Spanner"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cloud Storage stores unstructured objects of any size in buckets, with classes from Standard to Archive. Cloud SQL, Spanner and Bigtable are databases."
+  },
+  {
+    "id": "GCDL-D-026",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Why data quality matters",
+    "stem": "Why is high-quality data essential for a successful AI model?",
+    "options": [
+      "Data quality only affects reporting dashboards and has no effect on machine learning",
+      "Models learn from their data, so errors and gaps lead to poor or unfair predictions",
+      "High-quality data makes models run without any compute resources at all",
+      "Models clean their own data automatically, so quality is never a concern"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A model can only be as good as the data it learns from. Incomplete, outdated, duplicated or biased data produces inaccurate or unfair results."
+  },
+  {
+    "id": "GCDL-D-027",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microservices",
+    "stem": "What is a microservices architecture?",
+    "options": [
+      "A storage approach that splits large files into small Cloud Storage objects",
+      "An app built as small, independent services that communicate through APIs",
+      "A data center made up of very small physical servers in a single rack",
+      "An app built as one large unit that must be deployed all at the same time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microservices break an application into loosely coupled services, each owning one function. Teams can build, deploy and scale them independently, often in containers."
+  },
+  {
+    "id": "GCDL-D-028",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privileged access",
+    "stem": "Why should privileged access, such as administrator rights, be tightly controlled?",
+    "options": [
+      "Admins cannot sign in with two-step verification at all",
+      "A compromised admin account can change or delete almost anything",
+      "Privileged access makes applications run more slowly",
+      "Admin accounts are free, so they should be given to all staff"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Privileged accounts have broad power, so attackers target them. Limit who has them, require strong authentication and log their use."
+  },
+  {
+    "id": "GCDL-D-029",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spot VMs and cost",
+    "stem": "A team moves an overnight rendering job to Spot VMs to control its cloud consumption costs. What trade-off should it expect?",
+    "options": [
+      "The VMs cost more per hour than standard VMs, in return for priority access to capacity",
+      "The VMs must be bought up front with a one-year commitment",
+      "Google can stop the VMs at short notice when it needs the capacity back",
+      "The job can use only one VM at a time in each region"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Spot VMs run on spare Compute Engine capacity at a steep discount, but Google can preempt them with about 30 seconds' notice. Jobs that can restart, such as rendering or batch processing, fit; critical always-on services do not. Commitments are a separate discount, committed use discounts."
+  },
+  {
+    "id": "GCDL-D-030",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Strategic value",
+    "stem": "A company's IT staff spend most of their time patching servers. After moving to managed cloud services, they spend that time building features for customers. Which benefit is this?",
+    "options": [
+      "Data residency: staff now choose which country the servers are located in",
+      "Physical security: staff no longer need badges to reach the server room",
+      "Strategic focus: staff move from undifferentiated work to value-adding work",
+      "Capital expenditure: staff now buy more servers well ahead of each new project"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Managed services take on routine operations such as patching and backups, freeing people to focus on work that differentiates the business."
+  },
+  {
+    "id": "GCDL-D-031",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nearline",
+    "stem": "A company keeps monthly backups that it may need to restore about once a month. Which Cloud Storage class fits best?",
+    "options": [
+      "Standard",
+      "Coldline",
+      "Archive",
+      "Nearline"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Nearline is designed for data accessed about once a month or less, with a 30-day minimum storage duration and a retrieval charge. Coldline suits roughly quarterly access and Archive yearly; Standard suits frequently used data."
+  },
+  {
+    "id": "GCDL-D-032",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vision API",
+    "stem": "Which pre-trained API detects objects, text and faces in photos?",
+    "options": [
+      "Cloud Translation API",
+      "Natural Language API",
+      "Speech-to-Text API",
+      "Vision API"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Vision API analyzes images to detect labels, objects, printed and handwritten text, landmarks and faces. It needs no model training."
+  },
+  {
+    "id": "GCDL-D-033",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managed services",
+    "stem": "What does a managed service mean for an organization's IT team?",
+    "options": [
+      "The IT team must manage every layer, including the physical hardware",
+      "The service runs only on premises and never in a Google Cloud region",
+      "The provider handles operations such as patching, backups and scaling",
+      "The service is run by a third party outside Google Cloud"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With managed services, such as Cloud SQL or GKE Autopilot, Google runs routine operations, so the team spends less time on maintenance and more on its applications."
+  },
+  {
+    "id": "GCDL-D-034",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data loss prevention",
+    "stem": "A company wants to find and mask credit card and national ID numbers in its stored data. Which offering fits?",
+    "options": [
+      "Cloud Interconnect",
+      "Certificate Manager for TLS",
+      "Sensitive Data Protection",
+      "Cloud Run functions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sensitive Data Protection (which includes the Cloud Data Loss Prevention API) discovers, classifies and de-identifies sensitive data, such as by masking or tokenizing it."
+  },
+  {
+    "id": "GCDL-D-035",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Projects",
+    "stem": "In Google Cloud, what is a project?",
+    "options": [
+      "A single virtual machine with a fixed name that cannot be changed",
+      "A container for resources, with its own settings, permissions and billing link",
+      "A folder of employees and job titles in the company's HR system",
+      "A storage class for objects that are read about once a quarter"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Every Google Cloud resource belongs to a project. Projects hold settings, enabled APIs, IAM permissions and the link to a billing account."
+  },
+  {
+    "id": "GCDL-D-036",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI Hypercomputer",
+    "stem": "What is Google Cloud's AI Hypercomputer?",
+    "options": [
+      "An integrated system of AI-optimized hardware, open software and flexible consumption for AI workloads",
+      "A single physical machine that each customer rents by the month to run its spreadsheets and its email",
+      "A program that certifies people as AI engineers after they pass a written exam",
+      "A chatbot that answers billing questions for Google Cloud customers on the website"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AI Hypercomputer is Google Cloud's supercomputing architecture for training and serving AI: TPUs and GPUs, storage and networking, open frameworks and software, and consumption models that help control cost."
+  },
+  {
+    "id": "GCDL-D-037",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Standard class",
+    "stem": "A website serves product images that are read thousands of times a day. Which Cloud Storage class fits?",
+    "options": [
+      "Coldline",
+      "Nearline",
+      "Standard",
+      "Archive"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Standard storage has no minimum storage duration and no retrieval fee, which suits hot data that is read often. The colder classes have lower storage prices but charge for each read."
+  },
+  {
+    "id": "GCDL-D-038",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent Studio",
+    "stem": "A team wants to prototype prompts, ground a model on company documents and build an agent in a visual, low-code environment. Which tool fits?",
+    "options": [
+      "Agent Studio on Gemini Enterprise Agent Platform",
+      "Security Command Center findings and alerts view",
+      "The Archive storage class in Cloud Storage buckets",
+      "Cloud Billing reports in the Google Cloud console"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Agent Studio (formerly Vertex AI Studio) is the console environment for testing prompts, tuning and grounding models and building agents with little code."
+  },
+  {
+    "id": "GCDL-D-039",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Containers vs VMs",
+    "stem": "Why might a company choose containers over virtual machines for a new app?",
+    "options": [
+      "Containers start faster, use fewer resources and move easily between environments",
+      "Containers can only run on premises, which avoids any cloud costs at all",
+      "Containers do not need any code, so developers no longer need to write any",
+      "Containers include their own full operating system, so they are always more secure"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Containers share the host kernel, so they are lightweight, start in seconds and run consistently from a laptop to the cloud. VMs offer stronger isolation and full OS control when that is needed."
+  },
+  {
+    "id": "GCDL-D-040",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IAM",
+    "stem": "What does Identity and Access Management (IAM) control in Google Cloud?",
+    "options": [
+      "Which region stores the cheapest data backups",
+      "Who can take which actions on which resources",
+      "Which language a chatbot replies to users in",
+      "How fast traffic moves between two zones"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "IAM grants roles, which are collections of permissions, to principals such as users, groups and service accounts on specific resources, so admins control who can do what."
+  },
+  {
+    "id": "GCDL-D-041",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Global network",
+    "stem": "Why is Google's private global network considered a differentiator?",
+    "options": [
+      "It only connects Google offices, so customer traffic never uses it for anything",
+      "It lets customers skip encryption, since one company owns the network",
+      "Traffic can travel on Google's own fiber backbone, giving lower latency and more reliability",
+      "It removes the need for regions, as every service runs on the network cables"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Google runs one of the largest private networks, with subsea and land fiber linking its regions and edge locations. Customer traffic that enters it near the user stays on that backbone, improving speed and reliability."
+  },
+  {
+    "id": "GCDL-D-042",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SQL",
+    "stem": "What is SQL?",
+    "options": [
+      "A Google Cloud storage class for rarely accessed data",
+      "A network protocol that encrypts traffic between services",
+      "A language for querying and managing data in relational databases",
+      "A type of NoSQL document database used for mobile apps"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Structured Query Language is the standard language for reading and changing data in relational databases. BigQuery and Spanner also support SQL."
+  },
+  {
+    "id": "GCDL-D-043",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Grounding",
+    "stem": "A company's chatbot gives confident but wrong answers about its own return policy. What would most improve accuracy?",
+    "options": [
+      "Asking the model to answer faster with shorter replies to every user",
+      "Grounding the model's answers in the company's own policy documents",
+      "Removing all company data so that the model relies on general knowledge",
+      "Moving the chatbot's logs to a colder Cloud Storage class to save money"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Grounding connects a generative model to trusted sources, such as company documents or search, so responses are based on current, specific facts. This reduces made-up answers, often called hallucinations."
+  },
+  {
+    "id": "GCDL-D-044",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Choosing compute",
+    "stem": "A team has a containerized API with spiky traffic and wants no infrastructure to manage. Another team runs a large set of microservices needing fine control over Kubernetes. Which products fit, in that order?",
+    "options": [
+      "Compute Engine, then Firestore",
+      "Cloud Run functions, then Looker",
+      "Cloud Run, then GKE",
+      "GKE, then Cloud Run"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cloud Run suits individual containerized services with no cluster to manage. GKE suits teams that want Kubernetes features and control across many services."
+  },
+  {
+    "id": "GCDL-D-045",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Firewalls",
+    "stem": "What does a VPC firewall rule do?",
+    "options": [
+      "Translates text into many languages before it reaches the app",
+      "Encrypts data while it is processed in a VM's memory",
+      "Sends a budget alert when spending passes a set threshold",
+      "Allows or denies network traffic to and from resources based on set conditions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "VPC firewall rules control which connections are allowed to reach or leave VMs, based on criteria such as IP ranges, ports and protocols."
+  },
+  {
+    "id": "GCDL-D-046",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Operational excellence",
+    "stem": "What do reliability and high availability mean in cloud operations?",
+    "options": [
+      "They mean the same thing, and both describe how quickly a bill is paid each month",
+      "Reliability is consistently doing what users expect; high availability is staying up with minimal downtime",
+      "Reliability means never changing a system once it is live; high availability means running in a single zone",
+      "Reliability is the price of a service; high availability is how many regions it is sold in"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A reliable system performs its function correctly over time. A highly available system stays accessible, usually through redundancy across zones or regions. Operational excellence is running and improving systems well."
+  },
+  {
+    "id": "GCDL-D-047",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IP address",
+    "stem": "What is an IP address?",
+    "options": [
+      "A domain name such as shop.example.com",
+      "The street address of the data center where a server is located",
+      "A password used to sign in to a cloud provider's web console",
+      "A numeric label that identifies a device or service on a network"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An IP address identifies a network interface so data can be routed to it. People usually use domain names, which DNS translates to IP addresses."
+  },
+  {
+    "id": "GCDL-D-048",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Modernize a database",
+    "stem": "A company wants to stop paying for commercial database licenses and move to an open source-compatible managed database in the cloud. Which migration approach is this?",
+    "options": [
+      "Retaining the database on premises and making no change to it at all",
+      "Modernizing to a different engine, such as moving to PostgreSQL on AlloyDB or Cloud SQL",
+      "Retiring the database and deleting all of its data without moving any of it",
+      "Lifting and shifting the same licensed database onto a Compute Engine VM with no changes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Moving to a different, open source-compatible engine is a modernization (replatform or refactor) that can cut license costs. Lift and shift keeps the same engine and licensing. Database Migration Service supports such moves."
+  },
+  {
+    "id": "GCDL-D-049",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scaling business decisions",
+    "stem": "An insurer receives 50,000 claims a day and wants each one triaged consistently in seconds. Which ML business value does this show?",
+    "options": [
+      "Scaling decisions that would otherwise need many people",
+      "Replacing all claims staff with one fixed rule",
+      "Removing the need to store any claims data at all",
+      "Guaranteeing that no claim will ever be fraudulent again"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ML can apply the same learned judgment to huge volumes quickly and consistently, scaling decisions that people could not make fast enough, while staff handle exceptions."
+  },
+  {
+    "id": "GCDL-D-050",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AlloyDB Omni",
+    "stem": "A company must keep a PostgreSQL database in its own data center for regulatory reasons but wants the same database engine it uses on Google Cloud. Which offering fits?",
+    "options": [
+      "Cloud Run",
+      "BigQuery ML models",
+      "Firestore",
+      "AlloyDB Omni"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AlloyDB Omni is a downloadable edition of AlloyDB that runs anywhere, including on premises and on other clouds, which supports hybrid and multicloud strategies."
+  },
+  {
+    "id": "GCDL-D-051",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Certificate Manager",
+    "stem": "A company manages hundreds of TLS certificates for its websites and keeps missing renewals. Which product helps?",
+    "options": [
+      "Sensitive Data Protection",
+      "Certificate Manager",
+      "Cloud Interconnect",
+      "Security Command Center"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Certificate Manager provisions, deploys and renews TLS certificates for Google Cloud load balancers, which reduces outages from expired certificates."
+  },
+  {
+    "id": "GCDL-D-052",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Observability",
+    "stem": "What is the goal of observability in modern cloud operations?",
+    "options": [
+      "Printing server logs each morning for the operations manager",
+      "Understanding a system's health from its metrics, logs and traces",
+      "Reading every line of code by hand before any change is ever deployed",
+      "Watching staff through cameras to see who is at their desks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Observability means collecting and using telemetry, such as metrics in Cloud Monitoring, logs in Cloud Logging and traces in Cloud Trace, to understand and troubleshoot systems."
+  },
+  {
+    "id": "GCDL-D-053",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "High availability",
+    "stem": "A company wants its app to keep running even if one data center fails. What should it do?",
+    "options": [
+      "Turn off autoscaling during busy hours",
+      "Run copies of the app in more than one zone",
+      "Move the app to a single edge location",
+      "Run the app on one much larger virtual machine"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Zones are isolated from each other's failures. Spreading copies of an application across zones, or regions for more protection, keeps it available when one location has a problem. A bigger single machine is still a single point of failure."
+  },
+  {
+    "id": "GCDL-D-054",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "BigQuery and Looker",
+    "stem": "What does a company gain by visualizing its BigQuery data in Looker?",
+    "options": [
+      "Faster transactional writes for the company's online checkout system at peak times",
+      "A way to store unstructured video files at the lowest possible price",
+      "Up-to-date dashboards and reports on live warehouse data, built into workflows",
+      "A full copy of the warehouse on every laptop, refreshed by email each week"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Looker queries BigQuery directly, so dashboards and reports reflect current data, and insights can be embedded in apps or trigger actions in workflows."
+  },
+  {
+    "id": "GCDL-D-055",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Insights from unstructured data",
+    "stem": "A hotel chain has years of free-text guest reviews. How can ML create business value from them?",
+    "options": [
+      "By deleting the reviews so that storage costs fall to zero right away",
+      "By moving every review into a relational table with no other change",
+      "By converting each review into a fixed rule for front desk staff",
+      "By finding themes and sentiment across thousands of reviews at once"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ML and generative AI can analyze large volumes of unstructured text to surface recurring complaints, praise and sentiment trends that would take people months to read."
+  },
+  {
+    "id": "GCDL-D-056",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compute Engine value",
+    "stem": "Which is a business benefit of running VMs on Compute Engine instead of buying servers?",
+    "options": [
+      "Keeping each server in the company's own office for easy access",
+      "Never needing to manage the operating system or install any software",
+      "Paying for capacity as it is used and resizing it as needs change",
+      "Owning the physical servers so they can be sold again in the future"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Compute Engine turns server purchases into on-demand capacity that can be resized, created and deleted as needed, with discounts for committed or sustained use. The customer still manages the OS."
+  },
+  {
+    "id": "GCDL-D-057",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Securing the AI stack",
+    "stem": "Which layers does Google Cloud describe securing in the AI stack?",
+    "options": [
+      "Only the user's laptop and the office network",
+      "Only the billing account and the payment card",
+      "Infrastructure, data, models, platform and agents",
+      "Only the physical buildings and their power supply"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Google applies defense in depth across the AI stack: secure infrastructure, protected data, safeguarded models, a governed platform and controlled agents."
+  },
+  {
+    "id": "GCDL-D-058",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hybrid use case",
+    "stem": "Which business case fits a hybrid cloud architecture best?",
+    "options": [
+      "Moving every system to a single public cloud region in one weekend",
+      "Buying all new servers for a company that has never used the cloud",
+      "Using two public cloud providers for different analytics tools at once",
+      "Keeping a legacy mainframe on premises while new apps run in the cloud"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hybrid cloud lets an organization keep some systems on premises, often for latency, regulatory or legacy reasons, while using public cloud for others, with the two connected."
+  },
+  {
+    "id": "GCDL-D-059",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managed Service for Apache Spark",
+    "stem": "A company has many existing Apache Spark jobs on premises and wants to run them on Google Cloud with little rewriting. Which product fits?",
+    "options": [
+      "Cloud SQL for PostgreSQL",
+      "Managed Service for Apache Spark",
+      "Firestore document database with offline sync",
+      "Cloud Storage Autoclass"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Managed Service for Apache Spark (formerly Dataproc) runs Spark and related open source workloads as a managed service, as clusters or serverless, so existing jobs move with minimal change."
+  },
+  {
+    "id": "GCDL-D-060",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AI Hypercomputer components",
+    "stem": "Which set lists the core components of Google Cloud's AI Hypercomputer?",
+    "options": [
+      "Cloud Storage classes, IAM roles and the organization resource hierarchy",
+      "Looker dashboards, BigQuery tables and Pub/Sub topics and subscriptions",
+      "Cloud Armor rules, Cloud VPN tunnels and the Certificate Manager certificates",
+      "Performance-optimized hardware, open software and flexible consumption models"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AI Hypercomputer is an integrated system: TPUs, GPUs, storage and networking tuned for AI; open frameworks and software; and consumption options that balance performance and cost."
+  },
+  {
+    "id": "GCDL-D-061",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Load balancing",
+    "stem": "What does a load balancer do?",
+    "options": [
+      "Sets a monthly budget alert for each project in the billing account",
+      "Distributes incoming traffic across several instances so none is overwhelmed",
+      "Translates domain names into IP addresses for users' browsers",
+      "Encrypts data at rest on persistent disks with a customer-managed encryption key"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Load balancers spread requests across healthy back ends, in one region or globally, improving performance and availability. DNS resolves names, and Cloud Billing manages budgets."
+  },
+  {
+    "id": "GCDL-D-062",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AI Protection",
+    "stem": "A company wants to discover all of its AI models and agents, assess their risks and detect threats against them. Which offering fits?",
+    "options": [
+      "Cloud Storage Nearline lifecycle rules and labels",
+      "BigQuery ML forecasting models",
+      "Cloud VPN high-availability tunnels",
+      "AI Protection in Security Command Center"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AI Protection helps organizations inventory AI assets, secure them and manage threats to them, as part of Security Command Center. It works alongside Model Armor."
+  },
+  {
+    "id": "GCDL-D-063",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Saturation",
+    "stem": "Among the golden signals, what does saturation measure?",
+    "options": [
+      "How long each request takes from start to finish for the end user",
+      "How full a resource is, such as memory or CPU nearing its limit",
+      "How many users visit the site in a given minute of the day",
+      "How many requests fail with an error out of all the requests"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Saturation shows how close a system is to its capacity limits. Traffic is demand, latency is time per request and errors are the rate of failed requests."
+  },
+  {
+    "id": "GCDL-D-064",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Service models compared",
+    "stem": "A company compares running a database on a VM it manages, using Cloud SQL, and buying a finished CRM product. In that order, which service models are these?",
+    "options": [
+      "IaaS, SaaS, PaaS (managed service)",
+      "IaaS, PaaS (managed service), SaaS",
+      "PaaS (managed service), SaaS, IaaS",
+      "SaaS, IaaS, PaaS (managed service)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A self-managed database on a VM is IaaS. Cloud SQL is a managed service in which Google runs the database engine, patches and backups, which is PaaS-like. A finished CRM product is SaaS."
+  },
+  {
+    "id": "GCDL-D-065",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data quality for analytics",
+    "stem": "Analysts find the same customer listed three times with different spellings. Which data governance practice addresses this?",
+    "options": [
+      "Making more copies of the customer table so each team has its own version",
+      "Moving the customer table to the Archive storage class to save money",
+      "Data quality rules and stewardship that keep records unique and accurate",
+      "Allowing every user to edit customer records without any review"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Governance assigns owners (stewards) and quality rules, such as deduplication and validation, so data stays unique and accurate. More copies create more silos and inconsistency."
+  },
+  {
+    "id": "GCDL-D-066",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Securing AI from the start",
+    "stem": "Which is a business implication of not practicing responsible AI?",
+    "options": [
+      "Having to use pre-trained APIs instead of training custom models later",
+      "Being unable to store any data in a public cloud region in that country",
+      "Models that always run more slowly than responsible ones on the same hardware",
+      "Loss of customer trust and legal risk if a model treats people unfairly"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Biased, opaque or unsafe AI can harm people, damage reputation and break laws. Responsible AI practices reduce those risks and help adoption."
+  },
+  {
+    "id": "GCDL-D-067",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Looker multicloud",
+    "stem": "Why is Looker listed among Google Cloud's multicloud offerings?",
+    "options": [
+      "It copies all data from other clouds into a single Archive bucket first",
+      "It can connect to and model data in databases hosted on several clouds",
+      "It runs virtual machines on other cloud providers' physical hardware",
+      "It can only read data that is stored in Google Cloud and nowhere else"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Looker connects directly to many SQL databases and warehouses, wherever they run, and provides one governed semantic layer across them."
+  },
+  {
+    "id": "GCDL-D-068",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cyber resilience",
+    "stem": "What does cyber resilience mean for an organization?",
+    "options": [
+      "Being able to keep operating and recover quickly when an attack succeeds",
+      "Buying insurance instead of having any security controls in place",
+      "Keeping all systems offline so that no attacker can reach them",
+      "Never being attacked at all because the organization uses a public cloud"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cyber resilience assumes some attacks will get through and focuses on limiting damage, continuing operations and recovering quickly, through backups, redundancy, detection and response."
+  },
+  {
+    "id": "GCDL-D-069",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Error budget",
+    "stem": "A service's SLO is 99.9 percent availability, and this month it has used up nearly all of its allowed downtime. In SRE practice, what should the team do?",
+    "options": [
+      "Raise the SLA promised to customers to 100 percent right away",
+      "Release new features faster, since the SLO no longer applies this month",
+      "Slow risky releases and focus on reliability until the budget recovers",
+      "Turn off monitoring so the remaining downtime is not recorded"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The gap between 100 percent and the SLO is the error budget. When it runs low, SRE teams slow risky changes and invest in reliability; when there is budget left, they can release faster."
+  },
+  {
+    "id": "GCDL-D-070",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Multicloud reasons",
+    "select": 2,
+    "stem": "Why might an organization choose a multicloud strategy? (Choose two.)",
+    "options": [
+      "To guarantee that every provider charges exactly the same price",
+      "To use the best service for each job from different providers",
+      "To avoid having to manage identity or access for any users",
+      "To make sure that no data is ever stored in any public cloud",
+      "To meet rules or resilience goals that call for more than one provider"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Organizations adopt multicloud for best-of-breed services, regulatory or resilience reasons and to reduce dependence on one vendor. It adds management work, which open tools such as Kubernetes help with."
+  },
+  {
+    "id": "GCDL-D-071",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Choosing data products",
+    "select": 2,
+    "stem": "Which two pairings of need and Google Cloud product are correct? (Choose two.)",
+    "options": [
+      "Managed MySQL for an existing web app: Firestore",
+      "Real-time document sync for a mobile app: Bigtable",
+      "Cheapest storage for files read once a year: Standard",
+      "Serverless SQL analytics on huge data sets: BigQuery",
+      "Global, strongly consistent relational database: Spanner"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "BigQuery is the serverless data warehouse and Spanner the globally consistent relational database. Firestore, not Bigtable, syncs to mobile apps; Cloud SQL runs managed MySQL; Archive, not Standard, is cheapest for yearly access."
+  },
+  {
+    "id": "GCDL-D-072",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Pre-trained APIs",
+    "select": 2,
+    "stem": "Which two needs can a pre-trained Google Cloud API meet without training a model? (Choose two.)",
+    "options": [
+      "Detecting defects unique to one factory's parts",
+      "Predicting this company's own machine failures",
+      "Translating help articles into Spanish and French",
+      "Ranking products by this store's unique margins",
+      "Turning recorded meetings into text transcripts"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Speech-to-Text and Cloud Translation handle general tasks out of the box. Predictions about a company's own machines, margins or unusual defects need custom models trained on its own data, for example with AutoML or BigQuery ML."
+  },
+  {
+    "id": "GCDL-D-073",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Migration terms",
+    "select": 2,
+    "stem": "Which two pairings of migration approach and description are correct? (Choose two.)",
+    "options": [
+      "Retain: rebuild the solution around a new business process",
+      "Replatform: make a few changes, such as a managed database",
+      "Rehost: move as is, with no code changes",
+      "Retire: rewrite the application into microservices",
+      "Refactor: switch the application off for good"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Rehost is lift and shift and replatform is move and improve. Retire switches an application off, retain leaves it in place for now, refactor rewrites code and reimagine rebuilds the solution."
+  },
+  {
+    "id": "GCDL-D-074",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "SecOps terms",
+    "select": 2,
+    "stem": "Which two pairings of security operations term and meaning are correct? (Choose two.)",
+    "options": [
+      "Threat intelligence: a list of the company's own passwords",
+      "Threat intelligence: knowledge about attackers and their methods",
+      "Threat response: the encryption of data while it is at rest",
+      "Security posture: the overall strength of an organization's defenses",
+      "Security posture: the monthly price paid for security tools"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Threat intelligence is information about threat actors, tactics and indicators. Security posture is how well an organization's controls and configurations protect it. Threat response is the actions taken to contain and recover from an incident."
+  },
+  {
+    "id": "GCDL-D-075",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlOps",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "DevOps and SRE",
+    "select": 2,
+    "stem": "Which two statements about DevOps and Site Reliability Engineering are true? (Choose two.)",
+    "options": [
+      "DevOps keeps developers and operations in separate silos",
+      "SRE requires that systems never have any downtime at all",
+      "SLAs are internal goals that customers never get to see",
+      "SRE applies software engineering to operations problems",
+      "Both aim to release changes quickly while keeping services reliable"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "DevOps is a culture that brings development and operations together for faster, safer delivery. SRE, which began at Google, is one way to practice it, using SLIs, SLOs and error budgets. SLAs are customer-facing agreements."
+  },
+  {
+    "id": "GCDL-D-076",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security as a benefit",
+    "stem": "Why do many organizations find the cloud can improve their security posture?",
+    "options": [
+      "Cloud providers take legal ownership of the customer's data and its protection",
+      "Data in the cloud cannot be accessed by anyone, even its owners",
+      "Customers no longer need to decide who has access to their data or applications",
+      "Large providers invest in security expertise and controls that few companies can match alone"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hyperscale providers bring security engineering, hardened infrastructure and default encryption at a scale most companies cannot build themselves. Customers still manage their own access, data and configuration."
+  },
+  {
+    "id": "GCDL-D-077",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coldline",
+    "stem": "A team keeps disaster recovery copies it expects to read about once a quarter. Which Cloud Storage class balances storage price and retrieval cost best?",
+    "options": [
+      "Coldline",
+      "Standard",
+      "Archive",
+      "Nearline"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Coldline is designed for data accessed about once a quarter, with a 90-day minimum storage duration. Archive is cheaper to store but costlier to read and meant for yearly access; Nearline suits monthly access."
+  },
+  {
+    "id": "GCDL-D-078",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlAI",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "ML terms",
+    "stem": "In machine learning, what is training data?",
+    "options": [
+      "The examples a model learns patterns from before it makes predictions",
+      "The hardware chip on which a model is installed in the factory",
+      "The final report a model prints out after every prediction it has made",
+      "The password that protects access to a model's API endpoint"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A model learns from training data, often labeled examples, and is then evaluated on separate data to check how well it generalizes."
+  },
+  {
+    "id": "GCDL-D-079",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlModernize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "API management",
+    "stem": "A company's public APIs are being overloaded by one partner's buggy script. Which API management feature helps most?",
+    "options": [
+      "Publishing every API key on the company's website",
+      "Rate limiting (quotas) per partner, enforced by Apigee",
+      "Turning off all logging so that the API runs faster",
+      "Moving the API to the Archive storage class right away"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "API management platforms such as Apigee can enforce quotas and rate limits per consumer, protecting back-end systems while keeping the API available to other partners."
+  },
+  {
+    "id": "GCDL-D-080",
+    "section": "gcdl",
+    "test": 0,
+    "module": 1,
+    "domain": "gcdlSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Digital sovereignty",
+    "stem": "A government agency needs assurance about where its data is stored, who can access it and that it can operate under local rules. Which concept is this?",
+    "options": [
+      "Serverless computing",
+      "Digital sovereignty",
+      "Autoscaling",
+      "Load balancing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Digital sovereignty covers control over data location, operations and access under local laws. Google Cloud offers sovereign cloud options and controls such as data residency and access transparency."
+  }
+]

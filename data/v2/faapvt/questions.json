@@ -1,0 +1,4042 @@
+[
+  {
+    "id": "FAAPVT-T1-001",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pilot documents",
+    "stem": "Which documents must a private pilot have in their physical possession or readily accessible while acting as pilot in command?",
+    "options": [
+      "A pilot certificate and the pilot logbook showing the most recent flight review endorsement",
+      "A pilot certificate, a medical certificate or BasicMed documents, and photo identification",
+      "A pilot certificate, the aircraft registration and the airworthiness certificate for the aircraft"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 61.3 requires the pilot certificate, a current medical certificate (or the BasicMed documents) and a government photo ID. The logbook is not required to be carried, and the registration and airworthiness certificate belong to the aircraft, not the pilot."
+  },
+  {
+    "id": "FAAPVT-T1-002",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stalls",
+    "stem": "An airplane wing stalls when",
+    "options": [
+      "its pitch attitude is above 20 degrees",
+      "its airspeed falls below the bottom of the green arc",
+      "it exceeds its critical angle of attack"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A wing stalls at its critical angle of attack, whatever the airspeed, attitude or weight. Stall speeds on the airspeed indicator only apply in particular conditions."
+  },
+  {
+    "id": "FAAPVT-T1-003",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Class B airspace",
+    "stem": "What is required before a VFR pilot may enter Class B airspace?",
+    "options": [
+      "An instrument rating and an IFR flight plan on file",
+      "A clearance from ATC to enter it",
+      "Two-way radio contact with the approach controller"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 91.131 requires an ATC clearance to operate in Class B airspace. Two-way radio contact is enough for Class C and D. VFR flight is allowed in Class B with a clearance."
+  },
+  {
+    "id": "FAAPVT-T1-004",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Thunderstorms",
+    "stem": "What three conditions are needed for a thunderstorm to form?",
+    "options": [
+      "High humidity, a strong temperature inversion and light surface winds",
+      "A cold front, freezing temperatures aloft and high pressure",
+      "Sufficient moisture, an unstable lapse rate and a lifting force"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Thunderstorms need enough water vapor, unstable air and a lifting action (fronts, terrain, heating or converging winds) to start the air rising."
+  },
+  {
+    "id": "FAAPVT-T1-005",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "METAR",
+    "stem": "A METAR reads: KMWX 141853Z 27012G20KT 5SM -RA BR BKN012 OVC025 14/12 A2992. What is the ceiling?",
+    "options": [
+      "2,500 feet AGL",
+      "1,200 feet MSL",
+      "1,200 feet AGL"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The ceiling is the lowest broken or overcast layer (or vertical visibility). BKN012 is broken at 1,200 feet above ground level; METAR cloud heights are AGL."
+  },
+  {
+    "id": "FAAPVT-T1-006",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pressure altitude",
+    "stem": "Field elevation is 1,380 feet and the altimeter setting is 30.12. What is the pressure altitude?",
+    "options": [
+      "1,180 feet",
+      "1,580 feet",
+      "1,380 feet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pressure altitude = field elevation + (29.92 - altimeter setting) x 1,000. 29.92 - 30.12 = -0.20, so 1,380 - 200 = 1,180 feet."
+  },
+  {
+    "id": "FAAPVT-T1-007",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Magnetic variation",
+    "stem": "The true course is 095 degrees and the magnetic variation is 7 degrees east. What is the magnetic course?",
+    "options": [
+      "102 degrees",
+      "088 degrees",
+      "095 degrees"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "East variation is subtracted and west variation added to go from true to magnetic (east is least, west is best). 095 - 7 = 088 degrees."
+  },
+  {
+    "id": "FAAPVT-T1-008",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hypoxia",
+    "stem": "Which type of hypoxia results from carbon monoxide poisoning?",
+    "options": [
+      "Histotoxic hypoxia",
+      "Hypoxic hypoxia",
+      "Hypemic hypoxia"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Carbon monoxide binds to hemoglobin so the blood cannot carry enough oxygen, which is hypemic hypoxia. Hypoxic hypoxia comes from low oxygen pressure at altitude, and histotoxic from alcohol or drugs that stop cells using oxygen."
+  },
+  {
+    "id": "FAAPVT-T1-009",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medical certificates",
+    "stem": "A pilot who is 35 years old receives a third-class medical certificate. For private pilot privileges it expires at the end of the",
+    "options": [
+      "24th calendar month after the month of the examination",
+      "60th calendar month after the month of the examination",
+      "12th calendar month after the month of the examination"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Under 14 CFR 61.23, a third-class medical issued before age 40 is valid for 60 calendar months. Issued at age 40 or older, it is valid for 24 calendar months."
+  },
+  {
+    "id": "FAAPVT-T1-010",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Load factor",
+    "stem": "In a level, coordinated 60-degree banked turn, what load factor does the airplane experience?",
+    "options": [
+      "1.5 G",
+      "2 G",
+      "3 G"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Load factor in a level turn is 1 divided by the cosine of the bank angle. cos 60 is 0.5, so the load factor is 2 G, and stall speed rises by about 41 percent."
+  },
+  {
+    "id": "FAAPVT-T1-011",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VFR weather minimums",
+    "stem": "What are the basic VFR minimums in Class C airspace?",
+    "options": [
+      "3 statute miles visibility, 500 feet below, 1,000 feet above and 2,000 feet horizontally from clouds",
+      "1 statute mile visibility, 500 feet below, 1,000 feet above and 2,000 feet horizontally from clouds",
+      "3 statute miles visibility and clear of clouds, with no other cloud separation needed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.155 gives Class C and D the same minimums as Class E below 10,000 feet MSL: 3 statute miles, 500 below, 1,000 above, 2,000 horizontal. Clear of clouds with 3 miles is the Class B rule."
+  },
+  {
+    "id": "FAAPVT-T1-012",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thunderstorms",
+    "stem": "During which stage of a thunderstorm's life cycle do strong updrafts and downdrafts exist at the same time and precipitation begin to reach the ground?",
+    "options": [
+      "The cumulus stage",
+      "The mature stage",
+      "The dissipating stage"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The cumulus stage is mostly updrafts, the mature stage begins when precipitation reaches the surface and has both updrafts and downdrafts, and the dissipating stage is mainly downdrafts."
+  },
+  {
+    "id": "FAAPVT-T1-013",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "METAR",
+    "stem": "In the same METAR, 27012G20KT means the wind is from",
+    "options": [
+      "270 degrees true at 12 knots, gusting to 20 knots",
+      "270 degrees true at 20 knots, gusting to 12 knots",
+      "270 degrees magnetic at 12 knots, gusting to 20 knots"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "METAR and TAF wind directions are referenced to true north and speeds are in knots; G marks the peak gust. Winds broadcast by ATIS and towers are magnetic."
+  },
+  {
+    "id": "FAAPVT-T1-014",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Density altitude",
+    "stem": "The pressure altitude is 4,000 feet and the outside air temperature is 25 degrees C. Using the rule of about 120 feet per degree C above standard, what is the approximate density altitude?",
+    "options": [
+      "4,000 feet",
+      "7,000 feet",
+      "6,200 feet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Standard temperature at 4,000 feet is 15 - (2 x 4) = 7 degrees C. The air is 18 degrees warmer, and 18 x 120 = 2,160 feet. Density altitude is about 4,000 + 2,160, or 6,200 feet."
+  },
+  {
+    "id": "FAAPVT-T1-015",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time, speed and distance",
+    "stem": "A leg of 85 nautical miles is flown at a groundspeed of 102 knots. About how long does it take?",
+    "options": [
+      "1 hour 10 minutes",
+      "50 minutes",
+      "42 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Time = distance / groundspeed = 85 / 102 = 0.833 hours, and 0.833 x 60 is about 50 minutes."
+  },
+  {
+    "id": "FAAPVT-T1-016",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hazardous attitudes",
+    "stem": "A pilot thinks, \"Rules are for other people; I know this airplane better than the POH.\" Which hazardous attitude is this, and what is its antidote?",
+    "options": [
+      "Invulnerability; it could happen to me too",
+      "Macho; taking chances is foolish",
+      "Anti-authority; follow the rules, they are usually right"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Resenting rules and procedures is the anti-authority attitude; its antidote is \"Follow the rules. They are usually right.\""
+  },
+  {
+    "id": "FAAPVT-T1-017",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Recent flight experience",
+    "stem": "To carry passengers at night, a pilot must have made within the preceding 90 days at least three takeoffs and three landings",
+    "options": [
+      "to a full stop, between 1 hour after sunset and 1 hour before sunrise, in the same category and class",
+      "to a full stop, during the period of night defined as the end of evening civil twilight to sunrise",
+      "to a full stop or touch and go, between sunset and sunrise, in an aircraft of any category, class or type"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 61.57(b) requires three takeoffs and three landings to a full stop during the period beginning 1 hour after sunset and ending 1 hour before sunrise, in the same category, class and type (if a type rating is required)."
+  },
+  {
+    "id": "FAAPVT-T1-018",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Left-turning tendencies",
+    "stem": "In a climb at high angle of attack and high power, P-factor makes a single-engine airplane with a clockwise-turning propeller (seen from the cockpit) tend to",
+    "options": [
+      "pitch nose down",
+      "yaw to the right",
+      "yaw to the left"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At high angle of attack the descending blade on the right side meets the air at a greater angle and produces more thrust, so the airplane yaws left. The pilot holds right rudder."
+  },
+  {
+    "id": "FAAPVT-T1-019",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Class G minimums",
+    "stem": "In Class G airspace, during the day, at 1,000 feet AGL, what are the VFR minimums?",
+    "options": [
+      "1 statute mile visibility, 500 feet below and 1,000 feet above clouds",
+      "1 statute mile visibility and clear of clouds",
+      "3 statute miles visibility and clear of clouds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At or below 1,200 feet above the surface in Class G during the day, 14 CFR 91.155 requires 1 statute mile and clear of clouds. At night it rises to 3 statute miles with 500/1,000/2,000 cloud clearances."
+  },
+  {
+    "id": "FAAPVT-T1-020",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stability",
+    "stem": "Which weather would you expect in a stable air mass?",
+    "options": [
+      "Cumuliform clouds, turbulence and showery precipitation",
+      "Stratiform clouds, smooth air and poor visibility in haze",
+      "Towering clouds, gusty winds and good visibility in showers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Stable air resists vertical motion, so it brings layered clouds, steady precipitation, smooth air and often restricted visibility. Unstable air brings cumuliform clouds, showers, turbulence and good visibility outside them."
+  },
+  {
+    "id": "FAAPVT-T1-021",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TAF",
+    "stem": "In a TAF, what does the group TEMPO 2014/2017 2SM TSRA BKN030CB mean?",
+    "options": [
+      "A steady change to thunderstorms and 2 miles visibility beginning at 1400Z and lasting until 1700Z the next day",
+      "A 20 percent chance of thunderstorms with 2 miles visibility from 2014Z until 2017Z on the same date",
+      "Temporary thunderstorms with 2 miles visibility, each lasting under an hour, between 1400Z and 1700Z on the 20th"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "TEMPO forecasts temporary fluctuations that last less than an hour each and cover less than half the period. 2014/2017 is the 20th day from 1400Z to 1700Z UTC. A lasting change uses FM or BECMG; probabilities use PROB30 or PROB40."
+  },
+  {
+    "id": "FAAPVT-T1-022",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Density altitude",
+    "stem": "Which combination gives the highest density altitude and the poorest airplane performance?",
+    "options": [
+      "High elevation, low temperature and low humidity",
+      "Low elevation, high temperature and low humidity",
+      "High elevation, high temperature and high humidity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Density altitude rises with elevation, temperature and humidity, because each makes the air less dense. Water vapor is lighter than dry air, so humid air reduces performance too."
+  },
+  {
+    "id": "FAAPVT-T1-023",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VOR",
+    "stem": "Your VOR receiver is set to 030 degrees with a FROM indication and the needle is centered. Where are you?",
+    "options": [
+      "On the 030 radial, southwest of the station",
+      "On the 030 radial, northeast of the station",
+      "On the 210 radial, southwest of the station"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With FROM showing and the needle centered, the OBS reads the radial you are on. The 030 radial runs northeast from the station, so you are northeast of it."
+  },
+  {
+    "id": "FAAPVT-T1-024",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fuel requirements",
+    "stem": "Under day VFR, an airplane must carry enough fuel to fly to the first point of intended landing and, at normal cruising speed, to fly after that for at least",
+    "options": [
+      "45 minutes",
+      "30 minutes",
+      "20 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 91.151 requires a 30-minute reserve at normal cruise for day VFR in an airplane and 45 minutes at night."
+  },
+  {
+    "id": "FAAPVT-T1-025",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ground effect",
+    "stem": "An airplane taking off in ground effect",
+    "options": [
+      "needs a higher airspeed than usual to lift off from the runway surface",
+      "has more induced drag than in free air, slowing its acceleration",
+      "may lift off below the speed it needs to climb out of ground effect"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Within about one wingspan of the surface, ground effect reduces induced drag. The airplane may become airborne before it reaches the speed it needs to keep flying once it climbs out of ground effect."
+  },
+  {
+    "id": "FAAPVT-T1-026",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spatial disorientation",
+    "stem": "In instrument conditions a pilot feels a strong sense of turning and climbing. What should the pilot do?",
+    "options": [
+      "Close one eye and look for a horizon outside",
+      "Trust the inner ear sensations and correct for them",
+      "Trust the flight instruments and fly by them"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Without outside references the vestibular system gives false signals. The cure for spatial disorientation is to rely on, and fly by, the flight instruments."
+  },
+  {
+    "id": "FAAPVT-T1-027",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed limits",
+    "stem": "Unless authorized by ATC, what is the maximum indicated airspeed at or below 2,500 feet AGL within 4 nautical miles of the primary airport of a Class D area?",
+    "options": [
+      "230 knots",
+      "200 knots",
+      "250 knots"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 91.117(b) limits speed to 200 knots at or below 2,500 feet AGL within 4 NM of the primary airport of Class C or D airspace. The 250-knot limit applies below 10,000 feet MSL generally."
+  },
+  {
+    "id": "FAAPVT-T1-028",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Minimum safe altitudes",
+    "stem": "Except when necessary for takeoff or landing, what is the minimum altitude over a congested area of a city?",
+    "options": [
+      "1,500 feet above the surface, measured directly below the aircraft at its current position",
+      "1,000 feet above the highest obstacle within a horizontal radius of 2,000 feet of the aircraft",
+      "500 feet above the highest obstacle within a horizontal radius of 1,000 feet of the aircraft"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 91.119(b) sets 1,000 feet above the highest obstacle within 2,000 feet horizontally over congested areas or open-air assemblies of persons. The 500-foot rule applies over other than congested areas."
+  },
+  {
+    "id": "FAAPVT-T1-029",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cloud bases",
+    "stem": "The surface temperature is 22 degrees C and the dewpoint is 12 degrees C. About how high are the bases of convective clouds above the ground?",
+    "options": [
+      "2,500 feet",
+      "4,000 feet",
+      "5,500 feet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Temperature and dewpoint converge at about 2.5 degrees C per 1,000 feet in rising unsaturated air. A 10 degree spread divided by 2.5 gives about 4,000 feet AGL."
+  },
+  {
+    "id": "FAAPVT-T1-030",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AIRMETs",
+    "stem": "Which AIRMET covers moderate icing and the freezing level?",
+    "options": [
+      "AIRMET Sierra",
+      "AIRMET Zulu",
+      "AIRMET Tango"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIRMET Sierra covers IFR conditions and mountain obscuration, Tango covers moderate turbulence, sustained surface winds of 30 knots or more and low-level wind shear, and Zulu covers moderate icing and freezing levels."
+  },
+  {
+    "id": "FAAPVT-T1-031",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Airspeed indicator",
+    "stem": "On an airspeed indicator, what does the top of the white arc represent?",
+    "options": [
+      "The maximum structural cruising speed (VNO)",
+      "The power-off stalling speed with flaps up (VS1)",
+      "The maximum flaps extended speed (VFE)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The white arc is the flap operating range: its bottom is VSO, its top VFE. The green arc runs from VS1 to VNO, and the red line is VNE."
+  },
+  {
+    "id": "FAAPVT-T1-032",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Center of gravity",
+    "stem": "Empty weight is 1,500 pounds with a moment of 57,000 pound-inches. You add 340 pounds of people at 37.0 inches, 30 gallons of fuel at 48.0 inches and 50 pounds of baggage at 95.0 inches. Where is the center of gravity?",
+    "options": [
+      "About 40.1 inches aft of datum",
+      "About 38.5 inches aft of datum",
+      "About 41.6 inches aft of datum"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fuel weighs 30 x 6 = 180 pounds. Moments: 57,000 + (340 x 37) 12,580 + (180 x 48) 8,640 + (50 x 95) 4,750 = 82,970. Weight: 1,500 + 340 + 180 + 50 = 2,070. CG = 82,970 / 2,070, about 40.1 inches."
+  },
+  {
+    "id": "FAAPVT-T1-033",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sectional charts",
+    "stem": "On a sectional chart, Class D airspace is shown by",
+    "options": [
+      "a dashed magenta line",
+      "a dashed blue line",
+      "a solid magenta line"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Class B is a solid blue line, Class C a solid magenta line, Class D a dashed blue line, and Class E starting at the surface a dashed magenta line."
+  },
+  {
+    "id": "FAAPVT-T1-034",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light gun signals",
+    "stem": "While taxiing toward the runway with a failed radio, you see a flashing green light from the tower. What does it mean?",
+    "options": [
+      "Cleared to taxi",
+      "Return to the starting point",
+      "Cleared for takeoff"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "On the ground, flashing green means cleared to taxi, steady green means cleared for takeoff, and flashing white means return to the starting point on the airport."
+  },
+  {
+    "id": "FAAPVT-T1-035",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Night vision",
+    "stem": "What is the best way to see objects at night?",
+    "options": [
+      "Scan slowly and look slightly to one side of the object",
+      "Turn the cockpit lights up to full brightness to help scanning",
+      "Look directly at the object and keep the gaze fixed on it"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rods, which work best in dim light, are around the edge of the retina. Off-center viewing and a slow scan with short pauses let the rods pick up objects. Bright cockpit lights spoil dark adaptation."
+  },
+  {
+    "id": "FAAPVT-T1-036",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Right-of-way rules",
+    "stem": "Two airplanes are converging at about the same altitude, and neither is overtaking the other. Which has the right of way?",
+    "options": [
+      "The airplane on the right",
+      "The airplane on the left",
+      "The faster of the two airplanes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Under 14 CFR 91.113(d), when aircraft of the same category converge at about the same altitude, the aircraft to the other's right has the right of way. Speed does not decide it."
+  },
+  {
+    "id": "FAAPVT-T1-037",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pitot-static system",
+    "stem": "The static port becomes blocked by ice during a climb, while the pitot tube stays clear. How do the instruments respond?",
+    "options": [
+      "The altimeter keeps working normally but the airspeed indicator drops straight to zero",
+      "The altimeter stays at the same reading and the vertical speed indicator shows zero",
+      "The vertical speed indicator shows a climb and the altimeter reads too low"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With a blocked static source the altimeter freezes at the altitude where the blockage happened and the VSI reads zero. The airspeed indicator still works but becomes inaccurate (it reads low in a climb)."
+  },
+  {
+    "id": "FAAPVT-T1-038",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fog",
+    "stem": "What type of fog forms when moist air moves over a colder surface, often along coasts, and can form with winds?",
+    "options": [
+      "Advection fog",
+      "Steam fog",
+      "Radiation fog"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Advection fog forms when moist air moves over colder ground or water and can persist with winds up to about 15 knots. Radiation fog forms on clear, calm nights over land."
+  },
+  {
+    "id": "FAAPVT-T1-039",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SIGMETs",
+    "stem": "A SIGMET (not a convective SIGMET) is issued for which hazard?",
+    "options": [
+      "Ceilings below 1,000 feet over a wide area",
+      "Severe icing not associated with thunderstorms",
+      "Moderate turbulence affecting a wide area of the country"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SIGMETs cover severe icing, severe or extreme turbulence, dust or sandstorms lowering visibility below 3 miles, and volcanic ash, all not associated with thunderstorms. Moderate turbulence and widespread IFR are AIRMET items."
+  },
+  {
+    "id": "FAAPVT-T1-040",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Takeoff performance",
+    "stem": "How does a headwind affect takeoff performance?",
+    "options": [
+      "It lengthens the ground roll but steepens the climb gradient over the ground",
+      "It shortens the ground roll and steepens the climb gradient over the ground",
+      "It has no effect, because the airplane lifts off at the same indicated airspeed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The airplane lifts off at the same indicated airspeed, but a headwind means a lower groundspeed at liftoff, so the ground roll is shorter and the climb is steeper relative to the ground."
+  },
+  {
+    "id": "FAAPVT-T1-041",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sectional charts",
+    "stem": "What does a magenta shaded band, fading toward the outside, around an airport on a sectional chart mean?",
+    "options": [
+      "Class E airspace begins at 700 feet AGL inside the shaded area",
+      "Class E airspace begins at the surface inside the shaded area",
+      "Class G airspace extends up to 1,200 feet AGL inside the shaded area"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The magenta vignette marks where Class E begins at 700 feet AGL; its sharp edge is the boundary. A blue vignette marks where Class E begins at 1,200 feet AGL."
+  },
+  {
+    "id": "FAAPVT-T1-042",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Airport signs",
+    "stem": "A sign with white letters on a red background reading 18-36 is beside a taxiway. What must you do?",
+    "options": [
+      "Stop and wait for a light gun signal before crossing the marking",
+      "Continue taxiing, because the sign only shows the runway direction",
+      "Hold short unless ATC has cleared you to enter or cross the runway"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "White on red is a mandatory instruction sign. A runway holding position sign marks the hold point for that runway; at a towered airport you need a clearance to cross it."
+  },
+  {
+    "id": "FAAPVT-T1-043",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alcohol and drugs",
+    "stem": "Which statement about alcohol is correct under 14 CFR 91.17?",
+    "options": [
+      "No person may act as a crewmember within 12 hours of drinking alcohol or with a blood alcohol content of 0.08 or more",
+      "A pilot may fly 8 hours after drinking alcohol as long as the pilot does not feel any of its effects at the time",
+      "No person may act as a crewmember within 8 hours of drinking alcohol or with a blood alcohol content of 0.04 or more"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "91.17 sets two separate limits: 8 hours from bottle to throttle and a blood alcohol content under 0.04. Both must be met, and feeling fine is not a test. Many pilots wait well beyond 8 hours."
+  },
+  {
+    "id": "FAAPVT-T1-044",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carburetor ice",
+    "stem": "In an airplane with a fixed-pitch propeller, the first sign of carburetor ice is usually",
+    "options": [
+      "a loss of RPM",
+      "a rise in oil temperature",
+      "a rise in manifold pressure"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ice in the carburetor restricts airflow, so with a fixed-pitch propeller the first indication is a drop in RPM, often followed by rough running. With a constant-speed propeller it shows as a drop in manifold pressure."
+  },
+  {
+    "id": "FAAPVT-T1-045",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Landing illusions",
+    "stem": "On approach to a runway narrower than you are used to, what illusion may occur?",
+    "options": [
+      "You feel lower than you are, and may fly a higher approach",
+      "You feel slower than you are, and may land too fast",
+      "You feel higher than you are, and may fly a lower approach"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A narrow runway looks like a higher approach, so the pilot tends to descend too low. A wide runway gives the opposite illusion of being too low."
+  },
+  {
+    "id": "FAAPVT-T1-046",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Icing",
+    "stem": "What is required for structural icing to form on an airplane?",
+    "options": [
+      "Visible moisture and an airframe temperature at or below freezing",
+      "Any cloud layer combined with a temperature inversion aloft",
+      "High relative humidity and an air temperature below minus 20 degrees C"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Structural ice needs visible moisture (cloud, rain or drizzle) and an aircraft surface at or below 0 degrees C. Freezing rain forms the fastest, most dangerous clear ice."
+  },
+  {
+    "id": "FAAPVT-T1-047",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Winds aloft",
+    "stem": "A winds and temperatures aloft forecast shows 2415+05 for 6,000 feet. What does it mean?",
+    "options": [
+      "Wind from 240 degrees true at 15 knots, temperature plus 5 degrees C",
+      "Wind from 240 degrees magnetic at 15 knots, temperature plus 5 degrees F",
+      "Wind from 150 degrees true at 24 knots, temperature plus 5 degrees C"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first two digits are direction in tens of degrees true, the next two the speed in knots, and the last group the temperature in degrees Celsius."
+  },
+  {
+    "id": "FAAPVT-T1-048",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Climb speeds",
+    "stem": "Which speed gives the greatest altitude gain over the shortest horizontal distance, for clearing an obstacle after takeoff?",
+    "options": [
+      "VA",
+      "VX",
+      "VY"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "VX, the best angle of climb speed, gives the most altitude per distance. VY, the best rate of climb speed, gives the most altitude per unit of time."
+  },
+  {
+    "id": "FAAPVT-T1-049",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "GPS",
+    "stem": "How many satellites must a GPS receiver see to provide RAIM integrity monitoring without barometric aiding?",
+    "options": [
+      "5",
+      "3",
+      "4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Four satellites give a three-dimensional position. A fifth lets the receiver check integrity with RAIM, or four plus a barometric altimeter input (baro-aiding)."
+  },
+  {
+    "id": "FAAPVT-T1-050",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Wake turbulence",
+    "stem": "You are landing behind a large jet that has just landed on the same runway. How should you plan your approach?",
+    "options": [
+      "Fly the normal glidepath and touch down at the usual point, since the vortices always rise",
+      "Stay below the jet's flight path and touch down before its touchdown point",
+      "Stay at or above the jet's flight path and touch down beyond its touchdown point"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Wake vortices sink and stop being generated when the nose wheel touches down. The AIM advises staying at or above the larger aircraft's path and landing beyond its touchdown point."
+  },
+  {
+    "id": "FAAPVT-T1-051",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Inspections",
+    "stem": "An airplane used only for personal flying had its last annual inspection on July 9 of last year. Through what date may it be flown without a new annual inspection?",
+    "options": [
+      "June 30 of this year",
+      "July 31 of this year",
+      "July 9 of this year"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 91.409 requires an annual inspection within the preceding 12 calendar months. A calendar month ends on its last day, so an annual done in July of one year is good through July 31 of the next."
+  },
+  {
+    "id": "FAAPVT-T1-052",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Magnetic compass",
+    "stem": "In the Northern Hemisphere, on a heading of west, you accelerate. What does the magnetic compass show?",
+    "options": [
+      "A turn toward the south",
+      "No change in heading",
+      "A turn toward the north"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Acceleration error on east or west headings follows ANDS: accelerate north, decelerate south. Accelerating on a west heading the compass swings briefly toward north."
+  },
+  {
+    "id": "FAAPVT-T1-053",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Collision avoidance",
+    "stem": "Another aircraft stays in the same spot on your windscreen and seems to grow larger. What does this mean?",
+    "options": [
+      "It is probably on a collision course with you",
+      "It is moving away from you on a parallel path",
+      "It is overtaking you on a converging path that will clear"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An aircraft with no apparent relative motion that slowly grows is on a collision course and can stay hidden until very close. Take evasive action at once."
+  },
+  {
+    "id": "FAAPVT-T1-054",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Wind shear",
+    "stem": "Where can wind shear occur?",
+    "options": [
+      "Only in the vicinity of a frontal inversion",
+      "Only near thunderstorms at low altitude",
+      "At any altitude, in any direction"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Wind shear is a sudden change in wind speed or direction over a short distance and can occur at any altitude, horizontally or vertically. It is most dangerous close to the ground."
+  },
+  {
+    "id": "FAAPVT-T1-055",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Briefings",
+    "stem": "Which type of preflight briefing should you request when your departure is more than 6 hours away?",
+    "options": [
+      "A standard briefing",
+      "An outlook briefing",
+      "An abbreviated briefing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The AIM recommends an outlook briefing when departure is 6 or more hours away, a standard briefing when you have no prior weather information, and an abbreviated briefing to update or add to earlier information."
+  },
+  {
+    "id": "FAAPVT-T1-056",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Weight shift",
+    "stem": "An airplane weighs 2,400 pounds. How much weight must be moved 60 inches aft to move the CG aft by 2.0 inches?",
+    "options": [
+      "40 pounds",
+      "80 pounds",
+      "120 pounds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Weight moved / total weight = CG change / distance moved. Weight moved = 2,400 x 2.0 / 60 = 80 pounds."
+  },
+  {
+    "id": "FAAPVT-T1-057",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lost procedures",
+    "stem": "A VFR pilot becomes lost. Which is the best first course of action?",
+    "options": [
+      "Keep the heading until a planned checkpoint comes into view",
+      "Climb if able, communicate with ATC or FSS, confess, and comply",
+      "Descend for a better view of the ground and look for a familiar landmark"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The four Cs: climb for better radio and radar coverage and a wider view, communicate, confess the problem, and comply with assistance. 121.5 MHz is available if no other frequency works."
+  },
+  {
+    "id": "FAAPVT-T1-058",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Transponder codes",
+    "stem": "Which transponder code should a VFR pilot squawk to report an emergency?",
+    "options": [
+      "7500",
+      "7600",
+      "7700"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "7700 is the general emergency code, 7600 is lost communications, 7500 is unlawful interference (hijack) and 1200 is the standard VFR code."
+  },
+  {
+    "id": "FAAPVT-T1-059",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "NTSB 830",
+    "stem": "After an accident, when must the operator file the written report required by NTSB Part 830?",
+    "options": [
+      "Within 7 days after the accident",
+      "Within 10 days after the accident",
+      "Within 30 days after the accident"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "49 CFR 830.15 requires the NTSB Form 6120.1 within 10 days after an accident. For an overdue aircraft that is still missing, the report is due after 7 days. Immediate notification is a separate, earlier requirement."
+  },
+  {
+    "id": "FAAPVT-T1-060",
+    "section": "par",
+    "test": 1,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Center of gravity",
+    "stem": "How does a center of gravity located forward of the limit affect an airplane?",
+    "options": [
+      "It improves the cruise speed and makes stall recovery more difficult",
+      "It lowers the stall speed and makes the airplane less stable in pitch at all speeds",
+      "It raises the stall speed and makes the nose harder to raise for landing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A forward CG needs more tail-down force, which acts like extra weight, so stall speed rises and cruise speed drops. It also makes rotation and the landing flare harder. An aft CG makes the airplane less stable and stall recovery harder."
+  },
+  {
+    "id": "FAAPVT-T2-001",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Flight review",
+    "stem": "To act as pilot in command, a private pilot must have completed a flight review within the preceding",
+    "options": [
+      "24 calendar months",
+      "12 calendar months",
+      "36 calendar months"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 61.56 requires a flight review (at least 1 hour of ground training and 1 hour of flight training) within the preceding 24 calendar months, unless a pilot proficiency check or similar substitute was completed."
+  },
+  {
+    "id": "FAAPVT-T2-002",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Maneuvering speed",
+    "stem": "How does design maneuvering speed (VA) change as the airplane's weight decreases?",
+    "options": [
+      "It increases",
+      "It decreases",
+      "It stays the same"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A lighter airplane reaches its limit load factor at a lower speed, because a gust changes its angle of attack more easily. So VA drops as weight decreases."
+  },
+  {
+    "id": "FAAPVT-T2-003",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Class D communication",
+    "stem": "You call a Class D tower and the controller replies, \"Aircraft calling Riverside Tower, standby.\" May you enter the Class D airspace?",
+    "options": [
+      "Yes, as long as you stay above 1,500 feet AGL in the area",
+      "Yes, because the controller has answered your call",
+      "No, because the controller did not use your call sign"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To enter Class D airspace two-way radio communication must be established (14 CFR 91.129). If the controller answers using your call sign, it is established; a reply without your call sign is not."
+  },
+  {
+    "id": "FAAPVT-T2-004",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Standard atmosphere",
+    "stem": "What are the standard sea level temperature and pressure in the International Standard Atmosphere?",
+    "options": [
+      "15 degrees C and 30.92 inches of mercury",
+      "59 degrees C and 29.92 inches of mercury",
+      "15 degrees C and 29.92 inches of mercury"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The ISA standard at sea level is 15 degrees C (59 degrees F) and 29.92 inches of mercury (1013.2 hectopascals), with temperature decreasing about 2 degrees C per 1,000 feet."
+  },
+  {
+    "id": "FAAPVT-T2-005",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "METAR",
+    "stem": "A METAR includes VV004. What does it mean?",
+    "options": [
+      "An indefinite ceiling with a vertical visibility of 400 feet",
+      "Variable visibility of 4 statute miles near the station",
+      "A broken layer at 400 feet with the tops not reported"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "VV reports vertical visibility into an obscuration such as fog that hides the whole sky. VV004 is an indefinite ceiling at 400 feet AGL."
+  },
+  {
+    "id": "FAAPVT-T2-006",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Standard weights",
+    "stem": "For weight and balance, what is the standard weight of aviation gasoline?",
+    "options": [
+      "8.35 pounds per gallon",
+      "6 pounds per gallon",
+      "7.5 pounds per gallon"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Avgas is computed at 6 pounds per US gallon. Oil is 7.5 pounds per gallon and water is about 8.35 pounds per gallon."
+  },
+  {
+    "id": "FAAPVT-T2-007",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Latitude and longitude",
+    "stem": "One degree of latitude equals about",
+    "options": [
+      "60 nautical miles",
+      "100 nautical miles",
+      "60 statute miles"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "One minute of latitude is one nautical mile, so a degree of latitude is 60 nautical miles. Degrees of longitude shrink toward the poles."
+  },
+  {
+    "id": "FAAPVT-T2-008",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hyperventilation",
+    "stem": "A passenger becomes anxious, breathes rapidly and feels lightheaded with tingling fingers. What should you do?",
+    "options": [
+      "Climb higher so that the lower air pressure slows and calms their breathing",
+      "Have them slow their breathing rate, or talk aloud, to restore carbon dioxide",
+      "Have them breathe faster and more deeply to take in more oxygen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "These are signs of hyperventilation, too much carbon dioxide breathed off. Slowing the breathing, breathing into a bag or talking aloud restores the balance."
+  },
+  {
+    "id": "FAAPVT-T2-009",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Private pilot privileges",
+    "stem": "A private pilot flies three friends to a lake for a shared weekend. How may the costs be split?",
+    "options": [
+      "The friends may pay the full cost of the flight because the pilot holds a private certificate",
+      "The friends may pay the pilot a fair hourly wage as long as no advertising was involved",
+      "The pilot must pay at least an equal share of fuel, oil, airport expenses and rental fees"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14 CFR 61.113(c) allows a private pilot to share operating expenses (fuel, oil, airport expenditures and rental fees) with passengers but the pilot may not pay less than the pro rata share. A private pilot may not be paid for flying."
+  },
+  {
+    "id": "FAAPVT-T2-010",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Airspeed indicator",
+    "stem": "What does the yellow arc on an airspeed indicator mark?",
+    "options": [
+      "The full flap operating range for landing",
+      "The normal operating range with the flaps retracted",
+      "The caution range, flown only in smooth air"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The yellow arc runs from VNO to VNE. Fly in it only in smooth air and with caution. The green arc is the normal operating range and the white arc the flap range."
+  },
+  {
+    "id": "FAAPVT-T2-011",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Class E minimums",
+    "stem": "What are the VFR minimums in Class E airspace at or above 10,000 feet MSL?",
+    "options": [
+      "3 statute miles, 500 feet below, 1,000 feet above and 2,000 feet horizontally from clouds",
+      "5 statute miles, 1,000 feet below, 1,000 feet above and 1 statute mile horizontally from clouds",
+      "5 statute miles, 500 feet below, 1,000 feet above and 2,000 feet horizontally from clouds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 91.155: in Class E at or above 10,000 feet MSL, VFR requires 5 statute miles and 1,000 below, 1,000 above and 1 statute mile horizontal clearance from clouds."
+  },
+  {
+    "id": "FAAPVT-T2-012",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fronts",
+    "stem": "Which weather is typical of a fast-moving cold front?",
+    "options": [
+      "Clearing skies ahead of the front with calm winds behind it",
+      "A narrow band of cumuliform clouds with showers and gusty winds",
+      "A wide band of stratus clouds with steady drizzle and fog"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A fast-moving cold front lifts warm air sharply, producing a narrow band of cumulus or cumulonimbus with showers, thunderstorms and gusts, then clearing and cooler air behind it."
+  },
+  {
+    "id": "FAAPVT-T2-013",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TAF",
+    "stem": "A TAF group reads FM1600 31010KT P6SM SCT040. What visibility is forecast from 1600Z?",
+    "options": [
+      "Prevailing visibility of 6 kilometers",
+      "Greater than 6 statute miles",
+      "Exactly 6 statute miles"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "P6SM means plus 6 statute miles, more than 6 statute miles. FM marks a rapid and lasting change starting at the time given, here 1600Z."
+  },
+  {
+    "id": "FAAPVT-T2-014",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Crosswind component",
+    "stem": "You plan to land on runway 17 with a reported wind from 210 degrees at 20 knots. About what is the crosswind component?",
+    "options": [
+      "7 knots",
+      "13 knots",
+      "15 knots"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The wind is 40 degrees off the runway heading of 170. Crosswind = 20 x sin 40 (about 0.64) = about 13 knots. The headwind component is 20 x cos 40, about 15 knots."
+  },
+  {
+    "id": "FAAPVT-T2-015",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Headings",
+    "stem": "True course 270 degrees, wind correction angle 8 degrees right, variation 10 degrees west. What is the magnetic heading?",
+    "options": [
+      "252 degrees",
+      "288 degrees",
+      "268 degrees"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "True heading = 270 + 8 (correction right is added) = 278. Magnetic heading = 278 + 10 (west variation is added) = 288 degrees."
+  },
+  {
+    "id": "FAAPVT-T2-016",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hazardous attitudes",
+    "stem": "A pilot who feels that nothing they do will change the outcome of a deteriorating situation shows which hazardous attitude?",
+    "options": [
+      "Invulnerability",
+      "Resignation",
+      "Impulsivity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Resignation is the feeling of \"What's the use?\" Its antidote is \"I'm not helpless. I can make a difference.\""
+  },
+  {
+    "id": "FAAPVT-T2-017",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Supplemental oxygen",
+    "stem": "Above what cabin pressure altitude must the required minimum flight crew use supplemental oxygen at all times?",
+    "options": [
+      "15,000 feet MSL",
+      "14,000 feet MSL",
+      "12,500 feet MSL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 91.211: above 12,500 up to 14,000 feet MSL the crew needs oxygen for any time beyond 30 minutes; above 14,000 feet the crew must use it continuously; above 15,000 feet every occupant must be provided with oxygen."
+  },
+  {
+    "id": "FAAPVT-T2-018",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spins",
+    "stem": "What has happened in a spin?",
+    "options": [
+      "Neither wing is stalled, but the airplane is out of trim",
+      "Only one wing is stalled while the other is still flying",
+      "Both wings are stalled, one more deeply than the other"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A spin is an aggravated stall with autorotation: both wings are stalled, with one at a higher angle of attack. Recovery starts with power to idle, ailerons neutral, full opposite rudder and the elevator forward to break the stall."
+  },
+  {
+    "id": "FAAPVT-T2-019",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Class A airspace",
+    "stem": "Class A airspace extends from",
+    "options": [
+      "10,000 feet MSL up to and including FL 450",
+      "18,000 feet MSL up to and including FL 600",
+      "14,500 feet MSL up to but not including FL 180"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Class A airspace begins at 18,000 feet MSL and extends up to and including FL 600. All flight in Class A is IFR."
+  },
+  {
+    "id": "FAAPVT-T2-020",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Frost",
+    "stem": "How does frost on the wings affect an airplane during takeoff?",
+    "options": [
+      "It smooths the wing surface, which slightly increases the lift produced",
+      "It adds weight but has no measurable effect on the airflow",
+      "It disrupts smooth airflow, reducing lift and raising stall speed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Even thin frost roughens the wing, disrupting airflow, decreasing lift, increasing drag and raising stall speed. It must be removed before flight."
+  },
+  {
+    "id": "FAAPVT-T2-021",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "PIREPs",
+    "stem": "A pilot report that begins with the code UUA is",
+    "options": [
+      "an urgent pilot report",
+      "a routine pilot report",
+      "an unverified pilot report"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "UA is a routine PIREP and UUA an urgent PIREP, used for hazards such as tornadoes, severe icing or turbulence, low-level wind shear, hail or volcanic ash."
+  },
+  {
+    "id": "FAAPVT-T2-022",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Useful load",
+    "stem": "What is useful load?",
+    "options": [
+      "The weight of the pilot, passengers and baggage only",
+      "The basic empty weight plus the weight of usable fuel",
+      "The maximum weight minus the basic empty weight"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Useful load is the difference between maximum weight and basic empty weight. It covers pilot, passengers, baggage and usable fuel (and oil if not included in empty weight)."
+  },
+  {
+    "id": "FAAPVT-T2-023",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Groundspeed",
+    "stem": "You pass two checkpoints 18 nautical miles apart in 9 minutes. What is your groundspeed?",
+    "options": [
+      "162 knots",
+      "108 knots",
+      "120 knots"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "18 nautical miles in 9 minutes is 2 nautical miles per minute, and 2 x 60 = 120 knots."
+  },
+  {
+    "id": "FAAPVT-T2-024",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cruising altitudes",
+    "stem": "VFR above 3,000 feet AGL on a magnetic course of 135 degrees, which altitude is appropriate?",
+    "options": [
+      "6,000 feet MSL",
+      "6,500 feet MSL",
+      "5,500 feet MSL"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14 CFR 91.159: on magnetic courses from 0 through 179 degrees fly odd thousands plus 500 feet (3,500, 5,500, 7,500); from 180 through 359 degrees fly even thousands plus 500 feet."
+  },
+  {
+    "id": "FAAPVT-T2-025",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Altimeter",
+    "stem": "You fly from an area of high pressure into one of lower pressure without resetting the altimeter. Compared to your indicated altitude, your true altitude will be",
+    "options": [
+      "the same",
+      "higher",
+      "lower"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Without resetting, the altimeter reads higher than the airplane really is when pressure drops along the route: high to low, look out below."
+  },
+  {
+    "id": "FAAPVT-T2-026",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scuba diving",
+    "stem": "According to the AIM, how long should a pilot wait to fly to a cabin altitude of 8,000 feet or less after a dive that did not require a controlled ascent?",
+    "options": [
+      "At least 4 hours",
+      "At least 12 hours",
+      "At least 48 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The AIM recommends at least 12 hours after a non-decompression dive for flights up to 8,000 feet cabin altitude, and 24 hours after a decompression dive or for flights above 8,000 feet."
+  },
+  {
+    "id": "FAAPVT-T2-027",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "ADS-B and transponder",
+    "stem": "Within how many nautical miles of a Class B primary airport must an aircraft generally have an operating Mode C transponder and ADS-B Out, from the surface to 10,000 feet MSL?",
+    "options": [
+      "10 nautical miles",
+      "20 nautical miles",
+      "30 nautical miles"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14 CFR 91.215 and 91.225 apply within the 30 NM Mode C veil around Class B primary airports, from the surface up to 10,000 feet MSL, with limited exceptions for aircraft certificated without an electrical system."
+  },
+  {
+    "id": "FAAPVT-T2-028",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Airworthiness responsibility",
+    "stem": "Who is primarily responsible for maintaining an aircraft in an airworthy condition, including compliance with Airworthiness Directives?",
+    "options": [
+      "The owner or operator of the aircraft",
+      "The mechanic who last signed the aircraft logbook",
+      "The pilot in command who flew it most recently"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.403 places primary responsibility for airworthiness, including ADs, on the owner or operator. The pilot in command, under 91.7, decides whether the aircraft is in condition for safe flight before each flight."
+  },
+  {
+    "id": "FAAPVT-T2-029",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Temperature inversion",
+    "stem": "A pilot sees a layer of smoke and haze trapped near the ground on a calm morning. What does this suggest?",
+    "options": [
+      "A temperature inversion with stable air near the surface",
+      "Unstable air with strong vertical mixing near the surface",
+      "An approaching cold front with gusty winds below the layer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In an inversion temperature rises with height, which makes the air below very stable and traps smoke, haze and pollutants, reducing visibility."
+  },
+  {
+    "id": "FAAPVT-T2-030",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Convective SIGMETs",
+    "stem": "Which condition leads to a convective SIGMET?",
+    "options": [
+      "An area of embedded thunderstorms",
+      "Surface winds sustained at 30 knots or more",
+      "Moderate icing in clouds over a wide area"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Convective SIGMETs cover severe thunderstorms, lines of thunderstorms, embedded thunderstorms, areas of heavy precipitation from storms, tornadoes and hail of 3/4 inch or more. Moderate icing and strong surface winds are AIRMET items."
+  },
+  {
+    "id": "FAAPVT-T2-031",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Detonation",
+    "stem": "Which conditions are most likely to cause detonation in a piston engine?",
+    "options": [
+      "A high-octane fuel grade used at a low power setting",
+      "Too rich a mixture and very low cylinder temperatures",
+      "Too lean a mixture and very high cylinder temperatures"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Detonation is the explosive burning of the fuel-air charge, caused by high temperatures, an overly lean mixture, too low a fuel grade or high power with poor cooling. Richening the mixture and lowering the nose help cool the engine."
+  },
+  {
+    "id": "FAAPVT-T2-032",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Overweight",
+    "stem": "Which is a result of operating an airplane above its maximum weight?",
+    "options": [
+      "A higher stall speed and a longer takeoff run",
+      "A higher cruise speed and a steeper climb",
+      "A lower stall speed and a shorter takeoff run"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Extra weight requires more lift, so the airplane stalls at a higher speed, takes a longer runway, climbs more slowly and can exceed structural limits in turbulence."
+  },
+  {
+    "id": "FAAPVT-T2-033",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VOR",
+    "stem": "How is a VOR identified, and how can you tell it is unreliable?",
+    "options": [
+      "By a voice recording of its name; during maintenance a continuous warning tone replaces the voice",
+      "By its Morse code identifier; during maintenance the code is removed or replaced with T-E-S-T",
+      "By its frequency alone; during maintenance a red flag appears on every VOR receiver"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Always identify a VOR by its Morse code. During maintenance the identifier may be removed or replaced by the code T-E-S-T, and the signal should not be used."
+  },
+  {
+    "id": "FAAPVT-T2-034",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Runway markings",
+    "stem": "On a runway, a series of yellow chevrons points toward the threshold from the area before it. How may that area be used?",
+    "options": [
+      "It may be used for takeoff but not for landing",
+      "It may be used for taxi and for landing rollout",
+      "It is not usable for taxi, takeoff or landing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Yellow chevrons mark a blast pad or stopway that looks like runway but is not usable for taxi, takeoff or landing. A displaced threshold, marked with white arrows, can be used for taxi, takeoff and landing rollout."
+  },
+  {
+    "id": "FAAPVT-T2-035",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Somatogravic illusion",
+    "stem": "During a rapid acceleration on takeoff into a dark night, a pilot may feel",
+    "options": [
+      "a turn to the left, and roll the wings to the right",
+      "the nose is pitching up, and push the nose down too far",
+      "the nose is pitching down, and pull the nose up too far"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A sudden forward acceleration stimulates the inner ear like a pitch-up. Without a visual horizon the pilot may push forward into a dangerous nose-low attitude."
+  },
+  {
+    "id": "FAAPVT-T2-036",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Required equipment",
+    "stem": "Which item is required by 14 CFR 91.205 for night VFR flight but not for day VFR?",
+    "options": [
+      "A fuel gauge for each tank",
+      "Approved position lights",
+      "A magnetic direction indicator"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Position (navigation) lights, an anticollision light system, an adequate electrical source, spare fuses and a landing light if flying for hire are added for night. The compass and fuel gauges are already day VFR items."
+  },
+  {
+    "id": "FAAPVT-T2-037",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fuel",
+    "stem": "What color is 100LL aviation gasoline?",
+    "options": [
+      "Green",
+      "Blue",
+      "Red"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "100LL is dyed blue, grade 100 is green, and jet fuel is clear or straw colored. Never use a lower grade than the minimum the manufacturer approves."
+  },
+  {
+    "id": "FAAPVT-T2-038",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mountain wave",
+    "stem": "Standing lens-shaped clouds over and downwind of a mountain range indicate",
+    "options": [
+      "mountain wave activity with possible severe turbulence",
+      "an approaching warm front with steady light rain",
+      "stable air with smooth flying conditions at all levels"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lenticular clouds form in the crests of mountain waves. They suggest strong winds over the ridge and possible severe turbulence, including in rotor clouds below them."
+  },
+  {
+    "id": "FAAPVT-T2-039",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Winds aloft",
+    "stem": "A winds aloft forecast for 30,000 feet shows 731552. What is the forecast?",
+    "options": [
+      "Wind from 230 degrees true at 115 knots, temperature minus 52 degrees C",
+      "Wind from 230 degrees true at 15 knots, temperature plus 52 degrees C",
+      "Wind from 310 degrees true at 75 knots, temperature minus 52 degrees C"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For winds of 100 knots or more, 50 is added to the direction and 100 subtracted from the speed. 73 minus 50 gives 230 degrees and 15 plus 100 gives 115 knots. Above 24,000 feet temperatures are always below zero, so the minus sign is omitted."
+  },
+  {
+    "id": "FAAPVT-T2-040",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Weight reduction",
+    "stem": "Your planned takeoff weight is 2,550 pounds and the maximum is 2,450 pounds. If you remove only fuel, about how many gallons must you remove?",
+    "options": [
+      "17 gallons",
+      "25 gallons",
+      "10 gallons"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "You must remove 100 pounds. At 6 pounds per gallon that is 100 / 6, about 16.7, so about 17 gallons. Then check that the remaining fuel still covers the flight and the reserve."
+  },
+  {
+    "id": "FAAPVT-T2-041",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sectional charts",
+    "stem": "On a sectional chart, what does the color of an airport symbol tell you?",
+    "options": [
+      "Blue airports have hard runways and magenta airports have turf",
+      "Blue airports have a control tower and magenta airports do not",
+      "Magenta airports have a control tower and blue airports do not"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Towered airports are shown in blue and nontowered airports in magenta. The symbol's shape shows runway length and whether there are services."
+  },
+  {
+    "id": "FAAPVT-T2-042",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual glide slope",
+    "stem": "On approach, a PAPI shows two white lights and two red lights. What does this mean?",
+    "options": [
+      "You are below the glidepath",
+      "You are slightly above the glidepath",
+      "You are on the correct glidepath"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A PAPI shows two white and two red when on glidepath, more white when high (three white is slightly high, four white is high) and more red when low."
+  },
+  {
+    "id": "FAAPVT-T2-043",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Inoperative equipment",
+    "stem": "An airplane without a minimum equipment list has an inoperative landing light. It is not required by 91.205, the type certificate, an AD or the equipment list for the flight. What must happen before a private day VFR flight?",
+    "options": [
+      "Nothing is required, because equipment not required for day flight may simply be left as it is",
+      "The light must be removed or deactivated and placarded Inoperative, with any maintenance recorded",
+      "A special flight permit must be obtained from the FAA before the airplane may be flown at all"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Under 14 CFR 91.213(d), inoperative equipment that is not required may be removed or deactivated and placarded Inoperative, with deactivation done and recorded per Part 43. A special flight permit is for aircraft that do not meet airworthiness requirements."
+  },
+  {
+    "id": "FAAPVT-T2-044",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gyroscopic instruments",
+    "stem": "Why must the heading indicator be checked against the magnetic compass in flight?",
+    "options": [
+      "Magnetic dip causes it to lead in turns to the north",
+      "Precession makes it drift from the correct heading",
+      "It shows true headings rather than magnetic ones"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The heading indicator is a gyro with no magnetic sensing. Precession from friction makes it drift, so it should be reset to the compass in straight and level, unaccelerated flight, about every 15 minutes."
+  },
+  {
+    "id": "FAAPVT-T2-045",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Personal checklist",
+    "stem": "What is the IMSAFE checklist used for?",
+    "options": [
+      "Checking the weather against personal minimums",
+      "Checking the airplane's required documents",
+      "Checking the pilot's own fitness before flight"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "IMSAFE stands for Illness, Medication, Stress, Alcohol, Fatigue and Emotion (or Eating). It is a personal fitness check before every flight."
+  },
+  {
+    "id": "FAAPVT-T2-046",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Local winds",
+    "stem": "On a sunny afternoon at a coastal airport, the wind usually blows",
+    "options": [
+      "parallel to the coastline only",
+      "from the water toward the land",
+      "from the land toward the water"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Land heats faster than water in the day, so air rises over land and cooler air flows in from the water as a sea breeze. At night the flow reverses to a land breeze."
+  },
+  {
+    "id": "FAAPVT-T2-047",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Winds aloft",
+    "stem": "Why does a winds and temperatures aloft forecast show no wind for the 3,000-foot level at a mountain station?",
+    "options": [
+      "Winds at that level are always light and variable at mountains",
+      "The station only forecasts winds that are above 12,000 feet MSL",
+      "Winds are not forecast within 1,500 feet of the station elevation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "No winds are forecast for levels within 1,500 feet of the station elevation, and no temperatures for the 3,000-foot level or within 2,500 feet of the station elevation."
+  },
+  {
+    "id": "FAAPVT-T2-048",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Landing performance",
+    "stem": "How does a high density altitude affect landing?",
+    "options": [
+      "The true airspeed is lower for the same indicated airspeed, so the landing roll is shorter",
+      "The indicated approach speed must be raised to stay above the higher stall speed",
+      "The true airspeed is higher for the same indicated airspeed, so the landing roll is longer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Indicated stall and approach speeds stay the same, but in thin air the true airspeed and groundspeed are higher, which lengthens the landing distance."
+  },
+  {
+    "id": "FAAPVT-T2-049",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time conversion",
+    "stem": "You depart at 10:30 a.m. Eastern Daylight Time. What is the departure time in UTC?",
+    "options": [
+      "1530Z",
+      "1330Z",
+      "1430Z"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Eastern Daylight Time is UTC minus 4 hours, so 10:30 EDT plus 4 hours is 1430Z. Eastern Standard Time is UTC minus 5."
+  },
+  {
+    "id": "FAAPVT-T2-050",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Airport beacon",
+    "stem": "A rotating airport beacon flashes alternating white and green. What kind of airport is it?",
+    "options": [
+      "A lighted civilian land airport",
+      "A lighted heliport",
+      "A lighted water airport"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "White and green identifies a lighted land airport, white and yellow a water airport, and green, yellow and white a heliport. A military airport also shows white and green, but with two quick white flashes between the green flashes."
+  },
+  {
+    "id": "FAAPVT-T2-051",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Change of address",
+    "stem": "A private pilot moves to a new home. Within how many days must the FAA be notified to keep exercising certificate privileges?",
+    "options": [
+      "30 days",
+      "90 days",
+      "60 days"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 61.60 allows 30 days after moving to notify the FAA Airman Certification Branch of the new permanent mailing address."
+  },
+  {
+    "id": "FAAPVT-T2-052",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Electrical system",
+    "stem": "During flight the ammeter shows a large discharge and the low-voltage light comes on. What has most likely happened?",
+    "options": [
+      "The magnetos have failed and the engine is running on the battery",
+      "The alternator has failed and the battery is supplying the load",
+      "The battery is overcharging and the alternator should be reset"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A discharge with a low-voltage warning means the alternator is no longer charging and the battery is carrying the electrical load. Shed electrical load and land at the nearest suitable airport. Magnetos are independent of the electrical system."
+  },
+  {
+    "id": "FAAPVT-T2-053",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Carbon monoxide",
+    "stem": "On a winter flight with the cabin heat on, you get a headache and feel drowsy. What should you do first?",
+    "options": [
+      "Close all the cabin vents to keep exhaust fumes from the outside air out of the cabin",
+      "Turn up the heater to stay warm, then descend to a lower altitude",
+      "Turn off the heater, open the fresh air vents and use oxygen if available"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Headache and drowsiness with the heater on suggest carbon monoxide leaking from the exhaust through the heat muff. Shut off the heat, ventilate, use oxygen if you have it and land as soon as practical."
+  },
+  {
+    "id": "FAAPVT-T2-054",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Microbursts",
+    "stem": "Flying into a microburst on approach, what does an airplane usually meet first?",
+    "options": [
+      "A strong downdraft with no change in airspeed",
+      "A sudden tailwind and a sharp loss of airspeed",
+      "An increasing headwind and a rise in airspeed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Entering a microburst, an airplane first meets the outflow as a headwind (airspeed and performance increase), then a strong downdraft, then a tailwind that sharply reduces airspeed near the ground."
+  },
+  {
+    "id": "FAAPVT-T2-055",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Graphical forecasts",
+    "stem": "Which product has replaced the old textual area forecast for the contiguous United States?",
+    "options": [
+      "The Center Weather Advisory (CWA)",
+      "The Graphical Forecasts for Aviation (GFA)",
+      "The Terminal Aerodrome Forecast (TAF) for each airport"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Aviation Weather Center's GFA tool replaced the textual area forecast (FA) for the lower 48 states. TAFs cover only about 5 statute miles around an airport, and CWAs are short-term unscheduled advisories."
+  },
+  {
+    "id": "FAAPVT-T2-056",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Glide distance",
+    "stem": "An airplane with a glide ratio of 9 to 1 has an engine failure at 6,000 feet AGL. In still air, about how far can it glide?",
+    "options": [
+      "About 15 nautical miles",
+      "About 9 nautical miles",
+      "About 6 nautical miles"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "9 x 6,000 feet = 54,000 feet. A nautical mile is about 6,076 feet, so 54,000 / 6,076 is about 8.9 nautical miles."
+  },
+  {
+    "id": "FAAPVT-T2-057",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Military training routes",
+    "stem": "A military training route is labeled VR1257 on a sectional chart. What does the four-digit number tell you?",
+    "options": [
+      "The route has no segment above 1,500 feet AGL",
+      "The route has at least one segment above 1,500 feet AGL",
+      "The route is flown only under instrument flight rules"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Four-digit route numbers have no segment above 1,500 feet AGL; three-digit numbers have one or more segments above 1,500 feet AGL. VR routes are flown VFR and IR routes IFR."
+  },
+  {
+    "id": "FAAPVT-T2-058",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Traffic pattern",
+    "stem": "How should you enter the traffic pattern at a nontowered airport, according to the recommended procedure in the AIM?",
+    "options": [
+      "Directly on the base leg after crossing over the top of the runway at midfield",
+      "At pattern altitude, on a 45-degree angle to the downwind leg abeam midfield",
+      "On a long straight-in final while descending from cruise altitude"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The AIM's recommended entry is a 45-degree angle to the downwind leg, abeam the midpoint of the runway, at traffic pattern altitude. Standard pattern turns are to the left unless marked otherwise."
+  },
+  {
+    "id": "FAAPVT-T2-059",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "NTSB 830",
+    "stem": "Which event requires immediate notification of the NTSB even if no one was hurt and the airplane was not damaged?",
+    "options": [
+      "A bird strike on the windshield",
+      "A landing gear tire failure",
+      "An in-flight fire"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "49 CFR 830.5 lists serious incidents that require immediate notification, including in-flight fire, flight control system failure, inability of a crewmember to perform duties because of injury or illness, and an in-flight collision. A tire failure or minor bird strike is not on the list."
+  },
+  {
+    "id": "FAAPVT-T2-060",
+    "section": "par",
+    "test": 2,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Magnetos",
+    "stem": "Why should the ignition switch be treated as live, and the propeller as able to start, even with the key off?",
+    "options": [
+      "The battery can turn the starter even when the master switch is off",
+      "A broken magneto ground wire can leave the magneto able to fire",
+      "The fuel injection system keeps pressure after the engine stops"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The magneto is grounded through the P-lead when switched off. If the P-lead breaks or comes loose, the magneto stays hot and turning the propeller can start the engine."
+  },
+  {
+    "id": "FAAPVT-D-001",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adverse yaw",
+    "stem": "When a pilot rolls into a left turn with aileron alone, the nose tends to yaw to the right. Why?",
+    "options": [
+      "The left aileron goes up and adds parasite drag to the left wing",
+      "The rising right wing makes more lift and more induced drag",
+      "Torque from the engine pushes the nose toward the high wing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Adverse yaw comes from the induced drag of the rising wing, whose downward aileron makes more lift. Coordinated rudder in the direction of the turn corrects it."
+  },
+  {
+    "id": "FAAPVT-D-002",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seat belts",
+    "stem": "Under 14 CFR 91.107, when must each person on board an airplane have a safety belt fastened?",
+    "options": [
+      "At all times while the airplane is in flight",
+      "Only during takeoff and landing, and when in turbulence",
+      "During movement on the surface, takeoff and landing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "91.107 requires each person to occupy an approved seat with safety belt fastened during movement on the surface, takeoff and landing, and the pilot in command must brief passengers on fastening belts. A child under 2 may be held by an adult."
+  },
+  {
+    "id": "FAAPVT-D-003",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Class C airspace",
+    "stem": "What is the usual vertical extent of the 5 nautical mile inner core of Class C airspace?",
+    "options": [
+      "From 1,200 feet AGL to 4,000 feet above the airport elevation",
+      "From the surface to 10,000 feet MSL",
+      "From the surface to 4,000 feet above the airport elevation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Class C is typically a 5 NM core from the surface to 4,000 feet above the airport and a 10 NM shelf from 1,200 to 4,000 feet above the airport."
+  },
+  {
+    "id": "FAAPVT-D-004",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pressure",
+    "stem": "In the Northern Hemisphere, how does the wind blow around a high pressure area?",
+    "options": [
+      "Clockwise and outward",
+      "Clockwise and inward",
+      "Counterclockwise and inward"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Air flows out of a high and, turned by the Coriolis force, circulates clockwise in the Northern Hemisphere. Around a low it flows counterclockwise and inward."
+  },
+  {
+    "id": "FAAPVT-D-005",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "METAR",
+    "stem": "What is the time reference in a METAR such as 141853Z?",
+    "options": [
+      "Local standard time at the reporting station",
+      "Local daylight time",
+      "Coordinated Universal Time (UTC)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "141853Z is the 14th day of the month at 1853 UTC (Zulu). All times in METARs and TAFs are UTC."
+  },
+  {
+    "id": "FAAPVT-D-006",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Moments",
+    "stem": "A 170-pound passenger sits 90 inches aft of the datum. What is the moment?",
+    "options": [
+      "1,530 pound-inches",
+      "15,300 pound-inches",
+      "26,000 pound-inches"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Moment = weight x arm = 170 x 90 = 15,300 pound-inches."
+  },
+  {
+    "id": "FAAPVT-D-007",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sectional charts",
+    "stem": "What is the scale of a sectional chart?",
+    "options": [
+      "1:1,000,000, about 14 nautical miles per inch",
+      "1:250,000, about 3.5 nautical miles per inch",
+      "1:500,000, about 7 nautical miles per inch"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sectional charts are 1:500,000, about 6.86 nautical miles (8 statute miles) per inch. Terminal area charts are 1:250,000."
+  },
+  {
+    "id": "FAAPVT-D-008",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hypoxia",
+    "stem": "Which statement about hypoxia is true?",
+    "options": [
+      "It affects only pilots who fly above 18,000 feet MSL without supplemental oxygen",
+      "Its symptoms vary from person to person and can begin without warning",
+      "Its first symptom is always a strong feeling of breathlessness"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Hypoxia's onset is insidious: symptoms differ between people and often start with euphoria or impaired judgment rather than discomfort. It can affect pilots at much lower altitudes, especially at night."
+  },
+  {
+    "id": "FAAPVT-D-009",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Four forces",
+    "stem": "In steady, unaccelerated, level flight",
+    "options": [
+      "lift is greater than weight and thrust equals drag",
+      "lift equals weight and thrust equals drag",
+      "thrust is greater than drag and lift equals weight"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In straight and level, unaccelerated flight the opposing forces balance: lift equals weight and thrust equals drag."
+  },
+  {
+    "id": "FAAPVT-D-010",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pilot in command authority",
+    "stem": "Who is directly responsible for, and is the final authority as to, the operation of an aircraft?",
+    "options": [
+      "The pilot in command",
+      "The air traffic controller",
+      "The aircraft owner"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.3 makes the pilot in command directly responsible for and the final authority as to the operation of the aircraft. In an emergency the PIC may deviate from any rule to the extent needed."
+  },
+  {
+    "id": "FAAPVT-D-011",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Special VFR",
+    "stem": "What is needed for a special VFR clearance at night in a Class D surface area?",
+    "options": [
+      "Only a private certificate and 1 mile of ground visibility",
+      "A night endorsement and at least 3 miles of flight visibility",
+      "An instrument rating and an airplane equipped for IFR flight"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Special VFR requires 1 statute mile and clear of clouds. 14 CFR 91.157 adds that between sunset and sunrise the pilot must be instrument rated and the aircraft equipped for IFR."
+  },
+  {
+    "id": "FAAPVT-D-012",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dew and frost",
+    "stem": "Frost forms on surfaces when the temperature of the collecting surface is",
+    "options": [
+      "above freezing, and the air is saturated with water vapor",
+      "above the dewpoint, and the air temperature is below freezing",
+      "at or below the dewpoint, and the dewpoint is below freezing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Frost forms by deposition when the surface cools to or below the dewpoint and the dewpoint itself is below freezing, so water vapor turns directly to ice."
+  },
+  {
+    "id": "FAAPVT-D-013",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "METAR",
+    "stem": "In a METAR, the group 14/12 A2992 shows",
+    "options": [
+      "temperature 14 degrees F, dewpoint 12 degrees F, altimeter 29.92",
+      "dewpoint 14 degrees C, temperature 12 degrees C, altimeter 29.92",
+      "temperature 14 degrees C, dewpoint 12 degrees C, altimeter 29.92"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Temperature comes first and dewpoint second, both in degrees Celsius. A2992 is the altimeter setting, 29.92 inches of mercury. A small spread like this suggests fog or low clouds may form."
+  },
+  {
+    "id": "FAAPVT-D-014",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Center of gravity",
+    "stem": "How is the center of gravity found from a loading calculation?",
+    "options": [
+      "Total moment divided by total weight",
+      "Total arm multiplied by total weight",
+      "Total weight divided by total moment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Add each item's weight and moment. The CG, measured in inches from the datum, is the total moment divided by the total weight."
+  },
+  {
+    "id": "FAAPVT-D-015",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sectional charts",
+    "stem": "What does the maximum elevation figure (MEF) in a quadrangle of a sectional chart show?",
+    "options": [
+      "The height in feet MSL of the highest terrain or obstacle in the quadrangle, plus a margin",
+      "The lowest safe altitude for IFR flight anywhere along the airways in that quadrangle",
+      "The highest terrain in the quadrangle in feet AGL, not including any man-made obstacles"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The MEF, shown in thousands and hundreds of feet MSL, is based on the highest known feature in the quadrangle, terrain or obstacle, rounded up with a margin. It is not an IFR minimum altitude."
+  },
+  {
+    "id": "FAAPVT-D-016",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hazardous attitudes",
+    "stem": "Which antidote matches the impulsivity hazardous attitude?",
+    "options": [
+      "Taking chances is foolish.",
+      "Not so fast. Think first.",
+      "It could happen to me."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Impulsivity is the need to do something, anything, immediately. Its antidote is \"Not so fast. Think first.\""
+  },
+  {
+    "id": "FAAPVT-D-017",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stability",
+    "stem": "Longitudinal stability is about which axis?",
+    "options": [
+      "The longitudinal axis",
+      "The lateral axis",
+      "The vertical axis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Longitudinal stability is stability in pitch, which is movement about the lateral axis (wingtip to wingtip). Lateral stability is roll about the longitudinal axis."
+  },
+  {
+    "id": "FAAPVT-D-018",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emergency deviation",
+    "stem": "A pilot in command deviates from a rule during an in-flight emergency. What must the pilot do?",
+    "options": [
+      "Send a written report of the deviation to the FAA if the Administrator requests it",
+      "Report the deviation to the nearest Flight Standards District Office within 48 hours",
+      "File a written report with the NTSB within 10 days, whether or not anyone asks for it"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.3(c) requires a PIC who deviates from a rule in an emergency to send a written report to the Administrator upon request."
+  },
+  {
+    "id": "FAAPVT-D-019",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light gun signals",
+    "stem": "You are in flight near a towered airport with a failed radio and see a steady red light. What does it mean?",
+    "options": [
+      "Give way to other aircraft and continue circling",
+      "Airport unsafe, do not land there under any circumstances",
+      "Return for landing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In flight, steady red means give way and continue circling, flashing red means the airport is unsafe and not to land, and flashing green means return for landing."
+  },
+  {
+    "id": "FAAPVT-D-020",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fog",
+    "stem": "Radiation fog is most likely to form",
+    "options": [
+      "over coastal areas when moist air moves inland with wind",
+      "on mountain slopes when moist, stable air is pushed upward by the wind",
+      "over low, flat land on clear, calm nights with high humidity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Radiation (ground) fog forms when the ground cools on a clear night and chills the air in light or calm wind until it reaches the dewpoint. Moist air moved by wind gives advection or upslope fog."
+  },
+  {
+    "id": "FAAPVT-D-021",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "METAR",
+    "stem": "What does -RA BR mean in a METAR's weather group?",
+    "options": [
+      "Light rain and mist",
+      "Heavy rain and haze",
+      "Light rain and blowing snow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The minus sign means light intensity, RA is rain and BR is mist. HZ is haze and BLSN is blowing snow."
+  },
+  {
+    "id": "FAAPVT-D-022",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Empty weight",
+    "stem": "Under the GAMA standard used in most modern POHs, basic empty weight includes",
+    "options": [
+      "usable fuel and the pilot's weight",
+      "only the airframe, engine and fixed equipment",
+      "unusable fuel and full engine oil"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Basic empty weight is the standard empty weight plus optional equipment. Under GAMA it includes unusable fuel, full operating fluids and full oil."
+  },
+  {
+    "id": "FAAPVT-D-023",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sectional charts",
+    "stem": "On a sectional chart an obstruction is labeled 1749 with (512) beneath it. What do the numbers mean?",
+    "options": [
+      "Its top is 1,749 feet AGL and the ground there is 512 feet MSL",
+      "Its top is 1,749 feet MSL and it rises 512 feet above the ground",
+      "It is 512 feet tall and lies 1,749 feet from the nearest airport"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The upper figure is the top of the obstruction in feet MSL and the figure in parentheses is its height above ground level."
+  },
+  {
+    "id": "FAAPVT-D-024",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Landing illusions",
+    "stem": "Rain on the windscreen during an approach can make a pilot think the airplane is",
+    "options": [
+      "higher than it is, leading to a low approach",
+      "slower than it is, leading to a fast landing",
+      "lower than it is, leading to a high approach"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Water on the windscreen bends light and can create the illusion of being too high, so the pilot may fly a lower approach. Haze can have a similar effect."
+  },
+  {
+    "id": "FAAPVT-D-025",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Load factor",
+    "stem": "What are the limit load factors for an airplane in the normal category?",
+    "options": [
+      "Plus 3.8 G and minus 1.52 G",
+      "Plus 6.0 G and minus 3.0 G",
+      "Plus 4.4 G and minus 1.76 G"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Normal category airplanes are designed for plus 3.8 and minus 1.52 G, utility category for plus 4.4 and minus 1.76 G, and acrobatic category for plus 6.0 and minus 3.0 G."
+  },
+  {
+    "id": "FAAPVT-D-026",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Recent flight experience",
+    "stem": "To carry passengers in a tailwheel airplane, the three takeoffs and landings in the preceding 90 days must be",
+    "options": [
+      "touch and go or full stop, in any airplane",
+      "made during daylight in the same aircraft",
+      "to a full stop, in a tailwheel airplane"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14 CFR 61.57(a) requires that, for a tailwheel airplane, the landings be made to a full stop in a tailwheel airplane."
+  },
+  {
+    "id": "FAAPVT-D-027",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hold short markings",
+    "stem": "A hold short line across a taxiway has two solid yellow lines and two dashed yellow lines. Which side do you stop on?",
+    "options": [
+      "The side with the dashed lines",
+      "The side with the solid lines",
+      "On top of the solid lines"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Approaching from the solid side, you must stop before the solid lines unless cleared. From the dashed side you may cross to exit the runway; you are clear of it once the whole aircraft is past the lines."
+  },
+  {
+    "id": "FAAPVT-D-028",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lapse rate",
+    "stem": "Unsaturated air that rises cools at about",
+    "options": [
+      "3 degrees C per 1,000 feet",
+      "2 degrees C per 1,000 feet",
+      "1.5 degrees C per 1,000 feet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The dry adiabatic lapse rate is about 3 degrees C (5.4 degrees F) per 1,000 feet. Saturated air cools more slowly, and the standard average lapse rate is about 2 degrees C."
+  },
+  {
+    "id": "FAAPVT-D-029",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "TAF",
+    "stem": "A standard TAF covers an area within about how far of the center of the runway complex?",
+    "options": [
+      "25 statute miles",
+      "10 statute miles",
+      "5 statute miles"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A TAF describes forecast conditions within 5 statute miles of the center of the airport's runway complex. VC (vicinity) refers to 5 to 10 statute miles."
+  },
+  {
+    "id": "FAAPVT-D-030",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Density altitude",
+    "stem": "How does high humidity affect takeoff performance?",
+    "options": [
+      "It has no effect on piston engine airplanes",
+      "It reduces it, because moist air is less dense",
+      "It improves it, because moist air is more dense"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Water vapor weighs less than the nitrogen and oxygen it replaces, so humid air is less dense. Engine power, propeller thrust and wing lift all drop."
+  },
+  {
+    "id": "FAAPVT-D-031",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VOR",
+    "stem": "Your VOR receiver is set to 210 degrees with a TO indication and the needle is centered. Which radial are you on?",
+    "options": [
+      "The 030 radial",
+      "The 210 radial",
+      "The 120 radial"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With TO showing, the OBS course leads to the station. Flying 210 degrees to the station means you are on the opposite radial, 030."
+  },
+  {
+    "id": "FAAPVT-D-032",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Flaps",
+    "stem": "How does lowering the flaps change the airplane's performance?",
+    "options": [
+      "It increases lift and drag and lowers the stall speed",
+      "It increases lift, reduces drag and raises the stall speed",
+      "It reduces lift and drag and raises the stall speed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Flaps increase the wing's camber, giving more lift and more drag at a given speed. The stall speed drops, which allows a steeper, slower approach."
+  },
+  {
+    "id": "FAAPVT-D-033",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Graveyard spiral",
+    "stem": "After a prolonged, coordinated descending turn in clouds, a pilot levels the wings and feels a turn in the opposite direction. If the pilot rolls back into the original turn, what can result?",
+    "options": [
+      "A Coriolis illusion",
+      "An inversion illusion",
+      "A graveyard spiral"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The inner ear stops sensing a long turn. On leveling, it signals a turn the other way, and banking back into the old turn with back pressure tightens a descending spiral."
+  },
+  {
+    "id": "FAAPVT-D-034",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Endorsements",
+    "stem": "A private pilot wants to act as pilot in command of an airplane with a 230 horsepower engine for the first time. What is required?",
+    "options": [
+      "A one-time high-performance endorsement from an authorized instructor",
+      "Nothing additional, since a private certificate covers every single-engine land airplane",
+      "A complex airplane endorsement, because the engine has over 200 horsepower"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 61.31(f) requires a one-time high-performance endorsement for airplanes with engines of more than 200 horsepower. The complex endorsement is for retractable gear, flaps and a controllable pitch propeller (or FADEC)."
+  },
+  {
+    "id": "FAAPVT-D-035",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Airport signs",
+    "stem": "What does a taxiway location sign look like?",
+    "options": [
+      "Yellow letters on a black background with a yellow border",
+      "White letters on a red background with a black outline",
+      "Black letters on a yellow background with a black border"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Location signs, which tell you where you are, are yellow on black. Direction and destination signs are black on yellow, and mandatory signs are white on red."
+  },
+  {
+    "id": "FAAPVT-D-036",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Icing",
+    "stem": "Ice pellets reported at the surface usually indicate",
+    "options": [
+      "a warm front has already passed the station",
+      "freezing rain at a higher altitude",
+      "a thunderstorm in the vicinity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ice pellets form when rain falls from warmer air aloft through a layer below freezing. Their presence means there is freezing rain and warmer air somewhere above."
+  },
+  {
+    "id": "FAAPVT-D-037",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TAF",
+    "stem": "In a TAF, what does PROB30 1920/1923 mean?",
+    "options": [
+      "The listed weather is 30 percent likely to last from 1920Z until 1923Z the same day",
+      "A 30 percent probability of the listed weather between 2000Z and 2300Z on the 19th",
+      "A 30 percent chance that the whole forecast changes after 1900Z on the 20th day"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PROB30 gives a 30 percent probability of the following conditions, and 1920/1923 is the 19th day from 2000Z to 2300Z UTC."
+  },
+  {
+    "id": "FAAPVT-D-038",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Runway surface",
+    "stem": "How does taking off from a grass runway with tall wet grass affect the takeoff?",
+    "options": [
+      "It increases the takeoff distance",
+      "It decreases the takeoff distance",
+      "It does not change the takeoff distance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Grass, soft ground, snow or standing water add rolling resistance, so the airplane accelerates more slowly and the ground roll is longer. Many POHs give a correction for grass."
+  },
+  {
+    "id": "FAAPVT-D-039",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "VOR checks",
+    "stem": "What is the maximum permissible error when checking a VOR receiver with a VOT?",
+    "options": [
+      "Plus or minus 2 degrees",
+      "Plus or minus 6 degrees",
+      "Plus or minus 4 degrees"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For IFR use (14 CFR 91.171), a VOT or ground checkpoint check allows plus or minus 4 degrees, an airborne checkpoint plus or minus 6 degrees, and a dual-receiver check 4 degrees between the two."
+  },
+  {
+    "id": "FAAPVT-D-040",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carburetor ice",
+    "stem": "In which conditions is carburetor ice most likely?",
+    "options": [
+      "Only in clouds, at outside air temperatures below about 32 degrees F",
+      "Temperatures below about 0 degrees F with clear skies and very low relative humidity at the surface",
+      "Temperatures between about 20 and 70 degrees F with visible moisture or high humidity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fuel vaporization and the venturi can cool the carburetor by up to about 70 degrees F, so ice can form between about 20 and 70 degrees F with high humidity, even in clear air."
+  },
+  {
+    "id": "FAAPVT-D-041",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Aircraft documents",
+    "stem": "Which documents must be on board an aircraft for it to be operated?",
+    "options": [
+      "An airworthiness certificate displayed and a current registration certificate",
+      "The aircraft and engine logbooks and the last annual inspection record",
+      "The registration certificate and a copy of the latest Airworthiness Directive list"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.203 requires an appropriate and current airworthiness certificate, displayed so it is legible to passengers or crew, and an effective registration certificate. Maintenance logbooks need not be carried."
+  },
+  {
+    "id": "FAAPVT-D-042",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Night vision",
+    "stem": "How long does it take the eyes to become fully adapted to darkness?",
+    "options": [
+      "About 2 to 3 hours",
+      "About 5 minutes",
+      "About 30 minutes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rods take about 30 minutes to adapt fully to darkness, and a single bright light can undo it. Use dim red or white cockpit lighting."
+  },
+  {
+    "id": "FAAPVT-D-043",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Carburetor heat",
+    "stem": "What happens when carburetor heat is applied?",
+    "options": [
+      "The engine RPM always rises at once",
+      "The fuel-air mixture becomes leaner",
+      "The fuel-air mixture becomes richer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Heated air is less dense, so the same fuel flow mixes with less air and the mixture richens. With a fixed-pitch propeller RPM first drops, then rises if ice was present."
+  },
+  {
+    "id": "FAAPVT-D-044",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Special use airspace",
+    "stem": "What should a VFR pilot do before flying through an active Military Operations Area?",
+    "options": [
+      "Contact the controlling agency for traffic advisories and use extra caution",
+      "Avoid the area entirely, since VFR flight through it is prohibited",
+      "Get a clearance from the controlling agency, which is required for every pilot"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "VFR flight through an active MOA is allowed without a clearance, but the AIM advises contacting the controlling agency and exercising extreme caution. Restricted areas, unlike MOAs, need authorization when active."
+  },
+  {
+    "id": "FAAPVT-D-045",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Thunderstorms",
+    "stem": "What is a narrow, non-frontal band of active thunderstorms, which often contains the most severe weather, called?",
+    "options": [
+      "A squall line",
+      "A dry line",
+      "An occluded front"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A squall line is a non-frontal line of thunderstorms that often holds the most intense weather. An occluded front is frontal, and a dry line is a moisture boundary along which storms may form."
+  },
+  {
+    "id": "FAAPVT-D-046",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AIRMETs",
+    "stem": "Sustained surface winds of 30 knots or more over a large area are covered by which advisory?",
+    "options": [
+      "AIRMET Sierra",
+      "AIRMET Tango",
+      "A convective SIGMET"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIRMET Tango covers moderate turbulence, sustained surface winds of 30 knots or more and nonconvective low-level wind shear."
+  },
+  {
+    "id": "FAAPVT-D-047",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Runway slope",
+    "stem": "Compared with a level runway, taking off uphill",
+    "options": [
+      "does not change the takeoff roll",
+      "lengthens the takeoff roll",
+      "shortens the takeoff roll"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "On an upslope part of the airplane's weight acts against the thrust, slowing acceleration and lengthening the takeoff roll. A downhill landing similarly lengthens the landing roll."
+  },
+  {
+    "id": "FAAPVT-D-048",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DME",
+    "stem": "When is the error in a DME distance reading greatest?",
+    "options": [
+      "When flying at low altitude far from the station",
+      "When flying at any altitude directly away from the station",
+      "When flying at high altitude close to the station"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DME measures slant range. The difference from horizontal distance is largest high and close to the station, and small beyond about 1 mile per 1,000 feet of altitude."
+  },
+  {
+    "id": "FAAPVT-D-049",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "ELT",
+    "stem": "When must the battery of an emergency locator transmitter be replaced or recharged?",
+    "options": [
+      "After 2 cumulative hours of use or when 75 percent of its useful life has expired",
+      "Only at the annual inspection, whatever its use or the remaining battery life",
+      "After 1 cumulative hour of use or when 50 percent of its useful life has expired"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14 CFR 91.207(c) requires replacement (or recharge, if rechargeable) when the transmitter has been in use for more than 1 cumulative hour or when 50 percent of the battery's useful life has expired."
+  },
+  {
+    "id": "FAAPVT-D-050",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Decision-making",
+    "stem": "In the 3P model of risk management, what are the three steps?",
+    "options": [
+      "Plan, practice and perform",
+      "Perceive, process and perform",
+      "Prepare, predict and proceed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The pilot perceives hazards, processes them to judge the risk, and performs by acting to reduce the risk, then repeats the cycle throughout the flight."
+  },
+  {
+    "id": "FAAPVT-D-051",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mixture",
+    "stem": "Why must the mixture be leaned as an airplane climbs?",
+    "options": [
+      "The air becomes less dense, so the mixture becomes too rich",
+      "The air becomes denser with height, so the mixture becomes too lean",
+      "Fuel pressure rises with height and floods the carburetor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "As altitude increases air density drops while the carburetor still meters fuel by volume, so the mixture gets richer. Leaning restores the right ratio and avoids rough running and fouled plugs."
+  },
+  {
+    "id": "FAAPVT-D-052",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Wake turbulence",
+    "stem": "Which conditions produce the strongest wingtip vortices?",
+    "options": [
+      "A heavy aircraft flying clean and slow",
+      "A light aircraft flying clean and fast",
+      "A heavy aircraft flying with flaps and fast"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vortex strength depends on weight, speed and wing shape. The greatest vortices come from a heavy, clean, slow aircraft, because it flies at a high angle of attack."
+  },
+  {
+    "id": "FAAPVT-D-053",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Turbulence",
+    "stem": "When can a pilot expect turbulence close to a thunderstorm?",
+    "options": [
+      "Within 20 miles of a severe storm, even in clear air",
+      "Only inside the cloud or under its precipitation",
+      "Only on the downwind side of the storm, under its anvil cloud"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Severe turbulence can extend well beyond a thunderstorm. The AIM advises avoiding severe storms by at least 20 nautical miles."
+  },
+  {
+    "id": "FAAPVT-D-054",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Center Weather Advisory",
+    "stem": "What is a Center Weather Advisory?",
+    "options": [
+      "An unscheduled warning for conditions meeting or nearing advisory criteria, for the next 2 hours",
+      "A scheduled forecast issued four times a day for the whole of an ARTCC's airspace and its airports",
+      "A routine report of actual weather at the airports inside one ARTCC's area"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A CWA is an unscheduled advisory issued by an ARTCC's weather unit for conditions that meet or approach AIRMET, SIGMET or convective SIGMET criteria, valid for up to 2 hours."
+  },
+  {
+    "id": "FAAPVT-D-055",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pressure altitude",
+    "stem": "Field elevation is 3,250 feet and the altimeter setting is 29.72. What is the pressure altitude?",
+    "options": [
+      "3,250 feet",
+      "3,450 feet",
+      "3,050 feet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "29.92 - 29.72 = 0.20, and 0.20 x 1,000 = 200 feet. Pressure altitude is 3,250 + 200 = 3,450 feet. A setting below 29.92 makes pressure altitude higher than field elevation."
+  },
+  {
+    "id": "FAAPVT-D-056",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Navigation methods",
+    "stem": "Navigating by reference to landmarks you can see on the ground is called",
+    "options": [
+      "dead reckoning",
+      "radio navigation",
+      "pilotage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pilotage uses visible landmarks. Dead reckoning uses computed headings, groundspeed and time from a known point."
+  },
+  {
+    "id": "FAAPVT-D-057",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preventive maintenance",
+    "stem": "Who may perform preventive maintenance, such as replacing a landing light bulb, on an airplane the pilot owns and operates?",
+    "options": [
+      "Only a certificated mechanic, because the airplane will then be used to carry passengers",
+      "Any person the owner allows, with no logbook entry needed, since preventive maintenance is not a repair",
+      "The pilot who owns and operates it, with the work recorded in the aircraft maintenance records"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14 CFR 43.3(g) lets a certificated pilot (other than a sport pilot) perform preventive maintenance listed in Part 43 Appendix A on an aircraft the pilot owns or operates, not used under Part 121, 129 or 135. 43.9 requires a maintenance record entry."
+  },
+  {
+    "id": "FAAPVT-D-058",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pitot-static system",
+    "stem": "If the alternate static source inside the cabin is used, the altimeter will usually read",
+    "options": [
+      "slightly higher than normal",
+      "exactly the same as with the normal source",
+      "slightly lower than normal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cabin pressure is usually a little lower than outside static pressure because of the venturi effect of air flowing around the cabin, so the altimeter and airspeed indicator read slightly high."
+  },
+  {
+    "id": "FAAPVT-D-059",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk assessment",
+    "stem": "In the PAVE checklist, what do the letters stand for?",
+    "options": [
+      "Pilot, Aircraft, enVironment and External pressures",
+      "Preflight, Altitude, Visibility and Equipment on board",
+      "Planning, Airspace, Vectors and Emergencies"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "PAVE groups the risk factors of a flight: the pilot, the aircraft, the environment (weather, terrain, airports) and external pressures such as schedules and passengers."
+  },
+  {
+    "id": "FAAPVT-D-060",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wake turbulence",
+    "stem": "Which wind condition can keep the wake of a landing large aircraft on the runway the longest?",
+    "options": [
+      "A strong direct headwind",
+      "A light quartering tailwind",
+      "A strong direct crosswind of 20 knots"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A light quartering tailwind can move the upwind vortex back onto the touchdown zone and keep it there. Strong winds break vortices up faster."
+  },
+  {
+    "id": "FAAPVT-D-061",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Air masses",
+    "stem": "Moist, unstable air flowing up a mountain slope tends to produce",
+    "options": [
+      "cumuliform clouds with showers and turbulence",
+      "stratus clouds with drizzle and smooth air",
+      "clear skies with no change in the weather"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lifting unstable moist air makes it rise freely, forming cumuliform clouds, showery precipitation and turbulence. Lifting stable air would give stratiform clouds."
+  },
+  {
+    "id": "FAAPVT-D-062",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Surface analysis",
+    "stem": "On a surface analysis chart, isobars that are close together indicate",
+    "options": [
+      "a weak pressure gradient and light winds",
+      "an area of high humidity and possible fog or low stratus",
+      "a strong pressure gradient and strong winds"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Isobars connect points of equal pressure. Close spacing means pressure changes quickly over a short distance, which drives stronger winds."
+  },
+  {
+    "id": "FAAPVT-D-063",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fuel planning",
+    "stem": "An airplane burns 8.5 gallons per hour. How much fuel is used in a flight of 2 hours 15 minutes?",
+    "options": [
+      "About 17.0 gallons",
+      "About 21.3 gallons",
+      "About 19.1 gallons"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "2 hours 15 minutes is 2.25 hours. 8.5 x 2.25 = 19.125 gallons, about 19.1 gallons, before adding taxi, climb and the required reserve."
+  },
+  {
+    "id": "FAAPVT-D-064",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Magnetic variation",
+    "stem": "What is an isogonic line on a sectional chart?",
+    "options": [
+      "A line connecting points of equal magnetic variation",
+      "A line connecting points of equal magnetic deviation",
+      "A line connecting points of zero magnetic variation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Isogonic lines, drawn dashed in magenta, join points of equal variation. The agonic line is where variation is zero. Deviation belongs to an individual airplane's compass, not the chart."
+  },
+  {
+    "id": "FAAPVT-D-065",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acrobatic flight",
+    "stem": "Below what altitude is acrobatic flight prohibited by 14 CFR 91.303?",
+    "options": [
+      "1,000 feet above the surface",
+      "1,500 feet above the surface",
+      "2,000 feet above the surface"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.303 prohibits acrobatic flight below 1,500 feet AGL, over congested areas or open-air assemblies, within Class B, C, D or E surface areas designated for an airport, within 4 nautical miles of a federal airway's centerline, and when flight visibility is under 3 statute miles."
+  },
+  {
+    "id": "FAAPVT-D-066",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pitot-static system",
+    "stem": "The pitot tube and its drain hole become fully blocked by ice. As the airplane climbs, the airspeed indicator",
+    "options": [
+      "keeps working normally from the static port",
+      "shows a decrease, falling toward zero at once",
+      "shows an increase, acting like an altimeter"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With the ram air inlet and drain hole both blocked, pressure is trapped in the pitot line. As the airplane climbs and static pressure drops, the indicated airspeed rises, so the instrument behaves like an altimeter."
+  },
+  {
+    "id": "FAAPVT-D-067",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coriolis illusion",
+    "stem": "Which action is most likely to cause the overwhelming tumbling sensation of the Coriolis illusion?",
+    "options": [
+      "Accelerating quickly in level flight during a takeoff at night",
+      "Climbing steadily at a constant rate while flying a straight course",
+      "Moving the head abruptly during a prolonged constant-rate turn"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After a sustained turn the inner ear fluid stops moving relative to the canals. An abrupt head movement then sets fluid moving in another canal, giving a strong sense of rotation on an axis that does not exist."
+  },
+  {
+    "id": "FAAPVT-D-068",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Common frequencies",
+    "stem": "At a nontowered airport with no published frequency, which frequency do pilots use for self-announce calls?",
+    "options": [
+      "122.2 MHz (flight service)",
+      "121.5 MHz (emergency)",
+      "122.9 MHz (MULTICOM)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With no tower, FSS or UNICOM, pilots self-announce on MULTICOM, 122.9 MHz. 121.5 MHz is the emergency frequency."
+  },
+  {
+    "id": "FAAPVT-D-069",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Microbursts",
+    "stem": "About how long does an individual microburst usually last from the time it first strikes the ground?",
+    "options": [
+      "Up to 2 hours",
+      "Seldom more than 15 minutes",
+      "About 45 minutes to an hour"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The AIM describes an individual microburst as seldom lasting longer than 15 minutes from first ground contact to dissipation, with its strongest winds about 5 minutes after it touches down."
+  },
+  {
+    "id": "FAAPVT-D-070",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "PIREPs",
+    "stem": "Why are pilot reports especially valuable to forecasters and other pilots?",
+    "options": [
+      "They are the only direct reports of cloud tops, icing and turbulence aloft",
+      "They replace the METAR at airports where there is no weather observer",
+      "They are required before every flight under the Federal Aviation Regulations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Most observations are made at the surface. PIREPs give real conditions aloft, such as cloud tops, icing and turbulence, that no other source measures directly."
+  },
+  {
+    "id": "FAAPVT-D-071",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Crosswind component",
+    "stem": "Runway 31 is in use and the wind is from 340 degrees at 18 knots. About what is the crosswind component?",
+    "options": [
+      "9 knots",
+      "16 knots",
+      "18 knots"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The wind is 30 degrees off the runway heading of 310. Crosswind = 18 x sin 30 (0.5) = 9 knots. The headwind component is 18 x cos 30, about 16 knots."
+  },
+  {
+    "id": "FAAPVT-D-072",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wildlife areas",
+    "stem": "Over a national wildlife refuge shown on the chart, pilots are requested to stay at least how high?",
+    "options": [
+      "500 feet above the surface",
+      "1,000 feet above the surface",
+      "2,000 feet above the surface"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The FAA requests a minimum of 2,000 feet above the surface over charted national parks, wildlife refuges and similar noise-sensitive areas."
+  },
+  {
+    "id": "FAAPVT-D-073",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Parachutes",
+    "stem": "Unless each occupant wears an approved parachute, no pilot carrying a passenger may intentionally exceed a bank of",
+    "options": [
+      "60 degrees, or a nose-up or nose-down attitude of 30 degrees",
+      "90 degrees, or a nose-up or nose-down attitude of 45 degrees",
+      "45 degrees, or a nose-up or nose-down attitude of 20 degrees"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.307(c) sets the limits at 60 degrees of bank or 30 degrees of pitch relative to the horizon, except for certificate training given by a flight instructor."
+  },
+  {
+    "id": "FAAPVT-D-074",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Magnetic compass",
+    "stem": "In the Northern Hemisphere, turning from a heading of north, the magnetic compass will initially",
+    "options": [
+      "lead the turn by a large amount",
+      "show a turn in the opposite direction",
+      "show the correct heading at all times"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Northerly turning error (from magnetic dip) makes the compass lag in turns from a north heading, first swinging the opposite way, and lead in turns from a south heading."
+  },
+  {
+    "id": "FAAPVT-D-075",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtHuman",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fatigue and stress",
+    "stem": "Which is a sign that fatigue is affecting a pilot's performance?",
+    "options": [
+      "Scanning the instruments faster than normal and more widely",
+      "Missing radio calls and making small, careless errors",
+      "Feeling more alert and confident than at the start of the day"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fatigue shows up as slower reactions, narrowed attention, missed calls and careless mistakes. The only cure is rest."
+  },
+  {
+    "id": "FAAPVT-D-076",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAirspace",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Class G night minimums",
+    "stem": "At night in Class G airspace below 1,200 feet AGL, an airplane may fly with 1 mile visibility clear of clouds only when",
+    "options": [
+      "it is flying with a filed and activated VFR flight plan",
+      "it is in an airport traffic pattern within half a mile of the runway",
+      "it is more than 10 miles from the nearest airport with a control tower"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 91.155(b)(2) allows 1 statute mile and clear of clouds at night in Class G below 1,200 feet AGL only in a traffic pattern within half a mile of the runway. Otherwise 3 miles and 500/1,000/2,000 apply."
+  },
+  {
+    "id": "FAAPVT-D-077",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWeather",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Clouds",
+    "stem": "Which cloud type indicates very unstable air and the most hazardous flying conditions?",
+    "options": [
+      "Cumulonimbus",
+      "Nimbostratus",
+      "Altostratus"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cumulonimbus are thunderstorm clouds with turbulence, icing, hail, lightning and wind shear. Nimbostratus and altostratus are layered clouds in more stable air."
+  },
+  {
+    "id": "FAAPVT-D-078",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Convective outlook",
+    "stem": "What does a convective outlook describe?",
+    "options": [
+      "The present location of thunderstorms detected by weather radar",
+      "The potential for severe and general thunderstorms over the coming days",
+      "Turbulence and icing forecast in the lower layers of the atmosphere for the next 12 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Storm Prediction Center's convective outlook forecasts where general and severe thunderstorms may develop over the next days, useful for planning. Radar shows storms that exist now."
+  },
+  {
+    "id": "FAAPVT-D-079",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aft CG",
+    "stem": "Loading an airplane so the CG is aft of its limit makes it",
+    "options": [
+      "less stable and harder to recover from a stall or spin",
+      "nose heavy, so it needs more back pressure to flare",
+      "more stable and easier to recover from a stall or spin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An aft CG shortens the tail's lever arm for recovery, so the airplane is less stable in pitch and stall or spin recovery may be difficult or impossible."
+  },
+  {
+    "id": "FAAPVT-D-080",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compass heading",
+    "stem": "Which correction turns a magnetic heading into a compass heading?",
+    "options": [
+      "Deviation, read from the airplane's compass correction card",
+      "Wind correction angle, worked out on the E6B flight computer before departure",
+      "Variation, read from the isogonic lines on the chart"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "True course, plus wind correction, gives true heading; variation gives magnetic heading; the airplane's own deviation card gives compass heading."
+  },
+  {
+    "id": "FAAPVT-D-081",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Knowledge test",
+    "stem": "How long is a passed FAA knowledge test result valid for taking the private pilot practical test?",
+    "options": [
+      "12 calendar months",
+      "24 calendar months",
+      "36 calendar months"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 61.39 requires the knowledge test to have been passed within the preceding 24 calendar months before the practical test."
+  },
+  {
+    "id": "FAAPVT-D-082",
+    "section": "par",
+    "test": 0,
+    "module": 1,
+    "domain": "pvtAircraft",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Propellers",
+    "stem": "Why is a propeller blade twisted along its length?",
+    "options": [
+      "To reduce noise at the highest power settings",
+      "To make the blade tips turn more slowly than the blade roots at the hub",
+      "To keep a more even angle of attack from hub to tip"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The tip moves much faster than the hub, so the blade angle decreases toward the tip to give a fairly even angle of attack and thrust along the blade."
+  }
+]

@@ -1,0 +1,650 @@
+[
+ {
+  "id": "PSAT-RW-155",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "For forty years, the founder of the Lindgren Bakery kept her bread recipe completely ______. She refused to share it even with her own staff, and she mixed the dough each morning before anyone else arrived.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "public",
+   "private",
+   "seasonal",
+   "simple"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Refusing to share the recipe with anyone and mixing the dough alone show that she kept it private. Public is the opposite, and nothing in the text says the recipe was simple or changed with the seasons."
+ },
+ {
+  "id": "PSAT-RW-156",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "Cheetahs can sprint faster than any other land animal, but they cannot keep up that speed for long. Most of their chases ______ less than a minute, after which the exhausted cat must rest before it can eat.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "begin",
+   "follow",
+   "last",
+   "require"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Because cheetahs cannot keep up their speed, their chases are short; they last less than a minute. Chases do not begin or follow \"less than a minute,\" and \"require\" does not fit a length of time here."
+ },
+ {
+  "id": "PSAT-RW-157",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "After a spring storm knocked trees across the mountain trail, a team of volunteers spent three weekends clearing branches and rebuilding washed-out steps. By June they had ______ the trail, and hikers were using it again.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "measured",
+   "abandoned",
+   "photographed",
+   "restored"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "Clearing branches and rebuilding steps brought the trail back to use, so the volunteers restored it. Abandoning it would leave it unusable, and measuring or photographing it would not let hikers use it again."
+ },
+ {
+  "id": "PSAT-RW-158",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Mayor Celia Brandt's speech at the opening of the new park was notably ______. In under three minutes, she thanked the volunteers, named the park after the town's first librarian, and invited everyone to enjoy the afternoon.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "uncertain",
+   "rambling",
+   "concise",
+   "hostile"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Covering several points in under three minutes is the mark of a concise speech. Rambling is the opposite, and nothing in her friendly, clear remarks is hostile or uncertain."
+ },
+ {
+  "id": "PSAT-RW-159",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "craftStructure",
+  "skill": "Text structure and purpose",
+  "basics": "authorPurpose",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "Emperor penguins breed during the Antarctic winter. After a female lays her single egg, she passes it to her mate and heads to the sea to feed. For about two months, the male balances the egg on his feet under a warm fold of skin, eating nothing and huddling with other males against fierce winds until the chick hatches.",
+  "stem": "Which choice best states the main purpose of the text?",
+  "options": [
+   "To explain why emperor penguins breed in the Antarctic winter",
+   "To compare the diets of male and female emperor penguins",
+   "To describe how male emperor penguins care for their eggs",
+   "To argue that emperor penguins are the largest penguins"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Most of the text describes the male keeping the egg warm on his feet for two months. It never explains why breeding happens in winter, mentions food only in passing, and says nothing about penguin size."
+ },
+ {
+  "id": "PSAT-RW-160",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "craftStructure",
+  "skill": "Text structure and purpose",
+  "basics": "textStructure",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Every year, grocery stores throw away large amounts of food that is still safe to eat but close to its sell-by date. In the city of Marlow, a group of volunteers began collecting this food from stores each evening and delivering it to community kitchens. Within two years, the program was supplying more than a thousand meals a week.",
+  "stem": "Which choice best describes the overall structure of the text?",
+  "options": [
+   "It lists the causes of food waste and then ranks them from least to most serious.",
+   "It presents two opinions about food waste and then explains which one is correct.",
+   "It describes a problem and then explains how one group has responded to it.",
+   "It describes how sell-by dates are chosen and then argues that they should change."
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "The text first describes the waste of safe food and then explains what Marlow's volunteers did about it and how much it achieved. It does not weigh opinions, explain sell-by dates, or list and rank causes."
+ },
+ {
+  "id": "PSAT-RW-161",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "craftStructure",
+  "skill": "Cross-text connections",
+  "basics": "crossText",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "**Text 1**\n\nMany teachers urge students to take notes by hand rather than on a laptop. Writing by hand is slower, they point out, so students cannot copy a lecture word for word. Instead they must decide what matters and summarize it, which helps them remember the material.\n\n**Text 2**\n\nIn a recent study, students who typed their notes remembered less of a lecture than students who wrote by hand, but only when the typists copied the lecture word for word. When typists were told to summarize in their own words, they remembered just as much as the students who wrote by hand.",
+  "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+  "options": [
+   "By arguing that students should copy lectures word for word to remember them best",
+   "By claiming that teachers should not ask students to take notes during lectures",
+   "By agreeing that students who type their notes will always remember less of a lecture",
+   "By suggesting that summarizing, not handwriting itself, is what helps students remember"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "Text 2 shows that typists who summarized remembered as much as handwriters, so the benefit comes from summarizing rather than from using a pen. It does not say typists always remember less, it shows that word-for-word copying works worse, and it never says to stop taking notes."
+ },
+ {
+  "id": "PSAT-RW-162",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "craftStructure",
+  "skill": "Words in context",
+  "basics": "wordsInContext",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "The following text is from a story.\n\nEveryone in the neighborhood knew Mr. Okafor, and Mr. Okafor knew everyone. He was famously ______: he chatted with the mail carrier, waved to every passing car, and could not walk to the corner store without stopping to talk to at least five people.",
+  "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+  "options": [
+   "reserved",
+   "stubborn",
+   "forgetful",
+   "sociable"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "Chatting, waving, and stopping to talk with many people describe someone sociable. Reserved means quiet and distant, the opposite, and nothing in the text suggests he is forgetful or stubborn."
+ },
+ {
+  "id": "PSAT-RW-163",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "infoIdeas",
+  "skill": "Central ideas and details",
+  "basics": "mainIdea",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "Sloths are known as some of the slowest mammals on Earth, but their slowness helps them survive. Sloths eat mostly leaves, which provide very little energy, and by moving slowly they use very little. Their slow movements also make them hard for predators such as eagles to notice as they hang in the treetops.",
+  "stem": "Which choice best states the main idea of the text?",
+  "options": [
+   "A sloth's slowness helps it survive in more than one way.",
+   "Eagles are the main predators of sloths in the rainforest.",
+   "Leaves provide more energy than most people realize.",
+   "Sloths are slower than any other animal that lives in trees."
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The text says slowness saves energy and helps sloths avoid predators, two ways it helps them survive. It does not compare sloths with all tree animals, eagles are just one example, and it says leaves give very little energy."
+ },
+ {
+  "id": "PSAT-RW-164",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "infoIdeas",
+  "skill": "Central ideas and details",
+  "basics": "findingDetail",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "Each July, volunteers in a statewide program spend fifteen minutes in a park, garden, or backyard counting every butterfly they see. They record the species and the number of each and send their counts to scientists. Because thousands of people take part, the scientists can track how butterfly populations change from year to year.",
+  "stem": "According to the text, why are the volunteers' counts useful to scientists?",
+  "options": [
+   "Each volunteer counts butterflies for many hours, so the counts are very precise.",
+   "So many people take part that scientists can track changes in butterfly populations over time.",
+   "The volunteers are trained scientists who can identify rare species that others would miss.",
+   "The counts take place in July, the only month when butterflies can be seen in the state."
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "The text says that because thousands of people take part, scientists can track population changes from year to year. It never says the volunteers are scientists, that July is the only month butterflies appear, or that counts last hours rather than fifteen minutes."
+ },
+ {
+  "id": "PSAT-RW-165",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "infoIdeas",
+  "skill": "Command of evidence (textual)",
+  "basics": "claimSupport",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "A student growing basil plants for a science fair hypothesizes that plants grown under blue light will be shorter and bushier, with more side branches, than plants grown under red light.",
+  "stem": "Which finding, if true, would most directly support the student's hypothesis?",
+  "options": [
+   "Basil plants under red light grew taller than basil plants grown on a sunny windowsill.",
+   "Basil plants under blue light needed less water than basil plants under red light.",
+   "Basil plants under blue light grew shorter and had more side branches than basil plants under red light.",
+   "Basil plants under both blue and red light grew faster than basil plants kept in the dark."
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "The hypothesis compares blue and red light on height and branching, and only the finding about shorter, bushier plants under blue light shows exactly that pattern. The other findings compare against a windowsill or darkness, or measure water use, so they do not test the hypothesis."
+ },
+ {
+  "id": "PSAT-RW-166",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "infoIdeas",
+  "skill": "Command of evidence (quantitative)",
+  "basics": "readingTable",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Students recorded the outdoor temperature at noon and the number of birds that visited their schoolyard feeder on four days in January. One student claimed that more birds visited the feeder on colder days.\n\n| Day | Temperature at noon (°C) | Bird visits |\n|---|---|---|\n| Monday | 2 | 34 |\n| Tuesday | 10 | 18 |\n| Wednesday | 1 | 37 |\n| Thursday | 12 | 15 |\n\nThe data in the table support the student's claim, since ______",
+  "stem": "Which choice most effectively uses data from the table to complete the statement?",
+  "options": [
+   "the two coldest days, Monday and Wednesday, had more bird visits than the two warmer days.",
+   "there were 34 bird visits on Monday, which was fewer than on Wednesday that same week.",
+   "the temperature at noon on Tuesday was 10°C, warmer than it was on Monday or Wednesday.",
+   "the temperature on Thursday was 12°C, the warmest of the four January days the students recorded."
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The claim links cold days to more visits, and the coldest days, Monday at 2°C and Wednesday at 1°C, had the most visits, 34 and 37. The other choices report a single temperature or a single count without linking temperature to visits."
+ },
+ {
+  "id": "PSAT-RW-167",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "infoIdeas",
+  "skill": "Inferences",
+  "basics": "inference",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "Many cactuses store water inside their thick, fleshy stems. After a heavy rain, the stem swells as the plant soaks up water, and during a long dry spell the plant slowly uses up its stored water. A cactus that has gone several weeks without rain would therefore most likely have ______",
+  "stem": "Which choice most logically completes the text?",
+  "options": [
+   "a thinner stem than it had just after the last rain.",
+   "more water stored in its stem than ever before.",
+   "a thicker stem than it had just after the last rain.",
+   "stopped using any of the water in its stem."
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The stem swells with water after rain and the plant uses that water up during dry spells, so after weeks without rain the stem would have shrunk. The other choices describe a plant gaining water or no longer using it, which the text does not support."
+ },
+ {
+  "id": "PSAT-RW-168",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "infoIdeas",
+  "skill": "Central ideas and details",
+  "basics": "inference",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "The following text is from a story. Jun is about to play in his first piano recital.\n\nJun's hands were cold, and he pressed them between his knees to warm them. From the side of the stage, he could see the rows of folding chairs and his grandmother in the front, her purse on her lap. When his name was called, he walked to the piano, sat down, and looked only at the keys. By the second line of music, he had forgotten the audience entirely.",
+  "stem": "Which choice best describes what happens in the text?",
+  "options": [
+   "A boy plays poorly at a recital because his hands are too cold.",
+   "A boy helps set up folding chairs before a piano recital begins.",
+   "A boy decides not to perform because he sees his grandmother in the audience.",
+   "A nervous boy begins his performance and becomes absorbed in the music."
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "Jun's cold hands show his nerves, and by the second line he has \"forgotten the audience entirely,\" lost in the music. He does perform, nothing says he plays poorly, and the chairs are already set up."
+ },
+ {
+  "id": "PSAT-RW-169",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "infoIdeas",
+  "skill": "Command of evidence (quantitative)",
+  "basics": "readingTable",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "For a class project, students folded paper airplanes in four designs and measured how far each one flew on average over five throws. One student claimed that the glider flew more than twice as far as the square-wing design.\n\n| Design | Average distance (meters) |\n|---|---|\n| Dart | 9.5 |\n| Glider | 12.0 |\n| Needle | 8.0 |\n| Square wing | 4.0 |",
+  "stem": "Which choice most effectively uses data from the table to support the student's claim?",
+  "options": [
+   "The glider flew an average of 12.0 meters, farther than any of the other three designs did.",
+   "The glider flew an average of 12.0 meters, while the square-wing design flew an average of 4.0 meters.",
+   "The dart flew an average of 9.5 meters, more than twice as far as the square-wing design.",
+   "The needle flew an average of 8.0 meters, while the dart flew an average of 9.5 meters."
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "The claim compares the glider with the square-wing design, and 12.0 meters is three times 4.0 meters, more than twice as far. Saying the glider flew farthest of all does not mention the square wing, and the choices about the dart and the needle are about other designs."
+ },
+ {
+  "id": "PSAT-RW-170",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "conventions",
+  "skill": "Boundaries",
+  "basics": "commaSplices",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "The tallest living tree ever measured is a coast redwood in northern ______ is more than 115 meters tall, taller than a thirty-story building.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "California, and, it",
+   "California it",
+   "California, it",
+   "California. It"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "Each part is a complete sentence, so they must be separated, here with a period. A comma alone creates a comma splice, no punctuation creates a run-on, and \"and\" should not be followed by a comma."
+ },
+ {
+  "id": "PSAT-RW-171",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "subjectVerb",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "This spring, the students in Ms. Park's science class ______ planting a vegetable garden behind the school.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "is",
+   "was",
+   "are",
+   "has been"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "The subject is the plural \"students,\" not \"class,\" so the plural verb \"are\" is needed. \"Is,\" \"has been,\" and \"was\" are all singular."
+ },
+ {
+  "id": "PSAT-RW-172",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "apostrophes",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "An oak ______ roots can spread out much farther underground than its branches spread above it.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "tree's",
+   "trees'",
+   "trees",
+   "tree"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The roots belong to a single tree, so the singular possessive \"tree's\" is correct. \"Trees\" is a plain plural, \"trees'\" is plural possessive, and \"tree\" shows no possession."
+ },
+ {
+  "id": "PSAT-RW-173",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "verbTense",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "Last spring, the members of the science club ______ a small weather station on the roof of the school.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "are building",
+   "builds",
+   "built",
+   "will build"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "\"Last spring\" places the action in the past, so the past tense \"built\" is needed. The present and future forms do not fit."
+ },
+ {
+  "id": "PSAT-RW-174",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "pronounCase",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "At the start of the term, Ms. Ruiz asked Lena and ______ to lead the class discussion about the novel.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "me",
+   "I",
+   "myself",
+   "mine"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The pronoun is an object of \"asked,\" so the object form \"me\" is correct; remove \"Lena and\" to check: \"asked me.\" \"I\" is a subject form, \"myself\" needs an earlier \"I,\" and \"mine\" shows possession."
+ },
+ {
+  "id": "PSAT-RW-175",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "conventions",
+  "skill": "Boundaries",
+  "basics": "listIntroCommas",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Students in the school's farm program learn to plant seeds, ______ and harvest vegetables to sell at the town market.",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "water crops",
+   "water crops,",
+   "water crops;",
+   "water, crops,"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Items in a list of three are separated by commas, so \"water crops\" needs a comma after it, matching the comma after \"plant seeds.\" Leaving it out is inconsistent, a comma inside \"water crops\" splits the item, and a semicolon is not used between simple list items."
+ },
+ {
+  "id": "PSAT-RW-176",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "conventions",
+  "skill": "Form, structure, and sense",
+  "basics": "danglingModifiers",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Walking quietly through the forest at dawn, ______",
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "options": [
+   "a woodpecker was heard drumming on a dead tree by the hikers.",
+   "the drumming of a woodpecker on a dead tree was heard.",
+   "a dead tree was where a woodpecker could be heard drumming.",
+   "the hikers heard a woodpecker drumming on a dead tree."
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The people walking through the forest must come right after the comma, and only the choice beginning with \"the hikers\" puts them there. The others make the woodpecker, its drumming, or a tree seem to be walking."
+ },
+ {
+  "id": "PSAT-RW-177",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "expressionIdeas",
+  "skill": "Transitions",
+  "basics": "transitions",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "To make paper by hand, workers first soak plant fibers in water and beat them until they form a soft pulp. ______ they spread the pulp in a thin layer across a screen and leave it to dry.",
+  "stem": "Which choice completes the text with the most logical transition?",
+  "options": [
+   "Next,",
+   "For example,",
+   "However,",
+   "In contrast,"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The text describes steps in order, and spreading the pulp comes after making it, so \"next\" fits. \"However\" and \"in contrast\" signal opposition, and \"for example\" introduces an illustration."
+ },
+ {
+  "id": "PSAT-RW-178",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "expressionIdeas",
+  "skill": "Transitions",
+  "basics": "transitions",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "The town's old stone bridge was too narrow for modern delivery trucks, which had to take a long detour. ______ the town built a wider bridge right next to the old one.",
+  "stem": "Which choice completes the text with the most logical transition?",
+  "options": [
+   "For instance,",
+   "Still,",
+   "Similarly,",
+   "Therefore,"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "The narrow bridge is the reason the town built a new one, so a cause-and-effect transition fits. \"Similarly\" signals comparison, \"still\" signals contrast, and \"for instance\" introduces an example."
+ },
+ {
+  "id": "PSAT-RW-179",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "expressionIdeas",
+  "skill": "Transitions",
+  "basics": "transitions",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "Penguins cannot fly; their stiff, flipper-like wings are too short to lift them into the air. ______ those same wings make penguins powerful swimmers, able to dive deep and chase fish at high speed.",
+  "stem": "Which choice completes the text with the most logical transition?",
+  "options": [
+   "However,",
+   "For example,",
+   "Therefore,",
+   "Likewise,"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The second sentence turns from what the wings cannot do to what they do well, so a contrast transition fits. \"For example\" and \"likewise\" would treat swimming as an illustration or a parallel of not flying, and the short wings do not cause the swimming skill in the way \"therefore\" claims."
+ },
+ {
+  "id": "PSAT-RW-180",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "expressionIdeas",
+  "skill": "Rhetorical synthesis",
+  "basics": "notesToSentence",
+  "difficulty": 1,
+  "format": "single",
+  "passage": "While researching a topic, a student has taken the following notes:\n\n- The Hubble Space Telescope was launched in 1990.\n- It orbits Earth more than 500 kilometers above the surface.\n- It is named after the astronomer Edwin Hubble.\n- Above the atmosphere, it can take sharper pictures than telescopes on the ground.\n- It has made more than a million observations.\n\nThe student wants to introduce the Hubble Space Telescope to an audience unfamiliar with it. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "options": [
+   "The Hubble Space Telescope, launched in 1990, is a telescope that orbits Earth more than 500 kilometers above the surface.",
+   "The Hubble Space Telescope has made more than a million observations.",
+   "Edwin Hubble was an astronomer, and a space telescope is named after him.",
+   "Above the atmosphere, telescopes can take sharper pictures than telescopes on the ground."
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "An audience new to Hubble needs to learn what it is, and only the sentence calling it a telescope that orbits Earth, launched in 1990, explains what it is. The others give one detail without saying what Hubble is."
+ },
+ {
+  "id": "PSAT-RW-181",
+  "section": "rw",
+  "test": 1,
+  "module": 2,
+  "variant": "lower",
+  "domain": "expressionIdeas",
+  "skill": "Rhetorical synthesis",
+  "basics": "notesToSentence",
+  "difficulty": 2,
+  "format": "single",
+  "passage": "While researching a topic, a student has taken the following notes:\n\n- Bats are mammals that can fly.\n- Many bats find insects by echolocation: they make sounds and listen for the echoes.\n- Dolphins are mammals that live in the ocean.\n- Dolphins also use echolocation to find fish.\n- Most bats are active at night.\n\nThe student wants to emphasize a similarity between bats and dolphins. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "options": [
+   "Dolphins are ocean-dwelling mammals that rely on a skill called echolocation when they hunt for fish to eat.",
+   "Bats are mammals that fly and are mostly active at night, while dolphins are mammals that live in the ocean.",
+   "Many bats find insects by making sounds and listening for the echoes that bounce back to them in the dark.",
+   "Although bats fly and dolphins swim, both use echolocation, listening for echoes of their own sounds to find food."
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "A similarity means something both animals share, and only the sentence saying both use echolocation does that. The sentence about flying, night activity and the ocean stresses differences, and the other two describe just one animal each."
+ }
+]

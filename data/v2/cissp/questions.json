@@ -1,0 +1,4800 @@
+[
+  {
+    "id": "CISSP-T1-001",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Code of ethics",
+    "stem": "An employer pressures a CISSP to certify that a water utility's control system is secure, although the CISSP knows of flaws that could endanger the public. Which ISC2 canon should take precedence?",
+    "options": [
+      "Act honorably, honestly, justly, responsibly and legally",
+      "Protect society, the common good, necessary public trust and confidence, and the infrastructure",
+      "Advance and protect the profession",
+      "Provide diligent and competent service to principals"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The canons apply in order, and the first is protecting society and the infrastructure. Duty to the employer (a principal) comes third, so it cannot justify hiding a risk to public safety."
+  },
+  {
+    "id": "CISSP-T1-002",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bell-LaPadula",
+    "stem": "A system enforces the rule that a subject cleared for Secret cannot write information down to a Confidential file. Which model is this rule from?",
+    "options": [
+      "Biba",
+      "Bell-LaPadula",
+      "Brewer-Nash",
+      "Clark-Wilson"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bell-LaPadula protects confidentiality with no read up (simple security property) and no write down (star property). Biba protects integrity and reverses the directions."
+  },
+  {
+    "id": "CISSP-T1-003",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "OSI model",
+    "stem": "At which OSI layer do routers make forwarding decisions based on IP addresses?",
+    "options": [
+      "Session layer",
+      "Data link layer",
+      "Transport layer",
+      "Network layer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Routers work at layer 3, the network layer, using logical addresses. Switches forward on MAC addresses at layer 2, and TCP and UDP are layer 4."
+  },
+  {
+    "id": "CISSP-T1-004",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Authentication factors",
+    "stem": "An auditor reviews four proposed login designs. Which one actually provides multifactor authentication?",
+    "options": [
+      "A PIN and a passphrase",
+      "A password and a code from a hardware token",
+      "A fingerprint and a palm scan",
+      "A password and the answer to a security question"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "MFA needs factors from different types: something you know, have or are. A password and a security answer are both knowledge, and two biometrics are both inherence."
+  },
+  {
+    "id": "CISSP-T1-005",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Incident response priority",
+    "stem": "Security staff confirm that an attacker is actively copying data from a file server. What should they do FIRST?",
+    "options": [
+      "Write the lessons learned report",
+      "Notify the press before the story leaks",
+      "Wipe and rebuild the server from a known good image to remove the attacker",
+      "Contain the incident by isolating the affected server"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "After detection and initial response, mitigation (containment) limits the damage. Rebuilding destroys evidence and comes after containment and analysis; lessons learned come last."
+  },
+  {
+    "id": "CISSP-T1-006",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Penetration test authorization",
+    "stem": "A security manager is planning a penetration test of the company's public systems. What must be obtained FIRST?",
+    "options": [
+      "A list of known vulnerabilities from the last scan",
+      "Approval by email from each administrator of the systems that will be tested in scope",
+      "Written authorization from senior management defining scope and rules of engagement",
+      "Exploit code for the systems in scope"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Without written authorization from someone with authority, testing may be illegal. The scope and rules of engagement also protect production systems and set out what testers may do."
+  },
+  {
+    "id": "CISSP-T1-007",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data roles",
+    "stem": "Who is ultimately responsible for deciding the classification of a customer database?",
+    "options": [
+      "The security analyst",
+      "The data custodian",
+      "The database administrator",
+      "The data owner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The data owner, usually a senior business manager, is accountable for the data and sets its classification. Custodians, such as DBAs, implement the protection the owner requires."
+  },
+  {
+    "id": "CISSP-T1-008",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Security in the SDLC",
+    "stem": "At which point is it MOST cost-effective to address security in a new application?",
+    "options": [
+      "During the first penetration test of the finished application",
+      "Right after the application goes live",
+      "During user acceptance testing",
+      "When the requirements are being defined"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Flaws fixed in requirements and design cost far less than those found in testing or production. Security requirements should be set alongside functional ones."
+  },
+  {
+    "id": "CISSP-T1-009",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Due care and due diligence",
+    "stem": "After a breach, regulators ask a company to show that it had been checking whether its patching policy was actually followed. What are they asking the company to demonstrate?",
+    "options": [
+      "Due care",
+      "Separation of duties",
+      "Risk transference",
+      "Due diligence"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Due care is doing what a reasonable organization would do, such as having a patching policy. Due diligence is the ongoing investigation and verification that those measures are in place and working."
+  },
+  {
+    "id": "CISSP-T1-010",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Biba",
+    "stem": "A manufacturing system must stop unverified sensor data from corrupting trusted production records. Which model's rules BEST address this?",
+    "options": [
+      "Brewer-Nash, which blocks access after a conflict of interest",
+      "Bell-LaPadula, which forbids reading up to a higher level",
+      "Biba, which forbids writing up to a higher integrity level",
+      "Take-Grant, which tracks how rights move between subjects"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Biba is an integrity model: no write up stops low-integrity sources from contaminating high-integrity data, and no read down stops trusted subjects from relying on low-integrity data."
+  },
+  {
+    "id": "CISSP-T1-011",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "IPsec modes",
+    "stem": "A company links two offices over the internet with IPsec and wants the original IP headers hidden as well as the payload. Which configuration fits?",
+    "options": [
+      "ESP in transport mode",
+      "ESP in tunnel mode",
+      "AH in transport mode",
+      "AH in tunnel mode"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ESP provides confidentiality. Tunnel mode encapsulates the whole original packet, headers included, inside a new packet, which suits gateway-to-gateway VPNs. AH authenticates but does not encrypt."
+  },
+  {
+    "id": "CISSP-T1-012",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Biometrics",
+    "stem": "A data center uses a fingerprint reader. Management is most concerned about unauthorized people being accepted. Which rate should be minimized?",
+    "options": [
+      "Crossover error rate",
+      "False rejection rate (Type I error)",
+      "Enrollment failure rate",
+      "False acceptance rate (Type II error)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "False acceptance lets an impostor in, which is the dangerous error for a high-security area. Tuning for a lower FAR usually raises the FRR, which inconveniences legitimate users."
+  },
+  {
+    "id": "CISSP-T1-013",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "order",
+    "skill": "Incident management steps",
+    "stem": "Place these incident management steps in the order the CISSP outline lists them.",
+    "options": [
+      "Mitigation",
+      "Response",
+      "Remediation",
+      "Recovery",
+      "Lessons learned",
+      "Detection"
+    ],
+    "correct": [
+      5,
+      1,
+      0,
+      3,
+      2,
+      4
+    ],
+    "explanation": "The outline lists detection, response, mitigation, reporting, recovery, remediation and lessons learned. Reporting runs alongside the others and is left out here."
+  },
+  {
+    "id": "CISSP-T1-014",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Test perspectives",
+    "stem": "To get the most coverage from a two-week engagement, a company briefs its testers on the full architecture and hands over the application's design documents. Which test perspective has it chosen?",
+    "options": [
+      "Gray box (partially known environment)",
+      "Blind test with no notice to staff",
+      "Black box (unknown environment)",
+      "White box (known environment)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Full knowledge makes it a white box or known-environment test, which is efficient and thorough. Black box testers start with nothing, like an outside attacker."
+  },
+  {
+    "id": "CISSP-T1-015",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Classification first step",
+    "stem": "A company has never classified its information. What should the security manager do FIRST?",
+    "options": [
+      "Encrypt all file servers and databases immediately",
+      "Buy a data loss prevention tool to scan file shares",
+      "Label every document and file share as Confidential until each one has been reviewed",
+      "Build an inventory of information assets and identify their owners"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Classification depends on knowing what assets exist and who owns them. Tools and controls are chosen once the assets and their classification are known."
+  },
+  {
+    "id": "CISSP-T1-016",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SQL injection",
+    "stem": "Which control is MOST effective against SQL injection?",
+    "options": [
+      "Parameterized queries with bound variables",
+      "Hiding database error messages from users",
+      "Running the database on a nonstandard port",
+      "Encrypting the database files at rest"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Parameterized queries keep user input as data rather than executable SQL. Hiding errors and changing ports only make attacks a little harder to tune."
+  },
+  {
+    "id": "CISSP-T1-017",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Governance",
+    "stem": "A newly hired CISO finds that security projects are approved by the IT operations manager, who also owns the budget for uptime. What should the CISO do FIRST?",
+    "options": [
+      "Propose a governance structure in which senior management sets security priorities",
+      "Move the security budget into the CISO's own cost center without discussing it with anyone",
+      "Ask internal audit to test every control the IT operations manager approved",
+      "Halt all security projects until the IT operations manager is replaced"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Security must be driven by senior management through governance, not by a function with a conflicting goal. Establishing that structure comes before restructuring budgets or auditing past decisions."
+  },
+  {
+    "id": "CISSP-T1-018",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Brewer-Nash",
+    "stem": "A consulting firm must stop an analyst who has seen one bank's data from then accessing a competing bank's data. Which model fits?",
+    "options": [
+      "Graham-Denning",
+      "Biba",
+      "Brewer-Nash",
+      "Clark-Wilson"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Brewer-Nash, the Chinese Wall model, changes access rights dynamically based on what a subject has already accessed, to prevent conflicts of interest."
+  },
+  {
+    "id": "CISSP-T1-019",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Firewall types",
+    "stem": "Which firewall type tracks the state of connections and allows return traffic only for sessions started from inside?",
+    "options": [
+      "Circuit-level proxy",
+      "Static packet filter",
+      "Stateful inspection firewall",
+      "Air gap"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A stateful firewall keeps a table of active connections and permits replies that match an established session. A static packet filter judges each packet alone."
+  },
+  {
+    "id": "CISSP-T1-020",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Access control models",
+    "stem": "Access to medical records is granted based on the user's job, the patient's ward, and the time of day. Which model is this?",
+    "options": [
+      "Mandatory access control",
+      "Role-based access control",
+      "Attribute-based access control",
+      "Discretionary access control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ABAC evaluates policies over attributes of the subject, object and environment, such as department, ward and time. RBAC grants by role alone."
+  },
+  {
+    "id": "CISSP-T1-021",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chain of custody",
+    "stem": "Why is a chain of custody kept for a seized hard drive?",
+    "options": [
+      "To track how many hours analysts spent on the drive",
+      "To show the evidence was controlled and unaltered from collection to court",
+      "To list which files and folders the analyst considers relevant to the case at hand",
+      "To record the drive's purchase price for insurance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A chain of custody documents everyone who handled the evidence, when and why. Gaps can make evidence inadmissible."
+  },
+  {
+    "id": "CISSP-T1-022",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Credentialed scanning",
+    "stem": "Monthly network-based scans show the server estate as clean, yet a configuration audit keeps finding outdated libraries and weak local settings on those servers. What should the manager change?",
+    "options": [
+      "Rely on the vendor's patch release notes instead",
+      "Switch the scanner to check only the open ports reported by the firewall team",
+      "Run credentialed scans that log in and check installed software",
+      "Run the scans less often to reduce network load"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Uncredentialed scans see only what is exposed on the network. Credentialed scans log in and read installed versions and local settings, which finds missing patches and weak configuration accurately."
+  },
+  {
+    "id": "CISSP-T1-023",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Policy hierarchy",
+    "stem": "Which document states WHAT senior management requires and WHY, without describing how staff should carry it out?",
+    "options": [
+      "Baseline",
+      "Guideline",
+      "Policy",
+      "Procedure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A policy is a high-level management statement of intent. Standards and baselines set mandatory specifics, procedures give step-by-step instructions, and guidelines are recommendations."
+  },
+  {
+    "id": "CISSP-T1-024",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data states",
+    "stem": "Which control MOST directly protects data in use?",
+    "options": [
+      "Encrypted backup tapes stored offsite",
+      "TLS 1.3 between the client and the web server",
+      "Full-disk encryption on the database server with keys held in a separate vault",
+      "A trusted execution environment that isolates memory during processing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Data in use is being processed in memory. Enclaves or trusted execution environments protect it there. TLS protects data in transit, and disk or tape encryption protects data at rest."
+  },
+  {
+    "id": "CISSP-T1-025",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cross-site scripting",
+    "stem": "A forum displays users' posts without encoding them, and an attacker posts a script that runs in other users' browsers. Which control addresses the cause?",
+    "options": [
+      "Storing the posts in an encrypted database with daily backups",
+      "Locking accounts after failed login attempts",
+      "Requiring HTTPS on every page of the forum",
+      "Context-aware output encoding of user content"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stored XSS happens when untrusted content is rendered as code. Encoding output for the context (HTML, attribute, JavaScript) makes it display as text. Input validation and a content security policy add layers."
+  },
+  {
+    "id": "CISSP-T1-026",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Secure design principles",
+    "stem": "When a firewall's rule engine crashes, it blocks all traffic until it is restored. Which principle does this follow?",
+    "options": [
+      "Defense in depth",
+      "Separation of duties",
+      "Keep it simple",
+      "Fail securely"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Failing securely (fail closed) means a failure leaves the system in a safe state. For a firewall, that means denying traffic rather than passing it uninspected."
+  },
+  {
+    "id": "CISSP-T1-027",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Segmentation",
+    "stem": "After a ransomware outbreak spread from an office PC to the payment servers, what should the security architect recommend FIRST to limit future spread?",
+    "options": [
+      "Move the payment servers to the same VLAN as the PCs",
+      "Segment the network so the payment servers sit in a restricted zone",
+      "Replace the office PCs with newer models",
+      "Increase the bandwidth between the office network and the data center servers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Segmentation and access control between zones stop lateral movement. A flat network lets malware reach critical systems from any compromised endpoint."
+  },
+  {
+    "id": "CISSP-T1-028",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mandatory access control",
+    "stem": "In which model does the system, not the data owner, decide access by comparing a subject's clearance with an object's label?",
+    "options": [
+      "Mandatory access control",
+      "Rule-based access control",
+      "Role-based access control",
+      "Discretionary access control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MAC enforces labels set by policy; users cannot pass on access at their discretion. DAC lets the owner grant access, as with file permissions."
+  },
+  {
+    "id": "CISSP-T1-029",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Order of volatility",
+    "stem": "During a live response, which evidence should be collected FIRST?",
+    "options": [
+      "Files on the hard drive",
+      "Backup tapes in the vault",
+      "Printed logs in the server room",
+      "Contents of system memory"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Collect the most volatile evidence first. RAM is lost at power-off, while disks, backups and paper persist."
+  },
+  {
+    "id": "CISSP-T1-030",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Quantitative risk",
+    "stem": "A server room worth \\$400,000 has a 25% exposure factor for flooding, and a flood is expected once every 10 years. What is the annualized loss expectancy?",
+    "options": [
+      "\\$1,000",
+      "\\$100,000",
+      "\\$10,000",
+      "\\$40,000"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SLE = asset value x exposure factor = 400,000 x 0.25 = 100,000. ALE = SLE x ARO = 100,000 x 0.1 = 10,000 per year."
+  },
+  {
+    "id": "CISSP-T1-031",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synthetic transactions",
+    "stem": "Which technique checks an application's availability and response time by running scripted user actions on a schedule?",
+    "options": [
+      "Fuzz testing",
+      "Real user monitoring",
+      "Static code analysis",
+      "Synthetic transaction monitoring"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Synthetic monitoring runs scripted transactions even when no real users are present. Real user monitoring records the experience of actual users passively."
+  },
+  {
+    "id": "CISSP-T1-032",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Control cost justification",
+    "stem": "A control costs \\$30,000 a year. It reduces a risk's ALE from \\$50,000 to \\$15,000. From a purely financial view, what should the manager conclude?",
+    "options": [
+      "The control is justified, because the yearly benefit of \\$35,000 exceeds its cost",
+      "The control cannot be judged until a qualitative risk matrix has been completed by the business",
+      "The control is justified only if it removes the risk entirely",
+      "The control is not justified, because residual risk of \\$15,000 remains"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Value of a safeguard = ALE before minus ALE after minus annual cost of the safeguard: 50,000 - 15,000 - 30,000 = 5,000, a positive value. Some residual risk always remains."
+  },
+  {
+    "id": "CISSP-T1-033",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Zero trust",
+    "stem": "Which statement BEST describes a zero trust architecture?",
+    "options": [
+      "Users on the internal network are trusted once they pass the perimeter",
+      "A single strong firewall at the perimeter replaces the need for internal segmentation",
+      "All traffic is encrypted, so no further authentication is required",
+      "Every access request is verified explicitly, whatever network it comes from"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Zero trust removes implicit trust based on network location. Each request is authenticated and authorized using identity, device and context, with least privilege and continuous monitoring."
+  },
+  {
+    "id": "CISSP-T1-034",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wireless security",
+    "stem": "Which configuration gives the STRONGEST protection for a corporate Wi-Fi network?",
+    "options": [
+      "WEP with MAC address filtering",
+      "WPA3-Enterprise with 802.1X authentication",
+      "An open network with a hidden SSID",
+      "WPA2-Personal with a long shared passphrase"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "WPA3-Enterprise authenticates each user through 802.1X and a RADIUS server, so access can be revoked per person. Shared passphrases, WEP and hidden SSIDs are weak."
+  },
+  {
+    "id": "CISSP-T1-035",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Federation",
+    "stem": "A company wants employees to sign in to a partner's web portal with their corporate credentials, using an XML-based standard that passes assertions from the identity provider. Which standard fits?",
+    "options": [
+      "OAuth 2.0 alone",
+      "LDAP",
+      "SAML 2.0",
+      "RADIUS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAML 2.0 exchanges XML assertions between an identity provider and a service provider for browser single sign-on. OAuth 2.0 is for delegated authorization, not authentication on its own."
+  },
+  {
+    "id": "CISSP-T1-036",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forensic imaging",
+    "stem": "How should an analyst examine a suspect's drive?",
+    "options": [
+      "Boot the suspect's drive and browse its files directly",
+      "Run antivirus on the original drive to clean it first",
+      "Copy only the user's documents folder to a USB stick for review at the analyst's desk",
+      "Make a bit-for-bit image through a write blocker and work on a verified copy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A write blocker prevents changes to the original. Hashing the image and the original proves they match, and analysis happens on the copy."
+  },
+  {
+    "id": "CISSP-T1-037",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Media sanitization",
+    "stem": "A company is returning leased laptops with solid-state drives that held confidential data. Which sanitization method is MOST reliable while keeping the drives usable?",
+    "options": [
+      "Degaussing each drive with a strong magnetic field",
+      "Deleting the partitions and reformatting each drive",
+      "Overwriting every block of each drive once with zeros using a disk utility",
+      "Cryptographic erase of drives that were fully encrypted"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Wear leveling on SSDs means overwriting may miss blocks, and degaussing does not affect flash memory. Destroying the encryption key of a fully encrypted drive renders the data unrecoverable and leaves the drive reusable."
+  },
+  {
+    "id": "CISSP-T1-038",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Software composition analysis",
+    "stem": "A team builds its product with dozens of open-source libraries. Which practice BEST manages their vulnerabilities?",
+    "options": [
+      "Avoiding updates to libraries once the product ships",
+      "Software composition analysis with a maintained software bill of materials",
+      "Relying on the library authors to email the team whenever they discover a new flaw",
+      "Copying the library code into the repository and editing it freely"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SCA tools inventory third-party components into an SBOM and match them against vulnerability databases, so vulnerable versions are found and upgraded."
+  },
+  {
+    "id": "CISSP-T1-039",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fuzzing",
+    "stem": "Which testing method feeds malformed and random input to an application to find crashes and unhandled errors?",
+    "options": [
+      "Regression testing",
+      "Fuzzing",
+      "Use case testing",
+      "Code review"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fuzzing generates unexpected input, either by mutating valid samples or from a model of the format, to find faults such as buffer overflows."
+  },
+  {
+    "id": "CISSP-T1-040",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk response",
+    "stem": "A company buys cyber insurance to cover losses from a ransomware attack. Which risk response is this?",
+    "options": [
+      "Avoidance",
+      "Acceptance",
+      "Transference",
+      "Mitigation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Insurance shifts the financial impact to a third party, which is risk transference. The company still owns the risk of the incident happening and the duty to respond."
+  },
+  {
+    "id": "CISSP-T1-041",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reference monitor",
+    "stem": "Which component of the trusted computing base mediates every access by a subject to an object?",
+    "options": [
+      "The certificate authority",
+      "The security perimeter",
+      "The reference monitor",
+      "The hypervisor scheduler"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The reference monitor is the abstract concept that mediates all access; the security kernel implements it. It must be tamperproof, always invoked and small enough to verify."
+  },
+  {
+    "id": "CISSP-T1-042",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "NAC",
+    "stem": "A hospital wants laptops that lack current patches to be placed in a quarantine network until they are fixed. Which control does this?",
+    "options": [
+      "A web application firewall",
+      "Port address translation on the edge router for all laptops",
+      "A demilitarized zone for laptops",
+      "Network access control with posture assessment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "NAC checks a device's identity and health, such as patch level and antivirus status, before granting access, and can send noncompliant devices to remediation."
+  },
+  {
+    "id": "CISSP-T1-043",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "OAuth and OIDC",
+    "stem": "A mobile app needs to verify who the user is through a social login and receive an ID token. Which protocol provides this?",
+    "options": [
+      "OAuth 2.0 authorization code flow alone",
+      "OpenID Connect",
+      "Kerberos",
+      "TACACS+"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "OpenID Connect adds an authentication layer and a signed ID token on top of OAuth 2.0. OAuth alone grants access to resources without defining user identity."
+  },
+  {
+    "id": "CISSP-T1-044",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Change management",
+    "stem": "An administrator applied an urgent firewall change during an outage without going through change management. What should happen next?",
+    "options": [
+      "Roll back the change immediately even though it fixed the outage, then resubmit it normally",
+      "Ignore it, since the outage was fixed",
+      "Record and review the change retroactively under the emergency change process",
+      "Discipline the administrator and take no further action"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Emergency changes are allowed but must be documented, reviewed and approved after the fact, so the configuration baseline stays accurate."
+  },
+  {
+    "id": "CISSP-T1-045",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data remanence",
+    "stem": "Which method of media sanitization leaves data recoverable with ordinary file recovery tools?",
+    "options": [
+      "Degaussing a magnetic hard disk",
+      "Shredding the drive into small particles",
+      "Purging the drive with a firmware secure erase",
+      "Deleting files and emptying the recycle bin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Deleting a file removes only its pointer; the data stays on the disk until overwritten. Purging, degaussing magnetic media and physical destruction defeat recovery."
+  },
+  {
+    "id": "CISSP-T1-046",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DevSecOps",
+    "stem": "A company releases code many times a day through a CI/CD pipeline. How should security testing fit in?",
+    "options": [
+      "Automate security tests in the pipeline so each build is checked",
+      "Leave security to the operations team, who can scan the systems after deployment",
+      "Run a manual penetration test before every release",
+      "Test security once a year on the production system"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DevSecOps integrates automated SAST, SCA, secret scanning and similar checks into the pipeline, so security keeps pace with frequent releases."
+  },
+  {
+    "id": "CISSP-T1-047",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Misuse case testing",
+    "stem": "A test team writes scenarios describing how an attacker might abuse a password reset feature, then tests them. What is this?",
+    "options": [
+      "Load testing",
+      "Interface testing",
+      "Acceptance testing",
+      "Misuse case testing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Misuse (abuse) cases describe what a malicious user might do with a feature, so the team can test that the system resists it."
+  },
+  {
+    "id": "CISSP-T1-048",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Risk acceptance",
+    "stem": "A business unit wants to keep using a legacy application that cannot be patched. The risk is above the stated risk appetite. Who should decide whether the risk is accepted?",
+    "options": [
+      "The system administrator who maintains the server",
+      "The senior manager who owns the business process",
+      "The external auditor during the next annual review",
+      "The security team that identified the vulnerability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Risk acceptance belongs to the asset or process owner with the authority to accept it, usually senior management. Security advises and documents; it does not accept business risk on management's behalf."
+  },
+  {
+    "id": "CISSP-T1-049",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Symmetric cryptography",
+    "stem": "A company must encrypt terabytes of backup data quickly. Which choice is MOST appropriate?",
+    "options": [
+      "RSA with a 4096-bit key applied to each file",
+      "Elliptic curve Diffie-Hellman applied separately to each file in the backup set",
+      "AES with a key protected by the backup system's key management",
+      "SHA-256 applied to each backup file"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Symmetric algorithms such as AES are fast enough for bulk data. Asymmetric algorithms are far slower and are used to exchange or wrap keys, and hashing does not encrypt at all."
+  },
+  {
+    "id": "CISSP-T1-050",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Network attacks",
+    "stem": "An attacker sends forged ARP replies so traffic for the default gateway goes to the attacker's machine. What is this?",
+    "options": [
+      "A SYN flood",
+      "DNS cache poisoning",
+      "VLAN hopping through switch spoofing",
+      "ARP poisoning for an on-path attack"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ARP has no authentication, so forged replies can map the gateway's IP to the attacker's MAC address. Dynamic ARP inspection on switches mitigates it."
+  },
+  {
+    "id": "CISSP-T1-051",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kerberos",
+    "stem": "In Kerberos, what does the client present to a file server to prove it has been authenticated?",
+    "options": [
+      "A SAML assertion from the identity provider",
+      "A service ticket issued by the ticket granting service",
+      "An X.509 certificate signed by the file server's own certificate authority",
+      "The user's password hash"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The client first gets a ticket granting ticket from the KDC, then requests a service ticket for the file server. The password never crosses the network."
+  },
+  {
+    "id": "CISSP-T1-052",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Configuration management",
+    "stem": "What is the purpose of a configuration baseline?",
+    "options": [
+      "A backup copy of the system's data files",
+      "A list of every user who has logged in to a system",
+      "The minimum hardware and software versions needed to run an application in production",
+      "A documented, approved state that systems can be built and checked against"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A baseline records the approved configuration. Comparing systems with it reveals unauthorized or drifting changes."
+  },
+  {
+    "id": "CISSP-T1-053",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business impact analysis",
+    "stem": "During a BIA, a manager states that the order system can be down for no more than 8 hours before the business suffers irreparable harm. What is this value?",
+    "options": [
+      "Maximum tolerable downtime",
+      "Recovery point objective",
+      "Work recovery time",
+      "Mean time to repair"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MTD is the longest outage the business can survive. The RTO is set below it, and the RPO measures acceptable data loss, not downtime."
+  },
+  {
+    "id": "CISSP-T1-054",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SOC reports",
+    "stem": "A company wants assurance that a cloud provider's security controls operated effectively over the past year. Which report should it request?",
+    "options": [
+      "SOC 2 Type II",
+      "SOC 1 Type I",
+      "SOC 2 Type I",
+      "SOC 3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SOC 2 covers trust services criteria such as security. Type II tests operating effectiveness over a period, while Type I covers design at one point in time. SOC 3 is a short public summary."
+  },
+  {
+    "id": "CISSP-T1-055",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Retention",
+    "stem": "Legal counsel says customer records must be kept for seven years. Records older than that are still in the archive. What is the BEST action?",
+    "options": [
+      "Securely dispose of records past the retention period under the documented schedule",
+      "Keep all records indefinitely, since any of them might be needed in future litigation or audits",
+      "Ask the IT team to decide which old records are useful",
+      "Move the old records to cheaper storage and keep them"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Keeping data past its retention period adds cost and legal exposure, for example in discovery. A documented schedule should drive secure disposal, unless a legal hold applies."
+  },
+  {
+    "id": "CISSP-T1-056",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Maturity models",
+    "stem": "Which model rates an organization's software development processes from initial through optimizing?",
+    "options": [
+      "The Bell-LaPadula model",
+      "Capability Maturity Model Integration",
+      "The STRIDE threat model",
+      "The OSI reference model"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CMMI defines five maturity levels: initial, managed, defined, quantitatively managed and optimizing. OWASP SAMM is a similar model focused on software security."
+  },
+  {
+    "id": "CISSP-T1-057",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Digital signatures",
+    "stem": "Alice signs a contract digitally and sends it to Bob. Which key does Bob use to verify the signature?",
+    "options": [
+      "Bob's public key",
+      "Bob's private key",
+      "Alice's public key",
+      "Alice's private key"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Alice signs a hash of the message with her private key. Anyone, including Bob, verifies it with her public key, which proves origin and integrity."
+  },
+  {
+    "id": "CISSP-T1-058",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DNS security",
+    "stem": "Which control helps resolvers confirm that DNS responses came from the authoritative zone and were not altered?",
+    "options": [
+      "DNS over a different port",
+      "DNSSEC",
+      "Split-horizon DNS",
+      "Round-robin DNS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "DNSSEC signs DNS records so resolvers can validate their origin and integrity, which defeats cache poisoning. It does not encrypt queries."
+  },
+  {
+    "id": "CISSP-T1-059",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Privilege creep",
+    "stem": "An employee who has changed departments three times still has access from every previous role. What control would have prevented this?",
+    "options": [
+      "Encrypting the employee's laptop",
+      "Requiring longer and more complex passwords for the employee at each role change",
+      "Reviewing and removing access whenever a person changes role",
+      "Adding a second authentication factor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Privilege creep comes from adding access without removing it. A transfer process plus periodic access reviews revokes rights the new role does not need."
+  },
+  {
+    "id": "CISSP-T1-060",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Patch management",
+    "stem": "A critical patch is released for a vulnerability being exploited in the wild. What is the BEST approach?",
+    "options": [
+      "Skip the patch on systems behind a firewall, since the exploit needs direct internet access to them",
+      "Deploy the patch to all production systems at once without testing",
+      "Wait for the next quarterly maintenance window",
+      "Test the patch quickly on representative systems, then deploy on an accelerated schedule"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Active exploitation justifies speed, but a brief test reduces the chance of an outage. An emergency change process supports an accelerated rollout."
+  },
+  {
+    "id": "CISSP-T1-061",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "BCP initiation",
+    "stem": "Senior management asks a security manager to begin a business continuity program. What should the manager do FIRST?",
+    "options": [
+      "Run a tabletop exercise with the department heads",
+      "Obtain a management-approved scope and charter for the plan",
+      "Write detailed recovery procedures for each of the critical servers and applications",
+      "Sign a contract for a hot site with a vendor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Continuity planning starts with project initiation: management support, scope and charter. The BIA, strategies, procedures and exercises all follow from that approved scope."
+  },
+  {
+    "id": "CISSP-T1-062",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Audit independence",
+    "stem": "The board wants the most objective assessment of the security program. Who should perform it?",
+    "options": [
+      "The IT operations team that implements the controls",
+      "The security team that runs the program",
+      "A consultant who designed the program last year and knows it best",
+      "An external auditor with no other ties to the program"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Independence makes an audit credible. People who built or run the program, or advised on it, have an interest in its results."
+  },
+  {
+    "id": "CISSP-T1-063",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scoping and tailoring",
+    "stem": "A company adopts a security baseline but removes controls for wireless networks because it has none. What is this practice called?",
+    "options": [
+      "Hardening",
+      "Tailoring",
+      "Scoping",
+      "Benchmarking"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scoping removes baseline controls that do not apply to the environment. Tailoring adjusts the remaining controls to fit the organization's needs."
+  },
+  {
+    "id": "CISSP-T1-064",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Database inference",
+    "stem": "Users can see total salaries by department but not individual salaries. One department has a single employee, so its total reveals that person's pay. What is this problem?",
+    "options": [
+      "Inference",
+      "Polyinstantiation",
+      "Normalization",
+      "Concurrency"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Inference is deducing sensitive information from data a user is allowed to see. Controls include suppressing small cells or adding noise."
+  },
+  {
+    "id": "CISSP-T1-065",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "PKI revocation",
+    "stem": "An employee's private key was stolen. What should happen to the matching certificate?",
+    "options": [
+      "The employee should change the password on the key store",
+      "The CA should revoke it so CRL and OCSP checks show it is invalid",
+      "The certificate should be left in place until it expires naturally",
+      "The registration authority should re-sign it with a new date"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A compromised key means its certificate can no longer be trusted. Revocation publishes that status through the certificate revocation list or OCSP, and a new key pair and certificate are issued."
+  },
+  {
+    "id": "CISSP-T1-066",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Email security",
+    "stem": "Which control lets a receiving mail server check that a message claiming to come from a domain was sent by a server that domain has authorized?",
+    "options": [
+      "Greylisting",
+      "IMAP over TLS",
+      "S/MIME",
+      "SPF"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sender Policy Framework publishes the domain's authorized sending servers in DNS. DKIM adds a signature, and DMARC tells receivers what to do when checks fail."
+  },
+  {
+    "id": "CISSP-T1-067",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Access reviews",
+    "stem": "Who should confirm during a quarterly access review that each user still needs access to a finance application?",
+    "options": [
+      "The vendor that supplied the application",
+      "The users themselves, each confirming their own access through self-attestation",
+      "The help desk that resets passwords",
+      "The application's business owner or the users' managers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Those who understand the business need, the owner or line managers, should certify access. IT runs the process, but cannot judge who needs what."
+  },
+  {
+    "id": "CISSP-T1-068",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Backup types",
+    "stem": "Which backup type copies all files changed since the last full backup and does not reset the archive bit?",
+    "options": [
+      "Snapshot of the boot volume",
+      "Differential",
+      "Incremental",
+      "Full"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A differential grows each day until the next full backup, so restoring needs the full plus the latest differential. An incremental resets the bit, so restoring needs the full plus every incremental."
+  },
+  {
+    "id": "CISSP-T1-069",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Intellectual property",
+    "stem": "A company's competitive edge is a manufacturing process it never wants to disclose publicly. Which protection is MOST appropriate?",
+    "options": [
+      "Trademark",
+      "Copyright",
+      "Trade secret",
+      "Patent"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A trade secret is protected by keeping it confidential, with NDAs and access controls, and can last indefinitely. A patent requires public disclosure in exchange for a limited term."
+  },
+  {
+    "id": "CISSP-T1-070",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Log review",
+    "stem": "Which practice makes log review MOST effective across many systems?",
+    "options": [
+      "Reviewing logs only after an incident has been reported by a user or a customer",
+      "Centralizing logs in a SIEM with synchronized time sources",
+      "Keeping logs only on each local server",
+      "Disabling verbose logging on all systems"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A SIEM collects and correlates events from many sources. Synchronized clocks, through NTP, let events line up correctly in time."
+  },
+  {
+    "id": "CISSP-T1-071",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Privacy law",
+    "stem": "A US company sells online to residents of the European Union and stores their personal data in the US. Which statement BEST describes its obligations?",
+    "options": [
+      "Only US state privacy laws apply because the company is based in the US",
+      "The GDPR can apply because the company offers goods to people in the EU",
+      "The GDPR applies only if the company has an office in an EU member state",
+      "The GDPR does not apply because the data is stored outside the EU"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The GDPR has extraterritorial reach: it applies to organizations that offer goods or services to, or monitor, people in the EU, wherever the organization or data is located."
+  },
+  {
+    "id": "CISSP-T1-072",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hardware security",
+    "stem": "Which component stores keys in a laptop's motherboard chip so that disk encryption is tied to the device and its boot state?",
+    "options": [
+      "Trusted Platform Module",
+      "Smart card reader",
+      "Baseboard management controller",
+      "Hardware security module"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A TPM is a chip on the motherboard that stores keys and measures the boot process, so it can release a disk key only if the system has not been tampered with. HSMs are separate devices for high-volume key operations."
+  },
+  {
+    "id": "CISSP-T1-073",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Remote access",
+    "stem": "Staff need remote access to a few internal web apps. The company wants to avoid giving remote devices full network access. Which approach fits BEST?",
+    "options": [
+      "Zero trust network access that brokers each application separately",
+      "A full-tunnel VPN that places users on the internal network",
+      "Remote desktop exposed to the internet on a custom port",
+      "Port forwarding on the perimeter firewall for each internal application that staff use"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ZTNA grants access per application after verifying the user and device, without placing the device on the network. A full VPN extends the network to the device."
+  },
+  {
+    "id": "CISSP-T1-074",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Privileged access",
+    "stem": "Administrators currently have permanent domain admin rights. Which change reduces risk the MOST?",
+    "options": [
+      "Disabling logging of administrator actions to save space",
+      "Requiring administrators to change their admin passwords every 30 days and log each change",
+      "Just-in-time elevation through a privileged access management system",
+      "Giving each administrator two permanent admin accounts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "JIT access grants elevated rights only when needed, for a limited time, with approval and session recording, which shrinks the window an attacker can use."
+  },
+  {
+    "id": "CISSP-T1-075",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Recovery sites",
+    "stem": "A business needs to be running at an alternate site within about a day, and cannot justify the cost of a hot site. Which option fits?",
+    "options": [
+      "A cold site with power and space only",
+      "A mirrored site with real-time replication",
+      "A warm site with equipment in place but data restored at failover",
+      "A reciprocal agreement to share a competitor's data center if either company has a disaster"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A warm site has hardware and connectivity ready but needs current data restored, so recovery takes hours to a day or more at a lower cost than a hot site. Cold sites take a week or more, and mirrored sites cost the most of all."
+  },
+  {
+    "id": "CISSP-T1-076",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Privacy techniques",
+    "stem": "An analytics team needs to study customer behavior without being able to identify any person, and the data will never be relinked. Which technique fits BEST?",
+    "options": [
+      "Tokenization",
+      "Anonymization",
+      "Pseudonymization",
+      "Symmetric encryption"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Anonymization removes identifiers irreversibly. Pseudonymization and tokenization replace identifiers with values that can be mapped back, and encrypted data can be decrypted, so those remain personal data."
+  },
+  {
+    "id": "CISSP-T1-077",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Code signing",
+    "stem": "What does code signing assure the person installing software?",
+    "options": [
+      "That the code contains no vulnerabilities",
+      "That the code was reviewed and tested by an independent security lab before release",
+      "Who published the code and that it was not altered after signing",
+      "That the code will run on every platform"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A digital signature proves origin and integrity. It says nothing about whether the publisher's code is secure or well written."
+  },
+  {
+    "id": "CISSP-T1-078",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Personnel security",
+    "stem": "Which practice is MOST useful for uncovering fraud that requires a person's ongoing presence to conceal?",
+    "options": [
+      "Mandatory vacation",
+      "Background checks",
+      "Least privilege",
+      "Non-disclosure agreements"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mandatory vacation forces someone else to perform the job for a period, which tends to expose schemes that need daily attention to stay hidden. Job rotation works on the same principle."
+  },
+  {
+    "id": "CISSP-T1-079",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Reporting results",
+    "stem": "A penetration test found 40 issues. How should the security manager present them to senior management?",
+    "options": [
+      "List every finding in the order the testers found them",
+      "Present only the findings that the security team can fix itself, leaving the rest to IT operations",
+      "Summarize business risk and recommended priorities, with technical detail in an appendix",
+      "Provide the raw scanner output so nothing is lost"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Executives need risk in business terms and clear priorities to make decisions. Technical teams need the details, so both are included at the right level."
+  },
+  {
+    "id": "CISSP-T1-080",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cloud shared responsibility",
+    "stem": "A company moves an application to a platform as a service offering. Which responsibility stays with the company?",
+    "options": [
+      "Securing its application code and the data it stores",
+      "Physical security of the provider's data centers",
+      "Patching the operating system of the platform",
+      "Maintaining and patching the hypervisor that hosts the platform"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In PaaS the provider manages the infrastructure, OS and runtime. The customer remains responsible for its own application, data, identities and their configuration."
+  },
+  {
+    "id": "CISSP-T1-081",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Converged protocols",
+    "stem": "Which protocol carries SCSI storage commands over a standard IP network?",
+    "options": [
+      "iSCSI",
+      "SIP",
+      "SNMP",
+      "LDAP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "iSCSI encapsulates SCSI commands in TCP/IP, letting storage traffic share an IP network. It should be isolated and authenticated, for example with CHAP and a dedicated VLAN."
+  },
+  {
+    "id": "CISSP-T1-082",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identity proofing",
+    "stem": "Before issuing credentials to a new remote employee, what should the organization do?",
+    "options": [
+      "Issue a temporary shared account until the first day",
+      "Let the employee choose a username and create the account",
+      "Verify the person's identity against trusted evidence",
+      "Email the password to the address on the job application"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Identity proofing confirms a person is who they claim to be before an identity is registered and credentials issued, as described in NIST SP 800-63A."
+  },
+  {
+    "id": "CISSP-T1-083",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Honeypots",
+    "stem": "What is the main purpose of a honeypot?",
+    "options": [
+      "To store backup copies of production data",
+      "To serve as the company's public web server in the screened subnet",
+      "To filter spam before it reaches users",
+      "To attract attackers so their methods can be observed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A honeypot is a decoy system with no production use, so any interaction is suspicious and reveals attacker tools and techniques. It must not be used to entrap."
+  },
+  {
+    "id": "CISSP-T1-084",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Threat modeling",
+    "stem": "A threat modeling session finds that a user can deny having submitted a payment because the system keeps no reliable record. Which STRIDE category is this?",
+    "options": [
+      "Elevation of privilege",
+      "Tampering",
+      "Repudiation",
+      "Spoofing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Repudiation threats let a party deny an action. The control is non-repudiation: strong authentication plus secure logging or digital signatures."
+  },
+  {
+    "id": "CISSP-T1-085",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DLP",
+    "stem": "Engineers copy confidential design files to USB drives and personal cloud folders from their laptops, often while working away from the corporate network. Which control BEST detects and blocks this?",
+    "options": [
+      "File integrity monitoring",
+      "Network data loss prevention at the internet gateway",
+      "Endpoint data loss prevention",
+      "A host-based intrusion detection system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Endpoint DLP runs on the laptop, so it sees copies to removable media and sync folders and enforces policy wherever the device is. Network DLP only sees traffic that passes the corporate gateway, and HIDS and file integrity monitoring look for attacks or changes, not data leaving."
+  },
+  {
+    "id": "CISSP-T1-086",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Acquired software",
+    "stem": "A company plans to buy a commercial off-the-shelf application that will process sensitive data. What should the security manager do FIRST?",
+    "options": [
+      "Accept the vendor's marketing claims about security",
+      "Assess the vendor's security practices and the product against requirements",
+      "Install the application in production and scan it for vulnerabilities after deployment",
+      "Ask the vendor for the full source code before any talks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Security must be assessed during acquisition, through questionnaires, certifications, test results and contract terms, before the product is bought."
+  },
+  {
+    "id": "CISSP-T1-087",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Backup verification",
+    "stem": "What is the BEST way to verify that backups can be relied on?",
+    "options": [
+      "Check that the backup job reported success",
+      "Periodically restore data from backup and check it",
+      "Confirm that the backup media are labeled correctly",
+      "Count the number of backup tapes stored offsite"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Only a test restore proves the data can be recovered and is complete. A job success message does not show that the data is usable."
+  },
+  {
+    "id": "CISSP-T1-088",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Industrial control systems",
+    "stem": "What is usually the TOP security priority in an industrial control system that runs a chemical process?",
+    "options": [
+      "Availability and safety of the process",
+      "Anonymity of the plant operators",
+      "Non-repudiation of operator commands",
+      "Confidentiality of the process recipes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In operational technology, unplanned downtime or unsafe states can harm people and equipment, so safety and availability come first, then integrity and confidentiality."
+  },
+  {
+    "id": "CISSP-T1-089",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Denial of service",
+    "stem": "An e-commerce site is hit by a large volumetric DDoS attack that saturates its internet link. Which response is MOST effective?",
+    "options": [
+      "Use an upstream DDoS scrubbing service or the ISP to filter the traffic",
+      "Block the attacking IP addresses one at a time on the web servers' host firewalls",
+      "Increase the timeout values on the web servers",
+      "Add more rules to the site's own perimeter firewall"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When the link itself is saturated, filtering at the site's edge is too late. Scrubbing must happen upstream, with a provider that has more capacity than the attack."
+  },
+  {
+    "id": "CISSP-T1-090",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Passwordless",
+    "stem": "Which approach resists phishing BEST?",
+    "options": [
+      "One-time codes sent by SMS",
+      "FIDO2 passkeys bound to the website's origin",
+      "Security questions plus a long and complex password",
+      "Push notifications that users approve"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "FIDO2 credentials are bound to the site's origin, so they will not work on a look-alike site. SMS codes and push approvals can be relayed or fatigue-bombed by an attacker."
+  },
+  {
+    "id": "CISSP-T1-091",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Personnel safety",
+    "stem": "During a fire in the data center, what is the FIRST priority?",
+    "options": [
+      "Shutting down servers in order",
+      "Protecting the backup tapes",
+      "Preserving the event logs",
+      "The safety of people"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Human life always comes first in CISSP thinking. Equipment and data can be recovered; people cannot."
+  },
+  {
+    "id": "CISSP-T1-092",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Supply chain risk",
+    "stem": "A company is about to outsource payroll processing to a cloud provider. What should the security manager do FIRST?",
+    "options": [
+      "Transfer all liability for any breach of the payroll data to the provider through the contract",
+      "Encrypt the payroll database before handing it over",
+      "Assess the provider's security and define requirements in the contract",
+      "Schedule a penetration test of the provider's network"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Supply chain risk management starts with due diligence on the provider and contractual security requirements, including the right to audit. Liability for the data stays with the company even when processing is outsourced."
+  },
+  {
+    "id": "CISSP-T1-093",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Data roles",
+    "stem": "For each task, specify the role that normally performs it.",
+    "rows": [
+      "Approves who may access a sales database",
+      "Runs nightly backups of the sales database",
+      "Processes payroll data under contract for the company",
+      "Defines data quality rules and business meaning of fields"
+    ],
+    "columns": [
+      "Data owner",
+      "Data custodian",
+      "Data processor",
+      "Data steward"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "The owner authorizes access. The custodian operates the technical protections, such as backups. A processor handles personal data on behalf of the controller. A steward manages data quality and business definitions."
+  },
+  {
+    "id": "CISSP-T1-094",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "order",
+    "skill": "SDLC phases",
+    "stem": "Place these phases of a traditional system development life cycle in order.",
+    "options": [
+      "Requirements gathering",
+      "Operations and maintenance",
+      "Development",
+      "Testing",
+      "Design",
+      "Disposal"
+    ],
+    "correct": [
+      0,
+      4,
+      2,
+      3,
+      1,
+      5
+    ],
+    "explanation": "A traditional SDLC moves from requirements to design, development and testing, then into operations and maintenance, and finally disposal. Security activities belong in every phase."
+  },
+  {
+    "id": "CISSP-T1-095",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "order",
+    "skill": "Penetration test phases",
+    "stem": "Place the phases of a penetration test in order.",
+    "options": [
+      "Exploitation",
+      "Planning and authorization",
+      "Reporting",
+      "Reconnaissance and discovery"
+    ],
+    "correct": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explanation": "A test is planned and authorized first, then targets are discovered and enumerated, then vulnerabilities are exploited within scope, and the results are reported with recommendations."
+  },
+  {
+    "id": "CISSP-T1-096",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fire suppression",
+    "stem": "Which fire suppression system is MOST appropriate for a data center that wants to avoid accidental water discharge over the equipment?",
+    "options": [
+      "Wet pipe sprinklers",
+      "Deluge sprinklers",
+      "Pre-action sprinklers",
+      "Portable class A extinguishers only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pre-action systems keep the pipes dry until a detector fires, and then a sprinkler head must also open. That two-step design limits accidental discharge. Wet pipes are always charged with water."
+  },
+  {
+    "id": "CISSP-T1-097",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "OSI layers",
+    "stem": "For each protocol or device, specify the OSI layer it MAINLY operates at.",
+    "rows": [
+      "Ethernet switch",
+      "IP router",
+      "TCP",
+      "HTTP"
+    ],
+    "columns": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Switches forward frames by MAC address at layer 2, routers forward packets by IP address at layer 3, TCP provides transport at layer 4, and HTTP is an application protocol at layer 7."
+  },
+  {
+    "id": "CISSP-T1-098",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "order",
+    "skill": "Identity lifecycle",
+    "stem": "Place the stages of an identity's lifecycle in order.",
+    "options": [
+      "Periodic review of access",
+      "Deprovisioning when the person leaves",
+      "Provisioning of accounts and access",
+      "Identity proofing and registration"
+    ],
+    "correct": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "explanation": "An identity is proofed and registered, then provisioned with access, then reviewed while in use, and finally deprovisioned. Each stage should be documented for audit."
+  },
+  {
+    "id": "CISSP-T1-099",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SOAR",
+    "stem": "Which tool automatically runs a playbook, such as disabling an account and opening a ticket, when a SIEM alert fires?",
+    "options": [
+      "Security orchestration, automation and response",
+      "A configuration management database",
+      "A host-based firewall",
+      "A data loss prevention gateway on the email server"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SOAR platforms connect tools and automate response steps defined in playbooks, which speeds response and keeps it consistent."
+  },
+  {
+    "id": "CISSP-T1-100",
+    "section": "cissp",
+    "test": 1,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "order",
+    "skill": "NIST RMF",
+    "stem": "Place the steps of the NIST Risk Management Framework (SP 800-37 Rev. 2) in order, starting after Prepare.",
+    "options": [
+      "Implement controls",
+      "Assess controls",
+      "Monitor controls",
+      "Select controls",
+      "Categorize the system",
+      "Authorize the system"
+    ],
+    "correct": [
+      4,
+      3,
+      0,
+      1,
+      5,
+      2
+    ],
+    "explanation": "After Prepare, the RMF runs Categorize, Select, Implement, Assess, Authorize and Monitor. Categorization drives which baseline is selected, and the authorizing official accepts the residual risk before operation."
+  },
+  {
+    "id": "CISSP-T2-001",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Code of ethics",
+    "stem": "Two ISC2 Code of Ethics canons appear to conflict in a situation. How should a member resolve it?",
+    "options": [
+      "Follow whichever canon the member's employer prefers",
+      "Choose whichever canon best protects the member's certification and standing",
+      "Ask the client to decide which canon should apply",
+      "Apply the canons in the order they appear, giving the earlier one priority"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The canons are listed in order of priority: society first, then acting honorably, then service to principals, then the profession. A conflict is resolved in that order."
+  },
+  {
+    "id": "CISSP-T2-002",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Clark-Wilson",
+    "stem": "A financial system lets users change account balances only through well-formed transactions that are logged and separated by duty. Which model does this reflect?",
+    "options": [
+      "Harrison-Ruzzo-Ullman",
+      "Brewer-Nash",
+      "Clark-Wilson",
+      "Bell-LaPadula"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Clark-Wilson enforces integrity through the access triple: users reach constrained data items only through transformation procedures, with separation of duties and auditing."
+  },
+  {
+    "id": "CISSP-T2-003",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TCP handshake",
+    "stem": "What is the correct order of the TCP three-way handshake?",
+    "options": [
+      "ACK, SYN, SYN-ACK",
+      "SYN, ACK, SYN-ACK",
+      "SYN, SYN-ACK, ACK",
+      "SYN-ACK, SYN, ACK"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The client sends SYN, the server answers SYN-ACK, and the client confirms with ACK. A SYN flood abuses this by never sending the final ACK."
+  },
+  {
+    "id": "CISSP-T2-004",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identification versus authentication",
+    "stem": "A user types a username. Which step of access control has occurred?",
+    "options": [
+      "Authorization",
+      "Accountability",
+      "Identification",
+      "Authentication"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Identification is claiming an identity, such as a username. Authentication proves it, authorization decides what it may do, and accountability ties actions to it."
+  },
+  {
+    "id": "CISSP-T2-005",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Investigation types",
+    "stem": "An employee is suspected of breaking the company's acceptable use policy, with no crime involved. What kind of investigation is this?",
+    "options": [
+      "Administrative",
+      "Civil",
+      "Regulatory",
+      "Criminal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Administrative (operational) investigations deal with internal policy matters. Criminal investigations involve law enforcement and require proof beyond a reasonable doubt."
+  },
+  {
+    "id": "CISSP-T2-006",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Assessment strategy",
+    "stem": "A company must show regulators that its controls are working throughout the year, not just on audit day. What should it implement?",
+    "options": [
+      "A yearly review of every security policy by the legal and compliance teams",
+      "A single annual penetration test",
+      "An annual employee attestation form",
+      "Continuous monitoring with key metrics reported to management"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Continuous monitoring, as in NIST SP 800-137, tracks control effectiveness over time and alerts on drift, which supports ongoing assurance."
+  },
+  {
+    "id": "CISSP-T2-007",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification criteria",
+    "stem": "Which factor is MOST important when deciding a data set's classification level?",
+    "options": [
+      "The cost of the storage system that holds the data",
+      "The number of employees and contractors who currently use the data each day",
+      "The age of the application that created the data",
+      "The impact on the organization if the data were disclosed or altered"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Classification is based on the data's value and sensitivity: the harm that would follow from loss of confidentiality, integrity or availability. Storage cost and usage do not decide it."
+  },
+  {
+    "id": "CISSP-T2-008",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Change control in development",
+    "stem": "A developer pushes a change directly to production without peer review, claiming it is minor. Which control was skipped?",
+    "options": [
+      "Load testing of the production environment",
+      "Multifactor authentication for the developer's account in the code repository",
+      "Encryption of the source code repository",
+      "Change management with separation between development and production"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Developers should not change production directly. Change management requires review and approval, and separating environments enforces it."
+  },
+  {
+    "id": "CISSP-T2-009",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CIA triad",
+    "stem": "A hospital's patient records system shows correct data, but nurses cannot reach it during a network outage. Which security goal has failed?",
+    "options": [
+      "Confidentiality",
+      "Availability",
+      "Integrity",
+      "Authenticity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Availability means authorized users can reach information and systems when needed. The data is intact and private, so integrity and confidentiality are not the issue."
+  },
+  {
+    "id": "CISSP-T2-010",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defense in depth",
+    "stem": "A company protects its payroll data with a firewall, endpoint protection, encryption and access reviews, so no single failure exposes it. Which principle is this?",
+    "options": [
+      "Security through obscurity",
+      "Economy of mechanism",
+      "Fail securely",
+      "Defense in depth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Defense in depth layers independent controls so an attacker must defeat several, and a single control failure does not lead to compromise."
+  },
+  {
+    "id": "CISSP-T2-011",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "TLS",
+    "stem": "A web server must offer forward secrecy so that a later theft of its private key does not expose past sessions. What should be configured?",
+    "options": [
+      "HTTP with a self-signed certificate",
+      "TLS 1.0 with RSA key exchange",
+      "SSL 3.0 with a longer RSA key and a certificate from a public CA",
+      "TLS 1.3, which uses only ephemeral key exchange"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ephemeral Diffie-Hellman creates a new key per session, so a stolen server key cannot decrypt recorded traffic. TLS 1.3 removed static RSA key exchange."
+  },
+  {
+    "id": "CISSP-T2-012",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Biometric tuning",
+    "stem": "Which value is used to compare the overall accuracy of different biometric systems?",
+    "options": [
+      "False rejection rate alone",
+      "Enrollment time",
+      "Throughput rate",
+      "Crossover error rate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The crossover error rate is where FAR and FRR are equal. A lower CER means a more accurate system."
+  },
+  {
+    "id": "CISSP-T2-013",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Evidence admissibility",
+    "stem": "Which characteristic must evidence have to be admissible in court?",
+    "options": [
+      "It must be signed by the owner of the system it came from",
+      "It must be relevant, reliable and lawfully obtained",
+      "It must be collected by the police",
+      "It must be in digital form"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Courts generally require evidence to be relevant, material and competent, which means reliable and legally obtained. A broken chain of custody or illegal collection can exclude it."
+  },
+  {
+    "id": "CISSP-T2-014",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vulnerability assessment versus pen test",
+    "stem": "What is the main difference between a vulnerability assessment and a penetration test?",
+    "options": [
+      "A vulnerability assessment is performed only by external firms",
+      "A penetration test covers only web applications",
+      "A vulnerability assessment always needs written authorization, while a pen test does not",
+      "A penetration test tries to exploit weaknesses, while an assessment identifies them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A vulnerability assessment finds and rates weaknesses. A penetration test goes further and exploits them to show real impact. Both need authorization."
+  },
+  {
+    "id": "CISSP-T2-015",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Declassification",
+    "stem": "A product launch has made a formerly secret specification public. What should the data owner do?",
+    "options": [
+      "Keep the original classification for consistency",
+      "Reclassify the specification to a lower level",
+      "Destroy every copy of the specification",
+      "Ask the custodian to encrypt the specification again"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Classification should be reviewed over the data's life. Over-protecting public information wastes resources, so the owner should lower its classification."
+  },
+  {
+    "id": "CISSP-T2-016",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Buffer overflow",
+    "stem": "Which practice BEST prevents buffer overflow vulnerabilities in new code?",
+    "options": [
+      "Using memory-safe languages or bounds checking on all input",
+      "Running the application on faster hardware",
+      "Hashing all input values before the application processes or stores them",
+      "Compressing data before it is written to memory"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Overflows happen when input exceeds an allocated buffer. Memory-safe languages and strict bounds checking prevent it, and protections such as ASLR and DEP make exploitation harder."
+  },
+  {
+    "id": "CISSP-T2-017",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Security function alignment",
+    "stem": "The CEO tells the CISO that a new security program will slow down product releases. What should the CISO do?",
+    "options": [
+      "Drop the program and accept the risk on the CEO's behalf",
+      "Proceed with the program, since security must take priority over speed",
+      "Escalate to the board that the CEO is ignoring security risk",
+      "Show how the program supports business goals and adjust it to fit them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Security exists to support the mission. The CISO's job is to align the program with business objectives and present risk in business terms, not to override or bypass senior management."
+  },
+  {
+    "id": "CISSP-T2-018",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Privacy by design",
+    "stem": "During design of a new mobile app, the architect makes the most private settings the default and collects location only when a feature needs it. Which approach is this?",
+    "options": [
+      "Trust but verify",
+      "Separation of duties",
+      "Privacy by design",
+      "Security through obscurity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Privacy by design builds privacy in from the start, with privacy as the default setting and data minimized to what each function needs."
+  },
+  {
+    "id": "CISSP-T2-019",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DMZ",
+    "stem": "Where should a company place its public web server?",
+    "options": [
+      "In a screened subnet between the internet and the internal network",
+      "On the same VLAN as the employee workstations so staff can reach it quickly",
+      "On the internal network next to the database servers",
+      "Directly on the internet with no firewall in front"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A screened subnet (DMZ) exposes public services while firewalls limit what they can reach internally, so a compromised web server does not give direct access to internal systems."
+  },
+  {
+    "id": "CISSP-T2-020",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Role-based access control",
+    "stem": "A hospital grants access based on job function, such as nurse or pharmacist. Which model is this?",
+    "options": [
+      "Mandatory access control",
+      "Attribute-based access control",
+      "Role-based access control",
+      "Discretionary access control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "RBAC assigns permissions to roles and users to roles, which simplifies administration and supports least privilege."
+  },
+  {
+    "id": "CISSP-T2-021",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Egress monitoring",
+    "stem": "Which control watches outbound traffic for signs that data is being stolen?",
+    "options": [
+      "Port knocking on the firewall",
+      "Egress monitoring with DLP",
+      "An ingress packet filter",
+      "A screened subnet for web servers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Egress monitoring inspects traffic leaving the network, for example with DLP and analytics, to detect exfiltration and command-and-control traffic."
+  },
+  {
+    "id": "CISSP-T2-022",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "False positives",
+    "stem": "A vulnerability scanner reports a critical flaw on a server, but the administrator says the patch is installed. What should the security analyst do?",
+    "options": [
+      "Validate the finding manually before closing or escalating it",
+      "Close the finding based on the administrator's statement that the patch is installed",
+      "Remove the server from future scans",
+      "Escalate to senior management as a confirmed critical risk"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Scanners produce false positives and false negatives. The analyst should verify the facts, for example by checking the version or the evidence, before deciding."
+  },
+  {
+    "id": "CISSP-T2-023",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Policy hierarchy",
+    "stem": "A document requires all laptops to use full-disk encryption with AES-256. Which type of document is this?",
+    "options": [
+      "Guideline",
+      "Procedure",
+      "Policy",
+      "Standard"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A standard is a mandatory, specific requirement, such as a named technology or setting, that supports a policy. A guideline is optional advice and a procedure gives the steps to apply it."
+  },
+  {
+    "id": "CISSP-T2-024",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Labeling",
+    "stem": "What is the main purpose of marking a document with its classification?",
+    "options": [
+      "To prove the document was created by the owner",
+      "To make the document easier to search for",
+      "To prevent the document from being copied",
+      "To tell users how the document must be handled"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Labels and markings communicate the classification so people and systems apply the right handling rules. They do not by themselves prevent copying."
+  },
+  {
+    "id": "CISSP-T2-025",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Race conditions",
+    "stem": "A banking app checks an account's balance and then, in a separate step, debits it. By sending two withdrawals at the same instant, an attacker overdraws the account. What is this flaw?",
+    "options": [
+      "Integer overflow",
+      "Cross-site request forgery",
+      "A race condition (time-of-check to time-of-use)",
+      "Insecure direct object reference"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Both requests pass the balance check before either debit happens, so the state checked is not the state used. Atomic transactions or locking around the check and the update remove the gap."
+  },
+  {
+    "id": "CISSP-T2-026",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Common Criteria",
+    "stem": "Under the Common Criteria, what does an evaluation assurance level (EAL) describe?",
+    "options": [
+      "How many security features the product contains",
+      "The price band in which the product is sold",
+      "How rigorously a product's security claims were tested",
+      "The highest classification level of data the product may process"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "EAL1 to EAL7 express the depth and rigor of evaluation against a security target or protection profile. A higher EAL means more assurance, not more features."
+  },
+  {
+    "id": "CISSP-T2-027",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Microsegmentation",
+    "stem": "A data center wants to restrict traffic between individual workloads even when they sit on the same subnet. Which approach fits?",
+    "options": [
+      "Disabling ICMP across the data center",
+      "Microsegmentation enforced at each workload",
+      "Moving all workloads to a single VLAN",
+      "A larger perimeter firewall at the internet edge"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microsegmentation applies policy at the workload level, often through software-defined networking or host agents, to block lateral movement inside a subnet."
+  },
+  {
+    "id": "CISSP-T2-028",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Discretionary access control",
+    "stem": "Which risk is MOST associated with discretionary access control?",
+    "options": [
+      "Owners can share data with people who should not have it",
+      "Access decisions are too slow for interactive use",
+      "Roles grow too large to manage",
+      "Users cannot access any data without first holding a matching security clearance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In DAC, owners grant access at their discretion, so sensitive data can spread through careless or malicious sharing. MAC prevents this by enforcing system labels."
+  },
+  {
+    "id": "CISSP-T2-029",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Incident reporting",
+    "stem": "During an incident, the response team discovers that regulated personal data was exposed. What should the team do?",
+    "options": [
+      "Notify every customer directly without consulting management",
+      "Wait until the investigation is fully complete before telling anyone",
+      "Inform management and legal counsel so reporting obligations are met",
+      "Delete the exposed data to remove the reporting duty"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reporting duties and deadlines are a management and legal decision. The team escalates promptly through the plan; it does not decide disclosure alone or destroy data."
+  },
+  {
+    "id": "CISSP-T2-030",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Qualitative risk",
+    "stem": "A small organization has no reliable figures for asset values or incident frequency. Which approach to risk analysis fits BEST?",
+    "options": [
+      "Accept every risk until enough data has been collected",
+      "Quantitative analysis using annualized loss expectancy",
+      "The Delphi technique, used to calculate exact exposure factors for each asset",
+      "Qualitative analysis using likelihood and impact ratings"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Qualitative analysis ranks risks with ratings such as low, medium and high when hard numbers are unavailable. Quantitative ALE needs credible values and frequencies."
+  },
+  {
+    "id": "CISSP-T2-031",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Code review",
+    "stem": "Which test examines source code for flaws without running the program?",
+    "options": [
+      "Fuzz testing",
+      "Static application security testing",
+      "Dynamic application security testing",
+      "Load testing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAST analyzes code at rest and can find flaws early in development. DAST tests the running application from outside."
+  },
+  {
+    "id": "CISSP-T2-032",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Residual risk",
+    "stem": "After controls are applied, the risk that remains is called what?",
+    "options": [
+      "Control risk",
+      "Residual risk",
+      "Total risk",
+      "Inherent risk"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Inherent (or total) risk exists before controls. Residual risk is what is left after controls, and management must accept it or treat it further."
+  },
+  {
+    "id": "CISSP-T2-033",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hashing",
+    "stem": "Which property of a cryptographic hash function makes it hard to find two different inputs that produce the same output?",
+    "options": [
+      "Collision resistance",
+      "Diffusion of the key",
+      "Reversibility",
+      "Key length"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Collision resistance means it is computationally infeasible to find two inputs with the same digest. Hashes are one-way and use no key."
+  },
+  {
+    "id": "CISSP-T2-034",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SDN",
+    "stem": "In software-defined networking, what is separated from the data plane?",
+    "options": [
+      "The control plane",
+      "The physical cabling",
+      "The application layer",
+      "The power supply"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SDN moves forwarding decisions to a central controller (the control plane) while switches forward traffic (the data plane). The controller becomes a high-value asset to protect."
+  },
+  {
+    "id": "CISSP-T2-035",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Single sign-on risk",
+    "stem": "What is the MAIN risk of a single sign-on deployment?",
+    "options": [
+      "Users must remember more passwords",
+      "A compromised credential opens every connected application",
+      "Help desk calls for password resets increase",
+      "Applications can no longer log the activity of individual users"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SSO concentrates access in one credential, which makes it a high-value target. Strong MFA on the SSO login is the usual countermeasure."
+  },
+  {
+    "id": "CISSP-T2-036",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Allow listing",
+    "stem": "Which control BEST prevents unknown malware from running on a kiosk computer?",
+    "options": [
+      "Application allow listing",
+      "Signature-based antivirus",
+      "A host-based IDS in alert mode",
+      "Weekly vulnerability scans"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Allow listing permits only approved programs, which blocks new malware that signatures do not know. It suits fixed-purpose systems such as kiosks."
+  },
+  {
+    "id": "CISSP-T2-037",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Physical destruction",
+    "stem": "A failed hard drive held top secret data and cannot be powered on. What is the MOST appropriate sanitization method?",
+    "options": [
+      "Physical destruction, such as shredding or disintegration",
+      "Reformatting the drive at a recovery lab",
+      "A three-pass overwrite with random data",
+      "Cryptographic erase using the drive's own controller and firmware commands"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A drive that will not power on cannot be overwritten or crypto-erased reliably. For highly sensitive data, destruction is the assured method."
+  },
+  {
+    "id": "CISSP-T2-038",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CSRF",
+    "stem": "Which control defends against cross-site request forgery?",
+    "options": [
+      "Encrypting the user's password in the database",
+      "Allowing any origin through CORS settings",
+      "Anti-CSRF tokens tied to the user's session",
+      "Long session timeouts for convenience"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CSRF tricks a logged-in browser into sending an unwanted request. A random token per session or form, plus SameSite cookies, lets the server reject forged requests."
+  },
+  {
+    "id": "CISSP-T2-039",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Test coverage",
+    "stem": "A team reports that its test cases exercise 60% of the application's code paths. What is this metric?",
+    "options": [
+      "Test coverage analysis",
+      "Defect density",
+      "Mean time to detect",
+      "Recovery time objective"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Code coverage measures how much of the code the tests exercise. Low coverage means flaws may hide in untested paths."
+  },
+  {
+    "id": "CISSP-T2-040",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Risk avoidance",
+    "stem": "A marketing team wants to collect customers' biometric data for a minor feature. The legal exposure is high and the benefit is small. Which response is MOST appropriate?",
+    "options": [
+      "Accept the risk because the feature has marketing value",
+      "Avoid the risk by not collecting the biometric data",
+      "Mitigate the risk by encrypting the biometric data at rest",
+      "Transfer the risk by buying a larger insurance policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When the cost and exposure of an activity outweigh its benefit, the cleanest response is avoidance: do not undertake the activity. Mitigation still leaves the legal exposure of holding biometrics."
+  },
+  {
+    "id": "CISSP-T2-041",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Key exchange",
+    "stem": "Which weakness of plain, unauthenticated Diffie-Hellman lets an on-path attacker read the traffic?",
+    "options": [
+      "It sends the shared secret across the network",
+      "It does not authenticate either party",
+      "It works only with symmetric keys of 56 bits or less",
+      "A passive eavesdropper can compute the shared secret"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Diffie-Hellman gives two parties a shared secret that a passive eavesdropper cannot compute, and the secret itself is never sent. But neither side knows who it is talking to, so an attacker in the middle can run a separate exchange with each. Signing the exchanged values, for example with certificates as in TLS, adds the missing authentication."
+  },
+  {
+    "id": "CISSP-T2-042",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "VPN choice",
+    "stem": "Contractors need browser access to one internal portal from unmanaged devices. Which remote access method exposes the LEAST?",
+    "options": [
+      "A clientless TLS portal that publishes only that application",
+      "A full-tunnel IPsec client on each contractor device",
+      "An IPsec site-to-site tunnel to each contractor",
+      "Direct RDP from the internet to a hardened jump server inside the network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A clientless TLS portal gives access to the published application alone, and nothing has to be installed on the unmanaged device. Full tunnels expose the network to it."
+  },
+  {
+    "id": "CISSP-T2-043",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AAA protocols",
+    "stem": "Network engineers need per-command authorization on routers, with the entire AAA payload encrypted in transit. Which protocol fits?",
+    "options": [
+      "SNMPv1",
+      "RADIUS",
+      "TACACS+",
+      "LDAP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "TACACS+ runs over TCP, encrypts the entire payload and separates the AAA functions, allowing per-command authorization. RADIUS uses UDP, encrypts only the password, and combines authentication and authorization."
+  },
+  {
+    "id": "CISSP-T2-044",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Threat intelligence",
+    "stem": "A threat feed reports a new campaign targeting the company's industry with specific indicators. What should the SOC do FIRST?",
+    "options": [
+      "Block all traffic from the entire countries named in the report",
+      "Wait until the campaign appears in the news",
+      "Rebuild all servers as a precaution",
+      "Search its logs and systems for those indicators"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Threat hunting with the indicators shows whether the organization is already affected. Detections and blocks can then be tuned to the specific indicators."
+  },
+  {
+    "id": "CISSP-T2-045",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data lifecycle",
+    "stem": "In which phase of the data lifecycle should classification FIRST be assigned?",
+    "options": [
+      "Use",
+      "Create",
+      "Archive",
+      "Store"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Data should be classified when it is created or collected, so every later phase applies the right controls. Waiting until storage or use leaves it unprotected for a time."
+  },
+  {
+    "id": "CISSP-T2-046",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "API security",
+    "stem": "A mobile app's API returns any customer's record when the record number in the URL is changed. What is the root cause?",
+    "options": [
+      "The use of JSON instead of XML for responses",
+      "The lack of TLS encryption between the mobile app and the API",
+      "Missing object-level authorization checks on the server",
+      "The record numbers being too short"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "This is broken object-level authorization: the server must confirm that the caller may access each object requested, not rely on the app to hide IDs."
+  },
+  {
+    "id": "CISSP-T2-047",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interface testing",
+    "stem": "Which test checks that two components exchange data correctly through their API, including error handling?",
+    "options": [
+      "Real user monitoring",
+      "Penetration testing",
+      "Interface testing",
+      "Regression testing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Interface testing covers APIs, user interfaces and physical interfaces, checking both valid exchanges and how errors are handled."
+  },
+  {
+    "id": "CISSP-T2-048",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RPO",
+    "stem": "Backups of the order database run every 4 hours, but the BIA says the business can lose at most 15 minutes of transactions. Which requirement does the current design fail?",
+    "options": [
+      "The maximum tolerable downtime",
+      "The recovery point objective",
+      "The recovery time objective",
+      "The mean time between failures"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The RPO is the maximum acceptable data loss measured in time. A 4-hour backup interval can lose up to 4 hours of data, so meeting a 15-minute RPO needs more frequent backups, journaling or replication. The RTO and MTD concern how long the outage lasts, not how much data is lost."
+  },
+  {
+    "id": "CISSP-T2-049",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key management",
+    "stem": "What is the MOST important factor in the security of a well-designed encryption system?",
+    "options": [
+      "Secrecy of the algorithm",
+      "Speed of the processor",
+      "Length of the ciphertext",
+      "Protection of the keys"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under Kerckhoffs's principle, a system should remain secure even if everything except the key is public. Key generation, storage, rotation and destruction are where systems usually fail."
+  },
+  {
+    "id": "CISSP-T2-050",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wireless attacks",
+    "stem": "An attacker sets up an access point with the same name as the corporate network to capture user logins. What is this called?",
+    "options": [
+      "Evil twin",
+      "Bluejacking",
+      "MAC flooding",
+      "War chalking"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An evil twin imitates a legitimate SSID. 802.1X with server certificate validation helps clients reject an access point that cannot prove its identity."
+  },
+  {
+    "id": "CISSP-T2-051",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Deprovisioning",
+    "stem": "HR notifies IT of resignations a week after people leave. What is the BEST improvement?",
+    "options": [
+      "Run a monthly report of accounts that have not logged in and disable them after review",
+      "Ask managers to tell users not to log in after leaving",
+      "Automate deprovisioning from the HR system of record on the termination date",
+      "Shorten password expiry to 7 days for everyone"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Linking identity management to HR events removes access on time and consistently. Dormant-account reports find gaps late, after the risk window."
+  },
+  {
+    "id": "CISSP-T2-052",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "UEBA",
+    "stem": "Which tool builds a baseline of each user's normal behavior and alerts on deviations, such as a login at 3 a.m. from a new country?",
+    "options": [
+      "Network address translation",
+      "User and entity behavior analytics",
+      "A web proxy cache",
+      "Signature-based IDS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "UEBA uses statistics and machine learning to spot anomalies that rules and signatures miss, such as compromised accounts and insider threats."
+  },
+  {
+    "id": "CISSP-T2-053",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "BIA purpose",
+    "stem": "What is the PRIMARY output of a business impact analysis?",
+    "options": [
+      "A list of vulnerabilities in each critical system",
+      "Critical processes ranked with their recovery time requirements",
+      "Detailed technical procedures for restoring servers",
+      "The cost of a hot site compared with the cost of a warm or cold site"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The BIA identifies critical business functions, the impact of losing them over time, and their MTD, RTO and RPO. Strategies and procedures come later in the planning process."
+  },
+  {
+    "id": "CISSP-T2-054",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "KPIs and KRIs",
+    "stem": "Which metric is a key risk indicator rather than a key performance indicator?",
+    "options": [
+      "The percentage of help desk tickets closed within one day",
+      "The number of security awareness sessions delivered to employees and contractors this quarter",
+      "The number of critical vulnerabilities older than 30 days on internet-facing systems",
+      "The budget spent on security tools this year"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A KRI signals rising exposure, such as aging critical vulnerabilities on exposed systems. KPIs measure how well processes are performing."
+  },
+  {
+    "id": "CISSP-T2-055",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data minimization",
+    "stem": "A web form collects customers' dates of birth, but no business process uses them. What should the privacy manager recommend?",
+    "options": [
+      "Stop collecting dates of birth and delete those already held",
+      "Mask the dates of birth on every screen",
+      "Restrict access to the stored dates of birth to the marketing team only",
+      "Encrypt the dates of birth in the database"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Data minimization means collecting only what is needed for a stated purpose. Data that is not collected cannot be breached, which beats protecting it."
+  },
+  {
+    "id": "CISSP-T2-056",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polyinstantiation",
+    "stem": "A database holds two versions of a record at different classification levels, so lower-cleared users cannot infer that secret data exists. What is this technique?",
+    "options": [
+      "Normalization",
+      "Data mining",
+      "Polyinstantiation",
+      "Aggregation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Polyinstantiation creates multiple instances of a record at different levels, which prevents inference about higher-classified information."
+  },
+  {
+    "id": "CISSP-T2-057",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cryptanalytic attacks",
+    "stem": "An attacker has many plaintext messages and their matching ciphertexts, and uses them to work out the key. What type of attack is this?",
+    "options": [
+      "Chosen ciphertext",
+      "Birthday attack",
+      "Known plaintext",
+      "Ciphertext only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In a known-plaintext attack the attacker holds plaintext and ciphertext pairs. In a chosen-plaintext attack the attacker can pick the plaintexts to be encrypted."
+  },
+  {
+    "id": "CISSP-T2-058",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "IDS placement",
+    "stem": "A company wants to detect attacks that get past its perimeter firewall toward internal servers. Where should a network IDS sensor go FIRST?",
+    "options": [
+      "On each employee laptop",
+      "In the backup storage network, where copies of all server data are kept",
+      "On the internal side of the firewall, in front of the server segment",
+      "Outside the firewall, on the internet link"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A sensor inside the firewall sees traffic that passed the perimeter, so its alerts concern real threats to internal servers. Outside, it sees mostly blocked noise."
+  },
+  {
+    "id": "CISSP-T2-059",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Session management",
+    "stem": "Which control reduces the risk of someone using a logged-in workstation left unattended?",
+    "options": [
+      "A longer and more complex password for the user's account",
+      "An automatic screen lock after a short idle period",
+      "Antivirus with daily updates",
+      "Full-disk encryption"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Session timeouts and screen locks stop an unattended session from being used. Disk encryption protects data when the device is off, not while a session is open."
+  },
+  {
+    "id": "CISSP-T2-060",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Need to know",
+    "stem": "A senior manager with Top Secret clearance asks to read a Secret project file unrelated to the manager's work. What should happen?",
+    "options": [
+      "Access should be denied because the manager has no need to know",
+      "Access should be granted once the manager signs a non-disclosure agreement",
+      "Access should be granted because the clearance is higher",
+      "Access should be granted for a limited time only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Clearance shows a person can be trusted with a level. Need to know limits access to the information required for the job, whatever the clearance."
+  },
+  {
+    "id": "CISSP-T2-061",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Intellectual property",
+    "stem": "Which protection covers the specific expression of a software program's source code automatically when it is created?",
+    "options": [
+      "Trade secret",
+      "Copyright",
+      "Patent",
+      "Trademark"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Copyright protects original works of authorship, including source code, from the moment they are fixed in a tangible form. It covers the expression, not the underlying idea."
+  },
+  {
+    "id": "CISSP-T2-062",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DR testing",
+    "stem": "Which business continuity test checks recovery at the alternate site without interrupting production?",
+    "options": [
+      "Full interruption test",
+      "Checklist review",
+      "Tabletop exercise",
+      "Parallel test"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A parallel test brings up systems at the recovery site while the primary keeps running. A full interruption test shuts the primary down, which is the riskiest test."
+  },
+  {
+    "id": "CISSP-T2-063",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Asset inventory",
+    "stem": "Why is an accurate hardware and software inventory a foundation of asset security?",
+    "options": [
+      "You cannot protect assets you do not know you have",
+      "It is required to calculate depreciation for tax purposes",
+      "It lets users install any software they need",
+      "It replaces the need for vulnerability scanning"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Inventory drives patching, licensing, monitoring and classification. Unknown assets are unmanaged and unpatched, which makes them easy targets."
+  },
+  {
+    "id": "CISSP-T2-064",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AI-generated code",
+    "stem": "Developers have begun using an AI assistant to write code. What is the BEST control?",
+    "options": [
+      "Ban all code review for AI-generated code to save time",
+      "Allow the assistant to commit directly to the main branch",
+      "Treat the generated code like any other code, with review and automated security testing",
+      "Trust the code, because the assistant was trained on millions of lines of reviewed public code"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AI-generated code can contain vulnerabilities, outdated libraries or licensing issues. It goes through the same secure coding standards, review and testing as human-written code."
+  },
+  {
+    "id": "CISSP-T2-065",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Post-quantum cryptography",
+    "stem": "A government agency must protect data that has to stay secret for 25 years. What should the architect plan for?",
+    "options": [
+      "Doubling the length of all SHA-256 hashes now",
+      "Migration to quantum-resistant algorithms such as ML-KEM",
+      "Replacing AES-256 with RSA-2048 for all stored data, since RSA keys are longer",
+      "Removing encryption from data that is already archived"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Data captured today could be decrypted later by a quantum computer that breaks RSA and elliptic curve cryptography. NIST published its first post-quantum standards (ML-KEM, ML-DSA, SLH-DSA) in 2024."
+  },
+  {
+    "id": "CISSP-T2-066",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VoIP security",
+    "stem": "Which control protects the content of VoIP calls from eavesdropping?",
+    "options": [
+      "Disabling quality of service",
+      "SRTP for the media and TLS for SIP signaling",
+      "Using a longer extension number",
+      "Placing the phones on the same VLAN as the PCs to simplify routing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Secure RTP encrypts the voice stream, and SIP over TLS protects call setup. Separating voice onto its own VLAN also helps, rather than merging it with data."
+  },
+  {
+    "id": "CISSP-T2-067",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Service accounts",
+    "stem": "An audit finds service accounts with passwords that never change and interactive logon allowed. What should the manager do FIRST?",
+    "options": [
+      "Delete all service accounts immediately",
+      "Share the service account passwords with the help desk",
+      "Give the service accounts domain admin rights to avoid failures",
+      "Inventory the service accounts and assign each an owner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Without knowing which service accounts exist and who owns them, changes can break systems. Next come managed rotation, denying interactive logon and least privilege."
+  },
+  {
+    "id": "CISSP-T2-068",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RAID",
+    "stem": "Which RAID level stripes data with distributed parity and survives the loss of one disk?",
+    "options": [
+      "RAID 1",
+      "RAID 5",
+      "JBOD",
+      "RAID 0"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "RAID 5 spreads parity across all disks, so any single disk can fail without data loss. RAID 0 has no redundancy, and RAID 1 mirrors without parity."
+  },
+  {
+    "id": "CISSP-T2-069",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Breach notification",
+    "stem": "A company confirms that customer personal data was stolen. Several laws with notification deadlines apply. Who should determine the company's notification obligations?",
+    "options": [
+      "The public relations team, based on media interest",
+      "Legal counsel, working with the incident response team",
+      "The security analyst who first detected the breach",
+      "The IT director, based on the number of records stolen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Notification duties depend on jurisdiction, data type and deadlines, which is a legal determination. Counsel advises senior management, and the incident team supplies the facts."
+  },
+  {
+    "id": "CISSP-T2-070",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Audit findings",
+    "stem": "An auditor finds that a control is not working. The system owner disagrees and wants the finding removed. What should the auditor do?",
+    "options": [
+      "Change the audit criteria so that the control passes on the next review",
+      "Report the finding with the evidence, noting management's response",
+      "Remove the finding to keep a good relationship",
+      "Fix the control personally and close the finding"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Auditors report what the evidence shows. Management's view can be included, but independence requires that findings are not dropped under pressure or fixed by the auditor."
+  },
+  {
+    "id": "CISSP-T2-071",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Import and export",
+    "stem": "A company plans to ship products containing strong encryption to several countries. Which consideration is MOST relevant?",
+    "options": [
+      "Export controls on cryptography, such as the Wassenaar Arrangement",
+      "The PCI DSS requirements for encrypting stored card data",
+      "The GDPR's rules on transfers of personal data from the EU to other countries",
+      "Software copyright registration in each destination country"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cryptography is a controlled dual-use technology. The Wassenaar Arrangement and national export rules, such as the US EAR, govern where it can be shipped."
+  },
+  {
+    "id": "CISSP-T2-072",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Virtualization",
+    "stem": "What is the GREATEST risk if an attacker achieves a virtual machine escape?",
+    "options": [
+      "Corruption of the snapshots stored for that one guest",
+      "Loss of the license key for the guest operating system",
+      "Slower performance on the compromised virtual machine until it is restarted",
+      "Access to the hypervisor and every other guest on the host"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Escaping a VM breaks the isolation the hypervisor provides. The attacker may control the host and every guest on it, which is why hypervisors are patched and hardened first."
+  },
+  {
+    "id": "CISSP-T2-073",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Email authentication",
+    "stem": "A company has published SPF and DKIM records but attackers still spoof its domain in phishing. What should it add?",
+    "options": [
+      "A larger DKIM key length only",
+      "A second SPF record for the same domain",
+      "POP3 instead of IMAP for staff mail",
+      "A DMARC policy of quarantine or reject"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "DMARC tells receivers how to treat mail that fails SPF and DKIM alignment, and sends reports. Without an enforcing policy, receivers may still deliver spoofed mail."
+  },
+  {
+    "id": "CISSP-T2-074",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Accountability",
+    "stem": "Several administrators share one root account on a Linux server. Which security goal is MOST weakened?",
+    "options": [
+      "Availability",
+      "Accountability",
+      "Integrity of the network",
+      "Confidentiality of the server's data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With a shared account, logs cannot tie actions to a person. Individual accounts with sudo, or a PAM tool, restore accountability."
+  },
+  {
+    "id": "CISSP-T2-075",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DR plan testing",
+    "stem": "A company has never tested its disaster recovery plan. Which test should it run FIRST?",
+    "options": [
+      "A parallel test at the recovery site",
+      "A full interruption test that shuts down production",
+      "An unannounced failover during peak hours",
+      "A tabletop walk-through with the recovery team"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Start with low-risk tests, such as a checklist or tabletop walk-through, to find gaps in the plan. Riskier tests follow once the plan is sound."
+  },
+  {
+    "id": "CISSP-T2-076",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "End of life",
+    "stem": "A vendor has announced end of support for an operating system that runs a critical plant system. What should the manager do FIRST?",
+    "options": [
+      "Assess the risk and plan migration or compensating controls before support ends",
+      "Continue running the system, since it works today",
+      "Ask the vendor to extend support at no cost, since the system is critical to the plant",
+      "Remove the system from the network immediately"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "End of support means no more security patches. The manager should assess the risk and plan either a migration or compensating controls, such as isolation, with the asset owner, ahead of the date."
+  },
+  {
+    "id": "CISSP-T2-077",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Secure coding standards",
+    "stem": "Why should a development team adopt a secure coding standard?",
+    "options": [
+      "To apply consistent practices that avoid known classes of flaws",
+      "To replace the need for security testing",
+      "To make code run faster in production",
+      "To guarantee that the code is free of all bugs before it is released"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Standards such as the SEI CERT coding standards encode lessons about common flaws. They reduce defects but do not replace testing."
+  },
+  {
+    "id": "CISSP-T2-078",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Termination",
+    "stem": "A system administrator is being dismissed for cause this afternoon. What is the MOST important security step?",
+    "options": [
+      "Hold an exit interview to remind the administrator of the NDA",
+      "Ask the administrator to document all passwords and hand over open work before leaving",
+      "Disable the administrator's access at the time the dismissal is communicated",
+      "Review the administrator's activity logs from the past year"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For a hostile or for-cause termination, access must be revoked at the moment of notification so the person cannot retaliate. Exit interviews and log reviews matter, but come after access is cut."
+  },
+  {
+    "id": "CISSP-T2-079",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Account management checks",
+    "stem": "During an audit of user accounts, which sample is MOST useful for checking the termination process?",
+    "options": [
+      "Accounts created in the last week",
+      "Accounts of people who left in the last six months",
+      "Accounts of all current senior managers",
+      "Accounts that have the longest and most complex passwords"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Comparing recent leavers with active accounts shows whether access is removed on time, which is what the termination process is meant to do."
+  },
+  {
+    "id": "CISSP-T2-080",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Side channels",
+    "stem": "An attacker measures how long a smart card takes to perform operations and recovers its key. What kind of attack is this?",
+    "options": [
+      "Replay attack",
+      "Brute-force key search",
+      "Timing side-channel attack",
+      "Dictionary attack"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Side-channel attacks use physical leakage, such as timing, power use or emanations, rather than weaknesses in the algorithm. Constant-time implementations defend against timing attacks."
+  },
+  {
+    "id": "CISSP-T2-081",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Network devices",
+    "stem": "Which device separates collision domains on each port but keeps a single broadcast domain unless VLANs are configured?",
+    "options": [
+      "Switch",
+      "Router",
+      "Repeater",
+      "Hub"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A switch gives each port its own collision domain. Broadcasts reach all ports in the same VLAN; routers separate broadcast domains."
+  },
+  {
+    "id": "CISSP-T2-082",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physical access",
+    "stem": "Which control stops one authorized person from letting an unauthorized person follow them through a secure door?",
+    "options": [
+      "A visitor sign-in sheet",
+      "A closed-circuit camera that records the door",
+      "A mantrap or access control vestibule",
+      "A proximity badge reader alone"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A vestibule lets only one person pass per authentication, which stops tailgating and piggybacking. Cameras only record it after the fact."
+  },
+  {
+    "id": "CISSP-T2-083",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Media management",
+    "stem": "Backup tapes containing customer data are sent to an offsite vault. Which control is MOST important?",
+    "options": [
+      "Encrypt the tapes and track them through transport and storage",
+      "Label each tape with the names of the customers whose data it contains",
+      "Store the tapes in the same building as the servers",
+      "Use the cheapest courier available"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lost or stolen tapes are a common cause of breaches. Encryption protects their content, and tracking confirms their location throughout."
+  },
+  {
+    "id": "CISSP-T2-084",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security awareness",
+    "stem": "Which measure BEST shows whether a phishing awareness program is working?",
+    "options": [
+      "A survey asking employees whether they enjoyed the training",
+      "The trend in click and report rates from simulated phishing campaigns",
+      "The number of slides covered in the training presentation",
+      "The number of employees who completed the annual training module on time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Effectiveness is measured by behavior change, such as fewer clicks and more reports in phishing simulations. Completion counts show compliance, not effectiveness."
+  },
+  {
+    "id": "CISSP-T2-085",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DRM",
+    "stem": "A company wants to let partners view a design document while preventing them from printing or forwarding it, even after it leaves the company network. Which control fits BEST?",
+    "options": [
+      "Digital rights management",
+      "A virtual private network",
+      "File integrity monitoring",
+      "Full-disk encryption"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DRM (or information rights management) travels with the document and enforces use rights, such as no print or no forward, wherever the file goes."
+  },
+  {
+    "id": "CISSP-T2-086",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Repositories",
+    "stem": "A scan finds cloud access keys committed to a public code repository. What should the team do FIRST?",
+    "options": [
+      "Delete the commit from the repository history",
+      "Revoke and rotate the exposed keys",
+      "Make the repository private",
+      "Add the file to the ignore list"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Once a secret is public it must be treated as compromised. Revoking it ends the exposure; cleaning history and adding secret scanning come next."
+  },
+  {
+    "id": "CISSP-T2-087",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Breach and attack simulation",
+    "stem": "A company wants to check continuously whether its detection controls catch common attacker techniques. Which approach fits BEST?",
+    "options": [
+      "An annual compliance checklist reviewed and signed by department managers",
+      "A once-only external penetration test",
+      "Automated breach and attack simulation mapped to MITRE ATT&CK",
+      "Reading vendor whitepapers about its tools"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Breach and attack simulation tools safely replay known techniques on a schedule and show which ones the controls detected or blocked."
+  },
+  {
+    "id": "CISSP-T2-088",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Facility design",
+    "stem": "A new site design uses clear sight lines, lighting and landscaping so that intruders feel observed. Which approach is this?",
+    "options": [
+      "Crime prevention through environmental design",
+      "Mandatory access control of the perimeter",
+      "Defense through obscurity of the building",
+      "Electromagnetic shielding of the facility"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "CPTED uses natural surveillance, natural access control and territorial reinforcement to discourage crime through the design of the environment."
+  },
+  {
+    "id": "CISSP-T2-089",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cellular and edge",
+    "stem": "A company connects remote sensors over 5G and processes data at the network edge. What is the MOST important security consideration?",
+    "options": [
+      "Relying on the carrier's encryption of the radio link as the only control needed",
+      "Disabling all updates to the sensors to keep them stable",
+      "Authenticating each device and securing the edge nodes as well as the core",
+      "Sending every reading unencrypted to save battery"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Edge computing spreads processing to many locations, which widens the attack surface. Each device and edge node needs identity, hardening and monitoring, not only carrier link security."
+  },
+  {
+    "id": "CISSP-T2-090",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Credential management",
+    "stem": "Help desk staff reset passwords after callers give their employee number, which is printed on badges. What should the manager change FIRST?",
+    "options": [
+      "Print employee numbers in smaller type on the badges",
+      "Require stronger verification of the caller's identity before any reset",
+      "Let callers choose any new password they like over the phone",
+      "Ask the help desk to reset passwords faster to cut queue times"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A reset is only as strong as the identity check behind it. Using a widely known value lets attackers take over accounts through social engineering, so verification must use something only the real user has or knows."
+  },
+  {
+    "id": "CISSP-T2-091",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Travel security",
+    "stem": "An executive will travel to a country with a high risk of device inspection and espionage. What is the BEST advice?",
+    "options": [
+      "Carry a loaner device with minimal data and wipe it on return",
+      "Carry the usual laptop, which has full-disk encryption",
+      "Store all passwords in a paper notebook kept in the laptop bag at all times",
+      "Disable the laptop's firewall to avoid problems at customs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A clean loaner limits what can be seized or compromised, and wiping it afterward removes any implants. Encryption does not help if the person is compelled to unlock the device."
+  },
+  {
+    "id": "CISSP-T2-092",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Threat modeling",
+    "stem": "Which threat modeling approach is a seven-stage, risk-centric method that aligns technical threats with business objectives?",
+    "options": [
+      "DREAD",
+      "STRIDE",
+      "PASTA",
+      "Trike"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "PASTA (Process for Attack Simulation and Threat Analysis) has seven stages, beginning with business objectives. STRIDE is a threat classification and DREAD a scoring model."
+  },
+  {
+    "id": "CISSP-T2-093",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data custodian",
+    "stem": "A data owner sets a requirement that customer records be backed up daily and kept encrypted. Who is responsible for carrying this out?",
+    "options": [
+      "The data custodian",
+      "The data subject",
+      "The chief privacy officer",
+      "The data owner personally"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The custodian, typically IT, implements and operates the controls the owner specifies. The owner remains accountable, but delegates the day-to-day work."
+  },
+  {
+    "id": "CISSP-T2-094",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Testing methods",
+    "stem": "For each description, specify the testing method.",
+    "rows": [
+      "Analyzes source code without running it",
+      "Attacks the running application from outside",
+      "Instruments the running application from inside while it is tested",
+      "Inventories third-party libraries and their known flaws"
+    ],
+    "columns": [
+      "SAST",
+      "DAST",
+      "IAST",
+      "SCA"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "SAST reads the code, DAST tests the running app as a black box, IAST uses agents inside the running app, and SCA checks components against vulnerability databases."
+  },
+  {
+    "id": "CISSP-T2-095",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "SOC report types",
+    "stem": "For each need, specify the report that fits BEST.",
+    "rows": [
+      "An auditor checking controls relevant to a client's financial statements",
+      "A customer needing detailed evidence of a provider's security controls",
+      "A marketing page showing a general seal of assurance"
+    ],
+    "columns": [
+      "SOC 1",
+      "SOC 2",
+      "SOC 3"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "SOC 1 covers controls relevant to financial reporting. SOC 2 gives detailed results against the trust services criteria for restricted use. SOC 3 is a general-use summary without the detail."
+  },
+  {
+    "id": "CISSP-T2-096",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "order",
+    "skill": "Secure boot chain",
+    "stem": "Place the stages of a measured, secure boot in the order they run.",
+    "options": [
+      "Kernel loads only signed drivers",
+      "Boot loader verifies the operating system kernel",
+      "Firmware verifies the boot loader's signature",
+      "Immutable boot ROM verifies the firmware"
+    ],
+    "correct": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "explanation": "A chain of trust starts at an immutable root in hardware. Each stage verifies the next before handing over control, so tampering anywhere stops the boot or is recorded."
+  },
+  {
+    "id": "CISSP-T2-097",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "order",
+    "skill": "Encapsulation",
+    "stem": "Place the steps of encapsulation in order as data travels down the stack from an application on the sending host.",
+    "options": [
+      "Transport layer adds a TCP header to form a segment",
+      "Physical layer sends the bits on the medium",
+      "Data link layer adds a header and trailer to form a frame",
+      "Network layer adds an IP header to form a packet",
+      "Application data is created"
+    ],
+    "correct": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ],
+    "explanation": "Each layer adds its own header as data moves down: segment at layer 4, packet at layer 3, frame at layer 2, then bits. The receiver removes them in reverse order."
+  },
+  {
+    "id": "CISSP-T2-098",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Authentication factors",
+    "stem": "For each authenticator, specify the factor type.",
+    "rows": [
+      "A PIN",
+      "A smart card",
+      "A retina scan",
+      "A one-time code from an authenticator app"
+    ],
+    "columns": [
+      "Something you know",
+      "Something you have",
+      "Something you are"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      1
+    ],
+    "explanation": "A PIN is knowledge. A smart card is possession, and so is the phone app that generates the code. A retina scan is inherence."
+  },
+  {
+    "id": "CISSP-T2-099",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Recovery sites",
+    "stem": "For each recovery site, specify its typical recovery time.",
+    "rows": [
+      "Mirrored site with real-time replication",
+      "Hot site with current data and running systems",
+      "Warm site with equipment but older data",
+      "Cold site with space and power only"
+    ],
+    "columns": [
+      "Near zero",
+      "Minutes to hours",
+      "Hours to days",
+      "A week or more"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "A mirrored site is effectively live. A hot site can take over within minutes to hours, a warm site needs data restored and takes hours to days, and a cold site needs equipment installed and configured, which usually takes a week or more."
+  },
+  {
+    "id": "CISSP-T2-100",
+    "section": "cissp",
+    "test": 2,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Control categories",
+    "stem": "For each control, specify its PRIMARY function.",
+    "rows": [
+      "A badge-controlled lock on the server room door",
+      "Reviewing firewall logs every morning",
+      "Restoring a server from backup after malware",
+      "A warning banner on the login screen"
+    ],
+    "columns": [
+      "Preventive",
+      "Detective",
+      "Corrective",
+      "Deterrent"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "A badge-controlled lock stops unauthorized entry, so it is preventive. Log review discovers events after they happen, so it is detective. Restoring from backup fixes the damage, so it is corrective. A banner discourages misuse, so it is deterrent."
+  },
+  {
+    "id": "CISSP-D-001",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Due care",
+    "stem": "A company installs a patching policy, firewalls and staff training because a reasonable company in its industry would do so. Which concept does this BEST illustrate?",
+    "options": [
+      "Risk transference",
+      "Due care",
+      "Due diligence",
+      "Defense in depth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Due care is taking the reasonable steps a prudent organization would take. Due diligence is the ongoing work of verifying that those steps are effective."
+  },
+  {
+    "id": "CISSP-D-002",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Government classification",
+    "stem": "In the US government scheme, unauthorized disclosure of which level could cause serious damage to national security?",
+    "options": [
+      "Secret",
+      "Confidential",
+      "Top Secret",
+      "Unclassified"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Confidential is damage, Secret is serious damage, and Top Secret is exceptionally grave damage to national security."
+  },
+  {
+    "id": "CISSP-D-003",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Least privilege",
+    "stem": "A web service account is given read access to one database table instead of database owner rights. Which principle does this apply?",
+    "options": [
+      "Least privilege",
+      "Defense in depth",
+      "Fail securely",
+      "Separation of duties"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Least privilege grants only the access needed for the task, which limits damage if the account is compromised."
+  },
+  {
+    "id": "CISSP-D-004",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ports",
+    "stem": "Which port does SSH use by default?",
+    "options": [
+      "443",
+      "25",
+      "23",
+      "22"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SSH uses TCP 22. Telnet uses 23 and sends credentials in clear text, SMTP uses 25, and HTTPS uses 443."
+  },
+  {
+    "id": "CISSP-D-005",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rule-based access",
+    "stem": "A firewall permits traffic based on rules that apply to all users equally. Which access control type is this?",
+    "options": [
+      "Discretionary access control",
+      "Rule-based access control",
+      "Role-based access control",
+      "Attribute-based access control"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rule-based access control applies global rules regardless of who the user is. Role-based access assigns permissions through job roles."
+  },
+  {
+    "id": "CISSP-D-006",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Real user monitoring",
+    "stem": "Which technique passively records the actual experience of people using a website?",
+    "options": [
+      "Real user monitoring",
+      "Static code review",
+      "Red team exercises",
+      "Synthetic transactions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "RUM captures performance and errors from real sessions. Synthetic monitoring uses scripted transactions."
+  },
+  {
+    "id": "CISSP-D-007",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Differential restore",
+    "stem": "A database gets a full backup on the 1st of the month and a differential backup every night after that. It fails on the morning of the 5th. Which backups are needed to restore it?",
+    "options": [
+      "The differential from the night of the 4th on its own",
+      "The full backup plus the differential from the night of the 4th",
+      "The full backup from the 1st on its own",
+      "The full backup plus every differential from the 2nd through the 4th"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each differential holds every change since the last full backup, so only the full backup and the most recent differential are needed."
+  },
+  {
+    "id": "CISSP-D-008",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Input validation",
+    "stem": "Where must input validation be enforced to be effective?",
+    "options": [
+      "On the server, even if the client also validates",
+      "Only on the load balancer in front of the web servers",
+      "Only in the database",
+      "Only in the browser's JavaScript"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Client-side checks are easy to bypass, so the server must validate every input. Client checks are only for usability."
+  },
+  {
+    "id": "CISSP-D-009",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Risk appetite",
+    "stem": "Who is responsible for setting an organization's risk appetite?",
+    "options": [
+      "Senior management and the board",
+      "Each system owner for their own systems",
+      "The chief information security officer",
+      "The internal audit department"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Risk appetite is a governance decision made at the top of the organization. The CISO advises and the system owners operate within it."
+  },
+  {
+    "id": "CISSP-D-010",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Clear versus purge",
+    "stem": "Under NIST SP 800-88, what distinguishes purging media from clearing it?",
+    "options": [
+      "Purging uses software, while clearing always uses physical destruction",
+      "Clearing applies only to paper, while purging applies to disks",
+      "Purging defeats laboratory recovery, while clearing defeats simple recovery tools",
+      "Clearing makes the media unusable, while purging keeps it reusable"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Clear protects against simple, non-invasive recovery. Purge protects against state-of-the-art laboratory techniques. Destroy makes the media unusable."
+  },
+  {
+    "id": "CISSP-D-011",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Emanation security",
+    "stem": "Which control addresses the risk of attackers reading data from the electromagnetic signals a monitor gives off?",
+    "options": [
+      "A host-based intrusion detection system",
+      "Full-disk encryption on the workstation",
+      "TEMPEST shielding and controlled zones",
+      "Multifactor authentication at login"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "TEMPEST refers to the study and control of compromising emanations. Shielding, Faraday cages and controlled zones limit what can be picked up from outside."
+  },
+  {
+    "id": "CISSP-D-012",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Firewall rules",
+    "stem": "What should the last rule in a firewall rule base normally be?",
+    "options": [
+      "A rule that permits ICMP from anywhere",
+      "An allow of all outbound traffic",
+      "An explicit deny of all traffic, with logging",
+      "An allow rule for all traffic from internal addresses"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Default deny means anything not explicitly allowed is blocked. Logging the final rule shows what was dropped, which helps both tuning and detection."
+  },
+  {
+    "id": "CISSP-D-013",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Just-in-time provisioning",
+    "stem": "A SaaS application creates a user account the first time a federated user signs in, using attributes in the assertion. What is this called?",
+    "options": [
+      "Privilege escalation",
+      "Just-in-time provisioning",
+      "Credential stuffing",
+      "Account harvesting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "JIT provisioning creates the account from federation attributes at first login, so accounts do not have to be created in advance."
+  },
+  {
+    "id": "CISSP-D-014",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ethical disclosure",
+    "stem": "A researcher finds a serious flaw in a vendor's product used by many customers. What is the MOST responsible action?",
+    "options": [
+      "Ignore it, since it is the vendor's problem",
+      "Sell the details to the highest bidder",
+      "Post full details publicly at once so customers can protect themselves right away",
+      "Report it privately to the vendor and allow time for a fix before disclosure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Coordinated disclosure gives the vendor time to fix the flaw while protecting users, and details are published after a fix is available or a deadline passes."
+  },
+  {
+    "id": "CISSP-D-015",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sandboxing",
+    "stem": "Which control executes suspicious email attachments in an isolated environment to observe their behavior before delivery?",
+    "options": [
+      "Port security",
+      "Tokenization",
+      "Data masking",
+      "Sandboxing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A sandbox detonates files in a contained environment and watches for malicious behavior, which catches threats that have no known signature."
+  },
+  {
+    "id": "CISSP-D-016",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Aggregation",
+    "stem": "Individually unclassified facts about troop supply orders, when combined, reveal a planned operation. What is this risk called?",
+    "options": [
+      "Aggregation",
+      "Normalization",
+      "Polyinstantiation",
+      "Encapsulation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Aggregation is when combining lower-sensitivity data creates information of higher sensitivity. Inference is deducing hidden facts from what is visible."
+  },
+  {
+    "id": "CISSP-D-017",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Collusion controls",
+    "stem": "A company requires one employee to create a vendor and a different employee to approve payments to it. Which principle is this?",
+    "options": [
+      "Need to know",
+      "Job rotation",
+      "Separation of duties",
+      "Dual control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Separation of duties splits a sensitive task so that fraud would need collusion. Dual control requires two people together for one action, such as two keys to open a vault."
+  },
+  {
+    "id": "CISSP-D-018",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspAsset",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CASB",
+    "stem": "A company wants visibility into which unsanctioned cloud apps employees use and to enforce policy on sanctioned ones. Which control fits BEST?",
+    "options": [
+      "A host-based firewall",
+      "A hardware security module",
+      "A network intrusion prevention system",
+      "A cloud access security broker"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A CASB sits between users and cloud services to discover shadow IT and apply data and access policies to sanctioned apps."
+  },
+  {
+    "id": "CISSP-D-019",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IoT security",
+    "stem": "A company plans to deploy hundreds of IP cameras. Which measure reduces risk the MOST?",
+    "options": [
+      "Place the cameras on an isolated network segment and change default credentials",
+      "Give each camera a public IP address so that security staff can view them from anywhere",
+      "Allow the cameras to update from any internet source",
+      "Disable logging on the cameras to save storage"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "IoT devices are often weakly secured. Segmentation contains a compromised device, and removing default credentials closes the most common attack path."
+  },
+  {
+    "id": "CISSP-D-020",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "802.1X roles",
+    "stem": "In 802.1X port-based authentication, which component checks the user's credentials?",
+    "options": [
+      "The authenticator, which is the switch or access point",
+      "The supplicant on the user's device",
+      "The DHCP server",
+      "The authentication server, usually RADIUS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The supplicant requests access, the authenticator relays the exchange, and the authentication server, usually RADIUS, makes the decision."
+  },
+  {
+    "id": "CISSP-D-021",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Password policy",
+    "stem": "Current NIST guidance on passwords (SP 800-63B) favors which practice?",
+    "options": [
+      "Using password hints stored with the account",
+      "Forcing a password change every 30 days",
+      "Checking new passwords against lists of breached passwords",
+      "Requiring a mix of upper case, lower case, digits and symbols in every password"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "NIST SP 800-63B (Rev. 4, 2025) requires screening new passwords against blocklists of compromised values, and forbids forced periodic changes without evidence of compromise, composition rules and stored hints."
+  },
+  {
+    "id": "CISSP-D-022",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Third-party assessment",
+    "stem": "Why would a company use a third-party assessor rather than internal staff for a compliance assessment?",
+    "options": [
+      "Because third-party assessors do not need access to the company's evidence",
+      "Because internal staff are not allowed to review controls",
+      "To avoid having to fix any findings",
+      "To obtain an independent opinion that outside parties will rely on"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Regulators, customers and partners often require an independent assessment, because internal reviewers are not independent of the controls."
+  },
+  {
+    "id": "CISSP-D-023",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Duress",
+    "stem": "Which control lets an employee who is forced to open a door signal for help without the attacker knowing?",
+    "options": [
+      "A visible security camera over the door",
+      "A sign-in log at reception",
+      "A duress code or silent alarm",
+      "A turnstile at the entrance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A duress code opens the door normally but triggers a silent alert, protecting the employee while summoning help."
+  },
+  {
+    "id": "CISSP-D-024",
+    "section": "cissp",
+    "test": 0,
+    "module": 1,
+    "domain": "cisspSoftware",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agile security",
+    "stem": "In an agile team, how are security requirements BEST handled?",
+    "options": [
+      "By the operations team once the product ships",
+      "As user stories and acceptance criteria in the backlog",
+      "Only by an outside auditor at the end of the whole project",
+      "In a single document written after the final sprint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Writing security as stories, abuse cases and definitions of done keeps it in each sprint rather than bolting it on at the end."
+  }
+]

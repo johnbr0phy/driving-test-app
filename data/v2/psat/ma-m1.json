@@ -1,0 +1,498 @@
+[
+ {
+  "id": "PSAT-MA-101",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "algebra",
+  "skill": "Linear equations in one variable",
+  "basics": "solveX",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "If $3x + 5 = 26$, what is the value of $x$?",
+  "options": [
+   "$7$",
+   "$\\frac{31}{3}$",
+   "$21$",
+   "$63$"
+  ],
+  "correct": [
+   0
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Subtract $5$ from both sides to get $3x = 21$, then divide by $3$: $x = 7$. The choice $21$ stops before dividing, and $\\frac{31}{3}$ comes from adding $5$ instead of subtracting it."
+ },
+ {
+  "id": "PSAT-MA-102",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "dataAnalysis",
+  "skill": "Ratios, rates, and proportions",
+  "basics": "ratios",
+  "difficulty": 1,
+  "format": "numeric",
+  "stem": "A pancake recipe uses $3$ cups of flour for every $2$ cups of milk. How many cups of flour are needed if $8$ cups of milk are used? Type the number only.",
+  "numeric": {
+   "answers": [
+    "12"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "The milk goes from $2$ cups to $8$ cups, which is $4$ times as much, so the flour must also be $4$ times as much: $3 \\times 4 = 12$ cups."
+ },
+ {
+  "id": "PSAT-MA-103",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "algebra",
+  "skill": "Linear functions",
+  "basics": "slope",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A phone plan charges a monthly fee of $15$ dollars plus $0.10$ dollar for each text message sent. Which equation gives the total monthly cost $C$, in dollars, for sending $t$ text messages?",
+  "options": [
+   "$C = 15 + 0.10t$",
+   "$C = 15t - 0.10$",
+   "$C = 0.10 + 15t$",
+   "$C = 15.10t$"
+  ],
+  "correct": [
+   0
+  ],
+  "calculator": true,
+  "explanation": "The fixed fee of $15$ is paid once, and $0.10$ is paid for each of the $t$ messages, giving $0.10t$. Adding them gives $C = 15 + 0.10t$. The other equations multiply the wrong number by $t$ or combine the two charges incorrectly."
+ },
+ {
+  "id": "PSAT-MA-104",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "advancedMath",
+  "skill": "Function notation",
+  "basics": "functionNotation",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "If $f(x) = x^2 - 4$, what is the value of $f(3)$?",
+  "options": [
+   "$-1$",
+   "$2$",
+   "$5$",
+   "$13$"
+  ],
+  "correct": [
+   2
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Replace $x$ with $3$: $f(3) = 3^2 - 4 = 9 - 4 = 5$. The choice $13$ adds $4$ instead of subtracting, $2$ comes from doubling $3$ instead of squaring it, and $-1$ comes from not squaring at all."
+ },
+ {
+  "id": "PSAT-MA-105",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "geometryTrig",
+  "skill": "Right triangles",
+  "basics": "pythagorean",
+  "difficulty": 1,
+  "format": "numeric",
+  "stem": "A rectangle has a length of $12$ centimeters and a width of $5$ centimeters. What is the length, in centimeters, of a diagonal of the rectangle? Type the number only.",
+  "numeric": {
+   "answers": [
+    "13"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "A diagonal splits the rectangle into two right triangles with legs $12$ and $5$. By the Pythagorean theorem, the diagonal is $\\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13$ centimeters."
+ },
+ {
+  "id": "PSAT-MA-106",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "algebra",
+  "skill": "Linear equations in one variable",
+  "basics": "solveX",
+  "difficulty": 1,
+  "format": "numeric",
+  "stem": "What value of $y$ satisfies the equation $\\frac{y}{4} = 9$? Type the number only.",
+  "numeric": {
+   "answers": [
+    "36"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "Multiply both sides by $4$ to undo the division: $y = 9 \\times 4 = 36$."
+ },
+ {
+  "id": "PSAT-MA-107",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "dataAnalysis",
+  "skill": "Percentages",
+  "basics": "percents",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A store sells a jacket for $40$ dollars. During a sale, the price is reduced by $15\\%$. What is the sale price of the jacket, in dollars?",
+  "options": [
+   "$6$",
+   "$25$",
+   "$34$",
+   "$46$"
+  ],
+  "correct": [
+   2
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "The discount is $15\\%$ of $40$, or $0.15 \\times 40 = 6$ dollars, so the sale price is $40 - 6 = 34$ dollars. The choice $6$ is the discount itself, $25$ subtracts $15$ dollars instead of $15\\%$, and $46$ adds the discount."
+ },
+ {
+  "id": "PSAT-MA-108",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "advancedMath",
+  "skill": "Equivalent expressions",
+  "basics": "distributing",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "Which expression is equivalent to $(x + 3)(x - 3)$?",
+  "options": [
+   "$x^2 + 9$",
+   "$x^2 - 9$",
+   "$x^2 + 6x - 9$",
+   "$x^2 - 6x - 9$"
+  ],
+  "correct": [
+   1
+  ],
+  "calculator": true,
+  "explanation": "Multiply out: $x \\cdot x - 3x + 3x - 9 = x^2 - 9$. The middle terms $-3x$ and $+3x$ cancel, so there is no $x$ term, and $3 \\times (-3) = -9$, not $+9$."
+ },
+ {
+  "id": "PSAT-MA-109",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "advancedMath",
+  "skill": "Exponents",
+  "basics": "exponentRules",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "Which expression is equivalent to $(x^3)(x^4)$?",
+  "options": [
+   "$x^{12}$",
+   "$x^7$",
+   "$2x^7$",
+   "$2x^{12}$"
+  ],
+  "correct": [
+   1
+  ],
+  "calculator": true,
+  "explanation": "When you multiply powers with the same base, add the exponents: $x^{3+4} = x^7$. Multiplying the exponents gives $x^{12}$, which is the rule for a power raised to a power, and there is no factor of $2$."
+ },
+ {
+  "id": "PSAT-MA-110",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "algebra",
+  "skill": "Linear functions",
+  "basics": "slope",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A line in the $xy$-plane passes through the points $(0, 2)$ and $(4, 10)$. What is the slope of the line?",
+  "options": [
+   "$\\frac{1}{2}$",
+   "$2$",
+   "$3$",
+   "$8$"
+  ],
+  "correct": [
+   1
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Slope is the change in $y$ over the change in $x$: $\\frac{10 - 2}{4 - 0} = \\frac{8}{4} = 2$. The choice $8$ is only the change in $y$, and $\\frac{1}{2}$ divides the changes in the wrong order."
+ },
+ {
+  "id": "PSAT-MA-111",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "algebra",
+  "skill": "Systems of linear equations",
+  "basics": "systems",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "$x + y = 10$\n\n$x - y = 4$\n\nWhat is the value of $x$ in the solution to the system of equations above? Type the number only.",
+  "numeric": {
+   "answers": [
+    "7"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "Add the two equations to eliminate $y$: $2x = 14$, so $x = 7$. (Then $y = 3$, and both equations check: $7 + 3 = 10$ and $7 - 3 = 4$.)"
+ },
+ {
+  "id": "PSAT-MA-112",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "advancedMath",
+  "skill": "Quadratic equations",
+  "basics": "factoring",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "What are the solutions to the equation $x^2 - 5x + 6 = 0$?",
+  "options": [
+   "$x = -1$ and $x = 6$",
+   "$x = -2$ and $x = -3$",
+   "$x = 2$ and $x = 3$",
+   "$x = 1$ and $x = 6$"
+  ],
+  "correct": [
+   2
+  ],
+  "calculator": true,
+  "explanation": "Find two numbers that multiply to $6$ and add to $-5$: $-2$ and $-3$. So $x^2 - 5x + 6 = (x - 2)(x - 3) = 0$, giving $x = 2$ or $x = 3$. The choice $-2$ and $-3$ uses the numbers in the factors instead of solving each factor for $x$."
+ },
+ {
+  "id": "PSAT-MA-113",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "dataAnalysis",
+  "skill": "One-variable data",
+  "basics": "meanMedian",
+  "difficulty": 2,
+  "format": "numeric",
+  "stem": "The mean of five numbers is $12$. Four of the numbers are $10$, $14$, $9$, and $15$. What is the fifth number? Type the number only.",
+  "numeric": {
+   "answers": [
+    "12"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "A mean of $12$ for five numbers means they add up to $5 \\times 12 = 60$. The four known numbers add up to $10 + 14 + 9 + 15 = 48$, so the fifth number is $60 - 48 = 12$."
+ },
+ {
+  "id": "PSAT-MA-114",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "geometryTrig",
+  "skill": "Lines, angles, and triangles",
+  "basics": "triangleAngles",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Two angles of a triangle measure $48^\\circ$ and $67^\\circ$. What is the measure, in degrees, of the third angle?",
+  "options": [
+   "$65$",
+   "$75$",
+   "$115$",
+   "$133$"
+  ],
+  "correct": [
+   0
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "The angles of a triangle add up to $180^\\circ$, so the third angle is $180 - 48 - 67 = 65$ degrees. The choice $115$ is the sum of the two given angles, not the missing angle."
+ },
+ {
+  "id": "PSAT-MA-115",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "algebra",
+  "skill": "Linear inequalities",
+  "basics": "inequalities",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Jada has $120$ dollars saved and adds $25$ dollars to her savings each week. Which inequality can be used to find the number of weeks $w$ after which Jada will have at least $300$ dollars saved?",
+  "options": [
+   "$25 + 120w \\geq 300$",
+   "$120 + 25w \\leq 300$",
+   "$120 + 25w \\geq 300$",
+   "$120w + 25 \\leq 300$"
+  ],
+  "correct": [
+   2
+  ],
+  "calculator": true,
+  "explanation": "After $w$ weeks she has $120 + 25w$ dollars, and \"at least $300$\" means greater than or equal to $300$. The $\\leq$ choices mean \"at most,\" and the others swap the starting amount and the weekly amount."
+ },
+ {
+  "id": "PSAT-MA-116",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "advancedMath",
+  "skill": "Exponential functions",
+  "basics": "exponentialGrowth",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A population of bacteria doubles every hour. If there are $500$ bacteria at the start, how many bacteria will there be after $4$ hours?",
+  "options": [
+   "$2{,}000$",
+   "$4{,}000$",
+   "$8{,}000$",
+   "$16{,}000$"
+  ],
+  "correct": [
+   2
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Doubling four times multiplies the population by $2^4 = 16$, so there will be $500 \\times 16 = 8{,}000$ bacteria. The choice $2{,}000$ adds the doublings as $500 \\times 4$, $4{,}000$ is the count after $3$ hours, and $16{,}000$ is the count after $5$ hours."
+ },
+ {
+  "id": "PSAT-MA-117",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "algebra",
+  "skill": "Linear equations in one variable",
+  "basics": "solveX",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "If $2(x - 3) = x + 5$, what is the value of $x$?",
+  "options": [
+   "$-1$",
+   "$1$",
+   "$8$",
+   "$11$"
+  ],
+  "correct": [
+   3
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "Distribute: $2x - 6 = x + 5$. Subtract $x$ from both sides and add $6$: $x = 11$. The choice $8$ comes from writing $2x - 3$ instead of $2x - 6$, and $-1$ from subtracting $6$ instead of adding it."
+ },
+ {
+  "id": "PSAT-MA-118",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "advancedMath",
+  "skill": "Quadratic functions",
+  "basics": "vertexForm",
+  "difficulty": 3,
+  "format": "numeric",
+  "stem": "The function $h(t) = -5t^2 + 20t$ gives the height, in meters, of a ball $t$ seconds after it is thrown upward from the ground. What is the maximum height, in meters, that the ball reaches? Type the number only.",
+  "numeric": {
+   "answers": [
+    "20"
+   ],
+   "tolerance": 0
+  },
+  "calculator": true,
+  "explanation": "The vertex of $h(t) = -5t^2 + 20t$ is at $t = -\\frac{b}{2a} = -\\frac{20}{2(-5)} = 2$. The height then is $h(2) = -5(4) + 20(2) = -20 + 40 = 20$ meters."
+ },
+ {
+  "id": "PSAT-MA-119",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "algebra",
+  "skill": "Linear functions",
+  "basics": "slope",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "Line $\\ell$ is perpendicular to the line $y = \\frac{1}{3}x + 4$ and passes through the point $(0, -2)$. Which equation defines line $\\ell$?",
+  "options": [
+   "$y = 3x - 2$",
+   "$y = -3x - 2$",
+   "$y = -\\frac{1}{3}x - 2$",
+   "$y = -3x + 4$"
+  ],
+  "correct": [
+   1
+  ],
+  "calculator": true,
+  "explanation": "Perpendicular slopes are negative reciprocals, so the slope of $\\ell$ is $-3$. The point $(0, -2)$ is the $y$-intercept, so $y = -3x - 2$. The choice $y = 3x - 2$ forgets the negative sign, and $-\\frac{1}{3}$ forgets to take the reciprocal."
+ },
+ {
+  "id": "PSAT-MA-120",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "advancedMath",
+  "skill": "Equivalent expressions",
+  "basics": "factoring",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "Which expression is equivalent to $\\frac{x^2 - 16}{x + 4}$ for $x \\neq -4$?",
+  "options": [
+   "$x - 16$",
+   "$x + 4$",
+   "$x^2 - 4$",
+   "$x - 4$"
+  ],
+  "correct": [
+   3
+  ],
+  "calculator": true,
+  "explanation": "Factor the numerator as a difference of squares: $x^2 - 16 = (x + 4)(x - 4)$. Dividing by $x + 4$ leaves $x - 4$."
+ },
+ {
+  "id": "PSAT-MA-121",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "dataAnalysis",
+  "skill": "Ratios, rates, and proportions",
+  "basics": "rateProblems",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A car travels $150$ miles on $5$ gallons of gas. At this rate, how many gallons of gas does the car need to travel $420$ miles?",
+  "options": [
+   "$12$",
+   "$14$",
+   "$15$",
+   "$30$"
+  ],
+  "correct": [
+   1
+  ],
+  "lockedOrder": true,
+  "calculator": true,
+  "explanation": "The car gets $150 \\div 5 = 30$ miles per gallon, so $420$ miles takes $420 \\div 30 = 14$ gallons. The choice $30$ is the miles per gallon, not the number of gallons."
+ },
+ {
+  "id": "PSAT-MA-122",
+  "section": "math",
+  "test": 1,
+  "module": 1,
+  "domain": "geometryTrig",
+  "skill": "Circles",
+  "basics": "circleBasics",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A circle has a circumference of $10\\pi$ centimeters. What is the area of the circle, in square centimeters?",
+  "options": [
+   "$5\\pi$",
+   "$10\\pi$",
+   "$100\\pi$",
+   "$25\\pi$"
+  ],
+  "correct": [
+   3
+  ],
+  "calculator": true,
+  "explanation": "Circumference is $2\\pi r$, so $2\\pi r = 10\\pi$ gives $r = 5$. The area is $\\pi r^2 = 25\\pi$. The choice $100\\pi$ uses the diameter, $10$, as the radius."
+ }
+]

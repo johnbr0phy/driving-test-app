@@ -1,0 +1,4394 @@
+[
+  {
+    "id": "NETPLUS-T1-001",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "DHCP",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A network printer gets its address from DHCP, but users keep losing it when its address changes. The team wants it to keep the same address while still using DHCP. What should they configure?",
+    "explanation": "A reservation always hands the same address to one MAC address, so the printer keeps its address and stays centrally managed. An exclusion only stops the server from handing out an address.",
+    "options": [
+      "A shorter lease time on the whole DHCP scope",
+      "An exclusion range on the scope that covers the printer's current address",
+      "A DHCP reservation tied to the printer's MAC address",
+      "A second DHCP server for the printer's subnet"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-002",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "AAA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A network team wants to authenticate administrators who log in to routers and switches, authorize each command separately, and encrypt the whole exchange with the server. Which protocol fits best?",
+    "explanation": "TACACS+ runs over TCP 49, separates authentication, authorization and accounting, can authorize individual commands, and encrypts the entire payload. RADIUS combines authentication and authorization and encrypts only the password.",
+    "options": [
+      "LDAP",
+      "SNMPv2c",
+      "RADIUS",
+      "TACACS+"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-003",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "OSI layers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A switch reads the destination hardware address in each incoming frame and sends the frame out only the port where that address was learned. At which OSI layer does the switch make this decision?",
+    "explanation": "Frames and MAC addresses belong to the data link layer, so a switch that forwards by MAC address works at Layer 2. Routers forward by IP address at Layer 3, and hubs and repeaters only repeat signals at Layer 1.",
+    "options": [
+      "Layer 1, physical",
+      "Layer 4, transport",
+      "Layer 2, data link",
+      "Layer 3, network"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-004",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Dynamic routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company gets internet service from two different ISPs and wants to exchange routes with both providers using its own autonomous system number. Which routing protocol is used between them?",
+    "explanation": "BGP is the path vector protocol that exchanges routes between autonomous systems, including between customers and ISPs. OSPF and EIGRP are interior protocols used inside one organization.",
+    "options": [
+      "A static default route",
+      "BGP",
+      "OSPF",
+      "EIGRP"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-005",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Addressing issues",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A Windows PC with a static address shows an address conflict warning and its connection works only now and then. What is the most likely cause?",
+    "explanation": "A duplicate IP address makes both devices fight over the address in other hosts' ARP caches, so connections come and go. Find the other device, then fix the static address or the DHCP scope.",
+    "options": [
+      "The switch port is set to half duplex",
+      "Another device is using the same IP address",
+      "The DHCP lease on the PC has expired",
+      "The PC's DNS server is set to an address that no longer answers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-006",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Topologies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data center is rebuilt so that every access switch connects to every one of four core-tier switches, and any server reaches any other server in the same number of hops. Which architecture is this?",
+    "explanation": "In a spine and leaf design each leaf (access) switch links to every spine, so east-west traffic between servers always crosses one spine and latency is predictable. A three-tier design adds a distribution layer and more varied paths.",
+    "options": [
+      "Collapsed core",
+      "Point-to-point",
+      "Three-tier hierarchy",
+      "Spine and leaf"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-007",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician tests a theory and confirms that a failed switch power supply caused an outage. What is the next step in the methodology?",
+    "explanation": "After the cause is confirmed, plan the fix, including its impact and any change approval, before implementing it. Verification and documentation come after the fix.",
+    "options": [
+      "Document the findings and close the ticket",
+      "Question the users again and duplicate the problem before doing anything else",
+      "Establish a plan of action to resolve it and identify its effects",
+      "Verify full system functionality right away"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-008",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Wireless channels",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A neighboring business's 2.4 GHz access point uses channel 6. Which channel should your nearby access point use so the two do not overlap at all?",
+    "explanation": "Each 20 MHz channel in 2.4 GHz overlaps the channels within four numbers of it, so channels 2 to 10 all overlap channel 6. Only 1 and 11 are clear of it, which is why 1, 6 and 11 is the usual plan.",
+    "options": [
+      "11",
+      "4",
+      "8",
+      "9"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-009",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "DHCP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new VLAN's hosts get no addresses. The only DHCP server is on another subnet, and its scope for the new VLAN is correct. What is missing?",
+    "explanation": "DHCP Discover messages are broadcasts, which routers do not forward. A relay agent on the VLAN's gateway turns them into unicasts to the server, and the server picks the scope from the relay address.",
+    "options": [
+      "A larger subnet mask on the DHCP server's own network interface card",
+      "A DNS A record for the DHCP server's hostname",
+      "A static route on each host to the DHCP server",
+      "A DHCP relay (IP helper) on the new VLAN's router interface"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-010",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Layer 2 attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker's laptop sends thousands of frames with random source MAC addresses until the switch starts flooding all traffic out every port. Which attack is this, and what limits it?",
+    "explanation": "MAC flooding fills the switch's MAC address table so it floods unknown frames like a hub, letting the attacker capture them. Port security caps how many MAC addresses a port may learn.",
+    "options": [
+      "VLAN hopping, limited by enabling trunk negotiation on every port",
+      "MAC flooding, limited by port security on access ports",
+      "ARP poisoning, limited by DNSSEC on the resolver",
+      "Evil twin, limited by WPA3 on the access points"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-011",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "PDUs",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A protocol analyzer shows TCP headers with source and destination ports, sequence numbers and acknowledgment numbers. What is the protocol data unit called at this layer?",
+    "explanation": "The transport layer PDU is a segment for TCP (often called a datagram for UDP). Packets are Layer 3 PDUs that carry IP addresses, frames are Layer 2 PDUs with MAC addresses, and bits are what Layer 1 puts on the wire.",
+    "options": [
+      "Segment",
+      "Frame",
+      "Packet",
+      "Bit stream"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-012",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Route selection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A router has a route to 10.1.0.0/16 through one neighbor and a route to 10.1.4.0/24 through another. A packet arrives for 10.1.4.9. Which route does the router use?",
+    "explanation": "Routers always pick the most specific matching route, the one with the longest prefix. Administrative distance and metric only break ties between routes to the same prefix.",
+    "options": [
+      "Both routes, splitting the packets equally",
+      "The 10.1.0.0/16 route, because it covers more addresses and was learned first",
+      "The 10.1.4.0/24 route, because it is the longest prefix match",
+      "Whichever route was added to the table first"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-013",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Addressing issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A host is set to 192.168.1.130 with mask 255.255.255.128 and gateway 192.168.1.1. It can reach some local hosts but nothing off the subnet. What is wrong?",
+    "explanation": "With a /25 mask the host's subnet is 192.168.1.128 to .255, but its gateway is in 192.168.1.0/25, so the host cannot reach it. The mask should probably be /24, or the gateway changed to one inside the subnet.",
+    "options": [
+      "The gateway must always be the last usable address in the subnet",
+      "The host's address is a broadcast address and cannot be used",
+      "The host needs a DNS server before it can reach its gateway",
+      "The gateway is outside the host's subnet, so the mask or gateway is wrong"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-014",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "DNS",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A domain moves its email to a new provider. Which DNS record tells other mail servers where to deliver mail for the domain?",
+    "explanation": "An MX (mail exchanger) record names the servers that accept mail for the domain, with a preference value. CNAME is an alias, PTR maps an address to a name, and AAAA holds an IPv6 address.",
+    "options": [
+      "AAAA",
+      "CNAME",
+      "MX",
+      "PTR"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-015",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "IPv4 addressing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A laptop shows the address 169.254.20.5 with a 255.255.0.0 mask. Which statement about this laptop is true?",
+    "explanation": "169.254.0.0/16 is the APIPA (link-local) range a host gives itself when it gets no DHCP answer. These addresses are not routed, so the laptop can reach only other link-local hosts on its own segment.",
+    "options": [
+      "It can talk only to other hosts on the same link using link-local addresses",
+      "It received a reserved address from the DHCP server in its own scope",
+      "It has a valid public address and can browse the internet normally",
+      "It is using the loopback range and so can reach only its own TCP/IP stack and nothing else"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-016",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Cable tools",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An installer is seating the individual wires of new horizontal runs into the IDC slots on the back of a patch panel. Which tool does this?",
+    "explanation": "A punchdown tool pushes each wire into an insulation displacement connector and trims the excess. A crimper attaches modular plugs such as RJ45 to the end of a cable.",
+    "options": [
+      "A cable stripper only",
+      "A cable crimper",
+      "A visual fault locator",
+      "A punchdown tool"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-017",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Rogue devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users on one floor suddenly get addresses from the wrong subnet and a gateway nobody recognizes. A small home router was found plugged into a wall jack. Which switch feature would have stopped this?",
+    "explanation": "The home router acted as a rogue DHCP server. DHCP snooping lets server replies in only on trusted ports, so offers from an access port are dropped.",
+    "options": [
+      "DHCP snooping with trusted ports only toward real servers",
+      "Link aggregation between the access switches and the core switches on that floor",
+      "Spanning tree with the root bridge set on the core",
+      "Jumbo frames on every access port in the building"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-018",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "DNS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security analyst has an IP address from a log and wants the host name that belongs to it. Which type of lookup and record are used?",
+    "explanation": "Reverse lookups query the in-addr.arpa (or ip6.arpa) zone for a PTR record that maps an address back to a name. Forward lookups turn names into addresses with A and AAAA records.",
+    "options": [
+      "A forward lookup that returns an A record",
+      "A zone transfer that returns an SOA record",
+      "A forward lookup that returns a TXT record",
+      "A reverse lookup that returns a PTR record"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-019",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Wireless standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company buys access points that support Wi-Fi 6E so newer laptops can use a less crowded band. Which band does Wi-Fi 6E add?",
+    "explanation": "Wi-Fi 6E is 802.11ax extended into the 6 GHz band, which offers many more clear channels than 2.4 and 5 GHz. Plain Wi-Fi 6 uses 2.4 and 5 GHz.",
+    "options": [
+      "3.6 GHz",
+      "60 GHz",
+      "6 GHz",
+      "900 MHz"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-020",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Ports and protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A directory server must accept encrypted LDAP queries from a web application, using TLS from the start of the connection. Which port should the firewall allow to the directory server?",
+    "explanation": "LDAPS (LDAP over TLS) uses port 636. Plain LDAP uses 389, 3389 is Remote Desktop Protocol, and UDP 161 is SNMP polling.",
+    "options": [
+      "UDP 161",
+      "TCP 389",
+      "TCP 3389",
+      "TCP 636"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-021",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Route selection",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A router learns 192.168.50.0/24 from OSPF, and an administrator also adds a static route to 192.168.50.0/24 with default settings. Which route goes into the routing table, and why?",
+    "explanation": "When two sources offer the same prefix, the router trusts the one with the lower administrative distance. A static route has a distance of 1 by default, lower than OSPF's 110, so it wins.",
+    "options": [
+      "The OSPF route, because its metric is based on link bandwidth and is more accurate",
+      "The OSPF route, because dynamic routes always take priority",
+      "The static route, because its administrative distance is lower",
+      "Neither, because two sources for one prefix cause a conflict"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-022",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Addressing issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user can reach file servers on the same subnet but nothing on other subnets or the internet. Other users on the subnet are fine. What should be checked first?",
+    "explanation": "Reaching local hosts but nothing remote, on one machine only, points to that machine's default gateway (or mask). A circuit or core problem would affect everyone.",
+    "options": [
+      "The user's default gateway setting",
+      "The building's internet circuit",
+      "The DNS server's root hints",
+      "The core switch's spanning tree priority"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-023",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Evolving use cases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A retailer wants its stores to use broadband, LTE and an existing MPLS circuit together, with a central controller steering voice traffic over whichever link has the lowest latency. Which technology fits?",
+    "explanation": "SD-WAN is transport-agnostic and application-aware: it treats every link as a pool and uses central policy to pick the best path for each application. VXLAN extends Layer 2 networks, and a single circuit cannot steer traffic between links.",
+    "options": [
+      "A Layer 2 point-to-point circuit",
+      "VXLAN",
+      "Spanning tree",
+      "SD-WAN"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-024",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Fiber tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 2 km single-mode fiber run between buildings has stopped passing light, and the team needs to know how far along the run the break is. Which tool shows that?",
+    "explanation": "An OTDR sends pulses down the fiber and times the reflections, showing the distance to breaks, splices and bad connectors. A visual fault locator only helps where its leaking red light can be seen, such as in a short patch cord.",
+    "options": [
+      "Cable crimper",
+      "Multimeter",
+      "Optical time-domain reflectometer",
+      "Visual fault locator"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-025",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Disaster recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Managers decide the order database can lose no more than 15 minutes of transactions in a disaster, so backups and replication are designed around that. Which metric did they set?",
+    "explanation": "RPO is the most data, measured as time, that may be lost, which sets how often data must be copied. RTO is how long the service may be down before it is restored.",
+    "options": [
+      "Mean time to repair",
+      "Recovery point objective",
+      "Mean time between failures",
+      "Recovery time objective"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-026",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Layer 2 attacks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An attacker on an access port in the native VLAN sends frames carrying two 802.1Q tags to reach a VLAN they are not in. How do you prevent this?",
+    "explanation": "Double tagging works because the first switch strips the outer native VLAN tag and forwards the frame on the trunk with the inner tag. If no access port uses the native VLAN, the attack has nowhere to start.",
+    "options": [
+      "Shorten the DHCP lease time in the user VLANs",
+      "Give the attacker's port a static IP address",
+      "Turn on port mirroring on every trunk in the building and review the captures daily",
+      "Use an unused VLAN as the native VLAN and keep users off it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-027",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Ports and protocols",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A help desk needs to reach Windows desktops with Remote Desktop Protocol through an internal firewall. Which TCP port must be open by default? Type the number only.",
+    "explanation": "RDP listens on TCP 3389 by default (it can also use UDP 3389 for better performance). Opening it only from the help desk subnet keeps the exposure small.",
+    "numeric": {
+      "answers": [
+        "3389"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "NETPLUS-T1-028",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "VLANs and trunking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two switches are joined by an 802.1Q trunk. A frame crosses the trunk with no VLAN tag. Which VLAN does the receiving switch place it in?",
+    "explanation": "On an 802.1Q trunk, frames in the native VLAN are sent untagged, and untagged frames that arrive are put in the native VLAN. Both ends must agree on the native VLAN or traffic leaks between VLANs.",
+    "options": [
+      "The native VLAN configured on the trunk",
+      "No VLAN, because untagged frames are dropped",
+      "Every VLAN, so it is flooded to all ports",
+      "VLAN 4095, which is reserved for errors"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-029",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "DHCP issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On Monday morning, laptops that were already connected work, but newly arriving laptops get 169.254.x.x addresses. The DHCP server is running. What is the likely problem?",
+    "explanation": "When a pool is exhausted, the server cannot make new offers, so new clients fall back to APIPA while existing leases keep working. Enlarge the scope, shorten leases or remove stale reservations.",
+    "options": [
+      "The access switches have a duplex mismatch",
+      "The DHCP scope has run out of available addresses",
+      "A routing loop has formed between two routers on the floor above",
+      "The DNS server has stopped answering queries"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-030",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Disaster recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company's recovery site has racks, power, network links and servers already installed, but data must be restored from backups before it can take over, which takes several hours. Which type of site is this?",
+    "explanation": "A warm site has hardware and connectivity ready but needs current data loaded. A hot site is kept in sync and can take over in minutes, and a cold site is little more than space and power.",
+    "options": [
+      "Warm site",
+      "Cold site",
+      "Active-active site",
+      "Hot site"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-031",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Wireless attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Customers at a cafe connect to an access point that has the cafe's network name but is run by an attacker who reads their traffic. What is this attack?",
+    "explanation": "An evil twin copies a legitimate SSID so clients connect to it, putting the attacker on-path. Enterprise authentication with server certificate checks and wireless intrusion prevention help detect it.",
+    "options": [
+      "Wardriving",
+      "Bluejacking",
+      "MAC flooding",
+      "Evil twin"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-032",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Evolving use cases",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two data centers must share the same Layer 2 segments for virtual machine mobility, but they are joined by a routed Layer 3 network. Which technology wraps the Ethernet frames in UDP so they can cross it?",
+    "explanation": "VXLAN encapsulates Layer 2 frames in UDP (port 4789) and identifies segments with a 24-bit VNI, about 16 million of them, so Layer 2 domains can stretch across a routed core. 802.1Q tags only work across Layer 2 links.",
+    "options": [
+      "802.1Q tagging",
+      "NAT64",
+      "VXLAN",
+      "Link aggregation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-033",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Interface counters",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A switch port's CRC error counter climbs steadily, and the user on that port reports slow, unreliable access. What is the most likely cause?",
+    "explanation": "CRC errors mean frames arrived corrupted, which points to physical problems such as bad cables, poor terminations, interference or a duplex mismatch. Address and filtering problems do not corrupt frames.",
+    "options": [
+      "A wrong DNS server in the user's settings",
+      "A DHCP pool that has run out of addresses",
+      "A damaged cable or a poorly made termination",
+      "An access list on the router blocking some of the user's traffic"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-034",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Antennas",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two buildings 400 meters apart need a wireless bridge between them. Which antenna type is the best choice at each end?",
+    "explanation": "Directional antennas such as Yagi, panel or dish antennas focus energy in one direction, giving the gain needed for a point-to-point link. Omnidirectional antennas spread energy all around, wasting it.",
+    "options": [
+      "Omnidirectional antennas on each roof",
+      "Directional antennas aimed at each other",
+      "Dipole antennas laid flat on a desk",
+      "The internal antennas of indoor access points"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-035",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "SNMP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An auditor objects that switches are monitored with SNMPv2c using a community string sent in cleartext. Which change addresses the finding?",
+    "explanation": "SNMPv3 adds per-user authentication and encryption. SNMPv1 and v2c protect access only with a community string that crosses the network in cleartext, however long it is.",
+    "options": [
+      "Move to SNMPv3 with authentication and privacy (encryption)",
+      "Change the community string from public to a longer, random word that is hard to guess",
+      "Allow only SNMP traps and stop all polling",
+      "Move SNMP polling from UDP 161 to TCP 161"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-036",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "TCP and UDP",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two protocols send their traffic over UDP by default? (Choose two.)",
+    "explanation": "DHCP uses UDP 67 and 68, and TFTP uses UDP 69, which is why TFTP has its own simple acknowledgment scheme. SSH (22), SMB (445) and Telnet (23) all run over TCP.",
+    "options": [
+      "SMB",
+      "DHCP",
+      "SSH",
+      "TFTP",
+      "Telnet"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T1-037",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "VLANs and trunking",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Each desk has one switch port. An IP phone plugs into the port and a PC plugs into the phone. The network team wants voice and data on separate VLANs. Which switch feature does this?",
+    "explanation": "A voice VLAN lets one access port carry tagged voice traffic from the phone and untagged data from the PC behind it, so voice can be kept apart and prioritized.",
+    "options": [
+      "A voice VLAN on the access port",
+      "Link aggregation on the access port",
+      "A separate trunk to every desk",
+      "Port mirroring to the phone system"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-038",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Switching issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Minutes after someone connects two wall jacks with a patch cable, the whole floor slows to a crawl, switch CPUs jump, and MAC addresses flap between ports. What is happening?",
+    "explanation": "Joining two switch ports creates a Layer 2 loop. Without spanning tree blocking it (or with protection such as BPDU guard turned off), broadcasts circulate endlessly and MAC tables flap.",
+    "options": [
+      "A switching loop is causing a broadcast storm",
+      "The DHCP pool has run out of addresses",
+      "A DNS server on the floor is returning forged answers to queries",
+      "The internet circuit has high latency"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-039",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Segmentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firewall has three zones: outside, inside, and a screened subnet that holds the public web server. Which policy fits this design?",
+    "explanation": "A screened subnet (formerly a DMZ) lets the internet reach only the published services, and the firewall treats the public servers as less trusted, so a compromised web server cannot open connections freely into the internal network.",
+    "options": [
+      "Allow outside to reach the web server on 443, and block new connections from the screened subnet to inside except specific needed ones",
+      "Block outside from the screened subnet, and allow inside users to reach the web server only through a VPN",
+      "Allow all traffic from the screened subnet to inside, because the web server is a trusted company system",
+      "Allow outside to reach any inside host on 443, and send the web server's traffic through the inside zone"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-040",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A manager asks which hosts used the most WAN bandwidth last week and which applications they used, without storing full packet contents. Which data source fits?",
+    "explanation": "Flow data summarizes each conversation (addresses, ports, protocol, bytes, time), so it shows who talked to whom and how much at a small storage cost. Interface counters show total volume but not who sent it.",
+    "options": [
+      "SNMP interface counters only",
+      "The DHCP lease table",
+      "Full packet captures on the WAN link, kept for a week",
+      "Flow records such as NetFlow or IPFIX"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-041",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Cloud networking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cloud instance has a security group that allows inbound HTTPS. No outbound rule mentions HTTPS replies. Why do the replies still reach clients?",
+    "explanation": "Cloud security groups track connections, so once inbound traffic is allowed the matching return traffic is allowed too. Stateless network ACLs or security lists need explicit rules for both directions.",
+    "options": [
+      "Security groups are stateful, so return traffic for an allowed session is permitted",
+      "The cloud provider's internet gateway rewrites every reply to bypass the rules",
+      "Replies use UDP, which every cloud security group always allows in both directions by design",
+      "Security groups apply only to inbound traffic and never inspect outbound traffic"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-042",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Power over Ethernet",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After eight new PTZ cameras are added to a PoE switch, the last two never power on, although their ports work for a laptop. What is the most likely cause?",
+    "explanation": "Every PoE switch has a total power budget. Once it is used up, new devices are refused power even though the ports still pass data, so the fix is a bigger budget, a PoE+ or PoE++ switch, or a midspan injector.",
+    "options": [
+      "The switch's total PoE power budget is used up",
+      "The cameras' DNS settings point to the wrong server",
+      "The cameras need crossover cables to work",
+      "The ports are in the wrong VLAN for the cameras"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-043",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "IP protocol types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two branch routers need to carry multicast routing updates between them across a provider network that only forwards unicast IPv4. Encryption is not required. Which IP protocol type fits?",
+    "explanation": "GRE (IP protocol 47) wraps other packets, including multicast and routing protocol traffic, inside a unicast IP packet, but it adds no encryption. AH authenticates packets and cannot carry multicast by itself, and ICMP is for error and diagnostic messages.",
+    "options": [
+      "IPsec Authentication Header (AH)",
+      "Generic Routing Encapsulation (GRE)",
+      "User Datagram Protocol (UDP) broadcast",
+      "Internet Control Message Protocol (ICMP)"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-044",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Link aggregation",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Two 10 Gb/s links between a pair of switches are bundled into one logical link with LACP. Which two results does this give? (Choose two.)",
+    "explanation": "Link aggregation adds the members' capacity and survives a member failure. Each flow is hashed onto one member, so one transfer still tops out at 10 Gb/s, and spanning tree sees the bundle as one link, so nothing is blocked.",
+    "options": [
+      "A single file transfer always runs at 20 Gb/s on its own",
+      "Each link must be placed in a different VLAN to work",
+      "Traffic keeps flowing if one of the two physical links fails",
+      "Spanning tree blocks one of the two links to prevent a loop",
+      "More total bandwidth between the switches across many flows"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T1-045",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Access points are set to WPA3-Enterprise so each employee signs in to Wi-Fi with their own directory account. When a laptop connects, where do the access points send its credentials to be checked?",
+    "explanation": "In enterprise mode the access point is the 802.1X authenticator: it relays the client's EAP exchange to a RADIUS server, which checks the credentials against the directory and tells the access point whether to allow the client. Personal mode checks one shared passphrase on the access point itself.",
+    "options": [
+      "To the NTP server that sets the access points' clocks",
+      "To the syslog server that stores the access points' logs",
+      "To the DHCP server for the wireless VLAN",
+      "To a RADIUS server tied to the directory"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-046",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team installs a network analyzer and needs it to see a copy of all traffic entering and leaving the firewall's switch port. What should be configured on the switch?",
+    "explanation": "Port mirroring (SPAN) copies the frames on one or more ports or VLANs to a monitor port. A network TAP does the same job in hardware.",
+    "options": [
+      "Port mirroring to the analyzer's port",
+      "A voice VLAN on the firewall's port",
+      "Port security limiting the analyzer's port to one MAC",
+      "Link aggregation with the firewall"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-047",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "802.1X",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "In an 802.1X wired network, choose the role each device plays.",
+    "explanation": "The supplicant is the client asking for access, the authenticator is the switch or access point that controls the port, and the authentication server, usually RADIUS, checks the credentials and tells the authenticator what to allow.",
+    "rows": [
+      "The employee's laptop",
+      "The access switch",
+      "The RADIUS server"
+    ],
+    "columns": [
+      "Authentication server",
+      "Supplicant",
+      "Authenticator"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-048",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Switching issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user moves to a new desk, plugs in, and gets an address from the guest subnet instead of the finance subnet. Other finance users are fine. What is the likely cause?",
+    "explanation": "The address a host receives depends on the VLAN of its port. The new port is probably assigned to the guest VLAN and needs to be moved to the finance VLAN.",
+    "options": [
+      "The new desk's switch port is in the wrong VLAN",
+      "The building's internet circuit is congested",
+      "The user's laptop has a bad network card",
+      "The finance DHCP scope has a lease time too long"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-049",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Cabling and media",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A campus needs a fiber link of 8 km between two buildings. Which media and transceiver combination fits?",
+    "explanation": "Single-mode fiber has a narrow core and laser optics that carry signals for many kilometers. Multimode suits runs of a few hundred meters, Cat 6a stops at 100 meters, and direct attach cables are only a few meters long.",
+    "options": [
+      "Category 6a twisted pair with 10GBASE-T ports",
+      "Twinaxial direct attach copper cable between switches",
+      "Multimode fiber with short-reach LED or VCSEL optics",
+      "Single-mode fiber with laser-based long-reach optics"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-050",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Fiber issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new fiber link between two switches shows no link light at either end, the transceivers match, and a light meter shows light at the far end of each strand. What is the likely fault?",
+    "explanation": "Each end's transmit must reach the other end's receive. If both strands carry light but neither side links, TX and RX are probably transposed, which is fixed by swapping the strands at one end.",
+    "options": [
+      "The ports need a crossover Ethernet cable",
+      "The transmit and receive strands are swapped",
+      "The two switches use different VLAN numbers on the uplink ports",
+      "The fiber is too short for the transceivers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-051",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Documentation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A new engineer needs a diagram that shows subnets, VLANs, routing and how traffic flows between sites, not where cables physically run. Which diagram is needed?",
+    "explanation": "Logical diagrams show Layer 3 and Layer 2 design: subnets, VLANs, routing and security zones. Physical diagrams and rack diagrams show devices, ports and cable paths.",
+    "options": [
+      "A floor plan with cable drops",
+      "A physical network diagram",
+      "A logical network diagram",
+      "A rack elevation diagram"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-052",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Access control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants its cloud management portal to refuse logins from outside the countries where it operates. Which control fits?",
+    "explanation": "Geofencing allows or denies access based on location, such as the GPS position of a device or the location of a source IP address.",
+    "options": [
+      "Content filtering",
+      "Honeypot",
+      "Geofencing",
+      "Port security"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-053",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Traffic types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A DNS provider announces the same IP address from data centers on several continents, and each client's queries reach whichever site is closest in routing terms. Which traffic type is this?",
+    "explanation": "Anycast assigns one address to many nodes, and routing delivers each packet to the nearest one. Multicast delivers one packet to every subscribed receiver, and broadcast reaches every host on the local segment.",
+    "options": [
+      "Anycast",
+      "Multicast",
+      "Unicast to a single host",
+      "Broadcast"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-054",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Spanning tree",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two switches are connected by two cables for redundancy. Which protocol stops frames from looping endlessly between them?",
+    "explanation": "STP (802.1D, with Rapid STP as 802.1w) elects a root bridge and blocks redundant paths so there is only one active path, preventing broadcast storms. A blocked port starts forwarding if the active path fails.",
+    "options": [
+      "Link Layer Discovery Protocol",
+      "Virtual Router Redundancy Protocol",
+      "Spanning Tree Protocol",
+      "Dynamic Host Configuration Protocol"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-055",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Performance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "VoIP calls sound choppy, with words dropping in and out, although average latency is low. Ping times to the call server vary from 5 ms to 120 ms. What is the main problem?",
+    "explanation": "Jitter is variation in delay. Voice needs packets to arrive at a steady pace, so large swings cause choppy audio even when the average is low. QoS and jitter buffers help.",
+    "options": [
+      "Jitter",
+      "Attenuation",
+      "DNS failure",
+      "Low bandwidth"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-056",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Change management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An engineer wants to change the core switch configuration on Friday afternoon. Under a formal change management process, what must happen first?",
+    "explanation": "Change management requires a documented request with the reason, risk, schedule and rollback plan, approved (often by a change advisory board) before the work is done in an agreed window.",
+    "options": [
+      "Submit a change request with a rollback plan for approval",
+      "Make the change, then record it in the change log afterward",
+      "Tell users by email and make the change right away",
+      "Back up the configuration and make the change at once"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-057",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Physical installation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a three-story building, the main cross-connect and ISP demarcation are in a ground floor room, and each floor has a small wiring closet that links back to it. What is a floor's closet called?",
+    "explanation": "The MDF holds the main cross-connect and usually the service entrance. Each IDF serves one floor or area and connects back to the MDF, usually over fiber.",
+    "options": [
+      "Demarcation point",
+      "Intermediate distribution frame",
+      "Screened subnet",
+      "Main distribution frame"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-058",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "IPv4 addressing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An ISP hands a customer's router the WAN address 100.64.12.9. What does this address tell the customer?",
+    "explanation": "100.64.0.0/10 is reserved for carrier-grade NAT between an ISP and its customers, so the router is behind another layer of NAT and cannot accept inbound connections directly. RFC 1918 covers 10.0.0.0/8, 172.16.0.0/12 and 192.168.0.0/16.",
+    "options": [
+      "It is shared address space for carrier-grade NAT, not a public address",
+      "It is a link-local address the router assigned to itself",
+      "It is a public address that the internet can reach directly",
+      "It is an RFC 1918 private address from the 172.16.0.0/12 block"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-059",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Command-line tools",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Users can reach some internet sites but not one partner's server, and the team wants to see at which router along the path traffic stops. Which command shows this?",
+    "explanation": "Traceroute lists each router hop toward a destination using TTL expiry, so the last hop that answers shows where traffic stops. The others show only local settings, sessions or caches.",
+    "options": [
+      "arp -a",
+      "netstat -an",
+      "traceroute (tracert on Windows)",
+      "ipconfig /all"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-060",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Deception",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security team places a fake server on the network that looks valuable but has no real data, and alerts whenever anyone touches it. What is it called?",
+    "explanation": "A honeypot is a decoy built to attract attackers, so any connection to it is suspicious and can be studied. A group of them is a honeynet.",
+    "options": [
+      "Jump box",
+      "Honeypot",
+      "Proxy server",
+      "Bastion host"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-061",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Change management",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the steps of a typical change management process in order.",
+    "explanation": "A change is requested, its risk and impact are reviewed, it is approved and scheduled, it is carried out in the planned window, and the result is verified and recorded. The rollback plan is ready before work starts.",
+    "options": [
+      "Submit the change request",
+      "Assess the risk and impact",
+      "Get approval for the change",
+      "Implement it in the maintenance window",
+      "Verify the result and document it"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-062",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Encapsulation",
+    "difficulty": 1,
+    "format": "order",
+    "stem": "A web browser sends a request. Put the units of data in the order they are created as the request moves down the OSI model on the sending host.",
+    "explanation": "Each layer adds its own header on the way down: the transport layer turns data into segments, the network layer adds an IP header to make packets, the data link layer adds a header and trailer to make frames, and the physical layer sends bits.",
+    "options": [
+      "Application data",
+      "Segment",
+      "Packet",
+      "Frame",
+      "Bits on the medium"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-063",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "MTU",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A storage team enables 9000-byte jumbo frames on its servers and storage array, and large transfers start failing while small ones work. What should be checked?",
+    "explanation": "Jumbo frames must be supported end to end. A switch port still set to a 1500-byte MTU drops the larger frames (counted as giants), while small frames still pass, which matches the symptom.",
+    "options": [
+      "That the storage VLAN is the native VLAN on each trunk",
+      "That the servers use UDP instead of TCP for storage traffic",
+      "That every switch port in the path also allows the larger MTU",
+      "That spanning tree is disabled on the storage VLAN"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-064",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Performance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A remote site uses a geostationary satellite link with plenty of bandwidth, but interactive applications feel sluggish. Which factor causes this?",
+    "explanation": "Geostationary satellites are about 36,000 km up, so every round trip takes around 600 ms. Bandwidth can be high while latency still makes interactive traffic slow.",
+    "options": [
+      "A duplicate IP address at the site",
+      "High latency from the long signal path",
+      "Too little bandwidth on the link",
+      "Crosstalk between twisted pairs"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-065",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Segmentation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A water utility's SCADA controllers share a flat network with office PCs. What is the most important improvement?",
+    "explanation": "Operational technology such as SCADA and ICS should be segmented from IT networks so malware or attackers on office PCs cannot reach physical process controls. Only the traffic needed should cross the boundary.",
+    "options": [
+      "Move the office PCs onto the same VLAN as the controllers",
+      "Turn off all logging on the controllers to save bandwidth",
+      "Put the industrial control systems on their own segment with tight firewall rules",
+      "Give the SCADA controllers public IP addresses so they can be monitored"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-066",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Remote access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When a WAN failure takes down the production network, engineers still need to reach the core routers' consoles from home. Which design gives them that access?",
+    "explanation": "Out-of-band management uses a separate path, such as a console server with a cellular or separate broadband link, so devices stay reachable when the production network is down.",
+    "options": [
+      "A web interface on each router's LAN address",
+      "In-band SSH to the routers' production interfaces",
+      "A site-to-site VPN that runs over the failed WAN",
+      "Out-of-band management through a console server with its own link"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-067",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Cloud models",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A development team wants to upload code and have the provider run it, with the provider patching the operating system and runtime. The team does not want to manage servers. Which service model fits?",
+    "explanation": "With PaaS the provider runs the operating system, runtime and scaling, and the customer supplies the application. IaaS leaves the operating system to the customer, and SaaS delivers a finished application rather than a place to run code.",
+    "options": [
+      "Software as a service",
+      "Desktop as a service",
+      "Platform as a service",
+      "Infrastructure as a service"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-068",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Port status",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A switch port went into an error-disabled state after a port security violation when someone plugged in an unknown device. Which two steps bring it back properly? (Choose two.)",
+    "explanation": "First deal with the cause, or the port will disable again. Then bounce the port (shutdown, no shutdown), or let an error-disable recovery timer do it, to clear the state.",
+    "options": [
+      "Shut down the port and then enable it again",
+      "Remove or approve the device that caused the violation",
+      "Move the port to the native VLAN",
+      "Change the port's speed to 10 Mb/s",
+      "Replace the switch's power supply"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T1-069",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Ports and protocols",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A firewall log shows many blocked connections from the internet to TCP 445 on internal hosts. Which service were those connections trying to reach?",
+    "explanation": "TCP 445 is SMB, used for Windows file and printer sharing, and it should never be reachable from the internet. HTTPS is 443, syslog is UDP 514 and SQL Server is 1433.",
+    "options": [
+      "Microsoft SQL Server databases",
+      "Syslog message collection",
+      "Server Message Block file sharing",
+      "Secure web traffic over HTTPS"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-070",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Gateway redundancy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Hosts on a VLAN use 10.5.5.1 as their default gateway. Two routers share that address, and if the active router fails the other takes it over within seconds. What provides this?",
+    "explanation": "First hop redundancy protocols give a group of routers a shared virtual IP and virtual MAC address. Hosts keep one gateway setting, and a standby router takes over the virtual address if the active one fails.",
+    "options": [
+      "Link aggregation between the two routers",
+      "A DHCP reservation for the gateway address",
+      "Two default gateways typed on every host by hand, used in turn",
+      "A first hop redundancy protocol such as VRRP or HSRP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-071",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Wireless issues",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Users drop their Wi-Fi connection every time they walk from the east wing to the west wing. Which two causes are most likely? (Choose two.)",
+    "explanation": "Roaming needs overlapping coverage and matching SSID and security settings so clients can move between access points without starting over. Lease times, DNS location and uplink MTU do not cause drops while walking.",
+    "options": [
+      "The switch uplinks use jumbo frames",
+      "A coverage gap between the two wings' access points",
+      "The DHCP lease time is set to eight hours",
+      "The DNS server is in a different building",
+      "The wings' access points use different SSIDs or security settings"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T1-072",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Wireless channels",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A busy office has many access points and users see slow Wi-Fi from co-channel interference. Which two changes help most? (Choose two.)",
+    "explanation": "Spreading neighbors across non-overlapping channels and shrinking cells with lower power both reduce how many radios share one channel. 40 MHz channels in 2.4 GHz leave almost no clean channels, and hiding the SSID does not change the radio traffic.",
+    "options": [
+      "Lower access point transmit power so cells overlap less",
+      "Set every access point to the same channel for roaming",
+      "Assign non-overlapping channels to neighboring access points",
+      "Hide the SSID so fewer clients can find it",
+      "Bond 2.4 GHz channels into 40 MHz wide channels"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T1-073",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Remote access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company's VPN client sends only traffic for corporate subnets through the tunnel, and users' web browsing goes straight to the internet. What is this called?",
+    "explanation": "Split tunneling sends only selected traffic through the VPN, saving bandwidth at headquarters. A full tunnel sends everything through the VPN so corporate security controls inspect it.",
+    "options": [
+      "Full tunnel",
+      "Clientless VPN",
+      "Site-to-site VPN",
+      "Split tunnel"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-074",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Device hardening",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "Which two steps harden a new switch before it goes into service? (Choose two.)",
+    "explanation": "Disabling unused ports and replacing default credentials remove easy ways in. Telnet sends passwords in cleartext, the default community string is widely known, and unused ports belong in an unused VLAN, not the native VLAN.",
+    "options": [
+      "Enable Telnet as a backup management method",
+      "Shut down switch ports that are not in use",
+      "Leave the SNMP community string set to public",
+      "Put every unused port in the native VLAN",
+      "Change the default administrator credentials"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T1-075",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Appliances",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An online store spreads incoming web requests across six identical servers and stops sending requests to any server that fails a health check. Which appliance does this?",
+    "explanation": "A load balancer presents one address to clients, distributes sessions across a pool and removes unhealthy members using health checks. A forward proxy acts for clients going out, not for servers taking requests in.",
+    "options": [
+      "Wireless LAN controller",
+      "Network-attached storage",
+      "Forward proxy",
+      "Load balancer"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-076",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Copper issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A newly terminated Cat 6 cable fails certification for near-end crosstalk. The installer untwisted about 5 cm of each pair to fit the connector. What fixes it?",
+    "explanation": "The twists cancel interference between pairs. Untwisting too much at the termination causes crosstalk, so pairs should stay twisted as close to the connector as possible.",
+    "options": [
+      "Replace the cable with a longer Cat 6 run of exactly the same type and brand",
+      "Set the switch port to half duplex",
+      "Re-terminate it, keeping the pairs twisted up to the connector",
+      "Add an inline coupler to make the run longer"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-077",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Remote access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Administrators may manage network devices only after first connecting to one hardened, closely monitored server in the management network. What is that server called?",
+    "explanation": "A jump box (bastion host) is the single controlled entry point to a management network, so access can be logged and restricted. A honeypot is a decoy meant to attract attackers.",
+    "options": [
+      "A honeypot",
+      "A proxy server",
+      "A domain controller",
+      "A jump box"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-078",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "OSI layers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the OSI model, which layer is responsible for translating data formats, such as character encoding, compression and encryption, so the receiving application can read it?",
+    "explanation": "The presentation layer (Layer 6) handles how data is represented: encoding, compression and encryption. The session layer manages dialogs between hosts, and the application layer is the interface the program uses.",
+    "options": [
+      "Application layer",
+      "Presentation layer",
+      "Transport layer",
+      "Session layer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-079",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Inter-VLAN routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A small office has one router with a single physical link to a switch that carries VLANs 10, 20 and 30. How can the router route between those VLANs?",
+    "explanation": "Router-on-a-stick uses one trunk link and a logical subinterface per VLAN, each with an 802.1Q tag and that VLAN's gateway address. A multilayer switch with SVIs is the other common approach.",
+    "options": [
+      "Give the router's physical interface three default gateways, one per VLAN",
+      "Create a subinterface for each VLAN on the trunked router port",
+      "Enable spanning tree on the router's physical interface",
+      "Assign all three VLANs to one access port on the router"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-080",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Performance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cluster of servers with 10 Gb/s connections all sit behind a single 1 Gb/s uplink, and transfers to other floors are slow at busy times. What is the issue?",
+    "explanation": "A bottleneck is the slowest point in a path, and it limits everything behind it. Upgrading the uplink or aggregating links removes it.",
+    "options": [
+      "The cables are too short",
+      "The servers have duplicate addresses",
+      "The uplink is a bottleneck",
+      "The VLAN tags are wrong"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-081",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A store processes credit card payments, and an assessor checks that the cardholder data network is segmented, encrypted and logged. Which standard is being applied?",
+    "explanation": "The Payment Card Industry Data Security Standard applies to anyone who stores, processes or transmits cardholder data. GDPR covers personal data of people in the EU, and HIPAA covers US health information.",
+    "options": [
+      "PCI DSS",
+      "HIPAA",
+      "ISO 9001",
+      "GDPR"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-082",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "IPv6 addressing",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two statements about stateless address autoconfiguration (SLAAC) are true? (Choose two.)",
+    "explanation": "With SLAAC the router advertises the prefix, and the host adds its own interface ID, so no DHCPv6 server is needed for addressing. IPv6 uses Neighbor Discovery instead of ARP, and 169.254.0.0/16 is IPv4 only.",
+    "options": [
+      "A host uses ARP to learn the network prefix from its router",
+      "A host can get a working IPv6 address without a DHCPv6 server",
+      "A host falls back to a 169.254.0.0/16 address for IPv6",
+      "A host must lease each IPv6 address from a DHCPv6 server first",
+      "A host builds its own IPv6 address from the prefix in a router advertisement"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T1-083",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Wireless standards",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "For each 802.11 standard, choose the frequency band it uses.",
+    "explanation": "802.11a and 802.11ac (Wi-Fi 5) use 5 GHz. 802.11b and 802.11g use 2.4 GHz. 802.11n and 802.11ax can use both bands.",
+    "rows": [
+      "802.11a",
+      "802.11b",
+      "802.11g",
+      "802.11ac"
+    ],
+    "columns": [
+      "2.4 GHz",
+      "5 GHz"
+    ],
+    "correct": [
+      1,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-084",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Cabling and media",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "A data center is choosing media for different links. For each medium, choose the job it suits best.",
+    "explanation": "DAC cables are cheap and low-latency but only a few meters long. Single-mode fiber with laser optics covers kilometers, multimode fiber covers a few hundred meters, and Cat 6a twisted pair is rated to 100 meters.",
+    "rows": [
+      "Twinaxial direct attach copper (DAC)",
+      "Single-mode fiber",
+      "Multimode fiber",
+      "Category 6a twisted pair"
+    ],
+    "columns": [
+      "Inside a building, a few hundred meters",
+      "Server to top-of-rack switch, a few meters",
+      "Between campuses, many kilometers",
+      "Copper to desks, up to 100 meters"
+    ],
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-085",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Tools",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "Match each task to the tool used for it.",
+    "explanation": "A toner traces copper cables, an OTDR measures fiber faults by distance, a protocol analyzer such as Wireshark or tcpdump captures and decodes traffic, and a crimper fixes connectors to cables.",
+    "rows": [
+      "Find which patch panel port a wall jack connects to",
+      "Find the distance to a break in a long fiber run",
+      "Capture and decode packets on a link",
+      "Attach RJ45 connectors to a cable"
+    ],
+    "columns": [
+      "Protocol analyzer",
+      "OTDR",
+      "Toner and probe",
+      "Cable crimper"
+    ],
+    "correct": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-086",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "IP protocol types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A site-to-site tunnel must keep packet contents confidential as well as verify where they came from. Which IPsec protocol provides the encryption?",
+    "explanation": "ESP (IP protocol 50) encrypts the payload and can also authenticate it. AH (protocol 51) only provides integrity and origin authentication, IKE negotiates the keys, and GRE carries traffic without protecting it.",
+    "options": [
+      "Encapsulating Security Payload (ESP)",
+      "Authentication Header (AH)",
+      "Internet Key Exchange (IKE)",
+      "Generic Routing Encapsulation (GRE)"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-087",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Dynamic routing",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each routing protocol, choose how it works.",
+    "explanation": "OSPF shares link-state information so each router builds a full map. BGP is path vector, tracking the list of autonomous systems a route has crossed. EIGRP is an advanced distance vector protocol (sometimes called hybrid).",
+    "rows": [
+      "OSPF",
+      "BGP",
+      "EIGRP"
+    ],
+    "columns": [
+      "Path vector",
+      "Advanced distance vector",
+      "Link state"
+    ],
+    "correct": [
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-088",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Performance",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A 750 MB file is copied over a link that delivers a steady 100 Mb/s of throughput. Ignoring overhead, how many seconds does the copy take? Type the number only.",
+    "explanation": "750 megabytes is 6,000 megabits (750 x 8). At 100 megabits per second that is 6,000 / 100 = 60 seconds. Remember bytes versus bits.",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "NETPLUS-T1-089",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Physical security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Staff often hold the server room door for anyone walking behind them. Which control best stops this tailgating?",
+    "explanation": "An access control vestibule (once called a mantrap) has two doors that do not open together, so only one authenticated person passes at a time. Cameras record the event but do not stop it.",
+    "options": [
+      "A camera that records the corridor for later review",
+      "A longer password policy for the door's badge system and the staff accounts",
+      "A sign on the door asking people not to share entry",
+      "An access control vestibule that admits one person at a time"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T1-090",
+    "section": "netplus",
+    "test": 1,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Disaster recovery",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Three identical firewalls ran for a combined 12,000 hours, and during that time there were 4 failures. What is the mean time between failures in hours? Type the number only.",
+    "explanation": "MTBF is total operating time divided by the number of failures: 12,000 divided by 4 is 3,000 hours. A higher MTBF means more reliable equipment.",
+    "numeric": {
+      "answers": [
+        "3000"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "NETPLUS-T2-001",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "DHCP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Servers in 10.1.1.0/24 use static addresses from .1 to .20, and DHCP serves the rest of the subnet. How do you stop DHCP from handing out .1 to .20?",
+    "explanation": "An exclusion range removes addresses from the pool so they are never offered. Reservations would still hand them out, just to specific MAC addresses.",
+    "options": [
+      "Add DHCP option 3 for those addresses",
+      "Shorten the lease time for the scope",
+      "Add an exclusion range for those addresses",
+      "Add a reservation for each of those addresses"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-002",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Layer 2 attacks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Hosts on a VLAN start sending their internet traffic to an attacker's laptop because their ARP caches map the gateway's IP to the laptop's MAC. Which switch feature prevents this?",
+    "explanation": "ARP poisoning (spoofing) sends forged ARP replies to put the attacker on-path. Dynamic ARP inspection checks ARP messages against trusted bindings, usually from DHCP snooping, and drops forged ones.",
+    "options": [
+      "A first hop redundancy protocol",
+      "Spanning tree root guard",
+      "Jumbo frame support",
+      "Dynamic ARP inspection"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-003",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "OSI layers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A device looks at the destination IP address of each packet, consults a table of networks and sends the packet toward the next hop. At which OSI layer does this device mainly work?",
+    "explanation": "Choosing a path by logical (IP) address is the job of the network layer, Layer 3, which is where routers work. MAC-based forwarding is Layer 2 and port numbers belong to Layer 4.",
+    "options": [
+      "Transport layer",
+      "Network layer",
+      "Data link layer",
+      "Physical layer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-004",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Route selection",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A router has several routes that might match a packet. Put the tests it applies in order, from first to last.",
+    "explanation": "Prefix length decides first, because a more specific route always wins. Among routes to the same prefix from different sources, the lowest administrative distance wins, and among routes from the same protocol, the lowest metric wins.",
+    "options": [
+      "Longest matching prefix",
+      "Lowest administrative distance",
+      "Lowest metric within the routing protocol"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-005",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Filtering issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users can ping a web server and resolve its name, but the HTTPS page times out. A new access list was applied on the router yesterday. What is the most likely cause?",
+    "explanation": "Ping and name resolution working shows routing and DNS are fine, so traffic to the HTTPS port is being filtered. A recent ACL change is the obvious suspect.",
+    "options": [
+      "The users' default gateway is set incorrectly",
+      "The server's DNS A record points to an old address that no longer exists",
+      "The switch port to the server has a duplex mismatch",
+      "The access list allows ICMP but blocks TCP 443 to the server"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-006",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Subnetting",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A branch office has 50 hosts. The engineer gives it the smallest IPv4 subnet that fits them all. How many usable host addresses in that subnet are left over? Type the number only.",
+    "explanation": "A /27 has only 30 usable addresses, so the smallest fit is a /26: 64 addresses, 62 usable after the network and broadcast addresses. 62 minus 50 leaves 12 spare.",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "NETPLUS-T2-007",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Methodology",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "During a WAN outage, a technician does each of these things. Choose the troubleshooting methodology step each one belongs to.",
+    "explanation": "Questioning users and finding recent changes is part of identifying the problem. Choosing a top-to-bottom or bottom-to-top OSI approach belongs to establishing a theory. Preventive measures go with verifying full functionality, and recording findings, actions and outcomes is the last step.",
+    "rows": [
+      "Asks the branch manager what changed since yesterday",
+      "Starts at the physical layer and works up the OSI model",
+      "Adds monitoring so a repeat failure raises an alert",
+      "Records the cause and the fix in the ticket"
+    ],
+    "columns": [
+      "Establish a theory",
+      "Identify the problem",
+      "Verify and prevent",
+      "Document"
+    ],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-008",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Rack installation",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A 42U rack already has 30U of equipment installed. How many 2U servers can still fit in it? Type the number only.",
+    "explanation": "42U minus 30U leaves 12U, and 12U divided by 2U per server is 6 servers. One rack unit is 1.75 inches (44.45 mm) of vertical space.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "NETPLUS-T2-009",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "DHCP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A coffee shop's guest Wi-Fi sees hundreds of different phones a day, and its DHCP pool keeps running out although few people are in the shop at once. Which change helps most?",
+    "explanation": "Short leases return addresses from phones that have left to the pool quickly. Long leases tie addresses up for days after the device is gone.",
+    "options": [
+      "Add a reservation for every phone",
+      "Add DNS servers to the scope",
+      "Shorten the DHCP lease time",
+      "Lengthen the DHCP lease time"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-010",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "DNS attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users typing the bank's correct address are sent to a fake site because a resolver's cache was filled with forged answers. Which technology lets resolvers detect forged records?",
+    "explanation": "DNSSEC signs DNS records so a validating resolver can confirm they came from the zone owner and were not altered, which defeats cache poisoning.",
+    "options": [
+      "SNMPv3",
+      "DHCP snooping",
+      "Port mirroring",
+      "DNSSEC"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-011",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Ports and protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new IP phone system sets up and tears down calls with signaling on TCP and UDP 5060. Which protocol is in use?",
+    "explanation": "SIP signals VoIP calls on 5060, or 5061 when it runs over TLS. The voice itself then flows separately, usually over RTP. SNMP uses 161 and 162, NTP 123 and RDP 3389.",
+    "options": [
+      "Session Initiation Protocol (SIP)",
+      "Network Time Protocol (NTP)",
+      "Simple Network Management Protocol (SNMP)",
+      "Remote Desktop Protocol (RDP)"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-012",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Dynamic routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement describes OSPF?",
+    "explanation": "OSPF is a link-state interior gateway protocol: routers share the topology, each builds a map and runs a shortest path calculation, and cost is derived from interface bandwidth.",
+    "options": [
+      "A gateway redundancy protocol that shares one virtual address",
+      "A distance vector protocol that counts hops and allows at most fifteen",
+      "A path vector protocol used to exchange routes between internet providers and large networks",
+      "A link-state interior protocol that picks paths by a cost based on bandwidth"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-013",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Routing issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Hosts at a branch cannot reach a newly added subnet at headquarters, although everything else works. Traceroute stops at the branch router. What should be checked?",
+    "explanation": "Traceroute dying at the first router means it does not know where to send the traffic. A missing static route or route advertisement for the new subnet is the likely cause.",
+    "options": [
+      "Whether the branch router has a route to the new subnet",
+      "Whether the branch switch has a voice VLAN",
+      "Whether the hosts' cables are under 100 meters",
+      "Whether the hosts have the right DNS server"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-014",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "DNS",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The name shop.example.com must always point to whatever host name the hosting company gives the store, store-abc.hostco.net. Which record is used?",
+    "explanation": "A CNAME makes one name an alias of another, so when the hosting company changes the address behind its name, the alias follows. NS names a zone's name servers and SOA holds its settings.",
+    "options": [
+      "NS",
+      "MX",
+      "SOA",
+      "CNAME"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-015",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Appliances",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A school wants every student web request to go through one device that caches common pages and blocks categories of sites before the request leaves the network. Which device fits?",
+    "explanation": "A forward proxy sits between internal clients and the internet, making requests on their behalf so it can cache content and enforce filtering. A reverse proxy does the opposite, fronting servers for outside clients.",
+    "options": [
+      "Layer 2 switch",
+      "Intrusion detection sensor",
+      "Reverse proxy server",
+      "Forward proxy server"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-016",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Methodology",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A ticket says the accounting team cannot print. What should a technician do before forming a theory of the cause?",
+    "explanation": "The first step is identifying the problem: gather information, question users, identify symptoms, find recent changes, duplicate the problem if possible and handle multiple problems one at a time.",
+    "options": [
+      "Reboot every switch on the accounting floor",
+      "Replace the printer's network cable and toner cartridge straight away",
+      "Escalate the ticket to the printer vendor",
+      "Gather information, question users and find out what changed"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-017",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Denial of service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company's website goes down under traffic from tens of thousands of infected devices around the world. What is the attack, and what helps most?",
+    "explanation": "A distributed denial of service attack uses a botnet to overwhelm a target. On-site equipment can be swamped, so ISPs or cloud mitigation services filter the traffic before it reaches the site.",
+    "options": [
+      "A VLAN hopping attack, helped most by changing the native VLAN",
+      "An evil twin attack, helped most by WPA3 on the guest network",
+      "A MAC flooding attack, helped most by port security on the switch port of the web server",
+      "A DDoS attack, helped most by upstream scrubbing or a mitigation service"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-018",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "DNS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To prove ownership of a domain to a cloud service and publish its sender policy for email, an administrator adds text strings to the zone. Which record type holds them?",
+    "explanation": "TXT records hold free text, used for SPF, DKIM, DMARC and domain verification codes. PTR is for reverse lookups and AAAA holds IPv6 addresses.",
+    "options": [
+      "PTR",
+      "AAAA",
+      "TXT",
+      "CNAME"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-019",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Guest networks",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A hotel's guest Wi-Fi shows a web page where guests must accept the terms of use before they can browse. What is that page called?",
+    "explanation": "A captive portal intercepts a new client's web traffic and shows a sign-in or terms page before granting access. It is common on guest networks, which should also be isolated from internal networks.",
+    "options": [
+      "A site survey",
+      "A RADIUS server",
+      "A preshared key",
+      "A captive portal"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-020",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Traffic types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A training room streams one live video feed. The sender transmits each packet once, and only the PCs that have joined the group receive it. Which traffic type is described?",
+    "explanation": "Multicast sends one copy to a group address (224.0.0.0/4 in IPv4), and only hosts that join the group process it. Broadcast would interrupt every host on the segment, and unicast would need one stream per viewer.",
+    "options": [
+      "Anycast",
+      "Multicast",
+      "Unicast",
+      "Broadcast"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-021",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "NAT",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two hundred office PCs with private addresses all reach the internet through one public IPv4 address on the firewall. Which feature keeps their sessions apart?",
+    "explanation": "PAT (NAT overload) maps many private addresses to one public address and tracks each session by a unique source port. Static NAT maps one private address to one public address.",
+    "options": [
+      "Port address translation",
+      "Proxy ARP on the firewall",
+      "Network address translation 64",
+      "Static one-to-one NAT"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-022",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Interface issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A server link is slow, and the switch shows late collisions on the port while the server shows none. One side is set to full duplex and the other auto-negotiated half duplex. What fixes it?",
+    "explanation": "A duplex mismatch causes late collisions on the half duplex side, CRC errors and runts on the full duplex side, and poor throughput. Setting both ends the same, usually both to auto, fixes it.",
+    "options": [
+      "Configure both ends with matching speed and duplex",
+      "Add a second default gateway on the server for the busy periods",
+      "Replace the server with a faster one",
+      "Move the server to the native VLAN"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-023",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Evolving use cases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company already buys SD-WAN from its carrier. It now wants only the cloud-delivered security pieces, a secure web gateway, CASB and zero trust network access, without changing its WAN. What is this security-only set of services called?",
+    "explanation": "SSE is the security half of SASE: cloud-delivered SWG, CASB and ZTNA close to the user. SASE adds the SD-WAN networking part, which this company already has.",
+    "options": [
+      "Network function virtualization (NFV)",
+      "Software-defined networking (SDN)",
+      "Security service edge (SSE)",
+      "Virtual extensible LAN (VXLAN)"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-024",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician's theory was that a bad patch cable caused an outage, but a new cable does not fix it. What should happen next?",
+    "explanation": "If testing does not confirm the theory, the methodology goes back to establishing a new theory, or escalates if the problem is beyond the technician's scope.",
+    "options": [
+      "Implement preventive measures",
+      "Verify full system functionality",
+      "Establish a new theory or escalate",
+      "Document the bad cable as the cause"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-025",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Disaster recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The business says the payroll system must be back in service within four hours of any outage. Which metric is this?",
+    "explanation": "RTO is the longest acceptable time to restore a service after a disruption. RPO is about how much data may be lost.",
+    "options": [
+      "Service level of the backup",
+      "Mean time between failures",
+      "Recovery time objective",
+      "Recovery point objective"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-026",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "NAC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before a laptop gets full network access, the network checks that its antivirus is running and its patches are current, and puts it in a remediation VLAN if not. What is this?",
+    "explanation": "NAC can check a device's health (posture) as well as its identity, then grant full access, limited access or quarantine depending on the result.",
+    "options": [
+      "Port mirroring to an intrusion detection system",
+      "MAC filtering on the access switch ports",
+      "Network access control with posture assessment",
+      "Geofencing based on the laptop's location"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-027",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "TCP and UDP",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each protocol, choose the transport it uses by default.",
+    "explanation": "SSH (22) and SMTP (25) need reliable, ordered delivery, so they use TCP. NTP (123), SNMP (161) and traditional syslog (514) send small messages over UDP, where a lost message costs little. Syslog can also run over TCP or TLS when configured.",
+    "rows": [
+      "SSH",
+      "NTP",
+      "SMTP",
+      "SNMP polling",
+      "Syslog"
+    ],
+    "columns": [
+      "TCP",
+      "UDP"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-028",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Speed and duplex",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server's NIC is set to 1 Gb/s full duplex by hand, and the switch port is left on autonegotiation. What is the best practice?",
+    "explanation": "When one side is fixed, the autonegotiating side often falls back to half duplex, causing a duplex mismatch. Configuring both ends the same way avoids that.",
+    "options": [
+      "Set the switch port to half duplex to avoid collisions",
+      "Disable spanning tree on the port to speed up the link",
+      "Set both ends the same way, either both auto or both fixed",
+      "Leave it, because autonegotiation always matches a fixed peer"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-029",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Performance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Every night during backups, a WAN interface shows output drops climbing, and remote users report lost packets. What is happening?",
+    "explanation": "Output drops mean the interface queue filled up because more traffic arrived than the link could send. Schedule backups differently, add bandwidth or use QoS to protect important traffic.",
+    "options": [
+      "The DNS server is overloaded by the name lookups from the backup jobs",
+      "The link is congested and queues are overflowing",
+      "The WAN cable has been crimped incorrectly",
+      "The routers are using the wrong VLAN tags"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-030",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Disaster recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A trading firm needs a recovery site that can take over within minutes, with data kept current by real-time replication. Which site type fits?",
+    "explanation": "A hot site runs equipment and receives replicated data continuously, so it can take over almost immediately. It is the most expensive option.",
+    "options": [
+      "Cold site",
+      "Backup tape vault",
+      "Warm site",
+      "Hot site"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-031",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Access control",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A help desk technician can reset user passwords but cannot change firewall rules, because rights are granted by job title. Which model is this?",
+    "explanation": "Role-based access control gives permissions to roles, and users get them through their role. Combined with least privilege, each role has only the access the job needs.",
+    "options": [
+      "Role-based access control",
+      "Discretionary access control",
+      "Rule-based time-of-day control",
+      "Mandatory access control"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-032",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Cabling and media",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server room needs 10GBASE-T copper runs of up to 90 meters. Which is the lowest cable category that supports 10 Gb/s over that full distance?",
+    "explanation": "Cat 6a is rated for 10 Gb/s up to 100 meters. Cat 6 can carry 10 Gb/s only on much shorter runs (about 55 meters), and Cat 5e is rated for 1 Gb/s.",
+    "options": [
+      "Category 6a",
+      "Category 3",
+      "Category 6",
+      "Category 5e"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-033",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Cable tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A contractor must prove that newly installed Cat 6a runs meet the category's performance standards for the building owner. Which tool is used?",
+    "explanation": "A certifier measures performance such as attenuation, crosstalk and return loss against category standards and produces a report. A continuity tester shows only wiring and opens.",
+    "options": [
+      "A toner probe",
+      "A punchdown tool",
+      "A basic continuity tester",
+      "A cable certifier"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-034",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Wireless terms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ten access points across a campus broadcast the same network name so laptops can roam between them. What is the term for that set of access points, and what tells the individual radios apart?",
+    "explanation": "Several access points sharing one SSID form an extended service set (ESS, the ESSID). Each radio has its own BSSID, normally derived from its MAC address, which clients use to tell them apart.",
+    "options": [
+      "A basic service set, told apart by each radio's SSID",
+      "An ad hoc network, told apart by each client's IP",
+      "An extended service set, told apart by each radio's BSSID",
+      "A mesh network, told apart by each radio's channel"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-035",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Time services",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Industrial controllers and a 5G radio network need clocks synchronized to well under a microsecond, much tighter than the network's NTP servers achieve. Which protocol is designed for this?",
+    "explanation": "PTP (IEEE 1588) uses hardware timestamping in network devices to reach sub-microsecond accuracy. NTP usually gives millisecond-level accuracy, and NTS adds security to NTP, not precision.",
+    "options": [
+      "Simple Network Management Protocol",
+      "Network Time Security",
+      "Precision Time Protocol",
+      "Dynamic Host Configuration Protocol"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-036",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Ports and protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application server cannot connect to its Microsoft SQL Server database across a new firewall. Which port should the administrator check first?",
+    "explanation": "Microsoft SQL Server listens on TCP 1433 by default. 3306 is MySQL, 389 is LDAP and UDP 69 is TFTP.",
+    "options": [
+      "UDP 69",
+      "TCP 3306",
+      "TCP 389",
+      "TCP 1433"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-037",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Static routing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A branch has one router with a single link to headquarters, and all traffic for other networks goes there. Which simple route covers every destination the branch does not know?",
+    "explanation": "A default route, 0.0.0.0/0, matches any destination without a more specific route, so it is the gateway of last resort for a stub branch with one exit.",
+    "options": [
+      "A host route to 255.255.255.255/32",
+      "A default route to 0.0.0.0/0",
+      "A route to 127.0.0.0/8",
+      "A route to 169.254.0.0/16"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-038",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Wireless issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Every day around noon, 2.4 GHz Wi-Fi in the break room becomes unusable, while 5 GHz clients are fine. What is the likely cause?",
+    "explanation": "Microwave ovens leak energy near 2.4 GHz and can swamp nearby Wi-Fi on that band. Moving clients to 5 GHz or 6 GHz avoids it.",
+    "options": [
+      "DHCP scope exhaustion at lunchtime",
+      "Expired certificates on the access points that renew at midday",
+      "Interference from microwave ovens in the break room",
+      "A routing loop that appears at noon"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-039",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Authentication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Employees sign in once with the company identity provider and are then let into several outside web applications, which trust signed assertions from that provider. Which standard is typically used?",
+    "explanation": "SAML passes signed XML assertions from an identity provider to service providers, enabling web single sign-on across organizations. TACACS+ is for device administration.",
+    "options": [
+      "SAML",
+      "Syslog",
+      "SNMP",
+      "TACACS+"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-040",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Time services",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An organization worries that attackers could spoof NTP replies and shift device clocks. Which option authenticates time servers using TLS-based key exchange?",
+    "explanation": "NTS adds a TLS-based key exchange and authentication to NTP, so clients can verify that time replies come from the real server and were not changed.",
+    "options": [
+      "Network Time Security",
+      "SNMPv2c with a community string",
+      "Precision Time Protocol",
+      "Simple Network Time Protocol"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-041",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Cabling and media",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A building inspector rejects patch cable laid in the return-air space above a ceiling because its jacket gives off thick, toxic smoke when it burns. Which jacket rating should replace it?",
+    "explanation": "Plenum-rated jackets resist fire and give off less smoke and toxic gas, which matters in air-handling spaces. Riser cable is for vertical runs between floors, and direct burial cable is for underground runs.",
+    "options": [
+      "Outdoor direct burial",
+      "Plenum (CMP)",
+      "General purpose (CM)",
+      "Riser (CMR)"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-042",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Fiber tools",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 3-meter fiber patch cord is suspected of having a crack. Which tool shows the break by making red light leak out of it?",
+    "explanation": "A visual fault locator shines a bright red laser into the fiber, and light escapes visibly at breaks or tight bends, which is ideal for short cords. An OTDR suits long runs.",
+    "options": [
+      "Spectrum analyzer",
+      "Tone generator",
+      "Optical time-domain reflectometer",
+      "Visual fault locator"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-043",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "TCP and UDP",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two features does TCP provide that UDP does not? (Choose two.)",
+    "explanation": "TCP is connection-oriented: the three-way handshake sets up the session, and sequencing with acknowledgments lets it detect and resend lost segments. Both TCP and UDP use port numbers, UDP has the smaller header, and TCP cannot broadcast.",
+    "options": [
+      "Sequence numbers and acknowledgments so lost data is resent",
+      "A handshake that sets up the connection before data is sent",
+      "A smaller header that adds less overhead to each message",
+      "Port numbers that identify the sending and receiving application",
+      "Delivery of one datagram to every host on the local subnet"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T2-044",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "VLANs and trunking",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An audit flags that the native VLAN on every trunk is VLAN 1, which also carries user traffic. What is the usual fix?",
+    "explanation": "Moving the native VLAN to an unused VLAN, and keeping user traffic off VLAN 1, blocks double-tagging VLAN hopping and keeps untagged frames from landing in a user VLAN.",
+    "options": [
+      "Turn off spanning tree on the trunk links",
+      "Convert every trunk into an access port in VLAN 1",
+      "Set the native VLAN to an unused VLAN that carries no users",
+      "Remove all VLAN tags from the trunks between switches so frames are never tagged"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-045",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Wireless architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company has 60 access points and wants to push settings, firmware and channel plans to all of them from one place. Which design fits?",
+    "explanation": "Lightweight (controller-based) access points take their configuration from a wireless LAN controller, on site or in the cloud, which manages the whole fleet. Autonomous access points each hold their own settings.",
+    "options": [
+      "An ad hoc network between the users' laptops",
+      "Wireless repeaters placed between every pair of access points in the building",
+      "Lightweight access points managed by a wireless LAN controller",
+      "Autonomous access points each configured on its own"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-046",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Monitoring",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why does a network team record normal utilization, latency and error rates during a typical week?",
+    "explanation": "A baseline shows what normal looks like, so unusual spikes, slowdowns or error rates stand out and alert thresholds can be set sensibly.",
+    "options": [
+      "To set the DHCP lease time for the next week",
+      "To create a baseline that later readings can be compared against",
+      "To decide which VLAN is the native VLAN on trunks",
+      "To meet a rule that all interface counters be erased at the end of each month"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-047",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Authentication",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which login is an example of multifactor authentication?",
+    "explanation": "Multifactor means factors of different types, such as something you know and something you have. A password and a security question are both things you know.",
+    "options": [
+      "A password plus a security question answer",
+      "A username plus a long passphrase",
+      "Two different passwords typed one after another",
+      "A password plus a code from a hardware token"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-048",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Wireless issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A laptop at the far end of a warehouse shows a signal of -82 dBm and connects at very low data rates. What is the best fix?",
+    "explanation": "-82 dBm is a weak signal (closer to zero is stronger), so the client drops to slow data rates or loses connection. More coverage is the fix, guided by a site survey.",
+    "options": [
+      "Turn on jumbo frames on the access point and on the switch port it connects to",
+      "Raise the laptop's DHCP lease time",
+      "Change the laptop's DNS server address",
+      "Add or move an access point so that area has stronger signal"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-049",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "IPv6",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A mobile network gives its phones IPv6 addresses only, but many websites still have only IPv4 addresses. Which technology lets those phones reach the IPv4-only sites?",
+    "explanation": "NAT64 translates between IPv6 clients and IPv4 servers, and DNS64 makes up IPv6 addresses for IPv4-only names so the phones send traffic to the translator. Dual stack would need IPv4 addresses on the phones, which this network avoids.",
+    "options": [
+      "NAT64 with DNS64",
+      "A 6to4 tunnel between the sites",
+      "Dual stack on every phone",
+      "Link-local addressing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-050",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Copper issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A copper Ethernet run from an IDF to a far office is 120 meters, and the link drops in and out. What is the most likely cause?",
+    "explanation": "Twisted pair Ethernet is rated for 100 meters. Beyond that the signal weakens too much, causing errors and drops. Add a switch closer to the office or use fiber.",
+    "options": [
+      "A duplicate IP address on the office PC and its printer",
+      "Attenuation, because the run is longer than 100 meters",
+      "A DHCP lease time that is too long",
+      "A missing DNS record for the office PC"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-051",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security team wants logs from firewalls, servers and switches collected in one place, correlated, and turned into alerts when patterns suggest an attack. Which system fits?",
+    "explanation": "A SIEM aggregates logs from many sources, normalizes and correlates them, and alerts on suspicious patterns. A plain syslog collector stores logs but does not correlate them.",
+    "options": [
+      "Security information and event management (SIEM)",
+      "Simple Network Management Protocol (SNMP)",
+      "IP address management (IPAM)",
+      "Network Time Protocol (NTP)"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-052",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Filtering",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A school must block students from reaching gambling and adult websites while allowing the rest of the web. Which control fits?",
+    "explanation": "URL and content filtering on a firewall, proxy or cloud service blocks sites by category or address. The other options work at Layer 2 and do not see web addresses.",
+    "options": [
+      "DHCP snooping on the access layer",
+      "An 802.1Q trunk to the firewall",
+      "URL and content filtering",
+      "Port security on the switches"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-053",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "OSI layers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A media converter turns electrical signals from a copper port into pulses of light for a fiber run, without reading any addresses. At which OSI layer does it work?",
+    "explanation": "Converting signals between media without looking at frames or addresses is a Layer 1 function, the same layer as cables, connectors, transceivers and repeaters.",
+    "options": [
+      "Data link layer",
+      "Physical layer",
+      "Presentation layer",
+      "Network layer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-054",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "VLANs and trunking",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why does a network team put accounting PCs and lobby kiosks in different VLANs on the same switch?",
+    "explanation": "A VLAN is a separate broadcast domain. Traffic between VLANs has to pass through a router or Layer 3 switch, where it can be filtered.",
+    "options": [
+      "VLANs remove the need for any default gateway",
+      "VLANs encrypt traffic between ports on the switch",
+      "VLANs give every port twice as much bandwidth",
+      "Each VLAN is its own broadcast domain, kept apart at Layer 2"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-055",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Performance",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A link is sold as 1 Gb/s, but a file transfer measures 650 Mb/s. Which term describes the 650 Mb/s figure?",
+    "explanation": "Bandwidth is a link's capacity, and throughput is the data actually delivered, which is lower because of overhead, congestion and the devices involved.",
+    "options": [
+      "Bandwidth",
+      "Latency",
+      "Throughput",
+      "Jitter"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-056",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Documentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two engineers keep giving out the same static addresses, causing conflicts. Which tool would track which addresses are assigned and to what?",
+    "explanation": "IPAM software tracks subnets, assignments, DHCP scopes and DNS records in one place, preventing duplicate assignments. It often pulls data straight from DHCP and DNS servers.",
+    "options": [
+      "IP address management (IPAM)",
+      "A cable certifier",
+      "A wireless survey tool",
+      "A protocol analyzer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-057",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Physical installation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server room puts its racks in rows so that equipment fronts face one aisle and backs face the next. Why?",
+    "explanation": "Hot aisle and cold aisle layouts draw cool air in at the front and push hot air out the back into a separate aisle, so equipment does not breathe its neighbors' exhaust. Switch port-side intake or exhaust must match the rack's direction.",
+    "options": [
+      "To keep every rack on the same VLAN",
+      "To let every rack share one power supply",
+      "To make cable runs from each rack shorter",
+      "To keep cool intake air apart from hot exhaust air"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-058",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Cloud models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A manufacturer runs its ERP system on servers it owns and uses a public provider's object storage for off-site backups, with both linked by a VPN and managed as one environment. Which deployment model is this?",
+    "explanation": "A hybrid cloud combines private infrastructure with public cloud resources that work together. A community cloud is shared by several organizations with common needs.",
+    "options": [
+      "Community cloud",
+      "Private cloud",
+      "Hybrid cloud",
+      "Multitenant public cloud"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-059",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Transceivers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new 10 Gb/s link never comes up. One end has a single-mode long-reach SFP+ and the other a multimode short-reach SFP+, on the same fiber. What is the problem?",
+    "explanation": "Both ends must use matching transceiver types, wavelengths and fiber type. A single-mode and a multimode optic on one link will not work together.",
+    "options": [
+      "The transceivers do not match each other or the fiber",
+      "The fiber run needs a crossover adapter in the middle",
+      "The switch ports are in different spanning tree states",
+      "The switches need jumbo frames for 10 Gb/s links"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-060",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Certificates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Every browser warns that the connection is not private when admins open a switch's HTTPS management page, because the switch uses the certificate it generated for itself. What is the right fix?",
+    "explanation": "A self-signed certificate is not chained to a trusted root, so browsers cannot verify it. A certificate from the company's internal CA or a public CA removes the warning without dropping encryption.",
+    "options": [
+      "Tell admins to always click through the warning",
+      "Switch the management page to plain HTTP on port 80 so no certificate is needed at all",
+      "Install a certificate issued by a certificate authority the browsers trust",
+      "Turn off TLS 1.3 on the switch's web server"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-061",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Documentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before installing access points in a new office, an engineer walks the floor measuring signal strength and produces a color map of coverage. What is this?",
+    "explanation": "A site survey measures RF signal and interference, and the heat map shows strong and weak coverage so access points can be placed well. Surveys are repeated after installation to confirm coverage.",
+    "options": [
+      "A rack diagram of the IDF",
+      "A logical diagram of the WLAN",
+      "An asset inventory of radios",
+      "A wireless site survey with a heat map"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-062",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "IP protocol types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician says ping does not work because the destination has no service listening on a port. Why is this reasoning wrong?",
+    "explanation": "ICMP is its own IP protocol (protocol 1) and carries echo request and echo reply messages without ports. A host can answer ping with no services running, and a firewall can block ping while services still work.",
+    "options": [
+      "Ping runs at Layer 2 and never reaches an IP stack at all",
+      "Ping uses ICMP echo messages, which have no port numbers",
+      "Ping always uses TCP port 7, which every host leaves open",
+      "Ping uses UDP port 53, which only DNS servers answer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-063",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Static routing",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two statements about static routes are true? (Choose two.)",
+    "explanation": "Static routes cost nothing to run, but they do not react to topology changes unless someone edits them. Their default administrative distance is 1, lower than any dynamic protocol, and they are not shared unless redistributed.",
+    "options": [
+      "They must be changed by hand when the topology changes",
+      "They add no routing protocol traffic or CPU load",
+      "They are advertised to neighbors automatically",
+      "They have a higher default administrative distance than OSPF",
+      "They adapt on their own when a remote link goes down"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T2-064",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "DNS issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user can ping 8.8.8.8 successfully but cannot open any website by name. What is the most likely problem?",
+    "explanation": "Reaching a public IP shows the gateway, cabling and routing work. Failing only by name points to DNS: check the configured servers with ipconfig and test with nslookup or dig.",
+    "options": [
+      "The cable, which must be damaged somewhere near the user's wall jack",
+      "Name resolution, such as a wrong or unreachable DNS server",
+      "The switch port, which must be in the wrong VLAN",
+      "The default gateway, which must be set incorrectly"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-065",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Segmentation",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A hospital adds hundreds of IoT devices such as smart TVs and sensors. Which two steps reduce the risk they bring? (Choose two.)",
+    "explanation": "IoT devices are often hard to patch, so isolating them and allowing only the flows they need limits what an attacker can reach through one of them.",
+    "options": [
+      "Allow them only the traffic they need to reach their servers",
+      "Join them to the same VLAN as the clinical workstations",
+      "Give each device a public IP address for easy updates",
+      "Turn off the firewall between the IoT and user networks",
+      "Place the IoT devices on their own VLAN or segment"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T2-066",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Configuration management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team keeps an approved standard configuration for each switch model and checks running configurations against it to spot unauthorized changes. What is the standard configuration called?",
+    "explanation": "A baseline or golden configuration is the approved template. Comparing devices against it detects configuration drift, while backups record what the device had, approved or not.",
+    "options": [
+      "A default factory configuration",
+      "A baseline (golden) configuration",
+      "A backup of yesterday's configuration",
+      "A startup configuration on flash"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-067",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Subnetting",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A route covers 10.20.0.0/22. Which host address falls inside that network?",
+    "explanation": "A /22 spans four /24 blocks, so 10.20.0.0/22 covers 10.20.0.0 through 10.20.3.255. 10.20.4.1 starts the next /22.",
+    "options": [
+      "10.21.0.5",
+      "10.20.3.200",
+      "10.20.8.9",
+      "10.20.4.1"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-068",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Interface counters",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "On a link between a storage server and a switch, the switch interface shows a growing count of giants, frames larger than the port allows. What is the likely cause?",
+    "explanation": "Giants are frames larger than the interface MTU, which usually means jumbo frames are on at one end and not the other. Runts, frames that are too small, usually point to collisions or bad hardware.",
+    "options": [
+      "The server sends jumbo frames but the switch port MTU is 1500",
+      "The switch port is in the wrong VLAN for the storage network",
+      "The cable is longer than 100 meters",
+      "The server's DHCP lease expired"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-069",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Ports and protocols",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Routers and servers synchronize their clocks with a time server so that log timestamps line up. Which UDP port does Network Time Protocol use? Type the number only.",
+    "explanation": "NTP uses UDP 123 for both client and server. Accurate, matching clocks matter for log correlation, certificates and authentication.",
+    "numeric": {
+      "answers": [
+        "123"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "NETPLUS-T2-070",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Spanning tree",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does spanning tree choose its root bridge?",
+    "explanation": "The bridge ID is the priority plus the MAC address, and the lowest wins. Administrators set a low priority on the switch they want as root instead of leaving it to the lowest MAC.",
+    "options": [
+      "The switch with the most ports wins",
+      "The switch that booted first wins",
+      "The switch with the highest IP address wins",
+      "The switch with the lowest bridge ID wins"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-071",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Addressing issues",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each symptom to its most likely cause.",
+    "explanation": "A bad gateway stops only remote traffic, APIPA means no DHCP answer arrived, and two hosts sharing one address knock each other off as ARP caches update.",
+    "rows": [
+      "A host reaches local hosts but nothing remote",
+      "A host shows a 169.254.x.x address",
+      "Two hosts take turns losing connectivity"
+    ],
+    "columns": [
+      "Duplicate IP address",
+      "Wrong default gateway",
+      "No DHCP server reachable"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-072",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Power",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A site has a diesel generator that takes about 30 seconds to start after a power cut. What keeps the network running during those seconds?",
+    "explanation": "A UPS supplies battery power instantly until the generator comes up. A PDU only distributes power to equipment in the rack, and a surge protector does nothing when power is lost.",
+    "options": [
+      "An uninterruptible power supply",
+      "A power distribution unit",
+      "A second circuit on the same panel",
+      "A surge protector"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-073",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Life cycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vendor announces that a firewall model has reached end of support and will receive no more security patches. What should the network team do?",
+    "explanation": "Once a device is past end of support, new vulnerabilities will not be fixed, so it should be budgeted for replacement and decommissioned properly, including wiping its configuration.",
+    "options": [
+      "Plan to replace the firewall before it is left unpatched",
+      "Disable its management interface and keep it in use",
+      "Keep it in service, since firewalls do not need security patches once they are configured",
+      "Turn off logging so the firewall uses less memory"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-074",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Encryption",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which protects data in transit rather than data at rest?",
+    "explanation": "TLS encrypts data as it crosses the network. Disk, database and backup encryption protect stored data, which is data at rest.",
+    "options": [
+      "TLS on a web application's connections",
+      "An encrypted database file on a server",
+      "Full disk encryption on a laptop",
+      "An encrypted backup tape in storage"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-075",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Appliances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A provider replaces dedicated firewall and router boxes with software versions that run as virtual machines on standard servers. What is this approach called?",
+    "explanation": "NFV runs network functions such as routing, firewalling and load balancing as software on general-purpose hardware, so they can be deployed and scaled like other virtual machines.",
+    "options": [
+      "Zero-touch provisioning",
+      "Spanning tree virtualization",
+      "Network function virtualization",
+      "Software-defined storage"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-076",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Wireless tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users in one corner of an office have poor Wi-Fi, and the engineer suspects neighboring businesses' access points. Which tool shows the nearby networks, their channels and signal strengths?",
+    "explanation": "A Wi-Fi analyzer lists SSIDs, channels, signal strength and noise, showing channel overlap and interference. A spectrum analyzer goes further, showing non-Wi-Fi interference too.",
+    "options": [
+      "A loopback adapter",
+      "A cable certifier",
+      "A toner probe",
+      "A Wi-Fi analyzer"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-077",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Disaster recovery",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each description to its metric.",
+    "explanation": "MTTR and MTBF describe how equipment behaves: how long repairs take and how often failures happen. RTO and RPO are business targets for recovery time and data loss.",
+    "rows": [
+      "The average time to repair a failed device",
+      "The average running time between failures",
+      "The longest time a service may stay down",
+      "The most data, in time, that may be lost"
+    ],
+    "columns": [
+      "RPO",
+      "RTO",
+      "MTTR",
+      "MTBF"
+    ],
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-078",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "TCP and UDP",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A capture shows a client send a TCP SYN to a server on port 8443, and the server immediately replies with a TCP RST. What is the most likely explanation?",
+    "explanation": "A reachable host answers a SYN to a closed port with a reset. A silent drop by a firewall would produce no reply at all, and a cabling or gateway fault would stop the server from answering anything.",
+    "options": [
+      "A firewall between them silently dropped the SYN",
+      "The server's network cable is unplugged or damaged",
+      "The client used the wrong default gateway for the route",
+      "No application is listening on port 8443 on that server"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-079",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Inter-VLAN routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Layer 3 switch must route between VLAN 10 and VLAN 20 for hosts connected to it. What should be configured on the switch as each VLAN's gateway?",
+    "explanation": "A switched virtual interface (SVI) is a logical Layer 3 interface for a VLAN. Give it an IP address and enable routing, and it becomes the gateway for hosts in that VLAN.",
+    "options": [
+      "A trunk port to each host",
+      "A switched virtual interface for each VLAN",
+      "A physical routed port for every host",
+      "A loopback interface in each VLAN"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-080",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Wireless issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At an all-hands meeting, 300 people in one hall connect to the two access points there and the Wi-Fi becomes very slow although signal is strong. What is the main cause?",
+    "explanation": "Wi-Fi is shared airtime, so hundreds of clients on two radios leave little for each one. Plan for density with more access points, smaller cells and 5 or 6 GHz.",
+    "options": [
+      "Too many clients sharing too few access points",
+      "A broken fiber link to the IDF",
+      "Interference from fluorescent lights in the hall",
+      "A DNS server outage during the meeting"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-081",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Access control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team limits each switch port to a list of allowed MAC addresses and believes this fully stops unauthorized devices. Why is that a weak assumption?",
+    "explanation": "An attacker who sees an allowed MAC address can configure the same address on their own device. MAC filtering is a basic layer; 802.1X authentication is much stronger.",
+    "options": [
+      "MAC addresses change every time a device renews its DHCP lease",
+      "MAC filtering works only on fiber ports, not copper ports",
+      "MAC addresses can easily be copied and spoofed by another device",
+      "MAC filtering also blocks the switch from forwarding any broadcast frames at all"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-082",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "SNMP",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two statements about SNMP traps are true? (Choose two.)",
+    "explanation": "A trap is an unsolicited message from the agent to the manager, sent to UDP 162. Polling (get and set) goes to the agent on UDP 161. Traps are not acknowledged, and only SNMPv3 encrypts.",
+    "options": [
+      "The manager polls the device for them on UDP port 161",
+      "The agent on the device sends them without being asked",
+      "They are always sent over TCP so they are never lost",
+      "They are sent to the manager on UDP port 162",
+      "SNMPv2c encrypts them with the community string"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T2-083",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Environmental factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data center wants fire suppression that will not damage running servers with water. Which type is usually chosen?",
+    "explanation": "Clean agent systems put out fires with gas and leave no residue, so electronics survive. Wet pipe sprinklers hold water in the pipes and would soak the equipment.",
+    "options": [
+      "A clean agent gas system",
+      "A wet pipe sprinkler system",
+      "A foam deluge system",
+      "Portable water extinguishers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-084",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Evolving use cases",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A network team wants to stop configuring switches and cloud networks one device at a time at the command line. Which two approaches let them define and push the configuration from code or a central program? (Choose two.)",
+    "explanation": "Infrastructure as code describes the environment in files that tools deploy, and an SDN controller separates the control plane so a central program configures the devices through an API. Spanning tree prevents loops, port mirroring copies traffic and a console server gives out-of-band access, but none of them automates configuration.",
+    "options": [
+      "Port mirroring from each switch to a central analyzer",
+      "Spanning tree with a lower root bridge priority",
+      "Infrastructure as code templates kept in version control",
+      "A software-defined networking controller with an API",
+      "A console server cabled to every device"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T2-085",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Command-line tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator wants to discover which hosts are up on a subnet and which TCP ports each one has open. Which tool is built for this?",
+    "explanation": "Nmap scans for live hosts, open ports, services and operating systems. Use it only on networks you are authorized to scan.",
+    "options": [
+      "Nmap",
+      "ipconfig",
+      "nslookup",
+      "tracert"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-086",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Ports and protocols",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An audit finds routers still managed over TCP 23, which sends passwords in cleartext. Which protocol and port should replace it?",
+    "explanation": "TCP 23 is Telnet. SSH on port 22 gives the same command-line access with encryption and stronger authentication. HTTP, TFTP and SNMPv1 are all unencrypted.",
+    "options": [
+      "TFTP on UDP 69",
+      "SNMPv1 on UDP 161",
+      "HTTP on TCP 80",
+      "SSH on TCP 22"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-087",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "NAT",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company hosts a mail server at 10.0.0.25 and needs it reachable from the internet at the fixed public address 203.0.113.25. Which NAT type fits?",
+    "explanation": "Static NAT creates a permanent one-to-one mapping, so connections to the public address always reach the same internal server. PAT is for many hosts sharing one address for outbound traffic.",
+    "options": [
+      "NAT64",
+      "Static NAT",
+      "Dynamic PAT",
+      "Destination route only"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-088",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Performance",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Voice calls between offices break up whenever large file transfers run across the WAN. Which two changes would help most? (Choose two.)",
+    "explanation": "QoS gives voice priority in the queues, and more bandwidth or moving bulk transfers reduces congestion. Voice over TCP would add retransmission delay, and jitter buffers smooth delay, so turning them off hurts.",
+    "options": [
+      "Add WAN bandwidth or schedule bulk transfers off hours",
+      "Turn on jumbo frames on the IP phones",
+      "Use QoS to mark and prioritize voice traffic",
+      "Turn off the phones' jitter buffers",
+      "Change the phones to send voice over TCP"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "NETPLUS-T2-089",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Social engineering",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Printed network diagrams with IP addresses and device names were found in an office recycling bin outside the building. Which attack does this invite, and what prevents it?",
+    "explanation": "Attackers search trash for diagrams, passwords and other details that help plan an attack. Shredding or secure disposal of sensitive documents stops it.",
+    "options": [
+      "Phishing, prevented by email filtering at the gateway",
+      "Tailgating, prevented by an access control vestibule",
+      "Shoulder surfing, prevented by privacy screens on monitors",
+      "Dumpster diving, prevented by shredding sensitive paper"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-T2-090",
+    "section": "netplus",
+    "test": 2,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "High availability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two firewalls both pass traffic at the same time and share the load. If one fails, the other carries everything at reduced capacity. What is this design?",
+    "explanation": "In active-active both units carry traffic, which uses all the hardware but means each must have spare capacity. In active-passive one unit waits idle until the active one fails.",
+    "options": [
+      "Active-active",
+      "Active-passive",
+      "Cold standby",
+      "Single point of failure"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-D-001",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "OSI layers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A load balancer chooses a back-end server using only the IP addresses and TCP port numbers of each connection, without reading the HTTP request. At which OSI layer is it balancing?",
+    "explanation": "Decisions based on addresses and port numbers are Layer 4 load balancing. A Layer 7 load balancer reads application data such as URLs, headers or cookies before choosing a server.",
+    "options": [
+      "Layer 7, application",
+      "Layer 2, data link",
+      "Layer 4, transport",
+      "Layer 1, physical"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-D-002",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Topologies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A small campus has an access layer and one pair of switches that does both the core and the distribution work. What is this design called?",
+    "explanation": "A collapsed core (two-tier) design merges the core and distribution layers into one, which saves cost where a separate core is not needed. Larger campuses keep three tiers.",
+    "options": [
+      "Spine and leaf",
+      "Collapsed core",
+      "Full mesh",
+      "Hub and spoke"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-D-003",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "VLANs and trunking",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How does an access port differ from a trunk port?",
+    "explanation": "An access port belongs to one data VLAN (plus an optional voice VLAN) and connects end devices. A trunk carries many VLANs with 802.1Q tags between switches, routers and hypervisors.",
+    "options": [
+      "An access port carries every VLAN with tags",
+      "An access port carries one data VLAN untagged",
+      "An access port can connect only to routers",
+      "An access port has no MAC address table"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-D-004",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Wireless channels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An access point in the 5 GHz band is set to 80 MHz channel width instead of 20 MHz. What is the trade-off?",
+    "explanation": "Channel bonding joins adjacent 20 MHz channels for higher data rates, but it leaves fewer separate channels, so dense deployments often use 20 or 40 MHz.",
+    "options": [
+      "More throughput per client, but fewer channels for neighbors",
+      "Longer range, but only 802.11b clients can connect",
+      "Fewer clients allowed, but no change in throughput",
+      "Better security, but a lower data rate for each client"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-D-005",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Disaster recovery",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A team gathers in a meeting room and talks through what each person would do if the main data center flooded, without touching any systems. What kind of exercise is this?",
+    "explanation": "A tabletop exercise walks through a scenario in discussion to check plans and roles. Validation tests actually fail over systems to prove the plan works.",
+    "options": [
+      "A penetration test",
+      "A full failover test",
+      "A validation test",
+      "A tabletop exercise"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-D-006",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Security terms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web server runs software with a known flaw, and attack code that uses the flaw is public. In security terms, what is the attack code?",
+    "explanation": "The flaw is the vulnerability, the code that takes advantage of it is the exploit, and risk is the chance and impact of it being used. A threat actor is the person or group behind an attack.",
+    "options": [
+      "A vulnerability",
+      "A risk register",
+      "A threat actor",
+      "An exploit"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-D-007",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Command-line tools",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A technician wants to see which ports a server is listening on and which connections are established right now. Which command shows this?",
+    "explanation": "netstat (or ss on newer Linux systems) lists listening ports and active connections with their states. ping tests reachability and nslookup queries DNS.",
+    "options": [
+      "tracert",
+      "ping",
+      "netstat",
+      "nslookup"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-D-008",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Routing issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A router can reach its directly connected networks but no remote network that it has no specific route for. Which entry is most likely missing from its table?",
+    "explanation": "Without a default route (gateway of last resort), a router drops packets for any destination not in its table. Check it with a command such as show ip route or route print.",
+    "options": [
+      "The default route",
+      "The ARP entry for itself",
+      "The native VLAN entry",
+      "The loopback route"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-D-009",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Ports and protocols",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Switches download their firmware from a server with a simple file transfer protocol that has no login and runs on UDP 69. Which protocol is it?",
+    "explanation": "TFTP (Trivial File Transfer Protocol) uses UDP 69 and has no authentication, so it should be limited to trusted management networks. SFTP runs over SSH on 22, FTP uses 20 and 21, and SMB uses 445.",
+    "options": [
+      "FTP",
+      "TFTP",
+      "SFTP",
+      "SMB"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-D-010",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "IPv4 addressing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A technician pings 127.0.0.1 on a workstation and gets replies. What does that prove?",
+    "explanation": "127.0.0.0/8 is the loopback range, and traffic to it never leaves the host. A reply shows the IP stack works, but says nothing about the cable, gateway or DNS.",
+    "options": [
+      "The local TCP/IP stack is working",
+      "The DNS server is answering queries",
+      "The default gateway is reachable",
+      "The network cable is connected"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-D-011",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Speed and duplex",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Ethernet mode still uses CSMA/CD and can suffer collisions?",
+    "explanation": "In half duplex a device either sends or receives, so it listens before sending and backs off after collisions. Full duplex sends and receives at the same time on separate pairs, so collisions do not happen.",
+    "options": [
+      "Jumbo frames",
+      "Full duplex",
+      "Link aggregation",
+      "Half duplex"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-D-012",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Environmental factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should a server room's humidity not be kept too low?",
+    "explanation": "Low humidity lets static build up and discharge into components. High humidity risks condensation and corrosion, so data centers keep humidity in a middle range.",
+    "options": [
+      "Dry air blocks wireless signals in the room",
+      "Dry air causes condensation on the equipment",
+      "Dry air makes fiber optic cables lose signal",
+      "Dry air raises the risk of electrostatic discharge"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "NETPLUS-D-013",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "DNS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company's internal DNS server receives a query for a website it does not host and works through root, TLD and other servers to find the answer for the client. What role is it playing?",
+    "explanation": "A recursive resolver does the full lookup for the client and caches the answer. An authoritative server answers only for zones it hosts.",
+    "options": [
+      "Authoritative server",
+      "Recursive resolver",
+      "Reverse lookup zone",
+      "Secondary zone server"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-D-014",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Filtering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firewall rule list ends without any rule matching a packet. What happens to the packet on most firewalls?",
+    "explanation": "Firewalls and ACLs end with an implicit deny: anything not explicitly allowed is blocked. That is why the needed traffic has to be permitted on purpose.",
+    "options": [
+      "It is dropped by the implicit deny",
+      "It is logged and then forwarded",
+      "It is allowed by the implicit permit",
+      "It is sent back to the source"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-D-015",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Command-line tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Windows host cannot reach its gateway, and the technician wants to see what MAC address the host has stored for the gateway's IP. Which command shows this?",
+    "explanation": "arp -a shows the ARP cache, the IP-to-MAC mappings the host has learned. An unexpected MAC for the gateway can point to ARP poisoning or a duplicate address.",
+    "options": [
+      "arp -a",
+      "netstat -r",
+      "ipconfig /release",
+      "nslookup"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-D-016",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Performance",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which measurement does ping report that helps diagnose latency?",
+    "explanation": "Ping reports how long each echo takes to come back (round-trip time), plus packet loss. Traceroute is the tool for hops.",
+    "options": [
+      "Round-trip time",
+      "Packet size limit",
+      "Bandwidth",
+      "Hop count"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-D-017",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netModels",
+    "skill": "Traffic types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which traffic type exists in IPv4 but is not used in IPv6?",
+    "explanation": "IPv6 has no broadcast. Functions that used broadcast in IPv4, such as finding a neighbor's MAC address, use multicast groups instead, for example the solicited-node multicast address.",
+    "options": [
+      "Unicast",
+      "Anycast",
+      "Broadcast",
+      "Multicast"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "NETPLUS-D-018",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netInfra",
+    "skill": "Appliances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A video site wants users in many countries to load large files quickly without every request crossing an ocean to its origin servers. Which service fits?",
+    "explanation": "A CDN caches content on edge servers close to users, which cuts latency and offloads the origin. A VPN secures connections, and QoS prioritizes traffic, but neither moves content closer to users.",
+    "options": [
+      "Network-attached storage",
+      "Content delivery network",
+      "Virtual private network",
+      "Quality of service"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-D-019",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netSwitchRoute",
+    "skill": "Route selection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two OSPF routes to the same prefix have costs of 20 and 30. What does the router do?",
+    "explanation": "Within one protocol the lower metric wins, so the cost 20 route is used. Administrative distance only compares routes from different sources, and equal-cost routes would both be installed.",
+    "options": [
+      "Compares administrative distances",
+      "Installs the route with cost 20",
+      "Drops traffic to that prefix",
+      "Installs the route with cost 30"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-D-020",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netWireless",
+    "skill": "Wireless architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A park needs Wi-Fi in places with no cable runs. Some access points have a wired uplink, and the rest relay traffic to them wirelessly. Which design is this?",
+    "explanation": "In a mesh network, access points connect to each other wirelessly and relay traffic toward the ones with wired backhaul. Ad hoc networks connect clients directly with no access point.",
+    "options": [
+      "Wireless mesh",
+      "Basic service set",
+      "Ad hoc",
+      "Point-to-point bridge"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-D-021",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netOps",
+    "skill": "Documentation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A contract says the provider must keep the WAN service available 99.9 percent of the month and pay credits if it does not. What is this document?",
+    "explanation": "An SLA sets measurable service levels, such as uptime and response times, and the remedies when they are missed. An MOU states intent and is usually less binding.",
+    "options": [
+      "A service-level agreement",
+      "A memorandum of understanding",
+      "A nondisclosure agreement",
+      "An acceptable use policy"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-D-022",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netSecurity",
+    "skill": "Segmentation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Employees bring their own phones to work. How should the network treat these devices?",
+    "explanation": "BYOD devices are not fully managed, so a separate segment with only the access they need limits risk while still letting staff use them.",
+    "options": [
+      "Give them the same rights as company laptops",
+      "Put them on a separate segment with limited access",
+      "Join them to the server VLAN for faster access",
+      "Block them from every network including guest"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "NETPLUS-D-023",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netTroubleMethod",
+    "skill": "Port status",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A switch port shows as administratively down. What does that mean?",
+    "explanation": "Administratively down means the port was shut down in the configuration and must be enabled. A port that is down for physical reasons shows as down or not connected instead.",
+    "options": [
+      "Someone disabled the port in its configuration",
+      "The cable at the far end is unplugged",
+      "The port detected a security violation",
+      "The connected device has a duplex mismatch"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "NETPLUS-D-024",
+    "section": "netplus",
+    "test": 0,
+    "module": 1,
+    "domain": "netTroubleServices",
+    "skill": "Switching issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Hosts on VLAN 30 at one site cannot reach VLAN 30 hosts on the switch across the trunk, but VLAN 10 works. What should be checked?",
+    "explanation": "Trunks can be limited to a list of allowed VLANs. If VLAN 30 is missing from the allowed list, or not created on the far switch, its traffic does not cross.",
+    "options": [
+      "Whether the hosts use the same DNS server",
+      "Whether the cables are plenum-rated",
+      "Whether DHCP lease times match",
+      "Whether VLAN 30 is allowed on the trunk"
+    ],
+    "correct": [
+      3
+    ]
+  }
+]

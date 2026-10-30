@@ -1,0 +1,3362 @@
+[
+  {
+    "id": "ITIL-T1-001",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Incident prioritization",
+    "stem": "How should incidents be prioritized?",
+    "options": [
+      "By the support team that will handle them, so each team's queue is balanced",
+      "In the order in which they are reported to the service desk, so that every user is treated fairly and equally",
+      "By the seniority of the person who reported the incident to the service desk",
+      "Based on an agreed classification, so that those with the highest business impact are resolved first"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Incidents are prioritized according to an agreed classification, typically based on impact and urgency, so that incidents with the highest business impact are resolved first."
+  },
+  {
+    "id": "ITIL-T1-002",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CI model first step",
+    "stem": "What is the FIRST step of the continual improvement model?",
+    "options": [
+      "How do we get there?",
+      "Where are we now?",
+      "What is the vision?",
+      "Where do we want to be?"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The model's steps are: What is the vision? Where are we now? Where do we want to be? How do we get there? Take action. Did we get there? How do we keep the momentum going?"
+  },
+  {
+    "id": "ITIL-T1-003",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Information security management",
+    "stem": "What is the purpose of the information security management practice?",
+    "options": [
+      "To plan and manage the full lifecycle of all IT assets used by the organization",
+      "To make new and changed services and features available for use by the organization",
+      "To ensure the organization's suppliers and their performance are managed appropriately",
+      "To protect the information needed by the organization to conduct its business"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Information security management protects the information the organization needs to conduct its business, which includes managing risks to confidentiality, integrity and availability."
+  },
+  {
+    "id": "ITIL-T1-004",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Guiding principle nature",
+    "stem": "What is a guiding principle?",
+    "options": [
+      "A metric used to judge whether a service has met the targets set out in its agreement",
+      "A recommendation that guides an organization in all circumstances, regardless of changes in its goals, strategies or structure",
+      "A process that describes the steps needed to move a service from design into live operation",
+      "A mandatory rule that must be followed exactly as written in every service management initiative, whatever the organization's context"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Guiding principles are universal, enduring recommendations that can guide an organization in all circumstances. They are not rules or processes, and they are adopted and adapted to each context."
+  },
+  {
+    "id": "ITIL-T1-005",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Service",
+    "stem": "Which is the ITIL definition of a service?",
+    "options": [
+      "A formal description of one or more products and resources, designed to address the needs of a particular target group of consumers",
+      "A configuration of an organization's resources designed to offer value for a consumer",
+      "A means of enabling value co-creation by facilitating outcomes customers want, without them managing specific costs and risks",
+      "A cooperation between a service provider and a service consumer to deliver agreed outputs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A service enables value co-creation by facilitating the outcomes customers want while the provider takes on specific costs and risks. A service offering is the formal description, a product is a configuration of resources, and a service relationship is the cooperation."
+  },
+  {
+    "id": "ITIL-T1-006",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Four dimensions",
+    "stem": "Which is one of the four dimensions of service management?",
+    "options": [
+      "Products and services",
+      "Value streams and processes",
+      "Governance, risk and compliance",
+      "Plan, do, check, act"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The four dimensions are organizations and people; information and technology; partners and suppliers; and value streams and processes. They apply to the whole service value system."
+  },
+  {
+    "id": "ITIL-T1-007",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Swarming",
+    "stem": "A complex incident does not fit any one team's expertise. Several specialists from different teams work on it together until it is clear who is best placed to continue. What is this technique called?",
+    "options": [
+      "Escalation",
+      "Error control",
+      "Swarming",
+      "Triage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Swarming brings many stakeholders together to work on an incident at the start, until it becomes clear which of them is best placed to continue and which can return to other work."
+  },
+  {
+    "id": "ITIL-T1-008",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Where are we now",
+    "stem": "An improvement team runs a baseline assessment of current customer satisfaction and incident resolution times. Which step of the continual improvement model is it in?",
+    "options": [
+      "Where are we now?",
+      "What is the vision?",
+      "Did we get there?",
+      "Take action"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "'Where are we now?' assesses the current state, often with a baseline assessment, so that later progress can be measured against it."
+  },
+  {
+    "id": "ITIL-T1-009",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relationship management",
+    "stem": "Which practice establishes and nurtures the links between the organization and its stakeholders at strategic and tactical levels?",
+    "options": [
+      "Relationship management",
+      "Service level management",
+      "Supplier management",
+      "Service desk"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Relationship management establishes and nurtures links with stakeholders at strategic and tactical levels. Service level management sets business-based targets; the service desk is the single point of contact for users."
+  },
+  {
+    "id": "ITIL-T1-010",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Start where you are",
+    "stem": "An organization wants to replace its service desk tool. Before designing anything new, the team watches how agents use the current tool and which features they rely on. Which guiding principle does this apply?",
+    "options": [
+      "Optimize and automate",
+      "Focus on value",
+      "Keep it simple and practical",
+      "Start where you are"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Start where you are says not to start from scratch: assess the current state directly, by observing it, to find what can be reused. Watching the existing tool in use is direct observation."
+  },
+  {
+    "id": "ITIL-T1-011",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Incident target times",
+    "stem": "Which statement about incident resolution times is CORRECT?",
+    "options": [
+      "Every incident should have the same target time, whatever its impact",
+      "Target times should be set only after the incident has been resolved",
+      "Resolution times should not be shared with users, to avoid complaints when a target is missed by the support team",
+      "Target resolution times should be agreed, documented and communicated to set realistic expectations"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ITIL recommends agreeing, documenting and communicating target resolution times so that users have realistic expectations. Targets differ by priority."
+  },
+  {
+    "id": "ITIL-T1-012",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service consumer roles",
+    "stem": "In a company that buys a payroll service, the finance director agrees the budget, the HR manager defines the requirements and is accountable for the outcomes, and HR clerks use the service every day. Which role does the HR manager play?",
+    "options": [
+      "User",
+      "Supplier",
+      "Customer",
+      "Sponsor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The customer defines the requirements for a service and takes responsibility for the outcomes of its consumption. The sponsor authorizes the budget and the users use the service."
+  },
+  {
+    "id": "ITIL-T1-013",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Partners and suppliers",
+    "stem": "An organization is deciding whether to run its data centre itself or use a cloud provider, and considers cost, its strategic focus and the expertise available. Which dimension of service management is it MAINLY addressing?",
+    "options": [
+      "Information and technology",
+      "Organizations and people",
+      "Partners and suppliers",
+      "Value streams and processes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The partners and suppliers dimension covers relationships with other organizations and the sourcing strategy. Factors in that choice include strategic focus, culture, resource scarcity, cost concerns, expertise, external constraints and demand patterns."
+  },
+  {
+    "id": "ITIL-T1-014",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Continual improvement register",
+    "stem": "Which statement about the continual improvement register (CIR) is CORRECT?",
+    "options": [
+      "It is used to track and manage improvement ideas from identification through to final action",
+      "It is a list of all changes that have been authorized and scheduled for implementation",
+      "It records only the improvements suggested by senior management, to be funded in the next financial year",
+      "It is the database of configuration items and the relationships between them"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A CIR tracks and manages improvement ideas from identification to final action, and helps prioritize them. An organization may have several CIRs at different levels."
+  },
+  {
+    "id": "ITIL-T1-015",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Event definition",
+    "stem": "Which is the ITIL definition of an event?",
+    "options": [
+      "A problem that has been analysed but has not yet been resolved by a permanent fix",
+      "Any change of state that has significance for the management of a service or other configuration item",
+      "An unplanned interruption to a service, or a reduction in the quality of a service that users have reported",
+      "The addition, modification or removal of anything that could affect services"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An event is any change of state that has significance for the management of a service or other configuration item, usually recognized through notifications from monitoring tools. The others define an incident, a known error and a change."
+  },
+  {
+    "id": "ITIL-T1-016",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Problem identification",
+    "stem": "Which activity is part of problem identification?",
+    "options": [
+      "Re-assessing the status of known errors that are unresolved",
+      "Documenting a workaround in the known error record",
+      "Raising a change request to implement a permanent fix",
+      "Performing trend analysis of incident records"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Problem identification includes trend analysis of incident records, detecting duplicate and recurring issues, and using information from major incidents, suppliers, developers and testers. Documenting workarounds is problem control; the others are error control."
+  },
+  {
+    "id": "ITIL-T1-017",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Progress iteratively with feedback",
+    "stem": "Which statement BEST describes the principle 'progress iteratively with feedback'?",
+    "options": [
+      "Deliver improvements only when every stakeholder has formally approved the full scope in advance",
+      "Wait until a complete solution is designed and tested before delivering anything, so that customers see only a finished result on a single launch date",
+      "Organize work into smaller, manageable sections that can be completed in a timely manner, with feedback before, during and after each one",
+      "Collect feedback from customers once a year and use it to set the following year's improvement plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "This principle resists doing everything at once. Even a large initiative is done iteratively, in small sections, with feedback loops that let the work be re-evaluated and changed as circumstances change."
+  },
+  {
+    "id": "ITIL-T1-018",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Standard change",
+    "stem": "Which type of change is low-risk, pre-authorized, well understood and fully documented, and can be implemented without further authorization?",
+    "options": [
+      "Normal change",
+      "Standard change",
+      "Minor change",
+      "Emergency change"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Standard changes are low-risk, pre-authorized changes that are well understood and fully documented. They are often initiated as service requests. Their risk is assessed when the procedure is created, not each time."
+  },
+  {
+    "id": "ITIL-T1-019",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Outputs and outcomes",
+    "stem": "A training team delivers a set of video lessons. As a result, new staff can process orders without help from a supervisor. What is the ability to process orders unaided?",
+    "options": [
+      "A service offering",
+      "An outcome",
+      "A utility",
+      "An output"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An output is a tangible or intangible deliverable of an activity (the videos). An outcome is a result for a stakeholder enabled by one or more outputs (staff working unaided)."
+  },
+  {
+    "id": "ITIL-T1-020",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "SVS inputs",
+    "stem": "What are the inputs to the ITIL service value system?",
+    "options": [
+      "Opportunity and demand",
+      "Utility and warranty",
+      "Outputs and outcomes",
+      "Costs and risks"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Opportunity and demand trigger activities in the service value system, and the output of the system is value. Opportunity is a chance to add value or improve; demand is the need for products and services."
+  },
+  {
+    "id": "ITIL-T1-021",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deployment management",
+    "stem": "Which practice moves new or changed hardware, software, documentation, processes or any other component to live environments?",
+    "options": [
+      "Change enablement",
+      "Deployment management",
+      "Service configuration management",
+      "Release management"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Deployment management moves new or changed components to live environments, and may also deploy to testing or staging. Release management makes services and features available for use."
+  },
+  {
+    "id": "ITIL-T1-022",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Workaround",
+    "stem": "Users cannot print to a network printer. While the cause is investigated, the service desk tells users to send documents to a second printer on the same floor. What is this?",
+    "options": [
+      "A standard change",
+      "A service request",
+      "A workaround",
+      "A known error"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A workaround is a solution that reduces or eliminates the impact of an incident or problem for which a full resolution is not yet available. It can be documented in a known error record."
+  },
+  {
+    "id": "ITIL-T1-023",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Emergency change",
+    "stem": "A critical security vulnerability is being actively exploited and a patch must be applied immediately. Which statement about this change is CORRECT?",
+    "options": [
+      "It is a standard change, so it needs no assessment or authorization",
+      "It does not need to be recorded, because there is no time for documentation",
+      "It is an emergency change, so assessment and authorization are expedited",
+      "It is a normal change, so it must wait for the next scheduled review meeting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Emergency changes must be implemented as soon as possible, for example to resolve an incident or apply a security patch. Assessment and authorization are expedited, sometimes with a separate change authority, but the change is still managed."
+  },
+  {
+    "id": "ITIL-T1-024",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Optimize before automate",
+    "stem": "A team plans to automate a manual approval process that has eleven steps, four of which add no value. What should it do FIRST, according to the guiding principles?",
+    "options": [
+      "Simplify and optimize the process, then automate what remains",
+      "Leave the process manual, because automation reduces visibility",
+      "Automate all eleven steps so the process runs faster straight away",
+      "Automate the four steps that add no value, since they are the easiest"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Optimize and automate says to optimize work as far as possible before automating it; automating a poor process only makes it fail faster. Keep it simple and practical also points to removing steps that add no value."
+  },
+  {
+    "id": "ITIL-T1-025",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Error control",
+    "stem": "Which statement about error control is CORRECT?",
+    "options": [
+      "It is the first phase of problem management, in which new problems are detected from trends in incident records",
+      "It restores normal service operation as quickly as possible after an interruption",
+      "It is carried out only by the service desk when users report a fault",
+      "It manages known errors and identifies potential permanent solutions, which may lead to a change request"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Error control manages known errors, identifies potential permanent solutions (which may result in a change request) and regularly re-assesses known errors that are not resolved, including improving their workarounds."
+  },
+  {
+    "id": "ITIL-T1-026",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Service configuration management",
+    "stem": "What is the purpose of the service configuration management practice?",
+    "options": [
+      "To systematically observe services and record selected changes of state as events",
+      "To maximize the number of successful changes by assessing risks and authorizing them",
+      "To plan and manage the financial and contractual lifecycle of every IT asset the organization owns, from purchase through to disposal",
+      "To ensure accurate and reliable information about services and the CIs that support them is available when and where needed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Service configuration management keeps accurate, reliable information about the configuration of services and the configuration items (CIs) that support them, including how they relate. The financial lifecycle is IT asset management."
+  },
+  {
+    "id": "ITIL-T1-027",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Change schedule",
+    "stem": "Which statement about the change schedule is CORRECT?",
+    "options": [
+      "It lists every pre-authorized standard change and how to implement it step by step",
+      "It contains only emergency changes, because normal changes are planned elsewhere",
+      "It is used only by the change authority and is not shared with other practices",
+      "It helps plan changes, assist communication, avoid conflicts and assign resources"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The change schedule is used to help plan changes, assist communication, avoid conflicts and assign resources. It also provides information for incident management, problem management and improvement planning."
+  },
+  {
+    "id": "ITIL-T1-028",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Utility and warranty",
+    "stem": "Identify the missing word in the following sentence. Warranty is the [?] that a product or service will meet agreed requirements.",
+    "options": [
+      "assurance",
+      "functionality",
+      "outcome",
+      "value"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Warranty is the assurance that a product or service will meet agreed requirements, often described as 'how the service performs'. Functionality offered to meet a need is utility."
+  },
+  {
+    "id": "ITIL-T1-029",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Engage",
+    "stem": "Which value chain activity provides a good understanding of stakeholder needs, transparency, continual engagement and good relationships with all stakeholders?",
+    "options": [
+      "Design and transition",
+      "Deliver and support",
+      "Plan",
+      "Engage"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The purpose of engage is to provide a good understanding of stakeholder needs, transparency, continual engagement and good relationships with all stakeholders. It is the main point of contact with customers, users and suppliers."
+  },
+  {
+    "id": "ITIL-T1-030",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service request examples",
+    "stem": "Which is an example of a service request?",
+    "options": [
+      "A monitoring tool shows a disk filling up",
+      "A server fails and the payroll system stops",
+      "A user asks for a password reset",
+      "A recurring network fault needs root cause analysis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Service requests are user-initiated, pre-defined requests that are a normal part of service delivery, such as a password reset, a laptop, information or access. A failure is an incident; an investigation of cause is problem management."
+  },
+  {
+    "id": "ITIL-T1-031",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Collaborate and promote visibility",
+    "stem": "A change team works in a closed room and does not share its plans. Other teams start to resist the change and spread rumours about it. Which guiding principle would MOST help?",
+    "options": [
+      "Think and work holistically",
+      "Start where you are",
+      "Collaborate and promote visibility",
+      "Optimize and automate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Collaborate and promote visibility says that when work is hidden, people make assumptions and resist. Making work and decisions visible, and involving the right people, builds trust and support."
+  },
+  {
+    "id": "ITIL-T1-032",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Known error",
+    "stem": "Which is the ITIL definition of a known error?",
+    "options": [
+      "A workaround that has been documented in the knowledge base",
+      "An incident whose cause has been found and permanently fixed",
+      "An event that shows a configuration item is operating outside its limits",
+      "A problem that has been analysed but has not been resolved"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A known error is a problem that has been analysed but has not been resolved. It is often recorded with a workaround while a permanent solution is sought."
+  },
+  {
+    "id": "ITIL-T1-033",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SLA requirements",
+    "stem": "Which is a key requirement for a successful service level agreement?",
+    "options": [
+      "It should include every metric the monitoring tools can collect",
+      "It should relate to defined outcomes and not simply operational metrics",
+      "It should be decided by the provider alone, based on its own capacity",
+      "It should be written in detailed technical language so that the engineers can measure it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Successful SLAs relate to a defined service in the service catalogue, relate to defined outcomes rather than only operational metrics, reflect an agreement between provider and consumer, and are simply written and easy to understand."
+  },
+  {
+    "id": "ITIL-T1-034",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Service request standardization",
+    "stem": "Which recommendation applies to service request management?",
+    "options": [
+      "Every service request should be authorized by the requester's line manager before any work starts on it",
+      "Service requests and their fulfilment should be standardized and automated as far as possible",
+      "Each service request should be designed individually when it is received",
+      "Service requests should be handled as incidents so they are fixed quickly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Service requests are pre-defined and predictable, so their fulfilment should be standardized and automated as far as possible. Policies should state which requests need little or no extra approval."
+  },
+  {
+    "id": "ITIL-T1-035",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Costs and risks",
+    "stem": "A company moves its email to a provider's hosted service. Which is an example of a cost REMOVED from the consumer?",
+    "options": [
+      "The bandwidth upgrade needed to reach the provider's data centre",
+      "The monthly subscription charge paid to the provider for each user's mailbox",
+      "The salaries of the staff who used to maintain the in-house mail servers",
+      "The time staff spend in training on the provider's new email client"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Costs removed from the consumer are part of the value proposition, such as staff and hardware no longer needed. The subscription, training time and extra bandwidth are costs imposed on the consumer by using the service."
+  },
+  {
+    "id": "ITIL-T1-036",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Value chain and value streams",
+    "stem": "Which statement about the service value chain is CORRECT?",
+    "options": [
+      "Its activities can be combined in different sequences to form value streams for different situations",
+      "Each activity is performed by exactly one practice that belongs to it",
+      "It applies only to new services, not to changes to existing services",
+      "Its activities must always be carried out in the same fixed order, from plan through to deliver and support"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The six activities are interconnected and can be combined in many sequences, forming value streams for specific scenarios. Each activity uses several practices, and each practice can contribute to several activities."
+  },
+  {
+    "id": "ITIL-T1-037",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Think and work holistically",
+    "stem": "A team improves the speed of its incident logging, but the improvement causes a backlog for the second-line teams that handle the incidents. Which guiding principle was NOT applied?",
+    "options": [
+      "Start where you are",
+      "Progress iteratively with feedback",
+      "Think and work holistically",
+      "Keep it simple and practical"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Think and work holistically says no service or element stands alone; results suffer unless the organization works on the whole, not just its parts. Optimizing one step created a problem elsewhere in the value stream."
+  },
+  {
+    "id": "ITIL-T1-038",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Supplier management",
+    "stem": "A company finds that one of its software vendors repeatedly misses agreed delivery dates, affecting several services. Which practice is MOST responsible for managing this situation?",
+    "options": [
+      "Relationship management",
+      "Service level management",
+      "Supplier management",
+      "Release management"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Supplier management ensures the organization's suppliers and their performance are managed appropriately to support the seamless provision of quality products and services. Relationship management deals with stakeholders more broadly."
+  },
+  {
+    "id": "ITIL-T1-039",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Watermelon effect",
+    "stem": "A provider meets all of its SLA targets every month, but customers say they are unhappy with the service. What is this situation often called?",
+    "options": [
+      "Service request fatigue",
+      "A known error",
+      "The watermelon SLA effect",
+      "A breach of the service warranty"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The watermelon effect describes SLAs that look green on the outside (targets met) but are red inside (customers dissatisfied). It happens when SLAs measure operational metrics rather than the outcomes customers value."
+  },
+  {
+    "id": "ITIL-T1-040",
+    "section": "itil",
+    "test": 1,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service desk skills",
+    "stem": "Which skill is MOST important for service desk staff, according to ITIL?",
+    "options": [
+      "Deep knowledge of the source code of the applications",
+      "The ability to design network architecture",
+      "Empathy and good customer service",
+      "Experience negotiating supplier contracts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Service desk staff do not need to be highly technical. Key skills include customer service, empathy, incident analysis and prioritization, effective communication and emotional intelligence."
+  },
+  {
+    "id": "ITIL-T2-001",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Incident management purpose",
+    "stem": "What is the purpose of the incident management practice?",
+    "options": [
+      "To minimize the negative impact of incidents by restoring normal service operation as quickly as possible",
+      "To make sure every incident is resolved by the service desk at the first point of contact",
+      "To record each incident accurately so that the configuration records stay up to date",
+      "To reduce the likelihood and impact of future incidents by identifying and removing their actual and potential causes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Incident management minimizes the negative impact of incidents by restoring normal service operation as quickly as possible. Finding causes to reduce future incidents is problem management."
+  },
+  {
+    "id": "ITIL-T2-002",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CI everyone",
+    "stem": "Which statement about continual improvement is CORRECT?",
+    "options": [
+      "It applies only to the deliver and support value chain activity",
+      "It is the responsibility of everyone in the organization, though a small team may lead the effort",
+      "It should only start once a service has been running without incidents for a full year",
+      "It is the responsibility of a dedicated improvement team, and other staff should not be involved in it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Continual improvement takes place in all areas of the organization and at all levels, and is everyone's responsibility. A small dedicated team can lead it, champion it and coordinate activities."
+  },
+  {
+    "id": "ITIL-T2-003",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IT asset definition",
+    "stem": "Which is the ITIL definition of an IT asset?",
+    "options": [
+      "A configuration of resources designed to offer value for a consumer",
+      "Any component that needs to be managed in order to deliver an IT service",
+      "A version of a service or other configuration item that has been made available for use by consumers",
+      "Any financially valuable component that can contribute to the delivery of an IT product or service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An IT asset is any financially valuable component that can contribute to the delivery of an IT product or service. 'Any component that needs to be managed to deliver a service' is a configuration item."
+  },
+  {
+    "id": "ITIL-T2-004",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Focus on value",
+    "stem": "Which guiding principle says that everything the organization does should link back, directly or indirectly, to value for itself, its customers and other stakeholders?",
+    "options": [
+      "Keep it simple and practical",
+      "Focus on value",
+      "Collaborate and promote visibility",
+      "Think and work holistically"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Focus on value says all activities should link, directly or indirectly, to value for stakeholders. Applying it starts with knowing who the service consumer is and how they perceive value."
+  },
+  {
+    "id": "ITIL-T2-005",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Value",
+    "stem": "How does ITIL define value?",
+    "options": [
+      "The amount of money a consumer pays for a product or service",
+      "The functionality offered by a product or service to meet a need",
+      "A result for a stakeholder enabled by one or more outputs",
+      "The perceived benefits, usefulness and importance of something"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Value is the perceived benefits, usefulness and importance of something. It is subjective and depends on the stakeholder. Functionality is utility and a result enabled by outputs is an outcome."
+  },
+  {
+    "id": "ITIL-T2-006",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Organizations and people",
+    "stem": "Which topic belongs to the 'organizations and people' dimension?",
+    "options": [
+      "Roles, responsibilities, culture and the competencies of staff",
+      "The workflow tools and the knowledge bases used by the service desk",
+      "The contracts and agreements with the organization's cloud provider",
+      "The sequence of steps used to fulfil a request for a new laptop"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Organizations and people covers formal structures, roles and responsibilities, culture, and the competencies and skills of staff. Tools are information and technology, contracts are partners and suppliers, and workflows are value streams and processes."
+  },
+  {
+    "id": "ITIL-T2-007",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Incident records",
+    "stem": "Which information should an incident record contain to support future diagnosis and resolution?",
+    "options": [
+      "The full change schedule for the month in which the incident occurred",
+      "Only the name of the user who reported it and the date on which it was closed by the service desk",
+      "The symptoms, business impact, affected configuration items, actions taken and the resolution",
+      "The cost of the incident, so it can be billed to the department that reported it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Incident records should be kept with information about symptoms, business impact, CIs affected, actions completed and actions planned, with timestamps and details of the people involved."
+  },
+  {
+    "id": "ITIL-T2-008",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Did we get there",
+    "stem": "Which step of the continual improvement model checks whether the planned improvement has been achieved?",
+    "options": [
+      "How do we keep the momentum going?",
+      "Did we get there?",
+      "Where are we now?",
+      "Where do we want to be?"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'Did we get there?' checks progress against the measurable targets set in 'Where do we want to be?', using the baseline from 'Where are we now?'."
+  },
+  {
+    "id": "ITIL-T2-009",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monitoring and event management",
+    "stem": "What is the purpose of the monitoring and event management practice?",
+    "options": [
+      "To systematically observe services and service components, and record and report selected changes of state identified as events",
+      "To ensure that accurate information about the configuration of services is available when needed",
+      "To capture demand for incident resolution and service requests from all of the users",
+      "To restore normal service operation as quickly as possible after an unplanned interruption to a service or service component occurs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Monitoring and event management systematically observes services and their components, and records and reports selected changes of state identified as events, so the right response can follow."
+  },
+  {
+    "id": "ITIL-T2-010",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Keep it simple and practical",
+    "stem": "A team reviewing a process finds a report that takes two hours to produce each week and that nobody reads. What does 'keep it simple and practical' recommend?",
+    "options": [
+      "Keep producing the report every week in case an auditor asks to see it in the future",
+      "Remove the report, because a step that provides no value should be eliminated",
+      "Automate the report so that it takes less time to produce",
+      "Ask an external consultant to redesign the report's layout"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Keep it simple and practical says to use the minimum number of steps needed and to eliminate any process, service, action or metric that fails to provide value. Automating a report nobody reads still wastes effort."
+  },
+  {
+    "id": "ITIL-T2-011",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Major incidents",
+    "stem": "Which statement about major incidents is CORRECT?",
+    "options": [
+      "A major incident is handled in the same way as any other incident with high urgency",
+      "Major incidents can only be reported by a senior manager",
+      "Major incidents are passed directly to problem management to be handled instead of incident management",
+      "There should be a separate process for major incidents, and sometimes a temporary team is formed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ITIL recommends a separate process for major incidents. Complex incidents may need a temporary team from several stakeholder groups, and disaster recovery plans may be invoked in extreme cases."
+  },
+  {
+    "id": "ITIL-T2-012",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service offering",
+    "stem": "A mobile operator offers a plan that includes a handset, 20 GB of data each month and technical support by phone. What is the handset in this service offering?",
+    "options": [
+      "A good",
+      "A service action",
+      "Access to a resource",
+      "A service relationship"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A service offering can include goods (ownership transfers to the consumer, like the handset), access to resources (the data allowance) and service actions (the phone support)."
+  },
+  {
+    "id": "ITIL-T2-013",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "PESTLE",
+    "stem": "Which statement about the external factors that affect the four dimensions is CORRECT?",
+    "options": [
+      "External factors affect only the partners and suppliers dimension and none of the others",
+      "Only technological factors affect the four dimensions, because the dimensions describe how IT services work in practice",
+      "External factors are outside the scope of service management and should be ignored",
+      "Political, economic, social, technological, legal and environmental factors all constrain or influence them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Service providers operate in a changing environment. The four dimensions are influenced by external factors often grouped as PESTLE: political, economic, social, technological, legal and environmental."
+  },
+  {
+    "id": "ITIL-T2-014",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Momentum",
+    "stem": "An improvement has met its targets. The team now shares the results across the organization and looks for the next improvement. Which step of the model is this?",
+    "options": [
+      "How do we keep the momentum going?",
+      "What is the vision?",
+      "Did we get there?",
+      "Take action"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "'How do we keep the momentum going?' reinforces new behaviours, communicates successes and looks for further improvement opportunities, so that the improvement is sustained."
+  },
+  {
+    "id": "ITIL-T2-015",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Release management",
+    "stem": "What is the purpose of the release management practice?",
+    "options": [
+      "To ensure that the organization's information is protected",
+      "To make new and changed services and features available for use",
+      "To move new or changed hardware and software to live environments",
+      "To authorize changes and manage the change schedule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Release management makes new and changed services and features available for use. Deployment can happen separately from release, for example when features are deployed but switched on later."
+  },
+  {
+    "id": "ITIL-T2-016",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Problem management purpose",
+    "stem": "What is the purpose of the problem management practice?",
+    "options": [
+      "To set business-based targets for service performance and to monitor and manage delivery against them",
+      "To reduce the likelihood and impact of incidents by identifying actual and potential causes, and managing workarounds and known errors",
+      "To minimize the negative impact of incidents by restoring normal service operation as quickly as possible",
+      "To capture demand for incident resolution and service requests, and to act as the entry point and single point of contact for all users"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Problem management reduces the likelihood and impact of incidents by identifying actual and potential causes and managing workarounds and known errors."
+  },
+  {
+    "id": "ITIL-T2-017",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Start where you are measurement",
+    "stem": "When applying 'start where you are', what is a known risk of relying only on measurement?",
+    "options": [
+      "Measurements are always accurate and complete, so there is no need to observe the current state of the work directly",
+      "Measuring something can change the behaviour being measured, so data should be checked against direct observation",
+      "Measurement takes so long that it should be skipped in favour of designing a new solution",
+      "Measuring the current state removes the need to involve the people who do the work"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Start where you are notes that measurement supports analysis but should not replace observation, because the act of measuring can affect the results. Data should be validated by going to where the work happens."
+  },
+  {
+    "id": "ITIL-T2-018",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Normal change",
+    "stem": "Which statement about normal changes is CORRECT?",
+    "options": [
+      "They are implemented immediately, without being added to the change schedule",
+      "They must be scheduled, assessed and authorized following a process",
+      "They are pre-authorized and can be implemented without further approval",
+      "They must always be authorized by the most senior manager in the organization"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Normal changes are scheduled, assessed and authorized following a process. Change models based on type determine the roles for assessment and authorization: a low-risk change may be authorized by someone who can make rapid decisions."
+  },
+  {
+    "id": "ITIL-T2-019",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service relationship",
+    "stem": "Which activities make up a service relationship?",
+    "options": [
+      "Service provision, service consumption and service relationship management",
+      "Plan, improve, engage, design and transition, obtain or build, deliver and support",
+      "Service design, service transition and service operation",
+      "Demand, opportunity and value"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ITIL describes a service relationship as a cooperation between a provider and a consumer that includes service provision, service consumption and service relationship management."
+  },
+  {
+    "id": "ITIL-T2-020",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "SVS purpose",
+    "stem": "What is the purpose of the ITIL service value system?",
+    "options": [
+      "To describe the steps that a service desk follows to log, classify, prioritize and close all incidents and service requests from its users",
+      "To set the targets for service performance that are agreed with each customer",
+      "To ensure the organization continually co-creates value with all stakeholders through the use and management of products and services",
+      "To ensure that every change is authorized by a change advisory board before it is deployed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The service value system describes how all components and activities of the organization work together as a system to enable value creation, ensuring continual co-creation of value with stakeholders."
+  },
+  {
+    "id": "ITIL-T2-021",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Configuration item",
+    "stem": "Which is the ITIL definition of a configuration item?",
+    "options": [
+      "Any change of state that has significance for the management of a service",
+      "Any version of a service that is made available for use by its consumers",
+      "Any financially valuable component that contributes to an IT product or service",
+      "Any component that needs to be managed in order to deliver an IT service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A configuration item (CI) is any component that needs to be managed in order to deliver an IT service. A financially valuable component is an IT asset."
+  },
+  {
+    "id": "ITIL-T2-022",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Problem control",
+    "stem": "Which activity is part of problem control?",
+    "options": [
+      "Detecting duplicate and recurring issues from trends in incident records",
+      "Implementing a permanent fix in the live environment",
+      "Logging and classifying a new incident reported by a user",
+      "Problem analysis, and documenting workarounds and known errors"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Problem control covers problem analysis and documenting workarounds and known errors. Problems are prioritized by the risk they pose. Detecting recurring issues is problem identification."
+  },
+  {
+    "id": "ITIL-T2-023",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Change authority",
+    "stem": "A team works in a DevOps model and deploys small changes several times a day. Which approach to change authority does ITIL suggest is MOST appropriate?",
+    "options": [
+      "Stop recording the changes, because the team deploys too often for each one to be tracked and recorded",
+      "Treat every deployment as an emergency change so it is approved quickly",
+      "Decentralize authorization, for example to peer review, for changes the team understands well",
+      "Send every change to a single central board that meets once a week"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The change authority should be appropriate to the type and model of change. In high-velocity organizations it is common to decentralize change approval, for example to peer review, rather than send every change to one central board."
+  },
+  {
+    "id": "ITIL-T2-024",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Interaction of principles",
+    "stem": "Which statement about the guiding principles is CORRECT?",
+    "options": [
+      "They interact and depend on each other, and an organization should consider which are relevant in each situation",
+      "Only one guiding principle should be applied to any single initiative to avoid confusion",
+      "They must always be applied in a fixed order, starting with 'focus on value' and ending with 'optimize and automate'",
+      "They apply only to IT departments and not to the wider organization or its partners"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The principles interact with and depend on each other; for example, progressing iteratively requires thinking holistically. An organization should not use just one or two, but consider which are relevant and how they apply together."
+  },
+  {
+    "id": "ITIL-T2-025",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Problem and change",
+    "stem": "Problem management has found a permanent solution for a known error. What should happen next?",
+    "options": [
+      "A change request should be raised so the fix is assessed and authorized through change enablement",
+      "The incident records should be closed and the fix left undocumented",
+      "The service desk should apply the fix on each affected user's device as new related incidents arrive",
+      "The problem analyst should implement the fix in production immediately"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Problem management does not implement fixes itself. Error control may identify a permanent solution, which results in a change request that is managed by change enablement."
+  },
+  {
+    "id": "ITIL-T2-026",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "IT asset management",
+    "stem": "An organization wants to know how many software licences it owns, which are in use and when hardware should be retired and disposed of. Which practice should it use?",
+    "options": [
+      "Service configuration management",
+      "Monitoring and event management",
+      "Deployment management",
+      "IT asset management"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "IT asset management plans and manages the full lifecycle of IT assets, helping to maximize value, control costs, manage risks, support decisions about purchase, re-use and retirement, and meet regulatory and contractual requirements such as licensing."
+  },
+  {
+    "id": "ITIL-T2-027",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Standard change as request",
+    "stem": "Which statement about standard changes is CORRECT?",
+    "options": [
+      "They are often initiated as service requests",
+      "They are used only to resolve major incidents",
+      "They need a full risk assessment each time they are made",
+      "They must be authorized by the change authority each time"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A full risk assessment is done once, when the standard change procedure is created. After that, standard changes are often initiated as service requests and can be implemented without further authorization."
+  },
+  {
+    "id": "ITIL-T2-028",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Utility",
+    "stem": "A new expense app lets staff photograph receipts and submit claims, which is exactly what they asked for. However, it is unavailable most mornings and slows down at month end. Which statement is CORRECT?",
+    "options": [
+      "The app has warranty but lacks utility",
+      "The app lacks both utility and warranty",
+      "The app has both utility and warranty",
+      "The app has utility but lacks warranty"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Utility is what the service does (fit for purpose): the app has the features needed. Warranty is how it performs (fit for use), including availability and capacity, which is lacking here."
+  },
+  {
+    "id": "ITIL-T2-029",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Obtain or build",
+    "stem": "Which value chain activity ensures that service components are available when and where they are needed and meet agreed specifications?",
+    "options": [
+      "Improve",
+      "Obtain or build",
+      "Design and transition",
+      "Deliver and support"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Obtain or build ensures service components are available when and where needed and meet agreed specifications. Design and transition ensures products and services meet expectations for quality, cost and time to market."
+  },
+  {
+    "id": "ITIL-T2-030",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service request purpose",
+    "stem": "What is the purpose of the service request management practice?",
+    "options": [
+      "To make new and changed services and features available for use once they have been deployed",
+      "To restore normal service operation as quickly as possible after a user reports an interruption",
+      "To support the agreed quality of a service by handling all pre-defined, user-initiated service requests in an effective and user-friendly manner",
+      "To capture demand for incident resolution and service requests, acting as the entry point and single point of contact for all of the service provider's users"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Service request management supports the agreed quality of a service by handling all pre-defined, user-initiated service requests effectively and in a user-friendly way."
+  },
+  {
+    "id": "ITIL-T2-031",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Focus on value customer experience",
+    "stem": "When applying 'focus on value', why should an organization pay attention to the customer experience?",
+    "options": [
+      "Because the consumer's whole experience of interacting with the provider shapes the value they perceive",
+      "Because customer experience only matters to external customers and can safely be ignored for internal ones",
+      "Because customer experience is the only measure of value the provider is allowed to use",
+      "Because a good customer experience guarantees that the service meets its warranty targets"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Customer experience (CX) is the entirety of interactions a customer has with an organization and its products. It can determine how the consumer feels about the provider and the value they perceive, so it is part of focusing on value."
+  },
+  {
+    "id": "ITIL-T2-032",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Problem definition",
+    "stem": "Which is the ITIL definition of a problem?",
+    "options": [
+      "A possible event that could cause harm or loss to the organization",
+      "An unplanned interruption to a service, or reduction in its quality",
+      "A problem that has been analysed but has not been resolved",
+      "A cause, or potential cause, of one or more incidents"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A problem is a cause, or potential cause, of one or more incidents. A known error is a problem that has been analysed but not resolved."
+  },
+  {
+    "id": "ITIL-T2-033",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SLM information sources",
+    "stem": "Which activity is a source of information for service level management that goes beyond operational metrics?",
+    "options": [
+      "The number of changes deployed by the release management practice",
+      "Automatic event logs from the monitoring tools on each server",
+      "The total count of configuration items recorded in the configuration management system",
+      "Customer engagement, such as initial listening and discussing progress with customers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Service level management uses customer engagement (initial listening, discovery, measuring and discussing progress), customer feedback (surveys, key business measures), operational metrics and business metrics."
+  },
+  {
+    "id": "ITIL-T2-034",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Request authorization",
+    "stem": "Which statement about approving service requests is CORRECT?",
+    "options": [
+      "Every service request must be approved by the change authority before it is fulfilled, whatever the request is for",
+      "Service requests never need any form of approval, because they are pre-defined",
+      "Some requests need authorization according to financial, security or other policies, while others need none",
+      "Service requests are a type of incident and are handled with the same workflow"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fulfilment of service requests may include changes to services or their components, usually standard changes. Some requests need authorization under financial or other policies; others need none."
+  },
+  {
+    "id": "ITIL-T2-035",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Organization",
+    "stem": "Which statement about an organization in ITIL is CORRECT?",
+    "options": [
+      "It is always the service provider, never the service consumer",
+      "It must be a legal entity with a registered business address",
+      "It is a team inside a company that reports to the IT department",
+      "It can be a single person or a complex group of legal entities"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ITIL defines an organization as a person or group of people with its own functions, responsibilities, authorities and relationships to achieve its objectives. It ranges from one person to a complex network, and can act as a provider, a consumer or both."
+  },
+  {
+    "id": "ITIL-T2-036",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Plan activity",
+    "stem": "Which value chain activity ensures a shared understanding of the vision, current status and improvement direction for all four dimensions and all products and services across the organization?",
+    "options": [
+      "Engage",
+      "Plan",
+      "Design and transition",
+      "Improve"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The purpose of plan is a shared understanding of the vision, current status and improvement direction for all four dimensions and all products and services. Improve focuses on continual improvement of products, services and practices."
+  },
+  {
+    "id": "ITIL-T2-037",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Progress iteratively feedback",
+    "stem": "A team is building a self-service portal in small releases. After the second release, user feedback shows a key assumption was wrong. What should the team do?",
+    "options": [
+      "Ignore the feedback until all planned releases are finished, then review it at the end",
+      "Re-evaluate the work and change its direction, because feedback loops exist so iterations can respond to what is learned",
+      "Stop the initiative and restart it once a full design has been agreed with every stakeholder",
+      "Continue with the original plan, because changing direction now would waste the work and money that has already been spent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Progressing iteratively with feedback means seeking and using feedback before, during and after each iteration. Feedback that shows a wrong assumption is a reason to re-evaluate and, if needed, change the work."
+  },
+  {
+    "id": "ITIL-T2-038",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Change definition",
+    "stem": "Identify the missing words in the following sentence. A change is the addition, modification or removal of anything that could have [?] on services.",
+    "options": [
+      "a direct or indirect effect",
+      "a negative financial impact",
+      "an effect on service levels agreed with the customer",
+      "a significant effect on the IT infrastructure"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A change is the addition, modification or removal of anything that could have a direct or indirect effect on services. The definition is deliberately broad, not limited to infrastructure or agreed service levels."
+  },
+  {
+    "id": "ITIL-T2-039",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SLM purpose",
+    "stem": "What is the purpose of the service level management practice?",
+    "options": [
+      "To maximize the number of successful service and product changes by assessing risk, authorizing changes and managing the schedule",
+      "To ensure the organization's suppliers and their performance are managed appropriately",
+      "To establish and nurture the links between the organization and its stakeholders at a strategic level",
+      "To set clear business-based targets for service performance, so delivery can be assessed, monitored and managed against them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Service level management sets clear business-based targets for service performance so that delivery of a service can be properly assessed, monitored and managed against them."
+  },
+  {
+    "id": "ITIL-T2-040",
+    "section": "itil",
+    "test": 2,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service desk channels",
+    "stem": "Which statement about the service desk is CORRECT?",
+    "options": [
+      "It is used only for technical issues reported by IT staff",
+      "It handles only incidents; requests and queries go to other teams",
+      "It provides a clear path for users to report issues, queries and requests through a variety of channels",
+      "It must be a physical team located in the same building as its users, so that they can walk in and get help in person"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The service desk is the single point of contact for users and offers many channels: phone, service portals, chat, email, walk-in, text and social media. It may be virtual, with staff in several locations."
+  },
+  {
+    "id": "ITIL-D-001",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Where do we want to be",
+    "stem": "In which step of the continual improvement model are measurable targets for the improvement defined?",
+    "options": [
+      "What is the vision?",
+      "Where are we now?",
+      "Where do we want to be?",
+      "Take action"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "'Where do we want to be?' defines the target state, with measurable objectives, based on the vision and the gap found in 'Where are we now?'."
+  },
+  {
+    "id": "ITIL-D-002",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Who resolves incidents",
+    "stem": "Which statement about who resolves incidents is CORRECT?",
+    "options": [
+      "Only the service desk is allowed to resolve incidents",
+      "Incidents must always be resolved by the supplier or vendor of the failed component, under the terms of its contract",
+      "Incidents can be resolved by users themselves, the service desk, support teams or suppliers",
+      "Only the problem management team can resolve incidents"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Incidents may be diagnosed and resolved by people in many groups: users with self-help, the service desk, support teams, suppliers or partners, or temporary teams for complex cases."
+  },
+  {
+    "id": "ITIL-D-003",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sponsor",
+    "stem": "Which role authorizes the budget for service consumption?",
+    "options": [
+      "User",
+      "Service owner",
+      "Sponsor",
+      "Customer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The sponsor is the role that authorizes budget for service consumption. The customer defines requirements and takes responsibility for outcomes; the user uses the service."
+  },
+  {
+    "id": "ITIL-D-004",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Seven principles",
+    "stem": "Which of these is one of the seven ITIL guiding principles?",
+    "options": [
+      "Deliver on time",
+      "Optimize and automate",
+      "Design for scale",
+      "Measure everything"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The seven guiding principles are: focus on value; start where you are; progress iteratively with feedback; collaborate and promote visibility; think and work holistically; keep it simple and practical; optimize and automate."
+  },
+  {
+    "id": "ITIL-D-005",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Information and technology",
+    "stem": "An organization reviews what information its services manage, how that information is protected and which technologies support its service desk. Which dimension is it addressing?",
+    "options": [
+      "Information and technology",
+      "Partners and suppliers",
+      "Organizations and people",
+      "Value streams and processes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Information and technology covers the information and knowledge needed to manage services and the technologies that support service management, including security and compliance of that information."
+  },
+  {
+    "id": "ITIL-D-006",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Incident definition",
+    "stem": "Which is the ITIL definition of an incident?",
+    "options": [
+      "Any change of state that has significance for the management of a service or CI",
+      "A cause, or potential cause, of one or more interruptions to a service",
+      "An unplanned interruption to a service or reduction in the quality of a service",
+      "A request from a user for information, advice or access to a service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An incident is an unplanned interruption to a service or reduction in the quality of a service. A cause of incidents is a problem; a user's request is a service request; a change of state is an event."
+  },
+  {
+    "id": "ITIL-D-007",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "How do we get there",
+    "stem": "A team has defined its target state and now creates a plan, choosing to make the improvement through several small iterations. Which step of the continual improvement model is this?",
+    "options": [
+      "Did we get there?",
+      "How do we get there?",
+      "Take action",
+      "Where do we want to be?"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'How do we get there?' defines the plan to close the gap between the current and target states. The plan may be a simple, direct path or a series of iterations."
+  },
+  {
+    "id": "ITIL-D-008",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Incident vs problem",
+    "stem": "A web server crashes and the service desk restarts it, restoring the service. The crash has happened three times this month. Which statement is CORRECT?",
+    "options": [
+      "Incident management restored the service; problem management should investigate the cause of the repeated crashes",
+      "The repeated crashes should be handled as a standard change",
+      "The restart was part of problem management, and incident management should now investigate the cause of the crashes",
+      "Because the service was restored, no further action is needed by any practice"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Restoring service quickly is incident management. Recurring incidents point to an underlying cause, which is investigated by problem management to reduce future incidents."
+  },
+  {
+    "id": "ITIL-D-009",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "User",
+    "stem": "Which service consumer role describes a person who uses the service?",
+    "options": [
+      "Stakeholder",
+      "Customer",
+      "User",
+      "Sponsor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A user is the role that uses services. One person can hold all three consumer roles (customer, user and sponsor) at the same time, for example a freelancer buying software."
+  },
+  {
+    "id": "ITIL-D-010",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Focus on value consumer",
+    "stem": "When applying 'focus on value', what should an organization identify first?",
+    "options": [
+      "Who the service consumer is",
+      "Which tools the team should automate",
+      "How many changes were made last month",
+      "Which suppliers have the lowest prices"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first step in focusing on value is knowing who is being served: the service consumer, and other stakeholders where relevant. Only then can the organization understand what they value."
+  },
+  {
+    "id": "ITIL-D-011",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Value stream definition",
+    "stem": "Which is the ITIL definition of a value stream?",
+    "options": [
+      "A series of steps an organization undertakes to create and deliver products and services to consumers",
+      "A formal agreement that defines the value a service provider will deliver to a customer over a set period",
+      "A set of interrelated activities that transform inputs into outputs for a single team",
+      "A list of all improvement ideas recorded so they can be prioritized and managed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A value stream is a series of steps to create and deliver products and services to consumers. A set of interrelated activities transforming inputs into outputs is a process."
+  },
+  {
+    "id": "ITIL-D-012",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Information security aspects",
+    "stem": "Which aspects does information security management MAINLY aim to protect?",
+    "options": [
+      "Utility, warranty and value of the organization's services",
+      "Accuracy of the configuration records held for each CI",
+      "Speed, cost and quality of changes to the organization's services",
+      "Confidentiality, integrity and availability of information"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Information security management balances prevention, detection and correction to protect confidentiality, integrity and availability, along with aspects such as authentication and non-repudiation."
+  },
+  {
+    "id": "ITIL-D-013",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vision step",
+    "stem": "What does the 'What is the vision?' step of the continual improvement model aim to do?",
+    "options": [
+      "Measure the current performance of the service and its practices with a baseline assessment",
+      "Ensure the improvement initiative is aligned with the organization's vision and objectives",
+      "Check whether the agreed targets have been achieved",
+      "Carry out the planned improvement work in iterations"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The first step defines the vision of the improvement in the context of the organization's vision and objectives, so that the initiative supports high-level goals."
+  },
+  {
+    "id": "ITIL-D-014",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Incident self-help",
+    "stem": "A user resolves a common email problem by following an article on the service portal. Which statement is CORRECT?",
+    "options": [
+      "The user performed problem control",
+      "The user carried out a normal change",
+      "The user made a service request for information",
+      "The user resolved an incident through self-help"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Some incidents are resolved by users themselves with self-help tools such as knowledge articles. Recording self-help use is still valuable for measurement and improvement."
+  },
+  {
+    "id": "ITIL-D-015",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product",
+    "stem": "Which is the ITIL definition of a product?",
+    "options": [
+      "Any component that needs to be managed in order to deliver an IT service",
+      "A configuration of an organization's resources designed to offer value for a consumer",
+      "A formal description of services designed for a target consumer group",
+      "A tangible or intangible deliverable produced by an activity for an internal stakeholder"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A product is a configuration of an organization's resources designed to offer value for a consumer. Service offerings are based on products. A tangible deliverable is an output, and a managed component is a configuration item."
+  },
+  {
+    "id": "ITIL-D-016",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Start where you are reuse",
+    "stem": "Which statement about 'start where you are' is CORRECT?",
+    "options": [
+      "Existing services, processes and tools should be assessed for what can be reused before building something new",
+      "The current state should be assessed only by reading reports and never by observing the work",
+      "Everything that already exists should be removed first, so that the new solution is not affected by past mistakes",
+      "Starting from scratch is always the most reliable way to build an improved service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Starting over without considering what already exists wastes work. Much of the current state can often be reused, adapted or built upon, and it should be assessed by direct observation."
+  },
+  {
+    "id": "ITIL-D-017",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Process definition",
+    "stem": "Which is the ITIL definition of a process?",
+    "options": [
+      "A set of organizational resources designed for performing work or accomplishing an objective",
+      "A series of steps used to create and deliver products and services to consumers",
+      "A set of interrelated or interacting activities that transform inputs into outputs",
+      "A recommendation that guides an organization in all circumstances"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A process is a set of interrelated or interacting activities that transform inputs into outputs. A value stream is the end-to-end series of steps; a practice is a set of resources for work; a guiding principle is a recommendation."
+  },
+  {
+    "id": "ITIL-D-018",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relationship management purpose",
+    "stem": "A new head of a business unit is appointed. The IT organization arranges meetings to understand her priorities and to explain how its services can support them. Which practice is this?",
+    "options": [
+      "Service request management",
+      "Relationship management",
+      "Supplier management",
+      "Service desk"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Relationship management establishes and nurtures links between the organization and its stakeholders at strategic and tactical levels, including identifying and analysing stakeholders and understanding their priorities."
+  },
+  {
+    "id": "ITIL-D-019",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CI model guiding principles",
+    "stem": "Which statement about the continual improvement model is CORRECT?",
+    "options": [
+      "It should be used only for large strategic initiatives that need approval from the board of directors",
+      "Its steps must each be completed fully, in order, with no iterations",
+      "It applies only to the organization's IT infrastructure",
+      "It can be applied to improvements of any size, from a small fix to a whole organization"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The continual improvement model is a high-level guide that applies to the service value system as a whole and to individual products, services, practices and components, at any scale. It reflects the guiding principles, including progressing iteratively."
+  },
+  {
+    "id": "ITIL-D-020",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Incident and problem link",
+    "stem": "Which statement about incident management and problem management is CORRECT?",
+    "options": [
+      "Problem management must finish before an incident can be resolved",
+      "They are the same practice, with problem management as its final step",
+      "They are closely linked, but they are separate practices with different purposes",
+      "Incident management finds the root causes and problem management restores the service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Incident management restores service; problem management finds and manages causes. A problem may be investigated long after the incident is resolved, and workarounds from problem management help incident management."
+  },
+  {
+    "id": "ITIL-D-021",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service offering definition",
+    "stem": "What is a service offering?",
+    "options": [
+      "A written agreement between a service provider and a customer stating the expected service levels",
+      "A request from a user that initiates a service action which has been agreed as a normal part of delivery",
+      "A formal description of one or more services, designed to address the needs of a target consumer group",
+      "A list of every product an organization has built, with the resources each one uses"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A service offering is a formal description of one or more services designed for a target consumer group, and can include goods, access to resources and service actions. The agreement on service levels is an SLA."
+  },
+  {
+    "id": "ITIL-D-022",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Collaboration stakeholders",
+    "stem": "When applying 'collaborate and promote visibility', who should be involved in an improvement initiative?",
+    "options": [
+      "The right people, in the right roles, including those outside the immediate team where they are affected",
+      "Everybody in the organization, at every stage, whether or not they are affected",
+      "Only the senior managers, because they will take all of the decisions on the scope and outcome of the initiative",
+      "Only the IT staff, because business stakeholders do not understand technical issues"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Collaboration means involving the right people in the right roles, which can include customers, suppliers, developers and users. Involving everyone at every stage is impractical; involving too few creates silos."
+  },
+  {
+    "id": "ITIL-D-023",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "SVS components",
+    "stem": "Which is a component of the ITIL service value system?",
+    "options": [
+      "Service level agreements",
+      "Governance",
+      "The service desk",
+      "The change schedule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The components of the service value system are the guiding principles, governance, the service value chain, practices and continual improvement. The other options belong to individual practices."
+  },
+  {
+    "id": "ITIL-D-024",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Supplier management purpose",
+    "stem": "What is the purpose of the supplier management practice?",
+    "options": [
+      "To set clear business-based targets for service performance and assess delivery against them",
+      "To make new and changed services and features available for use by the organization's consumers",
+      "To establish and nurture the links between the organization and its customers at strategic and tactical levels",
+      "To ensure the organization's suppliers and their performance are managed appropriately to support the provision of quality products and services"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Supplier management ensures suppliers and their performance are managed appropriately to support the seamless provision of quality products and services, including creating closer relationships with key suppliers."
+  },
+  {
+    "id": "ITIL-D-025",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "CIR prioritization",
+    "stem": "An organization has collected many improvement ideas but limited resources. How should it decide which to work on?",
+    "options": [
+      "Implement all of them at once, so no idea is lost",
+      "Implement the ideas strictly in the order in which they were received, so that every contributor is treated fairly",
+      "Implement only the ideas that are free of cost",
+      "Record and prioritize them in a continual improvement register, based on the value each can deliver"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ideas are logged in a CIR and prioritized as new ones are documented, based on factors such as value, cost and urgency. Ideas are re-evaluated as circumstances change."
+  },
+  {
+    "id": "ITIL-D-026",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Problem identification sources",
+    "stem": "Which is a source that problem management uses to identify problems?",
+    "options": [
+      "Customer satisfaction scores for the service desk",
+      "The budget for the next financial year",
+      "The list of standard changes approved and scheduled for implementation in the next quarter",
+      "Information from suppliers, partners, developers and testers about known issues"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Problem identification uses incident trend analysis, recurring issues, major incident reviews and information from suppliers, partners, developers and testers about potential causes."
+  },
+  {
+    "id": "ITIL-D-027",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Outcome",
+    "stem": "Which is the ITIL definition of an outcome?",
+    "options": [
+      "The amount of money spent on a specific activity or resource",
+      "The perceived benefits, usefulness and importance of something",
+      "A result for a stakeholder enabled by one or more outputs",
+      "A tangible or intangible deliverable of an activity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An outcome is a result for a stakeholder enabled by one or more outputs. An output is a deliverable, value is perceived benefit, and cost is money spent."
+  },
+  {
+    "id": "ITIL-D-028",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cooperation and collaboration",
+    "stem": "Which outcome does 'collaborate and promote visibility' aim for?",
+    "options": [
+      "Fewer people involved so that decisions can be taken faster",
+      "Better buy-in, more relevance and a greater likelihood of long-term success",
+      "Teams working independently so that each one can optimize its own part of the work",
+      "Information kept on a need-to-know basis to avoid confusion"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Working together across boundaries produces results with greater buy-in, more relevance to objectives and a better chance of long-term success. Hiding information and isolated teams lead to assumptions and silos."
+  },
+  {
+    "id": "ITIL-D-029",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Governance",
+    "stem": "Which statement about governance in the service value system is CORRECT?",
+    "options": [
+      "It is the practice that authorizes changes before they are deployed",
+      "It is the means by which an organization is directed and controlled",
+      "It is the value chain activity that engages with external suppliers",
+      "It is the set of targets that measures each service's performance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Governance is the means by which an organization is directed and controlled. The governing body evaluates, directs and monitors the organization's activities."
+  },
+  {
+    "id": "ITIL-D-030",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Event types",
+    "stem": "A monitoring tool reports that a server's disk has passed 75 percent full. No service is affected yet, but acting now would stop the disk filling up and causing an outage. How is this event BEST classified?",
+    "options": [
+      "A warning event",
+      "An informational event",
+      "An exception event",
+      "An incident"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Monitoring and event management distinguishes informational events (no action needed), warning events (allow action before a negative impact) and exception events (a breach of a norm requiring action)."
+  },
+  {
+    "id": "ITIL-D-031",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Change authority definition",
+    "stem": "Identify the missing words in the following sentence. The person or group responsible for authorizing a change is called the [?].",
+    "options": [
+      "service owner",
+      "change manager",
+      "change authority",
+      "change requester"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ITIL calls the person or group who authorizes a change the change authority. It should be appropriate to the type of change, and different change types can have different change authorities."
+  },
+  {
+    "id": "ITIL-D-032",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Problem prioritization",
+    "stem": "How does problem control prioritize problems?",
+    "options": [
+      "Based on the risk they pose to the organization",
+      "Based on which team is available to analyse them",
+      "Based on the date the first related incident was logged",
+      "Based on how many users call the service desk about them in one day"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In problem control, problems are prioritized for investigation and analysis according to the risk they pose, considering both likelihood and impact."
+  },
+  {
+    "id": "ITIL-D-033",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk",
+    "stem": "Which is the ITIL definition of a risk?",
+    "options": [
+      "An unplanned interruption to a service or a reduction in the quality of a service",
+      "Any change of state that has significance for the management of a service",
+      "The cause, or potential cause, of one or more incidents that affect a service and the users who depend on it",
+      "A possible event that could cause harm or loss, or make it more difficult to achieve objectives"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A risk is a possible event that could cause harm or loss, or make it more difficult to achieve objectives; it can also be seen as uncertainty of outcome. The other options define an incident, a problem and an event."
+  },
+  {
+    "id": "ITIL-D-034",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Holistic four dimensions",
+    "stem": "An organization designs a new service and considers its staff skills, the technology needed, its supplier contracts and the value streams involved. Which guiding principle is it applying?",
+    "options": [
+      "Think and work holistically",
+      "Keep it simple and practical",
+      "Start where you are",
+      "Progress iteratively with feedback"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Thinking holistically means taking an end-to-end view of the service and how all of its parts work together, which includes all four dimensions of service management."
+  },
+  {
+    "id": "ITIL-D-035",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Silos",
+    "stem": "Why is the service value system designed to work as a single system?",
+    "options": [
+      "To avoid organizational silos that reduce flexibility and agility",
+      "To remove the need for governance across the organization",
+      "To allow each department to optimize its own work independently",
+      "To ensure every team follows the same fixed sequence of activities"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Silos make it hard to respond to change and slow down work across teams. The service value system is designed to enable integration and coordination across the organization."
+  },
+  {
+    "id": "ITIL-D-036",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monitoring purpose scenario",
+    "stem": "Which practice systematically observes service components and records changes of state that need attention?",
+    "options": [
+      "Monitoring and event management",
+      "Problem management",
+      "Incident management",
+      "Service configuration management"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Monitoring and event management observes services and components and records and reports selected changes of state as events. Some events may then start incident management."
+  },
+  {
+    "id": "ITIL-D-037",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Emergency change testing",
+    "stem": "Which statement about emergency changes is CORRECT?",
+    "options": [
+      "They never need authorization because they must be done immediately",
+      "They must wait for the next scheduled meeting of the change authority",
+      "Testing may be reduced, or in extreme cases skipped, if deploying the change at once is judged a necessary risk",
+      "They are pre-authorized and documented in advance as standard procedures, so they never need to be assessed or tested again"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Emergency changes are expedited. Some documentation may be completed after implementation, and testing may be reduced or, in extreme cases, skipped when deploying at once is judged a necessary risk, but the change still needs an appropriate authority."
+  },
+  {
+    "id": "ITIL-D-038",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Problem four dimensions",
+    "stem": "Which statement about problem analysis is CORRECT?",
+    "options": [
+      "It is complete as soon as a workaround has been found",
+      "It should consider only the technology involved, since problems are always caused by technical faults in hardware or software components",
+      "It should consider all four dimensions of service management, because causes may lie in people, processes, suppliers or technology",
+      "It should be done by the person who first reported the incident"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Problems can be caused by any combination of the four dimensions, for example a supplier issue or a process gap, so problem analysis should consider them all."
+  },
+  {
+    "id": "ITIL-D-039",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Risks removed and imposed",
+    "stem": "A small firm moves its file storage to a cloud service. Which is a risk IMPOSED on the firm by using the service?",
+    "options": [
+      "Running out of disk space on the office file server",
+      "A burglar stealing the office server and all of its backup tapes",
+      "Losing files when an ageing office server's disks fail",
+      "Losing access to files during an outage at the cloud provider"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Using a service removes some risks from the consumer (failing local disks, theft of hardware, running out of capacity) and imposes others, such as dependence on the provider's availability."
+  },
+  {
+    "id": "ITIL-D-040",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple and practical outcome thinking",
+    "stem": "Which approach does 'keep it simple and practical' recommend when designing a process?",
+    "options": [
+      "Add extra approval steps to every process so that risks are always controlled",
+      "Write a separate procedure for every exception that could happen, so that nothing is ever left to the judgement of staff",
+      "Design for the normal case and handle exceptions in a general way, rather than writing a rule for every exception",
+      "Copy the most detailed process available from another organization without change"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Keep it simple and practical favours outcome-based thinking and the minimum number of steps. Trying to provide a solution for every exception leads to over-complication."
+  },
+  {
+    "id": "ITIL-D-041",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Value chain activities count",
+    "stem": "How many activities are in the ITIL service value chain?",
+    "options": [
+      "Seven",
+      "Five",
+      "Four",
+      "Six"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The six value chain activities are plan, improve, engage, design and transition, obtain or build, and deliver and support."
+  },
+  {
+    "id": "ITIL-D-042",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Release and deployment",
+    "stem": "A team copies a new version of an app to the production servers on Monday but turns the new features on for users only on Friday, after training. Which statement is CORRECT?",
+    "options": [
+      "Deployment and release both happened on Monday",
+      "Deployment and release both happened on Friday",
+      "The release happened on Monday and the deployment happened on Friday",
+      "Deployment happened on Monday and the release happened on Friday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Deployment management moves components to live environments; release management makes new or changed features available for use. The two can be separate, for example with feature flags."
+  },
+  {
+    "id": "ITIL-D-043",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Change examples",
+    "stem": "A routine monthly password policy update has been carried out many times without problems, follows a documented procedure and was approved as a model. What type of change is it?",
+    "options": [
+      "Emergency change",
+      "Major change",
+      "Standard change",
+      "Normal change"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A well understood, low-risk change with a fully documented, pre-authorized procedure is a standard change."
+  },
+  {
+    "id": "ITIL-D-044",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Workaround value",
+    "stem": "Which statement about workarounds is CORRECT?",
+    "options": [
+      "They are permanent solutions that remove the cause of a problem",
+      "They are only allowed after a change request for them has been assessed and authorized by the change authority",
+      "They reduce or eliminate the impact of an incident or problem until a full resolution is available",
+      "They should not be documented, because they are temporary"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A workaround reduces or eliminates the impact of an incident or problem for which full resolution is not yet available. Workarounds are documented in problem records or known error records and improved over time."
+  },
+  {
+    "id": "ITIL-D-045",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Utility definition",
+    "stem": "Identify the missing word in the following sentence. Utility is the [?] offered by a product or service to meet a particular need.",
+    "options": [
+      "assurance",
+      "capacity",
+      "availability",
+      "functionality"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Utility is the functionality offered by a product or service to meet a particular need, often summarized as 'what the service does'. Availability and capacity are aspects of warranty."
+  },
+  {
+    "id": "ITIL-D-046",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Automation limits",
+    "stem": "Which statement about 'optimize and automate' is CORRECT?",
+    "options": [
+      "Every manual activity should be automated as soon as possible, whatever value it contributes, to reduce the cost of staff",
+      "Optimization is not needed if a process is going to be automated",
+      "Automation should replace all human judgement, including for complex decisions",
+      "Use human intervention only where it really adds value, and use automation to free people for that work"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "This principle aims to maximize the value of the work done by people and technology. Technology helps with frequent, repetitive tasks, freeing people for complex decision-making, and work should be optimized before it is automated."
+  },
+  {
+    "id": "ITIL-D-047",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deliver and support",
+    "stem": "Which value chain activity ensures that services are delivered and supported according to agreed specifications and stakeholders' expectations?",
+    "options": [
+      "Obtain or build",
+      "Plan",
+      "Engage",
+      "Deliver and support"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Deliver and support ensures services are delivered and supported according to agreed specifications and stakeholders' expectations. Most incident handling and request fulfilment happen here."
+  },
+  {
+    "id": "ITIL-D-048",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Release definition",
+    "stem": "Which is the ITIL definition of a release?",
+    "options": [
+      "The movement of new or changed hardware or software into a live environment for the very first time",
+      "A formal authorization for a change to proceed into the change schedule",
+      "A version of a service or other configuration item, or a collection of them, made available for use",
+      "A planned interruption to a service in order to install a new component"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A release is a version of a service or other configuration item, or a collection of configuration items, made available for use. Moving components to live is deployment."
+  },
+  {
+    "id": "ITIL-D-049",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Change and value",
+    "stem": "What does change enablement balance when managing changes?",
+    "options": [
+      "The number of changes requested by users against the number of technical staff available to build and deploy them",
+      "The cost of each change against the budget of the department that requested it",
+      "The need to make beneficial changes with the need to protect customers and users from their adverse effects",
+      "The speed of the service desk against the speed of the deployment team"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Change enablement balances the need to make beneficial changes that deliver additional value with the need to protect customers and users from the adverse effect of changes."
+  },
+  {
+    "id": "ITIL-D-050",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service request types",
+    "stem": "Which of these is a service request?",
+    "options": [
+      "Responding to a firewall alert about an attack",
+      "Investigating why a database keeps running so slowly",
+      "Providing a new user with access to a shared drive",
+      "Restoring a website that has stopped responding"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Requests for access to a resource or service are service requests. Slow databases and outages are incidents (and possibly problems), and an attack alert is handled through security and incident processes."
+  },
+  {
+    "id": "ITIL-D-051",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Warranty aspects",
+    "stem": "A provider guarantees that its booking system will be available 99.9 percent of the time, will handle 5,000 users at once and will be restored within four hours after a disaster. What are these guarantees about?",
+    "options": [
+      "Warranty",
+      "Utility",
+      "Outputs",
+      "Service consumption"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Warranty usually relates to service levels for availability, capacity, security and continuity. These guarantees describe how the service will perform, not what it does."
+  },
+  {
+    "id": "ITIL-D-052",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Iterative large initiative",
+    "stem": "An organization plans a two-year transformation of its service management. How should 'progress iteratively with feedback' be applied?",
+    "options": [
+      "Complete the full two-year plan before seeking any feedback from stakeholders",
+      "Treat the initiative as too large for iterations and run it as a single project phase",
+      "Break the transformation into smaller iterations, each delivering something that can be evaluated",
+      "Deliver all changes on one date at the end so that users only need to adapt once"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Even large initiatives should be done iteratively. Breaking the work into smaller, manageable pieces, each with feedback, keeps it focused and lets it adapt to changing circumstances."
+  },
+  {
+    "id": "ITIL-D-053",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Design and transition",
+    "stem": "Which value chain activity ensures that products and services continually meet stakeholder expectations for quality, costs and time to market?",
+    "options": [
+      "Obtain or build",
+      "Design and transition",
+      "Deliver and support",
+      "Improve"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Design and transition ensures products and services continually meet stakeholder expectations for quality, costs and time to market."
+  },
+  {
+    "id": "ITIL-D-054",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Configuration relationships",
+    "stem": "During an outage, engineers need to know which services depend on a failed database server. Which practice provides this information?",
+    "options": [
+      "Deployment management",
+      "Information security management",
+      "Service configuration management",
+      "IT asset management"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Service configuration management maintains information about CIs and the relationships between them, often in a configuration management system, so the impact of a failed component can be understood."
+  },
+  {
+    "id": "ITIL-D-055",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SLA definition",
+    "stem": "What is a service level agreement?",
+    "options": [
+      "A documented agreement between a service provider and a customer that identifies both the services required and the expected level of service",
+      "A contract between a service provider and one of its external suppliers that defines the penalties for late or incomplete delivery of goods and services",
+      "A list of all services the provider offers, with prices and descriptions",
+      "A record of every incident that breached a target in the previous month"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An SLA is a documented agreement between a service provider and a customer that identifies both services required and the expected level of service. A list of all services is a service catalogue."
+  },
+  {
+    "id": "ITIL-D-056",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service request normal part",
+    "stem": "Which statement about service requests is CORRECT?",
+    "options": [
+      "They can only be raised by the customer who pays for the service",
+      "They are always caused by a failure of the service and should therefore be handled as incidents",
+      "They are unplanned and cannot be described in advance",
+      "They are a normal part of service delivery and are not a failure or degradation of service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each service request is a normal part of service delivery, initiated by a user, that has been agreed in advance. It is not a failure or degradation, which would be an incident."
+  },
+  {
+    "id": "ITIL-D-057",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholder value",
+    "stem": "Which statement about value in ITIL is CORRECT?",
+    "options": [
+      "Value is fixed once the service has been designed and agreed",
+      "Value is created only by the provider and then delivered to the consumer",
+      "Value is measured only by the price the consumer is willing to pay",
+      "Value is co-created by the provider and the consumer working together"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ITIL 4 moved from a model in which providers deliver value to one in which value is co-created through active collaboration between providers and consumers, and with other stakeholders."
+  },
+  {
+    "id": "ITIL-D-058",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Keep it simple principle",
+    "stem": "Which guiding principle recommends using the minimum number of steps to accomplish an objective?",
+    "options": [
+      "Keep it simple and practical",
+      "Optimize and automate",
+      "Think and work holistically",
+      "Focus on value"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Keep it simple and practical says to use the minimum number of steps needed and to eliminate anything that does not provide value. Optimize and automate is about maximizing value from work, often after simplifying."
+  },
+  {
+    "id": "ITIL-D-059",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Improve activity",
+    "stem": "Which value chain activity ensures continual improvement of products, services and practices across all value chain activities and the four dimensions?",
+    "options": [
+      "Improve",
+      "Engage",
+      "Plan",
+      "Design and transition"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The purpose of improve is to ensure continual improvement of products, services and practices across all value chain activities and the four dimensions of service management."
+  },
+  {
+    "id": "ITIL-D-060",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IT asset management purpose",
+    "stem": "What is the purpose of the IT asset management practice?",
+    "options": [
+      "To plan and manage the full lifecycle of all IT assets",
+      "To protect the information assets of the organization",
+      "To manage the configuration and relationships of every CI",
+      "To move new or changed software into live environments"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "IT asset management plans and manages the full lifecycle of all IT assets, to maximize value, control costs, manage risks and support decisions about purchase, re-use, retirement and disposal."
+  },
+  {
+    "id": "ITIL-D-061",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SLM skills",
+    "stem": "Which skills are MOST important for staff working in service level management?",
+    "options": [
+      "Hardware procurement and asset disposal",
+      "Relationship management, business liaison and business analysis",
+      "Deep technical skills in networks, servers, storage and databases",
+      "Software development and automated testing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Service level management needs relationship management, business liaison, business analysis and commercial or supplier management skills, so that targets reflect what the business needs."
+  },
+  {
+    "id": "ITIL-D-062",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Request fulfilment times",
+    "stem": "What should service request management do about fulfilment times?",
+    "options": [
+      "Set clear expectations of fulfilment times, based on what the organization can realistically deliver",
+      "Use the same fulfilment time for every request, whatever its complexity",
+      "Avoid telling users how long their requests will take, so that any delays do not cause complaints to the service desk",
+      "Let each technician decide how long a request should take"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Expectations of fulfilment times should be set clearly, based on what the organization can realistically deliver, and requests should use workflow models with standard steps."
+  },
+  {
+    "id": "ITIL-D-063",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Service provision",
+    "stem": "Which activity is part of SERVICE PROVISION rather than service consumption?",
+    "options": [
+      "Managing the consumer's own resources that are needed to use the service",
+      "Users carrying out actions that use the service",
+      "The consumer receiving and acknowledging goods",
+      "Managing the provider's resources needed to deliver the service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Service provision covers what the provider does, including managing its resources, giving users access and fulfilling agreed service actions. Managing the consumer's own resources, using the service and receiving goods are service consumption."
+  },
+  {
+    "id": "ITIL-D-064",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Visibility of work",
+    "stem": "A service team uses a board that shows every piece of work in progress, who owns it and where it is blocked. Which guiding principle does this MOST directly support?",
+    "options": [
+      "Collaborate and promote visibility",
+      "Focus on value",
+      "Start where you are",
+      "Optimize and automate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Making work visible, for example on a board or in a workflow tool, helps identify bottlenecks, waste and blocked items, and supports better decisions. That is the visibility part of this principle."
+  },
+  {
+    "id": "ITIL-D-065",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Opportunity and demand",
+    "stem": "A user asks the service desk for access to a new reporting tool. What is this request, from the point of view of the service value system?",
+    "options": [
+      "Opportunity",
+      "Value",
+      "Governance",
+      "Demand"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Demand is the need or desire for products and services among internal and external consumers. Opportunity is an option or possibility to add value or otherwise improve the organization."
+  },
+  {
+    "id": "ITIL-D-066",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Continual improvement purpose",
+    "stem": "Which practice aligns the organization's practices and services with changing business needs through the ongoing improvement of products, services and practices?",
+    "options": [
+      "Continual improvement",
+      "Change enablement",
+      "Relationship management",
+      "Service level management"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The purpose of continual improvement is to align the organization's practices and services with changing business needs through ongoing improvement of products, services, practices or any element involved in managing them."
+  },
+  {
+    "id": "ITIL-D-067",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SLM end-to-end view",
+    "stem": "Which statement about service level management is CORRECT?",
+    "options": [
+      "It should measure the availability of each server separately and ignore the business view of the service",
+      "It is responsible for fixing incidents that cause a target to be breached",
+      "It needs an end-to-end, outcome-based view of services, not only the performance of individual components",
+      "It is used only when a service is first designed and not after it goes live"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Service level management provides end-to-end visibility of the organization's services and should capture the overall customer experience, not just component metrics. It continues throughout the life of the service."
+  },
+  {
+    "id": "ITIL-D-068",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Virtual service desk",
+    "stem": "Which statement about a virtual service desk is CORRECT?",
+    "options": [
+      "It is not allowed under ITIL because users need a physical desk",
+      "Its agents can work from several locations and appear to users as one team",
+      "It is staffed entirely by chatbots and automated tools, with no human agents at all",
+      "It can only be contacted by email"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A virtual service desk lets agents work from multiple locations, geographically dispersed, supported by technology so the desk still acts as one point of contact."
+  },
+  {
+    "id": "ITIL-D-069",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Output",
+    "stem": "A project team produces a new set of network diagrams for an operations team. What are the diagrams?",
+    "options": [
+      "A service",
+      "A value stream",
+      "An outcome",
+      "An output"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An output is a tangible or intangible deliverable of an activity. The outcome would be the result the operations team achieves using the diagrams, such as diagnosing faults faster."
+  },
+  {
+    "id": "ITIL-D-070",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Principles in any initiative",
+    "stem": "Which statement about how the guiding principles are used is CORRECT?",
+    "options": [
+      "They are used only when designing brand new services, and never when improving the existing services or practices",
+      "They can be adopted and adapted to guide decisions in any initiative and in all relationships with stakeholders",
+      "They replace the need for governance, practices and the service value chain",
+      "They are used only by the service desk when dealing directly with users"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The guiding principles apply to almost any initiative and relationship, at every level of the organization. They are one component of the service value system and work alongside governance, practices and the value chain."
+  },
+  {
+    "id": "ITIL-D-071",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Dimensions apply everywhere",
+    "stem": "Which statement about the four dimensions of service management is CORRECT?",
+    "options": [
+      "Each dimension is managed by a separate team that does not need to work with the others",
+      "They replace the need for guiding principles in the service value system",
+      "They apply to the service value system as a whole and to each product and service",
+      "They apply only to the design of new services, not to their operation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The four dimensions should be considered for the whole service value system and for every product and service. Failing to address all four can lead to services that do not deliver value as intended."
+  },
+  {
+    "id": "ITIL-D-072",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Service desk purpose",
+    "stem": "Which practice captures demand for incident resolution and service requests, and is the entry point and single point of contact for users?",
+    "options": [
+      "Relationship management",
+      "Service request management",
+      "Incident management",
+      "Service desk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The service desk captures demand for incident resolution and service requests, and is the entry point and single point of contact for the service provider with all of its users."
+  },
+  {
+    "id": "ITIL-D-073",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Customer feedback",
+    "stem": "A provider sends a short survey to users after each support interaction and reviews the results with the customer every quarter. Which practice uses this information to manage service targets?",
+    "options": [
+      "Service level management",
+      "Deployment management",
+      "Monitoring and event management",
+      "Change enablement"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Customer feedback, from surveys and key business measures, is one of the information sources for service level management, alongside customer engagement, operational metrics and business metrics."
+  },
+  {
+    "id": "ITIL-D-074",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Service desk understanding",
+    "stem": "Why should service desk staff understand the wider organization and its business processes?",
+    "options": [
+      "So they can understand the user's situation and the impact of an issue on the business",
+      "So they can resolve every technical fault themselves without involving any of the support teams",
+      "So they can set the targets in service level agreements",
+      "So they can authorize changes requested by business users"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A key aspect of a good service desk is practical understanding of the wider organization, its business processes and users, so it can understand impact, prioritize and communicate well."
+  },
+  {
+    "id": "ITIL-D-075",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cost",
+    "stem": "Which statement about costs in a service relationship is CORRECT?",
+    "options": [
+      "Costs imposed on the consumer are not part of the consumer's value assessment",
+      "A service always removes all costs from the consumer",
+      "A service can remove some costs from the consumer and impose others on it",
+      "Only the provider needs to understand the costs of a service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From the consumer's view there are costs removed (part of the value proposition) and costs imposed (such as fees, training and infrastructure). Both are weighed when the consumer judges the value of the service."
+  },
+  {
+    "id": "ITIL-D-076",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Focus on value internal",
+    "stem": "A team in IT builds reporting tools for the finance department of its own company. Which statement about 'focus on value' is CORRECT?",
+    "options": [
+      "Finance is a service consumer, so the team should understand what finance values",
+      "Focus on value applies only to the external, paying customers of the company and not to internal teams",
+      "Value is irrelevant because no money changes hands inside the company",
+      "The team should decide what is valuable without consulting finance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Service consumers can be internal or external. Focusing on value means understanding what each consumer values, whether or not there is a direct payment."
+  },
+  {
+    "id": "ITIL-D-077",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSystem",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Practices across activities",
+    "stem": "Which statement about practices and value chain activities is CORRECT?",
+    "options": [
+      "Value chain activities are carried out without using practices",
+      "Practices are used only in the deliver and support activity",
+      "Each practice contributes to exactly one value chain activity",
+      "One practice can contribute to many value chain activities"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Value chain activities use different combinations of practices, and a practice such as service desk or relationship management can contribute to several activities, such as engage and deliver and support."
+  },
+  {
+    "id": "ITIL-D-078",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilPracticePurpose",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Change enablement purpose",
+    "stem": "What is the purpose of the change enablement practice?",
+    "options": [
+      "To maximize successful changes by assessing risks, authorizing changes and managing the change schedule",
+      "To reduce the likelihood and impact of incidents by finding their causes",
+      "To move new or changed hardware, software, documentation and processes into the live environments of the organization",
+      "To make new and changed services and features available for use"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Change enablement maximizes the number of successful service and product changes by ensuring risks are properly assessed, authorizing changes to proceed and managing the change schedule."
+  },
+  {
+    "id": "ITIL-D-079",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilChangeImprove",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Take action",
+    "stem": "Which step of the continual improvement model carries out the plan for the improvement?",
+    "options": [
+      "Where do we want to be?",
+      "How do we get there?",
+      "Take action",
+      "Did we get there?"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "'Take action' executes the plan for the improvement, which may follow a waterfall or an agile approach, and stays open to feedback and changing circumstances."
+  },
+  {
+    "id": "ITIL-D-080",
+    "section": "itil",
+    "test": 0,
+    "module": 1,
+    "domain": "itilSupport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Service desk automation",
+    "stem": "Which statement about automation on the service desk is CORRECT?",
+    "options": [
+      "Automation means a service desk no longer needs any human agents",
+      "Automation and self-service help, but people are still needed for complex issues and empathy",
+      "Automation is used only to log incidents, never to fulfil requests",
+      "Automation should be avoided on the service desk, because users always prefer to speak to a real person"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With more automation, chatbots and self-service portals, service desks can focus on supporting people and the business. Complex issues and situations needing empathy still need people."
+  }
+]

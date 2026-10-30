@@ -1,0 +1,3410 @@
+{
+  "stimuli": [
+    {
+      "id": "CTET-P1",
+      "title": "Read the passage and answer the questions that follow.",
+      "text": "When the bus stopped running to Kheda village during the rains, the small library in the panchayat hall became the busiest room for miles. It had only two shelves, a mat and a window that let in a square of grey light, but every afternoon children came in with wet feet and left with their heads full of other places.\n\nThe library was looked after by Meena, a girl of fourteen who had been given the key because, as the sarpanch said, she was the only person who always returned it. Meena did not simply hand out books. She noticed who lingered near the picture books and who pretended not to care. She would leave a book about trains beside a boy who loved engines, or read the first page of a mystery aloud and then stop, so that the listeners had to finish it themselves.\n\nSome elders grumbled that reading stories was a waste of time when there was work to be done. Meena never argued. Instead, she asked the children to write down the stories their grandparents told, and soon the shelves held a new kind of book: thin notebooks full of village songs, old floods and remedies for coughs. The grumbling became quieter. It is hard to call reading useless when your own words are on the shelf."
+    },
+    {
+      "id": "CTET-P2",
+      "title": "Read the poem and answer the questions that follow.",
+      "text": "The clouds came marching over the hill,\nWith drums of thunder, loud and shrill;\nThe dusty field held up its face,\nAnd waited for the rain's embrace.\n\nThe first drops fell like scattered seeds,\nOn thirsty roots and tired weeds;\nThe frogs began their evening choir,\nThe farmer smiled beside his fire.\n\nO patient earth, you never ask,\nYet bear each season's heavy task;\nYou wait through heat without a sound,\nThen bloom the moment rain is found."
+    },
+    {
+      "id": "CTET-P3",
+      "title": "Read the passage and answer the questions that follow.",
+      "text": "Long before taps and pipelines, people in the dry western parts of India found clever ways to save every drop of rain. One of the most beautiful was the stepwell, a deep well reached by long flights of stone steps. As the water level rose in the monsoon and fell in summer, people simply walked down as many steps as they needed to reach it.\n\nStepwells were more than places to collect water. Because they went deep into the ground, the air at the bottom stayed cool even in the hottest months, and travellers rested there in the shade. Many were decorated with carved pillars and arches, which shows how much the community valued them.\n\nWhen piped water arrived, many stepwells were neglected. Rubbish collected in them and some were filled in completely. In recent years, however, several towns have cleaned and repaired their old stepwells. Engineers have found that these structures still help to recharge groundwater, the water stored beneath the soil. In a time of falling water tables, an old idea is proving to be surprisingly modern."
+    },
+    {
+      "id": "CTET-P4",
+      "title": "Read the poem and answer the questions that follow.",
+      "text": "Before the sun has rubbed its eyes,\nThe market starts to wake and rise;\nThe sabziwala sets his rows\nOf ladyfinger, beans and tomatoes.\n\nThe tea is boiling, sweet and strong,\nThe kettle hums a whistling song;\nA cart rolls by with squeaking wheels,\nAnd sells hot rotis, simple meals.\n\nBy noon the busy crowd is gone,\nThe empty baskets, one by one,\nAre stacked away beneath the shade,\nTill morning when the stalls are made."
+    },
+    {
+      "id": "CTET-P5",
+      "title": "Read the passage and answer the questions that follow.",
+      "text": "When the children of Class 4 at a small school in Nashik asked their teacher why the school had no garden, she gave them a surprising answer: 'Because nobody has made one yet.' The next week, a corner of the playground that had been full of broken bricks was cleared by thirty pairs of small hands.\n\nThe children soon discovered that gardening was full of questions. Why did the spinach grow well near the wall but wilt in the open? Why did ants march up the stems of the brinjal plants? They measured, they argued, and they kept a diary with drawings of every plant. One boy, who rarely spoke in class, became the expert on earthworms and was always asked to explain why they were good for the soil.\n\nBy the end of the year, the garden had given the school three baskets of vegetables for the midday meal. But the teacher said the real harvest was something else. The children had learned to wonder, to test their guesses and to listen to one another."
+    }
+  ],
+  "questions": [
+    {
+      "id": "CTET-T1-001",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Principles of development",
+      "stem": "Development proceeds from the head towards the feet. This principle is called",
+      "options": [
+        "cephalocaudal development",
+        "proximodistal development",
+        "differentiation",
+        "integration"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Cephalocaudal means head to tail: control of the head comes before control of the trunk and legs. Proximodistal is from the centre of the body outwards."
+    },
+    {
+      "id": "CTET-T1-002",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Principles of development",
+      "stem": "Which statement about development is correct?",
+      "options": [
+        "It stops completely once a child starts school",
+        "It depends only on heredity and not on surroundings",
+        "It happens at exactly the same rate in all children everywhere",
+        "It is continuous, but its rate differs from child to child"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Development is continuous and follows a broadly predictable sequence, but individual children move through it at different rates, shaped by both heredity and environment."
+    },
+    {
+      "id": "CTET-T1-003",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Heredity and environment",
+      "stem": "A child's height is likely to be influenced by",
+      "options": [
+        "nutrition alone, as genes do not matter",
+        "the school the child attends",
+        "both heredity and nutrition",
+        "heredity alone, as it is fixed at birth"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Genes set a range for height, and nutrition and health decide where in that range a child ends up. Development is the interaction of heredity and environment."
+    },
+    {
+      "id": "CTET-T1-004",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Piaget",
+      "stem": "According to Piaget, a child of 8 who understands that the amount of water stays the same when it is poured into a taller glass has mastered",
+      "options": [
+        "egocentrism",
+        "object permanence",
+        "animism",
+        "conservation"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Conservation, the idea that quantity stays the same when shape changes, is a key achievement of the concrete operational stage (about 7 to 11 years)."
+    },
+    {
+      "id": "CTET-T1-005",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Piaget",
+      "stem": "In which of Piaget's stages are most children of Classes 1 and 2 (ages 6 to 7)?",
+      "options": [
+        "Sensorimotor",
+        "Preoperational moving to concrete operational",
+        "Formal operational moving back to concrete operational",
+        "Formal operational"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The preoperational stage runs roughly from 2 to 7 years and concrete operations from 7 to 11, so most children in Classes 1 and 2 are moving from one to the other. Formal operations begin at about 11."
+    },
+    {
+      "id": "CTET-T1-006",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Vygotsky",
+      "stem": "In Vygotsky's theory, the gap between what a child can do alone and what she can do with help is the",
+      "options": [
+        "zone of proximal development",
+        "level of conventional morality",
+        "period of moral realism",
+        "stage of concrete operations"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The zone of proximal development (ZPD) is the range of tasks a child can do with guidance but not yet alone. Teaching aimed at the ZPD, with scaffolding, moves learning forward."
+    },
+    {
+      "id": "CTET-T1-007",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Kohlberg",
+      "stem": "A child says, 'I will not take the pencil because the teacher will punish me.' In Kohlberg's theory, this reasoning belongs to the",
+      "options": [
+        "conventional level",
+        "social contract stage",
+        "post-conventional level",
+        "pre-conventional level"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Avoiding punishment is stage 1 of the pre-conventional level. Conventional reasoning appeals to approval and rules; post-conventional reasoning appeals to principles and social contracts."
+    },
+    {
+      "id": "CTET-T1-008",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Gender as a social construct",
+      "stem": "Which classroom practice helps to challenge gender stereotypes?",
+      "options": [
+        "Giving boys and girls the same turns at leading and at cleaning",
+        "Seating boys and girls apart for every activity",
+        "Asking only the girls to decorate the class noticeboard for festivals",
+        "Choosing only the boys to carry the sports equipment"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Sharing all roles equally shows that tasks are not fixed by gender. The other practices reinforce the idea that some jobs belong to boys or girls."
+    },
+    {
+      "id": "CTET-T1-009",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inclusive education",
+      "stem": "Inclusive education means that",
+      "options": [
+        "children with disabilities are taught separately in special schools near home",
+        "children with disabilities join a regular class only for games",
+        "only children who pass an entry test are admitted to a school",
+        "all children learn together in regular schools, with support as needed"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Inclusion places every child, including children with disabilities and those from disadvantaged groups, in the regular classroom, and changes teaching and support to fit them. Separate schooling is segregation; part-time joining is integration at best."
+    },
+    {
+      "id": "CTET-T1-010",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Children with special needs",
+      "stem": "A Class 3 child reads 'was' as 'saw' and confuses b and d long after classmates have stopped. The teacher should first suspect",
+      "options": [
+        "dyscalculia",
+        "dyslexia",
+        "dyspraxia",
+        "hyperopia"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Persistent letter and word reversals with reading difficulty are a common sign of dyslexia, a learning disability in reading. Dyscalculia is about numbers and dyspraxia about motor coordination."
+    },
+    {
+      "id": "CTET-T1-011",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Children's errors",
+      "stem": "A child writes 'goed' instead of 'went'. The teacher should see this error as",
+      "options": [
+        "evidence of a serious learning disability",
+        "proof that the child has not been paying attention in English lessons",
+        "a reason to make the child copy 'went' fifty times",
+        "a sign the child is applying a rule she has worked out"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Over-regularising ('goed') shows the child has discovered the past tense rule and is applying it. Errors are windows into children's thinking, not signs of carelessness."
+    },
+    {
+      "id": "CTET-T1-012",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constructivism",
+      "stem": "In a constructivist classroom, the teacher's main role is to",
+      "options": [
+        "create situations in which children build their own understanding",
+        "deliver facts clearly so that children can copy them accurately into notebooks",
+        "test children often and rank them by their marks",
+        "keep the class silent so that every child listens at all times"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Constructivism holds that learners construct knowledge through activity, discussion and reflection. The teacher is a facilitator, not a transmitter of facts."
+    },
+    {
+      "id": "CTET-T1-013",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Motivation",
+      "stem": "Which is an example of intrinsic motivation?",
+      "options": [
+        "Reading a book to avoid being scolded",
+        "Reading a book because the story is exciting",
+        "Reading a book because a prize has been promised by the teacher",
+        "Reading a book to win a star on the chart"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Intrinsic motivation comes from interest in the activity itself. Stars, prizes and avoiding scolding are extrinsic."
+    },
+    {
+      "id": "CTET-T1-014",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Assessment",
+      "stem": "Assessment for learning in the classroom is mainly meant to",
+      "options": [
+        "rank children for the annual prize-giving ceremony",
+        "decide which children should be detained in the same class",
+        "fill in the report card at the end of the year",
+        "find out where children are, so teaching can be adjusted"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Assessment for learning is formative: ongoing observation, questions and feedback used to improve teaching and learning while it is happening."
+    },
+    {
+      "id": "CTET-T1-015",
+      "section": "cdp",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 3,
+      "format": "multi",
+      "skill": "Children's thinking",
+      "stem": "A Class 4 teacher wants children to think rather than memorise. Choose two questions that best do this.",
+      "select": 2,
+      "options": [
+        "What is the name of the green colouring in leaves?",
+        "Which page of the book is the plant chapter on?",
+        "Why do you think the plant near the window grew taller?",
+        "How could we find out which soil holds the most water?"
+      ],
+      "correct": [
+        2,
+        3
+      ],
+      "explanation": "Open-ended 'why' and 'how could we find out' questions ask children to reason and plan an investigation. Naming a term or finding a page is recall."
+    },
+    {
+      "id": "CTET-T1-016",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Comprehension: detail",
+      "stimulusId": "CTET-P1",
+      "stem": "Why did the library become the busiest room for miles?",
+      "options": [
+        "Meena gave sweets to every child who borrowed a book",
+        "The sarpanch ordered all the children to attend it daily",
+        "The bus to the village stopped running during the rains",
+        "It was the only room in the village with electric lights"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first sentence links the two: when the bus stopped running in the rains, the library became the busiest room. Nothing is said about orders, lights or sweets."
+    },
+    {
+      "id": "CTET-T1-017",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comprehension: inference",
+      "stimulusId": "CTET-P1",
+      "stem": "Why did Meena read only the first page of a mystery aloud?",
+      "options": [
+        "To make the listeners curious enough to read the rest",
+        "To test whether the children could memorise the page",
+        "Because she did not have enough time to read the whole book aloud",
+        "Because the remaining pages of the book were damaged"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Stopping after the first page meant the listeners 'had to finish it themselves': she was using curiosity to draw them into reading on their own."
+    },
+    {
+      "id": "CTET-T1-018",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comprehension: main idea",
+      "stimulusId": "CTET-P1",
+      "stem": "How did Meena respond to the elders who called reading a waste of time?",
+      "options": [
+        "She closed the library during the working hours",
+        "She had the children write down their grandparents' stories",
+        "She argued with them at a meeting held in the panchayat hall",
+        "She asked the sarpanch to punish the elders"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says she 'never argued' and instead had the children record the stories their grandparents told, which made the elders' own words part of the library."
+    },
+    {
+      "id": "CTET-T1-019",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Vocabulary and grammar from the passage",
+      "stimulusId": "CTET-P1",
+      "stem": "Which word is closest in meaning to 'lingered' as used in the passage?",
+      "options": [
+        "Hurried",
+        "Borrowed",
+        "Stayed",
+        "Shouted"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "To linger is to stay on longer than needed, here near the picture books. Hurried is nearly the opposite; shouted and borrowed do not fit the sense."
+    },
+    {
+      "id": "CTET-T1-020",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Poem: figure of speech",
+      "stimulusId": "CTET-P2",
+      "stem": "'The clouds came marching over the hill' uses which figure of speech?",
+      "options": [
+        "Transferred epithet",
+        "Onomatopoeia",
+        "Hyperbole",
+        "Personification"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Marching is a human action given to clouds, which is personification. The line has no exaggeration (hyperbole), no sound word (onomatopoeia) and no adjective moved from a person to a thing (transferred epithet)."
+    },
+    {
+      "id": "CTET-T1-021",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Poem: comprehension",
+      "stimulusId": "CTET-P2",
+      "stem": "In the second stanza, the first raindrops are compared to",
+      "options": [
+        "a fire",
+        "drums",
+        "seeds",
+        "a choir"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'The first drops fell like scattered seeds' is a simile comparing raindrops to seeds. Drums describe the thunder and the choir describes the frogs."
+    },
+    {
+      "id": "CTET-T1-022",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Poem: central idea",
+      "stimulusId": "CTET-P2",
+      "stem": "Which quality of the earth does the last stanza praise?",
+      "options": [
+        "Its loudness",
+        "Its speed",
+        "Its anger",
+        "Its patience"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The poet calls it 'O patient earth' and says it waits through heat 'without a sound' before blooming, so patience is praised."
+    },
+    {
+      "id": "CTET-T1-023",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Poem: rhyme scheme",
+      "stimulusId": "CTET-P2",
+      "stem": "What is the rhyme scheme of each stanza of the poem?",
+      "options": [
+        "abba",
+        "abab",
+        "aabb",
+        "abcb"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each stanza is two rhyming couplets: hill and shrill, face and embrace; seeds and weeds, choir and fire. That pattern is aabb."
+    },
+    {
+      "id": "CTET-T1-024",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Learning and acquisition",
+      "stem": "Language acquisition differs from language learning because acquisition",
+      "options": [
+        "depends on memorising the rules of grammar before a child starts to speak",
+        "happens naturally through meaningful use, without formal teaching",
+        "can only take place inside a classroom with a textbook",
+        "is complete before a child is one year old"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Acquisition, as Krashen describes it, is subconscious and comes from exposure to meaningful language, as with a first language. Learning is the conscious study of rules."
+    },
+    {
+      "id": "CTET-T1-025",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Principles of language teaching",
+      "stem": "According to Chomsky, children are born with an innate capacity for language, which he called the",
+      "options": [
+        "operant conditioning chamber",
+        "zone of proximal development",
+        "language acquisition device",
+        "schema of conservation"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Chomsky proposed a language acquisition device (LAD), an inborn capacity that lets children work out the grammar of the language around them."
+    },
+    {
+      "id": "CTET-T1-026",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Grammar in context",
+      "stem": "The best way to teach grammar at the primary level is",
+      "options": [
+        "through drills of rules with no examples at all",
+        "through its use in stories, conversations and texts",
+        "by testing rules before children have heard the language used",
+        "by memorising definitions of the parts of speech"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Grammar is learned best in context: children notice how language works in meaningful texts and use it themselves. Memorised definitions rarely transfer to use."
+    },
+    {
+      "id": "CTET-T1-027",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Multilingualism",
+      "stem": "A child in Class 1 answers the teacher's English question in her home language. The teacher should",
+      "options": [
+        "accept the answer and use it as a bridge to English",
+        "send a note asking parents to stop the home language",
+        "tell her to answer only in English or not at all",
+        "ignore the answer until she replies in English"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "NCF 2005 treats multilingualism as a resource. Accepting the home language builds confidence and gives a base to connect new English words to."
+    },
+    {
+      "id": "CTET-T1-028",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Reading skills",
+      "stem": "A child reads a story aloud fluently but cannot say what it was about. She needs help with",
+      "options": [
+        "pronunciation of difficult words",
+        "reading for meaning",
+        "handwriting",
+        "spelling"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Fluent decoding without understanding means comprehension is missing. Reading is making meaning, so the teacher should use prediction, questions and retelling."
+    },
+    {
+      "id": "CTET-T1-029",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speaking and listening",
+      "stem": "Which activity best develops speaking skills in Class 2?",
+      "options": [
+        "Children listening silently to the teacher read",
+        "Children copying sentences from the blackboard",
+        "Children describing a picture to a partner",
+        "Children filling blanks in a grammar worksheet"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Speaking develops through using spoken language for real purposes, such as describing and telling. Copying and worksheets practise writing, and silent listening gives no speaking turn."
+    },
+    {
+      "id": "CTET-T1-030",
+      "section": "lang",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Remedial teaching",
+      "stem": "Remedial teaching in language is meant to",
+      "options": [
+        "address the specific difficulties a child has shown in assessment",
+        "punish children who scored poorly in the unit test",
+        "repeat the whole year's syllabus once again for every child in the class",
+        "give extra homework only to the highest scorers"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Remedial teaching diagnoses particular gaps, such as decoding or sentence structure, and plans targeted help for the children who need it."
+    },
+    {
+      "id": "CTET-T1-031",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Numbers and place value",
+      "stem": "What is the place value of 7 in 47,316?",
+      "options": [
+        "7,000",
+        "7",
+        "70,000",
+        "700"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In 47,316 the digits are 4 ten thousands, 7 thousands, 3 hundreds, 1 ten and 6 ones, so the 7 stands for 7,000."
+    },
+    {
+      "id": "CTET-T1-032",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Operations",
+      "stem": "Ravi buys 3 notebooks at Rs 45 each and pays with a Rs 200 note. How many rupees should he get back? Type the number only.",
+      "numeric": {
+        "answers": [
+          "65"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "3 x 45 = 135 rupees. Change = 200 - 135 = 65 rupees."
+    },
+    {
+      "id": "CTET-T1-033",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fractions",
+      "stem": "Priya, Arjun, Neha and Kabir each ate part of the same size of cake: 3/4, 2/3, 5/8 and 7/12 of a cake in that order. Who ate the most?",
+      "options": [
+        "Kabir",
+        "Neha",
+        "Priya",
+        "Arjun"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "With a common denominator of 24: Priya 3/4 = 18/24, Arjun 2/3 = 16/24, Neha 5/8 = 15/24, Kabir 7/12 = 14/24. Priya ate the most."
+    },
+    {
+      "id": "CTET-T1-034",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geometry",
+      "stem": "A dice used in Ludo is shaped like a cube. How many edges does it have?",
+      "options": [
+        "12",
+        "4",
+        "6",
+        "8"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A cube has 6 faces, 8 vertices (corners) and 12 edges."
+    },
+    {
+      "id": "CTET-T1-035",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Measurement: time",
+      "stem": "A train leaves Bhopal at 10:45 and reaches Jhansi at 13:20 the same day. How many minutes does the journey take? Type the number only.",
+      "numeric": {
+        "answers": [
+          "155"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "From 10:45 to 13:45 is 3 hours, or 180 minutes. 13:20 is 25 minutes earlier, so 180 - 25 = 155 minutes (2 hours 35 minutes)."
+    },
+    {
+      "id": "CTET-T1-036",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Factors and multiples",
+      "stem": "What is the smallest number that is exactly divisible by both 6 and 8?",
+      "options": [
+        "24",
+        "48",
+        "12",
+        "14"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Multiples of 8 are 8, 16, 24, ... and 24 is the first one also divisible by 6, so the LCM of 6 and 8 is 24."
+    },
+    {
+      "id": "CTET-T1-037",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Measurement: perimeter and area",
+      "stem": "A rectangular garden is 12 m long and 8 m wide. What is its perimeter?",
+      "options": [
+        "48 m",
+        "96 m",
+        "40 m",
+        "20 m"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Perimeter = 2 x (length + breadth) = 2 x (12 + 8) = 40 m. 96 is the area in square metres."
+    },
+    {
+      "id": "CTET-T1-038",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Patterns",
+      "stem": "What comes next in the pattern 2, 5, 10, 17, 26, ...?",
+      "options": [
+        "35",
+        "39",
+        "37",
+        "36"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The differences are 3, 5, 7, 9, so the next difference is 11 and 26 + 11 = 37. (Each term is one more than a square: 1+1, 4+1, 9+1, ...)"
+    },
+    {
+      "id": "CTET-T1-039",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Nature of mathematics",
+      "stem": "According to NCF 2005, the main goal of mathematics education in school is",
+      "options": [
+        "preparing children for board examinations",
+        "the mathematisation of the child's thinking",
+        "speed and accuracy in written calculation of long sums",
+        "memorising formulas for later classes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The NCF 2005 position paper states that the main goal is to develop the child's ability to mathematise: to think and reason mathematically, not just to calculate."
+    },
+    {
+      "id": "CTET-T1-040",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Concrete to abstract",
+      "stem": "When introducing the idea of place value in Class 2, a teacher should begin with",
+      "options": [
+        "bundles of sticks and loose sticks that children group",
+        "the abacus rules written on the blackboard for children to copy",
+        "a chart of numbers from 1 to 1,000 to copy",
+        "the definition of place value to memorise"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Young children understand place value by grouping real objects into tens and ones before moving to pictures and symbols (concrete, pictorial, abstract)."
+    },
+    {
+      "id": "CTET-T1-041",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Van Hiele levels",
+      "stem": "A Class 1 child recognises a square by its overall look but cannot say why it is a square. In the van Hiele model, she is at the level of",
+      "options": [
+        "informal deduction",
+        "rigour",
+        "visualisation",
+        "analysis"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "At level 0 (visualisation) shapes are recognised as wholes by appearance. At level 1 (analysis) children describe properties such as four equal sides and four right angles."
+    },
+    {
+      "id": "CTET-T1-042",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Errors and remedial teaching",
+      "stem": "A child writes 52 - 37 = 25. What is the most likely cause of the error?",
+      "options": [
+        "She added the two numbers instead of subtracting the smaller one",
+        "She copied the numbers wrongly from the board",
+        "She does not know the subtraction facts up to 10",
+        "She subtracted the smaller digit from the larger in each column"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In the ones column she did 7 - 2 = 5 instead of regrouping to 12 - 7, and in the tens 5 - 3 = 2. This 'smaller from larger' error shows a gap in regrouping."
+    },
+    {
+      "id": "CTET-T1-043",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Community mathematics",
+      "stem": "A teacher asks children to note the prices of vegetables at the local market and compare them. This mainly helps children to",
+      "options": [
+        "connect school mathematics with daily life",
+        "finish the textbook exercises faster",
+        "practise copying numbers in neat columns in their notebooks",
+        "learn the names of all vegetables"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Using the market brings community mathematics into class: children see that numbers, money and comparison are part of everyday life."
+    },
+    {
+      "id": "CTET-T1-044",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Language of mathematics",
+      "stem": "Children solve 7 + 5 easily but struggle with 'Ravi had some marbles; he got 5 more and now has 12. How many did he have?' The difficulty is mainly",
+      "options": [
+        "understanding the language and structure of the word problem",
+        "a lack of basic addition facts up to twenty, learnt by heart",
+        "a weak memory for the names of numbers",
+        "poor handwriting and slow copying from the board"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The arithmetic is simple; the difficulty is reading the situation and seeing that it is a missing-start problem. Word problems need explicit work on mathematical language."
+    },
+    {
+      "id": "CTET-T1-045",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 3,
+      "format": "multi",
+      "skill": "Evaluation",
+      "stem": "Choose two tasks that assess understanding rather than recall in Class 5 mathematics.",
+      "select": 2,
+      "options": [
+        "Copy the definition of a fraction",
+        "Explain why 0.5 and 1/2 are the same amount",
+        "Make up a word problem that uses 24 / 6",
+        "Write the multiplication table of 7"
+      ],
+      "correct": [
+        1,
+        2
+      ],
+      "explanation": "Explaining and creating problems require children to use concepts. Reciting a table or copying a definition only checks memory."
+    },
+    {
+      "id": "CTET-T1-046",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Plants",
+      "stem": "Which part of a plant mainly makes food using sunlight?",
+      "options": [
+        "Leaf",
+        "Stem",
+        "Flower",
+        "Root"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Leaves contain chlorophyll and make food by photosynthesis, using sunlight, water and carbon dioxide."
+    },
+    {
+      "id": "CTET-T1-047",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Animals",
+      "stem": "Which of these animals hatches from an egg?",
+      "options": [
+        "Bat",
+        "Blue whale",
+        "Dolphin",
+        "Crocodile"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Crocodiles are reptiles and lay eggs. Bats, dolphins and blue whales are mammals that give birth to live young."
+    },
+    {
+      "id": "CTET-T1-048",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Food",
+      "stem": "Which food is the richest source of protein?",
+      "options": [
+        "Dal",
+        "Potato",
+        "Rice",
+        "Sugar"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Dal (pulses) is a major plant source of protein in Indian diets. Rice, sugar and potato are mainly carbohydrate."
+    },
+    {
+      "id": "CTET-T1-049",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Water",
+      "stem": "Water changes into water vapour when it is heated. This process is called",
+      "options": [
+        "evaporation",
+        "melting",
+        "condensation",
+        "freezing"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Evaporation turns liquid water into vapour. Condensation is vapour turning back into liquid, as in droplets on a cold glass."
+    },
+    {
+      "id": "CTET-T1-050",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Shelter",
+      "stem": "Houses on stilts are most often built in areas that",
+      "options": [
+        "are dry, rocky deserts with sandstorms",
+        "are very cold and snowy",
+        "have strong summer heat",
+        "get heavy rain or flooding"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Raising a house on stilts keeps it above floodwater and damp ground, which is why stilt houses are common in parts of Assam and the North-East."
+    },
+    {
+      "id": "CTET-T1-051",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Travel",
+      "stem": "Which is the longest river that flows entirely within India?",
+      "options": [
+        "Tapi",
+        "Godavari",
+        "Mahanadi",
+        "Narmada"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Godavari, rising in Maharashtra and flowing to the Bay of Bengal, is the longest river flowing wholly within India. The Ganga is longer but its delta lies partly in Bangladesh."
+    },
+    {
+      "id": "CTET-T1-052",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Things we make and do",
+      "stem": "Clay pots keep water cool in summer because",
+      "options": [
+        "clay is a good conductor that pulls heat from the air",
+        "water seeps through tiny pores and evaporates, taking away heat",
+        "clay contains tiny ice crystals that slowly melt into the stored water",
+        "the dark colour of the clay reflects all of the sunlight"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A matka is porous. Water seeping to the surface evaporates, and evaporation absorbs heat, cooling the water inside."
+    },
+    {
+      "id": "CTET-T1-053",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Family and relationships",
+      "stem": "Shalini's mother's brother's daughter is Shalini's",
+      "options": [
+        "niece",
+        "sister",
+        "aunt",
+        "cousin"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Her mother's brother is her maternal uncle (mama), and his daughter is her cousin."
+    },
+    {
+      "id": "CTET-T1-054",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Integrated EVS",
+      "stem": "In Classes 3 to 5, NCF 2005 recommends that EVS be taught as",
+      "options": [
+        "a subject without any assessment of any kind",
+        "one integrated subject drawing on science, social science and environment",
+        "a subject taught only through lectures and textbooks",
+        "two separate subjects, General Science and Social Studies, from Class 3 onwards"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "NCF 2005 recommends an integrated EVS at the primary stage, taught through themes from the child's life rather than separate science and social science."
+    },
+    {
+      "id": "CTET-T1-055",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approaches to presenting concepts",
+      "stem": "The EVS textbooks for Classes 3 to 5 are organised around themes such as Family and Friends, Food, Shelter, Water and Travel. This is mainly to",
+      "options": [
+        "make the books shorter, cheaper and easier to print for every state",
+        "avoid including any activities in the book",
+        "connect learning to children's own lives and surroundings",
+        "match the order of science chapters in Class 10"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Themes from daily life let children link what they learn to their own experience and to the world around them, the core idea of EVS."
+    },
+    {
+      "id": "CTET-T1-056",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Activities and experimentation",
+      "stem": "To teach that plants need sunlight, the best approach is to",
+      "options": [
+        "show a picture of a plant and tell children that it needs sunlight",
+        "let children grow two plants, one in light and one in the dark, and compare",
+        "ask children to learn the parts of a plant by heart for a test",
+        "read out the definition of photosynthesis for children to copy down in their notebooks"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A simple comparison experiment lets children observe the effect themselves and draw a conclusion, which is the inquiry approach EVS aims for."
+    },
+    {
+      "id": "CTET-T1-057",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Discussion",
+      "stem": "During an EVS lesson on food, a child says her family does not eat meat while another says his family does. The teacher should",
+      "options": [
+        "tell the class which food habit is the correct and healthy one",
+        "encourage respectful discussion of different food habits",
+        "stop the discussion and move on to the next topic",
+        "ask the two children not to talk about their homes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "EVS values diversity. Discussing different food habits with respect helps children understand and accept differences."
+    },
+    {
+      "id": "CTET-T1-058",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Learning principles",
+      "stem": "Children come to EVS class with their own ideas about the world, some of them mistaken. The teacher should",
+      "options": [
+        "tell them their home ideas have no value",
+        "correct them immediately by telling the right answer from the book",
+        "ignore their ideas and start from the textbook",
+        "find out their ideas and build on them through activity"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Children's prior ideas are a starting point. Bringing them out and testing them through activity and discussion leads to real change in understanding."
+    },
+    {
+      "id": "CTET-T1-059",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Teaching material",
+      "stem": "Which is the most effective teaching-learning material for the theme 'Water' in Class 3?",
+      "options": [
+        "A visit to a local well, pond or tank with questions to ask",
+        "A video on ocean currents in other continents",
+        "A chart listing the chemical formula and boiling point of water",
+        "A list of rivers to be learned for a test"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Local resources such as a well or pond make the theme concrete and let children observe, ask questions and relate it to their community."
+    },
+    {
+      "id": "CTET-T1-060",
+      "section": "evs",
+      "test": 1,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 3,
+      "format": "multi",
+      "skill": "CCE in EVS",
+      "stem": "Choose two indicators that NCERT suggests for assessing learning in EVS.",
+      "select": 2,
+      "options": [
+        "Observation and recording",
+        "Neatness of the notebook cover",
+        "Discussion and questioning",
+        "Speed of copying from the board"
+      ],
+      "correct": [
+        0,
+        2
+      ],
+      "explanation": "NCERT's EVS source book lists indicators such as observation and recording, discussion, expression, explanation, classification, questioning, analysis, experimentation, concern for justice and equality, and cooperation. Notebook neatness and copying speed are not among them."
+    },
+    {
+      "id": "CTET-T2-001",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Principles of development",
+      "stem": "A baby learns to control her arms before her fingers. This follows the",
+      "options": [
+        "cephalocaudal principle",
+        "principle of conservation",
+        "proximodistal principle",
+        "principle of reversibility"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Proximodistal development runs from the centre of the body outwards: shoulders and arms before hands and fingers."
+    },
+    {
+      "id": "CTET-T2-002",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Growth and development",
+      "stem": "Which statement best tells growth apart from development?",
+      "options": [
+        "Growth is a change in size; development also includes change in skills",
+        "Growth and development mean exactly the same thing",
+        "Growth includes thinking and feelings; development is only change in height",
+        "Growth continues throughout life; development ends at the age of five"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Growth is quantitative (height, weight). Development is wider and includes qualitative change in thinking, language, emotions and social skills."
+    },
+    {
+      "id": "CTET-T2-003",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Socialisation",
+      "stem": "The primary agent of socialisation for a young child is the",
+      "options": [
+        "peer group",
+        "school",
+        "media",
+        "family"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The family is the first and primary agent of socialisation. The school, peers and media are secondary agents that become important later."
+    },
+    {
+      "id": "CTET-T2-004",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Piaget",
+      "stem": "A 4-year-old says the moon follows her when she walks. Piaget would call this",
+      "options": [
+        "conservation",
+        "reversibility",
+        "egocentrism",
+        "seriation"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Seeing the world only from one's own point of view is egocentrism, typical of the preoperational stage. Conservation, reversibility and seriation are concrete operational skills."
+    },
+    {
+      "id": "CTET-T2-005",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Piaget",
+      "stem": "When a child fits new information into an existing scheme, for example calling a cow a 'big dog', Piaget calls it",
+      "options": [
+        "equilibration",
+        "assimilation",
+        "scaffolding",
+        "accommodation"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Assimilation fits new experience into an existing scheme. When the child later creates a new scheme for 'cow', that is accommodation. Scaffolding is Vygotsky's idea."
+    },
+    {
+      "id": "CTET-T2-006",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Vygotsky",
+      "stem": "According to Vygotsky, the talk young children use to guide themselves while working is",
+      "options": [
+        "babbling",
+        "egocentric thought",
+        "telegraphic speech",
+        "private speech"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Vygotsky saw private speech as a tool of thought: children talk themselves through tasks, and it later becomes silent inner speech. Piaget, by contrast, saw such talk as egocentric."
+    },
+    {
+      "id": "CTET-T2-007",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Multiple intelligences",
+      "stem": "Gardner's theory of multiple intelligences implies that teachers should",
+      "options": [
+        "rank children only by their marks in language and mathematics",
+        "test general intelligence before teaching",
+        "teach every child in exactly the same way",
+        "offer varied ways to learn and to show learning"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Gardner proposed several distinct intelligences, such as linguistic, logical-mathematical, spatial, musical, bodily-kinaesthetic, interpersonal, intrapersonal and naturalist, so varied activities and assessments reach more children."
+    },
+    {
+      "id": "CTET-T2-008",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Kohlberg",
+      "stem": "Kohlberg studied moral development mainly by",
+      "options": [
+        "testing memory with lists of words",
+        "observing infants as they play with hidden objects",
+        "measuring children's height and weight",
+        "asking children to reason about moral dilemmas"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Kohlberg presented dilemmas such as the Heinz dilemma and classified the reasoning behind children's answers, not the answers themselves."
+    },
+    {
+      "id": "CTET-T2-009",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inclusive education",
+      "stem": "Under the Rights of Persons with Disabilities Act, 2016, the number of specified disabilities is",
+      "options": [
+        "7",
+        "14",
+        "21",
+        "28"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The RPwD Act, 2016 raised the list of specified disabilities from 7 under the 1995 Act to 21, adding conditions such as specific learning disabilities and autism spectrum disorder."
+    },
+    {
+      "id": "CTET-T2-010",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Children with special needs",
+      "stem": "A child with a hearing impairment sits in Class 2. Which step helps her most?",
+      "options": [
+        "Seat her near the front and face the class while speaking",
+        "Excuse her from all language and storytelling activities",
+        "Seat her at the back so she is not distracted by others",
+        "Speak louder while writing on the board with your back turned"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Sitting close and seeing the teacher's face helps lip reading and use of residual hearing. Talking with your back turned removes visual cues, and excluding her from language work denies her learning."
+    },
+    {
+      "id": "CTET-T2-011",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Children's errors",
+      "stem": "A child adds 1/2 + 1/3 and writes 2/5. The most useful thing for the teacher to do is",
+      "options": [
+        "tell the class that this child always makes careless mistakes",
+        "mark it wrong and move on to the next question in the chapter quickly",
+        "give the child ten more sums of the same kind as homework",
+        "ask the child to explain her steps to find the idea behind the error"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Adding numerators and denominators is a systematic misconception. Hearing the child's reasoning shows the teacher what to address, for example with fraction strips."
+    },
+    {
+      "id": "CTET-T2-012",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Learning and the social context",
+      "stem": "Group work in a primary class mainly helps children because",
+      "options": [
+        "it keeps children quiet for a longer period of time",
+        "only the brightest child needs to understand the task",
+        "they learn by discussing and sharing ideas with peers",
+        "the teacher has less work to do during the lesson"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Learning is a social activity: explaining, arguing and listening to peers deepens understanding, as Vygotsky stressed."
+    },
+    {
+      "id": "CTET-T2-013",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Factors in learning",
+      "stem": "Which factor is most likely to help children learn?",
+      "options": [
+        "Insisting on silence during every activity",
+        "Rewarding only the children who finish first",
+        "Introducing many new terms together in a single forty-minute period",
+        "Linking new ideas to what children already know"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Learning is easier when new knowledge connects to existing knowledge and experience. Overloading, speed-only rewards and enforced silence work against it."
+    },
+    {
+      "id": "CTET-T2-014",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Assessment",
+      "stem": "A teacher keeps a folder of each child's drawings, writing and project work across the year. This is",
+      "options": [
+        "a summative exam",
+        "a norm-referenced test",
+        "a portfolio",
+        "an aptitude test"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A portfolio is a purposeful collection of a child's work over time, used to see progress. It is a key tool of continuous, formative assessment."
+    },
+    {
+      "id": "CTET-T2-015",
+      "section": "cdp",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Policy: NCF 2005 and NEP 2020",
+      "stem": "Which of these is a guiding principle of the National Curriculum Framework 2005?",
+      "options": [
+        "Connecting knowledge to life outside the school",
+        "Increasing the weight of school bags",
+        "Testing children mainly through rote recall",
+        "Making learning depend mainly on prescribed textbooks and guides"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "NCF 2005 asks schools to connect knowledge to life outside school, shift learning away from rote methods, and enrich the curriculum beyond textbooks."
+    },
+    {
+      "id": "CTET-T2-016",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Comprehension: detail",
+      "stimulusId": "CTET-P3",
+      "stem": "Why did people walk down a different number of steps at different times of year?",
+      "options": [
+        "The well was emptied by hand every winter",
+        "Travellers were allowed only on the upper steps",
+        "The steps were rebuilt and moved after every monsoon season",
+        "The water level rose in the monsoon and fell in summer"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The first paragraph explains that the water level rose and fell with the seasons, so people walked down only as far as the water."
+    },
+    {
+      "id": "CTET-T2-017",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comprehension: inference",
+      "stimulusId": "CTET-P3",
+      "stem": "What do the carved pillars and arches suggest about stepwells?",
+      "options": [
+        "They were used only for festivals",
+        "They were costly to keep clean",
+        "They were built mainly for kings",
+        "The community valued them highly"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says the decoration 'shows how much the community valued them'. Nothing in it says they were only for kings or festivals."
+    },
+    {
+      "id": "CTET-T2-018",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comprehension: main idea",
+      "stimulusId": "CTET-P3",
+      "stem": "Which title best suits the passage?",
+      "options": [
+        "An Old Idea for a Modern Problem",
+        "Why Travellers Like Summer",
+        "How Engineers Built India's First Water Pipelines",
+        "The Kings Who Loved Pillars"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage moves from how stepwells worked to their neglect and their revival for recharging groundwater, ending on 'an old idea is proving to be surprisingly modern'."
+    },
+    {
+      "id": "CTET-T2-019",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Vocabulary and grammar from the passage",
+      "stimulusId": "CTET-P3",
+      "stem": "Which word from the passage is the opposite of 'neglected'?",
+      "options": [
+        "Collected",
+        "Filled",
+        "Repaired",
+        "Reached"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Neglected means not cared for. The passage contrasts it with towns that 'cleaned and repaired' their stepwells, so repaired is the opposite in this context."
+    },
+    {
+      "id": "CTET-T2-020",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Poem: figure of speech",
+      "stimulusId": "CTET-P4",
+      "stem": "'Before the sun has rubbed its eyes' means",
+      "options": [
+        "while the sun is hidden by an eclipse",
+        "on a cloudy afternoon",
+        "late in the evening",
+        "very early, before sunrise"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The sun rubbing its eyes is personification for waking up, so the line means before the sun has properly risen: very early in the morning."
+    },
+    {
+      "id": "CTET-T2-021",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Poem: figure of speech",
+      "stimulusId": "CTET-P4",
+      "stem": "'The kettle hums a whistling song' is an example of",
+      "options": [
+        "personification",
+        "a transferred epithet",
+        "a pun",
+        "a simile"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A kettle cannot hum a song; giving it a human action is personification. There is no 'like' or 'as', so it is not a simile."
+    },
+    {
+      "id": "CTET-T2-022",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Poem: comprehension",
+      "stimulusId": "CTET-P4",
+      "stem": "What happens to the market by noon?",
+      "options": [
+        "The crowd grows and more stalls are set up in the shade",
+        "The tea seller starts boiling fresh tea",
+        "The sabziwala arranges his vegetables",
+        "The crowd leaves and the baskets are stacked away"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The last stanza says 'By noon the busy crowd is gone' and the empty baskets are stacked in the shade until the next morning."
+    },
+    {
+      "id": "CTET-T2-023",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Vocabulary and grammar from the passage",
+      "stimulusId": "CTET-P4",
+      "stem": "In the line 'A cart rolls by with squeaking wheels', the word 'squeaking' is used as",
+      "options": [
+        "a preposition",
+        "an adjective",
+        "an adverb",
+        "a noun"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Squeaking describes the noun wheels, so it works as an adjective (a participle used as an adjective) here."
+    },
+    {
+      "id": "CTET-T2-024",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Learning and acquisition",
+      "stem": "The main aim of teaching English at the primary level is to help children",
+      "options": [
+        "use the language to communicate with confidence",
+        "translate every sentence into the mother tongue",
+        "speak with a foreign accent",
+        "learn all grammatical terms by heart"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The focus at the primary stage is communicative competence: understanding and using English for real purposes, not naming grammar terms or copying an accent."
+    },
+    {
+      "id": "CTET-T2-025",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading skills",
+      "stem": "Looking quickly over a text to get its general idea is called",
+      "options": [
+        "intensive reading",
+        "scanning",
+        "dictation",
+        "skimming"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Skimming is reading quickly for the gist. Scanning is searching for a specific detail such as a date or name."
+    },
+    {
+      "id": "CTET-T2-026",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading skills",
+      "stem": "A child runs her eye down a bus timetable to find when the bus to Pune leaves. She is",
+      "options": [
+        "skimming",
+        "reading aloud",
+        "scanning",
+        "extensive reading"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Searching a text for one particular piece of information is scanning."
+    },
+    {
+      "id": "CTET-T2-027",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Writing skills",
+      "stem": "Which approach to writing best helps young children become writers?",
+      "options": [
+        "Drafting, getting feedback and revising their own pieces",
+        "Copying model paragraphs neatly from the blackboard",
+        "Learning essays by heart before writing them out",
+        "Writing only after every spelling error in earlier work is corrected"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Process writing (planning, drafting, sharing, revising) treats children as authors. Copying and memorised essays do not teach composing."
+    },
+    {
+      "id": "CTET-T2-028",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Teaching-learning materials",
+      "stem": "Which is the most useful resource for a Class 3 English lesson on describing people?",
+      "options": [
+        "A set of photographs and real-life pictures",
+        "A test paper from last year",
+        "A list of grammar rules on adjectives and their degrees",
+        "A dictionary with no pictures"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Pictures give children something meaningful to describe and draw out adjectives naturally. Rules, an adult dictionary and old tests do not create a reason to talk."
+    },
+    {
+      "id": "CTET-T2-029",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Assessment of language",
+      "stem": "Which tool best assesses children's speaking skills?",
+      "options": [
+        "A written test of grammar definitions and sentence rules",
+        "Counting the number of pages they read",
+        "A dictation of ten difficult words",
+        "Observing them during role-play and storytelling"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Speaking is assessed by observing children speak in real or role-play situations, with a checklist or rubric. Written tests measure other skills."
+    },
+    {
+      "id": "CTET-T2-030",
+      "section": "lang",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 3,
+      "format": "multi",
+      "skill": "Principles of language teaching",
+      "stem": "Choose two practices that build a print-rich environment in a primary classroom.",
+      "select": 2,
+      "options": [
+        "Storing all books in a locked cupboard to keep them new",
+        "Removing posters so that children are not distracted",
+        "Labelling classroom objects and displaying children's writing",
+        "Keeping a reading corner with storybooks children can borrow"
+      ],
+      "correct": [
+        2,
+        3
+      ],
+      "explanation": "Labels, displays and an accessible reading corner surround children with meaningful print. Locked books and bare walls keep print away from them."
+    },
+    {
+      "id": "CTET-T2-031",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Numbers and place value",
+      "stem": "Which number is 'six lakh four thousand and twenty'?",
+      "options": [
+        "6,40,020",
+        "6,04,020",
+        "60,04,020",
+        "6,04,200"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Six lakh = 6,00,000, four thousand = 4,000, twenty = 20. Together: 6,04,020 in the Indian system."
+    },
+    {
+      "id": "CTET-T2-032",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Operations",
+      "stem": "A school has 1,236 children. They are seated in buses that each hold 48 children. How many buses are needed so that every child gets a seat? Type the number only.",
+      "numeric": {
+        "answers": [
+          "26"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "1,236 / 48 = 25 remainder 36. Twenty-five buses seat 1,200 children, and the remaining 36 need one more bus, so 26 buses."
+    },
+    {
+      "id": "CTET-T2-033",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fractions",
+      "stem": "Asha ate 2/5 of a pizza and her brother ate 1/4 of it. What fraction of the pizza is left?",
+      "options": [
+        "1/3",
+        "3/9",
+        "13/20",
+        "7/20"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Eaten: 2/5 + 1/4 = 8/20 + 5/20 = 13/20. Left: 1 - 13/20 = 7/20."
+    },
+    {
+      "id": "CTET-T2-034",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geometry",
+      "stem": "How many lines of symmetry does a square have?",
+      "options": [
+        "8",
+        "2",
+        "4",
+        "1"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A square has 4 lines of symmetry: 2 joining midpoints of opposite sides and 2 diagonals."
+    },
+    {
+      "id": "CTET-T2-035",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Measurement: weight and volume",
+      "stem": "A jug holds 1 litre 250 millilitres of juice. How many glasses of 250 millilitres can be filled from it? Type the number only.",
+      "numeric": {
+        "answers": [
+          "5"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "1 litre 250 mL = 1,250 mL, and 1,250 / 250 = 5 glasses."
+    },
+    {
+      "id": "CTET-T2-036",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Money",
+      "stem": "Sunita has Rs 500. She buys a bag for Rs 285 and a pencil box for Rs 96. How much money is left?",
+      "options": [
+        "Rs 119",
+        "Rs 109",
+        "Rs 381",
+        "Rs 129"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Spent: 285 + 96 = 381 rupees. Left: 500 - 381 = 119 rupees."
+    },
+    {
+      "id": "CTET-T2-037",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Factors and multiples",
+      "stem": "What is the HCF of 36 and 60?",
+      "options": [
+        "12",
+        "180",
+        "4",
+        "6"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "36 = 2 x 2 x 3 x 3 and 60 = 2 x 2 x 3 x 5. The common factors multiply to 2 x 2 x 3 = 12. 180 is the LCM."
+    },
+    {
+      "id": "CTET-T2-038",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Data handling",
+      "stem": "In a pictograph, one mango symbol stands for 5 mangoes. Class 4 has 7 symbols and Class 5 has 4 symbols. How many more mangoes does Class 4 have than Class 5?",
+      "options": [
+        "20",
+        "3",
+        "15",
+        "35"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Class 4 has 7 x 5 = 35 mangoes and Class 5 has 4 x 5 = 20, so Class 4 has 15 more. 3 is the difference in symbols, not mangoes."
+    },
+    {
+      "id": "CTET-T2-039",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Nature of mathematics",
+      "stem": "Mathematics is best described for children as",
+      "options": [
+        "a way of thinking about patterns, quantity and shape",
+        "fast calculation without any need for reasoning",
+        "a fixed set of rules and formulas handed down by the teacher",
+        "a subject meant only for a few gifted children"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "NCF 2005 stresses that mathematics is about patterns, abstraction and logical reasoning, and that every child can learn it."
+    },
+    {
+      "id": "CTET-T2-040",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Concrete to abstract",
+      "stem": "The best sequence for teaching fractions in Class 3 is",
+      "options": [
+        "rules for adding fractions first, then worked examples from the textbook",
+        "symbols first, then pictures, then sharing real objects",
+        "memorising fraction names, then writing them in columns",
+        "folding paper and sharing objects, then pictures, then symbols"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Children need to experience fractions concretely (equal sharing, folding) before pictures and finally notation such as 1/4."
+    },
+    {
+      "id": "CTET-T2-041",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Logical thinking",
+      "stem": "A teacher asks, 'Is the sum of two odd numbers always even? How do you know?' This question develops",
+      "options": [
+        "reasoning and generalisation",
+        "memory of number names",
+        "speed and accuracy in mental addition",
+        "neat written work"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Asking whether a statement is always true and why pushes children to test cases and reason towards a general rule."
+    },
+    {
+      "id": "CTET-T2-042",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Errors and remedial teaching",
+      "stem": "A child says 0.25 is larger than 0.5 'because 25 is bigger than 5'. The most useful remedy is to",
+      "options": [
+        "compare the decimals on a number line or grid of 100 squares",
+        "tell the child to remember the rule that shorter decimals are always bigger",
+        "give the child twenty more comparison sums to practise",
+        "tell the child to add zeros without explaining the reason"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The child is treating the digits after the point as whole numbers. Representing both amounts on a grid or number line shows that 0.5 is 50 hundredths and so is more than 25 hundredths."
+    },
+    {
+      "id": "CTET-T2-043",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Use of materials",
+      "stem": "Which material is most useful for teaching area in Class 4?",
+      "options": [
+        "A measuring jug",
+        "Square tiles or a squared grid",
+        "A clock with hands",
+        "A weighing balance"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Covering shapes with unit squares builds the idea of area as the number of squares inside a shape, before any formula."
+    },
+    {
+      "id": "CTET-T2-044",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Evaluation",
+      "stem": "Which practice gives the teacher the most information about a child's mathematical understanding?",
+      "options": [
+        "Asking the child to explain how she solved a problem",
+        "Checking whether the work is neat and tidy",
+        "Timing how fast the child finishes the worksheet in the period",
+        "Counting how many sums the child got right"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A child's explanation shows the strategy and any misconception behind an answer, which a score or a time cannot show."
+    },
+    {
+      "id": "CTET-T2-045",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Language of mathematics",
+      "stem": "Before using the word 'perimeter', a teacher asks children to walk around the edge of the playground. This helps them",
+      "options": [
+        "practise addition of large numbers",
+        "memorise the spelling of a new and difficult word",
+        "finish the chapter on measurement quickly",
+        "build meaning for the term through experience"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Experience first, then the word: the term 'perimeter' then names an idea children already have."
+    },
+    {
+      "id": "CTET-T2-046",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Plants",
+      "stem": "Which part of the plant absorbs water from the soil?",
+      "options": [
+        "Fruit",
+        "Root",
+        "Flower",
+        "Leaf"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Roots absorb water and minerals from the soil and anchor the plant."
+    },
+    {
+      "id": "CTET-T2-047",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Animals",
+      "stem": "Which bird is known for building its nest by stitching leaves together?",
+      "options": [
+        "Kingfisher",
+        "Tailorbird",
+        "Crow",
+        "Pigeon"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The tailorbird pierces the edges of large leaves and stitches them with plant fibre or spider silk to form a cup for its nest."
+    },
+    {
+      "id": "CTET-T2-048",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Food",
+      "stem": "Using iodised salt in food helps to prevent",
+      "options": [
+        "night blindness",
+        "rickets",
+        "goitre",
+        "scurvy"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Too little iodine in the diet causes goitre, a swelling of the thyroid gland in the neck, so salt is iodised. Rickets is linked to vitamin D, night blindness to vitamin A and scurvy to vitamin C."
+    },
+    {
+      "id": "CTET-T2-049",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Water",
+      "stem": "Collecting rainwater from rooftops and storing it for later use is called",
+      "options": [
+        "rainwater harvesting",
+        "evaporation",
+        "drip irrigation of fields",
+        "desalination"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Rainwater harvesting collects and stores rain, for example from rooftops into tanks or to recharge wells."
+    },
+    {
+      "id": "CTET-T2-050",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Travel",
+      "stem": "On a map, the direction opposite to east is",
+      "options": [
+        "west",
+        "north",
+        "south",
+        "north-east"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "East and west are opposite directions, as are north and south. On most maps north is at the top and east is to the right."
+    },
+    {
+      "id": "CTET-T2-051",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Animals",
+      "stem": "Which animal uses its trunk to smell, to pick up food and to suck up water for drinking?",
+      "options": [
+        "Camel",
+        "Rhinoceros",
+        "Elephant",
+        "Giraffe"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The elephant's trunk is its long nose joined with the upper lip. It smells, grasps food and sucks up water, then squirts the water into the mouth."
+    },
+    {
+      "id": "CTET-T2-052",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Things we make and do",
+      "stem": "Which of these materials can be recycled most easily to make new products?",
+      "options": [
+        "Paper",
+        "Broken mirror glass",
+        "Used tissue",
+        "Food waste"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Clean paper can be pulped and made into new paper. Food waste is composted rather than recycled, and mirror glass and used tissues are not accepted for recycling."
+    },
+    {
+      "id": "CTET-T2-053",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Shelter",
+      "stem": "Igloos keep people warm because",
+      "options": [
+        "the ice blocks reflect sunlight into the igloo",
+        "a large fire is kept burning inside all day",
+        "compact snow traps air, which is a poor conductor of heat",
+        "snow produces heat as it slowly melts under the sun every day"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Packed snow contains a lot of trapped air, which insulates. Body heat inside stays in, so an igloo is much warmer than the air outside."
+    },
+    {
+      "id": "CTET-T2-054",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scope of EVS",
+      "stem": "The main aim of teaching EVS at the primary level is to",
+      "options": [
+        "help children understand and care for their surroundings",
+        "make children memorise facts about distant countries",
+        "train children to become professional scientists",
+        "prepare children for science olympiads in middle school"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "EVS helps children make sense of their natural, social and cultural environment, and builds concern for it."
+    },
+    {
+      "id": "CTET-T2-055",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Activities and experimentation",
+      "stem": "A field trip to a farm is useful in EVS mainly because children",
+      "options": [
+        "do not need any preparation for it",
+        "can be tested on the trip the next day",
+        "learn by observing and asking questions directly",
+        "get a holiday from the regular timetable and homework"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Field trips give first-hand experience, which builds understanding and lets children ask questions of people at work."
+    },
+    {
+      "id": "CTET-T2-056",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approaches to presenting concepts",
+      "stem": "The best way to begin a Class 4 lesson on houses in different regions is to",
+      "options": [
+        "give a lecture on building materials used in other countries",
+        "read the chapter aloud and ask children to underline facts",
+        "write the names of house types on the board to copy",
+        "ask children to describe and draw the houses they live in"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Starting from children's own homes connects the topic to their experience, and comparing drawings opens discussion of why houses differ."
+    },
+    {
+      "id": "CTET-T2-057",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Environmental education",
+      "stem": "Which activity best builds sensitivity towards the environment in young children?",
+      "options": [
+        "Caring for a plant in the school garden over several weeks",
+        "Copying a list of endangered animals",
+        "Writing an essay on pollution using points from the textbook",
+        "Learning the definition of ecosystem by heart"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Sustained care for living things builds attachment and responsibility, which is more lasting than learning definitions."
+    },
+    {
+      "id": "CTET-T2-058",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Learning principles",
+      "stem": "Which question promotes thinking in an EVS class?",
+      "options": [
+        "Why do you think birds build nests in different places?",
+        "What is the name of the bird shown on page 23 of the book?",
+        "Which colour is a parrot?",
+        "How many legs does a spider have?"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A 'why do you think' question asks children to reason from observation. The others ask for a fact."
+    },
+    {
+      "id": "CTET-T2-059",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Issues in EVS",
+      "stem": "A Class 5 lesson includes a story about a family that migrates for work. The purpose is mainly to",
+      "options": [
+        "build empathy and understanding of people's lives",
+        "test children's memory of the family members' names",
+        "show that migration is always a bad thing",
+        "teach the spelling of difficult place names"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Narratives about people's lives help children understand social issues and develop empathy, an aim of integrated EVS."
+    },
+    {
+      "id": "CTET-T2-060",
+      "section": "evs",
+      "test": 2,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "CCE in EVS",
+      "stem": "In EVS, which is the best way to assess a child's ability to classify?",
+      "options": [
+        "Ask her to copy a table of animals from the book",
+        "Ask her to sort leaves collected on a walk and explain the groups",
+        "Ask her to recite the names of the seasons",
+        "Ask her to write the definition of classification from the book"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Sorting real objects and explaining the basis of grouping shows whether the child can classify, which a definition or copying cannot show."
+    },
+    {
+      "id": "CTET-D-001",
+      "section": "cdp",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Principles of development",
+      "stem": "Development moves from general responses to specific ones. For example, a baby first waves her whole arm and later picks things up with her fingers. This is the principle of",
+      "options": [
+        "general to specific",
+        "specific to general",
+        "uneven heredity",
+        "reversibility"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Development proceeds from general, mass activity to specific, refined skills."
+    },
+    {
+      "id": "CTET-D-002",
+      "section": "cdp",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Piaget",
+      "stem": "Arranging sticks in order of length is a skill Piaget called",
+      "options": [
+        "centration",
+        "object permanence",
+        "seriation",
+        "animism"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Seriation, ordering by a dimension such as length, develops in the concrete operational stage."
+    },
+    {
+      "id": "CTET-D-003",
+      "section": "cdp",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Vygotsky",
+      "stem": "A teacher gives hints at first and then gradually removes them as the child gains skill. This is",
+      "options": [
+        "streaming",
+        "scaffolding",
+        "conditioning",
+        "rote learning"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Scaffolding is temporary support that is withdrawn as the learner becomes able to do the task alone, a practice that follows from Vygotsky's work."
+    },
+    {
+      "id": "CTET-D-004",
+      "section": "cdp",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Children with special needs",
+      "stem": "A child repeatedly reverses digits, cannot tell which of two numbers is bigger and struggles with simple counting. This may indicate",
+      "options": [
+        "dyscalculia",
+        "dysgraphia",
+        "dyslexia",
+        "dyspraxia"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Dyscalculia is a specific learning disability in understanding number. Dysgraphia affects handwriting and dyspraxia affects motor coordination."
+    },
+    {
+      "id": "CTET-D-005",
+      "section": "cdp",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetDev",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Gifted and creative learners",
+      "stem": "A child finishes work quickly and asks many unusual questions. The best response is to",
+      "options": [
+        "give open-ended, challenging tasks that stretch her thinking",
+        "move her to the back of the room to work on her own",
+        "ask her to stop asking questions so others can keep up",
+        "give her extra copies of the same exercise to keep her busy and quiet"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Gifted and creative children need enrichment: open-ended problems and projects. Repetitive busywork and silencing questions dampen curiosity."
+    },
+    {
+      "id": "CTET-D-006",
+      "section": "cdp",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Motivation",
+      "stem": "Praise is most effective when it is",
+      "options": [
+        "given to every child for every answer",
+        "about the child's looks rather than work",
+        "specific about what the child did well",
+        "kept only for the top child in the class"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Specific praise ('you checked your answer by drawing it') tells the child what to repeat. Constant or vague praise loses meaning."
+    },
+    {
+      "id": "CTET-D-007",
+      "section": "cdp",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constructivism",
+      "stem": "Bruner's idea of discovery learning means that children",
+      "options": [
+        "learn best when they are shown the final answer first",
+        "repeat the teacher's statements until they are memorised",
+        "find out principles for themselves through guided exploration",
+        "learn only from rewards and punishments that follow behaviour"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In discovery learning, children explore materials and problems and work out the underlying ideas, with the teacher guiding the process."
+    },
+    {
+      "id": "CTET-D-008",
+      "section": "cdp",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Children's thinking",
+      "stem": "Children are best seen as",
+      "options": [
+        "small adults who think exactly like grown-ups",
+        "passive receivers of rewards and punishments",
+        "active explorers who make sense of the world",
+        "empty vessels to be filled by the teacher"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Child-centred pedagogy treats children as active, curious meaning-makers who come to school with ideas of their own."
+    },
+    {
+      "id": "CTET-D-009",
+      "section": "cdp",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Policy: NCF 2005 and NEP 2020",
+      "stem": "NEP 2020 gives the highest priority in the early grades to",
+      "options": [
+        "teaching all subjects only in English from Class 1",
+        "board examinations at the end of every primary class from Class 1",
+        "streaming children into science and arts by Grade 3",
+        "foundational literacy and numeracy for every child by Grade 3"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "NEP 2020 calls universal foundational literacy and numeracy by Grade 3 an urgent national mission, which led to the NIPUN Bharat mission."
+    },
+    {
+      "id": "CTET-D-010",
+      "section": "cdp",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetLearn",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Assessment",
+      "stem": "Continuous and comprehensive evaluation looks at",
+      "options": [
+        "scholastic and co-scholastic areas throughout the year",
+        "only how quickly children finish their tests",
+        "only children's handwriting and their neatness",
+        "only the marks a child gets in the final written examination"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "CCE covers both scholastic (subject) and co-scholastic (attitudes, values, arts, health) areas, assessed regularly through the year rather than in one final exam."
+    },
+    {
+      "id": "CTET-D-011",
+      "section": "lang",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Comprehension: detail",
+      "stimulusId": "CTET-P5",
+      "stem": "What was in the corner of the playground before the garden was made?",
+      "options": [
+        "Old wooden benches",
+        "A water tank",
+        "Broken bricks",
+        "Tall grass"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first paragraph says the corner 'had been full of broken bricks' until the children cleared it."
+    },
+    {
+      "id": "CTET-D-012",
+      "section": "lang",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comprehension: inference",
+      "stimulusId": "CTET-P5",
+      "stem": "What does the teacher's answer, 'Because nobody has made one yet', show about her?",
+      "options": [
+        "She wanted the children to take the lead themselves",
+        "She had no idea why the school lacked a garden",
+        "She thought a garden was a waste of valuable school time",
+        "She was annoyed with the children's question"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Her answer turned the question back to the children, and the next week they cleared the ground themselves, so she was inviting them to act."
+    },
+    {
+      "id": "CTET-D-013",
+      "section": "lang",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comprehension: detail",
+      "stimulusId": "CTET-P5",
+      "stem": "Which of these did the children do while gardening?",
+      "options": [
+        "Used chemical sprays to remove ants",
+        "Kept a diary with drawings of each plant",
+        "Hired a gardener to dig the ground",
+        "Sold their vegetables in the local weekly market"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The second paragraph says 'they kept a diary with drawings of every plant'. The vegetables went to the midday meal, not a market."
+    },
+    {
+      "id": "CTET-D-014",
+      "section": "lang",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Comprehension: main idea",
+      "stimulusId": "CTET-P5",
+      "stem": "What did the teacher mean by 'the real harvest'?",
+      "options": [
+        "The earthworms that made the garden soil rich",
+        "What the children learned about wondering, testing and listening",
+        "The prize the school won for the best garden",
+        "The three baskets of vegetables that went to the school's midday meal"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "She contrasts the vegetables with 'something else': the children learned to wonder, test their guesses and listen to one another."
+    },
+    {
+      "id": "CTET-D-015",
+      "section": "lang",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetComp",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Vocabulary and grammar from the passage",
+      "stimulusId": "CTET-P5",
+      "stem": "In 'they measured, they argued', the words 'measured' and 'argued' are",
+      "options": [
+        "adjectives of quality describing the children",
+        "nouns in the plural",
+        "verbs in the past tense",
+        "adverbs of manner"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Both words tell what the children did and are in the simple past tense, so they are verbs."
+    },
+    {
+      "id": "CTET-D-016",
+      "section": "lang",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Learning and acquisition",
+      "stem": "Children learn their first language mainly by",
+      "options": [
+        "copying words written by adults",
+        "translating from another language",
+        "using it with others in everyday situations",
+        "studying its grammar rules in school from a textbook"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "First language is acquired through interaction and meaningful use well before schooling begins."
+    },
+    {
+      "id": "CTET-D-017",
+      "section": "lang",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speaking and listening",
+      "stem": "A teacher says, 'Listen to the story and tell me what you think the fox will do next.' She is developing",
+      "options": [
+        "handwriting skill",
+        "listening with prediction",
+        "spelling accuracy in dictation",
+        "rote memory"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Asking children to predict while listening keeps them actively engaged in making meaning, a key listening and comprehension strategy."
+    },
+    {
+      "id": "CTET-D-018",
+      "section": "lang",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Grammar in context",
+      "stem": "When a child says 'I eated lunch', the teacher should",
+      "options": [
+        "tell the rest of the class that the sentence is wrong",
+        "ask the child to write 'ate' twenty times in a notebook",
+        "reply naturally with 'Oh, you ate lunch? What did you eat?'",
+        "stop the conversation and explain the rule for irregular past tense verbs"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Recasting gives the correct form in a natural reply without discouraging the child. Interrupting or embarrassing her can make her stop speaking."
+    },
+    {
+      "id": "CTET-D-019",
+      "section": "lang",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Multilingualism",
+      "stem": "In a class where children speak five home languages, the teacher should treat this as",
+      "options": [
+        "a resource for learning about language",
+        "something to ignore during lessons",
+        "a problem that slows the whole class down in English",
+        "a reason to ban all home languages"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "NCF 2005 calls multilingualism a resource: comparing languages builds awareness of how language works and values every child's identity."
+    },
+    {
+      "id": "CTET-D-020",
+      "section": "lang",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetLangPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Assessment of language",
+      "stem": "The main purpose of assessing children's reading in Class 2 is to",
+      "options": [
+        "compare their scores with other schools",
+        "find out how they read so teaching can support them",
+        "decide which children should repeat the class next year",
+        "award marks for the annual report only"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Classroom assessment of reading is diagnostic and formative: it shows which strategies a child uses and what help she needs."
+    },
+    {
+      "id": "CTET-D-021",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Numbers and place value",
+      "stem": "Which is the smallest 4-digit number made using the digits 3, 0, 7 and 5 once each?",
+      "options": [
+        "3,075",
+        "5,037",
+        "3,057",
+        "3,507"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A 4-digit number cannot start with 0, so the smallest start is 3, followed by the remaining digits in increasing order: 3,057."
+    },
+    {
+      "id": "CTET-D-022",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Measurement: perimeter and area",
+      "stem": "A square tile has sides of 25 cm. How many such tiles cover a floor 2 m long and 1 m wide? Type the number only.",
+      "numeric": {
+        "answers": [
+          "32"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The floor is 200 cm x 100 cm. Along the length 200 / 25 = 8 tiles, along the width 100 / 25 = 4 tiles, so 8 x 4 = 32 tiles."
+    },
+    {
+      "id": "CTET-D-023",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geometry",
+      "stem": "An angle that measures 120 degrees is",
+      "options": [
+        "a straight angle",
+        "an acute angle",
+        "an obtuse angle",
+        "a right angle"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An obtuse angle lies between 90 and 180 degrees. Acute angles are less than 90, a right angle is 90 and a straight angle is 180."
+    },
+    {
+      "id": "CTET-D-024",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Measurement: time",
+      "stem": "How many days are there in the months of July and August together?",
+      "options": [
+        "59",
+        "61",
+        "60",
+        "62"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "July and August each have 31 days, so together they have 62."
+    },
+    {
+      "id": "CTET-D-025",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetMaths",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Operations",
+      "stem": "Which is equal to 25 x 36?",
+      "options": [
+        "25 x 4 x 8",
+        "50 x 16",
+        "100 x 9",
+        "5 x 6 x 25"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "36 = 4 x 9, so 25 x 36 = (25 x 4) x 9 = 100 x 9 = 900. The others give 800, 800 and 750."
+    },
+    {
+      "id": "CTET-D-026",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Concrete to abstract",
+      "stem": "Which activity best helps Class 1 children understand addition?",
+      "options": [
+        "Writing the addition facts up to 10 several times in a notebook",
+        "Combining two groups of objects and counting all of them",
+        "Reciting addition tables together aloud",
+        "Copying sums from the board into notebooks"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Addition is first understood as putting groups together. Counting real objects gives meaning to the symbols that come later."
+    },
+    {
+      "id": "CTET-D-027",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematics in the curriculum",
+      "stem": "Mathematics games in the classroom are useful mainly because they",
+      "options": [
+        "replace the need for any planning",
+        "fill up time when the teacher is busy with other classroom work",
+        "are a reward only for the fastest children",
+        "give practice and reasoning in a way children enjoy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Well-chosen games give repeated practice and chances to reason and discuss strategy, while reducing fear of mathematics."
+    },
+    {
+      "id": "CTET-D-028",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Errors and remedial teaching",
+      "stem": "A child writes 'three hundred and five' as 3005. This shows difficulty with",
+      "options": [
+        "addition facts",
+        "handwriting",
+        "skip counting",
+        "place value"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Writing 300 and then 5 side by side ignores the meaning of each place. Work with place value cards and grouping helps."
+    },
+    {
+      "id": "CTET-D-029",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Van Hiele levels",
+      "stem": "A child explains that 'a square is a special rectangle because it has four right angles'. She is reasoning at the van Hiele level of",
+      "options": [
+        "rigour",
+        "recognition only",
+        "visualisation",
+        "informal deduction"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Relating classes of shapes through their properties (all squares are rectangles) is level 2, informal deduction."
+    },
+    {
+      "id": "CTET-D-030",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetMathsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Mathematics anxiety",
+      "stem": "Many children feel afraid of mathematics. A teacher can best reduce this fear by",
+      "options": [
+        "praising only children who finish their work first",
+        "giving surprise tests at the start of every lesson",
+        "insisting on one correct method and marking every error clearly in red ink",
+        "valuing different methods and treating mistakes as part of learning"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "NCF 2005 names fear of maths as a core problem. Accepting multiple strategies and treating errors as learning opportunities makes the subject safer to try."
+    },
+    {
+      "id": "CTET-D-031",
+      "section": "evs",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Plants",
+      "stem": "Which of these is a seed that is eaten as food?",
+      "options": [
+        "Groundnut",
+        "Spinach",
+        "Carrot",
+        "Ginger"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A groundnut (peanut) is a seed. Carrot is a root, spinach is leaves, and ginger is an underground stem (rhizome)."
+    },
+    {
+      "id": "CTET-D-032",
+      "section": "evs",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Animals",
+      "stem": "Which animal uses its ears to find its way in the dark?",
+      "options": [
+        "Bat",
+        "Hen",
+        "Cow",
+        "Goat"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Bats use echolocation: they make high-pitched sounds and listen for the echoes to find their way and catch insects."
+    },
+    {
+      "id": "CTET-D-033",
+      "section": "evs",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Water",
+      "stem": "Water from a river is not safe to drink straight away because it may contain",
+      "options": [
+        "too much oxygen",
+        "too many minerals for plants",
+        "germs that cause diseases",
+        "too little salt"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Untreated river water can carry germs that cause cholera, typhoid and diarrhoea. Boiling or filtering and treating it makes it safe."
+    },
+    {
+      "id": "CTET-D-034",
+      "section": "evs",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Food",
+      "stem": "Which method keeps food from spoiling by removing water from it?",
+      "options": [
+        "Leaving it open",
+        "Drying in the sun",
+        "Keeping it warm",
+        "Adding more water"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Germs need moisture to grow. Sun-drying foods such as papad, chillies and mango slices removes water so they keep longer."
+    },
+    {
+      "id": "CTET-D-035",
+      "section": "evs",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetEvs",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Travel",
+      "stem": "A child in Delhi wants to post a letter to a friend in Chennai. The PIN code on the letter helps to",
+      "options": [
+        "sort and deliver the mail to the right post office area",
+        "show the sender's date of birth",
+        "pay for the stamp that is needed on the envelope for the journey",
+        "count the number of letters posted"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The six-digit Postal Index Number (PIN) identifies the delivery post office area so mail can be sorted and routed correctly."
+    },
+    {
+      "id": "CTET-D-036",
+      "section": "evs",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Integrated EVS",
+      "stem": "Integrated EVS for Classes 3 to 5 draws on",
+      "options": [
+        "science, social science and environmental education",
+        "mathematics, English grammar and moral science only",
+        "only history and geography",
+        "only biology and chemistry"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "EVS at the primary stage brings together concepts from science, social science and environmental education."
+    },
+    {
+      "id": "CTET-D-037",
+      "section": "evs",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Activities and experimentation",
+      "stem": "When an EVS experiment does not give the expected result, the teacher should",
+      "options": [
+        "blame the children for doing it wrongly",
+        "tell children to write the expected result anyway",
+        "discuss with children why the result was different",
+        "skip the experiment and dictate the conclusion"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Unexpected results are a chance to think about variables and method. Faking results teaches the wrong idea of science."
+    },
+    {
+      "id": "CTET-D-038",
+      "section": "evs",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Teaching material",
+      "stem": "A teacher in a rural school has no laboratory. For EVS she should",
+      "options": [
+        "skip all activities until a proper laboratory is built in school",
+        "use local materials, the surroundings and community members",
+        "teach only from the textbook and the blackboard",
+        "ask the children to buy kits from the city"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "EVS needs no laboratory: the environment, everyday materials and people of the community are its richest resources."
+    },
+    {
+      "id": "CTET-D-039",
+      "section": "evs",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scope of EVS",
+      "stem": "Which topic best fits the EVS theme 'Family and Friends'?",
+      "options": [
+        "The boiling point of pure water at sea level",
+        "How family members share work at home",
+        "The names of distant planets",
+        "The parts of a steam engine"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The theme covers relationships, work and play, and the animals and plants around us, starting from the child's own family."
+    },
+    {
+      "id": "CTET-D-040",
+      "section": "evs",
+      "test": 0,
+      "module": 1,
+      "domain": "ctetEvsPed",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Learning principles",
+      "stem": "The best sequence for an EVS lesson is",
+      "options": [
+        "observe, ask questions, explore, discuss and conclude",
+        "listen to a lecture and then copy notes",
+        "learn definitions, then see an example",
+        "read, copy, memorise the answers and then write a test"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "An inquiry sequence lets children work out ideas from their own observation and discussion, the approach NCF 2005 recommends."
+    }
+  ]
+}

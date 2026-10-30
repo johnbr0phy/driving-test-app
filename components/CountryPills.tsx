@@ -13,7 +13,7 @@ import {
 } from "@/lib/region";
 import { useStore } from "@/store/useStore";
 
-export const FLAGS: Record<Region, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", AU: "🇦🇺", IN: "🇮🇳" };
+export const FLAGS: Record<Region, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", IE: "🇮🇪", AU: "🇦🇺", NZ: "🇳🇿", IN: "🇮🇳" };
 
 /** The saved country, if any (client only). */
 export function readRegionCookie(): Region | null {
@@ -62,7 +62,7 @@ export function saveRegion(r: Region) {
 
 /**
  * The country picker above the catalog search. On a country homepage ("/",
- * /uk, /ca, /au, /in) each pill is a real link to that country's page, so crawlers
+ * /uk, /ie, /ca, /au, /nz, /in) each pill is a real link to that country's page, so crawlers
  * follow them too; a tap also saves the country (middleware.ts reads it). On
  * the /tests hub (`onChange` set) the pills are buttons and the hub reorders.
  */
@@ -134,11 +134,11 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
   const label = (r: (typeof REGIONS)[number]) => (
     <>
       <span aria-hidden="true" className="text-base leading-none">{FLAGS[r.code]}</span>
-      <span className="sm:hidden">{r.short}</span>
-      <span className="hidden sm:inline">{r.name}</span>
+      <span className="lg:hidden">{r.short}</span>
+      <span className="hidden lg:inline">{r.name}</span>
     </>
   );
-  const row = "grid w-full max-w-md grid-cols-5 gap-1 rounded-full border border-brand-border bg-white dark:bg-gray-900 p-1 shadow-sm sm:inline-grid sm:w-auto sm:max-w-none";
+  const row = "grid w-full max-w-md grid-cols-7 gap-1 rounded-full border border-brand-border bg-white dark:bg-gray-900 p-1 shadow-sm sm:inline-grid sm:w-auto sm:max-w-none";
 
   return (
     <div ref={box} className="flex flex-col items-center">

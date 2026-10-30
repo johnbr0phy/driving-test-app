@@ -44,6 +44,21 @@ import '@/lib/v2/banks/secplus';
 import '@/lib/v2/banks/teas';
 import '@/lib/v2/banks/timestables';
 import '@/lib/v2/banks/vicsel';
+import '@/lib/v2/banks/faapvt';
+import '@/lib/v2/banks/psat';
+import '@/lib/v2/banks/praxis';
+import '@/lib/v2/banks/gre';
+import '@/lib/v2/banks/gmat';
+import '@/lib/v2/banks/netplus';
+import '@/lib/v2/banks/cissp';
+import '@/lib/v2/banks/itil';
+import '@/lib/v2/banks/psm';
+import '@/lib/v2/banks/capm';
+import '@/lib/v2/banks/gcdl';
+import '@/lib/v2/banks/ssccgl';
+import '@/lib/v2/banks/rrbntpc';
+import '@/lib/v2/banks/ctet';
+import '@/lib/v2/banks/ibpspo';
 
 // MCP is another view of the site's drills, NOT a second mastery store.
 // The transport document only remembers the presented item/order and a

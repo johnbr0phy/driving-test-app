@@ -81,7 +81,7 @@ export function renderLlmsTxt(): string {
   return [
     HEADER,
     DMV_SECTION,
-    `## Other practice tests\n\nAll tests: ${siteUrl}/tests\nUK driving theory tests: ${siteUrl}/uk\nCanada driving knowledge tests: ${siteUrl}/ca\nAustralia learner driver tests: ${siteUrl}/au\nIndia learner's licence test: ${siteUrl}/in\n\n${groups}`,
+    `## Other practice tests\n\nAll tests: ${siteUrl}/tests\nUK driving theory tests: ${siteUrl}/uk\nCanada driving knowledge tests: ${siteUrl}/ca\nAustralia learner driver tests: ${siteUrl}/au\nIndia learner's licence test: ${siteUrl}/in\nIreland Driver Theory Test: ${siteUrl}/ie\nNew Zealand learner licence test: ${siteUrl}/nz\n\n${groups}`,
     translatedSection(),
     TEACH_SECTION,
     QUIZ_SECTION,

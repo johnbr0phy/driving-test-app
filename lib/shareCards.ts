@@ -22,7 +22,9 @@ const hubs: Record<string, ShareCard> = {
   uk: { title: "Free UK practice tests", lines: ["Free UK", "practice tests"], description: "Driving theory, GCSEs, school entrance and workplace certificates.", footer: "Find your test at tigertest.io/uk", color: "#1E4F91", tint: "#EAF1FC", mascots: ["ks2", "uksia", "gcsemaths"] },
   ca: { title: "Free Canadian practice tests", lines: ["Free Canadian", "practice tests"], description: "Driving knowledge, school assessments, healthcare and Red Seal trades.", footer: "Find your test at tigertest.io/ca", color: "#B02D38", tint: "#FCEDEF", mascots: ["osslt", "rexpn", "caelec"] },
   au: { title: "Free Australian practice tests", lines: ["Free Australian", "practice tests"], description: "Learner licences, NAPLAN, selective entry and workplace certificates.", footer: "Find your test at tigertest.io/au", color: "#17644B", tint: "#E7F5ED", mascots: ["naplan", "auforklift", "auwhite"] },
-  in: { title: "Free practice tests for India", lines: ["Free practice tests", "for India"], description: "Learner's licence, nursing abroad and IT certifications.", footer: "Find your test at tigertest.io/in", color: "#B35A00", tint: "#FFF3E0", mascots: ["dmv", "nclex", "aws"] },
+  in: { title: "Free practice tests for India", lines: ["Free practice tests", "for India"], description: "Learner's licence, government job exams and IT certifications.", footer: "Find your test at tigertest.io/in", color: "#B35A00", tint: "#FFF3E0", mascots: ["dmv", "nclex", "aws"] },
+  ie: { title: "Free practice tests for Ireland", lines: ["Free practice tests", "for Ireland"], description: "Driver Theory Test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ie", color: "#13704A", tint: "#E6F5EC", mascots: ["dmv", "sat", "aws"] },
+  nz: { title: "Free practice tests for New Zealand", lines: ["Free practice tests", "for New Zealand"], description: "Learner licence, college entrance and IT certifications.", footer: "Find your test at tigertest.io/nz", color: "#1F2A44", tint: "#ECEFF6", mascots: ["dmv", "sat", "aws"] },
 };
 
 const dmvCopy: Record<string, { title: (state?: string) => string; description: string; footer: string }> = {
@@ -505,5 +507,65 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "pmp": {
     "color": "hsl(305, 90%, 44%)",
     "tint": "hsl(305, 70%, 96%)"
+  },
+  "nasm": {
+    "color": "hsl(12, 90%, 46%)",
+    "tint": "hsl(12, 80%, 96%)"
+  },
+  "rbt": {
+    "color": "hsl(318, 80%, 40%)",
+    "tint": "hsl(318, 80%, 96%)"
+  },
+  "cpc": {
+    "color": "hsl(280, 40%, 43%)",
+    "tint": "hsl(280, 40%, 96%)"
+  },
+  "jelec": {
+    "color": "hsl(36, 90%, 28%)",
+    "tint": "hsl(36, 80%, 96%)"
+  },
+  "barber": {
+    "color": "hsl(4, 60%, 31%)",
+    "tint": "hsl(4, 60%, 96%)"
+  },
+  "ffi": {
+    "color": "hsl(22, 40%, 43%)",
+    "tint": "hsl(22, 40%, 96%)"
+  },
+  "police": {
+    "color": "hsl(226, 70%, 28%)",
+    "tint": "hsl(226, 70%, 96%)"
+  },
+  "sie": {
+    "color": "hsl(204, 60%, 28%)",
+    "tint": "hsl(204, 60%, 96%)"
+  },
+  "series7": {
+    "color": "hsl(212, 90%, 43%)",
+    "tint": "hsl(212, 80%, 96%)"
+  },
+  "pcoc": {
+    "color": "hsl(220, 50%, 46%)",
+    "tint": "hsl(220, 50%, 96%)"
+  },
+  "cask": {
+    "color": "hsl(84, 50%, 28%)",
+    "tint": "hsl(84, 50%, 96%)"
+  },
+  "cans": {
+    "color": "hsl(222, 90%, 46%)",
+    "tint": "hsl(222, 80%, 96%)"
+  },
+  "ukseru": {
+    "color": "hsl(232, 80%, 43%)",
+    "tint": "hsl(232, 80%, 96%)"
+  },
+  "nzroad": {
+    "color": "hsl(204, 90%, 40%)",
+    "tint": "hsl(204, 80%, 96%)"
+  },
+  "iedtt": {
+    "color": "hsl(142, 40%, 28%)",
+    "tint": "hsl(142, 40%, 96%)"
   }
 };

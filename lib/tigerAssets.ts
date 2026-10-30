@@ -38,6 +38,8 @@ const BORROWED_SETS: Record<string, string> = {
   aunsw: "driving", auvic: "driving", auqld: "driving", auwa: "driving", ausa: "driving", inrto: "driving",
   // Global certifications and nursing exams wear their nearest US exam's tiger.
   awssaa: "aws", az900: "aws", ccna: "aplus", gulfrn: "nclex", uknmc: "nclex",
+  cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
+  psat: "sat", netplus: "secplus", gcdl: "aws",
 };
 
 export function hasTigerSet(examId: string): boolean {

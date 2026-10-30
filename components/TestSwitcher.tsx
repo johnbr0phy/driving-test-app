@@ -176,7 +176,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
           </div>
 
           {!searching && (
-            <div role="radiogroup" aria-label="Show tests for" className="grid grid-cols-5 gap-1 border-b border-gray-100 dark:border-gray-800 p-2">
+            <div role="radiogroup" aria-label="Show tests for" className="grid grid-cols-7 gap-1 border-b border-gray-100 dark:border-gray-800 p-2">
               {REGIONS.map((r) => {
                 const on = r.code === region;
                 return (

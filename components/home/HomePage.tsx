@@ -40,7 +40,7 @@ export const homeMetadata: Metadata = {
   twitter: { card: "summary_large_image", title, description: metaDescription, images: [shareImageUrl("home")] },
 };
 
-/** /uk, /ca, /au and /in: the country's own title, description and canonical. */
+/** /uk, /ie, /ca, /au, /nz and /in: the country's own title, description and canonical. */
 export function countryHomeMetadata(region: Exclude<Region, "US">): Metadata {
   const { title: t, description: d } = REGION_HOME[region];
   const url = `${siteUrl}${regionHomePath(region)}`;
@@ -90,6 +90,8 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   CA: "any provincial licensing authority",
   AU: "any state road authority",
   IN: "any RTO or transport department",
+  IE: "the RSA or the NDLS",
+  NZ: "NZTA or any testing agent",
 };
 
 function faqsFor(region: Region) {

@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -136,13 +136,13 @@ function examTranslation(json: Omit<ExamTranslation, "copy"> & { copy: Omit<Exam
  * ones the old content-area sets used; lib/testSetMigration.ts moves their
  * progress over by question.
  */
-function testSets(setBase: number, testCount: number): ExamTrainingSetDef[] {
+function testSets(setBase: number, testCount: number, size = 50): ExamTrainingSetDef[] {
   return Array.from({ length: testCount }, (_, i) => ({
     setNumber: i + 1,
     id: setBase + i + 1,
     name: `Training Set ${i + 1}`,
     categories: [],
-    size: 50,
+    size,
     weightLabel: "",
     test: i + 1,
   }));
@@ -6806,7 +6806,962 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, ukcar, ukmoto, uklgv, ukpcv, ukadi, caon, caqc, cabc, caab, camb, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+// Next 30 exams batch (October 2026)
+
+const nasm: ExamConfig = {
+  id: "nasm",
+  stateCode: "NASM",
+  idBase: 10700,
+  slug: "/nasm-cpt",
+  landingPath: "/nasm-cpt-practice-test",
+  name: "NASM CPT Practice Test",
+  shortName: "NASM CPT",
+  examLabel: "NASM-CPT exam",
+  fullName: "NASM Certified Personal Trainer (NASM-CPT) Exam",
+  questionIdPrefix: "NASM-",
+  icon: "activity",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Real exam (NASM support pages, checked October 2026): 120 multiple-choice questions in 2 hours,
+  // 100 scored and 20 unscored research items, scaled score of 70 to pass; NCCA accredited.
+  // Weights from NASM's CPT7 exam blueprint (2019 job analysis): sciences and nutrition 15%,
+  // client relations and behavioral coaching 15%, assessment 16%, program design 20%, exercise
+  // technique and training instruction 24%, professional development and responsibility 10%,
+  // scaled to 50 per test (8/7/8/10/12/5). Original questions on the 7th-edition textbook topics.
+  blueprint: {
+    nasmScience: 8,
+    nasmClient: 7,
+    nasmAssess: 8,
+    nasmProgram: 10,
+    nasmTechnique: 12,
+    nasmProfessional: 5,
+  },
+  trainingSets: testSets(10700, 4),
+  categoryLabels: {
+    nasmScience: "Basic & Applied Sciences and Nutrition",
+    nasmClient: "Client Relations & Behavioral Coaching",
+    nasmAssess: "Assessment",
+    nasmProgram: "Program Design",
+    nasmTechnique: "Exercise Technique & Training Instruction",
+    nasmProfessional: "Professional Development & Responsibility",
+  },
+  copy: {
+    guestPrompt: "to save your NASM CPT progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all six exam domains. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 70% to pass",
+    heroSubs: [
+      "Six domains, four mock tests. Exercise technique weighs most.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your NASM-CPT exam.",
+    ],
+    sourceLine: "Based on NASM's CPT7 exam blueprint. Original questions, not affiliated with NASM; 50 per test with a 70% pass line.",
+    analyticsKey: "nasm",
+  },
+};
+
+const rbt: ExamConfig = {
+  id: "rbt",
+  stateCode: "RBT",
+  idBase: 10800,
+  slug: "/rbt",
+  landingPath: "/rbt-practice-test",
+  name: "RBT Practice Test",
+  shortName: "RBT",
+  examLabel: "RBT exam",
+  fullName: "Registered Behavior Technician (RBT) exam",
+  questionIdPrefix: "RBT-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // BACB RBT Test Content Outline (3rd ed.), in effect for exams from January 1, 2026 (document
+  // updated 09/2024, checked October 2026): 75 scored + 10 unscored pilot questions in 90 minutes,
+  // scored counts A Data Collection and Graphing 13, B Behavior Assessment 8, C Behavior
+  // Acquisition 19, D Behavior Reduction 14, E Documentation and Reporting 10, F Ethics 11,
+  // scaled here to 50 per test (9/5/13/9/7/7). The BACB reports pass/fail against a modified-Angoff passing score and
+  // publishes no percentage; 80% is a readiness marker. All items original.
+  blueprint: {
+    rbtData: 9,
+    rbtAssess: 5,
+    rbtAcq: 13,
+    rbtReduce: 9,
+    rbtDoc: 7,
+    rbtEthics: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 10801, name: "Data Collection & Assessment", categories: ["rbtData", "rbtAssess"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 10802, name: "Behavior Acquisition", categories: ["rbtAcq"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 10803, name: "Behavior Reduction", categories: ["rbtReduce"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 10804, name: "Documentation, Reporting & Ethics", categories: ["rbtDoc", "rbtEthics"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    rbtData: "Data Collection & Graphing",
+    rbtAssess: "Behavior Assessment",
+    rbtAcq: "Behavior Acquisition",
+    rbtReduce: "Behavior Reduction",
+    rbtDoc: "Documentation & Reporting",
+    rbtEthics: "Ethics",
+  },
+  copy: {
+    guestPrompt: "to save your RBT progress and track every question you miss",
+    trainingHeading: "Train by RBT domain",
+    trainingSub: "Four sets covering all six domains of the RBT Test Content Outline (3rd ed.). Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions weighted like the real 75 scored",
+    heroSubs: [
+      "Six domains, four mock exams. Behavior acquisition weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. Book your RBT exam.",
+    ],
+    sourceLine: "Based on the BACB RBT Test Content Outline (3rd ed.) and the RBT Ethics Code (2.0). Original questions; 50 per test, weighted like the real exam.",
+    analyticsKey: "rbt",
+  },
+};
+
+const cpc: ExamConfig = {
+  id: "cpc",
+  stateCode: "CPC",
+  idBase: 10900,
+  slug: "/cpc",
+  landingPath: "/cpc-practice-test",
+  name: "CPC Practice Test",
+  shortName: "CPC",
+  examLabel: "CPC exam",
+  fullName: "AAPC Certified Professional Coder (CPC) exam",
+  questionIdPrefix: "CPC-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AAPC "Taking the CPC Exam" (checked 2026-10-30): 100 multiple-choice questions in 4 hours, 70%
+  // overall to pass, open code book (CPT Professional Edition, ICD-10-CM, HCPCS Level II). AAPC's
+  // per-area counts (terminology 4, anatomy 4, compliance 3, guidelines 7, ICD-10-CM 5, HCPCS 3,
+  // CPT 10000-60000 series 6 each, radiology 6, lab 6, medicine 6, E/M 6, anesthesia 4, cases 10)
+  // are halved here. Guidelines and concepts only: no item reproduces a CPT descriptor or needs a
+  // code-book lookup. Cases are short scenarios on modifiers, repairs and sequencing. All original.
+  blueprint: {
+    cpcTerm: 2,
+    cpcAnat: 2,
+    cpcComp: 2,
+    cpcGuide: 4,
+    cpcIcd: 3,
+    cpcHcpcs: 2,
+    cpcInteg: 3,
+    cpcMusc: 3,
+    cpcCardio: 3,
+    cpcDigest: 3,
+    cpcUro: 3,
+    cpcNerve: 3,
+    cpcRad: 3,
+    cpcLab: 3,
+    cpcMed: 3,
+    cpcEm: 3,
+    cpcAnes: 2,
+    cpcCases: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 10901, name: "Foundations & Guidelines", categories: ["cpcTerm", "cpcAnat", "cpcComp", "cpcGuide"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 10902, name: "ICD-10-CM, HCPCS & Cases", categories: ["cpcIcd", "cpcHcpcs", "cpcCases"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 10903, name: "Surgery 10000 to 30000", categories: ["cpcInteg", "cpcMusc", "cpcCardio"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 10904, name: "Surgery 40000 to 60000", categories: ["cpcDigest", "cpcUro", "cpcNerve"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 10905, name: "E/M, Anesthesia, Radiology, Lab & Medicine", categories: ["cpcEm", "cpcAnes", "cpcRad", "cpcLab", "cpcMed"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cpcTerm: "Medical Terminology",
+    cpcAnat: "Anatomy",
+    cpcComp: "Compliance & Regulatory",
+    cpcGuide: "Coding Guidelines & Modifiers",
+    cpcIcd: "ICD-10-CM",
+    cpcHcpcs: "HCPCS Level II",
+    cpcInteg: "Surgery 10000: Integumentary",
+    cpcMusc: "Surgery 20000: Musculoskeletal",
+    cpcCardio: "Surgery 30000: Respiratory & Cardiovascular",
+    cpcDigest: "Surgery 40000: Digestive",
+    cpcUro: "Surgery 50000: Urinary, Genital & Maternity",
+    cpcNerve: "Surgery 60000: Endocrine, Nervous, Eye & Ear",
+    cpcRad: "Radiology",
+    cpcLab: "Pathology & Laboratory",
+    cpcMed: "Medicine",
+    cpcEm: "Evaluation & Management",
+    cpcAnes: "Anesthesia",
+    cpcCases: "Coding Cases",
+  },
+  copy: {
+    guestPrompt: "to save your CPC progress and track every question you miss",
+    trainingHeading: "Train by code set",
+    trainingSub: "Five sets covering all 17 AAPC areas plus coding cases. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the real exam, 70% to pass",
+    heroSubs: [
+      "Seventeen areas, four mock tests. Surgery weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your CPC exam.",
+    ],
+    sourceLine: "Based on AAPC's published CPC exam areas, the ICD-10-CM Official Guidelines, CMS rules and CPT conventions. Original questions; no code-book lookups.",
+    analyticsKey: "cpc",
+  },
+};
+
+const jelec: ExamConfig = {
+  id: "jelec",
+  stateCode: "JELEC",
+  idBase: 11000,
+  slug: "/journeyman-electrician",
+  landingPath: "/journeyman-electrician-practice-test",
+  name: "Journeyman Electrician Practice Test",
+  shortName: "Journeyman Electrician",
+  examLabel: "journeyman electrician exam",
+  fullName: "Journeyman electrician license exam (2023 NEC)",
+  questionIdPrefix: "JELEC-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // No single national exam: states and cities use the ICC National Standard Journeyman
+  // Electrician exam (about 80 questions, 4 hours, open book) or their own PSI/Prometric exams,
+  // most at 70% (some 75%). Content is NFPA 70, the 2023 NEC (checked October 2026), plus
+  // theory and calculations. No state publishes a national per-article split, so this is a
+  // typical journeyman weighting, heaviest on wiring methods and grounding. National content
+  // only; state licensing law is not covered. All items original.
+  blueprint: {
+    jelecGeneral: 5,
+    jelecTheory: 5,
+    jelecBranch: 6,
+    jelecServices: 5,
+    jelecGround: 7,
+    jelecWiring: 8,
+    jelecEquip: 4,
+    jelecMotors: 5,
+    jelecSpecial: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 11001, name: "Code Basics & Electrical Theory", categories: ["jelecGeneral", "jelecTheory"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 11002, name: "Branch Circuits, Feeders & Services", categories: ["jelecBranch", "jelecServices"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 11003, name: "Grounding & Bonding", categories: ["jelecGround"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 11004, name: "Wiring Methods & Materials", categories: ["jelecWiring"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 11005, name: "Equipment, Motors & Special Occupancies", categories: ["jelecEquip", "jelecMotors", "jelecSpecial"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    jelecGeneral: "General Requirements & Definitions",
+    jelecTheory: "Electrical Theory & Calculations",
+    jelecBranch: "Branch Circuits, Feeders & Load Calculations",
+    jelecServices: "Services & Overcurrent Protection",
+    jelecGround: "Grounding & Bonding",
+    jelecWiring: "Wiring Methods & Materials",
+    jelecEquip: "Equipment for General Use",
+    jelecMotors: "Motors & Air Conditioning",
+    jelecSpecial: "Special Occupancies, Equipment & Systems",
+  },
+  copy: {
+    guestPrompt: "to save your journeyman electrician progress and track every question you miss",
+    trainingHeading: "Train by Code topic",
+    trainingSub: "Five sets covering the NEC articles and calculations the journeyman exam leans on. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across the whole Code, 70% to pass",
+    heroSubs: [
+      "Five Code topics, four full mock tests. Grounding and wiring weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your journeyman exam.",
+    ],
+    sourceLine: "Based on the 2023 National Electrical Code (NFPA 70) and standard electrical theory. Original questions; 50 per test, 70% to pass. State licensing law not included.",
+    analyticsKey: "jelec",
+  },
+};
+
+const barber: ExamConfig = {
+  id: "barber",
+  stateCode: "BARBER",
+  idBase: 11100,
+  slug: "/barber",
+  landingPath: "/barber-practice-test",
+  name: "Barber Practice Test",
+  shortName: "Barber",
+  examLabel: "Barber state board",
+  fullName: "Barber state board written (theory) exam",
+  questionIdPrefix: "BARBER-",
+  icon: "scissors",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // NIC National Barber Theory Examination. Candidate bulletin effective June 1, 2025
+  // (revised September 1, 2025): 60 items, 50 scored, 90 minutes. Scientific Concepts 35%
+  // (infection 8, anatomy 7, chemistry 3 = 18 of 50), Implements and Equipment 10% (5),
+  // Hair Care Services 40% (consultation 5, cutting 7, styling 3, chemical 5 = 20),
+  // Facial Hair and Skin Care Services 15% (shaving 4, facials 3 = 7). NIC reports a scaled
+  // score; the pass mark is set by each board (75 in most NIC states). Some states use their
+  // own or a non-NIC exam. References: Milady Standard Barbering 7th ed. (2026). All items original.
+  blueprint: {
+    barInfection: 8,
+    barAnatomy: 7,
+    barChemistry: 3,
+    barTools: 5,
+    barConsult: 5,
+    barCutting: 7,
+    barStyling: 3,
+    barChemical: 5,
+    barShaving: 4,
+    barFacial: 3,
+  },
+  trainingSets: testSets(11100, 4),
+  categoryLabels: {
+    barInfection: "Infection Control & Safety",
+    barAnatomy: "Anatomy, Hair & Skin Disorders",
+    barChemistry: "Chemistry of Barbering Products",
+    barTools: "Implements & Equipment",
+    barConsult: "Consultation, Shampoo & Scalp Care",
+    barCutting: "Haircutting & Head Shaving",
+    barStyling: "Hairstyling & Natural Hair",
+    barChemical: "Haircolor, Perms & Relaxers",
+    barShaving: "Shaving & Facial Hair Design",
+    barFacial: "Facials & Electrotherapy",
+  },
+  copy: {
+    guestPrompt: "to save your barber exam progress and track every question you miss",
+    trainingHeading: "Train by test",
+    trainingSub: "Four sets, one per practice test, covering every NIC barber theory topic: infection control, anatomy, tools, cutting, chemical services, shaving and facials. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, the scored length of the NIC barber theory exam",
+    heroSubs: [
+      "Ten topics, four tests. Infection control, anatomy and haircutting carry the most questions.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Go pass your state board.",
+    ],
+    sourceLine: "Based on the NIC National Barber Theory Examination outline (bulletin effective June 1, 2025: 60 items, 50 scored, 90 minutes). Original questions. Some states use their own exam; check your board.",
+    analyticsKey: "barber",
+  },
+};
+
+const ffi: ExamConfig = {
+  id: "ffi",
+  stateCode: "FFI",
+  idBase: 11200,
+  slug: "/firefighter",
+  landingPath: "/firefighter-practice-test",
+  name: "Firefighter I Practice Test",
+  shortName: "Firefighter I",
+  examLabel: "Firefighter I exam",
+  fullName: "Firefighter I written certification exam (NFPA 1010)",
+  questionIdPrefix: "FFI-",
+  icon: "siren",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Firefighter I job performance requirements, NFPA 1010 (2024 edition, Chapter 6; it
+  // consolidated NFPA 1001-2019, whose Firefighter I content is the same), checked October 2026.
+  // State fire training agencies and IFSAC/Pro Board-accredited bodies set their own written
+  // exams (commonly about 100 items, 70% to pass) and publish no national per-topic weights, so
+  // counts are ours, weighted to the JPR groupings. Hazmat awareness items follow NFPA 470 and
+  // the DOT ERG. All items original; no textbook or provider named.
+  blueprint: {
+    ffiSafety: 7,
+    ffiBehavior: 7,
+    ffiPpe: 7,
+    ffiTools: 6,
+    ffiLadders: 5,
+    ffiRescue: 6,
+    ffiWater: 8,
+    ffiAttack: 4,
+  },
+  trainingSets: testSets(11200, 4),
+  categoryLabels: {
+    ffiSafety: "Safety, Communications & Command",
+    ffiBehavior: "Fire Behavior & Building Construction",
+    ffiPpe: "PPE & SCBA",
+    ffiTools: "Extinguishers, Ropes & Forcible Entry",
+    ffiLadders: "Ground Ladders",
+    ffiRescue: "Search, Rescue & Ventilation",
+    ffiWater: "Water Supply, Hose & Fire Streams",
+    ffiAttack: "Fire Control, Overhaul & Utilities",
+  },
+  copy: {
+    guestPrompt: "to save your Firefighter I progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all eight topic areas. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 70% to pass",
+    heroSubs: [
+      "Eight topic areas, four mock tests. Water supply and hose weigh most.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your Firefighter I written exam.",
+    ],
+    sourceLine: "Based on the NFPA 1010 Firefighter I job performance requirements. Original questions; question count and pass mark vary by certifying agency.",
+    analyticsKey: "ffi",
+  },
+};
+
+const police: ExamConfig = {
+  id: "police",
+  stateCode: "POLICE",
+  idBase: 11300,
+  slug: "/police-exam",
+  landingPath: "/police-exam-practice-test",
+  name: "Police Exam Practice Test",
+  shortName: "Police Exam",
+  examLabel: "Police Officer Written Exam",
+  fullName: "police officer entrance written exam",
+  questionIdPrefix: "POLICE-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // There is no national police exam: agencies use a vendor test (NPOST, FrontLine National),
+  // a state test such as California POST's PELLETB (secondary sources say its CLOZE sub-test
+  // was dropped from January 2025; POST has not confirmed this), a civil service exam or their
+  // own. This blueprint covers the skills they share, weighted toward
+  // reading and writing as every format is: reading 20%, grammar/spelling/vocabulary 20%,
+  // report writing 16%, math 16%, situational judgment 16%, reasoning 12%. Memory/observation
+  // sections (picture study) are omitted. 70% is a common agency cut-off, used as a marker.
+  // Sources checked October 2026; all items original, no vendor named.
+  blueprint: {
+    polReading: 10,
+    polGrammar: 10,
+    polReports: 8,
+    polMath: 8,
+    polJudgment: 8,
+    polReasoning: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 11301, name: "Reading Comprehension", categories: ["polReading"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 11302, name: "Grammar, Spelling & Vocabulary", categories: ["polGrammar"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 11303, name: "Report Writing & Clarity", categories: ["polReports"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 11304, name: "Math", categories: ["polMath"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 11305, name: "Judgment & Reasoning", categories: ["polJudgment", "polReasoning"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    polReading: "Reading Comprehension",
+    polGrammar: "Grammar, Spelling & Vocabulary",
+    polReports: "Report Writing & Clarity",
+    polMath: "Math",
+    polJudgment: "Situational Judgment & Ethics",
+    polReasoning: "Reasoning & Problem Solving",
+  },
+  copy: {
+    guestPrompt: "to save your police exam progress and track every question you miss",
+    trainingHeading: "Train by skill",
+    trainingSub: "Five sets covering every section of the police written exam: reading, grammar and spelling, report writing, math, and judgment and reasoning. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every section, 70% to pass",
+    heroSubs: [
+      "Six skills, four tests. Reading and writing weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Go apply and book your written exam.",
+    ],
+    sourceLine: "Based on the skills police entrance exams share: reading, writing, report writing, math and judgment. Original questions; your agency's test, cut-off and later steps vary.",
+    analyticsKey: "police",
+  },
+};
+
+const sie: ExamConfig = {
+  id: "sie",
+  stateCode: "SIE",
+  idBase: 11400,
+  slug: "/sie",
+  landingPath: "/sie-exam-practice-test",
+  name: "SIE Exam Practice Test",
+  shortName: "SIE",
+  examLabel: "SIE exam",
+  fullName: "FINRA Securities Industry Essentials (SIE) exam",
+  questionIdPrefix: "SIE-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // FINRA SIE content outline (current revision, October 2025; checked October 2026): 75 scored
+  // items, 1h45, passing score 70. Sections 12/33/23/7 of 75 (16/44/31/9%) scaled to 50:
+  // capital markets 8; products and risks 22 (equity/debt 11, funds/options/risk 11); trading,
+  // accounts and prohibited activities 16 (trading 8, accounts/conduct 8); regulatory framework 4.
+  // All items original.
+  blueprint: {
+    sieMarkets: 8,
+    sieEquityDebt: 11,
+    sieFunds: 11,
+    sieTrading: 8,
+    sieAccounts: 8,
+    sieRegulation: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 11401, name: "Capital Markets", categories: ["sieMarkets"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 11402, name: "Equity & Debt Securities", categories: ["sieEquityDebt"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 11403, name: "Funds, Options & Risk", categories: ["sieFunds"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 11404, name: "Trading & Settlement", categories: ["sieTrading"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 11405, name: "Accounts, Conduct & Regulation", categories: ["sieAccounts", "sieRegulation"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sieMarkets: "Knowledge of Capital Markets",
+    sieEquityDebt: "Equity & Debt Securities",
+    sieFunds: "Funds, Options & Investment Risk",
+    sieTrading: "Trading & Settlement",
+    sieAccounts: "Customer Accounts & Prohibited Activities",
+    sieRegulation: "Regulatory Framework",
+  },
+  copy: {
+    guestPrompt: "to save your SIE progress and track every question you miss",
+    trainingHeading: "Train by outline section",
+    trainingSub: "Five sets covering every section of FINRA's SIE outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the real SIE, 70% to pass",
+    heroSubs: [
+      "Five sets, four mock tests. Products weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your SIE.",
+    ],
+    sourceLine: "Based on FINRA's Securities Industry Essentials content outline. Original questions; 50 per test, weighted like the real 75-question exam, 70% to pass.",
+    analyticsKey: "sie",
+  },
+};
+
+const series7: ExamConfig = {
+  id: "series7",
+  stateCode: "SERIES7",
+  idBase: 11500,
+  slug: "/series-7",
+  landingPath: "/series-7-practice-test",
+  name: "Series 7 Practice Test",
+  shortName: "Series 7",
+  examLabel: "Series 7 exam",
+  fullName: "FINRA Series 7 General Securities Representative exam",
+  questionIdPrefix: "SERIES7-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 72,
+  // FINRA Series 7 content outline (exams on or after Oct 1, 2018; current PDF in the 2025-10
+  // folder; checked October 2026): 125 scored items (+5 unscored), 3h45, passing score 72.
+  // Functions 9/11/91/14 of 125 (7.2/8.8/72.8/11.2%) scaled to 50: F1 seeks business 4,
+  // F2 opens accounts 4, F3 information/recommendations/records 36 (equity 6, debt and munis 9,
+  // options 8, packaged products 6, recommendations/tax/retirement 7), F4 processes and confirms
+  // transactions 6. All items original.
+  blueprint: {
+    s7Business: 4,
+    s7Accounts: 4,
+    s7Equity: 6,
+    s7Debt: 9,
+    s7Options: 8,
+    s7Funds: 6,
+    s7Suitability: 7,
+    s7Trading: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 11501, name: "Prospecting & Opening Accounts", categories: ["s7Business", "s7Accounts"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 11502, name: "Equity Securities", categories: ["s7Equity"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 3, id: 11503, name: "Debt & Municipal Securities", categories: ["s7Debt"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 11504, name: "Options", categories: ["s7Options"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 11505, name: "Packaged Products & Recommendations", categories: ["s7Funds", "s7Suitability"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 6, id: 11506, name: "Orders, Margin & Confirmations", categories: ["s7Trading"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    s7Business: "Seeking Business for the Broker-Dealer",
+    s7Accounts: "Opening Accounts",
+    s7Equity: "Equity Securities",
+    s7Debt: "Debt & Municipal Securities",
+    s7Options: "Options",
+    s7Funds: "Packaged Products",
+    s7Suitability: "Recommendations, Tax & Retirement",
+    s7Trading: "Orders, Margin & Confirmations",
+  },
+  copy: {
+    guestPrompt: "to save your Series 7 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Six sets covering all four functions of FINRA's Series 7 outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the real Series 7, 72% to pass",
+    heroSubs: [
+      "Six sets, four mock tests. Options and munis weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your Series 7.",
+    ],
+    sourceLine: "Based on FINRA's Series 7 content outline. Original questions; 50 per test, weighted like the real 125-question exam, 72% to pass.",
+    analyticsKey: "series7",
+  },
+};
+
+const pcoc: ExamConfig = {
+  id: "pcoc",
+  stateCode: "PCOC",
+  idBase: 11600,
+  slug: "/boating-canada",
+  landingPath: "/pcoc-practice-test",
+  name: "PCOC Practice Test",
+  shortName: "Boating Canada",
+  examLabel: "PCOC test",
+  fullName: "Pleasure Craft Operator Card test (Canada)",
+  questionIdPrefix: "PCOC-",
+  icon: "sailboat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // Transport Canada Pleasure Craft Operator Card test (checked October 2026): 50 multiple-choice
+  // questions, 75% (38 of 50) to pass, set by accredited course providers (the 36-question test
+  // was replaced in 2011). Content follows the Boating Safety Course and Transport Canada's Safe
+  // Boating Guide (TP 511E), the Small Vessel Regulations (SOR/2010-91), the Collision
+  // Regulations and the Canadian Aids to Navigation System (TP 968). TC publishes no per-topic
+  // counts; weights follow the course: equipment and rules of the road 10 each. All items original.
+  blueprint: {
+    pcocRules: 7,
+    pcocEquipment: 10,
+    pcocBefore: 8,
+    pcocRoadRules: 10,
+    pcocAids: 7,
+    pcocEmergencies: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 11601, name: "Regulations & Before You Go", categories: ["pcocRules", "pcocBefore"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 11602, name: "Minimum Safety Equipment", categories: ["pcocEquipment"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 11603, name: "Rules of the Road", categories: ["pcocRoadRules"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 11604, name: "Buoys & Navigation Aids", categories: ["pcocAids"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 11605, name: "Emergencies & Cold Water", categories: ["pcocEmergencies"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pcocRules: "Regulations & Licensing",
+    pcocEquipment: "Minimum Safety Equipment",
+    pcocBefore: "Before You Go",
+    pcocRoadRules: "Rules of the Road",
+    pcocAids: "Buoys & Navigation Aids",
+    pcocEmergencies: "Emergencies & Cold Water",
+  },
+  copy: {
+    guestPrompt: "to save your PCOC progress and track every question you miss",
+    trainingHeading: "Train by course topic",
+    trainingSub: "Five sets covering the boating safety course: regulations and trip planning, safety equipment, rules of the road, Canadian buoys, emergencies. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions like the real test, 38 to pass",
+    heroSubs: [
+      "Five topics, four full-length tests. Equipment and rules of the road weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Take your accredited PCOC test.",
+    ],
+    sourceLine: "Based on Transport Canada's Safe Boating Guide and the Small Vessel and Collision Regulations. Original questions; 50 per test, 75% to pass like the real test.",
+    analyticsKey: "pcoc",
+  },
+};
+
+const cask: ExamConfig = {
+  id: "cask",
+  stateCode: "CASK",
+  idBase: 11700,
+  slug: "/saskatchewan-learners",
+  landingPath: "/saskatchewan-learners-practice-test",
+  name: "Saskatchewan Class 7 Practice Test",
+  shortName: "SK Class 7",
+  examLabel: "Saskatchewan Class 7",
+  fullName: "Saskatchewan Class 7 learner's licence knowledge test",
+  questionIdPrefix: "CASK-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Saskatchewan Driver's Handbook, 2026-27 edition (SGI, SLB143 07/2026, read October 2026). The
+  // Class 7 knowledge tests are "Basic and Sign": driving situations and the rules of the road, and
+  // sign identification; a failed part is rewritten on its own, results last a year, one attempt a
+  // day. SGI publishes no question count or pass mark (prep sites report 80% per part), so 80% is
+  // a practice target. Signs plus lights, markings and railway crossings are 21 of 50, mirroring
+  // the separate Sign part; the rules split by the handbook's chapters (GDL and the law,
+  // right-of-way, sharing the road, driving skills, winter, emergencies and impairment).
+  blueprint: {
+    caskSigns: 14,
+    caskSignals: 7,
+    caskLicence: 7,
+    caskRightOfWay: 7,
+    caskSharing: 6,
+    caskDriving: 5,
+    caskConditions: 4,
+  },
+  trainingSets: testSets(11700, 4),
+  categoryLabels: {
+    caskSigns: "Traffic Signs",
+    caskSignals: "Lights, Markings & Railway Crossings",
+    caskLicence: "GDL, Licensing & the Law",
+    caskRightOfWay: "Right-of-Way & Turns",
+    caskSharing: "Sharing the Road",
+    caskDriving: "Safe Driving Skills",
+    caskConditions: "Winter, Emergencies & Impairment",
+  },
+  copy: {
+    guestPrompt: "to save your Saskatchewan Class 7 progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions on Saskatchewan signs and rules",
+    heroSubs: [
+      "Basic and Sign, four tests. Signs come up most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your learner's test with a motor licence issuer.",
+    ],
+    sourceLine: "Based on the Saskatchewan Driver's Handbook (2026-27). SGI does not publish a pass mark; 80% here is a practice target.",
+    analyticsKey: "cask",
+  },
+};
+
+const cans: ExamConfig = {
+  id: "cans",
+  stateCode: "CANS",
+  idBase: 11800,
+  slug: "/nova-scotia-learners",
+  landingPath: "/nova-scotia-learners-practice-test",
+  name: "Nova Scotia Learner's Practice Test",
+  shortName: "NS Class 7",
+  examLabel: "Nova Scotia Class 7",
+  fullName: "Nova Scotia Class 7 learner's licence knowledge test",
+  questionIdPrefix: "CANS-",
+  icon: "car",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 80,
+  // Nova Scotia Driver's Handbook (novascotia.ca, 2017 reprint with GDL and emergency-vehicle
+  // inserts; still the official study guide in October 2026) and novascotia.ca "Take a driver
+  // knowledge test: Learner's Licence (class 7)": two parts, rules of the road and road sign
+  // recognition, 20 multiple-choice questions each, 16 of 20 on each part, 30 minutes per part.
+  // Each practice test is 20 sign items (regulatory, warning, work zone, lights and markings) and
+  // 20 rules items split by the handbook's chapters. Learner and GDL rules follow the current RMV
+  // pages (2-year learner licence, 12 or 9 months before the road test); child seats and the
+  // one-metre cyclist gap follow the Traffic Safety Act in force October 19, 2026.
+  blueprint: {
+    cansRegSigns: 6,
+    cansWarnSigns: 6,
+    cansWorkSigns: 3,
+    cansSignals: 5,
+    cansLicence: 4,
+    cansRightOfWay: 4,
+    cansDriving: 5,
+    cansSharing: 4,
+    cansConditions: 3,
+  },
+  trainingSets: testSets(11800, 5, 40),
+  categoryLabels: {
+    cansRegSigns: "Regulatory Signs",
+    cansWarnSigns: "Warning Signs",
+    cansWorkSigns: "Work Zone & Guide Signs",
+    cansSignals: "Lights & Pavement Markings",
+    cansLicence: "Licensing, GDL & Demerits",
+    cansRightOfWay: "Intersections & Right-of-Way",
+    cansDriving: "Speed, Passing & Lanes",
+    cansSharing: "Parking & Sharing the Road",
+    cansConditions: "Night, Weather & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your learner's test progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Five sets, one per practice test: Set 1 holds exactly the 40 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 20 signs + 20 rules, like the real test",
+    heroSubs: [
+      "Signs and rules of the road, five tests. You need 16 of 20 on each part of the real one.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your knowledge test online or with Access Nova Scotia.",
+    ],
+    sourceLine: "Based on the Nova Scotia Driver's Handbook and the Traffic Safety Act rules in force October 2026. The real test needs 16 of 20 on each part.",
+    analyticsKey: "cans",
+  },
+};
+
+const ukseru: ExamConfig = {
+  id: "ukseru",
+  stateCode: "UKSERU",
+  idBase: 11900,
+  slug: "/seru",
+  landingPath: "/seru-practice-test",
+  name: "SERU Practice Test",
+  shortName: "SERU",
+  examLabel: "SERU assessment",
+  fullName: "SERU assessment (London private hire driver Safety, Equality and Regulatory Understanding)",
+  questionIdPrefix: "UKSERU-",
+  icon: "car",
+  testCount: 5,
+  questionsPerTest: 36,
+  passPct: 60,
+  // TfL's Safety, Equality and Regulatory Understanding assessment for London PHV drivers, based
+  // only on the TfL PHV Driver's Handbook, version 1.0 (30 September 2021; the latest
+  // version we could find in October 2026). TfL publishes no question count or per-section split; driver guides report
+  // 36 to 37 questions (multiple choice, sentence completion, 2 reading passages) in 45 to 60
+  // minutes and a 60% pass mark. Here: 5 tests of 36 four-option items weighted by handbook
+  // section length; each pool is 5x its count plus 2 training-only spares. All items original.
+  blueprint: {
+    serLicensing: 6,
+    serVehicles: 2,
+    serJourneys: 5,
+    serSafety: 4,
+    serBehaviour: 3,
+    serParking: 5,
+    serDriving: 4,
+    serEquality: 4,
+    serSafeguarding: 2,
+    serRideshare: 1,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 11901, name: "Licensing & Vehicles", categories: ["serLicensing", "serVehicles"], size: 44, weightLabel: "8 of 36 test questions" },
+    { setNumber: 2, id: 11902, name: "Journeys & Ridesharing", categories: ["serJourneys", "serRideshare"], size: 34, weightLabel: "6 of 36 test questions" },
+    { setNumber: 3, id: 11903, name: "Staying Safe & Driver Behaviour", categories: ["serSafety", "serBehaviour"], size: 39, weightLabel: "7 of 36 test questions" },
+    { setNumber: 4, id: 11904, name: "Driving & Parking in London", categories: ["serParking", "serDriving"], size: 49, weightLabel: "9 of 36 test questions" },
+    { setNumber: 5, id: 11905, name: "Equality & Safeguarding", categories: ["serEquality", "serSafeguarding"], size: 34, weightLabel: "6 of 36 test questions" },
+  ],
+  categoryLabels: {
+    serLicensing: "London PHV Driver Licensing",
+    serVehicles: "Licensing Requirements for PHVs",
+    serJourneys: "Carrying Out Private Hire Journeys",
+    serSafety: "Staying Safe",
+    serBehaviour: "Driver Behaviour",
+    serParking: "Driving & Parking in London",
+    serDriving: "Safer Driving",
+    serEquality: "Equality & Disability",
+    serSafeguarding: "Safeguarding Children & Adults at Risk",
+    serRideshare: "Ridesharing",
+  },
+  copy: {
+    guestPrompt: "to save your SERU progress and track every question you miss",
+    trainingHeading: "Train by handbook section",
+    trainingSub: "Five sets covering all ten sections of the PHV Driver's Handbook. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 36 questions, 22 to pass (60%)",
+    heroSubs: [
+      "Ten handbook sections, five mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for SERU.",
+    ],
+    sourceLine: "Original practice questions based on the published SERU guide, TfL's PHV Driver's Handbook (version 1.0). Not affiliated with TfL; 36 per test, 60% to pass.",
+    analyticsKey: "ukseru",
+  },
+};
+
+const nzroad: ExamConfig = {
+  id: "nzroad",
+  stateCode: "NZROAD",
+  idBase: 12000,
+  slug: "/nz-learner-licence",
+  landingPath: "/nz-learner-licence-practice-test",
+  name: "NZ Learner Licence Practice Test",
+  shortName: "NZ learner licence",
+  examLabel: "NZ learner licence test",
+  fullName: "New Zealand learner licence theory test (Class 1 car)",
+  questionIdPrefix: "NZRC-",
+  icon: "car",
+  testCount: 5,
+  questionsPerTest: 35,
+  passPct: 91,
+  // Real test (drive.govt.nz, checked October 2026): 35 multi-choice questions on a computer, at
+  // least 32 right to pass, 30 minutes, written from the Official New Zealand Road Code (NZTA,
+  // online edition). NZTA publishes no per-topic counts; these follow the Road Code chapters with
+  // give way rules weighted heaviest. Five real-length tests; pools are 5x each count plus 25
+  // training-only spares. passPct 91 = ceil(0.91 * 35) = 32. Rules as in force on 2026-10-30,
+  // including the 1 October 2026 changes (1.5 m passing gap, give way to buses on 60 km/h roads);
+  // the 25 January 2027 graduated licence changes are not asked. All items original.
+  blueprint: {
+    nzLicence: 5,
+    nzSigns: 6,
+    nzGiveWay: 7,
+    nzRoad: 6,
+    nzSharing: 5,
+    nzParking: 3,
+    nzConditions: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 12001, name: "Licences, Alcohol & Conditions", categories: ["nzLicence", "nzConditions"], size: 46, weightLabel: "8 of 35 test questions" },
+    { setNumber: 2, id: 12002, name: "Signs, Signals & Markings", categories: ["nzSigns"], size: 34, weightLabel: "6 of 35 test questions" },
+    { setNumber: 3, id: 12003, name: "Intersections & Giving Way", categories: ["nzGiveWay"], size: 40, weightLabel: "7 of 35 test questions" },
+    { setNumber: 4, id: 12004, name: "Road Position, Speed & Parking", categories: ["nzRoad", "nzParking"], size: 51, weightLabel: "9 of 35 test questions" },
+    { setNumber: 5, id: 12005, name: "Sharing the Road", categories: ["nzSharing"], size: 29, weightLabel: "5 of 35 test questions" },
+  ],
+  categoryLabels: {
+    nzLicence: "Licences, Alcohol & Drugs",
+    nzSigns: "Signs, Signals & Markings",
+    nzGiveWay: "Intersections & Giving Way",
+    nzRoad: "Road Position, Speed & Overtaking",
+    nzSharing: "Sharing the Road",
+    nzParking: "Parking",
+    nzConditions: "Night, Weather & Crashes",
+  },
+  copy: {
+    guestPrompt: "to save your learner licence progress and track every question you miss",
+    trainingHeading: "Train by Road Code topic",
+    trainingSub: "Five sets covering every part of the Road Code the theory test asks about. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 35 questions like the real test, 32 to pass",
+    heroSubs: [
+      "Five topics, five real-length tests. Give way rules weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your learner licence test.",
+    ],
+    sourceLine: "Based on the Official New Zealand Road Code. Original questions; 35 per test, 32 to pass like the real test.",
+    analyticsKey: "nzroad",
+  },
+};
+
+const iedtt: ExamConfig = {
+  id: "iedtt",
+  stateCode: "IEDTT",
+  idBase: 12100,
+  slug: "/ireland-driver-theory",
+  landingPath: "/ireland-driver-theory-test",
+  name: "Ireland Driver Theory Test Practice",
+  shortName: "Theory Test (IE)",
+  examLabel: "Driver Theory Test",
+  fullName: "Ireland Driver Theory Test (car, RSA)",
+  questionIdPrefix: "IEDTT-",
+  icon: "car",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 87,
+  // RSA Driver Theory Test, car/bike (BW, AM), per theorytest.ie FAQs checked 2026-10-30:
+  // 40 multiple-choice questions on computer at a test centre, 35 correct to pass, 45 minutes,
+  // certificate valid two years, needed before a first learner permit. The RSA publishes no
+  // per-category weights, so counts follow the chapters of the RSA Rules of the Road (current
+  // online edition; 2026 print edition), signs and markings 12 of 40. ceil(0.87 x 40) = 35.
+  // The official RSA question bank is copyrighted and was not used: all items original.
+  blueprint: {
+    iedttLicence: 4,
+    iedttSigns: 8,
+    iedttMarkings: 4,
+    iedttRules: 8,
+    iedttMotorway: 3,
+    iedttUsers: 5,
+    iedttSafety: 5,
+    iedttConditions: 3,
+  },
+  trainingSets: testSets(12100, 5, 40),
+  categoryLabels: {
+    iedttLicence: "Licences, Permits & Documents",
+    iedttSigns: "Traffic Signs",
+    iedttMarkings: "Road Markings & Traffic Lights",
+    iedttRules: "Speed, Junctions & Overtaking",
+    iedttMotorway: "Motorways, Tunnels & Parking",
+    iedttUsers: "Vulnerable Road Users",
+    iedttSafety: "Alcohol, Distraction & Seatbelts",
+    iedttConditions: "Weather, Breakdowns & Collisions",
+  },
+  copy: {
+    guestPrompt: "to save your theory test progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Five sets, one per practice test: Set 1 holds exactly the 40 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 40 questions, 35 to pass, like the real test",
+    heroSubs: [
+      "Five real-length tests on the Rules of the Road. You need 35 of 40.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test at theorytest.ie.",
+    ],
+    sourceLine: "Original questions written from the RSA Rules of the Road (2026). The real Driver Theory Test is 40 questions and you need 35 right.",
+    analyticsKey: "iedtt",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

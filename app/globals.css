@@ -1599,6 +1599,426 @@
     --brand-gradient-to: 325 60% 96%;
   }
 
+  /* NASM CPT theme */
+  [data-theme="nasm"] {
+    --brand: 12 90% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 12 80% 96%;
+    --brand-hover: 12 90% 41%;
+    --brand-dark: 12 90% 37%;
+    --brand-darker: 12 80% 28%;
+    --brand-muted: 12 35% 72%;
+    --brand-border: 12 38% 80%;
+    --brand-border-light: 12 34% 89%;
+    --brand-gradient-to: 40 90% 95%;
+  }
+
+  /* RBT theme */
+  [data-theme="rbt"] {
+    --brand: 318 80% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 318 80% 96%;
+    --brand-hover: 318 80% 35%;
+    --brand-dark: 318 80% 31%;
+    --brand-darker: 318 70% 22%;
+    --brand-muted: 318 35% 72%;
+    --brand-border: 318 38% 80%;
+    --brand-border-light: 318 34% 89%;
+    --brand-gradient-to: 280 50% 96%;
+  }
+
+  /* CPC medical coding theme */
+  [data-theme="cpc"] {
+    --brand: 280 40% 43%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 40% 96%;
+    --brand-hover: 280 40% 38%;
+    --brand-dark: 280 40% 34%;
+    --brand-darker: 280 30% 25%;
+    --brand-muted: 280 35% 72%;
+    --brand-border: 280 38% 80%;
+    --brand-border-light: 280 34% 89%;
+    --brand-gradient-to: 220 60% 96%;
+  }
+
+  /* Journeyman electrician theme */
+  [data-theme="jelec"] {
+    --brand: 36 90% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 36 80% 96%;
+    --brand-hover: 36 90% 23%;
+    --brand-dark: 36 90% 19%;
+    --brand-darker: 36 80% 12%;
+    --brand-muted: 36 35% 72%;
+    --brand-border: 36 38% 80%;
+    --brand-border-light: 36 34% 89%;
+    --brand-gradient-to: 210 60% 96%;
+  }
+
+  /* Barber theme */
+  [data-theme="barber"] {
+    --brand: 4 60% 31%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 4 60% 96%;
+    --brand-hover: 4 60% 26%;
+    --brand-dark: 4 60% 22%;
+    --brand-darker: 4 50% 13%;
+    --brand-muted: 4 35% 72%;
+    --brand-border: 4 38% 80%;
+    --brand-border-light: 4 34% 89%;
+    --brand-gradient-to: 215 70% 96%;
+  }
+
+  /* Firefighter I theme */
+  [data-theme="ffi"] {
+    --brand: 22 40% 43%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 22 40% 96%;
+    --brand-hover: 22 40% 38%;
+    --brand-dark: 22 40% 34%;
+    --brand-darker: 22 30% 25%;
+    --brand-muted: 22 35% 72%;
+    --brand-border: 22 38% 80%;
+    --brand-border-light: 22 34% 89%;
+    --brand-gradient-to: 45 90% 95%;
+  }
+
+  /* Police exam theme */
+  [data-theme="police"] {
+    --brand: 226 70% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 226 70% 96%;
+    --brand-hover: 226 70% 23%;
+    --brand-dark: 226 70% 19%;
+    --brand-darker: 226 60% 12%;
+    --brand-muted: 226 35% 72%;
+    --brand-border: 226 38% 80%;
+    --brand-border-light: 226 34% 89%;
+    --brand-gradient-to: 45 80% 95%;
+  }
+
+  /* SIE theme */
+  [data-theme="sie"] {
+    --brand: 204 60% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 204 60% 96%;
+    --brand-hover: 204 60% 23%;
+    --brand-dark: 204 60% 19%;
+    --brand-darker: 204 50% 12%;
+    --brand-muted: 204 35% 72%;
+    --brand-border: 204 38% 80%;
+    --brand-border-light: 204 34% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
+  /* Series 7 theme */
+  [data-theme="series7"] {
+    --brand: 212 90% 43%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 212 80% 96%;
+    --brand-hover: 212 90% 38%;
+    --brand-dark: 212 90% 34%;
+    --brand-darker: 212 80% 25%;
+    --brand-muted: 212 35% 72%;
+    --brand-border: 212 38% 80%;
+    --brand-border-light: 212 34% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
+  /* PCOC (Canada boating) theme */
+  [data-theme="pcoc"] {
+    --brand: 220 50% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 220 50% 96%;
+    --brand-hover: 220 50% 41%;
+    --brand-dark: 220 50% 37%;
+    --brand-darker: 220 40% 28%;
+    --brand-muted: 220 35% 72%;
+    --brand-border: 220 38% 80%;
+    --brand-border-light: 220 34% 89%;
+    --brand-gradient-to: 0 70% 96%;
+  }
+
+  /* Saskatchewan Class 7 theme */
+  [data-theme="cask"] {
+    --brand: 84 50% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 84 50% 96%;
+    --brand-hover: 84 50% 23%;
+    --brand-dark: 84 50% 19%;
+    --brand-darker: 84 40% 12%;
+    --brand-muted: 84 35% 72%;
+    --brand-border: 84 38% 80%;
+    --brand-border-light: 84 34% 89%;
+    --brand-gradient-to: 45 80% 94%;
+  }
+
+  /* Nova Scotia Class 7 theme */
+  [data-theme="cans"] {
+    --brand: 222 90% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 80% 96%;
+    --brand-hover: 222 90% 41%;
+    --brand-dark: 222 90% 37%;
+    --brand-darker: 222 80% 28%;
+    --brand-muted: 222 35% 72%;
+    --brand-border: 222 38% 80%;
+    --brand-border-light: 222 34% 89%;
+    --brand-gradient-to: 48 80% 95%;
+  }
+
+  /* SERU (London PHV) theme */
+  [data-theme="ukseru"] {
+    --brand: 232 80% 43%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 232 80% 96%;
+    --brand-hover: 232 80% 38%;
+    --brand-dark: 232 80% 34%;
+    --brand-darker: 232 70% 25%;
+    --brand-muted: 232 35% 72%;
+    --brand-border: 232 38% 80%;
+    --brand-border-light: 232 34% 89%;
+    --brand-gradient-to: 252 60% 95%;
+  }
+
+  /* NZ learner licence theme */
+  [data-theme="nzroad"] {
+    --brand: 204 90% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 204 80% 96%;
+    --brand-hover: 204 90% 35%;
+    --brand-dark: 204 90% 31%;
+    --brand-darker: 204 80% 22%;
+    --brand-muted: 204 35% 72%;
+    --brand-border: 204 38% 80%;
+    --brand-border-light: 204 34% 89%;
+    --brand-gradient-to: 200 55% 95%;
+  }
+
+  /* Ireland Driver Theory Test theme */
+  [data-theme="iedtt"] {
+    --brand: 142 40% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 142 40% 96%;
+    --brand-hover: 142 40% 23%;
+    --brand-dark: 142 40% 19%;
+    --brand-darker: 142 30% 12%;
+    --brand-muted: 142 35% 72%;
+    --brand-border: 142 38% 80%;
+    --brand-border-light: 142 34% 89%;
+    --brand-gradient-to: 30 90% 95%;
+  }
+
+  /* FAA Private Pilot theme (v2 exam; matches lib/v2/exams/faapvt.ts theme) */
+  [data-theme="faapvt"] {
+    --brand: 68 40% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 68 40% 96%;
+    --brand-hover: 68 40% 23%;
+    --brand-dark: 68 40% 19%;
+    --brand-darker: 68 30% 12%;
+    --brand-muted: 68 35% 72%;
+    --brand-border: 68 38% 80%;
+    --brand-border-light: 68 34% 89%;
+    --brand-gradient-to: 199 80% 96%;
+  }
+
+  /* PSAT theme (v2 exam; matches lib/v2/exams/psat.ts theme) */
+  [data-theme="psat"] {
+    --brand: 230 50% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 230 50% 96%;
+    --brand-hover: 230 50% 23%;
+    --brand-dark: 230 50% 19%;
+    --brand-darker: 230 40% 12%;
+    --brand-muted: 230 35% 72%;
+    --brand-border: 230 38% 80%;
+    --brand-border-light: 230 34% 89%;
+    --brand-gradient-to: 246 90% 96%;
+  }
+
+  /* Praxis Core theme (v2 exam; matches lib/v2/exams/praxis.ts theme) */
+  [data-theme="praxis"] {
+    --brand: 48 40% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 48 40% 96%;
+    --brand-hover: 48 40% 23%;
+    --brand-dark: 48 40% 19%;
+    --brand-darker: 48 30% 12%;
+    --brand-muted: 48 35% 72%;
+    --brand-border: 48 38% 80%;
+    --brand-border-light: 48 34% 89%;
+    --brand-gradient-to: 36 55% 95%;
+  }
+
+  /* GRE theme (v2 exam; matches lib/v2/exams/gre.ts theme) */
+  [data-theme="gre"] {
+    --brand: 296 40% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 296 40% 96%;
+    --brand-hover: 296 40% 29%;
+    --brand-dark: 296 40% 25%;
+    --brand-darker: 296 30% 16%;
+    --brand-muted: 296 35% 72%;
+    --brand-border: 296 38% 80%;
+    --brand-border-light: 296 34% 89%;
+    --brand-gradient-to: 310 55% 96%;
+  }
+
+  /* GMAT Focus theme (v2 exam; matches lib/v2/exams/gmat.ts theme) */
+  [data-theme="gmat"] {
+    --brand: 340 40% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 340 40% 96%;
+    --brand-hover: 340 40% 35%;
+    --brand-dark: 340 40% 31%;
+    --brand-darker: 340 30% 22%;
+    --brand-muted: 340 35% 72%;
+    --brand-border: 340 38% 80%;
+    --brand-border-light: 340 34% 89%;
+    --brand-gradient-to: 350 60% 96%;
+  }
+
+  /* CompTIA Network+ theme (v2 exam; matches lib/v2/exams/netplus.ts theme) */
+  [data-theme="netplus"] {
+    --brand: 252 40% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 252 40% 96%;
+    --brand-hover: 252 40% 35%;
+    --brand-dark: 252 40% 31%;
+    --brand-darker: 252 30% 22%;
+    --brand-muted: 252 35% 72%;
+    --brand-border: 252 38% 80%;
+    --brand-border-light: 252 34% 89%;
+    --brand-gradient-to: 265 50% 96%;
+  }
+
+  /* CISSP theme (v2 exam; matches lib/v2/exams/cissp.ts theme) */
+  [data-theme="cissp"] {
+    --brand: 220 40% 43%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 220 40% 96%;
+    --brand-hover: 220 40% 38%;
+    --brand-dark: 220 40% 34%;
+    --brand-darker: 220 30% 25%;
+    --brand-muted: 220 35% 72%;
+    --brand-border: 220 38% 80%;
+    --brand-border-light: 220 34% 89%;
+    --brand-gradient-to: 238 50% 95%;
+  }
+
+  /* ITIL 4 Foundation theme (v2 exam; matches lib/v2/exams/itil.ts theme) */
+  [data-theme="itil"] {
+    --brand: 28 90% 31%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 28 80% 96%;
+    --brand-hover: 28 90% 26%;
+    --brand-dark: 28 90% 22%;
+    --brand-darker: 28 80% 13%;
+    --brand-muted: 28 35% 72%;
+    --brand-border: 28 38% 80%;
+    --brand-border-light: 28 34% 89%;
+    --brand-gradient-to: 38 80% 95%;
+  }
+
+  /* PSM I theme (v2 exam; matches lib/v2/exams/psm.ts theme) */
+  [data-theme="psm"] {
+    --brand: 264 90% 43%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 264 80% 96%;
+    --brand-hover: 264 90% 38%;
+    --brand-dark: 264 90% 34%;
+    --brand-darker: 264 80% 25%;
+    --brand-muted: 264 35% 72%;
+    --brand-border: 264 38% 80%;
+    --brand-border-light: 264 34% 89%;
+    --brand-gradient-to: 278 60% 96%;
+  }
+
+  /* CAPM theme (v2 exam; matches lib/v2/exams/capm.ts theme) */
+  [data-theme="capm"] {
+    --brand: 256 60% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 256 60% 96%;
+    --brand-hover: 256 60% 23%;
+    --brand-dark: 256 60% 19%;
+    --brand-darker: 256 50% 12%;
+    --brand-muted: 256 35% 72%;
+    --brand-border: 256 38% 80%;
+    --brand-border-light: 256 34% 89%;
+    --brand-gradient-to: 241 60% 96%;
+  }
+
+  /* Google Cloud Digital Leader theme (v2 exam; matches lib/v2/exams/gcdl.ts theme) */
+  [data-theme="gcdl"] {
+    --brand: 224 90% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 224 80% 96%;
+    --brand-hover: 224 90% 29%;
+    --brand-dark: 224 90% 25%;
+    --brand-darker: 224 80% 16%;
+    --brand-muted: 224 35% 72%;
+    --brand-border: 224 38% 80%;
+    --brand-border-light: 224 34% 89%;
+    --brand-gradient-to: 207 80% 96%;
+  }
+
+  /* SSC CGL theme (v2 exam; matches lib/v2/exams/ssccgl.ts theme) */
+  [data-theme="ssccgl"] {
+    --brand: 268 80% 37%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 268 80% 96%;
+    --brand-hover: 268 80% 32%;
+    --brand-dark: 268 80% 28%;
+    --brand-darker: 268 70% 19%;
+    --brand-muted: 268 35% 72%;
+    --brand-border: 268 38% 80%;
+    --brand-border-light: 268 34% 89%;
+    --brand-gradient-to: 278 70% 96%;
+  }
+
+  /* RRB NTPC theme (v2 exam; matches lib/v2/exams/rrbntpc.ts theme) */
+  [data-theme="rrbntpc"] {
+    --brand: 350 50% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 350 50% 96%;
+    --brand-hover: 350 50% 41%;
+    --brand-dark: 350 50% 37%;
+    --brand-darker: 350 40% 28%;
+    --brand-muted: 350 35% 72%;
+    --brand-border: 350 38% 80%;
+    --brand-border-light: 350 34% 89%;
+    --brand-gradient-to: 10 55% 96%;
+  }
+
+  /* CTET theme (v2 exam; matches lib/v2/exams/ctet.ts theme) */
+  [data-theme="ctet"] {
+    --brand: 22 80% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 22 80% 96%;
+    --brand-hover: 22 80% 23%;
+    --brand-dark: 22 80% 19%;
+    --brand-darker: 22 70% 12%;
+    --brand-muted: 22 35% 72%;
+    --brand-border: 22 38% 80%;
+    --brand-border-light: 22 34% 89%;
+    --brand-gradient-to: 12 80% 95%;
+  }
+
+  /* IBPS PO theme (v2 exam; matches lib/v2/exams/ibpspo.ts theme) */
+  [data-theme="ibpspo"] {
+    --brand: 332 70% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 332 70% 96%;
+    --brand-hover: 332 70% 41%;
+    --brand-dark: 332 70% 37%;
+    --brand-darker: 332 60% 28%;
+    --brand-muted: 332 35% 72%;
+    --brand-border: 332 38% 80%;
+    --brand-border-light: 332 34% 89%;
+    --brand-gradient-to: 352 70% 96%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -2968,6 +3388,364 @@
     --brand-muted: 305 35% 45%;
     --brand-dark: 305 90% 65%;
     --brand-darker: 305 85% 78%;
+  }
+
+  .dark [data-theme="nasm"] {
+    --brand-light: 12 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 12 34% 24%;
+    --brand-border: 12 38% 34%;
+    --brand-muted: 12 35% 45%;
+    --brand-dark: 12 90% 65%;
+    --brand-darker: 12 80% 78%;
+  }
+
+  .dark [data-theme="rbt"] {
+    --brand: 318 80% 47.1%;
+    --brand-hover: 318 80% 39.1%;
+    --brand-light: 318 45% 13%;
+    --brand-gradient-to: 280 40% 11%;
+    --brand-border-light: 318 34% 24%;
+    --brand-border: 318 38% 34%;
+    --brand-muted: 318 35% 45%;
+    --brand-dark: 318 80% 65%;
+    --brand-darker: 318 70% 78%;
+  }
+
+  .dark [data-theme="cpc"] {
+    --brand: 280 40% 50%;
+    --brand-hover: 280 40% 42%;
+    --brand-light: 280 40% 13%;
+    --brand-gradient-to: 220 40% 11%;
+    --brand-border-light: 280 34% 24%;
+    --brand-border: 280 38% 34%;
+    --brand-muted: 280 35% 45%;
+    --brand-dark: 280 40% 65%;
+    --brand-darker: 280 30% 78%;
+  }
+
+  .dark [data-theme="jelec"] {
+    --brand: 36 90% 34.2%;
+    --brand-hover: 36 90% 26.2%;
+    --brand-light: 36 45% 13%;
+    --brand-gradient-to: 210 40% 11%;
+    --brand-border-light: 36 34% 24%;
+    --brand-border: 36 38% 34%;
+    --brand-muted: 36 35% 45%;
+    --brand-dark: 36 90% 65%;
+    --brand-darker: 36 80% 78%;
+  }
+
+  .dark [data-theme="barber"] {
+    --brand: 4 60% 50%;
+    --brand-hover: 4 60% 42%;
+    --brand-light: 4 45% 13%;
+    --brand-gradient-to: 215 40% 11%;
+    --brand-border-light: 4 34% 24%;
+    --brand-border: 4 38% 34%;
+    --brand-muted: 4 35% 45%;
+    --brand-dark: 4 60% 65%;
+    --brand-darker: 4 50% 78%;
+  }
+
+  .dark [data-theme="ffi"] {
+    --brand: 22 40% 45.3%;
+    --brand-hover: 22 40% 38%;
+    --brand-light: 22 40% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 22 34% 24%;
+    --brand-border: 22 38% 34%;
+    --brand-muted: 22 35% 45%;
+    --brand-dark: 22 40% 65%;
+    --brand-darker: 22 30% 78%;
+  }
+
+  .dark [data-theme="police"] {
+    --brand: 226 70% 50%;
+    --brand-hover: 226 70% 42%;
+    --brand-light: 226 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 226 34% 24%;
+    --brand-border: 226 38% 34%;
+    --brand-muted: 226 35% 45%;
+    --brand-dark: 226 70% 65%;
+    --brand-darker: 226 60% 78%;
+  }
+
+  .dark [data-theme="sie"] {
+    --brand: 204 60% 43%;
+    --brand-hover: 204 60% 35%;
+    --brand-light: 204 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 204 34% 24%;
+    --brand-border: 204 38% 34%;
+    --brand-muted: 204 35% 45%;
+    --brand-dark: 204 60% 65%;
+    --brand-darker: 204 50% 78%;
+  }
+
+  .dark [data-theme="series7"] {
+    --brand: 212 90% 47.5%;
+    --brand-hover: 212 90% 39.5%;
+    --brand-light: 212 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 212 34% 24%;
+    --brand-border: 212 38% 34%;
+    --brand-muted: 212 35% 45%;
+    --brand-dark: 212 90% 65%;
+    --brand-darker: 212 80% 78%;
+  }
+
+  .dark [data-theme="pcoc"] {
+    --brand: 220 50% 50%;
+    --brand-hover: 220 50% 42%;
+    --brand-light: 220 45% 13%;
+    --brand-gradient-to: 0 40% 11%;
+    --brand-border-light: 220 34% 24%;
+    --brand-border: 220 38% 34%;
+    --brand-muted: 220 35% 45%;
+    --brand-dark: 220 50% 65%;
+    --brand-darker: 220 40% 78%;
+  }
+
+  .dark [data-theme="cask"] {
+    --brand: 84 50% 33.3%;
+    --brand-hover: 84 50% 25.3%;
+    --brand-light: 84 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 84 34% 24%;
+    --brand-border: 84 38% 34%;
+    --brand-muted: 84 35% 45%;
+    --brand-dark: 84 50% 65%;
+    --brand-darker: 84 40% 78%;
+  }
+
+  .dark [data-theme="cans"] {
+    --brand: 222 90% 50%;
+    --brand-hover: 222 90% 42%;
+    --brand-light: 222 45% 13%;
+    --brand-gradient-to: 48 40% 11%;
+    --brand-border-light: 222 34% 24%;
+    --brand-border: 222 38% 34%;
+    --brand-muted: 222 35% 45%;
+    --brand-dark: 222 90% 65%;
+    --brand-darker: 222 80% 78%;
+  }
+
+  .dark [data-theme="ukseru"] {
+    --brand: 232 80% 50%;
+    --brand-hover: 232 80% 42%;
+    --brand-light: 232 45% 13%;
+    --brand-gradient-to: 252 40% 11%;
+    --brand-border-light: 232 34% 24%;
+    --brand-border: 232 38% 34%;
+    --brand-muted: 232 35% 45%;
+    --brand-dark: 232 80% 67%;
+    --brand-darker: 232 70% 78%;
+  }
+
+  .dark [data-theme="nzroad"] {
+    --brand: 204 90% 40.3%;
+    --brand-hover: 204 90% 35%;
+    --brand-light: 204 45% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 204 34% 24%;
+    --brand-border: 204 38% 34%;
+    --brand-muted: 204 35% 45%;
+    --brand-dark: 204 90% 65%;
+    --brand-darker: 204 80% 78%;
+  }
+
+  .dark [data-theme="iedtt"] {
+    --brand: 142 40% 36.8%;
+    --brand-hover: 142 40% 28.8%;
+    --brand-light: 142 40% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 142 34% 24%;
+    --brand-border: 142 38% 34%;
+    --brand-muted: 142 35% 45%;
+    --brand-dark: 142 40% 65%;
+    --brand-darker: 142 30% 78%;
+  }
+
+  .dark [data-theme="faapvt"] {
+    --brand: 68 40% 34.3%;
+    --brand-hover: 68 40% 26.3%;
+    --brand-light: 68 40% 13%;
+    --brand-gradient-to: 199 40% 11%;
+    --brand-border-light: 68 34% 24%;
+    --brand-border: 68 38% 34%;
+    --brand-muted: 68 35% 45%;
+    --brand-dark: 68 40% 65%;
+    --brand-darker: 68 30% 78%;
+  }
+
+  .dark [data-theme="psat"] {
+    --brand: 230 50% 50%;
+    --brand-hover: 230 50% 42%;
+    --brand-light: 230 45% 13%;
+    --brand-gradient-to: 246 40% 11%;
+    --brand-border-light: 230 34% 24%;
+    --brand-border: 230 38% 34%;
+    --brand-muted: 230 35% 45%;
+    --brand-dark: 230 50% 65%;
+    --brand-darker: 230 40% 78%;
+  }
+
+  .dark [data-theme="praxis"] {
+    --brand: 48 40% 36.9%;
+    --brand-hover: 48 40% 28.9%;
+    --brand-light: 48 40% 13%;
+    --brand-gradient-to: 36 40% 11%;
+    --brand-border-light: 48 34% 24%;
+    --brand-border: 48 38% 34%;
+    --brand-muted: 48 35% 45%;
+    --brand-dark: 48 40% 65%;
+    --brand-darker: 48 30% 78%;
+  }
+
+  .dark [data-theme="gre"] {
+    --brand: 296 40% 50%;
+    --brand-hover: 296 40% 42%;
+    --brand-light: 296 40% 13%;
+    --brand-gradient-to: 310 40% 11%;
+    --brand-border-light: 296 34% 24%;
+    --brand-border: 296 38% 34%;
+    --brand-muted: 296 35% 45%;
+    --brand-dark: 296 40% 65%;
+    --brand-darker: 296 30% 78%;
+  }
+
+  .dark [data-theme="gmat"] {
+    --brand: 340 40% 50%;
+    --brand-hover: 340 40% 42%;
+    --brand-light: 340 40% 13%;
+    --brand-gradient-to: 350 40% 11%;
+    --brand-border-light: 340 34% 24%;
+    --brand-border: 340 38% 34%;
+    --brand-muted: 340 35% 45%;
+    --brand-dark: 340 40% 65%;
+    --brand-darker: 340 30% 78%;
+  }
+
+  .dark [data-theme="netplus"] {
+    --brand: 252 40% 50%;
+    --brand-hover: 252 40% 42%;
+    --brand-light: 252 40% 13%;
+    --brand-gradient-to: 265 40% 11%;
+    --brand-border-light: 252 34% 24%;
+    --brand-border: 252 38% 34%;
+    --brand-muted: 252 35% 45%;
+    --brand-dark: 252 40% 65%;
+    --brand-darker: 252 30% 78%;
+  }
+
+  .dark [data-theme="cissp"] {
+    --brand: 220 40% 50%;
+    --brand-hover: 220 40% 42%;
+    --brand-light: 220 40% 13%;
+    --brand-gradient-to: 238 40% 11%;
+    --brand-border-light: 220 34% 24%;
+    --brand-border: 220 38% 34%;
+    --brand-muted: 220 35% 45%;
+    --brand-dark: 220 40% 65%;
+    --brand-darker: 220 30% 78%;
+  }
+
+  .dark [data-theme="itil"] {
+    --brand: 28 90% 38.1%;
+    --brand-hover: 28 90% 30.1%;
+    --brand-light: 28 45% 13%;
+    --brand-gradient-to: 38 40% 11%;
+    --brand-border-light: 28 34% 24%;
+    --brand-border: 28 38% 34%;
+    --brand-muted: 28 35% 45%;
+    --brand-dark: 28 90% 65%;
+    --brand-darker: 28 80% 78%;
+  }
+
+  .dark [data-theme="psm"] {
+    --brand: 264 90% 50%;
+    --brand-hover: 264 90% 42%;
+    --brand-light: 264 45% 13%;
+    --brand-gradient-to: 278 40% 11%;
+    --brand-border-light: 264 34% 24%;
+    --brand-border: 264 38% 34%;
+    --brand-muted: 264 35% 45%;
+    --brand-dark: 264 90% 67%;
+    --brand-darker: 264 80% 78%;
+  }
+
+  .dark [data-theme="capm"] {
+    --brand: 256 60% 50%;
+    --brand-hover: 256 60% 42%;
+    --brand-light: 256 45% 13%;
+    --brand-gradient-to: 241 40% 11%;
+    --brand-border-light: 256 34% 24%;
+    --brand-border: 256 38% 34%;
+    --brand-muted: 256 35% 45%;
+    --brand-dark: 256 60% 65%;
+    --brand-darker: 256 50% 78%;
+  }
+
+  .dark [data-theme="gcdl"] {
+    --brand: 224 90% 50%;
+    --brand-hover: 224 90% 42%;
+    --brand-light: 224 45% 13%;
+    --brand-gradient-to: 207 40% 11%;
+    --brand-border-light: 224 34% 24%;
+    --brand-border: 224 38% 34%;
+    --brand-muted: 224 35% 45%;
+    --brand-dark: 224 90% 65%;
+    --brand-darker: 224 80% 78%;
+  }
+
+  .dark [data-theme="ssccgl"] {
+    --brand: 268 80% 50%;
+    --brand-hover: 268 80% 42%;
+    --brand-light: 268 45% 13%;
+    --brand-gradient-to: 278 40% 11%;
+    --brand-border-light: 268 34% 24%;
+    --brand-border: 268 38% 34%;
+    --brand-muted: 268 35% 45%;
+    --brand-dark: 268 80% 65%;
+    --brand-darker: 268 70% 78%;
+  }
+
+  .dark [data-theme="rrbntpc"] {
+    --brand: 350 50% 50%;
+    --brand-hover: 350 50% 42%;
+    --brand-light: 350 45% 13%;
+    --brand-gradient-to: 10 40% 11%;
+    --brand-border-light: 350 34% 24%;
+    --brand-border: 350 38% 34%;
+    --brand-muted: 350 35% 45%;
+    --brand-dark: 350 50% 65%;
+    --brand-darker: 350 40% 78%;
+  }
+
+  .dark [data-theme="ctet"] {
+    --brand: 22 80% 42%;
+    --brand-hover: 22 80% 34%;
+    --brand-light: 22 45% 13%;
+    --brand-gradient-to: 12 40% 11%;
+    --brand-border-light: 22 34% 24%;
+    --brand-border: 22 38% 34%;
+    --brand-muted: 22 35% 45%;
+    --brand-dark: 22 80% 65%;
+    --brand-darker: 22 70% 78%;
+  }
+
+  .dark [data-theme="ibpspo"] {
+    --brand: 332 70% 50%;
+    --brand-hover: 332 70% 42%;
+    --brand-light: 332 45% 13%;
+    --brand-gradient-to: 352 40% 11%;
+    --brand-border-light: 332 34% 24%;
+    --brand-border: 332 38% 34%;
+    --brand-muted: 332 35% 45%;
+    --brand-dark: 332 70% 65%;
+    --brand-darker: 332 60% 78%;
   }
 
 }

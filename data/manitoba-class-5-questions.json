@@ -2300,14 +2300,14 @@
     "state": "ALL",
     "questionId": "CAMB-EMG-009",
     "category": "cambConditions",
-    "question": "Your car has no anti-lock brakes. How should you brake to stop quickly on a slippery road?",
+    "question": "Your car has no anti-lock brakes. How should you brake on ice or snow?",
     "optionA": "Steady pressure, no lockup",
     "optionB": "Full pressure and hold",
     "optionC": "Hard and lock the wheels",
     "optionD": "Pump hard and shift to neutral",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Without anti-lock brakes, use threshold braking: steady pressure just short of locking the wheels, so you keep steering control."
+    "explanation": "On ice or snow without anti-lock brakes, use threshold braking: steady pressure without locking the wheels, so you keep steering control. Locked wheels slide with little or no steering."
   },
   {
     "type": "CAMB",
@@ -2531,7 +2531,7 @@
     "optionD": "Under .08",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Novice drivers cannot have drugs or alcohol in their system. The .05 and .08 levels apply to fully licensed drivers."
+    "explanation": "Novice drivers cannot have drugs or alcohol in their system. The .05 and .08 levels matter only once a driver is past the zero drugs and alcohol restriction."
   },
   {
     "type": "CAMB",
@@ -2541,7 +2541,7 @@
     "question": "What happens right away to a novice driver caught with alcohol or drugs in their system?",
     "optionA": "A written warning only",
     "optionB": "A 24-hour roadside suspension",
-    "optionC": "A 72-hour suspension",
+    "optionC": "A 12-hour suspension",
     "optionD": "A one-year licence suspension",
     "correctAnswer": "B",
     "correctIndex": 1,

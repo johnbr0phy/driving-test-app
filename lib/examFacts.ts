@@ -537,7 +537,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   camb: {
     answer:
-      "The Manitoba Class 5 knowledge test is the written test for a Class 5L learner licence. Manitoba Public Insurance (MPI) gives it on a computer, booked through an Autopac agent, with a 30-minute time limit and a $12 fee; it is not open book and covers traffic laws, safe driving practices and road signs from the MPI Driver's Handbook, and is usually reported as 30 multiple-choice questions. You must be 16 (15 and a half in a high school driver education course), and GDL applicants who fail wait seven days to retake it.",
+      "The Manitoba Class 5 knowledge test is the written test for a Class 5L learner licence. Manitoba Public Insurance (MPI) gives it on a computer, booked with an Autopac agent or online, with a 30-minute time limit and a $12 fee; it is not open book and covers traffic laws, safe driving practices and road signs from the MPI Driver's Handbook, and is usually reported as 30 multiple-choice questions. You must be 16 (15 and a half in a high school driver education course), and GDL applicants who fail wait seven days to retake it.",
     rows: [
       { label: "Questions", value: "30 multiple choice (reported; MPI does not publish a count)" },
       { label: "Time", value: "30 minutes" },

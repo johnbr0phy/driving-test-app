@@ -74,7 +74,7 @@ const jsonLd = {
           name: "How many questions are on the Manitoba knowledge test and how long do I get?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The test is usually reported as 30 multiple-choice questions. MPI gives you 30 minutes, the test is taken on a computer, it is not open book, and phones and electronic devices are not allowed in the test area. It costs 12 dollars, is available in English, French and 28 other languages with audio, and you book it through an Autopac agent.",
+            text: "The test is usually reported as 30 multiple-choice questions. MPI gives you 30 minutes, the test is taken on a computer, it is not open book, and phones and electronic devices are not allowed in the test area. It costs 12 dollars, is available in English, French and 28 other languages with audio, and you book it with an Autopac agent or online.",
           },
         },
         {
@@ -274,7 +274,7 @@ export default function ManitobaClass5LandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the Manitoba knowledge test and how long do I get?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              The test is usually reported as 30 multiple-choice questions. MPI gives you 30 minutes, the test is taken on a computer, it is not open book, and phones and electronic devices are not allowed in the test area. It costs 12 dollars, is available in English, French and 28 other languages with audio, and you book it through an Autopac agent.
+              The test is usually reported as 30 multiple-choice questions. MPI gives you 30 minutes, the test is taken on a computer, it is not open book, and phones and electronic devices are not allowed in the test area. It costs 12 dollars, is available in English, French and 28 other languages with audio, and you book it with an Autopac agent or online.
             </p>
           </div>
           <div>

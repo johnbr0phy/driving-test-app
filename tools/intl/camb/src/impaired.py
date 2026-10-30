@@ -2,9 +2,9 @@
 ITEMS = [
 ("How much alcohol may a novice driver in Manitoba's GDL program have in their system?",
  "None", ["Under .02", "Under .05", "Under .08"],
- "Novice drivers cannot have drugs or alcohol in their system. The .05 and .08 levels apply to fully licensed drivers."),
+ "Novice drivers cannot have drugs or alcohol in their system. The .05 and .08 levels matter only once a driver is past the zero drugs and alcohol restriction."),
 ("What happens right away to a novice driver caught with alcohol or drugs in their system?",
- "A 24-hour roadside suspension", ["A written warning only", "A 72-hour suspension", "A one-year licence suspension"],
+ "A 24-hour roadside suspension", ["A written warning only", "A 12-hour suspension", "A one-year licence suspension"],
  "Violating the drug and alcohol restriction brings an immediate 24-hour roadside suspension, a possible further suspension from the DI&C Program and a reinstatement charge."),
 ("A fully licensed driver blows a blood alcohol concentration in which range for a Tiered Administrative Licence Suspension?",
  ".05 to .079", [".02 to .049", ".08 to .099", ".10 and over"],

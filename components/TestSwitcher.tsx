@@ -19,6 +19,9 @@ import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
 import { useStartedTests } from "@/hooks/useStartedTests";
 import { useCurrentTest } from "@/hooks/useHomePath";
+import { FLAGS, readRegionCookie, saveRegion } from "@/components/CountryPills";
+import { REGIONS, Region, isRegion, orderGroupsForRegion, regionOfTest } from "@/lib/region";
+import { useStore } from "@/store/useStore";
 
 const SEEN_KEY = "tigertest-seen-all-tests";
 
@@ -29,6 +32,10 @@ const SEEN_KEY = "tigertest-seen-all-tests";
  * with the current test (the last dashboard opened, see useCurrentTest)
  * pinned at the top; a visitor who has opened no dashboard has none. Tests
  * already in progress link to their dashboard instead. Enter opens the first match.
+ * A country row under the search lists that country's tests and the worldwide
+ * ones (search still finds every test), so someone studying for another
+ * country's exam can switch from any page. Picking one saves it like the
+ * homepage pills; it starts on the saved country, else the current test's.
  */
 export function TestSwitcher({ className = "" }: { className?: string }) {
   const pathname = useThemePath();
@@ -51,9 +58,40 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
     } catch {}
   }, []);
 
-  const groups = useMemo(() => searchTestGroups(query), [query]);
-  const first = groups[0]?.tests[0];
+  const storeRegion = useStore((st) => st.region);
+  const [region, setRegion] = useState<Region>("US");
+  useEffect(() => {
+    if (!open) return;
+    const currentRegion = current ? regionOfTest(current.id) : null;
+    setRegion(readRegionCookie() ?? storeRegion ?? (isRegion(currentRegion) ? currentRegion : "US"));
+    // Only on opening: a pick inside the menu sets `region` itself.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open]);
+  const pickRegion = (r: Region) => {
+    setRegion(r);
+    saveRegion(r);
+  };
+
   const searching = query.trim().length > 0;
+  const groups = useMemo(
+    () =>
+      orderGroupsForRegion(
+        searching
+          ? searchTestGroups(query)
+          : searchTestGroups(query)
+              .filter((g) => g.title !== "Most popular" || region === "US")
+              .map((g) =>
+                g.title === "Most popular"
+                  ? g
+                  : // Mixed groups (citizenship, nurse licensing) keep only this country's and worldwide members.
+                    { ...g, tests: g.tests.filter((t) => regionOfTest(t.id) === region || regionOfTest(t.id) === "GLOBAL") }
+              )
+              .filter((g) => g.tests.length > 0),
+        region
+      ),
+    [query, searching, region]
+  );
+  const first = groups[0]?.tests[0];
 
   useEffect(() => {
     if (!open) setQuery("");
@@ -137,7 +175,34 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
             )}
           </div>
 
-          <div className="max-h-[min(60vh,26rem,calc(var(--radix-popover-content-available-height)_-_6.5rem))] overflow-y-auto overscroll-contain p-1.5">
+          {!searching && (
+            <div role="radiogroup" aria-label="Show tests for" className="grid grid-cols-5 gap-1 border-b border-gray-100 dark:border-gray-800 p-2">
+              {REGIONS.map((r) => {
+                const on = r.code === region;
+                return (
+                  <button
+                    key={r.code}
+                    type="button"
+                    role="radio"
+                    aria-checked={on}
+                    aria-label={r.name}
+                    title={r.name}
+                    onClick={() => pickRegion(r.code)}
+                    className={`flex h-8 items-center justify-center gap-1.5 rounded-full text-xs font-semibold transition-colors ${
+                      on
+                        ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
+                        : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                    }`}
+                  >
+                    <span aria-hidden="true" className="text-sm leading-none">{FLAGS[r.code]}</span>
+                    {r.short}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+
+          <div className="max-h-[min(60vh,26rem,calc(var(--radix-popover-content-available-height)_-_9rem))] overflow-y-auto overscroll-contain p-1.5">
             {!searching && current && (
               <div className="mb-1 border-b border-gray-100 dark:border-gray-800 pb-1.5">
                 <SwitcherItem

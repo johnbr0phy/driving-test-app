@@ -1,7 +1,9 @@
-// Which country's tests the homepage and the /tests hub show first. A view
+// Which country's tests a visitor sees first. Each country has its own
+// indexable homepage: the US at "/", the others at /uk, /ca and /au. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
-// first visit; the CountryPills on those two pages change it.
+// first visit and sends a UK, Canada or Australia visitor from "/" to their
+// country's page; the CountryPills change it.
 
 export type Region = "US" | "CA" | "UK" | "AU";
 
@@ -33,6 +35,14 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
   }
 }
 
+/** A country's homepage: "/" for the US, else /uk, /ca or /au. */
+export function regionHomePath(r: Region): string {
+  return r === "US" ? "/" : `/${r.toLowerCase()}`;
+}
+
+/** hreflang for each country's homepage, the US page doubling as the default. */
+export const REGION_HREFLANG: Record<Region, string> = { US: "en-US", CA: "en-CA", UK: "en-GB", AU: "en-AU" };
+
 export function regionInfo(r: Region) {
   return REGIONS.find((x) => x.code === r)!;
 }
@@ -57,24 +67,33 @@ export function regionOfTest(testId: string): TestRegion {
 
 /** Homepage copy that changes with the region. US is today's homepage. */
 export const REGION_HOME: Record<Exclude<Region, "US">, {
+  /** The country page's <title> (under 60 characters) and meta description (under 155). */
+  title: string;
+  description: string;
   lead: string;
   cta: { label: string; href: string };
   testsTitle: string;
   testsSub: string;
 }> = {
   UK: {
+    title: "Free UK Driving Theory Test Practice | Tigertest",
+    description: "Free UK theory test practice for car, motorcycle, lorry (LGV), bus (PCV) and ADI part 1: original Highway Code questions with every answer explained.",
     lead: "Practice for the DVSA theory tests: car, motorcycle, lorry, bus and coach, and ADI part 1. Original questions on the Highway Code, every answer explained. No signup.",
     cta: { label: "Car theory test", href: "/uk-driving-theory-test" },
     testsTitle: "UK theory tests",
     testsSub: "Multiple-choice practice for Great Britain, in mph with the current Highway Code. Hazard perception is not covered.",
   },
   CA: {
+    title: "Free Canada Driving Knowledge Test Practice | Tigertest",
+    description: "Free driving knowledge test practice for Ontario G1, Quebec SAAQ, BC ICBC, Alberta Class 7 and Manitoba, written from each province's handbook.",
     lead: "Knowledge test practice for Ontario, Quebec, British Columbia, Alberta and Manitoba, written from each province's own handbook. Every answer explained. No signup.",
     cta: { label: "Ontario G1 test", href: "/ontario-g1-practice-test" },
     testsTitle: "Driving knowledge tests by province",
     testsSub: "200 questions per test from the official provincial handbook, in km/h with your province's licensing rules.",
   },
   AU: {
+    title: "Free Australia Learner Driver Test Practice | Tigertest",
+    description: "Free learner licence test practice for NSW, Victoria, Queensland, Western Australia and South Australia, written from each state's handbook.",
     lead: "Learner licence practice for New South Wales, Victoria, Queensland, Western Australia and South Australia, written from each state's handbook. Every answer explained. No signup.",
     cta: { label: "NSW DKT", href: "/nsw-dkt-practice-test" },
     testsTitle: "Learner driver tests by state",

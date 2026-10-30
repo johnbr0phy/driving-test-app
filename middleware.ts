@@ -5,35 +5,21 @@ import {
   REGION_SOURCE_COOKIE,
   isRegion,
   regionFromCountry,
+  regionHomePath,
 } from "@/lib/region";
 
 // Country for the homepage and the /tests hub (lib/region.ts). A first visit
 // takes the country Vercel reports for the request; after that the cookie
-// wins, including a country the visitor picked. The homepage URL never
-// changes: a UK, Canada or Australia visitor is served the static
-// /home/<region> page at "/", while everyone else, crawlers included, gets
-// today's US homepage.
+// wins, including a country the visitor picked. A UK, Canada or Australia
+// visitor opening "/" is sent to /uk, /ca or /au, each its own indexable page;
+// everyone else stays on the US homepage.
 //
-// Crawlers never get a location: whatever IP they crawl from, they see the US
-// homepage, the same page as any visitor with no country, so the indexed "/"
-// never changes. /home/<region> is only a rewrite target: opening it directly
-// redirects to "/" with that country saved, so it is never a second URL.
+// Crawlers never get a location: whatever IP they crawl from, they see "/"
+// itself, the same page as any visitor with no country, and reach the country
+// pages through links, the sitemap and hreflang.
 const CRAWLER = /bot|crawler|spider|slurp|bingpreview|facebookexternalhit|embedly|preview|lighthouse/i;
 
 export function middleware(req: NextRequest) {
-  const { pathname } = req.nextUrl;
-  const opts = { path: "/", maxAge: REGION_COOKIE_MAX_AGE, sameSite: "lax" as const };
-
-  if (pathname.startsWith("/home/")) {
-    const res = NextResponse.redirect(new URL("/", req.url), 308);
-    const asked = pathname.slice("/home/".length).split("/")[0].toUpperCase();
-    if (isRegion(asked)) {
-      res.cookies.set(REGION_COOKIE, asked, opts);
-      res.cookies.set(REGION_SOURCE_COOKIE, "chosen", opts);
-    }
-    return res;
-  }
-
   const crawler = CRAWLER.test(req.headers.get("user-agent") ?? "");
   const saved = req.cookies.get(REGION_COOKIE)?.value;
   let region = isRegion(saved) ? saved : null;
@@ -44,21 +30,18 @@ export function middleware(req: NextRequest) {
     source = geo ? "geo" : "default";
   }
 
+  // 307: temporary, so neither browsers nor search engines store the hop.
   const res =
-    pathname === "/" && region !== "US"
-      ? NextResponse.rewrite(new URL(`/home/${region.toLowerCase()}`, req.url))
+    req.nextUrl.pathname === "/" && region !== "US"
+      ? NextResponse.redirect(new URL(regionHomePath(region), req.url), 307)
       : NextResponse.next();
 
-  // "/" is a different page per country at one URL, so browsers must not reuse
-  // a stored copy after the country changes. The CDN still caches each
-  // /home/<region> page on its own path.
-  if (pathname === "/") res.headers.set("Cache-Control", "private, no-cache, must-revalidate");
-
   if (source && !crawler) {
+    const opts = { path: "/", maxAge: REGION_COOKIE_MAX_AGE, sameSite: "lax" as const };
     res.cookies.set(REGION_COOKIE, region, opts);
     res.cookies.set(REGION_SOURCE_COOKIE, source, opts);
   }
   return res;
 }
 
-export const config = { matcher: ["/", "/tests", "/home/:path*"] };
+export const config = { matcher: ["/", "/tests"] };

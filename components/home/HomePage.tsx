@@ -9,7 +9,7 @@ import { CountUp } from "@/components/CountUp";
 import { getPopularTests } from "@/lib/server/popularTests";
 import { ORGANIZATION_ID, WEBSITE_ID } from "@/lib/siteSchema";
 import { states } from "@/data/states";
-import { NON_DRIVING_TESTS, REGION_HOME, Region, regionOfTest, regionInfo } from "@/lib/region";
+import { NON_DRIVING_TESTS, REGIONS, REGION_HOME, REGION_HREFLANG, Region, regionHomePath, regionOfTest, regionInfo } from "@/lib/region";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 const examCount = TEST_CATALOG.length;
@@ -18,10 +18,16 @@ const title = `Tigertest: Free Practice Tests for ${examCount} Exams - DMV, SAT 
 const description = `Free practice tests for ${examCount} exams: the DMV permit test in all 50 states, SAT, ACT, CDL, nursing and healthcare certifications, IT certs, real estate, insurance and more. Every answer explained. No account needed.`;
 const metaDescription = `Free practice tests for ${examCount} exams: the DMV permit test in every state, SAT, ACT, CDL, nursing, IT, real estate and more. Every answer explained.`;
 
+// Every country homepage names the others as alternates, the US page as the default.
+const countryAlternates = {
+  ...Object.fromEntries(REGIONS.map((r) => [REGION_HREFLANG[r.code], `${siteUrl}${r.code === "US" ? "" : regionHomePath(r.code)}`])),
+  "x-default": siteUrl,
+};
+
 export const homeMetadata: Metadata = {
   title: { absolute: title },
   description: metaDescription,
-  alternates: { canonical: siteUrl },
+  alternates: { canonical: siteUrl, languages: countryAlternates },
   openGraph: {
     title,
     description: metaDescription,
@@ -32,6 +38,27 @@ export const homeMetadata: Metadata = {
   },
   twitter: { card: "summary_large_image", title, description: metaDescription, images: ["/og-tests.png"] },
 };
+
+/** /uk, /ca and /au: the country's own title, description and canonical. */
+export function countryHomeMetadata(region: Exclude<Region, "US">): Metadata {
+  const { title: t, description: d } = REGION_HOME[region];
+  const url = `${siteUrl}${regionHomePath(region)}`;
+  return {
+    title: { absolute: t },
+    description: d,
+    alternates: { canonical: url, languages: countryAlternates },
+    openGraph: {
+      title: t,
+      description: d,
+      url,
+      siteName: "Tigertest",
+      type: "website",
+      locale: REGION_HREFLANG[region].replace("-", "_"),
+      images: [{ url: "/og-tests.png", width: 1200, height: 630, alt: t }],
+    },
+    twitter: { card: "summary_large_image", title: t, description: d, images: ["/og-tests.png"] },
+  };
+}
 
 const usFaqs = [
   {
@@ -87,22 +114,27 @@ function faqsFor(region: Region) {
 
 function jsonLdFor(region: Region) {
   const faqs = faqsFor(region);
+  const us = region === "US";
+  const pageUrl = us ? siteUrl : `${siteUrl}${regionHomePath(region)}`;
+  // A country page lists its own tests and the worldwide ones, like the page itself.
+  const listed = us ? TEST_CATALOG : TEST_CATALOG.filter((t) => regionOfTest(t.id) === region || regionOfTest(t.id) === "GLOBAL");
   return {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": `${siteUrl}/#webpage`,
-      url: siteUrl,
-      name: title,
-      description,
+      "@id": `${pageUrl}/#webpage`,
+      url: pageUrl,
+      name: us ? title : REGION_HOME[region].title,
+      description: us ? description : REGION_HOME[region].description,
+      inLanguage: REGION_HREFLANG[region],
       isPartOf: { "@id": WEBSITE_ID },
       about: { "@id": ORGANIZATION_ID },
     },
     {
       "@type": "ItemList",
-      name: "Tigertest practice tests",
-      itemListElement: TEST_CATALOG.map((t, i) => ({
+      name: us ? "Tigertest practice tests" : `Tigertest practice tests for ${regionInfo(region).inName}`,
+      itemListElement: listed.map((t, i) => ({
         "@type": "ListItem",
         position: i + 1,
         name: t.name,
@@ -138,9 +170,8 @@ const quotes = [
   { text: "felt confident after just studying the previous day", who: "JayjayX12" },
 ];
 
-// The homepage for one country (lib/region.ts). "/" is the US version;
-// middleware.ts serves app/home/[region] at "/" for the UK, Canada and
-// Australia, so search engines only ever see this one URL.
+// The homepage for one country (lib/region.ts): "/" for the US, app/uk,
+// app/ca and app/au for the others, each its own indexable page.
 export async function HomePage({ region }: { region: Region }) {
   const us = region === "US";
   const { tests: ranked, totalAnswered } = await getPopularTests(us ? 6 : 100);

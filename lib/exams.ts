@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -4404,6 +4404,314 @@ const auwah: ExamConfig = {
   },
 };
 
+const uklitu: ExamConfig = {
+  id: "uklitu",
+  stateCode: "UKLITU",
+  idBase: 10100,
+  slug: "/life-in-the-uk",
+  landingPath: "/life-in-the-uk-test",
+  name: "Life in the UK Practice Test",
+  shortName: "Life in the UK",
+  examLabel: "Life in the UK test",
+  fullName: "Life in the UK test (settlement and British citizenship)",
+  questionIdPrefix: "LITU-",
+  icon: "flag",
+  testCount: 8,
+  questionsPerTest: 24,
+  passPct: 75,
+  // Real test (GOV.UK, checked October 2026): 24 questions in 45 minutes, 18 of 24 (75%) to pass,
+  // drawn only from the Home Office handbook "Life in the United Kingdom: A Guide for New
+  // Residents", 3rd edition (2013; no newer edition as of October 2026, though a reform was
+  // signalled with the 2025 earned settlement proposals). The Home Office publishes no per-chapter
+  // counts; these follow the handbook's chapters with history (chapter 3, split at 1688/1689)
+  // weighted heaviest, 9 of 24. Eight real-length tests; each pool is 8x its count, plus 2
+  // training-only spares in the four large categories. All items original.
+  blueprint: {
+    lituValues: 2,
+    lituUk: 1,
+    lituHistEarly: 4,
+    lituHistLater: 5,
+    lituSociety: 6,
+    lituGov: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 10101, name: "Values, the UK & History to 1688", categories: ["lituValues", "lituUk", "lituHistEarly"], size: 58, weightLabel: "7 of 24 test questions" },
+    { setNumber: 2, id: 10102, name: "History from 1689", categories: ["lituHistLater"], size: 42, weightLabel: "5 of 24 test questions" },
+    { setNumber: 3, id: 10103, name: "A Modern, Thriving Society", categories: ["lituSociety"], size: 50, weightLabel: "6 of 24 test questions" },
+    { setNumber: 4, id: 10104, name: "Government, Law & Your Role", categories: ["lituGov"], size: 50, weightLabel: "6 of 24 test questions" },
+  ],
+  categoryLabels: {
+    lituValues: "Values & Principles of the UK",
+    lituUk: "What Is the UK",
+    lituHistEarly: "History to 1688",
+    lituHistLater: "History from 1689",
+    lituSociety: "A Modern, Thriving Society",
+    lituGov: "Government, Law & Your Role",
+  },
+  copy: {
+    guestPrompt: "to save your Life in the UK progress and track every question you miss",
+    trainingHeading: "Train by handbook chapter",
+    trainingSub: "Four sets covering every chapter of the official handbook. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 24 questions like the real test, 18 to pass",
+    heroSubs: [
+      "Four chapters, eight real-length tests. History weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Life in the UK test.",
+    ],
+    sourceLine: "Based on the official handbook, Life in the United Kingdom: A Guide for New Residents (3rd edition). Original questions; 24 per test, 18 to pass like the real test.",
+    analyticsKey: "uklitu",
+  },
+};
+
+const cacit: ExamConfig = {
+  id: "cacit",
+  stateCode: "CACIT",
+  idBase: 10200,
+  slug: "/canadian-citizenship",
+  landingPath: "/canadian-citizenship-test",
+  name: "Canadian Citizenship Test Practice",
+  shortName: "Citizenship (Canada)",
+  examLabel: "Canadian citizenship test",
+  fullName: "Canadian citizenship test (IRCC)",
+  questionIdPrefix: "CACIT-",
+  icon: "flag",
+  testCount: 8,
+  questionsPerTest: 20,
+  passPct: 75,
+  // IRCC citizenship test (checked October 2026): 20 multiple-choice or true/false questions in
+  // 45 minutes, 15 of 20 to pass, every question from the study guide "Discover Canada: The Rights
+  // and Responsibilities of Citizenship" (2009, rev. 2011, still current). IRCC publishes no
+  // per-chapter weights, so counts follow the guide's chapters, heaviest on history and
+  // government. Officeholders are not asked; every provincial and territorial capital is.
+  // Facts the guide predates (343 ridings, CUSMA, G7) are taught as of 2026. All items original.
+  blueprint: {
+    cacitRights: 2,
+    cacitPeople: 2,
+    cacitHistory: 4,
+    cacitModern: 1,
+    cacitGov: 3,
+    cacitElect: 2,
+    cacitJustice: 1,
+    cacitSymbols: 2,
+    cacitEconomy: 1,
+    cacitRegions: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 10201, name: "Rights & Who We Are", categories: ["cacitRights", "cacitPeople"], size: 40, weightLabel: "4 of 20 test questions" },
+    { setNumber: 2, id: 10202, name: "Canada's History", categories: ["cacitHistory", "cacitModern"], size: 52, weightLabel: "5 of 20 test questions" },
+    { setNumber: 3, id: 10203, name: "Government, Elections & Justice", categories: ["cacitGov", "cacitElect", "cacitJustice"], size: 60, weightLabel: "6 of 20 test questions" },
+    { setNumber: 4, id: 10204, name: "Symbols, Economy & Regions", categories: ["cacitSymbols", "cacitEconomy", "cacitRegions"], size: 48, weightLabel: "5 of 20 test questions" },
+  ],
+  categoryLabels: {
+    cacitRights: "Rights & Responsibilities",
+    cacitPeople: "Who We Are",
+    cacitHistory: "Canada's History",
+    cacitModern: "Modern Canada",
+    cacitGov: "How Canadians Govern Themselves",
+    cacitElect: "Federal Elections",
+    cacitJustice: "The Justice System",
+    cacitSymbols: "Canadian Symbols",
+    cacitEconomy: "Canada's Economy",
+    cacitRegions: "Regions & Capitals",
+  },
+  copy: {
+    guestPrompt: "to save your citizenship test progress and track every question you miss",
+    trainingHeading: "Train by chapter of Discover Canada",
+    trainingSub: "Four sets that together hold all 200 questions, chapter by chapter. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 20 questions, 15 to pass, like the real test",
+    heroSubs: [
+      "Four chapters to train, eight real-length tests.",
+      "Master each set, then take the tests.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your citizenship test.",
+    ],
+    sourceLine: "Based on Discover Canada, IRCC's official study guide. Original questions; facts that changed since the guide was printed are updated to 2026.",
+    analyticsKey: "cacit",
+  },
+};
+
+const aucit: ExamConfig = {
+  id: "aucit",
+  stateCode: "AUCIT",
+  idBase: 10300,
+  slug: "/australian-citizenship",
+  landingPath: "/australian-citizenship-test",
+  name: "Australian Citizenship Test Practice",
+  shortName: "Citizenship (Australia)",
+  examLabel: "Australian citizenship test",
+  fullName: "Australian citizenship test (Our Common Bond)",
+  questionIdPrefix: "AUCIT-",
+  icon: "flag",
+  testCount: 8,
+  questionsPerTest: 20,
+  passPct: 75,
+  // Department of Home Affairs, "Australian Citizenship: Our Common Bond", testable section (current
+  // edition, checked 2026-10-30: King Charles III, Türkiye, "over 150" MPs). Real test: 20 multiple-choice
+  // questions in English, 45 minutes, five of them on Australian values (since 15 Nov 2020); pass = at
+  // least 75% overall AND all five values questions correct. Home Affairs does not publish the split
+  // of the other 15 across parts 1 to 3, so 5/4/6 is ours, roughly by the length of each part. The
+  // values rule is not enforced by the engine; the copy tells people to check it. All items original.
+  blueprint: {
+    aucitPeople: 5,
+    aucitDemocracy: 4,
+    aucitGov: 6,
+    aucitValues: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 10301, name: "Australia and Its People", categories: ["aucitPeople"], size: 48, weightLabel: "Part 1 · 5 of 20 test questions" },
+    { setNumber: 2, id: 10302, name: "Democratic Beliefs, Rights & Liberties", categories: ["aucitDemocracy"], size: 42, weightLabel: "Part 2 · 4 of 20 test questions" },
+    { setNumber: 3, id: 10303, name: "Government & the Law", categories: ["aucitGov"], size: 60, weightLabel: "Part 3 · 6 of 20 test questions" },
+    { setNumber: 4, id: 10304, name: "Australian Values", categories: ["aucitValues"], size: 50, weightLabel: "Part 4 · 5 of 20, all 5 must be right" },
+  ],
+  categoryLabels: {
+    aucitPeople: "Australia and Its People",
+    aucitDemocracy: "Democratic Beliefs, Rights & Liberties",
+    aucitGov: "Government & the Law",
+    aucitValues: "Australian Values",
+  },
+  copy: {
+    guestPrompt: "to save your citizenship test progress and track every question you miss",
+    trainingHeading: "Train each part of Our Common Bond",
+    trainingSub: "Four sets, one per part of the book. Australian values has its own set because one values mistake fails the real test. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 20 questions, 15 to pass, all 5 values right",
+    heroSubs: [
+      "Four parts, eight 20-question mock tests. Start with values.",
+      "Master each part, then take a mock test.",
+      "Halfway there. Keep every values answer right.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your citizenship test.",
+    ],
+    sourceLine: "Based on Australian Citizenship: Our Common Bond (Department of Home Affairs). Original questions. The real test also needs all five values questions right; check yours after each mock test.",
+    analyticsKey: "aucit",
+  },
+};
+
+const gulfrn: ExamConfig = {
+  id: "gulfrn",
+  stateCode: "GULFRN",
+  idBase: 10500,
+  slug: "/gulf-nursing-exam",
+  landingPath: "/prometric-nursing-exam-practice-test",
+  name: "Gulf Nursing Licensing Exam Practice Test",
+  shortName: "Gulf RN",
+  examLabel: "Gulf nursing exam",
+  fullName: "Registered Nurse Licensing Exam (DHA, DOH, MOHAP, SCFHS, DHP, Oman, Kuwait, Bahrain)",
+  questionIdPrefix: "GULFRN-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // Gulf registered nurse licensing exams (checked October 2026). Each authority sets its own
+  // exam. Qatar DHP's Qualifying Examination Blueprint: 150 MCQs, pass 50%, Nursing Fundamentals 30,
+  // Adult Nursing 61, Maternal-Child 44, Unit Management and Leadership 15. SCFHS SNLE Applicant
+  // Guide (2024): 200 MCQs in two 120-minute parts, same four sections (adult nursing includes
+  // critical care, community and mental health; fundamentals includes pharmacology and nutrition),
+  // pass 500 on 200-800. Counts follow that 20/40/30/10 split, with adult nursing split by system.
+  // DHA, DOH, MOHAP, Oman, Kuwait and Bahrain figures were not verifiable from official pages.
+  // 60% is a readiness line a little above the 50% marks DHP publishes. All items original.
+  blueprint: {
+    gulfrnFund: 7,
+    gulfrnPharm: 4,
+    gulfrnCardioResp: 7,
+    gulfrnMedSurg: 8,
+    gulfrnMental: 3,
+    gulfrnCommunity: 2,
+    gulfrnMaternal: 7,
+    gulfrnPeds: 7,
+    gulfrnLead: 5,
+  },
+  trainingSets: testSets(10500, 4),
+  categoryLabels: {
+    gulfrnFund: "Nursing Fundamentals",
+    gulfrnPharm: "Pharmacology & Dosage",
+    gulfrnCardioResp: "Cardiovascular & Respiratory",
+    gulfrnMedSurg: "Medical-Surgical Nursing",
+    gulfrnMental: "Mental Health Nursing",
+    gulfrnCommunity: "Community Health Nursing",
+    gulfrnMaternal: "Maternal & Newborn Nursing",
+    gulfrnPeds: "Pediatric Nursing",
+    gulfrnLead: "Leadership, Ethics & Infection Control",
+  },
+  copy: {
+    guestPrompt: "to save your nursing exam progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all nine topics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 60% to pass",
+    heroSubs: [
+      "Nine topics, four mock tests. Adult nursing is the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your licensing exam.",
+    ],
+    sourceLine: "Based on the registered nurse blueprints published by Qatar's DHP and Saudi Arabia's SCFHS. Original questions; each authority sets its own length and pass mark.",
+    analyticsKey: "gulfrn",
+  },
+};
+
+const inrto: ExamConfig = {
+  id: "inrto",
+  stateCode: "INRTO",
+  idBase: 10600,
+  slug: "/india-learners-licence",
+  landingPath: "/rto-learners-licence-test",
+  name: "RTO Learner's Licence Practice Test",
+  shortName: "LL Test",
+  examLabel: "learner's licence test",
+  fullName: "Learner's Licence (LL) Test, RTO / Sarathi Parivahan (India)",
+  questionIdPrefix: "INRTO-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // India's learner's licence test (checked October 2026). Written from the Motor Vehicles Act 1988 as
+  // amended in 2019, the Central Motor Vehicles Rules 1989 (Rule 11: online tutorial, 60% to pass), the
+  // Motor Vehicles (Driving) Regulations 2017 (which replaced the Rules of the Road Regulations 1989) and the road signs in the Act's schedule (mandatory, cautionary,
+  // informatory). Each state sets the question count (Kerala 30, 18 to pass since Oct 2025; few states publish theirs),
+  // so passPct is the central 60%. A draft of Oct 2026 proposes 75%; not in force.
+  // No state publishes topic weights, so counts are ours, weighted to signs and the rules of the road.
+  // Signs are described in words; no fine amounts (states may raise the 2019 minimums).
+  blueprint: {
+    inrtoLicence: 6,
+    inrtoMandatory: 8,
+    inrtoCaution: 7,
+    inrtoSignals: 6,
+    inrtoRules: 9,
+    inrtoParking: 5,
+    inrtoSafety: 5,
+    inrtoDuties: 4,
+  },
+  trainingSets: testSets(10600, 4),
+  categoryLabels: {
+    inrtoLicence: "Licences, Learner Rules & Documents",
+    inrtoMandatory: "Mandatory Road Signs",
+    inrtoCaution: "Cautionary & Informatory Signs",
+    inrtoSignals: "Traffic Lights, Hand Signals & Markings",
+    inrtoRules: "Rules of the Road",
+    inrtoParking: "Parking, Horn, Lights & Towing",
+    inrtoSafety: "Helmets, Seat Belts, Alcohol & Phones",
+    inrtoDuties: "Accidents, Insurance, PUC & RC",
+  },
+  copy: {
+    guestPrompt: "to save your learner's licence progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions: road signs, traffic lights and hand signals, the rules of the road, parking, helmets and seat belts, and accident duties. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 60% to pass",
+    heroSubs: [
+      "Eight topics, four mock tests. Road signs are the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your LL test on Sarathi.",
+    ],
+    sourceLine: "Based on the Motor Vehicles Act 1988 (as amended in 2019), the Central Motor Vehicles Rules and the Motor Vehicles (Driving) Regulations 2017. Original questions; the test format varies by state, 60% to pass.",
+    analyticsKey: "inrto",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -6498,7 +6806,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, ukcar, ukmoto, uklgv, ukpcv, ukadi, caon, caqc, cabc, caab, camb, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, ukcar, ukmoto, uklgv, ukpcv, ukadi, caon, caqc, cabc, caab, camb, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

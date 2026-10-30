@@ -1459,6 +1459,146 @@
     --brand-gradient-to: 223 60% 95%;
   }
 
+  /* Life in the UK test theme: royal blue */
+  [data-theme="uklitu"] {
+    --brand: 229 100% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 229 70% 96%;
+    --brand-hover: 229 100% 36%;
+    --brand-dark: 229 100% 32%;
+    --brand-darker: 229 85% 22%;
+    --brand-muted: 229 35% 72%;
+    --brand-border: 229 35% 80%;
+    --brand-border-light: 229 32% 89%;
+    --brand-gradient-to: 350 60% 96%;
+  }
+
+  /* Canadian citizenship test theme: deep maple red */
+  [data-theme="cacit"] {
+    --brand: 340 90% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 340 70% 96%;
+    --brand-hover: 340 90% 26%;
+    --brand-dark: 340 90% 22%;
+    --brand-darker: 340 85% 14%;
+    --brand-muted: 340 35% 72%;
+    --brand-border: 340 35% 80%;
+    --brand-border-light: 340 32% 89%;
+    --brand-gradient-to: 10 60% 96%;
+  }
+
+  /* Australian citizenship test theme: Australian green */
+  [data-theme="aucit"] {
+    --brand: 144 90% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 144 70% 96%;
+    --brand-hover: 144 90% 24%;
+    --brand-dark: 144 90% 20%;
+    --brand-darker: 144 85% 14%;
+    --brand-muted: 144 35% 72%;
+    --brand-border: 144 35% 80%;
+    --brand-border-light: 144 32% 89%;
+    --brand-gradient-to: 48 60% 96%;
+  }
+
+  /* Gulf nursing licensing exam theme: date-palm olive */
+  [data-theme="gulfrn"] {
+    --brand: 69 75% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 69 70% 96%;
+    --brand-hover: 69 75% 24%;
+    --brand-dark: 69 75% 20%;
+    --brand-darker: 69 75% 14%;
+    --brand-muted: 69 35% 72%;
+    --brand-border: 69 35% 80%;
+    --brand-border-light: 69 32% 89%;
+    --brand-gradient-to: 45 60% 96%;
+  }
+
+  /* India RTO learner's licence theme: India green */
+  [data-theme="inrto"] {
+    --brand: 116 85% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 116 70% 96%;
+    --brand-hover: 116 85% 24%;
+    --brand-dark: 116 85% 20%;
+    --brand-darker: 116 85% 14%;
+    --brand-muted: 116 35% 72%;
+    --brand-border: 116 35% 80%;
+    --brand-border-light: 116 32% 89%;
+    --brand-gradient-to: 30 60% 96%;
+  }
+
+  /* AWS Solutions Architect Associate theme: squid-ink navy (v2 exam; matches lib/v2/exams/awssaa.ts theme) */
+  [data-theme="awssaa"] {
+    --brand: 235 30% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 235 70% 96%;
+    --brand-hover: 235 30% 26%;
+    --brand-dark: 235 30% 22%;
+    --brand-darker: 235 30% 14%;
+    --brand-muted: 235 35% 72%;
+    --brand-border: 235 35% 80%;
+    --brand-border-light: 235 32% 89%;
+    --brand-gradient-to: 210 60% 96%;
+  }
+
+  /* AZ-900 theme: deep violet blue (v2 exam; matches lib/v2/exams/az900.ts theme) */
+  [data-theme="az900"] {
+    --brand: 248 90% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 248 70% 96%;
+    --brand-hover: 248 90% 26%;
+    --brand-dark: 248 90% 22%;
+    --brand-darker: 248 85% 14%;
+    --brand-muted: 248 35% 72%;
+    --brand-border: 248 35% 80%;
+    --brand-border-light: 248 32% 89%;
+    --brand-gradient-to: 220 60% 96%;
+  }
+
+  /* CCNA theme: muted teal (v2 exam; matches lib/v2/exams/ccna.ts theme) */
+  [data-theme="ccna"] {
+    --brand: 191 45% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 191 70% 96%;
+    --brand-hover: 191 45% 24%;
+    --brand-dark: 191 45% 20%;
+    --brand-darker: 191 45% 14%;
+    --brand-muted: 191 35% 72%;
+    --brand-border: 191 35% 80%;
+    --brand-border-light: 191 32% 89%;
+    --brand-gradient-to: 200 60% 96%;
+  }
+
+  /* NMC CBT theme: NMC purple (v2 exam; matches lib/v2/exams/uknmc.ts theme) */
+  [data-theme="uknmc"] {
+    --brand: 289 90% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 289 70% 96%;
+    --brand-hover: 289 90% 38%;
+    --brand-dark: 289 90% 34%;
+    --brand-darker: 289 85% 24%;
+    --brand-muted: 289 35% 72%;
+    --brand-border: 289 35% 80%;
+    --brand-border-light: 289 32% 89%;
+    --brand-gradient-to: 305 60% 96%;
+  }
+
+  /* PMP theme: plum magenta (v2 exam; matches lib/v2/exams/pmp.ts theme) */
+  [data-theme="pmp"] {
+    --brand: 305 90% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 305 70% 96%;
+    --brand-hover: 305 90% 38%;
+    --brand-dark: 305 90% 34%;
+    --brand-darker: 305 85% 24%;
+    --brand-muted: 305 35% 72%;
+    --brand-border: 305 35% 80%;
+    --brand-border-light: 305 32% 89%;
+    --brand-gradient-to: 325 60% 96%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -2716,6 +2856,118 @@
     --brand-muted: 208 40% 45%;
     --brand-dark: 208 90% 65%;
     --brand-darker: 208 85% 78%;
+  }
+
+  .dark [data-theme="uklitu"] {
+    --brand: 229 100% 50%;
+    --brand-hover: 229 100% 42%;
+    --brand-light: 229 45% 13%;
+    --brand-gradient-to: 350 40% 11%;
+    --brand-border-light: 229 32% 24%;
+    --brand-border: 229 35% 34%;
+    --brand-muted: 229 35% 45%;
+    --brand-dark: 229 100% 67%;
+    --brand-darker: 229 85% 78%;
+  }
+
+  .dark [data-theme="cacit"] {
+    --brand: 340 90% 47.5%;
+    --brand-hover: 340 90% 39.5%;
+    --brand-light: 340 45% 13%;
+    --brand-gradient-to: 10 40% 11%;
+    --brand-border-light: 340 32% 24%;
+    --brand-border: 340 35% 34%;
+    --brand-muted: 340 35% 45%;
+    --brand-dark: 340 90% 65%;
+    --brand-darker: 340 85% 78%;
+  }
+
+  .dark [data-theme="aucit"] {
+    --brand-light: 144 45% 13%;
+    --brand-gradient-to: 48 40% 11%;
+    --brand-border-light: 144 32% 24%;
+    --brand-border: 144 35% 34%;
+    --brand-muted: 144 35% 45%;
+    --brand-dark: 144 90% 65%;
+    --brand-darker: 144 85% 78%;
+  }
+
+  .dark [data-theme="gulfrn"] {
+    --brand-light: 69 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 69 32% 24%;
+    --brand-border: 69 35% 34%;
+    --brand-muted: 69 35% 45%;
+    --brand-dark: 69 75% 65%;
+    --brand-darker: 69 75% 78%;
+  }
+
+  .dark [data-theme="inrto"] {
+    --brand-light: 116 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 116 32% 24%;
+    --brand-border: 116 35% 34%;
+    --brand-muted: 116 35% 45%;
+    --brand-dark: 116 85% 65%;
+    --brand-darker: 116 85% 78%;
+  }
+
+  .dark [data-theme="awssaa"] {
+    --brand: 235 30% 50%;
+    --brand-hover: 235 30% 42%;
+    --brand-light: 235 45% 13%;
+    --brand-gradient-to: 210 40% 11%;
+    --brand-border-light: 235 32% 24%;
+    --brand-border: 235 35% 34%;
+    --brand-muted: 235 35% 45%;
+    --brand-dark: 235 30% 65%;
+    --brand-darker: 235 30% 78%;
+  }
+
+  .dark [data-theme="az900"] {
+    --brand: 248 90% 50%;
+    --brand-hover: 248 90% 42%;
+    --brand-light: 248 45% 13%;
+    --brand-gradient-to: 220 40% 11%;
+    --brand-border-light: 248 32% 24%;
+    --brand-border: 248 35% 34%;
+    --brand-muted: 248 35% 45%;
+    --brand-dark: 248 90% 70%;
+    --brand-darker: 248 85% 78%;
+  }
+
+  .dark [data-theme="ccna"] {
+    --brand: 191 45% 38.6%;
+    --brand-hover: 191 45% 30.6%;
+    --brand-light: 191 45% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 191 32% 24%;
+    --brand-border: 191 35% 34%;
+    --brand-muted: 191 35% 45%;
+    --brand-dark: 191 45% 65%;
+    --brand-darker: 191 45% 78%;
+  }
+
+  .dark [data-theme="uknmc"] {
+    --brand: 289 90% 48.5%;
+    --brand-hover: 289 90% 40.5%;
+    --brand-light: 289 45% 13%;
+    --brand-gradient-to: 305 40% 11%;
+    --brand-border-light: 289 32% 24%;
+    --brand-border: 289 35% 34%;
+    --brand-muted: 289 35% 45%;
+    --brand-dark: 289 90% 65%;
+    --brand-darker: 289 85% 78%;
+  }
+
+  .dark [data-theme="pmp"] {
+    --brand-light: 305 45% 13%;
+    --brand-gradient-to: 325 40% 11%;
+    --brand-border-light: 305 32% 24%;
+    --brand-border: 305 35% 34%;
+    --brand-muted: 305 35% 45%;
+    --brand-dark: 305 90% 65%;
+    --brand-darker: 305 85% 78%;
   }
 
 }

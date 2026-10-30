@@ -1481,4 +1481,152 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The Care Certificate standards and guidance published by Skills for Care",
     source: { name: "Skills for Care: Care Certificate", url: "https://www.skillsforcare.org.uk/Developing-your-workforce/Care-Certificate/Care-Certificate.aspx" },
   },
+  uklitu: {
+    answer:
+      "The Life in the UK test is a 45-minute computer test of 24 multiple-choice questions about British values, history, culture, government and law. Most people applying for settlement (indefinite leave to remain) or British citizenship must pass it, and the pass mark is 18 correct answers, 75 percent. Every question comes from the official Home Office handbook, Life in the United Kingdom: A Guide for New Residents, and the test is taken only at approved test centres in the UK.",
+    rows: [
+      { label: "Questions", value: "24 multiple choice" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "18 of 24 (75%)" },
+      { label: "Where", value: "Approved UK test centres, booked online" },
+      { label: "Book ahead", value: "At least 3 days" },
+      { label: "Needed for", value: "Settlement and British citizenship" },
+      { label: "Study material", value: "A Guide for New Residents, 3rd edition" },
+      { label: "Run by", value: "Home Office" },
+    ],
+    basedOn: "GOV.UK's Life in the UK test guidance and the official handbook, checked October 2026",
+    source: { name: "GOV.UK: Life in the UK Test", url: "https://www.gov.uk/life-in-the-uk-test" },
+  },
+  cacit: {
+    answer:
+      "The Canadian citizenship test has 20 multiple-choice or true-or-false questions, and you have 45 minutes to answer them. You need 15 correct (75 percent) to pass. Every question comes from IRCC's study guide, Discover Canada: The Rights and Responsibilities of Citizenship. Applicants aged 18 to 54 take it, usually online, and get up to three chances to pass before a hearing with a citizenship official.",
+    rows: [
+      { label: "Questions", value: "20, multiple choice or true/false" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "15 of 20 (75%)" },
+      { label: "Who takes it", value: "Applicants aged 18 to 54" },
+      { label: "Attempts", value: "Up to 3, then a hearing" },
+      { label: "Study guide", value: "Discover Canada (IRCC)" },
+      { label: "Given by", value: "Immigration, Refugees and Citizenship Canada" },
+    ],
+    basedOn: "IRCC's citizenship test pages and the Discover Canada study guide, checked October 2026",
+    source: { name: "IRCC: Study for the citizenship test", url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study" },
+  },
+  aucit: {
+    answer:
+      "The Australian citizenship test is a computer-based test in English of 20 multiple-choice questions, taken in 45 minutes. All questions come from the testable section of the Home Affairs book Australian Citizenship: Our Common Bond, and five of them are about Australian values. To pass you need at least 75 percent (15 of 20) and you must answer all five values questions correctly.",
+    rows: [
+      { label: "Questions", value: "20 multiple choice" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "75% (15 of 20)" },
+      { label: "Values questions", value: "5, and all 5 must be right" },
+      { label: "Language", value: "English (text-to-speech available)" },
+      { label: "Study book", value: "Our Common Bond, Parts 1 to 4" },
+      { label: "Given by", value: "Department of Home Affairs" },
+    ],
+    basedOn: "Australian Citizenship: Our Common Bond and the Home Affairs citizenship test page, checked October 2026",
+    source: { name: "Department of Home Affairs: Learn about the citizenship test", url: "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/learn-about-citizenship-interview-and-test/learn-about-citizenship-test" },
+  },
+  gulfrn: {
+    answer:
+      "The Gulf registered nurse licensing exam, often called the Prometric exam for nurses, is a computer-based multiple-choice test that each Gulf health authority sets for nurses who want to practise there: DHA in Dubai, DOH in Abu Dhabi, MOHAP elsewhere in the UAE, SCFHS in Saudi Arabia, the DHP in Qatar, and the authorities in Oman, Kuwait and Bahrain. Each sets its own number of questions, time and pass mark. Qatar's DHP lists 150 questions with a 50 percent pass mark, and Saudi Arabia's SNLE has 200 questions in two 120-minute parts with a scaled pass score of 500. The published blueprints weight adult nursing most, about 40 percent.",
+    rows: [
+      { label: "Format", value: "Computer-based, multiple choice, one best answer" },
+      { label: "Qatar (DHP)", value: "150 questions, 50% to pass" },
+      { label: "Saudi Arabia (SNLE)", value: "200 questions, 2 x 120 min, 500 on 200-800" },
+      { label: "Other authorities", value: "Check your authority's current guide" },
+      { label: "Content", value: "Fundamentals, adult, maternal-child, leadership" },
+      { label: "Biggest area", value: "Adult nursing, about 40%" },
+      { label: "Set by", value: "Each Gulf health authority" },
+    ],
+    basedOn: "Qatar DHP's qualifying examination page and blueprint and the SCFHS SNLE Applicant Guide (2024), checked October 2026",
+    source: { name: "Qatar DHP: Qualifying Examination", url: "https://dhp.moph.gov.qa/en/Pages/QualifyingExamination.aspx" },
+  },
+  inrto: {
+    answer:
+      "The learner's licence (LL) test is a short computer-based multiple-choice test on road signs and traffic rules that you must pass to get a learner's licence in India. You apply through Sarathi Parivahan and, depending on the state, take it at the RTO or online from home after an Aadhaar check and a road safety tutorial. Each state sets the number of questions (Kerala, for example, asks 30), and the central rules set the pass mark at 60 percent. The learner's licence is valid for six months, and you can take the driving test after holding it for 30 days.",
+    rows: [
+      { label: "Format", value: "Computer-based multiple choice" },
+      { label: "Questions", value: "Varies by state (Kerala 30)" },
+      { label: "Pass mark", value: "60% (e.g. 18 of 30 in Kerala)" },
+      { label: "Where", value: "At the RTO or online via Sarathi, by state" },
+      { label: "Minimum age", value: "18 for a car; 16 for up to 50cc with consent" },
+      { label: "LL validity", value: "6 months" },
+      { label: "Driving test", value: "After holding the LL for 30 days" },
+      { label: "Topics", value: "Road signs, rules of the road, safety, documents" },
+    ],
+    basedOn: "the Motor Vehicles Act 1988 as amended in 2019, the Central Motor Vehicles Rules and the Motor Vehicles (Driving) Regulations 2017, checked October 2026",
+    source: { name: "Sarathi Parivahan (Ministry of Road Transport and Highways)", url: "https://sarathi.parivahan.gov.in/" },
+  },
+  awssaa: {
+    answer:
+      "The AWS Certified Solutions Architect - Associate exam (SAA-C03) has 65 questions in 130 minutes, 50 of them scored. It is scored 100 to 1000 and 720 passes. It covers Design Secure Architectures 30%, Design Resilient Architectures 26%, Design High-Performing Architectures 24%, and Design Cost-Optimized Architectures 20%, mostly as scenario questions.",
+    rows: [
+      { label: "Questions", value: "65 (50 scored)" },
+      { label: "Time", value: "130 minutes" },
+      { label: "Passing score", value: "720 on a 100 to 1000 scale" },
+      { label: "Fee", value: "150 USD" },
+      { label: "Given by", value: "AWS, at Pearson VUE or online" },
+    ],
+    basedOn: "the AWS SAA-C03 exam guide",
+    source: { name: "AWS", url: "https://aws.amazon.com/certification/certified-solutions-architect-associate/" },
+  },
+  az900: {
+    answer:
+      "The Microsoft Azure Fundamentals exam (AZ-900) gives you 45 minutes; Microsoft does not publish a fixed question count, but candidates usually see 40 to 60 questions. It is scored from 1 to 1000 with 700 to pass. Questions include multiple choice, multiple response, yes/no statement sets and matching. It covers Describe cloud concepts (25 to 30%), Describe Azure architecture and services (35 to 40%) and Describe Azure management and governance (30 to 35%), per the skills measured as of July 20, 2026.",
+    rows: [
+      { label: "Questions", value: "About 40 to 60 (Microsoft does not publish a fixed count)" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Passing score", value: "700 on a 1 to 1000 scale" },
+      { label: "Price", value: "Varies by country" },
+      { label: "Given by", value: "Microsoft, through Pearson VUE (test center or online) or Certiport for students" },
+      { label: "Retakes", value: "First retake after 24 hours; longer waits after that" },
+    ],
+    basedOn: "the Microsoft Learn AZ-900 study guide (skills measured as of July 20, 2026)",
+    source: { name: "Microsoft Learn", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/" },
+  },
+  ccna: {
+    answer:
+      "The Cisco CCNA (200-301) is a single 120-minute exam with no prerequisites. Cisco does not publish the question count or a passing score; candidates usually see about 100 to 120 questions, including multiple choice, drag-and-drop and simulations, answered in order with no going back. The v1.1 topics run through February 2, 2027: Network Fundamentals 20%, Network Access 20%, IP Connectivity 25%, IP Services 10%, Security Fundamentals 15%, Automation and Programmability 10%. Version 2.0 replaces it on February 3, 2027.",
+    rows: [
+      { label: "Questions", value: "About 100 to 120 (not published)" },
+      { label: "Time", value: "120 minutes" },
+      { label: "Passing score", value: "Not published by Cisco" },
+      { label: "Exam code", value: "200-301 (topics v1.1; v2.0 from Feb 3, 2027)" },
+      { label: "Valid for", value: "3 years" },
+      { label: "Given by", value: "Cisco, at Pearson VUE or online" },
+    ],
+    basedOn: "the Cisco CCNA 200-301 exam topics v1.1",
+    source: { name: "Cisco", url: "https://learningnetwork.cisco.com/s/ccna-exam-topics" },
+  },
+  uknmc: {
+    answer:
+      "The NMC computer-based test (CBT) is Part 1 of the Test of Competence that nurses educated outside the UK take to join the Nursing and Midwifery Council register; the practical OSCE is Part 2. It is one sitting of 115 questions in 3 hours at a Pearson VUE test centre: Part A, 15 numeracy questions with typed answers in 30 minutes, and Part B, 100 four-option clinical questions in 2 hours 30 minutes mapped to the seven platforms of the NMC Future Nurse standards. Each part is passed or failed on its own: Part A needs 13 of 15 (87%), and Part B pass marks are generally 60% to 70% depending on the field of nursing.",
+    rows: [
+      { label: "Questions", value: "115: 15 numeracy (Part A) and 100 clinical (Part B)" },
+      { label: "Time", value: "3 hours: 30 minutes for Part A, 2 hours 30 minutes for Part B" },
+      { label: "Pass mark", value: "Part A 13 of 15 (87%); Part B generally 60% to 70%" },
+      { label: "Calculator", value: "On-screen calculator for numeracy" },
+      { label: "Fee", value: "83 GBP (resit Part A 50 GBP, Part B 70 GBP)" },
+      { label: "Attempts", value: "3 per application, at least 10 days apart" },
+      { label: "Where", value: "Pearson VUE test centres in most countries" },
+    ],
+    basedOn: "the NMC Test of Competence 2021 nursing test specification and adult nursing blueprint, and the CBT candidate information booklet (April 2025)",
+    source: { name: "Nursing and Midwifery Council", url: "https://www.nmc.org.uk/registration/joining-the-register/toc/toc-2021/cbt/" },
+  },
+  pmp: {
+    answer:
+      "The PMP exam has 180 questions in 240 minutes, of which 170 are scored and 10 are unscored pretest items. Since the July 2026 Examination Content Outline it opens with a case-study section and has two 10-minute breaks, and it covers People 33%, Process 41% and Business Environment 26%, with about 40% of items on predictive approaches and 60% on agile or hybrid ones. PMI does not publish a pass mark: results are pass or fail with a rating for each domain from Above Target to Needs Improvement.",
+    rows: [
+      { label: "Questions", value: "180 (170 scored)" },
+      { label: "Time", value: "240 minutes, two 10-minute breaks" },
+      { label: "Domains", value: "People 33%, Process 41%, Business Environment 26%" },
+      { label: "Approaches", value: "About 40% predictive, 60% agile or hybrid" },
+      { label: "Result", value: "Pass or fail, plus a rating per domain" },
+      { label: "Retakes", value: "Up to 3 attempts in the 1-year eligibility period" },
+      { label: "Given by", value: "PMI, at Pearson VUE test centers or online" },
+    ],
+    basedOn: "the PMI PMP Examination Content Outline (July 2026)",
+    source: { name: "PMI", url: "https://www.pmi.org/certifications/project-management-pmp/new-exam" },
+  },
 };

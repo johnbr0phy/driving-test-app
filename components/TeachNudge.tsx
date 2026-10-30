@@ -22,8 +22,9 @@ const TEACHER_LED = new Set([
   "ukfaw", "ukcare",
   "rexpn", "capsw", "casfa",
   "aufirstaid",
+  "gulfrn",
   // High school, military and college classes
-  "ged", "sat", "act", "asvab", "secplus", "aplus", "aws", "gcsemaths", "osslt", "naplan", "nswsel",
+  "ged", "sat", "act", "asvab", "secplus", "aplus", "aws", "awssaa", "az900", "ccna", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
   "gcsehigher", "gcsescience", "gcsecs", "fsmaths",
   "eqao9",
   "naplan7", "vicsel", "hscmaths",
@@ -36,6 +37,7 @@ const TEACHER_LED = new Set([
   "cscs", "ukfood", "ukaplh",
   "caauto", "caplumb", "cacarp", "caweld", "cawhmis", "caguard",
   "aursa", "aurcg", "aufss", "auforklift", "auwah",
+  "uklitu", "cacit", "aucit",
 ]);
 
 export function isTeacherLedExam(id: string): boolean {

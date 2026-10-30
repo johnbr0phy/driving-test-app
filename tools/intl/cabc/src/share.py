@@ -55,7 +55,7 @@ ITEMS = [
 ("A motorcycle is riding in the left part of its lane. You should assume:",
  "It may not be turning left", ["It is about to turn left", "It wants you to pass on the right", "It is leaving the road"],
  "Riders often use the left part of the lane to be more visible. Never try to share a lane with a motorcycle."),
-("You are behind a large truck. How do you know its driver can see you?",
+("You are following a large truck. What tells you that you are out of its rear blind spot?",
  "You can see both its mirrors", ["You are right behind it", "Your headlights are switched on", "You are on its right side"],
  "Large vehicles have big blind spots behind and beside them. If you cannot see both of the truck's mirrors, the driver cannot see you."),
 ("After passing a large truck, when is it safe to move back in front of it?",

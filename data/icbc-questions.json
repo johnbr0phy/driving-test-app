@@ -216,7 +216,7 @@
     "category": "cabcSigns",
     "question": "A lane use sign over your lane shows only a left arrow. As you reach the intersection you must:",
     "optionA": "Go straight or turn left",
-    "optionB": "Turn left only if it's clear",
+    "optionB": "Go straight if left is busy",
     "optionC": "Change lanes in the intersection",
     "optionD": "Turn left from that lane",
     "correctAnswer": "D",
@@ -291,7 +291,7 @@
     "optionD": "School bus stop posts",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Object markers are placed on obstructions such as bridge piers and islands. The stripes slope down toward the side you should pass on."
+    "explanation": "Object markers are mounted on obstructions such as bridge piers and islands. Each one shows whether to keep right, keep left, or pass on either side."
   },
   {
     "type": "CABC",
@@ -357,7 +357,7 @@
     "question": "A white X-shaped sign reading railway crossing is at a crossing with no lights or gate. You should:",
     "optionA": "Keep your speed and cross",
     "optionB": "Slow down, look and listen",
-    "optionC": "Stop only if you see a sign",
+    "optionC": "Stop only if a bell rings",
     "optionD": "Sound the horn and cross",
     "correctAnswer": "B",
     "correctIndex": 1,
@@ -848,7 +848,7 @@
     "optionA": "Traffic already in the circle",
     "optionB": "Traffic entering the circle now",
     "optionC": "The larger of the vehicles",
-    "optionD": "Vehicles on your left",
+    "optionD": "Whoever signals first",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "Yield to any traffic already in the traffic circle. With no signs, if you arrive with another vehicle, yield to the one on your right."
@@ -1936,7 +1936,7 @@
     "state": "ALL",
     "questionId": "CABC-SHR-019",
     "category": "cabcShare",
-    "question": "You are behind a large truck. How do you know its driver can see you?",
+    "question": "You are following a large truck. What tells you that you are out of its rear blind spot?",
     "optionA": "You are right behind it",
     "optionB": "Your headlights are switched on",
     "optionC": "You can see both its mirrors",

@@ -12,7 +12,7 @@
   "fullName": "ICBC Class 7L knowledge test (British Columbia)",
   "icon": "car",
   "passPct": 80,
-  "outlineComment": "ICBC Class 7L passenger vehicle knowledge test, British Columbia: 50 multiple-choice\nquestions from Learn to Drive Smart (ICBC), 40 correct to pass (80%), 45 minutes, 12 languages\n(ICBC tip sheet MV2654, June 2026; MV2022, October 2026). Categories follow the handbook's\nchapters: signs, signals and road markings (ch 3, about one question in five), intersections and\nright-of-way and lanes and parking (ch 4), see-think-do (ch 5), sharing the road (ch 6), personal\nstrategies and impairment (ch 7), emergency strategies (ch 8), and your licence and vehicle (ch 2, 9).\nGLP items follow the ICBC changes effective October 19, 2026 (Driving Record Assessment, supervisor 22+).",
+  "outlineComment": "ICBC Class 7L passenger vehicle knowledge test, British Columbia: 50 multiple-choice\nquestions from Learn to Drive Smart (ICBC), 40 correct to pass (80%), 45 minutes, 12 languages\n(ICBC tip sheet MV2654, June 2026; MV2022, October 2026). Categories follow the handbook's\nchapters: signs, signals and road markings (ch 3), intersections and\nright-of-way and lanes and parking (ch 4), see-think-do (ch 5), sharing the road (ch 6), personal\nstrategies and impairment (ch 7), emergency strategies (ch 8), and your licence and vehicle (ch 2, 9).\nGLP items follow the ICBC changes effective October 19, 2026 (Driving Record Assessment, supervisor 22+).",
   "categories": [
     {"key": "cabcSigns", "label": "Signs, Signals & Road Markings", "perTest": 10, "segment": "SGN"},
     {"key": "cabcRow", "label": "Intersections & Right-of-Way", "perTest": 7, "segment": "ROW"},

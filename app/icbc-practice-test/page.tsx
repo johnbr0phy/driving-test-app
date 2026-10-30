@@ -74,7 +74,7 @@ const jsonLd = {
           name: "What is on the ICBC knowledge test?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Every question comes from ICBC's free guide, Learn to Drive Smart: signs, signals and road markings (about one question in five), right-of-way at intersections, lanes, passing and parking, see-think-do driving, sharing the road with pedestrians, cyclists, buses and trains, impairment and distraction, emergencies and bad weather, and the Graduated Licensing Program rules. ICBC says many questions test understanding, not just memorized facts.",
+            text: "Every question comes from ICBC's free guide, Learn to Drive Smart: signs, signals and road markings, right-of-way at intersections, lanes, passing and parking, see-think-do driving, sharing the road with pedestrians, cyclists, buses and trains, impairment and distraction, emergencies and bad weather, and the Graduated Licensing Program rules. ICBC says many questions test understanding, not just memorized facts.",
           },
         },
         {
@@ -183,7 +183,7 @@ export default function IcbcLandingPage() {
                 Built on Learn to Drive Smart
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                ICBC says every knowledge test question comes from Learn to Drive Smart, and about one in five is about road signs. The practice tests here follow the guide chapter by chapter, with signs and signals the biggest share and B.C. rules you will not find in other provinces&apos; handbooks, like the flashing green pedestrian light, the single solid yellow line and the GLP rules that changed on October 19, 2026.
+                ICBC says every knowledge test question comes from Learn to Drive Smart, and it offers a separate road signs practice test for the signs questions. The practice tests here follow the guide chapter by chapter, with signs and signals the biggest share and B.C. rules you will not find in other provinces&apos; handbooks, like the flashing green pedestrian light, the single solid yellow line and the GLP rules that changed on October 19, 2026.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
@@ -275,7 +275,7 @@ export default function IcbcLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is on the ICBC knowledge test?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Every question comes from ICBC&apos;s free guide, Learn to Drive Smart: signs, signals and road markings (about one question in five), right-of-way at intersections, lanes, passing and parking, see-think-do driving, sharing the road with pedestrians, cyclists, buses and trains, impairment and distraction, emergencies and bad weather, and the Graduated Licensing Program rules. ICBC says many questions test understanding, not just memorized facts.
+              Every question comes from ICBC&apos;s free guide, Learn to Drive Smart: signs, signals and road markings, right-of-way at intersections, lanes, passing and parking, see-think-do driving, sharing the road with pedestrians, cyclists, buses and trains, impairment and distraction, emergencies and bad weather, and the Graduated Licensing Program rules. ICBC says many questions test understanding, not just memorized facts.
             </p>
           </div>
           <div>

@@ -2473,7 +2473,7 @@ const cabc: ExamConfig = {
   // ICBC Class 7L passenger vehicle knowledge test, British Columbia: 50 multiple-choice
   // questions from Learn to Drive Smart (ICBC), 40 correct to pass (80%), 45 minutes, 12 languages
   // (ICBC tip sheet MV2654, June 2026; MV2022, October 2026). Categories follow the handbook's
-  // chapters: signs, signals and road markings (ch 3, about one question in five), intersections and
+  // chapters: signs, signals and road markings (ch 3), intersections and
   // right-of-way and lanes and parking (ch 4), see-think-do (ch 5), sharing the road (ch 6), personal
   // strategies and impairment (ch 7), emergency strategies (ch 8), and your licence and vehicle (ch 2, 9).
   // GLP items follow the ICBC changes effective October 19, 2026 (Driving Record Assessment, supervisor 22+).

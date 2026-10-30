@@ -62,7 +62,7 @@ ITEMS = [
  "Counter-clockwise", ["Clockwise", "Either way if clear", "The shortest way"],
  "In B.C. you turn right to enter, go around counter-clockwise, and turn right to leave."),
 ("At a traffic circle, who has the right-of-way?",
- "Traffic already in the circle", ["Traffic entering the circle now", "The larger of the vehicles", "Vehicles on your left"],
+ "Traffic already in the circle", ["Traffic entering the circle now", "The larger of the vehicles", "Whoever signals first"],
  "Yield to any traffic already in the traffic circle. With no signs, if you arrive with another vehicle, yield to the one on your right."),
 ("You want to turn left at a two-lane roundabout. Which lane should you enter from?",
  "The left lane", ["The right lane", "Either lane", "The truck apron"],

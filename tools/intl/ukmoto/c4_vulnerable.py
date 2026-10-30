@@ -34,7 +34,7 @@ ITEMS = [
  'Stay back and let it turn', ['Pass it on the left side', 'Pass it on the right side', 'Sound your horn and pass'],
  'Long vehicles often swing out to make room for a tight left turn. Never squeeze up the inside: you could be crushed.'),
 ('Why should you not ride close behind a large vehicle?',
- 'The driver cannot see you', ['Its exhaust fumes are hot', 'Its tyres may throw stones', 'Its engine noise is loud'],
+ 'The driver cannot see you', ['Its exhaust fumes are hot', 'Its slipstream slows you down', 'Its engine noise is loud'],
  "If you cannot see the driver's mirrors, the driver cannot see you. Hang back to stay visible and see the road ahead."),
 ('A bus is signalling to pull out from a bus stop. What should you do?',
  'Give way if it is safe', ['Speed up and pass it', 'Sound your horn at it', 'Flash your headlight'],

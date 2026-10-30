@@ -30,7 +30,7 @@ interface SupportPaywallModalProps {
 
 const DMV_BENEFITS = [
   "Safety & Emergencies and State Laws",
-  "Tests C and D",
+  "Practice Tests 3 and 4",
   "The 50 questions most people fail",
   "SAT and ACT Premium too",
 ];

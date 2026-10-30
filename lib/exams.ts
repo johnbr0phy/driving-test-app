@@ -2111,7 +2111,7 @@ const auwa: ExamConfig = {
   // Transport and Major Infrastructure, Driver and Vehicle Services: 30 multiple-choice questions on
   // the road rules and safe driving, 24 correct to pass (80%), a pass valid 5 years (transport.wa.gov.au,
   // Take the theory test, read Oct 2026). Questions come from Drive Safe: A handbook for Western
-  // Australian road users, revised edition 5 August 2026. DoT publishes no topic weighting, so the eight
+  // Australian road users, revised edition 5 August 2026. DTMI publishes no topic weighting, so the eight
   // categories follow the handbook's parts: licensing and demerits (Part 2, 5), alcohol, fatigue and
   // restraints (Part 1), speed and conditions (3.1 to 3.3), signs, signals and markings (3.8 to 3.10),
   // intersections, roundabouts and railway crossings, lanes, overtaking and freeways, sharing the road,

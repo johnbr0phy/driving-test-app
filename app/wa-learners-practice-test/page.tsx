@@ -90,7 +90,7 @@ const jsonLd = {
           name: "What is on the WA learner's theory test?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The questions come from Drive Safe, the Department of Transport's handbook for Western Australian road users. Expect give way rules at intersections and roundabouts, traffic signals, signs and road markings, speed limits and following distances, alcohol and BAC limits, seat belts and child restraints, overtaking, parking and stopping distances, sharing the road with cyclists and trucks, emergencies, and the learner, P plate and demerit point rules.",
+            text: "The questions come from Drive Safe, the Department of Transport and Major Infrastructure's handbook for Western Australian road users. Expect give way rules at intersections and roundabouts, traffic signals, signs and road markings, speed limits and following distances, alcohol and BAC limits, seat belts and child restraints, overtaking, parking and stopping distances, sharing the road with cyclists and trucks, emergencies, and the learner, P plate and demerit point rules.",
           },
         },
         {
@@ -98,7 +98,7 @@ const jsonLd = {
           name: "Is this the official WA test, and does it include the Hazard Perception Test?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Tigertest is an independent study tool, not the Department of Transport's test, and every question is written from the 5 August 2026 edition of Drive Safe. It covers the road rules theory test only. The Hazard Perception Test, where you respond to video clips of traffic, is a separate test and is not modelled here. Practise until you clear 80 percent on all four tests.",
+            text: "No. Tigertest is an independent study tool, not the Department of Transport and Major Infrastructure's test, and every question is written from the 5 August 2026 edition of Drive Safe. It covers the road rules theory test only. The Hazard Perception Test, where you respond to video clips of traffic, is a separate test and is not modelled here. Practise until you clear 80 percent on all four tests.",
           },
         },
       ],
@@ -183,7 +183,7 @@ export default function WaLearnersLandingPage() {
                 Built on the Drive Safe Handbook
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                The Department of Transport writes the theory test from Drive Safe, its handbook for Western Australian road users, but does not publish how the 30 questions are split by topic. The practice tests here follow the handbook&apos;s own parts, with the most weight on give way, intersections and roundabouts, where most learners lose marks. Every rule is checked against the edition of 5 August 2026.
+                The Department of Transport and Major Infrastructure writes the theory test from Drive Safe, its handbook for Western Australian road users, but does not publish how the 30 questions are split by topic. The practice tests here follow the handbook&apos;s own parts, with the most weight on give way, intersections and roundabouts. Every rule is checked against the edition of 5 August 2026.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
@@ -287,13 +287,13 @@ export default function WaLearnersLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is on the WA learner&apos;s theory test?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              The questions come from Drive Safe, the Department of Transport&apos;s handbook for Western Australian road users. Expect give way rules at intersections and roundabouts, traffic signals, signs and road markings, speed limits and following distances, alcohol and BAC limits, seat belts and child restraints, overtaking, parking and stopping distances, sharing the road with cyclists and trucks, emergencies, and the learner, P plate and demerit point rules.
+              The questions come from Drive Safe, the Department of Transport and Major Infrastructure&apos;s handbook for Western Australian road users. Expect give way rules at intersections and roundabouts, traffic signals, signs and road markings, speed limits and following distances, alcohol and BAC limits, seat belts and child restraints, overtaking, parking and stopping distances, sharing the road with cyclists and trucks, emergencies, and the learner, P plate and demerit point rules.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is this the official WA test, and does it include the Hazard Perception Test?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. Tigertest is an independent study tool, not the Department of Transport&apos;s test, and every question is written from the 5 August 2026 edition of Drive Safe. It covers the road rules theory test only. The Hazard Perception Test, where you respond to video clips of traffic, is a separate test and is not modelled here. Practise until you clear 80 percent on all four tests.
+              No. Tigertest is an independent study tool, not the Department of Transport and Major Infrastructure&apos;s test, and every question is written from the 5 August 2026 edition of Drive Safe. It covers the road rules theory test only. The Hazard Perception Test, where you respond to video clips of traffic, is a separate test and is not modelled here. Practise until you clear 80 percent on all four tests.
             </p>
           </div>
         </div>

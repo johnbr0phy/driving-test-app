@@ -18,7 +18,7 @@ ITEMS = [
 ("At what speed must you pass a stationary police car or tow truck with flashing lights?",
  "No more than 40 km/h", ["No more than 20 km/h", "No more than 60 km/h", "10 km/h under the limit"],
  "Under Slow Down, Move Over (SLOMO) you must pass a stationary incident response vehicle showing flashing lights at no more than 40 km/h, whatever lane you are in."),
-("A broken-down tow truck ahead in your lane has flashing lights on a multi-lane road. You should:",
+("A tow truck is stopped ahead in your lane with flashing lights on a multi-lane road. You should:",
  "Move over and slow to 40", ["Stay in lane at the limit", "Stop until it leaves", "Sound your horn and pass"],
  "On a multi-lane road you must slow to 40 km/h or less and, if the vehicle is in your lane, move to another lane if it is safe."),
 ("Does SLOMO apply to a parked car showing only its hazard lights?",

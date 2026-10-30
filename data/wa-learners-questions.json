@@ -354,14 +354,14 @@
     "state": "ALL",
     "questionId": "AUWA-LIC-026",
     "category": "auwaLicence",
-    "question": "How soon must you tell the Department of Transport about a change of address?",
+    "question": "How soon must you tell the Department of Transport and Major Infrastructure (DTMI) about a change of address?",
     "optionA": "Within 7 days",
     "optionB": "Within 21 days",
     "optionC": "Within 30 days",
     "optionD": "At your next renewal",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Licence and vehicle licence holders must notify a change of address within 21 days."
+    "explanation": "Driver's licence holders and anyone with a vehicle licensed in their name must notify DTMI of a change of address within 21 days, online, by post or by fax."
   },
   {
     "type": "AUWA",
@@ -627,7 +627,7 @@
     "optionD": "Drive a bit faster",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Once fatigue sets in there is nothing you can do except stop and take a break or a nap. Fresh air and music do not cure it."
+    "explanation": "Once fatigue sets in there is nothing you can do except stop and take a break or a nap. Fresh air helps you stay alert beforehand, but neither it nor music cures fatigue."
   },
   {
     "type": "AUWA",
@@ -718,9 +718,9 @@
     "state": "ALL",
     "questionId": "AUWA-SAF-024",
     "category": "auwaSafety",
-    "question": "When may a driver use a hand-held mobile phone to make a call?",
+    "question": "When may a driver make or take a call on a mobile phone?",
     "optionA": "When stopped at lights",
-    "optionB": "When on speaker",
+    "optionB": "When held on speaker",
     "optionC": "For calls under 1 minute",
     "optionD": "When it is in a mounting",
     "correctAnswer": "D",
@@ -872,7 +872,7 @@
     "state": "ALL",
     "questionId": "AUWA-SPD-007",
     "category": "auwaSpeed",
-    "question": "A broken-down tow truck ahead in your lane has flashing lights on a multi-lane road. You should:",
+    "question": "A tow truck is stopped ahead in your lane with flashing lights on a multi-lane road. You should:",
     "optionA": "Stay in lane at the limit",
     "optionB": "Stop until it leaves",
     "optionC": "Move over and slow to 40",

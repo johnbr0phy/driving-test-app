@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free QLD Learner Licence Practice Test 2026 - Road Rules Test";
+const title = "QLD Learner Licence Practice Test 2026 - Free";
 const metaDescription =
-  "Free Queensland learner licence practice tests: 200 questions on giving way, L and P plate rules, demerit points, signs, lanes, speed limits and alcohol limits. All explained.";
+  "Free Queensland learner licence practice: 200 questions on giving way, road rules, signs and licence conditions for the written test and PrepL, all explained.";
 const description =
   "Free practice tests for the Queensland written road rules test and PrepL: 200 questions on giving way, learner and provisional licence rules, demerit points, signs, road markings and traffic lights, lanes, turning and parking, and speed, alcohol and safe driving. Every question is based on Queensland Transport and Main Roads rules and has an explanation.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/qld-learner-licence-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
       featureList: [
         "200 Queensland road rules practice questions",
         "4 practice tests covering giving way, licence rules, signs and safe driving",

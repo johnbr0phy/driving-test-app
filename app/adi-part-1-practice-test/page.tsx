@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free ADI Part 1 Practice Test 2026 - Driving Instructor Theory";
+const title = "ADI Part 1 Practice Test 2026 - Free Mock Tests";
 const metaDescription =
-  "Free ADI part 1 practice tests: 200 original questions across the four DVSA bands, from road procedure and signs to the law and instructional techniques. All explained.";
+  "Free ADI part 1 practice: 200 questions across the four bands, from road procedure to instructional techniques, every answer explained. Four mock tests.";
 const description =
   "Free ADI part 1 practice tests with 200 original questions across the four DVSA bands: road procedure; traffic signs and signals, car control, pedestrians and mechanical knowledge; the driving test, disabilities and the law; and publications and instructional techniques. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/adi-part-1-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
       featureList: [
         "200 ADI part 1 practice questions",
         "4 practice tests across all four DVSA bands",

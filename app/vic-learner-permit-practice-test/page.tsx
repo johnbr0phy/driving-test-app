@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free VicRoads Learners Test Practice 2026 - Victoria L Permit";
+const title = "VicRoads Learners Test Practice 2026 - Free";
 const metaDescription =
-  "Free Victoria learner permit practice tests: 200 questions from Road to Solo Driving on give way rules, speed limits, signs, alcohol, P plate rules and trams. All explained.";
+  "Free Victoria learner permit test practice: 200 questions from Road to Solo Driving on give way, hook turns, trams, speed and L plate rules, all explained.";
 const description =
   "Free practice tests for the VicRoads learner permit knowledge test, with 200 questions written from the Road to Solo Driving handbook: learner and P plate rules, alcohol, drugs and fatigue, safe driving and hazards, speed limits, signs, markings and parking, give way rules, turning, hook turns and freeways, and sharing the road with trams, bicycle riders and trucks. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/vic-learner-permit-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
       featureList: [
         "200 Victoria learner permit practice questions",
         "4 practice tests across eight Road to Solo Driving topics",

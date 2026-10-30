@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free SA Learner's Practice Test 2026 - Learner's Theory Test";
+const title = "SA Learner's Theory Test Practice 2026 - Free";
 const metaDescription =
-  "Free South Australia learner's theory test practice: 200 questions from The Driver's Handbook on giving way, school zones, trams, signs, L and P plates, demerits and BAC.";
+  "Free South Australia learner's theory test practice: 200 questions on giving way, P1 and P2 rules, speed limits and signs, every answer explained.";
 const description =
   "Free practice tests for the South Australia learner's theory test, with 200 questions from The Driver's Handbook: giving way at intersections and roundabouts, learner, P1 and P2 rules and demerit points, speed limits and following distance, signs, signals and road markings, lanes, turning and overtaking, sharing the road with trams, bike riders and trucks, parking, and alcohol, phones and safe driving. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/sa-learners-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
       featureList: [
         "200 SA learner's theory test practice questions",
         "4 practice tests across all eight Driver's Handbook topics",

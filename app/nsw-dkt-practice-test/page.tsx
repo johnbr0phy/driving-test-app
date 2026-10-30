@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free NSW DKT Practice Test 2026 - Driver Knowledge Test";
+const title = "NSW DKT Practice Test 2026 - Free Knowledge Test";
 const metaDescription =
-  "Free NSW DKT practice tests: 200 questions from the Road User Handbook on L and P plate rules, speed limits, BAC, giving way, roundabouts and parking. All explained.";
+  "Free NSW DKT practice: 200 questions from the Road User Handbook on give way, speed limits, alcohol, demerits and L and P plate rules, every answer explained.";
 const description =
   "Free NSW Driver Knowledge Test practice with 200 questions drawn from the Transport for NSW Road User Handbook: learner and P plate restrictions, demerit points, speed limits, alcohol, drugs, fatigue and mobile phones, giving way and roundabouts, sharing the road, overtaking and lanes, parking, and hazards. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/nsw-dkt-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
       featureList: [
         "200 NSW Driver Knowledge Test practice questions",
         "4 practice tests across every Road User Handbook topic",

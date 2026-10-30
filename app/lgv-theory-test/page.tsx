@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free LGV Theory Test Practice 2026 - UK Lorry Theory Test";
+const title = "LGV Theory Test Practice 2026 - Free Lorry Mock Tests";
 const metaDescription =
-  "Free UK lorry (LGV/HGV) theory test practice: 200 questions on drivers' hours, tachographs, air brakes, load security, weights and dimensions, the road and signs. All explained.";
+  "Free LGV theory test practice for Driver CPC part 1: 200 questions on drivers' hours, tachographs, loading, brakes and signs, every answer explained.";
 const description =
   "Free practice for the multiple-choice part of the DVSA lorry (LGV) theory test, with 200 original questions across the DVSA lorry topics: drivers' hours and tachographs, vehicle condition and braking systems, weights, dimensions and loading, the road and other road users, documents and the environment, incidents and traffic signs. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/lgv-theory-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
       featureList: [
         "200 LGV theory practice questions",
         "4 practice tests across all seven topic groups",

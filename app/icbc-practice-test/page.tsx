@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free ICBC Practice Test 2026 - BC Learner's Knowledge Test";
+const title = "ICBC Practice Test 2026 - Free BC Knowledge Test";
 const metaDescription =
-  "Free ICBC knowledge test practice for your B.C. Class 7L learner's licence: 200 questions on signs, right-of-way, sharing the road, impairment and GLP rules. All explained.";
+  "Free ICBC practice test for your Class 7L: 200 questions from Learn to Drive Smart on signs, right-of-way, speed and B.C. licence rules, all explained.";
 const description =
   "Free ICBC practice tests with 200 questions from Learn to Drive Smart for the British Columbia Class 7L knowledge test: signs, signals and road markings, intersections and right-of-way, lanes and parking, see-think-do, sharing the road, impairment and distraction, emergencies and the Graduated Licensing Program. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/icbc-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
       featureList: [
         "200 ICBC knowledge test practice questions",
         "4 practice tests of 50 questions, 40 to pass",

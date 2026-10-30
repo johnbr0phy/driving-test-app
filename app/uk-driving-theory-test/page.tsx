@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free UK Driving Theory Test Practice 2026 - Car Mock Tests";
+const title = "UK Driving Theory Test Practice 2026 - Free Mock Tests";
 const metaDescription =
-  "Free UK car theory test practice: 200 questions on the Highway Code, road signs, motorways, safety margins, hazards and vulnerable road users. Every answer explained.";
+  "Free UK car theory test practice: 200 original questions on the Highway Code, road signs, hazards and motorways, with every answer explained. Four mock tests.";
 const description =
   "Free practice for the DVSA car theory test multiple-choice part: 200 original questions on alertness and attitude, your vehicle and loading, safety margins, hazards and vulnerable road users, motorway rules, rules of the road, road and traffic signs, and documents, incidents and emergencies. Four 50-question mock tests with the real 43 of 50 pass mark and an explanation on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/uk-driving-theory-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
       featureList: [
         "200 car theory test practice questions",
         "4 mock tests of 50 questions with the 43 of 50 pass mark",

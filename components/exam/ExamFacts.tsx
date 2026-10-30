@@ -3,6 +3,10 @@ import { EXAM_FACTS } from "@/lib/examFacts";
 import { EXAM_LANDINGS_UPDATED_AT } from "@/lib/seoDates";
 import { getCatalogEntry } from "@/lib/testCatalog";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
+import { regionOfTest } from "@/lib/region";
+
+// Pages for the UK, Canada and Australia are written in that country's English.
+const LANGUAGE_BY_REGION = { US: "en-US", GLOBAL: "en-US", UK: "en-GB", CA: "en-CA", AU: "en-AU" } as const;
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -37,7 +41,7 @@ export function ExamFacts({ examId }: { examId: string }) {
     name: test.name,
     description: facts.answer,
     dateModified: EXAM_LANDINGS_UPDATED_AT,
-    inLanguage: "en-US",
+    inLanguage: LANGUAGE_BY_REGION[regionOfTest(examId)],
     isPartOf: { "@id": `${siteUrl}/#website` },
     publisher: { "@id": ORGANIZATION_ID },
     ...(facts.source ? { citation: facts.source.url } : {}),

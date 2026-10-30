@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free SAAQ Practice Test 2026 - Quebec Class 5 Knowledge Test";
+const title = "SAAQ Practice Test 2026 - Free Quebec Knowledge Test";
 const metaDescription =
-  "Free SAAQ practice tests: 200 questions on Quebec's Highway Safety Code, road signs, traffic lights, right of way, sharing the road and safe driving. All explained.";
+  "Free SAAQ practice test in English: 200 questions on the Highway Safety Code, road signs, right of way and demerit points in Quebec, every answer explained.";
 const description =
   "Free SAAQ practice tests with 200 questions for the Quebec Class 5 knowledge test: licences and demerit points, Highway Safety Code rules, road signs, traffic lights and pavement markings, intersections and right of way, sharing the road, alcohol, drugs, fatigue and distraction, and driving techniques. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/saaq-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
       featureList: [
         "200 SAAQ practice questions",
         "4 practice tests covering all three parts of the knowledge test",

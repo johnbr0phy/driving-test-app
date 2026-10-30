@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Manitoba Class 5 Practice Test 2026 - MPI Knowledge Test";
+const title = "Manitoba Class 5 Practice Test 2026 - Free MPI Test";
 const metaDescription =
-  "Free Manitoba Class 5 knowledge test practice: 200 questions from the MPI Driver's Handbook on signs, right-of-way, GDL rules, winter driving and impaired driving. All explained.";
+  "Free Manitoba Class 5 practice test: 200 questions from the MPI Driver's Handbook on signs, right-of-way, GDL stages and impaired driving, all explained.";
 const description =
   "Free Manitoba Class 5 learner knowledge test practice with 200 questions from the MPI Driver's Handbook: signs, signals and pavement markings, right-of-way and turns, sharing the road, Graduated Driver Licensing rules, speed and parking, poor conditions and emergencies, and impaired and distracted driving. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/manitoba-class-5-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
       featureList: [
         "200 Manitoba Class 5 knowledge test practice questions",
         "4 practice tests across all seven handbook topics",

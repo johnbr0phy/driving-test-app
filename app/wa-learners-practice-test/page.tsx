@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free WA Learner's Practice Test 2026 - Road Rules Theory Test";
+const title = "WA Learner's Practice Test 2026 - Free Theory Test";
 const metaDescription =
-  "Free WA learner's permit practice tests: 200 questions from the Drive Safe handbook on give way, roundabouts, signs, speed limits, BAC, P plates and demerits. All explained.";
+  "Free WA road rules theory test practice: 200 questions from Drive Safe on give way, roundabouts, P plates, demerits and BAC limits, every answer explained.";
 const description =
   "Free practice tests for the Western Australia learner's permit Computerised Theory Test, with 200 questions from the Drive Safe handbook: licences, P plates and demerit points, alcohol, fatigue and seat belts, speed and following distance, signs, signals and road markings, intersections and roundabouts, lanes and freeways, sharing the road, and parking and emergencies. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/wa-learners-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
       featureList: [
         "200 WA learner's theory test practice questions",
         "4 practice tests across all eight Drive Safe topics",

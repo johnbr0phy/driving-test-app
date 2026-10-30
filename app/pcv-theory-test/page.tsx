@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free PCV Theory Test 2026 - Bus & Coach Practice Questions";
+const title = "PCV Theory Test Practice 2026 - Free Bus and Coach";
 const metaDescription =
-  "Free UK bus and coach (PCV) theory test practice: 200 questions on drivers' hours, tachographs, passengers, brakes, the road and traffic signs. Every answer explained.";
+  "Free PCV theory test practice for Driver CPC part 1: 200 questions on drivers' hours, passengers, vehicle safety and signs, every answer explained.";
 const description =
   "Free practice for the DVSA bus and coach (PCV) theory test, the multiple-choice part of Driver CPC Part 1: 200 original questions on drivers' hours and tachographs, vehicle size and brakes, carrying passengers, the driver and the environment, the road and other road users, incidents and emergencies, and road and traffic signs. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/pcv-theory-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
       featureList: [
         "200 bus and coach theory practice questions",
         "4 practice tests across all seven topic areas",

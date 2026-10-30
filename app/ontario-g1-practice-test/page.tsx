@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Ontario G1 Practice Test 2026 - MTO Knowledge Test Prep";
+const title = "Ontario G1 Practice Test 2026 - Free Knowledge Test";
 const metaDescription =
-  "Free Ontario G1 practice tests: 200 questions on road signs, traffic lights, right-of-way, graduated licensing, demerit points and safe driving, from the MTO Driver's Handbook.";
+  "Free Ontario G1 practice test: 200 questions from the Official MTO Driver's Handbook on signs, rules of the road, demerits and G1 conditions, all explained.";
 const description =
   "Free Ontario G1 practice tests with 200 questions from the Official MTO Driver's Handbook: traffic signs, lights and pavement markings, intersections and right-of-way, sharing the road, graduated licensing, demerit points and alcohol rules, safe driving and parking, and night, weather and emergencies. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/ontario-g1-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
       featureList: [
         "200 Ontario G1 practice questions",
         "4 practice tests on signs and rules of the road",

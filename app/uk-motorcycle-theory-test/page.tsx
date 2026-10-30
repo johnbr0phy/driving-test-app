@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free UK Motorcycle Theory Test 2026 - DVSA Practice Questions";
+const title = "UK Motorcycle Theory Test Practice 2026 - Free";
 const metaDescription =
-  "Free UK motorcycle theory test practice: 200 questions on the Highway Code, road signs, safety margins, your motorcycle, vulnerable road users and licences. All explained.";
+  "Free UK motorcycle theory test practice: 200 original questions on riding, hazards, the Highway Code and signs, every answer explained. Four mock tests.";
 const description =
   "Free practice for the multiple-choice part of the DVSA motorcycle theory test: 200 original questions on alertness and hazards, your motorcycle and loading, safety margins and handling, vulnerable road users, rules of the road and motorways, road and traffic signs, and documents and emergencies. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/uk-motorcycle-theory-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
       featureList: [
         "200 motorcycle theory practice questions",
         "4 practice tests across all seven DVSA topic groups",

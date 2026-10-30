@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free Alberta Class 7 Practice Test 2026 - Learner's Licence";
+const title = "Alberta Class 7 Practice Test 2026 - Free Learner Test";
 const metaDescription =
-  "Free Alberta Class 7 practice tests: 200 questions from the 2026 Driver's Guide on signs, signals, right-of-way, GDL rules, demerits and impaired driving. All explained.";
+  "Free Alberta Class 7 practice test: 200 questions from the Alberta Driver's Guide on signs, right-of-way, demerits and GDL rules, every answer explained.";
 const description =
   "Free Alberta Class 7 learner's licence practice tests with 200 questions from the Alberta Driver's Guide (cars and light trucks, Spring 2026): licensing and GDL rules, traffic signals and pavement markings, signs and speed limits, intersections and right-of-way, driving basics and parking, emergencies, sharing the road, and impaired driving and demerits. Explanations on every question.";
 
@@ -48,7 +48,7 @@ const jsonLd = {
       url: `${siteUrl}/alberta-class-7-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
       featureList: [
         "200 Alberta Class 7 practice questions",
         "4 practice tests across every chapter of the Driver's Guide",

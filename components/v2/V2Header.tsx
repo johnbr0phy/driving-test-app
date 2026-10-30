@@ -14,6 +14,8 @@ import { TestSwitcher } from "@/components/TestSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { AdminLink } from "@/components/AdminLink";
 import { BrandLockup } from "@/components/BrandLockup";
+import { HeaderTestName } from "@/components/HeaderTestName";
+import { getCatalogEntry } from "@/lib/testCatalog";
 import { v2DarkThemeStyle } from "@/lib/v2/darkTheme";
 import { TeachLink } from "@/components/TeachLink";
 import { ExamV2Config } from "@/lib/v2/types";
@@ -34,13 +36,15 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
     ...v2DarkThemeStyle(exam.theme),
   } as CSSProperties;
   const displayPhotoURL = photoURL || user?.photoURL;
+  const entry = getCatalogEntry(exam.id);
   // The dashboard's own save card (GuestSaveCard) already offers sign in, so the header leaves it out there.
   const onDashboard = pathname === `${exam.slug}/dashboard`;
 
   return (
     <header className="border-b bg-white dark:bg-gray-900" style={style}>
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="container relative mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
         <BrandLockup />
+        {entry && <HeaderTestName entry={entry} />}
         <div className="flex items-center gap-1 sm:gap-2">
           <TestSwitcher />
           <ThemeToggle />

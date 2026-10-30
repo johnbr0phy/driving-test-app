@@ -1,0 +1,83 @@
+{
+  "id": "cans",
+  "stateCode": "CANS",
+  "idBase": 11800,
+  "prefix": "CANS-",
+  "slug": "/nova-scotia-learners",
+  "landingPath": "/nova-scotia-learners-practice-test",
+  "dataFile": "data/nova-scotia-learners-questions.json",
+  "name": "Nova Scotia Learner's Practice Test",
+  "shortName": "NS Class 7",
+  "examLabel": "Nova Scotia Class 7",
+  "fullName": "Nova Scotia Class 7 learner's licence knowledge test",
+  "icon": "car",
+  "testCount": 5,
+  "questionsPerTest": 40,
+  "passPct": 80,
+  "outlineComment": "Nova Scotia Driver's Handbook (novascotia.ca, 2017 reprint with GDL and emergency-vehicle inserts; still the official study guide in October 2026) and novascotia.ca 'Take a driver knowledge test: Learner's Licence (class 7)': two parts, rules of the road and road sign recognition, 20 multiple-choice questions each, 16 of 20 on each part to pass, 30 minutes per part. Each practice test is 20 sign items (regulatory, warning, work zone, lights and markings) and 20 rules items split by the handbook chapters. Learner and GDL rules follow the current Registry pages (2-year learner licence, 12 or 9 months before the road test), and child seats and the one-metre cyclist gap follow the Traffic Safety Act in force October 19, 2026.",
+  "categories": [
+    {
+      "key": "cansRegSigns",
+      "label": "Regulatory Signs",
+      "perTest": 6,
+      "segment": "REG",
+      "pool": 30
+    },
+    {
+      "key": "cansWarnSigns",
+      "label": "Warning Signs",
+      "perTest": 6,
+      "segment": "WRN",
+      "pool": 30
+    },
+    {
+      "key": "cansWorkSigns",
+      "label": "Work Zone & Guide Signs",
+      "perTest": 3,
+      "segment": "WRK",
+      "pool": 15
+    },
+    {
+      "key": "cansSignals",
+      "label": "Lights & Pavement Markings",
+      "perTest": 5,
+      "segment": "SIG",
+      "pool": 25
+    },
+    {
+      "key": "cansLicence",
+      "label": "Licensing, GDL & Demerits",
+      "perTest": 4,
+      "segment": "LIC",
+      "pool": 20
+    },
+    {
+      "key": "cansRightOfWay",
+      "label": "Intersections & Right-of-Way",
+      "perTest": 4,
+      "segment": "ROW",
+      "pool": 20
+    },
+    {
+      "key": "cansDriving",
+      "label": "Speed, Passing & Lanes",
+      "perTest": 5,
+      "segment": "DRV",
+      "pool": 25
+    },
+    {
+      "key": "cansSharing",
+      "label": "Parking & Sharing the Road",
+      "perTest": 4,
+      "segment": "SHR",
+      "pool": 20
+    },
+    {
+      "key": "cansConditions",
+      "label": "Night, Weather & Emergencies",
+      "perTest": 3,
+      "segment": "CON",
+      "pool": 15
+    }
+  ]
+}

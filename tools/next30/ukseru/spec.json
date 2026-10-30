@@ -1,0 +1,37 @@
+{
+  "id": "ukseru",
+  "stateCode": "UKSERU",
+  "idBase": 11900,
+  "prefix": "UKSERU-",
+  "slug": "/seru",
+  "landingPath": "/seru-practice-test",
+  "dataFile": "data/seru-questions.json",
+  "name": "SERU Practice Test",
+  "shortName": "SERU",
+  "examLabel": "SERU assessment",
+  "fullName": "SERU assessment (London private hire driver Safety, Equality and Regulatory Understanding)",
+  "icon": "car",
+  "testCount": 5,
+  "questionsPerTest": 36,
+  "passPct": 60,
+  "categories": [
+    {"key": "serLicensing", "label": "London PHV Driver Licensing", "perTest": 6, "pool": 32, "segment": "LIC"},
+    {"key": "serVehicles", "label": "Licensing Requirements for PHVs", "perTest": 2, "pool": 12, "segment": "VEH"},
+    {"key": "serJourneys", "label": "Carrying Out Private Hire Journeys", "perTest": 5, "pool": 27, "segment": "JOU"},
+    {"key": "serSafety", "label": "Staying Safe", "perTest": 4, "pool": 22, "segment": "SAF"},
+    {"key": "serBehaviour", "label": "Driver Behaviour", "perTest": 3, "pool": 17, "segment": "BEH"},
+    {"key": "serParking", "label": "Driving & Parking in London", "perTest": 5, "pool": 27, "segment": "PRK"},
+    {"key": "serDriving", "label": "Safer Driving", "perTest": 4, "pool": 22, "segment": "DRV"},
+    {"key": "serEquality", "label": "Equality & Disability", "perTest": 4, "pool": 22, "segment": "EQU"},
+    {"key": "serSafeguarding", "label": "Safeguarding Children & Adults at Risk", "perTest": 2, "pool": 12, "segment": "SGD"},
+    {"key": "serRideshare", "label": "Ridesharing", "perTest": 1, "pool": 7, "segment": "RSH"}
+  ],
+  "notes": "5 tests x 36 = 180 items in tests; the last 2 items of every pool (20 in all) appear only in training sets. Pools are 5x per-test plus 2 spares.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 11901, "name": "Licensing & Vehicles", "categories": ["serLicensing", "serVehicles"], "size": 44},
+    {"setNumber": 2, "id": 11902, "name": "Journeys & Ridesharing", "categories": ["serJourneys", "serRideshare"], "size": 34},
+    {"setNumber": 3, "id": 11903, "name": "Staying Safe & Driver Behaviour", "categories": ["serSafety", "serBehaviour"], "size": 39},
+    {"setNumber": 4, "id": 11904, "name": "Driving & Parking in London", "categories": ["serParking", "serDriving"], "size": 49},
+    {"setNumber": 5, "id": 11905, "name": "Equality & Safeguarding", "categories": ["serEquality", "serSafeguarding"], "size": 34}
+  ]
+}

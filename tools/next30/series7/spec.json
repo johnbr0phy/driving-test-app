@@ -1,0 +1,36 @@
+{
+  "id": "series7",
+  "stateCode": "SERIES7",
+  "idBase": 11500,
+  "prefix": "SERIES7-",
+  "slug": "/series-7",
+  "landingPath": "/series-7-practice-test",
+  "dataFile": "data/series-7-questions.json",
+  "name": "Series 7 Practice Test",
+  "shortName": "Series 7",
+  "examLabel": "Series 7 exam",
+  "fullName": "FINRA Series 7 General Securities Representative exam",
+  "icon": "building",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 72,
+  "categories": [
+    {"key": "s7Business", "label": "Seeking Business for the Broker-Dealer", "perTest": 4, "pool": 16, "segment": "BUS", "function": "F1"},
+    {"key": "s7Accounts", "label": "Opening Accounts", "perTest": 4, "pool": 16, "segment": "ACC", "function": "F2"},
+    {"key": "s7Equity", "label": "Equity Securities", "perTest": 6, "pool": 24, "segment": "EQU", "function": "F3"},
+    {"key": "s7Debt", "label": "Debt & Municipal Securities", "perTest": 9, "pool": 36, "segment": "DEB", "function": "F3"},
+    {"key": "s7Options", "label": "Options", "perTest": 8, "pool": 32, "segment": "OPT", "function": "F3"},
+    {"key": "s7Funds", "label": "Packaged Products", "perTest": 6, "pool": 24, "segment": "FND", "function": "F3"},
+    {"key": "s7Suitability", "label": "Recommendations, Tax & Retirement", "perTest": 7, "pool": 28, "segment": "SUI", "function": "F3"},
+    {"key": "s7Trading", "label": "Orders, Margin & Confirmations", "perTest": 6, "pool": 24, "segment": "TRD", "function": "F4"}
+  ],
+  "notes": "FINRA's 9/11/91/14 of 125 (7.2/8.8/72.8/11.2%) scaled to 50: F1 4, F2 4, F3 36 (equity 6, debt and munis 9, options 8, packaged products 6, recommendations/tax/retirement 7), F4 6. Pools are exactly 4x per-test counts, so no item repeats across tests.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 11501, "name": "Prospecting & Opening Accounts", "categories": ["s7Business", "s7Accounts"], "size": 32},
+    {"setNumber": 2, "id": 11502, "name": "Equity Securities", "categories": ["s7Equity"], "size": 24},
+    {"setNumber": 3, "id": 11503, "name": "Debt & Municipal Securities", "categories": ["s7Debt"], "size": 36},
+    {"setNumber": 4, "id": 11504, "name": "Options", "categories": ["s7Options"], "size": 32},
+    {"setNumber": 5, "id": 11505, "name": "Packaged Products & Recommendations", "categories": ["s7Funds", "s7Suitability"], "size": 52},
+    {"setNumber": 6, "id": 11506, "name": "Orders, Margin & Confirmations", "categories": ["s7Trading"], "size": 24}
+  ]
+}

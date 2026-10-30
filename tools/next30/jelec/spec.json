@@ -1,0 +1,35 @@
+{
+  "id": "jelec",
+  "stateCode": "JELEC",
+  "idBase": 11000,
+  "prefix": "JELEC-",
+  "slug": "/journeyman-electrician",
+  "landingPath": "/journeyman-electrician-practice-test",
+  "dataFile": "data/journeyman-electrician-questions.json",
+  "name": "Journeyman Electrician Practice Test",
+  "shortName": "Journeyman Electrician",
+  "examLabel": "journeyman electrician exam",
+  "fullName": "Journeyman electrician license exam (2023 NEC)",
+  "icon": "hardhat",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "jelecGeneral", "label": "General Requirements & Definitions", "perTest": 5, "pool": 20, "segment": "GEN"},
+    {"key": "jelecTheory", "label": "Electrical Theory & Calculations", "perTest": 5, "pool": 20, "segment": "THY"},
+    {"key": "jelecBranch", "label": "Branch Circuits, Feeders & Load Calculations", "perTest": 6, "pool": 24, "segment": "BRF"},
+    {"key": "jelecServices", "label": "Services & Overcurrent Protection", "perTest": 5, "pool": 20, "segment": "SVC"},
+    {"key": "jelecGround", "label": "Grounding & Bonding", "perTest": 7, "pool": 28, "segment": "GRD"},
+    {"key": "jelecWiring", "label": "Wiring Methods & Materials", "perTest": 8, "pool": 32, "segment": "WIR"},
+    {"key": "jelecEquip", "label": "Equipment for General Use", "perTest": 4, "pool": 16, "segment": "EQP"},
+    {"key": "jelecMotors", "label": "Motors & Air Conditioning", "perTest": 5, "pool": 20, "segment": "MOT"},
+    {"key": "jelecSpecial", "label": "Special Occupancies, Equipment & Systems", "perTest": 5, "pool": 20, "segment": "SPC"}
+  ],
+  "trainingSets": [
+    {"setNumber": 1, "id": 11001, "name": "Code Basics & Electrical Theory", "categories": ["jelecGeneral", "jelecTheory"], "size": 40},
+    {"setNumber": 2, "id": 11002, "name": "Branch Circuits, Feeders & Services", "categories": ["jelecBranch", "jelecServices"], "size": 44},
+    {"setNumber": 3, "id": 11003, "name": "Grounding & Bonding", "categories": ["jelecGround"], "size": 28},
+    {"setNumber": 4, "id": 11004, "name": "Wiring Methods & Materials", "categories": ["jelecWiring"], "size": 32},
+    {"setNumber": 5, "id": 11005, "name": "Equipment, Motors & Special Occupancies", "categories": ["jelecEquip", "jelecMotors", "jelecSpecial"], "size": 56}
+  ]
+}

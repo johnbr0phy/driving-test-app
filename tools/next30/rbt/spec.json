@@ -1,0 +1,32 @@
+{
+  "id": "rbt",
+  "stateCode": "RBT",
+  "idBase": 10800,
+  "prefix": "RBT-",
+  "slug": "/rbt",
+  "landingPath": "/rbt-practice-test",
+  "dataFile": "data/rbt-questions.json",
+  "name": "RBT Practice Test",
+  "shortName": "RBT",
+  "examLabel": "RBT exam",
+  "fullName": "Registered Behavior Technician (RBT) exam",
+  "icon": "target",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {"key": "rbtData", "label": "Data Collection & Graphing", "perTest": 9, "pool": 36, "segment": "DAT"},
+    {"key": "rbtAssess", "label": "Behavior Assessment", "perTest": 5, "pool": 20, "segment": "ASM"},
+    {"key": "rbtAcq", "label": "Behavior Acquisition", "perTest": 13, "pool": 52, "segment": "ACQ"},
+    {"key": "rbtReduce", "label": "Behavior Reduction", "perTest": 9, "pool": 36, "segment": "RED"},
+    {"key": "rbtDoc", "label": "Documentation & Reporting", "perTest": 7, "pool": 28, "segment": "DOC"},
+    {"key": "rbtEthics", "label": "Ethics", "perTest": 7, "pool": 28, "segment": "ETH"}
+  ],
+  "notes": "RBT TCO (3rd ed.) scored counts 13/8/19/14/10/11 of 75, scaled to 50 per test: 9/5/13/9/7/7. Pools are exactly 4x per-test, so no item repeats across tests.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 10801, "name": "Data Collection & Assessment", "categories": ["rbtData", "rbtAssess"], "size": 56},
+    {"setNumber": 2, "id": 10802, "name": "Behavior Acquisition", "categories": ["rbtAcq"], "size": 52},
+    {"setNumber": 3, "id": 10803, "name": "Behavior Reduction", "categories": ["rbtReduce"], "size": 36},
+    {"setNumber": 4, "id": 10804, "name": "Documentation, Reporting & Ethics", "categories": ["rbtDoc", "rbtEthics"], "size": 56}
+  ]
+}

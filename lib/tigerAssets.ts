@@ -20,6 +20,8 @@ export const TIGER_EXAM_IDS = [
   "naplan", "nswsel", "auwhite", "naplan7", "ocnsw", "vicsel",
   "hscmaths", "aursa", "aurcg", "aufss", "aufirstaid", "auforklift",
   "auwah",
+  // Citizenship and project management: complete eight-expression sets.
+  "uklitu", "cacit", "aucit", "pmp",
 ] as const;
 
 export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;

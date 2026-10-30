@@ -564,7 +564,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Next step", value: "G2 road test after 12 months (8 with approved driver ed)" },
       { label: "Given by", value: "DriveTest, for the Ontario Ministry of Transportation" },
     ],
-    basedOn: "the Official MTO Driver's Handbook (updated March 2026)",
+    basedOn: "the Official MTO Driver's Handbook (chapters updated through September 2026)",
     source: { name: "Official MTO Driver's Handbook", url: "https://www.ontario.ca/document/official-mto-drivers-handbook" },
   },
   caab: {

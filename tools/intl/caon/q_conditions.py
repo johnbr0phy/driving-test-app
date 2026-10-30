@@ -1,6 +1,6 @@
 # caonConditions: night, bad weather, skids, emergencies and collisions.
 ITEMS = [
-("Your car begins to skid on a slippery road. What should you do first?",
+("Your car begins to skid on a slippery road. You should:",
  "Steer where you want to go", "Steer opposite the skid", "Brake as hard as you can", "Steer straight ahead",
  "Ease off the accelerator or brake and steer in the direction you want to go, without oversteering. Hard braking makes the skid worse."),
 ("What is hydroplaning?",

@@ -46,7 +46,7 @@ ITEMS = [
  "Once they clear the whole road", "As soon as they pass your lane", "When they reach the centre line", "After the yellow lights stop",
  "Drivers and cyclists must yield and wait until pedestrians have completely crossed the road and are on the sidewalk before proceeding."),
 ("A school crossing guard is showing a stop sign. You may go when:",
- "Everyone has cleared the road", "The children pass your lane", "The guard lowers the sign", "The children reach the sidewalk",
+ "Everyone has cleared the road", "The children pass your lane", "The guard lowers the sign", "The children reach the centre",
  "Stay stopped until all people, including the school crossing guard, have cleared the entire roadway and it is safe to proceed."),
 ("You must not pass another vehicle within how many metres of a pedestrian crossover?",
  "30 metres", "15 metres", "50 metres", "100 metres",

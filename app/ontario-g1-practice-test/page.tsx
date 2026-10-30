@@ -82,7 +82,7 @@ const jsonLd = {
           name: "What do I need to bring to the G1 test?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You must be at least 16. Bring original identification showing your legal name and full date of birth, payment for the fee (cash, debit or credit) and your glasses or contacts if you need them to drive, since you also take a vision test. The application fee covers the knowledge test, your first road test and a five-year licence.",
+            text: "You must be at least 16. Bring original identification showing your legal name and full date of birth, payment for the fee (cash, debit or credit) and your glasses or contacts if you need them to drive, since you also take a vision test. Since May 11, 2026 you also declare that Ontario is your primary residence and that you are in Canada legally. The application fee covers the knowledge test, your first road test and a five-year licence.",
           },
         },
         {
@@ -280,7 +280,7 @@ export default function OntarioG1LandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What do I need to bring to the G1 test?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              You must be at least 16. Bring original identification showing your legal name and full date of birth, payment for the fee (cash, debit or credit) and your glasses or contacts if you need them to drive, since you also take a vision test. The application fee covers the knowledge test, your first road test and a five-year licence.
+              You must be at least 16. Bring original identification showing your legal name and full date of birth, payment for the fee (cash, debit or credit) and your glasses or contacts if you need them to drive, since you also take a vision test. Since May 11, 2026 you also declare that Ontario is your primary residence and that you are in Canada legally. The application fee covers the knowledge test, your first road test and a five-year licence.
             </p>
           </div>
           <div>

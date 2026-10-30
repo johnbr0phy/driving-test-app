@@ -2229,7 +2229,7 @@ const caon: ExamConfig = {
   testCount: 4,
   questionsPerTest: 50,
   passPct: 80,
-  // The Official MTO Driver's Handbook (ontario.ca, pages updated March 31, 2026) and
+  // The Official MTO Driver's Handbook (ontario.ca, chapters updated March to September 2026) and
   // the DriveTest knowledge test rules: multiple choice, a road signs section and a rules of the
   // road section, 80% total score to pass, not timed. DriveTest publishes no question count (40,
   // 20 per section, is the usual report). Here signs plus lights and markings are 22 of 50 and the

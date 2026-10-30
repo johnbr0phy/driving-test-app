@@ -13,7 +13,7 @@ import {
 } from "@/lib/region";
 import { useStore } from "@/store/useStore";
 
-const FLAGS: Record<Region, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", AU: "🇦🇺" };
+export const FLAGS: Record<Region, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", AU: "🇦🇺" };
 
 /** The saved country, if any (client only). */
 export function readRegionCookie(): Region | null {
@@ -51,6 +51,13 @@ function setPinnedTop(top: number) {
 
 function writeCookie(name: string, value: string) {
   document.cookie = `${name}=${encodeURIComponent(value)}; path=/; max-age=${REGION_COOKIE_MAX_AGE}; samesite=lax`;
+}
+
+/** Save a picked country: the account (useStore), this device's cookie, marked as chosen. Shared with the All tests menu and the footer. */
+export function saveRegion(r: Region) {
+  useStore.getState().setRegion(r);
+  writeCookie(REGION_COOKIE, r);
+  writeCookie(REGION_SOURCE_COOKIE, "chosen");
 }
 
 /**
@@ -106,9 +113,7 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
   }, []);
 
   function save(r: Region) {
-    useStore.getState().setRegion(r);
-    writeCookie(REGION_COOKIE, r);
-    writeCookie(REGION_SOURCE_COOKIE, "chosen");
+    saveRegion(r);
     setSource("chosen");
     onChange?.(r);
   }

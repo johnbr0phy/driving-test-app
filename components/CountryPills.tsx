@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useTransition } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import {
   REGIONS,
@@ -25,6 +25,11 @@ function readCookie(name: string): string | null {
   return m ? decodeURIComponent(m[1]) : null;
 }
 
+// Where the pills sat on screen when a country was picked. Module scope, not a
+// ref: on the homepage the new country is a different route, so the pills
+// remount before they can restore it.
+let pinnedTop: number | null = null;
+
 function writeCookie(name: string, value: string) {
   document.cookie = `${name}=${encodeURIComponent(value)}; path=/; max-age=${REGION_COOKIE_MAX_AGE}; samesite=lax`;
 }
@@ -41,7 +46,26 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
   const [pending, startTransition] = useTransition();
   useEffect(() => setSource(readCookie(REGION_SOURCE_COOKIE)), []);
 
+  // A new country changes the content above the pills (the homepage), so keep
+  // the pills where the visitor's thumb is instead of letting the page jump.
+  const box = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const target = pinnedTop;
+    if (target === null) return;
+    pinnedTop = null;
+    // Re-pin for a moment while the new content and its images settle.
+    const pin = () => box.current && window.scrollBy(0, box.current.getBoundingClientRect().top - target);
+    pin();
+    const frame = requestAnimationFrame(pin);
+    const timers = [100, 300, 600].map((ms) => setTimeout(pin, ms));
+    return () => {
+      cancelAnimationFrame(frame);
+      timers.forEach(clearTimeout);
+    };
+  }, [current]);
+
   function pick(r: Region) {
+    pinnedTop = onChange ? null : box.current?.getBoundingClientRect().top ?? null;
     writeCookie(REGION_COOKIE, r);
     writeCookie(REGION_SOURCE_COOKIE, "chosen");
     setSource("chosen");
@@ -57,7 +81,7 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
         : null;
 
   return (
-    <div className="flex flex-col items-center">
+    <div ref={box} className="flex flex-col items-center">
       <div
         role="radiogroup"
         aria-label="Show tests for"

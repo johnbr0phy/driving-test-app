@@ -9,7 +9,6 @@ import { CountUp } from "@/components/CountUp";
 import { getPopularTests } from "@/lib/server/popularTests";
 import { ORGANIZATION_ID, WEBSITE_ID } from "@/lib/siteSchema";
 import { states } from "@/data/states";
-import { CountryPills } from "@/components/CountryPills";
 import { NON_DRIVING_TESTS, REGION_HOME, Region, regionOfTest, regionInfo } from "@/lib/region";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
@@ -34,7 +33,7 @@ export const homeMetadata: Metadata = {
   twitter: { card: "summary_large_image", title, description: metaDescription, images: ["/og-tests.png"] },
 };
 
-const faqs = [
+const usFaqs = [
   {
     q: "What is Tigertest?",
     a: `Tigertest is a free practice test site for ${examCount} exams, from the DMV permit test in every state to the SAT, ACT, nursing, healthcare, IT, trade and licensing exams. Each test follows the real exam's published outline, and every question explains the right answer.`,
@@ -57,7 +56,38 @@ const faqs = [
   },
 ];
 
-const jsonLd = {
+// Outside the US the FAQ talks about that country's tests, never the DMV.
+const AUTHORITY: Record<Exclude<Region, "US">, string> = {
+  UK: "the DVSA",
+  CA: "any provincial licensing authority",
+  AU: "any state road authority",
+};
+
+function faqsFor(region: Region) {
+  if (region === "US") return usFaqs;
+  const local = TEST_CATALOG.filter((t) => regionOfTest(t.id) === region && !NON_DRIVING_TESTS.has(t.id)).length;
+  const where = regionInfo(region).inName;
+  return [
+    {
+      q: "What is Tigertest?",
+      a: `Tigertest is a free practice test site. For ${where} it has ${local} driving tests written from the official handbooks, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`,
+    },
+    {
+      q: "Is Tigertest free?",
+      a: `Yes. Every test for ${where} is free, with no subscription.`,
+    },
+    usFaqs[2],
+    usFaqs[3],
+    {
+      q: "Is Tigertest an official test?",
+      a: `No. Tigertest is independent and is not affiliated with ${AUTHORITY[region]} or any testing company. The questions are original and written from the official handbooks.`,
+    },
+  ];
+}
+
+function jsonLdFor(region: Region) {
+  const faqs = faqsFor(region);
+  return {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -88,7 +118,8 @@ const jsonLd = {
       })),
     },
   ],
-};
+  };
+}
 
 const popularStateSlugs = [
   "california", "texas", "florida", "new-york", "pennsylvania", "illinois",
@@ -123,18 +154,16 @@ export async function HomePage({ region }: { region: Region }) {
     ...TEST_CATALOG.filter((t) => regionOfTest(t.id) === "GLOBAL").sort(byAnswered),
   ];
   const home = us ? null : REGION_HOME[region];
+  const faqs = faqsFor(region);
 
   return (
     <div className="flex-1 bg-white dark:bg-gray-900">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFor(region)) }} />
 
       {/* Hero */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
-        <div className="relative max-w-4xl mx-auto px-6 pt-8 pb-12 md:pt-10 md:pb-16 text-center">
-          <div className="mb-8 md:mb-10">
-            <CountryPills current={region} />
-          </div>
+        <div className="relative max-w-4xl mx-auto px-6 pt-14 pb-12 md:pt-20 md:pb-16 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 tracking-tight mb-6">
             Free practice tests that get you to a pass
           </h1>
@@ -255,6 +284,9 @@ export async function HomePage({ region }: { region: Region }) {
         </>
       )}
 
+      {/* How it works and the Reddit quotes are about the DMV, so they stay on the US page */}
+      {us && (
+        <>
       {/* How it works: real screens from the app, one step per row */}
       <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-14 md:mb-20">
@@ -348,13 +380,21 @@ export async function HomePage({ region }: { region: Region }) {
           </div>
         </div>
       </div>
+        </>
+      )}
 
       {/* Every test */}
       <div id="all-tests" className="max-w-5xl mx-auto px-6 py-16 md:py-24 scroll-mt-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-8">
-          Every practice test
+          {us ? "Every practice test" : `Practice tests for ${regionInfo(region).inName}`}
         </h2>
-        <TestCatalogGrid showPopular={false} nested region={region} />
+        <TestCatalogGrid showPopular={false} nested region={region} regionPicker localOnly />
+        {!us && (
+          <p className="mt-10 text-center text-sm text-gray-600 dark:text-gray-300">
+            Moving to the US or studying for a US exam?{" "}
+            <Link href="/tests" className="font-medium text-brand-dark hover:underline">See all {examCount} tests</Link>
+          </p>
+        )}
       </div>
 
       {/* FAQ */}

@@ -34,7 +34,7 @@ const dmvCopy: Record<string, { title: (state?: string) => string; description: 
 
 // Versioned card copy is separate from longer search descriptions and bank counts.
 export function getShareCard(id: string, language = "en"): ShareCard | undefined {
-  if (hubs[id]) {
+  if (Object.prototype.hasOwnProperty.call(hubs, id)) {
     const card = hubs[id];
     const split = card.description.indexOf(". ");
     return { ...card, descriptionLines: split >= 0 ? [card.description.slice(0, split + 1), card.description.slice(split + 2)] : undefined };
@@ -42,7 +42,7 @@ export function getShareCard(id: string, language = "en"): ShareCard | undefined
   if (id === "dmv" || id.startsWith("dmv-")) {
     const state = id === "dmv" ? undefined : states.find(s => s.code.toLowerCase() === id.slice(4));
     if (id !== "dmv" && !state) return undefined;
-    const copy = dmvCopy[language] ?? dmvCopy.en;
+    const copy = Object.prototype.hasOwnProperty.call(dmvCopy, language) ? dmvCopy[language] : dmvCopy.en;
     return { ...general, title: copy.title(state?.name), description: copy.description, footer: copy.footer, mascots: ["dmv"] };
   }
   const exam = TEST_CATALOG.find(e => e.id === id) ?? getExamById(id);

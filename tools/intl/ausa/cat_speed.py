@@ -32,7 +32,7 @@ ITEMS = [
      "You do not need to slow to 25 km/h when the emergency zone is on the other side of a road divided by a median strip. Take care all the same."),
     ("What speed must you not exceed at a koala crossing while its lights are flashing?",
      "25 km/h", "40 km/h", "10 km/h", "50 km/h",
-     "At a koala crossing a 25 km/h limit applies while the lights are flashing, and you must give way to anyone using it."),
+     "At a koala crossing a 25 km/h limit applies while the twin yellow lights are flashing, and you must stop for anyone using or about to use the crossing."),
     ("At an emu crossing with the flags out, what is the limit when children are present?",
      "25 km/h", "40 km/h", "15 km/h", "50 km/h",
      "When the CHILDREN CROSSING flags are displayed and children are present, you must not exceed 25 km/h."),

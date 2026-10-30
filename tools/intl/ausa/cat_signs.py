@@ -65,7 +65,7 @@ ITEMS = [
      "Lane arrows show the direction traffic in that lane must take. Get into the right lane early for where you want to go."),
     ("Two yellow lights flashing alternately by white stripes across the road show:",
      "A pedestrian crossing", "A railway level crossing", "A school bus stop ahead", "Roadworks ahead",
-     "A pedestrian (zebra) crossing has white stripes and signs, and may have two yellow lights flashing alternately. Give way to anyone on it."),
+     "Twin yellow lights flashing beside a striped crossing mark a koala crossing, a pedestrian crossing near a school. While they flash, keep to 25 km/h and stop for anyone using or about to use it."),
     ("A Give Way to Buses sign on the back of a bus means:",
      "Give way when it pulls out", "Buses give way to you", "A bus lane is ahead", "Never overtake the bus",
      "In a built-up area you must give way to a bus showing this sign when it signals to move out from the kerb."),

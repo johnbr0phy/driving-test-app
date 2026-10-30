@@ -543,7 +543,7 @@
     "optionD": "A full motorbike licence",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The supervising driver must have held an unconditional full licence for the preceding two years, without disqualification or good behaviour conditions in that time."
+    "explanation": "The supervising driver must hold an unconditional licence (not provisional, probationary or on a good behaviour condition) and have held it for the preceding two years without disqualification."
   },
   {
     "type": "AUSA",
@@ -594,12 +594,12 @@
     "category": "ausaLicence",
     "question": "Which mobile phone functions may a learner use while driving?",
     "optionA": "Hands-free calls only",
-    "optionB": "GPS in a cradle only",
+    "optionB": "Calls on speaker only",
     "optionC": "None at all",
     "optionD": "Bluetooth audio only",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Learner and P1 drivers must not use any mobile phone function while driving, including hands-free, Bluetooth, loudspeaker, GPS and messaging."
+    "explanation": "Learner and P1 drivers must not use any mobile phone function while driving, including hands-free, Bluetooth and loudspeaker. They may use a phone only when safely parked, not when stopped in traffic."
   },
   {
     "type": "AUSA",
@@ -991,7 +991,7 @@
     "optionD": "50 km/h",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "At a koala crossing a 25 km/h limit applies while the lights are flashing, and you must give way to anyone using it."
+    "explanation": "At a koala crossing a 25 km/h limit applies while the twin yellow lights are flashing, and you must stop for anyone using or about to use the crossing."
   },
   {
     "type": "AUSA",
@@ -1481,7 +1481,7 @@
     "optionD": "Roadworks ahead",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A pedestrian (zebra) crossing has white stripes and signs, and may have two yellow lights flashing alternately. Give way to anyone on it."
+    "explanation": "Twin yellow lights flashing beside a striped crossing mark a koala crossing, a pedestrian crossing near a school. While they flash, keep to 25 km/h and stop for anyone using or about to use it."
   },
   {
     "type": "AUSA",

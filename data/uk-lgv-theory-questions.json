@@ -1124,14 +1124,14 @@
     "state": "ALL",
     "questionId": "UKLGV-LOAD-013",
     "category": "uklgvLoading",
-    "question": "What is the maximum length of an articulated lorry in normal use?",
+    "question": "What is the standard maximum length of an articulated lorry with an ordinary semi-trailer?",
     "optionA": "16.5 metres",
     "optionB": "18.75 metres",
     "optionC": "15 metres",
     "optionD": "12 metres",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Articulated vehicles are limited to 16.5 metres. The 18.75-metre limit is for a drawbar combination (lorry and trailer)."
+    "explanation": "The standard limit for an articulated vehicle is 16.5 metres. Longer semi-trailer combinations (up to 18.55 metres) have their own rules, and 18.75 metres is the drawbar (lorry and trailer) limit."
   },
   {
     "type": "UKLGV",
@@ -1551,7 +1551,7 @@
     "optionD": "Just over the first line, in the box",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Stopping well behind the first line lets you see the whole box, allowing for the blind spot in front of the cab."
+    "explanation": "The Highway Code says drivers of large vehicles should stop far enough behind the first white line to see the whole cyclists' area, allowing for the blind spot in front of the cab."
   },
   {
     "type": "UKLGV",
@@ -2090,7 +2090,7 @@
     "state": "ALL",
     "questionId": "UKLGV-DOC-018",
     "category": "uklgvDocs",
-    "question": "You expect to be stationary for several minutes in a delivery yard on a public road. What should you do?",
+    "question": "You are parked on a public road, waiting several minutes to unload. What should you do?",
     "optionA": "Keep the engine idling to stay warm",
     "optionB": "Apply the parking brake and switch off",
     "optionC": "Rev the engine now and then",
@@ -2538,7 +2538,7 @@
     "state": "ALL",
     "questionId": "UKLGV-SIGN-006",
     "category": "uklgvSigns",
-    "question": "A circular sign shows a lorry symbol with a plate below reading \"Except for loading\". What does it mean?",
+    "question": "A red-ringed sign shows a lorry and \"7.5T\", with a plate below reading \"Except for loading\". What does it mean?",
     "optionA": "Loading bay for lorries only",
     "optionB": "No goods vehicles unless loading",
     "optionC": "No loading at any time",
@@ -2751,7 +2751,7 @@
     "question": "Long white lines in the middle of the road are continuous on your side. What does this mean?",
     "optionA": "Do not cross or straddle them",
     "optionB": "You may overtake with care",
-    "optionC": "You may cross to turn right only",
+    "optionC": "You may cross if the road is clear",
     "optionD": "Lorries only may cross them",
     "correctAnswer": "A",
     "correctIndex": 0,

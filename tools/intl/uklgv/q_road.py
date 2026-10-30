@@ -32,7 +32,7 @@ ITEMS = [
      "Those who can cause the greatest harm have the greatest responsibility, which puts lorry drivers near the top of the hierarchy."),
     ("At traffic lights with an advanced stop line for cyclists, where should a lorry stop?",
      "Well back from the first white line", ["Right up to the first white line", "Inside the cyclists' box", "Just over the first line, in the box"],
-     "Stopping well behind the first line lets you see the whole box, allowing for the blind spot in front of the cab."),
+     "The Highway Code says drivers of large vehicles should stop far enough behind the first white line to see the whole cyclists' area, allowing for the blind spot in front of the cab."),
     ("Why must you check your nearside mirrors before and during a left turn?",
      "A cyclist may be alongside", ["To check the load is secure", "To watch the trailer lights", "Oncoming traffic may cut in"],
      "Cyclists and motorcyclists can come up on your nearside, and the trailer's rear wheels cut in on the turn, so keep checking."),

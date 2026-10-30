@@ -234,7 +234,7 @@ export default function LgvTheoryLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Learn the drivers&apos; hours numbers as a set</h3>
               <p>
-                Most of the numbers on the test are drivers&apos; hours: 9 hours of daily driving (10 twice a week), 56 hours a week and 90 over two weeks, a 45-minute break after 4 hours 30 minutes, 11 hours of daily rest (9 when reduced, three times a week) and 45 hours of weekly rest. Add the tachograph rules, such as 15 days without a card and 7 days to report it, and practise until you can tell the figures apart.
+                Most of the numbers on the test are drivers&apos; hours: 9 hours of daily driving (10 twice a week), 56 hours a week and 90 over two weeks, a 45-minute break after 4 hours 30 minutes, 11 hours of daily rest (9 when reduced, up to three times between weekly rests) and 45 hours of weekly rest. Add the tachograph rules, such as 15 days without a card and 7 days to report it, and practise until you can tell the figures apart.
               </p>
             </div>
             <div>

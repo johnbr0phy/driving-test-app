@@ -51,7 +51,7 @@ ITEMS = [
     ("You park a lorry at night on a road with a 40 mph limit. What must you do?",
      "Show parking lights", ["Switch on hazard lights", "Leave dipped headlights on", "Place a warning triangle"],
      "All vehicles must show parking lights when parked on a road or lay-by where the limit is over 30 mph."),
-    ("You expect to be stationary for several minutes in a delivery yard on a public road. What should you do?",
+    ("You are parked on a public road, waiting several minutes to unload. What should you do?",
      "Apply the parking brake and switch off", ["Keep the engine idling to stay warm", "Rev the engine now and then", "Keep it running to hold the air pressure"],
      "You must not leave an engine running unnecessarily while stationary on a public road. Idling wastes fuel and pollutes."),
     ("What is block changing?",

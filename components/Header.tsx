@@ -17,6 +17,8 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { EXAMS } from "@/lib/exams";
 import { useExamStarted } from "@/hooks/useExamStarted";
 import { BrandLockup } from "@/components/BrandLockup";
+import { HeaderTestName } from "@/components/HeaderTestName";
+import { getCatalogEntry } from "@/lib/testCatalog";
 
 export function Header() {
   const { user } = useAuth();
@@ -54,10 +56,14 @@ export function Header() {
     return null;
   }
 
+  // The DMV app pages name their test; landings and neutral pages (/tests, /settings) do not.
+  const dmvEntry = pathname?.startsWith("/dmv/") || pathname === "/stats" ? getCatalogEntry("dmv") : undefined;
+
   return (
     <header className="border-b bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="container relative mx-auto px-4 py-4 flex items-center justify-between">
         <BrandLockup />
+        {dmvEntry && <HeaderTestName entry={dmvEntry} />}
 
           <div className="flex items-center gap-1 sm:gap-2">
             <TestSwitcher />

@@ -84,7 +84,7 @@ ITEMS = [
      "When the flags are displayed you must stop for anyone using, or about to use, the crossing, and drive at no more than 25 km/h when children are present."),
     ("A tram has stopped at a tram stop with no safety zone, and its doors on your side are open. What must you do?",
      "Stop behind it", "Pass it at 10 km/h", "Pass it on the right", "Pass it at 25 km/h",
-     "You must stop and not pass while the tram's doors on your side are open or a pedestrian is crossing. Only when they are closed and the way is clear may you pass at up to 10 km/h."),
+     "You must stop and not pass while the tram's doors on your side are open or a pedestrian is crossing. Only when they are closed and the way is clear may you pass, slowly and with care."),
     ("You are turning from the road into a driveway and a pedestrian is walking along the footpath across it. What must you do?",
      "Give way to the pedestrian", "Go, as you are on the road", "Flash your lights and go", "Give way only to children",
      "Driving into or out of a driveway, you must give way to all pedestrians and bike riders on the footpath, not just to vehicles."),

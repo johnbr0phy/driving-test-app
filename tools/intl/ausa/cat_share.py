@@ -47,7 +47,7 @@ ITEMS = [
      "You must not open a door into the path of other road users. Check your mirror and over your shoulder for bike riders and traffic."),
     ("Why must you never cut in front of a tram?",
      "It can't stop quickly", "It must give way to you", "It can steer around you", "It is always slow",
-     "A tram cannot steer around you and needs about 70 metres to stop from 50 km/h."),
+     "A tram cannot steer around you and needs about 30 metres to stop from 50 km/h, even braking as hard as it can."),
     ("You see kangaroos near the road at dusk on a country road. What should you do?",
      "Slow down and watch", "Speed up to pass", "Use high beam to scare them", "Swerve if one appears",
      "Animals are most active around dawn and dusk. Slow down so you can stop; swerving can roll the car or put you into oncoming traffic."),

@@ -71,7 +71,7 @@ full read of the PDF. The lead may want a human spot-check against the February 
   https://mylicence.sa.gov.au/road-rules/the-drivers-handbook/overtaking
   https://mylicence.sa.gov.au/road-rules/the-drivers-handbook/lanes
   https://mylicence.sa.gov.au/road-rules/the-drivers-handbook/traffic-lights
-- Trams (no passing on the right, safety zones, stopped tram 10 km/h, 70 m stopping at 50 km/h):
+- Trams (no passing on the right, safety zones, stopped tram: pass slowly once doors close; about 30 m emergency stop from 50 km/h per Adelaide Metro (the earlier 10 km/h and 70 m figures were unconfirmed and removed in review)):
   https://mylicence.sa.gov.au/road-rules/the-drivers-handbook/misc
 - Cyclists 1 m / 1.5 m: https://www.mylicence.sa.gov.au/road-rules/the-drivers-handbook/road-rules-for-cyclists
 - Horses, sharing the road: https://mylicence.sa.gov.au/road-rules/the-drivers-handbook/share-road

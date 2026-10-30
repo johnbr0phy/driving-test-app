@@ -389,7 +389,7 @@
     "optionD": "Stop behind it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "You must stop and not pass while the tram's doors on your side are open or a pedestrian is crossing. Only when they are closed and the way is clear may you pass at up to 10 km/h."
+    "explanation": "You must stop and not pass while the tram's doors on your side are open or a pedestrian is crossing. Only when they are closed and the way is clear may you pass, slowly and with care."
   },
   {
     "type": "AUSA",
@@ -1012,14 +1012,14 @@
     "state": "ALL",
     "questionId": "AUSA-SPD-013",
     "category": "ausaSpeed",
-    "question": "A tram is stopped at a tram stop with no safety zone; its doors are closed and nobody is crossing. How fast may you pass it?",
-    "optionA": "Up to 10 km/h",
-    "optionB": "Up to 25 km/h",
-    "optionC": "Up to 40 km/h",
-    "optionD": "Up to 5 km/h",
+    "question": "Driving is allowed on a beach and no sign shows a limit. What is the limit when no one is within 50 metres?",
+    "optionA": "40 km/h",
+    "optionB": "25 km/h",
+    "optionC": "60 km/h",
+    "optionD": "10 km/h",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Once the doors on your side are closed and no pedestrian is crossing, you may pass a stopped tram at no more than 10 km/h."
+    "explanation": "Unless signed otherwise, the limit on a beach where driving is allowed is 40 km/h, dropping to 25 km/h within 50 metres of a person."
   },
   {
     "type": "AUSA",
@@ -1138,14 +1138,14 @@
     "state": "ALL",
     "questionId": "AUSA-SPD-022",
     "category": "ausaSpeed",
-    "question": "About how far does a tram travelling at 50 km/h need to stop?",
-    "optionA": "20 metres",
-    "optionB": "70 metres",
-    "optionC": "35 metres",
-    "optionD": "150 metres",
+    "question": "A tram at 50 km/h brakes as hard as it can. About how far does it travel before stopping?",
+    "optionA": "About 10 metres",
+    "optionB": "About 30 metres",
+    "optionC": "About 5 metres",
+    "optionD": "About 300 metres",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "An average tram at 50 km/h needs around 70 metres to stop, so never cut in front of one."
+    "explanation": "A tram weighs around 40 tonnes and needs about 30 metres to stop from 50 km/h even under emergency braking, far more than a car, so never cut in front of one."
   },
   {
     "type": "AUSA",
@@ -2181,7 +2181,7 @@
     "optionD": "It can't stop quickly",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A tram cannot steer around you and needs about 70 metres to stop from 50 km/h."
+    "explanation": "A tram cannot steer around you and needs about 30 metres to stop from 50 km/h, even braking as hard as it can."
   },
   {
     "type": "AUSA",
@@ -2566,11 +2566,11 @@
     "state": "ALL",
     "questionId": "AUSA-SAFE-008",
     "category": "ausaSafety",
-    "question": "A passenger in your car is not wearing a seatbelt. Who commits an offence?",
+    "question": "An adult passenger in your car is not wearing a seatbelt. Who commits an offence?",
     "optionA": "Only the passenger",
     "optionB": "Nobody",
-    "optionC": "Only if under 16",
-    "optionD": "You, the driver",
+    "optionC": "Only you, as the driver",
+    "optionD": "You and the passenger",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Drivers commit an offence if a passenger of any age is not belted or restrained. Passengers 16 or older also commit their own offence."

@@ -81,7 +81,7 @@
     "optionD": "At least 60 minutes",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A break of at least 45 minutes is required. It can be split, but only as 15 minutes followed by 30 minutes."
+    "explanation": "A break of at least 45 minutes is required. It can be split, but only as at least 15 minutes followed by at least 30 minutes."
   },
   {
     "type": "UKPCV",
@@ -524,12 +524,12 @@
     "category": "ukpcvVehicle",
     "question": "A double-deck bus strikes a railway bridge. Who must you tell straight away?",
     "optionA": "The local council",
-    "optionB": "The police",
+    "optionB": "Police or the railway",
     "optionC": "Your insurer first",
     "optionD": "The bus manufacturer",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Report a bridge strike to the police at once so they can warn the railway, then call the number on the bridge sign if there is one. Trains may be in danger."
+    "explanation": "Report a bridge strike at once so trains can be stopped: call the number on the bridge identification plate, or 999 if there is none. Telling only your insurer or the council leaves trains in danger."
   },
   {
     "type": "UKPCV",
@@ -1880,7 +1880,7 @@
     "state": "ALL",
     "questionId": "UKPCV-ROAD-015",
     "category": "ukpcvRoad",
-    "question": "When must you not reverse a bus?",
+    "question": "The Highway Code says you must not reverse a vehicle:",
     "optionA": "Into a bus garage at night",
     "optionB": "With a banksman guiding you",
     "optionC": "Further than necessary",
@@ -1996,7 +1996,7 @@
     "optionA": "A town centre street",
     "optionB": "A tree-lined lane",
     "optionC": "An exposed bridge",
-    "optionD": "A cutting road",
+    "optionD": "A road in a cutting",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Exposed bridges, viaducts and gaps between buildings or hills leave a high-sided vehicle open to sudden gusts. Slow down and plan the route."
@@ -2412,7 +2412,7 @@
     "state": "ALL",
     "questionId": "UKPCV-SGN-001",
     "category": "ukpcvSigns",
-    "question": "What does a red circle with a number and the letters \"t\" (for example \"7.5t\") inside mean?",
+    "question": "What does a red circle with a number and the letter \"T\" (for example \"7.5T\") inside mean?",
     "optionA": "Weight limit",
     "optionB": "Speed limit",
     "optionC": "Width limit",
@@ -2426,14 +2426,14 @@
     "state": "ALL",
     "questionId": "UKPCV-SGN-002",
     "category": "ukpcvSigns",
-    "question": "A round sign has a red border and shows a height between two arrows, one pointing up and one down. What does it mean?",
+    "question": "A round sign has a red border and shows a height between small arrows above and below it, pointing towards the figure. What does it mean?",
     "optionA": "Warning of a low bridge ahead",
     "optionB": "No vehicles over that height",
     "optionC": "Minimum height for buses",
     "optionD": "Height of the next tunnel",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A red circle with up and down arrows is an order: no vehicles over the height shown. The warning version of a low bridge is a red triangle."
+    "explanation": "A red circle with a height between vertical arrows is an order: no vehicles over the height shown. The warning version of a low bridge is a red triangle."
   },
   {
     "type": "UKPCV",
@@ -2671,7 +2671,7 @@
     "optionD": "Road narrows on the left ahead",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The give way sign is an order: give way to traffic on the major road. It is a triangle so it can be recognised from either side."
+    "explanation": "The give way sign is an order: give way to traffic on the major road. Its inverted triangle shape sets it apart from the warning triangles."
   },
   {
     "type": "UKPCV",
@@ -2685,7 +2685,7 @@
     "optionD": "Stop, then go when safe",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "You must stop at the stop line even if the road looks clear, then go only when it is safe. Its shape is unique so it can be recognised from behind."
+    "explanation": "You must stop at the stop line even if the road looks clear, then go only when it is safe. Its eight-sided shape is used for no other sign."
   },
   {
     "type": "UKPCV",
@@ -2783,7 +2783,7 @@
     "optionD": "Overtaking lane",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This order means you must not overtake. The red car on the left shows the overtaking you must not do."
+    "explanation": "This red ring is an order: you must not overtake until the restriction ends. Two-way traffic is a red triangle with two arrows."
   },
   {
     "type": "UKPCV",

@@ -17,7 +17,7 @@ ITEMS = [
  "You must take at least 45 minutes of break after no more than 4 hours 30 minutes of driving. Five and a half hours is the trigger under the GB domestic rules."),
 ("How long must the break be after 4 hours 30 minutes of driving under the assimilated rules?",
  "At least 45 minutes", "At least 30 minutes", "At least 15 minutes", "At least 60 minutes",
- "A break of at least 45 minutes is required. It can be split, but only as 15 minutes followed by 30 minutes."),
+ "A break of at least 45 minutes is required. It can be split, but only as at least 15 minutes followed by at least 30 minutes."),
 ("You want to split your 45-minute break. Which split is allowed under the assimilated rules?",
  "15 minutes then 30 minutes", "30 minutes then 15 minutes", "Three breaks of 15 minutes", "20 minutes then 25 minutes",
  "A split break must be at least 15 minutes followed by at least 30 minutes, in that order. Taking the longer part first does not meet the rule."),

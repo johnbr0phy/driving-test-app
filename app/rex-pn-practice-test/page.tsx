@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -55,14 +56,14 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/rex-pn-practice-test`,
-    images: [{ url: "/og/rexpn", width: 1200, height: 630, alt: "Tigertest free REx-PN practice test" }],
+    images: [{ url: shareImageUrl("rexpn"), width: 1200, height: 630, alt: "Tigertest free REx-PN practice test" }],
     siteName: "Tigertest",
     type: "website",
     locale: "en_CA",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og/rexpn"],
+    images: [shareImageUrl("rexpn")],
     title,
     description: metaDescription,
   },

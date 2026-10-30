@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
@@ -26,13 +27,13 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/icbc-practice-test`,
-    images: [{ url: "/og/cabc", width: 1200, height: 630, alt: "Tigertest free ICBC practice test" }],
+    images: [{ url: shareImageUrl("cabc"), width: 1200, height: 630, alt: "Tigertest free ICBC practice test" }],
     siteName: "Tigertest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og/cabc"],
+    images: [shareImageUrl("cabc")],
     title,
     description: metaDescription,
   },

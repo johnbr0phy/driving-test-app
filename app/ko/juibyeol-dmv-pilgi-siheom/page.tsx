@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight, Info } from "lucide-react";
@@ -28,8 +29,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ko_KR",
     url: `${siteUrl}/ko/juibyeol-dmv-pilgi-siheom`,
-    images: [{ url: "/tiger.png", width: 512, height: 512 }],
+    images: [{ url: shareImageUrl("dmv", "ko"), width: 1200, height: 630 }],
   },
+  twitter: { card: "summary_large_image", images: [shareImageUrl("dmv", "ko")] },
 };
 
 const koStates = KO_STATE_CODES.map((code) => getStateByCode(code)!).sort(

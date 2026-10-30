@@ -86,24 +86,24 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
   testsSub: string;
 }> = {
   UK: {
-    title: "Free UK Driving Theory Test Practice | Tigertest",
-    description: "Free UK theory test practice for car, motorcycle, lorry (LGV), bus (PCV) and ADI part 1: original Highway Code questions with every answer explained.",
+    title: "Free UK Practice Tests: School, Work & Driving | Tigertest",
+    description: "Free UK practice tests for GCSEs, KS2 SATs, driving theory, healthcare, trades and workplace qualifications. Every answer explained. No account needed.",
     lead: "Practice for the DVSA theory tests: car, motorcycle, lorry, bus and coach, and ADI part 1. Original questions on the Highway Code, every answer explained. No signup.",
     cta: { label: "Car theory test", href: "/uk-driving-theory-test" },
     testsTitle: "UK theory tests",
     testsSub: "Multiple-choice practice for Great Britain, in mph with the current Highway Code. Hazard perception is not covered.",
   },
   CA: {
-    title: "Free Canada Driving Knowledge Test Practice | Tigertest",
-    description: "Free driving knowledge test practice for Ontario G1, Quebec SAAQ, BC ICBC, Alberta Class 7 and Manitoba, written from each province's handbook.",
+    title: "Free Canadian Practice Tests: School, Work & Driving | Tigertest",
+    description: "Free Canadian practice tests for driving, OSSLT, EQAO, nursing, Red Seal trades and workplace safety. Every answer explained. No account needed.",
     lead: "Knowledge test practice for Ontario, Quebec, British Columbia, Alberta and Manitoba, written from each province's own handbook. Every answer explained. No signup.",
     cta: { label: "Ontario G1 test", href: "/ontario-g1-practice-test" },
     testsTitle: "Driving knowledge tests by province",
     testsSub: "200 questions per test from the official provincial handbook, in km/h with your province's licensing rules.",
   },
   AU: {
-    title: "Free Australia Learner Driver Test Practice | Tigertest",
-    description: "Free learner licence test practice for NSW, Victoria, Queensland, Western Australia and South Australia, written from each state's handbook.",
+    title: "Free Australian Practice Tests: School, Work & Driving | Tigertest",
+    description: "Free Australian practice tests for NAPLAN, selective entry, HSC maths, driving, first aid and workplace licences. Every answer explained. No account needed.",
     lead: "Learner licence practice for New South Wales, Victoria, Queensland, Western Australia and South Australia, written from each state's handbook. Every answer explained. No signup.",
     cta: { label: "NSW DKT", href: "/nsw-dkt-practice-test" },
     testsTitle: "Learner driver tests by state",

@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
@@ -28,13 +29,13 @@ export const metadata: Metadata = {
     title: "Free CDL Practice Test 2026 - General Knowledge",
     description: metaDescription,
     url: `${siteUrl}/cdl-practice-test`,
-    images: [{ url: "/og/cdl", width: 1200, height: 630, alt: "Tigertest free CDL practice test" }],
+    images: [{ url: shareImageUrl("cdl"), width: 1200, height: 630, alt: "Tigertest free CDL practice test" }],
     siteName: "Tigertest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og/cdl"],
+    images: [shareImageUrl("cdl")],
     title: "Free CDL Practice Test 2026 - General Knowledge",
     description: metaDescription,
   },

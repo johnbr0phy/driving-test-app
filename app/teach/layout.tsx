@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata } from "next";
 
 const title = "Free Practice Tests for Your Class";
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: `${siteUrl}/teach` },
-  openGraph: { title: `${title} | Tigertest`, description, url: `${siteUrl}/teach`, images: ["/og-home.png"] },
+  openGraph: { title: `${title} | Tigertest`, description, url: `${siteUrl}/teach`, images: [shareImageUrl("home")] },
 };
 
 export default function TeachLayout({ children }: { children: React.ReactNode }) {

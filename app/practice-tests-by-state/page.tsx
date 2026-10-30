@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
@@ -26,8 +27,9 @@ export const metadata: Metadata = {
       "Free DMV practice tests for all 50 states. 200 questions per state with instant feedback.",
     type: "website",
     url: `${siteUrl}/practice-tests-by-state`,
-    images: [{ url: "/tiger.png", width: 512, height: 512 }],
+    images: [{ url: shareImageUrl("dmv"), width: 1200, height: 630 }],
   },
+  twitter: { card: "summary_large_image", images: [shareImageUrl("dmv")] },
 };
 
 // Group states by first letter for organized display

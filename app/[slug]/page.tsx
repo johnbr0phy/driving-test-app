@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -89,9 +90,9 @@ export async function generateMetadata({
       siteName: "Tigertest",
       images: [
         {
-          url: "/tiger.png",
-          width: 512,
-          height: 512,
+          url: shareImageUrl(`dmv-${state.code.toLowerCase()}`),
+          width: 1200,
+          height: 630,
           alt: `${state.name} DMV Practice Test - Tigertest`,
         },
       ],
@@ -100,7 +101,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: ["/tiger.png"],
+      images: [shareImageUrl(`dmv-${state.code.toLowerCase()}`)],
     },
   };
 }

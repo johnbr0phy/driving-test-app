@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,13 +29,13 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/hsc-maths-standard-2-practice-test`,
-    images: [{ url: "/og/hscmaths", width: 1200, height: 630, alt: "Tigertest free HSC Maths Standard 2 practice test" }],
+    images: [{ url: shareImageUrl("hscmaths"), width: 1200, height: 630, alt: "Tigertest free HSC Maths Standard 2 practice test" }],
     siteName: "Tigertest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og/hscmaths"],
+    images: [shareImageUrl("hscmaths")],
     title,
     description: metaDescription,
   },

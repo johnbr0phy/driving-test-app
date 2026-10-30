@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Smartphone, Monitor } from "lucide-react";
@@ -26,13 +27,13 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/functional-skills-maths-level-2-practice-test`,
-    images: [{ url: "/og/fsmaths", width: 1200, height: 630, alt: "Tigertest free Functional Skills Maths Level 2 practice test" }],
+    images: [{ url: shareImageUrl("fsmaths"), width: 1200, height: 630, alt: "Tigertest free Functional Skills Maths Level 2 practice test" }],
     siteName: "Tigertest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og/fsmaths"],
+    images: [shareImageUrl("fsmaths")],
     title,
     description: metaDescription,
   },

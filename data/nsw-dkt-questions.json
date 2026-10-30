@@ -466,14 +466,14 @@
     "state": "ALL",
     "questionId": "AUNSW-SPD-010",
     "category": "nswSpeed",
-    "question": "A bus with a \"40 when lights flash\" sign has its top lights flashing. What is the fastest you may pass it?",
+    "question": "You are behind a bus with a \"40 when lights flash\" sign and its top lights are flashing. What is the fastest you may overtake it?",
     "optionA": "25km/h",
     "optionB": "40km/h",
     "optionC": "10km/h",
     "optionD": "60km/h",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "While the lights on top are flashing, you must not pass the bus in any direction at more than 40km/h. Children may be getting on or off and crossing."
+    "explanation": "While the lights on top are flashing, you must not overtake the bus at more than 40km/h. Children may be getting on or off and crossing. In a school bus stop zone the 40km/h limit applies when passing it in any direction."
   },
   {
     "type": "AUNSW",
@@ -1341,7 +1341,7 @@
     "optionD": "Those crossing the road you enter",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "When you turn left or right you must give way to any pedestrian crossing the road you are turning into, crossing or not."
+    "explanation": "When you turn left or right you must give way to any pedestrian crossing the road you are turning into, whether or not there is a marked crossing."
   },
   {
     "type": "AUNSW",
@@ -1908,14 +1908,14 @@
     "state": "ALL",
     "questionId": "AUNSW-LAN-001",
     "category": "nswLanes",
-    "question": "May you cross a single continuous white dividing line to overtake?",
+    "question": "May you cross a single continuous white dividing line to overtake a slow car?",
     "optionA": "No, never",
     "optionB": "Yes, if the road is clear",
     "optionC": "Yes, below 60km/h",
     "optionD": "Yes, on a straight road",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "You must not cross a single continuous dividing line to overtake. You may cross it only to enter or leave the road or angle park opposite."
+    "explanation": "You must not cross a single continuous dividing line to overtake a car. You may cross it to enter or leave the road, angle park opposite, pass a bicycle rider or avoid an obstruction, when it is safe."
   },
   {
     "type": "AUNSW",
@@ -1940,7 +1940,7 @@
     "optionA": "To overtake a slow car",
     "optionB": "To make a U-turn",
     "optionC": "To enter or leave the road",
-    "optionD": "To pass a parked car quickly",
+    "optionD": "To angle park opposite",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "You may cross double continuous lines only to enter or leave the road by the shortest route, or to pass a bicycle or avoid an obstruction safely."
@@ -1950,7 +1950,7 @@
     "state": "ALL",
     "questionId": "AUNSW-LAN-004",
     "category": "nswLanes",
-    "question": "When may you overtake on the left?",
+    "question": "When may you overtake a vehicle on the left?",
     "optionA": "When the car ahead is slow",
     "optionB": "When it is crossing a bridge",
     "optionC": "When it signals left",

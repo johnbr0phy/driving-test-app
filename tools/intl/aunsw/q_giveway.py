@@ -60,7 +60,7 @@ ITEMS = [
      "With both cars at Stop signs, the car turning right must give way to the oncoming car going straight ahead."),
     ("When turning into a side street, which pedestrians must you give way to?",
      "Those crossing the road you enter", ["Only those on a marked crossing", "Only those already halfway across", "Only children and older people"],
-     "When you turn left or right you must give way to any pedestrian crossing the road you are turning into, crossing or not."),
+     "When you turn left or right you must give way to any pedestrian crossing the road you are turning into, whether or not there is a marked crossing."),
     ("Traffic is banked up on the far side of an intersection with lights. Your light is green. What should you do?",
      "Wait until there is space", ["Enter and wait in the middle", "Enter if your light is green", "Use your horn to clear a gap"],
      "You must not enter an intersection unless there is space for your vehicle on the other side. Blocking it is an offence even on a green light."),

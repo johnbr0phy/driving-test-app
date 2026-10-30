@@ -7,7 +7,7 @@ ITEMS = [
  "Stop again at the line", ["Drive straight through", "Follow it through", "Sound your horn"],
  "If you had to stop back from the STOP line, you must stop again as close as you can to the line before going on."),
 ("There is a STOP sign but no line is marked. Where do you stop?",
- "Just before the intersection", ["10 metres before the sign", "Level with the kerb corner", "Anywhere near the sign"],
+ "Close to, but before, the intersection", ["10 metres before the sign", "Just inside the intersection", "Anywhere near the sign"],
  "If there is no line, stop as close to the intersection as practicable but before entering it."),
 ("At an uncontrolled four-way intersection, whom must you give way to?",
  "Vehicles on your right", ["Vehicles on your left", "Vehicles going straight", "No one if you arrive first"],

@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { QuizRow } from "@/components/QuizRow";
+import { QuestionImage } from "@/components/QuestionImage";
+import { getSignIdForQuestion } from "@/lib/signImages";
 import {
   STUDENT_MIN_ANSWERS,
   STUDENT_TOPIC_MIN_ANSWERS,
@@ -145,6 +147,7 @@ function Body({ student, report, groupName }: { student: ClassStudentRow; report
                   chipLabel="missed"
                   chipColorClass={scoreText(m.missed >= 2 ? "low" : "near")}
                   question={m.q.question}
+                  media={getSignIdForQuestion(m.questionId) ? <QuestionImage questionId={m.questionId} /> : undefined}
                   subtitle={[m.q.topic, topWrongPick(m.picks)].filter(Boolean).join(" · ")}
                   options={m.q.options}
                   correctAnswer={m.q.answer}

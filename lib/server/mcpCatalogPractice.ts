@@ -6,6 +6,7 @@ import { getExamTrainingSetQuestions } from '@/lib/examTestGenerator';
 import { getExamQuestions } from '@/lib/examData';
 import { migrateTestSets } from '@/lib/testSetMigration';
 import { splitLegacySets } from '@/lib/legacySetSplits';
+import { SIGN_BY_QUESTION_ID } from '@/lib/signImages';
 import type { Language } from '@/i18n';
 import type { Question } from '@/types';
 import '@/lib/banks/all';
@@ -87,7 +88,8 @@ export function catalogProgress(exam: ExamConfig, data: CatalogUserData) {
 }
 
 function present(q: Question) {
-  return { questionId: q.questionId, question: q.question, topic: q.category, format: 'single', options: { A:q.optionA, B:q.optionB, C:q.optionC, D:q.optionD }, answerFormat: 'A, B, C or D' };
+  const signId = SIGN_BY_QUESTION_ID[q.questionId];
+  return { questionId: q.questionId, question: q.question, topic: q.category, format: 'single', options: { A:q.optionA, B:q.optionB, C:q.optionC, D:q.optionD }, answerFormat: 'A, B, C or D', ...(signId ? { imageUrl: publicUrl(`/signs/${signId}.svg`) } : {}) };
 }
 
 function select(exam: ExamConfig, data: CatalogUserData, requested?: number, avoid?: string) {

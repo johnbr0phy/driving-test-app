@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CAPAL" | "CAELEC" | "AUWHITE" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -457,6 +457,54 @@ export type QuestionCategory =
   | "ausaShare"
   | "ausaParking"
   | "ausaSafety"
+
+  // SIA door supervisor (UK)
+  | "uksiaIndustry"
+  | "uksiaSafety"
+  | "uksiaComms"
+  | "uksiaTerror"
+  | "uksiaCrime"
+  | "uksiaVenue"
+  | "uksiaConflict"
+  | "uksiaPhysical"
+
+  // 18th Edition, BS 7671 (UK)
+  | "uk18edScope"
+  | "uk18edDefinitions"
+  | "uk18edAssessment"
+  | "uk18edProtection"
+  | "uk18edSelection"
+  | "uk18edInspection"
+  | "uk18edSpecial"
+  | "uk18edAppendices"
+
+  // Canadian Firearms Safety Course (capal)
+  | "capalHistory"
+  | "capalActions"
+  | "capalAmmo"
+  | "capalSafety"
+  | "capalHandling"
+  | "capalFiring"
+  | "capalCare"
+  | "capalStorage"
+  | "capalLaw"
+
+  // Red Seal Construction Electrician (Canada)
+  | "caelecCommon"
+  | "caelecDist"
+  | "caelecWiring"
+  | "caelecMotors"
+  | "caelecSignal"
+
+  // White Card, CPCWHS1001 (auwhite)
+  | "auwhiteLaw"
+  | "auwhiteRisk"
+  | "auwhiteHeights"
+  | "auwhitePlant"
+  | "auwhiteHealth"
+  | "auwhiteEnv"
+  | "auwhiteSigns"
+  | "auwhiteEmerg"
 
   // QLD learner licence categories
   | "auqldGiveWay"

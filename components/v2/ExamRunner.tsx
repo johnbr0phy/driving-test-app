@@ -269,7 +269,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
           <div className="mx-auto max-w-xl px-4 py-12 text-center">
             <div className="text-5xl">☕</div>
             <h1 className="mt-4 text-2xl font-bold">Break time</h1>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">The real test gives you {Math.round(exam.breakSeconds / 60)} minutes between sections. Stand up, drink water, then continue to {def.section.name}.</p>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">{exam.breakNote ?? `The real test gives you ${Math.round(exam.breakSeconds / 60)} minutes between sections.`} Stand up, drink water, then continue to {def.section.name}.</p>
           </div>
         </div>
         <BottomBar>

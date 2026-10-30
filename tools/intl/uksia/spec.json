@@ -1,0 +1,28 @@
+{
+  "id": "uksia",
+  "stateCode": "UKSIA",
+  "idBase": 7700,
+  "prefix": "UKSIA-",
+  "slug": "/sia-door-supervisor",
+  "landingPath": "/sia-door-supervisor-practice-test",
+  "dataFile": "data/sia-door-supervisor-questions.json",
+  "name": "SIA Door Supervisor Practice Test",
+  "shortName": "Door Supervisor",
+  "examLabel": "SIA door supervisor exams",
+  "fullName": "Level 2 Award for Door Supervisors in the Private Security Industry (SIA licence-linked qualification), multiple-choice exams",
+  "icon": "shield",
+  "passPct": 70,
+  "outline": "SIA door supervision specifications (April 2021, still current Oct 2026) as published in the Pearson BTEC Level 2 Award spec, Issue 2, Sept 2023: Unit 1 MCQ 72 in 110 min, 70%; Unit 2 50 in 75 min, 70%; Unit 3 20 in 30 min, 70%; Unit 4 30 in 45 min, 80%. 172 MCQ in all; per-test counts are 50 x unit share (21/14/6/9), Unit 1 split by learning outcome into 4 categories and Unit 2 into 2.",
+  "categories": [
+    {"key": "uksiaIndustry", "label": "Security Industry, Law & Arrest", "perTest": 7, "pool": 28, "segment": "IND", "covers": "Unit 1 LO1-3"},
+    {"key": "uksiaSafety", "label": "Health & Safety, Fire & Emergencies", "perTest": 5, "pool": 20, "segment": "SAF", "covers": "Unit 1 LO4-6"},
+    {"key": "uksiaComms", "label": "Communication, Records & Post-Incident", "perTest": 4, "pool": 16, "segment": "COM", "covers": "Unit 1 LO7, 8, 11"},
+    {"key": "uksiaTerror", "label": "Terrorism & Vulnerable People", "perTest": 5, "pool": 20, "segment": "TER", "covers": "Unit 1 LO9-10"},
+    {"key": "uksiaCrime", "label": "Crime, Drugs & Evidence", "perTest": 7, "pool": 28, "segment": "CRM", "covers": "Unit 2 LO1, 3, 4"},
+    {"key": "uksiaVenue", "label": "Licensing Law, Searching & Queues", "perTest": 7, "pool": 28, "segment": "VEN", "covers": "Unit 2 LO2, 5, 6, 7"},
+    {"key": "uksiaConflict", "label": "Conflict Management", "perTest": 6, "pool": 24, "segment": "CON", "covers": "Unit 3 LO1-3 (MCQ part)"},
+    {"key": "uksiaPhysical", "label": "Physical Intervention", "perTest": 9, "pool": 36, "segment": "PHY", "covers": "Unit 4 LO1-3 (MCQ part)"}
+  ],
+  "trainingSets": "testSets(7700, 4): one set per mock exam, ids 7701-7704",
+  "jurisdiction": "England and Wales law for licensing, arrest and force; Scotland and NI flagged as different on the landing"
+}

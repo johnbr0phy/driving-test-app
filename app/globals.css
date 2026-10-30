@@ -910,6 +910,145 @@
     --brand-gradient-to: 320 80% 95%;
   }
 
+  /* NSW Selective theme: blue-violet (v2 exam; matches lib/v2/exams/nswsel.ts theme) */
+  [data-theme="nswsel"] {
+    --brand: 250 50% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 250 100% 96%;
+    --brand-hover: 250 50% 36%;
+    --brand-dark: 250 50% 30%;
+    --brand-darker: 250 46% 21%;
+    --brand-muted: 250 40% 75%;
+    --brand-border: 250 40% 80%;
+    --brand-border-light: 250 40% 90%;
+    --brand-gradient-to: 270 80% 95%;
+  }
+
+  /* KS2 SATs theme: violet (v2 exam; matches lib/v2/exams/ks2.ts theme) */
+  [data-theme="ks2"] {
+    --brand: 280 55% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 100% 96%;
+    --brand-hover: 280 55% 38%;
+    --brand-dark: 280 55% 32%;
+    --brand-darker: 280 50% 22%;
+    --brand-muted: 280 40% 75%;
+    --brand-border: 280 40% 80%;
+    --brand-border-light: 280 40% 90%;
+    --brand-gradient-to: 300 80% 95%;
+  }
+
+  /* GCSE Maths theme: olive green (v2 exam; matches lib/v2/exams/gcsemaths.ts theme) */
+  [data-theme="gcsemaths"] {
+    --brand: 82 65% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 82 70% 95%;
+    --brand-hover: 82 65% 23%;
+    --brand-dark: 82 65% 20%;
+    --brand-darker: 82 60% 13%;
+    --brand-muted: 82 40% 68%;
+    --brand-border: 82 40% 76%;
+    --brand-border-light: 82 40% 88%;
+    --brand-gradient-to: 70 75% 94%;
+  }
+
+  /* SIA door supervisor theme (UK): deep green, hue 128 */
+  [data-theme="uksia"] {
+    --brand: 128 45% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 128 45% 95%;
+    --brand-hover: 128 45% 25%;
+    --brand-dark: 128 45% 21%;
+    --brand-darker: 128 40% 15%;
+    --brand-muted: 128 25% 70%;
+    --brand-border: 128 25% 78%;
+    --brand-border-light: 128 22% 88%;
+    --brand-gradient-to: 150 50% 94%;
+  }
+
+  /* 18th Edition wiring regulations theme (UK) */
+  [data-theme="uk18ed"] {
+    --brand: 50 80% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 50 80% 95%;
+    --brand-hover: 50 80% 25%;
+    --brand-dark: 50 80% 22%;
+    --brand-darker: 50 70% 15%;
+    --brand-muted: 50 45% 70%;
+    --brand-border: 50 45% 76%;
+    --brand-border-light: 50 40% 88%;
+    --brand-gradient-to: 38 80% 95%;
+  }
+
+  /* OSSLT theme: indigo (v2 exam; matches lib/v2/exams/osslt.ts theme) */
+  [data-theme="osslt"] {
+    --brand: 232 52% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 232 100% 96%;
+    --brand-hover: 232 52% 36%;
+    --brand-dark: 232 52% 30%;
+    --brand-darker: 232 48% 21%;
+    --brand-muted: 232 45% 75%;
+    --brand-border: 232 45% 80%;
+    --brand-border-light: 232 45% 90%;
+    --brand-gradient-to: 255 80% 95%;
+  }
+
+  [data-theme="capal"] {
+    --brand: 110 38% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 110 40% 95%;
+    --brand-hover: 110 38% 25%;
+    --brand-dark: 110 38% 20%;
+    --brand-darker: 110 30% 14%;
+    --brand-muted: 110 22% 72%;
+    --brand-border: 110 22% 78%;
+    --brand-border-light: 110 18% 88%;
+    --brand-gradient-to: 80 50% 95%;
+  }
+
+  /* Red Seal Construction Electrician theme (Canada): dark brass, hue 60 */
+  [data-theme="caelec"] {
+    --brand: 60 70% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 60 70% 94%;
+    --brand-hover: 60 70% 22%;
+    --brand-dark: 60 70% 19%;
+    --brand-darker: 60 60% 13%;
+    --brand-muted: 60 40% 68%;
+    --brand-border: 60 40% 76%;
+    --brand-border-light: 60 40% 88%;
+    --brand-gradient-to: 45 80% 95%;
+  }
+
+  /* NAPLAN Year 9 theme: green (v2 exam; matches lib/v2/exams/naplan.ts theme) */
+  [data-theme="naplan"] {
+    --brand: 142 64% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 142 60% 95%;
+    --brand-hover: 142 64% 25%;
+    --brand-dark: 142 64% 21%;
+    --brand-darker: 142 60% 15%;
+    --brand-muted: 142 40% 70%;
+    --brand-border: 142 40% 78%;
+    --brand-border-light: 142 40% 89%;
+    --brand-gradient-to: 160 70% 94%;
+  }
+
+  /* White Card theme (Australia) */
+  [data-theme="auwhite"] {
+    --brand: 28 85% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 28 90% 95%;
+    --brand-hover: 28 85% 34%;
+    --brand-dark: 28 85% 28%;
+    --brand-darker: 28 70% 19%;
+    --brand-muted: 28 50% 72%;
+    --brand-border: 28 50% 78%;
+    --brand-border-light: 28 45% 88%;
+    --brand-gradient-to: 45 85% 94%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -1691,6 +1830,122 @@
     --brand-muted: 300 45% 45%;
     --brand-dark: 300 60% 65%;
     --brand-darker: 300 55% 78%;
+  }
+
+  .dark [data-theme="nswsel"] {
+    --brand: 250 50% 50%;
+    --brand-hover: 250 50% 42%;
+    --brand-light: 250 45% 13%;
+    --brand-gradient-to: 270 40% 11%;
+    --brand-border-light: 250 35% 24%;
+    --brand-border: 250 40% 34%;
+    --brand-muted: 250 40% 45%;
+    --brand-dark: 250 50% 65%;
+    --brand-darker: 250 46% 78%;
+  }
+
+  .dark [data-theme="ks2"] {
+    --brand: 280 55% 50%;
+    --brand-hover: 280 55% 42%;
+    --brand-light: 280 45% 13%;
+    --brand-gradient-to: 300 40% 11%;
+    --brand-border-light: 280 35% 24%;
+    --brand-border: 280 40% 34%;
+    --brand-muted: 280 40% 45%;
+    --brand-dark: 280 55% 65%;
+    --brand-darker: 280 50% 78%;
+  }
+
+  .dark [data-theme="gcsemaths"] {
+    --brand: 82 65% 30.4%;
+    --brand-hover: 82 65% 23%;
+    --brand-light: 82 45% 13%;
+    --brand-gradient-to: 70 40% 11%;
+    --brand-border-light: 82 35% 24%;
+    --brand-border: 82 40% 34%;
+    --brand-muted: 82 40% 45%;
+    --brand-dark: 82 65% 65%;
+    --brand-darker: 82 60% 78%;
+  }
+
+  .dark [data-theme="uksia"] {
+    --brand: 128 45% 35.9%;
+    --brand-hover: 128 45% 27.9%;
+    --brand-light: 128 45% 13%;
+    --brand-gradient-to: 150 40% 11%;
+    --brand-border-light: 128 22% 24%;
+    --brand-border: 128 25% 34%;
+    --brand-muted: 128 25% 45%;
+    --brand-dark: 128 45% 65%;
+    --brand-darker: 128 40% 78%;
+  }
+
+  .dark [data-theme="uk18ed"] {
+    --brand-light: 50 45% 13%;
+    --brand-gradient-to: 38 40% 11%;
+    --brand-border-light: 50 35% 24%;
+    --brand-border: 50 40% 34%;
+    --brand-muted: 50 45% 45%;
+    --brand-dark: 50 80% 65%;
+    --brand-darker: 50 70% 78%;
+  }
+
+  .dark [data-theme="osslt"] {
+    --brand: 232 52% 50%;
+    --brand-hover: 232 52% 42%;
+    --brand-light: 232 45% 13%;
+    --brand-gradient-to: 255 40% 11%;
+    --brand-border-light: 232 35% 24%;
+    --brand-border: 232 40% 34%;
+    --brand-muted: 232 45% 45%;
+    --brand-dark: 232 52% 65%;
+    --brand-darker: 232 48% 78%;
+  }
+
+  .dark [data-theme="capal"] {
+    --brand: 110 38% 37.1%;
+    --brand-hover: 110 38% 29.1%;
+    --brand-light: 110 40% 13%;
+    --brand-gradient-to: 80 40% 11%;
+    --brand-border-light: 110 18% 24%;
+    --brand-border: 110 22% 34%;
+    --brand-muted: 110 22% 45%;
+    --brand-dark: 110 38% 65%;
+    --brand-darker: 110 30% 78%;
+  }
+
+  .dark [data-theme="caelec"] {
+    --brand: 60 70% 27.9%;
+    --brand-hover: 60 70% 22%;
+    --brand-light: 60 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 60 35% 24%;
+    --brand-border: 60 40% 34%;
+    --brand-muted: 60 40% 45%;
+    --brand-dark: 60 70% 65%;
+    --brand-darker: 60 60% 78%;
+  }
+
+  .dark [data-theme="naplan"] {
+    --brand: 142 64% 32.1%;
+    --brand-hover: 142 64% 25%;
+    --brand-light: 142 45% 13%;
+    --brand-gradient-to: 160 40% 11%;
+    --brand-border-light: 142 35% 24%;
+    --brand-border: 142 40% 34%;
+    --brand-muted: 142 40% 45%;
+    --brand-dark: 142 64% 65%;
+    --brand-darker: 142 60% 78%;
+  }
+
+  .dark [data-theme="auwhite"] {
+    --brand-light: 28 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 28 35% 24%;
+    --brand-border: 28 40% 34%;
+    --brand-muted: 28 45% 45%;
+    --brand-dark: 28 85% 65%;
+    --brand-darker: 28 70% 78%;
   }
 
 }

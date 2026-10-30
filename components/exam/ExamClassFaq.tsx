@@ -30,6 +30,11 @@ const TEACHES: Record<string, string> = {
   // High school, military and college classes
   ged: "a GED or adult education class",
   timestables: "a primary school class",
+  ks2: "a Year 6 class",
+  gcsemaths: "GCSE Maths",
+  osslt: "a Grade 10 English class or the OSSLC",
+  naplan: "a Year 9 class",
+  nswsel: "a selective test coaching class",
   sat: "SAT prep",
   act: "ACT prep",
   asvab: "ASVAB prep",
@@ -53,6 +58,11 @@ const TEACHES: Record<string, string> = {
   pnc: "a property and casualty pre-licensing course",
   ham: "a ham radio licensing class",
   civics: "citizenship classes",
+  uksia: "an SIA door supervisor course",
+  uk18ed: "an 18th Edition (2382) course",
+  capal: "the Canadian Firearms Safety Course",
+  caelec: "an electrical apprenticeship program",
+  auwhite: "White Card courses",
 };
 
 function question(examId: string): string {

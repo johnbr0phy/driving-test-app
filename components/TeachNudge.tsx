@@ -20,12 +20,13 @@ const TEACHER_LED = new Set([
   // Healthcare programs
   "cst", "crcst", "htl", "cna", "ptcb", "phleb", "ccma", "cet", "danb", "cpr", "nclex", "nclexpn", "emt", "paramedic", "teas", "hesi", "vtne",
   // High school, military and college classes
-  "ged", "sat", "act", "asvab", "secplus", "aplus", "aws",
+  "ged", "sat", "act", "asvab", "secplus", "aplus", "aws", "gcsemaths", "osslt", "naplan", "nswsel",
   // Primary school classes
-  "timestables",
+  "timestables", "ks2",
   // Trade schools, pre-licensing courses and instructor-led certifications
   "cdl", "cdlx", "moto", "osha", "forklift", "epa608", "foodmgr", "security", "lifeguard", "hunter", "cosmetology",
   "realestate", "insurance", "pnc", "ham", "civics",
+  "uksia", "uk18ed", "capal", "caelec", "auwhite",
 ]);
 
 export function isTeacherLedExam(id: string): boolean {

@@ -22,6 +22,9 @@ const BORROWED_SETS: Record<string, string> = {
   ukcar: "dmv", ukadi: "dmv", ukmoto: "moto", uklgv: "cdl", ukpcv: "cdl",
   caon: "dmv", caqc: "dmv", cabc: "dmv", caab: "dmv", camb: "dmv",
   aunsw: "dmv", auvic: "dmv", auqld: "dmv", auwa: "dmv", ausa: "dmv",
+  // Workplace, trade and school exams borrow the nearest US set.
+  uksia: "security", uk18ed: "osha", caelec: "osha", auwhite: "osha", capal: "hunter",
+  ks2: "timestables",
 };
 
 export function hasTigerSet(examId: string): boolean {

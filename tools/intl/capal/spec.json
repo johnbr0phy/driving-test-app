@@ -1,0 +1,67 @@
+{
+  "id": "capal",
+  "stateCode": "CAPAL",
+  "idBase": 7900,
+  "prefix": "CAPAL-",
+  "slug": "/canadian-firearms",
+  "landingPath": "/canadian-firearms-safety-course-practice-test",
+  "dataFile": "data/canadian-firearms-questions.json",
+  "passPct": 80,
+  "icon": "target",
+  "categories": [
+    {
+      "key": "capalHistory",
+      "label": "Evolution & Parts of Firearms",
+      "perTest": 5,
+      "segment": "EVO"
+    },
+    {
+      "key": "capalActions",
+      "label": "Types & Actions",
+      "perTest": 6,
+      "segment": "ACT"
+    },
+    {
+      "key": "capalAmmo",
+      "label": "Ammunition",
+      "perTest": 6,
+      "segment": "AMM"
+    },
+    {
+      "key": "capalSafety",
+      "label": "Basic Safety: ACTS & PROVE",
+      "perTest": 8,
+      "segment": "SAF"
+    },
+    {
+      "key": "capalHandling",
+      "label": "Safe Handling & Carrying",
+      "perTest": 6,
+      "segment": "HAN"
+    },
+    {
+      "key": "capalFiring",
+      "label": "Firing Techniques",
+      "perTest": 4,
+      "segment": "FIR"
+    },
+    {
+      "key": "capalCare",
+      "label": "Care of Firearms",
+      "perTest": 3,
+      "segment": "CAR"
+    },
+    {
+      "key": "capalStorage",
+      "label": "Storage, Display & Transport",
+      "perTest": 6,
+      "segment": "STO"
+    },
+    {
+      "key": "capalLaw",
+      "label": "Licensing & the Law",
+      "perTest": 6,
+      "segment": "LAW"
+    }
+  ]
+}

@@ -1,0 +1,1794 @@
+[
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Inference",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R1-NARR",
+    "stem": "Nell \"didn't ask for help. That was the annoying part.\" Why does this annoy Jai?",
+    "options": [
+      "She works more slowly than he would",
+      "Her sanding keeps him awake",
+      "She no longer seems to need him",
+      "She ignores the advice in her book"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The next sentences explain it: Nell \"had always asked Jai for help\", so her new independence leaves him feeling unneeded. Nothing suggests she is slow or noisy; he watches her work \"in long, patient strokes\"."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "wordsInContext",
+    "stimulusId": "NSWS-R1-NARR",
+    "stem": "When Nell says the dinghy \"needs someone to bail\", she means it needs someone to",
+    "options": [
+      "scoop out water",
+      "steer the boat",
+      "hold the sail",
+      "row it to shore"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Jai's reply, \"So it still leaks?\", shows that bailing means getting rid of water that comes in. Steering and sailing are jobs on a boat, but they do not connect to a leak."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Author's technique",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R1-NARR",
+    "stem": "Nell runs her palm across the patch \"the way you might stroke a sleeping dog\". This comparison suggests that she",
+    "options": [
+      "is checking the patch for more possums",
+      "thinks the boat is alive",
+      "is too tired to press hard",
+      "feels tender towards the boat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stroking a sleeping dog is a slow, gentle, loving action, so the simile shows her affection and care for the boat she has repaired. It is a comparison, not a sign that she really believes the boat is alive."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Inference",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R1-NARR",
+    "stem": "What does the sentence \"Neither of them mentioned that he had said she'd never finish\" suggest?",
+    "options": [
+      "Jai had forgotten his words",
+      "They both chose to let it pass",
+      "Nell was still hurt by his words",
+      "Nell never heard him say it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Neither of them mentioned\" shows both remember it but quietly agree not to bring it up, which fits the peace offering of the cordial. Nell heard him, since he said it to her face, and she is calm and friendly, not hurt."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Tone",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "toneWords",
+    "stimulusId": "NSWS-R1-NARR",
+    "stem": "Which word best describes the tone of the final conversation between Nell and Jai?",
+    "options": [
+      "bitter",
+      "playful",
+      "nervous",
+      "formal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Nell \"grinned\" and teases Jai that bailing is \"what you're for\", so the tone is light and joking. Nothing in the exchange is angry, worried or stiff."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Main idea",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "mainIdea",
+    "stimulusId": "NSWS-R1-NARR",
+    "stem": "What is the extract mainly about?",
+    "options": [
+      "a girl learning to sail on a lake",
+      "a boy who is jealous of his sister's friends",
+      "a shared project bringing siblings closer",
+      "a family fixing a boat for a holiday"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The story moves from Jai doubting Nell to helping her and being invited on the boat: the repair draws them together. Nell has not sailed yet (the lake trip is \"next weekend\"), so the extract is not about learning to sail."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Imagery",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R1-POEM",
+    "stem": "The paddocks are compared to \"an old dog's coat, worn thin and grey\". This suggests the paddocks are",
+    "options": [
+      "soft and comfortable",
+      "dark and flooded",
+      "thick with tall green grass",
+      "dry and bare in patches"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A coat \"worn thin and grey\" has lost its colour and has bald spots, like dry paddocks after \"eleven months\" without rain. The poem is about drought, so flooded or thick grass cannot fit."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Imagery",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R1-POEM",
+    "stem": "What does the line \"the dam was a mirror cracked in two\" suggest about the dam?",
+    "options": [
+      "It had dried out and split",
+      "It was full and perfectly still",
+      "It had been broken by a storm",
+      "It reflected the empty sky"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A mirror is a smooth surface, and \"cracked\" shows the dried mud has split apart, which matches the drought in the first stanza. A still, full dam would not be cracked, and the storm does not come until later in the poem."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Character",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R1-POEM",
+    "stem": "Dad \"tapped the glass and checked again, / as if a stare could make it fill.\" What do these lines show about Dad?",
+    "options": [
+      "He thinks the gauge is broken",
+      "He is calm and patient",
+      "He badly wants rain",
+      "He is angry at the weather"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"As if a stare could make it fill\" shows he is hoping so hard that he keeps checking, even though looking cannot bring rain. Tapping the glass might seem like checking for a fault, but the second line makes clear it is longing, not a broken gauge."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Structure",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "textStructure",
+    "stimulusId": "NSWS-R1-POEM",
+    "stem": "What is the effect of the repetition in \"And then it fell. It fell and fell\"?",
+    "options": [
+      "It shows the speaker is bored",
+      "It shows the rain kept coming",
+      "It makes the storm seem brief",
+      "It suggests the rain is gentle"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Repeating \"fell\" mimics rain that goes on and on, and the next lines list everything it soaks. The rain \"drummed the shed\" and \"filled each rut\", so it is neither brief nor gentle."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Inference",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R1-POEM",
+    "stem": "In the final stanza Dad stands in the rain \"face up, the way some people pray\". This suggests he feels",
+    "options": [
+      "afraid of the storm",
+      "ashamed of getting wet",
+      "sad about lost crops",
+      "deeply thankful"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Comparing him to someone praying shows quiet gratitude and relief that the drought has broken. He is \"not running in, not minding\" the soaking, so he is not afraid or embarrassed."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Purpose",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "authorPurpose",
+    "stimulusId": "NSWS-R1-ART",
+    "stem": "What is the writer's main purpose?",
+    "options": [
+      "to argue that trees are essential",
+      "to explain how leaves make food",
+      "to warn that roots damage footpaths",
+      "to describe a summer walk in Sydney"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The article ends by saying we must treat trees \"as infrastructure, as necessary as water pipes\", so it is persuading readers. Roots lifting footpaths is mentioned only as a small problem that can be managed."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Fact and opinion",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factOpinion",
+    "stimulusId": "NSWS-R1-ART",
+    "stem": "Which of these ideas from the article is an opinion rather than a fact?",
+    "options": [
+      "Roads and roofs soak up the sun's heat",
+      "Trees release water through their leaves",
+      "Some councils have set canopy targets",
+      "A shadeless suburb is designed for cars"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Saying a suburb without shade is \"designed for cars, not people\" is the writer's judgement and cannot be proved. The other three can be checked by measuring or looking up council plans."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Supporting a claim",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "claimSupport",
+    "stimulusId": "NSWS-R1-ART",
+    "stem": "Which detail does the writer use to show that streets without trees are hotter?",
+    "options": [
+      "council planting targets",
+      "the cost of running air conditioning",
+      "footpath temperature studies",
+      "roots lifting the footpaths"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The first paragraph gives measured footpath temperatures \"more than 20 degrees higher\" in full sun. Planting targets are a response to the problem, not evidence that bare streets are hotter."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Finding details",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "NSWS-R1-ART",
+    "stem": "According to the article, why do some suburbs \"never really cool down\"?",
+    "options": [
+      "Air conditioners run through the night",
+      "Roads and roofs give off heat at night",
+      "Trees release too much water",
+      "Houses fill every square metre of land"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The article says roads, roofs and car parks \"soak up the sun's heat during the day and release it slowly at night\". Small blocks are mentioned later, as the reason trees are lost, not as the reason for night heat."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Text structure",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "textStructure",
+    "stimulusId": "NSWS-R1-ART",
+    "stem": "What is the main purpose of the paragraph beginning \"Of course, trees are not perfect neighbours\"?",
+    "options": [
+      "to admit problems but play them down",
+      "to change the writer's whole argument",
+      "to list the best trees to plant",
+      "to explain how trees cool the air"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The paragraph names real drawbacks (roots and leaves) and then calls them \"small ones\" that \"can be managed\", which answers objections without giving up the argument. It does not name any species, so it is not a list of trees."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 1,
+    "skill": "Vocabulary and connectives",
+    "difficulty": 2,
+    "format": "cloze",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R1-ART",
+    "stem": "Planting a tree is easy, but keeping it alive is harder. [[1]], a sapling planted in a dry spell may need about 20 litres of water a week. [[2]] it is watered deeply, its roots stay near the surface and it struggles in the next heatwave. A little effort in the first two summers can [[3]] a tree that will shade the street for a century.",
+    "blanks": [
+      [
+        "However",
+        "For example",
+        "Instead",
+        "Otherwise"
+      ],
+      [
+        "Because",
+        "Although",
+        "Unless",
+        "Since"
+      ],
+      [
+        "harm",
+        "delay",
+        "replace",
+        "save"
+      ]
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "\"For example\" introduces a case of how hard care can be; there is no contrast for \"However\". \"Unless\" fits because shallow roots happen only when deep watering is missing. Effort in the early years can \"save\" a tree; \"harm\" or \"replace\" would contradict the point of the paragraph."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 1,
+    "skill": "Text cohesion",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R1-GAP",
+    "stem": "Which sentence best fills Gap 1?",
+    "options": [
+      "Electric signals travel faster than ripples, so the two arrive at different times.",
+      "A platypus may eat up to a fifth of its own body weight in a single night.",
+      "Because it is shy and active mostly at night, it is hard to know how many are left.",
+      "When it dives, it shuts its eyes, ears and nostrils tight.",
+      "Female platypuses lay one to three small, leathery eggs in a burrow."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The next sentence says scientists could not understand \"how it caught anything at all\", which only makes sense once we know it hunts with its eyes, ears and nostrils shut. The egg-laying sentence is true of platypuses but has nothing to do with hunting."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 1,
+    "skill": "Text cohesion",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R1-GAP",
+    "stem": "Which sentence best fills Gap 2?",
+    "options": [
+      "When it dives, it shuts its eyes, ears and nostrils tight.",
+      "Many of these sensors can detect very weak electric fields.",
+      "Electric signals travel faster than ripples, so the two arrive at different times.",
+      "When its pouches are full, it rises to breathe.",
+      "Female platypuses lay one to three small, leathery eggs in a burrow."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"These sensors\" points back to the \"tiny sensors\" in the bill, and the next sentence explains the \"faint electric signal\" that prey give off. The sentence about the two signals arriving \"at different times\" cannot go here, because ripples have not been mentioned yet."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 1,
+    "skill": "Text cohesion",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R1-GAP",
+    "stem": "Which sentence best fills Gap 3?",
+    "options": [
+      "When it dives, it shuts its eyes, ears and nostrils tight.",
+      "A platypus may eat up to a fifth of its own body weight in a single night.",
+      "Because it is shy and active mostly at night, it is hard to know how many are left.",
+      "Female platypuses lay one to three small, leathery eggs in a burrow.",
+      "Electric signals travel faster than ripples, so the two arrive at different times."
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "The gap comes after ripples are introduced and before \"compare the two\" and the lightning and thunder comparison; only this sentence explains why two signals arriving at different times are useful. None of the other options mentions two signals."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 1,
+    "skill": "Text cohesion",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R1-GAP",
+    "stem": "Which sentence best fills Gap 4?",
+    "options": [
+      "A platypus may eat up to a fifth of its own body weight in a single night.",
+      "When it dives, it shuts its eyes, ears and nostrils tight.",
+      "When its pouches are full, it rises to breathe.",
+      "Because it is shy and active mostly at night, it is hard to know how many are left.",
+      "Female platypuses lay one to three small, leathery eggs in a burrow."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"That would be like a 40-kilogram child eating eight kilograms of food\" needs an amount to compare: a fifth of its body weight. The sentence also follows on from \"a great deal of energy\"."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 1,
+    "skill": "Text cohesion",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R1-GAP",
+    "stem": "Which sentence best fills Gap 5?",
+    "options": [
+      "When it dives, it shuts its eyes, ears and nostrils tight.",
+      "Many of these sensors can detect very weak electric fields.",
+      "When its pouches are full, it rises to breathe.",
+      "A platypus may eat up to a fifth of its own body weight in a single night.",
+      "Because it is shy and active mostly at night, it is hard to know how many are left."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The platypus has just filled its cheek pouches underwater, and the next sentence begins \"Then it floats on the surface\", so the gap must bring it up from the riverbed. The diving sentence describes going down, the opposite movement."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 1,
+    "skill": "Text cohesion",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R1-GAP",
+    "stem": "Which sentence best fills Gap 6?",
+    "options": [
+      "Many of these sensors can detect very weak electric fields.",
+      "Electric signals travel faster than ripples, so the two arrive at different times.",
+      "A platypus may eat up to a fifth of its own body weight in a single night.",
+      "Because it is shy and active mostly at night, it is hard to know how many are left.",
+      "Female platypuses lay one to three small, leathery eggs in a burrow."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The next sentence says volunteers survey platypuses \"to find out whether their numbers are falling\", which answers the problem that it is \"hard to know how many are left\". The egg-laying sentence fits the topic but not this paragraph about threats and numbers."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R1-EXT",
+    "stem": "Which extract describes a plan that went wrong?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "In Extract A, Dad's \"famous shortcut added two hours\" and the track \"simply stopped\". Ari in Extract D gets lost because of fog, not because of a plan."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "NSWS-R1-EXT",
+    "stem": "Which extract gives the reader advice to follow?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Extract B speaks directly to \"you\" with instructions such as \"stop\", \"find shelter\" and \"tell someone where you are going\". The others tell stories rather than advise."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R1-EXT",
+    "stem": "In which extract does the writer change their mind about a past event?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The writer of Extract C once told the story \"as proof of how brave I was\" but now thinks \"it is really a story about her\". Extract A records the day it happened, so there is no later rethinking."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "NSWS-R1-EXT",
+    "stem": "In which extract does someone work out a direction by listening?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Ari hears the waves \"on her left\" and reasons that the road \"had to be on her right\". The whistle in Extract B is for calling rescuers, not for finding the way."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "NSWS-R1-EXT",
+    "stem": "In which extract are supplies used up too early?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Sam \"had eaten all the scroggin by eleven o'clock\", leaving one apple for lunch. Extract B mentions drinking water \"if you have it\" but describes no one running out."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R1-EXT",
+    "stem": "In which extract is someone more upset than the person who was lost?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The child \"did not cry\", but the grandmother \"was the one in tears\". In Extract D the uncle is calm, simply saying \"Took your time\"."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "NSWS-R1-EXT",
+    "stem": "Which extract explains how a lost person might be seen from the air?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Extract B says bright clothing or something shiny \"will make you easier to spot from a helicopter\". None of the other extracts mentions searching from above."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R1-EXT",
+    "stem": "In which extract does weather cause someone to lose their way?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The fog in Extract D makes the car park, path and fence vanish. In Extract A the family get sunburnt, but they are lost because of the shortcut, not the weather."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R1-EXT",
+    "stem": "Which extract was written while the writer was travelling?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The diary writer says \"I'm writing this in the back seat on the drive home\". Extract C looks back from many years later."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R1-EXT",
+    "stem": "Which extract is told by an adult looking back on their childhood?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Extract C begins \"I was six\" and refers to \"children of my own\", so an adult is remembering. Extract A is a child's diary written on the same day."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R1-PAIR",
+    "stem": "Which idea is found in both texts?",
+    "options": [
+      "Sea turtles are harmed by streetlights",
+      "City lights hide much of the night sky",
+      "Stars once guided when to plant crops",
+      "Country roads should stay unlit at night"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Text 1's speaker can see only \"four stars\" from a city window, and Text 2 says more than a third of people \"can no longer see the Milky Way from home\". Turtles appear only in Text 2 and planting by the stars only in Text 1."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing attitudes",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "toneWords",
+    "stimulusId": "NSWS-R1-PAIR",
+    "stem": "How does the attitude of the speaker in Text 1 differ from that of the writer of Text 2?",
+    "options": [
+      "Text 1 is bored; Text 2 is excited",
+      "Text 1 is angry; Text 2 is amused",
+      "Text 1 is fearful; Text 2 is hopeless",
+      "Text 1 is awed; Text 2 is practical"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The speaker in Text 1 is amazed (\"And there it is\") and stands with \"neck aching\", while Text 2 explains a problem and practical fixes. Text 2 calls it \"one of the easiest kinds of pollution to fix\", so it is not hopeless."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R1-PAIR",
+    "stem": "Which text compares the night sky to something found in a kitchen?",
+    "options": [
+      "Text 1 only",
+      "Text 2 only",
+      "Both texts",
+      "Neither text"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Text 1 describes the Milky Way \"like flour across a dark bench\". Text 2 uses facts and does not compare the sky to anything in a kitchen."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Purpose",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "authorPurpose",
+    "stimulusId": "NSWS-R1-PAIR",
+    "stem": "Which statement best describes the purpose of each text?",
+    "options": [
+      "Text 1 shares a moment; Text 2 explains a problem",
+      "Text 1 explains a problem; Text 2 shares a moment",
+      "Text 1 gives directions; Text 2 tells a story",
+      "Text 1 persuades; Text 2 entertains"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 1 captures one night with Gran, while Text 2 sets out the harm done by light pollution and how to fix it. The first wrong option simply swaps the two purposes."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 1,
+    "skill": "Comparing texts",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R1-PAIR",
+    "stem": "How would the writer of Text 2 most likely view the sky that Gran shows the speaker in Text 1?",
+    "options": [
+      "as an example of light pollution",
+      "as a danger to migrating birds",
+      "as what many people have lost",
+      "as a reason to light the road"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Text 2 is titled \"Losing the Dark\" and says most people cannot see the Milky Way; Gran's dark sky, \"out past the last streetlight\", is exactly what city dwellers are missing. It is the opposite of light pollution."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Inference",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R2-NARR",
+    "stem": "Sami says \"I know,\" although \"he hadn't known\". Why does he say this?",
+    "options": [
+      "He had already fixed the tail himself",
+      "He hopes Mr Okafor will help",
+      "He is trying to be polite",
+      "He doesn't want to look foolish"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "He has just failed in front of someone, and that night he rebuilds the kite \"alone, with the door shut\", which shows his pride. A polite reply would not need to be untrue, and he does not accept help until much later."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Author's technique",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "authorPurpose",
+    "stimulusId": "NSWS-R2-NARR",
+    "stem": "Why does the writer include the detail that a magpie \"inspected it with obvious disgust\"?",
+    "options": [
+      "to add humour to the failure",
+      "to show the oval is dangerous",
+      "to hint that rain is coming",
+      "to make us pity the magpie"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Giving the magpie a human reaction of \"disgust\" makes the crashed kite funny rather than sad. The magpie does nothing threatening, so it does not show danger."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Inference",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R2-NARR",
+    "stem": "The words \"as far as Sami could tell\" suggest that",
+    "options": [
+      "Mr Okafor hides his tomato cages",
+      "Sami watches Mr Okafor closely every day",
+      "Sami may have misjudged Mr Okafor",
+      "Mr Okafor has stopped gardening"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The phrase limits the claim that Mr Okafor builds \"nothing at all\" to Sami's view, hinting that he knows more than Sami thinks, which the shed scenes later prove. He is still gardening; he returns \"to his tomatoes\" at the end."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Character",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "toneWords",
+    "stimulusId": "NSWS-R2-NARR",
+    "stem": "Which words best describe the way Mr Okafor teaches Sami?",
+    "options": [
+      "strict and impatient",
+      "patient and encouraging",
+      "careless and distracted",
+      "proud and boastful"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "He \"asked questions instead of giving answers\" and nodded at wrong answers \"as if a wrong answer were a useful thing to have found\". He never rushes or scolds Sami, so \"strict and impatient\" is the opposite."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "wordsInContext",
+    "stimulusId": "NSWS-R2-NARR",
+    "stem": "The kite climbs \"until it was a red fleck against the blue\". A \"fleck\" is",
+    "options": [
+      "a torn strip",
+      "a bright flash",
+      "a tiny spot",
+      "a long streak"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The kite is \"so high he had to tip his head right back\", so from the ground it looks like a tiny spot of colour. It is flying well, not torn."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Main idea",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "mainIdea",
+    "stimulusId": "NSWS-R2-NARR",
+    "stem": "Which statement best sums up the extract?",
+    "options": [
+      "Accepting help leads to success",
+      "A boy beats his rival by cheating",
+      "An engineer builds a boy's kite",
+      "Kite Day is ruined by bad weather"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sami fails twice alone, then passes the kite over the fence, works with Mr Okafor and succeeds. Mr Okafor asks questions while Sami does the work, so he does not simply build it for him."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Imagery",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R2-POEM",
+    "stem": "The simile \"cold as a dinner plate\" helps the reader to",
+    "options": [
+      "imagine a meal on the beach",
+      "picture an everyday kind of cold",
+      "see how white the sand is",
+      "hear the sand crunch under their feet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Most readers know the cool, hard feel of a plate, so the comparison makes the cold sand easy to imagine. The poem is about temperature here, not the colour or sound of the sand."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Structure",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "textStructure",
+    "stimulusId": "NSWS-R2-POEM",
+    "stem": "What is the effect of the short sentences \"They do not race. They do not rush.\"?",
+    "options": [
+      "They show the swimmers are exhausted",
+      "They hint that a race will start",
+      "They make the swimmers seem angry",
+      "They stress the swimmers' calm pace"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The short, even sentences match the steady swimming described next: \"slow, then slower, end to end\". Nothing suggests tiredness; the swimmers are \"laughing\"."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Attitude",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "toneWords",
+    "stimulusId": "NSWS-R2-POEM",
+    "stem": "By the end of the poem, which word best describes the speaker's attitude towards the swimmers?",
+    "options": [
+      "admiring",
+      "scornful",
+      "bored",
+      "alarmed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The speaker watches closely and finally imagines the swimmers as once \"nervous\" and \"young like me\", showing respect for their courage. The opening line, \"Nobody sensible swims in June\", sounds scornful, but the poem moves away from that view."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Meaning of a line",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R2-POEM",
+    "stem": "What does the line \"as if the cold were no more than skin\" suggest?",
+    "options": [
+      "The swimmers wear wetsuits",
+      "The cold has hurt their skin",
+      "The cold does not trouble them",
+      "They are too cold to keep going"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Treating the cold as only skin-deep means it does not reach or bother them, which fits their slow, relaxed swimming. They keep swimming \"end to end\", so they are not about to stop."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Theme",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "mainIdea",
+    "stimulusId": "NSWS-R2-POEM",
+    "stem": "What does the speaker realise in the final stanza?",
+    "options": [
+      "The sea is too rough for swimming",
+      "Only older people swim in winter",
+      "They will never be brave enough",
+      "The regulars were once beginners"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The speaker thinks the swimmers \"must have been / nervous once, and young like me\", so their confidence was learned. This makes the speaker's own first swim seem possible, not impossible."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Author's technique",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "authorPurpose",
+    "stimulusId": "NSWS-R2-ART",
+    "stem": "Why does the writer describe ghost nets as \"hunters\" with \"no eyes, no brain and no hunger\"?",
+    "options": [
+      "They are alive and dangerous",
+      "They kill though no one uses them",
+      "They move quickly through the water",
+      "Fishers use them for sharks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The next sentences explain that the nets \"keep catching animals long after anyone is fishing with them\": they kill without purpose. \"No brain\" makes clear they are not actually alive."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Fact and opinion",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factOpinion",
+    "stimulusId": "NSWS-R2-ART",
+    "stem": "Which of these ideas from the article is an opinion rather than a fact?",
+    "options": [
+      "Many nets drift here from nearby seas",
+      "Rangers haul the nets above the high-tide line",
+      "The rangers' work deserves more recognition",
+      "Net sculptures are shown in galleries"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Whether work \"deserves far more recognition\" is the writer's judgement. Where nets come from, what rangers do and where sculptures have been shown can all be checked."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Finding details",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "NSWS-R2-ART",
+    "stem": "Why do rangers drag nets above the high-tide line?",
+    "options": [
+      "so artists can collect them easily",
+      "so that scientists can measure the mesh",
+      "so turtles can rest in the shade",
+      "so the sea cannot carry them off again"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The article says they haul nets up \"so that they cannot wash back out to sea\". Artists do reuse some nets, but that is not the reason given for moving them."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Supporting a claim",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "claimSupport",
+    "stimulusId": "NSWS-R2-ART",
+    "stem": "Which detail supports the claim that \"Australia cannot solve the problem alone\"?",
+    "options": [
+      "Most nets come from foreign boats",
+      "The nets can be very long",
+      "Rangers patrol remote beaches",
+      "Artists turn nets into sculptures"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The paragraph explains that \"most of them do not come from Australian boats\" but drift from neighbouring seas, so other countries must help. The size of the nets shows the danger, not who is responsible."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Text structure",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "textStructure",
+    "stimulusId": "NSWS-R2-ART",
+    "stem": "Which best describes how the article is organised?",
+    "options": [
+      "events in the order they happened",
+      "a problem, then efforts to tackle it",
+      "two sides of a debate weighed up",
+      "one turtle's life from birth to death"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "It first explains what ghost nets are and the harm they do, then where they come from, then the work of rangers and artists, and ends with what could fix it. It does not follow dates, and no opposing side is argued."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 2,
+    "skill": "Vocabulary and connectives",
+    "difficulty": 3,
+    "format": "cloze",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R2-ART",
+    "stem": "Ghost nets are not only a problem in the north. [[1]], fishing gear is one of the most common kinds of plastic rubbish found on Australian beaches. [[2]] nets are made of strong plastic, they can last for hundreds of years in the sea. This is why clean-up crews try to remove them [[3]] they break into small pieces that are almost impossible to collect.",
+    "blanks": [
+      [
+        "Instead",
+        "By contrast",
+        "Across the country",
+        "As a result"
+      ],
+      [
+        "Although",
+        "Because",
+        "Unless",
+        "Until"
+      ],
+      [
+        "after",
+        "because",
+        "unless",
+        "before"
+      ]
+    ],
+    "correct": [
+      2,
+      1,
+      3
+    ],
+    "explanation": "\"Across the country\" widens the problem beyond the north; nothing is being contrasted or caused. \"Because\" gives the reason the nets last so long. Crews must act \"before\" the nets break up, since the small pieces are \"almost impossible to collect\"."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 2,
+    "skill": "Text cohesion",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R2-GAP",
+    "stem": "Which sentence best fills Gap 1?",
+    "options": [
+      "In some northern areas, termites ate through the wooden poles until they fell.",
+      "Many people wanted a faster way to connect the colonies with the rest of the world.",
+      "To boost it, repeater stations were built about 250 kilometres apart.",
+      "Its two ends were joined at Frew's Ponds, near the middle of the continent.",
+      "Today, most long-distance messages travel through cables made of glass fibre."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The paragraph describes a problem (slow news) and the next sentence begins \"The solution was\", so the gap must express the wish for something faster. The glass fibre sentence jumps to the present day and breaks the story."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 2,
+    "skill": "Text cohesion",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R2-GAP",
+    "stem": "Which sentence best fills Gap 2?",
+    "options": [
+      "Many people wanted a faster way to connect the colonies with the rest of the world.",
+      "In some northern areas, termites ate through the wooden poles until they fell.",
+      "To boost it, repeater stations were built about 250 kilometres apart.",
+      "Today, most long-distance messages travel through cables made of glass fibre.",
+      "From there, a wire would run south through the centre to Adelaide."
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "\"From there\" refers back to Darwin, and the next sentence, \"This meant building a line about 3,200 kilometres long\", needs a route to describe. The termite sentence belongs to the paragraph about poles, after work has started."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 2,
+    "skill": "Text cohesion",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "textStructure",
+    "stimulusId": "NSWS-R2-GAP",
+    "stem": "Which sentence best fills Gap 3?",
+    "options": [
+      "Heat was not the only problem.",
+      "Many people wanted a faster way to connect the colonies with the rest of the world.",
+      "In some northern areas, termites ate through the wooden poles until they fell.",
+      "To boost it, repeater stations were built about 250 kilometres apart.",
+      "Today, most long-distance messages travel through cables made of glass fibre."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The paragraph has just mentioned temperatures \"above 40 degrees\" and the next sentence adds floods, so \"Heat was not the only problem\" links the two. The termite sentence would leave the following words \"Another enemy was much smaller\" with nothing to compare."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 2,
+    "skill": "Text cohesion",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R2-GAP",
+    "stem": "Which sentence best fills Gap 4?",
+    "options": [
+      "Many people wanted a faster way to connect the colonies with the rest of the world.",
+      "From there, a wire would run south through the centre to Adelaide.",
+      "Its two ends were joined at Frew's Ponds, near the middle of the continent.",
+      "In some northern areas, termites ate through the wooden poles until they fell.",
+      "Today, most long-distance messages travel through cables made of glass fibre."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Another enemy was much smaller\" is answered by termites, and \"In those areas\" needs a place to refer to: \"some northern areas\". Iron poles replacing wooden ones only makes sense after wood has been eaten."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 2,
+    "skill": "Text cohesion",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "logicalCompletion",
+    "stimulusId": "NSWS-R2-GAP",
+    "stem": "Which sentence best fills Gap 5?",
+    "options": [
+      "Many people wanted a faster way to connect the colonies with the rest of the world.",
+      "In some northern areas, termites ate through the wooden poles until they fell.",
+      "To boost it, repeater stations were built about 250 kilometres apart.",
+      "Its two ends were joined at Frew's Ponds, near the middle of the continent.",
+      "Today, most long-distance messages travel through cables made of glass fibre."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"At each one\" needs a plural place to point back to: the repeater stations. \"To boost it\" also answers the problem that the signal \"grew weaker\"."
+  },
+  {
+    "domain": "nswsCohesion",
+    "test": 2,
+    "skill": "Text cohesion",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "textStructure",
+    "stimulusId": "NSWS-R2-GAP",
+    "stem": "Which sentence best fills Gap 6?",
+    "options": [
+      "Its two ends were joined at Frew's Ponds, near the middle of the continent.",
+      "Many people wanted a faster way to connect the colonies with the rest of the world.",
+      "From there, a wire would run south through the centre to Adelaide.",
+      "To boost it, repeater stations were built about 250 kilometres apart.",
+      "Today, most long-distance messages travel through cables made of glass fibre."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Its two ends\" refers to the line that \"was completed\", and joining them is what made the whole connection work. The glass fibre sentence fits the topic but leaps to today, which clashes with \"For the first time\" in the next sentence."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "NSWS-R2-EXT",
+    "stem": "In which extract does the writer ask questions of the person they are writing to?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Tilly asks Jess \"Did you make the netball team?\" and about Mr Fraser. Extract C mentions wondering what an arvo was, but it does not put a question to the reader."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "NSWS-R2-EXT",
+    "stem": "Which extract describes a journey that is repeated every year?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The moths fly to the Alps \"each spring\" and their young \"repeat the trip\". The families in Extracts A and C move once."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R2-EXT",
+    "stem": "In which extract does someone misunderstand a word?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The child in Extract C does not know that \"arvo\" means afternoon and decides it is \"probably a kind of cake\". No one in the other extracts is confused by language."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R2-EXT",
+    "stem": "In which extract does a character find a record left by earlier residents?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Maya finds pencil lines where \"someone had measured children against the doorframe\". Nothing in the other extracts was left behind by previous occupants."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R2-EXT",
+    "stem": "In which extract does the writer make a promise?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Tilly writes \"I promise I'll come and stay in the summer holidays\". Maya in Extract D makes a mark, but she does not promise anything."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "NSWS-R2-EXT",
+    "stem": "Which extract describes the smell of a new place?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The writer notices \"the smell: sharp and clean, like the cough lollies\". Extract A describes the colour and heat of Broken Hill, not its smell."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R2-EXT",
+    "stem": "Which extract explains how travellers find their way?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Extract B says the moths \"can use the stars and Earth's magnetic field to guide them\". Extract C mentions a drive from the airport but not how anyone navigates."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R2-EXT",
+    "stem": "In which extract does a character add something of their own to a new home?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Maya writes \"MAYA 11\" on the doorframe beside the earlier names. Tilly in Extract A has not settled in and adds nothing to her new house."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R2-EXT",
+    "stem": "Which extract is written to someone the writer already knows?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Extract A is a letter to Jess, an old friend, with news about \"Mr Fraser\" they both know. Extract C is a memoir written for any reader."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R2-EXT",
+    "stem": "Which extract is told by an adult looking back on childhood?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Extract C begins \"I was seven when my family arrived\", told from much later. Extract D is told in the third person about Maya at the time it happens."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R2-PAIR",
+    "stem": "Which idea do both writers agree on?",
+    "options": [
+      "All homework should be banned",
+      "Worksheets help children learn",
+      "High school homework is useful",
+      "Reading at home is worthwhile"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Text 1 would \"happily keep\" reading, and Text 2 says reading at home is \"strongly linked\" to better vocabulary. Text 2 says homework should not \"vanish\", so it does not support banning it all."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing attitudes",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "toneWords",
+    "stimulusId": "NSWS-R2-PAIR",
+    "stem": "How does the tone of Text 1 differ from the tone of Text 2?",
+    "options": [
+      "Text 1 is calm; Text 2 is angry",
+      "Text 1 is frustrated; Text 2 is measured",
+      "Text 1 is amused; Text 2 is worried",
+      "Text 1 is uncertain; Text 2 is delighted"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Text 1 lists everything homework makes the writer miss and ends with a pointed question, while Text 2 weighs the research and suggests \"a sensible approach\". Text 2 is never angry."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R2-PAIR",
+    "stem": "Which text uses the writer's own experience as evidence?",
+    "options": [
+      "Text 1 only",
+      "Text 2 only",
+      "Both texts",
+      "Neither text"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Text 1 draws on the writer's own week (\"Fractions on Monday, spelling on Tuesday\"). Text 2 relies on what researchers have found, not personal experience."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "claimSupport",
+    "stimulusId": "NSWS-R2-PAIR",
+    "stem": "Which text refers to the findings of researchers?",
+    "options": [
+      "Text 1 only",
+      "Text 2 only",
+      "Both texts",
+      "Neither text"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Text 2 cites \"researchers who have reviewed many studies\". Text 1 mentions a \"research task\", but that is homework the writer was given, not research findings."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 2,
+    "skill": "Comparing texts",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R2-PAIR",
+    "stem": "How would the writer of Text 2 most likely respond to Text 1's complaint about worksheets?",
+    "options": [
+      "by agreeing they do little good",
+      "by saying they build discipline",
+      "by urging more of them in high school",
+      "by blaming students for rushing them"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 2 says that for primary students \"long worksheets show little benefit\", which supports the Text 1 writer's complaint. Text 2 never mentions discipline or blames students."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 0,
+    "skill": "Main idea",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "mainIdea",
+    "stimulusId": "NSWS-R0-NARR",
+    "stem": "What is the article mainly about?",
+    "options": [
+      "why Utzon left Australia for good",
+      "how the roof tiles were glazed",
+      "how a design problem was solved",
+      "who judged the 1957 competition"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Most of the article explains why the roof could not be built and how the sphere idea fixed it. Utzon's leaving is one detail near the end."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 0,
+    "skill": "Cause and effect",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "causeEffect",
+    "stimulusId": "NSWS-R0-NARR",
+    "stem": "Why could the first roof design not be built?",
+    "options": [
+      "No one could calculate its strength",
+      "The tiles were far too costly",
+      "The harbour site was too small",
+      "Utzon would not show anyone his plans"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Engineers \"had no way to calculate how such curves would carry their own enormous weight\". Cost is mentioned for later designs, not tiles, and nothing is said about the site or hidden plans."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 0,
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "wordsInContext",
+    "stimulusId": "NSWS-R0-NARR",
+    "stem": "The roof pieces are described as \"like parts of a giant kit\". This suggests the pieces",
+    "options": [
+      "were bought ready-made from a shop",
+      "were too large to lift",
+      "were made of plastic",
+      "were made to fit together"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A kit is a set of matching parts that join up, and the sphere idea meant \"the curves would all match\". The text says the pieces were \"lifted into place\", so they were not too large to lift."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 0,
+    "skill": "Inference",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inference",
+    "stimulusId": "NSWS-R0-NARR",
+    "stem": "\"A popular story says the idea came to him while he was peeling an orange, but there is no proof that it really happened that way.\" What does this sentence suggest?",
+    "options": [
+      "Utzon made up the orange story himself",
+      "The orange story may not be true",
+      "The solution came by accident",
+      "Utzon disliked talking about it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Popular story\" and \"no proof\" show doubt, so the story may be more legend than fact. The sentence says nothing about who invented the story."
+  },
+  {
+    "domain": "nswsComprehension",
+    "test": 0,
+    "skill": "Sequence",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "sequenceEvents",
+    "stimulusId": "NSWS-R0-NARR",
+    "stem": "Which of these events happened last?",
+    "options": [
+      "Utzon won the competition",
+      "the sphere idea was found",
+      "engineers tried many designs",
+      "Utzon left the project"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Utzon left in 1966, after the 1957 win, the years of failed designs and the breakthrough in about 1961. Only the 1973 opening came later, and it is not an option."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 0,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "NSWS-R0-EXT",
+    "stem": "Which extract gives steps to follow in order?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Extract B moves from one ball to two to three, telling the reader when to move on. The others describe what happened to someone."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 0,
+    "skill": "Comparing texts",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "findingDetail",
+    "stimulusId": "NSWS-R0-EXT",
+    "stem": "In which extract does someone get hurt?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The skater rolls into the letterbox: \"Scraped knee, ripped shorts\". Leo in Extract D is only embarrassed, not hurt."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 0,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R0-EXT",
+    "stem": "In which extract does a character pretend to have a skill?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Leo puts his hand up although \"Oui\" is \"most of the French he knew\", then nods \"wisely\" to hide it. The others are honestly learning."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 0,
+    "skill": "Comparing texts",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R0-EXT",
+    "stem": "In which extract does someone learn by copying others?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The grandmother \"watched the toddlers in the shallow end, copied their kicks\". Extract B gives instructions, but no one is shown watching and copying."
+  },
+  {
+    "domain": "nswsCompare",
+    "test": 0,
+    "skill": "Comparing texts",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "crossText",
+    "stimulusId": "NSWS-R0-EXT",
+    "stem": "In which extract does someone start learning a skill late in life?",
+    "options": [
+      "Extract A",
+      "Extract B",
+      "Extract C",
+      "Extract D"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The grandmother \"learned to swim at sixty-eight\". In Extract A, Dad is old enough to know skaters, but it is the young writer who is learning."
+  }
+]

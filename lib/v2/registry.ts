@@ -14,8 +14,13 @@ import { ACCUPLACER } from "./exams/accuplacer";
 import { ACT } from "./exams/act";
 import { GED } from "./exams/ged";
 import { TIMESTABLES } from "./exams/timestables";
+import { KS2 } from "./exams/ks2";
+import { GCSEMATHS } from "./exams/gcsemaths";
+import { OSSLT } from "./exams/osslt";
+import { NAPLAN } from "./exams/naplan";
+import { NSWSEL } from "./exams/nswsel";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, EMT, PARAMEDIC, SECPLUS, APLUS, AWS, TIMESTABLES];
+export const EXAMS_V2: ExamV2Config[] = [GED, SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, EMT, PARAMEDIC, SECPLUS, APLUS, AWS, TIMESTABLES, KS2, GCSEMATHS, OSSLT, NAPLAN, NSWSEL];
 
 export function getExamV2(id: string): ExamV2Config {
   const exam = EXAMS_V2.find((e) => e.id === id);

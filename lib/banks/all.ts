@@ -51,3 +51,8 @@ import "./caab";
 import "./caon";
 import "./camb";
 import "./auwa";
+import "./uksia";
+import "./uk18ed";
+import "./capal";
+import "./caelec";
+import "./auwhite";

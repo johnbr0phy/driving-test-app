@@ -28,6 +28,7 @@ export const GCSEMATHS: ExamV2Config = {
   icon: "calculator",
   theme: { brand: "82 65% 28%", brandDark: "82 65% 20%", brandLight: "82 70% 95%" },
   breakSeconds: 300,
+  breakNote: "The real papers are sat on different days.",
   sections: [
     {
       key: "p1",

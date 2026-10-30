@@ -86,8 +86,8 @@ S(IDEAS, 2, "Stating an opinion", 2, "Which sentence states the writer's opinion
   basics="topicSentences")
 
 O(ORG, 2, "Logical order", 1, "Put the sentences in the best order for a paragraph of instructions.",
-  ["First, check the forecast and the trail conditions.", "Next, dress in layers so you can adjust as you warm up.", "Then pack water, a snack and a charged phone.", "Finally, tell someone where you are going and when you will be back."],
-  "The order words First, Next, Then and Finally show the sequence of the instructions.",
+  ["First, check the forecast and the trail conditions.", "Next, dress in layers so you can adjust as you warm up.", "Then, once you are dressed, pack water, a snack and a charged phone.", "Finally, tell someone where you are going and when you will be back."],
+  "The order words First, Next, Then and Finally show the sequence, and \"once you are dressed\" puts packing after dressing in layers.",
   basics="transitions")
 C(ORG, 2, "Transition words", 2, "Choose the word that best connects the two sentences.\n\nOur team lost the first three games of the season. [[1]], we never gave up and went on to win the championship.",
   [["Nevertheless", "For instance", "Similarly", "In addition"]],

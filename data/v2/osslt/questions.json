@@ -1499,10 +1499,10 @@
       "format": "order",
       "skill": "Logical order",
       "stem": "Put the sentences in the best order for a paragraph of instructions.",
-      "explanation": "The order words First, Next, Then and Finally show the sequence of the instructions.",
+      "explanation": "The order words First, Next, Then and Finally show the sequence, and \"once you are dressed\" puts packing after dressing in layers.",
       "basics": "transitions",
       "options": [
-        "Then pack water, a snack and a charged phone.",
+        "Then, once you are dressed, pack water, a snack and a charged phone.",
         "Next, dress in layers so you can adjust as you warm up.",
         "Finally, tell someone where you are going and when you will be back.",
         "First, check the forecast and the trail conditions."

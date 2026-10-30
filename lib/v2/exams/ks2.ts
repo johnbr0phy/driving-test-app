@@ -34,6 +34,7 @@ export const KS2: ExamV2Config = {
   icon: "graduation",
   theme: { brand: "280 55% 44%", brandDark: "280 55% 32%", brandLight: "280 100% 96%" },
   breakSeconds: 300,
+  breakNote: "The real tests are sat on different days in the same week.",
   sections: [
     {
       key: "reading",

@@ -52,10 +52,7 @@ export function middleware(req: NextRequest) {
   // "/" is a different page per country at one URL, so browsers must not reuse
   // a stored copy after the country changes. The CDN still caches each
   // /home/<region> page on its own path.
-  if (pathname === "/") {
-    res.headers.set("Cache-Control", "private, no-cache, must-revalidate");
-    res.headers.append("Vary", "Cookie");
-  }
+  if (pathname === "/") res.headers.set("Cache-Control", "private, no-cache, must-revalidate");
 
   if (source && !crawler) {
     res.cookies.set(REGION_COOKIE, region, opts);

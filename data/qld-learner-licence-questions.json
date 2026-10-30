@@ -158,14 +158,14 @@
     "state": "ALL",
     "questionId": "AUQLD-GW-012",
     "category": "auqldGiveWay",
-    "question": "A car is coming out of a shopping centre car park as you begin a U-turn. Who must give way?",
-    "optionA": "The car leaving the car park",
-    "optionB": "The car on your left",
-    "optionC": "The slower vehicle",
-    "optionD": "You, doing the U-turn",
+    "question": "You are turning right from the road into a driveway. Which vehicles must you give way to?",
+    "optionA": "Vehicles behind you",
+    "optionB": "Vehicles on your left",
+    "optionC": "None, only pedestrians",
+    "optionD": "Oncoming vehicles",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The Queensland Road Rules go further than the national rules here: a U-turning driver must give way even to a driver entering the road from a car park or driveway."
+    "explanation": "Turning right from a road into a driveway or car park, you give way to oncoming vehicles going straight ahead or turning left, and to pedestrians and riders on the footpath you cross."
   },
   {
     "type": "AUQLD",
@@ -1873,7 +1873,7 @@
     "optionD": "Drive in the centre lane",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "On multi-lane roads with a limit of 90km/h or more you must not drive in the right lane unless overtaking, turning right, U-turning, avoiding an obstruction or in congested traffic."
+    "explanation": "On a multi-lane road with a limit over 80km/h, or where a keep left unless overtaking sign applies, you must not drive in the right lane unless overtaking, turning right, U-turning, avoiding an obstruction or in congested traffic."
   },
   {
     "type": "AUQLD",
@@ -2062,14 +2062,14 @@
     "state": "ALL",
     "questionId": "AUQLD-ROAD-020",
     "category": "auqldRoad",
-    "question": "Under the road rules, your vehicle is unattended when you are more than how far from it?",
-    "optionA": "1m",
-    "optionB": "10m",
-    "optionC": "20m",
-    "optionD": "3m",
+    "question": "Before you walk away from your parked car, you must switch off the engine if you will be more than:",
+    "optionA": "1m from it",
+    "optionB": "10m from it",
+    "optionC": "20m from it",
+    "optionD": "3m from it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A vehicle is unattended when the driver is more than 3m away. Before leaving it you must switch off the engine, apply the parking brake and lock it if possible."
+    "explanation": "Always apply the parking brake. Switch off the engine if you will be more than 3m from the car, and if no one is left inside, secure the windows and lock the doors."
   },
   {
     "type": "AUQLD",
@@ -2090,14 +2090,14 @@
     "state": "ALL",
     "questionId": "AUQLD-ROAD-022",
     "category": "auqldRoad",
-    "question": "You must report a crash to the police if:",
-    "optionA": "Only a mirror is broken",
-    "optionB": "A vehicle has to be towed",
-    "optionC": "Both drivers agree to it",
-    "optionD": "It happens in a car park",
+    "question": "When may you switch on your hazard warning lights?",
+    "optionA": "To thank another driver",
+    "optionB": "Stopped and blocking traffic",
+    "optionC": "When towing a trailer",
+    "optionD": "Parked legally at night",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Report a crash to police if anyone is killed or injured, a vehicle must be towed away, or a driver fails to give their details."
+    "explanation": "Hazard lights are for when you are stopped or moving slowly and obstructing others, stopped in an emergency stopping lane, or driving in hazardous weather such as fog or smoke. Any other use is an offence."
   },
   {
     "type": "AUQLD",
@@ -2657,7 +2657,7 @@
     "optionD": "Only on weekends",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Unlike other states, Queensland applies double demerit points all year to a second or later offence in the same group committed within 12 months."
+    "explanation": "Unlike other states, Queensland applies double demerit points all year to a second or later offence in the same group within 12 months: phone, seatbelt, helmet and speeding more than 20km/h over."
   },
   {
     "type": "AUQLD",

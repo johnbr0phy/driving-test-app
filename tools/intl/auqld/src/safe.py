@@ -77,7 +77,7 @@ ITEMS = [
      "Illegal phone use carries 4 demerit points and a large fine. A second phone offence within 12 months carries double points."),
     ("In Queensland, double demerit points for repeat phone, seatbelt and speeding offences apply:",
      "All year round", ["Only on public holidays", "Only at Easter", "Only on weekends"],
-     "Unlike other states, Queensland applies double demerit points all year to a second or later offence in the same group committed within 12 months."),
+     "Unlike other states, Queensland applies double demerit points all year to a second or later offence in the same group within 12 months: phone, seatbelt, helmet and speeding more than 20km/h over."),
     ("Where should the lap part of a seatbelt sit?",
      "Low across the hips", ["Across the stomach", "Across the ribs", "Loose on the thighs"],
      "The sash runs firmly over the shoulder and chest, and the lap belt runs firmly across the pelvis, buckled low on the hip."),

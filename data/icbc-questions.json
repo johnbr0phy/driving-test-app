@@ -988,7 +988,7 @@
     "optionA": "The lane nearest the curb",
     "optionB": "Whichever lane is empty",
     "optionC": "The lane nearest the centre",
-    "optionD": "The lane past the centre line",
+    "optionD": "A lane facing oncoming cars",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Turn from the lane next to the centre line in a smooth arc into the lane next to the centre line of the cross street."
@@ -1460,14 +1460,14 @@
     "state": "ALL",
     "questionId": "CABC-STD-013",
     "category": "cabcSafe",
-    "question": "How much clear space should you keep on each side of your vehicle?",
-    "optionA": "At least 1 metre",
-    "optionB": "At least 30 cm",
-    "optionC": "At least 2 metres",
-    "optionD": "Half a lane width",
+    "question": "On a road with a speed limit above 50 km/h, how much space must you leave when passing a cyclist or pedestrian?",
+    "optionA": "At least 1.5 metres",
+    "optionB": "At least 1.0 metre",
+    "optionC": "At least 3.0 metres",
+    "optionD": "At least 0.5 metre",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Keep at least one metre on each side, more when passing at higher speed or when visibility or roads are poor."
+    "explanation": "You must leave at least 1.0 metre when passing a cyclist, pedestrian or other vulnerable road user, and at least 1.5 metres where the speed limit is above 50 km/h. If they are on a sidewalk or protected cycle lane, leave at least 0.5 metre."
   },
   {
     "type": "CABC",

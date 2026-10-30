@@ -8,7 +8,7 @@ ITEMS = [
  "The centre or a right lane", ["The far left lane, for passing", "The paved shoulder lane", "Any lane you like"],
  "This leaves the left lane for faster traffic and passing vehicles."),
 ("You are turning left from a two-way road onto another two-way road. Which lane do you end up in?",
- "The lane nearest the centre", ["The lane nearest the curb", "Whichever lane is empty", "The lane past the centre line"],
+ "The lane nearest the centre", ["The lane nearest the curb", "Whichever lane is empty", "A lane facing oncoming cars"],
  "Turn from the lane next to the centre line in a smooth arc into the lane next to the centre line of the cross street."),
 ("You are turning left from a one-way road onto another one-way road. You should turn:",
  "From the left lane to the left lane", ["From the right lane to the left lane", "From the left lane to any lane", "From the right lane to the right lane"],

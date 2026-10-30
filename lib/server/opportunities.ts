@@ -22,7 +22,6 @@ const SOURCE_LABELS: Record<string, string> = {
   ai_other: 'Other AI', search: 'Search engines', direct: 'Direct / unknown', other: 'Other sites',
 };
 const PREMIUM_PRICE_CENTS = 999;
-const STATS_CRON_OLD_CAP = 2000;
 
 // Current and previous 7 and 30 days. A previous window that starts before
 // the series was first recorded is null, not a misleading zero; `since` is
@@ -508,16 +507,23 @@ export async function buildOpportunities(
   });
   const studyTimes = studyTimesDoc.data();
   const sampled = typeof studyTimes?.sampledUsers === 'number' ? studyTimes.sampledUsers : null;
+  const statsAt = typeof studyTimes?.updatedAt === 'string' ? Date.parse(studyTimes.updatedAt) : NaN;
+  const statsStale = Number.isNaN(statsAt) || Date.now() - statsAt > 36 * 60 * 60 * 1000;
+  const statsDate = Number.isNaN(statsAt)
+    ? null
+    : new Date(statsAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'America/New_York' });
   health.push({
     id: 'stats-cron',
-    status: sampled === null ? 'warn' : sampled >= usersSnap.size * 0.95 ? 'ok' : 'bad',
+    status: sampled === null ? 'warn' : statsStale || sampled < usersSnap.size * 0.95 ? 'bad' : 'ok',
     title: 'Nightly community stats',
     detail:
       sampled === null
         ? 'The 3am stats job has not reported how many accounts it read.'
-        : sampled >= usersSnap.size * 0.95
-          ? `The 3am stats job read ${sampled.toLocaleString('en-US')} accounts last night.`
-          : `The 3am stats job read ${sampled.toLocaleString('en-US')} of ${usersSnap.size.toLocaleString('en-US')} accounts (it stopped at ${STATS_CRON_OLD_CAP.toLocaleString('en-US')}), so most-missed questions, FastPass difficulty and study times leave out the rest. Fixed to read every account in pages.`,
+        : statsStale
+          ? `The 3am stats job last finished ${statsDate ?? 'at an unknown date'} (it read ${sampled.toLocaleString('en-US')} accounts), so most-missed questions, FastPass difficulty and study times are out of date. Check the aggregate-stats logs in Vercel.`
+          : sampled >= usersSnap.size * 0.95
+            ? `The 3am stats job read ${sampled.toLocaleString('en-US')} accounts last night.`
+            : `The 3am stats job read ${sampled.toLocaleString('en-US')} of ${usersSnap.size.toLocaleString('en-US')} accounts, so most-missed questions, FastPass difficulty and study times leave out the rest.`,
   });
   const rateLimited30 = w.sum(questions.rateLimited?.daily, 29, 0);
   health.push({

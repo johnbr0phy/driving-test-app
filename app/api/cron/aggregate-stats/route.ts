@@ -17,8 +17,10 @@ import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
 import { FieldPath } from "firebase-admin/firestore";
 import { getQuestionsData } from "@/lib/testGenerator";
 
-// Reading every account takes about 25s at ~5,000 accounts (Oct 2026).
-export const maxDuration = 60;
+// Paging every account one after another passed 60s at ~5,000 accounts
+// (timed out nightly from Oct 19 2026, so the docs kept the old 2,000-account
+// numbers). Reads now run in parallel uid ranges, with room to grow.
+export const maxDuration = 300;
 
 function verifyCronSecret(req: NextRequest): boolean {
   const secret = process.env.CRON_SECRET;
@@ -80,36 +82,45 @@ export async function GET(req: NextRequest) {
       studyUsers.add(uid);
     };
 
+    // Firebase uids are alphanumeric, so split the id space into ranges at
+    // these boundaries and page each range at the same time.
     const PAGE_SIZE = 500;
-    let cursor: string | null = null;
-    for (;;) {
-      let query = db
-        .collection("users")
-        .select("trainingAnswerHistory", "completedTests")
-        .orderBy(FieldPath.documentId())
-        .limit(PAGE_SIZE);
-      if (cursor) query = query.startAfter(cursor);
-      const page = await query.get();
-      sampledUsers += page.size;
-      page.forEach((doc) => {
-        if (!realUids.has(doc.id)) return;
-        const data = doc.data();
-        const history: any[] = Array.isArray(data.trainingAnswerHistory) ? data.trainingAnswerHistory : [];
-        for (const entry of history) {
-          tally(doc.id, entry?.answeredAt);
-          const id: string = entry?.questionId;
-          if (!id) continue;
-          if (!counts[id]) counts[id] = { correct: 0, wrong: 0 };
-          if (entry.isCorrect) counts[id].correct++;
-          else counts[id].wrong++;
-        }
-        for (const test of Array.isArray(data.completedTests) ? data.completedTests : []) {
-          for (const a of Array.isArray(test?.answers) ? test.answers : []) tally(doc.id, a?.answeredAt);
-        }
-      });
-      if (page.size < PAGE_SIZE) break;
-      cursor = page.docs[page.docs.length - 1].id;
-    }
+    const BOUNDS = ["", "4", "8", "C", "G", "K", "O", "S", "W", "a", "e", "i", "m", "q", "u", "y", null];
+    const readRange = async (from: string, to: string | null) => {
+      let cursor: string | null = null;
+      for (;;) {
+        let query = db
+          .collection("users")
+          .select("trainingAnswerHistory", "completedTests")
+          .orderBy(FieldPath.documentId())
+          .limit(PAGE_SIZE);
+        if (cursor) query = query.startAfter(cursor);
+        else if (from) query = query.startAt(from);
+        if (to) query = query.endBefore(to);
+        const page = await query.get();
+        sampledUsers += page.size;
+        page.forEach(addUser);
+        if (page.size < PAGE_SIZE) return;
+        cursor = page.docs[page.docs.length - 1].id;
+      }
+    };
+    const addUser = (doc: FirebaseFirestore.QueryDocumentSnapshot) => {
+      if (!realUids.has(doc.id)) return;
+      const data = doc.data();
+      const history: any[] = Array.isArray(data.trainingAnswerHistory) ? data.trainingAnswerHistory : [];
+      for (const entry of history) {
+        tally(doc.id, entry?.answeredAt);
+        const id: string = entry?.questionId;
+        if (!id) continue;
+        if (!counts[id]) counts[id] = { correct: 0, wrong: 0 };
+        if (entry.isCorrect) counts[id].correct++;
+        else counts[id].wrong++;
+      }
+      for (const test of Array.isArray(data.completedTests) ? data.completedTests : []) {
+        for (const a of Array.isArray(test?.answers) ? test.answers : []) tally(doc.id, a?.answeredAt);
+      }
+    };
+    await Promise.all(BOUNDS.slice(0, -1).map((from, i) => readRange(from as string, BOUNDS[i + 1])));
 
     // Build question lookup map from static data
     const allQuestions = getQuestionsData("en");

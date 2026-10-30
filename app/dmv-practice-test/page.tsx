@@ -1,3 +1,5 @@
+
+import { getTigerAsset } from "@/lib/tigerAssets";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -218,7 +220,7 @@ export default function DmvLandingPage() {
           </div>
           <div className="flex-shrink-0">
             <Image
-              src="/tiger_face_01.png"
+              src={getTigerAsset("dmv", 1)}
               alt="Tigertest mascot"
               width={180}
               height={180}

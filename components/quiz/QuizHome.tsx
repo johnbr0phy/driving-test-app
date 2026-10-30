@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ProgressCard } from "@/components/dashboard/ProgressCard";
 import { useHydration } from "@/hooks/useHydration";
-import { getTigerAsset } from "@/lib/tigerAssets";
+import { getSiteTigerAsset } from "@/lib/tigerAssets";
 import { QUIZ_TEST_MAX_QUESTIONS, quizLink, quizPath, quizPracticeSets, quizQuestionId, quizUrl, type QuizPublic } from "@/lib/quizzes";
 import { joinQuiz, quizMembership } from "@/lib/quizProgress";
 import { leaveClass, type ClassMembership } from "@/lib/classProgress";
@@ -38,11 +38,11 @@ function heroSub(done: number, total: number): string {
 
 function getTigerFace(complete: number, total: number): string {
   const pct = Math.round((complete / total) * 100);
-  if (pct >= 100) return getTigerAsset("dmv", 1);
-  if (pct >= 75) return getTigerAsset("dmv", 2);
-  if (pct >= 50) return getTigerAsset("dmv", 4);
-  if (pct >= 25) return getTigerAsset("dmv", 6);
-  return getTigerAsset("dmv", 8);
+  if (pct >= 100) return getSiteTigerAsset(1);
+  if (pct >= 75) return getSiteTigerAsset(2);
+  if (pct >= 50) return getSiteTigerAsset(4);
+  if (pct >= 25) return getSiteTigerAsset(6);
+  return getSiteTigerAsset(8);
 }
 
 export function QuizHome({ code, initial }: { code: string; initial: QuizPublic | null }) {

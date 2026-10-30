@@ -1,5 +1,7 @@
 "use client";
 
+import { getTigerAsset } from "@/lib/tigerAssets";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
@@ -57,7 +59,7 @@ export function TrainingTestNudge({ trainingCorrectCount, state }: TrainingTestN
             {/* Tiger icon */}
             <div className="flex-shrink-0">
               <Image
-                src="/tiger_face_04.png"
+                src={getTigerAsset("dmv", 4)}
                 alt="Tiger mascot"
                 width={48}
                 height={48}

@@ -1,5 +1,7 @@
 "use client";
 
+import { getTigerAsset } from "@/lib/tigerAssets";
+
 import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
@@ -317,11 +319,11 @@ function DashboardContent() {
   // Get tiger face image based on completion
   const getTigerFace = (complete: number, total: number): string => {
     const pct = Math.round((complete / total) * 100);
-    if (pct >= 100) return "/tiger_face_01.png";
-    if (pct >= 75) return "/tiger_face_02.png";
-    if (pct >= 50) return "/tiger_face_04.png";
-    if (pct >= 25) return "/tiger_face_06.png";
-    return "/tiger_face_08.png";
+    if (pct >= 100) return getTigerAsset("dmv", 1);
+    if (pct >= 75) return getTigerAsset("dmv", 2);
+    if (pct >= 50) return getTigerAsset("dmv", 4);
+    if (pct >= 25) return getTigerAsset("dmv", 6);
+    return getTigerAsset("dmv", 8);
   };
 
   return (

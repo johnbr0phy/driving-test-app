@@ -42,7 +42,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
 
   return (
     <header className="border-b bg-white dark:bg-gray-900" style={style}>
-      <div className="container relative mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+      <div className="container relative mx-auto px-4 py-4 flex items-center justify-between">
         <BrandLockup />
         {entry && <HeaderTestName entry={entry} />}
         <div className="flex items-center gap-1 sm:gap-2">

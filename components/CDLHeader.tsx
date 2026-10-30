@@ -76,7 +76,7 @@ export function CDLHeader() {
 
   return (
     <header className="border-b bg-white dark:bg-gray-900">
-      <div className="container relative mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+      <div className="container relative mx-auto px-4 py-4 flex items-center justify-between">
         <BrandLockup />
         {entry && <HeaderTestName entry={entry} label={variant ? headerTestLabel(variant.name) : undefined} />}
 

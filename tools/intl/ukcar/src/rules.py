@@ -26,7 +26,7 @@ Q = [
  "Double yellow lines mean no waiting at any time, even when there are no upright signs. A single yellow line limits waiting to the times on nearby plates."),
 ("What do double red lines on a red route mean?",
  "No stopping at any time", ["No parking after 7 pm", "Buses only at peak times", "Loading only, any time"],
- "On red routes double red lines mean no stopping at any time, apart from licensed taxis and Blue Badge holders setting down or picking up."),
+ "On red routes double red lines mean no stopping at any time, even to park or load, unless signs show otherwise. Single red lines allow stopping only at the times shown on nearby signs."),
 ("At night, which way should you face when parked on a road?",
  "The same way as the traffic", ["Against the traffic flow", "Either way is fine", "Towards the nearest junction"],
  "Rule 248 says do not park facing against the traffic flow at night unless in a recognised parking space, so your rear reflectors face oncoming traffic."),

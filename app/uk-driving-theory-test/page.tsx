@@ -167,7 +167,7 @@ export default function UkDrivingTheoryTestLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Mock Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four 50-question mock tests, the length of the real multiple-choice part, with the same 43 of 50 pass mark and an explanation of the right answer and the common wrong pick on every question.
+                Four 50-question mock tests, the length of the real multiple-choice part, with the same 43 of 50 pass mark and an explanation of the right answer on every question.
               </p>
             </div>
           </div>

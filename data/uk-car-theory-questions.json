@@ -77,7 +77,7 @@
     "question": "Between which hours are you most likely to feel sleepy on a long drive?",
     "optionA": "6 am and 10 am",
     "optionB": "Midnight and 6 am",
-    "optionC": "Noon and 4 pm",
+    "optionC": "4 pm and 8 pm",
     "optionD": "8 pm and 11 pm",
     "correctAnswer": "B",
     "correctIndex": 1,
@@ -370,12 +370,12 @@
     "category": "ukcarVehicle",
     "question": "Your car pulls to one side when you brake. What should you do?",
     "optionA": "Pump the brakes much harder",
-    "optionB": "Raise the tyre pressures",
+    "optionB": "Ignore it if it is slight",
     "optionC": "Have a garage check it now",
     "optionD": "Wait for the next service",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Annex 6 says that if the vehicle pulls to one side when braking, consult a garage or mechanic immediately. It usually means a brake fault."
+    "explanation": "Annex 6 says that if the vehicle pulls to one side when braking, consult a garage or mechanic immediately. It is most likely a brake fault or wrongly inflated tyres, and needs checking before you drive on."
   },
   {
     "type": "UKCAR",
@@ -1376,14 +1376,14 @@
     "state": "ALL",
     "questionId": "UKCAR-HAZ-027",
     "category": "ukcarHazard",
-    "question": "You are about to pass a bus at a stop. What should you do?",
-    "optionA": "Speed up to pass it quickly",
-    "optionB": "Sound your horn as you pass",
-    "optionC": "Watch for people stepping out",
-    "optionD": "Pass close to save time",
+    "question": "Why should you avoid parking right next to a car displaying a Blue Badge?",
+    "optionA": "It may need to leave first",
+    "optionB": "Its alarm may go off",
+    "optionC": "Its user may need extra room",
+    "optionD": "It may reverse without looking",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Passengers may cross in front of a stopped bus where you cannot see them. Slow down and be ready to stop."
+    "explanation": "Rule 239 says avoid stopping too close to a vehicle displaying a Blue Badge, because the disabled driver or passenger may need more room to get in or out."
   },
   {
     "type": "UKCAR",
@@ -1544,14 +1544,14 @@
     "state": "ALL",
     "questionId": "UKCAR-MWY-007",
     "category": "ukcarMotorway",
-    "question": "When may you overtake on the left on a motorway?",
-    "optionA": "When the right lane is busy",
+    "question": "When may you pass traffic on your right while keeping to your lane on a motorway?",
+    "optionA": "When a driver hogs the lane",
     "optionB": "When you are running late",
-    "optionC": "When the right lane queues slower",
+    "optionC": "In slow, congested queues",
     "optionD": "Whenever there is a safe gap",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Rule 268 says do not overtake on the left. In congested traffic, if your lane is moving faster than the lane to your right, you may keep pace with your lane."
+    "explanation": "Rule 268 says do not overtake on the left or move to a lane on your left to overtake. In congested traffic, where the lane to your right is moving more slowly, you may keep pace with your own lane."
   },
   {
     "type": "UKCAR",
@@ -1859,7 +1859,7 @@
     "optionD": "Loading only, any time",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "On red routes double red lines mean no stopping at any time, apart from licensed taxis and Blue Badge holders setting down or picking up."
+    "explanation": "On red routes double red lines mean no stopping at any time, even to park or load, unless signs show otherwise. Single red lines allow stopping only at the times shown on nearby signs."
   },
   {
     "type": "UKCAR",

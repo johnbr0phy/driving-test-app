@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "Are these the official RTO exam questions?",
-    a: "No. Every question is written by Tigertest from the Motor Vehicles Act 1988 as amended in 2019, the Central Motor Vehicles Rules, the Motor Vehicles (Driving) Regulations 2017 and the road signs in the Act's schedule, so it tests the same knowledge without copying any state's question bank. Road signs are described in words. Fines are not asked because states can raise them above the central minimums.",
+    a: "No. Every question is written by Tigertest from the Motor Vehicles Act 1988 as amended in 2019, the Central Motor Vehicles Rules, the Motor Vehicles (Driving) Regulations 2017 and the road signs in the Act's schedule, so it tests the same knowledge without copying any state's question bank. Road sign questions show the sign itself, drawn to the shapes and colours in the Act's schedule. Fines are not asked because states can raise them above the central minimums.",
   },
 ];
 

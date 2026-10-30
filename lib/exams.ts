@@ -4673,7 +4673,7 @@ const inrto: ExamConfig = {
   // informatory). Each state sets the question count (Kerala 30, 18 to pass since Oct 2025; few states publish theirs),
   // so passPct is the central 60%. A draft of Oct 2026 proposes 75%; not in force.
   // No state publishes topic weights, so counts are ours, weighted to signs and the rules of the road.
-  // Signs are described in words; no fine amounts (states may raise the 2019 minimums).
+  // Sign questions show drawn signs (public/signs/in, lib/signImages.ts); no fine amounts (states may raise the 2019 minimums).
   blueprint: {
     inrtoLicence: 6,
     inrtoMandatory: 8,

@@ -17,6 +17,8 @@ import { Question } from "@/types";
 import { getExamQuestions } from "@/lib/examData";
 import { ExamConfig } from "@/lib/exams";
 import { QuizRow } from "@/components/QuizRow";
+import { QuestionImage } from "@/components/QuestionImage";
+import { getSignIdForQuestion } from "@/lib/signImages";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
@@ -172,6 +174,7 @@ export function ExamStatsPage({ exam: source }: { exam: ExamConfig }) {
                   chipLabel={chip.label}
                   chipColorClass={chip.color}
                   question={item.question.question}
+                  media={getSignIdForQuestion(item.question.questionId) ? <QuestionImage questionId={item.question.questionId} /> : undefined}
                   subtitle={exam.categoryLabels[item.question.category] ?? item.question.category}
                   options={[item.question.optionA, item.question.optionB, item.question.optionC, item.question.optionD].filter(Boolean)}
                   correctAnswer={optionText(item.question, item.question.correctAnswer)}

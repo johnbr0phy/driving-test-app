@@ -14,7 +14,8 @@ Checks (hard failures):
   key         correctIndex matches correctAnswer
   letters     each letter between 20% and 30% of the bank
   banned      All/None of the above, Both A, A and B, em-dash, empty strings
-  dupes       duplicate options within a row, duplicate stems across the bank
+  dupes       duplicate options within a row, duplicate stems across the bank (a question shown
+              with a sign image from lib/signImages.ts may share its stem: the image is the question)
   length      key > 1.2x the average wrong option in more than 30% of items,
               key the single longest option in more than --max-key-longest (default 25%),
               bank average option length outside 12..42 characters,
@@ -27,6 +28,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import statistics
 import sys
@@ -39,6 +41,17 @@ BANNED = re.compile(r"all of the above|none of the above|—", re.I)
 OPTION_REF = re.compile(r"^(both\s+)?[abcd](\s+and\s+|\s*,\s*|\s+or\s+)[abcd]$", re.I)
 PROVIDERS = re.compile(r"\b(red cross|american heart|AHA|TIPS|TABC|ServSafe|YMCA|Ellis|NASM|ACE)\b")
 ID_RE = re.compile(r"^([A-Z0-9]+-)([A-Z0-9]+)-(\d{3})$")
+SIGN_MAP = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "lib", "signImages.ts")
+
+
+def sign_question_ids() -> set[str]:
+    """questionIds that QuestionImage shows with a sign (keys of SIGN_BY_QUESTION_ID)."""
+    try:
+        src = open(SIGN_MAP, encoding="utf-8").read()
+    except OSError:
+        return set()
+    block = src.split("SIGN_BY_QUESTION_ID", 1)[-1].split("};", 1)[0]
+    return set(re.findall(r'^\s*"([^"]+)":', block, re.M))
 
 
 def main() -> int:
@@ -65,6 +78,7 @@ def main() -> int:
         errs.append(f"state must be ALL: {dict(states)}")
 
     seen_stems: dict[str, str] = {}
+    with_sign = sign_question_ids()
     seg_last: dict[str, int] = defaultdict(int)
     prefixes = set()
     cat_order: list[str] = []
@@ -116,9 +130,10 @@ def main() -> int:
         if any(OPTION_REF.match(v.strip()) for v in opts.values()):
             errs.append(f"{qid}: option refers to other options")
         stem_key = re.sub(r"\W+", " ", q.lower()).strip()
-        if stem_key in seen_stems:
+        if stem_key in seen_stems and qid not in with_sign:
             errs.append(f"{qid}: duplicate stem of {seen_stems[stem_key]}")
-        seen_stems[stem_key] = qid
+        if qid not in with_sign:
+            seen_stems[stem_key] = qid
         for s in [q, *opts.values(), r["explanation"]]:
             if BANNED.search(s):
                 errs.append(f"{qid}: banned phrase or em-dash")

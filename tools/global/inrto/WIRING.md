@@ -193,22 +193,13 @@ Then run `tools/gen_dark_brand_css.py`.
 
 Bump `EXAM_LANDINGS_UPDATED_AT` to the integration date with a comment naming the wave.
 
-## Road sign images (plan only, nothing created)
+## Road sign images (done)
 
-There is a reusable mechanism: `components/QuestionImage.tsx` is rendered by `QuestionCard`, `TrainingCard`,
-`MissDrill` and the results debrief for any question whose `questionId` is in `SIGN_BY_QUESTION_ID`
-(`lib/signImages.ts`), loading `/public/signs/<signId>.svg` with alt text from `SIGN_DESCRIPTIONS`. It is keyed by
-question id, not by a field in the JSON, so it works for v1 exam banks with no schema change. Plan:
-1. Draw original SVGs to the MV Act schedule shapes and colours under `public/signs/in/` (e.g. `in/horn-prohibited.svg`,
-   `in/compulsory-sound-horn.svg`, `in/unguarded-level-crossing.svg`, `in/no-entry.svg`, ...), about 45 signs for the
-   MAN and CAU segments.
-2. Add `"INRTO-MAN-004": "in/horn-prohibited"` style entries to `SIGN_BY_QUESTION_ID` and their visual-only
-   descriptions to `SIGN_DESCRIPTIONS`, following the file's rule: map only meaning questions, skip the
-   "which group / which shape" items (MAN-025, MAN-026, MAN-032, CAU-018, CAU-019).
-3. Once a sign is shown, its stem can drop the words description ("A red circle with a horn crossed out means:"
-   becomes "This sign means:"). Keep the words version until the image ships, since the bank must stand alone.
-4. Check the `QuestionImage` card background (warm gradient) reads well with blue informatory signs.
-Today every sign is described in words in the stem, so the bank needs none of this to ship.
+`python3 -I tools/global/inrto/signs.py` draws 53 original signs to `public/signs/in/` (mandatory circles, cautionary
+triangles, informatory blue rectangles, per the MV Act schedule; overtaking prohibited uses arrows). They are mapped by
+questionId in `SIGN_BY_QUESTION_ID` (`lib/signImages.ts`) with visual-only alt text in `SIGN_DESCRIPTIONS`, and those
+stems read "What does this sign mean?". MAN-025, MAN-026, MAN-032, CAU-018 and CAU-019 (group and shape questions) stay
+in words. The bank validator skips the duplicate-stem check for questions with a sign image.
 
 ## lib/tigerAssets.ts, components/TestIcon.tsx, components/CDLHeader.tsx, lib/sitemaps.ts, next.config.ts
 

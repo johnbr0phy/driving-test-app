@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { QuizRow } from "@/components/QuizRow";
+import { QuestionImage } from "@/components/QuestionImage";
+import { getSignIdForQuestion } from "@/lib/signImages";
 import type { ClassQuestionRow } from "@/lib/classes";
 import { scoreText } from "@/components/teach/scoreColors";
 
@@ -83,6 +85,7 @@ export function ClassQuestions({
               chipLabel={chip.label}
               chipColorClass={chip.color}
               question={q.question}
+              media={getSignIdForQuestion(q.questionId) ? <QuestionImage questionId={q.questionId} /> : undefined}
               subtitle={[q.topic, topWrongPick(q.picks)].filter(Boolean).join(" · ")}
               options={q.options}
               correctAnswer={q.answer}

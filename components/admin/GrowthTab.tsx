@@ -564,6 +564,8 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
   const signups = sum("signup");
   const tried = sum("signup_tried");
   const cold = sum("signup_cold");
+  const pickerShown = sum("dmv_picker");
+  const stateChosen = sum("dmv_state");
   const pct = (n: number, d: number) => (d > 0 ? `${Math.round((n / d) * 100)}%` : "0%");
   const rate = (n: number, d: number) => (d > 0 ? `${((n / d) * 100).toFixed(1)}%` : "n/a");
   const cohortSum = (origin: "tried" | "cold", stage: CohortStage) =>
@@ -623,7 +625,7 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
               { label: "Purchased", value: purchased, note: `${pct(purchased, paywall)} of paywall hits` },
             ]}
           />
-          <div className="mt-5 grid gap-4 sm:grid-cols-3">
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-lg bg-gray-50 dark:bg-gray-950 p-3">
               <p className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">Signup page drop-off</p>
               <p className="mt-1 text-lg font-semibold text-gray-900 dark:text-gray-50">
@@ -641,6 +643,15 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
               <p className="mt-1 text-lg font-semibold text-gray-900 dark:text-gray-50">{pct(tried, tried + cold)}</p>
               <p className="text-xs text-gray-500 dark:text-gray-400">
                 {fmtInt(tried)} tried first, {fmtInt(cold)} signed up cold
+              </p>
+            </div>
+            <div className="rounded-lg bg-gray-50 dark:bg-gray-950 p-3">
+              <p className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">Never chose a DMV state</p>
+              <p className="mt-1 text-lg font-semibold text-gray-900 dark:text-gray-50">
+                {pickerShown > 0 ? pct(Math.max(pickerShown - stateChosen, 0), pickerShown) : "n/a"}
+              </p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">
+                {fmtInt(pickerShown)} saw the state picker, {fmtInt(stateChosen)} chose one (since Oct 29, 2026)
               </p>
             </div>
           </div>

@@ -883,7 +883,7 @@ export const zh: TranslationKeys = {
     takingTestIn: "我要参加驾照考试的州是",
     chooseState: "选择一个州",
     takingTestInSuffix: "",
-    stateNote: "每个州都有根据其驾驶手册编写的专属题目。",
+    stateNote: "选择你所在的州即可解锁全部 8 个步骤。每个州都有根据其驾驶手册编写的专属题目。",
     letsGo: "开始吧",
   },
 

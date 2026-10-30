@@ -49,7 +49,7 @@ export default function TestsHubPage() {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
-        <TestCatalogGrid />
+        <TestCatalogGrid regionPicker />
 
         <div className="mt-14 rounded-2xl bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">Make your own practice test</h2>

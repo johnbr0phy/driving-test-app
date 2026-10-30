@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ChevronRight, Search, X } from "lucide-react";
 import {
@@ -12,6 +12,8 @@ import { TestIcon } from "@/components/TestIcon";
 import { CountUp } from "@/components/CountUp";
 import { hasTigerSet } from "@/lib/tigerAssets";
 import { LANGUAGES } from "@/i18n";
+import { CountryPills, readRegionCookie } from "@/components/CountryPills";
+import { Region, orderGroupsForRegion } from "@/lib/region";
 
 /**
  * One test on the hub. Every card has the same rows so a grid lines up:
@@ -96,20 +98,48 @@ function LanguageFlags({ languages }: { languages: TestCatalogEntry["languages"]
  * Rendered on the client so typing filters instantly; with an empty query it
  * shows the full catalog exactly as the server would.
  */
-export function TestCatalogGrid({ showPopular = true, nested = false }: { showPopular?: boolean; nested?: boolean } = {}) {
+export function TestCatalogGrid({
+  showPopular = true,
+  nested = false,
+  region: fixedRegion,
+  regionPicker = false,
+}: {
+  showPopular?: boolean;
+  nested?: boolean;
+  /** The country the page was rendered for (the homepage); its groups come first. */
+  region?: Region;
+  /** Show the country pills above the search and follow the saved country (the /tests hub). */
+  regionPicker?: boolean;
+} = {}) {
   // nested: the grid sits under a page section's h2 (the homepage), so groups are h3 and cards h4.
   const GroupHeading = nested ? "h3" : "h2";
   const [query, setQuery] = useState("");
-  // The homepage shows its own live "Popular this week" row above the grid.
+  const [pickedRegion, setPickedRegion] = useState<Region>(fixedRegion ?? "US");
+  useEffect(() => {
+    const saved = regionPicker ? readRegionCookie() : null;
+    if (saved) setPickedRegion(saved);
+  }, [regionPicker]);
+  const region = fixedRegion ?? pickedRegion;
+  // The homepage shows its own live "Popular this week" row above the grid, and
+  // "Most popular" is US tests, so other countries skip it.
   const groups = useMemo(
-    () => searchTestGroups(query).filter((g) => showPopular || g.title !== "Most popular"),
-    [query, showPopular]
+    () =>
+      orderGroupsForRegion(
+        searchTestGroups(query).filter((g) => (showPopular && region === "US") || g.title !== "Most popular"),
+        region
+      ),
+    [query, showPopular, region]
   );
   const count = groups.reduce((n, g) => n + g.tests.length, 0);
   const searching = query.trim().length > 0;
 
   return (
     <>
+      {regionPicker && (
+        <div className="mb-8">
+          <CountryPills current={region} onChange={setPickedRegion} />
+        </div>
+      )}
       <div className="mx-auto mb-10 max-w-xl">
         <div className="relative">
           <Search

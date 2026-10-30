@@ -665,7 +665,7 @@
     "question": "A vehicle is tailgating you. What should you do?",
     "optionA": "Speed up to pull away from it",
     "optionB": "Brake hard to warn the driver",
-    "optionC": "Move onto the shoulder",
+    "optionC": "Turn on your hazard lights",
     "optionD": "Slow slightly to widen your gap",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1324,7 +1324,7 @@
     "optionA": "Cross it to overtake a slow car",
     "optionB": "Cross it to make a U-turn",
     "optionC": "Cross it to enter or leave the road",
-    "optionD": "Cross it to pass a stopped bus",
+    "optionD": "Cross it to pass a slow tractor",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "You may cross a single continuous dividing line to enter or leave the road, but you must not overtake other motor vehicles or make a U-turn over it."
@@ -1436,7 +1436,7 @@
     "optionA": "Only taxis and delivery trucks",
     "optionB": "Cars with just the driver",
     "optionC": "Cars carrying two or more people",
-    "optionD": "Cars carrying three or more",
+    "optionD": "Trucks with just the driver",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "A T2 transit lane is for buses, taxis, motorcycles, trams and vehicles carrying two or more people during the times on the sign. T3 needs three or more."

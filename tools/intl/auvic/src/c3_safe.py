@@ -12,7 +12,7 @@ ITEMS = [
      "On a wet or gravel road", ["On a dry, sunny day", "When traffic is light", "When the car ahead is small"],
      "A larger gap is safer in wet or slippery conditions, on gravel, at night or in poor visibility, with a heavy load and when distracted."),
     ("A vehicle is tailgating you. What should you do?",
-     "Slow slightly to widen your gap", ["Speed up to pull away from it", "Brake hard to warn the driver", "Move onto the shoulder"],
+     "Slow slightly to widen your gap", ["Speed up to pull away from it", "Brake hard to warn the driver", "Turn on your hazard lights"],
      "Do not feel pressured to speed up. If safe, slow slightly to increase the gap in front, giving you more time so you do not have to brake suddenly."),
     ("What is a head check?",
      "Looking over your shoulder", ["Checking the rear view mirror", "Adjusting the head rest", "Looking at the dashboard"],

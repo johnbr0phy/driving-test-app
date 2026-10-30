@@ -7,6 +7,18 @@ export const TIGER_EXAM_IDS = [
   "asvab", "cpr", "osha", "forklift", "alcohol", "accuplacer",
   "security", "lifeguard", "pnc", "sat", "act", "nclex",
   "cosmetology", "vtne", "paramedic", "nclexpn", "ged", "timestables",
+  // UK: reviewed school, workplace and trade artwork.
+  "ks2", "gcsemaths", "uksia", "uk18ed", "gcsehigher", "gcsescience",
+  "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh",
+  "ukfaw", "ukcare",
+  // CA: reviewed school, workplace and trade artwork.
+  "osslt", "capal", "caelec", "caauto", "caplumb", "cacarp",
+  "caweld", "capsw", "rexpn", "cawhmis", "caguard", "casfa",
+  "eqao9",
+  // AU: reviewed school, workplace and trade artwork.
+  "naplan", "nswsel", "auwhite", "naplan7", "ocnsw", "vicsel",
+  "hscmaths", "aursa", "aurcg", "aufss", "aufirstaid", "auforklift",
+  "auwah",
 ] as const;
 
 export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
@@ -22,13 +34,6 @@ const BORROWED_SETS: Record<string, string> = {
   ukcar: "dmv", ukadi: "dmv", ukmoto: "moto", uklgv: "cdl", ukpcv: "cdl",
   caon: "dmv", caqc: "dmv", cabc: "dmv", caab: "dmv", camb: "dmv",
   aunsw: "dmv", auvic: "dmv", auqld: "dmv", auwa: "dmv", ausa: "dmv",
-  // Workplace, trade and school exams borrow the nearest US set.
-  uksia: "security", uk18ed: "osha", caelec: "osha", auwhite: "osha", capal: "hunter",
-  ks2: "timestables", elevenplus: "timestables", fsmaths: "ged",
-  cscs: "osha", ukfood: "foodhandler", ukaplh: "alcohol", ukfaw: "cpr", ukcare: "cna",
-  rexpn: "nclexpn", capsw: "cna", casfa: "cpr", cawhmis: "osha", caguard: "security",
-  caauto: "osha", caplumb: "osha", cacarp: "osha", caweld: "osha",
-  aursa: "alcohol", aurcg: "alcohol", aufss: "foodhandler", aufirstaid: "cpr", auforklift: "forklift", auwah: "osha",
 };
 
 export function hasTigerSet(examId: string): boolean {

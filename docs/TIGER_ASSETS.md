@@ -43,3 +43,7 @@ The final 15 sets add 120 PNGs (9.5 MiB). CCMA uses the corrected rounded
 head throughout. The role and expression prompts are recorded in
 `TIGER_ASSET_PROMPTS.md`. These images were created with the built-in image
 generation tool and exported at 512 × 512 while preserving transparency.
+
+## International school, workplace and trade exams
+
+Forty dedicated sets (320 PNGs) replace the borrowed/default artwork for the exams in PRs #568 and #569. See [coverage, previews and expression requirements](tiger-assets-international.md).

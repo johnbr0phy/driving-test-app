@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,13 +29,13 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/gcse-computer-science-practice-test`,
-    images: [{ url: "/og/gcsecs", width: 1200, height: 630, alt: "Tigertest free GCSE Computer Science practice test" }],
+    images: [{ url: shareImageUrl("gcsecs"), width: 1200, height: 630, alt: "Tigertest free GCSE Computer Science practice test" }],
     siteName: "Tigertest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og/gcsecs"],
+    images: [shareImageUrl("gcsecs")],
     title,
     description: metaDescription,
   },

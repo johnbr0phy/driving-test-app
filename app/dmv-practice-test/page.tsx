@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
 import { TEST_CATALOG } from "@/lib/testCatalog";
@@ -20,8 +21,8 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: pageUrl },
-  openGraph: { title: `${title} | Tigertest`, description, url: pageUrl, siteName: "Tigertest", type: "website", images: ["/og-home.png"] },
-  twitter: { card: "summary_large_image", title: `${title} | Tigertest`, description, images: ["/og-home.png"] },
+  openGraph: { title: `${title} | Tigertest`, description, url: pageUrl, siteName: "Tigertest", type: "website", images: [shareImageUrl("dmv")] },
+  twitter: { card: "summary_large_image", title: `${title} | Tigertest`, description, images: [shareImageUrl("dmv")] },
 };
 
 // One list for the visible FAQ and the FAQPage JSON-LD, so the two never drift.

@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata } from "next";
 import { getExamById, examLandingPath } from "./exams";
 import type { ExamV2Config } from "./v2/types";
@@ -6,7 +7,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 /** The exam's own share card, so a shared app link never shows the DMV card. */
 function shareTags(id: string, title: string, description: string, landing: string): Metadata {
-  const image = { url: `/og/${id}`, width: 1200, height: 630, alt: `Tigertest ${title}` };
+  const image = { url: shareImageUrl(id), width: 1200, height: 630, alt: `Tigertest ${title}` };
   return {
     openGraph: { type: "website", siteName: "Tigertest", title, description, url: `${siteUrl}${landing}`, images: [image] },
     twitter: { card: "summary_large_image", title, description, images: [image.url] },
@@ -45,11 +46,11 @@ export function examV2AppMetadata(exam: ExamV2Config): Metadata {
 
 /** Neutral Tigertest card for site pages that belong to no one exam (login, signup...). */
 export function siteShareMetadata(title: string): Metadata {
-  const description = "Free practice tests for 40+ exams: DMV, CDL, NCLEX, SAT, ACT, CompTIA and more, with instant feedback.";
-  const image = { url: "/tiger.png", width: 1024, height: 1024, alt: "Tigertest" };
+  const description = "Free practice tests for driving, school, healthcare and work. Every answer explained.";
+  const image = { url: shareImageUrl("home"), width: 1200, height: 630, alt: "Tigertest" };
   return {
     openGraph: { type: "website", siteName: "Tigertest", title, description, url: siteUrl, images: [image] },
-    twitter: { card: "summary", title, description, images: [image.url] },
+    twitter: { card: "summary_large_image", title, description, images: [image.url] },
   };
 }
 

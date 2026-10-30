@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -54,12 +55,12 @@ export function translatedLandingMetadata(examId: string, lang: Language, c: Tra
       title: c.metaTitle,
       description: c.metaDescription,
       url,
-      images: [{ url: `/og/${examId}`, width: 1200, height: 630, alt: c.h1 }],
+      images: [{ url: shareImageUrl(examId, lang), width: 1200, height: 630, alt: c.h1 }],
       siteName: "Tigertest",
       type: "website",
       locale: (LOCALES[lang] ?? lang).replace("-", "_"),
     },
-    twitter: { card: "summary_large_image", images: [`/og/${examId}`], title: c.metaTitle, description: c.metaDescription },
+    twitter: { card: "summary_large_image", images: [shareImageUrl(examId, lang)], title: c.metaTitle, description: c.metaDescription },
   };
 }
 

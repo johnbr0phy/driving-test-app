@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,13 +29,13 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/cosmetology-practice-test`,
-    images: [{ url: "/og/cosmetology", width: 1200, height: 630, alt: "Tigertest free cosmetology practice test" }],
+    images: [{ url: shareImageUrl("cosmetology"), width: 1200, height: 630, alt: "Tigertest free cosmetology practice test" }],
     siteName: "Tigertest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og/cosmetology"],
+    images: [shareImageUrl("cosmetology")],
     title,
     description: metaDescription,
   },

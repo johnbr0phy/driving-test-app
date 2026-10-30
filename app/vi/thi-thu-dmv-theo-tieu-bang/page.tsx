@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight, Languages } from "lucide-react";
@@ -28,8 +29,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "vi_VN",
     url: `${siteUrl}/vi/thi-thu-dmv-theo-tieu-bang`,
-    images: [{ url: "/tiger.png", width: 512, height: 512 }],
+    images: [{ url: shareImageUrl("dmv", "vi"), width: 1200, height: 630 }],
   },
+  twitter: { card: "summary_large_image", images: [shareImageUrl("dmv", "vi")] },
 };
 
 const viStates = VI_STATE_CODES.map((code) => getStateByCode(code)!).sort(

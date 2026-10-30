@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
@@ -29,11 +30,11 @@ const assetOrigin = siteUrl.replace("://tigertest.io", "://www.tigertest.io");
 export const metadata: Metadata = {
   metadataBase: new URL(assetOrigin),
   title: {
-    default: "Free DMV Practice Test 2026 - All 50 States | Tigertest",
+    default: "Free Practice Tests for Driving, School & Work | Tigertest",
     template: "%s | Tigertest",
   },
   description:
-    "Free DMV practice tests for all 50 states. 200+ questions per state with instant feedback and detailed explanations. Track your progress and pass your driving test on the first try.",
+    "Free practice tests for driving, school, healthcare, trades and professional exams. Learn with every answer and find the topics to work on next.",
   keywords: [
     "driving test practice",
     "DMV practice test",
@@ -65,12 +66,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "Tigertest",
-    title: "Free DMV Practice Test 2026 | Tigertest",
+    title: "Free Practice Tests for Driving, School & Work | Tigertest",
     description:
-      "Free DMV practice tests for all 50 states. 200+ questions per state with instant feedback and detailed explanations.",
+      "Free practice tests for driving, school, healthcare and work. Every answer explained.",
     images: [
       {
-        url: "/og-home.png",
+        url: shareImageUrl("home"),
         width: 1200,
         height: 630,
         alt: "Tigertest: free practice tests for DMV, CDL, nursing and more",

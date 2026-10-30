@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
@@ -27,8 +28,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_US",
     url: `${siteUrl}/es/examenes-practica-por-estado`,
-    images: [{ url: "/tiger.png", width: 512, height: 512 }],
+    images: [{ url: shareImageUrl("dmv", "es"), width: 1200, height: 630 }],
   },
+  twitter: { card: "summary_large_image", images: [shareImageUrl("dmv", "es")] },
 };
 
 function groupStatesByLetter() {

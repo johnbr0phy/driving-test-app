@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
@@ -29,13 +30,13 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/osha-10-practice-test`,
-    images: [{ url: "/og/osha", width: 1200, height: 630, alt: "Tigertest free OSHA 10 practice test" }],
+    images: [{ url: shareImageUrl("osha"), width: 1200, height: 630, alt: "Tigertest free OSHA 10 practice test" }],
     siteName: "Tigertest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og/osha"],
+    images: [shareImageUrl("osha")],
     title,
     description: metaDescription,
   },

@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
@@ -28,13 +29,13 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/food-handler-practice-test`,
-    images: [{ url: "/og/foodhandler", width: 1200, height: 630, alt: "Tigertest free Food Handler practice test" }],
+    images: [{ url: shareImageUrl("foodhandler"), width: 1200, height: 630, alt: "Tigertest free Food Handler practice test" }],
     siteName: "Tigertest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og/foodhandler"],
+    images: [shareImageUrl("foodhandler")],
     title,
     description: metaDescription,
   },

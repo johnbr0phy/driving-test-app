@@ -8,7 +8,7 @@ const BUILD_LAST_MODIFIED = new Date().toUTCString();
 const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/api/og/score-card": ["./public/tiger_face_*.png", "./public/tigers/**/*.png"],
-    "/og/[examId]": ["./public/tigers/**/*.png", "./public/tiger.png"],
+    "/og/[examId]": ["./public/tigers/**/*.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
   },
   images: {
     formats: ["image/avif", "image/webp"],

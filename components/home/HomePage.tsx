@@ -1,3 +1,4 @@
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -34,9 +35,9 @@ export const homeMetadata: Metadata = {
     url: siteUrl,
     siteName: "Tigertest",
     type: "website",
-    images: [{ url: "/og-tests.png", width: 1200, height: 630, alt: `Tigertest: ${examCount} free practice tests` }],
+    images: [{ url: shareImageUrl("home"), width: 1200, height: 630, alt: `Tigertest: ${examCount} free practice tests` }],
   },
-  twitter: { card: "summary_large_image", title, description: metaDescription, images: ["/og-tests.png"] },
+  twitter: { card: "summary_large_image", title, description: metaDescription, images: [shareImageUrl("home")] },
 };
 
 /** /uk, /ca and /au: the country's own title, description and canonical. */
@@ -54,9 +55,9 @@ export function countryHomeMetadata(region: Exclude<Region, "US">): Metadata {
       siteName: "Tigertest",
       type: "website",
       locale: REGION_HREFLANG[region].replace("-", "_"),
-      images: [{ url: "/og-tests.png", width: 1200, height: 630, alt: t }],
+      images: [{ url: shareImageUrl(region.toLowerCase()), width: 1200, height: 630, alt: t }],
     },
-    twitter: { card: "summary_large_image", title: t, description: d, images: ["/og-tests.png"] },
+    twitter: { card: "summary_large_image", title: t, description: d, images: [shareImageUrl(region.toLowerCase())] },
   };
 }
 

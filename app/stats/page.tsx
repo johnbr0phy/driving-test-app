@@ -20,6 +20,8 @@ import { Question } from "@/types";
 import { getQuestionsData } from "@/lib/testGenerator";
 import { CommunityWrongQuestions } from "@/components/CommunityWrongQuestions";
 import { QuizRow } from "@/components/QuizRow";
+import { isClassStudent } from "@/lib/classProgress";
+import { DMV_EXAM_ID } from "@/lib/classes";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
@@ -54,7 +56,10 @@ function StatsContent() {
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
 
   const { user } = useAuth();
-  const isPremium = hydrated ? hasPremiumAccess() : false;
+  // Students in a teacher's DMV class see every stat without Premium.
+  const [inClass, setInClass] = useState(false);
+  useEffect(() => setInClass(isClassStudent(DMV_EXAM_ID)), []);
+  const isPremium = hydrated ? hasPremiumAccess() || inClass : false;
   const FREE_QUESTION_LIMIT = 5;
   const FREE_QUESTION_LIMIT_MOBILE = 2;
 

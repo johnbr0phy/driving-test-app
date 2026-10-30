@@ -1,0 +1,27 @@
+{
+  "id": "cacarp",
+  "stateCode": "CACARP",
+  "idBase": 8900,
+  "prefix": "CACARP-",
+  "slug": "/red-seal-carpenter",
+  "landingPath": "/red-seal-carpenter-practice-test",
+  "dataFile": "data/red-seal-carpenter-questions.json",
+  "passPct": 70,
+  "outline": "Red Seal Occupational Standard (RSOS) Carpenter 403A, 2022 standard; exam weightings on red-seal.ca (checked 2026-10-30) and Saskatchewan's 2026 Carpenter IP exam information (form 2026 080426). 100 questions, 70% pass, 4 hours maximum, NBC 2020 Vol 2 supplied.",
+  "categories": [
+    {"key": "cacarpCommon", "label": "Common Occupational Skills", "perTest": 6, "pool": 24, "segment": "COM", "mwa": "A 12%"},
+    {"key": "cacarpLayout", "label": "Planning & Layout", "perTest": 7, "pool": 28, "segment": "LAY", "mwa": "B 14%"},
+    {"key": "cacarpConcrete", "label": "Concrete & Formwork", "perTest": 8, "pool": 32, "segment": "CON", "mwa": "C 16%"},
+    {"key": "cacarpFraming", "label": "Framing", "perTest": 10, "pool": 40, "segment": "FRM", "mwa": "D 20%"},
+    {"key": "cacarpExterior", "label": "Exterior Finish", "perTest": 7, "pool": 28, "segment": "EXT", "mwa": "E 14%"},
+    {"key": "cacarpInterior", "label": "Interior Finish & Stairs", "perTest": 7, "pool": 28, "segment": "INT", "mwa": "F 14%"},
+    {"key": "cacarpReno", "label": "Renovations", "perTest": 5, "pool": 20, "segment": "REN", "mwa": "G 10%"}
+  ],
+  "trainingSets": [
+    {"set": 1, "id": 8901, "name": "Safety, Tools & Layout", "categories": ["cacarpCommon", "cacarpLayout"], "size": 52},
+    {"set": 2, "id": 8902, "name": "Concrete & Formwork", "categories": ["cacarpConcrete"], "size": 32},
+    {"set": 3, "id": 8903, "name": "Framing", "categories": ["cacarpFraming"], "size": 40},
+    {"set": 4, "id": 8904, "name": "Exterior Finish", "categories": ["cacarpExterior"], "size": 28},
+    {"set": 5, "id": 8905, "name": "Interior Finish & Renovations", "categories": ["cacarpInterior", "cacarpReno"], "size": 48}
+  ]
+}

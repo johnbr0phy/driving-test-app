@@ -1,0 +1,24 @@
+{
+  "id": "ukfaw",
+  "stateCode": "UKFAW",
+  "idBase": 8500,
+  "prefix": "UKFAW-",
+  "slug": "/first-aid-at-work",
+  "landingPath": "/first-aid-at-work-practice-test",
+  "dataFile": "data/first-aid-at-work-questions.json",
+  "name": "First Aid at Work Practice Test",
+  "shortName": "First Aid at Work",
+  "examLabel": "First Aid at Work",
+  "fullName": "First Aid at Work (FAW) course theory assessment",
+  "icon": "bandage",
+  "passPct": 70,
+  "categories": [
+    {"key": "ukfawRole", "label": "The First-Aider's Role & Assessment", "perTest": 6, "segment": "ROL", "module": "role"},
+    {"key": "ukfawResus", "label": "Unresponsive Casualty, CPR & AED", "perTest": 8, "segment": "RES", "module": "resus"},
+    {"key": "ukfawBleed", "label": "Wounds, Bleeding & Shock", "perTest": 8, "segment": "BLD", "module": "bleed"},
+    {"key": "ukfawBones", "label": "Bones, Joints, Head & Spinal Injuries", "perTest": 7, "segment": "BON", "module": "bones"},
+    {"key": "ukfawChest", "label": "Choking, Breathing & Chest Injuries", "perTest": 5, "segment": "CHS", "module": "chest"},
+    {"key": "ukfawBurns", "label": "Burns, Eyes, Electricity & Poisoning", "perTest": 7, "segment": "BRN", "module": "burns"},
+    {"key": "ukfawIllness", "label": "Major Illness & Anaphylaxis", "perTest": 9, "segment": "ILL", "module": "illness"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "cawhmis",
+  "stateCode": "CAWHMIS",
+  "idBase": 9200,
+  "prefix": "CAWHMIS-",
+  "slug": "/whmis",
+  "landingPath": "/whmis-practice-test",
+  "dataFile": "data/whmis-questions.json",
+  "passPct": 80,
+  "categories": [
+    {"key": "cawhmisBasics", "label": "WHMIS Basics, Laws & Roles", "perTest": 8, "segment": "BAS"},
+    {"key": "cawhmisHazards", "label": "Hazard Classes & Categories", "perTest": 7, "segment": "HAZ"},
+    {"key": "cawhmisPictos", "label": "Pictograms", "perTest": 9, "segment": "PIC"},
+    {"key": "cawhmisLabels", "label": "Supplier & Workplace Labels", "perTest": 9, "segment": "LAB"},
+    {"key": "cawhmisSds", "label": "Safety Data Sheets", "perTest": 9, "segment": "SDS"},
+    {"key": "cawhmisSafe", "label": "Safe Handling & Emergencies", "perTest": 8, "segment": "SAF"}
+  ]
+}

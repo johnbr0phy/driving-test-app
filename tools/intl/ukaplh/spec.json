@@ -1,0 +1,25 @@
+{
+  "id": "ukaplh",
+  "stateCode": "UKAPLH",
+  "idBase": 8400,
+  "prefix": "UKAPLH-",
+  "slug": "/personal-licence",
+  "landingPath": "/personal-licence-practice-test",
+  "dataFile": "data/uk-personal-licence-questions.json",
+  "name": "Personal Licence Practice Test",
+  "shortName": "Personal Licence",
+  "examLabel": "Personal licence exam (APLH)",
+  "fullName": "Level 2 Award for Personal Licence Holders (England and Wales)",
+  "icon": "wine",
+  "passPct": 70,
+  "categories": [
+    {"key": "ukaplhAuth", "label": "Licensing Objectives & Authorities", "perTest": 6, "segment": "AUT"},
+    {"key": "ukaplhPersonal", "label": "Personal Licences", "perTest": 7, "segment": "PER"},
+    {"key": "ukaplhPremises", "label": "Premises Licences & Conditions", "perTest": 8, "segment": "PRM"},
+    {"key": "ukaplhDps", "label": "Designated Premises Supervisor", "perTest": 4, "segment": "DPS"},
+    {"key": "ukaplhActivities", "label": "Licensable Activities & TENs", "perTest": 7, "segment": "ACT"},
+    {"key": "ukaplhPowers", "label": "Police Powers & Offences", "perTest": 6, "segment": "POW"},
+    {"key": "ukaplhChildren", "label": "Protecting Children", "perTest": 7, "segment": "CHI"},
+    {"key": "ukaplhAlcohol", "label": "Alcohol & Responsible Retail", "perTest": 5, "segment": "ALC"}
+  ]
+}

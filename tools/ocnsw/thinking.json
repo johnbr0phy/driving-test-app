@@ -1,0 +1,1343 @@
+[
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Strengthen an argument",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Ms Lee: Our class should grow vegetables in the school garden. Looking after plants every day teaches students to be patient and responsible.\n\nWhich one of these statements, if true, most strengthens Ms Lee's argument?",
+    "options": [
+      "Students who cared for the class plants last year got better at finishing their jobs on time.",
+      "Tomatoes and beans grow best in a sunny spot that gets plenty of water.",
+      "Some students in the class say they do not like eating vegetables at all.",
+      "The school garden is next to the library and was built by parents last year."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ms Lee says caring for plants builds responsibility. Students getting better at finishing jobs after caring for plants backs this up. The other facts say nothing about patience or responsibility."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Weaken an argument",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Ben: I should be allowed to get a puppy. I always remember to feed my goldfish, so I will remember to look after a dog.\n\nWhich one of these statements, if true, most weakens Ben's argument?",
+    "options": [
+      "Ben has looked after his goldfish every single day for the last two years.",
+      "A puppy needs walking, training and feeding every day, which is much more work than a goldfish.",
+      "Puppies are among the most popular pets for families all over Australia.",
+      "Ben's neighbour has a cat called Smudge that often sleeps on their fence."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ben's argument depends on a goldfish being like a dog. If a puppy is far more work, feeding a fish does not show he can manage a dog. Two years of goldfish care would strengthen his case."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Must be true",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Everyone in the chess club is in Year 4. Some people in the chess club also play soccer.\n\nIf these statements are true, which one of these must also be true?",
+    "options": [
+      "Everyone in Year 4 is in the chess club.",
+      "Everyone who plays soccer is in Year 4.",
+      "Some Year 4 students play soccer.",
+      "Nobody in Year 5 plays soccer."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The chess players who play soccer are all in Year 4, so at least some Year 4 students play soccer. Nothing says every Year 4 student is in the club or tells us about other soccer players."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Find the mistake",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Zara: Every time I wear my blue socks, my netball team wins. So my blue socks make my team win.\n\nWhich statement shows the mistake Zara has made?",
+    "options": [
+      "Zara's team may have won even more games last season than this one.",
+      "Zara does not say how many players there are in her netball team.",
+      "Blue might not be the colour of the uniform that Zara's team wears.",
+      "Two things happening together does not prove that one causes the other."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Zara's team might win because the players are good, whatever socks she wears. Seeing two things together is not proof that one makes the other happen."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stem": "At the pool, you may only swim in the deep end if you have passed the swimming test. Everyone follows this rule.\n\nAli: Mei is swimming in the deep end, so she must have passed the swimming test.\nTran: Jo has passed the swimming test, so he must be swimming in the deep end.\n\nIf the information above is true, whose reasoning is correct?",
+    "options": [
+      "Ali only",
+      "Tran only",
+      "Both Ali and Tran",
+      "Neither Ali nor Tran"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only people who passed may swim in the deep end, so Mei must have passed. But passing only allows Jo into the deep end; he could still be swimming in the shallow end."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Find the assumption",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Mum: It is very cloudy this morning, so we should take umbrellas to the park.\n\nWhich of these has Mum assumed?",
+    "options": [
+      "Clouds mean that it might rain.",
+      "Umbrellas are heavy to carry.",
+      "The park is close to home.",
+      "Everyone in the family owns a raincoat."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mum moves from \"cloudy\" to \"take umbrellas\", which only makes sense if she thinks the clouds could bring rain. The other statements do not link the clouds to the umbrellas."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Must be true",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "inference",
+    "stem": "At Kangaroo Creek School, students must wear a hat when they play outside in Terms 1 and 4. Everyone follows the rule. It is Term 4, and Priya is playing outside at Kangaroo Creek School.\n\nWhich one of these must be true?",
+    "options": [
+      "It is a sunny day.",
+      "Priya is wearing a hat.",
+      "Priya never wears a hat in Term 2.",
+      "Priya's hat is new."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The rule covers Term 4 and everyone follows it, so Priya must have a hat on. The rule does not tell us about the weather, about Term 2 or about her hat."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Strengthen an argument",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Coach: Our soccer team keeps losing because the players get tired in the second half. We need more fitness training.\n\nWhich one of these statements, if true, most strengthens the coach's argument?",
+    "options": [
+      "Our team's uniforms are new this year and are lighter than the old ones.",
+      "Fitness training would be held on Tuesday afternoons after school finishes.",
+      "Our team scores more goals than the other team in first halves but far fewer in second halves.",
+      "Some of our players also play basketball for a different club on Saturdays."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If the team does well early and fades late, tiredness in the second half looks like the real problem, so fitness training makes sense. The other statements do not connect tiredness with losing."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Weaken an argument",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Sign outside a shop: Our ice cream is the best in town. Just look at our long queue!\n\nWhich one of these statements, if true, most weakens the claim on the sign?",
+    "options": [
+      "The shop sells twenty different flavours, including three that are dairy free.",
+      "Many customers who have tried it say the ice cream is the creamiest they know.",
+      "People in the town buy much more ice cream in summer than they do in winter.",
+      "The only other ice cream shop in town is closed this week, so everyone has to queue here."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The sign uses the queue as proof of quality. If people queue only because the other shop is shut, the queue says nothing about taste. Customers praising the ice cream would strengthen the claim."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Must be true",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Rule: If it rains on Saturday morning, the cricket match is cancelled.\n\nThe cricket match last Saturday was not cancelled. If the rule was followed, which one of these must be true?",
+    "options": [
+      "It did not rain last Saturday morning.",
+      "It was sunny all day last Saturday.",
+      "Our team won the cricket match.",
+      "It will not rain next Saturday."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If it had rained that morning, the match would have been cancelled. It was not cancelled, so it cannot have rained then. It could still have been cloudy, so \"sunny all day\" is not certain."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Every child who helps clean up the playground gets a sticker.\n\nLucas: Ella got a sticker, so she must have helped clean up the playground.\nHana: Sami did not help clean up the playground, so he did not get a sticker.\n\nIf the information above is true, whose reasoning is correct?",
+    "options": [
+      "Lucas only",
+      "Hana only",
+      "Both Lucas and Hana",
+      "Neither Lucas nor Hana"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The rule says helping earns a sticker, but it does not say stickers are given only for cleaning up. Ella may have got her sticker another way, and Sami may have one for something else, so neither can be sure."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Find the mistake",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Oscar: Most children in my class like pizza. So most children in Australia like pizza.\n\nWhich statement shows the mistake Oscar has made?",
+    "options": [
+      "Pizza first came from Italy, so it is not really an Australian food.",
+      "One class is too small a group to show what children all over the country think.",
+      "Oscar does not say which kind of pizza the children in his class like.",
+      "Lots of adults in Australia like pizza just as much as children do."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Oscar uses about 25 children to decide about millions. His class might not be like other classes, so his conclusion goes much further than his evidence."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Strengthen an argument",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Principal: If we open a second serving window at the canteen, students will spend less time waiting in line.\n\nWhich one of these statements, if true, most strengthens the principal's argument?",
+    "options": [
+      "The canteen sells healthy food such as wraps, fruit cups and salads.",
+      "Some students bring their lunch from home and never buy from the canteen.",
+      "Students wait about 15 minutes now because one person has to serve every order.",
+      "The canteen opened ten years ago when the new hall was being built."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If the wait is caused by having only one server, a second window would cut the wait. The other statements do not explain why the line is slow."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Weaken an argument",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Dad: We should drive to the beach instead of catching the bus, because driving will get us there sooner.\n\nWhich one of these statements, if true, most weakens Dad's argument?",
+    "options": [
+      "The bus costs the family less than paying for the petrol and the parking.",
+      "Dad enjoys driving along the coast road because the views are so lovely.",
+      "The beach has a kiosk near the car park that sells chips and cold drinks.",
+      "On weekends the beach car park is full, and finding a park can take more than half an hour."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dad's reason is speed. A long search for a park could make driving slower overall. The bus being cheaper is a different reason and does not show driving is slower."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 1,
+    "skill": "Must be true",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Every dog at the show has a ribbon. Some of the dogs at the show are poodles. Rex has no ribbon.\n\nIf these statements are true, which one of these must also be true?",
+    "options": [
+      "Rex is not a dog at the show.",
+      "Rex is not a poodle.",
+      "Some ribbons are blue.",
+      "Rex did not want to enter the show."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Every dog at the show has a ribbon, and Rex has none, so Rex cannot be one of the show dogs. He might still be a poodle that stayed at home."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Strengthen an argument",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Kai: Our class should have quiet reading time straight after lunch. It helps everyone calm down before maths.\n\nWhich one of these statements, if true, most strengthens Kai's argument?",
+    "options": [
+      "Many students in the class say they enjoy reading comics more than novels.",
+      "Last term, the class made fewer mistakes in maths on days that started with quiet reading.",
+      "The school library bought 500 new books for students to borrow this year.",
+      "Some students find maths harder than any other subject they study at school."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fewer maths mistakes after quiet reading supports Kai's idea that it settles the class for maths. The other facts are about books or maths alone."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Weaken an argument",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Ruby: The new slide in our playground must be safe, because it is bright yellow and looks very strong.\n\nWhich one of these statements, if true, most weakens Ruby's argument?",
+    "options": [
+      "The slide was put in during the school holidays by a team of builders.",
+      "Yellow is Ruby's favourite colour, so she was excited to see the slide.",
+      "Two children were hurt last month on the same kind of slide at another school.",
+      "Lots of children queue up to use the new slide every lunchtime."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Injuries on the same kind of slide suggest it may not be safe, whatever it looks like. The other statements do not touch on safety."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Must be true",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stem": "All the books on the top shelf are about animals. Some books about animals have photos in them.\n\nIf these statements are true, which one of these must also be true?",
+    "options": [
+      "Some books on the top shelf have photos.",
+      "Every book about animals is on the top shelf.",
+      "Every book with photos is about animals.",
+      "A book about cars is not on the top shelf."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Every top-shelf book is about animals, so a car book cannot be up there. The animal books with photos might all be on other shelves, so we cannot be sure the top shelf has any."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Find the mistake",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Max: I didn't study for my last spelling test and I still got full marks. So studying is a waste of time.\n\nWhich statement shows the mistake Max has made?",
+    "options": [
+      "He is deciding about all studying from just one test.",
+      "He does not say which words were in the test.",
+      "Spelling tests are only one small part of English.",
+      "His friend studied hard for the same test as well."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "One easy test does not show that studying never helps. The next test might use harder words."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stem": "At the zoo, only children under 5 get in free.\n\nNina: My brother got in free, so he must be under 5.\nOllie: My cousin is 7, so she did not get in free.\n\nIf the information above is true, whose reasoning is correct?",
+    "options": [
+      "Nina only",
+      "Ollie only",
+      "Both Nina and Ollie",
+      "Neither Nina nor Ollie"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "\"Only\" means nobody else gets in free. So a child who got in free is under 5, and a 7-year-old cannot have got in free. Both are right."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Find the assumption",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Teacher: Sophie got the top mark in the science test, so she must have studied the hardest.\n\nWhich of these has the teacher assumed?",
+    "options": [
+      "Sophie enjoys science tests more than any other kind.",
+      "The student who studies the hardest always gets the top mark.",
+      "The science test was the hardest one of the year.",
+      "Sophie did her studying at the local library."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The teacher goes from \"top mark\" to \"studied hardest\", which only works if the hardest worker always comes first. Sophie might simply know the topic well."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Must be true",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Every Saturday the Lim family either goes to the beach or visits Grandma. They never do both on the same day. Last Saturday they did not go to the beach.\n\nWhich one of these must be true?",
+    "options": [
+      "It rained last Saturday.",
+      "They will go to the beach next Saturday.",
+      "They visited Grandma last Saturday.",
+      "Grandma came to their house."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "They always do one of the two things, and they did not go to the beach, so they must have visited Grandma. The reason they skipped the beach is not given."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Strengthen an argument",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Mr Daly: Cars drive too fast past our school, so we need a 40 km/h school zone sign.\n\nWhich one of these statements, if true, most strengthens Mr Daly's argument?",
+    "options": [
+      "The school was built about 60 years ago, before most of the houses nearby.",
+      "Some parents walk their children to school instead of driving them there.",
+      "School zone signs are made of metal and have lights that flash at set times.",
+      "A speed check last month found that most cars passing the school were going faster than 40 km/h."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Measured speeds above 40 km/h show that cars really are too fast, which supports the sign. The other facts do not show a speed problem."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Weaken an argument",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Advertisement: Zoom Shoes make you run faster. All the fastest runners at our club wear them.\n\nWhich one of these statements, if true, most weakens the advertisement's argument?",
+    "options": [
+      "The fastest runners were already the fastest before they started wearing Zoom Shoes.",
+      "Zoom Shoes come in five bright colours and in sizes for both children and adults.",
+      "Zoom Shoes cost more than most other running shoes that are sold at the club.",
+      "Many people at the club now buy their running shoes online rather than in shops."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the runners were fast before the shoes, the shoes are not what made them fast. Price and colour do not tell us anything about speed."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Find the mistake",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Grace: My friend said the new movie was boring, so I know I won't like it.\n\nWhich statement shows the mistake Grace has made?",
+    "options": [
+      "She does not say how long the new movie goes for.",
+      "Her friend's opinion might not match what Grace would think.",
+      "The movie might be shown on television later on.",
+      "Her friend has seen lots of movies at the cinema."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "People enjoy different things, so one friend finding a movie boring does not prove Grace will. The other choices do not point to a problem with her reasoning."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Must be true",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Every student in the school band plays exactly one instrument. There are more drummers than guitarists, and more guitarists than violinists. There are 3 violinists.\n\nWhich one of these must be true?",
+    "options": [
+      "There are exactly 5 guitarists.",
+      "There are fewer than 10 students in the band.",
+      "There are at least 5 drummers.",
+      "There are more violinists than drummers."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With 3 violinists there must be at least 4 guitarists, and so at least 5 drummers. There could be more guitarists than 5, so \"exactly 5\" is not certain."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Every Year 4 student at Hill School learns Japanese. Some students who learn Japanese also learn French.\n\nEmma: Josh is at Hill School and learns Japanese, so he must be in Year 4.\nLeo: Ivy is in Year 4 at Hill School, so she must learn Japanese.\n\nIf the information above is true, whose reasoning is correct?",
+    "options": [
+      "Emma only",
+      "Leo only",
+      "Both Emma and Leo",
+      "Neither Emma nor Leo"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Every Year 4 student learns Japanese, so Leo is right about Ivy. But other years may learn Japanese too, so Josh could be in another year, and Emma is wrong."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Strengthen an argument",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Sienna: Planting trees along our street would make it cooler on hot summer days.\n\nWhich one of these statements, if true, most strengthens Sienna's argument?",
+    "options": [
+      "Trees are home to many kinds of birds, insects and possums in our suburb.",
+      "Some people in our street say they do not like raking up fallen leaves in autumn.",
+      "Our street was built about 30 years ago, when the suburb was first planned.",
+      "On hot days, streets with lots of trees were measured to be several degrees cooler than streets with none."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A measured temperature difference supports Sienna's claim about heat. Birds and leaves have nothing to do with how cool the street is."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Weaken an argument",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Oliver: Our class fish must be sick, because it isn't eating the food I just gave it.\n\nWhich one of these statements, if true, most weakens Oliver's argument?",
+    "options": [
+      "Another student fed the fish a big meal ten minutes earlier.",
+      "The fish is bright orange with a long, white tail.",
+      "Fish need clean, fresh water to stay healthy.",
+      "The tank sits on a shelf near the classroom window."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the fish has just eaten, it may simply be full, so not eating does not show it is sick. The other facts give no reason for the fish to skip food."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 2,
+    "skill": "Draw a conclusion",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Library rule: You may have at most 5 books borrowed at one time.\n\nFatima has 4 books borrowed. She wants to borrow 3 more books today.\n\nWhich one of these is true?",
+    "options": [
+      "She can borrow all 3 books now.",
+      "She must return at least 2 books first.",
+      "She must return all 4 books first.",
+      "She must return at least 3 books first."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "4 + 3 = 7, which is 2 more than the limit of 5, so she must return at least 2 books. Returning all 4 would work but is not required."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Ordering clues",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ana is older than Ben. Cara is older than Ana. Dev is younger than Ben.\n\nWho is the oldest?",
+    "options": [
+      "Ana",
+      "Ben",
+      "Cara",
+      "Dev"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "From oldest to youngest the order is Cara, Ana, Ben, Dev. Cara is older than Ana, who is older than Ben and Dev."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Codes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a code, each letter is changed to the next letter of the alphabet, so CAT becomes DBU.\n\nWhat does DPEF stand for?",
+    "options": [
+      "COFE",
+      "EQFG",
+      "CODE",
+      "BODE"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To decode, move each letter back one: D to C, P to O, E to D and F to E, giving CODE. EQFG moves the letters forward instead."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Time",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "School finishes at 3:10 pm and it takes Mia 20 minutes to get to her piano lesson. The lesson lasts 45 minutes and must finish by 5:00 pm.\n\nWhat is the latest time the lesson can start?",
+    "options": [
+      "3:30 pm",
+      "4:00 pm",
+      "4:35 pm",
+      "4:15 pm"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Count back 45 minutes from 5:00 pm to get 4:15 pm. Mia can arrive by 3:30 pm, so she is there in time. 3:30 pm is the earliest start, not the latest."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Counting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Four friends meet, and each one shakes hands once with each of the others.\n\nHow many handshakes are there?",
+    "options": [
+      "6",
+      "4",
+      "8",
+      "12"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first friend shakes 3 hands, the second 2 new hands and the third 1 new hand: 3 + 2 + 1 = 6. 12 counts every handshake twice."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Seating puzzles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Five children sit in a row of five chairs. Ella sits in the middle. Finn sits at the left end. Gus sits next to Finn. Hiro does not sit at an end.\n\nWhere does Ivy sit?",
+    "options": [
+      "Next to Finn",
+      "At the right end",
+      "In the middle",
+      "Between Gus and Ella"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Finn is in chair 1, Gus in chair 2 and Ella in chair 3. Hiro is not at an end, so he takes chair 4, leaving chair 5, the right end, for Ivy."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Truth and lies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "One of three children left the gate open. Exactly two of them are telling the truth.\n\nAmy: Ben left it open.\nBen: Cal left it open.\nCal: I didn't leave it open.\n\nWho left the gate open?",
+    "options": [
+      "Amy",
+      "Ben",
+      "Cal",
+      "Cannot tell"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Test each child. If Amy did it, only Cal tells the truth. If Cal did it, only Ben tells the truth. If Ben did it, Amy and Cal both tell the truth and only Ben lies, which fits."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Best buy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Apples cost 40c each, or 3 for \\$1.\n\nWhat is the least it can cost to buy 7 apples?",
+    "options": [
+      "\\$2.80",
+      "\\$2.60",
+      "\\$2.40",
+      "\\$3.00"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Two bags of 3 cost \\$2 for 6 apples, and one more apple is 40c: \\$2.40. One bag and 4 single apples would cost \\$2.60."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Ages",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In 4 years' time, Jade will be twice as old as she was 4 years ago.\n\nHow old is Jade now?",
+    "options": [
+      "8",
+      "10",
+      "16",
+      "12"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Try 12: in 4 years she will be 16, and 4 years ago she was 8. 16 is twice 8. Try 10: 14 is not twice 6."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Balancing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "2 apples weigh the same as 3 lemons. 1 lemon weighs the same as 2 strawberries.\n\nHow many strawberries weigh the same as 4 apples?",
+    "options": [
+      "12",
+      "8",
+      "6",
+      "24"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "4 apples are double 2 apples, so they weigh the same as 6 lemons. Each lemon is 2 strawberries, so 6 lemons are 12 strawberries."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Calendars",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A club meets every third day, starting on Monday 1 March, so its second meeting is on Thursday 4 March.\n\nOn what day of the week is its fifth meeting?",
+    "options": [
+      "Friday",
+      "Saturday",
+      "Sunday",
+      "Thursday"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The meetings are on 1, 4, 7, 10 and 13 March. 13 March is 12 days after Monday 1 March. 7 days later is Monday again, and 5 more days is Saturday."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Logic grids",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ali, Bea and Cy each have one pet: a cat, a dog or a bird. No two have the same pet. Ali is allergic to fur. Bea's pet barks.\n\nWho has the cat?",
+    "options": [
+      "Ali",
+      "Bea",
+      "Cy",
+      "Cannot tell"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Bea has the dog because it barks. Ali cannot have a furry pet, so Ali has the bird. That leaves the cat for Cy."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Counting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many two-digit numbers have digits that add up to 5?",
+    "options": [
+      "4",
+      "6",
+      "5",
+      "10"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The numbers are 14, 23, 32, 41 and 50. 05 is not a two-digit number."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Ordering clues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a race, Mo came 4th. Lee finished 2 places behind Mo. Kim finished 3 places ahead of Lee.\n\nIn what place did Kim finish?",
+    "options": [
+      "1st",
+      "2nd",
+      "5th",
+      "3rd"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "2 places behind 4th is 6th, so Lee came 6th. 3 places ahead of 6th is 3rd."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Guess and check",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A plant grows 3 cm on every sunny day and 1 cm on every cloudy day. Over 10 days it grew 22 cm. Every day was either sunny or cloudy.\n\nHow many days were sunny?",
+    "options": [
+      "6",
+      "4",
+      "7",
+      "5"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If all 10 days were cloudy it would grow 10 cm. Each sunny day adds 2 cm more, and 22 − 10 = 12 extra centimetres means 6 sunny days. Check: 6 × 3 + 4 × 1 = 22."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 1,
+    "skill": "Routes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Train times between stations:\n\n| From | To | Time |\n|---|---|---|\n| Amber | Beech | 12 min |\n| Beech | Cedar | 9 min |\n| Amber | Cedar | 25 min |\n| Cedar | Dune | 8 min |\n| Beech | Dune | 20 min |\n\nWhat is the quickest trip from Amber to Dune, not counting waiting time?",
+    "options": [
+      "32 min",
+      "29 min",
+      "33 min",
+      "28 min"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Amber to Beech to Cedar to Dune takes 12 + 9 + 8 = 29 minutes. Amber to Beech to Dune takes 32, and Amber to Cedar to Dune takes 33."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Ordering clues",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Sam is older than Tia but younger than Uma. Vic is older than Uma.\n\nWho is the second oldest?",
+    "options": [
+      "Sam",
+      "Tia",
+      "Uma",
+      "Vic"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "From oldest to youngest the order is Vic, Uma, Sam, Tia, so Uma is second oldest."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Codes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a code, each letter is written as its place in the alphabet: A is 1, B is 2, C is 3 and so on.\n\nWhich word is written as 4 15 7?",
+    "options": [
+      "COG",
+      "DOE",
+      "DOG",
+      "BOG"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "D is the 4th letter, O the 15th and G the 7th. COG would start with 3."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Time",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A clock loses 5 minutes every hour. It is set to the right time at 9:00 am.\n\nWhat time does the clock show when the real time is 1:00 pm?",
+    "options": [
+      "1:20 pm",
+      "12:55 pm",
+      "12:45 pm",
+      "12:40 pm"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "From 9:00 am to 1:00 pm is 4 hours, and the clock loses 4 × 5 = 20 minutes. A clock that loses falls behind, so it shows 12:40 pm. 1:20 pm adds the minutes instead."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Counting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In how many different orders can three children, Amy, Bo and Cy, stand in a line?",
+    "options": [
+      "6",
+      "3",
+      "9",
+      "4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Any of the 3 can be first, then either of the other 2 can be second, and the last one fills the end: 3 × 2 × 1 = 6."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Seating puzzles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Four friends, Jo, Kit, Lu and Mo, sit around a square table, one on each side. Jo sits opposite Kit. Lu sits on Jo's left.\n\nWho sits on Jo's right?",
+    "options": [
+      "Kit",
+      "Lu",
+      "Mo",
+      "Cannot tell"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Kit is opposite Jo and Lu is on Jo's left, so the only seat left, Jo's right, belongs to Mo."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Truth and lies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A ball is hidden under one of three cups. Exactly one of the labels is true.\n\nCup A: The ball is under this cup.\nCup B: The ball is under Cup A.\nCup C: The ball is not under Cup B.\n\nWhich cup is the ball under?",
+    "options": [
+      "Cup A",
+      "Cup B",
+      "Cup C",
+      "Cannot tell"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Test each cup. Ball under Cup A: all three labels are true. Ball under Cup B: none of them is true. Ball under Cup C: only label C is true, which fits."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Best buy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Stickers cost 30c each, or \\$1.20 for a pack of 5.\n\nWhat is the least it can cost to buy exactly 12 stickers?",
+    "options": [
+      "\\$3.30",
+      "\\$3.00",
+      "\\$3.60",
+      "\\$2.88"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Two packs give 10 stickers for \\$2.40, and 2 single stickers cost 60c: \\$3.00. One pack and 7 singles cost \\$3.30, and three packs cost \\$3.60 but give 15."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Ages",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Leo is 6 years older than Mia. Two years ago, their ages added up to 14.\n\nHow old is Mia now?",
+    "options": [
+      "4",
+      "8",
+      "6",
+      "9"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Two years ago each was 2 years younger, so their ages now add up to 14 + 4 = 18. Mia plus Mia plus 6 is 18, so Mia is 6 and Leo is 12. Check: two years ago they were 4 and 10, which add to 14."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Balancing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "3 blue blocks weigh the same as 2 red blocks. A red block weighs 60 g.\n\nHow much does one blue block weigh?",
+    "options": [
+      "90 g",
+      "20 g",
+      "180 g",
+      "40 g"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "2 red blocks weigh 120 g, so 3 blue blocks weigh 120 g and one weighs 40 g. 90 g mixes up which colour is heavier."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Timetables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ferries leave the wharf every 35 minutes, starting at 9:20 am. Lucy gets to the wharf at 10:45 am.\n\nWhen does the next ferry leave?",
+    "options": [
+      "11:05 am",
+      "11:00 am",
+      "10:55 am",
+      "11:15 am"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ferries leave at 9:20, 9:55, 10:30 and 11:05 am. Lucy just misses the 10:30 ferry, so the next is at 11:05 am."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Logic grids",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ned, Olga and Pia each play one sport: tennis, swimming or netball. No two play the same sport. Ned does not swim and does not play netball. Olga's sport uses a ball.\n\nWhat sport does Olga play?",
+    "options": [
+      "Tennis",
+      "Swimming",
+      "Netball",
+      "Cannot tell"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Ned plays neither swimming nor netball, so he plays tennis. Olga's sport uses a ball and tennis is taken, so she plays netball, and Pia swims."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Counting",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A board is a 3 by 3 grid of small squares, like a noughts and crosses board.\n\nHow many squares of any size can be found on it?",
+    "options": [
+      "9",
+      "14",
+      "10",
+      "13"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "There are 9 small squares, 4 squares of 2 by 2, and 1 big 3 by 3 square: 9 + 4 + 1 = 14."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Ordering clues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Five runners finished a race. Ari finished before Ben but after Cat. Dan finished last. Eve finished just before Dan.\n\nWho came first?",
+    "options": [
+      "Ari",
+      "Ben",
+      "Cat",
+      "Eve"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dan is 5th and Eve is 4th, so Cat, Ari and Ben take the first three places. Cat is before Ari, who is before Ben, so Cat came first."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Guess and check",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a quiz you get 3 points for each right answer and lose 1 point for each wrong answer. Noah answered all 12 questions and scored 20 points.\n\nHow many questions did he get right?",
+    "options": [
+      "7",
+      "9",
+      "10",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Check 8: 8 right gives 24 points, and 4 wrong takes away 4, leaving 20. 9 right would give 27 − 3 = 24."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 2,
+    "skill": "Step-by-step puzzles",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A snail is at the bottom of a wall 10 m high. Each day it climbs up 3 m, and each night it slides back 2 m.\n\nOn which day does it first reach the top?",
+    "options": [
+      "Day 8",
+      "Day 10",
+      "Day 7",
+      "Day 5"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The snail gains 1 m each full day and night, so it starts Day 8 at 7 m. That day it climbs 3 m and reaches 10 m before it can slide back."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 0,
+    "skill": "Strengthen an argument",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Hamish: Students should walk to school, because the walk wakes them up and helps them concentrate in class.\n\nWhich one of these statements, if true, most strengthens Hamish's argument?",
+    "options": [
+      "Some students live a long way from school and would need to leave home early.",
+      "Teachers noticed that students who walked to school were more alert in the first lesson.",
+      "Sneakers come in many colours, and most students already own a pair of them.",
+      "The school has a large car park for parents who drive their children to school."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Walkers being more alert in class supports the link Hamish makes between walking and concentrating. The other facts are not about concentration."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 0,
+    "skill": "Weaken an argument",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "claimSupport",
+    "stem": "Jess: Mum must be home, because her car is in the driveway.\n\nWhich one of these statements, if true, most weakens Jess's argument?",
+    "options": [
+      "Mum's car is silver and was washed on the weekend.",
+      "Mum usually parks her car in the driveway at night.",
+      "Mum walked to work today and left the car at home.",
+      "The driveway was swept by Jess and Dad yesterday."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If Mum walked to work, her car would be in the driveway even though she is out, so the car proves nothing. Mum usually parking there would only fit Jess's idea."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 0,
+    "skill": "Must be true",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "inference",
+    "stem": "No reptiles have fur. All snakes are reptiles.\n\nIf these statements are true, which one of these must also be true?",
+    "options": [
+      "All reptiles are snakes.",
+      "Some animals with fur are snakes.",
+      "Every animal without fur is a reptile.",
+      "No snakes have fur."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Snakes are reptiles, and no reptile has fur, so no snake can have fur. Not every reptile is a snake, and many animals without fur, like fish, are not reptiles."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 0,
+    "skill": "Find the mistake",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Toby: I saw three magpies swoop on people today, so all magpies swoop on people.\n\nWhich statement shows the mistake Toby has made?",
+    "options": [
+      "Three magpies are not enough to show what all magpies do.",
+      "He does not say where he saw the magpies swooping.",
+      "Magpies are black and white birds found in Australia.",
+      "Swooping happens mostly in spring when magpies nest."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Toby turns what a few birds did into a rule about every magpie. Many magpies never swoop, so his evidence is far too small."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 0,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Rule: If it is raining at lunchtime, students eat lunch in the hall.\n\nAna: Students are eating lunch in the hall, so it must be raining.\nBo: It is raining at lunchtime, so students must be eating lunch in the hall.\n\nIf the rule is always followed, whose reasoning is correct?",
+    "options": [
+      "Ana only",
+      "Bo only",
+      "Both Ana and Bo",
+      "Neither Ana nor Bo"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Rain means lunch in the hall, so Bo is right. But students might eat in the hall for another reason, such as a heatwave, so Ana cannot be sure it is raining."
+  },
+  {
+    "domain": "ocCritical",
+    "test": 0,
+    "skill": "Find the assumption",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inference",
+    "stem": "Mr Park: The new bike path will mean more children ride to school, so we should build more bike racks.\n\nWhich of these has Mr Park assumed?",
+    "options": [
+      "Bike paths cost a lot of money for the council to build.",
+      "Children who ride to school will need somewhere to leave their bikes.",
+      "Some children would rather ride scooters than bikes.",
+      "The school has a sports oval beside the main car park."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "More riders only means more racks are needed if those riders need to park their bikes at school. The other statements are not part of his reasoning."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 0,
+    "skill": "Ordering clues",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Four friends are in a queue. Pip is behind Quin. Rae is in front of Quin. Sol is last.\n\nWho is first in the queue?",
+    "options": [
+      "Pip",
+      "Quin",
+      "Rae",
+      "Sol"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Rae is in front of Quin, who is in front of Pip, and Sol is last. The order is Rae, Quin, Pip, Sol."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 0,
+    "skill": "Codes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a code, BIRD is written as DKTF.\n\nHow is FISH written in the same code?",
+    "options": [
+      "GJTI",
+      "HKTJ",
+      "HKUJ",
+      "DGQF"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each letter moves forward 2 places: B to D, I to K, R to T, D to F. So F to H, I to K, S to U and H to J."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 0,
+    "skill": "Counting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Tim writes all the whole numbers from 1 to 20.\n\nHow many times does he write the digit 1?",
+    "options": [
+      "11",
+      "10",
+      "13",
+      "12"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "1 has one, 10 has one, 11 has two and each of 12 to 19 has one. That is 1 + 1 + 2 + 8 = 12."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 0,
+    "skill": "Truth and lies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Josh, Kara or Lin took the last mango. Exactly one of them is lying.\n\nJosh: Kara took it.\nKara: Lin took it.\nLin: Kara is telling the truth.\n\nWho took the mango?",
+    "options": [
+      "Josh",
+      "Kara",
+      "Lin",
+      "Cannot tell"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "If Lin took it, only Josh is lying, which fits. If Kara took it, Kara and Lin are both lying, and if Josh took it, all three are lying."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 0,
+    "skill": "Rates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Nora reads 12 pages every 20 minutes.\n\nHow long will it take her to read 60 pages?",
+    "options": [
+      "1 h 40 min",
+      "1 h 20 min",
+      "2 h",
+      "1 h 50 min"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "60 pages is 5 lots of 12 pages, so it takes 5 × 20 = 100 minutes, which is 1 hour 40 minutes."
+  },
+  {
+    "domain": "ocProblem",
+    "test": 0,
+    "skill": "Guess and check",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A pen and a pencil cost \\$1.20 together. The pen costs \\$1 more than the pencil.\n\nHow much does the pencil cost?",
+    "options": [
+      "20c",
+      "10c",
+      "60c",
+      "\\$1.10"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If the pencil costs 10c, the pen costs \\$1.10, and together they make \\$1.20. A 20c pencil would make the total \\$1.40."
+  }
+]

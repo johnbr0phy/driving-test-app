@@ -1,0 +1,4496 @@
+[
+  {
+    "id": "GCSEH-T1-001",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Factorising harder quadratics",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Factorise $2x^2 + 7x + 3$.",
+    "options": [
+      "$(2x + 1)(x + 3)$",
+      "$(2x + 3)(x + 1)$",
+      "$(2x - 1)(x - 3)$",
+      "$(x + 3)(x + 1)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Check by expanding: $(2x + 1)(x + 3) = 2x^2 + 6x + x + 3 = 2x^2 + 7x + 3$. $(2x + 3)(x + 1)$ expands to $2x^2 + 5x + 3$, so its middle term is wrong."
+  },
+  {
+    "id": "GCSEH-T1-002",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Sharing in a ratio",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "£84 is shared between Priya and Tom in the ratio 2 : 5. How much does Tom get, in pounds? Type the number only.",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "There are 2 + 5 = 7 parts, so one part is £84 ÷ 7 = £12. Tom gets 5 parts, which is £60."
+  },
+  {
+    "id": "GCSEH-T1-003",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Exact trigonometric values",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "sohcahtoa",
+    "stem": "Work out the exact value of $\\sin 60^\\circ \\times \\tan 45^\\circ$.",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{\\sqrt{3}}{2}$",
+      "$\\frac{\\sqrt{2}}{2}$",
+      "$\\sqrt{3}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$ and $\\tan 45^\\circ = 1$, so the product is $\\frac{\\sqrt{3}}{2}$. $\\frac{1}{2}$ is $\\sin 30^\\circ$."
+  },
+  {
+    "id": "GCSEH-T1-004",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Fractional and negative indices",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Work out the value of $27^{-\\frac{2}{3}}$.",
+    "options": [
+      "$-9$",
+      "$\\frac{1}{18}$",
+      "$\\frac{1}{9}$",
+      "$9$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The cube root of 27 is 3, and $3^2 = 9$. The negative index means the reciprocal, so the answer is $\\frac{1}{9}$, not $-9$."
+  },
+  {
+    "id": "GCSEH-T1-005",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Probability without replacement",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bag holds 5 red and 3 blue counters. Two counters are taken out at random, without replacement. What is the probability that both are red?",
+    "options": [
+      "$\\frac{25}{64}$",
+      "$\\frac{9}{14}$",
+      "$\\frac{5}{8}$",
+      "$\\frac{5}{14}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$\\frac{5}{8} \\times \\frac{4}{7} = \\frac{20}{56} = \\frac{5}{14}$. $\\frac{25}{64}$ would be right only if the first counter were put back."
+  },
+  {
+    "id": "GCSEH-T1-006",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Simultaneous equations",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "systems",
+    "stem": "Solve the simultaneous equations $3x + 2y = 16$ and $x - y = 2$.",
+    "options": [
+      "$x = 4,\\ y = 2$",
+      "$x = 2,\\ y = 4$",
+      "$x = 6,\\ y = -1$",
+      "$x = 3,\\ y = 1$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "From the second equation $x = y + 2$. Substituting: $3(y + 2) + 2y = 16$, so $5y = 10$, $y = 2$ and $x = 4$. Check: $12 + 4 = 16$ and $4 - 2 = 2$."
+  },
+  {
+    "id": "GCSEH-T1-007",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Combining ratios",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "ratios",
+    "stem": "$a : b = 3 : 4$ and $b : c = 6 : 5$. Write $a : b : c$ in its simplest form.",
+    "options": [
+      "3 : 10 : 5",
+      "9 : 12 : 10",
+      "18 : 24 : 15",
+      "9 : 24 : 10"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Make the $b$ parts match: 4 and 6 both go into 12, so $a : b = 9 : 12$ and $b : c = 12 : 10$. That gives 9 : 12 : 10."
+  },
+  {
+    "id": "GCSEH-T1-008",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Circle theorems: angle at the centre",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A, B and C are points on a circle with centre O. Angle ACB = 38°. Work out angle AOB, in degrees. (C is on the major arc.) Type the number only.",
+    "numeric": {
+      "answers": [
+        "76"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The angle at the centre is twice the angle at the circumference standing on the same arc: 2 × 38° = 76°."
+  },
+  {
+    "id": "GCSEH-T1-009",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "nth term of a quadratic sequence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the nth term of the sequence 3, 9, 19, 33, 51, ...",
+    "options": [
+      "$n^2 + 2$",
+      "$4n - 1$",
+      "$2n^2 + 1$",
+      "$2n^2 + n$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The differences are 6, 10, 14, 18, so the second difference is 4 and the sequence starts $2n^2$: 2, 8, 18, 32, 50. Each term is 1 more, giving $2n^2 + 1$."
+  },
+  {
+    "id": "GCSEH-T1-010",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Simplifying surds",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "squareRoots",
+    "stem": "Simplify $\\sqrt{75} - \\sqrt{12}$.",
+    "options": [
+      "$\\sqrt{63}$",
+      "$7\\sqrt{3}$",
+      "$3$",
+      "$3\\sqrt{3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$\\sqrt{75} = \\sqrt{25}\\sqrt{3} = 5\\sqrt{3}$ and $\\sqrt{12} = 2\\sqrt{3}$, so the difference is $3\\sqrt{3}$. Surds cannot be subtracted inside the root, so $\\sqrt{63}$ is wrong."
+  },
+  {
+    "id": "GCSEH-T1-011",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Venn diagrams and set notation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$\\xi$ = the whole numbers from 1 to 12. $A$ = multiples of 3 and $B$ = even numbers. A number is chosen at random from $\\xi$. Find $P(A \\cup B)$.",
+    "options": [
+      "$\\frac{2}{3}$",
+      "$\\frac{5}{6}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$A \\cup B$ = {2, 3, 4, 6, 8, 9, 10, 12}, which is 8 numbers, so the probability is $\\frac{8}{12} = \\frac{2}{3}$. Adding 4 and 6 counts 6 and 12 twice, giving $\\frac{5}{6}$."
+  },
+  {
+    "id": "GCSEH-T1-012",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Quadratic inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Solve $x^2 < 25$.",
+    "options": [
+      "$x < 5$",
+      "$-5 < x < 5$",
+      "$x < -5$ or $x > 5$",
+      "$x > -5$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$x^2 < 25$ holds for every number between $-5$ and 5. $x < 5$ wrongly includes numbers such as $-6$, whose square is 36."
+  },
+  {
+    "id": "GCSEH-T1-013",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Inverse proportion",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "$y$ is inversely proportional to $x^2$. When $x = 3$, $y = 8$. Work out $y$ when $x = 6$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "$y = \\frac{k}{x^2}$, so $k = 8 \\times 9 = 72$. When $x = 6$, $y = \\frac{72}{36} = 2$. Doubling $x$ divides $y$ by 4, not 2."
+  },
+  {
+    "id": "GCSEH-T1-014",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Angles in polygons",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Each interior angle of a regular polygon is 156°. How many sides does the polygon have? Type the number only.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Each exterior angle is 180° − 156° = 24°, and the exterior angles add to 360°, so there are 360 ÷ 24 = 15 sides."
+  },
+  {
+    "id": "GCSEH-T1-015",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Perpendicular lines",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "slope",
+    "stem": "Find the equation of the line perpendicular to $y = 3x - 4$ that passes through $(6, 1)$.",
+    "options": [
+      "$y = 3x - 17$",
+      "$y = -\\frac{1}{3}x - 1$",
+      "$y = -\\frac{1}{3}x + 3$",
+      "$y = -3x + 19$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The perpendicular gradient is $-\\frac{1}{3}$. Then $1 = -\\frac{1}{3}(6) + c$ gives $c = 3$. $y = -3x + 19$ uses the negative but forgets the reciprocal."
+  },
+  {
+    "id": "GCSEH-T1-016",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Recurring decimal to fraction",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Write $0.4\\dot{7}$ (that is, 0.4777..., with the 7 recurring) as a fraction in its simplest form.",
+    "options": [
+      "$\\frac{47}{99}$",
+      "$\\frac{47}{90}$",
+      "$\\frac{43}{99}$",
+      "$\\frac{43}{90}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Let $x = 0.4777...$. Then $100x - 10x = 47.777... - 4.777... = 43$, so $90x = 43$ and $x = \\frac{43}{90}$. $\\frac{47}{99}$ would be $0.\\dot{4}\\dot{7}$, where both digits recur."
+  },
+  {
+    "id": "GCSEH-T1-017",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Quartiles and interquartile range",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Here are 11 values in order: 3, 5, 7, 8, 10, 12, 15, 18, 21, 24, 30. Work out the interquartile range. Type the number only.",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "With 11 values the lower quartile is the 3rd value, 7, and the upper quartile is the 9th, 21. The interquartile range is 21 − 7 = 14."
+  },
+  {
+    "id": "GCSEH-T1-018",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Reverse percentages",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percentChange",
+    "stem": "In a sale, prices are reduced by 20%. A coat costs £56 in the sale. What was its price before the sale, in pounds? Type the number only.",
+    "numeric": {
+      "answers": [
+        "70"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The sale price is 80% of the original, so the original is £56 ÷ 0.8 = £70. Adding 20% of £56 gives £67.20, which is wrong because the 20% was of the original price."
+  },
+  {
+    "id": "GCSEH-T1-019",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Vectors: midpoints",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OB} = \\mathbf{b}$. M is the midpoint of AB. Which expression is $\\overrightarrow{OM}$?",
+    "options": [
+      "$\\frac{1}{2}(\\mathbf{a} + \\mathbf{b})$",
+      "$\\frac{1}{2}(\\mathbf{b} - \\mathbf{a})$",
+      "$\\mathbf{a} + \\frac{1}{2}\\mathbf{b}$",
+      "$\\mathbf{b} - \\mathbf{a}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$\\overrightarrow{OM} = \\mathbf{a} + \\frac{1}{2}\\overrightarrow{AB} = \\mathbf{a} + \\frac{1}{2}(\\mathbf{b} - \\mathbf{a}) = \\frac{1}{2}(\\mathbf{a} + \\mathbf{b})$. $\\frac{1}{2}(\\mathbf{b} - \\mathbf{a})$ is only $\\overrightarrow{AM}$."
+  },
+  {
+    "id": "GCSEH-T1-020",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Composite functions",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "functionNotation",
+    "stem": "$f(x) = 2x + 1$ and $g(x) = x^2$. Work out $fg(3)$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "19"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "$fg(3)$ means apply $g$ first: $g(3) = 9$, then $f(9) = 19$. Doing $f$ first gives $g(7) = 49$, which is $gf(3)$."
+  },
+  {
+    "id": "GCSEH-T1-021",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Quadratic formula",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $2x^2 - 5x - 4 = 0$. Give your solutions to 2 decimal places.",
+    "options": [
+      "$x = -3.14$ or $x = 0.64$",
+      "$x = 3.14$ or $x = -0.64$",
+      "$x = 6.27$ or $x = -1.27$",
+      "$x = 3.14$ or $x = 0.64$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "$x = \\frac{5 \\pm \\sqrt{25 + 32}}{4} = \\frac{5 \\pm \\sqrt{57}}{4}$, giving 3.137... and $-0.637...$. Dividing by 2 instead of $2a = 4$ gives 6.27 and $-1.27$."
+  },
+  {
+    "id": "GCSEH-T1-022",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Compound interest",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "£4500 is invested at 3.2% compound interest per year. How much is in the account after 5 years, in pounds? Give your answer to the nearest penny. Type the number only.",
+    "numeric": {
+      "answers": [
+        "5267.58"
+      ],
+      "tolerance": 0.006
+    },
+    "calculator": true,
+    "explanation": "Multiply by 1.032 once for each year: $4500 \\times 1.032^5 = 5267.58$, so £5267.58. Simple interest would give £5220, because it ignores interest earned on interest."
+  },
+  {
+    "id": "GCSEH-T1-023",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Sine rule: finding a side",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In triangle ABC, angle A = 42°, angle B = 73° and BC = 9.5 cm. Work out the length of AC, in cm, to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "13.6"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "AC is opposite angle B, so $\\frac{AC}{\\sin 73^\\circ} = \\frac{9.5}{\\sin 42^\\circ}$ and $AC = \\frac{9.5 \\sin 73^\\circ}{\\sin 42^\\circ} = 13.57...$ cm."
+  },
+  {
+    "id": "GCSEH-T1-024",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Standard form calculation",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Light travels at $3.0 \\times 10^{5}$ km per second. The Sun is $1.496 \\times 10^{8}$ km from the Earth. How many seconds does light from the Sun take to reach the Earth? Give your answer to 3 significant figures. Type the number only.",
+    "numeric": {
+      "answers": [
+        "499"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true,
+    "explanation": "Time = distance ÷ speed = $1.496 \\times 10^{8} \\div (3.0 \\times 10^{5}) = 498.66...$, which is 499 seconds to 3 significant figures."
+  },
+  {
+    "id": "GCSEH-T1-025",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Histograms",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In a histogram, the bar for the class $20 < t \\le 35$ has a frequency density of 2.4. What is the frequency of this class? Type the number only.",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Frequency = frequency density × class width = 2.4 × 15 = 36. Using the height alone ignores the width of the bar."
+  },
+  {
+    "id": "GCSEH-T1-026",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Iteration",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Use the iteration formula $x_{n+1} = \\sqrt[3]{2x_n + 5}$ with $x_0 = 2$ to find $x_3$. Give your answer to 4 decimal places. Type the number only.",
+    "numeric": {
+      "answers": [
+        "2.0942"
+      ],
+      "tolerance": 6e-05
+    },
+    "calculator": true,
+    "explanation": "$x_1 = \\sqrt[3]{9} = 2.0800...$, $x_2 = 2.0923...$, $x_3 = 2.0942...$. Use the full calculator value each time rather than a rounded one."
+  },
+  {
+    "id": "GCSEH-T1-027",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Depreciation",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "A van bought for £18 000 loses 15% of its value each year. What is it worth after 3 years?",
+    "options": [
+      "£9 900.00",
+      "£15 300.00",
+      "£11 054.25",
+      "£10 800.00"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The multiplier for a 15% decrease is 0.85: $18\\,000 \\times 0.85^3 = 11\\,054.25$, so £11 054.25. £9900 takes 15% of the original price off three times, which is simple depreciation."
+  },
+  {
+    "id": "GCSEH-T1-028",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Cosine rule: finding a side",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Two sides of a triangle are 7 cm and 10 cm, and the angle between them is 52°. Work out the length of the third side, in cm, to 2 decimal places. Type the number only.",
+    "numeric": {
+      "answers": [
+        "7.93"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "$c^2 = 7^2 + 10^2 - 2 \\times 7 \\times 10 \\cos 52^\\circ = 149 - 86.19... = 62.81...$, so $c = 7.925...$ cm, which is 7.93."
+  },
+  {
+    "id": "GCSEH-T1-029",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Changing the subject (subject twice)",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Make $x$ the subject of $y = \\dfrac{3x + 2}{x - 4}$.",
+    "options": [
+      "$x = \\dfrac{4y - 2}{y - 3}$",
+      "$x = \\dfrac{4y + 2}{y + 3}$",
+      "$x = \\dfrac{y + 2}{4y - 3}$",
+      "$x = \\dfrac{4y + 2}{y - 3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "$y(x - 4) = 3x + 2$, so $xy - 4y = 3x + 2$. Collect $x$ terms: $xy - 3x = 4y + 2$, so $x(y - 3) = 4y + 2$ and $x = \\frac{4y + 2}{y - 3}$."
+  },
+  {
+    "id": "GCSEH-T1-030",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Upper bound of a product",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rectangle is 8.4 cm long and 5.2 cm wide, both measured to 1 decimal place. What is the upper bound of its area?",
+    "options": [
+      "44.3625 cm²",
+      "43.68 cm²",
+      "43.0025 cm²",
+      "45.05 cm²"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The upper bounds of the sides are 8.45 cm and 5.25 cm, and 8.45 × 5.25 = 44.3625 cm². 43.68 cm² is the area from the rounded values, not a bound."
+  },
+  {
+    "id": "GCSEH-T1-031",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Estimating the mean from grouped data",
+    "difficulty": 2,
+    "format": "numeric",
+    "passage": "| Time, $t$ minutes | Frequency |\n|---|---|\n| $0 < t \\le 10$ | 4 |\n| $10 < t \\le 20$ | 9 |\n| $20 < t \\le 30$ | 5 |\n| $30 < t \\le 40$ | 2 |",
+    "stem": "The table shows how long 20 students took to finish a puzzle. Work out an estimate of the mean time, in minutes. Type the number only.",
+    "numeric": {
+      "answers": [
+        "17.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Multiply each midpoint by its frequency: 5 × 4 + 15 × 9 + 25 × 5 + 35 × 2 = 350. Then 350 ÷ 20 = 17.5 minutes."
+  },
+  {
+    "id": "GCSEH-T1-032",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Turning point by completing the square",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Write $x^2 - 6x + 14$ in the form $(x + a)^2 + b$. What are the coordinates of the turning point of $y = x^2 - 6x + 14$?",
+    "options": [
+      "$(-3, 5)$",
+      "$(3, 5)$",
+      "$(3, 14)$",
+      "$(-3, -5)$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "$x^2 - 6x + 14 = (x - 3)^2 - 9 + 14 = (x - 3)^2 + 5$. The minimum is when $x - 3 = 0$, so the turning point is $(3, 5)$, not $(-3, 5)$."
+  },
+  {
+    "id": "GCSEH-T1-033",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Density",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A metal block measures 6 cm by 4 cm by 2.5 cm and has a mass of 513 g. Work out its density in g/cm³. Type the number only.",
+    "numeric": {
+      "answers": [
+        "8.55"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "The volume is 6 × 4 × 2.5 = 60 cm³, and density = mass ÷ volume = 513 ÷ 60 = 8.55 g/cm³."
+  },
+  {
+    "id": "GCSEH-T1-034",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Area of a triangle using sine",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A triangle has sides 8 cm and 11 cm with an angle of 120° between them. Work out its area, in cm², to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "38.1"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Area $= \\frac{1}{2}ab\\sin C = \\frac{1}{2} \\times 8 \\times 11 \\times \\sin 120^\\circ = 44 \\times 0.866... = 38.10...$ cm²."
+  },
+  {
+    "id": "GCSEH-T1-035",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Area under a velocity-time graph",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "An object speeds up at a constant rate from 4 m/s to 16 m/s in 8 seconds. How far does it travel in those 8 seconds, in metres? Type the number only.",
+    "numeric": {
+      "answers": [
+        "80"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Distance is the area under the velocity-time graph, here a trapezium: $\\frac{4 + 16}{2} \\times 8 = 80$ m."
+  },
+  {
+    "id": "GCSEH-T1-036",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Error interval from truncation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A number $x$ is truncated to 1 decimal place. The result is 6.3. What is the error interval for $x$?",
+    "options": [
+      "$6.25 \\le x < 6.35$",
+      "$6.2 < x \\le 6.3$",
+      "$6.3 \\le x < 6.4$",
+      "$6.3 < x \\le 6.4$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Truncating chops off the later digits, so every number from 6.3 up to (but not including) 6.4 truncates to 6.3. $6.25 \\le x < 6.35$ is the interval for rounding, not truncating."
+  },
+  {
+    "id": "GCSEH-T1-037",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Conditional probability from a two-way table",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "| | Walk | Bus | Car | Total |\n|---|---|---|---|---|\n| Year 10 | 28 | 22 | 10 | 60 |\n| Year 11 | 17 | 30 | 13 | 60 |\n| Total | 45 | 52 | 23 | 120 |",
+    "stem": "The table shows how 120 students travel to school. One of the students who walk is chosen at random. What is the probability that this student is in Year 10?",
+    "options": [
+      "$\\frac{28}{120}$",
+      "$\\frac{28}{60}$",
+      "$\\frac{45}{120}$",
+      "$\\frac{28}{45}$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Only the 45 walkers count, and 28 of them are in Year 10, so $\\frac{28}{45}$. $\\frac{28}{120}$ is the probability of a Year 10 walker out of everyone."
+  },
+  {
+    "id": "GCSEH-T1-038",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Pressure",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A box with a rectangular base 0.4 m by 0.5 m exerts a pressure of 3000 N/m² on the floor. What force, in newtons, does it exert? Type the number only.",
+    "numeric": {
+      "answers": [
+        "600"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Pressure = force ÷ area, so force = pressure × area = 3000 × (0.4 × 0.5) = 3000 × 0.2 = 600 N."
+  },
+  {
+    "id": "GCSEH-T1-039",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Arc length",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "circleBasics",
+    "stem": "A sector of a circle has radius 9 cm and angle 140°. Work out the arc length, in cm, to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "22.0",
+        "22"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Arc length $= \\frac{140}{360} \\times 2\\pi \\times 9 = 21.99...$ cm, which is 22.0 cm."
+  },
+  {
+    "id": "GCSEH-T1-040",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Simplifying algebraic fractions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify $\\dfrac{x^2 - 9}{x^2 + x - 6}$.",
+    "options": [
+      "$\\dfrac{x - 3}{x - 2}$",
+      "$\\dfrac{x + 3}{x - 2}$",
+      "$\\dfrac{x - 3}{x + 2}$",
+      "$\\dfrac{-9}{x - 6}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Factorise both: $\\frac{(x - 3)(x + 3)}{(x + 3)(x - 2)}$, then cancel $(x + 3)$. Cancelling the $x^2$ terms directly is not allowed, so $\\frac{-9}{x - 6}$ is wrong."
+  },
+  {
+    "id": "GCSEH-T1-041",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Linear and quadratic simultaneous equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Solve the simultaneous equations $y = x + 1$ and $x^2 + y^2 = 13$.",
+    "options": [
+      "$x = 3,\\ y = 2$ or $x = -2,\\ y = -3$",
+      "$x = 2,\\ y = 3$ or $x = -3,\\ y = -2$",
+      "$x = 2,\\ y = 3$ only",
+      "$x = -2,\\ y = -1$ or $x = 3,\\ y = 4$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Substitute: $x^2 + (x + 1)^2 = 13$ gives $2x^2 + 2x - 12 = 0$, so $x^2 + x - 6 = 0$ and $x = 2$ or $x = -3$. Then $y = x + 1$ gives 3 and $-2$."
+  },
+  {
+    "id": "GCSEH-T1-042",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Percentage change",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percentChange",
+    "stem": "A house was bought for £185 000 and sold for £212 750. Work out the percentage profit. Type the number only.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The profit is £27 750, and 27 750 ÷ 185 000 × 100 = 15%. Always divide by the original amount, not the new one."
+  },
+  {
+    "id": "GCSEH-T1-043",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Volume of a cone",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A cone has base radius 4 cm and perpendicular height 9 cm. The volume of a cone is $\\frac{1}{3}\\pi r^2 h$. Work out the volume, in cm³, to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "150.8"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$\\frac{1}{3} \\times \\pi \\times 16 \\times 9 = 48\\pi = 150.79...$ cm³. Forgetting the $\\frac{1}{3}$ gives 452.4 cm³, the volume of the cylinder around it."
+  },
+  {
+    "id": "GCSEH-T1-044",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "LCM from prime factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$A = 2^3 \\times 3^2 \\times 5$ and $B = 2^2 \\times 3^3 \\times 7$. What is the lowest common multiple of $A$ and $B$?",
+    "options": [
+      "36",
+      "1080",
+      "7560",
+      "272 160"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Take the highest power of each prime: $2^3 \\times 3^3 \\times 5 \\times 7 = 7560$. 36 is the highest common factor, and 272 160 is $A \\times B$, which is a common multiple but not the lowest."
+  },
+  {
+    "id": "GCSEH-T1-045",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Expected outcomes from relative frequency",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A spinner landed on 3 in 42 of 150 spins. Use this to estimate how many times it will land on 3 in 400 spins. Type the number only.",
+    "numeric": {
+      "answers": [
+        "112"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The relative frequency is $\\frac{42}{150} = 0.28$, so expect $0.28 \\times 400 = 112$."
+  },
+  {
+    "id": "GCSEH-T1-046",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Inverse functions",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "functionNotation",
+    "stem": "$f(x) = \\dfrac{x + 5}{3}$. Find $f^{-1}(x)$.",
+    "options": [
+      "$3x + 5$",
+      "$\\dfrac{x - 5}{3}$",
+      "$\\dfrac{3}{x + 5}$",
+      "$3x - 5$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Write $y = \\frac{x + 5}{3}$, so $3y = x + 5$ and $x = 3y - 5$. The inverse undoes the steps in reverse order; $\\frac{3}{x + 5}$ is the reciprocal, not the inverse."
+  },
+  {
+    "id": "GCSEH-T1-047",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Direct proportion with a root",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "$y$ is directly proportional to $\\sqrt{x}$. When $x = 16$, $y = 12$. Work out $y$ when $x = 50$, to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "21.2"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$y = k\\sqrt{x}$, so $12 = 4k$ and $k = 3$. When $x = 50$, $y = 3\\sqrt{50} = 21.21...$, which is 21.2."
+  },
+  {
+    "id": "GCSEH-T1-048",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Similar solids: volume",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Two mathematically similar bottles have heights 12 cm and 18 cm. The smaller bottle holds 400 ml. How many ml does the larger bottle hold? Type the number only.",
+    "numeric": {
+      "answers": [
+        "1350"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The length scale factor is $18 \\div 12 = 1.5$, so the volume scale factor is $1.5^3 = 3.375$, and $400 \\times 3.375 = 1350$ ml. Multiplying by 1.5 only scales one length."
+  },
+  {
+    "id": "GCSEH-T1-049",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Geometric sequences",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The first term of a geometric sequence is 5 and the common ratio is 3. Work out the 6th term. Type the number only.",
+    "numeric": {
+      "answers": [
+        "1215"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The 6th term is $5 \\times 3^5 = 5 \\times 243 = 1215$. Using $3^6$ counts one multiplication too many."
+  },
+  {
+    "id": "GCSEH-T1-050",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Product rule for counting",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A security code is 2 letters from A to Z followed by 2 digits from 0 to 9. Letters may repeat, but the two digits must be different. How many different codes are possible? Type the number only.",
+    "numeric": {
+      "answers": [
+        "60840"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "There are 26 × 26 choices for the letters and 10 × 9 for the digits, because the second digit cannot match the first. 676 × 90 = 60 840."
+  },
+  {
+    "id": "GCSEH-T1-051",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Tree diagrams with dependent events",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The probability of rain on Monday is 0.3. If it rains on Monday, the probability of rain on Tuesday is 0.6. If it does not, the probability of rain on Tuesday is 0.2. Work out the probability that it rains on exactly one of the two days. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.26"
+      ],
+      "tolerance": 0.0001
+    },
+    "calculator": true,
+    "explanation": "Rain then dry: 0.3 × 0.4 = 0.12. Dry then rain: 0.7 × 0.2 = 0.14. Add the two routes: 0.26."
+  },
+  {
+    "id": "GCSEH-T1-052",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Tangent to a circle",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The point $(3, 4)$ lies on the circle $x^2 + y^2 = 25$. Which is the equation of the tangent to the circle at $(3, 4)$?",
+    "options": [
+      "$3x + 4y = 25$",
+      "$4x + 3y = 25$",
+      "$4y - 3x = 7$",
+      "$y = \\frac{4}{3}x$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The radius to $(3, 4)$ has gradient $\\frac{4}{3}$, so the tangent has gradient $-\\frac{3}{4}$: $y - 4 = -\\frac{3}{4}(x - 3)$, which rearranges to $3x + 4y = 25$. $y = \\frac{4}{3}x$ is the radius itself."
+  },
+  {
+    "id": "GCSEH-T1-053",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Best buy",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "ratios",
+    "stem": "Which bottle of cooking oil is the best value for money?",
+    "options": [
+      "750 ml for £2.85",
+      "1.2 litres for £4.38",
+      "2 litres for £7.40",
+      "All three are the same value"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Cost per litre: £2.85 ÷ 0.75 = £3.80, £4.38 ÷ 1.2 = £3.65 and £7.40 ÷ 2 = £3.70. The 1.2 litre bottle is cheapest per litre, even though the 2 litre bottle is bigger."
+  },
+  {
+    "id": "GCSEH-T1-054",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Pythagoras in 3D",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "pythagorean",
+    "stem": "A cuboid measures 6 cm by 8 cm by 5 cm. Work out the length of the longest diagonal inside it, in cm, to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "11.2"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "The base diagonal is $\\sqrt{6^2 + 8^2} = 10$ cm, and the space diagonal is $\\sqrt{10^2 + 5^2} = \\sqrt{125} = 11.18...$ cm."
+  },
+  {
+    "id": "GCSEH-T1-055",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Graph transformations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The graph of $y = f(x)$ is transformed to the graph of $y = f(x + 2)$. Which transformation is this?",
+    "options": [
+      "Translation by $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$",
+      "Translation by $\\begin{pmatrix} 0 \\\\ 2 \\end{pmatrix}$",
+      "Translation by $\\begin{pmatrix} -2 \\\\ 0 \\end{pmatrix}$",
+      "Translation by $\\begin{pmatrix} 0 \\\\ -2 \\end{pmatrix}$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Adding inside the bracket moves the graph horizontally the opposite way, so $f(x + 2)$ shifts it 2 units left. $\\begin{pmatrix} 0 \\\\ 2 \\end{pmatrix}$ would be $f(x) + 2$, a vertical move."
+  },
+  {
+    "id": "GCSEH-T1-056",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Calculator: roots and powers",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Work out $\\dfrac{\\sqrt{12.6^2 - 4.1^2}}{0.35}$. Give your answer to 3 significant figures. Type the number only.",
+    "numeric": {
+      "answers": [
+        "34.0",
+        "34"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$12.6^2 - 4.1^2 = 158.76 - 16.81 = 141.95$. Its square root is 11.914..., and dividing by 0.35 gives 34.04..., so 34.0 to 3 significant figures."
+  },
+  {
+    "id": "GCSEH-T1-057",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Stratified sampling",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A school has 1200 students, 336 of them in Year 7. A stratified sample of 50 students is taken by year group. How many Year 7 students should be in the sample? Type the number only.",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$\\frac{336}{1200} \\times 50 = 14$. The sample keeps the same proportion of Year 7 students as the school."
+  },
+  {
+    "id": "GCSEH-T1-058",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Exponential growth",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "A population of 2400 insects grows by 8% each hour. After how many whole hours will the population first be more than 3500? Type the number only.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$2400 \\times 1.08^4 = 3265.2$, which is not yet above 3500, and $2400 \\times 1.08^5 = 3526.4$, which is. So 5 hours."
+  },
+  {
+    "id": "GCSEH-T1-059",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Trigonometry: finding an angle",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "sohcahtoa",
+    "stem": "In a right-angled triangle, the side opposite angle x is 7 cm and the hypotenuse is 12 cm. Work out angle x, in degrees, to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "35.7"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$\\sin x = \\frac{7}{12}$, so $x = \\sin^{-1}(0.5833...) = 35.68...^\\circ$. Using tan would need the adjacent side, which is not given."
+  },
+  {
+    "id": "GCSEH-T1-060",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Algebraic proof",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$n$ is a whole number. Expand and simplify $(2n + 1)^2 - (2n - 1)^2$. What does the result show?",
+    "options": [
+      "It is always odd",
+      "It is always a square number",
+      "It is always a multiple of 16",
+      "It is always a multiple of 8"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "$(4n^2 + 4n + 1) - (4n^2 - 4n + 1) = 8n$, which is 8 times a whole number. It is a multiple of 16 only when $n$ is even."
+  },
+  {
+    "id": "GCSEH-T2-001",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Expanding triple brackets",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Expand and simplify $(x + 2)(x - 3)(2x + 1)$.",
+    "options": [
+      "$2x^3 - x^2 - 13x - 6$",
+      "$2x^3 + x^2 - 13x - 6$",
+      "$2x^3 - x^2 - 11x - 6$",
+      "$2x^3 - 3x^2 - 13x - 6$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$(x + 2)(x - 3) = x^2 - x - 6$. Then $(x^2 - x - 6)(2x + 1) = 2x^3 + x^2 - 2x^2 - x - 12x - 6 = 2x^3 - x^2 - 13x - 6$."
+  },
+  {
+    "id": "GCSEH-T2-002",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Ratio from a difference",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "Ali and Ben share some sweets in the ratio 5 : 3. Ali gets 18 more sweets than Ben. How many sweets are there altogether? Type the number only.",
+    "numeric": {
+      "answers": [
+        "72"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The difference is 5 − 3 = 2 parts, so one part is 18 ÷ 2 = 9 sweets. The total is 8 parts, 72 sweets."
+  },
+  {
+    "id": "GCSEH-T2-003",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Circle theorems: tangent and radius",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "triangleAngles",
+    "stem": "PT is a tangent to a circle with centre O at the point T. Angle TOP = 58°. Work out angle OPT, in degrees. Type the number only.",
+    "numeric": {
+      "answers": [
+        "32"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "A tangent meets the radius at 90°, so angle OTP = 90°. The angles of triangle OTP add to 180°: 180 − 90 − 58 = 32°."
+  },
+  {
+    "id": "GCSEH-T2-004",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Negative fractional indices",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Work out the value of $\\left(\\frac{16}{81}\\right)^{-\\frac{3}{4}}$.",
+    "options": [
+      "$\\frac{8}{27}$",
+      "$\\frac{27}{8}$",
+      "$-\\frac{27}{8}$",
+      "$\\frac{9}{4}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The negative index flips the fraction to $\\frac{81}{16}$. The fourth root is $\\frac{3}{2}$ and cubing gives $\\frac{27}{8}$. Forgetting to flip gives $\\frac{8}{27}$."
+  },
+  {
+    "id": "GCSEH-T2-005",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Mutually exclusive events",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Events A and B are mutually exclusive. P(A) = 0.35 and P(B) = 0.4. What is the probability that neither A nor B happens? Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.25"
+      ],
+      "tolerance": 0.0001
+    },
+    "explanation": "Mutually exclusive events cannot both happen, so P(A or B) = 0.35 + 0.4 = 0.75, and P(neither) = 1 − 0.75 = 0.25."
+  },
+  {
+    "id": "GCSEH-T2-006",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Difference of two squares",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Factorise $9x^2 - 16y^2$.",
+    "options": [
+      "$(3x - 4y)^2$",
+      "$(9x - 16y)(x + y)$",
+      "$(3x - 4y)(3x + 4y)$",
+      "$(3x - 8y)(3x + 2y)$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$9x^2 = (3x)^2$ and $16y^2 = (4y)^2$, so this is $a^2 - b^2 = (a - b)(a + b)$. $(3x - 4y)^2$ would give a middle term of $-24xy$."
+  },
+  {
+    "id": "GCSEH-T2-007",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Speed",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "rateProblems",
+    "stem": "A train travels 45 km in 40 minutes. What is its average speed in km/h? Type the number only.",
+    "numeric": {
+      "answers": [
+        "67.5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "40 minutes is $\\frac{2}{3}$ of an hour, so speed = 45 ÷ $\\frac{2}{3}$ = 67.5 km/h. Dividing 45 by 40 gives km per minute, not km per hour."
+  },
+  {
+    "id": "GCSEH-T2-008",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Cyclic quadrilaterals",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "ABCD is a cyclic quadrilateral. Angle ABC = $(2x + 10)^\\circ$ and angle ADC = $(3x - 5)^\\circ$. Work out the value of $x$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "35"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Opposite angles of a cyclic quadrilateral add to 180°: $5x + 5 = 180$, so $x = 35$."
+  },
+  {
+    "id": "GCSEH-T2-009",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Solving quadratics by factorising",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Solve $3x^2 - 10x - 8 = 0$.",
+    "options": [
+      "$x = -4$ or $x = \\frac{2}{3}$",
+      "$x = 4$ or $x = -2$",
+      "$x = 2$ or $x = -\\frac{4}{3}$",
+      "$x = 4$ or $x = -\\frac{2}{3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$3x^2 - 10x - 8 = (3x + 2)(x - 4)$. Each bracket can be zero: $x = 4$ or $3x = -2$, so $x = -\\frac{2}{3}$."
+  },
+  {
+    "id": "GCSEH-T2-010",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Rationalising the denominator",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Rationalise the denominator and simplify $\\dfrac{6}{\\sqrt{3}}$.",
+    "options": [
+      "$2\\sqrt{3}$",
+      "$6\\sqrt{3}$",
+      "$3\\sqrt{2}$",
+      "$\\frac{\\sqrt{3}}{2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiply top and bottom by $\\sqrt{3}$: $\\frac{6\\sqrt{3}}{3} = 2\\sqrt{3}$. $6\\sqrt{3}$ forgets to divide by the 3 that appears on the bottom."
+  },
+  {
+    "id": "GCSEH-T2-011",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Independent events",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A fair coin is thrown and a fair six-sided dice is rolled. What is the probability of a tail and a square number?",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{1}{12}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "P(tail) = $\\frac{1}{2}$ and the square numbers on a dice are 1 and 4, so P(square) = $\\frac{2}{6}$. For independent events multiply: $\\frac{1}{2} \\times \\frac{2}{6} = \\frac{1}{6}$. $\\frac{1}{12}$ counts only one square number, and $\\frac{1}{3}$ forgets the coin."
+  },
+  {
+    "id": "GCSEH-T2-012",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Linear inequalities",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Solve $5 - 2x \\le 11$.",
+    "options": [
+      "$x \\le -3$",
+      "$x \\ge 3$",
+      "$x \\ge -3$",
+      "$x \\le 8$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Subtract 5: $-2x \\le 6$. Dividing by $-2$ flips the sign: $x \\ge -3$. Forgetting to flip gives $x \\le -3$."
+  },
+  {
+    "id": "GCSEH-T2-013",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Converting area units",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Convert 3.5 m² into cm².",
+    "options": [
+      "350 cm²",
+      "3500 cm²",
+      "350 000 cm²",
+      "35 000 cm²"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "1 m² is 100 cm × 100 cm = 10 000 cm², so 3.5 m² = 35 000 cm². Multiplying by 100 treats it like a length."
+  },
+  {
+    "id": "GCSEH-T2-014",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Exact trigonometric values",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "sohcahtoa",
+    "stem": "A right-angled triangle has hypotenuse 10 cm and an angle of 30°. What is the exact length of the side adjacent to the 30° angle?",
+    "options": [
+      "$5\\sqrt{3}$ cm",
+      "5 cm",
+      "$10\\sqrt{3}$ cm",
+      "$5\\sqrt{2}$ cm"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Adjacent $= 10 \\cos 30^\\circ = 10 \\times \\frac{\\sqrt{3}}{2} = 5\\sqrt{3}$ cm. 5 cm is the opposite side, $10 \\sin 30^\\circ$."
+  },
+  {
+    "id": "GCSEH-T2-015",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Equation of a line through two points",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "slope",
+    "stem": "Find the equation of the straight line through $(-1, 4)$ and $(3, -4)$.",
+    "options": [
+      "$y = 2x + 6$",
+      "$y = -2x + 2$",
+      "$y = -2x + 6$",
+      "$y = -\\frac{1}{2}x + \\frac{7}{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gradient $= \\frac{-4 - 4}{3 - (-1)} = -2$. Then $4 = -2(-1) + c$ gives $c = 2$. Check $(3, -4)$: $-6 + 2 = -4$."
+  },
+  {
+    "id": "GCSEH-T2-016",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Expanding surd brackets",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Expand and simplify $(3 + \\sqrt{2})(3 - \\sqrt{2})$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "This is a difference of two squares: $3^2 - (\\sqrt{2})^2 = 9 - 2 = 7$. The middle terms $3\\sqrt{2}$ and $-3\\sqrt{2}$ cancel."
+  },
+  {
+    "id": "GCSEH-T2-017",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Venn diagrams",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "$n(\\xi) = 40$, $n(A) = 18$, $n(B) = 15$ and $n(A \\cap B) = 7$. How many elements are in neither $A$ nor $B$? Type the number only.",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Elements in A or B: 18 + 15 − 7 = 26, because the 7 in both were counted twice. So 40 − 26 = 14 are in neither."
+  },
+  {
+    "id": "GCSEH-T2-018",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Direct proportion with a cube",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "$y$ is directly proportional to $x^3$. When $x = 2$, $y = 40$. Work out $x$ when $y = 320$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "$y = kx^3$ gives $40 = 8k$, so $k = 5$. Then $320 = 5x^3$, $x^3 = 64$ and $x = 4$."
+  },
+  {
+    "id": "GCSEH-T2-019",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Negative scale factor enlargement",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The point (2, 3) is enlarged by scale factor −2 with centre the origin. Where does it end up?",
+    "options": [
+      "(4, 6)",
+      "(−4, 6)",
+      "(−4, −6)",
+      "(0, 1)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A negative scale factor multiplies the distance from the centre and sends the point to the opposite side: (2 × −2, 3 × −2) = (−4, −6)."
+  },
+  {
+    "id": "GCSEH-T2-020",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Adding algebraic fractions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Write $\\dfrac{2}{x + 1} + \\dfrac{3}{x - 2}$ as a single fraction.",
+    "options": [
+      "$\\dfrac{5}{2x - 1}$",
+      "$\\dfrac{5x + 7}{(x + 1)(x - 2)}$",
+      "$\\dfrac{5x - 7}{(x + 1)(x - 2)}$",
+      "$\\dfrac{5x - 1}{(x + 1)(x - 2)}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Over the common denominator: $2(x - 2) + 3(x + 1) = 2x - 4 + 3x + 3 = 5x - 1$. Adding tops and bottoms separately gives $\\frac{5}{2x - 1}$, which is not valid."
+  },
+  {
+    "id": "GCSEH-T2-021",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Completing the square to solve",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $x^2 + 8x + 3 = 0$ by completing the square. Give your solutions to 2 decimal places.",
+    "options": [
+      "$x = -0.39$ or $x = -7.61$",
+      "$x = 0.39$ or $x = 7.61$",
+      "$x = -0.39$ or $x = 7.61$",
+      "$x = -1.17$ or $x = -6.83$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "$(x + 4)^2 - 16 + 3 = 0$, so $(x + 4)^2 = 13$ and $x = -4 \\pm \\sqrt{13}$, giving $-0.39$ and $-7.61$. Both roots are negative because $-4 + 3.61$ is still below zero."
+  },
+  {
+    "id": "GCSEH-T2-022",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Reverse percentages (VAT)",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percentChange",
+    "stem": "A television costs £474 including VAT at 20%. What is the price before VAT, in pounds? Type the number only.",
+    "numeric": {
+      "answers": [
+        "395"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The price with VAT is 120% of the price before, so £474 ÷ 1.2 = £395. Taking 20% off £474 gives £379.20, which is wrong."
+  },
+  {
+    "id": "GCSEH-T2-023",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Volume of a hemisphere",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The volume of a sphere is $\\frac{4}{3}\\pi r^3$. Work out the volume of a hemisphere of radius 6 cm, in cm³, to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "452.4"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Half of $\\frac{4}{3}\\pi \\times 216$ is $144\\pi = 452.38...$ cm³. The full sphere would be 904.8 cm³."
+  },
+  {
+    "id": "GCSEH-T2-024",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Lower bound of a speed",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A car travels 120 km, measured to the nearest 10 km, in 1.5 hours, measured to the nearest 0.1 hour. What is the lower bound of its average speed, to 1 decimal place?",
+    "options": [
+      "76.7 km/h",
+      "74.2 km/h",
+      "80.0 km/h",
+      "86.2 km/h"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The lowest speed comes from the shortest distance over the longest time: 115 ÷ 1.55 = 74.19... km/h. Using 115 ÷ 1.5 = 76.7 km/h forgets that the time has an upper bound too."
+  },
+  {
+    "id": "GCSEH-T2-025",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Histograms",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The class $45 < m \\le 60$ has a frequency of 45. What frequency density should its bar have in a histogram? Type the number only.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Frequency density = frequency ÷ class width = 45 ÷ 15 = 3."
+  },
+  {
+    "id": "GCSEH-T2-026",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Quadratics in context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A ball's height after $t$ seconds is $h = 20t - 5t^2$ metres. At what times is the ball 15 m high?",
+    "options": [
+      "3 s only",
+      "1.5 s and 2.5 s",
+      "1 s and 3 s",
+      "2 s and 4 s"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "$20t - 5t^2 = 15$ rearranges to $5t^2 - 20t + 15 = 0$, so $t^2 - 4t + 3 = 0$ and $(t - 1)(t - 3) = 0$. The ball passes 15 m on the way up and again on the way down."
+  },
+  {
+    "id": "GCSEH-T2-027",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Reverse compound growth",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A painting increases in value by 6% each year. It is now worth £25 250. What was it worth 4 years ago, to the nearest pound? Type the number only.",
+    "numeric": {
+      "answers": [
+        "20000"
+      ],
+      "tolerance": 1
+    },
+    "calculator": true,
+    "explanation": "Now = earlier $\\times 1.06^4$, so earlier = $25\\,250 \\div 1.06^4 = 20\\,000.3...$, which is £20 000."
+  },
+  {
+    "id": "GCSEH-T2-028",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Bearings",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The bearing of B from A is 065°. Work out the bearing of A from B, in degrees. Type the number only.",
+    "numeric": {
+      "answers": [
+        "245"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "A back bearing differs by 180°: 065° + 180° = 245°."
+  },
+  {
+    "id": "GCSEH-T2-029",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Rearranging for iteration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which equation is a correct rearrangement of $x^3 - 4x - 1 = 0$?",
+    "options": [
+      "$x = \\sqrt[3]{4x - 1}$",
+      "$x = \\dfrac{x^3 + 1}{4}$",
+      "$x = \\sqrt{4x + 1}$",
+      "$x = \\sqrt[3]{4x + 1}$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Add $4x + 1$ to both sides: $x^3 = 4x + 1$, then cube root. $\\frac{x^3 + 1}{4}$ has the wrong sign; the correct form would be $\\frac{x^3 - 1}{4}$."
+  },
+  {
+    "id": "GCSEH-T2-030",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Standard form division",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A country has a population of $6.7 \\times 10^{7}$ and an area of $2.4 \\times 10^{5}$ km². Work out the number of people per km². Give your answer to 3 significant figures. Type the number only.",
+    "numeric": {
+      "answers": [
+        "279"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true,
+    "explanation": "$6.7 \\times 10^{7} \\div (2.4 \\times 10^{5}) = 279.16...$, which is 279 people per km² to 3 significant figures."
+  },
+  {
+    "id": "GCSEH-T2-031",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Comparing distributions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Group A's test scores have median 42 and interquartile range 18. Group B's have median 47 and interquartile range 9. Which comparison is correct?",
+    "options": [
+      "Group B scored higher on average and more consistently",
+      "Group A scored higher on average and more consistently",
+      "Group B scored higher on average but less consistently",
+      "Group A scored lower on average but more consistently"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The higher median (47) shows Group B did better on average, and the smaller interquartile range (9) shows its scores were more consistent."
+  },
+  {
+    "id": "GCSEH-T2-032",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Terms of a linear sequence",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these numbers is a term in the sequence 7, 11, 15, 19, ...?",
+    "options": [
+      "100",
+      "99",
+      "101",
+      "102"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The nth term is $4n + 3$. $4n + 3 = 99$ gives $n = 24$, a whole number. For 100, 101 and 102, $n$ is not a whole number."
+  },
+  {
+    "id": "GCSEH-T2-033",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Converting compound units",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "rateProblems",
+    "stem": "A cyclist travels at 18 m/s. What is this speed in km/h? Type the number only.",
+    "numeric": {
+      "answers": [
+        "64.8"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "In one hour the cyclist goes 18 × 3600 = 64 800 m, which is 64.8 km. So the speed is 64.8 km/h."
+  },
+  {
+    "id": "GCSEH-T2-034",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Cosine rule: finding an angle",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A triangle has sides 5 cm, 7 cm and 9 cm. Work out its largest angle, in degrees, to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "95.7"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "The largest angle is opposite the 9 cm side: $\\cos C = \\frac{5^2 + 7^2 - 9^2}{2 \\times 5 \\times 7} = \\frac{-7}{70} = -0.1$, so $C = 95.73...^\\circ$. A negative cosine means the angle is obtuse."
+  },
+  {
+    "id": "GCSEH-T2-035",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Changing the subject with powers",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The volume of a cone is $V = \\frac{1}{3}\\pi r^2 h$. A cone has volume 500 cm³ and height 12 cm. Work out its radius, in cm, to 2 decimal places. Type the number only.",
+    "numeric": {
+      "answers": [
+        "6.31"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "Rearrange: $r = \\sqrt{\\frac{3V}{\\pi h}} = \\sqrt{\\frac{1500}{12\\pi}} = \\sqrt{39.788...} = 6.307...$, so 6.31 cm."
+  },
+  {
+    "id": "GCSEH-T2-036",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Calculator: cube roots",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Work out $\\sqrt[3]{\\dfrac{5.6 \\times 10^{4}}{7.3}}$. Give your answer to 3 significant figures. Type the number only.",
+    "numeric": {
+      "answers": [
+        "19.7"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$5.6 \\times 10^{4} \\div 7.3 = 7671.2...$ and its cube root is 19.72..., so 19.7 to 3 significant figures."
+  },
+  {
+    "id": "GCSEH-T2-037",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Probability of the same colour",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A bag holds 4 green and 6 yellow sweets. Two are taken at random without replacement. What is the probability that they are the same colour?",
+    "options": [
+      "$\\frac{13}{25}$",
+      "$\\frac{8}{15}$",
+      "$\\frac{7}{15}$",
+      "$\\frac{1}{3}$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Both green: $\\frac{4}{10} \\times \\frac{3}{9} = \\frac{12}{90}$. Both yellow: $\\frac{6}{10} \\times \\frac{5}{9} = \\frac{30}{90}$. Total $\\frac{42}{90} = \\frac{7}{15}$. $\\frac{13}{25}$ assumes the first sweet is put back."
+  },
+  {
+    "id": "GCSEH-T2-038",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Exchange rates",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "£1 = €1.16. A jacket costs €145 in Paris and £128 in London. How much cheaper, in pounds, is the jacket in Paris? Type the number only.",
+    "numeric": {
+      "answers": [
+        "3",
+        "3.00"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "€145 ÷ 1.16 = £125.00, and £128 − £125 = £3.00. Multiplying by 1.16 converts the wrong way."
+  },
+  {
+    "id": "GCSEH-T2-039",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Area of a sector",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "circleBasics",
+    "stem": "A sector has radius 12 cm and angle 75°. Work out its area, in cm², to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "94.2",
+        "94.25"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Area $= \\frac{75}{360} \\times \\pi \\times 12^2 = 30\\pi = 94.24...$ cm²."
+  },
+  {
+    "id": "GCSEH-T2-040",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Quadratic inequalities",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Solve $x^2 - 2x - 15 > 0$.",
+    "options": [
+      "$-3 < x < 5$",
+      "$x > 5$",
+      "$x < -5$ or $x > 3$",
+      "$x < -3$ or $x > 5$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "$(x - 5)(x + 3) > 0$. The parabola is above the axis outside its roots, so $x < -3$ or $x > 5$. $-3 < x < 5$ is where it is below the axis."
+  },
+  {
+    "id": "GCSEH-T2-041",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Simultaneous equations by elimination",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "systems",
+    "stem": "Solve $4x + 3y = 7$ and $6x - 5y = 39$.",
+    "options": [
+      "$x = 4,\\ y = -3$",
+      "$x = -3,\\ y = 4$",
+      "$x = 4,\\ y = 3$",
+      "$x = 1,\\ y = 1$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Make the $x$ terms match: $12x + 9y = 21$ and $12x - 10y = 78$. Subtracting gives $19y = -57$, so $y = -3$, and $4x - 9 = 7$ gives $x = 4$."
+  },
+  {
+    "id": "GCSEH-T2-042",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Simple and compound interest",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Account A pays 4% simple interest per year. Account B pays 3.8% compound interest per year. £3000 is invested for 3 years. Which account pays more interest, and by how much?",
+    "options": [
+      "Account B, by £4.84",
+      "Account A, by £4.84",
+      "Account A, by £18.00",
+      "Account B, by £12.36"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "A pays 4% of £3000 for 3 years, £360. B pays $3000 \\times 1.038^3 - 3000 = 355.16$, so £355.16. So A pays £4.84 more."
+  },
+  {
+    "id": "GCSEH-T2-043",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Similar shapes: area",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Two similar triangles have areas 20 cm² and 45 cm². A side of the smaller triangle is 6 cm. How long, in cm, is the matching side of the larger triangle? Type the number only.",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The area scale factor is $45 \\div 20 = 2.25$, so the length scale factor is $\\sqrt{2.25} = 1.5$, and $6 \\times 1.5 = 9$ cm. Multiplying 6 by 2.25 uses the area factor on a length."
+  },
+  {
+    "id": "GCSEH-T2-044",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Upper bound of a quotient",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "$a = 6.2$ correct to 1 decimal place and $b = 0.35$ correct to 2 decimal places. Work out the upper bound of $\\frac{a}{b}$, to 3 significant figures.",
+    "options": [
+      "17.7",
+      "17.9",
+      "18.1",
+      "17.3"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The largest quotient is the largest top over the smallest bottom: 6.25 ÷ 0.345 = 18.11... 17.9 uses 6.25 ÷ 0.35, which forgets that the divisor's lower bound makes the answer bigger."
+  },
+  {
+    "id": "GCSEH-T2-045",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Changing the mean",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "The mean of 8 numbers is 14. The number 22 is removed. Work out the mean of the 7 numbers left, to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "12.9"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "The total is 8 × 14 = 112. Removing 22 leaves 90, and 90 ÷ 7 = 12.857..., which is 12.9."
+  },
+  {
+    "id": "GCSEH-T2-046",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Composite functions",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "functionNotation",
+    "stem": "$f(x) = 3x - 2$ and $g(x) = x^2 + 1$. Find $gf(x)$.",
+    "options": [
+      "$3x^2 + 1$",
+      "$9x^2 - 12x + 4$",
+      "$3x^2 + 3$",
+      "$9x^2 - 12x + 5$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "$gf(x)$ applies $f$ first: $g(3x - 2) = (3x - 2)^2 + 1 = 9x^2 - 12x + 4 + 1$. $3x^2 + 1$ is $fg(x)$, the other order."
+  },
+  {
+    "id": "GCSEH-T2-047",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Inverse proportion in context",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "6 workers take 15 days to build a wall. How many days would 9 workers take, working at the same rate? Type the number only.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The job takes 6 × 15 = 90 worker-days, so 9 workers need 90 ÷ 9 = 10 days. More workers means fewer days, so the answer must be less than 15."
+  },
+  {
+    "id": "GCSEH-T2-048",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Volume of a frustum",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A cone of radius 6 cm and height 12 cm has a smaller similar cone of radius 2 cm and height 4 cm cut off its top. The volume of a cone is $\\frac{1}{3}\\pi r^2 h$. Work out the volume of the frustum that is left, in cm³, to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "435.6"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Big cone: $\\frac{1}{3}\\pi \\times 36 \\times 12 = 144\\pi$. Small cone: $\\frac{1}{3}\\pi \\times 4 \\times 4 = \\frac{16}{3}\\pi$. The difference is $\\frac{416}{3}\\pi = 435.63...$ cm³."
+  },
+  {
+    "id": "GCSEH-T2-049",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Estimating area under a curve",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A car's speed is recorded every 2 seconds: 0, 6, 10 and 12 m/s at 0, 2, 4 and 6 seconds. Use three trapeziums to estimate the distance travelled in the 6 seconds, in metres. Type the number only.",
+    "numeric": {
+      "answers": [
+        "44"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Each strip is 2 s wide: $\\frac{0 + 6}{2} \\times 2 + \\frac{6 + 10}{2} \\times 2 + \\frac{10 + 12}{2} \\times 2 = 6 + 16 + 22 = 44$ m."
+  },
+  {
+    "id": "GCSEH-T2-050",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Reciprocals",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "What is the reciprocal of 0.125? Type the number only.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "0.125 is $\\frac{1}{8}$, and the reciprocal of $\\frac{1}{8}$ is 8. Check: $0.125 \\times 8 = 1$."
+  },
+  {
+    "id": "GCSEH-T2-051",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Extrapolation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Students revised for between 2 and 15 hours. A line of best fit for their scores is used to predict the score of a student who revised for 40 hours. Why is this prediction unreliable?",
+    "options": [
+      "40 hours is outside the range of the data",
+      "The correlation is positive",
+      "The line of best fit goes through the origin",
+      "There are too many points on the graph"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Using a line of best fit beyond the data is extrapolation: there is no evidence the pattern continues that far. A positive correlation is what makes the line useful inside the range."
+  },
+  {
+    "id": "GCSEH-T2-052",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Exponential graphs",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The curve $y = ab^x$ passes through $(0, 3)$ and $(2, 48)$, where $b > 0$. Work out $y$ when $x = 3$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "192"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "At $x = 0$, $y = a = 3$. Then $3b^2 = 48$, so $b = 4$, and $y = 3 \\times 4^3 = 192$."
+  },
+  {
+    "id": "GCSEH-T2-053",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Percentage of a percentage",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "35% of the students in a school are in Year 11. Of the Year 11 students, 60% sit the Higher tier maths paper. What percentage of the whole school sits the Higher paper? Type the number only.",
+    "numeric": {
+      "answers": [
+        "21"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "60% of 35% is 0.6 × 0.35 = 0.21, which is 21%. Adding or subtracting the percentages does not work because they are of different totals."
+  },
+  {
+    "id": "GCSEH-T2-054",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Trigonometry in 3D",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "sohcahtoa",
+    "stem": "A cuboid is 6 cm by 8 cm by 5 cm high. Work out the angle between a space diagonal and the base, in degrees, to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "26.6"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "The base diagonal is $\\sqrt{6^2 + 8^2} = 10$ cm, and the height is 5 cm, so $\\tan \\theta = \\frac{5}{10}$ and $\\theta = 26.56...^\\circ$."
+  },
+  {
+    "id": "GCSEH-T2-055",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Algebraic proof",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which line of working proves that the sum of any three consecutive integers is a multiple of 3?",
+    "options": [
+      "$1 + 2 + 3 = 6 = 3 \\times 2$",
+      "$n + (n + 1) + (n + 2) = 3(n + 1)$",
+      "$n + n + n = 3n$",
+      "$n + (n + 1) + (n + 2) = 3(n + 2)$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Writing the integers as $n$, $n + 1$, $n + 2$ covers every case, and the total $3n + 3$ factorises as $3(n + 1)$. One numerical example is not a proof."
+  },
+  {
+    "id": "GCSEH-T2-056",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Laws of indices",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "$\\dfrac{5^{7} \\times 5^{-2}}{5^{3}} = 5^{n}$. Find $n$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Add the indices when multiplying and subtract when dividing: $7 + (-2) - 3 = 2$."
+  },
+  {
+    "id": "GCSEH-T2-057",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "At least one",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A fair six-sided dice is rolled 3 times. What is the probability of getting at least one six?",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{125}{216}$",
+      "$\\frac{91}{216}$",
+      "$\\frac{1}{216}$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "P(no sixes) = $\\left(\\frac{5}{6}\\right)^3 = \\frac{125}{216}$, so P(at least one) = $1 - \\frac{125}{216} = \\frac{91}{216}$. Adding $\\frac{1}{6}$ three times gives $\\frac{1}{2}$, which double counts."
+  },
+  {
+    "id": "GCSEH-T2-058",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Density of a mixture",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "300 cm³ of liquid A (density 0.8 g/cm³) is mixed with 200 cm³ of liquid B (density 1.3 g/cm³). Work out the density of the mixture in g/cm³. Type the number only.",
+    "numeric": {
+      "answers": [
+        "1",
+        "1.0",
+        "1.00"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "Mass of A = 300 × 0.8 = 240 g, mass of B = 200 × 1.3 = 260 g. Total 500 g in 500 cm³ is 1.0 g/cm³. Averaging 0.8 and 1.3 gives 1.05, which ignores the different volumes."
+  },
+  {
+    "id": "GCSEH-T2-059",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Surface area of a cylinder",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "circleBasics",
+    "stem": "A closed cylinder has radius 3.5 cm and height 10 cm. Work out its total surface area, in cm², to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "296.9"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Curved surface $2\\pi r h = 70\\pi$, plus two circles $2\\pi r^2 = 24.5\\pi$, gives $94.5\\pi = 296.88...$ cm²."
+  },
+  {
+    "id": "GCSEH-T2-060",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Equation of a circle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A circle has its centre at the origin and passes through $(5, -12)$. What is its equation?",
+    "options": [
+      "$x^2 + y^2 = 13$",
+      "$x^2 + y^2 = 289$",
+      "$x^2 + y^2 = 119$",
+      "$x^2 + y^2 = 169$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The radius is $\\sqrt{5^2 + 12^2} = 13$, and the equation uses $r^2$: $x^2 + y^2 = 169$. $x^2 + y^2 = 13$ uses the radius instead of its square."
+  },
+  {
+    "id": "GCSEH-D-001",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Fractional indices",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "exponentRules",
+    "stem": "Work out $8^{\\frac{2}{3}}$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The denominator 3 means cube root: $\\sqrt[3]{8} = 2$. The numerator 2 means square it: $2^2 = 4$."
+  },
+  {
+    "id": "GCSEH-D-002",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Median",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "Find the median of 7, 3, 9, 4, 12, 6. Type the number only.",
+    "numeric": {
+      "answers": [
+        "6.5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "In order: 3, 4, 6, 7, 9, 12. With six values the median is halfway between the 3rd and 4th: (6 + 7) ÷ 2 = 6.5."
+  },
+  {
+    "id": "GCSEH-D-003",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Simplifying ratios",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "ratios",
+    "stem": "Write 45 : 75 in its simplest form.",
+    "options": [
+      "3 : 5",
+      "9 : 15",
+      "5 : 3",
+      "15 : 25"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The highest common factor of 45 and 75 is 15, and dividing both by 15 gives 3 : 5. 9 : 15 and 15 : 25 are equivalent but not fully simplified."
+  },
+  {
+    "id": "GCSEH-D-004",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Pythagoras: hypotenuse",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "pythagorean",
+    "stem": "A right-angled triangle has shorter sides 12 cm and 16 cm. How long is the hypotenuse, in cm? Type the number only.",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "$12^2 + 16^2 = 144 + 256 = 400$, and $\\sqrt{400} = 20$ cm."
+  },
+  {
+    "id": "GCSEH-D-005",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Expanding double brackets",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Expand $(x + 5)(x - 3)$.",
+    "options": [
+      "$x^2 - 2x - 15$",
+      "$x^2 + 2x - 15$",
+      "$x^2 + 2x + 15$",
+      "$x^2 - 15$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$x^2 - 3x + 5x - 15 = x^2 + 2x - 15$. $x^2 - 15$ multiplies only the first terms and the last terms."
+  },
+  {
+    "id": "GCSEH-D-006",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Negative indices",
+    "difficulty": 1,
+    "format": "multi",
+    "basics": "exponentRules",
+    "stem": "Which two of these are equal to $2^{-3}$? Choose two.",
+    "options": [
+      "$\\frac{1}{8}$",
+      "$0.125$",
+      "$-8$",
+      "$-6$"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2,
+    "explanation": "A negative index means the reciprocal: $2^{-3} = \\frac{1}{2^3} = \\frac{1}{8} = 0.125$. It is never negative, so $-8$ and $-6$ are wrong."
+  },
+  {
+    "id": "GCSEH-D-007",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Mean: missing value",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "The mean of four numbers is 9. Three of the numbers are 6, 8 and 11. What is the fourth number? Type the number only.",
+    "numeric": {
+      "answers": [
+        "11"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The four numbers total 4 × 9 = 36. The three known numbers add to 25, so the fourth is 36 − 25 = 11."
+  },
+  {
+    "id": "GCSEH-D-008",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Sharing in a ratio",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "Blue and yellow paint are mixed in the ratio 2 : 3 to make 12 litres of green. How many litres of yellow paint are used? Type the number only.",
+    "numeric": {
+      "answers": [
+        "7.2"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "There are 5 parts, so one part is 12 ÷ 5 = 2.4 litres. Yellow is 3 parts, 7.2 litres."
+  },
+  {
+    "id": "GCSEH-D-009",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Pythagoras: shorter side",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "pythagorean",
+    "stem": "A right-angled triangle has hypotenuse 17 cm and one shorter side 8 cm. How long is the other side, in cm? Type the number only.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Subtract when finding a shorter side: $17^2 - 8^2 = 289 - 64 = 225$, and $\\sqrt{225} = 15$ cm."
+  },
+  {
+    "id": "GCSEH-D-010",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Expanding and simplifying",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Expand and simplify $3(2x - 1) - 2(x - 4)$.",
+    "options": [
+      "$4x - 11$",
+      "$4x - 5$",
+      "$4x + 5$",
+      "$8x + 5$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$6x - 3 - 2x + 8 = 4x + 5$. Multiplying $-2$ by $-4$ gives $+8$; writing $-8$ gives $4x - 11$."
+  },
+  {
+    "id": "GCSEH-D-011",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Power of a power",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Simplify $(2x^3)^4$.",
+    "options": [
+      "$8x^{12}$",
+      "$2x^{12}$",
+      "$16x^{7}$",
+      "$16x^{12}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Raise each part to the power 4: $2^4 = 16$ and $(x^3)^4 = x^{12}$. $8x^{12}$ multiplies 2 by 4 instead of raising it to the power 4."
+  },
+  {
+    "id": "GCSEH-D-012",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Interquartile range",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A data set has lower quartile 14 and upper quartile 31. What is the interquartile range? Type the number only.",
+    "numeric": {
+      "answers": [
+        "17"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Interquartile range = upper quartile − lower quartile = 31 − 14 = 17."
+  },
+  {
+    "id": "GCSEH-D-013",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Scaling a recipe",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "A recipe for 6 people uses 420 g of flour. How many grams of flour are needed for 9 people? Type the number only.",
+    "numeric": {
+      "answers": [
+        "630"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "For 1 person it is 420 ÷ 6 = 70 g, so 9 people need 630 g."
+  },
+  {
+    "id": "GCSEH-D-014",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Distance between two points",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "pythagorean",
+    "stem": "Work out the distance between the points (1, 2) and (7, 10). Type the number only.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The horizontal change is 6 and the vertical change is 8, so the distance is $\\sqrt{6^2 + 8^2} = \\sqrt{100} = 10$."
+  },
+  {
+    "id": "GCSEH-D-015",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Factorising quadratics",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Factorise $x^2 - 5x - 14$.",
+    "options": [
+      "$(x - 7)(x + 2)$",
+      "$(x + 7)(x - 2)$",
+      "$(x - 7)(x - 2)$",
+      "$(x - 14)(x + 1)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Find two numbers that multiply to $-14$ and add to $-5$: $-7$ and $2$. $(x + 7)(x - 2)$ gives $+5x$."
+  },
+  {
+    "id": "GCSEH-D-016",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Negative fractional indices",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Work out $49^{-\\frac{1}{2}}$.",
+    "options": [
+      "$-7$",
+      "$\\frac{1}{7}$",
+      "$7$",
+      "$-\\frac{49}{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The power $\\frac{1}{2}$ is a square root, giving 7, and the minus sign means the reciprocal, $\\frac{1}{7}$. A negative index never makes the answer negative."
+  },
+  {
+    "id": "GCSEH-D-017",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Estimating the mean from grouped data",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "passage": "| Height, $h$ cm | Frequency |\n|---|---|\n| $0 < h \\le 4$ | 3 |\n| $4 < h \\le 8$ | 5 |\n| $8 < h \\le 12$ | 2 |",
+    "stem": "The table shows the heights of 10 seedlings. Work out an estimate of the mean height, in cm. Type the number only.",
+    "numeric": {
+      "answers": [
+        "5.6"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Use the midpoints 2, 6 and 10: 2 × 3 + 6 × 5 + 10 × 2 = 56. Then 56 ÷ 10 = 5.6 cm."
+  },
+  {
+    "id": "GCSEH-D-018",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Ratio to fraction",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "ratios",
+    "stem": "The ratio of boys to girls in a club is 4 : 5. What fraction of the club are girls?",
+    "options": [
+      "$\\frac{5}{4}$",
+      "$\\frac{4}{9}$",
+      "$\\frac{5}{9}$",
+      "$\\frac{4}{5}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "There are 4 + 5 = 9 parts and 5 of them are girls, so $\\frac{5}{9}$. $\\frac{4}{5}$ compares boys with girls rather than girls with the whole club."
+  },
+  {
+    "id": "GCSEH-D-019",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Converse of Pythagoras",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "pythagorean",
+    "stem": "A triangle has sides 6 cm, 8 cm and 11 cm. Is it right-angled?",
+    "options": [
+      "Yes, because $6 + 8 > 11$",
+      "Yes, because $6^2 + 8^2 = 100$",
+      "No, because 11 is not a multiple of 6",
+      "No, because $6^2 + 8^2 \\ne 11^2$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A right-angled triangle needs $a^2 + b^2 = c^2$. Here $36 + 64 = 100$ but $11^2 = 121$, so it is not right-angled."
+  },
+  {
+    "id": "GCSEH-D-020",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Factorising harder quadratics",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Factorise $6x^2 - x - 2$.",
+    "options": [
+      "$(3x - 2)(2x + 1)$",
+      "$(3x + 2)(2x - 1)$",
+      "$(6x + 1)(x - 2)$",
+      "$(3x - 1)(2x + 2)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$(3x - 2)(2x + 1) = 6x^2 + 3x - 4x - 2 = 6x^2 - x - 2$. $(3x + 2)(2x - 1)$ gives $+x$ in the middle."
+  },
+  {
+    "id": "GCSEH-D-021",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Writing numbers in standard form",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "scientificNotation",
+    "stem": "Write 0.000306 in standard form.",
+    "options": [
+      "$3.06 \\times 10^{-5}$",
+      "$3.06 \\times 10^{-4}$",
+      "$30.6 \\times 10^{-5}$",
+      "$3.06 \\times 10^{4}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Move the decimal point 4 places right to get 3.06, a number from 1 to less than 10, so the power is $-4$. $30.6 \\times 10^{-5}$ has the right value but 30.6 is not between 1 and 10."
+  },
+  {
+    "id": "GCSEH-D-022",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Probabilities that sum to 1",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A spinner can land on A, B, C or D. P(A) = 0.2, P(B) = 0.35, P(C) = $x$ and P(D) = $2x$. Work out P(D). Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.3"
+      ],
+      "tolerance": 0.0001
+    },
+    "explanation": "The probabilities add to 1, so 0.55 + 3x = 1, giving x = 0.15. Then P(D) = 2 × 0.15 = 0.3."
+  },
+  {
+    "id": "GCSEH-D-023",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Changing ratios",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "A box holds red and blue counters in the ratio 3 : 5. After 6 more red counters are added, the ratio is 3 : 4. How many counters were in the box at the start? Type the number only.",
+    "numeric": {
+      "answers": [
+        "64"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Call the start $3k$ red and $5k$ blue. Then $\\frac{3k + 6}{5k} = \\frac{3}{4}$, so $12k + 24 = 15k$ and $k = 8$. That is 24 red and 40 blue, 64 counters."
+  },
+  {
+    "id": "GCSEH-D-024",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Exact trigonometric values",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "sohcahtoa",
+    "stem": "Work out $14 \\sin 30^\\circ$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "$\\sin 30^\\circ = \\frac{1}{2}$, so $14 \\times \\frac{1}{2} = 7$."
+  },
+  {
+    "id": "GCSEH-D-025",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Difference of two squares",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Factorise $x^2 - 49$.",
+    "options": [
+      "$(x - 7)^2$",
+      "$(x - 49)(x + 1)$",
+      "$(x - 7)(x + 7)$",
+      "$x(x - 49)$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$x^2 - 49 = x^2 - 7^2 = (x - 7)(x + 7)$. $(x - 7)^2$ expands to $x^2 - 14x + 49$."
+  },
+  {
+    "id": "GCSEH-D-026",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Multiplying in standard form",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "scientificNotation",
+    "stem": "Work out $(6 \\times 10^{5}) \\times (4 \\times 10^{-2})$. Give your answer in standard form.",
+    "options": [
+      "$2.4 \\times 10^{3}$",
+      "$2.4 \\times 10^{7}$",
+      "$1.5 \\times 10^{7}$",
+      "$2.4 \\times 10^{4}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$6 \\times 4 = 24$ and $10^{5} \\times 10^{-2} = 10^{3}$, giving $24 \\times 10^{3} = 2.4 \\times 10^{4}$. Stopping at $2.4 \\times 10^{3}$ forgets to adjust the power when 24 becomes 2.4."
+  },
+  {
+    "id": "GCSEH-D-027",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Probability of an event not happening",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The probability that a train is late is 0.38. What is the probability that it is not late? Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.62"
+      ],
+      "tolerance": 0.0001
+    },
+    "explanation": "P(not late) = 1 − 0.38 = 0.62."
+  },
+  {
+    "id": "GCSEH-D-028",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Percentage increase",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percentChange",
+    "stem": "A price rises from £80 to £92. What is the percentage increase? Type the number only.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The increase is £12, and 12 ÷ 80 × 100 = 15%. Dividing by 92 instead of the original 80 gives about 13%."
+  },
+  {
+    "id": "GCSEH-D-029",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Choosing the trig ratio",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "sohcahtoa",
+    "stem": "In a right-angled triangle, the side opposite angle θ is 5 cm and the side adjacent to it is 12 cm. Which is true?",
+    "options": [
+      "$\\tan \\theta = \\frac{5}{12}$",
+      "$\\sin \\theta = \\frac{5}{12}$",
+      "$\\cos \\theta = \\frac{5}{12}$",
+      "$\\tan \\theta = \\frac{12}{5}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Opposite over adjacent is tan (TOA). Sine needs the hypotenuse, which is 13 cm here, not 12."
+  },
+  {
+    "id": "GCSEH-D-030",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Equations with brackets",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve $5(x - 2) = 3x + 4$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "$5x - 10 = 3x + 4$, so $2x = 14$ and $x = 7$."
+  },
+  {
+    "id": "GCSEH-D-031",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Dividing in standard form",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "scientificNotation",
+    "stem": "Work out $(8 \\times 10^{6}) \\div (2 \\times 10^{-3})$.",
+    "options": [
+      "$4 \\times 10^{3}$",
+      "$4 \\times 10^{9}$",
+      "$4 \\times 10^{-18}$",
+      "$6 \\times 10^{9}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$8 \\div 2 = 4$ and $10^{6} \\div 10^{-3} = 10^{6 - (-3)} = 10^{9}$. Subtracting a negative adds, so $10^{3}$ is wrong."
+  },
+  {
+    "id": "GCSEH-D-032",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Expected frequency",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The probability of a spinner landing on red is 0.15. It is spun 300 times. How many times would you expect it to land on red? Type the number only.",
+    "numeric": {
+      "answers": [
+        "45"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Expected frequency = probability × number of trials = 0.15 × 300 = 45."
+  },
+  {
+    "id": "GCSEH-D-033",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Reverse percentages",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "percentChange",
+    "stem": "After a 25% increase, a number is 150. What was the number before the increase? Type the number only.",
+    "numeric": {
+      "answers": [
+        "120"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "150 is 125% of the original, so the original is 150 ÷ 1.25 = 120. Taking 25% off 150 gives 112.5, which is wrong because the 25% was of the original."
+  },
+  {
+    "id": "GCSEH-D-034",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Exact trigonometric values",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "sohcahtoa",
+    "stem": "A right-angled triangle has hypotenuse 18 cm. One angle is 60°. How long, in cm, is the side adjacent to the 60° angle? Type the number only.",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Adjacent $= 18 \\cos 60^\\circ = 18 \\times \\frac{1}{2} = 9$ cm."
+  },
+  {
+    "id": "GCSEH-D-035",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Simplifying surds",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "squareRoots",
+    "stem": "Write $\\sqrt{50}$ in its simplest form.",
+    "options": [
+      "$2\\sqrt{5}$",
+      "$25\\sqrt{2}$",
+      "$5\\sqrt{2}$",
+      "$10\\sqrt{5}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The biggest square factor of 50 is 25, so $\\sqrt{50} = \\sqrt{25}\\sqrt{2} = 5\\sqrt{2}$. $25\\sqrt{2}$ forgets to square root the 25."
+  },
+  {
+    "id": "GCSEH-D-036",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Conditional probability from a two-way table",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| | Tea | Coffee | Total |\n|---|---|---|---|\n| Adults | 18 | 32 | 50 |\n| Teenagers | 12 | 8 | 20 |\n| Total | 30 | 40 | 70 |",
+    "stem": "The table shows the drinks chosen by 70 people at a café. An adult is chosen at random. What is the probability that they chose coffee?",
+    "options": [
+      "$\\frac{32}{70}$",
+      "$\\frac{4}{5}$",
+      "$\\frac{4}{7}$",
+      "$\\frac{16}{25}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Out of the 50 adults, 32 chose coffee: $\\frac{32}{50} = \\frac{16}{25}$. $\\frac{32}{70}$ divides by everyone, not just the adults."
+  },
+  {
+    "id": "GCSEH-D-037",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Equations with fractions",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve $\\dfrac{x + 3}{4} = \\dfrac{2x - 1}{3}$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "2.6",
+        "13/5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Cross-multiply: $3(x + 3) = 4(2x - 1)$, so $3x + 9 = 8x - 4$, $13 = 5x$ and $x = 2.6$."
+  },
+  {
+    "id": "GCSEH-D-038",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Percentage multipliers",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "percentChange",
+    "stem": "Which number do you multiply by to decrease an amount by 7%?",
+    "options": [
+      "0.93",
+      "0.7",
+      "1.07",
+      "0.07"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A 7% decrease leaves 93% of the amount, and 93% is 0.93. Multiplying by 0.07 finds the 7% itself, not what is left."
+  },
+  {
+    "id": "GCSEH-D-039",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Isosceles triangles",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "triangleAngles",
+    "stem": "An isosceles triangle has an angle of 40° between its two equal sides. What size, in degrees, is each of the other two angles? Type the number only.",
+    "numeric": {
+      "answers": [
+        "70"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The other two angles are equal and share 180° − 40° = 140°, so each is 70°."
+  },
+  {
+    "id": "GCSEH-D-040",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Multiplying surds",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "squareRoots",
+    "stem": "Work out $\\sqrt{3} \\times \\sqrt{12}$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "$\\sqrt{3} \\times \\sqrt{12} = \\sqrt{36} = 6$."
+  },
+  {
+    "id": "GCSEH-D-041",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Conditional probability from a Venn diagram",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a Venn diagram, $n(B) = 15$ and $n(A \\cap B) = 6$. An element of $B$ is chosen at random. What is the probability that it is also in $A$?",
+    "options": [
+      "$\\frac{3}{5}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{6}{21}$",
+      "$\\frac{1}{6}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Given that the element is in $B$, only the 15 elements of $B$ count, and 6 of them are in $A$: $\\frac{6}{15} = \\frac{2}{5}$. $\\frac{3}{5}$ is the chance it is in $B$ only."
+  },
+  {
+    "id": "GCSEH-D-042",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Simultaneous equations",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "systems",
+    "stem": "Solve $2x + y = 11$ and $3x - y = 14$.",
+    "options": [
+      "$x = 1,\\ y = 5$",
+      "$x = 5,\\ y = -1$",
+      "$x = 5,\\ y = 1$",
+      "$x = 3,\\ y = 5$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Add the equations to remove $y$: $5x = 25$, so $x = 5$, then $10 + y = 11$ gives $y = 1$."
+  },
+  {
+    "id": "GCSEH-D-043",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Percentage decrease",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "percentChange",
+    "stem": "The number of pupils in a club falls from 250 to 210. What is the percentage decrease? Type the number only.",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The fall is 40, and 40 ÷ 250 × 100 = 16%."
+  },
+  {
+    "id": "GCSEH-D-044",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Exterior angle of a triangle",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "triangleAngles",
+    "stem": "Two interior angles of a triangle are 62° and 57°. What size, in degrees, is the exterior angle at the third corner? Type the number only.",
+    "numeric": {
+      "answers": [
+        "119"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The exterior angle equals the sum of the two opposite interior angles: 62° + 57° = 119°."
+  },
+  {
+    "id": "GCSEH-D-045",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Rationalising the denominator",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "squareRoots",
+    "stem": "Rationalise the denominator of $\\dfrac{10}{\\sqrt{5}}$.",
+    "options": [
+      "$5\\sqrt{2}$",
+      "$10\\sqrt{5}$",
+      "$\\frac{\\sqrt{5}}{2}$",
+      "$2\\sqrt{5}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Multiply top and bottom by $\\sqrt{5}$: $\\frac{10\\sqrt{5}}{5} = 2\\sqrt{5}$. $10\\sqrt{5}$ forgets the 5 that is now on the bottom."
+  },
+  {
+    "id": "GCSEH-D-046",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Independent events with replacement",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A bag holds 3 red and 7 blue balls. A ball is taken, replaced, and a second ball is taken. What is the probability of red then blue?",
+    "options": [
+      "$\\frac{21}{100}$",
+      "$\\frac{21}{90}$",
+      "$\\frac{10}{100}$",
+      "$\\frac{42}{100}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ball is replaced, so the events are independent: $\\frac{3}{10} \\times \\frac{7}{10} = \\frac{21}{100}$. $\\frac{42}{100}$ is red and blue in either order."
+  },
+  {
+    "id": "GCSEH-D-047",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Where a line meets a curve",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "systems",
+    "stem": "Where does the line $y = 2x - 1$ meet the curve $y = x^2 - 4$?",
+    "options": [
+      "$(3, 5)$ only",
+      "$(3, 5)$ and $(-1, -3)$",
+      "$(-3, -7)$ and $(1, 1)$",
+      "$(1, -3)$ and $(3, 5)$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Set them equal: $x^2 - 4 = 2x - 1$, so $x^2 - 2x - 3 = 0$ and $(x - 3)(x + 1) = 0$. Then $y = 2x - 1$ gives $(3, 5)$ and $(-1, -3)$."
+  },
+  {
+    "id": "GCSEH-D-048",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Compound interest",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "£2000 is invested at 10% compound interest per year. How much is in the account after 2 years, in pounds? Type the number only.",
+    "numeric": {
+      "answers": [
+        "2420"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "After 1 year: £2200. After 2 years: £2200 × 1.1 = £2420. Simple interest would give £2400."
+  },
+  {
+    "id": "GCSEH-D-049",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Angles and parallel lines",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two parallel lines are crossed by a straight line, making a Z shape. What is true about the two angles inside the Z?",
+    "options": [
+      "They add to 180° (co-interior angles)",
+      "They add to 90°",
+      "They are equal (alternate angles)",
+      "They add to 360°"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Angles inside a Z shape are alternate angles, which are equal. Co-interior angles make a C or U shape and add to 180°."
+  },
+  {
+    "id": "GCSEH-D-050",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Squaring a surd bracket",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "squareRoots",
+    "stem": "Expand and simplify $(2 + \\sqrt{5})^2$.",
+    "options": [
+      "$9 + 2\\sqrt{5}$",
+      "$9$",
+      "$7 + 4\\sqrt{5}$",
+      "$9 + 4\\sqrt{5}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$(2 + \\sqrt{5})(2 + \\sqrt{5}) = 4 + 2\\sqrt{5} + 2\\sqrt{5} + 5 = 9 + 4\\sqrt{5}$. Squaring each term separately gives just 9 and loses the middle terms."
+  },
+  {
+    "id": "GCSEH-D-051",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Probability without replacement",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A group has 6 boys and 4 girls. Two are chosen at random. What is the probability that both are girls?",
+    "options": [
+      "$\\frac{2}{15}$",
+      "$\\frac{4}{25}$",
+      "$\\frac{4}{15}$",
+      "$\\frac{1}{5}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$\\frac{4}{10} \\times \\frac{3}{9} = \\frac{12}{90} = \\frac{2}{15}$. After one girl is chosen there are 3 girls left out of 9 people. $\\frac{4}{25}$ would mean the first person could be picked again."
+  },
+  {
+    "id": "GCSEH-D-052",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Depreciation",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "A laptop worth £5000 loses 20% of its value each year. What is it worth after 2 years, in pounds? Type the number only.",
+    "numeric": {
+      "answers": [
+        "3200"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "£5000 × 0.8 = £4000, then £4000 × 0.8 = £3200. Taking off 40% in one go would give £3000."
+  },
+  {
+    "id": "GCSEH-D-053",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Circumference",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "circleBasics",
+    "stem": "A circle has diameter 10 cm. What is its circumference?",
+    "options": [
+      "$25\\pi$ cm",
+      "$10\\pi$ cm",
+      "$20\\pi$ cm",
+      "$5\\pi$ cm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Circumference $= \\pi d = 10\\pi$ cm. $25\\pi$ is the area, $\\pi r^2$ with $r = 5$."
+  },
+  {
+    "id": "GCSEH-D-054",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Integer solutions of inequalities",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "inequalities",
+    "stem": "How many integers $n$ satisfy $-3 < 2n + 1 \\le 9$? Type the number only.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Subtract 1 and halve: $-2 < n \\le 4$. The integers are $-1, 0, 1, 2, 3, 4$, which is 6. $-2$ is not included because the sign is strict."
+  },
+  {
+    "id": "GCSEH-D-055",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Multiplying mixed numbers",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "fractionOps",
+    "stem": "Work out $2\\frac{1}{3} \\times 1\\frac{2}{7}$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Change to improper fractions: $\\frac{7}{3} \\times \\frac{9}{7} = \\frac{63}{21} = 3$."
+  },
+  {
+    "id": "GCSEH-D-056",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Frequency density",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The class $10 \\le x < 30$ has a frequency of 50. What is its frequency density? Type the number only.",
+    "numeric": {
+      "answers": [
+        "2.5"
+      ],
+      "tolerance": 0.0001
+    },
+    "explanation": "Frequency density = frequency ÷ class width = 50 ÷ 20 = 2.5."
+  },
+  {
+    "id": "GCSEH-D-057",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Growth formulas",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "£600 is invested at 3% compound interest per year. Which expression gives its value in pounds after $n$ years?",
+    "options": [
+      "$600 \\times 0.03^n$",
+      "$600 + 1.03n$",
+      "$600 \\times 1.03^n$",
+      "$600 \\times 1.3^n$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each year the amount is multiplied by 1.03 (100% + 3%), so after $n$ years it is $600 \\times 1.03^n$. 1.3 would be a 30% increase."
+  },
+  {
+    "id": "GCSEH-D-058",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Area of a circle",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "circleBasics",
+    "stem": "A circle has radius 6 cm. What is its area?",
+    "options": [
+      "$12\\pi$ cm²",
+      "$6\\pi$ cm²",
+      "$144\\pi$ cm²",
+      "$36\\pi$ cm²"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Area $= \\pi r^2 = 36\\pi$ cm². $12\\pi$ is the circumference, $2\\pi r$."
+  },
+  {
+    "id": "GCSEH-D-059",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Inequalities with a negative",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Solve $7 - 3x > 19$.",
+    "options": [
+      "$x < -4$",
+      "$x > -4$",
+      "$x < 4$",
+      "$x > 4$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$-3x > 12$. Dividing by $-3$ flips the sign, so $x < -4$."
+  },
+  {
+    "id": "GCSEH-D-060",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Subtracting fractions",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "fractionOps",
+    "stem": "Work out $\\frac{5}{6} - \\frac{3}{8}$.",
+    "options": [
+      "$\\frac{13}{24}$",
+      "$\\frac{11}{24}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{2}{3}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Use the common denominator 24: $\\frac{20}{24} - \\frac{9}{24} = \\frac{11}{24}$."
+  },
+  {
+    "id": "GCSEH-D-061",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Reading histograms",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a histogram with unequal class widths, what does the area of each bar show?",
+    "options": [
+      "The class width",
+      "The frequency density",
+      "The frequency",
+      "The cumulative frequency"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Area = frequency density × class width = frequency. The height of the bar, not its area, is the frequency density."
+  },
+  {
+    "id": "GCSEH-D-062",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Distance from speed",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "rateProblems",
+    "stem": "A car travels for 2.5 hours at an average speed of 64 km/h. How far does it travel, in km? Type the number only.",
+    "numeric": {
+      "answers": [
+        "160"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Distance = speed × time = 64 × 2.5 = 160 km."
+  },
+  {
+    "id": "GCSEH-D-063",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Circle theorems: angle in a semicircle",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "triangleAngles",
+    "stem": "AB is a diameter of a circle and C is another point on the circle. Angle CAB = 35°. Work out angle ABC, in degrees. Type the number only.",
+    "numeric": {
+      "answers": [
+        "55"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The angle in a semicircle is 90°, so angle ACB = 90°. Then angle ABC = 180° − 90° − 35° = 55°."
+  },
+  {
+    "id": "GCSEH-D-064",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Function notation",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "functionNotation",
+    "stem": "$f(x) = x^2 - 3x$. Work out $f(-2)$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "$f(-2) = (-2)^2 - 3(-2) = 4 + 6 = 10$."
+  },
+  {
+    "id": "GCSEH-D-065",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Dividing mixed numbers",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "fractionOps",
+    "stem": "Work out $1\\frac{3}{4} \\div \\frac{7}{10}$.",
+    "options": [
+      "$\\frac{49}{40}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{7}{2}$",
+      "$\\frac{5}{2}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$\\frac{7}{4} \\div \\frac{7}{10} = \\frac{7}{4} \\times \\frac{10}{7} = \\frac{10}{4} = \\frac{5}{2}$. $\\frac{49}{40}$ multiplies instead of dividing."
+  },
+  {
+    "id": "GCSEH-D-066",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Cumulative frequency",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A cumulative frequency graph shows 80 values. Which cumulative frequency do you read across from to estimate the median?",
+    "options": [
+      "40",
+      "20",
+      "60",
+      "80"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The median is halfway through the data, at 80 ÷ 2 = 40. Reading from 20 or 60 gives the lower or upper quartile."
+  },
+  {
+    "id": "GCSEH-D-067",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Time from speed",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "rateProblems",
+    "stem": "How long does it take to travel 210 km at an average speed of 84 km/h?",
+    "options": [
+      "2 hours 50 minutes",
+      "2 hours 30 minutes",
+      "2 hours 5 minutes",
+      "3 hours 30 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Time = 210 ÷ 84 = 2.5 hours. Half an hour is 30 minutes, not 50, so 2.5 hours is 2 hours 30 minutes."
+  },
+  {
+    "id": "GCSEH-D-068",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Circle theorems: same segment",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two angles at the circumference stand on the same arc of a circle. What is true about them?",
+    "options": [
+      "They add to 180°",
+      "One is double the other",
+      "They are equal",
+      "They add to 90°"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Angles in the same segment are equal. Adding to 180° is the rule for opposite angles of a cyclic quadrilateral."
+  },
+  {
+    "id": "GCSEH-D-069",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Recurring decimal to fraction",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Write $0.\\dot{3}\\dot{6}$ (that is, 0.363636...) as a fraction in its simplest form.",
+    "options": [
+      "$\\frac{9}{25}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{4}{9}$",
+      "$\\frac{4}{11}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Two digits recur, so $100x - x = 36$, $x = \\frac{36}{99} = \\frac{4}{11}$. $\\frac{9}{25}$ is 0.36 exactly, which stops rather than recurs."
+  },
+  {
+    "id": "GCSEH-D-070",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Box plots",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A box plot has minimum 12, lower quartile 18, median 25, upper quartile 31 and maximum 40. What is the range? Type the number only.",
+    "numeric": {
+      "answers": [
+        "28"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Range = maximum − minimum = 40 − 12 = 28. 31 − 18 = 13 is the interquartile range."
+  },
+  {
+    "id": "GCSEH-D-071",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Inverse functions",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "functionNotation",
+    "stem": "$f(x) = 5x + 2$. Find $f^{-1}(x)$.",
+    "options": [
+      "$\\dfrac{x - 2}{5}$",
+      "$\\dfrac{x}{5} - 2$",
+      "$5x - 2$",
+      "$\\dfrac{1}{5x + 2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Undo the steps in reverse: subtract 2, then divide by 5, giving $\\frac{x - 2}{5}$. $\\frac{x}{5} - 2$ undoes them in the wrong order."
+  },
+  {
+    "id": "GCSEH-D-072",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Average speed over two parts",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "rateProblems",
+    "stem": "A cyclist rides 60 km at 30 km/h, then another 60 km at 60 km/h. What is the average speed for the whole ride?",
+    "options": [
+      "45 km/h",
+      "40 km/h",
+      "50 km/h",
+      "42 km/h"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The ride takes 2 hours plus 1 hour, so 120 km in 3 hours is 40 km/h. Averaging 30 and 60 gives 45, which ignores that more time is spent at the slower speed."
+  },
+  {
+    "id": "GCSEH-D-073",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Circle theorems: alternate segment",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A tangent touches a circle at A. The angle between the tangent and the chord AB is 64°. C is a point on the major arc. Work out angle ACB, in degrees. Type the number only.",
+    "numeric": {
+      "answers": [
+        "64"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment, so angle ACB = 64°."
+  },
+  {
+    "id": "GCSEH-D-074",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Highest common factor",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Work out the highest common factor of 84 and 120. Type the number only.",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "$84 = 2^2 \\times 3 \\times 7$ and $120 = 2^3 \\times 3 \\times 5$. The shared primes, at their lowest powers, give $2^2 \\times 3 = 12$."
+  },
+  {
+    "id": "GCSEH-D-075",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Bias in sampling",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A council wants to know how often local people exercise. It asks people leaving a gym. Why is this sample biased?",
+    "options": [
+      "The sample of people asked is far too large",
+      "Every person was asked exactly the same question",
+      "Gym users exercise more than most people",
+      "The survey was carried out on a weekday"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "People at a gym are not representative of everyone in the area, so the results would overstate how often people exercise."
+  },
+  {
+    "id": "GCSEH-D-076",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Composite functions",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "functionNotation",
+    "stem": "$f(x) = x + 4$ and $g(x) = 2x$. Find $gf(x)$.",
+    "options": [
+      "$2x + 4$",
+      "$2x^2 + 8x$",
+      "$x + 8$",
+      "$2x + 8$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$gf(x)$ applies $f$ first, then doubles the result: $2(x + 4) = 2x + 8$. $2x + 4$ is $fg(x)$."
+  },
+  {
+    "id": "GCSEH-D-077",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Inverse proportion",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "$y$ is inversely proportional to $x$. When $x = 4$, $y = 6$. Work out $y$ when $x = 3$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "$y = \\frac{k}{x}$, so $k = 4 \\times 6 = 24$. When $x = 3$, $y = 24 \\div 3 = 8$."
+  },
+  {
+    "id": "GCSEH-D-078",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Vectors between points",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "$\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OB} = \\mathbf{b}$. Which expression is $\\overrightarrow{AB}$?",
+    "options": [
+      "$\\mathbf{b} - \\mathbf{a}$",
+      "$\\mathbf{a} - \\mathbf{b}$",
+      "$\\mathbf{a} + \\mathbf{b}$",
+      "$\\frac{1}{2}(\\mathbf{a} + \\mathbf{b})$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Go from A back to O, then out to B: $-\\mathbf{a} + \\mathbf{b} = \\mathbf{b} - \\mathbf{a}$. $\\mathbf{a} - \\mathbf{b}$ is $\\overrightarrow{BA}$, the opposite direction."
+  },
+  {
+    "id": "GCSEH-D-079",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Lowest common multiple in context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One bus leaves the station every 18 minutes and another every 24 minutes. Both leave at 9:00. When do they next leave together?",
+    "options": [
+      "9:42",
+      "10:12",
+      "10:36",
+      "9:06"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The lowest common multiple of 18 and 24 is 72 minutes, and 9:00 plus 72 minutes is 10:12. 9:42 adds 18 and 24, which is not a multiple of either."
+  },
+  {
+    "id": "GCSEH-D-080",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Stratified sampling",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A club has 600 members, 240 of whom are juniors. A stratified sample of 50 members is taken. How many juniors should be in it? Type the number only.",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "$\\frac{240}{600} \\times 50 = 20$. Juniors are 40% of the club, so they should be 40% of the sample."
+  },
+  {
+    "id": "GCSEH-D-081",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "nth term of a quadratic sequence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the nth term of 5, 11, 21, 35, 53, ...",
+    "options": [
+      "$n^2 + 4$",
+      "$6n - 1$",
+      "$2n^2 + 3$",
+      "$2n^2 + n + 2$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The first differences are 6, 10, 14, 18, so the second difference is 4, giving $2n^2$. Subtracting $2n^2$ (2, 8, 18, 32, 50) leaves 3 each time."
+  },
+  {
+    "id": "GCSEH-D-082",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Graphs of direct proportion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "$y$ is directly proportional to $x$. Which describes the graph of $y$ against $x$?",
+    "options": [
+      "A straight line that crosses the y-axis above the origin",
+      "A curve that gets steeper",
+      "A horizontal straight line",
+      "A straight line through the origin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Direct proportion means $y = kx$, a straight line with gradient $k$ through $(0, 0)$. A line that crosses the y-axis above the origin is linear but not proportional."
+  },
+  {
+    "id": "GCSEH-D-083",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Magnitude of a vector",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "pythagorean",
+    "stem": "Work out the magnitude of the vector $\\begin{pmatrix} 6 \\\\ -8 \\end{pmatrix}$. Type the number only.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Magnitude $= \\sqrt{6^2 + (-8)^2} = \\sqrt{100} = 10$. The negative sign disappears when it is squared."
+  },
+  {
+    "id": "GCSEH-D-084",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Error interval from rounding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$y = 3.7$, rounded to 1 decimal place. What is the error interval for $y$?",
+    "options": [
+      "$3.65 \\le y < 3.75$",
+      "$3.65 < y \\le 3.75$",
+      "$3.6 \\le y < 3.8$",
+      "$3.7 \\le y < 3.8$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rounding to 1 decimal place allows half of 0.1 either side. 3.65 rounds up to 3.7, so it is included, but 3.75 rounds to 3.8, so it is not."
+  },
+  {
+    "id": "GCSEH-D-085",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Types of correlation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "As the temperature rises, a café sells fewer hot drinks. What type of correlation is this?",
+    "options": [
+      "Positive correlation",
+      "Negative correlation",
+      "No correlation",
+      "Perfect positive correlation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "One variable goes up as the other goes down, which is negative correlation."
+  },
+  {
+    "id": "GCSEH-D-086",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Perpendicular gradients",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "slope",
+    "stem": "What is the gradient of a line perpendicular to $2y = 4x + 3$?",
+    "options": [
+      "$-\\frac{1}{4}$",
+      "$-2$",
+      "$-\\frac{1}{2}$",
+      "$\\frac{1}{2}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Divide by 2 first: $y = 2x + \\frac{3}{2}$, so the gradient is 2. The perpendicular gradient is the negative reciprocal, $-\\frac{1}{2}$. $-\\frac{1}{4}$ forgets to divide by 2."
+  },
+  {
+    "id": "GCSEH-D-087",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Proportion to a square",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$y$ is directly proportional to $x^2$. What happens to $y$ when $x$ is doubled?",
+    "options": [
+      "It is multiplied by 2",
+      "It is multiplied by 8",
+      "It is divided by 4",
+      "It is multiplied by 4"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$y = kx^2$, so replacing $x$ with $2x$ gives $k(2x)^2 = 4kx^2$. Multiplying by 8 would be the effect for $x^3$."
+  },
+  {
+    "id": "GCSEH-D-088",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Similar shapes: area",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two similar shapes have a length scale factor of 3. What is the area scale factor?",
+    "options": [
+      "9",
+      "3",
+      "6",
+      "27"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Areas scale by the square of the length factor: $3^2 = 9$. 27 is the volume scale factor, $3^3$."
+  },
+  {
+    "id": "GCSEH-D-089",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Estimating",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Estimate the value of $\\dfrac{612 \\times 4.92}{0.487}$ by rounding each number to 1 significant figure.",
+    "options": [
+      "600",
+      "6000",
+      "60 000",
+      "1500"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Round to $\\frac{600 \\times 5}{0.5} = \\frac{3000}{0.5} = 6000$. Dividing by 0.5 doubles the number, so 1500 halves it by mistake."
+  },
+  {
+    "id": "GCSEH-D-090",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Set notation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does $A \\cup B$ mean?",
+    "options": [
+      "In both $A$ and $B$ only",
+      "In $A$ but not $B$",
+      "In $A$ or $B$ or both",
+      "In neither $A$ nor $B$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$\\cup$ is union: everything in either set, including the overlap. $A \\cap B$, intersection, is the overlap only."
+  },
+  {
+    "id": "GCSEH-D-091",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Turning points",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What are the coordinates of the turning point of $y = (x + 2)^2 - 7$?",
+    "options": [
+      "$(2, -7)$",
+      "$(-2, 7)$",
+      "$(2, 7)$",
+      "$(-2, -7)$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$(x + 2)^2$ is smallest, zero, when $x = -2$, and then $y = -7$. The sign inside the bracket flips, so $(2, -7)$ is wrong."
+  },
+  {
+    "id": "GCSEH-D-092",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Density",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A piece of brass has a mass of 240 g and a density of 8 g/cm³. What is its volume in cm³? Type the number only.",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Volume = mass ÷ density = 240 ÷ 8 = 30 cm³."
+  },
+  {
+    "id": "GCSEH-D-093",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Volume of a prism",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A prism has a triangular cross-section of area 12 cm² and a length of 10 cm. What is its volume, in cm³? Type the number only.",
+    "numeric": {
+      "answers": [
+        "120"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Volume of a prism = area of cross-section × length = 12 × 10 = 120 cm³."
+  },
+  {
+    "id": "GCSEH-D-094",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Product rule for counting",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A café menu has 4 starters, 6 mains and 3 desserts. How many different three-course meals with one of each are possible? Type the number only.",
+    "numeric": {
+      "answers": [
+        "72"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Multiply the choices: 4 × 6 × 3 = 72."
+  },
+  {
+    "id": "GCSEH-D-095",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Listing outcomes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three fair coins are thrown. What is the probability of exactly two heads?",
+    "options": [
+      "$\\frac{3}{8}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{2}{3}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "There are $2^3 = 8$ equally likely outcomes, and HHT, HTH and THH have exactly two heads, so $\\frac{3}{8}$."
+  },
+  {
+    "id": "GCSEH-D-096",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherAlgebra",
+    "skill": "Changing the subject (subject twice)",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Make $t$ the subject of $a(t + 2) = 5t - 1$.",
+    "options": [
+      "$t = \\dfrac{2a - 1}{5 - a}$",
+      "$t = \\dfrac{2a + 1}{5 - a}$",
+      "$t = \\dfrac{2a + 1}{a - 5}$",
+      "$t = \\dfrac{5 - a}{2a + 1}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$at + 2a = 5t - 1$. Move the $t$ terms together: $2a + 1 = 5t - at = t(5 - a)$, so $t = \\frac{2a + 1}{5 - a}$."
+  },
+  {
+    "id": "GCSEH-D-097",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherRatio",
+    "skill": "Map scales",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "ratios",
+    "stem": "A map has a scale of 1 : 40 000. Two churches are 7 cm apart on the map. How far apart are they in real life?",
+    "options": [
+      "28 km",
+      "280 m",
+      "2.8 km",
+      "0.28 km"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "7 × 40 000 = 280 000 cm. Dividing by 100 gives 2800 m, which is 2.8 km."
+  },
+  {
+    "id": "GCSEH-D-098",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherGeometry",
+    "skill": "Congruence conditions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is NOT enough to prove that two triangles are congruent?",
+    "options": [
+      "SSS (three sides equal)",
+      "SAS (two sides and the included angle)",
+      "RHS (right angle, hypotenuse and side)",
+      "AAA (three angles equal)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Triangles with the same three angles can be different sizes, so AAA shows they are similar, not congruent. SSS, SAS, ASA and RHS all prove congruence."
+  },
+  {
+    "id": "GCSEH-D-099",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherNumber",
+    "skill": "Upper bound of a total",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bag of sugar weighs 500 g to the nearest 10 g. What is the upper bound of the total weight of 4 bags?",
+    "options": [
+      "2020 g",
+      "2040 g",
+      "2010 g",
+      "2005 g"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each bag weighs less than 505 g, so 4 bags weigh less than 4 × 505 = 2020 g. 2005 g adds the 5 g only once instead of once per bag."
+  },
+  {
+    "id": "GCSEH-D-100",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcsehigherStats",
+    "skill": "Relative frequency",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A drawing pin is dropped 200 times and lands point up 64 times. What is the relative frequency of landing point up? Give your answer as a decimal. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.32"
+      ],
+      "tolerance": 0.0001
+    },
+    "explanation": "Relative frequency = 64 ÷ 200 = 0.32."
+  }
+]

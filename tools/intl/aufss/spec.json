@@ -1,0 +1,25 @@
+{
+  "id": "aufss",
+  "stateCode": "AUFSS",
+  "idBase": 9700,
+  "prefix": "AUFSS-",
+  "slug": "/food-safety-supervisor",
+  "landingPath": "/food-safety-supervisor-practice-test",
+  "dataFile": "data/food-safety-supervisor-questions.json",
+  "name": "Food Safety Supervisor Practice Test",
+  "shortName": "Food Safety Supervisor",
+  "examLabel": "food safety supervisor",
+  "fullName": "Food Safety Supervisor course, SITXFSA005 and SITXFSA006 (Australia)",
+  "icon": "chef",
+  "passPct": 80,
+  "categories": [
+    {"key": "aufssLaw", "label": "Food Safety Law & Supervision", "perTest": 7, "segment": "LAW"},
+    {"key": "aufssHazards", "label": "Hazards & Foodborne Illness", "perTest": 8, "segment": "HAZ"},
+    {"key": "aufssHygiene", "label": "Personal Hygiene & Health", "perTest": 8, "segment": "HYG"},
+    {"key": "aufssTemp", "label": "Temperature Control", "perTest": 9, "segment": "TMP"},
+    {"key": "aufssHandling", "label": "Receiving, Storage & Display", "perTest": 6, "segment": "HND"},
+    {"key": "aufssClean", "label": "Cleaning, Sanitising & Pests", "perTest": 6, "segment": "CLN"},
+    {"key": "aufssAllergen", "label": "Allergens & Eggs", "perTest": 6, "segment": "ALG"}
+  ],
+  "trainingSets": "testSets(9700, 4)"
+}

@@ -19,8 +19,19 @@ import { GCSEMATHS } from "./exams/gcsemaths";
 import { OSSLT } from "./exams/osslt";
 import { NAPLAN } from "./exams/naplan";
 import { NSWSEL } from "./exams/nswsel";
+import { GCSEHIGHER } from "./exams/gcsehigher";
+import { GCSESCIENCE } from "./exams/gcsescience";
+import { GCSECS } from "./exams/gcsecs";
+import { ELEVENPLUS } from "./exams/elevenplus";
+import { FSMATHS } from "./exams/fsmaths";
+import { REXPN } from "./exams/rexpn";
+import { EQAO9 } from "./exams/eqao9";
+import { NAPLAN7 } from "./exams/naplan7";
+import { OCNSW } from "./exams/ocnsw";
+import { VICSEL } from "./exams/vicsel";
+import { HSCMATHS } from "./exams/hscmaths";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, EMT, PARAMEDIC, SECPLUS, APLUS, AWS, TIMESTABLES, KS2, GCSEMATHS, OSSLT, NAPLAN, NSWSEL];
+export const EXAMS_V2: ExamV2Config[] = [GED, SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, EMT, PARAMEDIC, SECPLUS, APLUS, AWS, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
 
 export function getExamV2(id: string): ExamV2Config {
   const exam = EXAMS_V2.find((e) => e.id === id);

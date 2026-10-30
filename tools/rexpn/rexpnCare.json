@@ -1,0 +1,745 @@
+[
+ {
+  "test": 1,
+  "skill": "Establishing priorities",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse receives report on four clients on a medical unit. Which client should the nurse see first?",
+  "options": [
+   "Client with pneumonia whose SpO2 is now 87% on 2 L/min",
+   "Client with diabetes whose fasting glucose is 8.2 mmol/L",
+   "Client with a hip fracture who rates pain 4 of 10",
+   "Client with cellulitis whose temperature is 37.9 °C"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "An SpO2 of 87% on oxygen is a breathing problem that can worsen quickly, so it comes first. The slightly high glucose, moderate pain and low-grade temperature need follow-up but are not immediately threatening."
+ },
+ {
+  "test": 1,
+  "skill": "Assigning tasks to UCPs",
+  "difficulty": 1,
+  "format": "multi",
+  "stem": "Which tasks can the nurse assign to a personal support worker (PSW) caring for stable residents in long-term care? Select all that apply.",
+  "options": [
+   "Help a resident with a tub bath",
+   "Feed a resident who has no swallowing difficulty",
+   "Record a resident's fluid intake",
+   "Assess a resident's new pressure area",
+   "Teach a resident how to use an inhaler",
+   "Give a resident a scheduled oral medication"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Bathing, feeding a client who swallows safely and recording intake are routine supportive tasks for an unregulated care provider. Assessment, teaching and giving medications need nursing knowledge and stay with the nurse."
+ },
+ {
+  "test": 1,
+  "skill": "Informed consent",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client signed a consent form for a bronchoscopy yesterday. In the procedure area the client says, \"I'm not sure I want this done anymore.\" What should the nurse do?",
+  "options": [
+   "Hold the procedure and tell the health care provider",
+   "Remind the client that the form is already signed",
+   "Give the ordered sedation to ease the client's anxiety",
+   "Ask the client's spouse to confirm the consent"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Consent can be withdrawn at any time, and a signature does not override a capable client's change of mind. The nurse stops and informs the provider, who discusses the procedure with the client again."
+ },
+ {
+  "test": 1,
+  "skill": "Confidentiality",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A visitor tells the nurse, \"I'm her neighbour. Can you tell me why she was admitted?\" How should the nurse respond?",
+  "options": [
+   "\"I can't share that, but you are welcome to ask her.\"",
+   "\"She was admitted for tests, but I can't say which.\"",
+   "\"Let me check her chart and get back to you.\"",
+   "\"Since you are a close friend, I can tell you briefly.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Health information is shared only with the client's consent or as the law allows. Even confirming the reason in general terms is a breach, so the nurse redirects the visitor to the client."
+ },
+ {
+  "test": 1,
+  "skill": "Right to refuse",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A capable adult client refuses a scheduled dose of an oral antibiotic. What is the nurse's best first action?",
+  "options": [
+   "Ask the client about the reasons for refusing",
+   "Crush the tablet and mix it into applesauce",
+   "Tell the client the infection will get worse",
+   "Document the dose as given and try again later"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A capable client has the right to refuse. Exploring the reason may reveal something the nurse can fix, such as nausea or a misunderstanding; the refusal is then documented and reported. Hiding medication in food without consent is never acceptable."
+ },
+ {
+  "test": 1,
+  "skill": "Substitute decision-makers",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with advanced dementia is found incapable of consenting to a feeding tube. Who gives consent for the procedure?",
+  "options": [
+   "The client's substitute decision-maker",
+   "The nurse caring for the client that day",
+   "The most senior physician on the unit",
+   "Any adult relative who visits the client"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "When a client is incapable, consent comes from the substitute decision-maker named under provincial law, such as an attorney for personal care or a representative. Who ranks first varies by province, but it is never simply the care team or any visiting relative."
+ },
+ {
+  "test": 1,
+  "skill": "Unsafe practice",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "At the start of a night shift, the nurse notices that a colleague smells strongly of alcohol and is slurring words. What should the nurse do first?",
+  "options": [
+   "Report it to the charge nurse or manager now",
+   "Offer the colleague coffee and keep an eye on them",
+   "Wait until morning and tell the day manager",
+   "Ask the colleague to give only oral medications"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A colleague who may be impaired puts clients at risk and must not provide care, so the nurse reports it immediately to the person in charge. Covering for the colleague or limiting their tasks still exposes clients to harm."
+ },
+ {
+  "test": 1,
+  "skill": "Hand-off report",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "The nurse uses SBAR to call the health care provider about a client whose urine output has dropped. Which statement belongs in the R (recommendation) part?",
+  "options": [
+   "\"Would you like to order a bladder scan and bloodwork?\"",
+   "\"Mr. Chen is 72 and had a bowel resection yesterday.\"",
+   "\"His output was 60 mL over the last 4 hours.\"",
+   "\"I think he may be dehydrated or retaining urine.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The recommendation is what the nurse is asking for. The client's history is background, the output figure is part of the situation or assessment, and the nurse's impression of the problem is the assessment."
+ },
+ {
+  "test": 1,
+  "skill": "Documentation",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "The nurse realizes a vital sign entry on a paper flow sheet was charted for the wrong client. How should the nurse correct it?",
+  "options": [
+   "Draw one line through it, initial and date it",
+   "Cover the entry with correction fluid",
+   "Black out the entry completely with a marker",
+   "Remove the page and rewrite the flow sheet"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A single line keeps the original entry readable, and the nurse's initials and date show who made the correction and when. Obscuring or removing entries alters a legal record."
+ },
+ {
+  "test": 1,
+  "skill": "Informed consent",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "A client is being asked to consent to surgery. Which information must the client receive for the consent to be informed? Select all that apply.",
+  "options": [
+   "The nature of the surgery",
+   "The expected benefits",
+   "The material risks and side effects",
+   "Alternative courses of action",
+   "The surgeon's success rate this year",
+   "The cost of the operating room"
+  ],
+  "correct": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explanation": "Informed consent covers the nature of the treatment, expected benefits, material risks and side effects, alternatives and the likely result of not having it. A personal success rate and operating room costs are not required elements."
+ },
+ {
+  "test": 1,
+  "skill": "Telephone and verbal orders",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A health care provider gives the nurse a telephone order for a new medication. Which action is most important for safety?",
+  "options": [
+   "Write the order down and read it back",
+   "Repeat the drug name once after the call ends",
+   "Ask a colleague to listen in on the call",
+   "Wait for the provider to come in and sign it"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Writing the order as it is given and reading it back to the provider confirms the drug, dose, route and frequency before the call ends. Waiting would delay needed treatment."
+ },
+ {
+  "test": 1,
+  "skill": "Scope and collaboration",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A practical nurse is caring for a stable postoperative client who suddenly becomes confused, with a heart rate of 128/min and a BP of 86/50 mm Hg. What should the nurse do?",
+  "options": [
+   "Stay with the client and consult the RN right away",
+   "Recheck the vital signs in 1 hour",
+   "Ask the PSW to sit with the client",
+   "Document the change and continue the care plan"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The client has become unstable and less predictable, which calls for immediate collaboration with the RN while the nurse stays to monitor. Waiting an hour or handing off to a PSW leaves a deteriorating client without nursing care."
+ },
+ {
+  "test": 1,
+  "skill": "Mandatory reporting",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "While bathing a 4-year-old, the nurse sees loop-shaped bruises on the child's back and suspects abuse. What should the nurse do?",
+  "options": [
+   "Report the suspicion to the child protection agency",
+   "Ask the parents how the bruises happened first",
+   "Tell the manager and let them decide whether to report",
+   "Wait to see whether new bruises appear"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Every province requires anyone who suspects a child is in need of protection to report it to the child protection authority, and the duty belongs to the person who has the suspicion. Proof is not needed, and the nurse also follows agency policy to inform the team."
+ },
+ {
+  "test": 1,
+  "skill": "Interpreters",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client who speaks only Punjabi needs discharge teaching. The client's 12-year-old granddaughter offers to translate. What should the nurse do?",
+  "options": [
+   "Arrange a professional interpreter",
+   "Let the granddaughter translate the teaching",
+   "Give the client English handouts to take home",
+   "Speak slowly in English and use gestures"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A trained interpreter gives accurate medical translation and protects privacy. Children and family members may leave things out, change the message or be placed in an unfair position."
+ },
+ {
+  "test": 1,
+  "skill": "Discharge planning",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "A client who lives alone is going home after a stroke and walks with a cane. Which actions support a safe discharge? Select all that apply.",
+  "options": [
+   "Confirm follow-up appointments are booked",
+   "Ask about stairs and hazards in the home",
+   "Refer the client for home care services",
+   "Review medications with the client",
+   "Tell the client to stop the cane once home",
+   "Advise the client to drive to appointments"
+  ],
+  "correct": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explanation": "Follow-up, a home safety review, home care and medication teaching help prevent readmission. The client still needs the cane, and driving after a stroke depends on a medical assessment and provincial rules."
+ },
+ {
+  "test": 1,
+  "skill": "Advocacy",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The adult children of a capable client ask the nurse not to tell their mother that her biopsy showed cancer. What is the nurse's best response?",
+  "options": [
+   "\"Your mother has a right to her results if she wants them.\"",
+   "\"I will keep the result from her as you asked.\"",
+   "\"I will tell her myself before the provider does.\"",
+   "\"Let's wait until she is feeling stronger.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A capable client owns her health information and decides how much she wants to know. The nurse advocates for that right, explores the family's worries and involves the provider, who discloses the diagnosis."
+ },
+ {
+  "test": 1,
+  "skill": "Conflict resolution",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A coworker often leaves unfinished tasks for the nurse at shift change. What is the best first step?",
+  "options": [
+   "Talk with the coworker privately about it",
+   "File a written complaint with the manager",
+   "Mention it at the next team meeting",
+   "Leave some tasks for the coworker in return"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Most conflicts are best handled first by a private, direct conversation. The manager is involved if the problem continues or affects client safety."
+ },
+ {
+  "test": 1,
+  "skill": "Referrals",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client recovering from a stroke coughs and chokes on thin fluids at every meal. Which referral is most appropriate?",
+  "options": [
+   "Speech-language pathologist",
+   "Occupational therapist",
+   "Respiratory therapist",
+   "Social worker"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A speech-language pathologist assesses swallowing and recommends safe textures and techniques. The nurse also keeps the client upright and reports the choking."
+ },
+ {
+  "test": 1,
+  "skill": "Establishing priorities",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "| Client | Report from night shift |\n|---|---|\n| Room 1 | Heart failure, weighed 1.5 kg more than yesterday, no shortness of breath |\n| Room 2 | Chronic kidney disease, potassium 6.3 mmol/L this morning |\n| Room 3 | Type 2 diabetes, capillary glucose 9.4 mmol/L before breakfast |\n| Room 4 | Pneumonia, temperature 38.2 °C, on IV antibiotics |",
+  "stem": "The nurse reviews the night report shown. Which client should the nurse follow up on first?",
+  "options": [
+   "Room 2",
+   "Room 1",
+   "Room 3",
+   "Room 4"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A potassium of 6.3 mmol/L can cause fatal dysrhythmias and needs urgent action. The weight gain, mildly high glucose and fever on treatment all need attention but are less immediately dangerous."
+ },
+ {
+  "test": 2,
+  "skill": "Establishing priorities",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Which client should the nurse assess first after receiving report?",
+  "options": [
+   "Client with new chest pressure who is pale and sweaty",
+   "Client with COPD whose SpO2 is 90% at baseline",
+   "Client with gastroenteritis asking for a warm blanket",
+   "Client who is anxious about tomorrow's surgery"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "New chest pressure with pallor and sweating suggests a heart attack, an unstable and life-threatening problem. An SpO2 of 90% is expected for this client with COPD, and the other two needs can wait briefly."
+ },
+ {
+  "test": 2,
+  "skill": "Assigning tasks to UCPs",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "Which tasks should the nurse keep rather than assign to an unregulated care provider (UCP)? Select all that apply.",
+  "options": [
+   "Evaluate a client's response to a new pain medication",
+   "Reinforce teaching about a low-sodium diet",
+   "Check the IV site of a client receiving fluids",
+   "Help a client walk to the bathroom",
+   "Make an occupied bed",
+   "Measure the height of a stable client"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Evaluating response to treatment, teaching and checking an IV site need nursing knowledge and judgment. Helping a stable client walk, making beds and measuring height are routine tasks a UCP can do."
+ },
+ {
+  "test": 2,
+  "skill": "Competence",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse is asked to care for a client with a chest tube, a skill the nurse has never performed. What should the nurse do?",
+  "options": [
+   "Tell the charge nurse and ask for support or education",
+   "Accept the assignment and look up the procedure later",
+   "Refuse to work the shift",
+   "Ask the client's family how the chest tube works"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Nurses must recognize the limits of their competence and seek help. Telling the charge nurse lets the team arrange support, teaching or a different assignment so the client stays safe."
+ },
+ {
+  "test": 2,
+  "skill": "Privacy",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "The nurse's uncle is admitted to another unit of the same hospital. Which action by the nurse is a privacy breach?",
+  "options": [
+   "Reading the uncle's chart online",
+   "Visiting the uncle during the nurse's break",
+   "Asking the uncle how he is feeling",
+   "Bringing the uncle a card from the family"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Nurses may access only the records of clients in their care and only as needed for that care. Looking up a relative's chart is a breach under provincial health privacy law even if the relative would not mind."
+ },
+ {
+  "test": 2,
+  "skill": "Informed consent",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client who received IV sedation 30 minutes ago is asked to sign a consent form for a second procedure. What should the nurse do?",
+  "options": [
+   "Tell the provider that consent cannot be obtained now",
+   "Witness the client's signature as requested",
+   "Ask the client's spouse to sign instead",
+   "Read the consent form aloud to the client first"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Sedation can impair the client's capacity to understand and decide, so consent obtained now may not be valid. The provider needs to know so consent can be sought when the client is alert."
+ },
+ {
+  "test": 2,
+  "skill": "Advance directives",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A capable client's documented wish and order is no CPR. The client stops breathing, and her son shouts, \"Do everything!\" What should the nurse do?",
+  "options": [
+   "Follow the do-not-resuscitate order",
+   "Start CPR because the son requested it",
+   "Call a code and let the team decide",
+   "Begin rescue breaths only"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The client's own documented decision guides care. The nurse follows the order, stays with the family and supports the son, and involves the provider or team as needed."
+ },
+ {
+  "test": 2,
+  "skill": "Medication incidents",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse gives a client 500 mg of acetaminophen at 1000 instead of 1400. What should the nurse do first?",
+  "options": [
+   "Assess the client",
+   "Complete an incident report",
+   "Notify the client's family",
+   "Note the error in the next dose"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The first priority after any medication error is the client's condition. The nurse then informs the provider, follows the policy for disclosure and completes an incident report; the chart records the facts and the client's condition but does not mention the incident report."
+ },
+ {
+  "test": 2,
+  "skill": "Delegation",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "Which statement best describes delegation as defined in the REx-PN test plan?",
+  "options": [
+   "A qualified professional formally hands a procedure to another person",
+   "Any nurse informally asks a coworker to finish a leftover task",
+   "A manager writes up the daily client assignment for each nurse",
+   "A capable client lets a family member take over part of their care"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Delegation is a formal process: a regulated professional who has the authority and competence to perform a procedure delegates it to another individual. Assigning tasks and making the daily assignment are different processes."
+ },
+ {
+  "test": 2,
+  "skill": "Organizing workload",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "At the start of a busy day shift, what should the nurse do first to manage the workload?",
+  "options": [
+   "Review report and rank client needs by priority",
+   "Begin morning care with the client in the first room",
+   "Give all 0900 medications to every client",
+   "Complete charting from the previous shift"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Reviewing report and setting priorities lets the nurse see the most urgent needs first and plan time around them. Working room by room may delay care for a client who needs it most."
+ },
+ {
+  "test": 2,
+  "skill": "Hand-off report",
+  "difficulty": 1,
+  "format": "multi",
+  "stem": "Which information should the nurse include in a bedside hand-off report? Select all that apply.",
+  "options": [
+   "Code status",
+   "Recent changes in condition",
+   "Pending test results",
+   "Allergies",
+   "IV fluids and their rate",
+   "The nurse's opinion of the family"
+  ],
+  "correct": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "explanation": "Hand-off report focuses on what the next nurse needs for safe care: code status, changes, pending results, allergies and current IV therapy. Personal opinions about the family do not belong."
+ },
+ {
+  "test": 2,
+  "skill": "Client rights",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client asks to read her own health record. What is the nurse's best response?",
+  "options": [
+   "\"You have a right to see it. I'll start the agency's access process.\"",
+   "\"Only your doctor is allowed to read your chart.\"",
+   "\"Health records belong to the hospital, so I can't share them.\"",
+   "\"You can read it after you are discharged.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Provincial health privacy laws give clients a right to access their own records, with narrow exceptions. The nurse follows the agency's process, which may include having someone available to explain the content."
+ },
+ {
+  "test": 2,
+  "skill": "Social media",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A nurse posts online, \"Long shift with a famous hockey player in room 6!\" with no name. Which statement about the post is correct?",
+  "options": [
+   "It is a breach, because the client can be identified",
+   "It is acceptable, because no name or photo was used",
+   "It is acceptable as long as the account is set to private",
+   "It is a breach of policy only if the client complains"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Details such as a public role and room number can identify a client without a name. Any post about clients is a confidentiality breach, whatever the account's privacy settings."
+ },
+ {
+  "test": 2,
+  "skill": "Transfers",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client is being transferred from the medical unit to a rehabilitation unit in the same hospital. What should the nurse provide to the receiving nurse?",
+  "options": [
+   "A verbal report and the client's current care plan",
+   "Only the medication administration record",
+   "A summary of the client's family history",
+   "Nothing, since the chart is electronic"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A transfer needs a hand-off that covers the client's condition, care plan, medications and outstanding issues. An electronic chart does not replace a direct report."
+ },
+ {
+  "test": 2,
+  "skill": "Abuse in long-term care",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A resident in long-term care tells the nurse that a staff member slapped her during the night. What should the nurse do?",
+  "options": [
+   "Ensure the resident's safety and report it as required",
+   "Ask the staff member to explain what happened",
+   "Wait to see if the resident repeats the story",
+   "Tell the resident's family and let them decide"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The nurse protects the resident first, then reports the allegation following agency policy and provincial law; several provinces make reporting abuse in long-term care mandatory. Investigating is not the nurse's role."
+ },
+ {
+  "test": 2,
+  "skill": "Supporting students",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A nursing student asks to give a subcutaneous injection for the first time. How should the nurse support the student?",
+  "options": [
+   "Supervise directly and give feedback afterward",
+   "Let the student give it alone to build confidence",
+   "Give the injection and let the student watch",
+   "Ask the client to coach the student"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Direct supervision keeps the client safe while the student learns, and feedback afterward helps the student improve. Supporting students and new staff is part of the nurse's role."
+ },
+ {
+  "test": 2,
+  "skill": "Quality improvement",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "Falls on the unit have doubled over three months. How can the nurse best contribute to improvement?",
+  "options": [
+   "Join the unit's falls review and audit",
+   "Restrain clients who are at risk of falls",
+   "Keep all clients in bed after supper",
+   "Leave the matter to the manager"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Quality improvement uses data and frontline input to find causes and test changes. Restraints and enforced bed rest cause harm and are not falls prevention."
+ },
+ {
+  "test": 2,
+  "skill": "Client rights",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "Which actions respect a client's rights in hospital? Select all that apply.",
+  "options": [
+   "Knocking and waiting before entering",
+   "Closing the curtain during care",
+   "Explaining a procedure before starting",
+   "Reading the client's mail to keep them informed",
+   "Moving the client's belongings without asking",
+   "Discussing the client's care in the elevator"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Privacy, dignity and the right to know what is being done are basic client rights. Reading mail, moving belongings without permission and talking about care in public spaces violate them."
+ },
+ {
+  "test": 2,
+  "skill": "Medical assistance in dying",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A capable client with advanced cancer asks the nurse about medical assistance in dying (MAID). What should the nurse do?",
+  "options": [
+   "Listen, and tell the health care team about the request",
+   "Tell the client nurses cannot talk about MAID",
+   "Change the subject to the client's pain control",
+   "Give the client the forms to sign today"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Under federal law, MAID is provided by physicians and nurse practitioners, but a nurse can listen and give information within their role. The request is passed to the team so the client can be assessed; dismissing it or rushing paperwork is inappropriate."
+ },
+ {
+  "test": 2,
+  "skill": "Supervising UCPs",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Four reports come from unregulated care providers. Which one needs the nurse's follow-up first?",
+  "options": [
+   "\"Mrs. Lee is breathing noisily and is hard to wake.\"",
+   "\"Mr. Silva ate only half of his lunch today.\"",
+   "\"Mrs. Roy would like a different, warmer blanket.\"",
+   "\"Mr. Park's urine looks dark yellow this morning.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Noisy breathing with decreased responsiveness can mean airway compromise or deteriorating consciousness, an urgent change. Low intake, comfort requests and concentrated urine are followed up after."
+ },
+ {
+  "test": 0,
+  "skill": "Abbreviations",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "An order reads \"insulin regular 4 U subcut before meals.\" Why is this abbreviation unsafe?",
+  "options": [
+   "U can be misread as 0 or 4",
+   "U is the abbreviation for units of blood",
+   "U means the dose is given under the tongue",
+   "U should be written as IU for insulin"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Handwritten U can look like 0 or 4, turning 4 units into 40 or 44. Do-not-use lists require \"units\" to be written out."
+ },
+ {
+  "test": 0,
+  "skill": "Conscientious objection",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A nurse has a moral objection to taking part in a legal procedure a client has chosen. What is the nurse's responsibility?",
+  "options": [
+   "Tell the employer early so care can be transferred",
+   "Refuse to care for the client in any way",
+   "Tell the client the procedure is wrong",
+   "Ignore the objection and take part"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Nursing regulators allow conscientious objection, but the nurse must give advance notice so care can be safely transferred and must not abandon the client or impose personal beliefs."
+ },
+ {
+  "test": 0,
+  "skill": "Leaving a shift",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Partway through a shift, the nurse feels too ill to continue. What must the nurse do before leaving?",
+  "options": [
+   "Give report to the charge nurse",
+   "Leave a note at the nursing station",
+   "Text a coworker to cover the clients",
+   "Finish documenting and leave quietly"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Leaving without handing over care can be client abandonment. The nurse tells the person in charge and gives report so another nurse takes over."
+ },
+ {
+  "test": 0,
+  "skill": "Spiritual care",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client who is dying asks to speak with someone about her faith. Which referral is most appropriate?",
+  "options": [
+   "Spiritual care provider",
+   "Social worker",
+   "Psychologist",
+   "Occupational therapist"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Spiritual care providers support clients with faith and meaning at the end of life, and can contact the client's own faith leader if she wishes."
+ }
+]

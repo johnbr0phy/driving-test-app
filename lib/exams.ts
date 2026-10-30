@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "capal" | "caelec" | "auwhite" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -3119,6 +3119,304 @@ const uk18ed: ExamConfig = {
   },
 };
 
+const cscs: ExamConfig = {
+  id: "cscs",
+  stateCode: "CSCS",
+  idBase: 8200,
+  slug: "/cscs",
+  landingPath: "/cscs-test-practice",
+  name: "CSCS Test Practice",
+  shortName: "CSCS Test",
+  examLabel: "CITB HS&E test",
+  fullName: "CITB Health, Safety and Environment test for Operatives (CSCS card)",
+  questionIdPrefix: "CSCS-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 90,
+  // CITB Health, Safety and Environment test for Operatives (citb.co.uk, checked Oct 2026):
+  // 50 questions in 45 minutes, pass mark 90% (45 of 50), no negative marking. Questions come
+  // from the core knowledge of the official GT100 revision material (working environment /
+  // legal and management, occupational health and welfare, general safety, high-risk
+  // activities, environment); since 2019 behavioural items are built into the 50 questions.
+  // CITB publishes no per-area counts, so the weights are ours. Great Britain law (HSWA 1974,
+  // CDM 2015, RIDDOR, CAR 2012, COSHH, Noise and Vibration Regs, WAHR 2005). All items original.
+  blueprint: {
+    cscsLegal: 8,
+    cscsWelfare: 6,
+    cscsHealth: 10,
+    cscsSafety: 10,
+    cscsHeights: 7,
+    cscsExcav: 4,
+    cscsEnv: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 8201, name: "Law, Welfare & Emergencies", categories: ["cscsLegal", "cscsWelfare"], size: 56, weightLabel: "28% of each test" },
+    { setNumber: 2, id: 8202, name: "Occupational Health & PPE", categories: ["cscsHealth"], size: 40, weightLabel: "20% of each test" },
+    { setNumber: 3, id: 8203, name: "General Site Safety", categories: ["cscsSafety"], size: 40, weightLabel: "20% of each test" },
+    { setNumber: 4, id: 8204, name: "High-Risk Activities", categories: ["cscsHeights", "cscsExcav"], size: 44, weightLabel: "22% of each test" },
+    { setNumber: 5, id: 8205, name: "Environment & Waste", categories: ["cscsEnv"], size: 20, weightLabel: "10% of each test" },
+  ],
+  categoryLabels: {
+    cscsLegal: "Legal Duties & Site Management",
+    cscsWelfare: "Health, Welfare & Emergencies",
+    cscsHealth: "Occupational Health & PPE",
+    cscsSafety: "Signs, Fire, Electricity, Tools & Plant",
+    cscsHeights: "Working at Height",
+    cscsExcav: "Excavations & Confined Spaces",
+    cscsEnv: "Environment & Waste",
+  },
+  copy: {
+    guestPrompt: "to save your CSCS test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering the HS&E core knowledge: law, welfare and emergencies; occupational health and PPE; general site safety; working at height, excavations and confined spaces; the environment. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 45 to pass, like the real operatives test",
+    heroSubs: [
+      "Seven topics, four mock tests. You need 45 of 50 to pass.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "The pass mark is 90%. Fix the misses, then retake.",
+      "All done. Book your HS&E test.",
+    ],
+    sourceLine: "Based on the CITB HS&E test core knowledge areas, the CDM Regulations 2015 and HSE guidance, checked October 2026. Original questions, not the CITB revision bank.",
+    analyticsKey: "cscs",
+  },
+};
+
+const ukfood: ExamConfig = {
+  id: "ukfood",
+  stateCode: "UKFOOD",
+  idBase: 8300,
+  slug: "/uk-food-hygiene",
+  landingPath: "/level-2-food-hygiene-practice-test",
+  name: "Level 2 Food Hygiene Practice Test",
+  shortName: "Food Hygiene",
+  examLabel: "Level 2 food hygiene",
+  fullName: "Level 2 Award in Food Safety and Hygiene for Catering (UK)",
+  questionIdPrefix: "UKFOOD-",
+  icon: "chef",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Level 2 Award in Food Safety (and Hygiene) for Catering, RQF (checked October 2026): one unit,
+  // "Food Safety in Catering", with four outcomes: personal responsibility for food safety, keeping
+  // yourself clean and hygienic, keeping the work area clean and hygienic, keeping food safe.
+  // Awarding bodies set a short MCQ (Open Awards 30 questions, 20 to pass; Highfield 20 in 45 min,
+  // 12 or 13 to pass) and publish no per-topic weights, so counts are ours. Figures follow FSA
+  // guidance and the England/Wales/NI hygiene regulations (8°C, 63°C, 75°C), with Scotland's
+  // differences (82°C reheat, FHIS, CookSafe) stated as such. 70% is a readiness line a little above
+  // the real pass marks. All items original; no provider named.
+  blueprint: {
+    ukfoodLaw: 7,
+    ukfoodHazards: 9,
+    ukfoodHygiene: 8,
+    ukfoodTemp: 10,
+    ukfoodStorage: 4,
+    ukfoodClean: 8,
+    ukfoodAllergen: 4,
+  },
+  trainingSets: testSets(8300, 4),
+  categoryLabels: {
+    ukfoodLaw: "Law, Responsibilities & HACCP",
+    ukfoodHazards: "Hazards & Food Poisoning",
+    ukfoodHygiene: "Personal Hygiene",
+    ukfoodTemp: "Temperature Control",
+    ukfoodStorage: "Deliveries, Storage & Stock",
+    ukfoodClean: "Cleaning, Premises & Pests",
+    ukfoodAllergen: "Allergens",
+  },
+  copy: {
+    guestPrompt: "to save your food hygiene progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all seven topics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 70% to pass",
+    heroSubs: [
+      "Seven topics, four mock tests. Temperature control is the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your Level 2 exam.",
+    ],
+    sourceLine: "Based on the Level 2 Food Safety in Catering unit, FSA guidance and UK food hygiene law. Original questions; pass marks vary by awarding body.",
+    analyticsKey: "ukfood",
+  },
+};
+
+const ukaplh: ExamConfig = {
+  id: "ukaplh",
+  stateCode: "UKAPLH",
+  idBase: 8400,
+  slug: "/personal-licence",
+  landingPath: "/personal-licence-practice-test",
+  name: "Personal Licence Practice Test",
+  shortName: "Personal Licence",
+  examLabel: "Personal licence exam (APLH)",
+  fullName: "Level 2 Award for Personal Licence Holders (England and Wales)",
+  questionIdPrefix: "UKAPLH-",
+  icon: "wine",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Level 2 Award for Personal Licence Holders (RQF), England and Wales: one unit, "Legal and
+  // social responsibilities of a personal licence holder"; 40 multiple-choice questions, 28 to
+  // pass (70%), 40 to 60 minutes by awarding body (TQUK spec; Highfield and BIIAB outlines,
+  // checked Oct 2026). No per-topic weights are published, so counts are ours. Law: Licensing
+  // Act 2003 as amended to 2026, mandatory conditions, s.182 guidance. All items original.
+  blueprint: {
+    ukaplhAuth: 6,
+    ukaplhPersonal: 7,
+    ukaplhPremises: 8,
+    ukaplhDps: 4,
+    ukaplhActivities: 7,
+    ukaplhPowers: 6,
+    ukaplhChildren: 7,
+    ukaplhAlcohol: 5,
+  },
+  trainingSets: testSets(8400, 4),
+  categoryLabels: {
+    ukaplhAuth: "Licensing Objectives & Authorities",
+    ukaplhPersonal: "Personal Licences",
+    ukaplhPremises: "Premises Licences & Conditions",
+    ukaplhDps: "Designated Premises Supervisor",
+    ukaplhActivities: "Licensable Activities & TENs",
+    ukaplhPowers: "Police Powers & Offences",
+    ukaplhChildren: "Protecting Children",
+    ukaplhAlcohol: "Alcohol & Responsible Retail",
+  },
+  copy: {
+    guestPrompt: "to save your personal licence progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all eight topic areas. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 70% to pass, like the real 28 of 40",
+    heroSubs: [
+      "Eight topic areas, four mock tests. The real exam needs 28 of 40.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your exam with your course provider.",
+    ],
+    sourceLine: "Based on the Licensing Act 2003, the mandatory licensing conditions and the section 182 guidance for England and Wales, checked October 2026. Original questions, not an awarding body's papers.",
+    analyticsKey: "ukaplh",
+  },
+};
+
+const ukfaw: ExamConfig = {
+  id: "ukfaw",
+  stateCode: "UKFAW",
+  idBase: 8500,
+  slug: "/first-aid-at-work",
+  landingPath: "/first-aid-at-work-practice-test",
+  name: "First Aid at Work Practice Test",
+  shortName: "First Aid at Work",
+  examLabel: "First Aid at Work",
+  fullName: "First Aid at Work (FAW) course theory assessment",
+  questionIdPrefix: "UKFAW-",
+  icon: "bandage",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // First Aid at Work (3-day course, usually the Level 3 Award in First Aid at Work), content
+  // per HSE L74 (2024 reissue) Appendix 6 (EFAW: role, assessment, unresponsive casualty, CPR and
+  // AED, choking, wounds and bleeding, shock, minor injuries) and Appendix 5 (FAW adds bones,
+  // muscles, joints and spinal injuries, chest injuries, burns and scalds, eye injuries,
+  // poisoning, anaphylaxis, major illness). Clinical answers follow the Resuscitation Council UK
+  // 2025 guidelines. Assessment is practical observation plus awarding-body MCQ theory papers;
+  // pass marks vary by awarding body (about 70%). No body publishes topic weights; counts are ours.
+  // All items original.
+  blueprint: {
+    ukfawRole: 6,
+    ukfawResus: 8,
+    ukfawBleed: 8,
+    ukfawBones: 7,
+    ukfawChest: 5,
+    ukfawBurns: 7,
+    ukfawIllness: 9,
+  },
+  trainingSets: testSets(8500, 4),
+  categoryLabels: {
+    ukfawRole: "The First-Aider's Role & Assessment",
+    ukfawResus: "Unresponsive Casualty, CPR & AED",
+    ukfawBleed: "Wounds, Bleeding & Shock",
+    ukfawBones: "Bones, Joints, Head & Spinal Injuries",
+    ukfawChest: "Choking, Breathing & Chest Injuries",
+    ukfawBurns: "Burns, Eyes, Electricity & Poisoning",
+    ukfawIllness: "Major Illness & Anaphylaxis",
+  },
+  copy: {
+    guestPrompt: "to save your First Aid at Work progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all seven parts of the FAW syllabus. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across the First Aid at Work syllabus",
+    heroSubs: [
+      "Seven topics, four mock tests. Major illness is the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Practise the hands-on skills on your course.",
+    ],
+    sourceLine: "Based on HSE's First Aid at Work syllabus (L74) and the Resuscitation Council UK 2025 guidelines. Awarding bodies set their own theory papers; 70% here is a practice target.",
+    analyticsKey: "ukfaw",
+  },
+};
+
+const ukcare: ExamConfig = {
+  id: "ukcare",
+  stateCode: "UKCARE",
+  idBase: 8600,
+  slug: "/care-certificate",
+  landingPath: "/care-certificate-practice-test",
+  name: "Care Certificate Practice Test",
+  shortName: "Care Certificate",
+  examLabel: "Care Certificate",
+  fullName: "Care Certificate (16 standards, England)",
+  questionIdPrefix: "UKCARE-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // The Care Certificate standards, updated March 2025 (NHS England, Skills for Care and
+  // Skills for Health; 16 standards, to be met within 12 weeks of starting). There is no
+  // national exam: workplace assessors sign off knowledge and observed practice. The 16
+  // standards are grouped into 8 categories (standard numbers in the labels' comments);
+  // counts are ours. 80% is a readiness line, not an official pass mark. All items original.
+  blueprint: {
+    ukcareRole: 5, // 1 Understand your role, 2 Your personal development
+    ukcareDuty: 6, // 3 Duty of care, 4 Equality, diversity, inclusion and human rights
+    ukcarePerson: 8, // 5 Work in a person-centred way, 7 Privacy and dignity
+    ukcareComms: 6, // 6 Communication, 14 Handling information
+    ukcareNutrition: 5, // 8 Fluids and nutrition, 12 Basic life support
+    ukcareAwareness: 6, // 9 Mental health and dementia, 16 Learning disability and autism
+    ukcareSafeguard: 7, // 10 Adult safeguarding, 11 Safeguarding children
+    ukcareSafety: 7, // 13 Health and safety, 15 Infection prevention and control
+  },
+  trainingSets: testSets(8600, 4),
+  categoryLabels: {
+    ukcareRole: "Your Role & Personal Development",
+    ukcareDuty: "Duty of Care & Equality",
+    ukcarePerson: "Person-Centred Care, Privacy & Dignity",
+    ukcareComms: "Communication & Handling Information",
+    ukcareNutrition: "Fluids, Nutrition & Basic Life Support",
+    ukcareAwareness: "Mental Health, Dementia, Learning Disability & Autism",
+    ukcareSafeguard: "Safeguarding Adults & Children",
+    ukcareSafety: "Health & Safety, Infection Control",
+  },
+  copy: {
+    guestPrompt: "to save your Care Certificate progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all 16 standards. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across all 16 standards",
+    heroSubs: [
+      "Sixteen standards, four tests. Aim for 80% before your knowledge checks.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Show your assessor what you know.",
+    ],
+    sourceLine: "Based on the 16 Care Certificate standards as updated in March 2025. There is no official exam; 80% is a readiness target.",
+    analyticsKey: "ukcare",
+  },
+};
+
 const capal: ExamConfig = {
   id: "capal",
   stateCode: "CAPAL",
@@ -3235,6 +3533,472 @@ const caelec: ExamConfig = {
   },
 };
 
+const capsw: ExamConfig = {
+  id: "capsw",
+  stateCode: "CAPSW",
+  idBase: 9100,
+  slug: "/psw",
+  landingPath: "/psw-practice-test",
+  name: "PSW Practice Test",
+  shortName: "PSW",
+  examLabel: "PSW exam",
+  fullName: "Ontario Personal Support Worker (PSW) final exam",
+  questionIdPrefix: "CAPSW-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Ontario Personal Support Worker program standard, January 2022 (Ministry of Colleges and
+  // Universities, code 41469; 14 vocational learning outcomes), used by colleges, career colleges
+  // and school boards and by the NACC PSW final exam (checked October 2026). The 14 VLOs are
+  // grouped into 8 categories (VLO numbers in the comments); neither the Ministry nor NACC
+  // publishes exam weights, so counts are ours. Current Ontario law: Fixing Long-Term Care Act,
+  // 2021 (replaced the LTCHA 2007 named in the standard), Retirement Homes Act, 2010, HCCA 1996,
+  // PHIPA 2004, RHPA 1991, OHSA. 70% is a readiness line; NACC publishes no current pass mark.
+  // All items original.
+  blueprint: {
+    capswRole: 7, // VLO 1 role and law, 2 accountability, 3 interprofessional team
+    capswComm: 6, // VLO 5 therapeutic relationships and privacy, 6 observing and reporting
+    capswRights: 7, // VLO 4 person-centred ethical care and consent, 12 abuse and neglect
+    capswSafety: 8, // VLO 7 safety, infection control, emergencies
+    capswAdl: 9, // VLO 8 activities of daily living, body systems, restorative care
+    capswHome: 5, // VLO 9 medication, 10 household management, 11 clients who are caregivers
+    capswPal: 4, // VLO 13 palliative and end-of-life care
+    capswMental: 4, // VLO 14 mental health, cognitive impairment, responsive behaviours
+  },
+  trainingSets: testSets(9100, 4),
+  categoryLabels: {
+    capswRole: "PSW Role, Law & Teamwork",
+    capswComm: "Communication, Observation & Reporting",
+    capswRights: "Rights, Consent, Ethics & Abuse",
+    capswSafety: "Safety, Infection Control & Emergencies",
+    capswAdl: "Daily Living, Body Systems & Restorative Care",
+    capswHome: "Medication, Home Management & Caregivers",
+    capswPal: "Palliative & End-of-Life Care",
+    capswMental: "Mental Health, Dementia & Responsive Behaviours",
+  },
+  copy: {
+    guestPrompt: "to save your PSW exam progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all 14 program outcomes. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across all 14 PSW outcomes",
+    heroSubs: [
+      "Eight topics, four tests. Aim for 70% or better on each.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your PSW final exam.",
+    ],
+    sourceLine: "Based on Ontario's 2022 Personal Support Worker program standard and current Ontario law. Original questions; 70% is a readiness target, not an official pass mark.",
+    analyticsKey: "capsw",
+  },
+};
+
+const casfa: ExamConfig = {
+  id: "casfa",
+  stateCode: "CASFA",
+  idBase: 9400,
+  slug: "/standard-first-aid",
+  landingPath: "/standard-first-aid-canada-practice-test",
+  name: "Standard First Aid Practice Test",
+  shortName: "Standard First Aid",
+  examLabel: "Standard First Aid & CPR C",
+  fullName: "Standard (Intermediate) First Aid with CPR Level C and AED written test",
+  questionIdPrefix: "CASFA-",
+  icon: "bandage",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // Standard First Aid with CPR Level C and AED (Canada): the intermediate level of
+  // CSA Z1210 (Z1210-17, superseded by Z1210:24 published March 2024), usually 2 days.
+  // Topics per the Z1210 intermediate curriculum; clinical answers follow the current
+  // ILCOR-based Canadian first aid and resuscitation guidelines. Assessment is a skills check
+  // plus the training agency's written multiple-choice test; Z1210 sets no pass mark and
+  // agencies use 70 to 80%, most often 75%. No one publishes topic weights; counts are ours.
+  // Provincial rules (workplace kits, certificate validity) are "varies". All items original.
+  blueprint: {
+    casfaRole: 7,
+    casfaCpr: 9,
+    casfaAirway: 6,
+    casfaBleed: 7,
+    casfaInjury: 7,
+    casfaMedical: 8,
+    casfaEnviro: 6,
+  },
+  trainingSets: testSets(9400, 4),
+  categoryLabels: {
+    casfaRole: "The First Aider's Role, Consent & Assessment",
+    casfaCpr: "CPR Level C & AED",
+    casfaAirway: "Choking & Breathing Emergencies",
+    casfaBleed: "Wounds, Bleeding & Shock",
+    casfaInjury: "Bone, Joint, Head, Spine & Chest Injuries",
+    casfaMedical: "Sudden Medical Emergencies",
+    casfaEnviro: "Burns, Eyes, Poisons & Environment",
+  },
+  copy: {
+    guestPrompt: "to save your first aid progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all seven topics. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 75% to pass, like most course written tests",
+    heroSubs: [
+      "Seven topics, four practice tests. Most courses pass at 75%.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Practise your hands-on skills and book your course.",
+    ],
+    sourceLine: "Based on the CSA Z1210 intermediate first aid curriculum and current Canadian first aid and CPR guidelines. Original questions; works for any training agency's course.",
+    analyticsKey: "casfa",
+  },
+};
+
+const cawhmis: ExamConfig = {
+  id: "cawhmis",
+  stateCode: "CAWHMIS",
+  idBase: 9200,
+  slug: "/whmis",
+  landingPath: "/whmis-practice-test",
+  name: "WHMIS Practice Test",
+  shortName: "WHMIS",
+  examLabel: "WHMIS training quiz",
+  fullName: "WHMIS 2015 (Workplace Hazardous Materials Information System) training quiz",
+  questionIdPrefix: "CAWHMIS-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // WHMIS 2015 under the Hazardous Products Act and Regulations as amended December 15, 2022
+  // (GHS Rev. 7, transition ended December 14, 2025; Health Canada and CCOHS, checked Oct 2026).
+  // There is no national WHMIS exam: employers and trainers set their own course quiz and pass mark,
+  // so the 80% line is a practice target. Weights are ours, across the core of every WHMIS
+  // general-education course: roles and laws 16%, hazard classes 14%, pictograms 18%,
+  // labels 18%, SDS 18%, safe handling and emergencies 16%. All items original.
+  blueprint: {
+    cawhmisBasics: 8,
+    cawhmisHazards: 7,
+    cawhmisPictos: 9,
+    cawhmisLabels: 9,
+    cawhmisSds: 9,
+    cawhmisSafe: 8,
+  },
+  trainingSets: testSets(9200, 4),
+  categoryLabels: {
+    cawhmisBasics: "WHMIS Basics, Laws & Roles",
+    cawhmisHazards: "Hazard Classes & Categories",
+    cawhmisPictos: "Pictograms",
+    cawhmisLabels: "Supplier & Workplace Labels",
+    cawhmisSds: "Safety Data Sheets",
+    cawhmisSafe: "Safe Handling & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your WHMIS progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all six WHMIS topics. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every WHMIS topic, 80% to pass",
+    heroSubs: [
+      "Six topics, four tests. Pictograms, labels and SDSs are the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your WHMIS course quiz.",
+    ],
+    sourceLine: "Based on the Hazardous Products Regulations as amended in December 2022 and Health Canada and CCOHS guidance. Original questions; your employer still trains you on its own products.",
+    analyticsKey: "cawhmis",
+  },
+};
+
+const caguard: ExamConfig = {
+  id: "caguard",
+  stateCode: "CAGUARD",
+  idBase: 9300,
+  slug: "/ontario-security-guard",
+  landingPath: "/ontario-security-guard-practice-test",
+  name: "Ontario Security Guard Practice Test",
+  shortName: "Security Guard",
+  examLabel: "Ontario security guard test",
+  fullName: "Ontario security guard licence test",
+  questionIdPrefix: "CAGUARD-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 62,
+  // Ontario ministry basic test for security guards (ontario.ca testing page and security guard
+  // study guide, checked Oct 2026): 60 multiple-choice questions in 75 minutes, 62% cut score.
+  // Blueprint follows the suggested hours of the 12-section Training Syllabus for Security Guards
+  // (updated July 2026, 80 h in and outside class): sections 1+2 (9 h) 7, 3 (8 h) 5, 4 (4 h) 4,
+  // 5+6 (10 h) 7, 7+8 (26.5 h, capped) 13, 9+10 (12 h) 6, 11 (4 h) 4, 12 first aid (6.5 h) 4.
+  blueprint: {
+    caguardIndustry: 7,
+    caguardProcedures: 5,
+    caguardReports: 4,
+    caguardEmergency: 7,
+    caguardLaw: 13,
+    caguardCommunication: 6,
+    caguardForce: 4,
+    caguardFirstAid: 4,
+  },
+  trainingSets: testSets(9300, 4),
+  categoryLabels: {
+    caguardIndustry: "The Industry, PSISA & Code of Conduct",
+    caguardProcedures: "Basic Security Procedures",
+    caguardReports: "Report Writing",
+    caguardEmergency: "Health, Safety & Emergency Response",
+    caguardLaw: "Canadian Law & Legal Authorities",
+    caguardCommunication: "Communication & Sensitivity",
+    caguardForce: "Use of Force",
+    caguardFirstAid: "Emergency First Aid",
+  },
+  copy: {
+    guestPrompt: "to save your security guard test progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across all twelve syllabus sections",
+    heroSubs: [
+      "Twelve syllabus sections, four tests. The real cut score is 62%.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your ministry test.",
+    ],
+    sourceLine: "Based on the Ontario Training Syllabus for Security Guards (2026) and the ministry study guide. Original questions; the real test's cut score is 62%.",
+    analyticsKey: "caguard",
+  },
+};
+
+const caauto: ExamConfig = {
+  id: "caauto",
+  stateCode: "CAAUTO",
+  idBase: 8700,
+  slug: "/red-seal-automotive",
+  landingPath: "/red-seal-automotive-service-technician-practice-test",
+  name: "Red Seal Automotive Service Technician Practice Test",
+  shortName: "Red Seal Auto",
+  examLabel: "Red Seal Automotive Service Technician exam",
+  fullName: "Red Seal Automotive Service Technician (310S) interprovincial exam",
+  questionIdPrefix: "CAAUTO-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Red Seal Automotive Service Technician exam (310S in Ontario). Breakdown by Major Work Activity on
+  // red-seal.ca (exam-information and exam-weightings pages, checked October 2026), which follows the
+  // 2023 RSOS (MWA H, hybrid and EV, is new in it): 125 questions, A 9, B 22, C 12, D 17, E 23, F 23,
+  // G 10, H 9. Scaled to 50 per test. 4 hours, 70% pass (Red Seal Exam Preparation Guide). All items original.
+  blueprint: {
+    caautoOcc: 4,
+    caautoEngine: 9,
+    caautoNetwork: 5,
+    caautoDriveline: 7,
+    caautoElectrical: 9,
+    caautoChassis: 9,
+    caautoBody: 4,
+    caautoHev: 3,
+  },
+  trainingSets: testSets(8700, 4),
+  categoryLabels: {
+    caautoOcc: "Common Occupational Skills",
+    caautoEngine: "Engine & Engine Support Systems",
+    caautoNetwork: "Module Communication Networks",
+    caautoDriveline: "Driveline Systems",
+    caautoElectrical: "Electrical & Comfort Control (HVAC)",
+    caautoChassis: "Steering, Suspension, Brakes & Tires",
+    caautoBody: "Restraints, Body & Accessories",
+    caautoHev: "Hybrid & Electric Vehicles",
+  },
+  copy: {
+    guestPrompt: "to save your Red Seal progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all eight Major Work Activities. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the Red Seal exam's proportions, 70% to pass",
+    heroSubs: [
+      "Eight Major Work Activities, four tests. Electrical, chassis and engine are the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Red Seal exam.",
+    ],
+    sourceLine: "Based on the Red Seal exam breakdown for Automotive Service Technician (2023 RSOS). Original questions; the real exam has 125 questions in 4 hours.",
+    analyticsKey: "caauto",
+  },
+};
+
+const caplumb: ExamConfig = {
+  id: "caplumb",
+  stateCode: "CAPLUMB",
+  idBase: 8800,
+  slug: "/red-seal-plumber",
+  landingPath: "/red-seal-plumber-practice-test",
+  name: "Red Seal Plumber Practice Test",
+  shortName: "Red Seal Plumber",
+  examLabel: "Red Seal Plumber exam",
+  fullName: "Red Seal Plumber (306A) interprovincial exam",
+  questionIdPrefix: "CAPLUMB-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Red Seal Plumber exam (306A in Ontario). Weightings by Major Work Activity on red-seal.ca
+  // (exam-information and exam-weightings pages, checked October 2026), which follow the 2023 RSOS
+  // (no newer plumber RSOS announced): 125 questions; A 11%, B 10%, C 26%, D 19%, E 13%, F 13%
+  // (low-pressure steam task not common core), G 8%. Scaled to 50 per test. 4 hours, 70% pass
+  // (Red Seal Exam Preparation Guide). Code content follows the National Plumbing Code of Canada 2020;
+  // provincial rules are "varies". All items original.
+  blueprint: {
+    caplumbCommon: 6,
+    caplumbPipe: 5,
+    caplumbDwv: 13,
+    caplumbWater: 10,
+    caplumbFixtures: 6,
+    caplumbHydronic: 6,
+    caplumbSpecial: 4,
+  },
+  trainingSets: testSets(8800, 4),
+  categoryLabels: {
+    caplumbCommon: "Common Occupational Skills",
+    caplumbPipe: "Pipe Preparation & Joining",
+    caplumbDwv: "Sewers, Sewage Treatment & DWV",
+    caplumbWater: "Water Service & Distribution",
+    caplumbFixtures: "Fixtures, Appliances & Water Treatment",
+    caplumbHydronic: "Hydronic & Low-Pressure Steam",
+    caplumbSpecial: "Specialized Systems",
+  },
+  copy: {
+    guestPrompt: "to save your Red Seal progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all seven Major Work Activities. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the Red Seal exam's proportions, 70% to pass",
+    heroSubs: [
+      "Seven Major Work Activities, four tests. DWV and water distribution are the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Red Seal exam.",
+    ],
+    sourceLine: "Based on the Red Seal exam weightings for Plumber (2023 RSOS) and the National Plumbing Code of Canada 2020. Original questions; the real exam has 125 questions in 4 hours.",
+    analyticsKey: "caplumb",
+  },
+};
+
+const cacarp: ExamConfig = {
+  id: "cacarp",
+  stateCode: "CACARP",
+  idBase: 8900,
+  slug: "/red-seal-carpenter",
+  landingPath: "/red-seal-carpenter-practice-test",
+  name: "Red Seal Carpenter Practice Test",
+  shortName: "Red Seal Carpenter",
+  examLabel: "Red Seal Carpenter",
+  fullName: "Red Seal Carpenter interprovincial exam (403A)",
+  questionIdPrefix: "CACARP-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Red Seal Occupational Standard, Carpenter (2022 RSOS, the current standard), exam
+  // weightings on red-seal.ca and Saskatchewan's 2026 IP exam information (checked Oct 2026):
+  // 100 four-option questions in up to 4 hours, 70% to pass, 2020 NBC Volume 2 supplied.
+  // MWA A common occupational skills 12%, B planning and layout 14%, C concrete work 16%
+  // (formwork 12 of 16), D framing 20%, E exterior finishing 14%, F interior finishing 14%,
+  // G renovations 10%. Each practice test is half the real exam.
+  blueprint: {
+    cacarpCommon: 6,
+    cacarpLayout: 7,
+    cacarpConcrete: 8,
+    cacarpFraming: 10,
+    cacarpExterior: 7,
+    cacarpInterior: 7,
+    cacarpReno: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 8901, name: "Safety, Tools & Layout", categories: ["cacarpCommon", "cacarpLayout"], size: 52, weightLabel: "26% of each test" },
+    { setNumber: 2, id: 8902, name: "Concrete & Formwork", categories: ["cacarpConcrete"], size: 32, weightLabel: "16% of each test" },
+    { setNumber: 3, id: 8903, name: "Framing", categories: ["cacarpFraming"], size: 40, weightLabel: "20% of each test" },
+    { setNumber: 4, id: 8904, name: "Exterior Finish", categories: ["cacarpExterior"], size: 28, weightLabel: "14% of each test" },
+    { setNumber: 5, id: 8905, name: "Interior Finish & Renovations", categories: ["cacarpInterior", "cacarpReno"], size: 48, weightLabel: "24% of each test" },
+  ],
+  categoryLabels: {
+    cacarpCommon: "Common Occupational Skills",
+    cacarpLayout: "Planning & Layout",
+    cacarpConcrete: "Concrete & Formwork",
+    cacarpFraming: "Framing",
+    cacarpExterior: "Exterior Finish",
+    cacarpInterior: "Interior Finish & Stairs",
+    cacarpReno: "Renovations",
+  },
+  copy: {
+    guestPrompt: "to save your Red Seal progress and track every question you miss",
+    trainingHeading: "Train by work activity",
+    trainingSub: "Five sets covering the seven major work activities of the carpenter standard: safety, tools and layout, concrete and formwork, framing, exterior finish, and interior finish with renovations. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the Red Seal exam's proportions",
+    heroSubs: [
+      "Seven work activities, four tests. Framing and formwork carry the most questions.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Red Seal exam.",
+    ],
+    sourceLine: "Based on the 2022 Red Seal Occupational Standard for carpenters and Part 9 of the National Building Code of Canada. Original questions; provincial codes can differ.",
+    analyticsKey: "cacarp",
+  },
+};
+
+const caweld: ExamConfig = {
+  id: "caweld",
+  stateCode: "CAWELD",
+  idBase: 9000,
+  slug: "/red-seal-welder",
+  landingPath: "/red-seal-welder-practice-test",
+  name: "Red Seal Welder Practice Test",
+  shortName: "Red Seal Welder",
+  examLabel: "Red Seal Welder exam",
+  fullName: "Red Seal Welder interprovincial exam (456A in Ontario)",
+  questionIdPrefix: "CAWELD-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Red Seal Welder exam breakdown for the 2023 Red Seal Occupational Standard (red-seal.ca
+  // exam information and weightings, confirmed by the Saskatchewan Feb 2026 exam sheet and the
+  // NL "RSOS 2023" study guide; checked October 2026): 125 four-option questions, 4 hours, 70%.
+  // MWA A common occupational skills 20, B layout and fabrication 28 (layout 12, fabricates 16),
+  // C cutting and gouging 23, D welding processes 54 (SMAW 18, FCAW/MCAW/GMAW 18, GTAW 13,
+  // SAW 5). Scaled to 50: A 8, B 11, C 9, D 22. CSA W47.1, W48 and W59 at concept level only.
+  blueprint: {
+    caweldCommon: 8,
+    caweldLayout: 5,
+    caweldFab: 6,
+    caweldCut: 9,
+    caweldSmaw: 8,
+    caweldWire: 7,
+    caweldGtaw: 7,
+  },
+  trainingSets: testSets(9000, 4),
+  categoryLabels: {
+    caweldCommon: "Common Occupational Skills",
+    caweldLayout: "Layout & Drawings",
+    caweldFab: "Fabrication & Fit-Up",
+    caweldCut: "Cutting & Gouging",
+    caweldSmaw: "Shielded Metal Arc Welding (SMAW)",
+    caweldWire: "GMAW, FCAW & MCAW",
+    caweldGtaw: "GTAW & Submerged Arc (SAW)",
+  },
+  copy: {
+    guestPrompt: "to save your Red Seal Welder progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all four Major Work Activities. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the Red Seal exam's proportions, 70% to pass",
+    heroSubs: [
+      "Four work activities, four tests. Welding processes are 44% of the exam.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Red Seal exam.",
+    ],
+    sourceLine: "Based on the Red Seal exam breakdown for the 2023 Welder Occupational Standard. Original questions; always follow your company's welding procedures.",
+    analyticsKey: "caweld",
+  },
+};
+
 const auwhite: ExamConfig = {
   id: "auwhite",
   stateCode: "AUWHITE",
@@ -3292,6 +4056,351 @@ const auwhite: ExamConfig = {
     ],
     sourceLine: "Based on the CPCWHS1001 unit of competency and the model WHS laws, checked October 2026. Original questions; your RTO trainer assesses the real course, including the practical tasks.",
     analyticsKey: "auwhite",
+  },
+};
+
+const aursa: ExamConfig = {
+  id: "aursa",
+  stateCode: "AURSA",
+  idBase: 9500,
+  slug: "/rsa",
+  landingPath: "/rsa-practice-test",
+  name: "RSA Practice Test",
+  shortName: "RSA",
+  examLabel: "RSA assessment (SITHFAB021)",
+  fullName: "SITHFAB021 Provide responsible service of alcohol (Australia)",
+  questionIdPrefix: "AURSA-",
+  icon: "wine",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // SITHFAB021 Provide responsible service of alcohol, Release 1 (training.gov.au, generated July
+  // 2024, checked Oct 2026): 4 elements plus the knowledge evidence in its assessment requirements.
+  // No national exam or published weights: RTOs assess, usually requiring every knowledge question
+  // correct, so 80% is a readiness line. Counts are ours. State rules (ID, minors, certification,
+  // delivery) are "varies by state". All items original.
+  blueprint: {
+    aursaLaw: 9,
+    aursaAge: 9,
+    aursaDrinks: 9,
+    aursaIntox: 9,
+    aursaRefuse: 8,
+    aursaCare: 6,
+  },
+  trainingSets: testSets(9500, 4),
+  categoryLabels: {
+    aursaLaw: "RSA Law & Harm Minimisation",
+    aursaAge: "Minors & Proof of Age",
+    aursaDrinks: "Standard Drinks & Effects",
+    aursaIntox: "Recognising Intoxication",
+    aursaRefuse: "Refusing Service",
+    aursaCare: "At-Risk Customers & Safety",
+  },
+  copy: {
+    guestPrompt: "to save your RSA progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all six topic areas. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 80% readiness line",
+    heroSubs: [
+      "Six topic areas, four practice tests. Aim for 40 of 50 on each.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Check your state's RSA rules and book your course.",
+    ],
+    sourceLine: "Based on SITHFAB021 Provide responsible service of alcohol and its assessment requirements, checked October 2026. Original questions; 80% is a readiness target, not an official pass mark, and state rules vary.",
+    analyticsKey: "aursa",
+  },
+};
+
+const aurcg: ExamConfig = {
+  id: "aurcg",
+  stateCode: "AURCG",
+  idBase: 9600,
+  slug: "/rcg",
+  landingPath: "/rcg-practice-test",
+  name: "RCG Practice Test",
+  shortName: "RCG",
+  examLabel: "RCG / RSG assessment",
+  fullName: "SITHGAM022 Provide responsible gambling services (RCG / RSG)",
+  questionIdPrefix: "AURCG-",
+  icon: "shield",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // SITHGAM022 Provide responsible gambling services, SIT training package, Release 1 (current on
+  // training.gov.au, checked Oct 2026; supersedes SITHGAM001, no successor). Elements: implement
+  // responsible gambling practices; provide information and assistance on gambling harm. States
+  // call it RCG (NSW) or RSG (Vic, Qld...) and add their own rules ("varies by state" here). The
+  // unit is competency based with no national pass mark, so 80% is a readiness line. Category
+  // counts are ours, from the unit's knowledge and performance evidence. All items original.
+  blueprint: {
+    aurcgLaw: 8,
+    aurcgHarm: 9,
+    aurcgOdds: 7,
+    aurcgEnv: 8,
+    aurcgExcl: 7,
+    aurcgAssist: 7,
+    aurcgIncident: 4,
+  },
+  trainingSets: testSets(9600, 4),
+  categoryLabels: {
+    aurcgLaw: "Laws, Codes & Compliance",
+    aurcgHarm: "Gambling Harm & Warning Signs",
+    aurcgOdds: "Odds, Chance & Gambling Myths",
+    aurcgEnv: "Safer Gambling Environment",
+    aurcgExcl: "Self-Exclusion & Exclusion",
+    aurcgAssist: "Helping Customers & Support Services",
+    aurcgIncident: "Incidents, Complaints & Records",
+  },
+  copy: {
+    guestPrompt: "to save your RCG progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all seven topic areas. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 80% readiness line",
+    heroSubs: [
+      "Seven topic areas, four mock tests. Aim for 40 of 50.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Check your state's extra rules before your assessment.",
+    ],
+    sourceLine: "Based on the national unit SITHGAM022 Provide responsible gambling services and its assessment requirements, checked October 2026. Original questions; state rules vary, and 80% is a readiness line, not an official pass mark.",
+    analyticsKey: "aurcg",
+  },
+};
+
+const aufss: ExamConfig = {
+  id: "aufss",
+  stateCode: "AUFSS",
+  idBase: 9700,
+  slug: "/food-safety-supervisor",
+  landingPath: "/food-safety-supervisor-practice-test",
+  name: "Food Safety Supervisor Practice Test",
+  shortName: "Food Safety Supervisor",
+  examLabel: "food safety supervisor",
+  fullName: "Food Safety Supervisor course, SITXFSA005 and SITXFSA006 (Australia)",
+  questionIdPrefix: "AUFSS-",
+  icon: "chef",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Australian food safety supervisor (checked October 2026): FSANZ Standard 3.2.2A (supervisor, food handler
+  // training, records; in force December 2023) on top of Standards 3.2.2 and 3.2.3, and the hospitality units
+  // SITXFSA005 Use hygienic practices for food safety and SITXFSA006 Participate in safe food handling practices
+  // (Release 1). NSW key focus areas (allergens, eggs, cleaning and sanitising, Food Act offences) included and
+  // labelled as NSW. Assessment is competency based with no pass mark and no published weights, so counts are
+  // ours and 80% is a readiness line. State rules (notification, renewal, rating schemes) are "varies by state".
+  blueprint: {
+    aufssLaw: 7,
+    aufssHazards: 8,
+    aufssHygiene: 8,
+    aufssTemp: 9,
+    aufssHandling: 6,
+    aufssClean: 6,
+    aufssAllergen: 6,
+  },
+  trainingSets: testSets(9700, 4),
+  categoryLabels: {
+    aufssLaw: "Food Safety Law & Supervision",
+    aufssHazards: "Hazards & Foodborne Illness",
+    aufssHygiene: "Personal Hygiene & Health",
+    aufssTemp: "Temperature Control",
+    aufssHandling: "Receiving, Storage & Display",
+    aufssClean: "Cleaning, Sanitising & Pests",
+    aufssAllergen: "Allergens & Eggs",
+  },
+  copy: {
+    guestPrompt: "to save your food safety supervisor progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all seven topics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 80% readiness line",
+    heroSubs: [
+      "Seven topics, four mock tests. Temperature control is the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your supervisor assessment.",
+    ],
+    sourceLine: "Based on FSANZ Standards 3.2.2 and 3.2.2A and units SITXFSA005 and SITXFSA006. Original questions; the real course is competency based, with no pass mark.",
+    analyticsKey: "aufss",
+  },
+};
+
+const aufirstaid: ExamConfig = {
+  id: "aufirstaid",
+  stateCode: "AUFIRSTAID",
+  idBase: 9800,
+  slug: "/au-first-aid",
+  landingPath: "/first-aid-course-practice-test-australia",
+  name: "HLTAID011 Provide First Aid Practice Test",
+  shortName: "First Aid (HLTAID011)",
+  examLabel: "HLTAID011 Provide First Aid",
+  fullName: "HLTAID011 Provide First Aid knowledge assessment (Australia)",
+  questionIdPrefix: "AUFIRSTAID-",
+  icon: "bandage",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // HLTAID011 Provide First Aid (training.gov.au, Release 1): categories follow the unit's
+  // knowledge evidence list (legal and WHS considerations, CPR and AED, and the listed conditions
+  // from anaphylaxis to stroke). Clinical answers follow the Australian Resuscitation Council
+  // (ANZCOR) guidelines; allergy items follow ASCIA; workplace items follow Safe Work Australia's
+  // model Code of Practice on first aid. RTOs set their own knowledge assessments and there is no
+  // national pass mark; 80% is a readiness line. No body publishes topic weights; counts are ours.
+  // All items original.
+  blueprint: {
+    aufirstaidRole: 7,
+    aufirstaidCpr: 9,
+    aufirstaidAirway: 7,
+    aufirstaidBleed: 7,
+    aufirstaidBones: 6,
+    aufirstaidMedical: 6,
+    aufirstaidEnviro: 4,
+    aufirstaidVenom: 4,
+  },
+  trainingSets: testSets(9800, 4),
+  categoryLabels: {
+    aufirstaidRole: "Role, Legal & DRSABCD",
+    aufirstaidCpr: "CPR, AED & the Unconscious Casualty",
+    aufirstaidAirway: "Choking, Asthma & Anaphylaxis",
+    aufirstaidBleed: "Bleeding, Shock, Wounds & Eyes",
+    aufirstaidBones: "Fractures, Sprains, Head & Spine",
+    aufirstaidMedical: "Heart, Stroke, Diabetes, Seizures & Poisons",
+    aufirstaidEnviro: "Burns, Heat, Cold & Smoke",
+    aufirstaidVenom: "Bites & Stings",
+  },
+  copy: {
+    guestPrompt: "to save your first aid course progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all eight parts of HLTAID011. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across HLTAID011 Provide First Aid",
+    heroSubs: [
+      "Eight topics, four mock tests. CPR is the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Practise 2 minutes of floor CPR on your course.",
+    ],
+    sourceLine: "Based on the HLTAID011 unit on training.gov.au and current Australian Resuscitation Council guidelines. Training organisations set their own knowledge quizzes; 80% here is a readiness line.",
+    analyticsKey: "aufirstaid",
+  },
+};
+
+const auforklift: ExamConfig = {
+  id: "auforklift",
+  stateCode: "AUFORKLIFT",
+  idBase: 9900,
+  slug: "/au-forklift-licence",
+  landingPath: "/forklift-licence-practice-test-australia",
+  name: "Forklift Licence Practice Test (Australia)",
+  shortName: "Forklift Licence",
+  examLabel: "forklift licence knowledge assessment",
+  fullName: "Australian high risk work licence, class LF (TLILIC0003 Licence to operate a forklift truck)",
+  questionIdPrefix: "AUFORKLIFT-",
+  icon: "forklift",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // High risk work licence class LF, assessed against TLILIC0003 Licence to operate a forklift truck
+  // (Assessment Requirements R1, training.gov.au, checked Oct 2026): knowledge assessment (incl. load
+  // weight calculations) plus a practical on a real AS 2359 truck, by an accredited assessor using
+  // Safe Work Australia's national assessment materials; licence issued by the state or territory
+  // regulator (18+, 5 years, apply within 60 days). No per-topic weights are published, so counts
+  // are ours: licensing/WHS 14%, hazards/traffic 18%, checks 16%, load charts/calcs 20%,
+  // operation 20%, attachments/fuel/shutdown 12%. The 80% line is a practice target. All items original.
+  blueprint: {
+    auforkliftLicence: 7,
+    auforkliftPlan: 9,
+    auforkliftChecks: 8,
+    auforkliftLoads: 10,
+    auforkliftOperate: 10,
+    auforkliftPower: 6,
+  },
+  trainingSets: testSets(9900, 4),
+  categoryLabels: {
+    auforkliftLicence: "Licensing, WHS Law & Duties",
+    auforkliftPlan: "Planning, Hazards & Traffic",
+    auforkliftChecks: "Pre-start & Operational Checks",
+    auforkliftLoads: "Load Charts, Stability & Calculations",
+    auforkliftOperate: "Safe Operation & Load Handling",
+    auforkliftPower: "Attachments, Fuel & Shutdown",
+  },
+  copy: {
+    guestPrompt: "to save your forklift licence progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all six LF topics. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every LF topic, 80% to pass",
+    heroSubs: [
+      "Six topics, four tests. Load charts and calculations count the most.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your LF knowledge assessment.",
+    ],
+    sourceLine: "Based on the TLILIC0003 unit and the high risk work licence rules. Original questions, not the official assessment; fees and forms vary by state.",
+    analyticsKey: "auforklift",
+  },
+};
+
+const auwah: ExamConfig = {
+  id: "auwah",
+  stateCode: "AUWAH",
+  idBase: 10000,
+  slug: "/working-at-heights",
+  landingPath: "/working-at-heights-practice-test",
+  name: "Working at Heights Practice Test",
+  shortName: "Working at Heights",
+  examLabel: "Working at heights (RIIWHS204)",
+  fullName: "RIIWHS204 Work safely at heights (formerly RIIWHS204E) knowledge assessment",
+  questionIdPrefix: "AUWAH-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // RIIWHS204 Work safely at heights (RII Training Package, release 1, 2 Sept 2026; supersedes and
+  // is equivalent to RIIWHS204E; training.gov.au checked 30 Oct 2026). Topics follow its knowledge
+  // evidence (WHS legislation and documentation, heights safety systems, safe work methods, equipment,
+  // manufacturer instructions, shifting tools and materials, hazards and emergencies) with detail from
+  // the model WHS Regulations on falls (regs 78 to 80) and the Safe Work Australia model Codes of
+  // Practice on managing the risk of falls at workplaces and in housing construction. RTOs write their
+  // own knowledge assessment and the unit sets no question count or pass mark, so 80% is a readiness
+  // line and the counts are ours. State and territory differences are "varies". All items original.
+  blueprint: {
+    auwahLaw: 6,
+    auwahRisk: 7,
+    auwahControl: 7,
+    auwahPlatform: 7,
+    auwahLadder: 6,
+    auwahHarness: 8,
+    auwahRoof: 5,
+    auwahRescue: 4,
+  },
+  trainingSets: testSets(10000, 4),
+  categoryLabels: {
+    auwahLaw: "WHS Laws, Duties & Licences",
+    auwahRisk: "Hazards & Risk Assessment",
+    auwahControl: "Hierarchy of Control for Falls",
+    auwahPlatform: "Edge Protection, Scaffolds & EWPs",
+    auwahLadder: "Ladders",
+    auwahHarness: "Harnesses, Lanyards & Anchors",
+    auwahRoof: "Roof Work & Housing Construction",
+    auwahRescue: "Rescue, Emergencies & Clean-up",
+  },
+  copy: {
+    guestPrompt: "to save your working at heights progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all eight topics. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 80% to be ready for the course assessment",
+    heroSubs: [
+      "Eight topics, four practice tests. Aim for 40 of 50 on each.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Practise the hands-on checks and book your course.",
+    ],
+    sourceLine: "Based on RIIWHS204 Work safely at heights (formerly RIIWHS204E), the model WHS Regulations on falls and the Safe Work Australia falls codes of practice. Original questions; works for any RTO's course.",
+    analyticsKey: "auwah",
   },
 };
 
@@ -5389,7 +6498,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, ukcar, ukmoto, uklgv, ukpcv, ukadi, caon, caqc, cabc, caab, camb, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, capal, caelec, auwhite, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, ukcar, ukmoto, uklgv, ukpcv, ukadi, caon, caqc, cabc, caab, camb, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

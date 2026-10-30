@@ -1,0 +1,25 @@
+{
+  "id": "ukfood",
+  "stateCode": "UKFOOD",
+  "idBase": 8300,
+  "prefix": "UKFOOD-",
+  "slug": "/uk-food-hygiene",
+  "landingPath": "/level-2-food-hygiene-practice-test",
+  "dataFile": "data/uk-food-hygiene-questions.json",
+  "name": "Level 2 Food Hygiene Practice Test",
+  "shortName": "Food Hygiene",
+  "examLabel": "Level 2 food hygiene",
+  "fullName": "Level 2 Award in Food Safety and Hygiene for Catering (UK)",
+  "icon": "chef",
+  "passPct": 70,
+  "categories": [
+    {"key": "ukfoodLaw", "label": "Law, Responsibilities & HACCP", "perTest": 7, "segment": "LAW"},
+    {"key": "ukfoodHazards", "label": "Hazards & Food Poisoning", "perTest": 9, "segment": "HAZ"},
+    {"key": "ukfoodHygiene", "label": "Personal Hygiene", "perTest": 8, "segment": "HYG"},
+    {"key": "ukfoodTemp", "label": "Temperature Control", "perTest": 10, "segment": "TMP"},
+    {"key": "ukfoodStorage", "label": "Deliveries, Storage & Stock", "perTest": 4, "segment": "STO"},
+    {"key": "ukfoodClean", "label": "Cleaning, Premises & Pests", "perTest": 8, "segment": "CLN"},
+    {"key": "ukfoodAllergen", "label": "Allergens", "perTest": 4, "segment": "ALG"}
+  ],
+  "trainingSets": "testSets(8300, 4)"
+}

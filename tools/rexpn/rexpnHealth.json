@@ -1,0 +1,350 @@
+[
+ {
+  "test": 1,
+  "skill": "Infant development",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Which finding is expected in a healthy 6-month-old infant?",
+  "options": [
+   "Rolls from front to back",
+   "Walks while holding furniture",
+   "Says three or four words",
+   "Uses a pincer grasp to pick up cereal"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Rolling over is expected by about 6 months. Cruising, first words and a pincer grasp usually appear between 9 and 12 months."
+ },
+ {
+  "test": 1,
+  "skill": "Infant nutrition",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A mother is exclusively breastfeeding her 2-week-old. Which supplement does Health Canada recommend for the baby?",
+  "options": [
+   "Vitamin D 400 IU daily",
+   "Iron drops 15 mg daily",
+   "Fluoride 0.25 mg daily",
+   "Vitamin C 50 mg daily"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Breast milk is low in vitamin D, so breastfed infants receive 400 IU of vitamin D every day from birth. Iron, fluoride and vitamin C are not routine supplements for a healthy newborn."
+ },
+ {
+  "test": 1,
+  "skill": "Prenatal care",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client's last menstrual period began on March 10. Using Naegele's rule, what is the estimated date of birth?",
+  "options": [
+   "December 17",
+   "December 3",
+   "January 10",
+   "November 17"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Naegele's rule adds 7 days to the first day of the last period and subtracts 3 months: March 10 plus 7 days is March 17, and 3 months back gives December 17."
+ },
+ {
+  "test": 1,
+  "skill": "Postpartum complications",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "On the first postpartum day, which findings should the nurse report as possible postpartum hemorrhage? Select all that apply.",
+  "options": [
+   "A soft, boggy fundus above the umbilicus",
+   "Soaking a pad in less than an hour",
+   "Heart rate rising to 118/min",
+   "Rubra lochia with a few small clots",
+   "Fundus firm at the umbilicus"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "A boggy fundus, a pad soaked in under an hour and a rising heart rate point to hemorrhage. Dark red lochia with small clots and a firm fundus at the umbilicus are expected on day 1."
+ },
+ {
+  "test": 1,
+  "skill": "Aging process",
+  "difficulty": 1,
+  "format": "multi",
+  "stem": "Which changes are expected with normal aging? Select all that apply.",
+  "options": [
+   "Thinner, drier skin",
+   "Slower reaction time",
+   "Reduced bladder capacity",
+   "Sudden confusion",
+   "New urinary incontinence"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Thinner skin, slower reactions and a smaller bladder capacity are normal age changes. Sudden confusion and new incontinence are not normal and need assessment."
+ },
+ {
+  "test": 1,
+  "skill": "Physical activity",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A healthy 45-year-old asks how much exercise is recommended. What should the nurse reinforce based on Canadian guidelines?",
+  "options": [
+   "150 minutes of moderate to vigorous activity a week",
+   "30 minutes of light walking once a week",
+   "60 minutes of vigorous activity every day",
+   "Exercise only when weight goals are not met"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The Canadian 24-Hour Movement Guidelines recommend at least 150 minutes of moderate to vigorous aerobic activity a week for adults, plus muscle strengthening twice a week."
+ },
+ {
+  "test": 1,
+  "skill": "Contraception",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Which client information is a concern before a combined oral contraceptive is started?",
+  "options": [
+   "She is 38 and smokes a pack a day",
+   "She is 22 and has irregular periods",
+   "She has mild acne on her face",
+   "She plans pregnancy in three years"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Smoking over age 35 with combined hormonal contraception raises the risk of stroke and blood clots. Irregular periods and acne can actually improve on the pill."
+ },
+ {
+  "test": 1,
+  "skill": "Immunizations",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A parent asks why their child's vaccine schedule differs from a cousin's in another province. What is the best response?",
+  "options": [
+   "\"Each province sets its own publicly funded schedule.\"",
+   "\"Your cousin's schedule is out of date.\"",
+   "\"One of the two schedules must be a mistake.\"",
+   "\"The schedule depends on the child's family doctor.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Canada has national recommendations, but each province and territory decides its own publicly funded immunization schedule, so timing and products can differ."
+ },
+ {
+  "test": 2,
+  "skill": "Toddler safety",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "Which teaching is most important for the parents of a 2-year-old?",
+  "options": [
+   "Keep medicines and cleaners locked away",
+   "Start swimming lessons before age 3",
+   "Teach the child to cross the street alone",
+   "Allow whole grapes as a finger food"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Toddlers explore by putting things in their mouths, so poisoning is a major risk. Whole grapes are a choking hazard, and toddlers cannot judge traffic."
+ },
+ {
+  "test": 2,
+  "skill": "Prenatal care",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client planning a pregnancy asks which supplement to start now. What should the nurse reinforce?",
+  "options": [
+   "A multivitamin with 0.4 mg of folic acid",
+   "Vitamin A in high doses",
+   "Iron 300 mg three times daily",
+   "Calcium only after the first trimester"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Folic acid 0.4 mg a day, started at least 2 to 3 months before conception, lowers the risk of neural tube defects. High-dose vitamin A can cause birth defects."
+ },
+ {
+  "test": 2,
+  "skill": "Breastfeeding",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "Which signs show that a breastfed newborn is feeding well by day 5? Select all that apply.",
+  "options": [
+   "At least 6 wet diapers a day",
+   "Yellow, seedy stools",
+   "Feeding about 4 times in 24 hours",
+   "Sleeping through the night without feeding",
+   "Weight down 15% from birth"
+  ],
+  "correct": [
+   0,
+   1
+  ],
+  "explanation": "Six or more wet diapers and yellow stools by day 5 show good intake. Newborns should feed 8 or more times in 24 hours, so 4 feeds or a full night without feeding is too few, and a 15% weight loss is more than expected and needs follow-up."
+ },
+ {
+  "test": 2,
+  "skill": "Adolescent development",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A 15-year-old in hospital is upset about missing a school dance. Which developmental task explains this reaction?",
+  "options": [
+   "Identity and peer belonging",
+   "Trust versus mistrust",
+   "Industry and school achievement",
+   "Generativity and caring for others"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Adolescents are working on identity, and peers are central to it, so separation from friends is a major stress. Trust belongs to infancy and industry to school age."
+ },
+ {
+  "test": 2,
+  "skill": "Hypertension prevention",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client at risk for hypertension asks about diet. Which advice should the nurse reinforce?",
+  "options": [
+   "Limit sodium and choose fresh foods",
+   "Eat more canned soup for convenience",
+   "Replace fruit with low-fat cheese",
+   "Use sea salt instead of table salt"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Lowering sodium, mostly by cutting processed and canned foods, and eating more vegetables and fruit lowers blood pressure. Sea salt contains as much sodium as table salt."
+ },
+ {
+  "test": 2,
+  "skill": "Readiness to learn",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "The nurse plans to teach insulin injection. Which client finding shows readiness to learn?",
+  "options": [
+   "Asks how to draw up the dose",
+   "Rates pain 8 out of 10",
+   "Says he cannot think about it today",
+   "Is drowsy after a sedative"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Asking questions shows interest and readiness. Severe pain, denial and drowsiness are barriers that the nurse addresses before teaching."
+ },
+ {
+  "test": 2,
+  "skill": "Health screening",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A 60-year-old with no symptoms asks about colorectal cancer screening. What is the best response?",
+  "options": [
+   "\"Most provinces offer a home stool test every 1 to 2 years at your age.\"",
+   "\"Screening is only needed if you see blood in your stool.\"",
+   "\"Screening starts at age 75.\"",
+   "\"You need a colonoscopy every year.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Average-risk adults aged 50 to 74 are screened, usually with a home fecal immunochemical test every 1 to 2 years; details vary by province. Screening is for people without symptoms, and yearly colonoscopy is not routine."
+ },
+ {
+  "test": 2,
+  "skill": "Older adult screening",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "An 80-year-old keeps asking the nurse to repeat questions and turns the TV up loudly. What should the nurse do?",
+  "options": [
+   "Report a possible hearing loss for screening",
+   "Speak louder and higher pitched",
+   "Write all questions in very small print",
+   "Assume the client has dementia"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "These are signs of hearing loss, which is common and treatable in older adults and should be screened. A lower-pitched, clear voice is easier to hear than shouting."
+ },
+ {
+  "test": 0,
+  "skill": "Postpartum care",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Which pattern of lochia is expected over the first two weeks after birth?",
+  "options": [
+   "Red, then pinkish brown, then yellowish white",
+   "Yellowish white, then red, then brown",
+   "Bright red throughout the two weeks",
+   "Pinkish brown, then bright red with clots"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Lochia rubra lasts about 3 days, serosa until about day 10, and alba after that. A return to bright red bleeding is reported."
+ },
+ {
+  "test": 0,
+  "skill": "Preschool development",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A 4-year-old in hospital is very afraid of a blood draw. What does the nurse expect at this age?",
+  "options": [
+   "Fear of body injury and magical thinking",
+   "Fear of losing control in front of peers",
+   "Fear of separation from friends",
+   "Fear about long-term life plans"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Preschoolers fear body injury and use magical thinking, so a bandage and simple, honest words help. Losing face with peers and separation from friends matter more to older children and teens."
+ },
+ {
+  "test": 0,
+  "skill": "Smoking cessation",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client who smokes says, \"I'd like to quit someday.\" What is the nurse's best response?",
+  "options": [
+   "\"Would you like to set a quit date together?\"",
+   "\"Quitting is easy if you have willpower.\"",
+   "\"Cutting down to a few cigarettes is safe.\"",
+   "\"You should switch to cigars instead.\""
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Building on the client's interest with a plan, medication options and provincial quit lines raises the chance of success. Cutting down and switching products do not remove the risk."
+ },
+ {
+  "test": 0,
+  "skill": "Immunizations",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A parent asks whether their child can have a routine vaccine today. Which finding is a reason to delay it?",
+  "options": [
+   "Fever of 39.2 °C with a new illness",
+   "A runny nose without fever",
+   "Taking an antibiotic for an ear infection",
+   "Mild redness after the last vaccine"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A moderate or severe acute illness with fever is a reason to wait. Minor colds, antibiotics and local redness after a past dose are not contraindications."
+ }
+]

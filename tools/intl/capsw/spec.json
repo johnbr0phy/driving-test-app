@@ -1,0 +1,26 @@
+{
+  "id": "capsw",
+  "stateCode": "CAPSW",
+  "idBase": 9100,
+  "prefix": "CAPSW-",
+  "slug": "/psw",
+  "landingPath": "/psw-practice-test",
+  "dataFile": "data/ontario-psw-questions.json",
+  "name": "PSW Practice Test",
+  "shortName": "PSW",
+  "examLabel": "PSW exam",
+  "fullName": "Ontario Personal Support Worker (PSW) final exam",
+  "icon": "heart",
+  "passPct": 70,
+  "outlineComment": "Ontario Personal Support Worker program standard, January 2022 (Ministry of Colleges and Universities, code 41469; 14 vocational learning outcomes), used by colleges, career colleges and school boards and by the NACC PSW final exam. The 14 VLOs are grouped into 8 categories; neither the Ministry nor NACC publishes per-outcome exam weights, so counts are ours. Law is current Ontario law: Fixing Long-Term Care Act, 2021 (replaced the LTCHA 2007 named in the standard), Retirement Homes Act, 2010, Health Care Consent Act, 1996, PHIPA 2004, RHPA 1991, OHSA. 70% is a readiness line, not an official pass mark. All items original.",
+  "categories": [
+    {"key": "capswRole", "label": "PSW Role, Law & Teamwork", "perTest": 7, "segment": "ROL", "vlos": "1, 2, 3"},
+    {"key": "capswComm", "label": "Communication, Observation & Reporting", "perTest": 6, "segment": "COM", "vlos": "5, 6"},
+    {"key": "capswRights", "label": "Rights, Consent, Ethics & Abuse", "perTest": 7, "segment": "RIG", "vlos": "4, 12"},
+    {"key": "capswSafety", "label": "Safety, Infection Control & Emergencies", "perTest": 8, "segment": "SAF", "vlos": "7"},
+    {"key": "capswAdl", "label": "Daily Living, Body Systems & Restorative Care", "perTest": 9, "segment": "ADL", "vlos": "8"},
+    {"key": "capswHome", "label": "Medication, Home Management & Caregivers", "perTest": 5, "segment": "HOM", "vlos": "9, 10, 11"},
+    {"key": "capswPal", "label": "Palliative & End-of-Life Care", "perTest": 4, "segment": "PAL", "vlos": "13"},
+    {"key": "capswMental", "label": "Mental Health, Dementia & Responsive Behaviours", "perTest": 4, "segment": "MEN", "vlos": "14"}
+  ]
+}

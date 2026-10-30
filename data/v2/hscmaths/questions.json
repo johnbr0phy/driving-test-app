@@ -1,0 +1,4092 @@
+[
+  {
+    "id": "HSCM-T1-001",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Compound interest, monthly",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "\\$8000 is invested at 4.8% p.a. interest, compounded monthly, for 3 years. Which expression gives the future value?",
+    "options": [
+      "$8000(1.004)^{36}$",
+      "$8000(1.048)^{36}$",
+      "$8000(1.048)^{3}$",
+      "$8000(1.004)^{3}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Monthly compounding means $r = 0.048 \\div 12 = 0.004$ per month over $n = 3 \\times 12 = 36$ months. That gives \\$9236.42. $8000(1.048)^{3}$ is annual compounding."
+  },
+  {
+    "id": "HSCM-T1-002",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Sine rule: finding a side",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "sohcahtoa",
+    "stem": "In triangle $ABC$, $A = 48^{\\circ}$, $B = 65^{\\circ}$ and $a = 12$ cm. Find $b$, correct to 1 decimal place.",
+    "options": [
+      "9.8 cm",
+      "14.6 cm",
+      "10.9 cm",
+      "7.6 cm"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "$\\frac{b}{\\sin 65^{\\circ}} = \\frac{12}{\\sin 48^{\\circ}}$, so $b = \\frac{12 \\sin 65^{\\circ}}{\\sin 48^{\\circ}} = 14.6$ cm. Side $b$ is opposite the larger angle, so it must be longer than 12 cm."
+  },
+  {
+    "id": "HSCM-T1-003",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "68-95-99.7 rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Adult heights in a town are normally distributed with a mean of 170 cm and a standard deviation of 8 cm. About what percentage of adults are between 162 cm and 186 cm tall?",
+    "options": [
+      "95%",
+      "68%",
+      "81.5%",
+      "47.5%"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "162 is 1 standard deviation below the mean and 186 is 2 above. Half of 68% (34%) plus half of 95% (47.5%) gives 81.5%."
+  },
+  {
+    "id": "HSCM-T1-004",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Break-even point",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "systems",
+    "stem": "A business has costs $C = 1500 + 12x$ and revenue $R = 32x$ dollars, where $x$ is the number of items sold. How many items must be sold to break even?",
+    "options": [
+      "47",
+      "125",
+      "34",
+      "75"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Break-even is where $R = C$: $32x = 1500 + 12x$, so $20x = 1500$ and $x = 75$. 125 comes from dividing 1500 by the cost per item instead of by the profit per item, 20."
+  },
+  {
+    "id": "HSCM-T1-005",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Minimum completion time",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A building project has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 4 | none |\n| B | 6 | none |\n| C | 3 | A |\n| D | 5 | A |\n| E | 7 | B, C |\n| F | 4 | D |\n| G | 2 | E, F |\n\nWhat is the minimum time to complete the project?",
+    "options": [
+      "16 days",
+      "31 days",
+      "14 days",
+      "13 days"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The longest path through the activities sets the time: A, C, E, G takes 4 + 3 + 7 + 2 = 16 days. Adding every duration (31) ignores that activities run at the same time."
+  },
+  {
+    "id": "HSCM-T1-006",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Describing correlation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The correlation coefficient between the age of a car and its price is $r = -0.86$. How is this correlation best described?",
+    "options": [
+      "Weak and negative",
+      "Strong and negative",
+      "Strong and positive",
+      "Moderate and positive"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The sign gives the direction (negative: price falls as age rises) and the size, 0.86, close to 1, shows a strong linear relationship."
+  },
+  {
+    "id": "HSCM-T1-007",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Declining-balance depreciation",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "percentChange",
+    "stem": "A car bought for \\$36 400 depreciates at 15% p.a. using the declining-balance method. What is its value after 4 years, to the nearest cent?",
+    "options": [
+      "\\$14 560.00",
+      "\\$22 354.15",
+      "\\$19 001.03",
+      "\\$21 840.00"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "$S = V_0(1 - r)^n = 36\\,400 \\times 0.85^4 = 19001.03$. \\$14 560.00 is straight-line depreciation (taking 15% of the purchase price every year)."
+  },
+  {
+    "id": "HSCM-T1-008",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Reverse bearings",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The bearing of B from A is 125°T. What is the bearing of A from B?",
+    "options": [
+      "235°T",
+      "055°T",
+      "145°T",
+      "305°T"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The reverse bearing differs by 180°: 125° + 180° = 305°T. Facing back along the same line turns you through half a revolution."
+  },
+  {
+    "id": "HSCM-T1-009",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Calculating a z-score",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A test has a mean of 70 and a standard deviation of 6. What is the z-score of a mark of 82?",
+    "options": [
+      "2",
+      "-2",
+      "12",
+      "0.5"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "$z = \\frac{82 - 70}{6} = \\frac{12}{6} = 2$. 12 is the distance from the mean before dividing by the standard deviation."
+  },
+  {
+    "id": "HSCM-T1-010",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Interpreting an exponential model",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "A town's population after $t$ years is modelled by $P = 2400(1.05)^t$. What does the 1.05 tell you?",
+    "options": [
+      "The population grows by 105% each year",
+      "The population grows by 5% each year",
+      "The population grows by 1.05 people each year",
+      "The population grows by 5 people each year"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Multiplying by 1.05 adds 5% of the current population each year. Growth of 105% would need a factor of 2.05."
+  },
+  {
+    "id": "HSCM-T1-011",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Maximum-flow minimum-cut theorem",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which statement about a flow network is true?",
+    "options": [
+      "The maximum flow equals the capacity of the largest cut",
+      "The maximum flow equals the total of all edge capacities",
+      "The maximum flow equals the capacity of the minimum cut",
+      "The maximum flow equals the largest edge capacity out of the source"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The maximum-flow minimum-cut theorem: the most that can flow from source to sink equals the smallest total capacity of any cut separating them."
+  },
+  {
+    "id": "HSCM-T1-012",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Interpolation and extrapolation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A least-squares line is used to predict a value well outside the range of the data. What is this called?",
+    "options": [
+      "Interpolation",
+      "Correlation",
+      "Causation",
+      "Extrapolation"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Predicting outside the range of the data is extrapolation, which is less reliable because the trend may not continue. Inside the range it is interpolation."
+  },
+  {
+    "id": "HSCM-T1-013",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Dividend yield",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "percents",
+    "stem": "A share costs \\$24.50 and pays an annual dividend of \\$1.47. What is the dividend yield?",
+    "options": [
+      "6%",
+      "16.7%",
+      "0.6%",
+      "1.5%"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Dividend yield = dividend ÷ share price × 100% = $1.47 \\div 24.50 \\times 100\\% = 6\\%$. 16.7% comes from dividing the wrong way round."
+  },
+  {
+    "id": "HSCM-T1-014",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Cost of electrical energy",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "rateProblems",
+    "stem": "A 2400 W heater runs for 3 hours a day for 30 days. Electricity costs 32 cents per kWh. What does this cost?",
+    "options": [
+      "\\$2.30",
+      "\\$69.12",
+      "\\$691.20",
+      "\\$230.40"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Energy $= 2.4 \\text{ kW} \\times 3 \\text{ h} \\times 30 = 216$ kWh, and $216 \\times 0.32 = \\$69.12$. \\$2.30 is the cost of a single day."
+  },
+  {
+    "id": "HSCM-T1-015",
+    "section": "s1",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Expected frequency",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The probability that a seed germinates is 0.15. How many of 400 seeds are expected to germinate?",
+    "options": [
+      "15",
+      "27",
+      "60",
+      "85"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Expected frequency = number of trials × probability $= 400 \\times 0.15 = 60$."
+  },
+  {
+    "id": "HSCM-T1-016",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Credit card interest",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A credit card charges 19.8% p.a. interest, compounded daily, from the date of purchase. A purchase of \\$2400 is paid off after 30 days. How much interest is charged, in dollars, to the nearest cent? Type the number only.",
+    "numeric": {
+      "answers": [
+        "39.37"
+      ],
+      "tolerance": 0.02
+    },
+    "calculator": true,
+    "explanation": "Daily rate $= 0.198 \\div 365$. Amount owed $= 2400(1 + \\frac{0.198}{365})^{30} = 2439.37$, so the interest is \\$39.37."
+  },
+  {
+    "id": "HSCM-T1-017",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Cosine rule: finding a side",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Two sides of a triangle are 8 cm and 11 cm, and the angle between them is 72°. Find the length of the third side, in centimetres, correct to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "11.4"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$c^2 = 8^2 + 11^2 - 2 \\times 8 \\times 11 \\cos 72^{\\circ} = 130.61$, so $c = 11.4$ cm."
+  },
+  {
+    "id": "HSCM-T1-018",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Linear model from two points",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "slope",
+    "stem": "A plumber charges a call-out fee plus an hourly rate. A 2-hour job costs \\$250 and a 5-hour job costs \\$520. What is the hourly rate, in dollars? Type the number only.",
+    "numeric": {
+      "answers": [
+        "90"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The extra 3 hours cost \\$520 - \\$250 = \\$270, so the rate is \\$270 ÷ 3 = \\$90 an hour. (The call-out fee is then \\$250 - \\$180 = \\$70.)"
+  },
+  {
+    "id": "HSCM-T1-019",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Float time",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A building project has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 4 | none |\n| B | 6 | none |\n| C | 3 | A |\n| D | 5 | A |\n| E | 7 | B, C |\n| F | 4 | D |\n| G | 2 | E, F |\n\nThe minimum completion time is 16 days. What is the float of activity D, in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "1"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "D can start at day 4 (EST) but need not start until day 5 (LST) without delaying the project, so its float is 5 - 4 = 1 day."
+  },
+  {
+    "id": "HSCM-T1-020",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Relative frequency",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "In a survey of 250 people, 85 said they prefer tea to coffee. What is the relative frequency of preferring tea? Give a decimal. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.34"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "Relative frequency = frequency ÷ total $= 85 \\div 250 = 0.34$."
+  },
+  {
+    "id": "HSCM-T1-021",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Prediction from a least-squares line",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "The least-squares regression line for hours studied, $x$, and exam mark, $y$, is $y = 2.4x + 15$. Predict the mark for a student who studies for 12 hours. Type the number only.",
+    "numeric": {
+      "answers": [
+        "43.8"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$y = 2.4 \\times 12 + 15 = 28.8 + 15 = 43.8$."
+  },
+  {
+    "id": "HSCM-T1-022",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Future value of an annuity (table)",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Mia deposits \\$300 at the end of every month for 3 years into an account paying 6% p.a., compounded monthly. Use the table to find the future value of her annuity, in dollars, to the nearest cent.\n\nFuture value of \\$1 per period (interest rate per period across the top):\n\n| Periods | 0.5% | 1% | 6% |\n|---|---|---|---|\n| 12 | 12.3356 | 12.6825 | 16.8699 |\n| 24 | 25.4320 | 26.9735 | 50.8156 |\n| 36 | 39.3361 | 43.0769 | 119.1209 |\n\nType the number only.",
+    "numeric": {
+      "answers": [
+        "11800.83"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Monthly rate $= 6\\% \\div 12 = 0.5\\%$ for $3 \\times 12 = 36$ periods: the factor is 39.3361. $FV = 300 \\times 39.3361 = 11800.83$. Using the 6% column treats 6% as a monthly rate."
+  },
+  {
+    "id": "HSCM-T1-023",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Area of a triangle with sine",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A triangular garden bed has sides of 15 m and 22 m with an angle of 38° between them. Find its area, in square metres, correct to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "101.6"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$A = \\frac{1}{2}ab\\sin C = \\frac{1}{2} \\times 15 \\times 22 \\times \\sin 38^{\\circ} = 101.6$ m²."
+  },
+  {
+    "id": "HSCM-T1-024",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Quadratic model",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "A ball is thrown upwards. Its height in metres after $t$ seconds is $h = 20t - 5t^2$. It reaches its greatest height at $t = 2$. What is that greatest height, in metres? Type the number only.",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Substitute $t = 2$: $h = 20(2) - 5(2)^2 = 40 - 20 = 20$ metres."
+  },
+  {
+    "id": "HSCM-T1-025",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Critical path",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A building project has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 4 | none |\n| B | 6 | none |\n| C | 3 | A |\n| D | 5 | A |\n| E | 7 | B, C |\n| F | 4 | D |\n| G | 2 | E, F |\n\nWhich is the critical path?",
+    "options": [
+      "B, E, G",
+      "A, D, F, G",
+      "B, D, F, G",
+      "A, C, E, G"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "A, C, E, G takes 16 days, the longest path, so every activity on it has zero float. B, E, G takes 15 days and A, D, F, G takes 15 days. B and D are not linked, so B, D, F, G is not a path."
+  },
+  {
+    "id": "HSCM-T1-026",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Probability from a two-way table",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The table shows how 200 students travel to school.\n\n| | Bus | Car | Walk | Total |\n|---|---|---|---|---|\n| Year 11 | 42 | 28 | 30 | 100 |\n| Year 12 | 35 | 40 | 25 | 100 |\n| Total | 77 | 68 | 55 | 200 |\n\nA student is chosen at random. What is the probability that they are in Year 11 and catch the bus? Give a decimal. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.21",
+        "21/100",
+        "42/200"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "42 of the 200 students are in Year 11 and catch the bus: $\\frac{42}{200} = 0.21$."
+  },
+  {
+    "id": "HSCM-T1-027",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Reducing-balance loan (recurrence)",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A loan of \\$20 000 is charged 9% p.a. interest, compounded monthly. Repayments of \\$500 are made at the end of each month, so $A_{n+1} = A_n(1.0075) - 500$. What is the balance owing after 2 months, in dollars, to the nearest cent? Type the number only.",
+    "numeric": {
+      "answers": [
+        "19297.38"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "After 1 month: $20\\,000 \\times 1.0075 - 500 = 19\\,650$. After 2 months: $19\\,650 \\times 1.0075 - 500 = 19\\,297.375$, which is \\$19 297.38."
+  },
+  {
+    "id": "HSCM-T1-028",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Cosine rule: finding an angle",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A triangle has sides 7 m, 9 m and 12 m. Find its largest angle, to the nearest degree. Type the number only.",
+    "numeric": {
+      "answers": [
+        "96"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true,
+    "explanation": "The largest angle is opposite the longest side. $\\cos C = \\frac{7^2 + 9^2 - 12^2}{2 \\times 7 \\times 9} = \\frac{-14}{126}$, so $C = 96.4^{\\circ}$, which is 96°. A negative cosine means the angle is obtuse."
+  },
+  {
+    "id": "HSCM-T1-029",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Pearson's correlation coefficient",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The table shows hours of practice and test scores for six students.\n\n| Practice (hours) | 2 | 4 | 5 | 7 | 8 | 10 |\n|---|---|---|---|---|---|---|\n| Test score | 52 | 58 | 61 | 66 | 72 | 79 |\n\nUse your calculator to find Pearson's correlation coefficient, correct to 2 decimal places. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.99"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "Entering the data in statistics mode gives r = 0.9937, which is 0.99: a very strong positive correlation."
+  },
+  {
+    "id": "HSCM-T1-030",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Reciprocal (inverse variation) model",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The time $T$ days to paint a building varies inversely with the number of painters $w$, so $T = \\frac{k}{w}$. Six painters take 10 days. How many days would 4 painters take? Type the number only.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$k = 6 \\times 10 = 60$, so with 4 painters $T = \\frac{60}{4} = 15$ days. Fewer painters means more days, which rules out answers below 10."
+  },
+  {
+    "id": "HSCM-T1-031",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Maximum flow",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Water flows through a network of pipes from the source S to the sink T.\n\n| From | To | Capacity (litres per minute) |\n|---|---|---|\n| S | A | 7 |\n| S | B | 9 |\n| A | B | 3 |\n| A | C | 4 |\n| B | C | 5 |\n| B | T | 6 |\n| C | T | 9 |\n\nWhat is the maximum flow from S to T, in litres per minute? Type the number only.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The cut through A to C (4), B to C (5) and B to T (6) has capacity 15, and a flow of 15 is possible: 4 along S, A, C, T; 3 along S, A, B, T; 5 along S, B, C, T; 3 along S, B, T. The cut out of S has capacity 16, so it is not the minimum."
+  },
+  {
+    "id": "HSCM-T1-032",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "z-score in context",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Ana scored 74 in an English test with a mean of 65 and a standard deviation of 6. What is her z-score? Type the number only.",
+    "numeric": {
+      "answers": [
+        "1.5"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "$z = \\frac{74 - 65}{6} = \\frac{9}{6} = 1.5$: her mark is 1.5 standard deviations above the mean."
+  },
+  {
+    "id": "HSCM-T1-033",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Total interest on a loan",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A home loan of \\$350 000 is repaid with monthly repayments of \\$2255.05 for 25 years. How much interest is paid over the life of the loan, in dollars, to the nearest cent? Type the number only.",
+    "numeric": {
+      "answers": [
+        "326515.00"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "There are $25 \\times 12 = 300$ repayments, totalling $300 \\times 2255.05 = 676515.00$. Interest = total repaid minus the amount borrowed = \\$326 515.00."
+  },
+  {
+    "id": "HSCM-T1-034",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Fuel consumption",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "rateProblems",
+    "stem": "A car uses 7.8 L of fuel per 100 km. Fuel costs \\$1.96 per litre. What is the fuel cost of a 450 km trip, in dollars, to the nearest cent? Type the number only.",
+    "numeric": {
+      "answers": [
+        "68.80",
+        "68.8"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "Fuel used $= 7.8 \\times \\frac{450}{100} = 35.1$ L, and $35.1 \\times 1.96 = \\$68.796$, which is \\$68.80."
+  },
+  {
+    "id": "HSCM-T1-035",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Correlation and causation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In one town, months with high ice cream sales also have more drownings, with a strong positive correlation. What can be concluded?",
+    "options": [
+      "They are linked, but neither need cause the other",
+      "Eating ice cream makes people more likely to drown",
+      "Drownings in the town cause ice cream sales to rise",
+      "The correlation must come from a calculation error"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Correlation shows association, not causation. Here a third factor, hot weather, raises both swimming and ice cream sales."
+  },
+  {
+    "id": "HSCM-T1-036",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Simultaneous linear equations",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "systems",
+    "stem": "Car hire A charges \\$60 plus \\$0.40 per kilometre. Car hire B charges \\$90 plus \\$0.25 per kilometre. For what distance do they cost the same?",
+    "options": [
+      "150 km",
+      "200 km",
+      "360 km",
+      "600 km"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Set $60 + 0.40d = 90 + 0.25d$, so $0.15d = 30$ and $d = 200$ km. Both cost \\$140 there. 150 km is $60 \\div 0.40$, which ignores company B."
+  },
+  {
+    "id": "HSCM-T1-037",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Effect of a delay",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A building project has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 4 | none |\n| B | 6 | none |\n| C | 3 | A |\n| D | 5 | A |\n| E | 7 | B, C |\n| F | 4 | D |\n| G | 2 | E, F |\n\nActivity B is delayed and now takes 9 days. What is the new minimum completion time, in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "18"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "B had a float of 1 day, so a 3-day increase uses that float and adds 2 days: E now starts at day 9 and the project takes 18 days."
+  },
+  {
+    "id": "HSCM-T1-038",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Score from a z-score",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Marks in an exam have a mean of 60 and a standard deviation of 8. What mark has a z-score of -1.5? Type the number only.",
+    "numeric": {
+      "answers": [
+        "48"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$x = \\mu + z\\sigma = 60 + (-1.5)(8) = 60 - 12 = 48$."
+  },
+  {
+    "id": "HSCM-T1-039",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Present value",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "How much must be invested now at 5% p.a., compounded annually, to grow to \\$50 000 in 10 years? Give the answer to the nearest cent.",
+    "options": [
+      "\\$25 000.00",
+      "\\$32 500.00",
+      "\\$30 695.66",
+      "\\$47 619.05"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "$PV = \\frac{FV}{(1 + r)^n} = \\frac{50\\,000}{1.05^{10}} = 30695.66$. Dividing by 1.05 once only undoes one year of growth."
+  },
+  {
+    "id": "HSCM-T1-040",
+    "section": "s2",
+    "test": 1,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Trapezoidal rule",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A paddock is 40 m long. Its widths, measured at 0 m, 20 m and 40 m along its length, are 18 m, 25 m and 21 m. Use two applications of the trapezoidal rule to estimate its area, in square metres. Type the number only.",
+    "numeric": {
+      "answers": [
+        "890"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$A \\approx \\frac{20}{2}(18 + 25) + \\frac{20}{2}(25 + 21) = 430 + 460 = 890$ m²."
+  },
+  {
+    "id": "HSCM-T2-001",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Compound interest, quarterly",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "\\$12 000 is invested at 6% p.a., compounded quarterly, for 5 years. What is the future value, to the nearest cent?",
+    "options": [
+      "\\$16 058.71",
+      "\\$15 600.00",
+      "\\$12 927.41",
+      "\\$16 162.26"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Quarterly: $r = 6\\% \\div 4 = 1.5\\%$ and $n = 5 \\times 4 = 20$, so $FV = 12\\,000(1.015)^{20} = 16162.26$. \\$15 600.00 is simple interest."
+  },
+  {
+    "id": "HSCM-T2-002",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Angle of elevation",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "sohcahtoa",
+    "stem": "From a point 50 m from the base of a tower, the angle of elevation to the top is 32°. How tall is the tower, to 1 decimal place?",
+    "options": [
+      "31.2 m",
+      "26.5 m",
+      "42.4 m",
+      "80.0 m"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The 50 m is adjacent to the 32° angle and the height is opposite, so $h = 50 \\tan 32^{\\circ} = 31.2$ m."
+  },
+  {
+    "id": "HSCM-T2-003",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "68-95-99.7 rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For a normally distributed set of scores, about what percentage lie more than 2 standard deviations above the mean?",
+    "options": [
+      "5%",
+      "2.5%",
+      "0.15%",
+      "16%"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "95% lie within 2 standard deviations, so 5% lie outside, split evenly: 2.5% above and 2.5% below."
+  },
+  {
+    "id": "HSCM-T2-004",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Exponential graph intercept",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "Where does the graph of $y = 3(2)^x$ cross the $y$-axis?",
+    "options": [
+      "$y = 1$",
+      "$y = 2$",
+      "$y = 3$",
+      "$y = 6$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "On the $y$-axis $x = 0$, and $2^0 = 1$, so $y = 3 \\times 1 = 3$. $y = 6$ is the value at $x = 1$."
+  },
+  {
+    "id": "HSCM-T2-005",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Minimum spanning tree",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table gives the lengths, in metres, of possible cable runs between six buildings.\n\n| Edge | Weight (m) |\n|---|---|\n| AB | 7 |\n| AC | 5 |\n| BC | 4 |\n| BD | 8 |\n| CD | 6 |\n| CE | 9 |\n| DE | 3 |\n| DF | 5 |\n| EF | 4 |\n\nWhat is the length of the minimum spanning tree?",
+    "options": [
+      "21 m",
+      "24 m",
+      "27 m",
+      "22 m"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Using Kruskal's algorithm: take DE (3), BC (4), EF (4), AC (5), skip DF (5) because it would make a cycle, then take CD (6). Total 22 m, with 5 edges for 6 vertices."
+  },
+  {
+    "id": "HSCM-T2-006",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Independent and dependent variables",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A study investigates whether the hours of sleep a person gets affect their reaction time. Which is the independent variable?",
+    "options": [
+      "Hours of sleep",
+      "Reaction time",
+      "The number of people tested",
+      "The time of day of the test"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The independent variable is the one thought to cause change, and it goes on the horizontal axis. Reaction time depends on it, so it is the dependent variable."
+  },
+  {
+    "id": "HSCM-T2-007",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Appreciation",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "percentChange",
+    "stem": "A painting worth \\$5000 increases in value by 8% each year. Which expression gives its value after 6 years?",
+    "options": [
+      "$5000(0.92)^6$",
+      "$5000(1.08)^6$",
+      "$5000(1 + 0.08 \\times 6)$",
+      "$5000(1.8)^6$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Growing by 8% a year means multiplying by 1.08 each year, 6 times. $5000(1 + 0.08 \\times 6)$ is simple growth, which never adds growth on growth."
+  },
+  {
+    "id": "HSCM-T2-008",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Map scale",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "unitConversion",
+    "stem": "A map has a scale of 1 : 20 000. Two towns are 8.5 cm apart on the map. How far apart are they in real life?",
+    "options": [
+      "17 km",
+      "170 m",
+      "1.7 km",
+      "2.4 km"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "$8.5 \\times 20\\,000 = 170\\,000$ cm, which is 1700 m or 1.7 km. 160 m and 16 km come from slips when changing centimetres to kilometres (100 cm in a metre, 1000 m in a kilometre)."
+  },
+  {
+    "id": "HSCM-T2-009",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Theoretical probability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two fair six-sided dice are rolled. What is the probability that the total is 8?",
+    "options": [
+      "$\\frac{2}{9}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{11}$",
+      "$\\frac{5}{36}$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "There are 36 equally likely outcomes and 5 give a total of 8 (2 and 6, 3 and 5, 4 and 4, 5 and 3, 6 and 2), so the probability is $\\frac{5}{36}$. $\\frac{2}{9}$ is $\\frac{8}{36}$, which uses the total itself, and $\\frac{1}{11}$ wrongly treats the 11 possible totals as equally likely."
+  },
+  {
+    "id": "HSCM-T2-010",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Choosing a reciprocal model",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A trip of 240 km is driven at a constant speed of $s$ km/h. Which equation gives the time $t$ hours the trip takes?",
+    "options": [
+      "$t = \\frac{240}{s}$",
+      "$t = 240s$",
+      "$t = \\frac{s}{240}$",
+      "$t = 240 - s$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Time = distance ÷ speed, so $t = \\frac{240}{s}$: doubling the speed halves the time, which is inverse variation. $t = 240s$ would make faster trips take longer."
+  },
+  {
+    "id": "HSCM-T2-011",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Float on the critical path",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the float of an activity on the critical path?",
+    "options": [
+      "One day",
+      "Zero",
+      "Equal to its duration",
+      "Equal to the project's completion time"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Critical activities have no spare time: their earliest and latest start times are equal, so any delay delays the whole project."
+  },
+  {
+    "id": "HSCM-T2-012",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Matching r to a description",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which value of $r$ shows a moderate positive linear association?",
+    "options": [
+      "-0.62",
+      "0.08",
+      "0.62",
+      "-0.97"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Positive r means both variables rise together; 0.62 is moderate. 0.08 is close to no correlation and -0.97 is strong and negative."
+  },
+  {
+    "id": "HSCM-T2-013",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Reducing the interest on a loan",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which change reduces the total interest paid on a reducing-balance loan, with everything else unchanged?",
+    "options": [
+      "Extending the loan term",
+      "Borrowing at a higher interest rate",
+      "Making the first repayment later",
+      "Making larger monthly repayments"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Larger repayments pay off the principal faster, so less interest accrues on the balance. A longer term means interest is charged for longer."
+  },
+  {
+    "id": "HSCM-T2-014",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Rates over time",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "rateProblems",
+    "stem": "A resting heart beats 72 times per minute. How many times does it beat in one day?",
+    "options": [
+      "103 680",
+      "4320",
+      "1728",
+      "1 036 800"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "$72 \\times 60 = 4320$ beats an hour, and $4320 \\times 24 = 103\\,680$ a day. 4320 is only one hour."
+  },
+  {
+    "id": "HSCM-T2-015",
+    "section": "s1",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Reliability of relative frequency",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A spinner is tested to estimate the probability of landing on red. Which estimate is likely to be the most reliable?",
+    "options": [
+      "After 100 spins",
+      "After 1000 spins",
+      "After 50 spins",
+      "After only 10 spins"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The more trials there are, the closer relative frequency tends to get to the true probability."
+  },
+  {
+    "id": "HSCM-T2-016",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Finding a depreciation rate",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A machine bought for \\$48 000 is worth \\$19 660.80 after 4 years, using the declining-balance method. What is the annual rate of depreciation, as a percentage? Type the number only.",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$\\frac{19\\,660.80}{48\\,000} = 0.4096 = (1 - r)^4$. Since $0.8^2 = 0.64$ and $0.64^2 = 0.4096$, $1 - r = 0.8$ and the rate is 20%. Dividing the total drop by 4 years gives 14.76%, the straight-line rate."
+  },
+  {
+    "id": "HSCM-T2-017",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Sine rule: finding an angle",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In triangle $PQR$, $p = 14$ cm, $q = 11$ cm and $P = 52^{\\circ}$. Angle $Q$ is acute. Find $Q$, to the nearest degree. Type the number only.",
+    "numeric": {
+      "answers": [
+        "38"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true,
+    "explanation": "$\\frac{\\sin Q}{11} = \\frac{\\sin 52^{\\circ}}{14}$, so $\\sin Q = 0.6192$ and $Q = 38.3^{\\circ}$, which is 38°."
+  },
+  {
+    "id": "HSCM-T2-018",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Exponential decay model",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "The amount of a medicine in the blood, $A$ mg, $t$ hours after a dose is $A = 400(0.8)^t$. How many milligrams remain after 3 hours? Type the number only.",
+    "numeric": {
+      "answers": [
+        "204.8"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$A = 400 \\times 0.8^3 = 400 \\times 0.512 = 204.8$ mg. Taking off 20% of 400 three times (to 160) is wrong, because each 20% is of the amount left."
+  },
+  {
+    "id": "HSCM-T2-019",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Earliest start time",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A school fete is planned with these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| P | 5 | none |\n| Q | 3 | none |\n| R | 6 | P |\n| S | 4 | P, Q |\n| T | 8 | R |\n| U | 5 | S |\n| V | 3 | T, U |\n\nWhat is the earliest start time (EST) of activity U, in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "U follows S, which can start once P and Q are both done, at day 5. S takes 4 days, so U can start at day 9."
+  },
+  {
+    "id": "HSCM-T2-020",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "68-95-99.7 rule",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The lengths of fish in a dam are normally distributed with a mean of 50 cm and a standard deviation of 5 cm. About what percentage of the fish are longer than 55 cm? Type the number only.",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "55 cm is 1 standard deviation above the mean. 68% lie within 1 standard deviation, leaving 32% outside, half of it above: 16%."
+  },
+  {
+    "id": "HSCM-T2-021",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Gradient of the least-squares line",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A café records the maximum temperature and the number of cold drinks sold on six days.\n\n| Max. temperature (°C) | 18 | 21 | 24 | 27 | 30 | 33 |\n|---|---|---|---|---|---|---|\n| Drinks sold | 120 | 138 | 155 | 170 | 191 | 204 |\n\nUse your calculator to find the gradient of the least-squares regression line, correct to 2 decimal places. Type the number only.",
+    "numeric": {
+      "answers": [
+        "5.66"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "The calculator's linear regression gives y = 5.6571x + 18.7429, so the gradient is 5.66: about 5.7 more drinks for each extra degree."
+  },
+  {
+    "id": "HSCM-T2-022",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Future value of an annuity (table)",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "\\$2000 is contributed at the end of each year for 10 years to a fund earning 4% p.a., compounded annually. Use the table to find the future value, in dollars, to the nearest cent.\n\nFuture value of \\$1 per period (interest rate per period across the top):\n\n| Periods | 3% | 4% | 5% |\n|---|---|---|---|\n| 5 | 5.3091 | 5.4163 | 5.5256 |\n| 10 | 11.4639 | 12.0061 | 12.5779 |\n| 15 | 18.5989 | 20.0236 | 21.5786 |\n\nType the number only.",
+    "numeric": {
+      "answers": [
+        "24012.20"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Read the 4% column at 10 periods: 12.0061. $FV = 2000 \\times 12.0061 = 24012.20$. The contributions alone total \\$20 000; the rest is interest."
+  },
+  {
+    "id": "HSCM-T2-023",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Bearings and distance",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "From a point O, tree A is 120 m away on a bearing of 040°T and tree B is 85 m away on a bearing of 130°T. How far apart are the trees, in metres, correct to 1 decimal place? Type the number only.",
+    "numeric": {
+      "answers": [
+        "147.1"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "The angle AOB is $130^{\\circ} - 40^{\\circ} = 90^{\\circ}$, so Pythagoras' theorem applies: $AB = \\sqrt{120^2 + 85^2} = 147.1$ m. (The cosine rule gives the same, since $\\cos 90^{\\circ} = 0$.)"
+  },
+  {
+    "id": "HSCM-T2-024",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Profit from cost and revenue",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "A candle maker has fixed costs of \\$2400. Each candle costs \\$6 to make and sells for \\$22. What is the profit, in dollars, from making and selling 250 candles? Type the number only.",
+    "numeric": {
+      "answers": [
+        "1600"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Revenue $= 22 \\times 250 = 5500$. Cost $= 2400 + 6 \\times 250 = 3900$. Profit $= 5500 - 3900 = \\$1600$."
+  },
+  {
+    "id": "HSCM-T2-025",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Latest start time",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A school fete is planned with these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| P | 5 | none |\n| Q | 3 | none |\n| R | 6 | P |\n| S | 4 | P, Q |\n| T | 8 | R |\n| U | 5 | S |\n| V | 3 | T, U |\n\nThe minimum completion time is 22 days. What is the latest start time (LST) of activity S, in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Work backwards: V must start by day 19, so U must start by 14, and S, which takes 4 days, must start by 10."
+  },
+  {
+    "id": "HSCM-T2-026",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Equivalent scores",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Ben's z-score in test A is 1.2. Test B has a mean of 62 and a standard deviation of 9. What mark in test B has the same z-score? Type the number only.",
+    "numeric": {
+      "answers": [
+        "72.8"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$x = 62 + 1.2 \\times 9 = 62 + 10.8 = 72.8$."
+  },
+  {
+    "id": "HSCM-T2-027",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Interest earned, monthly compounding",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "\\$15 000 is invested for 5 years at 3.6% p.a., compounded monthly. How much interest is earned, in dollars, to the nearest cent? Type the number only.",
+    "numeric": {
+      "answers": [
+        "2953.42"
+      ],
+      "tolerance": 0.02
+    },
+    "calculator": true,
+    "explanation": "$r = 0.036 \\div 12 = 0.003$ and $n = 60$. $FV = 15\\,000(1.003)^{60} = 17953.42$, so the interest is \\$2953.42."
+  },
+  {
+    "id": "HSCM-T2-028",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Electrical energy",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "unitConversion",
+    "stem": "A 1500 W air conditioner runs for 45 minutes each day for one week. How many kilowatt-hours (kWh) of energy does it use? Type the number only.",
+    "numeric": {
+      "answers": [
+        "7.875"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "$1.5 \\text{ kW} \\times 0.75 \\text{ h} \\times 7 = 7.875$ kWh. Change watts to kilowatts and minutes to hours first."
+  },
+  {
+    "id": "HSCM-T2-029",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Using a line in reverse",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "The least-squares line for a data set is $y = 0.65x + 12$. For what value of $x$ does the line predict $y = 38$? Type the number only.",
+    "numeric": {
+      "answers": [
+        "40"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$0.65x + 12 = 38$, so $0.65x = 26$ and $x = 40$."
+  },
+  {
+    "id": "HSCM-T2-030",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Maximum of a quadratic model",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A farmer has 40 m of fencing for a rectangular pen. Its area is $A = x(20 - x)$ square metres, where $x$ is the width in metres. The parabola crosses the $x$-axis at $x = 0$ and $x = 20$. What is the largest possible area, in square metres? Type the number only.",
+    "numeric": {
+      "answers": [
+        "100"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "By symmetry the turning point is halfway between 0 and 20, at $x = 10$. Then $A = 10 \\times 10 = 100$ m², a 10 m by 10 m square."
+  },
+  {
+    "id": "HSCM-T2-031",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Maximum flow",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Water flows through a network of pipes from the source S to the sink T.\n\n| From | To | Capacity (litres per minute) |\n|---|---|---|\n| S | P | 10 |\n| S | Q | 6 |\n| P | Q | 4 |\n| P | R | 5 |\n| Q | R | 3 |\n| Q | T | 7 |\n| R | T | 9 |\n\nWhat is the maximum flow from S to T, in litres per minute? Type the number only.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The cut through P to R (5), Q to R (3) and Q to T (7) has capacity 15, the smallest of any cut, and a flow of 15 can be sent: 5 along S, P, R, T; 4 along S, P, Q, then on to R or T; 6 along S, Q. So the maximum flow is 15."
+  },
+  {
+    "id": "HSCM-T2-032",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Probability from a two-way table",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A survey asked 250 people whether they play a sport.\n\n| | Plays sport | No sport | Total |\n|---|---|---|---|\n| Under 18 | 64 | 36 | 100 |\n| 18 and over | 51 | 99 | 150 |\n| Total | 115 | 135 | 250 |\n\nOne person is chosen at random. What is the probability that they play sport? Give a decimal. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.46",
+        "115/250",
+        "23/50"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "$\\frac{115}{250} = 0.46$. Use the column total, not one row."
+  },
+  {
+    "id": "HSCM-T2-033",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Dividends from a dividend yield",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "Leo owns 1200 shares, each worth \\$17. The dividend yield is 5%. What is his total annual dividend, in dollars? Type the number only.",
+    "numeric": {
+      "answers": [
+        "1020"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Each share pays $5\\% \\times 17 = \\$0.85$, so 1200 shares pay $1200 \\times 0.85 = \\$1020$."
+  },
+  {
+    "id": "HSCM-T2-034",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Dividing in a ratio",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "\\$840 is shared in the ratio 3 : 4 : 5. What is the largest share, in dollars? Type the number only.",
+    "numeric": {
+      "answers": [
+        "350"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "There are $3 + 4 + 5 = 12$ parts of $840 \\div 12 = \\$70$, and the largest share is $5 \\times 70 = \\$350$."
+  },
+  {
+    "id": "HSCM-T2-035",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Reliability of a prediction",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A least-squares line was fitted to data with $x$ values from 10 to 50, and $r = 0.95$. Which prediction is the most reliable?",
+    "options": [
+      "The prediction at x = 75",
+      "The prediction at x = 100",
+      "The prediction at x = 30",
+      "The prediction at x = 0"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "x = 30 is inside the data range (interpolation) and the correlation is strong. The other values are extrapolation, beyond the data, so less reliable."
+  },
+  {
+    "id": "HSCM-T2-036",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Meaning of the gradient",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "slope",
+    "stem": "The cost of a taxi ride is $C = 3.6 + 2.2d$ dollars, where $d$ is the distance in kilometres. What does the 2.2 represent?",
+    "options": [
+      "The fixed starting charge",
+      "The cost of a 1 km ride",
+      "The distance travelled per dollar",
+      "The cost per kilometre"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "2.2 multiplies $d$, so each extra kilometre adds \\$2.20: it is the gradient, the rate per kilometre. The starting charge is the 3.6; a 1 km ride costs \\$5.80."
+  },
+  {
+    "id": "HSCM-T2-037",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Changing a capacity",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Water flows through a network of pipes from the source S to the sink T.\n\n| From | To | Capacity (litres per minute) |\n|---|---|---|\n| S | P | 10 |\n| S | Q | 6 |\n| P | Q | 4 |\n| P | R | 5 |\n| Q | R | 3 |\n| Q | T | 7 |\n| R | T | 9 |\n\nThe pipe from P to R is replaced with one of capacity 7. What is the new maximum flow?",
+    "options": [
+      "16 L/min",
+      "17 L/min",
+      "15 L/min",
+      "19 L/min"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The old minimum cut (P to R, Q to R, Q to T) rises to 17, but the cut out of S (10 + 6) and the cut into T (7 + 9) are both 16, so the flow rises by only 1, to 16."
+  },
+  {
+    "id": "HSCM-T2-038",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Expected frequency",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The probability that an item from a production line is faulty is 0.025. How many faulty items are expected in a batch of 1600? Type the number only.",
+    "numeric": {
+      "answers": [
+        "40"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$1600 \\times 0.025 = 40$."
+  },
+  {
+    "id": "HSCM-T2-039",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Annuity recurrence relation",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "An annuity grows according to $A_{n+1} = A_n(1.005) + 200$, with $A_0 = 0$. Find $A_3$, the balance after 3 months, in dollars, to the nearest cent. Type the number only.",
+    "numeric": {
+      "answers": [
+        "603.01"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$A_1 = 0 \\times 1.005 + 200 = 200$, $A_2 = 200 \\times 1.005 + 200 = 401$, $A_3 = 401 \\times 1.005 + 200 = 603.005$, which is \\$603.01."
+  },
+  {
+    "id": "HSCM-T2-040",
+    "section": "s2",
+    "test": 2,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Area from a radial survey",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In a radial survey, two corners of a triangular block are 60 m and 80 m from the survey point, and the angle between the two radials is 110°. Find the area of the block, to the nearest square metre. Type the number only.",
+    "numeric": {
+      "answers": [
+        "2255"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true,
+    "explanation": "$A = \\frac{1}{2} \\times 60 \\times 80 \\times \\sin 110^{\\circ} = 2255.3$ m², so 2255 m²."
+  },
+  {
+    "id": "HSCM-D-001",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Solving a linear equation in context",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "The cost in dollars of hiring a trailer for $h$ hours is $C = 45 + 28h$. A hire cost \\$213. For how many hours was the trailer hired? Type the number only.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$45 + 28h = 213$, so $28h = 168$ and $h = 6$ hours."
+  },
+  {
+    "id": "HSCM-D-002",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Compound interest, annual",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "\\$5000 is invested at 4% p.a., compounded annually, for 3 years. What is the future value, in dollars, to the nearest cent? Type the number only.",
+    "numeric": {
+      "answers": [
+        "5624.32"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$FV = 5000(1.04)^3 = 5000 \\times 1.124864 = 5624.32$."
+  },
+  {
+    "id": "HSCM-D-003",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Sine rule: finding a side",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "sohcahtoa",
+    "stem": "In triangle $XYZ$, $X = 43^{\\circ}$, $Y = 71^{\\circ}$ and $x = 9.5$ m. Find $y$, in metres, correct to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "13.2"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$y = \\frac{9.5 \\sin 71^{\\circ}}{\\sin 43^{\\circ}} = 13.2$ m."
+  },
+  {
+    "id": "HSCM-D-004",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Minimum completion time",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A renovation has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 3 | none |\n| B | 5 | none |\n| C | 4 | A |\n| D | 2 | A |\n| E | 6 | B, C |\n| F | 3 | D |\n| G | 5 | E |\n| H | 4 | F |\n| I | 2 | G, H |\n\nWhat is the minimum completion time, in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The longest path is A, C, E, G, I: 3 + 4 + 6 + 5 + 2 = 20 days."
+  },
+  {
+    "id": "HSCM-D-005",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Describing correlation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which description fits $r = 0.31$?",
+    "options": [
+      "Strong positive correlation",
+      "Weak positive correlation",
+      "Weak negative correlation",
+      "Perfect positive correlation"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "0.31 is positive but well short of 1, so the linear relationship is weak and points rise only loosely together."
+  },
+  {
+    "id": "HSCM-D-006",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Calculating a z-score",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A data set has a mean of 48 and a standard deviation of 4. What is the z-score of 42? Type the number only.",
+    "numeric": {
+      "answers": [
+        "-1.5"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "$z = \\frac{42 - 48}{4} = \\frac{-6}{4} = -1.5$. A score below the mean has a negative z-score."
+  },
+  {
+    "id": "HSCM-D-007",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Break-even point",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "systems",
+    "stem": "A market stall costs \\$180 a day to rent. Each bracelet costs \\$4 to make and sells for \\$13. How many bracelets must be sold in a day to break even? Type the number only.",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Each sale makes \\$13 - \\$4 = \\$9 towards the rent, and \\$180 ÷ \\$9 = 20 bracelets."
+  },
+  {
+    "id": "HSCM-D-008",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Interest earned, monthly compounding",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "\\$6500 is invested at 5.4% p.a., compounded monthly, for 2 years. How much interest is earned, in dollars, to the nearest cent? Type the number only.",
+    "numeric": {
+      "answers": [
+        "739.56"
+      ],
+      "tolerance": 0.02
+    },
+    "calculator": true,
+    "explanation": "$r = 0.054 \\div 12 = 0.0045$ and $n = 24$. $FV = 6500(1.0045)^{24} = 7239.56$, so the interest is \\$739.56."
+  },
+  {
+    "id": "HSCM-D-009",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Cosine rule: finding a side",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Two sides of a triangle are 14 cm and 9 cm, with an angle of 115° between them. Find the third side, in centimetres, correct to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "19.6"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$c^2 = 14^2 + 9^2 - 2 \\times 14 \\times 9 \\cos 115^{\\circ} = 383.50$, so $c = 19.6$ cm. Since $\\cos 115^{\\circ}$ is negative, $c^2$ is more than $14^2 + 9^2$."
+  },
+  {
+    "id": "HSCM-D-010",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Earliest start time",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A renovation has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 3 | none |\n| B | 5 | none |\n| C | 4 | A |\n| D | 2 | A |\n| E | 6 | B, C |\n| F | 3 | D |\n| G | 5 | E |\n| H | 4 | F |\n| I | 2 | G, H |\n\nWhat is the earliest start time (EST) of activity H, in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "H follows F, which follows D, which follows A: 3 + 2 + 3 = 8."
+  },
+  {
+    "id": "HSCM-D-011",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Meaning of r = -1",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does a correlation coefficient of $r = -1$ mean?",
+    "options": [
+      "There is no relationship at all",
+      "All points lie exactly on a line with positive gradient",
+      "All points lie exactly on a line with negative gradient",
+      "The points form a curve"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "r = -1 is perfect negative linear correlation: every point is on one straight line that slopes down. r = 0 would be no linear relationship."
+  },
+  {
+    "id": "HSCM-D-012",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Calculating a z-score",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Battery lives have a mean of 18 hours and a standard deviation of 2.5 hours. What is the z-score of a battery that lasts 23 hours? Type the number only.",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "$z = \\frac{23 - 18}{2.5} = 2$."
+  },
+  {
+    "id": "HSCM-D-013",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Linear model: when a quantity reaches zero",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Water drains from a tank so that the volume after $t$ minutes is $V = 1200 - 40t$ litres. After how many minutes is the tank empty? Type the number only.",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Set $V = 0$: $40t = 1200$, so $t = 30$ minutes."
+  },
+  {
+    "id": "HSCM-D-014",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Straight-line depreciation",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A laptop bought for \\$2400 depreciates by \\$450 each year using the straight-line method. What is it worth after 4 years, in dollars? Type the number only.",
+    "numeric": {
+      "answers": [
+        "600"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$S = V_0 - Dn = 2400 - 450 \\times 4 = 600$."
+  },
+  {
+    "id": "HSCM-D-015",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Cosine rule: finding an angle",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A triangle has sides 5 cm, 6 cm and 8 cm. Find the angle opposite the 6 cm side, to the nearest degree. Type the number only.",
+    "numeric": {
+      "answers": [
+        "49"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true,
+    "explanation": "$\\cos \\theta = \\frac{5^2 + 8^2 - 6^2}{2 \\times 5 \\times 8} = \\frac{53}{80}$, so $\\theta = 48.5^{\\circ}$, which is 49°."
+  },
+  {
+    "id": "HSCM-D-016",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Latest start time",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A renovation has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 3 | none |\n| B | 5 | none |\n| C | 4 | A |\n| D | 2 | A |\n| E | 6 | B, C |\n| F | 3 | D |\n| G | 5 | E |\n| H | 4 | F |\n| I | 2 | G, H |\n\nThe minimum completion time is 20 days. What is the latest start time (LST) of activity D, in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "I must start by day 18, so H by 14, F by 11, and D (2 days) by 9."
+  },
+  {
+    "id": "HSCM-D-017",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Prediction from a least-squares line",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "The least-squares line for the number of hours of sunshine, $x$, and the number of beachgoers, $y$, is $y = 85x - 40$. Predict the number of beachgoers when there are 9 hours of sunshine. Type the number only.",
+    "numeric": {
+      "answers": [
+        "725"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$y = 85 \\times 9 - 40 = 765 - 40 = 725$."
+  },
+  {
+    "id": "HSCM-D-018",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Calculating a z-score",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Exam marks have a mean of 67 and a standard deviation of 12. What is the z-score of a mark of 58? Give a decimal. Type the number only.",
+    "numeric": {
+      "answers": [
+        "-0.75"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "$z = \\frac{58 - 67}{12} = \\frac{-9}{12} = -0.75$."
+  },
+  {
+    "id": "HSCM-D-019",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Exponential growth model",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "A bacteria culture is modelled by $N = 500(2)^t$, where $t$ is the time in hours. How many bacteria are there after 5 hours? Type the number only.",
+    "numeric": {
+      "answers": [
+        "16000"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$2^5 = 32$, so $N = 500 \\times 32 = 16\\,000$."
+  },
+  {
+    "id": "HSCM-D-020",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Declining-balance depreciation",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "percentChange",
+    "stem": "A truck bought for \\$45 000 depreciates at 18% p.a., declining balance. What is it worth after 5 years, in dollars, to the nearest cent? Type the number only.",
+    "numeric": {
+      "answers": [
+        "16683.29"
+      ],
+      "tolerance": 0.02
+    },
+    "calculator": true,
+    "explanation": "$S = 45\\,000(1 - 0.18)^5 = 45\\,000 \\times 0.82^5 = 16683.29$."
+  },
+  {
+    "id": "HSCM-D-021",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Area of a triangle with sine",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A triangle has sides 6.2 m and 8.5 m with an included angle of 57°. Find its area, in square metres, correct to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "22.1"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$A = \\frac{1}{2} \\times 6.2 \\times 8.5 \\times \\sin 57^{\\circ} = 22.1$ m²."
+  },
+  {
+    "id": "HSCM-D-022",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Float time",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A renovation has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 3 | none |\n| B | 5 | none |\n| C | 4 | A |\n| D | 2 | A |\n| E | 6 | B, C |\n| F | 3 | D |\n| G | 5 | E |\n| H | 4 | F |\n| I | 2 | G, H |\n\nThe minimum completion time is 20 days. What is the float of activity F, in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "F's earliest start is day 5 and its latest start is day 11, so its float is 6 days."
+  },
+  {
+    "id": "HSCM-D-023",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Prediction from a least-squares line",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "The least-squares line for a car's age in years, $x$, and its value in thousands of dollars, $y$, is $y = 34.2 - 2.9x$. Predict the value of a 6-year-old car, in thousands of dollars. Type the number only.",
+    "numeric": {
+      "answers": [
+        "16.8"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$y = 34.2 - 2.9 \\times 6 = 34.2 - 17.4 = 16.8$ thousand dollars."
+  },
+  {
+    "id": "HSCM-D-024",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Score from a z-score",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Weights of a type of apple have a mean of 150 g and a standard deviation of 12 g. What weight, in grams, has a z-score of 2.5? Type the number only.",
+    "numeric": {
+      "answers": [
+        "180"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$x = 150 + 2.5 \\times 12 = 150 + 30 = 180$ g."
+  },
+  {
+    "id": "HSCM-D-025",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Recognising a quadratic",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which equation has a parabola as its graph?",
+    "options": [
+      "$y = 2x - 3$",
+      "$y = 2^x - 3$",
+      "$y = \\frac{2}{x}$",
+      "$y = 2x^2 - 3$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "A parabola comes from a squared term, $x^2$. $y = 2^x - 3$ is exponential (the $x$ is the power), and $y = \\frac{2}{x}$ is a hyperbola."
+  },
+  {
+    "id": "HSCM-D-026",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Compounding frequency",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "\\$10 000 is invested for one year at 6% p.a. Which compounding gives the most interest?",
+    "options": [
+      "Daily",
+      "Monthly",
+      "Quarterly",
+      "Annually"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "At the same annual rate, more frequent compounding adds interest on interest sooner, so daily earns the most and annually the least."
+  },
+  {
+    "id": "HSCM-D-027",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Choosing a rule",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "You know two sides of a triangle and the angle between them, and the triangle has no right angle. Which do you use to find the third side?",
+    "options": [
+      "The sine rule",
+      "The cosine rule",
+      "Pythagoras' theorem",
+      "The area formula"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Two sides and the included angle is the cosine rule case. The sine rule needs a side with its opposite angle, and Pythagoras' theorem needs a right angle."
+  },
+  {
+    "id": "HSCM-D-028",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Critical path",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A renovation has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 3 | none |\n| B | 5 | none |\n| C | 4 | A |\n| D | 2 | A |\n| E | 6 | B, C |\n| F | 3 | D |\n| G | 5 | E |\n| H | 4 | F |\n| I | 2 | G, H |\n\nWhich is the critical path?",
+    "options": [
+      "B, E, G, I",
+      "A, D, F, H, I",
+      "A, C, E, G, I",
+      "A, C, E, H, I"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "A, C, E, G, I takes 20 days, the longest path. B, E, G, I takes 18 days and A, D, F, H, I takes 14. E does not lead to H, so A, C, E, H, I is not a path."
+  },
+  {
+    "id": "HSCM-D-029",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Pearson's correlation coefficient",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The table shows the ages and prices of seven used cars of one model.\n\n| Age of car (years) | 1 | 2 | 3 | 4 | 5 | 6 | 7 |\n|---|---|---|---|---|---|---|---|\n| Price (\\$'000) | 32 | 28 | 25 | 21 | 19 | 16 | 14 |\n\nUse your calculator to find Pearson's correlation coefficient, correct to 2 decimal places. Type the number only.",
+    "numeric": {
+      "answers": [
+        "-0.99"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "Statistics mode gives r = -0.9944, which is -0.99: a very strong negative correlation, as older cars sell for less."
+  },
+  {
+    "id": "HSCM-D-030",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Score from a z-score",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Commute times have a mean of 42 minutes and a standard deviation of 7 minutes. What time, in minutes, has a z-score of -0.8? Type the number only.",
+    "numeric": {
+      "answers": [
+        "36.4"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$x = 42 + (-0.8)(7) = 42 - 5.6 = 36.4$ minutes."
+  },
+  {
+    "id": "HSCM-D-031",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Features of a reciprocal graph",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement is true of the graph of $y = \\frac{12}{x}$ for $x > 0$?",
+    "options": [
+      "It crosses the y-axis at the point (0, 12)",
+      "It is a straight line passing through the origin",
+      "It reaches its greatest value of 12 when x equals 1",
+      "It gets closer to the x-axis but never touches it"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "As $x$ grows, $\\frac{12}{x}$ shrinks towards 0 but never reaches it. The graph has no $y$-intercept, because $x = 0$ is not allowed, and it rises without limit as $x$ gets close to 0."
+  },
+  {
+    "id": "HSCM-D-032",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Credit card interest",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A credit card charges 21.49% p.a. interest, compounded daily, from the purchase date. A \\$1850 purchase is paid off after 25 days. How much interest is charged, in dollars, to the nearest cent? Type the number only.",
+    "numeric": {
+      "answers": [
+        "27.42"
+      ],
+      "tolerance": 0.02
+    },
+    "calculator": true,
+    "explanation": "$1850(1 + \\frac{0.2149}{365})^{25} = 1877.42$, so the interest is \\$27.42."
+  },
+  {
+    "id": "HSCM-D-033",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Compass and true bearings",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which true bearing is the same direction as the compass bearing S40°E?",
+    "options": [
+      "140°T",
+      "040°T",
+      "220°T",
+      "320°T"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "S40°E is 40° from south towards east. South is 180°T, and turning 40° back towards east gives 180° - 40° = 140°T."
+  },
+  {
+    "id": "HSCM-D-034",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Shortening a critical activity",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A renovation has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 3 | none |\n| B | 5 | none |\n| C | 4 | A |\n| D | 2 | A |\n| E | 6 | B, C |\n| F | 3 | D |\n| G | 5 | E |\n| H | 4 | F |\n| I | 2 | G, H |\n\nActivity C is shortened from 4 days to 2 days. What is the new minimum completion time, in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "18"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Saving 2 days on C would give 18 days on A, C, E, G, I, but B, E, G, I also takes 18 days, so the new time is 18 days. B, E, G, I becomes critical too."
+  },
+  {
+    "id": "HSCM-D-035",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Pearson's correlation coefficient",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The table shows the arm spans and heights of six students.\n\n| Arm span (cm) | 150 | 158 | 163 | 170 | 176 | 184 |\n|---|---|---|---|---|---|---|\n| Height (cm) | 148 | 160 | 161 | 172 | 175 | 186 |\n\nUse your calculator to find Pearson's correlation coefficient, correct to 2 decimal places. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.99"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "Statistics mode gives r = 0.9906, which is 0.99: strong and positive."
+  },
+  {
+    "id": "HSCM-D-036",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "68-95-99.7 rule",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "IQ scores are normally distributed with a mean of 100 and a standard deviation of 15. About what percentage of people score below 85? Type the number only.",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "85 is 1 standard deviation below the mean. Half of the 32% outside 1 standard deviation is below it: 16%."
+  },
+  {
+    "id": "HSCM-D-037",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Simultaneous equations in context",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "systems",
+    "stem": "Two adult tickets and three child tickets cost \\$64. One adult ticket and two child tickets cost \\$38. What is the price of one adult ticket, in dollars? Type the number only.",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "From the second equation $A = 38 - 2C$. Substitute: $2(38 - 2C) + 3C = 64$, so $76 - C = 64$ and $C = 12$. Then $A = 38 - 24 = 14$."
+  },
+  {
+    "id": "HSCM-D-038",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Dividend yield",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "A share priced at \\$32 pays an annual dividend of 96 cents. What is the dividend yield, as a percentage? Type the number only.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$0.96 \\div 32 \\times 100\\% = 3\\%$. Write the dividend in dollars first."
+  },
+  {
+    "id": "HSCM-D-039",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Reverse bearings",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The bearing of Q from P is 063°T. What is the bearing of P from Q, in degrees? Type the number only.",
+    "numeric": {
+      "answers": [
+        "243"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Add 180°: 63° + 180° = 243°, so the bearing is 243°T."
+  },
+  {
+    "id": "HSCM-D-040",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Delay within the float",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A renovation has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 3 | none |\n| B | 5 | none |\n| C | 4 | A |\n| D | 2 | A |\n| E | 6 | B, C |\n| F | 3 | D |\n| G | 5 | E |\n| H | 4 | F |\n| I | 2 | G, H |\n\nActivity D takes 4 days longer than planned. What happens to the minimum completion time?",
+    "options": [
+      "It increases by 4 days",
+      "It does not change",
+      "It increases by 2 days",
+      "It decreases by 4 days"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "D has a float of 6 days, so a 4-day delay is absorbed and the project still takes 20 days."
+  },
+  {
+    "id": "HSCM-D-041",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Gradient of the least-squares line",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The table shows the ages and prices of seven used cars of one model.\n\n| Age of car (years) | 1 | 2 | 3 | 4 | 5 | 6 | 7 |\n|---|---|---|---|---|---|---|---|\n| Price (\\$'000) | 32 | 28 | 25 | 21 | 19 | 16 | 14 |\n\nUse your calculator to find the gradient of the least-squares regression line, correct to 2 decimal places. Type the number only.",
+    "numeric": {
+      "answers": [
+        "-3.00"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "Linear regression gives y = -3.0000x + 34.1429. The gradient -3.00 means the price falls by about \\$3000 for each extra year of age."
+  },
+  {
+    "id": "HSCM-D-042",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "68-95-99.7 rule",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Scores are normally distributed with a mean of 60 and a standard deviation of 10. About what percentage of scores lie between 40 and 70? Type the number only.",
+    "numeric": {
+      "answers": [
+        "81.5"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "40 is 2 standard deviations below and 70 is 1 above: 47.5% + 34% = 81.5%."
+  },
+  {
+    "id": "HSCM-D-043",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Exponential decay model",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "The temperature of a cup of tea above room temperature is $T = 70(0.9)^t$ degrees, $t$ minutes after it is poured. Find $T$ after 4 minutes, correct to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "45.9"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "$0.9^4 = 0.6561$, so $T = 70 \\times 0.6561 = 45.927$, which is 45.9 to 1 decimal place."
+  },
+  {
+    "id": "HSCM-D-044",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Cost of buying shares",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Ava buys 500 shares at \\$8.40 each and pays a brokerage fee of \\$19.95. What is the total cost, in dollars? Type the number only.",
+    "numeric": {
+      "answers": [
+        "4219.95"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$500 \\times 8.40 = 4200$, plus \\$19.95 brokerage, gives \\$4219.95."
+  },
+  {
+    "id": "HSCM-D-045",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Angle of depression",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "sohcahtoa",
+    "stem": "From the top of an 80 m cliff, the angle of depression to a boat is 18°. How far is the boat from the base of the cliff, to the nearest metre? Type the number only.",
+    "numeric": {
+      "answers": [
+        "246"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true,
+    "explanation": "The angle of elevation from the boat is also 18°, so $\\tan 18^{\\circ} = \\frac{80}{d}$ and $d = \\frac{80}{\\tan 18^{\\circ}} = 246.2$ m, about 246 m."
+  },
+  {
+    "id": "HSCM-D-046",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Minimum completion time",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A small project has these activities.\n\n| Activity | Duration (hours) | Immediate prerequisites |\n|---|---|---|\n| J | 2 | none |\n| K | 4 | J |\n| L | 3 | J |\n| M | 5 | K, L |\n\nWhat is the minimum completion time, in hours? Type the number only.",
+    "numeric": {
+      "answers": [
+        "11"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "K and L both follow J and run at the same time; M waits for the longer of them, K. So J, K, M: 2 + 4 + 5 = 11 hours."
+  },
+  {
+    "id": "HSCM-D-047",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Intercept of the least-squares line",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The table shows the arm spans and heights of six students.\n\n| Arm span (cm) | 150 | 158 | 163 | 170 | 176 | 184 |\n|---|---|---|---|---|---|---|\n| Height (cm) | 148 | 160 | 161 | 172 | 175 | 186 |\n\nUse your calculator to find the $y$-intercept of the least-squares regression line, correct to 1 decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "-11.9"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Linear regression gives y = 1.0721x + (-11.8669), so the intercept is -11.9. It has no real meaning here, since nobody has an arm span of 0 cm."
+  },
+  {
+    "id": "HSCM-D-048",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "68-95-99.7 rule",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Scores are normally distributed with a mean of 75 and a standard deviation of 5. About what percentage of scores lie between 75 and 90? Type the number only.",
+    "numeric": {
+      "answers": [
+        "49.85"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "90 is 3 standard deviations above the mean. Half of 99.7% lies between the mean and +3: 49.85%."
+  },
+  {
+    "id": "HSCM-D-049",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Quadratic model: when an object lands",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A rock is thrown so that its height in metres after $t$ seconds is $h = 19.6t - 4.9t^2$. After how many seconds does it land ($h = 0$, $t > 0$)? Type the number only.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Factorise: $h = 4.9t(4 - t)$. This is 0 at $t = 0$ (the throw) and $t = 4$ (landing)."
+  },
+  {
+    "id": "HSCM-D-050",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Loan balance after one month",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A loan of \\$15 000 is charged 6% p.a. interest, compounded monthly. A repayment of \\$400 is made at the end of the first month. What is the balance after that repayment, in dollars? Type the number only.",
+    "numeric": {
+      "answers": [
+        "14675"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "Monthly rate $= 0.5\\%$. $15\\,000 \\times 1.005 - 400 = 15\\,075 - 400 = 14\\,675$."
+  },
+  {
+    "id": "HSCM-D-051",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Fuel consumption rate",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "rateProblems",
+    "stem": "A car used 42 L of fuel to travel 600 km. What is its fuel consumption, in litres per 100 km? Type the number only.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$\\frac{42}{600} \\times 100 = 7$ L/100 km."
+  },
+  {
+    "id": "HSCM-D-052",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Maximum flow",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Water flows through a network of pipes from the source S to the sink T.\n\n| From | To | Capacity (litres per minute) |\n|---|---|---|\n| S | A | 12 |\n| S | B | 8 |\n| A | C | 5 |\n| A | D | 9 |\n| B | D | 6 |\n| C | T | 7 |\n| D | T | 10 |\n\nWhat is the maximum flow from S to T, in litres per minute? Type the number only.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The cut into T, C to T (7) and D to T (10), is 17, but C can only receive 5 from A, so the cut through A to C (5), D to T (10) is 15. A flow of 15 is possible, so that is the maximum."
+  },
+  {
+    "id": "HSCM-D-053",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Interpreting the gradient",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For a sample of houses, the least-squares line for floor area $x$ (m²) and price $y$ (\\$'000) is $y = 3.5x + 210$. What does 3.5 tell you?",
+    "options": [
+      "Each extra square metre adds about \\$3.50 to the price",
+      "A house with no floor area costs \\$3500",
+      "Each extra square metre adds about \\$3500 to the price",
+      "The price is 3.5 times the floor area"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The gradient is the change in $y$ for each unit of $x$. $y$ is in thousands of dollars, so 3.5 means about \\$3500 per square metre."
+  },
+  {
+    "id": "HSCM-D-054",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "68-95-99.7 rule",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In a normal distribution, about what percentage of scores lie more than 2 standard deviations from the mean, in either direction? Type the number only.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "95% lie within 2 standard deviations of the mean, so 100% - 95% = 5% lie further out."
+  },
+  {
+    "id": "HSCM-D-055",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Profit or loss",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "substitution",
+    "stem": "A small business has revenue $R = 15x$ and costs $C = 600 + 9x$ dollars for $x$ items. Which is true when 80 items are sold?",
+    "options": [
+      "A profit of \\$120 is made",
+      "The business breaks even",
+      "A profit of \\$480 is made",
+      "A loss of \\$120 is made"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "$R = 15 \\times 80 = 1200$ and $C = 600 + 720 = 1320$, so the business is \\$120 short: a loss. It breaks even only at 100 items."
+  },
+  {
+    "id": "HSCM-D-056",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Total interest on a loan",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A car loan of \\$60 000 is repaid with \\$1250 a month for 5 years. How much interest is paid in total, in dollars? Type the number only.",
+    "numeric": {
+      "answers": [
+        "15000"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Total repaid $= 1250 \\times 60 = 75\\,000$, so the interest is $75\\,000 - 60\\,000 = 15\\,000$."
+  },
+  {
+    "id": "HSCM-D-057",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Cost of electricity",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "rateProblems",
+    "stem": "A fridge uses 1.2 kWh of energy a day. Electricity costs 30 cents per kWh. What does it cost to run for 365 days, in dollars? Type the number only.",
+    "numeric": {
+      "answers": [
+        "131.40",
+        "131.4"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$1.2 \\times 365 = 438$ kWh, and $438 \\times 0.30 = \\$131.40$."
+  },
+  {
+    "id": "HSCM-D-058",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Capacity of a cut",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Water flows through a network of pipes from the source S to the sink T.\n\n| From | To | Capacity (litres per minute) |\n|---|---|---|\n| S | A | 12 |\n| S | B | 8 |\n| A | C | 5 |\n| A | D | 9 |\n| B | D | 6 |\n| C | T | 7 |\n| D | T | 10 |\n\nA cut separates {S, A} from {B, C, D, T}. What is its capacity, in litres per minute? Type the number only.",
+    "numeric": {
+      "answers": [
+        "22"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Add the capacities of edges going from the S side to the T side: S to B (8), A to C (5), A to D (9). Total 22."
+  },
+  {
+    "id": "HSCM-D-059",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Interpreting the intercept",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The least-squares line for the number of hours a heater runs, $x$, and the daily electricity cost in dollars, $y$, is $y = 1.20 + 0.45x$. What does 1.20 represent?",
+    "options": [
+      "The cost, \\$1.20, on a day the heater is off",
+      "The cost of each extra hour the heater runs",
+      "The number of hours of heating that costs \\$1",
+      "The total cost of a full day of heating"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The intercept is the value of $y$ when $x = 0$, the cost of other appliances with no heating. 0.45 is the cost per hour."
+  },
+  {
+    "id": "HSCM-D-060",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Comparing results with z-scores",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Mia scored 81 in Maths (mean 75, standard deviation 8) and 74 in English (mean 65, standard deviation 6). In which subject did she do better compared with her class?",
+    "options": [
+      "Maths, with a z-score of 0.75",
+      "English, with a z-score of 1.5",
+      "Maths, because 81 is higher than 74",
+      "Both equally, as both marks are above the mean"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Maths: (81 - 75) ÷ 8 = 0.75. English: (74 - 65) ÷ 6 = 1.5. The higher z-score, English, is the better result relative to the class, even though the raw mark is lower."
+  },
+  {
+    "id": "HSCM-D-061",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Gradient as a rate of change",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "slope",
+    "stem": "A phone battery shows 40% charge and drops at a constant rate to 15% after 5 hours. By how many percentage points does it drop each hour? Type the number only.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "It drops 40 - 15 = 25 percentage points in 5 hours, so 25 ÷ 5 = 5 points per hour. This is the size of the gradient of the line."
+  },
+  {
+    "id": "HSCM-D-062",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Recurrence relation for a loan",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A loan is charged 6% p.a. interest, compounded monthly, with \\$400 repaid at the end of each month. Which recurrence relation gives the balance $A_n$ after $n$ months?",
+    "options": [
+      "$A_{n+1} = A_n(1.06) - 400$",
+      "$A_{n+1} = A_n(1.005) + 400$",
+      "$A_{n+1} = A_n(1.005) - 400$",
+      "$A_{n+1} = (A_n - 400)(1.06)$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Each month the balance gains 0.5% interest ($6\\% \\div 12$) and then the \\$400 repayment is subtracted. Adding 400 would describe savings, not a loan."
+  },
+  {
+    "id": "HSCM-D-063",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Area from a scale drawing",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "On a plan with a scale of 1 : 100, a rectangular room measures 4.2 cm by 3.5 cm. What is the actual floor area, in square metres? Type the number only.",
+    "numeric": {
+      "answers": [
+        "14.7"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "Each 1 cm is 100 cm, or 1 m, so the room is 4.2 m by 3.5 m: $4.2 \\times 3.5 = 14.7$ m²."
+  },
+  {
+    "id": "HSCM-D-064",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Counting edges in a cut",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When finding the capacity of a cut in a directed flow network, which edges crossing the cut are counted?",
+    "options": [
+      "Every edge the cut crosses",
+      "Only edges directed from the sink side to the source side",
+      "Only edges touching the source",
+      "Only edges directed from the source side to the sink side"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Only flow from the source side towards the sink can pass through the cut, so edges pointing back are ignored."
+  },
+  {
+    "id": "HSCM-D-065",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Interpolation and extrapolation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Data on children aged 4 to 12 years is used to predict the height of a child aged 8. What is this called?",
+    "options": [
+      "Interpolation",
+      "Extrapolation",
+      "Causation",
+      "Regression to the mean"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Age 8 lies inside the range of the data (4 to 12), so the prediction is interpolation, which is usually reliable when correlation is strong."
+  },
+  {
+    "id": "HSCM-D-066",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Relative frequency",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A die is rolled 120 times and lands on 6 a total of 26 times. What is the relative frequency of rolling a 6, correct to 2 decimal places? Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.22"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "$26 \\div 120 = 0.2166...$, which is 0.22. The theoretical probability is $\\frac{1}{6} \\approx 0.17$."
+  },
+  {
+    "id": "HSCM-D-067",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Inverse variation",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The number of days needed to pick a crop varies inversely with the number of pickers. Eight pickers take 15 days. How many pickers are needed to finish in 6 days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The job is $8 \\times 15 = 120$ picker-days, so finishing in 6 days needs $120 \\div 6 = 20$ pickers."
+  },
+  {
+    "id": "HSCM-D-068",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Future value of an annuity (table)",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Sam deposits \\$150 at the end of each month for 2 years at 6% p.a., compounded monthly. Use the table to find the future value, in dollars, to the nearest cent.\n\nFuture value of \\$1 per period (interest rate per period across the top):\n\n| Periods | 0.5% | 1% |\n|---|---|---|\n| 12 | 12.3356 | 12.6825 |\n| 24 | 25.4320 | 26.9735 |\n| 36 | 39.3361 | 43.0769 |\n\nType the number only.",
+    "numeric": {
+      "answers": [
+        "3814.80"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "0.5% per month for 24 months gives the factor 25.4320, so $FV = 150 \\times 25.4320 = 3814.80$."
+  },
+  {
+    "id": "HSCM-D-069",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Ratio in a mixture",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "Concrete is mixed from cement, sand and gravel in the ratio 1 : 2 : 4. How many cubic metres of gravel are in 3.5 m³ of mix? Type the number only.",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "There are 7 parts of $3.5 \\div 7 = 0.5$ m³, and gravel is 4 parts: 2 m³."
+  },
+  {
+    "id": "HSCM-D-070",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Meeting demand",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Water flows through a network of pipes from the source S to the sink T.\n\n| From | To | Capacity (litres per minute) |\n|---|---|---|\n| S | A | 12 |\n| S | B | 8 |\n| A | C | 5 |\n| A | D | 9 |\n| B | D | 6 |\n| C | T | 7 |\n| D | T | 10 |\n\nA town needs 18 litres per minute delivered to T. Can this network meet that demand?",
+    "options": [
+      "Yes, 20 L/min can leave the source",
+      "No, its maximum flow is only 15 L/min",
+      "Yes, the edges into T can carry 17 L/min",
+      "No, its maximum flow is only 12 L/min"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The maximum flow equals the minimum cut, 15 L/min, which is below 18. Edges out of S can carry 20, but the flow is limited further on."
+  },
+  {
+    "id": "HSCM-D-071",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Limits of extrapolation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Data on children aged 4 to 12 shows height increasing by about 6 cm a year. Why should the line not be used to predict height at age 40?",
+    "options": [
+      "The correlation between age and height turns negative for adults",
+      "The line can only be used to predict heights for ages under 4",
+      "Age 40 is far outside the data, and growth stops in adulthood",
+      "Heights can never be predicted from ages with a regression line"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Extrapolating that far assumes the linear trend continues, but people stop growing, so the prediction would be wildly too large."
+  },
+  {
+    "id": "HSCM-D-072",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Using relative frequency",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In the past, 18 of every 120 customers at a shop bought a sandwich. If 900 customers visit next week, how many are expected to buy a sandwich? Type the number only.",
+    "numeric": {
+      "answers": [
+        "135"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The relative frequency is $\\frac{18}{120} = 0.15$, so expect $900 \\times 0.15 = 135$."
+  },
+  {
+    "id": "HSCM-D-073",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Writing an exponential model",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "exponentialGrowth",
+    "stem": "A town's population is 8000 and grows by 3% each year. Which equation gives the population P after t years?",
+    "options": [
+      "$P = 8000(0.03)^t$",
+      "$P = 8000 + 0.03t$",
+      "$P = 8000(1.3)^t$",
+      "$P = 8000(1.03)^t$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Growing by 3% means multiplying by $1 + 0.03 = 1.03$ each year. $1.3$ would be 30% growth, and $8000 + 0.03t$ adds almost nothing."
+  },
+  {
+    "id": "HSCM-D-074",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Present value of an annuity (table)",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A couple can afford repayments of \\$1800 a month for 20 years. The interest rate is 6% p.a., compounded monthly. Use the table to find the most they can borrow, in dollars, to the nearest cent.\n\nPresent value of \\$1 per period (interest rate per period across the top):\n\n| Periods | 0.5% | 0.75% |\n|---|---|---|\n| 120 | 90.0735 | 78.9417 |\n| 240 | 139.5808 | 111.1450 |\n| 300 | 155.2069 | 119.1616 |\n\nType the number only.",
+    "numeric": {
+      "answers": [
+        "251245.44"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "0.5% per month for $20 \\times 12 = 240$ months gives the factor 139.5808. $PV = 1800 \\times 139.5808 = 251245.44$."
+  },
+  {
+    "id": "HSCM-D-075",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Converting a rate",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "unitConversion",
+    "stem": "Convert 90 km/h to metres per second. Type the number only.",
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$90 \\text{ km/h} = 90\\,000 \\text{ m} \\div 3600 \\text{ s} = 25$ m/s."
+  },
+  {
+    "id": "HSCM-D-076",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Changing a capacity",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Water flows through a network of pipes from the source S to the sink T.\n\n| From | To | Capacity (litres per minute) |\n|---|---|---|\n| S | X | 6 |\n| S | Y | 8 |\n| X | Y | 2 |\n| X | Z | 5 |\n| Y | Z | 4 |\n| Y | T | 5 |\n| Z | T | 8 |\n\nThe pipe from Y to T is upgraded from 5 to 8 L/min. What is the new maximum flow, in litres per minute? Type the number only.",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Before the upgrade the maximum flow was 13, the cut into T (5 + 8). After it, that cut is 16, but the cut out of S is 6 + 8 = 14, now the smallest, so the maximum flow is 14."
+  },
+  {
+    "id": "HSCM-D-077",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Dependent variable",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A researcher studies how the amount of fertiliser used affects the yield of a wheat crop. Which variable goes on the vertical axis of the scatterplot?",
+    "options": [
+      "The crop yield",
+      "The amount of fertiliser",
+      "The size of the paddock",
+      "The number of paddocks"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The dependent variable, the one that responds, goes on the vertical axis. Yield depends on the fertiliser, the independent variable."
+  },
+  {
+    "id": "HSCM-D-078",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Expected frequency",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A fair spinner has 5 equal sectors, one of them red. It is spun 350 times. How many times is it expected to land on red? Type the number only.",
+    "numeric": {
+      "answers": [
+        "70"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$P(\\text{red}) = \\frac{1}{5}$, so $350 \\times \\frac{1}{5} = 70$."
+  },
+  {
+    "id": "HSCM-D-079",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Using an exponential model",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "A town's population is modelled by $P = 8000(1.03)^t$, where $t$ is in years. What is the population after 10 years, to the nearest whole number? Type the number only.",
+    "numeric": {
+      "answers": [
+        "10751"
+      ],
+      "tolerance": 1
+    },
+    "calculator": true,
+    "explanation": "$1.03^{10} = 1.3439...$, so $P = 8000 \\times 1.3439... = 10\\,751.3...$, which is 10 751."
+  },
+  {
+    "id": "HSCM-D-080",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Comparing loan terms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two loans are for the same amount at the same interest rate. Loan A runs for 20 years and loan B for 25 years. Which statement is true?",
+    "options": [
+      "Loan A has lower repayments and less total interest",
+      "Loan A has higher repayments but less total interest",
+      "Loan B has higher repayments and more total interest",
+      "Both loans cost the same in total interest"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "A shorter term needs bigger repayments to clear the debt, but the balance falls faster, so less interest is charged overall."
+  },
+  {
+    "id": "HSCM-D-081",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Trapezoidal rule",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Use one application of the trapezoidal rule to estimate the area of a strip of land 12 m wide, whose end lengths are 7.5 m and 9.1 m. Give the answer in square metres. Type the number only.",
+    "numeric": {
+      "answers": [
+        "99.6"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$A \\approx \\frac{12}{2}(7.5 + 9.1) = 6 \\times 16.6 = 99.6$ m²."
+  },
+  {
+    "id": "HSCM-D-082",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Minimum spanning tree",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The table gives the cost, in thousands of dollars, of laying water pipes between six farms.\n\n| Edge | Weight (\\$'000) |\n|---|---|\n| PQ | 4 |\n| PR | 7 |\n| QR | 3 |\n| QS | 6 |\n| RS | 5 |\n| RT | 8 |\n| ST | 2 |\n| SU | 9 |\n| TU | 6 |\n\nWhat is the total cost of the minimum spanning tree, in thousands of dollars? Type the number only.",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Kruskal's algorithm: ST (2), QR (3), PQ (4), RS (5), then TU (6). QS (6) would close a cycle. Total 20."
+  },
+  {
+    "id": "HSCM-D-083",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Effect of an outlier",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scatterplot shows a strong positive trend, except for one point far below the others. What happens to $r$ if that outlier is removed?",
+    "options": [
+      "r gets closer to 0",
+      "r changes sign",
+      "r gets closer to 1",
+      "r does not change"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The outlier weakens the linear pattern. Without it the points sit closer to a line, so the correlation becomes stronger, nearer 1."
+  },
+  {
+    "id": "HSCM-D-084",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Probability from a two-way table",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The table shows how 200 students travel to school.\n\n| | Bus | Car | Walk | Total |\n|---|---|---|---|---|\n| Year 11 | 42 | 28 | 30 | 100 |\n| Year 12 | 35 | 40 | 25 | 100 |\n| Total | 77 | 68 | 55 | 200 |\n\nA Year 12 student is chosen at random. What is the probability that they walk? Give a decimal. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.25",
+        "25/100",
+        "1/4"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "Only the Year 12 row counts: 25 of its 100 students walk, so $\\frac{25}{100} = 0.25$."
+  },
+  {
+    "id": "HSCM-D-085",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Turning point by symmetry",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The parabola $y = x^2 - 6x + 5$ crosses the $x$-axis at $x = 1$ and $x = 5$. What is the $x$-coordinate of its turning point? Type the number only.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "A parabola is symmetric about its axis, so the turning point is halfway between the intercepts: $\\frac{1 + 5}{2} = 3$."
+  },
+  {
+    "id": "HSCM-D-086",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Present value of a lump sum",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "How much must be invested now at 5% p.a., compounded annually, to have \\$20 000 in 4 years? Answer in dollars, to the nearest cent. Type the number only.",
+    "numeric": {
+      "answers": [
+        "16454.05"
+      ],
+      "tolerance": 0.02
+    },
+    "calculator": true,
+    "explanation": "$PV = \\frac{20\\,000}{1.05^4} = 16454.05$."
+  },
+  {
+    "id": "HSCM-D-087",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Trapezoidal rule, two applications",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A pond's widths are 10 m, 14 m and 8 m, measured 15 m apart along its length. Use two applications of the trapezoidal rule to estimate its area, in square metres. Type the number only.",
+    "numeric": {
+      "answers": [
+        "345"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$A \\approx \\frac{15}{2}(10 + 14) + \\frac{15}{2}(14 + 8) = 180 + 165 = 345$ m²."
+  },
+  {
+    "id": "HSCM-D-088",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Edges in a spanning tree",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A connected network has 8 vertices. How many edges does any spanning tree of it have? Type the number only.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "A tree on n vertices always has n - 1 edges, so 8 - 1 = 7. One more edge would create a cycle."
+  },
+  {
+    "id": "HSCM-D-089",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Using a line in reverse",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "The least-squares line for weekly advertising spending in dollars, $x$, and sales in dollars, $y$, is $y = 4.2x + 1500$. How much advertising spending is predicted to give sales of \\$3600? Answer in dollars. Type the number only.",
+    "numeric": {
+      "answers": [
+        "500"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$4.2x + 1500 = 3600$, so $4.2x = 2100$ and $x = 500$."
+  },
+  {
+    "id": "HSCM-D-090",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Probability from a two-way table",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A survey asked 250 people whether they play a sport.\n\n| | Plays sport | No sport | Total |\n|---|---|---|---|\n| Under 18 | 64 | 36 | 100 |\n| 18 and over | 51 | 99 | 150 |\n| Total | 115 | 135 | 250 |\n\nA person who plays sport is chosen at random. What is the probability that they are under 18, correct to 2 decimal places? Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.56"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "Only the 115 people who play sport count, and 64 of them are under 18: $\\frac{64}{115} = 0.5565...$, which is 0.56."
+  },
+  {
+    "id": "HSCM-D-091",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Substituting into a quadratic formula",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "The braking distance of a car, $d$ metres, is estimated by $d = 0.01v^2$, where $v$ is the speed in km/h. Find the braking distance at 80 km/h, in metres. Type the number only.",
+    "numeric": {
+      "answers": [
+        "64"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$d = 0.01 \\times 80^2 = 0.01 \\times 6400 = 64$ m. Square the speed before multiplying."
+  },
+  {
+    "id": "HSCM-D-092",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Inflation",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percentChange",
+    "stem": "A coffee costs \\$4.50. If prices rise with inflation of 3% p.a., what will it cost in 5 years, in dollars, to the nearest cent? Type the number only.",
+    "numeric": {
+      "answers": [
+        "5.22"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$4.50 \\times 1.03^5 = 5.2167$, which is \\$5.22."
+  },
+  {
+    "id": "HSCM-D-093",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Right-angled trigonometry",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "sohcahtoa",
+    "stem": "A kite string 60 m long makes an angle of 55° with the flat ground. How high is the kite, to 1 decimal place?",
+    "options": [
+      "34.4 m",
+      "85.7 m",
+      "73.2 m",
+      "49.1 m"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The string is the hypotenuse and the height is opposite the 55° angle: $h = 60 \\sin 55^{\\circ} = 49.1$ m."
+  },
+  {
+    "id": "HSCM-D-094",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Shortest path",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The table gives travel times, in minutes, along roads between six places.\n\n| Edge | Weight (min) |\n|---|---|\n| AB | 5 |\n| AC | 2 |\n| CB | 2 |\n| BD | 4 |\n| CD | 7 |\n| CE | 8 |\n| DE | 3 |\n| DF | 6 |\n| EF | 2 |\n\nWhat is the shortest travel time from A to F, in minutes? Type the number only.",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "A to C (2), C to E (8), E to F (2) gives 12 minutes. A, C, B, D, E, F gives 13, and A, B, D, F gives 15."
+  },
+  {
+    "id": "HSCM-D-095",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Using the regression equation",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "A calculator gives a least-squares line $y = a + bx$ with $a = 3.2$ and $b = 0.85$. What is the predicted value of $y$ when $x = 20$? Type the number only.",
+    "numeric": {
+      "answers": [
+        "20.2"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$y = 3.2 + 0.85 \\times 20 = 3.2 + 17 = 20.2$."
+  },
+  {
+    "id": "HSCM-D-096",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Theoretical probability",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A bag holds 4 red, 5 blue and 3 green counters. One is drawn at random. What is the probability it is not blue?",
+    "options": [
+      "$\\frac{7}{12}$",
+      "$\\frac{5}{12}$",
+      "$\\frac{7}{5}$",
+      "$\\frac{1}{3}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "7 of the 12 counters are not blue, so the probability is $\\frac{7}{12}$, which is $1 - \\frac{5}{12}$."
+  },
+  {
+    "id": "HSCM-D-097",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Meaning of an intersection point",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "systems",
+    "stem": "The monthly costs of two phone plans are graphed against the data used. The lines meet at (25, 50), with data in GB and cost in dollars. What does this point mean?",
+    "options": [
+      "Plan A costs \\$25 and plan B costs \\$50",
+      "Both plans cost \\$50 when 25 GB is used",
+      "Both plans cost \\$25 when 50 GB is used",
+      "The plans always differ by \\$25"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The first coordinate is the data used (25 GB) and the second is the cost (\\$50); at the intersection both plans give that same cost."
+  },
+  {
+    "id": "HSCM-D-098",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Interest rate per period",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "A loan is charged 7.2% p.a. interest, compounded monthly. What is the interest rate per month, as a percentage? Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$7.2\\% \\div 12 = 0.6\\%$ per month."
+  },
+  {
+    "id": "HSCM-D-099",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Heart rate",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "rateProblems",
+    "stem": "A nurse counts 17 heartbeats in 15 seconds. What is the heart rate in beats per minute? Type the number only.",
+    "numeric": {
+      "answers": [
+        "68"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "There are four lots of 15 seconds in a minute: $17 \\times 4 = 68$ beats per minute."
+  },
+  {
+    "id": "HSCM-D-100",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Immediate prerequisites",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Activity E has immediate prerequisites B and C. What does this mean?",
+    "options": [
+      "E can start as soon as either B or C is finished",
+      "B and C cannot start until E is finished",
+      "E cannot start until both B and C are finished",
+      "E, B and C must all start together"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Every immediate prerequisite must be complete before an activity starts, so E waits for the later of B and C."
+  },
+  {
+    "id": "HSCM-D-101",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Bivariate data",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these is bivariate data?",
+    "options": [
+      "The heights of the students in a class",
+      "The favourite sport of each student in a class",
+      "The number of students in each class",
+      "The height and mass of each student in a class"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Bivariate data records two variables for each individual, so they can be compared. The others record only one variable."
+  },
+  {
+    "id": "HSCM-D-102",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Complementary events",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The probability that it rains on a given day is 0.35. What is the probability that it does not rain? Give a decimal. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.65"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "$1 - 0.35 = 0.65$. An event and its complement have probabilities adding to 1."
+  },
+  {
+    "id": "HSCM-D-103",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Halving model",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "exponentialGrowth",
+    "stem": "A radioactive sample has mass $M = 80(0.5)^t$ grams after $t$ half-lives. What is its mass after 3 half-lives, in grams? Type the number only.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$0.5^3 = 0.125$ and $80 \\times 0.125 = 10$ g: halve 80 three times, 40, 20, 10."
+  },
+  {
+    "id": "HSCM-D-104",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Reducing-balance loan (recurrence)",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A loan of \\$8000 is charged 12% p.a. interest, compounded monthly, with \\$300 repaid at the end of each month. What is the balance after 2 months, in dollars? Type the number only.",
+    "numeric": {
+      "answers": [
+        "7557.80",
+        "7557.8"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "Monthly rate 1%. After 1 month: $8000 \\times 1.01 - 300 = 7780$. After 2 months: $7780 \\times 1.01 - 300 = 7557.80$."
+  },
+  {
+    "id": "HSCM-D-105",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Speed, distance and time",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "rateProblems",
+    "stem": "A bus travels 330 km at an average speed of 88 km/h. How many hours does the trip take? Give a decimal. Type the number only.",
+    "numeric": {
+      "answers": [
+        "3.75"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "Time = distance ÷ speed $= 330 \\div 88 = 3.75$ hours (3 hours 45 minutes)."
+  },
+  {
+    "id": "HSCM-D-106",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Source and sink",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a flow network, what is the sink?",
+    "options": [
+      "The vertex where all flow ends",
+      "The vertex where all flow starts",
+      "The edge with the smallest capacity",
+      "The edge with the largest capacity"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Flow starts at the source and ends at the sink. Edges, not vertices, have capacities."
+  },
+  {
+    "id": "HSCM-D-107",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Direction of association",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "As the number of hours of daylight increases, household heating costs tend to decrease. Which is the most likely value of $r$?",
+    "options": [
+      "0.78",
+      "-0.78",
+      "0",
+      "1.78"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "One variable rises as the other falls, so r is negative. r can never be more than 1, which rules out 1.78."
+  },
+  {
+    "id": "HSCM-D-108",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Probability of at least one",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A fair coin is tossed twice. What is the probability of getting at least one head? Give a decimal. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.75",
+        "3/4"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "The outcomes HH, HT, TH and TT are equally likely, and only TT has no head, so $1 - \\frac{1}{4} = 0.75$."
+  },
+  {
+    "id": "HSCM-D-109",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Solving a linear model",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "A candle 30 cm tall burns down so that its height after $t$ hours is $h = 30 - 2.5t$ cm. After how many hours is it 12.5 cm tall? Type the number only.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$30 - 2.5t = 12.5$, so $2.5t = 17.5$ and $t = 7$ hours."
+  },
+  {
+    "id": "HSCM-D-110",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Comparing compounding",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which savings account gives the greater return over a year?",
+    "options": [
+      "5.1% p.a., compounded annually",
+      "They give the same return",
+      "5% p.a., compounded monthly",
+      "It depends on the amount saved"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "5% compounded monthly grows by $(1 + \\frac{0.05}{12})^{12} = 1.05116$, an effective 5.116%, a little more than 5.1%. The amount does not change which is better."
+  },
+  {
+    "id": "HSCM-D-111",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Area from a radial survey",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A radial survey of a triangular field measures 45 m and 52 m from the survey point to two corners, with 64° between the radials. Find the area, to the nearest square metre. Type the number only.",
+    "numeric": {
+      "answers": [
+        "1052"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true,
+    "explanation": "$A = \\frac{1}{2} \\times 45 \\times 52 \\times \\sin 64^{\\circ} = 1051.6$ m², so 1052 m²."
+  },
+  {
+    "id": "HSCM-D-112",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Earliest start time",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A renovation has these activities.\n\n| Activity | Duration (days) | Immediate prerequisites |\n|---|---|---|\n| A | 3 | none |\n| B | 5 | none |\n| C | 4 | A |\n| D | 2 | A |\n| E | 6 | B, C |\n| F | 3 | D |\n| G | 5 | E |\n| H | 4 | F |\n| I | 2 | G, H |\n\nWhat is the earliest start time (EST) of activity E, in days? Type the number only.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "E needs both B (finished at day 5) and C (finished at day 3 + 4 = 7). It waits for the later one, so its EST is day 7."
+  },
+  {
+    "id": "HSCM-D-113",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Choosing a prediction method",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which condition makes a prediction from a least-squares line most trustworthy?",
+    "options": [
+      "A weak correlation and a value inside the data range",
+      "A strong correlation and a value far outside the data range",
+      "A correlation close to 0",
+      "A strong correlation and a value inside the data range"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Predictions are best when the points sit close to the line (strong r) and the value is interpolated, not extrapolated."
+  },
+  {
+    "id": "HSCM-D-114",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Properties of a normal distribution",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which statement about a normal distribution is true?",
+    "options": [
+      "The mean, median and mode are equal",
+      "The mean is greater than the median",
+      "Most scores lie in the tails",
+      "The graph is skewed to the right"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A normal distribution is bell-shaped and symmetric about the mean, so the mean, median and mode coincide at its centre."
+  },
+  {
+    "id": "HSCM-D-115",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsAlgebra",
+    "skill": "Changing the subject",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "solveX",
+    "stem": "Make $r$ the subject of $A = \\pi r^2$, for $r > 0$.",
+    "options": [
+      "$r = \\frac{A}{2\\pi}$",
+      "$r = \\sqrt{\\frac{A}{\\pi}}$",
+      "$r = \\frac{\\sqrt{A}}{\\pi^2}$",
+      "$r = \\sqrt{A\\pi}$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Divide both sides by $\\pi$ to get $r^2 = \\frac{A}{\\pi}$, then take the square root. $\\frac{A}{2\\pi}$ treats the square as a doubling."
+  },
+  {
+    "id": "HSCM-D-116",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsFinance",
+    "skill": "Annuity recurrence relation",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A savings plan follows $A_{n+1} = A_n(1.02) + 1000$, with $A_0 = 0$. Find $A_3$, in dollars. Type the number only.",
+    "numeric": {
+      "answers": [
+        "3060.40",
+        "3060.4"
+      ],
+      "tolerance": 0.01
+    },
+    "calculator": true,
+    "explanation": "$A_1 = 1000$, $A_2 = 1000 \\times 1.02 + 1000 = 2020$, $A_3 = 2020 \\times 1.02 + 1000 = 3060.40$."
+  },
+  {
+    "id": "HSCM-D-117",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsMeasure",
+    "skill": "Distance between points from bearings",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "From a survey point O, marker A is 200 m away on a bearing of 020°T and marker B is 150 m away on a bearing of 145°T. How far apart are A and B, to the nearest metre? Type the number only.",
+    "numeric": {
+      "answers": [
+        "311"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true,
+    "explanation": "Angle AOB $= 145^{\\circ} - 20^{\\circ} = 125^{\\circ}$. $AB^2 = 200^2 + 150^2 - 2 \\times 200 \\times 150 \\cos 125^{\\circ} = 96915$, so $AB = 311.3$ m, about 311 m."
+  },
+  {
+    "id": "HSCM-D-118",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsNetworks",
+    "skill": "Flow through a vertex",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a flow network, how does the flow into a vertex (other than the source or sink) compare with the flow out of it?",
+    "options": [
+      "The flow in is greater",
+      "The flow out is greater",
+      "They are equal",
+      "It depends on the capacities"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Nothing is stored or created at a vertex, so whatever flows in must flow out. Capacities limit how much flows, not this balance."
+  },
+  {
+    "id": "HSCM-D-119",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsBivariate",
+    "skill": "Gradient between two predictions",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "slope",
+    "stem": "A least-squares line predicts $y = 52$ when $x = 10$ and $y = 76$ when $x = 18$. What is the gradient of the line? Type the number only.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Gradient $= \\frac{76 - 52}{18 - 10} = \\frac{24}{8} = 3$."
+  },
+  {
+    "id": "HSCM-D-120",
+    "section": "s2",
+    "test": 0,
+    "module": 1,
+    "domain": "hscmathsProbability",
+    "skill": "Meaning of a z-score",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does a z-score of 0 tell you about a score?",
+    "options": [
+      "It is the lowest score",
+      "It is 1 standard deviation above the mean",
+      "It is not normally distributed",
+      "It is equal to the mean"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "A z-score measures distance from the mean in standard deviations, so 0 means the score is exactly the mean."
+  }
+]

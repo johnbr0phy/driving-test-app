@@ -1,0 +1,331 @@
+[
+ {
+  "test": 1,
+  "skill": "Stroke",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client suddenly has a drooping face on one side, slurred speech and right arm weakness. What should the nurse do first?",
+  "options": [
+   "Note the time and activate the stroke response",
+   "Give ASA 325 mg by mouth",
+   "Offer water to check swallowing",
+   "Let the client rest and recheck in 1 hour"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "These are signs of stroke, and treatment depends on how long ago symptoms began, so the time is noted and help is called right away. Nothing is given by mouth until swallowing is screened and bleeding is ruled out."
+ },
+ {
+  "test": 1,
+  "skill": "Anaphylaxis",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "Minutes after an IV antibiotic starts, a client has hives, wheezing and a BP of 82/48 mm Hg. After stopping the infusion, what should the nurse give first?",
+  "options": [
+   "Epinephrine IM per protocol",
+   "Diphenhydramine PO",
+   "Salbutamol by inhaler",
+   "Acetaminophen PO"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "This is anaphylaxis, and IM epinephrine in the mid-outer thigh is the first-line treatment. Antihistamines and bronchodilators are add-ons that do not treat shock."
+ },
+ {
+  "test": 1,
+  "skill": "Hypoglycemia",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A client with diabetes is found unresponsive with a capillary glucose of 2.1 mmol/L. There is IV access. What should the nurse expect to give?",
+  "options": [
+   "IV dextrose per protocol",
+   "Orange juice by mouth",
+   "Rapid-acting insulin subcut",
+   "Glucose tablets under the tongue"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "An unresponsive client cannot swallow safely, so glucose is given by IV, or glucagon if there is no IV. Anything by mouth could be aspirated."
+ },
+ {
+  "test": 1,
+  "skill": "Heart failure",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "Which findings suggest worsening heart failure? Select all that apply.",
+  "options": [
+   "Weight up 2 kg in 2 days",
+   "New crackles in both lungs",
+   "Needing more pillows to sleep",
+   "Clear lungs and steady weight",
+   "Ankles less swollen than yesterday"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Rapid weight gain, crackles and needing to sleep propped up point to fluid overload. Clear lungs, steady weight and less edema show improvement."
+ },
+ {
+  "test": 1,
+  "skill": "COPD",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with COPD has an SpO2 of 86% on room air. The order is oxygen to keep the SpO2 between 88% and 92%. What should the nurse do?",
+  "options": [
+   "Start low-flow oxygen and titrate to the target",
+   "Give 100% oxygen by non-rebreather mask",
+   "Withhold oxygen to avoid suppressing breathing",
+   "Keep the SpO2 above 98%"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Some clients with COPD retain carbon dioxide when given too much oxygen, so oxygen is given and adjusted to the ordered range. Hypoxia should never go untreated."
+ },
+ {
+  "test": 1,
+  "skill": "Burns",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A client is brought in after a house fire with singed nasal hair, soot around the mouth and a hoarse voice. What is the priority?",
+  "options": [
+   "Airway, because swelling may close it",
+   "Calculating the burn size",
+   "Cleaning the burns",
+   "Pain medication"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Singed nasal hair, soot and hoarseness suggest an inhalation injury, and airway swelling can progress quickly. The airway comes before fluids, wound care and pain."
+ },
+ {
+  "test": 1,
+  "skill": "Hyperkalemia",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A client with kidney failure has a potassium of 6.8 mmol/L. Which order does the nurse expect to protect the heart first?",
+  "options": [
+   "IV calcium gluconate",
+   "Oral potassium chloride",
+   "IV potassium in normal saline",
+   "A high-potassium diet"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "IV calcium stabilizes the heart muscle within minutes while other treatments, such as insulin with dextrose, move potassium into cells. Giving potassium would worsen the problem."
+ },
+ {
+  "test": 1,
+  "skill": "Seizures",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client has a generalized tonic-clonic seizure while sitting in a chair. What should the nurse do?",
+  "options": [
+   "Ease the client to the floor and turn on the side",
+   "Hold the client's arms and legs still",
+   "Put a padded tongue blade in the mouth",
+   "Give oral fluids as soon as it ends"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Lowering the client to the floor and turning onto the side prevents injury and helps drain secretions. Restraining movement and putting objects in the mouth cause injury."
+ },
+ {
+  "test": 2,
+  "skill": "Acute coronary syndrome",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client reports crushing chest pain spreading to the jaw, with nausea and sweating. What should the nurse do first?",
+  "options": [
+   "Stay with the client and call for help",
+   "Ask the client to walk to the bathroom",
+   "Wait to see whether the pain passes",
+   "Offer a meal to settle the nausea"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "These are signs of a heart attack. The nurse stays, calls for help and starts the agency's chest pain protocol, which usually includes an ECG, oxygen if needed, ASA and nitroglycerin as ordered."
+ },
+ {
+  "test": 2,
+  "skill": "Diabetic ketoacidosis",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A client with type 1 diabetes has had vomiting for a day. Which finding suggests diabetic ketoacidosis?",
+  "options": [
+   "Deep, rapid breathing with a fruity breath odour",
+   "Shakiness and a glucose of 3.1 mmol/L",
+   "Slow pulse and moist skin",
+   "Sudden weight gain and edema"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "In DKA, the body breaks down fat for energy, producing ketones and acidosis; the client breathes deeply and fast (Kussmaul breathing) with fruity breath. A low glucose is hypoglycemia."
+ },
+ {
+  "test": 2,
+  "skill": "Asthma",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A child with an asthma attack had loud wheezing an hour ago. Now the child is drowsy, the chest sounds quiet and the SpO2 is 87%. What does this mean?",
+  "options": [
+   "Breathing is getting worse and needs urgent help",
+   "The attack is ending and the child is tired",
+   "The inhaler has fully worked",
+   "The child is falling asleep normally"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A silent chest means very little air is moving. With drowsiness and low oxygen, it signals respiratory failure, an emergency."
+ },
+ {
+  "test": 2,
+  "skill": "Shock",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "A client is bleeding after surgery. Which findings are early signs of hypovolemic shock? Select all that apply.",
+  "options": [
+   "Heart rate rising from 80 to 115/min",
+   "Restlessness and anxiety",
+   "Cool, clammy skin",
+   "Slow, bounding pulse",
+   "Warm, dry skin"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "The body responds to blood loss with a fast heart rate, cool skin from vasoconstriction and restlessness from reduced brain perfusion. Blood pressure often drops later."
+ },
+ {
+  "test": 2,
+  "skill": "Head injury",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "After a fall, a client's level of consciousness worsens and one pupil is larger than the other. What does this suggest?",
+  "options": [
+   "Rising intracranial pressure",
+   "Expected effect of pain medication",
+   "Mild concussion only",
+   "Dehydration"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Declining consciousness and an unequal pupil are signs of rising intracranial pressure, such as from a bleed, and need urgent reporting."
+ },
+ {
+  "test": 2,
+  "skill": "Fluid volume deficit",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "An older client with diarrhea for 3 days has dry mucous membranes and dark urine. Which other finding fits fluid volume deficit?",
+  "options": [
+   "Heart rate 112/min, dizzy on standing",
+   "Crackles heard in both lungs",
+   "Pitting edema of both ankles",
+   "Bounding pulse and high BP"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Fluid loss lowers circulating volume, so the heart speeds up and blood pressure falls on standing. Crackles, edema and a bounding pulse mean fluid overload."
+ },
+ {
+  "test": 2,
+  "skill": "Fractures",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client fell on the ice and has a deformed, painful forearm. What should the nurse do first?",
+  "options": [
+   "Splint it as found and check circulation",
+   "Straighten the arm before splinting it",
+   "Apply heat to the arm to ease the pain",
+   "Have the client wiggle the fingers hard"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A suspected fracture is splinted as found, with circulation, movement and sensation checked below it. Straightening it can damage nerves and vessels, and ice, not heat, is used."
+ },
+ {
+  "test": 2,
+  "skill": "Respiratory distress",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with pneumonia becomes more short of breath. Which position should the nurse use first?",
+  "options": [
+   "High Fowler's, sitting upright",
+   "Flat on the back",
+   "Trendelenburg, head down",
+   "Prone, flat on the stomach"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Sitting upright lets the diaphragm move down and the lungs expand, easing breathing while the nurse checks oxygen and reports the change."
+ },
+ {
+  "test": 0,
+  "skill": "Hypothermia",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "An older adult found outside in winter has a temperature of 33.5 °C and is shivering and confused. What should the nurse do?",
+  "options": [
+   "Remove wet clothes and use warm blankets",
+   "Rub the arms and legs vigorously",
+   "Place the client in a hot bath right away",
+   "Give a warm alcoholic drink to sip"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Removing wet clothing and gradual rewarming with blankets and warm IV fluids if ordered are safest. Rubbing limbs, hot baths and alcohol can cause rhythm problems or burns."
+ },
+ {
+  "test": 0,
+  "skill": "Sepsis",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A client on the ward meets the agency's sepsis screening criteria. Which order does the nurse expect within the first hour?",
+  "options": [
+   "Blood cultures before IV antibiotics",
+   "Antibiotics by mouth after supper",
+   "Fluid restriction to 1 L a day",
+   "A repeat temperature in 4 hours"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Sepsis care is time-critical: blood cultures are drawn and IV antibiotics and fluids started within the first hour."
+ },
+ {
+  "test": 0,
+  "skill": "Autonomic dysreflexia",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A client with a spinal cord injury at T4 has a pounding headache, flushed face and a BP of 198/110 mm Hg. What should the nurse do first?",
+  "options": [
+   "Sit the client up and check for a full bladder",
+   "Lay the client flat and raise the legs",
+   "Give a sedative to relieve the headache",
+   "Recheck the BP in 1 hour"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "This is autonomic dysreflexia, triggered by a stimulus below the injury, most often a full bladder. Sitting up lowers the BP, and the cause is found and removed."
+ }
+]

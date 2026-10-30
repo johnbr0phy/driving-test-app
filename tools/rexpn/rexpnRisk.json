@@ -1,0 +1,402 @@
+[
+ {
+  "test": 1,
+  "skill": "Laboratory values",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Which laboratory result should the nurse report to the health care provider right away?",
+  "options": [
+   "Potassium 6.2 mmol/L",
+   "Sodium 139 mmol/L",
+   "Fasting glucose 5.4 mmol/L",
+   "Hemoglobin 142 g/L"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Normal potassium is about 3.5 to 5.0 mmol/L, and 6.2 can cause dangerous dysrhythmias. The other values are within normal ranges."
+ },
+ {
+  "test": 1,
+  "skill": "Laboratory values",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client receiving chemotherapy has a platelet count of 18 × 10⁹/L. Which action is most important?",
+  "options": [
+   "Use bleeding precautions and avoid injections",
+   "Encourage brisk walking twice daily",
+   "Offer a firm toothbrush for oral care",
+   "Take a rectal temperature every 4 hours"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Normal platelets are about 150 to 400 × 10⁹/L, so 18 means a high bleeding risk. The nurse avoids injections and rectal procedures, uses a soft toothbrush and prevents falls."
+ },
+ {
+  "test": 1,
+  "skill": "Post-procedure care",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client had a colonoscopy 30 minutes ago. Which finding is expected?",
+  "options": [
+   "Gas and mild abdominal cramping",
+   "Rigid, board-like abdomen",
+   "Large amounts of bright red blood per rectum",
+   "Temperature of 38.9 °C"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Air is used to inflate the bowel, so gas and cramping are expected. A rigid abdomen, heavy bleeding or fever may mean perforation or bleeding and are reported."
+ },
+ {
+  "test": 1,
+  "skill": "Postoperative complications",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "On the second day after hip surgery, a client suddenly becomes short of breath with chest pain, a heart rate of 118/min and an SpO2 of 86%. What should the nurse suspect?",
+  "options": [
+   "Pulmonary embolism",
+   "Atelectasis",
+   "Wound infection",
+   "Paralytic ileus"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Sudden breathlessness, chest pain, a fast heart rate and low oxygen after orthopedic surgery suggest a pulmonary embolism, an emergency. The nurse raises the head of the bed, gives oxygen and calls for help."
+ },
+ {
+  "test": 1,
+  "skill": "Nasogastric tubes",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "Which method is most reliable at the bedside for checking that a newly inserted nasogastric tube is in the stomach before an X-ray result is available?",
+  "options": [
+   "Testing the pH of aspirated fluid",
+   "Listening for a whoosh of air over the stomach",
+   "Placing the tube end in a cup of water",
+   "Asking the client whether it feels comfortable"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Gastric aspirate usually has a pH of 5.5 or less. The air bolus and water-bubble tests are unreliable, and an X-ray confirms placement of a new tube before feeding, per policy."
+ },
+ {
+  "test": 1,
+  "skill": "Preoperative care",
+  "difficulty": 1,
+  "format": "multi",
+  "stem": "Which items should the nurse check on the preoperative checklist before a client goes to the operating room? Select all that apply.",
+  "options": [
+   "Signed consent is on the chart",
+   "Identification and allergy bands are on",
+   "Time of last food and fluid is recorded",
+   "Dentures and jewellery are removed",
+   "Family has signed the client's consent"
+  ],
+  "correct": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explanation": "Consent, identification, fasting status and removing dentures and jewellery protect the client in surgery. A capable client signs their own consent."
+ },
+ {
+  "test": 1,
+  "skill": "Cardiac catheterization",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client had a cardiac catheterization through the femoral artery 1 hour ago. Which finding should the nurse report immediately?",
+  "options": [
+   "A growing lump at the insertion site",
+   "Pulses felt in both feet",
+   "Client asks for a drink of water",
+   "Site dressing is dry and intact"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "An expanding lump suggests a hematoma from arterial bleeding. The nurse applies direct pressure above the site and calls for help. Present foot pulses and a dry dressing are expected."
+ },
+ {
+  "test": 1,
+  "skill": "Arterial blood gases",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "| Arterial blood gas | Result |\n|---|---|\n| pH | 7.29 |\n| PaCO2 | 58 mm Hg |\n| HCO3 | 25 mmol/L |",
+  "stem": "A client with COPD is drowsy. The arterial blood gas results are shown. How should the nurse interpret them?",
+  "options": [
+   "Respiratory acidosis",
+   "Respiratory alkalosis",
+   "Metabolic acidosis",
+   "Metabolic alkalosis"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The pH is low (normal 7.35 to 7.45) and the PaCO2 is high (normal 35 to 45 mm Hg) with a normal bicarbonate, so carbon dioxide retention is causing respiratory acidosis."
+ },
+ {
+  "test": 1,
+  "skill": "Orthostatic vital signs",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client's BP is 128/76 mm Hg lying down and 102/64 mm Hg after 1 minute standing, and the client feels dizzy. What should the nurse do?",
+  "options": [
+   "Have the client sit and report the drop",
+   "Encourage the client to walk the hallway",
+   "Retake the BP lying down in 4 hours",
+   "Document the readings as normal"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A drop of 20 mm Hg or more systolic on standing, with dizziness, is orthostatic hypotension and a fall risk. The client sits or lies down and the finding is reported."
+ },
+ {
+  "test": 1,
+  "skill": "Glycated hemoglobin",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with type 2 diabetes has an A1C of 9.2%. What does this result tell the nurse?",
+  "options": [
+   "Blood glucose has been high over the past 3 months",
+   "The client was hypoglycemic this morning",
+   "The client's diabetes is well controlled",
+   "The client has developed kidney disease"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "A1C reflects average glucose over about 3 months. Diabetes Canada's usual target is 7.0% or less, so 9.2% shows poor control and is reported for a plan review."
+ },
+ {
+  "test": 2,
+  "skill": "Laboratory values",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client's morning bloodwork shows sodium 126 mmol/L. Which finding should the nurse watch for?",
+  "options": [
+   "Confusion and headache",
+   "Bradycardia and flushing",
+   "Bone pain and kidney stones",
+   "Peaked T waves on the monitor"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Normal sodium is about 135 to 145 mmol/L. Low sodium shifts water into brain cells, causing headache, confusion and, if severe, seizures."
+ },
+ {
+  "test": 2,
+  "skill": "Laboratory values",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client's white blood cell count is 16.5 × 10⁹/L. What does this most likely indicate?",
+  "options": [
+   "Infection or inflammation",
+   "Bleeding risk",
+   "Dehydration",
+   "Anemia"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Normal WBC is about 4 to 11 × 10⁹/L. A high count usually reflects infection or inflammation, so the nurse looks for a source and reports it."
+ },
+ {
+  "test": 2,
+  "skill": "Kidney function",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A client's creatinine rose from 80 to 210 µmol/L over 2 days while receiving gentamicin. What should the nurse do?",
+  "options": [
+   "Report the rise before the next dose",
+   "Give the next dose early",
+   "Encourage the client to limit fluids",
+   "Recheck the creatinine in a week"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Gentamicin can damage the kidneys, and a creatinine that more than doubles suggests acute kidney injury. The prescriber needs to know before another dose is given."
+ },
+ {
+  "test": 2,
+  "skill": "Thyroidectomy",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "The day after a thyroidectomy, a client reports tingling around the mouth and in the fingers. What should the nurse suspect?",
+  "options": [
+   "Low calcium from parathyroid injury",
+   "High potassium from kidney failure",
+   "Normal effect of the anesthetic",
+   "Thyroid storm"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The parathyroid glands can be bruised or removed during thyroid surgery, and low calcium causes tingling around the mouth and in the fingers, which can progress to tetany."
+ },
+ {
+  "test": 2,
+  "skill": "Postoperative care",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "Which instruction helps prevent atelectasis after abdominal surgery?",
+  "options": [
+   "Use the incentive spirometer often while awake",
+   "Stay flat in bed for the first 48 hours",
+   "Avoid coughing to protect the incision",
+   "Limit fluids to keep the secretions thin"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Deep breathing with an incentive spirometer, splinted coughing and early walking keep the alveoli open. Lying flat, avoiding coughing and limiting fluids increase the risk."
+ },
+ {
+  "test": 2,
+  "skill": "Neurovascular checks",
+  "difficulty": 2,
+  "format": "multi",
+  "stem": "The nurse is doing neurovascular checks on a client with a new leg cast. Which findings should be reported? Select all that apply.",
+  "options": [
+   "Pain not relieved by the ordered analgesic",
+   "Capillary refill of 5 seconds in the toes",
+   "Numbness and tingling in the foot",
+   "Toes warm and pink",
+   "Able to wiggle the toes"
+  ],
+  "correct": [
+   0,
+   1,
+   2
+  ],
+  "explanation": "Unrelieved pain, slow capillary refill and numbness can signal compartment syndrome, an emergency. Warm, pink, moving toes are normal."
+ },
+ {
+  "test": 2,
+  "skill": "Diagnostic tests",
+  "difficulty": 1,
+  "format": "single",
+  "stem": "A client is scheduled for an abdominal ultrasound of the gallbladder. What preparation does the nurse expect?",
+  "options": [
+   "Nothing to eat for several hours before",
+   "A full bowel preparation the night before",
+   "An iodine allergy test",
+   "A full bladder after drinking 1 L of water"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Fasting lets the gallbladder fill with bile so it can be seen. Bowel prep is for colonoscopy, and a full bladder is needed for pelvic ultrasound."
+ },
+ {
+  "test": 2,
+  "skill": "Vital sign changes",
+  "difficulty": 3,
+  "format": "single",
+  "passage": "| Time | BP | Heart rate | Respirations | Temperature |\n|---|---|---|---|---|\n| 0800 | 126/78 | 84 | 16 | 37.2 °C |\n| 1200 | 112/70 | 102 | 22 | 38.4 °C |\n| 1600 | 94/58 | 118 | 26 | 38.9 °C |",
+  "stem": "A client is admitted with a kidney infection. The vital signs over the day are shown. What do these trends most suggest?",
+  "options": [
+   "Developing sepsis",
+   "Expected response to antibiotics",
+   "Anxiety about the admission",
+   "Pain from the infection only"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Rising temperature, heart rate and respirations with a falling blood pressure in a client with infection suggest sepsis. It needs urgent reporting and treatment."
+ },
+ {
+  "test": 2,
+  "skill": "Laboratory values",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client with diabetes has a capillary blood glucose of 3.2 mmol/L and is awake and able to swallow. What should the nurse do first?",
+  "options": [
+   "Give 15 g of fast-acting carbohydrate",
+   "Give the scheduled insulin dose",
+   "Recheck the glucose in 1 hour",
+   "Give a full meal tray right away"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Hypoglycemia is a glucose below 4.0 mmol/L. An alert client gets 15 g of fast-acting carbohydrate, such as juice or glucose tablets, with a recheck in 15 minutes."
+ },
+ {
+  "test": 2,
+  "skill": "Anticoagulant monitoring",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client is on a continuous heparin infusion. Which test does the nurse expect to be used to adjust the dose?",
+  "options": [
+   "aPTT",
+   "INR",
+   "Platelet count only",
+   "A1C"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Unfractionated heparin is monitored with the aPTT (or an anti-Xa level in some agencies). The INR monitors warfarin."
+ },
+ {
+  "test": 0,
+  "skill": "Laboratory values",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client's hemoglobin is 72 g/L. Which finding does the nurse expect?",
+  "options": [
+   "Fatigue and breathlessness on exertion",
+   "Flushed, ruddy skin on the face",
+   "A slow, steady heart rate",
+   "High blood pressure and headache"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Normal hemoglobin is about 120 to 160 g/L in women and 140 to 180 g/L in men. Severe anemia reduces oxygen delivery, causing fatigue, breathlessness and a fast heart rate."
+ },
+ {
+  "test": 0,
+  "skill": "Post-procedure care",
+  "difficulty": 2,
+  "format": "single",
+  "stem": "A client had a bronchoscopy with throat anesthetic 1 hour ago. Before offering a drink, what should the nurse check?",
+  "options": [
+   "That the gag reflex has returned",
+   "That the client has voided",
+   "That bowel sounds are present",
+   "That the client can walk unaided"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "The throat is numbed for the procedure, so fluids could be aspirated until the gag and swallow reflexes return."
+ },
+ {
+  "test": 0,
+  "skill": "Chest tubes",
+  "difficulty": 3,
+  "format": "single",
+  "stem": "A client's chest tube becomes disconnected from the drainage system. What should the nurse do first?",
+  "options": [
+   "Place the tube end in sterile water",
+   "Clamp the tube for several hours",
+   "Pull the tube out of the chest",
+   "Leave it open and call the provider"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Putting the end 2 to 3 cm under sterile water makes a temporary water seal so air cannot enter the chest. Prolonged clamping can cause a tension pneumothorax, and only the provider removes the tube."
+ }
+]

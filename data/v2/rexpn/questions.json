@@ -1,0 +1,4476 @@
+[
+  {
+    "id": "REXPN-T1-001",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Establishing priorities",
+    "stem": "The nurse receives report on four clients on a medical unit. Which client should the nurse see first?",
+    "options": [
+      "Client with cellulitis whose temperature is 37.9 °C",
+      "Client with a hip fracture who rates pain 4 of 10",
+      "Client with pneumonia whose SpO2 is now 87% on 2 L/min",
+      "Client with diabetes whose fasting glucose is 8.2 mmol/L"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An SpO2 of 87% on oxygen is a breathing problem that can worsen quickly, so it comes first. The slightly high glucose, moderate pain and low-grade temperature need follow-up but are not immediately threatening."
+  },
+  {
+    "id": "REXPN-T1-002",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "IV flow rate",
+    "stem": "A client is to receive 1000 mL of 0.9% sodium chloride over 8 hours by gravity. The tubing drop factor is 15 gtt/mL. How many gtt/min should the nurse set? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "31"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "1000 mL over 480 minutes, times 15 gtt/mL, is 31.25 gtt/min, which rounds to 31. Forgetting to convert hours to minutes gives an impossible rate."
+  },
+  {
+    "id": "REXPN-T1-003",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "C. difficile",
+    "stem": "The nurse leaves the room of a client with Clostridioides difficile infection. How should the nurse clean their hands?",
+    "options": [
+      "Alcohol-based hand rub",
+      "Antiseptic wipes",
+      "Soap and water",
+      "Removing gloves is enough"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "C. difficile spores are not killed by alcohol, so they must be physically washed off with soap and water. Gloves reduce contamination but hand hygiene is still needed after removing them."
+  },
+  {
+    "id": "REXPN-T1-004",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Therapeutic communication",
+    "stem": "A client scheduled for a mastectomy says, \"I keep wondering what my husband will think.\" Which response is most therapeutic?",
+    "options": [
+      "\"Tell me more about what worries you.\"",
+      "\"Why do you think he will be upset?\"",
+      "\"Many women feel fine after this surgery.\"",
+      "\"I'm sure he will love you just the same.\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An open invitation lets the client explore her feelings. False reassurance shuts the conversation down, and \"why\" questions can sound judgmental."
+  },
+  {
+    "id": "REXPN-T1-005",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laboratory values",
+    "stem": "Which laboratory result should the nurse report to the health care provider right away?",
+    "options": [
+      "Potassium 6.2 mmol/L",
+      "Sodium 139 mmol/L",
+      "Hemoglobin 142 g/L",
+      "Fasting glucose 5.4 mmol/L"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Normal potassium is about 3.5 to 5.0 mmol/L, and 6.2 can cause dangerous dysrhythmias. The other values are within normal ranges."
+  },
+  {
+    "id": "REXPN-T1-006",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Infant development",
+    "stem": "Which finding is expected in a healthy 6-month-old infant?",
+    "options": [
+      "Rolls from front to back",
+      "Uses a pincer grasp to pick up cereal",
+      "Says three or four words",
+      "Walks while holding furniture"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rolling over is expected by about 6 months. Cruising, first words and a pincer grasp usually appear between 9 and 12 months."
+  },
+  {
+    "id": "REXPN-T1-007",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Pressure injury prevention",
+    "stem": "A client who is bedridden has a Braden score of 12. Which measures help prevent pressure injuries? Select all that apply.",
+    "options": [
+      "Keep the skin clean and dry",
+      "Keep the head of the bed at 60 degrees all day",
+      "Use a pressure-redistributing mattress",
+      "Massage reddened bony areas firmly",
+      "Reposition at least every 2 hours"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "A Braden score of 12 means high risk. Regular turning, a pressure-redistributing surface and dry skin protect it; massaging red areas damages tissue, and a high head of bed increases shear on the sacrum."
+  },
+  {
+    "id": "REXPN-T1-008",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stroke",
+    "stem": "A client suddenly has a drooping face on one side, slurred speech and right arm weakness. What should the nurse do first?",
+    "options": [
+      "Let the client rest and recheck in 1 hour",
+      "Offer water to check swallowing",
+      "Note the time and activate the stroke response",
+      "Give ASA 325 mg by mouth"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "These are signs of stroke, and treatment depends on how long ago symptoms began, so the time is noted and help is called right away. Nothing is given by mouth until swallowing is screened and bleeding is ruled out."
+  },
+  {
+    "id": "REXPN-T1-009",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Assigning tasks to UCPs",
+    "stem": "Which tasks can the nurse assign to a personal support worker (PSW) caring for stable residents in long-term care? Select all that apply.",
+    "options": [
+      "Assess a resident's new pressure area",
+      "Record a resident's fluid intake",
+      "Give a resident a scheduled oral medication",
+      "Help a resident with a tub bath",
+      "Feed a resident who has no swallowing difficulty",
+      "Teach a resident how to use an inhaler"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Bathing, feeding a client who swallows safely and recording intake are routine supportive tasks for an unregulated care provider. Assessment, teaching and giving medications need nursing knowledge and stay with the nurse."
+  },
+  {
+    "id": "REXPN-T1-010",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Dosage calculation",
+    "stem": "Metoprolol 12.5 mg PO is ordered. The tablets on hand are 25 mg and scored. How many tablets should the nurse give? Record your answer to one decimal place.",
+    "numeric": {
+      "answers": [
+        "0.5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "12.5 mg divided by 25 mg per tablet is 0.5, or half a scored tablet."
+  },
+  {
+    "id": "REXPN-T1-011",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Airborne precautions",
+    "stem": "A client is admitted with suspected active pulmonary tuberculosis. Which precaution should the nurse use when entering the room?",
+    "options": [
+      "A surgical mask on the nurse only",
+      "A gown and gloves only",
+      "A fit-tested N95 respirator",
+      "A surgical mask and face shield"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tuberculosis spreads by the airborne route, so staff wear a fit-tested N95 respirator and the client stays in an airborne infection isolation room with the door closed."
+  },
+  {
+    "id": "REXPN-T1-012",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Informed consent",
+    "stem": "A client signed a consent form for a bronchoscopy yesterday. In the procedure area the client says, \"I'm not sure I want this done anymore.\" What should the nurse do?",
+    "options": [
+      "Ask the client's spouse to confirm the consent",
+      "Hold the procedure and tell the health care provider",
+      "Give the ordered sedation to ease the client's anxiety",
+      "Remind the client that the form is already signed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Consent can be withdrawn at any time, and a signature does not override a capable client's change of mind. The nurse stops and informs the provider, who discusses the procedure with the client again."
+  },
+  {
+    "id": "REXPN-T1-013",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Suicide risk",
+    "stem": "A client with depression says, \"Soon none of this will matter.\" What should the nurse do first?",
+    "options": [
+      "Leave the client alone to rest",
+      "Tell the client that things will get better",
+      "Ask directly whether the client is thinking of suicide",
+      "Change the subject to something more cheerful"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Indirect statements can signal suicidal thinking. Asking directly does not plant the idea; it opens the conversation and guides the next steps for safety."
+  },
+  {
+    "id": "REXPN-T1-014",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laboratory values",
+    "stem": "A client receiving chemotherapy has a platelet count of 18 × 10⁹/L. Which action is most important?",
+    "options": [
+      "Use bleeding precautions and avoid injections",
+      "Take a rectal temperature every 4 hours",
+      "Offer a firm toothbrush for oral care",
+      "Encourage brisk walking twice daily"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Normal platelets are about 150 to 400 × 10⁹/L, so 18 means a high bleeding risk. The nurse avoids injections and rectal procedures, uses a soft toothbrush and prevents falls."
+  },
+  {
+    "id": "REXPN-T1-015",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Dosage calculation",
+    "stem": "Acetaminophen 480 mg PO is ordered for a child. The oral solution contains 160 mg per 5 mL. How many mL should the nurse give? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "160 mg per 5 mL is 32 mg per mL, and 480 mg divided by 32 mg/mL is 15 mL."
+  },
+  {
+    "id": "REXPN-T1-016",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Confidentiality",
+    "stem": "A visitor tells the nurse, \"I'm her neighbour. Can you tell me why she was admitted?\" How should the nurse respond?",
+    "options": [
+      "\"Since you are a close friend, I can tell you briefly.\"",
+      "\"She was admitted for tests, but I can't say which.\"",
+      "\"Let me check her chart and get back to you.\"",
+      "\"I can't share that, but you are welcome to ask her.\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Health information is shared only with the client's consent or as the law allows. Even confirming the reason in general terms is a breach, so the nurse redirects the visitor to the client."
+  },
+  {
+    "id": "REXPN-T1-017",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Infant nutrition",
+    "stem": "A mother is exclusively breastfeeding her 2-week-old. Which supplement does Health Canada recommend for the baby?",
+    "options": [
+      "Fluoride 0.25 mg daily",
+      "Vitamin D 400 IU daily",
+      "Iron drops 15 mg daily",
+      "Vitamin C 50 mg daily"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Breast milk is low in vitamin D, so breastfed infants receive 400 IU of vitamin D every day from birth. Iron, fluoride and vitamin C are not routine supplements for a healthy newborn."
+  },
+  {
+    "id": "REXPN-T1-018",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Enteral feeding",
+    "stem": "A client receives continuous feeding through a nasogastric tube. Which position lowers the risk of aspiration?",
+    "options": [
+      "Feet raised above the head",
+      "Flat on the left side",
+      "Flat on the back with one pillow",
+      "Head of the bed raised at least 30 degrees"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Keeping the head of the bed at 30 to 45 degrees during feeding and for some time after helps keep feed in the stomach and out of the lungs."
+  },
+  {
+    "id": "REXPN-T1-019",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Anaphylaxis",
+    "stem": "Minutes after an IV antibiotic starts, a client has hives, wheezing and a BP of 82/48 mm Hg. After stopping the infusion, what should the nurse give first?",
+    "options": [
+      "Acetaminophen PO",
+      "Salbutamol by inhaler",
+      "Epinephrine IM per protocol",
+      "Diphenhydramine PO"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "This is anaphylaxis, and IM epinephrine in the mid-outer thigh is the first-line treatment. Antihistamines and bronchodilators are add-ons that do not treat shock."
+  },
+  {
+    "id": "REXPN-T1-020",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Droplet precautions",
+    "stem": "A client has confirmed influenza. Which room arrangement is appropriate?",
+    "options": [
+      "A single room with droplet and contact precautions",
+      "A negative-pressure room with the door open",
+      "Any room, since influenza is not contagious in hospital",
+      "A shared room with a client who has pneumonia"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Influenza spreads by large droplets and contact, so the client needs a single room or a cohort with the same infection, plus a mask and eye protection within 2 metres. Negative pressure is for airborne diseases."
+  },
+  {
+    "id": "REXPN-T1-021",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Dosage calculation",
+    "stem": "Heparin 5000 units subcut is ordered. The vial contains 10 000 units per mL. How many mL should the nurse give? Record your answer to one decimal place.",
+    "numeric": {
+      "answers": [
+        "0.5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "5000 units divided by 10 000 units/mL is 0.5 mL. Heparin is a high-alert drug, so many agencies require an independent double check."
+  },
+  {
+    "id": "REXPN-T1-022",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Right to refuse",
+    "stem": "A capable adult client refuses a scheduled dose of an oral antibiotic. What is the nurse's best first action?",
+    "options": [
+      "Tell the client the infection will get worse",
+      "Ask the client about the reasons for refusing",
+      "Document the dose as given and try again later",
+      "Crush the tablet and mix it into applesauce"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A capable client has the right to refuse. Exploring the reason may reveal something the nurse can fix, such as nausea or a misunderstanding; the refusal is then documented and reported. Hiding medication in food without consent is never acceptable."
+  },
+  {
+    "id": "REXPN-T1-023",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alcohol withdrawal",
+    "stem": "A client who drinks heavily every day was admitted for surgery 24 hours ago. Which finding suggests alcohol withdrawal?",
+    "options": [
+      "Hand tremor, sweating and anxiety",
+      "Warm, flushed skin and slurred speech",
+      "Slow pulse and low blood pressure",
+      "Pinpoint pupils and drowsiness"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Withdrawal usually starts 6 to 24 hours after the last drink, with tremor, sweating, anxiety and a fast pulse. The other findings fit intoxication or opioid effects."
+  },
+  {
+    "id": "REXPN-T1-024",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Post-procedure care",
+    "stem": "A client had a colonoscopy 30 minutes ago. Which finding is expected?",
+    "options": [
+      "Gas and mild abdominal cramping",
+      "Large amounts of bright red blood per rectum",
+      "Rigid, board-like abdomen",
+      "Temperature of 38.9 °C"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Air is used to inflate the bowel, so gas and cramping are expected. A rigid abdomen, heavy bleeding or fever may mean perforation or bleeding and are reported."
+  },
+  {
+    "id": "REXPN-T1-025",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Substitute decision-makers",
+    "stem": "A client with advanced dementia is found incapable of consenting to a feeding tube. Who gives consent for the procedure?",
+    "options": [
+      "The most senior physician on the unit",
+      "The client's substitute decision-maker",
+      "The nurse caring for the client that day",
+      "Any adult relative who visits the client"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When a client is incapable, consent comes from the substitute decision-maker named under provincial law, such as an attorney for personal care or a representative. Who ranks first varies by province, but it is never simply the care team or any visiting relative."
+  },
+  {
+    "id": "REXPN-T1-026",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Least restraint",
+    "stem": "A confused client keeps trying to pull at an IV line. What should the nurse try first?",
+    "options": [
+      "Apply soft wrist restraints to both arms",
+      "Remove the IV and give fluids by mouth",
+      "Ask the provider to order a sedative now",
+      "Hide the site and offer something to hold"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Least-restraint policies require alternatives first: hiding the line, distraction, frequent checks and involving family. Restraints and sedation are last resorts that need an order and close monitoring."
+  },
+  {
+    "id": "REXPN-T1-027",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Insulin",
+    "stem": "A client takes insulin lispro with meals. When should the nurse give the dose?",
+    "options": [
+      "At bedtime with a snack",
+      "2 hours after the meal",
+      "1 hour before the meal",
+      "Within 15 minutes before the meal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lispro is rapid-acting, starting in about 15 minutes, so it is given right before the meal. Giving it an hour early without food risks hypoglycemia."
+  },
+  {
+    "id": "REXPN-T1-028",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prenatal care",
+    "stem": "A client's last menstrual period began on March 10. Using Naegele's rule, what is the estimated date of birth?",
+    "options": [
+      "January 10",
+      "November 17",
+      "December 17",
+      "December 3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Naegele's rule adds 7 days to the first day of the last period and subtracts 3 months: March 10 plus 7 days is March 17, and 3 months back gives December 17."
+  },
+  {
+    "id": "REXPN-T1-029",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Elimination",
+    "stem": "An older client on bed rest has not had a bowel movement in 4 days. Which measure should the nurse encourage first?",
+    "options": [
+      "Limiting fluids to prevent incontinence",
+      "More fluids and fibre, and more activity as allowed",
+      "A daily enema until stools are regular",
+      "Holding stools until a commode is available"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fluids, fibre and movement are the first-line measures for constipation. Regular enemas cause dependence, and limiting fluids makes stools harder."
+  },
+  {
+    "id": "REXPN-T1-030",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hypoglycemia",
+    "stem": "A client with diabetes is found unresponsive with a capillary glucose of 2.1 mmol/L. There is IV access. What should the nurse expect to give?",
+    "options": [
+      "IV dextrose per protocol",
+      "Orange juice by mouth",
+      "Rapid-acting insulin subcut",
+      "Glucose tablets under the tongue"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An unresponsive client cannot swallow safely, so glucose is given by IV, or glucagon if there is no IV. Anything by mouth could be aspirated."
+  },
+  {
+    "id": "REXPN-T1-031",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unsafe practice",
+    "stem": "At the start of a night shift, the nurse notices that a colleague smells strongly of alcohol and is slurring words. What should the nurse do first?",
+    "options": [
+      "Wait until morning and tell the day manager",
+      "Ask the colleague to give only oral medications",
+      "Offer the colleague coffee and keep an eye on them",
+      "Report it to the charge nurse or manager now"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A colleague who may be impaired puts clients at risk and must not provide care, so the nurse reports it immediately to the person in charge. Covering for the colleague or limiting their tasks still exposes clients to harm."
+  },
+  {
+    "id": "REXPN-T1-032",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delirium",
+    "stem": "An 83-year-old with a urinary tract infection became confused over a few hours. Which finding helps the nurse recognize delirium rather than dementia?",
+    "options": [
+      "Sudden onset with attention that varies",
+      "Long-held habits and daily routines",
+      "Gradual memory loss over two years",
+      "The same level of confusion all day long"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Delirium starts suddenly, fluctuates and impairs attention; it often has a treatable cause such as infection. Dementia develops gradually and is more stable from hour to hour."
+  },
+  {
+    "id": "REXPN-T1-033",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Postoperative complications",
+    "stem": "On the second day after hip surgery, a client suddenly becomes short of breath with chest pain, a heart rate of 118/min and an SpO2 of 86%. What should the nurse suspect?",
+    "options": [
+      "Wound infection",
+      "Paralytic ileus",
+      "Pulmonary embolism",
+      "Atelectasis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sudden breathlessness, chest pain, a fast heart rate and low oxygen after orthopedic surgery suggest a pulmonary embolism, an emergency. The nurse raises the head of the bed, gives oxygen and calls for help."
+  },
+  {
+    "id": "REXPN-T1-034",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anticoagulants",
+    "stem": "A client taking warfarin has an INR of 4.6 and bleeding gums. What should the nurse do?",
+    "options": [
+      "Give the warfarin with a glass of milk",
+      "Give the dose and recheck the INR next week",
+      "Hold the warfarin and notify the prescriber",
+      "Double the next day's dose"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An INR well above the usual target of 2 to 3, with bleeding, means too much anticoagulation. The dose is held and the prescriber may order vitamin K."
+  },
+  {
+    "id": "REXPN-T1-035",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Fall prevention",
+    "stem": "Which interventions reduce the risk of falls for an older adult in hospital? Select all that apply.",
+    "options": [
+      "Place the call bell within reach",
+      "Offer toileting on a regular schedule",
+      "Dim the lights completely at night",
+      "Keep the bed in the lowest position",
+      "Use non-slip footwear",
+      "Raise all four bed rails at night"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "explanation": "A low bed, a reachable call bell, non-slip footwear and scheduled toileting address the main causes of falls. Four raised rails are a restraint and can lead to worse falls, and a dark room makes it harder to see."
+  },
+  {
+    "id": "REXPN-T1-036",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hand-off report",
+    "stem": "The nurse uses SBAR to call the health care provider about a client whose urine output has dropped. Which statement belongs in the R (recommendation) part?",
+    "options": [
+      "\"Would you like to order a bladder scan and bloodwork?\"",
+      "\"His output was 60 mL over the last 4 hours.\"",
+      "\"I think he may be dehydrated or retaining urine.\"",
+      "\"Mr. Chen is 72 and had a bowel resection yesterday.\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The recommendation is what the nurse is asking for. The client's history is background, the output figure is part of the situation or assessment, and the nurse's impression of the problem is the assessment."
+  },
+  {
+    "id": "REXPN-T1-037",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cardiac medications",
+    "stem": "Before giving digoxin 0.125 mg, the nurse counts an apical pulse of 52/min. The client's usual rate is 72/min. What should the nurse do?",
+    "options": [
+      "Give the dose and recheck the pulse in 1 hour",
+      "Hold the dose and report the heart rate",
+      "Give half the dose",
+      "Give the dose with food"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Digoxin slows the heart, and a rate below 60/min or a large drop from baseline can signal toxicity. The dose is held and the finding reported."
+  },
+  {
+    "id": "REXPN-T1-038",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Postpartum complications",
+    "stem": "On the first postpartum day, which findings should the nurse report as possible postpartum hemorrhage? Select all that apply.",
+    "options": [
+      "Rubra lochia with a few small clots",
+      "A soft, boggy fundus above the umbilicus",
+      "Soaking a pad in less than an hour",
+      "Fundus firm at the umbilicus",
+      "Heart rate rising to 118/min"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "A boggy fundus, a pad soaked in under an hour and a rising heart rate point to hemorrhage. Dark red lochia with small clots and a firm fundus at the umbilicus are expected on day 1."
+  },
+  {
+    "id": "REXPN-T1-039",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Urinary retention",
+    "stem": "A client has not voided for 7 hours after surgery and has lower abdominal discomfort. What should the nurse do first?",
+    "options": [
+      "Insert an indwelling catheter right away",
+      "Give a laxative to relieve the discomfort",
+      "Restrict fluids until the client voids",
+      "Check the bladder volume with a bladder scanner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A bladder scan confirms retention without the infection risk of a catheter. Non-invasive measures such as privacy and running water are tried, and catheterization follows the order or protocol."
+  },
+  {
+    "id": "REXPN-T1-040",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Heart failure",
+    "stem": "Which findings suggest worsening heart failure? Select all that apply.",
+    "options": [
+      "Ankles less swollen than yesterday",
+      "Needing more pillows to sleep",
+      "Clear lungs and steady weight",
+      "Weight up 2 kg in 2 days",
+      "New crackles in both lungs"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Rapid weight gain, crackles and needing to sleep propped up point to fluid overload. Clear lungs, steady weight and less edema show improvement."
+  },
+  {
+    "id": "REXPN-T1-041",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Documentation",
+    "stem": "The nurse realizes a vital sign entry on a paper flow sheet was charted for the wrong client. How should the nurse correct it?",
+    "options": [
+      "Draw one line through it, initial and date it",
+      "Remove the page and rewrite the flow sheet",
+      "Cover the entry with correction fluid",
+      "Black out the entry completely with a marker"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A single line keeps the original entry readable, and the nurse's initials and date show who made the correction and when. Obscuring or removing entries alters a legal record."
+  },
+  {
+    "id": "REXPN-T1-042",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Dementia care",
+    "stem": "Which approaches help a client with moderate Alzheimer disease at mealtimes? Select all that apply.",
+    "options": [
+      "Offer finger foods the client can eat while walking",
+      "Rush the meal to keep the client focused",
+      "Give one simple instruction at a time",
+      "Serve meals in a quiet setting",
+      "Offer a long menu with many choices"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Finger foods, a calm setting and one-step cues support eating. Many choices overwhelm the client, and rushing increases agitation."
+  },
+  {
+    "id": "REXPN-T1-043",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nasogastric tubes",
+    "stem": "Which method is most reliable at the bedside for checking that a newly inserted nasogastric tube is in the stomach before an X-ray result is available?",
+    "options": [
+      "Listening for a whoosh of air over the stomach",
+      "Asking the client whether it feels comfortable",
+      "Testing the pH of aspirated fluid",
+      "Placing the tube end in a cup of water"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Gastric aspirate usually has a pH of 5.5 or less. The air bolus and water-bubble tests are unreliable, and an X-ray confirms placement of a new tube before feeding, per policy."
+  },
+  {
+    "id": "REXPN-T1-044",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Client identification",
+    "stem": "Before giving a medication, which method correctly identifies the client?",
+    "options": [
+      "Name and birth date against the wristband",
+      "Asking the client, \"Are you Mr. Novak?\"",
+      "Confirmation from the client's roommate",
+      "The room and bed number on the census"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Two client-specific identifiers, such as full name and date of birth, are checked against the order or wristband. Room numbers change, and a leading question can be answered yes by a confused client."
+  },
+  {
+    "id": "REXPN-T1-045",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Informed consent",
+    "stem": "A client is being asked to consent to surgery. Which information must the client receive for the consent to be informed? Select all that apply.",
+    "options": [
+      "The surgeon's success rate this year",
+      "The material risks and side effects",
+      "The cost of the operating room",
+      "Alternative courses of action",
+      "The nature of the surgery",
+      "The expected benefits"
+    ],
+    "correct": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Informed consent covers the nature of the treatment, expected benefits, material risks and side effects, alternatives and the likely result of not having it. A personal success rate and operating room costs are not required elements."
+  },
+  {
+    "id": "REXPN-T1-046",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diuretics",
+    "stem": "A client taking furosemide 40 mg daily has a potassium level of 3.1 mmol/L. Which finding should the nurse watch for?",
+    "options": [
+      "Tall, peaked T waves",
+      "Flushed skin and a fever",
+      "Muscle weakness and an irregular pulse",
+      "Increased thirst and weight gain"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Furosemide wastes potassium, and a level below 3.5 mmol/L can cause weakness, cramps and dysrhythmias. Peaked T waves happen with high potassium."
+  },
+  {
+    "id": "REXPN-T1-047",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fire response",
+    "stem": "The nurse discovers smoke coming from a client's room. Following RACE, what should the nurse do first?",
+    "options": [
+      "Close the doors on the unit",
+      "Activate the fire alarm",
+      "Use the fire extinguisher",
+      "Remove the client from danger"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "RACE stands for Rescue, Alarm, Contain and Extinguish or Evacuate. Clients in immediate danger are moved first, then the alarm is pulled."
+  },
+  {
+    "id": "REXPN-T1-048",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Anxiety",
+    "stem": "A client is having a panic attack, breathing fast and saying, \"I'm going to die.\" What should the nurse do first?",
+    "options": [
+      "Teach the client about the causes of panic",
+      "Leave the client alone in a quiet room",
+      "Ask the client to describe the attack in detail",
+      "Stay with the client and speak in short, calm sentences"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "During panic, the client cannot absorb teaching or detailed questions. A calm presence and simple directions, such as slow breathing, help most."
+  },
+  {
+    "id": "REXPN-T1-049",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Preoperative care",
+    "stem": "Which items should the nurse check on the preoperative checklist before a client goes to the operating room? Select all that apply.",
+    "options": [
+      "Identification and allergy bands are on",
+      "Family has signed the client's consent",
+      "Dentures and jewellery are removed",
+      "Time of last food and fluid is recorded",
+      "Signed consent is on the chart"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Consent, identification, fasting status and removing dentures and jewellery protect the client in surgery. A capable client signs their own consent."
+  },
+  {
+    "id": "REXPN-T1-050",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Telephone and verbal orders",
+    "stem": "A health care provider gives the nurse a telephone order for a new medication. Which action is most important for safety?",
+    "options": [
+      "Write the order down and read it back",
+      "Ask a colleague to listen in on the call",
+      "Wait for the provider to come in and sign it",
+      "Repeat the drug name once after the call ends"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Writing the order as it is given and reading it back to the provider confirms the drug, dose, route and frequency before the call ends. Waiting would delay needed treatment."
+  },
+  {
+    "id": "REXPN-T1-051",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Aging process",
+    "stem": "Which changes are expected with normal aging? Select all that apply.",
+    "options": [
+      "Slower reaction time",
+      "Thinner, drier skin",
+      "Reduced bladder capacity",
+      "New urinary incontinence",
+      "Sudden confusion"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Thinner skin, slower reactions and a smaller bladder capacity are normal age changes. Sudden confusion and new incontinence are not normal and need assessment."
+  },
+  {
+    "id": "REXPN-T1-052",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Intake and output",
+    "stem": "During an 8-hour shift a client drinks 2 cups of tea of 250 mL each and 180 mL of juice, and receives 500 mL of IV fluid. The client voids 450 mL and 300 mL. What is the client's total intake for the shift in mL? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "1180"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Intake is 250 + 250 + 180 + 500 = 1180 mL. The 750 mL of urine is output and is not part of intake."
+  },
+  {
+    "id": "REXPN-T1-053",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "COPD",
+    "stem": "A client with COPD has an SpO2 of 86% on room air. The order is oxygen to keep the SpO2 between 88% and 92%. What should the nurse do?",
+    "options": [
+      "Give 100% oxygen by non-rebreather mask",
+      "Start low-flow oxygen and titrate to the target",
+      "Keep the SpO2 above 98%",
+      "Withhold oxygen to avoid suppressing breathing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Some clients with COPD retain carbon dioxide when given too much oxygen, so oxygen is given and adjusted to the ordered range. Hypoxia should never go untreated."
+  },
+  {
+    "id": "REXPN-T1-054",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Opioids",
+    "stem": "A client received hydromorphone 2 mg subcut 30 minutes ago. The client is hard to rouse, with a respiratory rate of 7/min. What should the nurse do first?",
+    "options": [
+      "Raise the head of the bed and leave the room",
+      "Stimulate the client and call for help to give naloxone",
+      "Recheck the respiratory rate in 15 minutes",
+      "Record the findings in the chart"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sedation with a respiratory rate of 7/min is opioid-induced respiratory depression. The nurse stays, stimulates the client, supports breathing and gets naloxone given per order or protocol."
+  },
+  {
+    "id": "REXPN-T1-055",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Scope and collaboration",
+    "stem": "A practical nurse is caring for a stable postoperative client who suddenly becomes confused, with a heart rate of 128/min and a BP of 86/50 mm Hg. What should the nurse do?",
+    "options": [
+      "Document the change and continue the care plan",
+      "Recheck the vital signs in 1 hour",
+      "Ask the PSW to sit with the client",
+      "Stay with the client and consult the RN right away"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The client has become unstable and less predictable, which calls for immediate collaboration with the RN while the nurse stays to monitor. Waiting an hour or handing off to a PSW leaves a deteriorating client without nursing care."
+  },
+  {
+    "id": "REXPN-T1-056",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Latex allergy",
+    "stem": "A client with a latex allergy is admitted. Which food allergy reported by the client is most likely related?",
+    "options": [
+      "Banana",
+      "Shellfish",
+      "Peanut",
+      "Wheat"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Banana, avocado, kiwi and chestnut share proteins with latex, so reactions to both are common. Peanut, shellfish and wheat are not cross-reactive with latex."
+  },
+  {
+    "id": "REXPN-T1-057",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IV therapy",
+    "stem": "A client's peripheral IV site is cool, pale and swollen, and the infusion has slowed. What should the nurse do?",
+    "options": [
+      "Stop the infusion and remove the catheter",
+      "Flush the line hard to clear it",
+      "Apply a tight dressing over the swelling",
+      "Raise the bag higher to speed the flow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cool, pale swelling is infiltration: fluid is leaking into the tissue. The infusion is stopped, the catheter removed, the arm elevated and a new site started elsewhere."
+  },
+  {
+    "id": "REXPN-T1-058",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Grief",
+    "stem": "A widow says, \"I keep thinking I hear him in the kitchen.\" It has been 3 weeks since her husband died. How should the nurse respond?",
+    "options": [
+      "\"That is common after a loss. How are you coping?\"",
+      "\"You need to see a psychiatrist about that.\"",
+      "\"It's time to start moving on.\"",
+      "\"Try to keep busy so you don't think about him.\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sensing the presence of the person who died is a common part of normal grief. The nurse normalizes it and assesses coping and support."
+  },
+  {
+    "id": "REXPN-T1-059",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cardiac catheterization",
+    "stem": "A client had a cardiac catheterization through the femoral artery 1 hour ago. Which finding should the nurse report immediately?",
+    "options": [
+      "Client asks for a drink of water",
+      "Site dressing is dry and intact",
+      "Pulses felt in both feet",
+      "A growing lump at the insertion site"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An expanding lump suggests a hematoma from arterial bleeding. The nurse applies direct pressure above the site and calls for help. Present foot pulses and a dry dressing are expected."
+  },
+  {
+    "id": "REXPN-T1-060",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mandatory reporting",
+    "stem": "While bathing a 4-year-old, the nurse sees loop-shaped bruises on the child's back and suspects abuse. What should the nurse do?",
+    "options": [
+      "Ask the parents how the bruises happened first",
+      "Report the suspicion to the child protection agency",
+      "Tell the manager and let them decide whether to report",
+      "Wait to see whether new bruises appear"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Every province requires anyone who suspects a child is in need of protection to report it to the child protection authority, and the duty belongs to the person who has the suspicion. Proof is not needed, and the nurse also follows agency policy to inform the team."
+  },
+  {
+    "id": "REXPN-T1-061",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Physical activity",
+    "stem": "A healthy 45-year-old asks how much exercise is recommended. What should the nurse reinforce based on Canadian guidelines?",
+    "options": [
+      "30 minutes of light walking once a week",
+      "Exercise only when weight goals are not met",
+      "60 minutes of vigorous activity every day",
+      "150 minutes of moderate to vigorous activity a week"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Canadian 24-Hour Movement Guidelines recommend at least 150 minutes of moderate to vigorous aerobic activity a week for adults, plus muscle strengthening twice a week."
+  },
+  {
+    "id": "REXPN-T1-062",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Non-pharmacological comfort",
+    "stem": "Which non-drug measures can help relieve a client's pain? Select all that apply.",
+    "options": [
+      "Keeping the room bright and noisy",
+      "Repositioning with pillows",
+      "Cold packs for a recent sprain",
+      "Guided imagery or music",
+      "Telling the client to ignore the pain"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Positioning, distraction and cold applied to a recent injury reduce pain. Dismissing pain and a noisy, bright room make it worse."
+  },
+  {
+    "id": "REXPN-T1-063",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Burns",
+    "stem": "A client is brought in after a house fire with singed nasal hair, soot around the mouth and a hoarse voice. What is the priority?",
+    "options": [
+      "Cleaning the burns",
+      "Airway, because swelling may close it",
+      "Pain medication",
+      "Calculating the burn size"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Singed nasal hair, soot and hoarseness suggest an inhalation injury, and airway swelling can progress quickly. The airway comes before fluids, wound care and pain."
+  },
+  {
+    "id": "REXPN-T1-064",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Blood products",
+    "stem": "Ten minutes into a red blood cell transfusion, a client has chills, back pain and a temperature of 38.6 °C. What should the nurse do first?",
+    "options": [
+      "Slow the transfusion and give acetaminophen",
+      "Stop the transfusion and remove the IV",
+      "Stop the transfusion and keep the IV open with saline",
+      "Finish the unit quickly and then call the provider"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "These signs suggest an acute transfusion reaction. The transfusion is stopped at once, the line kept open with new tubing and normal saline for treatment, and the provider and blood bank are notified."
+  },
+  {
+    "id": "REXPN-T1-065",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Seizure precautions",
+    "stem": "A client with a new seizure disorder is admitted. Which seizure precautions should the nurse put in place? Select all that apply.",
+    "options": [
+      "Tape a tongue blade to the headboard",
+      "Keep the client on strict bed rest",
+      "Have suction and oxygen ready at the bedside",
+      "Remove all pillows from the bed",
+      "Keep the bed in a low position",
+      "Pad the bed rails if policy allows"
+    ],
+    "correct": [
+      2,
+      4,
+      5
+    ],
+    "explanation": "Working suction and oxygen, a low bed and padded rails protect the airway and prevent injury. Nothing is ever put in the mouth during a seizure, and bed rest or removing pillows is not part of precautions."
+  },
+  {
+    "id": "REXPN-T1-066",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Interpreters",
+    "stem": "A client who speaks only Punjabi needs discharge teaching. The client's 12-year-old granddaughter offers to translate. What should the nurse do?",
+    "options": [
+      "Speak slowly in English and use gestures",
+      "Give the client English handouts to take home",
+      "Let the granddaughter translate the teaching",
+      "Arrange a professional interpreter"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A trained interpreter gives accurate medical translation and protects privacy. Children and family members may leave things out, change the message or be placed in an unfair position."
+  },
+  {
+    "id": "REXPN-T1-067",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Intimate partner violence",
+    "stem": "The nurse suspects intimate partner violence in a client who comes to the clinic with her partner. How should the nurse screen?",
+    "options": [
+      "Wait until the client brings it up",
+      "Ask the partner whether he has hit her",
+      "Ask the client privately, away from the partner",
+      "Ask both of them together to save time"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Screening is done in private so the client can answer safely. Questioning in front of the partner can put her at greater risk."
+  },
+  {
+    "id": "REXPN-T1-068",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Arterial blood gases",
+    "passage": "| Arterial blood gas | Result |\n|---|---|\n| pH | 7.29 |\n| PaCO2 | 58 mm Hg |\n| HCO3 | 25 mmol/L |",
+    "stem": "A client with COPD is drowsy. The arterial blood gas results are shown. How should the nurse interpret them?",
+    "options": [
+      "Metabolic acidosis",
+      "Respiratory alkalosis",
+      "Respiratory acidosis",
+      "Metabolic alkalosis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The pH is low (normal 7.35 to 7.45) and the PaCO2 is high (normal 35 to 45 mm Hg) with a normal bicarbonate, so carbon dioxide retention is causing respiratory acidosis."
+  },
+  {
+    "id": "REXPN-T1-069",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Discharge planning",
+    "stem": "A client who lives alone is going home after a stroke and walks with a cane. Which actions support a safe discharge? Select all that apply.",
+    "options": [
+      "Tell the client to stop the cane once home",
+      "Confirm follow-up appointments are booked",
+      "Advise the client to drive to appointments",
+      "Refer the client for home care services",
+      "Review medications with the client",
+      "Ask about stairs and hazards in the home"
+    ],
+    "correct": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Follow-up, a home safety review, home care and medication teaching help prevent readmission. The client still needs the cane, and driving after a stroke depends on a medical assessment and provincial rules."
+  },
+  {
+    "id": "REXPN-T1-070",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Thyroid medications",
+    "stem": "What should the nurse reinforce about taking levothyroxine?",
+    "options": [
+      "Take it at bedtime with milk",
+      "Take it on an empty stomach in the morning",
+      "Stop it when your energy improves",
+      "Take it with an iron tablet at breakfast"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Levothyroxine is absorbed best on an empty stomach, 30 to 60 minutes before breakfast. Iron, calcium and food reduce absorption, and the drug is usually lifelong."
+  },
+  {
+    "id": "REXPN-T1-071",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sharps safety",
+    "stem": "What should the nurse do with a used insulin syringe?",
+    "options": [
+      "Put it in a biohazard bag with dressings",
+      "Drop it straight into a sharps container",
+      "Bend the needle before discarding it",
+      "Recap it with both hands, then discard it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Used needles go uncapped into a puncture-resistant sharps container right away. Recapping and bending needles cause needlestick injuries."
+  },
+  {
+    "id": "REXPN-T1-072",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Contraception",
+    "stem": "Which client information is a concern before a combined oral contraceptive is started?",
+    "options": [
+      "She plans pregnancy in three years",
+      "She is 38 and smokes a pack a day",
+      "She has mild acne on her face",
+      "She is 22 and has irregular periods"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Smoking over age 35 with combined hormonal contraception raises the risk of stroke and blood clots. Irregular periods and acne can actually improve on the pill."
+  },
+  {
+    "id": "REXPN-T1-073",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Assistive devices",
+    "stem": "A client with a weak right leg is learning to walk with a cane. What should the nurse reinforce?",
+    "options": [
+      "Move the cane after the weak leg",
+      "Hold the cane in the left hand",
+      "Use the cane only on stairs",
+      "Hold the cane in the right hand"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The cane is held on the strong side and moves forward with the weak leg, which gives the widest base of support."
+  },
+  {
+    "id": "REXPN-T1-074",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hyperkalemia",
+    "stem": "A client with kidney failure has a potassium of 6.8 mmol/L. Which order does the nurse expect to protect the heart first?",
+    "options": [
+      "IV calcium gluconate",
+      "A high-potassium diet",
+      "IV potassium in normal saline",
+      "Oral potassium chloride"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "IV calcium stabilizes the heart muscle within minutes while other treatments, such as insulin with dextrose, move potassium into cells. Giving potassium would worsen the problem."
+  },
+  {
+    "id": "REXPN-T1-075",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Advocacy",
+    "stem": "The adult children of a capable client ask the nurse not to tell their mother that her biopsy showed cancer. What is the nurse's best response?",
+    "options": [
+      "\"I will keep the result from her as you asked.\"",
+      "\"Let's wait until she is feeling stronger.\"",
+      "\"I will tell her myself before the provider does.\"",
+      "\"Your mother has a right to her results if she wants them.\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A capable client owns her health information and decides how much she wants to know. The nurse advocates for that right, explores the family's worries and involves the provider, who discloses the diagnosis."
+  },
+  {
+    "id": "REXPN-T1-076",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Antihypertensives",
+    "stem": "A client is starting ramipril. Which findings should the client report? Select all that apply.",
+    "options": [
+      "Better sleep",
+      "A persistent dry cough",
+      "Dizziness when standing up",
+      "Swelling of the lips or tongue",
+      "Increased energy"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Angioedema is a rare emergency with ACE inhibitors, dizziness signals low blood pressure, and a dry cough is a common reason to switch drugs. More energy and better sleep are not side effects to report."
+  },
+  {
+    "id": "REXPN-T1-077",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hallucinations",
+    "stem": "A client with schizophrenia says, \"The voices are telling me I'm evil.\" Which response is best?",
+    "options": [
+      "\"I don't hear them, but you seem frightened.\"",
+      "\"You are not evil, so don't worry.\"",
+      "\"What else are the voices telling you?\"",
+      "\"The voices are not real, so ignore them.\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The nurse gently presents reality without arguing and responds to the feeling behind the experience. Exploring the content in detail reinforces it, and dismissing it damages trust."
+  },
+  {
+    "id": "REXPN-T1-078",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Orthostatic vital signs",
+    "stem": "A client's BP is 128/76 mm Hg lying down and 102/64 mm Hg after 1 minute standing, and the client feels dizzy. What should the nurse do?",
+    "options": [
+      "Retake the BP lying down in 4 hours",
+      "Document the readings as normal",
+      "Have the client sit and report the drop",
+      "Encourage the client to walk the hallway"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A drop of 20 mm Hg or more systolic on standing, with dizziness, is orthostatic hypotension and a fall risk. The client sits or lies down and the finding is reported."
+  },
+  {
+    "id": "REXPN-T1-079",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Conflict resolution",
+    "stem": "A coworker often leaves unfinished tasks for the nurse at shift change. What is the best first step?",
+    "options": [
+      "Talk with the coworker privately about it",
+      "Leave some tasks for the coworker in return",
+      "File a written complaint with the manager",
+      "Mention it at the next team meeting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Most conflicts are best handled first by a private, direct conversation. The manager is involved if the problem continues or affects client safety."
+  },
+  {
+    "id": "REXPN-T1-080",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Equipment safety",
+    "stem": "The nurse notices that the cord on a client's IV pump is frayed. What should the nurse do?",
+    "options": [
+      "Keep using it until the infusion ends",
+      "Unplug it and run the pump on battery",
+      "Wrap the frayed area with tape",
+      "Replace the pump and tag it for repair"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Damaged electrical equipment is a shock and fire hazard. It is removed from use, labelled and reported according to policy, and a safe pump is used instead."
+  },
+  {
+    "id": "REXPN-T1-081",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Controlled substances",
+    "stem": "At the end-of-shift narcotic count, the hydromorphone count is short by one tablet. What should the nurse do?",
+    "options": [
+      "Let the oncoming nurse sort it out",
+      "Report it before either nurse leaves the unit",
+      "Correct the count sheet to match",
+      "Recount tomorrow when it is less busy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A count discrepancy is reported right away, following agency policy and federal and provincial rules, and both nurses stay until it is reviewed. Changing the record is falsification."
+  },
+  {
+    "id": "REXPN-T1-082",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Referrals",
+    "stem": "A client recovering from a stroke coughs and chokes on thin fluids at every meal. Which referral is most appropriate?",
+    "options": [
+      "Speech-language pathologist",
+      "Occupational therapist",
+      "Social worker",
+      "Respiratory therapist"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A speech-language pathologist assesses swallowing and recommends safe textures and techniques. The nurse also keeps the client upright and reports the choking."
+  },
+  {
+    "id": "REXPN-T1-083",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Immunizations",
+    "stem": "A parent asks why their child's vaccine schedule differs from a cousin's in another province. What is the best response?",
+    "options": [
+      "\"The schedule depends on the child's family doctor.\"",
+      "\"One of the two schedules must be a mistake.\"",
+      "\"Your cousin's schedule is out of date.\"",
+      "\"Each province sets its own publicly funded schedule.\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Canada has national recommendations, but each province and territory decides its own publicly funded immunization schedule, so timing and products can differ."
+  },
+  {
+    "id": "REXPN-T1-084",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Postmortem care",
+    "stem": "A client has just died, and no autopsy or coroner's review is expected. What should the nurse do as part of postmortem care?",
+    "options": [
+      "Remove dentures and put them in a drawer",
+      "Keep the head of the bed raised 45 degrees",
+      "Leave all tubes in place for the family",
+      "Place the body flat with a pillow under the head"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The body is placed flat with the head slightly raised to prevent pooling of blood in the face, and dentures are left in place to keep the face natural. Tubes are removed per policy unless a coroner's case requires them."
+  },
+  {
+    "id": "REXPN-T1-085",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seizures",
+    "stem": "A client has a generalized tonic-clonic seizure while sitting in a chair. What should the nurse do?",
+    "options": [
+      "Give oral fluids as soon as it ends",
+      "Hold the client's arms and legs still",
+      "Ease the client to the floor and turn on the side",
+      "Put a padded tongue blade in the mouth"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lowering the client to the floor and turning onto the side prevents injury and helps drain secretions. Restraining movement and putting objects in the mouth cause injury."
+  },
+  {
+    "id": "REXPN-T1-086",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Indigenous health practices",
+    "stem": "A First Nations client asks to have an Elder come to perform a smudging ceremony in hospital. What should the nurse do?",
+    "options": [
+      "Explain that ceremonies are not allowed in hospital",
+      "Suggest waiting until the client goes home",
+      "Ask the provider whether the ceremony is medically needed",
+      "Arrange it following the hospital's smudging policy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Incorporating Indigenous health knowledge and practices is part of culturally safe care. Many hospitals have smudging policies and Indigenous health staff to support it while keeping smoke alarms and oxygen safe."
+  },
+  {
+    "id": "REXPN-T1-087",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Glycated hemoglobin",
+    "stem": "A client with type 2 diabetes has an A1C of 9.2%. What does this result tell the nurse?",
+    "options": [
+      "The client has developed kidney disease",
+      "Blood glucose has been high over the past 3 months",
+      "The client was hypoglycemic this morning",
+      "The client's diabetes is well controlled"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A1C reflects average glucose over about 3 months. Diabetes Canada's usual target is 7.0% or less, so 9.2% shows poor control and is reported for a plan review."
+  },
+  {
+    "id": "REXPN-T1-088",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Allergies",
+    "stem": "A client's chart lists a penicillin allergy. A new order is written for amoxicillin. What should the nurse do?",
+    "options": [
+      "Give half the dose as a test",
+      "Ask the pharmacy for a liquid form",
+      "Give the dose and watch for a rash",
+      "Hold the dose and contact the prescriber"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Amoxicillin is a penicillin, so the order may cause an allergic reaction. The nurse holds it, clarifies the allergy and asks for a different drug."
+  },
+  {
+    "id": "REXPN-T1-089",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Inhaled medications",
+    "stem": "A client with asthma uses a salbutamol inhaler and a fluticasone inhaler. Which instructions should the nurse reinforce? Select all that apply.",
+    "options": [
+      "Use salbutamol for sudden shortness of breath",
+      "Rinse your mouth after the fluticasone",
+      "Use fluticasone to stop an asthma attack",
+      "Skip fluticasone on days with no symptoms",
+      "Use the salbutamol first when both are due"
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Salbutamol opens the airways quickly, so it is the rescue drug and goes first. Fluticasone is a daily controller that does not stop an attack, and rinsing afterward prevents oral thrush."
+  },
+  {
+    "id": "REXPN-T1-090",
+    "section": "rexpn",
+    "test": 1,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Establishing priorities",
+    "passage": "| Client | Report from night shift |\n|---|---|\n| Room 1 | Heart failure, weighed 1.5 kg more than yesterday, no shortness of breath |\n| Room 2 | Chronic kidney disease, potassium 6.3 mmol/L this morning |\n| Room 3 | Type 2 diabetes, capillary glucose 9.4 mmol/L before breakfast |\n| Room 4 | Pneumonia, temperature 38.2 °C, on IV antibiotics |",
+    "stem": "The nurse reviews the night report shown. Which client should the nurse follow up on first?",
+    "options": [
+      "Room 2",
+      "Room 4",
+      "Room 1",
+      "Room 3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A potassium of 6.3 mmol/L can cause fatal dysrhythmias and needs urgent action. The weight gain, mildly high glucose and fever on treatment all need attention but are less immediately dangerous."
+  },
+  {
+    "id": "REXPN-T2-001",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Establishing priorities",
+    "stem": "Which client should the nurse assess first after receiving report?",
+    "options": [
+      "Client who is anxious about tomorrow's surgery",
+      "Client with COPD whose SpO2 is 90% at baseline",
+      "Client with new chest pressure who is pale and sweaty",
+      "Client with gastroenteritis asking for a warm blanket"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "New chest pressure with pallor and sweating suggests a heart attack, an unstable and life-threatening problem. An SpO2 of 90% is expected for this client with COPD, and the other two needs can wait briefly."
+  },
+  {
+    "id": "REXPN-T2-002",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "IV flow rate",
+    "stem": "A client is to receive 500 mL of IV fluid over 4 hours by infusion pump. At how many mL/h should the nurse set the pump? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "125"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "500 mL divided by 4 hours is 125 mL/h."
+  },
+  {
+    "id": "REXPN-T2-003",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Contact precautions",
+    "stem": "A client has a wound infected with methicillin-resistant Staphylococcus aureus (MRSA). Which precautions should the nurse use for wound care?",
+    "options": [
+      "Gown and gloves",
+      "Surgical mask only",
+      "Hand hygiene only",
+      "N95 respirator only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MRSA spreads by contact, so a gown and gloves are worn for contact with the client or environment. Respirators are for airborne diseases."
+  },
+  {
+    "id": "REXPN-T2-004",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Depression in older adults",
+    "stem": "Since her husband died 6 months ago, an 80-year-old has lost weight, stopped going to church and says she is \"just tired.\" What should the nurse do?",
+    "options": [
+      "Tell the family this is normal aging",
+      "Encourage her to take a daily nap",
+      "Report possible depression for assessment",
+      "Suggest she move to a care home"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Withdrawal, weight loss and fatigue months after a loss can signal depression, which is common and treatable in older adults but often mistaken for aging."
+  },
+  {
+    "id": "REXPN-T2-005",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laboratory values",
+    "stem": "A client's morning bloodwork shows sodium 126 mmol/L. Which finding should the nurse watch for?",
+    "options": [
+      "Bone pain and kidney stones",
+      "Bradycardia and flushing",
+      "Confusion and headache",
+      "Peaked T waves on the monitor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Normal sodium is about 135 to 145 mmol/L. Low sodium shifts water into brain cells, causing headache, confusion and, if severe, seizures."
+  },
+  {
+    "id": "REXPN-T2-006",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Toddler safety",
+    "stem": "Which teaching is most important for the parents of a 2-year-old?",
+    "options": [
+      "Start swimming lessons before age 3",
+      "Keep medicines and cleaners locked away",
+      "Teach the child to cross the street alone",
+      "Allow whole grapes as a finger food"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Toddlers explore by putting things in their mouths, so poisoning is a major risk. Whole grapes are a choking hazard, and toddlers cannot judge traffic."
+  },
+  {
+    "id": "REXPN-T2-007",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dysphagia",
+    "stem": "A client with dysphagia after a stroke is eating lunch. Which action reduces the risk of aspiration?",
+    "options": [
+      "Sit the client upright with the chin tucked",
+      "Give thin liquids with a straw",
+      "Offer large bites to speed up the meal",
+      "Feed the client lying on the right side"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sitting upright with the chin tucked helps protect the airway. Straws and thin liquids are often unsafe, and small bites and a slow pace are safer."
+  },
+  {
+    "id": "REXPN-T2-008",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acute coronary syndrome",
+    "stem": "A client reports crushing chest pain spreading to the jaw, with nausea and sweating. What should the nurse do first?",
+    "options": [
+      "Offer a meal to settle the nausea",
+      "Stay with the client and call for help",
+      "Wait to see whether the pain passes",
+      "Ask the client to walk to the bathroom"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "These are signs of a heart attack. The nurse stays, calls for help and starts the agency's chest pain protocol, which usually includes an ECG, oxygen if needed, ASA and nitroglycerin as ordered."
+  },
+  {
+    "id": "REXPN-T2-009",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Assigning tasks to UCPs",
+    "stem": "Which tasks should the nurse keep rather than assign to an unregulated care provider (UCP)? Select all that apply.",
+    "options": [
+      "Evaluate a client's response to a new pain medication",
+      "Measure the height of a stable client",
+      "Make an occupied bed",
+      "Check the IV site of a client receiving fluids",
+      "Reinforce teaching about a low-sodium diet",
+      "Help a client walk to the bathroom"
+    ],
+    "correct": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Evaluating response to treatment, teaching and checking an IV site need nursing knowledge and judgment. Helping a stable client walk, making beds and measuring height are routine tasks a UCP can do."
+  },
+  {
+    "id": "REXPN-T2-010",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Weight-based dosing",
+    "stem": "A child who weighs 18 kg is ordered amoxicillin 40 mg/kg/day PO, divided into three equal doses. How many mg should the nurse give per dose? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "240"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "40 mg/kg times 18 kg is 720 mg a day, and 720 divided by 3 doses is 240 mg per dose. Giving 720 mg each time would triple the daily dose."
+  },
+  {
+    "id": "REXPN-T2-011",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Surgical asepsis",
+    "stem": "While setting up a sterile field for a dressing change, the nurse reaches across the field. What should the nurse do?",
+    "options": [
+      "Set up a new sterile field",
+      "Cover that side with a sterile drape",
+      "Continue, since nothing was touched",
+      "Wipe the area with alcohol"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Reaching over a sterile field can drop contaminants onto it, so the field is considered contaminated and must be replaced."
+  },
+  {
+    "id": "REXPN-T2-012",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Competence",
+    "stem": "The nurse is asked to care for a client with a chest tube, a skill the nurse has never performed. What should the nurse do?",
+    "options": [
+      "Refuse to work the shift",
+      "Tell the charge nurse and ask for support or education",
+      "Accept the assignment and look up the procedure later",
+      "Ask the client's family how the chest tube works"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Nurses must recognize the limits of their competence and seek help. Telling the charge nurse lets the team arrange support, teaching or a different assignment so the client stays safe."
+  },
+  {
+    "id": "REXPN-T2-013",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antipsychotic adherence",
+    "stem": "A client with schizophrenia stopped taking olanzapine because \"I'm putting on weight.\" What is the nurse's best action?",
+    "options": [
+      "Accept the decision and close the file",
+      "Discuss the concern and report it to the prescriber",
+      "Advise the client to take half the dose",
+      "Tell the client weight gain is a small price to pay"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Exploring reasons for non-adherence and involving the prescriber can lead to diet support or another drug. Changing the dose without an order is not safe."
+  },
+  {
+    "id": "REXPN-T2-014",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laboratory values",
+    "stem": "A client's white blood cell count is 16.5 × 10⁹/L. What does this most likely indicate?",
+    "options": [
+      "Infection or inflammation",
+      "Anemia",
+      "Bleeding risk",
+      "Dehydration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Normal WBC is about 4 to 11 × 10⁹/L. A high count usually reflects infection or inflammation, so the nurse looks for a source and reports it."
+  },
+  {
+    "id": "REXPN-T2-015",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Weight-based dosing",
+    "stem": "Enoxaparin 1 mg/kg subcut every 12 hours is ordered for a client who weighs 70 kg. The prefilled syringe holds 80 mg in 0.8 mL. How many mL should the nurse give? Record your answer to one decimal place.",
+    "numeric": {
+      "answers": [
+        "0.7"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The dose is 1 mg/kg times 70 kg, or 70 mg. The syringe holds 100 mg/mL, so 70 mg is 0.7 mL; the extra 0.1 mL is expelled before injecting."
+  },
+  {
+    "id": "REXPN-T2-016",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Privacy",
+    "stem": "The nurse's uncle is admitted to another unit of the same hospital. Which action by the nurse is a privacy breach?",
+    "options": [
+      "Reading the uncle's chart online",
+      "Bringing the uncle a card from the family",
+      "Asking the uncle how he is feeling",
+      "Visiting the uncle during the nurse's break"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Nurses may access only the records of clients in their care and only as needed for that care. Looking up a relative's chart is a breach under provincial health privacy law even if the relative would not mind."
+  },
+  {
+    "id": "REXPN-T2-017",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Prenatal care",
+    "stem": "A client planning a pregnancy asks which supplement to start now. What should the nurse reinforce?",
+    "options": [
+      "Vitamin A in high doses",
+      "Iron 300 mg three times daily",
+      "A multivitamin with 0.4 mg of folic acid",
+      "Calcium only after the first trimester"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Folic acid 0.4 mg a day, started at least 2 to 3 months before conception, lowers the risk of neural tube defects. High-dose vitamin A can cause birth defects."
+  },
+  {
+    "id": "REXPN-T2-018",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Venous return",
+    "stem": "A client is ordered anti-embolism stockings. When should the nurse apply them?",
+    "options": [
+      "Only at night while the client sleeps",
+      "In the morning before the client gets up",
+      "After the client has walked for an hour",
+      "Only when the ankles are swollen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Stockings are applied before the legs swell, ideally while the client is still lying down in the morning."
+  },
+  {
+    "id": "REXPN-T2-019",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Diabetic ketoacidosis",
+    "stem": "A client with type 1 diabetes has had vomiting for a day. Which finding suggests diabetic ketoacidosis?",
+    "options": [
+      "Shakiness and a glucose of 3.1 mmol/L",
+      "Slow pulse and moist skin",
+      "Sudden weight gain and edema",
+      "Deep, rapid breathing with a fruity breath odour"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In DKA, the body breaks down fat for energy, producing ketones and acidosis; the client breathes deeply and fast (Kussmaul breathing) with fruity breath. A low glucose is hypoglycemia."
+  },
+  {
+    "id": "REXPN-T2-020",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Neutropenic precautions",
+    "stem": "A client receiving chemotherapy has a neutrophil count of 0.4 × 10⁹/L. Which actions protect the client? Select all that apply.",
+    "options": [
+      "Strict hand hygiene for everyone entering",
+      "Encourage raw fruit with skins on",
+      "Take rectal temperatures every 4 hours",
+      "Screen visitors for signs of illness",
+      "Avoid fresh flowers in the room",
+      "Share equipment with the roommate"
+    ],
+    "correct": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "A neutrophil count this low leaves the client unable to fight infection. Hand hygiene, screening visitors and avoiding flowers lower exposure; rectal temperatures can injure the mucosa, and unwashed raw produce and shared equipment carry germs."
+  },
+  {
+    "id": "REXPN-T2-021",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "IV flow rate",
+    "stem": "An antibiotic in 100 mL is to infuse over 30 minutes by pump. At how many mL/h should the nurse set the pump? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "200"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Pumps run in mL per hour: 100 mL in half an hour is 200 mL/h. Setting 100 mL/h would take a full hour."
+  },
+  {
+    "id": "REXPN-T2-022",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Informed consent",
+    "stem": "A client who received IV sedation 30 minutes ago is asked to sign a consent form for a second procedure. What should the nurse do?",
+    "options": [
+      "Read the consent form aloud to the client first",
+      "Tell the provider that consent cannot be obtained now",
+      "Witness the client's signature as requested",
+      "Ask the client's spouse to sign instead"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sedation can impair the client's capacity to understand and decide, so consent obtained now may not be valid. The provider needs to know so consent can be sought when the client is alert."
+  },
+  {
+    "id": "REXPN-T2-023",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "De-escalation",
+    "stem": "A client in the emergency department is pacing, shouting and clenching his fists. What should the nurse do first?",
+    "options": [
+      "Tell him security will remove him if he continues",
+      "Speak calmly and keep a safe distance near the exit",
+      "Turn away and ignore the behaviour",
+      "Stand close and touch his arm to calm him"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A calm voice and space reduce the sense of threat, and staying near the exit keeps the nurse safe. Touch, threats and ignoring the client can make escalation worse."
+  },
+  {
+    "id": "REXPN-T2-024",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Kidney function",
+    "stem": "A client's creatinine rose from 80 to 210 µmol/L over 2 days while receiving gentamicin. What should the nurse do?",
+    "options": [
+      "Recheck the creatinine in a week",
+      "Encourage the client to limit fluids",
+      "Report the rise before the next dose",
+      "Give the next dose early"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Gentamicin can damage the kidneys, and a creatinine that more than doubles suggests acute kidney injury. The prescriber needs to know before another dose is given."
+  },
+  {
+    "id": "REXPN-T2-025",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Advance directives",
+    "stem": "A capable client's documented wish and order is no CPR. The client stops breathing, and her son shouts, \"Do everything!\" What should the nurse do?",
+    "options": [
+      "Start CPR because the son requested it",
+      "Follow the do-not-resuscitate order",
+      "Begin rescue breaths only",
+      "Call a code and let the team decide"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The client's own documented decision guides care. The nurse follows the order, stays with the family and supports the son, and involves the provider or team as needed."
+  },
+  {
+    "id": "REXPN-T2-026",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Emergency response",
+    "stem": "A disaster plan is activated and beds are needed. Which client is most appropriate to recommend for early discharge?",
+    "options": [
+      "Client with diabetic ketoacidosis on an insulin infusion",
+      "Client on day 1 after abdominal surgery",
+      "Client admitted 2 hours ago with chest pain",
+      "Client with cellulitis on oral antibiotics since yesterday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A stable client who can continue oral treatment at home is the safest choice. New chest pain, fresh surgery and an insulin infusion all need ongoing hospital care."
+  },
+  {
+    "id": "REXPN-T2-027",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lithium",
+    "stem": "A client taking lithium has vomiting, diarrhea and a coarse hand tremor. What should the nurse do?",
+    "options": [
+      "Hold the dose and report possible toxicity",
+      "Give the dose with extra salt",
+      "Give the dose and an antiemetic",
+      "Tell the client to drink less water"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vomiting, diarrhea and coarse tremor are signs of lithium toxicity. The dose is held and a serum level is needed. Dehydration and low sodium raise lithium levels."
+  },
+  {
+    "id": "REXPN-T2-028",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Breastfeeding",
+    "stem": "Which signs show that a breastfed newborn is feeding well by day 5? Select all that apply.",
+    "options": [
+      "Sleeping through the night without feeding",
+      "Feeding about 4 times in 24 hours",
+      "At least 6 wet diapers a day",
+      "Yellow, seedy stools",
+      "Weight down 15% from birth"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Six or more wet diapers and yellow stools by day 5 show good intake. Newborns should feed 8 or more times in 24 hours, so 4 feeds or a full night without feeding is too few, and a 15% weight loss is more than expected and needs follow-up."
+  },
+  {
+    "id": "REXPN-T2-029",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cast care",
+    "stem": "A client has a new plaster cast on the forearm. Which finding should the nurse report right away?",
+    "options": [
+      "A cast that feels warm while drying",
+      "Mild itching under the cast",
+      "Fingers that are cool and numb",
+      "Slight swelling the first evening"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cool, numb fingers suggest impaired circulation or nerve compression and need urgent action. Warmth while plaster dries, itching and mild swelling with elevation are expected."
+  },
+  {
+    "id": "REXPN-T2-030",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Asthma",
+    "stem": "A child with an asthma attack had loud wheezing an hour ago. Now the child is drowsy, the chest sounds quiet and the SpO2 is 87%. What does this mean?",
+    "options": [
+      "The inhaler has fully worked",
+      "Breathing is getting worse and needs urgent help",
+      "The child is falling asleep normally",
+      "The attack is ending and the child is tired"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A silent chest means very little air is moving. With drowsiness and low oxygen, it signals respiratory failure, an emergency."
+  },
+  {
+    "id": "REXPN-T2-031",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medication incidents",
+    "stem": "The nurse gives a client 500 mg of acetaminophen at 1000 instead of 1400. What should the nurse do first?",
+    "options": [
+      "Note the error in the next dose",
+      "Complete an incident report",
+      "Notify the client's family",
+      "Assess the client"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The first priority after any medication error is the client's condition. The nurse then informs the provider, follows the policy for disclosure and completes an incident report; the chart records the facts and the client's condition but does not mention the incident report."
+  },
+  {
+    "id": "REXPN-T2-032",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defense mechanisms",
+    "stem": "A client who was just told he has diabetes says, \"The lab must have mixed up my blood.\" Which defense mechanism is he using?",
+    "options": [
+      "Displacement",
+      "Projection",
+      "Sublimation",
+      "Denial"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Denial is refusing to accept a painful reality, common right after bad news. Projection blames others for one's own feelings, displacement redirects emotion, and sublimation channels it into acceptable activity."
+  },
+  {
+    "id": "REXPN-T2-033",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Thyroidectomy",
+    "stem": "The day after a thyroidectomy, a client reports tingling around the mouth and in the fingers. What should the nurse suspect?",
+    "options": [
+      "Normal effect of the anesthetic",
+      "Thyroid storm",
+      "Low calcium from parathyroid injury",
+      "High potassium from kidney failure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The parathyroid glands can be bruised or removed during thyroid surgery, and low calcium causes tingling around the mouth and in the fingers, which can progress to tetany."
+  },
+  {
+    "id": "REXPN-T2-034",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IV antibiotics",
+    "stem": "During a vancomycin infusion, a client develops flushing and an itchy rash on the face and neck. What should the nurse do first?",
+    "options": [
+      "Speed up the infusion to finish it",
+      "Stop the infusion and notify the prescriber",
+      "Apply ice to the client's face",
+      "Document it as an expected effect"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Flushing of the upper body is an infusion reaction often linked to running vancomycin too fast. The infusion is stopped, the client assessed and the prescriber informed; it usually resumes more slowly."
+  },
+  {
+    "id": "REXPN-T2-035",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hazardous materials",
+    "stem": "A housekeeper splashes an unfamiliar cleaning chemical on her arm. Where should the nurse look for first aid instructions for that product?",
+    "options": [
+      "The product's purchase invoice",
+      "The facility's infection control manual",
+      "The poison control website",
+      "The product's safety data sheet (SDS)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under WHMIS, every hazardous product has a safety data sheet that lists first aid measures, hazards and safe handling. The skin is rinsed while the SDS is checked."
+  },
+  {
+    "id": "REXPN-T2-036",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Delegation",
+    "stem": "Which statement best describes delegation as defined in the REx-PN test plan?",
+    "options": [
+      "A qualified professional formally hands a procedure to another person",
+      "Any nurse informally asks a coworker to finish a leftover task",
+      "A capable client lets a family member take over part of their care",
+      "A manager writes up the daily client assignment for each nurse"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Delegation is a formal process: a regulated professional who has the authority and competence to perform a procedure delegates it to another individual. Assigning tasks and making the daily assignment are different processes."
+  },
+  {
+    "id": "REXPN-T2-037",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anticonvulsants",
+    "stem": "Which teaching is most important for a client starting phenytoin?",
+    "options": [
+      "Expect your urine to turn bright green",
+      "Brush, floss and see a dentist regularly",
+      "Stop taking the drug if you have a seizure",
+      "Take it only on days you feel an aura coming"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Phenytoin commonly causes gum overgrowth, which good oral care limits. It is taken every day, and stopping it suddenly can trigger seizures."
+  },
+  {
+    "id": "REXPN-T2-038",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adolescent development",
+    "stem": "A 15-year-old in hospital is upset about missing a school dance. Which developmental task explains this reaction?",
+    "options": [
+      "Industry and school achievement",
+      "Identity and peer belonging",
+      "Trust versus mistrust",
+      "Generativity and caring for others"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Adolescents are working on identity, and peers are central to it, so separation from friends is a major stress. Trust belongs to infancy and industry to school age."
+  },
+  {
+    "id": "REXPN-T2-039",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Incontinence care",
+    "stem": "A client is incontinent of urine several times a day. Which skin care measure is best?",
+    "options": [
+      "Use hot water and scrub the skin",
+      "Powder the skin heavily with talc",
+      "Leave the brief on until the next scheduled change",
+      "Clean gently after each episode and apply a barrier cream"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Prompt gentle cleansing and a barrier product protect the skin from moisture damage. Scrubbing and wet briefs break down skin, and talc can cake and irritate."
+  },
+  {
+    "id": "REXPN-T2-040",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Shock",
+    "stem": "A client is bleeding after surgery. Which findings are early signs of hypovolemic shock? Select all that apply.",
+    "options": [
+      "Slow, bounding pulse",
+      "Heart rate rising from 80 to 115/min",
+      "Restlessness and anxiety",
+      "Warm, dry skin",
+      "Cool, clammy skin"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "The body responds to blood loss with a fast heart rate, cool skin from vasoconstriction and restlessness from reduced brain perfusion. Blood pressure often drops later."
+  },
+  {
+    "id": "REXPN-T2-041",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Organizing workload",
+    "stem": "At the start of a busy day shift, what should the nurse do first to manage the workload?",
+    "options": [
+      "Give all 0900 medications to every client",
+      "Begin morning care with the client in the first room",
+      "Complete charting from the previous shift",
+      "Review report and rank client needs by priority"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Reviewing report and setting priorities lets the nurse see the most urgent needs first and plan time around them. Working room by room may delay care for a client who needs it most."
+  },
+  {
+    "id": "REXPN-T2-042",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "End-of-life care",
+    "stem": "A client is in the last days of life. Which nursing actions support the client and family? Select all that apply.",
+    "options": [
+      "Offer mouth care for a dry mouth",
+      "Explain that breathing changes are expected",
+      "Keep talking to the client, who may still hear",
+      "Wake the client to eat full meals",
+      "Invite the family to help with care if they wish"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "explanation": "Comfort care, preparing the family for expected changes, involving them if they wish and speaking to the client, since hearing may last until the end, are central to end-of-life care. Waking the client to eat full meals does not support comfort."
+  },
+  {
+    "id": "REXPN-T2-043",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Postoperative care",
+    "stem": "Which instruction helps prevent atelectasis after abdominal surgery?",
+    "options": [
+      "Limit fluids to keep the secretions thin",
+      "Avoid coughing to protect the incision",
+      "Use the incentive spirometer often while awake",
+      "Stay flat in bed for the first 48 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Deep breathing with an incentive spirometer, splinted coughing and early walking keep the alveoli open. Lying flat, avoiding coughing and limiting fluids increase the risk."
+  },
+  {
+    "id": "REXPN-T2-044",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Infant security",
+    "stem": "A woman in scrubs without a hospital badge tells a new mother she will take the baby for a test. What should the mother be taught to do?",
+    "options": [
+      "Ask her which test it is",
+      "Go along and carry the baby herself",
+      "Refuse and call the nurse",
+      "Let her take the baby if she knows the baby's name"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Infant security teaching tells parents to hand their baby only to staff with the correct identification. Knowing the baby's name or giving a plausible reason does not confirm identity."
+  },
+  {
+    "id": "REXPN-T2-045",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Hand-off report",
+    "stem": "Which information should the nurse include in a bedside hand-off report? Select all that apply.",
+    "options": [
+      "The nurse's opinion of the family",
+      "Code status",
+      "Recent changes in condition",
+      "Allergies",
+      "Pending test results",
+      "IV fluids and their rate"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Hand-off report focuses on what the next nurse needs for safe care: code status, changes, pending results, allergies and current IV therapy. Personal opinions about the family do not belong."
+  },
+  {
+    "id": "REXPN-T2-046",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Anticoagulants",
+    "stem": "A client is going home on apixaban. Which instructions should the nurse reinforce? Select all that apply.",
+    "options": [
+      "Use a soft toothbrush and an electric razor",
+      "Take ASA for headaches",
+      "Double the next dose if you miss one",
+      "Do not stop the drug without asking your prescriber",
+      "Report black stools or blood in the urine"
+    ],
+    "correct": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Bleeding precautions and reporting signs of bleeding are key, and stopping suddenly raises the risk of clots. ASA adds to bleeding risk, and missed doses are never doubled."
+  },
+  {
+    "id": "REXPN-T2-047",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Car seats",
+    "stem": "Parents ask how their newborn should ride in the car on the way home. What should the nurse reinforce?",
+    "options": [
+      "In a rear-facing seat in the back seat",
+      "In a booster seat with a lap belt",
+      "In a forward-facing seat in the front",
+      "Held securely on a parent's lap"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Infants ride rear-facing in the back seat in a car seat that meets Canadian safety standards. When to move to a forward-facing seat depends on the seat's limits and provincial law, which varies."
+  },
+  {
+    "id": "REXPN-T2-048",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cultural care",
+    "stem": "A Muslim client is fasting for Ramadan and is scheduled for a morning dose of an oral medication. What should the nurse do?",
+    "options": [
+      "Skip all of the client's medications",
+      "Tell the client fasting is not allowed in hospital",
+      "Ask the client how they would like to manage the fast",
+      "Give the dose without discussing it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Respecting cultural and religious practice means asking the client. Many people who are ill are exempt from fasting, and timing can sometimes be changed with the prescriber and pharmacist."
+  },
+  {
+    "id": "REXPN-T2-049",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Neurovascular checks",
+    "stem": "The nurse is doing neurovascular checks on a client with a new leg cast. Which findings should be reported? Select all that apply.",
+    "options": [
+      "Toes warm and pink",
+      "Pain not relieved by the ordered analgesic",
+      "Able to wiggle the toes",
+      "Capillary refill of 5 seconds in the toes",
+      "Numbness and tingling in the foot"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Unrelieved pain, slow capillary refill and numbness can signal compartment syndrome, an emergency. Warm, pink, moving toes are normal."
+  },
+  {
+    "id": "REXPN-T2-050",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Client rights",
+    "stem": "A client asks to read her own health record. What is the nurse's best response?",
+    "options": [
+      "\"You can read it after you are discharged.\"",
+      "\"You have a right to see it. I'll start the agency's access process.\"",
+      "\"Only your doctor is allowed to read your chart.\"",
+      "\"Health records belong to the hospital, so I can't share them.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Provincial health privacy laws give clients a right to access their own records, with narrow exceptions. The nurse follows the agency's process, which may include having someone available to explain the content."
+  },
+  {
+    "id": "REXPN-T2-051",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hypertension prevention",
+    "stem": "A client at risk for hypertension asks about diet. Which advice should the nurse reinforce?",
+    "options": [
+      "Limit sodium and choose fresh foods",
+      "Replace fruit with low-fat cheese",
+      "Use sea salt instead of table salt",
+      "Eat more canned soup for convenience"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lowering sodium, mostly by cutting processed and canned foods, and eating more vegetables and fruit lowers blood pressure. Sea salt contains as much sodium as table salt."
+  },
+  {
+    "id": "REXPN-T2-052",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Intake and output",
+    "stem": "Over 12 hours, a client's urinary catheter drains 1050 mL. A continuous bladder irrigation ran 600 mL into the bladder over the same period. What is the client's true urine output in mL? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "450"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Irrigation fluid comes back out with the urine, so it is subtracted: 1050 - 600 = 450 mL of true urine output."
+  },
+  {
+    "id": "REXPN-T2-053",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Head injury",
+    "stem": "After a fall, a client's level of consciousness worsens and one pupil is larger than the other. What does this suggest?",
+    "options": [
+      "Mild concussion only",
+      "Dehydration",
+      "Expected effect of pain medication",
+      "Rising intracranial pressure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Declining consciousness and an unequal pupil are signs of rising intracranial pressure, such as from a bleed, and need urgent reporting."
+  },
+  {
+    "id": "REXPN-T2-054",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nitroglycerin",
+    "stem": "A client with angina has chest pain at rest. Which instruction about sublingual nitroglycerin is correct?",
+    "options": [
+      "Take three doses at once for the fastest relief",
+      "Lie flat and wait 30 minutes before any dose",
+      "Swallow the tablet whole with a glass of water",
+      "Sit, take one dose, call 911 if no better in 5 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Current teaching is one dose while seated, and a call to 911 if pain is unchanged or worse after 5 minutes, since it may be a heart attack. Doses are taken one at a time under the tongue."
+  },
+  {
+    "id": "REXPN-T2-055",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Social media",
+    "stem": "A nurse posts online, \"Long shift with a famous hockey player in room 6!\" with no name. Which statement about the post is correct?",
+    "options": [
+      "It is a breach, because the client can be identified",
+      "It is a breach of policy only if the client complains",
+      "It is acceptable as long as the account is set to private",
+      "It is acceptable, because no name or photo was used"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Details such as a public role and room number can identify a client without a name. Any post about clients is a confidentiality breach, whatever the account's privacy settings."
+  },
+  {
+    "id": "REXPN-T2-056",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Verifying orders",
+    "stem": "An order reads \"morphine 40 mg subcut every 4 hours as needed\" for an opioid-naive older adult. What should the nurse do?",
+    "options": [
+      "Give it only if the pain is 10 out of 10",
+      "Give the dose and monitor respirations closely",
+      "Hold it and clarify the dose with the prescriber",
+      "Give a quarter of the dose to be safe"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "This is a very high dose for a client who has not taken opioids before. The nurse is accountable for every dose given and must verify an order that appears unsafe; changing the dose without an order is not allowed."
+  },
+  {
+    "id": "REXPN-T2-057",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Central venous access devices",
+    "stem": "The nurse is changing the transparent dressing on a client's PICC. Which action is correct?",
+    "options": [
+      "Use clean technique and soap and water",
+      "Use sterile technique and clean with chlorhexidine",
+      "Pull the catheter back if it looks too long",
+      "Remove the stabilizing device each time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Central line dressings are changed with sterile technique and a chlorhexidine-based antiseptic to prevent bloodstream infection. The catheter is never pulled back or pushed in."
+  },
+  {
+    "id": "REXPN-T2-058",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Crisis intervention",
+    "stem": "A client whose house burned down last night is crying and cannot decide what to do next. What is the nurse's priority?",
+    "options": [
+      "Refer the client for long-term therapy only",
+      "Help the client meet immediate needs such as shelter",
+      "Tell the client to be grateful no one was hurt",
+      "Explore the client's childhood coping patterns"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crisis intervention focuses on the present problem and immediate safety and needs, with direct help to solve them. Long-term exploration comes later."
+  },
+  {
+    "id": "REXPN-T2-059",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diagnostic tests",
+    "stem": "A client is scheduled for an abdominal ultrasound of the gallbladder. What preparation does the nurse expect?",
+    "options": [
+      "An iodine allergy test",
+      "A full bladder after drinking 1 L of water",
+      "Nothing to eat for several hours before",
+      "A full bowel preparation the night before"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fasting lets the gallbladder fill with bile so it can be seen. Bowel prep is for colonoscopy, and a full bladder is needed for pelvic ultrasound."
+  },
+  {
+    "id": "REXPN-T2-060",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transfers",
+    "stem": "A client is being transferred from the medical unit to a rehabilitation unit in the same hospital. What should the nurse provide to the receiving nurse?",
+    "options": [
+      "A verbal report and the client's current care plan",
+      "Nothing, since the chart is electronic",
+      "A summary of the client's family history",
+      "Only the medication administration record"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A transfer needs a hand-off that covers the client's condition, care plan, medications and outstanding issues. An electronic chart does not replace a direct report."
+  },
+  {
+    "id": "REXPN-T2-061",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Readiness to learn",
+    "stem": "The nurse plans to teach insulin injection. Which client finding shows readiness to learn?",
+    "options": [
+      "Is drowsy after a sedative",
+      "Asks how to draw up the dose",
+      "Says he cannot think about it today",
+      "Rates pain 8 out of 10"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Asking questions shows interest and readiness. Severe pain, denial and drowsiness are barriers that the nurse addresses before teaching."
+  },
+  {
+    "id": "REXPN-T2-062",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Assistive devices",
+    "stem": "A client says her hearing aid is whistling. What should the nurse check first?",
+    "options": [
+      "That the battery has been removed",
+      "That the client's ear canal is dry",
+      "That the aid is seated properly in the ear",
+      "That the volume is turned all the way up"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Whistling, or feedback, is most often caused by an aid that is not seated well or by earwax. Turning the volume up makes it worse."
+  },
+  {
+    "id": "REXPN-T2-063",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fluid volume deficit",
+    "stem": "An older client with diarrhea for 3 days has dry mucous membranes and dark urine. Which other finding fits fluid volume deficit?",
+    "options": [
+      "Pitting edema of both ankles",
+      "Bounding pulse and high BP",
+      "Crackles heard in both lungs",
+      "Heart rate 112/min, dizzy on standing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fluid loss lowers circulating volume, so the heart speeds up and blood pressure falls on standing. Crackles, edema and a bounding pulse mean fluid overload."
+  },
+  {
+    "id": "REXPN-T2-064",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Serotonin syndrome",
+    "stem": "A client taking sertraline was started on tramadol 2 days ago and now has agitation, sweating, a heart rate of 124/min and muscle twitching. What should the nurse suspect?",
+    "options": [
+      "Serotonin syndrome",
+      "Alcohol withdrawal",
+      "Hypoglycemia",
+      "Opioid withdrawal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An SSRI combined with tramadol can cause serotonin syndrome: agitation, sweating, fast heart rate and twitching or clonus. It needs prompt reporting and stopping the drugs."
+  },
+  {
+    "id": "REXPN-T2-065",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Near misses",
+    "stem": "The nurse catches that the pharmacy sent the wrong strength of a tablet before giving it. What should the nurse do after getting the correct medication?",
+    "options": [
+      "Tell the client the pharmacy made an error",
+      "Return the tablet without comment",
+      "Report the near miss as the agency requires",
+      "Do nothing, since the client was not harmed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Near misses are reported because they show weak spots in the system before someone is harmed. The report supports learning, not blame."
+  },
+  {
+    "id": "REXPN-T2-066",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Abuse in long-term care",
+    "stem": "A resident in long-term care tells the nurse that a staff member slapped her during the night. What should the nurse do?",
+    "options": [
+      "Ask the staff member to explain what happened",
+      "Ensure the resident's safety and report it as required",
+      "Wait to see if the resident repeats the story",
+      "Tell the resident's family and let them decide"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The nurse protects the resident first, then reports the allegation following agency policy and provincial law; several provinces make reporting abuse in long-term care mandatory. Investigating is not the nurse's role."
+  },
+  {
+    "id": "REXPN-T2-067",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mania",
+    "stem": "A client in an acute manic episode will not sit down to eat. Which approach should the nurse use?",
+    "options": [
+      "Serve three large meals at the table",
+      "Tell the client meals are only at set times",
+      "Offer high-calorie finger foods and drinks",
+      "Wait until the client asks for food"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Clients in mania burn many calories and cannot sit still, so portable high-calorie foods they can eat on the move help keep up nutrition."
+  },
+  {
+    "id": "REXPN-T2-068",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Vital sign changes",
+    "passage": "| Time | BP | Heart rate | Respirations | Temperature |\n|---|---|---|---|---|\n| 0800 | 126/78 | 84 | 16 | 37.2 °C |\n| 1200 | 112/70 | 102 | 22 | 38.4 °C |\n| 1600 | 94/58 | 118 | 26 | 38.9 °C |",
+    "stem": "A client is admitted with a kidney infection. The vital signs over the day are shown. What do these trends most suggest?",
+    "options": [
+      "Expected response to antibiotics",
+      "Pain from the infection only",
+      "Anxiety about the admission",
+      "Developing sepsis"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rising temperature, heart rate and respirations with a falling blood pressure in a client with infection suggest sepsis. It needs urgent reporting and treatment."
+  },
+  {
+    "id": "REXPN-T2-069",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Supporting students",
+    "stem": "A nursing student asks to give a subcutaneous injection for the first time. How should the nurse support the student?",
+    "options": [
+      "Supervise directly and give feedback afterward",
+      "Let the student give it alone to build confidence",
+      "Ask the client to coach the student",
+      "Give the injection and let the student watch"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Direct supervision keeps the client safe while the student learns, and feedback afterward helps the student improve. Supporting students and new staff is part of the nurse's role."
+  },
+  {
+    "id": "REXPN-T2-070",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transdermal medications",
+    "stem": "A client has a fentanyl patch for cancer pain. Which instruction should the nurse reinforce?",
+    "options": [
+      "Apply a new patch over the old one",
+      "Cut the patch in half for a smaller dose",
+      "Do not use a heating pad over the patch",
+      "Place it on the same spot each time"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Heat speeds absorption and can cause an overdose. Patches are not cut, the old one is removed before the new one goes on, and sites are rotated."
+  },
+  {
+    "id": "REXPN-T2-071",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Safe client handling",
+    "stem": "A client who weighs 120 kg and cannot bear weight needs to move from bed to a chair. What should the nurse use?",
+    "options": [
+      "A sliding board with the client's help",
+      "A mechanical lift with trained help",
+      "A pivot transfer with one assistant",
+      "A gait belt and the nurse alone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A client who cannot bear weight is moved with a mechanical lift according to safe client handling policy, which protects both the client and staff."
+  },
+  {
+    "id": "REXPN-T2-072",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health screening",
+    "stem": "A 60-year-old with no symptoms asks about colorectal cancer screening. What is the best response?",
+    "options": [
+      "\"Screening is only needed if you see blood in your stool.\"",
+      "\"Screening starts at age 75.\"",
+      "\"Most provinces offer a home stool test every 1 to 2 years at your age.\"",
+      "\"You need a colonoscopy every year.\""
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Average-risk adults aged 50 to 74 are screened, usually with a home fecal immunochemical test every 1 to 2 years; details vary by province. Screening is for people without symptoms, and yearly colonoscopy is not routine."
+  },
+  {
+    "id": "REXPN-T2-073",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Irrigations",
+    "stem": "The nurse is irrigating a client's eye after a chemical splash. Which technique is correct?",
+    "options": [
+      "Stop once the client's eye stops stinging",
+      "Aim the stream directly onto the cornea",
+      "Flow from the inner corner toward the outer corner",
+      "Flow from the outer corner toward the nose"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Irrigating from inner to outer canthus carries the chemical away from the other eye and the tear duct. The stream is not aimed at the cornea, and irrigation continues for the ordered time."
+  },
+  {
+    "id": "REXPN-T2-074",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractures",
+    "stem": "A client fell on the ice and has a deformed, painful forearm. What should the nurse do first?",
+    "options": [
+      "Have the client wiggle the fingers hard",
+      "Splint it as found and check circulation",
+      "Apply heat to the arm to ease the pain",
+      "Straighten the arm before splinting it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A suspected fracture is splinted as found, with circulation, movement and sensation checked below it. Straightening it can damage nerves and vessels, and ice, not heat, is used."
+  },
+  {
+    "id": "REXPN-T2-075",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Quality improvement",
+    "stem": "Falls on the unit have doubled over three months. How can the nurse best contribute to improvement?",
+    "options": [
+      "Restrain clients who are at risk of falls",
+      "Join the unit's falls review and audit",
+      "Leave the matter to the manager",
+      "Keep all clients in bed after supper"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Quality improvement uses data and frontline input to find causes and test changes. Restraints and enforced bed rest cause harm and are not falls prevention."
+  },
+  {
+    "id": "REXPN-T2-076",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Eye medications",
+    "stem": "A client has two different eye drops due at the same time. What should the nurse do?",
+    "options": [
+      "Wait about 5 minutes between the drops",
+      "Give both drops in the same second",
+      "Give one drop in each eye only",
+      "Mix them together in one bottle"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Waiting about 5 minutes lets the first drop absorb so the second does not wash it out."
+  },
+  {
+    "id": "REXPN-T2-077",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Body image",
+    "stem": "A client who had a below-the-knee amputation refuses to look at the stump. What should the nurse do?",
+    "options": [
+      "Tell the client that looking will make it easier",
+      "Accept this and offer chances to look when ready",
+      "Cover the area so the client never has to see it",
+      "Insist the client looks during each dressing change"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Adjusting to a changed body takes time. The nurse respects the client's pace while offering gentle opportunities to look and to talk about the loss."
+  },
+  {
+    "id": "REXPN-T2-078",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laboratory values",
+    "stem": "A client with diabetes has a capillary blood glucose of 3.2 mmol/L and is awake and able to swallow. What should the nurse do first?",
+    "options": [
+      "Give the scheduled insulin dose",
+      "Give a full meal tray right away",
+      "Give 15 g of fast-acting carbohydrate",
+      "Recheck the glucose in 1 hour"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hypoglycemia is a glucose below 4.0 mmol/L. An alert client gets 15 g of fast-acting carbohydrate, such as juice or glucose tablets, with a recheck in 15 minutes."
+  },
+  {
+    "id": "REXPN-T2-079",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Client rights",
+    "stem": "Which actions respect a client's rights in hospital? Select all that apply.",
+    "options": [
+      "Knocking and waiting before entering",
+      "Moving the client's belongings without asking",
+      "Discussing the client's care in the elevator",
+      "Reading the client's mail to keep them informed",
+      "Closing the curtain during care",
+      "Explaining a procedure before starting"
+    ],
+    "correct": [
+      0,
+      4,
+      5
+    ],
+    "explanation": "Privacy, dignity and the right to know what is being done are basic client rights. Reading mail, moving belongings without permission and talking about care in public spaces violate them."
+  },
+  {
+    "id": "REXPN-T2-080",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Home safety",
+    "stem": "The nurse visits an 82-year-old client at home. Which changes would make the home safer? Select all that apply.",
+    "options": [
+      "Wax the floors to make cleaning easier",
+      "Install grab bars beside the toilet",
+      "Store daily items on high shelves",
+      "Remove loose scatter rugs",
+      "Add night lights in the hallway",
+      "Keep a cordless phone within reach"
+    ],
+    "correct": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Removing trip hazards, grab bars, night lights and a reachable phone lower fall risk and help the client get help. Waxed floors are slippery, and high shelves lead to climbing and reaching."
+  },
+  {
+    "id": "REXPN-T2-081",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medication reconciliation",
+    "stem": "During admission medication reconciliation, a client says she also takes St. John's wort. What should the nurse do?",
+    "options": [
+      "Tell the client to double it in hospital",
+      "Leave it off the list because it is herbal",
+      "Add it to the list and tell the prescriber",
+      "Throw away the client's supply"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Natural health products count in reconciliation because they can interact with drugs. St. John's wort interacts with many medications, including antidepressants and warfarin."
+  },
+  {
+    "id": "REXPN-T2-082",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Medical assistance in dying",
+    "stem": "A capable client with advanced cancer asks the nurse about medical assistance in dying (MAID). What should the nurse do?",
+    "options": [
+      "Give the client the forms to sign today",
+      "Change the subject to the client's pain control",
+      "Tell the client nurses cannot talk about MAID",
+      "Listen, and tell the health care team about the request"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under federal law, MAID is provided by physicians and nurse practitioners, but a nurse can listen and give information within their role. The request is passed to the team so the client can be assessed; dismissing it or rushing paperwork is inappropriate."
+  },
+  {
+    "id": "REXPN-T2-083",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Older adult screening",
+    "stem": "An 80-year-old keeps asking the nurse to repeat questions and turns the TV up loudly. What should the nurse do?",
+    "options": [
+      "Assume the client has dementia",
+      "Write all questions in very small print",
+      "Report a possible hearing loss for screening",
+      "Speak louder and higher pitched"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "These are signs of hearing loss, which is common and treatable in older adults and should be screened. A lower-pitched, clear voice is easier to hear than shouting."
+  },
+  {
+    "id": "REXPN-T2-084",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Activities of daily living",
+    "stem": "A client with right-sided weakness is learning to put on a shirt. What should the nurse reinforce?",
+    "options": [
+      "Dress the right arm first",
+      "Dress the left arm first",
+      "Put both arms in at the same time",
+      "Wear only pullover shirts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Clothes go on the weak side first and come off the strong side first, which needs the least movement of the weak limb."
+  },
+  {
+    "id": "REXPN-T2-085",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Respiratory distress",
+    "stem": "A client with pneumonia becomes more short of breath. Which position should the nurse use first?",
+    "options": [
+      "Flat on the back",
+      "High Fowler's, sitting upright",
+      "Trendelenburg, head down",
+      "Prone, flat on the stomach"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sitting upright lets the diaphragm move down and the lungs expand, easing breathing while the nurse checks oxygen and reports the change."
+  },
+  {
+    "id": "REXPN-T2-086",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opioid use disorder",
+    "stem": "A client with opioid use disorder asks about treatment options. Which response is accurate?",
+    "options": [
+      "\"Stopping all opioids at once at home is safest.\"",
+      "\"Naloxone is a daily medicine to stop cravings.\"",
+      "\"Treatment only works if you are admitted for a year.\"",
+      "\"Medications such as buprenorphine-naloxone reduce cravings.\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Opioid agonist treatment such as buprenorphine-naloxone or methadone is first-line care in Canada. Naloxone reverses an overdose; it is not a daily treatment."
+  },
+  {
+    "id": "REXPN-T2-087",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anticoagulant monitoring",
+    "stem": "A client is on a continuous heparin infusion. Which test does the nurse expect to be used to adjust the dose?",
+    "options": [
+      "aPTT",
+      "INR",
+      "Platelet count only",
+      "A1C"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Unfractionated heparin is monitored with the aPTT (or an anti-Xa level in some agencies). The INR monitors warfarin."
+  },
+  {
+    "id": "REXPN-T2-088",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Removing PPE",
+    "stem": "The nurse is leaving the room of a client on contact and droplet precautions. Which item of personal protective equipment should the nurse remove first?",
+    "options": [
+      "Mask",
+      "Gloves",
+      "Eye protection",
+      "Gown"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gloves are the most contaminated item, so they come off first, followed by the gown, hand hygiene, eye protection and the mask, with hand hygiene again at the end."
+  },
+  {
+    "id": "REXPN-T2-089",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Subcutaneous infusions",
+    "stem": "A palliative client has a continuous subcutaneous infusion of hydromorphone. Which finding at the site should the nurse act on?",
+    "options": [
+      "A small subcutaneous catheter in the upper chest",
+      "A clear, intact dressing",
+      "Redness and a firm lump around the needle",
+      "No pain when the site is touched"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Redness and hardness mean irritation or leakage that slows absorption, so the site is changed. A clean, intact, painless site in a suitable area is expected."
+  },
+  {
+    "id": "REXPN-T2-090",
+    "section": "rexpn",
+    "test": 2,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Supervising UCPs",
+    "stem": "Four reports come from unregulated care providers. Which one needs the nurse's follow-up first?",
+    "options": [
+      "\"Mrs. Lee is breathing noisily and is hard to wake.\"",
+      "\"Mrs. Roy would like a different, warmer blanket.\"",
+      "\"Mr. Silva ate only half of his lunch today.\"",
+      "\"Mr. Park's urine looks dark yellow this morning.\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Noisy breathing with decreased responsiveness can mean airway compromise or deteriorating consciousness, an urgent change. Low intake, comfort requests and concentrated urine are followed up after."
+  },
+  {
+    "id": "REXPN-D-001",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Abbreviations",
+    "stem": "An order reads \"insulin regular 4 U subcut before meals.\" Why is this abbreviation unsafe?",
+    "options": [
+      "U can be misread as 0 or 4",
+      "U means the dose is given under the tongue",
+      "U is the abbreviation for units of blood",
+      "U should be written as IU for insulin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Handwritten U can look like 0 or 4, turning 4 units into 40 or 44. Do-not-use lists require \"units\" to be written out."
+  },
+  {
+    "id": "REXPN-D-002",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Herpes zoster",
+    "stem": "An immunocompromised client has shingles spread over several dermatomes. Which precautions are needed?",
+    "options": [
+      "Standard precautions only",
+      "Droplet precautions only",
+      "Contact precautions only",
+      "Airborne and contact precautions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Disseminated zoster, or zoster in an immunocompromised client, can spread varicella through the air, so airborne and contact precautions are used until lesions crust. Staff who are not immune should not provide care."
+  },
+  {
+    "id": "REXPN-D-003",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Postpartum care",
+    "stem": "Which pattern of lochia is expected over the first two weeks after birth?",
+    "options": [
+      "Yellowish white, then red, then brown",
+      "Pinkish brown, then bright red with clots",
+      "Bright red throughout the two weeks",
+      "Red, then pinkish brown, then yellowish white"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lochia rubra lasts about 3 days, serosa until about day 10, and alba after that. A return to bright red bleeding is reported."
+  },
+  {
+    "id": "REXPN-D-004",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Non-substance dependencies",
+    "stem": "A client says he has spent his rent money on online betting again. Which response is most helpful?",
+    "options": [
+      "\"Why would you do that with your rent money?\"",
+      "\"Would you like to hear about gambling supports?\"",
+      "\"Lots of people bet online, so it's nothing.\"",
+      "\"You just need to stop logging in to those sites.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Problem gambling is a recognized dependency. Offering resources without judgment supports change; provincial helplines and counselling are available."
+  },
+  {
+    "id": "REXPN-D-005",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Enteral medications",
+    "stem": "The nurse gives medications through a feeding tube. What should the nurse do between each medication?",
+    "options": [
+      "Mix all medications together first",
+      "Add each medication to the feed bag",
+      "Flush the tube with water",
+      "Clamp the tube for an hour"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each medication is given separately with a water flush before, between and after, to keep the tube open and prevent drug interactions."
+  },
+  {
+    "id": "REXPN-D-006",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "IV flow rate",
+    "stem": "A client is to receive 250 mL of IV fluid over 2 hours by gravity. The tubing drop factor is 20 gtt/mL. How many gtt/min should the nurse set? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "42"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "250 mL times 20 gtt/mL is 5000 drops, and 5000 divided by 120 minutes is 41.7, which rounds to 42 gtt/min."
+  },
+  {
+    "id": "REXPN-D-007",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laboratory values",
+    "stem": "A client's hemoglobin is 72 g/L. Which finding does the nurse expect?",
+    "options": [
+      "A slow, steady heart rate",
+      "Flushed, ruddy skin on the face",
+      "Fatigue and breathlessness on exertion",
+      "High blood pressure and headache"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Normal hemoglobin is about 120 to 160 g/L in women and 140 to 180 g/L in men. Severe anemia reduces oxygen delivery, causing fatigue, breathlessness and a fast heart rate."
+  },
+  {
+    "id": "REXPN-D-008",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hypothermia",
+    "stem": "An older adult found outside in winter has a temperature of 33.5 °C and is shivering and confused. What should the nurse do?",
+    "options": [
+      "Remove wet clothes and use warm blankets",
+      "Rub the arms and legs vigorously",
+      "Give a warm alcoholic drink to sip",
+      "Place the client in a hot bath right away"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Removing wet clothing and gradual rewarming with blankets and warm IV fluids if ordered are safest. Rubbing limbs, hot baths and alcohol can cause rhythm problems or burns."
+  },
+  {
+    "id": "REXPN-D-009",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Conscientious objection",
+    "stem": "A nurse has a moral objection to taking part in a legal procedure a client has chosen. What is the nurse's responsibility?",
+    "options": [
+      "Tell the client the procedure is wrong",
+      "Refuse to care for the client in any way",
+      "Ignore the objection and take part",
+      "Tell the employer early so care can be transferred"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Nursing regulators allow conscientious objection, but the nurse must give advance notice so care can be safely transferred and must not abandon the client or impose personal beliefs."
+  },
+  {
+    "id": "REXPN-D-010",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Oxygen safety",
+    "stem": "A client using home oxygen asks what safety rule matters most. What should the nurse reinforce?",
+    "options": [
+      "Use petroleum jelly inside the nostrils",
+      "No smoking or open flames near the oxygen",
+      "Keep the tank in a closed closet",
+      "Turn the flow up when short of breath"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Oxygen makes things burn faster, so smoking, candles and open flames are dangerous near it. Tanks need ventilation, flow changes need an order, and water-based lubricant is used instead of petroleum products."
+  },
+  {
+    "id": "REXPN-D-011",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preschool development",
+    "stem": "A 4-year-old in hospital is very afraid of a blood draw. What does the nurse expect at this age?",
+    "options": [
+      "Fear of losing control in front of peers",
+      "Fear of separation from friends",
+      "Fear about long-term life plans",
+      "Fear of body injury and magical thinking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Preschoolers fear body injury and use magical thinking, so a bandage and simple, honest words help. Losing face with peers and separation from friends matter more to older children and teens."
+  },
+  {
+    "id": "REXPN-D-012",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Eating disorders",
+    "stem": "A teen with anorexia nervosa is starting nutritional rehabilitation. Which finding should the nurse report right away?",
+    "options": [
+      "A serum phosphate below the normal range",
+      "Feeling full after small meals",
+      "Asking to choose her own meal times",
+      "Saying she is afraid of gaining weight"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Low phosphate early in refeeding signals refeeding syndrome, which can cause heart failure and dysrhythmias. Fullness and fear of weight gain are expected."
+  },
+  {
+    "id": "REXPN-D-013",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Sleep",
+    "stem": "Which suggestions promote sleep for a client in hospital? Select all that apply.",
+    "options": [
+      "Offer a large meal at bedtime",
+      "Keep the TV on all night",
+      "Offer strong coffee after supper",
+      "Offer a back rub at bedtime",
+      "Group care to limit night-time waking"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "Fewer interruptions and relaxation support sleep. A heavy meal, caffeine and constant TV noise disturb it."
+  },
+  {
+    "id": "REXPN-D-014",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Corticosteroids",
+    "stem": "A client has been on prednisone 40 mg daily for 6 weeks. What should the nurse reinforce?",
+    "options": [
+      "Expect your blood sugar to fall",
+      "Take it on an empty stomach at bedtime",
+      "Stop the drug as soon as you feel better",
+      "Do not stop the drug suddenly; follow the taper"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Long-term steroids suppress the adrenal glands, so stopping suddenly can cause adrenal crisis. Prednisone is taken with food in the morning, and it raises blood sugar."
+  },
+  {
+    "id": "REXPN-D-015",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Post-procedure care",
+    "stem": "A client had a bronchoscopy with throat anesthetic 1 hour ago. Before offering a drink, what should the nurse check?",
+    "options": [
+      "That the gag reflex has returned",
+      "That bowel sounds are present",
+      "That the client has voided",
+      "That the client can walk unaided"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The throat is numbed for the procedure, so fluids could be aspirated until the gag and swallow reflexes return."
+  },
+  {
+    "id": "REXPN-D-016",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sepsis",
+    "stem": "A client on the ward meets the agency's sepsis screening criteria. Which order does the nurse expect within the first hour?",
+    "options": [
+      "A repeat temperature in 4 hours",
+      "Antibiotics by mouth after supper",
+      "Fluid restriction to 1 L a day",
+      "Blood cultures before IV antibiotics"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sepsis care is time-critical: blood cultures are drawn and IV antibiotics and fluids started within the first hour."
+  },
+  {
+    "id": "REXPN-D-017",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Leaving a shift",
+    "stem": "Partway through a shift, the nurse feels too ill to continue. What must the nurse do before leaving?",
+    "options": [
+      "Finish documenting and leave quietly",
+      "Give report to the charge nurse",
+      "Text a coworker to cover the clients",
+      "Leave a note at the nursing station"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Leaving without handing over care can be client abandonment. The nurse tells the person in charge and gives report so another nurse takes over."
+  },
+  {
+    "id": "REXPN-D-018",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Restraint monitoring",
+    "stem": "A client is in soft wrist restraints by order. Which actions should the nurse take? Select all that apply.",
+    "options": [
+      "Tie the restraints to the bed frame",
+      "Tie the restraints to the side rails",
+      "Release each restraint to give range of motion",
+      "Check circulation in the hands regularly",
+      "Leave the call bell out of reach"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Restraints are tied to the frame, which moves with the bed, and are released regularly to check skin and circulation and move the joints. Tying to rails can injure the client when the rail is lowered."
+  },
+  {
+    "id": "REXPN-D-019",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Smoking cessation",
+    "stem": "A client who smokes says, \"I'd like to quit someday.\" What is the nurse's best response?",
+    "options": [
+      "\"Would you like to set a quit date together?\"",
+      "\"Quitting is easy if you have willpower.\"",
+      "\"Cutting down to a few cigarettes is safe.\"",
+      "\"You should switch to cigars instead.\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Building on the client's interest with a plan, medication options and provincial quit lines raises the chance of success. Cutting down and switching products do not remove the risk."
+  },
+  {
+    "id": "REXPN-D-020",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trauma-informed care",
+    "stem": "A client with post-traumatic stress disorder startles when staff enter the room. Which approach is trauma-informed?",
+    "options": [
+      "Knock, say who you are and explain what you will do",
+      "Approach from behind to keep the client calm",
+      "Ask the client to describe the trauma in detail",
+      "Enter quietly to avoid disturbing the client"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Predictability and choice help a client with trauma feel safe. Surprises and pressure to relive the trauma can trigger symptoms."
+  },
+  {
+    "id": "REXPN-D-021",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hip precautions",
+    "stem": "A client had a posterior approach hip replacement. Which action should the client avoid?",
+    "options": [
+      "Bending the hip past 90 degrees",
+      "Sleeping with a pillow between the knees",
+      "Using a raised toilet seat",
+      "Sitting in a raised chair"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After a posterior approach, bending the hip past 90 degrees, crossing the legs and turning the leg inward can dislocate the new joint. Raised seats and an abduction pillow help prevent this."
+  },
+  {
+    "id": "REXPN-D-022",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Parenteral nutrition",
+    "stem": "A client's bag of parenteral nutrition runs out and the next bag has not arrived from pharmacy. What should the nurse hang?",
+    "options": [
+      "Dextrose 10% at the same rate, per protocol",
+      "0.9% sodium chloride at the same rate",
+      "Dextrose 5% at double the rate",
+      "Nothing until the new bag arrives"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Stopping parenteral nutrition suddenly can cause rebound hypoglycemia, so D10W is usually run at the same rate until the new bag arrives. Capillary glucose is checked."
+  },
+  {
+    "id": "REXPN-D-023",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chest tubes",
+    "stem": "A client's chest tube becomes disconnected from the drainage system. What should the nurse do first?",
+    "options": [
+      "Leave it open and call the provider",
+      "Clamp the tube for several hours",
+      "Place the tube end in sterile water",
+      "Pull the tube out of the chest"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Putting the end 2 to 3 cm under sterile water makes a temporary water seal so air cannot enter the chest. Prolonged clamping can cause a tension pneumothorax, and only the provider removes the tube."
+  },
+  {
+    "id": "REXPN-D-024",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Autonomic dysreflexia",
+    "stem": "A client with a spinal cord injury at T4 has a pounding headache, flushed face and a BP of 198/110 mm Hg. What should the nurse do first?",
+    "options": [
+      "Lay the client flat and raise the legs",
+      "Give a sedative to relieve the headache",
+      "Recheck the BP in 1 hour",
+      "Sit the client up and check for a full bladder"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "This is autonomic dysreflexia, triggered by a stimulus below the injury, most often a full bladder. Sitting up lowers the BP, and the cause is found and removed."
+  },
+  {
+    "id": "REXPN-D-025",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnCare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Spiritual care",
+    "stem": "A client who is dying asks to speak with someone about her faith. Which referral is most appropriate?",
+    "options": [
+      "Social worker",
+      "Occupational therapist",
+      "Spiritual care provider",
+      "Psychologist"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Spiritual care providers support clients with faith and meaning at the end of life, and can contact the client's own faith leader if she wishes."
+  },
+  {
+    "id": "REXPN-D-026",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnSafety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Needlestick injury",
+    "stem": "The nurse gets a needlestick from a used needle. What should the nurse do first?",
+    "options": [
+      "Apply bleach to the puncture",
+      "Wash the site with soap and water",
+      "Squeeze the site hard to make it bleed",
+      "Finish the shift, then report it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The site is washed right away, then the injury is reported at once so testing and any preventive treatment can start quickly. Squeezing and harsh chemicals damage tissue and are not recommended."
+  },
+  {
+    "id": "REXPN-D-027",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnHealth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Immunizations",
+    "stem": "A parent asks whether their child can have a routine vaccine today. Which finding is a reason to delay it?",
+    "options": [
+      "A runny nose without fever",
+      "Mild redness after the last vaccine",
+      "Taking an antibiotic for an ear infection",
+      "Fever of 39.2 °C with a new illness"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A moderate or severe acute illness with fever is a reason to wait. Minor colds, antibiotics and local redness after a past dose are not contraindications."
+  },
+  {
+    "id": "REXPN-D-028",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnPsych",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Spiritual distress",
+    "stem": "A client with a new cancer diagnosis says, \"I don't understand why God would do this to me.\" Which response is best?",
+    "options": [
+      "\"This seems to be shaking your faith. Can you tell me more?\"",
+      "\"Let's focus on your treatment plan instead.\"",
+      "\"You shouldn't question your beliefs right now.\"",
+      "\"God doesn't give us more than we can handle.\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The nurse reflects the feeling and invites the client to talk, and can offer a spiritual care referral. Clichés and redirecting dismiss the client's distress."
+  },
+  {
+    "id": "REXPN-D-029",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnComfort",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Heat therapy",
+    "stem": "A client with chronic low back stiffness has an order for a warm pack. What should the nurse do?",
+    "options": [
+      "Let the client lie on top of it",
+      "Leave it on for at least 1 hour",
+      "Apply it directly to bare skin",
+      "Wrap the pack and check the skin often"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A cover between the pack and the skin, limited time and frequent skin checks prevent burns. Lying on a heat source traps heat against the skin."
+  },
+  {
+    "id": "REXPN-D-030",
+    "section": "rexpn",
+    "test": 0,
+    "module": 1,
+    "domain": "rexpnPharm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oral hypoglycemics",
+    "stem": "A client taking metformin is scheduled for a CT scan with IV contrast. What should the nurse expect?",
+    "options": [
+      "Metformin may be held around the scan, per protocol",
+      "Metformin will be doubled before the scan",
+      "Insulin will replace metformin permanently",
+      "No change is needed with contrast"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Iodinated contrast can impair kidney function, and metformin then raises the risk of lactic acidosis. Many protocols hold it at or before the scan and restart it once kidney function is confirmed."
+  }
+]

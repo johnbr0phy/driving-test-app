@@ -1,0 +1,103 @@
+{
+  "id": "cscs",
+  "stateCode": "CSCS",
+  "idBase": 8200,
+  "prefix": "CSCS-",
+  "slug": "/cscs",
+  "landingPath": "/cscs-test-practice",
+  "dataFile": "data/cscs-questions.json",
+  "name": "CSCS Test Practice",
+  "shortName": "CSCS Test",
+  "examLabel": "CITB HS&E test",
+  "fullName": "CITB Health, Safety and Environment test for Operatives (CSCS card)",
+  "icon": "hardhat",
+  "passPct": 90,
+  "categories": [
+    {
+      "key": "cscsLegal",
+      "label": "Legal Duties & Site Management",
+      "perTest": 8,
+      "segment": "LEG"
+    },
+    {
+      "key": "cscsWelfare",
+      "label": "Health, Welfare & Emergencies",
+      "perTest": 6,
+      "segment": "WEL"
+    },
+    {
+      "key": "cscsHealth",
+      "label": "Occupational Health & PPE",
+      "perTest": 10,
+      "segment": "HLT"
+    },
+    {
+      "key": "cscsSafety",
+      "label": "Signs, Fire, Electricity, Tools & Plant",
+      "perTest": 10,
+      "segment": "SAF"
+    },
+    {
+      "key": "cscsHeights",
+      "label": "Working at Height",
+      "perTest": 7,
+      "segment": "HGT"
+    },
+    {
+      "key": "cscsExcav",
+      "label": "Excavations & Confined Spaces",
+      "perTest": 4,
+      "segment": "EXC"
+    },
+    {
+      "key": "cscsEnv",
+      "label": "Environment & Waste",
+      "perTest": 5,
+      "segment": "ENV"
+    }
+  ],
+  "trainingSets": [
+    {
+      "n": 1,
+      "name": "Law, Welfare & Emergencies",
+      "categories": [
+        "cscsLegal",
+        "cscsWelfare"
+      ],
+      "size": 56
+    },
+    {
+      "n": 2,
+      "name": "Occupational Health & PPE",
+      "categories": [
+        "cscsHealth"
+      ],
+      "size": 40
+    },
+    {
+      "n": 3,
+      "name": "General Site Safety",
+      "categories": [
+        "cscsSafety"
+      ],
+      "size": 40
+    },
+    {
+      "n": 4,
+      "name": "High-Risk Activities",
+      "categories": [
+        "cscsHeights",
+        "cscsExcav"
+      ],
+      "size": 44
+    },
+    {
+      "n": 5,
+      "name": "Environment & Waste",
+      "categories": [
+        "cscsEnv"
+      ],
+      "size": 20
+    }
+  ]
+}

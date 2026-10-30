@@ -1,0 +1,430 @@
+"""11+ Basics skills (written to data/v2/basics/elevenplus.json by build.py). British spelling, age 9 to 11."""
+
+SKILLS = [
+    # ---------- reading ----------
+    {
+        "id": "elevenplusFindIt",
+        "name": "Find it in the text",
+        "sub": "The answer is written down somewhere",
+        "rule": "Many comprehension questions have an answer that is written in the text. Your job is to find the exact words, not to remember or guess.",
+        "trick": "Pick out a key word from the question, scan the text for it, then read the sentence before and after. Put your finger on the words that answer it.",
+        "passage": "Sam's grandad kept bees at the bottom of the garden. Every July he lifted the frames out of the hive, and Sam helped him spin the honey into jars. They sold the jars at the church fair for two pounds each.",
+        "examples": [
+            {"kind": "good", "text": "When did Grandad take the frames out? Every July.", "note": "The words \"Every July\" are right there in the text."},
+            {"kind": "bad", "text": "When did Grandad take the frames out? In the summer holidays.", "note": "A guess. The text says July, not the holidays."},
+        ],
+        "another": {
+            "text": "It's like a treasure hunt where the treasure is already buried in the story. The question gives you a clue word. Find the clue word, and the treasure is right next to it.",
+            "example": "Question clue: sold\nText: They sold the jars at the church fair\nAnswer: at the church fair",
+        },
+        "walkthrough": {
+            "passage": True,
+            "steps": [
+                {"say": "Question: Where did they sell the honey? The answer is written in the text. We just need to find it."},
+                {"ask": "Which word from the question should we look for?", "options": ["sell", "where"], "answer": 0,
+                 "hint": "Pick the word that is about this story, not a question word.", "line": "Key word: sell"},
+                {"ask": "Which sentence has a word like sell in it?", "options": ["The last one", "The first one"], "answer": 0,
+                 "line": "\"They sold the jars at the church fair\""},
+                {"ask": "So where did they sell the honey?", "options": ["At the church fair", "At the bottom of the garden", "At school"], "answer": 0,
+                 "then": "The words are right there: \"at the church fair\". The garden is where the bees lived.", "line": "Answer: at the church fair"},
+            ],
+        },
+        "questions": [
+            {"passage": "The museum opens at ten o'clock. On Saturdays there is a free dinosaur trail for children, which starts at eleven.",
+             "stem": "What time does the dinosaur trail start?", "options": ["Eleven o'clock", "Ten o'clock", "Twelve o'clock"], "answer": 0,
+             "why": "The text says the trail \"starts at eleven\". Ten is when the museum opens."},
+            {"passage": "Priya's bike had a flat tyre, so she walked to school with her friend Ella. They arrived just as the bell rang.",
+             "stem": "Why did Priya walk to school?", "options": ["Her bike had a flat tyre.", "She wanted to walk with Ella.", "She was late."], "answer": 0,
+             "why": "The text gives the reason: her bike had a flat tyre, \"so she walked\"."},
+        ],
+    },
+    {
+        "id": "elevenplusReadBetween",
+        "name": "Reading between the lines",
+        "sub": "Use clues to work out what is not said",
+        "rule": "Some answers are not written down. You work them out from clues, like a detective. The right answer is the one the clues point to, not a wild guess.",
+        "trick": "Find two or three clues in the text. Ask: what do these clues together tell me? Then check your answer does not need anything the text never said.",
+        "passage": "Leo stared at the spelling test. His hands were sweaty and he kept rubbing out the same word. When the teacher said \"Pens down\", he let out a long breath.",
+        "examples": [
+            {"kind": "good", "text": "Leo was nervous about the test.", "note": "Sweaty hands, rubbing out, a long breath when it ended."},
+            {"kind": "bad", "text": "Leo got every word wrong.", "note": "Nothing in the text tells us his score."},
+        ],
+        "another": {
+            "text": "If you see wet footprints and a dripping umbrella by the door, nobody needs to tell you it is raining outside. The clues tell you. That is reading between the lines.",
+            "example": "Clues: wet footprints, dripping umbrella\nSo: it is raining",
+        },
+        "walkthrough": {
+            "passage": True,
+            "steps": [
+                {"say": "Question: How did Leo feel about the test? The text never says the feeling. We find clues."},
+                {"ask": "Clue 1: his hands were sweaty. What is clue 2?", "options": ["He kept rubbing out a word", "It was a spelling test"], "answer": 0,
+                 "line": "Clues: sweaty hands, rubbing out"},
+                {"ask": "Clue 3: he let out a long breath at the end. Together the clues show he was:", "options": ["nervous", "bored", "excited"], "answer": 0,
+                 "hint": "Sweaty hands and a big breath out when it ends. How do you feel when that happens?",
+                 "then": "Sweaty hands, rubbing out and a big sigh of relief all point to nerves.", "line": "Leo felt nervous"},
+                {"ask": "Another answer says \"Leo got every word wrong\". Is that a good answer?", "options": ["No, no clue says that", "Yes"], "answer": 0,
+                 "then": "The text never tells us his score, so that is a guess, not an inference.", "line": "\"Every word wrong\" is a guess"},
+            ],
+        },
+        "questions": [
+            {"passage": "Mum looked at the muddy footprints across the clean kitchen floor, then at Rex, who was hiding under the table with his tail between his legs.",
+             "stem": "What can you work out?", "options": ["Rex made the muddy footprints.", "Mum had just bought Rex.", "Rex was hungry."], "answer": 0,
+             "why": "Rex is hiding with his tail down as Mum looks at the mud: the clues point to him."},
+            {"passage": "Aisha pulled her hat down over her ears and stamped her feet. Her breath made little clouds in the air.",
+             "stem": "What is the weather probably like?", "options": ["Very cold", "Very hot", "Windy and wet"], "answer": 0,
+             "why": "A hat over the ears, stamping feet and breath you can see all mean it is cold."},
+        ],
+    },
+    {
+        "id": "elevenplusWordMeaning",
+        "name": "Word meaning in context",
+        "sub": "Let the sentence tell you",
+        "rule": "When a question asks what a word means, look at how it is used in that sentence. The right answer could replace the word without changing the meaning.",
+        "trick": "Cover the word, read the sentence and say what you would put there. Then swap each answer into the gap and keep the one that sounds right.",
+        "passage": "The path was so narrow that we had to walk in single file, and the brambles snagged our sleeves.",
+        "examples": [
+            {"kind": "good", "text": "snagged = caught", "note": "\"The brambles caught our sleeves\" keeps the meaning."},
+            {"kind": "bad", "text": "snagged = cleaned", "note": "\"The brambles cleaned our sleeves\" makes no sense."},
+        ],
+        "another": {
+            "text": "Imagine the word has gone off for lunch and left a gap. Who could sit in its seat so the sentence still makes sense? That is your answer.",
+            "example": "The brambles ___ our sleeves\ncaught ✓\ncleaned ✗",
+        },
+        "walkthrough": {
+            "passage": True,
+            "steps": [
+                {"say": "Question: What does snagged mean in this sentence? Cover the word first."},
+                {"ask": "Brambles are prickly bushes. What do prickly bushes do to sleeves?", "options": ["Catch on them", "Wash them"], "answer": 0,
+                 "line": "My word: caught"},
+                {"ask": "Now try the answers. Which fits: \"the brambles ___ our sleeves\"?", "options": ["caught", "folded", "dried"], "answer": 0,
+                 "hint": "Which one could prickles do?", "then": "\"The brambles caught our sleeves.\" Same meaning.", "line": "snagged = caught"},
+            ],
+        },
+        "questions": [
+            {"passage": "After the long walk, the children were famished and ate every sandwich in the basket.",
+             "stem": "What does famished mean?", "options": ["Very hungry", "Very tired", "Very rude"], "answer": 0,
+             "why": "They ate every sandwich, so famished must mean very hungry."},
+            {"passage": "The old door creaked as it opened slowly, and a gust of cold air swept into the hall.",
+             "stem": "What does gust mean here?", "options": ["A sudden rush", "A small drop", "A loud noise"], "answer": 0,
+             "why": "Air swept into the hall, so gust means a sudden rush of air."},
+        ],
+    },
+    # ---------- maths ----------
+    {
+        "id": "elevenplusFractionOf",
+        "name": "Fractions of amounts",
+        "sub": "Divide by the bottom, times by the top",
+        "rule": "To find a fraction of an amount, divide by the denominator (the bottom number) to find one part, then multiply by the numerator (the top number).",
+        "trick": "Say it as a story: the bottom number is how many equal groups, the top number is how many groups you take.",
+        "examples": [
+            {"kind": "eg", "text": "3/4 of 20", "note": "20 ÷ 4 = 5, then 5 × 3 = 15"},
+            {"kind": "eg", "text": "2/5 of 35", "note": "35 ÷ 5 = 7, then 7 × 2 = 14"},
+        ],
+        "another": {
+            "text": "You have 12 sweets and share them between 4 plates. Each plate has 3. Three quarters of the sweets is 3 plates: 9 sweets.",
+            "example": "12 ÷ 4 = 3 on each plate\n3 plates × 3 = 9",
+        },
+        "walkthrough": {
+            "board": "3/5 of 40",
+            "kind": "math",
+            "steps": [
+                {"ask": "The bottom number is 5. What do we do first?", "options": ["40 ÷ 5", "40 × 5", "40 ÷ 3"], "answer": 0,
+                 "hint": "The bottom number tells you how many equal groups.", "line": "40 ÷ 5"},
+                {"ask": "40 ÷ 5 is:", "options": ["8", "9", "200"], "answer": 0, "line": "40 ÷ 5 = 8 (one fifth)"},
+                {"ask": "We want 3 fifths, so:", "options": ["8 × 3", "8 + 3", "8 ÷ 3"], "answer": 0, "line": "8 × 3"},
+                {"ask": "8 × 3 is:", "options": ["24", "11", "32"], "answer": 0, "line": "3/5 of 40 = 24"},
+            ],
+        },
+        "questions": [
+            {"stem": "What is 2/3 of 18?", "options": ["12", "6", "9"], "answer": 0, "why": "18 ÷ 3 = 6, then 6 × 2 = 12."},
+            {"stem": "What is 3/10 of 50?", "options": ["15", "5", "30"], "answer": 0, "why": "50 ÷ 10 = 5, then 5 × 3 = 15."},
+        ],
+    },
+    {
+        "id": "elevenplusPercentOf",
+        "name": "Percentages of amounts",
+        "sub": "Start from 10%",
+        "rule": "Per cent means out of 100. To find a percentage of an amount, find 10% by dividing by 10, then build the percentage you need from it.",
+        "trick": "10% = divide by 10. 5% = half of 10%. 50% = half. 25% = a quarter. Add pieces together: 15% = 10% + 5%.",
+        "examples": [
+            {"kind": "eg", "text": "30% of 60", "note": "10% is 6, so 30% is 3 × 6 = 18"},
+            {"kind": "eg", "text": "15% of 40", "note": "10% is 4, 5% is 2, so 15% is 6"},
+        ],
+        "another": {
+            "text": "Think of the amount as 10 equal stacks of coins. Each stack is 10%. 30% is just 3 stacks.",
+            "example": "£50 in 10 stacks: £5 each\n30% = 3 stacks = £15",
+        },
+        "walkthrough": {
+            "board": "35% of 80",
+            "kind": "math",
+            "steps": [
+                {"ask": "First find 10% of 80:", "options": ["8", "10", "800"], "answer": 0, "hint": "Divide by 10.", "line": "10% = 8"},
+                {"ask": "35% is made of:", "options": ["3 lots of 10% and a 5%", "35 lots of 10%"], "answer": 0, "line": "35% = 30% + 5%"},
+                {"ask": "30% is 3 × 8, which is:", "options": ["24", "11", "38"], "answer": 0, "line": "30% = 24"},
+                {"ask": "5% is half of 10%, which is:", "options": ["4", "5", "16"], "answer": 0, "line": "5% = 4"},
+                {"ask": "So 35% of 80 is:", "options": ["28", "24", "35"], "answer": 0, "line": "35% of 80 = 24 + 4 = 28"},
+            ],
+        },
+        "questions": [
+            {"stem": "What is 10% of 250?", "options": ["25", "2.5", "10"], "answer": 0, "why": "250 ÷ 10 = 25."},
+            {"stem": "What is 20% of 35?", "options": ["7", "3.5", "15"], "answer": 0, "why": "10% is 3.5, so 20% is 7."},
+        ],
+    },
+    {
+        "id": "elevenplusBidmas",
+        "name": "Order of operations",
+        "sub": "BIDMAS: brackets come first",
+        "rule": "Work out a calculation in this order: Brackets, Indices (powers), then Division and Multiplication, then Addition and Subtraction. Divide and multiply from left to right; add and subtract from left to right.",
+        "trick": "Say BIDMAS. Circle any brackets and do them first. Then do every × and ÷ before any + or −.",
+        "examples": [
+            {"kind": "eg", "text": "2 + 3 × 4", "note": "Multiply first: 3 × 4 = 12, then 2 + 12 = 14 (not 20)"},
+            {"kind": "eg", "text": "(2 + 3) × 4", "note": "Brackets first: 5 × 4 = 20"},
+        ],
+        "another": {
+            "text": "It's like getting dressed. Socks go on before shoes, every time, even if shoes are written first on the list. In maths, × and ÷ always go on before + and −.",
+            "example": "2 + 3 × 4\nsocks first: 3 × 4 = 12\nthen shoes: 2 + 12 = 14",
+        },
+        "walkthrough": {
+            "board": "10 − 2 × 3 + 1",
+            "kind": "math",
+            "steps": [
+                {"ask": "Are there any brackets?", "options": ["No", "Yes"], "answer": 0, "line": "No brackets"},
+                {"ask": "Which part do we do first?", "options": ["2 × 3", "10 − 2", "3 + 1"], "answer": 0,
+                 "hint": "Multiply before adding or taking away.", "line": "2 × 3 = 6"},
+                {"ask": "Now we have 10 − 6 + 1. Working left to right, 10 − 6 is:", "options": ["4", "16", "3"], "answer": 0, "line": "10 − 6 = 4"},
+                {"ask": "And 4 + 1 is:", "options": ["5", "3", "25"], "answer": 0, "line": "10 − 2 × 3 + 1 = 5"},
+            ],
+        },
+        "questions": [
+            {"stem": "What is 5 + 2 × 3?", "options": ["11", "21", "10"], "answer": 0, "why": "Multiply first: 2 × 3 = 6, then 5 + 6 = 11."},
+            {"stem": "What is (8 − 2) ÷ 3?", "options": ["2", "7.33", "6"], "answer": 0, "why": "Brackets first: 8 − 2 = 6, then 6 ÷ 3 = 2."},
+        ],
+    },
+    # ---------- verbal reasoning: words ----------
+    {
+        "id": "elevenplusHiddenWords",
+        "name": "Hidden words",
+        "sub": "Read across the gap between words",
+        "rule": "A hidden word starts at the end of one word and finishes at the start of the next. The letters stay in order; only the space between the two words disappears.",
+        "trick": "Put your finger on each gap in turn. Read the last one, two or three letters of the first word straight on into the next word.",
+        "examples": [
+            {"kind": "good", "text": "Tom put his cap in his bag. → puT HIS → THIS", "note": "The word crosses the gap between put and his."},
+            {"kind": "bad", "text": "Tom put his cap in his bag. → CAPI", "note": "capIn runs into C-A-P-I, which is not a word, so that gap hides nothing."},
+        ],
+        "another": {
+            "text": "Imagine someone rubbed out all the spaces in a sentence, so the words run together like one long snake of letters. A little word is hiding where two big words touch.",
+            "example": "I saw Mum eat a plum.\nisawmumeataplum\nmuM EAT → MEAT",
+        },
+        "walkthrough": {
+            "board": "I saw Mum eat a plum.",
+            "kind": "text",
+            "steps": [
+                {"say": "We are looking for a four-letter word that crosses a gap between two words."},
+                {"ask": "Try the gap in \"saw Mum\": the end of saw runs into Mum, a-w-m-u. Is that a word?", "options": ["No", "Yes"], "answer": 0,
+                 "line": "saw Mum: no word"},
+                {"ask": "Now try \"Mum eat\": the last M of Mum runs into eat. What does it spell?", "options": ["MEAT", "MUME"], "answer": 0,
+                 "hint": "Take just the last letter of Mum, then e-a-t.", "line": "muM EAT → MEAT"},
+                {"ask": "Is MEAT a real word?", "options": ["Yes", "No"], "answer": 0,
+                 "then": "MEAT is hidden across Mum and eat. Every other gap only makes nonsense.", "line": "Answer: MEAT"},
+            ],
+        },
+        "questions": [
+            {"stem": "Which four-letter word is hidden in \"Her pets nap a lot\"?", "options": ["snap", "step", "pest"], "answer": 0,
+             "why": "\"pets nap\" runs into s-n-a-p: snap."},
+            {"stem": "Which four-letter word is hidden in \"The fish swam past the rock\"?", "options": ["hero", "wasp", "fist"], "answer": 0,
+             "why": "\"the rock\" runs into h-e-r-o: hero."},
+        ],
+    },
+    {
+        "id": "elevenplusMoveLetter",
+        "name": "Move a letter",
+        "sub": "Take one out, put it in, make two words",
+        "rule": "One letter moves from the first word to the second. Both must still be real words afterwards. The other letters stay in order.",
+        "trick": "Go through the first word one letter at a time: cover it up and see if a real word is left. Only then try fitting that letter into the second word.",
+        "examples": [
+            {"kind": "good", "text": "FLOUR, COD → move L → FOUR, COLD", "note": "Both new words are real."},
+            {"kind": "bad", "text": "FLOUR, COD → move U → FLOR, COUD", "note": "FLOR is not a word, so U is wrong."},
+        ],
+        "another": {
+            "text": "It's like swapping a player from one team to another. The team they leave still has to be able to play, and the team they join has to work too.",
+            "example": "GRAIN gives R → GAIN ✓\nFOG gets R → FROG ✓",
+        },
+        "walkthrough": {
+            "board": "GRAIN   FOG",
+            "kind": "text",
+            "steps": [
+                {"ask": "Cover the G in GRAIN. Is RAIN a word?", "options": ["Yes", "No"], "answer": 0, "line": "G out: RAIN ✓"},
+                {"ask": "Can G go into FOG to make a word? (GFOG, FGOG, FOGG)", "options": ["No", "Yes"], "answer": 0, "line": "G into FOG ✗"},
+                {"ask": "Cover the R in GRAIN. What is left?", "options": ["GAIN, a real word", "GAIR, not a word"], "answer": 0, "line": "R out: GAIN ✓"},
+                {"ask": "Can R go into FOG to make a word?", "options": ["Yes, FROG", "No"], "answer": 0,
+                 "then": "GAIN and FROG are both real words, so R is the letter that moves.", "line": "R into FOG: FROG ✓"},
+            ],
+        },
+        "questions": [
+            {"stem": "Which letter moves from TRUCK to HUT to make two new words?", "options": ["R", "T", "K"], "answer": 0,
+             "why": "Without R, TRUCK becomes TUCK. With R, HUT becomes HURT."},
+            {"stem": "Which letter moves from BLOOM to PAN to make two new words?", "options": ["L", "B", "M"], "answer": 0,
+             "why": "Without L, BLOOM becomes BOOM. With L, PAN becomes PLAN."},
+        ],
+    },
+    {
+        "id": "elevenplusMissingLetters",
+        "name": "Missing three letters",
+        "sub": "A little word hides inside a big one",
+        "rule": "Three letters next to each other have been taken out of the word in capitals. Together they spell a three-letter word. Put them back and the sentence makes sense again.",
+        "trick": "Read the sentence and think what the capital word should be. Then spot which three letters are missing from it.",
+        "examples": [
+            {"kind": "eg", "text": "The FER milked the cows.", "note": "It should be FARMER, so ARM is missing."},
+            {"kind": "eg", "text": "We lit a CLE on the cake.", "note": "It should be CANDLE, so AND is missing."},
+        ],
+        "another": {
+            "text": "It's like a jigsaw with three pieces missing from the middle. Look at the picture on the box (the sentence) to work out what the whole word is.",
+            "example": "My CHER marked our books.\nWhole word: TEACHER\nMissing: TEA",
+        },
+        "walkthrough": {
+            "board": "The DRN breathed fire at the knight.",
+            "kind": "text",
+            "steps": [
+                {"ask": "What breathes fire at a knight in a story?", "options": ["A dragon", "A lion"], "answer": 0, "line": "DRN should be DRAGON"},
+                {"ask": "DRAGON starts D-R and ends N. Which letters are missing from the middle?", "options": ["AGO", "RAG", "GON"], "answer": 0,
+                 "hint": "Line them up: D-R, then what, then N?", "line": "Missing: A-G-O"},
+                {"ask": "Is AGO a three-letter word?", "options": ["Yes", "No"], "answer": 0,
+                 "then": "AGO is the missing word: DR + AGO + N = DRAGON.", "line": "Answer: AGO"},
+            ],
+        },
+        "questions": [
+            {"stem": "The KITC was full of steam from the cooking. Which three-letter word is missing from KITC?", "options": ["HEN", "PEN", "TEN"], "answer": 0,
+             "why": "KITC + HEN makes KITCHEN."},
+            {"stem": "My GDAD told me a story. Which three-letter word is missing from GDAD?", "options": ["RAN", "RUN", "RED"], "answer": 0,
+             "why": "G + RAN + DAD makes GRANDAD."},
+        ],
+    },
+    # ---------- verbal reasoning: codes ----------
+    {
+        "id": "elevenplusAlphabetSteps",
+        "name": "Alphabet steps",
+        "sub": "Count the jumps between letters",
+        "rule": "In letter series and letter pairs, each letter usually jumps forwards or backwards by a set number of places in the alphabet. Find the jump, then do it again.",
+        "trick": "Write the alphabet across the top of your page. Number some letters: A1, E5, J10, O15, T20, Z26. Count the jumps on your fingers.",
+        "examples": [
+            {"kind": "eg", "text": "CX, EW, GV, IU, ?", "note": "First letters jump +2 (C E G I K), second letters −1 (X W V U T): KT"},
+            {"kind": "eg", "text": "BX is to CW as JP is to ?", "note": "B to C is +1, X to W is −1. J + 1 = K, P − 1 = O: KO"},
+        ],
+        "another": {
+            "text": "The alphabet is like a staircase with 26 steps. Each letter in the series takes the same number of steps up or down. Count the steps once, then keep stepping.",
+            "example": "D → G: up 3 steps\nG → J: up 3 steps\nJ → M: up 3 steps",
+        },
+        "walkthrough": {
+            "board": "EK, HL, KM, NN, ?",
+            "kind": "text",
+            "steps": [
+                {"say": "Each pair has a first letter and a second letter. Follow each one on its own."},
+                {"ask": "First letters: E, H, K, N. From E to H is:", "options": ["+3", "+2", "+4"], "answer": 0,
+                 "hint": "E, F, G, H. Count the jumps.", "line": "First letters: +3 each time"},
+                {"ask": "So after N comes N + 3:", "options": ["Q", "P", "R"], "answer": 0, "line": "N → Q"},
+                {"ask": "Second letters: K, L, M, N. Next is:", "options": ["O", "P", "N"], "answer": 0, "line": "Second letters: +1, N → O"},
+                {"ask": "So the missing pair is:", "options": ["QO", "PO", "QP"], "answer": 0, "line": "Answer: QO"},
+            ],
+        },
+        "questions": [
+            {"stem": "What comes next? AB, CD, EF, GH, ?", "options": ["IJ", "HI", "JK"], "answer": 0,
+             "why": "Both letters jump +2 each time: G to I and H to J."},
+            {"stem": "CE is to DG as PR is to ?", "options": ["QT", "QS", "RT"], "answer": 0,
+             "why": "C to D is +1 and E to G is +2. P + 1 = Q, R + 2 = T."},
+        ],
+    },
+    {
+        "id": "elevenplusLetterCodes",
+        "name": "Letter and number codes",
+        "sub": "Work out the rule, then use it",
+        "rule": "In a code, every letter is changed by the same rule. Compare the word with its code letter by letter to find the rule. Then use the rule on the new word, or run it backwards to decode.",
+        "trick": "Write the word and its code one above the other and draw lines between matching letters. For number codes, make a little key: each letter and its number.",
+        "examples": [
+            {"kind": "eg", "text": "BELL = CFMM", "note": "Each letter moves +1. So ROAD = SPBE."},
+            {"kind": "eg", "text": "LIME = 3 5 8 1", "note": "L3, I5, M8, E1. So 8 5 3 1 = MILE."},
+        ],
+        "another": {
+            "text": "A code is like a secret handshake everyone in the club does the same way. Once you have watched one handshake, you can do it yourself.",
+            "example": "HAT → IBU (each letter +1)\nso DBQ → CAP (each letter −1)",
+        },
+        "walkthrough": {
+            "board": "If the code for RING is TKPI, what is the code for BELT?",
+            "kind": "text",
+            "steps": [
+                {"ask": "R becomes T. How far does it move?", "options": ["Forward 2", "Forward 1", "Back 2"], "answer": 0,
+                 "hint": "R, S, T.", "line": "R → T: +2"},
+                {"ask": "Check another: I becomes K. Is that +2 too?", "options": ["Yes", "No"], "answer": 0, "line": "I → K: +2 ✓ rule: +2"},
+                {"ask": "Now code BELT. B + 2 is:", "options": ["D", "C", "E"], "answer": 0, "line": "B → D"},
+                {"ask": "E + 2, L + 2, T + 2 give:", "options": ["G, N, V", "F, M, U", "G, M, V"], "answer": 0, "line": "E → G, L → N, T → V"},
+                {"say": "So BELT in code is DGNV."},
+            ],
+        },
+        "questions": [
+            {"stem": "If the code for CAT is DBU, what is the code for DOG?", "options": ["EPH", "CNF", "EPG"], "answer": 0,
+             "why": "Each letter moves +1: D to E, O to P, G to H."},
+            {"stem": "If MINT is 6 2 4 9, what is TIN?", "options": ["9 2 4", "6 2 4", "4 2 9"], "answer": 0,
+             "why": "T = 9, I = 2, N = 4."},
+        ],
+    },
+    {
+        "id": "elevenplusNumberSeries",
+        "name": "Number series",
+        "sub": "Find the gaps",
+        "rule": "Write the gap between each pair of numbers underneath them. The gaps show the rule: the same gap, a growing gap, a repeating pattern, or two series taking turns.",
+        "trick": "If the gaps make no sense, try multiplying, or look at every other number: two series may be woven together.",
+        "examples": [
+            {"kind": "eg", "text": "2, 3, 5, 8, 12, ?", "note": "Gaps +1, +2, +3, +4, so next is +5: 17"},
+            {"kind": "eg", "text": "3, 30, 5, 28, 7, 26, ?", "note": "Two series: 3, 5, 7 and 30, 28, 26. Next: 9"},
+        ],
+        "another": {
+            "text": "It's like footprints in the snow. Measure the distance between each step, and you can tell exactly where the next footprint will land.",
+            "example": "6    11    16    21\n  +5   +5    +5\nnext: 21 + 5 = 26",
+        },
+        "walkthrough": {
+            "board": "3, 5, 9, 15, 23, ?",
+            "kind": "math",
+            "steps": [
+                {"ask": "The gap from 3 to 5 is:", "options": ["+2", "+3", "+8"], "answer": 0, "line": "3 → 5: +2"},
+                {"ask": "The next gaps are 5 → 9 and 9 → 15:", "options": ["+4 and +6", "+4 and +5"], "answer": 0, "line": "+2, +4, +6"},
+                {"ask": "15 → 23 is +8. So the gaps go up by:", "options": ["2 each time", "1 each time"], "answer": 0, "line": "+2, +4, +6, +8"},
+                {"ask": "The next gap is +10, so the answer is:", "options": ["33", "31", "35"], "answer": 0, "line": "23 + 10 = 33"},
+            ],
+        },
+        "questions": [
+            {"stem": "What comes next? 7, 14, 21, 28, ?", "options": ["35", "32", "36"], "answer": 0, "why": "The numbers go up by 7 each time."},
+            {"stem": "What comes next? 100, 50, 25, ?", "options": ["12.5", "0", "20"], "answer": 0, "why": "Each number is halved: 25 ÷ 2 = 12.5."},
+        ],
+    },
+    {
+        "id": "elevenplusLetterSums",
+        "name": "Letter sums",
+        "sub": "Swap letters for numbers, then back again",
+        "rule": "Each letter stands for a number. Swap every letter in the sum for its number, work it out (BIDMAS still applies), then find which letter stands for the answer.",
+        "trick": "Write the numbers under the letters before you start. The answer must be one of the numbers on the list, so if it is not, check your working.",
+        "examples": [
+            {"kind": "eg", "text": "A = 2, B = 4, C = 5, D = 8, E = 20. B × C = ?", "note": "4 × 5 = 20, and 20 is E"},
+            {"kind": "eg", "text": "A = 3, B = 4, C = 6, D = 9, E = 15. (D + A) ÷ B = ?", "note": "(9 + 3) ÷ 4 = 3, and 3 is A"},
+        ],
+        "another": {
+            "text": "It's like a shop where every sweet has a price label. Add up the prices, then find which single sweet costs exactly that much.",
+            "example": "A = 2p, B = 7p, D = 14p\nA × B = 14p\n14p is D",
+        },
+        "walkthrough": {
+            "board": "A = 2, B = 3, C = 6, D = 9, E = 12.   C × B ÷ A = ?",
+            "kind": "text",
+            "steps": [
+                {"say": "Write each letter's number underneath it: A is 2, B is 3, C is 6."},
+                {"ask": "Swap the letters: C × B ÷ A becomes:", "options": ["6 × 3 ÷ 2", "2 × 3 ÷ 6"], "answer": 0, "line": "6 × 3 ÷ 2"},
+                {"ask": "6 × 3 is:", "options": ["18", "9", "63"], "answer": 0, "line": "6 × 3 = 18"},
+                {"ask": "18 ÷ 2 is:", "options": ["9", "8", "16"], "answer": 0, "line": "18 ÷ 2 = 9"},
+                {"ask": "Which letter is 9?", "options": ["D", "E", "C"], "answer": 0, "line": "9 is D"},
+            ],
+        },
+        "questions": [
+            {"stem": "A = 1, B = 3, C = 4, D = 7, E = 12. What is B + C as a letter?", "options": ["D", "E", "C"], "answer": 0,
+             "why": "3 + 4 = 7, and D = 7."},
+            {"stem": "A = 2, B = 5, C = 6, D = 10, E = 30. What is B × C as a letter?", "options": ["E", "D", "C"], "answer": 0,
+             "why": "5 × 6 = 30, and E = 30."},
+        ],
+    },
+]

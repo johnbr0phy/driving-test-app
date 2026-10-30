@@ -2440,14 +2440,14 @@
     "state": "ALL",
     "questionId": "UKCAR-SGN-019",
     "category": "ukcarSigns",
-    "question": "A blue sign shows a white arrow pointing to the left in a circle. What does it mean?",
+    "question": "A blue circular sign shows a white arrow that bends round to the left. What does it mean?",
     "optionA": "No left turn",
     "optionB": "Keep left of the island",
     "optionC": "Turn left",
     "optionD": "Left lane closed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A blue circle gives a positive instruction, so a white arrow pointing left means turn left. A downward diagonal arrow would mean keep left."
+    "explanation": "A blue circle gives a positive instruction, so an arrow bending to the left means turn left. A straight arrow pointing diagonally down to the left would mean keep left."
   },
   {
     "type": "UKCAR",

@@ -690,14 +690,14 @@
     "state": "ALL",
     "questionId": "CAQC-RUL-026",
     "category": "caqcRules",
-    "question": "What is the highest speed limit allowed in a school zone during the school year?",
-    "optionA": "30 km/h",
-    "optionB": "50 km/h",
-    "optionC": "40 km/h",
-    "optionD": "60 km/h",
+    "question": "A school zone's speed limit differs from the road before it. What else can its signs show?",
+    "optionA": "The speeding fine",
+    "optionB": "Times, days and months",
+    "optionC": "The school's name",
+    "optionD": "The crossing guard's hours",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The speed limit in a school zone may not exceed 50 km/h during the school year. Many zones post 30 km/h."
+    "explanation": "When a school zone's limit differs from the one before it, signs post the limit and, where applicable, the times of day, days and months it applies. Speeding fines there double during the school year."
   },
   {
     "type": "CAQC",

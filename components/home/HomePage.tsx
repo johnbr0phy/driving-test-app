@@ -176,15 +176,17 @@ const quotes = [
 export async function HomePage({ region }: { region: Region }) {
   const us = region === "US";
   const { tests: ranked, totalAnswered } = await getPopularTests(us ? 6 : 100);
-  const popular = us ? ranked : [];
-  // Outside the US: the country's own tests, busiest first, then the certifications taken everywhere.
+  // Outside the US "Popular this week" only counts the country's own and worldwide tests,
+  // and only ones someone actually answered (never the US fallback list).
+  const popular = us
+    ? ranked
+    : ranked
+        .filter((p) => p.answered !== null && p.answered > 0 && (regionOfTest(p.test.id) === region || regionOfTest(p.test.id) === "GLOBAL"))
+        .slice(0, 6);
+  // Outside the US: the country's own tests, busiest first.
   const answeredById = new Map(ranked.map((p) => [p.test.id, p.answered]));
   const byAnswered = (a: { id: string }, b: { id: string }) => (answeredById.get(b.id) ?? 0) - (answeredById.get(a.id) ?? 0);
   const localTests = TEST_CATALOG.filter((t) => regionOfTest(t.id) === region && !NON_DRIVING_TESTS.has(t.id)).sort(byAnswered);
-  const alsoTests = [
-    ...TEST_CATALOG.filter((t) => regionOfTest(t.id) === region && NON_DRIVING_TESTS.has(t.id)),
-    ...TEST_CATALOG.filter((t) => regionOfTest(t.id) === "GLOBAL").sort(byAnswered),
-  ];
   const home = us ? null : REGION_HOME[region];
   const faqs = faqsFor(region);
 
@@ -224,10 +226,8 @@ export async function HomePage({ region }: { region: Region }) {
         </div>
       </div>
 
-      {/* The US: popular tests and the DMV state grid */}
-      {us && (
-        <>
-      {/* Popular this week */}
+      {/* Popular this week (outside the US only once someone there has answered questions) */}
+      {popular.length > 0 && (
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-20">
         <div className="flex items-end justify-between mb-5">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50">
@@ -243,8 +243,11 @@ export async function HomePage({ region }: { region: Region }) {
           ))}
         </div>
       </div>
+      )}
 
-      {/* DMV by state: keeps the homepage linking straight to the state pages */}
+      {/* The US: the DMV state grid */}
+      {us && (
+      /* DMV by state: keeps the homepage linking straight to the state pages */
       <div className="bg-gray-50 dark:bg-gray-950 py-14 md:py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
@@ -280,12 +283,10 @@ export async function HomePage({ region }: { region: Region }) {
           </div>
         </div>
       </div>
-        </>
       )}
 
-      {/* Outside the US: the country's own tests, then the certifications taken everywhere */}
+      {/* Outside the US: the country's own tests */}
       {home && (
-        <>
           <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-20">
             <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2 mb-5">
               <div>
@@ -302,23 +303,8 @@ export async function HomePage({ region }: { region: Region }) {
               ))}
             </div>
           </div>
-          <div className="bg-gray-50 dark:bg-gray-950 py-14 md:py-20">
-            <div className="max-w-5xl mx-auto px-6">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-2">Also used in {regionInfo(region).inName}</h2>
-              <p className="mb-6 max-w-2xl text-gray-600 dark:text-gray-300">More practice that works in {regionInfo(region).inName}, including certifications that are the same exam everywhere.</p>
-              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                {alsoTests.map((test) => (
-                  <TestCard key={test.id} test={test} answered={answeredById.get(test.id) ?? null} />
-                ))}
-              </div>
-            </div>
-          </div>
-        </>
       )}
 
-      {/* How it works and the Reddit quotes are about the DMV, so they stay on the US page */}
-      {us && (
-        <>
       {/* How it works: real screens from the app, one step per row */}
       <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-14 md:mb-20">
@@ -412,8 +398,6 @@ export async function HomePage({ region }: { region: Region }) {
           </div>
         </div>
       </div>
-        </>
-      )}
 
       {/* Every test */}
       <div id="all-tests" className="max-w-5xl mx-auto px-6 py-16 md:py-24 scroll-mt-6">

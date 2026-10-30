@@ -1,14 +1,19 @@
 import Link from "next/link";
 import { TEST_CATALOG, relatedTests } from "@/lib/testCatalog";
+import { CommunityUpsell } from "@/components/CommunityUpsell";
 
 // "Related practice tests" block for an exam landing: the rest of the exam's
 // hub group (nursing, IT, driving...) plus a link to the hub. This is the
 // cross-linking that lets new landings share authority with their neighbours.
+// Every landing renders it, so it also carries the exam's "Short on time?"
+// Common Mistakes upsell, which appears once the exam has enough answers.
 export function ExamRelatedTests({ examId }: { examId: string }) {
   const tests = relatedTests(examId);
-  if (tests.length === 0) return null;
+  if (tests.length === 0) return <CommunityUpsell examId={examId} />;
 
   return (
+    <>
+    <CommunityUpsell examId={examId} />
     <section aria-labelledby="related-tests" className="max-w-5xl mx-auto px-6 py-12 md:py-16">
       <h2 id="related-tests" className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-2">
         Related practice tests
@@ -35,5 +40,6 @@ export function ExamRelatedTests({ examId }: { examId: string }) {
         </Link>
       </p>
     </section>
+    </>
   );
 }

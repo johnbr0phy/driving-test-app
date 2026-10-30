@@ -3,7 +3,7 @@
 import { Lock } from "lucide-react";
 import { QuizRow } from "@/components/QuizRow";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { useCommunityStats } from "@/hooks/useCommunityStats";
+import { useCommunityStats, type CommunityStatsData } from "@/hooks/useCommunityStats";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
 
 const FREE_LIMIT = 5;
@@ -14,9 +14,21 @@ interface Props {
   onUpgradeClick: () => void;
 }
 
-export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
-  const { t } = useTranslation();
+export function CommunityWrongQuestions(props: Props) {
   const { data, loading } = useCommunityStats();
+  return <CommunityWrongQuestionsList {...props} data={data} loading={loading} />;
+}
+
+/** The list itself, for any test's most-missed questions (registry exams pass
+ *  theirs from useExamCommunityStats). `analyticsKey` names the quiz answers. */
+export function CommunityWrongQuestionsList({
+  isPremium,
+  onUpgradeClick,
+  data,
+  loading,
+  analyticsKey = "stats_community",
+}: Props & { data: CommunityStatsData | null; loading: boolean; analyticsKey?: string }) {
+  const { t } = useTranslation();
 
   if (loading) {
     return (
@@ -59,7 +71,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
               question={q.question}
               options={q.options ?? []}
               correctAnswer={q.correctAnswer}
-              onAnswer={(correct) => trackDailyQuizAnswer(correct, "stats_community")}
+              onAnswer={(correct) => trackDailyQuizAnswer(correct, analyticsKey)}
               renderFooter={({ answered }) => (
                 <div className="pt-1 px-1">
                   <p className="text-xs text-gray-500 dark:text-gray-400">

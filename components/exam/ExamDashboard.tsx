@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { BarChart3, ChevronRight } from "lucide-react";
+import { BarChart3, ChevronRight, Users } from "lucide-react";
 import { useStore } from "@/store/useStore";
 import { GuestSaveCard, v1GuestCounts } from "@/components/GuestSaveCard";
 import { useAuth } from "@/contexts/AuthContext";
@@ -28,6 +28,7 @@ import { TeachNudge } from "@/components/TeachNudge";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
+import { useCommunityAvailable } from "@/hooks/useCommunityStats";
 
 function heroSub(exam: ExamConfig, done: number, total: number): string {
   const frac = total > 0 ? done / total : 0;
@@ -50,6 +51,8 @@ function getTigerFace(complete: number, total: number, examId: string): string {
 
 export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
   const { exam, routes, ui, lang } = useLocalizedExam(source);
+  // Common Mistakes card, once this exam has enough answers (lib/communityStats.ts).
+  const communityOn = useCommunityAvailable(source.id);
   const router = useRouter();
   const hydrated = useHydration();
   const firestoreLoaded = useStore((state) => state.firestoreLoaded);
@@ -421,6 +424,21 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
               <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">{ui.yourStats}</h3>
                 <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{ui.yourStatsSub}</p>
+              </div>
+              <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
+            </div>
+          </Link>
+        )}
+
+        {communityOn && (
+          <Link href={`${routes.stats}?tab=community`} className="block mt-1.5">
+            <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 flex items-center gap-3 hover:shadow-md transition-shadow">
+              <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                <Users className="h-4 w-4 text-brand-dark" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">{t("stats.commonMistakes")}</h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{t("dashboard.urgencyTitle")}</p>
               </div>
               <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
             </div>

@@ -4,13 +4,14 @@
 // question in the bank as a re-answerable QuizRow sortable by what you keep
 // missing. On US exams it is Premium-gated like the DMV page (the first few
 // rows free, the rest behind the paywall), except for students in a class on
-// this exam; other countries' exams stay free (checkout is US dollars). No
-// community tab (community miss rates are aggregated for DMV only).
+// this exam; other countries' exams stay free (checkout is US dollars). A
+// Common Mistakes tab joins it once the exam has enough answers
+// (lib/communityStats.ts); ?tab=community opens it, guests included.
 
 import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { ArrowLeft, Lock } from "lucide-react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { ArrowLeft, BarChart3, Lock, Users } from "lucide-react";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
@@ -29,6 +30,8 @@ import { QuizRow } from "@/components/QuizRow";
 import { QuestionImage } from "@/components/QuestionImage";
 import { getSignIdForQuestion } from "@/lib/signImages";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
+import { useCommunityAvailable, useExamCommunityStats } from "@/hooks/useCommunityStats";
+import { CommunityWrongQuestionsList } from "@/components/CommunityWrongQuestions";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -73,6 +76,12 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const [sortField, setSortField] = useState<SortField>("wrong");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
   const [paywallOpen, setPaywallOpen] = useState(false);
+  const searchParams = useSearchParams();
+  const communityOn = useCommunityAvailable(source.id);
+  const [activeTab, setActiveTab] = useState<"yours" | "community">(
+    searchParams.get("tab") === "community" ? "community" : "yours"
+  );
+  const showCommunity = communityOn && activeTab === "community";
   const [inClass, setInClass] = useState(false);
   useEffect(() => setInClass(isClassStudent(source.id) || (!!source.variantOf && isClassStudent(source.variantOf))), [source.id, source.variantOf]);
   const usExam = regionOfTest(source.variantOf ?? source.id) === "US";
@@ -123,12 +132,31 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
     }
   };
 
-  // Redirect guests to signup
+  // Redirect guests to signup (Common Mistakes is open to them)
+  const wantsCommunity = activeTab === "community";
   useEffect(() => {
-    if (hydrated && isGuest) router.push(routes.signup);
-  }, [hydrated, isGuest, router]);
+    if (hydrated && isGuest && !wantsCommunity) router.push(routes.signup);
+  }, [hydrated, isGuest, wantsCommunity, router]);
 
   const examQuestions = useMemo(() => getExamQuestions(exam.id, lang), [exam.id, lang]);
+
+  const { data: communityRaw, loading: communityLoading } = useExamCommunityStats(source.id, communityOn);
+  const communityData = useMemo(() => {
+    if (!communityRaw) return null;
+    const byId = new Map(examQuestions.map((q) => [q.questionId, q]));
+    const questions = communityRaw.questions.flatMap((c) => {
+      const q = byId.get(c.questionId);
+      if (!q) return [];
+      return [{
+        ...c,
+        question: q.question,
+        options: [q.optionA, q.optionB, q.optionC, q.optionD].filter(Boolean),
+        correctAnswer: optionText(q, q.correctAnswer),
+        explanation: q.explanation ?? "",
+      }];
+    });
+    return { questions, totalUsers: communityRaw.totalUsers, updatedAt: null };
+  }, [communityRaw, examQuestions]);
 
   const questionsWithPerformance = useMemo((): QuestionWithPerformance[] => {
     if (!hydrated) return [];
@@ -227,7 +255,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
     );
   };
 
-  if (!hydrated || isGuest) return null;
+  if (!hydrated || (isGuest && !wantsCommunity)) return null;
 
   const answeredCount = questionsWithPerformance.filter((q) => q.timesAnswered > 0).length;
 
@@ -262,6 +290,44 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             <ArrowLeft className="h-4 w-4" /> {t("common.back")}
           </Link>
 
+          {communityOn && (
+            <div className="flex gap-1.5 mb-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-1.5 shadow-sm">
+              {([
+                { tab: "yours" as const, icon: BarChart3, label: t("stats.yourStats") },
+                { tab: "community" as const, icon: Users, label: t("stats.commonMistakes") },
+              ]).map(({ tab, icon: Icon, label }) => (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  aria-pressed={activeTab === tab}
+                  className={`flex-1 flex items-center justify-center gap-2 text-sm font-semibold py-2.5 px-4 rounded-lg transition-all ${
+                    activeTab === tab
+                      ? "bg-brand text-white shadow-sm"
+                      : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-800"
+                  }`}
+                >
+                  <Icon className="h-4 w-4" />
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {showCommunity && (
+            <CommunityWrongQuestionsList
+              isPremium={isPremium}
+              data={communityData}
+              loading={communityLoading}
+              analyticsKey={`stats_community_${exam.copy.analyticsKey}`}
+              onUpgradeClick={() => {
+                trackPaywallHit("community_wrong_questions", "Community Wrong Questions", paywallLocation);
+                trackViewItem(paywallLocation);
+                setPaywallOpen(true);
+              }}
+            />
+          )}
+
+          {!showCommunity && (<>
           <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
             <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{t("stats.yourStats")}</h1>
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
@@ -350,6 +416,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
               </div>
             )}
           </div>
+          </>)}
         </div>
       </div>
     </div>

@@ -40,7 +40,7 @@ export const homeMetadata: Metadata = {
   twitter: { card: "summary_large_image", title, description: metaDescription, images: [shareImageUrl("home")] },
 };
 
-/** /uk, /ca and /au: the country's own title, description and canonical. */
+/** /uk, /ca, /au and /in: the country's own title, description and canonical. */
 export function countryHomeMetadata(region: Exclude<Region, "US">): Metadata {
   const { title: t, description: d } = REGION_HOME[region];
   const url = `${siteUrl}${regionHomePath(region)}`;
@@ -89,6 +89,7 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   UK: "the DVSA",
   CA: "any provincial licensing authority",
   AU: "any state road authority",
+  IN: "any RTO or transport department",
 };
 
 function faqsFor(region: Region) {
@@ -98,7 +99,7 @@ function faqsFor(region: Region) {
   return [
     {
       q: "What is Tigertest?",
-      a: `Tigertest is a free practice test site. For ${where} it has ${local} driving tests written from the official handbooks, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`,
+      a: `Tigertest is a free practice test site. For ${where} it has ${local === 1 ? "a driving test" : `${local} driving tests`} written from the official ${local === 1 ? "rules" : "handbooks"}, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`,
     },
     {
       q: "Is Tigertest free?",

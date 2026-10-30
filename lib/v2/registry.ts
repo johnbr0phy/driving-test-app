@@ -9,6 +9,11 @@ import { PARAMEDIC } from "./exams/paramedic";
 import { SECPLUS } from "./exams/secplus";
 import { APLUS } from "./exams/aplus";
 import { AWS } from "./exams/aws";
+import { AWSSAA } from "./exams/awssaa";
+import { AZ900 } from "./exams/az900";
+import { CCNA } from "./exams/ccna";
+import { UKNMC } from "./exams/uknmc";
+import { PMP } from "./exams/pmp";
 import { ASVAB } from "./exams/asvab";
 import { ACCUPLACER } from "./exams/accuplacer";
 import { ACT } from "./exams/act";
@@ -31,7 +36,7 @@ import { OCNSW } from "./exams/ocnsw";
 import { VICSEL } from "./exams/vicsel";
 import { HSCMATHS } from "./exams/hscmaths";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, EMT, PARAMEDIC, SECPLUS, APLUS, AWS, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
+export const EXAMS_V2: ExamV2Config[] = [GED, SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, SECPLUS, APLUS, AWS, AWSSAA, AZ900, CCNA, PMP, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
 
 export function getExamV2(id: string): ExamV2Config {
   const exam = EXAMS_V2.find((e) => e.id === id);

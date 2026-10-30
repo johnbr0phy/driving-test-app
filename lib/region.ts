@@ -1,17 +1,18 @@
 // Which country's tests a visitor sees first. Each country has its own
-// indexable homepage: the US at "/", the others at /uk, /ca and /au. A view
+// indexable homepage: the US at "/", the others at /uk, /ca, /au and /in. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
-// first visit and sends a UK, Canada or Australia visitor from "/" to their
+// first visit and sends a UK, Canada, Australia or India visitor from "/" to their
 // country's page; the CountryPills change it.
 
-export type Region = "US" | "CA" | "UK" | "AU";
+export type Region = "US" | "CA" | "UK" | "AU" | "IN";
 
 export const REGIONS: { code: Region; name: string; short: string; inName: string }[] = [
   { code: "US", name: "United States", short: "US", inName: "the US" },
   { code: "CA", name: "Canada", short: "CA", inName: "Canada" },
   { code: "UK", name: "United Kingdom", short: "UK", inName: "the UK" },
   { code: "AU", name: "Australia", short: "AU", inName: "Australia" },
+  { code: "IN", name: "India", short: "IN", inName: "India" },
 ];
 
 /** The chosen region, e.g. "UK". */
@@ -21,7 +22,7 @@ export const REGION_SOURCE_COOKIE = "tt-region-src";
 export const REGION_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
 export function isRegion(v: unknown): v is Region {
-  return v === "US" || v === "CA" || v === "UK" || v === "AU";
+  return v === "US" || v === "CA" || v === "UK" || v === "AU" || v === "IN";
 }
 
 /** ISO 3166 country code (Vercel's x-vercel-ip-country) to a region; null for countries we have no tests for. */
@@ -31,17 +32,18 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     case "CA": return "CA";
     case "GB": case "IM": case "JE": case "GG": return "UK";
     case "AU": return "AU";
+    case "IN": return "IN";
     default: return null;
   }
 }
 
-/** A country's homepage: "/" for the US, else /uk, /ca or /au. */
+/** A country's homepage: "/" for the US, else /uk, /ca, /au or /in. */
 export function regionHomePath(r: Region): string {
   return r === "US" ? "/" : `/${r.toLowerCase()}`;
 }
 
 /** hreflang for each country's homepage, the US page doubling as the default. */
-export const REGION_HREFLANG: Record<Region, string> = { US: "en-US", CA: "en-CA", UK: "en-GB", AU: "en-AU" };
+export const REGION_HREFLANG: Record<Region, string> = { US: "en-US", CA: "en-CA", UK: "en-GB", AU: "en-AU", IN: "en-IN" };
 
 export function regionInfo(r: Region) {
   return REGIONS.find((x) => x.code === r)!;
@@ -53,21 +55,23 @@ export type TestRegion = Region | "GLOBAL";
 const TEST_REGIONS: Record<string, TestRegion> = {
   ukcar: "UK", ukmoto: "UK", uklgv: "UK", ukpcv: "UK", ukadi: "UK", timestables: "UK", ks2: "UK", gcsemaths: "UK", uksia: "UK", uk18ed: "UK",
   gcsehigher: "UK", gcsescience: "UK", gcsecs: "UK", elevenplus: "UK", fsmaths: "UK", cscs: "UK", ukfood: "UK", ukaplh: "UK", ukfaw: "UK", ukcare: "UK",
+  uklitu: "UK", uknmc: "UK",
   caon: "CA", caqc: "CA", cabc: "CA", caab: "CA", camb: "CA", osslt: "CA", capal: "CA", caelec: "CA",
-  rexpn: "CA", eqao9: "CA", capsw: "CA", casfa: "CA", cawhmis: "CA", caguard: "CA", caauto: "CA", caplumb: "CA", cacarp: "CA", caweld: "CA",
+  rexpn: "CA", eqao9: "CA", capsw: "CA", casfa: "CA", cawhmis: "CA", caguard: "CA", caauto: "CA", caplumb: "CA", cacarp: "CA", caweld: "CA", cacit: "CA",
   aunsw: "AU", auvic: "AU", auqld: "AU", auwa: "AU", ausa: "AU", naplan: "AU", nswsel: "AU", auwhite: "AU",
-  naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU",
-  aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL",
+  naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
+  inrto: "IN",
+  aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL",
 };
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
   "timestables", "ks2", "gcsemaths", "uksia", "uk18ed",
-  "gcsehigher", "gcsescience", "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh", "ukfaw", "ukcare",
+  "gcsehigher", "gcsescience", "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh", "ukfaw", "ukcare", "uklitu", "uknmc",
   "osslt", "capal", "caelec",
-  "rexpn", "eqao9", "capsw", "casfa", "cawhmis", "caguard", "caauto", "caplumb", "cacarp", "caweld",
+  "rexpn", "eqao9", "capsw", "casfa", "cawhmis", "caguard", "caauto", "caplumb", "cacarp", "caweld", "cacit",
   "naplan", "nswsel", "auwhite",
-  "naplan7", "ocnsw", "vicsel", "hscmaths", "aursa", "aurcg", "aufss", "aufirstaid", "auforklift", "auwah",
+  "naplan7", "ocnsw", "vicsel", "hscmaths", "aursa", "aurcg", "aufss", "aufirstaid", "auforklift", "auwah", "aucit",
 ]);
 
 /** Every test not listed above is a US exam. */
@@ -109,6 +113,14 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     testsTitle: "Learner driver tests by state",
     testsSub: "200 questions per test on your state's road rules, L and P plates and demerits. Hazard perception is not covered.",
   },
+  IN: {
+    title: "Free Indian Practice Tests: RTO LL Test | Tigertest",
+    description: "Free RTO learner's licence (LL) test practice for India: 200 original questions on road signs and traffic rules, all explained. No account needed.",
+    lead: "Practice for the learner's licence test at the RTO or online through Sarathi Parivahan. Original questions on road signs and the rules of the road, every answer explained. No signup.",
+    cta: { label: "LL test practice", href: "/rto-learners-licence-test" },
+    testsTitle: "Learner's licence test",
+    testsSub: "200 questions from the Motor Vehicles Act and the driving regulations, in km/h for left-hand traffic. The test format varies by state.",
+  },
 };
 
 /**
@@ -117,13 +129,15 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
  * The US keeps today's order with the other countries' groups moved to the end.
  */
 export function orderGroupsForRegion<G extends { title: string; tests: { id: string }[] }>(groups: G[], region: Region): G[] {
-  const groupRegion = (g: G): TestRegion => (g.tests[0] ? regionOfTest(g.tests[0].id) : "US");
+  // A group is a region's own when any member belongs to it, so a mixed group
+  // (Citizenship tests: US, UK, Canada, Australia) leads in each of those countries.
+  const regionsOf = (g: G): Set<TestRegion> => new Set(g.tests.length ? g.tests.map((t) => regionOfTest(t.id)) : ["US" as TestRegion]);
   const rank = (g: G): number => {
-    const r = groupRegion(g);
-    if (region === "US") return r === "US" || r === "GLOBAL" ? 0 : 1;
-    if (r === region) return 0;
-    if (r === "GLOBAL") return 1;
-    if (r !== "US") return 2;
+    const rs = regionsOf(g);
+    if (region === "US") return rs.has("US") || rs.has("GLOBAL") ? 0 : 1;
+    if (rs.has(region)) return 0;
+    if (rs.has("GLOBAL")) return 1;
+    if ([...rs].some((r) => r !== "US")) return 2;
     return 3;
   };
   return groups

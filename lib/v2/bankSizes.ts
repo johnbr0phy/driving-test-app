@@ -33,4 +33,5 @@ export const BANK_SIZES: Record<string, number> = {
   gcsescience: 210,
   gcsecs: 202,
   rexpn: 210,
+  pmp: 210,
 };

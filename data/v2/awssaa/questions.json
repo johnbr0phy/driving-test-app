@@ -1,0 +1,4274 @@
+[
+  {
+    "id": "SAA-T1-001",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "S3 lifecycle",
+    "stem": "Log files in S3 are read often for 30 days, rarely for the next 60 days, and must then be kept for 7 years but are almost never read. Which lifecycle plan costs least?",
+    "options": [
+      "Move logs to S3 One Zone-IA on day one and leave them there for good",
+      "Intelligent-Tiering from day one with no archive tiers turned on",
+      "Keep all logs in S3 Standard for the whole seven years of retention",
+      "Standard, then Standard-IA at 30 days, then Glacier Deep Archive at 90 days"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lifecycle transitions match storage cost to access: Standard while hot, Standard-IA (30-day minimum) for rare access, and Deep Archive, the cheapest class, for long retention with retrieval in hours. Without archive tiers, Intelligent-Tiering would not reach Deep Archive prices."
+  },
+  {
+    "id": "SAA-T1-002",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Queue-based decoupling",
+    "stem": "An order website sends orders straight to a processing tier. During sales the processing tier falls behind and orders are lost. Which change makes the system resilient to these spikes?",
+    "options": [
+      "Put an Amazon SQS queue between the web tier and the processing tier",
+      "Move the processing tier to one larger EC2 instance with more memory",
+      "Add an Amazon CloudFront distribution in front of the processing tier",
+      "Replace the processing tier's EBS volumes with Provisioned IOPS volumes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An SQS queue buffers orders durably so the web tier can accept them at any rate and the processors work through the backlog at their own pace. A larger single instance still has a ceiling and is a single point of failure."
+  },
+  {
+    "id": "SAA-T1-003",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Multi-AZ database",
+    "stem": "A company's Amazon RDS for PostgreSQL database must keep running with automatic failover if an Availability Zone fails, without any application change. What should the architect enable?",
+    "options": [
+      "A larger DB instance class",
+      "Automated backups every hour",
+      "A read replica in the same AZ",
+      "A Multi-AZ deployment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Multi-AZ keeps a synchronous standby in another AZ and fails over automatically, and the DNS endpoint stays the same. Backups restore data but do not provide automatic failover."
+  },
+  {
+    "id": "SAA-T1-004",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "EBS volume types",
+    "stem": "A database on EC2 needs 40,000 IOPS with consistent sub-millisecond latency and 99.999% volume durability. Which EBS volume type fits?",
+    "options": [
+      "Throughput Optimized HDD (st1)",
+      "General Purpose SSD (gp3) at its baseline",
+      "Cold HDD (sc1)",
+      "Provisioned IOPS SSD (io2 Block Express)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "io2 Block Express is built for I/O-heavy databases, with provisioned IOPS up to 256,000, sub-millisecond latency and 99.999% durability. gp3 starts at a 3,000 IOPS baseline and is designed for 99.8 to 99.9% durability. HDD volumes are for throughput, not IOPS."
+  },
+  {
+    "id": "SAA-T1-005",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Database caching",
+    "stem": "A product catalog on Amazon RDS gets the same read queries thousands of times per second, and the database CPU is maxed out. Which change cuts database load the most?",
+    "options": [
+      "Move the RDS storage to Provisioned IOPS",
+      "Cache query results in Amazon ElastiCache",
+      "Turn on Multi-AZ for the RDS instance",
+      "Take automated snapshots every five minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An in-memory cache serves repeated reads in microseconds to milliseconds and keeps them away from the database. Multi-AZ adds a standby that does not serve reads, and storage IOPS do not fix CPU spent on repeated queries."
+  },
+  {
+    "id": "SAA-T1-006",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IAM roles for EC2",
+    "stem": "An application on Amazon EC2 instances must read objects from an Amazon S3 bucket. The security team forbids long-term credentials stored on the instances. What should a solutions architect do?",
+    "options": [
+      "Create an IAM user and store its access keys in the application config",
+      "Make the bucket public and restrict it with a referer condition",
+      "Attach an IAM role to the instances through an instance profile",
+      "Store an IAM user's access keys in an encrypted file on the EBS volume"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An instance profile gives the instance an IAM role, and the instance metadata service hands the application temporary credentials that rotate automatically. Access keys for an IAM user are long-term credentials whether or not the file holding them is encrypted."
+  },
+  {
+    "id": "SAA-T1-007",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Private subnets",
+    "stem": "A three-tier web application runs web servers behind an Application Load Balancer and a MySQL database on Amazon RDS. The database must not be reachable from the internet. Where should the RDS instance go?",
+    "options": [
+      "In public subnets, with a network ACL that blocks all inbound traffic",
+      "In public subnets, with a security group that allows 0.0.0.0/0 on port 3306",
+      "In private subnets, with a security group that allows the web tier's group",
+      "In the same subnet as the load balancer, with a public IP address"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Private subnets have no route to an internet gateway, and a security group that references the web tier's security group lets only those instances connect on 3306. A public subnet with a blanket NACL deny would also block the web tier."
+  },
+  {
+    "id": "SAA-T1-008",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Encrypting existing RDS",
+    "stem": "An Amazon RDS for MySQL DB instance was created without encryption. Compliance now requires encryption at rest. What should the solutions architect do?",
+    "options": [
+      "Modify the DB instance and select the encryption option in the console",
+      "Snapshot it, copy the snapshot with encryption, and restore from the copy",
+      "Add an SSL certificate to the instance and require TLS for all clients",
+      "Turn on EBS encryption by default in the Region and reboot the instance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Encryption for an RDS instance can only be chosen at creation. The supported path is to copy an unencrypted snapshot with encryption enabled and restore a new encrypted instance from it. TLS protects data in transit, not at rest."
+  },
+  {
+    "id": "SAA-T1-009",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Unknown access patterns",
+    "stem": "A data lake holds objects whose access patterns are unknown and change over time. Some objects are hot for a week then cold for months. The team wants savings without retrieval fees or lifecycle tuning. Which storage class fits?",
+    "options": [
+      "S3 Glacier Flexible Retrieval",
+      "S3 Intelligent-Tiering",
+      "S3 One Zone-IA",
+      "S3 Standard-IA"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Intelligent-Tiering moves objects between access tiers automatically based on use, for a small monitoring charge per object and no retrieval fees. Standard-IA charges retrieval fees, which hurt when cold objects turn hot again."
+  },
+  {
+    "id": "SAA-T1-010",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fan-out",
+    "stem": "When an order is placed, three independent services (billing, shipping and analytics) must each receive a copy of the event and process it at their own pace. Which design fits?",
+    "options": [
+      "Have the web tier call each service's API one after another in a loop",
+      "Write each order to an S3 bucket and have every service list the bucket",
+      "Publish to an SNS topic with an SQS queue subscribed for each service",
+      "Send each order to a single SQS queue that all three services poll"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SNS to SQS fan-out delivers a copy of each message to every subscribed queue, and each queue buffers for its own consumer. With one shared queue each message goes to only one consumer."
+  },
+  {
+    "id": "SAA-T1-011",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spreading across AZs",
+    "stem": "A web application runs on six EC2 instances in one Availability Zone behind an ALB. What change best improves availability?",
+    "options": [
+      "Run the Auto Scaling group across at least two AZs",
+      "Attach an Elastic IP address to each instance",
+      "Double the instance size and keep the single AZ",
+      "Move all six instances to a cluster placement group"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An Auto Scaling group spanning multiple AZs, with the ALB enabled in those AZs, keeps serving if one AZ fails and replaces unhealthy instances. A cluster placement group concentrates instances even more tightly."
+  },
+  {
+    "id": "SAA-T1-012",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Big sequential reads",
+    "stem": "A log processing cluster reads large files sequentially and needs high throughput at the lowest cost per GB. Data is accessed often. Which EBS volume type fits?",
+    "options": [
+      "Cold HDD (sc1)",
+      "General Purpose SSD (gp3)",
+      "Throughput Optimized HDD (st1)",
+      "Provisioned IOPS SSD (io2 Block Express)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "st1 is low-cost HDD storage designed for frequently accessed, throughput-heavy sequential workloads such as big data and log processing. sc1 is cheaper but meant for infrequently accessed data, and SSD types cost more per GB."
+  },
+  {
+    "id": "SAA-T1-013",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DynamoDB caching",
+    "stem": "A gaming leaderboard on DynamoDB needs read latency in microseconds for hot items, with no changes to the application's data access logic beyond the client. Which service fits?",
+    "options": [
+      "DynamoDB global tables",
+      "Amazon CloudFront caching",
+      "DynamoDB Accelerator (DAX)",
+      "Amazon RDS cross-Region read replicas"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DAX is an in-memory cache built for DynamoDB that is API-compatible, so applications switch to the DAX client and get microsecond reads. Global tables replicate across Regions but still read at single-digit milliseconds."
+  },
+  {
+    "id": "SAA-T1-014",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Steady compute",
+    "stem": "A company runs a steady fleet of EC2 instances 24/7 and expects to move between instance families and Regions, and to adopt Fargate and Lambda, over the next three years. Which purchase option saves the most while keeping that flexibility?",
+    "options": [
+      "EC2 Instance Savings Plans",
+      "Compute Savings Plans",
+      "Standard Reserved Instances",
+      "Spot Instances for the base load"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Compute Savings Plans apply a committed hourly spend to EC2 in any family, size or Region, and to Fargate and Lambda. EC2 Instance Savings Plans and Standard RIs give deeper discounts but lock in an instance family in a Region."
+  },
+  {
+    "id": "SAA-T1-015",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Multi-account access",
+    "stem": "A company with 40 AWS accounts in AWS Organizations wants employees to sign in once with their corporate identity provider and reach only the accounts and permissions assigned to their job. Which solution needs the least ongoing effort?",
+    "options": [
+      "Amazon Cognito user pools linked to each account's IAM users",
+      "An IAM user per employee in every account, grouped by job role",
+      "IAM Identity Center with permission sets assigned to groups",
+      "One shared IAM user per team with credentials kept in a vault"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "IAM Identity Center federates with the corporate identity provider and pushes permission sets into each assigned account as roles, so access is managed in one place. Per-account IAM users multiply credentials, and Cognito is for application users, not workforce access to AWS accounts."
+  },
+  {
+    "id": "SAA-T1-016",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Security groups vs NACLs",
+    "stem": "A company must block all traffic from one known malicious IP address to every instance in a subnet. Security groups are already in use. What should be added?",
+    "options": [
+      "A deny rule for that address in the subnet's network ACL",
+      "An AWS Shield Standard subscription for the affected VPC",
+      "A deny rule for that address in each instance's security group",
+      "A route table entry that sends the address to a NAT gateway"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Network ACLs support explicit deny rules at the subnet level. Security groups only have allow rules, so they cannot deny one address while allowing everyone else."
+  },
+  {
+    "id": "SAA-T1-017",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Write once, read many",
+    "stem": "A financial firm must keep trade records in Amazon S3 for seven years so that no user, including the root user, can delete or overwrite them during that time. What should be configured?",
+    "options": [
+      "A bucket policy that denies s3:DeleteObject to all IAM users in the account",
+      "S3 Object Lock in governance mode with a seven-year retention period",
+      "S3 Versioning with a lifecycle rule that expires objects after seven years",
+      "S3 Object Lock in compliance mode with a seven-year retention period"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Compliance mode prevents any user, including root, from deleting or overwriting a locked object version until the retention period ends. Governance mode can be bypassed by users with special permission, and a bucket policy can be changed by an administrator."
+  },
+  {
+    "id": "SAA-T1-018",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interruptible batch",
+    "stem": "A nightly batch job processes images, can be stopped and resumed at any time, and has no deadline within the night. Which EC2 purchase option is cheapest?",
+    "options": [
+      "On-Demand Capacity Reservations",
+      "Spot Instances",
+      "Dedicated Instances",
+      "On-Demand Instances"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Spot Instances use spare EC2 capacity at up to 90 percent off On-Demand, and AWS can reclaim them with a two-minute warning, which is fine for interruptible, checkpointed work. Capacity Reservations cost the On-Demand price whether used or not."
+  },
+  {
+    "id": "SAA-T1-019",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "A banking application must process account transactions exactly once and in the order they were sent for each account. Which service configuration meets this?",
+    "options": [
+      "An SQS FIFO queue using the account ID as the message group ID",
+      "An SQS standard queue with a dead-letter queue for failed messages",
+      "An SQS standard queue with long polling turned on for the consumers",
+      "An SNS standard topic with an email subscription for each account"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "FIFO queues preserve order within a message group and deduplicate messages for exactly-once processing. Using the account ID as the group keeps each account in order while different accounts process in parallel. Standard queues offer best-effort ordering and at-least-once delivery."
+  },
+  {
+    "id": "SAA-T1-020",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DR strategy",
+    "stem": "A company needs a disaster recovery plan for a critical application with an RTO of a few minutes. A scaled-down but fully functional copy should always run in a second Region and scale up on failover. Which strategy is this?",
+    "options": [
+      "Pilot light",
+      "Backup and restore",
+      "Warm standby",
+      "Cold site with tape"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Warm standby keeps a scaled-down, always-running copy of the full stack that can take traffic immediately and scale up. Pilot light keeps only core pieces such as replicated data running, with servers off, so recovery takes longer."
+  },
+  {
+    "id": "SAA-T1-021",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "HPC file system",
+    "stem": "A genomics company runs a compute cluster that needs a file system with hundreds of GB/s of throughput and sub-millisecond latency, reading input data that lives in an S3 bucket. Which service fits?",
+    "options": [
+      "AWS Storage Gateway S3 File Gateway on EC2",
+      "Amazon FSx for Windows File Server with SMB",
+      "Amazon EFS using the One Zone storage class",
+      "Amazon FSx for Lustre linked to S3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "FSx for Lustre is a high-performance parallel file system for HPC and machine learning, and it can link to an S3 bucket to present objects as files and write results back. EFS is general-purpose NFS without Lustre's scale-out throughput."
+  },
+  {
+    "id": "SAA-T1-022",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Content delivery",
+    "stem": "A media company serves video files and images from S3 to viewers worldwide. Viewers far from the bucket's Region see slow load times. What should the architect add?",
+    "options": [
+      "S3 Cross-Region Replication into one other AWS Region",
+      "A Network Load Balancer in front of the S3 bucket",
+      "A CloudFront distribution with the S3 origin",
+      "Larger EC2 instances in the same Region as the bucket"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CloudFront caches content at edge locations close to viewers, which cuts latency and offloads the origin. Replicating to one more Region helps only viewers near that Region."
+  },
+  {
+    "id": "SAA-T1-023",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "NAT data processing",
+    "stem": "Private instances transfer hundreds of TB a month to Amazon S3 in the same Region through a NAT gateway, and NAT gateway charges are high. Which change cuts this cost?",
+    "options": [
+      "Add a gateway VPC endpoint for S3",
+      "Add a second NAT gateway in another AZ",
+      "Turn on S3 Transfer Acceleration",
+      "Move the instances into a public subnet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Gateway endpoints for S3 and DynamoDB have no charge, and traffic through them skips the NAT gateway's per-GB processing fee. Public instances would expose the workload, and Transfer Acceleration adds cost."
+  },
+  {
+    "id": "SAA-T1-024",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Service control policies",
+    "stem": "A company must ensure that no one in its development accounts, including account administrators, can launch resources outside the us-east-1 and us-west-2 Regions. What should the solutions architect use?",
+    "options": [
+      "An IAM group policy that allows only the two approved Regions",
+      "An SCP that denies actions when aws:RequestedRegion is any other Region",
+      "AWS Config rules that delete resources found in other Regions",
+      "An IAM permissions boundary attached to every administrator in the accounts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A service control policy in AWS Organizations caps what every principal in the member accounts can do, administrators and the root user included, so a Region deny applies to all. Permissions boundaries can be removed by an administrator with IAM rights, and Config only reacts after the resource exists."
+  },
+  {
+    "id": "SAA-T1-025",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Scaling workers on backlog",
+    "stem": "EC2 workers in an Auto Scaling group process messages from an SQS queue. The company wants the group to scale with the amount of work waiting. Which metric should drive scaling?",
+    "options": [
+      "Backlog per instance: visible messages divided by running instances",
+      "The SQS queue's NumberOfMessagesDeleted metric averaged over a day",
+      "Average CPU utilization of the EC2 instances in the Auto Scaling group",
+      "Number of HTTP requests that reach the application's load balancer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS recommends target tracking on backlog per instance (ApproximateNumberOfMessagesVisible divided by the group's running capacity) so capacity follows the queue. CPU may stay low while messages pile up, and there is no load balancer in this design."
+  },
+  {
+    "id": "SAA-T1-026",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Web application firewall",
+    "stem": "A public website behind an Application Load Balancer is receiving SQL injection attempts and bursts of requests from a few IP addresses. Which service mitigates both with managed rules and rate limits?",
+    "options": [
+      "AWS WAF associated with the Application Load Balancer",
+      "Amazon Inspector scanning the instances behind the ALB",
+      "AWS Shield Standard enabled on the Application Load Balancer",
+      "Amazon GuardDuty with automatic remediation turned on"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS WAF inspects HTTP requests at the ALB, CloudFront or API Gateway, with managed rule groups for SQL injection and rate-based rules that block noisy IPs. GuardDuty detects threats but does not filter requests, and Shield Standard covers network and transport layer DDoS."
+  },
+  {
+    "id": "SAA-T1-027",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key management",
+    "stem": "A company wants to encrypt S3 objects with keys it controls, with key usage logged in AWS CloudTrail and the ability to disable a key immediately. Which option fits?",
+    "options": [
+      "SSE-KMS with a customer managed key",
+      "SSE-C with keys stored in the bucket next to the data",
+      "Client-side encryption with a key kept in the code",
+      "SSE-S3 with Amazon S3 managed keys"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With a customer managed KMS key the company controls the key policy, can disable or schedule deletion of the key, and every use is logged in CloudTrail. SSE-S3 keys are fully managed by S3 with no per-key control."
+  },
+  {
+    "id": "SAA-T1-028",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Right-sizing",
+    "stem": "A company suspects many EC2 instances are oversized. Which service analyzes utilization metrics and recommends better instance types and sizes?",
+    "options": [
+      "AWS Budgets alerts",
+      "AWS Cost and Usage Report",
+      "Amazon Inspector",
+      "AWS Compute Optimizer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Compute Optimizer uses machine learning on CloudWatch metrics to recommend instance types and sizes for EC2, Auto Scaling groups, EBS, Lambda, ECS on Fargate and RDS. Budgets alerts on spend but gives no sizing advice."
+  },
+  {
+    "id": "SAA-T1-029",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DNS failover",
+    "stem": "A company runs its application in two Regions in an active-passive setup. Traffic should go to the secondary Region automatically if the primary's health check fails. Which Route 53 configuration does this?",
+    "options": [
+      "Weighted routing with equal weights for the two Regions",
+      "Simple routing with both Regions' IP addresses in one record",
+      "Geolocation routing with a default record for the primary",
+      "Failover routing records with health checks on the primary"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Failover routing answers with the primary record while its health check passes and switches to the secondary when it fails. Weighted routing at 50/50 would send traffic to both Regions all the time."
+  },
+  {
+    "id": "SAA-T1-030",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Instance families",
+    "stem": "A batch job does heavy mathematical modeling, is limited by CPU, and needs little memory. Which EC2 instance family fits best?",
+    "options": [
+      "Memory optimized (R family)",
+      "Compute optimized (C family)",
+      "Burstable general purpose (T family)",
+      "Storage optimized (I family)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "C family instances have a high ratio of vCPU to memory for compute-bound work such as modeling, batch processing and media encoding. Burstable T instances cannot sustain high CPU without extra charges or throttling."
+  },
+  {
+    "id": "SAA-T1-031",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hybrid connectivity",
+    "stem": "A company transfers several terabytes a day between its data center and AWS and needs consistent network performance with dedicated bandwidth, not the public internet. Which service fits?",
+    "options": [
+      "S3 Transfer Acceleration",
+      "AWS Client VPN",
+      "AWS Direct Connect",
+      "AWS Site-to-Site VPN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Direct Connect is a dedicated private connection from the data center to AWS with consistent bandwidth and latency. Site-to-Site VPN is encrypted but travels over the internet, so its performance varies."
+  },
+  {
+    "id": "SAA-T1-032",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cross-account access",
+    "stem": "An auditing team in Account A needs read-only access to resources in Account B. The company does not want to create IAM users in Account B. What is the most secure approach?",
+    "options": [
+      "Add the auditors' IAM users from Account A to a group in Account B",
+      "Create a role in Account B that trusts Account A and let auditors assume it",
+      "Copy Account B's resources to Account A on a nightly schedule",
+      "Create one IAM user in Account B and share its password with the auditors"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A role in Account B with a trust policy naming Account A lets auditors use AWS STS to get temporary credentials there, with read-only permissions attached to the role. IAM groups can only contain users from their own account, and a shared password removes individual accountability."
+  },
+  {
+    "id": "SAA-T1-033",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stateless web tier",
+    "stem": "A web application stores user session data in memory on each EC2 instance. Users are logged out when Auto Scaling removes an instance. How should the architect fix this so the tier can scale freely?",
+    "options": [
+      "Enable sticky sessions and stop all scale-in events",
+      "Store sessions on each instance's root EBS volume",
+      "Use larger instances so fewer of them are needed",
+      "Store sessions in Amazon ElastiCache or DynamoDB"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Moving session state to a shared store such as ElastiCache or DynamoDB makes the instances stateless, so any instance can serve any request and scale-in loses nothing. Sticky sessions still lose the session when the instance goes away."
+  },
+  {
+    "id": "SAA-T1-034",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spending alerts",
+    "stem": "A finance team wants an email when a project's forecast monthly spend is about to exceed 5,000 USD, and wants to stop new resource launches automatically at that point. Which service fits?",
+    "options": [
+      "AWS Pricing Calculator",
+      "AWS Cost Explorer saved reports",
+      "AWS Trusted Advisor checks",
+      "AWS Budgets with budget actions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AWS Budgets alerts on actual or forecast cost, and budget actions can apply an IAM policy or SCP, or stop instances, when a threshold is crossed. Cost Explorer visualizes spend but sends no alerts or actions."
+  },
+  {
+    "id": "SAA-T1-035",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Global database",
+    "stem": "A global e-commerce application uses Amazon Aurora MySQL. It needs reads with low latency in three Regions and recovery in another Region within about a minute, with an RPO of seconds, if the primary Region fails. What should the architect use?",
+    "options": [
+      "An RDS Multi-AZ DB cluster deployment in each Region",
+      "Aurora Replicas spread across the primary Region's AZs",
+      "Cross-Region automated snapshot copies every hour",
+      "Aurora Global Database with secondary Regions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Aurora Global Database replicates storage to secondary Regions with typical lag under a second, serves local reads there, and can promote a secondary in about a minute. Hourly snapshots give an RPO of up to an hour."
+  },
+  {
+    "id": "SAA-T1-036",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Large uploads",
+    "stem": "Users around the world upload files of several GB to one S3 bucket in us-east-1, and uploads from distant countries are slow and sometimes fail. Which combination improves this?",
+    "options": [
+      "S3 Standard-IA with a lifecycle policy",
+      "S3 Object Lock with versioning enabled",
+      "Transfer Acceleration and multipart upload",
+      "S3 Same-Region Replication to a second bucket"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Transfer Acceleration routes uploads through the nearest CloudFront edge location and over the AWS backbone, and multipart upload sends parts in parallel and retries only failed parts. AWS recommends multipart for objects over 100 MB."
+  },
+  {
+    "id": "SAA-T1-037",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Serverless querying",
+    "stem": "Analysts need to run ad hoc SQL queries against CSV and Parquet files in Amazon S3 without loading them into a database or managing servers. Which service fits?",
+    "options": [
+      "Amazon ElastiCache",
+      "Amazon Athena",
+      "Amazon Neptune",
+      "Amazon RDS for MySQL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Athena runs standard SQL directly on data in S3, is serverless and charges by data scanned. Storing data as compressed, partitioned Parquet cuts the data scanned. RDS would require loading the data first."
+  },
+  {
+    "id": "SAA-T1-038",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Database pricing model",
+    "stem": "A new application's DynamoDB table has unpredictable traffic with long idle periods and sudden spikes. The team wants to pay only for the requests it makes. Which capacity mode fits?",
+    "options": [
+      "Provisioned mode with fixed capacity",
+      "Provisioned mode with reserved capacity",
+      "Provisioned mode set for the peak load",
+      "On-demand capacity mode"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "On-demand mode bills per request and scales instantly, which suits unknown or spiky traffic. Reserved capacity is a commitment that only pays off for steady, predictable throughput."
+  },
+  {
+    "id": "SAA-T1-039",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Private access to AWS services",
+    "stem": "Instances in private subnets call Amazon S3 and AWS Systems Manager. The company wants this traffic to stay off the internet and to remove the NAT gateway. What should the architect add?",
+    "options": [
+      "A VPC peering connection to the AWS Region's public service network",
+      "An internet gateway and public IP addresses on every one of the instances",
+      "An S3 gateway endpoint and interface endpoints for Systems Manager",
+      "An egress-only internet gateway attached to the private subnets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Gateway endpoints route S3 (and DynamoDB) traffic privately, and interface endpoints powered by AWS PrivateLink give private IPs for services such as Systems Manager. An egress-only internet gateway is for outbound IPv6 and still uses the internet."
+  },
+  {
+    "id": "SAA-T1-040",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Dedicated HSM",
+    "stem": "A regulation requires that encryption keys live in single-tenant hardware security modules validated at FIPS 140-3 Level 3 that the company alone controls, with AWS having no access to the keys. Which service meets this?",
+    "options": [
+      "AWS KMS with AWS managed keys",
+      "AWS CloudHSM",
+      "Amazon S3 SSE-S3 encryption",
+      "AWS Secrets Manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CloudHSM provides dedicated HSMs in the customer's VPC, and the customer manages the users and keys. AWS KMS HSMs are also FIPS validated, but they are multi-tenant and operated by AWS, so KMS does not meet a single-tenant requirement."
+  },
+  {
+    "id": "SAA-T1-041",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Workflow orchestration",
+    "stem": "A loan approval process has several steps, some run by Lambda functions and one that waits up to five days for a human approval, with retries and error handling between steps. Which service should coordinate it?",
+    "options": [
+      "AWS Lambda with a 15-minute timeout",
+      "AWS Step Functions",
+      "Amazon EventBridge Scheduler",
+      "Amazon SQS standard queue"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Step Functions Standard Workflows run for up to a year, can wait for a callback token from a human task, and define retries and catch blocks for each state. A Lambda invocation stops after 15 minutes."
+  },
+  {
+    "id": "SAA-T1-042",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Root user protection",
+    "stem": "A new AWS account was just created. Which action best protects the root user?",
+    "options": [
+      "Rename the root user so attackers cannot guess the sign-in name",
+      "Share the root password with two administrators for redundancy",
+      "Enable MFA on the root user and do not create root access keys",
+      "Create root access keys and store them in AWS Secrets Manager"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS recommends MFA on the root user, no root access keys, and daily work done with other identities. The root user cannot be renamed, and keeping its access keys anywhere still leaves unrestricted long-term credentials in existence."
+  },
+  {
+    "id": "SAA-T1-043",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data transfer costs",
+    "stem": "A web application serves large downloads directly from EC2 instances to internet users, and data transfer out is the largest line on the bill. Which change typically lowers this cost?",
+    "options": [
+      "Move the instances into a second AWS Region",
+      "Replace the ALB with a Network Load Balancer",
+      "Serve the downloads through CloudFront",
+      "Attach larger EBS volumes to each instance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CloudFront caches content at the edge, and data transfer from the origin to CloudFront is free, while CloudFront's own transfer out is usually priced lower than EC2's and cuts origin load. A second Region adds cost."
+  },
+  {
+    "id": "SAA-T1-044",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "NAT gateway resilience",
+    "stem": "A VPC has private subnets in three AZs that all route internet traffic through one zonal NAT gateway in AZ A. What is the risk and the fix?",
+    "options": [
+      "The NAT gateway will throttle; replace it with an internet gateway",
+      "Traffic is unencrypted; add a VPN connection to the NAT gateway",
+      "A zonal NAT gateway fails over to another AZ by itself, so no change is needed",
+      "If AZ A fails all subnets lose egress; add a NAT gateway in each AZ"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A zonal NAT gateway is redundant within its own AZ only. AWS recommends one zonal NAT gateway per AZ, with each AZ's route table pointing at its local gateway, so one AZ's failure does not cut egress for the others. (A NAT gateway created in the newer regional availability mode spreads across AZs on its own; a zonal one never does.)"
+  },
+  {
+    "id": "SAA-T1-045",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Tightly coupled HPC",
+    "stem": "A computational fluid dynamics application runs across many EC2 instances that exchange data constantly and need the lowest possible network latency between nodes. Which configuration fits?",
+    "options": [
+      "A spread placement group across three Availability Zones",
+      "A partition placement group with default networking settings",
+      "A cluster placement group with Elastic Fabric Adapter (EFA)",
+      "Instances in different Regions joined by VPC peering links"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A cluster placement group packs instances close together in one AZ for low latency and high throughput, and EFA adds OS-bypass networking for MPI workloads. Spreading across AZs or Regions adds latency."
+  },
+  {
+    "id": "SAA-T1-046",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Connecting many VPCs",
+    "stem": "A company has 60 VPCs in several accounts plus a Direct Connect link to its data center. Production and development VPCs must stay isolated from each other, yet all of them must reach a shared-services VPC and on premises, without a mesh of peering connections. Which service fits?",
+    "options": [
+      "A NAT gateway in each of the VPCs",
+      "VPC peering between all pairs of VPCs",
+      "VPC gateway endpoints in each VPC",
+      "AWS Transit Gateway with separate route tables"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Transit Gateway is a regional hub that VPCs, VPNs and Direct Connect attach to, and separate transit gateway route tables let production and development each reach shared services and on premises but not each other. VPC peering is not transitive, so 60 VPCs would need up to 1,770 connections."
+  },
+  {
+    "id": "SAA-T1-047",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Serverless event processing",
+    "stem": "Every image uploaded to an S3 bucket must be resized into a thumbnail within seconds. Uploads range from zero to thousands per minute. Which design scales with the least operational effort?",
+    "options": [
+      "An S3 event notification that invokes a Lambda function",
+      "A cron job on an EC2 instance that lists the bucket each hour",
+      "An EC2 Auto Scaling group with a fixed size of ten instances",
+      "An AWS Batch job queue that is submitted manually every day"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "S3 event notifications invoke Lambda for each new object, and Lambda scales with the number of uploads without servers to manage. An hourly cron job misses the within-seconds requirement."
+  },
+  {
+    "id": "SAA-T1-048",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Licensing",
+    "stem": "A company is moving SQL Server Enterprise to EC2. Its existing licenses are counted per physical core, and auditors require proof of which physical server each instance ran on over time. Which option meets both needs?",
+    "options": [
+      "EC2 Spot Instances",
+      "Compute Savings Plans",
+      "EC2 Dedicated Hosts",
+      "EC2 Dedicated Instances"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dedicated Hosts give visibility into the sockets and physical cores of a server dedicated to the customer, which is what per-core licenses require, and host affinity and AWS Config tracking show which host an instance ran on. Dedicated Instances run on single-tenant hardware but do not expose the host's sockets and cores."
+  },
+  {
+    "id": "SAA-T1-049",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Secrets rotation",
+    "stem": "An application connects to an Amazon RDS for PostgreSQL database with a password stored in its configuration file. The company needs the password stored securely and rotated automatically every 30 days. What should be used?",
+    "options": [
+      "An encrypted environment variable on the EC2 instance",
+      "AWS Systems Manager Parameter Store standard tier",
+      "AWS Secrets Manager with automatic rotation",
+      "An Amazon S3 object encrypted with SSE-S3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Secrets Manager stores credentials encrypted with KMS and has built-in rotation for Amazon RDS databases on a schedule. Parameter Store can hold secure strings but has no native rotation."
+  },
+  {
+    "id": "SAA-T1-050",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Enforcing TLS",
+    "stem": "A security audit requires that all requests to an S3 bucket use encrypted connections. How can this be enforced?",
+    "options": [
+      "Enable default encryption with SSE-S3 on the bucket and its objects",
+      "Deny requests in the bucket policy when aws:SecureTransport is false",
+      "Turn on S3 Versioning and MFA Delete for every object in the bucket",
+      "Enable S3 Transfer Acceleration so traffic uses edge locations instead"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The aws:SecureTransport condition key is false for plain HTTP requests, so a deny statement rejects them. Default encryption protects data at rest, not the connection."
+  },
+  {
+    "id": "SAA-T1-051",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Permissions boundaries",
+    "stem": "Developers must be allowed to create IAM roles for their Lambda functions, but no role they create may ever have more permissions than a set the security team defines. Which IAM feature enforces this?",
+    "options": [
+      "A trust policy on the developers' role naming the Lambda service",
+      "An inline policy on each developer that lists the allowed actions",
+      "IAM Access Analyzer policy generation run on a weekly schedule",
+      "A permissions boundary required on each new role"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A permissions boundary sets the maximum permissions an identity can have. Requiring it through a condition on iam:CreateRole stops developers from creating roles that exceed it. A trust policy only controls who can assume a role, and Access Analyzer reports on access rather than enforcing a ceiling."
+  },
+  {
+    "id": "SAA-T1-052",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idle resources",
+    "stem": "A cost review finds dozens of unattached EBS volumes and idle load balancers left from old projects. Which service highlights such waste with built-in checks?",
+    "options": [
+      "Amazon GuardDuty findings",
+      "AWS CloudTrail",
+      "AWS Artifact",
+      "AWS Trusted Advisor"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Trusted Advisor's cost optimization checks flag idle load balancers, underutilized EC2 instances, unassociated Elastic IPs and other waste (the full set needs Business Support or higher). CloudTrail records API activity, not cost."
+  },
+  {
+    "id": "SAA-T1-053",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Shared file storage",
+    "stem": "Linux EC2 instances in an Auto Scaling group across three AZs need a shared POSIX file system that survives the loss of an AZ. Which storage fits?",
+    "options": [
+      "An EBS volume with Multi-Attach shared by all instances",
+      "Amazon FSx for Windows File Server, Single-AZ deployment",
+      "Instance store volumes replicated by a nightly cron job",
+      "Amazon EFS with the Regional (Standard) storage class"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "EFS Regional file systems store data redundantly across multiple AZs and can be mounted at the same time by instances in every AZ. EBS volumes, Multi-Attach included, live in one AZ."
+  },
+  {
+    "id": "SAA-T1-054",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Lambda performance",
+    "stem": "A Lambda function that processes images is CPU-bound and runs slowly. How can the architect give it more CPU?",
+    "options": [
+      "Add reserved concurrency to the function",
+      "Raise the function's timeout setting",
+      "Raise the function's memory setting",
+      "Move the function into a private subnet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lambda allocates CPU in proportion to configured memory (up to 10,240 MB, about 6 vCPUs), so more memory also means more CPU. The timeout only allows longer runs, it does not make them faster."
+  },
+  {
+    "id": "SAA-T1-055",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data transformation",
+    "stem": "A company wants to discover the schema of new datasets in S3, keep a central metadata catalog, and run serverless ETL jobs to convert them to Parquet. Which service fits?",
+    "options": [
+      "AWS DataSync",
+      "Amazon EMR on EC2",
+      "Amazon Kinesis Data Streams",
+      "AWS Glue"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AWS Glue crawlers infer schemas into the Glue Data Catalog, and Glue ETL jobs run serverless Spark to transform data. EMR can do the transformation but means managing clusters."
+  },
+  {
+    "id": "SAA-T1-056",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Event routing",
+    "stem": "A company has many SaaS and AWS event sources and wants to route events to different targets based on content, such as sending only orders over a certain amount to a fraud-check Lambda function. Which service fits best?",
+    "options": [
+      "AWS Step Functions Express Workflows polling each event source",
+      "Amazon Kinesis Data Streams with a single shard for all events",
+      "Amazon SQS FIFO queues, one for each kind of event that arrives",
+      "Amazon EventBridge with rules that match on event patterns"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "EventBridge rules match events by content (including numeric ranges) and route them to targets, and EventBridge has built-in integrations with SaaS partners. SNS can also filter on message attributes, but EventBridge is the event bus built for many sources and content routing."
+  },
+  {
+    "id": "SAA-T1-057",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Development environments",
+    "stem": "Developers' EC2 instances and RDS databases run 24/7 but are used only 9 AM to 6 PM on weekdays. What is the simplest way to cut their cost?",
+    "options": [
+      "Move the instances to Dedicated Hosts in one AZ",
+      "Stop the resources outside working hours on a schedule",
+      "Turn on detailed monitoring for every instance",
+      "Buy three-year Reserved Instances for every resource"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Stopping the instances and databases nights and weekends (for example with AWS Instance Scheduler or EventBridge Scheduler) removes about 70 percent of their compute hours. Reserved Instances pay for 24/7 usage that is not needed."
+  },
+  {
+    "id": "SAA-T1-058",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Threat detection",
+    "select": 2,
+    "stem": "A security team wants continuous detection of compromised EC2 instances and unusual API calls, plus automated scanning of instances and container images for software vulnerabilities. Which services meet these needs? (Choose two.)",
+    "options": [
+      "Amazon GuardDuty",
+      "AWS Artifact",
+      "AWS Trusted Advisor",
+      "Amazon Macie",
+      "Amazon Inspector"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "GuardDuty analyzes CloudTrail, VPC Flow Logs and DNS logs to detect threats such as crypto-mining or credential misuse. Inspector scans EC2 instances, ECR images and Lambda functions for known CVEs. Macie finds sensitive data in S3, and Artifact provides compliance reports."
+  },
+  {
+    "id": "SAA-T1-059",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Protecting against deletion",
+    "select": 2,
+    "stem": "A company wants to recover quickly if an employee accidentally deletes or overwrites objects in a critical S3 bucket. Which features help? (Choose two.)",
+    "options": [
+      "Enable server access logging and keep the logs in a second bucket",
+      "Use the S3 One Zone-IA storage class",
+      "Enable S3 Transfer Acceleration",
+      "Require MFA Delete for permanently deleting versions",
+      "Enable S3 Versioning on the bucket"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "Versioning keeps prior versions so an overwrite or delete can be undone, and MFA Delete requires MFA to permanently delete a version or change versioning state. Access logs record what happened but do not restore anything."
+  },
+  {
+    "id": "SAA-T1-060",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Least privilege",
+    "select": 2,
+    "stem": "A company wants to find and remove permissions that are broader than its IAM roles actually need, and to detect any S3 bucket shared with an external account. Which steps help? (Choose two.)",
+    "options": [
+      "Replace every IAM role with IAM users that have long-term access keys",
+      "Use IAM Access Analyzer to find resources shared outside the organization",
+      "Turn on S3 Transfer Acceleration for the buckets that hold shared data",
+      "Review IAM last-accessed data and generate policies from CloudTrail activity",
+      "Attach the AdministratorAccess policy to every role so that nothing fails unexpectedly"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Last-accessed information and Access Analyzer policy generation (based on CloudTrail logs) show which permissions a role really uses, and Access Analyzer's external access findings flag buckets, keys and roles shared outside the zone of trust. Transfer Acceleration speeds uploads and has nothing to do with access."
+  },
+  {
+    "id": "SAA-T1-061",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Backup and recovery",
+    "select": 2,
+    "stem": "A company must back up EC2, EBS, RDS and DynamoDB resources on a schedule from one place, and keep copies in a second Region for disaster recovery. Which steps meet this? (Choose two.)",
+    "options": [
+      "Write a cron job on each instance that copies files to S3",
+      "Create AWS Backup plans that target resources by tag",
+      "Enable S3 Transfer Acceleration on the backup bucket",
+      "Add a cross-Region copy rule to the backup plan",
+      "Turn on Multi-AZ for every RDS database as the backup"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "AWS Backup centrally schedules backups across many services, selecting resources by tag, and a copy rule sends recovery points to a vault in another Region. Multi-AZ improves availability but is not a backup: a deleted table is deleted on the standby too."
+  },
+  {
+    "id": "SAA-T1-062",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Temporary high-speed storage",
+    "select": 2,
+    "stem": "An application on EC2 needs very fast scratch space for temporary files that can be lost without harm, and its database volume must keep data if the instance stops. Which choices fit? (Choose two.)",
+    "options": [
+      "An EBS volume for the database data",
+      "Instance store volumes for the database data",
+      "Instance store volumes for the scratch files",
+      "Amazon S3 Glacier Instant Retrieval for scratch",
+      "Amazon EFS One Zone-IA for the database data"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Instance store is physically attached NVMe storage with very high I/O, but its data is lost when the instance stops or terminates, which is fine for scratch. EBS persists independently of the instance, which suits the database."
+  },
+  {
+    "id": "SAA-T1-063",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Choosing databases",
+    "select": 2,
+    "stem": "Match the need to the purpose-built database. Which pairings are correct? (Choose two.)",
+    "options": [
+      "Petabyte-scale analytic SQL warehouse: Amazon Redshift",
+      "Fraud graph of linked accounts: Amazon Neptune",
+      "Ad hoc SQL over S3 files: Amazon Neptune",
+      "Key-value shopping cart data at any scale: Amazon Redshift",
+      "Microsecond cache layer: Amazon Aurora"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Neptune is a graph database for highly connected data such as fraud rings and social networks, and Redshift is a columnar data warehouse for analytics. Key-value carts suit DynamoDB, SQL over S3 suits Athena, and caching suits ElastiCache or DAX."
+  },
+  {
+    "id": "SAA-T1-064",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Microservices on containers",
+    "select": 2,
+    "stem": "A company is breaking a monolith into containerized microservices. It wants no servers or clusters of EC2 instances to manage, and requests routed to services by URL path. Which choices fit? (Choose two.)",
+    "options": [
+      "Use Amazon EC2 Dedicated Hosts for each microservice",
+      "Run Docker on one large self-managed EC2 instance",
+      "Use an Application Load Balancer with path-based routing rules",
+      "Use a Network Load Balancer with path-based routing rules per service",
+      "Run the containers on Amazon ECS with AWS Fargate"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Fargate runs ECS tasks without EC2 instances to manage, and an ALB routes requests by path (for example /orders and /users) to separate target groups. A Network Load Balancer works at layer 4 and cannot route by URL path."
+  },
+  {
+    "id": "SAA-T1-065",
+    "section": "saa",
+    "test": 1,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Mixed fleets",
+    "select": 2,
+    "stem": "A stateless web tier has a steady minimum load and unpredictable peaks. Which choices lower cost while keeping the minimum capacity reliable? (Choose two.)",
+    "options": [
+      "Use Dedicated Hosts for both the base and the peaks",
+      "Run every instance On-Demand with no discounts so capacity is never at risk",
+      "Cover the steady base with a Savings Plan or Reserved Instances",
+      "Use Spot Instances in the Auto Scaling group for the peaks",
+      "Buy Reserved Instances sized for the highest peak"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Commitments are cheapest for capacity that always runs, and Spot in a mixed instances Auto Scaling group covers interruptible peaks at a deep discount. Reserving for the highest peak pays for idle capacity most of the time."
+  },
+  {
+    "id": "SAA-T2-001",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Archive retrieval",
+    "stem": "A company must keep scanned documents for 10 years. They are retrieved a few times a year, and when they are, a 12-hour wait is acceptable. Which storage class is cheapest?",
+    "options": [
+      "S3 Glacier Deep Archive",
+      "S3 Standard-IA",
+      "S3 Glacier Instant Retrieval",
+      "S3 One Zone-IA"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Deep Archive is the lowest-cost S3 class, with standard retrievals within 12 hours, which matches the requirement. Glacier Instant Retrieval gives millisecond access at a higher storage price."
+  },
+  {
+    "id": "SAA-T2-002",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Visibility timeout",
+    "stem": "Consumers of an SQS standard queue take about 4 minutes to process each message. Some messages are being processed twice by different consumers. What is the most likely fix?",
+    "options": [
+      "Raise the visibility timeout above the processing time",
+      "Lower the message retention period to one minute",
+      "Turn on long polling with a 20-second wait time",
+      "Lower the queue's delivery delay to zero seconds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If processing outlasts the visibility timeout (30 seconds by default) the message becomes visible again and another consumer picks it up. Setting the timeout above the processing time, or extending it while working, stops the duplicates. Consumers should still be idempotent, since standard queues are at-least-once."
+  },
+  {
+    "id": "SAA-T2-003",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Load balancer health checks",
+    "stem": "An ALB keeps sending requests to an instance whose application has crashed, although the instance itself is running. What should be changed?",
+    "options": [
+      "Switch the target group protocol from HTTP to TCP",
+      "Raise the ALB's idle timeout to 4,000 seconds",
+      "Turn on EC2 detailed monitoring for the instances",
+      "Point the target group health check at an application path"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A target group health check against an application URL (for example /health) detects a crashed app, so the ALB stops routing to it. With the ELB health check type on the Auto Scaling group, the instance is also replaced."
+  },
+  {
+    "id": "SAA-T2-004",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "gp3 tuning",
+    "stem": "A team uses a 200 GB gp2 volume only to get more IOPS, although it needs just 50 GB of space. It needs 6,000 IOPS. Which change provides this at lower cost?",
+    "options": [
+      "Use a 50 GB gp3 volume provisioned with 6,000 IOPS",
+      "Use a 2 TB gp2 volume to gain baseline IOPS",
+      "Use a 50 GB st1 volume striped with RAID 0",
+      "Use a 50 GB sc1 volume with burst credits"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "gp3 lets IOPS and throughput be provisioned independently of size, starting at 3,000 IOPS and 125 MB/s, and costs less per GB than gp2. gp2 ties IOPS to volume size, so it forces paying for unused space."
+  },
+  {
+    "id": "SAA-T2-005",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Variable database load",
+    "stem": "A SaaS application's relational database is idle most of the night and spikes unpredictably by day. The company wants capacity to adjust automatically in fine-grained steps without managing instance sizes. Which option fits?",
+    "options": [
+      "Amazon Redshift provisioned clusters",
+      "Amazon Aurora Serverless v2",
+      "Self-managed MySQL on EC2 Spot Instances",
+      "Amazon RDS with a fixed instance size"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Aurora Serverless v2 scales capacity in fine-grained increments in seconds as load changes, and can scale down very low (to zero ACUs where auto-pause is supported). A fixed instance must be sized for the peak."
+  },
+  {
+    "id": "SAA-T2-006",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Federation",
+    "stem": "Employees authenticate to an on-premises Microsoft Active Directory. The company wants them to use those same credentials to sign in to the AWS Management Console of a single AWS account. Which approach fits?",
+    "options": [
+      "Create matching IAM users and synchronize passwords by script each night",
+      "Give every employee the root user credentials of the account",
+      "Federate through IAM Identity Center with AD as the identity source",
+      "Configure Amazon Cognito identity pools for the console users"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "IAM Identity Center can use Active Directory (through AWS Directory Service or AD Connector) as its identity source, so users sign in with existing credentials and receive role-based console access. Duplicated IAM users create a second set of credentials to manage."
+  },
+  {
+    "id": "SAA-T2-007",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bastion-free access",
+    "stem": "Administrators need shell access to Linux instances in private subnets. The company wants no inbound SSH ports open and every session logged. Which solution fits?",
+    "options": [
+      "AWS Systems Manager Session Manager",
+      "A Site-to-Site VPN with SSH open from the whole corporate range",
+      "EC2 key pairs shared through a central file server",
+      "A bastion host in a public subnet with port 22 open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Session Manager opens shell sessions through the SSM Agent over outbound HTTPS, with no inbound ports and with session logs to CloudWatch Logs or S3. A bastion host still needs SSH open and its own patching."
+  },
+  {
+    "id": "SAA-T2-008",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Encrypting existing EBS",
+    "stem": "An EC2 instance has an unencrypted EBS data volume. The company must encrypt it with minimal data loss risk. Which approach works?",
+    "options": [
+      "Turn on S3 default encryption for the bucket that stores EBS snapshots",
+      "Select Enable encryption on the attached volume in the EC2 console",
+      "Snapshot the volume, copy the snapshot encrypted, and create a new volume",
+      "Detach the volume and attach it again with the encrypted flag set"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An existing EBS volume cannot be encrypted in place. Copying a snapshot with encryption and creating a volume from it produces an encrypted copy to swap in. Turning on EBS encryption by default covers only new volumes."
+  },
+  {
+    "id": "SAA-T2-009",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Re-creatable data",
+    "stem": "A company stores thumbnails that can be regenerated from originals at any time. They are accessed infrequently but need millisecond access. Which storage class is cheapest?",
+    "options": [
+      "S3 Standard-IA",
+      "S3 One Zone-IA",
+      "S3 Standard",
+      "S3 Glacier Deep Archive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "One Zone-IA stores data in a single AZ at about 20 percent less than Standard-IA, which is acceptable for data that can be re-created if the AZ is lost. Deep Archive cannot give millisecond access."
+  },
+  {
+    "id": "SAA-T2-010",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Poison messages",
+    "stem": "A few malformed messages keep failing and returning to an SQS queue, blocking worker capacity. The team wants them set aside for later analysis. What should be configured?",
+    "options": [
+      "A dead-letter queue with a maxReceiveCount redrive policy",
+      "Message retention of 14 days on the source SQS queue",
+      "A shorter visibility timeout so failures retry more often",
+      "A FIFO queue so malformed messages are removed automatically"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A redrive policy moves a message to the dead-letter queue after it has been received maxReceiveCount times without being deleted, so it stops cycling and can be inspected. Retention only controls how long unprocessed messages are kept."
+  },
+  {
+    "id": "SAA-T2-011",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "RPO and RTO",
+    "stem": "A company can tolerate losing at most 15 minutes of data and must be back online within 1 hour after a disaster. What do these two figures describe?",
+    "options": [
+      "An SLA of 15 minutes and an MTTR of 1 hour",
+      "An RTO of 15 minutes and an RPO of 1 hour",
+      "An RPO of 1 hour and an MTBF of 15 minutes",
+      "An RPO of 15 minutes and an RTO of 1 hour"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The recovery point objective is the maximum acceptable data loss, measured in time, and the recovery time objective is the maximum acceptable time to restore service."
+  },
+  {
+    "id": "SAA-T2-012",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Windows file shares",
+    "stem": "A company is moving Windows applications that use SMB file shares integrated with Microsoft Active Directory, with DFS namespaces and Windows ACLs. Which service fits?",
+    "options": [
+      "Amazon FSx for Lustre Persistent",
+      "Amazon S3 with S3 Access Points",
+      "Amazon FSx for Windows File Server",
+      "Amazon EFS with Standard storage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "FSx for Windows File Server provides fully managed native Windows file shares over SMB with AD integration, NTFS ACLs and DFS. EFS is NFS for Linux clients."
+  },
+  {
+    "id": "SAA-T2-013",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Latency-based routing",
+    "stem": "A company runs identical application stacks in us-east-1, eu-west-1 and ap-southeast-1. Each user should be sent to the Region that gives them the lowest network latency. Which Route 53 policy fits?",
+    "options": [
+      "Simple routing",
+      "Geolocation routing",
+      "Latency routing",
+      "Weighted routing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Latency routing answers with the Region that has the lowest measured latency for the user's resolver. Geolocation routes by the user's location, which is about compliance or localization and is not always the fastest path."
+  },
+  {
+    "id": "SAA-T2-014",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Graviton",
+    "stem": "A company runs Linux-based microservices on x86 EC2 instances. The code is in interpreted languages and runs on ARM without changes. How can it get better price performance?",
+    "options": [
+      "Move to Dedicated Instances for isolation",
+      "Turn on EC2 detailed monitoring",
+      "Move to AWS Graviton-based instance types",
+      "Move to the largest x86 instance size"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Graviton (ARM-based) instances offer up to 40 percent better price performance than comparable x86 instances for many workloads, and interpreted languages often need no code change. Larger x86 instances raise cost."
+  },
+  {
+    "id": "SAA-T2-015",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Policy evaluation",
+    "stem": "An IAM user has an identity-based policy that allows s3:* on a bucket. The bucket policy explicitly denies s3:DeleteObject to that user. What happens when the user tries to delete an object?",
+    "options": [
+      "The request is denied because an explicit deny always wins",
+      "The request is allowed because the identity policy allows s3:*",
+      "The request is denied only if the user signed in without MFA",
+      "The request is allowed because identity policies are evaluated first"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In IAM policy evaluation an explicit deny in any applicable policy overrides every allow. Order of evaluation does not let an allow win over a deny."
+  },
+  {
+    "id": "SAA-T2-016",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Restricting S3 origin",
+    "stem": "A static website is stored in an S3 bucket and served through Amazon CloudFront. Users must not be able to bypass CloudFront and read objects straight from the bucket. What should the architect configure?",
+    "options": [
+      "A public bucket policy combined with S3 static website hosting enabled",
+      "S3 Transfer Acceleration together with a CloudFront geo restriction",
+      "A VPC gateway endpoint for S3 attached to the CloudFront distribution",
+      "Origin access control (OAC) and a bucket policy that trusts CloudFront"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Origin access control signs CloudFront's requests to S3, and the bucket policy allows only that distribution, so direct requests to the bucket are refused. OAC replaces the older origin access identity."
+  },
+  {
+    "id": "SAA-T2-017",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Key rotation",
+    "stem": "A company uses a customer managed KMS key for SSE-KMS and must rotate the key material every year without re-encrypting existing data or changing applications. What should it do?",
+    "options": [
+      "Delete the key each year and let AWS create a replacement",
+      "Create a new key each year and re-encrypt every object by hand",
+      "Enable automatic key rotation on the customer managed key",
+      "Switch to SSE-C and upload a new key with each request"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Automatic rotation creates new key material on a schedule while keeping the same key ID. Old material stays available to decrypt existing data, so applications change nothing. Deleting a key makes data encrypted under it unrecoverable."
+  },
+  {
+    "id": "SAA-T2-018",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cost visibility",
+    "stem": "Several teams share one AWS account. Finance wants to see monthly cost for each team in Cost Explorer. What should be set up?",
+    "options": [
+      "Turn on AWS CloudTrail data events for every service",
+      "Buy a separate Savings Plan for each of the teams",
+      "Tag resources by team and activate cost allocation tags",
+      "Create a separate VPC for each team in the same account"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "User-defined tags activated as cost allocation tags appear in Cost Explorer and the Cost and Usage Report, so costs can be grouped by team. VPCs do not separate billing."
+  },
+  {
+    "id": "SAA-T2-019",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Real-time streaming",
+    "stem": "A ride-sharing app sends location updates from 100,000 devices every second. Several applications must read the same stream in real time, in order per device, and replay the last 24 hours if needed. Which service fits?",
+    "options": [
+      "Amazon SQS standard queue",
+      "Amazon Kinesis Data Streams",
+      "Amazon SNS standard topic",
+      "Amazon S3 with event notifications"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Kinesis Data Streams orders records per partition key, lets multiple consumers read the same data independently, and retains it for 24 hours by default (up to 365 days) for replay. An SQS message is consumed once and then deleted."
+  },
+  {
+    "id": "SAA-T2-020",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pilot light",
+    "stem": "A company wants a low-cost DR plan with an RTO of a few hours. Data must be continuously replicated to a second Region, but application servers should run there only during a disaster. Which strategy is this?",
+    "options": [
+      "Backup and restore only",
+      "Pilot light",
+      "Warm standby",
+      "Multi-site active/active"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pilot light keeps the core (replicated databases, AMIs, infrastructure as code) ready in the DR Region and turns on and scales the application servers only when needed. Warm standby keeps a scaled-down copy of everything running all the time."
+  },
+  {
+    "id": "SAA-T2-021",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "S3 request rates",
+    "stem": "An analytics job reads millions of small objects from one S3 bucket and hits throttling (503 Slow Down) on a single key prefix. What helps most?",
+    "options": [
+      "Convert the bucket to S3 One Zone-IA storage",
+      "Turn on S3 Object Lock in governance mode",
+      "Spread the objects across several key prefixes",
+      "Move every object into one larger combined prefix"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "S3 supports at least 3,500 writes and 5,500 reads per second per prefix, and request rates scale across prefixes, so parallel prefixes multiply throughput. Storage class does not change per-prefix request limits."
+  },
+  {
+    "id": "SAA-T2-022",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Layer 4 load balancing",
+    "stem": "A financial trading application uses TCP connections, needs to handle millions of requests per second with ultra-low latency, and requires one static IP address per AZ. Which load balancer fits?",
+    "options": [
+      "Classic Load Balancer",
+      "Network Load Balancer",
+      "Gateway Load Balancer",
+      "Application Load Balancer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The NLB operates at layer 4, scales to millions of requests per second with very low latency, and supports a static or Elastic IP per AZ. The ALB is layer 7 and has no static IPs."
+  },
+  {
+    "id": "SAA-T2-023",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Spot best practice",
+    "stem": "A containerized batch platform uses Spot Instances and sees frequent interruptions in one instance type. Which approach improves Spot availability?",
+    "options": [
+      "Switch the fleet to a cluster placement group for all of the instances",
+      "Use only the single cheapest instance type in one Availability Zone",
+      "Diversify across many instance types and AZs with price-capacity-optimized allocation",
+      "Set a maximum Spot price well above the On-Demand price"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS recommends flexibility across instance types, sizes and AZs, with the price-capacity-optimized allocation strategy choosing the pools least likely to be interrupted. A single cheapest pool is the one most likely to run out."
+  },
+  {
+    "id": "SAA-T2-024",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Organizations guardrails",
+    "stem": "A security team wants to stop member accounts from leaving AWS Organizations or turning off AWS CloudTrail, while still letting account administrators manage everything else. What should they do?",
+    "options": [
+      "Attach an SCP denying those actions to the member OUs",
+      "Remove the IAM administrator role from every member account",
+      "Attach a permissions boundary to the management account root user",
+      "Enable CloudTrail in each account and rely on CloudWatch alarms"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A deny-list SCP blocks organizations:LeaveOrganization and cloudtrail:StopLogging or DeleteTrail for every principal in the targeted OUs, while other permissions keep flowing from IAM. Alarms only notify after the damage, and SCPs do not affect the management account anyway."
+  },
+  {
+    "id": "SAA-T2-025",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Scaling reads",
+    "stem": "A news site on Amazon RDS for MySQL has heavy read traffic that is slowing down writes from the editors. Which change scales reads with minimal application changes?",
+    "options": [
+      "Convert the database to a larger instance class with more vCPUs",
+      "Add read replicas and send read queries to the replica endpoints",
+      "Move the database storage from General Purpose SSD to Magnetic",
+      "Enable Multi-AZ so the standby instance can answer read queries"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Read replicas copy data asynchronously and serve read-only queries, taking load off the primary. A Multi-AZ DB instance's standby does not serve reads (only the Multi-AZ DB cluster option has readable standbys), and a bigger instance only scales vertically."
+  },
+  {
+    "id": "SAA-T2-026",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "API authentication",
+    "stem": "A company is building a REST API on Amazon API Gateway for its mobile app. Only users who signed up and signed in through the app should be able to call it. Which option needs the least custom code?",
+    "options": [
+      "A Lambda authorizer that checks a hardcoded password",
+      "An IAM user per customer with access keys in the app",
+      "An Amazon Cognito user pool authorizer on the API",
+      "An AWS WAF rule that allows the app's IP address"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A Cognito user pool handles sign-up and sign-in and issues JWTs, and API Gateway validates them with a built-in authorizer. A mobile app has no fixed IP address, and IAM users are not meant for end customers."
+  },
+  {
+    "id": "SAA-T2-027",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Cross-Region encryption",
+    "stem": "A company replicates encrypted data between two AWS Regions and wants to decrypt in the second Region without calling the first Region's KMS endpoint. What should it use?",
+    "options": [
+      "One KMS key shared through AWS RAM",
+      "AWS KMS multi-Region keys",
+      "SSE-S3 with replica modification sync",
+      "AWS managed keys for each service"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Multi-Region keys share key material and key ID across Regions, so data encrypted in one Region can be decrypted in another locally. A single-Region key is usable only in its own Region."
+  },
+  {
+    "id": "SAA-T2-028",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "EBS snapshots",
+    "stem": "A company keeps monthly EBS snapshots for 7 years for compliance and almost never restores them. Which change lowers snapshot storage cost?",
+    "options": [
+      "Convert the volumes from gp3 to io2",
+      "Enable Fast Snapshot Restore on them",
+      "Move the snapshots to the EBS Snapshots Archive tier",
+      "Copy the snapshots to a second Region"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "EBS Snapshots Archive stores full snapshots at up to 75 percent lower cost for rarely accessed snapshots kept 90 days or more, with restores taking up to 72 hours. Fast Snapshot Restore adds cost."
+  },
+  {
+    "id": "SAA-T2-029",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Global key-value data",
+    "stem": "A mobile game stores player profiles in Amazon DynamoDB. Players in North America, Europe and Asia must read and write with low latency, and the data must survive a Regional outage. What should be used?",
+    "options": [
+      "DynamoDB Streams to S3",
+      "On-demand backups copied daily",
+      "DynamoDB Accelerator (DAX)",
+      "DynamoDB global tables"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Global tables replicate a table across chosen Regions, each replica accepting reads and writes, so players use the nearest Region and the others keep working if one fails. DAX is an in-Region cache."
+  },
+  {
+    "id": "SAA-T2-030",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Memory-heavy workloads",
+    "stem": "An in-memory analytics application needs a very large amount of RAM per vCPU on a single EC2 instance. Which instance family should be chosen?",
+    "options": [
+      "Compute optimized (C family)",
+      "Memory optimized (R or X family)",
+      "Burstable general purpose (T family)",
+      "Accelerated computing (G family)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "R and X instances have high memory-to-vCPU ratios for in-memory databases and real-time big data analytics. G instances are GPU instances for graphics and ML inference."
+  },
+  {
+    "id": "SAA-T2-031",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Online data transfer",
+    "stem": "A company must move 50 TB of files from an on-premises NFS server to Amazon EFS over its network connection, with encryption, scheduling and integrity checks handled automatically. Which service fits?",
+    "options": [
+      "AWS Transfer Family",
+      "Amazon Data Firehose",
+      "AWS Database Migration Service",
+      "AWS DataSync"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "DataSync moves files between on-premises storage (NFS, SMB, HDFS, object) and S3, EFS or FSx, with encryption in transit, scheduling and data verification. Transfer Family provides SFTP, FTPS and FTP endpoints for partners."
+  },
+  {
+    "id": "SAA-T2-032",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Temporary credentials",
+    "stem": "A mobile app needs to let signed-in users upload photos directly to Amazon S3 without embedding AWS keys in the app. Which service provides temporary, limited AWS credentials to the app's users?",
+    "options": [
+      "AWS IAM Identity Center permission sets",
+      "Amazon Cognito identity pools",
+      "AWS Directory Service Simple AD",
+      "AWS Secrets Manager with rotation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cognito identity pools exchange a signed-in user's token for temporary AWS credentials scoped by an IAM role, so the app never holds long-term keys. IAM Identity Center is for the workforce signing in to AWS accounts, not for customers of an app."
+  },
+  {
+    "id": "SAA-T2-033",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Auto Scaling policies",
+    "stem": "A web application's load climbs every weekday at 8 AM and drops at 6 PM, and in between it varies with traffic. Which Auto Scaling setup handles both patterns?",
+    "options": [
+      "Simple scaling with a 60-minute cooldown after every scaling event",
+      "A fixed desired capacity sized for the highest load of the week",
+      "Scheduled actions for the known times plus target tracking on CPU",
+      "Manual scaling by an operator who watches the CloudWatch graphs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scheduled actions raise capacity before the predictable morning ramp, and target tracking adjusts within the day to keep a metric such as CPU near its target. Predictive scaling could also learn the daily cycle. A fixed size wastes money off-peak."
+  },
+  {
+    "id": "SAA-T2-034",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Serverless vs servers",
+    "stem": "An internal API receives a few hundred requests a day at random times and currently runs on two always-on EC2 instances behind an ALB. Which change cuts cost most?",
+    "options": [
+      "Move it to larger On-Demand instances",
+      "Buy Reserved Instances for both servers",
+      "Add a third instance in another AZ",
+      "Rebuild it on API Gateway and Lambda"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "With API Gateway and Lambda the company pays per request and per millisecond of run time, so a lightly used API costs very little and nothing while idle. Reserved Instances discount servers that still sit idle most of the day."
+  },
+  {
+    "id": "SAA-T2-035",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Static IP failover",
+    "stem": "A gaming company runs a UDP-based service in two Regions. Clients need two static IP addresses to allowlist, and traffic must shift to the healthy Region within seconds of a failure without relying on DNS caching. Which service fits?",
+    "options": [
+      "Amazon CloudFront",
+      "Route 53 latency routing",
+      "Application Load Balancer",
+      "AWS Global Accelerator"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Global Accelerator gives two static anycast IP addresses, supports TCP and UDP, and reroutes to healthy endpoints in seconds over the AWS network. Route 53 failover depends on clients honoring DNS TTLs, and CloudFront and ALB do not proxy arbitrary UDP traffic."
+  },
+  {
+    "id": "SAA-T2-036",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Elastic shared file system",
+    "stem": "A content management system on Linux EC2 instances needs shared storage that grows and shrinks automatically with no capacity planning. Which service fits?",
+    "options": [
+      "Amazon FSx for Windows",
+      "Amazon EBS gp3",
+      "EC2 instance store",
+      "Amazon EFS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "EFS is an elastic NFS file system that grows and shrinks as files are added and removed, and many Linux instances can mount it at once. EBS volumes have a set size and attach to one instance (Multi-Attach aside)."
+  },
+  {
+    "id": "SAA-T2-037",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Database migration",
+    "stem": "A 5 TB on-premises Oracle database backs a 24/7 order system. It is moving to Amazon Aurora PostgreSQL, its stored procedures must be rewritten for PostgreSQL, and the business allows only a 10-minute outage at cutover. Which approach fits?",
+    "options": [
+      "An S3 File Gateway mounted on the Oracle server for the cutover",
+      "AWS SCT for schema conversion and AWS DMS with ongoing replication",
+      "Amazon Data Firehose streaming the tables into Aurora PostgreSQL",
+      "AWS DataSync for the data files and AWS Backup for the database"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Schema Conversion Tool (or DMS Schema Conversion) converts Oracle schema and code to PostgreSQL, and DMS full load plus change data capture keeps the target in sync while the source stays live, so cutover is only the final switch. DataSync copies files, not live database changes."
+  },
+  {
+    "id": "SAA-T2-038",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Database commitments",
+    "stem": "A production Amazon RDS for PostgreSQL instance will run unchanged around the clock for at least three years. Which option lowers its cost the most?",
+    "options": [
+      "Stop the instance each night and start it each day",
+      "Use Compute Savings Plans to cover the database",
+      "Purchase an RDS Reserved Instance for three years",
+      "Change it to an Aurora Serverless v2 cluster"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "RDS Reserved Instances give a large discount for a one- or three-year commitment on a steady database. Compute Savings Plans do not apply to RDS. Database Savings Plans (December 2025) do, but only on a one-year term with smaller discounts than a three-year RI. A production database must keep running at night."
+  },
+  {
+    "id": "SAA-T2-039",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Network inspection",
+    "stem": "A company must inspect and filter all traffic leaving its VPCs for the internet, including domain-based allow lists and intrusion prevention, using a managed AWS service. Which service fits?",
+    "options": [
+      "AWS Shield Advanced on the NAT gateways",
+      "Security groups on every instance in the VPCs",
+      "Amazon Route 53 health checks on outbound traffic",
+      "AWS Network Firewall"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AWS Network Firewall is a managed, stateful firewall for VPCs with domain filtering and Suricata-compatible intrusion prevention rules. Security groups cannot filter by domain name or inspect payloads."
+  },
+  {
+    "id": "SAA-T2-040",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Default encryption",
+    "stem": "What is the default encryption behavior for new objects uploaded to a new Amazon S3 bucket today?",
+    "options": [
+      "They are encrypted with SSE-KMS using an AWS managed key",
+      "They are encrypted with SSE-S3 automatically",
+      "They are encrypted only if the client sends a key",
+      "They are stored unencrypted until a policy is set"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Since January 2023, Amazon S3 applies SSE-S3 to every new object by default at no extra cost. SSE-KMS can be chosen as the bucket default instead."
+  },
+  {
+    "id": "SAA-T2-041",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "API throttling",
+    "stem": "A public REST API built on API Gateway and Lambda must protect its backend from traffic bursts and give each partner its own request quota. What should the architect configure?",
+    "options": [
+      "A Network Load Balancer in front of API Gateway for each partner",
+      "An SQS queue in front of API Gateway to buffer the requests",
+      "A larger Lambda memory size for each function behind the API",
+      "Usage plans with API keys, plus stage throttling limits"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "API Gateway throttling caps steady rate and bursts, and usage plans tied to API keys set per-client throttles and quotas. More Lambda memory makes each call faster but does not limit callers."
+  },
+  {
+    "id": "SAA-T2-042",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Resource policies",
+    "stem": "A company wants to guarantee that objects in an S3 bucket can be read only by principals in its own AWS Organization, no matter what IAM policies exist in other accounts. What should be added to the bucket policy?",
+    "options": [
+      "A Deny statement with the condition aws:PrincipalOrgID not equal to the org ID",
+      "A Deny statement for any request that arrives over HTTPS connections",
+      "An Allow statement that lists the root user of the management account",
+      "An Allow statement for the principal \"*\" with no conditions at all"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The aws:PrincipalOrgID global condition key lets one bucket policy statement deny every principal outside the organization, without listing account IDs. Allowing \"*\" opens the bucket, and denying HTTPS would block legitimate encrypted traffic."
+  },
+  {
+    "id": "SAA-T2-043",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unexpected spend",
+    "stem": "A company's costs vary from day to day, so fixed budget thresholds either alert too often or too late. It wants to be notified automatically when a service's spend rises unusually compared with its normal pattern. Which service fits?",
+    "options": [
+      "AWS Compute Optimizer",
+      "AWS Pricing Calculator",
+      "AWS Cost Anomaly Detection",
+      "AWS Cost and Usage Report"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cost Anomaly Detection uses machine learning on past spend to learn each service's normal pattern and sends alerts on unusual increases, with root-cause details, without fixed thresholds. The Pricing Calculator estimates planned architectures, and the CUR is raw billing data."
+  },
+  {
+    "id": "SAA-T2-044",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Replicating S3 data",
+    "stem": "A company must keep a copy of every new object in an S3 bucket in a second Region for disaster recovery, with most objects replicated within 15 minutes backed by an SLA. What should it configure?",
+    "options": [
+      "A lifecycle rule moving the objects to S3 Glacier Deep Archive",
+      "Cross-Region Replication with S3 Replication Time Control",
+      "S3 Transfer Acceleration on the source bucket and the target",
+      "Same-Region Replication into a second bucket in the same Region"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cross-Region Replication copies new objects to a bucket in another Region (both buckets need versioning), and Replication Time Control adds a 15-minute replication SLA with metrics. Transfer Acceleration speeds client uploads only."
+  },
+  {
+    "id": "SAA-T2-045",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Low-latency object storage",
+    "stem": "A machine learning training job in one AZ reads the same small S3 objects at very high request rates and needs consistent single-digit millisecond latency. Which storage option is designed for this?",
+    "options": [
+      "S3 Standard-IA with lifecycle transitions",
+      "S3 Intelligent-Tiering with archive tiers",
+      "S3 Glacier Instant Retrieval storage class",
+      "S3 Express One Zone in a directory bucket"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "S3 Express One Zone stores data in a single AZ in directory buckets and delivers consistent single-digit millisecond access with very high request rates, which suits latency-sensitive jobs placed in the same AZ. Glacier Instant Retrieval is for rarely accessed data."
+  },
+  {
+    "id": "SAA-T2-046",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "API caching",
+    "stem": "A REST API on API Gateway returns product details that change once a day, and the Lambda backend is invoked for every identical request. Which change cuts latency and backend calls with the least work?",
+    "options": [
+      "Move the Lambda backend into a VPC with a NAT gateway",
+      "Raise the Lambda memory to the maximum of 10,240 MB",
+      "Enable API Gateway caching for the stage with a suitable TTL",
+      "Add an SQS queue between API Gateway and the Lambda backend"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "API Gateway stage caching stores responses for the TTL (up to an hour), so repeated requests are served without invoking Lambda. A queue would make a synchronous API asynchronous."
+  },
+  {
+    "id": "SAA-T2-047",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Database connections",
+    "stem": "A Lambda function writes to a relational database. During spikes it opens thousands of connections and the database runs out of connections. Which change fixes this with the least code change?",
+    "options": [
+      "Turn on Multi-AZ for the RDS database instance",
+      "Put Amazon RDS Proxy between Lambda and the database",
+      "Raise the Lambda timeout to the maximum of 15 minutes",
+      "Move the Lambda functions into a public subnet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "RDS Proxy pools and shares database connections, so many concurrent Lambda invocations reuse a small number of connections. Multi-AZ adds a standby for availability but does not add connection capacity."
+  },
+  {
+    "id": "SAA-T2-048",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Cross-AZ traffic",
+    "stem": "A chatty application sends terabytes a day between application servers in one AZ and a cache cluster in another AZ in the same Region. Which design change reduces data transfer charges while keeping high availability?",
+    "options": [
+      "Move the cache cluster into a different AWS Region instead",
+      "Route the traffic through a NAT gateway in each of the AZs",
+      "Read from a cache node in the same AZ as each app server",
+      "Send all of the cache traffic over the public internet instead"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Data transfer between AZs is charged in each direction, while traffic within the same AZ over private IPs is free. Keeping replicas in each AZ and reading locally keeps HA and cuts cross-AZ charges. A NAT gateway adds processing charges."
+  },
+  {
+    "id": "SAA-T2-049",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DDoS protection",
+    "stem": "A company runs a high-profile website on CloudFront and an Application Load Balancer. It wants advanced DDoS protection, 24/7 access to the AWS Shield Response Team, and protection against scaling charges caused by an attack. What should it subscribe to?",
+    "options": [
+      "Amazon GuardDuty Extended Threat Detection",
+      "AWS Shield Advanced",
+      "AWS Shield Standard",
+      "AWS Firewall Manager alone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Shield Advanced adds enhanced detection, the Shield Response Team and cost protection for scaling during a DDoS attack. Shield Standard is automatic and free but has none of those."
+  },
+  {
+    "id": "SAA-T2-050",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Reducing KMS requests",
+    "stem": "A data lake uses SSE-KMS on a bucket with millions of small objects, and KMS request costs and throttling are rising. Which change reduces KMS calls without lowering security?",
+    "options": [
+      "Enable S3 Bucket Keys on the bucket",
+      "Use client-side encryption with no key",
+      "Switch every object to SSE-C",
+      "Turn off default encryption"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An S3 Bucket Key is a bucket-level key derived from the KMS key, which lets S3 create data keys locally and cuts KMS requests by up to 99 percent. Turning off encryption lowers security."
+  },
+  {
+    "id": "SAA-T2-051",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Control Tower",
+    "stem": "A company is setting up a new multi-account environment and wants a prebuilt landing zone with guardrails, centralized logging and an account factory for new accounts. Which service delivers this?",
+    "options": [
+      "AWS Control Tower",
+      "AWS Service Catalog AppRegistry",
+      "AWS Resource Access Manager",
+      "AWS Systems Manager Fleet Manager"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Control Tower sets up a landing zone on AWS Organizations with preventive and detective controls, a log archive account, an audit account and Account Factory. Resource Access Manager only shares resources such as subnets between accounts."
+  },
+  {
+    "id": "SAA-T2-052",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "EFS cost",
+    "stem": "An Amazon EFS file system holds 20 TB, but only about 10 percent of the files are accessed in a given month. How can storage cost drop with no application change?",
+    "options": [
+      "Switch the throughput mode to Provisioned with a lower setting",
+      "Enable EFS lifecycle management to move files to Infrequent Access",
+      "Copy the files to EBS gp3 volumes and attach them to each instance",
+      "Move the file system to Max I/O performance mode for lower cost"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "EFS lifecycle policies move files not accessed for a set period to the Infrequent Access (or Archive) storage class at a much lower price, and back on access if configured. Throughput and performance modes do not change the per-GB storage price."
+  },
+  {
+    "id": "SAA-T2-053",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Server replication DR",
+    "stem": "A company runs 200 on-premises servers and wants DR in AWS with continuous block-level replication, low-cost staging resources, and recovery in minutes with an RPO of seconds. Which service fits?",
+    "options": [
+      "AWS Backup with daily plans",
+      "AWS DataSync scheduled tasks",
+      "AWS Application Migration Service",
+      "AWS Elastic Disaster Recovery"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Elastic Disaster Recovery continuously replicates servers into a low-cost staging area and launches recovery instances in minutes. Application Migration Service uses similar replication but is meant for one-time migrations, and DataSync copies files rather than whole servers."
+  },
+  {
+    "id": "SAA-T2-054",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Container compute choice",
+    "stem": "A team runs short, unpredictable container workloads and wants to pay only for the vCPU and memory each task uses, with no EC2 capacity to manage. Which option fits?",
+    "options": [
+      "Amazon ECS tasks on AWS Fargate",
+      "Amazon ECS on EC2 Reserved Instances",
+      "Docker on one EC2 Dedicated Host",
+      "Amazon EKS on self-managed EC2 nodes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fargate runs containers without servers and bills per second for the vCPU and memory each task requests. Reserved Instances and Dedicated Hosts commit to capacity whether or not tasks run."
+  },
+  {
+    "id": "SAA-T2-055",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Streaming analytics",
+    "stem": "A company wants to run SQL or Apache Flink applications that compute rolling one-minute metrics over a Kinesis data stream in real time. Which service fits?",
+    "options": [
+      "Amazon Managed Service for Apache Flink",
+      "Amazon Athena with federated queries",
+      "AWS Glue crawlers on a schedule",
+      "Amazon Redshift with nightly COPY loads"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Amazon Managed Service for Apache Flink (formerly Kinesis Data Analytics) runs Flink applications on streaming data with windowed aggregations in real time. Nightly loads and crawlers are batch, not real time."
+  },
+  {
+    "id": "SAA-T2-056",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Message broker migration",
+    "stem": "A company is moving an on-premises application that uses Apache ActiveMQ with the JMS API and MQTT to AWS. It wants a managed broker without rewriting the messaging code. Which service fits?",
+    "options": [
+      "Amazon MQ",
+      "Amazon SNS",
+      "Amazon SQS",
+      "Amazon Kinesis Data Streams"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Amazon MQ is a managed message broker for Apache ActiveMQ and RabbitMQ that supports the standard APIs and protocols (JMS, AMQP, MQTT, STOMP), so existing code keeps working. SQS and SNS would need the messaging code rewritten."
+  },
+  {
+    "id": "SAA-T2-057",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Container cost",
+    "stem": "A company runs fault-tolerant batch containers on ECS with Fargate and wants to cut compute cost without managing EC2 instances. Which option fits?",
+    "options": [
+      "Buy EC2 Instance Savings Plans for the tasks",
+      "Raise each task's vCPU and memory allocation",
+      "Move the tasks to Dedicated Hosts in a single AZ",
+      "Run the tasks with the Fargate Spot capacity provider"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fargate Spot runs interruption-tolerant tasks on spare capacity at a steep discount, still with no instances to manage. EC2 Instance Savings Plans do not cover Fargate (Compute Savings Plans do)."
+  },
+  {
+    "id": "SAA-T2-058",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Security group design",
+    "select": 2,
+    "stem": "An application has web instances behind an internet-facing ALB and app instances behind an internal ALB. Which security group rules follow least privilege? (Choose two.)",
+    "options": [
+      "Web instances allow HTTPS only from the internet-facing ALB's security group",
+      "Web instances allow SSH from 0.0.0.0/0 so that admins can reach them from anywhere",
+      "App instances allow all traffic from 0.0.0.0/0 for easier troubleshooting",
+      "Every security group allows all outbound and all inbound traffic",
+      "App instances allow traffic only from the internal ALB's security group"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "Referencing a security group as the source lets only members of that group connect, so each tier accepts traffic only from the tier in front of it. Open SSH and open inbound rules widen the attack surface."
+  },
+  {
+    "id": "SAA-T2-059",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 4,
+    "format": "multi",
+    "skill": "Archive retention",
+    "select": 2,
+    "stem": "A company archives legal records in Amazon S3 Glacier Flexible Retrieval for ten years and must be able to prove the records were never changed or deleted. Which steps meet this? (Choose two.)",
+    "options": [
+      "Rely on IAM policies that deny delete actions for regular users",
+      "Store a second copy in S3 One Zone-IA for faster restores",
+      "Enable S3 Versioning, which Object Lock requires on the bucket",
+      "Apply S3 Object Lock retention in compliance mode to the objects",
+      "Turn on S3 Intelligent-Tiering archive access tiers instead"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "S3 Object Lock works only on versioned buckets, and compliance mode retention stops anyone from deleting or overwriting the locked versions, whatever their storage class. IAM policies can be changed by administrators, so they do not prove immutability."
+  },
+  {
+    "id": "SAA-T2-060",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Access keys hygiene",
+    "select": 2,
+    "stem": "A CloudTrail review shows a CI server on premises calls AWS APIs with access keys created three years ago for a developer's IAM user. Which actions improve security? (Choose two.)",
+    "options": [
+      "Use IAM Roles Anywhere so the server gets temporary credentials",
+      "Deactivate and delete the old access keys once the server is moved",
+      "Attach the developer's keys to a second IAM user as a backup",
+      "Email the keys to the security team so they have a copy on file",
+      "Raise the session duration of the developer's console sessions"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "IAM Roles Anywhere lets workloads outside AWS use X.509 certificates to obtain temporary credentials for an IAM role, which removes long-term keys from the server. After switching, the old keys should be deactivated and deleted. Copying or emailing keys spreads the exposure."
+  },
+  {
+    "id": "SAA-T2-061",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Aurora availability",
+    "select": 2,
+    "stem": "Which features make an Amazon Aurora cluster resilient within one Region? (Choose two.)",
+    "options": [
+      "Aurora Replicas in other AZs promoted on failure",
+      "A single DB instance with all of its storage kept in one AZ",
+      "Instance store volumes holding the data files",
+      "Six copies of data stored across three AZs",
+      "Manual snapshots taken once a week by hand"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Aurora storage keeps six copies across three AZs and heals itself, and if the writer fails an Aurora Replica in another AZ is promoted, usually in under a minute. Weekly manual snapshots would lose up to a week of data."
+  },
+  {
+    "id": "SAA-T2-062",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 4,
+    "format": "multi",
+    "skill": "Speeding up reads from S3",
+    "select": 2,
+    "stem": "A data pipeline downloads multi-GB objects from Amazon S3 and is limited by single-stream download speed. Which actions improve throughput? (Choose two.)",
+    "options": [
+      "Enable MFA Delete on the source bucket",
+      "Move the objects to S3 Glacier Deep Archive for faster reads",
+      "Run more parallel connections from the client",
+      "Turn on S3 Versioning on the source bucket",
+      "Use byte-range fetches to download parts in parallel"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Byte-range GETs split one object into ranges fetched in parallel, and more parallel connections add aggregate throughput. Versioning and MFA Delete are data protection features, and Deep Archive needs hours to restore."
+  },
+  {
+    "id": "SAA-T2-063",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Improving global performance",
+    "select": 2,
+    "stem": "A dynamic web application in one Region serves users worldwide. Which steps improve their experience without deploying to more Regions? (Choose two.)",
+    "options": [
+      "Turn off TLS so pages load with fewer round trips",
+      "Move the database into a public subnet for faster access",
+      "Put CloudFront in front of the ALB to cache static content",
+      "Use CloudFront for dynamic content over the AWS backbone",
+      "Replace the ALB with a single larger EC2 instance"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "CloudFront caches static assets at the edge and also accelerates dynamic, uncached requests by ending TLS near the user and using persistent connections over the AWS network to the origin. A public database and no TLS are security failures."
+  },
+  {
+    "id": "SAA-T2-064",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Loose coupling",
+    "select": 2,
+    "stem": "Which design choices make a multi-tier application more loosely coupled? (Choose two.)",
+    "options": [
+      "Hardcode the private IP address of each downstream server",
+      "Have each tier call the next one synchronously and wait",
+      "Communicate between tiers through queues or event buses",
+      "Put a load balancer in front of each tier's instances",
+      "Store all shared state in local files on one instance"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Queues and event buses let producers and consumers work independently, and load balancers hide individual instances behind one endpoint so instances can come and go. Hardcoded IPs and shared local files tie components to specific servers."
+  },
+  {
+    "id": "SAA-T2-065",
+    "section": "saa",
+    "test": 2,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Reducing storage spend",
+    "select": 2,
+    "stem": "An S3 bucket has grown to 500 TB, with many old object versions and abandoned incomplete multipart uploads. Which lifecycle rules cut cost? (Choose two.)",
+    "options": [
+      "Turn on S3 Object Lock in compliance mode for every object in the bucket",
+      "Abort incomplete multipart uploads after a few days",
+      "Turn on Cross-Region Replication to a second bucket",
+      "Turn on S3 Transfer Acceleration for the whole bucket",
+      "Expire noncurrent object versions after a set number of days"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Noncurrent versions and incomplete multipart upload parts are billed as storage, and lifecycle rules can expire versions and abort stale uploads automatically. Replication doubles storage, and Object Lock prevents deletion."
+  },
+  {
+    "id": "SAA-D-001",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Horizontal scaling",
+    "stem": "What does scaling out mean for a web tier on Amazon EC2?",
+    "options": [
+      "Raising the IOPS of the instance's EBS volume",
+      "Adding more instances behind the load balancer",
+      "Changing to an instance type with more memory",
+      "Moving the instance into a different AZ"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scaling out (horizontal scaling) adds instances, which pairs with load balancing and Auto Scaling. Changing to a bigger instance type is scaling up, which has a hard ceiling and usually means downtime."
+  },
+  {
+    "id": "SAA-D-002",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Availability Zones",
+    "stem": "Why does AWS recommend deploying across multiple Availability Zones?",
+    "options": [
+      "AZs are physically separate, so one AZ's failure leaves the others running",
+      "Instances in more than one AZ always receive a lower hourly price",
+      "AZs are in different countries, which satisfies every data residency rule",
+      "Multiple AZs remove the need to take backups of the application data"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each AZ has independent power, cooling and networking and sits a meaningful distance from the others within the Region, so failures stay contained. All AZs of a Region are in the same geographic area."
+  },
+  {
+    "id": "SAA-D-003",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Block vs file vs object",
+    "stem": "Which storage service presents block-level volumes that attach to a single EC2 instance like a hard drive?",
+    "options": [
+      "Amazon S3",
+      "Amazon EBS",
+      "Amazon EFS",
+      "Amazon FSx for Lustre"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "EBS provides block storage volumes for EC2. EFS and FSx are file systems shared over the network, and S3 is object storage accessed through an API."
+  },
+  {
+    "id": "SAA-D-004",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Relational vs NoSQL",
+    "stem": "An application needs single-digit millisecond key-value lookups at any scale, with a flexible schema and no servers to manage. Which database fits?",
+    "options": [
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon RDS for MySQL",
+      "Amazon Neptune"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "DynamoDB is a serverless key-value and document database with consistent single-digit millisecond performance at any scale. Redshift is for analytics, Neptune for graphs."
+  },
+  {
+    "id": "SAA-D-005",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IAM groups",
+    "stem": "A team of 25 analysts all need the same read-only access to Amazon Athena and Amazon S3. What is the simplest way to manage their permissions?",
+    "options": [
+      "Attach the policy to the root user so that every analyst inherits it",
+      "Give all of the analysts one shared IAM user and one shared password",
+      "Put the analysts in an IAM group and attach the policy to the group",
+      "Attach the same inline policy to each of the 25 analysts one by one"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Policies attached to an IAM group apply to every member, so adding or removing an analyst is a single change. (With IAM Identity Center the same idea is a permission set assigned to a group.) Inline policies on each user drift apart over time."
+  },
+  {
+    "id": "SAA-D-006",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stateful filtering",
+    "stem": "A security group allows inbound HTTPS from anywhere, and all of its outbound rules have been removed. Can the instance still send responses to those HTTPS clients?",
+    "options": [
+      "No, unless the subnet's network ACL also allows HTTPS outbound",
+      "No, every response packet needs a matching outbound rule on port 443",
+      "Yes, security groups are stateful and allow return traffic automatically",
+      "Yes, because AWS Shield Standard automatically allows the responses"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Security groups track connections, so replies to allowed inbound traffic are allowed out regardless of outbound rules. Network ACLs are the stateless layer that needs ephemeral port rules."
+  },
+  {
+    "id": "SAA-D-007",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Encryption at rest options",
+    "stem": "Which option lets the customer supply and manage its own key with every S3 request, while S3 performs the encryption?",
+    "options": [
+      "DSSE-KMS",
+      "SSE-S3",
+      "SSE-KMS",
+      "SSE-C"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "With SSE-C the client sends the key in each request; S3 encrypts or decrypts and then discards the key. SSE-S3 and SSE-KMS keys are managed by AWS services."
+  },
+  {
+    "id": "SAA-D-008",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pricing models",
+    "stem": "Which EC2 purchase option has no commitment, bills per second for Linux, and suits short-term, unpredictable workloads that cannot be interrupted?",
+    "options": [
+      "Standard Reserved Instances",
+      "Savings Plans",
+      "Spot Instances",
+      "On-Demand Instances"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "On-Demand needs no commitment and cannot be reclaimed by AWS. Spot is cheaper but can be interrupted, and Reserved Instances and Savings Plans need a one- or three-year commitment."
+  },
+  {
+    "id": "SAA-D-009",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Long polling",
+    "stem": "Consumers poll an SQS queue in a tight loop and most receives come back empty, adding cost. Which setting reduces empty responses?",
+    "options": [
+      "Switch the standard queue to a FIFO queue",
+      "Enable long polling with a 20-second wait",
+      "Set the message retention period to 60 seconds",
+      "Lower the visibility timeout to zero seconds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Long polling makes a receive request wait up to 20 seconds for a message to arrive, which cuts empty responses and request charges. Visibility timeout and retention do not affect empty receives."
+  },
+  {
+    "id": "SAA-D-010",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Backup and restore",
+    "stem": "Which DR strategy has the lowest cost and the longest recovery time?",
+    "options": [
+      "Multi-site active/active",
+      "Backup and restore",
+      "Pilot light",
+      "Warm standby"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Backup and restore keeps only backups in the DR location and rebuilds everything after a disaster, so it costs least but takes hours or more. Active/active costs most and recovers almost instantly."
+  },
+  {
+    "id": "SAA-D-011",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "GPU instances",
+    "stem": "A company trains deep learning models and needs instances with powerful NVIDIA GPUs. Which family fits?",
+    "options": [
+      "Burstable general purpose (T family)",
+      "Compute optimized (C family)",
+      "Accelerated computing (P family)",
+      "Memory optimized (R family)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "P instances carry high-end GPUs for machine learning training and HPC. C instances are CPU-only."
+  },
+  {
+    "id": "SAA-D-012",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Document data",
+    "stem": "A company runs a self-managed MongoDB database of JSON product documents on EC2. It wants a managed AWS database that works with its existing MongoDB drivers and queries. Which purpose-built database fits?",
+    "options": [
+      "Amazon Neptune",
+      "Amazon Redshift",
+      "Amazon DocumentDB (with MongoDB compatibility)",
+      "Amazon Keyspaces (for Apache Cassandra)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DocumentDB is a managed document database that supports the MongoDB API, so existing drivers and most queries work with little change. Neptune is a graph database, Keyspaces is Cassandra-compatible, and Redshift is a data warehouse."
+  },
+  {
+    "id": "SAA-D-013",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "STS AssumeRole",
+    "stem": "An application calls AssumeRole and receives credentials for an IAM role. Which statement about those credentials is true?",
+    "options": [
+      "They work only in the AWS Management Console sign-in",
+      "They are the role's long-term access keys sent by email",
+      "They are temporary, include a session token, and expire",
+      "They never expire until the role is deleted from IAM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS STS returns an access key ID, a secret access key and a session token that expire after the session duration (15 minutes up to the role's maximum, 1 hour by default). Roles have no long-term access keys of their own."
+  },
+  {
+    "id": "SAA-D-014",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Egress-only IPv6",
+    "stem": "Instances in a private subnet have only IPv6 addresses. They must start connections to internet update servers, but nothing on the internet may start a connection to them. What should the route table point at?",
+    "options": [
+      "A virtual private gateway on the VPC",
+      "An egress-only internet gateway",
+      "A gateway VPC endpoint for the update servers",
+      "An internet gateway with public IPv6 routing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An egress-only internet gateway is the IPv6 counterpart of NAT for this purpose: it allows outbound IPv6 connections and their replies but blocks connections started from the internet. IPv6 addresses are globally routable, so a plain internet gateway route would allow inbound connections. Gateway endpoints exist only for S3 and DynamoDB."
+  },
+  {
+    "id": "SAA-D-015",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key policies",
+    "stem": "An application in Account B must decrypt data encrypted with a customer managed KMS key in Account A. What must be configured?",
+    "options": [
+      "The key policy in A allows Account B, and an IAM policy in B allows kms:Decrypt",
+      "Only an IAM policy in Account B that allows kms:Decrypt on the key's ARN",
+      "Only a bucket policy in Account A that allows Account B to read the objects",
+      "Nothing, because KMS keys are shared across all accounts by default"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cross-account use of a KMS key needs both sides: the key policy must trust the other account, and that account must grant its principals permission. An IAM policy alone cannot reach a key the key policy does not open."
+  },
+  {
+    "id": "SAA-D-016",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Storage class minimums",
+    "stem": "Objects are moved to S3 Standard-IA and then deleted after 10 days. What happens to the charges?",
+    "options": [
+      "Deleting objects in Standard-IA within 30 days is blocked",
+      "They are billed for 10 days with no other charge at all",
+      "They are billed for the 30-day minimum storage duration",
+      "They are billed for the 90-day Glacier minimum duration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Standard-IA and One Zone-IA have a 30-day minimum storage charge, so short-lived objects cost more there than in Standard. Glacier Instant and Flexible Retrieval have 90-day minimums and Deep Archive 180."
+  },
+  {
+    "id": "SAA-D-017",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delay delivery",
+    "stem": "An application must hold every new message in an SQS queue for 5 minutes before any consumer can see it. Which feature does this?",
+    "options": [
+      "A visibility timeout of 5 minutes on the queue",
+      "A delay queue with a 5-minute delivery delay",
+      "A message retention period of 5 minutes",
+      "A dead-letter queue that redrives after 5 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Delivery delay (up to 15 minutes) hides new messages from consumers for the set time. Visibility timeout only applies after a consumer has received a message."
+  },
+  {
+    "id": "SAA-D-018",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Auto Scaling health",
+    "stem": "An Auto Scaling group behind an ALB uses only EC2 status checks. Instances with a hung web server are never replaced. What fixes this?",
+    "options": [
+      "Turn on termination protection for each instance",
+      "Turn on ELB health checks for the group",
+      "Lower the group's maximum size to the desired size",
+      "Raise the default cooldown to 15 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With ELB health checks enabled, the Auto Scaling group treats an instance the load balancer reports unhealthy as unhealthy and replaces it. EC2 status checks only see instance and host problems."
+  },
+  {
+    "id": "SAA-D-019",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Storage optimized",
+    "stem": "A NoSQL database on EC2 needs very high random I/O on locally attached NVMe SSD storage and replicates its own data. Which instance family fits?",
+    "options": [
+      "Burstable performance (T family)",
+      "Storage optimized (I family)",
+      "Compute optimized (C family)",
+      "Accelerated computing (G family)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "I family instances have large, fast local NVMe instance storage for I/O-heavy databases that handle their own replication. The data is ephemeral, which is why the database must replicate."
+  },
+  {
+    "id": "SAA-D-020",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Log search",
+    "stem": "A team needs full-text search and dashboards over application logs with near real-time indexing. Which service fits?",
+    "options": [
+      "Amazon RDS for PostgreSQL",
+      "Amazon OpenSearch Service",
+      "Amazon ElastiCache",
+      "Amazon S3 Glacier Flexible Retrieval"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "OpenSearch Service indexes documents for full-text search and log analytics and includes OpenSearch Dashboards. Glacier is archival storage with retrieval delays."
+  },
+  {
+    "id": "SAA-D-021",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "MFA conditions",
+    "stem": "A company wants administrators to be able to terminate EC2 instances only when they signed in with MFA. How can this be enforced in IAM?",
+    "options": [
+      "Turn on MFA for the root user and leave the IAM policies as they are",
+      "Add an aws:MultiFactorAuthPresent condition to the policy statement",
+      "Use an SCP that allows ec2:TerminateInstances for the whole account",
+      "Require HTTPS for the AWS Management Console sign-in page"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The aws:MultiFactorAuthPresent condition key lets a policy allow, or deny, an action depending on whether the session was authenticated with MFA. MFA on the root user does nothing for other identities."
+  },
+  {
+    "id": "SAA-D-022",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sensitive data discovery",
+    "stem": "A company stores thousands of files in Amazon S3 and must find which objects contain personally identifiable information such as names and credit card numbers. Which service does this?",
+    "options": [
+      "Amazon Detective",
+      "Amazon Macie",
+      "AWS Config",
+      "Amazon Inspector"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Macie uses machine learning and pattern matching to discover sensitive data in S3 and report it. Inspector looks for software vulnerabilities, and Config records resource configurations."
+  },
+  {
+    "id": "SAA-D-023",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "EBS encryption by default",
+    "stem": "A company wants every new EBS volume and snapshot in a Region to be encrypted automatically, even if a user forgets to select encryption. What should it enable?",
+    "options": [
+      "S3 default encryption on the bucket used for snapshots",
+      "EBS encryption by default for that Region",
+      "An AWS Config rule that deletes unencrypted volumes",
+      "Automatic rotation on the AWS managed key for EBS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "EBS encryption by default is an account-level, per-Region setting that forces encryption on new volumes and snapshot copies. A Config rule would only detect and react afterward."
+  },
+  {
+    "id": "SAA-D-024",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SNS filtering",
+    "stem": "An SNS topic publishes all order events. One subscribed SQS queue should receive only events where the order region is EU. What is the simplest way to do this?",
+    "options": [
+      "Use an SQS FIFO queue with region as the message group",
+      "Create a separate SNS topic for each order region",
+      "Have the consumer delete the non-EU messages it receives",
+      "Add a subscription filter policy on the region attribute"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SNS subscription filter policies match message attributes (or the message body) so each subscriber receives only the messages it wants. Filtering in the consumer wastes delivery and processing."
+  },
+  {
+    "id": "SAA-D-025",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spread placement",
+    "stem": "A small cluster of critical instances must not share underlying hardware, so a single rack failure affects at most one of them. Which placement option fits?",
+    "options": [
+      "A cluster placement group",
+      "A Dedicated Host for the cluster",
+      "A spread placement group",
+      "An On-Demand Capacity Reservation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A spread placement group puts each instance on distinct racks with separate power and network (up to seven running instances per AZ per group). A cluster group does the opposite, packing instances close for low latency."
+  },
+  {
+    "id": "SAA-D-026",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Multi-protocol storage",
+    "stem": "A company is moving a NetApp storage array used by both Linux (NFS) and Windows (SMB) clients and depends on its snapshots and replication. Which service keeps those features?",
+    "options": [
+      "AWS Storage Gateway Volume Gateway",
+      "Amazon EFS Standard",
+      "Amazon FSx for OpenZFS",
+      "Amazon FSx for NetApp ONTAP"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "FSx for NetApp ONTAP runs ONTAP as a managed service with NFS, SMB and iSCSI access, snapshots, SnapMirror replication and data deduplication. EFS supports NFS only."
+  },
+  {
+    "id": "SAA-D-027",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Analyzing spend",
+    "stem": "A team wants to view the last 12 months of costs by service and forecast the next three months in a graphical tool. Which service fits?",
+    "options": [
+      "AWS Pricing Calculator",
+      "Amazon CloudWatch",
+      "AWS Trusted Advisor",
+      "AWS Cost Explorer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cost Explorer shows historical cost and usage, filters by service, account or tag, and forecasts future spend. The Pricing Calculator estimates new architectures, not past spend."
+  },
+  {
+    "id": "SAA-D-028",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Big data processing",
+    "stem": "A data team runs large Apache Spark and Hadoop jobs and needs control over the cluster's frameworks and configuration. Which service fits?",
+    "options": [
+      "Amazon EMR",
+      "Amazon Athena",
+      "AWS Glue DataBrew",
+      "AWS Lambda"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "EMR runs managed clusters (on EC2, EKS or serverless) for Spark, Hadoop, Hive and Presto with control over frameworks and tuning. Athena is serverless SQL, not a framework platform."
+  },
+  {
+    "id": "SAA-D-029",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SCP behavior",
+    "stem": "An SCP attached to an OU allows only Amazon S3 and Amazon EC2 actions. An IAM user in an account in that OU has the AdministratorAccess policy. What can the user do?",
+    "options": [
+      "Only actions in Regions named in the SCP's Region condition key",
+      "Only S3 and EC2 actions, because the SCP limits the maximum permissions",
+      "Nothing at all, because SCPs never grant permissions on their own",
+      "Every action in the account, because AdministratorAccess grants all"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Effective permissions are the intersection of the SCP and the IAM policy. The SCP does not grant anything, but it filters the administrator's allow down to S3 and EC2."
+  },
+  {
+    "id": "SAA-D-030",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Exposing a service privately",
+    "stem": "A SaaS provider wants hundreds of customer VPCs to reach its service privately, without VPC peering, overlapping CIDR conflicts, or traffic crossing the internet. What should the provider build?",
+    "options": [
+      "A VPC peering connection with every customer VPC across all accounts",
+      "A public Application Load Balancer protected by customer IP allow lists",
+      "A transit gateway that every one of the customers attaches their VPC to",
+      "An endpoint service behind a Network Load Balancer, shared via PrivateLink"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AWS PrivateLink lets consumers create interface endpoints to a provider's endpoint service fronted by an NLB. Traffic stays on the AWS network and CIDR overlap does not matter. Peering at that scale fails on overlapping ranges."
+  },
+  {
+    "id": "SAA-D-031",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Dual-layer encryption",
+    "stem": "A government workload requires two independent layers of server-side encryption on objects stored in Amazon S3. Which option provides this?",
+    "options": [
+      "S3 Bucket Keys",
+      "SSE-C",
+      "SSE-S3",
+      "DSSE-KMS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dual-layer server-side encryption with KMS keys (DSSE-KMS) applies two layers of encryption to each object to meet requirements such as CNSSP 15. Bucket Keys reduce KMS calls but add no layer."
+  },
+  {
+    "id": "SAA-D-032",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Lambda concurrency",
+    "stem": "A Lambda function that calls a fragile third-party API must never run more than 50 copies at once, even under heavy load. What should be configured?",
+    "options": [
+      "Reserved concurrency of 50 on the function",
+      "A memory setting of 50 MB for the function",
+      "Provisioned concurrency of 50 on the function",
+      "A timeout of 50 seconds for each invocation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Reserved concurrency both guarantees and caps the number of concurrent executions of a function. Provisioned concurrency keeps environments warm to cut cold starts but is not a cap on its own."
+  },
+  {
+    "id": "SAA-D-033",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Multi-AZ DB cluster",
+    "stem": "A company wants an RDS for MySQL deployment with automatic failover that is typically faster than a Multi-AZ DB instance and with standbys that can serve read traffic. Which option fits?",
+    "options": [
+      "A Single-AZ DB instance with automated backups",
+      "A Multi-AZ DB instance with one standby replica",
+      "A Multi-AZ DB cluster with two readable standbys",
+      "A cross-Region read replica in a second Region"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A Multi-AZ DB cluster has a writer and two readable standby instances in three AZs, with faster typical failover. The standby of a Multi-AZ DB instance takes no read traffic."
+  },
+  {
+    "id": "SAA-D-034",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hybrid backup",
+    "stem": "An on-premises backup application writes to a physical tape library. The company wants to stop handling tapes and store backups in AWS, archived to low-cost storage, without changing its backup software. Which service fits?",
+    "options": [
+      "AWS DataSync agent on a scheduled task",
+      "AWS Storage Gateway Tape Gateway",
+      "Amazon EFS mounted over a VPN",
+      "AWS Transfer Family with SFTP access"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tape Gateway presents a virtual tape library over iSCSI that existing backup software already understands, stores virtual tapes in S3 and archives them to S3 Glacier Flexible Retrieval or Deep Archive. DataSync and Transfer Family move files, not tapes the backup software can write to."
+  },
+  {
+    "id": "SAA-D-035",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Partner file transfers",
+    "stem": "Business partners must keep sending files over SFTP after the company moves its storage to Amazon S3, without changing their client setup. Which service fits?",
+    "options": [
+      "Amazon AppFlow",
+      "AWS DataSync",
+      "AWS Transfer Family",
+      "S3 Transfer Acceleration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Transfer Family provides managed SFTP, FTPS, FTP and AS2 endpoints that store files directly in S3 or EFS, so partners keep their clients. DataSync is for the company's own bulk moves."
+  },
+  {
+    "id": "SAA-D-036",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DynamoDB table class",
+    "stem": "A DynamoDB table stores years of order history that is rarely read, and storage, not throughput, is now most of its cost. Which change lowers it?",
+    "options": [
+      "Switch the table to provisioned capacity mode",
+      "Turn on global tables in a second Region",
+      "Use the Standard-IA table class",
+      "Add a DAX cluster in front of the table"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The DynamoDB Standard-Infrequent Access table class cuts storage price by about 60 percent for tables where storage dominates, at a somewhat higher per-request price. DAX and global tables add cost."
+  },
+  {
+    "id": "SAA-D-037",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Decoupled uploads",
+    "stem": "Users upload large video files that are transcoded later. The web servers struggle to proxy the uploads. Which design takes the uploads off the web tier?",
+    "options": [
+      "Send the video bytes through an SQS queue to the transcoders",
+      "Have clients upload straight to S3 with presigned URLs",
+      "Raise the web servers' EBS volume size for temporary files",
+      "Use sticky sessions so each upload stays on one server"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Presigned URLs let clients upload directly to S3 with time-limited permission, so the web tier only issues the URL. An S3 event can then start transcoding. SQS messages are far too small for video files."
+  },
+  {
+    "id": "SAA-D-038",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Route 53 health checks",
+    "stem": "Route 53 is configured with multivalue answer routing for four web servers, each with a health check. What does Route 53 return to clients?",
+    "options": [
+      "Only the record for the primary server",
+      "Up to eight healthy records",
+      "Only the record with the lowest latency",
+      "All records, healthy or not, in fixed order"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Multivalue answer routing returns up to eight healthy records for each query, which gives simple client-side load spreading with health checking. It is not a substitute for a load balancer."
+  },
+  {
+    "id": "SAA-D-039",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "EBS throughput",
+    "stem": "A gp3 volume delivers its IOPS but the application needs more than the 125 MB/s it currently gets. What can the architect do?",
+    "options": [
+      "Switch to an sc1 Cold HDD volume of the same size",
+      "Take a snapshot of the volume every hour",
+      "Provision higher throughput on the gp3 volume",
+      "Enable encryption on the volume"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "gp3 throughput can be raised independently of size and IOPS, well above the 125 MB/s baseline. sc1 is a cold HDD type with lower performance."
+  },
+  {
+    "id": "SAA-D-040",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cross-account trust",
+    "stem": "A third-party monitoring company needs to assume a role in a customer's account. How can the customer prevent the confused deputy problem?",
+    "options": [
+      "Turn on S3 Block Public Access for the entire account",
+      "Share the root user password with the third-party vendor",
+      "Allow the principal \"*\" in the trust policy of the role",
+      "Require a unique external ID in the role's trust policy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An external ID condition in the trust policy ensures the vendor assumes the role only on behalf of the right customer, which blocks the confused deputy problem. Trusting \"*\" would let any AWS account try to assume the role."
+  },
+  {
+    "id": "SAA-D-041",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Encryption in transit",
+    "stem": "A company needs free, auto-renewing public TLS certificates for its Application Load Balancer and CloudFront distribution. Which service provides them?",
+    "options": [
+      "AWS CloudHSM",
+      "AWS Secrets Manager",
+      "AWS Certificate Manager (ACM)",
+      "AWS Key Management Service (AWS KMS)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ACM issues public certificates at no charge and renews them automatically when they are used with integrated services such as ELB and CloudFront. For CloudFront the certificate must be requested in us-east-1."
+  },
+  {
+    "id": "SAA-D-042",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Backup protection",
+    "stem": "A company wants its AWS Backup recovery points to be immutable so that even an administrator cannot delete them before their retention ends. What should it use?",
+    "options": [
+      "A lifecycle rule that moves backups to cold storage",
+      "AWS Backup Vault Lock in compliance mode",
+      "Cross-Region copy of the backups to a second vault",
+      "An IAM policy that denies backup:DeleteRecoveryPoint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Vault Lock in compliance mode makes recovery points write once, read many: after the grace period no one, including the root user, can change the lock or delete backups early. An IAM deny can be removed by an administrator."
+  },
+  {
+    "id": "SAA-D-043",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data lake permissions",
+    "stem": "A company is building a data lake on S3 and wants to manage fine-grained table-, column- and row-level permissions for Athena and Redshift Spectrum users in one place. Which service fits?",
+    "options": [
+      "AWS Config",
+      "Amazon Cognito user pools",
+      "Amazon Macie",
+      "AWS Lake Formation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lake Formation sets up the data lake and centrally governs fine-grained access on Glue Data Catalog tables for integrated analytics services. Macie finds sensitive data but does not grant access."
+  },
+  {
+    "id": "SAA-D-044",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Requester pays",
+    "stem": "A research institute shares a large public dataset in S3 and wants the people who download it to pay the request and data transfer charges. What should it enable?",
+    "options": [
+      "S3 Intelligent-Tiering",
+      "Requester Pays on the bucket",
+      "Cross-Region Replication",
+      "S3 Transfer Acceleration endpoint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With Requester Pays the requester, who must be an authenticated AWS user, pays for requests and data downloaded, while the owner pays for storage."
+  },
+  {
+    "id": "SAA-D-045",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Containers at scale",
+    "stem": "A team runs containers on Amazon ECS on EC2 and wants the cluster's EC2 capacity to grow and shrink automatically as tasks are added or removed. What should it use?",
+    "options": [
+      "AWS Batch compute environments in place of the ECS service tasks",
+      "An ECS capacity provider with managed scaling on an Auto Scaling group",
+      "A fixed-size Auto Scaling group with enough capacity for the peak hour",
+      "A scheduled Lambda function that resizes the cluster once an hour"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Capacity providers with managed scaling adjust the Auto Scaling group based on the capacity that tasks need. Alternatively, Fargate removes the instances altogether."
+  },
+  {
+    "id": "SAA-D-046",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Point-in-time recovery",
+    "stem": "A developer accidentally deleted items from a DynamoDB table 2 hours ago. Which feature, if enabled beforehand, allows restoring the table to a moment before the deletion?",
+    "options": [
+      "Auto scaling of read capacity",
+      "Point-in-time recovery (PITR)",
+      "DynamoDB Accelerator (DAX)",
+      "Time to Live (TTL) on items"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PITR keeps continuous backups and restores the table to any second in the retention window (up to 35 days) into a new table. TTL deletes items on purpose, it does not protect them."
+  },
+  {
+    "id": "SAA-D-047",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Auto Scaling warm-up",
+    "stem": "New instances in an Auto Scaling group need several minutes to load data before they can serve traffic, and scale-out is too slow during spikes. Which feature reduces the delay?",
+    "options": [
+      "Spot Instances in the launch template",
+      "A larger maximum size on the group",
+      "Shorter health check grace periods on the group",
+      "A warm pool of pre-initialized instances"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A warm pool keeps pre-initialized instances stopped or running, so they join the group much faster when it scales out. Raising the maximum size does not speed up each launch."
+  },
+  {
+    "id": "SAA-D-048",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Resource Access Manager",
+    "stem": "A networking account owns a VPC. Application accounts in the same organization must launch instances into its subnets. Which service shares the subnets?",
+    "options": [
+      "AWS Resource Access Manager (AWS RAM)",
+      "VPC peering between every pair of accounts",
+      "AWS Organizations tag policies",
+      "AWS Direct Connect gateway"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS RAM shares subnets from a VPC owner to participant accounts (VPC sharing), so they launch into a centrally managed network. Peering connects separate VPCs instead of sharing one."
+  },
+  {
+    "id": "SAA-D-049",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "NACL ephemeral ports",
+    "stem": "A custom network ACL on a public subnet allows inbound HTTPS. Clients can connect but receive no responses. What is the most likely cause?",
+    "options": [
+      "The instances lack an IAM role that allows inbound traffic",
+      "The security group has no outbound rule for HTTPS port 443",
+      "The internet gateway is attached to the wrong route table",
+      "The NACL has no outbound rule for ephemeral ports 1024 to 65535"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Network ACLs are stateless, so return traffic to clients' ephemeral ports must be allowed outbound explicitly. Security groups would allow the return traffic automatically."
+  },
+  {
+    "id": "SAA-D-050",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data classification",
+    "stem": "A company wants to automatically tag S3 objects that contain sensitive data so different encryption and access controls can be applied. Which approach fits best?",
+    "options": [
+      "Enable Amazon GuardDuty S3 Protection on the account",
+      "Turn on S3 server access logs and read them manually",
+      "Run Amazon Macie discovery jobs and act on the findings",
+      "Use AWS Trusted Advisor checks on each S3 bucket"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Macie identifies sensitive data such as PII and financial data in S3 and emits findings to EventBridge, where automation can tag or move objects. GuardDuty S3 Protection detects suspicious access, not data content."
+  },
+  {
+    "id": "SAA-D-051",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Private service reach",
+    "stem": "Two VPCs in the same Region, owned by different teams with non-overlapping CIDRs, need private connectivity between each other only. What is the simplest option?",
+    "options": [
+      "A VPC peering connection",
+      "AWS Transit Gateway with VPN",
+      "Two Site-to-Site VPN tunnels",
+      "AWS Direct Connect gateway"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "VPC peering connects two VPCs privately with no extra gateway to run. Transit Gateway pays off with many VPCs, and VPN and Direct Connect are for on-premises links."
+  },
+  {
+    "id": "SAA-D-052",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Kinesis delivery",
+    "stem": "A company wants clickstream data captured and loaded into Amazon S3 in near real time, batched and compressed, with no consumer code to write or servers to run. Which service fits?",
+    "options": [
+      "AWS Glue crawlers",
+      "Amazon Data Firehose",
+      "Amazon SQS FIFO queue",
+      "Amazon Kinesis Data Streams alone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Amazon Data Firehose (formerly Kinesis Data Firehose) buffers, optionally transforms and compresses, and delivers streaming data to S3, Redshift, OpenSearch and other destinations, fully managed. Kinesis Data Streams needs consumer code to land data in S3."
+  },
+  {
+    "id": "SAA-D-053",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Active/active",
+    "stem": "A trading platform must keep running with near-zero downtime and near-zero data loss even if an entire Region fails, and cost is a lower priority. Which DR approach fits?",
+    "options": [
+      "Multi-site active/active across Regions",
+      "Pilot light in a second Region",
+      "Warm standby with hourly replication",
+      "Backup and restore from daily snapshots"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multi-site active/active runs full production in more than one Region with traffic going to all of them, so losing one Region does not interrupt service. It is the most expensive strategy."
+  },
+  {
+    "id": "SAA-D-054",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Batch processing",
+    "stem": "A research team submits thousands of container-based batch jobs with dependencies and wants AWS to provision and scale the right compute, including Spot, automatically. Which service fits?",
+    "options": [
+      "Amazon EventBridge",
+      "Amazon Lightsail",
+      "AWS Lambda",
+      "AWS Batch"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AWS Batch queues jobs, handles dependencies, and provisions EC2, Spot or Fargate capacity for them. Lambda functions are limited to 15 minutes per invocation."
+  },
+  {
+    "id": "SAA-D-055",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Consolidated billing",
+    "stem": "A company with 15 AWS accounts wants one bill and to share volume pricing tiers and Savings Plan discounts across accounts. What should it use?",
+    "options": [
+      "AWS Cost and Usage Report in each account",
+      "AWS Budgets in the largest account only",
+      "A separate payment card for each account",
+      "Consolidated billing in AWS Organizations"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Consolidated billing combines usage across the organization's accounts, which reaches volume discount tiers sooner and lets Reserved Instance and Savings Plan discounts apply across accounts (sharing can be turned off)."
+  },
+  {
+    "id": "SAA-D-056",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Resource control policies",
+    "stem": "A company uses SCPs to limit what its own principals can do. It also wants an organization-wide ceiling on what any principal, including ones from outside the organization, can do to its S3 buckets and KMS keys. Which policy type adds this?",
+    "options": [
+      "Session policies passed in each AssumeRole call",
+      "IAM permissions boundaries on the account root users",
+      "Resource control policies (RCPs) in AWS Organizations",
+      "Tag policies applied to every organizational unit"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "RCPs, added to AWS Organizations in late 2024, set the maximum permissions on resources in member accounts for any requester, which complements SCPs (which only limit the organization's own principals). Tag policies only standardize tags."
+  },
+  {
+    "id": "SAA-D-057",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Investigating findings",
+    "stem": "GuardDuty reports that an EC2 instance is talking to a known command-and-control server. The security team wants to investigate the root cause with linked visualizations of the instance's network flows, API calls and related findings over time, without building its own log pipeline. Which service fits?",
+    "options": [
+      "AWS Audit Manager",
+      "AWS Security Hub",
+      "Amazon Detective",
+      "Amazon Macie"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Detective automatically builds a behavior graph from CloudTrail, VPC Flow Logs, GuardDuty findings and other sources so analysts can trace what an entity did before and after a finding. Security Hub aggregates and prioritizes findings but is not an investigation tool, and Audit Manager collects compliance evidence."
+  },
+  {
+    "id": "SAA-D-058",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Encryption context",
+    "stem": "A KMS key encrypts data for several tenants. The company wants decryption to fail unless the caller supplies the same tenant ID used at encryption, and wants that ID logged in CloudTrail. What should it use?",
+    "options": [
+      "An encryption context containing the tenant ID",
+      "A tag on the KMS key that names each tenant",
+      "Client-side encryption with a shared static key",
+      "A separate AWS account for every tenant"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An encryption context is additional authenticated data: decryption succeeds only with the exact same context, and the context appears in CloudTrail logs. Key policies can also require specific context values."
+  },
+  {
+    "id": "SAA-D-059",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Redshift performance",
+    "stem": "A company runs a Redshift data warehouse for BI and wants to query cold historical data kept in S3 together with warehouse tables, without loading it. Which feature fits?",
+    "options": [
+      "Redshift concurrency scaling",
+      "Amazon ElastiCache for Redshift",
+      "Redshift elastic resize",
+      "Amazon Redshift Spectrum"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Redshift Spectrum queries data in S3 through external tables and joins it with local tables, so cold data stays in cheap storage. Concurrency scaling adds capacity for bursts of queries but does not read S3 data."
+  },
+  {
+    "id": "SAA-D-060",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Idempotency",
+    "stem": "Consumers of an SQS standard queue occasionally receive the same message twice. The business cannot charge a customer twice. What should the architect do?",
+    "options": [
+      "Turn off retries in the SQS queue settings for the consumer group",
+      "Make processing idempotent, such as by tracking processed message IDs",
+      "Raise the queue's message retention period to the maximum of 14 days",
+      "Use short polling so that each receive call checks every server"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Standard queues deliver at least once, so consumers must handle duplicates. Recording processed IDs (for example with a DynamoDB conditional write) makes a repeat harmless. Moving to FIFO is the other option, but retention and polling settings do not stop duplicates."
+  },
+  {
+    "id": "SAA-D-061",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "Static stability",
+    "stem": "An application in three AZs needs 6 instances to serve peak load. To stay at full capacity if one AZ fails, without waiting for new instances to launch, how many instances should run in total?",
+    "options": [
+      "9, three in each AZ",
+      "7, with one spare",
+      "12, four in each AZ",
+      "6, two in each AZ"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If one AZ fails, the remaining two AZs must hold the 6 needed instances, so each AZ needs 3, which is 9 in total. Six would leave only 4 after an AZ loss, and 12 overprovisions."
+  },
+  {
+    "id": "SAA-D-062",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 4,
+    "format": "single",
+    "skill": "EBS Multi-Attach",
+    "stem": "A clustered application on two EC2 instances in the same AZ must write to the same block volume at the same time and manages write ordering itself. Which option fits?",
+    "options": [
+      "A gp3 volume attached to each instance",
+      "An instance store volume shared by both",
+      "An io2 volume with Multi-Attach enabled",
+      "An st1 volume with Multi-Attach enabled"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Multi-Attach is supported on Provisioned IOPS SSD (io1 and io2) volumes in the same AZ, for applications that manage concurrent writes, such as clustered file systems. It is not available on gp3 or HDD volumes."
+  },
+  {
+    "id": "SAA-D-063",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaCost",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Lower-cost compute",
+    "select": 2,
+    "stem": "A stateless web application runs on On-Demand x86 instances sized for peak around the clock. Which steps reduce cost? (Choose two.)",
+    "options": [
+      "Move to Graviton instances after testing",
+      "Move every instance to a Dedicated Host",
+      "Buy three-year Reserved Instances sized for the peak load",
+      "Use Auto Scaling so capacity follows demand",
+      "Add a second fleet in another Region"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Auto Scaling removes capacity that peak sizing leaves idle off-peak, and Graviton instances typically give better price performance. Reserving for the peak locks in the waste, and Dedicated Hosts cost more."
+  },
+  {
+    "id": "SAA-D-064",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAccess",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Securing the root user",
+    "select": 2,
+    "stem": "Which practices does AWS recommend for the root user of a member account? (Choose two.)",
+    "options": [
+      "Create access keys for it so scripts can call AWS APIs during outages",
+      "Share its credentials with the team so access is never lost",
+      "Use it for daily administration so that actions are never blocked",
+      "Use it only for the few tasks that require root user credentials",
+      "Protect it with MFA, or centrally manage root access through Organizations"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "AWS recommends limiting the root user to tasks that require it and protecting it with MFA. With centralized root access in Organizations, member accounts can even run without root credentials. Root access keys and daily use of root are both discouraged."
+  },
+  {
+    "id": "SAA-D-065",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaWorkloads",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Defense in depth",
+    "select": 2,
+    "stem": "A public web application on EC2 behind an ALB must be protected from common web exploits and must hide the instances from direct internet access. Which steps help? (Choose two.)",
+    "options": [
+      "Attach an AWS WAF web ACL with managed rules to the ALB",
+      "Give each instance an Elastic IP so traffic avoids the ALB",
+      "Open the instances' security groups to 0.0.0.0/0 on all ports",
+      "Put the EC2 instances in private subnets behind the ALB",
+      "Disable TLS on the ALB to speed up WAF inspection of requests"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Instances in private subnets accept traffic only through the ALB, and WAF on the ALB blocks common exploits such as SQL injection and cross-site scripting. Elastic IPs and open security groups expose the instances directly."
+  },
+  {
+    "id": "SAA-D-066",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaData",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Protecting data in transit",
+    "select": 2,
+    "stem": "Which actions protect data in transit between clients and an application behind an Application Load Balancer? (Choose two.)",
+    "options": [
+      "Enable EBS encryption on all of the instances that sit behind the ALB",
+      "Rotate the KMS keys that protect the RDS database",
+      "Use an HTTPS listener on the ALB with a certificate from ACM",
+      "Redirect HTTP requests on port 80 to HTTPS on port 443",
+      "Turn on S3 default encryption for the application logs"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "An HTTPS listener encrypts traffic between clients and the ALB, and an HTTP to HTTPS redirect makes sure no client stays on plain HTTP. EBS, S3 and RDS encryption protect data at rest."
+  },
+  {
+    "id": "SAA-D-067",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDataNetwork",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Ingestion pipeline",
+    "select": 2,
+    "stem": "A company needs to collect streaming events in real time, store them durably in S3 in batches, and query them with SQL. Which services fit together? (Choose two.)",
+    "options": [
+      "AWS Snowball Edge to move each daily batch",
+      "Amazon Data Firehose to deliver the stream to S3",
+      "Amazon ElastiCache to archive the raw events",
+      "Amazon Neptune to store the event batches",
+      "Amazon Athena to query the data in S3"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Firehose captures streaming data and delivers it to S3 in batches, optionally converting it to Parquet, and Athena queries it in place with SQL. ElastiCache is an in-memory cache, not durable archival storage."
+  },
+  {
+    "id": "SAA-D-068",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaDecoupling",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Serverless API",
+    "select": 2,
+    "stem": "A startup wants a REST API that scales from zero to thousands of requests per second with no servers to patch and pay-per-request pricing. Which services fit? (Choose two.)",
+    "options": [
+      "AWS Elastic Beanstalk on EC2",
+      "Amazon API Gateway",
+      "Amazon EC2 Reserved Instances",
+      "An Amazon RDS Multi-AZ DB instance",
+      "AWS Lambda"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "API Gateway and Lambda are both fully managed, scale automatically and bill per request and duration. EC2 instances, Beanstalk environments on EC2 and provisioned RDS instances run and bill even when idle."
+  },
+  {
+    "id": "SAA-D-069",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaAvailability",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Highly available web tier",
+    "select": 2,
+    "stem": "Which components together give a web tier automatic recovery from instance and AZ failures? (Choose two.)",
+    "options": [
+      "An Auto Scaling group spanning several AZs",
+      "A cluster placement group in a single Availability Zone",
+      "Instance store volumes for the web content",
+      "A single EC2 instance with an Elastic IP",
+      "An Elastic Load Balancer with health checks"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "The load balancer stops sending traffic to failed targets, and the multi-AZ Auto Scaling group replaces them and rebalances across AZs. A single instance or a single-AZ cluster group remains a single point of failure."
+  },
+  {
+    "id": "SAA-D-070",
+    "section": "saa",
+    "test": 0,
+    "module": 1,
+    "domain": "saaStorageCompute",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Choosing compute",
+    "select": 2,
+    "stem": "Which workloads are good fits for AWS Lambda? (Choose two.)",
+    "options": [
+      "A video render that runs for three hours per job",
+      "Processing each new S3 object in a few seconds",
+      "Running short API handlers that scale with requests",
+      "A database server that must keep running nonstop",
+      "A licensed application that is tied to one physical server"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Lambda suits event-driven, short-lived work: it runs up to 15 minutes per invocation and scales with events. Long renders, always-on databases and host-bound licenses fit EC2 or containers instead."
+  }
+]

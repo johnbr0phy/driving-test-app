@@ -1,0 +1,32 @@
+{
+  "id": "uklitu",
+  "stateCode": "UKLITU",
+  "idBase": 10100,
+  "prefix": "LITU-",
+  "slug": "/life-in-the-uk",
+  "landingPath": "/life-in-the-uk-test",
+  "dataFile": "data/life-in-the-uk-questions.json",
+  "name": "Life in the UK Practice Test",
+  "shortName": "Life in the UK",
+  "examLabel": "Life in the UK test",
+  "fullName": "Life in the UK test (settlement and British citizenship)",
+  "icon": "flag",
+  "testCount": 8,
+  "questionsPerTest": 24,
+  "passPct": 75,
+  "categories": [
+    {"key": "lituValues", "label": "Values & Principles of the UK", "perTest": 2, "pool": 16, "segment": "VAL"},
+    {"key": "lituUk", "label": "What Is the UK", "perTest": 1, "pool": 8, "segment": "UKN"},
+    {"key": "lituHistEarly", "label": "History to 1688", "perTest": 4, "pool": 34, "segment": "HIE"},
+    {"key": "lituHistLater", "label": "History from 1689", "perTest": 5, "pool": 42, "segment": "HIL"},
+    {"key": "lituSociety", "label": "A Modern, Thriving Society", "perTest": 6, "pool": 50, "segment": "SOC"},
+    {"key": "lituGov", "label": "Government, Law & Your Role", "perTest": 6, "pool": 50, "segment": "GOV"}
+  ],
+  "notes": "8 tests x 24 = 192 items in tests; the last 2 items of HIE, HIL, SOC and GOV (8 in all) appear only in training sets. Pools are 8x per-test plus those spares.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 10101, "name": "Values, the UK & History to 1688", "categories": ["lituValues", "lituUk", "lituHistEarly"], "size": 58},
+    {"setNumber": 2, "id": 10102, "name": "History from 1689", "categories": ["lituHistLater"], "size": 42},
+    {"setNumber": 3, "id": 10103, "name": "A Modern, Thriving Society", "categories": ["lituSociety"], "size": 50},
+    {"setNumber": 4, "id": 10104, "name": "Government, Law & Your Role", "categories": ["lituGov"], "size": 50}
+  ]
+}

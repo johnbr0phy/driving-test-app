@@ -33,7 +33,9 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
 const BORROWED_SETS: Record<string, string> = {
   ukcar: "dmv", ukadi: "dmv", ukmoto: "moto", uklgv: "cdl", ukpcv: "cdl",
   caon: "dmv", caqc: "dmv", cabc: "dmv", caab: "dmv", camb: "dmv",
-  aunsw: "dmv", auvic: "dmv", auqld: "dmv", auwa: "dmv", ausa: "dmv",
+  aunsw: "dmv", auvic: "dmv", auqld: "dmv", auwa: "dmv", ausa: "dmv", inrto: "dmv",
+  // Global certifications and nursing exams wear their nearest US exam's tiger.
+  awssaa: "aws", az900: "aws", ccna: "aplus", gulfrn: "nclex", uknmc: "nclex",
 };
 
 export function hasTigerSet(examId: string): boolean {

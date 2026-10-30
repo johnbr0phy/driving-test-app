@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -674,6 +674,63 @@ export type QuestionCategory =
   | "auwahHarness"
   | "auwahRoof"
   | "auwahRescue"
+
+  // India RTO learner's licence
+  | "inrtoLicence"
+  | "inrtoMandatory"
+  | "inrtoCaution"
+  | "inrtoSignals"
+  | "inrtoRules"
+  | "inrtoParking"
+  | "inrtoSafety"
+  | "inrtoDuties"
+
+  // Life in the UK test
+  | "lituValues"
+  | "lituUk"
+  | "lituHistEarly"
+  | "lituHistLater"
+  | "lituSociety"
+  | "lituGov"
+
+  // Canadian citizenship test
+  | "cacitRights"
+  | "cacitPeople"
+  | "cacitHistory"
+  | "cacitModern"
+  | "cacitGov"
+  | "cacitElect"
+  | "cacitJustice"
+  | "cacitSymbols"
+  | "cacitEconomy"
+  | "cacitRegions"
+
+  // Australian citizenship test
+  | "aucitPeople"
+  | "aucitDemocracy"
+  | "aucitGov"
+  | "aucitValues"
+
+  // Gulf registered nurse licensing exam
+  | "gulfrnFund"
+  | "gulfrnPharm"
+  | "gulfrnCardioResp"
+  | "gulfrnMedSurg"
+  | "gulfrnMental"
+  | "gulfrnCommunity"
+  | "gulfrnMaternal"
+  | "gulfrnPeds"
+  | "gulfrnLead"
+
+  // Cisco CCNA 200-301 domains
+  | "ccnaFundamentals"
+  | "ccnaAddressing"
+  | "ccnaAccess"
+  | "ccnaRouting"
+  | "ccnaOspf"
+  | "ccnaServices"
+  | "ccnaSecurity"
+  | "ccnaAutomation"
 
   // QLD learner licence categories
   | "auqldGiveWay"

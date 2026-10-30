@@ -22,6 +22,7 @@ const hubs: Record<string, ShareCard> = {
   uk: { title: "Free UK practice tests", lines: ["Free UK", "practice tests"], description: "Driving theory, GCSEs, school entrance and workplace certificates.", footer: "Find your test at tigertest.io/uk", color: "#1E4F91", tint: "#EAF1FC", mascots: ["ks2", "uksia", "gcsemaths"] },
   ca: { title: "Free Canadian practice tests", lines: ["Free Canadian", "practice tests"], description: "Driving knowledge, school assessments, healthcare and Red Seal trades.", footer: "Find your test at tigertest.io/ca", color: "#B02D38", tint: "#FCEDEF", mascots: ["osslt", "rexpn", "caelec"] },
   au: { title: "Free Australian practice tests", lines: ["Free Australian", "practice tests"], description: "Learner licences, NAPLAN, selective entry and workplace certificates.", footer: "Find your test at tigertest.io/au", color: "#17644B", tint: "#E7F5ED", mascots: ["naplan", "auforklift", "auwhite"] },
+  in: { title: "Free practice tests for India", lines: ["Free practice tests", "for India"], description: "Learner's licence, nursing abroad and IT certifications.", footer: "Find your test at tigertest.io/in", color: "#B35A00", tint: "#FFF3E0", mascots: ["dmv", "nclex", "aws"] },
 };
 
 const dmvCopy: Record<string, { title: (state?: string) => string; description: string; footer: string }> = {
@@ -464,5 +465,45 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "auwah": {
     "color": "hsl(208, 90%, 43%)",
     "tint": "hsl(208, 70%, 96%)"
+  },
+  "uklitu": {
+    "color": "hsl(229, 100%, 42%)",
+    "tint": "hsl(229, 70%, 96%)"
+  },
+  "cacit": {
+    "color": "hsl(340, 90%, 32%)",
+    "tint": "hsl(340, 70%, 96%)"
+  },
+  "aucit": {
+    "color": "hsl(144, 90%, 30%)",
+    "tint": "hsl(144, 70%, 96%)"
+  },
+  "gulfrn": {
+    "color": "hsl(69, 75%, 30%)",
+    "tint": "hsl(69, 70%, 96%)"
+  },
+  "inrto": {
+    "color": "hsl(116, 85%, 30%)",
+    "tint": "hsl(116, 70%, 96%)"
+  },
+  "awssaa": {
+    "color": "hsl(235, 30%, 32%)",
+    "tint": "hsl(235, 70%, 96%)"
+  },
+  "az900": {
+    "color": "hsl(248, 90%, 32%)",
+    "tint": "hsl(248, 70%, 96%)"
+  },
+  "ccna": {
+    "color": "hsl(191, 45%, 30%)",
+    "tint": "hsl(191, 70%, 96%)"
+  },
+  "uknmc": {
+    "color": "hsl(289, 90%, 44%)",
+    "tint": "hsl(289, 70%, 96%)"
+  },
+  "pmp": {
+    "color": "hsl(305, 90%, 44%)",
+    "tint": "hsl(305, 70%, 96%)"
   }
 };

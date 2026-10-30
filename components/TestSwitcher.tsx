@@ -76,9 +76,17 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
   const groups = useMemo(
     () =>
       orderGroupsForRegion(
-        searchTestGroups(query).filter(
-          (g) => searching || (g.title === "Most popular" ? region === "US" : g.tests.some((t) => regionOfTest(t.id) === region || regionOfTest(t.id) === "GLOBAL"))
-        ),
+        searching
+          ? searchTestGroups(query)
+          : searchTestGroups(query)
+              .filter((g) => g.title !== "Most popular" || region === "US")
+              .map((g) =>
+                g.title === "Most popular"
+                  ? g
+                  : // Mixed groups (citizenship, nurse licensing) keep only this country's and worldwide members.
+                    { ...g, tests: g.tests.filter((t) => regionOfTest(t.id) === region || regionOfTest(t.id) === "GLOBAL") }
+              )
+              .filter((g) => g.tests.length > 0),
         region
       ),
     [query, searching, region]
@@ -168,7 +176,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
           </div>
 
           {!searching && (
-            <div role="radiogroup" aria-label="Show tests for" className="grid grid-cols-4 gap-1 border-b border-gray-100 dark:border-gray-800 p-2">
+            <div role="radiogroup" aria-label="Show tests for" className="grid grid-cols-5 gap-1 border-b border-gray-100 dark:border-gray-800 p-2">
               {REGIONS.map((r) => {
                 const on = r.code === region;
                 return (

@@ -111,7 +111,7 @@ export function TestCatalogGrid({
   region?: Region;
   /** Show the country pills above the search. With `region` set the server renders each country (the homepage); without it the hub follows the saved country. */
   regionPicker?: boolean;
-  /** Outside the US, leave out the US groups until the visitor searches (the homepage). */
+  /** List only the country's own groups and the worldwide ones until the visitor searches (the homepage). */
   localOnly?: boolean;
 } = {}) {
   // nested: the grid sits under a page section's h2 (the homepage), so groups are h3 and cards h4.
@@ -131,7 +131,7 @@ export function TestCatalogGrid({
       searchTestGroups(query).filter(
         (g) =>
           ((showPopular && region === "US") || g.title !== "Most popular") &&
-          !(localOnly && !searching && region !== "US" && g.tests.every((t) => regionOfTest(t.id) === "US"))
+          !(localOnly && !searching && g.tests.every((t) => regionOfTest(t.id) !== region && regionOfTest(t.id) !== "GLOBAL"))
       ),
       region
     );
@@ -179,7 +179,7 @@ export function TestCatalogGrid({
         >
           {searching
             ? `${count} of ${TEST_CATALOG.length} tests`
-            : `${localOnly && region !== "US" ? count : TEST_CATALOG.length} practice tests, all free to start`}
+            : `${localOnly ? count : TEST_CATALOG.length} practice tests, all free to start`}
         </p>
       </div>
 

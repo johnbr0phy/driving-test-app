@@ -103,9 +103,7 @@
     "calculator": true,
     "numeric": {
       "answers": [
-        "300",
-        "x300",
-        "×300"
+        "300"
       ],
       "tolerance": 0
     }
@@ -208,8 +206,7 @@
     "calculator": true,
     "numeric": {
       "answers": [
-        "25",
-        "25%"
+        "25"
       ],
       "tolerance": 0
     }
@@ -938,8 +935,7 @@
     "calculator": true,
     "numeric": {
       "answers": [
-        "70",
-        "70%"
+        "70"
       ],
       "tolerance": 0
     }
@@ -1951,8 +1947,7 @@
     "calculator": true,
     "numeric": {
       "answers": [
-        "89",
-        "89%"
+        "89"
       ],
       "tolerance": 0
     }
@@ -2658,9 +2653,7 @@
     "numeric": {
       "answers": [
         "5000",
-        "5,000",
-        "x5000",
-        "×5000"
+        "5,000"
       ],
       "tolerance": 0
     }

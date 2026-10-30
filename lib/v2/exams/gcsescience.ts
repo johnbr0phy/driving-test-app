@@ -71,6 +71,7 @@ export const GCSESCIENCE: ExamV2Config = {
   icon: "microscope",
   theme: { brand: "103 58% 30%", brandDark: "103 58% 20%", brandLight: "103 78% 96%" },
   breakSeconds: 300,
+  breakNote: "The real papers are sat on different days.",
   sections: [
     {
       key: "biology",

@@ -19,7 +19,7 @@ ITEMS = [
       "FSH from the pituitary gland causes an egg to mature and makes the ovaries release oestrogen. LH triggers ovulation, the release of the egg."),
     N(1, 2, "Genetic crosses",
       "Cystic fibrosis is caused by a recessive allele (f). Two parents are both Ff. What is the percentage chance that their child will have cystic fibrosis?",
-      ["25", "25%"],
+      ["25"],
       "A Punnett square of Ff × Ff gives FF, Ff, Ff and ff. Only ff has the disorder, which is 1 in 4, or 25%."),
     S(1, 1, "Meiosis", "How many cells does meiosis produce from one cell?",
       "Four, all genetically different", ["Two, genetically identical", "Four, genetically identical", "Two, genetically different"],

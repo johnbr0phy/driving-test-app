@@ -17,7 +17,7 @@ ITEMS = [
       "50 × 9.8 × 4 = 1,960 J.", basics=SUB),
     N(1, 1, "Efficiency",
       "A motor is supplied with 500 J and transfers 350 J usefully. Use efficiency = useful output energy ÷ total input energy. What is the efficiency as a percentage?",
-      ["70", "70%"],
+      ["70"],
       "350 ÷ 500 = 0.7, and 0.7 × 100 = 70%. The other 150 J is dissipated, mostly by heating the surroundings."),
     X(1, 1, "Energy resources", "For each energy resource, choose whether it is renewable or non-renewable.",
       ["Tidal", "Coal", "Biofuel", "Nuclear fuel"], ["Renewable", "Non-renewable"], [0, 1, 0, 1],

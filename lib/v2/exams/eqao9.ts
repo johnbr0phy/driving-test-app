@@ -57,6 +57,7 @@ export const EQAO9: ExamV2Config = {
   icon: "calculator",
   theme: { brand: "255 70% 32%", brandDark: "255 70% 23%", brandLight: "255 70% 95%" },
   breakSeconds: 600,
+  breakNote: "The real assessment is two sessions, which your school may run on different days.",
   sections: [
     {
       key: "a",

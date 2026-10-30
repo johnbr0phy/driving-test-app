@@ -45,6 +45,7 @@ export const GCSECS: ExamV2Config = {
   icon: "cpu",
   theme: { brand: "180 35% 34%", brandDark: "180 35% 24%", brandLight: "180 55% 96%" },
   breakSeconds: 300,
+  breakNote: "The real papers are sat on different days.",
   sections: [
     {
       key: "p1",

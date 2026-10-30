@@ -60,7 +60,7 @@ ITEMS = [
       "In a pure metal the layers of identical atoms slide easily. Atoms of a different size distort the layers, so they slide over each other less easily."),
     N(2, 3, "Percentage by mass",
       "What is the percentage by mass of oxygen in water, H₂O? Give your answer to the nearest whole number. Relative atomic masses: H = 1, O = 16.",
-      ["89", "89%"],
+      ["89"],
       "Mr of H₂O = (2 × 1) + 16 = 18. Percentage of oxygen = 16 ÷ 18 × 100 = 88.9%, which rounds to 89%.", basics=MR),
     N(2, 2, "Concentration",
       "25 g of salt is dissolved to make 0.5 dm³ of solution. Use concentration = mass ÷ volume. What is the concentration in g/dm³?",

@@ -28,6 +28,7 @@ export const GCSEHIGHER: ExamV2Config = {
   icon: "calculator",
   theme: { brand: "286 60% 36%", brandDark: "286 60% 26%", brandLight: "286 80% 96%" },
   breakSeconds: 600,
+  breakNote: "The real papers are sat on different days.",
   sections: [
     {
       key: "p1",

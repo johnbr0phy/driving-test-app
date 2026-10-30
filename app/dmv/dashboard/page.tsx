@@ -22,6 +22,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackStateSelected, trackViewItem } from "@/lib/analytics";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { ClassMissRecovery } from "@/components/exam/ClassMissRecovery";
+import { paywallVariantForCheckout } from "@/lib/paywallTest";
 
 function DashboardContent() {
   const router = useRouter();
@@ -212,6 +213,7 @@ function DashboardContent() {
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          paywallVariant: paywallVariantForCheckout(),
           location: paywallFeature,
         }),
       });

@@ -10,6 +10,7 @@ import {
   trackPaywallHit,
   trackViewItem,
 } from "@/lib/analytics";
+import { paywallVariantForCheckout } from "@/lib/paywallTest";
 
 export type PaywallFeature = string;
 
@@ -51,7 +52,13 @@ export function useUpgradeFlow(location: string, returnPath = "/dmv/dashboard") 
       const response = await fetch("/api/stripe/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${idToken}` },
-        body: JSON.stringify({ email: user.email, returnUrl: window.location.origin, returnPath, location }),
+        body: JSON.stringify({
+          email: user.email,
+          returnUrl: window.location.origin,
+          returnPath,
+          location,
+          paywallVariant: paywallVariantForCheckout(),
+        }),
       });
       const data = await response.json();
       if (data.error) {

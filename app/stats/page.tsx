@@ -20,6 +20,7 @@ import { Question } from "@/types";
 import { getQuestionsData } from "@/lib/testGenerator";
 import { CommunityWrongQuestions } from "@/components/CommunityWrongQuestions";
 import { QuizRow } from "@/components/QuizRow";
+import { paywallVariantForCheckout } from "@/lib/paywallTest";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -99,6 +100,7 @@ function StatsContent() {
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          paywallVariant: paywallVariantForCheckout(),
           location: "stats_page",
         }),
       });

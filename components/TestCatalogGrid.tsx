@@ -127,12 +127,17 @@ export function TestCatalogGrid({
   // "Most popular" is US tests, so other countries skip it.
   const groups = useMemo(() => {
     const searching = query.trim().length > 0;
+    // localOnly (country homepages) keeps only the country's own and worldwide tests,
+    // inside mixed groups too (Citizenship tests shows /uk only Life in the UK).
+    const local = (t: { id: string }) => regionOfTest(t.id) === region || regionOfTest(t.id) === "GLOBAL";
     return orderGroupsForRegion(
-      searchTestGroups(query).filter(
-        (g) =>
-          ((showPopular && region === "US") || g.title !== "Most popular") &&
-          !(localOnly && !searching && g.tests.every((t) => regionOfTest(t.id) !== region && regionOfTest(t.id) !== "GLOBAL"))
-      ),
+      searchTestGroups(query)
+        .map((g) => (localOnly && !searching ? { ...g, tests: g.tests.filter(local) } : g))
+        .filter(
+          (g) =>
+            ((showPopular && region === "US") || g.title !== "Most popular") &&
+            g.tests.length > 0
+        ),
       region
     );
   }, [query, showPopular, region, localOnly]);

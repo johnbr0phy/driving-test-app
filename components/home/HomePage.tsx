@@ -422,7 +422,7 @@ export async function HomePage({ region }: { region: Region }) {
         <TestCatalogGrid showPopular={false} nested region={region} regionPicker localOnly />
         {!us && (
           <p className="mt-10 text-center text-sm text-gray-600 dark:text-gray-300">
-            Moving to the US or studying for a US exam?{" "}
+            Looking for another country or a US exam?{" "}
             <Link href="/tests" className="font-medium text-brand-dark hover:underline">See all {examCount} tests</Link>
           </p>
         )}

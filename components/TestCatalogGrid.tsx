@@ -111,7 +111,7 @@ export function TestCatalogGrid({
   region?: Region;
   /** Show the country pills above the search. With `region` set the server renders each country (the homepage); without it the hub follows the saved country. */
   regionPicker?: boolean;
-  /** Outside the US, leave out the US groups until the visitor searches (the homepage). */
+  /** Outside the US, list only that country's groups and the worldwide ones until the visitor searches (the homepage). */
   localOnly?: boolean;
 } = {}) {
   // nested: the grid sits under a page section's h2 (the homepage), so groups are h3 and cards h4.
@@ -126,12 +126,13 @@ export function TestCatalogGrid({
   // The homepage shows its own live "Popular this week" row above the grid, and
   // "Most popular" is US tests, so other countries skip it.
   const groups = useMemo(() => {
+    const isLocal = (r: string) => r === region || r === "GLOBAL";
     const searching = query.trim().length > 0;
     return orderGroupsForRegion(
       searchTestGroups(query).filter(
         (g) =>
           ((showPopular && region === "US") || g.title !== "Most popular") &&
-          !(localOnly && !searching && region !== "US" && g.tests.every((t) => regionOfTest(t.id) === "US"))
+          !(localOnly && !searching && region !== "US" && !g.tests.some((t) => isLocal(regionOfTest(t.id))))
       ),
       region
     );

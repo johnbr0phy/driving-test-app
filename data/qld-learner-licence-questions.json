@@ -200,14 +200,14 @@
     "state": "ALL",
     "questionId": "AUQLD-GW-015",
     "category": "auqldGiveWay",
-    "question": "You are turning left using a slip lane. Which traffic must you give way to?",
-    "optionA": "Only traffic from the right",
+    "question": "You are turning left through a slip lane with a give way sign. Which traffic must you give way to?",
+    "optionA": "Only traffic turning left",
     "optionB": "Only buses and trucks",
     "optionC": "All traffic on the road you enter",
     "optionD": "No one, slip lanes merge",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A slip lane is a left-turn lane separated by an island. You must give way to all traffic already on the road you are entering, except vehicles doing a U-turn."
+    "explanation": "A slip lane is a left-turn lane separated by an island. At its give way sign you give way to every vehicle on the road you are entering, including vehicles turning right into it, but not one doing a U-turn, and to anyone on the slip lane."
   },
   {
     "type": "AUQLD",
@@ -1033,7 +1033,7 @@
     "optionD": "Navigation apps only",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Learner and P1 drivers under 25 must not use a phone at all while driving, including hands-free, Bluetooth, wireless headsets and the loudspeaker."
+    "explanation": "Learner and P1 drivers under 25 must not use a phone at all while driving, including hands-free, Bluetooth, wireless headsets, the loudspeaker and navigation apps."
   },
   {
     "type": "AUQLD",
@@ -1187,7 +1187,7 @@
     "optionD": "For navigation only",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "P1 drivers under 25 must not use a phone in any way while driving, including hands-free, headsets and loudspeaker."
+    "explanation": "P1 drivers under 25 must not use a phone in any way while driving, including hands-free, headsets, loudspeaker and navigation apps. Hands-free use starts on a P2 licence."
   },
   {
     "type": "AUQLD",
@@ -1420,12 +1420,12 @@
     "category": "auqldSigns",
     "question": "At traffic lights, a white B light is showing. Who may proceed?",
     "optionA": "All vehicles",
-    "optionB": "Bus lane traffic",
+    "optionB": "Traffic in the bus lane",
     "optionC": "Bicycles in any lane",
     "optionD": "No one, it means brake",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A white B light lets buses, taxis, limousines and bicycle riders in a bus lane go ahead of other traffic."
+    "explanation": "B lights apply only to a bus lane. A white B light lets buses, taxis, limousines and bicycle riders in that lane go ahead of other traffic, which still obeys its own lights."
   },
   {
     "type": "AUQLD",

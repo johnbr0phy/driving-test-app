@@ -1,0 +1,35 @@
+{
+  "id": "auwhite",
+  "stateCode": "AUWHITE",
+  "idBase": 8100,
+  "prefix": "AUWHITE-",
+  "slug": "/white-card",
+  "landingPath": "/white-card-practice-test",
+  "dataFile": "data/white-card-questions.json",
+  "name": "White Card Practice Test",
+  "shortName": "White Card",
+  "examLabel": "White Card",
+  "fullName": "White Card course, CPCWHS1001 Prepare to work safely in the construction industry",
+  "icon": "hardhat",
+  "passPct": 80,
+  "categories": [
+    {"key": "auwhiteLaw", "label": "WHS Laws, Duties & Rights", "perTest": 8, "segment": "LAW"},
+    {"key": "auwhiteRisk", "label": "Risk Management & SWMS", "perTest": 6, "segment": "RSK"},
+    {"key": "auwhiteHeights", "label": "Heights, Collapse & Excavations", "perTest": 6, "segment": "HGT"},
+    {"key": "auwhitePlant", "label": "Electrical, Plant & Traffic", "perTest": 6, "segment": "PLT"},
+    {"key": "auwhiteHealth", "label": "Asbestos, Dust, Chemicals & Confined Spaces", "perTest": 7, "segment": "HLT"},
+    {"key": "auwhiteEnv", "label": "Manual Handling, Noise, Sun & Fitness", "perTest": 5, "segment": "ENV"},
+    {"key": "auwhiteSigns", "label": "Safety Signs & PPE", "perTest": 6, "segment": "PPE"},
+    {"key": "auwhiteEmerg", "label": "Incidents, Emergencies & First Aid", "perTest": 6, "segment": "EMG"}
+  ],
+  "categoryNotes": {
+    "auwhiteLaw": "Element 1 (duty holders, duty of care, rights) and 3.2 (designated safety personnel); model WHS Act; card rules",
+    "auwhiteRisk": "Element 2.1 and 2.4: hazard, risk, the unit's five steps, hierarchy of controls, JSA, SWMS, high risk construction work",
+    "auwhiteHeights": "Knowledge evidence: working at heights incl. scaffolding, falling objects, unplanned collapse, excavations and trenches incl. underground services",
+    "auwhitePlant": "Knowledge evidence: electrical (power lines, cords, equipment), plant and equipment, traffic and mobile plant, high-risk work licences, lockout tags",
+    "auwhiteHealth": "Knowledge evidence: asbestos, dust, hazardous substances and dangerous goods, confined spaces; SDS",
+    "auwhiteEnv": "Knowledge evidence: manual handling, noise, UV, hot and cold environments; drugs, alcohol and fatigue",
+    "auwhiteSigns": "Element 3.3 and 2.3: sign and tag categories (AS 1319), PPE selection and fit",
+    "auwhiteEmerg": "Element 3.4 and 4: incidents, notifiable incidents, emergencies, fire equipment, first aid, reporting"
+  }
+}

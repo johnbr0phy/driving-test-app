@@ -1,0 +1,4250 @@
+[
+  {
+    "id": "GCSEM-T1-001",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Negative numbers",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Work out $-7 + 12 - 9$.",
+    "numeric": {
+      "answers": [
+        "-4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Start at $-7$, add 12 to reach 5, then take away 9 to reach $-4$. Answering 4 forgets that the result goes below zero."
+  },
+  {
+    "id": "GCSEM-T1-002",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Percentage of an amount",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Work out 15% of 80.",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "10% of 80 is 8 and 5% is 4, so 15% is $8 + 4 = 12$."
+  },
+  {
+    "id": "GCSEM-T1-003",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Substitution",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Work out the value of $3a - 2b$ when $a = 5$ and $b = -4$.",
+    "numeric": {
+      "answers": [
+        "23"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "$3 \\times 5 = 15$ and $2 \\times -4 = -8$, so $15 - (-8) = 23$. Answering 7 forgets that subtracting a negative adds."
+  },
+  {
+    "id": "GCSEM-T1-004",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Angles in a triangle",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Two angles in a triangle are 48° and 75°. What is the size of the third angle, in degrees?",
+    "numeric": {
+      "answers": [
+        "57"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Angles in a triangle add up to 180°: $180 - 48 - 75 = 57$°."
+  },
+  {
+    "id": "GCSEM-T1-005",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Mean",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Here are five numbers: 7, 3, 9, 3, 8. Work out the mean.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "The total is $7 + 3 + 9 + 3 + 8 = 30$, and $30 \\div 5 = 6$."
+  },
+  {
+    "id": "GCSEM-T1-006",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Prime numbers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these numbers is a prime number?",
+    "options": [
+      "21",
+      "27",
+      "29",
+      "33"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": false,
+    "explanation": "29 has no factors other than 1 and itself. The others are odd but not prime: $21 = 3 \\times 7$, $27 = 3 \\times 3 \\times 3$ and $33 = 3 \\times 11$."
+  },
+  {
+    "id": "GCSEM-T1-007",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Converting units",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Change 2.5 kilograms into grams.",
+    "numeric": {
+      "answers": [
+        "2500"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "There are 1000 g in 1 kg, so $2.5 \\times 1000 = 2500$ g. Multiplying by 100 gives 250, which is wrong."
+  },
+  {
+    "id": "GCSEM-T1-008",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Collecting like terms",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Simplify $4x + 7y - x + 2y$.",
+    "options": [
+      "$3x + 9y$",
+      "$5x + 9y$",
+      "$3x + 5y$",
+      "$12xy$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": false,
+    "explanation": "Collect the $x$ terms ($4x - x = 3x$) and the $y$ terms ($7y + 2y = 9y$). The $-x$ belongs to the $x$ term, so $5x$ is wrong."
+  },
+  {
+    "id": "GCSEM-T1-009",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Adding fractions",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Work out $\\frac{2}{3} + \\frac{1}{4}$. Give your answer as a fraction.",
+    "numeric": {
+      "answers": [
+        "11/12"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Use a common denominator of 12: $\\frac{8}{12} + \\frac{3}{12} = \\frac{11}{12}$. Adding tops and bottoms to get $\\frac{3}{7}$ is the usual slip."
+  },
+  {
+    "id": "GCSEM-T1-010",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Sharing in a ratio",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Share £45 in the ratio 2 : 7. How much is the larger share, in pounds?",
+    "numeric": {
+      "answers": [
+        "35"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "There are $2 + 7 = 9$ parts, so one part is $45 \\div 9 = 5$. The larger share is $7 \\times 5 = 35$ pounds."
+  },
+  {
+    "id": "GCSEM-T1-011",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Area and perimeter",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A rectangle is 9 cm long and has an area of 54 cm². What is its perimeter, in cm?",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "The width is $54 \\div 9 = 6$ cm, so the perimeter is $9 + 6 + 9 + 6 = 30$ cm. 15 cm adds only two of the sides."
+  },
+  {
+    "id": "GCSEM-T1-012",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Probability",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A fair six-sided dice is rolled once. What is the probability of rolling a number greater than 4?",
+    "options": [
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": false,
+    "explanation": "Only 5 and 6 are greater than 4, so the probability is $\\frac{2}{6} = \\frac{1}{3}$. Counting 4 as well gives $\\frac{1}{2}$."
+  },
+  {
+    "id": "GCSEM-T1-013",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Solving linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Solve $5x - 7 = 2x + 11$.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Take $2x$ from both sides: $3x - 7 = 11$. Add 7: $3x = 18$, so $x = 6$."
+  },
+  {
+    "id": "GCSEM-T1-014",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Multiplying decimals",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Work out $3.6 \\times 0.4$.",
+    "numeric": {
+      "answers": [
+        "1.44"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "$36 \\times 4 = 144$, and there are two decimal places in the question, so the answer is 1.44. Writing 14.4 puts the point in the wrong place."
+  },
+  {
+    "id": "GCSEM-T1-015",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Direct proportion",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "4 pencils cost £1.80. How much do 7 of the same pencils cost, in pounds?",
+    "numeric": {
+      "answers": [
+        "3.15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "One pencil costs $1.80 \\div 4 = 0.45$ pounds, so 7 cost $7 \\times 0.45 = 3.15$ pounds."
+  },
+  {
+    "id": "GCSEM-T1-016",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Angles in polygons",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the size of each interior angle of a regular hexagon?",
+    "options": [
+      "60°",
+      "108°",
+      "120°",
+      "135°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": false,
+    "explanation": "Each exterior angle is $360 \\div 6 = 60$°, so each interior angle is $180 - 60 = 120$°. 60° is the exterior angle."
+  },
+  {
+    "id": "GCSEM-T1-017",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Probabilities sum to 1",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The probability that a train is late is 0.15. What is the probability that the train is not late?",
+    "numeric": {
+      "answers": [
+        "0.85",
+        "85/100",
+        "17/20"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "The train is either late or not late, so the probabilities add to 1: $1 - 0.15 = 0.85$."
+  },
+  {
+    "id": "GCSEM-T1-018",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Factorising quadratics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Factorise $x^2 + 2x - 15$.",
+    "options": [
+      "$(x - 5)(x + 3)$",
+      "$(x + 5)(x - 3)$",
+      "$(x + 15)(x - 1)$",
+      "$(x + 3)(x + 5)$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": false,
+    "explanation": "Find two numbers that multiply to $-15$ and add to $+2$: $+5$ and $-3$. $(x - 5)(x + 3)$ multiplies out to $x^2 - 2x - 15$, so its middle term has the wrong sign."
+  },
+  {
+    "id": "GCSEM-T1-019",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Prime factors",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Write 180 as a product of its prime factors.",
+    "options": [
+      "$2 \\times 3^2 \\times 10$",
+      "$2^2 \\times 45$",
+      "$2^2 \\times 3^2 \\times 5$",
+      "$2^3 \\times 3 \\times 5$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": false,
+    "explanation": "$180 = 2 \\times 2 \\times 3 \\times 3 \\times 5 = 2^2 \\times 3^2 \\times 5$. The other products either use numbers that are not prime (10 and 45) or multiply to 120."
+  },
+  {
+    "id": "GCSEM-T1-020",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Speed",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A car travels 150 km in 2 hours 30 minutes. What is its average speed, in km/h?",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "2 hours 30 minutes is 2.5 hours, so speed is $150 \\div 2.5 = 60$ km/h. Using 2.3 hours for the time is a common slip."
+  },
+  {
+    "id": "GCSEM-T1-021",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Rounding to decimal places",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Round 4.0735 to 2 decimal places.",
+    "numeric": {
+      "answers": [
+        "4.07"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The third decimal digit is 3, which is less than 5, so round down to 4.07. Rounding up to 4.08 would need a third digit of 5 or more."
+  },
+  {
+    "id": "GCSEM-T1-022",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Percentage increase",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Increase £240 by 18%. Give the new amount in pounds.",
+    "numeric": {
+      "answers": [
+        "283.20",
+        "283.2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Multiply by 1.18: $240 \\times 1.18 = 283.20$. The 18% on its own is 43.20, which is only the increase."
+  },
+  {
+    "id": "GCSEM-T1-023",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "nth term",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The first four terms of a sequence are 4, 11, 18, 25. Which expression gives the $n$th term?",
+    "options": [
+      "$7n + 4$",
+      "$n + 7$",
+      "$4n + 7$",
+      "$7n - 3$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The terms go up by 7, so start with $7n$. When $n = 1$, $7n = 7$, and the first term is 4, so subtract 3: $7n - 3$."
+  },
+  {
+    "id": "GCSEM-T1-024",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Area of a circle",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A circle has a radius of 6 cm. Work out its area, in cm², to 1 decimal place.",
+    "numeric": {
+      "answers": [
+        "113.1"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Area $= \\pi r^2 = \\pi \\times 36 = 113.097...$, which is 113.1 cm². Using $2\\pi r$ gives 37.7, the circumference."
+  },
+  {
+    "id": "GCSEM-T1-025",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Median",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The ages of six people are 34, 28, 41, 28, 37 and 30. Work out the median age.",
+    "numeric": {
+      "answers": [
+        "32"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "In order: 28, 28, 30, 34, 37, 41. The middle two are 30 and 34, so the median is $\\frac{30 + 34}{2} = 32$."
+  },
+  {
+    "id": "GCSEM-T1-026",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Powers and roots",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Work out $\\sqrt{5.29} + 2.3^2$.",
+    "numeric": {
+      "answers": [
+        "7.59"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$\\sqrt{5.29} = 2.3$ and $2.3^2 = 5.29$, so the total is $2.3 + 5.29 = 7.59$."
+  },
+  {
+    "id": "GCSEM-T1-027",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Percentage change",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The price of a coat falls from £85 to £68. Work out the percentage decrease.",
+    "numeric": {
+      "answers": [
+        "20",
+        "20%"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The fall is $85 - 68 = 17$, and $\\frac{17}{85} = 0.2 = 20\\%$. Dividing by the new price, 68, gives 25%, which is wrong."
+  },
+  {
+    "id": "GCSEM-T1-028",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Using formulae",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Use the formula $v = u + at$ to work out $v$ when $u = 12$, $a = 9.8$ and $t = 2.5$.",
+    "numeric": {
+      "answers": [
+        "36.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$at = 9.8 \\times 2.5 = 24.5$, so $v = 12 + 24.5 = 36.5$."
+  },
+  {
+    "id": "GCSEM-T1-029",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Standard form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Write 0.000 52 in standard form.",
+    "options": [
+      "$5.2 \\times 10^{-4}$",
+      "$5.2 \\times 10^{-3}$",
+      "$52 \\times 10^{-5}$",
+      "$5.2 \\times 10^{4}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Move the decimal point 4 places right to get 5.2, so the power is $-4$. $52 \\times 10^{-5}$ has the right value but is not standard form, because 52 is not between 1 and 10."
+  },
+  {
+    "id": "GCSEM-T1-030",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Best buys",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 500 g pack of rice costs £1.35. A 2 kg bag of the same rice costs £4.80. Which statement is correct?",
+    "options": [
+      "The 500 g pack is better value, at 27p per 100 g",
+      "The 2 kg bag is better value, at 24p per 100 g",
+      "They are the same value, at 27p per 100 g",
+      "The 500 g pack is better value, at 24p per 100 g"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "500 g at £1.35 is 27p per 100 g. 2 kg is twenty lots of 100 g, so £4.80 is $480 \\div 20 = 24$p per 100 g. The lower price per 100 g is better value."
+  },
+  {
+    "id": "GCSEM-T1-031",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Pythagoras' theorem",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A right-angled triangle has shorter sides of 7 cm and 24 cm. How long is the hypotenuse, in cm?",
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$7^2 + 24^2 = 49 + 576 = 625$, and $\\sqrt{625} = 25$ cm."
+  },
+  {
+    "id": "GCSEM-T1-032",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Mean from a frequency table",
+    "difficulty": 2,
+    "format": "numeric",
+    "passage": "| Number of pets | Frequency |\n|---|---|\n| 0 | 6 |\n| 1 | 9 |\n| 2 | 4 |\n| 3 | 1 |",
+    "stem": "The table shows the number of pets owned by 20 students. Work out the mean number of pets per student.",
+    "numeric": {
+      "answers": [
+        "1"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Multiply each number of pets by its frequency: $0 + 9 + 8 + 3 = 20$ pets. $20 \\div 20 = 1$. Dividing by 4 rows instead of 20 students gives 5, which is wrong."
+  },
+  {
+    "id": "GCSEM-T1-033",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Linear inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $3x + 4 > 19$.",
+    "options": [
+      "$x < 5$",
+      "$x > 7\\frac{2}{3}$",
+      "$x > 5$",
+      "$x \\ge 5$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Take 4 from both sides ($3x > 15$), then divide by 3: $x > 5$. The sign stays $>$ because you only divide by a positive number."
+  },
+  {
+    "id": "GCSEM-T1-034",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Error intervals",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A number is rounded to 1 decimal place. The result is 6.4. What is the smallest value the number could have been?",
+    "numeric": {
+      "answers": [
+        "6.35"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Any number from 6.35 up to (but not including) 6.45 rounds to 6.4, so the lower bound is 6.35. The answer 6.3 is too small, because 6.3 itself rounds to 6.3."
+  },
+  {
+    "id": "GCSEM-T1-035",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Compound interest",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "£3000 is invested at 2.5% compound interest per year. What is it worth after 3 years? Give your answer in pounds, to the nearest penny.",
+    "numeric": {
+      "answers": [
+        "3230.67"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Multiply by $1.025^3$: $3000 \\times 1.025^3 = 3230.67$ (to the nearest penny). Simple interest would give 3225, because it ignores interest on the interest."
+  },
+  {
+    "id": "GCSEM-T1-036",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Trigonometry",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "In a right-angled triangle, the side opposite angle $x$ is 5 cm and the hypotenuse is 8 cm. Work out angle $x$, in degrees, to 1 decimal place.",
+    "numeric": {
+      "answers": [
+        "38.7"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Opposite and hypotenuse means sine: $\\sin x = \\frac{5}{8}$, so $x = \\sin^{-1}(0.625) = 38.68...$, which is 38.7°. Using cosine instead gives 51.3°."
+  },
+  {
+    "id": "GCSEM-T1-037",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Relative frequency",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A spinner is spun 200 times and lands on red 46 times. Using these results, how many times would you expect it to land on red in 500 spins?",
+    "numeric": {
+      "answers": [
+        "115"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The relative frequency of red is $\\frac{46}{200} = 0.23$, and $0.23 \\times 500 = 115$."
+  },
+  {
+    "id": "GCSEM-T1-038",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Simultaneous equations",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Solve the simultaneous equations $2x + y = 11$ and $x - y = 1$. What is the value of $x$?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Add the equations to remove $y$: $3x = 12$, so $x = 4$. Check: $y = 3$, and $2(4) + 3 = 11$."
+  },
+  {
+    "id": "GCSEM-T1-039",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Using a calculator",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Work out $\\frac{4.6^2 - 3.1}{\\sqrt{0.81}}$. Give your answer correct to 3 significant figures.",
+    "numeric": {
+      "answers": [
+        "20.1"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The top is $21.16 - 3.1 = 18.06$ and the bottom is $0.9$, so the result is $20.0666...$, which is 20.1 to 3 significant figures."
+  },
+  {
+    "id": "GCSEM-T1-040",
+    "section": "p2",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Density",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A metal block has a mass of 1080 g and a volume of 400 cm³. Work out its density, in g/cm³.",
+    "numeric": {
+      "answers": [
+        "2.7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Density = mass ÷ volume $= 1080 \\div 400 = 2.7$ g/cm³."
+  },
+  {
+    "id": "GCSEM-T1-041",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Ordering fractions, decimals and percentages",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which list is in order from smallest to largest?",
+    "options": [
+      "$\\frac{5}{8}$, 0.6, 63%",
+      "63%, 0.6, $\\frac{5}{8}$",
+      "0.6, 63%, $\\frac{5}{8}$",
+      "0.6, $\\frac{5}{8}$, 63%"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Change everything to decimals: $0.6$, $\\frac{5}{8} = 0.625$ and $63\\% = 0.63$, so 0.6 is smallest and 63% is largest."
+  },
+  {
+    "id": "GCSEM-T1-042",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Simplifying ratios",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Write the ratio 24 : 36 in its simplest form.",
+    "options": [
+      "2 : 3",
+      "3 : 2",
+      "4 : 6",
+      "6 : 9"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Divide both parts by their highest common factor, 12, to get 2 : 3. 4 : 6 and 6 : 9 are equivalent but can still be simplified."
+  },
+  {
+    "id": "GCSEM-T1-043",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Expanding brackets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Expand $4(2x - 3)$.",
+    "options": [
+      "$8x - 3$",
+      "$8x - 12$",
+      "$6x - 7$",
+      "$8x + 12$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Multiply both terms by 4: $4 \\times 2x = 8x$ and $4 \\times -3 = -12$. Writing $8x - 3$ forgets to multiply the second term."
+  },
+  {
+    "id": "GCSEM-T1-044",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Volume of a cuboid",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A cuboid measures 5 cm by 4 cm by 3 cm. What is its volume, in cm³?",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Volume $= 5 \\times 4 \\times 3 = 60$ cm³."
+  },
+  {
+    "id": "GCSEM-T1-045",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Correlation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A scatter graph shows that on warmer days a cafe sells fewer hot drinks. What type of correlation does it show?",
+    "options": [
+      "Positive correlation",
+      "No correlation",
+      "Negative correlation",
+      "Direct proportion"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "As one variable goes up the other goes down, which is negative correlation. Positive correlation would mean both rise together."
+  },
+  {
+    "id": "GCSEM-T1-046",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Highest common factor",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Find the highest common factor (HCF) of 84 and 120.",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$84 = 2^2 \\times 3 \\times 7$ and $120 = 2^3 \\times 3 \\times 5$. The shared prime factors are $2^2 \\times 3 = 12$. 6 is a common factor but not the highest."
+  },
+  {
+    "id": "GCSEM-T1-047",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Map scales",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A map has a scale of 1 : 25 000. Two villages are 6 cm apart on the map. What is the real distance between them, in kilometres?",
+    "numeric": {
+      "answers": [
+        "1.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$6 \\times 25\\,000 = 150\\,000$ cm. That is 1500 m, which is 1.5 km."
+  },
+  {
+    "id": "GCSEM-T1-048",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Coordinates on a line",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A straight line has equation $y = 3x - 5$. What is the $y$-coordinate of the point on the line where $x = -2$?",
+    "numeric": {
+      "answers": [
+        "-11"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$y = 3(-2) - 5 = -6 - 5 = -11$."
+  },
+  {
+    "id": "GCSEM-T1-049",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Product rule for counting",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A cafe sells 4 types of sandwich and 3 types of drink. A meal deal is one sandwich and one drink. How many different meal deals are possible?",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Each of the 4 sandwiches can go with each of the 3 drinks, so there are $4 \\times 3 = 12$ meal deals. Adding to get 7 counts the items, not the pairs."
+  },
+  {
+    "id": "GCSEM-T1-050",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Inverse proportion",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "5 workers take 12 days to paint a building. How many days would 3 workers take, working at the same rate?",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The job is $5 \\times 12 = 60$ worker-days, so 3 workers take $60 \\div 3 = 20$ days. Fewer workers take longer, so 7.2 days cannot be right."
+  },
+  {
+    "id": "GCSEM-T1-051",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Bearings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A ship sails from port A to point B on a bearing of 070°. What is the bearing of A from B?",
+    "options": [
+      "070°",
+      "110°",
+      "250°",
+      "290°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The back bearing is 180° more: $70 + 180 = 250$°. 110° is $180 - 70$, which is not a bearing back along the same line."
+  },
+  {
+    "id": "GCSEM-T1-052",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Pie charts",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A pie chart shows how 60 students travel to school. 15 of them walk. What angle should the walk sector have, in degrees?",
+    "numeric": {
+      "answers": [
+        "90"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Each student is $360 \\div 60 = 6$°, so 15 students take $15 \\times 6 = 90$°."
+  },
+  {
+    "id": "GCSEM-T1-053",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Gradient",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the gradient of the straight line through the points $(1, 3)$ and $(4, 15)$?",
+    "options": [
+      "$\\frac{1}{4}$",
+      "3",
+      "4",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Gradient is change in $y$ over change in $x$: $\\frac{15 - 3}{4 - 1} = \\frac{12}{3} = 4$. 12 is only the change in $y$."
+  },
+  {
+    "id": "GCSEM-T1-054",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Standard form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Work out $(2.5 \\times 10^{6}) \\times (4 \\times 10^{3})$. Give your answer in standard form.",
+    "options": [
+      "$1 \\times 10^{9}$",
+      "$6.5 \\times 10^{9}$",
+      "$1 \\times 10^{18}$",
+      "$1 \\times 10^{10}$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "$2.5 \\times 4 = 10$ and $10^6 \\times 10^3 = 10^9$, so the product is $10 \\times 10^9 = 1 \\times 10^{10}$. Leaving the power at 9 forgets the extra 10."
+  },
+  {
+    "id": "GCSEM-T1-055",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Exchange rates",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The exchange rate is £1 = €1.16. How many euros do you get for £350?",
+    "numeric": {
+      "answers": [
+        "406"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Multiply by the rate: $350 \\times 1.16 = 406$ euros. Dividing gives about 301.72, which goes the wrong way."
+  },
+  {
+    "id": "GCSEM-T1-056",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Volume of a cylinder",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A cylinder has a radius of 3 cm and a height of 10 cm. Work out its volume, in cm³, to the nearest whole number.",
+    "numeric": {
+      "answers": [
+        "283"
+      ],
+      "tolerance": 0.5
+    },
+    "calculator": true,
+    "explanation": "Volume $= \\pi r^2 h = \\pi \\times 9 \\times 10 = 282.7...$, which is 283 cm³."
+  },
+  {
+    "id": "GCSEM-T1-057",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Venn diagrams",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "In a group of 30 students, 18 study French, 12 study Spanish and 5 study both. How many study neither language?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "French or Spanish or both: $18 + 12 - 5 = 25$ students. So $30 - 25 = 5$ study neither. Forgetting to take off the 5 counted twice gives 0."
+  },
+  {
+    "id": "GCSEM-T1-058",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Rearranging formulae",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Rearrange $P = 2l + 2w$ to make $w$ the subject.",
+    "options": [
+      "$w = \\frac{P - 2l}{2}$",
+      "$w = \\frac{P}{2} - 2l$",
+      "$w = P - 2l - 2$",
+      "$w = \\frac{P + 2l}{2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Take $2l$ from both sides ($P - 2l = 2w$), then divide everything by 2. $\\frac{P}{2} - 2l$ divides only $P$ by 2, not the $2l$."
+  },
+  {
+    "id": "GCSEM-T1-059",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Lowest common multiple",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Bus A leaves a bus station every 12 minutes. Bus B leaves every 18 minutes. Both leave together at 9:00 am. How many minutes later do they next leave together?",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "This is the lowest common multiple of 12 and 18. Multiples of 18 are 18, 36, ... and 36 is the first that 12 also divides, so 36 minutes."
+  },
+  {
+    "id": "GCSEM-T1-060",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Reverse percentages",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "After a 20% reduction, a bike costs £276. What was the price before the reduction, in pounds?",
+    "numeric": {
+      "answers": [
+        "345"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "£276 is 80% of the original price, so the original is $276 \\div 0.8 = 345$ pounds. Adding 20% of 276 gives 331.20, which is wrong."
+  },
+  {
+    "id": "GCSEM-T2-001",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Order of operations",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Work out $6 - 3 \\times 4 + 8 \\div 2$.",
+    "numeric": {
+      "answers": [
+        "-2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Multiply and divide first: $3 \\times 4 = 12$ and $8 \\div 2 = 4$. Then $6 - 12 + 4 = -2$. Working left to right gives 10, which ignores the order of operations."
+  },
+  {
+    "id": "GCSEM-T2-002",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "One quantity as a fraction of another",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Write 40 minutes as a fraction of 2 hours. Give your answer in its simplest form.",
+    "numeric": {
+      "answers": [
+        "1/3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "2 hours is 120 minutes, so the fraction is $\\frac{40}{120} = \\frac{1}{3}$. Using 2 hours as 200 minutes is the common slip."
+  },
+  {
+    "id": "GCSEM-T2-003",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Substitution",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Work out the value of $4x^2$ when $x = 3$.",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Square first: $3^2 = 9$, then multiply by 4 to get 36. Squaring $4 \\times 3$ gives 144, which is $(4x)^2$."
+  },
+  {
+    "id": "GCSEM-T2-004",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Angles on a straight line",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Two angles together make a straight line. They are $3x$° and $(x + 20)$°. Work out the value of $x$.",
+    "numeric": {
+      "answers": [
+        "40"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Angles on a straight line add up to 180°: $4x + 20 = 180$, so $4x = 160$ and $x = 40$."
+  },
+  {
+    "id": "GCSEM-T2-005",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Averages",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the mode of 5, 2, 9, 2, 7, 2, 8?",
+    "options": [
+      "2",
+      "5",
+      "7",
+      "9"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": false,
+    "explanation": "The mode is the value that appears most often: 2 appears three times. 5 is both the median and the mean here, not the mode."
+  },
+  {
+    "id": "GCSEM-T2-006",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Multiples",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these numbers is a multiple of both 6 and 8?",
+    "options": [
+      "18",
+      "32",
+      "48",
+      "56"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": false,
+    "explanation": "$48 = 6 \\times 8$, so it is in both times tables. 18 is a multiple of 6 only, and 32 and 56 are multiples of 8 only."
+  },
+  {
+    "id": "GCSEM-T2-007",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Converting units",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Change 3.2 metres into centimetres.",
+    "numeric": {
+      "answers": [
+        "320"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "There are 100 cm in a metre, so $3.2 \\times 100 = 320$ cm."
+  },
+  {
+    "id": "GCSEM-T2-008",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Expanding and simplifying",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Expand and simplify $3(x + 4) + 2(x - 5)$.",
+    "options": [
+      "$5x + 22$",
+      "$5x + 2$",
+      "$5x - 2$",
+      "$5x + 7$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": false,
+    "explanation": "$3x + 12 + 2x - 10 = 5x + 2$. Getting 22 adds the 10 instead of subtracting it."
+  },
+  {
+    "id": "GCSEM-T2-009",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Multiplying fractions",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Work out $1\\frac{1}{2} \\times \\frac{4}{5}$. Give your answer as a decimal or a top-heavy fraction such as 7/4.",
+    "numeric": {
+      "answers": [
+        "6/5",
+        "1.2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Change to an improper fraction: $\\frac{3}{2} \\times \\frac{4}{5} = \\frac{12}{10} = \\frac{6}{5}$, which is 1.2. Multiplying only the fraction part gives $1\\frac{4}{10}$, which is wrong."
+  },
+  {
+    "id": "GCSEM-T2-010",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Ratio problems",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Paint is mixed from blue and white in the ratio 3 : 5. 12 litres of blue paint are used. How many litres of white paint are needed?",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "3 parts are 12 litres, so 1 part is 4 litres and 5 parts are 20 litres."
+  },
+  {
+    "id": "GCSEM-T2-011",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Parallel lines",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two parallel lines are crossed by a third straight line. One of the angles formed is 65°. What size is the angle alternate to it?",
+    "options": [
+      "25°",
+      "65°",
+      "115°",
+      "295°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": false,
+    "explanation": "Alternate angles are equal, so it is 65°. 115° is the co-interior (allied) angle, which adds to 180° with it."
+  },
+  {
+    "id": "GCSEM-T2-012",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Probability",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A bag holds 3 red, 5 blue and 2 green counters. One counter is taken at random. What is the probability that it is blue? Give your answer as a fraction or a decimal.",
+    "numeric": {
+      "answers": [
+        "1/2",
+        "0.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "There are 10 counters and 5 are blue, so the probability is $\\frac{5}{10} = \\frac{1}{2}$."
+  },
+  {
+    "id": "GCSEM-T2-013",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Solving linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Solve $\\frac{x + 4}{3} = 5$.",
+    "numeric": {
+      "answers": [
+        "11"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Multiply both sides by 3: $x + 4 = 15$, so $x = 11$."
+  },
+  {
+    "id": "GCSEM-T2-014",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Powers",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Work out $2^5 - 3^3$.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "$2^5 = 32$ and $3^3 = 27$, so the answer is 5. Treating the powers as multiplication ($10 - 9 = 1$) is the common slip."
+  },
+  {
+    "id": "GCSEM-T2-015",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Percentage of an amount",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Work out 35% of £60, in pounds.",
+    "numeric": {
+      "answers": [
+        "21"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "10% is 6, so 30% is 18 and 5% is 3. $18 + 3 = 21$ pounds."
+  },
+  {
+    "id": "GCSEM-T2-016",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Area of a trapezium",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A trapezium has parallel sides of 8 cm and 14 cm. The perpendicular distance between them is 5 cm. What is its area, in cm²?",
+    "numeric": {
+      "answers": [
+        "55"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Area $= \\frac{1}{2}(a + b)h = \\frac{1}{2} \\times 22 \\times 5 = 55$ cm². Forgetting the half gives 110."
+  },
+  {
+    "id": "GCSEM-T2-017",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Sample spaces",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Two fair coins are thrown. What is the probability of getting two heads? Give your answer as a fraction or a decimal.",
+    "numeric": {
+      "answers": [
+        "1/4",
+        "0.25"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "The outcomes are HH, HT, TH and TT, so two heads is 1 out of 4. Answering $\\frac{1}{3}$ forgets that HT and TH are different outcomes."
+  },
+  {
+    "id": "GCSEM-T2-018",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Solving quadratics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Solve $x^2 - 7x + 12 = 0$.",
+    "options": [
+      "$x = -3$ or $x = -4$",
+      "$x = 2$ or $x = 6$",
+      "$x = 3$ or $x = 4$",
+      "$x = -2$ or $x = -6$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": false,
+    "explanation": "Factorise: $(x - 3)(x - 4) = 0$, so $x = 3$ or $x = 4$. Writing $-3$ and $-4$ takes the numbers from the brackets without changing the sign."
+  },
+  {
+    "id": "GCSEM-T2-019",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Estimation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Estimate the value of $\\frac{49.7 \\times 3.12}{0.48}$ by rounding each number to 1 significant figure.",
+    "options": [
+      "75",
+      "150",
+      "300",
+      "3000"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": false,
+    "explanation": "Round to $\\frac{50 \\times 3}{0.5} = \\frac{150}{0.5} = 300$. Dividing by 0.5 doubles the number; halving it instead gives 75."
+  },
+  {
+    "id": "GCSEM-T2-020",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Recipes",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A recipe for 4 people uses 300 g of flour. How much flour is needed for 10 people, in grams?",
+    "numeric": {
+      "answers": [
+        "750"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "One person needs $300 \\div 4 = 75$ g, so 10 people need 750 g."
+  },
+  {
+    "id": "GCSEM-T2-021",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Fraction of an amount",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Work out $\\frac{3}{8}$ of 1240.",
+    "numeric": {
+      "answers": [
+        "465"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$1240 \\div 8 = 155$, and $155 \\times 3 = 465$."
+  },
+  {
+    "id": "GCSEM-T2-022",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Percentage increase",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A shop increases the price of a £24 item by 35%. What is the new price, in pounds?",
+    "numeric": {
+      "answers": [
+        "32.40",
+        "32.4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$24 \\times 1.35 = 32.40$ pounds. 8.40 is the increase on its own."
+  },
+  {
+    "id": "GCSEM-T2-023",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "nth term",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The $n$th term of a sequence is $5n - 2$. What is the 20th term?",
+    "numeric": {
+      "answers": [
+        "98"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Substitute $n = 20$: $5 \\times 20 - 2 = 98$."
+  },
+  {
+    "id": "GCSEM-T2-024",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Circumference",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A circle has a diameter of 15 cm. Work out its circumference, in cm, to 1 decimal place.",
+    "numeric": {
+      "answers": [
+        "47.1"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Circumference $= \\pi d = \\pi \\times 15 = 47.12...$, which is 47.1 cm. Using 15 as the radius doubles it to 94.2."
+  },
+  {
+    "id": "GCSEM-T2-025",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Range",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The range of five test marks is 23. The lowest mark is 48. What is the highest mark?",
+    "numeric": {
+      "answers": [
+        "71"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Range = highest − lowest, so the highest is $48 + 23 = 71$."
+  },
+  {
+    "id": "GCSEM-T2-026",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Significant figures",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Round 0.040 638 to 2 significant figures.",
+    "numeric": {
+      "answers": [
+        "0.041"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The first significant figure is the 4, so keep 4 and 0, then look at the next digit, 6, and round up to 0.041. 0.04 is only 1 significant figure."
+  },
+  {
+    "id": "GCSEM-T2-027",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Direct proportion",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "$y$ is directly proportional to $x$. When $x = 4$, $y = 26$. What is $y$ when $x = 10$?",
+    "numeric": {
+      "answers": [
+        "65"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$y = kx$ with $k = 26 \\div 4 = 6.5$, so $y = 6.5 \\times 10 = 65$."
+  },
+  {
+    "id": "GCSEM-T2-028",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Factorising",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Factorise fully $6x^2 + 9x$.",
+    "options": [
+      "$3(2x^2 + 3x)$",
+      "$x(6x + 9)$",
+      "$3x(2x + 9)$",
+      "$3x(2x + 3)$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The highest common factor of $6x^2$ and $9x$ is $3x$, giving $3x(2x + 3)$. $3(2x^2 + 3x)$ and $x(6x + 9)$ are equal to it but take out only part of the common factor, so they are not fully factorised."
+  },
+  {
+    "id": "GCSEM-T2-029",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Error intervals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The length of a pencil is 14 cm, correct to the nearest centimetre. Which is the error interval for the length, $l$ cm?",
+    "options": [
+      "$13.5 \\le l < 14.5$",
+      "$13.5 < l \\le 14.5$",
+      "$13 \\le l < 15$",
+      "$13.95 \\le l < 14.05$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Half a unit either side of 14 gives 13.5 to 14.5. 13.5 rounds up to 14 so it is included, but 14.5 rounds to 15 so it is not, which rules out the version with the signs swapped."
+  },
+  {
+    "id": "GCSEM-T2-030",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Speed",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A train travels at an average speed of 84 km/h for 2 hours 15 minutes. How far does it travel, in km?",
+    "numeric": {
+      "answers": [
+        "189"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "15 minutes is 0.25 hours, so the time is 2.25 hours and the distance is $84 \\times 2.25 = 189$ km."
+  },
+  {
+    "id": "GCSEM-T2-031",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Pythagoras' theorem",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A ladder 5 m long leans against a vertical wall. Its foot is on level ground, 1.4 m from the wall. How high up the wall does the ladder reach, in metres?",
+    "numeric": {
+      "answers": [
+        "4.8"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The ladder is the hypotenuse: $\\sqrt{5^2 - 1.4^2} = \\sqrt{25 - 1.96} = \\sqrt{23.04} = 4.8$ m. Adding the squares gives 5.19, longer than the ladder."
+  },
+  {
+    "id": "GCSEM-T2-032",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Mean",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The mean of four numbers is 12. Three of the numbers are 9, 15 and 10. What is the fourth number?",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The four numbers total $4 \\times 12 = 48$. The three given add to 34, so the fourth is $48 - 34 = 14$."
+  },
+  {
+    "id": "GCSEM-T2-033",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Solving linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Solve $4(x - 3) = 2x + 5$.",
+    "numeric": {
+      "answers": [
+        "8.5",
+        "17/2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Expand: $4x - 12 = 2x + 5$. Then $2x = 17$, so $x = 8.5$."
+  },
+  {
+    "id": "GCSEM-T2-034",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Cube roots",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Work out $\\sqrt[3]{12.167}$.",
+    "numeric": {
+      "answers": [
+        "2.3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Use the cube root key: $2.3 \\times 2.3 \\times 2.3 = 12.167$, so the cube root is 2.3."
+  },
+  {
+    "id": "GCSEM-T2-035",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Simple interest",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "£2500 is invested at 3% simple interest per year. How much interest is earned in 4 years, in pounds?",
+    "numeric": {
+      "answers": [
+        "300"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Each year earns $2500 \\times 0.03 = 75$ pounds, so 4 years earn $4 \\times 75 = 300$ pounds. Simple interest does not grow on itself."
+  },
+  {
+    "id": "GCSEM-T2-036",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Trigonometry",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "In a right-angled triangle, angle $x$ is 40° and the side adjacent to $x$ is 12 cm. Work out the length of the side opposite $x$, in cm, to 1 decimal place.",
+    "numeric": {
+      "answers": [
+        "10.1"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Opposite and adjacent means tangent: opposite $= 12 \\times \\tan 40° = 10.07...$, which is 10.1 cm."
+  },
+  {
+    "id": "GCSEM-T2-037",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Independent events",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The probability that a player wins a game of chess is 0.3. Games are independent. She plays two games. What is the probability that she wins both?",
+    "options": [
+      "0.09",
+      "0.3",
+      "0.6",
+      "0.9"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "For independent events, multiply: $0.3 \\times 0.3 = 0.09$. Adding gives 0.6, which is the wrong rule."
+  },
+  {
+    "id": "GCSEM-T2-038",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Quadratic graphs",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which point lies on the curve $y = x^2 - 3x$?",
+    "options": [
+      "$(2, 2)$",
+      "$(-1, 4)$",
+      "$(3, 9)$",
+      "$(4, 12)$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "When $x = -1$, $y = 1 + 3 = 4$. For the others: $x = 2$ gives $-2$, $x = 3$ gives 0 and $x = 4$ gives 4."
+  },
+  {
+    "id": "GCSEM-T2-039",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Standard form",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Work out $\\frac{7.2 \\times 10^{5}}{1.8 \\times 10^{-2}}$. Give your answer as an ordinary number.",
+    "numeric": {
+      "answers": [
+        "40000000",
+        "40,000,000"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$7.2 \\div 1.8 = 4$ and $10^5 \\div 10^{-2} = 10^{7}$, so the answer is $4 \\times 10^7 = 40\\,000\\,000$. Subtracting the powers wrongly gives $10^3$."
+  },
+  {
+    "id": "GCSEM-T2-040",
+    "section": "p2",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Pressure",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A force of 120 newtons acts on an area of 0.4 m². Work out the pressure, in N/m².",
+    "numeric": {
+      "answers": [
+        "300"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Pressure = force ÷ area $= 120 \\div 0.4 = 300$ N/m². Multiplying gives 48, which is wrong."
+  },
+  {
+    "id": "GCSEM-T2-041",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Square and cube numbers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these numbers is both a square number and a cube number?",
+    "options": [
+      "16",
+      "27",
+      "36",
+      "64"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "$64 = 8^2$ and $64 = 4^3$. 16 and 36 are square but not cube, and 27 is a cube but not a square."
+  },
+  {
+    "id": "GCSEM-T2-042",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Equivalent ratios",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which ratio is equivalent to 3 : 4?",
+    "options": [
+      "12 : 15",
+      "6 : 7",
+      "15 : 20",
+      "9 : 16"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "$3 \\times 5 = 15$ and $4 \\times 5 = 20$. 6 : 7 adds 3 to each part, which does not keep the ratio the same."
+  },
+  {
+    "id": "GCSEM-T2-043",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Algebraic vocabulary",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these is an expression, rather than an equation or a formula?",
+    "options": [
+      "$3x + 2 = 8$",
+      "$A = lw$",
+      "$x^2 = 9$",
+      "$3x + 2$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "An expression has no equals sign. $3x + 2 = 8$ and $x^2 = 9$ are equations, and $A = lw$ is a formula."
+  },
+  {
+    "id": "GCSEM-T2-044",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Symmetry",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A rhombus is not a square. How many lines of symmetry does it have?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Its two diagonals are its only lines of symmetry. A square has 4, but a rhombus that is not a square has just 2."
+  },
+  {
+    "id": "GCSEM-T2-045",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Grouped data",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "readingTable",
+    "passage": "| Time ($t$ minutes) | Frequency |\n|---|---|\n| $0 < t \\le 10$ | 4 |\n| $10 < t \\le 20$ | 11 |\n| $20 < t \\le 30$ | 8 |\n| $30 < t \\le 40$ | 2 |",
+    "stem": "The table shows how long 25 customers waited, $t$ minutes. Which is the modal class?",
+    "options": [
+      "$10 < t \\le 20$",
+      "$0 < t \\le 10$",
+      "$20 < t \\le 30$",
+      "$30 < t \\le 40$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The modal class has the highest frequency, 11, which is $10 < t \\le 20$."
+  },
+  {
+    "id": "GCSEM-T2-046",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Negative numbers",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The temperature at midnight was $-6$ °C. By noon it had risen by 11 degrees. What was the temperature at noon, in °C?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$-6 + 11 = 5$, so it was 5 °C. Answering $-17$ moves the wrong way along the scale."
+  },
+  {
+    "id": "GCSEM-T2-047",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Percentage change",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The population of a town rose from 42 000 to 45 360. Work out the percentage increase.",
+    "numeric": {
+      "answers": [
+        "8",
+        "8%"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The rise is 3360, and $\\frac{3360}{42\\,000} = 0.08 = 8\\%$."
+  },
+  {
+    "id": "GCSEM-T2-048",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Solving linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Solve $7 - 2x = 15$.",
+    "numeric": {
+      "answers": [
+        "-4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Take 7 from both sides: $-2x = 8$. Divide by $-2$: $x = -4$."
+  },
+  {
+    "id": "GCSEM-T2-049",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Lowest common multiple",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Find the lowest common multiple (LCM) of 15 and 25.",
+    "numeric": {
+      "answers": [
+        "75"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Multiples of 25 are 25, 50, 75, ... and 75 is the first that 15 divides ($15 \\times 5 = 75$). $15 \\times 25 = 375$ is a common multiple but not the lowest."
+  },
+  {
+    "id": "GCSEM-T2-050",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Proportion graphs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which graph shows that $y$ is directly proportional to $x$?",
+    "options": [
+      "A straight line crossing the $y$-axis above the origin",
+      "A straight line through the origin",
+      "A curve that falls as $x$ increases",
+      "A horizontal straight line"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Direct proportion means $y = kx$, a straight line through $(0, 0)$. A straight line that misses the origin is linear but not proportional."
+  },
+  {
+    "id": "GCSEM-T2-051",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Angles in polygons",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The interior angles of a polygon add up to 1080°. How many sides does the polygon have?",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The angle sum is $(n - 2) \\times 180$. $1080 \\div 180 = 6$, so $n - 2 = 6$ and $n = 8$. Stopping at 6 forgets the 2."
+  },
+  {
+    "id": "GCSEM-T2-052",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Probabilities sum to 1",
+    "difficulty": 2,
+    "format": "numeric",
+    "passage": "| Colour | Red | Blue | Green | Yellow |\n|---|---|---|---|---|\n| Probability | 0.35 | 0.2 | ? | 0.15 |",
+    "stem": "A biased spinner lands on one of four colours. The table shows some of the probabilities. What is the probability that it lands on green?",
+    "numeric": {
+      "answers": [
+        "0.3",
+        "3/10"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The probabilities add up to 1: $1 - (0.35 + 0.2 + 0.15) = 1 - 0.7 = 0.3$."
+  },
+  {
+    "id": "GCSEM-T2-053",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Parallel lines",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which line is parallel to $y = 2x + 7$?",
+    "options": [
+      "$y = 7x + 2$",
+      "$y = -2x + 7$",
+      "$y = 2x - 3$",
+      "$y = \\frac{1}{2}x + 7$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Parallel lines have the same gradient, the number in front of $x$. Only $y = 2x - 3$ also has gradient 2."
+  },
+  {
+    "id": "GCSEM-T2-054",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Fractions to percentages",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Write $\\frac{7}{20}$ as a percentage.",
+    "options": [
+      "0.35%",
+      "7%",
+      "20%",
+      "35%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "$\\frac{7}{20} = \\frac{35}{100} = 35\\%$. 0.35 is the decimal, not the percentage."
+  },
+  {
+    "id": "GCSEM-T2-055",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Ratio problems",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In a class the ratio of boys to girls is 4 : 5. There are 12 boys. How many students are in the class altogether?",
+    "numeric": {
+      "answers": [
+        "27"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "4 parts are 12, so 1 part is 3. The class has $9 \\times 3 = 27$ students."
+  },
+  {
+    "id": "GCSEM-T2-056",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Enlargement",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Triangle A has sides of 4 cm, 6 cm and 7 cm. It is enlarged by scale factor 2.5. How long is the longest side of the enlarged triangle, in cm?",
+    "numeric": {
+      "answers": [
+        "17.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Every length is multiplied by 2.5, so the longest side is $7 \\times 2.5 = 17.5$ cm."
+  },
+  {
+    "id": "GCSEM-T2-057",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Sample spaces",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Two fair six-sided dice are rolled and their scores are added. What is the probability that the total is 7? Give your answer as a fraction.",
+    "numeric": {
+      "answers": [
+        "1/6",
+        "6/36"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "Of the 36 equally likely outcomes, 6 give 7 (1+6, 2+5, 3+4, 4+3, 5+2, 6+1), so the probability is $\\frac{6}{36} = \\frac{1}{6}$."
+  },
+  {
+    "id": "GCSEM-T2-058",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Forming equations",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The sum of three consecutive whole numbers is 72. What is the largest of the three numbers?",
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Call them $n$, $n + 1$ and $n + 2$: $3n + 3 = 72$, so $n = 23$ and the largest is 25. Dividing 72 by 3 gives the middle number, 24."
+  },
+  {
+    "id": "GCSEM-T2-059",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Product rule for counting",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A code is one letter from A, B, C, D or E followed by two digits from 0 to 9. Digits can repeat. How many different codes are possible?",
+    "numeric": {
+      "answers": [
+        "500"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "There are 5 choices for the letter and 10 for each digit, so $5 \\times 10 \\times 10 = 500$ codes."
+  },
+  {
+    "id": "GCSEM-T2-060",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Depreciation",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A car loses 15% of its value each year. It is worth £12 000 now. What will it be worth after 2 years, in pounds?",
+    "numeric": {
+      "answers": [
+        "8670"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Multiply by 0.85 twice: $12\\,000 \\times 0.85^2 = 8670$ pounds. Taking 30% off at once gives 8400, which ignores that the second fall is on a smaller value."
+  },
+  {
+    "id": "GCSEM-D-001",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Negative numbers",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "negativeNumbers",
+    "stem": "Work out $-3 \\times -5$.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "A negative times a negative is positive, so $-3 \\times -5 = 15$."
+  },
+  {
+    "id": "GCSEM-D-002",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Substitution",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "Work out $5m + 3$ when $m = 4$.",
+    "numeric": {
+      "answers": [
+        "23"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "$5 \\times 4 = 20$, then add 3 to get 23. Writing 543 or 57 treats $5m$ as digits side by side."
+  },
+  {
+    "id": "GCSEM-D-003",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Negative numbers",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "negativeNumbers",
+    "stem": "Work out $4 - (-9)$.",
+    "numeric": {
+      "answers": [
+        "13"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Subtracting a negative is the same as adding, so $4 + 9 = 13$. Answering $-5$ treats it as $4 - 9$."
+  },
+  {
+    "id": "GCSEM-D-004",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Substitution",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "Work out $p^2 - 2q$ when $p = 6$ and $q = 5$.",
+    "numeric": {
+      "answers": [
+        "26"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "$p^2 = 36$ and $2q = 10$, so $36 - 10 = 26$."
+  },
+  {
+    "id": "GCSEM-D-005",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Order of operations",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "orderOfOperations",
+    "stem": "Work out $20 - 2 \\times (3 + 4)$.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Brackets first: $3 + 4 = 7$. Then $2 \\times 7 = 14$, and $20 - 14 = 6$. Working left to right gives 126."
+  },
+  {
+    "id": "GCSEM-D-006",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Collecting like terms",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Simplify $3a + 5b - 7a + b$.",
+    "options": [
+      "$4a + 6b$",
+      "$-4a + 5b$",
+      "$10a + 6b$",
+      "$-4a + 6b$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": false,
+    "explanation": "$3a - 7a = -4a$ and $5b + b = 6b$. A lone $b$ counts as $1b$, so $5b$ is wrong."
+  },
+  {
+    "id": "GCSEM-D-007",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Order of operations",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "orderOfOperations",
+    "stem": "Work out $5 + 3^2 \\times 2$.",
+    "options": [
+      "17",
+      "23",
+      "28",
+      "128"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": false,
+    "explanation": "Indices first ($3^2 = 9$), then multiply ($9 \\times 2 = 18$), then add: $5 + 18 = 23$. Adding first gives 28."
+  },
+  {
+    "id": "GCSEM-D-008",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Expanding brackets",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Expand $5(3y + 2)$.",
+    "options": [
+      "$15y + 10$",
+      "$15y + 2$",
+      "$8y + 7$",
+      "$3y + 10$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": false,
+    "explanation": "Multiply both terms inside the bracket by 5: $15y + 10$."
+  },
+  {
+    "id": "GCSEM-D-009",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Multiplying decimals",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "decimals",
+    "stem": "Work out $0.3 \\times 0.2$.",
+    "numeric": {
+      "answers": [
+        "0.06"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "$3 \\times 2 = 6$, and there are two decimal places in the question, so the answer is 0.06, not 0.6."
+  },
+  {
+    "id": "GCSEM-D-010",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Solving linear equations",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve $4x + 9 = 33$.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Take 9 from both sides ($4x = 24$), then divide by 4: $x = 6$."
+  },
+  {
+    "id": "GCSEM-D-011",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Dividing decimals",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "decimals",
+    "stem": "Work out $7.5 \\div 0.25$.",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Multiply both numbers by 100 to get $750 \\div 25 = 30$. Dividing by a number less than 1 makes the answer bigger."
+  },
+  {
+    "id": "GCSEM-D-012",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Solving linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve $3(x - 2) = 21$.",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Divide both sides by 3 ($x - 2 = 7$), then add 2: $x = 9$."
+  },
+  {
+    "id": "GCSEM-D-013",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Subtracting fractions",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "fractionOps",
+    "stem": "Work out $\\frac{3}{5} - \\frac{1}{3}$. Give your answer as a fraction.",
+    "numeric": {
+      "answers": [
+        "4/15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Use a common denominator of 15: $\\frac{9}{15} - \\frac{5}{15} = \\frac{4}{15}$. Subtracting tops and bottoms gives $\\frac{2}{2}$, which is wrong."
+  },
+  {
+    "id": "GCSEM-D-014",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Solving linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "Solve $6x - 5 = 2x + 15$.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Take $2x$ from both sides ($4x - 5 = 15$), add 5 ($4x = 20$) and divide by 4: $x = 5$."
+  },
+  {
+    "id": "GCSEM-D-015",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Dividing fractions",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "fractionOps",
+    "stem": "Work out $\\frac{5}{6} \\div \\frac{2}{3}$. Give your answer as a decimal or a top-heavy fraction such as 7/4.",
+    "numeric": {
+      "answers": [
+        "5/4",
+        "1.25"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Flip the second fraction and multiply: $\\frac{5}{6} \\times \\frac{3}{2} = \\frac{15}{12} = \\frac{5}{4} = 1\\frac{1}{4}$."
+  },
+  {
+    "id": "GCSEM-D-016",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Expanding double brackets",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Expand and simplify $(x + 6)(x - 2)$.",
+    "options": [
+      "$x^2 - 4x - 12$",
+      "$x^2 + 4x - 12$",
+      "$x^2 + 4x + 12$",
+      "$x^2 - 12$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": false,
+    "explanation": "$x^2 - 2x + 6x - 12 = x^2 + 4x - 12$. Leaving out the middle terms gives $x^2 - 12$."
+  },
+  {
+    "id": "GCSEM-D-017",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Highest common factor",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "gcfLcm",
+    "stem": "Find the highest common factor (HCF) of 36 and 60.",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "The factors of 36 that also divide 60 are 1, 2, 3, 4, 6 and 12, so the highest is 12."
+  },
+  {
+    "id": "GCSEM-D-018",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Factorising quadratics",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Factorise $x^2 + 8x + 15$.",
+    "options": [
+      "$(x + 1)(x + 15)$",
+      "$(x - 3)(x - 5)$",
+      "$(x + 3)(x + 5)$",
+      "$(x + 2)(x + 6)$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": false,
+    "explanation": "Find two numbers that multiply to 15 and add to 8: 3 and 5. $(x + 1)(x + 15)$ has the right product but adds to 16."
+  },
+  {
+    "id": "GCSEM-D-019",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Lowest common multiple",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "gcfLcm",
+    "stem": "Find the lowest common multiple (LCM) of 8 and 14.",
+    "numeric": {
+      "answers": [
+        "56"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Multiples of 14 are 14, 28, 42, 56, ... and 56 is the first that 8 divides. $8 \\times 14 = 112$ is a common multiple but not the lowest."
+  },
+  {
+    "id": "GCSEM-D-020",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Factorising",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Factorise $10x - 15$.",
+    "options": [
+      "$5(2x - 15)$",
+      "$10(x - 5)$",
+      "$2(5x - 15)$",
+      "$5(2x - 3)$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": false,
+    "explanation": "The highest common factor of 10 and 15 is 5: $5(2x - 3)$. Multiply back out to check: $10x - 15$."
+  },
+  {
+    "id": "GCSEM-D-021",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Prime factors",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "gcfLcm",
+    "stem": "Write 72 as a product of prime factors in index form.",
+    "options": [
+      "$2^3 \\times 3^2$",
+      "$2^2 \\times 3^3$",
+      "$2^3 \\times 9$",
+      "$8 \\times 9$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": false,
+    "explanation": "$72 = 2 \\times 2 \\times 2 \\times 3 \\times 3 = 2^3 \\times 3^2$. $2^2 \\times 3^3$ is 108, and the other two use numbers that are not prime."
+  },
+  {
+    "id": "GCSEM-D-022",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Linear inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Solve $2x - 3 \\le 9$.",
+    "options": [
+      "$x \\ge 6$",
+      "$x \\le 6$",
+      "$x \\le 3$",
+      "$x < 6$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": false,
+    "explanation": "Add 3 ($2x \\le 12$), then divide by 2: $x \\le 6$. The sign keeps its 'or equal to' part."
+  },
+  {
+    "id": "GCSEM-D-023",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Significant figures",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Round 3862 to 2 significant figures.",
+    "numeric": {
+      "answers": [
+        "3900"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Keep the 3 and the 8, then look at the next digit, 6, and round up to 3900. Writing 39 changes the size of the number."
+  },
+  {
+    "id": "GCSEM-D-024",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Integer solutions",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "$n$ is an integer and $-2 < n \\le 3$. Which list shows every possible value of $n$?",
+    "options": [
+      "$-2, -1, 0, 1, 2, 3$",
+      "$-1, 0, 1, 2$",
+      "$-1, 0, 1, 2, 3$",
+      "$-2, -1, 0, 1, 2$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": false,
+    "explanation": "$-2 < n$ leaves out $-2$, and $n \\le 3$ includes 3, so the integers are $-1, 0, 1, 2, 3$."
+  },
+  {
+    "id": "GCSEM-D-025",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Estimation",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "rounding",
+    "stem": "Estimate $\\frac{61 \\times 4.9}{0.52}$ by rounding each number to 1 significant figure.",
+    "numeric": {
+      "answers": [
+        "600"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Round to $\\frac{60 \\times 5}{0.5} = \\frac{300}{0.5} = 600$. Dividing by 0.5 doubles, so halving to 150 is wrong."
+  },
+  {
+    "id": "GCSEM-D-026",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Laws of indices",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Simplify $x^5 \\times x^3$.",
+    "options": [
+      "$x^{15}$",
+      "$x^2$",
+      "$2x^8$",
+      "$x^8$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": false,
+    "explanation": "Multiplying powers of the same letter adds the indices: $5 + 3 = 8$. Multiplying them gives $x^{15}$, which is wrong."
+  },
+  {
+    "id": "GCSEM-D-027",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Square and cube roots",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "squareRoots",
+    "stem": "Work out $\\sqrt{144} + \\sqrt[3]{125}$.",
+    "numeric": {
+      "answers": [
+        "17"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "$\\sqrt{144} = 12$ because $12^2 = 144$, and $\\sqrt[3]{125} = 5$ because $5^3 = 125$. So the total is 17."
+  },
+  {
+    "id": "GCSEM-D-028",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Laws of indices",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Simplify $\\frac{y^9}{y^3}$.",
+    "options": [
+      "$y^6$",
+      "$y^3$",
+      "$y^{12}$",
+      "$y^{27}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": false,
+    "explanation": "Dividing powers of the same letter subtracts the indices: $9 - 3 = 6$. Dividing them gives $y^3$, which is wrong."
+  },
+  {
+    "id": "GCSEM-D-029",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Laws of indices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Write $5^7 \\times 5^3$ as a single power of 5.",
+    "options": [
+      "$5^{21}$",
+      "$5^{10}$",
+      "$25^{10}$",
+      "$5^{4}$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": false,
+    "explanation": "When multiplying powers of the same number, add the indices: $7 + 3 = 10$. Multiplying the indices gives $5^{21}$, which is wrong."
+  },
+  {
+    "id": "GCSEM-D-030",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Gradient",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "slope",
+    "stem": "What is the gradient of the line $y = 5 - 3x$?",
+    "numeric": {
+      "answers": [
+        "-3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "The gradient is the number multiplying $x$, which is $-3$ here. 5 is where the line crosses the $y$-axis."
+  },
+  {
+    "id": "GCSEM-D-031",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Standard form",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Work out $(3 \\times 10^{4}) \\times (5 \\times 10^{2})$. Give your answer in standard form.",
+    "options": [
+      "$15 \\times 10^{6}$",
+      "$1.5 \\times 10^{6}$",
+      "$1.5 \\times 10^{7}$",
+      "$8 \\times 10^{6}$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": false,
+    "explanation": "$3 \\times 5 = 15$ and $10^4 \\times 10^2 = 10^6$, giving $15 \\times 10^6 = 1.5 \\times 10^7$. $15 \\times 10^6$ is the right value but not standard form."
+  },
+  {
+    "id": "GCSEM-D-032",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Types of sequence",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The first five terms of a sequence are 2, 6, 18, 54, 162. What type of sequence is it?",
+    "options": [
+      "Arithmetic",
+      "Fibonacci-type",
+      "Quadratic",
+      "Geometric"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": false,
+    "explanation": "Each term is 3 times the one before, so it is geometric. An arithmetic sequence adds the same number each time, and these differences (4, 12, 36...) are not equal."
+  },
+  {
+    "id": "GCSEM-D-033",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseNumber",
+    "skill": "Error intervals",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A length is 7.2 m, rounded to 1 decimal place. What is the upper bound of the length, in metres?",
+    "numeric": {
+      "answers": [
+        "7.25"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Lengths from 7.15 m up to 7.25 m round to 7.2 m, so the upper bound is 7.25 m. 7.3 m would round to 7.3."
+  },
+  {
+    "id": "GCSEM-D-034",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseAlgebra",
+    "skill": "Simultaneous equations",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "systems",
+    "stem": "Solve the simultaneous equations $3x + 2y = 16$ and $x + 2y = 8$. What is the value of $y$?",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": false,
+    "explanation": "Subtract the second equation from the first: $2x = 8$, so $x = 4$. Then $4 + 2y = 8$, so $y = 2$."
+  },
+  {
+    "id": "GCSEM-D-035",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Fractions to percentages",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "fractionConvert",
+    "stem": "Write $\\frac{3}{5}$ as a percentage.",
+    "options": [
+      "60%",
+      "35%",
+      "53%",
+      "0.6%"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "$\\frac{3}{5} = \\frac{60}{100} = 60\\%$. 0.6 is the decimal, so 0.6% is 100 times too small."
+  },
+  {
+    "id": "GCSEM-D-036",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Percentage of an amount",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "Find 20% of £45, in pounds.",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "10% of 45 is 4.5, so 20% is 9 pounds."
+  },
+  {
+    "id": "GCSEM-D-037",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Percentage of an amount",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "Find 5% of 260.",
+    "numeric": {
+      "answers": [
+        "13"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "10% of 260 is 26, and 5% is half of that: 13."
+  },
+  {
+    "id": "GCSEM-D-038",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Converting units",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "unitConversion",
+    "stem": "Change 4500 millilitres into litres.",
+    "numeric": {
+      "answers": [
+        "4.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "There are 1000 ml in a litre, so $4500 \\div 1000 = 4.5$ litres."
+  },
+  {
+    "id": "GCSEM-D-039",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Converting units",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "unitConversion",
+    "stem": "How many minutes are there in 2.4 hours?",
+    "numeric": {
+      "answers": [
+        "144"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$2.4 \\times 60 = 144$ minutes. Reading 2.4 hours as 2 hours 40 minutes gives 160, which is wrong."
+  },
+  {
+    "id": "GCSEM-D-040",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Simplifying ratios",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "ratios",
+    "stem": "Write the ratio 18 : 12 in its simplest form.",
+    "options": [
+      "2 : 3",
+      "3 : 2",
+      "9 : 6",
+      "6 : 4"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Divide both parts by 6 to get 3 : 2. The order matters, so 2 : 3 is the wrong way round."
+  },
+  {
+    "id": "GCSEM-D-041",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Sharing in a ratio",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "Share 72 sweets in the ratio 5 : 3. How many sweets are in the larger share?",
+    "numeric": {
+      "answers": [
+        "45"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "There are 8 parts, so one part is 9. The larger share is $5 \\times 9 = 45$."
+  },
+  {
+    "id": "GCSEM-D-042",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Ratio problems",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "Orange squash is mixed with water in the ratio 1 : 4. How much squash is in 750 ml of the drink, in ml?",
+    "numeric": {
+      "answers": [
+        "150"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "There are 5 parts, so one part is $750 \\div 5 = 150$ ml of squash. Dividing by 4 forgets the squash is one of the parts."
+  },
+  {
+    "id": "GCSEM-D-043",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Percentage increase",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "Increase 60 by 15%.",
+    "numeric": {
+      "answers": [
+        "69"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "15% of 60 is $6 + 3 = 9$, so the new amount is 69."
+  },
+  {
+    "id": "GCSEM-D-044",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Percentage change",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "percentChange",
+    "stem": "A phone's price drops from £250 to £200. What is the percentage decrease?",
+    "numeric": {
+      "answers": [
+        "20",
+        "20%"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The drop is 50, and $\\frac{50}{250} = 20\\%$. Dividing by 200 gives 25%, which uses the wrong starting value."
+  },
+  {
+    "id": "GCSEM-D-045",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Percentage change",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "percentChange",
+    "stem": "A plant grows from 40 cm to 52 cm tall. What is the percentage increase?",
+    "numeric": {
+      "answers": [
+        "30",
+        "30%"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "It grows 12 cm, and $\\frac{12}{40} = 30\\%$."
+  },
+  {
+    "id": "GCSEM-D-046",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Speed, distance and time",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "rateProblems",
+    "stem": "A cyclist rides 36 km at an average speed of 12 km/h. How many hours does the ride take?",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Time = distance ÷ speed $= 36 \\div 12 = 3$ hours."
+  },
+  {
+    "id": "GCSEM-D-047",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Speed, distance and time",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "rateProblems",
+    "stem": "A runner keeps a steady speed of 4 m/s. How far does she run in 3 minutes, in metres?",
+    "numeric": {
+      "answers": [
+        "720"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "3 minutes is 180 seconds, so the distance is $4 \\times 180 = 720$ m. Using 3 seconds gives 12, which is wrong."
+  },
+  {
+    "id": "GCSEM-D-048",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Best buys",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "ratios",
+    "stem": "Which pack of pens is the best value?",
+    "options": [
+      "5 pens for £2",
+      "10 pens for £4.20",
+      "8 pens for £3",
+      "12 pens for £4.80"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Price per pen: 37.5p, 40p, 42p and 40p. The 8-pen pack is cheapest per pen, so it is the best value."
+  },
+  {
+    "id": "GCSEM-D-049",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Inverse proportion",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "ratios",
+    "stem": "6 machines fill an order in 10 hours. How many hours would 4 machines take, working at the same rate?",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The order takes $6 \\times 10 = 60$ machine-hours, so 4 machines take $60 \\div 4 = 15$ hours."
+  },
+  {
+    "id": "GCSEM-D-050",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Reverse percentages",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "In a sale, prices are reduced by 25%. A jacket costs £48 in the sale. What was its price before the sale, in pounds?",
+    "numeric": {
+      "answers": [
+        "64"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "£48 is 75% of the old price. 25% is 16, so 100% is 64 pounds. Adding 25% of 48 gives 60, which is wrong."
+  },
+  {
+    "id": "GCSEM-D-051",
+    "section": "p2",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseRatio",
+    "skill": "Compound interest",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "percents",
+    "stem": "£800 is invested at 5% compound interest per year. What is it worth after 2 years, in pounds?",
+    "numeric": {
+      "answers": [
+        "882"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "After 1 year: $800 + 40 = 840$. After 2 years: $840 + 42 = 882$ pounds. Simple interest would give 880."
+  },
+  {
+    "id": "GCSEM-D-052",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Angles in a triangle",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "triangleAngles",
+    "stem": "A triangle has angles of 90° and 34°. What is the third angle, in degrees?",
+    "numeric": {
+      "answers": [
+        "56"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$180 - 90 - 34 = 56$°."
+  },
+  {
+    "id": "GCSEM-D-053",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Median",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "Find the median of 3, 8, 5, 12, 6.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Put them in order: 3, 5, 6, 8, 12. The middle value is 6. Taking the middle of the unsorted list gives 5, which is wrong."
+  },
+  {
+    "id": "GCSEM-D-054",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Isosceles triangles",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "triangleAngles",
+    "stem": "In an isosceles triangle, the angle between the two equal sides is 40°. What size is each of the other two angles?",
+    "options": [
+      "40°",
+      "50°",
+      "70°",
+      "140°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The other two angles are equal and share $180 - 40 = 140$°, so each is 70°."
+  },
+  {
+    "id": "GCSEM-D-055",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Range",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "Find the range of 14, 9, 21, 6, 17.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Range = highest − lowest $= 21 - 6 = 15$."
+  },
+  {
+    "id": "GCSEM-D-056",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Angles around a point",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Three angles meet at a point. Two of them are 110° and 95°. What is the third angle, in degrees?",
+    "numeric": {
+      "answers": [
+        "155"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Angles around a point add up to 360°: $360 - 110 - 95 = 155$°. Using 180° gives a negative angle."
+  },
+  {
+    "id": "GCSEM-D-057",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Mean",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "Find the mean of 12, 15, 9 and 20.",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The total is 56, and $56 \\div 4 = 14$."
+  },
+  {
+    "id": "GCSEM-D-058",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Area and perimeter",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "areaPerimeter",
+    "stem": "A square has a perimeter of 36 cm. What is its area, in cm²?",
+    "numeric": {
+      "answers": [
+        "81"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Each side is $36 \\div 4 = 9$ cm, so the area is $9 \\times 9 = 81$ cm²."
+  },
+  {
+    "id": "GCSEM-D-059",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Averages",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "meanMedian",
+    "stem": "What is the mode of 6, 9, 6, 2, 9, 9, 4?",
+    "options": [
+      "2",
+      "6",
+      "7",
+      "9"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "9 appears three times, more than any other value. 6 is the median and 7 is the range."
+  },
+  {
+    "id": "GCSEM-D-060",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Area of a parallelogram",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "areaPerimeter",
+    "stem": "A parallelogram has a base of 9 cm and a perpendicular height of 4 cm. What is its area, in cm²?",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Area = base × perpendicular height $= 9 \\times 4 = 36$ cm². There is no half, unlike a triangle."
+  },
+  {
+    "id": "GCSEM-D-061",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Median",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "Find the median of 10, 4, 7, 15, 2, 9.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "In order: 2, 4, 7, 9, 10, 15. The middle two are 7 and 9, so the median is 8."
+  },
+  {
+    "id": "GCSEM-D-062",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Compound shapes",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "areaPerimeter",
+    "stem": "An L-shaped room is made of two rectangles: one 6 m by 4 m and one 3 m by 2 m. What is the total floor area?",
+    "options": [
+      "24 m²",
+      "28 m²",
+      "30 m²",
+      "34 m²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "$6 \\times 4 = 24$ and $3 \\times 2 = 6$, so the total is 30 m²."
+  },
+  {
+    "id": "GCSEM-D-063",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Mean",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "meanMedian",
+    "stem": "The mean of five numbers is 8. Four of them are 6, 11, 5 and 9. What is the fifth number?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Five numbers with mean 8 total 40. The four given add to 31, so the fifth is 9."
+  },
+  {
+    "id": "GCSEM-D-064",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Circumference",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "circleBasics",
+    "stem": "A circle has a radius of 5 cm. Work out its circumference, in cm, to 1 decimal place.",
+    "numeric": {
+      "answers": [
+        "31.4"
+      ],
+      "tolerance": 0.05
+    },
+    "calculator": true,
+    "explanation": "Circumference $= 2\\pi r = 10\\pi = 31.41...$, which is 31.4 cm."
+  },
+  {
+    "id": "GCSEM-D-065",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Probability scale",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which probability describes an event that is certain to happen?",
+    "options": [
+      "0",
+      "0.5",
+      "100",
+      "1"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Probabilities run from 0 (impossible) to 1 (certain). 100 would only make sense as 100%."
+  },
+  {
+    "id": "GCSEM-D-066",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Area of a circle",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "circleBasics",
+    "stem": "A circle has a diameter of 10 cm. Which expression gives its area in cm²?",
+    "options": [
+      "$25\\pi$",
+      "$100\\pi$",
+      "$10\\pi$",
+      "$20\\pi$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The radius is 5 cm, so the area is $\\pi \\times 5^2 = 25\\pi$. Using the diameter in $\\pi r^2$ gives $100\\pi$."
+  },
+  {
+    "id": "GCSEM-D-067",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Probability",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "probabilityTable",
+    "stem": "A bag holds 4 red and 6 yellow beads. One bead is picked at random. What is the probability that it is red? Give your answer as a fraction or a decimal.",
+    "numeric": {
+      "answers": [
+        "2/5",
+        "0.4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "There are 10 beads and 4 are red, so the probability is $\\frac{4}{10} = \\frac{2}{5}$. $\\frac{4}{6}$ compares red with yellow, which is a ratio, not a probability."
+  },
+  {
+    "id": "GCSEM-D-068",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Volume of a cube",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "volume",
+    "stem": "A cube has edges of 4 cm. What is its volume, in cm³?",
+    "numeric": {
+      "answers": [
+        "64"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$4 \\times 4 \\times 4 = 64$ cm³. 48 is $4 \\times 12$, which is not a volume."
+  },
+  {
+    "id": "GCSEM-D-069",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Two-way tables",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "probabilityTable",
+    "passage": "| | Walk | Bus | Total |\n|---|---|---|---|\n| Year 10 | 18 | 12 | 30 |\n| Year 11 | 14 | 16 | 30 |\n| Total | 32 | 28 | 60 |",
+    "stem": "The table shows how 60 students travel to school. One student is chosen at random. What is the probability that the student is in Year 11 and takes the bus? Give your answer as a fraction.",
+    "numeric": {
+      "answers": [
+        "4/15",
+        "16/60"
+      ],
+      "tolerance": 0.001
+    },
+    "calculator": true,
+    "explanation": "16 of the 60 students are in Year 11 and take the bus, so the probability is $\\frac{16}{60} = \\frac{4}{15}$. $\\frac{16}{30}$ is out of Year 11 only."
+  },
+  {
+    "id": "GCSEM-D-070",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Volume of a prism",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "volume",
+    "stem": "A prism is 10 cm long. Its cross-section is a triangle with base 6 cm and height 4 cm. What is its volume, in cm³?",
+    "numeric": {
+      "answers": [
+        "120"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The cross-section has area $\\frac{1}{2} \\times 6 \\times 4 = 12$ cm², so the volume is $12 \\times 10 = 120$ cm³."
+  },
+  {
+    "id": "GCSEM-D-071",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Mode from a frequency table",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "readingTable",
+    "passage": "| Shoe size | Frequency |\n|---|---|\n| 5 | 3 |\n| 6 | 7 |\n| 7 | 6 |\n| 8 | 4 |",
+    "stem": "The table shows the shoe sizes of 20 people. What is the modal shoe size?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Size 6 has the highest frequency, 7. Answering 7 picks the frequency instead of the shoe size."
+  },
+  {
+    "id": "GCSEM-D-072",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Surface area",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "areaPerimeter",
+    "stem": "A cuboid measures 5 cm by 3 cm by 2 cm. What is its total surface area, in cm²?",
+    "numeric": {
+      "answers": [
+        "62"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "There are two faces of each size: $2(15 + 10 + 6) = 62$ cm². 30 is the volume, not the surface area."
+  },
+  {
+    "id": "GCSEM-D-073",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Median from a frequency table",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "readingTable",
+    "passage": "| Shoe size | Frequency |\n|---|---|\n| 5 | 3 |\n| 6 | 7 |\n| 7 | 6 |\n| 8 | 4 |",
+    "stem": "The table shows the shoe sizes of 20 people. What is the median shoe size?",
+    "numeric": {
+      "answers": [
+        "6.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The median is halfway between the 10th and 11th values. The first 3 are size 5 and the next 7 are size 6 (up to the 10th), so the 10th is 6 and the 11th is 7. The median is 6.5."
+  },
+  {
+    "id": "GCSEM-D-074",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Pythagoras' theorem",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "pythagorean",
+    "stem": "A right-angled triangle has shorter sides of 6 cm and 8 cm. How long is the hypotenuse, in cm?",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$6^2 + 8^2 = 100$, and $\\sqrt{100} = 10$ cm."
+  },
+  {
+    "id": "GCSEM-D-075",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Mean from a frequency table",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "readingTable",
+    "passage": "| Goals | Frequency |\n|---|---|\n| 0 | 4 |\n| 1 | 6 |\n| 2 | 7 |\n| 3 | 3 |",
+    "stem": "The table shows the number of goals scored in 20 football matches. Work out the mean number of goals per match.",
+    "numeric": {
+      "answers": [
+        "1.45"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Total goals: $0 \\times 4 + 1 \\times 6 + 2 \\times 7 + 3 \\times 3 = 29$. $29 \\div 20 = 1.45$."
+  },
+  {
+    "id": "GCSEM-D-076",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Pythagoras' theorem",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "pythagorean",
+    "stem": "A right-angled triangle has a hypotenuse of 13 cm and one shorter side of 5 cm. How long is the other shorter side, in cm?",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Subtract the squares: $13^2 - 5^2 = 169 - 25 = 144$, and $\\sqrt{144} = 12$ cm."
+  },
+  {
+    "id": "GCSEM-D-077",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Correlation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scatter graph of height against shoe size for 30 adults shows that taller adults tend to have larger feet. What type of correlation is this?",
+    "options": [
+      "Negative correlation",
+      "Positive correlation",
+      "No correlation",
+      "Inverse proportion"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Both values go up together, so the correlation is positive. Negative correlation would mean taller people had smaller feet."
+  },
+  {
+    "id": "GCSEM-D-078",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Trigonometric ratios",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "sohcahtoa",
+    "stem": "In a right-angled triangle, which ratio gives $\\tan x$?",
+    "options": [
+      "adjacent ÷ opposite",
+      "opposite ÷ hypotenuse",
+      "opposite ÷ adjacent",
+      "adjacent ÷ hypotenuse"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "TOA: tan = opposite ÷ adjacent. Opposite ÷ hypotenuse is sine and adjacent ÷ hypotenuse is cosine."
+  },
+  {
+    "id": "GCSEM-D-079",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Relative frequency",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A biased coin lands on heads 32 times in 80 throws. What is the relative frequency of heads? Give your answer as a fraction or a decimal.",
+    "numeric": {
+      "answers": [
+        "0.4",
+        "2/5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Relative frequency = number of heads ÷ number of throws $= \\frac{32}{80} = 0.4$."
+  },
+  {
+    "id": "GCSEM-D-080",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Exact trigonometric values",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "sohcahtoa",
+    "stem": "Without a calculator, what is the exact value of sin 30°? Give your answer as a fraction or a decimal.",
+    "numeric": {
+      "answers": [
+        "1/2",
+        "0.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "In half of an equilateral triangle with side 2, the side opposite 30° is 1 and the hypotenuse is 2, so sin 30° $= \\frac{1}{2}$."
+  },
+  {
+    "id": "GCSEM-D-081",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Expected outcomes",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The probability that a seed grows is 0.85. 300 seeds are planted. How many would you expect to grow?",
+    "numeric": {
+      "answers": [
+        "255"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Expected number = probability × number of trials $= 0.85 \\times 300 = 255$."
+  },
+  {
+    "id": "GCSEM-D-082",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Bearings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the three-figure bearing of due west?",
+    "options": [
+      "090°",
+      "180°",
+      "270°",
+      "360°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Bearings are measured clockwise from north: east is 090°, south 180° and west 270°."
+  },
+  {
+    "id": "GCSEM-D-083",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Pie charts",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In a pie chart, a sector of 120° stands for 72 people. How many people does the whole pie chart stand for?",
+    "numeric": {
+      "answers": [
+        "216"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "120° is one third of 360°, so the whole chart is $72 \\times 3 = 216$ people."
+  },
+  {
+    "id": "GCSEM-D-084",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Exterior angles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the size of each exterior angle of a regular pentagon?",
+    "options": [
+      "36°",
+      "72°",
+      "108°",
+      "540°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Exterior angles add up to 360°, so each is $360 \\div 5 = 72$°. 108° is the interior angle."
+  },
+  {
+    "id": "GCSEM-D-085",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Venn diagrams",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "In a class of 28 students, 15 have a cat, 10 have a dog and 6 have neither. How many students have both a cat and a dog?",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "$28 - 6 = 22$ students have a cat, a dog or both. $15 + 10 = 25$ counts the 'both' group twice, so $25 - 22 = 3$ have both."
+  },
+  {
+    "id": "GCSEM-D-086",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseGeometry",
+    "skill": "Reflections",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The point $(3, 5)$ is reflected in the $y$-axis. What are the coordinates of its image?",
+    "options": [
+      "$(3, -5)$",
+      "$(-3, -5)$",
+      "$(5, 3)$",
+      "$(-3, 5)$"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Reflecting in the $y$-axis changes the sign of the $x$-coordinate only. $(3, -5)$ is a reflection in the $x$-axis."
+  },
+  {
+    "id": "GCSEM-D-087",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "gcseStats",
+    "skill": "Independent events",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A fair coin is thrown and a fair six-sided dice is rolled. What is the probability of getting a head and a 6?",
+    "options": [
+      "$\\frac{1}{12}$",
+      "$\\frac{1}{8}$",
+      "$\\frac{7}{12}$",
+      "$\\frac{2}{3}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Multiply the independent probabilities: $\\frac{1}{2} \\times \\frac{1}{6} = \\frac{1}{12}$. Adding them gives $\\frac{2}{3}$, which is the wrong rule."
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "id": "uk18ed",
+  "stateCode": "UK18ED",
+  "idBase": 7800,
+  "prefix": "UK18ED-",
+  "slug": "/18th-edition",
+  "landingPath": "/18th-edition-practice-test",
+  "dataFile": "data/uk-18th-edition-questions.json",
+  "name": "18th Edition Practice Test",
+  "shortName": "18th Edition",
+  "examLabel": "18th Edition exam",
+  "fullName": "City & Guilds 2382-26 18th Edition IET Wiring Regulations (BS 7671:2018+A4:2026) exam",
+  "icon": "hardhat",
+  "passPct": 60,
+  "categories": [
+    {"key": "uk18edScope", "label": "Scope, Object & Fundamental Principles", "perTest": 3, "segment": "SCP"},
+    {"key": "uk18edDefinitions", "label": "Definitions", "perTest": 2, "segment": "DEF"},
+    {"key": "uk18edAssessment", "label": "Assessment of General Characteristics", "perTest": 5, "segment": "ASM"},
+    {"key": "uk18edProtection", "label": "Protection for Safety", "perTest": 13, "segment": "PRO"},
+    {"key": "uk18edSelection", "label": "Selection & Erection", "perTest": 12, "segment": "SEL"},
+    {"key": "uk18edInspection", "label": "Inspection & Testing", "perTest": 3, "segment": "INS"},
+    {"key": "uk18edSpecial", "label": "Special Installations & Locations", "perTest": 6, "segment": "SPL"},
+    {"key": "uk18edAppendices", "label": "Part 8 & Appendices", "perTest": 6, "segment": "APX"}
+  ],
+  "trainingSets": "testSets(7800, 4)",
+  "hubGroup": "UK workplace and trade certificates (new)"
+}

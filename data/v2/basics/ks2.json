@@ -1,0 +1,1667 @@
+[
+ {
+  "id": "ks2Retrieval",
+  "name": "Find it in the text",
+  "sub": "Retrieval questions",
+  "rule": "A retrieval question asks what the text actually says. The answer is written there; your job is to find it, not to remember or guess.",
+  "trick": "Find the key word from the question in the text, then read the sentence around it. Put your finger on the words that prove your answer.",
+  "examples": [
+   {
+    "kind": "good",
+    "text": "Where did Kai hide the map? Under the loose floorboard.",
+    "note": "Finger on: 'he slid the map under the loose floorboard'."
+   },
+   {
+    "kind": "bad",
+    "text": "Where did Kai hide the map? In his bag.",
+    "note": "It sounds likely, but the text never says it."
+   }
+  ],
+  "another": {
+   "text": "It's like a treasure hunt where the treasure is a few words. The question tells you what to look for. Don't guess where it is: go and dig it up.",
+   "example": "Question: What colour was the boat?\nKey word: boat\nText: '...the little red boat...'\nAnswer: red"
+  },
+  "passage": "Kai waited until the house was quiet. Then, before his sister came home, he slid the map under the loose floorboard and pushed the rug back over it.",
+  "walkthrough": {
+   "passage": true,
+   "steps": [
+    {
+     "say": "Retrieval means finding the answer in the text. First, pick out the key word in the question."
+    },
+    {
+     "ask": "Question: where did Kai hide the map? What is the key word to look for?",
+     "options": [
+      "map",
+      "where"
+     ],
+     "answer": 0,
+     "hint": "'Where' is in lots of questions. Look for the thing the question is about.",
+     "line": "Key word: map"
+    },
+    {
+     "ask": "Find 'map' in the text. Which words answer the question?",
+     "options": [
+      "'under the loose floorboard'",
+      "'before his sister came home'"
+     ],
+     "answer": 0,
+     "then": "That tells us where. The other words tell us when.",
+     "line": "Finger on: under the loose floorboard"
+    },
+    {
+     "ask": "One answer says 'in his bag'. Can you put your finger on that in the text?",
+     "options": [
+      "No, it isn't there",
+      "Yes"
+     ],
+     "answer": 0,
+     "then": "It might sound sensible, but it isn't in the text, so it's a guess.",
+     "line": "'In his bag' ✗ not in the text"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "Why did Ruby run back to the house?",
+    "options": [
+     "She had forgotten her lunch",
+     "It started to rain",
+     "Her dog was barking"
+    ],
+    "answer": 0,
+    "why": "The text says she 'remembered her lunch was still on the table'. Finger on those words.",
+    "passage": "Ruby was halfway to the bus stop when she remembered her lunch was still on the table. She turned and ran back to the house, her bag bouncing on her back."
+   },
+   {
+    "stem": "How long do baby owls stay in the nest?",
+    "options": [
+     "About two months",
+     "About two weeks",
+     "About two years"
+    ],
+    "answer": 0,
+    "why": "The text says 'about two months'. Weeks and years are never mentioned, so they are guesses.",
+    "passage": "Barn owl chicks stay in the nest for about two months. During that time, their parents bring them mice, voles and shrews."
+   }
+  ]
+ },
+ {
+  "id": "ks2Inference",
+  "name": "Read between the lines",
+  "sub": "Inference questions",
+  "rule": "An inference is something the text shows but does not say. You work it out from clues, and you can point to the clues that prove it.",
+  "trick": "Ask: what do the clues add up to? Then check: can I point to the words that made me think it? If not, it's a guess.",
+  "examples": [
+   {
+    "kind": "good",
+    "text": "Ellie is nervous.",
+    "note": "Clues: her hands shook and she kept checking the clock."
+   },
+   {
+    "kind": "bad",
+    "text": "Ellie is ill.",
+    "note": "Nothing in the text points to that."
+   }
+  ],
+  "another": {
+   "text": "You come home and see muddy paw prints and an empty biscuit plate. Nobody told you the dog ate the biscuits, but the clues make it the only answer that fits. That is an inference.",
+   "example": "Clues: muddy paw prints, empty plate\nInference: the dog ate the biscuits\nGuess: the dog is sad ✗"
+  },
+  "passage": "Ellie's hands shook as she waited by the stage door. She kept checking the clock. Only two more acts before her turn.",
+  "walkthrough": {
+   "passage": true,
+   "steps": [
+    {
+     "say": "An inference is not written in the text. You add up the clues, like a detective."
+    },
+    {
+     "ask": "Clue 1: Ellie's hands shook. What is clue 2?",
+     "options": [
+      "She kept checking the clock",
+      "It was Tuesday"
+     ],
+     "answer": 0,
+     "hint": "Which detail tells us how Ellie is feeling?",
+     "line": "Clues: shaking hands, checking the clock"
+    },
+    {
+     "ask": "Put the clues together. Ellie is probably:",
+     "options": [
+      "Nervous",
+      "Bored"
+     ],
+     "answer": 0,
+     "then": "Shaking hands and clock-watching both point to nerves before her turn.",
+     "hint": "Bored people don't usually shake.",
+     "line": "Inference: Ellie is nervous"
+    },
+    {
+     "ask": "Someone says 'Ellie is ill'. Is that a good inference?",
+     "options": [
+      "No, no clue points there",
+      "Yes"
+     ],
+     "answer": 0,
+     "then": "A good inference comes from the clues. 'Ill' is a guess.",
+     "line": "'Ill' ✗ no clue"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "How is Dan feeling?",
+    "options": [
+     "Disappointed",
+     "Excited",
+     "Angry"
+    ],
+    "answer": 0,
+    "why": "He looked at the floor and said 'It doesn't matter' quietly. Those clues show disappointment.",
+    "passage": "When the team list went up, Dan looked for his name twice. Then he looked at the floor. 'It doesn't matter,' he said quietly."
+   },
+   {
+    "stem": "What can you tell about the weather?",
+    "options": [
+     "It was very cold",
+     "It was very hot",
+     "It was raining"
+    ],
+    "answer": 0,
+    "why": "Frosty grass, gloves and breath like clouds are all clues that it was cold.",
+    "passage": "The grass crunched with frost under Amira's boots. She pulled on a second pair of gloves and watched her breath puff out like little clouds."
+   }
+  ]
+ },
+ {
+  "id": "ks2WordMeaning",
+  "name": "What does the word mean here?",
+  "sub": "Words in context",
+  "rule": "Some words have more than one meaning. The words around them tell you which meaning the writer is using.",
+  "trick": "Cover the word and read the sentence. Say your own word for the gap, then pick the answer closest to yours.",
+  "examples": [
+   {
+    "kind": "good",
+    "text": "'The sea was rough': rough means wild and choppy.",
+    "note": "Cover it: the sea was ___. Stormy."
+   },
+   {
+    "kind": "bad",
+    "text": "'Rough' means bumpy to touch.",
+    "note": "That meaning is real, but it doesn't fit the sea here."
+   }
+  ],
+  "another": {
+   "text": "Words can have two jobs. 'Cool' can mean a bit cold or brilliant. The words around it tell you which job it's doing right now.",
+   "example": "The soup is cool now. → a bit cold\nThat trick was cool! → brilliant"
+  },
+  "passage": "The sea was rough and the little boat rocked from side to side.",
+  "walkthrough": {
+   "passage": true,
+   "steps": [
+    {
+     "say": "Lots of words have more than one meaning. The sentence tells you which one."
+    },
+    {
+     "ask": "Cover 'rough': 'The sea was ___ and the little boat rocked.' What's your word for the gap?",
+     "options": [
+      "Stormy",
+      "Sandy"
+     ],
+     "answer": 0,
+     "then": "A sea that rocks a boat is stormy and choppy.",
+     "line": "My word: stormy"
+    },
+    {
+     "ask": "So in this sentence, 'rough' means:",
+     "options": [
+      "Wild and choppy",
+      "Bumpy to touch"
+     ],
+     "answer": 0,
+     "then": "You can't touch the sea's surface like sandpaper. The wild meaning fits.",
+     "line": "rough = wild and choppy, here"
+    },
+    {
+     "ask": "Try another: 'Her plan was sound.' Cover 'sound'. Your word?",
+     "options": [
+      "Sensible",
+      "Noisy"
+     ],
+     "answer": 0,
+     "then": "A plan can't be noisy. A sound plan is a good, sensible one.",
+     "line": "sound = sensible, here"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "'The fox was bright enough to wait until dark.' What does 'bright' mean here?",
+    "options": [
+     "Clever",
+     "Shiny",
+     "Colourful"
+    ],
+    "answer": 0,
+    "why": "A fox that waits for the right moment is clever. Shiny doesn't fit waiting."
+   },
+   {
+    "stem": "'Jamal had to address the whole school.' What does 'address' mean here?",
+    "options": [
+     "Speak to",
+     "Write on an envelope",
+     "Where someone lives"
+    ],
+    "answer": 0,
+    "why": "You speak to a whole school in assembly. The other meanings don't fit the sentence."
+   }
+  ]
+ },
+ {
+  "id": "ks2WordClasses",
+  "name": "Word classes",
+  "sub": "Noun, verb, adjective, adverb",
+  "rule": "Every word has a job. Nouns name things, verbs are actions or being, adjectives describe nouns, and adverbs describe how, when or where something happens.",
+  "trick": "Look at the job, not the word: 'swim' is a verb in 'I swim' but a noun in 'a swim'. Try putting 'the' in front: if it works, it's probably a noun.",
+  "examples": [
+   {
+    "kind": "eg",
+    "text": "The happy dog ran quickly.",
+    "note": "dog: noun. ran: verb. happy: adjective. quickly: adverb."
+   }
+  ],
+  "another": {
+   "text": "Think of a football team. Every player has a job: one saves, one scores. Words are the same. The noun is the thing, the verb is what it does, the adjective is its kit, and the adverb is how it plays.",
+   "example": "The (red) team (played) (brilliantly).\nadjective · verb · adverb"
+  },
+  "walkthrough": {
+   "board": "The happy dog ran quickly.",
+   "kind": "text",
+   "steps": [
+    {
+     "say": "Each word in a sentence has a job. Let's find the job of each one."
+    },
+    {
+     "ask": "Which word names a thing (the noun)?",
+     "options": [
+      "dog",
+      "ran"
+     ],
+     "answer": 0,
+     "hint": "You can put 'the' in front of a noun: the dog.",
+     "line": "dog = noun"
+    },
+    {
+     "ask": "Which word is the action (the verb)?",
+     "options": [
+      "ran",
+      "happy"
+     ],
+     "answer": 0,
+     "hint": "What did the dog do?",
+     "line": "ran = verb"
+    },
+    {
+     "ask": "'Happy' describes the dog. So it is:",
+     "options": [
+      "An adjective",
+      "An adverb"
+     ],
+     "answer": 0,
+     "then": "Adjectives describe nouns.",
+     "line": "happy = adjective"
+    },
+    {
+     "ask": "'Quickly' tells us how the dog ran. So it is:",
+     "options": [
+      "An adverb",
+      "An adjective"
+     ],
+     "answer": 0,
+     "then": "Adverbs tell us how, when or where. Many end in -ly.",
+     "hint": "It describes the verb, not the noun.",
+     "line": "quickly = adverb ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "What word class is 'bravely' in: 'The firefighter bravely climbed the ladder'?",
+    "options": [
+     "Adverb",
+     "Adjective",
+     "Noun"
+    ],
+    "answer": 0,
+    "why": "It tells us how the firefighter climbed, so it is an adverb."
+   },
+   {
+    "stem": "What word class is 'jump' in: 'That was a huge jump!'?",
+    "options": [
+     "Noun",
+     "Verb",
+     "Adjective"
+    ],
+    "answer": 0,
+    "why": "'A jump' is a thing here, so it is a noun. In 'I jump', it would be a verb."
+   }
+  ]
+ },
+ {
+  "id": "ks2RelativeClauses",
+  "name": "Relative clauses",
+  "sub": "who, which, where, when, whose, that",
+  "rule": "A relative clause adds information about a noun. It starts with a relative pronoun: who, which, where, when, whose or that.",
+  "trick": "Find the noun, then look straight after it for who, which or that. Use who for people and which for things.",
+  "examples": [
+   {
+    "kind": "good",
+    "text": "The girl who won the race was delighted.",
+    "note": "who won the race tells us which girl."
+   },
+   {
+    "kind": "good",
+    "text": "Our car, which is very old, broke down.",
+    "note": "which is very old tells us about the car."
+   }
+  ],
+  "another": {
+   "text": "A relative clause is like a name tag on a noun. 'The girl' could be anyone. 'The girl who won the race' tells you exactly who.",
+   "example": "The dog → which dog?\nThe dog that barks at night"
+  },
+  "walkthrough": {
+   "board": "The woman who runs the bakery has a red van.",
+   "kind": "text",
+   "steps": [
+    {
+     "say": "A relative clause gives extra information about a noun. It starts with a relative pronoun."
+    },
+    {
+     "ask": "Which word is the relative pronoun?",
+     "options": [
+      "who",
+      "runs"
+     ],
+     "answer": 0,
+     "hint": "Look for who, which, where, when, whose or that.",
+     "line": "Relative pronoun: who"
+    },
+    {
+     "ask": "Which noun does the relative clause tell us about?",
+     "options": [
+      "woman",
+      "red van"
+     ],
+     "answer": 0,
+     "then": "It comes straight after 'woman' and tells us which woman.",
+     "line": "Noun: woman"
+    },
+    {
+     "ask": "So the relative clause is:",
+     "options": [
+      "who runs the bakery",
+      "has a red van"
+     ],
+     "answer": 0,
+     "line": "Relative clause: who runs the bakery ✓"
+    },
+    {
+     "ask": "For a thing, like a bike, which pronoun fits? 'My bike, ___ is red, has a flat tyre.'",
+     "options": [
+      "which",
+      "who"
+     ],
+     "answer": 0,
+     "then": "'Who' is for people. 'Which' is for things.",
+     "line": "things: which · people: who"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "blank": "The teacher __ runs the choir is called Mr Shah.",
+    "options": [
+     "who",
+     "which",
+     "where"
+    ],
+    "answer": 0,
+    "why": "The teacher is a person, so use who."
+   },
+   {
+    "blank": "This is the park __ we had our picnic.",
+    "options": [
+     "where",
+     "who",
+     "whose"
+    ],
+    "answer": 0,
+    "why": "The clause tells us about a place, so use where."
+   }
+  ]
+ },
+ {
+  "id": "ks2ActivePassive",
+  "name": "Active and passive",
+  "sub": "Who did it, or what it was done to",
+  "rule": "In the active voice, the doer comes first: The dog chased the cat. In the passive, the thing the action is done to comes first: The cat was chased by the dog.",
+  "trick": "Passive sentences use a form of 'be' (was, were, is) plus a verb like 'chased' or 'eaten', and often 'by'.",
+  "examples": [
+   {
+    "kind": "eg",
+    "text": "Active: Sam kicked the ball.",
+    "note": "Sam (doer) comes first."
+   },
+   {
+    "kind": "eg",
+    "text": "Passive: The ball was kicked by Sam.",
+    "note": "The ball comes first; 'was kicked by'."
+   }
+  ],
+  "another": {
+   "text": "Imagine a photo of someone kicking a ball. The active sentence starts with the kicker. The passive sentence turns the camera round and starts with the ball.",
+   "example": "Active: Sam kicked the ball.\nPassive: The ball was kicked by Sam."
+  },
+  "walkthrough": {
+   "board": "The storm flattened the fence.",
+   "kind": "text",
+   "steps": [
+    {
+     "say": "Let's turn this active sentence into the passive."
+    },
+    {
+     "ask": "Who or what does the flattening?",
+     "options": [
+      "The storm",
+      "The fence"
+     ],
+     "answer": 0,
+     "line": "Doer: the storm"
+    },
+    {
+     "ask": "What is the action done to?",
+     "options": [
+      "The fence",
+      "The storm"
+     ],
+     "answer": 0,
+     "line": "Done to: the fence"
+    },
+    {
+     "ask": "In the passive, which comes first?",
+     "options": [
+      "The fence",
+      "The storm"
+     ],
+     "answer": 0,
+     "then": "The thing the action is done to moves to the front.",
+     "line": "Start: The fence..."
+    },
+    {
+     "ask": "Finish it: 'The fence ___ by the storm.'",
+     "options": [
+      "was flattened",
+      "flattened"
+     ],
+     "answer": 0,
+     "then": "Passive: a form of 'be' plus the verb.",
+     "hint": "We need 'was' or 'were' in a passive sentence.",
+     "line": "The fence was flattened by the storm. ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "Which sentence is passive?",
+    "options": [
+     "The window was cleaned by Dad.",
+     "Dad cleaned the window.",
+     "Dad is cleaning the window."
+    ],
+    "answer": 0,
+    "why": "The window comes first and we have 'was cleaned by'. That's the passive."
+   },
+   {
+    "stem": "Which sentence is active?",
+    "options": [
+     "The cat ate the fish.",
+     "The fish was eaten by the cat.",
+     "The fish was eaten."
+    ],
+    "answer": 0,
+    "why": "The doer, the cat, comes first. That's active."
+   }
+  ]
+ },
+ {
+  "id": "ks2Subjunctive",
+  "name": "The subjunctive",
+  "sub": "If I were... and formal demands",
+  "rule": "The subjunctive is a formal verb form. Use 'were' for wishes and imagined things (If I were you), and the plain verb after words like insist, demand or suggest that (She insisted that he be on time).",
+  "trick": "Imagining or wishing? Use 'were', even after I, he or she. After 'insist that' or 'demand that', use the verb with no -s.",
+  "examples": [
+   {
+    "kind": "good",
+    "text": "If I were a bird, I would fly to Spain.",
+    "note": "Imagined, so 'were'."
+   },
+   {
+    "kind": "bad",
+    "text": "If I was a bird, I would fly to Spain.",
+    "note": "Fine when chatting, but not the subjunctive."
+   }
+  ],
+  "another": {
+   "text": "The subjunctive is the verb wearing its best clothes for a formal occasion or a daydream. In everyday talk we say 'If I was', but in the subjunctive it dresses up as 'If I were'.",
+   "example": "Everyday: If I was rich...\nSubjunctive: If I were rich...\nFormal: We ask that she be quiet."
+  },
+  "walkthrough": {
+   "board": "If I ___ faster, I could win the race.",
+   "kind": "text",
+   "steps": [
+    {
+     "say": "The subjunctive is used for wishes, imagined things and formal demands."
+    },
+    {
+     "ask": "Is the speaker really faster, or imagining it?",
+     "options": [
+      "Imagining it",
+      "Really faster"
+     ],
+     "answer": 0,
+     "line": "Imagined → subjunctive"
+    },
+    {
+     "ask": "Which word does the subjunctive use here?",
+     "options": [
+      "were",
+      "was"
+     ],
+     "answer": 0,
+     "then": "If I were faster. The subjunctive uses 'were', even with I.",
+     "hint": "'Was' is the everyday form, not the subjunctive.",
+     "line": "If I were faster ✓"
+    },
+    {
+     "ask": "Now a formal demand: 'The coach insisted that every player ___ on time.'",
+     "options": [
+      "be",
+      "is"
+     ],
+     "answer": 0,
+     "then": "After 'insisted that', the subjunctive uses the plain verb: be.",
+     "line": "insisted that every player be ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "blank": "I wish it __ the weekend already.",
+    "options": [
+     "were",
+     "was",
+     "is"
+    ],
+    "answer": 0,
+    "why": "A wish is imagined, so the subjunctive uses were."
+   },
+   {
+    "blank": "The head teacher asked that every pupil __ quietly.",
+    "options": [
+     "walk",
+     "walks",
+     "walked"
+    ],
+    "answer": 0,
+    "why": "After 'asked that', the subjunctive uses the plain verb with no -s: walk."
+   }
+  ]
+ },
+ {
+  "id": "ks2FrontedAdverbials",
+  "name": "Fronted adverbials",
+  "sub": "A comma after the opener",
+  "rule": "A fronted adverbial is a word or phrase at the start of a sentence that tells you when, where or how. Put a comma straight after it.",
+  "trick": "Find where the opener ends and the main clause (who did what) begins. The comma goes in that gap, never in the middle of the opener.",
+  "examples": [
+   {
+    "kind": "good",
+    "text": "Before school, we fed the rabbits.",
+    "note": "When? Before school. Comma straight after."
+   },
+   {
+    "kind": "bad",
+    "text": "Before, school we fed the rabbits.",
+    "note": "The comma cuts the opener in half."
+   }
+  ],
+  "another": {
+   "text": "A fronted adverbial is like the 'Once upon a time' before a story. The comma is the little pause before the story starts.",
+   "example": "Once upon a time, a fox lived in a wood.\nAt midnight, the clock struck twelve."
+  },
+  "walkthrough": {
+   "board": "Early the next morning we packed the car.",
+   "kind": "text",
+   "steps": [
+    {
+     "say": "A fronted adverbial opens the sentence and tells us when, where or how."
+    },
+    {
+     "ask": "What does this opener tell us?",
+     "options": [
+      "When",
+      "Who"
+     ],
+     "answer": 0,
+     "line": "Opener tells us: when"
+    },
+    {
+     "ask": "Where does the opener end?",
+     "options": [
+      "After 'morning'",
+      "After 'Early'"
+     ],
+     "answer": 0,
+     "then": "'Early the next morning' is the whole opener.",
+     "hint": "Read up to where 'we' starts doing something.",
+     "line": "Opener: Early the next morning"
+    },
+    {
+     "ask": "So the comma goes:",
+     "options": [
+      "Early the next morning, we",
+      "Early, the next morning we"
+     ],
+     "answer": 0,
+     "then": "One comma, right after the whole opener.",
+     "line": "Early the next morning, we packed the car. ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "Which is punctuated correctly?",
+    "options": [
+     "With a grin, Tom waved.",
+     "With, a grin Tom waved.",
+     "With a grin Tom, waved."
+    ],
+    "answer": 0,
+    "why": "'With a grin' is the opener, so the comma goes straight after it."
+   },
+   {
+    "stem": "Which sentence starts with a fronted adverbial?",
+    "options": [
+     "In the morning, we went fishing.",
+     "We went fishing in the morning.",
+     "We went fishing."
+    ],
+    "answer": 0,
+    "why": "'In the morning' comes first and tells us when, so it is fronted."
+   }
+  ]
+ },
+ {
+  "id": "ks2InvertedCommas",
+  "name": "Inverted commas",
+  "sub": "Punctuating speech",
+  "rule": "Inverted commas go around the exact words someone says. The punctuation that ends the spoken words (comma, ? or !) goes inside the closing inverted comma.",
+  "trick": "Ask: which words came out of their mouth? Wrap only those. Then tuck the punctuation inside.",
+  "examples": [
+   {
+    "kind": "good",
+    "text": "'Pass the ball,' said Kim.",
+    "note": "Comma inside, said Kim outside."
+   },
+   {
+    "kind": "bad",
+    "text": "'Pass the ball', said Kim.",
+    "note": "The comma has escaped outside."
+   }
+  ],
+  "another": {
+   "text": "Inverted commas are like a speech bubble in a comic. Only the words the person says go in the bubble, and their full stop or question mark goes in with them.",
+   "example": "'Is it lunch yet?' asked Leo.\n(bubble) · (not in the bubble)"
+  },
+  "walkthrough": {
+   "board": "Are you coming asked Zara",
+   "kind": "text",
+   "steps": [
+    {
+     "say": "Let's punctuate this speech. First find the words that are spoken."
+    },
+    {
+     "ask": "Which words does Zara say?",
+     "options": [
+      "Are you coming",
+      "asked Zara"
+     ],
+     "answer": 0,
+     "line": "Spoken: Are you coming"
+    },
+    {
+     "ask": "Is she asking or telling?",
+     "options": [
+      "Asking",
+      "Telling"
+     ],
+     "answer": 0,
+     "then": "So the spoken words need a question mark.",
+     "line": "Needs: ?"
+    },
+    {
+     "ask": "Where does the question mark go?",
+     "options": [
+      "Inside the inverted commas",
+      "After 'Zara'"
+     ],
+     "answer": 0,
+     "then": "It belongs to the spoken words, so it goes inside the bubble.",
+     "line": "'Are you coming?' asked Zara. ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "Which is correct?",
+    "options": [
+     "'Stop!' shouted the guard.",
+     "'Stop'! shouted the guard.",
+     "'Stop! shouted the guard.'"
+    ],
+    "answer": 0,
+    "why": "The ! belongs to the spoken word, so it goes inside. 'shouted the guard' is not spoken."
+   },
+   {
+    "stem": "Which is correct?",
+    "options": [
+     "Gran said, 'Wipe your feet.'",
+     "Gran said 'Wipe your feet'.",
+     "Gran said, Wipe your 'feet.'"
+    ],
+    "answer": 0,
+    "why": "Comma after 'said', then the spoken words with the full stop inside."
+   }
+  ]
+ },
+ {
+  "id": "ks2Parenthesis",
+  "name": "Brackets and commas for extra information",
+  "sub": "Parenthesis",
+  "rule": "Extra information can be added to a sentence inside a pair of brackets or a pair of commas. If you take it out, the sentence still makes sense.",
+  "trick": "Cover the extra bit with your finger. If the sentence still reads properly, your brackets or commas are in the right place.",
+  "examples": [
+   {
+    "kind": "good",
+    "text": "My cousin (who is six) loves dinosaurs.",
+    "note": "Cover it: My cousin loves dinosaurs. ✓"
+   },
+   {
+    "kind": "bad",
+    "text": "My cousin who (is six) loves dinosaurs.",
+    "note": "Cover it: My cousin who loves dinosaurs. ✗"
+   }
+  ],
+  "another": {
+   "text": "Extra information is like a sticky note on your homework. Peel it off and the homework still makes sense. The brackets or commas are the edges of the sticky note.",
+   "example": "The cake (chocolate, of course) was delicious.\nPeel it off: The cake was delicious."
+  },
+  "walkthrough": {
+   "board": "Our neighbour who is a pilot flies to Rome.",
+   "kind": "text",
+   "steps": [
+    {
+     "say": "Which words are extra information? Try taking some out."
+    },
+    {
+     "ask": "Which words could you take out and still have a sentence?",
+     "options": [
+      "who is a pilot",
+      "flies to Rome"
+     ],
+     "answer": 0,
+     "then": "'Our neighbour flies to Rome' still makes sense.",
+     "line": "Extra: who is a pilot"
+    },
+    {
+     "ask": "Where do the commas go?",
+     "options": [
+      "Our neighbour, who is a pilot, flies",
+      "Our neighbour who, is a pilot flies,"
+     ],
+     "answer": 0,
+     "then": "One comma before the extra bit and one after it, like a pair of brackets.",
+     "line": "Our neighbour, who is a pilot, flies to Rome. ✓"
+    },
+    {
+     "ask": "Could you use brackets instead?",
+     "options": [
+      "Yes: (who is a pilot)",
+      "No, never"
+     ],
+     "answer": 0,
+     "then": "Brackets and a pair of commas do the same job here.",
+     "line": "or: Our neighbour (who is a pilot) flies to Rome."
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "Which uses brackets correctly?",
+    "options": [
+     "Our dog (a spaniel) loves the beach.",
+     "Our (dog a spaniel) loves the beach.",
+     "Our dog (a spaniel loves) the beach."
+    ],
+    "answer": 0,
+    "why": "Cover '(a spaniel)': Our dog loves the beach. It still makes sense."
+   },
+   {
+    "stem": "Which uses commas correctly?",
+    "options": [
+     "Mr Jones, our caretaker, fixed the door.",
+     "Mr Jones our, caretaker fixed the door.",
+     "Mr, Jones our caretaker, fixed the door."
+    ],
+    "answer": 0,
+    "why": "'our caretaker' is the extra information, so a comma goes on each side of it."
+   }
+  ]
+ },
+ {
+  "id": "ks2OrderOps",
+  "name": "Which part first?",
+  "sub": "BODMAS",
+  "rule": "Work out brackets first, then powers (like 3²), then multiply and divide, then add and subtract. BODMAS reminds you.",
+  "trick": "Before you start, circle any × or ÷. Do those before any + or −, even if they come last.",
+  "examples": [
+   {
+    "kind": "eg",
+    "text": "14 + 5 × 4",
+    "note": "5 × 4 = 20 first, then 14 + 20 = 34."
+   },
+   {
+    "kind": "eg",
+    "text": "(14 + 5) × 4",
+    "note": "Brackets first: 19 × 4 = 76."
+   }
+  ],
+  "another": {
+   "text": "BODMAS is like getting dressed: socks before shoes. Do the steps in the wrong order and you end up with a silly answer.",
+   "example": "B rackets\nO rders (powers)\nD ivide and M ultiply\nA dd and S ubtract"
+  },
+  "walkthrough": {
+   "board": "14 + 5 × 4",
+   "kind": "math",
+   "steps": [
+    {
+     "say": "We don't just go left to right. Multiply and divide come before add and subtract."
+    },
+    {
+     "ask": "Which part do we work out first?",
+     "options": [
+      "5 × 4",
+      "14 + 5"
+     ],
+     "answer": 0,
+     "hint": "Look for × or ÷ first.",
+     "line": "First: 5 × 4"
+    },
+    {
+     "ask": "5 × 4 = ?",
+     "options": [
+      "20",
+      "9"
+     ],
+     "answer": 0,
+     "line": "5 × 4 = 20"
+    },
+    {
+     "ask": "Now 14 + 20 = ?",
+     "options": [
+      "34",
+      "76"
+     ],
+     "answer": 0,
+     "then": "76 is what you'd get adding first. That's the trap.",
+     "line": "14 + 20 = 34 ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "20 − 12 ÷ 4 = ?",
+    "options": [
+     "17",
+     "2",
+     "8"
+    ],
+    "answer": 0,
+    "why": "Divide first: 12 ÷ 4 = 3. Then 20 − 3 = 17."
+   },
+   {
+    "stem": "(4 + 5) × 2 = ?",
+    "options": [
+     "18",
+     "14",
+     "11"
+    ],
+    "answer": 0,
+    "why": "Brackets first: 4 + 5 = 9. Then 9 × 2 = 18."
+   }
+  ]
+ },
+ {
+  "id": "ks2LongMultiplication",
+  "name": "Long multiplication",
+  "sub": "Multiply by a 2-digit number",
+  "rule": "To multiply by a 2-digit number, multiply by the ones, then by the tens, then add the two answers together.",
+  "trick": "For the tens row, put a 0 in the ones column first, because you are really multiplying by a multiple of 10.",
+  "examples": [
+   {
+    "kind": "eg",
+    "text": "243 × 16",
+    "note": "243 × 6 = 1,458. 243 × 10 = 2,430. 1,458 + 2,430 = 3,888."
+   }
+  ],
+  "another": {
+   "text": "Imagine 16 bags with 243 sweets in each. Count 6 bags, then count 10 bags, then put the two piles together.",
+   "example": "6 bags: 1,458\n10 bags: 2,430\n16 bags: 3,888"
+  },
+  "walkthrough": {
+   "board": "243 × 16",
+   "kind": "math",
+   "steps": [
+    {
+     "say": "Split 16 into 6 ones and 1 ten. Multiply by each part, then add."
+    },
+    {
+     "ask": "First row: 243 × 6 = ?",
+     "options": [
+      "1,458",
+      "1,248"
+     ],
+     "answer": 0,
+     "hint": "243 × 6: 200 × 6 = 1,200, 40 × 6 = 240, 3 × 6 = 18.",
+     "line": "243 × 6 = 1,458"
+    },
+    {
+     "ask": "Second row is 243 × 10. What goes in the ones column first?",
+     "options": [
+      "0",
+      "6"
+     ],
+     "answer": 0,
+     "then": "We're multiplying by ten, so a 0 holds the ones place.",
+     "line": "243 × 10 = 2,430"
+    },
+    {
+     "ask": "Add the rows: 1,458 + 2,430 = ?",
+     "options": [
+      "3,888",
+      "3,788"
+     ],
+     "answer": 0,
+     "hint": "8 + 0 = 8, 5 + 3 = 8, 4 + 4 = 8, 1 + 2 = 3.",
+     "line": "1,458 + 2,430 = 3,888"
+    },
+    {
+     "ask": "Check by rounding: 243 × 16 is about 250 × 16 = 4,000. Is 3,888 sensible?",
+     "options": [
+      "Yes, it is close to 4,000",
+      "No, it is too small"
+     ],
+     "answer": 0,
+     "then": "3,888 is a little under 4,000, as it should be, because 243 is a little under 250.",
+     "line": "Check: about 4,000 ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "124 × 12 = ?",
+    "options": [
+     "1,488",
+     "372",
+     "1,248"
+    ],
+    "answer": 0,
+    "why": "124 × 2 = 248 and 124 × 10 = 1,240. 248 + 1,240 = 1,488."
+   },
+   {
+    "stem": "In 315 × 24, what is the tens row?",
+    "options": [
+     "315 × 20 = 6,300",
+     "315 × 2 = 630",
+     "315 × 4 = 1,260"
+    ],
+    "answer": 0,
+    "why": "The 2 in 24 means 2 tens, so the tens row is 315 × 20 = 6,300."
+   }
+  ]
+ },
+ {
+  "id": "ks2ShortDivision",
+  "name": "Short division",
+  "sub": "The bus stop method",
+  "rule": "Divide one digit at a time from the left. If a digit doesn't divide exactly, carry the remainder to the next digit.",
+  "trick": "If the divisor won't go into a digit at all, write 0 on top and carry the whole digit across. Don't skip the 0.",
+  "examples": [
+   {
+    "kind": "eg",
+    "text": "4,935 ÷ 7",
+    "note": "49 ÷ 7 = 7, 3 ÷ 7 = 0 r 3, 35 ÷ 7 = 5. Answer 705."
+   }
+  ],
+  "another": {
+   "text": "Think of sharing sweets between 7 friends, starting with the biggest bags. If a bag can't be shared, open it and add those sweets to the next pile.",
+   "example": "49 hundreds → 7 hundreds each\n3 tens → 0 each, 3 left over\n35 ones → 5 each"
+  },
+  "walkthrough": {
+   "board": "4,935 ÷ 7",
+   "kind": "math",
+   "steps": [
+    {
+     "say": "7 won't go into 4, so start with 49."
+    },
+    {
+     "ask": "49 ÷ 7 = ?",
+     "options": [
+      "7",
+      "6"
+     ],
+     "answer": 0,
+     "line": "49 ÷ 7 = 7"
+    },
+    {
+     "ask": "Next digit is 3. How many 7s in 3?",
+     "options": [
+      "0, remainder 3",
+      "1"
+     ],
+     "answer": 0,
+     "then": "Write 0 on top and carry the 3.",
+     "hint": "7 is bigger than 3.",
+     "line": "3 ÷ 7 = 0 r 3"
+    },
+    {
+     "ask": "The carried 3 makes 35. 35 ÷ 7 = ?",
+     "options": [
+      "5",
+      "4"
+     ],
+     "answer": 0,
+     "line": "35 ÷ 7 = 5"
+    },
+    {
+     "ask": "Read the answer from the top:",
+     "options": [
+      "705",
+      "75"
+     ],
+     "answer": 0,
+     "then": "The 0 holds the tens place. Leaving it out gives 75, which is far too small.",
+     "line": "4,935 ÷ 7 = 705"
+    },
+    {
+     "ask": "Check by multiplying back: 705 × 7 = ?",
+     "options": [
+      "4,935",
+      "525"
+     ],
+     "answer": 0,
+     "hint": "700 × 7 = 4,900 and 5 × 7 = 35.",
+     "line": "Check: 705 × 7 = 4,935 ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "672 ÷ 3 = ?",
+    "options": [
+     "224",
+     "214",
+     "234"
+    ],
+    "answer": 0,
+    "why": "6 ÷ 3 = 2, 7 ÷ 3 = 2 r 1, 12 ÷ 3 = 4. Answer 224."
+   },
+   {
+    "stem": "2,416 ÷ 8 = ?",
+    "options": [
+     "302",
+     "32",
+     "320"
+    ],
+    "answer": 0,
+    "why": "24 ÷ 8 = 3, 1 ÷ 8 = 0 r 1, 16 ÷ 8 = 2. Answer 302."
+   }
+  ]
+ },
+ {
+  "id": "ks2AddFractions",
+  "name": "Adding and subtracting fractions",
+  "sub": "Same denominator first",
+  "rule": "You can only add or subtract fractions when the denominators (bottom numbers) are the same. Then add or subtract the numerators (top numbers).",
+  "trick": "Never add the bottom numbers. Find a number both denominators go into, change the fractions, then work with the tops.",
+  "examples": [
+   {
+    "kind": "eg",
+    "text": "9/10 − 3/5",
+    "note": "3/5 = 6/10. 9/10 − 6/10 = 3/10."
+   },
+   {
+    "kind": "eg",
+    "text": "1/3 + 1/5",
+    "note": "5/15 + 3/15 = 8/15."
+   }
+  ],
+  "another": {
+   "text": "You can't take slices of a pizza cut in 5 away from a pizza cut in 10 and say how much pizza is left. Cut both into tenths first, then count the slices.",
+   "example": "3/5 = 6/10\n9 slices − 6 slices = 3 slices\n= 3/10"
+  },
+  "walkthrough": {
+   "board": "9/10 − 3/5",
+   "kind": "math",
+   "steps": [
+    {
+     "say": "The denominators are 10 and 5. They must match before we subtract."
+    },
+    {
+     "ask": "Which number do 10 and 5 both go into?",
+     "options": [
+      "10",
+      "15"
+     ],
+     "answer": 0,
+     "hint": "5 × 2 = 10.",
+     "line": "Common denominator: 10"
+    },
+    {
+     "ask": "3/5 is how many tenths?",
+     "options": [
+      "6/10",
+      "3/10"
+     ],
+     "answer": 0,
+     "hint": "Multiply the top and bottom by 2.",
+     "line": "3/5 = 6/10"
+    },
+    {
+     "ask": "9/10 − 6/10 = ?",
+     "options": [
+      "3/10",
+      "6/5"
+     ],
+     "answer": 0,
+     "then": "Subtract the tops, keep the bottom the same.",
+     "hint": "It is a take-away: 9 − 6.",
+     "line": "9/10 − 6/10 = 3/10"
+    },
+    {
+     "ask": "Check: add the 6/10 back on. 3/10 + 6/10 = 9/10. Is that what we started with?",
+     "options": [
+      "Yes",
+      "No"
+     ],
+     "answer": 0,
+     "then": "9/10 is where we began, so 3/10 is right.",
+     "line": "Check: 3/10 + 6/10 = 9/10 ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "4/9 + 2/9 = ?",
+    "options": [
+     "6/9",
+     "6/18",
+     "4/9"
+    ],
+    "answer": 0,
+    "why": "Same denominator, so add the tops: 4 + 2 = 6. The bottom stays 9."
+   },
+   {
+    "stem": "1/2 + 1/4 = ?",
+    "options": [
+     "3/4",
+     "2/6",
+     "2/4"
+    ],
+    "answer": 0,
+    "why": "1/2 = 2/4. Then 2/4 + 1/4 = 3/4. Adding the bottoms (2/6) is the trap."
+   }
+  ]
+ },
+ {
+  "id": "ks2PercentOf",
+  "name": "Percentages of amounts",
+  "sub": "Find 10% first",
+  "rule": "Per cent means out of 100. To find a percentage of an amount, find 10% by dividing by 10, then build the percentage you need from it.",
+  "trick": "50% is half, 25% is a quarter, 10% is ÷ 10, and 5% is half of 10%. Add pieces together: 15% = 10% + 5%.",
+  "examples": [
+   {
+    "kind": "eg",
+    "text": "15% of 260",
+    "note": "10% = 26. 5% = 13. 26 + 13 = 39."
+   },
+   {
+    "kind": "eg",
+    "text": "25% of 240",
+    "note": "A quarter: 240 ÷ 4 = 60."
+   }
+  ],
+  "another": {
+   "text": "Imagine a bar of chocolate with 100 squares. 10% is 10 squares out of every 100. Once you know 10%, you can build any amount like Lego.",
+   "example": "10% of 80 = 8\n20% = 8 + 8 = 16\n5% = half of 8 = 4"
+  },
+  "walkthrough": {
+   "board": "15% of 260",
+   "kind": "math",
+   "steps": [
+    {
+     "say": "Find 10% first. Then build 15% from it."
+    },
+    {
+     "ask": "10% of 260 = ?",
+     "options": [
+      "26",
+      "2.6"
+     ],
+     "answer": 0,
+     "hint": "Divide by 10.",
+     "line": "10% = 26"
+    },
+    {
+     "ask": "5% is half of 10%. So 5% of 260 = ?",
+     "options": [
+      "13",
+      "52"
+     ],
+     "answer": 0,
+     "line": "5% = 13"
+    },
+    {
+     "ask": "15% = 10% + 5% = ?",
+     "options": [
+      "39",
+      "36"
+     ],
+     "answer": 0,
+     "line": "15% of 260 = 39"
+    },
+    {
+     "ask": "Check: 20% of 260 is 52. Should 15% be a bit less than 52?",
+     "options": [
+      "Yes, so 39 makes sense",
+      "No, it should be more"
+     ],
+     "answer": 0,
+     "then": "15% is less than 20%, so the answer must be less than 52.",
+     "line": "Check: 39 < 52 ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "10% of 250 = ?",
+    "options": [
+     "25",
+     "2.5",
+     "10"
+    ],
+    "answer": 0,
+    "why": "Divide by 10: 250 ÷ 10 = 25."
+   },
+   {
+    "stem": "20% of 40 = ?",
+    "options": [
+     "8",
+     "4",
+     "20"
+    ],
+    "answer": 0,
+    "why": "10% of 40 is 4, so 20% is 4 + 4 = 8."
+   }
+  ]
+ },
+ {
+  "id": "ks2FractionsOfAmounts",
+  "name": "Fractions of amounts",
+  "sub": "Divide by the bottom, times by the top",
+  "rule": "To find a fraction of an amount, divide by the denominator (bottom) to find one part, then multiply by the numerator (top).",
+  "trick": "Bottom first: the bottom number tells you how many equal parts to split into.",
+  "examples": [
+   {
+    "kind": "eg",
+    "text": "4/7 of 35",
+    "note": "35 ÷ 7 = 5. 5 × 4 = 20."
+   }
+  ],
+  "another": {
+   "text": "Share 35 sweets equally into 7 bags. Each bag has 5. 4/7 means you get 4 of those bags, so 20 sweets.",
+   "example": "35 ÷ 7 = 5 in each bag\n4 bags = 20"
+  },
+  "walkthrough": {
+   "board": "4/7 of 35",
+   "kind": "math",
+   "steps": [
+    {
+     "say": "The bottom number says how many equal parts. The top says how many parts we want."
+    },
+    {
+     "ask": "Split 35 into 7 equal parts. How many in each?",
+     "options": [
+      "5",
+      "7"
+     ],
+     "answer": 0,
+     "hint": "35 ÷ 7.",
+     "line": "35 ÷ 7 = 5"
+    },
+    {
+     "ask": "We want 4 of those parts. 5 × 4 = ?",
+     "options": [
+      "20",
+      "9"
+     ],
+     "answer": 0,
+     "line": "5 × 4 = 20"
+    },
+    {
+     "ask": "So 4/7 of 35 is:",
+     "options": [
+      "20",
+      "5"
+     ],
+     "answer": 0,
+     "then": "5 is just one seventh. Don't stop halfway.",
+     "line": "4/7 of 35 = 20 ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "1/4 of 36 = ?",
+    "options": [
+     "9",
+     "4",
+     "12"
+    ],
+    "answer": 0,
+    "why": "36 ÷ 4 = 9. One part is the answer when the top is 1."
+   },
+   {
+    "stem": "2/3 of 24 = ?",
+    "options": [
+     "16",
+     "8",
+     "12"
+    ],
+    "answer": 0,
+    "why": "24 ÷ 3 = 8. 8 × 2 = 16."
+   }
+  ]
+ },
+ {
+  "id": "ks2Ratio",
+  "name": "Ratio and scaling",
+  "sub": "Find one, then scale",
+  "rule": "Ratio compares amounts. To scale a recipe or a price, find what one part (or one item) is worth, then multiply.",
+  "trick": "Ask: how many times bigger? 9 eggs is 3 times 3 eggs, so everything else is 3 times bigger too.",
+  "examples": [
+   {
+    "kind": "eg",
+    "text": "3 eggs : 200 g sugar → 9 eggs",
+    "note": "9 is 3 × 3, so 200 × 3 = 600 g."
+   },
+   {
+    "kind": "eg",
+    "text": "boys : girls = 3 : 4, 35 children",
+    "note": "7 parts. 35 ÷ 7 = 5. Girls: 4 × 5 = 20."
+   }
+  ],
+  "another": {
+   "text": "A recipe for 2 people is like one set of Lego instructions. Building for 6 people means following them 3 times, so you need 3 times as many bricks.",
+   "example": "2 people: 200 g\n× 3\n6 people: 600 g"
+  },
+  "walkthrough": {
+   "board": "3 : 4 boys to girls, 35 children",
+   "kind": "text",
+   "steps": [
+    {
+     "say": "A ratio of 3 : 4 means for every 3 boys there are 4 girls."
+    },
+    {
+     "ask": "How many parts is that altogether?",
+     "options": [
+      "7",
+      "12"
+     ],
+     "answer": 0,
+     "hint": "3 + 4.",
+     "line": "3 + 4 = 7 parts"
+    },
+    {
+     "ask": "35 children shared into 7 parts. How many in each part?",
+     "options": [
+      "5",
+      "7"
+     ],
+     "answer": 0,
+     "line": "35 ÷ 7 = 5"
+    },
+    {
+     "ask": "Girls have 4 parts. How many girls?",
+     "options": [
+      "20",
+      "15"
+     ],
+     "answer": 0,
+     "then": "And the boys have 3 parts: 15. Check: 20 + 15 = 35.",
+     "line": "Girls: 4 × 5 = 20 ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "4 pens cost £2. How much do 12 pens cost?",
+    "options": [
+     "£6",
+     "£8",
+     "£24"
+    ],
+    "answer": 0,
+    "why": "12 pens is 3 times 4 pens, so 3 × £2 = £6."
+   },
+   {
+    "stem": "Red to blue is 1 : 2. There are 5 red. How many blue?",
+    "options": [
+     "10",
+     "7",
+     "3"
+    ],
+    "answer": 0,
+    "why": "Every 1 red has 2 blue, so 5 red has 5 × 2 = 10 blue."
+   }
+  ]
+ },
+ {
+  "id": "ks2Angles",
+  "name": "Missing angles",
+  "sub": "Lines, points and triangles",
+  "rule": "Angles on a straight line add up to 180°. Angles around a point add up to 360°. Angles in a triangle add up to 180°. A right angle is 90°.",
+  "trick": "Pick the right total, add up the angles you know, then take that away from the total.",
+  "examples": [
+   {
+    "kind": "eg",
+    "text": "Straight line: 72° and ?",
+    "note": "180 − 72 = 108°."
+   },
+   {
+    "kind": "eg",
+    "text": "Triangle: 52°, 69° and ?",
+    "note": "52 + 69 = 121. 180 − 121 = 59°."
+   }
+  ],
+  "another": {
+   "text": "A straight line is half a turn, like turning to face behind you: 180°. A whole turn all the way round is 360°.",
+   "example": "Half turn = 180°\nWhole turn = 360°\nQuarter turn = 90°"
+  },
+  "walkthrough": {
+   "board": "Triangle: 52° and 69°. Find the third angle.",
+   "kind": "text",
+   "steps": [
+    {
+     "say": "Step 1: pick the right total."
+    },
+    {
+     "ask": "Angles in a triangle add up to:",
+     "options": [
+      "180°",
+      "360°"
+     ],
+     "answer": 0,
+     "hint": "360° is around a point.",
+     "line": "Total: 180°"
+    },
+    {
+     "ask": "Add the angles you know: 52 + 69 = ?",
+     "options": [
+      "121",
+      "111"
+     ],
+     "answer": 0,
+     "line": "52 + 69 = 121"
+    },
+    {
+     "ask": "Take it from the total: 180 − 121 = ?",
+     "options": [
+      "59",
+      "69"
+     ],
+     "answer": 0,
+     "line": "Missing angle = 59°"
+    },
+    {
+     "ask": "Check: 52 + 69 + 59 = ?",
+     "options": [
+      "180",
+      "170"
+     ],
+     "answer": 0,
+     "then": "All three add up to 180°, so 59° is right.",
+     "line": "Check: 52 + 69 + 59 = 180 ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "Two angles on a straight line. One is 130°. What is the other?",
+    "options": [
+     "50°",
+     "230°",
+     "130°"
+    ],
+    "answer": 0,
+    "why": "180 − 130 = 50."
+   },
+   {
+    "stem": "Angles around a point: 90°, 150° and ?",
+    "options": [
+     "120°",
+     "60°",
+     "240°"
+    ],
+    "answer": 0,
+    "why": "90 + 150 = 240. 360 − 240 = 120."
+   }
+  ]
+ },
+ {
+  "id": "ks2Time",
+  "name": "Time intervals",
+  "sub": "Count on to the hour",
+  "rule": "To find how long something takes, count on from the start time to the next o'clock, then to the end time, and add the pieces. There are 60 minutes in an hour and 24 hours in a day.",
+  "trick": "Don't subtract times like normal numbers: hours have 60 minutes, not 100. Jump to the hour first.",
+  "examples": [
+   {
+    "kind": "eg",
+    "text": "2:35 pm to 4:05 pm",
+    "note": "25 min to 3:00, 60 min to 4:00, 5 min to 4:05. Total 90 minutes."
+   }
+  ],
+  "another": {
+   "text": "Think of hopping along a number line with stepping stones on every o'clock. Hop to the next stone, then hop whole hours, then hop the last few minutes.",
+   "example": "2:35 → 3:00 (25)\n3:00 → 4:00 (60)\n4:00 → 4:05 (5)\n= 90 minutes"
+  },
+  "walkthrough": {
+   "board": "2:35 pm to 4:05 pm",
+   "kind": "math",
+   "steps": [
+    {
+     "say": "Count on. First, jump to the next o'clock."
+    },
+    {
+     "ask": "2:35 to 3:00 is how many minutes?",
+     "options": [
+      "25",
+      "65"
+     ],
+     "answer": 0,
+     "hint": "There are 60 minutes in an hour. 60 − 35.",
+     "line": "2:35 → 3:00 = 25 min"
+    },
+    {
+     "ask": "3:00 to 4:00 is:",
+     "options": [
+      "60 minutes",
+      "100 minutes"
+     ],
+     "answer": 0,
+     "line": "3:00 → 4:00 = 60 min"
+    },
+    {
+     "ask": "4:00 to 4:05 is:",
+     "options": [
+      "5 minutes",
+      "55 minutes"
+     ],
+     "answer": 0,
+     "line": "4:00 → 4:05 = 5 min"
+    },
+    {
+     "ask": "Add the jumps: 25 + 60 + 5 = ?",
+     "options": [
+      "90 minutes",
+      "170 minutes"
+     ],
+     "answer": 0,
+     "then": "Subtracting 235 from 405 gives 170, which is wrong because hours have 60 minutes.",
+     "line": "Total = 90 minutes ✓"
+    }
+   ]
+  },
+  "questions": [
+   {
+    "stem": "How long is it from 9:50 am to 10:20 am?",
+    "options": [
+     "30 minutes",
+     "70 minutes",
+     "40 minutes"
+    ],
+    "answer": 0,
+    "why": "9:50 to 10:00 is 10 minutes, and 10:00 to 10:20 is 20. 10 + 20 = 30."
+   },
+   {
+    "stem": "How many minutes are in 2 hours?",
+    "options": [
+     "120",
+     "200",
+     "60"
+    ],
+    "answer": 0,
+    "why": "Each hour has 60 minutes: 2 × 60 = 120."
+   }
+  ]
+ }
+]

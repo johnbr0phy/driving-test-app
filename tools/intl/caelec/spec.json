@@ -1,0 +1,25 @@
+{
+  "id": "caelec",
+  "stateCode": "CAELEC",
+  "idBase": 8000,
+  "prefix": "CAELEC-",
+  "slug": "/red-seal-electrician",
+  "landingPath": "/red-seal-electrician-practice-test",
+  "dataFile": "data/red-seal-electrician-questions.json",
+  "name": "Red Seal Electrician Practice Test",
+  "shortName": "Red Seal Electrician",
+  "examLabel": "Red Seal Construction Electrician",
+  "fullName": "Red Seal Construction Electrician (309A) interprovincial exam",
+  "icon": "hardhat",
+  "passPct": 70,
+  "outlineComment": "Red Seal Construction Electrician interprovincial exam (red-seal.ca exam information and\nexam weightings, checked Oct 2026): 100 four-option multiple-choice questions in 4 hours,\n70% to pass, calculator and code reference supplied. Current exams are built on the previous\nRSOS; its breakdown by major work activity is A common skills 11, B generating, distribution\nand service 28, C wiring 30, D motors and controls 21, E signalling and communication 10. The\nnew RSOS (exams in development) shifts to 12/26/34/18/10. Scaled to 50: 6/14/15/10/5, which\nsits between the two. Code content follows the 2024 CEC Part I (used on the exam since\nJune 1, 2025). All items original.",
+  "categories": [
+    {"key": "caelecCommon", "label": "Common Occupational Skills", "perTest": 6, "segment": "COM"},
+    {"key": "caelecDist", "label": "Generating, Distribution & Service Systems", "perTest": 14, "segment": "DIS"},
+    {"key": "caelecWiring", "label": "Wiring Systems", "perTest": 15, "segment": "WIR"},
+    {"key": "caelecMotors", "label": "Motors & Control Systems", "perTest": 10, "segment": "MOT"},
+    {"key": "caelecSignal", "label": "Signalling & Communication Systems", "perTest": 5, "segment": "SIG"}
+  ],
+  "trainingSets": "testSets(8000, 4): one set per test, like every other v1 exam",
+  "teacherLed": "apprenticeship in-school technical training (college instructors)"
+}

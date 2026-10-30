@@ -17,4 +17,9 @@ export const BANK_SIZES: Record<string, number> = {
   aplus: 200,
   aws: 200,
   timestables: 200,
+  gcsemaths: 207,
+  naplan: 227,
+  osslt: 200,
+  ks2: 242,
+  nswsel: 258,
 };

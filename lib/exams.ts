@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "capal" | "caelec" | "auwhite" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -2996,6 +2996,305 @@ const caqc: ExamConfig = {
   },
 };
 
+const uksia: ExamConfig = {
+  id: "uksia",
+  stateCode: "UKSIA",
+  idBase: 7700,
+  slug: "/sia-door-supervisor",
+  landingPath: "/sia-door-supervisor-practice-test",
+  name: "SIA Door Supervisor Practice Test",
+  shortName: "Door Supervisor",
+  examLabel: "SIA door supervisor exams",
+  fullName: "SIA door supervisor licence exams (Level 2 Award for Door Supervisors)",
+  questionIdPrefix: "UKSIA-",
+  icon: "shield",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Level 2 Award for Door Supervisors in the Private Security Industry, the SIA
+  // licence-linked qualification (SIA door supervision specifications, April 2021, still
+  // current Oct 2026; counts and pass marks from the Pearson BTEC spec Issue 2, Sept 2023):
+  // Unit 1 core 72 MCQ in 110 min at 70%, Unit 2 door supervision 50 in 75 min at 70%,
+  // Unit 3 conflict management 20 in 30 min at 70%, Unit 4 physical intervention 30 in
+  // 45 min at 80%. 172 MCQ in all, so 50 per test is 21/14/6/9 by unit; Unit 1 is split
+  // by learning outcome into four categories and Unit 2 into two. Practical assessments
+  // and the EFAW first aid prerequisite are not modelled. Licensing, arrest and force
+  // questions follow England and Wales law. All questions are original.
+  blueprint: {
+    uksiaIndustry: 7,
+    uksiaSafety: 5,
+    uksiaComms: 4,
+    uksiaTerror: 5,
+    uksiaCrime: 7,
+    uksiaVenue: 7,
+    uksiaConflict: 6,
+    uksiaPhysical: 9,
+  },
+  trainingSets: testSets(7700, 4),
+  categoryLabels: {
+    uksiaIndustry: "Security Industry, Law & Arrest",
+    uksiaSafety: "Health & Safety, Fire & Emergencies",
+    uksiaComms: "Communication, Records & Post-Incident",
+    uksiaTerror: "Terrorism & Vulnerable People",
+    uksiaCrime: "Crime, Drugs & Evidence",
+    uksiaVenue: "Licensing Law, Searching & Queues",
+    uksiaConflict: "Conflict Management",
+    uksiaPhysical: "Physical Intervention",
+  },
+  copy: {
+    guestPrompt: "to save your SIA exam progress and track every question you miss",
+    trainingHeading: "Train for each mock exam",
+    trainingSub: "Four sets, one per mock exam: Set 1 holds exactly the 50 questions of Test 1, and so on, across all four units. Missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions mixing all four units like the real exams",
+    heroSubs: [
+      "Four units, four mock exams. Physical intervention needs 80%, the rest 70%.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your course exams.",
+    ],
+    sourceLine: "Based on the SIA door supervision specifications (April 2021) and England and Wales law, checked October 2026. Multiple-choice exams only; the practical assessments are done with your trainer.",
+    analyticsKey: "uksia",
+  },
+};
+
+const uk18ed: ExamConfig = {
+  id: "uk18ed",
+  stateCode: "UK18ED",
+  idBase: 7800,
+  slug: "/18th-edition",
+  landingPath: "/18th-edition-practice-test",
+  name: "18th Edition Practice Test",
+  shortName: "18th Edition",
+  examLabel: "18th Edition exam",
+  fullName: "City & Guilds 2382-26 18th Edition IET Wiring Regulations (BS 7671:2018+A4:2026) exam",
+  questionIdPrefix: "UK18ED-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // City & Guilds Level 3 Award in the Requirements for Electrical Installations BS 7671:2018
+  // (2382-26), handbook v1.0 March 2026, checked October 2026: one open-book online test (2382-626)
+  // of 60 multiple-choice questions in 120 minutes on BS 7671:2018+A4:2026, pass mark approx. 60%.
+  // Test specification: scope, object and fundamental principles 4; definitions 2; assessment of
+  // general characteristics 6; protection for safety 15; selection and erection 14; inspection and
+  // testing 4; special installations or locations 7; Part 8 and the appendices 8. Scaled to 50:
+  // 3/2/5/13/12/3/6/6. 2382-26 replaced 2382-22 from 16 April 2026; A2+A3 withdrawn 15 Oct 2026.
+  // All items original; no regulation text quoted.
+  blueprint: {
+    uk18edScope: 3,
+    uk18edDefinitions: 2,
+    uk18edAssessment: 5,
+    uk18edProtection: 13,
+    uk18edSelection: 12,
+    uk18edInspection: 3,
+    uk18edSpecial: 6,
+    uk18edAppendices: 6,
+  },
+  trainingSets: testSets(7800, 4),
+  categoryLabels: {
+    uk18edScope: "Scope, Object & Fundamental Principles",
+    uk18edDefinitions: "Definitions",
+    uk18edAssessment: "Assessment of General Characteristics",
+    uk18edProtection: "Protection for Safety",
+    uk18edSelection: "Selection & Erection",
+    uk18edInspection: "Inspection & Testing",
+    uk18edSpecial: "Special Installations & Locations",
+    uk18edAppendices: "Part 8 & Appendices",
+  },
+  copy: {
+    guestPrompt: "to save your 18th Edition progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock exam, each holding exactly that test's 50 questions across every part of BS 7671. Missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions in the 2382-26 proportions, 60% to pass",
+    heroSubs: [
+      "Eight parts of BS 7671, four mock exams. Parts 4 and 5 are half the paper.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. Tab your BS 7671 and book your exam.",
+    ],
+    sourceLine: "Based on the City & Guilds 2382-26 test specification and BS 7671:2018+A4:2026. Original questions; keep your own copy of the book open, as in the real open-book exam.",
+    analyticsKey: "uk18ed",
+  },
+};
+
+const capal: ExamConfig = {
+  id: "capal",
+  stateCode: "CAPAL",
+  idBase: 7900,
+  slug: "/canadian-firearms",
+  landingPath: "/canadian-firearms-safety-course-practice-test",
+  name: "Canadian Firearms Safety Course Practice Test",
+  shortName: "CFSC",
+  examLabel: "CFSC written test",
+  fullName: "Canadian Firearms Safety Course (CFSC) written test for the non-restricted PAL",
+  questionIdPrefix: "CAPAL-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // RCMP Canadian Firearms Program, Canadian Firearms Safety Course (rcmp.ca safety courses page,
+  // checked Oct 2026): classroom course by provincially designated instructors, then a written
+  // test (usually 50 questions, mostly multiple choice) and a practical handling test, 80% to pass each. The
+  // categories follow the course's required topics in student handbook order; RCMP publishes no
+  // per-topic weights, so the counts are ours. Law current to Oct 2026 (SOR/98-209 storage,
+  // display, transport and handling; Criminal Code Part III; Bill C-21). All items original.
+  blueprint: {
+    capalHistory: 5,
+    capalActions: 6,
+    capalAmmo: 6,
+    capalSafety: 8,
+    capalHandling: 6,
+    capalFiring: 4,
+    capalCare: 3,
+    capalStorage: 6,
+    capalLaw: 6,
+  },
+  trainingSets: testSets(7900, 4),
+  categoryLabels: {
+    capalHistory: "Evolution & Parts of Firearms",
+    capalActions: "Types & Actions",
+    capalAmmo: "Ammunition",
+    capalSafety: "Basic Safety: ACTS & PROVE",
+    capalHandling: "Safe Handling & Carrying",
+    capalFiring: "Firing Techniques",
+    capalCare: "Care of Firearms",
+    capalStorage: "Storage, Display & Transport",
+    capalLaw: "Licensing & the Law",
+  },
+  copy: {
+    guestPrompt: "to save your firearms safety course progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all nine course topics. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 80% to pass, like the CFSC written test",
+    heroSubs: [
+      "Nine course topics, four practice tests. You need 40 of 50 to pass.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Practise PROVE with your instructor and book your test.",
+    ],
+    sourceLine: "Based on the RCMP Canadian Firearms Safety Course topics and federal law as of October 2026. Original questions; the practical handling test is not modelled.",
+    analyticsKey: "capal",
+  },
+};
+
+const caelec: ExamConfig = {
+  id: "caelec",
+  stateCode: "CAELEC",
+  idBase: 8000,
+  slug: "/red-seal-electrician",
+  landingPath: "/red-seal-electrician-practice-test",
+  name: "Red Seal Electrician Practice Test",
+  shortName: "Red Seal Electrician",
+  examLabel: "Red Seal Construction Electrician",
+  fullName: "Red Seal Construction Electrician (309A) interprovincial exam",
+  questionIdPrefix: "CAELEC-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Red Seal Construction Electrician interprovincial exam (red-seal.ca exam information and
+  // exam weightings, checked Oct 2026): 100 four-option multiple-choice questions in 4 hours,
+  // 70% to pass, calculator and code reference supplied. Current exams are built on the previous
+  // RSOS; its breakdown by major work activity is A common skills 11, B generating, distribution
+  // and service 28, C wiring 30, D motors and controls 21, E signalling and communication 10. The
+  // new RSOS (exams in development) shifts to 12/26/34/18/10. Scaled to 50: 6/14/15/10/5, which
+  // sits between the two. Code content follows the 2024 CEC Part I (used on the exam since
+  // June 1, 2025). All items original.
+  blueprint: {
+    caelecCommon: 6,
+    caelecDist: 14,
+    caelecWiring: 15,
+    caelecMotors: 10,
+    caelecSignal: 5,
+  },
+  trainingSets: testSets(8000, 4),
+  categoryLabels: {
+    caelecCommon: "Common Occupational Skills",
+    caelecDist: "Generating, Distribution & Service Systems",
+    caelecWiring: "Wiring Systems",
+    caelecMotors: "Motors & Control Systems",
+    caelecSignal: "Signalling & Communication Systems",
+  },
+  copy: {
+    guestPrompt: "to save your Red Seal progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all five major work activities. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the Red Seal exam's proportions, 70% to pass",
+    heroSubs: [
+      "Five work activities, four tests. Wiring and distribution are over half the exam.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Tab your code book and book your exam.",
+    ],
+    sourceLine: "Based on the Red Seal Occupational Standard exam breakdown for Construction Electrician and the 2024 Canadian Electrical Code. Original questions; provincial amendments vary.",
+    analyticsKey: "caelec",
+  },
+};
+
+const auwhite: ExamConfig = {
+  id: "auwhite",
+  stateCode: "AUWHITE",
+  idBase: 8100,
+  slug: "/white-card",
+  landingPath: "/white-card-practice-test",
+  name: "White Card Practice Test",
+  shortName: "White Card",
+  examLabel: "White Card",
+  fullName: "White Card course, CPCWHS1001 Prepare to work safely in the construction industry",
+  questionIdPrefix: "AUWHITE-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // CPCWHS1001 Prepare to work safely in the construction industry, Release 2 (training.gov.au,
+  // CPC Training Package 8.0, checked Oct 2026): general construction induction training under
+  // Part 6.5 of the model WHS Regulations, delivered and assessed by an RTO through practical
+  // demonstration, oral and written reporting. Competency-based, so there is no pass percentage;
+  // 80% is a readiness line. Categories follow the unit's elements and knowledge evidence; the
+  // unit publishes no weights, so the counts are ours. Model WHS laws; Victoria's OHS Act 2004
+  // differs in wording only. All items original.
+  blueprint: {
+    auwhiteLaw: 8,
+    auwhiteRisk: 6,
+    auwhiteHeights: 6,
+    auwhitePlant: 6,
+    auwhiteHealth: 7,
+    auwhiteEnv: 5,
+    auwhiteSigns: 6,
+    auwhiteEmerg: 6,
+  },
+  trainingSets: testSets(8100, 4),
+  categoryLabels: {
+    auwhiteLaw: "WHS Laws, Duties & Rights",
+    auwhiteRisk: "Risk Management & SWMS",
+    auwhiteHeights: "Heights, Collapse & Excavations",
+    auwhitePlant: "Electrical, Plant & Traffic",
+    auwhiteHealth: "Asbestos, Dust, Chemicals & Confined Spaces",
+    auwhiteEnv: "Manual Handling, Noise, Sun & Fitness",
+    auwhiteSigns: "Safety Signs & PPE",
+    auwhiteEmerg: "Incidents, Emergencies & First Aid",
+  },
+  copy: {
+    guestPrompt: "to save your White Card progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all eight White Card topic areas. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 80% readiness line (the real course has no set pass mark)",
+    heroSubs: [
+      "Eight topic areas, four practice tests. Aim for 40 of 50 or better.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Practise fitting your PPE and book your course.",
+    ],
+    sourceLine: "Based on the CPCWHS1001 unit of competency and the model WHS laws, checked October 2026. Original questions; your RTO trainer assesses the real course, including the practical tasks.",
+    analyticsKey: "auwhite",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -5090,7 +5389,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, ukcar, ukmoto, uklgv, ukpcv, ukadi, caon, caqc, cabc, caab, camb, aunsw, auvic, auqld, auwa, ausa, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, ukcar, ukmoto, uklgv, ukpcv, ukadi, caon, caqc, cabc, caab, camb, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, capal, caelec, auwhite, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

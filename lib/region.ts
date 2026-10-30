@@ -51,14 +51,18 @@ export function regionInfo(r: Region) {
 export type TestRegion = Region | "GLOBAL";
 
 const TEST_REGIONS: Record<string, TestRegion> = {
-  ukcar: "UK", ukmoto: "UK", uklgv: "UK", ukpcv: "UK", ukadi: "UK", timestables: "UK",
-  caon: "CA", caqc: "CA", cabc: "CA", caab: "CA", camb: "CA",
-  aunsw: "AU", auvic: "AU", auqld: "AU", auwa: "AU", ausa: "AU",
+  ukcar: "UK", ukmoto: "UK", uklgv: "UK", ukpcv: "UK", ukadi: "UK", timestables: "UK", ks2: "UK", gcsemaths: "UK", uksia: "UK", uk18ed: "UK",
+  caon: "CA", caqc: "CA", cabc: "CA", caab: "CA", camb: "CA", osslt: "CA", capal: "CA", caelec: "CA",
+  aunsw: "AU", auvic: "AU", auqld: "AU", auwa: "AU", ausa: "AU", naplan: "AU", nswsel: "AU", auwhite: "AU",
   aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL",
 };
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
-export const NON_DRIVING_TESTS = new Set(["timestables"]);
+export const NON_DRIVING_TESTS = new Set([
+  "timestables", "ks2", "gcsemaths", "uksia", "uk18ed",
+  "osslt", "capal", "caelec",
+  "naplan", "nswsel", "auwhite",
+]);
 
 /** Every test not listed above is a US exam. */
 export function regionOfTest(testId: string): TestRegion {

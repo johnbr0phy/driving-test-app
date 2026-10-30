@@ -238,7 +238,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     const retried = outOf - firstTry;
     const revisit = !run;
     const allBasicsDone = !nextSkill;
-    const childFriendly = exam.id === "timestables";
+    const childFriendly = exam.id === "timestables" || exam.id === "ks2";
     const dashboardHref = `${routes.dashboard}?completed=${encodeURIComponent(`basics:${drill.key}`)}`;
     const learnAgain = () => {
       setRun(null);

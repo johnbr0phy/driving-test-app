@@ -841,4 +841,166 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the HSPA CRCST content outline (rev. November 2023)",
     source: { name: "HSPA", url: "https://myhspa.org" },
   },
+  uksia: {
+    answer:
+      "To get an SIA door supervisor licence you must pass the Level 2 Award for Door Supervisors in the Private Security Industry, a face-to-face course with four multiple-choice exams: 72 questions on working in the private security industry, 50 on door supervision, 20 on conflict management and 30 on physical intervention. You need 70 percent on the first three and 80 percent on physical intervention, plus practical assessments. You must be 18 or over and hold an emergency first aid qualification before the course starts.",
+    rows: [
+      { label: "Exams", value: "4 multiple-choice unit exams, 172 questions" },
+      { label: "Core unit", value: "72 questions in 110 minutes, pass 50 (70%)" },
+      { label: "Door supervision unit", value: "50 questions in 75 minutes, pass 35 (70%)" },
+      { label: "Conflict management", value: "20 questions in 30 minutes, pass 14 (70%)" },
+      { label: "Physical intervention", value: "30 questions in 45 minutes, pass 24 (80%)" },
+      { label: "Before the course", value: "Emergency First Aid at Work or First Aid at Work" },
+      { label: "Licence", value: "Age 18+, £204, lasts 3 years" },
+      { label: "Regulator", value: "Security Industry Authority (SIA)" },
+    ],
+    basedOn: "the SIA door supervision specifications (April 2021) and an awarding body's published exam structure, checked October 2026",
+    source: { name: "GOV.UK: SIA licence-linked training specifications", url: "https://www.gov.uk/guidance/read-the-specifications-for-sia-licence-linked-training" },
+  },
+  uk18ed: {
+    answer:
+      "The 18th Edition exam is the City & Guilds Level 3 Award in the Requirements for Electrical Installations (2382-26), on BS 7671:2018 with Amendment 4:2026, the IET Wiring Regulations. It is one online, open-book test of 60 multiple-choice questions in 2 hours, taken with a clean copy of BS 7671, and the pass mark is approximately 60%. 2382-26 replaced 2382-22 from 16 April 2026.",
+    rows: [
+      { label: "Questions", value: "60 multiple choice" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "About 60% (pass or fail)" },
+      { label: "Open book", value: "BS 7671:2018+A4:2026 only, no notes or added material" },
+      { label: "Biggest areas", value: "Protection for safety 15, selection and erection 14" },
+      { label: "Qualification", value: "C&G Level 3 Award, 2382-26 (35 guided learning hours)" },
+      { label: "Taken at", value: "Approved colleges and training centres, on screen" },
+    ],
+    basedOn: "the City & Guilds 2382-26 qualification handbook (v1.0, March 2026) and the IET and NICEIC Amendment 4 guidance, checked October 2026",
+    source: { name: "City & Guilds: Requirements for Electrical Installations (2382)", url: "https://www.cityandguilds.com/qualifications-and-apprenticeships/building-services-industry/electrical-installation/2382-requirements-for-electrical-installations" },
+  },
+  capal: {
+    answer:
+      "The Canadian Firearms Safety Course (CFSC) is the RCMP course you must pass before applying for a Possession and Acquisition Licence (PAL) for non-restricted firearms. After classroom instruction from a provincially designated instructor you take a written test, usually 50 questions and mostly multiple choice, and a practical handling test, and you need 80% on each. Anyone 12 or older can take it; the PAL itself is for adults 18 and over and lasts 5 years.",
+    rows: [
+      { label: "Written test", value: "Usually 50 questions, mostly multiple choice" },
+      { label: "Practical test", value: "Handling and PROVE on common actions" },
+      { label: "Pass mark", value: "80% on each test" },
+      { label: "Course delivered by", value: "Instructors designated by each province's Chief Firearms Officer" },
+      { label: "Minimum age", value: "12 for the course, 18 for a PAL" },
+      { label: "Licence", value: "PAL, valid 5 years; 28-day minimum wait for new applicants" },
+      { label: "Restricted firearms", value: "Separate CRFSC course" },
+    ],
+    basedOn: "the RCMP Canadian Firearms Program course requirements and federal firearms law, checked October 2026",
+    source: { name: "RCMP: Firearms safety courses", url: "https://rcmp.ca/en/firearms/firearms-safety-training-transport-and-storage/safety-courses" },
+  },
+  caelec: {
+    answer:
+      "The Red Seal Construction Electrician exam is the interprovincial journeyperson exam for electricians in Canada (309A in Ontario). It has 100 four-option multiple-choice questions in four hours, and you need 70% to pass. The questions are drawn from the Red Seal Occupational Standard's five major work activities, with code questions answered from the 2024 Canadian Electrical Code, Part I, supplied at the exam.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, four options each" },
+      { label: "Time", value: "4 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Biggest areas", value: "Wiring systems 30, distribution and service 28" },
+      { label: "Code edition", value: "2024 CEC Part I (since June 2025)" },
+      { label: "Calculator", value: "Supplied at the exam; no personal devices" },
+      { label: "Given by", value: "Provincial and territorial apprenticeship authorities" },
+    ],
+    basedOn: "the Red Seal Construction Electrician exam breakdown and Exam Preparation Guide on red-seal.ca, checked October 2026",
+    source: { name: "Red Seal: Construction Electrician exam information", url: "https://red-seal.ca/eng/trades/constelectric/exam-information.shtml" },
+  },
+  auwhite: {
+    answer:
+      "The White Card is the general construction induction card everyone needs before doing construction work in Australia. You get it by completing the nationally recognised unit CPCWHS1001 Prepare to work safely in the construction industry with a registered training organisation (RTO), usually face to face in one day. There is no exam with a set pass mark: the trainer assesses you as competent through written and oral questions and practical tasks such as fitting PPE and reporting hazards. The card is recognised in every state and territory, but in most states it lapses if you do no construction work for 2 years.",
+    rows: [
+      { label: "Unit", value: "CPCWHS1001 Prepare to work safely in the construction industry" },
+      { label: "Delivered by", value: "Registered training organisations (RTOs)" },
+      { label: "Assessment", value: "Trainer observes you; written, oral and practical tasks" },
+      { label: "Pass mark", value: "None; competency-based (80% here is a readiness line)" },
+      { label: "Practical tasks", value: "Fit hard hat, eye and hearing protection, hi-vis; report two hazards" },
+      { label: "Card", value: "Recognised in every state and territory" },
+      { label: "Lapses", value: "In most states after 2 years without construction work" },
+      { label: "Issued by", value: "The state or territory regulator, or the RTO on its behalf" },
+    ],
+    basedOn: "the CPCWHS1001 unit of competency (Release 2) and the model WHS Regulations, checked October 2026",
+    source: { name: "training.gov.au: CPCWHS1001", url: "https://training.gov.au/training/details/CPCWHS1001/unitdetails" },
+  },
+  ks2: {
+    answer:
+      "The KS2 SATs are the national curriculum tests every Year 6 pupil in England takes at school in May. English reading is one paper of three texts, 50 marks in 60 minutes. Grammar, punctuation and spelling is a 50-mark question paper in 45 minutes plus a 20-word spelling test. Mathematics is an arithmetic paper (40 marks, 30 minutes) and two reasoning papers (35 marks, 40 minutes each), with no calculator. Each subject is reported as a scaled score from 80 to 120, and 100 is the expected standard. Writing is assessed by the teacher, not by a test.",
+    rows: [
+      { label: "Who takes it", value: "Year 6 pupils in England, in May" },
+      { label: "Reading", value: "1 paper, 3 texts, 50 marks, 60 minutes" },
+      { label: "Grammar, punctuation and spelling", value: "Paper 1: 50 marks, 45 minutes; Paper 2: 20-word spelling test" },
+      { label: "Maths", value: "Arithmetic 40 marks, 30 min; two reasoning papers, 35 marks, 40 min each; no calculator" },
+      { label: "Scores", value: "Scaled 80 to 120 per subject; 100 is the expected standard, 110+ a high score" },
+      { label: "Marks needed for 100 (2026)", value: "Reading 25/50, GPS 34/70, maths 56/110" },
+      { label: "Given by", value: "The child's school, set by the Standards and Testing Agency" },
+    ],
+    basedOn: "the Standards and Testing Agency's key stage 2 test frameworks for English reading, English grammar, punctuation and spelling, and mathematics, and the 2026 scaled score conversion tables",
+    source: { name: "Standards and Testing Agency: 2026 key stage 2 scaled score conversion tables", url: "https://www.gov.uk/government/publications/key-stage-2-tests-2026-scaled-scores" },
+    tigertest:
+      "Tigertest has two KS2 SATs practice tests (reading, grammar and punctuation Paper 1, and maths Papers 1, 2 and 3, each about 60% of the real length) with an estimated scaled score per subject, and five drills that each start with short lessons. All of it is free with no account required; the spelling test is not modelled.",
+  },
+  gcsemaths: {
+    answer:
+      "GCSE Mathematics in England is three written papers of 1 hour 30 minutes and 80 marks each: Paper 1 is non-calculator, and Papers 2 and 3 allow a calculator. The Foundation tier is graded 1 to 5 (4 is a standard pass, 5 a strong pass); about 25% of the marks are number, 20% algebra, 25% ratio, proportion and rates of change, 15% geometry and measures and 15% probability and statistics. AQA, Pearson Edexcel and OCR all follow the same Department for Education subject content, and grade boundaries are set after each exam.",
+    rows: [
+      { label: "Papers", value: "3 papers, 1 hour 30 minutes and 80 marks each" },
+      { label: "Calculator", value: "Not on Paper 1; allowed on Papers 2 and 3" },
+      { label: "Grades", value: "Foundation tier 1 to 5; 4 is a standard pass, 5 a strong pass" },
+      { label: "Topics", value: "Number 25%, algebra 20%, ratio 25%, geometry 15%, probability and statistics 15%" },
+      { label: "Pass mark", value: "Boundaries change by board and year; recently about 60% to 67% for a grade 4" },
+      { label: "Exam boards", value: "AQA, Pearson Edexcel and OCR, same DfE subject content" },
+    ],
+    basedOn: "the Department for Education GCSE mathematics subject content (2013) and Ofqual's Foundation tier weightings, checked October 2026",
+    source: { name: "GOV.UK: GCSE mathematics subject content and assessment objectives", url: "https://www.gov.uk/government/publications/gcse-mathematics-subject-content-and-assessment-objectives" },
+    tigertest:
+      "Tigertest has two practice tests, each three timed papers of 20 questions (non-calculator, calculator, calculator) weighted like the Foundation tier, and five topic drills that open with short lessons on the basics. Every question has one final answer; the real papers also give marks for working. All of it is free with no account required.",
+  },
+  osslt: {
+    answer:
+      "The Ontario Secondary School Literacy Test (OSSLT) is EQAO's reading and writing test for students working toward the Ontario Secondary School Diploma, normally written for the first time in Grade 10. It is taken online in two sessions, Session A of about 65 minutes and Session B of about 75. It has 37 scored questions: 35 selected-response (23 reading questions on an information paragraph, a news report, a dialogue and a real-life narrative, and 12 writing questions) and two written answers, a short reading response and an opinion essay. Results are a scale score from 200 to 400, and 300 is needed for a successful outcome. Students who have been unsuccessful can rewrite it, and after two opportunities with at least one unsuccessful they can take the Ontario Secondary School Literacy Course (OSSLC) instead.",
+    rows: [
+      { label: "Who takes it", value: "Ontario secondary students, normally first in Grade 10" },
+      { label: "Questions", value: "37 scored: 35 selected-response, 2 written answers" },
+      { label: "Reading", value: "Information paragraph, news report, dialogue, real-life narrative" },
+      { label: "Time", value: "Session A about 65 min, Session B about 75 min" },
+      { label: "Passing score", value: "300 on a 200 to 400 scale (successful)" },
+      { label: "If unsuccessful", value: "Rewrite, or the OSSLC after two opportunities" },
+      { label: "Given by", value: "EQAO, online at the student's school" },
+    ],
+    basedOn: "the EQAO Ontario Secondary School Literacy Test Framework and the EQAO OSSLT assessment page",
+    source: { name: "EQAO: Ontario Secondary School Literacy Test", url: "https://www.eqao.com/the-assessments/osslt/" },
+    tigertest:
+      "Tigertest has two 35-question OSSLT practice tests that follow the EQAO blueprint (all four reading forms and the 12 writing questions) and four drills that teach the basics first. All of it is free with no account required; the opinion essay and the written reading answer are not modelled.",
+  },
+  naplan: {
+    answer:
+      "NAPLAN (the National Assessment Program, Literacy and Numeracy) is sat online by Australian students in Years 3, 5, 7 and 9 each March. Year 9 sits four tests in a set order: Writing (42 minutes), Reading (65 minutes), Conventions of Language (45 minutes, spelling then grammar and punctuation) and Numeracy (65 minutes, a short non-calculator section, then an online calculator). The tests are tailored: how a student does on the first set of questions decides whether the next set is harder or easier. Since 2023 each domain is reported as one of four proficiency levels: Exceeding, Strong, Developing or Needs additional support. There is no pass mark.",
+    rows: [
+      { label: "Who takes it", value: "Students in Years 3, 5, 7 and 9 across Australia, in March" },
+      { label: "Year 9 tests", value: "Writing 42 min, Reading 65 min, Conventions of Language 45 min, Numeracy 65 min" },
+      { label: "Calculator", value: "Numeracy only, after a short non-calculator section that is locked once left" },
+      { label: "Format", value: "Online, tailored: later testlets are harder or easier depending on earlier answers" },
+      { label: "Results", value: "Exceeding, Strong, Developing or Needs additional support per domain; no pass mark" },
+      { label: "Year 9 Strong from", value: "Reading 539, Spelling 532, Grammar and punctuation 545, Numeracy 536" },
+      { label: "Given by", value: "The student's school, on ACARA's national assessment platform" },
+    ],
+    basedOn: "ACARA's published NAPLAN test design, tailored test structure and 2023 proficiency standards, and the Year 9 Australian Curriculum (Version 9.0)",
+    source: { name: "ACARA: NAPLAN, what's in the tests", url: "https://www.nap.edu.au/naplan/whats-in-the-tests" },
+    tigertest:
+      "Tigertest has two NAPLAN Year 9 practice tests covering Reading, Conventions of Language and Numeracy in tailored parts, an estimated scale score per domain against the proficiency levels, and six drills that teach the basics first. All of it is free with no account required; Writing and the spelling dictation are not modelled.",
+  },
+  nswsel: {
+    answer:
+      "The Selective High School Placement Test is the NSW Department of Education's entry test for Year 7 places in selective high schools, sat on a computer in Year 6. It has four tests, each weighted 25 percent: Reading (17 questions with 38 answers in 45 minutes), Mathematical Reasoning (35 questions in 40 minutes, five options each, no calculator), Thinking Skills (40 questions in 40 minutes, four options each) and Writing (one task in 30 minutes). There is no pass mark: results are scaled and combined into a placement score, places are offered in order of merit, and each school's minimum entry score changes every year.",
+    rows: [
+      { label: "Who takes it", value: "Year 6 students in NSW applying for Year 7 at a selective high school" },
+      { label: "Reading", value: "17 questions, 38 answers, 45 minutes, multiple choice" },
+      { label: "Mathematical Reasoning", value: "35 questions, 40 minutes, five options, no calculator" },
+      { label: "Thinking Skills", value: "40 questions, 40 minutes, four options" },
+      { label: "Writing", value: "1 open response, 30 minutes" },
+      { label: "Weighting", value: "Each test 25 percent" },
+      { label: "Passing score", value: "No pass mark; places offered in order of merit" },
+      { label: "Given by", value: "NSW Department of Education, on computers at test centres" },
+    ],
+    basedOn: "the NSW Department of Education's published test format for the Selective High School Placement Test",
+    source: { name: "NSW Department of Education: get ready for the Selective High School Placement Test", url: "https://education.nsw.gov.au/schooling/students/oc-and-shs/going-to-a-selective-high-school/get-ready-for-the-selective-high-school-placement-test" },
+    tigertest:
+      "Tigertest has two full practice tests covering Reading, Mathematical Reasoning and Thinking Skills at the real lengths and times, a percent score per section, and five drills that teach the basics first. All of it is free with no account required; Writing is not modelled.",
+  },
 };

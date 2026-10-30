@@ -1,0 +1,1697 @@
+[
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Strengthen an argument",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Mr Okafor: Our school should put a water fountain beside the oval. Students who play sport at lunch come back to class thirsty, and thirsty students find it hard to concentrate.\n\nWhich one of these statements, if true, most strengthens Mr Okafor's argument?",
+    "options": [
+      "The nearest water fountain is a five minute walk from the oval.",
+      "Most students carry a full water bottle with them to the oval.",
+      "The oval was planted with new grass at the start of the year.",
+      "Some students would rather spend lunch in the library than outside."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the closest fountain is far away, thirsty students really do lack an easy drink, so a fountain by the oval would help. Students already carrying full bottles would weaken the argument, and the grass and the library are beside the point.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Weaken an argument",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Tom: Our class goldfish has stopped eating much. It must be sick, so we should take it to the vet.\n\nWhich one of these statements, if true, most weakens Tom's argument?",
+    "options": [
+      "The goldfish has also started to swim slowly near the bottom.",
+      "Goldfish eat less when their water is cold, and it is now winter.",
+      "The vet nearest to the school is closed on Saturdays and Sundays.",
+      "The class bought the goldfish from a pet shop two years ago."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "This gives a healthy reason for the fish eating less, so it may not be sick at all. Swimming slowly near the bottom would make sickness more likely, which strengthens Tom's argument instead.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Identify the flaw",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ellie: Everyone who won a prize at the art show used paint. I used paint, so I must win a prize.\n\nWhich one of the following shows the mistake Ellie has made?",
+    "options": [
+      "Ellie did not check how many people entered the art show.",
+      "Some prize winners might have used pencils as well as paint.",
+      "Many people who used paint may still not win a prize.",
+      "Ellie thinks the judges like paintings more than drawings."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The winners all used paint, but that does not mean everyone who used paint wins. Ellie has turned the rule around. The number of entries does not fix that mistake."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Find the assumption",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Lachlan: It is going to rain on Saturday, so our cricket match will be cancelled.\n\nWhich assumption has Lachlan made?",
+    "options": [
+      "Lachlan's team was likely to win the cricket match.",
+      "The weather forecast is usually wrong about Saturdays.",
+      "The cricket match was due to start in the morning.",
+      "Cricket matches are cancelled when it rains."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lachlan only gets from rain to a cancelled match if rain causes matches to be called off. A wrong forecast would work against his argument, not support it."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Draw a valid conclusion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Every student in the chess club also plays in the school band. Ruby is in the chess club.\n\nIf the information is true, which one of these statements must also be true?",
+    "options": [
+      "Ruby plays in the school band.",
+      "Ruby is the best chess player.",
+      "Everyone in the band plays chess.",
+      "Ruby does not play any sport."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ruby is in the chess club and every chess club member plays in the band, so Ruby does. The rule does not work backwards, so band members need not be in the chess club.",
+    "basics": "inference"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The canteen sells sushi only on Wednesdays. Today the canteen is selling sushi.\n\nKiara says: \"So today must be Wednesday.\"\nBen says: \"So the canteen will not sell sushi tomorrow.\"\n\nIf the information is true, whose reasoning is correct?",
+    "options": [
+      "Only Kiara",
+      "Only Ben",
+      "Both Kiara and Ben",
+      "Neither Kiara nor Ben"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Sushi is sold only on Wednesdays, so today is Wednesday, as Kiara says. Tomorrow is Thursday, so there will be no sushi, as Ben says. Both are correct."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Strengthen an argument",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Priya: Our class should hold the cake stall on Friday instead of Monday. More parents come to school on Fridays because that is when the weekly assembly is held, and parents buy most of the cakes.\n\nWhich one of these statements, if true, most strengthens Priya's argument?",
+    "options": [
+      "Many parents leave straight after assembly to get to work on time.",
+      "Parents at assembly usually stay at school for a while afterwards.",
+      "The class baked more chocolate cakes than lemon cakes last time.",
+      "Students in other classes also like to buy cakes from the stall."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Priya needs the Friday parents to still be around when the stall is open, and this shows they are. Parents rushing off after assembly would weaken her point, and the type of cake or other buyers says nothing about Friday versus Monday.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Weaken an argument",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Jasmine: The library should buy more graphic novels. They are always borrowed, so students clearly love reading them.\n\nWhich one of these statements, if true, most weakens Jasmine's argument?",
+    "options": [
+      "Many students ask the librarian when new graphic novels will arrive.",
+      "Graphic novels cost about the same as other books in the library.",
+      "One student borrows every graphic novel each week for a project.",
+      "The library also lends magazines and audio books to students."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If one student is doing all the borrowing, the books being always out does not show that students in general love them. Students asking for new ones would support Jasmine instead.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Identify the flaw",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Marcus: I asked five friends in my class whether the school should have a longer lunch break, and all five said yes. So nearly every student at our school wants a longer lunch.\n\nWhich one of the following shows the mistake Marcus has made?",
+    "options": [
+      "Marcus should have asked the teachers instead of the students.",
+      "A longer lunch might make the school day finish later.",
+      "Marcus did not say how much longer the lunch break should be.",
+      "Five friends in one class cannot speak for a whole school."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Five friends from one class may think alike and cannot show what hundreds of students want. A later finish might be a reason against the idea, but it is not a mistake in his reasoning."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Find the assumption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ms Nguyen: Zara has finished all her maths homework early this week, so she will have time to help paint the class mural.\n\nWhich assumption has Ms Nguyen made?",
+    "options": [
+      "Zara has nothing else she needs to do in her spare time.",
+      "Painting a mural takes less time than doing maths homework.",
+      "Zara is the best painter in the whole class.",
+      "The mural needs to be finished by the end of the week."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Finishing homework only frees up time if Zara has no other jobs or activities filling it. Ms Nguyen does not need Zara to be the best painter, only to have time."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Draw a valid conclusion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At Bayside Public School, every student who walks to school gets a green token. Some students who get a green token also get a gold token. Ahmed did not get a green token.\n\nIf the information is true, which one of these statements must also be true?",
+    "options": [
+      "Ahmed came to school by car.",
+      "Ahmed did not walk to school.",
+      "Ahmed got a gold token.",
+      "Ahmed did not get a gold token."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If Ahmed had walked he would have a green token, so he did not walk. He might have come by bus rather than car, and nothing says gold tokens only go to green token holders, so either gold option could be wrong.",
+    "basics": "inference"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Draw a valid conclusion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Mia's class, everyone who plays the violin also learns French. Nobody who learns French is in the drama group.\n\nIf the information is true, which one of these statements cannot be true?",
+    "options": [
+      "Mia plays the violin and learns French.",
+      "Leo learns French but does not play the violin.",
+      "Ivy plays the violin and is in the drama group.",
+      "Sam is in the drama group and does not learn French."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A violin player learns French, and nobody who learns French is in drama, so a violin player cannot be in drama. Each of the other statements fits the rules.",
+    "basics": "inference"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To join the coding club, a student must be in Year 5 or Year 6 and must have handed in a permission note. Isla is in Year 6 and is in the coding club. Raj is in Year 6 and has handed in a permission note.\n\nNoah says: \"Isla must have handed in a permission note.\"\nChloe says: \"Raj must be in the coding club.\"\n\nIf the information is true, whose reasoning is correct?",
+    "options": [
+      "Only Noah",
+      "Only Chloe",
+      "Both Noah and Chloe",
+      "Neither Noah nor Chloe"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Every club member must have handed in a note, so Noah is right about Isla. Raj meets the rules for joining, but nothing says he chose to join, so Chloe is wrong."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Mrs Silva's class has a rule: if it rains at lunch, students play in the hall. Today students played in the hall.\n\nJack says: \"So it must have rained at lunch today.\"\nMei says: \"Students might have played in the hall even if it had not rained.\"\n\nIf the information is true, whose reasoning is correct?",
+    "options": [
+      "Only Jack",
+      "Only Mei",
+      "Both Jack and Mei",
+      "Neither Jack nor Mei"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The rule only says what happens when it rains. It does not say the hall is used only on rainy days, so Jack cannot be sure, while Mei is right that it might not have rained."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Strengthen an argument",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Coach Lena: Our netball team lost most of its games in the second half this season. The players must be getting too tired by then, so we should add more running to training.\n\nWhich one of these statements, if true, most strengthens Coach Lena's argument?",
+    "options": [
+      "Opposing teams usually changed their tactics at half time.",
+      "The team trains on the school courts twice a week after school.",
+      "The team won more games this season than it did last season.",
+      "Fresh players brought on late in games played as well as ever."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If rested players did fine in the second half, tiredness looks like the real cause, which supports more fitness work. Other teams changing tactics gives a different cause and so weakens the argument.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Weaken an argument",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Principal Harris: Since we started giving out stickers for walking to school, the number of students who walk has gone up. The stickers are clearly working.\n\nWhich one of these statements, if true, most weakens Principal Harris's argument?",
+    "options": [
+      "A new footpath to the school opened the same week the stickers began.",
+      "Students who walk say they are saving their stickers to swap for prizes.",
+      "Students who walk arrive at about the same time as those driven.",
+      "Some students live too far away from the school to walk there."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The new footpath could explain the extra walkers, so the stickers may not be the reason. Students saving stickers for prizes suggests the stickers do matter, which supports the principal.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Identify the flaw",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Hana: Students in the school choir get better marks in music than other students. So joining the choir must improve your music marks.\n\nWhich one of the following shows the mistake Hana has made?",
+    "options": [
+      "Some choir students do not get the top mark in music.",
+      "Students who join may already have been good at music.",
+      "Choir practice takes time away from other school subjects.",
+      "Hana has not said how many students are in the choir."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The choir and the good marks go together, but the good musicians may have joined because they were already good. Hana assumes the choir causes the marks. A few choir students missing top marks does not affect her claim about averages."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Find the assumption",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Oscar: The new bus timetable has the bus arriving at my stop at 8:10 instead of 8:20. That means I will get to school ten minutes earlier from now on.\n\nWhich assumption has Oscar made?",
+    "options": [
+      "Arriving at school ten minutes earlier is a good thing.",
+      "The bus was often late under the old timetable.",
+      "The trip to school will take no longer than before.",
+      "Other students from his street will catch the earlier bus too."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Leaving ten minutes earlier only means arriving ten minutes earlier if the trip is no longer than before. Oscar does not say whether arriving early is good, so that is not something he assumed."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Draw a valid conclusion",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "At the swimming carnival, every student who swam in the relay also swam freestyle. No student who swam backstroke swam freestyle. Some students who swam backstroke also swam breaststroke.\n\nIf the information is true, which one of these statements must also be true?",
+    "options": [
+      "Some students who swam breaststroke swam in the relay.",
+      "Every student who swam freestyle swam in the relay.",
+      "No student who swam breaststroke swam freestyle.",
+      "No student who swam in the relay swam backstroke."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Relay swimmers all swam freestyle, and freestyle swimmers never swam backstroke, so no relay swimmer swam backstroke. Breaststroke swimmers who did not swim backstroke might still have swum freestyle, so that option need not be true.",
+    "basics": "inference"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 1,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a quiz of 12 questions, each correct answer earns 3 points, each wrong answer loses 1 point and a question left blank scores 0. Farah scored 18 points.\n\nTheo says: \"Farah must have got 7 answers right.\"\nAnika says: \"Farah must have answered every question.\"\n\nIf the information is true, whose reasoning is correct?",
+    "options": [
+      "Only Theo",
+      "Only Anika",
+      "Both Theo and Anika",
+      "Neither Theo nor Anika"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Farah could have got 6 right, 0 wrong and 6 blank (18 points) or 7 right, 3 wrong and 2 blank (21 minus 3 is 18). Either way some questions were blank, and she need not have got 7 right, so neither is correct."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Ordering from clues",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Five friends compare their heights. Aisha is taller than Ben. Ben is taller than Callum. Dev is shorter than Callum. Ella is taller than Aisha.\n\nWho is the third tallest?",
+    "options": [
+      "Ben",
+      "Aisha",
+      "Callum",
+      "Dev"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "From tallest to shortest the order is Ella, Aisha, Ben, Callum, Dev. So Ben is third."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Time reasoning",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A movie starts at 6:45 pm and runs for 1 hour and 50 minutes. What time does it finish?",
+    "options": [
+      "8:25 pm",
+      "8:35 pm",
+      "7:35 pm",
+      "8:45 pm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "6:45 pm plus 1 hour is 7:45 pm, and 50 more minutes is 8:35 pm. Forgetting to carry into the next hour gives 7:35 pm."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Number puzzle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Leila has 20 dollars. She buys 3 notebooks that cost 4 dollars each and a pen that costs 3 dollars. How much money does she have left?",
+    "options": [
+      "8 dollars",
+      "9 dollars",
+      "5 dollars",
+      "13 dollars"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The notebooks cost 3 times 4, which is 12 dollars, and with the pen she spends 15 dollars. 20 minus 15 leaves 5 dollars. Forgetting the pen gives 8 dollars.",
+    "basics": "wordProblems"
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Number sequence",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What number comes next in this sequence?\n\n3, 7, 15, 31, ?",
+    "options": [
+      "47",
+      "62",
+      "61",
+      "63"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each number is double the one before plus 1: 31 times 2 is 62, plus 1 is 63. Adding 16 as if the jumps were equal gives 47."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Calendar reasoning",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Today is Tuesday. What day of the week will it be 17 days from today?",
+    "options": [
+      "Friday",
+      "Thursday",
+      "Saturday",
+      "Wednesday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 days from Tuesday is Tuesday again. 3 more days is Friday."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Counting",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Kai has 3 T-shirts and 4 pairs of shorts. How many different outfits of one T-shirt and one pair of shorts can he make?",
+    "options": [
+      "7",
+      "12",
+      "14",
+      "10"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each of the 3 T-shirts can go with any of the 4 pairs of shorts, so there are 3 times 4, which is 12 outfits. Adding instead of multiplying gives 7."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Reading a table",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table shows how many laps four students swam this week.\n\n| Name | Mon | Tue | Wed |\n|---|---|---|---|\n| Zoe | 6 | 4 | 5 |\n| Omar | 3 | 7 | 6 |\n| Bella | 5 | 5 | 5 |\n| Tariq | 8 | 2 | 4 |\n\nThe coach gives a badge to anyone who swam at least 15 laps in total and at least 4 laps every day. Who gets a badge?",
+    "options": [
+      "Omar and Bella",
+      "Zoe, Omar and Bella",
+      "Zoe and Bella",
+      "Bella only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The totals are Zoe 15, Omar 16, Bella 15 and Tariq 14. Omar has the highest total but swam only 3 laps on Monday, so only Zoe and Bella meet both rules."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Working backwards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Noor thinks of a number. She doubles it, then subtracts 6, then halves the result. Her answer is 11. What number did she start with?",
+    "options": [
+      "11",
+      "8",
+      "17",
+      "14"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Work backwards: 11 doubled is 22, add 6 to get 28, and halve to get 14. Check: 14 doubled is 28, minus 6 is 22, halved is 11."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Age puzzle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Josh is 4 years older than his sister Mila. In 3 years' time, their ages will add up to 30. How old is Mila now?",
+    "options": [
+      "10",
+      "12",
+      "13",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In 3 years their ages add to 30 and differ by 4, so they will be 13 and 17. Mila will be 13 then, so she is 10 now. Answering 13 forgets to go back 3 years.",
+    "basics": "wordProblems"
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Seating positions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Five students sit in a row of chairs numbered 1 to 5 from left to right. Grace sits in chair 3. Liam sits directly to the left of Grace. Sofia is not at either end. Hamid sits somewhere to the right of Sofia.\n\nWhere does Jae sit?",
+    "options": [
+      "Chair 2",
+      "Chair 1",
+      "Chair 4",
+      "Chair 5"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Liam is in chair 2. Sofia cannot be at an end, so she takes chair 4, and Hamid must be to her right in chair 5. That leaves chair 1 for Jae."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Truth and lies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One of three children ate the last biscuit. Exactly one of them is telling the truth.\n\nRuby: \"Sam ate it.\"\nSam: \"I did not eat it.\"\nTia: \"Ruby did not eat it.\"\n\nWho ate the biscuit?",
+    "options": [
+      "Sam",
+      "Tia",
+      "Ruby",
+      "It cannot be worked out"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If Ruby ate it, only Sam's statement is true, which fits. If Sam ate it, Ruby and Tia are both telling the truth, and if Tia ate it, Sam and Tia are both telling the truth. So it was Ruby."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Codes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a secret code, each letter is replaced by the letter two places after it in the alphabet, so A becomes C and Y becomes A. A code word is written as FQI. What is the real word?",
+    "options": [
+      "HSK",
+      "COG",
+      "DOE",
+      "DOG"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To decode, move each letter two places back: F becomes D, Q becomes O and I becomes G, giving DOG. Moving forward instead gives HSK."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Timetables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bus leaves the depot every 25 minutes, starting at 6:10 am. Kim arrives at the depot at 8:00 am. How long must she wait for the next bus?",
+    "options": [
+      "15 minutes",
+      "10 minutes",
+      "20 minutes",
+      "5 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The buses leave at 6:10, 6:35, 7:00, 7:25, 7:50 and 8:15. Kim just misses the 7:50 bus, so she waits 15 minutes."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Counting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Six teams enter a netball competition. Each team plays every other team once. How many games are played?",
+    "options": [
+      "30",
+      "15",
+      "12",
+      "36"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The first team plays 5 games, the next has 4 new opponents, then 3, 2 and 1: 5 + 4 + 3 + 2 + 1 = 15. Counting 6 times 5 gives 30, but that counts every game twice."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Digit puzzle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many whole numbers from 1 to 100 contain the digit 7 at least once?",
+    "options": [
+      "20",
+      "10",
+      "19",
+      "18"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ten numbers end in 7 (7, 17 ... 97) and ten are in the seventies (70 to 79). 77 is in both lists, so the total is 10 + 10 - 1 = 19."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Ordering from clues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Six runners finished a race with no ties. Uma finished after Pia but before Rhys. Kofi finished directly after Rhys. Nadia finished before Pia. Lou finished after Uma but before Kofi.\n\nWho finished fourth?",
+    "options": [
+      "Uma",
+      "Rhys",
+      "Pia",
+      "Lou"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Nadia, Pia and Uma come in that order. Lou is after Uma and before Kofi, and since Kofi is directly after Rhys, Lou must also be before Rhys. The order is Nadia, Pia, Uma, Lou, Rhys, Kofi."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Truth and lies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A lost hat is in one of three lockers. Each locker has a note on it, and exactly one note is true.\n\nLocker 1: \"The hat is in this locker.\"\nLocker 2: \"The hat is not in this locker.\"\nLocker 3: \"The hat is not in locker 1.\"\n\nWhich locker is the hat in?",
+    "options": [
+      "Locker 2",
+      "Locker 1",
+      "Locker 3",
+      "It cannot be worked out"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the hat is in locker 1, notes 1 and 2 are both true. If it is in locker 3, notes 2 and 3 are both true. Only locker 2 makes exactly one note (note 3) true."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Digit puzzle",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Rosa uses each of the digits 2, 5, 7 and 9 once to make two 2-digit numbers. She adds the two numbers. What is the smallest total she can make?",
+    "options": [
+      "104",
+      "86",
+      "95",
+      "77"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To keep the total small, put the smallest digits, 2 and 5, in the tens places: 27 + 59 = 86 (29 + 57 also gives 86). Making 25 + 79 gives 104."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Time reasoning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A clock gains 3 minutes every hour. It is set to the correct time at 9:00 am. Later the same day, the clock shows 3:18 pm. What is the correct time?",
+    "options": [
+      "2:59 pm",
+      "3:01 pm",
+      "3:00 pm",
+      "2:42 pm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each real hour, the clock moves forward 63 minutes. From 9:00 am to 3:18 pm the clock has moved 378 minutes, which is 6 lots of 63, so 6 real hours have passed and the time is 3:00 pm."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 1,
+    "skill": "Fewest and most",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A bag holds 5 red, 4 blue and 3 green counters. Without looking, Jai takes counters out one at a time. What is the fewest counters he must take out to be sure he has at least one of each colour?",
+    "options": [
+      "3",
+      "9",
+      "12",
+      "10"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In the unluckiest case he takes all 5 red and all 4 blue first, which is 9 counters with no green. The next one must be green, so he needs 10 to be sure."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Strengthen an argument",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ruby: Our street should get a pedestrian crossing near the park. Lots of children cross the road there to reach the playground, and cars drive fast along that part of the street.\n\nWhich one of these statements, if true, most strengthens Ruby's argument?",
+    "options": [
+      "There have been several near misses with children at that spot.",
+      "Most children reach the playground on a footpath that avoids the road.",
+      "The playground was repainted in bright colours last spring.",
+      "The park has a large picnic area with free barbecues for families."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Near misses show that the spot really is dangerous for children, which backs up the need for a crossing. A footpath that avoids the road would mean few children cross there, which weakens Ruby's argument.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Weaken an argument",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ivy: My little brother is always tired at school. He must not be getting enough sleep at night.\n\nWhich one of these statements, if true, most weakens Ivy's argument?",
+    "options": [
+      "He often stays up late reading under the blankets with a torch.",
+      "He sleeps eleven hours a night, more than most children.",
+      "His school starts at nine o'clock every morning.",
+      "Ivy's brother is in Year 2 at the same school as Ivy."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If he already sleeps more than most children, a lack of sleep is unlikely to be why he is tired. Staying up late reading would support Ivy's argument instead.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Identify the flaw",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ben: Our soccer team always wins when Jade plays. Jade is sick today, so we are going to lose.\n\nWhich one of the following shows the mistake Ben has made?",
+    "options": [
+      "Ben has not said how many goals Jade usually scores.",
+      "Ben should have asked the coach who is playing today.",
+      "The team could still win a game without Jade playing.",
+      "Jade might be well enough to play again next week."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Winning whenever Jade plays does not mean losing whenever she does not. The team might also win without her. How many goals Jade scores does not change this mistake."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Find the assumption",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Mum: The shop closes at 5 pm. It is 4:30 pm now, so we have time to buy milk before it closes.\n\nWhich assumption has Mum made?",
+    "options": [
+      "The shop sells milk more cheaply than the other shops nearby.",
+      "The shop is open on weekends as well as on weekdays.",
+      "The family has no milk left in the fridge at home.",
+      "They can get to the shop and buy milk within 30 minutes."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "There is half an hour until closing, so Mum must be taking for granted that the trip and the purchase fit into it. Whether there is milk at home is a reason to go, not part of whether there is time."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Draw a valid conclusion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "All the students in Room 4 are going on the excursion to the museum. Felix is not going on the excursion.\n\nIf the information is true, which one of these statements must also be true?",
+    "options": [
+      "Felix is not in Room 4.",
+      "Felix is sick today.",
+      "Felix has been to the museum.",
+      "Everyone going is in Room 4."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If Felix were in Room 4 he would be going, so he cannot be in Room 4. We do not know why he is not going, and other classes may be going too.",
+    "basics": "inference"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The library is open every weekday and closed on Saturdays and Sundays. Today the library is closed.\n\nMila says: \"So today must be Saturday or Sunday.\"\nArjun says: \"So the library will be open tomorrow.\"\n\nIf the information is true, whose reasoning is correct?",
+    "options": [
+      "Only Mila",
+      "Only Arjun",
+      "Both Mila and Arjun",
+      "Neither Mila nor Arjun"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The library is only closed on weekends, so today is Saturday or Sunday, as Mila says. If today is Saturday, tomorrow is Sunday and the library will still be closed, so Arjun cannot be sure."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Strengthen an argument",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Mr Patel: Students should stop using tablets in the hour before bed. Screens keep the brain alert, and students who go to bed with an alert brain take longer to fall asleep.\n\nWhich one of these statements, if true, most strengthens Mr Patel's argument?",
+    "options": [
+      "Students who read paper books before bed take just as long to fall asleep.",
+      "In a trial, students fell asleep sooner on nights without screens.",
+      "Most tablets can be set to switch off by themselves at a chosen time.",
+      "Many students use their tablets for homework in the afternoon."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The trial shows that dropping screens before bed really does help students fall asleep faster. If paper book readers take just as long, screens may not be the problem, which weakens his argument.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Weaken an argument",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Daniel: The new reading program has worked. This year our class's average reading score went up by ten points compared with last year's class.\n\nWhich one of these statements, if true, most weakens Daniel's argument?",
+    "options": [
+      "Students said they read more books at home because of the program.",
+      "The reading program uses books printed in large, clear type.",
+      "This year's class read much better before the program began.",
+      "Last year's class had the same teacher as this year's class."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If this year's class was already better at reading, the higher scores may have nothing to do with the program. Students reading more because of the program would support Daniel.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Identify the flaw",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Jordan: Hot chips are not a healthy food. My lunch today has no hot chips in it. So my lunch today must be healthy.\n\nWhich one of the following shows the mistake Jordan has made?",
+    "options": [
+      "Some people think hot chips are fine if eaten only rarely.",
+      "Jordan did not say who packed his lunch for him today.",
+      "Jordan should only eat hot chips on the weekend.",
+      "A lunch with no hot chips could still be unhealthy."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Leaving out one unhealthy food does not make a meal healthy, because it could be full of other unhealthy food. Who packed the lunch has nothing to do with the reasoning."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Find the assumption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Isaac: Our class got the highest score in the school spelling bee, so we must have the best spellers in the school.\n\nWhich assumption has Isaac made?",
+    "options": [
+      "The spelling bee fairly measured each class's spelling.",
+      "Isaac's class practised spelling more than any other class.",
+      "Spelling bees are more fun than other school competitions.",
+      "Isaac is one of the best spellers in his own class."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Isaac moves from the top score to the best spellers, so he must assume the spelling bee fairly measured each class's spelling. How much his class practised would explain the result but is not needed for his conclusion."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Draw a valid conclusion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At a fruit stall, every bag of apples costs more than every bag of pears. Every bag of oranges costs less than every bag of pears.\n\nIf the information is true, which one of these statements must also be true?",
+    "options": [
+      "A bag of pears costs less than 5 dollars.",
+      "Every apple bag costs more than every orange bag.",
+      "Oranges are the most popular fruit sold at the stall.",
+      "Some bags of oranges cost more than some bags of apples."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Apples cost more than pears and pears cost more than oranges, so apples cost more than oranges. The last option can never be true, and the prices and popularity are not given.",
+    "basics": "inference"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Draw a valid conclusion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Every member of the hockey team trains on Tuesdays. Nobody who trains on Tuesdays goes to art class. Kenji goes to art class.\n\nIf the information is true, which one of these statements cannot be true?",
+    "options": [
+      "Kenji trains for another sport on Thursdays.",
+      "Kenji plays a sport other than hockey.",
+      "Kenji is a member of the hockey team.",
+      "Kenji's sister is in the hockey team."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Kenji goes to art class, so he does not train on Tuesdays, so he cannot be in the hockey team. The other statements could all be true.",
+    "basics": "inference"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Every student who finishes the reading challenge gets a certificate. Some students who get a certificate also get a book voucher. Paulo got a book voucher. Wren did not finish the reading challenge.\n\nZac says: \"Paulo must have finished the reading challenge.\"\nTess says: \"Wren might still have got a certificate.\"\n\nIf the information is true, whose reasoning is correct?",
+    "options": [
+      "Only Zac",
+      "Only Tess",
+      "Both Zac and Tess",
+      "Neither Zac nor Tess"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Nothing says vouchers go only to certificate holders, or certificates only to finishers, so Zac cannot be sure about Paulo. For the same reason Wren might have got a certificate another way, so Tess is right."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A school bus can carry 40 students. 95 students are going on an excursion, and the school wants to use as few buses as possible.\n\nHugo says: \"95 divided by 40 is about 2, so the school needs 2 buses.\"\nNia says: \"Three buses hold 120 students, so there will be exactly 15 empty seats.\"\n\nIf the information is true, whose reasoning is correct?",
+    "options": [
+      "Only Hugo",
+      "Only Nia",
+      "Both Hugo and Nia",
+      "Neither Hugo nor Nia"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Two buses hold only 80 students, so 3 are needed and Hugo is wrong. Three buses hold 120, and 120 minus 95 is 25 empty seats, not 15, so Nia is wrong too."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Strengthen an argument",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Sienna: Our town's new skate park has reduced graffiti in the town centre. Before it opened, many teenagers spent their afternoons in the centre with nothing to do, and since it opened, graffiti there has dropped by half.\n\nWhich one of these statements, if true, most strengthens Sienna's argument?",
+    "options": [
+      "The council now cleans graffiti off walls within a day of it appearing.",
+      "The skate park is open from early in the morning until sunset.",
+      "Some adults in the town think the skate park is far too noisy.",
+      "Graffiti has not dropped in nearby towns that have no skate park."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If graffiti stayed the same in similar towns without a skate park, the skate park looks like the reason for the drop. Faster cleaning by the council gives another reason, so it weakens Sienna's argument.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Weaken an argument",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Ms Kowalski: Students who eat breakfast do better in morning tests. So the school should start a free breakfast club, and test results will improve.\n\nWhich one of these statements, if true, most weakens Ms Kowalski's argument?",
+    "options": [
+      "Most students who would use the club already eat breakfast at home.",
+      "Students who began eating breakfast this year improved their test results.",
+      "The school canteen has enough space to seat sixty students at once.",
+      "Some parents would like to volunteer to help run the club."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the club's users already eat breakfast, the club will not change how many students start the day fed, so results are unlikely to improve. Students improving after starting breakfast would support her argument.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Identify the flaw",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Amira: Most people at my school have a pet. Most people at my school ride a bike. So most people at my school who have a pet also ride a bike.\n\nWhich one of the following shows the mistake Amira has made?",
+    "options": [
+      "Having a pet and riding a bike are not connected in any way.",
+      "Most pet owners might be among those who do not ride bikes.",
+      "Amira did not ask every person at her school about pets.",
+      "Some people who ride a bike might own more than one pet."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Two groups can each be more than half the school and still overlap only a little. For example, out of 100 students, 60 might have a pet and 60 ride, with only 20 doing both, so most pet owners would not ride."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Find the assumption",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Ava: The council says the new library will be finished in March. Last year the council said the new pool would be finished in March, and it was finished in June. So the library will not be finished until June.\n\nWhich assumption has Ava made?",
+    "options": [
+      "The pool was much harder to build than the library will be.",
+      "People in the town use the library more than they use the pool.",
+      "The library will be delayed by the same amount as the pool was.",
+      "The council always finishes its buildings on time."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ava expects exactly the same three month delay, so she must assume the library will run late just as the pool did. A pool that was harder to build would weaken her argument, not support it."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Draw a valid conclusion",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "After a spelling test, every student who scored above 15 got a sticker. Everyone who got a sticker also got a merit note. Lily got a merit note but no sticker. Raj did not get a merit note.\n\nIf the information is true, which one of these statements must also be true?",
+    "options": [
+      "Lily scored more than Raj.",
+      "Lily scored 16 or more.",
+      "Raj scored more than 15.",
+      "Raj scored 15 or less."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A score above 15 would have earned Raj a sticker and so a merit note, which he did not get, so he scored 15 or less. Lily also scored 15 or less, so we cannot tell which of them scored more.",
+    "basics": "inference"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 2,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Five friends ran a race with no ties. Kai finished ahead of Lola, and Lola finished ahead of Max. Ned finished ahead of Kai. Oli finished somewhere behind Ned.\n\nGrace says: \"Max could not have won the race.\"\nFinn says: \"Oli could have finished second.\"\n\nIf the information is true, whose reasoning is correct?",
+    "options": [
+      "Only Grace",
+      "Only Finn",
+      "Both Grace and Finn",
+      "Neither Grace nor Finn"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Max finished behind Lola, so he did not win, and Grace is right. The order Ned, Oli, Kai, Lola, Max fits every clue, so Oli could have been second and Finn is right too."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Ordering from clues",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Four friends compare how many books they read in the holidays. Tama read more than Jess. Jess read more than Arlo. Bree read fewer than Arlo.\n\nWho read the second most books?",
+    "options": [
+      "Jess",
+      "Tama",
+      "Arlo",
+      "Bree"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "From most to fewest the order is Tama, Jess, Arlo, Bree. So Jess read the second most."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Time reasoning",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Sana's piano lesson starts at 3:50 pm and lasts 45 minutes. She then walks home, which takes 20 minutes. What time does she get home?",
+    "options": [
+      "4:45 pm",
+      "4:55 pm",
+      "5:05 pm",
+      "4:35 pm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The lesson ends at 4:35 pm, and 20 minutes later is 4:55 pm. Stopping at the end of the lesson gives 4:35 pm."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Number puzzle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Pencils cost 60 cents each. What is the greatest number of pencils Ollie can buy with 5 dollars?",
+    "options": [
+      "9",
+      "7",
+      "8",
+      "6"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "8 pencils cost 4 dollars 80 cents and 9 pencils would cost 5 dollars 40 cents, which is too much. So the most he can buy is 8.",
+    "basics": "wordProblems"
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Letter sequence",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What letter comes next in this sequence?\n\nA, C, F, J, O, ?",
+    "options": [
+      "T",
+      "V",
+      "S",
+      "U"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The jumps get one bigger each time: forward 2, 3, 4, then 5 to reach O. Forward 6 more letters from O is U."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Calendar reasoning",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The 1st of March is a Monday. What day of the week is the 25th of March?",
+    "options": [
+      "Thursday",
+      "Wednesday",
+      "Friday",
+      "Tuesday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The 1st, 8th, 15th and 22nd are all Mondays. The 25th is 3 days after the 22nd, so it is a Thursday."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Number puzzle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "There are 28 students in a class, and 15 of them are girls. How many more girls than boys are in the class?",
+    "options": [
+      "13",
+      "2",
+      "15",
+      "1"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "There are 28 minus 15, which is 13 boys. 15 girls minus 13 boys is 2 more girls. Answering 13 gives the number of boys instead.",
+    "basics": "wordProblems"
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Reading a table",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table shows four morning buses from the Town Hall to the beach.\n\n| Bus | Leaves Town Hall | Arrives at beach |\n|---|---|---|\n| A | 8:05 | 8:47 |\n| B | 8:20 | 8:58 |\n| C | 8:35 | 9:20 |\n| D | 8:50 | 9:30 |\n\nWhich bus has the shortest trip?",
+    "options": [
+      "Bus A",
+      "Bus C",
+      "Bus B",
+      "Bus D"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The trips take A 42 minutes, B 38 minutes, C 45 minutes and D 40 minutes. Bus A arrives first, but Bus B has the shortest trip."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Working backwards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Carlos had some stickers. He gave half of them to his brother, then gave 4 to his friend. He had 9 stickers left. How many did he start with?",
+    "options": [
+      "22",
+      "13",
+      "17",
+      "26"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Before giving 4 away he had 9 + 4 = 13, which was half of what he started with, so he had 26. Doubling 9 and then adding 4 gives 22, which does the steps in the wrong order."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Age puzzle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Mum is 36 years old and her daughter Hannah is 8. In how many years will Mum be exactly three times as old as Hannah?",
+    "options": [
+      "6",
+      "4",
+      "8",
+      "12"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Try the choices: in 6 years Mum will be 42 and Hannah 14, and 42 is 3 times 14. In 4 years they would be 40 and 12, which does not work.",
+    "basics": "wordProblems"
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Seating positions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Six friends stand in a line at the canteen. Pita is first. Uri is fifth. Vee is directly in front of Uri. Rosa is directly behind Sami. Tim is somewhere behind Rosa.\n\nWho is third in the line?",
+    "options": [
+      "Sami",
+      "Rosa",
+      "Tim",
+      "Vee"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pita is 1st, Uri 5th and Vee 4th, leaving places 2, 3 and 6. Sami and Rosa must stand next to each other, so they take 2 and 3, with Rosa directly behind Sami in 3rd. Tim is 6th."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Truth and lies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Mr Lee's class pet is hiding in the cupboard, under the sink or behind the bookshelf. Exactly one of these students is telling the truth.\n\nAli: \"It is in the cupboard.\"\nBec: \"It is not under the sink.\"\nCam: \"Ali is wrong.\"\n\nWhere is the pet?",
+    "options": [
+      "In the cupboard",
+      "Behind the bookshelf",
+      "Under the sink",
+      "It cannot be worked out"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If it is in the cupboard, Ali and Bec are both telling the truth. If it is behind the bookshelf, Bec and Cam are both telling the truth. Only under the sink leaves exactly one true statement, Cam's."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Codes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a code, A = 1, B = 2, C = 3 and so on up to Z = 26. A word's score is the total of its letters, so CAT scores 3 + 1 + 20 = 24. Which word scores 30?",
+    "options": [
+      "PIG",
+      "HEN",
+      "LAKE",
+      "MAP"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "MAP is 13 + 1 + 16 = 30. PIG scores 32, HEN scores 27 and LAKE scores 29."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Timetables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ari, Bo and Cleo start running laps of the oval from the same line at the same time. Ari takes 4 minutes for each lap, Bo takes 6 minutes and Cleo takes 8 minutes. After how many minutes will all three next be at the starting line together?",
+    "options": [
+      "24",
+      "48",
+      "18",
+      "12"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ari is at the line every 4 minutes, Bo every 6 and Cleo every 8. The first time that is on all three lists is 24 minutes. At 12 minutes Cleo is only halfway round."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Counting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many different three-digit numbers can be made using three different digits from 0, 1, 4 and 8? A number cannot start with 0.",
+    "options": [
+      "24",
+      "18",
+      "12",
+      "27"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "There are 3 choices for the first digit (1, 4 or 8), then 3 choices for the second (including 0) and 2 for the third: 3 times 3 times 2 is 18. Allowing a leading 0 gives 24."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Digit puzzle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ella's house number has two digits that add up to 11. When the two digits are swapped, the new number is 27 less than her house number. What is her house number?",
+    "options": [
+      "47",
+      "83",
+      "74",
+      "65"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The pairs adding to 11 are 29, 38, 47, 56, 65, 74, 83 and 92. Swapping 74 gives 47, and 74 minus 47 is 27. 47 is the swapped number, not the house number."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Seating positions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Five children sit at five desks in a row numbered 1 to 5. Bilal sits at desk 2. Chloe sits at one end of the row. Dmitri sits directly between Anh and Esme. Anh does not sit next to Bilal.\n\nWho sits at the other end of the row from Chloe?",
+    "options": [
+      "Esme",
+      "Dmitri",
+      "Bilal",
+      "Anh"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Anh, Dmitri and Esme need three desks in a row. If Chloe were at desk 5 the free desks would be 1, 3 and 4, which are not all together, so Chloe is at desk 1 and the three take desks 3, 4 and 5. Anh cannot be next to Bilal, so Anh is at desk 5."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Truth and lies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "One of four students, Jo, Kim, Lev and Max, left the art room tap running. Exactly one of them is telling the truth.\n\nJo: \"Kim did it.\"\nKim: \"Max did it.\"\nLev: \"I did not do it.\"\nMax: \"Kim is lying.\"\n\nWho left the tap running?",
+    "options": [
+      "Lev",
+      "Jo",
+      "Kim",
+      "Max"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If Lev did it, only Max is telling the truth, which fits. If Jo did it, Lev and Max are both truthful; if Kim did it, Jo, Lev and Max are; if Max did it, Kim and Lev are. So it was Lev."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Number puzzle",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A teacher has between 30 and 60 pencils. If she shares them equally among 4 students, 3 are left over. If she shares them equally among 5 students, 2 are left over. How many pencils does she have?",
+    "options": [
+      "43",
+      "47",
+      "52",
+      "37"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Numbers that leave 2 over when shared among 5 end in 2 or 7: 32, 37, 42, 47, 52, 57. Of these, only 47 leaves 3 over when shared among 4 (44 + 3).",
+    "basics": "wordProblems"
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Time reasoning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A cinema shows the same film again and again. Each showing lasts 1 hour 35 minutes, and there is a 20 minute break between showings. The first showing starts at 10:00 am. What time does the fourth showing start?",
+    "options": [
+      "3:25 pm",
+      "5:40 pm",
+      "3:45 pm",
+      "4:05 pm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each showing plus its break takes 1 hour 55 minutes. The fourth showing starts after 3 of these: 5 hours 45 minutes after 10:00 am, which is 3:45 pm. Leaving out one break gives 3:25 pm."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 2,
+    "skill": "Fewest and most",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "25 students each voted once for one of three candidates for class captain: Rani, Seb and Tilly. Rani got the most votes, and no two candidates got the same number of votes. What is the fewest votes Rani could have got?",
+    "options": [
+      "9",
+      "11",
+      "8",
+      "10"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If Rani got 9, the others could have at most 8 and 7, which makes only 24 votes. With 10, Seb and Tilly can have 9 and 6, which makes 25. So 10 is the fewest."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 0,
+    "skill": "Strengthen an argument",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Maddie: Our school should plant more trees around the playground. On hot days the playground has almost no shade, and many students stay inside instead of playing.\n\nWhich one of these statements, if true, most strengthens Maddie's argument?",
+    "options": [
+      "Students play outside more in the parts of the school with shade.",
+      "Students who stay inside on hot days say they would rather read than play.",
+      "Gum trees can grow to more than forty metres tall in good soil.",
+      "The playground slides and swings were replaced last year."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If shaded areas get more students playing, trees that add shade should bring students outside. Students who simply prefer reading would stay in anyway, which weakens Maddie's argument.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 0,
+    "skill": "Weaken an argument",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Jun: Our class plant grew taller after we moved it next to the window. The sunlight must have helped it grow.\n\nWhich one of these statements, if true, most weakens Jun's argument?",
+    "options": [
+      "Plants of the same type grow faster in sunny spots in most gardens.",
+      "We started giving the plant fertiliser on the same day we moved it.",
+      "The plant was a present from a student's grandmother.",
+      "The window looks out over the school car park and the oval."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The fertiliser started at the same time as the move, so it could explain the growth instead of the sunlight. Plants growing faster in sunny spots would support Jun.",
+    "basics": "claimSupport"
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 0,
+    "skill": "Identify the flaw",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Asha: Our cat runs away every time the vacuum cleaner is turned on. So the cat must be afraid of all loud noises.\n\nWhich one of the following shows the mistake Asha has made?",
+    "options": [
+      "Asha has not told us how old her cat is.",
+      "The vacuum cleaner may only be used once each week.",
+      "The cat may fear just the vacuum, not all loud noises.",
+      "Cats are known to sleep for most of every day."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "One noise the cat dislikes does not show it fears every loud noise. How often the vacuum is used does not change that mistake."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 0,
+    "skill": "Find the assumption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Kalani: I got 9 out of 10 on my maths quiz, and Toby got 8 out of 10. So I am better at maths than Toby.\n\nWhich assumption has Kalani made?",
+    "options": [
+      "Toby studied for the quiz for longer than Kalani did.",
+      "The next quiz will be harder than this one was.",
+      "Kalani will also beat Toby on the next maths quiz.",
+      "One quiz score shows how good someone is at maths."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Kalani jumps from one quiz to being better at maths overall, so she must assume a single quiz shows maths ability. She does not need to predict the next quiz."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 0,
+    "skill": "Whose reasoning is correct",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pool has a rule: children under 8 must swim with an adult. Everyone at the pool today followed the rule. Leo swam without an adult. Sara swam with an adult.\n\nOwen says: \"So Leo must be 8 or older.\"\nPip says: \"So Sara must be under 8.\"\n\nIf the information is true, whose reasoning is correct?",
+    "options": [
+      "Only Owen",
+      "Only Pip",
+      "Both Owen and Pip",
+      "Neither Owen nor Pip"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A child under 8 without an adult would break the rule, so Leo is 8 or older and Owen is right. Older children may also swim with an adult, so Pip cannot be sure about Sara."
+  },
+  {
+    "domain": "nswsCritical",
+    "test": 0,
+    "skill": "Draw a valid conclusion",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a group of friends, everyone who likes swimming also likes the beach. Nobody who likes the beach dislikes summer. Ravi dislikes summer.\n\nIf the information is true, which one of these statements must also be true?",
+    "options": [
+      "Ravi does not like swimming.",
+      "Ravi likes the beach.",
+      "Ravi likes winter more than any other season.",
+      "All summer lovers like swimming."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If Ravi liked swimming he would like the beach, and then he could not dislike summer. So he does not like swimming. Ravi liking the beach cannot be true.",
+    "basics": "inference"
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 0,
+    "skill": "Time reasoning",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A train trip takes 2 hours 40 minutes. The train arrives at 1:15 pm. What time did it leave?",
+    "options": [
+      "11:35 am",
+      "10:35 am",
+      "10:55 am",
+      "10:25 am"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Going back 2 hours from 1:15 pm gives 11:15 am, and 40 more minutes back gives 10:35 am."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 0,
+    "skill": "Number puzzle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Freya has one 50 cent coin, two 20 cent coins and one 5 cent coin. Which amount can she NOT make exactly using some of these coins?",
+    "options": [
+      "45 cents",
+      "75 cents",
+      "60 cents",
+      "95 cents"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "45 is 20 + 20 + 5, 75 is 50 + 20 + 5 and 95 uses all four coins. To make 60 she would need a 10 cent coin, so it cannot be done.",
+    "basics": "wordProblems"
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 0,
+    "skill": "Ordering from clues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Five cars are parked in a row. The green car is at the left end. The white car is directly to the right of the green car. The black car is not next to the white car. The red car is next to the blue car. The red car is not in the middle.\n\nWhich car is in the middle?",
+    "options": [
+      "Red",
+      "Black",
+      "White",
+      "Blue"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Green and white take places 1 and 2. Black cannot be in place 3, and if it were in place 4 red and blue would not be together, so black is in place 5. Red and blue fill places 3 and 4, and red is not in the middle, so blue is."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 0,
+    "skill": "Counting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Seven players each give every other player one high five. How many high fives are there in total?",
+    "options": [
+      "21",
+      "42",
+      "49",
+      "14"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each player high fives 6 others, which is 7 times 6, or 42, but each high five has been counted twice. So there are 21."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 0,
+    "skill": "Number sequence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What number comes next in this sequence?\n\n2, 3, 5, 9, 17, ?",
+    "options": [
+      "31",
+      "33",
+      "34",
+      "25"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The jumps double each time: 1, 2, 4, 8, so the next jump is 16 and 17 + 16 = 33. Adding 8 again gives 25."
+  },
+  {
+    "domain": "nswsProblem",
+    "test": 0,
+    "skill": "Reading a table",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The table shows the cost per child of some holiday activities.\n\n| Activity | Cost per child |\n|---|---|\n| Bowling | 12 dollars |\n| Mini golf | 9 dollars |\n| Laser tag | 15 dollars |\n| Movie | 11 dollars |\n\nTina has 100 dollars for herself and 3 friends. All four children will do the same two different activities. Which pair can they afford that uses the most of the money?",
+    "options": [
+      "Bowling and laser tag",
+      "Bowling and a movie",
+      "Mini golf and laser tag",
+      "Laser tag and a movie"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per child the pairs cost 24 dollars for mini golf and laser tag, 27 for bowling and laser tag, 23 for bowling and a movie and 26 for laser tag and a movie. Times 4, that is 96, 108, 92 and 104 dollars, so mini golf and laser tag is the dearest pair under 100."
+  }
+]

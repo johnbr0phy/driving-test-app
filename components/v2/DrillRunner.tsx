@@ -43,6 +43,8 @@ import { AchievementCelebration } from "@/components/AchievementCelebration";
 export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drillKeyParam: string | null }) {
   const router = useRouter();
   const routes = v2Routes(exam);
+  // Primary school exams get the warmer celebration copy.
+  const childFriendly = exam.id === "timestables" || exam.id === "ks2";
   const hydrated = useHydration();
   const { playCorrectSound, playIncorrectSound } = useSound();
   const drill = exam.drills.find((d) => d.key === drillKeyParam);
@@ -203,8 +205,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
               examId={exam.id}
               earned={earnedMastery}
               eyebrow="Drill mastered"
-              title={exam.id === "timestables" ? "You did it! All green!" : "Every question. Mastered."}
-              description={`You answered every question in ${drill.name} correctly. ${exam.id === "timestables" ? "Look how far you've come!" : "Your practice has paid off."}`}
+              title={childFriendly ? "You did it! All green!" : "Every question. Mastered."}
+              description={`You answered every question in ${drill.name} correctly. ${childFriendly ? "Look how far you've come!" : "Your practice has paid off."}`}
               detail={`${questions.length} of ${questions.length} questions mastered · ${drill.name}`}
             >
               <Link href={`${routes.dashboard}?completed=${encodeURIComponent(`drill:${drill.key}`)}`} className="v2-tap flex items-center justify-center rounded-xl bg-brand px-4 text-base font-bold text-white">See your progress</Link>

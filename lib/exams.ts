@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -81,7 +81,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield" | "sparkles" | "paw" | "calculator";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield" | "sparkles" | "paw" | "calculator" | "car" | "bus";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -2089,6 +2089,910 @@ const vtne: ExamConfig = {
     ],
     sourceLine: "Based on the AAVSB VTNE content outline approved March 2023. The real exam passes on a scaled score of 425; 70% here is a practice target.",
     analyticsKey: "vtne",
+  },
+};
+
+const auwa: ExamConfig = {
+  id: "auwa",
+  stateCode: "AUWA",
+  idBase: 7500,
+  slug: "/wa-learners",
+  landingPath: "/wa-learners-practice-test",
+  name: "WA Learner's Practice Test",
+  shortName: "WA Learners",
+  examLabel: "WA learner's test",
+  fullName: "Western Australia learner's permit theory test (Computerised Theory Test)",
+  questionIdPrefix: "AUWA-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Western Australia car (C class) learner's permit Computerised Theory Test, Department of
+  // Transport and Major Infrastructure, Driver and Vehicle Services: 30 multiple-choice questions on
+  // the road rules and safe driving, 24 correct to pass (80%), a pass valid 5 years (transport.wa.gov.au,
+  // Take the theory test, read Oct 2026). Questions come from Drive Safe: A handbook for Western
+  // Australian road users, revised edition 5 August 2026. DTMI publishes no topic weighting, so the eight
+  // categories follow the handbook's parts: licensing and demerits (Part 2, 5), alcohol, fatigue and
+  // restraints (Part 1), speed and conditions (3.1 to 3.3), signs, signals and markings (3.8 to 3.10),
+  // intersections, roundabouts and railway crossings, lanes, overtaking and freeways, sharing the road,
+  // and stopping, parking and emergencies (3.17 to 3.19, Part 4). The separate Hazard Perception Test
+  // (video clips) is not modelled.
+  blueprint: {
+    auwaLicence: 7,
+    auwaSafety: 7,
+    auwaSpeed: 6,
+    auwaSigns: 7,
+    auwaIntersect: 8,
+    auwaLanes: 5,
+    auwaSharing: 5,
+    auwaParking: 5,
+  },
+  trainingSets: testSets(7500, 4),
+  categoryLabels: {
+    auwaLicence: "Licences, P Plates & Demerits",
+    auwaSafety: "Alcohol, Fatigue & Seat Belts",
+    auwaSpeed: "Speed, Space & Conditions",
+    auwaSigns: "Signs, Signals & Markings",
+    auwaIntersect: "Intersections & Roundabouts",
+    auwaLanes: "Lanes, Overtaking & Freeways",
+    auwaSharing: "Sharing the Road",
+    auwaParking: "Parking, Crashes & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your WA learner's test progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on, covering the road rules in the Drive Safe handbook. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions on the Drive Safe road rules",
+    heroSubs: [
+      "Eight topics, four tests. Give way and intersections come up most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test at a DVS centre.",
+    ],
+    sourceLine: "Based on Drive Safe, the WA road users' handbook (edition of 5 August 2026). The real test is 30 questions and you need 24 right (80%). The Hazard Perception Test is not modelled.",
+    analyticsKey: "auwa",
+  },
+};
+
+const camb: ExamConfig = {
+  id: "camb",
+  stateCode: "CAMB",
+  idBase: 6600,
+  slug: "/manitoba-class-5",
+  landingPath: "/manitoba-class-5-practice-test",
+  name: "Manitoba Class 5 Practice Test",
+  shortName: "MB Class 5",
+  examLabel: "Manitoba Class 5",
+  fullName: "Manitoba Class 5 learner knowledge test",
+  questionIdPrefix: "CAMB-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Manitoba Public Insurance (MPI) Driver's Handbook, DVL0019, edition dated 20/10/2026
+  // (mpi.mb.ca/en/PDFs/completehandbook.pdf). The Class 5 knowledge test assesses
+  // traffic laws, safe driving practices and road signs; it is computer based, 30 minutes,
+  // not open book, $12, and is reported as 30 multiple-choice questions. MPI publishes no
+  // topic weighting or pass mark (prep sites say 24 or 25 of 30), so the blueprint follows
+  // the handbook's chapters: signs and signals 20%, right-of-way and turning 18%, sharing
+  // the road 16%, GDL and licensing 12%, speed, parking and equipment 12%, poor conditions
+  // and emergencies 12%, impaired and distracted driving 10%. 80% is a practice target.
+  blueprint: {
+    cambLicence: 6,
+    cambSigns: 10,
+    cambRules: 9,
+    cambSharing: 8,
+    cambSpeed: 6,
+    cambConditions: 6,
+    cambImpaired: 5,
+  },
+  trainingSets: testSets(6600, 4),
+  categoryLabels: {
+    cambLicence: "Licensing & GDL",
+    cambSigns: "Signs, Signals & Markings",
+    cambRules: "Right-of-Way, Turns & Passing",
+    cambSharing: "Sharing the Road",
+    cambSpeed: "Speed, Parking & Equipment",
+    cambConditions: "Poor Conditions & Emergencies",
+    cambImpaired: "Impaired & Distracted Driving",
+  },
+  copy: {
+    guestPrompt: "to save your Manitoba Class 5 progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Every set covers signs, right-of-way, sharing the road, GDL rules, parking, winter driving and impaired driving. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions from the MPI Driver's Handbook",
+    heroSubs: [
+      "Seven handbook topics, four tests. Signs and right-of-way come up most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your knowledge test with an Autopac agent.",
+    ],
+    sourceLine: "Based on the MPI Driver's Handbook (October 2026 edition). MPI does not publish a pass mark; 80% here is a practice target.",
+    analyticsKey: "camb",
+  },
+};
+
+const caon: ExamConfig = {
+  id: "caon",
+  stateCode: "CAON",
+  idBase: 6200,
+  slug: "/ontario-g1",
+  landingPath: "/ontario-g1-practice-test",
+  name: "Ontario G1 Practice Test",
+  shortName: "G1",
+  examLabel: "Ontario G1",
+  fullName: "Ontario G1 driver's knowledge test",
+  questionIdPrefix: "CAON-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // The Official MTO Driver's Handbook (ontario.ca, chapters updated March to September 2026) and
+  // the DriveTest knowledge test rules: multiple choice, a road signs section and a rules of the
+  // road section, 80% total score to pass, not timed. DriveTest publishes no question count (40,
+  // 20 per section, is the usual report). Here signs plus lights and markings are 22 of 50 and the
+  // rules of the road 28, the rules split by the handbook's own topic list (licensing and demerits,
+  // right-of-way, sharing the road, safe driving, night, weather and emergencies).
+  blueprint: {
+    caonSigns: 14,
+    caonSignals: 8,
+    caonLicence: 7,
+    caonRightOfWay: 5,
+    caonSharing: 6,
+    caonDriving: 6,
+    caonConditions: 4,
+  },
+  trainingSets: testSets(6200, 4),
+  categoryLabels: {
+    caonSigns: "Traffic Signs",
+    caonSignals: "Lights, Signals & Markings",
+    caonLicence: "Licensing, Demerits & Alcohol",
+    caonRightOfWay: "Intersections & Right-of-Way",
+    caonSharing: "Sharing the Road",
+    caonDriving: "Safe Driving & Parking",
+    caonConditions: "Night, Weather & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your G1 progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions on Ontario signs and rules",
+    heroSubs: [
+      "Signs and rules of the road, four tests. You need 80% on the real one.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your G1 test at DriveTest.",
+    ],
+    sourceLine: "Based on the Official MTO Driver's Handbook (2026). The real G1 knowledge test needs an 80% total score.",
+    analyticsKey: "caon",
+  },
+};
+
+const caab: ExamConfig = {
+  id: "caab",
+  stateCode: "CAAB",
+  idBase: 6400,
+  slug: "/alberta-class-7",
+  landingPath: "/alberta-class-7-practice-test",
+  name: "Alberta Class 7 Practice Test",
+  shortName: "AB Class 7",
+  examLabel: "Alberta Class 7",
+  fullName: "Alberta Class 7 learner's licence knowledge test",
+  questionIdPrefix: "CAAB-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 83,
+  // Alberta Class 7 learner's knowledge test: 30 multiple-choice questions on a computer at a
+  // registry agent, 25 of 30 to pass (83%), one attempt per day (alberta.ca/drivers-knowledge-test).
+  // Questions come from the Driver's Guide: cars and light trucks, Spring 2026 (Government of
+  // Alberta, Transportation and Economic Corridors, published May 2026, updated June 15, 2026),
+  // which says the test covers safe driving practices, driving laws and road signs. Categories
+  // follow the guide's chapters: licensing and GDL (ch. 1), signals, signs and markings (ch. 2),
+  // basics, intersections and highways (ch. 3 to 5), emergencies (ch. 6), sharing the road
+  // (ch. 7 to 8) and driving within the law (ch. 9). Alberta publishes no per-topic weighting.
+  blueprint: {
+    caabLicensing: 5,
+    caabSignals: 6,
+    caabSigns: 7,
+    caabRightOfWay: 9,
+    caabDriving: 8,
+    caabEmergency: 6,
+    caabSharing: 5,
+    caabLaw: 4,
+  },
+  trainingSets: testSets(6400, 4),
+  categoryLabels: {
+    caabLicensing: "Licensing & GDL",
+    caabSignals: "Signals & Pavement Markings",
+    caabSigns: "Traffic Signs & Speed Limits",
+    caabRightOfWay: "Intersections, Turns & Right-of-Way",
+    caabDriving: "Driving Basics, Parking & Highways",
+    caabEmergency: "Emergencies & Challenging Conditions",
+    caabSharing: "Sharing the Road",
+    caabLaw: "Impaired Driving, Demerits & the Law",
+  },
+  copy: {
+    guestPrompt: "to save your Alberta Class 7 progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions from the Alberta Driver's Guide",
+    heroSubs: [
+      "Signs, signals, right-of-way and GDL rules, straight from the Driver's Guide.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your knowledge test at a registry agent.",
+    ],
+    sourceLine: "Based on the Alberta Driver's Guide (cars and light trucks, Spring 2026). The real test is 30 questions and needs 25 correct (83%).",
+    analyticsKey: "caab",
+  },
+};
+
+const ukmoto: ExamConfig = {
+  id: "ukmoto",
+  stateCode: "UKMOTO",
+  idBase: 6800,
+  slug: "/uk-motorcycle-theory",
+  landingPath: "/uk-motorcycle-theory-test",
+  name: "UK Motorcycle Theory Test",
+  shortName: "UK Moto",
+  examLabel: "UK motorcycle theory",
+  fullName: "UK DVSA motorcycle theory test",
+  questionIdPrefix: "UKMOTO-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 86,
+  // DVSA motorcycle theory test, multiple-choice part (GOV.UK, checked October 2026):
+  // 50 questions in 57 minutes, pass mark 43 of 50 (86%). From 5 November 2026
+  // three of the 50 are based on a short silent video (before then, a 5-question
+  // case study); neither is modelled here, nor the hazard perception part
+  // (14 clips, 44 of 75 to pass). Questions are drawn from The Highway Code,
+  // Know your traffic signs and Riding - the essential skills. DVSA's 14 topics
+  // (alertness, attitude, hazard awareness, safety and your motorcycle, motorcycle
+  // loading, safety margins, road conditions and motorcycle handling, vulnerable
+  // road users, other types of vehicle, rules of the road, motorway rules, road
+  // and traffic signs, documents, incidents accidents and emergencies) are merged
+  // into seven. DVSA publishes no per-topic weighting; counts follow the size of
+  // each topic group. All questions are original, not from the licensed DVSA bank.
+  blueprint: {
+    ukmotoAware: 8,
+    ukmotoMachine: 8,
+    ukmotoHandling: 8,
+    ukmotoVulnerable: 6,
+    ukmotoRules: 8,
+    ukmotoSigns: 7,
+    ukmotoDocs: 5,
+  },
+  trainingSets: testSets(6800, 4),
+  categoryLabels: {
+    ukmotoAware: "Alertness, Attitude & Hazards",
+    ukmotoMachine: "Your Motorcycle & Loading",
+    ukmotoHandling: "Safety Margins & Handling",
+    ukmotoVulnerable: "Vulnerable Road Users & Other Vehicles",
+    ukmotoRules: "Rules of the Road & Motorways",
+    ukmotoSigns: "Road & Traffic Signs",
+    ukmotoDocs: "Documents, Incidents & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on, across all seven DVSA topic groups. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 43 to pass, like the real multiple-choice part",
+    heroSubs: [
+      "Seven topic groups, four tests. You need 43 of 50 to pass.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Practise hazard perception, then book.",
+    ],
+    sourceLine: "Based on the DVSA motorcycle theory test and The Highway Code, checked October 2026. Hazard perception and the video questions are not included.",
+    analyticsKey: "ukmoto",
+  },
+};
+
+const aunsw: ExamConfig = {
+  id: "aunsw",
+  stateCode: "AUNSW",
+  idBase: 7200,
+  slug: "/nsw-dkt",
+  landingPath: "/nsw-dkt-practice-test",
+  name: "NSW DKT Practice Test",
+  shortName: "NSW DKT",
+  examLabel: "NSW DKT",
+  fullName: "NSW Driver Knowledge Test (DKT)",
+  questionIdPrefix: "AUNSW-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 91,
+  // Transport for NSW Road User Handbook (English edition, PDF dated February 2026,
+  // nsw.gov.au), which the handbook says prepares you for the Driver Knowledge Test.
+  // The in-person test is 45 questions: 15 general knowledge (12 must be right) and 30
+  // road safety (29 must be right), 41 of 45 overall, so passPct is 91. Categories follow
+  // the handbook chapters: licences and penalties, speed, alcohol/drugs/fatigue/phones,
+  // giving way, sharing the road, overtaking and lanes, parking, hazards and vehicles.
+  // The Hazard Perception Test (video) is a separate test and is not modelled.
+  blueprint: {
+    nswLicence: 6,
+    nswSpeed: 6,
+    nswImpair: 7,
+    nswGiveWay: 9,
+    nswSharing: 6,
+    nswLanes: 7,
+    nswParking: 4,
+    nswHazards: 5,
+  },
+  trainingSets: testSets(7200, 4),
+  categoryLabels: {
+    nswLicence: "Licences, Penalties & Seatbelts",
+    nswSpeed: "Speed Limits & Safe Distance",
+    nswImpair: "Alcohol, Drugs, Fatigue & Phones",
+    nswGiveWay: "Giving Way, Intersections & Crossings",
+    nswSharing: "Sharing the Road",
+    nswLanes: "Overtaking, Lanes & Motorways",
+    nswParking: "Parking & Stopping",
+    nswHazards: "Hazards, Crashes & Your Vehicle",
+  },
+  copy: {
+    guestPrompt: "to save your NSW DKT progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each covering every Road User Handbook topic: licences and P plate rules, speed, alcohol and fatigue, giving way, sharing the road, lanes, parking and hazards. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across the Road User Handbook",
+    heroSubs: [
+      "Eight handbook topics, four tests. Giving way is the biggest.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "The DKT needs 29 of 30 road safety. Fix the misses.",
+      "All done. Book your DKT or start it online.",
+    ],
+    sourceLine: "Based on the Transport for NSW Road User Handbook (2026 edition). The real DKT needs 12 of 15 general knowledge and 29 of 30 road safety questions right; 91% here matches 41 of 45.",
+    analyticsKey: "aunsw",
+  },
+};
+
+const cabc: ExamConfig = {
+  id: "cabc",
+  stateCode: "CABC",
+  idBase: 6300,
+  slug: "/icbc",
+  landingPath: "/icbc-practice-test",
+  name: "ICBC Practice Test",
+  shortName: "ICBC",
+  examLabel: "ICBC knowledge test",
+  fullName: "ICBC Class 7L knowledge test (British Columbia)",
+  questionIdPrefix: "CABC-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // ICBC Class 7L passenger vehicle knowledge test, British Columbia: 50 multiple-choice
+  // questions from Learn to Drive Smart (ICBC), 40 correct to pass (80%), 45 minutes, 12 languages
+  // (ICBC tip sheet MV2654, June 2026; MV2022, October 2026). Categories follow the handbook's
+  // chapters: signs, signals and road markings (ch 3), intersections and
+  // right-of-way and lanes and parking (ch 4), see-think-do (ch 5), sharing the road (ch 6), personal
+  // strategies and impairment (ch 7), emergency strategies (ch 8), and your licence and vehicle (ch 2, 9).
+  // GLP items follow the ICBC changes effective October 19, 2026 (Driving Record Assessment, supervisor 22+).
+  blueprint: {
+    cabcSigns: 10,
+    cabcRow: 7,
+    cabcLanes: 6,
+    cabcSafe: 7,
+    cabcShare: 7,
+    cabcImpair: 4,
+    cabcEmerg: 5,
+    cabcLicence: 4,
+  },
+  trainingSets: testSets(6300, 4),
+  categoryLabels: {
+    cabcSigns: "Signs, Signals & Road Markings",
+    cabcRow: "Intersections & Right-of-Way",
+    cabcLanes: "Lanes, Passing & Parking",
+    cabcSafe: "See-Think-Do & Speed",
+    cabcShare: "Sharing the Road",
+    cabcImpair: "Impairment & Distraction",
+    cabcEmerg: "Emergencies & Conditions",
+    cabcLicence: "Your Licence, GLP & Vehicle",
+  },
+  copy: {
+    guestPrompt: "to save your ICBC knowledge test progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 40 to pass, like the real ICBC test",
+    heroSubs: [
+      "Signs, right-of-way and sharing the road, straight from Learn to Drive Smart.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your knowledge test.",
+    ],
+    sourceLine: "Based on ICBC's Learn to Drive Smart and the 50-question, 40-to-pass Class 7L knowledge test, with GLP rules as of October 19, 2026.",
+    analyticsKey: "cabc",
+  },
+};
+
+const ukpcv: ExamConfig = {
+  id: "ukpcv",
+  stateCode: "UKPCV",
+  idBase: 7000,
+  slug: "/pcv-theory",
+  landingPath: "/pcv-theory-test",
+  name: "PCV Theory Practice Test",
+  shortName: "PCV Theory",
+  examLabel: "PCV theory test",
+  fullName: "UK bus and coach (PCV) theory test, multiple-choice part",
+  questionIdPrefix: "UKPCV-",
+  icon: "bus",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 85,
+  // DVSA Driver CPC Part 1 theory test for buses and coaches (GOV.UK, checked Oct 2026):
+  // 100 multiple-choice questions in 1 hour 55 minutes, pass mark 85/100. Questions come from
+  // The Highway Code, Know your traffic signs and The Official DVSA Guide to Driving Buses and
+  // Coaches. DVSA's bus and coach topics (weights and dimensions, drivers' hours and rest,
+  // braking, the driver, carrying passengers, the road, incidents, vehicle condition, leaving
+  // the vehicle, restricted view, documents, environment, other road users, signs) are merged
+  // into seven categories. The separate hazard perception part (19 clips, 67/100) is not modelled.
+  // Rules: assimilated (EU 561/2006) and GB domestic drivers' hours, GOV.UK speed limits and
+  // drink-drive limits. All questions are original, not from the licensed DVSA revision bank.
+  blueprint: {
+    ukpcvHours: 8,
+    ukpcvVehicle: 8,
+    ukpcvPassengers: 8,
+    ukpcvDriver: 6,
+    ukpcvRoad: 8,
+    ukpcvIncidents: 5,
+    ukpcvSigns: 7,
+  },
+  trainingSets: testSets(7000, 4),
+  categoryLabels: {
+    ukpcvHours: "Drivers' Hours, Tachographs & Documents",
+    ukpcvVehicle: "Vehicle Size, Condition & Brakes",
+    ukpcvPassengers: "Carrying Passengers",
+    ukpcvDriver: "The Driver & the Environment",
+    ukpcvRoad: "The Road, Restricted View & Other Road Users",
+    ukpcvIncidents: "Incidents, Emergencies & Leaving the Vehicle",
+    ukpcvSigns: "Road & Traffic Signs",
+  },
+  copy: {
+    guestPrompt: "to save your PCV theory progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every bus and coach topic",
+    heroSubs: [
+      "Seven topics, four tests. Drivers' hours and passengers come up again and again.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "The real pass mark is 85. Fix the misses, then retake.",
+      "All done. Book your theory test.",
+    ],
+    sourceLine: "Based on the DVSA bus and coach theory topics, The Highway Code and GOV.UK drivers' hours rules, checked October 2026. Multiple-choice part only; hazard perception is not included.",
+    analyticsKey: "ukpcv",
+  },
+};
+
+const ukcar: ExamConfig = {
+  id: "ukcar",
+  stateCode: "UKCAR",
+  idBase: 6700,
+  slug: "/uk-theory",
+  landingPath: "/uk-driving-theory-test",
+  name: "UK Theory Test Practice",
+  shortName: "Theory Test",
+  examLabel: "UK car theory test",
+  fullName: "DVSA car theory test (multiple-choice part)",
+  questionIdPrefix: "UKCAR-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 86,
+  // DVSA car theory test, multiple-choice part (gov.uk/theory-test, checked Oct 2026):
+  // 50 questions in 57 minutes, 3 of them on a short silent video; pass 43 of 50 (86%).
+  // The hazard perception part (14 clips, 44 of 75) is not modelled. Questions come from
+  // The Highway Code (GB edition, incl. the January 2022 hierarchy of road users),
+  // Know Your Traffic Signs and Driving: the essential skills. DVSA's 14 topics are merged
+  // into 8 categories; DVSA publishes no per-topic weights, so counts are ours. All items original.
+  blueprint: {
+    ukcarAlert: 5,
+    ukcarVehicle: 6,
+    ukcarMargins: 7,
+    ukcarHazard: 8,
+    ukcarMotorway: 5,
+    ukcarRules: 8,
+    ukcarSigns: 6,
+    ukcarEmerg: 5,
+  },
+  trainingSets: testSets(6700, 4),
+  categoryLabels: {
+    ukcarAlert: "Alertness & Attitude",
+    ukcarVehicle: "Safety & Your Vehicle",
+    ukcarMargins: "Safety Margins & Vehicle Handling",
+    ukcarHazard: "Hazards & Vulnerable Road Users",
+    ukcarMotorway: "Motorway Rules",
+    ukcarRules: "Rules of the Road",
+    ukcarSigns: "Road & Traffic Signs",
+    ukcarEmerg: "Documents, Incidents & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your theory test progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all eight topic groups. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 43 to pass, like the real multiple-choice part",
+    heroSubs: [
+      "Eight topic groups, four mock tests. You need 43 of 50 to pass.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Practise hazard perception and book your test.",
+    ],
+    sourceLine: "Based on The Highway Code, Know Your Traffic Signs and DVSA's 14 theory test topics. Original questions; the hazard perception part is not modelled.",
+    analyticsKey: "ukcar",
+  },
+};
+
+const ukadi: ExamConfig = {
+  id: "ukadi",
+  stateCode: "UKADI",
+  idBase: 7100,
+  slug: "/adi-part-1",
+  landingPath: "/adi-part-1-practice-test",
+  name: "ADI Part 1 Practice Test",
+  shortName: "ADI Part 1",
+  examLabel: "ADI part 1",
+  fullName: "DVSA Approved Driving Instructor (ADI) part 1 theory test",
+  questionIdPrefix: "UKADI-",
+  icon: "graduation",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 85,
+  // DVSA ADI part 1 theory test (gov.uk/adi-part-1-test, checked October 2026): 100 multiple-choice
+  // questions in 1 hour 30 minutes, 25 in each of four bands: road procedure; traffic signs and signals,
+  // car control, pedestrians and mechanical knowledge; driving test, disabilities and the law; publications
+  // and instructional techniques. Pass is 85 of 100 overall and at least 20 of 25 in every band. Each band
+  // is split in two here, keeping the bands at 13/12/13/12 of 50. Content from the Highway Code, Know Your
+  // Traffic Signs, the DVSA national standards, the ADI code of practice and the ADI part 2 and 3 rules.
+  // The hazard perception part (14 clips, 57 of 75) is not modelled. All questions are original; DVSA's
+  // licensed revision bank was not used.
+  blueprint: {
+    ukadiRoad: 7,
+    ukadiConditions: 6,
+    ukadiSigns: 6,
+    ukadiControl: 6,
+    ukadiTest: 6,
+    ukadiLaw: 7,
+    ukadiPublications: 6,
+    ukadiInstruction: 6,
+  },
+  trainingSets: testSets(7100, 4),
+  categoryLabels: {
+    ukadiRoad: "Road Procedure",
+    ukadiConditions: "Speed, Motorways & Conditions",
+    ukadiSigns: "Traffic Signs & Signals",
+    ukadiControl: "Car Control, Pedestrians & Mechanical",
+    ukadiTest: "The Driving Test",
+    ukadiLaw: "Disabilities & the Law",
+    ukadiPublications: "Publications & ADI Rules",
+    ukadiInstruction: "Instructional Techniques",
+  },
+  copy: {
+    guestPrompt: "to save your ADI part 1 progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on, across all four DVSA bands. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across the four DVSA bands",
+    heroSubs: [
+      "Four bands, four tests. You need 85% overall and 80% in every band.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your ADI part 1.",
+    ],
+    sourceLine: "Based on the DVSA ADI part 1 test: 100 questions in four bands of 25, pass 85 overall and 20 in each band. The hazard perception part is not modelled here.",
+    analyticsKey: "ukadi",
+  },
+};
+
+const auvic: ExamConfig = {
+  id: "auvic",
+  stateCode: "AUVIC",
+  idBase: 7300,
+  slug: "/vic-learner-permit",
+  landingPath: "/vic-learner-permit-practice-test",
+  name: "Victoria Learner Permit Practice Test",
+  shortName: "Vic Ls",
+  examLabel: "Victoria learner permit",
+  fullName: "Victorian Learner Permit Knowledge Test (VicRoads)",
+  questionIdPrefix: "AUVIC-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 78,
+  // VicRoads Learner Permit Knowledge Test: 32 multiple-choice questions on road law and
+  // road safety, 25 correct (78%) to pass, plus an eyesight test; at least 16 years old
+  // (online course enrolment from 15 years 11 months). Questions are drawn from Road to Solo
+  // Driving (VicRoads / Department of Transport and Planning, edition dated September 2026).
+  // VicRoads publishes no topic weighting, so the per-test counts follow the handbook's
+  // chapters: licensing and the Graduated Licensing System, managing risk (alcohol, drugs,
+  // fatigue, safe driving), speed, signs and markings with parking, give way rules, turning
+  // and freeways, and sharing the road. The Hazard Perception Test (P licence stage) is not modelled.
+  blueprint: {
+    auvicLicence: 6,
+    auvicAlcohol: 5,
+    auvicSafe: 7,
+    auvicSpeed: 4,
+    auvicSigns: 7,
+    auvicGiveWay: 8,
+    auvicTurning: 6,
+    auvicSharing: 7,
+  },
+  trainingSets: testSets(7300, 4),
+  categoryLabels: {
+    auvicLicence: "Licences & Learner Rules",
+    auvicAlcohol: "Alcohol, Drugs & Fatigue",
+    auvicSafe: "Safe Driving & Hazards",
+    auvicSpeed: "Speed Limits",
+    auvicSigns: "Signs, Markings & Parking",
+    auvicGiveWay: "Give Way & Intersections",
+    auvicTurning: "Turning, Overtaking & Freeways",
+    auvicSharing: "Sharing the Road",
+  },
+  copy: {
+    guestPrompt: "to save your learner permit progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions on Victorian road rules",
+    heroSubs: [
+      "Eight topics from Road to Solo Driving, four tests of 50.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your learner permit test.",
+    ],
+    sourceLine: "Based on Road to Solo Driving (VicRoads, September 2026 edition). The real test is 32 questions and needs 25 correct (78%).",
+    analyticsKey: "auvic",
+  },
+};
+
+const ausa: ExamConfig = {
+  id: "ausa",
+  stateCode: "AUSA",
+  idBase: 7600,
+  slug: "/sa-learners",
+  landingPath: "/sa-learners-practice-test",
+  name: "SA Learner's Practice Test",
+  shortName: "SA Learners",
+  examLabel: "SA learner's test",
+  fullName: "South Australia learner's theory test",
+  questionIdPrefix: "AUSA-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // South Australia learner's theory test, Department for Infrastructure and Transport (mylicence.sa.gov.au,
+  // read Oct 2026). At Service SA it is 50 questions: Part 1 is 8 give-way diagram questions that must all
+  // be correct, Part 2 is 42 multiple-choice questions on road rules and safe driving, 32 correct to pass
+  // (40 of 50, so 80% here; the all-8 give-way rule is not modelled). The online myLs route ends in a
+  // 30-question test needing 27 correct. Questions come from The Driver's Handbook (February 2026 edition).
+  // DIT publishes no topic weighting beyond the 8 give-way items, so giving way is 8 per test and the
+  // other 42 follow the handbook's road rules and licensing chapters: licensing and demerits, speed
+  // limits and following distance, signs, signals and markings, lanes, turning and overtaking, sharing
+  // the road (trams, bike riders, trucks, trains), parking, and alcohol, phones and safe driving.
+  // The separate Hazard Perception Test (needed before P1) is not modelled.
+  blueprint: {
+    ausaGiveWay: 8,
+    ausaLicence: 7,
+    ausaSpeed: 6,
+    ausaSigns: 7,
+    ausaRoad: 7,
+    ausaShare: 6,
+    ausaParking: 3,
+    ausaSafety: 6,
+  },
+  trainingSets: testSets(7600, 4),
+  categoryLabels: {
+    ausaGiveWay: "Giving Way",
+    ausaLicence: "Learner, P1 & P2 Rules",
+    ausaSpeed: "Speed Limits & Following Distance",
+    ausaSigns: "Signs, Signals & Markings",
+    ausaRoad: "Lanes, Turning & Overtaking",
+    ausaShare: "Sharing the Road",
+    ausaParking: "Parking & Stopping",
+    ausaSafety: "Alcohol, Phones & Safe Driving",
+  },
+  copy: {
+    guestPrompt: "to save your SA learner's test progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on, covering giving way and the road rules in The Driver's Handbook. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions like the Service SA test",
+    heroSubs: [
+      "Eight topics, four tests. Giving way comes first, like the real test.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test or finish myLs.",
+    ],
+    sourceLine: "Based on The Driver's Handbook (South Australia, February 2026 edition). The Service SA test is 50 questions: all 8 give-way questions right and 32 of the other 42. The Hazard Perception Test is not modelled.",
+    analyticsKey: "ausa",
+  },
+};
+
+const auqld: ExamConfig = {
+  id: "auqld",
+  stateCode: "AUQLD",
+  idBase: 7400,
+  slug: "/qld-learner-licence",
+  landingPath: "/qld-learner-licence-practice-test",
+  name: "QLD Learner Licence Practice Test",
+  shortName: "QLD Learner",
+  examLabel: "QLD learner licence",
+  fullName: "Queensland written road rules test (class C learner licence)",
+  questionIdPrefix: "AUQLD-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 90,
+  // Queensland Department of Transport and Main Roads (TMR) class C written road rules test and PrepL
+  // (qld.gov.au/transport/licensing/getting/tests, updated 1 October 2026): 30 multiple-choice questions
+  // from Your Keys to Driving in Queensland. The written test has two sections, at least 9 of 10 on giving
+  // way and 18 of 20 on road rules and driver licence requirements; PrepL needs 27 of 30 (90%). Rules are
+  // from the qld.gov.au road rules, licensing, demerit and road safety pages (Oct 2026) and the Transport
+  // Operations (Road Use Management) Road Rules Regulation 2009. Per test: 12 giving way, then the road
+  // rules and licence section split 10 licence and demerits, 10 signs, lines and lights, 9 lanes, turning
+  // and parking, 9 speed, alcohol, phones and safety. Hazard perception (video) is a separate test, not modelled.
+  blueprint: {
+    auqldGiveWay: 12,
+    auqldLicence: 10,
+    auqldSigns: 10,
+    auqldRoad: 9,
+    auqldSafety: 9,
+  },
+  trainingSets: testSets(7400, 4),
+  categoryLabels: {
+    auqldGiveWay: "Giving Way",
+    auqldLicence: "Licence Rules & Demerit Points",
+    auqldSigns: "Signs, Lines & Traffic Lights",
+    auqldRoad: "Lanes, Turning & Parking",
+    auqldSafety: "Speed, Alcohol & Safe Driving",
+  },
+  copy: {
+    guestPrompt: "to save your Queensland learner licence progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Every set mixes giving way, licence rules, signs, lanes and safe driving. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions on Queensland road rules",
+    heroSubs: [
+      "Giving way is its own section on the real test. Start with Set 1.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your test or start PrepL.",
+    ],
+    sourceLine: "Based on Queensland TMR road rules, licensing and road safety pages (October 2026) and the Queensland Road Rules. The real test needs 9 of 10 on giving way and 18 of 20 on road rules (PrepL: 27 of 30). Hazard perception is a separate test and is not covered here.",
+    analyticsKey: "auqld",
+  },
+};
+
+const uklgv: ExamConfig = {
+  id: "uklgv",
+  stateCode: "UKLGV",
+  idBase: 6900,
+  slug: "/lgv-theory",
+  landingPath: "/lgv-theory-test",
+  name: "LGV Theory Test Practice",
+  shortName: "LGV Theory",
+  examLabel: "UK LGV theory",
+  fullName: "UK DVSA lorry (LGV) theory test, multiple-choice part",
+  questionIdPrefix: "UKLGV-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 85,
+  // DVSA Driver CPC part 1a (lorry theory test, multiple-choice part): 100 questions in
+  // 1 hour 55 minutes, pass mark 85 (gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test,
+  // checked Oct 2026). Questions come from The Highway Code, Know Your Traffic Signs and The Official
+  // DVSA Guide to Driving Goods Vehicles. DVSA's 14 lorry topics merged into 7: drivers' hours and the
+  // driver; braking systems and vehicle condition; vehicle weights and dimensions with vehicle loading;
+  // the road, restricted view and other road users; documents, leaving the vehicle and environmental
+  // issues; accident handling; traffic signs. DVSA publishes no per-topic weights, so counts are by
+  // topic breadth. Part 1b hazard perception (19 clips, pass mark 67) is not modelled. All questions
+  // are original; rules asserted are Great Britain's (drivers' hours, speed limits, Highway Code).
+  blueprint: {
+    uklgvHours: 9,
+    uklgvVehicle: 8,
+    uklgvLoading: 8,
+    uklgvRoad: 8,
+    uklgvDocs: 6,
+    uklgvIncidents: 5,
+    uklgvSigns: 6,
+  },
+  trainingSets: testSets(6900, 4),
+  categoryLabels: {
+    uklgvHours: "Drivers' Hours & the Driver",
+    uklgvVehicle: "Vehicle Condition & Brakes",
+    uklgvLoading: "Weights, Dimensions & Loading",
+    uklgvRoad: "The Road & Other Road Users",
+    uklgvDocs: "Documents, Security & Environment",
+    uklgvIncidents: "Incidents & Emergencies",
+    uklgvSigns: "Traffic Signs",
+  },
+  copy: {
+    guestPrompt: "to save your LGV theory progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly Test 1's 50 questions, and so on. Each covers drivers' hours, brakes, loading, the road, documents, incidents and signs. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every DVSA lorry topic",
+    heroSubs: [
+      "Seven topics, four tests. Drivers' hours is the biggest.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Aim for 85% on every test.",
+      "All done. Book your theory test.",
+    ],
+    sourceLine: "Based on the DVSA lorry theory test topics, The Highway Code and GB drivers' hours rules. Multiple-choice part only; hazard perception is not included.",
+    analyticsKey: "uklgv",
+  },
+};
+
+const caqc: ExamConfig = {
+  id: "caqc",
+  stateCode: "CAQC",
+  idBase: 6500,
+  slug: "/saaq",
+  landingPath: "/saaq-practice-test",
+  name: "SAAQ Practice Test",
+  shortName: "SAAQ",
+  examLabel: "Quebec SAAQ",
+  fullName: "Quebec SAAQ Class 5 knowledge test",
+  questionIdPrefix: "CAQC-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // SAAQ Class 5 (passenger vehicle) knowledge test, taken at an SAAQ service centre after
+  // holding the learner's licence for 10 months. Three multiple-choice parts (Highway Safety Code;
+  // road signs and traffic signals; behaviours and techniques for driving a passenger vehicle), 75%
+  // required on each part. The SAAQ does not publish the question count. Content from the SAAQ Road
+  // Safety Education Program modules (English, 2023 to 2025 editions), the SAAQ Demerit Points and
+  // Class 5 Quick Reference Guide (C-6963-A, 25-07) leaflets, and the Gouvernement du Quebec
+  // traffic rules and road sign pages (quebec.ca, updated July to October 2026). Per test:
+  // 15 Code (licences 6, rules 9), 14 signs and signals (signs 8, lights and markings 6),
+  // 21 behaviours (right of way 6, sharing the road 6, risk 5, techniques 4).
+  blueprint: {
+    caqcLicence: 6,
+    caqcRules: 9,
+    caqcSigns: 8,
+    caqcSignals: 6,
+    caqcRightOfWay: 6,
+    caqcSharing: 6,
+    caqcRisk: 5,
+    caqcDriving: 4,
+  },
+  trainingSets: testSets(6500, 4),
+  categoryLabels: {
+    caqcLicence: "Licences & Demerit Points",
+    caqcRules: "Highway Safety Code Rules",
+    caqcSigns: "Road Signs",
+    caqcSignals: "Traffic Lights & Pavement Markings",
+    caqcRightOfWay: "Intersections & Right of Way",
+    caqcSharing: "Sharing the Road",
+    caqcRisk: "Alcohol, Drugs, Fatigue & Distraction",
+    caqcDriving: "Driving Techniques & Conditions",
+  },
+  copy: {
+    guestPrompt: "to save your SAAQ test progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across all three parts of the SAAQ test",
+    heroSubs: [
+      "Code, signs and driving behaviours. You need 75% on each part.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your SAAQ knowledge test.",
+    ],
+    sourceLine: "Based on the SAAQ driving course modules, SAAQ leaflets and Quebec's Highway Safety Code rules as published on quebec.ca (2026). The real test needs 75% on each of its three parts.",
+    analyticsKey: "caqc",
   },
 };
 
@@ -4186,7 +5090,7 @@ const pncWA: ExamConfig = {
 };
 // --- end state variants batch 2 ---
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, cosmetology, vtne, ukcar, ukmoto, uklgv, ukpcv, ukadi, caon, caqc, cabc, caab, camb, aunsw, auvic, auqld, auwa, ausa, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

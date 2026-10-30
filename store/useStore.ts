@@ -3,6 +3,7 @@ import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { Question, TestSession, UserAnswer, TestAttemptStats, QuestionPerformance, Subscription } from '@/types';
 import { doc, getDoc, updateDoc, runTransaction } from 'firebase/firestore';
+import { Region, isRegion } from "@/lib/region";
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
 import { splitLegacySets } from '@/lib/legacySetSplits';
@@ -179,6 +180,16 @@ interface AppState {
   primaryExamAt: number;
   setPrimaryExam: (examId: string) => void;
   /**
+   * The country picked with the CountryPills (lib/region.ts): which country's
+   * homepage and tests come first. Synced to the account like primaryExam, so
+   * a choice follows the person to a new device; regionAt (ms) lets the newer
+   * pick win. The tt-region cookie is what middleware reads; CountryPills keeps
+   * it in step with this. A location guess is never stored here.
+   */
+  region: Region | null;
+  regionAt: number;
+  setRegion: (region: Region) => void;
+  /**
    * Study state per exam family with state variants, e.g. { realestate: "CA" }.
    * "GENERAL" means the national bank was chosen on purpose. Separate from the
    * DMV selectedState: picking California real estate never changes DMV.
@@ -263,6 +274,8 @@ export const useStore = create<AppState>()(
       emailConsent: true,
       primaryExam: null,
       primaryExamAt: 0,
+      region: null,
+      regionAt: 0,
       examStates: {},
       startedExams: [],
       currentTests: {},
@@ -350,6 +363,16 @@ export const useStore = create<AppState>()(
           updateDoc(doc(db, 'users', userId), { primaryExam: examId, primaryExamAt }).catch(() => {
             // No user doc yet (brand-new account): its first full save carries it.
           });
+        }
+      },
+
+      setRegion: (region: Region) => {
+        const regionAt = Date.now();
+        set({ region, regionAt });
+        // Only these two fields, right away, for the same reason as setPrimaryExam.
+        const { userId, isGuest } = get();
+        if (userId && !isGuest) {
+          updateDoc(doc(db, 'users', userId), { region, regionAt }).catch(() => {});
         }
       },
 
@@ -940,6 +963,10 @@ export const useStore = create<AppState>()(
               ...(typeof data.primaryExam === 'string' && (Number(data.primaryExamAt) || 0) >= get().primaryExamAt
                 ? { primaryExam: data.primaryExam, primaryExamAt: Number(data.primaryExamAt) || 0 }
                 : {}),
+              // The newer country pick wins too.
+              ...(isRegion(data.region) && (Number(data.regionAt) || 0) >= get().regionAt
+                ? { region: data.region, regionAt: Number(data.regionAt) || 0 }
+                : {}),
               // Account choices win; a guest's choice fills only families the account has not set.
               examStates: { ...get().examStates, ...(data.examStates && typeof data.examStates === 'object' ? data.examStates : {}) },
               // The account's list wins so a test deleted on one device stays gone;
@@ -986,6 +1013,10 @@ export const useStore = create<AppState>()(
           if (userDoc.exists() && primaryExam && primaryExam !== userDoc.data().primaryExam) {
             updateDoc(doc(db, 'users', userId), { primaryExam, primaryExamAt }).catch(() => {});
           }
+          const { region, regionAt } = get();
+          if (userDoc.exists() && region && region !== userDoc.data().region) {
+            updateDoc(doc(db, 'users', userId), { region, regionAt }).catch(() => {});
+          }
         } catch (error) {
           console.error('Error loading user data:', error);
           // Mark as loaded even on failure so gated UI doesn't hang forever
@@ -1007,7 +1038,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, primaryExamAt, examStates, startedExams } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, primaryExamAt, region, regionAt, examStates, startedExams } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
         // Never write an account this store has not loaded: it would replace
         // the saved progress with whatever this browser holds.
@@ -1087,6 +1118,7 @@ export const useStore = create<AppState>()(
             photoURL,
             emailConsent,
             ...(primaryExam ? { primaryExam, primaryExamAt } : {}),
+            ...(region ? { region, regionAt } : {}),
             examStates,
             startedExams,
             currentTests: currentTestsForFirestore,
@@ -1207,6 +1239,8 @@ export const useStore = create<AppState>()(
           selectedState: null,
           primaryExam: null,
           primaryExamAt: 0,
+          region: null,
+          regionAt: 0,
           examStates: {},
           startedExams: [],
           currentTests: {},

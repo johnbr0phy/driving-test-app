@@ -1,0 +1,56 @@
+{
+  "id": "auvic",
+  "stateCode": "AUVIC",
+  "idBase": 7300,
+  "prefix": "AUVIC-",
+  "slug": "/vic-learner-permit",
+  "landingPath": "/vic-learner-permit-practice-test",
+  "dataFile": "data/vic-learner-permit-questions.json",
+  "name": "Victoria Learner Permit Practice Test",
+  "shortName": "Vic Ls",
+  "examLabel": "Victoria learner permit",
+  "fullName": "Victorian Learner Permit Knowledge Test (VicRoads)",
+  "icon": "car",
+  "passPct": 78,
+  "outlineComment": "VicRoads Learner Permit Knowledge Test: 32 multiple-choice questions on road law and\nroad safety, 25 correct (78%) to pass, plus an eyesight test; at least 16 years old\n(online course enrolment from 15 years 11 months). Questions are drawn from Road to Solo\nDriving (VicRoads / Department of Transport and Planning, edition dated September 2026).\nVicRoads publishes no topic weighting, so the per-test counts follow the handbook's\nchapters: licensing and the Graduated Licensing System, managing risk (alcohol, drugs,\nfatigue, safe driving), speed, signs and markings with parking, give way rules, turning\nand freeways, and sharing the road. The Hazard Perception Test (P licence stage) is not modelled.",
+  "categories": [
+    { "key": "auvicLicence", "label": "Licences & Learner Rules", "perTest": 6, "segment": "LIC" },
+    { "key": "auvicAlcohol", "label": "Alcohol, Drugs & Fatigue", "perTest": 5, "segment": "ALC" },
+    { "key": "auvicSafe", "label": "Safe Driving & Hazards", "perTest": 7, "segment": "SAF" },
+    { "key": "auvicSpeed", "label": "Speed Limits", "perTest": 4, "segment": "SPD" },
+    { "key": "auvicSigns", "label": "Signs, Markings & Parking", "perTest": 7, "segment": "SGN" },
+    { "key": "auvicGiveWay", "label": "Give Way & Intersections", "perTest": 8, "segment": "GIV" },
+    { "key": "auvicTurning", "label": "Turning, Overtaking & Freeways", "perTest": 6, "segment": "TRN" },
+    { "key": "auvicSharing", "label": "Sharing the Road", "perTest": 7, "segment": "SHR" }
+  ],
+  "copy": {
+    "guestPrompt": "to save your learner permit progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions on Victorian road rules",
+    "heroSubs": [
+      "Eight topics from Road to Solo Driving, four tests of 50.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your learner permit test."
+    ],
+    "sourceLine": "Based on Road to Solo Driving (VicRoads, September 2026 edition). The real test is 32 questions and needs 25 correct (78%)."
+  },
+  "blurb": "Victoria's learner permit knowledge test: give way rules, speed limits, signs, alcohol limits and the P plate rules from Road to Solo Driving.",
+  "org": "VicRoads, Victoria",
+  "searchAliases": "vicroads learners test ls learner permit victoria vic melbourne australia road to solo driving knowledge test l plates",
+  "facts": {
+    "answer": "The VicRoads learner permit test is a computer-based, multiple-choice test of 32 questions on road law and road safety, and you need 25 correct (78%) to pass. It is taken with an eyesight test, you must be at least 16 to get the permit, and the questions come from the Road to Solo Driving handbook. Once you pass, the learner permit is valid for 10 years.",
+    "rows": [
+      { "label": "Questions", "value": "32, multiple choice" },
+      { "label": "Passing score", "value": "25 correct (78%)" },
+      { "label": "Also required", "value": "Eyesight test, proof of identity" },
+      { "label": "Minimum age", "value": "16 (online course enrolment from 15 years 11 months)" },
+      { "label": "Based on", "value": "Road to Solo Driving handbook" },
+      { "label": "Permit valid for", "value": "10 years" },
+      { "label": "Given by", "value": "VicRoads, in person or online" }
+    ],
+    "basedOn": "Road to Solo Driving (VicRoads, September 2026 edition)",
+    "source": { "name": "VicRoads Road to Solo Driving handbook", "url": "https://transport.vic.gov.au/road-and-active-transport/registration-and-licensing/licences/driver-history-handbooks-and-logbooks/driver-handbooks-and-logbooks" }
+  }
+}

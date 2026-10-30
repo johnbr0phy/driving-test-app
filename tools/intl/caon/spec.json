@@ -1,0 +1,118 @@
+{
+  "id": "caon",
+  "stateCode": "CAON",
+  "idBase": 6200,
+  "prefix": "CAON-",
+  "slug": "/ontario-g1",
+  "landingPath": "/ontario-g1-practice-test",
+  "dataFile": "data/ontario-g1-questions.json",
+  "name": "Ontario G1 Practice Test",
+  "shortName": "G1",
+  "examLabel": "Ontario G1",
+  "fullName": "Ontario G1 driver's knowledge test",
+  "icon": "car",
+  "passPct": 80,
+  "outlineComment": "The Official MTO Driver's Handbook (ontario.ca, pages updated March 31, 2026) and\nthe DriveTest knowledge test rules: multiple choice, a road signs section and a rules of the\nroad section, 80% total score to pass, not timed. DriveTest publishes no question count (40,\n20 per section, is the usual report). Here signs plus lights and markings are 22 of 50 and the\nrules of the road 28, the rules split by the handbook's own topic list (licensing and demerits,\nright-of-way, sharing the road, safe driving, night, weather and emergencies).",
+  "categories": [
+    {
+      "key": "caonSigns",
+      "label": "Traffic Signs",
+      "perTest": 14,
+      "segment": "SGN"
+    },
+    {
+      "key": "caonSignals",
+      "label": "Lights, Signals & Markings",
+      "perTest": 8,
+      "segment": "SIG"
+    },
+    {
+      "key": "caonLicence",
+      "label": "Licensing, Demerits & Alcohol",
+      "perTest": 7,
+      "segment": "LIC"
+    },
+    {
+      "key": "caonRightOfWay",
+      "label": "Intersections & Right-of-Way",
+      "perTest": 5,
+      "segment": "ROW"
+    },
+    {
+      "key": "caonSharing",
+      "label": "Sharing the Road",
+      "perTest": 6,
+      "segment": "SHR"
+    },
+    {
+      "key": "caonDriving",
+      "label": "Safe Driving & Parking",
+      "perTest": 6,
+      "segment": "DRV"
+    },
+    {
+      "key": "caonConditions",
+      "label": "Night, Weather & Emergencies",
+      "perTest": 4,
+      "segment": "CON"
+    }
+  ],
+  "copy": {
+    "guestPrompt": "to save your G1 progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions on Ontario signs and rules",
+    "heroSubs": [
+      "Signs and rules of the road, four tests. You need 80% on the real one.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your G1 test at DriveTest."
+    ],
+    "sourceLine": "Based on the Official MTO Driver's Handbook (2026). The real G1 knowledge test needs an 80% total score."
+  },
+  "blurb": "Ontario's G1 knowledge test: road signs, traffic lights, right-of-way, graduated licensing, demerit points and safe driving, from the Official MTO Driver's Handbook.",
+  "org": "Ontario MTO, DriveTest",
+  "searchAliases": "ontario g1 g1 test g1 knowledge test g1 practice test mto drivetest ontario driver's licence ontario drivers test canada learner permit g2 written test",
+  "facts": {
+    "answer": "The G1 knowledge test is the written test you pass at a DriveTest Centre to get your learner's licence in Ontario. It is multiple choice, with a road signs section and a rules of the road section drawn from the Official MTO Driver's Handbook, and you need an 80% total score; it is not timed. You must be at least 16 and pass a vision test too, then hold the G1 for 12 months (8 with an approved driver education course) before the G2 road test.",
+    "rows": [
+      {
+        "label": "Format",
+        "value": "Multiple choice: road signs and rules of the road"
+      },
+      {
+        "label": "Passing score",
+        "value": "80% total"
+      },
+      {
+        "label": "Time",
+        "value": "Not timed (typically 20 to 30 minutes)"
+      },
+      {
+        "label": "Minimum age",
+        "value": "16"
+      },
+      {
+        "label": "Also required",
+        "value": "Vision test and two pieces of ID"
+      },
+      {
+        "label": "Languages",
+        "value": "32 for the G1 test"
+      },
+      {
+        "label": "Next step",
+        "value": "G2 road test after 12 months (8 with approved driver ed)"
+      },
+      {
+        "label": "Given by",
+        "value": "DriveTest, for the Ontario Ministry of Transportation"
+      }
+    ],
+    "basedOn": "the Official MTO Driver's Handbook (updated March 2026)",
+    "source": {
+      "name": "Official MTO Driver's Handbook",
+      "url": "https://www.ontario.ca/document/official-mto-drivers-handbook"
+    }
+  }
+}

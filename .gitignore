@@ -43,3 +43,6 @@ next-env.d.ts
 # Browser accessibility checks
 /test-results/
 /playwright-report/
+
+# Python bytecode from tools/ build scripts
+__pycache__/

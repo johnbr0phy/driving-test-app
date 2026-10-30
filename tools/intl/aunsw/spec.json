@@ -1,0 +1,116 @@
+{
+  "id": "aunsw",
+  "stateCode": "AUNSW",
+  "idBase": 7200,
+  "prefix": "AUNSW-",
+  "slug": "/nsw-dkt",
+  "landingPath": "/nsw-dkt-practice-test",
+  "dataFile": "data/nsw-dkt-questions.json",
+  "name": "NSW DKT Practice Test",
+  "shortName": "NSW DKT",
+  "examLabel": "NSW DKT",
+  "fullName": "NSW Driver Knowledge Test (DKT)",
+  "icon": "car",
+  "passPct": 91,
+  "outlineComment": "Transport for NSW Road User Handbook (English edition, PDF dated February 2026,\nnsw.gov.au), which the handbook says prepares you for the Driver Knowledge Test.\nThe in-person test is 45 questions: 15 general knowledge (12 must be right) and 30\nroad safety (29 must be right), 41 of 45 overall, so passPct is 91. Categories follow\nthe handbook chapters: licences and penalties, speed, alcohol/drugs/fatigue/phones,\ngiving way, sharing the road, overtaking and lanes, parking, hazards and vehicles.\nThe Hazard Perception Test (video) is a separate test and is not modelled.",
+  "categories": [
+    {
+      "key": "nswLicence",
+      "label": "Licences, Penalties & Seatbelts",
+      "perTest": 6,
+      "segment": "LIC"
+    },
+    {
+      "key": "nswSpeed",
+      "label": "Speed Limits & Safe Distance",
+      "perTest": 6,
+      "segment": "SPD"
+    },
+    {
+      "key": "nswImpair",
+      "label": "Alcohol, Drugs, Fatigue & Phones",
+      "perTest": 7,
+      "segment": "IMP"
+    },
+    {
+      "key": "nswGiveWay",
+      "label": "Giving Way, Intersections & Crossings",
+      "perTest": 9,
+      "segment": "GWY"
+    },
+    {
+      "key": "nswSharing",
+      "label": "Sharing the Road",
+      "perTest": 6,
+      "segment": "SHR"
+    },
+    {
+      "key": "nswLanes",
+      "label": "Overtaking, Lanes & Motorways",
+      "perTest": 7,
+      "segment": "LAN"
+    },
+    {
+      "key": "nswParking",
+      "label": "Parking & Stopping",
+      "perTest": 4,
+      "segment": "PRK"
+    },
+    {
+      "key": "nswHazards",
+      "label": "Hazards, Crashes & Your Vehicle",
+      "perTest": 5,
+      "segment": "HAZ"
+    }
+  ],
+  "copy": {
+    "guestPrompt": "to save your NSW DKT progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test, each covering every Road User Handbook topic: licences and P plate rules, speed, alcohol and fatigue, giving way, sharing the road, lanes, parking and hazards. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions across the Road User Handbook",
+    "heroSubs": [
+      "Eight handbook topics, four tests. Giving way is the biggest.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "The DKT needs 29 of 30 road safety. Fix the misses.",
+      "All done. Book your DKT or start it online."
+    ],
+    "sourceLine": "Based on the Transport for NSW Road User Handbook (2026 edition). The real DKT needs 12 of 15 general knowledge and 29 of 30 road safety questions right; 91% here matches 41 of 45."
+  },
+  "blurb": "Practice for the NSW Driver Knowledge Test with 200 questions from the Road User Handbook: P plate rules, speed limits, BAC, giving way, roundabouts, parking and more.",
+  "org": "Transport for NSW",
+  "searchAliases": "nsw dkt driver knowledge test learner licence l plates learners permit australia sydney new south wales road user handbook rta myrta service nsw",
+  "facts": {
+    "answer": "The NSW Driver Knowledge Test (DKT) is the road rules test you pass before getting a learner licence. It is 45 multiple-choice questions in two parts: 15 general knowledge questions, of which you must get 12 right, and 30 road safety questions, of which you must get 29 right. You can take it online as part of a 4 to 6 hour course from 15 years and 11 months, or in person at a service centre from 16.",
+    "rows": [
+      {
+        "label": "Questions",
+        "value": "45 (15 general knowledge, 30 road safety)"
+      },
+      {
+        "label": "Passing score",
+        "value": "12 of 15 and 29 of 30 (41 of 45)"
+      },
+      {
+        "label": "Minimum age",
+        "value": "15 years 11 months online, 16 in person"
+      },
+      {
+        "label": "Online retakes",
+        "value": "Unlimited for one fee, after 12 hours"
+      },
+      {
+        "label": "Languages online",
+        "value": "English and 8 community languages"
+      },
+      {
+        "label": "Given by",
+        "value": "Transport for NSW, through Service NSW"
+      }
+    ],
+    "basedOn": "the Transport for NSW Road User Handbook (2026 edition)",
+    "source": {
+      "name": "NSW Government: Driver Knowledge Test",
+      "url": "https://www.nsw.gov.au/driving-boating-and-transport/driver-and-rider-licences/driver-licences/driver-licence-tests/driver-knowledge-test"
+    }
+  }
+}

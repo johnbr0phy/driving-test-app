@@ -13,12 +13,24 @@ export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 
 const completedSets = new Set<string>(TIGER_EXAM_IDS);
 
+/**
+ * International driving exams wear the matching US exam's tiger: the DMV tiger
+ * for car tests, the motorcycle tiger, and the CDL tiger for lorries and buses.
+ * Remove an entry once that exam has its own eight expressions.
+ */
+const BORROWED_SETS: Record<string, string> = {
+  ukcar: "dmv", ukadi: "dmv", ukmoto: "moto", uklgv: "cdl", ukpcv: "cdl",
+  caon: "dmv", caqc: "dmv", cabc: "dmv", caab: "dmv", camb: "dmv",
+  aunsw: "dmv", auvic: "dmv", auqld: "dmv", auwa: "dmv", ausa: "dmv",
+};
+
 export function hasTigerSet(examId: string): boolean {
-  return examId === "dmv" || completedSets.has(examId);
+  return examId === "dmv" || completedSets.has(examId) || examId in BORROWED_SETS;
 }
 
 /** Unfinished and unknown exams retain the existing DMV artwork. */
 export function getTigerAsset(examId = "dmv", expression?: TigerExpression): string {
+  examId = BORROWED_SETS[examId] ?? examId;
   if (completedSets.has(examId)) {
     return `/tigers/${examId}/tiger_face_${String(expression ?? 3).padStart(2, "0")}.png`;
   }

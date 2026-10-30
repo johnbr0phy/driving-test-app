@@ -520,6 +520,231 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the AAVSB VTNE content outline approved March 2023",
     source: { name: "AAVSB VTNE Candidate Information Handbook", url: "https://www.aavsb.org/vtne-overview/" },
   },
+  auwa: {
+    answer:
+      "The Western Australia car learner's theory test (the Computerised Theory Test) is 30 multiple-choice questions on the road rules and safe driving from the Drive Safe handbook, and you need at least 24 correct (80%) to pass. You can sit it at a Driver and Vehicle Services centre or regional agent from age 16, the same day you apply for your learner's permit, and a pass is valid for 5 years. Learners then need 6 months and the Hazard Perception Test, and 50 supervised hours including 5 at night, before the driving assessment at 17.",
+    rows: [
+      { label: "Questions", value: "30 multiple choice" },
+      { label: "Passing score", value: "24 of 30 (80%)" },
+      { label: "Minimum age", value: "16 for a car learner's permit" },
+      { label: "Pass valid for", value: "5 years" },
+      { label: "Handbook", value: "Drive Safe (edition of 5 August 2026)" },
+      { label: "Next steps", value: "Hazard Perception Test, 50 logged hours, driving assessment at 17" },
+      { label: "Given by", value: "WA Department of Transport and Major Infrastructure, at DVS centres and agents" },
+    ],
+    basedOn: "Drive Safe, a handbook for Western Australian road users (revised 5 August 2026)",
+    source: { name: "Transport WA: Take the theory test", url: "https://www.transport.wa.gov.au/licensing/drivers-licence/get-a-licence/car/take-theory-test" },
+  },
+  camb: {
+    answer:
+      "The Manitoba Class 5 knowledge test is the written test for a Class 5L learner licence. Manitoba Public Insurance (MPI) gives it on a computer, booked with an Autopac agent or online, with a 30-minute time limit and a $12 fee; it is not open book and covers traffic laws, safe driving practices and road signs from the MPI Driver's Handbook, and is usually reported as 30 multiple-choice questions. You must be 16 (15 and a half in a high school driver education course), and GDL applicants who fail wait seven days to retake it.",
+    rows: [
+      { label: "Questions", value: "30 multiple choice (reported; MPI does not publish a count)" },
+      { label: "Time", value: "30 minutes" },
+      { label: "Passing score", value: "Not published by MPI (prep sites say 24 or 25 of 30)" },
+      { label: "Fee", value: "$12 per test" },
+      { label: "Minimum age", value: "16, or 15 and a half in high school driver education" },
+      { label: "Retake wait", value: "7 days (GDL applicants)" },
+      { label: "Languages", value: "English, French and 28 other languages, with audio" },
+      { label: "Next stage", value: "Class 5L Learner Stage, at least 9 months" },
+    ],
+    basedOn: "the MPI Driver's Handbook, October 2026 edition",
+    source: { name: "Manitoba Public Insurance: Testing for your Class 5 licence", url: "https://www.mpi.mb.ca/testing-for-your-class-5-licence/" },
+  },
+  caon: {
+    answer:
+      "The G1 knowledge test is the written test you pass at a DriveTest Centre to get your learner's licence in Ontario. It is multiple choice, with a road signs section and a rules of the road section drawn from the Official MTO Driver's Handbook, and you need an 80% total score; it is not timed. You must be at least 16 and pass a vision test too, then hold the G1 for 12 months (8 with an approved driver education course) before the G2 road test.",
+    rows: [
+      { label: "Format", value: "Multiple choice: road signs and rules of the road" },
+      { label: "Passing score", value: "80% total" },
+      { label: "Time", value: "Not timed (typically 20 to 30 minutes)" },
+      { label: "Minimum age", value: "16" },
+      { label: "Also required", value: "Vision test and two pieces of ID" },
+      { label: "Languages", value: "32 for the G1 test" },
+      { label: "Next step", value: "G2 road test after 12 months (8 with approved driver ed)" },
+      { label: "Given by", value: "DriveTest, for the Ontario Ministry of Transportation" },
+    ],
+    basedOn: "the Official MTO Driver's Handbook (chapters updated through September 2026)",
+    source: { name: "Official MTO Driver's Handbook", url: "https://www.ontario.ca/document/official-mto-drivers-handbook" },
+  },
+  caab: {
+    answer:
+      "The Alberta Class 7 knowledge test is 30 multiple-choice questions taken on a computer at a registry agent office, and you need 25 correct (83%) to pass. It covers safe driving practices, driving laws and road signs from the Driver's Guide. You must be at least 14, pass a vision test, and have a parent's or guardian's consent if you are under 18; you can take it once a day.",
+    rows: [
+      { label: "Questions", value: "30 multiple choice" },
+      { label: "Passing score", value: "25 of 30 (83%)" },
+      { label: "Minimum age", value: "14 (parental consent under 18)" },
+      { label: "Also required", value: "Vision test" },
+      { label: "Attempts", value: "Once per day, fee each time" },
+      { label: "Languages", value: "English and 24 others" },
+      { label: "Where", value: "Alberta registry agent offices" },
+    ],
+    basedOn: "the Alberta Driver's Guide (cars and light trucks, Spring 2026)",
+    source: { name: "Government of Alberta, Driver's knowledge test", url: "https://www.alberta.ca/drivers-knowledge-test" },
+  },
+  ukmoto: {
+    answer:
+      "The DVSA motorcycle theory test has two parts taken on the same day: 50 multiple-choice questions in 57 minutes, where you need 43 to pass, and a hazard perception test of 14 video clips, where you need 44 of 75. You must pass both, it costs 23 pounds and the pass certificate lasts 2 years. From 5 November 2026, three of the multiple-choice questions are based on a short silent riding video.",
+    rows: [
+      { label: "Multiple-choice", value: "50 questions in 57 minutes" },
+      { label: "Pass mark", value: "43 of 50 (86%)" },
+      { label: "Hazard perception", value: "14 clips, 44 of 75 to pass" },
+      { label: "Fee", value: "£23" },
+      { label: "Minimum age", value: "16 for a moped, 17 for a motorcycle" },
+      { label: "Certificate valid", value: "2 years" },
+    ],
+    basedOn: "the DVSA motorcycle theory test guidance and The Highway Code",
+    source: { name: "GOV.UK: Motorcycle theory test", url: "https://www.gov.uk/motorcycle-theory-test" },
+  },
+  aunsw: {
+    answer:
+      "The NSW Driver Knowledge Test (DKT) is the road rules test you pass before getting a learner licence. It is 45 multiple-choice questions in two parts: 15 general knowledge questions, of which you must get 12 right, and 30 road safety questions, of which you must get 29 right. You can take it online as part of a 4 to 6 hour course from 15 years and 11 months, or in person at a service centre from 16.",
+    rows: [
+      { label: "Questions", value: "45 (15 general knowledge, 30 road safety)" },
+      { label: "Passing score", value: "12 of 15 and 29 of 30 (41 of 45)" },
+      { label: "Minimum age", value: "15 years 11 months online, 16 in person" },
+      { label: "Online retakes", value: "Unlimited for one fee, after 12 hours" },
+      { label: "Languages online", value: "English and 8 community languages" },
+      { label: "Given by", value: "Transport for NSW, through Service NSW" },
+    ],
+    basedOn: "the Transport for NSW Road User Handbook (2026 edition)",
+    source: { name: "NSW Government: Driver Knowledge Test", url: "https://www.nsw.gov.au/driving-boating-and-transport/driver-and-rider-licences/driver-licences/driver-licence-tests/driver-knowledge-test" },
+  },
+  cabc: {
+    answer:
+      "The ICBC Class 7L knowledge test for a British Columbia learner's licence has 50 multiple-choice questions taken from ICBC's Learn to Drive Smart guide, and you need 40 correct (80%) to pass. You have up to 45 minutes, can take it online or at an ICBC driver licensing office from age 16, and must also pass a vision screening. It is offered in 12 languages.",
+    rows: [
+      { label: "Questions", value: "50 multiple choice" },
+      { label: "Passing score", value: "40 of 50 (80%)" },
+      { label: "Time", value: "Up to 45 minutes" },
+      { label: "Minimum age", value: "16" },
+      { label: "Fee", value: "$15 test, $10 Class 7L licence" },
+      { label: "Where", value: "Online or at an ICBC driver licensing office" },
+      { label: "Languages", value: "12, including French, Punjabi, Mandarin and Cantonese" },
+    ],
+    basedOn: "ICBC's Learn to Drive Smart guide and knowledge test tip sheet (June 2026)",
+    source: { name: "ICBC: Get your L", url: "https://icbc.com/driver-licensing/new-drivers/Get-your-L" },
+  },
+  ukpcv: {
+    answer:
+      "The bus and coach (PCV) theory test is Part 1 of the Driver CPC, run by DVSA in Great Britain. The multiple-choice part has 100 questions in 1 hour 55 minutes and you need 85 correct to pass; a separate hazard perception part has 19 video clips with a pass mark of 67 out of 100. You must pass both within 2 years of each other, and the certificate lasts 2 years from the first pass.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "1 hour 55 minutes" },
+      { label: "Pass mark", value: "85 out of 100" },
+      { label: "Hazard perception", value: "Separate test: 19 clips, pass 67 of 100 (not in this practice test)" },
+      { label: "Fee", value: "£26 multiple choice, £11 hazard perception" },
+      { label: "Valid for", value: "2 years from passing the first part" },
+      { label: "Run by", value: "DVSA, at theory test centres in Great Britain" },
+    ],
+    basedOn: "the GOV.UK Driver CPC part 1 theory test guidance and the DVSA bus and coach theory topics, checked October 2026",
+    source: { name: "GOV.UK: Driver CPC part 1 theory test", url: "https://www.gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test" },
+  },
+  ukcar: {
+    answer:
+      "The DVSA car theory test has two parts taken in one sitting: 50 multiple-choice questions in 57 minutes, where you need 43 to pass, then a hazard perception test of 14 video clips scored out of 75, where you need 44. You must pass both, need a provisional licence and must be at least 17 (16 with the higher mobility rate of PIP), and the pass certificate lasts 2 years.",
+    rows: [
+      { label: "Questions", value: "50 multiple choice (3 on a video clip)" },
+      { label: "Time", value: "57 minutes" },
+      { label: "Pass mark", value: "43 of 50 (86%)" },
+      { label: "Hazard perception", value: "14 clips, 44 of 75 to pass" },
+      { label: "Fee", value: "£23" },
+      { label: "Minimum age", value: "17 (16 with higher-rate PIP mobility)" },
+      { label: "Certificate valid", value: "2 years" },
+      { label: "Given by", value: "DVSA, in England, Scotland and Wales" },
+    ],
+    basedOn: "The Highway Code and the DVSA theory test rules on GOV.UK",
+    source: { name: "GOV.UK: Theory test", url: "https://www.gov.uk/theory-test" },
+  },
+  ukadi: {
+    answer:
+      "The ADI part 1 test is the first of three DVSA tests to become an approved driving instructor in Great Britain. It has 100 multiple-choice questions in 1 hour 30 minutes, 25 in each of four bands, and you need 85 overall and at least 20 in every band, plus 57 out of 75 on a hazard perception part taken in the same sitting. It costs 81 pounds, and after passing you have 2 years to pass parts 2 and 3.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, 25 per band" },
+      { label: "Time", value: "1 hour 30 minutes" },
+      { label: "Pass mark", value: "85 of 100, and 20 of 25 in each band" },
+      { label: "Hazard perception", value: "14 clips, 57 of 75 to pass" },
+      { label: "Fee", value: "81 GBP" },
+      { label: "Retake", value: "After at least 3 working days" },
+      { label: "Given by", value: "DVSA, at theory test centres" },
+    ],
+    basedOn: "the DVSA ADI part 1 test guidance on GOV.UK, checked October 2026",
+    source: { name: "GOV.UK: Approved driving instructor (ADI) part 1 test", url: "https://www.gov.uk/adi-part-1-test" },
+  },
+  auvic: {
+    answer:
+      "The VicRoads learner permit test is a computer-based, multiple-choice test of 32 questions on road law and road safety, and you need 25 correct (78%) to pass. It is taken with an eyesight test, you must be at least 16 to get the permit, and the questions come from the Road to Solo Driving handbook. Once you pass, the learner permit is valid for 10 years.",
+    rows: [
+      { label: "Questions", value: "32, multiple choice" },
+      { label: "Passing score", value: "25 correct (78%)" },
+      { label: "Also required", value: "Eyesight test, proof of identity" },
+      { label: "Minimum age", value: "16 (online course enrolment from 15 years 11 months)" },
+      { label: "Based on", value: "Road to Solo Driving handbook" },
+      { label: "Permit valid for", value: "10 years" },
+      { label: "Given by", value: "VicRoads, in person or online" },
+    ],
+    basedOn: "Road to Solo Driving (VicRoads, September 2026 edition)",
+    source: { name: "VicRoads Road to Solo Driving handbook", url: "https://transport.vic.gov.au/road-and-active-transport/registration-and-licensing/licences/driver-history-handbooks-and-logbooks/driver-handbooks-and-logbooks" },
+  },
+  ausa: {
+    answer:
+      "The South Australia learner's theory test at Service SA has 50 questions: 8 give-way diagram questions, which you must all get right, then 42 multiple-choice questions on the road rules and safe driving, of which you need 32. You can sit it from age 16, or instead complete the online myLs course and its 30-question test (27 correct to pass). All questions come from The Driver's Handbook. Learners then hold the permit for at least 12 months if under 25, log 75 supervised hours including 15 at night, and pass the Hazard Perception Test and a practical test before P1.",
+    rows: [
+      { label: "Questions", value: "50 at Service SA (8 give way + 42 multiple choice)" },
+      { label: "Passing score", value: "All 8 give-way questions and 32 of 42" },
+      { label: "Online option", value: "myLs course and test: 27 of 30 to pass" },
+      { label: "Minimum age", value: "16 for a learner's permit" },
+      { label: "Handbook", value: "The Driver's Handbook (February 2026 edition)" },
+      { label: "Next steps", value: "12 months on L (under 25), 75 logged hours, Hazard Perception Test, VORT or CBT&A" },
+      { label: "Given by", value: "SA Department for Infrastructure and Transport, at Service SA" },
+    ],
+    basedOn: "The Driver's Handbook, South Australia (February 2026 edition)",
+    source: { name: "My Licence SA: The Driver's Handbook", url: "https://mylicence.sa.gov.au/road-rules/the-drivers-handbook/obtaining-permit" },
+  },
+  auqld: {
+    answer:
+      "To get a car learner licence in Queensland you must be at least 16 and pass PrepL online or the written road rules test at a TMR customer service centre. Both have 30 multiple-choice questions. The written test is in two sections: you need at least 9 of 10 giving way questions and 18 of 20 road rules and licence questions right, while PrepL needs 27 of 30 (90%).",
+    rows: [
+      { label: "Questions", value: "30 multiple choice" },
+      { label: "Passing score", value: "9 of 10 giving way and 18 of 20 road rules (PrepL: 27 of 30)" },
+      { label: "Minimum age", value: "16 (PrepL enrolment from 15 years 11 months)" },
+      { label: "Fee", value: "$29.70 per attempt (PrepL: one fee, 12 months access)" },
+      { label: "Retakes", value: "Once a day; a pass is valid for 5 years" },
+      { label: "Given by", value: "Queensland Department of Transport and Main Roads" },
+    ],
+    basedOn: "Queensland TMR licensing, road rules and road safety pages and the Queensland Road Rules, October 2026",
+    source: { name: "Queensland Government: driver tests", url: "https://www.qld.gov.au/transport/licensing/getting/tests" },
+  },
+  uklgv: {
+    answer:
+      "The lorry theory test is part 1 of the Driver CPC, set by the DVSA. The multiple-choice part has 100 questions in 1 hour 55 minutes and you need 85 right to pass; hazard perception is a separate part of 19 video clips with a pass mark of 67 out of 100. The certificate lasts 2 years from passing the first part, and you must pass both parts within 2 years of each other.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "1 hour 55 minutes" },
+      { label: "Passing score", value: "85 out of 100" },
+      { label: "Hazard perception", value: "Separate part: 19 clips, pass mark 67 of 100" },
+      { label: "Fee", value: "£26 (multiple choice), £11 (hazard perception)" },
+      { label: "Certificate valid", value: "2 years from passing the first part" },
+      { label: "Given by", value: "DVSA, at theory test centres" },
+    ],
+    basedOn: "the DVSA lorry theory test topics, The Highway Code and the GB drivers' hours rules",
+    source: { name: "GOV.UK: Driver CPC part 1 theory test", url: "https://www.gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test" },
+  },
+  caqc: {
+    answer:
+      "The SAAQ knowledge test is the written test for a Quebec Class 5 (passenger vehicle) licence. You take it at an SAAQ service centre after holding your learner's licence for at least 10 months. It is multiple choice in three parts, the Highway Safety Code, road signs and traffic signals, and driving behaviours and techniques, and you need 75% on each part. If you fail, you wait at least 28 days to retake it.",
+    rows: [
+      { label: "Format", value: "Multiple choice, three parts" },
+      { label: "Passing score", value: "75% on each part" },
+      { label: "When", value: "After 10 months with a learner's licence" },
+      { label: "Retake", value: "Wait at least 28 days" },
+      { label: "Languages", value: "French or English; Spanish, Mandarin or Arabic on request" },
+      { label: "Next step", value: "Road test after 12 months, then a 2-year probationary licence" },
+      { label: "Given by", value: "SAAQ, at its service centres" },
+    ],
+    basedOn: "the SAAQ Road Safety Education Program and Quebec's Highway Safety Code, 2026",
+    source: { name: "SAAQ, Obtaining a Passenger Vehicle (Class 5) Driver's Licence", url: "https://saaq.gouv.qc.ca/en/drivers-licences/obtaining-licence/passenger-vehicle-class-5" },
+  },
   cpr: {
     answer:
       "Most CPR, AED and first aid written exams require 84% to pass, which is 21 of 25 on a typical 25-question exam. They cover scene safety, adult, child and infant CPR, AED use, choking and basic first aid. Certification also needs a hands-on skills check and usually lasts two years.",

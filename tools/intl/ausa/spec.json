@@ -1,0 +1,56 @@
+{
+  "id": "ausa",
+  "stateCode": "AUSA",
+  "idBase": 7600,
+  "prefix": "AUSA-",
+  "slug": "/sa-learners",
+  "landingPath": "/sa-learners-practice-test",
+  "dataFile": "data/sa-learners-questions.json",
+  "name": "SA Learner's Practice Test",
+  "shortName": "SA Learners",
+  "examLabel": "SA learner's test",
+  "fullName": "South Australia learner's theory test",
+  "icon": "car",
+  "passPct": 80,
+  "outlineComment": "South Australia learner's theory test, Department for Infrastructure and Transport (mylicence.sa.gov.au,\nread Oct 2026). At Service SA it is 50 questions: Part 1 is 8 give-way diagram questions that must all\nbe correct, Part 2 is 42 multiple-choice questions on road rules and safe driving, 32 correct to pass\n(40 of 50, so 80% here; the all-8 give-way rule is not modelled). The online myLs route ends in a\n30-question test needing 27 correct. Questions come from The Driver's Handbook (February 2026 edition).\nDIT publishes no topic weighting beyond the 8 give-way items, so giving way is 8 per test and the\nother 42 follow the handbook's road rules and licensing chapters: licensing and demerits, speed\nlimits and following distance, signs, signals and markings, lanes, turning and overtaking, sharing\nthe road (trams, bike riders, trucks, trains), parking, and alcohol, phones and safe driving.\nThe separate Hazard Perception Test (needed before P1) is not modelled.",
+  "categories": [
+    {"key": "ausaGiveWay", "label": "Giving Way", "perTest": 8, "segment": "GW"},
+    {"key": "ausaLicence", "label": "Learner, P1 & P2 Rules", "perTest": 7, "segment": "LIC"},
+    {"key": "ausaSpeed", "label": "Speed Limits & Following Distance", "perTest": 6, "segment": "SPD"},
+    {"key": "ausaSigns", "label": "Signs, Signals & Markings", "perTest": 7, "segment": "SGN"},
+    {"key": "ausaRoad", "label": "Lanes, Turning & Overtaking", "perTest": 7, "segment": "ROAD"},
+    {"key": "ausaShare", "label": "Sharing the Road", "perTest": 6, "segment": "SHR"},
+    {"key": "ausaParking", "label": "Parking & Stopping", "perTest": 3, "segment": "PRK"},
+    {"key": "ausaSafety", "label": "Alcohol, Phones & Safe Driving", "perTest": 6, "segment": "SAFE"}
+  ],
+  "copy": {
+    "guestPrompt": "to save your SA learner's test progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on, covering giving way and the road rules in The Driver's Handbook. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions like the Service SA test",
+    "heroSubs": [
+      "Eight topics, four tests. Giving way comes first, like the real test.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test or finish myLs."
+    ],
+    "sourceLine": "Based on The Driver's Handbook (South Australia, February 2026 edition). The Service SA test is 50 questions: all 8 give-way questions right and 32 of the other 42. The Hazard Perception Test is not modelled."
+  },
+  "blurb": "Practise for the South Australia learner's theory test with 200 questions from The Driver's Handbook: giving way, school zones, trams, L and P plate rules, demerits and BAC.",
+  "org": "SA Department for Infrastructure and Transport",
+  "searchAliases": "sa learners test south australia learner's theory test adelaide drivers handbook myls service sa l plates p plates give way road rules ltt australia",
+  "facts": {
+    "answer": "The South Australia learner's theory test at Service SA has 50 questions: 8 give-way diagram questions, which you must all get right, then 42 multiple-choice questions on the road rules and safe driving, of which you need 32. You can sit it from age 16, or instead complete the online myLs course and its 30-question test (27 correct to pass). All questions come from The Driver's Handbook. Learners then hold the permit for at least 12 months if under 25, log 75 supervised hours including 15 at night, and pass the Hazard Perception Test and a practical test before P1.",
+    "rows": [
+      {"label": "Questions", "value": "50 at Service SA (8 give way + 42 multiple choice)"},
+      {"label": "Passing score", "value": "All 8 give-way questions and 32 of 42"},
+      {"label": "Online option", "value": "myLs course and test: 27 of 30 to pass"},
+      {"label": "Minimum age", "value": "16 for a learner's permit"},
+      {"label": "Handbook", "value": "The Driver's Handbook (February 2026 edition)"},
+      {"label": "Next steps", "value": "12 months on L (under 25), 75 logged hours, Hazard Perception Test, VORT or CBT&A"},
+      {"label": "Given by", "value": "SA Department for Infrastructure and Transport, at Service SA"}
+    ],
+    "basedOn": "The Driver's Handbook, South Australia (February 2026 edition)",
+    "source": {"name": "My Licence SA: The Driver's Handbook", "url": "https://mylicence.sa.gov.au/road-rules/the-drivers-handbook/obtaining-permit"}
+  }
+}

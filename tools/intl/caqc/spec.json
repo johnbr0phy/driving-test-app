@@ -1,0 +1,56 @@
+{
+  "id": "caqc",
+  "stateCode": "CAQC",
+  "idBase": 6500,
+  "prefix": "CAQC-",
+  "slug": "/saaq",
+  "landingPath": "/saaq-practice-test",
+  "dataFile": "data/saaq-questions.json",
+  "name": "SAAQ Practice Test",
+  "shortName": "SAAQ",
+  "examLabel": "Quebec SAAQ",
+  "fullName": "Quebec SAAQ Class 5 knowledge test",
+  "icon": "car",
+  "passPct": 75,
+  "outlineComment": "SAAQ Class 5 (passenger vehicle) knowledge test, taken at an SAAQ service centre after\nholding the learner's licence for 10 months. Three multiple-choice parts (Highway Safety Code;\nroad signs and traffic signals; behaviours and techniques for driving a passenger vehicle), 75%\nrequired on each part. The SAAQ does not publish the question count. Content from the SAAQ Road\nSafety Education Program modules (English, 2023 to 2025 editions), the SAAQ Demerit Points and\nClass 5 Quick Reference Guide (C-6963-A, 25-07) leaflets, and the Gouvernement du Quebec\ntraffic rules and road sign pages (quebec.ca, updated July to October 2026). Per test:\n15 Code (licences 6, rules 9), 14 signs and signals (signs 8, lights and markings 6),\n21 behaviours (right of way 6, sharing the road 6, risk 5, techniques 4).",
+  "categories": [
+    {"key": "caqcLicence", "label": "Licences & Demerit Points", "perTest": 6, "segment": "LIC"},
+    {"key": "caqcRules", "label": "Highway Safety Code Rules", "perTest": 9, "segment": "RUL"},
+    {"key": "caqcSigns", "label": "Road Signs", "perTest": 8, "segment": "SGN"},
+    {"key": "caqcSignals", "label": "Traffic Lights & Pavement Markings", "perTest": 6, "segment": "SIG"},
+    {"key": "caqcRightOfWay", "label": "Intersections & Right of Way", "perTest": 6, "segment": "ROW"},
+    {"key": "caqcSharing", "label": "Sharing the Road", "perTest": 6, "segment": "SHR"},
+    {"key": "caqcRisk", "label": "Alcohol, Drugs, Fatigue & Distraction", "perTest": 5, "segment": "RSK"},
+    {"key": "caqcDriving", "label": "Driving Techniques & Conditions", "perTest": 4, "segment": "DRV"}
+  ],
+  "copy": {
+    "guestPrompt": "to save your SAAQ test progress and track every question you miss",
+    "trainingSub": "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions across all three parts of the SAAQ test",
+    "heroSubs": [
+      "Code, signs and driving behaviours. You need 75% on each part.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your SAAQ knowledge test."
+    ],
+    "sourceLine": "Based on the SAAQ driving course modules, SAAQ leaflets and Quebec's Highway Safety Code rules as published on quebec.ca (2026). The real test needs 75% on each of its three parts."
+  },
+  "blurb": "Quebec's Class 5 knowledge test: the Highway Safety Code, road signs and safe driving behaviours, with 75% needed on each part.",
+  "org": "SAAQ (Quebec)",
+  "searchAliases": "saaq quebec québec class 5 classe 5 knowledge test examen théorique learner licence permis apprenti probationary driving test montreal canada",
+  "facts": {
+    "answer": "The SAAQ knowledge test is the written test for a Quebec Class 5 (passenger vehicle) licence. You take it at an SAAQ service centre after holding your learner's licence for at least 10 months. It is multiple choice in three parts, the Highway Safety Code, road signs and traffic signals, and driving behaviours and techniques, and you need 75% on each part. If you fail, you wait at least 28 days to retake it.",
+    "rows": [
+      {"label": "Format", "value": "Multiple choice, three parts"},
+      {"label": "Passing score", "value": "75% on each part"},
+      {"label": "When", "value": "After 10 months with a learner's licence"},
+      {"label": "Retake", "value": "Wait at least 28 days"},
+      {"label": "Languages", "value": "French or English; Spanish, Mandarin or Arabic on request"},
+      {"label": "Next step", "value": "Road test after 12 months, then a 2-year probationary licence"},
+      {"label": "Given by", "value": "SAAQ, at its service centres"}
+    ],
+    "basedOn": "the SAAQ Road Safety Education Program and Quebec's Highway Safety Code, 2026",
+    "source": {"name": "SAAQ, Obtaining a Passenger Vehicle (Class 5) Driver's Licence", "url": "https://saaq.gouv.qc.ca/en/drivers-licences/obtaining-licence/passenger-vehicle-class-5"}
+  }
+}

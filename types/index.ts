@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -340,7 +340,149 @@ export type QuestionCategory =
   | "vtDentistry"
   | "vtEmergency"
   | "vtPain"
-  | "vtComm";
+  | "vtComm"
+
+  // WA learner's test categories
+  | "auwaLicence"
+  | "auwaSafety"
+  | "auwaSpeed"
+  | "auwaSigns"
+  | "auwaIntersect"
+  | "auwaLanes"
+  | "auwaSharing"
+  | "auwaParking"
+
+  // Manitoba Class 5 categories
+  | "cambLicence"
+  | "cambSigns"
+  | "cambRules"
+  | "cambSharing"
+  | "cambSpeed"
+  | "cambConditions"
+  | "cambImpaired"
+
+  // Ontario G1 categories
+  | "caonSigns"
+  | "caonSignals"
+  | "caonLicence"
+  | "caonRightOfWay"
+  | "caonSharing"
+  | "caonDriving"
+  | "caonConditions"
+
+  // Alberta Class 7 categories
+  | "caabLicensing"
+  | "caabSignals"
+  | "caabSigns"
+  | "caabRightOfWay"
+  | "caabDriving"
+  | "caabEmergency"
+  | "caabSharing"
+  | "caabLaw"
+
+  // UK motorcycle theory categories
+  | "ukmotoAware"
+  | "ukmotoMachine"
+  | "ukmotoHandling"
+  | "ukmotoVulnerable"
+  | "ukmotoRules"
+  | "ukmotoSigns"
+  | "ukmotoDocs"
+
+  // NSW DKT categories
+  | "nswLicence"
+  | "nswSpeed"
+  | "nswImpair"
+  | "nswGiveWay"
+  | "nswSharing"
+  | "nswLanes"
+  | "nswParking"
+  | "nswHazards"
+
+  // ICBC knowledge test categories
+  | "cabcSigns"
+  | "cabcRow"
+  | "cabcLanes"
+  | "cabcSafe"
+  | "cabcShare"
+  | "cabcImpair"
+  | "cabcEmerg"
+  | "cabcLicence"
+
+  // PCV theory test categories
+  | "ukpcvHours"
+  | "ukpcvVehicle"
+  | "ukpcvPassengers"
+  | "ukpcvDriver"
+  | "ukpcvRoad"
+  | "ukpcvIncidents"
+  | "ukpcvSigns"
+
+  // UK car theory test categories
+  | "ukcarAlert"
+  | "ukcarVehicle"
+  | "ukcarMargins"
+  | "ukcarHazard"
+  | "ukcarMotorway"
+  | "ukcarRules"
+  | "ukcarSigns"
+  | "ukcarEmerg"
+
+  // ADI part 1 categories
+  | "ukadiRoad"
+  | "ukadiConditions"
+  | "ukadiSigns"
+  | "ukadiControl"
+  | "ukadiTest"
+  | "ukadiLaw"
+  | "ukadiPublications"
+  | "ukadiInstruction"
+
+  // Victoria learner permit categories
+  | "auvicLicence"
+  | "auvicAlcohol"
+  | "auvicSafe"
+  | "auvicSpeed"
+  | "auvicSigns"
+  | "auvicGiveWay"
+  | "auvicTurning"
+  | "auvicSharing"
+
+  // SA learner's test categories
+  | "ausaGiveWay"
+  | "ausaLicence"
+  | "ausaSpeed"
+  | "ausaSigns"
+  | "ausaRoad"
+  | "ausaShare"
+  | "ausaParking"
+  | "ausaSafety"
+
+  // QLD learner licence categories
+  | "auqldGiveWay"
+  | "auqldLicence"
+  | "auqldSigns"
+  | "auqldRoad"
+  | "auqldSafety"
+
+  // UK LGV theory categories
+  | "uklgvHours"
+  | "uklgvVehicle"
+  | "uklgvLoading"
+  | "uklgvRoad"
+  | "uklgvDocs"
+  | "uklgvIncidents"
+  | "uklgvSigns"
+
+  // Quebec SAAQ categories
+  | "caqcLicence"
+  | "caqcRules"
+  | "caqcSigns"
+  | "caqcSignals"
+  | "caqcRightOfWay"
+  | "caqcSharing"
+  | "caqcRisk"
+  | "caqcDriving";
 
 export interface Question {
   type: QuestionType;

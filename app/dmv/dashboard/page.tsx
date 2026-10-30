@@ -49,6 +49,8 @@ function DashboardContent() {
   // Which test card's attempt panel is dropped down
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
   const [highlightedStep, setHighlightedStep] = useState<string | null>(null);
+  // Bumped by a tap on a step while no state is chosen; DmvStatePrompt answers it.
+  const [stateNudge, setStateNudge] = useState(0);
   const trainingSets = useStore((state) => state.trainingSets);
 
   // Hero subtitle variants (5 per progress state, picked randomly on mount)
@@ -404,7 +406,7 @@ function DashboardContent() {
           />
         )}
 
-        {needsState && <DmvStatePrompt />}
+        {needsState && <DmvStatePrompt nudge={stateNudge} />}
 
         {/* Hero section - card with progress */}
         <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
@@ -434,8 +436,19 @@ function DashboardContent() {
 
         {/* Interleaved Training + Tests */}
         <div
-          className={`mb-6 space-y-2 ${noState ? "opacity-50 pointer-events-none select-none" : ""}`}
+          className={`mb-6 space-y-2 ${noState ? "opacity-50 select-none cursor-pointer" : ""}`}
           aria-hidden={noState || undefined}
+          // Locked until a state is chosen: a tap anywhere here points at the picker instead.
+          onClickCapture={
+            noState
+              ? (e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setStateNudge((n) => n + 1);
+                  window.gtag?.("event", "state_picker_nudge");
+                }
+              : undefined
+          }
         >
           {[1, 2, 3, 4].map((id) => {
             const trainingProgress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };

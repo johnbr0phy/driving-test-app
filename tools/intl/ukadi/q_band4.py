@@ -92,7 +92,7 @@ PUBS = [
 ("The ADI part 3 lesson lasts about:",
  "45 minutes",
  ["60 minutes", "30 minutes", "90 minutes"],
- "The part 3 lesson lasts about 45 minutes, with the pupil driving for about 40 of them."),
+ "GOV.UK says the examiner watches a lesson of about 45 minutes, with you instructing a real pupil."),
 ("Which pupil cannot be used for the ADI part 3 test?",
  "A part 3 candidate",
  ["A full licence holder", "A partly trained learner", "A fully trained learner"],

@@ -93,6 +93,7 @@ export const v2Routes = (exam: ExamV2Config) => ({
   dashboard: `${exam.slug}/dashboard`,
   test: (n: number) => `${exam.slug}/test/${n}`,
   results: (n: number) => `${exam.slug}/test/${n}/results`,
+  stats: `${exam.slug}/stats`,
   /** A drill's front door: the Basics overview when it has one, else the questions. */
   drill: (key: string) => `${exam.slug}/practice/${drillNumber(exam, key)}`,
   /** Straight to the exam-level questions (DrillRunner). */

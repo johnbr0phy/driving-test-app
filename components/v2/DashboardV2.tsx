@@ -8,7 +8,7 @@
 import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronRight, Smartphone, Monitor, Pencil, CheckCircle } from "lucide-react";
+import { BarChart3, ChevronRight, Smartphone, Monitor, Pencil, CheckCircle } from "lucide-react";
 import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 import { goalFor } from "@/lib/v2/goals";
 import { getBank } from "@/lib/v2/bank";
@@ -366,6 +366,19 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               );
             })}
           </div>
+
+          <Link href={routes.stats} className="block mt-6">
+            <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 flex items-center gap-3 hover:shadow-md transition-shadow">
+              <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                <BarChart3 className="h-4 w-4 text-brand-dark" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">Your stats</h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Scores, weakest topics and the questions you keep missing</p>
+              </div>
+              <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
+            </div>
+          </Link>
 
           <div className="mt-6">
             <SuperAmazingCard dashboardKey={`v2:${exam.id}`} allComplete={totalSteps > 0 && doneSteps === totalSteps} totalSteps={totalSteps} />

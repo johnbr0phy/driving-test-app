@@ -11,7 +11,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { TestSwitcher } from "@/components/TestSwitcher";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { AdminLink } from "@/components/AdminLink";
 import { BrandLockup } from "@/components/BrandLockup";
 import { v2DarkThemeStyle } from "@/lib/v2/darkTheme";
@@ -43,7 +42,6 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
         <BrandLockup />
         <div className="flex items-center gap-1 sm:gap-2">
           <TestSwitcher />
-          <ThemeToggle />
           {user ? (
             <>
               <TeachLink />

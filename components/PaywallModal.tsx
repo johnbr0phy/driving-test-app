@@ -26,6 +26,12 @@ interface PaywallModalProps {
   benefits?: string[];
   isGuest?: boolean;
   onSignUp?: () => void;
+  /** Two-line headline. Defaults to "Study smart. / Pass first time." */
+  headline?: [string, string];
+  /** Badge beside the price; null hides it. Defaults to "Cheaper than a retest". */
+  badge?: string | null;
+  /** "2,000+ students passed" is a DMV number: hide it on other exams' paywalls. */
+  hideSocialProof?: boolean;
 }
 
 export function PaywallModal({
@@ -36,6 +42,9 @@ export function PaywallModal({
   isGuest = false,
   onSignUp,
   benefits,
+  headline,
+  badge,
+  hideSocialProof = false,
 }: PaywallModalProps) {
   const { t, language } = useTranslation();
   const dict =
@@ -93,9 +102,9 @@ export function PaywallModal({
               className="flex-shrink-0"
             />
             <DialogTitle className="text-2xl font-bold leading-tight text-gray-900 dark:text-gray-50">
-              {t("paywall.studySmart")}
+              {headline?.[0] ?? t("paywall.studySmart")}
               <br />
-              {t("paywall.passFirstTime")}
+              {headline?.[1] ?? t("paywall.passFirstTime")}
             </DialogTitle>
           </div>
           <DialogDescription className="sr-only">
@@ -125,9 +134,11 @@ export function PaywallModal({
           <div className="mb-5">
             <div className="flex items-baseline justify-between">
               <span className="text-4xl font-bold text-gray-900 dark:text-gray-50">$9.99</span>
-              <span className="border border-brand text-brand-dark text-xs font-semibold px-3 py-1 rounded-full">
-                {t("paywall.cheaperThanRetest")}
-              </span>
+              {badge !== null && (
+                <span className="border border-brand text-brand-dark text-xs font-semibold px-3 py-1 rounded-full">
+                  {badge ?? t("paywall.cheaperThanRetest")}
+                </span>
+              )}
             </div>
             <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">{t("paywall.oneTimePayment")}</div>
           </div>
@@ -184,14 +195,14 @@ export function PaywallModal({
         )}
 
         {/* Social proof */}
-        <div className="flex items-center justify-center gap-1.5 mt-4 pt-3 border-t border-gray-100 dark:border-gray-800">
+        {!hideSocialProof && <div className="flex items-center justify-center gap-1.5 mt-4 pt-3 border-t border-gray-100 dark:border-gray-800">
           <div className="flex">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />
             ))}
           </div>
           <span className="text-xs text-gray-500 dark:text-gray-400">{t("paywall.socialProof")}</span>
-        </div>
+        </div>}
       </DialogContent>
     </Dialog>
   );

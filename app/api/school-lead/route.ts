@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { sendEmail } from "@/lib/resend";
 
+/** Form fields go into email HTML, so escape them: the form is public. */
+const h = (v: unknown) =>
+  String(v ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
 export async function POST(request: NextRequest) {
   try {
     const { schoolName, contactName, email, phone, city, state, studentsPerYear, hearAbout } =
@@ -47,20 +51,20 @@ export async function POST(request: NextRequest) {
         <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <img src="https://www.tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
               <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">Thanks for reaching out!</h1>
             </td>
           </tr>
           <tr>
             <td style="padding: 24px 40px 40px;">
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Hey ${contactName},
+                Hey ${h(contactName)},
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Thanks for your interest in bringing Tigertest to ${schoolName}. We&rsquo;ll put together a custom quote and send it your way within one business day.
+                Thanks for your interest in bringing Tigertest to ${h(schoolName)}. We&rsquo;ll put together a custom quote and send it your way within one business day.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                In the meantime, feel free to try Tigertest yourself &mdash; it&rsquo;s the same experience your students will get.
+                In the meantime, feel free to try Tigertest yourself. It&rsquo;s the same experience your students will get.
               </p>
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
@@ -71,7 +75,7 @@ export async function POST(request: NextRequest) {
               </table>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 Talk soon,<br>
-                John at Tigertest
+                John @ Tigertest.io
               </p>
             </td>
           </tr>
@@ -92,9 +96,9 @@ export async function POST(request: NextRequest) {
       kind: "transactional",
       to: "john@johnbrophy.net",
       subject: `New school lead: ${schoolName}`,
-      html: `<p>New school lead: <strong>${schoolName}</strong>, ${city} ${state}, ${studentsPerYear || "unknown"} students/yr.</p>
-<p>Contact: ${contactName} &lt;${email}&gt; ${phone || "(no phone)"}</p>
-<p>Heard about us via: ${hearAbout || "not specified"}</p>`,
+      html: `<p>New school lead: <strong>${h(schoolName)}</strong>, ${h(city)} ${h(state)}, ${h(studentsPerYear) || "unknown"} students/yr.</p>
+<p>Contact: ${h(contactName)} &lt;${h(email)}&gt; ${h(phone) || "(no phone)"}</p>
+<p>Heard about us via: ${h(hearAbout) || "not specified"}</p>`,
     });
 
     if (!notification.ok) {

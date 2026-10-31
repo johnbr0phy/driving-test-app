@@ -72,10 +72,19 @@ const DMV_VOICE: EmailVoice = {
   sourceLine: null,
 };
 
-/** "citizenship test" / "Security+ exam": shortName plus whatever fullName ends in. */
+/**
+ * "citizenship test" / "Security+ exam": shortName plus "test" or "exam",
+ * whichever the official name uses. A shortName that already says it
+ * ("Police Exam", "OC Test") stays as it is, never "Police Exam exam".
+ */
+function testNameFor(shortName: string, fullName: string): string {
+  if (/\b(test|exam|examination)s?(\s*\([^)]*\))?$/i.test(shortName.trim())) return shortName;
+  const kind = /\bexam(ination)?s?\b/i.test(fullName) ? "exam" : /\btests?\b/i.test(fullName) ? "test" : "exam";
+  return `${shortName} ${kind}`;
+}
+
 function examTestName(exam: ExamConfig): string {
-  const kind = /\btests?$/i.test(exam.fullName.trim()) ? "test" : "exam";
-  return `${exam.shortName} ${kind}`;
+  return testNameFor(exam.shortName, exam.fullName);
 }
 
 function voiceForExam(exam: ExamConfig): EmailVoice {
@@ -102,7 +111,7 @@ function voiceForV2(exam: ExamV2Config): EmailVoice {
   return {
     id: exam.id,
     shortName: exam.shortName,
-    testName: `${exam.shortName} ${/\btests?$/i.test(exam.fullName.trim()) ? "test" : "exam"}`,
+    testName: testNameFor(exam.shortName, exam.fullName),
     fullName: exam.fullName,
     questionsPerTest: perTest,
     testCount: exam.tests.length,

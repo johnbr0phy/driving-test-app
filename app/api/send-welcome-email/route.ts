@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminAuth, getAdminDb } from "@/lib/firebase-admin";
 import { FieldValue } from "firebase-admin/firestore";
 import { sendEmail } from "@/lib/resend";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
@@ -7,7 +7,7 @@ import { isKnownExamId, voiceFor } from "@/lib/email-voice";
 
 export async function POST(request: NextRequest) {
   try {
-    const { userId, email, displayName, emailConsent, examId: rawExamId } = await request.json();
+    const { userId, emailConsent, examId: rawExamId } = await request.json();
 
     // Which exam the signup came from (the client reads it off the signup
     // page's ?redirect= param). Drives the copy and links below, and is
@@ -19,11 +19,32 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: false, reason: "no_consent" });
     }
 
-    if (!userId || !email) {
+    if (!userId || typeof userId !== "string") {
       return NextResponse.json(
-        { success: false, error: "Missing userId or email" },
+        { success: false, error: "Missing userId" },
         { status: 400 }
       );
+    }
+
+    // The address and name come from Firebase Auth, never from the request:
+    // this route is unauthenticated, so trusting the body let anyone send a
+    // Tigertest welcome, with their own text in the greeting, to any address.
+    // Only an account created in the last day gets one.
+    let email: string | undefined;
+    let displayName: string | undefined;
+    try {
+      const record = await getAdminAuth().getUser(userId);
+      const createdMs = new Date(record.metadata.creationTime).getTime();
+      if (Date.now() - createdMs > 24 * 60 * 60 * 1000) {
+        return NextResponse.json({ success: false, reason: "not_new" });
+      }
+      email = record.email;
+      displayName = record.displayName;
+    } catch {
+      return NextResponse.json({ success: false, error: "Unknown user" }, { status: 400 });
+    }
+    if (!email) {
+      return NextResponse.json({ success: false, error: "No email on account" }, { status: 400 });
     }
 
     const db = getAdminDb();
@@ -58,7 +79,8 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: false, reason: "already_sent" });
     }
 
-    const greeting = displayName ? `Hey ${displayName},` : "Hey there,";
+    const firstName = displayName?.trim().split(/\s+/)[0]?.replace(/[<>&"]/g, "");
+    const greeting = firstName ? `Hey ${firstName},` : "Hey there,";
     const unsubscribeToken = Buffer.from(userId).toString("base64");
 
     const html = EMAIL_TEMPLATES.welcome(voiceFor(examId))

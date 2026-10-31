@@ -6,6 +6,9 @@
  * - globalStats/wrongQuestions — top 50 most-missed universal questions (stats page)
  * - globalStats/questionDifficulty — per-question attempt count + error rate for
  *   every question (universal and state-specific) with enough attempts (FastPass)
+ * - globalStats/examWrongQuestions — the same most-missed list for every
+ *   registry exam (CDL, CNA, real estate...), only for exams with enough
+ *   answers (lib/communityStats.ts), plus the list of tests that qualify
  * - globalStats/studyTimes — answers in the last 90 days by Eastern weekday and
  *   hour (7 x 24 grid), for picking email send times (the /admin Growth tab)
  *
@@ -16,6 +19,15 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
 import { FieldPath } from "firebase-admin/firestore";
 import { getQuestionsData } from "@/lib/testGenerator";
+import { ALL_EXAMS } from "@/lib/exams";
+import {
+  COMMUNITY_DMV_KEY,
+  COMMUNITY_MIN_ANSWERS,
+  COMMUNITY_MIN_QUESTIONS,
+  COMMUNITY_TOP_N,
+  type ExamCommunityQuestion,
+  type ExamCommunityStats,
+} from "@/lib/communityStats";
 
 // Paging every account one after another passed 60s at ~5,000 accounts
 // (timed out nightly from Oct 19 2026, so the docs kept the old 2,000-account
@@ -82,6 +94,15 @@ export async function GET(req: NextRequest) {
       studyUsers.add(uid);
     };
 
+    // Build question lookup map from static data (DMV ids are never an exam's)
+    const allQuestions = getQuestionsData("en");
+    const qMap: Record<string, any> = {};
+    allQuestions.forEach((q) => {
+      if (q.questionId) qMap[q.questionId] = q;
+    });
+
+    const dmvIds = new Set(Object.keys(qMap));
+
     // Firebase uids are alphanumeric, so split the id space into ranges at
     // these boundaries and page each range at the same time.
     const PAGE_SIZE = 500;
@@ -104,6 +125,26 @@ export async function GET(req: NextRequest) {
         cursor = page.docs[page.docs.length - 1].id;
       }
     };
+    // Registry exam answers, by exam: training answers and answered
+    // questions in finished practice tests, matched to an exam by question id
+    // prefix (longest first, so CDLE- never lands in CDL-).
+    const examCounts: Record<string, Record<string, { correct: number; wrong: number }>> = {};
+    const examUsers: Record<string, Set<string>> = {};
+    const prefixes = ALL_EXAMS.map((e) => ({ id: e.id, prefix: e.questionIdPrefix }))
+      .filter((e) => !!e.prefix)
+      .sort((a, b) => b.prefix.length - a.prefix.length);
+    const examOf = (questionId: string) => prefixes.find((e) => questionId.startsWith(e.prefix))?.id;
+    const countExamAnswer = (uid: string, questionId: unknown, isCorrect: unknown) => {
+      if (typeof questionId !== "string" || dmvIds.has(questionId)) return;
+      const examId = examOf(questionId);
+      if (!examId) return;
+      const byQuestion = (examCounts[examId] ??= {});
+      const c = (byQuestion[questionId] ??= { correct: 0, wrong: 0 });
+      if (isCorrect) c.correct++;
+      else c.wrong++;
+      (examUsers[examId] ??= new Set()).add(uid);
+    };
+
     const addUser = (doc: FirebaseFirestore.QueryDocumentSnapshot) => {
       if (!realUids.has(doc.id)) return;
       const data = doc.data();
@@ -112,26 +153,23 @@ export async function GET(req: NextRequest) {
         tally(doc.id, entry?.answeredAt);
         const id: string = entry?.questionId;
         if (!id) continue;
+        countExamAnswer(doc.id, id, entry.isCorrect);
         if (!counts[id]) counts[id] = { correct: 0, wrong: 0 };
         if (entry.isCorrect) counts[id].correct++;
         else counts[id].wrong++;
       }
       for (const test of Array.isArray(data.completedTests) ? data.completedTests : []) {
-        for (const a of Array.isArray(test?.answers) ? test.answers : []) tally(doc.id, a?.answeredAt);
+        for (const a of Array.isArray(test?.answers) ? test.answers : []) {
+          tally(doc.id, a?.answeredAt);
+          if (a?.userAnswer) countExamAnswer(doc.id, a.questionId, a.isCorrect);
+        }
       }
     };
     await Promise.all(BOUNDS.slice(0, -1).map((from, i) => readRange(from as string, BOUNDS[i + 1])));
 
-    // Build question lookup map from static data
-    const allQuestions = getQuestionsData("en");
-    const qMap: Record<string, any> = {};
-    allQuestions.forEach((q) => {
-      if (q.questionId) qMap[q.questionId] = q;
-    });
-
-    // Rank by wrong count, require 5+ attempts for statistical significance
-    const MIN_ATTEMPTS = 5;
-    const TOP_N = 50;
+    // Rank by wrong count, with enough answers per question to be meaningful
+    const MIN_ATTEMPTS = COMMUNITY_MIN_ANSWERS;
+    const TOP_N = COMMUNITY_TOP_N;
 
     const ranked = Object.entries(counts)
       .filter(([id]) => id.startsWith("U-")) // wrongQuestions doc is universal-only
@@ -183,6 +221,26 @@ export async function GET(req: NextRequest) {
       };
     }
 
+    // Most-missed per registry exam, kept only for exams with enough data.
+    const examStats: Record<string, ExamCommunityStats> = {};
+    for (const [examId, byQuestion] of Object.entries(examCounts)) {
+      const qualifying: ExamCommunityQuestion[] = Object.entries(byQuestion)
+        .map(([questionId, c]) => ({ questionId, wrong: c.wrong, total: c.wrong + c.correct, errorRate: 0 }))
+        .filter((q) => q.total >= COMMUNITY_MIN_ANSWERS);
+      if (qualifying.length < COMMUNITY_MIN_QUESTIONS) continue;
+      examStats[examId] = {
+        questions: qualifying
+          .map((q) => ({ ...q, errorRate: Math.round((q.wrong / q.total) * 100) }))
+          .sort((a, b) => b.wrong - a.wrong)
+          .slice(0, COMMUNITY_TOP_N),
+        users: examUsers[examId]?.size ?? 0,
+      };
+    }
+    const available = [
+      ...(ranked.length >= COMMUNITY_MIN_QUESTIONS ? [COMMUNITY_DMV_KEY] : []),
+      ...Object.keys(examStats).sort(),
+    ];
+
     // Write to Firestore — one doc per consumer
     await db.collection("globalStats").doc("studyTimes").set({
       // grid[weekday][hour], weekday 0 = Sunday, Eastern time
@@ -204,6 +262,14 @@ export async function GET(req: NextRequest) {
         updatedAt: new Date().toISOString(),
       });
 
+    await db.collection("globalStats").doc("examWrongQuestions").set({
+      available,
+      exams: examStats,
+      minAnswers: COMMUNITY_MIN_ANSWERS,
+      minQuestions: COMMUNITY_MIN_QUESTIONS,
+      updatedAt: new Date().toISOString(),
+    });
+
     await db
       .collection("globalStats")
       .doc("questionDifficulty")
@@ -218,11 +284,15 @@ export async function GET(req: NextRequest) {
       });
 
     console.log(
+      `[aggregate-stats] Common Mistakes on: ${available.join(", ") || "none"}`
+    );
+    console.log(
       `[aggregate-stats] computed ${ranked.length} wrong questions, ${Object.keys(difficulty).length} difficulty entries from ${realUids.size} users`
     );
     return NextResponse.json({
       computed: ranked.length,
       difficultyEntries: Object.keys(difficulty).length,
+      communityTests: available,
       users: realUids.size,
     });
   } catch (err: any) {

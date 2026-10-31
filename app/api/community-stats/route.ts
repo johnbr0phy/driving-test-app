@@ -3,6 +3,11 @@
  * Reads globalStats/wrongQuestions via Admin SDK (bypasses Firestore security rules).
  * Returns the pre-aggregated community wrong questions data.
  * When lang=es, replaces question/answer/explanation with Spanish translations.
+ *
+ * GET /api/community-stats?exam=cdl
+ * A registry exam's most-missed list from globalStats/examWrongQuestions:
+ * ids and rates only (the page has the bank), empty until the exam has
+ * enough answers (lib/communityStats.ts).
  */
 
 import { NextRequest, NextResponse } from "next/server";
@@ -35,6 +40,9 @@ const enMap = new Map(
   (questionsEn as QuestionEntry[]).map((q) => [q.questionId, q])
 );
 
+// Rebuilt once a night, so a CDN copy an hour old is as good as fresh.
+const CACHE = { "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400" };
+
 function getEsAnswerText(q: ReturnType<typeof esMap.get>): string {
   if (!q) return "";
   const map: Record<string, string> = { A: q.optionA, B: q.optionB, C: q.optionC, D: q.optionD };
@@ -43,9 +51,18 @@ function getEsAnswerText(q: ReturnType<typeof esMap.get>): string {
 
 export async function GET(req: NextRequest) {
   const lang = req.nextUrl.searchParams.get("lang") ?? "en";
+  const exam = req.nextUrl.searchParams.get("exam");
 
   try {
     const db = getAdminDb();
+    if (exam) {
+      const snap = await db.collection("globalStats").doc("examWrongQuestions").get();
+      const stats = snap.data()?.exams?.[exam];
+      return NextResponse.json(
+        { questions: stats?.questions ?? [], totalUsers: stats?.users ?? 0, updatedAt: snap.data()?.updatedAt ?? null },
+        { headers: CACHE },
+      );
+    }
     const snap = await db.collection("globalStats").doc("wrongQuestions").get();
 
     if (!snap.exists) {

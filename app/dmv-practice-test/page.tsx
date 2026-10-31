@@ -1,4 +1,6 @@
 
+import { CommunityGate } from "@/components/CommunityUpsell";
+import { COMMUNITY_DMV_KEY } from "@/lib/communityStats";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
@@ -173,7 +175,8 @@ export default function DmvLandingPage() {
         </div>
       </div>
 
-      {/* Short on time? Urgency / Premium hook */}
+      {/* Short on time? Urgency / Premium hook, once Common Mistakes has enough answers */}
+      <CommunityGate examId={COMMUNITY_DMV_KEY}>
       <div className="bg-brand-light py-14">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand-dark mb-3">
@@ -193,6 +196,7 @@ export default function DmvLandingPage() {
           </Link>
         </div>
       </div>
+      </CommunityGate>
 
       {/* Testimonial */}
       <div className="bg-gray-50 dark:bg-gray-950 py-12">

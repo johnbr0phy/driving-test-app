@@ -51,6 +51,7 @@ const ITEM_NAMES: Record<string, string> = {
   test_4: "Practice Test D",
   community_wrong_questions: "the most-missed questions",
   stats_question_list: "your full stats",
+  full_stats: "your full stats",
 };
 
 function paywallName(itemId: string, label: string): string {

@@ -156,12 +156,11 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       title: "Welcome to Tigertest",
       heading: "Welcome to Tigertest",
       body: [
-        // The DMV wording is the one email that was already live and working,
-        // so it is unchanged in the DMV voice; other exams swap in their test
-        // name, their test length, and one line on what the bank is built from.
+        // Same opening for every exam; each swaps in its test length and one
+        // line on what the bank is built from.
         p("{{greeting}}"),
         p(
-          `Fear not. Thousands of people have used Tigertest to pass their ${v.testName}, and the ones who pass on their first try all have one thing in common: they actually tested themselves.`,
+          `Fear not. Thousands of people have used Tigertest to pass their exams, and the ones who pass on their first try all have one thing in common: they actually tested themselves.`,
         ),
         ...(v.sourceLine ? [p(v.sourceLine)] : []),
         p(
@@ -224,7 +223,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       heading: "You stopped at {{paywallName}}",
       body: [
         p(
-          "You've answered {{questionCount}} questions, then hit {{paywallName}} and stopped. It's one of the two sections that decide most tests.",
+          "You've answered {{questionCount}} questions, then hit {{paywallName}} and stopped.",
         ),
         p(
           `<strong style="font-weight: 600;">$9.99 opens it for good:</strong>`,
@@ -398,7 +397,6 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
             "The new 2025 ACT, all four sections",
             "Short skill drills that work on your phone",
           ]),
-          p(`<strong style="font-weight: 600;">Practice Test 1 is free.</strong> No credit card.`),
           cta(sat, "Take a free SAT practice test"),
           p(`Taking the ACT instead? ${link(act, "Try the free ACT practice test")}.`),
           p(
@@ -419,7 +417,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         p(
           studyingSatOrAct
             ? `Quick note while you prep for the ${v.shortName}: Tigertest now has both the ${link(sat, "digital SAT")} and the ${link(act, "new 2025 ACT")}, each with a free full-length practice test. Plenty of students take both.`
-            : `Quick news: Tigertest now has full-length practice tests for the ${link(sat, "SAT")} and the ${link(act, "ACT")}, built the same way as the ${v.testName}. Got a high schooler at home? Practice Test 1 is free.`,
+            : `Quick news: Tigertest now has full-length practice tests for the ${link(sat, "SAT")} and the ${link(act, "ACT")}, built the same way as the ${v.testName}. Got a high schooler at home? The practice tests are free.`,
         ),
         ...question,
         signoff("Thanks,"),

@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest SAT practice test free?",
-    a: "Yes, all of it. Both full-length practice tests, their scores and every explanation, and all eight skill drills are free with no account required and no paywall.",
+    a: "Yes. Both full-length practice tests, their scores and every explanation, and all eight skill drills are free with no account required. The one paid extra is optional: Tigertest Premium ($9.99, once) opens your full study plan and mistake notebook on the stats page.",
   },
 ];
 
@@ -133,7 +133,7 @@ export default function SatLandingPage() {
           <ExamLandingHero
             dashboardHref="/sat/dashboard"
             shortName="SAT"
-            subtitle="Two full-length digital SATs with timed, adaptive modules and a score estimate, plus eight skill drills built for your phone. Practice Test 1 is free, no account needed."
+            subtitle="Two full-length digital SATs with timed, adaptive modules and a score estimate, plus eight skill drills built for your phone. Both are free, no account needed."
             shots={{ mobile: "/landing/sat-mobile.png", desktop: "/landing/sat-desktop.png" }}
           />
         </div>
@@ -270,7 +270,7 @@ export default function SatLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Hit Your SAT Goal?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Completely free. No account required. Two full-length tests and all eight skill drills.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free, no account required. Two full-length tests and all eight skill drills.</p>
           <ExamLandingCTA dashboardHref="/sat/dashboard" />
         </div>
       </div>

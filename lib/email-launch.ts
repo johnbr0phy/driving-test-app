@@ -189,7 +189,7 @@ export const LAUNCH_VARIANTS: LaunchVariant[] = [
     heading: "I built the SAT and ACT",
     body:
       p("Hey, it's John from Tigertest.") +
-      p("The permit test was step one. For most of you the SAT or ACT is next, so I built both the Tigertest way. Your first practice test is free.") +
+      p("The permit test was step one. For most of you the SAT or ACT is next, so I built both the Tigertest way. Every practice test is free.") +
       button(sat, "Take the SAT") +
       p(`Or ${link(act, "take the ACT", ACT)}. What should I build after that? Hit reply.`, true),
   })),

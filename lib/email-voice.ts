@@ -109,7 +109,7 @@ function voiceForV2(exam: ExamV2Config): EmailVoice {
     stepCount: exam.drills.length + exam.tests.length,
     passPct: exam.defaultGoal,
     dashboardPath: `${exam.slug}/dashboard`,
-    statsPath: `${exam.slug}/dashboard`,
+    statsPath: `${exam.slug}/stats`,
     hasPremium: false,
     inactiveDays: 14,
     sourceLine: exam.copy.sourceLine,

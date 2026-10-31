@@ -265,49 +265,42 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
     }),
 
   // Sent by the Stripe webhook the moment a purchase lands. Transactional, so
-  // no unsubscribe link. Leads with the exam the buyer paid from, then links
-  // every exam Premium covers. No v2 exam sets \`premium\` since the SAT and
-  // ACT went free (Oct 31, 2026), so today that is the DMV line alone.
+  // no unsubscribe link. Premium is the DMV's extra sets and tests plus the
+  // full stats page of every US exam (the SAT and ACT went free Oct 31, 2026,
+  // so no v2 exam is sold any more). A buyer who paid from an exam's stats
+  // page (v.id is that exam) is led back to those stats; everyone else gets
+  // the DMV unlock first.
   purchaseWelcome: (v) => {
     const campaign = "purchase_welcome";
     const link = (path: string, label: string) =>
       `<a href="${SITE}${path}?${utm(campaign)}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${label}</a>`;
-    const premiumV2 = EXAMS_V2.filter((e) => e.premium);
-    const lead = premiumV2.find((e) => e.id === v.id);
+    const fromExam = v.id !== "dmv";
+    const isV2 = EXAMS_V2.some((e) => e.id === v.id);
 
-    const lockedDrillCount = (id: string) => premiumV2.find((e) => e.id === id)!.premium!.lockedDrills.length;
-
+    const examLine = fromExam
+      ? isV2
+        ? `${link(v.statsPath, `${v.shortName} stats`)}: your full study plan, every topic ranked by the points it's worth, and your mistake notebook`
+        : `${link(v.statsPath, `${v.shortName} stats`)}: every question you've answered, sorted by what you keep missing`
+      : null;
     const dmvLine = `${link("/dmv/dashboard", "DMV permit test")}: Safety &amp; Emergencies and State Laws, practice tests C and D, and your stats page`;
-    // The exam they bought from goes first, then the other v2 exams, then the DMV.
-    const v2Lines = [...premiumV2]
-      .sort((a, b) => Number(b.id === v.id) - Number(a.id === v.id))
-      .map((e) => `${link(`${e.slug}/dashboard`, `${e.shortName} practice`)}: Practice Test 2 and ${lockedDrillCount(e.id)} more skill drills`);
-    const lines = lead ? [...v2Lines, dmvLine] : [dmvLine, ...v2Lines];
+    const everyLine = "Full stats on every other US exam on Tigertest, from the CDL to nursing and college entrance exams";
+    const lines = examLine ? [examLine, everyLine, dmvLine] : [dmvLine, everyLine];
 
     return emailShell({
       title: "You're in - here's what just unlocked",
       heading: "You're in 🎉",
       unsubscribe: false,
       body: [
-        p(
-          "Thanks for buying Premium. It's live on your account now, on every device you sign in on, and it covers every exam below:",
-        ),
+        p("Thanks for buying Premium. It's live on your account now, on every device you sign in on. Here's what it opened:"),
         ul(lines),
-        lead
-          ? p(
-              `Start with ${lead.shortName} Practice Test 2. It never appears in the drills, so your score is an honest read on how ready you are.`,
-            )
+        fromExam
+          ? p(`Start with your ${v.shortName} stats. ${isV2 ? "They show where your next points are" : "They show what you keep missing"}, so your study time goes where it counts.`)
           : p("Open your stats after the next test. It tells you where to spend your study time."),
-        lead
-          ? cta(`${SITE}${lead.slug}/dashboard?${utm(campaign)}`, `Open Your ${lead.shortName} Dashboard`)
+        fromExam
+          ? cta(STATS(v, campaign), `Open Your ${v.shortName} Stats`)
           : cta(DASH(v, campaign), "Start With Safety & Emergencies"),
-        p(
-          `Taking the ${[...premiumV2.filter((e) => e.id !== v.id).map((e) => e.shortName), ...(lead ? ["permit test"] : [])].join(" or ")} ${lead ? "too" : "later"}? Bookmark the links above. Your Premium is already there.`,
-        ),
-        p(
-          "One-time payment, nothing to cancel. Reply if anything looks wrong and a human will read it.",
-        ),
-        signoff(lead ? "Good luck on test day," : "Good luck at the DMV,"),
+        p("One-time payment, nothing to cancel. Reply if anything looks wrong and a human will read it."),
+        signoff(fromExam ? "Good luck on test day," : "Good luck at the DMV,"),
       ].join("\n"),
     });
   },

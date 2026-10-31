@@ -1,6 +1,6 @@
 # Remaining exam tiger sets
 
-Dedicated eight-expression sets are available for: `capm`, `psm`, `rbt`, `pcoc`, `ukseru`, `ibpspo`, `ctet`, `praxis`, `gre`.
+Dedicated eight-expression sets are available for: `capm`, `psm`, `cissp`, `rbt`, `pcoc`, `ukseru`, `ibpspo`, `ctet`, `praxis`, `gre`.
 
 Each exam has eight 512 × 512 transparent RGBA PNGs in
 `public/tigers/<examId>/tiger_face_01.png` through `tiger_face_08.png`.

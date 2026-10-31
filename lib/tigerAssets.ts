@@ -28,6 +28,7 @@ export const TIGER_EXAM_IDS = [
   "capm", "pcoc", "ibpspo",
   "psm", "praxis",
   "gre", "rbt", "ukseru", "ctet",
+  "cissp",
 ] as const;
 
 export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;

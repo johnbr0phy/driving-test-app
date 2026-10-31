@@ -4,7 +4,7 @@ const NEW_MASCOT_IDS = new Set(["uklitu", "cacit", "aucit", "pmp"]);
 
 const ROLE_MASCOT_IDS = new Set(["ffi", "police", "faapvt", "nasm", "barber", "jelec"]);
 
-const REMAINING_MASCOT_IDS = new Set(["capm", "psm", "itil", "cissp", "rbt", "cpc", "pcoc", "ukseru", "ibpspo", "ctet", "praxis", "gre", "gmat"]);
+const REMAINING_MASCOT_IDS = new Set(["capm", "psm", "itil", "cissp", "rbt", "cpc", "pcoc", "ukseru", "ibpspo", "ctet", "praxis", "gre", "gmat", "sie", "series7", "ssccgl", "rrbntpc"]);
 
 export function shareImageUrl(id: string, language = "en"): string {
   const query = new URLSearchParams({

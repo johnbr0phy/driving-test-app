@@ -691,7 +691,7 @@
     "questionId": "U-050",
     "category": "roadSigns",
     "question": "What does a no turn on red sign mean?",
-    "optionA": "No right on red",
+    "optionA": "No U-turns at any time",
     "optionB": "No left on red",
     "optionC": "Depends on arrow shown",
     "optionD": "No turning while the light is red",
@@ -1237,13 +1237,13 @@
     "questionId": "U-089",
     "category": "rulesOfRoad",
     "question": "When must you dim your high beams?",
-    "optionA": "Within 500 feet of oncoming traffic or 300 feet of a car ahead",
-    "optionB": "Within 1000 feet of any oncoming traffic on the road",
+    "optionA": "Within 500 feet of an oncoming vehicle",
+    "optionB": "Only on roads without streetlights",
     "optionC": "Only in city limits when approaching oncoming traffic",
     "optionD": "Only when the other driver flashes their lights at you",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Dim your high beams within about 500 feet of an oncoming vehicle and within about 300 feet when following another vehicle, so you do not blind the other driver. Exact distances vary slightly by state."
+    "explanation": "Most states require low beams within 500 feet of an oncoming vehicle and within 200 to 300 feet when following one. A few differ, such as Minnesota (1,000 feet oncoming), so check your state's handbook."
   },
   {
     "type": "Universal",
@@ -4638,14 +4638,14 @@
     "state": "CO",
     "questionId": "CO-012",
     "category": "gdlLicensing",
-    "question": "Do Colorado teens aged 16 and older need to complete driver education before getting a permit?",
-    "optionA": "Yes, 6-hour online course required",
-    "optionB": "Yes, 30-hour course required",
-    "optionC": "Yes, 4-hour class required",
-    "optionD": "No, formal education is not required",
+    "question": "Starting January 1, 2027, what must Colorado permit applicants aged 15 to 17 complete?",
+    "optionA": "A 4-hour driver awareness class",
+    "optionB": "No course of any kind",
+    "optionC": "A 6-hour online course",
+    "optionD": "A 30-hour driver education course",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Under the rules in effect through 2026, Colorado applicants 16 and older need no formal driver education for a permit; from January 1, 2027, 16- and 17-year-olds must complete a 30-hour course."
+    "explanation": "A 2024 Colorado law requires permit applicants aged 15 to 17 to complete a 30-hour driver education course starting January 1, 2027. Before then, applicants 16 and older needed no course."
   },
   {
     "type": "State-Specific",
@@ -14095,7 +14095,7 @@
     "optionD": "Only while on a highway",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Drivers under 18 may not make or answer calls while driving, even hands-free, except to call 911 in an emergency. Hands-free GPS and music are allowed."
+    "explanation": "Drivers under 18 with a permit or provisional license may not use a phone at all while driving, handheld or hands-free, except to call for emergency help."
   },
   {
     "type": "State-Specific",
@@ -14221,7 +14221,7 @@
     "optionD": "Calls, even hands-free, except 911",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Drivers under 18 may not make or answer calls while driving, handheld or hands-free, except to call 911 in an emergency. Hands-free GPS and music are allowed."
+    "explanation": "Drivers under 18 with a permit or provisional license may not use a phone at all while driving, handheld or hands-free, except to call for emergency help."
   },
   {
     "type": "State-Specific",
@@ -20073,7 +20073,7 @@
     "optionD": "Only ambulances",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The law covers stopped emergency vehicles, tow trucks with amber or blue lights, NDOT vehicles and public utility vehicles using warning lights."
+    "explanation": "Nevada's law covers any traffic incident: stopped emergency vehicles, tow trucks, NDOT and utility vehicles with warning lights, and also crashes, stalled vehicles, debris and people on the roadside. Slow down and move over if you safely can."
   },
   {
     "type": "State-Specific",
@@ -26289,7 +26289,7 @@
     "optionD": "Summer performance tires",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Under Utah's Traction Law, AWD and 4WD vehicles need at least M+S tires on all wheels; 3-peak snowflake tires or chains on all wheels also qualify."
+    "explanation": "Under Utah's Traction Law, AWD and 4WD vehicles need at least M+S tires on all wheels with at least 5/32 inch of tread; 3-peak snowflake tires or chains on all wheels also qualify."
   },
   {
     "type": "State-Specific",
@@ -29901,7 +29901,7 @@
     "optionD": "Right turns on red are allowed except in school zones",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Since January 1, 2025, DC law bans turns on a steady red light unless DDOT has posted a sign permitting the turn at that intersection."
+    "explanation": "Since January 1, 2025, DC law bans turns on a steady red light unless DDOT posts a sign permitting the turn. DDOT has signed only part of the city so far, so always obey the signs posted at each intersection."
   },
   {
     "type": "State-Specific",

@@ -691,7 +691,7 @@
   "questionId": "U-050",
   "category": "roadSigns",
   "question": "红灯时禁止转弯标志是什么意思？",
-  "optionA": "红灯时禁止右转",
+  "optionA": "任何时候禁止掉头",
   "optionB": "红灯时禁止左转",
   "optionC": "视标志上的箭头而定",
   "optionD": "红灯期间不得转弯",
@@ -1237,13 +1237,13 @@
   "questionId": "U-089",
   "category": "rulesOfRoad",
   "question": "什么时候必须把远光灯切换为近光灯？",
-  "optionA": "对向来车500英尺内或前车300英尺内",
-  "optionB": "距离路上任何对向来车1000英尺以内时",
+  "optionA": "对向来车500英尺以内",
+  "optionB": "仅在没有路灯的道路上",
   "optionC": "只在市区内接近对向来车时",
   "optionD": "只在对方司机向您闪灯时",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "对向来车约500英尺内、跟随前车约300英尺内时，应将远光灯切换为近光灯，以免晃到其他驾驶人。具体距离各州略有不同。"
+  "explanation": "大多数州要求对向来车500英尺以内、跟随前车200至300英尺以内使用近光灯。少数州不同，例如明尼苏达州（对向来车1,000英尺），请查阅本州驾驶手册。"
  },
  {
   "type": "Universal",

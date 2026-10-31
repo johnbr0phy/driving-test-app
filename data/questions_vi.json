@@ -691,7 +691,7 @@
   "questionId": "U-050",
   "category": "roadSigns",
   "question": "Biển báo cấm rẽ khi đèn đỏ (no turn on red) có nghĩa là gì?",
-  "optionA": "Cấm rẽ phải khi đèn đỏ",
+  "optionA": "Cấm quay đầu mọi lúc",
   "optionB": "Cấm rẽ trái khi đèn đỏ",
   "optionC": "Tùy vào mũi tên được hiển thị",
   "optionD": "Không được rẽ khi đèn còn đỏ",
@@ -1237,13 +1237,13 @@
   "questionId": "U-089",
   "category": "rulesOfRoad",
   "question": "Khi nào bạn phải hạ đèn pha (đèn chiếu xa)?",
-  "optionA": "Trong vòng 500 feet với xe ngược chiều hoặc 300 feet với xe phía trước",
-  "optionB": "Trong phạm vi 1000 feet với bất kỳ xe ngược chiều nào trên đường",
+  "optionA": "Trong vòng 500 feet với xe đi ngược chiều",
+  "optionB": "Chỉ trên đường không có đèn đường",
   "optionC": "Chỉ trong nội thành khi tới gần xe ngược chiều",
   "optionD": "Chỉ khi tài xế xe kia nhấp đèn về phía bạn",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Hãy hạ đèn pha trong khoảng 500 feet khi có xe ngược chiều và khoảng 300 feet khi đi sau xe khác, để không làm lóa mắt tài xế kia. Khoảng cách chính xác hơi khác nhau tùy tiểu bang."
+  "explanation": "Hầu hết các tiểu bang yêu cầu dùng đèn chiếu gần trong vòng 500 feet với xe ngược chiều và 200 đến 300 feet khi đi sau xe khác. Một vài tiểu bang khác biệt, như Minnesota (1,000 feet với xe ngược chiều), nên hãy xem sổ tay của tiểu bang bạn."
  },
  {
   "type": "Universal",
@@ -4638,14 +4638,14 @@
   "state": "CO",
   "questionId": "CO-012",
   "category": "gdlLicensing",
-  "question": "Thanh thiếu niên Colorado từ 16 tuổi trở lên có cần hoàn thành giáo dục lái xe trước khi xin giấy phép tập lái không?",
-  "optionA": "Có, bắt buộc khóa học trực tuyến 6 giờ",
-  "optionB": "Có, bắt buộc khóa học 30 giờ",
-  "optionC": "Có, bắt buộc lớp học 4 giờ",
-  "optionD": "Không, không yêu cầu giáo dục chính thức",
+  "question": "Từ ngày 1 tháng 1 năm 2027, người xin giấy phép học lái 15 đến 17 tuổi ở Colorado phải hoàn thành gì?",
+  "optionA": "Lớp nâng cao nhận thức lái xe 4 giờ",
+  "optionB": "Không cần khóa học nào",
+  "optionC": "Khóa học trực tuyến 6 giờ",
+  "optionD": "Khóa giáo dục lái xe 30 giờ",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Theo quy định áp dụng đến hết năm 2026, người xin giấy phép tập lái ở Colorado từ 16 tuổi trở lên không cần giáo dục lái xe chính thức; từ ngày 1 tháng 1 năm 2027, người 16 và 17 tuổi phải hoàn thành khóa học 30 giờ."
+  "explanation": "Một luật năm 2024 của Colorado yêu cầu người xin giấy phép học lái từ 15 đến 17 tuổi hoàn thành khóa giáo dục lái xe 30 giờ kể từ ngày 1 tháng 1 năm 2027. Trước đó, người từ 16 tuổi trở lên không cần khóa học nào."
  },
  {
   "type": "State-Specific",
@@ -14095,7 +14095,7 @@
   "optionD": "Chỉ khi đang đi trên xa lộ",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Tài xế dưới 18 tuổi không được gọi hoặc nghe điện thoại khi lái xe, kể cả rảnh tay, trừ khi gọi 911 trong trường hợp khẩn cấp. Được dùng GPS và nghe nhạc ở chế độ rảnh tay."
+  "explanation": "Tài xế dưới 18 tuổi có giấy phép học lái hoặc bằng tạm thời hoàn toàn không được dùng điện thoại khi lái xe, dù cầm tay hay rảnh tay, trừ khi gọi trợ giúp khẩn cấp."
  },
  {
   "type": "State-Specific",
@@ -14221,7 +14221,7 @@
   "optionD": "Gọi điện, kể cả rảnh tay, trừ gọi 911",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Tài xế dưới 18 tuổi không được gọi hoặc nghe điện thoại khi lái xe, dù cầm tay hay rảnh tay, trừ khi gọi 911 trong trường hợp khẩn cấp. Được dùng GPS và nghe nhạc ở chế độ rảnh tay."
+  "explanation": "Tài xế dưới 18 tuổi có giấy phép học lái hoặc bằng tạm thời hoàn toàn không được dùng điện thoại khi lái xe, dù cầm tay hay rảnh tay, trừ khi gọi trợ giúp khẩn cấp."
  },
  {
   "type": "State-Specific",
@@ -20073,7 +20073,7 @@
   "optionD": "Chỉ xe cứu thương",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Luật áp dụng cho xe khẩn cấp đang dừng, xe cứu hộ bật đèn hổ phách hoặc xanh dương, xe của NDOT và xe công ty tiện ích đang bật đèn cảnh báo."
+  "explanation": "Luật Nevada áp dụng cho mọi sự cố giao thông: xe khẩn cấp đang dừng, xe cứu hộ, xe NDOT và xe tiện ích bật đèn cảnh báo, cũng như tai nạn, xe chết máy, vật cản và người ở lề đường. Hãy giảm tốc độ và chuyển làn nếu an toàn."
  },
  {
   "type": "State-Specific",
@@ -21200,14 +21200,14 @@
   "state": "OH",
   "questionId": "OH-035",
   "category": "stateUnique",
-  "question": "Giới hạn tốc độ trên đường cao tốc ngoại ô (rural freeway) của Ohio là bao nhiêu trừ khi có biển báo khác?",
+  "question": "Giới hạn tốc độ trên đường cao tốc nông thôn (rural freeway) của Ohio là bao nhiêu trừ khi có biển báo khác?",
   "optionA": "70 mph",
   "optionB": "60 mph",
   "optionC": "65 mph",
   "optionD": "55 mph",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Giới hạn tốc độ trên đường cao tốc ngoại ô của Ohio là 70 mph trừ khi có biển báo giới hạn khác."
+  "explanation": "Giới hạn tốc độ trên đường cao tốc nông thôn của Ohio là 70 mph trừ khi có biển báo giới hạn khác."
  },
  {
   "type": "State-Specific",
@@ -26289,7 +26289,7 @@
   "optionD": "Lốp mùa hè hiệu suất cao",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Theo Luật Độ bám đường của Utah, xe AWD và 4WD phải có ít nhất lốp M+S ở tất cả các bánh; lốp có ký hiệu bông tuyết 3 đỉnh núi hoặc xích ở tất cả các bánh cũng đạt yêu cầu."
+  "explanation": "Theo Luật Độ bám đường của Utah, xe AWD và 4WD phải có ít nhất lốp M+S ở tất cả các bánh với gai còn ít nhất 5/32 inch; lốp có ký hiệu bông tuyết 3 đỉnh núi hoặc xích ở tất cả các bánh cũng đạt yêu cầu."
  },
  {
   "type": "State-Specific",
@@ -29901,7 +29901,7 @@
   "optionD": "Được phép rẽ phải khi đèn đỏ trừ khu vực trường học",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Từ ngày 1 tháng 1 năm 2025, luật DC cấm rẽ khi gặp đèn đỏ cố định trừ khi DDOT đã lắp biển cho phép rẽ tại giao lộ đó."
+  "explanation": "Từ ngày 1 tháng 1 năm 2025, luật DC cấm rẽ khi đèn đỏ trừ khi DDOT đặt biển cho phép rẽ. Đến nay DDOT mới đặt biển ở một phần thành phố, vì vậy luôn tuân theo biển báo tại từng giao lộ."
  },
  {
   "type": "State-Specific",

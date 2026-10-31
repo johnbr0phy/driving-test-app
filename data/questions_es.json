@@ -691,7 +691,7 @@
     "questionId": "U-050",
     "category": "roadSigns",
     "question": "¿Qué significa una señal de no girar en rojo?",
-    "optionA": "No girar a la derecha en rojo",
+    "optionA": "No dar vuelta en U en ningún momento",
     "optionB": "No girar a la izquierda en rojo",
     "optionC": "Depende de la flecha mostrada",
     "optionD": "No girar mientras la luz esté en rojo",
@@ -1237,13 +1237,13 @@
     "questionId": "U-089",
     "category": "rulesOfRoad",
     "question": "¿Cuándo debe bajar las luces altas?",
-    "optionA": "A 500 pies del tráfico que viene de frente o a 300 pies de un auto delante",
-    "optionB": "Dentro de 1000 pies de cualquier tráfico que viene en la carretera",
+    "optionA": "A 500 pies de un vehículo que viene de frente",
+    "optionB": "Solo en vías sin alumbrado público",
     "optionC": "Solo dentro de los límites de la ciudad al acercarse al tráfico que viene",
     "optionD": "Solo cuando el otro conductor le hace señales con las luces",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Baje las luces altas a unos 500 pies de un vehículo que viene de frente y a unos 300 pies cuando sigue a otro vehículo, para no deslumbrar al otro conductor. Las distancias exactas varían un poco según el estado."
+    "explanation": "La mayoría de los estados exigen luces bajas a 500 pies de un vehículo que viene de frente y a 200 a 300 pies al seguir a otro. Algunos estados difieren, como Minnesota (1,000 pies de frente), así que consulte el manual de su estado."
   },
   {
     "type": "Universal",
@@ -5198,14 +5198,14 @@
     "state": "CO",
     "questionId": "CO-012",
     "category": "gdlLicensing",
-    "question": "¿Los adolescentes de Colorado de 16 años o más necesitan completar educación vial antes de obtener un permiso?",
-    "optionA": "Sí, se requiere curso en línea de 6 horas",
-    "optionB": "Sí, se requiere curso de 30 horas",
-    "optionC": "Sí, se requiere clase de 4 horas",
-    "optionD": "No, la educación formal no es requerida",
+    "question": "A partir del 1 de enero de 2027, ¿qué deben completar los solicitantes de permiso de 15 a 17 años en Colorado?",
+    "optionA": "Una clase de concientización de 4 horas",
+    "optionB": "Ningún curso",
+    "optionC": "Un curso en línea de 6 horas",
+    "optionD": "Un curso de educación vial de 30 horas",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Con las reglas vigentes hasta 2026, los solicitantes de Colorado de 16 años o más no necesitan educación vial formal para un permiso; desde el 1 de enero de 2027, los de 16 y 17 años deberán completar un curso de 30 horas."
+    "explanation": "Una ley de Colorado de 2024 exige que los solicitantes de permiso de 15 a 17 años completen un curso de educación vial de 30 horas a partir del 1 de enero de 2027. Antes de esa fecha, los solicitantes de 16 años o más no necesitaban ningún curso."
   },
   {
     "type": "State-Specific",
@@ -14655,7 +14655,7 @@
     "optionD": "Solo mientras está en una autopista",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los conductores menores de 18 años no pueden hacer ni contestar llamadas mientras conducen, ni siquiera con manos libres, excepto para llamar al 911 en una emergencia. Se permite el GPS y la música en modo manos libres."
+    "explanation": "Los conductores menores de 18 años con permiso o licencia provisional no pueden usar el teléfono mientras conducen, ni en la mano ni con manos libres, salvo para pedir ayuda de emergencia."
   },
   {
     "type": "State-Specific",
@@ -14781,7 +14781,7 @@
     "optionD": "Llamadas, incluso manos libres, salvo al 911",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los conductores menores de 18 años no pueden hacer ni contestar llamadas mientras conducen, con el teléfono en mano o manos libres, excepto para llamar al 911 en una emergencia. Se permite el GPS y la música en modo manos libres."
+    "explanation": "Los conductores menores de 18 años con permiso o licencia provisional no pueden usar el teléfono mientras conducen, ni en la mano ni con manos libres, salvo para pedir ayuda de emergencia."
   },
   {
     "type": "State-Specific",
@@ -20633,7 +20633,7 @@
     "optionD": "Solo ambulancias",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La ley cubre vehículos de emergencia detenidos, grúas con luces ámbar o azules, vehículos de NDOT y vehículos de servicios públicos que usen luces de advertencia."
+    "explanation": "La ley de Nevada cubre cualquier incidente de tránsito: vehículos de emergencia detenidos, grúas, vehículos de NDOT y de servicios públicos con luces de advertencia, y también choques, vehículos averiados, escombros y personas al costado de la vía. Reduzca la velocidad y cámbiese de carril si puede hacerlo con seguridad."
   },
   {
     "type": "State-Specific",
@@ -26849,7 +26849,7 @@
     "optionD": "Llantas de verano de alto rendimiento",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Según la Ley de Tracción de Utah, los vehículos AWD y 4WD necesitan como mínimo llantas M+S en todas las ruedas; también sirven llantas con el copo de nieve de 3 picos o cadenas en todas las ruedas."
+    "explanation": "Según la Ley de Tracción de Utah, los vehículos AWD y 4WD necesitan como mínimo llantas M+S en todas las ruedas con al menos 5/32 de pulgada de dibujo; también sirven llantas con el copo de nieve de 3 picos o cadenas en todas las ruedas."
   },
   {
     "type": "State-Specific",
@@ -28454,9 +28454,9 @@
     "category": "stateUnique",
     "question": "¿Cuándo debe detenerse para un peatón en un cruce peatonal en Washington?",
     "optionA": "En su mitad de la vía o a un carril de ella",
-    "optionB": "Solo en cruces peatonales marcados",
-    "optionC": "Solo cuando la señal dice caminar",
-    "optionD": "Solo si hacen contacto visual",
+    "optionB": "Solo cuando está justo delante de usted",
+    "optionC": "Cuando una señal indica caminar",
+    "optionD": "Cuando hacen contacto visual con usted",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "Deténgase cuando el peatón esté en su mitad de la vía o a un carril de ella; su mitad incluye todos los carriles que van en su dirección."
@@ -30461,7 +30461,7 @@
     "optionD": "Se permiten giros a la derecha en rojo excepto en zonas escolares",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Desde el 1 de enero de 2025, la ley de DC prohíbe girar con luz roja fija a menos que DDOT haya colocado una señal que permita el giro en esa intersección."
+    "explanation": "Desde el 1 de enero de 2025, la ley de DC prohíbe girar con la luz roja fija a menos que DDOT coloque una señal que lo permita. DDOT solo ha señalizado parte de la ciudad hasta ahora, así que siempre obedezca las señales de cada intersección."
   },
   {
     "type": "State-Specific",

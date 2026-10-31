@@ -3,6 +3,7 @@ import { getStateLandingInfo } from "@/data/stateLandingData";
 import { EXAM_FACTS } from "./examFacts";
 import { EXAMS } from "./exams";
 import { TEST_CATALOG, TEST_GROUPS, getCatalogEntry, type TestCatalogEntry } from "./testCatalog";
+import { NON_DRIVING_TESTS, REGIONS, regionHomePath, regionOfTest } from "./region";
 
 // /llms.txt and /llms-full.txt (https://llmstxt.org), built from the test
 // catalog, the exam facts and the state data, so a new exam or a changed
@@ -11,9 +12,33 @@ import { TEST_CATALOG, TEST_GROUPS, getCatalogEntry, type TestCatalogEntry } fro
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
+function countryList(): string {
+  const names = REGIONS.filter((r) => r.code !== "US").map((r) => r.inName);
+  return `${names.slice(0, -1).join(", ")} and ${names.at(-1)}`;
+}
+
 const HEADER = `# Tigertest
 
-> Free practice tests for the DMV permit test in all 50 US states and DC, plus ${TEST_CATALOG.filter((t) => t.id !== "dmv").length} licensing, certification and admissions exams including the SAT, ACT, CDL, CNA, NREMT EMT and CompTIA. Every question has an explanation, and most tests need no account.`;
+> Free practice tests for the DMV permit test in all 50 US states and DC, plus ${TEST_CATALOG.filter((t) => t.id !== "dmv").length} licensing, certification and admissions exams including the SAT, ACT, CDL, CNA, NREMT EMT and CompTIA, and driving theory and other tests for ${countryList()}. Every question has an explanation, and most tests need no account.`;
+
+// One line per country: its homepage and its driving tests, each with the
+// real test's facts, so an assistant asked about "the Kenya driving test" or
+// "an LTO reviewer" finds the answer and the page in the short file.
+function countrySection(): string {
+  const blocks = REGIONS.filter((r) => r.code !== "US").map((r) => {
+    const tests = TEST_CATALOG.filter((t) => regionOfTest(t.id) === r.code);
+    const driving = tests.filter((t) => !NON_DRIVING_TESTS.has(t.id));
+    const other = tests.filter((t) => NON_DRIVING_TESTS.has(t.id));
+    const lines = driving.map((t) => {
+      const facts = EXAM_FACTS[t.id];
+      const fact = facts?.rows.slice(0, 3).map((row) => `${row.label}: ${row.value}`).join("; ");
+      return `- [${t.name}](${siteUrl}${t.href}): ${t.blurb}${fact ? ` Real test: ${fact}.` : ""}`;
+    });
+    if (other.length) lines.push(`- Also for ${r.inName}: ${other.map((t) => `[${t.name}](${siteUrl}${t.href})`).join(", ")}`);
+    return `### ${r.name}\n\nAll free tests for ${r.inName}: ${siteUrl}${regionHomePath(r.code)}\n\n${lines.join("\n")}`;
+  });
+  return `## Practice tests by country\n\nEvery test outside the US is free, with no subscription and no account needed to start. Questions are original, written from each country's official handbook and road rules.\n\n${blocks.join("\n\n")}`;
+}
 
 const DMV_SECTION = `## DMV permit test (all 50 states + DC)
 
@@ -81,7 +106,8 @@ export function renderLlmsTxt(): string {
   return [
     HEADER,
     DMV_SECTION,
-    `## Other practice tests\n\nAll tests: ${siteUrl}/tests\nUK driving theory tests: ${siteUrl}/uk\nCanada driving knowledge tests: ${siteUrl}/ca\nAustralia learner driver tests: ${siteUrl}/au\nIndia learner's licence test: ${siteUrl}/in\nIreland Driver Theory Test: ${siteUrl}/ie\nNew Zealand learner licence test: ${siteUrl}/nz\nPhilippines LTO exam: ${siteUrl}/ph\nMalaysia KPP01 theory test: ${siteUrl}/my\nSingapore Basic Theory Test: ${siteUrl}/sg\nHong Kong driving theory test: ${siteUrl}/hk\nUAE driving theory test: ${siteUrl}/ae\nSouth Africa K53 learner's test: ${siteUrl}/za\nNigeria driving test: ${siteUrl}/ng\nKenya NTSA driving test: ${siteUrl}/ke\n\n${groups}`,
+    countrySection(),
+    `## Other practice tests\n\nAll tests: ${siteUrl}/tests\n\n${groups}`,
     translatedSection(),
     TEACH_SECTION,
     QUIZ_SECTION,

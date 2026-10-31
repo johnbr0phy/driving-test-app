@@ -1,3 +1,5 @@
+import { REGIONS } from "./region";
+
 // Site-wide JSON-LD, rendered once in app/layout.tsx. Pages point at these
 // nodes by @id (publisher, isPartOf) so search and AI answer engines read one
 // Tigertest entity across the DMV pages and every exam, instead of a loose
@@ -17,7 +19,8 @@ export const SITE_JSON_LD = {
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
       description:
-        "Free practice tests for the DMV permit test in all 50 states and DC, plus more than 40 licensing, certification and admissions exams including the SAT, ACT, CDL, CNA, NREMT EMT and CompTIA.",
+        "Free practice tests for the DMV permit test in all 50 states and DC, plus more than 150 licensing, certification, school and admissions exams including the SAT, ACT, CDL, CNA, NREMT EMT and CompTIA, and driving theory tests for Canada, the UK, Ireland, Australia, New Zealand, India, the Philippines, Malaysia, Singapore, Hong Kong, the UAE, South Africa, Nigeria and Kenya.",
+      areaServed: REGIONS.map((r) => ({ "@type": "Country", name: r.name })),
       founder: { "@type": "Person", name: "John Brophy", sameAs: ["https://x.com/JohnBr0"] },
     },
     {
@@ -26,7 +29,7 @@ export const SITE_JSON_LD = {
       url: siteUrl,
       name: "Tigertest",
       publisher: { "@id": ORGANIZATION_ID },
-      inLanguage: ["en-US", "es", "vi", "ko", "zh-Hans"],
+      inLanguage: ["en", "es", "vi", "ko", "zh-Hans"],
     },
   ],
 };

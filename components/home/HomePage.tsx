@@ -9,6 +9,8 @@ import { TestCard, TestCatalogGrid } from "@/components/TestCatalogGrid";
 import { CountUp } from "@/components/CountUp";
 import { getPopularTests } from "@/lib/server/popularTests";
 import { ORGANIZATION_ID, WEBSITE_ID } from "@/lib/siteSchema";
+import { EXAM_FACTS } from "@/lib/examFacts";
+import { HUB_PAGES_UPDATED_AT } from "@/lib/seoDates";
 import { states } from "@/data/states";
 import { NON_DRIVING_TESTS, REGIONS, REGION_HOME, REGION_HREFLANG, Region, regionHomePath, regionOfTest, regionInfo } from "@/lib/region";
 
@@ -140,6 +142,7 @@ function jsonLdFor(region: Region) {
       name: us ? title : REGION_HOME[region].title,
       description: us ? description : REGION_HOME[region].description,
       inLanguage: REGION_HREFLANG[region],
+      dateModified: HUB_PAGES_UPDATED_AT,
       isPartOf: { "@id": WEBSITE_ID },
       about: { "@id": ORGANIZATION_ID },
     },
@@ -313,6 +316,25 @@ export async function HomePage({ region }: { region: Region }) {
                 <TestCard key={test.id} test={test} answered={answeredById.get(test.id) ?? null} />
               ))}
             </div>
+            {/* The facts of each real test in plain sentences: what search
+                snippets and AI answers quote for "<country> driving test". */}
+            {localTests.some((t) => EXAM_FACTS[t.id]) && (
+              <div className="mt-12">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
+                  {localTests.length === 1 ? "About the test" : "About each test"}
+                </h2>
+                <div className="space-y-6">
+                  {localTests.filter((t) => EXAM_FACTS[t.id]).map((test) => (
+                    <div key={test.id}>
+                      <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-1">
+                        <Link href={test.href} className="hover:text-brand-dark hover:underline">{test.name}</Link>
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300">{EXAM_FACTS[test.id].answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
       )}
 

@@ -47,7 +47,9 @@ async function submit(req: NextRequest) {
   const payload = {
     host,
     key,
-    keyLocation: `${SITE_URL}/api/indexnow/key`,
+    // At the host root, so every URL on the host is in the key's scope
+    // (next.config.ts rewrites /<key>.txt to /api/indexnow/key).
+    keyLocation: `${SITE_URL}/${key}.txt`,
     urlList: urls,
   };
 

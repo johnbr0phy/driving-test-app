@@ -230,12 +230,12 @@
   "category": "roadSigns",
   "question": "显示车道合并的标志表示什么？",
   "optionA": "车道结束，向左并道",
-  "optionB": "右侧有车辆驶入",
+  "optionB": "右侧有车辆并入",
   "optionC": "分隔式公路结束",
   "optionD": "前方有路口",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "此标志警告您的车道即将结束，您需要并道。"
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "并道标志警告前方右侧车辆将并入您的车道，请准备调整车速并让出空间。表示您自己的车道即将结束的是车道结束标志。"
  },
  {
   "type": "Universal",
@@ -694,10 +694,10 @@
   "optionA": "红灯时禁止右转",
   "optionB": "红灯时禁止左转",
   "optionC": "视标志上的箭头而定",
-  "optionD": "任何方向都禁止转弯",
-  "correctAnswer": "C",
-  "correctIndex": 2,
-  "explanation": "红灯时禁止转弯标志禁止在红灯期间朝所示方向转弯，也可能两个方向都禁止。"
+  "optionD": "红灯期间不得转弯",
+  "correctAnswer": "D",
+  "correctIndex": 3,
+  "explanation": "NO TURN ON RED 标志表示红灯期间不得右转（也不得左转进入单行道）。请等待绿灯，在安全时再转弯。"
  },
  {
   "type": "Universal",
@@ -945,11 +945,11 @@
   "question": "红灯时什么时候可以右转？",
   "optionA": "只有在有箭头信号时",
   "optionB": "在城市里一律不行",
-  "optionC": "除非有标志禁止",
-  "optionD": "只要停车后就可以",
+  "optionC": "完全停车后，且无标志禁止时",
+  "optionD": "仅在附近没有车辆时",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "红灯时停车后可以右转，除非有标志禁止。"
+  "explanation": "大多数州允许在完全停车并礼让行人和车辆后红灯右转，除非有标志禁止。附近没有车辆并不意味着可以不先停车。"
  },
  {
   "type": "Universal",
@@ -1061,7 +1061,7 @@
   "optionD": "任何时候都不能进入自行车道",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "在准备转弯的200英尺范围内，您可以驶入自行车道。"
+  "explanation": "只有在礼让骑车人后为转弯做准备（或在允许的地方驶入停车位）时，才可以驶入自行车道。部分州（如加利福尼亚州）规定了距离转弯处多远可以驶入。"
  },
  {
   "type": "Universal",
@@ -1237,13 +1237,13 @@
   "questionId": "U-089",
   "category": "rulesOfRoad",
   "question": "什么时候必须把远光灯切换为近光灯？",
-  "optionA": "距离对向来车或前方车辆500英尺以内时",
+  "optionA": "对向来车500英尺内或前车300英尺内",
   "optionB": "距离路上任何对向来车1000英尺以内时",
   "optionC": "只在市区内接近对向来车时",
   "optionD": "只在对方司机向您闪灯时",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "在距离对向来车500英尺以内以及跟随其他车辆时，应切换为近光灯。"
+  "explanation": "对向来车约500英尺内、跟随前车约300英尺内时，应将远光灯切换为近光灯，以免晃到其他驾驶人。具体距离各州略有不同。"
  },
  {
   "type": "Universal",
@@ -1362,14 +1362,14 @@
   "state": "ALL",
   "questionId": "U-099",
   "category": "safeDriving",
-  "question": "交通死亡事故的首要原因是什么？",
+  "question": "以下哪项因素涉及的交通死亡人数最多？",
   "optionA": "分心驾驶",
   "optionB": "超速",
   "optionC": "天气",
   "optionD": "车辆缺陷",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "分心驾驶（包括使用手机）是交通事故和死亡的首要原因。"
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "在美国，约十分之三的交通死亡与超速有关，远多于天气或车辆缺陷。分心驾驶涉及的致命事故较少，但仍是严重且日益增长的风险。"
  },
  {
   "type": "Universal",
@@ -1446,14 +1446,14 @@
   "state": "ALL",
   "questionId": "U-105",
   "category": "safeDriving",
-  "question": "以高速公路车速行驶时，您的车每秒行驶多远？",
-  "optionA": "每小时30英里时44英尺",
-  "optionB": "每小时50英里时73英尺",
-  "optionC": "每小时60英里时88英尺",
-  "optionD": "随路况而变化",
+  "question": "以每小时60英里行驶时，车辆每秒大约行驶多远？",
+  "optionA": "44英尺",
+  "optionB": "66英尺",
+  "optionC": "88英尺",
+  "optionD": "120英尺",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "以每小时60英里行驶时，您的车每秒大约行驶88英尺。"
+  "explanation": "以每小时60英里行驶时，每秒约行驶88英尺（1英里/小时约等于每秒1.47英尺）。44英尺是每小时30英里时的距离。"
  },
  {
   "type": "Universal",
@@ -1915,7 +1915,7 @@
   "optionD": "36英寸",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "仅6英寸深的流动水就能把人冲倒，12英寸深的水就能把车辆冲走。"
+  "explanation": "约6英寸深的水就会到达大多数乘用车的底部，可能导致失控和熄火。约12英寸深的流水可以使许多车辆漂浮起来。"
  },
  {
   "type": "Universal",
@@ -2041,7 +2041,7 @@
   "optionD": "0.02%",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "在所有州，成年驾驶人的法定BAC上限都是0.08%。"
+  "explanation": "除犹他州为0.05%外，各州21岁及以上驾驶人的法定血液酒精浓度（BAC）上限均为0.08%。"
  },
  {
   "type": "Universal",

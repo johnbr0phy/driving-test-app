@@ -230,12 +230,12 @@
     "category": "roadSigns",
     "question": "What does a sign showing merging lanes indicate?",
     "optionA": "Lane ends merge left",
-    "optionB": "Traffic from right",
+    "optionB": "Traffic merging from the right",
     "optionC": "Divided highway ends",
     "optionD": "Intersection ahead",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "This sign warns that your lane will end and you need to merge."
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "The merge sign warns that traffic from the right will join your lane ahead, so be ready to adjust speed and make room. A lane-ends sign is the one that tells you your own lane is ending."
   },
   {
     "type": "Universal",
@@ -694,10 +694,10 @@
     "optionA": "No right on red",
     "optionB": "No left on red",
     "optionC": "Depends on arrow shown",
-    "optionD": "No turn in any direction",
-    "correctAnswer": "C",
-    "correctIndex": 2,
-    "explanation": "No turn on red signs prohibit turns during red lights in the direction indicated or both."
+    "optionD": "No turning while the light is red",
+    "correctAnswer": "D",
+    "correctIndex": 3,
+    "explanation": "A NO TURN ON RED sign means you may not turn right (or left onto a one-way street) while the signal is red. Wait for the green light, then turn when it is safe."
   },
   {
     "type": "Universal",
@@ -945,11 +945,11 @@
     "question": "When can you turn right on red?",
     "optionA": "Only with arrow",
     "optionB": "Never in cities",
-    "optionC": "Unless sign prohibits",
-    "optionD": "After stopping only",
+    "optionC": "After a full stop, if no sign bans it",
+    "optionD": "Only when no cars are near",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Right turns on red are allowed after stopping unless a sign prohibits them."
+    "explanation": "Most states allow a right turn on red after a complete stop, once you yield to pedestrians and traffic, unless a sign prohibits it. Having no cars nearby does not remove the need to stop first."
   },
   {
     "type": "Universal",
@@ -1061,7 +1061,7 @@
     "optionD": "Never enter bike lanes",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "You may enter a bike lane within 200 feet of making a turn."
+    "explanation": "You may enter a bike lane only to prepare for a turn (or to reach a parking space where allowed), after yielding to cyclists. Some states, such as California, say how close to the turn you may enter."
   },
   {
     "type": "Universal",
@@ -1237,13 +1237,13 @@
     "questionId": "U-089",
     "category": "rulesOfRoad",
     "question": "When must you dim your high beams?",
-    "optionA": "Within 500 feet of oncoming traffic or vehicle ahead",
+    "optionA": "Within 500 feet of oncoming traffic or 300 feet of a car ahead",
     "optionB": "Within 1000 feet of any oncoming traffic on the road",
     "optionC": "Only in city limits when approaching oncoming traffic",
     "optionD": "Only when the other driver flashes their lights at you",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Dim high beams within 500 feet of oncoming vehicles and when following another vehicle."
+    "explanation": "Dim your high beams within about 500 feet of an oncoming vehicle and within about 300 feet when following another vehicle, so you do not blind the other driver. Exact distances vary slightly by state."
   },
   {
     "type": "Universal",
@@ -1362,14 +1362,14 @@
     "state": "ALL",
     "questionId": "U-099",
     "category": "safeDriving",
-    "question": "What is the leading cause of traffic fatalities?",
+    "question": "Which of these is a factor in the most traffic deaths?",
     "optionA": "Distracted driving",
     "optionB": "Speeding",
     "optionC": "Weather",
     "optionD": "Vehicle defects",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "Distracted driving including phone use is the leading cause of traffic accidents and fatalities."
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "Speeding is a factor in roughly 3 in 10 US traffic deaths, far more than weather or vehicle defects. Distraction plays a part in fewer fatal crashes but is still a serious and growing risk."
   },
   {
     "type": "Universal",
@@ -1446,14 +1446,14 @@
     "state": "ALL",
     "questionId": "U-105",
     "category": "safeDriving",
-    "question": "At highway speeds how far does your vehicle travel per second?",
-    "optionA": "44 feet at 30 mph",
-    "optionB": "73 feet at 50 mph",
-    "optionC": "88 feet at 60 mph",
-    "optionD": "Varies with conditions",
+    "question": "About how far does your vehicle travel each second at 60 mph?",
+    "optionA": "44 feet",
+    "optionB": "66 feet",
+    "optionC": "88 feet",
+    "optionD": "120 feet",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "At 60 mph your vehicle travels approximately 88 feet every second."
+    "explanation": "At 60 mph you cover about 88 feet every second (1 mph is about 1.47 feet per second). 44 feet is the distance at 30 mph."
   },
   {
     "type": "Universal",
@@ -1915,7 +1915,7 @@
     "optionD": "36 inches",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Just 6 inches of moving water can knock you down and 12 inches can carry away a vehicle."
+    "explanation": "About 6 inches of water reaches the bottom of most passenger cars and can cause loss of control and stalling. About 12 inches of moving water can float many vehicles."
   },
   {
     "type": "Universal",
@@ -2041,7 +2041,7 @@
     "optionD": "0.02%",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The legal BAC limit for adult drivers in all states is 0.08%."
+    "explanation": "The legal BAC limit for drivers 21 and over is 0.08% in every state except Utah, where it is 0.05%."
   },
   {
     "type": "Universal",

@@ -230,12 +230,12 @@
     "category": "roadSigns",
     "question": "¿Qué indica una señal que muestra carriles que se unen?",
     "optionA": "Carril termina, incorporarse a la izquierda",
-    "optionB": "Tráfico desde la derecha",
+    "optionB": "Tráfico que se incorpora desde la derecha",
     "optionC": "Fin de carretera dividida",
     "optionD": "Intersección adelante",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "Esta señal advierte que su carril terminará y necesita incorporarse."
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "La señal de incorporación advierte que el tráfico de la derecha se unirá a su carril más adelante, así que esté listo para ajustar la velocidad y dejar espacio. La señal de fin de carril es la que indica que su propio carril termina."
   },
   {
     "type": "Universal",
@@ -694,10 +694,10 @@
     "optionA": "No girar a la derecha en rojo",
     "optionB": "No girar a la izquierda en rojo",
     "optionC": "Depende de la flecha mostrada",
-    "optionD": "No girar en ninguna dirección",
-    "correctAnswer": "C",
-    "correctIndex": 2,
-    "explanation": "Las señales de no girar en rojo prohíben los giros durante luces rojas en la dirección indicada o en ambas."
+    "optionD": "No girar mientras la luz esté en rojo",
+    "correctAnswer": "D",
+    "correctIndex": 3,
+    "explanation": "La señal NO TURN ON RED significa que no puede girar a la derecha (ni a la izquierda hacia una calle de un solo sentido) mientras la luz esté en rojo. Espere la luz verde y gire cuando sea seguro."
   },
   {
     "type": "Universal",
@@ -945,11 +945,11 @@
     "question": "¿Cuándo puede girar a la derecha en luz roja?",
     "optionA": "Solo con flecha",
     "optionB": "Nunca en ciudades",
-    "optionC": "A menos que un letrero lo prohíba",
-    "optionD": "Solo después de detenerse",
+    "optionC": "Tras detenerse por completo, si ninguna señal lo prohíbe",
+    "optionD": "Solo cuando no hay autos cerca",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los giros a la derecha en luz roja están permitidos después de detenerse a menos que un letrero los prohíba."
+    "explanation": "La mayoría de los estados permiten girar a la derecha en rojo después de detenerse por completo y ceder el paso a peatones y vehículos, salvo que una señal lo prohíba. Que no haya autos cerca no elimina la obligación de detenerse primero."
   },
   {
     "type": "Universal",
@@ -1061,7 +1061,7 @@
     "optionD": "Nunca entre a carriles para bicicletas",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Puede entrar a un carril para bicicletas dentro de los 200 pies antes de hacer un giro."
+    "explanation": "Solo puede entrar en un carril para bicicletas para prepararse a girar (o para llegar a un lugar de estacionamiento donde esté permitido), después de ceder el paso a los ciclistas. Algunos estados, como California, indican a qué distancia del giro puede entrar."
   },
   {
     "type": "Universal",
@@ -1237,13 +1237,13 @@
     "questionId": "U-089",
     "category": "rulesOfRoad",
     "question": "¿Cuándo debe bajar las luces altas?",
-    "optionA": "Dentro de 500 pies del tráfico que viene o del vehículo adelante",
+    "optionA": "A 500 pies del tráfico que viene de frente o a 300 pies de un auto delante",
     "optionB": "Dentro de 1000 pies de cualquier tráfico que viene en la carretera",
     "optionC": "Solo dentro de los límites de la ciudad al acercarse al tráfico que viene",
     "optionD": "Solo cuando el otro conductor le hace señales con las luces",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Baje las luces altas dentro de 500 pies de vehículos que vienen y cuando siga a otro vehículo."
+    "explanation": "Baje las luces altas a unos 500 pies de un vehículo que viene de frente y a unos 300 pies cuando sigue a otro vehículo, para no deslumbrar al otro conductor. Las distancias exactas varían un poco según el estado."
   },
   {
     "type": "Universal",
@@ -1362,14 +1362,14 @@
     "state": "ALL",
     "questionId": "U-099",
     "category": "safeDriving",
-    "question": "¿Cuál es la causa principal de muertes en el tráfico?",
+    "question": "¿Cuál de estos factores está presente en más muertes de tránsito?",
     "optionA": "Conducción distraída",
     "optionB": "Exceso de velocidad",
     "optionC": "Clima",
     "optionD": "Defectos del vehículo",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "La conducción distraída, incluyendo el uso del teléfono, es la causa principal de accidentes y muertes en el tráfico."
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "El exceso de velocidad es un factor en aproximadamente 3 de cada 10 muertes de tránsito en EE. UU., mucho más que el clima o los defectos del vehículo. La distracción interviene en menos choques mortales, pero sigue siendo un riesgo grave y creciente."
   },
   {
     "type": "Universal",
@@ -1446,14 +1446,14 @@
     "state": "ALL",
     "questionId": "U-105",
     "category": "safeDriving",
-    "question": "¿A velocidades de autopista, qué distancia recorre su vehículo por segundo?",
-    "optionA": "44 feet a 30 mph",
-    "optionB": "73 feet a 50 mph",
-    "optionC": "88 feet a 60 mph",
-    "optionD": "Varía según las condiciones",
+    "question": "¿Aproximadamente qué distancia recorre su vehículo cada segundo a 60 mph?",
+    "optionA": "44 pies",
+    "optionB": "66 pies",
+    "optionC": "88 pies",
+    "optionD": "120 pies",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A 60 mph, su vehículo recorre aproximadamente 88 feet cada segundo."
+    "explanation": "A 60 mph recorre unos 88 pies cada segundo (1 mph equivale a unos 1.47 pies por segundo). 44 pies es la distancia a 30 mph."
   },
   {
     "type": "Universal",
@@ -1915,7 +1915,7 @@
     "optionD": "36 pulgadas",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Solo 6 pulgadas de agua en movimiento pueden derribarlo y 12 pulgadas pueden arrastrar un vehículo."
+    "explanation": "Unas 6 pulgadas de agua llegan a la parte inferior de la mayoría de los autos y pueden causar pérdida de control y que el motor se apague. Unas 12 pulgadas de agua en movimiento pueden hacer flotar muchos vehículos."
   },
   {
     "type": "Universal",
@@ -2041,7 +2041,7 @@
     "optionD": "0.02%",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El límite legal de BAC para conductores adultos en todos los estados es 0.08%."
+    "explanation": "El límite legal de BAC para conductores de 21 años o más es 0.08% en todos los estados excepto Utah, donde es 0.05%."
   },
   {
     "type": "Universal",

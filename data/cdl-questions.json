@@ -2706,14 +2706,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "cargoHandling",
-    "question": "When hauling a load that is 20 feet long, what is the minimum number of tiedowns required?",
-    "optionA": "Two tiedowns regardless of weight",
+    "question": "Under the federal cargo securement rules (49 CFR 393.110), what is the minimum number of tiedowns for a 20-foot article of cargo?",
+    "optionA": "Five, one for every 4 feet",
     "optionB": "Four tiedowns for any load over 15 feet",
     "optionC": "One tiedown for every 5 feet of length",
     "optionD": "One tiedown for every 10 feet plus one additional",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "For cargo over 10 feet long, you need one tiedown for every 10 feet of cargo length, plus one additional tiedown. A 20-foot load requires 3 tiedowns total."
+    "explanation": "Under 49 CFR 393.110, an article longer than 10 feet needs two tiedowns for the first 10 feet plus one for each additional 10 feet or part of it, so a 20-foot article needs 3. The CDL manual's simpler guide, one per 10 feet with a minimum of two, gives a lower number than the federal rule."
   },
   {
     "questionId": "CDL-GK-195",
@@ -3308,7 +3308,7 @@
     "type": "CDL",
     "state": "ALL",
     "category": "cargoHandling",
-    "question": "What is the minimum number of tiedowns required for any load, regardless of size or weight?",
+    "question": "According to the CDL manual, what is the minimum number of tiedowns any cargo should have, no matter how small?",
     "optionA": "At least two tiedowns for every load",
     "optionB": "One tiedown if the load is under 10 feet long",
     "optionC": "Three tiedowns for loads over 20 feet long",
@@ -5689,13 +5689,13 @@
     "state": "ALL",
     "category": "mountainDriving",
     "question": "What gear should you use when going down a steep grade?",
-    "optionA": "The same gear you would use to climb the grade",
+    "optionA": "A gear lower than you would use to climb the grade",
     "optionB": "One gear higher than you used for climbing the grade",
     "optionC": "The highest gear available for maximum fuel efficiency",
     "optionD": "Neutral gear position for fuel efficiency and reduced wear",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Using the same gear for descent as you would for climbing provides appropriate engine braking for that grade steepness."
+    "explanation": "The old rule was to go down in the same gear you used to climb. Modern trucks have low-friction parts and streamlined shapes, so the current CDL manual says you may need a lower gear going down to get enough engine braking."
   },
   {
     "questionId": "CDL-GK-408",
@@ -6206,14 +6206,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "railroadCrossings",
-    "question": "If you cannot see for 400 feet in both directions when 100 feet from tracks, you should?",
-    "optionA": "Not exceed 15 mph when crossing",
+    "question": "If you cannot see far down the tracks in both directions as you approach a crossing, what should you do?",
+    "optionA": "Slow down and be ready to stop",
     "optionB": "Sound your horn before crossing",
     "optionC": "Flash your headlights",
     "optionD": "Call dispatch for permission",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "When sight distance is limited at railroad crossings, speed must not exceed 15 mph to ensure safe crossing."
+    "explanation": "When sight distance at a crossing is limited, approach slowly enough to stop before the tracks if a train is coming. Some states, such as California, also set a specific speed limit for these crossings."
   },
   {
     "questionId": "CDL-GK-445",

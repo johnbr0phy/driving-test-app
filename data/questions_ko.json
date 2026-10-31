@@ -233,9 +233,9 @@
   "optionB": "오른쪽에서 합류하는 차량",
   "optionC": "분리 고속도로 끝",
   "optionD": "전방 교차로",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "이 표지판은 주행 차로가 끝나므로 합류해야 함을 경고합니다."
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "합류 표지판은 앞에서 오른쪽 차량이 내 차로로 합류한다는 경고이므로 속도를 조절하고 공간을 내줄 준비를 하십시오. 내 차로가 끝난다는 뜻은 차로 종료 표지판입니다."
  },
  {
   "type": "Universal",
@@ -694,10 +694,10 @@
   "optionA": "적색 신호 우회전 금지",
   "optionB": "적색 신호 좌회전 금지",
   "optionC": "표시된 화살표에 따라 다름",
-  "optionD": "어느 방향으로도 회전 금지",
-  "correctAnswer": "C",
-  "correctIndex": 2,
-  "explanation": "적색 신호 회전 금지 표지판은 표시된 방향 또는 양방향으로 적색 신호 중 회전을 금지합니다."
+  "optionD": "적색 신호 동안 회전 금지",
+  "correctAnswer": "D",
+  "correctIndex": 3,
+  "explanation": "NO TURN ON RED 표지판은 신호가 적색인 동안 우회전(또는 일방통행로로의 좌회전)을 할 수 없다는 뜻입니다. 녹색 신호를 기다렸다가 안전할 때 회전하십시오."
  },
  {
   "type": "Universal",
@@ -945,11 +945,11 @@
   "question": "적색 신호에 언제 우회전할 수 있습니까?",
   "optionA": "화살표가 있을 때만",
   "optionB": "도시에서는 절대 안 됨",
-  "optionC": "금지 표지판이 없는 한",
-  "optionD": "정지한 후에만",
+  "optionC": "완전히 정지한 후, 금지 표지판이 없으면",
+  "optionD": "주변에 차가 없을 때만",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "적색 신호 우회전은 금지 표지판이 없는 한 정지한 뒤 허용됩니다."
+  "explanation": "대부분의 주에서는 완전히 정지하고 보행자와 차량에 양보한 뒤 적색 신호에 우회전할 수 있으며, 금지 표지판이 있으면 안 됩니다. 주변에 차가 없어도 먼저 정지해야 합니다."
  },
  {
   "type": "Universal",
@@ -1061,7 +1061,7 @@
   "optionD": "자전거 차로에는 절대 진입할 수 없음",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "회전하기 200피트 이내에서는 자전거 차로에 진입할 수 있습니다."
+  "explanation": "자전거 운전자에게 양보한 뒤 회전을 준비할 때(또는 허용된 곳에서 주차 공간으로 갈 때)만 자전거 차로에 들어갈 수 있습니다. 캘리포니아처럼 회전 지점에서 얼마나 가까이에서 들어갈 수 있는지 정한 주도 있습니다."
  },
  {
   "type": "Universal",
@@ -1237,13 +1237,13 @@
   "questionId": "U-089",
   "category": "rulesOfRoad",
   "question": "상향등은 언제 낮춰야 합니까?",
-  "optionA": "마주 오는 차량이나 앞차의 500피트 이내에서",
+  "optionA": "마주 오는 차량 500피트 이내 또는 앞차 300피트 이내",
   "optionB": "마주 오는 모든 차량의 1000피트 이내에서",
   "optionC": "시내에서 마주 오는 차량에 접근할 때만",
   "optionD": "상대 운전자가 전조등을 깜박일 때만",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "마주 오는 차량의 500피트 이내와 다른 차량을 따라갈 때는 상향등을 낮추세요."
+  "explanation": "마주 오는 차량과 약 500피트 이내, 앞차를 따라갈 때는 약 300피트 이내에서 상향등을 하향으로 바꿔 다른 운전자의 눈부심을 막으십시오. 정확한 거리는 주마다 조금씩 다릅니다."
  },
  {
   "type": "Universal",
@@ -1362,14 +1362,14 @@
   "state": "ALL",
   "questionId": "U-099",
   "category": "safeDriving",
-  "question": "교통사고 사망의 가장 큰 원인은 무엇입니까?",
+  "question": "다음 중 가장 많은 교통 사망 사고와 관련된 요인은 무엇입니까?",
   "optionA": "주의 분산 운전",
   "optionB": "과속",
   "optionC": "날씨",
   "optionD": "차량 결함",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "휴대폰 사용을 포함한 주의 분산 운전은 교통사고와 사망 사고의 가장 큰 원인입니다."
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "과속은 미국 교통 사망 사고의 약 10건 중 3건에 관련되어 날씨나 차량 결함보다 훨씬 많습니다. 주의 분산은 사망 사고에 관련된 비율은 더 낮지만 여전히 심각하고 늘어나는 위험입니다."
  },
  {
   "type": "Universal",
@@ -1446,14 +1446,14 @@
   "state": "ALL",
   "questionId": "U-105",
   "category": "safeDriving",
-  "question": "고속도로 속도에서 차량은 1초에 얼마나 이동합니까?",
-  "optionA": "30mph에서 44피트",
-  "optionB": "50mph에서 73피트",
-  "optionC": "60mph에서 88피트",
-  "optionD": "상황에 따라 다름",
+  "question": "시속 60마일로 달릴 때 차량은 1초에 약 얼마나 이동합니까?",
+  "optionA": "44피트",
+  "optionB": "66피트",
+  "optionC": "88피트",
+  "optionD": "120피트",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "60mph로 주행하면 차량은 1초에 약 88피트를 이동합니다."
+  "explanation": "시속 60마일에서는 매초 약 88피트를 이동합니다(1mph는 초당 약 1.47피트). 44피트는 시속 30마일일 때의 거리입니다."
  },
  {
   "type": "Universal",
@@ -1915,7 +1915,7 @@
   "optionD": "36인치",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "흐르는 물은 6인치만 되어도 사람을 넘어뜨릴 수 있고, 12인치면 차량을 떠내려가게 할 수 있습니다."
+  "explanation": "약 6인치의 물은 대부분 승용차의 바닥에 닿아 통제력 상실과 시동 꺼짐을 일으킬 수 있습니다. 흐르는 물이 약 12인치면 많은 차량이 뜰 수 있습니다."
  },
  {
   "type": "Universal",
@@ -2041,7 +2041,7 @@
   "optionD": "0.02%",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "모든 주에서 성인 운전자의 법적 BAC 한도는 0.08%입니다."
+  "explanation": "21세 이상 운전자의 법정 혈중알코올농도(BAC) 한도는 유타주(0.05%)를 제외한 모든 주에서 0.08%입니다."
  },
  {
   "type": "Universal",

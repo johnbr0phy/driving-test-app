@@ -230,12 +230,12 @@
   "category": "roadSigns",
   "question": "Biển báo thể hiện các làn đường nhập lại cho biết điều gì?",
   "optionA": "Làn đường kết thúc, nhập sang trái",
-  "optionB": "Xe cộ đến từ bên phải",
+  "optionB": "Xe từ bên phải nhập vào làn",
   "optionC": "Đường có dải phân cách kết thúc",
   "optionD": "Có giao lộ phía trước",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "Biển báo này cảnh báo làn đường của bạn sẽ kết thúc và bạn cần phải nhập làn."
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "Biển báo nhập làn cảnh báo xe từ bên phải sẽ nhập vào làn của bạn phía trước, vì vậy hãy sẵn sàng điều chỉnh tốc độ và nhường chỗ. Biển báo hết làn mới là biển cho biết làn của chính bạn sắp kết thúc."
  },
  {
   "type": "Universal",
@@ -694,10 +694,10 @@
   "optionA": "Cấm rẽ phải khi đèn đỏ",
   "optionB": "Cấm rẽ trái khi đèn đỏ",
   "optionC": "Tùy vào mũi tên được hiển thị",
-  "optionD": "Cấm rẽ theo mọi hướng",
-  "correctAnswer": "C",
-  "correctIndex": 2,
-  "explanation": "Biển báo cấm rẽ khi đèn đỏ cấm rẽ khi đèn đỏ theo hướng được chỉ hoặc cả hai hướng."
+  "optionD": "Không được rẽ khi đèn còn đỏ",
+  "correctAnswer": "D",
+  "correctIndex": 3,
+  "explanation": "Biển NO TURN ON RED có nghĩa là bạn không được rẽ phải (hoặc rẽ trái vào đường một chiều) khi đèn còn đỏ. Hãy chờ đèn xanh rồi rẽ khi an toàn."
  },
  {
   "type": "Universal",
@@ -945,11 +945,11 @@
   "question": "Khi nào bạn có thể rẽ phải khi đèn đỏ?",
   "optionA": "Chỉ khi có mũi tên",
   "optionB": "Không bao giờ trong thành phố",
-  "optionC": "Trừ khi có biển cấm",
-  "optionD": "Chỉ sau khi đã dừng lại",
+  "optionC": "Sau khi dừng hẳn, nếu không có biển cấm",
+  "optionD": "Chỉ khi không có xe ở gần",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Được phép rẽ phải khi đèn đỏ sau khi đã dừng lại, trừ khi có biển cấm."
+  "explanation": "Hầu hết các tiểu bang cho phép rẽ phải khi đèn đỏ sau khi dừng hẳn và nhường đường cho người đi bộ và xe cộ, trừ khi có biển cấm. Không có xe ở gần không có nghĩa là được bỏ qua việc dừng trước."
  },
  {
   "type": "Universal",
@@ -1061,7 +1061,7 @@
   "optionD": "Không bao giờ được vào làn xe đạp",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Bạn có thể vào làn xe đạp trong phạm vi 200 feet (khoảng 60 mét) trước khi rẽ."
+  "explanation": "Bạn chỉ được đi vào làn xe đạp để chuẩn bị rẽ (hoặc để vào chỗ đậu xe nơi được phép), sau khi nhường đường cho người đi xe đạp. Một số tiểu bang, như California, quy định khoảng cách tới chỗ rẽ mà bạn được phép đi vào."
  },
  {
   "type": "Universal",
@@ -1237,13 +1237,13 @@
   "questionId": "U-089",
   "category": "rulesOfRoad",
   "question": "Khi nào bạn phải hạ đèn pha (đèn chiếu xa)?",
-  "optionA": "Trong phạm vi 500 feet với xe ngược chiều hoặc xe phía trước",
+  "optionA": "Trong vòng 500 feet với xe ngược chiều hoặc 300 feet với xe phía trước",
   "optionB": "Trong phạm vi 1000 feet với bất kỳ xe ngược chiều nào trên đường",
   "optionC": "Chỉ trong nội thành khi tới gần xe ngược chiều",
   "optionD": "Chỉ khi tài xế xe kia nhấp đèn về phía bạn",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Hạ đèn pha khi ở trong phạm vi 500 feet (khoảng 150 mét) với xe ngược chiều và khi đi sau một xe khác."
+  "explanation": "Hãy hạ đèn pha trong khoảng 500 feet khi có xe ngược chiều và khoảng 300 feet khi đi sau xe khác, để không làm lóa mắt tài xế kia. Khoảng cách chính xác hơi khác nhau tùy tiểu bang."
  },
  {
   "type": "Universal",
@@ -1362,14 +1362,14 @@
   "state": "ALL",
   "questionId": "U-099",
   "category": "safeDriving",
-  "question": "Nguyên nhân hàng đầu gây tử vong do giao thông là gì?",
+  "question": "Yếu tố nào sau đây liên quan đến nhiều ca tử vong giao thông nhất?",
   "optionA": "Lái xe mất tập trung",
   "optionB": "Chạy quá tốc độ",
   "optionC": "Thời tiết",
   "optionD": "Lỗi kỹ thuật của xe",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "Lái xe mất tập trung, bao gồm việc dùng điện thoại, là nguyên nhân hàng đầu gây tai nạn và tử vong do giao thông."
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "Chạy quá tốc độ là yếu tố trong khoảng 3 trên 10 ca tử vong giao thông ở Hoa Kỳ, nhiều hơn hẳn thời tiết hay lỗi xe. Mất tập trung liên quan đến ít vụ tai nạn chết người hơn nhưng vẫn là rủi ro nghiêm trọng và ngày càng tăng."
  },
  {
   "type": "Universal",
@@ -1446,14 +1446,14 @@
   "state": "ALL",
   "questionId": "U-105",
   "category": "safeDriving",
-  "question": "Ở tốc độ cao tốc, xe của bạn di chuyển bao xa mỗi giây?",
-  "optionA": "44 feet ở tốc độ 30 mph",
-  "optionB": "73 feet ở tốc độ 50 mph",
-  "optionC": "88 feet ở tốc độ 60 mph",
-  "optionD": "Thay đổi tùy theo điều kiện",
+  "question": "Ở tốc độ 60 mph, xe của bạn đi được khoảng bao xa mỗi giây?",
+  "optionA": "44 feet",
+  "optionB": "66 feet",
+  "optionC": "88 feet",
+  "optionD": "120 feet",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Ở tốc độ 60 mph, xe của bạn di chuyển khoảng 88 feet (khoảng 27 mét) mỗi giây."
+  "explanation": "Ở 60 mph bạn đi được khoảng 88 feet mỗi giây (1 mph bằng khoảng 1,47 feet mỗi giây). 44 feet là quãng đường ở 30 mph."
  },
  {
   "type": "Universal",
@@ -1915,7 +1915,7 @@
   "optionD": "36 inch",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Chỉ 6 inch (khoảng 15 cm) nước chảy có thể quật ngã bạn và 12 inch (khoảng 30 cm) có thể cuốn trôi một chiếc xe."
+  "explanation": "Khoảng 6 inch nước đã chạm tới gầm hầu hết xe du lịch và có thể khiến xe mất lái hoặc chết máy. Khoảng 12 inch nước chảy có thể làm nhiều xe nổi lên."
  },
  {
   "type": "Universal",
@@ -2041,7 +2041,7 @@
   "optionD": "0,02%",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Giới hạn BAC hợp pháp đối với người lái xe trưởng thành ở tất cả các tiểu bang là 0,08%."
+  "explanation": "Giới hạn BAC hợp pháp cho tài xế từ 21 tuổi trở lên là 0,08% ở mọi tiểu bang, trừ Utah là 0,05%."
  },
  {
   "type": "Universal",

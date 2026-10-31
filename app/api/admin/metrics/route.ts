@@ -4,8 +4,6 @@ import { requireAdmin } from '@/lib/server/adminAuth';
 import { cachedAdminPayload, cachedJson, wantsRefresh } from '@/lib/server/adminCache';
 import { isInternalEmail } from '@/lib/internal';
 import { getInternalUids } from '@/lib/server/internalUsers';
-import { examAnalyticsLabel } from '@/lib/exams';
-import { EXAMS_V2 } from '@/lib/v2/registry';
 import { TEST_REQUEST_PICKS } from '@/lib/test-requests';
 import { LAUNCH_EXPERIMENT, LAUNCH_VARIANTS } from '@/lib/email-launch';
 import type { DocumentSnapshot, QuerySnapshot } from 'firebase-admin/firestore';
@@ -351,41 +349,6 @@ async function buildMetrics() {
   const questionsByDay = (questionsData?.daily as Record<string, number>) || {};
   const questionsAllTime = Object.values(questionsByDay).reduce((a, b) => a + b, 0);
 
-  // Per-exam split of the same aggregate (DMV + every registry exam). Totals
-  // are summed from the per-day map, like the headline, so a backfilled
-  // history and live increments read consistently. Answers recorded before
-  // the split shipped (and before the backfill ran) only count in the headline.
-  const byExamRaw =
-    (questionsData?.byExam as Record<string, { daily?: Record<string, number> }>) || {};
-  // Enrolled: distinct people (accounts + guest browsers) with at least one
-  // answer in the exam, one doc each in enrollments (lib/enrollment). A
-  // count() aggregation per exam; internal accounts are never written there.
-  const enrolledEntries = await Promise.all(
-    Object.keys(byExamRaw).map(async (id) => {
-      try {
-        const snap = await db.collection('enrollments').where('exam', '==', id).count().get();
-        return [id, snap.data().count] as const;
-      } catch {
-        return [id, 0] as const;
-      }
-    })
-  );
-  const enrolledByExam = Object.fromEntries(enrolledEntries);
-  const questionsByExam = Object.entries(byExamRaw)
-    .map(([id, rec]) => {
-      const days = rec?.daily || {};
-      return {
-        id,
-        label: EXAMS_V2.find((e) => e.id === id)?.shortName ?? examAnalyticsLabel(id),
-        total: Object.values(days).reduce((a, b) => a + b, 0),
-        last7d: sumWindow(days, daysAgoKey(6), todayKey),
-        prev7d: sumWindow(days, daysAgoKey(13), daysAgoKey(7)),
-        today: days[etToday] || 0,
-        enrolled: enrolledByExam[id] || 0,
-      };
-    })
-    .filter((row) => row.total > 0)
-    .sort((a, b) => b.total - a.total);
   // v2BackfilledAt: re-seeds once more now that the backfill counts v2 (SAT, ACT...) history.
   // enrollmentsBackfilledAt: one more pass to seed enrollments from account records.
   const questionsByExamBackfillPending = !questionsData?.v2BackfilledAt || !questionsData?.enrollmentsBackfilledAt;
@@ -420,7 +383,6 @@ async function buildMetrics() {
     },
     activeWeekly,
     activeMonthly,
-    questionsByExam,
     questionsByExamBackfillPending,
     testRequests,
     // Built nightly by /api/cron/aggregate-stats.

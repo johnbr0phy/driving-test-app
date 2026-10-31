@@ -3,6 +3,8 @@ import type { Firestore } from 'firebase-admin/firestore';
 import type { OpportunitiesPayload } from '@/lib/server/opportunities';
 import { buildTeachAdmin, type TeachAdminPayload } from '@/lib/server/teachAdmin';
 import { getInternalUids } from '@/lib/server/internalUsers';
+import { TEST_CATALOG } from '@/lib/testCatalog';
+import { REGIONS } from '@/lib/region';
 
 // The daily update at the top of the /admin Today tab: Claude reads the
 // page's numbers (plus the previous update's numbers, to say what changed)
@@ -85,8 +87,23 @@ export function briefNumbers(p: OpportunitiesPayload, schools: ReturnType<typeof
       newVisitors: p.scoreboard.visits.cur7,
     },
     refunds: p.scoreboard.refunds,
+    // Practice is filed by the exam's country; visitors and signups by the visitor's.
+    byCountry: (p.countries ?? []).map((c) => ({
+      country: c.label,
+      examsListed: c.exams,
+      examsPracticedIn30d: c.activeExams,
+      answers30d: c.answers30d,
+      previous30dAnswers: c.answersPrev30d,
+      answers7d: c.answers7d,
+      newVisitors30d: c.visitors30d,
+      signups: c.signups,
+      revenue30dDollars: dollars(c.revenue30dCents),
+      busiestExams: c.topExams,
+    })),
+    countryCountingSince: p.countriesSince ?? null,
     busiestExams: p.exams.slice(0, 10).map((e) => ({
       exam: e.label,
+      country: e.region,
       hasPremium: e.monetized,
       answers30d: e.answers30d,
       answers7d: e.answers7d,
@@ -115,13 +132,15 @@ export function briefNumbers(p: OpportunitiesPayload, schools: ReturnType<typeof
   };
 }
 
-const SYSTEM = `You write the morning update for John, who runs Tigertest (tigertest.io), a site of free practice tests (DMV permit tests plus about forty other exams) with a $9.99 one-time Premium unlock that only the DMV, SAT and ACT sell.
+const COUNTRY_NAMES = REGIONS.filter((r) => r.code !== 'US').map((r) => r.name).join(', ');
+
+const SYSTEM = `You write the morning update for John, who runs Tigertest (tigertest.io), a site of free practice tests: the US DMV permit test plus about ${Math.floor(TEST_CATALOG.length / 10) * 10} other exams, with country pages and local exams for ${COUNTRY_NAMES} too. A $9.99 one-time Premium unlock (US dollars) is sold only on the DMV, SAT and ACT, and on US exams' stats pages; other countries' exams are free and cannot sell.
 
 John does not like reading much text. Write:
 - line 1: one headline sentence, at most 15 words, saying the single most important thing today
 - then 3 to 5 lines starting with "- ", each at most 25 words
 
-What to cover, most important first. A milestone beats everything: a first ever (the first class a teacher made, the first school linking to us, a first sale on a new paywall) is the headline, named specifically (which school, which exam). teachersAndSchools.newClassesSincePreviousUpdate and newSchoolsLinkingSincePreviousUpdate list what is new since the previous update; any entry there is news, and when allTime.classes or allTime.schoolsLinkingToUs equals the number new, it is the first ever. Teachers and schools matter more than their small numbers suggest: one class brings a room of students and the next class. After that: money (revenue and purchases, and which paywall sold), what changed since the previous update, anything unusual (a spike, a drop, an exam suddenly busy), and one concrete thing worth doing. Skip anything that has not changed and is not actionable.
+What to cover, most important first. A milestone beats everything: a first ever (the first class a teacher made, the first school linking to us, a first sale on a new paywall) is the headline, named specifically (which school, which exam). teachersAndSchools.newClassesSincePreviousUpdate and newSchoolsLinkingSincePreviousUpdate list what is new since the previous update; any entry there is news, and when allTime.classes or allTime.schoolsLinkingToUs equals the number new, it is the first ever. Teachers and schools matter more than their small numbers suggest: one class brings a room of students and the next class. After that: money (revenue and purchases, and which paywall sold), what changed since the previous update, a country that is growing or still empty (byCountry; name it, and the exam driving it), anything unusual (a spike, a drop, an exam suddenly busy), and one concrete thing worth doing. Skip anything that has not changed and is not actionable.
 
 Rules: use only the numbers given, never estimate or invent one. Round to whole numbers and say "$120", "about 1,400". Plain everyday words, no jargon like "cohort", "conversion rate" or "funnel". No em-dashes, no bold, no headings, nothing before the headline or after the last bullet. If the data is too thin to say something, say less rather than padding.`;
 

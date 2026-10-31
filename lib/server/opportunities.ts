@@ -7,6 +7,7 @@ import { isInternalEmail } from '@/lib/internal';
 import { shareDailyCounts } from '@/lib/shareCounts';
 import { paywallHitFeature, purchaseExam, purchaseLocationLabel } from '@/lib/purchaseAttribution';
 import { PAYWALL_TEST_ID, PAYWALL_VARIANTS } from '@/lib/paywallTestIds';
+import { REGIONS, regionFromCountry, regionOfTest, type TestRegion } from '@/lib/region';
 
 // The /admin Today tab: where the next dollar and the next user come from.
 // The /admin Growth tab says how the site is doing; this page says what to do about it:
@@ -23,6 +24,15 @@ const SOURCE_LABELS: Record<string, string> = {
   ai_other: 'Other AI', search: 'Search engines', direct: 'Direct / unknown', other: 'Other sites',
 };
 const PREMIUM_PRICE_CENTS = 999;
+
+// The By country card: each Tigertest country, then the worldwide exams (one
+// exam everywhere, so their practice belongs to no country).
+export const COUNTRY_ROWS: TestRegion[] = [...REGIONS.map((r) => r.code), 'GLOBAL'];
+const COUNTRY_LABELS: Record<string, string> = {
+  ...Object.fromEntries(REGIONS.map((r) => [r.code, r.name])),
+  GLOBAL: 'Worldwide exams',
+  OTHER: 'Other countries',
+};
 
 // Current and previous 7 and 30 days. A previous window that starts before
 // the series was first recorded is null, not a misleading zero; `since` is
@@ -42,14 +52,37 @@ export interface OpportunitiesPayload {
     signupToBuyer30d: number | null;
     refunds: { count: number; cents: number } | null;
   };
+  /** Practice, people, visitors and money per country, US first, worldwide exams last. */
+  countries: {
+    id: TestRegion;
+    label: string;
+    exams: number;
+    activeExams: number;
+    answers7d: number;
+    answers30d: number;
+    answersPrev30d: number;
+    /** Sum of each exam's distinct people, so someone on two exams counts twice. */
+    learners: number;
+    /** First visits from the country (by IP), null before visit_region_* was recorded and for worldwide exams. */
+    visitors30d: number | null;
+    signups: number | null;
+    revenue30dCents: number;
+    revenueAllCents: number;
+    topExams: string[];
+  }[];
+  /** First visits from countries with no tests of their own, and the day country counting began. */
+  otherCountryVisitors30d: number | null;
+  countriesSince: string | null;
   exams: {
     id: string;
     label: string;
     group: string;
+    region: TestRegion;
     monetized: boolean;
     answers7d: number;
     answers30d: number;
     answersPrev30d: number;
+    answersAll: number;
     enrolled: number;
     paywallHits30d: number;
     purchases30d: number;
@@ -346,14 +379,17 @@ export async function buildOpportunities(
       const mine = payments.filter((p) => p.exam === id);
       const monetized = isMonetized(id);
       const answers30d = w.sum(daily, 29, 0);
+      const region = regionOfTest(id.split('_')[0]);
       return {
         id,
         label: TEST_CATALOG.find((t) => t.id === id)?.shortName ?? examAnalyticsLabel(id),
         group: groupOf.get(id) ?? 'Other exams',
+        region,
         monetized,
         answers7d: w.sum(daily, 6, 0),
         answers30d,
         answersPrev30d: w.sum(daily, 59, 30),
+        answersAll: Object.values(daily || {}).reduce((n, c) => n + (typeof c === 'number' ? c : 0), 0),
         enrolled: enrolled.get(id) || 0,
         paywallHits30d: hitsByExam.get(id) || 0,
         purchases30d: mine.filter((p) => inLast(p.day, 30)).length,
@@ -362,7 +398,9 @@ export async function buildOpportunities(
         revenue30dCents: mine.filter((p) => inLast(p.day, 30)).reduce((n, p) => n + p.net, 0),
         // What a free exam's last 30 days of practice would have earned at
         // the DMV's revenue per answer. A ceiling on demand, not a forecast.
-        potential30dCents: monetized ? null : Math.round(answers30d * dmvCentsPerAnswer),
+        // US exams only: checkout is in US dollars, so other countries' exams
+        // (and the worldwide ones, mostly practiced abroad) are not priced.
+        potential30dCents: monetized || region !== 'US' ? null : Math.round(answers30d * dmvCentsPerAnswer),
       };
     })
     .sort((a, b) => b.answers30d - a.answers30d || b.enrolled - a.enrolled);
@@ -413,8 +451,16 @@ export async function buildOpportunities(
   const sourceSignups = new Map<string, { signups: number; buyers: number }>();
   const landingSignups = new Map<string, { signups: number; buyers: number }>();
   let sourceSignupsTracked = 0;
+  const countrySignups = new Map<string, number>();
+  let countrySignupsTracked = 0;
   for (const doc of originsSnap.docs) {
     if (internalUids.has(doc.id)) continue;
+    const country = doc.get('country');
+    if (typeof country === 'string') {
+      countrySignupsTracked++;
+      const r = regionFromCountry(country) ?? 'OTHER';
+      countrySignups.set(r, (countrySignups.get(r) || 0) + 1);
+    }
     const source = doc.get('source');
     const landing = doc.get('landing');
     const bought = userById.get(doc.id)?.premium === true;
@@ -442,6 +488,34 @@ export async function buildOpportunities(
     signups: sourceSignups.get(id)?.signups || 0,
     buyers: sourceSignups.get(id)?.buyers || 0,
   })).sort((a, b) => b.visits30d - a.visits30d);
+  // ── Countries: exams rolled up by regionOfTest, visitors by IP country ─
+  const countrySince = Object.keys(steps)
+    .filter((k) => k.startsWith('visit_region_'))
+    .map((k) => Object.keys(steps[k]?.daily || {}).sort()[0])
+    .filter(Boolean)
+    .sort()[0] ?? null;
+  const countryVisits = (r: string) => (countrySince ? w.sum(steps[`visit_region_${r}`]?.daily, 29, 0) : null);
+  const catalogIds = new Set(TEST_CATALOG.map((t) => t.id));
+  const countries = COUNTRY_ROWS.map((id) => {
+    const mine = exams.filter((e) => e.region === id);
+    const listed = mine.filter((e) => catalogIds.has(e.id));
+    return {
+      id,
+      label: COUNTRY_LABELS[id],
+      exams: listed.length,
+      activeExams: listed.filter((e) => e.answers30d > 0).length,
+      answers7d: mine.reduce((n, e) => n + e.answers7d, 0),
+      answers30d: mine.reduce((n, e) => n + e.answers30d, 0),
+      answersPrev30d: mine.reduce((n, e) => n + e.answersPrev30d, 0),
+      learners: mine.reduce((n, e) => n + e.enrolled, 0),
+      visitors30d: id === 'GLOBAL' ? null : countryVisits(id),
+      signups: id === 'GLOBAL' || countrySignupsTracked === 0 ? null : countrySignups.get(id) || 0,
+      revenue30dCents: mine.reduce((n, e) => n + e.revenue30dCents, 0),
+      revenueAllCents: mine.reduce((n, e) => n + e.revenueAllCents, 0),
+      topExams: mine.filter((e) => e.answers30d > 0).slice(0, 3).map((e) => e.label),
+    };
+  });
+
   const landings = [...landingSignups.entries()]
     .map(([path, r]) => ({ path, ...r }))
     .sort((a, b) => b.signups - a.signups)
@@ -518,6 +592,14 @@ export async function buildOpportunities(
       sourceSignupsTracked > 0
         ? `${sourceSignupsTracked} accounts carry their first visit's source and landing page.`
         : 'New accounts start carrying their first visit source and landing page with this release. Until then, sources show visits only.',
+  });
+  health.push({
+    id: 'country',
+    status: countrySince ? 'ok' : 'warn',
+    title: 'Visitors and signups by country',
+    detail: countrySince
+      ? `First visits are counted by the visitor's country since ${countrySince}; signups carry it from the same day. Practice is filed by the exam's country, so a Canadian on the DMV test counts under the US.`
+      : 'First visits and signups start carrying the visitor\'s country with this release. Until then the By country card shows practice and money only, filed by the exam\'s country.',
   });
   const sharesData = sharesDoc.data() || {};
   const legacyShareDays = Object.keys(sharesData).filter((k) => k.startsWith('daily.')).length;
@@ -615,7 +697,7 @@ export async function buildOpportunities(
       detail: `${v2Hits} paywall views in 30 days, no purchases, ${v2Monetized.reduce((n, e) => n + e.enrolled, 0)} people practicing. They share the DMV's $9.99 unlock; an exam-named price of their own is the first thing to test once traffic allows.`,
     });
   }
-  const free = exams.filter((e) => !e.monetized && e.answers30d > 0);
+  const free = exams.filter((e) => !e.monetized && e.region === 'US' && e.answers30d > 0);
   const freeAnswers = free.reduce((n, e) => n + e.answers30d, 0);
   const allAnswers30 = answers.cur30;
   if (free.length > 0 && allAnswers30 > 0) {
@@ -624,10 +706,25 @@ export async function buildOpportunities(
     const deep = [...free].filter((e) => e.enrolled >= 5).sort((a, b) => b.answers30d / b.enrolled - a.answers30d / a.enrolled)[0];
     insights.push({
       kind: 'growth',
-      title: `${pctOf(freeAnswers, allAnswers30)} of practice is on free exams, from ${free.reduce((n, e) => n + e.enrolled, 0)} people`,
+      title: `${pctOf(freeAnswers, allAnswers30)} of practice is on free US exams, from ${free.reduce((n, e) => n + e.enrolled, 0)} people`,
       detail: `${top.map((e) => `${e.label} ${e.answers30d.toLocaleString('en-US')}`).join(', ')} answers lead. At the DMV's revenue per answer that is about ${dollars(potential)} a month, ${
         potential < revenue.cur30 / 4 ? 'too little to justify paywalls yet: these exams need visitors first' : 'worth a paywall on the busiest ones'
       }.${deep ? ` ${deep.label} users answer ${Math.round(deep.answers30d / deep.enrolled)} questions each, so professional exams can carry a higher price than $9.99 when they do.` : ''}`,
+    });
+  }
+  const abroad = countries.filter((c) => c.id !== 'US' && c.id !== 'GLOBAL');
+  const abroadAnswers = abroad.reduce((n, c) => n + c.answers30d, 0);
+  if (allAnswers30 > 0 && abroad.some((c) => c.exams > 0)) {
+    const lead = [...abroad].sort((a, b) => b.answers30d - a.answers30d)[0];
+    const quiet = abroad.filter((c) => c.exams > 0 && c.answers30d === 0).map((c) => c.label);
+    const idle = abroad.reduce((n, c) => n + (c.exams - c.activeExams), 0);
+    const abroadExams = abroad.reduce((n, c) => n + c.exams, 0);
+    insights.push({
+      kind: 'growth',
+      title: `${pctOf(abroadAnswers, allAnswers30)} of practice is on other countries' exams`,
+      detail: `${abroadAnswers.toLocaleString('en-US')} answers in 30 days across ${abroadExams} exams outside the US${
+        lead && lead.answers30d > 0 ? `, ${lead.label} leading with ${lead.answers30d.toLocaleString('en-US')}` : ''
+      }. ${idle} of those exams had no practice at all${quiet.length > 0 ? `, and ${quiet.join(', ')} had none on any exam` : ''}. They cannot sell (checkout is in US dollars), so they are worth only what they bring in visitors, classes and links.`,
     });
   }
   const aiVisits = sources.filter((s) => s.ai);
@@ -673,6 +770,9 @@ export async function buildOpportunities(
       signupToBuyer30d: signups.cur30 > 0 ? purchases.cur30 / signups.cur30 : null,
       refunds: refundTotals,
     },
+    countries,
+    otherCountryVisitors30d: countryVisits('OTHER'),
+    countriesSince: countrySince,
     exams,
     paywalls,
     paywallTest,

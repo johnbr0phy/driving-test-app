@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { isInternalEmail } from '@/lib/internal';
+import { regionFromCountry } from '@/lib/region';
 
 // Visitor funnel aggregate (see lib/funnel.ts). One counter per step, total
 // and per UTC day; signups are also split by whether the browser practiced
@@ -18,6 +19,11 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: false, error: 'invalid' }, { status: 400 });
     }
     const triedFirst = body.triedFirst === true;
+    // The visitor's country from Vercel's geo header (absent in local dev).
+    // First visits are also counted by Tigertest country (visit_region_UK...,
+    // visit_region_OTHER for countries with no tests of their own) for the
+    // By country card on the /admin Today tab.
+    const ipCountry = (request.headers.get('x-vercel-ip-country') || '').toUpperCase().slice(0, 2);
     const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD (UTC)
     const db = getAdminDb();
 
@@ -44,6 +50,7 @@ export async function POST(request: NextRequest) {
       // Sub-count of direct: no referrer, landed on a deep page (likely AI apps).
       if (body.source === 'direct' && body.deep === true) steps.visit_direct_deep = bump;
     }
+    if (step === 'visit' && ipCountry) steps[`visit_region_${regionFromCountry(ipCountry) ?? 'OTHER'}`] = bump;
 
     // Nested-object merge, same pattern as analytics/paywalls.
     await db.doc('analytics/funnel').set({ steps }, { merge: true });
@@ -63,6 +70,7 @@ export async function POST(request: NextRequest) {
           at: new Date().toISOString(),
           ...(source && { source }),
           ...(landing && { landing }),
+          ...(/^[A-Z]{2}$/.test(ipCountry) && { country: ipCountry }),
         });
       } catch {
         // Already recorded: the aggregate still counted.

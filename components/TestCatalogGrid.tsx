@@ -162,7 +162,7 @@ export function TestCatalogGrid({
             role="searchbox"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search by exam, job or certifying body"
+            placeholder="Search exams or jobs"
             aria-label="Search practice tests"
             autoComplete="off"
             className="h-12 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 pl-12 pr-11 text-base text-gray-900 dark:text-gray-50 shadow-sm placeholder:text-gray-400 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30"

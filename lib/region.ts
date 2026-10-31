@@ -109,7 +109,7 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
   CA: {
     title: "Free Canadian Practice Tests: School, Work & Driving | Tigertest",
     description: "Free Canadian practice tests for driving, OSSLT, EQAO, nursing, Red Seal trades and workplace safety. Every answer explained. No account needed.",
-    lead: "Knowledge test practice for Ontario, Quebec, British Columbia, Alberta and Manitoba, written from each province's own handbook. Every answer explained. No signup.",
+    lead: "Knowledge test practice for Ontario, Quebec, British Columbia, Alberta, Manitoba, Saskatchewan and Nova Scotia, written from each province's own handbook. Every answer explained. No signup.",
     cta: { label: "Ontario G1 test", href: "/ontario-g1-practice-test" },
     testsTitle: "Driving knowledge tests by province",
     testsSub: "200 questions per test from the official provincial handbook, in km/h with your province's licensing rules.",

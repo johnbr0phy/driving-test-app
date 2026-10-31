@@ -54,8 +54,10 @@ export function StatsV2({ exam }: { exam: ExamV2Config }) {
     return exam.drills.map((drill) => {
       const questions = drillQuestions(bank, drill, exam);
       const state = drillStateFor(drills, exam.id, drill, questions);
-      const inTopic = (section: string, domain: string) => section === drill.section && drill.domains.includes(domain);
-      const items = history.flatMap((r) => r.items.filter((it) => inTopic(it.section, it.domain)));
+      // By domain only: a drill draws from one section, but its domain is tested
+      // in others too (GCSE papers 2 and 3, EQAO session B, FS Maths section A).
+      // No domain belongs to two drills in any exam.
+      const items = history.flatMap((r) => r.items.filter((it) => drill.domains.includes(it.domain)));
       return {
         drill,
         correct: state.correct + items.filter((it) => it.correct).length,

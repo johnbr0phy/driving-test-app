@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { Check } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { FLAGS, readRegionCookie, saveRegion } from "@/components/CountryPills";
@@ -15,9 +16,13 @@ import { useStore } from "@/store/useStore";
  */
 export function CountrySwitcher() {
   const storeRegion = useStore((st) => st.region);
-  const [region, setRegion] = useState<Region>("US");
+  // On a country homepage the page itself says which country it is, so the
+  // server render (and crawlers) show that one, not a US default.
+  const pathname = usePathname();
+  const pageRegion = REGIONS.find((r) => r.code !== "US" && regionHomePath(r.code) === pathname)?.code;
+  const [region, setRegion] = useState<Region>(pageRegion ?? "US");
   const [open, setOpen] = useState(false);
-  useEffect(() => setRegion(readRegionCookie() ?? storeRegion ?? "US"), [storeRegion]);
+  useEffect(() => setRegion(pageRegion ?? readRegionCookie() ?? storeRegion ?? "US"), [pageRegion, storeRegion]);
 
   const pick = (r: Region) => {
     setOpen(false);

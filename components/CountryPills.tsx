@@ -126,10 +126,12 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
         : null;
 
   const pill = (on: boolean) =>
-    `flex h-11 w-11 items-center justify-center rounded-full transition-colors sm:w-12 ${
+    // Text colours matter where flag emoji fall back to letters (Windows shows
+    // "GB", "US"...). Narrower below 360px so seven fit on a 320px screen.
+    `flex h-11 w-9 items-center justify-center rounded-full transition-colors min-[360px]:w-11 sm:w-12 ${
       on
-        ? "bg-gray-900 dark:bg-white"
-        : "hover:bg-gray-100 dark:hover:bg-gray-800"
+        ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
+        : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
     }`;
   // Flags only; the country name is the accessible label and the hover title.
   const label = (r: (typeof REGIONS)[number]) => (
@@ -165,6 +167,8 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
                 aria-label={`${r.name} tests`}
                 title={r.name}
                 onClick={(e) => {
+                  // Let Cmd/Ctrl/Shift-click open the page in a new tab or window.
+                  if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
                   e.preventDefault();
                   save(r.code);
                   if (on) return;

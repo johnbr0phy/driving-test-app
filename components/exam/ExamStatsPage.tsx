@@ -85,7 +85,8 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const [inClass, setInClass] = useState(false);
   useEffect(() => setInClass(isClassStudent(source.id) || (!!source.variantOf && isClassStudent(source.variantOf))), [source.id, source.variantOf]);
   const usExam = regionOfTest(source.variantOf ?? source.id) === "US";
-  const isPremium = hydrated ? !usExam || hasPremiumAccess() || inClass : false;
+  // Other countries' exams are never priced, so they never flash a lock while the store loads.
+  const isPremium = !usExam || (hydrated && (hasPremiumAccess() || inClass));
 
   // Paywall hits and checkouts are keyed "<examId>_stats" (the family id for a
   // state version, since the analytics keys allow no hyphens).

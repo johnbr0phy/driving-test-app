@@ -10,8 +10,8 @@ import {
 
 // Country for the homepage and the /tests hub (lib/region.ts). A first visit
 // takes the country Vercel reports for the request; after that the cookie
-// wins, including a country the visitor picked. A UK, Canada or Australia
-// visitor opening "/" is sent to /uk, /ie, /ca, /au, /nz or /in, each its own indexable page;
+// wins, including a country the visitor picked. A visitor from a country
+// with its own page opening "/" is sent to /uk, /ie, /ca, /au, /nz or /in, each its own indexable page;
 // everyone else stays on the US homepage.
 //
 // Crawlers never get a location: whatever IP they crawl from, they see "/"
@@ -31,10 +31,15 @@ export function middleware(req: NextRequest) {
   }
 
   // 307: temporary, so neither browsers nor search engines store the hop.
-  const res =
-    req.nextUrl.pathname === "/" && region !== "US"
-      ? NextResponse.redirect(new URL(regionHomePath(region), req.url), 307)
-      : NextResponse.next();
+  // Keep the query string (utm_source and the like) through the hop.
+  let res: NextResponse;
+  if (req.nextUrl.pathname === "/" && region !== "US") {
+    const to = req.nextUrl.clone();
+    to.pathname = regionHomePath(region);
+    res = NextResponse.redirect(to, 307);
+  } else {
+    res = NextResponse.next();
+  }
 
   if (source && !crawler) {
     const opts = { path: "/", maxAge: REGION_COOKIE_MAX_AGE, sameSite: "lax" as const };

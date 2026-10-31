@@ -50,6 +50,7 @@ const BORROWED_SETS: Record<string, string> = {
   // Global certifications and nursing exams wear their nearest US exam's tiger.
   awssaa: "aws", az900: "aws", ccna: "aplus", gulfrn: "nclex", uknmc: "nclex",
   cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
+  phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", ngfrsc: "driving", kentsa: "driving",
   psat: "sat", netplus: "secplus", gcdl: "aws",
 };
 

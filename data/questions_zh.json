@@ -4893,11 +4893,11 @@
   "question": "在新泽西州，谁必须系安全带？",
   "optionA": "只有驾驶人",
   "optionB": "只有驾驶人和前座乘客",
-  "optionC": "所有前座乘员和所有18岁以下的乘客",
+  "optionC": "前后座所有乘员",
   "optionD": "只有21岁以下的乘客",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "所有前座乘员，以及坐在任何位置的18岁以下乘客，都必须系安全带。"
+  "explanation": "新泽西州要求车内前后座所有乘员都系安全带。前座违规可被单独拦停；后座成年人的规定只在因其他违规被拦停时执行。"
  },
  {
   "type": "State-Specific",
@@ -5814,14 +5814,14 @@
   "state": "PA",
   "questionId": "PA-016",
   "category": "cellPhone",
-  "question": "在宾夕法尼亚州，持有青少年驾照的18岁以下驾驶人被禁止哪些手机使用？",
+  "question": "在宾夕法尼亚州，持青少年驾照的驾驶人被禁止哪些手机使用？",
   "optionA": "仅禁止手持通话",
   "optionB": "仅禁止发短信",
   "optionC": "仅禁止录像",
-  "optionD": "所有手机使用",
+  "optionD": "手持使用，与所有驾驶人相同",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "持有青少年驾照的18岁以下驾驶人在驾驶时被禁止任何手机使用。"
+  "explanation": "宾夕法尼亚州没有专门针对青少年驾照的手机规定。Paul Miller法禁止所有驾驶人在驾驶时手持或使用手机；允许免提使用。"
  },
  {
   "type": "State-Specific",
@@ -6010,14 +6010,14 @@
   "state": "PA",
   "questionId": "PA-030",
   "category": "stateUnique",
-  "question": "在宾夕法尼亚州施工区，罚款加倍的规定是怎样的？",
-  "optionA": "仅在有工人时罚款加倍",
-  "optionB": "在施工区作业期间任何时候罚款都加倍",
-  "optionC": "仅在白天罚款加倍",
-  "optionD": "仅在州际高速公路上罚款加倍",
+  "question": "在宾夕法尼亚州施工区，交通罚款何时加倍？",
+  "optionA": "任何施工区，即使没有工人",
+  "optionB": "有标志且有工人作业的施工区",
+  "optionC": "仅在白天",
+  "optionD": "仅在州际高速公路上",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "在作业中的施工区内，无论是否有工人在场，交通违规罚款在任何时候都加倍。"
+  "explanation": "在有标志的作业施工区内罚款加倍，该区域以闪光灯标示，闪光灯仅在有工人在场时开启。"
  },
  {
   "type": "State-Specific",
@@ -6154,10 +6154,10 @@
   "optionA": "只使用远光灯",
   "optionB": "始终使用雾灯",
   "optionC": "同时开启危险警示灯",
-  "optionD": "距离其他车辆500英尺内切换近光",
+  "optionD": "距对向来车500英尺内切换近光",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "使用前大灯时，在距离对向来车或前方同向车辆500英尺以内，驾驶人必须将灯光调暗（切换为近光灯）。"
+  "explanation": "距对向来车500英尺以内，以及距前方同向车辆300英尺以内时，必须切换为近光灯。"
  },
  {
   "type": "State-Specific",

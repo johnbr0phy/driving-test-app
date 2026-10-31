@@ -16384,14 +16384,14 @@
   "state": "NC",
   "questionId": "NC-011",
   "category": "gdlLicensing",
-  "question": "Cần bao nhiêu giờ thực hành để tiến từ Level 2 lên Level 3 ở North Carolina?",
-  "optionA": "Tổng cộng 30 giờ",
-  "optionB": "Tổng cộng 50 giờ",
-  "optionC": "12 giờ, 6 giờ ban đêm",
-  "optionD": "60 giờ tổng cộng",
+  "question": "Cần điều kiện gì để lên từ Level 2 lên Level 3 ở North Carolina?",
+  "optionA": "Ghi thêm 12 giờ tập lái",
+  "optionB": "Thi lái lần hai tại DMV",
+  "optionC": "6 tháng ở Level 2, hồ sơ sạch",
+  "optionD": "Đủ 17 tuổi và thử mắt lại",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Tiến từ Level 2 lên Level 3 cần 12 giờ thực hành có giám sát, trong đó ít nhất 6 giờ ban đêm."
+  "explanation": "Bạn cần giữ bằng Level 2 ít nhất 6 tháng và không bị kết tội vi phạm lưu thông, dây an toàn hoặc điện thoại trong 6 tháng gần nhất. Sổ ghi 12 giờ lái xe cũ đã bị bãi bỏ năm 2025."
  },
  {
   "type": "State-Specific",
@@ -16469,13 +16469,13 @@
   "questionId": "NC-017",
   "category": "cellPhone",
   "question": "Tài xế dưới 18 tuổi được gọi cho ai bằng điện thoại khi khẩn cấp ở North Carolina?",
-  "optionA": "Cha mẹ hoặc người giám hộ",
-  "optionB": "Bất kỳ ai khi khẩn cấp",
+  "optionA": "Cha mẹ, người giám hộ, vợ/chồng hoặc 911",
+  "optionB": "Bất kỳ bạn bè hay người thân nào",
   "optionC": "Chỉ gọi 911",
   "optionD": "Không được gọi",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Tài xế dưới 18 tuổi chỉ được dùng điện thoại khi khẩn cấp để liên hệ cha mẹ hoặc người giám hộ."
+  "explanation": "Tài xế dưới 18 tuổi chỉ được dùng điện thoại để gọi cha mẹ, người giám hộ hợp pháp hoặc vợ/chồng, hoặc dịch vụ khẩn cấp như 911, cảnh sát, cứu hỏa hay bệnh viện."
  },
  {
   "type": "State-Specific",
@@ -17451,11 +17451,11 @@
   "question": "Khi nào người có Giấy phép Lái xe Tạm thời có thể lấy bằng lái không hạn chế ở Nebraska?",
   "optionA": "16 tuổi với khóa học giáo dục lái xe",
   "optionB": "Ngay lập tức khi đủ 18 tuổi",
-  "optionC": "17 tuổi với 6 tháng không vi phạm",
+  "optionC": "17 tuổi, giữ POP 12 tháng, ít điểm phạt",
   "optionD": "19 tuổi bất kể vi phạm nào",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người có Giấy phép Lái xe Tạm thời có thể lấy bằng lái không hạn chế ở tuổi 17 sau 6 tháng không vi phạm."
+  "explanation": "Người có POP có thể lấy bằng Class O ở tuổi 17 sau khi giữ POP 12 tháng và có dưới 3 điểm phạt trong 12 tháng qua."
  },
  {
   "type": "State-Specific",
@@ -18064,14 +18064,14 @@
   "state": "NH",
   "questionId": "NH-011",
   "category": "gdlLicensing",
-  "question": "Tài xế dưới 19 tuổi phải cung cấp giấy tờ gì khi xin giấy phép ở New Hampshire?",
-  "optionA": "Chỉ giấy khai sinh",
-  "optionB": "Giấy xác nhận việc làm",
-  "optionC": "Bằng chứng ghi danh hoặc tốt nghiệp trường",
-  "optionD": "Mẫu đơn đồng ý của cha mẹ",
+  "question": "Tài xế dưới 18 tuổi phải hoàn thành gì trước khi lấy bằng lái ở New Hampshire?",
+  "optionA": "Giấy phép tập lái sáu tháng",
+  "optionB": "Mẫu xác nhận việc làm",
+  "optionC": "Khóa học lái xe và 40 giờ có giám sát",
+  "optionD": "20 giờ ghi lại, không cần khóa học",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Tài xế dưới 19 tuổi phải cung cấp bằng chứng ghi danh hoặc tốt nghiệp trường khi xin giấy phép."
+  "explanation": "New Hampshire không cấp giấy phép tập lái. Người dưới 18 tuổi phải hoàn thành khóa học lái xe được chấp thuận và lái 40 giờ có giám sát, trong đó 10 giờ ban đêm."
  },
  {
   "type": "State-Specific",
@@ -18372,14 +18372,14 @@
   "state": "NH",
   "questionId": "NH-033",
   "category": "stateUnique",
-  "question": "Khoảng cách an toàn tối thiểu so với xe buýt trường học đang dừng ở New Hampshire là bao nhiêu?",
-  "optionA": "Ít nhất 10 feet",
+  "question": "Ở New Hampshire, bạn phải dừng cách xe buýt trường học đang bật đèn đỏ nhấp nháy bao xa?",
+  "optionA": "Ít nhất 25 feet",
   "optionB": "Ít nhất 15 feet",
   "optionC": "Ít nhất 20 feet",
-  "optionD": "Ít nhất 25 feet",
+  "optionD": "Ít nhất 10 feet",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Tài xế phải giữ khoảng cách tối thiểu ít nhất 10 feet so với xe buýt trường học đang dừng."
+  "explanation": "Bạn phải dừng cách xe buýt trường học đang bật đèn đỏ nhấp nháy ít nhất 25 feet và chờ đến khi đèn tắt hoặc xe buýt chạy tiếp."
  },
  {
   "type": "State-Specific",
@@ -18456,14 +18456,14 @@
   "state": "NH",
   "questionId": "NH-039",
   "category": "stateUnique",
-  "question": "Quy tắc mới nào áp dụng cho người đi xe đạp ở đèn đỏ ở New Hampshire kể từ năm 2025?",
-  "optionA": "Phải chờ đèn xanh",
-  "optionB": "Chỉ được phép rẽ phải",
-  "optionC": "Có thể coi đèn đỏ như biển YIELD",
-  "optionD": "Có thể đi tiếp sau 2 phút",
+  "question": "Ở New Hampshire, người đi xe đạp phải làm gì khi gặp đèn đỏ?",
+  "optionA": "Coi như biển YIELD",
+  "optionB": "Rẽ phải mà không cần dừng",
+  "optionC": "Dừng lại và tuân thủ như ô tô",
+  "optionD": "Đi tiếp sau khi chờ 2 phút",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Kể từ năm 2025, người đi xe đạp có thể coi đèn đỏ như biển YIELD."
+  "explanation": "Người đi xe đạp phải tuân thủ đèn tín hiệu như mọi phương tiện khác và dừng lại khi đèn đỏ. Dự luật năm 2025 cho phép coi đèn đỏ như biển YIELD đã không được thông qua."
  },
  {
   "type": "State-Specific",
@@ -18893,11 +18893,11 @@
   "question": "Ai bắt buộc phải thắt dây an toàn ở New Jersey?",
   "optionA": "Chỉ người lái xe",
   "optionB": "Chỉ người lái và hành khách ghế trước",
-  "optionC": "Tất cả người ngồi ghế trước và mọi hành khách dưới 18 tuổi",
+  "optionC": "Mọi người trên xe, ghế trước và sau",
   "optionD": "Chỉ hành khách dưới 21 tuổi",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Tất cả người ngồi ghế trước và mọi hành khách dưới 18 tuổi ở bất kỳ vị trí ghế nào bắt buộc phải thắt dây an toàn."
+  "explanation": "New Jersey yêu cầu mọi người trên xe đều thắt dây an toàn, cả ghế trước và ghế sau. Cảnh sát có thể dừng xe vì vi phạm ở ghế trước; quy định cho người lớn ngồi ghế sau chỉ được xử lý khi xe bị dừng vì vi phạm khác."
  },
  {
   "type": "State-Specific",
@@ -20066,14 +20066,14 @@
   "state": "NV",
   "questionId": "NV-034",
   "category": "stateUnique",
-  "question": "Những xe nào hiện được bao gồm trong Luật Move Over của Nevada?",
-  "optionA": "Chỉ xe cảnh sát đang làm nhiệm vụ ứng phó",
-  "optionB": "Xe khẩn cấp, xe cứu hộ có đèn xanh",
-  "optionC": "Chỉ xe cứu hỏa tại hiện trường đang ứng phó",
-  "optionD": "Chỉ xe cứu thương đang làm nhiệm vụ ứng phó",
+  "question": "Luật Move Over của Nevada áp dụng cho những xe nào?",
+  "optionA": "Chỉ xe cảnh sát",
+  "optionB": "Xe khẩn cấp, cứu hộ, NDOT, tiện ích",
+  "optionC": "Chỉ xe cứu hỏa",
+  "optionD": "Chỉ xe cứu thương",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Luật Move Over bao gồm xe khẩn cấp và xe cứu hộ đang bật đèn xanh."
+  "explanation": "Luật áp dụng cho xe khẩn cấp đang dừng, xe cứu hộ bật đèn hổ phách hoặc xanh dương, xe của NDOT và xe công ty tiện ích đang bật đèn cảnh báo."
  },
  {
   "type": "State-Specific",
@@ -20150,14 +20150,14 @@
   "state": "NV",
   "questionId": "NV-040",
   "category": "stateUnique",
-  "question": "Xe cứu hộ ở Nevada dùng đèn màu gì để báo trạng thái khẩn cấp?",
-  "optionA": "Đèn hổ phách",
+  "question": "Xe cứu hộ ở Nevada được bật đèn cảnh báo nhấp nháy màu gì tại nơi có nguy hiểm giao thông?",
+  "optionA": "Đèn xanh lá",
   "optionB": "Đèn đỏ",
   "optionC": "Đèn trắng",
-  "optionD": "Đèn xanh",
+  "optionD": "Đèn hổ phách",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Xe cứu hộ dùng đèn xanh để báo trạng thái khẩn cấp."
+  "explanation": "Xe cứu hộ tại nơi có nguy hiểm giao thông được bật đèn cảnh báo màu hổ phách nhấp nháy. Xe cũng có thể bật đèn xanh dương sáng liên tục, không nhấp nháy, ở phía sau."
  },
  {
   "type": "State-Specific",
@@ -20934,14 +20934,14 @@
   "state": "OH",
   "questionId": "OH-016",
   "category": "cellPhone",
-  "question": "Bạn có được dùng điện thoại khi dừng đèn đỏ ở Ohio không?",
-  "optionA": "Có, khi xe đã dừng hẳn",
-  "optionB": "Có, chỉ cho mục đích dẫn đường",
-  "optionC": "Chỉ được gọi khẩn cấp",
-  "optionD": "Không, trừ khẩn cấp hoặc đường bị đóng",
+  "question": "Ở Ohio, tài xế từ 18 tuổi trở lên có được cầm điện thoại khi dừng đèn đỏ không?",
+  "optionA": "Chỉ để dùng ứng dụng dẫn đường",
+  "optionB": "Chỉ để gọi khẩn cấp",
+  "optionC": "Không, chỉ khi đã đỗ ngoài đường",
+  "optionD": "Có, khi đang dừng ở đèn đỏ",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Không được dùng điện thoại khi dừng đèn đỏ trừ tình huống khẩn cấp hoặc đường bị đóng."
+  "explanation": "Luật lái xe mất tập trung của Ohio cho phép tài xế từ 18 tuổi dùng điện thoại khi đang dừng ở đèn tín hiệu màu đỏ. Tài xế dưới 18 tuổi hoàn toàn không được dùng điện thoại trừ khi khẩn cấp."
  },
  {
   "type": "State-Specific",
@@ -21200,14 +21200,14 @@
   "state": "OH",
   "questionId": "OH-035",
   "category": "stateUnique",
-  "question": "Giới hạn tốc độ trên đường cao tốc đô thị của Ohio là bao nhiêu trừ khi có biển báo khác?",
-  "optionA": "55 mph",
+  "question": "Giới hạn tốc độ trên đường cao tốc ngoại ô (rural freeway) của Ohio là bao nhiêu trừ khi có biển báo khác?",
+  "optionA": "70 mph",
   "optionB": "60 mph",
   "optionC": "65 mph",
-  "optionD": "50 mph",
+  "optionD": "55 mph",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Giới hạn tốc độ trên đường cao tốc đô thị là 55 mph trừ khi có biển báo khác."
+  "explanation": "Giới hạn tốc độ trên đường cao tốc ngoại ô của Ohio là 70 mph trừ khi có biển báo giới hạn khác."
  },
  {
   "type": "State-Specific",
@@ -21704,14 +21704,14 @@
   "state": "OK",
   "questionId": "OK-031",
   "category": "stateUnique",
-  "question": "Khi nào bạn phải bật đèn pha khi lái xe ở Oklahoma?",
-  "optionA": "Chỉ vào ban đêm",
-  "optionB": "Chỉ khi trời mưa",
-  "optionC": "Khi cần gạt nước đang bật",
-  "optionD": "Chỉ trong sương mù",
+  "question": "Ngoài ban đêm, khi nào bạn phải bật đèn pha ở Oklahoma?",
+  "optionA": "Chỉ khi có tuyết",
+  "optionB": "Chỉ khi mưa lớn",
+  "optionC": "Khi không nhìn rõ 1,000 ft phía trước",
+  "optionD": "Chỉ khi sương mù dày",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Phải bật đèn pha bất cứ khi nào cần gạt nước đang hoạt động."
+  "explanation": "Phải bật đèn pha từ nửa giờ sau khi mặt trời lặn đến nửa giờ trước khi mặt trời mọc, và bất cứ lúc nào không nhìn rõ người và xe ở khoảng cách 1,000 feet."
  },
  {
   "type": "State-Specific",
@@ -21889,11 +21889,11 @@
   "question": "Cần bao nhiêu giờ tập lái có giám sát để lấy bằng lái tạm thời ở Oregon?",
   "optionA": "30 giờ tập lái",
   "optionB": "Chỉ cần thi lái đường trường",
-  "optionC": "Tổng cộng 100 giờ tập lái",
-  "optionD": "50 giờ lái có giám sát hoặc hoàn thành một khóa học lái xe",
+  "optionC": "50 giờ, không cần khóa học lái",
+  "optionD": "100 giờ, hoặc 50 giờ nếu học lái xe",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Oregon yêu cầu 50 giờ tập lái có giám sát (bao gồm 10 giờ ban đêm) hoặc một khóa học lái xe trước khi lấy bằng lái tạm thời."
+  "explanation": "Oregon yêu cầu 100 giờ lái có giám sát trước khi cấp bằng tạm thời, hoặc 50 giờ nếu bạn hoàn thành khóa học lái xe được chấp thuận."
  },
  {
   "type": "State-Specific",
@@ -22614,14 +22614,14 @@
   "state": "PA",
   "questionId": "PA-016",
   "category": "cellPhone",
-  "question": "Việc sử dụng điện thoại nào bị cấm đối với người lái dưới 18 tuổi có bằng lái vị thành niên ở Pennsylvania?",
+  "question": "Người lái có bằng lái vị thành niên ở Pennsylvania bị cấm sử dụng điện thoại như thế nào?",
   "optionA": "Chỉ gọi cầm tay",
   "optionB": "Chỉ nhắn tin",
   "optionC": "Chỉ quay video",
-  "optionD": "Mọi hình thức sử dụng điện thoại di động",
+  "optionD": "Cầm tay, giống mọi tài xế",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Người lái dưới 18 tuổi có bằng lái vị thành niên bị cấm mọi hình thức sử dụng điện thoại di động khi đang lái xe."
+  "explanation": "Pennsylvania không có quy định điện thoại riêng cho tài xế có bằng vị thành niên. Luật Paul Miller cấm mọi tài xế cầm hoặc dùng điện thoại cầm tay khi lái xe; được phép dùng rảnh tay."
  },
  {
   "type": "State-Specific",
@@ -22810,14 +22810,14 @@
   "state": "PA",
   "questionId": "PA-030",
   "category": "stateUnique",
-  "question": "Quy định về việc tăng gấp đôi tiền phạt trong khu vực thi công ở Pennsylvania là như thế nào?",
-  "optionA": "Chỉ tăng gấp đôi khi có công nhân",
-  "optionB": "Tăng gấp đôi bất cứ lúc nào trong khu vực đang thi công",
-  "optionC": "Chỉ tăng gấp đôi vào ban ngày",
-  "optionD": "Chỉ tăng gấp đôi trên đường cao tốc liên bang",
+  "question": "Khi nào tiền phạt giao thông được tăng gấp đôi trong khu vực thi công ở Pennsylvania?",
+  "optionA": "Ở mọi khu thi công, kể cả khi không có công nhân",
+  "optionB": "Ở khu đang thi công có biển, có công nhân",
+  "optionC": "Chỉ vào ban ngày",
+  "optionD": "Chỉ trên đường cao tốc liên bang",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Tiền phạt đối với các vi phạm giao thông được tăng gấp đôi bất cứ lúc nào trong khu vực đang thi công, bất kể có công nhân hiện diện hay không."
+  "explanation": "Tiền phạt tăng gấp đôi trong khu vực đang thi công có biển báo, được đánh dấu bằng đèn nhấp nháy chỉ bật khi có công nhân làm việc."
  },
  {
   "type": "State-Specific",
@@ -22954,10 +22954,10 @@
   "optionA": "Chỉ dùng đèn chiếu xa",
   "optionB": "Luôn dùng đèn sương mù",
   "optionC": "Dùng cả đèn khẩn cấp",
-  "optionD": "Hạ đèn khi cách xe khác 500 ft",
+  "optionD": "Hạ đèn khi cách xe ngược chiều 500 ft",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Khi đang sử dụng đèn pha, người lái xe phải hạ đèn (chuyển sang đèn chiếu gần) khi cách xe đi ngược chiều hoặc xe phía trước trong vòng 500 feet (khoảng 150 mét)."
+  "explanation": "Chuyển sang đèn chiếu gần khi cách xe đi ngược chiều trong vòng 500 feet và khi cách xe phía trước bạn đang đi theo trong vòng 300 feet."
  },
  {
   "type": "State-Specific",

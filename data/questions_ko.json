@@ -16384,14 +16384,14 @@
   "state": "NC",
   "questionId": "NC-011",
   "category": "gdlLicensing",
-  "question": "노스캐롤라이나에서 Level 2에서 Level 3으로 올라가려면 연습 시간이 몇 시간 필요합니까?",
-  "optionA": "합계 30시간",
-  "optionB": "합계 50시간",
-  "optionC": "12시간, 야간 6시간",
-  "optionD": "합계 60시간",
+  "question": "노스캐롤라이나에서 Level 2에서 Level 3으로 올라가려면 무엇이 필요합니까?",
+  "optionA": "연습 12시간 추가 기록",
+  "optionB": "DMV에서 두 번째 도로주행 시험",
+  "optionC": "Level 2로 6개월, 위반 기록 없음",
+  "optionD": "만 17세 및 새 시력 검사",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Level 2에서 Level 3으로 올라가려면 보호자 동반 연습 12시간이 필요하며 그중 최소 6시간은 야간이어야 합니다."
+  "explanation": "Level 2 면허를 최소 6개월 보유하고 최근 6개월간 교통 위반, 안전벨트 또는 휴대폰 위반 유죄 판결이 없어야 합니다. 예전의 12시간 운전 기록 요건은 2025년에 폐지되었습니다."
  },
  {
   "type": "State-Specific",
@@ -16469,13 +16469,13 @@
   "questionId": "NC-017",
   "category": "cellPhone",
   "question": "노스캐롤라이나에서 18세 미만 운전자는 응급 상황에서 누구에게 전화할 수 있습니까?",
-  "optionA": "부모 또는 후견인",
-  "optionB": "응급 상황에서는 누구나",
+  "optionA": "부모, 후견인, 배우자 또는 911",
+  "optionB": "아무 친구나 가족",
   "optionC": "911 통화만",
   "optionD": "통화 허용 안 됨",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "18세 미만 운전자는 응급 상황에서 부모나 후견인에게 연락할 때만 휴대폰을 사용할 수 있습니다."
+  "explanation": "18세 미만 운전자는 부모, 법적 후견인 또는 배우자, 또는 911, 경찰, 소방서, 병원 같은 응급 서비스에 전화할 때만 휴대폰을 사용할 수 있습니다."
  },
  {
   "type": "State-Specific",
@@ -17451,11 +17451,11 @@
   "question": "네브래스카에서 Provisional Operator's Permit 소지자는 언제 제한 없는 면허를 받을 수 있습니까?",
   "optionA": "운전 교육 과정을 이수한 만 16세",
   "optionB": "만 18세가 되는 즉시",
-  "optionC": "6개월간 위반이 없는 만 17세",
+  "optionC": "만 17세, POP 12개월 보유, 벌점 적음",
   "optionD": "위반 여부와 상관없이 만 19세",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "임시 운전 허가증 소지자는 6개월간 위반이 없으면 만 17세에 제한 없는 면허를 받을 수 있습니다."
+  "explanation": "POP 소지자는 POP를 12개월 보유하고 최근 12개월간 벌점이 3점 미만이면 만 17세에 Class O 면허를 받을 수 있습니다."
  },
  {
   "type": "State-Specific",
@@ -18064,14 +18064,14 @@
   "state": "NH",
   "questionId": "NH-011",
   "category": "gdlLicensing",
-  "question": "뉴햄프셔에서 19세 미만 운전자는 허가증을 신청할 때 어떤 서류를 제출해야 합니까?",
-  "optionA": "출생증명서 서류만",
-  "optionB": "재직 증명 서류",
-  "optionC": "재학 또는 졸업 증명",
-  "optionD": "부모 동의서 서류",
+  "question": "뉴햄프셔에서 18세 미만 운전자는 면허를 받기 전에 무엇을 이수해야 합니까?",
+  "optionA": "6개월 학습 허가증",
+  "optionB": "재직 증명 양식",
+  "optionC": "운전 교육과 보호자 동반 40시간",
+  "optionD": "운전 교육 없이 기록 20시간",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "19세 미만 운전자는 허가증을 신청할 때 재학 또는 졸업 증명을 제출해야 합니다."
+  "explanation": "뉴햄프셔에는 학습 허가증이 없습니다. 18세 미만 신청자는 승인된 운전 교육 과정을 이수하고 보호자 동반 운전 40시간(야간 10시간 포함)을 기록해야 합니다."
  },
  {
   "type": "State-Specific",
@@ -18372,14 +18372,14 @@
   "state": "NH",
   "questionId": "NH-033",
   "category": "stateUnique",
-  "question": "뉴햄프셔에서 정차한 스쿨버스로부터의 최소 안전 거리는 얼마입니까?",
-  "optionA": "최소 10피트",
+  "question": "뉴햄프셔에서 적색 경고등이 깜박이는 정차한 스쿨버스로부터 얼마나 떨어져 멈춰야 합니까?",
+  "optionA": "최소 25피트",
   "optionB": "최소 15피트",
   "optionC": "최소 20피트",
-  "optionD": "최소 25피트",
+  "optionD": "최소 10피트",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "운전자는 정차한 스쿨버스로부터 최소 10피트의 거리를 유지해야 합니다."
+  "explanation": "적색 경고등이 깜박이는 스쿨버스로부터 최소 25피트 떨어져 멈추고 경고등이 꺼지거나 버스가 움직일 때까지 기다려야 합니다."
  },
  {
   "type": "State-Specific",
@@ -18456,14 +18456,14 @@
   "state": "NH",
   "questionId": "NH-039",
   "category": "stateUnique",
-  "question": "2025년부터 뉴햄프셔에서 적색 신호에 적용되는 자전거 이용자 새 규칙은 무엇입니까?",
-  "optionA": "녹색 신호를 기다려야 함",
-  "optionB": "우회전만 허용됩니다",
-  "optionC": "적색을 양보 표지판으로 취급할 수 있음",
-  "optionD": "2분 후에 진행할 수 있음",
+  "question": "뉴햄프셔에서 자전거 이용자는 적색 신호에서 무엇을 해야 합니까?",
+  "optionA": "양보 표지판처럼 취급",
+  "optionB": "멈추지 않고 우회전",
+  "optionC": "자동차처럼 멈추고 신호를 따름",
+  "optionD": "2분 기다린 후 진행",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "2025년부터 자전거 이용자는 적색 신호를 양보 표지판으로 취급할 수 있습니다."
+  "explanation": "자전거 이용자는 다른 차량과 마찬가지로 신호를 지켜야 하며 적색 신호에서는 멈춰야 합니다. 적색 신호를 양보 표지판처럼 취급하게 하는 2025년 법안은 통과되지 않았습니다."
  },
  {
   "type": "State-Specific",
@@ -18893,11 +18893,11 @@
   "question": "뉴저지에서 누가 안전벨트를 착용해야 합니까?",
   "optionA": "운전자만",
   "optionB": "운전자와 앞좌석 승객만",
-  "optionC": "앞좌석 탑승자 전원과 18세 미만 승객 전원",
+  "optionC": "앞뒤 좌석의 모든 탑승자",
   "optionD": "21세 미만 승객만",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "앞좌석 탑승자 전원과 좌석 위치와 상관없이 18세 미만 승객 전원은 안전벨트를 착용해야 합니다."
+  "explanation": "뉴저지는 앞좌석과 뒷좌석의 모든 탑승자에게 안전벨트 착용을 요구합니다. 앞좌석 위반은 단독으로 단속될 수 있고, 뒷좌석 성인 규정은 다른 위반으로 정차된 경우에만 단속됩니다."
  },
  {
   "type": "State-Specific",
@@ -20066,14 +20066,14 @@
   "state": "NV",
   "questionId": "NV-034",
   "category": "stateUnique",
-  "question": "네바다의 Move-Over Law에는 이제 어떤 차량이 포함됩니까?",
-  "optionA": "지금 출동 중인 경찰차만 여기 해당",
-  "optionB": "긴급 차량, 파란색 등을 켠 견인차",
-  "optionC": "지금 현장에 출동 중인 소방차만 여기 해당",
-  "optionD": "지금 출동 중인 구급차만 여기 해당",
+  "question": "네바다의 Move-Over Law는 어떤 차량에 적용됩니까?",
+  "optionA": "경찰차만",
+  "optionB": "긴급 차량, 견인차, NDOT, 공공시설 차량",
+  "optionC": "소방차만",
+  "optionD": "구급차만",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Move-Over Law는 긴급 차량과 파란색 등을 켠 견인차에 적용됩니다."
+  "explanation": "이 법은 정차한 긴급 차량, 황색 또는 파란색 등을 켠 견인차, NDOT 차량, 경고등을 켠 공공시설 차량에 적용됩니다."
  },
  {
   "type": "State-Specific",
@@ -20150,14 +20150,14 @@
   "state": "NV",
   "questionId": "NV-040",
   "category": "stateUnique",
-  "question": "네바다에서 견인차는 긴급 상태를 나타내기 위해 무슨 색 등을 사용합니까?",
-  "optionA": "황색등",
+  "question": "네바다에서 견인차는 교통 위험 현장에서 어떤 경고등을 깜박일 수 있습니까?",
+  "optionA": "녹색등",
   "optionB": "적색등",
   "optionC": "백색등",
-  "optionD": "파란색 등",
+  "optionD": "황색등",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "견인차는 긴급 상태를 나타내기 위해 파란색 등을 사용합니다."
+  "explanation": "교통 위험 현장의 견인차는 황색 경고등을 깜박일 수 있습니다. 뒤쪽으로는 깜박이지 않는 파란색 등을 켤 수도 있습니다."
  },
  {
   "type": "State-Specific",
@@ -20934,14 +20934,14 @@
   "state": "OH",
   "questionId": "OH-016",
   "category": "cellPhone",
-  "question": "오하이오에서 적색 신호에 휴대폰을 사용할 수 있습니까?",
-  "optionA": "예, 차량이 완전히 멈췄을 때",
-  "optionB": "예, 내비게이션 목적으로만",
-  "optionC": "지금은 응급 통화만",
-  "optionD": "아니요, 응급 상황이나 도로 폐쇄를 제외하고",
+  "question": "오하이오에서 만 18세 이상 운전자는 적색 신호에 정차한 동안 휴대폰을 손에 들 수 있습니까?",
+  "optionA": "내비게이션 앱만 가능",
+  "optionB": "응급 통화만 가능",
+  "optionC": "아니요, 도로 밖에 주차한 후에만",
+  "optionD": "예, 적색 신호에 정차한 동안",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "적색 신호에서 휴대폰 사용은 응급 상황이나 도로 폐쇄 상황을 제외하고 허용되지 않습니다."
+  "explanation": "오하이오의 주의 분산 운전법은 만 18세 이상 운전자가 적색 신호에 정차한 동안 휴대폰을 사용하는 것을 허용합니다. 18세 미만 운전자는 응급 상황을 제외하고 휴대폰을 전혀 사용할 수 없습니다."
  },
  {
   "type": "State-Specific",
@@ -21200,14 +21200,14 @@
   "state": "OH",
   "questionId": "OH-035",
   "category": "stateUnique",
-  "question": "오하이오 도시 고속도로의 제한속도는 별도 표지가 없으면 얼마입니까?",
-  "optionA": "55mph",
+  "question": "오하이오 교외 고속도로(rural freeway)의 제한속도는 별도 표지가 없으면 얼마입니까?",
+  "optionA": "70mph",
   "optionB": "60mph",
   "optionC": "65mph",
-  "optionD": "50mph",
+  "optionD": "55mph",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "도시 고속도로의 제한속도는 별도 표지가 없는 한 55mph입니다."
+  "explanation": "오하이오 교외 고속도로의 제한속도는 다른 제한속도가 표시되지 않는 한 70mph입니다."
  },
  {
   "type": "State-Specific",
@@ -21704,14 +21704,14 @@
   "state": "OK",
   "questionId": "OK-031",
   "category": "stateUnique",
-  "question": "오클라호마에서 운전 중 전조등은 언제 켜야 합니까?",
-  "optionA": "밤에만",
-  "optionB": "비가 올 때만",
-  "optionC": "와이퍼를 켤 때",
-  "optionD": "안개일 때만",
+  "question": "오클라호마에서 야간 외에 언제 전조등을 켜야 합니까?",
+  "optionA": "눈이 올 때만",
+  "optionB": "폭우가 올 때만",
+  "optionC": "앞쪽 1,000피트가 잘 안 보일 때",
+  "optionD": "짙은 안개일 때만",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "앞유리 와이퍼를 사용할 때마다 전조등을 켜야 합니다."
+  "explanation": "전조등은 일몰 30분 후부터 일출 30분 전까지, 그리고 1,000피트 거리에서 사람과 차량이 뚜렷이 보이지 않을 때 언제든 켜야 합니다."
  },
  {
   "type": "State-Specific",
@@ -21889,11 +21889,11 @@
   "question": "오리건에서 조건부 면허를 받으려면 어떤 보호자 동반 운전 연습이 필요합니까?",
   "optionA": "연습 30시간",
   "optionB": "도로주행 시험만 필요합니다",
-  "optionC": "총 연습 100시간",
-  "optionD": "보호자 동반 운전 50시간 또는 운전 교육 과정 이수",
+  "optionC": "운전 교육 없이 50시간",
+  "optionD": "100시간, 또는 운전 교육 시 50시간",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "오리건은 조건부 면허를 받기 전에 (야간 10시간을 포함한) 50시간의 보호자 동반 연습 또는 운전 교육 과정 중 하나를 요구합니다."
+  "explanation": "오리건은 조건부 면허 전에 보호자 동반 운전 100시간을 요구하며, 승인된 운전 교육 과정을 이수하면 50시간입니다."
  },
  {
   "type": "State-Specific",
@@ -22614,14 +22614,14 @@
   "state": "PA",
   "questionId": "PA-016",
   "category": "cellPhone",
-  "question": "펜실베이니아에서 주니어 면허를 가진 18세 미만 운전자에게 금지된 휴대폰 사용은 무엇입니까?",
+  "question": "펜실베이니아에서 주니어 면허 운전자에게 금지된 휴대폰 사용은 무엇입니까?",
   "optionA": "손에 들고 하는 통화만",
   "optionB": "문자만",
   "optionC": "영상 촬영만",
-  "optionD": "모든 휴대전화 사용",
+  "optionD": "모든 운전자처럼 손에 들고 사용",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "주니어 면허를 가진 18세 미만 운전자는 운전 중 모든 휴대전화 사용이 금지됩니다."
+  "explanation": "펜실베이니아에는 주니어 운전자만을 위한 별도 휴대폰 규정이 없습니다. Paul Miller's Law는 모든 운전자가 운전 중 휴대폰을 손에 들거나 사용하는 것을 금지하며, 핸즈프리 사용은 허용됩니다."
  },
  {
   "type": "State-Specific",
@@ -22810,14 +22810,14 @@
   "state": "PA",
   "questionId": "PA-030",
   "category": "stateUnique",
-  "question": "펜실베이니아 공사 구역에서 벌금이 두 배가 되는 처벌은 무엇입니까?",
-  "optionA": "작업자가 있을 때만 벌금이 두 배",
-  "optionB": "운영 중인 구역에서는 언제든 벌금이 두 배",
-  "optionC": "주간 시간대에만 벌금이 두 배",
-  "optionD": "주간고속도로에서만 벌금이 두 배",
+  "question": "펜실베이니아 공사 구역에서 교통 벌금은 언제 두 배가 됩니까?",
+  "optionA": "작업자가 없어도 모든 공사 구역에서",
+  "optionB": "작업자가 있는 표시된 운영 구역에서",
+  "optionC": "주간 시간대에만",
+  "optionD": "주간고속도로에서만",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "작업자가 있든 없든 운영 중인 공사 구역 안에서는 언제든 교통 위반 벌금이 두 배가 됩니다."
+  "explanation": "작업자가 있을 때만 켜지는 점멸등으로 표시된 운영 중인 공사 구역에서 벌금이 두 배가 됩니다."
  },
  {
   "type": "State-Specific",
@@ -22954,10 +22954,10 @@
   "optionA": "상향등만 사용",
   "optionB": "항상 안개등 사용",
   "optionC": "비상등도 사용",
-  "optionD": "차량 500피트 이내에서 하향",
+  "optionD": "마주 오는 차 500피트 이내에서 하향",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "전조등을 사용할 때 운전자는 마주 오거나 앞선 차량 500피트 이내에서 하향해야 합니다."
+  "explanation": "마주 오는 차량 500피트 이내, 뒤따라가는 앞 차량 300피트 이내에서는 하향등으로 바꿔야 합니다."
  },
  {
   "type": "State-Specific",

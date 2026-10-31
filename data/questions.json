@@ -16384,14 +16384,14 @@
     "state": "NC",
     "questionId": "NC-011",
     "category": "gdlLicensing",
-    "question": "How many practice hours are required to advance from Level 2 to Level 3 in North Carolina?",
-    "optionA": "30 total hours",
-    "optionB": "50 total hours",
-    "optionC": "12 hrs, 6 night",
-    "optionD": "60 total hours",
+    "question": "What is required to move from Level 2 to Level 3 in North Carolina?",
+    "optionA": "12 more logged practice hours",
+    "optionB": "A second road test at the DMV",
+    "optionC": "6 months on Level 2, clean record",
+    "optionD": "Turning 17 and a new vision test",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Advancing from Level 2 to Level 3 requires 12 supervised practice hours, at least 6 of which must be at night."
+    "explanation": "You need at least 6 months on your Level 2 license and no moving violation, seat belt or phone conviction in the last 6 months. The old 12-hour driving log was repealed in 2025."
   },
   {
     "type": "State-Specific",
@@ -16469,13 +16469,13 @@
     "questionId": "NC-017",
     "category": "cellPhone",
     "question": "Who can drivers under 18 contact by phone during emergencies in North Carolina?",
-    "optionA": "Parents or guardians",
-    "optionB": "Anyone for emergencies",
+    "optionA": "Parent, guardian, spouse or 911",
+    "optionB": "Any friend or family member",
     "optionC": "Only 911 calls",
     "optionD": "No calls permitted",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Drivers under 18 may only use a phone in emergencies to contact a parent or guardian."
+    "explanation": "A driver under 18 may use a phone only to call a parent, legal guardian or spouse, or emergency services such as 911, police, fire or a hospital."
   },
   {
     "type": "State-Specific",
@@ -17451,11 +17451,11 @@
     "question": "When can a Provisional Operator's Permit holder obtain an unrestricted license in Nebraska?",
     "optionA": "Age 16 with driver education course",
     "optionB": "Immediately upon reaching age 18",
-    "optionC": "Age 17 with 6 months violation-free",
+    "optionC": "Age 17, POP held 12 months, few points",
     "optionD": "Age 19 regardless of any violations",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A Provisional Operator's Permit holder can obtain an unrestricted license at age 17 after 6 violation-free months."
+    "explanation": "A POP holder can get a Class O license at 17 after holding the POP for 12 months with fewer than 3 points in the past 12 months."
   },
   {
     "type": "State-Specific",
@@ -18064,14 +18064,14 @@
     "state": "NH",
     "questionId": "NH-011",
     "category": "gdlLicensing",
-    "question": "What documentation must drivers under 19 provide when applying for a permit in New Hampshire?",
-    "optionA": "Birth certificate document only",
-    "optionB": "Employment verification document",
-    "optionC": "School enrollment or graduation proof",
-    "optionD": "Parental consent form document",
+    "question": "What must drivers under 18 complete before getting a license in New Hampshire?",
+    "optionA": "A six-month learner's permit",
+    "optionB": "A proof of employment form",
+    "optionC": "Driver ed plus 40 supervised hours",
+    "optionD": "20 logged hours, no driver ed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Drivers under 19 must provide proof of school enrollment or graduation when applying for a permit."
+    "explanation": "New Hampshire has no learner's permit. Applicants under 18 must pass an approved driver education course and log 40 hours of supervised driving, 10 of them at night."
   },
   {
     "type": "State-Specific",
@@ -18372,14 +18372,14 @@
     "state": "NH",
     "questionId": "NH-033",
     "category": "stateUnique",
-    "question": "What is the minimum safe distance from a stopped school bus in New Hampshire?",
-    "optionA": "At least 10 feet",
+    "question": "How far from a stopped school bus with flashing red lights must you stop in New Hampshire?",
+    "optionA": "At least 25 feet",
     "optionB": "At least 15 feet",
     "optionC": "At least 20 feet",
-    "optionD": "At least 25 feet",
+    "optionD": "At least 10 feet",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Drivers must maintain a minimum distance of at least 10 feet from a stopped school bus."
+    "explanation": "You must stop at least 25 feet from a school bus with flashing red lights and stay stopped until the lights go off or the bus moves."
   },
   {
     "type": "State-Specific",
@@ -18456,14 +18456,14 @@
     "state": "NH",
     "questionId": "NH-039",
     "category": "stateUnique",
-    "question": "What new rule applies to bicyclists at red lights in New Hampshire as of 2025?",
-    "optionA": "Must wait for green light",
-    "optionB": "Can turn right only allowed",
-    "optionC": "May treat red as yield sign",
-    "optionD": "May proceed after 2 minutes",
+    "question": "What must a bicyclist do at a steady red light in New Hampshire?",
+    "optionA": "Treat it like a yield sign",
+    "optionB": "Turn right without stopping",
+    "optionC": "Stop and obey it like a car",
+    "optionD": "Go after waiting 2 minutes",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "As of 2025, bicyclists may treat a red light as a yield sign."
+    "explanation": "Bicyclists must obey traffic signals like any other vehicle and stop at a red light. A 2025 bill to let cyclists treat red lights as yield signs did not pass."
   },
   {
     "type": "State-Specific",
@@ -18893,11 +18893,11 @@
     "question": "Who is required to wear a seat belt in New Jersey?",
     "optionA": "Only the driver",
     "optionB": "Driver and front seat passengers only",
-    "optionC": "All front seat occupants and all passengers under 18",
+    "optionC": "Every occupant, front and back",
     "optionD": "Only passengers under 21",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "All front seat occupants and all passengers under 18 in any seating position are required to wear a seat belt."
+    "explanation": "New Jersey requires every occupant to buckle up, front and back. Police can stop you for a front-seat violation; the adult rear-seat rule is enforced only after a stop for another violation."
   },
   {
     "type": "State-Specific",
@@ -20066,14 +20066,14 @@
     "state": "NV",
     "questionId": "NV-034",
     "category": "stateUnique",
-    "question": "Which vehicles are now included in Nevada's Move-Over Law?",
-    "optionA": "Only police cars on duty responding now here",
-    "optionB": "Emergency vehicles, tow trucks with blue lights",
-    "optionC": "Fire trucks only on scene responding now here",
-    "optionD": "Ambulances only on duty responding now here",
+    "question": "Which vehicles does Nevada's Move-Over Law cover?",
+    "optionA": "Only police cars",
+    "optionB": "Emergency, tow, NDOT and utility",
+    "optionC": "Only fire trucks",
+    "optionD": "Only ambulances",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The Move-Over Law covers emergency vehicles and tow trucks displaying blue lights."
+    "explanation": "The law covers stopped emergency vehicles, tow trucks with amber or blue lights, NDOT vehicles and public utility vehicles using warning lights."
   },
   {
     "type": "State-Specific",
@@ -20150,14 +20150,14 @@
     "state": "NV",
     "questionId": "NV-040",
     "category": "stateUnique",
-    "question": "What color lights do tow trucks use in Nevada to indicate emergency status?",
-    "optionA": "Amber lights",
+    "question": "What warning lights may a Nevada tow truck flash at a traffic hazard?",
+    "optionA": "Green lights",
     "optionB": "Red lights",
     "optionC": "White lights",
-    "optionD": "Blue lights",
+    "optionD": "Amber lights",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Tow trucks use blue lights to indicate emergency status."
+    "explanation": "A tow truck at a traffic hazard may flash amber warning lights. It may also show a steady, nonflashing blue light to the rear."
   },
   {
     "type": "State-Specific",
@@ -20934,14 +20934,14 @@
     "state": "OH",
     "questionId": "OH-016",
     "category": "cellPhone",
-    "question": "Can you use your phone at a red light in Ohio?",
-    "optionA": "Yes, when vehicle fully stopped",
-    "optionB": "Yes, for navigation purposes only",
-    "optionC": "Only to make emergency calls now",
-    "optionD": "No, except emergency or road closure",
+    "question": "Can a driver 18 or older hold a phone while stopped at a red light in Ohio?",
+    "optionA": "Only for navigation apps",
+    "optionB": "Only to make emergency calls",
+    "optionC": "No, only once parked off the road",
+    "optionD": "Yes, while stopped at the red light",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Phone use at a red light is not permitted except in an emergency or road closure situation."
+    "explanation": "Ohio's distracted driving law lets drivers 18 and older use a phone while stopped at a traffic signal showing red. Drivers under 18 may not use a phone at all except for emergencies."
   },
   {
     "type": "State-Specific",
@@ -21200,14 +21200,14 @@
     "state": "OH",
     "questionId": "OH-035",
     "category": "stateUnique",
-    "question": "What is the speed limit on Ohio's urban freeways unless otherwise posted?",
-    "optionA": "55 mph",
+    "question": "What is the speed limit on Ohio's rural freeways unless otherwise posted?",
+    "optionA": "70 mph",
     "optionB": "60 mph",
     "optionC": "65 mph",
-    "optionD": "50 mph",
+    "optionD": "55 mph",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The speed limit on urban freeways is 55 mph unless otherwise posted."
+    "explanation": "Ohio's speed limit on rural freeways is 70 mph unless a different limit is posted."
   },
   {
     "type": "State-Specific",
@@ -21704,14 +21704,14 @@
     "state": "OK",
     "questionId": "OK-031",
     "category": "stateUnique",
-    "question": "When must you turn on headlights while driving in Oklahoma?",
-    "optionA": "Only at night",
-    "optionB": "During rain only",
-    "optionC": "When wipers on",
-    "optionD": "Only in fog",
+    "question": "Besides nighttime, when must you use headlights in Oklahoma?",
+    "optionA": "Only when it is snowing",
+    "optionB": "Only during heavy rain",
+    "optionC": "When you can't see 1,000 ft ahead",
+    "optionD": "Only in thick fog",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Headlights must be turned on whenever the windshield wipers are in use."
+    "explanation": "Headlights are required from half an hour after sunset to half an hour before sunrise, and any time people and vehicles are not clearly visible at 1,000 feet."
   },
   {
     "type": "State-Specific",
@@ -21889,11 +21889,11 @@
     "question": "What supervised driving practice is required to obtain a provisional license in Oregon?",
     "optionA": "30 hours of practice",
     "optionB": "Only a road test is required",
-    "optionC": "100 hours total practice",
-    "optionD": "50 hours of supervised driving or completion of a driver education course",
+    "optionC": "50 hours, no driver ed needed",
+    "optionD": "100 hours, or 50 with driver ed",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Oregon requires either 50 hours of supervised practice (including 10 hours at night) or a driver education course before earning a provisional license."
+    "explanation": "Oregon requires 100 hours of supervised driving before a provisional license, or 50 hours if you pass an approved driver education course."
   },
   {
     "type": "State-Specific",
@@ -22614,14 +22614,14 @@
     "state": "PA",
     "questionId": "PA-016",
     "category": "cellPhone",
-    "question": "What phone use is prohibited for drivers under 18 with a junior license in Pennsylvania?",
+    "question": "What phone use is banned for junior license drivers in Pennsylvania?",
     "optionA": "Handheld calls only",
     "optionB": "Text messaging only",
     "optionC": "Video recording only",
-    "optionD": "All mobile phone use",
+    "optionD": "Handheld use, as for all drivers",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Drivers under 18 with a junior license are prohibited from all mobile phone use while driving."
+    "explanation": "Pennsylvania has no separate phone rule for junior drivers. Paul Miller's Law bans every driver from holding or using a handheld phone while driving; hands-free use is allowed."
   },
   {
     "type": "State-Specific",
@@ -22810,14 +22810,14 @@
     "state": "PA",
     "questionId": "PA-030",
     "category": "stateUnique",
-    "question": "What are the penalties for fines doubled in Pennsylvania work zones?",
-    "optionA": "Fines doubled only when workers are present",
-    "optionB": "Fines doubled anytime in active zone",
-    "optionC": "Fines doubled only during daytime hours",
-    "optionD": "Fines doubled only on interstate highways",
+    "question": "When are traffic fines doubled in Pennsylvania work zones?",
+    "optionA": "In any work zone, even with no workers",
+    "optionB": "In posted active zones with workers",
+    "optionC": "Only during daytime hours",
+    "optionD": "Only on interstate highways",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Fines for traffic violations are doubled anytime within an active work zone, regardless of whether workers are present."
+    "explanation": "Fines double in a posted active work zone, marked by a flashing light that is on only while workers are present."
   },
   {
     "type": "State-Specific",
@@ -22954,10 +22954,10 @@
     "optionA": "Use high beams only",
     "optionB": "Use fog lights at all times",
     "optionC": "Use hazard lights too",
-    "optionD": "Dim within 500 ft of traffic",
+    "optionD": "Dim within 500 ft of oncoming cars",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "When headlights are in use, drivers must dim them within 500 feet of oncoming or preceding traffic."
+    "explanation": "Switch to low beams within 500 feet of an oncoming vehicle and within 300 feet of a vehicle you are following."
   },
   {
     "type": "State-Specific",

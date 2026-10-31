@@ -16944,14 +16944,14 @@
     "state": "NC",
     "questionId": "NC-011",
     "category": "gdlLicensing",
-    "question": "¿Cuántas horas de práctica se requieren para avanzar del Nivel 2 al Nivel 3 en North Carolina?",
-    "optionA": "30 horas totales",
-    "optionB": "50 horas totales",
-    "optionC": "12 hrs, 6 nocturnas",
-    "optionD": "60 horas totales",
+    "question": "¿Qué se requiere para pasar del Nivel 2 al Nivel 3 en North Carolina?",
+    "optionA": "12 horas más de práctica registradas",
+    "optionB": "Un segundo examen de manejo en el DMV",
+    "optionC": "6 meses en Nivel 2, historial limpio",
+    "optionD": "Cumplir 17 años y un nuevo examen de la vista",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Avanzar del Nivel 2 al Nivel 3 requiere 12 horas de práctica supervisada, de las cuales al menos 6 deben ser de noche."
+    "explanation": "Usted necesita al menos 6 meses con su licencia de Nivel 2 y ninguna condena por infracción de tránsito, cinturón de seguridad o teléfono en los últimos 6 meses. El antiguo registro de 12 horas de manejo se eliminó en 2025."
   },
   {
     "type": "State-Specific",
@@ -17029,13 +17029,13 @@
     "questionId": "NC-017",
     "category": "cellPhone",
     "question": "¿A quién pueden contactar por teléfono los conductores menores de 18 años durante emergencias en North Carolina?",
-    "optionA": "Padres o tutores",
-    "optionB": "Cualquiera para emergencias",
+    "optionA": "Padre, tutor, cónyuge o 911",
+    "optionB": "Cualquier amigo o familiar",
     "optionC": "Solo llamadas al 911",
     "optionD": "No se permiten llamadas",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los conductores menores de 18 años solo pueden usar un teléfono en emergencias para contactar a un padre o tutor."
+    "explanation": "Un conductor menor de 18 años solo puede usar el teléfono para llamar a un padre, tutor legal o cónyuge, o a servicios de emergencia como el 911, la policía, los bomberos o un hospital."
   },
   {
     "type": "State-Specific",
@@ -18011,11 +18011,11 @@
     "question": "¿Cuándo puede un titular de Permiso Provisional de Operador obtener una licencia sin restricciones en Nebraska?",
     "optionA": "16 años con curso de educación vial",
     "optionB": "Inmediatamente al cumplir 18 años",
-    "optionC": "17 años con 6 meses sin violaciones",
+    "optionC": "17 años, POP por 12 meses, pocos puntos",
     "optionD": "19 años sin importar las violaciones",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Un titular de Permiso Provisional de Operador puede obtener una licencia sin restricciones a los 17 años después de 6 meses sin infracciones."
+    "explanation": "Un titular de POP puede obtener una licencia Clase O a los 17 años después de tener el POP por 12 meses con menos de 3 puntos en los últimos 12 meses."
   },
   {
     "type": "State-Specific",
@@ -18624,14 +18624,14 @@
     "state": "NH",
     "questionId": "NH-011",
     "category": "gdlLicensing",
-    "question": "¿Qué documentación deben proporcionar los conductores menores de 19 años al solicitar un permiso en New Hampshire?",
-    "optionA": "Solo documento de acta de nacimiento",
-    "optionB": "Documento de verificación de empleo",
-    "optionC": "Prueba de inscripción escolar o graduación",
-    "optionD": "Documento de formulario de consentimiento parental",
+    "question": "¿Qué deben completar los conductores menores de 18 años antes de obtener una licencia en New Hampshire?",
+    "optionA": "Un permiso de aprendizaje de seis meses",
+    "optionB": "Un formulario de prueba de empleo",
+    "optionC": "Educación vial y 40 horas supervisadas",
+    "optionD": "20 horas registradas, sin educación vial",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los conductores menores de 19 años deben proporcionar prueba de inscripción escolar o graduación al solicitar un permiso."
+    "explanation": "New Hampshire no tiene permiso de aprendizaje. Los solicitantes menores de 18 años deben aprobar un curso de educación vial aprobado y registrar 40 horas de manejo supervisado, 10 de ellas de noche."
   },
   {
     "type": "State-Specific",
@@ -18932,14 +18932,14 @@
     "state": "NH",
     "questionId": "NH-033",
     "category": "stateUnique",
-    "question": "¿Cuál es la distancia mínima segura de un autobús escolar detenido en New Hampshire?",
-    "optionA": "Al menos 10 feet",
+    "question": "¿A qué distancia de un autobús escolar detenido con luces rojas intermitentes debe detenerse en New Hampshire?",
+    "optionA": "Al menos 25 feet",
     "optionB": "Al menos 15 feet",
     "optionC": "Al menos 20 feet",
-    "optionD": "Al menos 25 feet",
+    "optionD": "Al menos 10 feet",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los conductores deben mantener una distancia mínima de al menos 10 pies de un autobús escolar detenido."
+    "explanation": "Usted debe detenerse al menos a 25 pies de un autobús escolar con luces rojas intermitentes y permanecer detenido hasta que se apaguen las luces o el autobús avance."
   },
   {
     "type": "State-Specific",
@@ -19016,14 +19016,14 @@
     "state": "NH",
     "questionId": "NH-039",
     "category": "stateUnique",
-    "question": "¿Qué nueva regla se aplica a los ciclistas en luces rojas en New Hampshire a partir de 2025?",
-    "optionA": "Deben esperar la luz verde",
-    "optionB": "Solo pueden girar a la derecha permitido",
-    "optionC": "Pueden tratar la luz roja como señal de ceder el paso",
-    "optionD": "Pueden proceder después de 2 minutos",
+    "question": "¿Qué debe hacer un ciclista ante una luz roja fija en New Hampshire?",
+    "optionA": "Tratarla como señal de ceder el paso",
+    "optionB": "Girar a la derecha sin detenerse",
+    "optionC": "Detenerse y obedecerla como un auto",
+    "optionD": "Avanzar después de esperar 2 minutos",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A partir de 2025, los ciclistas pueden tratar una luz roja como una señal de ceder el paso."
+    "explanation": "Los ciclistas deben obedecer los semáforos como cualquier otro vehículo y detenerse ante la luz roja. Un proyecto de ley de 2025 para tratar la luz roja como ceder el paso no se aprobó."
   },
   {
     "type": "State-Specific",
@@ -19453,11 +19453,11 @@
     "question": "¿Quién debe usar el cinturón de seguridad en Nueva Jersey?",
     "optionA": "Sólo el conductor",
     "optionB": "Solo conductor y pasajeros del asiento delantero",
-    "optionC": "Todos los ocupantes de los asientos delanteros y todos los pasajeros menores de 18 años",
+    "optionC": "Todos los ocupantes, adelante y atrás",
     "optionD": "Sólo pasajeros menores de 21 años",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "La ley de Nueva Jersey exige que todos los ocupantes de los asientos delanteros usen cinturones de seguridad, así como todos los pasajeros menores de 18 años en cualquier posición de asiento. Los niños menores de 8 o menos de 57 pulgadas deben viajar en un sistema de retención infantil adecuado."
+    "explanation": "Nueva Jersey exige que todos los ocupantes usen el cinturón, adelante y atrás. La policía puede detenerlo por una infracción en el asiento delantero; la regla para adultos en el asiento trasero solo se aplica después de una detención por otra infracción."
   },
   {
     "type": "State-Specific",
@@ -20626,14 +20626,14 @@
     "state": "NV",
     "questionId": "NV-034",
     "category": "stateUnique",
-    "question": "¿Qué vehículos están ahora incluidos en la Ley de Moverse de Nevada?",
-    "optionA": "Solo patrullas policiales de servicio respondiendo ahora aquí",
-    "optionB": "Vehículos de emergencia, grúas con luces azules",
-    "optionC": "Solo camiones de bomberos en la escena respondiendo ahora aquí",
-    "optionD": "Solo ambulancias de servicio respondiendo ahora aquí",
+    "question": "¿Qué vehículos cubre la Ley de Moverse de Nevada?",
+    "optionA": "Solo patrullas de policía",
+    "optionB": "Emergencia, grúas, NDOT y servicios públicos",
+    "optionC": "Solo camiones de bomberos",
+    "optionD": "Solo ambulancias",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La Ley de Moverse cubre vehículos de emergencia y grúas que muestren luces azules."
+    "explanation": "La ley cubre vehículos de emergencia detenidos, grúas con luces ámbar o azules, vehículos de NDOT y vehículos de servicios públicos que usen luces de advertencia."
   },
   {
     "type": "State-Specific",
@@ -20710,14 +20710,14 @@
     "state": "NV",
     "questionId": "NV-040",
     "category": "stateUnique",
-    "question": "¿Qué color de luces usan las grúas en Nevada para indicar estado de emergencia?",
-    "optionA": "Luces ámbar",
+    "question": "¿Qué luces de advertencia puede encender intermitentemente una grúa en Nevada ante un peligro en la vía?",
+    "optionA": "Luces verdes",
     "optionB": "Luces rojas",
     "optionC": "Luces blancas",
-    "optionD": "Luces azules",
+    "optionD": "Luces ámbar",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Las grúas usan luces azules para indicar estado de emergencia."
+    "explanation": "Una grúa ante un peligro en la vía puede usar luces de advertencia ámbar intermitentes. También puede mostrar una luz azul fija, no intermitente, hacia atrás."
   },
   {
     "type": "State-Specific",
@@ -21494,14 +21494,14 @@
     "state": "OH",
     "questionId": "OH-016",
     "category": "cellPhone",
-    "question": "¿Puede usar su teléfono en un semáforo en rojo en Ohio?",
-    "optionA": "Sí, cuando el vehículo esté completamente detenido",
-    "optionB": "Sí, solo para propósitos de navegación",
-    "optionC": "Solo para hacer llamadas de emergencia ahora",
-    "optionD": "No, excepto emergencia o cierre de carretera",
+    "question": "¿Puede un conductor de 18 años o más sostener el teléfono mientras está detenido en un semáforo en rojo en Ohio?",
+    "optionA": "Solo para aplicaciones de navegación",
+    "optionB": "Solo para llamadas de emergencia",
+    "optionC": "No, solo al estacionarse fuera de la vía",
+    "optionD": "Sí, mientras está detenido en rojo",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El uso del teléfono en un semáforo en rojo no está permitido, excepto en una emergencia o en una situación de cierre de carretera."
+    "explanation": "La ley de conducción distraída de Ohio permite a los conductores de 18 años o más usar el teléfono mientras están detenidos en un semáforo en rojo. Los menores de 18 años no pueden usar el teléfono en absoluto, salvo emergencias."
   },
   {
     "type": "State-Specific",
@@ -21760,14 +21760,14 @@
     "state": "OH",
     "questionId": "OH-035",
     "category": "stateUnique",
-    "question": "¿Cuál es el límite de velocidad en las autopistas urbanas de Ohio a menos que se indique lo contrario?",
-    "optionA": "55 mph",
+    "question": "¿Cuál es el límite de velocidad en las autopistas rurales de Ohio a menos que se indique lo contrario?",
+    "optionA": "70 mph",
     "optionB": "60 mph",
     "optionC": "65 mph",
-    "optionD": "50 mph",
+    "optionD": "55 mph",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "El límite de velocidad predeterminado en las autopistas urbanas de Ohio es de 55 mph a menos que se indique lo contrario."
+    "explanation": "El límite de velocidad en las autopistas rurales de Ohio es de 70 mph a menos que se indique otro límite."
   },
   {
     "type": "State-Specific",
@@ -22264,14 +22264,14 @@
     "state": "OK",
     "questionId": "OK-031",
     "category": "stateUnique",
-    "question": "¿Cuándo debe encender las luces delanteras mientras conduce en Oklahoma?",
-    "optionA": "Solo de noche",
-    "optionB": "Solo durante la lluvia",
-    "optionC": "Cuando los limpiaparabrisas están encendidos",
-    "optionD": "Solo en niebla",
+    "question": "Además de la noche, ¿cuándo debe usar las luces delanteras en Oklahoma?",
+    "optionA": "Solo cuando nieva",
+    "optionB": "Solo con lluvia intensa",
+    "optionC": "Cuando no ve a 1,000 pies adelante",
+    "optionD": "Solo con niebla espesa",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las luces delanteras deben encenderse siempre que se usen los limpiaparabrisas."
+    "explanation": "Las luces delanteras son obligatorias desde media hora después de la puesta del sol hasta media hora antes del amanecer, y siempre que las personas y los vehículos no se vean claramente a 1,000 pies."
   },
   {
     "type": "State-Specific",
@@ -22449,11 +22449,11 @@
     "question": "¿Qué práctica de manejo supervisada se requiere para obtener una licencia provisional en Oregon?",
     "optionA": "30 horas de tiempo de práctica",
     "optionB": "Solo se requiere un examen de manejo",
-    "optionC": "100 horas de práctica total",
-    "optionD": "50 hrs o curso de educación vial",
+    "optionC": "50 horas, sin educación vial",
+    "optionD": "100 horas, o 50 con educación vial",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Oregon requiere 50 horas de práctica supervisada (incluyendo 10 horas de noche) o un curso de educación vial antes de obtener una licencia provisional."
+    "explanation": "Oregon requiere 100 horas de manejo supervisado antes de la licencia provisional, o 50 horas si usted aprueba un curso de educación vial aprobado."
   },
   {
     "type": "State-Specific",
@@ -23174,14 +23174,14 @@
     "state": "PA",
     "questionId": "PA-016",
     "category": "cellPhone",
-    "question": "¿Qué uso del teléfono está prohibido para conductores menores de 18 años con licencia juvenil en Pennsylvania?",
+    "question": "¿Qué uso del teléfono está prohibido para conductores con licencia juvenil en Pennsylvania?",
     "optionA": "Solo llamadas con el teléfono en la mano",
     "optionB": "Solo enviar mensajes de texto",
     "optionC": "Solo grabación de video",
-    "optionD": "Todo uso del teléfono móvil",
+    "optionD": "Uso en la mano, igual que todos",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los conductores menores de 18 años con licencia juvenil tienen prohibido todo uso del teléfono móvil mientras conducen."
+    "explanation": "Pennsylvania no tiene una regla telefónica aparte para conductores juveniles. La Ley Paul Miller prohíbe a todo conductor sostener o usar un teléfono en la mano mientras conduce; el uso de manos libres está permitido."
   },
   {
     "type": "State-Specific",
@@ -23370,14 +23370,14 @@
     "state": "PA",
     "questionId": "PA-030",
     "category": "stateUnique",
-    "question": "¿Cuáles son las sanciones por multas duplicadas en las zonas de trabajo de Pensilvania?",
-    "optionA": "Sólo cuando los trabajadores son visibles",
-    "optionB": "Las multas se duplicaron en cualquier momento en la zona activa",
-    "optionC": "Sólo durante el día",
-    "optionD": "Sólo en autopistas interestatales",
+    "question": "¿Cuándo se duplican las multas de tránsito en las zonas de trabajo de Pennsylvania?",
+    "optionA": "En cualquier zona, aun sin trabajadores",
+    "optionB": "En zonas activas señalizadas con trabajadores",
+    "optionC": "Solo durante el día",
+    "optionD": "Solo en autopistas interestatales",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Según la ley de Pensilvania, las multas por infracciones de tránsito se duplican en las zonas de trabajo activas, independientemente de si los trabajadores están presentes en ese momento. Los conductores deben respetar los límites de velocidad reducidos en estas áreas."
+    "explanation": "Las multas se duplican en una zona de trabajo activa señalizada, marcada con una luz intermitente que solo está encendida mientras hay trabajadores presentes."
   },
   {
     "type": "State-Specific",
@@ -23514,10 +23514,10 @@
     "optionA": "Debe usar solo luces altas",
     "optionB": "Debe usar luces antiniebla siempre",
     "optionC": "Debe usar luces de emergencia también",
-    "optionD": "Atenuar a 500 feet del tráfico",
+    "optionD": "Atenuar a 500 feet de autos de frente",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Cuando las luces delanteras están en uso, los conductores deben atenuarlas dentro de 500 pies del tráfico que viene en sentido contrario o que va adelante."
+    "explanation": "Cambie a luces bajas a menos de 500 pies de un vehículo que viene de frente y a menos de 300 pies de un vehículo que usted sigue."
   },
   {
     "type": "State-Specific",

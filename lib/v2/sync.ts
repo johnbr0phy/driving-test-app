@@ -55,7 +55,7 @@ export async function deleteV2Exam(uid: string, examId: string): Promise<void> {
   const local: V2Data = state.syncedUid && state.syncedUid !== uid ? EMPTY_V2 : state;
   const remote = await loadV2(uid);
   const merged = withoutExamV2(remote ? mergeV2(local, remote) : local, examId);
-  const { sessions, results, drills, basics, goals } = merged;
-  useV2Store.getState().replaceData({ sessions, results, drills, basics, goals }, uid);
-  await saveV2(uid, { sessions, results, drills, basics, goals });
+  const { sessions, results, drills, basics, goals, questionStats } = merged;
+  useV2Store.getState().replaceData({ sessions, results, drills, basics, goals, questionStats }, uid);
+  await saveV2(uid, { sessions, results, drills, basics, goals, questionStats });
 }

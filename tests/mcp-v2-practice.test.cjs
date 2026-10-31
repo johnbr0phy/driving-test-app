@@ -15,6 +15,17 @@ const { basicsFor, basicsKey } = require('../lib/v2/basics.ts');
 const { createSession } = require('../lib/v2/session.ts');
 const copy = (x) => x === undefined ? undefined : structuredClone(x);
 const exam = (id) => EXAMS_V2.find((e) => e.id === id);
+// No v2 exam sells Premium since the SAT and ACT went free (Oct 2026). The
+// gates still exist for a future paid exam, so these tests lend the SAT and
+// ACT their old locks for the duration of one test.
+const OLD_LOCKS = {
+  sat: { lockedTests: [2], lockedDrills: ['expression', 'geometry'], benefits: [] },
+  act: { lockedTests: [2], lockedDrills: ['language', 'modeling', 'craftIntegration', 'evaluation'], benefits: [] },
+};
+const withPremium = (fn) => async () => {
+  for (const [id, premium] of Object.entries(OLD_LOCKS)) exam(id).premium = premium;
+  try { await fn(); } finally { for (const id of Object.keys(OLD_LOCKS)) delete exam(id).premium; }
+};
 const uid = 'synthetic-only';
 
 class FakeDb {
@@ -173,10 +184,10 @@ test('full sessions hand off by default; explicit practice preserves all session
   assert.equal(writes.length, 1);
   assert.equal(db.user().mcpProgressRevisions.v2, 1);
   assert.equal(writes[0].data['mcpProgressRevisions.v2'].operand, 1);
-  assert.ok(Object.keys(writes[0].data).every((k) => k.startsWith('v2.drills.') || ['v2.updatedAt','lastUpdated','mcpProgressRevisions.v2'].includes(k) || k.startsWith('dailyQuestionCounts.')));
+  assert.ok(Object.keys(writes[0].data).every((k) => k.startsWith('v2.drills.') || k.startsWith('v2.questionStats.') || ['v2.updatedAt','lastUpdated','mcpProgressRevisions.v2'].includes(k) || k.startsWith('dailyQuestionCounts.')));
 });
 
-test('premium locks, own-progress grandfathering, Basics grandfathering and legacy carryover match the site', async () => {
+test('premium locks, own-progress grandfathering, Basics grandfathering and legacy carryover match the site', withPremium(async () => {
   const e = exam('act'); const locked = e.drills.find((d) => e.premium.lockedDrills.includes(d.key) && d.legacyKey);
   const pool = drillQuestions(getBank(e.id).questions, locked, e);
   const legacy = { [`${e.id}:${locked.legacyKey}`]: state(pool.slice(0,2).map((q) => q.id)) };
@@ -194,7 +205,7 @@ test('premium locks, own-progress grandfathering, Basics grandfathering and lega
   await respond(learned,e.id);
   assert.equal(learned.user().v2.drills[drillKey(e.id,locked.key)].masteredIds.length,3);
   assert.deepEqual(learned.user().v2.drills[`${e.id}:${locked.legacyKey}`],legacy[`${e.id}:${locked.legacyKey}`]);
-});
+}));
 
 test('pending attempt is stable, shuffled choices grade correctly and concurrent retries count once', async () => {
   const db = new FakeDb();
@@ -247,7 +258,7 @@ test('invalid answers, unknown targets and exhausted daily cap make no progress 
   assert.equal(db.user().v2,undefined);
 });
 
-test('held-out test questions never enter study drills and complete available work does not claim test completion', async () => {
+test('held-out test questions never enter study drills and complete available work does not claim test completion', withPremium(async () => {
   for(const e of EXAMS_V2) {
     const heldOut=e.tests.filter((t) => t.heldOut).map((t) => t.number);
     for(const d of e.drills) assert.ok(drillQuestions(getBank(e.id).questions,d,e).every((q) => !heldOut.includes(q.test)),`${e.id}:${d.key}`);
@@ -259,7 +270,7 @@ test('held-out test questions never enter study drills and complete available wo
   assert.equal(result.data.scope,'available_drills');
   assert.ok(result.data.lockedDrills.length>0);
   assert.match(result.data.message,/does not complete Basics lessons or full practice tests/);
-});
+}));
 
 test('every real question round-trips its canonical key through displayed-index mapping and existing grading', () => {
   const formats=new Set(); let checked=0;
@@ -300,5 +311,12 @@ test('each real complex format completes a canonical shared drill transaction, n
     assert.equal(finished.data.scope,'drill');
     assert.equal(finished.data.progress.mastered,pool.length,format);
     assert.equal(finished.data.next,null,format);
+  }
+});
+
+test('SAT and ACT are fully free: no v2 exam sells Premium and their old paid drills open', async () => {
+  assert.deepEqual(EXAMS_V2.filter((e) => e.premium).map((e) => e.id), []);
+  for (const [id, { lockedDrills }] of Object.entries(OLD_LOCKS)) {
+    for (const key of lockedDrills) assert.equal((await start(new FakeDb(), id, key)).ok, true, `${id}:${key}`);
   }
 });

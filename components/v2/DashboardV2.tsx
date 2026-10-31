@@ -8,7 +8,7 @@
 import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { BarChart3, ChevronRight, Smartphone, Monitor, Pencil, CheckCircle } from "lucide-react";
+import { BarChart3, ChevronRight, Smartphone, Monitor, Pencil, CheckCircle, Users } from "lucide-react";
 import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 import { goalFor } from "@/lib/v2/goals";
 import { getBank } from "@/lib/v2/bank";
@@ -25,6 +25,7 @@ import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
+import { useCommunityAvailable } from "@/hooks/useCommunityStats";
 import { hasDrillProgress, isDrillLocked, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
@@ -86,6 +87,8 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
   const { isPremium, ready: premiumReady } = useIsPremium();
   const paywall = useV2Paywall(exam, "dashboard");
+  // Common Mistakes card, once this exam has enough answers (lib/communityStats.ts).
+  const communityOn = useCommunityAvailable(exam.id);
   const { user, loading: authLoading } = useAuth();
   const signedOut = hydrated && !authLoading && !user;
   // What a signed-out visitor stands to lose: drill answers plus test items.
@@ -379,6 +382,21 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
             </div>
           </Link>
+
+          {communityOn && (
+            <Link href={`${routes.stats}?tab=community`} className="block mt-1.5">
+              <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 flex items-center gap-3 hover:shadow-md transition-shadow">
+                <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                  <Users className="h-4 w-4 text-brand-dark" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">Common Mistakes</h3>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">The {exam.shortName} questions most students get wrong</p>
+                </div>
+                <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
+              </div>
+            </Link>
+          )}
 
           <div className="mt-6">
             <SuperAmazingCard dashboardKey={`v2:${exam.id}`} allComplete={totalSteps > 0 && doneSteps === totalSteps} totalSteps={totalSteps} />

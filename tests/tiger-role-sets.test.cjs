@@ -7,6 +7,7 @@ const path = require('node:path');
 const { getTigerAsset, getSiteTigerAsset, hasTigerSet, TIGER_EXAM_IDS } = require('../lib/tigerAssets.ts');
 const { getTigerFace } = require('../lib/resultsCopy.ts');
 const { shareImageUrl, SHARE_IMAGE_VERSION } = require('../lib/shareImageUrl.ts');
+const SHARE_COPY = new Set(["jelec","sie","series7","pcoc","ffi","police","nasm","rbt","cpc","iedtt","cask","cans","ukseru","nzroad","netplus","gcdl"]);
 
 const ids = ['ffi', 'police', 'faapvt', 'nasm', 'barber', 'jelec'];
 for (const id of ids) {
@@ -32,7 +33,8 @@ for (const id of ids) {
     for (const [score, expression] of [[100, 1], [99, 2], [85, 2], [84, 3], [70, 3], [69, 4], [55, 4], [54, 5], [40, 5], [39, 6], [25, 6], [24, 7], [10, 7], [9, 8], [0, 8]]) {
       assert.equal(getTigerFace(score, id), getTigerAsset(id, expression));
     }
-    assert.equal(shareImageUrl(id), `/og/${id}?v=role-mascots-1`);
+    // Exams that later got their own share copy moved on to that card's version.
+    assert.equal(shareImageUrl(id), `/og/${id}?v=${SHARE_COPY.has(id) ? 'share-copy-1' : 'role-mascots-1'}`);
   });
 }
 

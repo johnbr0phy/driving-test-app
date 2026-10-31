@@ -1,4 +1,4 @@
-import { BasicsSkillState, DrillState, TestResultV2, TestSessionV2 } from "./types";
+import { BasicsSkillState, DrillState, QuestionTally, TestResultV2, TestSessionV2 } from "./types";
 import type { V2Data } from "@/store/useV2Store";
 
 // Pure merge of two copies of the v2 store (this device and the account),
@@ -60,18 +60,33 @@ export function mergeV2(local: V2Data, remote: V2Data): V2Data {
     basics[k] = !a ? b! : !b ? a : a.completedAt <= b.completedAt ? a : b;
   }
 
-  return { sessions, results, drills, basics, goals: { ...local.goals, ...remote.goals } };
+  // Both copies may hold the same answers, so a tally keeps the larger count.
+  const questionStats: Record<string, Record<string, QuestionTally>> = {};
+  for (const examId of new Set([...Object.keys(local.questionStats ?? {}), ...Object.keys(remote.questionStats ?? {})])) {
+    const a = local.questionStats?.[examId] ?? {};
+    const b = remote.questionStats?.[examId] ?? {};
+    const merged: Record<string, QuestionTally> = {};
+    for (const id of new Set([...Object.keys(a), ...Object.keys(b)])) {
+      merged[id] = { n: Math.max(a[id]?.n ?? 0, b[id]?.n ?? 0), w: Math.max(a[id]?.w ?? 0, b[id]?.w ?? 0) };
+    }
+    questionStats[examId] = merged;
+  }
+
+  return { sessions, results, drills, basics, goals: { ...local.goals, ...remote.goals }, questionStats };
 }
 
 /** The same data with one exam's sessions, results, drills and goal removed. */
 export function withoutExamV2(data: V2Data, examId: string): V2Data {
   const goals = { ...data.goals };
   delete goals[examId];
+  const questionStats = { ...(data.questionStats ?? {}) };
+  delete questionStats[examId];
   return {
     sessions: Object.fromEntries(Object.entries(data.sessions).filter(([, v]) => v.examId !== examId)),
     results: data.results.filter((r) => r.examId !== examId),
     drills: Object.fromEntries(Object.entries(data.drills).filter(([k]) => !k.startsWith(`${examId}:`))),
     basics: Object.fromEntries(Object.entries(data.basics ?? {}).filter(([k]) => !k.startsWith(`${examId}:`))),
     goals,
+    questionStats,
   };
 }

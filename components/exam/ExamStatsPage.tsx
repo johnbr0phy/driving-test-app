@@ -9,9 +9,7 @@
 // (lib/communityStats.ts); ?tab=community opens it, guests included.
 
 import { Suspense, useEffect, useMemo, useState } from "react";
-import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { ArrowLeft, BarChart3, Lock, Users } from "lucide-react";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
@@ -32,6 +30,15 @@ import { getSignIdForQuestion } from "@/lib/signImages";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 import { useCommunityAvailable, useExamCommunityStats } from "@/hooks/useCommunityStats";
 import { CommunityWrongQuestionsList } from "@/components/CommunityWrongQuestions";
+import {
+  GatedStatsList,
+  STATS_FREE_ROWS,
+  StatsHeaderCard,
+  StatsPageShell,
+  StatsSortBar,
+  StatsTabs,
+  accuracyChipColor,
+} from "@/components/stats/StatsParts";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -48,9 +55,6 @@ function optionText(q: Question, letter: string): string {
   const map: Record<string, string> = { A: q.optionA, B: q.optionB, C: q.optionC, D: q.optionD };
   return map[letter] ?? "";
 }
-
-const FREE_QUESTION_LIMIT = 5;
-const FREE_QUESTION_LIMIT_MOBILE = 2;
 
 export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
   return (
@@ -214,7 +218,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
     return {
       value: `${item.accuracy}%`,
       label: t("stats.accuracy"),
-      color: item.accuracy === 100 ? "text-green-600 dark:text-green-400" : item.accuracy >= 50 ? "text-yellow-600 dark:text-yellow-400" : "text-red-500 dark:text-red-400",
+      color: accuracyChipColor(item.accuracy),
     };
   };
 
@@ -261,10 +265,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const answeredCount = questionsWithPerformance.filter((q) => q.timesAnswered > 0).length;
 
   return (
-    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <div className="relative">
-        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
-        <div className="relative container mx-auto px-4 py-6 max-w-3xl">
+    <StatsPageShell backHref={routes.dashboard} backLabel={t("common.back")}>
           <PaywallModal
             open={paywallOpen}
             onOpenChange={(open) => {
@@ -284,34 +285,13 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             onSignUp={() => router.push(routes.signup)}
           />
 
-          <Link
-            href={routes.dashboard}
-            className="inline-flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 mb-4"
-          >
-            <ArrowLeft className="h-4 w-4" /> {t("common.back")}
-          </Link>
-
           {communityOn && (
-            <div className="flex gap-1.5 mb-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-1.5 shadow-sm">
-              {([
-                { tab: "yours" as const, icon: BarChart3, label: t("stats.yourStats") },
-                { tab: "community" as const, icon: Users, label: t("stats.commonMistakes") },
-              ]).map(({ tab, icon: Icon, label }) => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  aria-pressed={activeTab === tab}
-                  className={`flex-1 flex items-center justify-center gap-2 text-sm font-semibold py-2.5 px-4 rounded-lg transition-all ${
-                    activeTab === tab
-                      ? "bg-brand text-white shadow-sm"
-                      : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-800"
-                  }`}
-                >
-                  <Icon className="h-4 w-4" />
-                  {label}
-                </button>
-              ))}
-            </div>
+            <StatsTabs
+              active={activeTab}
+              onChange={setActiveTab}
+              yoursLabel={t("stats.yourStats")}
+              communityLabel={t("stats.commonMistakes")}
+            />
           )}
 
           {showCommunity && (
@@ -329,97 +309,36 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
           )}
 
           {!showCommunity && (<>
-          <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
-            <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{t("stats.yourStats")}</h1>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-              {ui.statsSeen(answeredCount, examQuestions.length, exam.shortName)}
-            </p>
-          </div>
+          <StatsHeaderCard
+            title={t("stats.yourStats")}
+            subtitle={ui.statsSeen(answeredCount, examQuestions.length, exam.shortName)}
+          />
 
-          {/* Sort controls */}
-          <div className="flex items-center gap-2 mb-4 overflow-x-auto pb-2 -mx-4 px-4">
-            {[
+          <StatsSortBar
+            fields={[
               { field: "wrong" as SortField, label: t("stats.wrongLabel") },
               { field: "correct" as SortField, label: t("stats.correctLabel") },
               { field: "timesAnswered" as SortField, label: t("stats.answered") },
               { field: "accuracy" as SortField, label: t("stats.accuracy") },
-            ].map(({ field, label }) => (
-              <button
-                key={field}
-                onClick={() => handleSort(field)}
-                className={`whitespace-nowrap text-sm px-3 py-1.5 rounded-full border transition-colors ${
-                  sortField === field
-                    ? "bg-brand-light border-brand-border text-brand-dark font-medium"
-                    : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-300"
-                }`}
-              >
-                {label}
-                {sortField === field && <span className="ml-1">{sortDirection === "asc" ? "↑" : "↓"}</span>}
-              </button>
-            ))}
-            <span className="ml-auto text-xs text-gray-500 dark:text-gray-400 whitespace-nowrap">
-              {sortedQuestions.length} {t("stats.questions")}
-            </span>
-          </div>
+            ]}
+            sortField={sortField}
+            sortDirection={sortDirection}
+            onSort={handleSort}
+            count={<>{sortedQuestions.length} {t("stats.questions")}</>}
+          />
 
-          <div className="space-y-2">
-            {isPremium
-              ? sortedQuestions.map(statsRow)
-              : sortedQuestions.slice(0, FREE_QUESTION_LIMIT).map((item, idx) => (
-                  <div key={item.question.questionId} className={idx >= FREE_QUESTION_LIMIT_MOBILE ? "hidden md:block" : undefined}>
-                    {statsRow(item)}
-                  </div>
-                ))}
-
-            {!isPremium && sortedQuestions.length > FREE_QUESTION_LIMIT && (
-              <div className="relative">
-                {/* Faded preview of the locked rows, with the unlock CTA overlaid */}
-                <div
-                  className="space-y-2 overflow-hidden h-60 blur-[2px] opacity-40 pointer-events-none select-none [mask-image:linear-gradient(to_bottom,black,transparent)]"
-                  aria-hidden="true"
-                >
-                  {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 4).map((item) => {
-                    const chip = chipFor(item);
-                    return (
-                      <div
-                        key={item.question.questionId}
-                        className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 py-3 flex items-center gap-4"
-                      >
-                        <div className="shrink-0 text-center min-w-[3rem]">
-                          <div className={`text-base font-bold tabular-nums leading-none ${chip.color}`}>{chip.value}</div>
-                          <div className="text-[9px] uppercase tracking-wide text-gray-500 dark:text-gray-400 mt-0.5">{chip.label}</div>
-                        </div>
-                        <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 dark:text-gray-50 line-clamp-2">
-                          {item.question.question}
-                        </p>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-                  <div className="rounded-2xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm px-6 py-4 flex flex-col items-center shadow-sm border border-gray-200 dark:border-gray-800">
-                    <div className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-brand-light mb-2">
-                      <Lock className="h-4 w-4 text-brand-dark" />
-                    </div>
-                    <p className="text-sm font-semibold text-gray-900 dark:text-gray-50 mb-1">
-                      {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
-                    </p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mb-2.5">{t("stats.unlockPremiumStats")}</p>
-                    <button
-                      onClick={() => { trackPaywallHit("stats_question_list", "Stats Question List", paywallLocation); trackViewItem(paywallLocation); setPaywallOpen(true); }}
-                      className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors shadow-lg"
-                    >
-                      Unlock Premium for $9.99
-                    </button>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
+          <GatedStatsList
+            items={sortedQuestions}
+            isPremium={isPremium}
+            keyOf={(item) => item.question.questionId}
+            renderRow={statsRow}
+            previewOf={(item) => ({ chip: chipFor(item), text: item.question.question })}
+            lockTitle={`${sortedQuestions.length - STATS_FREE_ROWS} ${t("stats.moreQuestions")}`}
+            lockSubtitle={t("stats.unlockPremiumStats")}
+            lockCta="Unlock Premium for $9.99"
+            onUnlock={() => { trackPaywallHit("stats_question_list", "Stats Question List", paywallLocation); trackViewItem(paywallLocation); setPaywallOpen(true); }}
+          />
           </>)}
-        </div>
-      </div>
-    </div>
+    </StatsPageShell>
   );
 }

@@ -168,7 +168,7 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
   PH: {
     title: "Free LTO Exam Reviewer: Philippines Driving Test | Tigertest",
     description: "Free LTO exam reviewer for the Philippines: 200 original questions on road signs, right of way and traffic laws, every answer explained. No account needed.",
-    lead: "Practice for the LTO written exam for your driver's licence. Original questions on signs, markings, right of way and road safety laws, every answer explained. No signup.",
+    lead: "Practice for the LTO written exam for your driver's license. Original questions on signs, markings, right of way and road safety laws, every answer explained. No signup.",
     cta: { label: "LTO exam reviewer", href: "/lto-exam-reviewer-practice-test" },
     testsTitle: "LTO driver's licence exam",
     testsSub: "200 questions on Philippine traffic rules, in km/h for right-hand traffic. Three full 60-question tests, 48 to pass.",

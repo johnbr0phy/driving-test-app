@@ -293,6 +293,12 @@ export interface DrillState {
   correct: number;
 }
 
+/** Drill answers to one question: n answered, w wrong (lib/v2/questionStats). */
+export interface QuestionTally {
+  n: number;
+  w: number;
+}
+
 /** One learned Basics skill (lib/v2/basics), keyed `${examId}:${skillId}`. */
 export interface BasicsSkillState {
   done: boolean;

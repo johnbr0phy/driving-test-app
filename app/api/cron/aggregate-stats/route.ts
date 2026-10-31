@@ -7,8 +7,10 @@
  * - globalStats/questionDifficulty — per-question attempt count + error rate for
  *   every question (universal and state-specific) with enough attempts (FastPass)
  * - globalStats/examWrongQuestions — the same most-missed list for every
- *   registry exam (CDL, CNA, real estate...), only for exams with enough
- *   answers (lib/communityStats.ts), plus the list of tests that qualify
+ *   registry exam (CDL, CNA, real estate...) and every v2 exam (SAT, ACT,
+ *   NCLEX..., from users/{uid}.v2 via lib/v2/questionStats.ts, held-out tests
+ *   left out so they stay unseen), only for exams with enough answers
+ *   (lib/communityStats.ts), plus the list of tests that qualify
  * - globalStats/studyTimes — answers in the last 90 days by Eastern weekday and
  *   hour (7 x 24 grid), for picking email send times (the /admin Growth tab)
  *
@@ -20,6 +22,9 @@ import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
 import { FieldPath } from "firebase-admin/firestore";
 import { getQuestionsData } from "@/lib/testGenerator";
 import { ALL_EXAMS } from "@/lib/exams";
+import { EXAMS_V2 } from "@/lib/v2/registry";
+import { heldOutTests } from "@/lib/v2/training";
+import { v2QuestionPerformance } from "@/lib/v2/questionStats";
 import {
   COMMUNITY_DMV_KEY,
   COMMUNITY_MIN_ANSWERS,
@@ -112,7 +117,7 @@ export async function GET(req: NextRequest) {
       for (;;) {
         let query = db
           .collection("users")
-          .select("trainingAnswerHistory", "completedTests")
+          .select("trainingAnswerHistory", "completedTests", "v2.results", "v2.drills", "v2.questionStats")
           .orderBy(FieldPath.documentId())
           .limit(PAGE_SIZE);
         if (cursor) query = query.startAfter(cursor);
@@ -145,6 +150,24 @@ export async function GET(req: NextRequest) {
       (examUsers[examId] ??= new Set()).add(uid);
     };
 
+    // v2 exams (ids never collide with registry ids): test and drill answers,
+    // never a held-out test's, so Common Mistakes cannot leak it.
+    const v2Exams = EXAMS_V2.map((e) => ({ id: e.id, skipTests: heldOutTests(e) }));
+    const countV2 = (uid: string, v2: any) => {
+      if (!v2 || typeof v2 !== "object") return;
+      for (const exam of v2Exams) {
+        const perf = v2QuestionPerformance(v2, exam.id, { skipTests: exam.skipTests });
+        if (perf.size === 0) continue;
+        const byQuestion = (examCounts[exam.id] ??= {});
+        for (const [questionId, p] of perf) {
+          const c = (byQuestion[questionId] ??= { correct: 0, wrong: 0 });
+          c.correct += p.correct;
+          c.wrong += p.wrong;
+        }
+        (examUsers[exam.id] ??= new Set()).add(uid);
+      }
+    };
+
     const addUser = (doc: FirebaseFirestore.QueryDocumentSnapshot) => {
       if (!realUids.has(doc.id)) return;
       const data = doc.data();
@@ -164,6 +187,7 @@ export async function GET(req: NextRequest) {
           if (a?.userAnswer) countExamAnswer(doc.id, a.questionId, a.isCorrect);
         }
       }
+      countV2(doc.id, data.v2);
     };
     await Promise.all(BOUNDS.slice(0, -1).map((from, i) => readRange(from as string, BOUNDS[i + 1])));
 

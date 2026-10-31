@@ -301,7 +301,7 @@ export async function answerV2Practice(uid: string, examId: string, questionId: 
     const updatedData: UserData = { ...data, v2: { ...data.v2, drills: { ...data.v2?.drills, [key]: after } } };
     const selected = selectQuestion(updatedData, exam, pending.targeted ? drill.key : undefined, questionId);
     const next = selected ? newPending(selected.drill, selected.question, pending.targeted) : undefined;
-    tx.update(userRef, { 'mcpProgressRevisions.v2': FieldValue.increment(1), [`v2.drills.${key}`]: after, 'v2.updatedAt': now, [`dailyQuestionCounts.${today}`]: count + 1, lastUpdated: now });
+    tx.update(userRef, { 'mcpProgressRevisions.v2': FieldValue.increment(1), [`v2.drills.${key}`]: after, [`v2.questionStats.${examId}.${questionId}.n`]: FieldValue.increment(1), [`v2.questionStats.${examId}.${questionId}.w`]: FieldValue.increment(correct ? 0 : 1), 'v2.updatedAt': now, [`dailyQuestionCounts.${today}`]: count + 1, lastUpdated: now });
     if (next) tx.set(pendingRef, next); else tx.delete(pendingRef);
     const following = payload(updatedData, exam, selected, next, pending.targeted ? drill.key : undefined);
     return { ok: true, data: {

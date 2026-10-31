@@ -173,7 +173,7 @@ test('full sessions hand off by default; explicit practice preserves all session
   assert.equal(writes.length, 1);
   assert.equal(db.user().mcpProgressRevisions.v2, 1);
   assert.equal(writes[0].data['mcpProgressRevisions.v2'].operand, 1);
-  assert.ok(Object.keys(writes[0].data).every((k) => k.startsWith('v2.drills.') || ['v2.updatedAt','lastUpdated','mcpProgressRevisions.v2'].includes(k) || k.startsWith('dailyQuestionCounts.')));
+  assert.ok(Object.keys(writes[0].data).every((k) => k.startsWith('v2.drills.') || k.startsWith('v2.questionStats.') || ['v2.updatedAt','lastUpdated','mcpProgressRevisions.v2'].includes(k) || k.startsWith('dailyQuestionCounts.')));
 });
 
 test('premium locks, own-progress grandfathering, Basics grandfathering and legacy carryover match the site', async () => {

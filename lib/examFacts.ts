@@ -69,7 +69,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the published digital SAT specifications",
     source: { name: "College Board", url: "https://satsuite.collegeboard.org/sat" },
     tigertest:
-      "Tigertest has two full-length adaptive SAT practice tests with score estimates and skill drills. Practice Test 1 and most drills are free with no account required.",
+      "Tigertest has two full-length adaptive SAT practice tests with score estimates and skill drills. All of it is free with no account required.",
   },
   act: {
     answer:
@@ -84,7 +84,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the published enhanced ACT specifications",
     source: { name: "ACT", url: "https://www.act.org" },
     tigertest:
-      "Tigertest has two full-length ACT practice tests in the enhanced format with score estimates and skill drills. Practice Test 1 and most drills are free with no account required.",
+      "Tigertest has two full-length ACT practice tests in the enhanced format with score estimates and skill drills. All of it is free with no account required.",
   },
   cdl: {
     answer:

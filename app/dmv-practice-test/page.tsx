@@ -45,7 +45,7 @@ const faqs = [
   {
     k: "faq2",
     q: "Can I use Tigertest for free?",
-    a: "Yes. Tigertest is free to start in all 50 states, with no credit card or account required. Free users get Training Sets 1 and 2 and Practice Tests 1 and 2. Premium ($9.99 one-time, not a subscription) unlocks Training Sets 3 and 4, Practice Tests 3 and 4 and full question analytics, and the same purchase unlocks SAT and ACT Premium too.",
+    a: "Yes. Tigertest is free to start in all 50 states, with no credit card or account required. Free users get Training Sets 1 and 2 and Practice Tests 1 and 2. Premium ($9.99 one-time, not a subscription) unlocks Training Sets 3 and 4, Practice Tests 3 and 4 and full question analytics.",
   },
   {
     k: "faq3",

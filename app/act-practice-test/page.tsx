@@ -14,7 +14,7 @@ const title = "Free ACT Practice Test 2026 - Full-Length & Timed";
 const metaDescription =
   "Free full-length ACT practice test in the enhanced format: English, Math, Reading and Science, timed by section, with a 1-36 score estimate and skill drills.";
 const description =
-  "A free full-length ACT practice test in the enhanced 2025 format: English, Math, Reading and Science with real passages and section timing, four answer choices, and a 1 to 36 score estimate with a composite. Eleven skill drills, one per ACT reporting category and sized for your phone, bring every miss back until you master it. Practice Test 2 and the last drill in each section are a one-time $9.99.";
+  "A free full-length ACT practice test in the enhanced 2025 format: English, Math, Reading and Science with real passages and section timing, four answer choices, and a 1 to 36 score estimate with a composite. Eleven skill drills, one per ACT reporting category and sized for your phone, bring every miss back until you master it. Both practice tests and every drill are free.";
 
 export const metadata: Metadata = {
   title,
@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest ACT practice test free?",
-    a: "Yes, to start. Practice Test 1, its score and every explanation, and seven of the eleven skill drills are free with no account required. Tigertest Premium, a one-time $9.99 with no subscription, unlocks Practice Test 2 and the Knowledge of Language, Essential Skills and Modeling, Craft and Integration, and Evaluation of Models drills, and the same purchase covers the DMV and the SAT too.",
+    a: "Yes, all of it. Both full-length practice tests, their scores and every explanation, and all eleven skill drills are free with no account required and no paywall.",
   },
 ];
 
@@ -266,7 +266,7 @@ export default function ActLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Hit Your ACT Goal?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. A free full-length test and seven free skill drills, with Practice Test 2 and the rest in Premium.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Completely free. No account required. Two full-length tests and all eleven skill drills.</p>
           <ExamLandingCTA dashboardHref="/act/dashboard" />
         </div>
       </div>

@@ -42,7 +42,7 @@ const FOOTER = `## Notes for AI assistants
 
 - Tigertest is independent and is not affiliated with any DMV, testing company or certification body. Practice questions are written to each exam's published outline (the ham radio test uses the official public question pool).
 - Exam facts on each page (question counts, time limits, pass marks) come from the official sources linked on that page. Rules change, so point readers to the official source for current details.
-- Every exam except the DMV, SAT and ACT is completely free. The DMV, SAT and ACT have free tests plus a single one-time $9.99 Premium purchase that covers all three.`;
+- Every exam's practice is free. The DMV has free tests plus an optional one-time $9.99 Premium purchase that unlocks two more DMV tests and training sets and the full stats pages of US exams.`;
 
 function examLine(t: TestCatalogEntry): string {
   return `- [${t.name}](${siteUrl}${t.href}): ${t.blurb}`;

@@ -68,7 +68,7 @@ const usFaqs = [
   },
   {
     q: "Is Tigertest free?",
-    a: "Yes. Most tests are completely free. The DMV, SAT and ACT have free practice tests and training plus an optional one-time $9.99 Premium purchase (not a subscription) that unlocks the extra tests for all three.",
+    a: "Yes. Almost every test is completely free. The DMV has free practice tests and training plus an optional one-time $9.99 Premium purchase (not a subscription) that unlocks two more tests and training sets and full stats on every US exam.",
   },
   {
     q: "Do I need an account?",

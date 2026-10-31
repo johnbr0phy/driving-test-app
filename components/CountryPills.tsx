@@ -126,19 +126,16 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
         : null;
 
   const pill = (on: boolean) =>
-    `flex h-11 items-center justify-center gap-2 rounded-full px-2 text-sm font-semibold transition-colors sm:px-4 ${
+    `flex h-11 w-11 items-center justify-center rounded-full transition-colors sm:w-12 ${
       on
-        ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
-        : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+        ? "bg-gray-900 dark:bg-white"
+        : "hover:bg-gray-100 dark:hover:bg-gray-800"
     }`;
+  // Flags only; the country name is the accessible label and the hover title.
   const label = (r: (typeof REGIONS)[number]) => (
-    <>
-      <span aria-hidden="true" className="text-base leading-none">{FLAGS[r.code]}</span>
-      <span className="lg:hidden">{r.short}</span>
-      <span className="hidden lg:inline">{r.name}</span>
-    </>
+    <span aria-hidden="true" className="text-2xl leading-none">{FLAGS[r.code]}</span>
   );
-  const row = "grid w-full max-w-md grid-cols-7 gap-1 rounded-full border border-brand-border bg-white dark:bg-gray-900 p-1 shadow-sm sm:inline-grid sm:w-auto sm:max-w-none";
+  const row = "inline-grid grid-cols-7 gap-1 rounded-full border border-brand-border bg-white dark:bg-gray-900 p-1 shadow-sm";
 
   return (
     <div ref={box} className="flex flex-col items-center">
@@ -147,7 +144,7 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
           {REGIONS.map((r) => {
             const on = r.code === current;
             return (
-              <button key={r.code} type="button" role="radio" aria-checked={on} aria-label={r.name} onClick={() => !on && save(r.code)} className={pill(on)}>
+              <button key={r.code} type="button" role="radio" aria-checked={on} aria-label={r.name} title={r.name} onClick={() => !on && save(r.code)} className={pill(on)}>
                 {label(r)}
               </button>
             );
@@ -166,6 +163,7 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
                 href={regionHomePath(r.code)}
                 aria-current={on ? "page" : undefined}
                 aria-label={`${r.name} tests`}
+                title={r.name}
                 onClick={(e) => {
                   e.preventDefault();
                   save(r.code);

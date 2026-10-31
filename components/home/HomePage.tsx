@@ -92,6 +92,14 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   IN: "any RTO or transport department",
   IE: "the RSA or the NDLS",
   NZ: "NZTA or any testing agent",
+  PH: "the LTO",
+  MY: "JPJ",
+  SG: "the Traffic Police or any driving centre",
+  HK: "the Transport Department",
+  AE: "the RTA or any licensing authority",
+  ZA: "any driving licence testing centre",
+  NG: "the FRSC",
+  KE: "the NTSA",
 };
 
 function faqsFor(region: Region) {

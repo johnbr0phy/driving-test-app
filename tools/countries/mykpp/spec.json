@@ -1,0 +1,35 @@
+{
+  "id": "mykpp",
+  "stateCode": "MYKPP",
+  "idBase": 12800,
+  "prefix": "MYKPP-",
+  "slug": "/malaysia-kpp",
+  "landingPath": "/malaysia-kpp01-practice-test",
+  "dataFile": "data/malaysia-kpp-questions.json",
+  "name": "Malaysia KPP01 Practice Test",
+  "shortName": "Malaysia KPP01",
+  "examLabel": "KPP01 theory test",
+  "fullName": "Malaysia JPJ KPP01 computer theory test (Ujian Undang-Undang Bahagian 1, car)",
+  "icon": "car",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 84,
+  "categories": [
+    {"key": "mySigns", "label": "Road Signs", "perTest": 11, "pool": 44, "segment": "SGN"},
+    {"key": "myMarkings", "label": "Road Markings & Traffic Lights", "perTest": 4, "pool": 16, "segment": "MRK"},
+    {"key": "myRules", "label": "Traffic Rules & Right of Way", "perTest": 10, "pool": 40, "segment": "RUL"},
+    {"key": "mySpeed", "label": "Speed, Lanes & Expressways", "perTest": 6, "pool": 24, "segment": "SPD"},
+    {"key": "myParking", "label": "Parking & Stopping", "perTest": 3, "pool": 12, "segment": "PRK"},
+    {"key": "myLicence", "label": "Licences, Law & KEJARA", "perTest": 6, "pool": 24, "segment": "LIC"},
+    {"key": "myDefensive", "label": "Defensive Driving & Hazards", "perTest": 7, "pool": 28, "segment": "DEF"},
+    {"key": "myEmergency", "label": "Breakdowns & Crashes", "perTest": 3, "pool": 12, "segment": "EMG"}
+  ],
+  "notes": "4 tests x 50 = 200, pools exactly 4x per-test (no spares). Per test 15 signs and markings (like Bahagian A's 15 sign questions), 25 traffic rules (Bahagian B), 10 law, safety and KEJARA. passPct 84 gives ceil(0.84 x 50) = 42, the real KPP01 pass mark.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 12801, "name": "Road Signs", "categories": ["mySigns"], "size": 44},
+    {"setNumber": 2, "id": 12802, "name": "Markings, Lights & Parking", "categories": ["myMarkings", "myParking"], "size": 28},
+    {"setNumber": 3, "id": 12803, "name": "Traffic Rules & Right of Way", "categories": ["myRules"], "size": 40},
+    {"setNumber": 4, "id": 12804, "name": "Speed, Licences & the Law", "categories": ["mySpeed", "myLicence"], "size": 48},
+    {"setNumber": 5, "id": 12805, "name": "Defensive Driving & Emergencies", "categories": ["myDefensive", "myEmergency"], "size": 40}
+  ]
+}

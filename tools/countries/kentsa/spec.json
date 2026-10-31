@@ -1,0 +1,34 @@
+{
+  "id": "kentsa",
+  "stateCode": "KENTSA",
+  "idBase": 12700,
+  "prefix": "KENTSA-",
+  "slug": "/kenya-driving-test",
+  "landingPath": "/kenya-ntsa-driving-test",
+  "dataFile": "data/kenya-ntsa-questions.json",
+  "name": "Kenya NTSA Driving Test Practice",
+  "shortName": "Kenya driving test",
+  "examLabel": "NTSA driving test",
+  "fullName": "Kenya NTSA driving test theory (Highway Code, Category B)",
+  "icon": "car",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {"key": "keLicence", "label": "Licences, Alcohol & the Law", "perTest": 8, "pool": 32, "segment": "LIC"},
+    {"key": "keSigns", "label": "Road Signs & Signals", "perTest": 10, "pool": 40, "segment": "SGN"},
+    {"key": "keJunctions", "label": "Junctions & Roundabouts", "perTest": 8, "pool": 32, "segment": "JCT"},
+    {"key": "keRoad", "label": "Speed, Overtaking & Road Position", "perTest": 9, "pool": 36, "segment": "ROD"},
+    {"key": "keUsers", "label": "Sharing the Road", "perTest": 6, "pool": 24, "segment": "USR"},
+    {"key": "keParking", "label": "Parking, Breakdowns & Crashes", "perTest": 5, "pool": 20, "segment": "PRK"},
+    {"key": "keConditions", "label": "Night, Weather & Vehicle Care", "perTest": 4, "pool": 16, "segment": "CON"}
+  ],
+  "notes": "4 tests x 50 = 200, every pool exactly 4x its per-test count, so no spares and no item repeats across tests. passPct 80 gives ceil(0.8 x 50) = 40; NTSA publishes no current pass mark, so 80% is Tigertest's target (it matches the 80% reported for NTSA's 2019 theory guidelines). Dashboard = 5 sets + 4 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 12701, "name": "Licences, Alcohol & Vehicle Care", "categories": ["keLicence", "keConditions"], "size": 48},
+    {"setNumber": 2, "id": 12702, "name": "Road Signs & Signals", "categories": ["keSigns"], "size": 40},
+    {"setNumber": 3, "id": 12703, "name": "Junctions & Roundabouts", "categories": ["keJunctions"], "size": 32},
+    {"setNumber": 4, "id": 12704, "name": "Speed, Overtaking & Road Position", "categories": ["keRoad"], "size": 36},
+    {"setNumber": 5, "id": 12705, "name": "Sharing the Road, Parking & Crashes", "categories": ["keUsers", "keParking"], "size": 44}
+  ]
+}

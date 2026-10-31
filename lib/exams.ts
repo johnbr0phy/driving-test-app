@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -7761,7 +7761,532 @@ const iedtt: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+const phlto: ExamConfig = {
+  id: "phlto",
+  stateCode: "PHLTO",
+  idBase: 12200,
+  slug: "/lto-exam",
+  landingPath: "/lto-exam-reviewer-practice-test",
+  name: "LTO Exam Reviewer Practice Test",
+  shortName: "LTO exam",
+  examLabel: "LTO license exam",
+  fullName: "Philippines LTO driver's license written exam",
+  questionIdPrefix: "PHLTO-",
+  icon: "car",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 80,
+  // Real exam: LTO Theoretical Driving Course module TDC-15-S-01-2 v9-2021, 60 questions, 48 to
+  // pass (80%). The older LTO MC AHS-2008-949 (12 March 2008) set 30 of 40 (non-professional) and
+  // 45 of 60 (professional). LTO publishes no per-topic counts; this split is Tigertest's own with
+  // road signs weighted heaviest. Rules from RA 4136, RA 8750, RA 10054, RA 10666, RA 10913,
+  // RA 10586 (+IRR), RA 11229, RA 10930 and the DPWH 2012 road signs manual, checked 2026-10-31.
+  // Three full-length tests; pools are 3x each count plus 20 training-only spares.
+  // passPct 80 = ceil(0.80 * 60) = 48. All items original.
+  blueprint: {
+    phLicence: 8,
+    phSigns: 12,
+    phMarkings: 6,
+    phRightOfWay: 9,
+    phSpeed: 9,
+    phParking: 5,
+    phSafetyLaws: 8,
+    phEmergency: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 12201, name: "Licenses & Road Safety Laws", categories: ["phLicence", "phSafetyLaws"], size: 50, weightLabel: "16 of 60 test questions" },
+    { setNumber: 2, id: 12202, name: "Road Signs", categories: ["phSigns"], size: 38, weightLabel: "12 of 60 test questions" },
+    { setNumber: 3, id: 12203, name: "Markings & Right of Way", categories: ["phMarkings", "phRightOfWay"], size: 49, weightLabel: "15 of 60 test questions" },
+    { setNumber: 4, id: 12204, name: "Speed, Overtaking & Parking", categories: ["phSpeed", "phParking"], size: 45, weightLabel: "14 of 60 test questions" },
+    { setNumber: 5, id: 12205, name: "Emergencies, Crashes & Night", categories: ["phEmergency"], size: 18, weightLabel: "3 of 60 test questions" },
+  ],
+  categoryLabels: {
+    phLicence: "Licenses & Permits",
+    phSigns: "Road Signs",
+    phMarkings: "Markings & Traffic Lights",
+    phRightOfWay: "Right of Way & Intersections",
+    phSpeed: "Speed, Lanes & Overtaking",
+    phParking: "Parking & Stopping",
+    phSafetyLaws: "Road Safety Laws",
+    phEmergency: "Emergencies, Crashes & Night",
+  },
+  copy: {
+    guestPrompt: "to save your LTO exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering every topic the LTO written exam asks about. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 60 questions, 48 to pass",
+    heroSubs: [
+      "Five topics, three full-length tests. Road signs weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the LTO exam.",
+    ],
+    sourceLine: "Based on RA 4136 and the Philippine road safety laws. Original questions; 60 per test, 48 to pass as in LTO's TDC module.",
+    analyticsKey: "phlto",
+  },
+};
+
+const zak53: ExamConfig = {
+  id: "zak53",
+  stateCode: "ZAK53",
+  idBase: 12300,
+  slug: "/k53-learners",
+  landingPath: "/k53-learners-test",
+  name: "K53 Learner's Licence Practice Test",
+  shortName: "K53 learner's",
+  examLabel: "K53 learner's licence test",
+  fullName: "South Africa K53 learner's licence test (Code 2, light motor vehicle)",
+  questionIdPrefix: "ZAK53-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Real test: 64 random multiple-choice questions (RTMC spokesperson, May 2026) in three
+  // sections. Study guides (not official) give 28 rules / 28 signs / 8 controls with section marks
+  // 22, 23 and 6. Each mock test scales that to 50: rules 22 (5/6/6/5), signs and markings 22
+  // (9/6/3/4), vehicle controls 6. Rules from the National Road Traffic Act 93 of 1996 and
+  // Regulations 2000, gov.za learner's licence page, and the SADC Road Traffic Signs Manual, as
+  // checked 2026-10-31. passPct 80 = ceil(0.80 * 50) = 40, Tigertest's own target. All items
+  // original; signs described in words.
+  blueprint: {
+    zaLicence: 5,
+    zaRightOfWay: 6,
+    zaSpeed: 6,
+    zaParking: 5,
+    zaRegulatory: 9,
+    zaWarning: 6,
+    zaGuidance: 3,
+    zaMarkings: 4,
+    zaControls: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 12301, name: "Licences, Alcohol & Right of Way", categories: ["zaLicence", "zaRightOfWay"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 12302, name: "Speed, Overtaking, Parking & Lights", categories: ["zaSpeed", "zaParking"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 12303, name: "Regulatory Signs", categories: ["zaRegulatory"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 12304, name: "Warning Signs", categories: ["zaWarning"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 12305, name: "Guidance Signs, Markings & Signals", categories: ["zaGuidance", "zaMarkings"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 12306, name: "Vehicle Controls", categories: ["zaControls"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    zaLicence: "Licences, Alcohol & Crashes",
+    zaRightOfWay: "Intersections & Right of Way",
+    zaSpeed: "Speed, Following & Overtaking",
+    zaParking: "Stopping, Parking & Lights",
+    zaRegulatory: "Regulatory Signs",
+    zaWarning: "Warning Signs",
+    zaGuidance: "Guidance & Information Signs",
+    zaMarkings: "Road Markings & Traffic Signals",
+    zaControls: "Vehicle Controls (Code 2)",
+  },
+  copy: {
+    guestPrompt: "to save your K53 learner's progress and track every question you miss",
+    trainingHeading: "Train by K53 section",
+    trainingSub: "Six sets covering the rules of the road, road signs and markings, and Code 2 vehicle controls. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions in the real test's mix, 40 to pass",
+    heroSubs: [
+      "Rules, signs and controls, like the real test.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your learner's test at the DLTC.",
+    ],
+    sourceLine: "Based on the National Road Traffic Act and Regulations and the SADC road sign manual. Original questions; 50 per test, 40 to pass (Tigertest's target).",
+    analyticsKey: "zak53",
+  },
+};
+
+const sgbtt: ExamConfig = {
+  id: "sgbtt",
+  stateCode: "SGBTT",
+  idBase: 12400,
+  slug: "/singapore-btt",
+  landingPath: "/singapore-btt-practice-test",
+  name: "Singapore BTT Practice Test",
+  shortName: "Singapore BTT",
+  examLabel: "Basic Theory Test",
+  fullName: "Singapore Basic Theory Test (BTT)",
+  questionIdPrefix: "SGBTT-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 90,
+  // Source: Singapore Traffic Police, "Basic Theory of Driving: The Official Handbook", last updated
+  // 2.1.2026, Part B (the part marked "to be tested during Basic Theory Test"). The Traffic Police
+  // publish no per-topic counts, question count or pass mark; guides say 50 questions in 50 minutes,
+  // 45 to pass, so passPct 90 = ceil(0.90 * 50) = 45. Counts follow the sections of Part B, weighted
+  // toward signs, markings and signals. Pools are exactly 4x each count. Alcohol limits (2026 Act) and
+  // DIPS thresholds (change 1 Jan 2027) are not asked. All items original. Checked 2026-10-31.
+  blueprint: {
+    sgSigns: 10,
+    sgMarkings: 9,
+    sgRoadRules: 8,
+    sgJunctions: 7,
+    sgParking: 4,
+    sgVehicle: 5,
+    sgRoadSafety: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 12401, name: "Traffic Signs", categories: ["sgSigns"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 12402, name: "Road Markings & Signals", categories: ["sgMarkings"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 12403, name: "Lanes, Overtaking & Parking", categories: ["sgRoadRules", "sgParking"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 12404, name: "Junctions & Right of Way", categories: ["sgJunctions"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 12405, name: "Safe Driving & Your Vehicle", categories: ["sgRoadSafety", "sgVehicle"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgSigns: "Traffic Signs",
+    sgMarkings: "Road Markings & Signals",
+    sgRoadRules: "Lanes, Overtaking & Speed",
+    sgJunctions: "Junctions & Right of Way",
+    sgParking: "Stopping & Parking",
+    sgVehicle: "Lights, Phones & Your Vehicle",
+    sgRoadSafety: "Safe Driving & Road Users",
+  },
+  copy: {
+    guestPrompt: "to save your BTT progress and track every question you miss",
+    trainingHeading: "Train by handbook topic",
+    trainingSub: "Five sets covering every part of the Basic Theory of Driving handbook the BTT tests. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 45 to pass",
+    heroSubs: [
+      "Five topics, four full tests. Signs and markings weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Basic Theory Test.",
+    ],
+    sourceLine: "Based on the Traffic Police Basic Theory of Driving handbook (2 January 2026). Original questions; 50 per test, 45 to pass as guides quote.",
+    analyticsKey: "sgbtt",
+  },
+};
+
+const aerta: ExamConfig = {
+  id: "aerta",
+  stateCode: "AERTA",
+  idBase: 12500,
+  slug: "/uae-driving-theory",
+  landingPath: "/uae-driving-theory-test",
+  name: "UAE Driving Theory Practice Test",
+  shortName: "UAE driving theory",
+  examLabel: "RTA theory test",
+  fullName: "UAE driving theory test (RTA Dubai knowledge test, light vehicle)",
+  questionIdPrefix: "AERTA-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 40,
+  passPct: 75,
+  // Real test (rta.ae service 510, Knowledge Test, checked 2026-10-31): 40 questions, at least 30
+  // correct to pass, a valid learning permit and the theory lectures (8 hours for a light vehicle)
+  // first. RTA publishes no per-topic counts; this mix is Tigertest's own, weighted to signs and right
+  // of way. Rules are federal (Federal Decree-Law 14 of 2024, in force 29 March 2025, and Ministerial
+  // Resolution 178 of 2017 as amended in 2023 for wadis and rain). passPct 75 = ceil(0.75 * 40) = 30.
+  // Pools are 4x each count plus 40 training-only spares. No fines or black points. All items original.
+  blueprint: {
+    aeLicence: 4,
+    aeSigns: 9,
+    aeMarkings: 5,
+    aeRightOfWay: 7,
+    aeLanes: 6,
+    aeSafety: 5,
+    aeConditions: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 12501, name: "Road Signs", categories: ["aeSigns"], size: 44, weightLabel: "9 of 40 test questions" },
+    { setNumber: 2, id: 12502, name: "Licensing, Signals & Markings", categories: ["aeLicence", "aeMarkings"], size: 44, weightLabel: "9 of 40 test questions" },
+    { setNumber: 3, id: 12503, name: "Roundabouts, Junctions & Right of Way", categories: ["aeRightOfWay"], size: 34, weightLabel: "7 of 40 test questions" },
+    { setNumber: 4, id: 12504, name: "Lanes, Speed & Overtaking", categories: ["aeLanes"], size: 30, weightLabel: "6 of 40 test questions" },
+    { setNumber: 5, id: 12505, name: "Safety, Weather & Crashes", categories: ["aeSafety", "aeConditions"], size: 48, weightLabel: "9 of 40 test questions" },
+  ],
+  categoryLabels: {
+    aeLicence: "Licensing & Driver Responsibility",
+    aeSigns: "Road Signs",
+    aeMarkings: "Signals & Road Markings",
+    aeRightOfWay: "Roundabouts, Junctions & Right of Way",
+    aeLanes: "Lanes, Speed & Overtaking",
+    aeSafety: "Children, Pedestrians & Passengers",
+    aeConditions: "Weather, Breakdowns & Crashes",
+  },
+  copy: {
+    guestPrompt: "to save your UAE theory test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering the rules the RTA knowledge test asks about. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 40 questions like the real test, 30 to pass",
+    heroSubs: [
+      "Five topics, four real-length tests. Signs and right of way weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your knowledge test.",
+    ],
+    sourceLine: "Based on UAE federal traffic rules and RTA guidance. Original questions; 40 per test, 30 to pass like the real test.",
+    analyticsKey: "aerta",
+  },
+};
+
+const ngfrsc: ExamConfig = {
+  id: "ngfrsc",
+  stateCode: "NGFRSC",
+  idBase: 12600,
+  slug: "/nigeria-highway-code",
+  landingPath: "/nigeria-driving-test-practice",
+  name: "Nigeria Driving Test Practice (FRSC Highway Code)",
+  shortName: "Nigeria Highway Code",
+  examLabel: "FRSC driving theory test",
+  fullName: "Nigeria FRSC driving theory test (Highway Code and National Road Traffic Regulations 2012)",
+  questionIdPrefix: "NGFRSC-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // Source: the FRSC Nigeria Highway Code (as restated in FRSC's 2024 and 2025 Highway Code
+  // literacy compendiums) and the National Road Traffic Regulations 2012 (S.I. 61 of 2012),
+  // checked 2026-10-31. FRSC's real CBT (8 July 2021 release) is 35 questions in 30 minutes with
+  // 60% to pass; FRSC publishes no per-topic counts. These four 50-question tests weight the
+  // Highway Code topics with signs heaviest, and 75% (38 of 50) is Tigertest's own target, set
+  // above the official 60%. Pools are exactly 4x each count (no spares). Left out: car highway
+  // and expressway speed limits (80 vs 90 conflict), tanker limits, learner's permit validity,
+  // alcohol limit figures, fines and fees. All items original; signs described in words.
+  blueprint: {
+    ngLicence: 6,
+    ngSigns: 10,
+    ngMarkings: 5,
+    ngRightOfWay: 8,
+    ngSpeed: 7,
+    ngParking: 5,
+    ngSafety: 5,
+    ngEmergency: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 12601, name: "Licences & Vehicle Safety", categories: ["ngLicence", "ngSafety"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 12602, name: "Road Signs & Signals", categories: ["ngSigns"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 12603, name: "Markings, Junctions & Crossings", categories: ["ngMarkings", "ngRightOfWay"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 12604, name: "Speed, Overtaking & Parking", categories: ["ngSpeed", "ngParking"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 12605, name: "Breakdowns, Crashes & First Aid", categories: ["ngEmergency"], size: 16, weightLabel: "4 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ngLicence: "Licences & Documents",
+    ngSigns: "Road Signs & Signals",
+    ngMarkings: "Road Markings & Lanes",
+    ngRightOfWay: "Junctions, Crossings & Right of Way",
+    ngSpeed: "Speed, Overtaking & Conditions",
+    ngParking: "Parking & Expressways",
+    ngSafety: "Alcohol, Phones & Vehicle Safety",
+    ngEmergency: "Breakdowns, Crashes & First Aid",
+  },
+  copy: {
+    guestPrompt: "to save your Highway Code progress and track every question you miss",
+    trainingHeading: "Train by Highway Code topic",
+    trainingSub: "Five sets covering the Highway Code and road traffic regulations the theory test asks about. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 38 (75%)",
+    heroSubs: [
+      "Five topics, four mock tests. Road signs weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your CBT.",
+    ],
+    sourceLine: "Based on the FRSC Highway Code and the National Road Traffic Regulations 2012. Original questions; 75% is Tigertest's target (FRSC's CBT pass mark is 60%).",
+    analyticsKey: "ngfrsc",
+  },
+};
+
+const kentsa: ExamConfig = {
+  id: "kentsa",
+  stateCode: "KENTSA",
+  idBase: 12700,
+  slug: "/kenya-driving-test",
+  landingPath: "/kenya-ntsa-driving-test",
+  name: "Kenya NTSA Driving Test Practice",
+  shortName: "Kenya driving test",
+  examLabel: "NTSA driving test",
+  fullName: "Kenya NTSA driving test theory (Highway Code, Category B)",
+  questionIdPrefix: "KENTSA-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Source: the Kenya Highway Code (NTSA) and the Traffic Act (Cap. 403), with the 2026
+  // drink-driving rules (LN 12/2026: zero for PSV, commercial and school transport drivers,
+  // 35 micrograms per 100 ml of breath for others). NTSA publishes no current question count,
+  // pass mark or per-topic split for the theory part; its 2019 written-test guidelines (Business
+  // Daily, 13 Dec 2019) set a minimum of 50 multiple-choice questions and 80% to pass, so four
+  // 50-question tests at 80% (40 of 50) is Tigertest's target. Topic weights are Tigertest's own.
+  // Pools are exactly 4x each count (no spares). Rules as checked on 2026-10-31. All items original.
+  blueprint: {
+    keLicence: 8,
+    keSigns: 10,
+    keJunctions: 8,
+    keRoad: 9,
+    keUsers: 6,
+    keParking: 5,
+    keConditions: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 12701, name: "Licences, Alcohol & Vehicle Care", categories: ["keLicence", "keConditions"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 12702, name: "Road Signs & Signals", categories: ["keSigns"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 12703, name: "Junctions & Roundabouts", categories: ["keJunctions"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 12704, name: "Speed, Overtaking & Road Position", categories: ["keRoad"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 12705, name: "Sharing the Road, Parking & Crashes", categories: ["keUsers", "keParking"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    keLicence: "Licences, Alcohol & the Law",
+    keSigns: "Road Signs & Signals",
+    keJunctions: "Junctions & Roundabouts",
+    keRoad: "Speed, Overtaking & Road Position",
+    keUsers: "Sharing the Road",
+    keParking: "Parking, Breakdowns & Crashes",
+    keConditions: "Night, Weather & Vehicle Care",
+  },
+  copy: {
+    guestPrompt: "to save your NTSA driving test progress and track every question you miss",
+    trainingHeading: "Train by Highway Code topic",
+    trainingSub: "Five sets covering the Kenya Highway Code and the Traffic Act rules the theory test asks about. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 40 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Signs weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your NTSA driving test.",
+    ],
+    sourceLine: "Based on the Kenya Highway Code and the Traffic Act. Original questions; 50 per test, 80% is Tigertest's target.",
+    analyticsKey: "kentsa",
+  },
+};
+
+const mykpp: ExamConfig = {
+  id: "mykpp",
+  stateCode: "MYKPP",
+  idBase: 12800,
+  slug: "/malaysia-kpp",
+  landingPath: "/malaysia-kpp01-practice-test",
+  name: "Malaysia KPP01 Practice Test",
+  shortName: "Malaysia KPP01",
+  examLabel: "KPP01 theory test",
+  fullName: "Malaysia JPJ KPP01 computer theory test (Ujian Undang-Undang Bahagian 1, car)",
+  questionIdPrefix: "MYKPP-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 84,
+  // Real test (JPJ KPP Gabungan FAQ, checked October 2026): car KPP01 computer test 50 questions in
+  // 45 minutes, 42 to pass; since 29 August 2025 the combined motorcycle + car module is 70
+  // questions in 1 h 15 min, 56 to pass (80%). JPJ publishes no topic counts; study guides say
+  // 15 sign questions (Bahagian A), 25 traffic rules (B) and 10 law/safety/KEJARA (C), so each test
+  // is 15 signs and markings, 25 rules/speed/parking/hazards, 10 licences/law/emergencies.
+  // Road Transport Act 1987, National Speed Limit Order 1989, RTA (Amendment) 2020. All items
+  // original. passPct 84 = ceil(0.84 * 50) = 42.
+  blueprint: {
+    mySigns: 11,
+    myMarkings: 4,
+    myRules: 10,
+    mySpeed: 6,
+    myParking: 3,
+    myLicence: 6,
+    myDefensive: 7,
+    myEmergency: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 12801, name: "Road Signs", categories: ["mySigns"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 12802, name: "Markings, Lights & Parking", categories: ["myMarkings", "myParking"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 3, id: 12803, name: "Traffic Rules & Right of Way", categories: ["myRules"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 12804, name: "Speed, Licences & the Law", categories: ["mySpeed", "myLicence"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 12805, name: "Defensive Driving & Emergencies", categories: ["myDefensive", "myEmergency"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    mySigns: "Road Signs",
+    myMarkings: "Road Markings & Traffic Lights",
+    myRules: "Traffic Rules & Right of Way",
+    mySpeed: "Speed, Lanes & Expressways",
+    myParking: "Parking & Stopping",
+    myLicence: "Licences, Law & KEJARA",
+    myDefensive: "Defensive Driving & Hazards",
+    myEmergency: "Breakdowns & Crashes",
+  },
+  copy: {
+    guestPrompt: "to save your KPP01 progress and track every question you miss",
+    trainingHeading: "Train by KPP01 topic",
+    trainingSub: "Five sets covering every part of the KPP01 syllabus, from road signs to expressway emergencies. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions like the real KPP01, 42 to pass",
+    heroSubs: [
+      "Five topics, four real-length tests. Signs weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your KPP01 test.",
+    ],
+    sourceLine: "Based on Malaysian road law and the JPJ KPP syllabus. Original questions; 50 per test, 42 to pass like the KPP01 computer test.",
+    analyticsKey: "mykpp",
+  },
+};
+
+const hkdrive: ExamConfig = {
+  id: "hkdrive",
+  stateCode: "HKDRIVE",
+  idBase: 12900,
+  slug: "/hong-kong-driving-test",
+  landingPath: "/hong-kong-driving-theory-test",
+  name: "Hong Kong Driving Theory Practice Test",
+  shortName: "Hong Kong driving test",
+  examLabel: "Hong Kong driving written test",
+  fullName: "Hong Kong Transport Department driving written test (Part A, private car)",
+  questionIdPrefix: "HKDRV-",
+  icon: "car",
+  testCount: 7,
+  questionsPerTest: 20,
+  passPct: 80,
+  // Real test (td.gov.hk "Part A Test (Written Test)", checked 2026-10-31): 20 multiple-choice
+  // questions with three options each, 16 or more right to pass, 20 minutes, computerised at the
+  // Cheung Sha Wan written test centre, mainly based on the Road Users' Code (TD, effective
+  // 19 June 2020) plus recent law changes. TD publishes no per-topic counts; this split follows
+  // the Code's chapters with signs and markings weighted heaviest. Seven real-length tests; pools
+  // are 7x each count plus 60 training-only spares. passPct 80 = ceil(0.8 * 20) = 16. Includes
+  // the eDL (15 Sep 2025), child restraints for under 8s below 1.35 m (1 Nov 2025) and the
+  // two-device, 19 cm rule for phones in front of drivers (25 Jan 2026). All items original.
+  blueprint: {
+    hkLicence: 3,
+    hkSigns: 4,
+    hkJunctions: 3,
+    hkRoad: 3,
+    hkSafety: 2,
+    hkSharing: 2,
+    hkParking: 2,
+    hkConditions: 1,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 12901, name: "Licences, Seat Belts & Phones", categories: ["hkLicence", "hkSafety"], size: 47, weightLabel: "5 of 20 test questions" },
+    { setNumber: 2, id: 12902, name: "Signs, Signals & Markings", categories: ["hkSigns"], size: 34, weightLabel: "4 of 20 test questions" },
+    { setNumber: 3, id: 12903, name: "Junctions & Sharing the Road", categories: ["hkJunctions", "hkSharing"], size: 48, weightLabel: "5 of 20 test questions" },
+    { setNumber: 4, id: 12904, name: "Speed, Lanes & Parking", categories: ["hkRoad", "hkParking"], size: 47, weightLabel: "5 of 20 test questions" },
+    { setNumber: 5, id: 12905, name: "Night, Weather & Emergencies", categories: ["hkConditions"], size: 24, weightLabel: "1 of 20 test questions" },
+  ],
+  categoryLabels: {
+    hkLicence: "Licences, Alcohol & Drugs",
+    hkSigns: "Signs, Signals & Markings",
+    hkJunctions: "Junctions, Roundabouts & Crossings",
+    hkRoad: "Speed, Lanes & Expressways",
+    hkSafety: "Seat Belts, Children & Phones",
+    hkSharing: "Sharing the Road",
+    hkParking: "Stopping & Parking",
+    hkConditions: "Night, Weather & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your written test progress and track every question you miss",
+    trainingHeading: "Train by Road Users' Code topic",
+    trainingSub: "Five sets covering every part of the Road Users' Code the written test asks about. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 20 questions like the real test, 16 to pass",
+    heroSubs: [
+      "Five topics, seven real-length tests. Signs and markings weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your written test.",
+    ],
+    sourceLine: "Based on the Hong Kong Road Users' Code. Original questions; 20 per test, 16 to pass like the real test (which has 3 options per question).",
+    analyticsKey: "hkdrive",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

@@ -13,7 +13,8 @@ import {
 } from "@/lib/region";
 import { useStore } from "@/store/useStore";
 
-export const FLAGS: Record<Region, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", IE: "🇮🇪", AU: "🇦🇺", NZ: "🇳🇿", IN: "🇮🇳" };
+export const FLAGS: Record<Region, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", IE: "🇮🇪", AU: "🇦🇺", NZ: "🇳🇿", IN: "🇮🇳",
+  PH: "🇵🇭", MY: "🇲🇾", SG: "🇸🇬", HK: "🇭🇰", AE: "🇦🇪", ZA: "🇿🇦", NG: "🇳🇬", KE: "🇰🇪" };
 
 /** The saved country, if any (client only). */
 export function readRegionCookie(): Region | null {
@@ -62,7 +63,7 @@ export function saveRegion(r: Region) {
 
 /**
  * The country picker above the catalog search. On a country homepage ("/",
- * /uk, /ie, /ca, /au, /nz, /in) each pill is a real link to that country's page, so crawlers
+ * /uk, /nz, /ph...) each pill is a real link to that country's page, so crawlers
  * follow them too; a tap also saves the country (middleware.ts reads it). On
  * the /tests hub (`onChange` set) the pills are buttons and the hub reorders.
  */
@@ -112,6 +113,14 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
     };
   }, []);
 
+  // Scroll the current country's flag into the middle of the row (no page scroll).
+  useEffect(() => {
+    const el = box.current?.firstElementChild as HTMLElement | null | undefined;
+    const on = el?.querySelector<HTMLElement>('[aria-checked="true"], [aria-current="page"]');
+    if (!el || !on) return;
+    el.scrollLeft = on.offsetLeft - (el.clientWidth - on.offsetWidth) / 2;
+  }, [current]);
+
   function save(r: Region) {
     saveRegion(r);
     setSource("chosen");
@@ -127,8 +136,8 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
 
   const pill = (on: boolean) =>
     // Text colours matter where flag emoji fall back to letters (Windows shows
-    // "GB", "US"...). Narrower below 360px so seven fit on a 320px screen.
-    `flex h-11 w-9 items-center justify-center rounded-full transition-colors min-[360px]:w-11 sm:w-12 ${
+    // "GB", "US"...). shrink-0 keeps every flag full size in the scrolling row.
+    `flex h-11 w-11 shrink-0 items-center justify-center rounded-full transition-colors sm:w-12 ${
       on
         ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
         : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
@@ -137,7 +146,8 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
   const label = (r: (typeof REGIONS)[number]) => (
     <span aria-hidden="true" className="text-2xl leading-none">{FLAGS[r.code]}</span>
   );
-  const row = "inline-grid grid-cols-7 gap-1 rounded-full border border-brand-border bg-white dark:bg-gray-900 p-1 shadow-sm";
+  // One row that scrolls sideways when the flags outgrow the screen, never a second line.
+  const row = "relative flex max-w-full gap-1 overflow-x-auto rounded-full border border-brand-border bg-white dark:bg-gray-900 p-1 shadow-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden";
 
   return (
     <div ref={box} className="flex flex-col items-center">

@@ -25,6 +25,14 @@ const hubs: Record<string, ShareCard> = {
   in: { title: "Free practice tests for India", lines: ["Free practice tests", "for India"], description: "Learner's licence, government job exams and IT certifications.", footer: "Find your test at tigertest.io/in", color: "#B35A00", tint: "#FFF3E0", mascots: ["dmv", "nclex", "aws"] },
   ie: { title: "Free practice tests for Ireland", lines: ["Free practice tests", "for Ireland"], description: "Driver Theory Test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ie", color: "#13704A", tint: "#E6F5EC", mascots: ["dmv", "sat", "aws"] },
   nz: { title: "Free practice tests for New Zealand", lines: ["Free practice tests", "for New Zealand"], description: "Learner licence, college entrance and IT certifications.", footer: "Find your test at tigertest.io/nz", color: "#1F2A44", tint: "#ECEFF6", mascots: ["dmv", "sat", "aws"] },
+  ph: { title: "Free practice tests for the Philippines", lines: ["Free practice tests", "for the Philippines"], description: "LTO exam reviewer, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ph", color: "#1F3A5F", tint: "#EAF0F7", mascots: ["dmv", "sat", "aws"] },
+  my: { title: "Free practice tests for Malaysia", lines: ["Free practice tests", "for Malaysia"], description: "KPP01 theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/my", color: "#7A1FA2", tint: "#F5EAFA", mascots: ["dmv", "sat", "aws"] },
+  sg: { title: "Free practice tests for Singapore", lines: ["Free practice tests", "for Singapore"], description: "Basic Theory Test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/sg", color: "#A30000", tint: "#FCEBEB", mascots: ["dmv", "sat", "aws"] },
+  hk: { title: "Free practice tests for Hong Kong", lines: ["Free practice tests", "for Hong Kong"], description: "Driving theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/hk", color: "#A3007A", tint: "#FBE9F5", mascots: ["dmv", "sat", "aws"] },
+  ae: { title: "Free practice tests for the UAE", lines: ["Free practice tests", "for the UAE"], description: "Driving theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ae", color: "#0C6B52", tint: "#E6F5F0", mascots: ["dmv", "sat", "aws"] },
+  za: { title: "Free practice tests for South Africa", lines: ["Free practice tests", "for South Africa"], description: "K53 learner's test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/za", color: "#4F7408", tint: "#F0F6E3", mascots: ["dmv", "sat", "aws"] },
+  ng: { title: "Free practice tests for Nigeria", lines: ["Free practice tests", "for Nigeria"], description: "Highway Code driving test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ng", color: "#1B6B20", tint: "#E8F4E9", mascots: ["dmv", "sat", "aws"] },
+  ke: { title: "Free practice tests for Kenya", lines: ["Free practice tests", "for Kenya"], description: "NTSA driving test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ke", color: "#066A6E", tint: "#E4F4F5", mascots: ["dmv", "sat", "aws"] },
 };
 
 const dmvCopy: Record<string, { title: (state?: string) => string; description: string; footer: string }> = {
@@ -567,5 +575,37 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "iedtt": {
     "color": "hsl(142, 40%, 28%)",
     "tint": "hsl(142, 40%, 96%)"
+  },
+  "phlto": {
+    "color": "hsl(212, 40%, 26%)",
+    "tint": "hsl(212, 40%, 95%)"
+  },
+  "zak53": {
+    "color": "hsl(81, 90%, 30%)",
+    "tint": "hsl(81, 60%, 95%)"
+  },
+  "sgbtt": {
+    "color": "hsl(0, 100%, 32%)",
+    "tint": "hsl(0, 70%, 96%)"
+  },
+  "aerta": {
+    "color": "hsl(162, 80%, 26%)",
+    "tint": "hsl(162, 55%, 95%)"
+  },
+  "ngfrsc": {
+    "color": "hsl(123, 60%, 26%)",
+    "tint": "hsl(123, 45%, 95%)"
+  },
+  "kentsa": {
+    "color": "hsl(182, 90%, 26%)",
+    "tint": "hsl(182, 60%, 95%)"
+  },
+  "mykpp": {
+    "color": "hsl(280, 100%, 48%)",
+    "tint": "hsl(280, 80%, 96%)"
+  },
+  "hkdrive": {
+    "color": "hsl(314, 100%, 42%)",
+    "tint": "hsl(314, 80%, 96%)"
   }
 };

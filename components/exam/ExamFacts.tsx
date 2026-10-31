@@ -6,7 +6,7 @@ import { ORGANIZATION_ID } from "@/lib/siteSchema";
 import { regionOfTest } from "@/lib/region";
 
 // Pages for the UK, Canada and Australia are written in that country's English.
-const LANGUAGE_BY_REGION = { US: "en-US", GLOBAL: "en-US", UK: "en-GB", CA: "en-CA", AU: "en-AU", IN: "en-IN", IE: "en-IE", NZ: "en-NZ" } as const;
+const LANGUAGE_BY_REGION = { US: "en-US", GLOBAL: "en-US", UK: "en-GB", CA: "en-CA", AU: "en-AU", IN: "en-IN", IE: "en-IE", NZ: "en-NZ", PH: "en-PH", MY: "en-MY", SG: "en-SG", HK: "en-HK", AE: "en-AE", ZA: "en-ZA", NG: "en-NG", KE: "en-KE" } as const;
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Sparkles, ChevronDown, CheckCircle2, AlertTriangle, XCircle, DollarSign, TrendingUp, Repeat, Wrench } from "lucide-react";
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
 import type { DailyBrief } from "@/lib/server/dailyBrief";
@@ -79,6 +79,85 @@ function Th({ children, right, title, sticky }: { children: React.ReactNode; rig
     <th title={title} className={`font-medium pb-2 px-2 whitespace-nowrap ${right ? "text-right" : "text-left"} ${sticky ? STICKY_COL : ""}`}>
       {children}
     </th>
+  );
+}
+
+type CountryId = OpportunitiesPayload["countries"][number]["id"];
+const COUNTRY_SHORT: Record<string, string> = { GLOBAL: "World" };
+
+/** Practice, people, visitors and money per country; a row filters the exam table below. */
+function CountriesCard({ data, selected, onSelect }: {
+  data: OpportunitiesPayload;
+  selected: CountryId | "all";
+  onSelect: (id: CountryId | "all") => void;
+}) {
+  const rows = data.countries;
+  const maxAnswers = Math.max(...rows.map((c) => c.answers30d), 1);
+  const totalAnswers = rows.reduce((n, c) => n + c.answers30d, 0);
+  const tracked = data.countriesSince !== null;
+  return (
+    <Card
+      title="By country"
+      subtitle={tracked ? `Visitors by their country since ${fmtDay(data.countriesSince!)}, practice by the exam's` : "Practice by the exam's country"}
+    >
+      <TableScroll className="-mx-2">
+        <table className="w-full text-sm">
+          <thead className="text-xs text-gray-500 dark:text-gray-400">
+            <tr className={ROW}>
+              <Th sticky>Country</Th>
+              <Th right title="Exams with any practice in 30 days, of the exams listed">Exams in use</Th>
+              <Th right>Answers, 30d</Th>
+              <Th right title="Answers in the 30 days before that">vs prior 30d</Th>
+              <Th right title="Share of all answers in 30 days">Share</Th>
+              <Th right title="Distinct people per exam, summed: someone on two exams counts twice">Learners</Th>
+              <Th right title="First visits from the country, by IP, 30 days">Visitors, 30d</Th>
+              <Th right title="Accounts created from the country, by IP">Signups</Th>
+              <Th right>Revenue, 30d</Th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((c) => {
+              const active = selected === c.id;
+              return (
+                <tr
+                  key={c.id}
+                  onClick={() => onSelect(active ? "all" : c.id)}
+                  className={`${ROW} border-t border-gray-100 dark:border-gray-800 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800/50 ${active ? "bg-blue-50 dark:bg-blue-950" : ""}`}
+                  title={active ? "Show every exam" : `Show only ${c.label} exams below`}
+                >
+                  <td className={`py-2 px-2 ${STICKY_COL}`}>
+                    <p className="font-medium text-gray-900 dark:text-gray-50 whitespace-nowrap">{c.label}</p>
+                    <p className="text-[11px] text-gray-500 dark:text-gray-400 truncate max-w-[9rem] sm:max-w-[16rem]">
+                      {c.topExams.length > 0 ? c.topExams.join(", ") : "No practice in 30 days"}
+                    </p>
+                  </td>
+                  <td className="py-2 px-2 text-right tabular-nums whitespace-nowrap">
+                    {fmtInt(c.activeExams)} <span className="text-gray-400">of {fmtInt(c.exams)}</span>
+                  </td>
+                  <td className="py-2 px-2 text-right">
+                    <Bar value={c.answers30d} max={maxAnswers} color={COLORS.users} label={fmtInt(c.answers30d)} />
+                  </td>
+                  <td className="py-2 px-2 text-right text-xs whitespace-nowrap">
+                    {c.answersPrev30d > 0 ? <Delta now={c.answers30d} prev={c.answersPrev30d} /> : <span className="text-gray-400">new</span>}
+                  </td>
+                  <td className="py-2 px-2 text-right tabular-nums">{totalAnswers > 0 ? fmtPct(c.answers30d / totalAnswers) : "n/a"}</td>
+                  <td className="py-2 px-2 text-right tabular-nums">{fmtInt(c.learners)}</td>
+                  <td className="py-2 px-2 text-right tabular-nums">{c.visitors30d === null ? <span className="text-gray-400">·</span> : fmtInt(c.visitors30d)}</td>
+                  <td className="py-2 px-2 text-right tabular-nums">{c.signups === null ? <span className="text-gray-400">·</span> : fmtInt(c.signups)}</td>
+                  <td className="py-2 px-2 text-right tabular-nums">{c.revenue30dCents > 0 ? fmtDollars(c.revenue30dCents) : <span className="text-gray-400">·</span>}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </TableScroll>
+      <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
+        Tap a country to filter the exam table. Answers and learners are filed by the exam&apos;s country (a Canadian on the DMV test counts under the US);
+        visitors and signups by the visitor&apos;s.
+        {data.otherCountryVisitors30d !== null && ` ${fmtInt(data.otherCountryVisitors30d)} first visits in 30 days came from countries with no tests of their own.`}
+        {!tracked && " Visitors and signups by country fill in from this release on."} Only US exams sell: checkout is in US dollars.
+      </p>
+    </Card>
   );
 }
 
@@ -165,13 +244,28 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
 }) {
   const [showNotes, setShowNotes] = useState(false);
   const [showAllExams, setShowAllExams] = useState(false);
+  const [country, setCountry] = useState<CountryId | "all">("all");
+  const [query, setQuery] = useState("");
   const s = data.scoreboard;
-  // Busiest first (the API's order); the long tail is one click away.
+  // A cached payload from before the By country card has no countries.
+  const hasCountries = Array.isArray(data.countries) && data.countries.length > 0;
+  // Busiest first (the API's order), narrowed by country and search; the
+  // long tail is one click away.
   const EXAMS_SHOWN = 12;
-  const shownExams = showAllExams ? data.exams : data.exams.slice(0, EXAMS_SHOWN);
-  const idleCount = data.exams.filter((e) => e.answers30d === 0 && e.purchasesAll === 0).length;
+  const filteredExams = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return data.exams.filter(
+      (e) =>
+        (country === "all" || (e.region ?? "US") === country) &&
+        (!q || e.label.toLowerCase().includes(q) || e.id.includes(q) || e.group.toLowerCase().includes(q)),
+    );
+  }, [data.exams, country, query]);
+  const narrowed = country !== "all" || query.trim() !== "";
+  const shownExams = showAllExams || narrowed ? filteredExams : filteredExams.slice(0, EXAMS_SHOWN);
+  const idleCount = filteredExams.filter((e) => e.answers30d === 0 && e.purchasesAll === 0).length;
   const maxAnswers = Math.max(...data.exams.map((e) => e.answers30d), 1);
   const maxRevenue = Math.max(...data.exams.map((e) => e.revenueAllCents), 1);
+  const countryLabel = (id: string) => COUNTRY_SHORT[id] ?? id;
   const visits7Total = data.sources.reduce((n, x) => n + x.visits7d, 0);
   const maxSource = Math.max(...data.sources.map((x) => x.visits7d), 1);
   const maxPaywallViews = Math.max(...data.paywalls.map((p) => p.hitsAll), 1);
@@ -240,17 +334,48 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
           />
         </div>
 
+        {/* Countries */}
+        {hasCountries && <CountriesCard data={data} selected={country} onSelect={setCountry} />}
+
         {/* Exams */}
         <Card
-          title="Every exam: practice and money"
+          title={country === "all" ? "Every exam: practice and money" : `${data.countries.find((c) => c.id === country)?.label ?? country}: practice and money`}
           subtitle={
-            data.exams.length > EXAMS_SHOWN && (
+            !narrowed && filteredExams.length > EXAMS_SHOWN ? (
               <button onClick={() => setShowAllExams((v) => !v)} className="underline underline-offset-2 hover:text-gray-800 dark:hover:text-gray-100">
-                {showAllExams ? `Show the top ${EXAMS_SHOWN}` : `Show all ${data.exams.length} exams (${idleCount} with no practice in 30 days)`}
+                {showAllExams ? `Show the top ${EXAMS_SHOWN}` : `Show all ${filteredExams.length} exams (${idleCount} with no practice in 30 days)`}
               </button>
+            ) : (
+              narrowed && `${filteredExams.length} exams, ${idleCount} with no practice in 30 days`
             )
           }
         >
+          <div className="flex flex-wrap items-center gap-2 mb-3">
+            {hasCountries && (
+              <div className="flex flex-wrap gap-1">
+                {(["all", ...data.countries.map((c) => c.id)] as const).map((id) => (
+                  <button
+                    key={id}
+                    onClick={() => setCountry(id)}
+                    className={`text-[11px] font-medium rounded-md px-2 py-1 ${
+                      country === id
+                        ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900"
+                        : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50"
+                    }`}
+                  >
+                    {id === "all" ? "All" : countryLabel(id)}
+                  </button>
+                ))}
+              </div>
+            )}
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Find an exam or group"
+              className="text-xs rounded-md border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 px-2 py-1 w-full sm:w-48 sm:ml-auto"
+            />
+          </div>
           <TableScroll className="-mx-2">
             <table className="w-full text-sm">
               <thead className="text-xs text-gray-500 dark:text-gray-400">
@@ -260,6 +385,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                   <Th right title="Distinct people (accounts and guest browsers) with at least one answer, all time">People</Th>
                   <Th right>Answers, 30d</Th>
                   <Th right title="Answers in the 30 days before that">vs prior 30d</Th>
+                  <Th right title="Every answer filed under the exam since the per-exam split, history seeded from accounts">All time</Th>
                   <Th right>Paywall views, 30d</Th>
                   <Th right>Purchases</Th>
                   <Th right>Revenue</Th>
@@ -270,7 +396,10 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                   <tr key={e.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
                     <td className={`py-2 px-2 ${STICKY_COL}`}>
                       <p className="font-medium text-gray-900 dark:text-gray-50 whitespace-nowrap">{e.label}</p>
-                      <p className="text-[11px] text-gray-500 dark:text-gray-400 truncate max-w-[8.5rem] sm:max-w-none" title={e.group}>{e.group}</p>
+                      <p className="text-[11px] text-gray-500 dark:text-gray-400 truncate max-w-[8.5rem] sm:max-w-none" title={e.group}>
+                        {e.region && <span className="font-medium">{countryLabel(e.region)} · </span>}
+                        {e.group}
+                      </p>
                     </td>
                     <td className="py-2 px-2">
                       {e.monetized ? (
@@ -286,6 +415,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                     <td className="py-2 px-2 text-right text-xs whitespace-nowrap">
                       {e.answersPrev30d > 0 ? <Delta now={e.answers30d} prev={e.answersPrev30d} /> : <span className="text-gray-400">new</span>}
                     </td>
+                    <td className="py-2 px-2 text-right tabular-nums">{e.answersAll === undefined ? "·" : fmtInt(e.answersAll)}</td>
                     <td className="py-2 px-2 text-right tabular-nums">{e.monetized ? fmtInt(e.paywallHits30d) : <span className="text-gray-400">·</span>}</td>
                     <td className="py-2 px-2 text-right tabular-nums">
                       {fmtInt(e.purchasesAll)}
@@ -300,6 +430,11 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                     </td>
                   </tr>
                 ))}
+                {shownExams.length === 0 && (
+                  <tr>
+                    <td colSpan={9} className="py-4 px-2 text-center text-xs text-gray-500 dark:text-gray-400">No exam matches.</td>
+                  </tr>
+                )}
               </tbody>
             </table>
           </TableScroll>

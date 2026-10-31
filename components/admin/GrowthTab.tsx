@@ -56,7 +56,6 @@ interface Metrics {
   activeWeekly: { date: string; count: number }[];
   activeMonthly: { date: string; count: number }[];
   // Optional: older cached payloads predate the per-exam split.
-  questionsByExam?: { id: string; label: string; total: number; last7d: number; prev7d: number; today: number; enrolled?: number }[];
   launchTest?: { id: string; name: string; subject: string; sent: number; clicked: number; bought: number }[];
   // Optional: absent from payloads that predate quizzes (lib/quizzes.ts).
   quizzes?: {
@@ -698,83 +697,6 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
   );
 }
 
-function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
-  rows: NonNullable<Metrics["questionsByExam"]>;
-  totalQuestions: number;
-  backfillPending: boolean;
-}) {
-  const attributed = rows.reduce((n, r) => n + r.total, 0);
-  const max = rows.length > 0 ? rows[0].total : 0;
-  return (
-    <div className={CARD}>
-      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
-        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">Questions by exam</h2>
-        <p className="text-xs text-gray-500 dark:text-gray-400">
-          {fmtInt(attributed)} attributed of {fmtInt(totalQuestions)} all-time
-        </p>
-      </div>
-      {rows.length === 0 ? (
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          {backfillPending ? "Seeding history from user records…" : "No answers recorded yet."}
-        </p>
-      ) : (
-        <TableScroll>
-          <table className="w-full text-sm">
-            <thead>
-              <tr className={`${ROW} text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400`}>
-                <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Exam</th>
-                <th className="text-right font-medium pb-2 pl-4">Today</th>
-                <th className="text-right font-medium pb-2 pl-4">Last 7d</th>
-                <th className="text-right font-medium pb-2 pl-4">All-time</th>
-                <th className="text-right font-medium pb-2 pl-4" title="Distinct people who answered at least one question">Enrolled</th>
-                <th className="text-right font-medium pb-2 pl-4 w-1/3 hidden sm:table-cell">Share</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((r) => (
-                <tr key={r.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
-                  <td className={`py-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{r.label}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.today)}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300 whitespace-nowrap">
-                    {fmtInt(r.last7d)}
-                    <span className="ml-1.5 text-[11px]">
-                      <Delta now={r.last7d} prev={r.prev7d} suffix="vs prior 7d" />
-                    </span>
-                  </td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50">{fmtInt(r.total)}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50">
-                    {r.enrolled !== undefined ? fmtInt(r.enrolled) : "—"}
-                  </td>
-                  <td className="py-2 pl-4 hidden sm:table-cell">
-                    <div className="flex items-center gap-2 justify-end">
-                      <div className="h-1.5 w-full max-w-[160px] bg-gray-100 dark:bg-gray-800 rounded overflow-hidden">
-                        <div
-                          className="h-full rounded"
-                          style={{ width: `${max > 0 ? (r.total / max) * 100 : 0}%`, background: COLORS.engagement }}
-                        />
-                      </div>
-                      <span className="text-[11px] text-gray-500 dark:text-gray-400 tabular-nums w-10 text-right">
-                        {attributed > 0 ? `${((r.total / attributed) * 100).toFixed(0)}%` : "—"}
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </TableScroll>
-      )}
-      <p className="mt-4 text-[11px] text-gray-500 dark:text-gray-400">
-        Every training and test answer, guests included, filed under the exam it belongs to.
-        Signed-in history is seeded from user records; guest answers before the split shipped
-        only count in the all-time total above. Enrolled counts distinct people with at least one
-        answer in the exam, all-time: accounts plus guest browsers (a guest who signs up counts once).
-        {backfillPending ? " History seed is running; refresh in a minute." : ""}
-      </p>
-    </div>
-  );
-}
-
 function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) {
   const max = data.byPick.reduce((m, r) => Math.max(m, r.clicks), 0);
   const pickLabel = (id: string) => data.byPick.find((p) => p.id === id)?.label ?? id;
@@ -1260,12 +1182,12 @@ export function GrowthTab() {
           </ChartCard>
         </div>
 
-        {/* Questions by exam */}
-        <QuestionsByExam
-          rows={metrics.questionsByExam ?? []}
-          totalQuestions={kpis.totalQuestions}
-          backfillPending={metrics.questionsByExamBackfillPending === true}
-        />
+        {/* Per-exam and per-country practice live on the Today tab. */}
+        {metrics.questionsByExamBackfillPending && (
+          <p className="mb-4 text-xs text-gray-500 dark:text-gray-400">
+            Seeding per-exam answer history from account records; the Today tab&apos;s exam table fills in when it finishes.
+          </p>
+        )}
 
         {/* SAT, ACT and the other v2 exams with Basics: steps and Basics use */}
         <BasicsProgress />

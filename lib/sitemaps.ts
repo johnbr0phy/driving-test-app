@@ -111,7 +111,7 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
       return [
         { url: `${SITE_URL}/tests`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "weekly", priority: 0.8 },
         // Country homepages (lib/region.ts); "/" is the US one, in the dmv segment.
-        ...["uk", "ie", "ca", "au", "nz", "in"].map((c) => ({ url: `${SITE_URL}/${c}`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "daily" as const, priority: 0.9 })),
+        ...["uk", "ie", "ca", "au", "nz", "in", "ph", "my", "sg", "hk", "ae", "za", "ng", "ke"].map((c) => ({ url: `${SITE_URL}/${c}`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "daily" as const, priority: 0.9 })),
         { url: `${SITE_URL}/teach`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.7 },
         ...EXAMS_V2.map((exam) => ({
           url: `${SITE_URL}${exam.landingPath}`,

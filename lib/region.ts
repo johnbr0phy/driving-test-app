@@ -1,11 +1,12 @@
 // Which country's tests a visitor sees first. Each country has its own
-// indexable homepage: the US at "/", the others at /uk, /ie, /ca, /au, /nz and /in. A view
+// indexable homepage: the US at "/", the others at /uk, /ie, /ca, /au, /nz, /in,
+// /ph, /my, /sg, /hk, /ae, /za, /ng and /ke. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
 // first visit and sends a visitor from any other country we cover from "/" to their
 // country's page; the CountryPills change it.
 
-export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN";
+export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE";
 
 export const REGIONS: { code: Region; name: string; short: string; inName: string }[] = [
   { code: "US", name: "United States", short: "US", inName: "the US" },
@@ -15,6 +16,14 @@ export const REGIONS: { code: Region; name: string; short: string; inName: strin
   { code: "AU", name: "Australia", short: "AU", inName: "Australia" },
   { code: "NZ", name: "New Zealand", short: "NZ", inName: "New Zealand" },
   { code: "IN", name: "India", short: "IN", inName: "India" },
+  { code: "PH", name: "Philippines", short: "PH", inName: "the Philippines" },
+  { code: "MY", name: "Malaysia", short: "MY", inName: "Malaysia" },
+  { code: "SG", name: "Singapore", short: "SG", inName: "Singapore" },
+  { code: "HK", name: "Hong Kong", short: "HK", inName: "Hong Kong" },
+  { code: "AE", name: "United Arab Emirates", short: "UAE", inName: "the UAE" },
+  { code: "ZA", name: "South Africa", short: "ZA", inName: "South Africa" },
+  { code: "NG", name: "Nigeria", short: "NG", inName: "Nigeria" },
+  { code: "KE", name: "Kenya", short: "KE", inName: "Kenya" },
 ];
 
 /** The chosen region, e.g. "UK". */
@@ -24,7 +33,7 @@ export const REGION_SOURCE_COOKIE = "tt-region-src";
 export const REGION_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
 export function isRegion(v: unknown): v is Region {
-  return v === "US" || v === "CA" || v === "UK" || v === "AU" || v === "IN" || v === "IE" || v === "NZ";
+  return REGIONS.some((r) => r.code === v);
 }
 
 /** ISO 3166 country code (Vercel's x-vercel-ip-country) to a region; null for countries we have no tests for. */
@@ -37,17 +46,26 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     case "IN": return "IN";
     case "IE": return "IE";
     case "NZ": return "NZ";
+    case "PH": return "PH";
+    case "MY": return "MY";
+    case "SG": return "SG";
+    case "HK": return "HK";
+    case "AE": return "AE";
+    case "ZA": return "ZA";
+    case "NG": return "NG";
+    case "KE": return "KE";
     default: return null;
   }
 }
 
-/** A country's homepage: "/" for the US, else /uk, /ie, /ca, /au, /nz or /in. */
+/** A country's homepage: "/" for the US, else /uk, /nz, /ph and so on (the code in lower case). */
 export function regionHomePath(r: Region): string {
   return r === "US" ? "/" : `/${r.toLowerCase()}`;
 }
 
 /** hreflang for each country's homepage, the US page doubling as the default. */
-export const REGION_HREFLANG: Record<Region, string> = { US: "en-US", CA: "en-CA", UK: "en-GB", AU: "en-AU", IN: "en-IN", IE: "en-IE", NZ: "en-NZ" };
+export const REGION_HREFLANG: Record<Region, string> = { US: "en-US", CA: "en-CA", UK: "en-GB", AU: "en-AU", IN: "en-IN", IE: "en-IE", NZ: "en-NZ",
+  PH: "en-PH", MY: "en-MY", SG: "en-SG", HK: "en-HK", AE: "en-AE", ZA: "en-ZA", NG: "en-NG", KE: "en-KE" };
 
 export function regionInfo(r: Region) {
   return REGIONS.find((x) => x.code === r)!;
@@ -67,6 +85,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   aunsw: "AU", auvic: "AU", auqld: "AU", auwa: "AU", ausa: "AU", naplan: "AU", nswsel: "AU", auwhite: "AU",
   naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
   nzroad: "NZ",
+  phlto: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", zak53: "ZA", ngfrsc: "NG", kentsa: "KE",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
   aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL",
   netplus: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", itil: "GLOBAL", psm: "GLOBAL", capm: "GLOBAL",
@@ -145,6 +164,70 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     cta: { label: "Learner licence test", href: "/nz-learner-licence-practice-test" },
     testsTitle: "Learner licence theory test",
     testsSub: "200 questions on the Road Code, in km/h for left-hand traffic. The real test is 35 questions and you need 32 right.",
+  },
+  PH: {
+    title: "Free LTO Exam Reviewer: Philippines Driving Test | Tigertest",
+    description: "Free LTO exam reviewer for the Philippines: 200 original questions on road signs, right of way and traffic laws, every answer explained. No account needed.",
+    lead: "Practice for the LTO written exam for your driver's licence. Original questions on signs, markings, right of way and road safety laws, every answer explained. No signup.",
+    cta: { label: "LTO exam reviewer", href: "/lto-exam-reviewer-practice-test" },
+    testsTitle: "LTO driver's licence exam",
+    testsSub: "200 questions on Philippine traffic rules, in km/h for right-hand traffic. Three full 60-question tests, 48 to pass.",
+  },
+  MY: {
+    title: "Free KPP01 Practice Test: Malaysia Driving Theory | Tigertest",
+    description: "Free KPP01 theory test practice for Malaysia: 200 original questions on road signs, rules and safe driving, every answer explained. No account needed.",
+    lead: "Practice for the JPJ KPP01 theory test before your learner's licence. Original questions on signs, rules and safe driving, every answer explained. No signup.",
+    cta: { label: "KPP01 theory test", href: "/malaysia-kpp01-practice-test" },
+    testsTitle: "KPP01 theory test",
+    testsSub: "200 questions on Malaysian road rules, in km/h for left-hand traffic. The real test is 50 questions and you need 42 right.",
+  },
+  SG: {
+    title: "Free Singapore BTT Practice Test: Basic Theory | Tigertest",
+    description: "Free Basic Theory Test practice for Singapore: 200 original questions on the official handbook, every answer explained. No account needed.",
+    lead: "Practice for the Basic Theory Test, the first step to a Singapore driving licence. Original questions on signs, rules and safe driving, every answer explained. No signup.",
+    cta: { label: "Basic Theory Test", href: "/singapore-btt-practice-test" },
+    testsTitle: "Basic Theory Test",
+    testsSub: "200 questions on Singapore road rules, in km/h for left-hand traffic. Four full 50-question tests.",
+  },
+  HK: {
+    title: "Free Hong Kong Driving Theory Test Practice | Tigertest",
+    description: "Free driving written test practice for Hong Kong: 200 original questions on the Road Users' Code, every answer explained. No account needed.",
+    lead: "Practice for the Transport Department's private car written test. Original questions on the Road Users' Code, every answer explained. No signup.",
+    cta: { label: "Driving theory test", href: "/hong-kong-driving-theory-test" },
+    testsTitle: "Private car written test",
+    testsSub: "200 questions on the Road Users' Code, in km/h for left-hand traffic. The real test is 20 questions and you need 16 right.",
+  },
+  AE: {
+    title: "Free UAE Driving Theory Test Practice | Tigertest",
+    description: "Free driving theory test practice for the UAE: 200 original questions on road signs, rules and safe driving, every answer explained. No account needed.",
+    lead: "Practice for the RTA theory test, an early step to a UAE driving licence. Original questions on signs, rules and safe driving, every answer explained. No signup.",
+    cta: { label: "UAE theory test", href: "/uae-driving-theory-test" },
+    testsTitle: "Driving theory test",
+    testsSub: "200 questions on UAE road rules, in km/h for right-hand traffic. Four full 40-question tests, 30 to pass.",
+  },
+  ZA: {
+    title: "Free K53 Learner's Test Practice: South Africa | Tigertest",
+    description: "Free K53 learner's licence practice for South Africa: 200 original questions on rules, signs and vehicle controls, every answer explained. No account needed.",
+    lead: "Practice for the K53 learner's licence test. Original questions on rules of the road, signs and vehicle controls, every answer explained. No signup.",
+    cta: { label: "K53 learner's test", href: "/k53-learners-test" },
+    testsTitle: "K53 learner's licence test",
+    testsSub: "200 questions on South African road rules, in km/h for left-hand traffic. Four full 50-question tests.",
+  },
+  NG: {
+    title: "Free Nigeria Driving Test Practice: Highway Code | Tigertest",
+    description: "Free driving test practice for Nigeria: 200 original questions on the FRSC Highway Code, every answer explained. No account needed.",
+    lead: "Practice for the theory part of your driving test. Original questions on the Highway Code, road signs and safe driving, every answer explained. No signup.",
+    cta: { label: "Highway Code test", href: "/nigeria-driving-test-practice" },
+    testsTitle: "Highway Code driving test",
+    testsSub: "200 questions on the Nigeria Highway Code, in km/h for right-hand traffic. Four full 50-question tests.",
+  },
+  KE: {
+    title: "Free Kenya NTSA Driving Test Practice | Tigertest",
+    description: "Free driving test practice for Kenya: 200 original questions on the Highway Code and Traffic Act, every answer explained. No account needed.",
+    lead: "Practice for the theory part of the NTSA driving test. Original questions on the Highway Code, signs and safe driving, every answer explained. No signup.",
+    cta: { label: "NTSA driving test", href: "/kenya-ntsa-driving-test" },
+    testsTitle: "NTSA driving test",
+    testsSub: "200 questions on the Kenya Highway Code, in km/h for left-hand traffic. Four full 50-question tests.",
   },
 };
 

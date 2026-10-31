@@ -11,7 +11,7 @@ import {
 // Country for the homepage and the /tests hub (lib/region.ts). A first visit
 // takes the country Vercel reports for the request; after that the cookie
 // wins, including a country the visitor picked. A visitor from a country
-// with its own page opening "/" is sent to /uk, /ie, /ca, /au, /nz or /in, each its own indexable page;
+// with its own page opening "/" is sent to its country page (/uk, /nz, /ph...), each its own indexable page;
 // everyone else stays on the US homepage.
 //
 // Crawlers never get a location: whatever IP they crawl from, they see "/"

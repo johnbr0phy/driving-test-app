@@ -211,6 +211,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
                 <div
                   role="radiogroup"
                   aria-label="Show tests for"
+                  className="max-h-[min(24rem,60vh)] overflow-y-auto"
                   onKeyDown={(e) => {
                     if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
                     e.preventDefault();

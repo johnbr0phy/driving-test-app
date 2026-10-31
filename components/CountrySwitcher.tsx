@@ -43,7 +43,7 @@ export function CountrySwitcher() {
       </PopoverTrigger>
       <PopoverContent align="end" side="top" className="w-52 p-1">
         <p className="px-2 pb-1 pt-1.5 text-[11px] font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Show tests for</p>
-        <ul>
+        <ul className="max-h-[min(24rem,60vh)] overflow-y-auto">
           {REGIONS.map((r) => {
             const on = r.code === region;
             return (

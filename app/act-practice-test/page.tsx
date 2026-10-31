@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest ACT practice test free?",
-    a: "Yes. Both full-length practice tests, their scores and every explanation, and all eleven skill drills are free with no account required. The one paid extra is optional: Tigertest Premium ($9.99, once) opens your full study plan and mistake notebook on the stats page.",
+    a: "Yes, all of it. Both full-length practice tests, their scores and every explanation, all eleven skill drills and your stats page are free with no account required and no paywall.",
   },
 ];
 

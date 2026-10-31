@@ -10,10 +10,8 @@
 //   3. Practice test scores.
 //   4. Mistake notebook: every question got wrong, to retry in place.
 //
-// Premium (US exams, like the v1 stats; class students and other countries'
-// exams see everything): the estimate, the #1 topic and the tests are free,
-// which is the hook; the rest of the plan and the notebook past two rows are
-// locked, with the points the locked topics are worth shown on the lock.
+// Premium is switched off for now (V2_STATS_PAYWALL): everything is free.
+// When on, US exams lock the plan past #1 and the notebook past two rows.
 // Common Mistakes (?tab=community) appears once the nightly cron has enough
 // answers for the exam.
 
@@ -42,6 +40,8 @@ import { PaywallModal } from "@/components/PaywallModal";
 import { GatedStatsList, LockedPreview, STATS_FREE_ROWS, StatsPageShell, StatsTab, StatsTabs } from "@/components/stats/StatsParts";
 import { V2StatsRow, plainStem } from "./V2StatsRow";
 
+/** Whether v2 stats sell Premium. Off: the whole plan and notebook are free. */
+const V2_STATS_PAYWALL = false;
 /** Topics shown before the lock (the #1 move is the free taste of the plan). */
 const FREE_TOPICS = 1;
 /** Mistakes shown before the lock. */
@@ -67,11 +67,13 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   const goal = goalFor(exam, savedGoal);
   const isGuest = useStore((s) => s.isGuest || !s.userId);
 
-  // Premium gate: the same rule as the v1 stats page.
+  // Premium gate, off for now (Oct 31, 2026): every v2 stat is free. Flip
+  // V2_STATS_PAYWALL to bring back the v1 rule (US exams locked past the #1
+  // topic and two mistakes; class students and other countries free).
   const { isPremium: paid, ready: premiumReady } = useIsPremium();
   const [inClass, setInClass] = useState(false);
   useEffect(() => setInClass(isClassStudent(exam.id)), [exam.id]);
-  const unlocked = regionOfTest(exam.id) !== "US" || paid || inClass;
+  const unlocked = !V2_STATS_PAYWALL || regionOfTest(exam.id) !== "US" || paid || inClass;
   const upgrade = useUpgradeFlow(`${exam.id}_stats`, routes.stats);
   const openPaywall = (item: string, label: string) =>
     upgrade.openPaywall("full_stats", `${V2_PAYWALL_PREFIX}${exam.id}_${item}`, `${exam.shortName} ${label}`);

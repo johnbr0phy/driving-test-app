@@ -25,8 +25,10 @@ function hasPositionDependentAnswers(question: Question): boolean {
   // Korean has no space before the particle ("A와 B"), so that branch uses \s*
   // rather than the \s+ the Latin-script branches rely on. Chinese is the same
   // ("A和B都对"), and its "of the above" options start with 以上 ("以上都对"),
-  // which never starts a plain answer ("18岁及以上" ends with it).
-  const positionReferencePattern = /\b(A|B|C|D)\s+(and|or|y|o|và|hoặc|,)\s+(A|B|C|D)\b|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b|\bTanto\s+(A|B|C|D)\s+como\s+(A|B|C|D)\b|\bAll of the above\b|\bNone of the above\b|\bTodas las anteriores\b|\bNinguna de las anteriores\b|Tất cả các câu trên|Không câu nào đúng|(A|B|C|D)\s*(와|과|및)\s*(A|B|C|D)|위의 모든 것|위의 어느 것도 아님|위 항목 모두|정답 없음|(A|B|C|D)\s*(和|与|或|及|、)\s*(A|B|C|D)|^以上/i;
+  // which never starts a plain answer ("18岁及以上" ends with it). English
+  // "All of these" and Korean "이 모두" are matched as whole options only, so
+  // they stay last like the Spanish, Vietnamese and Chinese "of the above".
+  const positionReferencePattern = /\b(A|B|C|D)\s+(and|or|y|o|và|hoặc|,)\s+(A|B|C|D)\b|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b|\bTanto\s+(A|B|C|D)\s+como\s+(A|B|C|D)\b|\bAll of the above\b|\bNone of the above\b|^All of these$|^이 모두$|\bTodas las anteriores\b|\bNinguna de las anteriores\b|Tất cả các câu trên|Không câu nào đúng|(A|B|C|D)\s*(와|과|및)\s*(A|B|C|D)|위의 모든 것|위의 어느 것도 아님|위 항목 모두|정답 없음|(A|B|C|D)\s*(和|与|或|及|、)\s*(A|B|C|D)|^以上/i;
 
   return options.some(option => positionReferencePattern.test(option));
 }

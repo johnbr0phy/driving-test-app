@@ -38,6 +38,8 @@ POSITION_RE = re.compile(
     r"|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b"
     r"|\bAll of the above\b"
     r"|\bNone of the above\b"
+    r"|^All of these$"
+    r"|^이 모두$"
     r"|\bTodas las anteriores\b"
     r"|\bNinguna de las anteriores\b"
     r"|Tất cả các câu trên"

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Check, ChevronDown, FileText, Library, Lock, Wrench } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, Library, Lock } from "lucide-react";
 import { CopyUrl } from "@/components/connect/CopyUrl";
 import { ClaudeLogo, OpenAILogo } from "@/components/connect/AssistantLogos";
 import { CreateYourQuizzes } from "@/components/quiz/create/CreateYourQuizzes";
+import CreateQuizDemo from "@/components/stageshow/demos/CreateQuizDemo";
 
 // /create: make a quiz. Quizzes are written by the person's own Claude or
 // ChatGPT, so this is how to add the Tigertest MCP server (app/api/mcp) as a
@@ -132,68 +133,6 @@ function Steps({ steps }: { steps: React.ReactNode[] }) {
   );
 }
 
-// The hero picture: a made-up chat where a pasted PDF becomes a Tigertest
-// quiz link, with the quiz itself floating beside it as it looks on a phone.
-function ChatMock() {
-  return (
-    <div className="relative mx-auto w-full max-w-md lg:max-w-none" aria-hidden="true">
-      <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-br from-orange-200/70 via-amber-100/60 to-transparent dark:from-orange-500/20 dark:via-amber-500/10 blur-2xl" />
-      <div className="relative rounded-3xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-2xl shadow-orange-900/10 overflow-hidden">
-        <div className="flex items-center gap-1.5 px-4 py-3 border-b border-gray-100 dark:border-gray-800">
-          <span className="w-2.5 h-2.5 rounded-full bg-gray-200 dark:bg-gray-700" />
-          <span className="w-2.5 h-2.5 rounded-full bg-gray-200 dark:bg-gray-700" />
-          <span className="w-2.5 h-2.5 rounded-full bg-gray-200 dark:bg-gray-700" />
-          <span className="ml-3 text-xs text-gray-500 dark:text-gray-400">Your chat</span>
-        </div>
-        <div className="p-4 sm:p-5 sm:pb-14 space-y-4 text-sm">
-          <div className="flex flex-col items-end gap-1.5">
-            <div className="inline-flex items-center gap-2 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-950 px-3 py-2 text-gray-700 dark:text-gray-200">
-              <FileText className="w-4 h-4 text-red-500" />
-              bio-chapter-4.pdf
-            </div>
-            <div className="max-w-[85%] rounded-2xl rounded-br-md bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-4 py-2.5">
-              Turn this into a Tigertest quiz with 20 questions.
-            </div>
-          </div>
-          <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 dark:bg-orange-950 text-orange-700 dark:text-orange-300 px-3 py-1 text-xs font-medium">
-            <Wrench className="w-3.5 h-3.5" />
-            Used Tigertest: create quiz
-          </div>
-          <div className="space-y-3 text-gray-800 dark:text-gray-100">
-            <p>Done! Here&apos;s your quiz:</p>
-            <div className="flex items-center gap-3 rounded-2xl border border-gray-200 dark:border-gray-800 p-3">
-              <Image src="/tiger_face_03.png" alt="" width={44} height={49} className="flex-shrink-0" />
-              <div className="min-w-0 flex-1">
-                <div className="font-semibold text-gray-900 dark:text-gray-50 truncate">Cell Biology: Chapter 4</div>
-                <div className="text-xs text-gray-500 dark:text-gray-400 truncate">20 questions · tigertest.io/q/K7RM2Q</div>
-              </div>
-              <span className="flex-shrink-0 rounded-full bg-orange-700 text-white px-3 py-1.5 text-xs font-semibold">Play</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="hidden sm:block relative -mt-10 ml-auto mr-2 w-64 rotate-[3deg] rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-xl p-4 text-xs">
-        <div className="flex items-center justify-between text-gray-400 mb-2">
-          <span>Question 7 of 20</span>
-          <span className="text-green-600 dark:text-green-400 font-semibold">6 right</span>
-        </div>
-        <div className="h-1.5 rounded-full bg-gray-100 dark:bg-gray-800 mb-3">
-          <div className="h-1.5 w-1/3 rounded-full bg-orange-500" />
-        </div>
-        <p className="font-semibold text-gray-900 dark:text-gray-50 mb-2">Which organelle makes most of the cell&apos;s ATP?</p>
-        <div className="space-y-1.5">
-          <div className="rounded-lg border border-gray-200 dark:border-gray-800 px-2.5 py-1.5 text-gray-600 dark:text-gray-300">Ribosome</div>
-          <div className="flex items-center justify-between rounded-lg border border-green-500 bg-green-50 dark:bg-green-950 px-2.5 py-1.5 font-medium text-green-700 dark:text-green-300">
-            Mitochondrion <Check className="w-3.5 h-3.5" />
-          </div>
-          <div className="rounded-lg border border-gray-200 dark:border-gray-800 px-2.5 py-1.5 text-gray-600 dark:text-gray-300">Golgi apparatus</div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function SetupCard({ id, name, note, steps }: { id: string; name: string; note: string; steps: React.ReactNode[] }) {
   return (
     <section id={id} aria-labelledby={`${id}-heading`} className={`${card} p-6 md:p-8 scroll-mt-20`}>
@@ -236,7 +175,9 @@ export default function CreatePage() {
               </a>
             </div>
           </div>
-          <ChatMock />
+          <div className="mx-auto w-full max-w-[400px] lg:mx-0 lg:justify-self-end" aria-label="Animation: a chat turns a PDF into a Tigertest quiz link, then the quiz opens on a phone" role="img">
+            <CreateQuizDemo />
+          </div>
         </div>
       </div>
 

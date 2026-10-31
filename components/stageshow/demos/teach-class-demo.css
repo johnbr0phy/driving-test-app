@@ -1,0 +1,412 @@
+/* The /teach hero demo. Every rule is scoped under .tc; sizes inside the
+   Phone are iOS points (the Phone scales its screen). */
+
+.tc {
+  & .ss-stage {
+    --gutter: 32px;
+    --tc-brand: #c2410c;
+    --tc-ink: #111827;
+    --tc-ink-2: #6b7280;
+    --tc-line: #e5e7eb;
+    --tc-flash: #fff1e6;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #f6efe7;
+  }
+
+  /* Device pair: the class page pinned top-left, off the bottom */
+  .tc-window {
+    position: absolute;
+    top: var(--gutter);
+    left: var(--gutter);
+    width: 620px;
+    height: 520px;
+    box-shadow: var(--ss-shadow-hero);
+  }
+
+  /* The student's phone straddles the page's right edge, over its margin */
+  .tc-phone {
+    position: absolute;
+    top: 64px;
+    right: var(--gutter);
+    border-radius: 52px;
+    box-shadow: var(--ss-shadow-satellite), 0 30px 50px -20px rgba(80, 40, 10, 0.35);
+  }
+
+  /* ---- Class page ---- */
+
+  .tc-page {
+    height: 100%;
+    padding: 22px 24px;
+    background: #f9fafb;
+    color: var(--tc-ink);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .tc-head {
+    display: grid;
+    gap: 4px;
+  }
+
+  .tc-title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .tc-sub {
+    font-size: 13px;
+    line-height: 1.3;
+    color: var(--tc-ink-2);
+  }
+
+  .tc-card {
+    padding: 12px 14px 4px;
+    border-radius: 12px;
+    border: 1px solid var(--tc-line);
+    background: #fff;
+  }
+
+  .tc-card__title {
+    padding: 0 0 6px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .tc-row {
+    display: grid;
+    align-items: center;
+    gap: 12px;
+    margin: 0 -8px;
+    padding: 9px 8px;
+    border-top: 1px solid #f3f4f6;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.3;
+    transition: background-color 1.2s ease;
+  }
+
+  .tc-row[data-flash] {
+    animation: tc-flash 2.4s ease;
+  }
+
+  .tc-row--student {
+    grid-template-columns: 92px 104px 120px 1fr;
+  }
+
+  .tc-row--q {
+    grid-template-columns: 1fr 128px 120px;
+  }
+
+  .tc-row--q > :last-child {
+    grid-column: 2;
+  }
+
+  .tc-row--filler {
+    height: 35px;
+  }
+
+  .tc-name {
+    font-weight: 600;
+  }
+
+  .tc-when {
+    color: var(--tc-ink-2);
+  }
+
+  /* Today and Just now share one cell and crossfade, so nothing beside them moves */
+  .tc-when__swap {
+    display: grid;
+  }
+
+  .tc-when__swap > span {
+    grid-area: 1 / 1;
+    transition: opacity 0.35s ease;
+  }
+
+  .tc-when__swap > span:last-child {
+    opacity: 0;
+  }
+
+  .tc-when__swap[data-on] > span:first-child {
+    opacity: 0;
+  }
+
+  .tc-when__swap[data-on] > span:last-child {
+    opacity: 1;
+  }
+
+  .tc-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #15803d;
+    font-weight: 600;
+  }
+
+  .tc-live__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: #22c55e;
+  }
+
+  .tc-num,
+  .tc-missed {
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .tc-fill {
+    justify-self: end;
+  }
+
+  .tc-q {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .tc-missed {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.3em;
+    color: #b91c1c;
+    font-weight: 600;
+  }
+
+  /* ---- The student's phone ---- */
+
+  .tc-phone-screen {
+    position: absolute;
+    inset: 0;
+    background: #f9fafb;
+    color: var(--tc-ink);
+  }
+
+  .tc-url {
+    position: absolute;
+    top: 58px;
+    left: 16px;
+    right: 16px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #ececf0;
+    font-size: 15px;
+    color: #3c3c43;
+  }
+
+  .tc-banner {
+    position: absolute;
+    top: 108px;
+    left: 16px;
+    right: 16px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #fff4ed;
+    color: #9a3412;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .tc-quiz {
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tc-quiz__meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 1.3;
+    color: var(--tc-ink-2);
+  }
+
+  .tc-quiz__track {
+    display: block;
+    height: 6px;
+    margin-top: 8px;
+    border-radius: 3px;
+    background: #e5e7eb;
+    overflow: hidden;
+  }
+
+  .tc-quiz__fill {
+    display: block;
+    width: 28%;
+    height: 100%;
+    border-radius: 3px;
+    background: var(--tc-brand);
+  }
+
+  .tc-quiz__question {
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .tc-quiz__options {
+    display: grid;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .tc-option {
+    display: grid;
+    grid-template-columns: 1fr 22px;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 16px;
+    border-radius: 14px;
+    border: 1.5px solid var(--tc-line);
+    background: #fff;
+    font-size: 17px;
+    line-height: 1.3;
+    will-change: transform;
+    transition:
+      border-color 0.2s ease,
+      background-color 0.2s ease,
+      opacity 0.3s ease,
+      transform 0.15s ease;
+  }
+
+  .tc-option[data-pressed] {
+    transform: scale(0.98);
+  }
+
+  .tc-option[data-wrong] {
+    border-color: #ef4444;
+    background: #fef2f2;
+    color: #b91c1c;
+    font-weight: 600;
+  }
+
+  .tc-option[data-right] {
+    border-color: #16a34a;
+    background: #f0fdf4;
+    color: #15803d;
+    font-weight: 600;
+  }
+
+  .tc-option[data-dim] {
+    opacity: 0.55;
+  }
+
+  .tc-option__mark {
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+  }
+
+  .tc-option__x {
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    background: #ef4444;
+    color: #fff;
+  }
+
+  .tc-option__check {
+    --ss-accent: #16a34a;
+  }
+
+  /* ---- Compact: the phone leads, the class page is a satellite card ---- */
+
+  & .ss-stage[data-layout="compact"] {
+    --gutter: 16px;
+  }
+
+  .ss-stage[data-layout="compact"] .tc-phone {
+    top: 24px;
+    right: auto;
+    left: var(--gutter);
+  }
+
+  .ss-stage[data-layout="compact"] .tc-quiz__meta {
+    font-size: 15px;
+  }
+
+  .tc-mini {
+    position: absolute;
+    top: 326px;
+    right: var(--gutter);
+    width: 236px;
+    box-shadow: var(--ss-shadow-satellite), 0 24px 40px -18px rgba(80, 40, 10, 0.35);
+  }
+
+  .tc-mini__body {
+    display: grid;
+    gap: 2px;
+    padding: 12px 12px 8px;
+    background: #fff;
+    color: var(--tc-ink);
+  }
+
+  .tc-mini__title {
+    padding-bottom: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .tc-mini__row {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+    margin: 0 -6px;
+    padding: 8px 6px;
+    border-top: 1px solid #f3f4f6;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .tc-mini__row[data-flash] {
+    animation: tc-flash 2.4s ease;
+  }
+
+  .tc-mini__row--q {
+    grid-template-columns: 1fr auto;
+  }
+
+  .tc-mini__num {
+    font-weight: 600;
+  }
+}
+
+@keyframes tc-flash {
+  0% {
+    background-color: transparent;
+  }
+  12% {
+    background-color: var(--tc-flash);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+:where(.dark) .tc .ss-stage {
+  background: #1a1410;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tc .tc-row[data-flash],
+  .tc .tc-mini__row[data-flash] {
+    animation: none;
+  }
+}

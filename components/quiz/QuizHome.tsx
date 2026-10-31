@@ -199,7 +199,7 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
                       setName(e.target.value);
                       setJoinError("");
                     }}
-                    placeholder="Maria G."
+                    placeholder="Barney B."
                     maxLength={40}
                     autoComplete="name"
                     aria-invalid={joinError ? true : undefined}

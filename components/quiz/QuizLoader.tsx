@@ -183,7 +183,7 @@ function ClassQuizGate({ code, locked, onJoined }: { code: string; locked: QuizC
               id="quiz-class-name"
               value={name}
               onChange={(e) => setName(e.target.value.slice(0, 40))}
-              placeholder="Maria G."
+              placeholder="Barney B."
               autoComplete="name"
             />
           </div>

@@ -114,7 +114,7 @@ export default function JoinClassPage() {
                 setName(e.target.value);
                 setError("");
               }}
-              placeholder="Maria G."
+              placeholder="Barney B."
               maxLength={40}
               autoComplete="name"
               autoFocus={!joined}

@@ -17,8 +17,7 @@ import { AdminLink } from "@/components/AdminLink";
 import { TeachLink } from "@/components/TeachLink";
 import { useExamStarted } from "@/hooks/useExamStarted";
 import { BrandLockup } from "@/components/BrandLockup";
-import { BarChart3, Users } from "lucide-react";
-import { useCommunityAvailable } from "@/hooks/useCommunityStats";
+import { BarChart3 } from "lucide-react";
 
 export function CDLHeader() {
   const { user } = useAuth();
@@ -65,12 +64,10 @@ export function CDLHeader() {
   // sign in to a guest, so the header leaves that ask to it.
   const onDashboard = bases.some((b) => pathname === `${b}/dashboard`);
   const hideHeader = bases.some((b) => pathname?.startsWith(`${b}/test`) || pathname?.startsWith(`${b}/practice/`));
-  // Stats and Common Mistakes for the exam on screen: a state version's own
-  // pages when inside one (/real-estate/ca/...), else the family's. Common
-  // Mistakes appears once that exam has enough answers (lib/communityStats.ts).
+  // Stats for the exam on screen: a state version's own page when inside one
+  // (/real-estate/ca/...), else the family's.
   const variant = variants.find((v) => pathname === v.slug || pathname?.startsWith(`${v.slug}/`));
   const statsBase = variant?.slug ?? theme.routeBase;
-  const communityOn = useCommunityAvailable(variant?.id ?? theme.id);
 
   if (hideHeader) {
     return null;
@@ -97,16 +94,6 @@ export function CDLHeader() {
               aria-label={t("stats.yourStats")}
             >
               <BarChart3 className="h-5 w-5 stats-icon" />
-            </Link>
-          )}
-          {(user || isGuest) && communityOn && (
-            <Link
-              href={`${statsBase}/stats?tab=community`}
-              className={`${user ? "flex" : "hidden sm:flex"} h-9 w-9 items-center justify-center rounded-full text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50`}
-              title={t("stats.commonMistakes")}
-              aria-label={t("stats.commonMistakes")}
-            >
-              <Users className="h-5 w-5" />
             </Link>
           )}
           {user ? (

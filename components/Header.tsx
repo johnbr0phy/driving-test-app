@@ -10,14 +10,12 @@ import { AdminLink } from "@/components/AdminLink";
 import { TeachLink } from "@/components/TeachLink";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { BarChart3, Users } from "lucide-react";
+import { BarChart3 } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSwitcher } from "@/components/TestSwitcher";
 import { EXAMS } from "@/lib/exams";
 import { useExamStarted } from "@/hooks/useExamStarted";
 import { BrandLockup } from "@/components/BrandLockup";
-import { useCommunityAvailable } from "@/hooks/useCommunityStats";
-import { COMMUNITY_DMV_KEY } from "@/lib/communityStats";
 
 export function Header() {
   const { user } = useAuth();
@@ -30,8 +28,6 @@ export function Header() {
   const dmvStarted = useExamStarted("dmv");
   const isGuest = guest && dmvStarted;
   const { t } = useTranslation();
-  // Common Mistakes appears once the DMV has enough answers (lib/communityStats.ts).
-  const communityOn = useCommunityAvailable(COMMUNITY_DMV_KEY);
 
   const displayPhotoURL = photoURL || user?.photoURL;
   const selectedState = useStore((state) => state.selectedState);
@@ -76,17 +72,6 @@ export function Header() {
                 aria-label={t("stats.yourStats")}
               >
                 <BarChart3 className="h-5 w-5 stats-icon" />
-              </Link>
-            )}
-            {/* On a phone a guest's header already holds "Sign up to save" */}
-            {(user || isGuest) && communityOn && (
-              <Link
-                href="/stats?tab=community"
-                className={`${user ? "flex" : "hidden sm:flex"} h-9 w-9 items-center justify-center rounded-full text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50`}
-                title={t("stats.commonMistakes")}
-                aria-label={t("stats.commonMistakes")}
-              >
-                <Users className="h-5 w-5" />
               </Link>
             )}
 

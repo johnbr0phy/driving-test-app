@@ -17,7 +17,7 @@ export const AWS: ExamV2Config = {
   fullName: "AWS Certified Cloud Practitioner (CLF-C02) exam",
   tagline: "65 questions in 90 minutes with choose-two and choose-three items, like the real CLF-C02.",
   icon: "cloud",
-  theme: { brand: "20 90% 46%", brandDark: "20 90% 34%", brandLight: "20 90% 95%" },
+  theme: { brand: "20 90% 42%", brandDark: "20 90% 34%", brandLight: "20 90% 95%" },
   breakSeconds: 0,
   sections: [
     {

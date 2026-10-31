@@ -18,7 +18,7 @@ export function PhonePreview() {
           <span className="ml-1 w-5 h-2.5 rounded-[3px] border border-current" />
         </span>
       </div>
-      <div className="shrink-0 mx-3 mt-1 mb-3 h-7 rounded-full bg-gray-200/70 dark:bg-gray-800 text-[11px] text-gray-500 dark:text-gray-400 flex items-center justify-center">
+      <div className="shrink-0 mx-3 mt-1 mb-3 h-7 rounded-full bg-gray-200/70 dark:bg-gray-800 text-[11px] text-gray-600 dark:text-gray-400 flex items-center justify-center">
         tigertest.io/c/K7QF2
       </div>
       <div className="px-3">

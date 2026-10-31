@@ -632,7 +632,7 @@
 
   /* VTNE theme: teal green */
   [data-theme="vtne"] {
-    --brand: 158 60% 34%;
+    --brand: 158 60% 32%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 158 65% 95%;
     --brand-hover: 158 60% 28%;
@@ -856,7 +856,7 @@
 
   /* NCLEX-PN theme: teal (v2 exam; matches lib/v2/exams/nclexpn.ts theme) */
   [data-theme="nclexpn"] {
-    --brand: 185 70% 34%;
+    --brand: 185 70% 32%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 185 70% 95%;
     --brand-hover: 185 70% 29%;
@@ -968,7 +968,7 @@
 
   /* 18th Edition wiring regulations theme (UK) */
   [data-theme="uk18ed"] {
-    --brand: 50 80% 30%;
+    --brand: 50 80% 29.5%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 50 80% 95%;
     --brand-hover: 50 80% 25%;
@@ -1177,7 +1177,7 @@
 
   /* White Card theme (Australia) */
   [data-theme="auwhite"] {
-    --brand: 28 85% 40%;
+    --brand: 28 85% 38.5%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 28 90% 95%;
     --brand-hover: 28 85% 34%;
@@ -1489,7 +1489,7 @@
 
   /* Australian citizenship test theme: Australian green */
   [data-theme="aucit"] {
-    --brand: 144 90% 30%;
+    --brand: 144 90% 27.5%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 144 70% 96%;
     --brand-hover: 144 90% 24%;
@@ -1503,7 +1503,7 @@
 
   /* Gulf nursing licensing exam theme: date-palm olive */
   [data-theme="gulfrn"] {
-    --brand: 69 75% 30%;
+    --brand: 69 75% 27.5%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 69 70% 96%;
     --brand-hover: 69 75% 24%;
@@ -1517,7 +1517,7 @@
 
   /* India RTO learner's licence theme: India green */
   [data-theme="inrto"] {
-    --brand: 116 85% 30%;
+    --brand: 116 85% 28.5%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 116 70% 96%;
     --brand-hover: 116 85% 24%;
@@ -1587,7 +1587,7 @@
 
   /* PMP theme: plum magenta (v2 exam; matches lib/v2/exams/pmp.ts theme) */
   [data-theme="pmp"] {
-    --brand: 305 90% 44%;
+    --brand: 305 90% 43%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 305 70% 96%;
     --brand-hover: 305 90% 38%;
@@ -1601,7 +1601,7 @@
 
   /* NASM CPT theme */
   [data-theme="nasm"] {
-    --brand: 12 90% 46%;
+    --brand: 12 90% 45.5%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 12 80% 96%;
     --brand-hover: 12 90% 41%;
@@ -3708,7 +3708,7 @@
     --brand-border-light: 268 34% 24%;
     --brand-border: 268 38% 34%;
     --brand-muted: 268 35% 45%;
-    --brand-dark: 268 80% 65%;
+    --brand-dark: 268 80% 68%;
     --brand-darker: 268 70% 78%;
   }
 

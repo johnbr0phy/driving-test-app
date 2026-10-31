@@ -14,7 +14,7 @@ export const TEAS: ExamV2Config = {
   fullName: "ATI TEAS 7 nursing school entrance exam",
   tagline: "Four timed sections like the real TEAS 7, scored as percentages.",
   icon: "graduation",
-  theme: { brand: "95 50% 36%", brandDark: "95 50% 24%", brandLight: "95 60% 95%" },
+  theme: { brand: "95 50% 34%", brandDark: "95 50% 24%", brandLight: "95 60% 95%" },
   breakSeconds: 600,
   sections: [
     {

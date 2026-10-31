@@ -440,8 +440,7 @@ function DashboardContent() {
 
         {/* Interleaved Training + Tests */}
         <div
-          className={`mb-6 space-y-2 ${noState ? "opacity-50 select-none cursor-pointer" : ""}`}
-          aria-hidden={noState || undefined}
+          className={`mb-6 ${noState ? "opacity-50 select-none cursor-pointer" : ""}`}
           // Locked until a state is chosen: a tap anywhere here points at the picker instead.
           onClickCapture={
             noState
@@ -454,6 +453,9 @@ function DashboardContent() {
               : undefined
           }
         >
+          {/* inert, not aria-hidden: the steps leave the tab order and the
+              accessibility tree, while a tap still reaches the nudge above. */}
+          <div className="space-y-2" inert={noState || undefined}>
           {[1, 2, 3, 4].map((id) => {
             const trainingProgress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
             const trainingComplete = trainingProgress.complete;
@@ -668,6 +670,7 @@ function DashboardContent() {
               </div>
             );
           })}
+          </div>
         </div>
 
         <SuperAmazingCard dashboardKey="dmv" allComplete={allComplete} totalSteps={totalSteps} />

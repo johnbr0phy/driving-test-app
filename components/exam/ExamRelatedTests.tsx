@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { TEST_CATALOG, relatedTests } from "@/lib/testCatalog";
 import { CommunityUpsell } from "@/components/CommunityUpsell";
+import { regionHomePath, regionInfo, regionOfTest } from "@/lib/region";
 
 // "Related practice tests" block for an exam landing: the rest of the exam's
 // hub group (nursing, IT, driving...) plus a link to the hub. This is the
@@ -9,6 +10,10 @@ import { CommunityUpsell } from "@/components/CommunityUpsell";
 // Common Mistakes upsell, which appears once the exam has enough answers.
 export function ExamRelatedTests({ examId }: { examId: string }) {
   const tests = relatedTests(examId);
+  // A country's exam links up to that country's homepage (/ph, /uk...), the
+  // hub that collects its tests, so the country page earns links from them.
+  const region = regionOfTest(examId);
+  const country = region === "US" || region === "GLOBAL" ? null : regionInfo(region);
   if (tests.length === 0) return <CommunityUpsell examId={examId} />;
 
   return (
@@ -34,7 +39,12 @@ export function ExamRelatedTests({ examId }: { examId: string }) {
           </li>
         ))}
       </ul>
-      <p className="text-center mt-8">
+      <p className="text-center mt-8 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2">
+        {country && (
+          <Link href={regionHomePath(country.code)} className="text-brand-dark font-medium hover:underline">
+            Free practice tests for {country.inName}
+          </Link>
+        )}
         <Link href="/tests" className="text-brand-dark font-medium hover:underline">
           See all {TEST_CATALOG.length} practice tests
         </Link>

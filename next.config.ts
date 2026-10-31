@@ -46,6 +46,13 @@ const nextConfig: NextConfig = {
         destination:
           "https://driving-test-app-a5c67.firebaseapp.com/__/firebase/:path*",
       },
+      // IndexNow key file at the host root (/<key>.txt). The key's location
+      // sets which URLs it may submit, so a key served under /api/indexnow/
+      // could only vouch for URLs under that folder.
+      {
+        source: "/:key([0-9a-fA-F]{8,128}).txt",
+        destination: "/api/indexnow/key",
+      },
     ];
   },
   async redirects() {

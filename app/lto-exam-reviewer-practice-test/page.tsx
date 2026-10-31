@@ -6,6 +6,8 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import "@/lib/banks/phlto";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -261,6 +263,8 @@ export default function LtoExamLandingPage() {
           ))}
         </div>
       </div>
+
+      <ExamSampleQuestions examId="phlto" />
 
       <ExamRelatedTests examId="phlto" />
 

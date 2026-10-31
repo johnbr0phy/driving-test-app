@@ -17,7 +17,9 @@ import {
 // Crawlers never get a location: whatever IP they crawl from, they see "/"
 // itself, the same page as any visitor with no country, and reach the country
 // pages through links, the sitemap and hreflang.
-const CRAWLER = /bot|crawler|spider|slurp|bingpreview|facebookexternalhit|embedly|preview|lighthouse/i;
+// AI fetchers that act for a person (Claude-User, Perplexity-User) carry no
+// "bot" in their user-agent, so they are named.
+const CRAWLER = /bot|crawler|spider|slurp|bingpreview|facebookexternalhit|embedly|preview|lighthouse|claude-user|perplexity-user|chatgpt|google-extended|ccbot|anthropic/i;
 
 export function middleware(req: NextRequest) {
   const crawler = CRAWLER.test(req.headers.get("user-agent") ?? "");

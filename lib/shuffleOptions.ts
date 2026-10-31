@@ -15,7 +15,7 @@ function shuffle<T>(array: T[]): T[] {
 
 // Check if a question has position-dependent answers (e.g., "A and B", "Both B and C")
 // These questions should not have their answers randomized
-function hasPositionDependentAnswers(question: Question): boolean {
+export function hasPositionDependentAnswers(question: Question): boolean {
   const options = [question.optionA, question.optionB, question.optionC, question.optionD];
 
   // Pattern to detect references to other answer options (English, Spanish,

@@ -1,27 +1,33 @@
 "use client";
 
-// Stats page for the v2 exams, built from the same pieces as the registry
-// exam stats (components/stats/StatsParts): Your Stats / Common Mistakes tabs,
-// the header card, then a summary (tiles, topics weakest first, practice test
-// scores) and every question as a re-answerable row sortable by what you keep
-// missing. Like ExamStatsPage, US exams show the first rows free and lock the
-// rest behind Premium (students in a class on the exam and other countries'
-// exams see everything). Progress comes from useV2Store (lib/v2/questionStats),
-// so guests see their own local progress too. Common Mistakes appears once the
-// nightly cron finds enough answers (lib/communityStats.ts); ?tab=community
-// opens it.
+// Stats for the v2 exams (SAT, ACT, NCLEX...). Not a question table: these
+// exams never repeat a question, so the page answers "what would I score
+// today, and where are my next points?" (lib/v2/scoreEstimate.ts):
+//
+//   1. Score today: an estimate on the exam's own scale against the goal.
+//   2. Your fastest points: every topic (drill) ranked by the points it is
+//      worth at 90%, with the skills missed in it and a Practice button.
+//   3. Practice test scores.
+//   4. Mistake notebook: every question got wrong, to retry in place.
+//
+// Premium (US exams, like the v1 stats; class students and other countries'
+// exams see everything): the estimate, the #1 topic and the tests are free,
+// which is the hook; the rest of the plan and the notebook past two rows are
+// locked, with the points the locked topics are worth shown on the lock.
+// Common Mistakes (?tab=community) appears once the nightly cron has enough
+// answers for the exam.
 
 import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Target, TrendingUp, Users } from "lucide-react";
 import { ExamV2Config, QuestionV2 } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, v2Routes } from "@/lib/v2/registry";
-import { drillQuestions, drillStateFor, heldOutTests } from "@/lib/v2/training";
 import { goalFor } from "@/lib/v2/goals";
 import { V2_PAYWALL_PREFIX } from "@/lib/v2/premium";
 import { v2QuestionPerformance } from "@/lib/v2/questionStats";
+import { MIN_SECTION_ANSWERS, TARGET_ACCURACY, TopicEstimate, estimateScore } from "@/lib/v2/scoreEstimate";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
@@ -33,32 +39,13 @@ import { isClassStudent } from "@/lib/classProgress";
 import { regionOfTest } from "@/lib/region";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { PaywallModal } from "@/components/PaywallModal";
-import {
-  GatedStatsList,
-  STATS_FREE_ROWS,
-  StatsChip,
-  StatsHeaderCard,
-  StatsPageShell,
-  StatsSortBar,
-  StatsTab,
-  StatsTabs,
-  StatsTile,
-  accuracyChipColor,
-} from "@/components/stats/StatsParts";
+import { GatedStatsList, LockedPreview, STATS_FREE_ROWS, StatsPageShell, StatsTab, StatsTabs } from "@/components/stats/StatsParts";
 import { V2StatsRow, plainStem } from "./V2StatsRow";
 
-type SortField = "wrong" | "correct" | "answered" | "accuracy";
-
-interface Row {
-  question: QuestionV2;
-  answered: number;
-  correct: number;
-  wrong: number;
-  accuracy: number;
-  mastered: boolean;
-}
-
-const GREY = "text-gray-500 dark:text-gray-400";
+/** Topics shown before the lock (the #1 move is the free taste of the plan). */
+const FREE_TOPICS = 1;
+/** Mistakes shown before the lock. */
+const FREE_MISTAKES = 2;
 
 export function StatsV2({ exam }: { exam: ExamV2Config }) {
   return (
@@ -80,12 +67,11 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   const goal = goalFor(exam, savedGoal);
   const isGuest = useStore((s) => s.isGuest || !s.userId);
 
-  // Premium gate, the same rule as ExamStatsPage.
+  // Premium gate: the same rule as the v1 stats page.
   const { isPremium: paid, ready: premiumReady } = useIsPremium();
   const [inClass, setInClass] = useState(false);
   useEffect(() => setInClass(isClassStudent(exam.id)), [exam.id]);
-  const usExam = regionOfTest(exam.id) === "US";
-  const unlocked = !usExam || paid || inClass;
+  const unlocked = regionOfTest(exam.id) !== "US" || paid || inClass;
   const upgrade = useUpgradeFlow(`${exam.id}_stats`, routes.stats);
   const openPaywall = (item: string, label: string) =>
     upgrade.openPaywall("full_stats", `${V2_PAYWALL_PREFIX}${exam.id}_${item}`, `${exam.shortName} ${label}`);
@@ -96,111 +82,39 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   const showCommunity = communityOn && tab === "community";
   const { data: communityRaw, loading: communityLoading } = useExamCommunityStats(exam.id, communityOn);
 
-  const [sortField, setSortField] = useState<SortField>("wrong");
-  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
-
   const bank = useMemo(() => getBank(exam.id).questions, [exam.id]);
   const byId = useMemo(() => new Map(bank.map((q) => [q.id, q])), [bank]);
   const history = useMemo(() => resultsForExam(results, exam.id), [results, exam.id]);
-  const pct = exam.composite.max === 100 ? "%" : "";
+  const perf = useMemo(() => v2QuestionPerformance({ results, drills, questionStats }, exam.id), [results, drills, questionStats, exam.id]);
+  const estimate = useMemo(() => estimateScore(exam, bank, perf), [exam, bank, perf]);
 
-  const perf = useMemo(
-    () => v2QuestionPerformance({ results, drills, questionStats }, exam.id),
-    [results, drills, questionStats, exam.id],
-  );
+  const mistakes = useMemo(() => {
+    const mastered = new Set(Object.entries(drills).filter(([k]) => k.startsWith(`${exam.id}:`)).flatMap(([, d]) => d.masteredIds));
+    return [...perf.entries()]
+      .filter(([id, p]) => p.wrong > 0 && byId.has(id))
+      .map(([id, p]) => ({ question: byId.get(id)!, wrong: p.wrong, mastered: mastered.has(id) }))
+      .sort((a, b) => Number(a.mastered) - Number(b.mastered) || b.wrong - a.wrong);
+  }, [perf, drills, byId, exam.id]);
 
-  const topics = useMemo(() => {
-    return exam.drills.map((drill) => {
-      const questions = drillQuestions(bank, drill, exam);
-      const state = drillStateFor(drills, exam.id, drill, questions);
-      // By domain only: a drill draws from one section, but its domain is tested
-      // in others too (GCSE papers 2 and 3, EQAO session B, FS Maths section A).
-      // No domain belongs to two drills in any exam.
-      const items = history.flatMap((r) => r.items.filter((it) => drill.domains.includes(it.domain)));
-      return {
-        drill,
-        correct: state.correct + items.filter((it) => it.correct).length,
-        answered: state.seen + items.length,
-        mastered: state.masteredIds.length,
-        size: questions.length,
-      };
-    });
-  }, [exam, bank, drills, history]);
-
-  // Every question you could have met: the whole bank except a held-out test
-  // you have not sat (it stays unseen), plus anything you have answered.
-  const rows = useMemo((): Row[] => {
-    const heldOut = new Set(heldOutTests(exam));
-    const masteredIds = new Set(
-      Object.entries(drills).filter(([k]) => k.startsWith(`${exam.id}:`)).flatMap(([, d]) => d.masteredIds),
-    );
-    return bank
-      .filter((q) => !heldOut.has(q.test) || perf.has(q.id))
-      .map((question) => {
-        const p = perf.get(question.id);
-        const answered = p?.answered ?? 0;
-        return {
-          question,
-          answered,
-          correct: p?.correct ?? 0,
-          wrong: p?.wrong ?? 0,
-          accuracy: answered ? Math.round(((p?.correct ?? 0) / answered) * 100) : 0,
-          mastered: masteredIds.has(question.id),
-        };
-      });
-  }, [bank, exam, drills, perf]);
-
-  const sorted = useMemo(() => {
-    const key = (r: Row) => (sortField === "answered" ? r.answered : r[sortField]);
-    return [...rows].sort((a, b) => {
-      const c = key(a) - key(b);
-      return sortDirection === "asc" ? c : -c;
-    });
-  }, [rows, sortField, sortDirection]);
-
-  const communityRows = useMemo(() => {
-    if (!communityRaw) return [];
-    return communityRaw.questions.flatMap((c) => {
-      const question = byId.get(c.questionId);
-      return question ? [{ ...c, question }] : [];
-    });
-  }, [communityRaw, byId]);
-
-  const handleSort = (field: SortField) => {
-    if (sortField === field) setSortDirection(sortDirection === "asc" ? "desc" : "asc");
-    else {
-      setSortField(field);
-      setSortDirection("desc");
-    }
-  };
-
-  const chipFor = (r: Row): StatsChip => {
-    if (sortField === "wrong") return { value: `${r.wrong}`, label: "Wrong", color: r.wrong > 0 ? "text-red-600 dark:text-red-400" : GREY };
-    if (sortField === "correct") return { value: `${r.correct}`, label: "Correct", color: r.correct > 0 ? "text-green-600 dark:text-green-400" : GREY };
-    if (sortField === "answered") return { value: `${r.answered}`, label: "Answered", color: r.answered > 0 ? "text-gray-700 dark:text-gray-200" : GREY };
-    if (r.answered === 0) return { value: "–", label: "Accuracy", color: GREY };
-    return { value: `${r.accuracy}%`, label: "Accuracy", color: accuracyChipColor(r.accuracy) };
-  };
-
-  const subtitleFor = (q: QuestionV2) => (
-    <>
-      {exam.domainLabels[q.domain] ?? q.domain}
-      {q.skill && ` · ${q.skill}`}
-    </>
+  const communityRows = useMemo(
+    () => (communityRaw?.questions ?? []).flatMap((c) => (byId.get(c.questionId) ? [{ ...c, question: byId.get(c.questionId)! }] : [])),
+    [communityRaw, byId],
   );
 
   if (!hydrated) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
 
-  const answeredCount = perf.size;
-  const best = history.length ? Math.max(...history.map((r) => r.composite)) : null;
-  const totalAnswered = topics.reduce((a, t) => a + t.answered, 0);
-  const totalCorrect = topics.reduce((a, t) => a + t.correct, 0);
-  const missedCount = rows.filter((r) => r.wrong > 0).length;
-  const sortedTopics = [...topics].sort((a, b) => {
-    if (!a.answered || !b.answered) return Number(!a.answered) - Number(!b.answered);
-    return a.correct / a.answered - b.correct / b.answered;
-  });
-  const listReady = premiumReady;
+  const pct = exam.composite.max === 100;
+  const fmt = (n: number) => (pct ? `${n}%` : `${n}`);
+  const pts = (n: number) => (pct ? `+${n}%` : `+${n} pts`);
+  const subtitle = (q: QuestionV2) => `${exam.domainLabels[q.domain] ?? q.domain}${q.skill ? ` · ${q.skill}` : ""}`;
+
+  const plan = estimate.topics.filter((t) => t.gain > 0 || t.answered > 0);
+  const freePlan = unlocked ? plan : plan.slice(0, FREE_TOPICS);
+  const lockedPlan = unlocked ? [] : plan.slice(FREE_TOPICS);
+  // Topic gains overlap, so their sum is capped at the room left on the scale.
+  const headroom = exam.composite.max - (estimate.composite ?? exam.composite.min);
+  const lockedGain = Math.min(headroom, lockedPlan.reduce((a, t) => a + t.gain, 0));
+  const lastTest = history[0];
 
   return (
     <StatsPageShell backHref={routes.dashboard} backLabel="Back">
@@ -210,9 +124,9 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
         feature="full_stats"
         onUpgrade={upgrade.handleUpgrade}
         benefits={[
-          `See your accuracy on all ${rows.length} ${exam.shortName} questions`,
-          "See what you keep getting wrong, worst first, and retry each one",
-          ...(communityOn ? [`The ${exam.shortName} questions most students miss`] : []),
+          `Your full ${exam.shortName} study plan, every topic ranked by the points it's worth`,
+          "The exact skills you keep missing in each topic",
+          "Every mistake saved, to retry until it sticks",
           "Full stats on every US exam, the DMV included",
           "One payment, yours forever",
         ]}
@@ -223,175 +137,194 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
       {communityOn && <StatsTabs active={tab} onChange={setTab} yoursLabel="Your Stats" communityLabel="Common Mistakes" />}
 
       {showCommunity ? (
-        communityLoading ? (
-          <div className="space-y-3">
-            {[1, 2, 3].map((i) => <div key={i} className="h-16 bg-gray-100 dark:bg-gray-800 rounded-xl animate-pulse" />)}
+        <CommunityList
+          exam={exam}
+          loading={communityLoading || !premiumReady}
+          rows={communityRows}
+          totalUsers={communityRaw?.totalUsers ?? 0}
+          unlocked={unlocked}
+          subtitle={subtitle}
+          onUnlock={() => openPaywall("community_wrong_questions", "Common Mistakes")}
+        />
+      ) : estimate.answered === 0 ? (
+        <div className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-6 text-center">
+          <div className="mx-auto mb-3 w-10 h-10 rounded-full bg-brand-light flex items-center justify-center">
+            <Target className="h-5 w-5 text-brand-dark" />
           </div>
-        ) : communityRows.length === 0 ? (
-          <p className="text-gray-500 dark:text-gray-400 text-sm text-center py-8">Not enough data yet. Check back soon.</p>
-        ) : (
-          <div className="space-y-4">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              The {exam.shortName} questions students miss most, based on answers from{" "}
-              <span className="font-medium text-gray-700 dark:text-gray-200">{(communityRaw?.totalUsers ?? 0).toLocaleString()} real test takers</span>
-            </p>
-            {listReady && (
-              <GatedStatsList
-                items={communityRows}
-                isPremium={unlocked}
-                keyOf={(c) => c.questionId}
-                renderRow={(c) => (
-                  <V2StatsRow
-                    examId={exam.id}
-                    question={c.question}
-                    chip={{ value: `${c.errorRate}%`, label: "get this wrong", color: "text-red-500 dark:text-red-400" }}
-                    subtitle={subtitleFor(c.question)}
-                    footer={<p className="text-xs text-gray-500 dark:text-gray-400">{c.wrong} out of {c.total} people got this wrong</p>}
-                    onAnswer={(ok) => trackDailyQuizAnswer(ok, `stats_community_${exam.id}`)}
-                  />
-                )}
-                previewOf={(c) => ({ chip: { value: `${c.errorRate}%`, label: "get this wrong", color: "text-red-500 dark:text-red-400" }, text: plainStem(c.question) })}
-                lockTitle={`${communityRows.length - STATS_FREE_ROWS} more questions locked`}
-                lockSubtitle="Upgrade to see the full list"
-                lockCta="Unlock with Premium"
-                onUnlock={() => openPaywall("community_wrong_questions", "Common Mistakes")}
-              />
-            )}
-          </div>
-        )
+          <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">Your {exam.shortName} score, today</h1>
+          <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
+            Answer {estimate.sections.length > 1 ? `${MIN_SECTION_ANSWERS} questions in each section` : `${MIN_SECTION_ANSWERS} questions`} and we&apos;ll estimate your score and show you where your next points are.
+          </p>
+          <Link href={routes.dashboard} className="v2-tap mt-4 inline-flex items-center justify-center rounded-xl bg-brand px-5 text-sm font-bold text-white">
+            Start a drill
+          </Link>
+        </div>
       ) : (
         <>
-          <StatsHeaderCard
-            className="mb-4"
-            title="Your Stats"
-            subtitle={<>You&apos;ve answered {answeredCount} of {bank.length} {exam.shortName} questions.</>}
-          />
+          {/* 1. Score today */}
+          <section className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-5 mb-6 shadow-sm">
+            <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Your {exam.shortName} score today</p>
+            {estimate.composite !== null ? (
+              <>
+                <div className="mt-1 flex items-baseline gap-3">
+                  <span className="text-5xl font-black tabular-nums text-gray-900 dark:text-gray-50">{fmt(estimate.composite)}</span>
+                  <span className={`text-sm font-semibold ${estimate.composite >= goal ? "text-green-600 dark:text-green-400" : "text-gray-600 dark:text-gray-300"}`}>
+                    {estimate.composite >= goal ? `At your goal of ${fmt(goal)}` : `Goal ${fmt(goal)} · ${pct ? `${goal - estimate.composite} points` : goal - estimate.composite} to go`}
+                  </span>
+                </div>
+                <ScoreBar min={exam.composite.min} max={exam.composite.max} value={estimate.composite} goal={goal} />
+              </>
+            ) : (
+              <>
+                <div className="mt-1 text-5xl font-black text-gray-300 dark:text-gray-700">–</div>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                  {estimate.sections
+                    .filter((s) => s.needed > 0)
+                    .map((s) => `${s.needed} more ${estimate.sections.length > 1 ? `${s.section.shortName} ` : ""}question${s.needed === 1 ? "" : "s"}`)
+                    .join(" and ")}{" "}
+                  to see your score.
+                </p>
+              </>
+            )}
+            {estimate.sections.length > 1 && (
+              <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+                {estimate.sections.map((s) => (
+                  <div key={s.section.key} className="rounded-xl bg-gray-50 dark:bg-gray-800 px-3 py-2">
+                    <div className="text-[11px] text-gray-500 dark:text-gray-400 truncate">{s.section.shortName}</div>
+                    <div className="text-lg font-bold tabular-nums text-gray-900 dark:text-gray-50">
+                      {s.scaled === null ? "–" : s.section.scale.max === 100 ? `${s.scaled}%` : s.scaled}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+            <p className="mt-3 text-[11px] leading-snug text-gray-500 dark:text-gray-400">
+              Estimated from the {estimate.answered} question{estimate.answered === 1 ? "" : "s"} you&apos;ve answered, counting your first try.
+              {lastTest && <> Your last practice test: <span className="font-semibold">{fmt(lastTest.composite)}</span>.</>}
+            </p>
+          </section>
 
-          {answeredCount === 0 && (
-            <div className="rounded-xl border border-dashed border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 text-center mb-6">
-              <p className="text-sm text-gray-600 dark:text-gray-300">Nothing here yet. Answer a few drill questions or take a practice test and your scores and misses show up here.</p>
-              <Link href={routes.dashboard} className="v2-tap mt-4 inline-flex items-center justify-center rounded-xl bg-brand px-5 text-sm font-bold text-white">
-                Go to your dashboard
-              </Link>
+          {/* 2. Your fastest points */}
+          <div className="flex items-baseline justify-between mb-2">
+            <h2 className="text-base font-bold text-gray-900 dark:text-gray-50">Your fastest points</h2>
+            <span className="text-[11px] text-gray-500 dark:text-gray-400">if you get each topic to {Math.round(TARGET_ACCURACY * 100)}%</span>
+          </div>
+          {plan.length === 0 ? (
+            <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">Answer a few more questions and your plan shows up here.</p>
+          ) : (
+            <div className="space-y-2 mb-6">
+              {premiumReady ? (
+                <>
+                  {freePlan.map((t, i) => (
+                    <TopicCard key={t.drill.key} rank={i + 1} topic={t} pts={pts} href={routes.drill(t.drill.key)} open={i === 0} />
+                  ))}
+                  {lockedPlan.length > 0 && (
+                    <LockedPreview
+                      rows={lockedPlan.slice(0, 4).map((t) => ({
+                        key: t.drill.key,
+                        chip: { value: "+??", label: pct ? "points" : "pts", color: "text-brand-dark" },
+                        text: t.drill.name,
+                      }))}
+                      title={lockedGain > 0 ? `${lockedPlan.length} more topics worth up to ${pts(lockedGain)}` : `${lockedPlan.length} more topics in your plan`}
+                      subtitle="See every topic ranked by the points it's worth, and the exact skills you miss"
+                      cta="Unlock your full plan · $9.99"
+                      onUnlock={() => openPaywall("stats_plan", "Study Plan")}
+                    />
+                  )}
+                </>
+              ) : (
+                <div className="h-28 bg-gray-100 dark:bg-gray-800 rounded-xl animate-pulse" />
+              )}
             </div>
           )}
 
-          {answeredCount > 0 && (
-            <>
-              <div className="grid grid-cols-3 gap-2 mb-6">
-                <StatsTile value={`${answeredCount}`} label="Questions seen" />
-                <StatsTile value={totalAnswered ? `${Math.round((totalCorrect / totalAnswered) * 100)}%` : "–"} label="Accuracy" />
-                <StatsTile value={best === null ? "–" : `${best}${pct}`} label={`Best test · goal ${goal}${pct}`} good={best !== null && best >= goal} />
-              </div>
-
-              <h2 className="text-sm font-bold text-gray-900 dark:text-gray-50 mb-2">By topic, weakest first</h2>
-              <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 divide-y divide-gray-100 dark:divide-gray-800 mb-6">
-                {sortedTopics.map((t) => {
-                  const acc = t.answered ? Math.round((t.correct / t.answered) * 100) : null;
-                  return (
-                    <Link key={t.drill.key} href={routes.drill(t.drill.key)} className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800">
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-baseline justify-between gap-2">
-                          <span className="text-sm font-semibold text-gray-900 dark:text-gray-50 truncate">{t.drill.name}</span>
-                          <span className={`text-sm font-bold tabular-nums ${accColor(acc)}`}>{acc === null ? "–" : `${acc}%`}</span>
-                        </div>
-                        <div className="mt-1.5 h-1.5 rounded-full bg-gray-100 dark:bg-gray-800 overflow-hidden">
-                          <div className={`h-full rounded-full ${accBar(acc)}`} style={{ width: `${acc ?? 0}%` }} />
-                        </div>
-                        <div className="mt-1 text-[11px] text-gray-500 dark:text-gray-400">
-                          {t.answered ? `${t.correct} of ${t.answered} right` : "Not started"} · {t.mastered} of {t.size} mastered in the drill
-                        </div>
-                      </div>
-                      <ChevronRight className="h-4 w-4 text-gray-300 flex-shrink-0" />
-                    </Link>
-                  );
-                })}
-              </div>
-
-              {history.length > 0 && (
-                <>
-                  <h2 className="text-sm font-bold text-gray-900 dark:text-gray-50 mb-2">Practice test scores</h2>
-                  <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 divide-y divide-gray-100 dark:divide-gray-800 mb-6">
-                    {history.map((r) => (
-                      <Link key={`${r.key}:${r.completedAt}`} href={routes.results(r.testNumber)} className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800">
-                        <div className="flex-1 min-w-0">
-                          <div className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-                            {exam.tests.find((t) => t.number === r.testNumber)?.name ?? `Practice Test ${r.testNumber}`}
-                          </div>
-                          <div className="text-[11px] text-gray-500 dark:text-gray-400">
-                            {new Date(r.completedAt).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" })}
-                            {exam.sections.length > 1 && ` · ${r.sections.map((s) => `${getSectionV2(exam, s.section).shortName} ${s.scaled}`).join(" · ")}`}
-                          </div>
-                        </div>
-                        <span className={`text-lg font-black tabular-nums ${r.composite >= goal ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>
-                          {r.composite}{pct}
-                        </span>
-                        <ChevronRight className="h-4 w-4 text-gray-300 flex-shrink-0" />
-                      </Link>
-                    ))}
+          {/* 3. Practice tests */}
+          <h2 className="text-base font-bold text-gray-900 dark:text-gray-50 mb-2">Practice tests</h2>
+          {history.length === 0 ? (
+            <Link href={routes.dashboard} className="mb-6 flex items-center gap-3 rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800">
+              <TrendingUp className="h-4 w-4 text-brand-dark shrink-0" />
+              <span className="flex-1 text-sm text-gray-700 dark:text-gray-200">Take a full practice test for a real timed score.</span>
+              <ChevronRight className="h-4 w-4 text-gray-300" />
+            </Link>
+          ) : (
+            <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 divide-y divide-gray-100 dark:divide-gray-800 mb-6">
+              {history.map((r) => (
+                <Link key={`${r.key}:${r.completedAt}`} href={routes.results(r.testNumber)} className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800">
+                  <div className="flex-1 min-w-0">
+                    <div className="text-sm font-semibold text-gray-900 dark:text-gray-50">
+                      {exam.tests.find((t) => t.number === r.testNumber)?.name ?? `Practice Test ${r.testNumber}`}
+                    </div>
+                    <div className="text-[11px] text-gray-500 dark:text-gray-400">
+                      {new Date(r.completedAt).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" })}
+                      {exam.sections.length > 1 && ` · ${r.sections.map((s) => `${getSectionV2(exam, s.section).shortName} ${s.scaled}`).join(" · ")}`}
+                    </div>
                   </div>
-                </>
-              )}
+                  <span className={`text-lg font-black tabular-nums ${r.composite >= goal ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>{fmt(r.composite)}</span>
+                  <ChevronRight className="h-4 w-4 text-gray-300 flex-shrink-0" />
+                </Link>
+              ))}
+            </div>
+          )}
+
+          {/* 4. Mistake notebook */}
+          <div className="flex items-baseline justify-between mb-1">
+            <h2 className="text-base font-bold text-gray-900 dark:text-gray-50">Mistake notebook</h2>
+            {mistakes.length > 0 && <span className="text-[11px] text-gray-500 dark:text-gray-400">{mistakes.length} question{mistakes.length === 1 ? "" : "s"}</span>}
+          </div>
+          {mistakes.length === 0 ? (
+            <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">Nothing yet. Every question you miss lands here so you can retry it.</p>
+          ) : (
+            <>
+              <p className="mb-3 text-xs text-gray-500 dark:text-gray-400">Every question you&apos;ve missed. Tap one to try it again.</p>
+              <div className="space-y-2 mb-6">
+                {premiumReady &&
+                  (unlocked ? mistakes : mistakes.slice(0, FREE_MISTAKES)).map((m) => (
+                    <V2StatsRow
+                      key={m.question.id}
+                      examId={exam.id}
+                      question={m.question}
+                      chip={{ value: `${m.wrong}`, label: m.wrong === 1 ? "miss" : "misses", color: m.mastered ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400" }}
+                      subtitle={
+                        <>
+                          {subtitle(m.question)}
+                          {m.mastered && <span className="text-green-600 dark:text-green-400"> · mastered since</span>}
+                        </>
+                      }
+                      onAnswer={(ok) => trackDailyQuizAnswer(ok, `stats_${exam.id}`)}
+                    />
+                  ))}
+                {premiumReady && !unlocked && mistakes.length > FREE_MISTAKES && (
+                  <LockedPreview
+                    rows={mistakes.slice(FREE_MISTAKES, FREE_MISTAKES + 4).map((m) => ({
+                      key: m.question.id,
+                      chip: { value: `${m.wrong}`, label: m.wrong === 1 ? "miss" : "misses", color: "text-red-600 dark:text-red-400" },
+                      text: plainStem(m.question),
+                    }))}
+                    title={`${mistakes.length - FREE_MISTAKES} more mistakes saved`}
+                    subtitle="Retry every question you've missed until it sticks"
+                    cta="Unlock Premium for $9.99"
+                    onUnlock={() => openPaywall("stats_mistakes", "Mistake Notebook")}
+                  />
+                )}
+              </div>
             </>
           )}
 
-          <h2 className="text-sm font-bold text-gray-900 dark:text-gray-50 mb-1">Every question</h2>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
-            {missedCount > 0
-              ? `${missedCount} you've missed, worst first. Tap one to try it again.`
-              : "Tap any question to try it. Your misses rise to the top."}
-          </p>
-          <StatsSortBar
-            fields={[
-              { field: "wrong" as SortField, label: "Wrong" },
-              { field: "correct" as SortField, label: "Correct" },
-              { field: "answered" as SortField, label: "Answered" },
-              { field: "accuracy" as SortField, label: "Accuracy" },
-            ]}
-            sortField={sortField}
-            sortDirection={sortDirection}
-            onSort={handleSort}
-            count={`${sorted.length} questions`}
-          />
-          {listReady ? (
-            <GatedStatsList
-              items={sorted}
-              isPremium={unlocked}
-              keyOf={(r) => r.question.id}
-              renderRow={(r) => {
-                const chip = chipFor(r);
-                return (
-                  <V2StatsRow
-                    examId={exam.id}
-                    question={r.question}
-                    chip={chip}
-                    subtitle={
-                      <>
-                        {subtitleFor(r.question)}
-                        {r.mastered && r.wrong > 0 && <span className="text-green-600 dark:text-green-400"> · mastered in the drill</span>}
-                      </>
-                    }
-                    footer={
-                      <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
-                        <span>Answered: <span className="font-semibold text-gray-700 dark:text-gray-200">{r.answered}</span></span>
-                        <span>Correct: <span className="font-semibold text-green-600 dark:text-green-400">{r.correct}</span></span>
-                        <span>Wrong: <span className="font-semibold text-red-600 dark:text-red-400">{r.wrong}</span></span>
-                      </div>
-                    }
-                    onAnswer={(ok) => trackDailyQuizAnswer(ok, `stats_${exam.id}`)}
-                  />
-                );
-              }}
-              previewOf={(r) => ({ chip: chipFor(r), text: plainStem(r.question) })}
-              lockTitle={`${sorted.length - STATS_FREE_ROWS} more questions`}
-              lockSubtitle="Unlock Premium to see all your question stats"
-              lockCta="Unlock Premium for $9.99"
-              onUnlock={() => openPaywall("stats_question_list", "Stats Question List")}
-            />
-          ) : (
-            <div className="space-y-2">
-              {[1, 2, 3].map((i) => <div key={i} className="h-16 bg-gray-100 dark:bg-gray-800 rounded-xl animate-pulse" />)}
-            </div>
+          {communityOn && (
+            <button
+              type="button"
+              onClick={() => setTab("community")}
+              className="w-full rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 flex items-center gap-3 text-left hover:shadow-md transition-shadow"
+            >
+              <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                <Users className="h-4 w-4 text-brand-dark" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="font-semibold text-sm text-gray-900 dark:text-gray-50">Common Mistakes</div>
+                <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">The {exam.shortName} questions most students get wrong</div>
+              </div>
+              <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
+            </button>
           )}
           <div className="h-6" />
         </>
@@ -400,12 +333,110 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   );
 }
 
-function accColor(acc: number | null) {
-  if (acc === null) return "text-gray-400";
-  return acc >= 80 ? "text-green-600 dark:text-green-400" : acc >= 60 ? "text-yellow-600 dark:text-yellow-400" : "text-red-500 dark:text-red-400";
+function ScoreBar({ min, max, value, goal }: { min: number; max: number; value: number; goal: number }) {
+  const at = (n: number) => `${Math.max(0, Math.min(100, ((n - min) / (max - min || 1)) * 100))}%`;
+  return (
+    <div className="mt-3">
+      <div className="relative h-2.5 rounded-full bg-gray-100 dark:bg-gray-800">
+        <div className={`absolute inset-y-0 left-0 rounded-full ${value >= goal ? "bg-green-500" : "bg-brand"}`} style={{ width: at(value) }} />
+        <div className="absolute -top-1 w-0.5 rounded bg-gray-900 dark:bg-gray-50" style={{ left: at(goal), height: "18px" }} aria-hidden="true" />
+      </div>
+      <div className="mt-1 flex justify-between text-[10px] tabular-nums text-gray-400">
+        <span>{min}</span>
+        <span>{max}</span>
+      </div>
+    </div>
+  );
 }
 
-function accBar(acc: number | null) {
-  if (acc === null) return "";
-  return acc >= 80 ? "bg-green-500" : acc >= 60 ? "bg-yellow-400" : "bg-red-400";
+function TopicCard({ rank, topic, pts, href, open }: { rank: number; topic: TopicEstimate; pts: (n: number) => string; href: string; open: boolean }) {
+  const [expanded, setExpanded] = useState(open);
+  const acc = topic.accuracy === null ? null : Math.round(topic.accuracy * 100);
+  const missedSkills = topic.skills.filter((s) => s.missed > 0).slice(0, 3);
+  return (
+    <div className={`rounded-xl border bg-white dark:bg-gray-900 ${rank === 1 ? "border-brand-border shadow-sm" : "border-gray-100 dark:border-gray-800"}`}>
+      <button type="button" onClick={() => setExpanded(!expanded)} aria-expanded={expanded} className="w-full flex items-center gap-3 px-4 py-3 text-left">
+        <span className={`shrink-0 w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center ${rank === 1 ? "bg-brand text-white" : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300"}`}>{rank}</span>
+        <span className="flex-1 min-w-0">
+          <span className="block text-sm font-semibold text-gray-900 dark:text-gray-50 truncate">{topic.drill.name}</span>
+          <span className="block text-[11px] text-gray-500 dark:text-gray-400">
+            {acc === null ? "Not tried yet" : `${acc}% right first try · ${topic.answered} answered`}
+          </span>
+        </span>
+        {topic.gain > 0 && (
+          <span className="shrink-0 rounded-full bg-green-50 dark:bg-green-950 px-2.5 py-1 text-xs font-bold tabular-nums text-green-700 dark:text-green-300">{pts(topic.gain)}</span>
+        )}
+      </button>
+      {expanded && (
+        <div className="px-4 pb-3 -mt-1">
+          {acc !== null && (
+            <div className="h-1.5 rounded-full bg-gray-100 dark:bg-gray-800 overflow-hidden mb-3">
+              <div className={`h-full rounded-full ${acc >= 80 ? "bg-green-500" : acc >= 60 ? "bg-yellow-400" : "bg-red-400"}`} style={{ width: `${acc}%` }} />
+            </div>
+          )}
+          {missedSkills.length > 0 && (
+            <ul className="mb-3 space-y-1">
+              {missedSkills.map((s) => (
+                <li key={s.skill} className="flex items-baseline justify-between gap-3 text-xs">
+                  <span className="text-gray-700 dark:text-gray-200 truncate">{s.skill}</span>
+                  <span className="shrink-0 tabular-nums text-red-600 dark:text-red-400">missed {s.missed} of {s.answered}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+          <Link href={href} className="v2-tap inline-flex w-full items-center justify-center rounded-xl bg-brand text-sm font-bold text-white">
+            Practice {topic.drill.name}
+          </Link>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function CommunityList({ exam, loading, rows, totalUsers, unlocked, subtitle, onUnlock }: {
+  exam: ExamV2Config;
+  loading: boolean;
+  rows: { questionId: string; question: QuestionV2; wrong: number; total: number; errorRate: number }[];
+  totalUsers: number;
+  unlocked: boolean;
+  subtitle: (q: QuestionV2) => string;
+  onUnlock: () => void;
+}) {
+  if (loading) {
+    return (
+      <div className="space-y-3">
+        {[1, 2, 3].map((i) => <div key={i} className="h-16 bg-gray-100 dark:bg-gray-800 rounded-xl animate-pulse" />)}
+      </div>
+    );
+  }
+  if (rows.length === 0) return <p className="text-gray-500 dark:text-gray-400 text-sm text-center py-8">Not enough data yet. Check back soon.</p>;
+  const chip = (r: { errorRate: number }) => ({ value: `${r.errorRate}%`, label: "get this wrong", color: "text-red-500 dark:text-red-400" });
+  return (
+    <div className="space-y-4">
+      <p className="text-sm text-gray-500 dark:text-gray-400">
+        The {exam.shortName} questions students miss most, based on answers from{" "}
+        <span className="font-medium text-gray-700 dark:text-gray-200">{totalUsers.toLocaleString()} real test takers</span>
+      </p>
+      <GatedStatsList
+        items={rows}
+        isPremium={unlocked}
+        keyOf={(r) => r.questionId}
+        renderRow={(r) => (
+          <V2StatsRow
+            examId={exam.id}
+            question={r.question}
+            chip={chip(r)}
+            subtitle={subtitle(r.question)}
+            footer={<p className="text-xs text-gray-500 dark:text-gray-400">{r.wrong} out of {r.total} people got this wrong</p>}
+            onAnswer={(ok) => trackDailyQuizAnswer(ok, `stats_community_${exam.id}`)}
+          />
+        )}
+        previewOf={(r) => ({ chip: chip(r), text: plainStem(r.question) })}
+        lockTitle={`${rows.length - STATS_FREE_ROWS} more questions locked`}
+        lockSubtitle="Upgrade to see the full list"
+        lockCta="Unlock with Premium"
+        onUnlock={onUnlock}
+      />
+    </div>
+  );
 }

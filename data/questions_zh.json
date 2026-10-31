@@ -6251,11 +6251,11 @@
   "question": "在德克萨斯州，临时驾照持有人的乘客限制持续多久？",
   "optionA": "自签发起3个月",
   "optionB": "自签发起12个月",
-  "optionC": "自签发起6个月",
-  "optionD": "直到18岁",
+  "optionC": "直到18岁",
+  "optionD": "直到21岁",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "临时驾照持有人的乘客限制自签发之日起持续6个月。"
+  "explanation": "德克萨斯州禁止未满18岁的驾驶人搭载超过一名非家庭成员的21岁以下乘客，因此该限制持续到驾驶人年满18岁。"
  },
  {
   "type": "State-Specific",
@@ -6304,14 +6304,14 @@
   "state": "TX",
   "questionId": "TX-011",
   "category": "gdlLicensing",
-  "question": "在德克萨斯州，临时驾照的第一年有什么限制？",
+  "question": "在德克萨斯州，未满18岁的临时驾照持有人有什么限制？",
   "optionA": "禁止在高速公路上驾驶",
   "optionB": "只能在白天驾驶",
   "optionC": "宵禁和乘客人数限制",
   "optionD": "只允许搭载家庭成员",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "在临时驾照的第一年，驾驶人须遵守夜间宵禁和乘客人数限制。"
+  "explanation": "年满18岁之前，临时驾照驾驶人不得在午夜至凌晨5点驾驶（工作、上学或紧急情况除外），也不得搭载超过一名非家庭成员的21岁以下乘客。"
  },
  {
   "type": "State-Specific",
@@ -7005,27 +7005,27 @@
   "questionId": "VA-021",
   "category": "duiStateLaws",
   "question": "弗吉尼亚州针对未成年人酒后驾驶的零容忍政策是什么？",
-  "optionA": "禁止任何酒精",
+  "optionA": "血液酒精浓度0.02%或以上时驾驶",
   "optionB": "只适用于超过0.05%的情况",
   "optionC": "只有超过0.08%才算重罪",
   "optionD": "初犯只给予警告",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "根据零容忍政策，未成年驾驶人体内禁止有任何可检测到的酒精。"
+  "explanation": "非法饮酒的21岁以下驾驶人，血液酒精浓度达到0.02%或以上即违反弗吉尼亚州的零容忍法。"
  },
  {
   "type": "State-Specific",
   "state": "VA",
   "questionId": "VA-022",
   "category": "stateUnique",
-  "question": "在弗吉尼亚州的公路施工区超速，罚款会怎样？",
-  "optionA": "罚款不变",
-  "optionB": "罚款增加至三倍",
-  "optionC": "罚款加倍",
-  "optionD": "只发出警告",
+  "question": "在弗吉尼亚州，有工人在场时在公路施工区超速，最高罚款是多少？",
+  "optionA": "100美元",
+  "optionB": "250美元",
+  "optionC": "500美元",
+  "optionD": "1,000美元",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "在指定的公路施工区超速，罚款加倍，即使没有工人在场也一样。"
+  "explanation": "有工人在场时在设有标志的公路施工区超速属于交通违规，最高罚款500美元。"
  },
  {
   "type": "State-Specific",
@@ -7144,14 +7144,14 @@
   "state": "VA",
   "questionId": "VA-032",
   "category": "stateUnique",
-  "question": "在弗吉尼亚州，跟车过近可能会被控以什么罪名？",
+  "question": "在弗吉尼亚州，跟车过近通常属于哪类违法行为？",
   "optionA": "除非发生事故，否则不算违规",
-  "optionB": "鲁莽驾驶",
+  "optionB": "交通违规",
   "optionC": "初犯只给予警告",
-  "optionD": "仅属交通违规",
+  "optionD": "鲁莽驾驶",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "跟车过近被归类为鲁莽驾驶，驾驶人必须根据车速、交通和路况保持合理的距离。"
+  "explanation": "在弗吉尼亚州，跟车距离比合理审慎的距离更近属于交通违规，因此应根据车速、交通和路况保持安全距离。"
  },
  {
   "type": "State-Specific",
@@ -7412,12 +7412,12 @@
   "category": "gdlLicensing",
   "question": "在华盛顿州，第二次违反分级驾照制度（GDL）限制会怎样？",
   "optionA": "只给予书面警告",
-  "optionB": "驾照被吊销至18岁",
+  "optionB": "暂停6个月或至18岁",
   "optionC": "必须参加驾驶培训课程",
   "optionD": "必须做社区服务",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "第二次违反分级驾照制度（GDL）限制后，驾照将被吊销，直到驾驶人年满18岁。"
+  "explanation": "第二次违规将暂停中级驾照6个月或至年满18岁（以先到者为准）；第三次违规则暂停至年满18岁。"
  },
  {
   "type": "State-Specific",
@@ -7595,11 +7595,11 @@
   "question": "在华盛顿州，第一次拒绝呼气测试会怎样？",
   "optionA": "第一次拒绝没有处罚",
   "optionB": "吊销驾照90天",
-  "optionC": "吊销驾照2年",
-  "optionD": "吊销驾照1年",
+  "optionC": "吊销驾照1年",
+  "optionD": "吊销驾照2年",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "第一次拒绝呼气测试将被吊销驾照2年。"
+  "explanation": "七年内第一次拒绝测试将被吊销驾照一年；第二次拒绝则吊销两年。"
  },
  {
   "type": "State-Specific",
@@ -7733,13 +7733,13 @@
   "questionId": "WA-033",
   "category": "stateUnique",
   "question": "在华盛顿州，什么时候必须在人行横道为行人停车？",
-  "optionA": "行人在您行驶的车道上时",
-  "optionB": "行人在道路任何车道上时",
+  "optionA": "在您这一半道路上或相距一条车道内",
+  "optionB": "只有在您正前方时",
   "optionC": "信号灯显示可通行时",
   "optionD": "行人与您有眼神交流时",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "当行人位于驾驶人所在的行驶车道上时，驾驶人必须在人行横道为其停车。"
+  "explanation": "行人位于您这一半道路上或距其一条车道以内时必须停车；您这一半指与您同向的所有车道。"
  },
  {
   "type": "State-Specific",

@@ -2510,14 +2510,14 @@
   "state": "AK",
   "questionId": "AK-020",
   "category": "duiStateLaws",
-  "question": "알래스카에서 어느 BAC 수준부터 가중 DUI 혐의가 적용됩니까?",
-  "optionA": "0.10% 이상",
-  "optionB": "0.12% 이상",
-  "optionC": "0.20% 이상",
-  "optionD": "0.15% 이상",
+  "question": "알래스카에서 첫 DUI 유죄 판결 시 최소 구금 기간은 얼마입니까?",
+  "optionA": "24시간",
+  "optionB": "7일",
+  "optionC": "30일",
+  "optionD": "72시간",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "알래스카는 운전자의 BAC가 0.15% 이상이면 가중 DUI 혐의를 추가해, 일반 DUI 유죄 판결보다 무거운 처벌을 내립니다."
+  "explanation": "알래스카는 첫 DUI 유죄 판결 시 벌금, 면허 취소, 시동 잠금 장치와 함께 최소 72시간 연속 구금을 요구합니다."
  },
  {
   "type": "State-Specific",
@@ -2595,13 +2595,13 @@
   "questionId": "AK-026",
   "category": "duiStateLaws",
   "question": "알래스카에서 첫 DUI 유죄 판결 후 시동 잠금 장치는 얼마나 오래 필요합니까?",
-  "optionA": "6개월",
-  "optionB": "12개월",
+  "optionA": "12개월",
+  "optionB": "6개월",
   "optionC": "18개월",
   "optionD": "24개월",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "알래스카는 첫 DUI 유죄 판결 후 12개월간 시동 잠금 장치를 요구하며, 이 장치는 운전자의 호흡에서 알코올이 감지되면 시동이 걸리지 않게 합니다."
+  "explanation": "알래스카는 첫 DUI 유죄 판결 후 운전 권한이 회복되면 최소 6개월간 시동 잠금 장치를 요구하며, 이 장치는 운전자의 호흡에서 알코올이 감지되면 시동이 걸리지 않게 합니다."
  },
  {
   "type": "State-Specific",
@@ -4639,13 +4639,13 @@
   "questionId": "CO-012",
   "category": "gdlLicensing",
   "question": "콜로라도의 만 16세 이상 청소년은 허가증을 받기 전에 운전 교육을 이수해야 합니까?",
-  "optionA": "아니요, 정식 교육은 필요하지 않습니다",
+  "optionA": "네, 6시간 온라인 과정이 필요합니다",
   "optionB": "네, 30시간 과정이 필요합니다",
   "optionC": "네, 4시간 수업이 필요합니다",
-  "optionD": "16½세 미만인 경우만",
+  "optionD": "아니요, 정식 교육은 필요하지 않습니다",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "콜로라도에서 만 16세 이상 운전자는 허가증을 신청하기 전에 정식 운전 교육이 필요하지 않지만, 보호자 동반 연습은 여전히 필수입니다."
+  "explanation": "2026년까지 적용되는 규정에 따라 콜로라도의 만 16세 이상 신청자는 허가증을 받기 위해 정식 운전 교육이 필요하지 않습니다. 2027년 1월 1일부터는 만 16~17세가 30시간 과정을 이수해야 합니다."
  },
  {
   "type": "State-Specific",
@@ -4667,13 +4667,13 @@
   "questionId": "CO-014",
   "category": "cellPhone",
   "question": "콜로라도 운전자는 운전 중 휴대폰을 어떻게 합법적으로 사용할 수 있습니까?",
-  "optionA": "대시보드에 거치한 휴대폰으로",
+  "optionA": "저속일 때만 문자 입력",
   "optionB": "블루투스 같은 핸즈프리 액세서리로",
-  "optionC": "차가 멈춘 동안 스피커폰으로",
+  "optionC": "신호 대기 중 휴대폰을 손에 들고",
   "optionD": "도로를 보면서 한 손으로",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "콜로라도의 핸즈프리 법은 운전 중 전화를 걸 때 블루투스 기술이나 대시보드 거치 휴대폰 같은 핸즈프리 액세서리를 사용하도록 요구합니다."
+  "explanation": "2025년 1월 1일 시행된 콜로라도 핸즈프리 법은 운전 중 블루투스 같은 핸즈프리 액세서리를 통해서만 휴대폰 사용을 허용하며, 기능을 시작할 때 한 번의 터치나 스와이프만 허용됩니다. 신호 대기 등 도로에서 정차 중일 때도 적용됩니다."
  },
  {
   "type": "State-Specific",
@@ -4918,14 +4918,14 @@
   "state": "CO",
   "questionId": "CO-032",
   "category": "stateUnique",
-  "question": "콜로라도의 견인력 법 시행 기간에 I-70에서 2륜구동 차량은 무엇을 휴대해야 합니까?",
+  "question": "견인력 법 시행 기간에 I-70에서 기준에 맞는 타이어가 없는 2륜구동 차량은 무엇을 휴대해야 합니까?",
   "optionA": "비상 조명탄과 반사 삼각대",
   "optionB": "승인된 용기에 담은 예비 연료만",
   "optionC": "눈삽과 성에 제거기",
   "optionD": "타이어 체인 또는 승인된 접지 장치",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "콜로라도 법에 따라 2륜구동 차량은 타이어 종류와 상관없이 9월 1일부터 5월 31일까지 타이어 체인이나 승인된 대체 접지 장치를 휴대해야 합니다."
+  "explanation": "9월 1일부터 5월 31일까지 Dotsero와 Morrison 사이의 I-70에서는 트레드 깊이 3/16인치 이상의 M+S, 전천후 또는 겨울용 타이어가 필요하며, 그렇지 않으면 체인이나 승인된 접지 장치를 휴대해야 합니다."
  },
  {
   "type": "State-Specific",
@@ -5030,14 +5030,14 @@
   "state": "CO",
   "questionId": "CO-040",
   "category": "stateUnique",
-  "question": "콜로라도의 2륜구동 차량 접지 요건은 4WD 차량과 비교해 무엇이 다릅니까?",
-  "optionA": "2륜구동은 제한 없이 어떤 타이어든 사용할 수 있습니다",
-  "optionB": "2륜구동은 위반 적발 시 더 높은 벌금을 냅니다",
-  "optionC": "2륜구동은 현재 해당 기간 동안 요건이 없습니다",
-  "optionD": "2륜구동은 타이어 종류와 상관없이 체인을 휴대해야 합니다",
+  "question": "콜로라도의 견인력 법 시행 기간에 2륜구동 차량은 체인 없이 어떻게 요건을 충족할 수 있습니까?",
+  "optionA": "트레드 1/16인치 이상인 아무 타이어",
+  "optionB": "시즌 도로 허가 수수료를 내서",
+  "optionC": "눈길에서 25mph 미만으로 운전해서",
+  "optionD": "트레드 3/16인치 이상의 M+S, 전천후 또는 겨울용 타이어",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "겨울용 타이어만으로 준수할 수 있는 4WD/AWD 차량과 달리, 콜로라도의 2륜구동 차량은 견인력 법 시행 기간에 타이어 종류와 상관없이 체인이나 접지 장치를 휴대해야 합니다."
+  "explanation": "콜로라도 견인력 법은 2륜구동을 포함한 모든 승용차에 적용되며, 트레드 깊이 3/16인치 이상의 M+S, 전천후 또는 겨울용 타이어로 충족할 수 있고 그 대안은 체인이나 승인된 접지 장치입니다."
  },
  {
   "type": "State-Specific",
@@ -6514,14 +6514,14 @@
   "state": "FL",
   "questionId": "FL-026",
   "category": "duiStateLaws",
-  "question": "플로리다에서 초범 DUI 위반자는 시동 잠금 장치를 얼마나 오래 설치해야 합니까?",
+  "question": "플로리다에서 혈중알코올농도(BAC) 0.15 이상인 초범 DUI 위반자는 시동 잠금 장치를 얼마나 오래 사용해야 합니까?",
   "optionA": "3개월",
   "optionB": "6개월",
   "optionC": "1년",
   "optionD": "초범에는 요건 없음",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "플로리다는 초범 DUI 위반자에게 최소 6개월간 시동 잠금 장치를 설치하도록 요구합니다."
+  "explanation": "BAC 0.15 이상이거나 차량에 미성년자가 있었던 초범 DUI의 경우 플로리다 법은 최소 6개월 연속 시동 잠금 장치를 요구하며, 그 외에는 법원이 명령할 수 있습니다."
  },
  {
   "type": "State-Specific",
@@ -6613,13 +6613,13 @@
   "questionId": "FL-033",
   "category": "stateUnique",
   "question": "플로리다 면허 소지자의 최소 시력 요건은 무엇입니까?",
-  "optionA": "최소 한쪽 눈 20/50",
+  "optionA": "어느 한쪽 눈 또는 양안 20/70",
   "optionB": "양쪽 눈 20/40",
   "optionC": "최소 한쪽 눈 20/30",
   "optionD": "최소 한쪽 눈 20/60",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "플로리다는 교정 여부와 상관없이 한쪽 눈의 시력이 최소 20/50이어야 한다고 요구합니다."
+  "explanation": "플로리다는 교정 여부와 상관없이 어느 한쪽 눈 또는 양쪽 눈을 함께 사용해 최소 20/70의 시력을 요구하며, 한쪽 눈이 실명인 경우 다른 눈은 20/40 이상이어야 합니다."
  },
  {
   "type": "State-Specific",
@@ -6808,14 +6808,14 @@
   "state": "GA",
   "questionId": "GA-007",
   "category": "gdlLicensing",
-  "question": "Class D 면허 취득 첫 6개월이 지난 뒤 비가족 승객은 몇 명까지 허용됩니까?",
+  "question": "Class D 면허 취득 후 두 번째 6개월 동안 21세 미만 비가족 승객은 몇 명까지 허용됩니까?",
   "optionA": "비가족 승객은 절대 허용되지 않습니다",
   "optionB": "비가족 승객 최대 3명",
   "optionC": "비가족 승객 1명",
   "optionD": "비가족 승객 2명",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Class D 면허 취득 첫 6개월이 지난 뒤에는 비가족 승객 1명을 태울 수 있습니다."
+  "explanation": "두 번째 6개월 동안 Class D 운전자는 직계 가족이 아닌 21세 미만 승객 1명을 태울 수 있으며, 12개월 후에는 3명까지 늘어납니다."
  },
  {
   "type": "State-Specific",
@@ -23736,12 +23736,12 @@
   "category": "cellPhone",
   "question": "사우스캐롤라이나에서 운전 중 손에 든 휴대폰을 합법적으로 사용할 수 있는 때는 언제입니까?",
   "optionA": "응급 상황에서만",
-  "optionB": "신호등에서 정차한 동안",
+  "optionB": "시속 25마일 미만으로 운전할 때",
   "optionC": "이면도로에서만",
-  "optionD": "주차했거나 정지했을 때",
+  "optionD": "합법적으로 주차 또는 정차했을 때",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "손에 든 휴대폰 사용은 차량이 주차되었거나 완전히 정지했을 때만 합법입니다."
+  "explanation": "사우스캐롤라이나의 핸즈프리법은 합법적으로 주차 또는 정차한 동안에는 적용되지 않으며, 차량이 움직이는 동안에는 휴대폰을 손에 들 수 없습니다."
  },
  {
   "type": "State-Specific",
@@ -23846,14 +23846,14 @@
   "state": "SC",
   "questionId": "SC-024",
   "category": "duiStateLaws",
-  "question": "사우스캐롤라이나에서 가중 DUI 처벌은 어느 BAC 수준부터 적용됩니까?",
+  "question": "사우스캐롤라이나에서 검사 결과 BAC가 얼마 이상이면 즉시 면허가 정지됩니까?",
   "optionA": "0.10%",
   "optionB": "0.12%",
   "optionC": "0.20%",
   "optionD": "0.15%",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "운전자의 BAC가 0.15% 이상이면 가중 DUI 처벌이 적용됩니다."
+  "explanation": "호흡 또는 혈액 검사에서 BAC가 0.15% 이상으로 나오면 DUI 유죄 판결 전이라도 즉시 면허가 정지됩니다."
  },
  {
   "type": "State-Specific",
@@ -24169,13 +24169,13 @@
   "questionId": "SD-007",
   "category": "gdlLicensing",
   "question": "사우스다코타에서 제한 미성년자 면허 소지자에게 어떤 제한이 적용됩니까?",
-  "optionA": "야간 운전 허용 안 됨",
+  "optionA": "오후 8시 이후 운전 금지",
   "optionB": "고속도로 주행 허용 안 됨",
-  "optionC": "면허 소지 성인 동승",
-  "optionD": "주간 운전만",
+  "optionC": "오후 10시~오전 6시 부모 옆자리 동승",
+  "optionD": "항상 성인 동승",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "제한 미성년자 면허 소지자는 운전 중 면허 소지 성인이 동승해야 합니다."
+  "explanation": "오전 6시부터 오후 10시까지는 부모의 허락이 있으면 운전할 수 있고, 오후 10시부터 오전 6시까지는 부모나 보호자가 옆자리에 앉아 있어야 합니다."
  },
  {
   "type": "State-Specific",
@@ -24227,11 +24227,11 @@
   "question": "사우스다코타에서 제한 미성년자 면허 소지자는 혼자 학교나 직장까지 운전할 수 있습니까?",
   "optionA": "아니요, 절대 허용되지 않습니다",
   "optionB": "직장으로만",
-  "optionC": "예, 배서가 있으면",
+  "optionC": "예, 별도 배서 불필요",
   "optionD": "주간에만",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "제한 미성년자 면허 소지자는 적절한 배서가 있으면 혼자 학교나 직장까지 운전할 수 있습니다."
+  "explanation": "이 면허로 부모의 허락이 있으면 오전 6시부터 오후 10시까지 감독자 없이 운전할 수 있으며, 학교나 직장을 오가는 직행 운전은 시간 제한에서 제외됩니다."
  },
  {
   "type": "State-Specific",
@@ -24364,14 +24364,14 @@
   "state": "SD",
   "questionId": "SD-021",
   "category": "duiStateLaws",
-  "question": "사우스다코타에서 21세 미만 운전자의 알코올 허용 수준은 무엇입니까?",
-  "optionA": "무관용 정책",
-  "optionB": "0.02% 한도",
-  "optionC": "0.04% 한도",
+  "question": "사우스다코타에서 21세 미만 운전자는 BAC가 얼마일 때 기소될 수 있습니까?",
+  "optionA": "0.02% 이상",
+  "optionB": "0.05% 이상",
+  "optionC": "0.04% 이상",
   "optionD": "성인과 동일한 한도",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "21세 미만 운전자에게는 알코올에 대한 무관용 정책이 적용됩니다."
+  "explanation": "사우스다코타에서 21세 미만 운전자의 BAC가 0.02% 이상이면 경범죄입니다."
  },
  {
   "type": "State-Specific",
@@ -25291,11 +25291,11 @@
   "question": "텍사스에서 조건부 면허 소지자에 대한 승객 제한은 얼마나 지속됩니까?",
   "optionA": "발급일로부터 3개월",
   "optionB": "발급일로부터 12개월",
-  "optionC": "발급일로부터 6개월",
-  "optionD": "만 18세까지",
+  "optionC": "만 18세까지",
+  "optionD": "만 21세까지",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "조건부 면허 소지자의 승객 제한은 발급일로부터 6개월간 지속됩니다."
+  "explanation": "텍사스에서는 18세 미만 운전자가 가족이 아닌 21세 미만 승객을 2명 이상 태울 수 없으므로, 이 제한은 운전자가 18세가 될 때까지 지속됩니다."
  },
  {
   "type": "State-Specific",
@@ -25344,14 +25344,14 @@
   "state": "TX",
   "questionId": "TX-011",
   "category": "gdlLicensing",
-  "question": "텍사스에서 조건부 면허 첫해 동안 어떤 제한이 적용됩니까?",
+  "question": "텍사스에서 18세 미만 조건부 면허 소지자에게 어떤 제한이 적용됩니까?",
   "optionA": "고속도로 주행 금지",
   "optionB": "주간 시간대 운전만",
   "optionC": "통금과 승객 제한",
   "optionD": "가족만 허용",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "조건부 면허의 첫해 동안 운전자에게는 야간 통금과 승객 제한이 적용됩니다."
+  "explanation": "만 18세가 될 때까지 조건부 면허 운전자는 자정부터 오전 5시까지 운전할 수 없으며(직장, 학교, 응급 상황 제외) 가족이 아닌 21세 미만 승객을 2명 이상 태울 수 없습니다."
  },
  {
   "type": "State-Specific",
@@ -26002,14 +26002,14 @@
   "state": "UT",
   "questionId": "UT-018",
   "category": "cellPhone",
-  "question": "유타에서 적색 신호에서도 금지되는 휴대폰 관련 행위는 무엇입니까?",
+  "question": "유타에서 움직이는 차량을 운전하는 중에 불법인 휴대폰 사용은 무엇입니까?",
   "optionA": "음성 통화",
   "optionB": "수동 문자",
-  "optionC": "GPS 내비게이션 사용",
+  "optionC": "GPS 지도 보기",
   "optionD": "핸즈프리 통화",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "적색 신호에 정차한 동안에도 수동 문자는 금지됩니다."
+  "explanation": "유타에서는 차량이 움직이는 동안 손으로 문자를 보내거나 전화를 걸거나 메시지를 읽는 것이 금지되며, 음성 통화, 핸즈프리 사용, GPS 보기는 허용됩니다."
  },
  {
   "type": "State-Specific",
@@ -26283,13 +26283,13 @@
   "questionId": "UT-038",
   "category": "stateUnique",
   "question": "견인력 법에 따라 사륜구동 차량은 무엇을 갖춰야 합니까?",
-  "optionA": "겨울용 타이어 4개",
-  "optionB": "스노우플레이크 마크 타이어 2개 이상",
-  "optionC": "체인 준비됨",
-  "optionD": "올터레인 타이어",
+  "optionA": "트레드 2/32인치뿐인 타이어",
+  "optionB": "모든 바퀴에 M+S 타이어",
+  "optionC": "앞바퀴에만 스노 타이어",
+  "optionD": "여름용 고성능 타이어",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "견인력 법에 따라 사륜구동 차량은 3-Peak 스노우플레이크 마크가 있는 타이어를 2개 이상 장착해야 합니다."
+  "explanation": "유타 견인력 법에 따라 AWD 및 4WD 차량은 최소한 모든 바퀴에 M+S 타이어를 장착해야 하며, 모든 바퀴에 3-Peak 스노우플레이크 타이어나 체인을 장착해도 됩니다."
  },
  {
   "type": "State-Specific",
@@ -26605,27 +26605,27 @@
   "questionId": "VA-021",
   "category": "duiStateLaws",
   "question": "버지니아의 미성년 음주운전 무관용 정책은 무엇입니까?",
-  "optionA": "모든 음주 금지",
+  "optionA": "BAC 0.02% 이상으로 운전",
   "optionB": "0.05%를 넘을 때만 적용",
   "optionC": "0.08%를 넘으면 중죄만",
   "optionD": "첫 위반은 경고만",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "무관용 정책에 따라 미성년 운전자에게는 검출 가능한 양의 알코올이 금지됩니다."
+  "explanation": "불법으로 음주한 21세 미만 운전자는 BAC가 0.02% 이상이면 버지니아 무관용법을 위반한 것입니다."
  },
  {
   "type": "State-Specific",
   "state": "VA",
   "questionId": "VA-022",
   "category": "stateUnique",
-  "question": "버지니아 고속도로 공사 구역에서 속도위반 벌금은 어떻게 됩니까?",
-  "optionA": "벌금은 변하지 않습니다",
-  "optionB": "벌금이 세 배가 됩니다",
-  "optionC": "벌금이 두 배가 됩니다",
-  "optionD": "경고만 발부됨",
+  "question": "버지니아에서 작업자가 있을 때 고속도로 공사 구역에서 과속하면 최대 벌금은 얼마입니까?",
+  "optionA": "$100",
+  "optionB": "$250",
+  "optionC": "$500",
+  "optionD": "$1,000",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "지정된 고속도로 공사 구역에서는 작업자가 없어도 속도위반 벌금이 두 배가 됩니다."
+  "explanation": "작업자가 있는 동안 표지가 설치된 고속도로 공사 구역에서 과속하면 최대 $500의 벌금이 부과되는 교통 위반입니다."
  },
  {
   "type": "State-Specific",
@@ -26744,14 +26744,14 @@
   "state": "VA",
   "questionId": "VA-032",
   "category": "stateUnique",
-  "question": "버지니아에서 다른 차량을 너무 가까이 따라가면 어떤 혐의를 받을 수 있습니까?",
+  "question": "버지니아에서 다른 차량을 너무 가까이 따라가는 것은 보통 어떤 위반입니까?",
   "optionA": "사고가 없으면 위반 아님",
-  "optionB": "난폭운전",
+  "optionB": "교통 위반",
   "optionC": "첫 위반은 경고만",
-  "optionD": "교통 위반만",
+  "optionD": "난폭운전",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "다른 차량을 너무 가까이 따라가는 것은 난폭운전으로 분류되며, 운전자는 속도, 교통량, 도로 상황에 맞는 적절한 거리를 유지해야 합니다."
+  "explanation": "버지니아에서 합리적이고 신중한 거리보다 가까이 따라가는 것은 교통 위반이므로, 속도, 교통량, 도로 상황에 맞게 안전거리를 유지하십시오."
  },
  {
   "type": "State-Specific",
@@ -27572,12 +27572,12 @@
   "category": "gdlLicensing",
   "question": "워싱턴에서 GDL 제한을 두 번째로 위반하면 어떻게 됩니까?",
   "optionA": "서면 경고만",
-  "optionB": "만 18세까지 면허 정지",
+  "optionB": "6개월 또는 만 18세까지 정지",
   "optionC": "의무 운전 교육 과정",
   "optionD": "사회봉사 요건",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "GDL 제한을 두 번째로 위반하면 운전자가 만 18세가 될 때까지 면허가 정지됩니다."
+  "explanation": "두 번째 위반 시 중간 면허가 6개월 또는 만 18세까지 중 먼저 오는 기간 동안 정지되며, 세 번째 위반 시 만 18세까지 정지됩니다."
  },
  {
   "type": "State-Specific",
@@ -27755,11 +27755,11 @@
   "question": "워싱턴에서 호흡 검사를 처음 거부하면 어떻게 됩니까?",
   "optionA": "첫 거부는 처벌 없음",
   "optionB": "90일 면허 정지",
-  "optionC": "2년 면허 정지",
-  "optionD": "1년 면허 정지",
+  "optionC": "1년 면허 취소",
+  "optionD": "2년 면허 취소",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "호흡 검사를 처음 거부하면 면허가 2년간 정지됩니다."
+  "explanation": "7년 이내 첫 거부 시 면허가 1년간 취소되며, 두 번째 거부 시 2년간 취소됩니다."
  },
  {
   "type": "State-Specific",
@@ -27893,13 +27893,13 @@
   "questionId": "WA-033",
   "category": "stateUnique",
   "question": "워싱턴에서 횡단보도의 보행자를 위해 언제 정지해야 합니까?",
-  "optionA": "보행자가 내 주행 차로에 있을 때",
-  "optionB": "보행자가 도로의 어느 차로에든 있을 때",
+  "optionA": "내 쪽 도로 절반 또는 한 차로 이내",
+  "optionB": "바로 앞에 있을 때만",
   "optionC": "신호가 보행을 나타낼 때",
   "optionD": "보행자와 눈이 마주쳤을 때",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "운전자는 보행자가 운전자의 주행 차로에 있을 때 횡단보도에서 정지해야 합니다."
+  "explanation": "보행자가 내 쪽 도로 절반에 있거나 그로부터 한 차로 이내에 있으면 정지하십시오. 내 쪽 절반은 내 진행 방향의 모든 차로를 뜻합니다."
  },
  {
   "type": "State-Specific",
@@ -28046,14 +28046,14 @@
   "state": "WI",
   "questionId": "WI-004",
   "category": "gdlLicensing",
-  "question": "위스콘신에서 16세 미만 보호관찰 면허 소지자의 야간 운전 제한은 무엇입니까?",
+  "question": "위스콘신 보호관찰 면허의 첫 9개월 동안 적용되는 야간 운전 제한은 무엇입니까?",
   "optionA": "자정~오전 6시 운전 금지",
   "optionB": "오후 10시~오전 6시 운전 금지",
   "optionC": "오후 11시~오전 5시 운전 금지",
   "optionD": "자정~오전 5시 운전 금지",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "16세 미만 보호관찰 면허 소지자는 자정부터 오전 5시까지 운전할 수 없습니다."
+  "explanation": "최소 첫 9개월 동안 보호관찰 면허 운전자는 집과 학교 또는 직장 사이를 오가는 경우를 제외하고 자정부터 오전 5시까지 운전할 수 없습니다."
  },
  {
   "type": "State-Specific",
@@ -28103,13 +28103,13 @@
   "questionId": "WI-008",
   "category": "gdlLicensing",
   "question": "위스콘신에서 젊은 운전자가 보호관찰 면허를 받기 전에 무엇을 이수해야 합니까?",
-  "optionA": "이론 교육 30시간",
+  "optionA": "응급처치 과정",
   "optionB": "고급 방어 운전 과정",
   "optionC": "필기시험만",
-  "optionD": "운전 교육 또는 추가 연습",
+  "optionD": "운전 교육과 50시간 연습",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "젊은 운전자는 보호관찰 면허를 받기 전에 운전 교육 과정 또는 추가 보호자 동반 연습 시간을 이수해야 합니다."
+  "explanation": "18세 미만 운전자는 실습을 포함한 승인된 운전 교육 과정을 이수하고 50시간(야간 10시간 포함)의 운전 연습을 해야 합니다."
  },
  {
   "type": "State-Specific",
@@ -28242,14 +28242,14 @@
   "state": "WI",
   "questionId": "WI-018",
   "category": "cellPhone",
-  "question": "위스콘신에서 적색 신호에 정차한 동안 문자메시지를 읽는 것에 관한 법은 무엇입니까?",
-  "optionA": "차량이 완전히 정차하면 합법",
-  "optionB": "불법, 여전히 운전 중",
-  "optionC": "주차 기어이면 합법",
-  "optionD": "비상등을 켜면 합법",
+  "question": "위스콘신 법이 모든 운전자에게 금지하는 휴대폰 사용은 무엇입니까?",
+  "optionA": "대시보드에 장착한 GPS 따라가기",
+  "optionB": "문자 작성 또는 전송",
+  "optionC": "음악 듣기",
+  "optionD": "핸즈프리 음성 통화",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "적색 신호에 정차한 동안 문자메시지를 읽는 것은 운전자가 여전히 운전 중인 것으로 간주되므로 불법입니다."
+  "explanation": "위스콘신은 운전 중 문자와 이메일 작성 또는 전송을 금지하며, 보호관찰 면허나 학습 면허 소지자는 휴대폰을 전혀 사용할 수 없습니다."
  },
  {
   "type": "State-Specific",
@@ -28259,11 +28259,11 @@
   "question": "위스콘신에서 21세 미만 운전자의 법적 BAC 한도는 얼마입니까?",
   "optionA": "0.08%",
   "optionB": "0.04%",
-  "optionC": "0.02%",
-  "optionD": "0.00%",
+  "optionC": "0.00%",
+  "optionD": "0.02%",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "21세 미만 운전자의 법적 BAC 한도는 0.02%입니다."
+  "explanation": "위스콘신의 절대 금주법에 따라 21세 미만 운전자는 체내에 알코올이 조금이라도 있으면 운전할 수 없습니다."
  },
  {
   "type": "State-Specific",
@@ -29895,13 +29895,13 @@
   "questionId": "DC-016",
   "category": "cellPhone",
   "question": "워싱턴 D.C. 교차로에서 적색 신호 우회전 규칙은 무엇입니까?",
-  "optionA": "모든 워싱턴 D.C. 교차로에서 적색 신호 우회전 금지",
+  "optionA": "허용 표지가 없으면 금지",
   "optionB": "완전히 정지한 뒤 적색 신호 우회전 허용",
-  "optionC": "표지가 있는 교차로에서만 적색 신호 우회전 허용",
+  "optionC": "낮 시간에만 허용",
   "optionD": "학교 구역을 제외하고 적색 신호 우회전 허용",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "2025년부터 DC는 보행자와 자전거 이용자의 안전을 위해 모든 교차로에서 적색 신호 우회전을 금지합니다."
+  "explanation": "2025년 1월 1일부터 워싱턴 D.C. 법은 DDOT가 해당 교차로에 회전을 허용하는 표지를 설치하지 않은 한 적색 신호에서의 회전을 금지합니다."
  },
  {
   "type": "State-Specific",
@@ -29964,14 +29964,14 @@
   "state": "DC",
   "questionId": "DC-021",
   "category": "duiStateLaws",
-  "question": "DC 차량은 안전 및 배출가스 검사를 통과해야 합니까?",
-  "optionA": "네, 워싱턴 D.C.에 등록된 모든 차량은 검사를 통과해야 합니다",
-  "optionB": "상용차만 검사가 필요합니다",
-  "optionC": "아니요, 워싱턴 D.C.는 검사를 요구하지 않습니다",
-  "optionD": "차령 5년 초과 차량만",
+  "question": "워싱턴 D.C.에 등록된 대부분의 개인 차량은 어떤 검사를 받아야 합니까?",
+  "optionA": "2년마다 배출가스 검사",
+  "optionB": "매년 안전 검사",
+  "optionC": "매년 안전 및 배출가스 검사",
+  "optionD": "어떤 검사도 필요 없음",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "DC에 등록된 모든 차량은 DC DMV 검사소에서 안전 및 배출가스 검사를 통과해야 합니다."
+  "explanation": "워싱턴 D.C.는 2009년에 개인 차량의 안전 검사를 중단했으며, 대부분의 차량은 여전히 2년마다 배출가스 검사를 받아야 하고 상용차는 매년 검사를 받습니다."
  },
  {
   "type": "State-Specific",
@@ -30233,11 +30233,11 @@
   "question": "별도 표지가 없는 한 워싱턴 D.C. 도로에서 허용되는 최고 제한속도는 얼마입니까?",
   "optionA": "30mph",
   "optionB": "35mph",
-  "optionC": "25mph",
+  "optionC": "20mph",
   "optionD": "45mph",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "워싱턴 D.C. 도로의 최고 제한속도는 주요 도로에서 보통 25mph이며, 별도 표지가 없는 한 주거 도로의 기본값은 20mph입니다."
+  "explanation": "별도 표지가 없는 한 워싱턴 D.C. 도로의 법정 최고 속도는 20mph이며, 많은 주요 도로는 25mph로 표시되어 있고 골목길은 15mph입니다."
  },
  {
   "type": "State-Specific",
@@ -30594,14 +30594,14 @@
   "state": "AZ",
   "questionId": "AZ-026",
   "category": "duiStateLaws",
-  "question": "애리조나에서 DUI 유죄 판결은 운전 기록에 얼마나 오래 남습니까?",
-  "optionA": "일시적으로",
-  "optionB": "영구적으로",
-  "optionC": "무기한으로",
-  "optionD": "조건부로",
+  "question": "애리조나에서 첫 일반 DUI의 최소 구금 기간은 얼마입니까?",
+  "optionA": "24시간",
+  "optionB": "10일",
+  "optionC": "30일",
+  "optionD": "45일",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "일부 주와 달리 애리조나는 DUI 유죄 판결의 말소나 봉인을 허용하지 않습니다. DUI는 운전 기록과 범죄 기록에 영구히 남아 보험료, 취업 기회, 재범 시 양형에 영향을 줄 수 있습니다."
+  "explanation": "첫 일반 DUI는 최소 10일 연속 구금이지만, 운전자가 알코올 검사와 치료를 마치면 판사가 하루를 제외한 나머지를 유예할 수 있습니다."
  },
  {
   "type": "State-Specific",
@@ -30734,14 +30734,14 @@
   "state": "AZ",
   "questionId": "AZ-036",
   "category": "stateUnique",
-  "question": "여름철 애리조나 노면은 몇 도까지 올라갈 수 있습니까?",
-  "optionA": "120°F 초과",
-  "optionB": "130°F 초과",
-  "optionC": "140°F 초과",
-  "optionD": "150°F 초과",
+  "question": "제한 시간대에 피닉스 지역 HOV 차로를 이용하려면 차에 몇 명이 타야 합니까?",
+  "optionA": "3명 이상",
+  "optionB": "4명 이상",
+  "optionC": "5명 이상",
+  "optionD": "2명 이상",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "애리조나의 노면은 여름에 150°F를 넘을 수 있어 세계에서 가장 뜨거운 도로 표면에 속합니다. 이런 극심한 열은 타이어를 빠르게 손상시키고 파열 위험을 높이므로, 정기적인 타이어 점검과 적정 공기압 유지가 필수입니다."
+  "explanation": "피닉스 지역 HOV 차로는 평일 아침과 오후에 2명 이상 탑승 차량(및 오토바이)만 이용할 수 있으며, 그 외 시간에는 누구나 이용할 수 있습니다."
  },
  {
   "type": "State-Specific",

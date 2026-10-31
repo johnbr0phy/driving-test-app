@@ -2510,14 +2510,14 @@
     "state": "AK",
     "questionId": "AK-020",
     "category": "duiStateLaws",
-    "question": "¿Qué nivel de BAC resulta en cargos de DUI agravado en Alaska?",
-    "optionA": "0.10% o más",
-    "optionB": "0.12% o más",
-    "optionC": "0.20% o más",
-    "optionD": "0.15% o más",
+    "question": "¿Cuál es el tiempo mínimo de cárcel por una primera condena de DUI en Alaska?",
+    "optionA": "24 horas",
+    "optionB": "7 días",
+    "optionC": "30 días",
+    "optionD": "72 horas",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Alaska agrega cargos de DUI agravado cuando el BAC de un conductor alcanza 0.15% o más, lo que activa sanciones más severas que una condena de DUI estándar."
+    "explanation": "Alaska exige al menos 72 horas consecutivas de cárcel por una primera condena de DUI, además de una multa, la revocación de la licencia y un dispositivo de bloqueo de encendido."
   },
   {
     "type": "State-Specific",
@@ -2595,13 +2595,13 @@
     "questionId": "AK-026",
     "category": "duiStateLaws",
     "question": "¿Por cuánto tiempo se requiere un dispositivo de bloqueo de encendido después de una primera condena de DUI en Alaska?",
-    "optionA": "6 meses",
-    "optionB": "12 meses",
+    "optionA": "12 meses",
+    "optionB": "6 meses",
     "optionC": "18 meses",
     "optionD": "24 meses",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Después de una primera condena de DUI, Alaska exige un dispositivo de bloqueo de encendido durante 12 meses: el dispositivo impide que el vehículo arranque si se detecta alcohol en el aliento del conductor."
+    "explanation": "Después de una primera condena de DUI, Alaska exige un dispositivo de bloqueo de encendido durante al menos 6 meses una vez restablecido el privilegio de conducir; el dispositivo impide que el vehículo arranque si se detecta alcohol en el aliento del conductor."
   },
   {
     "type": "State-Specific",
@@ -4274,14 +4274,14 @@
     "state": "AZ",
     "questionId": "AZ-026",
     "category": "duiStateLaws",
-    "question": "¿Cuánto tiempo permanece una condena por DUI en su registro de conducción en Arizona?",
-    "optionA": "7 años en total",
-    "optionB": "Permanentemente",
-    "optionC": "10 años en total",
-    "optionD": "5 años en total",
+    "question": "¿Cuál es la pena mínima de cárcel por un primer DUI estándar en Arizona?",
+    "optionA": "24 horas",
+    "optionB": "10 días",
+    "optionC": "30 días",
+    "optionD": "45 días",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A diferencia de algunos estados, Arizona no permite que las condenas de DUI se expurguen ni se sellen. Un DUI permanece en su registro de conducción y penal de forma permanente, lo que puede afectar las tarifas de seguro, las oportunidades de empleo y la sentencia si reincide."
+    "explanation": "Un primer DUI estándar conlleva al menos 10 días consecutivos de cárcel, pero el juez puede suspender todos menos uno cuando el conductor completa la evaluación y el tratamiento por alcohol."
   },
   {
     "type": "State-Specific",
@@ -4414,14 +4414,14 @@
     "state": "AZ",
     "questionId": "AZ-036",
     "category": "stateUnique",
-    "question": "¿Qué temperatura puede alcanzar el pavimento de Arizona durante los meses de verano?",
-    "optionA": "Máximo de 120°F",
-    "optionB": "Máximo de 130°F",
-    "optionC": "Máximo de 140°F",
-    "optionD": "Más de 150°F",
+    "question": "¿Cuántas personas deben ir en un auto para usar un carril HOV del área de Phoenix en horas restringidas?",
+    "optionA": "Tres o más",
+    "optionB": "Cuatro o más",
+    "optionC": "Cinco o más",
+    "optionD": "Dos o más",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El pavimento de Arizona puede superar los 150°F en verano, lo que lo convierte en una de las superficies viales más calientes del mundo. Este calor extremo degrada rápidamente las llantas y aumenta el riesgo de reventón, por lo que las inspecciones regulares y la inflado correcto son esenciales."
+    "explanation": "Los carriles HOV del área de Phoenix están limitados a vehículos con dos o más personas (y motocicletas) en las mañanas y tardes de lunes a viernes; fuera de ese horario cualquiera puede usarlos."
   },
   {
     "type": "State-Specific",
@@ -5199,13 +5199,13 @@
     "questionId": "CO-012",
     "category": "gdlLicensing",
     "question": "¿Los adolescentes de Colorado de 16 años o más necesitan completar educación vial antes de obtener un permiso?",
-    "optionA": "No, la educación formal no es requerida",
+    "optionA": "Sí, se requiere curso en línea de 6 horas",
     "optionB": "Sí, se requiere curso de 30 horas",
     "optionC": "Sí, se requiere clase de 4 horas",
-    "optionD": "Solo si es menor de 16½",
+    "optionD": "No, la educación formal no es requerida",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los conductores de Colorado que tienen 16 años o más no requieren educación vial formal antes de solicitar un permiso, aunque la práctica supervisada sigue siendo obligatoria."
+    "explanation": "Con las reglas vigentes hasta 2026, los solicitantes de Colorado de 16 años o más no necesitan educación vial formal para un permiso; desde el 1 de enero de 2027, los de 16 y 17 años deberán completar un curso de 30 horas."
   },
   {
     "type": "State-Specific",
@@ -5227,13 +5227,13 @@
     "questionId": "CO-014",
     "category": "cellPhone",
     "question": "¿Cómo pueden los conductores de Colorado usar legalmente sus teléfonos mientras conducen?",
-    "optionA": "Sosteniendo el teléfono solo en semáforos en rojo",
+    "optionA": "Escribiendo mensajes solo a baja velocidad",
     "optionB": "Con accesorios manos libres como Bluetooth",
-    "optionC": "Colocando el teléfono en su regazo para marcar",
-    "optionD": "Usando el modo de altavoz incorporado",
+    "optionC": "Sosteniendo el teléfono detenido en un semáforo",
+    "optionD": "Con una mano mientras mira la carretera",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La ley de manos libres de Colorado requiere que los conductores usen accesorios manos libres como tecnología Bluetooth o teléfonos montados en el tablero para hacer llamadas mientras conducen."
+    "explanation": "La ley de manos libres de Colorado, vigente desde el 1 de enero de 2025, solo permite usar el teléfono al conducir con un accesorio manos libres como Bluetooth, con un solo toque o deslizamiento como máximo para iniciar una función; también se aplica cuando está detenido en el tráfico."
   },
   {
     "type": "State-Specific",
@@ -5478,14 +5478,14 @@
     "state": "CO",
     "questionId": "CO-032",
     "category": "stateUnique",
-    "question": "¿Qué deben llevar los vehículos de tracción en dos ruedas en la I-70 durante la temporada de la ley de tracción en Colorado?",
+    "question": "En la I-70 durante la temporada de la ley de tracción, ¿qué debe llevar un vehículo 2WD cuyas llantas no cumplen los requisitos?",
     "optionA": "Bengalas de emergencia y triángulos reflectantes",
     "optionB": "Combustible extra en contenedores aprobados solamente",
     "optionC": "Pala para nieve y equipo de raspador de hielo",
     "optionD": "Cadenas para llantas o dispositivos de tracción aprobados",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Según la ley de Colorado, los vehículos 2WD deben llevar cadenas para llantas o dispositivos de tracción alternativos aprobados del 1 de septiembre al 31 de mayo, independientemente del tipo de llanta."
+    "explanation": "Del 1 de septiembre al 31 de mayo en la I-70 entre Dotsero y Morrison, el vehículo necesita llantas con al menos 3/16 de pulgada de banda de rodadura y clasificación M+S, todo clima o de invierno; de lo contrario, debe llevar cadenas o un dispositivo de tracción aprobado."
   },
   {
     "type": "State-Specific",
@@ -5590,14 +5590,14 @@
     "state": "CO",
     "questionId": "CO-040",
     "category": "stateUnique",
-    "question": "¿Qué tiene de único los requisitos de tracción de Colorado para vehículos de tracción en dos ruedas comparados con vehículos 4WD?",
-    "optionA": "Los 2WD pueden usar cualquier llanta sin restricciones",
-    "optionB": "Los 2WD pagan multas más altas si son atrapados en violación",
-    "optionC": "Los 2WD no tienen requisitos durante la temporada",
-    "optionD": "Los 2WD deben llevar cadenas independientemente del tipo de llanta",
+    "question": "Durante la temporada de la ley de tracción de Colorado, ¿cómo puede cumplir un vehículo 2WD sin llevar cadenas?",
+    "optionA": "Llantas con al menos 1/16 de pulgada de banda",
+    "optionB": "Pagando un permiso de temporada para la carretera",
+    "optionC": "Conduciendo a menos de 25 mph en la nieve",
+    "optionD": "Llantas M+S, todo clima o de invierno, banda de 3/16 pulg.",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A diferencia de los vehículos 4WD/AWD que pueden cumplir solo con llantas de invierno, los vehículos 2WD de Colorado deben llevar cadenas o dispositivos de tracción independientemente del tipo de llanta durante la temporada de la ley de tracción."
+    "explanation": "La ley de tracción de Colorado se aplica a todos los vehículos de pasajeros, incluidos los 2WD: cumplen las llantas M+S, todo clima o de invierno con al menos 3/16 de pulgada de banda de rodadura, y la alternativa son cadenas o un dispositivo de tracción aprobado."
   },
   {
     "type": "State-Specific",
@@ -7074,14 +7074,14 @@
     "state": "FL",
     "questionId": "FL-026",
     "category": "duiStateLaws",
-    "question": "¿Por cuánto tiempo debe un infractor de DUI por primera vez tener instalado un dispositivo de bloqueo de encendido en Florida?",
+    "question": "En Florida, ¿por cuánto tiempo debe usar un dispositivo de bloqueo de encendido un infractor de DUI por primera vez con un BAC de 0.15 o más?",
     "optionA": "3 meses",
     "optionB": "6 meses",
     "optionC": "1 año",
     "optionD": "No se requiere para la primera infracción",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Florida requiere que los infractores de DUI por primera vez instalen un dispositivo de bloqueo de encendido durante al menos 6 meses."
+    "explanation": "Para un primer DUI con un BAC de 0.15 o más, o con un menor en el vehículo, la ley de Florida exige un dispositivo de bloqueo de encendido durante al menos 6 meses continuos; en otros casos, el tribunal puede ordenarlo."
   },
   {
     "type": "State-Specific",
@@ -7173,13 +7173,13 @@
     "questionId": "FL-033",
     "category": "stateUnique",
     "question": "¿Cuál es el requisito mínimo de visión de Florida para los titulares de licencia?",
-    "optionA": "20/50 en al menos un ojo",
+    "optionA": "20/70 en cualquier ojo o ambos juntos",
     "optionB": "20/40 en ambos ojos",
     "optionC": "20/30 en al menos un ojo",
     "optionD": "20/60 en al menos un ojo",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Florida requiere que los conductores tengan al menos visión 20/50 en un ojo, con o sin lentes correctivos."
+    "explanation": "Florida exige al menos 20/70 en cualquiera de los ojos o en ambos ojos juntos, con o sin lentes correctivos; si un ojo es ciego, el otro debe tener 20/40 o mejor."
   },
   {
     "type": "State-Specific",
@@ -7368,14 +7368,14 @@
     "state": "GA",
     "questionId": "GA-007",
     "category": "gdlLicensing",
-    "question": "Después de los primeros seis meses con una licencia Clase D, ¿cuántos pasajeros no familiares se permiten?",
+    "question": "Durante el segundo período de seis meses con una licencia Clase D, ¿cuántos pasajeros no familiares menores de 21 años se permiten?",
     "optionA": "No se permiten pasajeros no familiares nunca",
     "optionB": "Hasta tres pasajeros no familiares",
     "optionC": "Un pasajero no familiar",
     "optionD": "Dos pasajeros no familiares",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Después de los primeros seis meses con una licencia Clase D, los conductores pueden llevar un pasajero no familiar."
+    "explanation": "Durante el segundo período de seis meses, un conductor con licencia Clase D puede llevar un pasajero menor de 21 años que no sea familiar inmediato; después de 12 meses, el límite sube a tres."
   },
   {
     "type": "State-Specific",
@@ -24296,12 +24296,12 @@
     "category": "cellPhone",
     "question": "¿Cuándo puede usar legalmente un teléfono de mano mientras conduce en South Carolina?",
     "optionA": "Solo durante emergencias",
-    "optionB": "En semáforos mientras está detenido",
+    "optionB": "Al conducir a menos de 25 mph",
     "optionC": "Solo en vías secundarias",
-    "optionD": "Cuando esté estacionado o detenido",
+    "optionD": "Cuando esté legalmente estacionado o detenido",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El uso de un teléfono de mano solo es legal cuando el vehículo está estacionado o completamente detenido."
+    "explanation": "La ley de manos libres de South Carolina no se aplica mientras usted esté legalmente estacionado o detenido; mientras el vehículo está en movimiento no puede sostener un teléfono."
   },
   {
     "type": "State-Specific",
@@ -24406,14 +24406,14 @@
     "state": "SC",
     "questionId": "SC-024",
     "category": "duiStateLaws",
-    "question": "¿A qué nivel de BAC aplican sanciones DUI aumentadas en South Carolina?",
+    "question": "En South Carolina, ¿un resultado de prueba de qué BAC o más conlleva una suspensión inmediata de la licencia?",
     "optionA": "0.10%",
     "optionB": "0.12%",
     "optionC": "0.20%",
     "optionD": "0.15%",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Las sanciones DUI aumentadas se aplican cuando el BAC de un conductor es 0.15% o mayor."
+    "explanation": "Si una prueba de aliento o de sangre muestra un BAC de 0.15% o más, su licencia se suspende de inmediato, antes de cualquier condena por DUI."
   },
   {
     "type": "State-Specific",
@@ -24729,13 +24729,13 @@
     "questionId": "SD-007",
     "category": "gdlLicensing",
     "question": "¿Qué restricciones se aplican a los titulares de permisos restringidos de menor en South Dakota?",
-    "optionA": "No se permite conducir de noche",
+    "optionA": "No conducir después de las 8 PM",
     "optionB": "No se permite conducir en autopistas",
-    "optionC": "Adulto con licencia presente",
-    "optionD": "Solo conducir de día",
+    "optionC": "Padre a su lado de 10 PM a 6 AM",
+    "optionD": "Adulto presente en todo momento",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los titulares de permiso restringido de menor deben tener un adulto con licencia presente mientras conducen."
+    "explanation": "De 6 AM a 10 PM el titular puede conducir con permiso de su padre o madre; de 10 PM a 6 AM un padre o tutor debe ir sentado a su lado."
   },
   {
     "type": "State-Specific",
@@ -24787,11 +24787,11 @@
     "question": "¿Pueden los titulares de permisos restringidos de menor conducir solos a la escuela o al trabajo en South Dakota?",
     "optionA": "No, nunca está permitido",
     "optionB": "Solo a lugares de trabajo",
-    "optionC": "Sí, con autorización",
+    "optionC": "Sí, sin autorización adicional",
     "optionD": "Solo durante el día",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los titulares de permiso restringido de menor pueden conducir solos a la escuela o al trabajo con una autorización adecuada."
+    "explanation": "El permiso permite conducir sin supervisor de 6 AM a 10 PM con permiso de su padre o madre, y los viajes directos hacia o desde la escuela o el trabajo están exentos de los límites de horario."
   },
   {
     "type": "State-Specific",
@@ -24924,14 +24924,14 @@
     "state": "SD",
     "questionId": "SD-021",
     "category": "duiStateLaws",
-    "question": "¿Cuál es el nivel de tolerancia de alcohol para conductores menores de 21 en South Dakota?",
-    "optionA": "Política de tolerancia cero",
-    "optionB": "Límite de 0.02%",
-    "optionC": "Límite de 0.04%",
+    "question": "¿A partir de qué BAC se puede acusar a un conductor menor de 21 años en South Dakota?",
+    "optionA": "0.02% o más",
+    "optionB": "0.05% o más",
+    "optionC": "0.04% o más",
     "optionD": "Igual que el límite de adultos",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los conductores menores de 21 años están sujetos a una política de tolerancia cero para el alcohol."
+    "explanation": "En South Dakota es un delito menor que un conductor menor de 21 años tenga un BAC de 0.02% o más."
   },
   {
     "type": "State-Specific",
@@ -25851,11 +25851,11 @@
     "question": "¿Por cuánto tiempo dura la restricción de pasajeros para titulares de licencia provisional en Texas?",
     "optionA": "3 meses desde la emisión",
     "optionB": "12 meses desde la emisión",
-    "optionC": "6 meses desde la emisión",
-    "optionD": "Hasta los 18 años",
+    "optionC": "Hasta los 18 años",
+    "optionD": "Hasta los 21 años",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "La restricción de pasajeros para titulares de licencia provisional dura 6 meses desde la fecha de emisión."
+    "explanation": "Texas prohíbe que los conductores menores de 18 años lleven más de un pasajero menor de 21 años que no sea familiar, así que la restricción dura hasta que el conductor cumple 18 años."
   },
   {
     "type": "State-Specific",
@@ -25904,14 +25904,14 @@
     "state": "TX",
     "questionId": "TX-011",
     "category": "gdlLicensing",
-    "question": "¿Qué restricción aplica durante el primer año de una licencia provisional en Texas?",
+    "question": "¿Qué restricción aplica a los titulares de licencia provisional menores de 18 años en Texas?",
     "optionA": "Conducir en autopistas prohibido",
     "optionB": "Conducir solo en horario diurno",
     "optionC": "Toque de queda y límites de pasajeros",
     "optionD": "Solo familiares permitidos",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Durante el primer año de una licencia provisional, los conductores están sujetos a toque de queda nocturno y límites de pasajeros."
+    "explanation": "Hasta cumplir 18 años, los conductores con licencia provisional no pueden conducir entre la medianoche y las 5 AM (salvo por trabajo, escuela o emergencias) ni llevar más de un pasajero menor de 21 años que no sea familiar."
   },
   {
     "type": "State-Specific",
@@ -26562,14 +26562,14 @@
     "state": "UT",
     "questionId": "UT-018",
     "category": "cellPhone",
-    "question": "¿Qué acción relacionada con el teléfono está prohibida incluso en semáforos en rojo en Utah?",
+    "question": "¿Qué acción con el teléfono es ilegal mientras conduce un vehículo en movimiento en Utah?",
     "optionA": "Llamadas de voz",
     "optionB": "Envío manual de mensajes de texto",
-    "optionC": "Usar navegación GPS",
+    "optionC": "Ver un mapa de GPS",
     "optionD": "Hablar manos libres",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El envío manual de mensajes de texto está prohibido incluso cuando está detenido en semáforos en rojo."
+    "explanation": "Utah prohíbe escribir, marcar o leer mensajes manualmente mientras el vehículo está en movimiento; las llamadas de voz, el uso manos libres y ver el GPS están permitidos."
   },
   {
     "type": "State-Specific",
@@ -26843,13 +26843,13 @@
     "questionId": "UT-038",
     "category": "stateUnique",
     "question": "¿Qué deben tener los vehículos con tracción en todas las ruedas bajo la Ley de Tracción?",
-    "optionA": "4 llantas de invierno",
-    "optionB": "2+ llantas con copo de nieve",
-    "optionC": "Cadenas disponibles",
-    "optionD": "Llantas para todo terreno",
+    "optionA": "Llantas con solo 2/32 de pulgada de dibujo",
+    "optionB": "Llantas M+S en todas las ruedas",
+    "optionC": "Llantas de nieve solo adelante",
+    "optionD": "Llantas de verano de alto rendimiento",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los vehículos con tracción en todas las ruedas deben estar equipados con 2 o más llantas que lleven el símbolo de copo de nieve de 3 picos según la Ley de Tracción."
+    "explanation": "Según la Ley de Tracción de Utah, los vehículos AWD y 4WD necesitan como mínimo llantas M+S en todas las ruedas; también sirven llantas con el copo de nieve de 3 picos o cadenas en todas las ruedas."
   },
   {
     "type": "State-Specific",
@@ -27165,27 +27165,27 @@
     "questionId": "VA-021",
     "category": "duiStateLaws",
     "question": "¿Cuál es la política de tolerancia cero de Virginia para menores que beben y conducen?",
-    "optionA": "Cualquier alcohol prohibido",
+    "optionA": "Conducir con BAC de 0.02% o más",
     "optionB": "Solo aplica por encima de 0.05%",
     "optionC": "Solo es delito grave por encima de 0.08%",
     "optionD": "Advertencias solo para la primera infracción",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Cualquier cantidad detectable de alcohol está prohibida para conductores menores de edad bajo la política de tolerancia cero."
+    "explanation": "Un conductor menor de 21 años que ha consumido alcohol ilegalmente infringe la ley de tolerancia cero de Virginia con un BAC de 0.02% o más."
   },
   {
     "type": "State-Specific",
     "state": "VA",
     "questionId": "VA-022",
     "category": "stateUnique",
-    "question": "¿Qué sucede con las multas por exceso de velocidad en una zona de obras de carreteras de Virginia?",
-    "optionA": "Las multas siguen siendo las mismas",
-    "optionB": "Se triplican las multas",
-    "optionC": "Las multas se duplican",
-    "optionD": "Sólo se emite una advertencia",
+    "question": "En Virginia, ¿cuál es la multa máxima por exceso de velocidad en una zona de obras de carretera cuando hay trabajadores presentes?",
+    "optionA": "$100",
+    "optionB": "$250",
+    "optionC": "$500",
+    "optionD": "$1,000",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Virginia duplica las multas por exceso de velocidad en zonas de obras designadas en carreteras, incluso cuando los trabajadores no están presentes. Esto se aplica a todas las zonas de trabajo con la señalización adecuada."
+    "explanation": "Exceder la velocidad en una zona de obras señalizada mientras hay trabajadores presentes es una infracción de tránsito con una multa de hasta $500."
   },
   {
     "type": "State-Specific",
@@ -27304,14 +27304,14 @@
     "state": "VA",
     "questionId": "VA-032",
     "category": "stateUnique",
-    "question": "En Virginia, ¿de qué se le puede acusar por seguir demasiado de cerca a otro vehículo?",
+    "question": "En Virginia, ¿qué tipo de falta es normalmente seguir demasiado de cerca a otro vehículo?",
     "optionA": "No hay infracción a menos que ocurra un accidente",
-    "optionB": "Conducción imprudente",
+    "optionB": "Infracción de tránsito",
     "optionC": "Advertencia sólo por primera infracción",
-    "optionD": "Sólo infracciones de tráfico",
+    "optionD": "Conducción imprudente",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "En Virginia, seguir demasiado de cerca (seguir demasiado cerca) se clasifica como conducción imprudente según el Código de Virginia § 46.2-816. Los conductores deben mantener una distancia razonable según la velocidad, el tráfico y las condiciones de la carretera."
+    "explanation": "Seguir a otro vehículo más de cerca de lo razonable y prudente es una infracción de tránsito en Virginia, así que mantenga una distancia segura según la velocidad, el tráfico y las condiciones de la carretera."
   },
   {
     "type": "State-Specific",
@@ -28132,12 +28132,12 @@
     "category": "gdlLicensing",
     "question": "¿Qué sucede después de una segunda violación de las restricciones GDL en Washington?",
     "optionA": "Solo advertencia por escrito",
-    "optionB": "Licencia suspendida hasta los 18",
+    "optionB": "Suspensión de 6 meses o hasta los 18",
     "optionC": "Curso obligatorio de entrenamiento de manejo",
     "optionD": "Requisito de servicio comunitario",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Después de una segunda violación de las restricciones GDL, la licencia se suspende hasta que el conductor cumpla 18 años."
+    "explanation": "Una segunda violación suspende la licencia intermedia por 6 meses o hasta los 18 años, lo que ocurra primero; una tercera la suspende hasta los 18 años."
   },
   {
     "type": "State-Specific",
@@ -28315,11 +28315,11 @@
     "question": "¿Qué sucede si rechaza una prueba de aliento en Washington en su primer rechazo?",
     "optionA": "Sin penalización por primer rechazo",
     "optionB": "Suspensión de licencia por 90 días",
-    "optionC": "Suspensión de licencia por 2 años",
-    "optionD": "Suspensión de licencia por 1 año",
+    "optionC": "Revocación de licencia por 1 año",
+    "optionD": "Revocación de licencia por 2 años",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Rechazar una prueba de aliento en un primer rechazo resulta en una suspensión de licencia de 2 años."
+    "explanation": "Un primer rechazo en siete años conlleva la revocación de la licencia por un año; un segundo rechazo, por dos años."
   },
   {
     "type": "State-Specific",
@@ -28453,13 +28453,13 @@
     "questionId": "WA-033",
     "category": "stateUnique",
     "question": "¿Cuándo debe detenerse para un peatón en un cruce peatonal en Washington?",
-    "optionA": "Cuando estén en su carril de circulación",
+    "optionA": "En su mitad de la vía o a un carril de ella",
     "optionB": "Solo en cruces peatonales marcados",
     "optionC": "Solo cuando la señal dice caminar",
     "optionD": "Solo si hacen contacto visual",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los conductores deben detenerse ante un peatón en un cruce peatonal cuando el peatón está en el carril de circulación del conductor."
+    "explanation": "Deténgase cuando el peatón esté en su mitad de la vía o a un carril de ella; su mitad incluye todos los carriles que van en su dirección."
   },
   {
     "type": "State-Specific",
@@ -28606,14 +28606,14 @@
     "state": "WI",
     "questionId": "WI-004",
     "category": "gdlLicensing",
-    "question": "¿Cuáles son las restricciones de conducción nocturna para titulares de licencia probatoria menores de 16 en Wisconsin?",
+    "question": "¿Qué restricción nocturna se aplica en los primeros 9 meses de una licencia probatoria en Wisconsin?",
     "optionA": "No conducir de medianoche a 6 AM",
     "optionB": "No conducir de 10 PM a 6 AM",
     "optionC": "No conducir de 11 PM a 5 AM",
     "optionD": "No conducir de medianoche a 5 AM",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los titulares de licencia probatoria menores de 16 años tienen prohibido conducir entre medianoche y las 5 AM."
+    "explanation": "Durante al menos los primeros nueve meses, los conductores con licencia probatoria no pueden conducir entre medianoche y las 5 AM, salvo para ir entre la casa y la escuela o el trabajo."
   },
   {
     "type": "State-Specific",
@@ -28663,13 +28663,13 @@
     "questionId": "WI-008",
     "category": "gdlLicensing",
     "question": "¿Qué deben completar los conductores jóvenes antes de obtener una licencia probatoria en Wisconsin?",
-    "optionA": "30 hrs de instrucción en el aula",
+    "optionA": "Un curso de primeros auxilios",
     "optionB": "Curso avanzado de manejo defensivo",
     "optionC": "Solo examen escrito",
-    "optionD": "Educación vial o práctica adicional",
+    "optionD": "Educación vial y 50 horas de práctica",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los conductores jóvenes deben completar un curso de educación vial o horas adicionales de práctica supervisada antes de recibir una licencia probatoria."
+    "explanation": "Los conductores menores de 18 años deben aprobar un curso de educación vial aprobado con entrenamiento al volante y registrar 50 horas de práctica, 10 de ellas de noche."
   },
   {
     "type": "State-Specific",
@@ -28802,14 +28802,14 @@
     "state": "WI",
     "questionId": "WI-018",
     "category": "cellPhone",
-    "question": "¿Cuál es la ley para leer mensajes de texto mientras está detenido en un semáforo en rojo en Wisconsin?",
-    "optionA": "Permitido cuando está completamente detenido",
-    "optionB": "Ilegal, aún está conduciendo",
-    "optionC": "Permitido si está en posición de estacionamiento",
-    "optionD": "Permitido con luces intermitentes",
+    "question": "¿Qué uso del teléfono prohíbe la ley de Wisconsin a todos los conductores?",
+    "optionA": "Seguir un GPS montado en el tablero",
+    "optionB": "Escribir o enviar un mensaje de texto",
+    "optionC": "Escuchar música",
+    "optionD": "Llamadas de voz manos libres",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Leer mensajes de texto mientras está detenido en un semáforo en rojo es ilegal porque el conductor aún se considera que está conduciendo."
+    "explanation": "Wisconsin prohíbe escribir o enviar mensajes de texto y correos electrónicos mientras conduce; los conductores con licencia probatoria o permiso de aprendizaje no pueden usar el teléfono en absoluto."
   },
   {
     "type": "State-Specific",
@@ -28819,11 +28819,11 @@
     "question": "¿Cuál es el límite legal de BAC para conductores menores de 21 años en Wisconsin?",
     "optionA": "0.08%",
     "optionB": "0.04%",
-    "optionC": "0.02%",
-    "optionD": "0.00%",
+    "optionC": "0.00%",
+    "optionD": "0.02%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El límite legal de BAC para conductores menores de 21 años es 0.02%."
+    "explanation": "La ley de sobriedad absoluta de Wisconsin significa que los conductores menores de 21 años no pueden conducir con nada de alcohol en el cuerpo."
   },
   {
     "type": "State-Specific",
@@ -30455,13 +30455,13 @@
     "questionId": "DC-016",
     "category": "cellPhone",
     "question": "¿Cuál es la regla para girar a la derecha en rojo en las intersecciones de DC?",
-    "optionA": "Está prohibido girar a la derecha en rojo en todas las intersecciones de DC",
+    "optionA": "Prohibido salvo que una señal permita el giro",
     "optionB": "Se permiten giros a la derecha en rojo después de una parada completa",
-    "optionC": "Los giros a la derecha en rojo solo están permitidos en las intersecciones señalizadas",
+    "optionC": "Permitido solo durante horas de luz natural",
     "optionD": "Se permiten giros a la derecha en rojo excepto en zonas escolares",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A partir de 2025, DC prohibirá los giros a la derecha en rojo en todas las intersecciones para mejorar la seguridad de peatones y ciclistas."
+    "explanation": "Desde el 1 de enero de 2025, la ley de DC prohíbe girar con luz roja fija a menos que DDOT haya colocado una señal que permita el giro en esa intersección."
   },
   {
     "type": "State-Specific",
@@ -30524,14 +30524,14 @@
     "state": "DC",
     "questionId": "DC-021",
     "category": "duiStateLaws",
-    "question": "¿Se requiere que los vehículos DC pasen una inspección de seguridad y emisiones?",
-    "optionA": "Sí, todos los vehículos registrados en DC deben pasar la inspección",
-    "optionB": "Sólo los vehículos comerciales necesitan inspección",
-    "optionC": "No, DC no requiere inspecciones",
-    "optionD": "Sólo vehículos de más de 5 años",
+    "question": "¿Qué inspección necesitan la mayoría de los vehículos personales registrados en DC?",
+    "optionA": "Una inspección de emisiones cada dos años",
+    "optionB": "Una inspección de seguridad cada año",
+    "optionC": "Seguridad y emisiones cada año",
+    "optionD": "Ninguna inspección",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Todos los vehículos registrados en DC deben pasar una inspección de seguridad y emisiones en la Estación de Inspección del DMV de DC."
+    "explanation": "DC dejó de hacer inspecciones de seguridad a los vehículos personales en 2009; la mayoría aún necesita una inspección de emisiones cada dos años, mientras que los vehículos comerciales se inspeccionan cada año."
   },
   {
     "type": "State-Specific",
@@ -30793,10 +30793,10 @@
     "question": "¿Cuál es el límite de velocidad máximo permitido en cualquier carretera de DC a menos que se indique lo contrario?",
     "optionA": "30 mph",
     "optionB": "35 mph",
-    "optionC": "25 mph",
+    "optionC": "20 mph",
     "optionD": "45 mph",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El límite de velocidad máxima en las carreteras de DC es generalmente de 25 mph en las calles principales, con 20 mph como valor predeterminado en calles residenciales, a menos que se indique lo contrario."
+    "explanation": "A menos que se indique otro límite, la velocidad máxima legal en las calles de DC es de 20 mph; muchas vías principales tienen un límite señalizado de 25 mph y los callejones de 15 mph."
   }
 ]

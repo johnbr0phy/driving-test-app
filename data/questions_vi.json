@@ -2510,14 +2510,14 @@
   "state": "AK",
   "questionId": "AK-020",
   "category": "duiStateLaws",
-  "question": "Mức BAC nào dẫn đến cáo buộc DUI nghiêm trọng ở Alaska?",
-  "optionA": "0.10% trở lên",
-  "optionB": "0.12% trở lên",
-  "optionC": "0.20% trở lên",
-  "optionD": "0.15% trở lên",
+  "question": "Thời gian ngồi tù tối thiểu cho lần bị kết tội DUI đầu tiên ở Alaska là bao lâu?",
+  "optionA": "24 giờ",
+  "optionB": "7 ngày",
+  "optionC": "30 ngày",
+  "optionD": "72 giờ",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Alaska bổ sung cáo buộc DUI nghiêm trọng khi BAC của tài xế đạt 0.15% trở lên, kéo theo hình phạt nặng hơn so với DUI thông thường."
+  "explanation": "Alaska yêu cầu ngồi tù ít nhất 72 giờ liên tục cho lần bị kết tội DUI đầu tiên, cùng với tiền phạt, thu hồi bằng lái và thiết bị khóa khởi động."
  },
  {
   "type": "State-Specific",
@@ -2595,13 +2595,13 @@
   "questionId": "AK-026",
   "category": "duiStateLaws",
   "question": "Thiết bị khóa động cơ phải lắp bao lâu sau lần kết tội DUI đầu tiên ở Alaska?",
-  "optionA": "6 tháng",
-  "optionB": "12 tháng",
+  "optionA": "12 tháng",
+  "optionB": "6 tháng",
   "optionC": "18 tháng",
   "optionD": "24 tháng",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Sau lần kết tội DUI đầu tiên, Alaska yêu cầu lắp thiết bị khóa động cơ trong 12 tháng — thiết bị này ngăn xe khởi động nếu phát hiện cồn trong hơi thở của tài xế."
+  "explanation": "Sau lần kết tội DUI đầu tiên, Alaska yêu cầu lắp thiết bị khóa động cơ ít nhất 6 tháng sau khi được lái xe trở lại; thiết bị này ngăn xe khởi động nếu phát hiện cồn trong hơi thở của tài xế."
  },
  {
   "type": "State-Specific",
@@ -4639,13 +4639,13 @@
   "questionId": "CO-012",
   "category": "gdlLicensing",
   "question": "Thanh thiếu niên Colorado từ 16 tuổi trở lên có cần hoàn thành giáo dục lái xe trước khi xin giấy phép tập lái không?",
-  "optionA": "Không, không yêu cầu giáo dục chính thức",
+  "optionA": "Có, bắt buộc khóa học trực tuyến 6 giờ",
   "optionB": "Có, bắt buộc khóa học 30 giờ",
   "optionC": "Có, bắt buộc lớp học 4 giờ",
-  "optionD": "Chỉ khi dưới 16 tuổi rưỡi",
+  "optionD": "Không, không yêu cầu giáo dục chính thức",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Tài xế từ 16 tuổi trở lên ở Colorado không cần giáo dục lái xe chính thức trước khi xin giấy phép tập lái, nhưng việc tập lái có giám sát vẫn bắt buộc."
+  "explanation": "Theo quy định áp dụng đến hết năm 2026, người xin giấy phép tập lái ở Colorado từ 16 tuổi trở lên không cần giáo dục lái xe chính thức; từ ngày 1 tháng 1 năm 2027, người 16 và 17 tuổi phải hoàn thành khóa học 30 giờ."
  },
  {
   "type": "State-Specific",
@@ -4667,13 +4667,13 @@
   "questionId": "CO-014",
   "category": "cellPhone",
   "question": "Tài xế Colorado có thể dùng điện thoại hợp pháp khi lái xe như thế nào?",
-  "optionA": "Với điện thoại gắn trên bảng điều khiển",
+  "optionA": "Nhắn tin chỉ khi chạy chậm",
   "optionB": "Với phụ kiện rảnh tay như Bluetooth",
-  "optionC": "Với loa ngoài khi xe đang dừng",
+  "optionC": "Cầm điện thoại khi dừng đèn đỏ",
   "optionD": "Với một tay trong khi vẫn nhìn đường",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Luật rảnh tay của Colorado yêu cầu tài xế dùng phụ kiện rảnh tay như công nghệ Bluetooth hoặc điện thoại gắn trên bảng điều khiển để gọi điện khi lái xe."
+  "explanation": "Luật rảnh tay của Colorado, có hiệu lực từ ngày 1 tháng 1 năm 2025, chỉ cho phép dùng điện thoại khi lái xe qua phụ kiện rảnh tay như Bluetooth, tối đa một lần chạm hoặc vuốt để bắt đầu một chức năng; luật vẫn áp dụng khi xe đang dừng trong dòng xe."
  },
  {
   "type": "State-Specific",
@@ -4918,14 +4918,14 @@
   "state": "CO",
   "questionId": "CO-032",
   "category": "stateUnique",
-  "question": "Xe 2WD phải mang theo gì trên I-70 trong mùa luật bám đường ở Colorado?",
+  "question": "Trên I-70 trong mùa luật bám đường, xe 2WD không có lốp đạt chuẩn phải mang theo gì?",
   "optionA": "Pháo hiệu khẩn cấp và tam giác phản quang",
   "optionB": "Nhiên liệu dự phòng chỉ trong bình chứa được phê duyệt",
   "optionC": "Xẻng tuyết và dụng cụ cạo băng",
   "optionD": "Xích lốp hoặc thiết bị bám đường được phê duyệt",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Theo luật Colorado, xe 2WD phải mang theo xích lốp hoặc thiết bị bám đường thay thế được phê duyệt từ 1 tháng 9 đến 31 tháng 5, bất kể loại lốp."
+  "explanation": "Từ 1 tháng 9 đến 31 tháng 5 trên I-70 giữa Dotsero và Morrison, xe cần lốp có rãnh sâu ít nhất 3/16 inch và được xếp loại M+S, mọi thời tiết hoặc mùa đông; nếu không, xe phải mang theo xích hoặc thiết bị bám đường được phê duyệt."
  },
  {
   "type": "State-Specific",
@@ -5030,14 +5030,14 @@
   "state": "CO",
   "questionId": "CO-040",
   "category": "stateUnique",
-  "question": "Điều gì đặc biệt về yêu cầu bám đường của Colorado đối với xe dẫn động hai bánh so với xe 4WD?",
-  "optionA": "Xe 2 bánh chủ động có thể dùng bất kỳ loại lốp nào mà không bị hạn chế",
-  "optionB": "Xe 2 bánh chủ động bị phạt nặng hơn nếu bị phát hiện vi phạm",
-  "optionC": "Xe 2 bánh chủ động hiện không có yêu cầu nào trong mùa này",
-  "optionD": "Xe 2 bánh chủ động phải mang theo xích bất kể loại lốp",
+  "question": "Trong mùa luật bám đường của Colorado, xe 2WD có thể tuân thủ mà không mang xích bằng cách nào?",
+  "optionA": "Lốp bất kỳ có rãnh sâu ít nhất 1/16 inch",
+  "optionB": "Trả phí giấy phép đường theo mùa",
+  "optionC": "Lái dưới 25 mph khi có tuyết",
+  "optionD": "Lốp M+S, mọi thời tiết hoặc mùa đông, rãnh 3/16 inch",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Không giống xe 4WD/AWD có thể tuân thủ chỉ bằng lốp mùa đông, xe 2WD ở Colorado phải mang theo xích hoặc thiết bị bám đường bất kể loại lốp trong mùa luật bám đường."
+  "explanation": "Luật bám đường của Colorado áp dụng cho mọi xe chở khách, kể cả xe 2WD: lốp M+S, mọi thời tiết hoặc mùa đông có rãnh sâu ít nhất 3/16 inch là đạt chuẩn, còn cách khác là xích hoặc thiết bị bám đường được phê duyệt."
  },
  {
   "type": "State-Specific",
@@ -6514,14 +6514,14 @@
   "state": "FL",
   "questionId": "FL-026",
   "category": "duiStateLaws",
-  "question": "Người vi phạm DUI lần đầu phải lắp thiết bị khóa khởi động bằng hơi thở trong bao lâu ở Florida?",
+  "question": "Ở Florida, người vi phạm DUI lần đầu có nồng độ cồn trong máu (BAC) từ 0.15 trở lên phải dùng thiết bị khóa khởi động bằng hơi thở trong bao lâu?",
   "optionA": "3 tháng",
   "optionB": "6 tháng",
   "optionC": "1 năm",
   "optionD": "Không có yêu cầu đối với lần vi phạm đầu",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Florida yêu cầu người vi phạm DUI lần đầu lắp thiết bị khóa khởi động bằng hơi thở ít nhất 6 tháng."
+  "explanation": "Với lần DUI đầu tiên có BAC từ 0.15 trở lên, hoặc có trẻ vị thành niên trong xe, luật Florida yêu cầu lắp thiết bị khóa khởi động bằng hơi thở ít nhất 6 tháng liên tục; các trường hợp khác do tòa quyết định."
  },
  {
   "type": "State-Specific",
@@ -6613,13 +6613,13 @@
   "questionId": "FL-033",
   "category": "stateUnique",
   "question": "Yêu cầu thị lực tối thiểu của Florida đối với người có bằng lái là gì?",
-  "optionA": "20/50 ở ít nhất một mắt",
+  "optionA": "20/70 ở một mắt bất kỳ hoặc cả hai mắt",
   "optionB": "20/40 ở cả hai mắt",
   "optionC": "20/30 ở ít nhất một mắt",
   "optionD": "20/60 ở ít nhất một mắt",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Florida yêu cầu tài xế có thị lực ít nhất 20/50 ở một mắt, có hoặc không có kính chỉnh thị."
+  "explanation": "Florida yêu cầu thị lực ít nhất 20/70 ở một mắt bất kỳ hoặc cả hai mắt cùng nhìn, có hoặc không có kính chỉnh thị; nếu một mắt bị mù, mắt còn lại phải đạt 20/40 trở lên."
  },
  {
   "type": "State-Specific",
@@ -6808,14 +6808,14 @@
   "state": "GA",
   "questionId": "GA-007",
   "category": "gdlLicensing",
-  "question": "Sau sáu tháng đầu tiên với bằng lái Loại D (Class D), được phép chở bao nhiêu hành khách không phải là thành viên gia đình?",
+  "question": "Trong sáu tháng thứ hai với bằng lái Loại D (Class D), được phép chở bao nhiêu hành khách dưới 21 tuổi không phải người trong gia đình?",
   "optionA": "Không bao giờ được phép chở hành khách ngoài gia đình",
   "optionB": "Tối đa ba hành khách ngoài gia đình",
   "optionC": "Một hành khách không phải người nhà",
   "optionD": "Hai hành khách ngoài gia đình",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Sau sáu tháng đầu tiên với bằng lái Loại D, người lái xe có thể chở một hành khách không phải là thành viên gia đình."
+  "explanation": "Trong sáu tháng thứ hai, người có bằng lái Loại D được chở một hành khách dưới 21 tuổi không phải người thân trực hệ; sau 12 tháng, giới hạn tăng lên ba người."
  },
  {
   "type": "State-Specific",
@@ -23736,12 +23736,12 @@
   "category": "cellPhone",
   "question": "Khi nào bạn được dùng điện thoại cầm tay hợp pháp khi lái xe ở South Carolina?",
   "optionA": "Chỉ trong trường hợp khẩn cấp",
-  "optionB": "Khi dừng ở đèn giao thông",
+  "optionB": "Khi lái dưới 25 mph",
   "optionC": "Chỉ trên đường nhỏ",
-  "optionD": "Khi đã đỗ hoặc dừng hẳn",
+  "optionD": "Khi đỗ hoặc dừng xe hợp pháp",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Dùng điện thoại cầm tay chỉ hợp pháp khi xe đã đỗ hoặc dừng hẳn."
+  "explanation": "Luật rảnh tay của South Carolina không áp dụng khi bạn đang đỗ hoặc dừng xe hợp pháp; khi xe đang chạy, bạn không được cầm điện thoại."
  },
  {
   "type": "State-Specific",
@@ -23846,14 +23846,14 @@
   "state": "SC",
   "questionId": "SC-024",
   "category": "duiStateLaws",
-  "question": "Mức BAC nào dẫn đến hình phạt DUI tăng nặng ở South Carolina?",
+  "question": "Ở South Carolina, kết quả kiểm tra BAC từ mức nào trở lên sẽ dẫn đến việc đình chỉ bằng lái ngay lập tức?",
   "optionA": "0,10%",
   "optionB": "0.12%",
   "optionC": "0.20%",
   "optionD": "0.15%",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Hình phạt DUI tăng nặng áp dụng khi BAC của tài xế từ 0,15% trở lên."
+  "explanation": "Nếu kiểm tra hơi thở hoặc máu cho thấy BAC từ 0,15% trở lên, bằng lái của bạn bị đình chỉ ngay, trước khi có bất kỳ bản án DUI nào."
  },
  {
   "type": "State-Specific",
@@ -24169,13 +24169,13 @@
   "questionId": "SD-007",
   "category": "gdlLicensing",
   "question": "Những hạn chế nào áp dụng cho người có giấy phép hạn chế cho trẻ vị thành niên ở South Dakota?",
-  "optionA": "Không được lái ban đêm",
+  "optionA": "Không được lái sau 8 giờ tối",
   "optionB": "Không được lái trên đường cao tốc",
-  "optionC": "Phải có người lớn có bằng đi cùng",
-  "optionD": "Chỉ được lái ban ngày",
+  "optionC": "Cha mẹ ngồi cạnh từ 10 giờ tối đến 6 giờ sáng",
+  "optionD": "Luôn phải có người lớn đi cùng",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người có giấy phép hạn chế cho trẻ vị thành niên phải có người lớn có bằng đi cùng khi lái xe."
+  "explanation": "Từ 6 giờ sáng đến 10 giờ tối, người có giấy phép được lái nếu cha mẹ cho phép; từ 10 giờ tối đến 6 giờ sáng, cha mẹ hoặc người giám hộ phải ngồi bên cạnh."
  },
  {
   "type": "State-Specific",
@@ -24227,11 +24227,11 @@
   "question": "Người có giấy phép hạn chế cho trẻ vị thành niên có được lái một mình đến trường hoặc nơi làm việc ở South Dakota không?",
   "optionA": "Không, không bao giờ được phép",
   "optionB": "Chỉ đến nơi làm việc",
-  "optionC": "Có, với chứng nhận bổ sung",
+  "optionC": "Có, không cần chứng nhận bổ sung",
   "optionD": "Chỉ trong ban ngày",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người có giấy phép hạn chế cho trẻ vị thành niên được lái một mình đến trường hoặc nơi làm việc nếu có chứng nhận bổ sung phù hợp."
+  "explanation": "Giấy phép cho phép lái không cần người giám sát từ 6 giờ sáng đến 10 giờ tối nếu cha mẹ cho phép, và các chuyến đi thẳng đến hoặc về từ trường hay nơi làm việc được miễn giới hạn giờ."
  },
  {
   "type": "State-Specific",
@@ -24364,14 +24364,14 @@
   "state": "SD",
   "questionId": "SD-021",
   "category": "duiStateLaws",
-  "question": "Mức dung nạp rượu đối với tài xế dưới 21 tuổi ở South Dakota là bao nhiêu?",
-  "optionA": "Chính sách không khoan nhượng",
-  "optionB": "giới hạn 0.02%",
-  "optionC": "giới hạn 0.04%",
+  "question": "Ở South Dakota, tài xế dưới 21 tuổi có thể bị buộc tội khi BAC từ mức nào?",
+  "optionA": "0,02% trở lên",
+  "optionB": "0,05% trở lên",
+  "optionC": "0,04% trở lên",
   "optionD": "Giống giới hạn người lớn",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Tài xế dưới 21 tuổi chịu chính sách không khoan nhượng đối với rượu."
+  "explanation": "Ở South Dakota, tài xế dưới 21 tuổi có BAC từ 0,02% trở lên là phạm tội nhẹ."
  },
  {
   "type": "State-Specific",
@@ -25291,11 +25291,11 @@
   "question": "Hạn chế hành khách đối với người có bằng lái tạm thời ở Texas kéo dài bao lâu?",
   "optionA": "3 tháng kể từ ngày cấp",
   "optionB": "12 tháng kể từ ngày cấp",
-  "optionC": "6 tháng kể từ ngày cấp",
-  "optionD": "Cho đến khi 18 tuổi",
+  "optionC": "Cho đến khi 18 tuổi",
+  "optionD": "Cho đến khi 21 tuổi",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Hạn chế hành khách đối với người có bằng lái tạm thời kéo dài 6 tháng kể từ ngày cấp."
+  "explanation": "Texas cấm tài xế dưới 18 tuổi chở quá một hành khách dưới 21 tuổi không phải người trong gia đình, nên hạn chế này kéo dài đến khi tài xế đủ 18 tuổi."
  },
  {
   "type": "State-Specific",
@@ -25344,14 +25344,14 @@
   "state": "TX",
   "questionId": "TX-011",
   "category": "gdlLicensing",
-  "question": "Hạn chế nào áp dụng trong năm đầu của bằng lái tạm thời ở Texas?",
+  "question": "Hạn chế nào áp dụng cho người có bằng lái tạm thời dưới 18 tuổi ở Texas?",
   "optionA": "Cấm lái trên đường cao tốc",
   "optionB": "Chỉ được lái ban ngày",
   "optionC": "Giới nghiêm và hạn chế hành khách",
   "optionD": "Chỉ được chở thành viên gia đình",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Trong năm đầu của bằng lái tạm thời, tài xế phải tuân theo giờ giới nghiêm ban đêm và hạn chế hành khách."
+  "explanation": "Cho đến khi đủ 18 tuổi, tài xế có bằng tạm thời không được lái từ nửa đêm đến 5 giờ sáng (trừ khi đi làm, đi học hoặc khẩn cấp) và không được chở quá một hành khách dưới 21 tuổi không phải người trong gia đình."
  },
  {
   "type": "State-Specific",
@@ -26002,14 +26002,14 @@
   "state": "UT",
   "questionId": "UT-018",
   "category": "cellPhone",
-  "question": "Hành động liên quan đến điện thoại nào bị cấm ngay cả khi dừng đèn đỏ ở Utah?",
+  "question": "Hành động nào với điện thoại là bất hợp pháp khi lái xe đang chạy ở Utah?",
   "optionA": "Gọi thoại",
   "optionB": "Nhắn tin bằng tay",
-  "optionC": "Sử dụng định vị GPS",
+  "optionC": "Xem bản đồ GPS",
   "optionD": "Nói chuyện rảnh tay",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Nhắn tin bằng tay bị cấm ngay cả khi dừng ở đèn đỏ."
+  "explanation": "Utah cấm nhắn tin, bấm số hoặc đọc tin nhắn bằng tay khi xe đang chạy; gọi thoại, dùng chế độ rảnh tay và xem GPS thì được phép."
  },
  {
   "type": "State-Specific",
@@ -26283,13 +26283,13 @@
   "questionId": "UT-038",
   "category": "stateUnique",
   "question": "Xe dẫn động tất cả bánh phải có gì theo Luật Độ bám đường?",
-  "optionA": "4 lốp mùa đông",
-  "optionB": "từ 2 lốp có ký hiệu bông tuyết trở lên",
-  "optionC": "Có sẵn xích",
-  "optionD": "Lốp mọi địa hình",
+  "optionA": "Lốp chỉ còn 2/32 inch gai",
+  "optionB": "Lốp M+S ở tất cả các bánh",
+  "optionC": "Lốp tuyết chỉ ở bánh trước",
+  "optionD": "Lốp mùa hè hiệu suất cao",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Xe dẫn động tất cả bánh phải được trang bị từ 2 lốp trở lên có ký hiệu bông tuyết 3 đỉnh núi theo Luật Độ bám đường."
+  "explanation": "Theo Luật Độ bám đường của Utah, xe AWD và 4WD phải có ít nhất lốp M+S ở tất cả các bánh; lốp có ký hiệu bông tuyết 3 đỉnh núi hoặc xích ở tất cả các bánh cũng đạt yêu cầu."
  },
  {
   "type": "State-Specific",
@@ -26605,27 +26605,27 @@
   "questionId": "VA-021",
   "category": "duiStateLaws",
   "question": "Chính sách không khoan nhượng (zero tolerance) của Virginia đối với việc uống rượu và lái xe khi chưa đủ tuổi là gì?",
-  "optionA": "Cấm mọi lượng cồn",
+  "optionA": "Lái xe với BAC từ 0,02% trở lên",
   "optionB": "Chỉ áp dụng trên 0.05%",
   "optionC": "Chỉ là trọng tội khi trên 0.08%",
   "optionD": "Chỉ cảnh cáo lần vi phạm đầu",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Theo chính sách không khoan nhượng, người lái xe chưa đủ tuổi bị cấm có bất kỳ lượng cồn nào có thể phát hiện được."
+  "explanation": "Tài xế dưới 21 tuổi đã uống rượu bất hợp pháp sẽ vi phạm luật không khoan nhượng của Virginia khi BAC từ 0,02% trở lên."
  },
  {
   "type": "State-Specific",
   "state": "VA",
   "questionId": "VA-022",
   "category": "stateUnique",
-  "question": "Điều gì xảy ra với tiền phạt tốc độ trong khu vực thi công đường cao tốc ở Virginia?",
-  "optionA": "Tiền phạt giữ nguyên",
-  "optionB": "Tiền phạt tăng gấp ba",
-  "optionC": "Tiền phạt tăng gấp đôi",
-  "optionD": "Chỉ bị cảnh cáo",
+  "question": "Ở Virginia, mức phạt tối đa khi chạy quá tốc độ trong khu vực thi công đường cao tốc lúc có công nhân là bao nhiêu?",
+  "optionA": "$100",
+  "optionB": "$250",
+  "optionC": "$500",
+  "optionD": "$1,000",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Tiền phạt tốc độ được tăng gấp đôi trong các khu vực thi công đường cao tốc được chỉ định, ngay cả khi không có công nhân hiện diện."
+  "explanation": "Chạy quá tốc độ trong khu vực thi công có biển báo khi có công nhân là vi phạm giao thông, bị phạt tối đa $500."
  },
  {
   "type": "State-Specific",
@@ -26744,14 +26744,14 @@
   "state": "VA",
   "questionId": "VA-032",
   "category": "stateUnique",
-  "question": "Ở Virginia, bạn có thể bị buộc tội gì khi bám đuôi xe khác quá sát?",
+  "question": "Ở Virginia, bám đuôi xe khác quá sát thường là loại vi phạm gì?",
   "optionA": "Không vi phạm trừ khi xảy ra tai nạn",
-  "optionB": "Lái xe ẩu",
+  "optionB": "Vi phạm giao thông",
   "optionC": "Chỉ cảnh cáo lần đầu vi phạm",
-  "optionD": "Chỉ là vi phạm giao thông nhẹ",
+  "optionD": "Lái xe ẩu",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Bám đuôi xe khác quá sát được phân loại là lái xe ẩu, người lái xe phải giữ khoảng cách hợp lý dựa trên tốc độ, tình hình giao thông và điều kiện đường sá."
+  "explanation": "Bám theo xe khác gần hơn mức hợp lý và thận trọng là vi phạm giao thông ở Virginia, vì vậy hãy giữ khoảng cách an toàn theo tốc độ, mật độ giao thông và điều kiện đường sá."
  },
  {
   "type": "State-Specific",
@@ -27572,12 +27572,12 @@
   "category": "gdlLicensing",
   "question": "Điều gì xảy ra sau lần vi phạm thứ hai các quy định GDL ở Washington?",
   "optionA": "Chỉ cảnh cáo bằng văn bản",
-  "optionB": "Đình chỉ bằng lái cho đến khi đủ 18 tuổi",
+  "optionB": "Đình chỉ 6 tháng hoặc đến khi 18 tuổi",
   "optionC": "Bắt buộc học khóa đào tạo lái xe",
   "optionD": "Yêu cầu lao động công ích",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Sau lần vi phạm thứ hai các quy định GDL, bằng lái bị đình chỉ cho đến khi người lái xe đủ 18 tuổi."
+  "explanation": "Vi phạm lần thứ hai khiến bằng lái trung gian bị đình chỉ 6 tháng hoặc đến khi đủ 18 tuổi, tùy điều nào đến trước; vi phạm lần thứ ba bị đình chỉ đến khi đủ 18 tuổi."
  },
  {
   "type": "State-Specific",
@@ -27755,11 +27755,11 @@
   "question": "Điều gì xảy ra nếu bạn từ chối kiểm tra hơi thở ở Washington trong lần từ chối đầu tiên?",
   "optionA": "Không bị phạt trong lần từ chối đầu tiên",
   "optionB": "Đình chỉ bằng lái 90 ngày",
-  "optionC": "Đình chỉ bằng lái 2 năm",
-  "optionD": "Đình chỉ bằng lái 1 năm",
+  "optionC": "Thu hồi bằng lái 1 năm",
+  "optionD": "Thu hồi bằng lái 2 năm",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Từ chối kiểm tra hơi thở trong lần từ chối đầu tiên dẫn đến việc đình chỉ bằng lái trong 2 năm."
+  "explanation": "Từ chối lần đầu trong vòng bảy năm dẫn đến thu hồi bằng lái một năm; từ chối lần thứ hai là hai năm."
  },
  {
   "type": "State-Specific",
@@ -27893,13 +27893,13 @@
   "questionId": "WA-033",
   "category": "stateUnique",
   "question": "Khi nào bạn phải dừng lại nhường người đi bộ tại lối băng qua đường ở Washington?",
-  "optionA": "Khi họ đang ở trong làn đường bạn đang đi",
-  "optionB": "Khi họ đang ở bất kỳ làn nào của lòng đường",
+  "optionA": "Ở nửa đường của bạn hoặc cách đó một làn",
+  "optionB": "Chỉ khi họ ở ngay trước mặt bạn",
   "optionC": "Khi tín hiệu báo được đi bộ",
   "optionD": "Khi họ đã giao tiếp bằng mắt với bạn",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Người lái phải dừng lại nhường người đi bộ tại lối băng qua đường khi người đi bộ đang ở trong làn đường mà người lái đang đi."
+  "explanation": "Hãy dừng khi người đi bộ ở nửa lòng đường phía bạn hoặc cách đó một làn; nửa phía bạn là tất cả các làn chạy cùng hướng với bạn."
  },
  {
   "type": "State-Specific",
@@ -28046,14 +28046,14 @@
   "state": "WI",
   "questionId": "WI-004",
   "category": "gdlLicensing",
-  "question": "Hạn chế lái xe ban đêm đối với người có bằng lái thử thách dưới 16 tuổi ở Wisconsin là gì?",
+  "question": "Hạn chế lái xe ban đêm nào áp dụng trong 9 tháng đầu của bằng lái thử thách ở Wisconsin?",
   "optionA": "Không được lái từ nửa đêm đến 6 giờ sáng",
   "optionB": "Không được lái từ 10 giờ tối đến 6 giờ sáng",
   "optionC": "Không được lái từ 11 giờ tối đến 5 giờ sáng",
   "optionD": "Không được lái từ nửa đêm đến 5 giờ sáng",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Người có bằng lái thử thách dưới 16 tuổi bị cấm lái xe từ nửa đêm đến 5 giờ sáng."
+  "explanation": "Trong ít nhất chín tháng đầu, người có bằng lái thử thách không được lái từ nửa đêm đến 5 giờ sáng, trừ khi đi giữa nhà và trường học hoặc nơi làm việc."
  },
  {
   "type": "State-Specific",
@@ -28103,13 +28103,13 @@
   "questionId": "WI-008",
   "category": "gdlLicensing",
   "question": "Tài xế trẻ phải hoàn thành gì trước khi nhận bằng lái thử thách ở Wisconsin?",
-  "optionA": "30 giờ học lý thuyết",
+  "optionA": "Một khóa sơ cứu",
   "optionB": "Khóa học lái xe phòng thủ nâng cao",
   "optionC": "Chỉ bài thi viết",
-  "optionD": "Giáo dục lái xe hoặc thực hành thêm",
+  "optionD": "Giáo dục lái xe và 50 giờ thực hành",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Tài xế trẻ phải hoàn thành khóa học giáo dục lái xe hoặc thêm giờ thực hành có giám sát trước khi nhận bằng lái thử thách."
+  "explanation": "Tài xế dưới 18 tuổi phải hoàn thành khóa giáo dục lái xe được phê duyệt có đào tạo thực hành sau tay lái và có 50 giờ thực hành, trong đó 10 giờ vào ban đêm."
  },
  {
   "type": "State-Specific",
@@ -28242,14 +28242,14 @@
   "state": "WI",
   "questionId": "WI-018",
   "category": "cellPhone",
-  "question": "Luật đọc tin nhắn khi dừng đèn đỏ ở Wisconsin là gì?",
-  "optionA": "Hợp pháp nếu xe đã dừng hẳn",
-  "optionB": "Bất hợp pháp, vẫn đang lái",
-  "optionC": "Hợp pháp nếu xe ở số P",
-  "optionD": "Hợp pháp nếu đèn cảnh báo đang bật",
+  "question": "Luật Wisconsin cấm mọi tài xế làm việc gì với điện thoại?",
+  "optionA": "Đi theo GPS gắn trên bảng điều khiển",
+  "optionB": "Soạn hoặc gửi tin nhắn",
+  "optionC": "Nghe nhạc",
+  "optionD": "Gọi thoại rảnh tay",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Đọc tin nhắn khi dừng đèn đỏ là bất hợp pháp vì tài xế vẫn được coi là đang lái xe."
+  "explanation": "Wisconsin cấm soạn hoặc gửi tin nhắn và email khi lái xe; tài xế có bằng lái thử thách hoặc giấy phép học lái hoàn toàn không được dùng điện thoại."
  },
  {
   "type": "State-Specific",
@@ -28259,11 +28259,11 @@
   "question": "Giới hạn BAC hợp pháp đối với tài xế dưới 21 tuổi ở Wisconsin là bao nhiêu?",
   "optionA": "0,08%",
   "optionB": "0,04%",
-  "optionC": "0,02%",
-  "optionD": "0.00%",
+  "optionC": "0,00%",
+  "optionD": "0,02%",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Giới hạn BAC hợp pháp đối với người lái dưới 21 tuổi là 0,02%."
+  "explanation": "Luật tỉnh táo tuyệt đối của Wisconsin nghĩa là tài xế dưới 21 tuổi không được lái xe khi có bất kỳ lượng cồn nào trong người."
  },
  {
   "type": "State-Specific",
@@ -29895,13 +29895,13 @@
   "questionId": "DC-016",
   "category": "cellPhone",
   "question": "Quy tắc rẽ phải khi đèn đỏ tại các giao lộ ở DC là gì?",
-  "optionA": "Rẽ phải khi đèn đỏ bị cấm tại mọi giao lộ ở DC",
+  "optionA": "Bị cấm trừ khi có biển cho phép rẽ",
   "optionB": "Được phép rẽ phải khi đèn đỏ sau khi dừng hoàn toàn",
-  "optionC": "Chỉ được rẽ phải khi đèn đỏ tại giao lộ có biển cho phép",
+  "optionC": "Chỉ được phép vào ban ngày",
   "optionD": "Được phép rẽ phải khi đèn đỏ trừ khu vực trường học",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Từ năm 2025, DC cấm rẽ phải khi đèn đỏ tại mọi giao lộ để cải thiện an toàn cho người đi bộ và người đi xe đạp."
+  "explanation": "Từ ngày 1 tháng 1 năm 2025, luật DC cấm rẽ khi gặp đèn đỏ cố định trừ khi DDOT đã lắp biển cho phép rẽ tại giao lộ đó."
  },
  {
   "type": "State-Specific",
@@ -29964,14 +29964,14 @@
   "state": "DC",
   "questionId": "DC-021",
   "category": "duiStateLaws",
-  "question": "Xe ở DC có bắt buộc phải vượt qua kiểm tra an toàn và khí thải không?",
-  "optionA": "Có, tất cả xe đăng ký DC phải vượt qua kiểm tra",
-  "optionB": "Chỉ xe thương mại cần kiểm tra",
-  "optionC": "Không, DC không yêu cầu kiểm tra",
-  "optionD": "Chỉ xe trên 5 năm tuổi",
+  "question": "Phần lớn xe cá nhân đăng ký ở DC cần loại kiểm tra nào?",
+  "optionA": "Kiểm tra khí thải hai năm một lần",
+  "optionB": "Kiểm tra an toàn hằng năm",
+  "optionC": "Kiểm tra an toàn và khí thải hằng năm",
+  "optionD": "Không cần kiểm tra nào",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Tất cả xe đăng ký ở DC phải vượt qua kiểm tra an toàn và khí thải tại Trạm Kiểm tra DC DMV."
+  "explanation": "DC đã ngừng kiểm tra an toàn đối với xe cá nhân từ năm 2009; phần lớn xe vẫn cần kiểm tra khí thải hai năm một lần, còn xe thương mại được kiểm tra hằng năm."
  },
  {
   "type": "State-Specific",
@@ -30233,11 +30233,11 @@
   "question": "Giới hạn tốc độ tối đa được phép trên bất kỳ đường nào ở DC trừ khi có biển báo khác là bao nhiêu?",
   "optionA": "30 mph",
   "optionB": "35 mph",
-  "optionC": "25 mph",
+  "optionC": "20 mph",
   "optionD": "45 mph",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Giới hạn tốc độ tối đa trên đường DC thường là 25 mph trên các đường chính, với 20 mph là mặc định trên đường khu dân cư trừ khi có biển báo khác."
+  "explanation": "Trừ khi có biển báo giới hạn khác, tốc độ tối đa hợp pháp trên đường phố DC là 20 mph; nhiều tuyến đường chính có biển 25 mph và hẻm là 15 mph."
  },
  {
   "type": "State-Specific",
@@ -30594,14 +30594,14 @@
   "state": "AZ",
   "questionId": "AZ-026",
   "category": "duiStateLaws",
-  "question": "Một bản án DUI lưu lại trong hồ sơ lái xe của bạn ở Arizona trong bao lâu?",
-  "optionA": "Tạm thời",
-  "optionB": "Vĩnh viễn",
-  "optionC": "Vô thời hạn",
-  "optionD": "Có điều kiện",
+  "question": "Mức án tù tối thiểu cho lần DUI tiêu chuẩn đầu tiên ở Arizona là bao lâu?",
+  "optionA": "24 giờ",
+  "optionB": "10 ngày",
+  "optionC": "30 ngày",
+  "optionD": "45 ngày",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Không giống một số tiểu bang khác, Arizona không cho phép xóa hoặc niêm phong các bản án DUI. Một tội DUI lưu lại trong hồ sơ lái xe và hồ sơ hình sự của bạn vĩnh viễn, điều này có thể ảnh hưởng đến mức phí bảo hiểm, cơ hội việc làm, và việc kết án nếu bạn tái phạm."
+  "explanation": "Lần DUI tiêu chuẩn đầu tiên bị ít nhất 10 ngày tù liên tục, nhưng thẩm phán có thể treo tất cả trừ một ngày khi tài xế hoàn thành sàng lọc và điều trị về rượu."
  },
  {
   "type": "State-Specific",
@@ -30734,14 +30734,14 @@
   "state": "AZ",
   "questionId": "AZ-036",
   "category": "stateUnique",
-  "question": "Mặt đường ở Arizona có thể đạt tới nhiệt độ nào trong những tháng mùa hè?",
-  "optionA": "Trên 120°F",
-  "optionB": "Trên 130°F",
-  "optionC": "Trên 140°F",
-  "optionD": "Trên 150°F",
+  "question": "Xe phải có bao nhiêu người để đi làn HOV khu vực Phoenix trong giờ hạn chế?",
+  "optionA": "Ba người trở lên",
+  "optionB": "Bốn người trở lên",
+  "optionC": "Năm người trở lên",
+  "optionD": "Hai người trở lên",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Mặt đường ở Arizona có thể vượt quá 150°F (khoảng 66°C) vào mùa hè, khiến nó trở thành một trong những mặt đường nóng nhất thế giới. Sức nóng khắc nghiệt này làm lốp xuống cấp nhanh chóng và tăng nguy cơ nổ lốp, khiến việc kiểm tra lốp thường xuyên và bơm đúng áp suất trở nên thiết yếu."
+  "explanation": "Làn HOV khu vực Phoenix chỉ dành cho xe có từ hai người trở lên (và xe máy) vào buổi sáng và chiều các ngày trong tuần; ngoài giờ đó ai cũng có thể sử dụng."
  },
  {
   "type": "State-Specific",

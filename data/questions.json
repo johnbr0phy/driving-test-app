@@ -2510,14 +2510,14 @@
     "state": "AK",
     "questionId": "AK-020",
     "category": "duiStateLaws",
-    "question": "What BAC level results in aggravated DUI charges in Alaska?",
-    "optionA": "0.10% or higher",
-    "optionB": "0.12% or higher",
-    "optionC": "0.20% or higher",
-    "optionD": "0.15% or higher",
+    "question": "What is the minimum jail time for a first DUI conviction in Alaska?",
+    "optionA": "24 hours",
+    "optionB": "7 days",
+    "optionC": "30 days",
+    "optionD": "72 hours",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Alaska adds aggravated DUI charges when a driver's BAC reaches 0.15% or higher, triggering harsher penalties than a standard DUI conviction."
+    "explanation": "Alaska requires at least 72 consecutive hours in jail for a first DUI conviction, along with a fine, a license revocation and an ignition interlock."
   },
   {
     "type": "State-Specific",
@@ -2595,13 +2595,13 @@
     "questionId": "AK-026",
     "category": "duiStateLaws",
     "question": "How long is an ignition interlock device required after a first DUI conviction in Alaska?",
-    "optionA": "6 months",
-    "optionB": "12 months",
+    "optionA": "12 months",
+    "optionB": "6 months",
     "optionC": "18 months",
     "optionD": "24 months",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "After a first DUI conviction, Alaska requires an ignition interlock device for 12 months — the device prevents the vehicle from starting if alcohol is detected on the driver's breath."
+    "explanation": "After a first DUI conviction, Alaska requires an ignition interlock for at least 6 months once driving privileges are restored; the device prevents the vehicle from starting if alcohol is detected on the driver's breath."
   },
   {
     "type": "State-Specific",
@@ -4639,13 +4639,13 @@
     "questionId": "CO-012",
     "category": "gdlLicensing",
     "question": "Do Colorado teens aged 16 and older need to complete driver education before getting a permit?",
-    "optionA": "No, formal education is not required",
+    "optionA": "Yes, 6-hour online course required",
     "optionB": "Yes, 30-hour course required",
     "optionC": "Yes, 4-hour class required",
-    "optionD": "Only if under 16½",
+    "optionD": "No, formal education is not required",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Colorado drivers who are 16 and older don't require formal driver education before applying for a permit, though supervised practice is still mandatory."
+    "explanation": "Under the rules in effect through 2026, Colorado applicants 16 and older need no formal driver education for a permit; from January 1, 2027, 16- and 17-year-olds must complete a 30-hour course."
   },
   {
     "type": "State-Specific",
@@ -4667,13 +4667,13 @@
     "questionId": "CO-014",
     "category": "cellPhone",
     "question": "How can Colorado drivers legally use their phones while driving?",
-    "optionA": "With a phone mounted on the dashboard",
+    "optionA": "Typing a text only at low speeds",
     "optionB": "With hands-free accessories like Bluetooth",
-    "optionC": "With speakerphone while the car is stopped",
+    "optionC": "Holding the phone while stopped at a light",
     "optionD": "With one hand while keeping eyes on the road",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Colorado's hands-free law requires drivers to use hands-free accessories such as Bluetooth technology or dashboard-mounted phones to make calls while driving."
+    "explanation": "Colorado's hands-free law, in effect since January 1, 2025, allows phone use while driving only through a hands-free accessory such as Bluetooth, with at most a single touch or swipe to start a function; it applies even when stopped in traffic."
   },
   {
     "type": "State-Specific",
@@ -4918,14 +4918,14 @@
     "state": "CO",
     "questionId": "CO-032",
     "category": "stateUnique",
-    "question": "What must two-wheel drive vehicles carry on I-70 during traction law season in Colorado?",
+    "question": "On I-70 during traction law season, what must a 2WD vehicle without qualifying tires carry?",
     "optionA": "Emergency flares and reflective triangles",
     "optionB": "Extra fuel in approved containers only",
     "optionC": "Snow shovel and ice scraper equipment",
     "optionD": "Tire chains or approved traction devices",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Under Colorado law, 2WD vehicles must carry tire chains or approved alternate traction devices from September 1 to May 31, regardless of tire type."
+    "explanation": "From September 1 to May 31 on I-70 between Dotsero and Morrison, a vehicle needs tires with at least 3/16 inch tread rated M+S, all-weather or winter; otherwise it must carry chains or an approved traction device."
   },
   {
     "type": "State-Specific",
@@ -5030,14 +5030,14 @@
     "state": "CO",
     "questionId": "CO-040",
     "category": "stateUnique",
-    "question": "What is unique about Colorado's traction requirements for two-wheel drive vehicles compared to 4WD vehicles?",
-    "optionA": "2WD can use any tires without restrictions",
-    "optionB": "2WD pay higher fines if caught in violation",
-    "optionC": "2WD have no requirements during season now",
-    "optionD": "2WD must carry chains regardless of tire type",
+    "question": "During Colorado's traction law season, how can a 2WD vehicle comply without carrying chains?",
+    "optionA": "Any tires with at least 1/16 inch tread",
+    "optionB": "By paying a seasonal road permit fee",
+    "optionC": "By driving below 25 mph in snow",
+    "optionD": "M+S, all-weather or winter tires, 3/16 in tread",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Unlike 4WD/AWD vehicles that can comply with winter tires alone, Colorado's 2WD vehicles must carry chains or traction devices regardless of tire type during traction law season."
+    "explanation": "Colorado's traction law applies to every passenger vehicle, 2WD included: tires rated M+S, all-weather or winter with at least 3/16 inch tread comply, and chains or an approved traction device are the alternative."
   },
   {
     "type": "State-Specific",
@@ -6514,14 +6514,14 @@
     "state": "FL",
     "questionId": "FL-026",
     "category": "duiStateLaws",
-    "question": "How long must a first-time DUI offender have an ignition interlock device installed in Florida?",
+    "question": "In Florida, how long must a first-time DUI offender with a BAC of 0.15 or higher use an ignition interlock?",
     "optionA": "3 months",
     "optionB": "6 months",
     "optionC": "1 year",
     "optionD": "No requirement for first offense",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Florida requires first-time DUI offenders to install an ignition interlock device for at least 6 months."
+    "explanation": "For a first DUI with a BAC of 0.15 or higher, or with a minor in the vehicle, Florida law requires an ignition interlock for at least 6 continuous months; otherwise the court may order one."
   },
   {
     "type": "State-Specific",
@@ -6613,13 +6613,13 @@
     "questionId": "FL-033",
     "category": "stateUnique",
     "question": "What is Florida's minimum vision requirement for license holders?",
-    "optionA": "20/50 in at least one eye",
+    "optionA": "20/70 in either eye or both together",
     "optionB": "20/40 in both eyes",
     "optionC": "20/30 in at least one eye",
     "optionD": "20/60 in at least one eye",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Florida requires drivers to have at least 20/50 vision in one eye, with or without corrective lenses."
+    "explanation": "Florida requires at least 20/70 in either eye alone or both eyes together, with or without corrective lenses; if one eye is blind, the other must be 20/40 or better."
   },
   {
     "type": "State-Specific",
@@ -6808,14 +6808,14 @@
     "state": "GA",
     "questionId": "GA-007",
     "category": "gdlLicensing",
-    "question": "After the first six months with a Class D license, how many non-family passengers are allowed?",
+    "question": "During the second six months with a Class D license, how many non-family passengers under 21 are allowed?",
     "optionA": "No non-family passengers are ever allowed",
     "optionB": "Up to three non-family passengers",
     "optionC": "One non-family passenger",
     "optionD": "Two non-family passengers",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "After the first six months with a Class D license, drivers may carry one non-family passenger."
+    "explanation": "In the second six months, a Class D driver may carry one passenger under 21 who is not immediate family; after 12 months the limit rises to three."
   },
   {
     "type": "State-Specific",
@@ -23736,12 +23736,12 @@
     "category": "cellPhone",
     "question": "When can you legally use a handheld phone while driving in South Carolina?",
     "optionA": "During emergencies only",
-    "optionB": "At traffic lights while stopped",
+    "optionB": "When driving under 25 mph",
     "optionC": "On back roads only",
-    "optionD": "When parked or stopped",
+    "optionD": "When lawfully parked or stopped",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Handheld phone use is only legal when the vehicle is parked or fully stopped."
+    "explanation": "South Carolina's hands-free law does not apply while you are lawfully parked or stopped; while the vehicle is moving you may not hold a phone."
   },
   {
     "type": "State-Specific",
@@ -23846,14 +23846,14 @@
     "state": "SC",
     "questionId": "SC-024",
     "category": "duiStateLaws",
-    "question": "At what BAC level do enhanced DUI penalties apply in South Carolina?",
+    "question": "In South Carolina, a test result of what BAC or higher leads to an immediate license suspension?",
     "optionA": "0.10%",
     "optionB": "0.12%",
     "optionC": "0.20%",
     "optionD": "0.15%",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Enhanced DUI penalties apply when a driver's BAC is 0.15% or higher."
+    "explanation": "If a breath or blood test shows a BAC of 0.15% or more, your license is suspended right away, before any DUI conviction."
   },
   {
     "type": "State-Specific",
@@ -24169,13 +24169,13 @@
     "questionId": "SD-007",
     "category": "gdlLicensing",
     "question": "What restrictions apply to restricted minor's permit holders in South Dakota?",
-    "optionA": "No night driving allowed",
+    "optionA": "No driving after 8 PM",
     "optionB": "No highway driving allowed",
-    "optionC": "Licensed adult present",
-    "optionD": "Daytime driving only",
+    "optionC": "Parent beside you 10 PM to 6 AM",
+    "optionD": "Adult present at all times",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Restricted minor's permit holders must have a licensed adult present while driving."
+    "explanation": "From 6 AM to 10 PM the holder may drive with a parent's permission; from 10 PM to 6 AM a parent or guardian must sit beside the holder."
   },
   {
     "type": "State-Specific",
@@ -24227,11 +24227,11 @@
     "question": "Can restricted minor's permit holders drive alone to school or work in South Dakota?",
     "optionA": "No, never permitted",
     "optionB": "Only to work sites",
-    "optionC": "Yes, w/ endorsement",
+    "optionC": "Yes, no endorsement needed",
     "optionD": "Only during daytime",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Restricted minor's permit holders may drive alone to school or work with a proper endorsement."
+    "explanation": "The permit allows driving without a supervisor from 6 AM to 10 PM with a parent's permission, and direct trips to or from school or work are exempt from the hour limits."
   },
   {
     "type": "State-Specific",
@@ -24364,14 +24364,14 @@
     "state": "SD",
     "questionId": "SD-021",
     "category": "duiStateLaws",
-    "question": "What is the alcohol tolerance level for drivers under 21 in South Dakota?",
-    "optionA": "Zero tolerance policy",
-    "optionB": "0.02% limit",
-    "optionC": "0.04% limit",
+    "question": "At what BAC can a driver under 21 be charged in South Dakota?",
+    "optionA": "0.02% or more",
+    "optionB": "0.05% or more",
+    "optionC": "0.04% or more",
     "optionD": "Same as adult limit",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Drivers under 21 are subject to a zero tolerance policy for alcohol."
+    "explanation": "It is a misdemeanor for a driver under 21 to have a BAC of 0.02% or more in South Dakota."
   },
   {
     "type": "State-Specific",
@@ -25291,11 +25291,11 @@
     "question": "How long does the passenger restriction last for provisional license holders in Texas?",
     "optionA": "3 months from issuance",
     "optionB": "12 months from issuance",
-    "optionC": "6 months from issuance",
-    "optionD": "Until age 18",
+    "optionC": "Until age 18",
+    "optionD": "Until age 21",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The passenger restriction for provisional license holders lasts 6 months from the date of issuance."
+    "explanation": "Texas bars drivers under 18 from carrying more than one passenger under 21 who is not a family member, so the limit lasts until the driver turns 18."
   },
   {
     "type": "State-Specific",
@@ -25344,14 +25344,14 @@
     "state": "TX",
     "questionId": "TX-011",
     "category": "gdlLicensing",
-    "question": "What restriction applies during the first year of a provisional license in Texas?",
+    "question": "What restriction applies to Texas provisional license holders under 18?",
     "optionA": "Highway driving prohibited",
     "optionB": "Daytime hours driving only",
     "optionC": "Curfew and passenger limits",
     "optionD": "Family members only allowed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "During the first year of a provisional license, drivers are subject to nighttime curfew and passenger limits."
+    "explanation": "Until they turn 18, provisional drivers may not drive between midnight and 5 AM (except for work, school or emergencies) or carry more than one non-family passenger under 21."
   },
   {
     "type": "State-Specific",
@@ -26002,14 +26002,14 @@
     "state": "UT",
     "questionId": "UT-018",
     "category": "cellPhone",
-    "question": "What phone-related action is prohibited even at red lights in Utah?",
+    "question": "Which phone action is illegal while driving a moving vehicle in Utah?",
     "optionA": "Voice calling",
     "optionB": "Manual texting",
-    "optionC": "Using GPS navigation",
+    "optionC": "Viewing a GPS map",
     "optionD": "Hands-free talking",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Manual texting is prohibited even when stopped at red lights."
+    "explanation": "Utah bans manually texting, dialing or reading messages while the vehicle is moving; voice calls, hands-free use and viewing GPS are allowed."
   },
   {
     "type": "State-Specific",
@@ -26283,13 +26283,13 @@
     "questionId": "UT-038",
     "category": "stateUnique",
     "question": "What must all-wheel drive vehicles have under the Traction Law?",
-    "optionA": "4 winter tires",
-    "optionB": "2+ snowflake tires",
-    "optionC": "Chains available",
-    "optionD": "All-terrain tires",
+    "optionA": "Tires with only 2/32 inch tread",
+    "optionB": "M+S tires on all wheels",
+    "optionC": "Snow tires on the front only",
+    "optionD": "Summer performance tires",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "All-wheel drive vehicles must be equipped with 2 or more tires bearing the 3-Peak Snowflake symbol under the Traction Law."
+    "explanation": "Under Utah's Traction Law, AWD and 4WD vehicles need at least M+S tires on all wheels; 3-peak snowflake tires or chains on all wheels also qualify."
   },
   {
     "type": "State-Specific",
@@ -26605,27 +26605,27 @@
     "questionId": "VA-021",
     "category": "duiStateLaws",
     "question": "What is Virginia's zero tolerance policy for underage drinking and driving?",
-    "optionA": "Any alcohol prohibited",
+    "optionA": "Driving at 0.02% BAC or more",
     "optionB": "Only applies over 0.05%",
     "optionC": "Only felony over 0.08%",
     "optionD": "Warnings only for first offense",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Any detectable amount of alcohol is prohibited for underage drivers under the zero tolerance policy."
+    "explanation": "A driver under 21 who has illegally consumed alcohol violates Virginia's zero tolerance law with a BAC of 0.02% or more."
   },
   {
     "type": "State-Specific",
     "state": "VA",
     "questionId": "VA-022",
     "category": "stateUnique",
-    "question": "What happens to speeding fines in a Virginia highway work zone?",
-    "optionA": "Fines stay the same",
-    "optionB": "Fines are tripled",
-    "optionC": "Fines are doubled",
-    "optionD": "Only a warning is issued",
+    "question": "In Virginia, what is the maximum fine for speeding in a highway work zone when workers are present?",
+    "optionA": "$100",
+    "optionB": "$250",
+    "optionC": "$500",
+    "optionD": "$1,000",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Speeding fines are doubled in designated highway work zones, even when workers are not present."
+    "explanation": "Speeding in a posted highway work zone while workers are present is a traffic infraction with a fine of up to $500."
   },
   {
     "type": "State-Specific",
@@ -26744,14 +26744,14 @@
     "state": "VA",
     "questionId": "VA-032",
     "category": "stateUnique",
-    "question": "In Virginia, what can you be charged with for following another vehicle too closely?",
+    "question": "In Virginia, following another vehicle too closely is normally what kind of offense?",
     "optionA": "No violation unless accident occurs",
-    "optionB": "Reckless driving",
+    "optionB": "Traffic infraction",
     "optionC": "Warning only for first offense",
-    "optionD": "Traffic infraction only",
+    "optionD": "Reckless driving",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Following another vehicle too closely is classified as reckless driving, requiring drivers to maintain a reasonable distance based on speed, traffic, and road conditions."
+    "explanation": "Following more closely than is reasonable and prudent is a traffic infraction in Virginia, so keep a safe gap based on speed, traffic and road conditions."
   },
   {
     "type": "State-Specific",
@@ -27572,12 +27572,12 @@
     "category": "gdlLicensing",
     "question": "What happens after a second violation of GDL restrictions in Washington?",
     "optionA": "Written warning only",
-    "optionB": "License suspended until 18",
+    "optionB": "Suspended 6 months or until 18",
     "optionC": "Mandatory driver training course",
     "optionD": "Community service requirement",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "After a second violation of GDL restrictions, the license is suspended until the driver turns 18."
+    "explanation": "A second violation suspends the intermediate license for 6 months or until age 18, whichever comes first; a third suspends it until 18."
   },
   {
     "type": "State-Specific",
@@ -27755,11 +27755,11 @@
     "question": "What happens if you refuse a breath test in Washington on your first refusal?",
     "optionA": "No penalty for first refusal",
     "optionB": "License suspension for 90 days",
-    "optionC": "License suspension for 2 years",
-    "optionD": "License suspension for 1 year",
+    "optionC": "License revoked for 1 year",
+    "optionD": "License revoked for 2 years",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Refusing a breath test on a first refusal results in a license suspension of 2 years."
+    "explanation": "A first refusal within seven years leads to a one-year license revocation; a second refusal leads to two years."
   },
   {
     "type": "State-Specific",
@@ -27893,13 +27893,13 @@
     "questionId": "WA-033",
     "category": "stateUnique",
     "question": "When must you stop for a pedestrian at a crosswalk in Washington?",
-    "optionA": "When they are in your travel lane",
-    "optionB": "When they are in any lane of the roadway",
+    "optionA": "In your half of the road or one lane away",
+    "optionB": "Only when directly in front of you",
     "optionC": "When a signal indicates walk",
     "optionD": "When they have made eye contact with you",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Drivers must stop for a pedestrian at a crosswalk when the pedestrian is in the driver's travel lane."
+    "explanation": "Stop when the pedestrian is in your half of the roadway or within one lane of it; your half means all lanes going your direction."
   },
   {
     "type": "State-Specific",
@@ -28046,14 +28046,14 @@
     "state": "WI",
     "questionId": "WI-004",
     "category": "gdlLicensing",
-    "question": "What are the nighttime driving restrictions for probationary license holders under 16 in Wisconsin?",
+    "question": "What nighttime restriction applies in the first 9 months of a Wisconsin probationary license?",
     "optionA": "No driving midnight to 6 AM",
     "optionB": "No driving 10 PM to 6 AM",
     "optionC": "No driving 11 PM to 5 AM",
     "optionD": "No driving midnight to 5 AM",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Probationary license holders under 16 are prohibited from driving between midnight and 5 AM."
+    "explanation": "For at least the first nine months, probationary drivers may not drive between midnight and 5 AM unless traveling between home and school or work."
   },
   {
     "type": "State-Specific",
@@ -28103,13 +28103,13 @@
     "questionId": "WI-008",
     "category": "gdlLicensing",
     "question": "What must young drivers complete before getting a probationary license in Wisconsin?",
-    "optionA": "30 hrs classroom instruction",
+    "optionA": "A first aid course",
     "optionB": "Advanced defensive driving course",
     "optionC": "Written test only",
-    "optionD": "Driver ed or extra practice",
+    "optionD": "Driver ed and 50 practice hours",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Young drivers must complete either a driver education course or additional supervised practice hours before receiving a probationary license."
+    "explanation": "Drivers under 18 must pass an approved driver education course with behind-the-wheel training and log 50 hours of practice, 10 of them at night."
   },
   {
     "type": "State-Specific",
@@ -28242,14 +28242,14 @@
     "state": "WI",
     "questionId": "WI-018",
     "category": "cellPhone",
-    "question": "What is the law for reading text messages while stopped at a red light in Wisconsin?",
-    "optionA": "Legal if the vehicle is fully stopped",
-    "optionB": "Illegal, still driving",
-    "optionC": "Legal if the vehicle is in park",
-    "optionD": "Legal if hazard lights are on",
+    "question": "Which phone activity does Wisconsin law ban for all drivers?",
+    "optionA": "Following a dash-mounted GPS",
+    "optionB": "Composing or sending a text",
+    "optionC": "Listening to music",
+    "optionD": "Hands-free voice calls",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Reading text messages while stopped at a red light is illegal because the driver is still considered to be driving."
+    "explanation": "Wisconsin bans composing or sending texts and emails while driving; drivers with a probationary license or instruction permit may not use a phone at all."
   },
   {
     "type": "State-Specific",
@@ -28259,11 +28259,11 @@
     "question": "What is the legal BAC limit for drivers under 21 in Wisconsin?",
     "optionA": "0.08%",
     "optionB": "0.04%",
-    "optionC": "0.02%",
-    "optionD": "0.00%",
+    "optionC": "0.00%",
+    "optionD": "0.02%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The legal BAC limit for drivers under 21 is 0.02%."
+    "explanation": "Wisconsin's absolute sobriety law means drivers under 21 may not drive with any alcohol in their system."
   },
   {
     "type": "State-Specific",
@@ -29895,13 +29895,13 @@
     "questionId": "DC-016",
     "category": "cellPhone",
     "question": "What is the rule for right turns on red at DC intersections?",
-    "optionA": "Right turns on red are prohibited at all DC intersections",
+    "optionA": "Prohibited unless a sign permits the turn",
     "optionB": "Right turns on red are allowed after a full stop",
-    "optionC": "Right turns on red are allowed only at signed intersections",
+    "optionC": "Allowed only during daylight hours",
     "optionD": "Right turns on red are allowed except in school zones",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "As of 2025, DC bans right turns on red at all intersections to improve pedestrian and cyclist safety."
+    "explanation": "Since January 1, 2025, DC law bans turns on a steady red light unless DDOT has posted a sign permitting the turn at that intersection."
   },
   {
     "type": "State-Specific",
@@ -29964,14 +29964,14 @@
     "state": "DC",
     "questionId": "DC-021",
     "category": "duiStateLaws",
-    "question": "Are DC vehicles required to pass a safety and emissions inspection?",
-    "optionA": "Yes, all DC-registered vehicles must pass inspection",
-    "optionB": "Only commercial vehicles need inspection",
-    "optionC": "No, DC does not require inspections",
-    "optionD": "Only vehicles older than 5 years",
+    "question": "What inspection do most DC-registered personal vehicles need?",
+    "optionA": "An emissions inspection every two years",
+    "optionB": "A safety inspection every year",
+    "optionC": "Safety and emissions every year",
+    "optionD": "No inspection of any kind",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "All vehicles registered in DC must pass a safety and emissions inspection at the DC DMV Inspection Station."
+    "explanation": "DC stopped safety inspections for personal vehicles in 2009; most still need an emissions inspection every two years, while commercial vehicles are inspected yearly."
   },
   {
     "type": "State-Specific",
@@ -30233,11 +30233,11 @@
     "question": "What is the maximum speed limit allowed on any DC road unless otherwise posted?",
     "optionA": "30 mph",
     "optionB": "35 mph",
-    "optionC": "25 mph",
+    "optionC": "20 mph",
     "optionD": "45 mph",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The maximum speed limit on DC roads is generally 25 mph on major streets, with 20 mph as the default on residential streets unless otherwise posted."
+    "explanation": "Unless a different limit is posted, the maximum lawful speed on DC streets is 20 mph; many major corridors are posted at 25 mph, and alleys are 15 mph."
   },
   {
     "type": "State-Specific",
@@ -30594,14 +30594,14 @@
     "state": "AZ",
     "questionId": "AZ-026",
     "category": "duiStateLaws",
-    "question": "How long does a DUI conviction remain on your driving record in Arizona?",
-    "optionA": "Temporarily",
-    "optionB": "Permanently",
-    "optionC": "Indefinitely",
-    "optionD": "Conditionally",
+    "question": "What is the minimum jail term for a first standard DUI in Arizona?",
+    "optionA": "24 hours",
+    "optionB": "10 days",
+    "optionC": "30 days",
+    "optionD": "45 days",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Unlike some states, Arizona does not allow DUI convictions to be expunged or sealed. A DUI remains on your driving and criminal record permanently, which can affect insurance rates, employment opportunities, and sentencing if you reoffend."
+    "explanation": "A first standard DUI carries at least 10 consecutive days in jail, but the judge may suspend all but one day once the driver completes alcohol screening and treatment."
   },
   {
     "type": "State-Specific",
@@ -30734,14 +30734,14 @@
     "state": "AZ",
     "questionId": "AZ-036",
     "category": "stateUnique",
-    "question": "What temperature can Arizona pavement reach during summer months?",
-    "optionA": "Over 120°F",
-    "optionB": "Over 130°F",
-    "optionC": "Over 140°F",
-    "optionD": "Over 150°F",
+    "question": "How many people must be in a car to use a Phoenix-area HOV lane during restricted hours?",
+    "optionA": "Three or more",
+    "optionB": "Four or more",
+    "optionC": "Five or more",
+    "optionD": "Two or more",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Arizona pavement can exceed 150°F in summer, making it one of the hottest road surfaces in the world. This extreme heat rapidly degrades tires and increases blowout risk, making regular tire inspections and proper inflation essential."
+    "explanation": "Phoenix-area HOV lanes are limited to vehicles with two or more people (and motorcycles) on weekday mornings and afternoons; outside those hours anyone may use them."
   },
   {
     "type": "State-Specific",

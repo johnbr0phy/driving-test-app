@@ -22,6 +22,8 @@ export const TIGER_EXAM_IDS = [
   "auwah",
   // Citizenship and project management: complete eight-expression sets.
   "uklitu", "cacit", "aucit", "pmp",
+  // Reviewed professional role mascots: complete eight-expression sets.
+  "ffi", "police", "faapvt", "nasm", "barber", "jelec",
 ] as const;
 
 export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;

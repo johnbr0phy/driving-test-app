@@ -1,0 +1,432 @@
+/* The /create hero demo. Every rule is scoped under .cq; sizes inside the
+   Phone are iOS points (the Phone scales its screen). */
+
+.cq {
+  & .ss-stage {
+    --cq-brand: #c2410c;
+    --cq-brand-soft: #fff4ed;
+    --cq-ink: #111827;
+    --cq-ink-2: #4b5563;
+    --cq-line: #e5e7eb;
+    overflow: hidden;
+    border-radius: 28px;
+    background: #fbf3ea;
+  }
+
+  .cq-wash {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(60% 45% at 50% 0%, rgba(234, 88, 12, 0.16), transparent 70%),
+      radial-gradient(70% 55% at 50% 100%, rgba(251, 146, 60, 0.14), transparent 70%);
+  }
+
+  /* Pinned, bottom bleed: a gutter from the top, centered, off the bottom */
+  .cq-phone {
+    position: absolute;
+    top: 40px;
+    left: 42px;
+    box-shadow: 0 30px 60px -24px rgba(124, 45, 18, 0.35);
+    border-radius: 54px;
+  }
+
+  .ss-stage[data-layout="compact"] .cq-phone {
+    top: 32px;
+    left: 29px;
+  }
+
+  /* ---- The chat ---- */
+
+  .cq-chat {
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    color: var(--cq-ink);
+  }
+
+  .cq-chat__head {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    right: 0;
+    height: 44px;
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    align-items: center;
+    justify-items: center;
+    padding: 0 12px;
+    border-bottom: 0.5px solid var(--cq-line);
+  }
+
+  .cq-chat__back {
+    color: var(--cq-ink-2);
+    justify-self: start;
+  }
+
+  .cq-thread {
+    position: absolute;
+    top: 118px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .cq-past {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 10px;
+  }
+
+  .cq-past__me {
+    align-self: flex-end;
+    margin-bottom: 6px;
+  }
+
+  .cq-me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+
+  .cq-file {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px 10px 10px;
+    border-radius: 14px;
+    border: 1px solid var(--cq-line);
+    background: #f9fafb;
+  }
+
+  .cq-file__icon {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: #ef4444;
+    color: #fff;
+    flex: none;
+  }
+
+  .cq-file__text {
+    display: grid;
+    gap: 2px;
+  }
+
+  .cq-file__name {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .cq-file__meta {
+    font-size: 13px;
+    line-height: 1.3;
+    color: var(--cq-ink-2);
+  }
+
+  .cq-bubble {
+    max-width: 82%;
+    padding: 10px 16px;
+    border-radius: 20px;
+    background: #f3f4f6;
+    font-size: 17px;
+    line-height: 1.35;
+  }
+
+  .cq-tool {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px 7px 10px;
+    border-radius: 999px;
+    background: var(--cq-brand-soft);
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .cq-tool__check {
+    --ss-accent: var(--cq-brand);
+    color: var(--cq-brand);
+  }
+
+  .cq-tool__name {
+    font-weight: 600;
+    color: var(--cq-brand);
+  }
+
+  .cq-tool__fn {
+    color: #9a3412;
+  }
+
+  .cq-answer {
+    font-size: 17px;
+    line-height: 1.45;
+    color: var(--cq-ink);
+  }
+
+  .cq-card-slot {
+    padding-bottom: 4px;
+  }
+
+  /* ---- The quiz card (in the thread, and as the launch's face) ---- */
+
+  .cq-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 12px 12px 14px;
+    border-radius: 18px;
+    border: 1px solid var(--cq-line);
+    background: #fff;
+    box-shadow: 0 6px 18px -10px rgba(17, 24, 39, 0.25);
+  }
+
+  .cq-card__tiger {
+    width: 44px;
+    height: 49px;
+    flex: none;
+  }
+
+  .cq-card__text {
+    display: grid;
+    gap: 3px;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .cq-card__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cq-card__meta {
+    font-size: 13px;
+    line-height: 1.3;
+    color: var(--cq-ink-2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cq-card__play {
+    will-change: transform;
+    flex: none;
+    padding: 9px 16px;
+    border-radius: 999px;
+    background: var(--cq-brand);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+  }
+
+  .cq-card__play[data-pressed] {
+    background: #9a3412;
+    transform: scale(0.96);
+  }
+
+  /* ---- The launch: card into quiz ---- */
+
+  .cq-launch {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    visibility: hidden;
+  }
+
+  .cq-launch[data-on] {
+    visibility: visible;
+  }
+
+  .cq-launch .ss-expand {
+    --ss-expand-bg: #fafaf9;
+  }
+
+  .cq-quiz {
+    position: absolute;
+    inset: 0;
+    background: #fafaf9;
+    color: var(--cq-ink);
+  }
+
+  .cq-safari {
+    position: absolute;
+    top: 54px;
+    left: 0;
+    right: 0;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f7;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .cq-safari__done {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 17px;
+    font-weight: 600;
+    color: #007aff;
+  }
+
+  .cq-safari__url {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #3c3c43;
+  }
+
+  .cq-quiz__body {
+    position: absolute;
+    top: 122px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cq-quiz__head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cq-quiz__tiger {
+    width: 40px;
+    height: 44px;
+    flex: none;
+  }
+
+  .cq-quiz__title {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  .cq-quiz__progress {
+    display: grid;
+    gap: 8px;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.3;
+    color: var(--cq-ink-2);
+  }
+
+  .cq-quiz__track {
+    display: block;
+    height: 6px;
+    border-radius: 3px;
+    background: #ede9e4;
+    overflow: hidden;
+  }
+
+  .cq-quiz__fill {
+    display: block;
+    height: 100%;
+    width: 0%;
+    border-radius: 3px;
+    background: var(--cq-brand);
+    transition: width 0.6s cubic-bezier(0.3, 0.75, 0.1, 1);
+  }
+
+  .cq-quiz__fill[data-on] {
+    width: 5%;
+  }
+
+  .cq-quiz__question {
+    margin-top: 22px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .cq-quiz__options {
+    display: grid;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .cq-option {
+    will-change: transform;
+    display: grid;
+    grid-template-columns: 30px 1fr 20px;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: 16px;
+    border: 1.5px solid var(--cq-line);
+    background: #fff;
+    font-size: 17px;
+    line-height: 1.3;
+    transition:
+      border-color 0.2s ease,
+      background-color 0.2s ease,
+      opacity 0.3s ease,
+      transform 0.15s ease;
+  }
+
+  .cq-option[data-pressed] {
+    transform: scale(0.98);
+  }
+
+  .cq-option__letter {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cq-ink-2);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .cq-option[data-right] {
+    border-color: #16a34a;
+    background: #f0fdf4;
+    font-weight: 600;
+    color: #15803d;
+  }
+
+  .cq-option[data-right] .cq-option__letter {
+    background: #16a34a;
+    color: #fff;
+  }
+
+  .cq-option[data-dim] {
+    opacity: 0.55;
+  }
+
+  .cq-option__check {
+    --ss-accent: #16a34a;
+  }
+}
+
+/* Dark site: the ground goes dark, the phone stays a lit, light screen */
+:where(.dark) .cq .ss-stage {
+  background: #1c1410;
+}
+
+:where(.dark) .cq .cq-wash {
+  background:
+    radial-gradient(60% 45% at 50% 0%, rgba(234, 88, 12, 0.22), transparent 70%),
+    radial-gradient(70% 55% at 50% 100%, rgba(251, 146, 60, 0.1), transparent 70%);
+}

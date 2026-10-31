@@ -5,7 +5,7 @@
 import Link from "next/link";
 import { BarChart3, FileText, Gift, Link2, Lock, MonitorSmartphone, Plus, Smartphone } from "lucide-react";
 import { TEST_CATALOG, TEST_GROUPS } from "@/lib/testCatalog";
-import { BrowserPreview, PhonePreview } from "@/components/teach/TeachPreviews";
+import TeachClassDemo from "@/components/stageshow/demos/TeachClassDemo";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
 import { TeachLandingTracker } from "@/components/teach/TeachLandingTracker";
 import type { ClassQuestionRow } from "@/lib/classes";
@@ -119,18 +119,15 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
             )}
           </div>
 
-          <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-8 lg:gap-10">
-            <div className="shrink-0">
-              <PhonePreview />
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-4 md:hidden">Students join with just a name</p>
-            </div>
-            <div className="w-full md:w-auto md:flex-1 max-w-[640px]">
-              <BrowserPreview />
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-4 md:hidden">You see the whole class</p>
-            </div>
+          <div
+            className="mt-16 mx-auto w-full max-w-[880px]"
+            role="img"
+            aria-label="Animation: a student answers a question on their phone, and the teacher's class page updates with their answer and the question's miss count"
+          >
+            <TeachClassDemo />
           </div>
-          <p className="hidden md:block text-sm text-gray-500 dark:text-gray-400 mt-8">
-            Students join on their phone with just a name. You see the whole class.
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-6">
+            Students practice on their phone. Every answer shows up on your class page.
           </p>
         </div>
       </div>

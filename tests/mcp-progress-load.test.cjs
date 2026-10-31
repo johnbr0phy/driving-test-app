@@ -5,7 +5,7 @@ const { test } = require('node:test');
 const Module = require('node:module');
 const { captureMcpProgressRevision } = require('../lib/mcpProgressGuard.ts');
 const emptyQuiz = { progress: {}, recent: [] };
-const emptyV2 = { sessions: {}, results: [], drills: {}, basics: {}, goals: {} };
+const emptyV2 = { sessions: {}, results: [], drills: {}, basics: {}, goals: {}, questionStats: {} };
 let scenario;
 let effects;
 const hooks = { useEffect: (callback) => effects.push(callback), useRef: (current) => ({ current }) };

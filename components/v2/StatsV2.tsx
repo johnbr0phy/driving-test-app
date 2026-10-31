@@ -1,56 +1,115 @@
 "use client";
 
-// Stats page for the v2 exams, the counterpart of components/exam/ExamStatsPage:
-// practice test scores, accuracy per drill topic (test answers and drill
-// answers together) and the questions missed most, each opening the same
-// read-only review as the results page. Everything comes from useV2Store, so
-// guests see their own local progress too.
+// Stats page for the v2 exams, built from the same pieces as the registry
+// exam stats (components/stats/StatsParts): Your Stats / Common Mistakes tabs,
+// the header card, then a summary (tiles, topics weakest first, practice test
+// scores) and every question as a re-answerable row sortable by what you keep
+// missing. Like ExamStatsPage, US exams show the first rows free and lock the
+// rest behind Premium (students in a class on the exam and other countries'
+// exams see everything). Progress comes from useV2Store (lib/v2/questionStats),
+// so guests see their own local progress too. Common Mistakes appears once the
+// nightly cron finds enough answers (lib/communityStats.ts); ?tab=community
+// opens it.
 
-import { useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, ChevronDown, ChevronRight, ChevronUp } from "lucide-react";
-import { AnswerValue, DrillDef, ExamV2Config } from "@/lib/v2/types";
-import { getBank, getQuestionIndex, getStimulus } from "@/lib/v2/bank";
+import { useRouter, useSearchParams } from "next/navigation";
+import { ChevronRight } from "lucide-react";
+import { ExamV2Config, QuestionV2 } from "@/lib/v2/types";
+import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, v2Routes } from "@/lib/v2/registry";
-import { drillQuestions, drillStateFor } from "@/lib/v2/training";
+import { drillQuestions, drillStateFor, heldOutTests } from "@/lib/v2/training";
 import { goalFor } from "@/lib/v2/goals";
+import { V2_PAYWALL_PREFIX } from "@/lib/v2/premium";
+import { v2QuestionPerformance } from "@/lib/v2/questionStats";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
+import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
-import { QuestionView } from "./QuestionView";
+import { useIsPremium } from "@/hooks/useIsPremium";
+import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
+import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
+import { useCommunityAvailable, useExamCommunityStats } from "@/hooks/useCommunityStats";
+import { isClassStudent } from "@/lib/classProgress";
+import { regionOfTest } from "@/lib/region";
+import { trackDailyQuizAnswer } from "@/lib/analytics";
+import { PaywallModal } from "@/components/PaywallModal";
+import {
+  GatedStatsList,
+  STATS_FREE_ROWS,
+  StatsChip,
+  StatsHeaderCard,
+  StatsPageShell,
+  StatsSortBar,
+  StatsTab,
+  StatsTabs,
+  StatsTile,
+  accuracyChipColor,
+} from "@/components/stats/StatsParts";
+import { V2StatsRow, plainStem } from "./V2StatsRow";
 
-const MISSED_SHOWN = 10;
+type SortField = "wrong" | "correct" | "answered" | "accuracy";
 
-interface TopicRow {
-  drill: DrillDef;
-  correct: number;
+interface Row {
+  question: QuestionV2;
   answered: number;
-  mastered: number;
-  size: number;
+  correct: number;
+  wrong: number;
+  accuracy: number;
+  mastered: boolean;
 }
 
-interface MissedRow {
-  id: string;
-  misses: number;
-  mastered: boolean;
-  lastAnswer?: AnswerValue;
-}
+const GREY = "text-gray-500 dark:text-gray-400";
 
 export function StatsV2({ exam }: { exam: ExamV2Config }) {
+  return (
+    <Suspense fallback={<div className="flex-1 bg-gray-50 dark:bg-gray-950" />}>
+      <StatsV2Content exam={exam} />
+    </Suspense>
+  );
+}
+
+function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   const routes = v2Routes(exam);
+  const router = useRouter();
   const hydrated = useHydration();
+  usePurchaseReturn();
   const results = useV2Store((s) => s.results);
   const drills = useV2Store((s) => s.drills);
+  const questionStats = useV2Store((s) => s.questionStats);
   const savedGoal = useV2Store((s) => s.goals[exam.id]);
   const goal = goalFor(exam, savedGoal);
-  const byId = useMemo(() => getQuestionIndex(exam.id), [exam.id]);
-  const [open, setOpen] = useState<string | null>(null);
-  const [showAllMissed, setShowAllMissed] = useState(false);
+  const isGuest = useStore((s) => s.isGuest || !s.userId);
 
+  // Premium gate, the same rule as ExamStatsPage.
+  const { isPremium: paid, ready: premiumReady } = useIsPremium();
+  const [inClass, setInClass] = useState(false);
+  useEffect(() => setInClass(isClassStudent(exam.id)), [exam.id]);
+  const usExam = regionOfTest(exam.id) === "US";
+  const unlocked = !usExam || paid || inClass;
+  const upgrade = useUpgradeFlow(`${exam.id}_stats`, routes.stats);
+  const openPaywall = (item: string, label: string) =>
+    upgrade.openPaywall("full_stats", `${V2_PAYWALL_PREFIX}${exam.id}_${item}`, `${exam.shortName} ${label}`);
+
+  const searchParams = useSearchParams();
+  const communityOn = useCommunityAvailable(exam.id);
+  const [tab, setTab] = useState<StatsTab>(searchParams.get("tab") === "community" ? "community" : "yours");
+  const showCommunity = communityOn && tab === "community";
+  const { data: communityRaw, loading: communityLoading } = useExamCommunityStats(exam.id, communityOn);
+
+  const [sortField, setSortField] = useState<SortField>("wrong");
+  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
+
+  const bank = useMemo(() => getBank(exam.id).questions, [exam.id]);
+  const byId = useMemo(() => new Map(bank.map((q) => [q.id, q])), [bank]);
   const history = useMemo(() => resultsForExam(results, exam.id), [results, exam.id]);
   const pct = exam.composite.max === 100 ? "%" : "";
 
-  const topics = useMemo((): TopicRow[] => {
-    const bank = getBank(exam.id).questions;
+  const perf = useMemo(
+    () => v2QuestionPerformance({ results, drills, questionStats }, exam.id),
+    [results, drills, questionStats, exam.id],
+  );
+
+  const topics = useMemo(() => {
     return exam.drills.map((drill) => {
       const questions = drillQuestions(bank, drill, exam);
       const state = drillStateFor(drills, exam.id, drill, questions);
@@ -64,79 +123,163 @@ export function StatsV2({ exam }: { exam: ExamV2Config }) {
         size: questions.length,
       };
     });
-  }, [exam, drills, history]);
+  }, [exam, bank, drills, history]);
 
-  const missed = useMemo((): MissedRow[] => {
-    const rows = new Map<string, MissedRow>();
-    const masteredIds = new Set(Object.entries(drills).filter(([k]) => k.startsWith(`${exam.id}:`)).flatMap(([, d]) => d.masteredIds));
-    // Oldest first, so lastAnswer ends on the newest miss.
-    for (const r of [...history].reverse()) {
-      for (const it of r.items) {
-        if (it.correct) continue;
-        const row = rows.get(it.id) ?? { id: it.id, misses: 0, mastered: false };
-        rows.set(it.id, { ...row, misses: row.misses + 1, lastAnswer: it.answer });
-      }
+  // Every question you could have met: the whole bank except a held-out test
+  // you have not sat (it stays unseen), plus anything you have answered.
+  const rows = useMemo((): Row[] => {
+    const heldOut = new Set(heldOutTests(exam));
+    const masteredIds = new Set(
+      Object.entries(drills).filter(([k]) => k.startsWith(`${exam.id}:`)).flatMap(([, d]) => d.masteredIds),
+    );
+    return bank
+      .filter((q) => !heldOut.has(q.test) || perf.has(q.id))
+      .map((question) => {
+        const p = perf.get(question.id);
+        const answered = p?.answered ?? 0;
+        return {
+          question,
+          answered,
+          correct: p?.correct ?? 0,
+          wrong: p?.wrong ?? 0,
+          accuracy: answered ? Math.round(((p?.correct ?? 0) / answered) * 100) : 0,
+          mastered: masteredIds.has(question.id),
+        };
+      });
+  }, [bank, exam, drills, perf]);
+
+  const sorted = useMemo(() => {
+    const key = (r: Row) => (sortField === "answered" ? r.answered : r[sortField]);
+    return [...rows].sort((a, b) => {
+      const c = key(a) - key(b);
+      return sortDirection === "asc" ? c : -c;
+    });
+  }, [rows, sortField, sortDirection]);
+
+  const communityRows = useMemo(() => {
+    if (!communityRaw) return [];
+    return communityRaw.questions.flatMap((c) => {
+      const question = byId.get(c.questionId);
+      return question ? [{ ...c, question }] : [];
+    });
+  }, [communityRaw, byId]);
+
+  const handleSort = (field: SortField) => {
+    if (sortField === field) setSortDirection(sortDirection === "asc" ? "desc" : "asc");
+    else {
+      setSortField(field);
+      setSortDirection("desc");
     }
-    for (const [key, d] of Object.entries(drills)) {
-      if (!key.startsWith(`${exam.id}:`)) continue;
-      for (const id of d.wrongQueue) {
-        const row = rows.get(id) ?? { id, misses: 0, mastered: false };
-        rows.set(id, { ...row, misses: row.misses + 1 });
-      }
-    }
-    return [...rows.values()]
-      .filter((row) => byId.has(row.id))
-      .map((row) => ({ ...row, mastered: masteredIds.has(row.id) }))
-      .sort((a, b) => Number(a.mastered) - Number(b.mastered) || b.misses - a.misses);
-  }, [history, drills, exam.id, byId]);
+  };
+
+  const chipFor = (r: Row): StatsChip => {
+    if (sortField === "wrong") return { value: `${r.wrong}`, label: "Wrong", color: r.wrong > 0 ? "text-red-600 dark:text-red-400" : GREY };
+    if (sortField === "correct") return { value: `${r.correct}`, label: "Correct", color: r.correct > 0 ? "text-green-600 dark:text-green-400" : GREY };
+    if (sortField === "answered") return { value: `${r.answered}`, label: "Answered", color: r.answered > 0 ? "text-gray-700 dark:text-gray-200" : GREY };
+    if (r.answered === 0) return { value: "–", label: "Accuracy", color: GREY };
+    return { value: `${r.accuracy}%`, label: "Accuracy", color: accuracyChipColor(r.accuracy) };
+  };
+
+  const subtitleFor = (q: QuestionV2) => (
+    <>
+      {exam.domainLabels[q.domain] ?? q.domain}
+      {q.skill && ` · ${q.skill}`}
+    </>
+  );
 
   if (!hydrated) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
 
-  const answeredIds = new Set<string>();
-  history.forEach((r) => r.items.forEach((it) => answeredIds.add(it.id)));
-  Object.entries(drills).forEach(([k, d]) => {
-    if (k.startsWith(`${exam.id}:`)) [...d.masteredIds, ...d.wrongQueue].forEach((id) => answeredIds.add(id));
-  });
-  const bankSize = byId.size;
+  const answeredCount = perf.size;
   const best = history.length ? Math.max(...history.map((r) => r.composite)) : null;
   const totalAnswered = topics.reduce((a, t) => a + t.answered, 0);
   const totalCorrect = topics.reduce((a, t) => a + t.correct, 0);
+  const missedCount = rows.filter((r) => r.wrong > 0).length;
   const sortedTopics = [...topics].sort((a, b) => {
     if (!a.answered || !b.answered) return Number(!a.answered) - Number(!b.answered);
     return a.correct / a.answered - b.correct / b.answered;
   });
-  const shownMissed = showAllMissed ? missed : missed.slice(0, MISSED_SHOWN);
-  const empty = answeredIds.size === 0;
+  const listReady = premiumReady;
 
   return (
-    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <div className="relative">
-        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent dark:to-transparent pointer-events-none" />
-        <div className="relative container mx-auto px-4 py-6 pb-10 max-w-3xl">
-          <Link href={routes.dashboard} className="inline-flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 mb-4">
-            <ArrowLeft className="h-4 w-4" /> Back
-          </Link>
+    <StatsPageShell backHref={routes.dashboard} backLabel="Back">
+      <PaywallModal
+        open={upgrade.paywallOpen}
+        onOpenChange={upgrade.onOpenChange}
+        feature="full_stats"
+        onUpgrade={upgrade.handleUpgrade}
+        benefits={[
+          `See your accuracy on all ${rows.length} ${exam.shortName} questions`,
+          "See what you keep getting wrong, worst first, and retry each one",
+          ...(communityOn ? [`The ${exam.shortName} questions most students miss`] : []),
+          "Premium on every Tigertest exam, the DMV, SAT and ACT included",
+          "One payment, yours forever",
+        ]}
+        isGuest={isGuest}
+        onSignUp={() => router.push(`/signup?redirect=${encodeURIComponent(routes.stats)}`)}
+      />
 
-          <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-4">
-            <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">Your stats</h1>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-              You&apos;ve answered {answeredIds.size} of {bankSize} {exam.shortName} questions.
-            </p>
+      {communityOn && <StatsTabs active={tab} onChange={setTab} yoursLabel="Your Stats" communityLabel="Common Mistakes" />}
+
+      {showCommunity ? (
+        communityLoading ? (
+          <div className="space-y-3">
+            {[1, 2, 3].map((i) => <div key={i} className="h-16 bg-gray-100 dark:bg-gray-800 rounded-xl animate-pulse" />)}
           </div>
+        ) : communityRows.length === 0 ? (
+          <p className="text-gray-500 dark:text-gray-400 text-sm text-center py-8">Not enough data yet. Check back soon.</p>
+        ) : (
+          <div className="space-y-4">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              The {exam.shortName} questions students miss most, based on answers from{" "}
+              <span className="font-medium text-gray-700 dark:text-gray-200">{(communityRaw?.totalUsers ?? 0).toLocaleString()} real test takers</span>
+            </p>
+            {listReady && (
+              <GatedStatsList
+                items={communityRows}
+                isPremium={unlocked}
+                keyOf={(c) => c.questionId}
+                renderRow={(c) => (
+                  <V2StatsRow
+                    examId={exam.id}
+                    question={c.question}
+                    chip={{ value: `${c.errorRate}%`, label: "get this wrong", color: "text-red-500 dark:text-red-400" }}
+                    subtitle={subtitleFor(c.question)}
+                    footer={<p className="text-xs text-gray-500 dark:text-gray-400">{c.wrong} out of {c.total} people got this wrong</p>}
+                    onAnswer={(ok) => trackDailyQuizAnswer(ok, `stats_community_${exam.id}`)}
+                  />
+                )}
+                previewOf={(c) => ({ chip: { value: `${c.errorRate}%`, label: "get this wrong", color: "text-red-500 dark:text-red-400" }, text: plainStem(c.question) })}
+                lockTitle={`${communityRows.length - STATS_FREE_ROWS} more questions locked`}
+                lockSubtitle="Upgrade to see the full list"
+                lockCta="Unlock with Premium"
+                onUnlock={() => openPaywall("community_wrong_questions", "Common Mistakes")}
+              />
+            )}
+          </div>
+        )
+      ) : (
+        <>
+          <StatsHeaderCard
+            className="mb-4"
+            title="Your Stats"
+            subtitle={<>You&apos;ve answered {answeredCount} of {bank.length} {exam.shortName} questions.</>}
+          />
 
-          {empty ? (
-            <div className="rounded-xl border border-dashed border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 text-center">
+          {answeredCount === 0 && (
+            <div className="rounded-xl border border-dashed border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 text-center mb-6">
               <p className="text-sm text-gray-600 dark:text-gray-300">Nothing here yet. Answer a few drill questions or take a practice test and your scores and misses show up here.</p>
               <Link href={routes.dashboard} className="v2-tap mt-4 inline-flex items-center justify-center rounded-xl bg-brand px-5 text-sm font-bold text-white">
                 Go to your dashboard
               </Link>
             </div>
-          ) : (
+          )}
+
+          {answeredCount > 0 && (
             <>
               <div className="grid grid-cols-3 gap-2 mb-6">
-                <Tile value={`${answeredIds.size}`} label="Questions seen" />
-                <Tile value={totalAnswered ? `${Math.round((totalCorrect / totalAnswered) * 100)}%` : "–"} label="Accuracy" />
-                <Tile value={best === null ? "–" : `${best}${pct}`} label={`Best test · goal ${goal}${pct}`} good={best !== null && best >= goal} />
+                <StatsTile value={`${answeredCount}`} label="Questions seen" />
+                <StatsTile value={totalAnswered ? `${Math.round((totalCorrect / totalAnswered) * 100)}%` : "–"} label="Accuracy" />
+                <StatsTile value={best === null ? "–" : `${best}${pct}`} label={`Best test · goal ${goal}${pct}`} good={best !== null && best >= goal} />
               </div>
 
               <h2 className="text-sm font-bold text-gray-900 dark:text-gray-50 mb-2">By topic, weakest first</h2>
@@ -187,61 +330,71 @@ export function StatsV2({ exam }: { exam: ExamV2Config }) {
                   </div>
                 </>
               )}
-
-              <h2 className="text-sm font-bold text-gray-900 dark:text-gray-50 mb-2">Questions you&apos;ve missed</h2>
-              {missed.length === 0 ? (
-                <div className="rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-6 text-center text-sm text-gray-500 dark:text-gray-400">No misses yet. Nice.</div>
-              ) : (
-                <div className="space-y-2">
-                  {shownMissed.map((row) => {
-                    const q = byId.get(row.id)!;
-                    const isOpen = open === row.id;
-                    return (
-                      <div key={row.id} className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-                        <button type="button" aria-expanded={isOpen} onClick={() => setOpen(isOpen ? null : row.id)} className="v2-tap flex w-full items-center gap-3 px-4 py-2 text-left">
-                          <div className="shrink-0 text-center min-w-[3rem]">
-                            <div className={`text-base font-bold tabular-nums leading-none ${row.mastered ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"}`}>{row.misses}</div>
-                            <div className="text-[9px] uppercase tracking-wide text-gray-500 dark:text-gray-400 mt-0.5">{row.misses === 1 ? "miss" : "misses"}</div>
-                          </div>
-                          <span className="min-w-0 flex-1">
-                            <span className="block truncate text-sm font-medium text-gray-900 dark:text-gray-50">{plain(q.passage ?? q.stem)}</span>
-                            <span className="block truncate text-[11px] text-gray-500 dark:text-gray-400">
-                              {exam.domainLabels[q.domain] ?? q.domain}
-                              {q.skill && ` · ${q.skill}`}
-                              {row.mastered && <span className="text-green-600 dark:text-green-400"> · mastered in the drill</span>}
-                            </span>
-                          </span>
-                          {isOpen ? <ChevronUp className="h-4 w-4 shrink-0 text-gray-500 dark:text-gray-400" /> : <ChevronDown className="h-4 w-4 shrink-0 text-gray-500 dark:text-gray-400" />}
-                        </button>
-                        {isOpen && (
-                          <div className="border-t border-gray-100 dark:border-gray-800 px-4 py-4">
-                            <QuestionView question={q} stimulus={getStimulus(exam.id, q)} optionOrder={(q.options ?? []).map((_, k) => k)} answer={row.lastAnswer} onAnswer={() => {}} reveal disabled layout="stack" />
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
-                  {missed.length > MISSED_SHOWN && (
-                    <button type="button" onClick={() => setShowAllMissed(!showAllMissed)} className="v2-tap w-full rounded-xl text-sm font-semibold text-brand-dark">
-                      {showAllMissed ? "Show fewer" : `Show all ${missed.length}`}
-                    </button>
-                  )}
-                </div>
-              )}
             </>
           )}
-        </div>
-      </div>
-    </div>
-  );
-}
 
-function Tile({ value, label, good = false }: { value: string; label: string; good?: boolean }) {
-  return (
-    <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-2 py-3 text-center">
-      <div className={`text-xl font-black tabular-nums ${good ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>{value}</div>
-      <div className="text-[10px] leading-tight text-gray-500 dark:text-gray-400 mt-0.5">{label}</div>
-    </div>
+          <h2 className="text-sm font-bold text-gray-900 dark:text-gray-50 mb-1">Every question</h2>
+          <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
+            {missedCount > 0
+              ? `${missedCount} you've missed, worst first. Tap one to try it again.`
+              : "Tap any question to try it. Your misses rise to the top."}
+          </p>
+          <StatsSortBar
+            fields={[
+              { field: "wrong" as SortField, label: "Wrong" },
+              { field: "correct" as SortField, label: "Correct" },
+              { field: "answered" as SortField, label: "Answered" },
+              { field: "accuracy" as SortField, label: "Accuracy" },
+            ]}
+            sortField={sortField}
+            sortDirection={sortDirection}
+            onSort={handleSort}
+            count={`${sorted.length} questions`}
+          />
+          {listReady ? (
+            <GatedStatsList
+              items={sorted}
+              isPremium={unlocked}
+              keyOf={(r) => r.question.id}
+              renderRow={(r) => {
+                const chip = chipFor(r);
+                return (
+                  <V2StatsRow
+                    examId={exam.id}
+                    question={r.question}
+                    chip={chip}
+                    subtitle={
+                      <>
+                        {subtitleFor(r.question)}
+                        {r.mastered && r.wrong > 0 && <span className="text-green-600 dark:text-green-400"> · mastered in the drill</span>}
+                      </>
+                    }
+                    footer={
+                      <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
+                        <span>Answered: <span className="font-semibold text-gray-700 dark:text-gray-200">{r.answered}</span></span>
+                        <span>Correct: <span className="font-semibold text-green-600 dark:text-green-400">{r.correct}</span></span>
+                        <span>Wrong: <span className="font-semibold text-red-600 dark:text-red-400">{r.wrong}</span></span>
+                      </div>
+                    }
+                    onAnswer={(ok) => trackDailyQuizAnswer(ok, `stats_${exam.id}`)}
+                  />
+                );
+              }}
+              previewOf={(r) => ({ chip: chipFor(r), text: plainStem(r.question) })}
+              lockTitle={`${sorted.length - STATS_FREE_ROWS} more questions`}
+              lockSubtitle="Unlock Premium to see all your question stats"
+              lockCta="Unlock Premium for $9.99"
+              onUnlock={() => openPaywall("stats_question_list", "Stats Question List")}
+            />
+          ) : (
+            <div className="space-y-2">
+              {[1, 2, 3].map((i) => <div key={i} className="h-16 bg-gray-100 dark:bg-gray-800 rounded-xl animate-pulse" />)}
+            </div>
+          )}
+          <div className="h-6" />
+        </>
+      )}
+    </StatsPageShell>
   );
 }
 
@@ -253,16 +406,4 @@ function accColor(acc: number | null) {
 function accBar(acc: number | null) {
   if (acc === null) return "";
   return acc >= 80 ? "bg-green-500" : acc >= 60 ? "bg-yellow-400" : "bg-red-400";
-}
-
-/** A one-line preview of a stem: markup, KaTeX dollars and slots stripped. */
-function plain(text: string) {
-  return text
-    .replace(/\{\{([^}]*)\}\}/g, "$1")
-    .replace(/\[\[\d+\]\]/g, "___")
-    .replace(/__([^_]+)__/g, "$1")
-    .replace(/\*\*?([^*]+)\*\*?/g, "$1")
-    .replace(/\$([^$]+)\$/g, "$1")
-    .replace(/\s+/g, " ")
-    .trim();
 }

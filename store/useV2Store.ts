@@ -2,7 +2,7 @@ import { queueAchievementCelebration } from "@/lib/achievementCelebration";
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { withoutExamV2 } from "@/lib/v2/merge";
-import { BasicsSkillState, DrillState, TestResultV2, TestSessionV2 } from "@/lib/v2/types";
+import { BasicsSkillState, DrillState, QuestionTally, TestResultV2, TestSessionV2 } from "@/lib/v2/types";
 import { EMPTY_DRILL } from "@/lib/v2/training";
 import { isAnswered } from "@/lib/v2/grading";
 import { trackFunnelStep } from "@/lib/funnel";
@@ -24,6 +24,8 @@ interface V2State {
   /** Learned Basics skills, keyed by lib/v2/basics basicsKey(). */
   basics: Record<string, BasicsSkillState>;
   goals: Record<string, number>;
+  /** Drill answers per question, by exam then question id (the stats page and Common Mistakes). */
+  questionStats: Record<string, Record<string, QuestionTally>>;
   /** Account this local copy was last synced with (null = guest data). */
   syncedUid: string | null;
 
@@ -41,8 +43,8 @@ interface V2State {
   replaceData: (data: V2Data, syncedUid: string | null) => void;
 }
 
-export type V2Data = Pick<V2State, "sessions" | "results" | "drills" | "basics" | "goals">;
-export const EMPTY_V2: V2Data = { sessions: {}, results: [], drills: {}, basics: {}, goals: {} };
+export type V2Data = Pick<V2State, "sessions" | "results" | "drills" | "basics" | "goals" | "questionStats">;
+export const EMPTY_V2: V2Data = { sessions: {}, results: [], drills: {}, basics: {}, goals: {}, questionStats: {} };
 
 export const useV2Store = create<V2State>()(
   persist(
@@ -52,6 +54,7 @@ export const useV2Store = create<V2State>()(
       drills: {},
       basics: {},
       goals: {},
+      questionStats: {},
       syncedUid: null,
 
       putSession: (session) => set((s) => ({ sessions: { ...s.sessions, [session.key]: session } })),
@@ -76,7 +79,11 @@ export const useV2Store = create<V2State>()(
           const next: DrillState = correct
             ? { masteredIds: d.masteredIds.includes(questionId) ? d.masteredIds : [...d.masteredIds, questionId], wrongQueue, seen: d.seen + 1, correct: d.correct + 1 }
             : { masteredIds: d.masteredIds, wrongQueue: [...wrongQueue, questionId], seen: d.seen + 1, correct: d.correct };
-          return { drills: { ...s.drills, [key]: next } };
+          const examId = examOf(key);
+          const forExam = s.questionStats?.[examId] ?? {};
+          const tally = forExam[questionId] ?? { n: 0, w: 0 };
+          const questionStats = { ...s.questionStats, [examId]: { ...forExam, [questionId]: { n: tally.n + 1, w: tally.w + (correct ? 0 : 1) } } };
+          return { drills: { ...s.drills, [key]: next }, questionStats };
         });
       },
       resetDrill: (key) => set((s) => ({ drills: { ...s.drills, [key]: EMPTY_DRILL } })),

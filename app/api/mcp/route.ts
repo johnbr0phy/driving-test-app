@@ -95,8 +95,17 @@ export async function OPTIONS(): Promise<Response> {
   return new Response(null, { status: 204, headers: CORS_HEADERS });
 }
 
+// Stateless: there is no session to push server-initiated messages on, so a
+// GET stream would sit open until the platform kills it (300 s timeouts in
+// production). The spec lets a server answer GET with 405 instead. An
+// unauthenticated GET still gets the 401 so OAuth discovery keeps working.
 export async function GET(req: NextRequest): Promise<Response> {
-  return handleMcpRequest(req);
+  const result = verifyAccessToken(extractBearerToken(req.headers.get('authorization')) ?? '');
+  if (!result.ok) return unauthorized();
+  return new Response(JSON.stringify({ error: 'method_not_allowed' }), {
+    status: 405,
+    headers: { ...CORS_HEADERS, Allow: 'POST, DELETE, OPTIONS', 'Content-Type': 'application/json' },
+  });
 }
 
 export async function POST(req: NextRequest): Promise<Response> {

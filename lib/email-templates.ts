@@ -233,7 +233,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "Safety &amp; Emergencies and State Laws, 100 questions",
           "Practice tests C and D",
           "Every question you miss, on repeat",
-          "SAT and ACT Premium too, for whatever test is next",
+          "Full stats on every US exam you take next",
         ]),
         cta(DASH(v, "paywall_abandon"), "Pick Up Where You Left Off"),
         p("One payment, no subscription. A retest costs more."),
@@ -257,7 +257,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "Safety &amp; Emergencies and State Laws, 100 more questions",
           "Practice tests C and D",
           "Your stats page, showing what you always get wrong",
-          "SAT and ACT Premium too: Practice Test 2 and every drill",
+          "Full stats on every US exam, not just this one",
         ]),
         cta(DASH(v, "upgrade_pitch"), "Upgrade to Premium - $9.99"),
         signoff(),
@@ -265,9 +265,9 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
     }),
 
   // Sent by the Stripe webhook the moment a purchase lands. Transactional, so
-  // no unsubscribe link. Leads with the exam the buyer paid from (DMV, SAT or
-  // ACT), then links every exam Premium covers, because the SAT and ACT
-  // dashboards are hard to find from the DMV side of the site.
+  // no unsubscribe link. Leads with the exam the buyer paid from, then links
+  // every exam Premium covers. No v2 exam sets \`premium\` since the SAT and
+  // ACT went free (Oct 31, 2026), so today that is the DMV line alone.
   purchaseWelcome: (v) => {
     const campaign = "purchase_welcome";
     const link = (path: string, label: string) =>
@@ -409,7 +409,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           cta(sat, "Take a free SAT practice test"),
           p(`Taking the ACT instead? ${link(act, "Try the free ACT practice test")}.`),
           p(
-            "Premium is still $9.99, one time, and now covers the SAT and ACT too. Already bought it for your permit test? You're already unlocked.",
+            "Both practice tests and every drill are free. No credit card, no account needed to start.",
           ),
           p("Parent who signed up for your teen? Forward this along."),
           ...question,

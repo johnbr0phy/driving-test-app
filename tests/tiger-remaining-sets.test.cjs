@@ -9,6 +9,7 @@ const sharp = require('sharp');
 const { getTigerAsset, getSiteTigerAsset, hasTigerSet, TIGER_EXAM_IDS } = require('../lib/tigerAssets.ts');
 const { getTigerFace } = require('../lib/resultsCopy.ts');
 const { shareImageUrl, SHARE_IMAGE_VERSION } = require('../lib/shareImageUrl.ts');
+const SHARE_COPY = new Set(["jelec","sie","series7","pcoc","ffi","police","nasm","rbt","cpc","iedtt","cask","cans","ukseru","nzroad","netplus","gcdl"]);
 
 const ids = ["capm", "psm", "itil", "cissp", "rbt", "cpc", "pcoc", "ukseru", "ibpspo", "ctet", "praxis", "gre", "gmat", "sie", "series7", "ssccgl", "rrbntpc"];
 for (const id of ids) {
@@ -50,8 +51,10 @@ for (const id of ids) {
     for (const [score, expression] of [[100, 1], [99, 2], [85, 2], [84, 3], [70, 3], [69, 4], [55, 4], [54, 5], [40, 5], [39, 6], [25, 6], [24, 7], [10, 7], [9, 8], [0, 8]]) {
       assert.equal(getTigerFace(score, id), getTigerAsset(id, expression));
     }
-    assert.equal(shareImageUrl(id), `/og/${id}?v=remaining-mascots-1`);
-    assert.equal(shareImageUrl(id, 'es'), `/og/${id}?v=remaining-mascots-1&lang=es`);
+    // Exams that later got their own share copy moved on to that card's version.
+    const v = SHARE_COPY.has(id) ? 'share-copy-1' : 'remaining-mascots-1';
+    assert.equal(shareImageUrl(id), `/og/${id}?v=${v}`);
+    assert.equal(shareImageUrl(id, 'es'), `/og/${id}?v=${v}&lang=es`);
   });
 }
 
@@ -62,5 +65,6 @@ test('site artwork, borrowed mascots and previous cache versions remain stable',
   assert.equal(getTigerAsset('awssaa', 3), '/tigers/aws/tiger_face_03.png');
   assert.equal(shareImageUrl('dmv'), `/og/dmv?v=${SHARE_IMAGE_VERSION}`);
   assert.equal(shareImageUrl('pmp'), '/og/pmp?v=citizenship-pmp-1');
-  assert.equal(shareImageUrl('ffi'), '/og/ffi?v=role-mascots-1');
+  assert.equal(shareImageUrl('barber'), '/og/barber?v=role-mascots-1');
+  assert.equal(shareImageUrl('ffi'), '/og/ffi?v=share-copy-1');
 });

@@ -32,7 +32,7 @@ const DMV_BENEFITS = [
   "Safety & Emergencies and State Laws",
   "Tests C and D",
   "The 50 questions most people fail",
-  "SAT and ACT Premium too",
+  "Full stats on every US exam",
 ];
 
 export function SupportPaywallModal({

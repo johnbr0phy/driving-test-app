@@ -14,7 +14,7 @@ const title = "Free SAT Practice Test 2026 - Full-Length, Adaptive";
 const metaDescription =
   "Free full-length digital SAT practice test: Reading and Writing plus Math in timed adaptive modules, a built-in calculator and a 400 to 1600 score estimate.";
 const description =
-  "A free full-length digital SAT practice test: Reading and Writing plus Math in four timed, adaptive modules, a built-in calculator and reference sheet, and a 400 to 1600 score estimate. Eight skill drills sized for your phone bring every miss back until you master it. Practice Test 2 and the last drill in each section are a one-time $9.99.";
+  "A free full-length digital SAT practice test: Reading and Writing plus Math in four timed, adaptive modules, a built-in calculator and reference sheet, and a 400 to 1600 score estimate. Eight skill drills sized for your phone bring every miss back until you master it. Both practice tests and every drill are free.";
 
 export const metadata: Metadata = {
   title,
@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest SAT practice test free?",
-    a: "Yes, to start. Practice Test 1, its score and every explanation, and six of the eight skill drills are free with no account required. Tigertest Premium, a one-time $9.99 with no subscription, unlocks Practice Test 2 and the Expression of Ideas and Geometry and Trigonometry drills, and the same purchase covers the DMV and the ACT too.",
+    a: "Yes, all of it. Both full-length practice tests, their scores and every explanation, and all eight skill drills are free with no account required and no paywall.",
   },
 ];
 
@@ -270,7 +270,7 @@ export default function SatLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Hit Your SAT Goal?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. A free full-length test and six free skill drills, with Practice Test 2 and the rest in Premium.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Completely free. No account required. Two full-length tests and all eight skill drills.</p>
           <ExamLandingCTA dashboardHref="/sat/dashboard" />
         </div>
       </div>

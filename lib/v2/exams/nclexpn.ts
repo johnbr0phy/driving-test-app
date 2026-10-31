@@ -32,7 +32,7 @@ export const NCLEXPN: ExamV2Config = {
   fullName: "NCLEX-PN licensure exam (LPN/LVN)",
   tagline: "85 practical nursing questions in order, no going back, weighted like the real test plan.",
   icon: "stethoscope",
-  theme: { brand: "185 70% 34%", brandDark: "185 70% 24%", brandLight: "185 70% 95%" },
+  theme: { brand: "185 70% 32%", brandDark: "185 70% 24%", brandLight: "185 70% 95%" },
   breakSeconds: 0,
   sections: [
     {

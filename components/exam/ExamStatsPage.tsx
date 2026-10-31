@@ -89,7 +89,8 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const [inClass, setInClass] = useState(false);
   useEffect(() => setInClass(isClassStudent(source.id) || (!!source.variantOf && isClassStudent(source.variantOf))), [source.id, source.variantOf]);
   const usExam = regionOfTest(source.variantOf ?? source.id) === "US";
-  const isPremium = hydrated ? !usExam || hasPremiumAccess() || inClass : false;
+  // Other countries' exams are never priced, so they never flash a lock while the store loads.
+  const isPremium = !usExam || (hydrated && (hasPremiumAccess() || inClass));
 
   // Paywall hits and checkouts are keyed "<examId>_stats" (the family id for a
   // state version, since the analytics keys allow no hyphens).
@@ -277,7 +278,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             benefits={[
               `See your accuracy on all ${examQuestions.length} ${exam.shortName} questions`,
               "See what you keep getting wrong, worst first",
-              "Premium on every Tigertest exam, the DMV, SAT and ACT included",
+              "Full stats on every US exam, the DMV included",
               "One payment, yours forever",
             ]}
             isGuest={isGuest}

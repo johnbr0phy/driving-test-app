@@ -25,7 +25,7 @@ export const PMP: ExamV2Config = {
   fullName: "PMI Project Management Professional (PMP) exam",
   tagline: "90 situational questions in 120 minutes, on the July 2026 PMP outline, opening with a case study like the real exam.",
   icon: "target",
-  theme: { brand: "305 90% 44%", brandDark: "305 90% 34%", brandLight: "305 70% 96%" },
+  theme: { brand: "305 90% 43%", brandDark: "305 90% 34%", brandLight: "305 70% 96%" },
   breakSeconds: 0,
   sections: [
     {

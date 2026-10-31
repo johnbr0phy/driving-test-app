@@ -112,7 +112,7 @@ const CHATGPT_STEPS: React.ReactNode[] = [
 
 const card = "rounded-3xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800";
 const h2Class = "text-3xl md:text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-50";
-const eyebrow = "text-sm font-semibold uppercase tracking-wider text-orange-600 dark:text-orange-400";
+const eyebrow = "text-sm font-semibold uppercase tracking-wider text-orange-700 dark:text-orange-400";
 
 function Steps({ steps }: { steps: React.ReactNode[] }) {
   return (
@@ -143,7 +143,7 @@ function ChatMock() {
           <span className="w-2.5 h-2.5 rounded-full bg-gray-200 dark:bg-gray-700" />
           <span className="w-2.5 h-2.5 rounded-full bg-gray-200 dark:bg-gray-700" />
           <span className="w-2.5 h-2.5 rounded-full bg-gray-200 dark:bg-gray-700" />
-          <span className="ml-3 text-xs text-gray-400">Your chat</span>
+          <span className="ml-3 text-xs text-gray-500 dark:text-gray-400">Your chat</span>
         </div>
         <div className="p-4 sm:p-5 sm:pb-14 space-y-4 text-sm">
           <div className="flex flex-col items-end gap-1.5">
@@ -167,7 +167,7 @@ function ChatMock() {
                 <div className="font-semibold text-gray-900 dark:text-gray-50 truncate">Cell Biology: Chapter 4</div>
                 <div className="text-xs text-gray-500 dark:text-gray-400 truncate">20 questions · tigertest.io/q/K7RM2Q</div>
               </div>
-              <span className="flex-shrink-0 rounded-full bg-orange-500 text-white px-3 py-1.5 text-xs font-semibold">Play</span>
+              <span className="flex-shrink-0 rounded-full bg-orange-700 text-white px-3 py-1.5 text-xs font-semibold">Play</span>
             </div>
           </div>
         </div>

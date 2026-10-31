@@ -230,12 +230,12 @@
   "category": "roadSigns",
   "question": "显示车道合并的标志表示什么？",
   "optionA": "车道结束，向左并道",
-  "optionB": "右侧有车辆驶入",
+  "optionB": "右侧有车辆并入",
   "optionC": "分隔式公路结束",
   "optionD": "前方有路口",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "此标志警告您的车道即将结束，您需要并道。"
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "并道标志警告前方右侧车辆将并入您的车道，请准备调整车速并让出空间。表示您自己的车道即将结束的是车道结束标志。"
  },
  {
   "type": "Universal",
@@ -691,13 +691,13 @@
   "questionId": "U-050",
   "category": "roadSigns",
   "question": "红灯时禁止转弯标志是什么意思？",
-  "optionA": "红灯时禁止右转",
+  "optionA": "任何时候禁止掉头",
   "optionB": "红灯时禁止左转",
   "optionC": "视标志上的箭头而定",
-  "optionD": "任何方向都禁止转弯",
-  "correctAnswer": "C",
-  "correctIndex": 2,
-  "explanation": "红灯时禁止转弯标志禁止在红灯期间朝所示方向转弯，也可能两个方向都禁止。"
+  "optionD": "红灯期间不得转弯",
+  "correctAnswer": "D",
+  "correctIndex": 3,
+  "explanation": "NO TURN ON RED 标志表示红灯期间不得右转（也不得左转进入单行道）。请等待绿灯，在安全时再转弯。"
  },
  {
   "type": "Universal",
@@ -945,11 +945,11 @@
   "question": "红灯时什么时候可以右转？",
   "optionA": "只有在有箭头信号时",
   "optionB": "在城市里一律不行",
-  "optionC": "除非有标志禁止",
-  "optionD": "只要停车后就可以",
+  "optionC": "完全停车后，且无标志禁止时",
+  "optionD": "仅在附近没有车辆时",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "红灯时停车后可以右转，除非有标志禁止。"
+  "explanation": "大多数州允许在完全停车并礼让行人和车辆后红灯右转，除非有标志禁止。附近没有车辆并不意味着可以不先停车。"
  },
  {
   "type": "Universal",
@@ -1061,7 +1061,7 @@
   "optionD": "任何时候都不能进入自行车道",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "在准备转弯的200英尺范围内，您可以驶入自行车道。"
+  "explanation": "只有在礼让骑车人后为转弯做准备（或在允许的地方驶入停车位）时，才可以驶入自行车道。部分州（如加利福尼亚州）规定了距离转弯处多远可以驶入。"
  },
  {
   "type": "Universal",
@@ -1237,13 +1237,13 @@
   "questionId": "U-089",
   "category": "rulesOfRoad",
   "question": "什么时候必须把远光灯切换为近光灯？",
-  "optionA": "距离对向来车或前方车辆500英尺以内时",
-  "optionB": "距离路上任何对向来车1000英尺以内时",
+  "optionA": "对向来车500英尺以内",
+  "optionB": "仅在没有路灯的道路上",
   "optionC": "只在市区内接近对向来车时",
   "optionD": "只在对方司机向您闪灯时",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "在距离对向来车500英尺以内以及跟随其他车辆时，应切换为近光灯。"
+  "explanation": "大多数州要求对向来车500英尺以内、跟随前车200至300英尺以内使用近光灯。少数州不同，例如明尼苏达州（对向来车1,000英尺），请查阅本州驾驶手册。"
  },
  {
   "type": "Universal",
@@ -1362,14 +1362,14 @@
   "state": "ALL",
   "questionId": "U-099",
   "category": "safeDriving",
-  "question": "交通死亡事故的首要原因是什么？",
+  "question": "以下哪项因素涉及的交通死亡人数最多？",
   "optionA": "分心驾驶",
   "optionB": "超速",
   "optionC": "天气",
   "optionD": "车辆缺陷",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "分心驾驶（包括使用手机）是交通事故和死亡的首要原因。"
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "在美国，约十分之三的交通死亡与超速有关，远多于天气或车辆缺陷。分心驾驶涉及的致命事故较少，但仍是严重且日益增长的风险。"
  },
  {
   "type": "Universal",
@@ -1446,14 +1446,14 @@
   "state": "ALL",
   "questionId": "U-105",
   "category": "safeDriving",
-  "question": "以高速公路车速行驶时，您的车每秒行驶多远？",
-  "optionA": "每小时30英里时44英尺",
-  "optionB": "每小时50英里时73英尺",
-  "optionC": "每小时60英里时88英尺",
-  "optionD": "随路况而变化",
+  "question": "以每小时60英里行驶时，车辆每秒大约行驶多远？",
+  "optionA": "44英尺",
+  "optionB": "66英尺",
+  "optionC": "88英尺",
+  "optionD": "120英尺",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "以每小时60英里行驶时，您的车每秒大约行驶88英尺。"
+  "explanation": "以每小时60英里行驶时，每秒约行驶88英尺（1英里/小时约等于每秒1.47英尺）。44英尺是每小时30英里时的距离。"
  },
  {
   "type": "Universal",
@@ -1915,7 +1915,7 @@
   "optionD": "36英寸",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "仅6英寸深的流动水就能把人冲倒，12英寸深的水就能把车辆冲走。"
+  "explanation": "约6英寸深的水就会到达大多数乘用车的底部，可能导致失控和熄火。约12英寸深的流水可以使许多车辆漂浮起来。"
  },
  {
   "type": "Universal",
@@ -2041,7 +2041,7 @@
   "optionD": "0.02%",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "在所有州，成年驾驶人的法定BAC上限都是0.08%。"
+  "explanation": "除犹他州为0.05%外，各州21岁及以上驾驶人的法定血液酒精浓度（BAC）上限均为0.08%。"
  },
  {
   "type": "Universal",
@@ -3015,13 +3015,13 @@
   "questionId": "IL-016",
   "category": "cellPhone",
   "question": "在伊利诺伊州的施工区和学区内，关于电子设备有什么禁止规定？",
-  "optionA": "仅禁止使用手持设备",
+  "optionA": "禁止使用任何设备，即使免提也不行",
   "optionB": "仅禁止发短信和消息",
   "optionC": "仅禁止视频通话",
-  "optionD": "禁止使用任何设备，即使免提也不行",
+  "optionD": "禁止使用手持设备",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "伊利诺伊州禁止在施工区和学区内使用任何电子设备，无论是否使用免提技术。"
+  "explanation": "在伊利诺伊州的学区和施工区内，禁止手持使用手机，但允许免提或语音操作。手持使用在全州范围内也被禁止。"
  },
  {
   "type": "State-Specific",
@@ -3395,11 +3395,11 @@
   "question": "在马萨诸塞州，持学习驾照需要完成多少小时的监督练习驾驶？",
   "optionA": "共练习20小时",
   "optionB": "共练习50小时",
-  "optionC": "40小时，上过驾驶培训课程可减为30小时",
+  "optionC": "40小时，完成驾驶技能课程可减为30小时",
   "optionD": "共练习60小时",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "学习驾照持有人必须完成40小时的监督练习驾驶；如申请人已完成驾驶培训课程，可减为30小时。"
+  "explanation": "马萨诸塞州要求40小时的监督驾驶；如青少年完成经批准的驾驶技能培训课程，可减为30小时。"
  },
  {
   "type": "State-Specific",
@@ -3462,14 +3462,14 @@
   "state": "MA",
   "questionId": "MA-008",
   "category": "gdlLicensing",
-  "question": "在马萨诸塞州，JOL持有人到几岁时解除乘客限制？",
-  "optionA": "16岁半",
-  "optionB": "18岁",
-  "optionC": "完成驾驶培训课程时",
-  "optionD": "17岁",
+  "question": "在马萨诸塞州，新取得JOL的驾驶人的乘客限制持续多久？",
+  "optionA": "前3个月",
+  "optionB": "前12个月",
+  "optionC": "直到完成驾驶培训课程",
+  "optionD": "前6个月",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "JOL持有人的乘客限制在年满17岁时解除。"
+  "explanation": "取得JOL后的前6个月内，除非有21岁以上的合格成人坐在前排，驾驶人不得搭载直系亲属以外的18岁以下乘客。"
  },
  {
   "type": "State-Specific",
@@ -3819,7 +3819,7 @@
   "optionD": "45分钟",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "必须从日出前30分钟开始至日落后30分钟一直使用前大灯。"
+  "explanation": "必须从日落后30分钟起至日出前30分钟一直开启前大灯。"
  },
  {
   "type": "State-Specific",
@@ -3911,13 +3911,13 @@
   "questionId": "MA-040",
   "category": "stateUnique",
   "question": "在马萨诸塞州驾驶车辆时必须携带哪些证件？",
-  "optionA": "驾照、车辆登记证和保险证明",
+  "optionA": "驾照和车辆登记证",
   "optionB": "只需驾照",
-  "optionC": "只需驾照和车辆登记证",
+  "optionC": "驾照、车辆登记证和保险卡",
   "optionD": "不需要携带任何证件",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "驾驶机动车时，驾驶人必须携带驾照、车辆登记证和保险证明。"
+  "explanation": "马萨诸塞州法律要求驾驶时携带驾照和车辆登记证。"
  },
  {
   "type": "State-Specific",
@@ -4029,7 +4029,7 @@
   "optionD": "有21岁以上持照成人陪同",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "18岁以下的临时驾照驾驶人只有在年满21岁的持照成人陪同下，才可以在宵禁时段驾驶。"
+  "explanation": "午夜至凌晨5点，18岁以下的临时驾照驾驶人可在有3年驾龄、年满21岁的持照驾驶人陪同下驾驶，或在往返工作、学校活动、志愿服务或体育活动时驾驶。"
  },
  {
   "type": "State-Specific",
@@ -4192,12 +4192,12 @@
   "category": "duiStateLaws",
   "question": "在马里兰州，21岁以下驾驶人的法定酒精限值是多少？",
   "optionA": "血液酒精浓度（BAC）0.08%",
-  "optionB": "血液酒精浓度（BAC）0.02%",
+  "optionB": "血液酒精浓度（BAC）0.05%",
   "optionC": "血液酒精浓度（BAC）0.04%",
-  "optionD": "任何可检测到的酒精",
+  "optionD": "血液酒精浓度（BAC）0.02%",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "21岁以下的驾驶人在驾驶车辆时，体内不得有任何可检测到的酒精。"
+  "explanation": "马里兰州21岁以下驾驶人的驾照附有酒精限制：血液酒精浓度达到0.02%或以上驾驶即属违规。"
  },
  {
   "type": "State-Specific",
@@ -4893,11 +4893,11 @@
   "question": "在新泽西州，谁必须系安全带？",
   "optionA": "只有驾驶人",
   "optionB": "只有驾驶人和前座乘客",
-  "optionC": "所有前座乘员和所有18岁以下的乘客",
+  "optionC": "前后座所有乘员",
   "optionD": "只有21岁以下的乘客",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "所有前座乘员，以及坐在任何位置的18岁以下乘客，都必须系安全带。"
+  "explanation": "新泽西州要求车内前后座所有乘员都系安全带。前座违规可被单独拦停；后座成年人的规定只在因其他违规被拦停时执行。"
  },
  {
   "type": "State-Specific",
@@ -5814,14 +5814,14 @@
   "state": "PA",
   "questionId": "PA-016",
   "category": "cellPhone",
-  "question": "在宾夕法尼亚州，持有青少年驾照的18岁以下驾驶人被禁止哪些手机使用？",
+  "question": "在宾夕法尼亚州，持青少年驾照的驾驶人被禁止哪些手机使用？",
   "optionA": "仅禁止手持通话",
   "optionB": "仅禁止发短信",
   "optionC": "仅禁止录像",
-  "optionD": "所有手机使用",
+  "optionD": "手持使用，与所有驾驶人相同",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "持有青少年驾照的18岁以下驾驶人在驾驶时被禁止任何手机使用。"
+  "explanation": "宾夕法尼亚州没有专门针对青少年驾照的手机规定。Paul Miller法禁止所有驾驶人在驾驶时手持或使用手机；允许免提使用。"
  },
  {
   "type": "State-Specific",
@@ -6010,14 +6010,14 @@
   "state": "PA",
   "questionId": "PA-030",
   "category": "stateUnique",
-  "question": "在宾夕法尼亚州施工区，罚款加倍的规定是怎样的？",
-  "optionA": "仅在有工人时罚款加倍",
-  "optionB": "在施工区作业期间任何时候罚款都加倍",
-  "optionC": "仅在白天罚款加倍",
-  "optionD": "仅在州际高速公路上罚款加倍",
+  "question": "在宾夕法尼亚州施工区，交通罚款何时加倍？",
+  "optionA": "任何施工区，即使没有工人",
+  "optionB": "有标志且有工人作业的施工区",
+  "optionC": "仅在白天",
+  "optionD": "仅在州际高速公路上",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "在作业中的施工区内，无论是否有工人在场，交通违规罚款在任何时候都加倍。"
+  "explanation": "在有标志的作业施工区内罚款加倍，该区域以闪光灯标示，闪光灯仅在有工人在场时开启。"
  },
  {
   "type": "State-Specific",
@@ -6154,10 +6154,10 @@
   "optionA": "只使用远光灯",
   "optionB": "始终使用雾灯",
   "optionC": "同时开启危险警示灯",
-  "optionD": "距离其他车辆500英尺内切换近光",
+  "optionD": "距对向来车500英尺内切换近光",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "使用前大灯时，在距离对向来车或前方同向车辆500英尺以内，驾驶人必须将灯光调暗（切换为近光灯）。"
+  "explanation": "距对向来车500英尺以内，以及距前方同向车辆300英尺以内时，必须切换为近光灯。"
  },
  {
   "type": "State-Specific",
@@ -6251,11 +6251,11 @@
   "question": "在德克萨斯州，临时驾照持有人的乘客限制持续多久？",
   "optionA": "自签发起3个月",
   "optionB": "自签发起12个月",
-  "optionC": "自签发起6个月",
-  "optionD": "直到18岁",
+  "optionC": "直到18岁",
+  "optionD": "直到21岁",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "临时驾照持有人的乘客限制自签发之日起持续6个月。"
+  "explanation": "德克萨斯州禁止未满18岁的驾驶人搭载超过一名非家庭成员的21岁以下乘客，因此该限制持续到驾驶人年满18岁。"
  },
  {
   "type": "State-Specific",
@@ -6304,14 +6304,14 @@
   "state": "TX",
   "questionId": "TX-011",
   "category": "gdlLicensing",
-  "question": "在德克萨斯州，临时驾照的第一年有什么限制？",
+  "question": "在德克萨斯州，未满18岁的临时驾照持有人有什么限制？",
   "optionA": "禁止在高速公路上驾驶",
   "optionB": "只能在白天驾驶",
   "optionC": "宵禁和乘客人数限制",
   "optionD": "只允许搭载家庭成员",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "在临时驾照的第一年，驾驶人须遵守夜间宵禁和乘客人数限制。"
+  "explanation": "年满18岁之前，临时驾照驾驶人不得在午夜至凌晨5点驾驶（工作、上学或紧急情况除外），也不得搭载超过一名非家庭成员的21岁以下乘客。"
  },
  {
   "type": "State-Specific",
@@ -7005,27 +7005,27 @@
   "questionId": "VA-021",
   "category": "duiStateLaws",
   "question": "弗吉尼亚州针对未成年人酒后驾驶的零容忍政策是什么？",
-  "optionA": "禁止任何酒精",
+  "optionA": "血液酒精浓度0.02%或以上时驾驶",
   "optionB": "只适用于超过0.05%的情况",
   "optionC": "只有超过0.08%才算重罪",
   "optionD": "初犯只给予警告",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "根据零容忍政策，未成年驾驶人体内禁止有任何可检测到的酒精。"
+  "explanation": "非法饮酒的21岁以下驾驶人，血液酒精浓度达到0.02%或以上即违反弗吉尼亚州的零容忍法。"
  },
  {
   "type": "State-Specific",
   "state": "VA",
   "questionId": "VA-022",
   "category": "stateUnique",
-  "question": "在弗吉尼亚州的公路施工区超速，罚款会怎样？",
-  "optionA": "罚款不变",
-  "optionB": "罚款增加至三倍",
-  "optionC": "罚款加倍",
-  "optionD": "只发出警告",
+  "question": "在弗吉尼亚州，有工人在场时在公路施工区超速，最高罚款是多少？",
+  "optionA": "100美元",
+  "optionB": "250美元",
+  "optionC": "500美元",
+  "optionD": "1,000美元",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "在指定的公路施工区超速，罚款加倍，即使没有工人在场也一样。"
+  "explanation": "有工人在场时在设有标志的公路施工区超速属于交通违规，最高罚款500美元。"
  },
  {
   "type": "State-Specific",
@@ -7144,14 +7144,14 @@
   "state": "VA",
   "questionId": "VA-032",
   "category": "stateUnique",
-  "question": "在弗吉尼亚州，跟车过近可能会被控以什么罪名？",
+  "question": "在弗吉尼亚州，跟车过近通常属于哪类违法行为？",
   "optionA": "除非发生事故，否则不算违规",
-  "optionB": "鲁莽驾驶",
+  "optionB": "交通违规",
   "optionC": "初犯只给予警告",
-  "optionD": "仅属交通违规",
+  "optionD": "鲁莽驾驶",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "跟车过近被归类为鲁莽驾驶，驾驶人必须根据车速、交通和路况保持合理的距离。"
+  "explanation": "在弗吉尼亚州，跟车距离比合理审慎的距离更近属于交通违规，因此应根据车速、交通和路况保持安全距离。"
  },
  {
   "type": "State-Specific",
@@ -7412,12 +7412,12 @@
   "category": "gdlLicensing",
   "question": "在华盛顿州，第二次违反分级驾照制度（GDL）限制会怎样？",
   "optionA": "只给予书面警告",
-  "optionB": "驾照被吊销至18岁",
+  "optionB": "暂停6个月或至18岁",
   "optionC": "必须参加驾驶培训课程",
   "optionD": "必须做社区服务",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "第二次违反分级驾照制度（GDL）限制后，驾照将被吊销，直到驾驶人年满18岁。"
+  "explanation": "第二次违规将暂停中级驾照6个月或至年满18岁（以先到者为准）；第三次违规则暂停至年满18岁。"
  },
  {
   "type": "State-Specific",
@@ -7595,11 +7595,11 @@
   "question": "在华盛顿州，第一次拒绝呼气测试会怎样？",
   "optionA": "第一次拒绝没有处罚",
   "optionB": "吊销驾照90天",
-  "optionC": "吊销驾照2年",
-  "optionD": "吊销驾照1年",
+  "optionC": "吊销驾照1年",
+  "optionD": "吊销驾照2年",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "第一次拒绝呼气测试将被吊销驾照2年。"
+  "explanation": "七年内第一次拒绝测试将被吊销驾照一年；第二次拒绝则吊销两年。"
  },
  {
   "type": "State-Specific",
@@ -7733,13 +7733,13 @@
   "questionId": "WA-033",
   "category": "stateUnique",
   "question": "在华盛顿州，什么时候必须在人行横道为行人停车？",
-  "optionA": "行人在您行驶的车道上时",
-  "optionB": "行人在道路任何车道上时",
+  "optionA": "在您这一半道路上或相距一条车道内",
+  "optionB": "只有在您正前方时",
   "optionC": "信号灯显示可通行时",
   "optionD": "行人与您有眼神交流时",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "当行人位于驾驶人所在的行驶车道上时，驾驶人必须在人行横道为其停车。"
+  "explanation": "行人位于您这一半道路上或距其一条车道以内时必须停车；您这一半指与您同向的所有车道。"
  },
  {
   "type": "State-Specific",

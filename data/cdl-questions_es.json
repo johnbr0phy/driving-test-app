@@ -2706,14 +2706,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "cargoHandling",
-    "question": "Al transportar una carga de 20 pies de largo, ¿cuál es el número mínimo de amarres requeridos?",
-    "optionA": "Dos amarres sin importar el peso",
+    "question": "Según las reglas federales de sujeción de carga (49 CFR 393.110), ¿cuál es el número mínimo de amarres para un artículo de carga de 20 pies?",
+    "optionA": "Cinco, uno por cada 4 pies",
     "optionB": "Cuatro amarres para cualquier carga de más de 15 pies",
     "optionC": "Un amarre por cada 5 pies de longitud",
     "optionD": "Un amarre por cada 10 pies más uno adicional",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Para una carga de más de 10 pies de largo, necesita un amarre por cada 10 pies de longitud más un amarre adicional. Una carga de 20 pies requiere 3 amarres en total."
+    "explanation": "Según 49 CFR 393.110, un artículo de más de 10 pies necesita dos amarres para los primeros 10 pies más uno por cada 10 pies adicionales o fracción, así que un artículo de 20 pies necesita 3. La guía más simple del manual de la CDL, uno por cada 10 pies con un mínimo de dos, da un número menor que la regla federal."
   },
   {
     "questionId": "CDL-GK-195",
@@ -3308,7 +3308,7 @@
     "type": "CDL",
     "state": "ALL",
     "category": "cargoHandling",
-    "question": "¿Cuál es el número mínimo de amarres requerido para cualquier carga, sin importar su tamaño o peso?",
+    "question": "Según el manual de la CDL, ¿cuál es el número mínimo de amarres que debe tener cualquier carga, sin importar lo pequeña que sea?",
     "optionA": "Al menos dos amarres para cada carga",
     "optionB": "Un amarre si la carga mide menos de 10 pies de largo",
     "optionC": "Tres amarres para cargas de más de 20 pies de largo",
@@ -5689,13 +5689,13 @@
     "state": "ALL",
     "category": "mountainDriving",
     "question": "¿Qué cambio debe usar al bajar una pendiente pronunciada?",
-    "optionA": "El mismo cambio que usaría para subir la pendiente",
+    "optionA": "Un cambio más bajo que el que usaría para subir la pendiente",
     "optionB": "Un cambio más alto que el que usó para subir la pendiente",
     "optionC": "El cambio más alto disponible para ahorrar más combustible",
     "optionD": "Neutral, para ahorrar combustible y reducir el desgaste",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Usar para bajar el mismo cambio que usaría para subir da el freno de motor adecuado para lo empinado de esa pendiente."
+    "explanation": "La regla antigua era bajar en el mismo cambio que usó para subir. Los camiones modernos tienen piezas de baja fricción y formas aerodinámicas, así que el manual actual de la CDL dice que puede necesitar un cambio más bajo al bajar para tener suficiente freno de motor."
   },
   {
     "questionId": "CDL-GK-408",
@@ -6206,14 +6206,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "railroadCrossings",
-    "question": "¿Si a 100 pies de las vías no puede ver 400 pies en ambas direcciones, usted debe?",
-    "optionA": "No exceder 15 mph al cruzar",
+    "question": "Si al acercarse a un cruce no puede ver lejos por las vías en ambas direcciones, ¿qué debe hacer?",
+    "optionA": "Reducir la velocidad y estar listo para detenerse",
     "optionB": "Tocar la bocina antes de cruzar",
     "optionC": "Hacer señales con los faros",
     "optionD": "Llamar al despachador para pedir permiso",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Cuando la distancia de visibilidad es limitada en un cruce de ferrocarril, la velocidad no debe exceder 15 mph para cruzar con seguridad."
+    "explanation": "Cuando la visibilidad en un cruce es limitada, acérquese lo bastante despacio para poder detenerse antes de las vías si viene un tren. Algunos estados, como California, también fijan un límite de velocidad específico para estos cruces."
   },
   {
     "questionId": "CDL-GK-445",

@@ -377,7 +377,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">Your stats</h3>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Scores, weakest topics and the questions you keep missing</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Your score today and where your next points are</p>
               </div>
               <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
             </div>

@@ -9175,13 +9175,13 @@
   "questionId": "IL-016",
   "category": "cellPhone",
   "question": "Điều gì bị cấm ở khu vực thi công và khu vực trường học Illinois liên quan đến thiết bị điện tử?",
-  "optionA": "Chỉ dùng thiết bị cầm tay",
+  "optionA": "Mọi việc dùng thiết bị, kể cả rảnh tay",
   "optionB": "Chỉ nhắn tin và gửi tin",
   "optionC": "Chỉ gọi video",
-  "optionD": "Mọi việc dùng thiết bị, kể cả rảnh tay",
+  "optionD": "Dùng thiết bị cầm tay",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Illinois cấm mọi việc dùng thiết bị điện tử ở khu vực thi công và khu vực trường học, bất kể có đang dùng công nghệ rảnh tay hay không."
+  "explanation": "Ở khu vực trường học và khu vực thi công tại Illinois, cấm dùng điện thoại cầm tay nhưng được dùng chế độ rảnh tay hoặc điều khiển bằng giọng nói. Dùng điện thoại cầm tay cũng bị cấm trên toàn tiểu bang."
  },
  {
   "type": "State-Specific",
@@ -10252,28 +10252,28 @@
   "state": "KS",
   "questionId": "KS-013",
   "category": "cellPhone",
-  "question": "Luật Kansas yêu cầu gì về việc dùng điện thoại khi lái xe?",
-  "optionA": "Chỉ được thao tác rảnh tay",
-  "optionB": "Cấm hoàn toàn mọi cách dùng điện thoại",
-  "optionC": "Được nhắn tin khi đang lái",
-  "optionD": "Không hạn chế đối với tài xế người lớn",
+  "question": "Luật Kansas cấm mọi tài xế dùng điện thoại vào việc gì?",
+  "optionA": "Nhắn tin khi đang lái xe",
+  "optionB": "Gọi bất kỳ cuộc điện thoại nào",
+  "optionC": "Dùng ứng dụng GPS",
+  "optionD": "Nghe nhạc",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Tài xế chỉ được thao tác rảnh tay khi dùng điện thoại khi lái xe."
+  "explanation": "Kansas cấm mọi tài xế viết, gửi hoặc đọc tin nhắn khi lái xe. Người lớn vẫn được gọi điện, nhưng bị cấm cầm điện thoại trong khu vực trường học và khu vực thi công đang hoạt động."
  },
  {
   "type": "State-Specific",
   "state": "KS",
   "questionId": "KS-014",
   "category": "cellPhone",
-  "question": "Tài xế người lớn được dùng điện thoại theo cách nào theo luật rảnh tay của Kansas?",
-  "optionA": "Chỉ được gọi cầm tay",
-  "optionB": "Lệnh giọng nói và giá gắn",
-  "optionC": "Không bao giờ được dùng điện thoại",
-  "optionD": "Chỉ được phép chuyển giọng nói thành tin nhắn",
+  "question": "Tài xế người lớn ở Kansas được dùng điện thoại hợp pháp vào việc nào?",
+  "optionA": "Đọc tin nhắn",
+  "optionB": "Gọi điện thoại",
+  "optionC": "Viết tin nhắn",
+  "optionD": "Gửi email",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Tài xế người lớn được dùng lệnh giọng nói và giá gắn điện thoại khi lái xe."
+  "explanation": "Kansas cấm mọi tài xế nhắn tin và gửi tin viết khác, nhưng người lớn được gọi điện. Cầm điện thoại bị cấm trong khu vực trường học và khu vực thi công đang hoạt động."
  },
  {
   "type": "State-Specific",
@@ -10308,14 +10308,14 @@
   "state": "KS",
   "questionId": "KS-017",
   "category": "cellPhone",
-  "question": "Khi nào bạn được dùng điện thoại hợp pháp khi lái xe ở Kansas mà không có thiết bị rảnh tay?",
+  "question": "Người có giấy phép học lái ở Kansas được dùng điện thoại khi lái xe khi nào?",
   "optionA": "Để báo cáo khẩn cấp hoặc tội phạm",
   "optionB": "Không bao giờ trong bất kỳ trường hợp nào",
   "optionC": "Chỉ khi đỗ trong bãi đậu xe",
   "optionD": "Chỉ trong giờ lái xe ban ngày",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Chỉ được dùng điện thoại không có thiết bị rảnh tay để báo cáo khẩn cấp hoặc tội phạm."
+  "explanation": "Người có giấy phép học lái ở Kansas không được dùng điện thoại khi lái xe, trừ khi để báo cáo hoạt động phạm pháp hoặc gọi trợ giúp khẩn cấp."
  },
  {
   "type": "State-Specific",
@@ -10323,13 +10323,13 @@
   "questionId": "KS-018",
   "category": "stateUnique",
   "question": "Ai phải thắt dây an toàn theo luật Kansas?",
-  "optionA": "Mọi người trên xe mọi lúc",
+  "optionA": "Tài xế và mọi hành khách ghế trước",
   "optionB": "Chỉ tài xế của xe",
-  "optionC": "Tài xế và mọi hành khách ghế trước",
+  "optionC": "Mọi người trên xe mọi lúc",
   "optionD": "Chỉ hành khách dưới 18 tuổi",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Tài xế và mọi hành khách ghế trước phải thắt dây an toàn."
+  "explanation": "Kansas yêu cầu mọi người trên xe từ 14 tuổi trở lên phải thắt dây an toàn ở bất kỳ ghế nào, còn trẻ nhỏ hơn phải ngồi ghế an toàn trẻ em hoặc thắt dây."
  },
  {
   "type": "State-Specific",
@@ -11596,14 +11596,14 @@
   "state": "LA",
   "questionId": "LA-029",
   "category": "stateUnique",
-  "question": "Ai phải được cố định trong ghế an toàn trẻ em ở Louisiana?",
-  "optionA": "Chỉ trẻ em dưới 4 tuổi",
-  "optionB": "Mọi trẻ em dưới 6 tuổi hoặc nặng dưới 60 pound",
-  "optionC": "Trẻ em dưới 8 tuổi ở ghế sau",
-  "optionD": "Chỉ trẻ sơ sinh dưới 1 tuổi",
+  "question": "Ở Louisiana, trẻ em dưới bao nhiêu tuổi phải ngồi ghế an toàn quay mặt về phía sau?",
+  "optionA": "1 tuổi",
+  "optionB": "2 tuổi",
+  "optionC": "4 tuổi",
+  "optionD": "6 tuổi",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Mọi trẻ em dưới 6 tuổi hoặc nặng dưới 60 pound phải được cố định đúng cách trong ghế an toàn trẻ em được phê duyệt."
+  "explanation": "Luật Louisiana yêu cầu trẻ dưới 2 tuổi phải ngồi ghế an toàn quay mặt về phía sau. Trẻ lớn hơn chuyển sang ghế quay về phía trước có dây đai, rồi ghế nâng."
  },
  {
   "type": "State-Specific",
@@ -11795,11 +11795,11 @@
   "question": "Ở Massachusetts, cần bao nhiêu giờ tập lái có giám sát với giấy phép học lái?",
   "optionA": "Tổng cộng 20 giờ tập lái",
   "optionB": "Tổng cộng 50 giờ tập lái",
-  "optionC": "40 giờ, còn 30 giờ nếu có học lái",
+  "optionC": "40 giờ, 30 giờ nếu học kỹ năng lái",
   "optionD": "Tổng cộng 60 giờ tập lái",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người có giấy phép học lái phải hoàn thành 40 giờ tập lái có giám sát, giảm xuống còn 30 giờ nếu người nộp đơn đã hoàn thành một chương trình giáo dục lái xe."
+  "explanation": "Massachusetts yêu cầu 40 giờ lái xe có giám sát, giảm còn 30 giờ nếu thiếu niên hoàn thành một chương trình phát triển kỹ năng lái xe được chấp thuận."
  },
  {
   "type": "State-Specific",
@@ -11862,14 +11862,14 @@
   "state": "MA",
   "questionId": "MA-008",
   "category": "gdlLicensing",
-  "question": "Ở độ tuổi nào các quy định về hành khách được gỡ bỏ đối với người giữ JOL ở Massachusetts?",
-  "optionA": "16 tuổi rưỡi",
-  "optionB": "18 tuổi",
-  "optionC": "Khi hoàn thành khóa học lái xe",
-  "optionD": "17 tuổi",
+  "question": "Quy định hạn chế hành khách kéo dài bao lâu đối với người mới có JOL ở Massachusetts?",
+  "optionA": "3 tháng đầu",
+  "optionB": "12 tháng đầu",
+  "optionC": "Đến khi học xong khóa lái xe",
+  "optionD": "6 tháng đầu",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Các quy định về hành khách đối với người giữ JOL được gỡ bỏ khi 17 tuổi."
+  "explanation": "Trong 6 tháng đầu có bằng lái thiếu niên (JOL), tài xế không được chở hành khách dưới 18 tuổi ngoài người thân trong gia đình trừ khi có một người lớn đủ điều kiện từ 21 tuổi trở lên ngồi ghế trước."
  },
  {
   "type": "State-Specific",
@@ -12219,7 +12219,7 @@
   "optionD": "45 phút",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Đèn pha phải được sử dụng bắt đầu từ 30 phút trước khi mặt trời mọc và kéo dài đến 30 phút sau khi mặt trời lặn."
+  "explanation": "Phải bật đèn pha từ 30 phút sau khi mặt trời lặn đến 30 phút trước khi mặt trời mọc."
  },
  {
   "type": "State-Specific",
@@ -12311,13 +12311,13 @@
   "questionId": "MA-040",
   "category": "stateUnique",
   "question": "Bạn phải mang theo những giấy tờ nào khi điều khiển xe ở Massachusetts?",
-  "optionA": "Bằng lái, giấy đăng ký và bằng chứng bảo hiểm",
+  "optionA": "Bằng lái và giấy đăng ký",
   "optionB": "Chỉ bằng lái của bạn",
-  "optionC": "Chỉ bằng lái và giấy đăng ký",
+  "optionC": "Bằng lái, giấy đăng ký và thẻ bảo hiểm",
   "optionD": "Không cần giấy tờ nào",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Người lái phải mang theo bằng lái, giấy đăng ký xe và bằng chứng bảo hiểm khi điều khiển xe cơ giới."
+  "explanation": "Luật Massachusetts yêu cầu bạn mang theo bằng lái và giấy chứng nhận đăng ký xe khi lái xe."
  },
  {
   "type": "State-Specific",
@@ -12429,7 +12429,7 @@
   "optionD": "Khi có người lớn có bằng lái từ 21 tuổi trở lên đi cùng",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Tài xế có bằng lái tạm thời dưới 18 tuổi chỉ được lái xe trong giờ giới nghiêm khi có người lớn có bằng lái từ 21 tuổi trở lên đi cùng."
+  "explanation": "Từ nửa đêm đến 5 giờ sáng, tài xế có bằng lái tạm thời dưới 18 tuổi được lái khi có người có bằng lái từ 21 tuổi trở lên với 3 năm kinh nghiệm đi cùng, hoặc khi đi đến hay về từ nơi làm việc, hoạt động của trường, công việc tình nguyện hoặc sự kiện thể thao."
  },
  {
   "type": "State-Specific",
@@ -12592,12 +12592,12 @@
   "category": "duiStateLaws",
   "question": "Tại Maryland, giới hạn nồng độ cồn hợp pháp đối với tài xế dưới 21 tuổi là bao nhiêu?",
   "optionA": "Mức 0.08% BAC",
-  "optionB": "Mức 0.02% BAC",
+  "optionB": "Mức 0.05% BAC",
   "optionC": "Mức 0.04% BAC",
-  "optionD": "Bất kỳ mức cồn nào phát hiện được",
+  "optionD": "Mức 0.02% BAC",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Tài xế dưới 21 tuổi không được có bất kỳ lượng cồn nào phát hiện được trong người khi điều khiển xe."
+  "explanation": "Bằng lái Maryland của tài xế dưới 21 tuổi có hạn chế về rượu bia: lái xe với nồng độ cồn trong máu từ 0.02% trở lên là vi phạm."
  },
  {
   "type": "State-Specific",
@@ -13682,14 +13682,14 @@
   "state": "MI",
   "questionId": "MI-018",
   "category": "stateUnique",
-  "question": "Giới hạn tốc độ tối đa trên đường cao tốc Michigan đối với xe chở khách là bao nhiêu?",
+  "question": "Giới hạn tốc độ cho xe chở khách trên đường cao tốc Michigan ở nơi không có biển báo giới hạn khác là bao nhiêu?",
   "optionA": "55 mph",
   "optionB": "60 mph",
   "optionC": "65 mph",
   "optionD": "70 mph",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Giới hạn tốc độ tối đa trên đường cao tốc đối với xe chở khách là 70 mph."
+  "explanation": "Giới hạn mặc định trên đường cao tốc Michigan là 70 mph. Một số đường cao tốc nông thôn được chỉ định có biển báo 75 mph."
  },
  {
   "type": "State-Specific",
@@ -13978,12 +13978,12 @@
   "category": "stateUnique",
   "question": "Giới hạn tốc độ tối đa đối với xe tải trên một số đường cao tốc Michigan là bao nhiêu?",
   "optionA": "55 mph",
-  "optionB": "60 mph",
-  "optionC": "65 mph",
+  "optionB": "65 mph",
+  "optionC": "60 mph",
   "optionD": "70 mph",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Xe tải bị giới hạn tốc độ tối đa 60 mph trên một số đường cao tốc nơi xe chở khách được phép lên đến 70 mph."
+  "explanation": "Trên đường cao tốc Michigan có biển báo trên 65 mph, xe tải từ 10.000 pound trở lên và xe buýt trường học không được vượt quá 65 mph."
  },
  {
   "type": "State-Specific",
@@ -14048,12 +14048,12 @@
   "category": "gdlLicensing",
   "question": "Tại Minnesota, cần bao nhiêu giờ lái xe có giám sát để chuyển từ giấy phép học lái lên bằng lái tạm thời?",
   "optionA": "Tổng cộng 20 giờ thực hành",
-  "optionB": "Tổng cộng 50 giờ thực hành",
+  "optionB": "Tổng cộng 30 giờ thực hành",
   "optionC": "Chỉ cần thi lái xe trên đường",
-  "optionD": "Tổng cộng 30 giờ, trong đó 10 giờ vào ban đêm",
+  "optionD": "Tổng cộng 50 giờ, 15 giờ ban đêm",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Chuyển từ giấy phép học lái lên bằng lái tạm thời cần tổng cộng 30 giờ thực hành có giám sát, bao gồm ít nhất 10 giờ vào ban đêm."
+  "explanation": "Minnesota yêu cầu ít nhất 50 giờ lái xe có giám sát, trong đó 15 giờ vào ban đêm, hoặc 40 giờ nếu cha mẹ hoàn thành lớp học bổ sung dành cho phụ huynh."
  },
  {
   "type": "State-Specific",
@@ -14088,14 +14088,14 @@
   "state": "MN",
   "questionId": "MN-007",
   "category": "gdlLicensing",
-  "question": "Tại Minnesota, người giữ bằng lái tạm thời được phép sử dụng điện thoại như thế nào?",
-  "optionA": "Chỉ được dùng lệnh giọng nói",
-  "optionB": "Chỉ được gọi điện rảnh tay (hands-free)",
-  "optionC": "Chỉ định vị GPS và nghe nhạc",
-  "optionD": "Chỉ được gọi khẩn cấp",
+  "question": "Khi nào người giữ bằng lái tạm thời dưới 18 tuổi ở Minnesota được gọi điện khi đang lái xe?",
+  "optionA": "Bất cứ lúc nào, bằng lệnh giọng nói",
+  "optionB": "Bất cứ lúc nào, với thiết bị rảnh tay",
+  "optionC": "Chỉ để gọi 911 khi khẩn cấp",
+  "optionD": "Chỉ khi đang đi trên xa lộ",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người giữ bằng lái tạm thời chỉ được sử dụng điện thoại để định vị GPS và nghe nhạc trong lúc lái xe."
+  "explanation": "Tài xế dưới 18 tuổi không được gọi hoặc nghe điện thoại khi lái xe, kể cả rảnh tay, trừ khi gọi 911 trong trường hợp khẩn cấp. Được dùng GPS và nghe nhạc ở chế độ rảnh tay."
  },
  {
   "type": "State-Specific",
@@ -14104,12 +14104,12 @@
   "category": "gdlLicensing",
   "question": "Tại Minnesota, bạn có thể lấy bằng lái đầy đủ không hạn chế ở độ tuổi nào?",
   "optionA": "16 tuổi",
-  "optionB": "17 tuổi",
+  "optionB": "18 tuổi",
   "optionC": "19 tuổi",
-  "optionD": "18 tuổi",
+  "optionD": "17 tuổi",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Có thể lấy bằng lái đầy đủ không hạn chế ở tuổi 18."
+  "explanation": "Sau khi giữ bằng lái tạm thời 12 tháng mà không có vi phạm liên quan đến tai nạn hoặc rượu bia, tài xế Minnesota có thể lấy bằng lái đầy đủ, sớm nhất là 17 tuổi."
  },
  {
   "type": "State-Specific",
@@ -14218,10 +14218,10 @@
   "optionA": "Chỉ gọi cầm tay",
   "optionB": "Chỉ nhắn tin",
   "optionC": "Chỉ quay video",
-  "optionD": "Tất cả trừ định vị GPS và nghe nhạc",
+  "optionD": "Gọi điện, kể cả rảnh tay, trừ gọi 911",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Tài xế dưới 18 tuổi bị cấm mọi hình thức sử dụng điện thoại trừ định vị GPS và nghe nhạc."
+  "explanation": "Tài xế dưới 18 tuổi không được gọi hoặc nghe điện thoại khi lái xe, dù cầm tay hay rảnh tay, trừ khi gọi 911 trong trường hợp khẩn cấp. Được dùng GPS và nghe nhạc ở chế độ rảnh tay."
  },
  {
   "type": "State-Specific",
@@ -15155,11 +15155,11 @@
   "question": "Người 15 tuổi phải giữ giấy phép tập lái bao lâu trước khi xin bằng lái trung cấp ở Mississippi?",
   "optionA": "Ít nhất 3 tháng",
   "optionB": "Ít nhất 9 tháng",
-  "optionC": "Ít nhất 6 tháng",
-  "optionD": "Ít nhất 1 năm",
+  "optionC": "Ít nhất 1 năm",
+  "optionD": "Ít nhất 6 tháng",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người 15 tuổi phải giữ giấy phép tập lái ít nhất 6 tháng trước khi xin bằng lái trung cấp."
+  "explanation": "Thiếu niên ở Mississippi phải giữ giấy phép tập lái 12 tháng (hoặc đến khi đủ 17 tuổi) trước khi lên loại bằng lái tiếp theo."
  },
  {
   "type": "State-Specific",

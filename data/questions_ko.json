@@ -9175,13 +9175,13 @@
   "questionId": "IL-016",
   "category": "cellPhone",
   "question": "일리노이 공사 구역과 학교 구역에서 전자기기와 관련해 금지되는 것은 무엇입니까?",
-  "optionA": "손에 든 기기 사용만",
+  "optionA": "핸즈프리라도 모든 기기 사용",
   "optionB": "문자와 메시지만",
   "optionC": "영상 통화만",
-  "optionD": "핸즈프리라도 모든 기기 사용",
+  "optionD": "손에 든 기기 사용",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "일리노이는 핸즈프리 기술을 사용하는지와 상관없이 공사 구역과 학교 구역에서 전자기기 사용을 일절 금지합니다."
+  "explanation": "일리노이 학교 구역과 공사 구역에서는 휴대폰을 손에 들고 사용하는 것이 금지되지만 핸즈프리나 음성 조작은 허용됩니다. 손에 든 사용은 주 전역에서도 금지됩니다."
  },
  {
   "type": "State-Specific",
@@ -10252,28 +10252,28 @@
   "state": "KS",
   "questionId": "KS-013",
   "category": "cellPhone",
-  "question": "캔자스 법은 운전 중 휴대폰 사용에 대해 무엇을 요구합니까?",
-  "optionA": "핸즈프리 조작만",
-  "optionB": "모든 휴대폰 사용 전면 금지",
-  "optionC": "운전 중 문자 허용",
-  "optionD": "성인 운전자에게는 제한 없음",
+  "question": "캔자스 법이 모든 운전자에게 금지하는 휴대폰 사용은 무엇입니까?",
+  "optionA": "운전 중 문자 메시지",
+  "optionB": "모든 전화 통화",
+  "optionC": "GPS 앱 사용",
+  "optionD": "음악 듣기",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "운전자는 운전 중 휴대폰을 사용할 때 핸즈프리 방식만 사용해야 합니다."
+  "explanation": "캔자스는 모든 운전자가 운전 중 문자 메시지를 작성, 전송하거나 읽는 것을 금지합니다. 성인은 통화할 수 있지만 운영 중인 학교 구역과 공사 구역에서는 휴대폰을 손에 들 수 없습니다."
  },
  {
   "type": "State-Specific",
   "state": "KS",
   "questionId": "KS-014",
   "category": "cellPhone",
-  "question": "캔자스 핸즈프리 법에 따라 성인 운전자에게 허용되는 휴대폰 사용은 무엇입니까?",
-  "optionA": "손에 들고 하는 통화만 허용",
-  "optionB": "음성 명령과 거치대",
-  "optionC": "휴대폰 사용이 전혀 허용되지 않음",
-  "optionD": "음성 문자만 허용",
+  "question": "캔자스에서 성인 운전자에게 합법적인 휴대폰 사용은 무엇입니까?",
+  "optionA": "문자 메시지 읽기",
+  "optionB": "전화 통화하기",
+  "optionC": "문자 메시지 작성",
+  "optionD": "이메일 보내기",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "성인 운전자는 운전 중 음성 명령과 휴대폰 거치대를 사용할 수 있습니다."
+  "explanation": "캔자스는 모든 운전자의 문자 및 기타 글 메시지를 금지하지만 성인은 전화 통화를 할 수 있습니다. 운영 중인 학교 구역과 공사 구역에서는 휴대폰을 손에 들 수 없습니다."
  },
  {
   "type": "State-Specific",
@@ -10308,14 +10308,14 @@
   "state": "KS",
   "questionId": "KS-017",
   "category": "cellPhone",
-  "question": "캔자스에서 핸즈프리 장비 없이 운전 중 휴대폰을 합법적으로 사용할 수 있는 때는 언제입니까?",
+  "question": "캔자스 교습 면허 소지자는 언제 운전 중 휴대폰을 사용할 수 있습니까?",
   "optionA": "응급 상황이나 범죄를 신고할 때",
   "optionB": "어떤 상황에서도 절대 안 됨",
   "optionC": "주차장에 주차했을 때만",
   "optionD": "주간 운전 시간대에만",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "핸즈프리 장비 없이 휴대폰을 사용하는 것은 응급 상황이나 범죄를 신고할 때만 허용됩니다."
+  "explanation": "캔자스 교습 면허 소지자는 불법 행위를 신고하거나 긴급 도움을 요청할 때를 제외하고 운전 중 휴대폰을 사용할 수 없습니다."
  },
  {
   "type": "State-Specific",
@@ -10323,13 +10323,13 @@
   "questionId": "KS-018",
   "category": "stateUnique",
   "question": "캔자스 법에 따라 안전벨트를 착용해야 하는 사람은 누구입니까?",
-  "optionA": "차량 탑승자 전원, 항상",
+  "optionA": "운전자와 앞좌석 승객 전원",
   "optionB": "차량의 운전자만",
-  "optionC": "운전자와 앞좌석 승객 전원",
+  "optionC": "차량 탑승자 전원, 항상",
   "optionD": "만 18세 미만 승객만",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "운전자와 앞좌석 승객 전원은 안전벨트를 착용해야 합니다."
+  "explanation": "캔자스는 만 14세 이상 탑승자 전원이 모든 좌석에서 안전벨트를 착용하도록 요구하며, 그보다 어린 아이는 어린이 보호 장치나 안전벨트를 사용해야 합니다."
  },
  {
   "type": "State-Specific",
@@ -11596,14 +11596,14 @@
   "state": "LA",
   "questionId": "LA-029",
   "category": "stateUnique",
-  "question": "루이지애나에서 어린이 안전 시트에 고정되어야 하는 사람은 누구입니까?",
-  "optionA": "만 4세 미만 어린이만",
-  "optionB": "만 6세 미만이거나 체중 60파운드 미만인 어린이 전원",
-  "optionC": "뒷좌석의 만 8세 미만 어린이",
-  "optionD": "만 1세 미만 영아만",
+  "question": "루이지애나에서 몇 세 미만 어린이는 뒤보기 카시트에 타야 합니까?",
+  "optionA": "만 1세",
+  "optionB": "만 2세",
+  "optionC": "만 4세",
+  "optionD": "만 6세",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "만 6세 미만이거나 체중 60파운드 미만인 어린이 전원은 승인된 어린이 안전 시트에 올바르게 고정해야 합니다."
+  "explanation": "루이지애나 법은 만 2세 미만 어린이가 뒤보기 어린이 보호 장치에 타도록 요구합니다. 더 큰 아이는 하네스가 있는 앞보기 시트로, 그다음 부스터 시트로 옮깁니다."
  },
  {
   "type": "State-Specific",
@@ -11795,11 +11795,11 @@
   "question": "매사추세츠에서 임시 면허로 보호자 동반 연습 운전이 몇 시간 필요합니까?",
   "optionA": "총 연습 20시간",
   "optionB": "총 연습 50시간",
-  "optionC": "40시간, 운전 교육 이수 시 30시간",
+  "optionC": "40시간, 기술 프로그램 이수 시 30시간",
   "optionD": "총 연습 60시간",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "임시 면허 소지자는 보호자 동반 연습 운전 40시간을 이수해야 하며, 신청자가 운전 교육 프로그램을 이수했으면 30시간으로 줄어듭니다."
+  "explanation": "매사추세츠는 보호자 동반 운전 40시간을 요구하며, 승인된 운전 기술 개발 프로그램을 이수하면 30시간으로 줄어듭니다."
  },
  {
   "type": "State-Specific",
@@ -11862,14 +11862,14 @@
   "state": "MA",
   "questionId": "MA-008",
   "category": "gdlLicensing",
-  "question": "매사추세츠에서 JOL 소지자의 승객 제한은 몇 세에 해제됩니까?",
-  "optionA": "16.5세",
-  "optionB": "18세",
-  "optionC": "운전 교육 이수 시",
-  "optionD": "17세",
+  "question": "매사추세츠에서 새 JOL 소지자의 승객 제한은 얼마 동안 적용됩니까?",
+  "optionA": "처음 3개월",
+  "optionB": "처음 12개월",
+  "optionC": "운전 교육을 마칠 때까지",
+  "optionD": "처음 6개월",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "JOL 소지자의 승객 제한은 만 17세에 해제됩니다."
+  "explanation": "JOL을 받은 후 처음 6개월 동안은 만 21세 이상의 자격 있는 성인이 앞좌석에 타지 않는 한 직계 가족이 아닌 18세 미만 승객을 태울 수 없습니다."
  },
  {
   "type": "State-Specific",
@@ -12219,7 +12219,7 @@
   "optionD": "45분",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "전조등은 일출 30분 전부터 일몰 30분 후까지 사용해야 합니다."
+  "explanation": "전조등은 일몰 30분 후부터 일출 30분 전까지 켜야 합니다."
  },
  {
   "type": "State-Specific",
@@ -12311,13 +12311,13 @@
   "questionId": "MA-040",
   "category": "stateUnique",
   "question": "매사추세츠에서 차량을 운전하는 동안 어떤 서류를 소지해야 합니까?",
-  "optionA": "면허증, 등록증, 보험 증명서",
+  "optionA": "면허증과 등록증",
   "optionB": "운전면허증만",
-  "optionC": "면허증과 등록증만",
+  "optionC": "면허증, 등록증, 보험 카드",
   "optionD": "서류가 필요하지 않음",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "운전자는 자동차를 운전하는 동안 운전면허증, 차량 등록증, 보험 증명서를 소지해야 합니다."
+  "explanation": "매사추세츠 법은 운전할 때 운전면허증과 차량 등록증을 소지하도록 요구합니다."
  },
  {
   "type": "State-Specific",
@@ -12429,7 +12429,7 @@
   "optionD": "만 21세 이상 면허 소지 성인과 함께",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "18세 미만 조건부 운전자는 만 21세 이상 면허 소지 성인이 동승할 때만 통금 시간에 운전할 수 있습니다."
+  "explanation": "자정부터 오전 5시까지 18세 미만 조건부 운전자는 운전 경력 3년 이상인 만 21세 이상 면허 소지자와 함께이거나, 직장, 학교 활동, 자원봉사 또는 운동 경기를 오갈 때 운전할 수 있습니다."
  },
  {
   "type": "State-Specific",
@@ -12592,12 +12592,12 @@
   "category": "duiStateLaws",
   "question": "메릴랜드에서 21세 미만 운전자의 법적 음주 한도는 얼마입니까?",
   "optionA": "0.08% BAC 수치",
-  "optionB": "0.02% BAC 수치",
+  "optionB": "0.05% BAC 수치",
   "optionC": "0.04% BAC 수치",
-  "optionD": "검출 가능한 모든 알코올",
+  "optionD": "0.02% BAC 수치",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "21세 미만 운전자는 차량을 운전하는 동안 검출 가능한 양의 알코올을 체내에 보유할 수 없습니다."
+  "explanation": "21세 미만 운전자의 메릴랜드 면허에는 음주 제한이 있어 혈중알코올농도 0.02% 이상으로 운전하면 위반입니다."
  },
  {
   "type": "State-Specific",
@@ -13682,14 +13682,14 @@
   "state": "MI",
   "questionId": "MI-018",
   "category": "stateUnique",
-  "question": "미시간 고속도로에서 승용차의 최고 제한속도는 얼마입니까?",
+  "question": "다른 제한속도가 표시되지 않은 미시간 고속도로에서 승용차의 제한속도는 얼마입니까?",
   "optionA": "55mph",
   "optionB": "60mph",
   "optionC": "65mph",
   "optionD": "70mph",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "승용차의 고속도로 최고 제한속도는 70mph입니다."
+  "explanation": "미시간 고속도로의 기본 제한속도는 70mph입니다. 일부 지정된 지방 고속도로는 75mph로 표시되어 있습니다."
  },
  {
   "type": "State-Specific",
@@ -13978,12 +13978,12 @@
   "category": "stateUnique",
   "question": "미시간의 일부 고속도로에서 트럭의 최고 제한속도는 얼마입니까?",
   "optionA": "55mph",
-  "optionB": "60mph",
-  "optionC": "65mph",
+  "optionB": "65mph",
+  "optionC": "60mph",
   "optionD": "70mph",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "승용차가 최대 70mph까지 허용되는 일부 고속도로에서 트럭의 최고 속도는 60mph로 제한됩니다."
+  "explanation": "제한속도가 65mph를 넘는 미시간 고속도로에서 10,000파운드 이상의 트럭과 스쿨버스는 65mph를 넘을 수 없습니다."
  },
  {
   "type": "State-Specific",
@@ -14048,12 +14048,12 @@
   "category": "gdlLicensing",
   "question": "미네소타에서 교습 면허에서 조건부 면허로 올라가려면 보호자 동반 운전이 몇 시간 필요합니까?",
   "optionA": "총 20시간 연습",
-  "optionB": "총 연습 시간 50시간",
+  "optionB": "총 연습 30시간",
   "optionC": "도로주행 시험만 필요",
-  "optionD": "총 30시간, 야간 10시간",
+  "optionD": "총 50시간, 야간 15시간",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "교습 면허에서 조건부 면허로 올라가려면 야간 최소 10시간을 포함해 총 30시간의 보호자 동반 연습이 필요합니다."
+  "explanation": "미네소타는 야간 15시간을 포함해 최소 50시간의 보호자 동반 운전을 요구하며, 부모가 보충 부모 교육을 이수하면 40시간입니다."
  },
  {
   "type": "State-Specific",
@@ -14088,14 +14088,14 @@
   "state": "MN",
   "questionId": "MN-007",
   "category": "gdlLicensing",
-  "question": "미네소타에서 조건부 면허 소지자에게 허용되는 휴대폰 사용은 무엇입니까?",
-  "optionA": "음성 명령만 허용",
-  "optionB": "핸즈프리 통화만",
-  "optionC": "GPS 내비게이션과 음악만",
-  "optionD": "긴급 통화만 허용",
+  "question": "미네소타에서 18세 미만 조건부 면허 소지자는 언제 운전 중 전화를 걸 수 있습니까?",
+  "optionA": "언제든지, 음성 명령으로",
+  "optionB": "언제든지, 핸즈프리 기기로",
+  "optionC": "응급 상황에서 911에 걸 때만",
+  "optionD": "고속도로에 있을 때만",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "조건부 면허 소지자는 운전 중 휴대폰을 GPS 내비게이션과 음악에만 사용할 수 있습니다."
+  "explanation": "18세 미만 운전자는 응급 상황에서 911에 거는 경우를 제외하고 핸즈프리라도 운전 중 전화를 걸거나 받을 수 없습니다. 핸즈프리 방식의 GPS와 음악은 허용됩니다."
  },
  {
   "type": "State-Specific",
@@ -14104,12 +14104,12 @@
   "category": "gdlLicensing",
   "question": "미네소타에서 제한 없는 정식 면허는 몇 세에 받을 수 있습니까?",
   "optionA": "16세",
-  "optionB": "17세",
+  "optionB": "18세",
   "optionC": "19세",
-  "optionD": "18세",
+  "optionD": "17세",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "제한 없는 정식 운전면허는 만 18세에 취득할 수 있습니다."
+  "explanation": "조건부 면허를 12개월간 사고 관련 또는 음주 위반 없이 보유하면 미네소타 운전자는 빠르면 만 17세에 정식 면허를 받을 수 있습니다."
  },
  {
   "type": "State-Specific",
@@ -14218,10 +14218,10 @@
   "optionA": "손에 들고 하는 통화만",
   "optionB": "문자 메시지만",
   "optionC": "영상 촬영만",
-  "optionD": "GPS와 음악을 제외한 전부",
+  "optionD": "핸즈프리 포함 모든 통화, 911 제외",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "18세 미만 운전자는 GPS 내비게이션과 음악을 제외한 모든 휴대폰 사용이 금지됩니다."
+  "explanation": "18세 미만 운전자는 응급 상황에서 911에 거는 경우를 제외하고 손에 들든 핸즈프리든 운전 중 전화를 걸거나 받을 수 없습니다. 핸즈프리 방식의 GPS와 음악은 허용됩니다."
  },
  {
   "type": "State-Specific",
@@ -15155,11 +15155,11 @@
   "question": "미시시피에서 15세는 중간 면허를 신청하기 전에 임시 면허를 얼마나 보유해야 합니까?",
   "optionA": "최소 3개월",
   "optionB": "최소 9개월",
-  "optionC": "최소 6개월",
-  "optionD": "최소 1년",
+  "optionC": "최소 1년",
+  "optionD": "최소 6개월",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "15세는 중간 면허를 신청하기 전에 임시 면허를 최소 6개월간 보유해야 합니다."
+  "explanation": "미시시피의 청소년은 다음 단계 면허로 넘어가기 전에 임시 면허를 12개월(또는 만 17세가 될 때까지) 보유해야 합니다."
  },
  {
   "type": "State-Specific",

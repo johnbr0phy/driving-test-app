@@ -9175,13 +9175,13 @@
     "questionId": "IL-016",
     "category": "cellPhone",
     "question": "What is prohibited in Illinois construction zones and school zones regarding electronic devices?",
-    "optionA": "Handheld device use only",
+    "optionA": "Any device use, even hands-free",
     "optionB": "Texting and messaging only",
     "optionC": "Video calling only",
-    "optionD": "Any device use, even hands-free",
+    "optionD": "Handheld device use",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Illinois prohibits any use of electronic devices in construction zones and school zones, regardless of whether hands-free technology is being used."
+    "explanation": "In Illinois school and construction zones, handheld phone use is banned, but hands-free or voice-operated use is allowed. Handheld use is also banned statewide."
   },
   {
     "type": "State-Specific",
@@ -10252,28 +10252,28 @@
     "state": "KS",
     "questionId": "KS-013",
     "category": "cellPhone",
-    "question": "What does Kansas law require for cell phone use while driving?",
-    "optionA": "Hands-free operation only",
-    "optionB": "Complete ban on all phone use",
-    "optionC": "Texting allowed while driving",
-    "optionD": "No restrictions for adult drivers",
+    "question": "What cell phone use does Kansas law ban for all drivers?",
+    "optionA": "Texting while driving",
+    "optionB": "Making any phone call",
+    "optionC": "Using a GPS app",
+    "optionD": "Listening to music",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Drivers must use hands-free operation only when using a cell phone while driving."
+    "explanation": "Kansas bans all drivers from writing, sending or reading text messages while driving. Adults may still make calls, but holding a phone is banned in active school and construction zones."
   },
   {
     "type": "State-Specific",
     "state": "KS",
     "questionId": "KS-014",
     "category": "cellPhone",
-    "question": "What phone use is allowed for adult drivers under Kansas hands-free law?",
-    "optionA": "Handheld calls only allowed",
-    "optionB": "Voice commands and mounts",
-    "optionC": "No phone use permitted ever",
-    "optionD": "Voice-to-text only permitted",
+    "question": "Which phone use is legal for an adult driver in Kansas?",
+    "optionA": "Reading a text message",
+    "optionB": "Making a phone call",
+    "optionC": "Writing a text message",
+    "optionD": "Sending an email",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Adult drivers may use voice commands and phone mounts while driving."
+    "explanation": "Kansas bans texting and other written messages for all drivers, but adults may make phone calls. Holding a phone is banned in active school and construction zones."
   },
   {
     "type": "State-Specific",
@@ -10308,14 +10308,14 @@
     "state": "KS",
     "questionId": "KS-017",
     "category": "cellPhone",
-    "question": "When can you legally use your phone while driving in Kansas without hands-free equipment?",
+    "question": "When may a Kansas instruction permit holder use a phone while driving?",
     "optionA": "To report emergencies or crime",
     "optionB": "Never under any circumstances at all",
     "optionC": "Only when parked in parking lot",
     "optionD": "During daytime driving hours only",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Phone use without hands-free equipment is permitted only to report emergencies or crime."
+    "explanation": "A Kansas permit holder may not use a phone while driving except to report illegal activity or call for emergency help."
   },
   {
     "type": "State-Specific",
@@ -10323,13 +10323,13 @@
     "questionId": "KS-018",
     "category": "stateUnique",
     "question": "Who is required to wear a seat belt under Kansas law?",
-    "optionA": "All vehicle occupants at all times",
+    "optionA": "Driver and all front-seat passengers",
     "optionB": "Only the driver of the vehicle",
-    "optionC": "Driver and all front-seat passengers",
+    "optionC": "All vehicle occupants at all times",
     "optionD": "Only passengers under age 18",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The driver and all front-seat passengers are required to wear a seat belt."
+    "explanation": "Kansas requires every occupant 14 or older to wear a seat belt in any seat, and younger children must be in a child restraint or belt."
   },
   {
     "type": "State-Specific",
@@ -11596,14 +11596,14 @@
     "state": "LA",
     "questionId": "LA-029",
     "category": "stateUnique",
-    "question": "Who must be restrained in a child safety seat in Louisiana?",
-    "optionA": "Children under age 4 only",
-    "optionB": "All children under age 6 or weighing less than 60 pounds",
-    "optionC": "Children under age 8 in the back seat",
-    "optionD": "Only infants under 1 year old",
+    "question": "In Louisiana, a child younger than what age must ride in a rear-facing car seat?",
+    "optionA": "1 year old",
+    "optionB": "2 years old",
+    "optionC": "4 years old",
+    "optionD": "6 years old",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "All children under age 6 or weighing less than 60 pounds must be properly secured in an approved child safety seat."
+    "explanation": "Louisiana law requires a child younger than 2 to ride in a rear-facing child restraint. Older children move to a forward-facing harness seat, then a booster."
   },
   {
     "type": "State-Specific",
@@ -11795,11 +11795,11 @@
     "question": "How many hours of supervised practice driving are required with a learner's permit in Massachusetts?",
     "optionA": "20 hours of practice total",
     "optionB": "50 hours of practice total",
-    "optionC": "40 hours, 30 with driver ed",
+    "optionC": "40 hours, 30 with skills program",
     "optionD": "60 hours of practice total",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Learner's permit holders must complete 40 hours of supervised practice driving, reduced to 30 hours if the applicant has completed a driver education program."
+    "explanation": "Massachusetts requires 40 hours of supervised driving, reduced to 30 if the teen completes an approved driver skills development program."
   },
   {
     "type": "State-Specific",
@@ -11862,14 +11862,14 @@
     "state": "MA",
     "questionId": "MA-008",
     "category": "gdlLicensing",
-    "question": "At what age do passenger restrictions lift for JOL holders in Massachusetts?",
-    "optionA": "16 and a half",
-    "optionB": "18 years old",
-    "optionC": "Upon completion of driver's education",
-    "optionD": "17 years old",
+    "question": "How long does the passenger restriction last for a new JOL holder in Massachusetts?",
+    "optionA": "First 3 months",
+    "optionB": "First 12 months",
+    "optionC": "Until driver's education is done",
+    "optionD": "First 6 months",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Passenger restrictions for JOL holders lift at age 17."
+    "explanation": "For the first 6 months of a junior operator license, the driver may not carry passengers under 18 other than immediate family unless a qualified adult 21 or older is in the front seat."
   },
   {
     "type": "State-Specific",
@@ -12219,7 +12219,7 @@
     "optionD": "45 minutes",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Headlights must be used beginning 30 minutes before sunrise and continuing until 30 minutes after sunset."
+    "explanation": "Headlights must be on from 30 minutes after sunset until 30 minutes before sunrise."
   },
   {
     "type": "State-Specific",
@@ -12311,13 +12311,13 @@
     "questionId": "MA-040",
     "category": "stateUnique",
     "question": "What documents must you carry while operating a vehicle in Massachusetts?",
-    "optionA": "License, registration, and proof of insurance",
+    "optionA": "License and registration",
     "optionB": "Only your driver's license",
-    "optionC": "License and registration only",
+    "optionC": "License, registration and insurance card",
     "optionD": "No documents are required",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Drivers must carry their driver's license, vehicle registration, and proof of insurance while operating a motor vehicle."
+    "explanation": "Massachusetts law requires you to carry your driver's license and the vehicle's registration certificate when driving."
   },
   {
     "type": "State-Specific",
@@ -12429,7 +12429,7 @@
     "optionD": "With licensed adult 21+",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A provisional driver under 18 may drive during curfew hours only when accompanied by a licensed adult who is 21 or older."
+    "explanation": "From midnight to 5 a.m., a provisional driver under 18 may drive with a licensed driver 21 or older with 3 years' experience, or when going to or from work, a school activity, volunteer work or an athletic event."
   },
   {
     "type": "State-Specific",
@@ -12592,12 +12592,12 @@
     "category": "duiStateLaws",
     "question": "What is the legal alcohol limit for drivers under 21 in Maryland?",
     "optionA": "0.08% BAC",
-    "optionB": "0.02% BAC",
+    "optionB": "0.05% BAC",
     "optionC": "0.04% BAC",
-    "optionD": "Any detectable alcohol",
+    "optionD": "0.02% BAC",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Drivers under 21 may not have any detectable amount of alcohol in their system while operating a vehicle."
+    "explanation": "Maryland licenses for drivers under 21 carry an alcohol restriction: driving with a BAC of 0.02% or more violates it."
   },
   {
     "type": "State-Specific",
@@ -13682,14 +13682,14 @@
     "state": "MI",
     "questionId": "MI-018",
     "category": "stateUnique",
-    "question": "What is the maximum speed limit on Michigan freeways for passenger cars?",
+    "question": "What is the speed limit for passenger cars on Michigan freeways where no other limit is posted?",
     "optionA": "55 mph",
     "optionB": "60 mph",
     "optionC": "65 mph",
     "optionD": "70 mph",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The maximum freeway speed limit for passenger cars is 70 mph."
+    "explanation": "Michigan's default freeway limit is 70 mph. Some designated rural freeways are posted at 75 mph."
   },
   {
     "type": "State-Specific",
@@ -13978,12 +13978,12 @@
     "category": "stateUnique",
     "question": "What is the maximum speed limit for trucks on certain Michigan freeways?",
     "optionA": "55 mph",
-    "optionB": "60 mph",
-    "optionC": "65 mph",
+    "optionB": "65 mph",
+    "optionC": "60 mph",
     "optionD": "70 mph",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Trucks are limited to a maximum speed of 60 mph on certain freeways where passenger cars are allowed up to 70 mph."
+    "explanation": "On Michigan freeways posted above 65 mph, trucks of 10,000 pounds or more and school buses may not exceed 65 mph."
   },
   {
     "type": "State-Specific",
@@ -14048,12 +14048,12 @@
     "category": "gdlLicensing",
     "question": "How many supervised driving hours are required to move from instruction permit to provisional license in Minnesota?",
     "optionA": "20 hours total practice",
-    "optionB": "50 hours total practice",
+    "optionB": "30 hours total practice",
     "optionC": "Only a road test required",
-    "optionD": "30 hrs total, 10 at night",
+    "optionD": "50 hrs total, 15 at night",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Advancing from an instruction permit to a provisional license requires 30 hours of total supervised practice, including at least 10 hours at night."
+    "explanation": "Minnesota requires at least 50 hours of supervised driving, 15 of them at night, or 40 hours if a parent completes the supplemental parent class."
   },
   {
     "type": "State-Specific",
@@ -14088,14 +14088,14 @@
     "state": "MN",
     "questionId": "MN-007",
     "category": "gdlLicensing",
-    "question": "What phone use is allowed for provisional license holders in Minnesota?",
-    "optionA": "Voice commands only allowed",
-    "optionB": "Hands-free calling only",
-    "optionC": "Only GPS navigation and music",
-    "optionD": "Emergency calls only allowed",
+    "question": "When may a Minnesota provisional license holder under 18 make a phone call while driving?",
+    "optionA": "Any time, using voice commands",
+    "optionB": "Any time, with a hands-free device",
+    "optionC": "Only to call 911 in an emergency",
+    "optionD": "Only while on a highway",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Provisional license holders may only use a phone for GPS navigation and music while driving."
+    "explanation": "Drivers under 18 may not make or answer calls while driving, even hands-free, except to call 911 in an emergency. Hands-free GPS and music are allowed."
   },
   {
     "type": "State-Specific",
@@ -14104,12 +14104,12 @@
     "category": "gdlLicensing",
     "question": "At what age can you obtain a full unrestricted license in Minnesota?",
     "optionA": "16 years old",
-    "optionB": "17 years old",
+    "optionB": "18 years old",
     "optionC": "19 years old",
-    "optionD": "18 years old",
+    "optionD": "17 years old",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A full unrestricted driver's license can be obtained at age 18."
+    "explanation": "After holding a provisional license for 12 months without a crash-related or alcohol violation, a Minnesota driver can get a full license, as early as age 17."
   },
   {
     "type": "State-Specific",
@@ -14218,10 +14218,10 @@
     "optionA": "Handheld calls only",
     "optionB": "Texting messages only",
     "optionC": "Video recording only",
-    "optionD": "All except GPS and music",
+    "optionD": "Calls, even hands-free, except 911",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Drivers under 18 are prohibited from all phone use except GPS navigation and music."
+    "explanation": "Drivers under 18 may not make or answer calls while driving, handheld or hands-free, except to call 911 in an emergency. Hands-free GPS and music are allowed."
   },
   {
     "type": "State-Specific",
@@ -15155,11 +15155,11 @@
     "question": "How long must a 15-year-old hold a learner's permit before applying for an intermediate license in Mississippi?",
     "optionA": "At least 3 months",
     "optionB": "At least 9 months",
-    "optionC": "At least 6 months",
-    "optionD": "At least 1 year",
+    "optionC": "At least 1 year",
+    "optionD": "At least 6 months",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A 15-year-old must hold a learner's permit for at least 6 months before applying for an intermediate license."
+    "explanation": "A Mississippi teen must hold a learner's permit for 12 months (or until turning 17) before moving to the next license."
   },
   {
     "type": "State-Specific",

@@ -9735,13 +9735,13 @@
     "questionId": "IL-016",
     "category": "cellPhone",
     "question": "¿Qué está prohibido en las zonas de construcción y escolares de Illinois con respecto a los dispositivos electrónicos?",
-    "optionA": "Solo dispositivos manuales prohibidos",
+    "optionA": "Cualquier uso de dispositivo, incluso manos libres",
     "optionB": "Solo mensajes de texto prohibidos",
     "optionC": "Solo videollamadas prohibidas",
-    "optionD": "Cualquier uso de dispositivo, incluso manos libres",
+    "optionD": "Uso de dispositivos en la mano",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Illinois prohíbe cualquier uso de dispositivos electrónicos en zonas de construcción y escolares, sin importar si se está utilizando tecnología de manos libres."
+    "explanation": "En las zonas escolares y de construcción de Illinois está prohibido usar el teléfono en la mano, pero se permite el uso con manos libres o por voz. El uso en la mano también está prohibido en todo el estado."
   },
   {
     "type": "State-Specific",
@@ -10812,28 +10812,28 @@
     "state": "KS",
     "questionId": "KS-013",
     "category": "cellPhone",
-    "question": "¿Qué requiere la ley de Kansas para el uso de teléfonos celulares mientras se conduce?",
-    "optionA": "Solo operación de manos libres",
-    "optionB": "Prohibición completa de todo uso del teléfono",
-    "optionC": "Mensajes de texto permitidos mientras se conduce",
-    "optionD": "Sin restricciones para conductores adultos",
+    "question": "¿Qué uso del teléfono celular prohíbe la ley de Kansas a todos los conductores?",
+    "optionA": "Enviar mensajes de texto al conducir",
+    "optionB": "Hacer cualquier llamada telefónica",
+    "optionC": "Usar una aplicación de GPS",
+    "optionD": "Escuchar música",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Kansas requiere operación de manos libres para teléfonos celulares mientras se conduce. Los conductores deben usar comandos de voz o dispositivos montados."
+    "explanation": "Kansas prohíbe a todos los conductores escribir, enviar o leer mensajes de texto mientras conducen. Los adultos aún pueden hacer llamadas, pero sostener el teléfono está prohibido en zonas escolares y de construcción activas."
   },
   {
     "type": "State-Specific",
     "state": "KS",
     "questionId": "KS-014",
     "category": "cellPhone",
-    "question": "¿Qué uso de teléfono está permitido para conductores adultos bajo la ley de manos libres de Kansas?",
-    "optionA": "Solo llamadas manuales permitidas",
-    "optionB": "Comandos de voz y soportes",
-    "optionC": "No se permite ningún uso del teléfono",
-    "optionD": "Solo voz a texto permitido",
+    "question": "¿Qué uso del teléfono es legal para un conductor adulto en Kansas?",
+    "optionA": "Leer un mensaje de texto",
+    "optionB": "Hacer una llamada telefónica",
+    "optionC": "Escribir un mensaje de texto",
+    "optionD": "Enviar un correo electrónico",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los conductores adultos pueden usar comandos de voz y soportes para teléfono mientras conducen."
+    "explanation": "Kansas prohíbe los mensajes de texto y otros mensajes escritos a todos los conductores, pero los adultos pueden hacer llamadas. Sostener el teléfono está prohibido en zonas escolares y de construcción activas."
   },
   {
     "type": "State-Specific",
@@ -10868,14 +10868,14 @@
     "state": "KS",
     "questionId": "KS-017",
     "category": "cellPhone",
-    "question": "¿Cuándo puede usar legalmente su teléfono mientras conduce en Kansas sin equipo de manos libres?",
+    "question": "¿Cuándo puede el titular de un permiso de instrucción de Kansas usar el teléfono mientras conduce?",
     "optionA": "Para reportar emergencias o crímenes",
     "optionB": "Nunca bajo ninguna circunstancia en absoluto",
     "optionC": "Solo cuando esté estacionado en estacionamiento",
     "optionD": "Solo durante horas de manejo diurnas",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "El uso del teléfono sin equipo de manos libres solo está permitido para reportar emergencias o crímenes."
+    "explanation": "El titular de un permiso de Kansas no puede usar el teléfono mientras conduce, excepto para reportar actividades ilegales o pedir ayuda de emergencia."
   },
   {
     "type": "State-Specific",
@@ -10883,13 +10883,13 @@
     "questionId": "KS-018",
     "category": "stateUnique",
     "question": "¿Quién debe usar el cinturón de seguridad según la ley de Kansas?",
-    "optionA": "Todos los ocupantes del vehículo en todo momento",
+    "optionA": "Conductor y todos los pasajeros del asiento delantero",
     "optionB": "Sólo el conductor del vehículo",
-    "optionC": "Conductor y todos los pasajeros del asiento delantero",
+    "optionC": "Todos los ocupantes del vehículo en todo momento",
     "optionD": "Sólo pasajeros menores de 18 años",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "La ley de Kansas exige el uso del cinturón de seguridad por parte del conductor y de todos los pasajeros del asiento delantero. Los niños deben estar sujetos independientemente de la posición en la que estén sentados."
+    "explanation": "Kansas exige que todo ocupante de 14 años o más use el cinturón de seguridad en cualquier asiento, y los niños menores deben ir en un sistema de retención infantil o con cinturón."
   },
   {
     "type": "State-Specific",
@@ -12156,14 +12156,14 @@
     "state": "LA",
     "questionId": "LA-029",
     "category": "stateUnique",
-    "question": "¿Quién debe estar sujeto en un asiento de seguridad para niños en Luisiana?",
-    "optionA": "Sólo niños menores de 4 años",
-    "optionB": "Todos los niños menores de 6 años o que pesen menos de 60 libras",
-    "optionC": "Niños menores de 8 años en el asiento trasero",
-    "optionD": "Sólo bebés menores de 1 año",
+    "question": "En Luisiana, ¿un niño menor de qué edad debe viajar en un asiento de seguridad orientado hacia atrás?",
+    "optionA": "1 año",
+    "optionB": "2 años",
+    "optionC": "4 años",
+    "optionD": "6 años",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La ley de Luisiana exige que los niños menores de 6 años o que pesen menos de 60 libras estén debidamente asegurados en un asiento de seguridad para niños aprobado."
+    "explanation": "La ley de Luisiana exige que un niño menor de 2 años viaje en un asiento de seguridad orientado hacia atrás. Los niños mayores pasan a un asiento orientado hacia adelante con arnés y luego a un asiento elevado."
   },
   {
     "type": "State-Specific",
@@ -12355,11 +12355,11 @@
     "question": "¿Cuántas horas de práctica de manejo supervisada se requieren con un permiso de aprendizaje en Massachusetts?",
     "optionA": "20 horas de práctica total",
     "optionB": "50 horas de práctica total",
-    "optionC": "40 horas, 30 con educación vial",
+    "optionC": "40 horas, 30 con programa de destrezas",
     "optionD": "60 horas de práctica total",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los titulares de permiso de aprendizaje deben completar 40 horas de práctica de conducción supervisada, reducidas a 30 horas si el solicitante ha completado un programa de educación vial."
+    "explanation": "Massachusetts exige 40 horas de conducción supervisada, que se reducen a 30 si el joven completa un programa aprobado de desarrollo de destrezas de manejo."
   },
   {
     "type": "State-Specific",
@@ -12422,14 +12422,14 @@
     "state": "MA",
     "questionId": "MA-008",
     "category": "gdlLicensing",
-    "question": "¿A qué edad se levantan las restricciones de pasajeros para los titulares de JOL en Massachusetts?",
-    "optionA": "16 años y medio",
-    "optionB": "18 años de edad",
-    "optionC": "Al completar la educación vial",
-    "optionD": "17 años de edad",
+    "question": "¿Cuánto dura la restricción de pasajeros para un nuevo titular de JOL en Massachusetts?",
+    "optionA": "Primeros 3 meses",
+    "optionB": "Primeros 12 meses",
+    "optionC": "Hasta terminar la educación vial",
+    "optionD": "Primeros 6 meses",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Las restricciones de pasajeros para titulares de JOL se levantan a los 17 años."
+    "explanation": "Durante los primeros 6 meses de la licencia de operador junior, el conductor no puede llevar pasajeros menores de 18 años que no sean familiares directos, a menos que un adulto calificado de 21 años o más vaya en el asiento delantero."
   },
   {
     "type": "State-Specific",
@@ -12779,7 +12779,7 @@
     "optionD": "45 minutos",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Las luces delanteras deben usarse comenzando 30 minutos antes del amanecer y continuando hasta 30 minutos después del atardecer."
+    "explanation": "Las luces delanteras deben estar encendidas desde 30 minutos después del atardecer hasta 30 minutos antes del amanecer."
   },
   {
     "type": "State-Specific",
@@ -12871,13 +12871,13 @@
     "questionId": "MA-040",
     "category": "stateUnique",
     "question": "¿Qué documentos debe llevar mientras conduce un vehículo en Massachusetts?",
-    "optionA": "Licencia, registro y prueba de seguro",
+    "optionA": "Licencia y registro",
     "optionB": "Sólo su licencia de conducir",
-    "optionC": "Licencia y registro únicamente",
+    "optionC": "Licencia, registro y tarjeta de seguro",
     "optionD": "No se requieren documentos",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Massachusetts exige que los conductores lleven consigo su licencia de conducir, el registro del vehículo y un comprobante de seguro mientras conducen un vehículo motorizado."
+    "explanation": "La ley de Massachusetts exige que lleve su licencia de conducir y el certificado de registro del vehículo cuando conduce."
   },
   {
     "type": "State-Specific",
@@ -12989,7 +12989,7 @@
     "optionD": "Con un adulto con licencia de 21+",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Un conductor provisional menor de 18 años puede conducir durante las horas de toque de queda solo cuando está acompañado por un adulto con licencia de 21 años o mayor."
+    "explanation": "De medianoche a las 5 a.m., un conductor provisional menor de 18 años puede conducir acompañado por un conductor con licencia de 21 años o más con 3 años de experiencia, o cuando va o viene del trabajo, una actividad escolar, un voluntariado o un evento deportivo."
   },
   {
     "type": "State-Specific",
@@ -13152,12 +13152,12 @@
     "category": "duiStateLaws",
     "question": "¿Cuál es el límite legal de alcohol para conductores menores de 21 en Maryland?",
     "optionA": "Nivel de alcoholemia 0.08%",
-    "optionB": "Nivel de alcoholemia 0.02%",
+    "optionB": "Nivel de alcoholemia 0.05%",
     "optionC": "Nivel de alcoholemia 0.04%",
-    "optionD": "Cualquier alcohol detectable",
+    "optionD": "Nivel de alcoholemia 0.02%",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los conductores menores de 21 años no pueden tener ninguna cantidad detectable de alcohol en su sistema mientras operan un vehículo."
+    "explanation": "Las licencias de Maryland para conductores menores de 21 años tienen una restricción de alcohol: conducir con un nivel de alcoholemia de 0.02% o más la viola."
   },
   {
     "type": "State-Specific",
@@ -14242,14 +14242,14 @@
     "state": "MI",
     "questionId": "MI-018",
     "category": "stateUnique",
-    "question": "¿Cuál es el límite de velocidad máxima en las autopistas de Michigan para vehículos de pasajeros?",
+    "question": "¿Cuál es el límite de velocidad para vehículos de pasajeros en las autopistas de Michigan donde no hay otro límite señalizado?",
     "optionA": "55 mph",
     "optionB": "60 mph",
     "optionC": "65 mph",
     "optionD": "70 mph",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La ley del estado de Michigan establece el límite máximo de velocidad en las autopistas en 70 mph para los automóviles de pasajeros, mientras que los camiones están limitados a 60 mph en ciertas autopistas."
+    "explanation": "El límite predeterminado en las autopistas de Michigan es de 70 mph. Algunas autopistas rurales designadas tienen un límite señalizado de 75 mph."
   },
   {
     "type": "State-Specific",
@@ -14538,12 +14538,12 @@
     "category": "stateUnique",
     "question": "¿Cuál es el límite de velocidad máxima para camiones en determinadas autopistas de Michigan?",
     "optionA": "55 mph",
-    "optionB": "60 mph",
-    "optionC": "65 mph",
+    "optionB": "65 mph",
+    "optionC": "60 mph",
     "optionD": "70 mph",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "En ciertas autopistas de Michigan, los camiones tienen un límite de velocidad inferior de 60 mph, mientras que a los automóviles de pasajeros se les permite hasta 70 mph."
+    "explanation": "En las autopistas de Michigan con límite señalizado superior a 65 mph, los camiones de 10,000 libras o más y los autobuses escolares no pueden superar las 65 mph."
   },
   {
     "type": "State-Specific",
@@ -14608,12 +14608,12 @@
     "category": "gdlLicensing",
     "question": "¿Cuántas horas de conducción supervisada se requieren para pasar de permiso de instrucción a licencia provisional en Minnesota?",
     "optionA": "20 horas de práctica total",
-    "optionB": "50 horas de práctica total",
+    "optionB": "30 horas de práctica total",
     "optionC": "Solo se requiere examen de manejo",
-    "optionD": "30 hrs total, 10 de noche",
+    "optionD": "50 hrs total, 15 de noche",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Avanzar de un permiso de instrucción a una licencia provisional requiere 30 horas de práctica supervisada en total, incluyendo al menos 10 horas de noche."
+    "explanation": "Minnesota exige al menos 50 horas de conducción supervisada, 15 de ellas de noche, o 40 horas si uno de los padres completa la clase complementaria para padres."
   },
   {
     "type": "State-Specific",
@@ -14648,14 +14648,14 @@
     "state": "MN",
     "questionId": "MN-007",
     "category": "gdlLicensing",
-    "question": "¿Qué uso de teléfono se permite para titulares de licencia provisional en Minnesota?",
-    "optionA": "Solo comandos de voz permitidos",
-    "optionB": "Solo llamadas manos libres",
-    "optionC": "Solo navegación GPS y música",
-    "optionD": "Solo llamadas de emergencia permitidas",
+    "question": "¿Cuándo puede un titular de licencia provisional menor de 18 años en Minnesota hacer una llamada mientras conduce?",
+    "optionA": "En cualquier momento, con comandos de voz",
+    "optionB": "En cualquier momento, con manos libres",
+    "optionC": "Solo para llamar al 911 en una emergencia",
+    "optionD": "Solo mientras está en una autopista",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los titulares de licencia provisional solo pueden usar un teléfono para navegación GPS y música mientras conducen."
+    "explanation": "Los conductores menores de 18 años no pueden hacer ni contestar llamadas mientras conducen, ni siquiera con manos libres, excepto para llamar al 911 en una emergencia. Se permite el GPS y la música en modo manos libres."
   },
   {
     "type": "State-Specific",
@@ -14664,12 +14664,12 @@
     "category": "gdlLicensing",
     "question": "¿A qué edad puede obtener una licencia completa sin restricciones en Minnesota?",
     "optionA": "16 años",
-    "optionB": "17 años",
+    "optionB": "18 años",
     "optionC": "19 años",
-    "optionD": "18 años",
+    "optionD": "17 años",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Puede obtener una licencia de conducir completa sin restricciones a los 18 años."
+    "explanation": "Después de tener una licencia provisional durante 12 meses sin infracciones relacionadas con choques o alcohol, un conductor de Minnesota puede obtener la licencia completa desde los 17 años."
   },
   {
     "type": "State-Specific",
@@ -14778,10 +14778,10 @@
     "optionA": "Solo llamadas con teléfono en mano",
     "optionB": "Solo enviar mensajes de texto",
     "optionC": "Solo grabación de video",
-    "optionD": "Todo excepto GPS y música",
+    "optionD": "Llamadas, incluso manos libres, salvo al 911",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los conductores menores de 18 años tienen prohibido todo uso del teléfono excepto navegación GPS y música."
+    "explanation": "Los conductores menores de 18 años no pueden hacer ni contestar llamadas mientras conducen, con el teléfono en mano o manos libres, excepto para llamar al 911 en una emergencia. Se permite el GPS y la música en modo manos libres."
   },
   {
     "type": "State-Specific",
@@ -15715,11 +15715,11 @@
     "question": "¿Cuánto tiempo debe un joven de 15 años tener un permiso de aprendizaje antes de solicitar una licencia intermedia en Mississippi?",
     "optionA": "Mínimo 3 meses",
     "optionB": "Mínimo 9 meses",
-    "optionC": "Al menos 6 meses",
-    "optionD": "Mínimo 1 año",
+    "optionC": "Mínimo 1 año",
+    "optionD": "Al menos 6 meses",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Un joven de 15 años debe tener un permiso de aprendizaje durante al menos 6 meses antes de solicitar una licencia intermedia."
+    "explanation": "Un joven de Mississippi debe tener el permiso de aprendizaje durante 12 meses (o hasta cumplir 17 años) antes de pasar a la siguiente licencia."
   },
   {
     "type": "State-Specific",

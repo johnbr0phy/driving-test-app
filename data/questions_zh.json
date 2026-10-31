@@ -3015,13 +3015,13 @@
   "questionId": "IL-016",
   "category": "cellPhone",
   "question": "在伊利诺伊州的施工区和学区内，关于电子设备有什么禁止规定？",
-  "optionA": "仅禁止使用手持设备",
+  "optionA": "禁止使用任何设备，即使免提也不行",
   "optionB": "仅禁止发短信和消息",
   "optionC": "仅禁止视频通话",
-  "optionD": "禁止使用任何设备，即使免提也不行",
+  "optionD": "禁止使用手持设备",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "伊利诺伊州禁止在施工区和学区内使用任何电子设备，无论是否使用免提技术。"
+  "explanation": "在伊利诺伊州的学区和施工区内，禁止手持使用手机，但允许免提或语音操作。手持使用在全州范围内也被禁止。"
  },
  {
   "type": "State-Specific",
@@ -3395,11 +3395,11 @@
   "question": "在马萨诸塞州，持学习驾照需要完成多少小时的监督练习驾驶？",
   "optionA": "共练习20小时",
   "optionB": "共练习50小时",
-  "optionC": "40小时，上过驾驶培训课程可减为30小时",
+  "optionC": "40小时，完成驾驶技能课程可减为30小时",
   "optionD": "共练习60小时",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "学习驾照持有人必须完成40小时的监督练习驾驶；如申请人已完成驾驶培训课程，可减为30小时。"
+  "explanation": "马萨诸塞州要求40小时的监督驾驶；如青少年完成经批准的驾驶技能培训课程，可减为30小时。"
  },
  {
   "type": "State-Specific",
@@ -3462,14 +3462,14 @@
   "state": "MA",
   "questionId": "MA-008",
   "category": "gdlLicensing",
-  "question": "在马萨诸塞州，JOL持有人到几岁时解除乘客限制？",
-  "optionA": "16岁半",
-  "optionB": "18岁",
-  "optionC": "完成驾驶培训课程时",
-  "optionD": "17岁",
+  "question": "在马萨诸塞州，新取得JOL的驾驶人的乘客限制持续多久？",
+  "optionA": "前3个月",
+  "optionB": "前12个月",
+  "optionC": "直到完成驾驶培训课程",
+  "optionD": "前6个月",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "JOL持有人的乘客限制在年满17岁时解除。"
+  "explanation": "取得JOL后的前6个月内，除非有21岁以上的合格成人坐在前排，驾驶人不得搭载直系亲属以外的18岁以下乘客。"
  },
  {
   "type": "State-Specific",
@@ -3819,7 +3819,7 @@
   "optionD": "45分钟",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "必须从日出前30分钟开始至日落后30分钟一直使用前大灯。"
+  "explanation": "必须从日落后30分钟起至日出前30分钟一直开启前大灯。"
  },
  {
   "type": "State-Specific",
@@ -3911,13 +3911,13 @@
   "questionId": "MA-040",
   "category": "stateUnique",
   "question": "在马萨诸塞州驾驶车辆时必须携带哪些证件？",
-  "optionA": "驾照、车辆登记证和保险证明",
+  "optionA": "驾照和车辆登记证",
   "optionB": "只需驾照",
-  "optionC": "只需驾照和车辆登记证",
+  "optionC": "驾照、车辆登记证和保险卡",
   "optionD": "不需要携带任何证件",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "驾驶机动车时，驾驶人必须携带驾照、车辆登记证和保险证明。"
+  "explanation": "马萨诸塞州法律要求驾驶时携带驾照和车辆登记证。"
  },
  {
   "type": "State-Specific",
@@ -4029,7 +4029,7 @@
   "optionD": "有21岁以上持照成人陪同",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "18岁以下的临时驾照驾驶人只有在年满21岁的持照成人陪同下，才可以在宵禁时段驾驶。"
+  "explanation": "午夜至凌晨5点，18岁以下的临时驾照驾驶人可在有3年驾龄、年满21岁的持照驾驶人陪同下驾驶，或在往返工作、学校活动、志愿服务或体育活动时驾驶。"
  },
  {
   "type": "State-Specific",
@@ -4192,12 +4192,12 @@
   "category": "duiStateLaws",
   "question": "在马里兰州，21岁以下驾驶人的法定酒精限值是多少？",
   "optionA": "血液酒精浓度（BAC）0.08%",
-  "optionB": "血液酒精浓度（BAC）0.02%",
+  "optionB": "血液酒精浓度（BAC）0.05%",
   "optionC": "血液酒精浓度（BAC）0.04%",
-  "optionD": "任何可检测到的酒精",
+  "optionD": "血液酒精浓度（BAC）0.02%",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "21岁以下的驾驶人在驾驶车辆时，体内不得有任何可检测到的酒精。"
+  "explanation": "马里兰州21岁以下驾驶人的驾照附有酒精限制：血液酒精浓度达到0.02%或以上驾驶即属违规。"
  },
  {
   "type": "State-Specific",

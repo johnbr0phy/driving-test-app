@@ -136,6 +136,11 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
         ]}
         isGuest={isGuest}
         onSignUp={() => router.push(`/signup?redirect=${encodeURIComponent(routes.stats)}`)}
+        // A scaled-score exam (SAT, ACT, GRE) has no pass or retest to sell
+        // against; "2,000+ passed" is a DMV number, so it stays off here.
+        headline={pct ? undefined : ["Study smart.", "Score higher."]}
+        badge={pct ? undefined : null}
+        hideSocialProof
       />
 
       {communityOn && <StatsTabs active={tab} onChange={setTab} yoursLabel="Your Stats" communityLabel="Common Mistakes" />}

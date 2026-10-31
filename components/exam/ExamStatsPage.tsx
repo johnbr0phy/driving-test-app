@@ -283,6 +283,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             ]}
             isGuest={isGuest}
             onSignUp={() => router.push(routes.signup)}
+            hideSocialProof
           />
 
           {communityOn && (

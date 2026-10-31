@@ -123,7 +123,7 @@ const MORE_TESTS: [string, string][] = [
 function moreTests(id: string): string {
   const plain = (path: string, label: string) =>
     `<a href="${track(id, path)}" style="color: #1a1a1a; text-decoration: underline;">${label}</a>`;
-  const items = [...MORE_TESTS, ["See all 40+ practice tests", "/tests"]]
+  const items = [...MORE_TESTS, ["See all 140+ practice tests", "/tests"]]
     .map(([label, path]) => `<li style="margin: 0 0 6px;">${plain(path, label)}</li>`)
     .join("");
   return (

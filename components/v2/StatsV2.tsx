@@ -25,7 +25,7 @@ import { getSectionV2, v2Routes } from "@/lib/v2/registry";
 import { goalFor } from "@/lib/v2/goals";
 import { V2_PAYWALL_PREFIX } from "@/lib/v2/premium";
 import { v2QuestionPerformance } from "@/lib/v2/questionStats";
-import { MIN_SECTION_ANSWERS, TARGET_ACCURACY, TopicEstimate, estimateScore } from "@/lib/v2/scoreEstimate";
+import { MIN_SECTION_ANSWERS, SectionEstimate, TARGET_ACCURACY, TopicEstimate, estimateScore } from "@/lib/v2/scoreEstimate";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
@@ -188,13 +188,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
             ) : (
               <>
                 <div className="mt-1 text-5xl font-black text-gray-300 dark:text-gray-700">–</div>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-                  {estimate.sections
-                    .filter((s) => s.needed > 0)
-                    .map((s) => `${s.needed} more ${estimate.sections.length > 1 ? `${s.section.shortName} ` : ""}question${s.needed === 1 ? "" : "s"}`)
-                    .join(" and ")}{" "}
-                  to see your score.
-                </p>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">{neededLine(estimate.sections)}</p>
               </>
             )}
             {estimate.sections.length > 1 && (
@@ -202,9 +196,13 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                 {estimate.sections.map((s) => (
                   <div key={s.section.key} className="rounded-xl bg-gray-50 dark:bg-gray-800 px-3 py-2">
                     <div className="text-[11px] text-gray-500 dark:text-gray-400 truncate">{s.section.shortName}</div>
-                    <div className="text-lg font-bold tabular-nums text-gray-900 dark:text-gray-50">
-                      {s.scaled === null ? "–" : s.section.scale.max === 100 ? `${s.scaled}%` : s.scaled}
-                    </div>
+                    {s.scaled === null && s.needed > 0 ? (
+                      <div className="text-sm font-semibold leading-7 text-gray-500 dark:text-gray-400">{s.needed} to go</div>
+                    ) : (
+                      <div className="text-lg font-bold tabular-nums text-gray-900 dark:text-gray-50">
+                        {s.scaled === null ? "–" : s.section.scale.max === 100 ? `${s.scaled}%` : s.scaled}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
@@ -343,6 +341,16 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
       )}
     </StatsPageShell>
   );
+}
+
+/** What is left before the estimate shows. Past two sections a list of every
+ *  one runs on, so it says the rule and the tiles below carry the counts. */
+function neededLine(sections: SectionEstimate[]): string {
+  const q = (n: number) => `question${n === 1 ? "" : "s"}`;
+  if (sections.length === 1) return `${sections[0].needed} more ${q(sections[0].needed)} to see your score.`;
+  const short = sections.filter((s) => s.needed > 0);
+  if (short.length <= 2) return `${short.map((s) => `${s.needed} more ${s.section.shortName} ${q(s.needed)}`).join(" and ")} to see your score.`;
+  return `Answer ${MIN_SECTION_ANSWERS} questions in each section to see your score.`;
 }
 
 function ScoreBar({ min, max, value, goal }: { min: number; max: number; value: number; goal: number }) {

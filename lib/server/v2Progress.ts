@@ -7,15 +7,32 @@ import type { BasicsSkillState, DrillState, ExamV2Config } from '@/lib/v2/types'
 import '@/lib/v2/banks/accuplacer';
 import '@/lib/v2/banks/act';
 import '@/lib/v2/banks/asvab';
+import '@/lib/v2/banks/elevenplus';
+import '@/lib/v2/banks/eqao9';
+import '@/lib/v2/banks/fsmaths';
+import '@/lib/v2/banks/gcsecs';
+import '@/lib/v2/banks/gcsehigher';
+import '@/lib/v2/banks/gcsemaths';
+import '@/lib/v2/banks/gcsescience';
+import '@/lib/v2/banks/ged';
 import '@/lib/v2/banks/hesi';
-import '@/lib/v2/banks/sat';
-import '@/lib/v2/banks/teas';
+import '@/lib/v2/banks/hscmaths';
+import '@/lib/v2/banks/ks2';
+import '@/lib/v2/banks/naplan';
+import '@/lib/v2/banks/naplan7';
+import '@/lib/v2/banks/nswsel';
+import '@/lib/v2/banks/ocnsw';
+import '@/lib/v2/banks/osslt';
 import '@/lib/v2/banks/praxis';
 import '@/lib/v2/banks/psat';
 import '@/lib/v2/banks/rrbntpc';
+import '@/lib/v2/banks/sat';
+import '@/lib/v2/banks/teas';
+import '@/lib/v2/banks/timestables';
+import '@/lib/v2/banks/vicsel';
 
-// How far students get through the v2 exams that have Basics (SAT, ACT,
-// TEAS, HESI, ASVAB, ACCUPLACER), for the "Basics" card on the /admin Growth
+// How far students get through the v2 exams that have Basics (every bank
+// imported above: an exam with Basics and no import here breaks the card), for the "Basics" card on the /admin Growth
 // tab. Two sources:
 //   - signed-in accounts: users/{uid}.v2, the same state the dashboard reads,
 //     so steps here are the dashboard's N/N steps exactly. All history, but

@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useThemePath } from "@/hooks/useThemePath";
-import { ChevronDown, LayoutGrid, Search, X } from "lucide-react";
+import { Check, ChevronDown, LayoutGrid, Search, X } from "lucide-react";
 import {
   Popover,
   PopoverContent,
@@ -20,7 +20,7 @@ import { hasTigerSet } from "@/lib/tigerAssets";
 import { useStartedTests } from "@/hooks/useStartedTests";
 import { useCurrentTest } from "@/hooks/useHomePath";
 import { FLAGS, readRegionCookie, saveRegion } from "@/components/CountryPills";
-import { REGIONS, Region, isRegion, orderGroupsForRegion, regionOfTest } from "@/lib/region";
+import { REGIONS, Region, isRegion, orderGroupsForRegion, regionInfo, regionOfTest } from "@/lib/region";
 import { useStore } from "@/store/useStore";
 
 const SEEN_KEY = "tigertest-seen-all-tests";
@@ -32,10 +32,10 @@ const SEEN_KEY = "tigertest-seen-all-tests";
  * with the current test (the last dashboard opened, see useCurrentTest)
  * pinned at the top; a visitor who has opened no dashboard has none. Tests
  * already in progress link to their dashboard instead. Enter opens the first match.
- * A country row under the search lists that country's tests and the worldwide
- * ones (search still finds every test), so someone studying for another
- * country's exam can switch from any page. Picking one saves it like the
- * homepage pills; it starts on the saved country, else the current test's.
+ * A country dropdown beside the search lists that country's tests and the
+ * worldwide ones (search still finds every test), so someone studying for
+ * another country's exam can switch from any page. Picking one saves it like
+ * the homepage pills; it starts on the saved country, else the current test's.
  */
 export function TestSwitcher({ className = "" }: { className?: string }) {
   const pathname = useThemePath();
@@ -67,9 +67,13 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
     // Only on opening: a pick inside the menu sets `region` itself.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open]);
+  const [regionOpen, setRegionOpen] = useState(false);
   const pickRegion = (r: Region) => {
     setRegion(r);
     saveRegion(r);
+    setRegionOpen(false);
+    // Search ignores the country, so a pick made mid-search shows the country's list.
+    setQuery("");
   };
 
   const searching = query.trim().length > 0;
@@ -94,7 +98,10 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
   const first = groups[0]?.tests[0];
 
   useEffect(() => {
-    if (!open) setQuery("");
+    if (!open) {
+      setQuery("");
+      setRegionOpen(false);
+    }
     if (open && showNew) {
       setShowNew(false);
       try {
@@ -137,70 +144,104 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
         className="w-[calc(100vw-24px)] sm:w-[20rem] p-0 overflow-hidden rounded-xl"
       >
         <div data-theme={pageTest.theme}>
-          <div className="relative border-b border-gray-100 dark:border-gray-800 p-2">
-            <Search
-              className="pointer-events-none absolute left-[18px] top-1/2 h-4 w-4 -translate-y-1/2 text-gray-500 dark:text-gray-400"
-              aria-hidden="true"
-            />
-            <input
-              ref={inputRef}
-              type="text"
-              role="searchbox"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" && first) {
-                  e.preventDefault();
-                  close();
-                  router.push(hrefFor(first));
-                }
-              }}
-              placeholder="Search tests"
-              aria-label="Search practice tests"
-              autoComplete="off"
-              className="h-9 w-full rounded-lg bg-gray-100 dark:bg-gray-800 pl-9 pr-8 text-base sm:text-sm text-gray-900 dark:text-gray-50 placeholder:text-gray-400 focus:bg-white dark:focus:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-brand"
-            />
-            {searching && (
-              <button
-                type="button"
-                onClick={() => {
-                  setQuery("");
-                  inputRef.current?.focus();
+          <div className="flex items-center gap-1.5 border-b border-gray-100 dark:border-gray-800 p-2">
+            <div className="relative min-w-0 flex-1">
+              <Search
+                className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+              />
+              <input
+                ref={inputRef}
+                type="text"
+                role="searchbox"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" && first) {
+                    e.preventDefault();
+                    close();
+                    router.push(hrefFor(first));
+                  }
                 }}
-                aria-label="Clear search"
-                className="absolute right-4 top-1/2 -translate-y-1/2 rounded p-0.5 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
-              >
-                <X className="h-3.5 w-3.5" aria-hidden="true" />
-              </button>
-            )}
-          </div>
-
-          {!searching && (
-            <div role="radiogroup" aria-label="Show tests for" className="grid grid-cols-7 gap-1 border-b border-gray-100 dark:border-gray-800 p-2">
-              {REGIONS.map((r) => {
-                const on = r.code === region;
-                return (
-                  <button
-                    key={r.code}
-                    type="button"
-                    role="radio"
-                    aria-checked={on}
-                    aria-label={r.name}
-                    title={r.name}
-                    onClick={() => pickRegion(r.code)}
-                    className={`flex h-8 items-center justify-center gap-1.5 rounded-full text-xs font-semibold transition-colors ${
-                      on
-                        ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
-                        : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
-                    }`}
-                  >
-                    <span aria-hidden="true" className="text-sm leading-none">{FLAGS[r.code]}</span>
-                    {r.short}
-                  </button>
-                );
-              })}
+                placeholder="Search tests"
+                aria-label="Search practice tests"
+                autoComplete="off"
+                className="h-9 w-full rounded-lg bg-gray-100 dark:bg-gray-800 pl-9 pr-8 text-base sm:text-sm text-gray-900 dark:text-gray-50 placeholder:text-gray-400 focus:bg-white dark:focus:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-brand"
+              />
+              {searching && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setQuery("");
+                    inputRef.current?.focus();
+                  }}
+                  aria-label="Clear search"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 rounded p-0.5 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                >
+                  <X className="h-3.5 w-3.5" aria-hidden="true" />
+                </button>
+              )}
             </div>
-          )}
+
+            <Popover open={regionOpen} onOpenChange={setRegionOpen}>
+              <PopoverTrigger
+                aria-label={`Show tests for: ${regionInfo(region).name}`}
+                title="Show tests for"
+                className="flex h-9 shrink-0 items-center gap-1 rounded-lg bg-gray-100 dark:bg-gray-800 px-2.5 text-sm font-semibold text-gray-700 dark:text-gray-200 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+              >
+                <span aria-hidden="true" className="text-base leading-none">{FLAGS[region]}</span>
+                {regionInfo(region).short}
+                <ChevronDown
+                  className={`h-3.5 w-3.5 text-gray-500 dark:text-gray-400 transition-transform ${regionOpen ? "rotate-180" : ""}`}
+                  aria-hidden="true"
+                />
+              </PopoverTrigger>
+              <PopoverContent
+                align="end"
+                collisionPadding={12}
+                onOpenAutoFocus={(e) => {
+                  e.preventDefault();
+                  (e.currentTarget as HTMLElement | null)?.querySelector<HTMLElement>('[aria-checked="true"]')?.focus();
+                }}
+                className="w-56 p-1 rounded-xl"
+              >
+                <p className="px-2.5 pb-1 pt-1.5 text-[11px] font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                  Show tests for
+                </p>
+                <div
+                  role="radiogroup"
+                  aria-label="Show tests for"
+                  onKeyDown={(e) => {
+                    if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+                    e.preventDefault();
+                    const items = [...e.currentTarget.querySelectorAll<HTMLElement>('[role="radio"]')];
+                    const i = items.indexOf(document.activeElement as HTMLElement);
+                    items[(i + (e.key === "ArrowDown" ? 1 : -1) + items.length) % items.length]?.focus();
+                  }}
+                >
+                  {REGIONS.map((r) => {
+                    const on = r.code === region;
+                    return (
+                      <button
+                        key={r.code}
+                        type="button"
+                        role="radio"
+                        aria-checked={on}
+                        onClick={() => pickRegion(r.code)}
+                        className={`flex w-full items-center gap-2.5 rounded-lg px-2.5 py-2 text-left text-sm transition-colors focus:outline-none focus-visible:bg-gray-100 dark:focus-visible:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 ${
+                          on ? "font-semibold text-gray-900 dark:text-gray-50" : "text-gray-700 dark:text-gray-300"
+                        }`}
+                      >
+                        <span aria-hidden="true" className="text-base leading-none">{FLAGS[r.code]}</span>
+                        <span className="flex-1">{r.name}</span>
+                        {on && <Check className="h-4 w-4 text-gray-900 dark:text-gray-50" aria-hidden="true" />}
+                      </button>
+                    );
+                  })}
+                </div>
+              </PopoverContent>
+            </Popover>
+          </div>
 
           <div className="max-h-[min(60vh,26rem,calc(var(--radix-popover-content-available-height)_-_9rem))] overflow-y-auto overscroll-contain p-1.5">
             {!searching && current && (

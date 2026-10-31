@@ -56,7 +56,6 @@ interface Metrics {
   activeWeekly: { date: string; count: number }[];
   activeMonthly: { date: string; count: number }[];
   // Optional: older cached payloads predate the per-exam split.
-  launchTest?: { id: string; name: string; subject: string; sent: number; clicked: number; bought: number }[];
   // Optional: absent from payloads that predate quizzes (lib/quizzes.ts).
   quizzes?: {
     createdWeb: number;
@@ -763,61 +762,6 @@ function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) 
   );
 }
 
-function LaunchTest({ rows }: { rows: NonNullable<Metrics["launchTest"]> }) {
-  const sent = rows.reduce((n, r) => n + r.sent, 0);
-  const rate = (n: number, d: number) => (d > 0 ? `${((n / d) * 100).toFixed(1)}%` : "—");
-  const bestCtr = Math.max(...rows.map((r) => (r.sent > 0 ? r.clicked / r.sent : 0)));
-  return (
-    <div className={CARD}>
-      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
-        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">SAT/ACT launch email split test</h2>
-        <p className="text-xs text-gray-500 dark:text-gray-400">{fmtInt(sent)} sent to DMV readers</p>
-      </div>
-      {sent === 0 ? (
-        <p className="text-sm text-gray-500 dark:text-gray-400">Nothing sent yet. The email is paused until NEW_TESTS_CAMPAIGN=send is set in Vercel.</p>
-      ) : (
-        <TableScroll>
-          <table className="w-full text-sm">
-            <thead>
-              <tr className={`${ROW} text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400`}>
-                <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Variant</th>
-                <th className="text-right font-medium pb-2 pl-4">Sent</th>
-                <th className="text-right font-medium pb-2 pl-4">Clicked</th>
-                <th className="text-right font-medium pb-2 pl-4">Click rate</th>
-                <th className="text-right font-medium pb-2 pl-4">Bought</th>
-                <th className="text-right font-medium pb-2 pl-4">Buy rate</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((r) => {
-                const lead = r.sent > 0 && r.clicked / r.sent === bestCtr && bestCtr > 0;
-                return (
-                  <tr key={r.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
-                    <td className={`py-2 ${STICKY_COL}`}>
-                      <div className="font-medium text-gray-900 dark:text-gray-50">{r.id} · {r.name}{lead ? " ★" : ""}</div>
-                      <div className="text-[11px] text-gray-500 dark:text-gray-400">{r.subject}</div>
-                    </td>
-                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.sent)}</td>
-                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.clicked)}</td>
-                    <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50 font-medium">{rate(r.clicked, r.sent)}</td>
-                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.bought)}</td>
-                    <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50">{rate(r.bought, r.sent)}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </TableScroll>
-      )}
-      <p className="mt-4 text-[11px] text-gray-500 dark:text-gray-400">
-        Each DMV reader gets one variant, fixed by their account. Clicked counts people, not clicks. Bought is Premium
-        purchased after the email. Differences under a few points need a few hundred sends per variant before they mean much.
-        Set NEW_TESTS_WINNER to a variant id in Vercel to send the rest of the list that one.
-      </p>
-    </div>
-  );
-}
-
 const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const DAY_ORDER = [1, 2, 3, 4, 5, 6, 0]; // Monday first
 const hourLabel = (h: number) => `${h % 12 === 0 ? 12 : h % 12}${h < 12 ? "am" : "pm"}`;
@@ -1194,9 +1138,6 @@ export function GrowthTab() {
 
         {/* Quiz creation, play and report counters. */}
         {metrics.quizzes && <QuizzesCard data={metrics.quizzes} />}
-
-        {/* Launch email split test */}
-        {metrics.launchTest && <LaunchTest rows={metrics.launchTest} />}
 
         {/* When people study */}
         {metrics.studyTimes ? (

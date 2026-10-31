@@ -5,7 +5,6 @@ import { cachedAdminPayload, cachedJson, wantsRefresh } from '@/lib/server/admin
 import { isInternalEmail } from '@/lib/internal';
 import { getInternalUids } from '@/lib/server/internalUsers';
 import { TEST_REQUEST_PICKS } from '@/lib/test-requests';
-import { LAUNCH_EXPERIMENT, LAUNCH_VARIANTS } from '@/lib/email-launch';
 import type { DocumentSnapshot, QuerySnapshot } from 'firebase-admin/firestore';
 
 // Growth/revenue metrics for the /admin Growth tab. Everything here is derived from two
@@ -76,7 +75,7 @@ async function buildMetrics() {
   const db = getAdminDb();
   const [usersSnapRaw, paymentsSnap, questionsDoc, testRequestsSnap, studyTimesDoc, funnelDoc, originsSnap, internalUids, quizzesDoc] = await Promise.all([
     db.collection('users')
-      .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats', 'emailVariants', 'emailClicks')
+      .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats')
       .get(),
     db.collection('payments').get(),
     db.doc('analytics/questions').get(),
@@ -134,27 +133,6 @@ async function buildMetrics() {
     }
     requestCounts.set(pick, entry);
   });
-  // ── SAT/ACT launch email split test ───────────────────────────────────────
-  // Sent = users stamped with a variant at send time. Clicked = clicked any
-  // tracked link in that email. Bought = Premium purchased after the send.
-  const variantStats = new Map(LAUNCH_VARIANTS.map((v) => [v.id, { sent: 0, clicked: 0, bought: 0 }]));
-  usersSnap.docs.forEach((doc) => {
-    const d = doc.data();
-    const sent = d.emailVariants?.[LAUNCH_EXPERIMENT];
-    const row = sent && variantStats.get(sent.variant);
-    if (!row) return;
-    row.sent += 1;
-    if (d.emailClicks?.[LAUNCH_EXPERIMENT]) row.clicked += 1;
-    const purchasedAt = d.subscription?.isPremium ? d.subscription?.purchasedAt : null;
-    if (typeof purchasedAt === 'string' && typeof sent.sentAt === 'string' && purchasedAt > sent.sentAt) row.bought += 1;
-  });
-  const launchTest = LAUNCH_VARIANTS.map((v) => ({
-    id: v.id,
-    name: v.name,
-    subject: v.subject,
-    ...variantStats.get(v.id)!,
-  }));
-
   const testRequests = {
     total: testRequestsTotal,
     byPick: TEST_REQUEST_PICKS.map((p) => ({
@@ -387,7 +365,6 @@ async function buildMetrics() {
     testRequests,
     // Built nightly by /api/cron/aggregate-stats.
     studyTimes: studyTimesDoc.exists ? studyTimesDoc.data() : null,
-    launchTest,
     quizzes,
     // The "today" range. Signups and revenue are bucketed by the hour in
     // Eastern time off real timestamps. Questions and active users have no

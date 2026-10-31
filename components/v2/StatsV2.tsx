@@ -105,7 +105,11 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
 
   const pct = exam.composite.max === 100;
   const fmt = (n: number) => (pct ? `${n}%` : `${n}`);
-  const pts = (n: number) => (pct ? `+${n}%` : `+${n} pts`);
+  // Gains are estimates too, so they never read as a promise.
+  const pts = (n: number) => (pct ? `about +${n}%` : `about +${n} pts`);
+  // "Not affiliated with ACT, Inc." from the exam's own footer line.
+  const affiliation = exam.copy.sourceLine.match(/not affiliated[^.]*\./i)?.[0];
+  const notAffiliated = affiliation ? affiliation[0].toUpperCase() + affiliation.slice(1) : "";
   const subtitle = (q: QuestionV2) => `${exam.domainLabels[q.domain] ?? q.domain}${q.skill ? ` · ${q.skill}` : ""}`;
 
   const plan = estimate.topics.filter((t) => t.gain > 0 || t.answered > 0);
@@ -151,7 +155,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
           <div className="mx-auto mb-3 w-10 h-10 rounded-full bg-brand-light flex items-center justify-center">
             <Target className="h-5 w-5 text-brand-dark" />
           </div>
-          <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">Your {exam.shortName} score, today</h1>
+          <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">Estimate your {exam.shortName} score</h1>
           <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
             Answer {estimate.sections.length > 1 ? `${MIN_SECTION_ANSWERS} questions in each section` : `${MIN_SECTION_ANSWERS} questions`} and we&apos;ll estimate your score and show you where your next points are.
           </p>
@@ -163,7 +167,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
         <>
           {/* 1. Score today */}
           <section className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-5 mb-6 shadow-sm">
-            <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Your {exam.shortName} score today</p>
+            <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Estimated {exam.shortName} score</p>
             {estimate.composite !== null ? (
               <>
                 <div className="mt-1 flex items-baseline gap-3">
@@ -199,7 +203,8 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
               </div>
             )}
             <p className="mt-3 text-[11px] leading-snug text-gray-500 dark:text-gray-400">
-              Estimated from the {estimate.answered} question{estimate.answered === 1 ? "" : "s"} you&apos;ve answered, counting your first try.
+              An estimate from the {estimate.answered} practice question{estimate.answered === 1 ? "" : "s"} you&apos;ve answered (first try), not an official score.
+              {notAffiliated && <> {notAffiliated}</>}
               {lastTest && <> Your last practice test: <span className="font-semibold">{fmt(lastTest.composite)}</span>.</>}
             </p>
           </section>
@@ -207,7 +212,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
           {/* 2. Your fastest points */}
           <div className="flex items-baseline justify-between mb-2">
             <h2 className="text-base font-bold text-gray-900 dark:text-gray-50">Your fastest points</h2>
-            <span className="text-[11px] text-gray-500 dark:text-gray-400">if you get each topic to {Math.round(TARGET_ACCURACY * 100)}%</span>
+            <span className="text-[11px] text-gray-500 dark:text-gray-400">estimated, if you get each topic to {Math.round(TARGET_ACCURACY * 100)}%</span>
           </div>
           {plan.length === 0 ? (
             <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">Answer a few more questions and your plan shows up here.</p>
@@ -225,7 +230,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                         chip: { value: "+??", label: pct ? "points" : "pts", color: "text-brand-dark" },
                         text: t.drill.name,
                       }))}
-                      title={lockedGain > 0 ? `${lockedPlan.length} more topics worth up to ${pts(lockedGain)}` : `${lockedPlan.length} more topics in your plan`}
+                      title={lockedGain > 0 ? `${lockedPlan.length} more topics worth an estimated ${pct ? `+${lockedGain}%` : `+${lockedGain}\u00a0pts`}` : `${lockedPlan.length} more topics in your plan`}
                       subtitle="See every topic ranked by the points it's worth, and the exact skills you miss"
                       cta="Unlock your full plan · $9.99"
                       onUnlock={() => openPaywall("stats_plan", "Study Plan")}

@@ -283,7 +283,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         : `${link(v.statsPath, `${v.shortName} stats`)}: every question you've answered, sorted by what you keep missing`
       : null;
     const dmvLine = `${link("/dmv/dashboard", "DMV permit test")}: Safety &amp; Emergencies and State Laws, practice tests C and D, and your stats page`;
-    const everyLine = "Full stats on every other US exam on Tigertest, from the CDL to nursing and college entrance exams";
+    const everyLine = "Full stats on every other US exam on Tigertest, from the CDL to nursing and real estate";
     const lines = examLine ? [examLine, everyLine, dmvLine] : [dmvLine, everyLine];
 
     return emailShell({

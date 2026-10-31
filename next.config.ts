@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/api/og/score-card": ["./public/tiger_face_*.png", "./public/tigers/**/*.png"],
     "/og/[examId]": ["./public/tigers/**/*.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
+    "/og/q/[code]": ["./public/tiger.png", "./public/tiger_face_03.png"],
+  },
+  // The quiz card reads two images from public/; keep the big asset folders
+  // out of its function (it hit Vercel's 250 MB limit when they were traced in).
+  outputFileTracingExcludes: {
+    "/og/q/[code]": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
   },
   images: {
     formats: ["image/avif", "image/webp"],

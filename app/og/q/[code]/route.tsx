@@ -50,8 +50,14 @@ export async function GET(_request: Request, { params }: { params: Promise<{ cod
   }
   if (!quiz) return new Response("Not found", { status: 404 });
 
-  const read = async (file: string) => `data:image/png;base64,${(await readFile(join(process.cwd(), "public", file))).toString("base64")}`;
-  const [tiger, face, fonts] = await Promise.all([read("tiger.png"), read("tiger_face_03.png"), interFonts()]);
+  // Literal paths (not a joined variable) so output file tracing bundles just
+  // these two images, not all of public/ (which pushed the function past 250 MB).
+  const png = (buf: Buffer) => `data:image/png;base64,${buf.toString("base64")}`;
+  const [tiger, face, fonts] = await Promise.all([
+    readFile(join(process.cwd(), "public/tiger.png")).then(png),
+    readFile(join(process.cwd(), "public/tiger_face_03.png")).then(png),
+    interFonts(),
+  ]);
 
   const hidden = quiz.visibility === "private";
   const isClass = quiz.visibility === "class";

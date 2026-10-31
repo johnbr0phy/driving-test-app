@@ -575,5 +575,37 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "iedtt": {
     "color": "hsl(142, 40%, 28%)",
     "tint": "hsl(142, 40%, 96%)"
+  },
+  "phlto": {
+    "color": "hsl(212, 40%, 26%)",
+    "tint": "hsl(212, 40%, 95%)"
+  },
+  "zak53": {
+    "color": "hsl(81, 90%, 30%)",
+    "tint": "hsl(81, 60%, 95%)"
+  },
+  "sgbtt": {
+    "color": "hsl(0, 100%, 32%)",
+    "tint": "hsl(0, 70%, 96%)"
+  },
+  "aerta": {
+    "color": "hsl(162, 80%, 26%)",
+    "tint": "hsl(162, 55%, 95%)"
+  },
+  "ngfrsc": {
+    "color": "hsl(123, 60%, 26%)",
+    "tint": "hsl(123, 45%, 95%)"
+  },
+  "kentsa": {
+    "color": "hsl(182, 90%, 26%)",
+    "tint": "hsl(182, 60%, 95%)"
+  },
+  "mykpp": {
+    "color": "hsl(280, 100%, 48%)",
+    "tint": "hsl(280, 80%, 96%)"
+  },
+  "hkdrive": {
+    "color": "hsl(314, 100%, 42%)",
+    "tint": "hsl(314, 80%, 96%)"
   }
 };

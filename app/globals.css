@@ -1809,6 +1809,118 @@
     --brand-gradient-to: 30 90% 95%;
   }
 
+  /* Philippines LTO exam theme */
+  [data-theme="phlto"] {
+    --brand: 212 40% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 212 40% 95%;
+    --brand-hover: 212 40% 21%;
+    --brand-dark: 212 40% 19%;
+    --brand-darker: 212 40% 13%;
+    --brand-muted: 212 25% 70%;
+    --brand-border: 212 25% 78%;
+    --brand-border-light: 212 25% 88%;
+    --brand-gradient-to: 200 45% 95%;
+  }
+
+  /* South Africa K53 learner's theme */
+  [data-theme="zak53"] {
+    --brand: 81 90% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 81 60% 95%;
+    --brand-hover: 81 90% 25%;
+    --brand-dark: 81 90% 22%;
+    --brand-darker: 81 80% 15%;
+    --brand-muted: 81 30% 70%;
+    --brand-border: 81 35% 78%;
+    --brand-border-light: 81 30% 88%;
+    --brand-gradient-to: 120 45% 95%;
+  }
+
+  /* Singapore BTT theme */
+  [data-theme="sgbtt"] {
+    --brand: 0 100% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 0 70% 96%;
+    --brand-hover: 0 100% 27%;
+    --brand-dark: 0 100% 24%;
+    --brand-darker: 0 90% 16%;
+    --brand-muted: 0 40% 72%;
+    --brand-border: 0 45% 80%;
+    --brand-border-light: 0 40% 90%;
+    --brand-gradient-to: 15 70% 96%;
+  }
+
+  /* UAE driving theory (RTA) theme */
+  [data-theme="aerta"] {
+    --brand: 162 80% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 162 55% 95%;
+    --brand-hover: 162 80% 21%;
+    --brand-dark: 162 80% 19%;
+    --brand-darker: 162 70% 13%;
+    --brand-muted: 162 30% 70%;
+    --brand-border: 162 30% 78%;
+    --brand-border-light: 162 28% 88%;
+    --brand-gradient-to: 190 55% 95%;
+  }
+
+  /* Nigeria FRSC Highway Code theme */
+  [data-theme="ngfrsc"] {
+    --brand: 123 60% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 123 45% 95%;
+    --brand-hover: 123 60% 21%;
+    --brand-dark: 123 60% 19%;
+    --brand-darker: 123 55% 13%;
+    --brand-muted: 123 25% 70%;
+    --brand-border: 123 25% 78%;
+    --brand-border-light: 123 25% 88%;
+    --brand-gradient-to: 150 40% 95%;
+  }
+
+  /* Kenya NTSA driving test theme */
+  [data-theme="kentsa"] {
+    --brand: 182 90% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 182 60% 95%;
+    --brand-hover: 182 90% 21%;
+    --brand-dark: 182 90% 18%;
+    --brand-darker: 182 80% 12%;
+    --brand-muted: 182 35% 68%;
+    --brand-border: 182 35% 76%;
+    --brand-border-light: 182 30% 87%;
+    --brand-gradient-to: 150 50% 95%;
+  }
+
+  /* Malaysia KPP01 theme */
+  [data-theme="mykpp"] {
+    --brand: 280 100% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 80% 96%;
+    --brand-hover: 280 100% 42%;
+    --brand-dark: 280 100% 36%;
+    --brand-darker: 280 90% 24%;
+    --brand-muted: 280 40% 72%;
+    --brand-border: 280 45% 80%;
+    --brand-border-light: 280 40% 90%;
+    --brand-gradient-to: 300 70% 96%;
+  }
+
+  /* Hong Kong driving written test theme */
+  [data-theme="hkdrive"] {
+    --brand: 314 100% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 314 80% 96%;
+    --brand-hover: 314 100% 36%;
+    --brand-dark: 314 100% 30%;
+    --brand-darker: 314 90% 20%;
+    --brand-muted: 314 40% 72%;
+    --brand-border: 314 45% 80%;
+    --brand-border-light: 314 45% 90%;
+    --brand-gradient-to: 340 70% 96%;
+  }
+
   /* FAA Private Pilot theme (v2 exam; matches lib/v2/exams/faapvt.ts theme) */
   [data-theme="faapvt"] {
     --brand: 68 40% 28%;
@@ -3566,6 +3678,100 @@
     --brand-muted: 142 35% 45%;
     --brand-dark: 142 40% 65%;
     --brand-darker: 142 30% 78%;
+  }
+
+  .dark [data-theme="phlto"] {
+    --brand: 212 40% 48.2%;
+    --brand-hover: 212 40% 40.2%;
+    --brand-light: 212 40% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 212 25% 24%;
+    --brand-border: 212 25% 34%;
+    --brand-muted: 212 25% 45%;
+    --brand-dark: 212 40% 65%;
+    --brand-darker: 212 40% 78%;
+  }
+
+  .dark [data-theme="zak53"] {
+    --brand-light: 81 45% 13%;
+    --brand-gradient-to: 120 40% 11%;
+    --brand-border-light: 81 30% 24%;
+    --brand-border: 81 35% 34%;
+    --brand-muted: 81 30% 45%;
+    --brand-dark: 81 90% 65%;
+    --brand-darker: 81 80% 78%;
+  }
+
+  .dark [data-theme="sgbtt"] {
+    --brand: 0 100% 46.2%;
+    --brand-hover: 0 100% 38.2%;
+    --brand-light: 0 45% 13%;
+    --brand-gradient-to: 15 40% 11%;
+    --brand-border-light: 0 35% 24%;
+    --brand-border: 0 40% 34%;
+    --brand-muted: 0 40% 45%;
+    --brand-dark: 0 100% 65%;
+    --brand-darker: 0 90% 78%;
+  }
+
+  .dark [data-theme="aerta"] {
+    --brand: 162 80% 29%;
+    --brand-hover: 162 80% 21%;
+    --brand-light: 162 45% 13%;
+    --brand-gradient-to: 190 40% 11%;
+    --brand-border-light: 162 28% 24%;
+    --brand-border: 162 30% 34%;
+    --brand-muted: 162 30% 45%;
+    --brand-dark: 162 80% 65%;
+    --brand-darker: 162 70% 78%;
+  }
+
+  .dark [data-theme="ngfrsc"] {
+    --brand: 123 60% 33.1%;
+    --brand-hover: 123 60% 25.1%;
+    --brand-light: 123 45% 13%;
+    --brand-gradient-to: 150 40% 11%;
+    --brand-border-light: 123 25% 24%;
+    --brand-border: 123 25% 34%;
+    --brand-muted: 123 25% 45%;
+    --brand-dark: 123 60% 65%;
+    --brand-darker: 123 55% 78%;
+  }
+
+  .dark [data-theme="kentsa"] {
+    --brand: 182 90% 27.7%;
+    --brand-hover: 182 90% 21%;
+    --brand-light: 182 45% 13%;
+    --brand-gradient-to: 150 40% 11%;
+    --brand-border-light: 182 30% 24%;
+    --brand-border: 182 35% 34%;
+    --brand-muted: 182 35% 45%;
+    --brand-dark: 182 90% 65%;
+    --brand-darker: 182 80% 78%;
+  }
+
+  .dark [data-theme="mykpp"] {
+    --brand: 280 100% 50%;
+    --brand-hover: 280 100% 42%;
+    --brand-light: 280 45% 13%;
+    --brand-gradient-to: 300 40% 11%;
+    --brand-border-light: 280 35% 24%;
+    --brand-border: 280 40% 34%;
+    --brand-muted: 280 40% 45%;
+    --brand-dark: 280 100% 65%;
+    --brand-darker: 280 90% 78%;
+  }
+
+  .dark [data-theme="hkdrive"] {
+    --brand: 314 100% 42.8%;
+    --brand-hover: 314 100% 36%;
+    --brand-light: 314 45% 13%;
+    --brand-gradient-to: 340 40% 11%;
+    --brand-border-light: 314 35% 24%;
+    --brand-border: 314 40% 34%;
+    --brand-muted: 314 40% 45%;
+    --brand-dark: 314 100% 65%;
+    --brand-darker: 314 90% 78%;
   }
 
   .dark [data-theme="faapvt"] {

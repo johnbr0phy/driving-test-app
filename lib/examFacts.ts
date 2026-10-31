@@ -1842,6 +1842,132 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "drive.govt.nz learner licence guidance and the Official New Zealand Road Code, checked October 2026",
     source: { name: "drive.govt.nz: Doing the learner licence test", url: "https://drive.govt.nz/learner-licence/doing-the-learner-licence-test" },
   },
+  phlto: {
+    answer:
+      "The LTO written exam is the knowledge test you pass to get a Philippine driver's license. LTO's Theoretical Driving Course module (TDC-15-S-01-2, version 9-2021) gives it as 60 questions with 48 correct to pass; an older 2008 LTO memorandum set 40 questions with 30 to pass for the non-professional license. You can get a student permit at 16 after the 15-hour Theoretical Driving Course, a non-professional license at 17 and a professional license at 18. A license is valid for five years, or ten if you had no violations.",
+    rows: [
+      { label: "Questions", value: "60 (TDC module v9-2021)" },
+      { label: "Pass mark", value: "48 of 60 (80%)" },
+      { label: "Older standard", value: "30 of 40, non-professional (LTO memo, March 2008)" },
+      { label: "Minimum age", value: "16 student permit, 17 non-professional, 18 professional" },
+      { label: "Student permit", value: "Valid 1 year; drive only with a licensed driver" },
+      { label: "Courses", value: "15-hour TDC, then the Practical Driving Course" },
+      { label: "License validity", value: "5 years, or 10 with no violations (RA 10930)" },
+      { label: "Run by", value: "Land Transportation Office (LTO)" },
+    ],
+    basedOn: "LTO TDC module TDC-15-S-01-2 v9-2021, LTO MC AHS-2008-949 and RA 10930, checked October 2026",
+    source: { name: "LTO MC AHS-2008-949: Standards for written and practical examinations", url: "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/52964" },
+  },
+  zak53: {
+    answer:
+      "The K53 learner's licence test is the first step to driving a car in South Africa. It is a multiple-choice test of 64 questions drawn at random, written at a driving licence testing centre (DLTC), in three sections: rules of the road, road signs and markings, and vehicle controls. Study guides say the sections are 28, 28 and 8 questions and must each be passed separately. For a Code 2 (light motor vehicle) learner's licence you must be at least 17. The learner's licence is valid for 24 months, cannot be extended, and lets you drive only under the supervision of a licensed driver.",
+    rows: [
+      { label: "Questions", value: "64 multiple-choice, drawn at random" },
+      { label: "Sections", value: "Rules, signs and markings, vehicle controls (28/28/8, guides say)" },
+      { label: "Pass mark", value: "Each section separately: 22, 23 and 6 (guides say)" },
+      { label: "Minimum age", value: "17 for Code 2 (cars)" },
+      { label: "Valid for", value: "24 months, cannot be extended" },
+      { label: "Driving on it", value: "Only supervised by a licensed driver" },
+      { label: "Run by", value: "Driving licence testing centres (DLTCs)" },
+    ],
+    basedOn: "gov.za learner's licence service page, the National Road Traffic Act and Regulations, and RTMC (May 2026), checked October 2026; section counts and marks from study guides",
+    source: { name: "gov.za: Apply for a learner's licence", url: "https://www.gov.za/services/driving-licence/apply-learners-licence" },
+  },
+  sgbtt: {
+    answer:
+      "The Basic Theory Test (BTT) is the first theory test for a driving licence in Singapore. It tests traffic rules, traffic regulations, traffic signs and signals and general road safety, from Part B of the Traffic Police handbook Basic Theory of Driving. You take it, with an eyesight test, at one of the three driving centres. Guides say it is 50 multiple-choice questions in 50 minutes with 45 needed to pass; the Traffic Police do not publish the format. Passing lets you apply for a Provisional Driving Licence, valid for 2 years, to learn with a licensed instructor; car learners then take the Final Theory Test.",
+    rows: [
+      { label: "Questions", value: "50 multiple-choice (as guides say)" },
+      { label: "Pass mark", value: "45 of 50 (as guides say)" },
+      { label: "Time", value: "50 minutes (as guides say)" },
+      { label: "Minimum age", value: "18 for a driving licence" },
+      { label: "Also required", value: "Eyesight test when you register" },
+      { label: "Next step", value: "Provisional Driving Licence, valid 2 years" },
+      { label: "Study material", value: "Basic Theory of Driving, Part B (2 Jan 2026)" },
+      { label: "Run by", value: "Traffic Police, at BBDC, CDC and SSDC" },
+    ],
+    basedOn: "Traffic Police Basic Theory of Driving handbook (last updated 2.1.2026) and the Provisional Driving Licence page, checked October 2026",
+    source: { name: "Singapore Police Force: Provisional Driving Licence", url: "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Provisional-Driving-Licence" },
+  },
+  aerta: {
+    answer:
+      "The RTA knowledge (theory) test is an early step to a Dubai driving licence. It has 40 questions and you need at least 30 correct to pass. Before you can take it you need a valid learning permit and your Emirates ID, and you must finish the theory lectures at your driving institute: 8 hours for a light vehicle. Driving schools say the test also includes a video hazard section. The rules you are tested on are federal, so they are the same across the UAE; check the current minimum age with your emirate's licensing authority.",
+    rows: [
+      { label: "Questions", value: "40" },
+      { label: "Pass mark", value: "30 of 40 (75%)" },
+      { label: "Before the test", value: "Valid learning permit and theory lectures" },
+      { label: "Theory lectures", value: "8 hours (light vehicle)" },
+      { label: "Bring", value: "Emirates ID; arrive 30 minutes early" },
+      { label: "Rules", value: "Federal Decree-Law No. 14 of 2024" },
+      { label: "Run by", value: "RTA, through approved driving institutes" },
+    ],
+    basedOn: "RTA Knowledge Test service page and UAE government road safety guidance, checked October 2026",
+    source: { name: "RTA: Knowledge Test", url: "https://www.rta.ae/wps/portal/rta/ae/home/rta-services/service-details?serviceId=510" },
+  },
+  ngfrsc: {
+    answer:
+      "To get a fresh driver's licence in Nigeria you must be at least 18, train at an FRSC-certified driving school and hold a learner's permit. Since 1 June 2021 the school's training ends with a computer-based theory test (CBT) on the Highway Code: FRSC's July 2021 announcement gives 35 multiple-choice questions in 30 minutes, with 60% needed to pass and a retake after 7 days. You also need a visual acuity and medical fitness certificate, a practical driving test and biometric capture at a Driver's Licence Centre. A learner may drive only with a licensed driver or instructor beside them.",
+    rows: [
+      { label: "Questions", value: "35 multiple-choice (FRSC, 2021)" },
+      { label: "Pass mark", value: "60% (FRSC, 2021)" },
+      { label: "Time", value: "30 minutes" },
+      { label: "Retake", value: "After 7 days" },
+      { label: "Minimum age", value: "18 (26 for a commercial licence)" },
+      { label: "Training", value: "26 sessions at an FRSC-certified driving school" },
+      { label: "Also required", value: "Learner's permit, medical and eyesight certificate, practical test" },
+      { label: "Study material", value: "FRSC Highway Code, National Road Traffic Regulations 2012" },
+      { label: "Run by", value: "Federal Road Safety Corps (FRSC)" },
+    ],
+    basedOn: "FRSC's CBT announcement of 8 July 2021 and the National Road Traffic Regulations 2012, checked October 2026. Tigertest's 50-question tests and 75% target are its own, not FRSC figures",
+    source: { name: "FRSC: Computer Based Test for licence applicants", url: "https://frsc.gov.ng/creating-a-safer-road-use-culture-and-enhancing-the-integrity-of-the-national-drivers-license-frsc-commences-computer-based-test-for-applicants/" },
+  },
+  kentsa: {
+    answer:
+      "To get a driving licence in Kenya you train at a registered driving school and then pass the NTSA driving test, which by law covers the rules of the road, road signs and signals, the Highway Code and your fitness to drive. NTSA does not publish a current question count or pass mark for the theory part; its 2019 guidelines for written tests set at least 50 multiple-choice questions and 80% to pass. You must be at least 18 for a car licence and able to read a number plate at 25 metres. While learning you drive on a provisional licence, with L plates on the front and rear and a qualified driver licensed for that class beside you.",
+    rows: [
+      { label: "Questions", value: "Not published by NTSA (2019 guidelines: at least 50)" },
+      { label: "Pass mark", value: "Not published by NTSA (2019 guidelines: 80%)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 80% target" },
+      { label: "Minimum age (car)", value: "18 (motorcycles 16)" },
+      { label: "Eyesight", value: "Read a number plate at 25 metres" },
+      { label: "Learners", value: "Provisional licence, L plates front and rear" },
+      { label: "Study material", value: "Kenya Highway Code and the Traffic Act" },
+      { label: "Run by", value: "National Transport and Safety Authority (NTSA)" },
+    ],
+    basedOn: "Traffic Act (Cap. 403) sections 30 to 33 and 39, the 2026 drink-driving rules and NTSA's 2019 written-test guidelines as reported by Business Daily, checked October 2026",
+    source: { name: "Traffic Act (Cap. 403) on Kenya Law", url: "https://new.kenyalaw.org/akn/ke/act/1953/39/eng@2022-12-31" },
+  },
+  mykpp: {
+    answer:
+      "KPP01 is the computer theory test (Ujian Undang-Undang Bahagian 1) you pass before you get a Learner's Driving Licence in Malaysia. JPJ's KPP FAQ lists the car test as 50 multiple-choice questions in 45 minutes, with 42 correct needed to pass; since 29 August 2025 candidates on the combined motorcycle and car module sit 70 questions in 1 hour 15 minutes and need 56. You take a KPP01 class at a JPJ-registered driving institute first, and you must be at least 17 for a car licence. After passing you get an LDL, which lets you drive only under an institute instructor or a JPJ examiner.",
+    rows: [
+      { label: "Questions", value: "50 (car KPP01); 70 for KPP Gabungan" },
+      { label: "Pass mark", value: "42 of 50; 56 of 70 for KPP Gabungan" },
+      { label: "Time", value: "45 minutes; 1 h 15 min for KPP Gabungan" },
+      { label: "Minimum age", value: "17 (class D car)" },
+      { label: "Before the test", value: "KPP01 class at a JPJ-registered driving institute" },
+      { label: "After passing", value: "Learner's Driving Licence (LDL), then circuit and road training" },
+      { label: "Run by", value: "JPJ (Jabatan Pengangkutan Jalan)" },
+    ],
+    basedOn: "JPJ KPP Gabungan FAQ and MyGOV driving licence guidance, checked October 2026",
+    source: { name: "MyGOV: Memohon lesen memandu", url: "https://www.malaysia.gov.my/my/categories/pengangkutan/lesen-memandu/memohon-lesen-memandu" },
+  },
+  hkdrive: {
+    answer:
+      "The Part A written test is the theory step to a private car driving licence in Hong Kong. It is 20 multiple-choice questions, each with three options, on a computer at the Transport Department's written test centre in Cheung Sha Wan, and you need at least 16 right to pass; you get 20 minutes. The questions are mainly based on the Road Users' Code and recent changes to traffic law. You must be at least 18 to drive a private car, and a learner may drive only with a licensed driving instructor, with L-plates front and rear, and never on an expressway.",
+    rows: [
+      { label: "Questions", value: "20 multiple-choice, 3 options each" },
+      { label: "Pass mark", value: "16 of 20" },
+      { label: "Time", value: "20 minutes" },
+      { label: "Where", value: "TD written test centre, Cheung Sha Wan Government Offices" },
+      { label: "Minimum age", value: "18 (private car)" },
+      { label: "Study material", value: "Road Users' Code (Transport Department)" },
+      { label: "After passing", value: "Probationary licence for at least 12 months" },
+      { label: "Run by", value: "Transport Department, Hong Kong" },
+    ],
+    basedOn: "td.gov.hk Part A written test page and the Road Users' Code, checked October 2026",
+    source: { name: "Transport Department: Part A Test (Written Test)", url: "https://www.td.gov.hk/en/public_services/licences_and_permits/driving_test/wt/index.html" },
+  },
   iedtt: {
     answer:
       "The Driver Theory Test is the computer test you must pass in Ireland before you can apply for your first learner permit. The car test is 40 multiple-choice questions in 45 minutes, and you need 35 correct to pass. It is run for the Road Safety Authority (RSA) at test centres around the country, the questions are based on the Rules of the Road, and your pass certificate is valid for two years.",

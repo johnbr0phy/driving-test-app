@@ -26,6 +26,8 @@ export const TIGER_EXAM_IDS = [
   "ffi", "police", "faapvt", "nasm", "barber", "jelec",
   // Reviewed remaining exam mascots: complete eight-expression sets.
   "capm", "pcoc", "ibpspo",
+  "psm", "praxis",
+  "gre", "rbt", "ukseru", "ctet",
 ] as const;
 
 export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;

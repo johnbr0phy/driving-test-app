@@ -10,7 +10,7 @@ const { getTigerAsset, getSiteTigerAsset, hasTigerSet, TIGER_EXAM_IDS } = requir
 const { getTigerFace } = require('../lib/resultsCopy.ts');
 const { shareImageUrl, SHARE_IMAGE_VERSION } = require('../lib/shareImageUrl.ts');
 
-const ids = ["capm", "pcoc", "ibpspo"];
+const ids = ["capm", "psm", "rbt", "pcoc", "ukseru", "ibpspo", "ctet", "praxis", "gre"];
 for (const id of ids) {
   test(`${id} has eight distinct transparent 512px expressions and a happy default`, async () => {
     assert.equal(hasTigerSet(id), true);

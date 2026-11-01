@@ -64,13 +64,18 @@ shared one (and check the other exams) or add a field to `ExamConfig`. The share
 - `components/CDLHeader.tsx` and `components/TestIcon.tsx`: import the lucide icon and add the
   `if (icon === "<key>")` line. Check the icon exists: `node -e "console.log(typeof require('lucide-react').<Name>)"`.
 
-## 8. `app/<slug>/` wrappers (eight files)
+## 8. `app/<slug>/` wrappers (five files)
 Copy `app/vtne/` and replace `vtne` with `<id>` (in `getExamById`, `examAppMetadata`,
 `data-theme`, the `@/lib/banks/<id>` import and the redirect) and `Vtne` with the exam's
 PascalCase name in component names: `layout.tsx`, `page.tsx` (redirects to the dashboard),
-`dashboard/page.tsx`, `drill/page.tsx`, `practice/[n]/page.tsx`, `stats/page.tsx`,
-`test/[id]/page.tsx`, `test/[id]/results/page.tsx`. Each is a few lines around a shared
+`dashboard/page.tsx`, `drill/page.tsx`, `stats/page.tsx`. Each is a few lines around a shared
 component; if a wrapper needs more than that, the change belongs in the shared component.
+
+Do **not** add `test/[id]`, `test/[id]/results` or `practice/[n]` folders. Every exam's test,
+results and practice pages are the shared `app/[slug]/...` routes (`lib/examAppRoute.ts`), which
+find the exam by its `slug` and load `lib/banks/<id>.ts` on demand. Per-exam copies were about
+650 dynamic routes and broke production deploys on Vercel's 2,048-route limit (Nov 2026); each
+new copy adds about ten routes back. The bank file name must be the exam id.
 
 Then run `npx tsx scripts/build-training-parts.ts` (it writes the exam's practice-set split to
 `lib/trainingParts.json`).

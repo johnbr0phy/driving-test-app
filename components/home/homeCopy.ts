@@ -1,11 +1,16 @@
 // The country homepage's own words (components/home/HomePage.tsx), the test
 // cards and the catalog search under it, and the country pills, in every
-// language a country homepage is written in (REGIONS[].lang in lib/region.ts).
-// Per-country lines (title, lead, tests heading) are in REGION_HOME instead.
-// A language without an entry reads English; add one with the language's
-// first country homepage (fr, it, pl, nl, es-ES and pt-PT are to come).
+// interface language: a homepage shows in its country's language
+// (REGIONS[].lang in lib/region.ts) or, once someone picks one, in theirs
+// (middleware.ts serves app/home-lang/[region]/[lang]). Per-country lines
+// (title, lead, tests heading) are in REGION_HOME, in the country's own
+// language; a page in another language uses countryLead and testsFor instead.
+// The languages other than English and German live in ./copy/<lang>.ts
+// (machine-translated, pending native review).
 
 import type { Language } from "@/i18n";
+import { regionInfo, type Region } from "@/lib/region";
+import { TRANSLATED_COPY, TRANSLATED_COUNTRY_NAMES, TRANSLATED_IN_NAMES } from "./copy";
 
 export interface HomeCopy {
   heroTitle: string;
@@ -27,9 +32,25 @@ export interface HomeCopy {
   requestTitle: string;
   requestBody: string;
   requestCta: string;
+  /** The US homepage's lead, under the hero title. */
+  usLead: (examCount: number) => string;
+  /** A country homepage's lead when the page is not in the country's own language. */
+  countryLead: (countryName: string) => string;
+  /** The US homepage's FAQ. */
+  usFaqs: (examCount: number) => { q: string; a: string }[];
+  /** The US homepage's DMV section. */
+  dmv: {
+    cta: string;
+    title: string;
+    body: string;
+    about: string;
+    questionsOnTest: (n: number) => string;
+    viewAll: string;
+  };
   /** "Tigertest practice tests for Germany" (JSON-LD ItemList name). */
   listName: (inName: string) => string;
-  /** FAQ for a country homepage. `local`: how many of the country's own driving tests there are. */
+  /** FAQ for a country homepage. `local`: how many of the country's own driving tests there are.
+   *  `inName` is the country's name in this language ("the UK" in English). */
   faqs: (args: { local: number; inName: string; authority: string; examCount: number }) => { q: string; a: string }[];
   // Test cards and catalog search (components/TestCatalogGrid.tsx)
   card: {
@@ -99,6 +120,39 @@ const en: HomeCopy = {
   requestTitle: "Don't see your exam?",
   requestBody: "We add new tests based on requests. Tell us which one you are studying for.",
   requestCta: "Request a test",
+  usLead: (examCount) => `${examCount} exams, from the DMV permit test to the SAT, nursing and IT certs. Every answer explained. No signup.`,
+  countryLead: (countryName) =>
+    `Free practice tests for ${countryName}: the driving theory test and certifications that are the same everywhere. Every answer explained. No signup.`,
+  usFaqs: (examCount) => [
+    {
+      q: "What is Tigertest?",
+      a: `Tigertest is a free practice test site for ${examCount} exams, from the DMV permit test in every state to the SAT, ACT, nursing, healthcare, IT, trade and licensing exams. Each test follows the real exam's published outline, and every question explains the right answer.`,
+    },
+    {
+      q: "Is Tigertest free?",
+      a: "Yes. Almost every test is completely free. The DMV has free practice tests and training plus an optional one-time $9.99 Premium purchase (not a subscription) that unlocks two more tests and training sets and full stats on every US exam.",
+    },
+    {
+      q: "Do I need an account?",
+      a: "No. You can start any test without signing up. Make a free account if you want your progress saved across devices.",
+    },
+    {
+      q: "How does Tigertest help me pass?",
+      a: "Training mode gives instant feedback and brings back the questions you miss until you know them. Full practice tests then simulate the real exam, and your results show which topics still need work.",
+    },
+    {
+      q: "Is Tigertest affiliated with the DMV or any testing company?",
+      a: "No. Tigertest is independent and is not affiliated with any DMV, testing company or certification body.",
+    },
+  ],
+  dmv: {
+    cta: "DMV permit test",
+    title: "Taking your DMV permit test?",
+    body: "200 questions written from your state's own driver's manual, for all 50 states and DC.",
+    about: "About the DMV practice test",
+    questionsOnTest: (n) => `${n} questions on the written test`,
+    viewAll: "View all 50 states",
+  },
   listName: (inName) => `Tigertest practice tests for ${inName}`,
   faqs: ({ local, inName, authority }) => [
     {
@@ -181,23 +235,56 @@ const de: HomeCopy = {
     dashboard: "Tigertest-Übersicht mit Übungssets und Übungstests",
   },
   everyTest: "Alle Übungstests",
-  testsFor: () => "Übungstests für Deutschland",
+  testsFor: (inName) => `Übungstests für ${inName}`,
   usExamPrompt: "Du ziehst in die USA oder lernst für eine US-Prüfung?",
   seeAllTests: (n) => `Alle ${n} Tests ansehen`,
   faqTitle: "Häufige Fragen",
   requestTitle: "Deine Prüfung fehlt?",
   requestBody: "Wir bauen neue Tests nach euren Wünschen. Sag uns, wofür du lernst.",
   requestCta: "Test vorschlagen",
-  listName: () => "Tigertest-Übungstests für Deutschland",
-  faqs: ({ local, authority }) => [
+  usLead: (examCount) => `${examCount} Prüfungen, vom US-Führerscheintest (DMV) bis zum SAT, Pflege- und IT-Zertifikaten. Jede Antwort erklärt. Ohne Anmeldung.`,
+  countryLead: (countryName) =>
+    `Kostenlose Übungstests für ${countryName}: die theoretische Führerscheinprüfung und Zertifizierungen, die überall gleich sind. Jede Antwort erklärt. Ohne Anmeldung.`,
+  usFaqs: (examCount) => [
+    {
+      q: "Was ist Tigertest?",
+      a: `Tigertest ist eine kostenlose Seite mit Übungstests für ${examCount} Prüfungen, vom DMV-Führerscheintest in jedem US-Bundesstaat bis zu SAT, ACT, Pflege, Gesundheitswesen, IT, Handwerk und Zulassungsprüfungen. Jeder Test folgt dem veröffentlichten Aufbau der echten Prüfung, und zu jeder Frage wird die richtige Antwort erklärt.`,
+    },
+    {
+      q: "Ist Tigertest kostenlos?",
+      a: "Ja. Fast jeder Test ist komplett kostenlos. Für den DMV gibt es kostenlose Übungstests und Training, dazu einen optionalen einmaligen Premium-Kauf für 9,99 $ (kein Abo), der zwei weitere Tests, Übungssets und volle Statistiken für jede US-Prüfung freischaltet.",
+    },
+    {
+      q: "Brauche ich ein Konto?",
+      a: "Nein. Du kannst jeden Test ohne Anmeldung starten. Mit einem kostenlosen Konto wird dein Fortschritt auf all deinen Geräten gespeichert.",
+    },
+    {
+      q: "Wie hilft mir Tigertest beim Bestehen?",
+      a: "Im Trainingsmodus siehst du sofort, ob deine Antwort stimmt, und Fragen, die du falsch hast, kommen wieder, bis du sie kannst. Vollständige Übungstests simulieren dann die echte Prüfung, und deine Ergebnisse zeigen, welche Themen noch Arbeit brauchen.",
+    },
+    {
+      q: "Gehört Tigertest zum DMV oder zu einem Prüfungsanbieter?",
+      a: "Nein. Tigertest ist unabhängig und gehört weder zu einem DMV noch zu einem Prüfungsanbieter oder einer Zertifizierungsstelle.",
+    },
+  ],
+  dmv: {
+    cta: "DMV-Führerscheintest",
+    title: "Du machst den DMV-Führerscheintest?",
+    body: "200 Fragen nach dem Fahrerhandbuch deines Bundesstaats, für alle 50 Bundesstaaten und DC.",
+    about: "Über den DMV-Übungstest",
+    questionsOnTest: (n) => `${n} Fragen in der schriftlichen Prüfung`,
+    viewAll: "Alle 50 Bundesstaaten ansehen",
+  },
+  listName: (inName) => `Tigertest-Übungstests für ${inName}`,
+  faqs: ({ local, inName, authority }) => [
     {
       q: "Was ist Tigertest?",
       a:
         local === 0
-          ? "Tigertest ist eine kostenlose Seite mit Übungstests. Für Deutschland gibt es bisher Zertifizierungen, die überall gleich sind, etwa CompTIA und AWS. Zu jeder Frage wird die richtige Antwort erklärt."
-          : `Tigertest ist eine kostenlose Seite mit Übungstests. Für Deutschland gibt es ${local === 1 ? "einen Test zur Führerscheinprüfung" : `${local} Tests zur Führerscheinprüfung`}, geschrieben nach den amtlichen Regeln, dazu Zertifizierungen, die überall gleich sind, etwa CompTIA und AWS. Zu jeder Frage wird die richtige Antwort erklärt.`,
+          ? `Tigertest ist eine kostenlose Seite mit Übungstests. Für ${inName} gibt es bisher Zertifizierungen, die überall gleich sind, etwa CompTIA und AWS. Zu jeder Frage wird die richtige Antwort erklärt.`
+          : `Tigertest ist eine kostenlose Seite mit Übungstests. Für ${inName} gibt es ${local === 1 ? "einen Test zur Führerscheinprüfung" : `${local} Tests zur Führerscheinprüfung`}, geschrieben nach den amtlichen Regeln, dazu Zertifizierungen, die überall gleich sind, etwa CompTIA und AWS. Zu jeder Frage wird die richtige Antwort erklärt.`,
     },
-    { q: "Ist Tigertest kostenlos?", a: "Ja. Jeder Test für Deutschland ist kostenlos, ohne Abo." },
+    { q: "Ist Tigertest kostenlos?", a: `Ja. Jeder Test für ${inName} ist kostenlos, ohne Abo.` },
     {
       q: "Brauche ich ein Konto?",
       a: "Nein. Du kannst jeden Test ohne Anmeldung starten. Mit einem kostenlosen Konto wird dein Fortschritt auf all deinen Geräten gespeichert.",
@@ -233,11 +320,11 @@ const de: HomeCopy = {
     countryTests: (name) => `Tests: ${name}`,
     moreCountries: "Weitere Länder",
     saved: "Für das nächste Mal gespeichert. Dein Fortschritt ist in jedem Land derselbe.",
-    geo: () => "Du siehst Tests für Deutschland, weil du gerade dort bist. Du kannst jederzeit ein anderes Land wählen.",
+    geo: (inName) => `Du siehst Tests für ${inName}, weil du gerade dort bist. Du kannst jederzeit ein anderes Land wählen.`,
   },
 };
 
-const HOME_COPY: Partial<Record<Language, HomeCopy>> = { en, de };
+const HOME_COPY: Partial<Record<Language, HomeCopy>> = { en, de, ...TRANSLATED_COPY };
 
 export function homeCopy(lang: Language): HomeCopy {
   return HOME_COPY[lang] ?? en;
@@ -245,16 +332,19 @@ export function homeCopy(lang: Language): HomeCopy {
 
 /** Country names in a homepage's language, for the pills (English otherwise). */
 export const COUNTRY_NAMES: Partial<Record<Language, Record<string, string>>> = {
+  ...TRANSLATED_COUNTRY_NAMES,
   de: {
     US: "USA", CA: "Kanada", UK: "Vereinigtes Königreich", IE: "Irland", AU: "Australien", NZ: "Neuseeland", IN: "Indien",
     PH: "Philippinen", MY: "Malaysia", SG: "Singapur", HK: "Hongkong", AE: "Vereinigte Arabische Emirate", ZA: "Südafrika",
     NG: "Nigeria", KE: "Kenia", PK: "Pakistan", ES: "Spanien", PT: "Portugal", RO: "Rumänien", SE: "Schweden", GR: "Griechenland",
     DK: "Dänemark", HU: "Ungarn", BE: "Belgien", FI: "Finnland", MT: "Malta", DE: "Deutschland",
   },
-  es: { ES: "España", PT: "Portugal", DE: "Alemania", US: "EE. UU." },
-  pt: { PT: "Portugal", ES: "Espanha", DE: "Alemanha", US: "EUA" },
-  fr: { DE: "Allemagne", ES: "Espagne", PT: "Portugal", BE: "Belgique" },
-  it: { DE: "Germania", ES: "Spagna", PT: "Portogallo" },
-  pl: { DE: "Niemcy", ES: "Hiszpania", PT: "Portugalia" },
-  nl: { DE: "Duitsland", ES: "Spanje", PT: "Portugal", BE: "België" },
 };
+
+/** A country's name as a homepage in `lang` writes it: "the UK" in English,
+ *  "Vereinigtes Königreich" in German, "le Royaume-Uni" in French (with the
+ *  article a sentence needs), the English name where none is set. */
+export function countryNameIn(region: Region, lang: Language): string {
+  if (lang === "en") return regionInfo(region).inName;
+  return TRANSLATED_IN_NAMES[lang]?.[region] ?? COUNTRY_NAMES[lang]?.[region] ?? regionInfo(region).name;
+}

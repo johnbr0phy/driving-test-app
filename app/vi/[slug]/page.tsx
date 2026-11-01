@@ -372,7 +372,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
           </p>
           <Button asChild
               size="lg"
-              className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
+              className="h-auto max-w-full whitespace-normal text-center text-lg px-8 py-3 sm:h-11 sm:py-6 sm:whitespace-nowrap bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
             <Link href={`/dmv/dashboard?state=${state.code}`}>
               Bắt Đầu Luyện Thi Miễn Phí
@@ -583,7 +583,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
           </p>
           <Button asChild
               size="lg"
-              className="text-lg px-8 py-6 bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
+              className="h-auto max-w-full whitespace-normal text-center text-lg px-8 py-3 sm:h-11 sm:py-6 sm:whitespace-nowrap bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
             >
             <Link href={`/dmv/dashboard?state=${state.code}`}>
               Bắt Đầu Luyện Thi Ngay — Miễn Phí
@@ -661,7 +661,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
           </p>
           <Button asChild
               size="lg"
-              className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
+              className="h-auto max-w-full whitespace-normal text-center text-lg px-8 py-3 sm:h-11 sm:py-6 sm:whitespace-nowrap bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
             <Link href={`/dmv/dashboard?state=${state.code}`}>
               Bắt Đầu Luyện Thi Miễn Phí

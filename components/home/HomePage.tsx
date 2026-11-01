@@ -295,7 +295,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
             {c.allTests(examCount)} &rarr;
           </Link>
         </div>
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {popular.map(({ test, answered }) => (
             <TestCard key={test.id} test={test} answered={answered} lang={lang} />
           ))}
@@ -356,7 +356,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
                 {c.allTests(examCount)} &rarr;
               </Link>
             </div>
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {localTests.map((test) => (
                 <TestCard key={test.id} test={test} answered={answeredById.get(test.id) ?? null} lang={lang} />
               ))}

@@ -181,7 +181,7 @@ export default function Epa608LandingPage() {
                       <span className="block font-medium text-gray-900 dark:text-gray-50">{s.name}</span>
                       <span className="block text-sm text-gray-500 dark:text-gray-400">{s.detail}</span>
                     </div>
-                    <span className="text-brand-dark font-semibold whitespace-nowrap">{s.questions} questions</span>
+                    <span className="text-right text-brand-dark font-semibold sm:whitespace-nowrap">{s.questions} questions</span>
                   </div>
                 ))}
               </div>

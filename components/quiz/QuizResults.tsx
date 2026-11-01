@@ -114,7 +114,7 @@ export function QuizResults({ code }: { code: string }) {
           <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">{when(attempt.at)}</p>
         </div>
 
-        <div className="grid gap-2 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
           {missedQuizIds.length > 0 && (
             <Button asChild className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 sm:col-span-3">
               <Link href={`${quizPath(code)}/practice?ids=${encodeURIComponent(missedQuizIds.join(","))}`}>

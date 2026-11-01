@@ -182,7 +182,7 @@ export default function CDLEndorsementsLandingPage() {
                       <span className="block font-medium text-gray-900 dark:text-gray-50">{e.name}</span>
                       <span className="block text-sm text-gray-500 dark:text-gray-400">{e.detail}</span>
                     </div>
-                    <span className="text-brand-dark font-semibold whitespace-nowrap">{e.questions} questions</span>
+                    <span className="text-right text-brand-dark font-semibold sm:whitespace-nowrap">{e.questions} questions</span>
                   </div>
                 ))}
               </div>

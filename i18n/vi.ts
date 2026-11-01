@@ -1,6 +1,12 @@
 import type { TranslationKeys } from './en';
 
 export const vi: TranslationKeys = {
+  // Interface language (Settings, footer) and a test's question language (its dashboard)
+  languageChoice: {
+    questionsIn: "Câu hỏi bằng",
+    language: "Ngôn ngữ",
+    languageNote: "Các trang hiển thị bằng ngôn ngữ này. Mỗi bài thi chỉ có các ngôn ngữ mà bài thi đó hỗ trợ.",
+  },
   // Common
   common: {
     dmvHeaderTitle: "Thi Thử DMV",

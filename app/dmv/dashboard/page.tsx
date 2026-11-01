@@ -20,6 +20,8 @@ import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart
 import { computeMissSummary, isDrillFree } from "@/lib/missedQuestions";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { DmvStatePrompt, DmvStateLine } from "@/components/dashboard/DmvStatePicker";
+import { TestLanguageChoice } from "@/components/TestLanguageChoice";
+import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackStateSelected, trackViewItem } from "@/lib/analytics";
 import { ClassBanner } from "@/components/exam/ClassBanner";
@@ -32,6 +34,7 @@ function DashboardContent() {
   const hydrated = useHydration();
   const { user, loading: authLoading } = useAuth();
   const { t, language } = useTranslation();
+  const dmvLanguages = useDmvTestLanguage();
   const isGuest = useStore((state) => state.isGuest);
   const selectedState = useStore((state) => state.selectedState);
   const firestoreLoaded = useStore((state) => state.firestoreLoaded);
@@ -436,6 +439,7 @@ function DashboardContent() {
             </div>
           </div>
           <DmvStateLine />
+          <TestLanguageChoice offered={dmvLanguages.offered} value={dmvLanguages.lang} onChange={dmvLanguages.setLang} className="mt-3" />
         </div>
 
         {/* Interleaved Training + Tests */}

@@ -11,11 +11,9 @@ import { isZhState } from "@/data/zhStates";
 import { CountrySwitcher } from "@/components/CountrySwitcher";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { examLanguages, getExamByPath } from "@/lib/exams";
+import { examLandingPath, getExamByPath } from "@/lib/exams";
 import { relatedTests } from "@/lib/testCatalog";
 import { getExamV2ByPath } from "@/lib/v2/registry";
-import { isDmvPath } from "@/lib/pageLanguage";
-import { DMV_LANGUAGES } from "@/i18n";
 
 
 const popularStateSlugs = [
@@ -66,11 +64,14 @@ export function Footer() {
     pathname === "/ko/juibyeol-dmv-pilgi-siheom" ||
     pathname === "/zh/gezhou-dmv-bishi-lianxi";
 
-  // A translated exam (CDL in Spanish) gets the toggle on its app pages, not
-  // on its English landing page.
-  const examLangs = v1Exam ? examLanguages(v1Exam) : [];
-  const onTranslatedExamApp = !!v1Exam && examLangs.length > 1 && !!pathname?.startsWith(`${v1Exam.slug}/`);
-  const showLanguageToggle = !isHomepage && !isSeoPage && !isQuizPage && (!isAltExam || onTranslatedExamApp);
+  // The picker sets the person's own language (lib/language.ts), which every
+  // page follows except landings whose URL is in a language (they have their
+  // own switcher) and the v2 exams, which have no translations. A test's
+  // questions have their own choice on its dashboard.
+  const onExamLanding =
+    !!v1Exam &&
+    (pathname === examLandingPath(v1Exam) || Object.values(v1Exam.translations ?? {}).some((tr) => tr?.landingPath === pathname));
+  const showLanguageToggle = !isHomepage && !isSeoPage && !isQuizPage && !v2Exam && !onExamLanding;
 
   const dataTheme = exam?.id;
 
@@ -154,10 +155,7 @@ export function Footer() {
           </p>
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-4 gap-y-2 text-gray-500 dark:text-gray-400">
             <CountrySwitcher />
-            {/* DMV pages offer only the DMV's languages; neutral pages every language. */}
-            {showLanguageToggle && (
-              <LanguageSwitcher languages={isAltExam ? examLangs : isDmvPath(pathname) ? DMV_LANGUAGES : undefined} />
-            )}
+            {showLanguageToggle && <LanguageSwitcher />}
             <ThemeToggle className="h-7 w-7" />
             <Link href="/create" className="hover:text-brand hover:underline">
               {t("footer.makeAQuiz")}

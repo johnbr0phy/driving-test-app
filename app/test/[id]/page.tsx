@@ -12,6 +12,7 @@ import { Question } from "@/types";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { en, es, vi, ko, zh } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
 import { useAuth } from "@/contexts/AuthContext";
@@ -28,6 +29,7 @@ export default function TestPage() {
   const hydrated = useHydration();
   const initialized = useRef(false);
   const { t, language } = useTranslation();
+  const { lang: questionLanguage } = useDmvTestLanguage();
   const [paywallOpen, setPaywallOpen] = useState(false);
 
   // Pick a rotating CTA once per page load. Both en/es lists have the same
@@ -133,7 +135,7 @@ export default function TestPage() {
         }
       } else {
         // Generate new test
-        const testQuestions = generateTest(testId, state, language).map(shuffleQuestionOptions);
+        const testQuestions = generateTest(testId, state, questionLanguage).map(shuffleQuestionOptions);
         setQuestions(testQuestions);
         startTest(testId, testQuestions);
       }

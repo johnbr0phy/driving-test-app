@@ -1,10 +1,11 @@
 "use client";
 
-import { createContext, useContext, useEffect, useMemo, useCallback } from "react";
+import { createContext, useContext, useEffect, useMemo, useCallback, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Language, createT } from "@/i18n";
 import { useStore } from "@/store/useStore";
 import { pageLanguage } from "@/lib/pageLanguage";
+import { countryLanguage, languageIsChosen, readLanguageCookie, writeLanguageCookie } from "@/lib/language";
 
 interface LanguageContextType {
   /** The language this page shows its chrome in (lib/pageLanguage.ts). */
@@ -32,12 +33,25 @@ export function useTranslation() {
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const preferredLanguage = useStore((state) => state.language);
+  const storeLanguage = useStore((state) => state.language);
+  const chosen = useStore((state) => languageIsChosen(state));
+  const region = useStore((state) => state.region);
   const setStoreLanguage = useStore((state) => state.setLanguage);
   const pathname = usePathname();
-  // A native-language exam runs in its own language, the DMV only in the
-  // languages it has questions for, a country homepage in its country's.
-  const language = pageLanguage(pathname, preferredLanguage);
+  // Until the person picks a language their country's applies. It comes from
+  // a cookie, so it is read after mount to keep the server HTML and the first
+  // client render the same.
+  const [countryLang, setCountryLang] = useState<Language>("en");
+  useEffect(() => setCountryLang(countryLanguage(region)), [region]);
+  const preferredLanguage = chosen ? storeLanguage : countryLang;
+  // Keep middleware's copy of the pick in step (a pick from another device,
+  // or one saved before the cookie existed).
+  useEffect(() => {
+    if (chosen && readLanguageCookie() !== storeLanguage) writeLanguageCookie(storeLanguage);
+  }, [chosen, storeLanguage]);
+  // Landing pages keep the language of their URL; a country homepage shows in
+  // its own language until the person picks one (lib/pageLanguage.ts).
+  const language = pageLanguage(pathname, preferredLanguage, chosen);
 
   const setLanguage = useCallback(
     (lang: Language) => {

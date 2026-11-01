@@ -1,6 +1,12 @@
 import type { TranslationKeys } from './en';
 
 export const ko: TranslationKeys = {
+  // Interface language (Settings, footer) and a test's question language (its dashboard)
+  languageChoice: {
+    questionsIn: "문제 언어",
+    language: "언어",
+    languageNote: "페이지가 이 언어로 표시됩니다. 각 시험은 제공되는 언어만 선택할 수 있습니다.",
+  },
   // Common
   common: {
     dmvHeaderTitle: "DMV 모의고사",

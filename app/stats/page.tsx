@@ -14,6 +14,7 @@ import {
 } from "@/lib/analytics";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { auth } from "@/lib/firebase";
 import { PaywallModal } from "@/components/PaywallModal";
 import { Question } from "@/types";
@@ -49,7 +50,8 @@ function optionText(q: Question, letter: string): string {
 function StatsContent() {
   const router = useRouter();
   const hydrated = useHydration();
-  const { t, language } = useTranslation();
+  const { t } = useTranslation();
+  const { lang: language } = useDmvTestLanguage();
 
   const selectedState = useStore((state) => state.selectedState);
   const isGuest = useStore((state) => state.isGuest);

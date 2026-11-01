@@ -9,6 +9,7 @@ import { useStore } from "@/store/useStore";
 import { getQuestionsData } from "@/lib/testGenerator";
 import { Question } from "@/types";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { trackDailyQuizAnswer, trackStatsEntry } from "@/lib/analytics";
 
 // questionId -> { d: local day number answered, k: quiz kind }
@@ -75,6 +76,7 @@ interface StripQuiz {
 
 export function DailyMissedQuestion({ className }: { className?: string }) {
   const { t, language } = useTranslation();
+  const { lang: questionLanguage } = useDmvTestLanguage();
   const { data } = useCommunityStats();
   const selectedState = useStore((state) => state.selectedState);
   const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
@@ -94,7 +96,7 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
       return { nemesisPool: [], totalAnswered: total };
     }
     const byId = new Map(
-      getQuestionsData(language)
+      getQuestionsData(questionLanguage)
         .filter((q) => q.state === "ALL" || q.state === selectedState)
         .map((q) => [q.questionId, q])
     );
@@ -103,7 +105,7 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
       return question ? [{ perf: p, question }] : [];
     });
     return { nemesisPool: pool, totalAnswered: total };
-  }, [selectedState, getQuestionPerformance, language]);
+  }, [selectedState, getQuestionPerformance, questionLanguage]);
 
   const dayNumber = localDayNumber();
 

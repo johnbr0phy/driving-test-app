@@ -18,6 +18,7 @@ import { DMV_ROUTES } from "@/lib/examRoutes";
 import { TestPageHeader } from "@/components/TestPageHeader";
 import Link from "next/link";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { states } from "@/data/states";
 import { en, es, vi, ko, zh } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
@@ -40,6 +41,7 @@ function TrainingPageContent() {
   useClassMissRecovery(DMV_EXAM_ID);
   const { playCorrectSound, playIncorrectSound } = useSound();
   const { t, language } = useTranslation();
+  const { lang: questionLanguage } = useDmvTestLanguage();
 
   const selectedState = useStore((state) => state.selectedState);
   const isGuest = useStore((state) => state.isGuest);
@@ -179,7 +181,7 @@ function TrainingPageContent() {
         currentSetData.masteredIds,
         currentSetData.wrongQueue,
         currentQuestionIdRef.current,  // Use ref for reliable current question ID
-        language
+        questionLanguage
       );
 
       // Restore the completion screen without replaying an earned moment.
@@ -207,13 +209,13 @@ function TrainingPageContent() {
         selectedState,
         freshTraining.masteredQuestionIds,
         freshTraining.lastQuestionId,
-        language
+        questionLanguage
       );
 
       // If all questions are mastered, reset and start fresh
       if (!question) {
         resetMasteredQuestions();
-        question = getTrainingQuestion(selectedState, [], freshTraining.lastQuestionId, language);
+        question = getTrainingQuestion(selectedState, [], freshTraining.lastQuestionId, questionLanguage);
       }
     }
 

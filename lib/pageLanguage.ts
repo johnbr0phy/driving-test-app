@@ -1,11 +1,13 @@
-// Which language a page's chrome runs in. The person's stored choice
-// (useStore.language, "preferred") is the default, but some pages decide for
-// themselves: a native-language exam runs in its own language, the DMV only
-// in the languages it has questions for, and a country homepage in that
-// country's language. contexts/LanguageContext.tsx applies this.
+// Which language a page's interface runs in. The person's language
+// ("preferred": their pick, else their country's) applies everywhere except
+// landing pages whose URL is in a language (/es/test-dgt-permiso-b, the
+// DMV state pages) and a country homepage the person has not picked a
+// language for, which shows in its country's language. A test's questions
+// have their own language (hooks/useTestLanguage.ts).
+// contexts/LanguageContext.tsx applies this.
 
 import { DMV_LANGUAGES, type Language } from "@/i18n";
-import { examBaseLanguage, examLanguage, getExamByPath } from "@/lib/exams";
+import { examBaseLanguage, examLandingPath, getExamByPath } from "@/lib/exams";
 import { REGIONS, regionHomePath } from "@/lib/region";
 
 // State landing suffixes in every DMV language (app/[slug], app/<lang>/[slug]).
@@ -28,22 +30,28 @@ export function isDmvPath(pathname: string | null | undefined): boolean {
   return DMV_SUFFIXES.some((s) => pathname.endsWith(s));
 }
 
+/** The DMV landing and state pages (not its app routes, which follow the person's language). */
+function isDmvLandingPath(pathname: string): boolean {
+  return DMV_PAGES.has(pathname) || DMV_SUFFIXES.some((s) => pathname.endsWith(s));
+}
+
 const HOME_LANG = new Map(REGIONS.map((r) => [regionHomePath(r.code), r.lang]));
 
-/** The language the page at `pathname` shows its chrome in. */
-export function pageLanguage(pathname: string | null | undefined, preferred: Language): Language {
+/** The language the page at `pathname` shows its interface in. `chosen` says
+ *  whether `preferred` is the person's own pick or only their country's. */
+export function pageLanguage(pathname: string | null | undefined, preferred: Language, chosen = true): Language {
   if (!pathname) return preferred;
   const exam = getExamByPath(pathname);
-  if (exam && examBaseLanguage(exam) !== "en") {
-    // A landing is in the language of its URL; the app pages follow the
-    // person's choice when the exam is offered in it, else the exam's own.
-    if (pathname === exam.landingPath) return examBaseLanguage(exam);
+  if (exam) {
+    // A landing is in the language of its URL.
+    if (pathname === examLandingPath(exam)) return examBaseLanguage(exam);
     const tr = Object.entries(exam.translations ?? {}).find(([, t]) => t?.landingPath === pathname);
     if (tr) return tr[0] as Language;
-    return examLanguage(exam, preferred);
+    return preferred;
   }
-  if (isDmvPath(pathname)) return DMV_LANGUAGES.includes(preferred) ? preferred : "en";
+  // The DMV landing and state pages have one URL per DMV language.
+  if (isDmvLandingPath(pathname)) return DMV_LANGUAGES.includes(preferred) ? preferred : "en";
   const home = HOME_LANG.get(pathname);
-  if (home) return home;
+  if (home && !chosen) return home;
   return preferred;
 }

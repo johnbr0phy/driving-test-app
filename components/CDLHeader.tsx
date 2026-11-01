@@ -8,7 +8,8 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTestTheme } from "@/contexts/TestThemeContext";
-import { examLandingPath, examLanguage, examLanguages, getExamById, getExamVariants } from "@/lib/exams";
+import { examBaseLanguage, examLandingPath, examLanguages, getExamById, getExamVariants } from "@/lib/exams";
+import { useTestLanguage } from "@/hooks/useTestLanguage";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { createT, type Language } from "@/i18n";
@@ -39,7 +40,8 @@ export function CDLHeader() {
   const landingLang = Object.entries(exam?.translations ?? {}).find(([, tr]) => tr.landingPath === pathname)?.[0] as
     | Language
     | undefined;
-  const contentLang: Language = landingLang ?? (exam ? examLanguage(exam, language) : "en");
+  const { lang: testLang } = useTestLanguage(exam?.id ?? "", exam ? examLanguages(exam) : ["en"], exam ? examBaseLanguage(exam) : "en");
+  const contentLang: Language = landingLang ?? (exam ? testLang : "en");
   const t = createT(contentLang);
   // A translated exam's landings carry the DMV homepage's language switcher:
   // each language is its own URL, so each option is a real link there (crawlers

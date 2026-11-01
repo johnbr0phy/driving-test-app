@@ -5547,6 +5547,14 @@
       scrollbar-gutter: stable;
     }
   }
+  /* Belt and braces against sideways scroll on phones: anything wider than
+     the screen is clipped instead of letting the page pan. clip (not hidden)
+     makes no scroll container, so position: sticky keeps working. Still fix
+     the element itself; the phone-width sweep finds them. */
+  html,
+  body {
+    overflow-x: clip;
+  }
   body {
     @apply bg-background text-foreground;
   }

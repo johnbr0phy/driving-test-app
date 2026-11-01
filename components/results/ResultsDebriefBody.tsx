@@ -15,6 +15,7 @@ import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { Question } from "@/types";
 import type { ReadyTestResults } from "@/hooks/useTestResults";
 import type { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
+import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
 function optionText(q: Question, letter: string): string {
   const map: Record<string, string> = { A: q.optionA, B: q.optionB, C: q.optionC, D: q.optionD };
@@ -36,6 +37,7 @@ interface Props {
 //   4. Correct answers collapsed behind one expander.
 //   5. Guest save banner, after they've seen what there is to lose.
 export function ResultsDebriefBody({ results, upgrade }: Props) {
+  const price = usePremiumPrice();
   const router = useRouter();
   const {
     t,
@@ -160,7 +162,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
               {step.locked ? (
                 <span className="flex items-center gap-1.5 shrink-0">
                   <span className="text-[11px] font-bold text-brand-dark bg-brand-light border border-brand-border-light rounded-full px-2 py-0.5">
-                    $9.99
+                    {price}
                   </span>
                   <Lock className="h-3.5 w-3.5 text-gray-500 dark:text-gray-400" />
                 </span>

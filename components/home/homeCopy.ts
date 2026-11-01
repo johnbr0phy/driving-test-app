@@ -130,7 +130,7 @@ const en: HomeCopy = {
     },
     {
       q: "Is Tigertest free?",
-      a: "Yes. Almost every test is completely free. The DMV has free practice tests and training plus an optional one-time $9.99 Premium purchase (not a subscription) that unlocks two more tests and training sets and full stats on every US exam.",
+      a: "Yes. Almost every test is completely free. The DMV has free practice tests and training plus an optional one-time $9.99 Premium purchase (not a subscription) that unlocks two more tests and training sets and full stats on every exam.",
     },
     {
       q: "Do I need an account?",
@@ -252,7 +252,7 @@ const de: HomeCopy = {
     },
     {
       q: "Ist Tigertest kostenlos?",
-      a: "Ja. Fast jeder Test ist komplett kostenlos. Für den DMV gibt es kostenlose Übungstests und Training, dazu einen optionalen einmaligen Premium-Kauf für 9,99 $ (kein Abo), der zwei weitere Tests, Übungssets und volle Statistiken für jede US-Prüfung freischaltet.",
+      a: "Ja. Fast jeder Test ist komplett kostenlos. Für den DMV gibt es kostenlose Übungstests und Training, dazu einen optionalen einmaligen Premium-Kauf für 8,99 € (kein Abo), der zwei weitere Tests, Übungssets und volle Statistiken für jede Prüfung freischaltet.",
     },
     {
       q: "Brauche ich ein Konto?",

@@ -1,6 +1,6 @@
 "use client";
 
-// "Hi, I'm John" paywall: the same $9.99 Premium, pitched as chipping in to
+// "Hi, I'm John" paywall: the same Premium (local price, lib/pricing.ts), pitched as chipping in to
 // keep Tigertest running, with the Premium features as the thank-you.
 // PaywallModal renders it for English readers (same props).
 
@@ -16,6 +16,7 @@ import { CheckCircle } from "lucide-react";
 import { en } from "@/i18n";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { JohnFace } from "@/components/JohnFace";
+import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
 interface SupportPaywallModalProps {
   open: boolean;
@@ -32,7 +33,7 @@ const DMV_BENEFITS = [
   "Safety & Emergencies and State Laws",
   "Tests C and D",
   "The 50 questions most people fail",
-  "Full stats on every US exam",
+  "Full stats on every exam",
 ];
 
 export function SupportPaywallModal({
@@ -43,6 +44,7 @@ export function SupportPaywallModal({
   onSignUp,
   benefits,
 }: SupportPaywallModalProps) {
+  const price = usePremiumPrice();
   const [loading, setLoading] = useState(false);
   const isNative = useIsNativeApp();
 
@@ -100,7 +102,7 @@ export function SupportPaywallModal({
               {loading ? (
                 "Loading..."
               ) : (
-                isGuest ? "Sign up free to chip in" : "Chip in $9.99"
+                isGuest ? "Sign up free to chip in" : `Chip in ${price}`
               )}
             </Button>
             {!isGuest && (

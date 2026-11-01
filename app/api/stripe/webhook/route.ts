@@ -67,6 +67,23 @@ export async function POST(request: NextRequest) {
         lastUpdated: new Date().toISOString(),
       });
 
+      // What Stripe settled in dollars, for /admin revenue when the buyer paid
+      // in another currency (lib/pricing.ts). Best-effort: a failed lookup
+      // must not fail a purchase we already granted.
+      let amountUsdCents: number | null = session.currency === 'usd' ? session.amount_total : null;
+      if (amountUsdCents === null && typeof session.payment_intent === 'string') {
+        try {
+          const pi = await stripe.paymentIntents.retrieve(session.payment_intent, {
+            expand: ['latest_charge.balance_transaction'],
+          });
+          const charge = pi.latest_charge as Stripe.Charge | null;
+          const tx = charge?.balance_transaction as Stripe.BalanceTransaction | null;
+          if (tx && tx.currency === 'usd') amountUsdCents = tx.amount;
+        } catch (err) {
+          console.error(`[webhook] no settled amount for ${session.payment_intent}:`, err);
+        }
+      }
+
       // Create payment record for audit trail
       const paymentRef = adminDb.collection('payments').doc(session.payment_intent as string);
       await paymentRef.set({
@@ -76,6 +93,8 @@ export async function POST(request: NextRequest) {
         stripePaymentIntentId: session.payment_intent,
         amount: session.amount_total,
         currency: session.currency,
+        amountUsdCents,
+        country: session.metadata?.country || null,
         status: 'succeeded',
         email: session.metadata?.email || session.customer_email,
         // What the buyer paid from, for revenue by exam and paywall on the /admin Today tab.

@@ -134,7 +134,7 @@ export function briefNumbers(p: OpportunitiesPayload, schools: ReturnType<typeof
 
 const COUNTRY_NAMES = REGIONS.filter((r) => r.code !== 'US').map((r) => r.name).join(', ');
 
-const SYSTEM = `You write the morning update for John, who runs Tigertest (tigertest.io), a site of free practice tests: the US DMV permit test plus about ${Math.floor(TEST_CATALOG.length / 10) * 10} other exams, with country pages and local exams for ${COUNTRY_NAMES} too. A $9.99 one-time Premium unlock (US dollars) is sold only on the DMV and on US exams' stats pages (the SAT and ACT went fully free on Oct 31, 2026); other countries' exams are free and cannot sell.
+const SYSTEM = `You write the morning update for John, who runs Tigertest (tigertest.io), a site of free practice tests: the US DMV permit test plus about ${Math.floor(TEST_CATALOG.length / 10) * 10} other exams, with country pages and local exams for ${COUNTRY_NAMES} too. A $9.99 one-time Premium unlock (a local price outside the US, revenue reported in US dollars) is sold on the DMV and on every exam's stats page in every country (the SAT and ACT went fully free on Oct 31, 2026).
 
 John does not like reading much text. Write:
 - line 1: one headline sentence, at most 15 words, saying the single most important thing today

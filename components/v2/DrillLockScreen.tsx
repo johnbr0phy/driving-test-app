@@ -9,6 +9,7 @@ import { getTigerAsset } from "@/lib/tigerAssets";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { otherPremiumExams } from "@/lib/v2/premium";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
+import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
 /**
  * Full-screen lock for a Premium drill, shared by the Basics overview, the
@@ -16,6 +17,7 @@ import { useV2Paywall, V2Paywall } from "./V2Paywall";
  * meets the same wall.
  */
 export function DrillLockScreen({ exam, drill, detail, backHref }: { exam: ExamV2Config; drill: DrillDef; detail: string; backHref?: string }) {
+  const price = usePremiumPrice();
   const routes = v2Routes(exam);
   const paywall = useV2Paywall(exam, "drill");
   const isNative = useIsNativeApp();
@@ -40,7 +42,7 @@ export function DrillLockScreen({ exam, drill, detail, backHref }: { exam: ExamV
             onClick={() => paywall.open(`drill_${drill.key}`, `${drill.name} drill`)}
             className="v2-tap mt-6 w-full rounded-xl bg-brand text-base font-bold text-white"
           >
-            Unlock with Premium{isNative ? "" : " · $9.99"}
+            Unlock with Premium{isNative ? "" : ` · ${price}`}
           </button>
           <Link href={routes.dashboard} className="mt-3 block text-sm font-semibold text-gray-500 dark:text-gray-400">Back to the dashboard</Link>
         </div>

@@ -155,7 +155,7 @@ function CountriesCard({ data, selected, onSelect }: {
         Tap a country to filter the exam table. Answers and learners are filed by the exam&apos;s country (a Canadian on the DMV test counts under the US);
         visitors and signups by the visitor&apos;s.
         {data.otherCountryVisitors30d !== null && ` ${fmtInt(data.otherCountryVisitors30d)} first visits in 30 days came from countries with no tests of their own.`}
-        {!tracked && " Visitors and signups by country fill in from this release on."} Only US exams sell: checkout is in US dollars.
+        {!tracked && " Visitors and signups by country fill in from this release on."} Every exam sells (stats paywall), priced in the visitor&apos;s currency; revenue is in US dollars.
       </p>
     </Card>
   );

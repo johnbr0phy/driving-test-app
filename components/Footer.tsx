@@ -45,7 +45,9 @@ export function Footer() {
   const isHomepage = pathname === "/dmv-practice-test";
   // User-made quizzes are not a test cluster: no state or test links there.
   const isQuizPage =
-    pathname === "/q" || !!pathname?.startsWith("/q/") || pathname === "/quizzes" || pathname === "/create";
+    pathname === "/q" || !!pathname?.startsWith("/q/") || pathname === "/quizzes" || pathname === "/create" ||
+    // The search homepage trial wants the same short footer.
+    pathname === "/home-v2";
   // Driving schools only belong next to driving tests (DMV, CDL, motorcycle).
 
   // SEO landing pages have dedicated /es/ and /vi/ URLs, so they manage

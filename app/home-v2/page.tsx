@@ -21,14 +21,14 @@ export default async function HomeV2Page() {
   const popularity: Record<string, number> = {};
   for (const p of tests) popularity[p.test.id] = p.answered ?? 0;
 
-  // Chips under the box: this week's most practised tests from the visitor's
+  // The feed under the box: this week's most practised tests from the visitor's
   // country (or worldwide), topped up with the country's own tests.
   const local = (id: string) => regionOfTest(id) === region || regionOfTest(id) === "GLOBAL";
-  const chips = tests.map((p) => p.test).filter((t) => local(t.id));
-  for (const t of TEST_CATALOG) {
-    if (chips.length >= 6) break;
-    if (regionOfTest(t.id) === region && !chips.some((c) => c.id === t.id)) chips.push(t);
+  const feed = tests.filter((p) => local(p.test.id));
+  for (const test of TEST_CATALOG) {
+    if (feed.length >= 6) break;
+    if (regionOfTest(test.id) === region && !feed.some((p) => p.test.id === test.id)) feed.push({ test, answered: null });
   }
 
-  return <SearchHome initialRegion={region} popularity={popularity} popular={chips.slice(0, 6)} />;
+  return <SearchHome initialRegion={region} popularity={popularity} popular={feed.slice(0, 6)} />;
 }

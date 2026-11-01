@@ -14,6 +14,7 @@ import { BarChart3 } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSwitcher } from "@/components/TestSwitcher";
 import { EXAMS } from "@/lib/exams";
+import { DMV_LANGUAGES } from "@/i18n";
 import { useExamStarted } from "@/hooks/useExamStarted";
 import { BrandLockup } from "@/components/BrandLockup";
 
@@ -62,7 +63,7 @@ export function Header() {
             <TestSwitcher />
 
             {/* Language Toggle - shown only on the homepage; other pages render it in the footer */}
-            {isHomepage && <LanguageSwitcher />}
+            {isHomepage && <LanguageSwitcher languages={DMV_LANGUAGES} />}
 
             {(user || isGuest) && (
               <Link

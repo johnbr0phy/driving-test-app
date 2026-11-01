@@ -1,0 +1,35 @@
+{
+  "id": "mttheory",
+  "stateCode": "MTTHEORY",
+  "idBase": 14600,
+  "prefix": "MTTHE-",
+  "slug": "/malta-driving-theory",
+  "landingPath": "/malta-driving-theory-test",
+  "dataFile": "data/malta-driving-theory-questions.json",
+  "name": "Malta Driving Theory Test Practice",
+  "shortName": "Malta theory test",
+  "examLabel": "Malta driving theory test",
+  "fullName": "Malta driving theory test (category B car)",
+  "icon": "car",
+  "testCount": 5,
+  "questionsPerTest": 35,
+  "passPct": 85,
+  "categories": [
+    {"key": "mtLicence", "label": "Licences, Learners & the Test", "perTest": 3, "pool": 18, "segment": "LIC"},
+    {"key": "mtSigns", "label": "Road Signs", "perTest": 7, "pool": 38, "segment": "SGN"},
+    {"key": "mtMarkings", "label": "Road Markings, Lights & Signals", "perTest": 4, "pool": 22, "segment": "MRK"},
+    {"key": "mtJunctions", "label": "Roundabouts, Junctions & Priority", "perTest": 6, "pool": 32, "segment": "JNC"},
+    {"key": "mtRoad", "label": "Speed, Lanes & Overtaking", "perTest": 4, "pool": 22, "segment": "ROD"},
+    {"key": "mtParking", "label": "Stopping & Parking", "perTest": 2, "pool": 12, "segment": "PRK"},
+    {"key": "mtVulnerable", "label": "Pedestrians, Cyclists & Other Road Users", "perTest": 4, "pool": 22, "segment": "VUL"},
+    {"key": "mtSafety", "label": "Alcohol, Phones, Seat Belts & Your Car", "perTest": 3, "pool": 18, "segment": "SAF"},
+    {"key": "mtEmergency", "label": "Night, Weather, Breakdowns & Crashes", "perTest": 2, "pool": 16, "segment": "EMG"}
+  ],
+  "notes": "5 real-length tests x 35 = 175 items in tests; pools are 5x per-test plus spares (3/3/2/2/2/2/2/3/6 = 25 training-only items, the last of each pool). passPct 85 gives ceil(0.85 x 35) = 30, the real pass mark (30 of 35). Dashboard = 4 topic sets + 5 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 14601, "name": "Road Signs", "categories": ["mtSigns"], "size": 38},
+    {"setNumber": 2, "id": 14602, "name": "Markings, Signals & Junctions", "categories": ["mtMarkings", "mtJunctions"], "size": 54},
+    {"setNumber": 3, "id": 14603, "name": "Speed, Parking & Sharing the Road", "categories": ["mtRoad", "mtParking", "mtVulnerable"], "size": 56},
+    {"setNumber": 4, "id": 14604, "name": "Licences, Safety & Emergencies", "categories": ["mtLicence", "mtSafety", "mtEmergency"], "size": 52}
+  ]
+}

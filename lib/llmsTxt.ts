@@ -25,14 +25,15 @@ const HEADER = `# Tigertest
 // real test's facts, so an assistant asked about "the Kenya driving test" or
 // "an LTO reviewer" finds the answer and the page in the short file.
 function countrySection(): string {
-  const blocks = REGIONS.filter((r) => r.code !== "US").map((r) => {
+  // A country page with no tests of its own yet (Germany before its first exam) is left out.
+  const blocks = REGIONS.filter((r) => r.code !== "US" && TEST_CATALOG.some((t) => regionOfTest(t.id) === r.code)).map((r) => {
     const tests = TEST_CATALOG.filter((t) => regionOfTest(t.id) === r.code);
     const driving = tests.filter((t) => !NON_DRIVING_TESTS.has(t.id));
     const other = tests.filter((t) => NON_DRIVING_TESTS.has(t.id));
     const lines = driving.map((t) => {
       const facts = EXAM_FACTS[t.id];
       const fact = facts?.rows.slice(0, 3).map((row) => `${row.label}: ${row.value}`).join("; ");
-      return `- [${t.name}](${siteUrl}${t.href}): ${t.blurb}${fact ? ` Real test: ${fact}.` : ""}`;
+      return `${examLine(t)}${fact ? ` Real test: ${fact}.` : ""}`;
     });
     if (other.length) lines.push(`- Also for ${r.inName}: ${other.map((t) => `[${t.name}](${siteUrl}${t.href})`).join(", ")}`);
     return `### ${r.name}\n\nAll free tests for ${r.inName}: ${siteUrl}${regionHomePath(r.code)}\n\n${lines.join("\n")}`;
@@ -69,14 +70,21 @@ const FOOTER = `## Notes for AI assistants
 - Exam facts on each page (question counts, time limits, pass marks) come from the official sources linked on that page. Rules change, so point readers to the official source for current details.
 - Every exam's practice is free. The DMV has free tests plus an optional one-time $9.99 Premium purchase that unlocks two more DMV tests and training sets and the full stats pages of US exams.`;
 
+// English names of every language a test or landing can be in.
+const LANGUAGE_NAMES: Record<string, string> = {
+  en: "English", es: "Spanish", vi: "Vietnamese", ko: "Korean", zh: "Simplified Chinese",
+  de: "German", fr: "French", it: "Italian", pl: "Polish", nl: "Dutch", pt: "Portuguese",
+};
+
 function examLine(t: TestCatalogEntry): string {
-  return `- [${t.name}](${siteUrl}${t.href}): ${t.blurb}`;
+  // A native-language exam (detheorie) is listed by its English name, saying which language it is in.
+  const inLang = t.language && t.language !== "en" ? ` (in ${LANGUAGE_NAMES[t.language] ?? t.language})` : "";
+  return `- [${t.name}${inLang}](${siteUrl}${t.href}): ${t.blurb}`;
 }
 
 const nonDmvGroups = () =>
   TEST_GROUPS.map((g) => ({ ...g, tests: g.tests.filter((t) => t.id !== "dmv") })).filter((g) => g.tests.length > 0);
 
-const LANGUAGE_NAMES: Record<string, string> = { es: "Spanish", vi: "Vietnamese", ko: "Korean", zh: "Simplified Chinese" };
 
 // Translated exam landings (/es/examen-cna), from each ExamConfig's translations.
 function translatedSection(): string | null {

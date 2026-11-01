@@ -1,0 +1,33 @@
+{
+  "id": "dkteori",
+  "stateCode": "DKTEORI",
+  "idBase": 14200,
+  "prefix": "DKTEO-",
+  "slug": "/denmark-driving-theory",
+  "landingPath": "/denmark-driving-theory-test",
+  "dataFile": "data/denmark-driving-theory-questions.json",
+  "name": "Denmark Driving Theory Practice Test",
+  "shortName": "Denmark theory test",
+  "examLabel": "Danish theory test",
+  "fullName": "Danish driving theory test (teoriprøve), category B",
+  "icon": "car",
+  "testCount": 8,
+  "questionsPerTest": 25,
+  "passPct": 80,
+  "categories": [
+    {"key": "dkVehicle", "label": "Car, Equipment & Documents", "perTest": 2, "pool": 16, "segment": "VEH", "plan": "afsnit 1 (8%)"},
+    {"key": "dkBehaviour", "label": "Vehicles, Road Users & Fitness to Drive", "perTest": 2, "pool": 16, "segment": "BEH", "plan": "afsnit 3 and 4 (4% + 4%)"},
+    {"key": "dkBasics", "label": "Roads, Basic Rules & Special Risks", "perTest": 3, "pool": 24, "segment": "BAS", "plan": "afsnit 5, 6 and 8 (4% each)"},
+    {"key": "dkLanes", "label": "Moving Off, Speed & Changing Lanes", "perTest": 3, "pool": 24, "segment": "LAN", "plan": "afsnit 7.1 to 7.5"},
+    {"key": "dkPassing", "label": "Passing, Meeting, Following & Overtaking", "perTest": 4, "pool": 32, "segment": "PAS", "plan": "afsnit 7.6 to 7.9"},
+    {"key": "dkJunctions", "label": "Junctions, Give Way & Roundabouts", "perTest": 5, "pool": 40, "segment": "JNC", "plan": "afsnit 7.10 to 7.15"},
+    {"key": "dkMotorway", "label": "Motorways, Parking, Darkness & Tunnels", "perTest": 6, "pool": 48, "segment": "MWY", "plan": "afsnit 7.16 to 7.21"}
+  ],
+  "notes": "8 real-length tests x 25 = 200, every item used once in tests. Weights follow Færdselsstyrelsen's published randomisation key for the digital category B test (afsnit 1 8%, 3/4/5/6/8 4% each, 7 72%): 2 + 2 + 3 + 18 per 25, section 7 split 3/4/5/6. passPct 80 = 20 of 25, i.e. at most 5 errors like the real test. Dashboard = 4 topic sets + 8 tests = 12 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 14201, "name": "Car, Road Users & Basic Rules", "categories": ["dkVehicle", "dkBehaviour", "dkBasics"], "size": 56},
+    {"setNumber": 2, "id": 14202, "name": "Lanes, Passing & Overtaking", "categories": ["dkLanes", "dkPassing"], "size": 56},
+    {"setNumber": 3, "id": 14203, "name": "Junctions, Give Way & Roundabouts", "categories": ["dkJunctions"], "size": 40},
+    {"setNumber": 4, "id": 14204, "name": "Motorways, Parking & Darkness", "categories": ["dkMotorway"], "size": 48}
+  ]
+}

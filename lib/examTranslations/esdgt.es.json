@@ -1,0 +1,40 @@
+{
+  "landingPath": "/es/test-dgt-permiso-b",
+  "locale": "es-ES",
+  "name": "Test DGT del permiso B",
+  "shortName": "Test DGT",
+  "examLabel": "Examen teórico de la DGT",
+  "fullName": "examen teórico de la DGT para el permiso B (turismo)",
+  "trainingSets": {
+    "1": { "name": "Señales, marcas viales y semáforos", "weightLabel": "8 de 30 preguntas del test" },
+    "2": { "name": "Prioridad e intersecciones", "weightLabel": "4 de 30 preguntas del test" },
+    "3": { "name": "Velocidad, carriles y adelantamientos", "weightLabel": "7 de 30 preguntas del test" },
+    "4": { "name": "Estacionamiento, alumbrado y mal tiempo", "weightLabel": "5 de 30 preguntas del test" },
+    "5": { "name": "Permisos, alcohol y emergencias", "weightLabel": "6 de 30 preguntas del test" }
+  },
+  "categoryLabels": {
+    "esdgtLicence": "Permisos, documentación y vehículo",
+    "esdgtSigns": "Señales y agentes",
+    "esdgtMarkings": "Marcas viales y semáforos",
+    "esdgtPriority": "Prioridad, intersecciones y glorietas",
+    "esdgtSpeed": "Velocidad, distancias y carriles",
+    "esdgtOvertaking": "Adelantamientos y usuarios vulnerables",
+    "esdgtParking": "Parada y estacionamiento",
+    "esdgtLights": "Alumbrado, túneles y mal tiempo",
+    "esdgtSafety": "Alcohol, distracciones y emergencias"
+  },
+  "copy": {
+    "guestPrompt": "para guardar tu progreso del test de la DGT y ver cada pregunta que fallas",
+    "trainingHeading": "Practica por temas",
+    "trainingSub": "Cinco bloques sobre las normas de circulación que pregunta el examen teórico de la DGT. Corrección al instante, y las preguntas que fallas vuelven hasta que las domines.",
+    "testsHeading": "Tests de examen · 30 preguntas como el examen real, 27 para aprobar",
+    "heroSubs": [
+      "Cinco temas y seis tests completos. Las señales y la prioridad son lo que más pesa.",
+      "Domina cada bloque y después haz un test.",
+      "Vas por la mitad. Prueba un test de examen.",
+      "Repasa los fallos y repite el test.",
+      "Todo listo. Pide cita para el examen teórico de la DGT."
+    ],
+    "sourceLine": "Basado en el Reglamento General de Circulación vigente en noviembre de 2026. Preguntas originales; 30 por test y 27 para aprobar, como el examen real (que tiene 3 opciones por pregunta)."
+  }
+}

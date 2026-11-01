@@ -26,8 +26,10 @@ import oshaEs from "./examTranslations/osha.es.json";
 import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
+import esdgtEs from "./examTranslations/esdgt.es.json";
+import ptimtPt from "./examTranslations/ptimt.pt.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -102,16 +104,35 @@ export interface ExamConfig {
     /** Theme-specific analytics tag suffix. */
     analyticsKey: string;
   };
+  /** Language of the base bank and the base copy above (name, categoryLabels,
+   *  copy). Default "en". A native exam (detheorie) sets its own: its pages run
+   *  in that language whatever the person chose (lib/pageLanguage.ts). */
+  language?: Language;
+  /** BCP 47 tag of the base language for hreflang, og:locale, JSON-LD
+   *  inLanguage and dates ("de-DE"). Default from the region, else "en-US". */
+  locale?: string;
+  /** English names for English surfaces (catalog, /tests, the All tests menu,
+   *  llms.txt, admin, emails) when the base language is not English. */
+  english?: { name: string; shortName: string; fullName: string };
+  /** Review state per language: "machine" (machine-translated), "model"
+   *  (written natively by a model), "native" (a paid native reviewer is done). */
+  review?: Partial<Record<Language, "machine" | "model" | "native">>;
   /** Other languages the exam is offered in (a translated bank in
    *  lib/banks/<examId>.ts plus this copy). The language switcher shows on the
-   *  exam's app pages only when there is at least one. */
-  translations?: Partial<Record<Exclude<Language, "en">, ExamTranslation>>;
+   *  exam's app pages only when there is at least one. Any language but the
+   *  base one: a German-base exam may carry `en`. */
+  translations?: Partial<Record<Language, ExamTranslation>>;
 }
 
 /** Everything a person reads in an ExamConfig, in one other language. */
 export interface ExamTranslation {
   /** The exam's landing page in this language (/es/examen-practica-cdl). */
   landingPath: string;
+  /** Short credential name in this language, when it differs from the base one. */
+  shortName?: string;
+  /** BCP 47 tag of this translation ("es-ES" for Spain's DGT test; US
+   *  translations default to "<lang>-US"). */
+  locale?: string;
   name: string;
   examLabel: string;
   fullName: string;
@@ -157,6 +178,12 @@ const TEST_SET_NAMES: Record<Language, (n: number) => string> = {
   vi: (n) => `Bộ luyện tập ${n}`,
   ko: (n) => `연습 세트 ${n}`,
   zh: (n) => `练习组 ${n}`,
+  de: (n) => `Übungsset ${n}`,
+  fr: (n) => `Série d'entraînement ${n}`,
+  it: (n) => `Set di esercizi ${n}`,
+  pl: (n) => `Zestaw treningowy ${n}`,
+  nl: (n) => `Oefenset ${n}`,
+  pt: (n) => `Conjunto de treino ${n}`,
 };
 
 const cdl: ExamConfig = {
@@ -8356,6 +8383,776 @@ const pkdrive: ExamConfig = {
   },
 };
 
+const esdgt: ExamConfig = {
+  id: "esdgt",
+  stateCode: "ESDGT",
+  idBase: 13700,
+  slug: "/spain-driving-theory",
+  landingPath: "/spain-driving-theory-test",
+  name: "Spain DGT Theory Practice Test",
+  shortName: "Spain DGT theory test",
+  examLabel: "DGT theory exam",
+  fullName: "Spain DGT theory exam for the permiso B (car), in English",
+  questionIdPrefix: "ESDGT-",
+  icon: "car",
+  testCount: 6,
+  questionsPerTest: 30,
+  passPct: 90,
+  // Real exam (DGT, checked 2026-11-01): 30 multiple-choice questions with three options, 30
+  // minutes, pass with at most 3 mistakes (27 of 30); offered in Spanish, the co-official
+  // languages, English, French and German (DGT form Mod. 04). The DGT confirmed in August 2026
+  // the format is unchanged; risk-perception videos have no date. The DGT publishes no topic
+  // weights; this split follows the Reglamento General de Conductores annex V syllabus with
+  // signs and priority heaviest. Rules from the Reglamento General de Circulación as consolidated
+  // with RD 518/2026 (in force 1 October 2026) and the V-16 rule (1 January 2026). Six
+  // real-length tests; pools are 6x each count plus 20 training-only spares. Four options per
+  // question (the real exam has three). All items original.
+  blueprint: {
+    esdgtLicence: 3,
+    esdgtSigns: 5,
+    esdgtMarkings: 3,
+    esdgtPriority: 4,
+    esdgtSpeed: 4,
+    esdgtOvertaking: 3,
+    esdgtParking: 2,
+    esdgtLights: 3,
+    esdgtSafety: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 13701, name: "Signs, Markings & Signals", categories: ["esdgtSigns", "esdgtMarkings"], size: 53, weightLabel: "8 of 30 test questions" },
+    { setNumber: 2, id: 13702, name: "Priority & Junctions", categories: ["esdgtPriority"], size: 27, weightLabel: "4 of 30 test questions" },
+    { setNumber: 3, id: 13703, name: "Speed, Lanes & Overtaking", categories: ["esdgtSpeed", "esdgtOvertaking"], size: 47, weightLabel: "7 of 30 test questions" },
+    { setNumber: 4, id: 13704, name: "Parking, Lights & Bad Weather", categories: ["esdgtParking", "esdgtLights"], size: 34, weightLabel: "5 of 30 test questions" },
+    { setNumber: 5, id: 13705, name: "Permits, Alcohol & Emergencies", categories: ["esdgtLicence", "esdgtSafety"], size: 39, weightLabel: "6 of 30 test questions" },
+  ],
+  categoryLabels: {
+    esdgtLicence: "Permits, Documents & the Vehicle",
+    esdgtSigns: "Signs & Traffic Officers",
+    esdgtMarkings: "Road Markings & Traffic Lights",
+    esdgtPriority: "Priority, Junctions & Roundabouts",
+    esdgtSpeed: "Speed Limits, Distances & Lanes",
+    esdgtOvertaking: "Overtaking & Vulnerable Road Users",
+    esdgtParking: "Stopping & Parking",
+    esdgtLights: "Lights, Tunnels & Bad Weather",
+    esdgtSafety: "Alcohol, Distraction & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your DGT theory test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Spanish traffic rules the DGT theory exam asks about, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 30 questions like the real exam, 27 to pass",
+    heroSubs: [
+      "Five topics, six real-length tests. Signs and priority weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your DGT theory exam.",
+    ],
+    sourceLine: "Based on the Spanish Reglamento General de Circulación as in force in November 2026. Original questions; 30 per test, 27 to pass like the real exam (which has 3 options per question).",
+    analyticsKey: "esdgt",
+  },
+  review: { es: "machine" },
+  translations: {
+    es: examTranslation(esdgtEs),
+  },
+};
+
+const ptimt: ExamConfig = {
+  id: "ptimt",
+  stateCode: "PTIMT",
+  idBase: 13800,
+  slug: "/portugal-driving-theory",
+  landingPath: "/portugal-driving-theory-test",
+  name: "Portugal Driving Theory Practice Test",
+  shortName: "Portugal driving theory",
+  examLabel: "Portugal IMT theory exam",
+  fullName: "Portugal IMT driving theory exam (exame de código), category B",
+  questionIdPrefix: "PTIMT-",
+  icon: "car",
+  testCount: 6,
+  questionsPerTest: 30,
+  passPct: 90,
+  // Real test (Regulamento da Habilitação Legal para Conduzir, Decreto-Lei 138/2012, checked
+  // 2026-11-01): category B is 30 questions on the common programme of Annex VII part I section II
+  // (art. 43), 30 minutes (art. 46), pass with 27 correct (art. 47), valid one year; set in
+  // Portuguese, with a translated test on request (art. 44(2) as amended by DL 114/2026, from 8 July 2026).
+  // The IMT publishes no topic weights; this split follows the Annex VII programme with signs and
+  // priority heaviest. Rules from the Código da Estrada as amended to Lei 24/2025 and the
+  // Regulamento de Sinalização do Trânsito. Six real-length tests; pools are 6x each count plus
+  // 20 training-only spares. passPct 90 = 27 of 30. All items original.
+  blueprint: {
+    ptSigns: 6,
+    ptMarkings: 3,
+    ptPriority: 5,
+    ptSpeed: 4,
+    ptParking: 3,
+    ptDriver: 3,
+    ptVehicle: 3,
+    ptLicence: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 13801, name: "Road Signs & Markings", categories: ["ptSigns", "ptMarkings"], size: 60, weightLabel: "9 of 30 test questions" },
+    { setNumber: 2, id: 13802, name: "Priority, Licences & Accidents", categories: ["ptPriority", "ptLicence"], size: 54, weightLabel: "8 of 30 test questions" },
+    { setNumber: 3, id: 13803, name: "Speed, Overtaking & Parking", categories: ["ptSpeed", "ptParking"], size: 46, weightLabel: "7 of 30 test questions" },
+    { setNumber: 4, id: 13804, name: "The Driver & the Vehicle", categories: ["ptDriver", "ptVehicle"], size: 40, weightLabel: "6 of 30 test questions" },
+  ],
+  categoryLabels: {
+    ptSigns: "Road Signs",
+    ptMarkings: "Markings, Lights & Police Signals",
+    ptPriority: "Priority, Junctions & Roundabouts",
+    ptSpeed: "Speed, Distance & Overtaking",
+    ptParking: "Stopping, Parking & Motorways",
+    ptDriver: "Alcohol, Fatigue & Distraction",
+    ptVehicle: "Seat Belts, Children, Lights & Equipment",
+    ptLicence: "Licences, Documents & Accidents",
+  },
+  copy: {
+    guestPrompt: "to save your theory test progress and track every question you miss",
+    trainingHeading: "Train by Código da Estrada topic",
+    trainingSub: "Four sets on the rules the IMT theory exam asks about, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 30 questions like the real exam, 27 to pass",
+    heroSubs: [
+      "Four topic sets, six real-length tests. Signs and priority weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your exame de código.",
+    ],
+    sourceLine: "Based on Portugal's Código da Estrada and the IMT theory programme. Original questions in English; 30 per test, 27 to pass like the real exam.",
+    analyticsKey: "ptimt",
+  },
+  review: { pt: "machine" },
+  translations: {
+    pt: examTranslation(ptimtPt),
+  },
+};
+
+const bedriving: ExamConfig = {
+  id: "bedriving",
+  stateCode: "BEDRIVE",
+  idBase: 14400,
+  slug: "/belgium-driving-theory",
+  landingPath: "/belgium-driving-theory-test",
+  name: "Belgium Driving Theory Practice Test",
+  shortName: "Belgium theory test",
+  examLabel: "Belgian theory exam",
+  fullName: "Belgium driving theory exam, category B",
+  questionIdPrefix: "BEDRV-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 82,
+  // Source: the Belgian Highway Code (Royal Decree of 1 December 1975, consolidated text on
+  // codedelaroute.be, with its regional speed-limit variants) and the alcohol limits of the Law of
+  // 16 March 1968. The theory exam is run by approved centres in Flanders, Wallonia and Brussels:
+  // 50 questions, 41/50 to pass, -5 points for a serious fault (vlaanderen.be, wallonie.be, BX1;
+  // checked 2026-11-01). passPct 82 = 41/50; the 5-point serious faults are not modelled. No region
+  // publishes topic weights, so the blueprint is Tigertest's own, priority and signs heaviest.
+  // Pools are exactly 4x each count (no spares). All items original, British English.
+  blueprint: {
+    beLicence: 5,
+    beDanger: 5,
+    bePriority: 7,
+    beSigns: 6,
+    beMarkings: 4,
+    beSpeed: 6,
+    beManoeuvre: 6,
+    beParking: 4,
+    beVulnerable: 4,
+    beSafety: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 14401, name: "Danger & Other Road Signs", categories: ["beDanger", "beSigns"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 14402, name: "Priority, Markings & Lights", categories: ["bePriority", "beMarkings"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 14403, name: "Speed, Overtaking & Motorways", categories: ["beSpeed", "beManoeuvre"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 14404, name: "Vulnerable Road Users & Parking", categories: ["beVulnerable", "beParking"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 14405, name: "Licence, Lights & Safety", categories: ["beLicence", "beSafety"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    beLicence: "The Exam, Licence & Fitness to Drive",
+    beDanger: "Danger Signs",
+    bePriority: "Priority Rules & Priority Signs",
+    beSigns: "Prohibition, Mandatory & Information Signs",
+    beMarkings: "Road Markings & Traffic Lights",
+    beSpeed: "Speed Limits & Zones",
+    beManoeuvre: "Overtaking, Turning & Motorways",
+    beParking: "Stopping & Parking",
+    beVulnerable: "Pedestrians, Cyclists & Public Transport",
+    beSafety: "Lights, Seat Belts & Breakdowns",
+  },
+  copy: {
+    guestPrompt: "to save your theory exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Belgian Highway Code that the exams in Flanders, Wallonia and Brussels all test. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, pass at 41",
+    heroSubs: [
+      "Five topics, four 50-question tests. Priority and signs weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory exam.",
+    ],
+    sourceLine: "Based on the Belgian Highway Code. Original questions in English; 50 per test, 41 to pass like the real exam.",
+    analyticsKey: "bedriving",
+  },
+};
+
+const dkteori: ExamConfig = {
+  id: "dkteori",
+  stateCode: "DKTEORI",
+  idBase: 14200,
+  slug: "/denmark-driving-theory",
+  landingPath: "/denmark-driving-theory-test",
+  name: "Denmark Driving Theory Practice Test",
+  shortName: "Denmark theory test",
+  examLabel: "Danish theory test",
+  fullName: "Danish driving theory test (teoriprøve), category B",
+  questionIdPrefix: "DKTEO-",
+  icon: "car",
+  testCount: 8,
+  questionsPerTest: 25,
+  passPct: 80,
+  // Source: Færdselsstyrelsen (fstyr.dk, checked 2026-11-01): the theory test lasts 25 minutes,
+  // digital or analogue, at most five errors; the official online practice test is 25 questions
+  // with 20 to pass. Offered in Danish, English, German, Faroese and Greenlandic. Questions are
+  // drawn at random from the category B teaching plan (undervisningsplan, version 1.1, May 2026,
+  // in use from 1 July 2026). Weights from Færdselsstyrelsen's published randomisation key for the
+  // digital test: afsnit 1 8%, afsnit 3, 4, 5, 6 and 8 4% each, afsnit 7 72%, so per 25:
+  // afsnit 1 = 2, afsnit 3 + 4 = 2, afsnit 5 + 6 + 8 = 3, afsnit 7 = 18 (split 3/4/5/6 by
+  // sub-section, Tigertest's own). The real test is picture-based with one or more correct answers
+  // per question; ours are text, single answer, signs described in words. Eight real-length tests;
+  // pools are exactly 8x each count. All items original.
+  blueprint: {
+    dkVehicle: 2,
+    dkBehaviour: 2,
+    dkBasics: 3,
+    dkLanes: 3,
+    dkPassing: 4,
+    dkJunctions: 5,
+    dkMotorway: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 14201, name: "Car, Road Users & Basic Rules", categories: ["dkVehicle", "dkBehaviour", "dkBasics"], size: 56, weightLabel: "7 of 25 test questions" },
+    { setNumber: 2, id: 14202, name: "Lanes, Passing & Overtaking", categories: ["dkLanes", "dkPassing"], size: 56, weightLabel: "7 of 25 test questions" },
+    { setNumber: 3, id: 14203, name: "Junctions, Give Way & Roundabouts", categories: ["dkJunctions"], size: 40, weightLabel: "5 of 25 test questions" },
+    { setNumber: 4, id: 14204, name: "Motorways, Parking & Darkness", categories: ["dkMotorway"], size: 48, weightLabel: "6 of 25 test questions" },
+  ],
+  categoryLabels: {
+    dkVehicle: "Car, Equipment & Documents",
+    dkBehaviour: "Vehicles, Road Users & Fitness to Drive",
+    dkBasics: "Roads, Basic Rules & Special Risks",
+    dkLanes: "Moving Off, Speed & Changing Lanes",
+    dkPassing: "Passing, Meeting, Following & Overtaking",
+    dkJunctions: "Junctions, Give Way & Roundabouts",
+    dkMotorway: "Motorways, Parking, Darkness & Tunnels",
+  },
+  copy: {
+    guestPrompt: "to save your Danish theory test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the whole category B teaching plan, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 25 questions like the real test, 20 to pass",
+    heroSubs: [
+      "Four topics, eight real-length tests. Junctions and give way weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your teoriprøve.",
+    ],
+    sourceLine: "Based on Færdselsstyrelsen's category B teaching plan (undervisningsplan, 2026). Original questions in English; 25 per test, 20 to pass like the real test's five-error limit.",
+    analyticsKey: "dkteori",
+  },
+};
+
+const setrafik: ExamConfig = {
+  id: "setrafik",
+  stateCode: "SETRAFIK",
+  idBase: 14000,
+  slug: "/sweden-driving-theory",
+  landingPath: "/sweden-driving-theory-test",
+  name: "Sweden Driving Theory Practice Test",
+  shortName: "Sweden theory test",
+  examLabel: "Swedish driving theory test",
+  fullName: "Trafikverket knowledge test (kunskapsprov) for a category B licence",
+  questionIdPrefix: "SETRF-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Source: Trafikverket "Kunskapsprov B" (updated 23 Sept 2026): 70 questions, 5 unscored, 65 max,
+  // 52 to pass, 50 minutes, five subject areas (vehicle knowledge and handling, environment,
+  // traffic safety, traffic rules, personal prerequisites) with no published weights. Weights are
+  // Tigertest's, following guides' reported 7/5/32/16/5 of 65; traffic rules split into five
+  // categories. Rules: Trafikförordningen 1998:1276, Körkortslagen, Lag 1951:649 and
+  // Transportstyrelsen guidance as of November 2026. Checked 2026-11-01. Pools exactly 4x each
+  // count (no spares). All items original; signs described in words, picture items not modelled.
+  blueprint: {
+    setrJunctions: 7,
+    setrSigns: 8,
+    setrMarkings: 5,
+    setrSpeed: 6,
+    setrParking: 4,
+    setrSafety: 9,
+    setrVehicle: 4,
+    setrEnvironment: 3,
+    setrPersonal: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 14001, name: "Road Signs", categories: ["setrSigns"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 14002, name: "Junctions, Markings & Lights", categories: ["setrJunctions", "setrMarkings"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 14003, name: "Speed, Lanes, Parking & Motorways", categories: ["setrSpeed", "setrParking"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 14004, name: "Traffic Safety, Wildlife & Winter", categories: ["setrSafety"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 14005, name: "Vehicle, Environment & You", categories: ["setrVehicle", "setrEnvironment", "setrPersonal"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    setrJunctions: "Right of Way & Junctions",
+    setrSigns: "Road Signs",
+    setrMarkings: "Road Markings & Traffic Lights",
+    setrSpeed: "Speed, Overtaking & Lanes",
+    setrParking: "Stopping, Parking & Motorways",
+    setrSafety: "Traffic Safety, Wildlife & Winter",
+    setrVehicle: "Vehicle Knowledge & Handling",
+    setrEnvironment: "Environment & Eco-driving",
+    setrPersonal: "Personal Factors & Your Licence",
+  },
+  copy: {
+    guestPrompt: "to save your theory test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Swedish traffic rules, signs and safety topics Trafikverket's theory test covers. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 40 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Right of way weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test with Trafikverket.",
+    ],
+    sourceLine: "Based on Swedish traffic rules and Trafikverket's theory test areas. Original questions; 50 per test, 80% to pass like the real 52 of 65.",
+    analyticsKey: "setrafik",
+  },
+};
+
+const fitheory: ExamConfig = {
+  id: "fitheory",
+  stateCode: "FITHEORY",
+  idBase: 14500,
+  slug: "/finland-driving-theory",
+  landingPath: "/finland-driving-theory-test",
+  name: "Finland Driving Theory Practice Test",
+  shortName: "Finland theory test",
+  examLabel: "Finland driving theory test",
+  fullName: "Finland driving theory test, category B (teoriakoe)",
+  questionIdPrefix: "FITHE-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 86,
+  // Source: Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019, in
+  // force 15.6.2020) and Traficom's "Driving examination" page: category B is 15 multiple choice
+  // (11 to pass), 50 traffic picture questions (43) and 5 risk recognition questions (4) in
+  // 30 minutes, each part passed separately; topic areas from the regulation (traffic rules, the
+  // driver, the road, other road users, safety equipment, vehicle; pictures on driving straight,
+  // turning, giving way, overtaking, lane changes, stopping, parking). No official weights, so
+  // the split is Tigertest's own. Rules from the Road Traffic Act 729/2018 as consolidated to
+  // 17 April 2026 and the Driving Licence Act reform of 29 May 2026. 86% (43 of 50) mirrors the
+  // picture part. Checked 2026-11-01. Pools are exactly 4x each count. All items original.
+  blueprint: {
+    fiYield: 7,
+    fiPosition: 5,
+    fiOvertake: 6,
+    fiParking: 5,
+    fiSigns: 8,
+    fiMarkings: 4,
+    fiUsers: 5,
+    fiDriver: 5,
+    fiVehicle: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 14501, name: "Giving Way & Junctions", categories: ["fiYield"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 2, id: 14502, name: "Speed, Lanes & Overtaking", categories: ["fiPosition", "fiOvertake"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 14503, name: "Signs, Markings & Signals", categories: ["fiSigns", "fiMarkings"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 14504, name: "Parking & Other Road Users", categories: ["fiParking", "fiUsers"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 14505, name: "The Driver, Your Car & Winter", categories: ["fiDriver", "fiVehicle"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    fiYield: "Giving Way & Junctions",
+    fiPosition: "Speed, Lanes & Motorways",
+    fiOvertake: "Overtaking & Meeting",
+    fiParking: "Stopping & Parking",
+    fiSigns: "Traffic Signs",
+    fiMarkings: "Markings, Lights & Police Signals",
+    fiUsers: "Pedestrians, Cyclists & Other Road Users",
+    fiDriver: "The Driver, Alcohol & Licence Rules",
+    fiVehicle: "Vehicle, Winter & Safety Equipment",
+  },
+  copy: {
+    guestPrompt: "to save your theory test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Finnish rules of the road, in English: giving way, overtaking, parking, signs and winter driving. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 43 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Giving way and signs weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test at Ajovarma.",
+    ],
+    sourceLine: "Based on the Finnish Road Traffic Act and Traficom's theory test rules. Original questions in English; 50 per test, 86% is Tigertest's target.",
+    analyticsKey: "fitheory",
+  },
+};
+
+const grdriving: ExamConfig = {
+  id: "grdriving",
+  stateCode: "GRDRIVE",
+  idBase: 14100,
+  slug: "/greece-driving-theory",
+  landingPath: "/greece-driving-theory-test",
+  name: "Greece Driving Theory Test Practice",
+  shortName: "Greece theory test",
+  examLabel: "Greek driving theory test",
+  fullName: "Greece driving theory test (category B car)",
+  questionIdPrefix: "GRDRV-",
+  icon: "car",
+  testCount: 6,
+  questionsPerTest: 30,
+  passPct: 96,
+  // Greek category B theory test: random multiple-choice questionnaires from the Ministry of
+  // Infrastructure and Transport's question bank, offered in foreign languages including English
+  // (Law 4850/2021 art. 6). 30 questions, 35 minutes, pass at 29 of 30 per guides and the Greek
+  // motoring press (gocar.gr, Feb 2025); not confirmed on a ministry page. No topic weights are
+  // published; these are Tigertest's, signs and priority heaviest. Rules are the 2025 Highway
+  // Code (Law 5209/2025: 30 km/h built-up default, 90/110/130 outside towns) as in force
+  // 2026-11-01. Six real-length tests; pools are 6x each count plus 20 training-only spares.
+  // passPct 96 = ceil(0.96 * 30) = 29. All items original; signs described in words.
+  blueprint: {
+    grLicence: 3,
+    grWarning: 4,
+    grRegulatory: 4,
+    grInfo: 4,
+    grPriority: 4,
+    grSpeed: 4,
+    grParking: 3,
+    grSafety: 2,
+    grEmergency: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 14101, name: "Warning Signs", categories: ["grWarning"], size: 26, weightLabel: "4 of 30 test questions" },
+    { setNumber: 2, id: 14102, name: "Priority & Regulatory Signs", categories: ["grRegulatory"], size: 26, weightLabel: "4 of 30 test questions" },
+    { setNumber: 3, id: 14103, name: "Markings, Signals & Junctions", categories: ["grInfo", "grPriority"], size: 52, weightLabel: "8 of 30 test questions" },
+    { setNumber: 4, id: 14104, name: "Speed, Overtaking & Parking", categories: ["grSpeed", "grParking"], size: 46, weightLabel: "7 of 30 test questions" },
+    { setNumber: 5, id: 14105, name: "Licences, Safety & Emergencies", categories: ["grLicence", "grSafety", "grEmergency"], size: 50, weightLabel: "7 of 30 test questions" },
+  ],
+  categoryLabels: {
+    grLicence: "Licences, Alcohol & the Law",
+    grWarning: "Warning Signs",
+    grRegulatory: "Priority, Prohibition & Mandatory Signs",
+    grInfo: "Information Signs, Markings & Signals",
+    grPriority: "Junctions, Roundabouts & Priority",
+    grSpeed: "Speed, Distances & Overtaking",
+    grParking: "Parking & Sharing the Road",
+    grSafety: "Vehicle, Passengers & Safe Driving",
+    grEmergency: "Night, Weather, Motorways & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your Greek theory test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Greek Highway Code and road signs, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 30 questions, 29 to pass",
+    heroSubs: [
+      "Five topics, six real-length tests. One mistake is all you can afford.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ask your driving school to book your theory test.",
+    ],
+    sourceLine: "Based on the Greek Highway Code (2025) and Greek road signs. Original questions in English; 30 per test, 29 to pass as guides report.",
+    analyticsKey: "grdriving",
+  },
+};
+
+const rodrpciv: ExamConfig = {
+  id: "rodrpciv",
+  stateCode: "RODRPCIV",
+  idBase: 13900,
+  slug: "/romania-driving-theory",
+  landingPath: "/romania-driving-theory-test",
+  name: "Romania Driving Theory Practice Test",
+  shortName: "Romania driving theory",
+  examLabel: "Romania DRPCIV theory exam",
+  fullName: "Romania driving licence theory exam (DGPCI, formerly DRPCIV, category B)",
+  questionIdPrefix: "RODRP-",
+  icon: "car",
+  testCount: 7,
+  questionsPerTest: 26,
+  passPct: 84,
+  // Real exam (Order MAI 268/2010 as amended, art. 10(2)(b) and 11, checked 2026-11-01): category B
+  // is 26 questions in 30 minutes, at least 22 correct to pass, preceded by 3 unscored warm-up
+  // questions; each question has 3 options with one, two or three correct. Offered in Romanian,
+  // Hungarian or German (minority mother tongue) and, for foreigners and EU/EEA/Swiss citizens, in
+  // English, French or German. The DGPCI publishes no topic split; weights are Tigertest's, from
+  // the topics in art. 10(4). Rules: OUG 195/2002 (Codul rutier) and its regulation (HG 1391/2006),
+  // with the 2022 expressway limit of 120 km/h. Seven real-length tests; pools are 7x each count
+  // plus 18 training-only spares. passPct 84 = 22 of 26. Tigertest items have one key each.
+  blueprint: {
+    rodrLicence: 2,
+    rodrWarning: 3,
+    rodrRegulatory: 4,
+    rodrMarkings: 3,
+    rodrPriority: 4,
+    rodrSpeed: 3,
+    rodrParking: 2,
+    rodrSafety: 3,
+    rodrEmergency: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 13901, name: "Road Signs", categories: ["rodrWarning", "rodrRegulatory"], size: 54, weightLabel: "7 of 26 test questions" },
+    { setNumber: 2, id: 13902, name: "Markings, Signals & Priority", categories: ["rodrMarkings", "rodrPriority"], size: 56, weightLabel: "7 of 26 test questions" },
+    { setNumber: 3, id: 13903, name: "Speed, Overtaking & Parking", categories: ["rodrSpeed", "rodrParking"], size: 38, weightLabel: "5 of 26 test questions" },
+    { setNumber: 4, id: 13904, name: "Licence, Safety & Emergencies", categories: ["rodrLicence", "rodrSafety", "rodrEmergency"], size: 52, weightLabel: "7 of 26 test questions" },
+  ],
+  categoryLabels: {
+    rodrLicence: "Licence, Exam & Documents",
+    rodrWarning: "Warning Signs",
+    rodrRegulatory: "Priority, Prohibition & Mandatory Signs",
+    rodrMarkings: "Markings, Lights & Police Signals",
+    rodrPriority: "Priority, Junctions, Trams & Level Crossings",
+    rodrSpeed: "Speed Limits, Overtaking & Lanes",
+    rodrParking: "Stopping, Parking & Motorways",
+    rodrSafety: "Alcohol, Seat Belts, Lights & Behaviour",
+    rodrEmergency: "Breakdowns, Accidents & First Aid",
+  },
+  copy: {
+    guestPrompt: "to save your theory test progress and track every question you miss",
+    trainingHeading: "Train by Codul rutier topic",
+    trainingSub: "Four sets on the Romanian traffic rules and signs the category B theory exam asks about, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 26 questions like the real exam, 22 to pass",
+    heroSubs: [
+      "Four topics, seven real-length tests. Priority rules weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory exam.",
+    ],
+    sourceLine: "Based on the Romanian traffic code (OUG 195/2002) and Order MAI 268/2010. Original questions; 26 per test, 22 to pass like the real exam (where a question can have up to 3 correct answers).",
+    analyticsKey: "rodrpciv",
+  },
+};
+
+const hukresz: ExamConfig = {
+  id: "hukresz",
+  stateCode: "HUKRESZ",
+  idBase: 14300,
+  slug: "/hungary-driving-theory",
+  landingPath: "/hungary-kresz-test",
+  name: "Hungary KRESZ Theory Practice Test",
+  shortName: "Hungary KRESZ test",
+  examLabel: "Hungary KRESZ theory exam",
+  fullName: "Hungary KRESZ theory exam (Közlekedési alapismeretek), category B",
+  questionIdPrefix: "HUKRZ-",
+  icon: "car",
+  testCount: 3,
+  questionsPerTest: 55,
+  passPct: 87,
+  // Real exam: KAV computer-based "Közlekedési alapismeretek" theory exam, category B: 55
+  // multiple-choice questions, 55 minutes, 75 points, 65 to pass (KAV curriculum and exam
+  // requirements as quoted in a driving school's 2025-05-01 learner information sheet). Guides say
+  // 10 questions are worth 3 points and 45 worth 1; Tigertest scores every question equally, so
+  // passPct 87 = ceil(0.87 x 55) = 48 of 55, close to 65/75. Offered in Hungarian, English, German
+  // and Romanian (guides). No official topic weights; this split is Tigertest's own, signs and
+  // right of way heaviest. Rules from the KRESZ (1/1975. (II. 5.) KPM-BM decree) as in force
+  // 2026-11-01; the draft new KRESZ (Jan 2026) was not in force. Three real-length tests; pools
+  // are 3x each count plus 35 training-only spares. All items original.
+  blueprint: {
+    huLicence: 5,
+    huWarning: 6,
+    huRegulatory: 9,
+    huMarkings: 6,
+    huPriority: 8,
+    huSpeed: 7,
+    huMotorway: 4,
+    huParking: 5,
+    huSafety: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 14301, name: "Warning Signs, Markings & Lights", categories: ["huWarning", "huMarkings"], size: 44, weightLabel: "12 of 55 test questions" },
+    { setNumber: 2, id: 14302, name: "Priority, Prohibition & Mandatory Signs", categories: ["huRegulatory"], size: 32, weightLabel: "9 of 55 test questions" },
+    { setNumber: 3, id: 14303, name: "Right of Way & Trams", categories: ["huPriority"], size: 30, weightLabel: "8 of 55 test questions" },
+    { setNumber: 4, id: 14304, name: "Speed, Overtaking & Motorways", categories: ["huSpeed", "huMotorway"], size: 40, weightLabel: "11 of 55 test questions" },
+    { setNumber: 5, id: 14305, name: "Licences, Parking & Safety", categories: ["huLicence", "huParking", "huSafety"], size: 54, weightLabel: "15 of 55 test questions" },
+  ],
+  categoryLabels: {
+    huLicence: "Licences, Alcohol & the Driver",
+    huWarning: "Warning Signs",
+    huRegulatory: "Priority, Prohibition & Mandatory Signs",
+    huMarkings: "Markings, Traffic Lights & Police Signals",
+    huPriority: "Right of Way, Junctions & Trams",
+    huSpeed: "Speed, Lanes & Overtaking",
+    huMotorway: "Motorways & Level Crossings",
+    huParking: "Stopping, Parking, Lights & Towing",
+    huSafety: "Seat Belts, Children, Breakdowns & Crashes",
+  },
+  copy: {
+    guestPrompt: "to save your KRESZ exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Hungarian Highway Code, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Full tests · 55 questions, aim for 48 or more",
+    heroSubs: [
+      "Five topics, three 55-question tests. Signs and right of way weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a full test.",
+      "Fix the misses, then retake.",
+      "All done. Book your KRESZ exam.",
+    ],
+    sourceLine: "Based on the Hungarian Highway Code (KRESZ). Original questions in English; 55 per test, 87% is close to the real 65 of 75 points.",
+    analyticsKey: "hukresz",
+  },
+};
+
+const mttheory: ExamConfig = {
+  id: "mttheory",
+  stateCode: "MTTHEORY",
+  idBase: 14600,
+  slug: "/malta-driving-theory",
+  landingPath: "/malta-driving-theory-test",
+  name: "Malta Driving Theory Test Practice",
+  shortName: "Malta theory test",
+  examLabel: "Malta driving theory test",
+  fullName: "Malta driving theory test (category B car)",
+  questionIdPrefix: "MTTHE-",
+  icon: "car",
+  testCount: 5,
+  questionsPerTest: 35,
+  passPct: 85,
+  // Real test (Transport Malta, "Obtaining your driving licence", checked 2026-11-01): 35
+  // multiple-choice questions on a touch screen, 45 minutes, 30 correct to pass; candidates 18+
+  // with a category B learner's permit; offered in English or Maltese. Transport Malta publishes
+  // no per-topic counts, so these are Tigertest's, signs and priority weighted most. Rules as in
+  // force November 2026: left-hand traffic, British-style signs, cars 80/50 km/h, alcohol 0.5 g/l
+  // (0.2 for probationary and commercial drivers). Five real-length tests; pools are 5x each count
+  // plus 25 training-only spares. passPct 85 = ceil(0.85 * 35) = 30. All items original; the
+  // official question bank was not used.
+  blueprint: {
+    mtLicence: 3,
+    mtSigns: 7,
+    mtMarkings: 4,
+    mtJunctions: 6,
+    mtRoad: 4,
+    mtParking: 2,
+    mtVulnerable: 4,
+    mtSafety: 3,
+    mtEmergency: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 14601, name: "Road Signs", categories: ["mtSigns"], size: 38, weightLabel: "7 of 35 test questions" },
+    { setNumber: 2, id: 14602, name: "Markings, Signals & Junctions", categories: ["mtMarkings", "mtJunctions"], size: 54, weightLabel: "10 of 35 test questions" },
+    { setNumber: 3, id: 14603, name: "Speed, Parking & Sharing the Road", categories: ["mtRoad", "mtParking", "mtVulnerable"], size: 56, weightLabel: "10 of 35 test questions" },
+    { setNumber: 4, id: 14604, name: "Licences, Safety & Emergencies", categories: ["mtLicence", "mtSafety", "mtEmergency"], size: 52, weightLabel: "8 of 35 test questions" },
+  ],
+  categoryLabels: {
+    mtLicence: "Licences, Learners & the Test",
+    mtSigns: "Road Signs",
+    mtMarkings: "Road Markings, Lights & Signals",
+    mtJunctions: "Roundabouts, Junctions & Priority",
+    mtRoad: "Speed, Lanes & Overtaking",
+    mtParking: "Stopping & Parking",
+    mtVulnerable: "Pedestrians, Cyclists & Other Road Users",
+    mtSafety: "Alcohol, Phones, Seat Belts & Your Car",
+    mtEmergency: "Night, Weather, Breakdowns & Crashes",
+  },
+  copy: {
+    guestPrompt: "to save your theory test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on the Maltese road rules the theory test asks about. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 35 questions like the real test, 30 to pass",
+    heroSubs: [
+      "Four topics, five real-length tests. Signs and priority weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test.",
+    ],
+    sourceLine: "Based on Malta's road rules and Highway Code. Original questions; 35 per test, 30 to pass like the real test.",
+    analyticsKey: "mttheory",
+  },
+};
+
+const detheorie: ExamConfig = {
+  id: "detheorie",
+  stateCode: "DETHEORIE",
+  idBase: 14700,
+  slug: "/fuehrerschein-theorie",
+  landingPath: "/de/fuehrerschein-theorie-test",
+  name: "Führerschein Theorie Test Klasse B",
+  shortName: "Führerschein Theorie",
+  examLabel: "Theorieprüfung Klasse B",
+  fullName: "Theoretische Fahrerlaubnisprüfung Klasse B (Pkw)",
+  questionIdPrefix: "DETH-",
+  icon: "car",
+  testCount: 7,
+  questionsPerTest: 30,
+  passPct: 93,
+  language: "de",
+  locale: "de-DE",
+  english: {
+    name: "German Driving Theory Test (Class B)",
+    shortName: "German driving theory test",
+    fullName: "German driving licence theory test, class B car (Führerschein Klasse B), in German",
+  },
+  review: { de: "model" },
+  // Real test (FeV Anlage 7 Nr. 1.2, TÜV NORD, TÜV | DEKRA arge tp 21; checked 2026-11-01): class
+  // B first licence, 30 questions (20 Grundstoff, 10 Zusatzstoff), 2 to 5 error points each (110),
+  // pass with at most 10, two wrong 5-point questions fail; no fixed time, guide time 45 minutes;
+  // German plus 12 foreign languages; catalogue revised each 1 April and 1 October; up to three
+  // video tasks; multi-answer and image-selection tasks. A reform (smaller catalogue, equal
+  // weighting) passed cabinet on 20 May 2026 for early 2027, not in force. Categories are the
+  // eight Sachgebiete of FeV Anlage 7 Nr. 1.1; the 7/6/4/5/2/2/2/2 split is Tigertest's own.
+  // Seven tests of 30, pools exactly 7x each count (210, all original, written in German).
+  // Single best answer of four, equal weight, so passPct 93 (28 of 30) is Tigertest's target.
+  blueprint: {
+    dethGefahren: 7,
+    dethVerhalten: 6,
+    dethVorfahrt: 4,
+    dethZeichen: 5,
+    dethUmwelt: 2,
+    dethBetrieb: 2,
+    dethTechnik: 2,
+    dethEignung: 2,
+  },
+  // Five topic sets (reviewer, Nov 2026), not testSets(): 5 + 7 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 14701, name: "Gefahrenlehre", categories: ["dethGefahren"], size: 49, weightLabel: "7 von 30 Fragen je Testbogen" },
+    { setNumber: 2, id: 14702, name: "Verhalten im Verkehr", categories: ["dethVerhalten"], size: 42, weightLabel: "6 von 30 Fragen je Testbogen" },
+    { setNumber: 3, id: 14703, name: "Vorfahrt und Vorrang", categories: ["dethVorfahrt"], size: 28, weightLabel: "4 von 30 Fragen je Testbogen" },
+    { setNumber: 4, id: 14704, name: "Verkehrszeichen", categories: ["dethZeichen"], size: 35, weightLabel: "5 von 30 Fragen je Testbogen" },
+    { setNumber: 5, id: 14705, name: "Fahrzeug, Umwelt und Fahreignung", categories: ["dethUmwelt", "dethBetrieb", "dethTechnik", "dethEignung"], size: 56, weightLabel: "8 von 30 Fragen je Testbogen" },
+  ],
+  categoryLabels: {
+    dethGefahren: "Gefahrenlehre",
+    dethVerhalten: "Verhalten im Verkehr",
+    dethVorfahrt: "Vorfahrt und Vorrang",
+    dethZeichen: "Verkehrszeichen",
+    dethUmwelt: "Umweltschutz",
+    dethBetrieb: "Vorschriften über den Betrieb der Fahrzeuge",
+    dethTechnik: "Technik",
+    dethEignung: "Eignung und Befähigung von Kraftfahrern",
+  },
+  copy: {
+    guestPrompt: "um deinen Fortschritt für die Theorieprüfung zu speichern und jede falsche Antwort im Blick zu behalten",
+    trainingHeading: "Übungssets",
+    trainingSub: "Jedes Übungsset deckt ein Sachgebiet der Prüfung ab. Du bekommst sofort Rückmeldung, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst.",
+    testsHeading: "Testbögen · 30 Fragen, höchstens 2 Fehler",
+    heroSubs: [
+      "Fünf Übungssets, sieben Testbögen. Gefahrenlehre und Verhalten im Verkehr kommen am häufigsten dran.",
+      "Erst das Set meistern, dann den Testbogen.",
+      "Die Hälfte ist geschafft. Mach einen Testbogen.",
+      "Fehler wiederholen, dann noch einmal testen.",
+      "Alles grün. Melde dich zur Theorieprüfung an.",
+    ],
+    sourceLine: "Nach StVO, StVZO und Fahrerlaubnis-Verordnung, Stand November 2026. Eigene Fragen, nicht aus dem amtlichen Fragenkatalog; 30 pro Testbogen, ohne Fehlerpunkte-Gewichtung.",
+    analyticsKey: "detheorie",
+  },
+};
+
 const phlet: ExamConfig = {
   id: "phlet",
   stateCode: "PHLET",
@@ -8766,7 +9563,7 @@ const trcnpqe: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, phlet, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];
@@ -8880,18 +9677,36 @@ export function trainingPartName(p: TrainingPart, lang: Language = "en"): string
   if (lang === "vi") return `${p.set.name}, phần ${p.part}/${p.partCount}`;
   if (lang === "ko") return `${p.set.name}, ${p.partCount}부 중 ${p.part}부`;
   if (lang === "zh") return `${p.set.name}，第 ${p.part} 部分（共 ${p.partCount} 部分）`;
+  if (lang === "de") return `${p.set.name}, Teil ${p.part} von ${p.partCount}`;
+  if (lang === "fr") return `${p.set.name}, partie ${p.part} sur ${p.partCount}`;
+  if (lang === "it") return `${p.set.name}, parte ${p.part} di ${p.partCount}`;
+  if (lang === "pl") return `${p.set.name}, część ${p.part} z ${p.partCount}`;
+  if (lang === "nl") return `${p.set.name}, deel ${p.part} van ${p.partCount}`;
+  if (lang === "pt") return `${p.set.name}, parte ${p.part} de ${p.partCount}`;
   return `${p.set.name}, part ${p.part} of ${p.partCount}`;
 }
 
-/** Languages an exam is offered in, English first. */
+/** The language of an exam's base bank and copy ("en" unless it is native). */
+export function examBaseLanguage(exam: ExamConfig): Language {
+  return exam.language ?? "en";
+}
+
+/** Languages an exam is offered in, its base language first. */
 export function examLanguages(exam: ExamConfig): Language[] {
-  return ["en", ...(Object.keys(exam.translations ?? {}) as Language[])];
+  const base = examBaseLanguage(exam);
+  return [base, ...(Object.keys(exam.translations ?? {}) as Language[]).filter((l) => l !== base)];
 }
 
 /** The language an exam's content shows in: the person's choice when the
- *  exam is offered in it, English otherwise. */
+ *  exam is offered in it, the exam's base language otherwise (an English-UI
+ *  person opening a German exam gets German questions). */
 export function examLanguage(exam: ExamConfig, language: Language): Language {
-  return examLanguages(exam).includes(language) ? language : "en";
+  return examLanguages(exam).includes(language) ? language : examBaseLanguage(exam);
+}
+
+/** English names for English surfaces (catalog, /tests, llms.txt...). */
+export function examEnglishName(exam: ExamConfig): { name: string; shortName: string; fullName: string } {
+  return exam.english ?? { name: exam.name, shortName: exam.shortName, fullName: exam.fullName };
 }
 
 const localized = new Map<string, ExamConfig>();
@@ -8899,7 +9714,7 @@ const localized = new Map<string, ExamConfig>();
 /** The exam with its copy, set names and category labels in `lang`. IDs,
  *  blueprint and everything else stay as they are. */
 export function localizeExam(exam: ExamConfig, lang: Language): ExamConfig {
-  const tr = lang === "en" ? undefined : exam.translations?.[lang];
+  const tr = lang === examBaseLanguage(exam) ? undefined : exam.translations?.[lang];
   if (!tr) return exam;
   const key = `${exam.id}:${lang}`;
   const cached = localized.get(key);
@@ -8907,6 +9722,7 @@ export function localizeExam(exam: ExamConfig, lang: Language): ExamConfig {
   const result: ExamConfig = {
     ...exam,
     name: tr.name,
+    shortName: tr.shortName ?? exam.shortName,
     examLabel: tr.examLabel,
     fullName: tr.fullName,
     // English part names never show in another language: a translation
@@ -8941,4 +9757,4 @@ export type ExamAnalyticsKey = ExamId | typeof DMV_ANALYTICS_KEY;
 export const EXAM_ANALYTICS_KEYS: ExamAnalyticsKey[] = [DMV_ANALYTICS_KEY, ...EXAMS.map((e) => e.id)];
 export const examAnalyticsKey = (exam: ExamConfig | undefined): ExamAnalyticsKey => (exam ? examFamilyId(exam) : DMV_ANALYTICS_KEY);
 export const examAnalyticsLabel = (key: string): string =>
-  key === DMV_ANALYTICS_KEY ? "DMV permit test" : getExamById(key)?.shortName ?? key;
+  key === DMV_ANALYTICS_KEY ? "DMV permit test" : (() => { const e = getExamById(key); return e ? examEnglishName(e).shortName : key; })();

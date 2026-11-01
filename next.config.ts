@@ -9,17 +9,20 @@ const nextConfig: NextConfig = {
   // OG cards read tiger faces from the 256 px copies in assets/og-tigers/
   // (lib/server/ogTigers.ts, built by scripts/build-og-tigers.mjs), never from
   // public/tigers/, which grows with every exam and pushed these functions past
-  // Vercel's 250 MB limit when it was traced in.
+  // Vercel's 250 MB limit when it was traced in (Nov 2026).
   outputFileTracingIncludes: {
     "/api/og/score-card": ["./assets/og-tigers/**/*.png"],
     "/og/[examId]": ["./assets/og-tigers/*/tiger_face_03.png", "./public/fonts/share/*"],
+    "/og/connect": ["./public/tiger.png", "./public/tiger_face_03.png"],
     "/og/q/[code]": ["./public/tiger.png", "./public/tiger_face_03.png"],
   },
-  // Keep the big public asset folders out of the image functions.
+  // The OG routes read files with dynamic paths, so Next traces whole folders
+  // into each function. Keep out what they never read.
   outputFileTracingExcludes: {
     "/api/og/score-card": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
     // It reads only face 03, but nft follows the dynamic path into every face.
     "/og/[examId]": ["./assets/og-tigers/*/tiger_face_0[1245678].png", "./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
+    "/og/connect": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
     "/og/q/[code]": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
   },
   images: {

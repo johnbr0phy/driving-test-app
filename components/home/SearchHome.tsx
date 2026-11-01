@@ -234,12 +234,18 @@ export function SearchHome({
 
       <div className="mx-auto w-full max-w-2xl px-4">
         {/* The wordmark. Shrinks to one line while searching so results stay above a phone keyboard. */}
-        <div className={`flex items-center justify-center ${showResults ? "gap-2 pt-3 pb-4" : "gap-3 pt-10 pb-8 sm:pt-[12vh] sm:pb-10"}`}>
+        <div className={`flex items-center justify-center ${showResults ? "gap-2 pt-3 pb-4" : "gap-3 pt-10 pb-3 sm:pt-[12vh] sm:pb-4"}`}>
           <Image src="/tiger.png" alt="" width={96} height={96} priority className={showResults ? "w-8 h-8" : "w-16 h-16 sm:w-24 sm:h-24"} />
           <h1 className={`font-extrabold tracking-tight text-gray-900 dark:text-gray-50 ${showResults ? "text-2xl" : "text-5xl sm:text-7xl"}`}>
             Tigertest
           </h1>
         </div>
+
+        {!showResults && (
+          <p className="pb-8 text-center text-base text-gray-600 dark:text-gray-300 sm:pb-10 sm:text-lg">
+            Free prep, any test, anywhere.
+          </p>
+        )}
 
         <div className="relative">
           <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden />

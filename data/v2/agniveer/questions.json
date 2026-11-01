@@ -1,0 +1,4936 @@
+[
+  {
+    "id": "AGNIVEER-T1-001",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "The Battle of Longewala in the 1971 war was fought in which present-day state?",
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "Punjab",
+      "Jammu and Kashmir"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A small company of 23 Punjab held the Longewala post in the Thar Desert of Rajasthan against a Pakistani armoured attack in December 1971, with support from the Air Force."
+  },
+  {
+    "id": "AGNIVEER-T1-002",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "Which Article lets Parliament restrict the Fundamental Rights of members of the armed forces?",
+    "options": [
+      "Article 19",
+      "Article 21",
+      "Article 33",
+      "Article 352"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Article 33 allows Parliament to limit rights such as free speech and forming unions for the armed forces and police, to keep discipline. Article 352 is the national emergency."
+  },
+  {
+    "id": "AGNIVEER-T1-003",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ladakh",
+    "stem": "Which town in Kargil district of Ladakh is known as the coldest inhabited place in India?",
+    "options": [
+      "Leh",
+      "Padum",
+      "Drass",
+      "Nubra"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Winter temperatures at Drass, on the road between Zoji La and Kargil, fall far below −30 °C. Drass was also the scene of heavy fighting in the Kargil War."
+  },
+  {
+    "id": "AGNIVEER-T1-004",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval India",
+    "stem": "The Ahom general Lachit Borphukan defeated a Mughal fleet in 1671 at the Battle of:",
+    "options": [
+      "Saraighat",
+      "Haldighati",
+      "Talikota",
+      "Khanwa"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At Saraighat on the Brahmaputra near Guwahati, Lachit's boats stopped the Mughal advance into Assam. Talikota (1565) ended Vijayanagara's power."
+  },
+  {
+    "id": "AGNIVEER-T1-005",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "Article 368 of the Constitution deals with:",
+    "options": [
+      "A national emergency",
+      "A financial emergency",
+      "Amending the Constitution",
+      "The Election Commission"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article 368 sets out how Parliament amends the Constitution. A national emergency is Article 352, the Election Commission 324 and a financial emergency 360."
+  },
+  {
+    "id": "AGNIVEER-T1-006",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Passes",
+    "stem": "Sela Pass lies on the road to which town in Arunachal Pradesh?",
+    "options": [
+      "Itanagar",
+      "Ziro",
+      "Tawang",
+      "Pasighat"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sela Pass, at about 4,170 m, carries the road from Bomdila to Tawang, home of a famous Buddhist monastery."
+  },
+  {
+    "id": "AGNIVEER-T1-007",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "Kargil Vijay Diwas is observed every year on:",
+    "options": [
+      "16 December",
+      "26 July",
+      "15 January",
+      "7 December"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "26 July marks the end of Operation Vijay in 1999. 15 January is Army Day, 16 December is Vijay Diwas for 1971 and 7 December is Armed Forces Flag Day."
+  },
+  {
+    "id": "AGNIVEER-T1-008",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "To whom does the President of India address a letter of resignation?",
+    "options": [
+      "The Speaker",
+      "The Vice-President",
+      "The Prime Minister",
+      "The Chief Justice"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 56 says the President resigns by writing to the Vice-President, who passes the news to the Speaker of the Lok Sabha."
+  },
+  {
+    "id": "AGNIVEER-T1-009",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Landforms",
+    "stem": "The land between two rivers that meet, such as the Ganga and the Yamuna, is called a:",
+    "options": [
+      "Delta",
+      "Doab",
+      "Moraine",
+      "Estuary"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Doab means 'two waters'. A delta forms where a river splits up at its mouth, and a moraine is rock left by a glacier."
+  },
+  {
+    "id": "AGNIVEER-T1-010",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "The Vellore Mutiny of 1806 was a revolt by:",
+    "options": [
+      "Company sepoys",
+      "Tribal hunters",
+      "Indigo farmers",
+      "Mill workers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Indian sepoys at Vellore fort rose against new dress rules, such as a new turban and a ban on caste marks, half a century before 1857."
+  },
+  {
+    "id": "AGNIVEER-T1-011",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "The Yellow Revolution in India aimed to raise the production of:",
+    "options": [
+      "Wheat",
+      "Milk",
+      "Fish",
+      "Oilseeds"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Yellow Revolution of the late 1980s pushed up oilseed output, such as mustard and sunflower. Milk was the White Revolution and fish the Blue Revolution."
+  },
+  {
+    "id": "AGNIVEER-T1-012",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Climate",
+    "stem": "The violent evening thunderstorms of April and May in West Bengal are locally called:",
+    "options": [
+      "Kal Baisakhi",
+      "Western disturbances",
+      "Loo",
+      "Mango showers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kal Baisakhi, the 'calamity of Baisakh', are nor'westers that bring sudden storms to Bengal and Assam before the monsoon. The loo is a hot, dry summer wind of the north."
+  },
+  {
+    "id": "AGNIVEER-T1-013",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Culture",
+    "stem": "Silambam, a martial art fought with a long bamboo staff, comes from which state?",
+    "options": [
+      "Manipur",
+      "Punjab",
+      "Tamil Nadu",
+      "Kerala"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Silambam is the staff-fighting art of Tamil Nadu. Kalaripayattu comes from Kerala, Gatka from Punjab and Thang-Ta from Manipur."
+  },
+  {
+    "id": "AGNIVEER-T1-014",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "'Birdie' and 'bogey' are scoring terms in which sport?",
+    "options": [
+      "Squash",
+      "Archery",
+      "Golf",
+      "Snooker"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In golf a birdie is one stroke under par for a hole and a bogey is one stroke over."
+  },
+  {
+    "id": "AGNIVEER-T1-015",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "World",
+    "stem": "El Niño is an unusual warming of the sea surface in the:",
+    "options": [
+      "North Atlantic Ocean",
+      "Arabian Sea",
+      "Bay of Bengal",
+      "Eastern Pacific Ocean"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "During El Niño, waters off Peru and Ecuador grow warmer than usual. It often weakens the Indian monsoon."
+  },
+  {
+    "id": "AGNIVEER-T1-016",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pressure",
+    "stem": "A hydraulic lift in a vehicle workshop works on which principle?",
+    "options": [
+      "Archimedes' principle",
+      "Pascal's law",
+      "Bernoulli's principle",
+      "Newton's first law"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pascal's law says pressure applied to a confined liquid is passed on equally in all directions, so a small force on a narrow piston lifts a heavy load on a wide one."
+  },
+  {
+    "id": "AGNIVEER-T1-017",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Compounds",
+    "stem": "Caustic soda is the common name of:",
+    "options": [
+      "Sodium carbonate",
+      "Calcium hydroxide",
+      "Potassium nitrate",
+      "Sodium hydroxide"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Caustic soda is NaOH, a strong base used in soap making. Sodium carbonate is washing soda and calcium hydroxide slaked lime."
+  },
+  {
+    "id": "AGNIVEER-T1-018",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood",
+    "stem": "White blood cells are also called:",
+    "options": [
+      "Thrombocytes",
+      "Osteocytes",
+      "Erythrocytes",
+      "Leucocytes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Leucocytes fight infection. Erythrocytes are red blood cells, thrombocytes are platelets and osteocytes are bone cells."
+  },
+  {
+    "id": "AGNIVEER-T1-019",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Motion",
+    "stem": "A scooter slows from 20 m/s to rest in 4 s. What is its retardation?",
+    "options": [
+      "5 m/s²",
+      "10 m/s²",
+      "16 m/s²",
+      "80 m/s²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Retardation = change in velocity / time = (20 - 0) / 4 = 5 m/s². Multiplying 20 by 4 gives 80, which is not an acceleration."
+  },
+  {
+    "id": "AGNIVEER-T1-020",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Changes",
+    "stem": "Camphor changes straight from a solid to a vapour without melting. This is called:",
+    "options": [
+      "Melting",
+      "Evaporation",
+      "Condensation",
+      "Sublimation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sublimation skips the liquid state. Naphthalene balls and dry ice also sublime."
+  },
+  {
+    "id": "AGNIVEER-T1-021",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plants",
+    "stem": "The bacteria that fix nitrogen in the root nodules of pea and gram plants are:",
+    "options": [
+      "Yeast",
+      "Lactobacillus",
+      "Rhizobium",
+      "Plasmodium"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rhizobium lives in nodules on the roots of legumes and turns nitrogen from the air into compounds the plant can use. Lactobacillus turns milk into curd."
+  },
+  {
+    "id": "AGNIVEER-T1-022",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Laws of motion",
+    "stem": "Seat belts protect passengers in a sudden stop because a moving body tends to keep moving. This tendency is called:",
+    "options": [
+      "Friction",
+      "Inertia",
+      "Momentum",
+      "Gravitation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Inertia is the tendency to keep doing what a body is already doing. When the vehicle stops, the passenger keeps moving forward unless the belt holds them."
+  },
+  {
+    "id": "AGNIVEER-T1-023",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Elements",
+    "stem": "Which gas burns with a 'pop' sound when a lit splint is brought near it?",
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Carbon dioxide",
+      "Nitrogen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Hydrogen burns with a pop. Oxygen relights a glowing splint, and carbon dioxide puts a flame out."
+  },
+  {
+    "id": "AGNIVEER-T1-024",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Breathing",
+    "stem": "Which sheet of muscle below the lungs contracts to draw air into them?",
+    "options": [
+      "Pericardium",
+      "Pleura",
+      "Diaphragm",
+      "Epiglottis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When the diaphragm contracts and flattens, the chest gets bigger and air rushes in. The epiglottis is a flap that covers the windpipe when we swallow."
+  },
+  {
+    "id": "AGNIVEER-T1-025",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "A mixer draws 2.5 A from a 220 V supply. What is its power?",
+    "options": [
+      "88 W",
+      "217.5 W",
+      "222.5 W",
+      "550 W"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "P = V x I = 220 x 2.5 = 550 W. Dividing (220 / 2.5 = 88) gives the resistance in ohms, not the power."
+  },
+  {
+    "id": "AGNIVEER-T1-026",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Metals",
+    "stem": "Copper vessels left in moist air slowly get a green coating of:",
+    "options": [
+      "Basic copper carbonate",
+      "Copper sulphate",
+      "Copper chloride",
+      "Copper oxide"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Copper reacts with oxygen, carbon dioxide and moisture in the air to form green basic copper carbonate. Copper oxide formed on heating is black."
+  },
+  {
+    "id": "AGNIVEER-T1-027",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plants",
+    "stem": "In desert plants such as the cactus, the leaves are reduced to spines mainly to:",
+    "options": [
+      "Make food faster",
+      "Store water in the spines",
+      "Take in more carbon dioxide",
+      "Cut down the loss of water"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Spines have almost no surface for transpiration, so the plant loses very little water in the dry heat. In a cactus the green fleshy stem takes over photosynthesis and stores water."
+  },
+  {
+    "id": "AGNIVEER-T1-028",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "Danger signals use red light because red light is:",
+    "options": [
+      "Scattered the most",
+      "Absorbed by fog",
+      "Scattered the least",
+      "Faster than other colours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Red has the longest wavelength of visible light, so fog and dust scatter it least and it can be seen from far away."
+  },
+  {
+    "id": "AGNIVEER-T1-029",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrolysis",
+    "stem": "In electroplating, the article to be plated is made the:",
+    "options": [
+      "Electrolyte",
+      "Cathode",
+      "Anode",
+      "Salt bridge"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Metal ions from the solution are attracted to the negative electrode, the cathode, and coat the article. The anode is usually a bar of the plating metal."
+  },
+  {
+    "id": "AGNIVEER-T1-030",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Rabies is caused by a:",
+    "options": [
+      "Fungus",
+      "Bacterium",
+      "Protozoan",
+      "Virus"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rabies is a viral disease spread by the bite of an infected animal, usually a dog. Vaccination after a bite prevents it."
+  },
+  {
+    "id": "AGNIVEER-T1-031",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A shopkeeper buys a water bottle for ₹160 and sells it for ₹196. What is his profit percent?",
+    "options": [
+      "12%",
+      "18.4%",
+      "20%",
+      "22.5%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Profit = 196 - 160 = ₹36, and 36 / 160 x 100 = 22.5%. Dividing by the selling price instead gives about 18.4%."
+  },
+  {
+    "id": "AGNIVEER-T1-032",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the LCM of 16, 20 and 30?",
+    "options": [
+      "10",
+      "60",
+      "120",
+      "240"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "16 = 2⁴, 20 = 2² x 5, 30 = 2 x 3 x 5. Take the highest powers: 2⁴ x 3 x 5 = 240. 120 is not a multiple of 16."
+  },
+  {
+    "id": "AGNIVEER-T1-033",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "What is the simple interest on ₹7,200 at 6% a year for 2 years?",
+    "options": [
+      "₹432",
+      "₹576",
+      "₹720",
+      "₹864"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "SI = P x R x T / 100 = 7,200 x 6 x 2 / 100 = ₹864. ₹432 is one year's interest, and ₹720 would be 5% for 2 years."
+  },
+  {
+    "id": "AGNIVEER-T1-034",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the circumference of a circular track of radius 35 m? (Take π = 22/7.)",
+    "options": [
+      "110 m",
+      "220 m",
+      "440 m",
+      "3,850 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Circumference = 2πr = 2 x 22/7 x 35 = 220 m. 110 forgets the 2, and 3,850 is the area in m²."
+  },
+  {
+    "id": "AGNIVEER-T1-035",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "A recruit runs 1.6 km in 7, 6, 8, 6 and 8 minutes on five days. What is his average time?",
+    "options": [
+      "6 minutes",
+      "6.5 minutes",
+      "7 minutes",
+      "8 minutes"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Total = 7 + 6 + 8 + 6 + 8 = 35 minutes over 5 days, so the average is 35 / 5 = 7 minutes."
+  },
+  {
+    "id": "AGNIVEER-T1-036",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "₹1,350 is shared between Kartik and Manoj in the ratio 4 : 5. How much does Manoj get?",
+    "options": [
+      "₹600",
+      "₹675",
+      "₹750",
+      "₹1,080"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 9 parts, each worth 1,350 / 9 = ₹150. Manoj gets 5 x 150 = ₹750 and Kartik ₹600."
+  },
+  {
+    "id": "AGNIVEER-T1-037",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If 5x + 8 = 43, what is x?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "35"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Subtract 8: 5x = 35, so x = 7. Stopping at 35 forgets to divide by 5."
+  },
+  {
+    "id": "AGNIVEER-T1-038",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "Ramesh can paint a barrack in 36 days and Dinesh in 45 days. How long will they take together?",
+    "options": [
+      "20 days",
+      "24 days",
+      "40.5 days",
+      "81 days"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Together they paint 1/36 + 1/45 = 5/180 + 4/180 = 9/180 = 1/20 of the barrack a day, so they need 20 days. 40.5 is the average of the two times and 81 their sum, which are both wrong."
+  },
+  {
+    "id": "AGNIVEER-T1-039",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Trigonometry",
+    "stem": "What is the value of cos 60°?",
+    "options": [
+      "1/√2",
+      "0",
+      "√3/2",
+      "1/2"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "cos 60° = 1/2. √3/2 is cos 30° and 1/√2 is cos 45°."
+  },
+  {
+    "id": "AGNIVEER-T1-040",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A train 210 m long runs at 54 km/h. How long does it take to cross a platform 240 m long?",
+    "options": [
+      "14 s",
+      "16 s",
+      "25 s",
+      "30 s"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "54 km/h = 54 x 5/18 = 15 m/s. To clear the platform the train covers 210 + 240 = 450 m, taking 450 / 15 = 30 s. 14 s counts only the train's own length and 16 s only the platform."
+  },
+  {
+    "id": "AGNIVEER-T1-041",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentages",
+    "stem": "The price of a pair of boots rises by 50% and the new price is then cut by 50%. What is the net change?",
+    "options": [
+      "25% decrease",
+      "No change",
+      "50% decrease",
+      "25% increase"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Take ₹100: up 50% gives ₹150, then down 50% of 150 (₹75) gives ₹75. That is ₹25 less than at the start, a 25% decrease. Adding and subtracting the two percentages (no change) ignores that the cut is taken on a larger amount."
+  },
+  {
+    "id": "AGNIVEER-T1-042",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "Two angles of a triangle are 63° and 74°. What is the third angle?",
+    "options": [
+      "43°",
+      "53°",
+      "63°",
+      "137°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The angles add to 180°, so the third is 180 - (63 + 74) = 43°. 137° is the sum of the two given angles."
+  },
+  {
+    "id": "AGNIVEER-T1-043",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentages",
+    "stem": "What is 15% of 460?",
+    "options": [
+      "6.9",
+      "23",
+      "46",
+      "69"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "10% of 460 is 46 and 5% is 23, so 15% is 69. 46 and 23 are only the 10% and 5% parts."
+  },
+  {
+    "id": "AGNIVEER-T1-044",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "A card is drawn from a well-shuffled pack of 52. What is the probability that it is a red queen?",
+    "options": [
+      "1/52",
+      "1/26",
+      "1/13",
+      "1/2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 2 red queens (hearts and diamonds) in 52 cards, so P = 2/52 = 1/26. 1/13 counts all four queens."
+  },
+  {
+    "id": "AGNIVEER-T1-045",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "The ages of a mother and her daughter add up to 64 years, and the mother is three times as old as the daughter. How old is the daughter?",
+    "options": [
+      "12 years",
+      "16 years",
+      "32 years",
+      "48 years"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Daughter = x, mother = 3x, so 4x = 64 and x = 16. The mother is 48."
+  },
+  {
+    "id": "AGNIVEER-T1-046",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series 5, 12, 26, 54, ?",
+    "options": [
+      "82",
+      "108",
+      "110",
+      "112"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is double the one before plus 2: 54 x 2 + 2 = 110. The gaps 7, 14, 28 double, so the next gap is 56."
+  },
+  {
+    "id": "AGNIVEER-T1-047",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a code, TANK is written as UBOL. How is JEEP written in that code?",
+    "options": [
+      "KFFQ",
+      "KEFQ",
+      "IDDO",
+      "KFEQ"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter moves one place forward: J to K, E to F, E to F, P to Q."
+  },
+  {
+    "id": "AGNIVEER-T1-048",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Which word is the odd one out?",
+    "options": [
+      "Brigade",
+      "Battalion",
+      "Bayonet",
+      "Platoon"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A brigade, a battalion and a platoon are Army units made of soldiers. A bayonet is a blade fixed to a rifle."
+  },
+  {
+    "id": "AGNIVEER-T1-049",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A patrol walks 48 km east, turns left and walks 55 km. How far is it from its starting point?",
+    "options": [
+      "7 km",
+      "73 km",
+      "103 km",
+      "2,640 km"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Turning left from east means walking north, so the legs are at right angles: √(48² + 55²) = √(2,304 + 3,025) = √5,329 = 73 km. 103 km is the distance walked and 7 km the difference of the legs."
+  },
+  {
+    "id": "AGNIVEER-T1-050",
+    "section": "cee",
+    "test": 1,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Introducing a woman, Suresh says, 'She is the only daughter of my mother's father.' How is the woman related to Suresh?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Grandmother",
+      "Sister"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The only daughter of Suresh's mother's father must be Suresh's mother herself."
+  },
+  {
+    "id": "AGNIVEER-T2-001",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "What is the motto of the Indian Army?",
+    "options": [
+      "Valour and Wisdom",
+      "Touch the Sky with Glory",
+      "Service Before Self",
+      "Duty, Honour, Courage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "'Service Before Self' is the Army's motto. 'Touch the Sky with Glory' is the Indian Air Force motto, taken from the Bhagavad Gita."
+  },
+  {
+    "id": "AGNIVEER-T2-002",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "Under Article 51A, every citizen has a Fundamental Duty to defend the country and:",
+    "options": [
+      "Pay all taxes on time",
+      "Render national service when called",
+      "Join the armed forces at 18",
+      "Vote in every election"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 51A(d) asks citizens to defend the country and render national service when called upon. Voting and paying taxes are not listed among the Fundamental Duties."
+  },
+  {
+    "id": "AGNIVEER-T2-003",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Landforms",
+    "stem": "The Terai is a marshy, forested belt that lies:",
+    "options": [
+      "South of the Shivalik hills",
+      "North of the Great Himalaya",
+      "Along the Konkan coast",
+      "On the Deccan plateau"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Streams that sink into the pebbly Bhabar belt at the foot of the Shivaliks come up again further south, making the damp Terai."
+  },
+  {
+    "id": "AGNIVEER-T2-004",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "The 1961 military operation that ended Portuguese rule in Goa was called:",
+    "options": [
+      "Operation Trident",
+      "Operation Vijay",
+      "Operation Meghdoot",
+      "Operation Polo"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Operation Vijay in December 1961 freed Goa, Daman and Diu. Operation Polo (1948) brought Hyderabad into India and Operation Meghdoot (1984) secured Siachen."
+  },
+  {
+    "id": "AGNIVEER-T2-005",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "Which Schedule of the Constitution allots seats in the Rajya Sabha to the states and Union Territories?",
+    "options": [
+      "Second Schedule",
+      "Fourth Schedule",
+      "Seventh Schedule",
+      "Ninth Schedule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Fourth Schedule lists how many Rajya Sabha seats each state and UT gets, roughly by population. The Seventh holds the Union, State and Concurrent Lists."
+  },
+  {
+    "id": "AGNIVEER-T2-006",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Passes",
+    "stem": "The Bhor Ghat carries the road and railway between Mumbai and:",
+    "options": [
+      "Pune",
+      "Surat",
+      "Nashik",
+      "Goa"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Bhor Ghat crosses the Western Ghats on the Mumbai-Pune route. The Thal Ghat carries the Mumbai-Nashik route."
+  },
+  {
+    "id": "AGNIVEER-T2-007",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "The Paika Rebellion of 1817 against the East India Company broke out in:",
+    "options": [
+      "Odisha",
+      "Bihar",
+      "Bengal",
+      "Assam"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Paikas, traditional militia of Khurda in Odisha, rose under Bakshi Jagabandhu after losing their rent-free lands."
+  },
+  {
+    "id": "AGNIVEER-T2-008",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "The State Bank of India was formed in 1955 by taking over the:",
+    "options": [
+      "Bank of Baroda",
+      "Reserve Bank of India",
+      "Punjab National Bank",
+      "Imperial Bank of India"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Imperial Bank, formed in 1921 from the three presidency banks, was nationalised and renamed the State Bank of India on 1 July 1955."
+  },
+  {
+    "id": "AGNIVEER-T2-009",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Earth",
+    "stem": "The magnitude of an earthquake is measured on the:",
+    "options": [
+      "Richter scale",
+      "Beaufort scale",
+      "Kelvin scale",
+      "Mohs scale"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Richter scale measures the energy released. The Mohs scale is for the hardness of minerals and the Beaufort scale for wind speed."
+  },
+  {
+    "id": "AGNIVEER-T2-010",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "Birsa Munda led the Ulgulan, the 'great tumult' of 1899 to 1900, in which present-day state?",
+    "options": [
+      "Odisha",
+      "Jharkhand",
+      "West Bengal",
+      "Chhattisgarh"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Birsa Munda led the Munda tribe of the Chotanagpur plateau, now in Jharkhand, against landlords and British rule. Jharkhand was formed on his birth anniversary, 15 November 2000."
+  },
+  {
+    "id": "AGNIVEER-T2-011",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Davis Cup is an international team competition in:",
+    "options": [
+      "Table tennis",
+      "Badminton",
+      "Squash",
+      "Tennis"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Davis Cup, first played in 1900, is the men's world team event in tennis."
+  },
+  {
+    "id": "AGNIVEER-T2-012",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Solar system",
+    "stem": "Which planet has the highest surface temperature?",
+    "options": [
+      "Mercury",
+      "Jupiter",
+      "Mars",
+      "Venus"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Venus is farther from the Sun than Mercury, but its thick carbon dioxide atmosphere traps heat, keeping its surface near 465 °C."
+  },
+  {
+    "id": "AGNIVEER-T2-013",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "Saragarhi Day on 12 September honours 21 soldiers of which regiment, who held a frontier post to the last man in 1897?",
+    "options": [
+      "Sikh Regiment",
+      "Gorkha Rifles",
+      "Dogra Regiment",
+      "Jat Regiment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The 21 men of the 36th Sikhs, whose successor is the 4th Battalion of the Sikh Regiment, defended Saragarhi against thousands of tribesmen."
+  },
+  {
+    "id": "AGNIVEER-T2-014",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National symbols",
+    "stem": "How many spokes does the Ashoka Chakra on the national flag have?",
+    "options": [
+      "12",
+      "16",
+      "20",
+      "24"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The navy blue wheel at the centre of the white band has 24 spokes, taken from the Sarnath Lion Capital of Ashoka."
+  },
+  {
+    "id": "AGNIVEER-T2-015",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "India",
+    "stem": "Kavaratti is the capital of which Union Territory?",
+    "options": [
+      "Puducherry",
+      "Lakshadweep",
+      "Ladakh",
+      "Andaman and Nicobar Islands"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Kavaratti is on one of the coral islands of Lakshadweep in the Arabian Sea."
+  },
+  {
+    "id": "AGNIVEER-T2-016",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work and energy",
+    "stem": "If the speed of a moving body is made three times as large, its kinetic energy becomes:",
+    "options": [
+      "Nine times",
+      "Six times",
+      "Twenty-seven times",
+      "Three times"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "KE = ½mv², so it goes with the square of speed: tripling v multiplies KE by 3² = 9."
+  },
+  {
+    "id": "AGNIVEER-T2-017",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrolysis",
+    "stem": "When brine is electrolysed in the chlor-alkali process, which gas is given off at the anode?",
+    "options": [
+      "Chlorine",
+      "Nitrogen",
+      "Oxygen",
+      "Hydrogen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chlorine forms at the anode and hydrogen at the cathode, while sodium hydroxide stays in solution."
+  },
+  {
+    "id": "AGNIVEER-T2-018",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "When a person's kidneys fail, their blood can be cleaned by a machine in a process called:",
+    "options": [
+      "Dialysis",
+      "Vaccination",
+      "Chemotherapy",
+      "Transfusion"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In dialysis the blood is passed through an artificial kidney that removes urea and extra water, then returned to the body."
+  },
+  {
+    "id": "AGNIVEER-T2-019",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "A current of 0.5 A flows through a lamp for 2 minutes. How much charge passes?",
+    "options": [
+      "0.25 C",
+      "1 C",
+      "60 C",
+      "240 C"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Q = I x t = 0.5 A x 120 s = 60 C. Using 2 s instead of 120 s gives 1 C."
+  },
+  {
+    "id": "AGNIVEER-T2-020",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alloys",
+    "stem": "Solder, used to join electrical wires, is an alloy of lead and:",
+    "options": [
+      "Copper",
+      "Tin",
+      "Zinc",
+      "Nickel"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Solder melts at a low temperature because it is a lead-tin alloy. Brass is copper with zinc."
+  },
+  {
+    "id": "AGNIVEER-T2-021",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scientists",
+    "stem": "Who developed the first vaccine, against smallpox, in 1796?",
+    "options": [
+      "Alexander Fleming",
+      "Louis Pasteur",
+      "Robert Koch",
+      "Edward Jenner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Jenner showed that cowpox protected against smallpox. Pasteur later made the rabies vaccine, and Fleming discovered penicillin."
+  },
+  {
+    "id": "AGNIVEER-T2-022",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Heat",
+    "stem": "Heat travels along a metal spoon standing in hot tea mainly by:",
+    "options": [
+      "Evaporation",
+      "Radiation",
+      "Conduction",
+      "Convection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In conduction heat passes from particle to particle through a solid. Convection needs a moving liquid or gas, and radiation needs no medium."
+  },
+  {
+    "id": "AGNIVEER-T2-023",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Periodic table",
+    "stem": "How many vertical groups are there in the modern periodic table?",
+    "options": [
+      "7",
+      "8",
+      "16",
+      "18"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The modern long-form table has 18 groups and 7 periods. Mendeleev's table had 8 groups."
+  },
+  {
+    "id": "AGNIVEER-T2-024",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood",
+    "stem": "The colourless fluid that drains from the tissues into separate vessels and carries white blood cells is called:",
+    "options": [
+      "Mucus",
+      "Lymph",
+      "Bile",
+      "Plasma"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lymph flows through lymph vessels and nodes, which filter germs, and returns to the blood near the heart. Plasma is the liquid part of the blood itself."
+  },
+  {
+    "id": "AGNIVEER-T2-025",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Heat",
+    "stem": "Food cooks faster in a pressure cooker because:",
+    "options": [
+      "The boiling point of water rises",
+      "The boiling point of water falls",
+      "The flame gets hotter",
+      "Steam is heavier than air"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The higher pressure inside raises the boiling point to about 120 °C, so the food is cooked in hotter water."
+  },
+  {
+    "id": "AGNIVEER-T2-026",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atoms",
+    "stem": "Who discovered the neutron?",
+    "options": [
+      "J. J. Thomson",
+      "James Chadwick",
+      "Ernest Rutherford",
+      "Niels Bohr"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Chadwick discovered the neutron in 1932. Thomson discovered the electron in 1897, Rutherford showed that an atom has a small nucleus, and Bohr proposed fixed electron orbits."
+  },
+  {
+    "id": "AGNIVEER-T2-027",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "Kwashiorkor in children is caused by a lack of:",
+    "options": [
+      "Iron",
+      "Protein",
+      "Vitamin C",
+      "Iodine"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Kwashiorkor, with a swollen belly and thin limbs, comes from too little protein. Marasmus is a lack of both protein and energy."
+  },
+  {
+    "id": "AGNIVEER-T2-028",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "A concave mirror has a focal length of 12 cm. What is its radius of curvature?",
+    "options": [
+      "6 cm",
+      "12 cm",
+      "18 cm",
+      "24 cm"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "For a spherical mirror R = 2f = 2 x 12 = 24 cm. Halving instead of doubling gives 6 cm."
+  },
+  {
+    "id": "AGNIVEER-T2-029",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Compounds",
+    "stem": "Dry ice is the solid form of:",
+    "options": [
+      "Water",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Ammonia"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Solid CO₂ changes straight into gas at about −78 °C without melting, so it is used to keep things cold."
+  },
+  {
+    "id": "AGNIVEER-T2-030",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "Vitamin B12 contains which metal?",
+    "options": [
+      "Iron",
+      "Cobalt",
+      "Zinc",
+      "Copper"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Vitamin B12 (cobalamin) has a cobalt atom at its centre. Lack of it causes a kind of anaemia."
+  },
+  {
+    "id": "AGNIVEER-T2-031",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "A pair of boots is marked ₹3,200 and sold at a 15% discount. What is the selling price?",
+    "options": [
+      "₹480",
+      "₹2,720",
+      "₹2,880",
+      "₹3,185"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The discount is 15% of 3,200 = ₹480, so the selling price is 3,200 - 480 = ₹2,720. ₹480 is the discount itself."
+  },
+  {
+    "id": "AGNIVEER-T2-032",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the HCF of 48 and 180?",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "12"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "48 = 2⁴ x 3 and 180 = 2² x 3² x 5. The common part is 2² x 3 = 12."
+  },
+  {
+    "id": "AGNIVEER-T2-033",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What amount does ₹18,000 grow to in 2 years at 10% a year, compounded yearly?",
+    "options": [
+      "₹3,780",
+      "₹19,800",
+      "₹21,600",
+      "₹21,780"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "18,000 x 1.1 = 19,800 after one year; 19,800 x 1.1 = ₹21,780 after two. Simple interest would give ₹21,600, and ₹3,780 is the interest alone."
+  },
+  {
+    "id": "AGNIVEER-T2-034",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the volume of an ammunition box 15 cm long, 6 cm wide and 4 cm high?",
+    "options": [
+      "25 cm³",
+      "90 cm³",
+      "348 cm³",
+      "360 cm³"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume = l x b x h = 15 x 6 x 4 = 360 cm³. 348 cm² is the surface area, 90 the area of the base and 25 the sum of the three edges."
+  },
+  {
+    "id": "AGNIVEER-T2-035",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A convoy covers the first 150 km at 50 km/h and the next 150 km at 75 km/h. What is its average speed?",
+    "options": [
+      "60 km/h",
+      "62.5 km/h",
+      "65 km/h",
+      "125 km/h"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Time = 150/50 + 150/75 = 3 + 2 = 5 hours for 300 km, so the average is 60 km/h. 62.5 is the plain average of the two speeds, which ignores the times."
+  },
+  {
+    "id": "AGNIVEER-T2-036",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "18 men can lay a road in 25 days. How many men are needed to lay it in 15 days?",
+    "options": [
+      "11",
+      "22",
+      "28",
+      "30"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The job is 18 x 25 = 450 man-days, and 450 / 15 = 30 men. 11 comes from treating it as direct proportion (18 x 15 / 25 = 10.8)."
+  },
+  {
+    "id": "AGNIVEER-T2-037",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "What is the value of a² − b² when a = 9 and b = 5?",
+    "options": [
+      "4",
+      "16",
+      "56",
+      "106"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "a² − b² = 81 − 25 = 56, the same as (a + b)(a − b) = 14 x 4. 106 adds the squares."
+  },
+  {
+    "id": "AGNIVEER-T2-038",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentages",
+    "stem": "After a 20% rise, the price of a kit bag is ₹540. What was the price before the rise?",
+    "options": [
+      "₹432",
+      "₹450",
+      "₹520",
+      "₹648"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "1.2 x old price = 540, so the old price is 540 / 1.2 = ₹450. Taking 20% off 540 gives ₹432, which is wrong because the 20% was of the old price."
+  },
+  {
+    "id": "AGNIVEER-T2-039",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Square roots",
+    "stem": "What is the square root of 2,601?",
+    "options": [
+      "49",
+      "51",
+      "59",
+      "61"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "50² = 2,500 and 55² = 3,025, so the root lies between them, and only a number ending in 1 or 9 has a square ending in 1. 51² = 2,601."
+  },
+  {
+    "id": "AGNIVEER-T2-040",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixtures",
+    "stem": "An 80 litre mixture of milk and water has 25% water. How much water must be added so that water becomes 40% of the mixture?",
+    "options": [
+      "12 litres",
+      "15 litres",
+      "20 litres",
+      "32 litres"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Milk is 60 litres and must be 60% of the new total, which is 60 / 0.6 = 100 litres. So 100 - 80 = 20 litres of water are added."
+  },
+  {
+    "id": "AGNIVEER-T2-041",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pipes and cisterns",
+    "stem": "Pipe A fills a tank in 9 hours and pipe B empties it in 12 hours. If both are opened together, how long does the empty tank take to fill?",
+    "options": [
+      "3 hours",
+      "18 hours",
+      "21 hours",
+      "36 hours"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Net filling per hour = 1/9 - 1/12 = 4/36 - 3/36 = 1/36, so the tank fills in 36 hours. 3 hours subtracts the times (12 - 9) and 21 hours adds them."
+  },
+  {
+    "id": "AGNIVEER-T2-042",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "A square drill ground has a side of 35 m. What is its perimeter?",
+    "options": [
+      "35 m",
+      "70 m",
+      "140 m",
+      "1,225 m"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Perimeter = 4 x side = 4 x 35 = 140 m. 1,225 is the area in square metres."
+  },
+  {
+    "id": "AGNIVEER-T2-043",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "The average weight of 8 soldiers is 65 kg. A ninth soldier joins and the average becomes 66 kg. What is his weight?",
+    "options": [
+      "66 kg",
+      "67 kg",
+      "73 kg",
+      "74 kg"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The total goes from 8 x 65 = 520 kg to 9 x 66 = 594 kg, so he weighs 594 - 520 = 74 kg."
+  },
+  {
+    "id": "AGNIVEER-T2-044",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "What is the mean of 11, 15, 19, 23 and 32?",
+    "options": [
+      "19",
+      "20",
+      "21",
+      "100"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Sum = 100 and there are 5 numbers, so the mean is 100 / 5 = 20. 19 is the median."
+  },
+  {
+    "id": "AGNIVEER-T2-045",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boats and streams",
+    "stem": "A boat goes 36 km downstream in 3 hours and returns upstream in 4 hours. What is the speed of the stream?",
+    "options": [
+      "1.5 km/h",
+      "3 km/h",
+      "10.5 km/h",
+      "12 km/h"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Downstream speed = 12 km/h and upstream = 9 km/h. The stream's speed is half the difference: (12 - 9) / 2 = 1.5 km/h. The boat's own speed is 10.5 km/h."
+  },
+  {
+    "id": "AGNIVEER-T2-046",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series 6, 12, 20, 30, 42, ?",
+    "options": [
+      "50",
+      "52",
+      "54",
+      "56"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The gaps are 6, 8, 10, 12, so the next gap is 14: 42 + 14 = 56. Each term is also n x (n + 1), and 7 x 8 = 56."
+  },
+  {
+    "id": "AGNIVEER-T2-047",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Pilot is to aircraft as helmsman is to:",
+    "options": [
+      "Train",
+      "Tank",
+      "Ship",
+      "Truck"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A pilot steers an aircraft and a helmsman steers a ship."
+  },
+  {
+    "id": "AGNIVEER-T2-048",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next in the series E, I, M, Q, ?",
+    "options": [
+      "U",
+      "T",
+      "V",
+      "S"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter moves four places forward: E, I, M, Q, then U."
+  },
+  {
+    "id": "AGNIVEER-T2-049",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a line of 47 recruits, Deepak is 19th from the front. What is his position from the back?",
+    "options": [
+      "19th",
+      "27th",
+      "28th",
+      "29th"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Position from the back = total − position from the front + 1 = 47 − 19 + 1 = 29th. 28th forgets to add 1 for Deepak himself."
+  },
+  {
+    "id": "AGNIVEER-T2-050",
+    "section": "cee",
+    "test": 2,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If today is Thursday, what day of the week will it be 38 days from today?",
+    "options": [
+      "Sunday",
+      "Friday",
+      "Saturday",
+      "Monday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "38 = 5 weeks + 3 days, so count 3 days on from Thursday: Friday, Saturday, Sunday."
+  },
+  {
+    "id": "AGNIVEER-D-001",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "The Battle of Rezang La in 1962 was fought by C Company of which regiment?",
+    "options": [
+      "Kumaon Regiment",
+      "Sikh Regiment",
+      "Madras Regiment",
+      "Rajputana Rifles"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "C Company of 13 Kumaon under Major Shaitan Singh fought to almost the last man at Rezang La in Ladakh. Major Shaitan Singh was awarded the Param Vir Chakra."
+  },
+  {
+    "id": "AGNIVEER-D-002",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "The Speaker of the Lok Sabha is chosen by:",
+    "options": [
+      "Both Houses together",
+      "The Prime Minister",
+      "The President",
+      "The members of the Lok Sabha"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 93 says the Lok Sabha elects one of its own members as Speaker and another as Deputy Speaker."
+  },
+  {
+    "id": "AGNIVEER-D-003",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "India",
+    "stem": "Which state is bordered by Bangladesh on three sides?",
+    "options": [
+      "Meghalaya",
+      "Tripura",
+      "Assam",
+      "Mizoram"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bangladesh surrounds Tripura on the north, west and south; only its eastern side touches Assam and Mizoram."
+  },
+  {
+    "id": "AGNIVEER-D-004",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "Operation Meghdoot in 1984 secured which area for India?",
+    "options": [
+      "Rann of Kachchh",
+      "Kargil heights",
+      "Siachen Glacier",
+      "Haji Pir Pass"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "On 13 April 1984 the Army and Air Force occupied the passes of the Saltoro Ridge on the Siachen Glacier."
+  },
+  {
+    "id": "AGNIVEER-D-005",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "Members of the Rajya Sabha from a state are elected by:",
+    "options": [
+      "The state's elected MLAs",
+      "The state's Lok Sabha MPs",
+      "The voters directly",
+      "The state's Governor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The elected members of the state Legislative Assembly choose the state's Rajya Sabha members by proportional representation."
+  },
+  {
+    "id": "AGNIVEER-D-006",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coasts",
+    "stem": "The Coromandel Coast is the eastern coast of which state?",
+    "options": [
+      "Maharashtra",
+      "Tamil Nadu",
+      "Gujarat",
+      "Kerala"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Coromandel Coast runs along Tamil Nadu (and south Andhra Pradesh) on the Bay of Bengal. Kerala's coast is the Malabar Coast."
+  },
+  {
+    "id": "AGNIVEER-D-007",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "Vijay Diwas on 16 December marks the victory in the war of which year?",
+    "options": [
+      "1947",
+      "1962",
+      "1965",
+      "1971"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "On 16 December 1971 about 93,000 Pakistani troops surrendered at Dhaka, and Bangladesh became free."
+  },
+  {
+    "id": "AGNIVEER-D-008",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National symbols",
+    "stem": "What is the ratio of the width to the length of the national flag?",
+    "options": [
+      "3 : 4",
+      "3 : 5",
+      "1 : 2",
+      "2 : 3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The flag is one and a half times as long as it is wide, a ratio of 2 : 3."
+  },
+  {
+    "id": "AGNIVEER-D-009",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coasts",
+    "stem": "The Gulf of Khambhat and the Gulf of Kachchh are off the coast of:",
+    "options": [
+      "Odisha",
+      "Maharashtra",
+      "Karnataka",
+      "Gujarat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Both gulfs cut into Gujarat, giving it the longest coastline of any state, with the Kathiawar peninsula between them."
+  },
+  {
+    "id": "AGNIVEER-D-010",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "Where is the Army's High Altitude Warfare School?",
+    "options": [
+      "Dehradun",
+      "Mhow",
+      "Gulmarg",
+      "Leh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "HAWS at Gulmarg in Kashmir trains troops in mountain and snow warfare. Mhow has the Infantry School and Dehradun the Indian Military Academy."
+  },
+  {
+    "id": "AGNIVEER-D-011",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National symbols",
+    "stem": "The words 'Satyameva Jayate' under the national emblem are taken from the:",
+    "options": [
+      "Mundaka Upanishad",
+      "Arthashastra",
+      "Bhagavad Gita",
+      "Rig Veda"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "'Truth alone triumphs' comes from the Mundaka Upanishad and is written in Devanagari below the Lion Capital."
+  },
+  {
+    "id": "AGNIVEER-D-012",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Maps",
+    "stem": "On a map, lines that join places of equal height above sea level are called:",
+    "options": [
+      "Isotherms",
+      "Meridians",
+      "Isobars",
+      "Contours"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Contour lines show height; close contours mean a steep slope. Isobars join equal pressure and isotherms equal temperature."
+  },
+  {
+    "id": "AGNIVEER-D-013",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "The National War Memorial, which honours soldiers killed since Independence, is in:",
+    "options": [
+      "New Delhi",
+      "Pune",
+      "Chandigarh",
+      "Dehradun"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "It stands in the C-Hexagon near India Gate in New Delhi and was opened in 2019."
+  },
+  {
+    "id": "AGNIVEER-D-014",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "How often is the Census of India normally held?",
+    "options": [
+      "Every 5 years",
+      "Every 10 years",
+      "Every 12 years",
+      "Every 15 years"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "India has held a Census every ten years since 1881, apart from delays such as the one that followed 2011."
+  },
+  {
+    "id": "AGNIVEER-D-015",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "World",
+    "stem": "The Strait of Hormuz links the Persian Gulf with the:",
+    "options": [
+      "Red Sea",
+      "Gulf of Oman",
+      "Caspian Sea",
+      "Mediterranean Sea"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The narrow Strait of Hormuz, between Iran and Oman, opens the Persian Gulf to the Gulf of Oman and the Arabian Sea."
+  },
+  {
+    "id": "AGNIVEER-D-016",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "Major Somnath Sharma, the first recipient of the Param Vir Chakra, fell defending which place in 1947?",
+    "options": [
+      "Longewala",
+      "Tololing",
+      "Rezang La",
+      "Badgam"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Major Somnath Sharma of 4 Kumaon was killed holding Badgam near Srinagar airfield in November 1947. Tololing was a Kargil battle of 1999."
+  },
+  {
+    "id": "AGNIVEER-D-017",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "The Chief of Defence Staff also heads which department of the Ministry of Defence?",
+    "options": [
+      "Department of Ex-Servicemen Welfare",
+      "Defence Research and Development",
+      "Department of Military Affairs",
+      "Department of Defence Production"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Department of Military Affairs, set up in 2020, is headed by the Chief of Defence Staff, who is also the government's principal military adviser."
+  },
+  {
+    "id": "AGNIVEER-D-018",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "World",
+    "stem": "The equator does not pass through which continent?",
+    "options": [
+      "Asia",
+      "Africa",
+      "South America",
+      "Europe"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The equator crosses Africa, South America and Asia (in Indonesia), but all of Europe lies well to the north."
+  },
+  {
+    "id": "AGNIVEER-D-019",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "Who was the first Indian Commander-in-Chief of the Indian Army after Independence?",
+    "options": [
+      "Sam Manekshaw",
+      "K M Cariappa",
+      "Zorawar Singh",
+      "K S Thimayya"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "General (later Field Marshal) K M Cariappa took over from the last British chief on 15 January 1949, the date now kept as Army Day."
+  },
+  {
+    "id": "AGNIVEER-D-020",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "Article 19 guarantees six freedoms to citizens. Which of these is NOT one of them?",
+    "options": [
+      "Freedom to assemble peacefully",
+      "Freedom of speech",
+      "Freedom to move across India",
+      "Freedom to carry arms"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 19(1) covers speech and expression, peaceful assembly without arms, associations, movement, residence and any profession. Carrying arms is regulated by law, not a Fundamental Right."
+  },
+  {
+    "id": "AGNIVEER-D-021",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Climate",
+    "stem": "Most cyclones that strike India's east coast form over the:",
+    "options": [
+      "Bay of Bengal",
+      "Persian Gulf",
+      "Red Sea",
+      "Arabian Sea"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The warm Bay of Bengal breeds more and stronger cyclones than the Arabian Sea, especially in October and November."
+  },
+  {
+    "id": "AGNIVEER-D-022",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "What is the motto of the National Cadet Corps (NCC)?",
+    "options": [
+      "Unity and Discipline",
+      "Strength and Honour",
+      "Valour and Sacrifice",
+      "Service Before Self"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The NCC motto, 'Ekta aur Anushasan', means Unity and Discipline. 'Service Before Self' is the Army's motto."
+  },
+  {
+    "id": "AGNIVEER-D-023",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "In the stock market, a 'bull' is an investor who:",
+    "options": [
+      "Never sells shares",
+      "Expects prices to rise",
+      "Expects prices to fall",
+      "Buys only government bonds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A bull buys expecting prices to go up; a bear sells expecting them to fall. A rising market is called a bull market."
+  },
+  {
+    "id": "AGNIVEER-D-024",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "India",
+    "stem": "The 'Seven Sisters' are the states of which region?",
+    "options": [
+      "North-east India",
+      "Central India",
+      "South India",
+      "The Himalayan west"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The name refers to Assam, Arunachal Pradesh, Meghalaya, Manipur, Mizoram, Nagaland and Tripura."
+  },
+  {
+    "id": "AGNIVEER-D-025",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "Who was the first Indian Army officer promoted to the rank of Field Marshal?",
+    "options": [
+      "K S Thimayya",
+      "Sam Manekshaw",
+      "K M Cariappa",
+      "Arjan Singh"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sam Manekshaw, Army chief in the 1971 war, became Field Marshal in January 1973. Cariappa was given the rank in 1986, and Arjan Singh was Marshal of the Indian Air Force."
+  },
+  {
+    "id": "AGNIVEER-D-026",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Indian currency notes, other than the one-rupee note, are signed by the:",
+    "options": [
+      "Finance Minister",
+      "Governor of the RBI",
+      "Finance Secretary",
+      "President of India"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The RBI issues notes of ₹2 and above, so they carry the Governor's signature. The one-rupee note is issued by the government and signed by the Finance Secretary."
+  },
+  {
+    "id": "AGNIVEER-D-027",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vegetation",
+    "stem": "Mangrove forests grow mainly in:",
+    "options": [
+      "Coastal deltas and creeks",
+      "High mountain slopes",
+      "Dry desert plains",
+      "Inland grasslands"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mangroves tolerate salt water and tides, so they grow in estuaries such as the Sundarbans and Bhitarkanika."
+  },
+  {
+    "id": "AGNIVEER-D-028",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "Who founded the Asiatic Society in Calcutta in 1784?",
+    "options": [
+      "William Jones",
+      "Max Muller",
+      "Warren Hastings",
+      "James Prinsep"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sir William Jones founded the society to study Asian languages and history. James Prinsep later deciphered the Brahmi script."
+  },
+  {
+    "id": "AGNIVEER-D-029",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "In which year did the Reserve Bank of India begin operations?",
+    "options": [
+      "1935",
+      "1947",
+      "1949",
+      "1969"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The RBI was set up on 1 April 1935 under the RBI Act, 1934. It was nationalised in 1949, and fourteen major commercial banks were nationalised in 1969."
+  },
+  {
+    "id": "AGNIVEER-D-030",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mountains",
+    "stem": "Which range traditionally divides north India from the Deccan?",
+    "options": [
+      "Shivalik",
+      "Vindhya",
+      "Nilgiri",
+      "Aravalli"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Vindhya range, with the Satpura south of it, was long seen as the boundary between the Indo-Gangetic north and the Deccan."
+  },
+  {
+    "id": "AGNIVEER-D-031",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "Alluri Sitarama Raju led the Rampa rebellion of 1922 to 1924 in the hills of present-day:",
+    "options": [
+      "Kerala",
+      "Andhra Pradesh",
+      "Odisha",
+      "Karnataka"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Alluri Sitarama Raju led the tribal people of the Godavari hill tracts against forest laws until he was killed in 1924."
+  },
+  {
+    "id": "AGNIVEER-D-032",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Subroto Cup is a football tournament for:",
+    "options": [
+      "State teams",
+      "Women's clubs",
+      "Army teams",
+      "School teams"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Subroto Mukerjee Cup, run by the Indian Air Force since 1960, is the national inter-school football tournament."
+  },
+  {
+    "id": "AGNIVEER-D-033",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Within India, the Indus flows through which region?",
+    "options": [
+      "Rajasthan",
+      "Punjab",
+      "Himachal Pradesh",
+      "Ladakh"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Indus rises in Tibet and flows north-west through Ladakh, past Leh, and then on towards Pakistan."
+  },
+  {
+    "id": "AGNIVEER-D-034",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "Rani Gaidinliu, who took up the fight against British rule as a teenager, was a leader of the:",
+    "options": [
+      "Mizo people",
+      "Naga people",
+      "Bodo people",
+      "Khasi people"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gaidinliu, a Zeliangrong Naga from Manipur, was jailed from 1932 to 1947. Nehru gave her the title Rani."
+  },
+  {
+    "id": "AGNIVEER-D-035",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "How long is a cricket pitch between the two sets of stumps?",
+    "options": [
+      "20 yards",
+      "22 yards",
+      "24 yards",
+      "26 yards"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The pitch is 22 yards (about 20.12 m) from stumps to stumps."
+  },
+  {
+    "id": "AGNIVEER-D-036",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Landforms",
+    "stem": "A narrow strip of land that joins two larger land masses is called an:",
+    "options": [
+      "Isthmus",
+      "Archipelago",
+      "Strait",
+      "Peninsula"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An isthmus, such as the Isthmus of Panama, joins two land masses. A strait is a narrow strip of water joining two seas."
+  },
+  {
+    "id": "AGNIVEER-D-037",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "Infantry Day on 27 October marks the day in 1947 when Indian troops were flown in to defend:",
+    "options": [
+      "Jammu",
+      "Poonch",
+      "Srinagar",
+      "Leh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "On 27 October 1947 soldiers of 1 Sikh landed at Srinagar airfield and stopped the raiders advancing on the city."
+  },
+  {
+    "id": "AGNIVEER-D-038",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "India's highest sporting honour, the Khel Ratna, is named after:",
+    "options": [
+      "Milkha Singh",
+      "Kapil Dev",
+      "Major Dhyan Chand",
+      "P T Usha"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The award was renamed the Major Dhyan Chand Khel Ratna in 2021, after the hockey player who won three Olympic golds."
+  },
+  {
+    "id": "AGNIVEER-D-039",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Earth",
+    "stem": "The Earth's axis is tilted from the vertical by about:",
+    "options": [
+      "23.5°",
+      "45°",
+      "66.5°",
+      "90°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The axis is tilted about 23.5°, which gives us the seasons. 66.5° is the angle the axis makes with the plane of the orbit."
+  },
+  {
+    "id": "AGNIVEER-D-040",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defence",
+    "stem": "Operation Polo in 1948 brought which princely state into the Indian Union?",
+    "options": [
+      "Hyderabad",
+      "Junagadh",
+      "Travancore",
+      "Bhopal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Army moved into Hyderabad in September 1948 and the Nizam's forces surrendered within five days. Junagadh joined after a plebiscite."
+  },
+  {
+    "id": "AGNIVEER-D-041",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "What is the distance of a full marathon?",
+    "options": [
+      "21.1 km",
+      "40 km",
+      "42.195 km",
+      "45 km"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A marathon is 42.195 km; a half marathon is about 21.1 km."
+  },
+  {
+    "id": "AGNIVEER-D-042",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World",
+    "stem": "Which ocean lies between Africa and Australia?",
+    "options": [
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Southern Ocean",
+      "Atlantic Ocean"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Indian Ocean stretches from the east coast of Africa to the west coast of Australia."
+  },
+  {
+    "id": "AGNIVEER-D-043",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerHistory",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "The Aihole inscription of the Chalukya king Pulakeshin II was composed by the poet:",
+    "options": [
+      "Kalidasa",
+      "Banabhatta",
+      "Harishena",
+      "Ravikirti"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ravikirti, a Jain court poet, wrote the Aihole prashasti in 634 CE, praising Pulakeshin II's victories. Harishena wrote the Allahabad Pillar inscription for Samudragupta, and Banabhatta wrote the Harshacharita."
+  },
+  {
+    "id": "AGNIVEER-D-044",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Uber Cup is the world team championship for women in:",
+    "options": [
+      "Table tennis",
+      "Hockey",
+      "Badminton",
+      "Tennis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Uber Cup is the women's counterpart of the men's Thomas Cup in badminton."
+  },
+  {
+    "id": "AGNIVEER-D-045",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "India",
+    "stem": "Aizawl is the capital of which state?",
+    "options": [
+      "Manipur",
+      "Nagaland",
+      "Mizoram",
+      "Meghalaya"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Aizawl is the capital of Mizoram. Imphal is the capital of Manipur, Kohima of Nagaland and Shillong of Meghalaya."
+  },
+  {
+    "id": "AGNIVEER-D-046",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "The path of a sunbeam becomes visible in a dusty room or a misty forest because of the:",
+    "options": [
+      "Dispersion of light",
+      "Refraction of light",
+      "Total internal reflection",
+      "Tyndall effect"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tiny particles of dust or water scatter the light sideways, so the beam can be seen. This scattering by fine particles is the Tyndall effect."
+  },
+  {
+    "id": "AGNIVEER-D-047",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mixtures",
+    "stem": "Which of these is a colloid?",
+    "options": [
+      "Salt solution",
+      "Copper sulphate solution",
+      "Milk",
+      "Sugar solution"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Milk has tiny droplets of fat spread through water that do not settle and scatter light. Salt, sugar and copper sulphate dissolve fully to form true solutions."
+  },
+  {
+    "id": "AGNIVEER-D-048",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Plants",
+    "stem": "Which two raw materials do green plants use to make food in photosynthesis?",
+    "options": [
+      "Carbon dioxide and water",
+      "Nitrogen and sunlight",
+      "Oxygen and water",
+      "Glucose and oxygen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Using sunlight and chlorophyll, plants turn carbon dioxide and water into glucose and give out oxygen."
+  },
+  {
+    "id": "AGNIVEER-D-049",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heat",
+    "stem": "The heat absorbed when ice melts, without any rise in temperature, is called:",
+    "options": [
+      "Radiant heat",
+      "Latent heat",
+      "Specific heat",
+      "Kinetic heat"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The heat breaks the bonds holding the ice together instead of raising its temperature, so melting ice stays at 0 °C until it has all melted."
+  },
+  {
+    "id": "AGNIVEER-D-050",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acids and bases",
+    "stem": "An antacid tablet for acidity usually contains:",
+    "options": [
+      "A strong acid",
+      "A mild base",
+      "A strong base",
+      "A neutral salt"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mild bases such as magnesium hydroxide (milk of magnesia) neutralise the extra acid in the stomach. A strong base would harm the body."
+  },
+  {
+    "id": "AGNIVEER-D-051",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Eye",
+    "stem": "The eye changes the focal length of its lens with the help of the:",
+    "options": [
+      "Iris muscles",
+      "Optic nerve",
+      "Eyelid muscles",
+      "Ciliary muscles"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The ciliary muscles change the lens's thickness so that both near and far objects can be focused. This is called accommodation."
+  },
+  {
+    "id": "AGNIVEER-D-052",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "The filament of an electric bulb is made of:",
+    "options": [
+      "Aluminium",
+      "Copper",
+      "Nichrome",
+      "Tungsten"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tungsten has a very high melting point (about 3,400 °C), so it can glow white-hot. Nichrome is used in heater coils."
+  },
+  {
+    "id": "AGNIVEER-D-053",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "Detergents clean better than soap in hard water because they:",
+    "options": [
+      "Kill every germ",
+      "Are made from animal fat",
+      "Form no scum with hard water",
+      "Contain more water"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Soap reacts with the calcium and magnesium salts in hard water to form a sticky scum. Detergents do not, so they keep cleaning."
+  },
+  {
+    "id": "AGNIVEER-D-054",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Digestion",
+    "stem": "Bile, which breaks fats into small droplets, is made by the:",
+    "options": [
+      "Stomach",
+      "Liver",
+      "Gall bladder",
+      "Pancreas"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The liver makes bile; the gall bladder only stores it until it is released into the small intestine. The pancreas makes pancreatic juice."
+  },
+  {
+    "id": "AGNIVEER-D-055",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "When the live wire and the neutral wire touch each other directly, it is called:",
+    "options": [
+      "A short circuit",
+      "Induction",
+      "Earthing",
+      "Overloading"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With almost no resistance in the path, a very large current flows, and the fuse or MCB should cut it off. Overloading is drawing too much current through many appliances."
+  },
+  {
+    "id": "AGNIVEER-D-056",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "Diamond and graphite are both forms of which element?",
+    "options": [
+      "Silicon",
+      "Sulphur",
+      "Boron",
+      "Carbon"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "They are allotropes of carbon. In diamond each atom bonds to four others in a hard network; graphite has layers that slide, so it is soft."
+  },
+  {
+    "id": "AGNIVEER-D-057",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Plants",
+    "stem": "The opening and closing of stomata is controlled by:",
+    "options": [
+      "Root hairs",
+      "Pollen grains",
+      "Xylem cells",
+      "Guard cells"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Two guard cells around each stoma swell to open it and shrink to close it, controlling gas exchange and water loss."
+  },
+  {
+    "id": "AGNIVEER-D-058",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pressure",
+    "stem": "Pressure in a liquid increases with:",
+    "options": [
+      "Depth",
+      "Width of the vessel",
+      "Shape of the vessel",
+      "Surface area"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Liquid pressure = h x density x g, so it depends on depth, not on the shape or width of the container. Dams are built thicker at the base."
+  },
+  {
+    "id": "AGNIVEER-D-059",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "What is the formula of ethanol?",
+    "options": [
+      "C₂H₆",
+      "C₂H₅OH",
+      "CH₃COOH",
+      "CH₃OH"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ethanol has two carbon atoms and an OH group. CH₃OH is methanol (poisonous), CH₃COOH is acetic acid and C₂H₆ is ethane."
+  },
+  {
+    "id": "AGNIVEER-D-060",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Heredity",
+    "stem": "Who is known as the father of genetics?",
+    "options": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Robert Hooke",
+      "Hugo de Vries"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mendel's experiments on pea plants in the 1860s showed how traits pass from parents to offspring. Hooke named the cell."
+  },
+  {
+    "id": "AGNIVEER-D-061",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Floatation",
+    "stem": "An object floats in water when its density is:",
+    "options": [
+      "Less than water's",
+      "More than water's",
+      "Equal to iron's",
+      "Twice water's"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the object is less dense than water, the upthrust can equal its weight before it is fully under water, so it floats."
+  },
+  {
+    "id": "AGNIVEER-D-062",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reactions",
+    "stem": "Heating limestone (CaCO₃) to give quicklime and carbon dioxide is a:",
+    "options": [
+      "Neutralisation reaction",
+      "Combination reaction",
+      "Displacement reaction",
+      "Decomposition reaction"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "One substance breaks into two: CaCO₃ → CaO + CO₂. Heat is needed, so it is a thermal decomposition."
+  },
+  {
+    "id": "AGNIVEER-D-063",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "A lack of which mineral in the diet is the most common cause of anaemia?",
+    "options": [
+      "Iodine",
+      "Sodium",
+      "Calcium",
+      "Iron"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Iron is needed to make haemoglobin, which carries oxygen in red blood cells. A lack of iodine causes goitre."
+  },
+  {
+    "id": "AGNIVEER-D-064",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "A rainbow can be seen when the Sun is:",
+    "options": [
+      "In front of the observer",
+      "Directly overhead",
+      "Below the horizon",
+      "Behind the observer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sunlight entering raindrops is refracted, reflected inside and dispersed back towards the Sun's side, so the Sun must be behind you, low in the sky."
+  },
+  {
+    "id": "AGNIVEER-D-065",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atoms",
+    "stem": "Chlorine has the electronic configuration 2, 8, 7. How many electrons does it need to complete its octet?",
+    "options": [
+      "1",
+      "2",
+      "7",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "With 7 outer electrons, chlorine gains 1 electron to reach 8, so its valency is 1."
+  },
+  {
+    "id": "AGNIVEER-D-066",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood",
+    "stem": "About how much blood does the body of a healthy adult contain?",
+    "options": [
+      "2 litres",
+      "5 litres",
+      "9 litres",
+      "12 litres"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "An adult has roughly 5 litres of blood, about 7 to 8% of body weight. Losing more than about a litre quickly is dangerous, which is why a donor gives only about 350 to 450 ml at a time."
+  },
+  {
+    "id": "AGNIVEER-D-067",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Motion",
+    "stem": "A stone is dropped from a cliff. What is its speed after 3 s? (Take g = 10 m/s², ignore air resistance.)",
+    "options": [
+      "3.3 m/s",
+      "10 m/s",
+      "30 m/s",
+      "45 m/s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "v = u + gt = 0 + 10 x 3 = 30 m/s. 45 is the distance fallen in metres (½gt²)."
+  },
+  {
+    "id": "AGNIVEER-D-068",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Reactions",
+    "stem": "In an oxidation reaction a substance:",
+    "options": [
+      "Gains electrons",
+      "Gains oxygen",
+      "Gains hydrogen",
+      "Loses oxygen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Oxidation is gain of oxygen or loss of hydrogen (or electrons). Gaining hydrogen or electrons is reduction."
+  },
+  {
+    "id": "AGNIVEER-D-069",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Eye",
+    "stem": "The point on the retina where the optic nerve leaves the eye has no light-sensitive cells. It is called the:",
+    "options": [
+      "Cornea",
+      "Iris",
+      "Blind spot",
+      "Yellow spot"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "No image forms at the blind spot because it has no rods or cones. The yellow spot (fovea) is where vision is sharpest, and the cornea and iris are at the front of the eye."
+  },
+  {
+    "id": "AGNIVEER-D-070",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Light",
+    "stem": "An object is placed at 2F in front of a convex lens. Where is the image formed?",
+    "options": [
+      "Between F and 2F",
+      "At 2F on the other side",
+      "At F on the other side",
+      "At infinity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At 2F the image is real, inverted, the same size as the object and at 2F on the far side. An object at F gives an image at infinity."
+  },
+  {
+    "id": "AGNIVEER-D-071",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Elements",
+    "stem": "Which element has the chemical symbol K?",
+    "options": [
+      "Phosphorus",
+      "Krypton",
+      "Calcium",
+      "Potassium"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "K comes from kalium, the Latin name of potassium. Krypton is Kr, calcium Ca and phosphorus P."
+  },
+  {
+    "id": "AGNIVEER-D-072",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ecology",
+    "stem": "The build-up of a harmful chemical such as DDT at each step of a food chain is called:",
+    "options": [
+      "Biomagnification",
+      "Transpiration",
+      "Eutrophication",
+      "Decomposition"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DDT is not broken down, so it collects in fat and becomes more concentrated in animals higher up the chain, such as eagles."
+  },
+  {
+    "id": "AGNIVEER-D-073",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laws of motion",
+    "stem": "What is the momentum of a 2 kg ball moving at 5 m/s?",
+    "options": [
+      "2.5 kg m/s",
+      "3 kg m/s",
+      "7 kg m/s",
+      "10 kg m/s"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "p = mv = 2 x 5 = 10 kg m/s. Adding the numbers gives 7 and dividing gives 2.5."
+  },
+  {
+    "id": "AGNIVEER-D-074",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Acids and bases",
+    "stem": "Aqua regia, which dissolves gold, is a mixture of:",
+    "options": [
+      "Acetic and nitric acids",
+      "Sulphuric and nitric acids",
+      "Hydrochloric and sulphuric acids",
+      "Nitric and hydrochloric acids"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Aqua regia is concentrated hydrochloric and nitric acids in the ratio 3 : 1."
+  },
+  {
+    "id": "AGNIVEER-D-075",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Reproduction",
+    "stem": "Amoeba usually reproduces by:",
+    "options": [
+      "Budding",
+      "Spore formation",
+      "Fragmentation",
+      "Binary fission"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The single cell of an Amoeba divides into two equal daughter cells. Yeast and Hydra reproduce by budding."
+  },
+  {
+    "id": "AGNIVEER-D-076",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Magnetism",
+    "stem": "A compass needle points north-south because:",
+    "options": [
+      "The Moon's gravity acts on it",
+      "The Earth acts as a magnet",
+      "The Sun pulls it",
+      "Iron ore lies to the north"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Earth behaves like a huge bar magnet, and the needle lines up with its magnetic field."
+  },
+  {
+    "id": "AGNIVEER-D-077",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compounds",
+    "stem": "Slaked lime, used in whitewash, has the formula:",
+    "options": [
+      "CaO",
+      "CaCl₂",
+      "CaCO₃",
+      "Ca(OH)₂"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Slaked lime is calcium hydroxide. After whitewashing it slowly reacts with carbon dioxide to form a shiny coat of calcium carbonate."
+  },
+  {
+    "id": "AGNIVEER-D-078",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Reproduction",
+    "stem": "Which part of a flower receives the pollen during pollination?",
+    "options": [
+      "Sepal",
+      "Anther",
+      "Petal",
+      "Stigma"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pollen lands on the sticky stigma at the top of the pistil. The anther is where pollen is made."
+  },
+  {
+    "id": "AGNIVEER-D-079",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sound",
+    "stem": "SONAR, used by ships to find the depth of the sea, uses:",
+    "options": [
+      "Radio waves",
+      "Infrasound",
+      "Ultrasound",
+      "X-rays"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SONAR sends out ultrasonic pulses and times their echo from the sea bed. Radio waves are used in RADAR."
+  },
+  {
+    "id": "AGNIVEER-D-080",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reactions",
+    "stem": "Chips packets are often filled with which gas to slow rancidity?",
+    "options": [
+      "Hydrogen",
+      "Nitrogen",
+      "Oxygen",
+      "Chlorine"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rancidity is oxidation of fats. Nitrogen is unreactive, so it keeps oxygen away from the food."
+  },
+  {
+    "id": "AGNIVEER-D-081",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reproduction",
+    "stem": "Yeast usually reproduces asexually by:",
+    "options": [
+      "Fragmentation",
+      "Regeneration",
+      "Spore formation",
+      "Budding"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A small bud grows out of the parent yeast cell and separates. Bread mould uses spores and Spirogyra fragmentation."
+  },
+  {
+    "id": "AGNIVEER-D-082",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "How does doubling the length of a wire, keeping its thickness and material the same, change its resistance?",
+    "options": [
+      "It doubles",
+      "It stays the same",
+      "It halves",
+      "It becomes four times"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "R = ρl / A, so resistance is proportional to length. Halving the thickness (area) would also change it."
+  },
+  {
+    "id": "AGNIVEER-D-083",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Compounds",
+    "stem": "Marble and limestone are mainly made of:",
+    "options": [
+      "Sodium chloride",
+      "Calcium sulphate",
+      "Calcium carbonate",
+      "Magnesium oxide"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Both are CaCO₃. Acid rain eats into marble buildings such as the Taj Mahal because acids react with carbonates."
+  },
+  {
+    "id": "AGNIVEER-D-084",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "About how many times a minute does a healthy adult's heart beat at rest?",
+    "options": [
+      "40",
+      "72",
+      "120",
+      "150"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "A normal resting rate is 60 to 100 beats a minute, about 72 on average. Above 100 at rest is called tachycardia."
+  },
+  {
+    "id": "AGNIVEER-D-085",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "Older people who cannot focus on both near and far objects often wear:",
+    "options": [
+      "Bifocal lenses",
+      "Cylindrical lenses",
+      "Plane glass",
+      "Prism glasses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In presbyopia the eye lens loses its flexibility with age. Bifocals have a concave part for distance and a convex part for reading."
+  },
+  {
+    "id": "AGNIVEER-D-086",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reactions",
+    "stem": "When water is split by electrolysis, which gas collects at the cathode?",
+    "options": [
+      "Oxygen",
+      "Chlorine",
+      "Hydrogen",
+      "Nitrogen"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hydrogen collects at the negative electrode (cathode) and oxygen at the anode, in a volume ratio of 2 : 1."
+  },
+  {
+    "id": "AGNIVEER-D-087",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circulation",
+    "stem": "The heart is enclosed in a protective double membrane called the:",
+    "options": [
+      "Pleura",
+      "Meninges",
+      "Peritoneum",
+      "Pericardium"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The pericardium surrounds the heart. The pleura covers the lungs, the peritoneum lines the abdomen and the meninges cover the brain."
+  },
+  {
+    "id": "AGNIVEER-D-088",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "A fuse in a house circuit is connected:",
+    "options": [
+      "In the neutral wire only",
+      "In series with the live wire",
+      "In parallel with the appliance",
+      "In the earth wire"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The fuse must carry the whole current, so it sits in series in the live wire; when it blows, the appliance is cut off from the live supply."
+  },
+  {
+    "id": "AGNIVEER-D-089",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Elements",
+    "stem": "Which metal is a good conductor of electricity and is used in most household wiring?",
+    "options": [
+      "Lead",
+      "Mercury",
+      "Copper",
+      "Tungsten"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Copper conducts very well and is easily drawn into wires. Tungsten is used for bulb filaments."
+  },
+  {
+    "id": "AGNIVEER-D-090",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ecology",
+    "stem": "In an ecosystem, bacteria and fungi that break down dead plants and animals are called:",
+    "options": [
+      "Predators",
+      "Decomposers",
+      "Herbivores",
+      "Producers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Decomposers return nutrients to the soil so that plants can use them again."
+  },
+  {
+    "id": "AGNIVEER-D-091",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "Which of these numbers is a prime?",
+    "options": [
+      "51",
+      "63",
+      "69",
+      "79"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "51 = 3 x 17, 63 = 7 x 9 and 69 = 3 x 23. 79 is not divisible by 2, 3, 5 or 7 (the primes up to its square root), so it is prime."
+  },
+  {
+    "id": "AGNIVEER-D-092",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Unitary method",
+    "stem": "15 metres of cloth cost ₹1,125. What do 8 metres cost?",
+    "options": [
+      "₹600",
+      "₹640",
+      "₹675",
+      "₹750"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "One metre costs 1,125 / 15 = ₹75, so 8 metres cost 8 x 75 = ₹600."
+  },
+  {
+    "id": "AGNIVEER-D-093",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "BODMAS",
+    "stem": "Simplify: 36 ÷ 4 x 3 − 5 + 2",
+    "options": [
+      "0",
+      "4",
+      "24",
+      "30"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Division and multiplication go left to right: 36 ÷ 4 = 9, then 9 x 3 = 27. Then 27 − 5 + 2 = 24. Doing 4 x 3 first gives 0."
+  },
+  {
+    "id": "AGNIVEER-D-094",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A cycle sold for ₹2,890 gives a loss of 15%. What was its cost price?",
+    "options": [
+      "₹2,456",
+      "₹3,040",
+      "₹3,324",
+      "₹3,400"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Selling price = 85% of cost, so cost = 2,890 / 0.85 = ₹3,400. Adding 15% of 2,890 gives about ₹3,324, which is wrong."
+  },
+  {
+    "id": "AGNIVEER-D-095",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If x − 1/x = 5, what is x² + 1/x²?",
+    "options": [
+      "10",
+      "23",
+      "25",
+      "27"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Square both sides: x² − 2 + 1/x² = 25, so x² + 1/x² = 27. Subtracting the 2 instead of adding gives 23, and 10 just doubles 5."
+  },
+  {
+    "id": "AGNIVEER-D-096",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "Boys and girls in a class are in the ratio 8 : 7. There are 40 boys. How many girls are there?",
+    "options": [
+      "15",
+      "30",
+      "32",
+      "35"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "One part is 40 / 8 = 5 students, so there are 7 x 5 = 35 girls."
+  },
+  {
+    "id": "AGNIVEER-D-097",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "What is the sum of the interior angles of an octagon?",
+    "options": [
+      "720°",
+      "900°",
+      "1,080°",
+      "1,440°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Sum = (n − 2) x 180° = 6 x 180° = 1,080°. 900° is for a heptagon and 1,440° for a decagon."
+  },
+  {
+    "id": "AGNIVEER-D-098",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "At what rate of simple interest will ₹3,200 earn ₹768 in 3 years?",
+    "options": [
+      "4%",
+      "6%",
+      "7%",
+      "8%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "R = SI x 100 / (P x T) = 768 x 100 / (3,200 x 3) = 8%. Over the 3 years the interest is 24% of the sum, so each year is a third of that."
+  },
+  {
+    "id": "AGNIVEER-D-099",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "A ladder 13 m long reaches a window 12 m above the ground. How far is the foot of the ladder from the wall?",
+    "options": [
+      "5 m",
+      "6.5 m",
+      "7 m",
+      "25 m"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "By Pythagoras, the distance is √(13² − 12²) = √(169 − 144) = √25 = 5 m. 25 forgets the square root."
+  },
+  {
+    "id": "AGNIVEER-D-100",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "Convert 25 m/s to kilometres per hour.",
+    "options": [
+      "6.9 km/h",
+      "50 km/h",
+      "75 km/h",
+      "90 km/h"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply by 18/5: 25 x 18 / 5 = 90 km/h. Multiplying by 5/18 instead gives about 6.9."
+  },
+  {
+    "id": "AGNIVEER-D-101",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the total surface area of a cube of side 9 cm?",
+    "options": [
+      "81 cm²",
+      "324 cm²",
+      "486 cm²",
+      "729 cm²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A cube has 6 faces of 9 x 9 = 81 cm², so 6 x 81 = 486 cm². 324 counts only the four side faces and 729 is the volume in cm³."
+  },
+  {
+    "id": "AGNIVEER-D-102",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentages",
+    "stem": "A machine worth ₹50,000 loses 10% of its value each year. What is it worth after 2 years?",
+    "options": [
+      "₹40,000",
+      "₹40,500",
+      "₹41,000",
+      "₹45,000"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "50,000 x 0.9 = 45,000 after one year, then 45,000 x 0.9 = ₹40,500. ₹40,000 takes 10% of the first value twice."
+  },
+  {
+    "id": "AGNIVEER-D-103",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Trigonometry",
+    "stem": "What is the value of sin² 30° + cos² 30°?",
+    "options": [
+      "1",
+      "0",
+      "1/2",
+      "√3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "sin² θ + cos² θ = 1 for every angle: here 1/4 + 3/4 = 1."
+  },
+  {
+    "id": "AGNIVEER-D-104",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "What is the range of 18, 7, 25, 12 and 30?",
+    "options": [
+      "12",
+      "18",
+      "23",
+      "30"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Range = highest − lowest = 30 − 7 = 23. 18 is the median."
+  },
+  {
+    "id": "AGNIVEER-D-105",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "A and B together finish a job in 16 days, and A alone in 48 days. How long would B take alone?",
+    "options": [
+      "12 days",
+      "24 days",
+      "32 days",
+      "64 days"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "B's share per day = 1/16 - 1/48 = 3/48 - 1/48 = 2/48 = 1/24, so B needs 24 days. Subtracting the days (48 - 16 = 32) is a common slip."
+  },
+  {
+    "id": "AGNIVEER-D-106",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Indices",
+    "stem": "What is 3⁴ ÷ 3²?",
+    "options": [
+      "9",
+      "27",
+      "81",
+      "729"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Subtract the powers when dividing: 3⁴⁻² = 3² = 9. Adding the powers instead gives 3⁶ = 729, and 81 is 3⁴ before dividing."
+  },
+  {
+    "id": "AGNIVEER-D-107",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentages",
+    "stem": "54 is what percent of 360?",
+    "options": [
+      "12.5%",
+      "15%",
+      "18%",
+      "54%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "54 / 360 x 100 = 15%. 18% comes from dividing 54 by 300 by mistake."
+  },
+  {
+    "id": "AGNIVEER-D-108",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "Two coins are tossed together. What is the probability of getting two heads?",
+    "options": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "3/4"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The outcomes are HH, HT, TH and TT, so P(HH) = 1/4. Counting 'two heads, one head, none' as three equal outcomes gives the wrong 1/3."
+  },
+  {
+    "id": "AGNIVEER-D-109",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "A sum of money becomes five times itself in 16 years at simple interest. What is the rate per year?",
+    "options": [
+      "16%",
+      "20%",
+      "25%",
+      "31.25%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Five times means the interest is four times the principal, so 400% over 16 years is 25% a year. 31.25% wrongly takes the interest as five times the principal."
+  },
+  {
+    "id": "AGNIVEER-D-110",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If 4x − 3y = 10 and y = 2, what is x?",
+    "options": [
+      "1",
+      "2.5",
+      "4",
+      "16"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "4x − 6 = 10, so 4x = 16 and x = 4. Stopping at 16 forgets to divide."
+  },
+  {
+    "id": "AGNIVEER-D-111",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixtures",
+    "stem": "4 kg of dal at ₹90 a kg is mixed with 6 kg at ₹110 a kg. What is the cost of the mixture per kg?",
+    "options": [
+      "₹96",
+      "₹100",
+      "₹102",
+      "₹104"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Total cost = 360 + 660 = ₹1,020 for 10 kg, so ₹102 a kg. ₹100 is the plain average of the prices, which ignores the quantities."
+  },
+  {
+    "id": "AGNIVEER-D-112",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the area of a parallelogram with base 13 cm and height 12 cm?",
+    "options": [
+      "25 cm²",
+      "50 cm²",
+      "78 cm²",
+      "156 cm²"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Area = base x height = 13 x 12 = 156 cm². Taking half (78) is the triangle formula, and 50 is the perimeter of a 13 by 12 rectangle."
+  },
+  {
+    "id": "AGNIVEER-D-113",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A truck travels 280 km in 4 hours 40 minutes. What is its average speed?",
+    "options": [
+      "56 km/h",
+      "60 km/h",
+      "70 km/h",
+      "75 km/h"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "4 hours 40 minutes is 4⅔ hours, and 280 / (14/3) = 60 km/h. Treating it as 4.4 hours gives about 64, and using 4 hours gives 70."
+  },
+  {
+    "id": "AGNIVEER-D-114",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the smallest number that leaves no remainder when divided by 9, 15 and 20?",
+    "options": [
+      "60",
+      "180",
+      "270",
+      "2,700"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "LCM: 9 = 3², 15 = 3 x 5, 20 = 2² x 5, so 2² x 3² x 5 = 180. 2,700 is just 9 x 15 x 20."
+  },
+  {
+    "id": "AGNIVEER-D-115",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentages",
+    "stem": "If 30% of a number is 87, what is the number?",
+    "options": [
+      "26.1",
+      "117",
+      "261",
+      "290"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "0.3 x n = 87, so n = 87 / 0.3 = 290. 26.1 is 30% of 87, the reverse step."
+  },
+  {
+    "id": "AGNIVEER-D-116",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "Each interior angle of a regular polygon is 150°. How many sides does it have?",
+    "options": [
+      "6",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each exterior angle is 180 − 150 = 30°, and the exterior angles add to 360°, so n = 360 / 30 = 12."
+  },
+  {
+    "id": "AGNIVEER-D-117",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series 0, 7, 26, 63, ?",
+    "options": [
+      "98",
+      "99",
+      "100",
+      "124"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is a cube minus 1: 1³ − 1, 2³ − 1, 3³ − 1, 4³ − 1, so the next is 5³ − 1 = 124."
+  },
+  {
+    "id": "AGNIVEER-D-118",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If each letter is given its position in the alphabet, so that DOG = 26, what is FORT?",
+    "options": [
+      "56",
+      "57",
+      "58",
+      "59"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "DOG = 4 + 15 + 7 = 26, so FORT = 6 + 15 + 18 + 20 = 59."
+  },
+  {
+    "id": "AGNIVEER-D-119",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Which number is the odd one out: 16, 36, 48, 64?",
+    "options": [
+      "16",
+      "36",
+      "48",
+      "64"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "16, 36 and 64 are perfect squares (4², 6², 8²). 48 is not."
+  },
+  {
+    "id": "AGNIVEER-D-120",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: Some cadets are swimmers. All swimmers are fit.\n\nConclusions: I. Some cadets are fit. II. All fit people are swimmers.",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The cadets who swim must be fit, so I follows. Nothing says every fit person swims, so II does not follow."
+  },
+  {
+    "id": "AGNIVEER-D-121",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A guard faces north. He turns 90° anticlockwise and then 135° clockwise. Which direction does he face now?",
+    "options": [
+      "South-west",
+      "South-east",
+      "North-east",
+      "North-west"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "90° anticlockwise from north gives west. 135° clockwise from west passes north (90°) and goes 45° further, to north-east."
+  },
+  {
+    "id": "AGNIVEER-D-122",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "6 is to 216 as 4 is to:",
+    "options": [
+      "16",
+      "24",
+      "48",
+      "64"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "216 is 6 cubed, so the answer is 4 cubed, 64. 16 would come from squaring."
+  },
+  {
+    "id": "AGNIVEER-D-123",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "P is the son of Q. Q is the sister of R. How is R related to P?",
+    "options": [
+      "Brother",
+      "Maternal uncle or aunt",
+      "Grandfather",
+      "Father"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Q is P's mother (a sister cannot be a father), and R is Q's brother or sister. R's sex is not given, so R is P's maternal uncle or aunt."
+  },
+  {
+    "id": "AGNIVEER-D-124",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the smaller angle between the hands of a clock at 9 o'clock?",
+    "options": [
+      "45°",
+      "90°",
+      "180°",
+      "270°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "At 9 o'clock the hands are 3 hour marks apart, and each mark is 30°, so the smaller angle is 90°. 270° is the larger angle."
+  },
+  {
+    "id": "AGNIVEER-D-125",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which is the odd one out?",
+    "options": [
+      "Tabla",
+      "Dholak",
+      "Mridangam",
+      "Sitar"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The tabla, mridangam and dholak are drums. The sitar is a string instrument."
+  },
+  {
+    "id": "AGNIVEER-D-126",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the missing number: 7, 14, 28, ?, 112",
+    "options": [
+      "35",
+      "42",
+      "49",
+      "56"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each number is double the one before: 28 x 2 = 56, and 56 x 2 = 112."
+  },
+  {
+    "id": "AGNIVEER-D-127",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If MARCH is written as HCRAM, how is DRILL written in the same code?",
+    "options": [
+      "LLRID",
+      "LIRLD",
+      "DLLIR",
+      "LLIRD"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The code writes the word backwards, so DRILL becomes LLIRD."
+  },
+  {
+    "id": "AGNIVEER-D-128",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arrangement",
+    "stem": "Five jawans sit in a row. A is to the right of B, C is to the left of B, D is to the right of A, and E is to the left of C. Who sits in the middle?",
+    "options": [
+      "D",
+      "A",
+      "B",
+      "C"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From left to right the order is E, C, B, A, D, so B is in the middle."
+  },
+  {
+    "id": "AGNIVEER-D-129",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dictionary order",
+    "stem": "Which word comes last in dictionary order?",
+    "options": [
+      "Marine",
+      "Marching",
+      "Marksman",
+      "Marshal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "All start with M-A-R. The fourth letters are C, I, K and S; S comes last, so Marshal is last."
+  },
+  {
+    "id": "AGNIVEER-D-130",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If '−' means 'divide' and '÷' means 'subtract', what is 20 − 4 ÷ 2?",
+    "options": [
+      "3",
+      "8",
+      "14",
+      "18"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Replace the signs: 20 divide 4 subtract 2 = 5 − 2 = 3."
+  },
+  {
+    "id": "AGNIVEER-D-131",
+    "section": "cee",
+    "test": 0,
+    "module": 1,
+    "domain": "agniveerReasoning",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next in the series BY, DW, FU, ?",
+    "options": [
+      "HT",
+      "HS",
+      "GS",
+      "IS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The first letter moves forward two places (B, D, F, H) and the second moves back two places (Y, W, U, S)."
+  }
+]

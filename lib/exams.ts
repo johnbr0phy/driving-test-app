@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "phlet" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -8356,7 +8356,78 @@ const pkdrive: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+const phlet: ExamConfig = {
+  id: "phlet",
+  stateCode: "PHLET",
+  idBase: 13100,
+  slug: "/let-reviewer",
+  landingPath: "/let-reviewer-practice-test",
+  name: "LET Reviewer Practice Test",
+  shortName: "LET",
+  examLabel: "LET",
+  fullName: "Licensure Examination for Professional Teachers (LET), Elementary",
+  questionIdPrefix: "PHLET-",
+  icon: "graduation",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC Annex A, enhanced Table of Specifications for the LEPT (Board Resolution No. 11, s. 2022,
+  // from March 2023; checked 2026-11-01). Elementary: General Education 150 items, 40% of the
+  // rating (Intellectual Competencies 40%, Personal and Civic Responsibilities 30%, Practical
+  // Skills Development 30%) and Professional Education 150 items, 60% (Teaching Profession 15%,
+  // Curriculum/Methods/EdTech 30%, Learners 20%, Assessment 15%, Field Study and Internship 20%).
+  // Each 50-question test is 20 GenEd + 30 ProfEd: 4+4/6/6 and 5/9/6/4/6. Pass: general average
+  // 75% with no part below 50% (BPT Res. 228, s. 1996); only the 75% is scored here.
+  // Amended by Board Res. No. 11, s. 2025 (title confirmed, text not found); guides report the
+  // same ProfEd areas, but whether the weights changed is unconfirmed.
+  // Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phletComm: 4,
+    phletSciMath: 4,
+    phletCivic: 6,
+    phletPractical: 6,
+    phletProfession: 5,
+    phletCurriculum: 9,
+    phletLearners: 6,
+    phletAssess: 4,
+    phletField: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 13101, name: "GenEd: Communication, Science & Math", categories: ["phletComm", "phletSciMath"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 13102, name: "GenEd: History, Rizal, Ethics & Society", categories: ["phletCivic", "phletPractical"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 13103, name: "ProfEd: Teaching Profession & Assessment", categories: ["phletProfession", "phletAssess"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 13104, name: "ProfEd: Curriculum, Methods & Ed Tech", categories: ["phletCurriculum"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 13105, name: "ProfEd: Learners & Field Study", categories: ["phletLearners", "phletField"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phletComm: "English & Filipino Communication",
+    phletSciMath: "Science, Technology & Mathematics",
+    phletCivic: "Philippine History, Rizal & Ethics",
+    phletPractical: "Contemporary World, Art & the Self",
+    phletProfession: "The Teaching Profession",
+    phletCurriculum: "Curriculum, Methods & Ed Tech",
+    phletLearners: "Child & Adolescent Learners",
+    phletAssess: "Assessment of Learning",
+    phletField: "Field Study, Internship & Action Research",
+  },
+  copy: {
+    guestPrompt: "to save your LET progress and track every question you miss",
+    trainingHeading: "Train by LET area",
+    trainingSub: "Five sets covering every area of the PRC table of specifications, General Education and Professional Education. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions, 40% GenEd and 60% ProfEd",
+    heroSubs: [
+      "Two parts, four mock exams. Professional Education weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the LET.",
+    ],
+    sourceLine: "Based on the PRC table of specifications for the Elementary LEPT. Original questions; 50 per test, weighted like the real rating. Not affiliated with the PRC.",
+    analyticsKey: "phlet",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, phlet, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

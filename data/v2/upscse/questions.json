@@ -1,0 +1,5035 @@
+[
+  {
+    "id": "UPSCSE-T1-001",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physiography",
+    "stem": "Consider the following statements:\n\n1. The Western Ghats are geologically older than the Himalayas.\n\n2. The Eastern Ghats form a continuous, unbroken range from Odisha to Tamil Nadu.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. The Western Ghats are the scarp of the ancient Peninsular block, far older than the young fold mountains of the Himalayas. The Eastern Ghats are broken into separate hill groups by rivers such as the Mahanadi, Godavari, Krishna and Kaveri."
+  },
+  {
+    "id": "UPSCSE-T1-002",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preamble",
+    "stem": "Consider the following statements:\n\n1. The Preamble has been amended only once, by the 42nd Amendment Act, 1976.\n\n2. The words 'socialist' and 'secular' were added to the Preamble by the 44th Amendment Act.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. The 42nd Amendment added 'socialist', 'secular' and 'integrity' to the Preamble, its only amendment so far. The 44th Amendment of 1978 undid several Emergency-era changes but did not touch these words."
+  },
+  {
+    "id": "UPSCSE-T1-003",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Harappan civilisation",
+    "stem": "Consider the following statements:\n\n1. Lothal, in present-day Gujarat, has a large brick-lined basin that many archaeologists identify as a dockyard.\n\n2. Iron tools and weapons were in common use in the mature Harappan cities.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Statement 1 is correct: the basin at Lothal is widely read as a dockyard linked to maritime trade. Statement 2 is wrong: the Harappans used copper and bronze; iron came into wide use in the subcontinent much later, around the first millennium BCE."
+  },
+  {
+    "id": "UPSCSE-T1-004",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Land revenue",
+    "stem": "Consider the following statements:\n\n1. The Permanent Settlement of 1793 fixed the land revenue demand on zamindars for all time.\n\n2. The Ryotwari system was introduced mainly in Bengal and Bihar.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. Cornwallis's Permanent Settlement fixed the revenue owed by zamindars in perpetuity. The Ryotwari system, settled directly with cultivators, was introduced mainly in the Madras and Bombay Presidencies."
+  },
+  {
+    "id": "UPSCSE-T1-005",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monetary policy",
+    "stem": "Consider the following statements:\n\n1. An increase in the cash reserve ratio reduces the funds that banks have available to lend.\n\n2. An increase in the policy repo rate generally pushes bank lending rates down.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. A higher CRR locks up more of banks' deposits with the RBI. A higher repo rate makes borrowing from the RBI dearer, so lending rates tend to rise, not fall."
+  },
+  {
+    "id": "UPSCSE-T1-006",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ozone",
+    "stem": "Consider the following statements:\n\n1. Most of the ozone in the atmosphere is found in the troposphere.\n\n2. The Montreal Protocol aims to phase out substances that deplete the ozone layer.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 2 is correct. About 90 percent of atmospheric ozone is in the stratosphere, in the ozone layer. The Montreal Protocol of 1987 controls CFCs, halons and other ozone-depleting substances, and its Kigali Amendment adds HFCs."
+  },
+  {
+    "id": "UPSCSE-T1-007",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microbes",
+    "stem": "Consider the following statements:\n\n1. Viruses can multiply only inside living cells.\n\n2. Antibiotics are effective against viral infections such as the common cold.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. Viruses use a host cell's machinery to make copies of themselves. Antibiotics act on bacteria, not viruses, and their misuse feeds antibiotic resistance."
+  },
+  {
+    "id": "UPSCSE-T1-008",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physiography",
+    "stem": "The Karewas of the Kashmir valley are:",
+    "options": [
+      "Volcanic cones of the Pir Panjal",
+      "Hot springs along the Jhelum valley",
+      "Glacial lakes on the Ladakh plateau",
+      "Lake deposits now used for saffron cultivation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Karewas are thick lacustrine (lake-bed) deposits of clay, sand and silt left when an ancient lake drained from the Kashmir valley. They are known for saffron, especially around Pampore."
+  },
+  {
+    "id": "UPSCSE-T1-009",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Election Commission",
+    "stem": "Consider the following statements about the Election Commission of India:\n\n1. The Constitution does not fix the number of Election Commissioners.\n\n2. It conducts the elections to the offices of the President and the Vice-President.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. Article 324 leaves the number of Election Commissioners to the President, and the Commission conducts elections to Parliament, the state legislatures and the offices of President and Vice-President. Panchayat and municipal polls are run by the State Election Commissions."
+  },
+  {
+    "id": "UPSCSE-T1-010",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Buddhism",
+    "stem": "The Third Buddhist Council, held at Pataliputra during the reign of Ashoka, was presided over by:",
+    "options": [
+      "Sabakami",
+      "Mahakassapa",
+      "Vasumitra",
+      "Moggaliputta Tissa"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Moggaliputta Tissa presided over the Third Council at Pataliputra. Mahakassapa presided over the First Council at Rajagriha, Sabakami over the Second at Vaishali, and Vasumitra over the Fourth in Kashmir under Kanishka."
+  },
+  {
+    "id": "UPSCSE-T1-011",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Social reform",
+    "stem": "The Atmiya Sabha, set up in Calcutta in 1815, was founded by:",
+    "options": [
+      "Keshab Chandra Sen",
+      "Ishwar Chandra Vidyasagar",
+      "Debendranath Tagore",
+      "Raja Rammohan Roy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rammohan Roy founded the Atmiya Sabha in 1815 to discuss monotheism and social reform, and the Brahmo Sabha (later Brahmo Samaj) in 1828. Debendranath Tagore and Keshab Chandra Sen led the Brahmo movement later."
+  },
+  {
+    "id": "UPSCSE-T1-012",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Public finance",
+    "stem": "Other things being equal, which of the following would reduce the fiscal deficit of the Union government?",
+    "options": [
+      "Higher interest payments on debt",
+      "Higher receipts from disinvestment",
+      "A larger fertiliser subsidy bill",
+      "More borrowing from the market"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The fiscal deficit is total expenditure minus revenue receipts and non-debt capital receipts. Disinvestment proceeds are a non-debt capital receipt, so they reduce it. Borrowing finances the deficit rather than reducing it, and higher interest or subsidies increase spending."
+  },
+  {
+    "id": "UPSCSE-T1-013",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Conventions",
+    "stem": "The Ramsar Convention is an international treaty for the conservation of:",
+    "options": [
+      "Wetlands",
+      "Coral reefs",
+      "Migratory birds only",
+      "Deserts and drylands"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Ramsar Convention of 1971, signed in Ramsar, Iran, covers the conservation and wise use of wetlands. India joined in 1982."
+  },
+  {
+    "id": "UPSCSE-T1-014",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vaccines",
+    "stem": "How does an mRNA vaccine work?",
+    "options": [
+      "It injects a weakened live virus that multiplies slowly in the body",
+      "It makes cells produce a viral protein that trains immunity",
+      "It changes the DNA in the nucleus of the person's cells",
+      "It supplies ready-made antibodies taken from recovered patients"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An mRNA vaccine carries messenger RNA that cells read to make a harmless viral protein, such as a spike protein; the immune system learns to recognise it. The mRNA does not enter the nucleus or alter DNA and breaks down soon after."
+  },
+  {
+    "id": "UPSCSE-T1-015",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mountain passes",
+    "stem": "Consider the following pairs:\n\n1. Shipki La : Himachal Pradesh\n\n2. Nathu La : Sikkim\n\n3. Zoji La : Arunachal Pradesh\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two pairs are correct. Shipki La is in Himachal Pradesh, where the Sutlej enters India, and Nathu La is in Sikkim. Zoji La links Srinagar with Kargil and Leh, between Jammu and Kashmir and Ladakh."
+  },
+  {
+    "id": "UPSCSE-T1-016",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "Consider the following statements about the Rajya Sabha:\n\n1. It is a permanent body and is not subject to dissolution.\n\n2. About one-third of its members retire every second year.\n\n3. The Vice-President of India is its ex officio Chairman.\n\nHow many of the statements given above are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "All three are correct. Members serve six-year terms with a third retiring every two years, so the House is never dissolved, and Article 89 makes the Vice-President its Chairman."
+  },
+  {
+    "id": "UPSCSE-T1-017",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rock-cut architecture",
+    "stem": "Consider the following pairs:\n\n1. Ajanta caves : Buddhist\n\n2. Ellora caves : Buddhist, Hindu and Jain\n\n3. Udayagiri and Khandagiri caves (Odisha) : Jain\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "All three pairs are correct. Ajanta is wholly Buddhist; Ellora has Buddhist, Hindu and Jain caves side by side; the Udayagiri and Khandagiri caves near Bhubaneswar were cut for Jain monks, with Kharavela's Hathigumpha inscription."
+  },
+  {
+    "id": "UPSCSE-T1-018",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Early Congress",
+    "stem": "Which of the following were among the demands of the early (Moderate) leaders of the Indian National Congress?\n\n1. Expansion of the legislative councils with more elected Indian members\n\n2. Holding the Indian Civil Service examination in India as well as in England\n\n3. Complete independence from British rule\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The Moderates asked for reform within British rule: larger councils with elected members, simultaneous ICS examinations, cuts in military spending and the like. Complete independence (Purna Swaraj) was adopted as the goal only at the Lahore session of 1929."
+  },
+  {
+    "id": "UPSCSE-T1-019",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Money supply",
+    "stem": "Consider the following:\n\n1. Currency with the public\n\n2. Demand deposits with banks\n\n3. Time deposits with banks\n\nHow many of the above are included in broad money (M3)?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "All three. M1 is currency with the public plus demand deposits plus other deposits with the RBI, and M3 adds the time deposits of banks."
+  },
+  {
+    "id": "UPSCSE-T1-020",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Climate change",
+    "stem": "Consider the following:\n\n1. Methane\n\n2. Nitrous oxide\n\n3. Water vapour\n\nHow many of the above are greenhouse gases?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "All three. Water vapour is the most abundant greenhouse gas, though human activity changes it only indirectly; methane and nitrous oxide are powerful gases released by farming, fossil fuels and waste."
+  },
+  {
+    "id": "UPSCSE-T1-021",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "Consider the following statements:\n\n1. LED lamps convert a larger share of electrical energy into light than filament bulbs do.\n\n2. Optical fibres carry light by total internal reflection.\n\n3. Sound travels faster in a vacuum than in air.\n\nHow many of the statements given above are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two are correct. Filament bulbs lose most of their energy as heat, and optical fibres keep light inside by total internal reflection. Sound needs a medium and cannot travel through a vacuum at all."
+  },
+  {
+    "id": "UPSCSE-T1-022",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Soils",
+    "stem": "Black soil (regur) is well suited to growing cotton mainly because it:",
+    "options": [
+      "Drains water away very quickly",
+      "Is rich in nitrogen and humus",
+      "Is formed by leaching under heavy rain",
+      "Holds moisture for a long time"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Black soil, formed from Deccan basalt, is clayey and retains moisture, swelling when wet and cracking when dry, which suits cotton. It is generally poor in nitrogen and organic matter. Leaching under heavy rain forms laterite."
+  },
+  {
+    "id": "UPSCSE-T1-023",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Writs",
+    "stem": "Consider the following pairs:\n\n1. Habeas corpus : Produce a detained person before the court\n\n2. Mandamus : Command a public authority to perform its duty\n\n3. Quo warranto : Stop a lower court from exceeding its jurisdiction\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two pairs are correct. Quo warranto asks a person to show by what authority he holds a public office; stopping a lower court from exceeding its jurisdiction is the writ of prohibition."
+  },
+  {
+    "id": "UPSCSE-T1-024",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sangam age",
+    "stem": "The Tolkappiyam, one of the earliest surviving Tamil texts, is mainly a work on:",
+    "options": [
+      "Statecraft and war",
+      "Medicine and surgery",
+      "Grammar and poetics",
+      "Astronomy and the calendar"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Tolkappiyam is a treatise on Tamil grammar and poetics. It is traditionally linked with the Sangam period and also describes the five landscapes (tinai) used in Sangam poetry."
+  },
+  {
+    "id": "UPSCSE-T1-025",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Press laws",
+    "stem": "Consider the following statements about the Vernacular Press Act, 1878:\n\n1. It did not apply to newspapers published in English.\n\n2. It was repealed during the viceroyalty of Lord Ripon.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. The Act, passed under Lord Lytton, targeted newspapers in Indian languages only, which is why it was called the 'gagging Act'. Lord Ripon's government repealed it in 1882."
+  },
+  {
+    "id": "UPSCSE-T1-026",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inflation",
+    "stem": "The all-India Consumer Price Index (Rural, Urban and Combined), used for the inflation target, is compiled by the:",
+    "options": [
+      "National Statistics Office",
+      "Reserve Bank of India",
+      "Labour Bureau",
+      "Office of the Economic Adviser"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The NSO in the Ministry of Statistics and Programme Implementation compiles CPI (Rural, Urban, Combined). The Labour Bureau compiles CPI for Industrial Workers, and the Office of the Economic Adviser the Wholesale Price Index."
+  },
+  {
+    "id": "UPSCSE-T1-027",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biodiversity",
+    "stem": "Which of the following is NOT one of the global biodiversity hotspots that cover parts of India?",
+    "options": [
+      "Indo-Burma",
+      "Himalaya",
+      "Eastern Ghats",
+      "Western Ghats and Sri Lanka"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Parts of India fall in four hotspots: Western Ghats and Sri Lanka, Himalaya, Indo-Burma and Sundaland (the Nicobar Islands). The Eastern Ghats are not a hotspot in Conservation International's list."
+  },
+  {
+    "id": "UPSCSE-T1-028",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monsoon",
+    "stem": "Which of the following are believed to contribute to the onset of the Indian south-west monsoon?\n\n1. The difference in heating between the land and the surrounding seas in summer\n\n2. The northward shift of the Inter-Tropical Convergence Zone\n\n3. The heating of the Tibetan Plateau in summer\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "All three. Summer heating creates low pressure over north-west India, the ITCZ moves north over the Ganga plain, and the heated Tibetan Plateau helps set up the easterly jet and upper-air circulation that strengthen the monsoon."
+  },
+  {
+    "id": "UPSCSE-T1-029",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fundamental Duties",
+    "stem": "Which of the following are Fundamental Duties listed in Article 51A?\n\n1. To protect and improve the natural environment\n\n2. To pay income tax on time\n\n3. To safeguard public property and abjure violence\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Protecting the environment and safeguarding public property are both in Article 51A. Paying taxes is a legal obligation under tax laws but is not one of the Fundamental Duties."
+  },
+  {
+    "id": "UPSCSE-T1-030",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "The pH of a solution falls from 6 to 4. Its hydrogen ion concentration has become:",
+    "options": [
+      "1.5 times greater",
+      "100 times smaller",
+      "2 times greater",
+      "100 times greater"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "pH is the negative logarithm (base 10) of the hydrogen ion concentration, so each fall of one unit means ten times more hydrogen ions. A fall of two units is 10 x 10 = 100 times more."
+  },
+  {
+    "id": "UPSCSE-T1-031",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mauryan sources",
+    "stem": "Consider the following statements:\n\n1. Megasthenes' Indica has not survived as a whole and is known from passages quoted by later Greek and Roman writers.\n\n2. A manuscript of Kautilya's Arthashastra was identified and published in the early twentieth century by R. Shamasastry.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both statements are correct. The Indica survives only in fragments quoted by writers such as Strabo and Arrian, and R. Shamasastry published the Arthashastra from a manuscript found in Mysore in the first decade of the twentieth century."
+  },
+  {
+    "id": "UPSCSE-T1-032",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitutional development",
+    "stem": "Consider the following statements about the Government of India Act, 1935:\n\n1. It provided for an All-India Federation of provinces and princely states.\n\n2. It introduced provincial autonomy.\n\n3. It ended dyarchy in the provinces.\n\nHow many of the statements given above are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "All three are correct. The Act proposed a federation (which never came into being because the princes did not join), gave the provinces autonomy with responsible ministries, and replaced provincial dyarchy while introducing dyarchy at the centre."
+  },
+  {
+    "id": "UPSCSE-T1-033",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "National income",
+    "stem": "Consider the following statements:\n\n1. GDP at market prices equals GDP at factor cost minus net indirect taxes.\n\n2. Net national product equals gross national product plus depreciation.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Neither is correct. GDP at market prices equals GDP at factor cost **plus** net indirect taxes (indirect taxes minus subsidies), and NNP equals GNP **minus** depreciation (consumption of fixed capital), which turns a gross measure into a net one."
+  },
+  {
+    "id": "UPSCSE-T1-034",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ecosystems",
+    "stem": "Consider the following statements:\n\n1. Only about 10 percent of the energy at one trophic level is passed on to the next.\n\n2. Biomagnification means that the concentration of a persistent toxin rises at higher trophic levels.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. Lindeman's ten percent rule describes energy transfer, and persistent chemicals such as DDT and mercury build up along food chains, reaching the highest levels in top predators."
+  },
+  {
+    "id": "UPSCSE-T1-035",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Climatology",
+    "stem": "The belt of calm, variable winds near the equator is known as the:",
+    "options": [
+      "Roaring Forties",
+      "Horse latitudes",
+      "Trade wind belt",
+      "Doldrums"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The doldrums are the equatorial low-pressure belt of light, shifting winds where the trade winds converge. The horse latitudes are the calm subtropical high-pressure belts near 30 degrees."
+  },
+  {
+    "id": "UPSCSE-T1-036",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Anti-defection",
+    "stem": "Under the Tenth Schedule, members of a legislature party are protected from disqualification on a merger with another party when the merger is agreed to by at least:",
+    "options": [
+      "Two-thirds of the legislature party",
+      "Half of the legislature party",
+      "Three-fourths of the legislature party",
+      "One-third of the legislature party"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Paragraph 4 of the Tenth Schedule protects a merger supported by two-thirds of the legislature party. The older exception for a 'split' by one-third was deleted by the 91st Amendment of 2003."
+  },
+  {
+    "id": "UPSCSE-T1-037",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biotechnology",
+    "stem": "Consider the following statements:\n\n1. Embryonic stem cells can develop into many different types of cell.\n\n2. The bone marrow of adults contains stem cells.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. Embryonic stem cells are pluripotent, and adult bone marrow holds haematopoietic stem cells that make blood cells, the basis of bone marrow transplants."
+  },
+  {
+    "id": "UPSCSE-T1-038",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Inscriptions",
+    "stem": "The Junagadh rock inscription of the Saka ruler Rudradaman I is notable because it is:",
+    "options": [
+      "A Pallava land grant engraved on copper plates",
+      "The only edict of Ashoka written in Greek",
+      "One of the earliest long inscriptions in classical Sanskrit",
+      "The earliest known inscription in Tamil-Brahmi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rudradaman's inscription of about 150 CE at Junagadh in Gujarat is among the earliest long records in classical Sanskrit. It also tells of the repair of the Sudarshana lake, first built under Chandragupta Maurya."
+  },
+  {
+    "id": "UPSCSE-T1-039",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Economic critique",
+    "stem": "The book Poverty and Un-British Rule in India, which set out the drain of wealth theory, was written by:",
+    "options": [
+      "G. K. Gokhale",
+      "M. G. Ranade",
+      "R. C. Dutt",
+      "Dadabhai Naoroji"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dadabhai Naoroji published Poverty and Un-British Rule in India in 1901. R. C. Dutt also wrote on the drain in his Economic History of India."
+  },
+  {
+    "id": "UPSCSE-T1-040",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inflation",
+    "stem": "Stagflation describes an economy with:",
+    "options": [
+      "Rising prices with stagnant output and jobs",
+      "Rapid growth with full employment and stable prices",
+      "Falling prices alongside falling output",
+      "Falling prices alongside fast growth"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Stagflation combines rising prices with stagnant growth and high unemployment, as many economies saw after the oil shocks of the 1970s. Falling prices with falling output is deflation in a slump."
+  },
+  {
+    "id": "UPSCSE-T1-041",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ecology",
+    "stem": "A keystone species is one that:",
+    "options": [
+      "Has an outsized effect on its ecosystem for its numbers",
+      "Is the most numerous species living in an ecosystem",
+      "Was brought in by humans from another continent",
+      "Is found naturally in only one small region of the world"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Removing a keystone species, such as a top predator or the sea otter in kelp forests, changes the whole ecosystem. A species found in one place only is endemic, and one brought from elsewhere is exotic."
+  },
+  {
+    "id": "UPSCSE-T1-042",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Latitudes",
+    "stem": "The Tropic of Cancer passes through which of the following states?\n\n1. Odisha\n\n2. Manipur\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Neither. The Tropic of Cancer passes through Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram. Odisha lies to its south and Manipur to its north."
+  },
+  {
+    "id": "UPSCSE-T1-043",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Panchayati Raj",
+    "stem": "Consider the following statements about the 73rd Constitutional Amendment Act, 1992:\n\n1. It added Part IX, 'The Panchayats', to the Constitution.\n\n2. It reserved not less than one-third of the seats in panchayats for women.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. The 73rd Amendment inserted Part IX and the Eleventh Schedule, and Article 243D reserves at least one-third of seats (and of chairperson posts) for women. Many states have raised this to half by their own laws."
+  },
+  {
+    "id": "UPSCSE-T1-044",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Materials",
+    "stem": "Graphene is:",
+    "options": [
+      "A form of silicon used in solar cells",
+      "A one-atom-thick sheet of carbon atoms",
+      "A soft metal used in pencil leads",
+      "An alloy of carbon and iron used in tools"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Graphene is a one-atom-thick sheet of carbon in a honeycomb pattern. It is very strong and conducts heat and electricity well. Graphite is many such sheets stacked."
+  },
+  {
+    "id": "UPSCSE-T1-045",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Jainism",
+    "stem": "Which of the following are counted among the twenty-four Jain tirthankaras?\n\n1. Rishabhanatha\n\n2. Parshvanatha\n\n3. Nagarjuna\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Rishabhanatha is the first tirthankara and Parshvanatha the twenty-third. Nagarjuna was a Buddhist philosopher of the Madhyamaka school, not a Jain teacher."
+  },
+  {
+    "id": "UPSCSE-T1-046",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gandhian movements",
+    "stem": "Consider the following statements:\n\n1. The Champaran Satyagraha of 1917 was a struggle over the wages of cotton mill workers.\n\n2. The Kheda Satyagraha of 1918 was against the tinkathia system of indigo cultivation.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Neither is correct. Champaran (1917) was against the tinkathia system that forced peasants to grow indigo on part of their land. Kheda (1918) sought remission of land revenue after crop failure. The 1918 dispute over mill workers' wages was in Ahmedabad."
+  },
+  {
+    "id": "UPSCSE-T1-047",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Public finance",
+    "stem": "Which of the following are non-tax revenue receipts of the Union government?\n\n1. Dividends and profits from public sector undertakings\n\n2. Interest received on loans given by the Union\n\n3. Corporation tax\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Dividends and interest receipts are non-tax revenue. Corporation tax is a direct tax and so part of tax revenue."
+  },
+  {
+    "id": "UPSCSE-T1-048",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Conservation",
+    "stem": "Which of the following are methods of in situ conservation?\n\n1. National parks\n\n2. Biosphere reserves\n\n3. Seed banks\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "National parks and biosphere reserves protect species in their natural habitat (in situ). Seed banks, zoos and botanical gardens keep them outside it (ex situ)."
+  },
+  {
+    "id": "UPSCSE-T1-049",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lakes",
+    "stem": "Lonar Lake in Maharashtra was formed by:",
+    "options": [
+      "A meteorite impact in basalt rock",
+      "A glacier carving out a basin",
+      "A river cutting off one of its meanders",
+      "Movement along a rift valley fault"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lonar in Buldhana district is a crater lake made by a meteorite impact in the Deccan basalt, with saline, alkaline water. A cut-off meander forms an oxbow lake."
+  },
+  {
+    "id": "UPSCSE-T1-050",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "President",
+    "stem": "The President's power to promulgate ordinances when Parliament is not in session is given by:",
+    "options": [
+      "Article 213",
+      "Article 123",
+      "Article 356",
+      "Article 352"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 123 gives the President the ordinance power and Article 213 gives the same power to a Governor. Articles 352 and 356 deal with national emergency and President's rule in a state."
+  },
+  {
+    "id": "UPSCSE-T1-051",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Strait of Malacca separates:",
+    "options": [
+      "The Indian mainland and Sri Lanka",
+      "The islands of Java and Borneo",
+      "Singapore and the island of Borneo",
+      "The Malay Peninsula and Sumatra"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Strait of Malacca runs between the Malay Peninsula and the Indonesian island of Sumatra and links the Andaman Sea with the South China Sea."
+  },
+  {
+    "id": "UPSCSE-T1-052",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Schedules",
+    "stem": "Consider the following pairs:\n\n1. Seventh Schedule : Union, State and Concurrent Lists\n\n2. Eighth Schedule : Languages\n\n3. Ninth Schedule : Disqualification on grounds of defection\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two pairs are correct. The Ninth Schedule holds laws protected from challenge, mainly land reform laws, added by the First Amendment in 1951. The anti-defection provisions are in the Tenth Schedule."
+  },
+  {
+    "id": "UPSCSE-T1-053",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mughal administration",
+    "stem": "Under the Mughal mansabdari system, the sawar rank of a mansabdar showed:",
+    "options": [
+      "The number of war elephants in his charge",
+      "His personal status and the salary it carried",
+      "The land revenue of the jagir assigned to him",
+      "The number of cavalrymen he had to maintain"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each mansabdar held two ranks. The zat rank fixed his personal status and salary, and the sawar rank fixed the number of horsemen he had to maintain for the emperor."
+  },
+  {
+    "id": "UPSCSE-T1-054",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Congress sessions",
+    "stem": "The resolution on Fundamental Rights and Economic Policy was adopted at which session of the Indian National Congress?",
+    "options": [
+      "Lahore, 1929",
+      "Karachi, 1931",
+      "Lucknow, 1916",
+      "Haripura, 1938"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Karachi session of 1931, presided over by Vallabhbhai Patel, adopted the resolution on Fundamental Rights and Economic Policy. Lahore 1929 adopted Purna Swaraj and Lucknow 1916 saw the pact with the Muslim League."
+  },
+  {
+    "id": "UPSCSE-T1-055",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "External sector",
+    "stem": "The current account of the balance of payments records:",
+    "options": [
+      "Foreign direct investment and portfolio investment flows",
+      "Changes in the foreign exchange reserves only",
+      "Goods and services trade, primary income and transfers",
+      "Loans taken from the IMF and World Bank"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The current account covers merchandise trade, services, primary income (such as interest and dividends) and secondary income or transfers (such as remittances). Investment flows and loans are in the capital and financial account."
+  },
+  {
+    "id": "UPSCSE-T1-056",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pollution",
+    "stem": "Eutrophication of a lake is caused mainly by:",
+    "options": [
+      "Heavy metals such as lead and mercury from industry",
+      "Hot water discharged from power plants",
+      "Plastic waste floating on the surface",
+      "Excess nutrients such as nitrates and phosphates"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Nutrients from fertiliser runoff and sewage cause algal blooms; when the algae die and decay, dissolved oxygen falls and fish die."
+  },
+  {
+    "id": "UPSCSE-T1-057",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nuclear energy",
+    "stem": "Which of the following are used as nuclear fuel in reactors?\n\n1. Uranium-235\n\n2. Plutonium-239\n\n3. Heavy water\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Uranium-235 and plutonium-239 are fissile fuels. Heavy water is used as a moderator (and coolant) in pressurised heavy water reactors, not as fuel."
+  },
+  {
+    "id": "UPSCSE-T1-058",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Consider the following rivers:\n\n1. Narmada\n\n2. Tapi\n\n3. Mahi\n\nHow many of the above rivers flow into the Bay of Bengal?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "None. All three flow west into the Arabian Sea: the Narmada and the Tapi through rift valleys, and the Mahi into the Gulf of Khambhat. Most large peninsular rivers, such as the Mahanadi and Godavari, flow east into the Bay of Bengal."
+  },
+  {
+    "id": "UPSCSE-T1-059",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Money Bills",
+    "stem": "Consider the following statements about a Money Bill:\n\n1. The Rajya Sabha must return it, with or without recommendations, within 14 days.\n\n2. The Lok Sabha is bound to accept the recommendations of the Rajya Sabha.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. Under Article 109 the Lok Sabha may accept or reject any or all of the Rajya Sabha's recommendations; if the Rajya Sabha does not return the Bill within 14 days it is deemed passed."
+  },
+  {
+    "id": "UPSCSE-T1-060",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vijayanagara",
+    "stem": "Consider the following statements:\n\n1. Krishnadevaraya composed the Amuktamalyada in Telugu.\n\n2. The Battle of Talikota in 1565 was fought between Vijayanagara and an alliance of the Deccan sultanates.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. Krishnadevaraya wrote the Amuktamalyada in Telugu, and at Talikota (Rakkasa-Tangadi) in 1565 the combined Deccan sultanates defeated Vijayanagara, after which its capital was sacked."
+  },
+  {
+    "id": "UPSCSE-T1-061",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Constitutional development",
+    "stem": "Which of the following were features of the Indian Councils Act, 1909?\n\n1. Separate electorates for Muslims\n\n2. Dyarchy in the provinces\n\n3. Indirect election of members to the legislative councils\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The Morley-Minto Reforms of 1909 introduced separate electorates for Muslims and elected members chosen indirectly through local bodies and other electorates. Dyarchy in the provinces came with the Act of 1919."
+  },
+  {
+    "id": "UPSCSE-T1-062",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Exchange rate",
+    "stem": "Consider the following statements about a depreciation of the rupee against the dollar:\n\n1. It makes Indian exports dearer for foreign buyers.\n\n2. It makes imports dearer in rupee terms.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 2 is correct. When the rupee loses value, each dollar of imports costs more rupees, while Indian goods become cheaper for buyers paying in dollars, which tends to help exports."
+  },
+  {
+    "id": "UPSCSE-T1-063",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Protected areas",
+    "stem": "Consider the following pairs:\n\n1. Kaziranga National Park : Assam\n\n2. Gir National Park : Gujarat\n\n3. Periyar Tiger Reserve : Karnataka\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two pairs are correct. Kaziranga is in Assam and Gir, the last home of the Asiatic lion, is in Gujarat. Periyar is in Kerala."
+  },
+  {
+    "id": "UPSCSE-T1-064",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Space",
+    "stem": "Solar observatories are placed near the Sun-Earth Lagrange point L1 mainly because it:",
+    "options": [
+      "Is the closest point to the Sun a craft can reach",
+      "Lets a craft orbit the Moon cheaply",
+      "Lies behind the Earth, in its shadow",
+      "Gives an uninterrupted view of the Sun"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "L1 lies about 1.5 million km from Earth towards the Sun, where a craft can stay in line with Earth and Sun and never be eclipsed. L2, on the far side of Earth, suits telescopes that look away from the Sun."
+  },
+  {
+    "id": "UPSCSE-T1-065",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Soils",
+    "stem": "Laterite soils form mainly where:",
+    "options": [
+      "Wind blows sand in from nearby deserts",
+      "Heat and heavy rain leach away silica",
+      "Basalt lava weathers under a dry climate",
+      "Rivers deposit fine silt year after year"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Laterite develops under high temperature and heavy seasonal rainfall, which leach away silica and bases and leave iron and aluminium oxides. River silt forms alluvium and weathered basalt forms black soil."
+  },
+  {
+    "id": "UPSCSE-T1-066",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "Consider the following statements about a joint sitting of the two Houses of Parliament:\n\n1. A joint sitting can be called to resolve a deadlock over a Constitution Amendment Bill.\n\n2. There is no provision for a joint sitting on a Money Bill.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 2 is correct. Article 108 allows a joint sitting only for ordinary Bills. A Money Bill needs no joint sitting because the Lok Sabha has the final say, and a Constitution Amendment Bill must be passed by each House separately by a special majority."
+  },
+  {
+    "id": "UPSCSE-T1-067",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bhakti",
+    "stem": "The Alvars of early medieval Tamil country were poet-saints devoted to:",
+    "options": [
+      "Vishnu",
+      "Murugan",
+      "Shiva",
+      "Shakti"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The twelve Alvars sang in praise of Vishnu; their hymns were compiled as the Nalayira Divya Prabandham. The Nayanars were their Shaiva counterparts."
+  },
+  {
+    "id": "UPSCSE-T1-068",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Depressed classes",
+    "stem": "The Poona Pact of 1932 between Gandhi and B. R. Ambedkar provided for:",
+    "options": [
+      "Reserved seats within the general electorate",
+      "Abolition of untouchability by law",
+      "Reserved posts for the Depressed Classes in the ICS",
+      "Separate electorates for the Depressed Classes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Communal Award had given the Depressed Classes separate electorates. Gandhi fasted against it, and the Poona Pact replaced them with a larger number of reserved seats within the general electorate."
+  },
+  {
+    "id": "UPSCSE-T1-069",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Monetary policy",
+    "stem": "Open market operations by the RBI mean:",
+    "options": [
+      "Lending directly to farmers and small firms",
+      "Fixing the interest rates banks pay on savings",
+      "Buying and selling government securities",
+      "Changing the share of deposits banks keep with it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Through open market operations the RBI buys government securities to add liquidity and sells them to absorb it. Changing the share of deposits kept with the RBI is the CRR."
+  },
+  {
+    "id": "UPSCSE-T1-070",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Red List",
+    "stem": "In the IUCN Red List, which category is used for species facing an extremely high risk of extinction in the wild?",
+    "options": [
+      "Near Threatened",
+      "Vulnerable",
+      "Least Concern",
+      "Critically Endangered"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The threatened categories, in order of rising risk, are Vulnerable, Endangered and Critically Endangered, followed by Extinct in the Wild and Extinct."
+  },
+  {
+    "id": "UPSCSE-T1-071",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Kala-azar (visceral leishmaniasis) is caused by:",
+    "options": [
+      "A roundworm spread by Culex mosquitoes",
+      "A bacterium spread by houseflies",
+      "A virus spread by Aedes mosquitoes",
+      "A protozoan spread by sandflies"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Kala-azar is caused by the protozoan Leishmania donovani and spread by the bite of infected sandflies. Aedes spreads dengue and Culex spreads filariasis, caused by a roundworm."
+  },
+  {
+    "id": "UPSCSE-T1-072",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Atacama, one of the driest deserts on Earth, is in:",
+    "options": [
+      "Mongolia",
+      "Chile",
+      "Namibia",
+      "Australia"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Atacama lies along the coast of northern Chile, kept dry by the cold Humboldt Current and the rain shadow of the Andes. The Namib is in Namibia and the Gobi in Mongolia and China."
+  },
+  {
+    "id": "UPSCSE-T1-073",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CAG",
+    "stem": "Consider the following statements about the Comptroller and Auditor General of India:\n\n1. The CAG is appointed by the Speaker of the Lok Sabha.\n\n2. The salary of the CAG is charged on the Consolidated Fund of India.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 2 is correct. The CAG is appointed by the President under Article 148, and the salary is a charged expenditure, not voted, which protects the office's independence."
+  },
+  {
+    "id": "UPSCSE-T1-074",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classical dance",
+    "stem": "Consider the following pairs:\n\n1. Kuchipudi : Andhra Pradesh\n\n2. Sattriya : Assam\n\n3. Mohiniyattam : Odisha\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two pairs are correct. Kuchipudi takes its name from a village in Andhra Pradesh and Sattriya grew in the sattras (Vaishnava monasteries) of Assam. Mohiniyattam is from Kerala; Odisha's classical dance is Odissi."
+  },
+  {
+    "id": "UPSCSE-T1-075",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Civil Disobedience",
+    "stem": "Who led the salt march from Trichinopoly to Vedaranyam on the Tamil coast in 1930?",
+    "options": [
+      "C. Rajagopalachari",
+      "S. Satyamurti",
+      "K. Kamaraj",
+      "E. V. Ramasamy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "C. Rajagopalachari led the Vedaranyam salt march in April 1930, the Tamil counterpart of Gandhi's Dandi march."
+  },
+  {
+    "id": "UPSCSE-T1-076",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Public finance",
+    "stem": "A Ways and Means Advance from the RBI to the government is:",
+    "options": [
+      "A long-term loan to finance new infrastructure projects",
+      "A short loan for gaps in receipts and payments",
+      "A grant to the states for disaster relief",
+      "A loan from the IMF routed through the RBI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ways and Means Advances are short-term loans that help the Union and state governments bridge temporary gaps between receipts and spending. Overdrafts arise if the limit is exceeded."
+  },
+  {
+    "id": "UPSCSE-T1-077",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ecosystems",
+    "stem": "Which of the following is true of mangroves?",
+    "options": [
+      "They grow only along freshwater lakes far from the sea",
+      "They grow in salty intertidal mud, many with breathing roots",
+      "They need well-drained soil free of salt and flooding",
+      "They are found mainly in cold temperate regions of the world"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mangroves grow in tropical and subtropical intertidal zones; many species have pneumatophores, aerial roots that take in oxygen from waterlogged mud, and some show vivipary."
+  },
+  {
+    "id": "UPSCSE-T1-078",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ocean currents",
+    "stem": "Consider the following statements:\n\n1. The Benguela Current is a warm current.\n\n2. The Kuroshio Current is a warm current.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 2 is correct. The Kuroshio carries warm water north along Japan. The Benguela is a cold current flowing north along the south-west coast of Africa."
+  },
+  {
+    "id": "UPSCSE-T1-079",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Judicial review",
+    "stem": "The basic structure doctrine, which limits Parliament's power to amend the Constitution, was laid down in:",
+    "options": [
+      "Maneka Gandhi v. Union of India",
+      "Minerva Mills v. Union of India",
+      "Kesavananda Bharati v. State of Kerala",
+      "Golaknath v. State of Punjab"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In Kesavananda Bharati (1973) a 13-judge bench held that Parliament can amend any part of the Constitution but not its basic structure. Minerva Mills (1980) applied the doctrine, and Golaknath (1967) had earlier barred amending Fundamental Rights."
+  },
+  {
+    "id": "UPSCSE-T1-080",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Communication",
+    "stem": "Consider the following statements:\n\n1. Bluetooth devices communicate using infrared light.\n\n2. Infrared remote controls usually need a clear line of sight to the device.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 2 is correct. Bluetooth uses short-range radio waves around 2.4 GHz, which pass through walls. Infrared light is blocked by solid objects, so a TV remote must point at the set."
+  },
+  {
+    "id": "UPSCSE-T1-081",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi Sultanate",
+    "stem": "Consider the following statements:\n\n1. Muhammad bin Tughluq ordered the transfer of the capital from Delhi to Daulatabad.\n\n2. Firuz Shah Tughluq introduced a token currency of copper and brass coins.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. Both the move to Daulatabad and the token currency experiment were the work of Muhammad bin Tughluq; Firuz Shah Tughluq is known for canals, new towns and the jizya on Brahmins, not token coins."
+  },
+  {
+    "id": "UPSCSE-T1-082",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Towards independence",
+    "stem": "The Cabinet Mission Plan of 1946 proposed:",
+    "options": [
+      "A Union with provinces grouped into sections",
+      "Direct British rule until a war crimes inquiry",
+      "Immediate partition into two sovereign dominions",
+      "Dominion status with separate electorates for all"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Cabinet Mission rejected a sovereign Pakistan and proposed a Union handling defence, foreign affairs and communications, with provinces grouped into three sections and a Constituent Assembly elected by the provincial assemblies."
+  },
+  {
+    "id": "UPSCSE-T1-083",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economic terms",
+    "stem": "Consider the following pairs:\n\n1. Disinflation : A fall in the rate of inflation\n\n2. Deflation : A fall in the general price level\n\n3. Hyperinflation : A steady rise in prices of under 3 percent a year\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two pairs are correct. Disinflation means prices still rise but more slowly; deflation means prices actually fall. Hyperinflation is extremely rapid, out-of-control price rise; a mild steady rise is creeping inflation."
+  },
+  {
+    "id": "UPSCSE-T1-084",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pollution",
+    "stem": "Consider the following statements:\n\n1. Acid rain is caused mainly by sulphur dioxide and nitrogen oxides in the air.\n\n2. Acid rain has a pH above 7.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. Acid rain has a pH below about 5.6 (normal rain is slightly acidic from dissolved carbon dioxide); a pH above 7 would be alkaline."
+  },
+  {
+    "id": "UPSCSE-T1-085",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Which of the following is NOT a tributary of the Indus?",
+    "options": [
+      "Gomti",
+      "Jhelum",
+      "Chenab",
+      "Sutlej"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Gomti is a tributary of the Ganga in Uttar Pradesh. The Jhelum, Chenab, Ravi, Beas and Sutlej all join the Indus system."
+  },
+  {
+    "id": "UPSCSE-T1-086",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Constitutional bodies",
+    "stem": "Which of the following is NOT a constitutional body?",
+    "options": [
+      "Election Commission of India",
+      "Union Public Service Commission",
+      "Finance Commission",
+      "NITI Aayog"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "NITI Aayog was set up in 2015 by an executive resolution of the Union Cabinet. The other three are created by the Constitution (Articles 280, 315 and 324)."
+  },
+  {
+    "id": "UPSCSE-T1-087",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "GM crops",
+    "stem": "Bt cotton resists bollworm attack because it carries a gene taken from:",
+    "options": [
+      "A wild species of cotton from Africa",
+      "The fungus that causes cotton wilt",
+      "The bacterium Bacillus thuringiensis",
+      "The neem tree"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bt cotton has a gene from the soil bacterium Bacillus thuringiensis that makes a Cry protein toxic to bollworm larvae. It was approved for commercial cultivation in India in 2002, the country's first genetically modified crop."
+  },
+  {
+    "id": "UPSCSE-T1-088",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cholas",
+    "stem": "The Uttaramerur inscriptions are an important source for:",
+    "options": [
+      "The building of the Brihadeeswara temple",
+      "Land grants made to Buddhist monasteries",
+      "The naval raids of the Cholas into Southeast Asia",
+      "How members of the village sabha were chosen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Inscriptions of the Chola king Parantaka I at Uttaramerur describe how members of the village assembly (sabha) were selected by lot from eligible candidates, the kudavolai system."
+  },
+  {
+    "id": "UPSCSE-T1-089",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Press and nationalism",
+    "stem": "Consider the following pairs:\n\n1. Kesari : Bal Gangadhar Tilak\n\n2. Al-Hilal : Maulana Abul Kalam Azad\n\n3. The Bengalee : Aurobindo Ghose\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two pairs are correct. Tilak ran the Marathi Kesari and Azad founded the Urdu weekly Al-Hilal in 1912. The Bengalee was edited by Surendranath Banerjea; Aurobindo is linked with Bande Mataram and Karmayogin."
+  },
+  {
+    "id": "UPSCSE-T1-090",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inequality",
+    "stem": "The Gini coefficient is a measure of:",
+    "options": [
+      "Inequality of income or consumption",
+      "The rate of growth of national income",
+      "The share of agriculture in output",
+      "The level of a country's public debt"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Gini coefficient ranges from 0 (perfect equality) to 1 (one person has everything) and is read from the Lorenz curve."
+  },
+  {
+    "id": "UPSCSE-T1-091",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon",
+    "stem": "The term 'blue carbon' refers to:",
+    "options": [
+      "Carbon dioxide released by burning natural gas",
+      "Carbon captured from factory chimneys",
+      "Carbon locked in polar ice sheets",
+      "Carbon stored in coastal and marine ecosystems"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Blue carbon is carbon taken up and stored by mangroves, salt marshes and seagrass meadows, much of it in their sediments."
+  },
+  {
+    "id": "UPSCSE-T1-092",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time and longitude",
+    "stem": "Two places are 15 degrees of longitude apart. What is the difference in their local times?",
+    "options": [
+      "1 hour",
+      "15 minutes",
+      "30 minutes",
+      "4 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Earth turns 360 degrees in 24 hours, so 15 degrees takes 1 hour and each degree takes 4 minutes."
+  },
+  {
+    "id": "UPSCSE-T1-093",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Attorney General",
+    "stem": "Consider the following statements about the Attorney General of India:\n\n1. The Attorney General is appointed by the President.\n\n2. The Attorney General has the right to speak in either House of Parliament.\n\n3. The Attorney General has the right to vote in Parliament.\n\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Statements 1 and 2 are correct. Under Article 88 the Attorney General may speak and take part in the proceedings of either House and its committees, but has no right to vote."
+  },
+  {
+    "id": "UPSCSE-T1-094",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "Hardness of water is caused mainly by dissolved salts of:",
+    "options": [
+      "Sodium and ammonium",
+      "Aluminium and potassium",
+      "Iron and copper",
+      "Calcium and magnesium"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hard water does not lather easily with soap because of calcium and magnesium salts. Their bicarbonates cause temporary hardness, removed by boiling; their chlorides and sulphates cause permanent hardness, removed by washing soda or ion exchange."
+  },
+  {
+    "id": "UPSCSE-T1-095",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Temple architecture",
+    "stem": "The Vesara style of temple architecture, mixing northern and southern features, developed mainly in:",
+    "options": [
+      "The Tamil country, under the Pallavas",
+      "Gujarat and Rajasthan, under the Solanki rulers",
+      "The Deccan, under later Chalukyas and Hoysalas",
+      "Odisha, under the Eastern Gangas"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Vesara blends Nagara and Dravida elements and is linked with the Deccan, especially the temples of the later Chalukyas and the Hoysalas in Karnataka. Odisha and Gujarat built in Nagara styles and the Pallavas in the Dravida style."
+  },
+  {
+    "id": "UPSCSE-T1-096",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Racial controversy",
+    "stem": "Consider the following statements about the Ilbert Bill of 1883:\n\n1. It was introduced during the viceroyalty of Lord Ripon.\n\n2. It was passed in its original form despite European protests.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. The Bill would have let Indian judges try Europeans in district courts. European protest forced a compromise under which a European could demand a jury of which half were Europeans."
+  },
+  {
+    "id": "UPSCSE-T1-097",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "GST",
+    "stem": "Under GST, Integrated GST (IGST) is levied on:",
+    "options": [
+      "Supplies within a single state only",
+      "Services exported outside India only",
+      "Petroleum products and alcohol for drinking",
+      "Inter-state supplies of goods and services"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "IGST applies to inter-state supplies and imports and is collected by the Union, which apportions it. Supplies within a state attract CGST and SGST together. Alcohol for human consumption is outside GST."
+  },
+  {
+    "id": "UPSCSE-T1-098",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Movements",
+    "stem": "The Chipko movement of the 1970s began in:",
+    "options": [
+      "The Aravalli hills of Rajasthan",
+      "The Western Ghats of Karnataka",
+      "The Garhwal Himalaya",
+      "The Sundarbans of Bengal"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chipko began in 1973 in Chamoli district of the Garhwal Himalaya, now Uttarakhand, when villagers hugged trees to stop felling. Appiko, a similar movement, arose in Karnataka's Western Ghats in 1983."
+  },
+  {
+    "id": "UPSCSE-T1-099",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Minerals",
+    "stem": "The Jharia field in Jharkhand is best known for:",
+    "options": [
+      "Coking coal",
+      "Iron ore",
+      "Bauxite",
+      "Mica"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Jharia, in the Damodar valley, is India's main source of coking coal used in steel-making."
+  },
+  {
+    "id": "UPSCSE-T1-100",
+    "section": "gs",
+    "test": 1,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emergency",
+    "stem": "The words 'armed rebellion' replaced 'internal disturbance' as a ground for a national emergency through the:",
+    "options": [
+      "52nd Amendment Act, 1985",
+      "38th Amendment Act, 1975",
+      "44th Amendment Act, 1978",
+      "42nd Amendment Act, 1976"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 44th Amendment, passed after the 1975 to 1977 Emergency, replaced 'internal disturbance' with 'armed rebellion' in Article 352 and required written advice of the Cabinet before a proclamation."
+  },
+  {
+    "id": "UPSCSE-T2-001",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Islands",
+    "stem": "Consider the following statements:\n\n1. The Andaman and Nicobar Islands are the raised tops of a submarine mountain chain.\n\n2. The Lakshadweep islands are mostly of coral origin.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. The Andaman and Nicobar Islands are an elevated part of a submarine mountain chain, generally seen as continuing the Arakan Yoma of Myanmar, while Lakshadweep is made of coral atolls and reefs."
+  },
+  {
+    "id": "UPSCSE-T2-002",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Citizenship",
+    "stem": "Consider the following statements:\n\n1. Citizenship at the commencement of the Constitution is dealt with in Part III of the Constitution.\n\n2. The law on acquiring and losing citizenship was made by Parliament in the Citizenship Act, 1955.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 2 is correct. Citizenship is in Part II (Articles 5 to 11); Part III contains the Fundamental Rights. Article 11 let Parliament regulate citizenship, which it did through the Citizenship Act, 1955."
+  },
+  {
+    "id": "UPSCSE-T2-003",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vedic age",
+    "stem": "Consider the following statements:\n\n1. The Rigveda is arranged in ten books called mandalas.\n\n2. The Samaveda consists mainly of sacrificial formulas in prose.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct: the Rigveda has ten mandalas. The prose sacrificial formulas belong to the Yajurveda; the Samaveda is a collection of chants, most of its verses drawn from the Rigveda and set to melody."
+  },
+  {
+    "id": "UPSCSE-T2-004",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "British expansion",
+    "stem": "The Subsidiary Alliance system, under which Indian rulers paid for British troops stationed in their states, is associated with:",
+    "options": [
+      "Lord Wellesley",
+      "Warren Hastings",
+      "Lord Dalhousie",
+      "Lord Cornwallis"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lord Wellesley (1798 to 1805) used the Subsidiary Alliance to bring Hyderabad, Awadh and other states under British control. Dalhousie is known for the Doctrine of Lapse."
+  },
+  {
+    "id": "UPSCSE-T2-005",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monetary policy",
+    "stem": "Consider the following statements about the Monetary Policy Committee:\n\n1. It decides the policy repo rate needed to meet the inflation target.\n\n2. It has six members, three of them from the Reserve Bank of India.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. The MPC, under the RBI Act as amended in 2016, has the Governor, a Deputy Governor and one more RBI officer, plus three members appointed by the Union government. The Governor has a casting vote."
+  },
+  {
+    "id": "UPSCSE-T2-006",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Climate agreements",
+    "stem": "Consider the following statements:\n\n1. The Kyoto Protocol set binding emission reduction targets for developed countries.\n\n2. Under the Paris Agreement, countries set their own targets as nationally determined contributions.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. Kyoto bound industrialised (Annex I) countries to targets, while the Paris Agreement of 2015 asks every party to set and update its own nationally determined contribution."
+  },
+  {
+    "id": "UPSCSE-T2-007",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Consider the following statements:\n\n1. Insulin is made by the beta cells of the islets of Langerhans in the pancreas.\n\n2. Type 1 diabetes results from the body making little or no insulin.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. In type 1 diabetes the immune system destroys the beta cells, so insulin must be supplied. In type 2 the body makes insulin but responds poorly to it."
+  },
+  {
+    "id": "UPSCSE-T2-008",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seas and gulfs",
+    "stem": "The Gulf of Mannar lies between:",
+    "options": [
+      "Gujarat and Pakistan, at the Indus mouth",
+      "The Andaman Islands and Myanmar",
+      "India and Sri Lanka, south of Rameswaram",
+      "India and the Maldives, west of Kerala"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Gulf of Mannar lies south of Rameswaram and Adam's Bridge, between Tamil Nadu and Sri Lanka; Palk Bay lies to its north. It has a marine national park and biosphere reserve."
+  },
+  {
+    "id": "UPSCSE-T2-009",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "President",
+    "stem": "If the President returns an ordinary Bill to Parliament for reconsideration and Parliament passes it again, the President:",
+    "options": [
+      "May refer it to the Supreme Court instead",
+      "May withhold assent for six months",
+      "May return it once more",
+      "Must give assent to it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under Article 111 the President may return a Bill other than a Money Bill once for reconsideration. If both Houses pass it again, with or without amendments, the President shall not withhold assent. This is often called a suspensive veto."
+  },
+  {
+    "id": "UPSCSE-T2-010",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mahajanapadas",
+    "stem": "Which of the sixteen mahajanapadas grew into the most powerful kingdom under Bimbisara and Ajatashatru?",
+    "options": [
+      "Kosala",
+      "Magadha",
+      "Vatsa",
+      "Avanti"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Magadha, with its capital first at Rajagriha and later Pataliputra, expanded under Bimbisara and Ajatashatru and went on to become the base of the Nanda and Maurya empires."
+  },
+  {
+    "id": "UPSCSE-T2-011",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Company rule",
+    "stem": "Consider the following statements:\n\n1. The Regulating Act of 1773 created the office of Governor-General of Bengal.\n\n2. The Charter Act of 1833 ended the East India Company's activities as a trading body.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. The Regulating Act made Warren Hastings the first Governor-General of Bengal, and the Charter Act of 1833 ended the Company's remaining trade, including with China, leaving it an administrative body. It also created the post of Governor-General of India."
+  },
+  {
+    "id": "UPSCSE-T2-012",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Public finance",
+    "stem": "The primary deficit is:",
+    "options": [
+      "The fiscal deficit minus interest payments",
+      "The fiscal deficit plus interest payments",
+      "The revenue deficit minus grants for capital assets",
+      "Revenue receipts minus revenue spending"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Primary deficit = fiscal deficit minus interest payments. It shows the borrowing needed for current policies, leaving out the cost of past debt."
+  },
+  {
+    "id": "UPSCSE-T2-013",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ecology",
+    "stem": "Ecological succession that begins on bare rock, where no soil exists, is called:",
+    "options": [
+      "Retrogressive succession",
+      "Primary succession",
+      "Secondary succession",
+      "Cyclic succession"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Primary succession starts on newly exposed surfaces such as bare rock or lava, beginning with pioneers like lichens. Secondary succession follows a disturbance on land that still has soil."
+  },
+  {
+    "id": "UPSCSE-T2-014",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "Graphite is used as a dry lubricant because:",
+    "options": [
+      "It melts at a low temperature into an oil",
+      "It is the hardest known form of carbon",
+      "Its layers of carbon atoms slide easily over each other",
+      "It absorbs water from the surfaces it touches"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In graphite, carbon atoms form flat hexagonal sheets held together only by weak forces, so the sheets slide over one another. Diamond, where every atom is bonded to four others, is the hardest form."
+  },
+  {
+    "id": "UPSCSE-T2-015",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dams and rivers",
+    "stem": "Consider the following pairs:\n\n1. Hirakud dam : Mahanadi\n\n2. Bhakra dam : Sutlej\n\n3. Tehri dam : Bhagirathi\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "All three pairs are correct. Hirakud is on the Mahanadi in Odisha, Bhakra on the Sutlej in Himachal Pradesh, and Tehri on the Bhagirathi in Uttarakhand."
+  },
+  {
+    "id": "UPSCSE-T2-016",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pardoning power",
+    "stem": "Consider the following statements:\n\n1. The President can pardon a sentence of death.\n\n2. The Governor of a state can grant a pardon for a sentence passed by a court martial.\n\n3. The President can pardon a sentence passed by a court martial.\n\nHow many of the statements given above are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two are correct. Article 72 gives the President power to pardon in all cases where the sentence is death and in all cases of punishment by a court martial. Article 161 gives a Governor no power over court-martial sentences, which concern a Union matter."
+  },
+  {
+    "id": "UPSCSE-T2-017",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Indo-Roman trade",
+    "stem": "Which of the following were ports in ancient India's trade with the Roman world?\n\n1. Arikamedu\n\n2. Muziris\n\n3. Barygaza\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "All three were. Arikamedu near Puducherry has yielded Roman pottery, Muziris on the Kerala coast is named in Roman sources as a pepper port, and Barygaza is the Greek name for Bharuch on the Gujarat coast."
+  },
+  {
+    "id": "UPSCSE-T2-018",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Revolt of 1857",
+    "stem": "Consider the following pairs:\n\n1. Khan Bahadur Khan : Bareilly\n\n2. Kunwar Singh : Jhansi\n\n3. Begum Hazrat Mahal : Lucknow\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two pairs are correct. Khan Bahadur Khan led at Bareilly and Begum Hazrat Mahal at Lucknow. Kunwar Singh led the revolt at Jagdishpur in Bihar; Jhansi was led by Rani Lakshmibai."
+  },
+  {
+    "id": "UPSCSE-T2-019",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Taxation",
+    "stem": "Consider the following taxes:\n\n1. Corporation tax\n\n2. Securities transaction tax\n\n3. Customs duty\n\nHow many of the above are direct taxes?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two. Corporation tax and the securities transaction tax are direct taxes administered by the Central Board of Direct Taxes. Customs duty is an indirect tax on imports and exports."
+  },
+  {
+    "id": "UPSCSE-T2-020",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biodiversity",
+    "stem": "Consider the following animals:\n\n1. Lion-tailed macaque\n\n2. Nilgiri tahr\n\n3. Great one-horned rhinoceros\n\nHow many of the above are found in the wild in the Western Ghats?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two. The lion-tailed macaque and the Nilgiri tahr are endemic to the Western Ghats. The one-horned rhinoceros lives in the grasslands of Assam, West Bengal and the Terai."
+  },
+  {
+    "id": "UPSCSE-T2-021",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Consider the following diseases:\n\n1. Cholera\n\n2. Typhoid\n\n3. Chickenpox\n\nHow many of the above are caused by bacteria?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two. Cholera (Vibrio cholerae) and typhoid (Salmonella Typhi) are bacterial. Chickenpox is caused by the varicella-zoster virus."
+  },
+  {
+    "id": "UPSCSE-T2-022",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Climatology",
+    "stem": "Jet streams are:",
+    "options": [
+      "Local winds that blow down mountain slopes at night",
+      "Warm ocean currents along the eastern coasts",
+      "Narrow bands of fast wind high in the troposphere",
+      "Surface winds that blow from sea to land by day"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Jet streams are narrow belts of strong westerly (and some easterly) winds near the top of the troposphere. Sea breezes and mountain winds are local surface winds."
+  },
+  {
+    "id": "UPSCSE-T2-023",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Local government",
+    "stem": "Elections to panchayats and municipalities are conducted by the:",
+    "options": [
+      "District Collector",
+      "State Election Commission",
+      "Election Commission of India",
+      "State Public Service Commission"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Articles 243K and 243ZA vest the conduct of panchayat and municipal elections in the State Election Commission, appointed by the Governor."
+  },
+  {
+    "id": "UPSCSE-T2-024",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Schools of art",
+    "stem": "The Gandhara school of sculpture is best known for:",
+    "options": [
+      "Bronze images cast in the south by the lost-wax method",
+      "Greco-Roman influence, often carved in grey schist",
+      "Spotted red sandstone from around Mathura",
+      "White limestone reliefs of the Krishna valley"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gandhara art, in the north-west, shows Hellenistic influence such as wavy hair and draped robes, and is typically carved in grey schist. Red sandstone is the Mathura school and white limestone the Amaravati school; lost-wax bronzes are associated with the Cholas."
+  },
+  {
+    "id": "UPSCSE-T2-025",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Social reform",
+    "stem": "Consider the following statements:\n\n1. The Satyashodhak Samaj was founded by Jyotirao Phule.\n\n2. The Self-Respect Movement was started by E. V. Ramasamy.\n\n3. The Prarthana Samaj was founded in Calcutta.\n\nHow many of the statements given above are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two are correct. Phule founded the Satyashodhak Samaj in 1873 and Periyar started the Self-Respect Movement in 1925. The Prarthana Samaj was founded in Bombay in 1867."
+  },
+  {
+    "id": "UPSCSE-T2-026",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Taxation",
+    "stem": "A tax is called progressive when:",
+    "options": [
+      "Its rate falls as income rises",
+      "It is collected only from businesses",
+      "Its rate rises as income rises",
+      "Everyone pays the same rate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A progressive tax takes a larger share of higher incomes, as with income tax slabs. A flat rate is proportional, and a falling rate is regressive."
+  },
+  {
+    "id": "UPSCSE-T2-027",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conventions",
+    "stem": "The Bonn Convention (CMS) deals with the conservation of:",
+    "options": [
+      "Wetlands of international importance",
+      "The international trade in endangered species",
+      "Migratory species of wild animals",
+      "Persistent organic pollutants"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Convention on Migratory Species was signed at Bonn in 1979. CITES regulates trade in wildlife, Ramsar covers wetlands and the Stockholm Convention covers persistent organic pollutants."
+  },
+  {
+    "id": "UPSCSE-T2-028",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Which of the following are tributaries of the Brahmaputra?\n\n1. Subansiri\n\n2. Manas\n\n3. Teesta\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "All three. The Subansiri and Manas join the Brahmaputra in Assam, and the Teesta joins it in Bangladesh, where the main river is called the Jamuna."
+  },
+  {
+    "id": "UPSCSE-T2-029",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Supreme Court",
+    "stem": "Consider the following statements:\n\n1. The Supreme Court has original jurisdiction in disputes between the Government of India and one or more states.\n\n2. The President may refer a question of law to the Supreme Court for its opinion.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. Article 131 gives the Supreme Court original jurisdiction in federal disputes and Article 143 gives it advisory jurisdiction on references from the President."
+  },
+  {
+    "id": "UPSCSE-T2-030",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Space",
+    "stem": "A geostationary satellite orbits at a height of about:",
+    "options": [
+      "400 km",
+      "2,000 km",
+      "36,000 km",
+      "384,000 km"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "At about 35,786 km above the equator a satellite takes 24 hours to orbit and so stays over one spot, which suits communication and weather satellites. 400 km is a typical low Earth orbit and 384,000 km is the distance to the Moon."
+  },
+  {
+    "id": "UPSCSE-T2-031",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ashoka",
+    "stem": "Consider the following statements:\n\n1. Most of Ashoka's inscriptions are in Prakrit in the Brahmi script, though some in the north-west use Kharosthi, Greek or Aramaic.\n\n2. The Kalinga war and Ashoka's remorse over it are described in Major Rock Edict XIII.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both statements are correct. Ashoka's edicts are mostly Prakrit in Brahmi, with Kharosthi in the north-west and Greek and Aramaic versions in Afghanistan, and Major Rock Edict XIII records the conquest of Kalinga and his remorse."
+  },
+  {
+    "id": "UPSCSE-T2-032",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Swadeshi",
+    "stem": "Which of the following was part of the Swadeshi movement that followed the partition of Bengal?",
+    "options": [
+      "The demand for complete independence at Lahore",
+      "The salt march to the sea at Dandi",
+      "Setting up national schools such as the Bengal National College",
+      "Non-payment of land revenue across British India"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Swadeshi (1905 to 1911) promoted Indian goods, boycott of British cloth and national education, including the National Council of Education and the Bengal National College. Dandi (1930) and Purna Swaraj at Lahore (1929) came much later."
+  },
+  {
+    "id": "UPSCSE-T2-033",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Capital markets",
+    "stem": "Consider the following statements:\n\n1. SEBI was given statutory powers by an Act of Parliament in 1992.\n\n2. SEBI fixes the interest rates that commercial banks charge on loans.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. SEBI was set up in 1988 and became a statutory body under the SEBI Act, 1992, regulating securities markets. Bank lending rates are set by banks within the RBI's framework."
+  },
+  {
+    "id": "UPSCSE-T2-034",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pollution",
+    "stem": "Which of the following are components of photochemical smog?\n\n1. Nitrogen oxides\n\n2. Volatile organic compounds\n\n3. Ground-level ozone\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "All three. In sunlight nitrogen oxides and volatile organic compounds react to form ozone and peroxyacetyl nitrate (PAN), the main parts of photochemical smog."
+  },
+  {
+    "id": "UPSCSE-T2-035",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Climatology",
+    "stem": "The Roaring Forties are:",
+    "options": [
+      "Hot winds of the Sahara blowing north",
+      "Strong westerlies of the Southern Hemisphere",
+      "Cyclones that form in the Bay of Bengal in October",
+      "Easterly trade winds of the North Pacific"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Between about 40 and 50 degrees south there is little land to slow the westerlies, so they blow strongly all year. Sailors called them the Roaring Forties."
+  },
+  {
+    "id": "UPSCSE-T2-036",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "GST",
+    "stem": "The GST Council, set up under Article 279A, is chaired by:",
+    "options": [
+      "The Union Finance Minister",
+      "The Chairman of the Finance Commission",
+      "The Prime Minister",
+      "The Governor of the RBI"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article 279A, inserted by the 101st Amendment, makes the Union Finance Minister the chairperson; the Union Minister of State for finance and the finance ministers of the states are members."
+  },
+  {
+    "id": "UPSCSE-T2-037",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Optics",
+    "stem": "Which of the following are properties of laser light?\n\n1. It is nearly monochromatic.\n\n2. It is coherent.\n\n3. It spreads out widely as it travels.\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Laser light is nearly a single wavelength, its waves are in phase (coherent), and it is highly directional, spreading very little, which is why it can be focused so finely."
+  },
+  {
+    "id": "UPSCSE-T2-038",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pallavas",
+    "stem": "The Sanskrit farce Mattavilasa Prahasana is attributed to the Pallava king:",
+    "options": [
+      "Nandivarman II",
+      "Mahendravarman I",
+      "Narasimhavarman I",
+      "Simhavishnu"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mahendravarman I (early seventh century), patron of the early rock-cut cave temples, is credited with the satirical play Mattavilasa Prahasana. Narasimhavarman I, his son, is linked with the Mamallapuram monuments."
+  },
+  {
+    "id": "UPSCSE-T2-039",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Lucknow, 1916",
+    "stem": "Which of the following happened at or through the Lucknow session of the Indian National Congress in 1916?\n\n1. The Congress accepted separate electorates for Muslims in a pact with the Muslim League.\n\n2. The Moderates and Extremists were reunited in the Congress.\n\n3. The Congress and the League put forward joint demands for constitutional reform.\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "All three. The Lucknow session reunited the two wings that had split at Surat in 1907, and the Lucknow Pact with the Muslim League accepted separate electorates and set out joint demands for self-government."
+  },
+  {
+    "id": "UPSCSE-T2-040",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inflation",
+    "stem": "Cost-push inflation is caused by:",
+    "options": [
+      "A fall in the money supply",
+      "Aggregate demand growing faster than supply",
+      "Rising input costs such as wages or fuel",
+      "Lower indirect taxes on consumer goods"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cost-push inflation starts on the supply side when production costs rise. Demand outrunning supply is demand-pull inflation."
+  },
+  {
+    "id": "UPSCSE-T2-041",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ecology",
+    "stem": "An ecotone is:",
+    "options": [
+      "The role a species plays in its habitat",
+      "A transition zone between two ecosystems",
+      "A food chain that starts with dead matter",
+      "The number of species in a given area"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An ecotone, such as the edge between a forest and a grassland, often has species from both sides and some of its own (the edge effect). A species' role is its niche."
+  },
+  {
+    "id": "UPSCSE-T2-042",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Climatology",
+    "stem": "Consider the following statements about temperature inversion:\n\n1. During an inversion, air near the ground is cooler than the air above it.\n\n2. An inversion helps smoke and pollutants rise and disperse.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. In an inversion a cool layer lies under warmer air, so the air is stable and pollutants are trapped near the ground, which is why winter smog forms on calm nights."
+  },
+  {
+    "id": "UPSCSE-T2-043",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Union Territories",
+    "stem": "Which of the following Union Territories have a Legislative Assembly?\n\n1. Delhi\n\n2. Puducherry\n\n3. Chandigarh\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Delhi and Puducherry have elected legislatures (as does Jammu and Kashmir). Chandigarh is administered directly through an administrator, without a legislature."
+  },
+  {
+    "id": "UPSCSE-T2-044",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biotechnology",
+    "stem": "CRISPR-Cas9 is used to:",
+    "options": [
+      "Produce vaccines from chicken eggs",
+      "Read the structure of proteins by X-rays",
+      "Count the cells in a blood sample",
+      "Edit chosen sequences of DNA"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "CRISPR-Cas9 uses a guide RNA to lead the Cas9 enzyme to a chosen DNA sequence and cut it, so genes can be removed, changed or added."
+  },
+  {
+    "id": "UPSCSE-T2-045",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Centres of learning",
+    "stem": "Consider the following statements:\n\n1. Nalanda mahavihara was founded in the Gupta period.\n\n2. Vikramashila was founded by the Pala king Dharmapala.\n\n3. Takshashila lay in the region of Gandhara.\n\nHow many of the statements given above are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "All three are correct. Nalanda is generally dated to the reign of the Gupta king Kumaragupta I, Vikramashila was established by Dharmapala, and Takshashila (Taxila) was a city of Gandhara in present-day Pakistan."
+  },
+  {
+    "id": "UPSCSE-T2-046",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "INA",
+    "stem": "The Provisional Government of Free India (Azad Hind) was proclaimed in 1943 at:",
+    "options": [
+      "Berlin",
+      "Rangoon",
+      "Tokyo",
+      "Singapore"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Subhas Chandra Bose proclaimed the Provisional Government of Azad Hind at Singapore in October 1943. Its headquarters later moved to Rangoon."
+  },
+  {
+    "id": "UPSCSE-T2-047",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Public finance",
+    "stem": "Which of the following are capital receipts of the government?\n\n1. Recovery of loans given earlier\n\n2. Proceeds from disinvestment\n\n3. Market borrowings\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "All three are capital receipts: they either create a liability (borrowing) or reduce assets (loan recovery, disinvestment). Taxes, interest and dividends are revenue receipts."
+  },
+  {
+    "id": "UPSCSE-T2-048",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coral reefs",
+    "stem": "Consider the following statements:\n\n1. Coral bleaching occurs when stressed corals expel the algae (zooxanthellae) living in their tissues.\n\n2. Reef-building corals grow best in cold, deep and turbid water.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. Reef-building corals need warm, clear, shallow water, because their algae need sunlight. High sea temperatures make them expel the algae and turn white."
+  },
+  {
+    "id": "UPSCSE-T2-049",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "Which of these lakes lies in the East African Rift Valley?",
+    "options": [
+      "Lake Chad",
+      "Lake Titicaca",
+      "Lake Tanganyika",
+      "Lake Victoria"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lake Tanganyika fills part of the western branch of the rift and is one of the deepest lakes in the world. Lake Victoria lies on the plateau between the two branches, not in the rift."
+  },
+  {
+    "id": "UPSCSE-T2-050",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "The Speaker of the Lok Sabha resigns by writing to the:",
+    "options": [
+      "Deputy Speaker",
+      "President",
+      "Vice-President",
+      "Prime Minister"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Under Article 94 the Speaker resigns by writing to the Deputy Speaker, and the Deputy Speaker by writing to the Speaker."
+  },
+  {
+    "id": "UPSCSE-T2-051",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Borders",
+    "stem": "Consider the following states:\n\n1. Uttarakhand\n\n2. Bihar\n\n3. Himachal Pradesh\n\nHow many of the above states share a border with Nepal?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None of them"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two. The Indian states bordering Nepal are Uttarakhand, Uttar Pradesh, Bihar, West Bengal and Sikkim. Himachal Pradesh borders China (Tibet), not Nepal; Uttarakhand lies between it and Nepal."
+  },
+  {
+    "id": "UPSCSE-T2-052",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fundamental Rights",
+    "stem": "Consider the following pairs:\n\n1. Article 14 : Abolition of untouchability\n\n2. Article 21 : Right to constitutional remedies\n\n3. Article 32 : Uniform civil code for citizens\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "None of the pairs is correct. Article 14 is equality before law (untouchability is abolished by Article 17), Article 21 protects life and personal liberty (constitutional remedies are Article 32), and the uniform civil code is the Directive Principle in Article 44."
+  },
+  {
+    "id": "UPSCSE-T2-053",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sufism",
+    "stem": "Khwaja Muinuddin of Ajmer is the most revered saint of which Sufi order in India?",
+    "options": [
+      "Naqshbandi",
+      "Suhrawardi",
+      "Qadiri",
+      "Chishti"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Khwaja Muinuddin Chishti brought the Chishti order to India and settled at Ajmer. The Suhrawardi order was strong in Multan, and the Naqshbandi and Qadiri orders came later."
+  },
+  {
+    "id": "UPSCSE-T2-054",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rowlatt and Jallianwala",
+    "stem": "Consider the following statements:\n\n1. The Rowlatt Act of 1919 allowed political suspects to be detained without trial.\n\n2. The Hunter Committee that inquired into the Jallianwala Bagh massacre was appointed by the Indian National Congress.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. The Hunter Committee was appointed by the Government of India. The Congress set up its own inquiry committee, whose report was more critical of General Dyer."
+  },
+  {
+    "id": "UPSCSE-T2-055",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "External sector",
+    "stem": "In which year did India accept the IMF's Article VIII obligations and make the rupee convertible on the current account?",
+    "options": [
+      "1991",
+      "1994",
+      "1997",
+      "2000"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The rupee became fully convertible on the current account in August 1994. It moved to a market-determined exchange rate in 1993; capital account convertibility remains partial."
+  },
+  {
+    "id": "UPSCSE-T2-056",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pollution",
+    "stem": "Which of the following is a biodegradable pollutant?",
+    "options": [
+      "Polythene",
+      "DDT",
+      "Domestic sewage",
+      "Mercury"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sewage is broken down by microorganisms. DDT, plastics and mercury persist in the environment for a very long time."
+  },
+  {
+    "id": "UPSCSE-T2-057",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Digital technology",
+    "stem": "Consider the following statements about blockchain:\n\n1. In a blockchain, each block is linked to the previous one by a cryptographic hash.\n\n2. A blockchain can only work if a single central server controls the ledger.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. A blockchain is a distributed ledger copied across many computers; changing an old block would change its hash and break the chain, which makes tampering evident."
+  },
+  {
+    "id": "UPSCSE-T2-058",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physiography",
+    "stem": "The Deccan Traps were formed by:",
+    "options": [
+      "Glacial deposits of the ice age",
+      "Fissure eruptions of basalt lava",
+      "Rivers laying down thick alluvium",
+      "Folding of marine sediments"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Deccan Traps are thick layers of basalt laid down by fissure eruptions around 66 million years ago. Weathering of this basalt gives the black soil of the Deccan."
+  },
+  {
+    "id": "UPSCSE-T2-059",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "In Parliament, Zero Hour refers to:",
+    "options": [
+      "Time when members raise urgent matters",
+      "Debate on the President's address",
+      "The hour set aside for private members' Bills",
+      "The hour set aside for questions to ministers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Zero Hour is when members raise urgent matters of public importance. In the Lok Sabha it usually follows Question Hour at noon. It is an Indian parliamentary practice and is not mentioned in the rules of procedure. The hour for questions to ministers is Question Hour."
+  },
+  {
+    "id": "UPSCSE-T2-060",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mughals",
+    "stem": "Consider the following statements:\n\n1. The Battle of Khanwa in 1527 was fought between Humayun and Sher Shah.\n\n2. The Battle of Haldighati in 1576 was fought between Akbar's forces and Maharana Pratap.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 2 is correct. At Khanwa in 1527 Babur defeated Rana Sanga of Mewar; Humayun lost to Sher Shah at Chausa (1539) and Kannauj (1540)."
+  },
+  {
+    "id": "UPSCSE-T2-061",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Non-Cooperation",
+    "stem": "Which of the following were part of the programme of the Non-Cooperation Movement adopted in 1920?\n\n1. Surrender of titles and honorary offices\n\n2. Boycott of government schools, colleges and law courts\n\n3. Boycott of the elections to the reformed councils\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "All three. The Calcutta special session and the Nagpur session of 1920 adopted surrender of titles, boycott of schools, courts and the 1920 council elections, and the boycott of foreign cloth, with civil disobedience and non-payment of taxes held back for a later stage."
+  },
+  {
+    "id": "UPSCSE-T2-062",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Demand",
+    "stem": "Consider the following statements:\n\n1. Engel's law states that the share of income spent on food falls as income rises.\n\n2. For a Giffen good, the quantity demanded rises when its price rises.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. Engel's law describes household budgets. A Giffen good is an inferior staple that takes a large part of a poor household's budget, so a price rise can increase the quantity bought, an exception to the law of demand."
+  },
+  {
+    "id": "UPSCSE-T2-063",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Wetlands",
+    "stem": "Consider the following pairs:\n\n1. Chilika Lake : Odisha\n\n2. Wular Lake : Jammu and Kashmir\n\n3. Sambhar Lake : Rajasthan\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "All three pairs are correct. Chilika is a brackish lagoon in Odisha, Wular is a freshwater lake fed by the Jhelum, and Sambhar is a salt lake in Rajasthan. All three are Ramsar sites."
+  },
+  {
+    "id": "UPSCSE-T2-064",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "The natural pacemaker that starts each heartbeat is the:",
+    "options": [
+      "Atrioventricular node in the septum",
+      "Sinoatrial node in the right atrium",
+      "Aorta, as it leaves the heart",
+      "Bicuspid valve of the left ventricle"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The sinoatrial (SA) node in the wall of the right atrium sends out the impulse that starts each beat. The atrioventricular (AV) node relays it to the ventricles after a short delay."
+  },
+  {
+    "id": "UPSCSE-T2-065",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "Which of the following is a rabi crop?",
+    "options": [
+      "Cotton",
+      "Maize",
+      "Rice",
+      "Mustard"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rabi crops are sown in winter and harvested in spring: wheat, mustard, gram and barley. Rice, cotton and maize are mainly kharif crops sown with the monsoon."
+  },
+  {
+    "id": "UPSCSE-T2-066",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tribal areas",
+    "stem": "Under the Fifth Schedule, an area is declared a Scheduled Area by:",
+    "options": [
+      "An order of the President",
+      "A resolution of the state legislature",
+      "The National Commission for Scheduled Tribes",
+      "A notification of the Tribes Advisory Council"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Paragraph 6 of the Fifth Schedule lets the President declare Scheduled Areas by order, after consulting the Governor for any later change. The Tribes Advisory Council advises the Governor on tribal welfare, and the Sixth Schedule's autonomous district councils apply instead in Assam, Meghalaya, Tripura and Mizoram."
+  },
+  {
+    "id": "UPSCSE-T2-067",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Marathas",
+    "stem": "In the Maratha revenue system of Shivaji's time, chauth was:",
+    "options": [
+      "An extra tenth claimed as the hereditary deshmukh",
+      "A quarter of revenue from lands outside Maratha rule",
+      "A tax on pilgrims who visited temples in Maratha lands",
+      "A quarter of the crop taken from peasants of the swarajya"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Chauth was one-fourth of the land revenue demanded from territories not under direct Maratha administration, in return for protection. The additional one-tenth claimed as hereditary head (deshmukh) was sardeshmukhi."
+  },
+  {
+    "id": "UPSCSE-T2-068",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Peasant and tribal movements",
+    "stem": "Consider the following pairs:\n\n1. Santhal Hul of 1855 : Rajmahal hills\n\n2. Pabna agrarian league : Bengal\n\n3. Eka movement : Punjab\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two pairs are correct. The Santhal rising was in the Rajmahal hills region and the Pabna leagues of the 1870s in eastern Bengal. The Eka (unity) movement of 1921 to 1922 was among peasants of Awadh in the United Provinces."
+  },
+  {
+    "id": "UPSCSE-T2-069",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inflation and employment",
+    "stem": "The Phillips curve describes a short-run relationship between:",
+    "options": [
+      "Tax rates and tax revenue",
+      "Income and the share spent on food",
+      "Inflation and unemployment",
+      "Interest rates and the money supply"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A.W. Phillips found that low unemployment tended to go with faster wage and price rises, a short-run trade-off. The link between tax rates and revenue is the Laffer curve, and food's falling share of income is Engel's law."
+  },
+  {
+    "id": "UPSCSE-T2-070",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Water quality",
+    "stem": "Biochemical oxygen demand (BOD) is a measure of:",
+    "options": [
+      "The amount of salt dissolved in sea water",
+      "The oxygen produced by aquatic plants",
+      "The oxygen gas dissolved in water at a given temperature",
+      "Oxygen microbes need to break down organic matter"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A high BOD means water is heavily polluted with organic matter such as sewage, leaving little oxygen for fish."
+  },
+  {
+    "id": "UPSCSE-T2-071",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Optics",
+    "stem": "The clear daytime sky looks blue because:",
+    "options": [
+      "Air molecules scatter shorter wavelengths more",
+      "Water vapour absorbs red and yellow light",
+      "Ozone in the stratosphere is blue",
+      "Sunlight is reflected from the oceans onto the clouds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rayleigh scattering is much stronger for shorter wavelengths, so blue light is scattered across the sky. At sunrise and sunset light crosses more air, the blue is scattered away and the Sun looks red."
+  },
+  {
+    "id": "UPSCSE-T2-072",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Earth and sun",
+    "stem": "Consider the following statements:\n\n1. Perihelion, when the Earth is nearest to the Sun, falls in early July.\n\n2. On about 22 December the Sun is overhead at the Tropic of Cancer.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Neither is correct. Perihelion falls in early January and aphelion in early July. On about 22 December the Sun is overhead at the Tropic of Capricorn; it is over the Tropic of Cancer on about 21 June."
+  },
+  {
+    "id": "UPSCSE-T2-073",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vice-President",
+    "stem": "Consider the following statements:\n\n1. The Vice-President is elected by an electoral college of the members of both Houses of Parliament, nominated members included.\n\n2. Members of the state Legislative Assemblies also vote in the election of the Vice-President.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. Under Article 66 all members of both Houses, elected and nominated, elect the Vice-President. State legislators vote only in the presidential election."
+  },
+  {
+    "id": "UPSCSE-T2-074",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Painting traditions",
+    "stem": "Consider the following pairs:\n\n1. Madhubani : Bihar\n\n2. Pattachitra : Odisha\n\n3. Warli : Maharashtra\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "All three pairs are correct. Madhubani (Mithila) painting comes from Bihar, Pattachitra from Odisha (and Bengal), and Warli painting from the Warli tribe of the Sahyadri region in Maharashtra."
+  },
+  {
+    "id": "UPSCSE-T2-075",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitutional development",
+    "stem": "The Government of India Act, 1919 introduced:",
+    "options": [
+      "A Federal Court",
+      "Dyarchy in the provinces",
+      "Separate electorates for Muslims",
+      "Provincial autonomy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Montagu-Chelmsford Reforms of 1919 divided provincial subjects into reserved and transferred lists, which is dyarchy. Provincial autonomy and a Federal Court came with the 1935 Act, and Muslim separate electorates with the 1909 Act."
+  },
+  {
+    "id": "UPSCSE-T2-076",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "International institutions",
+    "stem": "Special Drawing Rights (SDRs) are international reserve assets created by the:",
+    "options": [
+      "World Bank",
+      "International Monetary Fund",
+      "World Trade Organization",
+      "Bank for International Settlements"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The IMF created SDRs in 1969 to supplement members' reserves. Their value is based on a basket of major currencies."
+  },
+  {
+    "id": "UPSCSE-T2-077",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Wildlife",
+    "stem": "The Gangetic river dolphin, India's national aquatic animal, is:",
+    "options": [
+      "Found only in the Brahmaputra",
+      "Most common in the Western Ghats rivers",
+      "A marine animal that enters rivers only to breed",
+      "Nearly blind and finds its way by echolocation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Ganges river dolphin lives in the Ganga, Brahmaputra and Meghna river systems. Its eyes lack lenses, so it relies on echolocation."
+  },
+  {
+    "id": "UPSCSE-T2-078",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Suez Canal links:",
+    "options": [
+      "The Mediterranean Sea and the Red Sea",
+      "The Atlantic and Pacific Oceans",
+      "The Black Sea and the Mediterranean Sea",
+      "The Red Sea and the Persian Gulf"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Suez Canal in Egypt joins the Mediterranean with the Red Sea, the shortest sea route between Europe and Asia. The Panama Canal links the Atlantic and Pacific."
+  },
+  {
+    "id": "UPSCSE-T2-079",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Forms of government",
+    "stem": "Which of these is a feature of the parliamentary system of government?",
+    "options": [
+      "The executive has a fixed term and cannot be removed",
+      "The Cabinet is collectively responsible to the House",
+      "The head of state is also the head of government",
+      "Ministers cannot be members of the legislature"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In a parliamentary system the Council of Ministers is drawn from the legislature and stays in office only while it has the confidence of the lower House (Article 75(3) in India)."
+  },
+  {
+    "id": "UPSCSE-T2-080",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "Consider the following pairs:\n\n1. Vitamin A : Night blindness\n\n2. Vitamin C : Scurvy\n\n3. Vitamin D : Beriberi\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Two pairs are correct. Lack of vitamin D causes rickets in children; beriberi is caused by a lack of vitamin B1 (thiamine)."
+  },
+  {
+    "id": "UPSCSE-T2-081",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cholas",
+    "stem": "Consider the following statements:\n\n1. Rajaraja I built the Brihadeeswara temple at Thanjavur.\n\n2. Rajendra I founded the new capital of Gangaikondacholapuram.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. The Brihadeeswara (Rajarajeswaram) temple at Thanjavur was completed around 1010 under Rajaraja I, and his son Rajendra I built Gangaikondacholapuram to mark his campaign to the Ganga."
+  },
+  {
+    "id": "UPSCSE-T2-082",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Communal Award",
+    "stem": "The Communal Award of 1932 was announced by the British Prime Minister:",
+    "options": [
+      "Clement Attlee",
+      "Stanley Baldwin",
+      "Winston Churchill",
+      "Ramsay MacDonald"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ramsay MacDonald announced the Communal Award in August 1932, extending separate electorates, including to the Depressed Classes. Attlee was Prime Minister at independence."
+  },
+  {
+    "id": "UPSCSE-T2-083",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "International institutions",
+    "stem": "Consider the following pairs:\n\n1. World Trade Organization : Geneva\n\n2. International Monetary Fund : Washington, D.C.\n\n3. Asian Development Bank : Manila\n\nHow many of the pairs given above are correctly matched?",
+    "options": [
+      "Only one pair",
+      "Only two pairs",
+      "All three pairs",
+      "None of the pairs"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "All three pairs are correct. The New Development Bank of the BRICS countries is in Shanghai and the Asian Infrastructure Investment Bank in Beijing."
+  },
+  {
+    "id": "UPSCSE-T2-084",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Energy and waste",
+    "stem": "Consider the following statements:\n\n1. Fly ash is mainly a by-product of nuclear power plants.\n\n2. Fly ash cannot be used in making cement.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Neither is correct. Fly ash is the fine ash left from burning coal in thermal power plants, and it is widely used in Portland pozzolana cement, fly ash bricks and road embankments, which reduces the need to dump it in ash ponds."
+  },
+  {
+    "id": "UPSCSE-T2-085",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Borders",
+    "stem": "Arunachal Pradesh shares international borders with:",
+    "options": [
+      "Nepal, China and Bhutan",
+      "Bhutan, China and Myanmar",
+      "China, Myanmar and Bangladesh",
+      "Bhutan, Bangladesh and Myanmar"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Arunachal Pradesh borders Bhutan to the west, China to the north and Myanmar to the east. It does not touch Nepal or Bangladesh."
+  },
+  {
+    "id": "UPSCSE-T2-086",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Centre-state relations",
+    "stem": "The President may establish an Inter-State Council under:",
+    "options": [
+      "Article 312",
+      "Article 262",
+      "Article 249",
+      "Article 263"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 263 provides for an Inter-State Council, first set up in 1990. Article 262 concerns inter-state river water disputes, 249 Parliament's power on state subjects in the national interest, and 312 the all-India services."
+  },
+  {
+    "id": "UPSCSE-T2-087",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biotechnology",
+    "stem": "When yeast ferments sugar in the absence of oxygen, the main products are:",
+    "options": [
+      "Acetic acid and hydrogen gas",
+      "Methane and water",
+      "Ethanol and carbon dioxide",
+      "Lactic acid and oxygen"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Alcoholic fermentation by yeast turns glucose into ethanol and carbon dioxide, the basis of brewing, baking and fuel ethanol. Lactic acid comes from fermentation in muscles and by lactic acid bacteria."
+  },
+  {
+    "id": "UPSCSE-T2-088",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Music",
+    "stem": "Dhrupad is a form of:",
+    "options": [
+      "A classical dance form from Manipur",
+      "Hindustani classical vocal music",
+      "Carnatic devotional composition",
+      "Folk theatre from Bengal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dhrupad is one of the oldest surviving forms of Hindustani classical vocal music, sung in a slow, austere style and associated with the Dagar family among others."
+  },
+  {
+    "id": "UPSCSE-T2-089",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quit India",
+    "stem": "Consider the following statements:\n\n1. The Quit India Movement was launched after the failure of the Cripps Mission.\n\n2. A parallel government (prati sarkar) was set up in Satara during the movement.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. The Cripps Mission of March and April 1942 offered only dominion status after the war, and its failure led the AICC to adopt the Quit India resolution in August 1942. Parallel governments arose in Satara, Ballia and Tamluk."
+  },
+  {
+    "id": "UPSCSE-T2-090",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Banking",
+    "stem": "The Statutory Liquidity Ratio requires banks to:",
+    "options": [
+      "Hold capital equal to a share of risk-weighted assets",
+      "Keep a share of deposits as cash with the RBI",
+      "Hold a share of deposits in approved liquid assets",
+      "Lend a share of credit to agriculture and small firms"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SLR is maintained by banks themselves in cash, gold or approved securities. Cash kept with the RBI is the CRR, lending to agriculture is priority sector lending and the capital rule is capital adequacy."
+  },
+  {
+    "id": "UPSCSE-T2-091",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laws",
+    "stem": "In which year was the Environment (Protection) Act passed, after the Bhopal gas tragedy?",
+    "options": [
+      "1972",
+      "1974",
+      "1981",
+      "1986"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The Environment (Protection) Act came in 1986. The Wildlife (Protection) Act was passed in 1972, the Water Act in 1974 and the Air Act in 1981."
+  },
+  {
+    "id": "UPSCSE-T2-092",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Strait of Gibraltar connects:",
+    "options": [
+      "The North Sea and the Baltic Sea",
+      "The Red Sea and the Arabian Sea",
+      "The Black Sea and the Sea of Marmara",
+      "The Mediterranean Sea and the Atlantic Ocean"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Strait of Gibraltar separates Spain from Morocco and joins the Mediterranean to the Atlantic. The Bab-el-Mandeb joins the Red Sea to the Gulf of Aden and the Bosphorus links the Black Sea with the Sea of Marmara."
+  },
+  {
+    "id": "UPSCSE-T2-093",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directive Principles",
+    "stem": "Which of the following are Directive Principles of State Policy?\n\n1. Equal pay for equal work for both men and women\n\n2. Organisation of village panchayats\n\n3. Protection of monuments of national importance\n\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "All three. They are in Articles 39(d), 40 and 49 respectively, all in Part IV."
+  },
+  {
+    "id": "UPSCSE-T2-094",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "A microwave oven heats food mainly by:",
+    "options": [
+      "Passing an electric current through the food",
+      "Making water molecules in the food vibrate and rotate",
+      "Heating the air inside the oven with a red-hot coil",
+      "Exposing the food to ultraviolet radiation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microwaves, at about 2.45 GHz, make polar water molecules keep realigning with the changing field; that motion becomes heat throughout the moist parts of the food. No current passes through the food and the oven does not rely on hot air."
+  },
+  {
+    "id": "UPSCSE-T2-095",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bhakti",
+    "stem": "Basavanna, the twelfth-century reformer of Karnataka, was a leader of the:",
+    "options": [
+      "Virashaiva (Lingayat) movement",
+      "Ramanandi order",
+      "Warkari movement of Pandharpur",
+      "Mahanubhava sect"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Basavanna, a minister at the Kalachuri court, led the Virashaiva or Lingayat movement, which rejected caste and ritual and spread its message through vachanas in Kannada. The Warkari tradition, centred on Pandharpur, is Marathi."
+  },
+  {
+    "id": "UPSCSE-T2-096",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Round Table Conferences",
+    "stem": "Which of the following is true of the First Round Table Conference, held in London in 1930 and 1931?",
+    "options": [
+      "It ended with the signing of the Poona Pact",
+      "It was held in Delhi with the princes",
+      "Gandhi attended it as the Congress's sole delegate",
+      "The Indian National Congress did not take part"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Congress boycotted the First Round Table Conference because Civil Disobedience was under way. After the Gandhi-Irwin Pact, Gandhi attended the Second Conference in 1931 as the sole Congress representative."
+  },
+  {
+    "id": "UPSCSE-T2-097",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "Minimum Support Prices are announced by the Union government on the recommendation of the:",
+    "options": [
+      "Food Corporation of India",
+      "Commission for Agricultural Costs and Prices",
+      "Department of Agriculture and Farmers Welfare",
+      "National Statistics Office"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The CACP recommends MSPs for the main kharif and rabi crops, and the Cabinet Committee on Economic Affairs decides. The FCI procures and stores grain."
+  },
+  {
+    "id": "UPSCSE-T2-098",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biomes",
+    "stem": "Which biome is marked by permanently frozen subsoil (permafrost)?",
+    "options": [
+      "Taiga",
+      "Tundra",
+      "Savanna",
+      "Temperate grassland"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The tundra of the far north has permafrost, a short growing season and low plants such as mosses and lichens. The taiga to its south is coniferous forest."
+  },
+  {
+    "id": "UPSCSE-T2-099",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Pampas are temperate grasslands of:",
+    "options": [
+      "Argentina",
+      "Australia",
+      "Central Asia",
+      "South Africa"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Pampas are in Argentina and Uruguay. The Veld is in South Africa, the Downs in Australia and the Steppes in Central Asia."
+  },
+  {
+    "id": "UPSCSE-T2-100",
+    "section": "gs",
+    "test": 2,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Financial committees",
+    "stem": "The members of the Public Accounts Committee are drawn from:",
+    "options": [
+      "The Rajya Sabha only, 15 members in all",
+      "15 Lok Sabha and 7 Rajya Sabha members",
+      "The Lok Sabha only, 30 members in all",
+      "The Union Cabinet and the CAG's office"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The PAC has 22 members, 15 from the Lok Sabha and 7 from the Rajya Sabha, and examines the CAG's audit reports. The Estimates Committee is drawn from the Lok Sabha only."
+  },
+  {
+    "id": "UPSCSE-D-001",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Comprehension",
+    "passage": "Many household goods today are designed to be replaced rather than repaired. Parts are glued instead of screwed, spare parts are hard to find, and repair manuals are kept from the public. A fan, a phone or a mixer that fails after a few years is often cheaper to throw away than to fix. Yet every discarded machine carries the energy and materials used to make it, and much of that ends up as waste. A right to repair would require makers to sell spare parts and share manuals for a fixed number of years. Supporters argue that this would also keep alive the small repair shops that once stood in every market.",
+    "stem": "Which of the following is the most logical inference from the passage?",
+    "options": [
+      "Discarded goods waste the energy and materials that made them",
+      "Repair manuals are freely available for most goods today",
+      "Glued parts make modern goods last longer than older ones",
+      "Repair shops have disappeared because people no longer buy machines"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The passage says every discarded machine carries the energy and materials used to make it and much of it ends up as waste. It says parts are glued to discourage repair and manuals are kept from the public, so the last two options contradict it."
+  },
+  {
+    "id": "UPSCSE-D-002",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Comprehension",
+    "passage": "Many household goods today are designed to be replaced rather than repaired. Parts are glued instead of screwed, spare parts are hard to find, and repair manuals are kept from the public. A fan, a phone or a mixer that fails after a few years is often cheaper to throw away than to fix. Yet every discarded machine carries the energy and materials used to make it, and much of that ends up as waste. A right to repair would require makers to sell spare parts and share manuals for a fixed number of years. Supporters argue that this would also keep alive the small repair shops that once stood in every market.",
+    "stem": "According to the passage, a right to repair would require manufacturers to:",
+    "options": [
+      "Buy back old machines from their owners",
+      "Stop making fans, phones and mixers",
+      "Repair every faulty product free of charge",
+      "Sell spare parts and share repair manuals for a set period"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage defines the right to repair as requiring makers 'to sell spare parts and share manuals for a fixed number of years'. It does not mention free repairs, buy-backs or ending production."
+  },
+  {
+    "id": "UPSCSE-D-003",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Comprehension",
+    "passage": "Groundwater is often described as a hidden reservoir, but it behaves more like a bank account. Each monsoon makes a deposit, and every pump makes a withdrawal. In many districts the withdrawals have exceeded the deposits for decades, so the water table falls a little every year and wells must be dug deeper. Because the account is invisible, the losses go unnoticed until wells run dry. Cheap or free electricity for pumps has made withdrawal easy, while recharge depends on rain soaking into soil that is increasingly paved, compacted or cleared of vegetation.",
+    "stem": "The comparison of groundwater with a bank account is used mainly to stress that:",
+    "options": [
+      "Unseen losses build up when withdrawals exceed deposits",
+      "Monsoon rain is no longer needed to refill the aquifers",
+      "Banks should pay farmers for digging deeper wells",
+      "Groundwater should be bought and sold like money"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The analogy is about deposits (monsoon recharge) and withdrawals (pumping): when one exceeds the other for years, the balance falls, and because the account is invisible the loss goes unnoticed."
+  },
+  {
+    "id": "UPSCSE-D-004",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Comprehension",
+    "passage": "Groundwater is often described as a hidden reservoir, but it behaves more like a bank account. Each monsoon makes a deposit, and every pump makes a withdrawal. In many districts the withdrawals have exceeded the deposits for decades, so the water table falls a little every year and wells must be dug deeper. Because the account is invisible, the losses go unnoticed until wells run dry. Cheap or free electricity for pumps has made withdrawal easy, while recharge depends on rain soaking into soil that is increasingly paved, compacted or cleared of vegetation.",
+    "stem": "Which of the following assumptions is made in the passage?",
+    "options": [
+      "Groundwater cannot be recharged once it is used",
+      "Wells in every district have already run dry",
+      "Paved and compacted ground lets less rain soak in",
+      "Free electricity is the only cause of falling water tables"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The last sentence says recharge depends on rain soaking into soil that is increasingly paved or compacted, which assumes such ground absorbs less. The passage calls cheap power one factor, not the only one, and treats recharge as possible."
+  },
+  {
+    "id": "UPSCSE-D-005",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Comprehension",
+    "passage": "A democracy does not run on laws alone. It depends on citizens believing that institutions will treat them fairly even when they lose an election or a court case. This trust is built slowly, through many small experiences: a complaint that is answered, a licence issued without a bribe, a dispute settled on time. It can be lost much faster. When people come to expect that rules apply only to the powerless, they stop using official channels and turn to personal connections, and the institutions grow weaker still.",
+    "stem": "What is the central idea of the passage?",
+    "options": [
+      "Elections are the only real test of a democracy",
+      "Personal connections make institutions work faster",
+      "Laws are unnecessary where citizens trust each other",
+      "Trust in fair treatment sustains institutions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage argues that democracy depends on citizens trusting institutions to be fair, that the trust is built slowly through everyday experience and lost quickly, and that its loss weakens institutions further."
+  },
+  {
+    "id": "UPSCSE-D-006",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sangam age",
+    "stem": "According to Tamil tradition, the Sangam assemblies of poets were held under the patronage of the:",
+    "options": [
+      "Pandyas, at Madurai",
+      "Pallavas, at Kanchipuram",
+      "Cheras, at Vanji",
+      "Cholas, at Thanjavur"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tradition holds that three Sangams were held under the Pandya kings, the last at Madurai. The Pallavas and the imperial Cholas came after the Sangam age."
+  },
+  {
+    "id": "UPSCSE-D-007",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Social reform",
+    "stem": "Ishwar Chandra Vidyasagar campaigned successfully for which law?",
+    "options": [
+      "The Child Marriage Restraint Act, 1929",
+      "The Bengal Sati Regulation, 1829",
+      "The Hindu Widows' Remarriage Act, 1856",
+      "The Age of Consent Act, 1891"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Vidyasagar's campaign led to the Hindu Widows' Remarriage Act of 1856. The ban on sati in 1829 owed much to Rammohan Roy."
+  },
+  {
+    "id": "UPSCSE-D-008",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physiography",
+    "stem": "The plateau that lies between the Aravallis to its north-west and the Vindhyas to its south is the:",
+    "options": [
+      "Bundelkhand Upland",
+      "Chota Nagpur Plateau",
+      "Meghalaya Plateau",
+      "Malwa Plateau"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Malwa Plateau, of basalt in its southern part, is bounded by the Aravallis on the north-west and the Vindhyas on the south, and drained by the Chambal and Betwa."
+  },
+  {
+    "id": "UPSCSE-D-009",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Centre-state relations",
+    "stem": "Under the Indian Constitution, the residuary power to make laws on matters not in any of the three lists belongs to:",
+    "options": [
+      "The President",
+      "The Supreme Court",
+      "Parliament",
+      "The state legislatures"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article 248 and Entry 97 of the Union List give Parliament the residuary power, a feature taken from Canada."
+  },
+  {
+    "id": "UPSCSE-D-010",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human development",
+    "stem": "The Human Development Index combines measures of:",
+    "options": [
+      "Health, education and standard of living",
+      "Literacy, sex ratio and urbanisation",
+      "Income, inflation and unemployment",
+      "Life expectancy, poverty and public debt"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The HDI, published in UNDP's Human Development Report, averages three dimensions: a long and healthy life (life expectancy at birth), knowledge (years of schooling) and a decent standard of living (gross national income per head)."
+  },
+  {
+    "id": "UPSCSE-D-011",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon markets",
+    "stem": "One carbon credit generally represents:",
+    "options": [
+      "One hectare of new forest planted",
+      "One tonne of carbon dioxide equivalent",
+      "One unit of renewable electricity generated",
+      "One kilogram of carbon dioxide"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A carbon credit stands for the reduction or removal of one tonne of carbon dioxide equivalent and can be traded in carbon markets."
+  },
+  {
+    "id": "UPSCSE-D-012",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Probiotics are:",
+    "options": [
+      "Medicines that kill all bacteria in the gut",
+      "Vaccines given by mouth",
+      "Live microbes that benefit health",
+      "Synthetic vitamins added to food"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Probiotics, such as the lactobacilli in curd, are live microbes that can support a healthy gut. Prebiotics are the fibres that feed them."
+  },
+  {
+    "id": "UPSCSE-D-013",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Comprehension",
+    "passage": "A democracy does not run on laws alone. It depends on citizens believing that institutions will treat them fairly even when they lose an election or a court case. This trust is built slowly, through many small experiences: a complaint that is answered, a licence issued without a bribe, a dispute settled on time. It can be lost much faster. When people come to expect that rules apply only to the powerless, they stop using official channels and turn to personal connections, and the institutions grow weaker still.",
+    "stem": "Which of the following, according to the passage, is a likely result of people believing that rules apply only to the powerless?",
+    "options": [
+      "Court cases are settled more quickly",
+      "People bypass official channels and institutions weaken",
+      "Institutions become stronger as more complaints are filed",
+      "Citizens vote in larger numbers in elections"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage says such people stop using official channels and turn to personal connections, 'and the institutions grow weaker still', a cycle of falling trust."
+  },
+  {
+    "id": "UPSCSE-D-014",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Comprehension",
+    "passage": "For decades farm policy favoured rice and wheat, which received assured procurement and the bulk of irrigation. Millets such as jowar, bajra and ragi, once staples across dry regions, lost ground. Yet millets need far less water, tolerate heat and grow on poor soils, qualities that matter more as rainfall becomes less predictable. Their revival, however, depends less on their merits than on demand: unless consumers buy them and processors find them worth handling, farmers will keep growing what the market and the procurement system reward.",
+    "stem": "According to the passage, the revival of millets depends mainly on:",
+    "options": [
+      "Breeding new varieties of millet",
+      "Their need for less water than rice",
+      "Demand from buyers and processors",
+      "More irrigation for dry regions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The author grants millets' merits (less water, heat tolerance) but says their revival 'depends less on their merits than on demand' from consumers and processors."
+  },
+  {
+    "id": "UPSCSE-D-015",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Comprehension",
+    "passage": "For decades farm policy favoured rice and wheat, which received assured procurement and the bulk of irrigation. Millets such as jowar, bajra and ragi, once staples across dry regions, lost ground. Yet millets need far less water, tolerate heat and grow on poor soils, qualities that matter more as rainfall becomes less predictable. Their revival, however, depends less on their merits than on demand: unless consumers buy them and processors find them worth handling, farmers will keep growing what the market and the procurement system reward.",
+    "stem": "Which of the following best reflects the author's view?",
+    "options": [
+      "Farmers grow what markets and procurement reward",
+      "Millets should replace rice and wheat in all regions",
+      "Rainfall has become more predictable in recent decades",
+      "Procurement of rice and wheat should be stopped"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The final clause says farmers 'will keep growing what the market and the procurement system reward'. The author does not call for replacing rice and wheat everywhere or ending procurement, and says rainfall is becoming less predictable."
+  },
+  {
+    "id": "UPSCSE-D-016",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All engineers are cyclists. Some cyclists are painters.\n\nWhich of the following conclusions follows definitely from the statements?",
+    "options": [
+      "Some of the painters are engineers",
+      "No definite conclusion follows",
+      "All painters are cyclists",
+      "Some of the engineers are painters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The painters among the cyclists may or may not include any engineers, so neither 'some engineers are painters' nor its converse is certain. 'All painters are cyclists' does not follow either, because only some cyclists are known to be painters."
+  },
+  {
+    "id": "UPSCSE-D-017",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the next number in the series: 3, 10, 21, 36, 55, ?",
+    "options": [
+      "72",
+      "74",
+      "76",
+      "78"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The gaps are 7, 11, 15, 19, growing by 4 each time, so the next gap is 23: 55 + 23 = 78. 74 repeats the last gap of 19."
+  },
+  {
+    "id": "UPSCSE-D-018",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seating arrangement",
+    "stem": "Five friends P, Q, R, S and T sit in a row facing north. S sits at the left end. T sits immediately to the right of S. Q sits second from the right end. R does not sit at either end.\n\nWho sits at the right end?",
+    "options": [
+      "T",
+      "R",
+      "Q",
+      "P"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Number the seats 1 to 5 from the left. S is in seat 1 and T in seat 2. Q, second from the right end, is in seat 4. R is not at an end, so R takes seat 3 and P is left with seat 5, the right end."
+  },
+  {
+    "id": "UPSCSE-D-019",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Pointing to a woman, Kabir said, 'Her mother's husband is my father's father.' How is the woman related to Kabir?",
+    "options": [
+      "Aunt",
+      "Mother",
+      "Sister",
+      "Cousin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Her mother's husband is her father, and he is Kabir's paternal grandfather. So she is a daughter of Kabir's grandfather, that is, his father's sister: his aunt."
+  },
+  {
+    "id": "UPSCSE-D-020",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data sufficiency",
+    "stem": "Question: What is Arun's age?\n\nStatement I: Arun is 6 years younger than Bina.\n\nStatement II: Bina's age is one-third of Chitra's, and Chitra is 66.\n\nWhich of the following is correct?",
+    "options": [
+      "Statement I alone is sufficient",
+      "Statement II alone is sufficient",
+      "Both statements together are needed",
+      "Both together are still not sufficient"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Statement I links Arun to Bina but gives no number. Statement II gives Bina's age (66 / 3 = 22) but says nothing about Arun. Together, Arun is 22 - 6 = 16, so both are needed."
+  },
+  {
+    "id": "UPSCSE-D-021",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a certain code BRAIN is written as DTCKP. How is STORM written in that code?",
+    "options": [
+      "UVQSO",
+      "UWQTO",
+      "TUPSN",
+      "UVQTO"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each letter moves two places forward: B to D, R to T, A to C, I to K, N to P. So S to U, T to V, O to Q, R to T and M to O, giving UVQTO."
+  },
+  {
+    "id": "UPSCSE-D-022",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Numbers",
+    "stem": "How many numbers from 1 to 100 are divisible by both 4 and 6?",
+    "options": [
+      "6",
+      "8",
+      "12",
+      "16"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "A number divisible by both 4 and 6 is divisible by their LCM, 12. The multiples of 12 up to 100 are 12, 24, ..., 96, which is 96 / 12 = 8 numbers. Dividing 100 by 4 and by 6 separately leads to the wrong counts."
+  },
+  {
+    "id": "UPSCSE-D-023",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseAncient",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rock-cut architecture",
+    "stem": "Consider the following statements:\n\n1. Many of the Ajanta paintings illustrate the Jataka tales.\n\n2. The Kailasa temple at Ellora was built by the Pallavas.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. The Ajanta murals often show the Jataka stories of the Buddha's earlier lives. The monolithic Kailasa temple at Ellora was excavated under the Rashtrakuta king Krishna I in the eighth century."
+  },
+  {
+    "id": "UPSCSE-D-024",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Independence",
+    "stem": "Consider the following statements about the Indian Independence Act, 1947:\n\n1. It ended the paramountcy of the British Crown over the princely states.\n\n2. Under it, the Constituent Assembly also served as the legislature of the Dominion of India.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. Paramountcy lapsed on 15 August 1947, leaving the princely states to accede, and the Constituent Assembly worked as the dominion legislature until the Constitution came into force."
+  },
+  {
+    "id": "UPSCSE-D-025",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Maps",
+    "stem": "Consider the following statements:\n\n1. Isobars are lines joining places of equal air pressure.\n\n2. Isohyets are lines joining places of equal rainfall.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. Isotherms join places of equal temperature."
+  },
+  {
+    "id": "UPSCSE-D-026",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscsePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "New states",
+    "stem": "Consider the following statements about forming a new state under Article 3:\n\n1. A Bill to form a new state can be introduced in Parliament only on the recommendation of the President.\n\n2. Parliament is bound to accept the views of the state legislature concerned.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. The President refers the Bill to the affected state legislature for its views within a set time, but Parliament is not bound by those views."
+  },
+  {
+    "id": "UPSCSE-D-027",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseEconomy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Monetary policy",
+    "stem": "Consider the following statements about the Marginal Standing Facility:\n\n1. Its rate is set above the policy repo rate.\n\n2. Under it, banks may borrow overnight by dipping into part of their SLR holdings.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. The MSF is an overnight window priced above the repo rate, the ceiling of the RBI's interest rate corridor, and banks can pledge securities held towards the SLR up to a set limit."
+  },
+  {
+    "id": "UPSCSE-D-028",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseEnvironment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Laws",
+    "stem": "Consider the following statements:\n\n1. The Wildlife (Protection) Act was passed in 1972.\n\n2. Project Tiger was launched in 1973.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are correct. Project Tiger began in April 1973 with nine reserves, the first being Jim Corbett."
+  },
+  {
+    "id": "UPSCSE-D-029",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "Consider the following statements about transformers:\n\n1. A transformer changes the voltage of an alternating current.\n\n2. A transformer works with a steady direct current.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Only statement 1 is correct. A transformer relies on a changing magnetic field to induce a voltage in the secondary coil; a steady direct current produces no change, so nothing is induced."
+  },
+  {
+    "id": "UPSCSE-D-030",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Distance",
+    "stem": "A man walks 16 km north and then 63 km east. How far is he now from his starting point in a straight line?",
+    "options": [
+      "47 km",
+      "65 km",
+      "71 km",
+      "79 km"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The two legs are at right angles, so the distance is the square root of (256 + 3,969) = the square root of 4,225 = 65 km. 79 km is the total distance walked, not the straight-line distance, and 47 km is the difference of the legs."
+  },
+  {
+    "id": "UPSCSE-D-031",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "The average of five consecutive odd numbers is 27. What is the largest of them?",
+    "options": [
+      "27",
+      "29",
+      "30",
+      "31"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "For consecutive odd numbers the average is the middle one, 27, so the numbers are 23, 25, 27, 29 and 31. The largest is 31."
+  },
+  {
+    "id": "UPSCSE-D-032",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentages",
+    "stem": "A trader marks a bicycle 25% above its cost price and then gives a discount of 12% on the marked price. What is the profit percent?",
+    "options": [
+      "10%",
+      "13%",
+      "25%",
+      "37%"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Take the cost as 100. The marked price is 125, and 12% off gives 125 x 0.88 = 110, so the profit is 10%. Subtracting 12 from 25 to get 13% is the common mistake; 25% ignores the discount and 37% adds it."
+  },
+  {
+    "id": "UPSCSE-D-033",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clocks",
+    "stem": "What is the angle between the hour and minute hands of a clock at 8:10?",
+    "options": [
+      "160 degrees",
+      "175 degrees",
+      "185 degrees",
+      "170 degrees"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At 8:10 the hour hand is at 8 x 30 + 10 x 0.5 = 245 degrees from 12, and the minute hand at 10 x 6 = 60 degrees. The difference is 185 degrees, so the smaller angle between the hands is 360 - 185 = 175 degrees. Forgetting the hour hand's movement past 8 gives 240 - 60 = 180, and 185 is the reflex side."
+  },
+  {
+    "id": "UPSCSE-D-034",
+    "section": "gs",
+    "test": 0,
+    "module": 1,
+    "domain": "upscseCsat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Work",
+    "stem": "3 men alone or 5 women alone can finish a piece of work in 30 days. In how many days will 3 men and 5 women together finish it?",
+    "options": [
+      "7.5 days",
+      "10 days",
+      "12 days",
+      "15 days"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "3 men do as much work as 5 women, so 3 men and 5 women together are twice the workforce of either group alone. Twice the workforce finishes in half the time: 30 / 2 = 15 days."
+  }
+]

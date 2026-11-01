@@ -72,4 +72,13 @@ export const BANK_SIZES: Record<string, number> = {
   apush: 201,
   apbio: 200,
   phcse: 245,
+  upscse: 234,
+  nda: 236,
+  agniveer: 231,
+  agniveervayu: 204,
+  rrbalp: 200,
+  rpfconst: 232,
+  ssccpo: 232,
+  apworld: 200,
+  aplang: 202,
 };

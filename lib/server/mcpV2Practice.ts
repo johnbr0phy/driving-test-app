@@ -78,6 +78,15 @@ import '@/lib/v2/banks/mppolice';
 import '@/lib/v2/banks/apush';
 import '@/lib/v2/banks/apbio';
 import '@/lib/v2/banks/phcse';
+import '@/lib/v2/banks/upscse';
+import '@/lib/v2/banks/nda';
+import '@/lib/v2/banks/agniveer';
+import '@/lib/v2/banks/agniveervayu';
+import '@/lib/v2/banks/rrbalp';
+import '@/lib/v2/banks/rpfconst';
+import '@/lib/v2/banks/ssccpo';
+import '@/lib/v2/banks/apworld';
+import '@/lib/v2/banks/aplang';
 
 // MCP is another view of the site's drills, NOT a second mastery store.
 // The transport document only remembers the presented item/order and a

@@ -58,6 +58,10 @@ const BORROWED_SETS: Record<string, string> = {
   // Bank exams wear the IBPS PO tiger; state police exams the police tiger.
   sbipo: "ibpspo", sbiclerk: "ibpspo", ibpsrrb: "ibpspo",
   delhipolice: "police", biharpolice: "police", rajpolice: "police", mppolice: "police",
+  // Next-100 batch 3: UPSC and SSC CPO the SSC CGL tiger, RRB ALP the RRB NTPC tiger, RPF the police tiger,
+  // the defence exams the military-entrance (ASVAB) tiger, the Philippine LET the teacher-licensing (Praxis) tiger.
+  upscse: "ssccgl", ssccpo: "ssccgl", rrbalp: "rrbntpc", rpfconst: "police",
+  nda: "asvab", agniveer: "asvab", agniveervayu: "asvab", phlet: "praxis",
 };
 
 export function hasTigerSet(examId: string): boolean {

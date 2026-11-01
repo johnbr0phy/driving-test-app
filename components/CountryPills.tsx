@@ -176,15 +176,15 @@ export function CountryPills({ current, onChange, lang = "en" }: { current: Regi
     // "GB", "US"...). shrink-0 keeps every flag full size in the scrolling row.
     `flex h-11 w-11 shrink-0 items-center justify-center rounded-full transition-colors sm:w-12 ${
       on
-        ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
-        : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+        ? "bg-gray-100 text-gray-900 ring-1 ring-inset ring-gray-300 dark:bg-gray-800 dark:text-gray-50 dark:ring-gray-600"
+        : "text-gray-700 opacity-60 hover:bg-gray-100 hover:opacity-100 dark:text-gray-200 dark:hover:bg-gray-800"
     }`;
   // Flags only; the country name is the accessible label and the hover title.
   const label = (r: { code: Region }) => (
     <span aria-hidden="true" className="text-2xl leading-none">{FLAGS[r.code]}</span>
   );
   // One row that scrolls sideways when the flags outgrow the screen, never a second line.
-  const row = "relative flex max-w-full gap-1 overflow-x-auto rounded-full border border-brand-border bg-white dark:bg-gray-900 p-1 shadow-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden";
+  const row = "relative flex max-w-full gap-1 overflow-x-auto rounded-full border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-1 shadow-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden";
 
   const moreButton = moreRegions.length > 0 && (
     <button

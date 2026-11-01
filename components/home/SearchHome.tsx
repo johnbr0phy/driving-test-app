@@ -10,10 +10,11 @@ import { FLAGS, readRegionCookie } from "@/components/CountryPills";
 import { useAuth } from "@/contexts/AuthContext";
 import { isInternalBrowser } from "@/lib/internal";
 import { Region, TestRegion, regionInfo, regionOfTest } from "@/lib/region";
-import { normalizeQuery, searchAllTests, SearchHit } from "@/lib/testSearch";
+import { normalizeQuery, searchAllTests, SearchHit, SearchResult } from "@/lib/testSearch";
 
 const flagOf = (r: TestRegion) => (r === "GLOBAL" ? "🌐" : FLAGS[r]);
 const TRACK_DELAY_MS = 1200;
+const SETTLE_MS = 800;
 
 function progressLine(mastered: number, testsTaken: number): string {
   const parts = [];
@@ -83,12 +84,26 @@ export function SearchHome({
     rec.start();
   }
 
-  const result = useMemo(() => searchAllTests(query, region, popularity), [query, region, popularity]);
+  const live = useMemo(() => searchAllTests(query, region, popularity), [query, region, popularity]);
   const q = normalizeQuery(query);
   const showResults = q.length > 0;
-  const miss = showResults && result.hits.length === 0;
+
+  // While someone is still typing, a half-typed word that matches nothing
+  // keeps the last results on screen; "we don't have it" waits until they
+  // pause (or press Enter), so it never flashes mid-word.
+  const [settledQ, setSettledQ] = useState("");
+  useEffect(() => {
+    const timer = setTimeout(() => setSettledQ(q), SETTLE_MS);
+    return () => clearTimeout(timer);
+  }, [q]);
+  const settled = settledQ === q;
+  const lastHits = useRef<SearchResult | null>(null);
+  if (live.hits.length > 0) lastHits.current = live;
+  else if (!showResults) lastHits.current = null;
+  const result = !settled && live.hits.length === 0 && lastHits.current ? lastHits.current : live;
+  const miss = showResults && settled && live.hits.length === 0;
   // What the tracking counts as found: a near miss (no test has every word) is a test to build.
-  const foundCount = result.partial ? 0 : result.hits.length;
+  const foundCount = live.partial ? 0 : live.hits.length;
 
   useEffect(() => setActive(0), [query]);
 
@@ -137,6 +152,7 @@ export function SearchHome({
     } else if (e.key === "Enter") {
       e.preventDefault();
       const hit = result.hits[active];
+      setSettledQ(q);
       if (hit) open(hit);
       else trackQuery(q, 0);
     } else if (e.key === "Escape") {
@@ -175,8 +191,8 @@ export function SearchHome({
             TESTS
             <span className="absolute left-0 right-0 bottom-0 h-0.5 rounded-full bg-blue-600 dark:bg-blue-400" />
           </span>
-          <Link href="/quizzes" className="py-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50">
-            QUIZZES
+          <Link href="/teach" className="py-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50">
+            TEACH
           </Link>
         </nav>
         <div className="flex items-center gap-3">
@@ -272,9 +288,9 @@ export function SearchHome({
           </div>
         </div>
 
-        {showResults && !miss && (
+        {showResults && !miss && result.hits.length > 0 && (
           <div className="mt-3 pb-10">
-            {result.partial ? (
+            {result.partial && settled ? (
               <p className="px-4 pb-2 text-sm text-gray-600 dark:text-gray-300">
                 We don&apos;t have &ldquo;{query.trim()}&rdquo; yet, and we&apos;ve noted it. Closest matches:
               </p>

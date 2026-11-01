@@ -100,16 +100,38 @@ function testHit(test: TestCatalogEntry): SearchHit {
 /** DMV states named in the query, e.g. "texas permit test" or "ny dmv". */
 const DRIVING = /^(dmv|dps|mvd|bmv|rmv|permit|driving|driver|drivers|license|licence|learners?|written|knowledge|test|practice|exam|free|online|car|road|signs?|state)$/;
 
-function stateHits(terms: string[], q: string): SearchHit[] {
+/**
+ * Where a state's name sits in the query, as [first term, terms used], or null.
+ * Words match in order; the last one may be half typed when it ends the query
+ * ("new y", "north car", "calif"), so search-as-you-type finds the state early.
+ */
+function nameRun(terms: string[], nameWords: string[]): [number, number] | null {
+  for (let i = 0; i < terms.length; i++) {
+    let k = 0;
+    while (k < nameWords.length && i + k < terms.length && terms[i + k] === nameWords[k]) k++;
+    if (k === nameWords.length) return [i, k];
+    // The query ends after whole words of the name ("new", "north"): the rest is still to come.
+    if (k > 0 && i + k === terms.length && terms.slice(i, i + k).join(" ").length >= 3) return [i, k];
+    const last = i + k === terms.length - 1;
+    if (last && k < nameWords.length && nameWords[k].startsWith(terms[i + k])) {
+      const typed = terms.slice(i, i + k + 1).join(" ");
+      if (typed.length >= 3) return [i, k + 1];
+    }
+  }
+  return null;
+}
+
+function stateHits(terms: string[]): SearchHit[] {
   const hits: SearchHit[] = [];
   for (const s of states) {
-    const name = s.name.toLowerCase();
-    const byName = q.includes(name) || (terms.length === 1 && name.startsWith(q) && q.length >= 3);
+    const run = nameRun(terms, s.name.toLowerCase().split(" "));
     // Two-letter codes only count next to a driving word, so "ca" alone or "ma" in a word never fires.
-    const byCode = terms.includes(s.code.toLowerCase()) && terms.some((t) => /^(dmv|permit|driving|driver|drivers|license|licence|learners?)$/.test(t));
+    const code = s.code.toLowerCase();
+    const byCode = terms.includes(code) && terms.some((t) => /^(dmv|permit|driving|driver|drivers|license|licence|learners?)$/.test(t));
+    if (!run && !byCode) continue;
     // Only a driving search: "texas real estate" is not the Texas permit test.
-    const rest = terms.filter((t) => !s.name.toLowerCase().split(" ").includes(t) && t !== s.code.toLowerCase());
-    if ((byName || byCode) && rest.every((t) => DRIVING.test(t))) {
+    const rest = terms.filter((t, i) => !(run && i >= run[0] && i < run[0] + run[1]) && t !== code);
+    if (rest.every((t) => DRIVING.test(t))) {
       hits.push({
         key: `dmv:${s.code}`,
         test: dmv(),
@@ -120,7 +142,7 @@ function stateHits(terms: string[], q: string): SearchHit[] {
       });
     }
   }
-  return hits.slice(0, 3);
+  return hits.slice(0, 4);
 }
 
 /**
@@ -157,7 +179,7 @@ export function searchAllTests(query: string, region: Region, popularity: Record
   const acronym = terms.some((t) => t.length <= 3);
   if (nameHits >= 4 || (acronym && nameHits > 0)) exact = exact.filter((x) => x.score > 0);
 
-  const stateMatches = stateHits(allTerms, q);
+  const stateMatches = stateHits(allTerms);
   if (exact.length > 0 || stateMatches.length > 0) {
     const tests = rank(exact).filter((h) => !(stateMatches.length && h.key === "dmv"));
     return { hits: [...stateMatches, ...tests].slice(0, MAX_HITS), fuzzy: false };

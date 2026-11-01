@@ -8,7 +8,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { AdminLink } from "@/components/AdminLink";
 import { BrandLockup } from "@/components/BrandLockup";
-import { FLAGS } from "@/components/CountryPills";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSearchSheet } from "@/components/TestSearchSheet";
 import { currentClassCode, rememberCurrentClass, useStudentClass, useTeacherClasses, useTeaches } from "@/components/TeachLink";
@@ -24,7 +23,7 @@ import { examBaseLanguage, examLandingPath, examLanguages, getExamByPath, getExa
 import { useTestLanguage } from "@/hooks/useTestLanguage";
 import { isDmvPath } from "@/lib/pageLanguage";
 import { classExamHome } from "@/lib/classes";
-import { REGIONS, regionHomePath, regionOfTest } from "@/lib/region";
+import { REGIONS, regionHomePath } from "@/lib/region";
 import { getCatalogEntry, type TestCatalogEntry } from "@/lib/testCatalog";
 import { v2DarkThemeStyle } from "@/lib/v2/darkTheme";
 import { getExamV2ByPath, v2Routes } from "@/lib/v2/registry";
@@ -145,7 +144,6 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
   const teachHref = teaches ? (lastClass ? `/teach/classes/${lastClass}` : "/teach") : studentClass ? classExamHome(studentClass.examId) : "/teach";
   const stateName = states.find((s) => s.code === selectedState)?.name;
   const chipLabel = chipTest ? (chipTest.id === "dmv" && stateName ? `DMV · ${stateName}` : chipTest.shortName) : "";
-  const chipRegion = chipTest ? regionOfTest(chipTest.id) : "GLOBAL";
 
   // Your Stats for the test on screen.
   let statsPath: string | null = null;
@@ -224,9 +222,8 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
             type="button"
             onClick={() => setSearchOpen(true)}
             aria-label={`Switch test, currently ${chipLabel}`}
-            className="ml-0.5 sm:ml-1 flex h-9 min-w-0 max-w-[16rem] items-center gap-1.5 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 pl-2.5 pr-2 text-sm font-semibold text-gray-900 dark:text-gray-50 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="ml-0.5 sm:ml-1 flex h-9 min-w-0 max-w-[16rem] items-center gap-1.5 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 pl-3 pr-2 text-sm font-semibold text-gray-900 dark:text-gray-50 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
           >
-            <span aria-hidden className="text-base leading-none">{chipRegion === "GLOBAL" ? "🌐" : FLAGS[chipRegion]}</span>
             <span className="truncate">{chipLabel}</span>
             <ChevronDown className="hidden h-4 w-4 shrink-0 text-gray-500 dark:text-gray-400 min-[360px]:block" aria-hidden />
           </button>

@@ -7,7 +7,8 @@ const BUILD_LAST_MODIFIED = new Date().toUTCString();
 
 const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
-    "/api/og/score-card": ["./public/tiger_face_*.png", "./public/tigers/**/*.png"],
+    // Only the DMV faces: exam tigers are fetched over HTTP (see the route).
+    "/api/og/score-card": ["./public/tiger_face_*.png"],
     "/og/[examId]": ["./public/tigers/*/tiger_face_03.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
     "/og/connect": ["./public/tiger.png", "./public/tiger_face_03.png"],
     "/og/q/[code]": ["./public/tiger.png", "./public/tiger_face_03.png"],
@@ -16,13 +17,13 @@ const nextConfig: NextConfig = {
   // traces the whole folder into each function. Keep out what they never read
   // (landing screenshots, audio, logos and, where unused, tiger sets): with
   // everything traced they passed Vercel's 250 MB function limit (Nov 2026).
-  // The score card still carries every tiger face (about 185 MB); if it nears
-  // the limit again, serve it smaller copies.
+  // The score card fetches exam tigers over HTTP instead of carrying every
+  // tiger face (about 185 MB), so it bundles none of public/tigers.
   outputFileTracingExcludes: {
     "/og/q/[code]": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
     "/og/connect": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
     "/og/[examId]": ["./public/tigers/*/tiger_face_0[124-9].png", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
-    "/api/og/score-card": ["./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
+    "/api/og/score-card": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
   },
   images: {
     formats: ["image/avif", "image/webp"],

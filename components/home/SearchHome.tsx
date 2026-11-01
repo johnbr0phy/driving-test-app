@@ -35,7 +35,7 @@ interface SpeechRec {
 }
 
 /**
- * The search-first homepage (/home-v2): one box, every test in every country,
+ * The search at the top of every English homepage (/, /uk, /ca...): one box, every test in every country,
  * a flag on each result, a tap goes straight to the test. What people type is
  * tracked (api/analytics/search) so searches that find nothing become the list
  * of tests to build.
@@ -162,7 +162,7 @@ export function SearchHome({
   const started = useTestsInProgress();
 
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-950">
+    <section aria-label="Find your test" className="bg-white dark:bg-gray-950">
       <div className="mx-auto w-full max-w-2xl px-4">
         {/* The wordmark. Shrinks to one line while searching so results stay above a phone keyboard. */}
         <div className={`flex items-center justify-center ${showResults ? "gap-2 pt-3 pb-4" : "gap-3 pt-10 pb-3 sm:pt-[12vh] sm:pb-4"}`}>
@@ -331,6 +331,6 @@ export function SearchHome({
           )}
         </div>
       )}
-    </main>
+    </section>
   );
 }

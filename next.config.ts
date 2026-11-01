@@ -75,6 +75,8 @@ const nextConfig: NextConfig = {
       // state itself. Not permanent: old links (emails, Stripe returns,
       // bookmarks) keep working and their query strings carry over.
       { source: "/dashboard", destination: "/dmv/dashboard", permanent: false },
+      // The search homepage trial became the homepage (Nov 2026); /home-v2/searches stays.
+      { source: "/home-v2", destination: "/", permanent: true },
       { source: "/onboarding/select-state", destination: "/dmv/dashboard", permanent: false },
       // Connector setup and the quiz maker are one page now; #add-to-claude
       // and #add-to-chatgpt anchors survive the redirect.

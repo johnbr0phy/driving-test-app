@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
     // The exam card shows face 3 of each mascot set, nothing else from public/tigers.
     "/og/[examId]": ["./public/tigers/*/tiger_face_03.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
     "/og/q/[code]": ["./public/tiger.png", "./public/tiger_face_03.png"],
+    "/og/connect": ["./public/tiger.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
   },
   // The quiz card reads two images from public/; keep the big asset folders
   // out of its function (it hit Vercel's 250 MB limit when they were traced in).
@@ -21,6 +22,8 @@ const nextConfig: NextConfig = {
     // all of it; it reads only tiger_face_*.png from disk (258 MB, Nov 2026).
     "/api/og/score-card": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
     // Same for the exam card: its computed path traced all of public/ (262 MB).
+    // And the /create card, which reads two images (261.7 MB traced).
+    "/og/connect": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
     "/og/[examId]": ["./public/tigers/*/tiger_face_0[124-8].png", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
   },
   images: {

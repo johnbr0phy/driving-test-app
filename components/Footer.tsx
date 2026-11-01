@@ -149,9 +149,6 @@ export function Footer() {
             <Link href="/teach" className={link}>
               {t("footer.forTeachers")}
             </Link>
-            <Link href="/tests" className={link}>
-              {t("footer.allTests")}
-            </Link>
             <Link href="/privacy" className={link}>
               {t("footer.privacyPolicy")}
             </Link>

@@ -4,7 +4,7 @@
 
 import { useEffect, useLayoutEffect, useState } from "react";
 import Link from "next/link";
-import { ChevronRight, Plus, Users } from "lucide-react";
+import { ChevronRight, Loader2, Plus, Users } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { teachFetch } from "@/lib/teachClient";
 import { quizFetch } from "@/lib/quizClient";
@@ -48,7 +48,14 @@ export default function TeachPage() {
   const waiting = user
     ? (classes === null && teachesHint(user.uid) !== false) || (!!classes?.length && quizzes === null)
     : loading && deviceTeaches;
-  if (waiting) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
+  if (waiting) {
+    return (
+      <div className="flex-1 bg-gray-50 dark:bg-gray-950 flex justify-center px-4 py-16" role="status">
+        <Loader2 className="w-8 h-8 animate-spin text-gray-400" aria-hidden="true" />
+        <span className="sr-only">Loading your classes…</span>
+      </div>
+    );
+  }
 
   if (!user || !classes?.length) return <TeachLanding signedIn={!!user} />;
 

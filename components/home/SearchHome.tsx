@@ -175,8 +175,8 @@ export function SearchHome({
             TESTS
             <span className="absolute left-0 right-0 bottom-0 h-0.5 rounded-full bg-blue-600 dark:bg-blue-400" />
           </span>
-          <Link href="/quizzes" className="py-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50">
-            QUIZZES
+          <Link href="/teach" className="py-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50">
+            TEACH
           </Link>
         </nav>
         <div className="flex items-center gap-3">

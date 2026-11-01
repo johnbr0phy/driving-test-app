@@ -171,8 +171,8 @@ export default function CDLLandingPageEs() {
           <dl className="grid sm:grid-cols-2 gap-x-8 border-t border-gray-200 dark:border-gray-800">
             {facts.map((row) => (
               <div key={row.label} className="flex justify-between gap-4 py-3 border-b border-gray-200 dark:border-gray-800">
-                <dt className="shrink-0 text-gray-500 dark:text-gray-400">{row.label}</dt>
-                <dd className="min-w-0 text-right font-medium text-gray-900 dark:text-gray-50">{row.value}</dd>
+                <dt className="max-w-[50%] text-gray-500 dark:text-gray-400">{row.label}</dt>
+                <dd className="min-w-0 text-right font-medium [overflow-wrap:anywhere] text-gray-900 dark:text-gray-50">{row.value}</dd>
               </div>
             ))}
           </dl>
@@ -183,10 +183,10 @@ export default function CDLLandingPageEs() {
               href="https://www.fmcsa.dot.gov/registration/commercial-drivers-license"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-0.5 text-brand-dark hover:underline"
+              className="text-brand-dark hover:underline [overflow-wrap:anywhere]"
             >
               FMCSA
-              <ExternalLink className="h-3 w-3" aria-hidden="true" />
+              <ExternalLink className="ml-0.5 inline h-3 w-3 align-baseline" aria-hidden="true" />
             </a>{" "}
             y con tu estado.
           </p>

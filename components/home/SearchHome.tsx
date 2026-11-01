@@ -290,11 +290,11 @@ export function SearchHome({
       </div>
 
       {!showResults && (
-        <div className="mx-auto w-full max-w-2xl px-4 pt-8 pb-16 space-y-8">
+        <div className="mx-auto w-full max-w-2xl px-4 pt-10 pb-6 space-y-10">
           {/* Anyone with progress on this device or account: their tests, the current one first. */}
           {started.length > 0 && (
             <section>
-              <h2 className="px-2 pb-2 text-2xl text-gray-900 dark:text-gray-50">Pick up where you left off</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">Pick up where you left off</h2>
               <ul>
                 {started.slice(0, 4).map(({ test, mastered, testsTaken }) => (
                   <li key={test.id} className="border-b border-gray-200 dark:border-gray-800 last:border-b-0">
@@ -304,7 +304,7 @@ export function SearchHome({
                     >
                       <History className="w-5 h-5 shrink-0 text-gray-600 dark:text-gray-300" aria-hidden />
                       <span className="min-w-0 flex-1">
-                        <span className="block text-lg text-gray-900 dark:text-gray-50 truncate">{test.name}</span>
+                        <span className="block text-base font-medium text-gray-900 dark:text-gray-50 truncate">{test.name}</span>
                         <span className="block text-sm text-gray-500 dark:text-gray-400 truncate">{progressLine(mastered, testsTaken)}</span>
                       </span>
                       <span className="text-xl leading-none shrink-0">{flagOf(regionOfTest(test.id))}</span>
@@ -319,14 +319,14 @@ export function SearchHome({
           {/* Like Google: what people are searching for. A tap runs the search. */}
           {trending.length > 0 && (
             <section>
-              <h2 className="px-2 pb-2 text-2xl text-gray-900 dark:text-gray-50">Trending searches</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">Trending searches</h2>
               <ul>
                 {trending.map((text) => (
                   <li key={text} className="border-b border-gray-200 dark:border-gray-800 last:border-b-0">
                     <button
                       type="button"
                       onClick={() => runTrending(text)}
-                      className="w-full flex items-center gap-5 px-3 py-4 text-left text-lg text-gray-900 dark:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-xl"
+                      className="w-full flex items-center gap-5 px-3 py-3 text-left text-base text-gray-900 dark:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-xl"
                     >
                       <TrendingUp className="w-5 h-5 shrink-0 text-gray-600 dark:text-gray-300" aria-hidden />
                       {text}

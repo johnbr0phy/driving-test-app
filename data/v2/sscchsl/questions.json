@@ -91,27 +91,6 @@
       "section": "eng",
       "test": 1,
       "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 1,
-      "format": "single",
-      "skill": "Fill in the blanks",
-      "stem": "Select the most appropriate option to fill in the blank.\n\nRahul prefers tea ______ coffee.",
-      "options": [
-        "against",
-        "than",
-        "to",
-        "from"
-      ],
-      "correct": [
-        2
-      ],
-      "explanation": "'Prefer' is followed by 'to' when two things are compared: 'prefers tea to coffee'. 'Than' is a common mistake here."
-    },
-    {
-      "id": "SSCCHSL-T1-005",
-      "section": "eng",
-      "test": 1,
-      "module": 1,
       "domain": "sscchslVocab",
       "difficulty": 1,
       "format": "single",
@@ -129,7 +108,49 @@
       "explanation": "Fertile land produces good crops. Barren land produces little or nothing. Fruitful is a synonym, not an antonym."
     },
     {
+      "id": "SSCCHSL-T1-005",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nRahul prefers tea ______ coffee.",
+      "options": [
+        "against",
+        "than",
+        "to",
+        "from"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Prefer' is followed by 'to' when two things are compared: 'prefers tea to coffee'. 'Than' is a common mistake here."
+    },
+    {
       "id": "SSCCHSL-T1-006",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spellings",
+      "stem": "Select the correctly spelt word.",
+      "options": [
+        "Comittee",
+        "Committee",
+        "Commitee",
+        "Committe"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Committee has a double m, a double t and a double e: c-o-m-m-i-t-t-e-e."
+    },
+    {
+      "id": "SSCCHSL-T1-007",
       "section": "eng",
       "test": 1,
       "module": 1,
@@ -151,70 +172,7 @@
       "explanation": "A past time word such as 'yesterday' needs the simple past, 'returned'. The present perfect cannot be used with a finished past time."
     },
     {
-      "id": "SSCCHSL-T1-007",
-      "section": "eng",
-      "test": 1,
-      "module": 1,
-      "domain": "sscchslVocab",
-      "difficulty": 2,
-      "format": "single",
-      "skill": "Spellings",
-      "stem": "Select the correctly spelt word.",
-      "options": [
-        "Comittee",
-        "Committee",
-        "Commitee",
-        "Committe"
-      ],
-      "correct": [
-        1
-      ],
-      "explanation": "Committee has a double m, a double t and a double e: c-o-m-m-i-t-t-e-e."
-    },
-    {
       "id": "SSCCHSL-T1-008",
-      "section": "eng",
-      "test": 1,
-      "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 2,
-      "format": "single",
-      "skill": "Active and passive voice",
-      "stem": "Select the passive form of the sentence.\n\nThe workers are repairing the bridge.",
-      "options": [
-        "The bridge has been repaired by the workers.",
-        "The bridge was being repaired by the workers.",
-        "The bridge is repaired by the workers.",
-        "The bridge is being repaired by the workers."
-      ],
-      "correct": [
-        3
-      ],
-      "explanation": "The active verb is present continuous ('are repairing'), so the passive is 'is being repaired'. 'Was being' is past and 'has been' is present perfect."
-    },
-    {
-      "id": "SSCCHSL-T1-009",
-      "section": "eng",
-      "test": 1,
-      "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 2,
-      "format": "single",
-      "skill": "Direct and indirect narration",
-      "stem": "Select the correct indirect form of the sentence.\n\nThe teacher said to the students, \"Do not make a noise.\"",
-      "options": [
-        "The teacher told the students to not making a noise.",
-        "The teacher told the students not to make a noise.",
-        "The teacher asked the students that do not make a noise.",
-        "The teacher said the students not to make a noise."
-      ],
-      "correct": [
-        1
-      ],
-      "explanation": "A negative command becomes 'told (someone) not to' plus the base verb. 'Said the students' is wrong because 'said' does not take a direct object like this."
-    },
-    {
-      "id": "SSCCHSL-T1-010",
       "section": "eng",
       "test": 1,
       "module": 1,
@@ -235,7 +193,91 @@
       "explanation": "To hit the nail on the head is to say or do exactly the right thing, for example to describe a problem precisely."
     },
     {
+      "id": "SSCCHSL-T1-009",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nThe workers are repairing the bridge.",
+      "options": [
+        "The bridge has been repaired by the workers.",
+        "The bridge was being repaired by the workers.",
+        "The bridge is repaired by the workers.",
+        "The bridge is being repaired by the workers."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The active verb is present continuous ('are repairing'), so the passive is 'is being repaired'. 'Was being' is past and 'has been' is present perfect."
+    },
+    {
+      "id": "SSCCHSL-T1-010",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nGovernment by the people, usually through elected representatives",
+      "options": [
+        "Monarchy",
+        "Democracy",
+        "Bureaucracy",
+        "Autocracy"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In a democracy the people rule through elected representatives. A monarchy is ruled by a king or queen, an autocracy by one person with unlimited power, and a bureaucracy is rule by officials."
+    },
+    {
       "id": "SSCCHSL-T1-011",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direct and indirect narration",
+      "stem": "Select the correct indirect form of the sentence.\n\nThe teacher said to the students, \"Do not make a noise.\"",
+      "options": [
+        "The teacher told the students to not making a noise.",
+        "The teacher told the students not to make a noise.",
+        "The teacher asked the students that do not make a noise.",
+        "The teacher said the students not to make a noise."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A negative command becomes 'told (someone) not to' plus the base verb. 'Said the students' is wrong because 'said' does not take a direct object like this."
+    },
+    {
+      "id": "SSCCHSL-T1-012",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Shuffling of sentence parts",
+      "stem": "The given sentence is divided into four segments. Select the option that gives their correct order.\n\nP. not only\nQ. she speaks\nR. Hindi and English\nS. but also Tamil",
+      "options": [
+        "SQPR",
+        "QRPS",
+        "QPRS",
+        "PQRS"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The sentence is 'She speaks not only Hindi and English but also Tamil.' 'Not only' must come just before the first item it describes, and 'but also' before the second."
+    },
+    {
+      "id": "SSCCHSL-T1-013",
       "section": "eng",
       "test": 1,
       "module": 1,
@@ -257,133 +299,7 @@
       "explanation": "After a modal verb such as 'could not', the base form of the verb is used: 'that we could not find a seat'."
     },
     {
-      "id": "SSCCHSL-T1-012",
-      "section": "eng",
-      "test": 1,
-      "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 2,
-      "format": "single",
-      "skill": "Fill in the blanks",
-      "stem": "Select the most appropriate option to fill in the blank.\n\nUnless you ______ harder, you will not pass the exam.",
-      "options": [
-        "will work",
-        "work",
-        "had worked",
-        "would work"
-      ],
-      "correct": [
-        1
-      ],
-      "explanation": "In a sentence about the future, the 'unless' clause takes the simple present: 'Unless you work harder'. 'Will' is not used in that clause."
-    },
-    {
-      "id": "SSCCHSL-T1-013",
-      "section": "eng",
-      "test": 1,
-      "module": 1,
-      "domain": "sscchslVocab",
-      "difficulty": 1,
-      "format": "single",
-      "skill": "One-word substitution",
-      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nGovernment by the people, usually through elected representatives",
-      "options": [
-        "Monarchy",
-        "Democracy",
-        "Bureaucracy",
-        "Autocracy"
-      ],
-      "correct": [
-        1
-      ],
-      "explanation": "In a democracy the people rule through elected representatives. A monarchy is ruled by a king or queen, an autocracy by one person with unlimited power, and a bureaucracy is rule by officials."
-    },
-    {
       "id": "SSCCHSL-T1-014",
-      "section": "eng",
-      "test": 1,
-      "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 1,
-      "format": "single",
-      "skill": "Cloze test",
-      "stem": "Cloze passage 1: select the most appropriate word for blank (2).",
-      "options": [
-        "nothing",
-        "anything",
-        "something",
-        "everything"
-      ],
-      "correct": [
-        0
-      ],
-      "explanation": "'Had nothing to read except their textbooks' fits the contrast with 'Now they borrow a new book every week'. 'Anything' would need 'did not have'."
-    },
-    {
-      "id": "SSCCHSL-T1-015",
-      "section": "eng",
-      "test": 1,
-      "module": 1,
-      "domain": "sscchslVocab",
-      "difficulty": 2,
-      "format": "single",
-      "skill": "Shuffling of sentence parts",
-      "stem": "The given sentence is divided into four segments. Select the option that gives their correct order.\n\nP. not only\nQ. she speaks\nR. Hindi and English\nS. but also Tamil",
-      "options": [
-        "SQPR",
-        "QRPS",
-        "QPRS",
-        "PQRS"
-      ],
-      "correct": [
-        2
-      ],
-      "explanation": "The sentence is 'She speaks not only Hindi and English but also Tamil.' 'Not only' must come just before the first item it describes, and 'but also' before the second."
-    },
-    {
-      "id": "SSCCHSL-T1-016",
-      "section": "eng",
-      "test": 1,
-      "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 2,
-      "format": "single",
-      "skill": "Cloze test",
-      "stem": "Cloze passage 1: select the most appropriate word for blank (3).",
-      "options": [
-        "argue",
-        "talk",
-        "speak",
-        "discuss"
-      ],
-      "correct": [
-        3
-      ],
-      "explanation": "'Discuss' takes a direct object: 'discuss the stories with their friends'. 'Talk', 'speak' and 'argue' would need 'about'."
-    },
-    {
-      "id": "SSCCHSL-T1-017",
-      "section": "eng",
-      "test": 1,
-      "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 1,
-      "format": "single",
-      "skill": "Cloze test",
-      "stem": "Cloze passage 1: select the most appropriate word for blank (4).",
-      "options": [
-        "forbids",
-        "encourages",
-        "prevents",
-        "discourages"
-      ],
-      "correct": [
-        1
-      ],
-      "explanation": "The librarian is helping the children grow as readers, so she encourages them to write reviews. The other verbs reverse the meaning."
-    },
-    {
-      "id": "SSCCHSL-T1-018",
       "section": "eng",
       "test": 1,
       "module": 1,
@@ -404,28 +320,28 @@
       "explanation": "An obstinate person refuses to change their mind, which is stubborn. Willing is closer to the opposite."
     },
     {
-      "id": "SSCCHSL-T1-019",
+      "id": "SSCCHSL-T1-015",
       "section": "eng",
       "test": 1,
       "module": 1,
       "domain": "sscchslGrammar",
-      "difficulty": 1,
+      "difficulty": 2,
       "format": "single",
-      "skill": "Cloze test",
-      "stem": "Cloze passage 1: select the most appropriate word for blank (5).",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nUnless you ______ harder, you will not pass the exam.",
       "options": [
-        "curious",
-        "idle",
-        "careless",
-        "rude"
+        "will work",
+        "work",
+        "had worked",
+        "would work"
       ],
       "correct": [
-        0
+        1
       ],
-      "explanation": "The children 'now ask questions about everything they see', which describes curiosity. The other words are negative and do not fit the praise from parents."
+      "explanation": "In a sentence about the future, the 'unless' clause takes the simple present: 'Unless you work harder'. 'Will' is not used in that clause."
     },
     {
-      "id": "SSCCHSL-T1-020",
+      "id": "SSCCHSL-T1-016",
       "section": "eng",
       "test": 1,
       "module": 1,
@@ -445,6 +361,94 @@
         1
       ],
       "explanation": "After 'has' the present perfect needs the past participle: 'has changed the lives of many children'."
+    },
+    {
+      "id": "SSCCHSL-T1-017",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCHSL-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (2).",
+      "options": [
+        "nothing",
+        "anything",
+        "something",
+        "everything"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Had nothing to read except their textbooks' fits the contrast with 'Now they borrow a new book every week'. 'Anything' would need 'did not have'."
+    },
+    {
+      "id": "SSCCHSL-T1-018",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCHSL-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (3).",
+      "options": [
+        "argue",
+        "talk",
+        "speak",
+        "discuss"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Discuss' takes a direct object: 'discuss the stories with their friends'. 'Talk', 'speak' and 'argue' would need 'about'."
+    },
+    {
+      "id": "SSCCHSL-T1-019",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCHSL-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (4).",
+      "options": [
+        "forbids",
+        "encourages",
+        "prevents",
+        "discourages"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The librarian is helping the children grow as readers, so she encourages them to write reviews. The other verbs reverse the meaning."
+    },
+    {
+      "id": "SSCCHSL-T1-020",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCHSL-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (5).",
+      "options": [
+        "curious",
+        "idle",
+        "careless",
+        "rude"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The children 'now ask questions about everything they see', which describes curiosity. The other words are negative and do not fit the praise from parents."
     },
     {
       "id": "SSCCHSL-T1-021",
@@ -2202,27 +2206,6 @@
       "section": "eng",
       "test": 2,
       "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 2,
-      "format": "single",
-      "skill": "Fill in the blanks",
-      "stem": "Select the most appropriate option to fill in the blank.\n\nThe doctor advised him ______ smoking.",
-      "options": [
-        "give up",
-        "to giving up",
-        "to give up",
-        "giving up"
-      ],
-      "correct": [
-        2
-      ],
-      "explanation": "'Advise' with an object is followed by the to-infinitive: 'advised him to give up smoking'."
-    },
-    {
-      "id": "SSCCHSL-T2-005",
-      "section": "eng",
-      "test": 2,
-      "module": 1,
       "domain": "sscchslVocab",
       "difficulty": 1,
       "format": "single",
@@ -2240,7 +2223,49 @@
       "explanation": "Scarce means in short supply. Plentiful means available in large amounts. Rare is a synonym."
     },
     {
+      "id": "SSCCHSL-T2-005",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe doctor advised him ______ smoking.",
+      "options": [
+        "give up",
+        "to giving up",
+        "to give up",
+        "giving up"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Advise' with an object is followed by the to-infinitive: 'advised him to give up smoking'."
+    },
+    {
       "id": "SSCCHSL-T2-006",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spellings",
+      "stem": "Select the incorrectly spelt word.",
+      "options": [
+        "Believe",
+        "Achieve",
+        "Relieve",
+        "Recieve"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The rule 'i before e except after c' gives 'receive'. Believe, achieve and relieve are spelt correctly."
+    },
+    {
+      "id": "SSCCHSL-T2-007",
       "section": "eng",
       "test": 2,
       "module": 1,
@@ -2262,7 +2287,28 @@
       "explanation": "'Contain' is a state verb and is not used in the continuous form. The correct sentence is 'This old trunk contains my grandfather's letters.'"
     },
     {
-      "id": "SSCCHSL-T2-007",
+      "id": "SSCCHSL-T2-008",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Idioms and phrases",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo be in hot water",
+      "options": [
+        "To take a bath",
+        "To cook in a hurry",
+        "To be in trouble",
+        "To feel feverish"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "To be in hot water is to be in trouble, usually because of something one has done."
+    },
+    {
+      "id": "SSCCHSL-T2-009",
       "section": "eng",
       "test": 2,
       "module": 1,
@@ -2283,28 +2329,28 @@
       "explanation": "'Were distributed' is simple past passive, so the active form is simple past: 'The principal distributed the prizes.'"
     },
     {
-      "id": "SSCCHSL-T2-008",
+      "id": "SSCCHSL-T2-010",
       "section": "eng",
       "test": 2,
       "module": 1,
       "domain": "sscchslVocab",
-      "difficulty": 2,
+      "difficulty": 1,
       "format": "single",
-      "skill": "Spellings",
-      "stem": "Select the incorrectly spelt word.",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA place where coins are made",
       "options": [
-        "Believe",
-        "Achieve",
-        "Relieve",
-        "Recieve"
+        "Vault",
+        "Mint",
+        "Mine",
+        "Treasury"
       ],
       "correct": [
-        3
+        1
       ],
-      "explanation": "The rule 'i before e except after c' gives 'receive'. Believe, achieve and relieve are spelt correctly."
+      "explanation": "Coins are made at a mint. A mine is where minerals are dug out, a treasury manages public money and a vault is a strong room for storing valuables."
     },
     {
-      "id": "SSCCHSL-T2-009",
+      "id": "SSCCHSL-T2-011",
       "section": "eng",
       "test": 2,
       "module": 1,
@@ -2325,7 +2371,28 @@
       "explanation": "With a past reporting verb, the present perfect 'have finished' becomes the past perfect 'had finished', and 'I' and 'my' become 'she' and 'her'."
     },
     {
-      "id": "SSCCHSL-T2-010",
+      "id": "SSCCHSL-T2-012",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Shuffling of sentences",
+      "stem": "Arrange the sentences P, Q, R and S in a logical sequence.\n\nP. Then add the tea leaves and let the water boil.\nQ. First, heat a cup of water in a pan.\nR. Finally, strain the tea into a cup.\nS. Next, add milk and sugar to taste.",
+      "options": [
+        "PQSR",
+        "QSPR",
+        "QPRS",
+        "QPSR"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The signal words give the order: First (Q), Then (P), Next (S), Finally (R)."
+    },
+    {
+      "id": "SSCCHSL-T2-013",
       "section": "eng",
       "test": 2,
       "module": 1,
@@ -2347,175 +2414,7 @@
       "explanation": "Two subjects joined by 'and' take a plural verb: 'Rohan and his sister were invited to the wedding.'"
     },
     {
-      "id": "SSCCHSL-T2-011",
-      "section": "eng",
-      "test": 2,
-      "module": 1,
-      "domain": "sscchslVocab",
-      "difficulty": 1,
-      "format": "single",
-      "skill": "Idioms and phrases",
-      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo be in hot water",
-      "options": [
-        "To take a bath",
-        "To cook in a hurry",
-        "To be in trouble",
-        "To feel feverish"
-      ],
-      "correct": [
-        2
-      ],
-      "explanation": "To be in hot water is to be in trouble, usually because of something one has done."
-    },
-    {
-      "id": "SSCCHSL-T2-012",
-      "section": "eng",
-      "test": 2,
-      "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 1,
-      "format": "single",
-      "skill": "Fill in the blanks",
-      "stem": "Select the most appropriate option to fill in the blank.\n\nI will call you ______ I reach home.",
-      "options": [
-        "as soon as",
-        "as long as",
-        "as well as",
-        "so that"
-      ],
-      "correct": [
-        0
-      ],
-      "explanation": "'As soon as' means immediately after, which fits calling on reaching home. 'As long as' sets a condition and 'so that' gives a purpose."
-    },
-    {
-      "id": "SSCCHSL-T2-013",
-      "section": "eng",
-      "test": 2,
-      "module": 1,
-      "domain": "sscchslVocab",
-      "difficulty": 1,
-      "format": "single",
-      "skill": "One-word substitution",
-      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA place where coins are made",
-      "options": [
-        "Vault",
-        "Mint",
-        "Mine",
-        "Treasury"
-      ],
-      "correct": [
-        1
-      ],
-      "explanation": "Coins are made at a mint. A mine is where minerals are dug out, a treasury manages public money and a vault is a strong room for storing valuables."
-    },
-    {
       "id": "SSCCHSL-T2-014",
-      "section": "eng",
-      "test": 2,
-      "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 1,
-      "format": "single",
-      "skill": "Cloze test",
-      "stem": "Cloze passage 2: select the most appropriate word for blank (1).",
-      "options": [
-        "carrying",
-        "carrier",
-        "carries",
-        "carried"
-      ],
-      "correct": [
-        3
-      ],
-      "explanation": "The passage describes the past ('was once'), and the sentence needs a main verb in the simple past: 'Letters carried news'."
-    },
-    {
-      "id": "SSCCHSL-T2-015",
-      "section": "eng",
-      "test": 2,
-      "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 1,
-      "format": "single",
-      "skill": "Cloze test",
-      "stem": "Cloze passage 2: select the most appropriate word for blank (2).",
-      "options": [
-        "beside",
-        "under",
-        "through",
-        "between"
-      ],
-      "correct": [
-        2
-      ],
-      "explanation": "Messages travel through mobile phones, that is, by means of them. The other prepositions describe position, not the means."
-    },
-    {
-      "id": "SSCCHSL-T2-016",
-      "section": "eng",
-      "test": 2,
-      "module": 1,
-      "domain": "sscchslVocab",
-      "difficulty": 2,
-      "format": "single",
-      "skill": "Shuffling of sentences",
-      "stem": "Arrange the sentences P, Q, R and S in a logical sequence.\n\nP. Then add the tea leaves and let the water boil.\nQ. First, heat a cup of water in a pan.\nR. Finally, strain the tea into a cup.\nS. Next, add milk and sugar to taste.",
-      "options": [
-        "PQSR",
-        "QSPR",
-        "QPRS",
-        "QPSR"
-      ],
-      "correct": [
-        3
-      ],
-      "explanation": "The signal words give the order: First (Q), Then (P), Next (S), Finally (R)."
-    },
-    {
-      "id": "SSCCHSL-T2-017",
-      "section": "eng",
-      "test": 2,
-      "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 2,
-      "format": "single",
-      "skill": "Cloze test",
-      "stem": "Cloze passage 2: select the most appropriate word for blank (3).",
-      "options": [
-        "importantly",
-        "important",
-        "importance",
-        "unimportant"
-      ],
-      "correct": [
-        2
-      ],
-      "explanation": "After 'its' a noun is needed: 'has not lost its importance'. 'Important' is an adjective and 'importantly' an adverb."
-    },
-    {
-      "id": "SSCCHSL-T2-018",
-      "section": "eng",
-      "test": 2,
-      "module": 1,
-      "domain": "sscchslGrammar",
-      "difficulty": 2,
-      "format": "single",
-      "skill": "Cloze test",
-      "stem": "Cloze passage 2: select the most appropriate word for blank (4).",
-      "options": [
-        "spends",
-        "runs",
-        "walks",
-        "closes"
-      ],
-      "correct": [
-        1
-      ],
-      "explanation": "The passage lists new services, so the post office runs (manages) savings accounts for villagers. 'Closes' contradicts the point that it has not lost its importance."
-    },
-    {
-      "id": "SSCCHSL-T2-019",
       "section": "eng",
       "test": 2,
       "module": 1,
@@ -2536,6 +2435,115 @@
       "explanation": "To liberate is to set free. To imprison is to shut someone in. Release, rescue and deliver are all close to the meaning of liberate."
     },
     {
+      "id": "SSCCHSL-T2-015",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nI will call you ______ I reach home.",
+      "options": [
+        "as soon as",
+        "as long as",
+        "as well as",
+        "so that"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'As soon as' means immediately after, which fits calling on reaching home. 'As long as' sets a condition and 'so that' gives a purpose."
+    },
+    {
+      "id": "SSCCHSL-T2-016",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCHSL-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (1).",
+      "options": [
+        "carrying",
+        "carrier",
+        "carries",
+        "carried"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage describes the past ('was once'), and the sentence needs a main verb in the simple past: 'Letters carried news'."
+    },
+    {
+      "id": "SSCCHSL-T2-017",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCHSL-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (2).",
+      "options": [
+        "beside",
+        "under",
+        "through",
+        "between"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Messages travel through mobile phones, that is, by means of them. The other prepositions describe position, not the means."
+    },
+    {
+      "id": "SSCCHSL-T2-018",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCHSL-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (3).",
+      "options": [
+        "importantly",
+        "important",
+        "importance",
+        "unimportant"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "After 'its' a noun is needed: 'has not lost its importance'. 'Important' is an adjective and 'importantly' an adverb."
+    },
+    {
+      "id": "SSCCHSL-T2-019",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCHSL-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (4).",
+      "options": [
+        "spends",
+        "runs",
+        "walks",
+        "closes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage lists new services, so the post office runs (manages) savings accounts for villagers. 'Closes' contradicts the point that it has not lost its importance."
+    },
+    {
       "id": "SSCCHSL-T2-020",
       "section": "eng",
       "test": 2,
@@ -2544,6 +2552,7 @@
       "difficulty": 1,
       "format": "single",
       "skill": "Cloze test",
+      "stimulusId": "SSCCHSL-CL2",
       "stem": "Cloze passage 2: select the most appropriate word for blank (5).",
       "options": [
         "talking",

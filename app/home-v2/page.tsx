@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { cookies, headers } from "next/headers";
 import { SearchHome } from "@/components/home/SearchHome";
 import { getPopularTests } from "@/lib/server/popularTests";
+import { getTrendingSearches } from "@/lib/server/trendingSearches";
 import { TEST_CATALOG } from "@/lib/testCatalog";
 import { REGION_COOKIE, Region, isRegion, regionFromCountry, regionOfTest } from "@/lib/region";
 
@@ -30,5 +31,14 @@ export default async function HomeV2Page() {
     if (regionOfTest(test.id) === region && !feed.some((p) => p.test.id === test.id)) feed.push({ test, answered: null });
   }
 
-  return <SearchHome initialRegion={region} popularity={popularity} popular={feed.slice(0, 6)} />;
+  // Signed-out view: what people searched most this week, topped up with the
+  // names of the popular tests so the list is never short.
+  const trending = await getTrendingSearches(6);
+  for (const p of feed) {
+    if (trending.length >= 6) break;
+    const name = p.test.name.toLowerCase();
+    if (!trending.includes(name)) trending.push(name);
+  }
+
+  return <SearchHome initialRegion={region} popularity={popularity} popular={feed.slice(0, 6)} trending={trending} />;
 }

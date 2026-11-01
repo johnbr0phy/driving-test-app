@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Search, X, ArrowUpRight, Mic, Grip } from "lucide-react";
+import { Search, X, ArrowUpRight, Mic, Grip, Menu, TrendingUp } from "lucide-react";
 import { FLAGS, readRegionCookie } from "@/components/CountryPills";
 import { useAuth } from "@/contexts/AuthContext";
 import { isInternalBrowser } from "@/lib/internal";
@@ -36,10 +36,13 @@ export function SearchHome({
   initialRegion,
   popularity,
   popular,
+  trending,
 }: {
   initialRegion: Region;
   popularity: Record<string, number>;
   popular: { test: TestCatalogEntry; answered: number | null }[];
+  /** What people searched most this week (signed-out view), topped up with popular test names. */
+  trending: string[];
 }) {
   const router = useRouter();
   const { user } = useAuth();
@@ -80,6 +83,8 @@ export function SearchHome({
   const q = normalizeQuery(query);
   const showResults = q.length > 0;
   const miss = showResults && result.hits.length === 0;
+  // What the tracking counts as found: a near miss (no test has every word) is a test to build.
+  const foundCount = result.partial ? 0 : result.hits.length;
 
   useEffect(() => setActive(0), [query]);
 
@@ -103,15 +108,15 @@ export function SearchHome({
   // Count a query once the visitor stops typing, so "c", "ca", "cal" never count.
   useEffect(() => {
     if (q.length < 2) return;
-    const results = result.hits.length;
+    const results = foundCount;
     const timer = setTimeout(() => trackQuery(q, results), TRACK_DELAY_MS);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, result.hits.length]);
+  }, [q, foundCount]);
 
   function open(hit: SearchHit) {
     if (q.length >= 2) {
-      trackQuery(q, result.hits.length);
+      trackQuery(q, foundCount);
       track({ kind: "pick", q, pick: hit.key });
     }
     router.push(hit.href);
@@ -135,14 +140,32 @@ export function SearchHome({
     }
   }
 
+  // Run a trending search the way Google does: it fills the box and shows the results.
+  function runTrending(text: string) {
+    setQuery(text);
+    inputRef.current?.focus();
+  }
+
+  const [menuOpen, setMenuOpen] = useState(false);
   const avatar = user?.photoURL;
   const initial = (user?.displayName || user?.email || "?").trim()[0]?.toUpperCase();
 
   return (
     <main className="min-h-screen bg-white dark:bg-gray-950">
-      {/* Top bar, like Google's: tabs on the left, the account on the right. */}
-      <div className="flex items-center justify-between px-4 sm:px-6 h-14 border-b border-transparent">
+      {/* Top bar, like Google's: a menu when signed out, tabs on the left, the account on the right. */}
+      <div className="relative flex items-center justify-between px-4 sm:px-6 h-14 border-b border-transparent">
         <nav className="flex items-center gap-6 text-sm font-semibold tracking-wide">
+          {!user && (
+            <button
+              type="button"
+              onClick={() => setMenuOpen((o) => !o)}
+              aria-label="Menu"
+              aria-expanded={menuOpen}
+              className="-ml-2 p-2 rounded-full text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
+          )}
           <span className="relative py-4 text-blue-600 dark:text-blue-400">
             TESTS
             <span className="absolute left-0 right-0 bottom-0 h-0.5 rounded-full bg-blue-600 dark:bg-blue-400" />
@@ -170,6 +193,22 @@ export function SearchHome({
             </Link>
           )}
         </div>
+        {menuOpen && <button type="button" aria-label="Close menu" onClick={() => setMenuOpen(false)} className="fixed inset-0 z-10 cursor-default" />}
+        {menuOpen && (
+          <div className="absolute left-3 top-14 z-20 w-60 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-lg py-2">
+            {[
+              ["Every test", "/tests"],
+              ["Make a quiz", "/create"],
+              ["Quizzes", "/quizzes"],
+              ["For teachers", "/teach"],
+              ["Sign in", "/login"],
+            ].map(([label, href]) => (
+              <Link key={href} href={href} className="block px-4 py-2.5 text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800">
+                {label}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="mx-auto w-full max-w-2xl px-4">
@@ -199,7 +238,7 @@ export function SearchHome({
             aria-expanded={showResults}
             aria-controls="test-search-results"
             aria-activedescendant={showResults && result.hits[active] ? `hit-${result.hits[active].key}` : undefined}
-            className="search-pill w-full h-14 pl-14 pr-24 rounded-full bg-gray-100 dark:bg-gray-800 text-lg text-gray-900 dark:text-gray-50 placeholder:text-gray-500 dark:placeholder:text-gray-400 outline-none focus:outline-none focus-visible:outline-none focus:ring-0 focus:bg-white dark:focus:bg-gray-900 focus:shadow-[0_1px_6px_rgba(32,33,36,0.28)] transition [&::-webkit-search-cancel-button]:hidden"
+            className="search-pill w-full h-14 pl-14 pr-24 rounded-full bg-white border border-gray-300 dark:border-transparent dark:bg-gray-800 text-lg text-gray-900 dark:text-gray-50 placeholder:text-gray-500 dark:placeholder:text-gray-400 outline-none focus:outline-none focus-visible:outline-none focus:ring-0 focus:bg-white dark:focus:bg-gray-900 focus:shadow-[0_1px_6px_rgba(32,33,36,0.28)] transition [&::-webkit-search-cancel-button]:hidden"
           />
           <div className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center">
             {query && (
@@ -230,7 +269,13 @@ export function SearchHome({
 
         {showResults && !miss && (
           <div className="mt-3 pb-10">
-            {result.fuzzy && <p className="px-4 pb-2 text-sm text-gray-500 dark:text-gray-400">Closest matches:</p>}
+            {result.partial ? (
+              <p className="px-4 pb-2 text-sm text-gray-600 dark:text-gray-300">
+                We don&apos;t have &ldquo;{query.trim()}&rdquo; yet, and we&apos;ve noted it. Closest matches:
+              </p>
+            ) : (
+              result.fuzzy && <p className="px-4 pb-2 text-sm text-gray-500 dark:text-gray-400">Closest matches:</p>
+            )}
             <ul id="test-search-results" role="listbox" className="rounded-3xl bg-white dark:bg-gray-900 overflow-hidden border border-gray-100 dark:border-gray-800">
               {result.hits.map((hit, i) => (
                 <li key={hit.key} id={`hit-${hit.key}`} role="option" aria-selected={i === active}>
@@ -271,8 +316,29 @@ export function SearchHome({
         )}
       </div>
 
-      {/* The feed under the box, like Google's Discover: this week's most practised tests near you. */}
-      {!showResults && popular.length > 0 && (
+      {/* Signed out, like Google: trending searches under the box. */}
+      {!showResults && !user && trending.length > 0 && (
+        <section className="mx-auto w-full max-w-2xl px-4 pt-8 pb-16">
+          <h2 className="px-2 pb-2 text-2xl text-gray-900 dark:text-gray-50">Trending searches</h2>
+          <ul>
+            {trending.map((text) => (
+              <li key={text} className="border-b border-gray-200 dark:border-gray-800 last:border-b-0">
+                <button
+                  type="button"
+                  onClick={() => runTrending(text)}
+                  className="w-full flex items-center gap-5 px-3 py-4 text-left text-lg text-gray-900 dark:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-xl"
+                >
+                  <TrendingUp className="w-5 h-5 shrink-0 text-gray-600 dark:text-gray-300" aria-hidden />
+                  {text}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* Signed in, the feed: this week's most practised tests near you, like Google's Discover. */}
+      {!showResults && user && popular.length > 0 && (
         <section className="mx-auto w-full max-w-2xl px-4 pt-10 pb-16">
           <h2 className="px-1 pb-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
             {flagOf(region)} Popular this week in {regionInfo(region).name}

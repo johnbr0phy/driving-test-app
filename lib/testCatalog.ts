@@ -358,7 +358,7 @@ const SEARCH_ALIASES: Record<string, string> = {
   ged: "ged hiset high school equivalency diploma adult education tasc high school equivalency test ged math ged rla ged science ged social studies",
   sat: "digital sat college board college admissions high school reading writing math bluebook",
   act: "act test college admissions high school english math reading science composite enhanced act",
-  cdl: "truck trucking commercial class a class b",
+  cdl: "truck trucking commercial class a class b cdl permit clp commercial learner permit",
   cdlx: "hazmat hazardous materials air brakes combination tanker passenger school bus endorsement",
   moto: "motorbike m endorsement",
   civics: "citizenship naturalization immigration n-400 uscis green card",

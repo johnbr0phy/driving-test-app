@@ -21,6 +21,8 @@ export interface SearchResult {
   hits: SearchHit[];
   /** True when nothing matched exactly and the hits come from typo matching. */
   fuzzy: boolean;
+  /** True when no test matched every word: the hits are only near misses, so the search counts as not found. */
+  partial?: boolean;
 }
 
 const MAX_HITS = 8;
@@ -49,13 +51,24 @@ function editDistance(a: string, b: string, max: number): number {
   return prev[b.length];
 }
 
+// Words nearly every test has in its name or blurb. Dropped from a query when
+// it has other words, so "sat practice test" searches for "sat".
+const GENERIC = new Set(["practice", "test", "tests", "exam", "exams", "mock", "free", "quiz", "questions", "question", "prep", "online", "sample", "paper", "papers", "2026", "2027"]);
+
+/** A term matches at the start of a word; terms of 4+ letters may also match inside one ("theory" in "cartheory"). */
+function termIn(term: string, text: string, textWords: string[]): boolean {
+  if (term.length >= 4) return text.includes(term);
+  return textWords.some((w) => w.startsWith(term));
+}
+
 const typoBudget = (term: string) => (term.length >= 7 ? 2 : term.length >= 4 ? 1 : 0);
 
 /** How well one term matches a title: exact word 3, word prefix 2, substring 1. */
 function titleScore(term: string, titleWords: string[], title: string): number {
   if (titleWords.includes(term)) return 3;
   if (titleWords.some((w) => w.startsWith(term))) return 2;
-  return title.includes(term) ? 1 : 0;
+  // Short terms only count at a word start, so "act" never matches "practice".
+  return term.length >= 4 && title.includes(term) ? 1 : 0;
 }
 
 interface Candidate {
@@ -85,6 +98,8 @@ function testHit(test: TestCatalogEntry): SearchHit {
 }
 
 /** DMV states named in the query, e.g. "texas permit test" or "ny dmv". */
+const DRIVING = /^(dmv|dps|mvd|bmv|rmv|permit|driving|driver|drivers|license|licence|learners?|written|knowledge|test|practice|exam|free|online|car|road|signs?|state)$/;
+
 function stateHits(terms: string[], q: string): SearchHit[] {
   const hits: SearchHit[] = [];
   for (const s of states) {
@@ -92,7 +107,9 @@ function stateHits(terms: string[], q: string): SearchHit[] {
     const byName = q.includes(name) || (terms.length === 1 && name.startsWith(q) && q.length >= 3);
     // Two-letter codes only count next to a driving word, so "ca" alone or "ma" in a word never fires.
     const byCode = terms.includes(s.code.toLowerCase()) && terms.some((t) => /^(dmv|permit|driving|driver|drivers|license|licence|learners?)$/.test(t));
-    if (byName || byCode) {
+    // Only a driving search: "texas real estate" is not the Texas permit test.
+    const rest = terms.filter((t) => !s.name.toLowerCase().split(" ").includes(t) && t !== s.code.toLowerCase());
+    if ((byName || byCode) && rest.every((t) => DRIVING.test(t))) {
       hits.push({
         key: `dmv:${s.code}`,
         test: dmv(),
@@ -113,8 +130,10 @@ function stateHits(terms: string[], q: string): SearchHit[] {
  */
 export function searchAllTests(query: string, region: Region, popularity: Record<string, number> = {}): SearchResult {
   const q = normalizeQuery(query);
-  const terms = words(q);
-  if (terms.length === 0) return { hits: [], fuzzy: false };
+  const allTerms = words(q);
+  if (allTerms.length === 0) return { hits: [], fuzzy: false };
+  const specific = allTerms.filter((t) => !GENERIC.has(t));
+  const terms = specific.length > 0 ? specific : allTerms;
 
   const regionRank = (r: TestRegion) => (r === region ? 0 : r === "GLOBAL" ? 1 : 2);
   const rank = (list: { c: Candidate; score: number }[]) =>
@@ -127,11 +146,18 @@ export function searchAllTests(query: string, region: Region, popularity: Record
       )
       .map((x) => testHit(x.c.test));
 
-  const exact = candidates()
-    .filter((c) => terms.every((t) => c.text.includes(t)))
+  let exact = candidates()
+    .filter((c) => terms.every((t) => termIn(t, c.text, c.textWords)))
     .map((c) => ({ c, score: terms.reduce((s, t) => s + titleScore(t, c.titleWords, c.title), 0) }));
+  // When several tests have the words in their name, one that only has them in
+  // its blurb is noise; with only a few name matches, blurb matches still help
+  // ("nursing" finds NCLEX, "citizenship" finds Life in the UK).
+  // A short term is usually an acronym (SAT, ACT, CNA): any name match beats the blurbs.
+  const nameHits = exact.filter((x) => x.score > 0).length;
+  const acronym = terms.some((t) => t.length <= 3);
+  if (nameHits >= 4 || (acronym && nameHits > 0)) exact = exact.filter((x) => x.score > 0);
 
-  const stateMatches = stateHits(terms, q);
+  const stateMatches = stateHits(allTerms, q);
   if (exact.length > 0 || stateMatches.length > 0) {
     const tests = rank(exact).filter((h) => !(stateMatches.length && h.key === "dmv"));
     return { hits: [...stateMatches, ...tests].slice(0, MAX_HITS), fuzzy: false };
@@ -143,12 +169,20 @@ export function searchAllTests(query: string, region: Region, popularity: Record
       let score = 0;
       for (const t of terms) {
         const budget = typoBudget(t);
-        if (c.text.includes(t)) score += 2;
+        if (termIn(t, c.text, c.textWords)) score += 2;
         else if (budget > 0 && c.textWords.some((w) => editDistance(t, w, budget) <= budget)) score += 1;
         else return null;
       }
       return { c, score };
     })
     .filter((x): x is { c: Candidate; score: number } => x !== null);
-  return { hits: rank(fuzzy).slice(0, MAX_HITS), fuzzy: fuzzy.length > 0 };
+  if (fuzzy.length > 0 || terms.length < 2) return { hits: rank(fuzzy).slice(0, MAX_HITS), fuzzy: fuzzy.length > 0 };
+
+  // Several words and no test has them all ("cdl permit"): the tests with the most of them.
+  const best = candidates()
+    .map((c) => ({ c, score: terms.filter((t) => termIn(t, c.text, c.textWords)).length * 10 + terms.reduce((s, t) => s + titleScore(t, c.titleWords, c.title), 0) }))
+    .filter((x) => x.score >= 10);
+  const top = Math.max(0, ...best.map((x) => Math.floor(x.score / 10)));
+  const partial = best.filter((x) => Math.floor(x.score / 10) === top);
+  return { hits: rank(partial).slice(0, MAX_HITS), fuzzy: partial.length > 0, partial: true };
 }

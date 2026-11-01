@@ -26,7 +26,8 @@ export function SharePromptStep({
     heading.current?.focus({ preventScroll: true });
   }, []);
 
-  const url = typeof window !== "undefined" ? window.location.origin : "https://tigertest.io";
+  // Tagged so a friend's first visit counts as "Friend's link" (lib/funnel.ts visitSource).
+  const url = `${typeof window !== "undefined" ? window.location.origin : "https://tigertest.io"}/?utm_source=friend`;
 
   const count = (how: "share" | "copy") => {
     setDone(how);

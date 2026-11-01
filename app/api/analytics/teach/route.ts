@@ -11,7 +11,7 @@ import { isClassCode, normalizeClassCode } from '@/lib/classes';
 // also counted by exam in nudgeExams.
 const STEPS = new Set(['landing_view', 'new_open', 'new_form', 'join_view', 'nudge_shown', 'nudge_copy', 'nudge_link']);
 // Mirrors VISIT_SOURCES in lib/funnel.ts (that module imports the client SDK).
-const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'direct', 'other']);
+const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'friend', 'direct', 'other']);
 
 /** A referrer hostname as a map key: Firestore keys can't hold dots in update paths, so they become "_". */
 function hostKey(host: unknown): string | null {

@@ -1,7 +1,8 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { trackSharePrompt } from "@/lib/analytics";
+import { trackSharePrompt as trackGa } from "@/lib/analytics";
+import { isInternalBrowser } from "@/lib/internal";
 
 // "Do me a favor, tell a friend" from John (components/SharePromptStep),
 // shown in place of the next question to people who are enjoying Tigertest
@@ -17,6 +18,18 @@ const STREAK = 3;
 const COOLDOWN_DAYS = 14;
 
 type Stored = { lastShownAt: number | null; shared: boolean };
+
+// GA4 plus the /admin Today tab counter (analytics/sharePrompt).
+function trackSharePrompt(action: "shown" | "skipped" | "share" | "copy", where: string) {
+  trackGa(action, where);
+  if (isInternalBrowser()) return;
+  fetch("/api/analytics/share-prompt", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ action, where }),
+    keepalive: true,
+  }).catch(() => {});
+}
 
 function read(): Stored {
   try {

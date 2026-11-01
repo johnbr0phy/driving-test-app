@@ -34,6 +34,7 @@ const SOURCE_LABELS: Record<string, string> = {
   claude: "Claude",
   ai_other: "Other AI",
   search: "Search",
+  friend: "Friend's link",
   direct: "Direct / email / app",
   other: "Other sites",
 };

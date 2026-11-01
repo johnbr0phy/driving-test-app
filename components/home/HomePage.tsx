@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ThemedScreenshot } from "@/components/ThemedScreenshot";
-import { TEST_CATALOG } from "@/lib/testCatalog";
+import { TEST_CATALOG, TEST_GROUPS } from "@/lib/testCatalog";
 import { TestCard, TestCatalogGrid } from "@/components/TestCatalogGrid";
 import { CountUp } from "@/components/CountUp";
 import { getPopularTests } from "@/lib/server/popularTests";
@@ -13,7 +13,7 @@ import { ORGANIZATION_ID, WEBSITE_ID } from "@/lib/siteSchema";
 import { EXAM_FACTS } from "@/lib/examFacts";
 import { HUB_PAGES_UPDATED_AT } from "@/lib/seoDates";
 import { states } from "@/data/states";
-import { NON_DRIVING_TESTS, REGIONS, REGION_HOME, REGION_HREFLANG, Region, regionHomePath, regionOfTest, regionInfo } from "@/lib/region";
+import { NON_DRIVING_TESTS, REGIONS, REGION_HOME, REGION_HREFLANG, Region, orderGroupsForRegion, regionHomePath, regionOfTest, regionInfo } from "@/lib/region";
 import type { TestCatalogEntry } from "@/lib/testCatalog";
 import { countryNameIn, homeCopy } from "@/components/home/homeCopy";
 import type { Language } from "@/i18n";
@@ -439,6 +439,38 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
 
       </>)}
 
+      {/* The search homepages' catalog: every test as plain links, so crawlers
+          (and anyone who would rather browse) reach each landing from the homepage. */}
+      {search && (
+      <div id="all-tests" className="max-w-5xl mx-auto px-6 py-14 md:py-20 scroll-mt-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-8">
+          {us ? c.everyTest : c.testsFor(inName)}
+        </h2>
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-8">
+          {catalogLinksFor(region).map((g) => (
+            <div key={g.title} className="break-inside-avoid mb-7">
+              <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-50 mb-2">{g.title}</h3>
+              <ul className="space-y-1.5">
+                {g.tests.map((t) => (
+                  <li key={t.id}>
+                    <Link href={t.href} className="text-sm text-gray-600 dark:text-gray-300 hover:text-brand-dark hover:underline">
+                      {nameIn(t, lang)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        {!us && (
+          <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+            {c.usExamPrompt}{" "}
+            <Link href="/tests" className="font-medium text-brand-dark hover:underline">{c.seeAllTests(examCount)}</Link>
+          </p>
+        )}
+      </div>
+      )}
+
       {/* FAQ */}
       <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
@@ -488,4 +520,12 @@ async function trendingFor(region: Region, ranked: { test: TestCatalogEntry; ans
     if (!trending.includes(name)) trending.push(name);
   }
   return trending;
+}
+
+/** The catalog groups a search homepage links to: every group in the US (US and
+ *  worldwide first), elsewhere only the country's own and worldwide tests. */
+function catalogLinksFor(region: Region) {
+  const local = (id: string) => regionOfTest(id) === region || regionOfTest(id) === "GLOBAL";
+  const groups = region === "US" ? TEST_GROUPS : TEST_GROUPS.map((g) => ({ ...g, tests: g.tests.filter((t) => local(t.id)) }));
+  return orderGroupsForRegion(groups.filter((g) => g.tests.length > 0), region);
 }

@@ -32,7 +32,10 @@ import { useStore } from "@/store/useStore";
 import { useV2Store } from "@/store/useV2Store";
 
 // Pages that are the search for a test themselves, so they carry no test chip.
-const HOME_PATHS = new Set(["/home-v2", "/tests", ...REGIONS.map((r) => regionHomePath(r.code))]);
+const HOME_PATHS = new Set(["/tests", ...REGIONS.map((r) => regionHomePath(r.code))]);
+// English homepages open on the big wordmark and search box (SearchHome), so
+// the header there drops its logo and border and keeps the tabs on phones.
+const SEARCH_HOMES = new Set(REGIONS.filter((r) => r.lang === "en").map((r) => regionHomePath(r.code)));
 
 /**
  * True on the full-screen pages where someone is answering questions: tests,
@@ -102,7 +105,7 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
     : undefined;
   const { lang: testLang } = useTestLanguage(exam?.id ?? "", exam ? examLanguages(exam) : ["en"], exam ? examBaseLanguage(exam) : "en");
   const t = exam ? createT(landingLang ?? testLang) : pageT;
-  const searchHome = path === "/home-v2";
+  const searchHome = SEARCH_HOMES.has(path);
   const onTeach = path === "/teach" || path.startsWith("/teach/");
 
   // Started-ness decides "Sign up to save" and Your Stats for guests.

@@ -1,6 +1,6 @@
 import { getAdminDb } from "@/lib/firebase-admin";
 
-// "Trending searches" on the search homepage (/home-v2): the queries typed
+// "Trending searches" on the homepage search (SearchHome): the queries typed
 // most over the last 7 days that found a test (from searchQueries, written by
 // /api/analytics/search). Empty when Firestore is unreachable.
 export async function getTrendingSearches(limit = 6): Promise<string[]> {

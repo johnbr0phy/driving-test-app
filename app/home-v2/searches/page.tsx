@@ -70,7 +70,7 @@ function Table({ title, note, rows, showPicks }: { title: string; note: string; 
   );
 }
 
-// Admin view of what people type on /home-v2. API: /api/admin/searches (admin only).
+// Admin view of what people type into the test search (homepage and header chip). API: /api/admin/searches (admin only).
 export default function HomeV2SearchesPage() {
   const { data, error, loading } = useAdminFetch<Payload>("/api/admin/searches");
   return (
@@ -79,7 +79,7 @@ export default function HomeV2SearchesPage() {
         <div>
           <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50">Homepage searches</h1>
           <p className="text-sm text-gray-600 dark:text-gray-300">
-            What people type on the <Link href="/home-v2" className="underline">search homepage</Link>. Searches that find nothing are the tests to build next.
+            What people type on the <Link href="/" className="underline">homepage</Link> and the header&apos;s test search. Searches that find nothing are the tests to build next.
           </p>
         </div>
         {loading && <TabLoading />}

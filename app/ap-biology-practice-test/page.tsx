@@ -10,7 +10,7 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free AP Biology Practice Test 2026 - Multiple Choice";
+const title = "Free AP Biology Practice Test 2027 - Multiple Choice";
 const metaDescription =
   "Free AP Biology practice tests: 60 multiple-choice questions in 90 minutes, all eight units, data and experiment sets, 200 original questions with explanations.";
 const description =
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "AP Biology practice test, free AP Biology practice test, AP Bio practice test, AP Biology multiple choice, AP Biology practice questions, AP Bio MCQ, AP Biology exam 2026, AP Biology units, AP Biology review",
+    "AP Biology practice test, free AP Biology practice test, AP Bio practice test, AP Biology multiple choice, AP Biology practice questions, AP Bio MCQ, AP Biology exam 2027, AP Biology units, AP Biology review",
   alternates: {
     canonical: `${siteUrl}/ap-biology-practice-test`,
   },
@@ -122,7 +122,7 @@ export default function ApBiologyLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            Free AP Biology Practice Test 2026
+            Free AP Biology Practice Test 2027
           </h1>
           <ExamLandingHero
             dashboardHref="/ap-biology/dashboard"

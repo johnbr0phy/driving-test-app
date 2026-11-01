@@ -1,0 +1,4651 @@
+[
+  {
+    "id": "APCALCAB-T1-001",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Determining limits using algebraic manipulation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 3} \\frac{x^2 - x - 6}{x - 3}$?",
+    "options": [
+      "$3$",
+      "The limit does not exist",
+      "$0$",
+      "$5$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Direct substitution gives $\\frac{0}{0}$, so factor: $\\frac{(x - 3)(x + 2)}{x - 3} = x + 2$ for $x \\neq 3$. The limit is $3 + 2 = 5$. A $\\frac{0}{0}$ form says to simplify; it does not mean the limit is 0 or fails to exist."
+  },
+  {
+    "id": "APCALCAB-T1-002",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Removing discontinuities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Let $f(x) = kx + 1$ for $x < 2$ and $f(x) = x^2 + 5$ for $x \\geq 2$. For what value of $k$ is $f$ continuous at $x = 2$?",
+    "options": [
+      "$4$",
+      "$\\frac{9}{2}$",
+      "$5$",
+      "$6$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The right piece gives $f(2) = 4 + 5 = 9$, and the left piece approaches $2k + 1$. Setting $2k + 1 = 9$ gives $k = 4$. Forgetting the $+1$ gives $\\frac{9}{2}$."
+  },
+  {
+    "id": "APCALCAB-T1-003",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Limits at infinity and horizontal asymptotes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to \\infty} \\frac{5x^3 - 2x}{4 - 2x^3}$?",
+    "options": [
+      "$-\\frac{5}{2}$",
+      "$-\\frac{1}{2}$",
+      "$0$",
+      "$\\frac{5}{4}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Numerator and denominator have the same degree, so the limit is the ratio of the leading coefficients: $\\frac{5}{-2} = -\\frac{5}{2}$. The constant 4 does not lead; $-2x^3$ does."
+  },
+  {
+    "id": "APCALCAB-T1-004",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Types of discontinuities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Let $g(x) = \\frac{x^2 - 4}{x - 2}$ for $x \\neq 2$ and $g(2) = 1$. Which statement is true?",
+    "options": [
+      "$g$ is continuous at $x = 2$",
+      "$\\lim_{x \\to 2} g(x)$ does not exist",
+      "$\\lim_{x \\to 2} g(x)$ exists, but $g$ is not continuous at 2",
+      "$g$ has a vertical asymptote at $x = 2$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For $x \\neq 2$, $g(x) = x + 2$, so the limit at 2 is 4. Because $g(2) = 1 \\neq 4$, the discontinuity is removable: the limit exists but does not equal the function value."
+  },
+  {
+    "id": "APCALCAB-T1-005",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Defining the derivative of a function",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\lim_{h \\to 0} \\frac{(2 + h)^3 - 8}{h}$?",
+    "options": [
+      "$0$",
+      "$6$",
+      "$8$",
+      "$12$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "This is the definition of $f'(2)$ for $f(x) = x^3$. Since $f'(x) = 3x^2$, the limit is $3(2)^2 = 12$. The value 8 is $f(2)$, not the slope."
+  },
+  {
+    "id": "APCALCAB-T1-006",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Applying the power rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $f(x) = 4x^3 - \\frac{6}{x} + \\sqrt{x}$, what is $f'(1)$?",
+    "options": [
+      "$\\frac{13}{2}$",
+      "$\\frac{25}{2}$",
+      "$\\frac{35}{2}$",
+      "$\\frac{37}{2}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = 12x^2 + 6x^{-2} + \\frac{1}{2}x^{-1/2}$, so $f'(1) = 12 + 6 + \\frac{1}{2} = \\frac{37}{2}$. The derivative of $-6x^{-1}$ is $+6x^{-2}$; keeping the minus sign gives $\\frac{13}{2}$."
+  },
+  {
+    "id": "APCALCAB-T1-007",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "The product rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $y = x^2e^x$, then $\\frac{dy}{dx} =$",
+    "options": [
+      "$xe^x(x + 2)$",
+      "$xe^x(x + 1)$",
+      "$x^2e^x + 2x$",
+      "$2xe^x$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Product rule: $2x \\cdot e^x + x^2 \\cdot e^x = xe^x(x + 2)$. Multiplying the two derivatives, $2x \\cdot e^x$, is the classic error."
+  },
+  {
+    "id": "APCALCAB-T1-008",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Connecting differentiability and continuity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Let $f(x) = x^2 + 1$ for $x \\leq 2$ and $f(x) = 3x - 1$ for $x > 2$. Which statement is true about $f$ at $x = 2$?",
+    "options": [
+      "$f$ is neither continuous nor differentiable",
+      "$f$ is continuous but not differentiable",
+      "$f$ is both continuous and differentiable",
+      "$f$ is differentiable but not continuous"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Both pieces give 5 at $x = 2$, so $f$ is continuous there. The slopes differ: $2x = 4$ on the left and 3 on the right, so the graph has a corner and $f'(2)$ does not exist. A function that is differentiable is always continuous, so the second choice is impossible."
+  },
+  {
+    "id": "APCALCAB-T1-009",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "The chain rule",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $f(x) = (x^2 + 1)^5$, what is $f'(1)$?",
+    "options": [
+      "$10$",
+      "$32$",
+      "$80$",
+      "$160$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = 5(x^2 + 1)^4 \\cdot 2x$, so $f'(1) = 5(2)^4(2) = 160$. Leaving out the inner derivative $2x$ gives 80."
+  },
+  {
+    "id": "APCALCAB-T1-010",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Implicit differentiation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For the curve $x^2 + xy + y^2 = 19$, what is $\\frac{dy}{dx}$ at the point $(2, 3)$?",
+    "options": [
+      "$-2$",
+      "$-\\frac{3}{2}$",
+      "$-\\frac{8}{7}$",
+      "$-\\frac{7}{8}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Differentiate: $2x + y + xy' + 2yy' = 0$, so $y' = -\\frac{2x + y}{x + 2y}$. At $(2, 3)$: $-\\frac{7}{8}$. Swapping numerator and denominator gives $-\\frac{8}{7}$."
+  },
+  {
+    "id": "APCALCAB-T1-011",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Differentiating inverse functions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Let $f(x) = x^3 + 2x + 1$, and let $g$ be the inverse function of $f$. What is $g'(4)$?",
+    "options": [
+      "$\\frac{1}{50}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{4}$",
+      "$5$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$f(1) = 4$, so $g(4) = 1$, and $g'(4) = \\frac{1}{f'(1)}$. With $f'(x) = 3x^2 + 2$, $f'(1) = 5$, so $g'(4) = \\frac{1}{5}$. Using $f'(4) = 50$ instead of $f'(1)$ gives $\\frac{1}{50}$."
+  },
+  {
+    "id": "APCALCAB-T1-012",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Straight-line motion: position, velocity and acceleration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A particle moves along the x-axis with position $x(t) = t^3 - 6t^2 + 9t$ for $t \\geq 0$. For which values of $t$ is the particle moving to the left?",
+    "options": [
+      "$0 < t < 1$",
+      "$1 < t < 3$",
+      "$t > 3$",
+      "$0 < t < 2$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$v(t) = 3t^2 - 12t + 9 = 3(t - 1)(t - 3)$, which is negative between its zeros, so the particle moves left for $1 < t < 3$. The interval $0 < t < 2$ is where the acceleration $6t - 12$ is negative, not the velocity."
+  },
+  {
+    "id": "APCALCAB-T1-013",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Using L'Hospital's rule for determining limits of indeterminate forms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 0} \\frac{e^{2x} - 1 - 2x}{x^2}$?",
+    "options": [
+      "$0$",
+      "$1$",
+      "$2$",
+      "$4$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The form is $\\frac{0}{0}$. L'Hospital's rule once gives $\\frac{2e^{2x} - 2}{2x}$, still $\\frac{0}{0}$; again gives $\\frac{4e^{2x}}{2} \\to 2$. Forgetting that the derivative of $2x$ is 2 gives 4."
+  },
+  {
+    "id": "APCALCAB-T1-014",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Approximating values of a function using local linearity",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Using the line tangent to $f(x) = \\sqrt{x}$ at $x = 16$, what is the approximation of $\\sqrt{16.4}$?",
+    "options": [
+      "4.05",
+      "4.1",
+      "4.2",
+      "4.4"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$f(16) = 4$ and $f'(16) = \\frac{1}{2\\sqrt{16}} = \\frac{1}{8}$. So $\\sqrt{16.4} \\approx 4 + \\frac{1}{8}(0.4) = 4.05$. Using a slope of $\\frac{1}{4}$ gives 4.1."
+  },
+  {
+    "id": "APCALCAB-T1-015",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the Mean Value Theorem",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "For $f(x) = x^2 - 4x$ on $[1, 5]$, what value of $c$ satisfies the conclusion of the Mean Value Theorem?",
+    "options": [
+      "$1$",
+      "$2$",
+      "$\\frac{5}{2}$",
+      "$3$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The average rate of change is $\\frac{f(5) - f(1)}{4} = \\frac{5 - (-3)}{4} = 2$. Setting $f'(c) = 2c - 4 = 2$ gives $c = 3$. The value $c = 2$ is where $f'(c) = 0$."
+  },
+  {
+    "id": "APCALCAB-T1-016",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Determining intervals on which a function is increasing or decreasing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "On which intervals is $f(x) = x^3 - 12x + 1$ increasing?",
+    "options": [
+      "$-2 < x < 0$ and $x > 2$",
+      "$x < -2$ only",
+      "$x < -2$ and $x > 2$",
+      "$x > 2$ only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$f'(x) = 3x^2 - 12 = 3(x - 2)(x + 2)$, which is positive when $|x| > 2$. Between $-2$ and $2$ the derivative is negative, so $f$ decreases on all of that interval, including $-2 < x < 0$."
+  },
+  {
+    "id": "APCALCAB-T1-017",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the candidates test to determine absolute extrema",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the absolute maximum value of $f(x) = 2x^3 - 3x^2 - 12x$ on the interval $[-2, 4]$?",
+    "options": [
+      "$-20$",
+      "$4$",
+      "$7$",
+      "$32$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = 6(x - 2)(x + 1)$, so the candidates are $x = -2, -1, 2, 4$ with values $-4, 7, -20, 32$. The largest is $f(4) = 32$. The value 7 is only a relative maximum, and 4 is the $x$-value, not the maximum."
+  },
+  {
+    "id": "APCALCAB-T1-018",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Determining concavity of functions over their domains",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At which values of $x$ does $f(x) = x^4 - 4x^3$ have a point of inflection?",
+    "options": [
+      "$x = 0$ and $x = 2$",
+      "$x = 3$ only",
+      "$x = 2$ only",
+      "$x = 0$ and $x = 3$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$f''(x) = 12x^2 - 24x = 12x(x - 2)$ changes sign at both 0 and 2, so both are inflection points. The value $x = 3$ is a critical point of $f$, found from $f'$, not $f''$."
+  },
+  {
+    "id": "APCALCAB-T1-019",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the second derivative test to determine extrema",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A twice-differentiable function has $f'(1) = 0$ and $f''(1) = -3$. At $x = 1$, $f$ has",
+    "options": [
+      "no relative extremum",
+      "a relative minimum",
+      "a relative maximum",
+      "a point of inflection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A critical point where the graph is concave down ($f'' < 0$) is a relative maximum, by the second derivative test."
+  },
+  {
+    "id": "APCALCAB-T1-020",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "The Fundamental Theorem of Calculus and definite integrals",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\int_0^2 (3x^2 - 2x + 1)\\,dx$?",
+    "options": [
+      "$6$",
+      "$9$",
+      "$10$",
+      "$14$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "An antiderivative is $x^3 - x^2 + x$, which is $8 - 4 + 2 = 6$ at 2 and 0 at 0. The value 9 is the integrand evaluated at $x = 2$, not the integral."
+  },
+  {
+    "id": "APCALCAB-T1-021",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Integrating using substitution",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\int \\cos(4x)\\,dx$?",
+    "options": [
+      "$\\frac{1}{4}\\sin(4x) + C$",
+      "$-\\frac{1}{4}\\sin(4x) + C$",
+      "$\\sin(4x) + C$",
+      "$4\\sin(4x) + C$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With $u = 4x$, $du = 4\\,dx$, so the integral is $\\frac{1}{4}\\sin(4x) + C$. Check by differentiating: $\\frac{1}{4} \\cdot 4\\cos(4x) = \\cos(4x)$. Multiplying by 4 is the derivative step done backward."
+  },
+  {
+    "id": "APCALCAB-T1-022",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "The Fundamental Theorem of Calculus and accumulation functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Let $g(x) = \\int_1^x \\sqrt{t^3 + 1}\\,dt$. What is $g'(2)$?",
+    "options": [
+      "$\\frac{1}{6}$",
+      "$3$",
+      "$9$",
+      "$12$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "By the Fundamental Theorem, $g'(x) = \\sqrt{x^3 + 1}$, so $g'(2) = \\sqrt{9} = 3$. The value 9 forgets the square root, and 12 differentiates the inside instead."
+  },
+  {
+    "id": "APCALCAB-T1-023",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Approximating areas with Riemann sums",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the left Riemann sum for $f(x) = x^2$ on $[0, 4]$ with four subintervals of equal width?",
+    "options": [
+      "$14$",
+      "$16$",
+      "$21$",
+      "$30$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The left endpoints are 0, 1, 2 and 3, each with width 1: $0 + 1 + 4 + 9 = 14$. The right sum is $1 + 4 + 9 + 16 = 30$, and 21 is the midpoint sum."
+  },
+  {
+    "id": "APCALCAB-T1-024",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Integrating using substitution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\int_0^1 x(x^2 + 1)^3\\,dx$?",
+    "options": [
+      "$\\frac{15}{8}$",
+      "$2$",
+      "$\\frac{15}{4}$",
+      "$\\frac{15}{2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Let $u = x^2 + 1$, $du = 2x\\,dx$, with $u$ from 1 to 2: $\\frac{1}{2}\\int_1^2 u^3\\,du = \\frac{1}{8}(16 - 1) = \\frac{15}{8}$. Forgetting the factor $\\frac{1}{2}$ gives $\\frac{15}{4}$."
+  },
+  {
+    "id": "APCALCAB-T1-025",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Applying properties of definite integrals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $\\int_1^5 f(x)\\,dx = 8$ and $\\int_1^3 f(x)\\,dx = 3$, what is $\\int_3^5 (2f(x) + 1)\\,dx$?",
+    "options": [
+      "$6$",
+      "$10$",
+      "$11$",
+      "$12$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\int_3^5 f(x)\\,dx = 8 - 3 = 5$. Then $\\int_3^5 (2f(x) + 1)\\,dx = 2(5) + \\int_3^5 1\\,dx = 10 + 2 = 12$. The constant 1 integrates to the length of the interval, 2, not to 1."
+  },
+  {
+    "id": "APCALCAB-T1-026",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Finding particular solutions using initial conditions and separation of variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which function is the solution of $\\frac{dy}{dx} = xy$ with $y(0) = 3$?",
+    "options": [
+      "$y = 3e^{x^2/2}$",
+      "$y = \\frac{x^2}{2} + 3$",
+      "$y = 3e^{x^2}$",
+      "$y = e^{x^2/2} + 2$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Separate: $\\frac{dy}{y} = x\\,dx$, so $\\ln|y| = \\frac{x^2}{2} + C$ and $y = Ae^{x^2/2}$. $y(0) = 3$ gives $A = 3$. Adding the constant after exponentiating, as in $e^{x^2/2} + 2$, is the common error."
+  },
+  {
+    "id": "APCALCAB-T1-027",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Reasoning using slope fields",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A slope field has horizontal segments at every point on the line $y = 2$, positive slopes at every point below that line and negative slopes at every point above it. Which differential equation could it represent?",
+    "options": [
+      "$\\frac{dy}{dx} = 2x - y$",
+      "$\\frac{dy}{dx} = x - 2$",
+      "$\\frac{dy}{dx} = y - 2$",
+      "$\\frac{dy}{dx} = 2 - y$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$2 - y$ is 0 when $y = 2$, positive when $y < 2$ and negative when $y > 2$. $y - 2$ has the signs reversed, $x - 2$ is zero on a vertical line, and $2x - y$ is zero on the line $y = 2x$."
+  },
+  {
+    "id": "APCALCAB-T1-028",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Finding the average value of a function on an interval",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the average value of $f(x) = x^2$ on the interval $[0, 3]$?",
+    "options": [
+      "$3$",
+      "$\\frac{9}{2}$",
+      "$6$",
+      "$9$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Average value $= \\frac{1}{3 - 0}\\int_0^3 x^2\\,dx = \\frac{1}{3} \\cdot 9 = 3$. The value 9 is the integral itself, and $\\frac{9}{2}$ averages the endpoint values $f(0)$ and $f(3)$."
+  },
+  {
+    "id": "APCALCAB-T1-029",
+    "section": "nocalc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Finding the area between curves expressed as functions of x",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the area of the region enclosed by $y = x$ and $y = x^2$?",
+    "options": [
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{5}{6}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The curves meet at $x = 0$ and $x = 1$, and $x \\geq x^2$ between them: $\\int_0^1 (x - x^2)\\,dx = \\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}$. The value $\\frac{1}{2}$ is the area under $y = x$ alone."
+  },
+  {
+    "id": "APCALCAB-T1-030",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Estimating limit values from tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Let $f(x) = \\frac{3^x - 1}{x}$. Using values of $f$ at $x = 0.001$ and $x = -0.001$, $\\lim_{x \\to 0} f(x)$ is closest to",
+    "options": [
+      "0.477",
+      "0.693",
+      "1.000",
+      "1.099"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$f(0.001) \\approx 1.0992$ and $f(-0.001) \\approx 1.0980$, so the limit is about 1.099 (it equals $\\ln 3$). The value 0.693 is $\\ln 2$, the limit for base 2."
+  },
+  {
+    "id": "APCALCAB-T1-031",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "The quotient rule",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "If $f(x) = \\frac{e^x}{x^2 + 1}$, what is $f'(1.4)$?",
+    "options": [
+      "0.074",
+      "1.370",
+      "1.448",
+      "2.666"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = \\frac{e^x(x^2 + 1) - e^x(2x)}{(x^2 + 1)^2} = \\frac{e^x(x - 1)^2}{(x^2 + 1)^2}$, which is about 0.074 at $x = 1.4$. The value 1.370 is $f(1.4)$, and 2.666 comes from adding $2xe^x$ instead of subtracting it."
+  },
+  {
+    "id": "APCALCAB-T1-032",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Solving related rates problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The volume of a sphere is increasing at 20 cubic centimeters per second. How fast, in centimeters per second, is the radius increasing when the radius is 3 centimeters? ($V = \\frac{4}{3}\\pi r^3$)",
+    "options": [
+      "0.177",
+      "0.354",
+      "0.531",
+      "0.707"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{dV}{dt} = 4\\pi r^2\\frac{dr}{dt}$, so $20 = 4\\pi(9)\\frac{dr}{dt}$ and $\\frac{dr}{dt} = \\frac{20}{36\\pi} \\approx 0.177$. Dividing by the volume formula's $\\frac{4}{3}\\pi r^2$ instead gives 0.531."
+  },
+  {
+    "id": "APCALCAB-T1-033",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Rates of change in applied contexts other than motion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The temperature of a cup of water is $W(t) = 20 + 60e^{-0.04t}$ degrees Celsius, $t$ minutes after it is poured. At what rate, in degrees Celsius per minute, is the temperature changing at $t = 10$?",
+    "options": [
+      "-2.400",
+      "-1.609",
+      "-0.670",
+      "60.219"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$W'(t) = 60(-0.04)e^{-0.04t} = -2.4e^{-0.04t}$, and $W'(10) = -2.4e^{-0.4} \\approx -1.609$. The value 60.219 is the temperature $W(10)$, and $-2.400$ is the rate at $t = 0$."
+  },
+  {
+    "id": "APCALCAB-T1-034",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the candidates test to determine absolute extrema",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the absolute minimum value of $f(x) = x\\ln x - 2x$ on the interval $[1, 10]$?",
+    "options": [
+      "-2.718",
+      "-2.000",
+      "2.718",
+      "3.026"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = \\ln x + 1 - 2 = \\ln x - 1$, which is 0 at $x = e$. The candidates give $f(1) = -2$, $f(e) = -e \\approx -2.718$ and $f(10) \\approx 3.026$, so the minimum is $-2.718$. The value 2.718 is the $x$-value $e$."
+  },
+  {
+    "id": "APCALCAB-T1-035",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Solving optimization problems",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the shortest distance from the point $(4, 0)$ to the curve $y = \\sqrt{x}$?",
+    "options": [
+      "1.871",
+      "1.936",
+      "2.000",
+      "3.750"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Minimize $d^2 = (x - 4)^2 + x$. Its derivative $2(x - 4) + 1$ is 0 at $x = 3.5$, so $d = \\sqrt{0.25 + 3.5} = \\sqrt{3.75} \\approx 1.936$. The value 3.750 is $d^2$, and 2.000 is the distance to the point $(4, 2)$."
+  },
+  {
+    "id": "APCALCAB-T1-036",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Approximating areas with Riemann sums",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Water flows into a tank at a rate $r(t)$ liters per minute, with $r(0) = 4$, $r(3) = 6.2$, $r(5) = 7.1$ and $r(10) = 9.5$. Using a trapezoidal sum with the three subintervals given by these times, what is the approximate amount of water, in liters, that flows in from $t = 0$ to $t = 10$?",
+    "options": [
+      "59.9",
+      "66.8",
+      "70.1",
+      "80.3"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The subintervals have widths 3, 2 and 5: $3\\cdot\\frac{4 + 6.2}{2} + 2\\cdot\\frac{6.2 + 7.1}{2} + 5\\cdot\\frac{7.1 + 9.5}{2} = 15.3 + 13.3 + 41.5 = 70.1$. The left and right sums are 59.9 and 80.3; 66.8 treats the three widths as equal ($\\frac{10}{3}$ each)."
+  },
+  {
+    "id": "APCALCAB-T1-037",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Finding antiderivatives and indefinite integrals: basic rules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\int_0^3 \\frac{5}{x + 2}\\,dx$?",
+    "options": [
+      "0.916",
+      "1.500",
+      "4.581",
+      "8.047"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\int \\frac{5}{x + 2}\\,dx = 5\\ln|x + 2|$, so the value is $5(\\ln 5 - \\ln 2) = 5\\ln 2.5 \\approx 4.581$. Using only the upper limit gives $5\\ln 5 \\approx 8.047$, and 0.916 drops the factor 5."
+  },
+  {
+    "id": "APCALCAB-T1-038",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Exponential models with differential equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A population grows at a rate proportional to its size. It is 200 at $t = 0$ and 350 at $t = 3$. To the nearest whole number, what is the population at $t = 7$?",
+    "options": [
+      "550",
+      "613",
+      "738",
+      "817"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$P(t) = 200e^{kt}$ with $e^{3k} = 1.75$, so $P(7) = 200(1.75)^{7/3} \\approx 738$. Growing by a fixed 50 per unit of time is linear, giving 550; $350 \\cdot \\frac{7}{3} \\approx 817$ scales the wrong way."
+  },
+  {
+    "id": "APCALCAB-T1-039",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Connecting position, velocity and acceleration of functions using integrals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A particle moves along the x-axis with velocity $v(t) = e^{0.4t} - 3$, and its position at $t = 0$ is $x(0) = 2$. What is its position at $t = 4$?",
+    "options": [
+      "-2.117",
+      "-0.117",
+      "3.953",
+      "11.883"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$x(4) = 2 + \\int_0^4 (e^{0.4t} - 3)\\,dt = 2 + 2.5(e^{1.6} - 1) - 12 \\approx -0.117$. Leaving out $x(0)$ gives $-2.117$, and 3.953 adds the velocity $v(4)$ instead of the integral."
+  },
+  {
+    "id": "APCALCAB-T1-040",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Connecting position, velocity and acceleration of functions using integrals",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A particle moves along a line with velocity $v(t) = 2 - e^{0.5t}$. What is the total distance it travels from $t = 0$ to $t = 3$?",
+    "options": [
+      "-0.963",
+      "0.963",
+      "1.736",
+      "2.509"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$v$ changes sign at $t = 2\\ln 2 \\approx 1.386$. Distance is $\\int_0^3 |v(t)|\\,dt \\approx 0.773 + 1.736 = 2.509$. The displacement $\\int_0^3 v(t)\\,dt$ is $-0.963$; its size, 0.963, is still not the distance."
+  },
+  {
+    "id": "APCALCAB-T1-041",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Volume with disc method: revolving around the x- or y-axis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The region under $y = e^{x/2}$ from $x = 0$ to $x = 2$ is revolved about the x-axis. What is the volume of the solid?",
+    "options": [
+      "6.389",
+      "10.796",
+      "20.072",
+      "23.213"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Discs of radius $e^{x/2}$: $V = \\pi\\int_0^2 (e^{x/2})^2\\,dx = \\pi\\int_0^2 e^x\\,dx = \\pi(e^2 - 1) \\approx 20.072$. The value 6.389 leaves out $\\pi$, and 10.796 forgets to square the radius."
+  },
+  {
+    "id": "APCALCAB-T1-042",
+    "section": "calc",
+    "test": 1,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Using accumulation functions and definite integrals in applied contexts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Water flows into a tank at $R(t) = \\frac{30}{t + 1}$ liters per minute and drains out at a constant 8 liters per minute. The tank holds 50 liters at $t = 0$. How many liters does it hold at $t = 6$?",
+    "options": [
+      "10.377",
+      "44.286",
+      "60.377",
+      "108.377"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Amount $= 50 + \\int_0^6 \\left(\\frac{30}{t + 1} - 8\\right)dt = 50 + 30\\ln 7 - 48 \\approx 60.377$. Forgetting the drain gives 108.377, and leaving out the starting 50 liters gives 10.377."
+  },
+  {
+    "id": "APCALCAB-T2-001",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Determining limits using the squeeze theorem",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 0} \\frac{\\sin(7x)}{3x}$?",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{3}{7}$",
+      "$1$",
+      "$\\frac{7}{3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Write it as $\\frac{7}{3} \\cdot \\frac{\\sin(7x)}{7x}$. Since $\\frac{\\sin u}{u} \\to 1$ as $u \\to 0$, the limit is $\\frac{7}{3}$."
+  },
+  {
+    "id": "APCALCAB-T2-002",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Determining limits using algebraic manipulation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{x - 4}$?",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{2}$",
+      "$2$",
+      "$4$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Factor the denominator as $(\\sqrt{x} - 2)(\\sqrt{x} + 2)$, so the expression is $\\frac{1}{\\sqrt{x} + 2}$ for $x \\neq 4$. At $x = 4$ that is $\\frac{1}{4}$."
+  },
+  {
+    "id": "APCALCAB-T2-003",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Connecting infinite limits and vertical asymptotes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does $f(x) = \\frac{x^2 - 1}{x^2 + x - 2}$ have a vertical asymptote?",
+    "options": [
+      "At $x = -2$ and $x = 1$",
+      "At $x = 1$ only",
+      "At $x = -2$ only",
+      "At $x = -1$ and $x = -2$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$f(x) = \\frac{(x - 1)(x + 1)}{(x + 2)(x - 1)}$. The factor $x - 1$ cancels, so $x = 1$ is a removable discontinuity (a hole). Only $x + 2$ remains in the denominator, giving an asymptote at $x = -2$."
+  },
+  {
+    "id": "APCALCAB-T2-004",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Working with the Intermediate Value Theorem",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The function $f$ is continuous on $[1, 5]$ with $f(1) = 4$ and $f(5) = -2$. Which statement must be true?",
+    "options": [
+      "$f'(c) = -\\frac{3}{2}$ for some $c$ in $(1, 5)$",
+      "$f(3) = 1$",
+      "$f$ is decreasing on $[1, 5]$",
+      "$f(c) = 0$ for some $c$ in $(1, 5)$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "0 lies between $f(1) = 4$ and $f(5) = -2$, so the Intermediate Value Theorem guarantees a $c$ with $f(c) = 0$. The derivative statement needs differentiability (the Mean Value Theorem), which is not given."
+  },
+  {
+    "id": "APCALCAB-T2-005",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Defining the derivative of a function",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is an equation of the line tangent to $y = x^2 - 3x$ at $x = 4$?",
+    "options": [
+      "$y = 5x - 20$",
+      "$y = 4x - 12$",
+      "$y = 5x + 4$",
+      "$y = 5x - 16$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "At $x = 4$, $y = 16 - 12 = 4$ and $y' = 2x - 3 = 5$. The tangent line is $y - 4 = 5(x - 4)$, or $y = 5x - 16$."
+  },
+  {
+    "id": "APCALCAB-T2-006",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "The quotient rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\frac{d}{dx}\\left(\\frac{2x + 1}{x - 3}\\right)$?",
+    "options": [
+      "$\\frac{7}{(x - 3)^2}$",
+      "$\\frac{-7}{(x - 3)^2}$",
+      "$\\frac{-5}{(x - 3)^2}$",
+      "$\\frac{4x - 5}{(x - 3)^2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\frac{2(x - 3) - (2x + 1)(1)}{(x - 3)^2} = \\frac{2x - 6 - 2x - 1}{(x - 3)^2} = \\frac{-7}{(x - 3)^2}$. Reversing the order of the numerator gives $+7$."
+  },
+  {
+    "id": "APCALCAB-T2-007",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Derivatives of trigonometric functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $y = 3\\tan x - 2\\cos x$, what is the value of $\\frac{dy}{dx}$ at $x = 0$?",
+    "options": [
+      "$-2$",
+      "$1$",
+      "$3$",
+      "$5$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{dy}{dx} = 3\\sec^2 x + 2\\sin x$. At $x = 0$: $3(1) + 2(0) = 3$. The term $-2\\cos x$ contributes $2\\sin 0 = 0$ to the slope; answers of 1 or 5 use the value of $2\\cos 0$ instead of its derivative."
+  },
+  {
+    "id": "APCALCAB-T2-008",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Estimating derivatives of a function at a point",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A differentiable function $h$ has $h(0) = 10$, $h(2) = 16$, $h(5) = 20$ and $h(9) = 29$. Using the data closest to $t = 4$, the best estimate of $h'(4)$ is",
+    "options": [
+      "$\\frac{4}{3}$",
+      "$2$",
+      "$\\frac{9}{4}$",
+      "$3$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$t = 4$ lies between 2 and 5, so use the difference quotient $\\frac{h(5) - h(2)}{5 - 2} = \\frac{20 - 16}{3} = \\frac{4}{3}$. The other values use intervals that do not contain 4."
+  },
+  {
+    "id": "APCALCAB-T2-009",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "The chain rule",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\frac{d}{dx}\\sin(3x^2)$?",
+    "options": [
+      "$3x^2\\cos(3x^2)$",
+      "$6x\\cos(3x^2)$",
+      "$\\cos(6x)$",
+      "$-6x\\cos(3x^2)$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The outer derivative is $\\cos(3x^2)$ and the inner derivative is $6x$, so the result is $6x\\cos(3x^2)$. The derivative of $\\sin$ is $+\\cos$, so no minus sign appears."
+  },
+  {
+    "id": "APCALCAB-T2-010",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Calculating higher-order derivatives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $y = xe^{2x}$, what is the value of $\\frac{d^2y}{dx^2}$ at $x = 0$?",
+    "options": [
+      "$0$",
+      "$2$",
+      "$4$",
+      "$8$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$y' = e^{2x} + 2xe^{2x}$ and $y'' = 2e^{2x} + 2e^{2x} + 4xe^{2x} = 4e^{2x} + 4xe^{2x}$. At $x = 0$, $y'' = 4$. Counting only one of the two $2e^{2x}$ terms gives 2."
+  },
+  {
+    "id": "APCALCAB-T2-011",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Differentiating inverse trigonometric functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\frac{d}{dx}\\arctan(2x)$?",
+    "options": [
+      "$\\frac{2}{\\sqrt{1 - 4x^2}}$",
+      "$\\frac{2}{1 + 4x^2}$",
+      "$\\frac{2}{1 + 2x^2}$",
+      "$\\frac{1}{1 + 4x^2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\frac{d}{dx}\\arctan u = \\frac{u'}{1 + u^2}$ with $u = 2x$, giving $\\frac{2}{1 + 4x^2}$. The square-root form belongs to $\\arcsin$."
+  },
+  {
+    "id": "APCALCAB-T2-012",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Solving related rates problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 10-foot ladder leans against a vertical wall. The bottom slides away from the wall at 1.5 feet per second. How fast, in feet per second, is the top sliding down the wall when the bottom is 6 feet from the wall?",
+    "options": [
+      "$\\frac{3}{4}$",
+      "$\\frac{9}{8}$",
+      "$\\frac{3}{2}$",
+      "$2$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$x^2 + y^2 = 100$, so $2x\\frac{dx}{dt} + 2y\\frac{dy}{dt} = 0$. When $x = 6$, $y = 8$: $6(1.5) + 8\\frac{dy}{dt} = 0$, so $\\frac{dy}{dt} = -\\frac{9}{8}$. The top slides down at $\\frac{9}{8}$ feet per second; swapping $x$ and $y$ gives 2."
+  },
+  {
+    "id": "APCALCAB-T2-013",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Interpreting the meaning of the derivative in context",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "$V(t)$ is the volume of water in a tank, in liters, $t$ minutes after a valve opens. What does $V'(5) = -3$ mean?",
+    "options": [
+      "At $t = 5$, the tank holds 3 liters less than at first",
+      "The volume falls by 3 liters every 5 minutes",
+      "At $t = 5$, the volume is falling at 3 liters per minute",
+      "The volume fell by 3 liters in the first 5 minutes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A derivative is an instantaneous rate: at the moment $t = 5$, the volume is changing at $-3$ liters per minute. The other choices describe total changes over an interval, which a derivative at one point does not give."
+  },
+  {
+    "id": "APCALCAB-T2-014",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Using L'Hospital's rule for determining limits of indeterminate forms",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 0} \\frac{\\sin(3x) - 3x}{x^3}$?",
+    "options": [
+      "$-\\frac{9}{2}$",
+      "$-\\frac{3}{2}$",
+      "$0$",
+      "$\\frac{9}{2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Apply L'Hospital's rule three times: $\\frac{3\\cos 3x - 3}{3x^2}$, then $\\frac{-9\\sin 3x}{6x}$, then $\\frac{-27\\cos 3x}{6} \\to -\\frac{27}{6} = -\\frac{9}{2}$. The sign comes from the derivative of $\\cos$."
+  },
+  {
+    "id": "APCALCAB-T2-015",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the first derivative test to determine relative extrema",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The derivative of $f$ is $f'(x) = (x - 1)^2(x + 3)$. At which values of $x$ does $f$ have a relative minimum?",
+    "options": [
+      "$x = -3$ and $x = 1$",
+      "There is no relative minimum",
+      "$x = 1$ only",
+      "$x = -3$ only"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$f'$ changes from negative to positive at $x = -3$, a relative minimum. At $x = 1$ the squared factor keeps $f'$ positive on both sides, so there is no extremum there."
+  },
+  {
+    "id": "APCALCAB-T2-016",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Extreme Value Theorem, global versus local extrema and critical points",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which function is guaranteed by the Extreme Value Theorem to have an absolute maximum on the given interval?",
+    "options": [
+      "$f(x) = x^2$ on $(-1, 3)$",
+      "$f(x) = \\frac{1}{x - 1}$ on $[0, 2]$",
+      "$f(x) = \\frac{1}{x}$ on $(0, 2]$",
+      "$f(x) = x^2$ on $[-1, 3]$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The theorem needs a function continuous on a closed interval. $x^2$ on $[-1, 3]$ qualifies. $(0, 2]$ and $(-1, 3)$ are not closed, and $\\frac{1}{x - 1}$ is not continuous at $x = 1$."
+  },
+  {
+    "id": "APCALCAB-T2-017",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Exploring behaviors of implicit relations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "For the curve $x^2 - xy + y^2 = 3$, at which points is the tangent line horizontal?",
+    "options": [
+      "$(0, \\sqrt{3})$ and $(0, -\\sqrt{3})$",
+      "$(1, 1)$ and $(-1, -1)$",
+      "$(1, 2)$ and $(-1, -2)$",
+      "$(2, 1)$ and $(-2, -1)$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$\\frac{dy}{dx} = \\frac{y - 2x}{2y - x}$ is 0 when $y = 2x$. Substituting: $x^2 - 2x^2 + 4x^2 = 3$, so $x = \\pm 1$, giving $(1, 2)$ and $(-1, -2)$. The points $(2, 1)$ and $(-2, -1)$ make the denominator 0, so the tangent is vertical there."
+  },
+  {
+    "id": "APCALCAB-T2-018",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Solving optimization problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two positive numbers have a sum of 18. What is the largest possible value of the product of one number and the square of the other?",
+    "options": [
+      "$432$",
+      "$729$",
+      "$864$",
+      "$1296$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Maximize $P = x^2(18 - x)$. $P'(x) = 36x - 3x^2 = 3x(12 - x)$ is 0 at $x = 12$, so $P = 144 \\cdot 6 = 864$. Splitting 18 evenly gives only $81 \\cdot 9 = 729$."
+  },
+  {
+    "id": "APCALCAB-T2-019",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Connecting a function, its first derivative and its second derivative",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The derivative $f'$ is positive for $x < 2$, negative for $2 < x < 5$ and positive for $x > 5$. Which statement about $f$ is true?",
+    "options": [
+      "$f$ has a relative maximum at $x = 2$",
+      "$f$ has a relative minimum at $x = 2$",
+      "$f$ has an inflection point at $x = 5$",
+      "$f$ has a relative maximum at $x = 5$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$f'$ changes from positive to negative at 2, so $f$ rises then falls: a relative maximum. At 5 the change is negative to positive, a relative minimum. Inflection points come from sign changes of $f''$, which are not given."
+  },
+  {
+    "id": "APCALCAB-T2-020",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Finding antiderivatives and indefinite integrals: basic rules",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\int \\left(6x^2 + \\frac{4}{x}\\right)dx$?",
+    "options": [
+      "$2x^3 + 4\\ln|x| + C$",
+      "$2x^3 - \\frac{4}{x^2} + C$",
+      "$6x^3 + 4\\ln|x| + C$",
+      "$12x - \\frac{4}{x^2} + C$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$\\int 6x^2\\,dx = 2x^3$ and $\\int \\frac{4}{x}\\,dx = 4\\ln|x|$. The second choice is the derivative, and the power rule does not apply to $x^{-1}$."
+  },
+  {
+    "id": "APCALCAB-T2-021",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "The Fundamental Theorem of Calculus and accumulation functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\frac{d}{dx}\\int_1^{x^2} \\ln t\\,dt$ for $x > 0$?",
+    "options": [
+      "$\\ln(x^2)$",
+      "$\\frac{2}{x}$",
+      "$2x\\ln(x^2)$",
+      "$x\\ln(x^2)$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "By the Fundamental Theorem with the chain rule, the derivative is $\\ln(x^2) \\cdot \\frac{d}{dx}(x^2) = 2x\\ln(x^2)$. Leaving out the chain-rule factor gives $\\ln(x^2)$."
+  },
+  {
+    "id": "APCALCAB-T2-022",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Interpreting the behavior of accumulation functions involving area",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Let $f$ be the linear function whose graph is the segment from $(0, 3)$ to $(6, -3)$, and let $g(x) = \\int_0^x f(t)\\,dt$ for $0 \\leq x \\leq 6$. At what value of $x$ does $g$ reach its maximum?",
+    "options": [
+      "$x = 0$",
+      "$x = 3$",
+      "$x = \\frac{9}{2}$",
+      "$x = 6$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$g'(x) = f(x)$, which is positive before $x = 3$ and negative after, so $g$ rises then falls and is largest at 3. The value $\\frac{9}{2}$ is the maximum value $g(3)$, the area of the triangle, not where it occurs."
+  },
+  {
+    "id": "APCALCAB-T2-023",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Integrating using substitution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\int \\frac{e^x}{1 + e^x}\\,dx$?",
+    "options": [
+      "$\\ln(1 + e^x) + C$",
+      "$e^x\\ln(1 + e^x) + C$",
+      "$x + \\ln(1 + e^x) + C$",
+      "$\\frac{1}{1 + e^x} + C$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With $u = 1 + e^x$, $du = e^x\\,dx$, the integral is $\\int \\frac{du}{u} = \\ln(1 + e^x) + C$. The absolute value is not needed because $1 + e^x > 0$."
+  },
+  {
+    "id": "APCALCAB-T2-024",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Integrating functions using long division and completing the square",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is $\\int \\frac{x^2 + 1}{x + 1}\\,dx$?",
+    "options": [
+      "$\\frac{x^2}{2} - x + 2\\ln|x + 1| + C$",
+      "$\\frac{x^2}{2} + x + 2\\ln|x + 1| + C$",
+      "$\\frac{x^2}{2} - x - 2\\ln|x + 1| + C$",
+      "$\\frac{x^2}{2} - x + \\ln|x + 1| + C$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Long division gives $\\frac{x^2 + 1}{x + 1} = x - 1 + \\frac{2}{x + 1}$, which integrates to $\\frac{x^2}{2} - x + 2\\ln|x + 1| + C$. The remainder 2 stays as the coefficient of the logarithm."
+  },
+  {
+    "id": "APCALCAB-T2-025",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Riemann sums, summation notation and definite integral notation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{n \\to \\infty} \\sum_{k=1}^{n} \\frac{3}{n}\\left(1 + \\frac{3k}{n}\\right)^2$?",
+    "options": [
+      "$7$",
+      "$9$",
+      "$18$",
+      "$21$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "This is a right Riemann sum with $\\Delta x = \\frac{3}{n}$ and $x_k = 1 + \\frac{3k}{n}$, so it equals $\\int_1^4 x^2\\,dx = \\frac{64 - 1}{3} = 21$. Reading the interval as $[0, 3]$ gives 9."
+  },
+  {
+    "id": "APCALCAB-T2-026",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Verifying solutions for differential equations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which function is a solution of the differential equation $y'' + 9y = 0$?",
+    "options": [
+      "$y = \\sin(3x)$",
+      "$y = \\cos x + 9$",
+      "$y = e^{3x}$",
+      "$y = \\sin(9x)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For $y = \\sin(3x)$, $y'' = -9\\sin(3x)$, so $y'' + 9y = 0$. For $\\sin(9x)$, $y'' = -81\\sin(9x)$, and $e^{3x}$ gives $9e^{3x} + 9e^{3x} \\neq 0$."
+  },
+  {
+    "id": "APCALCAB-T2-027",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Finding particular solutions using initial conditions and separation of variables",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which function is the solution of $\\frac{dy}{dx} = \\frac{2x}{y}$ with $y(1) = -2$?",
+    "options": [
+      "$y = -\\sqrt{x^2 + 3}$",
+      "$y = -\\sqrt{2x^2 + 4}$",
+      "$y = -\\sqrt{2x^2 + 2}$",
+      "$y = \\sqrt{2x^2 + 2}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$y\\,dy = 2x\\,dx$ gives $\\frac{y^2}{2} = x^2 + C$, so $y^2 = 2x^2 + C_1$. At $(1, -2)$: $4 = 2 + C_1$, $C_1 = 2$. Because $y(1) < 0$, take the negative root."
+  },
+  {
+    "id": "APCALCAB-T2-028",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Finding the area between curves expressed as functions of x",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the area of the region enclosed by $y = 4 - x^2$ and $y = x + 2$?",
+    "options": [
+      "$\\frac{7}{6}$",
+      "$\\frac{9}{2}$",
+      "$\\frac{15}{2}$",
+      "$9$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The curves meet where $x^2 + x - 2 = 0$, at $x = -2$ and $x = 1$. The parabola is on top: $\\int_{-2}^1 (2 - x - x^2)\\,dx = \\frac{7}{6} + \\frac{10}{3} = \\frac{9}{2}$. The value $\\frac{7}{6}$ uses only $[0, 1]$."
+  },
+  {
+    "id": "APCALCAB-T2-029",
+    "section": "nocalc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Volumes with cross sections: squares and rectangles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The base of a solid is the region under $y = \\sqrt{x}$ from $x = 0$ to $x = 4$. Cross sections perpendicular to the x-axis are squares. What is the volume of the solid?",
+    "options": [
+      "$\\frac{16}{3}$",
+      "$8$",
+      "$16$",
+      "$\\frac{64}{3}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Each square has side $\\sqrt{x}$ and area $x$, so $V = \\int_0^4 x\\,dx = 8$. The value $\\frac{16}{3}$ is the area of the base, and $\\frac{64}{3}$ squares $x$ instead of $\\sqrt{x}$."
+  },
+  {
+    "id": "APCALCAB-T2-030",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Confirming continuity over an interval",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Let $f(x) = ke^{x}$ for $x < 2$ and $f(x) = 3x + \\ln x$ for $x \\geq 2$. For what value of $k$ is $f$ continuous at $x = 2$?",
+    "options": [
+      "0.718",
+      "0.812",
+      "0.906",
+      "2.462"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Continuity needs $ke^2 = 3(2) + \\ln 2$, so $k = \\frac{6 + \\ln 2}{e^2} \\approx 0.906$. Dropping $\\ln 2$ gives 0.812, and dividing by $e$ instead of $e^2$ gives 2.462."
+  },
+  {
+    "id": "APCALCAB-T2-031",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Applying the power rule",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "For $x > 0$, at what value of $x$ greater than 1 is the line tangent to $y = \\ln x + x^2$ parallel to the line $y = 5x$?",
+    "options": [
+      "0.219",
+      "1.140",
+      "2.281",
+      "2.500"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Set $y' = \\frac{1}{x} + 2x = 5$, so $2x^2 - 5x + 1 = 0$ and $x = \\frac{5 \\pm \\sqrt{17}}{4}$. The solutions are 0.219 and 2.281; only 2.281 is greater than 1."
+  },
+  {
+    "id": "APCALCAB-T2-032",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Straight-line motion: position, velocity and acceleration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A particle moves along a line with velocity $v(t) = \\ln(t^2 + 1) - \\frac{t}{2}$. What is the acceleration of the particle at $t = 1.7$?",
+    "options": [
+      "0.374",
+      "0.437",
+      "0.508",
+      "0.874"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$a(t) = v'(t) = \\frac{2t}{t^2 + 1} - \\frac{1}{2}$. At 1.7: $\\frac{3.4}{3.89} - 0.5 \\approx 0.374$. The value 0.508 is the velocity $v(1.7)$, and 0.874 leaves out the $-\\frac{1}{2}$."
+  },
+  {
+    "id": "APCALCAB-T2-033",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Solving related rates problems",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The radius of a circle is $r(t) = \\ln(t + 3)$ centimeters at time $t$ seconds. At what rate, in square centimeters per second, is the area of the circle changing at $t = 2$?",
+    "options": [
+      "0.644",
+      "1.011",
+      "2.023",
+      "8.138"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{dA}{dt} = 2\\pi r\\frac{dr}{dt}$ with $r = \\ln 5$ and $\\frac{dr}{dt} = \\frac{1}{t + 3} = \\frac{1}{5}$, giving $\\frac{2\\pi\\ln 5}{5} \\approx 2.023$. The value 8.138 is the area itself, and 1.011 drops the factor 2 from $\\frac{d}{dr}r^2$."
+  },
+  {
+    "id": "APCALCAB-T2-034",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the Mean Value Theorem",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For $f(x) = e^{x/2}$ on $[0, 4]$, what value of $c$ satisfies the conclusion of the Mean Value Theorem?",
+    "options": [
+      "1.161",
+      "1.597",
+      "2.000",
+      "2.323"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The average rate of change is $\\frac{e^2 - 1}{4} \\approx 1.597$. Solve $f'(c) = \\frac{1}{2}e^{c/2} = 1.597$: $c = 2\\ln(3.195) \\approx 2.323$. The value 1.597 is the slope, not $c$; the midpoint 2 is not the answer for a curved graph."
+  },
+  {
+    "id": "APCALCAB-T2-035",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Solving optimization problems",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A closed cylindrical can must hold 500 cubic centimeters. What radius, in centimeters, makes its surface area $S = 2\\pi r^2 + 2\\pi rh$ as small as possible?",
+    "options": [
+      "4.301",
+      "5.419",
+      "6.828",
+      "8.603"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "From $\\pi r^2h = 500$, $S = 2\\pi r^2 + \\frac{1000}{r}$. $S' = 4\\pi r - \\frac{1000}{r^2} = 0$ gives $r^3 = \\frac{250}{\\pi}$, so $r \\approx 4.301$. The value 8.603 is the height at that radius, which equals the diameter."
+  },
+  {
+    "id": "APCALCAB-T2-036",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Exploring accumulations of change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Cars enter a parking garage at a rate of $R(t) = 500e^{-0.2t}$ cars per hour, $t$ hours after it opens. To the nearest whole number, how many cars enter in the first 5 hours?",
+    "options": [
+      "184",
+      "920",
+      "1580",
+      "2500"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\int_0^5 500e^{-0.2t}\\,dt = 2500(1 - e^{-1}) \\approx 1580$. The value 184 is the rate $R(5)$, and 920 is $2500e^{-1}$, the result of a sign error in the antiderivative."
+  },
+  {
+    "id": "APCALCAB-T2-037",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "The Fundamental Theorem of Calculus and definite integrals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A function $F$ has $F'(x) = \\frac{2x}{x^2 + 1}$ and $F(1) = 3$. What is $F(4)$?",
+    "options": [
+      "2.140",
+      "3.471",
+      "4.386",
+      "5.140"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$F(4) = F(1) + \\int_1^4 \\frac{2x}{x^2 + 1}\\,dx = 3 + \\ln 17 - \\ln 2 \\approx 5.140$. The value 2.140 leaves out $F(1)$, and 3.471 adds $F'(4)$ instead of the integral."
+  },
+  {
+    "id": "APCALCAB-T2-038",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Exponential models with differential equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A drink cools according to $\\frac{dT}{dt} = -k(T - 20)$, with $T$ in degrees Celsius and $t$ in minutes. $T(0) = 90$ and $T(5) = 60$. What is $T(12)$?",
+    "options": [
+      "18.273",
+      "23.494",
+      "38.273",
+      "46.453"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$T - 20 = 70e^{-kt}$, and $70e^{-5k} = 40$ gives $k = \\frac{1}{5}\\ln\\frac{7}{4}$. Then $T(12) = 20 + 70e^{-12k} \\approx 38.273$. Dropping the room temperature 20 gives 18.273."
+  },
+  {
+    "id": "APCALCAB-T2-039",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Finding the average value of a function on an interval",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the average value of $f(x) = \\frac{\\ln x}{x}$ on the interval $[1, e^2]$?",
+    "options": [
+      "0.135",
+      "0.271",
+      "0.313",
+      "2.000"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\int_1^{e^2} \\frac{\\ln x}{x}\\,dx = \\left[\\frac{(\\ln x)^2}{2}\\right]_1^{e^2} = 2$, and dividing by the length $e^2 - 1$ gives about 0.313. The value 2.000 is the integral, and 0.271 divides by $e^2$ instead of $e^2 - 1$."
+  },
+  {
+    "id": "APCALCAB-T2-040",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Volume with washer method: revolving around the x- or y-axis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The region between $y = \\sqrt{x}$ and $y = \\frac{x}{2}$ is revolved about the x-axis. What is the volume of the solid?",
+    "options": [
+      "1.676",
+      "2.667",
+      "8.378",
+      "16.755"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The curves meet at $x = 0$ and $x = 4$, with $\\sqrt{x}$ on top. Washers: $\\pi\\int_0^4 \\left(x - \\frac{x^2}{4}\\right)dx = \\frac{8\\pi}{3} \\approx 8.378$. Squaring the difference of the radii, $(\\sqrt{x} - \\frac{x}{2})^2$, gives 1.676."
+  },
+  {
+    "id": "APCALCAB-T2-041",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Connecting position, velocity and acceleration of functions using integrals",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A particle moves along a line with velocity $v(t) = \\frac{3}{t + 1} - 1$. What is the total distance it travels from $t = 0$ to $t = 5$?",
+    "options": [
+      "0.375",
+      "0.921",
+      "1.296",
+      "2.216"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$v = 0$ at $t = 2$. Distance $= \\int_0^2 v\\,dt - \\int_2^5 v\\,dt = (3\\ln 3 - 2) + (3 - 3\\ln 2) \\approx 1.296 + 0.921 = 2.216$. The displacement is only 0.375 because the backward motion cancels part of the forward motion."
+  },
+  {
+    "id": "APCALCAB-T2-042",
+    "section": "calc",
+    "test": 2,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Using accumulation functions and definite integrals in applied contexts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Snow on a flat roof is 10 centimeters deep at $t = 0$. Snow falls at a rate of $S(t) = 4e^{-0.5t} + 1$ centimeters per hour, and it melts at a constant 1.5 centimeters per hour. How deep, in centimeters, is the snow at $t = 3$ hours?",
+    "options": [
+      "4.715",
+      "9.215",
+      "13.215",
+      "14.715"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Depth $= 10 + \\int_0^3 (4e^{-0.5t} + 1 - 1.5)\\,dt = 10 + 8(1 - e^{-1.5}) - 1.5 \\approx 14.715$. Leaving out the starting 10 centimeters gives 4.715."
+  },
+  {
+    "id": "APCALCAB-D-001",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Determining limits using algebraic manipulation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to -1} \\frac{x^2 + 4x + 3}{x + 1}$?",
+    "options": [
+      "$-2$",
+      "$0$",
+      "$2$",
+      "$4$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{(x + 1)(x + 3)}{x + 1} = x + 3$ for $x \\neq -1$, so the limit is $-1 + 3 = 2$."
+  },
+  {
+    "id": "APCALCAB-D-002",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Determining limits using algebraic manipulation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 2} \\frac{x^3 - 8}{x - 2}$?",
+    "options": [
+      "$4$",
+      "$6$",
+      "$8$",
+      "$12$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$x^3 - 8 = (x - 2)(x^2 + 2x + 4)$, so the expression is $x^2 + 2x + 4$ for $x \\neq 2$, which is 12 at $x = 2$."
+  },
+  {
+    "id": "APCALCAB-D-003",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Determining limits using the squeeze theorem",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 0} \\frac{1 - \\cos x}{x}$?",
+    "options": [
+      "The limit does not exist",
+      "$0$",
+      "$1$",
+      "$\\frac{1}{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "This is one of the special trigonometric limits: $\\frac{1 - \\cos x}{x} \\to 0$. The related limit $\\frac{\\sin x}{x}$ is the one that equals 1."
+  },
+  {
+    "id": "APCALCAB-D-004",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Limits at infinity and horizontal asymptotes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to \\infty} \\frac{2x^2 + 7}{3x^2 - x}$?",
+    "options": [
+      "$0$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{2}$",
+      "$7$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Equal degrees, so the limit is the ratio of leading coefficients, $\\frac{2}{3}$. The lower-order terms $7$ and $-x$ do not matter at infinity."
+  },
+  {
+    "id": "APCALCAB-D-005",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Limits at infinity and horizontal asymptotes",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to \\infty} \\frac{4x + 1}{\\sqrt{x^2 + 9}}$?",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{4}{3}$",
+      "$2$",
+      "$4$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "For large positive $x$, $\\sqrt{x^2 + 9} \\approx x$, so the ratio approaches $\\frac{4x}{x} = 4$. Using $\\sqrt{9} = 3$ from the constant gives the wrong value $\\frac{4}{3}$."
+  },
+  {
+    "id": "APCALCAB-D-006",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Limits at infinity and horizontal asymptotes",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to -\\infty} \\frac{4x + 1}{\\sqrt{x^2 + 9}}$?",
+    "options": [
+      "$-4$",
+      "$-2$",
+      "$0$",
+      "$4$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "For large negative $x$, $\\sqrt{x^2 + 9} \\approx |x| = -x$, so the ratio approaches $\\frac{4x}{-x} = -4$. The square root is always positive, which is why the sign flips."
+  },
+  {
+    "id": "APCALCAB-D-007",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Determining limits using algebraic properties",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Let $f(x) = \\frac{|x - 3|}{x - 3}$. What is $\\lim_{x \\to 3^-} f(x)$?",
+    "options": [
+      "$-1$",
+      "$0$",
+      "$1$",
+      "The limit does not exist"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For $x < 3$, $|x - 3| = -(x - 3)$, so $f(x) = -1$ and the left-hand limit is $-1$. The two-sided limit fails to exist because the right-hand limit is 1, but the question asks only from the left."
+  },
+  {
+    "id": "APCALCAB-D-008",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Connecting infinite limits and vertical asymptotes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 5^-} \\frac{3}{x - 5}$?",
+    "options": [
+      "$-\\infty$",
+      "$\\infty$",
+      "$0$",
+      "$-\\frac{3}{5}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "As $x \\to 5$ from the left, $x - 5$ is a small negative number, so $\\frac{3}{x - 5}$ is negative and grows without bound in size. The function decreases without bound."
+  },
+  {
+    "id": "APCALCAB-D-009",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Determining limits using the squeeze theorem",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For all $x$, $4x - 9 \\leq f(x) \\leq x^2 - 4x + 7$. What is $\\lim_{x \\to 4} f(x)$?",
+    "options": [
+      "$0$",
+      "$4$",
+      "$7$",
+      "$16$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both bounds equal 7 at $x = 4$: $4(4) - 9 = 7$ and $16 - 16 + 7 = 7$. By the squeeze theorem, $f(x) \\to 7$."
+  },
+  {
+    "id": "APCALCAB-D-010",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Determining limits using algebraic properties",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 0} \\frac{x^2 + \\sin x}{x}$?",
+    "options": [
+      "$2$",
+      "$0$",
+      "The limit does not exist",
+      "$1$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Split it: $\\frac{x^2}{x} + \\frac{\\sin x}{x} = x + \\frac{\\sin x}{x} \\to 0 + 1 = 1$."
+  },
+  {
+    "id": "APCALCAB-D-011",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Removing discontinuities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Let $f(x) = \\frac{x^2 + 2x - 3}{x - 1}$ for $x \\neq 1$ and $f(1) = a$. For what value of $a$ is $f$ continuous at $x = 1$?",
+    "options": [
+      "$0$",
+      "$2$",
+      "$3$",
+      "$4$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{(x - 1)(x + 3)}{x - 1} = x + 3$ for $x \\neq 1$, so the limit at 1 is 4. Defining $f(1) = 4$ removes the discontinuity."
+  },
+  {
+    "id": "APCALCAB-D-012",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Estimating limit values from tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "As $x$ approaches 2 from the left, $f(x)$ takes the values 5.81, 5.98 and 5.998. As $x$ approaches 2 from the right, $f(x)$ takes the values 3.21, 3.02 and 3.002. Which conclusion is best supported?",
+    "options": [
+      "$\\lim_{x \\to 2} f(x) = 3$",
+      "$\\lim_{x \\to 2} f(x)$ does not exist",
+      "$\\lim_{x \\to 2} f(x) = 6$",
+      "$\\lim_{x \\to 2} f(x) = 4.5$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The left-hand values approach 6 and the right-hand values approach 3. The one-sided limits differ, so the two-sided limit does not exist. Averaging them to 4.5 is not a limit."
+  },
+  {
+    "id": "APCALCAB-D-013",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Limits at infinity and horizontal asymptotes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What are the horizontal asymptotes of $f(x) = \\frac{6e^x}{2e^x + 1}$?",
+    "options": [
+      "$y = 6$ only",
+      "$y = 0$ and $y = 3$",
+      "$y = 3$ only",
+      "$y = 0$ and $y = 6$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "As $x \\to \\infty$, divide by $e^x$: $\\frac{6}{2 + e^{-x}} \\to 3$. As $x \\to -\\infty$, $e^x \\to 0$, so $f(x) \\to \\frac{0}{1} = 0$. Exponential functions can have different asymptotes in the two directions."
+  },
+  {
+    "id": "APCALCAB-D-014",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Limits at infinity and horizontal asymptotes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to \\infty} \\frac{x^2 - 5}{x + 2}$?",
+    "options": [
+      "$-\\frac{5}{2}$",
+      "$1$",
+      "$0$",
+      "$\\infty$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The numerator has the higher degree, so the quotient behaves like $\\frac{x^2}{x} = x$ and grows without bound. A limit of 1 would need equal degrees with equal leading coefficients."
+  },
+  {
+    "id": "APCALCAB-D-015",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Determining limits using algebraic manipulation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 0} \\frac{\\frac{1}{x + 2} - \\frac{1}{2}}{x}$?",
+    "options": [
+      "$-\\frac{1}{2}$",
+      "$-\\frac{1}{4}$",
+      "$0$",
+      "$\\frac{1}{4}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Combine the fractions: $\\frac{1}{x + 2} - \\frac{1}{2} = \\frac{-x}{2(x + 2)}$. Dividing by $x$ gives $\\frac{-1}{2(x + 2)}$, which is $-\\frac{1}{4}$ at $x = 0$."
+  },
+  {
+    "id": "APCALCAB-D-016",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabLimits",
+    "skill": "Types of discontinuities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What kinds of discontinuity does $f(x) = \\frac{x + 1}{x^2 - 1}$ have?",
+    "options": [
+      "Removable at $x = -1$; asymptote at $x = 1$",
+      "Removable at both $x = -1$ and $x = 1$",
+      "Asymptotes at both $x = -1$ and $x = 1$",
+      "Asymptote at $x = -1$; removable at $x = 1$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$\\frac{x + 1}{(x - 1)(x + 1)} = \\frac{1}{x - 1}$ for $x \\neq -1$. The cancelled factor makes $x = -1$ a hole (the limit there is $-\\frac{1}{2}$), and the remaining factor gives a vertical asymptote at $x = 1$."
+  },
+  {
+    "id": "APCALCAB-D-017",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Derivative rules: constant, sum, difference",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $f(x) = x^4 - 3x^2 + 7x$, what is $f'(-1)$?",
+    "options": [
+      "$-5$",
+      "$-3$",
+      "$9$",
+      "$17$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = 4x^3 - 6x + 7$, so $f'(-1) = -4 + 6 + 7 = 9$. A sign slip on $-6(-1)$ gives $-3$."
+  },
+  {
+    "id": "APCALCAB-D-018",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Defining the derivative of a function",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{h \\to 0} \\frac{\\cos\\left(\\frac{\\pi}{3} + h\\right) - \\frac{1}{2}}{h}$?",
+    "options": [
+      "$-\\frac{\\sqrt{3}}{2}$",
+      "$-\\frac{1}{2}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{\\sqrt{3}}{2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "This is the derivative of $\\cos x$ at $x = \\frac{\\pi}{3}$, since $\\cos\\frac{\\pi}{3} = \\frac{1}{2}$. The derivative is $-\\sin\\frac{\\pi}{3} = -\\frac{\\sqrt{3}}{2}$."
+  },
+  {
+    "id": "APCALCAB-D-019",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Defining average and instantaneous rates of change",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the average rate of change of $f(x) = x^2 + 1$ on the interval $[1, 4]$?",
+    "options": [
+      "$\\frac{5}{2}$",
+      "$5$",
+      "$8$",
+      "$15$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{f(4) - f(1)}{4 - 1} = \\frac{17 - 2}{3} = 5$. The value 15 is the change in $f$ without dividing by the length of the interval, and 8 is the instantaneous rate at $x = 4$."
+  },
+  {
+    "id": "APCALCAB-D-020",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "The product rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\frac{d}{dx}\\left(e^x\\cos x\\right)$?",
+    "options": [
+      "$-e^x\\sin x$",
+      "$e^x(\\cos x - \\sin x)$",
+      "$e^x\\sin x$",
+      "$e^x(\\cos x + \\sin x)$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Product rule: $e^x\\cos x + e^x(-\\sin x) = e^x(\\cos x - \\sin x)$. The derivative of $\\cos x$ is $-\\sin x$, which is where the plus-sign choice goes wrong."
+  },
+  {
+    "id": "APCALCAB-D-021",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Applying the power rule",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $y = \\frac{5}{x^2}$, then $\\frac{dy}{dx} =$",
+    "options": [
+      "$-\\frac{10}{x^3}$",
+      "$\\frac{5}{2x}$",
+      "$\\frac{10}{x^3}$",
+      "$-\\frac{5}{x^3}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rewrite as $5x^{-2}$; the power rule gives $-10x^{-3} = -\\frac{10}{x^3}$. Differentiating the denominator alone gives $\\frac{5}{2x}$, which is not a valid rule."
+  },
+  {
+    "id": "APCALCAB-D-022",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Connecting differentiability and continuity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Let $f(x) = x^2$ for $x \\leq 1$ and $f(x) = 2x - 1$ for $x > 1$. Which statement is true?",
+    "options": [
+      "$f$ is not continuous at $x = 1$",
+      "$f$ is differentiable at $x = 1$",
+      "$f$ is continuous but not differentiable at $x = 1$",
+      "$f'(1)$ exists but $f$ is not continuous there"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Both pieces give 1 at $x = 1$, so $f$ is continuous. The slopes also match: $2x = 2$ on the left and 2 on the right. Equal values and equal one-sided slopes mean $f$ is differentiable at 1."
+  },
+  {
+    "id": "APCALCAB-D-023",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Applying the power rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is an equation of the line tangent to $y = \\sqrt{x}$ at $x = 9$?",
+    "options": [
+      "$y = \\frac{1}{6}x - \\frac{3}{2}$",
+      "$y = \\frac{1}{6}x + 3$",
+      "$y = \\frac{1}{3}x$",
+      "$y = \\frac{1}{6}x + \\frac{3}{2}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The point is $(9, 3)$ and the slope is $\\frac{1}{2\\sqrt{9}} = \\frac{1}{6}$. So $y - 3 = \\frac{1}{6}(x - 9)$, which is $y = \\frac{1}{6}x + \\frac{3}{2}$."
+  },
+  {
+    "id": "APCALCAB-D-024",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "The product rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $f(x) = x\\ln x$, what is $f'(e)$?",
+    "options": [
+      "$\\frac{1}{e}$",
+      "$\\frac{1}{2}$",
+      "$1$",
+      "$2$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = \\ln x + x \\cdot \\frac{1}{x} = \\ln x + 1$, so $f'(e) = 1 + 1 = 2$. Forgetting the product rule gives $\\frac{1}{e}$."
+  },
+  {
+    "id": "APCALCAB-D-025",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "The quotient rule",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "If $g(x) = \\frac{\\sin x}{x}$, what is $g'(\\pi)$?",
+    "options": [
+      "$-1$",
+      "$-\\frac{1}{\\pi}$",
+      "$0$",
+      "$\\frac{1}{\\pi}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$g'(x) = \\frac{x\\cos x - \\sin x}{x^2}$. At $\\pi$: $\\frac{\\pi(-1) - 0}{\\pi^2} = -\\frac{1}{\\pi}$."
+  },
+  {
+    "id": "APCALCAB-D-026",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "The product rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For differentiable functions $f$ and $g$, $f(2) = 3$, $f'(2) = -1$, $g(2) = 4$ and $g'(2) = 5$. If $h(x) = f(x)g(x)$, what is $h'(2)$?",
+    "options": [
+      "$-5$",
+      "$11$",
+      "$12$",
+      "$19$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$h'(2) = f'(2)g(2) + f(2)g'(2) = (-1)(4) + (3)(5) = 11$. Multiplying the derivatives gives $-5$, and 12 is $h(2)$."
+  },
+  {
+    "id": "APCALCAB-D-027",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "The quotient rule",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "For differentiable functions $f$ and $g$, $f(2) = 3$, $f'(2) = -1$, $g(2) = 4$ and $g'(2) = 5$. If $k(x) = \\frac{f(x)}{g(x)}$, what is $k'(2)$?",
+    "options": [
+      "$-\\frac{19}{16}$",
+      "$-\\frac{1}{5}$",
+      "$\\frac{11}{16}$",
+      "$\\frac{19}{16}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$k'(2) = \\frac{f'(2)g(2) - f(2)g'(2)}{g(2)^2} = \\frac{-4 - 15}{16} = -\\frac{19}{16}$. Reversing the numerator gives $+\\frac{19}{16}$, and $\\frac{f'}{g'}$ gives $-\\frac{1}{5}$."
+  },
+  {
+    "id": "APCALCAB-D-028",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Connecting differentiability and continuity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which function is continuous at $x = 0$ but not differentiable there?",
+    "options": [
+      "$f(x) = \\sin x$",
+      "$f(x) = x^{5/3}$",
+      "$f(x) = x^3$",
+      "$f(x) = x^{1/3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$x^{1/3}$ is continuous, but its derivative $\\frac{1}{3}x^{-2/3}$ is undefined at 0: the graph has a vertical tangent there. The other three are differentiable everywhere; $x^{5/3}$ has derivative $\\frac{5}{3}x^{2/3}$, which is 0 at $x = 0$."
+  },
+  {
+    "id": "APCALCAB-D-029",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Derivatives of trigonometric functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the slope of the graph of $y = \\tan x$ at $x = \\frac{\\pi}{4}$?",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$1$",
+      "$\\sqrt{2}$",
+      "$2$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{d}{dx}\\tan x = \\sec^2 x$, and $\\sec\\frac{\\pi}{4} = \\sqrt{2}$, so the slope is $(\\sqrt{2})^2 = 2$. The value 1 is $\\tan\\frac{\\pi}{4}$ itself."
+  },
+  {
+    "id": "APCALCAB-D-030",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Derivatives of exponential and logarithmic functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $y = 3e^x - 4\\ln x$, what is the value of $\\frac{dy}{dx}$ at $x = 1$?",
+    "options": [
+      "$3e - 4$",
+      "$3e - \\frac{4}{e}$",
+      "$3e - 1$",
+      "$3e + 4$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{dy}{dx} = 3e^x - \\frac{4}{x}$, so at $x = 1$ it is $3e - 4$."
+  },
+  {
+    "id": "APCALCAB-D-031",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Applying the power rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $f(x) = 6\\sqrt[3]{x}$, what is $f'(8)$?",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{2}$",
+      "$2$",
+      "$3$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$f(x) = 6x^{1/3}$, so $f'(x) = 2x^{-2/3}$. Since $8^{2/3} = 4$, $f'(8) = \\frac{2}{4} = \\frac{1}{2}$."
+  },
+  {
+    "id": "APCALCAB-D-032",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDerivatives",
+    "skill": "Defining the derivative of a function",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{h \\to 0} \\frac{e^{2 + h} - e^2}{h}$?",
+    "options": [
+      "$1$",
+      "$e$",
+      "$2e$",
+      "$e^2$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "This is the derivative of $e^x$ at $x = 2$. Since $e^x$ is its own derivative, the limit is $e^2$."
+  },
+  {
+    "id": "APCALCAB-D-033",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "The chain rule",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\frac{d}{dx}\\ln(x^2 + 4)$?",
+    "options": [
+      "$\\frac{1}{x^2 + 4}$",
+      "$\\frac{2x}{x^2 + 4}$",
+      "$\\frac{x}{x^2 + 4}$",
+      "$\\frac{1}{2x}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\frac{d}{dx}\\ln u = \\frac{u'}{u}$ with $u = x^2 + 4$, so the derivative is $\\frac{2x}{x^2 + 4}$. Leaving out $u' = 2x$ gives $\\frac{1}{x^2 + 4}$."
+  },
+  {
+    "id": "APCALCAB-D-034",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "The chain rule",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $y = e^{\\sin x}$, what is the value of $\\frac{dy}{dx}$ at $x = 0$?",
+    "options": [
+      "$-1$",
+      "$0$",
+      "$1$",
+      "$e$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{dy}{dx} = e^{\\sin x}\\cos x$. At 0: $e^0 \\cdot 1 = 1$."
+  },
+  {
+    "id": "APCALCAB-D-035",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "The chain rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For differentiable functions $f$ and $g$, $g(1) = 3$, $g'(1) = -2$, $f'(1) = 5$ and $f'(3) = 4$. If $h(x) = f(g(x))$, what is $h'(1)$?",
+    "options": [
+      "$-10$",
+      "$-8$",
+      "$-2$",
+      "$8$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$h'(1) = f'(g(1)) \\cdot g'(1) = f'(3)(-2) = 4(-2) = -8$. Using $f'(1)$ instead of $f'(g(1))$ gives $-10$."
+  },
+  {
+    "id": "APCALCAB-D-036",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Implicit differentiation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "For the circle $x^2 + y^2 = 25$, what is $\\frac{dy}{dx}$ at the point $(3, -4)$?",
+    "options": [
+      "$-\\frac{4}{3}$",
+      "$-\\frac{3}{4}$",
+      "$\\frac{3}{5}$",
+      "$\\frac{3}{4}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$2x + 2yy' = 0$ gives $y' = -\\frac{x}{y} = -\\frac{3}{-4} = \\frac{3}{4}$. The point is below the x-axis, which is why the sign is positive."
+  },
+  {
+    "id": "APCALCAB-D-037",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "The chain rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $y = (3x - 1)^{-2}$, then $\\frac{dy}{dx} =$",
+    "options": [
+      "$6(3x - 1)^{-3}$",
+      "$-2(3x - 1)^{-3}$",
+      "$-6(3x - 1)^{-3}$",
+      "$-6(3x - 1)^{-1}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$\\frac{dy}{dx} = -2(3x - 1)^{-3} \\cdot 3 = -6(3x - 1)^{-3}$. Leaving out the inner derivative 3 gives $-2(3x - 1)^{-3}$."
+  },
+  {
+    "id": "APCALCAB-D-038",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Differentiating inverse trigonometric functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the slope of the graph of $y = \\arcsin x$ at $x = \\frac{1}{2}$?",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{\\sqrt{3}}{2}$",
+      "$\\frac{2}{\\sqrt{3}}$",
+      "$2$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{d}{dx}\\arcsin x = \\frac{1}{\\sqrt{1 - x^2}} = \\frac{1}{\\sqrt{3/4}} = \\frac{2}{\\sqrt{3}}$. The value $\\frac{\\sqrt{3}}{2}$ is the reciprocal, which comes from forgetting to divide."
+  },
+  {
+    "id": "APCALCAB-D-039",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Differentiating inverse functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A differentiable function $f$ has $f(2) = 7$ and $f'(2) = \\frac{3}{2}$. If $g$ is the inverse of $f$, what is $g'(7)$?",
+    "options": [
+      "$\\frac{1}{7}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{2}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$g(7) = 2$, so $g'(7) = \\frac{1}{f'(2)} = \\frac{1}{3/2} = \\frac{2}{3}$. The inverse's slope is the reciprocal of $f$'s slope at the matching point."
+  },
+  {
+    "id": "APCALCAB-D-040",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Calculating higher-order derivatives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $f(x) = \\sin(2x)$, then $f'''(x) =$",
+    "options": [
+      "$8\\cos(2x)$",
+      "$-2\\cos(2x)$",
+      "$-4\\sin(2x)$",
+      "$-8\\cos(2x)$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$f' = 2\\cos(2x)$, $f'' = -4\\sin(2x)$, $f''' = -8\\cos(2x)$. Each derivative brings out another factor of 2. $-4\\sin(2x)$ is $f''$."
+  },
+  {
+    "id": "APCALCAB-D-041",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "The chain rule",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $y = \\cos^2 x$, then $\\frac{dy}{dx} =$",
+    "options": [
+      "$-2\\sin x\\cos x$",
+      "$-2\\cos x$",
+      "$2\\sin x\\cos x$",
+      "$-\\sin^2 x$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$y = (\\cos x)^2$, so $y' = 2\\cos x \\cdot (-\\sin x) = -2\\sin x\\cos x$. Forgetting the derivative of the inside gives $-2\\cos x$ or loses the minus sign."
+  },
+  {
+    "id": "APCALCAB-D-042",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Implicit differentiation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $xy = 6$, then $\\frac{dy}{dx} =$",
+    "options": [
+      "$\\frac{6 - y}{x}$",
+      "$-\\frac{x}{y}$",
+      "$-\\frac{y}{x}$",
+      "$\\frac{y}{x}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Product rule: $y + xy' = 0$, so $y' = -\\frac{y}{x}$. $-\\frac{x}{y}$ is the slope formula for a circle centred at the origin."
+  },
+  {
+    "id": "APCALCAB-D-043",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "The chain rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Let $h(x) = g(x^2)$, where $g'(4) = -3$ and $g'(2) = 5$. What is $h'(2)$?",
+    "options": [
+      "$-12$",
+      "$-6$",
+      "$-3$",
+      "$20$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$h'(x) = g'(x^2) \\cdot 2x$, so $h'(2) = g'(4) \\cdot 4 = -12$. Evaluating $g'$ at 2 instead of at $2^2 = 4$ gives 20."
+  },
+  {
+    "id": "APCALCAB-D-044",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "The chain rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\frac{d}{dx}\\sqrt{1 + e^x}$?",
+    "options": [
+      "$\\frac{1}{2\\sqrt{1 + e^x}}$",
+      "$\\frac{e^x}{2\\sqrt{1 + e^x}}$",
+      "$\\frac{e^x}{\\sqrt{1 + e^x}}$",
+      "$2e^x\\sqrt{1 + e^x}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\frac{1}{2}(1 + e^x)^{-1/2} \\cdot e^x = \\frac{e^x}{2\\sqrt{1 + e^x}}$. Leaving out the inner derivative $e^x$ gives the second choice."
+  },
+  {
+    "id": "APCALCAB-D-045",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Selecting procedures for calculating derivatives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For $0 < x < \\frac{\\pi}{2}$, what is $\\frac{d}{dx}\\ln(\\cos x)$?",
+    "options": [
+      "$\\frac{1}{\\cos x}$",
+      "$-\\frac{1}{\\sin x}$",
+      "$-\\tan x$",
+      "$\\tan x$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$\\frac{1}{\\cos x} \\cdot (-\\sin x) = -\\tan x$. $\\frac{1}{\\cos x}$ leaves out the derivative of the inside function."
+  },
+  {
+    "id": "APCALCAB-D-046",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Implicit differentiation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For the curve $x^3 + y^3 = 9$, what is $\\frac{dy}{dx}$ at the point $(1, 2)$?",
+    "options": [
+      "$-4$",
+      "$-1$",
+      "$-\\frac{1}{2}$",
+      "$-\\frac{1}{4}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$3x^2 + 3y^2y' = 0$, so $y' = -\\frac{x^2}{y^2} = -\\frac{1}{4}$ at $(1, 2)$. Inverting the fraction gives $-4$."
+  },
+  {
+    "id": "APCALCAB-D-047",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Differentiating inverse functions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Let $f(x) = 2x + \\ln x$ for $x > 0$, and let $g$ be the inverse of $f$. What is $g'(2)$?",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{5}{2}$",
+      "$3$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$f(1) = 2 + 0 = 2$, so $g(2) = 1$ and $g'(2) = \\frac{1}{f'(1)}$. Since $f'(x) = 2 + \\frac{1}{x}$, $f'(1) = 3$ and $g'(2) = \\frac{1}{3}$. Using $f'(2) = \\frac{5}{2}$ gives $\\frac{2}{5}$."
+  },
+  {
+    "id": "APCALCAB-D-048",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "Calculating higher-order derivatives",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "For the curve $y^2 = x$ with $y > 0$, what is $\\frac{d^2y}{dx^2}$ at the point $(4, 2)$?",
+    "options": [
+      "$-\\frac{1}{8}$",
+      "$-\\frac{1}{16}$",
+      "$-\\frac{1}{32}$",
+      "$\\frac{1}{32}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$2yy' = 1$ gives $y' = \\frac{1}{2y}$, and differentiating again gives $y'' = -\\frac{y'}{2y^2} = -\\frac{1}{4y^3}$. At $y = 2$: $-\\frac{1}{32}$."
+  },
+  {
+    "id": "APCALCAB-D-049",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabComposite",
+    "skill": "The chain rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $f(x) = 3^{2x}$, what is $f'(0)$?",
+    "options": [
+      "$\\ln 3$",
+      "$2$",
+      "$2\\ln 3$",
+      "$6$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{d}{dx}a^u = a^u \\ln a \\cdot u'$, so $f'(x) = 3^{2x} \\cdot \\ln 3 \\cdot 2$ and $f'(0) = 2\\ln 3$. Leaving out the factor 2 from the chain rule gives $\\ln 3$."
+  },
+  {
+    "id": "APCALCAB-D-050",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Straight-line motion: position, velocity and acceleration",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A particle's position is $s(t) = 2t^3 - 9t^2 + 12t$. At what times is the particle at rest?",
+    "options": [
+      "$t = \\frac{3}{2}$ only",
+      "$t = 0$ and $t = 3$",
+      "$t = 1$ and $t = 2$",
+      "$t = 2$ only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At rest means $v(t) = 0$: $6t^2 - 18t + 12 = 6(t - 1)(t - 2) = 0$, so $t = 1$ and $t = 2$. The time $t = \\frac{3}{2}$ is where the acceleration is zero."
+  },
+  {
+    "id": "APCALCAB-D-051",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Straight-line motion: position, velocity and acceleration",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A particle's position is $s(t) = 2t^3 - 9t^2 + 12t$. What is its acceleration at $t = 3$?",
+    "options": [
+      "$9$",
+      "$12$",
+      "$18$",
+      "$36$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$v(t) = 6t^2 - 18t + 12$ and $a(t) = 12t - 18$, so $a(3) = 18$. The value 12 is $v(3)$ and 9 is $s(3)$."
+  },
+  {
+    "id": "APCALCAB-D-052",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Straight-line motion: position, velocity and acceleration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At $t = 2$, a particle has velocity $v(2) = -3$ and acceleration $a(2) = 4$. At that moment the particle is",
+    "options": [
+      "speeding up, since $a(2) > 0$",
+      "slowing down, since $v$ and $a$ have opposite signs",
+      "slowing down, since $v(2) < 0$",
+      "speeding up, since $|a(2)| > |v(2)|$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Speed increases when velocity and acceleration have the same sign and decreases when they differ. Here $v < 0$ and $a > 0$, so the particle is slowing down. A positive acceleration alone does not mean speeding up."
+  },
+  {
+    "id": "APCALCAB-D-053",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Using L'Hospital's rule for determining limits of indeterminate forms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to \\infty} \\frac{5x^3}{e^x}$?",
+    "options": [
+      "$5$",
+      "$0$",
+      "$15$",
+      "$\\infty$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The form is $\\frac{\\infty}{\\infty}$. Three applications of L'Hospital's rule give $\\frac{30}{e^x} \\to 0$: an exponential outgrows any power of $x$."
+  },
+  {
+    "id": "APCALCAB-D-054",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Using L'Hospital's rule for determining limits of indeterminate forms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 2} \\frac{x^3 - 3x - 2}{x^2 - 4}$?",
+    "options": [
+      "$0$",
+      "$\\frac{9}{8}$",
+      "$\\frac{9}{4}$",
+      "$3$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Both parts are 0 at $x = 2$. L'Hospital's rule gives $\\frac{3x^2 - 3}{2x}$, which is $\\frac{9}{4}$ at $x = 2$. Writing $\\frac{3x^2}{2x}$ and dropping the $-3$ gives 3."
+  },
+  {
+    "id": "APCALCAB-D-055",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Approximating values of a function using local linearity",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A function has $f(3) = 2$, $f'(3) = 4$ and $f''(x) > 0$ for all $x$. The tangent line at $x = 3$ gives which approximation for $f(3.1)$?",
+    "options": [
+      "1.6, an underestimate",
+      "2.04, an underestimate",
+      "2.4, an underestimate",
+      "2.4, an overestimate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$f(3.1) \\approx 2 + 4(0.1) = 2.4$. Because $f'' > 0$, the graph is concave up and lies above its tangent lines, so the tangent-line value is an underestimate."
+  },
+  {
+    "id": "APCALCAB-D-056",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Solving related rates problems",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The area of a square is increasing at 12 square centimeters per second. How fast, in centimeters per second, is the side length increasing when the side is 3 centimeters?",
+    "options": [
+      "$2$",
+      "$3$",
+      "$4$",
+      "$6$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$A = s^2$, so $\\frac{dA}{dt} = 2s\\frac{ds}{dt}$ and $12 = 2(3)\\frac{ds}{dt}$, giving 2. Dividing 12 by $s$ alone gives 4."
+  },
+  {
+    "id": "APCALCAB-D-057",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Solving related rates problems",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The radius of a circle grows at 0.5 centimeter per second. At what rate, in square centimeters per second, is the area growing when the radius is 6 centimeters?",
+    "options": [
+      "$3\\pi$",
+      "$6\\pi$",
+      "$12\\pi$",
+      "$36\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{dA}{dt} = 2\\pi r\\frac{dr}{dt} = 2\\pi(6)(0.5) = 6\\pi$. The value $36\\pi$ is the area itself."
+  },
+  {
+    "id": "APCALCAB-D-058",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Rates of change in applied contexts other than motion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The number of fish in a pond $t$ weeks after stocking is $P(t) = 400 + 30t - t^2$. At what rate, in fish per week, is the population changing at $t = 10$?",
+    "options": [
+      "$10$",
+      "$20$",
+      "$30$",
+      "$60$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$P'(t) = 30 - 2t$, so $P'(10) = 10$ fish per week. The value 20 is the $2t$ term alone, and 30 ignores it."
+  },
+  {
+    "id": "APCALCAB-D-059",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Interpreting the meaning of the derivative in context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$R(t)$ is the rate, in gallons per hour, at which water leaks from a tank, with $t$ in hours. What are the units of $R'(4)$?",
+    "options": [
+      "Gallons per hour per hour",
+      "Gallons",
+      "Gallons per hour",
+      "Hours per gallon per hour"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A derivative has the units of the function divided by the units of the input: gallons per hour, per hour. It tells how fast the leak rate itself is changing."
+  },
+  {
+    "id": "APCALCAB-D-060",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Approximating values of a function using local linearity",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Using the line tangent to $y = e^x$ at $x = 0$, what is the approximation of $e^{0.1}$?",
+    "options": [
+      "0.9",
+      "1.0",
+      "1.01",
+      "1.1"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The tangent line at 0 is $y = 1 + x$, since $e^0 = 1$ and the slope is $e^0 = 1$. At $x = 0.1$ it gives 1.1."
+  },
+  {
+    "id": "APCALCAB-D-061",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Straight-line motion: position, velocity and acceleration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A particle's position is $x(t) = \\cos(\\pi t)$. What is its velocity at $t = \\frac{1}{2}$?",
+    "options": [
+      "$-\\pi$",
+      "$-1$",
+      "$0$",
+      "$\\pi$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$v(t) = -\\pi\\sin(\\pi t)$, so $v\\left(\\frac{1}{2}\\right) = -\\pi\\sin\\frac{\\pi}{2} = -\\pi$. Leaving out the chain-rule factor $\\pi$ gives $-1$."
+  },
+  {
+    "id": "APCALCAB-D-062",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Introduction to related rates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cylinder has a fixed radius of 3 centimeters, and its height increases at 2 centimeters per second. At what rate, in cubic centimeters per second, is its volume increasing? ($V = \\pi r^2h$)",
+    "options": [
+      "$6\\pi$",
+      "$9\\pi$",
+      "$12\\pi$",
+      "$18\\pi$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "With $r$ fixed, $\\frac{dV}{dt} = \\pi r^2\\frac{dh}{dt} = 9\\pi(2) = 18\\pi$. The value $9\\pi$ is the base area, and $12\\pi$ would come from using $2\\pi r$."
+  },
+  {
+    "id": "APCALCAB-D-063",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Using L'Hospital's rule for determining limits of indeterminate forms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\lim_{x \\to 0} \\frac{1 - \\cos(4x)}{x^2}$?",
+    "options": [
+      "$2$",
+      "$4$",
+      "$8$",
+      "$16$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "L'Hospital's rule twice: $\\frac{4\\sin(4x)}{2x}$, then $\\frac{16\\cos(4x)}{2} \\to 8$. Forgetting the 2 from $\\frac{d}{dx}x^2$ gives 16."
+  },
+  {
+    "id": "APCALCAB-D-064",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Using L'Hospital's rule for determining limits of indeterminate forms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To which limit can L'Hospital's rule be applied directly?",
+    "options": [
+      "$\\lim_{x \\to 0} \\frac{\\sin x}{x}$",
+      "$\\lim_{x \\to 1} \\frac{\\ln x}{x}$",
+      "$\\lim_{x \\to 0} \\frac{\\cos x}{x}$",
+      "$\\lim_{x \\to 0} \\frac{e^x}{x + 1}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The rule needs a $\\frac{0}{0}$ or $\\frac{\\infty}{\\infty}$ form. Only $\\frac{\\sin x}{x}$ at 0 is $\\frac{0}{0}$. The others are $\\frac{1}{0}$, $\\frac{0}{1}$ and $\\frac{1}{1}$."
+  },
+  {
+    "id": "APCALCAB-D-065",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Interpreting the meaning of the derivative in context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$T(h)$ is the air temperature, in degrees Celsius, at a height of $h$ meters. What does $T'(500) = -0.006$ mean?",
+    "options": [
+      "Over the first 500 m, it falls 0.006 degrees C",
+      "Near 500 m, it falls 0.006 degrees C per meter climbed",
+      "At 500 m, the temperature is -0.006 degrees C",
+      "Near 500 m, it falls 0.006 degrees C per 500 m"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$T'(500)$ is the rate of change of temperature with respect to height at 500 meters, in degrees Celsius per meter. It is a rate at one height, not a temperature or a total change."
+  },
+  {
+    "id": "APCALCAB-D-066",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabContextual",
+    "skill": "Approximating values of a function using local linearity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Using the line tangent to $f(x) = \\sqrt[3]{x}$ at $x = 8$, what is the approximation of $\\sqrt[3]{8.3}$?",
+    "options": [
+      "2.025",
+      "2.075",
+      "2.1",
+      "2.3"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$f(8) = 2$ and $f'(x) = \\frac{1}{3}x^{-2/3}$, so $f'(8) = \\frac{1}{12}$. Then $\\sqrt[3]{8.3} \\approx 2 + \\frac{0.3}{12} = 2.025$."
+  },
+  {
+    "id": "APCALCAB-D-067",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Extreme Value Theorem, global versus local extrema and critical points",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What are the critical points of $f(x) = x^3 - 3x^2 - 9x + 4$?",
+    "options": [
+      "$x = 1$ only",
+      "$x = 3$ only",
+      "$x = -1$ and $x = 3$",
+      "$x = 1$ and $x = -3$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$f'(x) = 3x^2 - 6x - 9 = 3(x - 3)(x + 1)$, which is 0 at $x = -1$ and $x = 3$. The value $x = 1$ is where $f'' = 6x - 6$ is 0."
+  },
+  {
+    "id": "APCALCAB-D-068",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the first derivative test to determine relative extrema",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At what value of $x$ does $f(x) = xe^{-x/2}$ have a relative maximum?",
+    "options": [
+      "$x = 0$",
+      "$x = \\frac{1}{2}$",
+      "$x = 1$",
+      "$x = 2$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = e^{-x/2} - \\frac{x}{2}e^{-x/2} = e^{-x/2}\\left(1 - \\frac{x}{2}\\right)$, which changes from positive to negative at $x = 2$. Forgetting the chain-rule factor $\\frac{1}{2}$ gives $x = 1$."
+  },
+  {
+    "id": "APCALCAB-D-069",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Determining concavity of functions over their domains",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "On which interval is the graph of $f(x) = x^3 - 6x^2 + 5$ concave up?",
+    "options": [
+      "$x > 4$",
+      "$x > 2$",
+      "$0 < x < 4$",
+      "$x < 2$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$f''(x) = 6x - 12$, which is positive for $x > 2$. The interval $0 < x < 4$ is where $f' = 3x^2 - 12x$ is negative, which describes decreasing, not concavity."
+  },
+  {
+    "id": "APCALCAB-D-070",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the Mean Value Theorem",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why can the Mean Value Theorem not be applied to $f(x) = |x|$ on $[-1, 2]$?",
+    "options": [
+      "$f$ is not continuous on $[-1, 2]$",
+      "$f$ is not differentiable at $x = 0$",
+      "$f(-1) \\neq f(2)$",
+      "$f$ has no critical points in $(-1, 2)$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The theorem needs continuity on $[a, b]$ and differentiability on $(a, b)$. $|x|$ is continuous but has a corner at 0. Equal endpoint values are a condition of Rolle's theorem, not of the Mean Value Theorem."
+  },
+  {
+    "id": "APCALCAB-D-071",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the candidates test to determine absolute extrema",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the absolute minimum value of $f(x) = x + \\frac{4}{x}$ on the interval $[1, 4]$?",
+    "options": [
+      "$2$",
+      "$4$",
+      "$\\frac{17}{4}$",
+      "$5$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = 1 - \\frac{4}{x^2} = 0$ at $x = 2$, where $f(2) = 4$. The endpoints give $f(1) = f(4) = 5$. The value 2 is the $x$-value where the minimum occurs."
+  },
+  {
+    "id": "APCALCAB-D-072",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the first derivative test to determine relative extrema",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The derivative of $f$ is $f'(x) = \\frac{(x + 2)(x - 1)}{x^2 + 1}$. At what value of $x$ does $f$ have a relative maximum?",
+    "options": [
+      "$x = -2$",
+      "$x = 0$",
+      "$x = 1$",
+      "$x = 2$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The denominator is always positive. $f'$ is positive for $x < -2$, negative between $-2$ and 1, and positive after 1. The change from positive to negative at $x = -2$ is a relative maximum; $x = 1$ is a relative minimum."
+  },
+  {
+    "id": "APCALCAB-D-073",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the second derivative test to determine extrema",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For $f(x) = x^4 - 8x^2$, what does the second derivative test show at $x = 0$?",
+    "options": [
+      "A relative minimum",
+      "A point of inflection",
+      "The test fails there",
+      "A relative maximum"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$f'(x) = 4x^3 - 16x$ is 0 at $x = 0$, and $f''(x) = 12x^2 - 16$ gives $f''(0) = -16 < 0$, so the graph is concave down there: a relative maximum. The test fails only when $f'' = 0$."
+  },
+  {
+    "id": "APCALCAB-D-074",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Connecting a function, its first derivative and its second derivative",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "On an interval, $f'(x) > 0$ and $f''(x) < 0$. On that interval the graph of $f$ is",
+    "options": [
+      "decreasing and concave up",
+      "decreasing and concave down",
+      "increasing and concave down",
+      "increasing and concave up"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$f' > 0$ means increasing, and $f'' < 0$ means concave down: the graph rises but ever more slowly."
+  },
+  {
+    "id": "APCALCAB-D-075",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Solving optimization problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rectangle has its base on the x-axis and its upper corners on the parabola $y = 12 - x^2$. What is the largest possible area of the rectangle?",
+    "options": [
+      "$16$",
+      "$22$",
+      "$24$",
+      "$32$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "With corners at $(\\pm x, 12 - x^2)$, $A = 2x(12 - x^2) = 24x - 2x^3$. $A' = 24 - 6x^2 = 0$ at $x = 2$, so $A = 4 \\cdot 8 = 32$."
+  },
+  {
+    "id": "APCALCAB-D-076",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Solving optimization problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Positive numbers $x$ and $y$ satisfy $xy = 64$. What is the smallest possible value of $x + 4y$?",
+    "options": [
+      "$16$",
+      "$20$",
+      "$24$",
+      "$32$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$x + 4y = \\frac{64}{y} + 4y$. The derivative $-\\frac{64}{y^2} + 4$ is 0 at $y = 4$, so $x = 16$ and the sum is $16 + 16 = 32$."
+  },
+  {
+    "id": "APCALCAB-D-077",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Determining concavity of functions over their domains",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The second derivative of $f$ is $f''(x) = (x - 3)^2(x + 1)$. Where does the graph of $f$ have a point of inflection?",
+    "options": [
+      "At $x = 3$ only",
+      "At $x = -1$ only",
+      "At $x = -1$ and $x = 3$",
+      "There is no point of inflection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$f''$ changes sign only at $x = -1$. The squared factor makes $f'' \\geq 0$ on both sides of $x = 3$, so concavity does not change there."
+  },
+  {
+    "id": "APCALCAB-D-078",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the Mean Value Theorem",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A function is differentiable everywhere, with $f(2) = 5$ and $f(6) = 13$. For some $c$ in $(2, 6)$, $f'(c)$ must equal",
+    "options": [
+      "$2$",
+      "$\\frac{13}{6}$",
+      "$4$",
+      "$8$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "By the Mean Value Theorem, $f'(c) = \\frac{13 - 5}{6 - 2} = 2$ for some $c$. The value 8 is the change in $f$ without dividing by the change in $x$."
+  },
+  {
+    "id": "APCALCAB-D-079",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Using the candidates test to determine absolute extrema",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the absolute maximum value of $f(x) = \\sin x + \\cos x$ on $[0, \\pi]$?",
+    "options": [
+      "$\\frac{\\sqrt{2}}{2}$",
+      "$1$",
+      "$\\sqrt{2}$",
+      "$2$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = \\cos x - \\sin x = 0$ at $x = \\frac{\\pi}{4}$, where $f = \\frac{\\sqrt{2}}{2} + \\frac{\\sqrt{2}}{2} = \\sqrt{2}$. The endpoints give 1 and $-1$. The sum never reaches 2 because sine and cosine do not peak together."
+  },
+  {
+    "id": "APCALCAB-D-080",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Exploring behaviors of implicit relations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "For the ellipse $x^2 + 4y^2 = 8$, $\\frac{dy}{dx} = -\\frac{x}{4y}$. At which point is the tangent line vertical?",
+    "options": [
+      "$(0, \\sqrt{2})$",
+      "$(2, 1)$",
+      "$(2\\sqrt{2}, 0)$",
+      "$(\\sqrt{2}, 0)$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A vertical tangent needs the denominator $4y = 0$ with a nonzero numerator. On the ellipse, $y = 0$ gives $x^2 = 8$, so $x = 2\\sqrt{2}$. At $(0, \\sqrt{2})$ the tangent is horizontal, and $(\\sqrt{2}, 0)$ is not on the curve."
+  },
+  {
+    "id": "APCALCAB-D-081",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabAnalytical",
+    "skill": "Sketching graphs of functions and their derivatives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A differentiable function has $f'(x) > 0$ for $x < 1$, $f'(1) = 0$ and $f'(x) > 0$ for $x > 1$. Which statement is true?",
+    "options": [
+      "$f$ is decreasing near $x = 1$",
+      "$f$ has a relative minimum at $x = 1$",
+      "$f$ has a relative maximum at $x = 1$",
+      "$f$ has no relative extremum at $x = 1$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$f'$ does not change sign at $x = 1$, so $f$ keeps increasing through it: a critical point with no extremum, like $x^3$ at 0."
+  },
+  {
+    "id": "APCALCAB-D-082",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "The Fundamental Theorem of Calculus and definite integrals",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\int_1^e \\frac{2}{x}\\,dx$?",
+    "options": [
+      "$2$",
+      "$2e - 2$",
+      "$4$",
+      "$2e$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\int \\frac{2}{x}\\,dx = 2\\ln x$, which is $2\\ln e - 2\\ln 1 = 2$. The value $2e - 2$ treats the integrand as the constant 2."
+  },
+  {
+    "id": "APCALCAB-D-083",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Finding antiderivatives and indefinite integrals: basic rules",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\int \\sec^2 x\\,dx$?",
+    "options": [
+      "$\\frac{1}{3}\\sec^3 x + C$",
+      "$2\\sec x + C$",
+      "$\\tan x + C$",
+      "$\\sec x\\tan x + C$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$\\frac{d}{dx}\\tan x = \\sec^2 x$, so $\\tan x + C$. The power rule does not apply to a trigonometric function, which rules out $\\frac{1}{3}\\sec^3 x$."
+  },
+  {
+    "id": "APCALCAB-D-084",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "The Fundamental Theorem of Calculus and definite integrals",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\int_0^{\\pi/3} \\sin x\\,dx$?",
+    "options": [
+      "$-\\frac{1}{2}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{\\sqrt{3}}{2}$",
+      "$\\frac{3}{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$[-\\cos x]_0^{\\pi/3} = -\\cos\\frac{\\pi}{3} + \\cos 0 = -\\frac{1}{2} + 1 = \\frac{1}{2}$. Getting $-\\frac{1}{2}$ means the antiderivative was written as $+\\cos x$, and $\\frac{\\sqrt{3}}{2}$ is the integrand's value $\\sin\\frac{\\pi}{3}$, not the integral."
+  },
+  {
+    "id": "APCALCAB-D-085",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Approximating areas with Riemann sums",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the right Riemann sum for $f(x) = \\frac{1}{x}$ on $[1, 3]$ with two subintervals of equal width?",
+    "options": [
+      "$\\frac{2}{3}$",
+      "$\\frac{5}{6}$",
+      "$\\frac{16}{15}$",
+      "$\\frac{3}{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The right endpoints are 2 and 3, each with width 1: $\\frac{1}{2} + \\frac{1}{3} = \\frac{5}{6}$. The left sum is $1 + \\frac{1}{2} = \\frac{3}{2}$, and $\\frac{16}{15}$ is the midpoint sum."
+  },
+  {
+    "id": "APCALCAB-D-086",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Applying properties of definite integrals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $\\int_2^5 f(t)\\,dt = 7$ and $g(x) = \\int_5^x f(t)\\,dt$, what is $g(2)$?",
+    "options": [
+      "$-7$",
+      "$0$",
+      "$7$",
+      "$14$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$g(2) = \\int_5^2 f(t)\\,dt = -\\int_2^5 f(t)\\,dt = -7$. Reversing the limits changes the sign."
+  },
+  {
+    "id": "APCALCAB-D-087",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Integrating using substitution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\int x^2\\sqrt{x^3 + 1}\\,dx$?",
+    "options": [
+      "$\\frac{2}{3}(x^3 + 1)^{3/2} + C$",
+      "$\\frac{1}{3}(x^3 + 1)^{1/2} + C$",
+      "$\\frac{2}{9}(x^3 + 1)^{3/2} + C$",
+      "$\\frac{2}{9}(x^3 + 1)^{1/2} + C$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With $u = x^3 + 1$, $du = 3x^2\\,dx$: $\\frac{1}{3}\\int u^{1/2}\\,du = \\frac{1}{3} \\cdot \\frac{2}{3}u^{3/2} = \\frac{2}{9}(x^3 + 1)^{3/2} + C$. Forgetting the $\\frac{1}{3}$ from $du$ gives $\\frac{2}{3}$."
+  },
+  {
+    "id": "APCALCAB-D-088",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Integrating using substitution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\int_0^{\\pi/4} \\sec^2 x\\tan x\\,dx$?",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{\\sqrt{2}}{2}$",
+      "$1$",
+      "$\\sqrt{2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "With $u = \\tan x$, $du = \\sec^2 x\\,dx$ and $u$ runs from 0 to 1: $\\int_0^1 u\\,du = \\frac{1}{2}$. The value 1 forgets to halve $u^2$."
+  },
+  {
+    "id": "APCALCAB-D-089",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "The Fundamental Theorem of Calculus and accumulation functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\frac{d}{dx}\\int_0^{3x} e^{-t^2}\\,dt$?",
+    "options": [
+      "$e^{-x^2}$",
+      "$3e^{-9x^2}$",
+      "$3e^{-3x^2}$",
+      "$e^{-9x^2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Substitute the upper limit into the integrand and multiply by its derivative: $e^{-(3x)^2} \\cdot 3 = 3e^{-9x^2}$. $(3x)^2$ is $9x^2$, not $3x^2$."
+  },
+  {
+    "id": "APCALCAB-D-090",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Applying properties of definite integrals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\int_{-2}^{2} \\sqrt{4 - x^2}\\,dx$?",
+    "options": [
+      "$\\pi$",
+      "$2\\pi$",
+      "$8$",
+      "$4\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The graph of $y = \\sqrt{4 - x^2}$ is the upper half of a circle of radius 2, so the integral is half its area: $\\frac{1}{2}\\pi(2)^2 = 2\\pi$. The full circle gives $4\\pi$."
+  },
+  {
+    "id": "APCALCAB-D-091",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Applying properties of definite integrals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\int_{-3}^{3} (x^5 - 4x^3 + 2)\\,dx$?",
+    "options": [
+      "$0$",
+      "$6$",
+      "$12$",
+      "$24$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$x^5 - 4x^3$ is an odd function, so its integral over $[-3, 3]$ is 0. The constant 2 contributes $2 \\cdot 6 = 12$."
+  },
+  {
+    "id": "APCALCAB-D-092",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Finding antiderivatives and indefinite integrals: basic rules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is $\\int_0^1 \\frac{1}{1 + x^2}\\,dx$?",
+    "options": [
+      "$\\ln 2$",
+      "$\\frac{\\pi}{4}$",
+      "$1$",
+      "$\\frac{\\pi}{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\int \\frac{1}{1 + x^2}\\,dx = \\arctan x$, so the value is $\\arctan 1 - \\arctan 0 = \\frac{\\pi}{4}$. $\\ln 2$ would come from treating it as $\\frac{1}{1 + x}$."
+  },
+  {
+    "id": "APCALCAB-D-093",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Riemann sums, summation notation and definite integral notation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which definite integral equals $\\lim_{n \\to \\infty} \\sum_{k=1}^{n} \\frac{2}{n}\\sqrt{\\frac{2k}{n}}$?",
+    "options": [
+      "$\\int_0^1 \\sqrt{x}\\,dx$",
+      "$\\int_0^2 \\sqrt{x}\\,dx$",
+      "$\\int_0^2 \\sqrt{2x}\\,dx$",
+      "$\\int_1^3 \\sqrt{x}\\,dx$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The width is $\\Delta x = \\frac{2}{n}$ and the sample points are $x_k = \\frac{2k}{n}$, which run from near 0 to 2. So the sum is $\\int_0^2 \\sqrt{x}\\,dx$. The factor 2 inside the root belongs to $x_k$, not to the integrand."
+  },
+  {
+    "id": "APCALCAB-D-094",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Integrating using substitution",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is $\\int e^{-2x}\\,dx$?",
+    "options": [
+      "$e^{-2x} + C$",
+      "$\\frac{1}{2}e^{-2x} + C$",
+      "$-2e^{-2x} + C$",
+      "$-\\frac{1}{2}e^{-2x} + C$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Divide by the inner derivative $-2$: $-\\frac{1}{2}e^{-2x} + C$. Multiplying by $-2$ is the derivative, not the antiderivative."
+  },
+  {
+    "id": "APCALCAB-D-095",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabIntegration",
+    "skill": "Interpreting the behavior of accumulation functions involving area",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A function $f$ equals 2 for $0 \\leq x < 3$ and $-1$ for $3 \\leq x \\leq 5$. What is $\\int_0^5 f(x)\\,dx$?",
+    "options": [
+      "$2$",
+      "$4$",
+      "$6$",
+      "$8$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The integral is the signed area: $2 \\cdot 3 + (-1) \\cdot 2 = 6 - 2 = 4$. Adding the areas without the sign gives 8."
+  },
+  {
+    "id": "APCALCAB-D-096",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Finding general solutions using separation of variables",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the general solution of $\\frac{dy}{dx} = 3y$?",
+    "options": [
+      "$y = 3x + C$",
+      "$y = Ce^{x/3}$",
+      "$y = Ce^{3x}$",
+      "$y = e^{3x} + C$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$\\frac{dy}{y} = 3\\,dx$ gives $\\ln|y| = 3x + C$, so $y = Ce^{3x}$. The constant multiplies the exponential; it is not added to it."
+  },
+  {
+    "id": "APCALCAB-D-097",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Modeling situations with differential equations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The rate of change of a population $P$ with respect to time $t$ is proportional to the population. Which equation models this?",
+    "options": [
+      "$P = kt$",
+      "$\\frac{dP}{dt} = kP$",
+      "$\\frac{dP}{dt} = kt$",
+      "$\\frac{dP}{dt} = k$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Rate of change of $P$\" is $\\frac{dP}{dt}$, and \"proportional to $P$\" means a constant times $P$."
+  },
+  {
+    "id": "APCALCAB-D-098",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Modeling situations with differential equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Water drains from a tank at a rate proportional to the square root of the depth $h$ of the water. Which equation models this, for some constant $k > 0$?",
+    "options": [
+      "$\\frac{dh}{dt} = -k\\sqrt{h}$",
+      "$h = -k\\sqrt{t}$",
+      "$\\frac{dh}{dt} = -kh^2$",
+      "$\\frac{dh}{dt} = k\\sqrt{t}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The depth is falling, so $\\frac{dh}{dt}$ is negative, and its size is a constant times $\\sqrt{h}$. The rate depends on the depth, not directly on the time."
+  },
+  {
+    "id": "APCALCAB-D-099",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Verifying solutions for differential equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The function $y = x^3$ is a solution of which differential equation?",
+    "options": [
+      "$\\frac{dy}{dx} = x^2$",
+      "$x\\frac{dy}{dx} = y$",
+      "$x\\frac{dy}{dx} = 3y$",
+      "$\\frac{dy}{dx} = 3y$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$\\frac{dy}{dx} = 3x^2$, so $x\\frac{dy}{dx} = 3x^3 = 3y$. The equation $\\frac{dy}{dx} = 3y$ would need $3x^2 = 3x^3$ for all $x$."
+  },
+  {
+    "id": "APCALCAB-D-100",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Sketching slope fields",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In the slope field for $\\frac{dy}{dx} = x - 2y$, what is the slope of the segment at the point $(3, 1)$?",
+    "options": [
+      "$1$",
+      "$3$",
+      "$5$",
+      "$7$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Substitute $x = 3$, $y = 1$: $3 - 2(1) = 1$. Adding instead of subtracting gives $3 + 2(1) = 5$, and $3$ is the value of $x$ alone."
+  },
+  {
+    "id": "APCALCAB-D-101",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Reasoning using slope fields",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the slope field for $\\frac{dy}{dx} = x + y$, along which line are all the segments horizontal?",
+    "options": [
+      "$x = 0$",
+      "$y = x - 1$",
+      "$y = x$",
+      "$y = -x$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Horizontal segments have slope 0, so $x + y = 0$, which is the line $y = -x$."
+  },
+  {
+    "id": "APCALCAB-D-102",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Finding particular solutions using initial conditions and separation of variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which function is the solution of $\\frac{dy}{dx} = y\\cos x$ with $y(0) = 2$?",
+    "options": [
+      "$y = 2 + \\sin x$",
+      "$y = 2e^{\\cos x}$",
+      "$y = e^{\\sin x} + 1$",
+      "$y = 2e^{\\sin x}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$\\frac{dy}{y} = \\cos x\\,dx$ gives $\\ln|y| = \\sin x + C$, so $y = Ae^{\\sin x}$, and $y(0) = A = 2$. The choice $2e^{\\cos x}$ fails the initial condition: it gives $2e$ at $x = 0$."
+  },
+  {
+    "id": "APCALCAB-D-103",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Finding particular solutions using initial conditions and separation of variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $\\frac{dy}{dx} = 2y$ and $y(0) = 5$, what is $y(\\ln 3)$?",
+    "options": [
+      "$10$",
+      "$15$",
+      "$30$",
+      "$45$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$y = 5e^{2x}$, so $y(\\ln 3) = 5e^{2\\ln 3} = 5 \\cdot 9 = 45$. The value 15 forgets the factor 2 in the exponent."
+  },
+  {
+    "id": "APCALCAB-D-104",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Exponential models with differential equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A substance decays according to $\\frac{dA}{dt} = -kA$, and its half-life is 8 years. What is $k$?",
+    "options": [
+      "$\\frac{\\ln 2}{8}$",
+      "$\\frac{\\ln 8}{2}$",
+      "$8\\ln 2$",
+      "$\\frac{8}{\\ln 2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$A = A_0e^{-kt}$ and $e^{-8k} = \\frac{1}{2}$, so $8k = \\ln 2$ and $k = \\frac{\\ln 2}{8}$."
+  },
+  {
+    "id": "APCALCAB-D-105",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Modeling situations with differential equations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What are the constant (equilibrium) solutions of $\\frac{dy}{dt} = y(4 - y)$?",
+    "options": [
+      "$y = 0$ and $y = -4$",
+      "$y = 4$ only",
+      "$y = 2$ only",
+      "$y = 0$ and $y = 4$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A constant solution has $\\frac{dy}{dt} = 0$ for all $t$: $y(4 - y) = 0$ gives $y = 0$ and $y = 4$. At $y = 2$ the rate is largest, not zero."
+  },
+  {
+    "id": "APCALCAB-D-106",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Reasoning using slope fields",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A solution curve of $\\frac{dy}{dx} = x^2 - y$ passes through $(1, 3)$. What is the value of $\\frac{d^2y}{dx^2}$ at that point?",
+    "options": [
+      "$-2$",
+      "$0$",
+      "$2$",
+      "$4$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Differentiate implicitly: $\\frac{d^2y}{dx^2} = 2x - \\frac{dy}{dx}$. At $(1, 3)$, $\\frac{dy}{dx} = 1 - 3 = -2$, so $\\frac{d^2y}{dx^2} = 2 - (-2) = 4$. The value $-2$ is the first derivative."
+  },
+  {
+    "id": "APCALCAB-D-107",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Finding particular solutions using initial conditions and separation of variables",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which function is the solution of $\\frac{dy}{dx} = e^{x - y}$ with $y(0) = 0$?",
+    "options": [
+      "$y = x + 1$",
+      "$y = \\ln(e^x + 1)$",
+      "$y = e^x - 1$",
+      "$y = x$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$e^y\\,dy = e^x\\,dx$ gives $e^y = e^x + C$, and $y(0) = 0$ gives $C = 0$, so $y = x$. Check: $\\frac{dy}{dx} = 1 = e^{x - x}$."
+  },
+  {
+    "id": "APCALCAB-D-108",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Reasoning using slope fields",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The function $y$ satisfies $\\frac{dy}{dx} = x + y^2$ and $y(1) = 2$. Using the tangent line at $x = 1$, what is the approximate value of $y(1.2)$?",
+    "options": [
+      "$2$",
+      "$2.2$",
+      "$2.8$",
+      "$3$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The slope at $(1, 2)$ is $1 + 4 = 5$, so $y(1.2) \\approx 2 + 5(0.2) = 3$. Leaving out the $x$ term gives a slope of 4 and 2.8; adding only the step 0.2 gives 2.2."
+  },
+  {
+    "id": "APCALCAB-D-109",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Exponential models with differential equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A quantity starts at 40 and doubles every 3 hours, so $\\frac{dy}{dt} = ky$. What is $k$?",
+    "options": [
+      "$\\frac{\\ln 2}{3}$",
+      "$\\ln\\frac{3}{2}$",
+      "$\\frac{2}{3}$",
+      "$3\\ln 2$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$y = 40e^{kt}$ with $e^{3k} = 2$, so $k = \\frac{\\ln 2}{3}$. The starting value 40 does not affect $k$."
+  },
+  {
+    "id": "APCALCAB-D-110",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Verifying solutions for differential equations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which function is a solution of $\\frac{dy}{dx} = \\frac{y}{x}$ for $x > 0$?",
+    "options": [
+      "$y = x^2$",
+      "$y = e^x$",
+      "$y = 5x$",
+      "$y = \\frac{5}{x}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For $y = 5x$, $\\frac{dy}{dx} = 5$ and $\\frac{y}{x} = 5$. For $y = x^2$, $\\frac{dy}{dx} = 2x$ but $\\frac{y}{x} = x$."
+  },
+  {
+    "id": "APCALCAB-D-111",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Exponential models with differential equations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $\\frac{dy}{dt} = -0.5y$ and $y(0) = 8$, what is $y(2)$?",
+    "options": [
+      "$\\frac{8}{e}$",
+      "$4$",
+      "$7$",
+      "$8e$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$y = 8e^{-0.5t}$, so $y(2) = 8e^{-1} = \\frac{8}{e}$. The value 7 treats the rate as a constant loss of 0.5 per unit of time."
+  },
+  {
+    "id": "APCALCAB-D-112",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Reasoning using slope fields",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a slope field, the segments are identical along every vertical line, so the slope depends only on $x$. Which differential equation could it represent?",
+    "options": [
+      "$\\frac{dy}{dx} = xy$",
+      "$\\frac{dy}{dx} = x - y$",
+      "$\\frac{dy}{dx} = y - 1$",
+      "$\\frac{dy}{dx} = x^2 - 1$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Moving up or down a vertical line changes $y$ but not $x$, so the slope must depend on $x$ alone. Only $x^2 - 1$ contains no $y$."
+  },
+  {
+    "id": "APCALCAB-D-113",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabDiffEq",
+    "skill": "Finding particular solutions using initial conditions and separation of variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which function is the solution of $\\frac{dy}{dx} = 1 + y^2$ with $y(0) = 0$, for $-\\frac{\\pi}{2} < x < \\frac{\\pi}{2}$?",
+    "options": [
+      "$y = \\arctan x$",
+      "$y = \\tan x$",
+      "$y = \\sec^2 x - 1$",
+      "$y = x + \\frac{x^3}{3}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\frac{dy}{1 + y^2} = dx$ gives $\\arctan y = x + C$, and $y(0) = 0$ gives $C = 0$, so $y = \\tan x$. The choice $\\arctan x$ inverts the wrong side."
+  },
+  {
+    "id": "APCALCAB-D-114",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Finding the average value of a function on an interval",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the average value of $\\sin x$ on the interval $[0, \\pi]$?",
+    "options": [
+      "$\\frac{2}{\\pi}$",
+      "$1$",
+      "$\\frac{\\pi}{2}$",
+      "$2$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{1}{\\pi}\\int_0^{\\pi}\\sin x\\,dx = \\frac{2}{\\pi}$. The value 2 is the integral before dividing by the length $\\pi$."
+  },
+  {
+    "id": "APCALCAB-D-115",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Connecting position, velocity and acceleration of functions using integrals",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A particle has velocity $v(t) = 6t - 3t^2$ and position $x(0) = 4$. What is $x(2)$?",
+    "options": [
+      "$0$",
+      "$4$",
+      "$8$",
+      "$12$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$x(2) = 4 + \\int_0^2 (6t - 3t^2)\\,dt = 4 + (12 - 8) = 8$. The value 0 is $v(2)$, and 4 is the starting position or the displacement alone."
+  },
+  {
+    "id": "APCALCAB-D-116",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Connecting position, velocity and acceleration of functions using integrals",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A particle moves along a line with velocity $v(t)$. What does $\\int_0^5 |v(t)|\\,dt$ represent?",
+    "options": [
+      "The total distance traveled from $t = 0$ to $t = 5$",
+      "The displacement of the particle from $t = 0$ to $t = 5$",
+      "The position of the particle at $t = 5$",
+      "The average velocity of the particle on $[0, 5]$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Integrating speed, $|v(t)|$, counts backward motion as distance, so the result is total distance. Without the absolute value the integral is the displacement."
+  },
+  {
+    "id": "APCALCAB-D-117",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Finding the area between curves expressed as functions of x",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the area of the region between $y = x$ and $y = x^3$ for $0 \\leq x \\leq 1$?",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{4}$",
+      "$1$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "On $[0, 1]$, $x \\geq x^3$, so the area is $\\int_0^1 (x - x^3)\\,dx = \\frac{1}{2} - \\frac{1}{4} = \\frac{1}{4}$."
+  },
+  {
+    "id": "APCALCAB-D-118",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Finding the area between curves expressed as functions of y",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the area of the region bounded by $x = y^2$ and $x = 9$?",
+    "options": [
+      "$18$",
+      "$27$",
+      "$36$",
+      "$54$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Integrate with respect to $y$ from $-3$ to 3: $\\int_{-3}^3 (9 - y^2)\\,dy = 54 - 18 = 36$. Using only $y \\geq 0$ gives 18, and 54 is the area of the whole 9 by 6 rectangle."
+  },
+  {
+    "id": "APCALCAB-D-119",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Volume with disc method: revolving around the x- or y-axis",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The region under $y = \\sqrt{x}$ from $x = 0$ to $x = 4$ is revolved about the x-axis. What is the volume of the solid?",
+    "options": [
+      "$\\frac{16\\pi}{3}$",
+      "$8\\pi$",
+      "$16\\pi$",
+      "$32\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$V = \\pi\\int_0^4 (\\sqrt{x})^2\\,dx = \\pi\\int_0^4 x\\,dx = 8\\pi$. Not squaring the radius gives $\\pi\\int_0^4 \\sqrt{x}\\,dx = \\frac{16\\pi}{3}$."
+  },
+  {
+    "id": "APCALCAB-D-120",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Volume with washer method: revolving around the x- or y-axis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The region between $y = x$ and $y = x^2$ is revolved about the x-axis. What is the volume of the solid?",
+    "options": [
+      "$\\frac{\\pi}{30}$",
+      "$\\frac{\\pi}{10}$",
+      "$\\frac{2\\pi}{15}$",
+      "$\\frac{\\pi}{3}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Washers with outer radius $x$ and inner radius $x^2$: $\\pi\\int_0^1 (x^2 - x^4)\\,dx = \\pi\\left(\\frac{1}{3} - \\frac{1}{5}\\right) = \\frac{2\\pi}{15}$. Squaring the difference $(x - x^2)$ gives $\\frac{\\pi}{30}$."
+  },
+  {
+    "id": "APCALCAB-D-121",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Volume with disc method: revolving around other axes",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The region bounded by $y = x^2$, $y = 1$ and $x = 0$ (with $0 \\leq x \\leq 1$) is revolved about the line $y = 1$. What is the volume of the solid?",
+    "options": [
+      "$\\frac{8\\pi}{15}$",
+      "$\\frac{2\\pi}{3}$",
+      "$\\frac{4\\pi}{5}$",
+      "$\\pi$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Discs with radius $1 - x^2$: $\\pi\\int_0^1 (1 - x^2)^2\\,dx = \\pi\\left(1 - \\frac{2}{3} + \\frac{1}{5}\\right) = \\frac{8\\pi}{15}$. Using washers $1 - x^4$ treats the axis as the x-axis and gives $\\frac{4\\pi}{5}$."
+  },
+  {
+    "id": "APCALCAB-D-122",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Volumes with cross sections: squares and rectangles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The base of a solid is the region between $y = 1 - x^2$ and the x-axis. Cross sections perpendicular to the x-axis are squares. What is the volume?",
+    "options": [
+      "$\\frac{8}{15}$",
+      "$\\frac{16}{15}$",
+      "$\\frac{4}{3}$",
+      "$\\frac{16\\pi}{15}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Each square has side $1 - x^2$: $\\int_{-1}^1 (1 - x^2)^2\\,dx = 2\\left(1 - \\frac{2}{3} + \\frac{1}{5}\\right) = \\frac{16}{15}$. The value $\\frac{4}{3}$ is the area of the base, and a factor of $\\pi$ belongs to discs, not squares."
+  },
+  {
+    "id": "APCALCAB-D-123",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Volumes with cross sections: triangles and semicircles",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The base of a solid is the disc $x^2 + y^2 \\leq 4$. Cross sections perpendicular to the x-axis are semicircles whose diameters lie in the base. What is the volume?",
+    "options": [
+      "$\\frac{8\\pi}{3}$",
+      "$\\frac{32}{3}$",
+      "$\\frac{16\\pi}{3}$",
+      "$\\frac{32\\pi}{3}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The diameter is $2\\sqrt{4 - x^2}$, so the radius is $\\sqrt{4 - x^2}$ and each semicircle has area $\\frac{\\pi}{2}(4 - x^2)$. $V = \\frac{\\pi}{2}\\int_{-2}^2 (4 - x^2)\\,dx = \\frac{\\pi}{2} \\cdot \\frac{32}{3} = \\frac{16\\pi}{3}$. Using the full circle gives $\\frac{32\\pi}{3}$."
+  },
+  {
+    "id": "APCALCAB-D-124",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Using accumulation functions and definite integrals in applied contexts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Water flows into a tank at $r(t) = 3t^2$ liters per minute. The tank holds 10 liters at $t = 0$. How many liters does it hold at $t = 2$?",
+    "options": [
+      "$8$",
+      "$12$",
+      "$16$",
+      "$18$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$10 + \\int_0^2 3t^2\\,dt = 10 + 8 = 18$. The value 8 is the amount added, and 12 is the rate $r(2)$."
+  },
+  {
+    "id": "APCALCAB-D-125",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Finding the average value of a function on an interval",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A particle has velocity $v(t) = 3t^2$. What is its average velocity on $[0, 2]$?",
+    "options": [
+      "$4$",
+      "$6$",
+      "$8$",
+      "$12$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Average velocity $= \\frac{1}{2}\\int_0^2 3t^2\\,dt = \\frac{8}{2} = 4$. The value 6 averages $v(0)$ and $v(2)$, which works only for linear velocity."
+  },
+  {
+    "id": "APCALCAB-D-126",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Finding the area between curves that intersect at more than two points",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the total area of the regions enclosed by $y = x^3$ and $y = x$?",
+    "options": [
+      "$0$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{2}$",
+      "$1$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The curves meet at $x = -1, 0, 1$. By symmetry each region has area $\\frac{1}{4}$, so the total is $\\frac{1}{2}$. Integrating $x - x^3$ from $-1$ to 1 without absolute values gives 0, because the two regions cancel."
+  },
+  {
+    "id": "APCALCAB-D-127",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Using accumulation functions and definite integrals in applied contexts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "$R(t)$ is the rate, in cars per hour, at which cars enter a toll road, with $t$ in hours. What does $\\int_0^6 R(t)\\,dt$ represent?",
+    "options": [
+      "The average rate of entry in the first 6 hours",
+      "The rate at which cars enter at $t = 6$",
+      "The change in the entry rate in the first 6 hours",
+      "The number of cars that enter in the first 6 hours"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Integrating a rate over time gives the total amount: cars per hour times hours is cars. The average rate would be this integral divided by 6."
+  },
+  {
+    "id": "APCALCAB-D-128",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Volume with washer method: revolving around the x- or y-axis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The region bounded by $y = x$, $y = 3$ and $x = 0$ is revolved about the x-axis. What is the volume of the solid?",
+    "options": [
+      "$9\\pi$",
+      "$18\\pi$",
+      "$27\\pi$",
+      "$36\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Washers with outer radius 3 and inner radius $x$, for $0 \\leq x \\leq 3$: $\\pi\\int_0^3 (9 - x^2)\\,dx = \\pi(27 - 9) = 18\\pi$. The value $27\\pi$ is the cylinder without the hole, and $9\\pi$ is the cone that was removed."
+  },
+  {
+    "id": "APCALCAB-D-129",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Connecting position, velocity and acceleration of functions using integrals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A particle has velocity $v(t) = \\cos\\left(\\frac{\\pi t}{2}\\right)$ and position $x(0) = 1$. What is $x(1)$?",
+    "options": [
+      "$\\frac{2}{\\pi}$",
+      "$1 + \\frac{2}{\\pi}$",
+      "$2$",
+      "$1 + \\frac{\\pi}{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$x(1) = 1 + \\int_0^1 \\cos\\frac{\\pi t}{2}\\,dt = 1 + \\frac{2}{\\pi}\\sin\\frac{\\pi}{2} = 1 + \\frac{2}{\\pi}$. Multiplying by $\\frac{\\pi}{2}$ instead of dividing gives $1 + \\frac{\\pi}{2}$."
+  },
+  {
+    "id": "APCALCAB-D-130",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Finding the area between curves expressed as functions of y",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the area of the region enclosed by $x = y^2$ and $x = y + 2$?",
+    "options": [
+      "$\\frac{7}{6}$",
+      "$\\frac{10}{3}$",
+      "$\\frac{9}{2}$",
+      "$9$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The curves meet where $y^2 = y + 2$, at $y = -1$ and $y = 2$. The line is to the right: $\\int_{-1}^2 (y + 2 - y^2)\\,dy = \\frac{9}{2}$. Slicing in $y$ avoids splitting the region into two $x$-integrals."
+  },
+  {
+    "id": "APCALCAB-D-131",
+    "section": "nocalc",
+    "test": 0,
+    "module": 1,
+    "domain": "apcalcabApplications",
+    "skill": "Volumes with cross sections: triangles and semicircles",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The base of a solid is the triangle bounded by $y = 2 - x$ and the coordinate axes. Cross sections perpendicular to the x-axis are equilateral triangles. What is the volume? (An equilateral triangle of side $s$ has area $\\frac{\\sqrt{3}}{4}s^2$.)",
+    "options": [
+      "$\\frac{\\sqrt{3}}{3}$",
+      "$\\frac{2\\sqrt{3}}{3}$",
+      "$\\frac{4\\sqrt{3}}{3}$",
+      "$\\frac{8}{3}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The side is $2 - x$, so $V = \\frac{\\sqrt{3}}{4}\\int_0^2 (2 - x)^2\\,dx = \\frac{\\sqrt{3}}{4} \\cdot \\frac{8}{3} = \\frac{2\\sqrt{3}}{3}$. The value $\\frac{8}{3}$ uses squares instead of triangles."
+  }
+]

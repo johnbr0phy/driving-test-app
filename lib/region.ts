@@ -93,6 +93,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   rrbgroupd: "IN", sscgd: "IN", sscchsl: "IN", sscmts: "IN", uppolice: "IN", ibpsclerk: "IN", jnvst: "IN",
   sbiclerk: "IN", sbipo: "IN", ibpsrrb: "IN", biharpolice: "IN", rajpolice: "IN", delhipolice: "IN", mppolice: "IN",
   upscse: "IN", nda: "IN", agniveer: "IN", agniveervayu: "IN", rrbalp: "IN", rpfconst: "IN", ssccpo: "IN",
+  neet: "IN", jeemain: "IN", cuet: "IN", mhtcet: "IN", ugcnet: "IN", reet: "IN", uptet: "IN", aissee: "IN",
   aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL",
   netplus: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", itil: "GLOBAL", psm: "GLOBAL", capm: "GLOBAL",
 };
@@ -109,7 +110,8 @@ export const NON_DRIVING_TESTS = new Set([
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst",
   "sbiclerk", "sbipo", "ibpsrrb", "biharpolice", "rajpolice", "delhipolice", "mppolice",
   "upscse", "nda", "agniveer", "agniveervayu", "rrbalp", "rpfconst", "ssccpo",
-  "apworld", "aplang",
+  "neet", "jeemain", "cuet", "mhtcet", "ugcnet", "reet", "uptet", "aissee",
+  "apworld", "aphug", "aplang", "apcalcab",
   "phcse", "phlet",
   "jambeng",
 ]);
@@ -154,9 +156,9 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     testsSub: "200 questions per test on your state's road rules, L and P plates and demerits. Hazard perception is not covered.",
   },
   IN: {
-    title: "Free Indian Practice Tests: LL Test, SSC & RRB | Tigertest",
-    description: "Free practice tests for India: the RTO learner's licence (LL) test and SSC CGL, RRB NTPC and CTET mock tests, every answer explained. No account needed.",
-    lead: "Practice for the learner's licence test and government job exams like SSC CGL, RRB NTPC and CTET. Original questions, every answer explained. No signup.",
+    title: "Free Indian Practice Tests: LL Test, SSC, JEE & NEET | Tigertest",
+    description: "Free practice tests for India: the RTO learner's licence (LL) test, SSC CGL and RRB NTPC, JEE Main and NEET, and CTET mock tests, every answer explained. No account needed.",
+    lead: "Practice for the learner's licence test, government job exams like SSC CGL and RRB NTPC, college entrance exams like JEE Main and NEET, and teacher eligibility tests like CTET. Original questions, every answer explained. No signup.",
     cta: { label: "LL test practice", href: "/rto-learners-licence-test" },
     testsTitle: "Learner's licence test",
     testsSub: "200 questions from the Motor Vehicles Act and the driving regulations, in km/h for left-hand traffic. The test format varies by state.",

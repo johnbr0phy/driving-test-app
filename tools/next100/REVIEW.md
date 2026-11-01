@@ -39,11 +39,14 @@ explanation arrives at (one bank had 12 items where the build marked the smalles
 Compare against every bank in your family: all India banks in `data/v2/` (ssccgl, rrbntpc, ibpspo,
 ctet, rrbgroupd, sscgd, sscchsl, sscmts, uppolice, ibpsclerk, jnvst, sbiclerk, sbipo, ibpsrrb,
 biharpolice, rajpolice, delhipolice, mppolice, upscse, nda, agniveer, agniveervayu, rrbalp, rpfconst,
-ssccpo), the US school banks (appsych, apush, apbio, apworld, aplang, sat, act, psat, ged, praxis), and
+ssccpo, neet, jeemain, cuet, mhtcet, ugcnet, reet, uptet, aissee), the US school banks (appsych, apush, apbio, apworld, aplang, apcalcab, aphug, sat, act, psat, ged, praxis), and
 the Philippines banks (phcse, phlet, and `data/philippines-lto-questions.json`). Compare your stems against all of them (normalised text,
 same numbers, same key fact). Rewrite YOUR item when it duplicates or near-duplicates another bank's
 item with the same numbers or the same fact and answer. Generic templates with different content
 are fine.
+
+## 3b. Passages and theme
+Every item that reads a shared passage, cloze, table or puzzle carries `stimulusId`. Do not change the config's theme; the integrator owns hues.
 
 ## 4. Landing and facts
 Check every claim about the real exam on the landing, in the config's `scoreNote`/copy and in the

@@ -1,7 +1,7 @@
 # Builder brief: one exam for the next-100 wave
 
 You build ONE practice exam for Tigertest. Up to ten builders work at once in the same checkout,
-`/home/user/driving-test-app` (branch `next100-batch3`), each on a different exam. The integrator
+`/home/user/driving-test-app` (branch `next100-batch4`), each on a different exam. The integrator
 applies shared-file changes, builds, screenshots and commits. Your exam's row is in the table at the
 bottom of this file and in `tools/next100/QUEUE.md`.
 
@@ -99,26 +99,40 @@ short.
 - Hues: suggest one; the integrator settles clashes (rule: within 8 degrees of another theme,
   differ by 15 points of saturation or 8 of lightness; lightness 30 to 48%).
 
-## Batch 3
+## Lessons from batches 2 and 3 (apply them too)
+- Every item that reads a shared passage, cloze passage, table or puzzle must carry `stimulusId`
+  (and `caseStep`/order as the template does). One batch-1 bank left cloze blanks without it, so a
+  passage was never shown. Check: no stem says "blank (n)", "the passage" or "the table" without one.
+- The wheel of theme hues is crowded (360 themes). Suggest a hue, but the integrator picks the final
+  one and writes it into both `app/globals.css` and your config. Reviewers never change the theme.
+- Batch 3's dedupe pass still found 33 repeats after per-bank reviews: favourite textbook numbers
+  (8-15-17, 5-12-13, x - 1/x, 30% up 10% off, A and B fill/empty a tank) and favourite facts recur.
+  Pick less common numbers and facts from the start, and grep your numbers against the family.
+
+## Batch 4
 
 | id | Test | Engine | Template | Region | slug | landing | suggested hue |
 |---|---|---|---|---|---|---|---|
-| upscse | UPSC Civil Services Prelims, GS Paper I (with a CSAT drill) | v2 | rrbntpc | IN | /upsc-prelims | /upsc-prelims-practice-test | 28 45% 34% |
-| nda | NDA and NA exam (Mathematics + General Ability Test) | v2 | sscmts (two sections) | IN | /nda | /nda-exam-practice-test | 214 55% 32% |
-| agniveer | Agniveer Army CEE (General Duty) | v2 | rrbgroupd | IN | /agniveer-army | /agniveer-army-cee-practice-test | 95 40% 30% |
-| agniveervayu | Agniveer Vayu (Indian Air Force), Science group | v2 | sscmts (sections) | IN | /agniveer-vayu | /agniveer-vayu-practice-test | 205 60% 40% |
-| rrbalp | RRB ALP CBT 1 | v2 | rrbgroupd | IN | /rrb-alp | /rrb-alp-practice-test | 355 45% 34% |
-| rpfconst | RPF Constable CBT | v2 | rrbgroupd | IN | /rpf-constable | /rpf-constable-practice-test | 230 35% 34% |
-| ssccpo | SSC CPO (Sub-Inspector) Paper 1 | v2 | ssccgl | IN | /ssc-cpo | /ssc-cpo-practice-test | 262 40% 36% |
-| apworld | AP World History: Modern (multiple-choice section) | v2 | apush | US | /ap-world-history | /ap-world-history-practice-test | 30 30% 36% |
-| aplang | AP English Language and Composition (multiple-choice section) | v2 | apush (passage sets as stimuli) | US | /ap-english-language | /ap-english-language-practice-test | 200 25% 34% |
-| phlet | Philippines Licensure Examination for Professional Teachers (LET), General and Professional Education | v1 | tools/next30/rbt (v1 certification exam); idBase 13100, stateCode PHLET, prefix PHLET- | PH | /let-reviewer | /let-reviewer-practice-test | 160 45% 30% |
+| neet | NEET-UG (Physics, Chemistry, Biology) | v2 | nda (sections) | IN | /neet | /neet-practice-test | 330 40% 40% |
+| jeemain | JEE Main Paper 1 (B.E./B.Tech: Maths, Physics, Chemistry, with numeric-value items) | v2 | nda (sections) + numeric like gcsehigher | IN | /jee-main | /jee-main-practice-test | 20 55% 34% |
+| cuet | CUET-UG General Aptitude Test (Section III) | v2 | ssccgl | IN | /cuet | /cuet-general-test-practice-test | 280 30% 40% |
+| mhtcet | MHT-CET PCM group | v2 | nda (sections) | IN | /mht-cet | /mht-cet-practice-test | 100 30% 32% |
+| ugcnet | UGC-NET Paper 1 (Teaching and Research Aptitude) | v2 | ctet | IN | /ugc-net-paper-1 | /ugc-net-paper-1-practice-test | 240 25% 40% |
+| reet | REET Level 1 (Rajasthan teacher eligibility) | v2 | ctet | IN | /reet | /reet-level-1-practice-test | 40 45% 34% |
+| uptet | UPTET Paper 1 (UP teacher eligibility) | v2 | ctet | IN | /uptet | /uptet-paper-1-practice-test | 160 30% 32% |
+| aissee | AISSEE Class 6 (Sainik School entrance) | v2 | jnvst | IN | /aissee | /aissee-class-6-practice-test | 120 25% 34% |
+| apcalcab | AP Calculus AB (multiple-choice section) | v2 | apbio (KaTeX math, calculator part) | US | /ap-calculus-ab | /ap-calculus-ab-practice-test | 210 35% 36% |
+| aphug | AP Human Geography (multiple-choice section) | v2 | apworld (stimulus sets) | US | /ap-human-geography | /ap-human-geography-practice-test | 55 35% 32% |
 
 Exam-specific notes:
-- India exams: the India bank family is now 18 banks; check against all of them while writing (see the list in REVIEW.md). Confirm each pattern from the latest official notification (UPSC, NDA via upsc.gov.in; Agniveer via joinindianarmy.nic.in and agnipathvayu.cdac.in; RRB CEN notices on the RRB regional sites; SSC via ssc.gov.in/api/attachment PDFs).
-- `upscse`: GS Paper I only for the tests (100 questions, 2 hours, 2 marks, 1/3 negative); CSAT Paper II is qualifying (33%), so offer it as one drill of comprehension, reasoning and basic numeracy, not a full test. Static GK only, never current affairs or office-holders.
-- `nda`: two sections like the real papers (Maths 120 in 150 min, GAT 150 in 150 min); model shorter at the real pace if needed and say so.
-- `agniveervayu`: Science subjects group (English, Physics, Mathematics); the Other-than-Science and combined options are not modelled; say so.
-- `apworld`, `aplang`: download the current CED PDF; Section I only; original stimuli (practice texts attributed to a kind of writer, never real copyrighted passages beyond short public-domain quotes). AP English Language passages are original nonfiction prose; the reading and writing (revision) item types both appear. Add both to the "AP exams" hub group.
-- `phlet`: PRC's LET, General Education and Professional Education parts (Elementary level; the Secondary major is not modelled). Philippine context, US spelling, pesos. Confirm the current PRC table of specifications and passing rule (75 general average, no rating below 50).
+- India exams: the India family is now 25 banks (list in REVIEW.md); grep all of them while writing. Confirm the current pattern from the official information bulletin (NTA: neet.nta.nic.in, jeemain.nta.nic.in, cuet.nta.nic.in, ugcnet.nta.nic.in, exams.nta.ac.in/AISSEE; MHT-CET: cetcell.mahacet.org; REET: rajeduboard.rajasthan.gov.in; UPTET: updeled.gov.in / UPESSC). Date-stamp anything about the 2026 or 2027 cycle.
+- `neet`: 180 compulsory questions in 3 hours (no optional section since 2025; confirm), +4/-1. Model shorter at the real pace if needed (for example Physics 45, Chemistry 45, Biology 90 at full length is fine if the drills stay 20). NCERT class 11-12 syllabus, original items; numeric physics computed and asserted. Explain negative marking, do not apply it.
+- `jeemain`: per subject, multiple choice plus numeric-value items (`numeric`); confirm the current counts and whether numeric items carry negative marking. Use KaTeX. Every numeric key computed in Python and asserted.
+- `cuet`: the General Test (GK, current affairs excluded, general mental ability, numerical ability, quantitative reasoning, logical and analytical reasoning). Static GK only.
+- `mhtcet`: Physics and Chemistry (Maths weighted double), Maharashtra State Board class 11 (about 20%) and 12 syllabus, no negative marking; confirm.
+- `ugcnet`: Paper 1 only (50 questions, 100 marks, 10 units). Reading comprehension and data interpretation as stimulus sets; no current affairs.
+- `reet`, `uptet`: Paper/Level 1 (Classes 1 to 5) like CTET: Child Development and Pedagogy, Language I (Hindi) and II (English), Maths, EVS; REET adds Rajasthan GK where the current pattern has it. Hindi-language items in Devanagari with English explanations as in `uppolice`; keep them correct. Check against `ctet` for overlap.
+- `aissee`: Class 6 (Maths, GK, Language, Intelligence), NTA's current pattern and marks; Class 5 reader level like `jnvst`; no overlap with `jnvst`.
+- `apcalcab`: Section I Part A (no calculator) and Part B (graphing calculator) as two sections; every answer computed (sympy is fine in build checks). Graph items described in words or tables. Free response not modelled.
+- `aphug`: Section I, current CED; stimulus sets (maps described in words, tables, short texts); no overlap with apworld.
 

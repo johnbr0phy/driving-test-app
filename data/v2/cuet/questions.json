@@ -1,0 +1,4340 @@
+[
+  {
+    "id": "CUET-T1-001",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medieval literature",
+    "stem": "Who is traditionally credited with writing the Prithviraj Raso, a Hindi epic about Prithviraj Chauhan?",
+    "options": [
+      "Chand Bardai",
+      "Kalhana",
+      "Amir Khusrau",
+      "Banabhatta"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Prithviraj Raso is attributed to Chand Bardai, said to be Prithviraj Chauhan's court poet. Kalhana wrote the Rajatarangini about Kashmir, and Banabhatta wrote Harshacharita."
+  },
+  {
+    "id": "CUET-T1-002",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Which river forms much of the border between Uttarakhand and Nepal?",
+    "options": [
+      "Gandak",
+      "Kali",
+      "Teesta",
+      "Kosi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Kali, also called the Sharda or Mahakali, marks much of the western border of Nepal with Uttarakhand. The Gandak and Kosi flow from Nepal into Bihar, and the Teesta drains Sikkim."
+  },
+  {
+    "id": "CUET-T1-003",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Digestion",
+    "stem": "The enzyme pepsin, made in the stomach, begins the digestion of which nutrient?",
+    "options": [
+      "Starch",
+      "Proteins",
+      "Fats",
+      "Fibre"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pepsin works in the acid of the stomach and breaks proteins into smaller peptides. Starch digestion begins in the mouth with salivary amylase, and fats are digested mainly in the small intestine."
+  },
+  {
+    "id": "CUET-T1-004",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mughal architecture",
+    "stem": "Akbar built the Buland Darwaza at Fatehpur Sikri to mark his victory in which campaign?",
+    "options": [
+      "Kashmir",
+      "Bengal",
+      "Gujarat",
+      "Chittor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Buland Darwaza commemorates Akbar's conquest of Gujarat in 1573. It is the main southern gateway of the Jama Masjid at Fatehpur Sikri."
+  },
+  {
+    "id": "CUET-T1-005",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plateaus",
+    "stem": "The Chota Nagpur Plateau, rich in coal and iron ore, lies mostly in which state?",
+    "options": [
+      "Odisha",
+      "Chhattisgarh",
+      "Jharkhand",
+      "Madhya Pradesh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Most of the Chota Nagpur Plateau is in Jharkhand, with edges in Odisha, Chhattisgarh, West Bengal and Bihar. It holds the Damodar valley coalfields."
+  },
+  {
+    "id": "CUET-T1-006",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ecology",
+    "stem": "Animals such as bears and crows, which eat both plants and animals, are called:",
+    "options": [
+      "Herbivores",
+      "Omnivores",
+      "Decomposers",
+      "Carnivores"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Omnivores eat both plant and animal food. Herbivores eat only plants, carnivores only other animals, and decomposers break down dead matter."
+  },
+  {
+    "id": "CUET-T1-007",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Buddhism",
+    "stem": "The First Buddhist Council, held soon after the Buddha's death, met at which place?",
+    "options": [
+      "Rajagriha",
+      "Pataliputra",
+      "Vaishali",
+      "Kundalavana"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The First Council met at Rajagriha under King Ajatashatru. The Second was at Vaishali, the Third at Pataliputra under Ashoka and the Fourth in Kashmir."
+  },
+  {
+    "id": "CUET-T1-008",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Panama Canal links which two oceans?",
+    "options": [
+      "Pacific and Indian",
+      "Atlantic and Indian",
+      "Atlantic and Pacific",
+      "Arctic and Atlantic"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Panama Canal cuts across the Isthmus of Panama and joins the Atlantic (through the Caribbean Sea) to the Pacific. The Suez Canal links the Mediterranean and the Red Sea."
+  },
+  {
+    "id": "CUET-T1-009",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "What does a rectifier do?",
+    "options": [
+      "Stores electric charge",
+      "Raises the AC voltage",
+      "Changes AC into DC",
+      "Changes DC into AC"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A rectifier, built from diodes, lets current pass one way only and so turns alternating current into direct current. An inverter does the reverse, and a step-up transformer raises AC voltage."
+  },
+  {
+    "id": "CUET-T1-010",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Temple architecture",
+    "stem": "The Sun Temple at Konark is designed in the form of what?",
+    "options": [
+      "A lotus flower",
+      "A seated elephant",
+      "A royal boat",
+      "A huge chariot"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Konark is built as the Sun god's chariot, with 24 carved stone wheels and seven horses. Sailors once called it the Black Pagoda."
+  },
+  {
+    "id": "CUET-T1-011",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "Which Article of the Constitution of India defines a Money Bill?",
+    "options": [
+      "Article 112",
+      "Article 110",
+      "Article 117",
+      "Article 108"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 110 defines a Money Bill. Article 108 covers joint sittings, Article 112 the annual financial statement (the budget) and Article 117 other financial bills."
+  },
+  {
+    "id": "CUET-T1-012",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Space",
+    "stem": "A solar eclipse happens when:",
+    "options": [
+      "The Moon is between the Sun and Earth",
+      "The Moon moves behind the Earth",
+      "The Earth is between the Sun and Moon",
+      "The Sun is between the Earth and Moon"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In a solar eclipse the Moon blocks sunlight from part of the Earth, so it can only happen at new moon. When the Earth is between the Sun and the Moon, the result is a lunar eclipse."
+  },
+  {
+    "id": "CUET-T1-013",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bhakti movement",
+    "stem": "The poet-saint Mirabai composed devotional songs addressed mainly to which deity?",
+    "options": [
+      "Krishna",
+      "Rama",
+      "Durga",
+      "Shiva"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mirabai, a Rajput princess of the 16th century, sang of her love for Krishna, whom she called Giridhar Gopal. Tulsidas is the poet best known for devotion to Rama."
+  },
+  {
+    "id": "CUET-T1-014",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "The power of judicial review in the Indian Constitution was modelled mainly on the constitution of which country?",
+    "options": [
+      "Ireland",
+      "United Kingdom",
+      "United States",
+      "Canada"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Judicial review, the power of courts to strike down laws that break the Constitution, comes from the United States. The parliamentary system came from the United Kingdom."
+  },
+  {
+    "id": "CUET-T1-015",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Technology",
+    "stem": "In an LED bulb, what does LED stand for?",
+    "options": [
+      "Light Emitting Diode",
+      "Light Energy Detector",
+      "Low Energy Device",
+      "Long Emission Display"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An LED is a light emitting diode, a semiconductor that gives out light when current flows through it. It turns more of its energy into light than a filament bulb."
+  },
+  {
+    "id": "CUET-T1-016",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "The Simla Conference of 1945, held to discuss a new Executive Council of Indian leaders, was called by which Viceroy?",
+    "options": [
+      "Lord Mountbatten",
+      "Lord Linlithgow",
+      "Lord Irwin",
+      "Lord Wavell"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lord Wavell called the Simla Conference in June 1945 to discuss his plan for an Executive Council of Indians. It broke down over the Muslim League's claim to nominate all the Muslim members. Linlithgow was Viceroy before him, and Mountbatten came after, in 1947."
+  },
+  {
+    "id": "CUET-T1-017",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Which Constitution Amendment Act made way for the Goods and Services Tax?",
+    "options": [
+      "100th",
+      "101st",
+      "102nd",
+      "103rd"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The Constitution (One Hundred and First Amendment) Act, 2016 added Article 246A and enabled GST, which began on 1 July 2017."
+  },
+  {
+    "id": "CUET-T1-018",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nuclear energy",
+    "stem": "What is the job of the control rods in a nuclear reactor?",
+    "options": [
+      "Carry heat to the turbine",
+      "Absorb extra neutrons",
+      "Slow down fast neutrons",
+      "Shield workers from rays"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Control rods of boron or cadmium soak up neutrons, so pushing them in slows the chain reaction. Slowing neutrons down is the moderator's job, and the coolant carries the heat."
+  },
+  {
+    "id": "CUET-T1-019",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series? 3, 5, 11, 29, 83, ?",
+    "options": [
+      "239",
+      "241",
+      "243",
+      "245"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is three times the one before minus 4: 3 x 3 - 4 = 5, 5 x 3 - 4 = 11, and so on. So 83 x 3 - 4 = 245."
+  },
+  {
+    "id": "CUET-T1-020",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next in the series? B, G, L, Q, ?",
+    "options": [
+      "V",
+      "W",
+      "U",
+      "T"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter is five places after the one before: B (2), G (7), L (12), Q (17), so the next is the 22nd letter, V."
+  },
+  {
+    "id": "CUET-T1-021",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "Choose the number that completes the analogy. 5 : 120 :: 7 : ?",
+    "options": [
+      "336",
+      "342",
+      "343",
+      "350"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The rule is cube the number and subtract the number: 125 - 5 = 120, so 343 - 7 = 336. 343 forgets to subtract."
+  },
+  {
+    "id": "CUET-T1-022",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which number is the odd one out? 144, 289, 324, 391",
+    "options": [
+      "144",
+      "289",
+      "324",
+      "391"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "144 = 12 x 12, 289 = 17 x 17 and 324 = 18 x 18 are perfect squares. 391 = 17 x 23 is not."
+  },
+  {
+    "id": "CUET-T1-023",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If MELON is written as NFMPO in a code, how is PEACH written in that code?",
+    "options": [
+      "ODZBG",
+      "QFBCI",
+      "QGBDI",
+      "QFBDI"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each letter moves one place forward: M to N, E to F, and so on. So P-E-A-C-H becomes Q-F-B-D-I. ODZBG moves each letter back instead."
+  },
+  {
+    "id": "CUET-T1-024",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Symbol substitution",
+    "stem": "If + means x, x means -, - means ÷ and ÷ means +, what is the value of 18 - 3 + 4 ÷ 6 x 2?",
+    "options": [
+      "28",
+      "30",
+      "34",
+      "38"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Replace the signs: 18 ÷ 3 x 4 + 6 - 2. Division and multiplication first: 6 x 4 = 24. Then 24 + 6 - 2 = 28."
+  },
+  {
+    "id": "CUET-T1-025",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "Speedometer : Speed :: Tachometer : ?",
+    "options": [
+      "Rotation speed",
+      "Oil temperature",
+      "Tyre pressure",
+      "Fuel level"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A speedometer shows how fast a vehicle moves, and a tachometer shows how fast a shaft, such as an engine's crankshaft, turns, in revolutions per minute. Tyre pressure is read with a pressure gauge."
+  },
+  {
+    "id": "CUET-T1-026",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "The price of a school bag rises from ₹640 to ₹736. What is the percentage increase?",
+    "options": [
+      "12%",
+      "13%",
+      "14%",
+      "15%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The rise is 736 - 640 = ₹96, and 96 / 640 x 100 = 15%. Dividing by the new price, 96 / 736, gives about 13%, the usual slip."
+  },
+  {
+    "id": "CUET-T1-027",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "₹5,040 is shared among A, B and C in the ratio 2 : 3 : 7. What is C's share?",
+    "options": [
+      "₹840",
+      "₹1,260",
+      "₹2,520",
+      "₹2,940"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 2 + 3 + 7 = 12 parts, each worth 5,040 / 12 = ₹420. C gets 7 x 420 = ₹2,940."
+  },
+  {
+    "id": "CUET-T1-028",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "A shopkeeper marks a table lamp 60% above its cost price and then gives a 30% discount. What is his profit percent?",
+    "options": [
+      "8%",
+      "12%",
+      "16%",
+      "30%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Take cost as 100. Marked price is 160, and 30% off leaves 160 x 0.70 = 112. Profit is 12%. 30% simply subtracts 30 from 60, which forgets that the discount is taken off the higher marked price."
+  },
+  {
+    "id": "CUET-T1-029",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "At what rate of simple interest per year will ₹2,400 earn ₹864 in 4 years?",
+    "options": [
+      "7.2%",
+      "8%",
+      "8.5%",
+      "9%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Rate = 864 x 100 / (2,400 x 4) = 86,400 / 9,600 = 9%. 7.2% would be the rate if the time were 5 years."
+  },
+  {
+    "id": "CUET-T1-030",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "The average age of 28 students is 13 years. When the teacher's age is included, the average rises by 1 year. How old is the teacher?",
+    "options": [
+      "29",
+      "41",
+      "42",
+      "43"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The 29 people now average 14, a total of 406. The students total 28 x 13 = 364, so the teacher is 406 - 364 = 42. 41 adds 28 to the old average instead of the new one, 14."
+  },
+  {
+    "id": "CUET-T1-031",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average speed",
+    "stem": "A bus travels 105 km from one town to another at 30 km/h and returns at 70 km/h. What is its average speed for the round trip?",
+    "options": [
+      "40 km/h",
+      "42 km/h",
+      "45 km/h",
+      "50 km/h"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Going takes 105 / 30 = 3.5 hours and returning 105 / 70 = 1.5 hours, so 210 km take 5 hours: 210 / 5 = 42 km/h. 50 is the simple average of the two speeds, which ignores the longer time spent at 30 km/h."
+  },
+  {
+    "id": "CUET-T1-032",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "A can finish a job in 16 days and B in 24 days. They work together for 6 days, then A leaves. In how many more days does B finish the job?",
+    "options": [
+      "6 days",
+      "8 days",
+      "9 days",
+      "12 days"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Together they do 1/16 + 1/24 = 5/48 a day, so 6 days give 30/48. The remaining 18/48 takes B 18/48 x 24 = 9 days."
+  },
+  {
+    "id": "CUET-T1-033",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Linear equations",
+    "stem": "If 5x - 3 = 3x + 11, what is the value of x² - x?",
+    "options": [
+      "42",
+      "49",
+      "56",
+      "63"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "5x - 3x = 11 + 3, so 2x = 14 and x = 7. Then x² - x = 49 - 7 = 42. 49 stops at x², and 56 adds x instead of subtracting it."
+  },
+  {
+    "id": "CUET-T1-034",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algebraic identities",
+    "stem": "If a + b = 13 and ab = 30, what is the value of a² + b²?",
+    "options": [
+      "79",
+      "109",
+      "139",
+      "169"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "a² + b² = (a + b)² - 2ab = 169 - 60 = 109. Subtracting ab only once gives 139. (The numbers are 3 and 10: 9 + 100 = 109.)"
+  },
+  {
+    "id": "CUET-T1-035",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Triangles",
+    "stem": "The angles of a triangle are in the ratio 3 : 5 : 10. What is the largest angle?",
+    "options": [
+      "72°",
+      "80°",
+      "90°",
+      "100°"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The angles add up to 180°, so one part is 180 / 18 = 10°. The largest angle is 10 x 10 = 100°."
+  },
+  {
+    "id": "CUET-T1-036",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the volume of a cylinder of radius 3.5 cm and height 12 cm? (Take pi = 22/7.)",
+    "options": [
+      "154 cm³",
+      "264 cm³",
+      "462 cm³",
+      "924 cm³"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume = pi r² h = 22/7 x 12.25 x 12 = 462 cubic cm. 264 is the curved surface area in square cm (2 pi r h), and 924 doubles the volume."
+  },
+  {
+    "id": "CUET-T1-037",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mean",
+    "stem": "The mean of 12, 15, 18, x and 21 is 17. What is x?",
+    "options": [
+      "15",
+      "16",
+      "17",
+      "19"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Five numbers with mean 17 add up to 85. The four known numbers add up to 66, so x = 85 - 66 = 19."
+  },
+  {
+    "id": "CUET-T1-038",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Median",
+    "stem": "What is the median of 23, 11, 19, 31, 15 and 27?",
+    "options": [
+      "19",
+      "21",
+      "22",
+      "23"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "In order: 11, 15, 19, 23, 27, 31. With six values the median is the mean of the middle two: (19 + 23) / 2 = 21."
+  },
+  {
+    "id": "CUET-T1-039",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pythagoras theorem",
+    "stem": "A 29 m ladder rests against a wall and reaches a window 21 m above the ground. How far is the foot of the ladder from the wall?",
+    "options": [
+      "8 m",
+      "18 m",
+      "20 m",
+      "25 m"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The ladder is the hypotenuse: 29² - 21² = 841 - 441 = 400, and the square root of 400 is 20 m. 8 m is 29 - 21."
+  },
+  {
+    "id": "CUET-T1-040",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Linear equations",
+    "stem": "The sum of two numbers is 47 and their difference is 13. What is the larger number?",
+    "options": [
+      "30",
+      "34",
+      "37",
+      "47"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Adding the two equations: 2 x larger = 47 + 13 = 60, so the larger number is 30 and the smaller is 17. 34 is 47 - 13, and 47 is just the sum."
+  },
+  {
+    "id": "CUET-T1-041",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All kites are toys. Some toys are red.\nConclusions: I. Some kites are red. II. Some red things are toys.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Some toys are red, so some red things are toys: II follows. The red toys need not be kites, so I does not follow."
+  },
+  {
+    "id": "CUET-T1-042",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a row of 53 students, Mohan is 22nd from the left. What is his position from the right?",
+    "options": [
+      "29th",
+      "30th",
+      "31st",
+      "32nd"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Position from the right = total - position from the left + 1 = 53 - 22 + 1 = 32nd. Forgetting the +1 gives 31st."
+  },
+  {
+    "id": "CUET-T1-043",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Kavya's mother is the only sister of Ajay's father. How is Kavya related to Ajay's father?",
+    "options": [
+      "Cousin",
+      "Daughter",
+      "Niece",
+      "Sister"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ajay's father is the brother of Kavya's mother, so he is Kavya's maternal uncle and she is his niece. Kavya is Ajay's cousin, not his father's."
+  },
+  {
+    "id": "CUET-T1-044",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "In a certain year, 1 March falls on a Monday. On which day does 1 April fall that year?",
+    "options": [
+      "Friday",
+      "Thursday",
+      "Wednesday",
+      "Monday"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "March has 31 days, which is 4 weeks and 3 days. Three days after Monday is Thursday."
+  },
+  {
+    "id": "CUET-T1-045",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Arun walks 7 km east, turns left and walks 8 km, then turns left again and walks 13 km. How far is he now from his starting point?",
+    "options": [
+      "8 km",
+      "10 km",
+      "14 km",
+      "28 km"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "He ends 13 - 7 = 6 km west and 8 km north of the start. The straight-line distance is the square root of (36 + 64) = 10 km. 28 km is the total distance walked."
+  },
+  {
+    "id": "CUET-T1-046",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clocks",
+    "stem": "What is the angle between the hour and minute hands of a clock at 5:24?",
+    "options": [
+      "12°",
+      "18°",
+      "24°",
+      "30°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "At 5:24 the hour hand is at 5 x 30 + 24 x 0.5 = 162° and the minute hand at 24 x 6 = 144°. The angle is 18°. Ignoring the hour hand's movement past the 5 gives 6°."
+  },
+  {
+    "id": "CUET-T1-047",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statement and assumption",
+    "stem": "Statement: \"The college library will stay open till 10 p.m. during the examination weeks.\"\nAssumptions: I. Students will use the library late in the evening during exams. II. The library is usually open till 10 p.m.\nWhich assumption(s) are implicit?",
+    "options": [
+      "Only assumption I is implicit",
+      "Only assumption II is implicit",
+      "Both I and II are implicit",
+      "Neither I nor II is implicit"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Extending the hours makes sense only if students will use them, so I is implicit. Saying \"during the examination weeks\" suggests the library normally closes earlier, so II is not."
+  },
+  {
+    "id": "CUET-T1-048",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seating arrangement",
+    "stem": "V, W, X, Y and Z sit in a row facing north. V sits at the left end. W sits immediately to the right of V. Y sits third to the right of V. Z sits immediately to the right of Y. Who sits in the middle?",
+    "options": [
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Number the seats 1 to 5 from the left: V is 1, W is 2, Y is 4 and Z is 5. The only seat left, 3 in the middle, is X's."
+  },
+  {
+    "id": "CUET-T1-049",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coded relations",
+    "stem": "P + Q means P is the father of Q, P - Q means P is the sister of Q, and P x Q means P is the brother of Q. What does A - B + C mean?",
+    "options": [
+      "A is C's mother",
+      "A is C's grandmother",
+      "A is C's sister",
+      "A is C's aunt"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A - B: A is B's sister. B + C: B is C's father. So A is the sister of C's father, which makes her C's aunt."
+  },
+  {
+    "id": "CUET-T1-050",
+    "section": "gat",
+    "test": 1,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Comparison",
+    "stem": "A is taller than B but shorter than C. D is taller than C. E is shorter than B. Who is the second tallest?",
+    "options": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The order from tallest is D, C, A, B, E. So C is second tallest."
+  },
+  {
+    "id": "CUET-T2-001",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "Which leader of the national movement was popularly known as Deshbandhu, friend of the nation?",
+    "options": [
+      "Chittaranjan Das",
+      "Madan Mohan Malaviya",
+      "Bipin Chandra Pal",
+      "Motilal Nehru"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chittaranjan Das, a Calcutta lawyer who gave up his practice during the Non-Cooperation Movement, was called Deshbandhu. Madan Mohan Malaviya was called Mahamana, and Bipin Chandra Pal belonged to the Lal-Bal-Pal trio."
+  },
+  {
+    "id": "CUET-T2-002",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "States",
+    "stem": "Which Indian state shares a land border with the largest number of other states?",
+    "options": [
+      "Chhattisgarh",
+      "Uttar Pradesh",
+      "Assam",
+      "Madhya Pradesh"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Uttar Pradesh touches eight states (Uttarakhand, Himachal Pradesh, Haryana, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand and Bihar) and also Delhi. Chhattisgarh touches seven."
+  },
+  {
+    "id": "CUET-T2-003",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biology",
+    "stem": "Mycology is the scientific study of what?",
+    "options": [
+      "Insects",
+      "Birds",
+      "Fungi",
+      "Mosses"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mycology studies fungi such as mushrooms, moulds and yeasts. Insects are studied in entomology and birds in ornithology."
+  },
+  {
+    "id": "CUET-T2-004",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vijayanagara",
+    "stem": "The ruins of Hampi, the Vijayanagara capital, lie on the banks of which river?",
+    "options": [
+      "Tungabhadra",
+      "Krishna",
+      "Kaveri",
+      "Godavari"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hampi stands on the south bank of the Tungabhadra in Karnataka. The Krishna lies farther north; the Raichur doab between the two rivers was fought over by Vijayanagara and the Bahmanis."
+  },
+  {
+    "id": "CUET-T2-005",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Minerals",
+    "stem": "The Kolar Gold Fields, once India's main gold mines, are in which state?",
+    "options": [
+      "Jharkhand",
+      "Karnataka",
+      "Rajasthan",
+      "Andhra Pradesh"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Kolar lies in south-eastern Karnataka. Its mines closed in 2001; Hutti, also in Karnataka, is the main working gold mine."
+  },
+  {
+    "id": "CUET-T2-006",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human eye",
+    "stem": "The rod cells in the retina of the eye mainly help us to:",
+    "options": [
+      "See colours clearly",
+      "Focus on near objects",
+      "See in dim light",
+      "Control the pupil size"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rod cells respond to low light but not to colour, which is why colours fade at dusk. Cone cells give colour vision in bright light, and the lens does the focusing."
+  },
+  {
+    "id": "CUET-T2-007",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient texts",
+    "stem": "The Natyashastra, the oldest Indian treatise on drama, dance and music, is credited to whom?",
+    "options": [
+      "Patanjali",
+      "Vatsyayana",
+      "Bharata Muni",
+      "Panini"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Natyashastra is attributed to Bharata Muni. Panini wrote a Sanskrit grammar, the Ashtadhyayi, and Patanjali the Yoga Sutras."
+  },
+  {
+    "id": "CUET-T2-008",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ports",
+    "stem": "Paradip Port, a major port on the Bay of Bengal, is in which state?",
+    "options": [
+      "Tamil Nadu",
+      "West Bengal",
+      "Odisha",
+      "Andhra Pradesh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Paradip lies near the mouth of the Mahanadi in Odisha and handles large volumes of iron ore and coal. Haldia serves West Bengal."
+  },
+  {
+    "id": "CUET-T2-009",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Most kidney stones are made mainly of which compound?",
+    "options": [
+      "Sodium chloride",
+      "Calcium carbonate",
+      "Calcium oxalate",
+      "Uric acid crystals"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "About four in five kidney stones are calcium stones, mostly calcium oxalate. Uric acid stones are a smaller group, and calcium carbonate makes up shells and limestone."
+  },
+  {
+    "id": "CUET-T2-010",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ancient texts",
+    "stem": "The Panchatantra, a collection of animal fables, is traditionally credited to whom?",
+    "options": [
+      "Tulsidas",
+      "Kalidasa",
+      "Valmiki",
+      "Vishnu Sharma"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Panchatantra is credited to Vishnu Sharma, who is said to have used the fables to teach wise conduct to three princes."
+  },
+  {
+    "id": "CUET-T2-011",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Andes mountain range runs along the western side of which continent?",
+    "options": [
+      "Africa",
+      "South America",
+      "Australia",
+      "North America"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Andes run about 7,000 km down the west coast of South America, the longest continental mountain range. The Rockies are in North America."
+  },
+  {
+    "id": "CUET-T2-012",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "What is the frequency of the AC mains supply in India?",
+    "options": [
+      "50 Hz",
+      "60 Hz",
+      "100 Hz",
+      "220 Hz"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Indian mains supply alternates at 50 hertz, at a nominal 230 volts. Countries such as the USA use 60 Hz; 220 is a voltage figure, not a frequency."
+  },
+  {
+    "id": "CUET-T2-013",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval travellers",
+    "stem": "Francois Bernier, who wrote about the Mughal empire, came from which country?",
+    "options": [
+      "England",
+      "France",
+      "Italy",
+      "Portugal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bernier was a French physician who spent about twelve years in India from 1658, at the end of Shah Jahan's reign and in Aurangzeb's, and wrote Travels in the Mogul Empire."
+  },
+  {
+    "id": "CUET-T2-014",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "How many Schedules does the Constitution of India have today?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The Constitution began with 8 Schedules. The 9th, 10th, 11th and 12th were added by later amendments, so it now has 12."
+  },
+  {
+    "id": "CUET-T2-015",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "Growing pulses such as gram and lentil enriches the soil with which nutrient?",
+    "options": [
+      "Nitrogen",
+      "Phosphorus",
+      "Potassium",
+      "Calcium"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bacteria in the root nodules of pulse crops fix nitrogen from the air into compounds plants can use, so a pulse crop leaves the soil richer in nitrogen."
+  },
+  {
+    "id": "CUET-T2-016",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "Hyder Ali and his son Tipu Sultan ruled which kingdom in the 18th century?",
+    "options": [
+      "Mysore",
+      "Carnatic",
+      "Travancore",
+      "Hyderabad"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hyder Ali rose to power in Mysore, and Tipu Sultan succeeded him in 1782. Tipu died defending Srirangapatna in 1799. Hyderabad was ruled by the Nizams."
+  },
+  {
+    "id": "CUET-T2-017",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "An economy in which public and private sectors both play a large role, as in India, is called a:",
+    "options": [
+      "Command economy",
+      "Barter economy",
+      "Market economy",
+      "Mixed economy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "India adopted a mixed economy after independence: the state runs some sectors and private firms run others. A command economy is run wholly by the state."
+  },
+  {
+    "id": "CUET-T2-018",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Light",
+    "stem": "Which colour of visible light has the longest wavelength?",
+    "options": [
+      "Green",
+      "Red",
+      "Violet",
+      "Blue"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Visible light runs from violet, about 400 nm, to red, about 700 nm. Red bends least in a prism because of its longer wavelength."
+  },
+  {
+    "id": "CUET-T2-019",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series? 3, 4, 8, 17, 33, ?",
+    "options": [
+      "49",
+      "50",
+      "56",
+      "58"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The differences are the squares 1, 4, 9, 16, so the next difference is 25: 33 + 25 = 58."
+  },
+  {
+    "id": "CUET-T2-020",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next in the series? CX, EU, GR, IO, ?",
+    "options": [
+      "LK",
+      "KM",
+      "JL",
+      "KL"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The first letter moves forward two places (C, E, G, I, K) and the second moves back three (X, U, R, O, L). So the next pair is KL."
+  },
+  {
+    "id": "CUET-T2-021",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "Choose the number that completes the analogy. 216 : 6 :: 512 : ?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "16"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "216 is 6 cubed, so the second number is the cube root of the first. 512 = 8 x 8 x 8, so the answer is 8."
+  },
+  {
+    "id": "CUET-T2-022",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which is the odd one out? Whale, Dolphin, Seal, Shark",
+    "options": [
+      "Whale",
+      "Dolphin",
+      "Seal",
+      "Shark"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Whales, dolphins and seals are mammals that breathe air and feed their young on milk. A shark is a fish that breathes through gills."
+  },
+  {
+    "id": "CUET-T2-023",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a code, PENCIL is written as LICNEP. How is ERASER written in that code?",
+    "options": [
+      "RSEARE",
+      "RESAER",
+      "ERASRE",
+      "RESARE"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The code writes the word backwards: PENCIL reversed is LICNEP. ERASER reversed is R-E-S-A-R-E."
+  },
+  {
+    "id": "CUET-T2-024",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alphabet test",
+    "stem": "In the English alphabet, which letter is 7th to the right of the 11th letter from the left?",
+    "options": [
+      "Q",
+      "S",
+      "D",
+      "R"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The 11th letter is K. Seven places to the right of it is the 18th letter, R. D is seven places to the left."
+  },
+  {
+    "id": "CUET-T2-025",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Missing number",
+    "stem": "In each group the third number follows the same rule from the first two: (2, 5, 17), (3, 4, 19), (6, 2, ?). Find the missing number.",
+    "options": [
+      "12",
+      "14",
+      "18",
+      "20"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The third number is the product plus the sum of the first two: 10 + 7 = 17 and 12 + 7 = 19. So 12 + 8 = 20. 12 is the product alone, and 18 adds only the larger number."
+  },
+  {
+    "id": "CUET-T2-026",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "Two successive discounts of 15% and 8% are equal to a single discount of:",
+    "options": [
+      "21.2%",
+      "21.8%",
+      "22.4%",
+      "23%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "After both, the price is 0.85 x 0.92 = 0.782 of the original, so the single discount is 21.8%. Adding the two (23%) overstates it, because the second discount is on a lower price."
+  },
+  {
+    "id": "CUET-T2-027",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the compound interest on ₹6,250 at 8% per year for 2 years, compounded yearly?",
+    "options": [
+      "₹960",
+      "₹980",
+      "₹1,000",
+      "₹1,040"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The amount is 6,250 x 1.08 x 1.08 = ₹7,290, so the interest is 7,290 - 6,250 = ₹1,040. ₹1,000 is the simple interest."
+  },
+  {
+    "id": "CUET-T2-028",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "The ages of two sisters are in the ratio 4 : 7. After 8 years the ratio will be 2 : 3. How old is the elder sister now?",
+    "options": [
+      "16 years",
+      "24 years",
+      "28 years",
+      "35 years"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Let the ages be 4x and 7x. Then (4x + 8) / (7x + 8) = 2/3 gives 12x + 24 = 14x + 16, so x = 4. The sisters are 16 and 28."
+  },
+  {
+    "id": "CUET-T2-029",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mixtures",
+    "stem": "60 litres of a mixture has milk and water in the ratio 7 : 3. How much water must be added to make the ratio 1 : 1?",
+    "options": [
+      "12 litres",
+      "18 litres",
+      "21 litres",
+      "24 litres"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The mixture has 42 litres of milk and 18 of water. Water must rise to 42 litres, so 42 - 18 = 24 litres are added."
+  },
+  {
+    "id": "CUET-T2-030",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "37.5% of a number is 141. What is the number?",
+    "options": [
+      "329",
+      "352",
+      "360",
+      "376"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "37.5% is 3/8, so the number is 141 x 8 / 3 = 376."
+  },
+  {
+    "id": "CUET-T2-031",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "Two trains 135 m and 225 m long run on parallel tracks in opposite directions at 34 km/h and 38 km/h. How long do they take to cross each other?",
+    "options": [
+      "15 seconds",
+      "18 seconds",
+      "20 seconds",
+      "24 seconds"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "In opposite directions the speeds add: 72 km/h = 20 m/s. They must cover 135 + 225 = 360 m, which takes 360 / 20 = 18 seconds."
+  },
+  {
+    "id": "CUET-T2-032",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Partnership",
+    "stem": "A invests ₹32,000 for 12 months and B invests ₹48,000 for 6 months in a business. Out of a profit of ₹15,400, what is B's share?",
+    "options": [
+      "₹6,600",
+      "₹7,700",
+      "₹8,800",
+      "₹9,240"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Shares follow capital x time: A 32,000 x 12 = 3,84,000 and B 48,000 x 6 = 2,88,000, a ratio of 4 : 3. B gets 3/7 x 15,400 = ₹6,600. ₹8,800 is A's share, ₹9,240 splits by capital alone and ₹7,700 is half."
+  },
+  {
+    "id": "CUET-T2-033",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Exponents",
+    "stem": "If 3^(x - 2) = 81, what is x?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "81 = 3^4, so x - 2 = 4 and x = 6. 4 forgets to add the 2."
+  },
+  {
+    "id": "CUET-T2-034",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quadratic equations",
+    "stem": "What are the roots of x² - 15x + 44 = 0?",
+    "options": [
+      "2 and 22",
+      "4 and 11",
+      "-4 and -11",
+      "-4 and 11"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Two numbers that multiply to 44 and add up to 15 are 4 and 11, so x² - 15x + 44 = (x - 4)(x - 11) and the roots are 4 and 11."
+  },
+  {
+    "id": "CUET-T2-035",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polygons",
+    "stem": "What is each interior angle of a regular polygon with 15 sides?",
+    "options": [
+      "144°",
+      "150°",
+      "156°",
+      "160°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The interior angles of a 15-sided polygon add up to (15 - 2) x 180 = 2,340°, and 2,340 / 15 = 156°. Each exterior angle is 360 / 15 = 24°, and 180 - 24 = 156° as well."
+  },
+  {
+    "id": "CUET-T2-036",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "The circumference of a circle is 154 cm. What is its area? (Take pi = 22/7.)",
+    "options": [
+      "943.25 cm²",
+      "1,886.5 cm²",
+      "3,773 cm²",
+      "7,546 cm²"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "2 pi r = 154 gives r = 154 x 7 / 44 = 24.5 cm. Area = 22/7 x 24.5 x 24.5 = 1,886.5 square cm. 7,546 uses the diameter, 49, as the radius, and 3,773 is 2 pi r², twice the area."
+  },
+  {
+    "id": "CUET-T2-037",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the total surface area of a cube with edges of 11 cm?",
+    "options": [
+      "484 cm²",
+      "605 cm²",
+      "660 cm²",
+      "726 cm²"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "A cube has 6 square faces: 6 x 11 x 11 = 726 square cm. 484 counts only the 4 side faces, and 1,331 is the volume in cubic cm."
+  },
+  {
+    "id": "CUET-T2-038",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mode",
+    "stem": "What is the mode of 4, 7, 7, 9, 4, 7, 3, 9?",
+    "options": [
+      "4",
+      "6.25",
+      "7",
+      "9"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The mode is the value that occurs most often. 7 occurs three times, 4 and 9 twice. 6.25 is the mean."
+  },
+  {
+    "id": "CUET-T2-039",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data interpretation",
+    "stem": "The table shows bicycles sold by a shop.\n\n| Month | Bicycles sold |\n|---|---|\n| July | 84 |\n| August | 126 |\n| September | 105 |\n| October | 97 |\n\nBy what percent did sales rise from July to August?",
+    "options": [
+      "33.3%",
+      "42%",
+      "45%",
+      "50%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The rise is 126 - 84 = 42, and 42 / 84 x 100 = 50%. Dividing by August's 126 gives 33.3%, and 42 is the rise itself, not a percent."
+  },
+  {
+    "id": "CUET-T2-040",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "If a : b = 7 : 9 and b : c = 6 : 5, what is a : c?",
+    "options": [
+      "14 : 18",
+      "7 : 5",
+      "14 : 15",
+      "18 : 15"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Make b the same in both: a : b = 14 : 18 and b : c = 18 : 15. So a : c = 14 : 15. 7 : 5 joins the outer numbers without matching b."
+  },
+  {
+    "id": "CUET-T2-041",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All pens are boxes. No box is a chair.\nConclusions: I. No pen is a chair. II. Some chairs are pens.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Every pen is a box and no box is a chair, so no pen can be a chair: I follows. II contradicts I, so it does not follow."
+  },
+  {
+    "id": "CUET-T2-042",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Venn diagrams",
+    "stem": "In a group of 70 students, 42 play cricket, 31 play football and 12 play both. How many play neither game?",
+    "options": [
+      "3",
+      "9",
+      "12",
+      "21"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Students who play at least one game = 42 + 31 - 12 = 61, so 70 - 61 = 9 play neither. 21 counts only those who play just one game (30 + 19 = 49) and leaves out the 12 who play both; 3 forgets to subtract the overlap (73 - 70)."
+  },
+  {
+    "id": "CUET-T2-043",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "A is the son of B. C is B's sister. D is C's husband. How is D related to A?",
+    "options": [
+      "Uncle",
+      "Father",
+      "Brother-in-law",
+      "Cousin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "C is A's aunt (a sister of A's parent B), and D is married to her, so D is A's uncle."
+  },
+  {
+    "id": "CUET-T2-044",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If today is Wednesday, what day of the week will it be 75 days from today?",
+    "options": [
+      "Tuesday",
+      "Monday",
+      "Sunday",
+      "Friday"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "75 = 10 weeks and 5 days. Five days after Wednesday is Monday."
+  },
+  {
+    "id": "CUET-T2-045",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Rhea faces east. She turns 135° clockwise and then 270° anticlockwise. Which direction does she face now?",
+    "options": [
+      "North-west",
+      "South-west",
+      "South-east",
+      "North-east"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "135° clockwise from east passes south (90°) and goes 45° further, to south-west. Turning 270° anticlockwise is the same as turning 90° clockwise, which takes her from south-west to north-west."
+  },
+  {
+    "id": "CUET-T2-046",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clocks",
+    "stem": "What is the angle between the hands of a clock at 8:30?",
+    "options": [
+      "60°",
+      "75°",
+      "90°",
+      "105°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The hour hand is at 8 x 30 + 30 x 0.5 = 255° and the minute hand at 180°, so the angle is 75°. 60° ignores the half-hour movement of the hour hand."
+  },
+  {
+    "id": "CUET-T2-047",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statement and conclusion",
+    "stem": "Statement: The number of students in a school has doubled in three years, but the number of teachers is the same.\nConclusions: I. There are now more students for each teacher than three years ago. II. The school's results will fall.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Twice the students with the same number of teachers means more students per teacher, so I follows. Nothing in the statement tells us what will happen to the results, so II does not."
+  },
+  {
+    "id": "CUET-T2-048",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "Neha is 9th from the top and 28th from the bottom in her class. How many students are in the class?",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Total = 9 + 28 - 1 = 36, because Neha is counted in both positions. 37 counts her twice."
+  },
+  {
+    "id": "CUET-T2-049",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statement and assumption",
+    "stem": "Statement: A bank's message to its customers says, \"Pay your electricity bill on our app and save a trip to the branch.\"\nAssumptions: I. Many customers can use the bank's app. II. Going to the branch to pay bills is a bother for some customers.\nWhich assumption(s) are implicit?",
+    "options": [
+      "Only assumption I is implicit",
+      "Only assumption II is implicit",
+      "Both I and II are implicit",
+      "Neither I nor II is implicit"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The message is useful only if customers can use the app (I), and \"save a trip\" takes for granted that the trip is a bother (II). Both are implicit."
+  },
+  {
+    "id": "CUET-T2-050",
+    "section": "gat",
+    "test": 2,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Seating arrangement",
+    "stem": "Six friends A, B, C, D, E and F sit around a round table facing the centre. A sits opposite D, and B sits opposite C. Who sits opposite F?",
+    "options": [
+      "B",
+      "E",
+      "A",
+      "C"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Around a table of six, seats pair off into three opposite pairs. A-D and B-C take two pairs, so the last pair is E and F."
+  },
+  {
+    "id": "CUET-D-001",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deccan kingdoms",
+    "stem": "The Bahmani kingdom, founded in 1347, first had its capital at which city?",
+    "options": [
+      "Bidar",
+      "Gulbarga",
+      "Bijapur",
+      "Golconda"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Bahmani sultanate began at Gulbarga (Kalaburagi) and later moved its capital to Bidar. Bijapur and Golconda became capitals of kingdoms that broke away from it."
+  },
+  {
+    "id": "CUET-D-002",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "Why do swimmers float so easily in the Dead Sea?",
+    "options": [
+      "Strong currents",
+      "Very salty water",
+      "Thin, dry air",
+      "Very warm water"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Dead Sea is several times saltier than the ocean. The dense, salty water pushes up harder on a body, so people float with little effort."
+  },
+  {
+    "id": "CUET-D-003",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Space",
+    "stem": "A lunar eclipse can occur only on which night?",
+    "options": [
+      "A new moon night",
+      "A half moon night",
+      "Any night of the month",
+      "A full moon night"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A lunar eclipse needs the Earth exactly between the Sun and the Moon, which happens only when the Moon is full."
+  },
+  {
+    "id": "CUET-D-004",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mughal empire",
+    "stem": "Who commanded Akbar's army against Maharana Pratap at the Battle of Haldighati in 1576?",
+    "options": [
+      "Man Singh",
+      "Bairam Khan",
+      "Birbal",
+      "Todar Mal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Raja Man Singh of Amber led the Mughal army at Haldighati. Bairam Khan was Akbar's early regent, and Todar Mal his revenue minister."
+  },
+  {
+    "id": "CUET-D-005",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "Which is the smallest of the world's five oceans?",
+    "options": [
+      "Indian",
+      "Atlantic",
+      "Arctic",
+      "Southern"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Arctic Ocean is the smallest and shallowest. The Pacific is the largest; the Southern Ocean around Antarctica is the second smallest."
+  },
+  {
+    "id": "CUET-D-006",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "Which of these vitamins dissolves in water rather than in fat?",
+    "options": [
+      "Vitamin K",
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Vitamin C and the B vitamins are water-soluble, so the body does not store much of them. Vitamins A, D, E and K are fat-soluble."
+  },
+  {
+    "id": "CUET-D-007",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Maratha history",
+    "stem": "Who held the post of Peshwa in the Maratha state of Shivaji's time?",
+    "options": [
+      "The foreign minister",
+      "The army commander",
+      "The chief minister",
+      "The royal priest"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Peshwa was the chief minister in Shivaji's council of eight ministers. Later the Peshwas became the real rulers of the Maratha state from Pune."
+  },
+  {
+    "id": "CUET-D-008",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ports",
+    "stem": "Deendayal Port, earlier called Kandla, is on the coast of which state?",
+    "options": [
+      "Goa",
+      "Maharashtra",
+      "Kerala",
+      "Gujarat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Kandla, renamed Deendayal Port, lies on the Gulf of Kutch in Gujarat. It was developed after Partition when Karachi went to Pakistan."
+  },
+  {
+    "id": "CUET-D-009",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Technology",
+    "stem": "Malware is best described as:",
+    "options": [
+      "A program that speeds up a PC",
+      "A backup of personal files",
+      "A fault in computer hardware",
+      "Software made to cause harm"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Malware, short for malicious software, includes viruses, worms, ransomware and spyware made to damage a device or steal data."
+  },
+  {
+    "id": "CUET-D-010",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The word \"deuce\" for a level score near the end of a game is used in which sport?",
+    "options": [
+      "Football",
+      "Tennis",
+      "Cricket",
+      "Hockey"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In tennis, deuce means 40-all; a player must then win two points in a row to take the game."
+  },
+  {
+    "id": "CUET-D-011",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "How many Fundamental Duties does Article 51A list today?",
+    "options": [
+      "6",
+      "10",
+      "11",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The 42nd Amendment of 1976 added ten duties. The 86th Amendment of 2002 added an eleventh: parents must give their child between 6 and 14 the chance of education."
+  },
+  {
+    "id": "CUET-D-012",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Technology",
+    "stem": "A GPS receiver in a phone works out its position using signals from:",
+    "options": [
+      "Mobile towers only",
+      "Radio stations",
+      "Satellites",
+      "Undersea cables"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "GPS receivers time signals from several satellites in orbit and calculate their distance from each. Mobile towers can help but are not what GPS itself uses."
+  },
+  {
+    "id": "CUET-D-013",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "Who was the first Indian woman to become President of the Indian National Congress?",
+    "options": [
+      "Aruna Asaf Ali",
+      "Vijaya Lakshmi Pandit",
+      "Kasturba Gandhi",
+      "Sarojini Naidu"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sarojini Naidu presided over the Kanpur session of 1925. Annie Besant, President in 1917, was the first woman President but was not Indian by birth."
+  },
+  {
+    "id": "CUET-D-014",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "A rise in prices of hundreds of percent a year or more, out of control, is called:",
+    "options": [
+      "Deflation",
+      "Stagflation",
+      "Hyperinflation",
+      "Disinflation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hyperinflation is extremely fast, runaway inflation. Deflation is a fall in prices, disinflation a slowdown in inflation, and stagflation high inflation with stagnant growth."
+  },
+  {
+    "id": "CUET-D-015",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Earth science",
+    "stem": "Which element is the most abundant in the Earth's crust by weight?",
+    "options": [
+      "Oxygen",
+      "Iron",
+      "Aluminium",
+      "Silicon"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Oxygen makes up about 46% of the crust by weight, bound in rocks and minerals, followed by silicon at about 28%. Aluminium is the most abundant metal."
+  },
+  {
+    "id": "CUET-D-016",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval literature",
+    "stem": "Which poet of the Delhi Sultanate is known as Tuti-e-Hind, the Parrot of India?",
+    "options": [
+      "Amir Khusrau",
+      "Abdul Rahim",
+      "Malik Muhammad Jayasi",
+      "Ziauddin Barani"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Amir Khusrau, a disciple of Nizamuddin Auliya, wrote in Persian and Hindavi and is linked with the early qawwali. Barani was a historian; Jayasi wrote the Padmavat."
+  },
+  {
+    "id": "CUET-D-017",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Gross Domestic Product (GDP) measures the value of:",
+    "options": [
+      "Taxes collected by government",
+      "All goods sold and resold",
+      "Exports minus imports",
+      "Final goods and services produced"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "GDP counts the market value of final goods and services produced inside a country in a period. Counting goods every time they are resold would count the same output twice."
+  },
+  {
+    "id": "CUET-D-018",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work and energy",
+    "stem": "A force of 12 N pushes a box 5 m in the direction of the force. How much work is done?",
+    "options": [
+      "2.4 J",
+      "7 J",
+      "17 J",
+      "60 J"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Work = force x distance moved in the direction of the force = 12 x 5 = 60 joules. 17 adds the numbers and 2.4 divides them."
+  },
+  {
+    "id": "CUET-D-019",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Folk art",
+    "stem": "Kalamkari, hand-painted or block-printed cotton textile art, is mainly associated with which state?",
+    "options": [
+      "Andhra Pradesh",
+      "Punjab",
+      "West Bengal",
+      "Rajasthan"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kalamkari, drawn with a bamboo pen (kalam) and natural dyes, comes mainly from Srikalahasti and Machilipatnam in Andhra Pradesh."
+  },
+  {
+    "id": "CUET-D-020",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "When the Brahmaputra enters India from Tibet, in Arunachal Pradesh, what is it called?",
+    "options": [
+      "Siang",
+      "Subansiri",
+      "Manas",
+      "Lohit"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Yarlung Tsangpo of Tibet enters Arunachal Pradesh as the Siang (or Dihang). In Assam it is joined by the Dibang and the Lohit and takes the name Brahmaputra. The Subansiri and Manas are tributaries that join it in Assam."
+  },
+  {
+    "id": "CUET-D-021",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "In a metal wire, an electric current is carried by:",
+    "options": [
+      "Positive ions",
+      "Free electrons",
+      "Neutrons",
+      "Protons"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In metals some outer electrons are free to move, and their drift along the wire is the current. The positive ions stay fixed in the metal lattice."
+  },
+  {
+    "id": "CUET-D-022",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dance",
+    "stem": "Raas Leela themes and soft, flowing movements are typical of which classical dance?",
+    "options": [
+      "Odissi",
+      "Kathakali",
+      "Manipuri",
+      "Kuchipudi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Manipuri grew out of the Vaishnava tradition of Manipur and centres on the Raas Leela of Radha and Krishna. Kathakali, from Kerala, uses heavy make-up and vigorous movement."
+  },
+  {
+    "id": "CUET-D-023",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National parks",
+    "stem": "The Great Himalayan National Park, a UNESCO World Heritage Site, is in which state?",
+    "options": [
+      "Uttarakhand",
+      "Jammu and Kashmir",
+      "Himachal Pradesh",
+      "Sikkim"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Great Himalayan National Park is in Kullu district, Himachal Pradesh. Uttarakhand has the Nanda Devi and Valley of Flowers parks."
+  },
+  {
+    "id": "CUET-D-024",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "What does a catalyst do in a chemical reaction?",
+    "options": [
+      "Changes its rate, unchanged itself",
+      "Always raises the temperature",
+      "Gets used up to give more product",
+      "Changes which products form"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A catalyst speeds up (or slows) a reaction without being used up, so it can be recovered at the end. It does not change the products or the amount formed."
+  },
+  {
+    "id": "CUET-D-025",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "How many interlocking rings are on the Olympic flag?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The Olympic flag has five interlocking rings in blue, yellow, black, green and red on a white field, standing for the coming together of the five inhabited continents."
+  },
+  {
+    "id": "CUET-D-026",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "A person who is not a Member of Parliament is appointed a Union minister. Within how long must they become one, or lose the post?",
+    "options": [
+      "One year",
+      "Three months",
+      "Two years",
+      "Six months"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 75(5) allows a minister who is not a member of either House to hold office for six consecutive months; after that they must win a seat or leave the ministry."
+  },
+  {
+    "id": "CUET-D-027",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "A person's or a product's carbon footprint is a measure of what?",
+    "options": [
+      "Soot settling on buildings",
+      "Greenhouse gases released",
+      "Coal burnt in power plants",
+      "Carbon stored in forests"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A carbon footprint is the total of greenhouse gases, mainly carbon dioxide, released directly and indirectly by a person, product or organisation, usually given in tonnes of carbon dioxide equivalent."
+  },
+  {
+    "id": "CUET-D-028",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient history",
+    "stem": "The Great Stupa at Sanchi was first built in brick under which ruler?",
+    "options": [
+      "Chandragupta II",
+      "Kanishka",
+      "Ashoka",
+      "Harsha"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ashoka commissioned the first brick stupa at Sanchi in the 3rd century BCE. It was enlarged in stone and given its carved gateways later, under the Shungas and Satavahanas."
+  },
+  {
+    "id": "CUET-D-029",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Strait of Gibraltar separates Spain from which country?",
+    "options": [
+      "Tunisia",
+      "Morocco",
+      "Portugal",
+      "Algeria"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Strait of Gibraltar, about 14 km wide at its narrowest, separates Spain in Europe from Morocco in Africa."
+  },
+  {
+    "id": "CUET-D-030",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "Marasmus, a wasting disease of young children, is caused mainly by a shortage of:",
+    "options": [
+      "Overall food energy",
+      "Iron",
+      "Iodine",
+      "Vitamin C"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Marasmus comes from long-term lack of calories and nutrients overall, so the child wastes away. Kwashiorkor is linked mainly to protein shortage, scurvy to vitamin C and goitre to iodine."
+  },
+  {
+    "id": "CUET-D-031",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "By the Treaty of Bassein in 1802, which Maratha ruler accepted the British Subsidiary Alliance?",
+    "options": [
+      "Peshwa Baji Rao II",
+      "Yashwantrao Holkar",
+      "Nana Phadnavis",
+      "Mahadji Scindia"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Driven from Pune by Yashwantrao Holkar, Peshwa Baji Rao II signed the treaty at Bassein (Vasai) on 31 December 1802 and accepted British troops. It led to the Second Anglo-Maratha War. Mahadji Scindia had died in 1794 and Nana Phadnavis in 1800."
+  },
+  {
+    "id": "CUET-D-032",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Climate",
+    "stem": "The north-east monsoon brings most of its rain to which Indian state?",
+    "options": [
+      "West Bengal",
+      "Gujarat",
+      "Tamil Nadu",
+      "Kerala"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From October to December the north-east (retreating) monsoon picks up moisture over the Bay of Bengal and rains on the Coromandel coast, so Tamil Nadu gets much of its yearly rain then."
+  },
+  {
+    "id": "CUET-D-033",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Energy",
+    "stem": "Which energy change takes place in a torch cell when it is in use?",
+    "options": [
+      "Heat to electrical",
+      "Chemical to electrical",
+      "Electrical to chemical",
+      "Light to chemical"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A dry cell stores chemical energy and releases it as electrical energy. Charging a rechargeable battery does the reverse."
+  },
+  {
+    "id": "CUET-D-034",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi Sultanate",
+    "stem": "Who founded the Khalji dynasty of the Delhi Sultanate in 1290?",
+    "options": [
+      "Alauddin Khalji",
+      "Ghiyasuddin Tughlaq",
+      "Qutbuddin Aibak",
+      "Jalaluddin Khalji"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Jalaluddin Khalji took the throne in 1290, ending the rule of Balban's line. His nephew Alauddin killed him in 1296 and became sultan."
+  },
+  {
+    "id": "CUET-D-035",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetGeoPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Which Schedule of the Constitution lists the subjects that may be given to municipalities?",
+    "options": [
+      "Eleventh",
+      "Twelfth",
+      "Seventh",
+      "Ninth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 74th Amendment of 1992 added the Twelfth Schedule with 18 subjects for municipalities. The Eleventh Schedule, from the 73rd Amendment, lists 29 subjects for panchayats."
+  },
+  {
+    "id": "CUET-D-036",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "Why are earthworms called the farmer's friend?",
+    "options": [
+      "They eat harmful weeds",
+      "They kill crop insects",
+      "They loosen and enrich soil",
+      "They pollinate crops"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Burrowing earthworms loosen and aerate the soil and turn dead matter into rich castings. They do not pollinate or eat weeds."
+  },
+  {
+    "id": "CUET-D-037",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series? 2, 7, 27, 107, 427, ?",
+    "options": [
+      "1707",
+      "1708",
+      "1709",
+      "1711"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is four times the one before minus 1: 7 x 4 - 1 = 27, 27 x 4 - 1 = 107. So 427 x 4 - 1 = 1,707. 1,708 forgets to subtract 1."
+  },
+  {
+    "id": "CUET-D-038",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series? 4, 5, 8, 17, 44, ?",
+    "options": [
+      "98",
+      "107",
+      "116",
+      "125"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The differences are powers of 3: 1, 3, 9, 27, so the next is 81 and 44 + 81 = 125."
+  },
+  {
+    "id": "CUET-D-039",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series? 80, 40, 120, 60, 180, ?",
+    "options": [
+      "90",
+      "120",
+      "360",
+      "540"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The steps alternate: divide by 2, then multiply by 3. After 180 comes a halving, so the next term is 90."
+  },
+  {
+    "id": "CUET-D-040",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next in the series? BCD, FGH, JKL, ?",
+    "options": [
+      "NPQ",
+      "MNO",
+      "OPQ",
+      "NOP"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each group is three letters in a row, and each group starts four letters after the last: B, F, J, N. So the next group is NOP."
+  },
+  {
+    "id": "CUET-D-041",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "ADG : DGJ :: HKN : ?",
+    "options": [
+      "KMQ",
+      "JNQ",
+      "KNQ",
+      "LNQ"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each letter of ADG moves three places forward to give DGJ. Moving each letter of HKN three places forward gives K-N-Q."
+  },
+  {
+    "id": "CUET-D-042",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which number is the odd one out? 17, 29, 41, 51",
+    "options": [
+      "17",
+      "29",
+      "41",
+      "51"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "17, 29 and 41 are prime numbers. 51 = 3 x 17, so it is not prime."
+  },
+  {
+    "id": "CUET-D-043",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If each letter is given its place in the alphabet (A = 1, B = 2 ... Z = 26), CAT adds up to 24. What does DOG add up to?",
+    "options": [
+      "22",
+      "23",
+      "24",
+      "26"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "D = 4, O = 15 and G = 7, so DOG = 4 + 15 + 7 = 26. CAT is 3 + 1 + 20 = 24."
+  },
+  {
+    "id": "CUET-D-044",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a code, FRIEND is written as HUMJTK. How is CANDLE written in that code?",
+    "options": [
+      "ECRIRL",
+      "EDQIRL",
+      "EDRIRL",
+      "EDRJRL"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The shifts grow by one along the word: +2, +3, +4, +5, +6, +7 (F to H, R to U, I to M, E to J, N to T, D to K). So C+2 = E, A+3 = D, N+4 = R, D+5 = I, L+6 = R, E+7 = L."
+  },
+  {
+    "id": "CUET-D-045",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Symbol substitution",
+    "stem": "If 7 @ 3 = 40 and 6 @ 2 = 32 follow the same rule, what is 9 @ 5?",
+    "options": [
+      "14",
+      "45",
+      "56",
+      "106"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The rule is the difference of the squares: 49 - 9 = 40 and 36 - 4 = 32. So 81 - 25 = 56. 106 adds the squares instead, 45 is just 9 x 5 and 14 is 9 + 5."
+  },
+  {
+    "id": "CUET-D-046",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which pair is unlike the other three?",
+    "options": [
+      "Cow : Calf",
+      "Cat : Kitten",
+      "Dog : Puppy",
+      "Horse : Stable"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cow and calf, dog and puppy, cat and kitten each pair an animal with its young. A stable is a horse's home, not its young (a foal)."
+  },
+  {
+    "id": "CUET-D-047",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "Cardiology : Heart :: Nephrology : ?",
+    "options": [
+      "Liver",
+      "Lungs",
+      "Nerves",
+      "Kidneys"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cardiology is the branch of medicine for the heart, and nephrology the one for the kidneys. Nerves come under neurology."
+  },
+  {
+    "id": "CUET-D-048",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dictionary order",
+    "stem": "Which word comes third when these are put in dictionary order? Stage, Stack, Stable, Staff",
+    "options": [
+      "Stable",
+      "Staff",
+      "Stage",
+      "Stack"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "All start STA. Compare the fourth letters: b (Stable), c (Stack), f (Staff), g (Stage). Staff is third."
+  },
+  {
+    "id": "CUET-D-049",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "Choose the number that completes the analogy. 8 : 72 :: 12 : ?",
+    "options": [
+      "132",
+      "143",
+      "144",
+      "156"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The rule is the number times the next number: 8 x 9 = 72, so 12 x 13 = 156. 144 is 12 x 12."
+  },
+  {
+    "id": "CUET-D-050",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "A's salary is 150% more than B's. By what percent is B's salary less than A's?",
+    "options": [
+      "40%",
+      "60%",
+      "66.7%",
+      "150%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "150% more means A is 2.5 times B. Take B as 100, so A is 250. B is 150 less, and 150 / 250 x 100 = 60%."
+  },
+  {
+    "id": "CUET-D-051",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "A number is increased by 50% and the result is then decreased by 40%. What is the overall change?",
+    "options": [
+      "10% decrease",
+      "20% decrease",
+      "No change",
+      "10% increase"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "1.50 x 0.60 = 0.90, so the final number is 90% of the original: a 10% decrease. Adding +50 and -40 to get a 10% increase ignores that the 40% is taken off the larger, increased number."
+  },
+  {
+    "id": "CUET-D-052",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A trader makes a 6% profit by selling a mixer for ₹1,113. At what price should he sell it to make a 14% profit?",
+    "options": [
+      "₹1,155",
+      "₹1,176",
+      "₹1,185",
+      "₹1,197"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The cost price is 1,113 / 1.06 = ₹1,050. For a 14% profit he sells at 1,050 x 1.14 = ₹1,197."
+  },
+  {
+    "id": "CUET-D-053",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "A sum of money becomes three times itself in 16 years at simple interest. What is the rate per year?",
+    "options": [
+      "6.25%",
+      "12.5%",
+      "16%",
+      "18.75%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Becoming three times means the interest is twice the principal: 200% in 16 years, or 200 / 16 = 12.5% a year. 18.75% takes the interest as three times the principal."
+  },
+  {
+    "id": "CUET-D-054",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Speed and time",
+    "stem": "Walking at 3 km/h, a boy reaches school 12 minutes late. At 4 km/h he arrives 3 minutes early. How far is the school?",
+    "options": [
+      "2 km",
+      "3 km",
+      "4 km",
+      "5 km"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The two times differ by 15 minutes, 1/4 hour: d/3 - d/4 = 1/4, so d/12 = 1/4 and d = 3 km."
+  },
+  {
+    "id": "CUET-D-055",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boats and streams",
+    "stem": "A boat's speed in still water is 13 km/h and the stream flows at 3 km/h. How long will it take to go 48 km downstream and come back?",
+    "options": [
+      "7.4 hours",
+      "7.8 hours",
+      "8 hours",
+      "8.2 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Downstream speed is 16 km/h (3 hours) and upstream 10 km/h (4.8 hours), so the round trip takes 7.8 hours, or 7 hours 48 minutes."
+  },
+  {
+    "id": "CUET-D-056",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "15 workers can build a wall in 28 days. How many workers are needed to build it in 21 days?",
+    "options": [
+      "18",
+      "20",
+      "21",
+      "25"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The job is 15 x 28 = 420 worker-days, so 420 / 21 = 20 workers are needed."
+  },
+  {
+    "id": "CUET-D-057",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "Two numbers are in the ratio 4 : 9. If 6 is added to each, the ratio becomes 2 : 3. What is the sum of the numbers?",
+    "options": [
+      "13",
+      "26",
+      "39",
+      "52"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "(4x + 6) / (9x + 6) = 2/3 gives 12x + 18 = 18x + 12, so x = 1. The numbers are 4 and 9, and their sum is 13."
+  },
+  {
+    "id": "CUET-D-058",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "The average of 13 results is 40. The average of the first seven is 38 and of the last seven is 43. What is the seventh result?",
+    "options": [
+      "40",
+      "41",
+      "45",
+      "47"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The seventh result is counted in both groups: 7 x 38 + 7 x 43 - 13 x 40 = 266 + 301 - 520 = 47."
+  },
+  {
+    "id": "CUET-D-059",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "A student needs 45% of the maximum marks to pass. She scores 247 marks and fails by 23 marks. What are the maximum marks?",
+    "options": [
+      "500",
+      "550",
+      "600",
+      "640"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The pass mark is 247 + 23 = 270, which is 45% of the maximum: 270 / 0.45 = 600. Subtracting the 23 instead gives 224 / 0.45, about 500."
+  },
+  {
+    "id": "CUET-D-060",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "After a 12% discount, a ceiling fan sells for ₹2,068. What was its marked price?",
+    "options": [
+      "₹2,280",
+      "₹2,316",
+      "₹2,350",
+      "₹2,400"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The selling price is 88% of the marked price, so the marked price is 2,068 / 0.88 = ₹2,350. Adding 12% to ₹2,068 gives ₹2,316, which is wrong."
+  },
+  {
+    "id": "CUET-D-061",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the compound interest on ₹25,000 for 1 year at 8% per year, compounded half-yearly?",
+    "options": [
+      "₹2,000",
+      "₹2,016",
+      "₹2,040",
+      "₹2,080"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Half-yearly means 4% for each of 2 periods: 25,000 x 1.04 x 1.04 = ₹27,040. The interest is ₹2,040, a little more than the ₹2,000 of yearly compounding."
+  },
+  {
+    "id": "CUET-D-062",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetNumerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A cyclist covers 750 m in 2.5 minutes. What is the speed in km/h?",
+    "options": [
+      "12 km/h",
+      "15 km/h",
+      "16 km/h",
+      "18 km/h"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "750 m in 150 seconds is 5 m/s, and 5 x 18/5 = 18 km/h."
+  },
+  {
+    "id": "CUET-D-063",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Linear equations",
+    "stem": "If 4x + 3y = 26 and x - y = 3, what is the value of xy?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "From x - y = 3, x = y + 3. Then 4y + 12 + 3y = 26, so y = 2 and x = 5. xy = 10."
+  },
+  {
+    "id": "CUET-D-064",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Angles",
+    "stem": "Two supplementary angles differ by 36°. What is the larger angle?",
+    "options": [
+      "72°",
+      "108°",
+      "126°",
+      "144°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Supplementary angles add up to 180°. The larger is (180 + 36) / 2 = 108° and the smaller 72°. 126° would suit angles adding to 216°."
+  },
+  {
+    "id": "CUET-D-065",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "A rectangle has a perimeter of 46 cm and a length of 15 cm. What is its area?",
+    "options": [
+      "69 cm²",
+      "92 cm²",
+      "120 cm²",
+      "150 cm²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Length + breadth = 23 cm, so the breadth is 8 cm and the area is 15 x 8 = 120 square cm."
+  },
+  {
+    "id": "CUET-D-066",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the volume of a cone of radius 3 cm and height 14 cm? (Take pi = 22/7.)",
+    "options": [
+      "66 cm³",
+      "132 cm³",
+      "264 cm³",
+      "396 cm³"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume = 1/3 x pi r² h = 1/3 x 22/7 x 9 x 14 = 132 cubic cm. 396 is the volume of a cylinder of the same size, before dividing by 3."
+  },
+  {
+    "id": "CUET-D-067",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the volume of a sphere of radius 6 cm, in terms of pi?",
+    "options": [
+      "144π cm³",
+      "288π cm³",
+      "216π cm³",
+      "864π cm³"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Volume = 4/3 x pi x r³ = 4/3 x pi x 216 = 288π cubic cm. 144π is its surface area in square cm (4 pi r²)."
+  },
+  {
+    "id": "CUET-D-068",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Range",
+    "stem": "What is the range of 38, 17, 52, 29 and 44?",
+    "options": [
+      "15",
+      "27",
+      "34",
+      "35"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Range = largest - smallest = 52 - 17 = 35."
+  },
+  {
+    "id": "CUET-D-069",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mean",
+    "stem": "What is the mean of the first 15 natural numbers?",
+    "options": [
+      "7.5",
+      "8",
+      "15",
+      "120"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "1 to 15 add up to 15 x 16 / 2 = 120, and 120 / 15 = 8. For consecutive numbers the mean is also the middle number, 8."
+  },
+  {
+    "id": "CUET-D-070",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Polynomials",
+    "stem": "If (x + 3)(x - 5) = x² + px + q, what is p + q?",
+    "options": [
+      "-17",
+      "-15",
+      "-13",
+      "17"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Expanding gives x² - 2x - 15, so p = -2 and q = -15. Then p + q = -17."
+  },
+  {
+    "id": "CUET-D-071",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circles",
+    "stem": "An arc of a circle subtends an angle of 128° at the centre. What angle does it subtend at a point on the rest of the circle?",
+    "options": [
+      "52°",
+      "64°",
+      "116°",
+      "128°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The angle at the centre is twice the angle at any point on the remaining part of the circle, so the answer is 128 / 2 = 64°."
+  },
+  {
+    "id": "CUET-D-072",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Similar triangles",
+    "stem": "The corresponding sides of two similar triangles are in the ratio 3 : 5. What is the ratio of their areas?",
+    "options": [
+      "9 : 25",
+      "6 : 10",
+      "27 : 125",
+      "3 : 5"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Areas of similar triangles are in the ratio of the squares of their sides: 3² : 5² = 9 : 25. 27 : 125 is the ratio of cubes, used for volumes of similar solids."
+  },
+  {
+    "id": "CUET-D-073",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coordinate geometry",
+    "stem": "What is the distance between the points (2, -3) and (8, 5)?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "10"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Distance = square root of (8 - 2)² + (5 + 3)² = square root of (36 + 64) = square root of 100 = 10."
+  },
+  {
+    "id": "CUET-D-074",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetQuant",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pie charts",
+    "stem": "In a pie chart, what angle at the centre shows an item that is 15% of the total?",
+    "options": [
+      "15°",
+      "45°",
+      "54°",
+      "60°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The whole circle is 360°, so 15% of it is 0.15 x 360 = 54°."
+  },
+  {
+    "id": "CUET-D-075",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: Some cups are plates. All plates are spoons.\nConclusions: I. Some cups are spoons. II. Some spoons are plates.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The cups that are plates are also spoons, so I follows. All plates are spoons, so some spoons are plates: II follows too."
+  },
+  {
+    "id": "CUET-D-076",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "Ritu ranks 13th from the top in her class. Gopal is 5 ranks below Ritu and is 31st from the bottom. How many students are in the class?",
+    "options": [
+      "48",
+      "49",
+      "50",
+      "54"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Gopal is 13 + 5 = 18th from the top and 31st from the bottom, so the class has 18 + 31 - 1 = 48 students. 49 forgets that Gopal is counted twice."
+  },
+  {
+    "id": "CUET-D-077",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: No stone is a tree. All trees are green.\nConclusions: I. No stone is green. II. Some green things are trees.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Stones could still be green in some other way, so I does not follow. Since all trees are green, some green things are trees: II follows."
+  },
+  {
+    "id": "CUET-D-078",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "1 January 2027 falls on a Friday, and 2027 is not a leap year. In which year will the calendar for the whole year next be the same as 2027's?",
+    "options": [
+      "2032",
+      "2033",
+      "2037",
+      "2038"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The calendar repeats in the next year that starts on a Friday and is not a leap year: 2038. Counting the extra days (1 a year, 2 in a leap year) from 2027 first reaches a multiple of 7 at the start of 2038."
+  },
+  {
+    "id": "CUET-D-079",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All potters are artists. Some artists are dancers.\nConclusions: I. Some potters are dancers. II. All dancers are artists.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The dancing artists may not be potters, so I does not follow. Only some artists are dancers; nothing says every dancer is an artist, so II does not follow either."
+  },
+  {
+    "id": "CUET-D-080",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Clocks",
+    "stem": "At what time between 7 and 8 o'clock are the hour and minute hands of a clock together?",
+    "options": [
+      "35 minutes past 7",
+      "40 10/11 minutes past 7",
+      "38 2/11 minutes past 7",
+      "38 minutes past 7"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At 7:00 the hour hand is 210° ahead, and the minute hand gains 5.5° a minute. It catches up after 210 / 5.5 = 420/11 = 38 2/11 minutes."
+  },
+  {
+    "id": "CUET-D-081",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Introducing a man, Kunal says, \"His wife is the only daughter of my mother's mother.\" How is the man related to Kunal?",
+    "options": [
+      "Father",
+      "Brother",
+      "Grandfather",
+      "Uncle"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The only daughter of Kunal's maternal grandmother is Kunal's mother. The man is her husband, so he is Kunal's father."
+  },
+  {
+    "id": "CUET-D-082",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Comparison",
+    "stem": "Raj is older than Sam but younger than Tia. Uma is older than Tia. Vik is younger than Sam. Who is the eldest?",
+    "options": [
+      "Raj",
+      "Tia",
+      "Uma",
+      "Vik"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From eldest: Uma, Tia, Raj, Sam, Vik. Uma is the eldest and Vik the youngest."
+  },
+  {
+    "id": "CUET-D-083",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "P is the mother of Q. Q is the husband of R. S is the son of Q and R. How is P related to S?",
+    "options": [
+      "Mother-in-law",
+      "Grandmother",
+      "Aunt",
+      "Mother"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Q is S's father, and P is Q's mother, so P is S's paternal grandmother. She is R's mother-in-law, not S's."
+  },
+  {
+    "id": "CUET-D-084",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Venn diagrams",
+    "stem": "In a survey of 120 people, 72 read a Hindi newspaper, 54 read an English one and 18 read neither. How many read both?",
+    "options": [
+      "24",
+      "30",
+      "36",
+      "42"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "120 - 18 = 102 read at least one paper. Both = 72 + 54 - 102 = 24. Forgetting the 18 who read neither would give 72 + 54 - 120 = 6."
+  },
+  {
+    "id": "CUET-D-085",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Mohan walks 8 km west and then 15 km south. How far, and in which direction, is he from his starting point?",
+    "options": [
+      "17 km south-west",
+      "23 km south-west",
+      "17 km north-east",
+      "17 km south-east"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The straight-line distance is the square root of (64 + 225) = 17 km. He has gone west and south, so he is south-west of the start. 23 km is the distance walked."
+  },
+  {
+    "id": "CUET-D-086",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Seating arrangement",
+    "stem": "Six people A to F sit in a row facing north. B sits at the left end. D sits third to the right of B. A sits immediately to the right of D. F sits at the right end. C does not sit next to B. Who sits between B and C?",
+    "options": [
+      "A",
+      "D",
+      "E",
+      "F"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From the left: B is 1, D is 4, A is 5 and F is 6. C and E take seats 2 and 3, and C cannot be next to B, so E is 2 and C is 3. E sits between B and C."
+  },
+  {
+    "id": "CUET-D-087",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Ankit walks 12 m south, turns left and walks 24 m, then turns left and walks 12 m. Where is he now from his starting point?",
+    "options": [
+      "24 m west",
+      "48 m east",
+      "24 m east",
+      "36 m south-east"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Turning left from south faces east, and turning left again faces north. The 12 m south and 12 m north cancel, leaving him 24 m east of the start."
+  },
+  {
+    "id": "CUET-D-088",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Counting",
+    "stem": "How many numbers from 1 to 200 are divisible by both 6 and 9?",
+    "options": [
+      "11",
+      "12",
+      "22",
+      "44"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A number divisible by both 6 and 9 is divisible by their LCM, 18. The multiples of 18 up to 200 are 18, 36 ... 198: eleven numbers. 44 counts numbers divisible by either."
+  },
+  {
+    "id": "CUET-D-089",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Course of action",
+    "stem": "Statement: Several cases of dengue have been reported in a locality after heavy rain.\nCourses of action: I. The municipality should clear stagnant water in the locality. II. All residents should be moved out of the locality.\nWhich course(s) of action follow?",
+    "options": [
+      "Only course I follows",
+      "Only course II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Dengue mosquitoes breed in standing water, so clearing it is a practical step: I follows. Moving everyone out is extreme and impractical, so II does not."
+  },
+  {
+    "id": "CUET-D-090",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number arrangement",
+    "stem": "In the sequence 7 3 8 5 2 9 4 6 1, how many odd numbers are immediately followed by an even number?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The pairs are 3-8, 5-2 and 9-4. 7 is followed by 3 (odd) and 1 by nothing, so the count is 3."
+  },
+  {
+    "id": "CUET-D-091",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coded relations",
+    "stem": "P @ Q means P is the husband of Q, and P # Q means P is the mother of Q. What does X @ Y # Z mean?",
+    "options": [
+      "X is Z's brother",
+      "X is Z's grandfather",
+      "X is Z's father",
+      "X is Z's uncle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "X is Y's husband and Y is Z's mother, so X is Z's father."
+  },
+  {
+    "id": "CUET-D-092",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alphabetical order",
+    "stem": "If the letters of the word MOTHER are arranged in alphabetical order, which letter will be fourth from the left?",
+    "options": [
+      "H",
+      "O",
+      "M",
+      "R"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In alphabetical order the letters are E, H, M, O, R, T. The fourth is O."
+  },
+  {
+    "id": "CUET-D-093",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Statement and conclusion",
+    "stem": "Statement: All seats for the 6 p.m. show of a new film were sold an hour before it began.\nConclusions: I. Many people wanted to see the film. II. The 9 p.m. show will also be sold out.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A sold-out show shows strong demand, so I follows. Nothing tells us about the later show, so II is a guess."
+  },
+  {
+    "id": "CUET-D-094",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clocks",
+    "stem": "A clock loses 3 minutes every hour. It is set right at 7 a.m. What time will it show at 5 p.m. the same day?",
+    "options": [
+      "4:30 p.m.",
+      "5:30 p.m.",
+      "4:24 p.m.",
+      "4:57 p.m."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "From 7 a.m. to 5 p.m. is 10 hours, so the clock falls 10 x 3 = 30 minutes behind and shows 4:30 p.m. 5:30 p.m. adds the minutes as if the clock gained, and 4:24 p.m. counts 12 hours."
+  },
+  {
+    "id": "CUET-D-095",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statement and assumption",
+    "stem": "Statement: A company has decided to train its staff in spoken English.\nAssumptions: I. Better spoken English will help the staff in their work. II. Some of the staff are not fluent in spoken English.\nWhich assumption(s) are implicit?",
+    "options": [
+      "Only assumption I is implicit",
+      "Only assumption II is implicit",
+      "Both I and II are implicit",
+      "Neither I nor II is implicit"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A company trains staff only if it expects the skill to help (I) and believes some of them need it (II). Both are implicit."
+  },
+  {
+    "id": "CUET-D-096",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If 5 January is a Saturday, what day of the week is 30 January of the same year?",
+    "options": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "30 January is 25 days later: 3 weeks and 4 days. Four days after Saturday is Wednesday."
+  },
+  {
+    "id": "CUET-D-097",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Statement and assumption",
+    "stem": "Statement: An instruction on an answer sheet says, \"Write your answers only in blue or black ink.\"\nAssumptions: I. Answers in other colours may be hard to read or may not be accepted. II. Every candidate owns only blue pens.\nWhich assumption(s) are implicit?",
+    "options": [
+      "Only assumption I is implicit",
+      "Only assumption II is implicit",
+      "Both I and II are implicit",
+      "Neither I nor II is implicit"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The rule exists because other colours cause problems, so I is implicit. The instruction allows black ink as well, so it does not assume everyone has only blue pens."
+  },
+  {
+    "id": "CUET-D-098",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Comparison",
+    "stem": "A is heavier than B. C is lighter than D. B is heavier than D. Who is the lightest?",
+    "options": [
+      "B",
+      "C",
+      "D",
+      "A"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "From heaviest: A, B, D, C. So C is the lightest."
+  },
+  {
+    "id": "CUET-D-099",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cause and effect",
+    "stem": "Statement: The price of onions rose sharply after untimely rain damaged the crop in the main growing areas.\nConclusions: I. The supply of onions fell. II. The prices of all vegetables rose.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Crop damage cut the supply, which pushed the price up, so I follows. The statement is about onions only, so II does not follow."
+  },
+  {
+    "id": "CUET-D-100",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Selection",
+    "stem": "A team of 3 men and 2 women is to be chosen from 5 men and 4 women. In how many ways can it be chosen?",
+    "options": [
+      "16",
+      "60",
+      "120",
+      "126"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Choose the men in 5C3 = 10 ways and the women in 4C2 = 6 ways, and multiply: 10 x 6 = 60. Adding gives 16, and 120 treats the two women as chosen in order (4 x 3 = 12 ways)."
+  },
+  {
+    "id": "CUET-D-101",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "How is Ravi's brother's wife's son related to Ravi?",
+    "options": [
+      "Cousin",
+      "Nephew",
+      "Brother",
+      "Son"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ravi's brother's wife's son is his brother's son, which makes him Ravi's nephew."
+  },
+  {
+    "id": "CUET-D-102",
+    "section": "gat",
+    "test": 0,
+    "module": 1,
+    "domain": "cuetAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a queue at a bus stop, Kiran is 8th from the front and 8th from the back. How many people are in the queue?",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Kiran has 7 people ahead and 7 behind: 7 + 1 + 7 = 15. 16 counts Kiran twice."
+  }
+]

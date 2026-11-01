@@ -87,6 +87,16 @@ import '@/lib/v2/banks/rpfconst';
 import '@/lib/v2/banks/ssccpo';
 import '@/lib/v2/banks/apworld';
 import '@/lib/v2/banks/aplang';
+import '@/lib/v2/banks/neet';
+import '@/lib/v2/banks/jeemain';
+import '@/lib/v2/banks/mhtcet';
+import '@/lib/v2/banks/cuet';
+import '@/lib/v2/banks/ugcnet';
+import '@/lib/v2/banks/reet';
+import '@/lib/v2/banks/uptet';
+import '@/lib/v2/banks/aissee';
+import '@/lib/v2/banks/apcalcab';
+import '@/lib/v2/banks/aphug';
 
 // MCP is another view of the site's drills, NOT a second mastery store.
 // The transport document only remembers the presented item/order and a

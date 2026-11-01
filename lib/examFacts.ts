@@ -2690,4 +2690,170 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "PRC enhanced Table of Specifications for the LEPT (Board Resolution No. 11, s. 2022, Annex A, amended by Board Resolution No. 11, s. 2025), the PRC LEPT examination program and BPT Resolution No. 228, s. 1996, checked November 2026",
     source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
   },
+  jeemain: {
+    answer:
+      "JEE (Main) Paper 1 is the National Testing Agency's computer-based entrance test for B.E. and B.Tech. admission to NITs, IIITs and other centrally funded institutes, and the qualifying test for JEE (Advanced). It has 75 questions for 300 marks in 3 hours: 25 each in Mathematics, Physics and Chemistry, of which 20 are multiple choice (Section A) and 5 need a numerical value typed as an integer (Section B). Every answer earns 4 marks if correct and loses 1 if wrong, in both sections. For 2027 it is held in two sessions, January and April, and the better NTA score counts.",
+    rows: [
+      { label: "Subjects", value: "Mathematics, Physics, Chemistry (equal weight)" },
+      { label: "Questions", value: "75: per subject 20 multiple choice and 5 numerical value" },
+      { label: "Time", value: "3 hours" },
+      { label: "Marks", value: "300 (100 per subject)" },
+      { label: "Marking", value: "+4 correct, -1 wrong in both sections, 0 unanswered" },
+      { label: "Result", value: "NTA scores (percentiles); the better of two sessions counts" },
+      { label: "2027 sessions", value: "20 to 24 and 28 January, and 2 to 7 April 2027" },
+      { label: "Languages", value: "13, including English and Hindi" },
+      { label: "Given by", value: "National Testing Agency" },
+    ],
+    basedOn: "JEE (Main) 2027 Information Bulletin and syllabus, National Testing Agency, published 24 October 2026",
+    source: { name: "National Testing Agency", url: "https://jeemain.nta.nic.in" },
+  },
+  neet: {
+    answer:
+      "NEET (UG) is the National Testing Agency's entrance exam for MBBS, BDS, AYUSH and other undergraduate medical courses in India. Per the NEET (UG) 2026 information bulletin it is one pen-and-paper paper of 180 compulsory multiple-choice questions in 180 minutes: Physics 45, Chemistry 45 and Biology (Botany and Zoology) 90, for 720 marks. A correct answer earns 4 marks and a wrong one loses 1. It is offered in 13 languages, and admission needs at least the 50th percentile (40th for SC, ST and OBC candidates).",
+    rows: [
+      { label: "Questions", value: "180, all compulsory, four options each" },
+      { label: "Subjects", value: "Physics 45, Chemistry 45, Biology (Botany and Zoology) 90" },
+      { label: "Time", value: "180 minutes (2026 window 2:00 to 5:15 PM including formalities)" },
+      { label: "Marks", value: "720" },
+      { label: "Marking", value: "+4 correct, -1 wrong, 0 unanswered" },
+      { label: "Mode", value: "Pen and paper, one shift" },
+      { label: "Languages", value: "13, including English and Hindi" },
+      { label: "Qualifying", value: "50th percentile (40th for SC, ST, OBC-NCL)" },
+      { label: "Given by", value: "National Testing Agency" },
+    ],
+    basedOn: "NTA Information Bulletin for NEET (UG) 2026 and NTA notices of 15 May and 12 June 2026 (re-examination held 21 June 2026)",
+    source: { name: "National Testing Agency", url: "https://neet.nta.nic.in" },
+  },
+  mhtcet: {
+    answer:
+      "MHT-CET is the Maharashtra State Common Entrance Test Cell's entrance test for first-year engineering, technology and pharmacy degrees in Maharashtra. In the PCM group it has two papers of multiple choice questions, each worth 100 marks in 90 minutes: Mathematics, 50 questions at 2 marks each, and Physics and Chemistry, 50 questions each at 1 mark each. Questions follow the Maharashtra State Board syllabus, about 20 percent Std XI and 80 percent Std XII, and there is no negative marking. In 2026 the PCM group could sit the exam twice, in April and in May.",
+    rows: [
+      { label: "Papers", value: "Mathematics; Physics and Chemistry" },
+      { label: "Questions", value: "50 Mathematics, 50 Physics, 50 Chemistry" },
+      { label: "Marks", value: "100 per paper (Mathematics 2 per question, Physics and Chemistry 1)" },
+      { label: "Time", value: "90 minutes per paper" },
+      { label: "Negative marking", value: "None" },
+      { label: "Syllabus", value: "Maharashtra State Board, about 20% Std XI and 80% Std XII" },
+      { label: "Results", value: "Percentiles across sessions" },
+      { label: "Given by", value: "State Common Entrance Test Cell, Maharashtra" },
+    ],
+    basedOn: "State CET Cell syllabus and marking scheme for MHT-CET 2026 and its PCM result notices of 16 and 19 June 2026",
+    source: { name: "State Common Entrance Test Cell, Maharashtra", url: "https://cetcell.mahacet.org" },
+  },
+  cuet: {
+    answer:
+      "The CUET (UG) General Aptitude Test (test code 501) is one of the 37 papers of the Common University Entrance Test for undergraduate admission to central and participating universities, conducted by the National Testing Agency. Under the CUET (UG) 2026 Information Bulletin it has 50 compulsory multiple-choice questions in 60 minutes, taken as a computer based test in 13 mediums. Each right answer earns 5 marks and each wrong one loses 1. The syllabus is general knowledge, current affairs, general mental ability, numerical ability, quantitative reasoning (arithmetic, algebra, geometry, mensuration and statistics) and logical and analytical reasoning; NTA's 2026 syllabus for test 501 also lists general science and environment literacy. Candidates may take up to five CUET papers, and each university decides which papers a course requires.",
+    rows: [
+      { label: "Questions", value: "50, all compulsory" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Marks", value: "5 per right answer, 250 in all" },
+      { label: "Negative marking", value: "1 mark per wrong answer" },
+      { label: "Syllabus", value: "GK and current affairs, mental ability, numerical ability, quantitative, logical and analytical reasoning, general science and environment" },
+      { label: "Mode", value: "Computer based test, multiple shifts, NTA scores" },
+      { label: "Mediums", value: "13 Indian languages, English included" },
+      { label: "Paper choice", value: "Up to five CUET papers in all, languages included" },
+      { label: "Given by", value: "National Testing Agency" },
+    ],
+    basedOn: "the CUET (UG) 2026 Information Bulletin and the 2026 General Test (501) syllabus of the National Testing Agency",
+    source: { name: "National Testing Agency", url: "https://cuet.nta.nic.in" },
+    tigertest:
+      "Tigertest has two full CUET General Test practice tests of 50 questions in 60 minutes and eight topic drills: three for general knowledge and one each for mental ability, numerical ability, quantitative reasoning, logical reasoning and analytical reasoning. All of it is free with no account required; scores are percent correct, with the +5/-1 marking explained rather than applied.",
+  },
+  reet: {
+    answer:
+      "REET Level 1 is the Rajasthan Eligibility Examination for Teachers of Classes 1 to 5, conducted by the Board of Secondary Education, Rajasthan. Under the REET 2024 notification (exam held 27 and 28 February 2025), it has 150 one-mark multiple-choice questions in 2 hours 30 minutes, in five parts of 30: Child Development and Pedagogy, Language I, Language II, Mathematics and Environmental Studies. Each question has four options, and the OMR sheet has a fifth bubble, E, for a question the candidate chooses not to answer; a question with no bubble filled loses one-third of a mark, more than 10 percent left with no bubble disqualifies, and no deduction is set for a wrong answer. General candidates qualify with 60 percent and SC, OBC, MBC, EWS and ST candidates with 55 percent, with lower marks for some other groups, and the certificate is valid for life. No new REET notice had been published as of November 2026.",
+    rows: [
+      { label: "Questions", value: "150 MCQs, 1 mark each" },
+      { label: "Time", value: "2 hours 30 minutes" },
+      { label: "Parts", value: "CDP, Language I, Language II, Maths, EVS (30 each)" },
+      { label: "Negative marking", value: "1/3 mark for a question with no bubble filled (E = not answering); none for wrong answers" },
+      { label: "Qualifying mark", value: "60% general; 55% SC, OBC, MBC, EWS, ST (36% ST in TSP areas)" },
+      { label: "Latest exam", value: "REET 2024, held 27 and 28 February 2025" },
+      { label: "Certificate", value: "Valid for life" },
+      { label: "Conducted by", value: "Board of Secondary Education, Rajasthan (BSER)" },
+    ],
+    basedOn: "the board's REET 2024 notification No. 01/2024 of 12 December 2024, checked November 2026",
+    source: { name: "Board of Secondary Education, Rajasthan", url: "https://rajeduboard.rajasthan.gov.in/" },
+  },
+  uptet: {
+    answer:
+      "UPTET Paper 1 is the Uttar Pradesh Teacher Eligibility Test for teachers of Classes 1 to 5, conducted since 2026 by the Uttar Pradesh Education Service Selection Commission (UPESSC). It has 150 one-mark multiple-choice questions in 2 hours 30 minutes, in five sections of 30: Child Development and Pedagogy, Language I (Hindi), Language II (English, Urdu or Sanskrit), Mathematics and Environmental Studies. There is no negative marking. The qualifying mark is 90 of 150 (60 percent) for general candidates and 82 of 150 (55 percent) for SC, ST, OBC, EWS, dependants of freedom fighters, ex-servicemen and candidates with disabilities. The 2026 test (Advertisement No. 01/UPTET/2026, published 20 March 2026) was held on OMR sheets on 2 to 4 July 2026, with results on 26 August 2026.",
+    rows: [
+      { label: "Questions", value: "150 MCQs, 1 mark each" },
+      { label: "Time", value: "2 hours 30 minutes" },
+      { label: "Sections", value: "CDP, Hindi, Language II, Maths, EVS (30 each)" },
+      { label: "Language II", value: "English, Urdu or Sanskrit" },
+      { label: "Negative marking", value: "None" },
+      { label: "Qualifying mark", value: "90/150 (60%) general, 82/150 (55%) reserved" },
+      { label: "Latest test", value: "2 to 4 July 2026 (OMR); result 26 August 2026" },
+      { label: "Certificate", value: "Valid for life (UP government order, June 2021)" },
+      { label: "Conducted by", value: "UP Education Service Selection Commission (UPESSC)" },
+    ],
+    basedOn: "the UPESSC UPTET 2026 information booklet (Adv. No. 01/UPTET/2026) and the August 2026 result reports, checked November 2026",
+    source: { name: "UPESSC", url: "https://upessc.up.gov.in" },
+  },
+  ugcnet: {
+    answer:
+      "UGC-NET is the National Eligibility Test that the National Testing Agency conducts for the University Grants Commission, usually in June and December cycles, to decide eligibility for Junior Research Fellowship, Assistant Professor and PhD admission. It is a computer-based test of two papers in one 3-hour sitting with no break. Paper 1, the General Paper on Teaching and Research Aptitude, has 50 compulsory questions for 100 marks, five from each of ten units; Paper 2, on the candidate's subject, has 100 questions for 200 marks. Each question carries 2 marks and there is no negative marking. Candidates need at least 40% aggregate across both papers (35% for reserved categories) to be considered.",
+    rows: [
+      { label: "Paper 1", value: "50 questions, 100 marks, 5 from each of 10 units" },
+      { label: "Paper 2", value: "100 questions, 200 marks, on your subject" },
+      { label: "Time", value: "3 hours for both papers, no break" },
+      { label: "Negative marking", value: "None (2 marks per correct answer)" },
+      { label: "Minimum to be considered", value: "40% aggregate of both papers (35% reserved)" },
+      { label: "Languages", value: "English and Hindi" },
+      { label: "Given by", value: "National Testing Agency (NTA) for the UGC" },
+    ],
+    basedOn: "the NTA UGC-NET December 2026 information bulletin and the UGC NET Bureau's Paper I syllabus (code 00)",
+    source: { name: "NTA UGC-NET", url: "https://ugcnet.nta.nic.in/" },
+  },
+  aissee: {
+    answer:
+      "The AISSEE (All India Sainik Schools Entrance Examination) is the National Testing Agency's entrance test for Class 6 and Class 9 of the Sainik Schools and approved New Sainik Schools, run for the Sainik Schools Society of the Ministry of Defence. Under the AISSEE-2026 Information Bulletin, the Class 6 paper has 125 multiple-choice questions for 300 marks in 150 minutes, on an OMR sheet: Language 25 questions (2 marks each), Mathematics 50 (3 marks each), Intelligence 25 and General Knowledge 25 (2 marks each), with no negative marking. Candidates aged 10 to 12 can take it in English, Hindi or 11 other languages, and girls may apply for Class 6. To qualify for the existing Sainik Schools a candidate needs at least 25 percent in each subject and 40 percent overall (no minimum for SC and ST candidates there); seats are then given by school-wise merit lists and e-counselling.",
+    rows: [
+      { label: "Questions", value: "125 multiple choice, 300 marks" },
+      { label: "Time", value: "150 minutes" },
+      { label: "Sections", value: "Language 25, Mathematics 50, Intelligence 25, General Knowledge 25" },
+      { label: "Marking", value: "3 marks per Mathematics question, 2 for the others, no negative marking" },
+      { label: "Qualifying marks", value: "25% in each subject and 40% overall (existing Sainik Schools; none for SC/ST)" },
+      { label: "Who can take it", value: "Boys and girls aged 10 to 12 on 31 March of the admission year" },
+      { label: "Given by", value: "National Testing Agency (NTA) for the Sainik Schools Society" },
+    ],
+    basedOn: "the AISSEE-2026 Information Bulletin (exam held on 18 January 2026); check the AISSEE-2027 bulletin when NTA publishes it",
+    source: { name: "National Testing Agency", url: "https://exams.nta.nic.in/sainik-school-society/" },
+  },
+  aphug: {
+    answer:
+      "The AP Human Geography Exam is a fully digital, 2 hour 15 minute exam from the College Board. Section I has 60 multiple-choice questions in 60 minutes, 50% of the score; some stand alone and some come in sets, and about 30% to 40% use a map, table, chart, graph, image, infographic or landscape. Section II has 3 free-response questions in 75 minutes, the other 50%. The course has seven units: Unit 1, Thinking Geographically, is 8% to 10% of the multiple-choice section and Units 2 to 7 are 12% to 17% each. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "60 questions, 60 minutes, 50% of score" },
+      { label: "Free response", value: "3 questions, 75 minutes, 50% of score" },
+      { label: "Answer choices", value: "5 per multiple-choice question" },
+      { label: "Stimulus questions", value: "About 30% to 40% of the multiple choice" },
+      { label: "Units", value: "7: Unit 1 8-10%, Units 2 to 7 12-17% each" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+      { label: "Given by", value: "College Board, digital in the Bluebook app" },
+    ],
+    basedOn: "the College Board AP Human Geography Course and Exam Description (effective fall 2020, clarifications as of June 2026) and AP Central exam page",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-human-geography/exam" },
+    tigertest:
+      "Tigertest has two full 60-question AP Human Geography multiple-choice sections and seven drills, one per unit, all free with no account required. The free-response questions are not included, and maps and images are described in words.",
+  },
+  apcalcab: {
+    answer:
+      "The AP Calculus AB Exam is a 3 hour 10 minute exam from the College Board, given in May. From May 2027, Section I has 42 multiple-choice questions with four choices in 1 hour 40 minutes (50% of the score): Part A, 29 questions in 62 minutes with no calculator, and Part B, 13 questions in 38 minutes with a graphing calculator required. Section II has 6 free-response questions in 90 minutes (50%). The exam is hybrid digital: multiple choice in the Bluebook app, which has a built-in Desmos graphing calculator for the calculator parts, and free responses handwritten. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "42 questions, 1 hr 40 min, 50% of score" },
+      { label: "Part A", value: "29 questions, 62 minutes, no calculator" },
+      { label: "Part B", value: "13 questions, 38 minutes, graphing calculator required" },
+      { label: "Free response", value: "6 questions, 90 minutes, 50%" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Units", value: "8, from 5-10% (Differential Equations) to 15-20% (Integration)" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+    ],
+    basedOn: "the College Board AP Calculus AB exam page and Course and Exam Description with the clarifications for fall 2026 (May 2027 exam)",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-calculus-ab/exam" },
+    tigertest:
+      "Tigertest has two full 42-question AP Calculus AB multiple-choice sections and eight drills, one per unit, all free with no account required. The free-response section is not included.",
+  },
 };

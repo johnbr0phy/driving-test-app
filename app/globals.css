@@ -5309,6 +5309,9 @@ html.native-app body {
 .dark :where(a, button, input, select, textarea, [tabindex]):focus-visible {
   outline-color: #93c5fd !important;
 }
+/* Dashboard row wrappers are tabIndex=-1 focus targets, never tab stops: a tap
+   focuses them, so they draw their own ring only when returned to. */
+.progress-row:focus-visible { outline: none !important; }
 .skip-link { position: fixed; top: .5rem; left: .5rem; z-index: 100; padding: .75rem 1rem; background: #fff; color: #111827; transform: translateY(-200%); }
 .skip-link:focus { transform: translateY(0); }
 @media (prefers-reduced-motion: reduce) {

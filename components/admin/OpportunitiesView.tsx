@@ -532,6 +532,76 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
           </Card>
         )}
 
+        {/* Tell a friend prompt */}
+        {data.sharePrompt && (() => {
+          const sp = data.sharePrompt;
+          const get = (id: string) => sp.actions.find((a) => a.id === id);
+          const shown = get("shown");
+          const sharedAll = (get("share")?.total || 0) + (get("copy")?.total || 0);
+          const shared30 = (get("share")?.last30d || 0) + (get("copy")?.last30d || 0);
+          const friend = data.sources.find((s) => s.id === "friend");
+          const rate = (n: number, d: number) => (d > 0 ? `${((n / d) * 100).toFixed(1)}%` : "·");
+          return (
+            <Card
+              title="Tell a friend prompt"
+              subtitle={`John's ask to non-Premium learners on a roll${sp.since ? `, since ${fmtDay(sp.since.slice(0, 10))}` : ""}`}
+            >
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+                <Tile label="Shown, 30 days" value={fmtInt(shown?.last30d || 0)} sub={`${fmtInt(shown?.total || 0)} all time`} />
+                <Tile label="Shared, 30 days" value={fmtInt(shared30)} sub={`${rate(shared30, shown?.last30d || 0)} of shown`} />
+                <Tile label="Friends who visited, 30 days" value={friend ? fmtInt(friend.visits30d) : "·"} sub="first visits from a shared link" />
+                <Tile label="Friends who signed up" value={friend ? fmtInt(friend.signups) : "·"} sub={friend ? `${fmtInt(friend.buyers)} bought Premium` : ""} />
+              </div>
+              <TableScroll className="-mx-2">
+                <table className="w-full text-sm">
+                  <thead className="text-xs text-gray-500 dark:text-gray-400">
+                    <tr className={ROW}>
+                      <Th sticky>Action</Th>
+                      <Th right>30 days</Th>
+                      <Th right>All time</Th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {sp.actions.map((a) => (
+                      <tr key={a.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                        <td className={`py-2 px-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{a.label}</td>
+                        <td className="py-2 px-2 text-right tabular-nums">{fmtInt(a.last30d)}</td>
+                        <td className="py-2 px-2 text-right tabular-nums">{fmtInt(a.total)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </TableScroll>
+              <TableScroll className="-mx-2 mt-3">
+                <table className="w-full text-sm">
+                  <thead className="text-xs text-gray-500 dark:text-gray-400">
+                    <tr className={ROW}>
+                      <Th sticky>Where</Th>
+                      <Th right>Shown</Th>
+                      <Th right>Shared</Th>
+                      <Th right>Share rate</Th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {sp.byWhere.map((r) => (
+                      <tr key={r.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                        <td className={`py-2 px-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{r.label}</td>
+                        <td className="py-2 px-2 text-right tabular-nums">{fmtInt(r.shown)}</td>
+                        <td className="py-2 px-2 text-right tabular-nums">{fmtInt(r.shared)}</td>
+                        <td className="py-2 px-2 text-right tabular-nums">{rate(r.shared, r.shown)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </TableScroll>
+              <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
+                Shared counts a completed share sheet or a copied link ({fmtInt(sharedAll)} all time); we can&apos;t see whether the message was sent.
+                Friends are first visits whose link carried utm_source=friend; signups and buyers are all-time accounts whose first visit came that way.
+              </p>
+            </Card>
+          );
+        })()}
+
         {/* Sources */}
         <Card
           title="Where new visitors come from"

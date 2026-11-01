@@ -140,7 +140,7 @@ function NewClassForm() {
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="Search: surgical tech, NCLEX, SAT, real estate…"
                     aria-label="Search tests"
-                    className="w-full bg-transparent pl-9 pr-3 py-3 text-sm text-gray-900 dark:text-gray-50 outline-none"
+                    className="w-full bg-transparent pl-9 pr-3 py-3 text-base md:text-sm text-gray-900 dark:text-gray-50 outline-none"
                   />
                 </div>
                 <div className="max-h-80 overflow-y-auto p-2">
@@ -175,7 +175,7 @@ function NewClassForm() {
                 id="class-state"
                 value={stateKey}
                 onChange={(e) => setStateKey(e.target.value)}
-                className="w-full h-10 rounded-md border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 px-3 text-sm"
+                className="w-full h-10 rounded-md border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 px-3 text-base md:text-sm"
               >
                 <option value="">{choice?.stateRequired ? "Choose your state" : "National (no state law)"}</option>
                 {stateOptions.map((s) => (

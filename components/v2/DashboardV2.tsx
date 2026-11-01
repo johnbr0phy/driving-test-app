@@ -133,6 +133,10 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const anyProgress = drillSteps.some((s) => s.started) || testSteps.some((s) => s.attempts.length > 0 || s.session);
   const bestOverall = history.length ? Math.max(...history.map((r) => r.composite)) : null;
 
+  // The row a celebration returned to. Only that row shows a focus ring, so a
+  // plain tap on a row (which focuses its tabIndex=-1 wrapper) draws nothing.
+  const [returnedTo, setReturnedTo] = useState<string | null>(null);
+
   // A celebration returns here deliberately, to show the persisted progress.
   // Consume the marker so Back/re-entry does not replay the focus treatment.
   useEffect(() => {
@@ -147,6 +151,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
       : kind === "test" && testSteps.some((step) => String(step.def.number) === key && step.complete);
     const target = hasProgress ? document.getElementById(`progress-${completed}`) : null;
     if (target) {
+      setReturnedTo(completed);
       target.focus({ preventScroll: true });
       target.scrollIntoView({ block: "center", behavior: "instant" });
     }
@@ -281,7 +286,8 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   id={`progress-${basics ? "basics" : "drill"}:${s.def.key}`}
                   tabIndex={-1}
                   aria-label={`${s.def.name}${basics ? " Basics" : ""}: ${subtitle}`}
-                  className={`rounded-xl scroll-mt-6 focus:outline-none focus:ring-2 ${step.complete ? "focus:ring-green-500" : "focus:ring-brand"} focus:ring-offset-4 dark:focus:ring-offset-gray-950`}
+                  onBlur={() => setReturnedTo(null)}
+                  className={`progress-row rounded-xl scroll-mt-6 focus:outline-none ${returnedTo === `${basics ? "basics" : "drill"}:${s.def.key}` ? `focus:ring-2 ${step.complete ? "focus:ring-green-500" : "focus:ring-brand"} focus:ring-offset-4 dark:focus:ring-offset-gray-950` : ""}`}
                 >
                   {newSection && (
                     <p className={`text-[11px] font-semibold text-gray-500 dark:text-gray-400 mb-1.5 ${index === 0 ? "" : "mt-3"}`}>{section.name}</p>
@@ -326,7 +332,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               else if (hasAttempts) stamp = { label: "Retake it", color: "amber" };
 
               return (
-                <div key={s.def.number} id={`progress-test:${s.def.number}`} tabIndex={-1} aria-label={`${s.def.name}: ${subtitle}`} className="rounded-xl scroll-mt-6 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-4 dark:focus:ring-offset-gray-950">
+                <div key={s.def.number} id={`progress-test:${s.def.number}`} tabIndex={-1} aria-label={`${s.def.name}: ${subtitle}`} onBlur={() => setReturnedTo(null)} className={`progress-row rounded-xl scroll-mt-6 focus:outline-none ${returnedTo === `test:${s.def.number}` ? "focus:ring-2 focus:ring-green-500 focus:ring-offset-4 dark:focus:ring-offset-gray-950" : ""}`}>
                   <ProgressCard
                     title={`🎯 ${s.def.name}`}
                     subtitle={subtitle}

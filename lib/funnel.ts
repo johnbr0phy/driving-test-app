@@ -31,7 +31,7 @@ export type FunnelStep = "visit" | "answered" | "signup_view" | "dmv_picker" | "
 // so a referrer-less first visit is also flagged when it lands on a deep page
 // (not the home page): nobody types tigertest.io/cdl-practice-test, but a
 // link from an answer engine, a chat or a bookmark lands there.
-export const VISIT_SOURCES = ["chatgpt", "perplexity", "gemini", "copilot", "claude", "ai_other", "search", "direct", "other"] as const;
+export const VISIT_SOURCES = ["chatgpt", "perplexity", "gemini", "copilot", "claude", "ai_other", "search", "friend", "direct", "other"] as const;
 export type VisitSource = (typeof VISIT_SOURCES)[number];
 
 const SOURCE_HOSTS: [VisitSource, RegExp][] = [
@@ -54,6 +54,8 @@ const UTM_NAMES: [VisitSource, RegExp][] = [
   ["copilot", /^copilot/],
   ["claude", /^claude/],
   ["ai_other", /^(deepseek|grok|meta\.?ai|you|phind|mistral|poe)/],
+  // John's "tell a friend" share link (components/SharePromptStep).
+  ["friend", /^friend$/],
 ];
 
 function hostSource(host: string): VisitSource | null {

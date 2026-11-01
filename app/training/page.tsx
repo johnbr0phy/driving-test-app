@@ -28,6 +28,10 @@ import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer } from "@/lib/classProgress";
 import { useClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
+import { useSharePrompt } from "@/hooks/useSharePrompt";
+import { SharePromptStep } from "@/components/SharePromptStep";
+import { useIsPremium } from "@/hooks/useIsPremium";
+import { v1GuestCounts } from "@/components/GuestSaveCard";
 
 function TrainingPageContent() {
   const router = useRouter();
@@ -45,6 +49,12 @@ function TrainingPageContent() {
   const [ctaIndex] = useState(() => Math.floor(Math.random() * en.testCtas.length));
   const ctaText = (language === "es" ? es.testCtas : language === "vi" ? vi.testCtas : language === "ko" ? ko.testCtas : language === "zh" ? zh.testCtas : en.testCtas)[ctaIndex];
   const isPremium = hydrated ? hasPremiumAccess() : false;
+  // Non-paying people on a roll get John's "tell a friend" ask in place of a question.
+  const { ready: premiumReady } = useIsPremium();
+  const completedTests = useStore((state) => state.completedTests);
+  const trainingAnswerHistory = useStore((state) => state.trainingAnswerHistory);
+  const dmvAnswered = v1GuestCounts(selectedState, completedTests, trainingAnswerHistory).answered;
+  const sharePrompt = useSharePrompt(hydrated && premiumReady && !isPremium && language === "en", dmvAnswered, "dmv_training");
 
   const handleUpgrade = async () => {
     if (!user?.email || !user?.uid) {
@@ -230,6 +240,7 @@ function TrainingPageContent() {
       playIncorrectSound();
     }
 
+    sharePrompt.record(isCorrect);
     recordClassAnswer(DMV_EXAM_ID, currentQuestion, isCorrect, answer);
 
     // Track progress
@@ -249,6 +260,13 @@ function TrainingPageContent() {
   };
 
   const handleNext = () => {
+    // Let an earned set completion come before the share ask.
+    if (!pendingCompletion.current && sharePrompt.takeStep()) return;
+    loadNextQuestion();
+  };
+
+  const handleSkipShare = () => {
+    sharePrompt.skip();
     loadNextQuestion();
   };
 
@@ -387,7 +405,9 @@ function TrainingPageContent() {
       <div className="relative container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {/* Question Card */}
-        {accessLocked ? null : currentQuestion ? (
+        {accessLocked ? null : sharePrompt.showing ? (
+          <SharePromptStep onShared={sharePrompt.shared} onSkip={handleSkipShare} />
+        ) : currentQuestion ? (
           <TrainingCard
             key={currentQuestion.questionId}
             question={currentQuestion}

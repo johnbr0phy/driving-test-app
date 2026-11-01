@@ -1,0 +1,103 @@
+{
+  "metaTitle": "Testes de Código IMT 2026 - Exame de Código Grátis, Categoria B",
+  "metaDescription": "Testes de código grátis para o exame teórico do IMT, categoria B: 200 perguntas originais sobre o Código da Estrada, com explicações, e seis testes de 30 perguntas. Sem conta.",
+  "keywords": "testes de código, exame de código, testes de código IMT, exame de código categoria B, perguntas exame de código, Código da Estrada, carta de condução, teste de código online grátis, simulador exame de código 2026, prova teórica IMT",
+  "breadcrumb": {
+    "home": "Início",
+    "allTests": "Todos os testes",
+    "current": "Testes de Código IMT"
+  },
+  "h1": "Testes de Código IMT 2026, Categoria B",
+  "subtitle": "200 perguntas originais sobre o Código da Estrada, dos sinais e rotundas aos limites de velocidade, estacionamento e álcool. Seis testes de 30 perguntas com a mesma regra do exame real: 27 certas para passar. Pensado para o telemóvel. Sem conta.",
+  "facts": {
+    "h2": "O exame de código em resumo",
+    "answer": "O exame teórico de condução, o chamado exame de código, é da responsabilidade do IMT (Instituto da Mobilidade e dos Transportes) e faz-se num computador, num centro de exames, depois da inscrição numa escola de condução. Para a carta da categoria B tem 30 perguntas de escolha múltipla sobre as matérias comuns a todas as categorias, com 30 minutos para responder, e fica aprovado com pelo menos 27 respostas certas. Muitas perguntas mostram uma fotografia ou um desenho de uma situação de trânsito. A prova é em português; um candidato que não domine o português pode pedir ao IMT uma prova traduzida (possível em todas as categorias desde o Decreto-Lei n.º 114/2026, de junho de 2026), um pedido feito normalmente através da escola de condução. A aprovação é válida por um ano, prazo em que tem de passar na prova prática. A idade mínima para a categoria B é de 18 anos.",
+    "tigertest": "O Tigertest tem 200 perguntas originais de exame de código com explicações e seis testes de 30 perguntas, tudo grátis e sem conta.",
+    "rows": [
+      { "label": "Entidade", "value": "IMT (Instituto da Mobilidade e dos Transportes)" },
+      { "label": "Perguntas", "value": "30 de escolha múltipla (categoria B)" },
+      { "label": "Tempo", "value": "30 minutos" },
+      { "label": "Para passar", "value": "27 em 30 (90%)" },
+      { "label": "Língua", "value": "Português; prova traduzida mediante pedido" },
+      { "label": "Validade da aprovação", "value": "1 ano" },
+      { "label": "Idade mínima (ligeiros)", "value": "18 anos" },
+      { "label": "Testes no Tigertest", "value": "6 x 30 perguntas, 27 para passar" }
+    ],
+    "footnote": "Com base no Regulamento da Habilitação Legal para Conduzir (Decreto-Lei n.º 138/2012, arts. 43, 44, 46 e 47, com o art. 44 na redação do Decreto-Lei n.º 114/2026) e no Código da Estrada na redação da Lei n.º 24/2025, verificados em novembro de 2026. As regras mudam, por isso confirme os detalhes atuais em"
+  },
+  "howItWorks": {
+    "h2": "Como funciona",
+    "cards": [
+      {
+        "h3": "Treine por tema",
+        "p": "Quatro conjuntos de treino: sinais e marcas rodoviárias; prioridade e rotundas, com carta e acidentes; velocidade, ultrapassagem e estacionamento; e o condutor e o veículo. As perguntas em que erra voltam até as dominar."
+      },
+      {
+        "h3": "Testes completos",
+        "p": "Seis testes de 30 perguntas, a duração do exame real da categoria B, e em cada um passa com 27 certas, como no exame. Nenhuma pergunta se repete entre testes e todas as respostas explicam a regra."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Feito a partir do Código da Estrada",
+    "p": "Os temas seguem o programa da prova teórica do Regulamento da Habilitação Legal para Conduzir e as regras do Código da Estrada na redação de 2025: circular pela direita, ceder a passagem a quem se apresenta pela direita, as regras das vias nas rotundas, velocidade e distâncias de paragem, onde é proibido parar ou estacionar, as regras das autoestradas, a taxa de alcoolemia, as cadeirinhas e o que fazer depois de um acidente. O exame real mostra fotografias e desenhos de situações de trânsito; aqui os sinais e as situações são descritos por palavras, e não há perguntas sobre coimas nem pontos.",
+    "items": [
+      "Sinais de trânsito (20%)",
+      "Prioridade, cruzamentos e rotundas (17%)",
+      "Velocidade, distâncias e ultrapassagem (13%)",
+      "Marcas rodoviárias, sinais luminosos e sinais dos agentes (10%)",
+      "Paragem, estacionamento e autoestradas (10%)",
+      "Álcool, fadiga e distrações (10%)",
+      "Cintos, crianças, luzes e equipamento (10%)",
+      "Carta, documentos e acidentes (10%)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Como passar no exame de código",
+    "steps": [
+      {
+        "h3": "1. Aprenda primeiro os sinais pela forma e pela cor",
+        "p": "Os triângulos de orla vermelha avisam de perigos, os círculos de orla vermelha proíbem, os círculos azuis obrigam e os quadrados azuis informam. O octógono vermelho é o STOP, o triângulo invertido é a cedência de passagem e o losango amarelo assinala uma estrada com prioridade. Sabendo a família, a maioria dos sinais explica-se a si própria."
+      },
+      {
+        "h3": "2. Saiba quem passa primeiro",
+        "p": "Sem sinalização, ceda a passagem a quem se apresenta pela direita. Ao sair de um parque de estacionamento ou de um posto de abastecimento, ao entrar numa autoestrada ou numa rotunda, cede sempre a passagem. Numa rotunda com duas vias, use a via da direita para a primeira saída; para as outras saídas, só passe para a direita depois da saída anterior à sua. Numa estrada estreita e inclinada, cede a passagem quem desce."
+      },
+      {
+        "h3": "3. Treine com fotografias de sinais reais",
+        "p": "No exame, muitas perguntas mostram uma fotografia ou um desenho visto do lugar do condutor. Aqui os sinais são descritos por palavras, por isso reveja também imagens dos sinais portugueses do Regulamento de Sinalização do Trânsito antes do exame."
+      },
+      {
+        "h3": "4. Conte com 27 como o mínimo",
+        "p": "O exame real só permite três erros, por isso procure fazer 29 ou 30 em cada teste. O Tigertest mostra a sua percentagem de acertos por tema: reveja as perguntas em que errou, volte a treinar o conjunto mais fraco e faça os seis testes antes do dia do exame."
+      }
+    ]
+  },
+  "faqTitle": "Perguntas frequentes sobre o exame de código",
+  "faqs": [
+    {
+      "q": "Como é o exame de código do IMT para a categoria B?",
+      "a": "É a prova teórica do exame de condução, conhecida como exame de código por causa do Código da Estrada. Para a carta da categoria B tem 30 perguntas de escolha múltipla em 30 minutos, feitas num computador num centro de exames, e fica aprovado com pelo menos 27 respostas certas, ou seja, no máximo três erros. As perguntas trazem muitas vezes uma fotografia ou um desenho de uma situação de trânsito vista do lugar do condutor. A aprovação é válida por um ano, prazo em que tem de passar na prova prática."
+    },
+    {
+      "q": "Posso fazer o exame de código noutra língua?",
+      "a": "A prova é em português, mas as regras permitem que um candidato que não domine o português peça ao IMT uma prova teórica traduzida. Desde a alteração de junho de 2026 (Decreto-Lei n.º 114/2026), essa possibilidade abrange todas as categorias de carta. O pedido é feito normalmente através da escola de condução na inscrição. O Tigertest tem também estas perguntas em inglês, na página em inglês do mesmo teste."
+    },
+    {
+      "q": "Como estão organizados os testes do Tigertest?",
+      "a": "São 200 perguntas originais em oito temas, dos sinais de trânsito aos acidentes. Quatro conjuntos de treino ensinam as regras com correção imediata, e as perguntas em que erra voltam até acertar. Seis testes de 30 perguntas têm a duração do exame real e a mesma regra de 27 certas em 30 (90%), e nenhuma pergunta se repete entre testes."
+    },
+    {
+      "q": "Que regras convém saber melhor?",
+      "a": "A prioridade a quem se apresenta pela direita nos cruzamentos sem sinalização, as regras das vias nas rotundas (entrar depois de ceder a passagem a quem já circula, usar a via da direita para a primeira saída, passar para a direita só depois da saída anterior à sua), os limites gerais de velocidade para automóveis ligeiros (50 km/h nas localidades, 90 nas restantes estradas, 100 nas vias reservadas a automóveis e motociclos, 120 nas autoestradas), as distâncias de paragem e estacionamento, a distância lateral de 1,5 m ao ultrapassar ciclistas e a taxa de alcoolemia: 0,5 g/l para a maioria dos condutores e 0,2 g/l durante os três anos do regime probatório."
+    },
+    {
+      "q": "Estas são as perguntas oficiais do IMT?",
+      "a": "Não. Todas as perguntas são originais, escritas pelo Tigertest a partir do Código da Estrada, do Regulamento da Habilitação Legal para Conduzir e do Regulamento de Sinalização do Trânsito, por isso testam os mesmos conhecimentos sem copiar nenhuma pergunta oficial. Os sinais e as situações são descritos por palavras e não mostrados em fotografias, por isso estude também imagens dos sinais portugueses. O Tigertest é treino gratuito, sem qualquer ligação ao IMT (Instituto da Mobilidade e dos Transportes), a centros de exame ou a escolas de condução, e não marca nem substitui o seu exame. A tradução portuguesa é automática e aguarda revisão por um falante nativo."
+    }
+  ],
+  "finalCta": {
+    "h2": "Pronto para o seu exame de código?",
+    "p": "Comece grátis. Sem conta. 200 perguntas sobre o Código da Estrada."
+  }
+}

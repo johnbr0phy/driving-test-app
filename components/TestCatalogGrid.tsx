@@ -11,7 +11,8 @@ import {
 import { TestIcon } from "@/components/TestIcon";
 import { CountUp } from "@/components/CountUp";
 import { hasTigerSet } from "@/lib/tigerAssets";
-import { LANGUAGES } from "@/i18n";
+import { LANGUAGES, type Language } from "@/i18n";
+import { homeCopy } from "@/components/home/homeCopy";
 import { CountryPills, readRegionCookie } from "@/components/CountryPills";
 import { Region, orderGroupsForRegion, regionOfTest } from "@/lib/region";
 
@@ -21,8 +22,11 @@ import { Region, orderGroupsForRegion, regionOfTest } from "@/lib/region";
  * multilingual tests), a chip row (size, price) and the optional weekly count,
  * with a chevron on the right like the dashboard rows.
  */
-export function TestCard({ test, answered, headingLevel = 3 }: { test: TestCatalogEntry; answered?: number | null; headingLevel?: 3 | 4 }) {
+export function TestCard({ test, answered, headingLevel = 3, lang = "en" }: { test: TestCatalogEntry; answered?: number | null; headingLevel?: 3 | 4; lang?: Language }) {
   const tiger = hasTigerSet(test.id);
+  const c = homeCopy(lang).card;
+  // A native exam shows its own name on a page in its language (the German homepage).
+  const name = test.nativeName && test.language === lang ? test.nativeName : test.name;
   // Cards sit under a section or group heading, so their names are one level below it.
   const Heading = headingLevel === 4 ? "h4" : "h3";
   return (
@@ -37,12 +41,12 @@ export function TestCard({ test, answered, headingLevel = 3 }: { test: TestCatal
               <TestIcon examId={test.id} icon={test.icon} className={tiger ? "h-12 w-12" : "h-6 w-6"} />
             </div>
             <div className="min-w-0">
-              <Heading className="text-balance text-lg font-semibold leading-snug text-gray-900 dark:text-gray-50">{test.name}</Heading>
+              <Heading className="text-balance text-lg font-semibold leading-snug text-gray-900 dark:text-gray-50">{name}</Heading>
               {/* Two lines tall either way: a long org wraps into the second, a multilingual test puts its flags there. */}
               {test.languages.length > 1 ? (
                 <div className="min-h-[2.5rem] text-sm leading-5 text-gray-500 dark:text-gray-400">
                   <p className="truncate">{test.org}</p>
-                  <LanguageFlags languages={test.languages} />
+                  <LanguageFlags languages={test.languages} lang={lang} />
                 </div>
               ) : (
                 <p className="line-clamp-2 min-h-[2.5rem] text-sm leading-5 text-gray-500 dark:text-gray-400">{test.org}</p>
@@ -52,19 +56,19 @@ export function TestCard({ test, answered, headingLevel = 3 }: { test: TestCatal
 
           <div className="mt-4 flex flex-wrap items-center gap-2 text-xs font-medium">
             <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-2.5 py-1 text-gray-700 dark:text-gray-300">
-              {test.questions} questions
+              {c.questions(test.questions)}
             </span>
             <span
               className="rounded-full bg-brand-light px-2.5 py-1 text-brand-dark"
               title={test.pricing ? `Practice tests: ${test.pricing}` : undefined}
             >
-              {test.pricing ? "Free + Premium" : "Free"}
+              {test.pricing ? c.freePlusPremium : c.free}
             </span>
           </div>
 
           {answered ? (
             <p className="mt-4 border-t border-gray-200 dark:border-gray-800 pt-3 text-center text-xs text-gray-500 dark:text-gray-400">
-              <CountUp value={answered} className="text-sm font-semibold text-gray-900 dark:text-gray-50" /> answered this week
+              <CountUp value={answered} className="text-sm font-semibold text-gray-900 dark:text-gray-50" /> {c.answeredThisWeek}
             </p>
           ) : null}
         </div>
@@ -78,12 +82,14 @@ export function TestCard({ test, answered, headingLevel = 3 }: { test: TestCatal
 }
 
 /** The flags of every language a test comes in, same flags as the language switcher. */
-function LanguageFlags({ languages }: { languages: TestCatalogEntry["languages"] }) {
-  const langs = LANGUAGES.filter((l) => languages.includes(l.code));
-  const names = langs.map((l) => l.englishName).join(", ");
+function LanguageFlags({ languages, lang }: { languages: TestCatalogEntry["languages"]; lang: Language }) {
+  // In the test's own order (base language first), as the languages call themselves.
+  const langs = languages.map((code) => LANGUAGES.find((l) => l.code === code)).filter((l) => !!l);
+  const names = langs.map((l) => (lang === "en" ? l.englishName : l.label)).join(", ");
+  const label = homeCopy(lang).card.availableIn(names);
   return (
-    <span className="flex h-5 items-center gap-1" title={`Available in ${names}`}>
-      <span className="sr-only">Available in {names}</span>
+    <span className="flex h-5 items-center gap-1" title={label}>
+      <span className="sr-only">{label}</span>
       {langs.map((l) => (
         <span key={l.code} aria-hidden="true" className="text-sm leading-none">
           {l.flag}
@@ -104,6 +110,7 @@ export function TestCatalogGrid({
   region: fixedRegion,
   regionPicker = false,
   localOnly = false,
+  lang = "en",
 }: {
   showPopular?: boolean;
   nested?: boolean;
@@ -113,7 +120,10 @@ export function TestCatalogGrid({
   regionPicker?: boolean;
   /** List only the country's own groups and the worldwide ones until the visitor searches (the homepage). */
   localOnly?: boolean;
+  /** The page's language (a country homepage in German): the search box, counts and cards. */
+  lang?: Language;
 } = {}) {
+  const c = homeCopy(lang);
   // nested: the grid sits under a page section's h2 (the homepage), so groups are h3 and cards h4.
   const GroupHeading = nested ? "h3" : "h2";
   const [query, setQuery] = useState("");
@@ -148,7 +158,7 @@ export function TestCatalogGrid({
     <>
       {regionPicker && (
         <div className="mb-8">
-          <CountryPills current={region} onChange={fixedRegion ? undefined : setPickedRegion} />
+          <CountryPills current={region} onChange={fixedRegion ? undefined : setPickedRegion} lang={lang} />
         </div>
       )}
       <div className="mx-auto mb-10 max-w-xl">
@@ -162,8 +172,8 @@ export function TestCatalogGrid({
             role="searchbox"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search exams or jobs"
-            aria-label="Search practice tests"
+            placeholder={c.search.placeholder}
+            aria-label={c.search.label}
             autoComplete="off"
             className="h-12 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 pl-12 pr-11 text-base text-gray-900 dark:text-gray-50 shadow-sm placeholder:text-gray-400 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30"
           />
@@ -171,7 +181,7 @@ export function TestCatalogGrid({
             <button
               type="button"
               onClick={() => setQuery("")}
-              aria-label="Clear search"
+              aria-label={c.search.clear}
               className="absolute right-3 top-1/2 -translate-y-1/2 rounded-md p-1 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-600 dark:hover:text-gray-300"
             >
               <X className="h-4 w-4" aria-hidden="true" />
@@ -183,19 +193,17 @@ export function TestCatalogGrid({
           aria-live="polite"
         >
           {searching
-            ? `${count} of ${TEST_CATALOG.length} tests`
-            : `${localOnly ? count : TEST_CATALOG.length} practice tests, all free to start`}
+            ? c.search.countOf(count, TEST_CATALOG.length)
+            : c.search.allFree(localOnly ? count : TEST_CATALOG.length)}
         </p>
       </div>
 
       {groups.length === 0 && (
         <div className="rounded-2xl border border-dashed border-gray-300 dark:border-gray-700 p-10 text-center">
           <p className="text-lg font-semibold text-gray-900 dark:text-gray-50">
-            No tests match &ldquo;{query}&rdquo;
+            {c.search.noMatch(query)}
           </p>
-          <p className="mt-1 text-gray-600 dark:text-gray-300">
-            Try the exam name, the job title, or the certifying body.
-          </p>
+          <p className="mt-1 text-gray-600 dark:text-gray-300">{c.search.noMatchHint}</p>
         </div>
       )}
 
@@ -206,7 +214,7 @@ export function TestCatalogGrid({
           </GroupHeading>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {group.tests.map((t) => (
-              <TestCard key={t.id} test={t} headingLevel={nested ? 4 : 3} />
+              <TestCard key={t.id} test={t} headingLevel={nested ? 4 : 3} lang={lang} />
             ))}
           </div>
         </div>

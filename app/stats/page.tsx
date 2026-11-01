@@ -18,6 +18,7 @@ import { auth } from "@/lib/firebase";
 import { PaywallModal } from "@/components/PaywallModal";
 import { Question } from "@/types";
 import { getQuestionsData } from "@/lib/testGenerator";
+import { getExamForQuestionId } from "@/lib/exams";
 import { CommunityWrongQuestions } from "@/components/CommunityWrongQuestions";
 import { QuizRow } from "@/components/QuizRow";
 import { isClassStudent } from "@/lib/classProgress";
@@ -253,7 +254,7 @@ function StatsContent() {
         chipLabel={chip.label}
         chipColorClass={chip.color}
         question={item.question.question}
-        subtitle={t(`categories.${item.question.category}`)}
+        subtitle={getExamForQuestionId(item.question.questionId)?.categoryLabels[item.question.category] ?? t(`categories.${item.question.category}`)}
         options={[
           item.question.optionA,
           item.question.optionB,

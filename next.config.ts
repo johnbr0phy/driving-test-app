@@ -9,22 +9,21 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     // Only the DMV faces: exam tigers are fetched over HTTP (see the route).
     "/api/og/score-card": ["./public/tiger_face_*.png"],
-    // The exam card shows face 3 of each mascot set, nothing else from public/tigers.
     "/og/[examId]": ["./public/tigers/*/tiger_face_03.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
+    "/og/connect": ["./public/tiger.png", "./public/tiger_face_03.png"],
     "/og/q/[code]": ["./public/tiger.png", "./public/tiger_face_03.png"],
-    "/og/connect": ["./public/tiger.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
   },
-  // The quiz card reads two images from public/; keep the big asset folders
-  // out of its function (it hit Vercel's 250 MB limit when they were traced in).
+  // The OG routes read images with a dynamic path under public/, so Next
+  // traces the whole folder into each function. Keep out what they never read
+  // (landing screenshots, audio, logos and, where unused, tiger sets): with
+  // everything traced they passed Vercel's 250 MB function limit (Nov 2026).
+  // The score card fetches exam tigers over HTTP instead of carrying every
+  // tiger face (about 185 MB), so it bundles none of public/tigers.
   outputFileTracingExcludes: {
     "/og/q/[code]": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
-    // The score card reads public/ by a computed path, so tracing would pull in
-    // all of it; it reads only tiger_face_*.png from disk (258 MB, Nov 2026).
-    "/api/og/score-card": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
-    // Same for the exam card: its computed path traced all of public/ (262 MB).
-    // And the /create card, which reads two images (261.7 MB traced).
     "/og/connect": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
-    "/og/[examId]": ["./public/tigers/*/tiger_face_0[124-8].png", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
+    "/og/[examId]": ["./public/tigers/*/tiger_face_0[124-9].png", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
+    "/api/og/score-card": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
   },
   images: {
     formats: ["image/avif", "image/webp"],

@@ -1,7 +1,7 @@
 # Builder brief: one exam for the next-100 wave
 
 You build ONE practice exam for Tigertest. Up to ten builders work at once in the same checkout,
-`/home/user/driving-test-app` (branch `next100-batch5`), each on a different exam. The integrator
+`/home/user/driving-test-app` (branch `next100-eu1`), each on a different exam. The integrator
 applies shared-file changes, builds, screenshots and commits. Your exam's row is in the table at the
 bottom of this file and in `tools/next100/QUEUE.md`.
 
@@ -120,25 +120,48 @@ short.
 - Run the hue checker yourself (rule in "Lessons from batch 1"); white text on the brand must be at
   least 4.5:1, so a lightness above about 42% usually fails.
 
-## Batch 5
+## EU batch 1: English-language driving theory tests
 
-| id | Test | Engine | Template | Region | slug | landing | suggested hue |
-|---|---|---|---|---|---|---|---|
-| jambmath | JAMB UTME Mathematics | v2 | jambeng (KaTeX like apcalcab) | NG | /jamb-mathematics | /jamb-mathematics-practice-test | 150 40% 30% |
-| jambbio | JAMB UTME Biology | v2 | jambeng | NG | /jamb-biology | /jamb-biology-practice-test | 135 30% 32% |
-| jambchem | JAMB UTME Chemistry | v2 | jambeng | NG | /jamb-chemistry | /jamb-chemistry-practice-test | 190 35% 30% |
-| jambphys | JAMB UTME Physics | v2 | jambeng | NG | /jamb-physics | /jamb-physics-practice-test | 225 30% 36% |
-| ngpolice | Nigeria Police Force constable recruitment CBT | v1 | tools/next100/pkdrive; idBase 13200, stateCode NGPOLICE, prefix NGPOL- | NG | /nigeria-police-recruitment | /nigeria-police-recruitment-practice-test | 215 45% 30% |
-| cdcfib | CDCFIB recruitment CBT (Civil Defence, Correctional, Fire, Immigration) | v1 | pkdrive; idBase 13300, stateCode NGCDCFIB, prefix NGCDCFIB- | NG | /cdcfib-recruitment | /cdcfib-recruitment-practice-test | 15 35% 32% |
-| ngarmy | Nigerian Army recruitment exam (DSSC/RRI aptitude test) | v1 | pkdrive; idBase 13400, stateCode NGARMY, prefix NGARMY- | NG | /nigerian-army-recruitment | /nigerian-army-recruitment-practice-test | 80 30% 30% |
-| ngcustoms | Nigeria Customs Service recruitment CBT | v1 | pkdrive; idBase 13500, stateCode NGCUSTOMS, prefix NGCUS- | NG | /nigeria-customs-recruitment | /nigeria-customs-recruitment-practice-test | 200 50% 30% |
-| trcnpqe | TRCN Professional Qualifying Examination | v1 | phlet (teacher licensure, v1); idBase 13600, stateCode TRCNPQE, prefix TRCN- | NG | /trcn-pqe | /trcn-pqe-practice-test | 170 30% 34% |
-| apgov | AP U.S. Government and Politics (multiple-choice section) | v2 | apush (stimulus sets) | US | /ap-us-government | /ap-us-government-practice-test | 0 35% 36% |
+Ten EU driving theory tests that the national authority offers in English (Malta's is in English
+by default). All v1, template `tools/next100/pkdrive` (a v1 driving test that also opened a new
+Tigertest region; its landing renders `ExamSampleQuestions`). Each is a new Tigertest region with
+its own country homepage, which the integrator wires (follow how `PK` was added); you only write
+your `WIRING.md` lines for it (region code, name, `inName`, hreflang tag `en-XX`, home title,
+description and lead, `faqsFor` entries).
 
-Exam-specific notes:
-- Nigeria family: banks on disk are ngfrsc (v1) and jambeng (v2); all ten of this batch join it. British spelling as used in Nigeria, naira, Nigerian names and places. Static facts only: no office-holders, no current affairs, no figures that change yearly (salaries, quotas, cut-offs). Confirm each exam body's current format from its own site or notice (jamb.gov.ng and its brochure/syllabus for 2027; npf.gov.ng / policerecruitment.gov.ng and the Police Service Commission; cdcfib.gov.ng; recruitment.army.mil.ng; customs.gov.ng; trcn.gov.ng). Where a body publishes no question count or pass mark, write a Tigertest target and say so.
-- JAMB subjects: each is one UTME subject of 40 questions out of 100 (Use of English is 60), all four subjects sharing a 2-hour clock; confirm against the current JAMB brochure. Model 40 four-option questions in 30 minutes (the pro rata share), two tests with Test 2 held out, drills by syllabus topic area. Follow the current JAMB UTME syllabus for the subject. jambmath: KaTeX, every answer computed and asserted; jambchem and jambphys: numeric answers computed and asserted, all-number options sorted and locked. No overlap with neet/jeemain/mhtcet (grep them) or each other.
-- The four recruitment CBTs (ngpolice, cdcfib, ngarmy, ngcustoms): these are general aptitude tests (English, quantitative reasoning, general knowledge and current affairs, sometimes verbal/logical reasoning). Confirm the latest exercise's pattern. To avoid colliding with each other, split the GK lanes: ngpolice takes Nigerian civics, the 1999 Constitution and policing; cdcfib takes the four services (Civil Defence, Correctional, Fire, Immigration), Nigerian geography and environment; ngarmy takes Nigerian history (pre-colonial to independence), the armed forces and Africa/ECOWAS/AU; ngcustoms takes economics, trade, ports, ECOWAS trade, and world geography. English and maths items: use fresh sentences and numbers, and grep the other three banks on disk before finalising.
-- trcnpqe: TRCN PQE for teacher registration (education theory, pedagogy, curriculum, assessment, educational psychology, the teaching profession and its ethics, Nigerian education policy such as the National Policy on Education, ICT in education). Confirm the current format (CBT, number of questions, pass mark) from trcn.gov.ng. Check against phlet, ctet, reet, uptet, ugcnet for overlap.
-- apgov: Section I only (55 questions, 80 minutes, 50% per the current CED; confirm), with the required foundational documents and Supreme Court cases as the College Board lists them; original stimuli (quantitative charts as tables, text-based excerpts written as practice texts, short quotes from public-domain founding documents allowed); add to "AP exams". Check against apush.
+| id | Test | Region | idBase | stateCode | prefix | slug | landing | suggested hue |
+|---|---|---|---|---|---|---|---|---|
+| esdgt | Spain DGT theory exam, permiso B (in English) | ES | 13700 | ESDGT | ESDGT- | /spain-driving-theory | /spain-driving-theory-test | 45 80% 34% |
+| ptimt | Portugal IMT theory exam (código), category B | PT | 13800 | PTIMT | PTIMT- | /portugal-driving-theory | /portugal-driving-theory-test | 140 55% 28% |
+| rodrpciv | Romania DRPCIV theory exam, category B | RO | 13900 | RODRPCIV | RODRP- | /romania-driving-theory | /romania-driving-theory-test | 215 70% 32% |
+| setrafik | Sweden Trafikverket knowledge test, B | SE | 14000 | SETRAFIK | SETRF- | /sweden-driving-theory | /sweden-driving-theory-test | 205 75% 34% |
+| grdriving | Greece driving theory test, category B | GR | 14100 | GRDRIVE | GRDRV- | /greece-driving-theory | /greece-driving-theory-test | 210 60% 40% |
+| dkteori | Denmark theory test (teoriprøve), category B | DK | 14200 | DKTEORI | DKTEO- | /denmark-driving-theory | /denmark-driving-theory-test | 355 70% 38% |
+| hukresz | Hungary KRESZ theory exam, category B | HU | 14300 | HUKRESZ | HUKRZ- | /hungary-driving-theory | /hungary-kresz-test | 120 45% 30% |
+| bedriving | Belgium driving theory exam, category B | BE | 14400 | BEDRIVE | BEDRV- | /belgium-driving-theory | /belgium-driving-theory-test | 48 85% 38% |
+| fitheory | Finland driving theory test, category B | FI | 14500 | FITHEORY | FITHE- | /finland-driving-theory | /finland-driving-theory-test | 220 55% 36% |
+| mttheory | Malta driving theory test, category B | MT | 14600 | MTTHEORY | MTTHE- | /malta-driving-theory | /malta-driving-theory-test | 0 65% 40% |
 
+Notes for every EU builder:
+- Confirm from the national authority (DGT, IMT, DRPCIV/DGPCI, Trafikverket, Greek Ministry of Infrastructure and Transport, Færdselsstyrelsen, KAV/KKK, GOCA/the regions in Belgium, Traficom/Ajovarma, Transport Malta) the current format: number of questions, time, pass mark, scoring (Hungary and Belgium use points; Denmark is picture-based), that English is offered, and any 2025-2026 rule changes. Record each with URL and date in sources.md; label anything from guides.
+- Rules are that country's own (Highway Code / road traffic act as in force Nov 2026), in its units (km/h, metres), right-hand traffic except Malta (left). EU-harmonised signs (Vienna Convention) but the country's own variants; signs described in words, no images. No fines, fees or demerit point amounts that change; alcohol limits only where stated in current law and labelled with the country's own figure (several have lower novice limits).
+- Write in British English (EU English usage), but the test's own terms where a candidate meets them (e.g. Spain's "permiso B", Portugal's "Código da Estrada"), glossed once.
+- Copy says the test is offered in English and lists the other languages offered; never implies affiliation with the authority. Picture or video parts (hazard perception, Denmark's photo questions) are not modelled and the landing says so.
+- Region pages: write the home copy blocks in WIRING.md in the same shape as PK's (`REGION_HOME`, `faqsFor`, hreflang). The integrator adds the routes, middleware country mapping (ISO code to region) and sitemap lines.
+- The EU family is new: grep each other's banks on disk while writing (all ten share the same harmonised rules, so near-identical items are likely; vary wording, numbers and scenarios, and keep each bank to its own country's rule details).
+
+
+## Native-language batch (LANGUAGES.md phase 1)
+
+Exams whose own language is not English, on the platform built in phase 0 (`tools/next100/LANGUAGES.md`).
+- A native exam (detheorie) is written directly in its language from the official law and
+  manuals; never draft in English and translate. A translation of an existing English exam
+  (esdgt `es`, ptimt `pt`) keeps every questionId, category, key and option order and may reword
+  stems for idiom.
+- Write `tools/next100/<id>/glossary.md` (the authority's terms) and, in `WIRING.md`, the config
+  fields: `language`, `locale`, `english` (name, shortName, fullName), `review`, and for a
+  translation the `translations.<lang>` block with `locale` and `landingPath` (and `shortName` if it
+  differs). The landing is the three-line `TranslatedExamLanding` wrapper (`samples`, `related`).
+- Validate with `validate_bank.py --lang <lang>` (a native bank) or
+  `validate_translation.py <base> <translation> --lang <lang>` (a translation).
+- Typography as in LANGUAGES.md 5.1; same house rules as every bank.

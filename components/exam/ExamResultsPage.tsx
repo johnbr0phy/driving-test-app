@@ -14,7 +14,7 @@ import { ExamConfig } from "@/lib/exams";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 
 export function ExamResultsPage({ exam }: { exam: ExamConfig }) {
-  const { routes, ui } = useLocalizedExam(exam);
+  const { exam: localized, routes, ui } = useLocalizedExam(exam);
   const testId = useExamTestParam(routes, "results");
   const results = useTestResults(testId, routes);
   const upgrade = useUpgradeFlow("results_page");
@@ -44,7 +44,7 @@ export function ExamResultsPage({ exam }: { exam: ExamConfig }) {
           </span>
         }
       />
-      <ResultsHeroDebrief results={results} onDrill={scrollToDrill} onNextLocked={() => {}} />
+      <ResultsHeroDebrief results={results} onDrill={scrollToDrill} onNextLocked={() => {}} categoryLabels={localized.categoryLabels} />
       <ResultsDebriefBody results={results} upgrade={upgrade} />
     </div>
   );

@@ -1,5 +1,7 @@
 import { getExamQuestions } from "@/lib/examData";
-import { getExamById, type ExamId } from "@/lib/exams";
+import { examBaseLanguage, getExamById, localizeExam, type ExamId } from "@/lib/exams";
+import { examLandingLocale } from "@/lib/examSeo";
+import type { Language } from "@/i18n";
 import { getCatalogEntry } from "@/lib/testCatalog";
 import { getSignIdForQuestion } from "@/lib/signImages";
 import { hasPositionDependentAnswers } from "@/lib/shuffleOptions";
@@ -56,22 +58,87 @@ function rotateKeyTo(q: Question, target: number): Question {
   };
 }
 
-export function ExamSampleQuestions({ examId, count = 6 }: { examId: ExamId; count?: number }) {
+// Headings in each language a landing is written in; English otherwise.
+const SAMPLE_COPY: Partial<Record<Language, { title: (name: string) => string; sub: (n: number, total: string) => string; answer: string; quiz: (name: string) => string }>> = {
+  en: {
+    title: (name) => `${name} sample questions and answers`,
+    sub: (n, total) => `${n} of the ${total} practice questions, one from each topic, with the answer explained.`,
+    answer: "Answer",
+    quiz: (name) => `${name} sample questions`,
+  },
+  es: {
+    title: (name) => `Preguntas de ejemplo del ${name} con respuestas`,
+    sub: (n, total) => `${n} de las ${total} preguntas de práctica, una de cada tema, con la respuesta explicada.`,
+    answer: "Respuesta",
+    quiz: (name) => `Preguntas de ejemplo: ${name}`,
+  },
+  de: {
+    title: (name) => `${name}: Beispielfragen mit Antworten`,
+    sub: (n, total) => `${n} der ${total} Übungsfragen, eine aus jedem Thema, mit erklärter Antwort.`,
+    answer: "Antwort",
+    quiz: (name) => `${name}: Beispielfragen`,
+  },
+  fr: {
+    title: (name) => `${name}\u00a0: exemples de questions et réponses`,
+    sub: (n, total) => `${n} des ${total} questions d'entraînement, une par thème, avec la réponse expliquée.`,
+    answer: "Réponse",
+    quiz: (name) => `${name}\u00a0: exemples de questions`,
+  },
+  it: {
+    title: (name) => `${name}: domande di esempio con risposte`,
+    sub: (n, total) => `${n} delle ${total} domande di esercitazione, una per argomento, con la risposta spiegata.`,
+    answer: "Risposta",
+    quiz: (name) => `${name}: domande di esempio`,
+  },
+  pl: {
+    title: (name) => `${name}: przykładowe pytania z odpowiedziami`,
+    sub: (n, total) => `${n} z ${total} pytań treningowych, po jednym z każdego tematu, z wyjaśnioną odpowiedzią.`,
+    answer: "Odpowiedź",
+    quiz: (name) => `${name}: przykładowe pytania`,
+  },
+  nl: {
+    title: (name) => `${name}: voorbeeldvragen met antwoorden`,
+    sub: (n, total) => `${n} van de ${total} oefenvragen, één per onderwerp, met uitleg bij het antwoord.`,
+    answer: "Antwoord",
+    quiz: (name) => `${name}: voorbeeldvragen`,
+  },
+  pt: {
+    title: (name) => `${name}: perguntas de exemplo com respostas`,
+    sub: (n, total) => `${n} das ${total} perguntas de treino, uma de cada tema, com a resposta explicada.`,
+    answer: "Resposta",
+    quiz: (name) => `${name}: perguntas de exemplo`,
+  },
+};
+
+/**
+ * `lang` picks the bank (a translated one when registered, else the base
+ * bank) and the headings; it defaults to the exam's base language, so a
+ * native exam's landing shows its own questions with no prop.
+ */
+export function ExamSampleQuestions({ examId, count = 6, lang }: { examId: ExamId; count?: number; lang?: Language }) {
   const exam = getExamById(examId);
   const test = getCatalogEntry(examId);
   if (!exam || !test) return null;
-  const sample = pickSampleQuestions(getExamQuestions(examId), count);
+  const language = lang ?? examBaseLanguage(exam);
+  const sample = pickSampleQuestions(getExamQuestions(examId, language), count);
   if (sample.length === 0) return null;
+  const copy = SAMPLE_COPY[language] ?? SAMPLE_COPY.en!;
+  // English pages keep the catalog's English name; other languages use the exam's own.
+  const shortName = language === "en" ? test.shortName : localizeExam(exam, language).shortName;
+  const locale = examLandingLocale(examId, language);
+  const total = test.questions.toLocaleString(locale);
+  const landing = language === examBaseLanguage(exam) ? exam.landingPath ?? test.href : exam.translations?.[language]?.landingPath ?? test.href;
 
   const options = (q: Question) => [q.optionA, q.optionB, q.optionC, q.optionD];
   const key = (q: Question) => Math.max(0, LETTERS.indexOf(q.correctAnswer as (typeof LETTERS)[number]));
-  const url = `${siteUrl}${test.href}`;
+  const url = `${siteUrl}${landing}`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Quiz",
     "@id": `${url}#sample-questions`,
-    name: `${test.shortName} sample questions`,
-    about: test.name,
+    name: copy.quiz(shortName),
+    about: language === "en" ? test.name : localizeExam(exam, language).name,
+    inLanguage: locale,
     educationalLevel: "beginner",
     isAccessibleForFree: true,
     isPartOf: { "@id": `${url}#webpage` },
@@ -92,11 +159,10 @@ export function ExamSampleQuestions({ examId, count = 6 }: { examId: ExamId; cou
     <section aria-labelledby="sample-questions" className="max-w-3xl mx-auto px-6 py-16 md:py-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h2 id="sample-questions" className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">
-        {test.shortName} sample questions and answers
+        {copy.title(shortName)}
       </h2>
       <p className="text-gray-600 dark:text-gray-300 text-center mb-10">
-        {sample.length} of the {test.questions.toLocaleString("en-US")} practice questions, one from each topic, with the
-        answer explained.
+        {copy.sub(sample.length, total)}
       </p>
       <ol className="space-y-6">
         {sample.map((q, n) => (
@@ -120,7 +186,7 @@ export function ExamSampleQuestions({ examId, count = 6 }: { examId: ExamId; cou
               ))}
             </ul>
             <p className="text-gray-700 dark:text-gray-200">
-              <strong className="text-gray-900 dark:text-gray-50">Answer: {LETTERS[key(q)]}.</strong>{" "}
+              <strong className="text-gray-900 dark:text-gray-50">{copy.answer}: {LETTERS[key(q)]}.</strong>{" "}
               {q.explanation}
             </p>
           </li>

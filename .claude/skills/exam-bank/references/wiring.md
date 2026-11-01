@@ -45,7 +45,9 @@ shared one (and check the other exams) or add a field to `ExamConfig`. The share
 
 ## 4. `i18n/en.ts`, `es.ts`, `ko.ts`, `vi.ts`, `zh.ts`
 - Add each category key with its English label to the category label map in all five files
-  (the other languages keep English labels for exam categories).
+  (the other languages keep English labels for exam categories). The newer dictionaries
+  (`de`, `fr`, `it`, `pl`, `nl`, `pt`) carry no category names: `createT` falls back to English,
+  and results and stats read the exam's own `categoryLabels` first.
 
 ## 5. `app/globals.css`
 - Add a `[data-theme="<id>"]` block after the last exam theme with the ten `--brand*` variables.
@@ -111,6 +113,35 @@ node_modules. Chromium is preinstalled in cloud sessions.)
 ## 12. Mascots (optional, later)
 `lib/tigerAssets.ts` lists exams with finished art under `public/tigers/<id>/`. New exams fall
 back to the DMV tiger automatically; add the id only once eight expressions exist.
+
+## Native-language exam (a bank written in German, Italian, Polish...)
+A native exam is a normal v1 exam whose base bank and base copy are in its own language
+(LANGUAGES.md in `tools/next100/` is the plan). Everything above applies, plus:
+- `ExamConfig`: `language: "de"`, `locale: "de-DE"`, `english: { name, shortName, fullName }`
+  (the English names every English surface uses: catalog, `/tests`, All tests menu, llms.txt,
+  admin), `review: { de: "model" }` (`"machine"` for a machine translation, `"native"` once a paid
+  native reviewer is done). `name`, `shortName`, `examLabel`, `fullName`, `categoryLabels`, `copy`
+  and set names are in the base language. DMV-style sets: `testSets(idBase, n, size)`, whose names
+  come from `TEST_SET_NAMES[language]`.
+- Its pages run in its language whatever the person chose (`lib/pageLanguage.ts`); an English
+  version later is `translations.en` with its own landing, never a second exam id.
+- Landing: `landingPath` under the country path (`/de/fuehrerschein-theorie-test`), the
+  three-line `TranslatedExamLanding` wrapper with `lang` set to the base language and content in
+  `lib/landings/<id>.<lang>.json` (`facts.source` gives the source link in that language); pass
+  `samples` (and import `@/lib/banks/<id>` at the top of the page) and `related`. Register the
+  landing JSON in `lib/landingContent.ts` so the country homepage can quote its facts answer.
+- Region: `TEST_REGIONS[<id>]` in `lib/region.ts`; a new country also needs a `REGIONS` entry with
+  `lang` and `locale`, `regionFromCountry`, `REGION_HOME` written in that language, `AUTHORITY`
+  in `components/home/HomePage.tsx`, `FLAGS` in `components/CountryPills.tsx`, strings in
+  `components/home/homeCopy.ts` for a language with no country page yet, `app/<cc>/page.tsx` and
+  `app/<cc>/layout.tsx` with `lang="<lang>"`.
+- Per-language tables: `EXAM_UI` (`lib/examUi.ts`), `COPY` (`ExamLandingHero`), `SAMPLE_COPY`
+  (`ExamSampleQuestions`), `RELATED_COPY` (`ExamRelatedTests`), `CARD_FOOTERS` (`lib/shareCards.ts`),
+  the shuffle guard (`lib/shuffleOptions.ts`) and `LANG_RULES` in `validate_bank.py`. All six EU
+  languages are in place; a new language needs a line in each and an `i18n/<lang>.ts`.
+- Validate with `validate_bank.py --lang <lang>` (length limits scale per language); a
+  translation of an existing bank with `validate_translation.py <base> <translation> --lang <lang>`.
+- `EXAM_FACTS[<id>]` stays English (the English landing and llms.txt read it).
 
 ## 13. Verify before committing
 ```bash

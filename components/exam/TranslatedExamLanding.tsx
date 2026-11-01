@@ -1,51 +1,63 @@
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
 import { ExternalLink, Monitor, Smartphone } from "lucide-react";
 import type { Language } from "@/i18n";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { EXAM_FACTS } from "@/lib/examFacts";
 import { EXAM_LANDINGS_UPDATED_AT } from "@/lib/seoDates";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
-import { getExamById } from "@/lib/exams";
-import { examLandingAlternates } from "@/lib/examSeo";
+import { examBaseLanguage, getExamById, localizeExam, type ExamId } from "@/lib/exams";
+import { examLandingAlternates, examLandingLocale } from "@/lib/examSeo";
+import { regionOfTest } from "@/lib/region";
+import type { TranslatedLandingContent } from "@/lib/landingContent";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
-// A registry exam's landing page in another language (/es/examen-cna,
-// /vi/..., /ko/...), rendered from one content file per exam and language in
-// lib/landings/. The app behind it is the same /<slug>/* routes in that
-// language (ExamConfig.translations); the CTA switches the app language.
-// app/es/examen-practica-cdl is the hand-written original this follows.
+export type { TranslatedLandingContent };
 
-export interface TranslatedLandingContent {
-  metaTitle: string;
-  metaDescription: string;
-  keywords: string;
-  breadcrumb: { home: string; allTests: string; current: string };
-  h1: string;
-  subtitle: string;
-  facts: { h2: string; answer: string; tigertest: string; rows: { label: string; value: string }[]; footnote: string };
-  howItWorks: { h2: string; cards: { h3: string; p: string }[] };
-  topics: { h2: string; p: string; items: string[] };
-  howToPass: { h2: string; steps: { h3: string; p: string }[] };
-  faqTitle: string;
-  faqs: { q: string; a: string }[];
-  finalCta: { h2: string; p: string };
-}
+// A registry exam's landing page in a language other than English: a
+// translation's landing (/es/examen-cna, /vi/..., /es/test-dgt-permiso-b) or
+// a native-language exam's own landing (/de/fuehrerschein-theorie-test, where
+// `lang` is the exam's base language and the URL is its landingPath).
+// Rendered from one content file per exam and language in lib/landings/. The
+// app behind it is the same /<slug>/* routes in that language; the CTA
+// switches the app language. app/es/examen-practica-cdl is the hand-written
+// original this follows.
+// Optional sections: `samples` (six bank questions with a Quiz node; the page
+// must import its bank module, "@/lib/banks/<id>", first) and `related` (the
+// exam's hub group and its country page).
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
-const LOCALES: Partial<Record<Language, string>> = { es: "es-US", vi: "vi-US", ko: "ko-US" };
+
+// Offers on an EU exam's page are in euros (or the country's own currency).
+const CURRENCY: Record<string, string> = {
+  ES: "EUR", PT: "EUR", DE: "EUR", GR: "EUR", BE: "EUR", FI: "EUR", MT: "EUR", IE: "EUR",
+  SE: "SEK", DK: "DKK", HU: "HUF", RO: "RON",
+};
 
 function urls(examId: string, lang: Language) {
-  const exam = getExamById(examId)!;
-  const path = exam.translations?.[lang as Exclude<Language, "en">]?.landingPath;
-  if (!path) throw new Error(`No ${lang} landing for ${examId}`);
-  return { exam, url: `${siteUrl}${path}` };
+  const found = landingUrls(examId, lang);
+  // A landing written before its exam or translation is wired (a builder's
+  // page ahead of the ExamConfig) is a 404, not a failed build.
+  if (!found) notFound();
+  return found;
+}
+
+function landingUrls(examId: string, lang: Language) {
+  const exam = getExamById(examId);
+  if (!exam) return null;
+  const path = lang === examBaseLanguage(exam) ? exam.landingPath : exam.translations?.[lang]?.landingPath;
+  return path ? { exam, url: `${siteUrl}${path}` } : null;
 }
 
 export function translatedLandingMetadata(examId: string, lang: Language, c: TranslatedLandingContent): Metadata {
-  const { url } = urls(examId, lang);
+  // Metadata is built when the page module loads, where notFound() cannot run.
+  const found = landingUrls(examId, lang);
+  if (!found) return { title: c.metaTitle, robots: { index: false, follow: false } };
+  const { url } = found;
   return {
     title: c.metaTitle,
     description: c.metaDescription,
@@ -58,7 +70,7 @@ export function translatedLandingMetadata(examId: string, lang: Language, c: Tra
       images: [{ url: shareImageUrl(examId, lang), width: 1200, height: 630, alt: c.h1 }],
       siteName: "Tigertest",
       type: "website",
-      locale: (LOCALES[lang] ?? lang).replace("-", "_"),
+      locale: examLandingLocale(examId, lang).replace("-", "_"),
     },
     twitter: { card: "summary_large_image", images: [shareImageUrl(examId, lang)], title: c.metaTitle, description: c.metaDescription },
   };
@@ -68,14 +80,21 @@ export function TranslatedExamLanding({
   examId,
   lang,
   content: c,
+  samples = false,
+  related = false,
 }: {
   examId: string;
   lang: Language;
   content: TranslatedLandingContent;
+  samples?: boolean;
+  related?: boolean;
 }) {
   const { exam, url } = urls(examId, lang);
+  const localized = localizeExam(exam, lang);
   const facts = EXAM_FACTS[examId];
-  const inLanguage = LOCALES[lang] ?? lang;
+  const source = c.facts.source ?? facts?.source;
+  const inLanguage = examLandingLocale(examId, lang);
+  const currency = CURRENCY[regionOfTest(examId)] ?? "USD";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -90,7 +109,7 @@ export function TranslatedExamLanding({
         dateModified: EXAM_LANDINGS_UPDATED_AT,
         isPartOf: { "@id": `${siteUrl}/#website` },
         publisher: { "@id": ORGANIZATION_ID },
-        ...(facts?.source ? { citation: facts.source.url } : {}),
+        ...(source ? { citation: source.url } : {}),
       },
       {
         "@type": "WebApplication",
@@ -100,7 +119,7 @@ export function TranslatedExamLanding({
         inLanguage,
         applicationCategory: "EducationalApplication",
         operatingSystem: "Any",
-        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+        offers: { "@type": "Offer", price: "0", priceCurrency: currency },
         publisher: { "@id": ORGANIZATION_ID },
       },
       {
@@ -124,7 +143,7 @@ export function TranslatedExamLanding({
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">{c.h1}</h1>
-          <ExamLandingHero dashboardHref={dashboardHref} shortName={exam.shortName} lang={lang} subtitle={c.subtitle} shots={shots} />
+          <ExamLandingHero dashboardHref={dashboardHref} shortName={localized.shortName} lang={lang} subtitle={c.subtitle} shots={shots} />
         </div>
       </div>
 
@@ -144,16 +163,16 @@ export function TranslatedExamLanding({
           </dl>
           <p className="mt-5 text-sm text-gray-500 dark:text-gray-400">
             {c.facts.footnote}
-            {facts?.source && (
+            {source && (
               <>
                 {" "}
                 <a
-                  href={facts.source.url}
+                  href={source.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-0.5 text-brand-dark hover:underline"
                 >
-                  {facts.source.name}
+                  {source.name}
                   <ExternalLink className="h-3 w-3" aria-hidden="true" />
                 </a>
                 .
@@ -221,6 +240,8 @@ export function TranslatedExamLanding({
         </div>
       </div>
 
+      {samples && <ExamSampleQuestions examId={examId as ExamId} lang={lang} />}
+
       {/* FAQ */}
       <div className="bg-gray-50 dark:bg-gray-950">
         <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
@@ -235,6 +256,8 @@ export function TranslatedExamLanding({
           </div>
         </div>
       </div>
+
+      {related && <ExamRelatedTests examId={examId} lang={lang} />}
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">

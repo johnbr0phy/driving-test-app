@@ -1,30 +1,50 @@
 // Which country's tests a visitor sees first. Each country has its own
 // indexable homepage: the US at "/", the others at /uk, /ie, /ca, /au, /nz, /in,
-// /ph, /my, /sg, /hk, /ae, /za, /ng, /ke and /pk. A view
+// /ph, /my, /sg, /hk, /ae, /za, /ng, /ke, /pk,
+// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt and /de. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
 // first visit and sends a visitor from any other country we cover from "/" to their
 // country's page; the CountryPills change it.
 
-export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK";
+import type { Language } from "@/i18n";
 
-export const REGIONS: { code: Region; name: string; short: string; inName: string }[] = [
-  { code: "US", name: "United States", short: "US", inName: "the US" },
-  { code: "CA", name: "Canada", short: "CA", inName: "Canada" },
-  { code: "UK", name: "United Kingdom", short: "UK", inName: "the UK" },
-  { code: "IE", name: "Ireland", short: "IE", inName: "Ireland" },
-  { code: "AU", name: "Australia", short: "AU", inName: "Australia" },
-  { code: "NZ", name: "New Zealand", short: "NZ", inName: "New Zealand" },
-  { code: "IN", name: "India", short: "IN", inName: "India" },
-  { code: "PH", name: "Philippines", short: "PH", inName: "the Philippines" },
-  { code: "MY", name: "Malaysia", short: "MY", inName: "Malaysia" },
-  { code: "SG", name: "Singapore", short: "SG", inName: "Singapore" },
-  { code: "HK", name: "Hong Kong", short: "HK", inName: "Hong Kong" },
-  { code: "AE", name: "United Arab Emirates", short: "UAE", inName: "the UAE" },
-  { code: "ZA", name: "South Africa", short: "ZA", inName: "South Africa" },
-  { code: "NG", name: "Nigeria", short: "NG", inName: "Nigeria" },
-  { code: "KE", name: "Kenya", short: "KE", inName: "Kenya" },
-  { code: "PK", name: "Pakistan", short: "PK", inName: "Pakistan" },
+export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE";
+
+/**
+ * Every country with its own homepage. `lang` is the language its homepage is
+ * written in and `locale` its BCP 47 tag (hreflang, og:locale, JSON-LD and
+ * dates). Spain and Portugal stay English until their Spanish and Portuguese
+ * exams ship; Germany is German from day one.
+ */
+export const REGIONS: { code: Region; name: string; short: string; inName: string; lang: Language; locale: string }[] = [
+  { code: "US", name: "United States", short: "US", inName: "the US", lang: "en", locale: "en-US" },
+  { code: "CA", name: "Canada", short: "CA", inName: "Canada", lang: "en", locale: "en-CA" },
+  { code: "UK", name: "United Kingdom", short: "UK", inName: "the UK", lang: "en", locale: "en-GB" },
+  { code: "IE", name: "Ireland", short: "IE", inName: "Ireland", lang: "en", locale: "en-IE" },
+  { code: "AU", name: "Australia", short: "AU", inName: "Australia", lang: "en", locale: "en-AU" },
+  { code: "NZ", name: "New Zealand", short: "NZ", inName: "New Zealand", lang: "en", locale: "en-NZ" },
+  { code: "IN", name: "India", short: "IN", inName: "India", lang: "en", locale: "en-IN" },
+  { code: "PH", name: "Philippines", short: "PH", inName: "the Philippines", lang: "en", locale: "en-PH" },
+  { code: "MY", name: "Malaysia", short: "MY", inName: "Malaysia", lang: "en", locale: "en-MY" },
+  { code: "SG", name: "Singapore", short: "SG", inName: "Singapore", lang: "en", locale: "en-SG" },
+  { code: "HK", name: "Hong Kong", short: "HK", inName: "Hong Kong", lang: "en", locale: "en-HK" },
+  { code: "AE", name: "United Arab Emirates", short: "UAE", inName: "the UAE", lang: "en", locale: "en-AE" },
+  { code: "ZA", name: "South Africa", short: "ZA", inName: "South Africa", lang: "en", locale: "en-ZA" },
+  { code: "NG", name: "Nigeria", short: "NG", inName: "Nigeria", lang: "en", locale: "en-NG" },
+  { code: "KE", name: "Kenya", short: "KE", inName: "Kenya", lang: "en", locale: "en-KE" },
+  { code: "PK", name: "Pakistan", short: "PK", inName: "Pakistan", lang: "en", locale: "en-PK" },
+  { code: "ES", name: "Spain", short: "ES", inName: "Spain", lang: "en", locale: "en-ES" },
+  { code: "PT", name: "Portugal", short: "PT", inName: "Portugal", lang: "en", locale: "en-PT" },
+  { code: "RO", name: "Romania", short: "RO", inName: "Romania", lang: "en", locale: "en-RO" },
+  { code: "SE", name: "Sweden", short: "SE", inName: "Sweden", lang: "en", locale: "en-SE" },
+  { code: "GR", name: "Greece", short: "GR", inName: "Greece", lang: "en", locale: "en-GR" },
+  { code: "DK", name: "Denmark", short: "DK", inName: "Denmark", lang: "en", locale: "en-DK" },
+  { code: "HU", name: "Hungary", short: "HU", inName: "Hungary", lang: "en", locale: "en-HU" },
+  { code: "BE", name: "Belgium", short: "BE", inName: "Belgium", lang: "en", locale: "en-BE" },
+  { code: "FI", name: "Finland", short: "FI", inName: "Finland", lang: "en", locale: "en-FI" },
+  { code: "MT", name: "Malta", short: "MT", inName: "Malta", lang: "en", locale: "en-MT" },
+  { code: "DE", name: "Germany", short: "DE", inName: "Germany", lang: "de", locale: "de-DE" },
 ];
 
 /** The chosen region, e.g. "UK". */
@@ -56,6 +76,19 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     case "NG": return "NG";
     case "KE": return "KE";
     case "PK": return "PK";
+    case "ES": return "ES";
+    case "PT": return "PT";
+    case "RO": return "RO";
+    case "SE": return "SE";
+    case "GR": return "GR";
+    case "DK": return "DK";
+    case "HU": return "HU";
+    case "BE": return "BE";
+    case "FI": return "FI";
+    case "MT": return "MT";
+    // Germany only: Austria, Switzerland, Luxembourg and Liechtenstein have
+    // their own tests and rules, so they stay unmapped.
+    case "DE": return "DE";
     default: return null;
   }
 }
@@ -65,9 +98,8 @@ export function regionHomePath(r: Region): string {
   return r === "US" ? "/" : `/${r.toLowerCase()}`;
 }
 
-/** hreflang for each country's homepage, the US page doubling as the default. */
-export const REGION_HREFLANG: Record<Region, string> = { US: "en-US", CA: "en-CA", UK: "en-GB", AU: "en-AU", IN: "en-IN", IE: "en-IE", NZ: "en-NZ",
-  PH: "en-PH", MY: "en-MY", SG: "en-SG", HK: "en-HK", AE: "en-AE", ZA: "en-ZA", NG: "en-NG", KE: "en-KE", PK: "en-PK" };
+/** hreflang for each country's homepage (its locale), the US page doubling as the default. */
+export const REGION_HREFLANG = Object.fromEntries(REGIONS.map((r) => [r.code, r.locale])) as Record<Region, string>;
 
 export function regionInfo(r: Region) {
   return REGIONS.find((x) => x.code === r)!;
@@ -88,6 +120,8 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
   nzroad: "NZ",
   phlto: "PH", phcse: "PH", phlet: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", zak53: "ZA", ngfrsc: "NG", kentsa: "KE", pkdrive: "PK",
+  detheorie: "DE",
+  esdgt: "ES", ptimt: "PT", rodrpciv: "RO", setrafik: "SE", grdriving: "GR", dkteori: "DK", hukresz: "HU", bedriving: "BE", fitheory: "FI", mttheory: "MT",
   jambeng: "NG", jambmath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -252,6 +286,96 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     cta: { label: "Driving licence test", href: "/pakistan-driving-licence-test" },
     testsTitle: "Driving licence sign test",
     testsSub: "200 questions on Pakistan's road signs and traffic rules, in km/h for left-hand traffic. Four full 50-question tests.",
+  },
+  ES: {
+    title: "Free Spain DGT Theory Test Practice in English | Tigertest",
+    description: "Free practice in English for the Spanish DGT theory exam (permiso B): 200 original questions on Spanish traffic rules, every answer explained. No account needed.",
+    lead: "Practise in English for the DGT theory exam for your Spanish car licence. Original questions on signs, priority, speed limits and the 2026 rules, every answer explained. No signup.",
+    cta: { label: "DGT theory test", href: "/spain-driving-theory-test" },
+    testsTitle: "DGT theory exam (permiso B)",
+    testsSub: "200 questions on the Spanish rules of the road, in km/h for right-hand traffic. Six full 30-question tests, 27 to pass.",
+  },
+  PT: {
+    title: "Free Portugal Driving Theory Test Practice in English | Tigertest",
+    description: "Free practice in English for Portugal's IMT driving theory exam (exame de código), category B: 200 original questions on the Código da Estrada, every answer explained. No account needed.",
+    lead: "Practise in English for the exame de código, the IMT theory exam for a car licence. Original questions on signs, priority, roundabouts, speed limits and safe driving, every answer explained. No signup.",
+    cta: { label: "IMT theory exam", href: "/portugal-driving-theory-test" },
+    testsTitle: "IMT driving theory exam",
+    testsSub: "200 questions on the Código da Estrada, in km/h for right-hand traffic. Six full 30-question tests, 27 to pass.",
+  },
+  RO: {
+    title: "Free Romania Driving Theory Test Practice in English | Tigertest",
+    description: "Free practice in English for the Romanian category B driving theory exam: 200 original questions on the traffic code, seven 26-question mock tests, every answer explained. No account needed.",
+    lead: "Practise in English for the DRPCIV category B theory exam. Original questions on Romanian priority rules, trams, signs, speed limits and parking, every answer explained. No signup.",
+    cta: { label: "Romania theory test", href: "/romania-driving-theory-test" },
+    testsTitle: "Category B theory exam",
+    testsSub: "200 questions on the Romanian traffic code, in km/h for right-hand traffic. Seven 26-question tests, 22 to pass.",
+  },
+  SE: {
+    title: "Free Sweden Driving Theory Test Practice in English | Tigertest",
+    description: "Free practice in English for the Swedish driving theory test (kunskapsprov B): 200 original questions on Swedish traffic rules, every answer explained. No account needed.",
+    lead: "Practise in English for Trafikverket's theory test, the knowledge test for a Swedish B licence. Original questions on right of way, signs, speed, winter driving and safety, every answer explained. No signup.",
+    cta: { label: "Theory test", href: "/sweden-driving-theory-test" },
+    testsTitle: "Driving theory test (kunskapsprov B)",
+    testsSub: "200 questions on Swedish traffic rules, in km/h for right-hand traffic. The real test has 65 scored questions and you need 52 right.",
+  },
+  GR: {
+    title: "Free Greece Driving Theory Test Practice in English | Tigertest",
+    description: "Free Greek driving theory test practice in English: 200 original category B questions on the Greek Highway Code and road signs, every answer explained. No account needed.",
+    lead: "Practise in English for the category B theory test before your Greek driving licence. Original questions on Greek road signs, priority, the 2025 Highway Code and safe driving, every answer explained. No signup.",
+    cta: { label: "Greek theory test", href: "/greece-driving-theory-test" },
+    testsTitle: "Driving theory test (category B)",
+    testsSub: "200 questions on the Greek Highway Code, in km/h for right-hand traffic. Six full 30-question tests, 29 to pass.",
+  },
+  DK: {
+    title: "Free Denmark Theory Test Practice in English | Tigertest",
+    description: "Free Danish driving theory test (teoriprøve) practice in English: 200 original questions on Danish road rules, every answer explained. No account needed.",
+    lead: "Practise in English for the teoriprøve, the theory test for a Danish category B car licence. Original questions on give way, roundabouts, cyclists, motorways and parking, every answer explained. No signup.",
+    cta: { label: "Danish theory test", href: "/denmark-driving-theory-test" },
+    testsTitle: "Theory test (teoriprøve)",
+    testsSub: "200 questions on Danish road rules, in km/h for right-hand traffic. Eight 25-question tests, 20 to pass like the real test.",
+  },
+  HU: {
+    title: "Free Hungary KRESZ Theory Test Practice in English | Tigertest",
+    description: "Free KRESZ theory exam practice for Hungary in English: 200 original questions on the Hungarian Highway Code, every answer explained. No account needed.",
+    lead: "Practise in English for the KRESZ theory exam (Közlekedési alapismeretek) before your category B driving test. Original questions on Hungarian signs, the right-hand rule, trams, speed limits and level crossings, every answer explained. No signup.",
+    cta: { label: "KRESZ theory test", href: "/hungary-kresz-test" },
+    testsTitle: "KRESZ theory exam",
+    testsSub: "200 questions on the Hungarian Highway Code, in km/h for right-hand traffic. Three full 55-question tests; the real exam needs 65 of 75 points.",
+  },
+  BE: {
+    title: "Free Belgium Driving Theory Test Practice | Tigertest",
+    description: "Free Belgian driving theory practice in English: 200 original questions on the Highway Code at the real 41/50 pass mark, every answer explained. No account needed.",
+    lead: "Practise in English for the category B theory exam in Flanders, Wallonia and Brussels. Original questions on priority to the right, signs, speed limits and parking, every answer explained. No signup.",
+    cta: { label: "Theory exam", href: "/belgium-driving-theory-test" },
+    testsTitle: "Category B theory exam",
+    testsSub: "200 questions on the Belgian Highway Code, in km/h for right-hand traffic. Four full 50-question tests, 41 to pass.",
+  },
+  FI: {
+    title: "Free Finland Driving Theory Test Practice in English | Tigertest",
+    description: "Free practice in English for the Finnish category B theory test (teoriakoe): 200 original questions on Finnish traffic rules and signs, every answer explained. No account needed.",
+    lead: "Practise in English for the Finnish theory test, the first step to a category B licence. Original questions on giving way, signs, parking and winter driving, every answer explained. No signup.",
+    cta: { label: "Finnish theory test", href: "/finland-driving-theory-test" },
+    testsTitle: "Category B theory test",
+    testsSub: "200 questions on the Finnish Road Traffic Act, in km/h for right-hand traffic. Four full 50-question tests, 43 to pass.",
+  },
+  // Written in German (REGIONS[].lang). The CTA shows once detheorie is in
+  // the catalog (HomePage hides a CTA whose test is not listed yet).
+  DE: {
+    title: "Führerschein Theorie kostenlos üben | Tigertest",
+    description: "Kostenlose Übungstests für die Theorieprüfung Klasse B: eigene Fragen zu StVO, Vorfahrt und Verkehrszeichen, jede Antwort erklärt. Ohne Anmeldung.",
+    lead: "Übe für die theoretische Führerscheinprüfung Klasse B. Eigene Fragen zu Vorfahrt, Verkehrszeichen, Geschwindigkeit und Gefahrenlehre nach der StVO, jede Antwort erklärt. Ohne Anmeldung.",
+    cta: { label: "Führerschein-Theorie", href: "/de/fuehrerschein-theorie-test" },
+    testsTitle: "Theorieprüfung Klasse B",
+    testsSub: "Fragen nach StVO und Fahrerlaubnis-Verordnung, in km/h für den Rechtsverkehr. Videofragen und Fehlerpunkte werden nicht nachgebildet.",
+  },
+  MT: {
+    title: "Free Malta Driving Theory Test Practice | Tigertest",
+    description: "Free driving theory test practice for Malta: 200 original questions on Maltese road rules and signs, every answer explained. No account needed.",
+    lead: "Practise for the Transport Malta theory test for your car licence. Original questions on signs, roundabouts, speed limits and safe driving, every answer explained. No signup.",
+    cta: { label: "Theory test", href: "/malta-driving-theory-test" },
+    testsTitle: "Driving theory test",
+    testsSub: "200 questions on Malta's road rules, in km/h for left-hand traffic. Five full 35-question tests, 30 to pass.",
   },
 };
 

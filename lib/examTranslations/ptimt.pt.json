@@ -1,0 +1,50 @@
+{
+  "landingPath": "/pt/testes-codigo-imt",
+  "locale": "pt-PT",
+  "name": "Testes de Código IMT",
+  "shortName": "Código IMT",
+  "examLabel": "Exame de código IMT",
+  "fullName": "exame teórico de condução do IMT (exame de código), categoria B",
+  "trainingSets": {
+    "1": {
+      "name": "Sinais e marcas rodoviárias",
+      "weightLabel": "9 das 30 perguntas do teste"
+    },
+    "2": {
+      "name": "Prioridade, carta e acidentes",
+      "weightLabel": "8 das 30 perguntas do teste"
+    },
+    "3": {
+      "name": "Velocidade, ultrapassagem e estacionamento",
+      "weightLabel": "7 das 30 perguntas do teste"
+    },
+    "4": {
+      "name": "O condutor e o veículo",
+      "weightLabel": "6 das 30 perguntas do teste"
+    }
+  },
+  "categoryLabels": {
+    "ptSigns": "Sinais de trânsito",
+    "ptMarkings": "Marcas rodoviárias, sinais luminosos e sinais dos agentes",
+    "ptPriority": "Prioridade, cruzamentos e rotundas",
+    "ptSpeed": "Velocidade, distâncias e ultrapassagem",
+    "ptParking": "Paragem, estacionamento e autoestradas",
+    "ptDriver": "Álcool, fadiga e distrações",
+    "ptVehicle": "Cintos, crianças, luzes e equipamento",
+    "ptLicence": "Carta, documentos e acidentes"
+  },
+  "copy": {
+    "guestPrompt": "para guardar o progresso nos testes de código e ver todas as perguntas em que errou",
+    "trainingHeading": "Treine por tema do Código da Estrada",
+    "trainingSub": "Quatro conjuntos sobre as regras que saem no exame de código do IMT. Correção imediata, e as perguntas erradas voltam até as dominar.",
+    "testsHeading": "Testes de simulação · 30 perguntas como no exame real, 27 para passar",
+    "heroSubs": [
+      "Quatro conjuntos por tema, seis testes completos. Sinais e prioridade são o que mais pesa.",
+      "Domine cada conjunto e depois faça um teste.",
+      "Já vai a meio. Experimente um teste de simulação.",
+      "Corrija os erros e repita o teste.",
+      "Tudo feito. Marque o seu exame de código."
+    ],
+    "sourceLine": "Com base no Código da Estrada e no programa da prova teórica do IMT. Perguntas originais; 30 por teste, 27 para passar, como no exame real."
+  }
+}

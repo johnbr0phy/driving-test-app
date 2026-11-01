@@ -5,6 +5,7 @@ import { Check, Link2, Share2 } from "lucide-react";
 import { JohnFace } from "@/components/JohnFace";
 import { isInternalBrowser } from "@/lib/internal";
 
+const SKIP_WAIT = 3;
 const MESSAGE = "I've been practicing on Tigertest. Free practice tests, worth a look:";
 
 /** John's "tell a friend" ask, shown in place of a question in training sets
@@ -18,6 +19,9 @@ export function SharePromptStep({
 }) {
   const [canShare, setCanShare] = useState(false);
   const [done, setDone] = useState<null | "share" | "copy">(null);
+  // Keep practicing unlocks after SKIP_WAIT seconds, so the ask gets read
+  // instead of tapped away; sharing is open from the start.
+  const [wait, setWait] = useState(SKIP_WAIT);
   const heading = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
@@ -27,6 +31,19 @@ export function SharePromptStep({
   }, []);
 
   // Tagged so a friend's first visit counts as "Friend's link" (lib/funnel.ts visitSource).
+  useEffect(() => {
+    if (wait <= 0) return;
+    const t = setTimeout(() => setWait((w) => w - 1), 1000);
+    return () => clearTimeout(t);
+  }, [wait]);
+  const locked = wait > 0 && !done;
+  // One smooth fill: start empty, then grow to full over the whole wait.
+  const [filling, setFilling] = useState(false);
+  useEffect(() => {
+    const f = requestAnimationFrame(() => setFilling(true));
+    return () => cancelAnimationFrame(f);
+  }, []);
+
   const url = `${typeof window !== "undefined" ? window.location.origin : "https://tigertest.io"}/?utm_source=friend`;
 
   const count = (how: "share" | "copy") => {
@@ -84,10 +101,22 @@ export function SharePromptStep({
       <button
         type="button"
         onClick={onSkip}
-        className={`${done ? "" : "mt-3 "}w-full h-11 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 inline-flex items-center justify-center gap-2`}
+        disabled={locked}
+        aria-disabled={locked}
+        className={`${done ? "" : "mt-3 "}relative overflow-hidden w-full h-11 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold text-gray-700 dark:text-gray-200 enabled:hover:bg-gray-50 dark:enabled:hover:bg-gray-800 disabled:text-gray-400 dark:disabled:text-gray-500 disabled:cursor-default inline-flex items-center justify-center gap-2`}
       >
-        {done && <Check className="h-4 w-4" aria-hidden="true" />}
-        {done ? "Back to the questions" : "Keep practicing"}
+        {!done && (
+          // Fills left to right over the wait, then the button is live.
+          <span
+            aria-hidden="true"
+            className="absolute inset-y-0 left-0 bg-gray-100 dark:bg-gray-800 motion-reduce:hidden"
+            style={{ width: locked && filling ? "100%" : "0%", transition: locked ? `width ${SKIP_WAIT}s linear` : "none" }}
+          />
+        )}
+        <span className="relative inline-flex items-center gap-2">
+          {done && <Check className="h-4 w-4" aria-hidden="true" />}
+          {done ? "Back to the questions" : locked ? `Keep practicing in ${wait}` : "Keep practicing"}
+        </span>
       </button>
     </div>
   );

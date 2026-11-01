@@ -1,0 +1,5069 @@
+{
+  "stimuli": [
+    {
+      "id": "NDA-RC1",
+      "title": "Reading comprehension: the lighthouse keeper",
+      "text": "For thirty years, Joseph kept the lighthouse on a rocky island off the Konkan coast. Every evening he climbed the hundred and twelve steps, cleaned the great lens and lit the lamp before the sun touched the sea. Fishing boats returning after dark steered by its beam, and on stormy nights it was the only thing between them and the rocks.\n\nWhen the lamp was made automatic, Joseph was told that his work was no longer needed. Visitors expected him to be bitter. Instead he spoke of the lighthouse as a colleague who had simply been promoted. \"The light never belonged to me,\" he said. \"It belonged to the boats. If it can now look after them without me, then my work was well done.\"\n\nHe still lives in the village on the mainland. On clear evenings he walks to the end of the jetty and waits, not for any ship, but for the moment the beam first sweeps across the water. Only then does he go home for his supper."
+    },
+    {
+      "id": "NDA-RC2",
+      "title": "Reading comprehension: the water channels of a mountain village",
+      "text": "In a high, dry valley of the Himalaya, almost no rain falls in summer, yet the village fields are green. The water comes from a glacier above the village, carried down in narrow channels dug along the hillside. Each family's field receives water in turn, by a schedule agreed long ago and remembered without being written down.\n\nThe channels need constant care. A single rockfall can block one, and an untended breach can wash away a season's work in an afternoon. Every spring, before sowing, one person from each household joins the work of clearing them. No one is paid; the reward is water for the year. Families that do not send a worker are not punished, but they find that neighbours are slow to help them later.\n\nOlder villagers worry that the glacier is shrinking and that young people now leave for jobs in the towns. Yet the spring clearing still goes on, and each year the first water to reach the lowest field is greeted with a small celebration."
+    }
+  ],
+  "questions": [
+    {
+      "id": "NDA-T1-001",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sets",
+      "stem": "A set has 5 elements. How many subsets does it have, including the empty set and the set itself?",
+      "options": [
+        "10",
+        "25",
+        "31",
+        "32"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "A set with n elements has 2ⁿ subsets, because each element is either in or out. 2⁵ = 32. 31 leaves out one of the subsets (31 is the number of non-empty subsets)."
+    },
+    {
+      "id": "NDA-T1-002",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Complex numbers",
+      "stem": "What is the value of (1 + i)⁴, where i = √(-1)?",
+      "options": [
+        "4",
+        "-4i",
+        "4i",
+        "-4"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "(1 + i)² = 1 + 2i + i² = 2i. So (1 + i)⁴ = (2i)² = 4i² = -4."
+    },
+    {
+      "id": "NDA-T1-003",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Complex numbers",
+      "stem": "What is the modulus of the complex number 5 - 12i?",
+      "options": [
+        "13",
+        "17",
+        "60",
+        "169"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "|a + bi| = √(a² + b²) = √(25 + 144) = √169 = 13. 169 is the square of the modulus, 17 adds 5 and 12, and 60 multiplies them."
+    },
+    {
+      "id": "NDA-T1-004",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "If α and β are the roots of x² - 5x + 6 = 0, what is the value of α² + β²?",
+      "options": [
+        "13",
+        "19",
+        "25",
+        "37"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "α + β = 5 and αβ = 6. α² + β² = (α + β)² - 2αβ = 25 - 12 = 13. (The roots are 2 and 3, and 4 + 9 = 13.)"
+    },
+    {
+      "id": "NDA-T1-005",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Logarithms",
+      "stem": "What is the value of log₅ 625?",
+      "options": [
+        "4",
+        "5",
+        "25",
+        "125"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "5⁴ = 625, so log₅ 625 = 4. 125 is 625 ÷ 5 and 25 is its square root; neither is the power of 5."
+    },
+    {
+      "id": "NDA-T1-006",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Arithmetic progression",
+      "stem": "What is the sum of the first 20 terms of the AP 3, 7, 11, 15, ...?",
+      "options": [
+        "820",
+        "860",
+        "880",
+        "1640"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "a = 3, d = 4, n = 20. S = n/2 × [2a + (n - 1)d] = 10 × (6 + 76) = 820. Using nd instead of (n - 1)d gives 860, and forgetting to halve gives 1640."
+    },
+    {
+      "id": "NDA-T1-007",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geometric progression",
+      "stem": "What is the 6th term of the GP 5, 15, 45, ...?",
+      "options": [
+        "135",
+        "243",
+        "405",
+        "1215"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "a = 5, r = 3. The nth term is ar⁽ⁿ⁻¹⁾, so the 6th term is 5 × 3⁵ = 5 × 243 = 1215. 405 is the 5th term, 135 the 4th, and 243 forgets the first term 5."
+    },
+    {
+      "id": "NDA-T1-008",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Binomial theorem",
+      "stem": "What is the coefficient of x³ in the expansion of (1 + x)⁷?",
+      "options": [
+        "7",
+        "21",
+        "35",
+        "42"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The coefficient of xʳ in (1 + x)ⁿ is ⁿCᵣ. ⁷C₃ = (7 × 6 × 5) / (3 × 2 × 1) = 35. 21 is ⁷C₂."
+    },
+    {
+      "id": "NDA-T1-009",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Permutations",
+      "stem": "In how many different ways can the letters of the word INDIA be arranged?",
+      "options": [
+        "20",
+        "24",
+        "30",
+        "60"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "INDIA has 5 letters with I repeated twice. Arrangements = 5! / 2! = 120 / 2 = 60. 30 divides by 2! twice, 24 is 4! (as if a letter were dropped) and 20 = 5!/3! divides by too much."
+    },
+    {
+      "id": "NDA-T1-010",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Combinations",
+      "stem": "A selection board has to pick 3 officers from a panel of 8 to form a committee. In how many ways can it do this?",
+      "options": [
+        "24",
+        "28",
+        "56",
+        "336"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Order does not matter in a committee, so use ⁸C₃ = (8 × 7 × 6) / (3 × 2 × 1) = 56. 336 is ⁸P₃, which counts ordered selections, and 28 is ⁸C₂."
+    },
+    {
+      "id": "NDA-T1-011",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Determinants",
+      "stem": "What is the value of the determinant with first row (2, 3) and second row (1, 4)?",
+      "options": [
+        "-5",
+        "5",
+        "8",
+        "11"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "For a 2 × 2 determinant with rows (a, b) and (c, d), the value is ad - bc = 2 × 4 - 3 × 1 = 8 - 3 = 5. 11 adds the products instead of subtracting."
+    },
+    {
+      "id": "NDA-T1-012",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Determinants",
+      "stem": "A is a 3 × 3 matrix with |A| = 4. What is |2A|?",
+      "options": [
+        "8",
+        "12",
+        "16",
+        "32"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Multiplying an n × n matrix by k multiplies its determinant by kⁿ. Here |2A| = 2³ × 4 = 32. 8 multiplies the determinant by 2 only, 16 by 2², and 12 by the order 3."
+    },
+    {
+      "id": "NDA-T1-013",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Binary numbers",
+      "stem": "What is the binary number 101101 in the decimal system?",
+      "options": [
+        "43",
+        "45",
+        "46",
+        "54"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Place values from the right are 1, 2, 4, 8, 16, 32. 101101 = 32 + 8 + 4 + 1 = 45."
+    },
+    {
+      "id": "NDA-T1-014",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Matrices",
+      "stem": "A is the 2 × 2 matrix with first row (1, 2) and second row (0, 3). What is A²?",
+      "options": [
+        "Rows (1, 8) and (0, 9)",
+        "Rows (1, 6) and (0, 9)",
+        "Rows (2, 8) and (0, 6)",
+        "Rows (1, 4) and (0, 9)"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Multiply row by column. Row 1: (1×1 + 2×0, 1×2 + 2×3) = (1, 8). Row 2: (0×1 + 3×0, 0×2 + 3×3) = (0, 9). Squaring each entry gives rows (1, 4) and (0, 9), which is not matrix multiplication."
+    },
+    {
+      "id": "NDA-T1-015",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Compound angles",
+      "stem": "What is the value of cos 60° cos 30° - sin 60° sin 30°?",
+      "options": [
+        "1/2",
+        "0",
+        "√3/2",
+        "1"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "This is cos A cos B - sin A sin B = cos(A + B) with A = 60° and B = 30°, so it equals cos 90° = 0. Directly: (1/2)(√3/2) - (√3/2)(1/2) = 0."
+    },
+    {
+      "id": "NDA-T1-016",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Radian measure",
+      "stem": "What is 135° in radians?",
+      "options": [
+        "3π/4",
+        "5π/6",
+        "2π/3",
+        "3π/5"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Multiply by π/180: 135 × π/180 = 3π/4. 2π/3 is 120° and 5π/6 is 150°."
+    },
+    {
+      "id": "NDA-T1-017",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometric ratios",
+      "stem": "θ is an acute angle with tan θ = 5/12. What is sin θ?",
+      "options": [
+        "5/13",
+        "5/12",
+        "12/13",
+        "13/5"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Take opposite side 5 and adjacent side 12; the hypotenuse is √(25 + 144) = 13. sin θ = opposite / hypotenuse = 5/13. 12/13 is cos θ."
+    },
+    {
+      "id": "NDA-T1-018",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Compound angles",
+      "stem": "What is the exact value of sin 15°?",
+      "options": [
+        "(√6 + √2)/4",
+        "(√3 - 1)/2",
+        "(√6 - √2)/4",
+        "(√2 - 1)/2"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "sin 15° = sin(45° - 30°) = sin 45° cos 30° - cos 45° sin 30° = (1/√2)(√3/2) - (1/√2)(1/2) = (√3 - 1)/(2√2) = (√6 - √2)/4. (√6 + √2)/4 is cos 15°."
+    },
+    {
+      "id": "NDA-T1-019",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Maximum and minimum",
+      "stem": "What is the maximum value of 3 sin x + 4 cos x?",
+      "options": [
+        "5",
+        "7",
+        "12",
+        "25"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "a sin x + b cos x can be written as √(a² + b²) sin(x + α), so its maximum is √(9 + 16) = 5. 7 adds the coefficients, but sin x and cos x cannot both equal 1 at the same x; 25 forgets the square root and 12 multiplies the coefficients."
+    },
+    {
+      "id": "NDA-T1-020",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inverse trigonometric functions",
+      "stem": "What is the value of sin⁻¹(1/2) + cos⁻¹(1/2)?",
+      "options": [
+        "π/3",
+        "π",
+        "π/2",
+        "2π/3"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "sin⁻¹ x + cos⁻¹ x = π/2 for every x in [-1, 1]. Here π/6 + π/3 = π/2."
+    },
+    {
+      "id": "NDA-T1-021",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Heights and distances",
+      "stem": "From a point on level ground 30√3 m from the foot of a tower 30 m high, what is the angle of elevation of the top of the tower?",
+      "options": [
+        "15°",
+        "30°",
+        "45°",
+        "60°"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "tan θ = height / distance = 30 / (30√3) = 1/√3, so θ = 30°. 60° would be the answer if the height and distance were swapped."
+    },
+    {
+      "id": "NDA-T1-022",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coordinate geometry",
+      "stem": "What is the distance between the points (1, 1) and (8, 25)?",
+      "options": [
+        "25",
+        "31",
+        "168",
+        "625"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "d = √[(8 - 1)² + (25 - 1)²] = √(49 + 576) = √625 = 25. 31 adds the gaps 7 and 24, 168 multiplies them and 625 is d²."
+    },
+    {
+      "id": "NDA-T1-023",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Straight lines",
+      "stem": "What is the slope of the line 5x + 2y - 9 = 0?",
+      "options": [
+        "-5/2",
+        "-2/5",
+        "2/5",
+        "5/2"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Rewrite as y = -(5/2)x + 9/2, so the slope is -5/2. In general the slope of ax + by + c = 0 is -a/b."
+    },
+    {
+      "id": "NDA-T1-024",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circles",
+      "stem": "What is the radius of the circle x² + y² + 6x - 2y - 6 = 0?",
+      "options": [
+        "4",
+        "6",
+        "10",
+        "16"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Complete the squares: (x + 3)² + (y - 1)² = 6 + 9 + 1 = 16. The centre is (-3, 1) and the radius is √16 = 4. 16 is r², and 10 forgets to add the constant 6 to 9 + 1."
+    },
+    {
+      "id": "NDA-T1-025",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Conic sections",
+      "stem": "What is the eccentricity of the ellipse x²/25 + y²/16 = 1?",
+      "options": [
+        "3/5",
+        "16/25",
+        "4/5",
+        "5/4"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "a² = 25 and b² = 16, so e = √(1 - b²/a²) = √(1 - 16/25) = √(9/25) = 3/5. An ellipse always has e between 0 and 1, so 5/4 is impossible."
+    },
+    {
+      "id": "NDA-T1-026",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Three-dimensional geometry",
+      "stem": "What is the distance of the point (2, 3, 6) from the origin?",
+      "options": [
+        "5",
+        "7",
+        "11",
+        "49"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "d = √(2² + 3² + 6²) = √(4 + 9 + 36) = √49 = 7. 11 adds the coordinates and 49 is d²."
+    },
+    {
+      "id": "NDA-T1-027",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Limits",
+      "stem": "What is the value of the limit of sin(5x)/(2x) as x tends to 0?",
+      "options": [
+        "2/5",
+        "1",
+        "5/2",
+        "5"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "sin(5x)/(2x) = (5/2) × sin(5x)/(5x), and sin(t)/t tends to 1 as t tends to 0. So the limit is 5/2."
+    },
+    {
+      "id": "NDA-T1-028",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Limits",
+      "stem": "What is the value of the limit of (x³ - 27)/(x - 3) as x tends to 3?",
+      "options": [
+        "9",
+        "27",
+        "The limit does not exist",
+        "0"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "x³ - 27 = (x - 3)(x² + 3x + 9), so for x ≠ 3 the fraction equals x² + 3x + 9, which tends to 9 + 9 + 9 = 27. Putting x = 3 straight in gives 0/0, which only tells you to simplify first."
+    },
+    {
+      "id": "NDA-T1-029",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Derivatives",
+      "stem": "What is the derivative of x³ sin x with respect to x?",
+      "options": [
+        "3x² cos x",
+        "3x² sin x - x³ cos x",
+        "3x² sin x + x³ cos x",
+        "x³ cos x"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Product rule: (uv)′ = u′v + uv′ with u = x³ and v = sin x, giving 3x² sin x + x³ cos x."
+    },
+    {
+      "id": "NDA-T1-030",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Derivatives",
+      "stem": "What is the derivative of e³ˣ at x = 0?",
+      "options": [
+        "1",
+        "e³",
+        "3",
+        "0"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "d/dx (e³ˣ) = 3e³ˣ by the chain rule. At x = 0 this is 3e⁰ = 3. 1 forgets the factor 3 from the chain rule, and 0 differentiates the value e⁰ = 1 as if it were a constant."
+    },
+    {
+      "id": "NDA-T1-031",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Derivatives",
+      "stem": "What is the derivative of log(sin x) with respect to x, for 0 < x < π?",
+      "options": [
+        "tan x",
+        "cot x",
+        "1/sin x",
+        "-cot x"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Chain rule: d/dx log(u) = u′/u, so the derivative is cos x / sin x = cot x. 1/sin x forgets to multiply by the derivative of sin x."
+    },
+    {
+      "id": "NDA-T1-032",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Maxima and minima",
+      "stem": "What is the minimum value of f(x) = x² - 6x + 10?",
+      "options": [
+        "1",
+        "3",
+        "4",
+        "10"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "f′(x) = 2x - 6 = 0 at x = 3, and f″(x) = 2 > 0, so it is a minimum: f(3) = 9 - 18 + 10 = 1. Equivalently f(x) = (x - 3)² + 1. 3 is where the minimum occurs, not its value, and 4 is just 10 - 6."
+    },
+    {
+      "id": "NDA-T1-033",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Tangents",
+      "stem": "What is the slope of the tangent to the curve y = x³ - 2x at the point where x = 1?",
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "3"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "dy/dx = 3x² - 2. At x = 1 this is 3 - 2 = 1. -1 is the y-coordinate of the point (1, -1), not the slope."
+    },
+    {
+      "id": "NDA-T1-034",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Definite integrals",
+      "stem": "What is the value of the integral of x² from 0 to 1?",
+      "options": [
+        "1/3",
+        "1/2",
+        "2/3",
+        "1"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "∫x² dx = x³/3. From 0 to 1 this is 1/3 - 0 = 1/3. 1/2 is the integral of x over the same interval."
+    },
+    {
+      "id": "NDA-T1-035",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Indefinite integrals",
+      "stem": "Which of these is the integral of 1/(1 + x²) with respect to x?",
+      "options": [
+        "tan⁻¹ x + C",
+        "log(1 + x²) + C",
+        "x/(1 + x²) + C",
+        "sin⁻¹ x + C"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "d/dx (tan⁻¹ x) = 1/(1 + x²), so ∫ dx/(1 + x²) = tan⁻¹ x + C. log(1 + x²) differentiates to 2x/(1 + x²)."
+    },
+    {
+      "id": "NDA-T1-036",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Definite integrals",
+      "stem": "What is the value of the integral of sin x from 0 to π/2?",
+      "options": [
+        "π/2",
+        "0",
+        "2",
+        "1"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "∫sin x dx = -cos x. From 0 to π/2: -cos(π/2) - (-cos 0) = 0 + 1 = 1. The integral from 0 to π would be 2."
+    },
+    {
+      "id": "NDA-T1-037",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Area under curves",
+      "stem": "What is the area of the region enclosed by the line y = x and the curve y = x²?",
+      "options": [
+        "1/6 square units",
+        "1/3 square units",
+        "1/2 square units",
+        "5/6 square units"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "They meet at x = 0 and x = 1, and on that interval x ≥ x². Area = ∫₀¹ (x - x²) dx = 1/2 - 1/3 = 1/6. 1/2 and 1/3 are the areas under each graph alone."
+    },
+    {
+      "id": "NDA-T1-038",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Differential equations",
+      "stem": "What are the order and degree of the differential equation (d³y/dx³)² + (d²y/dx²)⁵ + y = 0?",
+      "options": [
+        "Order 3, degree 2",
+        "Order 3, degree 5",
+        "Order 2, degree 5",
+        "Order 2, degree 3"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The order is that of the highest derivative, d³y/dx³, so 3. The degree is the power of that highest derivative once the equation is a polynomial in derivatives: 2. The power 5 belongs to d²y/dx², which is not the highest derivative."
+    },
+    {
+      "id": "NDA-T1-039",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Vectors",
+      "stem": "If a = 2i + 3j - k and b = i - j + 2k, what is the scalar product a · b?",
+      "options": [
+        "-3",
+        "-1",
+        "3",
+        "7"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "a · b = (2)(1) + (3)(-1) + (-1)(2) = 2 - 3 - 2 = -3. 7 comes from adding the products of the absolute values."
+    },
+    {
+      "id": "NDA-T1-040",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mean",
+      "stem": "What is the arithmetic mean of 4, 7, 9, 12 and 13?",
+      "options": [
+        "9",
+        "10",
+        "11.25",
+        "45"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Sum = 4 + 7 + 9 + 12 + 13 = 45, and 45 / 5 = 9. 45 is the total, not the mean, and 11.25 divides it by 4 instead of 5."
+    },
+    {
+      "id": "NDA-T1-041",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Median",
+      "stem": "What is the median of 2, 9, 5, 14, 11 and 6?",
+      "options": [
+        "6",
+        "7.5",
+        "8",
+        "9"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "In order: 2, 5, 6, 9, 11, 14. With 6 values the median is the mean of the 3rd and 4th: (6 + 9)/2 = 7.5. 8 is the mean of all six (47/6, about 7.8) rounded, not the median."
+    },
+    {
+      "id": "NDA-T1-042",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mode",
+      "stem": "What is the mode of 2, 3, 3, 5, 5, 5, 7?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The mode is the value that occurs most often. 5 occurs three times, more than any other value."
+    },
+    {
+      "id": "NDA-T1-043",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Variance",
+      "stem": "What is the variance of 2, 4, 6 and 8?",
+      "options": [
+        "2.5",
+        "4",
+        "5",
+        "20"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Mean = 20/4 = 5. Squared deviations: 9, 1, 1, 9, which add to 20. Variance = 20/4 = 5. 20 forgets to divide by the number of values."
+    },
+    {
+      "id": "NDA-T1-044",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "Two fair coins are tossed. What is the probability of getting at least one head?",
+      "options": [
+        "1/4",
+        "1/2",
+        "2/3",
+        "3/4"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The outcomes are HH, HT, TH and TT. Three of the four have a head, so P = 3/4. Equivalently 1 - P(no head) = 1 - 1/4."
+    },
+    {
+      "id": "NDA-T1-045",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "A fair die is rolled once. What is the probability that it does NOT show a 6?",
+      "options": [
+        "1/6",
+        "1/2",
+        "2/3",
+        "5/6"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "P(not 6) = 1 - P(6) = 1 - 1/6 = 5/6. 1/6 is the probability of getting a 6."
+    },
+    {
+      "id": "NDA-T1-046",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "One card is drawn at random from a well-shuffled pack of 52. What is the probability that it is a king or a heart?",
+      "options": [
+        "1/13",
+        "1/4",
+        "4/13",
+        "17/52"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "P(king) + P(heart) - P(king of hearts) = 4/52 + 13/52 - 1/52 = 16/52 = 4/13. 17/52 counts the king of hearts twice."
+    },
+    {
+      "id": "NDA-T1-047",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Addition rule",
+      "stem": "A and B are independent events with P(A) = 0.6 and P(B) = 0.5. What is P(A ∪ B)?",
+      "options": [
+        "0.3",
+        "0.5",
+        "0.7",
+        "0.8"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Independence gives P(A ∩ B) = 0.6 × 0.5 = 0.3. Then P(A ∪ B) = 0.6 + 0.5 - 0.3 = 0.8. The plain sum 1.1 is impossible for a probability; 0.3 is P(A ∩ B), and 0.7 is 1 - 0.3."
+    },
+    {
+      "id": "NDA-T1-048",
+      "section": "maths",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Binomial distribution",
+      "stem": "A binomial distribution has n = 10 and p = 0.3. What is its variance?",
+      "options": [
+        "0.21",
+        "2.1",
+        "3",
+        "7"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Variance = npq = 10 × 0.3 × 0.7 = 2.1. 3 is the mean np."
+    },
+    {
+      "id": "NDA-T1-049",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the word closest in meaning to the word in capitals.\n\nAUDACIOUS",
+      "options": [
+        "Cautious",
+        "Generous",
+        "Daring",
+        "Noisy"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Audacious means willing to take bold risks: daring. Cautious is close to its opposite."
+    },
+    {
+      "id": "NDA-T1-050",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the word closest in meaning to the word in capitals.\n\nTENACIOUS",
+      "options": [
+        "Careless",
+        "Persistent",
+        "Timid",
+        "Feeble"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A tenacious person holds on firmly and does not give up easily: persistent."
+    },
+    {
+      "id": "NDA-T1-051",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the word most nearly opposite in meaning to the word in capitals.\n\nTRANSIENT",
+      "options": [
+        "Swift",
+        "Permanent",
+        "Passing",
+        "Brief"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Transient means lasting only a short time. Its opposite is permanent; brief and passing are synonyms."
+    },
+    {
+      "id": "NDA-T1-052",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the word most nearly opposite in meaning to the word in capitals.\n\nSCANTY",
+      "options": [
+        "Sparse",
+        "Meagre",
+        "Plentiful",
+        "Narrow"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Scanty means barely enough. Its opposite is plentiful. Meagre and sparse are close to scanty in meaning."
+    },
+    {
+      "id": "NDA-T1-053",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nNeither the captain nor the players / was ready / for the early morning drill.",
+      "options": [
+        "Neither the captain nor the players",
+        "was ready",
+        "for the early morning drill.",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "With 'neither ... nor', the verb agrees with the nearer subject. 'Players' is plural, so it should be 'were ready'."
+    },
+    {
+      "id": "NDA-T1-054",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nEach of the new recruits / have been given / a pair of boots.",
+      "options": [
+        "Each of the new recruits",
+        "have been given",
+        "a pair of boots.",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Each' is singular and takes a singular verb: 'Each of the new recruits has been given a pair of boots.'"
+    },
+    {
+      "id": "NDA-T1-055",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nHe returned back / to the camp / after the long patrol.",
+      "options": [
+        "He returned back",
+        "to the camp",
+        "after the long patrol.",
+        "No error"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Return' already means 'come back', so 'back' is redundant: 'He returned to the camp after the long patrol.'"
+    },
+    {
+      "id": "NDA-T1-056",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe convoy left the base / before sunrise and reached / the border post by noon.",
+      "options": [
+        "The convoy left the base",
+        "before sunrise and reached",
+        "the border post by noon.",
+        "No error"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence is correct: both verbs are in the simple past and the prepositions are right."
+    },
+    {
+      "id": "NDA-T1-057",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe inspecting officer insisted ______ a thorough check of every vehicle.",
+      "options": [
+        "on",
+        "in",
+        "at",
+        "for"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The verb 'insist' takes the preposition 'on': to insist on something."
+    },
+    {
+      "id": "NDA-T1-058",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nBy the time the relief team arrived, the flood waters ______.",
+      "options": [
+        "had receded",
+        "have receded",
+        "will recede",
+        "recede"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Of two past actions, the earlier one takes the past perfect. The waters went down before the team arrived, so 'had receded'."
+    },
+    {
+      "id": "NDA-T1-059",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\n__If I was__ the commander, I would change the plan.",
+      "options": [
+        "If I were",
+        "If I had",
+        "If I am",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "An unreal or imagined condition in the present takes 'were' for every subject: 'If I were the commander, I would change the plan.'"
+    },
+    {
+      "id": "NDA-T1-060",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nHardly had the bugle sounded __when the cadets__ lined up on the parade ground.",
+      "options": [
+        "than the cadets",
+        "then the cadets",
+        "while the cadets",
+        "No improvement"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "'Hardly' and 'scarcely' are followed by 'when' (while 'no sooner' takes 'than'), so the sentence is correct as it stands."
+    },
+    {
+      "id": "NDA-T1-061",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the option that best expresses the meaning of the idiom.\n\nTo bite the bullet",
+      "options": [
+        "To waste ammunition",
+        "To be wounded in battle",
+        "To face something unpleasant with courage",
+        "To speak angrily"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "To bite the bullet is to make yourself do something difficult or unpleasant that cannot be avoided."
+    },
+    {
+      "id": "NDA-T1-062",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the one word that can replace the phrase.\n\nA soldier who fights for any country that pays him",
+      "options": [
+        "Veteran",
+        "Deserter",
+        "Recruit",
+        "Mercenary"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A mercenary fights for money rather than for his own country. A veteran has long service, a recruit is new and a deserter runs away from duty."
+    },
+    {
+      "id": "NDA-T1-063",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spelling",
+      "stem": "Select the correctly spelt word for a planned movement of troops or ships.",
+      "options": [
+        "Manoeuvre",
+        "Maneouvre",
+        "Manoeuver",
+        "Manouvre"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The British and Indian spelling is m-a-n-o-e-u-v-r-e. (American English writes 'maneuver'.)"
+    },
+    {
+      "id": "NDA-T1-064",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nThe sentry challenged the stranger.",
+      "options": [
+        "The stranger was challenged by the sentry.",
+        "The stranger had challenged the sentry.",
+        "The sentry was challenged by the stranger.",
+        "The stranger is challenged by the sentry."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Challenged' is simple past, so the passive is 'was challenged', with the object 'the stranger' becoming the subject."
+    },
+    {
+      "id": "NDA-T1-065",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "NDA-RC1",
+      "stem": "How long did Joseph keep the lighthouse?",
+      "options": [
+        "A hundred and twelve days",
+        "All his life",
+        "Thirty years",
+        "Twelve years"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage opens: 'For thirty years, Joseph kept the lighthouse.' A hundred and twelve is the number of steps."
+    },
+    {
+      "id": "NDA-T1-066",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "NDA-RC1",
+      "stem": "How did Joseph react when the lamp was made automatic?",
+      "options": [
+        "He refused to leave the island",
+        "He accepted it calmly and felt his work had succeeded",
+        "He asked to be given a new lighthouse",
+        "He was bitter and complained to visitors"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Visitors expected bitterness, but he said that if the light could now look after the boats without him, 'my work was well done'."
+    },
+    {
+      "id": "NDA-T1-067",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "NDA-RC1",
+      "stem": "When Joseph calls the lighthouse 'a colleague who had simply been promoted', he means that:",
+      "options": [
+        "the lighthouse can now do on its own the work they once shared",
+        "he dislikes the new automatic lamp",
+        "he was demoted while the lighthouse was not",
+        "the lighthouse was moved to a better place"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "He is speaking of the lighthouse as a fellow worker who has moved up and can now do the job without him, which matches his calm words about the boats."
+    },
+    {
+      "id": "NDA-T1-068",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "NDA-RC1",
+      "stem": "Which word best describes Joseph as he is shown in the passage?",
+      "options": [
+        "Careless",
+        "Devoted",
+        "Resentful",
+        "Boastful"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "He climbed the steps every evening for thirty years and still waits each evening to see the beam: he is devoted. The passage contrasts him with the bitterness visitors expected."
+    },
+    {
+      "id": "NDA-T1-069",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Units",
+      "stem": "The becquerel is the SI unit of:",
+      "options": [
+        "Luminous intensity",
+        "Radioactivity",
+        "Magnetic flux",
+        "Electric charge"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "One becquerel is one nucleus decaying per second. Luminous intensity is measured in candela, magnetic flux in weber and charge in coulomb."
+    },
+    {
+      "id": "NDA-T1-070",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alloys",
+      "stem": "Stainless steel is made by adding which metals to iron?",
+      "options": [
+        "Aluminium and magnesium",
+        "Chromium and nickel",
+        "Tin and lead",
+        "Copper and zinc"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Chromium forms a thin oxide film that stops rusting, and nickel adds toughness. Copper and zinc make brass; tin and lead make solder."
+    },
+    {
+      "id": "NDA-T1-071",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient India",
+      "stem": "Most seals found at Harappan sites were made of:",
+      "options": [
+        "Bronze",
+        "Gold",
+        "Terracotta painted with lac",
+        "Steatite"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Harappan seals were mostly cut from steatite (soapstone), then fired to harden them. Many show an animal, often a 'unicorn', above a short line of the undeciphered script."
+    },
+    {
+      "id": "NDA-T1-072",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Landforms",
+      "stem": "Fjords, the long, narrow, steep-sided sea inlets of Norway, were carved by:",
+      "options": [
+        "Glaciers",
+        "Rivers",
+        "Wind",
+        "Waves"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Fjords are U-shaped valleys deepened by glaciers during the Ice Age and later flooded by the sea when the ice melted."
+    },
+    {
+      "id": "NDA-T1-073",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Heat",
+      "stem": "A bimetallic strip bends when it is heated because its two metals:",
+      "options": [
+        "Conduct electricity differently",
+        "Expand by different amounts",
+        "Have different colours",
+        "Melt at the same temperature"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Two metals with different coefficients of expansion, such as brass and iron, are joined. On heating one lengthens more, so the strip curls. Thermostats and fire alarms use this."
+    },
+    {
+      "id": "NDA-T1-074",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Chemistry",
+      "stem": "Natural rubber is made harder and more elastic by heating it with:",
+      "options": [
+        "Sulphur",
+        "Chlorine",
+        "Phosphorus",
+        "Carbon"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "This is vulcanisation, discovered by Charles Goodyear: sulphur forms cross-links between the rubber chains. Tyres are vulcanised rubber."
+    },
+    {
+      "id": "NDA-T1-075",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient India",
+      "stem": "Which Gupta ruler took the title 'Vikramaditya' and defeated the Shakas of western India?",
+      "options": [
+        "Chandragupta II",
+        "Skandagupta",
+        "Chandragupta I",
+        "Samudragupta"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Chandragupta II (about 380 to 415 CE) defeated the Western Kshatrapas (Shakas) and took the title Vikramaditya. The Chinese pilgrim Fa-Hien visited India in his reign."
+    },
+    {
+      "id": "NDA-T1-076",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rivers",
+      "stem": "Where does the Mahanadi river rise?",
+      "options": [
+        "Near Sihawa in Chhattisgarh",
+        "Near Multai in Madhya Pradesh",
+        "At Talakaveri",
+        "At Amarkantak"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Mahanadi rises near Sihawa in Dhamtari district of Chhattisgarh and flows east through Odisha to the Bay of Bengal. The Narmada rises at Amarkantak, the Kaveri at Talakaveri and the Tapi near Multai."
+    },
+    {
+      "id": "NDA-T1-077",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Light",
+      "stem": "A simple periscope used in trenches and submarines works by:",
+      "options": [
+        "Dispersion by a prism",
+        "Diffraction at a narrow slit",
+        "Refraction through a convex lens",
+        "Reflection from two plane mirrors"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Two plane mirrors set parallel to each other, each at 45° to the tube, turn the light twice, so the viewer sees over an obstacle."
+    },
+    {
+      "id": "NDA-T1-078",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Metals",
+      "stem": "An alloy of mercury with another metal is called:",
+      "options": [
+        "An ore",
+        "A slag",
+        "An amalgam",
+        "A solder"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Any alloy containing mercury is an amalgam; silver amalgam was long used to fill teeth. Slag is the waste formed in smelting, and an ore is a mineral from which a metal is extracted."
+    },
+    {
+      "id": "NDA-T1-079",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient India",
+      "stem": "The Satavahana dynasty, which issued coins with the names of kings and their mothers, ruled mainly over:",
+      "options": [
+        "The Deccan",
+        "Bengal",
+        "Kashmir",
+        "The Punjab"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Satavahanas ruled the Deccan from about the 1st century BCE to the 3rd century CE, with centres such as Pratishthana (Paithan) and Amaravati. Kings such as Gautamiputra Satakarni named themselves after their mothers."
+    },
+    {
+      "id": "NDA-T1-080",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Atmosphere",
+      "stem": "In the troposphere, the air temperature usually:",
+      "options": [
+        "Stays the same at every height",
+        "Falls with height, by about 6.5 °C per kilometre",
+        "Falls only above 50 km",
+        "Rises with height, by about 6.5 °C per kilometre"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Air is heated mainly from the ground below, so in the troposphere it gets colder with height, on average by about 6.5 °C per km (the normal lapse rate). That is why mountain tops are cold."
+    },
+    {
+      "id": "NDA-T1-081",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Units",
+      "stem": "The electron volt (eV) is a unit of:",
+      "options": [
+        "Potential difference",
+        "Energy",
+        "Electric charge",
+        "Electric current"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "One electron volt is the energy an electron gains when accelerated through a potential difference of 1 volt, about 1.6 × 10⁻¹⁹ joule. Despite the word volt, it measures energy."
+    },
+    {
+      "id": "NDA-T1-082",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Metals",
+      "stem": "Steel ship hulls are often protected from rusting by attaching blocks of a more reactive metal that corrodes instead. Which metal is used?",
+      "options": [
+        "Copper",
+        "Lead",
+        "Silver",
+        "Magnesium"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "This is sacrificial protection: magnesium (or zinc) is more reactive than iron, so it is oxidised first and the steel is spared. Copper, silver and lead are less reactive than iron and would speed up its corrosion."
+    },
+    {
+      "id": "NDA-T1-083",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval India",
+      "stem": "Akbar built the Ibadat Khana at Fatehpur Sikri for:",
+      "options": [
+        "Housing foreign ambassadors",
+        "Training the imperial cavalry",
+        "Storing the royal treasury",
+        "Religious discussions between scholars of different faiths"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Ibadat Khana (House of Worship), built in 1575, hosted debates among Muslim, Hindu, Jain, Zoroastrian and Christian scholars. These led to Akbar's idea of sulh-i kul, peace with all."
+    },
+    {
+      "id": "NDA-T1-084",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Climate",
+      "stem": "The hot, dry, dusty wind that blows over north-west India and the Gangetic plains on summer afternoons is called:",
+      "options": [
+        "Mango shower",
+        "Loo",
+        "Kalbaisakhi",
+        "Western disturbance"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The loo blows in May and June. Mango showers are pre-monsoon rains in Kerala and Karnataka, Kalbaisakhi is a storm in Bengal, and western disturbances bring winter rain to the north-west."
+    },
+    {
+      "id": "NDA-T1-085",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Motion",
+      "stem": "A stone is dropped from rest from a tall tower. Taking g = 10 m/s² and ignoring air resistance, how far does it fall in the first 2 seconds?",
+      "options": [
+        "5 m",
+        "10 m",
+        "20 m",
+        "40 m"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "s = ut + ½gt² = 0 + ½ × 10 × 2² = 20 m. 40 m forgets the ½, and 5 m is the distance in the first second only."
+    },
+    {
+      "id": "NDA-T1-086",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Periodic table",
+      "stem": "Elements in the same group of the modern periodic table have the same number of:",
+      "options": [
+        "Electron shells",
+        "Protons",
+        "Valence electrons",
+        "Neutrons"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Elements in a group have the same number of electrons in their outermost shell, which is why they react alike. Elements in the same period have the same number of shells."
+    },
+    {
+      "id": "NDA-T1-087",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval India",
+      "stem": "Which Delhi Sultan organised the iqta system and introduced the silver tanka and the copper jital?",
+      "options": [
+        "Iltutmish",
+        "Balban",
+        "Alauddin Khalji",
+        "Firoz Shah Tughlaq"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Iltutmish (1211 to 1236) gave iqtas, the revenue of a territory, to his officers in place of salaries, and issued the silver tanka and copper jital that became the standard coins of the Sultanate."
+    },
+    {
+      "id": "NDA-T1-088",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Landforms",
+      "stem": "A crescent-shaped sand dune with its horns pointing downwind is called:",
+      "options": [
+        "A delta",
+        "A moraine",
+        "A barchan",
+        "A drumlin"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Barchans form in deserts where the wind blows steadily from one direction and sand is limited. Moraines and drumlins are left by glaciers, and a delta is built by a river."
+    },
+    {
+      "id": "NDA-T1-089",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Electricity",
+      "stem": "Three resistors of 2 Ω, 3 Ω and 6 Ω are connected in parallel. What is their equivalent resistance?",
+      "options": [
+        "1 Ω",
+        "11 Ω",
+        "6 Ω",
+        "2 Ω"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In parallel, 1/R = 1/2 + 1/3 + 1/6 = 3/6 + 2/6 + 1/6 = 1, so R = 1 Ω. 11 Ω is the series total. A parallel combination is always less than its smallest resistor."
+    },
+    {
+      "id": "NDA-T1-090",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alloys",
+      "stem": "German silver, used for cutlery and decorative items, contains:",
+      "options": [
+        "Copper, zinc and nickel, but no silver",
+        "Silver, gold and copper",
+        "Mostly silver with some copper",
+        "Silver and tin"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "German silver (nickel silver) gets its name from its silvery look; it is an alloy of copper, zinc and nickel with no silver at all."
+    },
+    {
+      "id": "NDA-T1-091",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom movement",
+      "stem": "In 1928 the Nehru Report, a draft constitution prepared by Indian leaders, demanded:",
+      "options": [
+        "The end of all elections",
+        "A separate state for the princely states",
+        "Complete independence at once",
+        "Dominion status for India"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The committee chaired by Motilal Nehru asked for dominion status within the Empire. The younger leaders wanted more, and at Lahore in December 1929 the Congress adopted purna swaraj (complete independence)."
+    },
+    {
+      "id": "NDA-T1-092",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian geography",
+      "stem": "The hills along India's border with Myanmar, including the Patkai, Naga and Mizo hills, are together called the:",
+      "options": [
+        "Aravallis",
+        "Satpuras",
+        "Karakoram",
+        "Purvanchal"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Purvanchal (eastern hills) are the eastern extension of the Himalaya, running along the India-Myanmar border. The Aravallis and Satpuras are in peninsular India and the Karakoram in the far north."
+    },
+    {
+      "id": "NDA-T1-093",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sound",
+      "stem": "Sound waves with a frequency below 20 Hz, which humans cannot hear, are called:",
+      "options": [
+        "Supersonic waves",
+        "Ultrasonic waves",
+        "Infrasonic waves",
+        "Audible waves"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The human ear hears roughly 20 Hz to 20 kHz. Below that range is infrasound (made by earthquakes and elephants); above it is ultrasound. Supersonic describes a speed faster than sound, not a frequency."
+    },
+    {
+      "id": "NDA-T1-094",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Diseases",
+      "stem": "Haemophilia is a hereditary disease in which:",
+      "options": [
+        "The blood does not clot properly",
+        "Colours cannot be told apart",
+        "The body cannot make insulin",
+        "The red blood cells are sickle-shaped"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In haemophilia a clotting factor is missing, so even a small cut can bleed for a long time. It is sex-linked and shows up mainly in males."
+    },
+    {
+      "id": "NDA-T1-095",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom movement",
+      "stem": "Who renounced his knighthood in protest against the Jallianwala Bagh massacre?",
+      "options": [
+        "Gopal Krishna Gokhale",
+        "Jawaharlal Nehru",
+        "Mahatma Gandhi",
+        "Rabindranath Tagore"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Rabindranath Tagore wrote to the Viceroy in May 1919 giving up the knighthood conferred on him in 1915. Gandhiji returned his Kaisar-i-Hind medal in 1920 during the Khilafat and Non-Cooperation campaign."
+    },
+    {
+      "id": "NDA-T1-096",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Earth",
+      "stem": "The International Date Line roughly follows which line of longitude?",
+      "options": [
+        "90° E",
+        "0°",
+        "82.5° E",
+        "180°"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The International Date Line runs mostly along the 180° meridian, bending to avoid land. 0° is the Prime Meridian at Greenwich and 82.5° E is India's standard meridian."
+    },
+    {
+      "id": "NDA-T1-097",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Light",
+      "stem": "A ray of light passes through the optical centre of a thin lens. What happens to it?",
+      "options": [
+        "It is reflected back",
+        "It goes straight on without bending",
+        "It becomes parallel to the principal axis",
+        "It passes through the principal focus"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Near the optical centre the two faces of a thin lens are nearly parallel, so the ray goes through undeviated. This is one of the three standard rays used to draw lens images."
+    },
+    {
+      "id": "NDA-T1-098",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Human body",
+      "stem": "Bile, made by the liver, helps in the digestion of:",
+      "options": [
+        "Fats",
+        "Proteins",
+        "Vitamins",
+        "Starch"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Bile contains no enzymes, but its salts break large fat drops into tiny droplets (emulsification), giving lipase a large surface to act on."
+    },
+    {
+      "id": "NDA-T1-099",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom movement",
+      "stem": "The Lahore session of the Indian National Congress in December 1929 is remembered because it:",
+      "options": [
+        "Began the Quit India Movement",
+        "Accepted the partition of Bengal",
+        "Adopted complete independence (purna swaraj) as its goal",
+        "Founded the Muslim League"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "At Lahore the Congress resolved on purna swaraj and called for 26 January 1930 to be observed as Independence Day. That date was later chosen for the Constitution to come into force in 1950."
+    },
+    {
+      "id": "NDA-T1-100",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Oceans",
+      "stem": "The Gulf Stream is:",
+      "options": [
+        "A cold current off the coast of Japan",
+        "A warm current in the North Atlantic Ocean",
+        "A warm current in the Indian Ocean",
+        "A cold current off the coast of Peru"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Gulf Stream carries warm water from the Gulf of Mexico across the North Atlantic, keeping north-western Europe milder than its latitude suggests. The cold current off Peru is the Humboldt (Peru) Current."
+    },
+    {
+      "id": "NDA-T1-101",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Work and energy",
+      "stem": "A force acts on a body at right angles to the direction in which it moves. How much work does the force do?",
+      "options": [
+        "Negative",
+        "Equal to force times distance",
+        "Zero",
+        "Maximum"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Work = F × d × cos θ. At 90 degrees, cos θ = 0, so no work is done. That is why the force on a satellite in circular orbit does no work."
+    },
+    {
+      "id": "NDA-T1-102",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Plants",
+      "stem": "Pollination carried out by wind is called:",
+      "options": [
+        "Anemophily",
+        "Hydrophily",
+        "Ornithophily",
+        "Entomophily"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Wind-pollinated flowers, such as grasses and maize, have light, dry pollen in large amounts. Entomophily is by insects, hydrophily by water and ornithophily by birds."
+    },
+    {
+      "id": "NDA-T1-103",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Who moved the Objectives Resolution in the Constituent Assembly on 13 December 1946?",
+      "options": [
+        "Rajendra Prasad",
+        "Sardar Vallabhbhai Patel",
+        "Jawaharlal Nehru",
+        "B. R. Ambedkar"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Nehru's Objectives Resolution, adopted in January 1947, set out the ideals that later became the Preamble. Ambedkar chaired the Drafting Committee and Rajendra Prasad presided over the Assembly."
+    },
+    {
+      "id": "NDA-T1-104",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Earth",
+      "stem": "The Arctic Circle lies at about which latitude?",
+      "options": [
+        "23.5° N",
+        "45° N",
+        "66.5° N",
+        "90° N"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The Arctic Circle is at about 66.5° N, that is 90° minus the 23.5° tilt of the Earth's axis. 23.5° N is the Tropic of Cancer and 90° N the North Pole."
+    },
+    {
+      "id": "NDA-T1-105",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Heat",
+      "stem": "At what temperature does water have its greatest density?",
+      "options": [
+        "-4 °C",
+        "0 °C",
+        "4 °C",
+        "100 °C"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Water contracts as it cools to 4 °C and then expands again down to 0 °C. So a lake freezes from the top, and water at 4 °C stays at the bottom where fish survive the winter."
+    },
+    {
+      "id": "NDA-T1-106",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Plants",
+      "stem": "The downward growth of a plant's roots in response to gravity is called:",
+      "options": [
+        "Thigmotropism",
+        "Hydrotropism",
+        "Geotropism",
+        "Phototropism"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Geotropism (gravitropism) is growth in response to gravity: roots grow down (positive geotropism) and shoots grow up. Phototropism is response to light, hydrotropism to water and thigmotropism to touch."
+    },
+    {
+      "id": "NDA-T1-107",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "The Preamble describes India as a republic. This means that:",
+      "options": [
+        "India has two levels of government",
+        "Every citizen must vote",
+        "The head of state is elected and not a hereditary monarch",
+        "India has no official religion"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In a republic the head of state, here the President, is elected for a fixed term rather than inheriting the office. Having no state religion is what 'secular' means, and two levels of government is federalism."
+    },
+    {
+      "id": "NDA-T1-108",
+      "section": "gat",
+      "test": 1,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian geography",
+      "stem": "Guru Shikhar, near Mount Abu, is the highest peak of:",
+      "options": [
+        "The Satpura Range",
+        "The Aravalli Range",
+        "The Nilgiri Hills",
+        "The Andaman Islands"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Guru Shikhar (about 1,722 m) rises near Mount Abu in Rajasthan and is the highest point of the Aravallis. The Andamans rise to Saddle Peak, the Nilgiris to Doddabetta and the Satpuras to Dhupgarh."
+    },
+    {
+      "id": "NDA-T2-001",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sets",
+      "stem": "n(A) = 20, n(B) = 15 and n(A ∩ B) = 6. What is n(A ∪ B)?",
+      "options": [
+        "9",
+        "14",
+        "23",
+        "29"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "n(A ∪ B) = n(A) + n(B) - n(A ∩ B) = 20 + 15 - 6 = 29. 14 counts only the elements in A alone (20 - 6), 9 those in B alone (15 - 6), and 23 those in exactly one of the sets."
+    },
+    {
+      "id": "NDA-T2-002",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Complex numbers",
+      "stem": "What is the value of i³⁷, where i = √(-1)?",
+      "options": [
+        "-i",
+        "1",
+        "-1",
+        "i"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Powers of i repeat every 4: i, -1, -i, 1. 37 = 4 × 9 + 1, so i³⁷ = i¹ = i."
+    },
+    {
+      "id": "NDA-T2-003",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Complex numbers",
+      "stem": "What is the principal argument of the complex number 1 + i√3?",
+      "options": [
+        "π/6",
+        "2π/3",
+        "π/4",
+        "π/3"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The point (1, √3) is in the first quadrant and tan θ = √3 / 1 = √3, so θ = π/3. π/6 would come from tan θ = 1/√3, with the parts swapped."
+    },
+    {
+      "id": "NDA-T2-004",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "For what positive value of k does 4x² + kx + 25 = 0 have two equal roots?",
+      "options": [
+        "20",
+        "40",
+        "100",
+        "400"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Equal roots need the discriminant to be zero: k² - 4 × 4 × 25 = 0, so k² = 400 and k = 20 (taking the positive value). The equation is then (2x + 5)² = 0. 400 is k², not k, and 100 is what k² would be if the 4 in 4ac were left out."
+    },
+    {
+      "id": "NDA-T2-005",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "What is the nature of the roots of 2x² - 3x + 5 = 0?",
+      "options": [
+        "Two distinct real roots",
+        "Two non-real complex roots",
+        "Two equal real roots",
+        "Two rational roots"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Discriminant b² - 4ac = 9 - 40 = -31, which is negative, so the roots are a pair of non-real complex conjugates."
+    },
+    {
+      "id": "NDA-T2-006",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Logarithms",
+      "stem": "Given log 2 = 0.3010 (base 10), what is log 8?",
+      "options": [
+        "0.0903",
+        "0.6020",
+        "0.9030",
+        "2.4080"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "log 8 = log 2³ = 3 log 2 = 3 × 0.3010 = 0.9030. 2.4080 multiplies by 8 instead of by the power 3."
+    },
+    {
+      "id": "NDA-T2-007",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Arithmetic progression",
+      "stem": "Which term of the AP 7, 13, 19, 25, ... is 109?",
+      "options": [
+        "16th",
+        "17th",
+        "18th",
+        "19th"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "aₙ = a + (n - 1)d, so 109 = 7 + 6(n - 1), giving 6(n - 1) = 102, n - 1 = 17 and n = 18."
+    },
+    {
+      "id": "NDA-T2-008",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geometric progression",
+      "stem": "What is the sum to infinity of the series 1 + 1/3 + 1/9 + 1/27 + ...?",
+      "options": [
+        "4/3",
+        "3/2",
+        "2",
+        "3"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "For a GP with |r| < 1 the sum to infinity is a / (1 - r) = 1 / (1 - 1/3) = 1 / (2/3) = 3/2."
+    },
+    {
+      "id": "NDA-T2-009",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Binomial theorem",
+      "stem": "How many terms are there in the expansion of (2x - 3y)¹²?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "24"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The expansion of (a + b)ⁿ has n + 1 terms, whatever the coefficients. Here 12 + 1 = 13."
+    },
+    {
+      "id": "NDA-T2-010",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Permutations",
+      "stem": "How many 3-digit numbers with all digits different can be formed from the digits 1, 2, 3, 4, 5 and 6?",
+      "options": [
+        "20",
+        "60",
+        "120",
+        "216"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The hundreds digit has 6 choices, the tens 5 and the units 4: 6 × 5 × 4 = 120 (that is ⁶P₃). 216 = 6³ allows repeated digits; 20 = ⁶C₃ ignores order."
+    },
+    {
+      "id": "NDA-T2-011",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Combinations",
+      "stem": "How many diagonals does a hexagon have?",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "15"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Any 2 of the 6 vertices give a line: ⁶C₂ = 15. Six of those are sides, so there are 15 - 6 = 9 diagonals. In general a polygon with n sides has n(n - 3)/2 diagonals."
+    },
+    {
+      "id": "NDA-T2-012",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Determinants",
+      "stem": "A 3 × 3 matrix has 2, 3 and 4 on its main diagonal and zeros everywhere below it. What is its determinant?",
+      "options": [
+        "0",
+        "9",
+        "12",
+        "24"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The determinant of a triangular matrix is the product of its diagonal entries: 2 × 3 × 4 = 24. The entries above the diagonal do not matter. 9 adds the diagonal instead of multiplying."
+    },
+    {
+      "id": "NDA-T2-013",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Matrices",
+      "stem": "What must be true of the diagonal elements of a skew-symmetric matrix?",
+      "options": [
+        "They are all distinct",
+        "They are equal but not zero",
+        "They are all zero",
+        "They are all equal to 1"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A skew-symmetric matrix has Aᵀ = -A, so each diagonal entry satisfies aᵢᵢ = -aᵢᵢ, which forces aᵢᵢ = 0."
+    },
+    {
+      "id": "NDA-T2-014",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Binary numbers",
+      "stem": "What is the decimal number 25 written in binary?",
+      "options": [
+        "10011",
+        "10101",
+        "11001",
+        "11010"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "25 = 16 + 8 + 1, so the places 16, 8, 4, 2, 1 hold 1, 1, 0, 0, 1: 11001. 10011 is 19 and 11010 is 26."
+    },
+    {
+      "id": "NDA-T2-015",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometric ratios",
+      "stem": "What is the value of tan 45° + cot 45° - sec² 45°?",
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "tan 45° = 1, cot 45° = 1 and sec 45° = √2, so sec² 45° = 2. The value is 1 + 1 - 2 = 0."
+    },
+    {
+      "id": "NDA-T2-016",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Multiple angles",
+      "stem": "If tan θ = 1/2, what is cos 2θ?",
+      "options": [
+        "3/5",
+        "3/4",
+        "4/5",
+        "5/3"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "cos 2θ = (1 - tan² θ) / (1 + tan² θ) = (1 - 1/4) / (1 + 1/4) = (3/4) / (5/4) = 3/5. 4/5 is sin 2θ = 2 tan θ / (1 + tan² θ), and 5/3 turns the fraction upside down."
+    },
+    {
+      "id": "NDA-T2-017",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Periodicity",
+      "stem": "What is the period of the function tan 3x?",
+      "options": [
+        "π",
+        "2π/3",
+        "3π",
+        "π/3"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "tan x has period π, and tan kx has period π/k. With k = 3 the period is π/3. 2π/3 would be right for sin 3x or cos 3x, whose basic period is 2π."
+    },
+    {
+      "id": "NDA-T2-018",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Multiple angles",
+      "stem": "Which of these is equal to sin 3x?",
+      "options": [
+        "4 sin³ x - 3 sin x",
+        "4 cos³ x - 3 cos x",
+        "3 sin x + 4 sin³ x",
+        "3 sin x - 4 sin³ x"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "sin 3x = 3 sin x - 4 sin³ x. The expression 4 cos³ x - 3 cos x is cos 3x."
+    },
+    {
+      "id": "NDA-T2-019",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Properties of triangles",
+      "stem": "In triangle ABC, a = 7, b = 5 and c = 3. What is angle A?",
+      "options": [
+        "60°",
+        "120°",
+        "135°",
+        "150°"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "By the cosine rule, cos A = (b² + c² - a²) / 2bc = (25 + 9 - 49) / 30 = -15/30 = -1/2, so A = 120°. A is opposite the longest side, so it is the largest angle."
+    },
+    {
+      "id": "NDA-T2-020",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Trigonometric equations",
+      "stem": "What is the general solution of sin θ = 0?",
+      "options": [
+        "θ = nπ, n an integer",
+        "θ = nπ/2, n an integer",
+        "θ = (2n + 1)π/2, n an integer",
+        "θ = 2nπ, n an integer"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "sin θ = 0 at θ = 0, ±π, ±2π, ..., that is θ = nπ. (2n + 1)π/2 is where cos θ = 0, and 2nπ misses odd multiples of π."
+    },
+    {
+      "id": "NDA-T2-021",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Heights and distances",
+      "stem": "A kite is flying on a string 100 m long. The string is straight and makes an angle of 30° with the level ground. How high is the kite?",
+      "options": [
+        "50√3 m",
+        "100 m",
+        "25 m",
+        "50 m"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The string is the hypotenuse, so height = 100 sin 30° = 100 × 1/2 = 50 m. 50√3 m is 100 cos 30°, the horizontal distance."
+    },
+    {
+      "id": "NDA-T2-022",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Section formula",
+      "stem": "What point divides the line segment from (2, -3) to (8, 9) internally in the ratio 2 : 1?",
+      "options": [
+        "(6, 5)",
+        "(6, 3)",
+        "(4, 1)",
+        "(5, 3)"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "x = (2 × 8 + 1 × 2)/3 = 18/3 = 6 and y = (2 × 9 + 1 × (-3))/3 = 15/3 = 5, giving (6, 5). (4, 1) divides it in the ratio 1 : 2, and (5, 3) is the midpoint."
+    },
+    {
+      "id": "NDA-T2-023",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Straight lines",
+      "stem": "The lines y = 2x + 3 and y = mx - 1 are perpendicular. What is m?",
+      "options": [
+        "-2",
+        "-1/2",
+        "1/2",
+        "2"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Perpendicular lines have slopes whose product is -1, so 2m = -1 and m = -1/2. m = 2 would make the lines parallel."
+    },
+    {
+      "id": "NDA-T2-024",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Conic sections",
+      "stem": "What is the focus of the parabola y² = 12x?",
+      "options": [
+        "(3, 0)",
+        "(-3, 0)",
+        "(0, 3)",
+        "(12, 0)"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Compare with y² = 4ax: 4a = 12, so a = 3 and the focus is (a, 0) = (3, 0). The parabola opens to the right, so the focus is on the positive x-axis."
+    },
+    {
+      "id": "NDA-T2-025",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coordinate geometry",
+      "stem": "What is the area of the triangle with vertices (1, 2), (6, 2) and (1, 10)?",
+      "options": [
+        "10 square units",
+        "13 square units",
+        "20 square units",
+        "40 square units"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The sides from (1, 2) run 5 units along y = 2 and 8 units along x = 1, so it is a right triangle with legs 5 and 8. Area = 1/2 × 5 × 8 = 20 square units. 40 forgets the 1/2."
+    },
+    {
+      "id": "NDA-T2-026",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Three-dimensional geometry",
+      "stem": "What is the distance between the points (1, 2, 3) and (4, 6, 15)?",
+      "options": [
+        "12",
+        "13",
+        "19",
+        "169"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are 3, 4 and 12, so d = √(9 + 16 + 144) = √169 = 13. 19 adds the differences and 169 is d²."
+    },
+    {
+      "id": "NDA-T2-027",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Functions",
+      "stem": "What is the domain of the real function f(x) = √(4 - x²)?",
+      "options": [
+        "All real numbers",
+        "[-2, 2]",
+        "(-2, 2)",
+        "[0, 2]"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The square root needs 4 - x² ≥ 0, that is x² ≤ 4, so -2 ≤ x ≤ 2. The end points are included because √0 = 0 is defined."
+    },
+    {
+      "id": "NDA-T2-028",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Limits",
+      "stem": "What is the value of the limit of (3x² + 2)/(x² - 5) as x tends to infinity?",
+      "options": [
+        "-2/5",
+        "0",
+        "1",
+        "3"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Divide top and bottom by x²: (3 + 2/x²)/(1 - 5/x²), which tends to 3/1 = 3. -2/5 is the value at x = 0, not the limit at infinity."
+    },
+    {
+      "id": "NDA-T2-029",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Limits",
+      "stem": "What is the value of the limit of (eˣ - 1)/x as x tends to 0?",
+      "options": [
+        "e",
+        "The limit does not exist",
+        "0",
+        "1"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "This is a standard limit equal to 1. It is the derivative of eˣ at x = 0, which is e⁰ = 1."
+    },
+    {
+      "id": "NDA-T2-030",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Continuity and differentiability",
+      "stem": "Which statement is true of f(x) = |x| at x = 0?",
+      "options": [
+        "It is neither continuous nor differentiable",
+        "It is differentiable but not continuous",
+        "It is continuous but not differentiable",
+        "It is both continuous and differentiable"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The graph has no break at 0, so |x| is continuous there. The left-hand derivative is -1 and the right-hand derivative is +1, so it is not differentiable at the corner."
+    },
+    {
+      "id": "NDA-T2-031",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Derivatives",
+      "stem": "What is the derivative of xˣ with respect to x, for x > 0?",
+      "options": [
+        "xˣ",
+        "x · xˣ⁻¹",
+        "xˣ log x",
+        "xˣ(1 + log x)"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Let y = xˣ, so log y = x log x. Differentiating, y′/y = log x + 1, so y′ = xˣ(1 + log x). x · xˣ⁻¹ wrongly treats the exponent as a constant."
+    },
+    {
+      "id": "NDA-T2-032",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Derivatives",
+      "stem": "If y = sin² x, what is dy/dx?",
+      "options": [
+        "sin 2x",
+        "cos² x",
+        "2 cos x",
+        "2 sin x"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "dy/dx = 2 sin x × cos x by the chain rule, and 2 sin x cos x = sin 2x."
+    },
+    {
+      "id": "NDA-T2-033",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Increasing and decreasing functions",
+      "stem": "On which interval is f(x) = x³ - 3x decreasing?",
+      "options": [
+        "(-1, 1)",
+        "(1, ∞)",
+        "(0, 3)",
+        "(-∞, -1)"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "f′(x) = 3x² - 3 = 3(x - 1)(x + 1), which is negative when -1 < x < 1. So f decreases on (-1, 1) and increases on the other two intervals."
+    },
+    {
+      "id": "NDA-T2-034",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Maxima and minima",
+      "stem": "Two positive numbers add up to 20. What is the largest possible value of their product?",
+      "options": [
+        "75",
+        "96",
+        "99",
+        "100"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Let the numbers be x and 20 - x. P = 20x - x², P′ = 20 - 2x = 0 at x = 10, so the maximum product is 10 × 10 = 100. 96, 75 and 99 are the products 8 × 12, 5 × 15 and 9 × 11, all smaller than 10 × 10."
+    },
+    {
+      "id": "NDA-T2-035",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indefinite integrals",
+      "stem": "What is the integral of eˣ(sin x + cos x) with respect to x?",
+      "options": [
+        "eˣ(sin x - cos x) + C",
+        "eˣ sin x + C",
+        "eˣ cos x + C",
+        "-eˣ cos x + C"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "∫eˣ[f(x) + f′(x)] dx = eˣ f(x) + C. Here f(x) = sin x and f′(x) = cos x, so the integral is eˣ sin x + C. Check: d/dx (eˣ sin x) = eˣ sin x + eˣ cos x."
+    },
+    {
+      "id": "NDA-T2-036",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Definite integrals",
+      "stem": "What is the value of the integral of 1/x from 1 to e?",
+      "options": [
+        "e - 1",
+        "1",
+        "e",
+        "0"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "∫dx/x = log x. From 1 to e: log e - log 1 = 1 - 0 = 1. e - 1 is the integral of the constant 1 over the same interval."
+    },
+    {
+      "id": "NDA-T2-037",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Definite integrals",
+      "stem": "What is the value of the integral of x³ from -1 to 1?",
+      "options": [
+        "0",
+        "1/4",
+        "1/2",
+        "2"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "x³ is an odd function, so the area above the axis on (0, 1) cancels the area below it on (-1, 0) and the integral is 0. Directly: [x⁴/4] from -1 to 1 = 1/4 - 1/4 = 0. 1/2 adds the two areas."
+    },
+    {
+      "id": "NDA-T2-038",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Differential equations",
+      "stem": "What is the general solution of the differential equation dy/dx = y?",
+      "options": [
+        "y = Ceˣ",
+        "y = x + C",
+        "y = eˣ + C",
+        "y = Cx"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Separate the variables: dy/y = dx, so log|y| = x + c and y = Ceˣ. y = eˣ + C does not work, since its derivative eˣ differs from y unless C = 0."
+    },
+    {
+      "id": "NDA-T2-039",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Vectors",
+      "stem": "|a| = 3 and |b| = 4, and the angle between a and b is 30°. What is |a × b|?",
+      "options": [
+        "6√3",
+        "3",
+        "6",
+        "12"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "|a × b| = |a||b| sin θ = 3 × 4 × sin 30° = 12 × 1/2 = 6. 6√3 uses cos 30°, which gives the scalar product a · b instead."
+    },
+    {
+      "id": "NDA-T2-040",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mean",
+      "stem": "What is the mean of the first 8 even natural numbers?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "72"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The numbers are 2, 4, ..., 16. Their sum is 2 × (1 + 2 + ... + 8) = 2 × 36 = 72, and 72 / 8 = 9. 72 is the sum, not the mean, and 8 is just the count of numbers."
+    },
+    {
+      "id": "NDA-T2-041",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Combined mean",
+      "stem": "Class A has 30 students with a mean mark of 60 and class B has 20 students with a mean mark of 70. What is the mean mark of all 50 students?",
+      "options": [
+        "64",
+        "65",
+        "66",
+        "68"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Total marks = 30 × 60 + 20 × 70 = 1,800 + 1,400 = 3,200, and 3,200 / 50 = 64. 65 is the simple average of 60 and 70, which ignores that class A is larger."
+    },
+    {
+      "id": "NDA-T2-042",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Standard deviation",
+      "stem": "Every observation in a data set is multiplied by 3. What happens to the standard deviation?",
+      "options": [
+        "It does not change",
+        "It is multiplied by 9",
+        "It increases by 3",
+        "It is multiplied by 3"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Standard deviation scales with the data: multiplying each value by k multiplies the SD by |k|. The variance is multiplied by k² = 9."
+    },
+    {
+      "id": "NDA-T2-043",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Range",
+      "stem": "What is the range of 15, 22, 9, 31 and 18?",
+      "options": [
+        "9",
+        "13",
+        "18",
+        "22"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Range = largest - smallest = 31 - 9 = 22. 18 is the median, 9 the smallest value and 13 the gap between 31 and the median."
+    },
+    {
+      "id": "NDA-T2-044",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "Two fair dice are thrown. What is the probability that the sum of the numbers is 10?",
+      "options": [
+        "1/12",
+        "1/9",
+        "5/36",
+        "1/6"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Three of the 36 outcomes give 10: (4, 6), (5, 5) and (6, 4). P = 3/36 = 1/12. 1/9 is the probability of a sum of 9, 5/36 of 8 and 1/6 of 7."
+    },
+    {
+      "id": "NDA-T2-045",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "A bag holds 5 red and 3 blue balls. Two balls are drawn one after the other without replacement. What is the probability that both are red?",
+      "options": [
+        "3/14",
+        "5/14",
+        "25/64",
+        "5/8"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "P = 5/8 × 4/7 = 20/56 = 5/14. 25/64 = 5/8 × 5/8 would be right only if the first ball were put back."
+    },
+    {
+      "id": "NDA-T2-046",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Addition rule",
+      "stem": "A and B are mutually exclusive events with P(A) = 0.3 and P(B) = 0.45. What is P(A ∪ B)?",
+      "options": [
+        "0.135",
+        "0.15",
+        "0.615",
+        "0.75"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Mutually exclusive events cannot happen together, so P(A ∩ B) = 0 and P(A ∪ B) = 0.3 + 0.45 = 0.75. 0.135 is the product, which is for independent events, and 0.615 subtracts that product."
+    },
+    {
+      "id": "NDA-T2-047",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Conditional probability",
+      "stem": "P(A ∩ B) = 0.12 and P(B) = 0.4. What is P(A | B)?",
+      "options": [
+        "0.048",
+        "0.12",
+        "0.28",
+        "0.3"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "P(A | B) = P(A ∩ B) / P(B) = 0.12 / 0.4 = 0.3. 0.048 multiplies instead of dividing, and 0.28 subtracts."
+    },
+    {
+      "id": "NDA-T2-048",
+      "section": "maths",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Binomial distribution",
+      "stem": "A fair coin is tossed 4 times. What is the probability of getting exactly 3 heads?",
+      "options": [
+        "1/16",
+        "1/4",
+        "3/8",
+        "3/4"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "P = ⁴C₃ (1/2)³ (1/2) = 4/16 = 1/4. The four favourable outcomes are HHHT, HHTH, HTHH and THHH. 1/16 counts only one of them."
+    },
+    {
+      "id": "NDA-T2-049",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the word closest in meaning to the word in capitals.\n\nLACONIC",
+      "options": [
+        "Lazy",
+        "Cheerful",
+        "Brief",
+        "Talkative"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A laconic person uses very few words. Talkative is the opposite."
+    },
+    {
+      "id": "NDA-T2-050",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the word closest in meaning to the word in capitals.\n\nASTUTE",
+      "options": [
+        "Honest",
+        "Shrewd",
+        "Clumsy",
+        "Foolish"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An astute person is quick to understand a situation and use it to advantage: shrewd."
+    },
+    {
+      "id": "NDA-T2-051",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the word most nearly opposite in meaning to the word in capitals.\n\nADVERSITY",
+      "options": [
+        "Hardship",
+        "Enmity",
+        "Prosperity",
+        "Danger"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Adversity is a time of difficulty or misfortune; its opposite is prosperity. Hardship is a synonym."
+    },
+    {
+      "id": "NDA-T2-052",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the word most nearly opposite in meaning to the word in capitals.\n\nFRUGAL",
+      "options": [
+        "Extravagant",
+        "Thrifty",
+        "Poor",
+        "Careful"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Frugal means sparing with money; extravagant means spending far too much. Thrifty is a synonym."
+    },
+    {
+      "id": "NDA-T2-053",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nOne of my classmates / are joining / the Navy next year.",
+      "options": [
+        "One of my classmates",
+        "are joining",
+        "the Navy next year.",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The subject is 'one', which is singular, so the verb should be 'is joining'."
+    },
+    {
+      "id": "NDA-T2-054",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe jawan could not swim / but he jumped in the river / to save the child.",
+      "options": [
+        "The jawan could not swim",
+        "but he jumped in the river",
+        "to save the child.",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Movement from outside to inside takes 'into': 'he jumped into the river'. 'In' describes position, not movement into something."
+    },
+    {
+      "id": "NDA-T2-055",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe cadet as well as his instructors / were praised / for the mountain rescue.",
+      "options": [
+        "The cadet as well as his instructors",
+        "were praised",
+        "for the mountain rescue.",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "With 'as well as', the verb agrees with the first subject, 'the cadet', which is singular: 'was praised'."
+    },
+    {
+      "id": "NDA-T2-056",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe pilots were briefed / about the weather / before the night sortie.",
+      "options": [
+        "The pilots were briefed",
+        "about the weather",
+        "before the night sortie.",
+        "No error"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence is correct: 'were briefed' agrees with 'pilots', and 'briefed about' is standard."
+    },
+    {
+      "id": "NDA-T2-057",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe battalion has been posted in Leh ______ three years.",
+      "options": [
+        "by",
+        "since",
+        "from",
+        "for"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'For' goes with a length of time (for three years); 'since' marks the starting point (since 2023)."
+    },
+    {
+      "id": "NDA-T2-058",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nNo sooner had the whistle blown ______ the players ran onto the field.",
+      "options": [
+        "while",
+        "when",
+        "than",
+        "then"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'No sooner' is always followed by 'than'. ('Hardly' and 'scarcely' take 'when'.)"
+    },
+    {
+      "id": "NDA-T2-059",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nThe cadet, along with his instructors, __were present__ at the ceremony.",
+      "options": [
+        "are present",
+        "was present",
+        "have been present",
+        "No improvement"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "A phrase added with 'along with' or 'as well as' does not change the subject. The subject is 'the cadet', so the verb is 'was'."
+    },
+    {
+      "id": "NDA-T2-060",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nCould you tell me __where does the colonel live__?",
+      "options": [
+        "where the colonel lives",
+        "where lives the colonel",
+        "where did the colonel live",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "In an indirect question the word order is that of a statement and the auxiliary 'does' is dropped: 'Could you tell me where the colonel lives?'"
+    },
+    {
+      "id": "NDA-T2-061",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the option that best expresses the meaning of the idiom.\n\nTo hold one's ground",
+      "options": [
+        "To buy land",
+        "To stay at home",
+        "To refuse to give way",
+        "To fall to the floor"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "To hold one's ground is to stand firm and not retreat, in an argument or in battle."
+    },
+    {
+      "id": "NDA-T2-062",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the one word that can replace the phrase.\n\nA person who can use both hands equally well",
+      "options": [
+        "Ambiguous",
+        "Ambidextrous",
+        "Ambivalent",
+        "Amphibious"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Ambidextrous comes from Latin for 'right-handed on both sides'. Ambivalent means having mixed feelings, amphibious living on land and in water, and ambiguous having more than one meaning."
+    },
+    {
+      "id": "NDA-T2-063",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spelling",
+      "stem": "Select the correctly spelt word for a mission to gather information about an area.",
+      "options": [
+        "Reconaissance",
+        "Reconnaisannce",
+        "Reconnaisance",
+        "Reconnaissance"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Reconnaissance has a double n and a double s: r-e-c-o-n-n-a-i-s-s-a-n-c-e."
+    },
+    {
+      "id": "NDA-T2-064",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Direct and indirect speech",
+      "stem": "Select the correct indirect form of the sentence.\n\nThe commander said, \"We will march at dawn.\"",
+      "options": [
+        "The commander told that they would march at dawn.",
+        "The commander said that they will march at dawn.",
+        "The commander said that they would march at dawn.",
+        "The commander said that we will march at dawn."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "After a past reporting verb, 'we' becomes 'they' and 'will' moves back to 'would'. 'Told' needs an object, so 'told that' is wrong."
+    },
+    {
+      "id": "NDA-T2-065",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "NDA-RC2",
+      "stem": "According to the passage, where does the village get water for its fields in summer?",
+      "options": [
+        "From a river in the town",
+        "From a well in each field",
+        "From a glacier above the village",
+        "From summer rain"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says almost no rain falls in summer and 'the water comes from a glacier above the village'."
+    },
+    {
+      "id": "NDA-T2-066",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "NDA-RC2",
+      "stem": "How is the water shared between the families?",
+      "options": [
+        "Each field gets water in turn by an old, unwritten schedule",
+        "The family that pays most gets the most water",
+        "A government officer decides each week",
+        "Each family digs its own channel"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each family's field receives water 'in turn, by a schedule agreed long ago and remembered without being written down'."
+    },
+    {
+      "id": "NDA-T2-067",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "NDA-RC2",
+      "stem": "What happens to a family that does not send a worker for the spring clearing?",
+      "options": [
+        "They are fined by the village",
+        "Neighbours are slow to help them later",
+        "They must clear the channels alone",
+        "They lose their water for the year"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says such families 'are not punished, but they find that neighbours are slow to help them later'."
+    },
+    {
+      "id": "NDA-T2-068",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "NDA-RC2",
+      "stem": "Which of these can be inferred from the passage?",
+      "options": [
+        "The glacier will disappear within a few years",
+        "Young people refuse to join the spring clearing",
+        "The village's farming depends on people working together",
+        "The channels were built recently"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Fields depend on shared channels that everyone clears together, with no pay. The passage says only that older villagers worry about the glacier, not when it will disappear, and it says the clearing still goes on."
+    },
+    {
+      "id": "NDA-T2-069",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Light",
+      "stem": "A mirage seen on a hot road is caused by:",
+      "options": [
+        "Refraction and total internal reflection in layers of hot air",
+        "Dispersion of light by dust",
+        "Reflection of light from water on the road",
+        "Diffraction of light round the vehicles"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Air just above the hot road is less dense, so light from the sky bends more and more until it is totally reflected upward. The eye sees an image of the sky that looks like water; there is no water."
+    },
+    {
+      "id": "NDA-T2-070",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Atomic structure",
+      "stem": "Atoms of different elements that have the same mass number but different atomic numbers are called:",
+      "options": [
+        "Isobars",
+        "Isotones",
+        "Allotropes",
+        "Isotopes"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Isobars share a mass number: argon-40 and calcium-40 both have 40 nucleons, but 18 and 20 protons. Isotopes are atoms of one element with different mass numbers, isotones have the same number of neutrons, and allotropes are different forms of one element, such as diamond and graphite."
+    },
+    {
+      "id": "NDA-T2-071",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient India",
+      "stem": "Which Chola king built the Brihadisvara temple at Thanjavur?",
+      "options": [
+        "Rajaraja I",
+        "Karikala",
+        "Kulottunga I",
+        "Rajendra I"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Rajaraja I completed the great temple at Thanjavur in about 1010 CE. His son Rajendra I built a new capital, Gangaikonda Cholapuram, after his northern campaign."
+    },
+    {
+      "id": "NDA-T2-072",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Solar system",
+      "stem": "The asteroid belt lies between the orbits of:",
+      "options": [
+        "Earth and Mars",
+        "Venus and Earth",
+        "Mars and Jupiter",
+        "Jupiter and Saturn"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Most asteroids orbit the Sun between Mars and Jupiter. Ceres, the largest object there, is classed as a dwarf planet."
+    },
+    {
+      "id": "NDA-T2-073",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Surface tension",
+      "stem": "A clean steel needle placed gently on still water can float. This is due to:",
+      "options": [
+        "Capillarity",
+        "Osmosis",
+        "Surface tension",
+        "Viscosity"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The water surface behaves like a stretched skin because of surface tension, and it can support the needle even though steel is denser than water. A drop of soap lowers the surface tension and the needle sinks."
+    },
+    {
+      "id": "NDA-T2-074",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Periodic table",
+      "stem": "Which is the most reactive non-metal?",
+      "options": [
+        "Nitrogen",
+        "Fluorine",
+        "Oxygen",
+        "Chlorine"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Fluorine has the strongest pull on electrons of any element (the highest electronegativity), so it reacts with almost everything. Reactivity of halogens falls down the group from fluorine to iodine."
+    },
+    {
+      "id": "NDA-T2-075",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval India",
+      "stem": "The Ashtapradhan was:",
+      "options": [
+        "The Sultanate's land revenue system",
+        "A Vijayanagara temple tax",
+        "Akbar's system of ranking officials",
+        "Shivaji's council of eight ministers"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Shivaji's Ashtapradhan included the Peshwa (chief minister), the Senapati (commander) and six others. Akbar's ranking system was the mansabdari system."
+    },
+    {
+      "id": "NDA-T2-076",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rocks",
+      "stem": "Marble is a metamorphic rock formed from:",
+      "options": [
+        "Limestone",
+        "Shale",
+        "Sandstone",
+        "Granite"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Heat and pressure recrystallise limestone into marble. Sandstone becomes quartzite, shale becomes slate, and granite becomes gneiss."
+    },
+    {
+      "id": "NDA-T2-077",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Light",
+      "stem": "A ray of light strikes a plane mirror with an angle of incidence of 30°. What is the angle between the incident ray and the reflected ray?",
+      "options": [
+        "30°",
+        "60°",
+        "90°",
+        "120°"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The angle of reflection equals the angle of incidence, 30°. Both are measured from the normal, so the angle between the two rays is 30° + 30° = 60°."
+    },
+    {
+      "id": "NDA-T2-078",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Acids and bases",
+      "stem": "A solution turns red litmus paper blue. The solution is:",
+      "options": [
+        "Acidic",
+        "Saline",
+        "Basic",
+        "Neutral"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Bases turn red litmus blue; acids turn blue litmus red. A neutral solution leaves both unchanged."
+    },
+    {
+      "id": "NDA-T2-079",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval India",
+      "stem": "Which Mughal emperor abolished the jizya, the tax on non-Muslims, in 1564?",
+      "options": [
+        "Babur",
+        "Jahangir",
+        "Akbar",
+        "Aurangzeb"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Akbar abolished the jizya in 1564, as part of his policy of treating all his subjects alike. Aurangzeb brought it back in 1679."
+    },
+    {
+      "id": "NDA-T2-080",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Oceans",
+      "stem": "Which ocean current is cold?",
+      "options": [
+        "Gulf Stream",
+        "Brazil Current",
+        "Kuroshio Current",
+        "Labrador Current"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Labrador Current brings cold Arctic water south past Newfoundland, where it meets the warm Gulf Stream and causes fog. The other three are warm currents."
+    },
+    {
+      "id": "NDA-T2-081",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Momentum",
+      "stem": "The mass of a moving body is doubled and its velocity is halved. What happens to its momentum?",
+      "options": [
+        "It halves",
+        "It doubles",
+        "It becomes four times as large",
+        "It stays the same"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Momentum p = mv. (2m) × (v/2) = mv, so it is unchanged. Its kinetic energy, ½mv², would halve."
+    },
+    {
+      "id": "NDA-T2-082",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alloys",
+      "stem": "Duralumin, used in aircraft bodies, is an alloy mainly of:",
+      "options": [
+        "Zinc",
+        "Aluminium",
+        "Copper",
+        "Iron"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Duralumin is about 95 percent aluminium with copper, magnesium and manganese. It is light like aluminium but much stronger."
+    },
+    {
+      "id": "NDA-T2-083",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient India",
+      "stem": "The Ajanta cave paintings mainly show:",
+      "options": [
+        "Scenes from the life of the Buddha and the Jataka tales",
+        "Portraits of British officials",
+        "Battles of the Mughal emperors",
+        "Scenes from the Mahabharata war only"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Ajanta caves in Maharashtra are Buddhist monasteries and halls. Their wall paintings, mostly from the 5th century CE, illustrate the Buddha's life and the Jataka stories of his earlier lives."
+    },
+    {
+      "id": "NDA-T2-084",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Earth",
+      "stem": "The Tropic of Capricorn passes through which of these countries?",
+      "options": [
+        "Mexico",
+        "Egypt",
+        "Brazil",
+        "India"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Tropic of Capricorn (about 23.5° S) crosses Brazil, Paraguay, Argentina, Chile, southern Africa, Madagascar and Australia. India, Egypt and Mexico are crossed by the Tropic of Cancer."
+    },
+    {
+      "id": "NDA-T2-085",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Work and energy",
+      "stem": "What is the kinetic energy of a 4 kg ball moving at 5 m/s?",
+      "options": [
+        "10 J",
+        "20 J",
+        "50 J",
+        "100 J"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "KE = ½mv² = ½ × 4 × 5² = 50 J. 20 J is the momentum value mv (in kg m/s, not joules), and 100 J forgets the ½."
+    },
+    {
+      "id": "NDA-T2-086",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Periodic table",
+      "stem": "Noble gases such as argon hardly react with other elements because:",
+      "options": [
+        "They are found only in small amounts",
+        "Their outermost electron shells are full",
+        "They are radioactive",
+        "They are very heavy"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A full outer shell (an octet, or a duplet for helium) is very stable, so these atoms do not easily gain, lose or share electrons."
+    },
+    {
+      "id": "NDA-T2-087",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern India",
+      "stem": "Who called the Revolt of 1857 'the First War of Indian Independence' in a book of that name?",
+      "options": [
+        "V. D. Savarkar",
+        "Jawaharlal Nehru",
+        "Karl Marx",
+        "R. C. Majumdar"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "V. D. Savarkar's book The Indian War of Independence, 1857, written in 1909, called it the first war of independence. The historian R. C. Majumdar argued it was neither the first nor a national war of independence."
+    },
+    {
+      "id": "NDA-T2-088",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Climate",
+      "stem": "Western disturbances, which bring winter rain and snow to north-west India, come from:",
+      "options": [
+        "The Tibetan plateau",
+        "The Arabian Sea in summer",
+        "The Mediterranean region",
+        "The Bay of Bengal"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Western disturbances are low-pressure systems that start over the Mediterranean and travel east with the westerly jet stream. Their winter rain helps the rabi crop in Punjab and Haryana."
+    },
+    {
+      "id": "NDA-T2-089",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Electricity",
+      "stem": "An electric bulb is rated 60 W, 240 V. What is the resistance of its filament when it is working?",
+      "options": [
+        "960 Ω",
+        "0.25 Ω",
+        "4 Ω",
+        "14400 Ω"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "P = V²/R, so R = V²/P = 240 × 240 / 60 = 57,600 / 60 = 960 Ω. 0.25 is the current in amperes (60/240), 4 is 240/60 and 14400 is 240 × 60."
+    },
+    {
+      "id": "NDA-T2-090",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Atomic structure",
+      "stem": "Which is the lightest element?",
+      "options": [
+        "Lithium",
+        "Helium",
+        "Hydrogen",
+        "Oxygen"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Hydrogen, atomic number 1, has the lowest atomic mass. Helium, atomic number 2, is the second lightest."
+    },
+    {
+      "id": "NDA-T2-091",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern India",
+      "stem": "The Deccan Education Society, founded in Pune in 1884, counted which nationalist leader among its founders?",
+      "options": [
+        "Dadabhai Naoroji",
+        "Surendranath Banerjee",
+        "Lala Lajpat Rai",
+        "Bal Gangadhar Tilak"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Tilak, Gopal Ganesh Agarkar and others had started the New English School in 1880 with Vishnushastri Chiplunkar; in 1884 they founded the Deccan Education Society, which set up Fergusson College in 1885. Naoroji and Banerjee were early Congress leaders from Bombay and Bengal, and Lajpat Rai was from Punjab."
+    },
+    {
+      "id": "NDA-T2-092",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian geography",
+      "stem": "Mount Saramati, the highest peak of Nagaland, lies on the border with:",
+      "options": [
+        "China",
+        "Bhutan",
+        "Myanmar",
+        "Bangladesh"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Saramati (about 3,840 m) is in the Naga Hills on the India-Myanmar border."
+    },
+    {
+      "id": "NDA-T2-093",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Electricity",
+      "stem": "An ammeter is connected in a circuit:",
+      "options": [
+        "In parallel, and has a very low resistance",
+        "In series, and has a very low resistance",
+        "In series, and has a very high resistance",
+        "In parallel, and has a very high resistance"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "All the current must pass through an ammeter, so it goes in series, and its resistance must be very low so it does not change the current. A voltmeter goes in parallel with a very high resistance."
+    },
+    {
+      "id": "NDA-T2-094",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Human body",
+      "stem": "Which gland in the human body works both as an endocrine and as an exocrine gland?",
+      "options": [
+        "Adrenal",
+        "Thyroid",
+        "Pancreas",
+        "Pituitary"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The pancreas pours digestive juice into the intestine through a duct (exocrine) and releases insulin and glucagon into the blood (endocrine). The other three are endocrine only."
+    },
+    {
+      "id": "NDA-T2-095",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom movement",
+      "stem": "Who was the first Indian elected to the British House of Commons?",
+      "options": [
+        "Badruddin Tyabji",
+        "Dadabhai Naoroji",
+        "Surendranath Banerjee",
+        "Pherozeshah Mehta"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Dadabhai Naoroji won Finsbury Central in 1892. His 'drain theory' argued that British rule drained India's wealth."
+    },
+    {
+      "id": "NDA-T2-096",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Agriculture",
+      "stem": "Shifting cultivation in north-east India, in which a patch of forest is cleared, farmed for a few years and then left, is called:",
+      "options": [
+        "Jhum",
+        "Ley farming",
+        "Terrace farming",
+        "Plantation farming"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Jhum is slash-and-burn farming practised in the hills of the north-east. It is known by other names elsewhere, such as podu in Andhra Pradesh and Odisha."
+    },
+    {
+      "id": "NDA-T2-097",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sound",
+      "stem": "Two astronauts on the Moon cannot hear each other speak directly because:",
+      "options": [
+        "Their voices are too low",
+        "The Moon's gravity is weak",
+        "Sound needs a medium to travel",
+        "The Moon is too cold"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Moon has almost no atmosphere, and sound is a mechanical wave that needs a medium. Astronauts talk by radio, since radio waves are electromagnetic and cross a vacuum."
+    },
+    {
+      "id": "NDA-T2-098",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Human body",
+      "stem": "About how long does a red blood cell live in the human body?",
+      "options": [
+        "7 days",
+        "12 days",
+        "120 days",
+        "365 days"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "A red blood cell has no nucleus and lasts about 120 days, after which it is broken down, mainly in the spleen and liver."
+    },
+    {
+      "id": "NDA-T2-099",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom movement",
+      "stem": "In which year was Subhas Chandra Bose elected president of the Indian National Congress at its Haripura session?",
+      "options": [
+        "1929",
+        "1931",
+        "1938",
+        "1942"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Bose presided over the Haripura session in February 1938. He was re-elected in 1939 at Tripuri but resigned after differences with Gandhiji and formed the Forward Bloc."
+    },
+    {
+      "id": "NDA-T2-100",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian geography",
+      "stem": "Long, flat-floored valleys between the Shiwaliks and the Lesser Himalaya, such as the one in which Dehradun stands, are called:",
+      "options": [
+        "Karewas",
+        "Doabs",
+        "Duns",
+        "Kayals"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Duns (or doons) are longitudinal valleys between the Shiwalik range and the Lesser Himalaya; Dehradun and Patli Dun are examples. A doab is the land between two rivers, karewas are lake deposits in the Kashmir valley, and kayals are the backwaters of Kerala."
+    },
+    {
+      "id": "NDA-T2-101",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Light",
+      "stem": "An object is placed at the centre of curvature of a concave mirror. The image formed is:",
+      "options": [
+        "Virtual, erect and magnified",
+        "Virtual, erect and diminished",
+        "Real, inverted and diminished",
+        "Real, inverted and the same size as the object"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Rays from an object at C come back through C, so the image forms at C itself, real, inverted and of the same size. Beyond C the image is real and diminished; between F and the mirror it is virtual, erect and magnified."
+    },
+    {
+      "id": "NDA-T2-102",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Human body",
+      "stem": "Which hormone controls the level of calcium in the blood?",
+      "options": [
+        "Insulin",
+        "Adrenaline",
+        "Parathyroid hormone",
+        "Growth hormone"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The parathyroid glands, behind the thyroid, release parathormone, which raises blood calcium. Insulin controls blood sugar."
+    },
+    {
+      "id": "NDA-T2-103",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "How many Schedules did the Constitution of India have when it came into force in 1950?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The original Constitution had 8 Schedules. Amendments have since added the 9th (1951), 10th (1985, anti-defection), 11th (1992, panchayats) and 12th (1992, municipalities), making 12."
+    },
+    {
+      "id": "NDA-T2-104",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Earth",
+      "stem": "Day and night are caused by:",
+      "options": [
+        "The revolution of the Earth around the Sun",
+        "The tilt of the Earth's axis",
+        "The movement of the Moon",
+        "The rotation of the Earth on its axis"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Earth turns on its axis once in about 24 hours, so each place faces the Sun and then turns away. Revolution and the tilt of the axis together cause the seasons."
+    },
+    {
+      "id": "NDA-T2-105",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sound",
+      "stem": "During a storm we see the lightning before we hear the thunder because:",
+      "options": [
+        "Light travels much faster than sound",
+        "Sound is absorbed by clouds",
+        "Our eyes react faster than our ears",
+        "Thunder is produced after the lightning"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Both are produced together, but light travels at about 3 × 10⁸ m/s and sound at about 340 m/s in air. Counting the seconds between flash and sound gives the distance: about 3 seconds per kilometre."
+    },
+    {
+      "id": "NDA-T2-106",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Human body",
+      "stem": "Which blood vessels have valves to stop blood flowing backwards?",
+      "options": [
+        "Veins",
+        "Arteries",
+        "Aorta only",
+        "Capillaries"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Blood in veins is at low pressure, so valves keep it moving towards the heart. Arteries carry blood away from the heart under high pressure and have no such valves along their length."
+    },
+    {
+      "id": "NDA-T2-107",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "The idea of a single citizenship for the whole country, as in the Constitution of India, was taken from the constitution of:",
+      "options": [
+        "Canada",
+        "the United States",
+        "Britain",
+        "Ireland"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Like Britain, India has one citizenship for the whole country. The United States has dual citizenship, of the federation and of each state. Directive Principles were borrowed from Ireland."
+    },
+    {
+      "id": "NDA-T2-108",
+      "section": "gat",
+      "test": 2,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Earth",
+      "stem": "Most tsunamis are caused by:",
+      "options": [
+        "Earthquakes under the sea floor",
+        "Strong winds over the ocean",
+        "The pull of the Moon at high tide",
+        "Melting icebergs"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A sudden movement of the sea floor in an undersea earthquake lifts a huge column of water, which spreads as a tsunami. The 2004 Indian Ocean tsunami began with an earthquake off Sumatra."
+    },
+    {
+      "id": "NDA-D-001",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sets",
+      "stem": "How many elements does the power set of the empty set have?",
+      "options": [
+        "2",
+        "Infinitely many",
+        "0",
+        "1"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The empty set has exactly one subset, itself, so its power set is {∅}, which has 1 element (2⁰ = 1)."
+    },
+    {
+      "id": "NDA-D-002",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Complex numbers",
+      "stem": "What is the product (4 + i)(4 - i)?",
+      "options": [
+        "8 + 2i",
+        "16",
+        "15",
+        "17"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "(a + bi)(a - bi) = a² + b², so (4 + i)(4 - i) = 16 + 1 = 17. 15 comes from treating i² as +1."
+    },
+    {
+      "id": "NDA-D-003",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometric ratios",
+      "stem": "What is the value of cos 0° + cos 90° + cos 180°?",
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "cos 0° = 1, cos 90° = 0 and cos 180° = -1, so the sum is 1 + 0 - 1 = 0."
+    },
+    {
+      "id": "NDA-D-004",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaTrigGeo",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Straight lines",
+      "stem": "What is the equation of the line through (1, 2) with slope 3?",
+      "options": [
+        "y = 3x + 2",
+        "y = 3x + 1",
+        "y = 2x + 3",
+        "y = 3x - 1"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Point-slope form: y - 2 = 3(x - 1), so y = 3x - 3 + 2 = 3x - 1. Check: at x = 1, y = 2."
+    },
+    {
+      "id": "NDA-D-005",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Derivatives",
+      "stem": "What is the derivative of cos x at x = π/2?",
+      "options": [
+        "-1",
+        "0",
+        "1/2",
+        "1"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "d/dx (cos x) = -sin x. At x = π/2 this is -sin(π/2) = -1. 0 is the value of cos x itself at π/2."
+    },
+    {
+      "id": "NDA-D-006",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Definite integrals",
+      "stem": "What is the value of the integral of 2x from 0 to 3?",
+      "options": [
+        "3",
+        "4.5",
+        "6",
+        "9"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "∫2x dx = x². From 0 to 3: 9 - 0 = 9. 6 is the value of 2x at x = 3, not the integral, and 4.5 integrates 2x wrongly as x²/2."
+    },
+    {
+      "id": "NDA-D-007",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mean",
+      "stem": "The mean of 6 numbers is 15. When one number, 25, is removed, what is the mean of the remaining 5?",
+      "options": [
+        "10.8",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Total = 6 × 15 = 90. Without 25 the total is 65, and 65 / 5 = 13. 10.8 (65 / 6, rounded) subtracts 25 from the total but still divides by 6."
+    },
+    {
+      "id": "NDA-D-008",
+      "section": "maths",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaStats",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "What is the probability that a leap year, chosen at random, has 53 Sundays?",
+      "options": [
+        "1/7",
+        "53/366",
+        "2/7",
+        "1/2"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "A leap year has 366 days: 52 full weeks plus 2 extra days. The 2 extra days form one of 7 equally likely pairs (Sun-Mon, Mon-Tue, ..., Sat-Sun), and 2 of them contain a Sunday, so P = 2/7."
+    },
+    {
+      "id": "NDA-D-009",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the word closest in meaning to the word in capitals.\n\nLETHARGIC",
+      "options": [
+        "Energetic",
+        "Sluggish",
+        "Alert",
+        "Angry"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Lethargic means lacking energy: sluggish. Energetic and alert are opposites."
+    },
+    {
+      "id": "NDA-D-010",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the word most nearly opposite in meaning to the word in capitals.\n\nMAGNANIMOUS",
+      "options": [
+        "Large-hearted",
+        "Petty",
+        "Generous",
+        "Noble"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Magnanimous means generous and forgiving, especially towards a rival. Its opposite is petty; the other three are synonyms."
+    },
+    {
+      "id": "NDA-D-011",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe sentry was accused ______ sleeping on duty.",
+      "options": [
+        "about",
+        "of",
+        "for",
+        "with"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The verb 'accuse' takes 'of': to accuse someone of something."
+    },
+    {
+      "id": "NDA-D-012",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaEnglish",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe team has reached / the summit / two days ago.",
+      "options": [
+        "The team has reached",
+        "the summit",
+        "two days ago.",
+        "No error"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "A definite past time such as 'two days ago' needs the simple past, not the present perfect: 'The team reached the summit two days ago.'"
+    },
+    {
+      "id": "NDA-D-013",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Waves",
+      "stem": "Which of these waves cannot be polarised?",
+      "options": [
+        "Sound waves in air",
+        "Radio waves",
+        "Light waves",
+        "X-rays"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Only transverse waves can be polarised. Sound in air is longitudinal; light, radio waves and X-rays are transverse electromagnetic waves."
+    },
+    {
+      "id": "NDA-D-014",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Metals",
+      "stem": "Copper is purified by passing an electric current through a solution of copper sulphate. This process is called:",
+      "options": [
+        "Galvanisation",
+        "Electrolytic refining",
+        "Calcination",
+        "Vulcanisation"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In electrolytic refining the impure copper is the anode and a thin sheet of pure copper the cathode; pure copper builds up on the cathode and impurities fall as anode mud."
+    },
+    {
+      "id": "NDA-D-015",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient India",
+      "stem": "Under whose direction were the first excavations at Harappa carried out in 1921?",
+      "options": [
+        "Daya Ram Sahni",
+        "James Prinsep",
+        "R. D. Banerji",
+        "Mortimer Wheeler"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Daya Ram Sahni excavated Harappa in 1921; R. D. Banerji began work at Mohenjo-daro in 1922. Mortimer Wheeler dug at both sites later, at Harappa in 1946 and at Mohenjo-daro in 1950."
+    },
+    {
+      "id": "NDA-D-016",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Earth",
+      "stem": "On which dates are day and night roughly equal all over the world?",
+      "options": [
+        "About 21 June and 22 December",
+        "About 15 August and 26 January",
+        "About 21 March and 23 September",
+        "About 1 January and 1 July"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "These are the equinoxes, when the Sun is overhead at the equator. 21 June and 22 December are the solstices, the longest and shortest days in the northern hemisphere."
+    },
+    {
+      "id": "NDA-D-017",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaPhysics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Electromagnetic waves",
+      "stem": "The remote control of a television usually sends signals using:",
+      "options": [
+        "Gamma rays",
+        "Ultraviolet rays",
+        "Infrared rays",
+        "X-rays"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Most TV remotes have an infrared LED that sends coded pulses to a sensor on the set. Ultraviolet, X-rays and gamma rays are harmful in large doses and are not used for this."
+    },
+    {
+      "id": "NDA-D-018",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaChemBio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Human body",
+      "stem": "Which part of the human brain regulates body temperature, hunger and thirst?",
+      "options": [
+        "Cerebrum",
+        "Hypothalamus",
+        "Medulla oblongata",
+        "Cerebellum"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The hypothalamus, at the base of the brain, controls temperature, hunger, thirst and the pituitary gland. The cerebellum keeps balance, the medulla controls breathing and heartbeat, and the cerebrum handles thought and voluntary action."
+    },
+    {
+      "id": "NDA-D-019",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom movement",
+      "stem": "The Hindustan Socialist Republican Association, to which Bhagat Singh and Chandrashekhar Azad belonged, was given that name in:",
+      "options": [
+        "1919",
+        "1928",
+        "1935",
+        "1942"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The Hindustan Republican Association was renamed the Hindustan Socialist Republican Association at a meeting at Feroz Shah Kotla in Delhi in September 1928."
+    },
+    {
+      "id": "NDA-D-020",
+      "section": "gat",
+      "test": 0,
+      "module": 1,
+      "domain": "ndaGeography",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian geography",
+      "stem": "The coastal plain between the Western Ghats and the Arabian Sea in Kerala is known as the:",
+      "options": [
+        "Coromandel coast",
+        "Northern Circars",
+        "Konkan coast",
+        "Malabar coast"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Malabar coast runs along Kerala and southern Karnataka, with lagoons called kayals. The Konkan coast is to its north, and the Coromandel coast and Northern Circars are on the east."
+    }
+  ]
+}

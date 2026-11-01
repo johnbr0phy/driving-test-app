@@ -1,0 +1,4632 @@
+{
+  "stimuli": [
+    {
+      "id": "APWORLD-T1-S01",
+      "title": "A North African traveler's account of a West African court, 1350s (practice text)",
+      "text": "The king holds audience in a pavilion hung with silk, and his guards carry lances worked with gold. His judges studied the law in Fez and Cairo, and in the mosques of the town boys learn to recite the Quran in Arabic, though at home their fathers speak the tongue of the country. Caravans from the north unload slabs of salt and carry away gold dust, and the merchants praise the king's officers for keeping the roads free of thieves."
+    },
+    {
+      "id": "APWORLD-T1-S02",
+      "title": "A Chinese official's memorial to the emperor, 1100s (practice text)",
+      "text": "Since the new early-ripening rice was brought from the south, the fields of the river valleys give two harvests a year, and the markets of the capital overflow. Yet a full granary is not enough. The empire must be governed by men who have mastered the classics and passed the examinations, so that office goes to the learned and the virtuous, not to the sons of great families."
+    },
+    {
+      "id": "APWORLD-T1-S03",
+      "title": "A Persian court historian on the Mongol khans, c. 1300 (practice text)",
+      "text": "The khans have made the roads from China to the lands of the Franks safe for merchants. Post stations stand a day's ride apart, and a tablet from the khan opens every gate. Physicians from Cathay work beside our own, and astronomers from many lands meet in the observatory. Yet the cities that resisted them, Baghdad among them, were left in ruins."
+    },
+    {
+      "id": "APWORLD-T2-S01",
+      "title": "A historian's interpretation (practice text)",
+      "text": "By the 1200s the Abbasid caliphs held little power outside Baghdad. Real authority had passed to Turkic military rulers, the Seljuks and later others, who claimed to defend the faith while governing in their own name. Yet the decline of the caliphate did not end the intellectual life of Dar al-Islam. Scholars in Cairo, Damascus and Samarkand went on translating, studying and adding to Greek, Persian and Indian learning in medicine, mathematics and astronomy."
+    },
+    {
+      "id": "APWORLD-T2-S02",
+      "title": "An Arab merchant's description of a city on the East African coast, 1330s (practice text)",
+      "text": "The houses of the town are built of coral stone, and its sultan lives in a palace above the harbor. Ships arrive from Arabia, Persia and India when the winds of winter blow from the northeast and leave when they turn in summer. The people trade ivory and gold from the interior for cloth, beads and porcelain. They speak a language of their own, though many of its words are Arabic, and the merchants pray in the mosque on the shore."
+    },
+    {
+      "id": "APWORLD-T2-S03",
+      "title": "A Spanish soldier's memoir of a Mexica city, written in the 1560s about 1519 (practice text)",
+      "text": "From the hills we looked down on their capital, set on an island in the lake and linked to the shore by long causeways, with fields of mud and reeds built up out of the shallows around it. In the market thousands bought and sold maize, cotton cloth, cacao and feathers. Officials told us that every province subject to their lord sent tribute of food, cloth and captives, and that many of those provinces hated him for it."
+    },
+    {
+      "id": "APWORLD-D-S01",
+      "title": "A Buddhist monk's account of a visit to a Southeast Asian kingdom, 1290s (practice text)",
+      "text": "The great temple of the capital was built by earlier kings for the Hindu gods, and its walls are carved with the stories of Vishnu. Today most of the people follow the teaching of the Buddha, and monks in yellow robes walk the streets each morning. Water from the reservoirs flows through canals to the rice fields, and the king's officers watch over it closely."
+    },
+    {
+      "id": "APWORLD-D-S02",
+      "title": "A historian's interpretation (practice text)",
+      "text": "The plague that struck Afro-Eurasia in the 1340s traveled the same roads and sea lanes that carried silk and spices. In places it killed a third or more of the people. In western Europe the survivors found their labor suddenly scarce, and many peasants demanded and won higher wages or left their lords for the towns. In the Islamic world and China the losses were as great, but the social results differed from place to place."
+    },
+    {
+      "id": "APWORLD-D-S03",
+      "title": "A Spanish chronicler's description of the Inca state, 1550s (practice text)",
+      "text": "The lords of Cuzco joined their lands with roads that climb the mountains and cross the gorges on bridges of rope. Every household owed the state a turn of labor each year, building roads, working the lord's fields or serving as soldiers. Officials kept the accounts of every province on knotted cords, which they read as well as we read our books."
+    },
+    {
+      "id": "APWORLD-T1-S04",
+      "title": "A European ambassador's letter from the Ottoman court, 1550s (practice text)",
+      "text": "The sultan's governors are not great lords with lands of their own but his servants. His officers take boys from the Christian villages of the Balkans, raise them as Muslims and train them for the palace or the army, and the ablest rise to govern provinces. His foot soldiers carry firearms and are drilled every day, and his cannon brought down the walls of cities we thought could never fall. In Istanbul the great mosques rise over the city to proclaim his glory."
+    },
+    {
+      "id": "APWORLD-T1-S05",
+      "title": "Selected land-based empires, c. 1450 to c. 1750",
+      "text": "| Empire | Ruling group | Religion of the rulers | Most subjects |\n|---|---|---|---|\n| Ottoman | Turkic dynasty | Sunni Islam | Muslims, with large Christian and Jewish minorities |\n| Safavid | Turkic-Persian dynasty | Shia Islam | Muslims in Persia |\n| Mughal | Central Asian Turkic-Mongol dynasty | Sunni Islam | Hindus |\n| Qing | Manchus from the northeast | Buddhism and Confucian state rites | Han Chinese |"
+    },
+    {
+      "id": "APWORLD-T2-S04",
+      "title": "A Mughal court historian's account of the emperor's debates, 1580s (practice text)",
+      "text": "On Thursday nights the emperor gathers learned men of every faith in the hall of worship: Sunni and Shia scholars, Brahmins, Jain teachers, Zoroastrian priests and even the Jesuit fathers from Goa. He listens to them argue and asks questions of his own. He has lifted the tax that non-Muslims paid, and Rajput princes who follow the Hindu gods command his armies and sit in his council."
+    },
+    {
+      "id": "APWORLD-T2-S05",
+      "title": "Two historians' interpretations (practice text)",
+      "text": "**Historian A:** The Ottoman, Safavid and Mughal states owed their rise to firearms. Cannon broke the walls of rival cities, and infantry with muskets defeated the horse archers who had ruled the battlefield for centuries. Only rulers rich enough to buy guns and pay soldiers could compete, and so power gathered in a few large states.\n\n**Historian B:** Guns were available to many rulers; what set the great empires apart was how they governed. They built salaried bureaucracies, surveyed land for taxes, bargained with local elites and religious leaders, and used splendid courts and buildings to persuade subjects that their rule was just."
+    },
+    {
+      "id": "APWORLD-D-S04",
+      "title": "A Persian shah's proclamation, early 1500s (practice text)",
+      "text": "Let it be known in every city of our realm that the faith of the Twelve Imams is the faith of this kingdom. Preachers shall honor the family of the Prophet in every Friday sermon, and scholars of that faith are invited from Arabia and Lebanon to teach in our cities. Those who curse the Imams shall be punished, and the enemy to the west who denies them shall find us ready."
+    },
+    {
+      "id": "APWORLD-D-S05",
+      "title": "A German pamphlet, 1520s (practice text)",
+      "text": "The Christian is saved by faith alone, not by buying pardons from Rome. Every man may read the Scriptures for himself, now that the printers have put them into our own tongue for a few coins. Why should German princes send their silver south to build churches in Rome, when the Pope has no power over the conscience that God has not given him?"
+    },
+    {
+      "id": "APWORLD-D-S06",
+      "title": "A scholar's chronicle of a West African empire, 1650s (practice text)",
+      "text": "In the days of the great askia the empire reached from the ocean to the lands east of the river. Timbuktu was full of scholars who taught law and grammar in the mosques, and students came to them from across the Sahel. Then the army of the sultan of Morocco crossed the desert with muskets and cannon, which our cavalry had never faced, and the empire broke apart."
+    },
+    {
+      "id": "APWORLD-T1-S06",
+      "title": "A Portuguese captain's report to his king, 1510s (practice text)",
+      "text": "We found these seas full of ships, Arab, Gujarati and Chinese, trading in pepper, cloth and spices as their fathers did. They have no fleet that can stand against our guns. We have taken the port of Goa and built a fortress there, and no ship may now sail these waters without a pass from our captains. Those that refuse are seized, and the duties we collect will pay for the fleet many times over."
+    },
+    {
+      "id": "APWORLD-T1-S07",
+      "title": "A Chinese scholar's essay on silver, 1630s (practice text)",
+      "text": "Silver now pours into our ports from the ships of the foreigners at Luzon, who bring it across the great ocean from their mines in lands far to the east. The court demands that the land tax be paid in silver, so the farmer must sell his grain for coin. When the ships fail to come, silver grows dear, and the farmer must sell twice as much grain to pay the same tax."
+    },
+    {
+      "id": "APWORLD-T2-S06",
+      "title": "Estimated number of enslaved Africans carried across the Atlantic, by period (rounded)",
+      "text": "| Period | Enslaved Africans embarked |\n|---|---|\n| 1501-1600 | 0.3 million |\n| 1601-1700 | 1.9 million |\n| 1701-1800 | 6.5 million |\n| 1801-1866 | 3.9 million |\n\nNote: estimates of people put on ships in Africa. Many died during the voyage."
+    },
+    {
+      "id": "APWORLD-T2-S07",
+      "title": "Orders from a Japanese shogun's council to the governor of a port, 1640s (practice text)",
+      "text": "The Portuguese ships are not to be received again; their priests stirred up the peasants of the south to rebellion, and every household in the domains must now show each year, at its Buddhist temple, that it holds no part in their teaching. Our own people are not to cross the sea, and none who has gone abroad is to be let back. The Dutch, who bring no priests, may keep their trading house on the small island in the harbor, and Chinese junks may still come, both under the watch of the governor."
+    },
+    {
+      "id": "APWORLD-D-S07",
+      "title": "A historian's interpretation (practice text)",
+      "text": "The crops that crossed the oceans after 1500 changed diets far from the Americas. Maize and cassava became staple foods across much of West and Central Africa, and sweet potatoes and maize could be grown on Chinese hillsides where rice would not grow. In the other direction, sugar cane, carried from the Old World to the Caribbean and Brazil, became the crop around which whole colonial societies were built."
+    },
+    {
+      "id": "APWORLD-D-S08",
+      "title": "A Dutch merchant's report to the directors of his company, 1620s (practice text)",
+      "text": "The company now holds the islands where the nutmeg grows, and no other nation may buy a single nut except from us. We have built our headquarters at Batavia, where the ships gather before the voyage home. The shareholders in Amsterdam may expect a handsome return, for we fix the price of spices in Europe as we please."
+    },
+    {
+      "id": "APWORLD-D-S09",
+      "title": "A planter's letter from a Caribbean sugar island, 1730s (practice text)",
+      "text": "We must buy new Africans every year, for the work of the cane fields and the boiling houses wears them out faster than children are born to replace them. Some run off to the mountains, where the free communities of runaways take them in. These people have beaten our soldiers more than once, and the governor now talks of a treaty with them."
+    },
+    {
+      "id": "APWORLD-T1-S08",
+      "title": "Two historians' interpretations (practice text)",
+      "text": "**Historian A:** The revolution in Saint-Domingue began in Paris. When the French revolutionaries declared that men are born free and equal in rights, they handed the enslaved people of the richest colony in the world a language of liberty that they turned against their masters, and against France itself.\n\n**Historian B:** The enslaved of Saint-Domingue needed no French pamphlets to know that slavery was wrong. Most were born in Africa, many had been soldiers there, and the colony's sugar estates worked them to death. Their rising in 1791 grew from that experience, from African traditions and from networks built among the plantations."
+    },
+    {
+      "id": "APWORLD-T1-S09",
+      "title": "A Japanese reformer's essay, 1870s (practice text)",
+      "text": "When the black ships came into our harbor, we learned that courage and swords are no match for steam and cannon. If Japan is not to be carved up like China, we must learn from the West what makes it strong. The government has sent students to Europe and America, built railways and mills, and raised an army of conscripts. Let us take their science and their industry, and keep our own spirit."
+    },
+    {
+      "id": "APWORLD-T2-S08",
+      "title": "A speech to a town council in New Granada by a locally born lawyer, 1810 (practice text)",
+      "text": "Gentlemen, our families have lived on this soil for generations, yet the judges, the bishops and the viceroy all come to us from across the sea. Our merchants may sell only to Cadiz, at the prices Cadiz sets. Now the king is a prisoner of the French emperor, and the junta that claims to rule in his name was never chosen by us. Let this council form a government of its own, as the English colonies of the north did, for a people has the right to choose who governs it."
+    },
+    {
+      "id": "APWORLD-T2-S09",
+      "title": "A British factory inspector's report, 1840s (practice text)",
+      "text": "In the cotton mills of this district I found children of nine and ten tending the machines beside women who work twelve hours a day, with little air and less light. The owners say the mills cannot pay without them, and the parents need their wages. The town has doubled in twenty years; whole families crowd into cellars, and the river that turns the mill wheels also carries away the sewage."
+    },
+    {
+      "id": "APWORLD-D-S10",
+      "title": "A provincial lawyer's pamphlet, published in Paris, 1789 (practice text)",
+      "text": "The commons plough the fields, keep the shops and pay the taille, while the lords and the abbots, who pay almost nothing, take the commands in the army and the seats in the high courts as if they were born to them. Why should the deputies of twenty million count for no more than those of a few hundred thousand? Authority comes from the nation, not from the crown, and the law must be made by those whom the nation elects."
+    },
+    {
+      "id": "APWORLD-D-S11",
+      "title": "A speech by a German nationalist, 1848 (practice text)",
+      "text": "We speak one language, sing the same songs and share a thousand years of history, yet we are divided into dozens of states, each with its own prince and its own customs border. Let the Germans become one nation with one parliament, chosen by the people and bound by a constitution, and no foreign power will dare to treat us as a battlefield again."
+    },
+    {
+      "id": "APWORLD-D-S12",
+      "title": "A British antislavery society's pamphlet, 1820s (practice text)",
+      "text": "Parliament ended the trade in human beings in 1807; it must now end slavery itself in the West Indies. Every spoonful of sugar on a British table is sweetened with the sweat of the enslaved. Let every family that loves justice refuse slave-grown sugar, and let every town send its petition to Westminster."
+    },
+    {
+      "id": "APWORLD-T1-S10",
+      "title": "A British colonial official's report on India, 1880s (practice text)",
+      "text": "The railways now carry raw cotton from the interior to Bombay in days rather than weeks, and it leaves for the mills of Lancashire, which send back cloth cheaper than any village weaver can make. Since the rising of the sepoys, the Crown governs directly, and order is everywhere kept. Yet the educated Indians who staff our offices have begun to meet in congresses of their own and to ask why they may not govern their own country."
+    },
+    {
+      "id": "APWORLD-T1-S11",
+      "title": "A contract for a laborer leaving India for a Caribbean colony, 1870s (practice text)",
+      "text": "The laborer agrees to work on any estate in the colony to which he is sent, for five years, nine hours a day, at the wage fixed by the government. He shall receive housing and medical care. At the end of ten years in the colony he may claim a free passage home, or he may take a grant of land and remain."
+    },
+    {
+      "id": "APWORLD-T2-S10",
+      "title": "A Chinese governor's letter to a foreign ruler, 1839 (practice text)",
+      "text": "A good ruler watches over his people as a father over his sons, and he would not wish the sons of another house to be harmed by his servants. Yet the smugglers who sail under your flag bring chests of the black drug to our coast, and for it our silver leaves the empire year after year while our soldiers and clerks lie idle in the smoking dens. By the emperor's order every chest in the port has been taken and destroyed. Lawful trade in tea and silk may go on; the drug may not."
+    },
+    {
+      "id": "APWORLD-T2-S11",
+      "title": "A West African ruler's reply to a European officer, 1890s (practice text)",
+      "text": "Your officer says that I must sign his paper and fly his flag, but my fathers ruled this land before his people knew it existed. Your nations met in a city far away and divided our lands among themselves without asking a single king of Africa. If you come with your guns, I will fight you, though I know that your rifles fire faster than ours."
+    },
+    {
+      "id": "APWORLD-D-S13",
+      "title": "A New Zealand settler's letter home, 1860s (practice text)",
+      "text": "The government means to have the land of the Waikato, treaty or no treaty, for the settlers keep coming and every ship brings more. The Maori chiefs say they never sold it and will not sell, and they have built forts that our soldiers find hard to take. But they cannot hold out for ever against the numbers and the guns that are coming."
+    },
+    {
+      "id": "APWORLD-D-S14",
+      "title": "A letter from a Chinese laborer in Southeast Asia to his family, 1880s (practice text)",
+      "text": "I am working in the tin mines of Malaya, where the pay is three times what I could earn at home, though the work is hard and fever is common. The broker took most of my first year's wages to pay for my passage. Send word of Mother. If the harvest fails again, my brother should come here too; many men from our village are already in this town."
+    },
+    {
+      "id": "APWORLD-D-S15",
+      "title": "A British investor's report on Argentina, 1890s (practice text)",
+      "text": "British capital has built the railways that run from the pampas to Buenos Aires, and British ships carry the wheat and frozen meat to our markets. The estancia owners grow rich, and Argentina buys our rails, locomotives and cloth in return. A young country could not hope for better partners."
+    },
+    {
+      "id": "APWORLD-T1-S12",
+      "title": "A soldier's letter from the Western Front, 1915 (practice text)",
+      "text": "We have held this same mile of mud since the winter. The guns never stop, and when we go over the top the machine guns cut us down before we reach the wire. Beside us are men from India, and further down the line the French have brought regiments from Senegal. At home, they say, women run the munitions factories and every family buys war bonds."
+    },
+    {
+      "id": "APWORLD-T1-S13",
+      "title": "A speech by an Indian nationalist leader, 1940s (practice text)",
+      "text": "Britain asks us to fight for freedom in Europe while she denies it to us at home. We will not be drawn into this war without the promise of our independence. Our weapon is not the sword but the refusal to cooperate: we will not obey unjust laws, we will not buy foreign cloth, and we will fill the jails until the government cannot rule."
+    },
+    {
+      "id": "APWORLD-T1-S14",
+      "title": "A historian's interpretation (practice text)",
+      "text": "By the 1980s the Soviet economy could no longer pay for both an arms race and the promises of socialism. Reforms meant to save the system, more openness and a loosening of central planning, instead let its critics speak. When the states of Eastern Europe threw off their communist governments in 1989, Moscow did not send the tanks, and within two years the Soviet Union itself was gone. Its end opened much of the world to market economies and freer trade."
+    },
+    {
+      "id": "APWORLD-T1-S15",
+      "title": "World population, selected years (rounded estimates)",
+      "text": "| Year | World population |\n|---|---|\n| 1900 | about 1.6 billion |\n| 1950 | about 2.5 billion |\n| 2000 | about 6.1 billion |"
+    },
+    {
+      "id": "APWORLD-T2-S12",
+      "title": "A historian's interpretation (practice text)",
+      "text": "The crash of 1929 spread from Wall Street to the world because so many economies were tied to American loans and to the sale of raw materials whose prices collapsed. Unemployment soared in Germany, and farmers in Latin America and Africa saw their incomes fall by half. Many people lost faith in liberal democracy and in free markets, and movements on the far right promised work, order and national glory."
+    },
+    {
+      "id": "APWORLD-T2-S13",
+      "title": "A Chinese villager's memoir of land reform, written in the 1980s (practice text)",
+      "text": "When the Japanese left, the war between the parties came to our county. In 1950 the cadres arrived, called the village together and read out the landlords' names. The land was measured and divided, and for the first time my father farmed fields of his own. A few years later we were told to join the collectives, and then came the years of the great campaign, when the steel furnaces burned and the fields went untended."
+    },
+    {
+      "id": "APWORLD-T2-S14",
+      "title": "A statement by a South African student group, 1980s (practice text)",
+      "text": "Our parents were moved from their homes under laws that reserve the best land for whites. We must carry passes to work in our own country, and we are taught in separate schools to be servants. While the rest of Africa has won its freedom, we are still ruled by a minority. We call on the world to stop trading with this government until all South Africans vote."
+    },
+    {
+      "id": "APWORLD-T2-S15",
+      "title": "A factory manager's interview in a Southeast Asian export zone, 1990s (practice text)",
+      "text": "Our plant sews sports shoes for a company whose offices are in another continent. The designs arrive by computer, and the finished shoes leave in steel containers on ships that call here each week. Most of our workers are young women from the villages. The wages are low by foreign standards but higher than farm work, and when protests abroad complained of our conditions, the company sent inspectors."
+    },
+    {
+      "id": "APWORLD-D-S16",
+      "title": "A historian's interpretation (practice text)",
+      "text": "The Ottoman Empire entered the First World War in 1914 and did not survive it. Arab leaders who rose against the sultan expected independence, but the victors divided the Arab provinces between Britain and France as mandates under the League of Nations. In Anatolia, nationalist officers drove out occupying armies and founded a Turkish republic that abolished the sultanate and set out to build a secular state."
+    },
+    {
+      "id": "APWORLD-D-S17",
+      "title": "A Japanese government pamphlet, 1940 (practice text)",
+      "text": "Asia must be freed from the Western powers that have exploited it for a century. Under Japan's leadership the peoples of East Asia will build a sphere of common prosperity, where the oil, rubber and tin of the south and the industry of Japan work together. Those who resist this new order resist the liberation of Asia itself."
+    },
+    {
+      "id": "APWORLD-D-S18",
+      "title": "A speech at a conference of Asian and African states, 1955 (practice text)",
+      "text": "We who meet here have known colonial rule, and most of us have only just won our freedom. We will not exchange one master for another. We are told that we must join one camp or the other in the struggle between the great powers. We refuse. Our task is to feed our people and build our nations, and to speak for peace."
+    },
+    {
+      "id": "APWORLD-D-S19",
+      "title": "A public health officer's report, 1980 (practice text)",
+      "text": "The last natural case of smallpox was found three years ago, and the disease that killed hundreds of millions is now gone from the earth. It was defeated by vaccine teams sent to every country, by searches from village to village, and by governments on both sides of the Cold War working together. We must now turn the same methods against other diseases."
+    }
+  ],
+  "questions": [
+    {
+      "id": "APWORLD-T1-001",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S01",
+      "stem": "The court described in the account most directly built its wealth on",
+      "options": [
+        "control of trade across the Sahara",
+        "spices shipped across the Indian Ocean",
+        "taxes on pilgrims sailing to Mecca by sea",
+        "silver mined by forced native labor"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Mali's rulers taxed and protected the trans-Saharan trade in which northern merchants exchanged salt for West African gold. Silver mining and the spice trade belong to other regions."
+    },
+    {
+      "id": "APWORLD-T1-002",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S01",
+      "stem": "The mosques and Arabic learning described in the account were mainly a result of",
+      "options": [
+        "missionary work by Christian orders",
+        "a Mongol policy of religious conversion",
+        "the conquest of the region by the Abbasid army",
+        "the spread of Islam along trade routes"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Muslim merchants carried Islam across the Sahara, and West African rulers and elites adopted it, which also eased trade with North Africa. The Abbasids never conquered the region."
+    },
+    {
+      "id": "APWORLD-T1-003",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S01",
+      "stem": "Which state of the same period was most similar to the one described, in the source of its wealth?",
+      "options": [
+        "The Swahili city-states of East Africa",
+        "The Kamakura shogunate in Japan",
+        "The Inca state in the Andes",
+        "The Holy Roman Empire in central Europe"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Like Mali, the Swahili city-states grew rich by controlling long-distance trade, in their case across the Indian Ocean. The Inca relied on labor tribute and had no market trade of this kind."
+    },
+    {
+      "id": "APWORLD-T1-004",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Sourcing and situation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S01",
+      "stem": "The traveler's point of view is best explained by the fact that he",
+      "options": [
+        "was a European merchant hoping to trade for gold directly",
+        "was a Muslim visitor who judged the court partly by its faith",
+        "had never traveled outside North Africa before making this one visit",
+        "was a West African official writing to praise his own ruler"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A North African traveler shared the faith of Mali's elite, so he noticed its judges, mosques and Quran schools and the safety of merchants. He was a visitor, not a court official."
+    },
+    {
+      "id": "APWORLD-T1-005",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S02",
+      "stem": "The two harvests described in the memorial most directly led to",
+      "options": [
+        "a sharp decline in commerce in Chinese cities",
+        "rapid population growth in Song China",
+        "a shift from rice to wheat in southern China",
+        "the end of the examination system"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Fast-ripening rice from Champa (in Southeast Asia) allowed more harvests, which fed a fast-growing population and busy commercial cities. The examination system continued."
+    },
+    {
+      "id": "APWORLD-T1-006",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S02",
+      "stem": "The official's view of how the empire should be governed most directly reflects",
+      "options": [
+        "the Mongol practice of giving office to foreigners",
+        "Buddhist teaching that officials should withdraw from the world",
+        "Neo-Confucian ideas about merit and learning",
+        "Legalist demands for harsh punishment of all officials"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The memorial ties office to mastery of the classics and to virtue, the Confucian ideal behind the civil service examinations that Song rulers expanded. Mongol rule came later."
+    },
+    {
+      "id": "APWORLD-T1-007",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S02",
+      "stem": "Which of the following best describes a continuity in China after the period of the memorial?",
+      "options": [
+        "Later dynasties gave up rice for other grains",
+        "Later dynasties kept a bureaucracy chosen by examinations",
+        "Later dynasties gave the highest offices only to Buddhist monks",
+        "Later dynasties ended all trade with foreign merchants"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Ming and Qing kept the examination system and its scholar-officials until 1905, apart from a pause under the Mongols. Rice farming and foreign trade continued too."
+    },
+    {
+      "id": "APWORLD-T1-008",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S03",
+      "stem": "The conditions on the roads described by the historian most directly encouraged",
+      "options": [
+        "the closing of the Silk Roads to foreign merchants",
+        "the end of contact between China and Persia",
+        "greater trade and exchange of ideas across Eurasia",
+        "the decline of the Indian Ocean trade network"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Under the Mongols, protected roads and relay stations made long-distance travel safer, and goods, scholars and techniques moved between China, Persia and Europe. The routes were open, not closed."
+    },
+    {
+      "id": "APWORLD-T1-009",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S03",
+      "stem": "The ruin of Baghdad mentioned in the account refers to",
+      "options": [
+        "the Mongol conquest that ended the Abbasid caliphate",
+        "the Crusaders' capture of the city",
+        "an Ottoman siege that ended a thousand years of Byzantine rule",
+        "the Black Death's arrival in Iraq"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Mongol armies sacked Baghdad in 1258 and killed the last Abbasid caliph there. Crusaders never took Baghdad, and the Ottoman siege that ended Byzantine rule was at Constantinople."
+    },
+    {
+      "id": "APWORLD-T1-010",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S03",
+      "stem": "The connections described in the account also help explain",
+      "options": [
+        "the rapid spread of the plague in the 1340s",
+        "the rise of the Atlantic slave trade",
+        "the decline of paper making in Europe",
+        "the arrival of the first Portuguese ships in India"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The same routes that carried merchants across the Mongol lands carried the plague from Central Asia to the Mediterranean in the 1340s. The Atlantic slave trade and the Portuguese came later."
+    },
+    {
+      "id": "APWORLD-T1-011",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S04",
+      "stem": "The practice of taking boys from Christian villages described in the letter is known as",
+      "options": [
+        "the mit'a",
+        "the encomienda",
+        "the hacienda",
+        "the devshirme"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Under the devshirme, the Ottomans took Christian boys from the Balkans, converted them and trained them as janissary soldiers or officials loyal only to the sultan. The other systems were in the Americas."
+    },
+    {
+      "id": "APWORLD-T1-012",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S04",
+      "stem": "The sultan's purpose in the practice the ambassador describes was most likely to",
+      "options": [
+        "reduce the size of his standing army",
+        "create officials and soldiers loyal only to him",
+        "spread Christianity within the palace",
+        "give more power to the old Turkish noble families"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Officials and soldiers raised in the palace owed everything to the sultan, not to a noble family, which helped him control a large empire. The practice weakened, not strengthened, the old nobility."
+    },
+    {
+      "id": "APWORLD-T1-013",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S04",
+      "stem": "The ambassador's comments on firearms and cannon best illustrate",
+      "options": [
+        "the Ottoman refusal to adopt European technology",
+        "the spread of steam power to the eastern Mediterranean",
+        "the use of gunpowder weapons to expand land empires",
+        "the decline of Ottoman military power by the 1550s"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Ottoman cannon and musket-armed infantry helped conquer Constantinople, the Balkans and much of the Middle East. Steam power came three centuries later."
+    },
+    {
+      "id": "APWORLD-T1-014",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S04",
+      "stem": "The great mosques mentioned in the letter served the same purpose as which of the following?",
+      "options": [
+        "Missions that Spanish priests built on the edges of their empire",
+        "Trading posts that European companies built on the coasts of India",
+        "Fortified towns that peasants built to defend themselves from their lords",
+        "Monumental buildings that other rulers used to display their legitimacy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Rulers such as the Mughals and the Qing used grand buildings to show power and divine favor, as the Ottomans did with their mosques. Trading posts and missions had other purposes."
+    },
+    {
+      "id": "APWORLD-T1-015",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S05",
+      "stem": "Which conflict is most directly explained by the information in the Ottoman and Safavid rows of the table?",
+      "options": [
+        "Wars between the Qing and the Ottoman sultans",
+        "Wars between the Ottomans and the Safavids",
+        "Wars between the Safavids and the Spanish",
+        "Wars between the Mughals and the Qing"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Sunni Ottomans and the Shia Safavids fought for over a century, a rivalry shaped by religious difference as well as by borders and trade. The Mughals and Qing never fought a major war."
+    },
+    {
+      "id": "APWORLD-T1-016",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S05",
+      "stem": "The table suggests that the Mughal and Qing empires faced a similar challenge, namely",
+      "options": [
+        "governing a small island population",
+        "replacing the old languages of their own ruling dynasties",
+        "ruling a large majority that differed from the ruling group",
+        "defending a single faith against Christian invaders"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Muslim Mughal rulers governed a mostly Hindu population, and Manchu Qing rulers governed a far larger Han Chinese majority. Both had to win the cooperation of local elites."
+    },
+    {
+      "id": "APWORLD-T1-017",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Developments and processes",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S05",
+      "stem": "Which policy did the Qing use to address the challenge shown in the last row of the table?",
+      "options": [
+        "Moving the capital to Manchuria",
+        "Keeping the Confucian examinations and Han officials",
+        "Banning all Han Chinese from every government post",
+        "Converting all subjects to Shia Islam"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Qing kept the Confucian examination system and employed many Han officials alongside Manchus, while also requiring the queue hairstyle as a sign of loyalty. They ruled from Beijing."
+    },
+    {
+      "id": "APWORLD-T1-018",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Claims and evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S05",
+      "stem": "A historian arguing that these empires tolerated diversity in order to rule could best use which evidence?",
+      "options": [
+        "The Ottomans took boys from Christian villages",
+        "Ottoman millets let religious communities run their own affairs",
+        "The Safavids made Shia Islam the official faith of the whole state",
+        "The Qing made men wear the queue"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Ottoman millet system let Christian and Jewish communities keep their own laws and leaders under the sultan. The other examples show rulers imposing uniformity or control."
+    },
+    {
+      "id": "APWORLD-T1-019",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S06",
+      "stem": "The captain's report best illustrates the Portuguese effort to",
+      "options": [
+        "convert the Mughal emperors to Christianity",
+        "end trade between Gujarat and China",
+        "settle large farming colonies in India",
+        "control Indian Ocean trade by force at sea"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Portuguese did not build a large territorial empire in Asia; they seized ports such as Goa and forced ships to buy passes, taxing trade they could not otherwise dominate."
+    },
+    {
+      "id": "APWORLD-T1-020",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S06",
+      "stem": "The captain's description of ships already trading in the region shows that",
+      "options": [
+        "Chinese merchants had stopped sailing by 1500",
+        "the Indian Ocean had no trade before the Portuguese came",
+        "Europeans entered a trade network that already existed",
+        "Europeans brought spices to Asia for the first time"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Gujarati, Arab, Persian and Chinese merchants had traded across the Indian Ocean for centuries; the Portuguese joined and tried to tax that network rather than creating it."
+    },
+    {
+      "id": "APWORLD-T1-021",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S06",
+      "stem": "Which development made the voyages described in the report possible?",
+      "options": [
+        "New ships and navigation tools such as the caravel",
+        "The invention of the steamship",
+        "Mongol maps of the Atlantic",
+        "The opening of a canal across Egypt linking the Mediterranean and the Red Sea"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Portuguese sailors used ships such as the caravel and tools such as the astrolabe and better maps, some of them learned from Islamic and Chinese sources, to reach Asia around Africa."
+    },
+    {
+      "id": "APWORLD-T1-022",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S06",
+      "stem": "The Portuguese approach described in the report differed most from Spanish rule in the Americas in that the Portuguese in Asia",
+      "options": [
+        "relied on forced native labor in silver mines",
+        "converted most of the local population to Christianity by force",
+        "settled large numbers of European farmers",
+        "held fortified ports instead of large inland territories"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In Asia the Portuguese built a trading-post empire of fortified ports, while the Spanish conquered large populations and lands in the Americas and used forced labor in mines."
+    },
+    {
+      "id": "APWORLD-T1-023",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S07",
+      "stem": "The silver described in the essay came mainly from",
+      "options": [
+        "gold fields in West Africa",
+        "mines in Japan, carried by Dutch ships through Nagasaki",
+        "mines in Spanish America, carried by way of Manila",
+        "mines in England"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Silver from Potosi and Mexico crossed the Pacific on the Manila galleons, and Spanish traders in the Philippines (Luzon) exchanged it for Chinese silk and porcelain."
+    },
+    {
+      "id": "APWORLD-T1-024",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S07",
+      "stem": "Which Chinese policy most directly increased demand for the silver described in the essay?",
+      "options": [
+        "A tax on imports of silk",
+        "The printing of paper money in every province",
+        "A requirement that taxes be paid in silver",
+        "A ban on all foreign trade"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Ming reforms in the late 1500s, often called the Single Whip, combined taxes and required them in silver, so China drew in silver from Japan and the Americas."
+    },
+    {
+      "id": "APWORLD-T1-025",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S07",
+      "stem": "The scholar's complaint about falling supplies of silver best illustrates",
+      "options": [
+        "China's refusal to trade with Europeans",
+        "the rising value of grain in China compared with silver",
+        "the end of the Manila galleon trade across the Pacific in the 1630s",
+        "how global trade could cause hardship far from its source"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "When fewer silver ships arrived, silver grew dear and farmers had to sell more grain to pay taxes, showing how the Pacific silver trade tied Chinese farmers to events across the ocean."
+    },
+    {
+      "id": "APWORLD-T1-026",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S08",
+      "stem": "Which evidence would best support Historian A's argument?",
+      "options": [
+        "Accounts of secret meetings among enslaved people on estates",
+        "Reports of very high death rates on sugar plantations",
+        "Rebel leaders quoting the Declaration of the Rights of Man",
+        "Records showing that most enslaved people were born in Africa"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Historian A traces the revolution to French revolutionary ideas, so leaders using the language of the Declaration of the Rights of Man would support that view. The other choices fit Historian B."
+    },
+    {
+      "id": "APWORLD-T1-027",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S08",
+      "stem": "Historian B would most likely emphasize which cause of the revolution?",
+      "options": [
+        "British efforts to seize the colony",
+        "Spanish support for the rebels",
+        "Debates in the French National Assembly about rights",
+        "The experience of the enslaved themselves"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Historian B points to the enslaved people's African backgrounds, the brutality of the sugar estates and networks among plantations, not French debates."
+    },
+    {
+      "id": "APWORLD-T1-028",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S08",
+      "stem": "The revolution discussed by the historians resulted in",
+      "options": [
+        "British rule over Saint-Domingue",
+        "the restoration of slavery in Saint-Domingue",
+        "the first state founded by formerly enslaved people",
+        "a constitutional monarchy ruled from Paris by the French king"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The rebellion ended slavery in the colony and, after defeating French forces, created independent Haiti in 1804, the first state founded by people who had freed themselves from slavery."
+    },
+    {
+      "id": "APWORLD-T1-029",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S08",
+      "stem": "Both historians would agree that the revolution in Saint-Domingue",
+      "options": [
+        "was led mainly by wealthy European settlers and merchants",
+        "had no link to events in France",
+        "failed to end slavery in the colony",
+        "belonged to a wider age of Atlantic revolutions"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Historian A links it to the French Revolution and Historian B to conditions in the colony, but both treat it as a revolution of the same era. Both note it was led by the enslaved."
+    },
+    {
+      "id": "APWORLD-T1-030",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S09",
+      "stem": "The black ships mentioned in the essay refer to",
+      "options": [
+        "a British fleet that conquered Kyoto and deposed the emperor",
+        "the American warships that pressed Japan to open its ports",
+        "Chinese warships sent to invade Japan",
+        "Dutch merchant ships trading at Nagasaki"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In 1853 and 1854 American warships under Commodore Perry forced the Tokugawa shogunate to open ports to trade, a shock that helped bring down the shogunate."
+    },
+    {
+      "id": "APWORLD-T1-031",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S09",
+      "stem": "The reforms described in the essay are best described as",
+      "options": [
+        "a rejection of all Western technology",
+        "a return to rule by the shogun",
+        "state-sponsored industrialization",
+        "a policy of closing Japan to trade"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "After the Meiji Restoration of 1868, the government built railways and factories, sent students abroad and created a conscript army to strengthen Japan."
+    },
+    {
+      "id": "APWORLD-T1-032",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S09",
+      "stem": "The reforms in the essay were most similar to which other effort of the 1800s?",
+      "options": [
+        "The Ottoman Tanzimat reforms",
+        "The British Factory Acts",
+        "The Qing ban on opium",
+        "The Russian conquest of Central Asia"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Tanzimat reforms also tried to strengthen an Asian state against the West by modernizing law, the army and education. The Factory Acts regulated labor in an already industrial country."
+    },
+    {
+      "id": "APWORLD-T1-033",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S09",
+      "stem": "The program described in the essay most directly made it possible for Japan to",
+      "options": [
+        "build an empire of its own in East Asia",
+        "abolish its army",
+        "end its trade with Western states",
+        "avoid all wars with its neighbors until the 1940s"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Industrial and military strength let Japan defeat China in 1895, taking Taiwan, and Russia in 1905, and then annex Korea in 1910."
+    },
+    {
+      "id": "APWORLD-T1-034",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S10",
+      "stem": "The trade described in the report best illustrates",
+      "options": [
+        "a British ban on all cotton exports from India to Europe",
+        "colonies supplying raw materials to industrial Britain",
+        "British demand for Indian finished cloth",
+        "Indian factories outproducing those of Britain"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Industrial Britain drew raw cotton from India and sold factory cloth back, a pattern of economic imperialism that hurt India's handloom weavers."
+    },
+    {
+      "id": "APWORLD-T1-035",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S10",
+      "stem": "The rising of the sepoys mentioned in the report most directly led to",
+      "options": [
+        "Mughal rule over all of India",
+        "direct rule of India by the British Crown",
+        "the end of British rule in India",
+        "the founding of the British East India Company"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "After the revolt of 1857, Parliament ended the East India Company's rule and the Crown governed India directly through a viceroy."
+    },
+    {
+      "id": "APWORLD-T1-036",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S10",
+      "stem": "The congresses described at the end of the report are an early sign of",
+      "options": [
+        "British socialism",
+        "the Mughal revival",
+        "the partition of India",
+        "Indian nationalism"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Western-educated Indians founded the Indian National Congress in 1885, which grew into the main nationalist movement. Partition came only in 1947."
+    },
+    {
+      "id": "APWORLD-T1-037",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S10",
+      "stem": "The economic relationship in the report was most similar to that between Britain and",
+      "options": [
+        "Egypt, which grew cotton for British mills",
+        "Japan after 1900, which built its own industry",
+        "the United States after 1900, which exported machines",
+        "Germany, which built its own factories"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Egypt also exported raw cotton and imported manufactured goods under growing British control. Germany, Japan and the United States industrialized themselves."
+    },
+    {
+      "id": "APWORLD-T1-038",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S11",
+      "stem": "The contract is an example of",
+      "options": [
+        "the mit'a",
+        "serfdom",
+        "chattel slavery for life",
+        "indentured labor"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Indentured workers signed contracts for a fixed term of labor in return for passage, wages and sometimes land, unlike slaves, who were property for life."
+    },
+    {
+      "id": "APWORLD-T1-039",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S11",
+      "stem": "Contracts like this one became common in the Caribbean mainly because",
+      "options": [
+        "the slave trade to the Caribbean grew in the 1870s",
+        "European workers refused to leave the Caribbean islands",
+        "planters needed new workers after slavery was abolished",
+        "India had a shortage of workers"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "After Britain abolished slavery, planters in Trinidad, Guyana and elsewhere recruited indentured workers from India and China to replace the labor of the formerly enslaved."
+    },
+    {
+      "id": "APWORLD-T1-040",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S11",
+      "stem": "A lasting result of migrations like the one described in the contract was",
+      "options": [
+        "the end of Hinduism in the Caribbean",
+        "the spread of the Inca language",
+        "large South Asian communities overseas",
+        "the return of every laborer to India after five years"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Many indentured workers stayed, and Trinidad, Guyana, Fiji, Mauritius and South Africa still have large communities of South Asian descent."
+    },
+    {
+      "id": "APWORLD-T1-041",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S12",
+      "stem": "The conditions on the battlefield described in the letter were most directly caused by",
+      "options": [
+        "machine guns and heavy artillery",
+        "the use of cavalry charges as the main tactic",
+        "the lack of railways to carry men and shells near the front",
+        "a shortage of soldiers on both sides"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Machine guns, artillery and barbed wire favored defenders, producing years of trench warfare on the Western Front. Railways brought men and shells to the front."
+    },
+    {
+      "id": "APWORLD-T1-042",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S12",
+      "stem": "The soldier's description of life at home best illustrates",
+      "options": [
+        "a return to peacetime production during the war",
+        "a government refusal to borrow any money to pay for the war",
+        "the end of women's paid work in Europe",
+        "total war, in which whole societies were mobilized"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In total war, states directed economies, sold war bonds, used propaganda and drew women into factory work to supply the front."
+    },
+    {
+      "id": "APWORLD-T1-043",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S12",
+      "stem": "The presence of soldiers from India and Senegal in the letter is best explained by",
+      "options": [
+        "a German policy of recruiting colonial soldiers",
+        "European powers drawing on their colonies for troops",
+        "India and Senegal declaring war on Germany as independent states",
+        "the League of Nations sending peacekeepers"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Britain and France recruited over a million colonial soldiers for the war; India and Senegal were colonies, not independent states."
+    },
+    {
+      "id": "APWORLD-T1-044",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S12",
+      "stem": "Colonial service in the war described in the letter most directly contributed to",
+      "options": [
+        "the end of the British Empire in 1919",
+        "growing demands for self-rule after 1918",
+        "the immediate independence of all French colonies in Africa",
+        "a decline of nationalism in Asia"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Colonial subjects who served expected reward, and broken promises after 1918 strengthened nationalist movements in India, Africa and elsewhere."
+    },
+    {
+      "id": "APWORLD-T1-045",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S13",
+      "stem": "The war referred to in the speech also weakened Britain by",
+      "options": [
+        "ending its alliance with the United States",
+        "making it the world's largest creditor",
+        "giving it new colonies in Asia",
+        "draining its money and military strength"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Second World War left Britain deep in debt and exhausted, which made holding India and other colonies far harder."
+    },
+    {
+      "id": "APWORLD-T1-046",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S13",
+      "stem": "The methods the speaker proposes are best described as",
+      "options": [
+        "a military coup",
+        "armed guerrilla warfare",
+        "a request for a League of Nations mandate",
+        "nonviolent civil disobedience"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Refusing to obey unjust laws, boycotting foreign cloth and filling the jails are methods of nonviolent noncooperation used by the Indian National Congress."
+    },
+    {
+      "id": "APWORLD-T1-047",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S13",
+      "stem": "Independence for British India in 1947 also brought",
+      "options": [
+        "a single state with one religion",
+        "rule by the Mughal family restored",
+        "union with Burma and Ceylon as one large federal state",
+        "partition into India and Pakistan"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The British divided India into Hindu-majority India and Muslim-majority Pakistan; millions fled across the new borders and hundreds of thousands died."
+    },
+    {
+      "id": "APWORLD-T1-048",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S13",
+      "stem": "The path to independence in the speech differed most from that of Algeria, which",
+      "options": [
+        "won independence after a long armed war",
+        "became independent from France before the Second World War began",
+        "won independence peacefully with no conflict",
+        "never sought independence from France"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Algeria, with a large French settler population, won independence in 1962 after an eight-year war. India's movement relied mainly on mass nonviolent protest."
+    },
+    {
+      "id": "APWORLD-T1-049",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S14",
+      "stem": "According to the historian, the Soviet Union collapsed partly because",
+      "options": [
+        "it adopted free trade with the West in the 1950s and grew too fast",
+        "Eastern Europe invaded it in 1989",
+        "its economy could not pay for the arms race",
+        "it won the arms race too quickly"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The historian points to an economy strained by military spending and failing to deliver, and to reforms that let critics speak."
+    },
+    {
+      "id": "APWORLD-T1-050",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S14",
+      "stem": "Which other communist state of the 1980s chose economic reform while keeping the party's political control?",
+      "options": [
+        "Czechoslovakia",
+        "Poland",
+        "East Germany",
+        "China"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "China opened its economy to markets and foreign investment from 1978 but kept one-party rule. Poland, East Germany and Czechoslovakia ended communist rule in 1989."
+    },
+    {
+      "id": "APWORLD-T1-051",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S14",
+      "stem": "The historian's last sentence best describes which development of the 1990s?",
+      "options": [
+        "A return to closed national economies",
+        "The end of trade between western Europe and Russia",
+        "The expansion of Soviet power into Asia",
+        "The spread of market economies and global trade"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "After the Cold War, former communist states moved to markets and many joined global trade bodies, part of the wider globalization of the 1990s."
+    },
+    {
+      "id": "APWORLD-T1-052",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S14",
+      "stem": "Which organization, founded in 1995, set rules for the freer trade the historian mentions?",
+      "options": [
+        "The Warsaw Pact",
+        "The World Trade Organization",
+        "The Organization of Petroleum Exporting Countries",
+        "The League of Nations"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The World Trade Organization replaced the earlier GATT in 1995 and set rules for trade among its members; Russia and China later joined. OPEC is a group of oil-exporting states."
+    },
+    {
+      "id": "APWORLD-T1-053",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S15",
+      "stem": "Which development most directly helped make possible the change in the table between 1950 and 2000?",
+      "options": [
+        "The end of international trade in grain",
+        "Rising death rates from infectious disease in most regions",
+        "A fall in the world's food supply",
+        "New seeds and farming methods"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Green Revolution's high-yield seeds, fertilizers and irrigation raised food output, while vaccines and antibiotics cut death rates, so population grew fast."
+    },
+    {
+      "id": "APWORLD-T1-054",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S15",
+      "stem": "The trend in the table most directly contributed to",
+      "options": [
+        "a fall in carbon emissions",
+        "greater strain on water and forests",
+        "a shrinking demand for energy",
+        "the end of urban growth in most countries after 1950"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "More people using more resources increased pressure on water, forests and the atmosphere, and fossil fuel use and emissions rose."
+    },
+    {
+      "id": "APWORLD-T1-055",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T1-S15",
+      "stem": "Which change in medicine most directly contributed to the trend in the table?",
+      "options": [
+        "The spread of bloodletting",
+        "The decline of public health spending",
+        "Antibiotics and mass vaccination",
+        "The invention of the printing press"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Antibiotics and vaccines, spread widely after 1945, sharply reduced deaths from infectious disease, especially among children."
+    },
+    {
+      "id": "APWORLD-T2-001",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S01",
+      "stem": "Which evidence would best support the historian's claim about intellectual life?",
+      "options": [
+        "Translations of Greek works into Arabic used by later scholars",
+        "A rise in the price of paper in Baghdad",
+        "A decree by the caliph closing the libraries of Cairo and Cordoba",
+        "The conversion of the Seljuk rulers to Buddhism"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The historian argues learning continued despite political decline; Arabic translations and commentaries on Greek works, later used in Europe, show that. A decree closing libraries would undercut it."
+    },
+    {
+      "id": "APWORLD-T2-002",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S01",
+      "stem": "The historian's description of Turkic military rulers best illustrates",
+      "options": [
+        "new states arising as the caliphate lost power",
+        "the unification of the Islamic world under one ruler",
+        "the replacement of Islam by Turkic religions",
+        "the conquest of Persia by Christian kingdoms"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "As the Abbasid caliphate weakened, Turkic groups such as the Seljuks built their own states in its lands while keeping and defending Islam. The Islamic world grew more divided, not less."
+    },
+    {
+      "id": "APWORLD-T2-003",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S01",
+      "stem": "The learning described by the historian most directly affected Europe through",
+      "options": [
+        "the spread of Buddhism along the Silk Roads",
+        "the decline of trade across the Mediterranean Sea after 1200",
+        "the transmission of texts by way of Spain and Sicily",
+        "the conquest of Rome by Seljuk armies"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Scholars in Muslim Spain and Sicily translated Arabic works and Arabic versions of Greek texts into Latin, feeding learning in European universities. No Seljuk army reached Rome."
+    },
+    {
+      "id": "APWORLD-T2-004",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S02",
+      "stem": "The timing of the ships' arrivals and departures described in the account depended on",
+      "options": [
+        "the steam engines used by Arab ships",
+        "the opening of the Suez Canal",
+        "the monsoon winds of the Indian Ocean",
+        "the Mongol relay stations on land routes"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Indian Ocean sailors timed voyages to the seasonal monsoon winds, which blow from the northeast in winter and from the southwest in summer. Steam and the Suez Canal came centuries later."
+    },
+    {
+      "id": "APWORLD-T2-005",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S02",
+      "stem": "The language described in the account is best explained by",
+      "options": [
+        "the migration of Turkic peoples into Africa",
+        "Portuguese rule over the coastal towns",
+        "the permanent settlement of the whole coast by Chinese sailors",
+        "contact between Bantu-speaking Africans and Arab traders"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Swahili is a Bantu language that took in many Arabic words through centuries of trade with Arab and Persian merchants. Portuguese rule came only after 1500."
+    },
+    {
+      "id": "APWORLD-T2-006",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S02",
+      "stem": "Compared with the trans-Saharan trade, the trade described in the account differed mainly in that it",
+      "options": [
+        "did not involve any Muslim merchants at all",
+        "was controlled entirely by the Mongols",
+        "traded mostly in enslaved Europeans",
+        "moved goods by sea rather than by caravan"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Both trades brought Muslim merchants and African gold into contact, but the East African trade moved by ship across the Indian Ocean while the Saharan trade moved by camel caravan."
+    },
+    {
+      "id": "APWORLD-T2-007",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Contextualization",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S02",
+      "stem": "In the early 1400s, which state sent large fleets that reached ports on this coast?",
+      "options": [
+        "The Ottoman Empire",
+        "The Inca Empire",
+        "The Mughal Empire",
+        "Ming China"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Ming China sent Zheng He's treasure fleets across the Indian Ocean between 1405 and 1433, and some reached East Africa. The Mughal Empire did not exist until 1526."
+    },
+    {
+      "id": "APWORLD-T2-008",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S03",
+      "stem": "The tribute described in the memoir shows that the Mexica state",
+      "options": [
+        "drew wealth from conquered peoples it ruled",
+        "had no markets or merchants",
+        "relied mainly on trade with Europe",
+        "was a small state with no subject provinces"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Mexica built an empire by conquering neighbors and demanding tribute of goods and captives. The memoir describes a large market, and contact with Europe began only in 1519."
+    },
+    {
+      "id": "APWORLD-T2-009",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S03",
+      "stem": "The Mexica system described in the memoir was most similar to the Inca system in that both states",
+      "options": [
+        "had no religious role for the ruler",
+        "used iron weapons and horses in war",
+        "relied on markets as their main source of revenue",
+        "demanded goods or labor from subject peoples"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Both states drew on subject peoples: the Mexica through tribute and the Inca through the mit'a labor system. Neither had iron tools or horses before contact."
+    },
+    {
+      "id": "APWORLD-T2-010",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S03",
+      "stem": "The resentment of subject provinces mentioned in the memoir helps explain",
+      "options": [
+        "why some native peoples allied with the Spanish",
+        "why the Spanish failed to conquer the city",
+        "why the Mexica abandoned the city before 1519",
+        "why the Spanish brought no allies on their march"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Peoples such as the Tlaxcalans, enemies of the Mexica, joined the Spanish, and their warriors were vital in the fall of the city in 1521. The Spanish did conquer the city."
+    },
+    {
+      "id": "APWORLD-T2-011",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S04",
+      "stem": "The emperor's policies described in the account most directly reflect",
+      "options": [
+        "a plan to expel the Portuguese from India",
+        "religious tolerance used to win the loyalty of subjects",
+        "the influence of Confucian scholars on Mughal rule",
+        "an effort to make Sunni Islam the only faith in the empire"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Akbar debated with scholars of many faiths, ended the jizya on non-Muslims and gave Hindu Rajput princes high posts, binding a diverse empire to his rule."
+    },
+    {
+      "id": "APWORLD-T2-012",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S04",
+      "stem": "Which later development marked a change from the policies described in the account?",
+      "options": [
+        "A later emperor brought back the tax on non-Muslims",
+        "Later emperors ended the use of Persian at the imperial court",
+        "Later emperors converted to Christianity",
+        "Later emperors gave up all lands south of Delhi"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Aurangzeb restored the jizya in 1679 and favored stricter Sunni practice, which angered Hindu subjects and helped fuel revolts such as the Maratha rising."
+    },
+    {
+      "id": "APWORLD-T2-013",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S04",
+      "stem": "The fact that the account was written by a court historian suggests that it",
+      "options": [
+        "records the views of ordinary villagers",
+        "was written to criticize the emperor's religion",
+        "presents the emperor in a favorable light",
+        "was meant for Jesuit readers in Europe"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A historian employed at court wrote for the emperor and his circle, so the account is likely to praise him. It tells us about court life more than about villagers."
+    },
+    {
+      "id": "APWORLD-T2-014",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Contextualization",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S04",
+      "stem": "The presence of Jesuit fathers from Goa in the account is best explained by",
+      "options": [
+        "a British colony already ruling all of India by the 1580s",
+        "the Mughal conquest of Portugal",
+        "Portuguese trading posts and missions on the Indian coast",
+        "the Jesuits' control of the Silk Roads"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Portuguese held Goa from 1510 as a trading base, and Jesuit missionaries traveled from there to the Mughal court. British rule over most of India came much later."
+    },
+    {
+      "id": "APWORLD-T2-015",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Claims and evidence",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S05",
+      "stem": "Which evidence would best support the argument of Historian A?",
+      "options": [
+        "Ottoman rulers granting religious communities their own self-rule",
+        "Safavid shahs building a splendid capital at Isfahan",
+        "Ottoman cannon breaching the walls of Constantinople in 1453",
+        "Mughal land surveys used to set tax rates"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Historian A credits firearms; the cannon that broke the walls of Constantinople fit that view. Land surveys, buildings and self-rule fit Historian B's focus on governing."
+    },
+    {
+      "id": "APWORLD-T2-016",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S05",
+      "stem": "Which evidence would best support Historian B's argument?",
+      "options": [
+        "The use of horse archers by Central Asian rivals",
+        "A battle won by musket-armed infantry",
+        "Mughal officers paid salaries based on rank",
+        "The price of cannon in the 1500s"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Akbar's mansabdar system paid officers by rank and tied them to the state, the kind of administration Historian B stresses. The other choices concern weapons."
+    },
+    {
+      "id": "APWORLD-T2-017",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S05",
+      "stem": "The two historians would most likely agree that",
+      "options": [
+        "guns played no role in Ottoman conquests",
+        "large land-based empires grew stronger",
+        "bureaucracy mattered far more than firearms in every case",
+        "the empires collapsed by 1500"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Both explain the rise of strong empires; they differ on the cause. Historian A would reject the claim that bureaucracy mattered more, and Historian B does not deny that guns existed."
+    },
+    {
+      "id": "APWORLD-T2-018",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S05",
+      "stem": "Historian B's argument could also be applied to which state outside the Islamic world?",
+      "options": [
+        "The Dutch Republic, with its trading companies",
+        "Qing China, with its examination-based officials",
+        "The Swahili city-states, with their merchant councils",
+        "The Iroquois Confederacy, with its alliances of nations"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Qing ruled through a large, trained bureaucracy and Confucian legitimacy, the methods Historian B stresses. The Iroquois and Swahili cities were not large bureaucratic empires."
+    },
+    {
+      "id": "APWORLD-T2-019",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S06",
+      "stem": "Which development most directly explains the rise shown in the table between 1601 and 1800?",
+      "options": [
+        "The decline of the Mughal Empire in northern India",
+        "The end of slavery in the British Empire",
+        "The spread of sugar plantations in the Americas",
+        "Spanish conquest of the Philippines"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Sugar plantations in Brazil and the Caribbean, which killed workers quickly and needed ever more labor, drove the growth of the Atlantic slave trade."
+    },
+    {
+      "id": "APWORLD-T2-020",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S06",
+      "stem": "The smaller total in the last row of the table is best explained by",
+      "options": [
+        "the European conquest of Africa's interior",
+        "the end of plantation farming in both Brazil and Cuba",
+        "bans on the slave trade by Britain and other states",
+        "a sharp drop in world demand for sugar"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Britain banned its slave trade in 1807 and its navy patrolled against others, and other states followed. Brazil and Cuba still bought captives until 1850 and the 1860s, so the trade shrank but did not end at once; the last row also covers only 66 years."
+    },
+    {
+      "id": "APWORLD-T2-021",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S06",
+      "stem": "The trend in the table most directly contributed to which change in West Africa?",
+      "options": [
+        "The spread of Christianity across the Sahel",
+        "Fewer men than women in some regions",
+        "The rise of large cities based on manufacturing",
+        "The decline of every African state"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Slave traders took more men than women, leaving some West African regions with fewer working-age men. Some states, such as Dahomey and Asante, grew more powerful in the trade."
+    },
+    {
+      "id": "APWORLD-T2-022",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Claims and evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S06",
+      "stem": "Which piece of evidence would best support the note under the table?",
+      "options": [
+        "Census counts of free people in Europe",
+        "Prices of sugar in London",
+        "Records of deaths on board slave ships",
+        "Lists of African rulers who traded with Europeans"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The note says many people died on the voyage; ship records of deaths during the Middle Passage would show it. Sugar prices and rulers' names say nothing about deaths at sea."
+    },
+    {
+      "id": "APWORLD-T2-023",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S07",
+      "stem": "The orders best illustrate the Tokugawa shogunate's effort to",
+      "options": [
+        "expand Japanese trade and settlement across the Pacific",
+        "end all contact with China",
+        "limit foreign influence while keeping some trade",
+        "convert Japan to Christianity"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Tokugawa rulers banned Christianity and travel abroad but let the Dutch, and Chinese merchants, trade under control at Nagasaki. Japan did not cut all contact."
+    },
+    {
+      "id": "APWORLD-T2-024",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S07",
+      "stem": "The council's measures against the foreign priests' teaching were most likely a response to",
+      "options": [
+        "fears that Christian converts would be disloyal",
+        "a Spanish invasion of Kyoto",
+        "Dutch missionaries preaching in the Japanese countryside",
+        "the spread of Buddhism from Korea"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The shogunate saw Christian converts, and the Spanish and Portuguese missionaries behind them, as a threat to its control, especially after the Shimabara revolt of 1637 and 1638, in which many rebels were Christian. The Dutch did not preach."
+    },
+    {
+      "id": "APWORLD-T2-025",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S07",
+      "stem": "The policy in the orders was most similar to which policy of the same era?",
+      "options": [
+        "Spanish encouragement of foreign settlers in Mexico",
+        "Chinese limits on where Europeans could trade",
+        "Mughal welcome of Jesuit missionaries at court",
+        "Ottoman grants of trading rights to all Europeans"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Ming and later Qing rulers also controlled foreign trade, eventually confining Europeans to Canton. The Mughal court welcomed Jesuits, which is the opposite of the orders."
+    },
+    {
+      "id": "APWORLD-T2-026",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S08",
+      "stem": "The speaker most likely belonged to which group?",
+      "options": [
+        "Creoles, of European descent but born in the Americas",
+        "Enslaved Africans on sugar estates",
+        "Peninsulares, officials born in Spain",
+        "Indigenous nobles descended from the rulers of the Inca state"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Creole elites resented being kept from high office and from free trade by Spanish-born peninsulares, and they led most of the Spanish American independence movements."
+    },
+    {
+      "id": "APWORLD-T2-027",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S08",
+      "stem": "According to the speech, which event gave the colonies the chance to break with Spain?",
+      "options": [
+        "The Mexican-American War",
+        "Napoleon's seizure of the Spanish throne",
+        "Britain's ban on the Atlantic slave trade in 1807",
+        "The British victory in the Seven Years' War"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "When Napoleon made his brother king of Spain in 1808, colonial elites refused to obey the new government, and many juntas moved toward independence."
+    },
+    {
+      "id": "APWORLD-T2-028",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S08",
+      "stem": "The right the speaker claims shows the influence of",
+      "options": [
+        "the divine right of kings",
+        "Confucian ideas of order",
+        "mercantilist economic theory and colonial trade rules",
+        "Enlightenment ideas of popular sovereignty"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The speaker appeals to the right of a people to choose who governs it, an Enlightenment idea also used in the American and French revolutions."
+    },
+    {
+      "id": "APWORLD-T2-029",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S08",
+      "stem": "After independence, most of the new states of Spanish America",
+      "options": [
+        "kept much of the old social order in place",
+        "became colonies of the United States",
+        "ended the Catholic Church's role in society",
+        "gave the land of large estates to indigenous farmers across the region"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Independence ended Spanish rule but left large estates, the church and creole elites in place, and many indigenous and mixed-race people saw little change."
+    },
+    {
+      "id": "APWORLD-T2-030",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S09",
+      "stem": "The conditions in the report were a direct result of",
+      "options": [
+        "the Industrial Revolution in Britain",
+        "the enclosure of land by the Mughals",
+        "the Black Death",
+        "the British conquest of China"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Factory production of cotton cloth, powered first by water and then by steam, drew families into crowded mill towns in Britain in the late 1700s and 1800s."
+    },
+    {
+      "id": "APWORLD-T2-031",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S09",
+      "stem": "The inspector's remark that the town has doubled in twenty years best illustrates",
+      "options": [
+        "rapid urbanization as people moved to factory work",
+        "the decline of the cotton industry in northern England",
+        "the spread of guild workshops in the countryside",
+        "a movement of families from industrial towns back to farms"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Factory jobs drew rural families into mill towns such as Manchester, which grew faster than housing, water and sewers could keep up with. Cotton was Britain's leading industry."
+    },
+    {
+      "id": "APWORLD-T2-032",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S09",
+      "stem": "Reports like this one most directly led to",
+      "options": [
+        "the British move to free trade with China and India",
+        "the end of the factory system in Britain",
+        "the abolition of the British monarchy",
+        "laws limiting child labor and working hours"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Inspectors' reports helped persuade Parliament to pass Factory Acts that limited children's work and hours. The factory system kept growing."
+    },
+    {
+      "id": "APWORLD-T2-033",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S09",
+      "stem": "Which thinker responded to conditions like those in the report by arguing that workers should own the means of production?",
+      "options": [
+        "Karl Marx",
+        "Confucius",
+        "Adam Smith",
+        "John Locke"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Marx and Engels argued that industrial capitalism exploited workers and predicted that workers would take over the means of production. Smith defended free markets."
+    },
+    {
+      "id": "APWORLD-T2-034",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S10",
+      "stem": "The official's complaint about silver refers to",
+      "options": [
+        "a trade imbalance caused by British opium sales",
+        "a shortage of silver in Britain",
+        "China's purchase of British cotton cloth",
+        "the arrival of silver in China from Spanish America"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Before opium, Britain paid silver for Chinese tea; once British merchants sold opium from India, silver flowed out of China instead."
+    },
+    {
+      "id": "APWORLD-T2-035",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S10",
+      "stem": "The seizure of opium described in the letter most directly led to",
+      "options": [
+        "the end of tea exports from China",
+        "a ban on opium in every European country and colony",
+        "a Chinese conquest of British India",
+        "a war that forced China to sign unequal treaties"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Britain went to war, and the Treaty of Nanjing of 1842 opened ports, ceded Hong Kong and began a series of unequal treaties."
+    },
+    {
+      "id": "APWORLD-T2-036",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S10",
+      "stem": "Which internal challenge also weakened the Qing in the decades after the letter?",
+      "options": [
+        "The Glorious Revolution",
+        "The Taiping Rebellion",
+        "The Meiji Restoration",
+        "The Sepoy Rebellion"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Taiping Rebellion of 1850 to 1864 killed millions and nearly toppled the dynasty. The Meiji Restoration was in Japan, the Sepoy Rebellion in India and the Glorious Revolution in England."
+    },
+    {
+      "id": "APWORLD-T2-037",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S10",
+      "stem": "The official's argument would be most persuasive to readers who",
+      "options": [
+        "believed free trade must never be limited by any government",
+        "lived in the British colony of India",
+        "wanted to expand the opium trade",
+        "believed a ruler must protect the health of subjects"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The letter appeals to a ruler's duty to protect his people, and asks the foreign ruler to apply the same duty to the harm his own subjects do in China."
+    },
+    {
+      "id": "APWORLD-T2-038",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S11",
+      "stem": "The meeting in a city far away mentioned in the reply refers to",
+      "options": [
+        "the Berlin Conference of 1884 and 1885",
+        "the Treaty of Tordesillas",
+        "the Congress of Vienna of 1815",
+        "the Paris Peace Conference that followed the war of 1914"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "European powers met in Berlin in 1884 and 1885 to set rules for claiming African territory, without any African rulers present."
+    },
+    {
+      "id": "APWORLD-T2-039",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S11",
+      "stem": "The ruler's comment about rifles points to which factor in the European conquest of Africa?",
+      "options": [
+        "The warm welcome Europeans received from most African rulers",
+        "Advantages in weapons such as repeating rifles and machine guns",
+        "A shortage of horses in Europe",
+        "The end of the slave trade in 1700"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Breech-loading and repeating rifles and the Maxim gun gave European armies a large edge, and quinine let them survive malaria in the interior."
+    },
+    {
+      "id": "APWORLD-T2-040",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S11",
+      "stem": "Which African state successfully resisted European conquest in this period?",
+      "options": [
+        "Egypt, which drove out the British",
+        "The Congo, which expelled the Belgians",
+        "Ethiopia, which defeated Italy at Adwa",
+        "The Zulu kingdom, which kept its independence"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Ethiopia used modern rifles and artillery to defeat an Italian army at Adwa in 1896 and stayed independent. The Zulu kingdom was conquered by Britain in 1879."
+    },
+    {
+      "id": "APWORLD-T2-041",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S12",
+      "stem": "According to the historian, the crash spread worldwide mainly because",
+      "options": [
+        "every country used the same currency",
+        "all countries had abandoned farming",
+        "the League of Nations ordered banks in every country to close",
+        "economies were linked by loans and trade"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The historian ties the crisis to American loans and collapsing commodity prices, which carried the depression to Europe, Latin America and Africa."
+    },
+    {
+      "id": "APWORLD-T2-042",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S12",
+      "stem": "The historian's last sentence best explains",
+      "options": [
+        "the rise of fascist movements in the 1930s",
+        "the decline of nationalism in Germany",
+        "the end of the Soviet five-year plans for heavy industry",
+        "the spread of democracy across Europe"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Mass unemployment helped parties such as the Nazis in Germany win support with promises of work, order and national revival."
+    },
+    {
+      "id": "APWORLD-T2-043",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S12",
+      "stem": "Unlike the economies the historian describes, the Soviet Union in the 1930s",
+      "options": [
+        "relied on free markets and foreign loans",
+        "used state planning and forced industrialization",
+        "had no heavy industry at all",
+        "was hit hardest of all by the stock market crash of 1929"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Stalin's five-year plans and collectivization built heavy industry under state control, at great human cost, largely apart from world markets."
+    },
+    {
+      "id": "APWORLD-T2-044",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S12",
+      "stem": "Which response to the crisis in the historian's account differed from the fascist response?",
+      "options": [
+        "Expanding territory by war to gain land and resources",
+        "Building a cult around a single leader",
+        "Banning all political parties but one",
+        "Democracies expanding the state's role in the economy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Democracies such as the United States and Sweden used public works and welfare programs within democratic systems; the other choices describe fascist and militarist states."
+    },
+    {
+      "id": "APWORLD-T2-045",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S13",
+      "stem": "The war between the parties mentioned in the memoir was fought between",
+      "options": [
+        "the Communists and the Nationalists",
+        "China and the Soviet Union over the border",
+        "the Qing and the Taiping",
+        "China and India"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "After Japan's defeat in 1945, the Chinese Civil War resumed between Mao Zedong's Communists and the Nationalists, ending in a Communist victory in 1949."
+    },
+    {
+      "id": "APWORLD-T2-046",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S13",
+      "stem": "The land reform described in the memoir is best described as",
+      "options": [
+        "the redistribution of landlords' land to peasants",
+        "the sale of public land to foreign companies and banks",
+        "the return of land to Qing nobles",
+        "a plan to replace farming with mining"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Communists took land from landlords, often after public accusation meetings, and gave it to poor peasants."
+    },
+    {
+      "id": "APWORLD-T2-047",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S13",
+      "stem": "The great campaign described at the end of the memoir led to",
+      "options": [
+        "a severe famine",
+        "the end of communist rule",
+        "a rapid rise in grain production",
+        "China joining NATO"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "During the Great Leap Forward, starting in 1958, farmers were pulled into backyard steel making and unrealistic quotas, and the famine that followed killed tens of millions."
+    },
+    {
+      "id": "APWORLD-T2-048",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S13",
+      "stem": "The move from land reform to collectives in the memoir was most similar to",
+      "options": [
+        "Mexico's growth of large haciendas in the 1800s",
+        "Japan's land tax of the 1870s",
+        "the British enclosure of common land",
+        "Soviet collectivization of farms in the 1930s"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Like Soviet collectivization, Chinese collectives put private farms under state-directed group control, and both were followed by famine."
+    },
+    {
+      "id": "APWORLD-T2-049",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S14",
+      "stem": "The laws described in the statement were part of",
+      "options": [
+        "the Bantustans' independence from South Africa",
+        "apartheid, a system of legal racial segregation",
+        "the mandate system of the League of Nations",
+        "Britain's indirect rule through local chiefs and kings"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Apartheid, enacted from 1948, classified people by race, controlled movement with passes and kept Black South Africans from the vote."
+    },
+    {
+      "id": "APWORLD-T2-050",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S14",
+      "stem": "The statement's reference to the rest of Africa winning its freedom refers to",
+      "options": [
+        "the end of the Cold War",
+        "the Berlin Conference of 1884",
+        "the independence of many African colonies",
+        "the abolition of the Atlantic slave trade in the 1800s"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "From Ghana in 1957, most of Africa won independence in the next two decades, leaving white-minority rule in South Africa increasingly isolated."
+    },
+    {
+      "id": "APWORLD-T2-051",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S14",
+      "stem": "The call for the world to stop trading with the government contributed to",
+      "options": [
+        "international sanctions on South Africa",
+        "South Africa's conquest of its neighbors",
+        "a sharp rise in foreign investment in South African mines",
+        "the end of all trade in Africa"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Boycotts, divestment campaigns and government sanctions in the 1980s raised the cost of apartheid and helped push the government to negotiate."
+    },
+    {
+      "id": "APWORLD-T2-052",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S14",
+      "stem": "What change followed the campaign described in the statement?",
+      "options": [
+        "Rule by a British governor again",
+        "A white-only republic that lasted until 2010",
+        "A ban on all political parties",
+        "Elections open to all races in 1994"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Negotiations ended apartheid, and in 1994 South Africans of all races voted in the first fully democratic election."
+    },
+    {
+      "id": "APWORLD-T2-053",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S15",
+      "stem": "The factory described in the interview best illustrates",
+      "options": [
+        "a colony producing raw materials for Europe",
+        "a craft workshop selling only to local markets in its own region",
+        "companies moving production to lower-wage countries",
+        "a state-owned factory in a planned economy"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Companies based in wealthy countries contracted factories in Asia and elsewhere where wages were lower, a key feature of economic globalization."
+    },
+    {
+      "id": "APWORLD-T2-054",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S15",
+      "stem": "Which technologies mentioned in the interview made this kind of production possible?",
+      "options": [
+        "Railways and steam looms",
+        "Radio and airships",
+        "Computers and container shipping",
+        "Telegraph cables and sailing ships"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Computer networks sent designs instantly, and standard steel containers cut the cost of moving goods by sea."
+    },
+    {
+      "id": "APWORLD-T2-055",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Claims and evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-T2-S15",
+      "stem": "The manager's remark about protests abroad is best used as evidence of",
+      "options": [
+        "the end of factory work in Asia",
+        "global campaigns over working conditions",
+        "government bans on all exports of shoes and clothing",
+        "falling demand for sports shoes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Campaigns by students, unions and consumers in the 1990s pressed brands over sweatshop conditions, part of a broader reaction to globalization."
+    },
+    {
+      "id": "APWORLD-D-001",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Continuity and change",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S01",
+      "stem": "The account best illustrates which development in Southeast Asia?",
+      "options": [
+        "The end of rice farming in the region",
+        "The influence of Hindu and Buddhist traditions from South Asia",
+        "The spread of Confucian civil service examinations to every kingdom",
+        "The arrival of Christianity through Portuguese missions"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Southeast Asian states such as the Khmer adopted Hindu and Buddhist ideas carried from South Asia by traders and monks, and the great temple changed from Hindu to Buddhist use. Portuguese missions came after 1500."
+    },
+    {
+      "id": "APWORLD-D-002",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S01",
+      "stem": "The reservoirs and canals described in the account show that the kingdom's power rested partly on",
+      "options": [
+        "trade in camels across the desert",
+        "a navy that ruled the Atlantic",
+        "control of water for rice farming",
+        "silver mines worked by enslaved people"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Khmer rulers organized reservoirs and canals that watered rice fields, and the food they produced supported the capital. The other choices describe other places and periods."
+    },
+    {
+      "id": "APWORLD-D-003",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S01",
+      "stem": "Unlike the kingdom described in the account, the Srivijaya state of the same region drew its power mainly from",
+      "options": [
+        "silver from mines in the Americas",
+        "irrigated wheat farming in the river valleys of the interior",
+        "conquest of the Mongol Empire",
+        "control of sea trade through the Strait of Malacca"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Srivijaya, based on Sumatra, grew rich by controlling and taxing the sea lanes between the Indian Ocean and the South China Sea. Land-based Khmer power rested on irrigated rice."
+    },
+    {
+      "id": "APWORLD-D-004",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S01",
+      "stem": "Which later change in maritime Southeast Asia came mainly through merchants?",
+      "options": [
+        "The adoption of Shinto by the Javanese kings and their courts",
+        "The spread of Christianity to Angkor",
+        "The spread of Islam to ports such as Malacca",
+        "The conquest of Sumatra by the Inca"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "From the 1300s and 1400s, Muslim traders carried Islam to ports such as Malacca, and many coastal rulers converted. Christianity arrived later with the Portuguese and Spanish."
+    },
+    {
+      "id": "APWORLD-D-005",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S02",
+      "stem": "According to the historian, the plague spread mainly by way of",
+      "options": [
+        "trade routes across land and sea",
+        "Mongol attacks on Japan",
+        "Crusader armies returning from the east",
+        "pilgrims crossing the Atlantic"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The historian ties the plague to the roads and sea lanes that carried silk and spices: the trade networks linking Central Asia, the Mediterranean and Europe."
+    },
+    {
+      "id": "APWORLD-D-006",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S02",
+      "stem": "The historian's point about peasants in western Europe is best supported by evidence that",
+      "options": [
+        "laborers won higher pay after the plague",
+        "towns emptied as peasants returned to the manors",
+        "serfdom grew stronger in western Europe",
+        "lords raised the labor dues owed by every peasant"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "With fewer workers, laborers could demand more, and wages rose in many places; serfdom weakened in western Europe over the following century, despite lords' efforts to hold wages down."
+    },
+    {
+      "id": "APWORLD-D-007",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Claims and evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S02",
+      "stem": "Which statement would the historian most likely agree with?",
+      "options": [
+        "The plague began in the Americas and spread east across the Atlantic",
+        "The plague was a shared crisis with different local effects",
+        "The plague had no effect on trade networks",
+        "The plague affected only western Europe"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The historian says the losses in the Islamic world and China were as great as in Europe but that social results differed from place to place."
+    },
+    {
+      "id": "APWORLD-D-008",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S02",
+      "stem": "The speed of the plague's spread in the 1340s is best explained by",
+      "options": [
+        "the use of railways for long trips",
+        "the trade links the Mongol empires had fostered",
+        "the opening of new sea routes between Europe and the Americas",
+        "the closing of Mediterranean ports"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Mongol rule had tied Central Asia, China, Persia and the Black Sea ports together, and the plague moved along those links to the Mediterranean. Railways and the Americas came later."
+    },
+    {
+      "id": "APWORLD-D-009",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S03",
+      "stem": "The yearly turn of labor described in the account is known as",
+      "options": [
+        "the encomienda",
+        "the mit'a",
+        "the jizya",
+        "the iqta"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Inca mit'a required households to give labor to the state for set periods. The encomienda was a Spanish grant, the jizya a tax on non-Muslims, and the iqta a land grant in Islamic states."
+    },
+    {
+      "id": "APWORLD-D-010",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S03",
+      "stem": "The knotted cords described in the account were used to",
+      "options": [
+        "decorate the temples of the sun",
+        "keep records for the state",
+        "measure the height of the mountains",
+        "send messages across the ocean"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Inca kept census, tribute and other records on quipu, knotted cords read by trained officials. The Inca had no writing system of the European kind."
+    },
+    {
+      "id": "APWORLD-D-011",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S03",
+      "stem": "The Inca state described in the account differed from the Mexica state mainly in that the Inca",
+      "options": [
+        "relied more on labor service and a road network",
+        "had no army and no subject peoples",
+        "were ruled by a council of wealthy merchants from the coast",
+        "collected all taxes in coined money"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Both ruled subject peoples, but the Inca built a centralized state held together by roads and the mit'a labor system, while the Mexica relied more on tribute from conquered city-states."
+    },
+    {
+      "id": "APWORLD-D-012",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Feudal Japan and feudal Europe in the 1200s were similar in that both",
+      "options": [
+        "relied on warriors who owed loyalty and service to lords",
+        "were united under a single emperor who held real power",
+        "were ruled by strong central bureaucracies chosen by exams",
+        "had no landed aristocracy"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Samurai served daimyo and the shogun, and knights served lords in Europe, in exchange for land or support. Real power in Japan lay with the shogun, not the emperor."
+    },
+    {
+      "id": "APWORLD-D-013",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Delhi Sultanate in South Asia is best described as",
+      "options": [
+        "a Muslim state ruling over a mostly Hindu population",
+        "a Buddhist kingdom founded by monks",
+        "a Hindu empire that expelled all Muslims from northern India",
+        "a colony of the Song dynasty"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Turkic Muslim rulers founded the Delhi Sultanate in the early 1200s and ruled much of northern India, where most people were Hindu. Their rule saw both conflict and cultural blending."
+    },
+    {
+      "id": "APWORLD-D-014",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU12",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The Bhakti movement in South Asia is best described as",
+      "options": [
+        "a Muslim law school that enforced the jizya",
+        "a Buddhist revival led and funded by the Delhi sultans",
+        "a Hindu movement of personal devotion to a god",
+        "a movement to expel merchants from Indian ports"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Bhakti poets and teachers urged personal devotion to a god, often in local languages, and some challenged caste rules. It grew alongside Sufi Islam in the same period."
+    },
+    {
+      "id": "APWORLD-D-015",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S04",
+      "stem": "The faith that the proclamation makes official is",
+      "options": [
+        "Sikhism",
+        "Sunni Islam",
+        "Zoroastrianism",
+        "Shia Islam"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The faith of the Twelve Imams is Twelver Shia Islam, which Shah Ismail made the religion of the Safavid state in the early 1500s."
+    },
+    {
+      "id": "APWORLD-D-016",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S04",
+      "stem": "The enemy to the west mentioned in the proclamation was most likely",
+      "options": [
+        "the Qing dynasty",
+        "the Sunni Ottoman Empire",
+        "the Portuguese in the Persian Gulf",
+        "the Mughal Empire"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Ottomans lay west of Safavid Persia, followed Sunni Islam and fought the Safavids from the Battle of Chaldiran in 1514 onward. The Mughals lay to the east."
+    },
+    {
+      "id": "APWORLD-D-017",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S04",
+      "stem": "The shah's policy in the proclamation most likely aimed to",
+      "options": [
+        "build a shared identity that set his state apart from its rivals",
+        "weaken the authority of the shah over the religious scholars of Persia",
+        "encourage subjects to convert to Christianity",
+        "end conflict with all neighboring states"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Making Shia Islam the state faith gave the Safavid realm a distinct identity and unity against its Sunni neighbors. It sharpened, rather than ended, conflict with them."
+    },
+    {
+      "id": "APWORLD-D-018",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S04",
+      "stem": "Which outcome of the policy in the proclamation has lasted into the present?",
+      "options": [
+        "Iran remains a mainly Shia country",
+        "Persia gave up Islam for Buddhism",
+        "Iran became mainly Sunni after 1600",
+        "The Ottoman Empire became mainly Shia"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Safavid rule made Persia, today Iran, a largely Shia land, which it remains. The Ottoman lands stayed mostly Sunni."
+    },
+    {
+      "id": "APWORLD-D-019",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S05",
+      "stem": "The ideas in the pamphlet are most closely tied to",
+      "options": [
+        "the Scientific Revolution in Europe",
+        "the Enlightenment",
+        "the Crusades",
+        "the Protestant Reformation"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Salvation by faith alone, reading Scripture in one's own language and rejecting the sale of indulgences were central Protestant ideas from the 1520s."
+    },
+    {
+      "id": "APWORLD-D-020",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S05",
+      "stem": "The pamphlet suggests that the new ideas spread quickly mainly because of",
+      "options": [
+        "the Silk Roads",
+        "the telegraph",
+        "the printing press",
+        "the steam engine and railways"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The pamphlet notes that printers had put the Bible into German for a few coins. The movable-type printing press made cheap books and pamphlets possible from the mid-1400s."
+    },
+    {
+      "id": "APWORLD-D-021",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S05",
+      "stem": "The writer's appeal to German princes is best explained by",
+      "options": [
+        "the princes' wish to lead and join the Catholic Reformation in Rome",
+        "the princes' plan to move the Pope to Germany",
+        "Ottoman control of the German states",
+        "rulers' interest in gaining power at the expense of the Church"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Many princes backed the Reformation partly because breaking with Rome let them keep church wealth and power for themselves. The Catholic Reformation was Rome's response."
+    },
+    {
+      "id": "APWORLD-D-022",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S05",
+      "stem": "A major result of the movement described in the pamphlet was",
+      "options": [
+        "a century of religious wars in Europe",
+        "the conversion of the Ottoman sultans",
+        "the union of all German states in 1530",
+        "the immediate end of the Catholic Church"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Conflicts between Catholic and Protestant rulers led to wars such as the French Wars of Religion and the Thirty Years' War. The Catholic Church survived and reformed itself."
+    },
+    {
+      "id": "APWORLD-D-023",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S06",
+      "stem": "The empire described in the chronicle is",
+      "options": [
+        "Songhai",
+        "Great Zimbabwe",
+        "Kongo",
+        "Ethiopia"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Songhai, ruled by the askias, controlled the middle Niger and the trade city of Timbuktu until a Moroccan army defeated it in 1591."
+    },
+    {
+      "id": "APWORLD-D-024",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S06",
+      "stem": "According to the chronicle, the empire fell mainly because of",
+      "options": [
+        "a revolt by Portuguese settlers on the coast",
+        "the drying up of the Niger River",
+        "a plague that emptied Timbuktu",
+        "an invading army with gunpowder weapons"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The chronicle credits Morocco's muskets and cannon, which Songhai cavalry had never faced. The Moroccan victory at Tondibi in 1591 broke the empire."
+    },
+    {
+      "id": "APWORLD-D-025",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S06",
+      "stem": "The chronicle's description of Timbuktu shows continuity with an earlier period in that the city",
+      "options": [
+        "remained a center of Islamic learning and trade",
+        "had become a Christian bishopric",
+        "had become the capital of the Portuguese in Africa",
+        "had stopped trading across the Sahara"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Timbuktu had been a center of Islamic scholarship and trans-Saharan trade under Mali, and it stayed one under Songhai."
+    },
+    {
+      "id": "APWORLD-D-026",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Qing rulers required Han Chinese men to wear the queue hairstyle in order to",
+      "options": [
+        "show their submission to Manchu rule",
+        "mark them as Buddhist monks",
+        "follow an old Ming custom",
+        "set officials apart from the merchant class"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The queue was a Manchu style, and requiring it was a public sign of loyalty to the new dynasty. Refusing it could be punished as rebellion."
+    },
+    {
+      "id": "APWORLD-D-027",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Ottoman conquest of Constantinople in 1453 most directly",
+      "options": [
+        "opened the Atlantic slave trade",
+        "ended the Byzantine Empire",
+        "began the Protestant Reformation",
+        "ended the Safavid dynasty"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Mehmed II's capture of Constantinople ended the Byzantine Empire, and the city became the Ottoman capital, Istanbul."
+    },
+    {
+      "id": "APWORLD-D-028",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU3",
+      "skill": "Developments and processes",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In the Mughal Empire, zamindars were",
+      "options": [
+        "local landholders who collected taxes for the state",
+        "Muslim judges who ruled on family law",
+        "slave soldiers raised in the palace",
+        "Portuguese merchants with trading rights in Mughal ports"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Zamindars collected land revenue from peasants and passed part of it to the state, keeping a share. Under British rule many became landlords."
+    },
+    {
+      "id": "APWORLD-D-029",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S07",
+      "stem": "According to the historian, crops from the Americas most directly led to",
+      "options": [
+        "the end of rice farming in China",
+        "the spread of wheat to the Caribbean",
+        "a fall in sugar production in Brazil",
+        "new staple foods in Africa and China"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Maize, cassava and sweet potatoes became staples in Africa and China, often grown on land unsuited to older crops. Sugar production in Brazil grew."
+    },
+    {
+      "id": "APWORLD-D-030",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S07",
+      "stem": "The new crops described by the historian most likely contributed to",
+      "options": [
+        "the collapse of the Qing dynasty in 1700",
+        "a decline in trade between China and Southeast Asia",
+        "population growth in China in the 1700s",
+        "famine in China in the 1700s"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Hardy American crops let farmers use hills and poor soil, helping China's population grow rapidly under the Qing in the 1700s."
+    },
+    {
+      "id": "APWORLD-D-031",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S07",
+      "stem": "The historian's last sentence refers to societies built around",
+      "options": [
+        "silver mines in Japan",
+        "small family farms in Europe",
+        "fur trading posts in Canada and the Great Lakes",
+        "plantations worked by enslaved Africans"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Sugar cane needed heavy labor; in the Caribbean and Brazil it was grown on plantations worked mainly by enslaved Africans."
+    },
+    {
+      "id": "APWORLD-D-032",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Developments and processes",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S07",
+      "stem": "The movement of plants, animals and diseases that the historian describes is called",
+      "options": [
+        "the Silk Roads",
+        "the Columbian Exchange",
+        "the Commercial Revolution",
+        "the Green Revolution"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Columbian Exchange is the transfer of crops, animals, people and diseases between the hemispheres after 1492. The Green Revolution was a 1900s farming change."
+    },
+    {
+      "id": "APWORLD-D-033",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S08",
+      "stem": "The company described in the report is an example of",
+      "options": [
+        "a joint-stock company",
+        "a Mongol trading partnership",
+        "a craft guild",
+        "a state-run mine"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Dutch East India Company sold shares to investors who shared the risks and profits of long voyages, the joint-stock model also used by the English East India Company."
+    },
+    {
+      "id": "APWORLD-D-034",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S08",
+      "stem": "The merchant's claim that the company could fix the price of spices rested on",
+      "options": [
+        "the ban on spices in Europe",
+        "control of the Silk Roads",
+        "a treaty signed with the Mughal emperor in Delhi",
+        "its monopoly over the islands that grew them"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "By seizing the Banda Islands, the only source of nutmeg, the company could control supply and set prices in Europe."
+    },
+    {
+      "id": "APWORLD-D-035",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S08",
+      "stem": "The Dutch company described in the report was most similar to which other organization?",
+      "options": [
+        "The Ottoman janissary corps",
+        "The Jesuit order",
+        "The Hanseatic League of the 1300s",
+        "The English East India Company"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The English East India Company was also a chartered joint-stock company with its own ships, forts and soldiers. The janissaries and Jesuits were not trading companies."
+    },
+    {
+      "id": "APWORLD-D-036",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Sourcing and situation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S08",
+      "stem": "The intended audience of the report helps explain why the merchant stresses",
+      "options": [
+        "the profits the shareholders can expect",
+        "the history of the spice trade before 1500",
+        "the religious beliefs of local rulers",
+        "the suffering of the people of the islands"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The report is written to the company's directors, who answered to shareholders, so it emphasizes control of supply and expected returns."
+    },
+    {
+      "id": "APWORLD-D-037",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S09",
+      "stem": "The planter's letter suggests that sugar plantations in the Caribbean",
+      "options": [
+        "had death rates so high that planters relied on new imports",
+        "grew their workforce mainly through births",
+        "depended on Native American labor by the 1730s",
+        "used mostly European indentured workers rather than Africans by the 1730s"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Brutal work in the cane fields and boiling houses killed enslaved people faster than births replaced them, so planters kept buying new captives from Africa."
+    },
+    {
+      "id": "APWORLD-D-038",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S09",
+      "stem": "The free communities of runaways described in the letter are known as",
+      "options": [
+        "encomiendas",
+        "missions",
+        "trading factories",
+        "maroon communities"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Maroons were people who escaped slavery and built free communities in mountains and forests, as in Jamaica, Suriname and Brazil."
+    },
+    {
+      "id": "APWORLD-D-039",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Claims and evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S09",
+      "stem": "The planter's mention of a treaty is best used as evidence that",
+      "options": [
+        "most enslaved people on the island had won their freedom by the 1730s",
+        "resistance could force colonial governments to negotiate",
+        "planters welcomed the runaways' communities",
+        "colonial governments had no soldiers in the Caribbean"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Jamaican maroons fought British troops to a standstill and won treaties in 1739, showing that resistance could force concessions. Most enslaved people remained enslaved."
+    },
+    {
+      "id": "APWORLD-D-040",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Treaty of Tordesillas of 1494",
+      "options": [
+        "created the Dutch East India Company",
+        "ended the Hundred Years' War",
+        "divided newly found lands between Spain and Portugal",
+        "opened all of China to European trade and missionaries"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The treaty drew a line in the Atlantic: Spain claimed lands to the west and Portugal to the east, which is why Brazil became Portuguese."
+    },
+    {
+      "id": "APWORLD-D-041",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Mercantilism held that a state grew strong by",
+      "options": [
+        "sharing colonial profits equally with the colonies that produced them",
+        "letting markets operate free of state rules",
+        "exporting more than it imported and drawing raw materials from colonies",
+        "abolishing all tariffs between nations"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Mercantilists believed wealth was limited, so states sought trade surpluses, stores of gold and silver, and colonies that supplied raw materials and bought finished goods."
+    },
+    {
+      "id": "APWORLD-D-042",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU4",
+      "skill": "Developments and processes",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Queen Nzinga of Ndongo and Matamba is best known for",
+      "options": [
+        "leading the Haitian Revolution",
+        "building the first Dutch fort on the coast of Angola",
+        "resisting Portuguese expansion in West Central Africa",
+        "uniting Mali and Songhai"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In the 1600s Nzinga used war, diplomacy and alliances, including with the Dutch, to resist Portuguese slave-raiding and conquest in what is now Angola."
+    },
+    {
+      "id": "APWORLD-D-043",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S10",
+      "stem": "The pamphlet's argument reflects which development in France in 1789?",
+      "options": [
+        "Noble demands for higher taxes on their own estates",
+        "Demands by the third estate for political power",
+        "Support for the absolute power of the king",
+        "Calls for a Catholic crusade"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Members of the third estate, the commoners, demanded a say in government equal to their numbers and formed the National Assembly in 1789."
+    },
+    {
+      "id": "APWORLD-D-044",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S10",
+      "stem": "The idea that the nation, not the king, is sovereign came mainly from",
+      "options": [
+        "the Mongol law code",
+        "Enlightenment thinkers",
+        "Confucian scholars",
+        "the Catholic Reformation"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Enlightenment writers such as Rousseau argued that sovereignty belongs to the people, an idea the French revolutionaries put into practice."
+    },
+    {
+      "id": "APWORLD-D-045",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S10",
+      "stem": "A major result of the French Revolution and Napoleon's wars was",
+      "options": [
+        "the lasting return of feudal privileges across all of Europe",
+        "a decline in the power of the middle classes",
+        "the spread of nationalism and legal equality across Europe",
+        "the end of all monarchies in Europe by the year 1815"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "French armies and the Napoleonic Code spread legal equality and abolished feudal dues, and resistance to French rule stirred nationalism in Spain, Germany and elsewhere. Many monarchies returned in 1815."
+    },
+    {
+      "id": "APWORLD-D-046",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Claims and evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S10",
+      "stem": "Which group would most likely have opposed the pamphlet's argument?",
+      "options": [
+        "Merchants in Paris",
+        "Lawyers in the provincial towns of France",
+        "Peasants who paid heavy taxes",
+        "Nobles who held offices by birth"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The pamphlet attacks the privileges of nobles and clergy, who would lose their tax exemptions and offices. Merchants, peasants and lawyers were part of the third estate."
+    },
+    {
+      "id": "APWORLD-D-047",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S11",
+      "stem": "The speech is an example of",
+      "options": [
+        "nationalism",
+        "mercantilism",
+        "absolutism",
+        "feudalism"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The speaker defines the nation by shared language and history and calls for one German state, the core of nineteenth-century nationalism."
+    },
+    {
+      "id": "APWORLD-D-048",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S11",
+      "stem": "How was the goal of the speech finally achieved?",
+      "options": [
+        "An elected parliament united Germany in 1848",
+        "Austria united Germany under its emperor",
+        "France united the German states after 1815",
+        "Prussia united Germany through wars by 1871"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The liberal Frankfurt Parliament of 1848 failed; Germany was united under Prussian leadership after wars with Denmark, Austria and France, and the empire was declared in 1871."
+    },
+    {
+      "id": "APWORLD-D-049",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S11",
+      "stem": "Which movement of the 1800s was most similar to the one in the speech?",
+      "options": [
+        "The Opium Wars",
+        "The partition of Africa by Europe",
+        "The Taiping Rebellion",
+        "The unification of Italy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Italian nationalists also sought to join many states into one nation, which was largely done by 1861 and completed in 1870."
+    },
+    {
+      "id": "APWORLD-D-050",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S11",
+      "stem": "Nationalist ideas like those in the speech also challenged which kind of state in the 1800s?",
+      "options": [
+        "Small states with a single national language",
+        "Island states such as Britain and Japan with long-settled borders",
+        "Empires ruling many peoples, such as Austria",
+        "City-states in East Africa"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Multiethnic empires such as Austria-Hungary and the Ottoman Empire faced nationalist movements among Serbs, Greeks, Czechs, Hungarians and others."
+    },
+    {
+      "id": "APWORLD-D-051",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S12",
+      "stem": "The pamphlet is an example of",
+      "options": [
+        "a campaign to end slavery",
+        "an appeal for free trade with China",
+        "a defense of the plantation system",
+        "a call for war with France"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The pamphlet urges Parliament to end slavery in the British West Indies and asks families to boycott slave-grown sugar."
+    },
+    {
+      "id": "APWORLD-D-052",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S12",
+      "stem": "What happened to slavery in the British Empire after the pamphlet was written?",
+      "options": [
+        "It spread to Britain itself",
+        "It was replaced by serfdom",
+        "It lasted in the West Indies until 1900",
+        "Parliament abolished it in the 1830s"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Parliament passed the Slavery Abolition Act in 1833, ending slavery in most British colonies, though it first imposed a period of forced apprenticeship."
+    },
+    {
+      "id": "APWORLD-D-053",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S12",
+      "stem": "Which reform in the 1860s was most similar in purpose to the one the pamphlet demands?",
+      "options": [
+        "The Meiji government's new land tax",
+        "The opening of the Suez Canal",
+        "The emancipation of the serfs in Russia",
+        "The British Crown's takeover of India in 1858"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Russia freed its serfs in 1861, ending a form of unfree labor, though peasants had to pay for land. The other events had different purposes."
+    },
+    {
+      "id": "APWORLD-D-054",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Adam Smith's The Wealth of Nations (1776) argued that",
+      "options": [
+        "colonies should be ruled for profit by joint-stock companies",
+        "workers should seize the factories",
+        "states should control all trade through monopolies",
+        "free markets and the division of labor create wealth"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Smith argued against mercantilist monopolies and for free markets, in which the division of labor and competition increase a nation's wealth."
+    },
+    {
+      "id": "APWORLD-D-055",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The second industrial revolution of the late 1800s is best known for",
+      "options": [
+        "the first printing presses",
+        "steel, electricity and chemicals",
+        "the invention of the caravel and astrolabe",
+        "water-powered cotton mills"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "After about 1870, new industries in steel, electricity, chemicals and later oil grew, led by Germany and the United States as well as Britain."
+    },
+    {
+      "id": "APWORLD-D-056",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU5",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Railways and steamships in the 1800s most directly",
+      "options": [
+        "slowed migration from Europe to the Americas sharply",
+        "cut the cost and time of moving goods and people",
+        "ended trade between Europe and Asia",
+        "raised the cost of shipping grain by sea"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Railways and steamships moved goods and people faster and cheaper over land and sea, which fed trade, migration and empire."
+    },
+    {
+      "id": "APWORLD-D-057",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S13",
+      "stem": "The letter best illustrates",
+      "options": [
+        "a colony ruled through local kings",
+        "settler colonialism that took Indigenous land",
+        "a trading-post empire that left land in local hands",
+        "a treaty that protected every acre of Maori land in full"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In New Zealand, as in Australia and parts of Africa, growing numbers of European settlers took land from the Indigenous people, often by war after treaties were broken."
+    },
+    {
+      "id": "APWORLD-D-058",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S13",
+      "stem": "The process described in the letter was most similar to events in the same century in",
+      "options": [
+        "Australia, where settlers took Aboriginal land",
+        "Japan, where foreigners were confined to ports",
+        "the Ottoman Empire, where Christians governed Istanbul",
+        "China, where the Qing kept its borders closed"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In Australia, British settlement also pushed Aboriginal peoples off their land as settler numbers grew."
+    },
+    {
+      "id": "APWORLD-D-059",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S13",
+      "stem": "The settler's last sentence is best used as evidence of",
+      "options": [
+        "Maori military superiority in the long run",
+        "a British plan to withdraw its troops from New Zealand",
+        "an expectation that settlers would win",
+        "a shortage of settlers in New Zealand"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The settler admits the Maori forts are strong but expects growing numbers and guns to prevail, which is what happened in the wars of the 1860s."
+    },
+    {
+      "id": "APWORLD-D-060",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Sourcing and situation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S13",
+      "stem": "The letter's account of the conflict is limited mainly because the writer",
+      "options": [
+        "wrote centuries after the events took place",
+        "is a settler hoping to gain land",
+        "had never been to New Zealand",
+        "was a Maori chief"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A settler writing home sees the war from the side that wanted the land; Maori accounts would explain why the chiefs refused to sell."
+    },
+    {
+      "id": "APWORLD-D-061",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S14",
+      "stem": "According to the letter, the writer left home mainly because of",
+      "options": [
+        "a government order to settle Malaya",
+        "a personal invitation from the Malay sultan to settle",
+        "better wages abroad and poor harvests at home",
+        "religious persecution in China"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "He cites wages three times higher and failing harvests, typical push and pull factors for Chinese migration in the 1800s."
+    },
+    {
+      "id": "APWORLD-D-062",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S14",
+      "stem": "The broker's role described in the letter shows that many migrants",
+      "options": [
+        "arrived with enough money to buy land of their own",
+        "traveled at government expense",
+        "were paid in advance by the mine owners",
+        "began abroad in debt for the cost of their passage"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Brokers paid passage and took the cost from the migrant's wages, so many laborers began their time abroad in debt."
+    },
+    {
+      "id": "APWORLD-D-063",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S14",
+      "stem": "The writer's hope that his brother will join him reflects",
+      "options": [
+        "chain migration that built overseas Chinese communities",
+        "the return of all migrants within a year",
+        "a government ban on Chinese emigration that was enforced",
+        "the end of migration from China after 1880"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Migrants drew relatives and neighbors from home villages, building large Chinese communities in Southeast Asia and elsewhere."
+    },
+    {
+      "id": "APWORLD-D-064",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S14",
+      "stem": "Which later development shows a reaction against migration like that in the letter?",
+      "options": [
+        "Laws restricting Asian immigration to Australia",
+        "Rising remittances to Chinese villages",
+        "The spread of tin mining in Malaya",
+        "The growth of overseas Chinese trading networks in Asia"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Several settler states passed laws to keep out Asian migrants, including Australia's Immigration Restriction Act of 1901, the basis of the White Australia policy."
+    },
+    {
+      "id": "APWORLD-D-065",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S15",
+      "stem": "The relationship described in the report is an example of",
+      "options": [
+        "a colony governed by a British viceroy",
+        "a socialist planned economy",
+        "a self-sufficient economy closed to foreign trade and capital",
+        "economic imperialism without direct colonial rule"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Argentina was independent, but British investment shaped its economy around exports of wheat and beef, a form of economic imperialism."
+    },
+    {
+      "id": "APWORLD-D-066",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S15",
+      "stem": "Which technology made the trade in the report possible?",
+      "options": [
+        "The printing press with movable type",
+        "The cotton gin",
+        "The caravel",
+        "Refrigerated steamships"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Refrigerated ships from the late 1870s let Argentina send frozen, and later chilled, meat across the Atlantic."
+    },
+    {
+      "id": "APWORLD-D-067",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Sourcing and situation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S15",
+      "stem": "The investor's claim that Argentina could not hope for better partners overlooks",
+      "options": [
+        "the absence of railways in Argentina",
+        "Britain's refusal to buy Argentine wheat or beef",
+        "Argentina's dependence on foreign capital",
+        "Argentina's rapid industrialization"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An investor praises the arrangement, but reliance on British capital and on a few exports left Argentina exposed when prices fell."
+    },
+    {
+      "id": "APWORLD-D-068",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Social Darwinism was used in the late 1800s to",
+      "options": [
+        "promote scientific study of the Americas",
+        "justify imperialism as the rule of the fittest",
+        "argue for the abolition of empires",
+        "support equal rights and the vote for colonized peoples"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Social Darwinists misapplied ideas of natural selection to claim that some races or nations were fitter to rule others, a justification for empire."
+    },
+    {
+      "id": "APWORLD-D-069",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Under the Congo Free State of the 1880s to 1908, the Belgian king",
+      "options": [
+        "ruled through an elected Congolese parliament and courts",
+        "freed the Congo from European control",
+        "banned the rubber and ivory trades",
+        "forced Congolese to gather rubber under brutal rule"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Leopold II ran the Congo as his personal colony and forced people to gather rubber, with mass killing and maiming; an international outcry led Belgium to take it over in 1908."
+    },
+    {
+      "id": "APWORLD-D-070",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU6",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The Zulu kingdom's war with Britain in 1879 shows that",
+      "options": [
+        "African states could win battles yet lose wars",
+        "Britain lost all of its colonies in southern Africa by 1880",
+        "the Zulu used machine guns to defeat Britain",
+        "African states never resisted European expansion"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Zulu forces defeated a British column at Isandlwana in 1879, but Britain sent more troops and conquered the kingdom within months."
+    },
+    {
+      "id": "APWORLD-D-071",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S16",
+      "stem": "The arrangement for the Arab provinces described by the historian is known as",
+      "options": [
+        "the Tanzimat",
+        "the devshirme system",
+        "the millet system",
+        "the mandate system"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The League of Nations gave Britain and France mandates to govern former Ottoman lands such as Iraq, Syria and Palestine."
+    },
+    {
+      "id": "APWORLD-D-072",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S16",
+      "stem": "The division described by the historian most directly contributed to",
+      "options": [
+        "Arab resentment of European rule",
+        "French rule over Turkey",
+        "the restoration of the Ottoman sultan",
+        "the end of Arab nationalism"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Arab leaders who had fought the Ottomans expecting independence instead got British and French rule, fueling Arab nationalism."
+    },
+    {
+      "id": "APWORLD-D-073",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S16",
+      "stem": "The Turkish republic described by the historian is best known for",
+      "options": [
+        "restoring the Ottoman sultanate",
+        "secular reforms separating religion and state",
+        "joining the Soviet Union",
+        "making Islamic law the law of the land in every province"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Under Mustafa Kemal Ataturk the republic abolished the sultanate and caliphate, adopted a Latin alphabet and Western-style law codes, and separated religion from the state."
+    },
+    {
+      "id": "APWORLD-D-074",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S16",
+      "stem": "The fate of the Ottoman Empire after 1918 was most similar to that of",
+      "options": [
+        "Britain, which gained new territory",
+        "Austria-Hungary, which broke into new states",
+        "Japan, which won German colonies",
+        "the United States, which grew in power and wealth"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Austria-Hungary also collapsed at the end of the war and broke into national states such as Austria, Hungary and Czechoslovakia."
+    },
+    {
+      "id": "APWORLD-D-075",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S17",
+      "stem": "The pamphlet's mention of oil, rubber and tin suggests that Japan's expansion was driven partly by",
+      "options": [
+        "the defeat of Germany in 1918",
+        "a wish to end trade in Asia",
+        "the need for raw materials",
+        "a plan to free Korea from foreign rule"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Japan lacked oil and many raw materials, and it sought them in Southeast Asia; the pamphlet frames that expansion as liberation."
+    },
+    {
+      "id": "APWORLD-D-076",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S17",
+      "stem": "The purpose of the pamphlet was most likely to",
+      "options": [
+        "call for peace and trade with the Western powers",
+        "present expansion as the liberation of Asia",
+        "apologize for the invasion of China",
+        "urge Japan to give up its colonies"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Calling the empire a sphere of common prosperity framed conquest as freeing Asia from the West, though Japanese rule was often brutal."
+    },
+    {
+      "id": "APWORLD-D-077",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S17",
+      "stem": "Japan's goals in the pamphlet were most similar to those of",
+      "options": [
+        "the League of Nations, which sought disarmament",
+        "the United States, which sought to free the Philippines from Spain",
+        "Nazi Germany, which sought land and resources in eastern Europe",
+        "Britain, which gave up its colonies in 1940"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Like Japan in Asia, Nazi Germany justified conquest in eastern Europe by claims of racial destiny and the need for land and resources."
+    },
+    {
+      "id": "APWORLD-D-078",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Contextualization",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S17",
+      "stem": "Japan's earlier invasion of which country had already led to war in Asia before 1940?",
+      "options": [
+        "Australia",
+        "India",
+        "the Philippines",
+        "China"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Japan seized Manchuria in 1931 and began a full-scale war with China in 1937, years before it attacked the United States and Britain in 1941."
+    },
+    {
+      "id": "APWORLD-D-079",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S18",
+      "stem": "The speaker's refusal to join either camp is an example of",
+      "options": [
+        "NATO",
+        "the non-aligned movement",
+        "the Warsaw Pact of communist states",
+        "the mandate system"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Newly independent states such as India, Indonesia and Egypt refused to join either Cold War bloc; the 1955 Bandung conference helped launch the non-aligned movement."
+    },
+    {
+      "id": "APWORLD-D-080",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S18",
+      "stem": "The two camps the speaker refers to were led by",
+      "options": [
+        "the United States and the Soviet Union",
+        "Germany and Italy after 1945",
+        "Britain and France",
+        "China and Japan in East Asia"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In the Cold War, the United States led the capitalist bloc and the Soviet Union the communist bloc."
+    },
+    {
+      "id": "APWORLD-D-081",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S18",
+      "stem": "Despite speeches like this one, many newly independent states",
+      "options": [
+        "joined the Soviet Union as new member republics",
+        "avoided all conflict during the Cold War",
+        "became sites of proxy wars",
+        "were never offered aid by either side"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The superpowers backed rival sides in places such as Korea, Vietnam, Angola and Afghanistan, turning local conflicts into proxy wars."
+    },
+    {
+      "id": "APWORLD-D-082",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Sourcing and situation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S18",
+      "stem": "The speaker's experience of colonial rule helps explain the speech's emphasis on",
+      "options": [
+        "joining a European alliance",
+        "restoring the old empires of Europe in Asia",
+        "avoiding a new foreign master",
+        "ending trade with neighbors"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Leaders who had just won freedom were wary that alliance with a superpower would bring a new master, which is why the speaker refuses both camps."
+    },
+    {
+      "id": "APWORLD-D-083",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S19",
+      "stem": "The campaign described in the report was led by",
+      "options": [
+        "the World Health Organization and many governments",
+        "a single private company",
+        "the European Union working alone in Africa and Asia",
+        "the League of Nations"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The World Health Organization coordinated the smallpox eradication program from 1967, and the disease was declared eradicated in 1980."
+    },
+    {
+      "id": "APWORLD-D-084",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S19",
+      "stem": "The report is best used as evidence that",
+      "options": [
+        "smallpox was still common in 1980",
+        "global cooperation could work even during the Cold War",
+        "the Cold War stopped all scientific exchange between the blocs",
+        "vaccines had no role in ending smallpox"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The officer credits teams in every country and both Cold War blocs working together, which is how eradication was achieved."
+    },
+    {
+      "id": "APWORLD-D-085",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S19",
+      "stem": "Which later disease showed the limits of the approach described in the report?",
+      "options": [
+        "Polio, which was never treated with a vaccine",
+        "Smallpox, which returned in the 1990s",
+        "HIV/AIDS, for which no vaccine was found",
+        "The bubonic plague, which ended in 1347"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "HIV/AIDS, identified in the early 1980s, spread worldwide and had no vaccine; treatment with drugs came later and unevenly."
+    },
+    {
+      "id": "APWORLD-D-086",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APWORLD-D-S19",
+      "stem": "Which later agreement showed the same kind of global cooperation on an environmental problem?",
+      "options": [
+        "The Berlin Conference",
+        "The Montreal Protocol on the ozone layer",
+        "The Treaty of Versailles that ended the First World War",
+        "The Warsaw Pact"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In 1987 nearly every state agreed in the Montreal Protocol to phase out the chemicals that were thinning the ozone layer, a rare case of near-universal cooperation."
+    },
+    {
+      "id": "APWORLD-D-087",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Mexican Revolution that began in 1910 is best known for",
+      "options": [
+        "creating a communist one-party state like the Soviet Union",
+        "restoring Spanish rule over Mexico",
+        "ending the Catholic religion in Mexico",
+        "demands for land reform from peasants"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Peasant leaders such as Emiliano Zapata demanded land, and the 1917 constitution promised land reform and limits on foreign ownership."
+    },
+    {
+      "id": "APWORLD-D-088",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Iranian Revolution of 1979 replaced the shah with",
+      "options": [
+        "an Islamic republic led by Shia clerics",
+        "a communist government allied with Moscow",
+        "a military government backed by the United States",
+        "a restored Safavid dynasty"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Mass protests forced out the shah, and Ayatollah Khomeini led the creation of an Islamic republic governed by Shia clerics."
+    },
+    {
+      "id": "APWORLD-D-089",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The genocide in Rwanda in 1994 grew in part from",
+      "options": [
+        "a war between Rwanda and the Soviet Union in the 1980s",
+        "the end of apartheid in Rwanda",
+        "ethnic divisions hardened by colonial rule",
+        "the partition of India"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Belgian rulers had sharpened the line between Hutu and Tutsi with identity cards and favor to one group; in 1994 Hutu extremists killed hundreds of thousands of Tutsi and moderate Hutu."
+    },
+    {
+      "id": "APWORLD-D-090",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apworldU789",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Vietnam's Doi Moi reforms, begun in 1986, changed the country by",
+      "options": [
+        "opening its economy to markets",
+        "making it a multiparty democracy with free elections",
+        "restoring rule by the French",
+        "ending all trade with its neighbors"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "After years of a planned economy, Vietnam let farmers and businesses sell for profit and welcomed foreign investment, but the Communist Party kept one-party rule."
+    }
+  ]
+}

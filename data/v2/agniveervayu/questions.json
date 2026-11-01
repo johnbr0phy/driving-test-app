@@ -1,0 +1,4414 @@
+{
+  "stimuli": [
+    {
+      "id": "AGNIVEERVAYU-RC1",
+      "title": "Reading comprehension: birds and runways",
+      "text": "Read the passage and answer the questions that follow.\n\nEvery year, airfields record a large number of collisions between aircraft and birds. Most of them happen close to the ground, during take-off and landing, when an aircraft is low and slow and the birds are busy feeding. A kite weighing a little over a kilogram can crack a windscreen or damage an engine if it is struck at high speed.\n\nAirfield staff therefore treat bird control as a daily duty rather than an occasional chore. Grass beside the runway is kept short, since tall grass hides insects and small animals that attract birds. Open garbage dumps near the boundary are reported to the local authorities, because they draw flocks from miles around. Some airfields play recorded distress calls of birds, while others use trained teams who walk the runway before the first flight of the day. No single method works for long, because birds soon learn to ignore a sound or a scarecrow that never changes. The safest airfields keep changing their methods and keep careful records of every sighting."
+    },
+    {
+      "id": "AGNIVEERVAYU-RC2",
+      "title": "Reading comprehension: the village that went solar",
+      "text": "Read the passage and answer the questions that follow.\n\nFor years the evenings in Sundarpur ended early. Power cuts were common, and families depended on kerosene lamps that filled the rooms with smoke and made reading difficult. When the village council proposed fixing solar panels on the roof of the school and the health centre, many elders were doubtful. They felt that a machine which needed no fuel could not be trusted.\n\nThe first monsoon proved them partly right. Cloudy days meant less power, and the batteries ran low by midnight. Instead of giving up, the council trained two young women to look after the system, clean the panels and keep a record of the power produced each day. They learned to switch off the less important loads on cloudy evenings so that the health centre always had light. Within two years, the school was running evening classes, and the elders who had laughed at the idea were among the first to ask for panels on their own homes."
+    },
+    {
+      "id": "AGNIVEERVAYU-RC3",
+      "title": "Reading comprehension: working through the night",
+      "text": "Read the passage and answer the questions that follow.\n\nMany people believe that sleep is simply time lost, and that a determined person can do without it. Research on night-shift workers tells a different story. After about seventeen hours without sleep, a person's reaction time slows to a level similar to that of someone who has had an alcoholic drink. The danger is that tired people rarely notice it themselves; they feel alert enough while making more and more small mistakes.\n\nFor this reason, organisations that work round the clock plan rest as carefully as they plan work. Duty hours are limited, crews are given a fixed period of rest between shifts, and a short nap before a long night is encouraged rather than mocked. The aim is not comfort but safety: a well-rested crew notices the warning light that a tired crew would miss."
+    }
+  ],
+  "questions": [
+    {
+      "id": "AGNIVEERVAYU-T1-001",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe rifles in the armoury / was cleaned / every evening.",
+      "options": [
+        "The rifles in the armoury",
+        "was cleaned",
+        "every evening.",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The subject is 'rifles', which is plural; 'in the armoury' only describes them. So the verb must be plural: 'The rifles in the armoury were cleaned every evening.'"
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-002",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the word that is closest in meaning to the given word.\n\nSwift",
+      "options": [
+        "Steady",
+        "Speedy",
+        "Silent",
+        "Sudden"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Swift' means moving or happening fast, so 'speedy' is the closest word. 'Sudden' means unexpected, not necessarily fast."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-003",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe instructor / explained us / the new drill before the parade.",
+      "options": [
+        "The instructor",
+        "explained us",
+        "the new drill before the parade.",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Explain' does not take the listener as a direct object. The person comes after 'to': 'The instructor explained the new drill to us before the parade.'"
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-004",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe engineers who checked the aircraft / during the storm / were thanked by the commander.",
+      "options": [
+        "during the storm",
+        "The engineers who checked the aircraft",
+        "No error",
+        "were thanked by the commander."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The sentence is correct. The plural subject 'engineers' takes the plural verb 'were thanked', and the relative clause 'who checked' is in the right tense."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-005",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the word that is most nearly opposite in meaning to the given word.\n\nInferior",
+      "options": [
+        "Lower",
+        "Weaker",
+        "Junior",
+        "Superior"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Inferior' means lower in rank or quality; 'superior' means higher. 'Lower' and 'weaker' are close in meaning, and 'junior' refers to rank or age only."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-006",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe ground crew has been on duty ______ six hours.",
+      "options": [
+        "by",
+        "for",
+        "since",
+        "from"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'For' is used with a length of time (for six hours). 'Since' marks the point in time when the action began (since 6 a.m.)."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-007",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe transport aircraft took ______ exactly at noon.",
+      "options": [
+        "after",
+        "off",
+        "up",
+        "over"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Take off' means to leave the ground and begin flying. 'Take up' means to start a hobby or job, 'take over' means to gain control, and 'take after' means to resemble a parent."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-008",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the most appropriate meaning of the idiom.\n\nTo see eye to eye",
+      "options": [
+        "To meet someone face to face",
+        "To agree fully with someone",
+        "To stare at someone in anger",
+        "To have very good eyesight"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "People who 'see eye to eye' share the same opinion. It is often used in the negative: 'They do not see eye to eye on the plan.'"
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-009",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nIf the runway ______ dry, the aircraft would have landed safely.",
+      "options": [
+        "was",
+        "had been",
+        "were",
+        "has been"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An unreal condition about the past (the third conditional) uses the past perfect in the if-clause with 'would have' + past participle: 'If the runway had been dry, the aircraft would have landed safely.'"
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-010",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nThe passing-out parade __has began__ on time.",
+      "options": [
+        "has beginned",
+        "have begun",
+        "has begun",
+        "No improvement"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The present perfect needs the past participle. 'Begin' is irregular: begin, began (past), begun (past participle). The singular 'parade' takes 'has'."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-011",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the word that can replace the given phrase.\n\nA large shed in which aircraft are kept and repaired",
+      "options": [
+        "Hanger",
+        "Hangar",
+        "Harbour",
+        "Arsenal"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A 'hangar' is a building for housing aircraft. A 'hanger' (with an e) is a frame for hanging clothes, an 'arsenal' stores weapons, and a 'harbour' shelters ships."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-012",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nThe instructor asked us __that we should not talk__ during the briefing.",
+      "options": [
+        "to not talking",
+        "that not talk",
+        "not to talk",
+        "No improvement"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "After 'asked' + object, a request is reported with a to-infinitive, and the negative goes before 'to': 'The instructor asked us not to talk during the briefing.'"
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-013",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nThe technicians have checked the radar.",
+      "options": [
+        "The radar was checked by the technicians.",
+        "The radar have been checked by the technicians.",
+        "The radar is being checked by the technicians.",
+        "The radar has been checked by the technicians."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Present perfect active ('have checked') becomes 'has/have been' + past participle. The new subject 'radar' is singular, so it takes 'has been'."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-014",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spelling",
+      "stem": "Select the correctly spelt word.",
+      "options": [
+        "Parachoot",
+        "Parachute",
+        "Parashute",
+        "Perachute"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Parachute' is spelt para-chute: the 'sh' sound is written 'ch', as in other words from French such as 'chef' and 'machine'."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-015",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direct and indirect speech",
+      "stem": "Select the correct indirect form of the sentence.\n\nThe flight sergeant said to me, \"Report to the hangar at once.\"",
+      "options": [
+        "The flight sergeant ordered me that I reported to the hangar at once.",
+        "The flight sergeant ordered me that report to the hangar at once.",
+        "The flight sergeant ordered me to report to the hangar at once.",
+        "The flight sergeant said me to report to the hangar at once."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An order is reported with 'ordered' (or 'told') + object + to-infinitive: 'The flight sergeant ordered me to report to the hangar at once.' 'Said me' is wrong because 'said' does not take a personal object."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-016",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC1",
+      "stem": "According to the passage, when do most bird strikes happen?",
+      "options": [
+        "During night flying only",
+        "While aircraft are parked overnight",
+        "At cruising height above the clouds",
+        "During take-off and landing"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says most collisions happen close to the ground, during take-off and landing, when the aircraft is low and slow."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-017",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC1",
+      "stem": "Why is the grass beside the runway kept short?",
+      "options": [
+        "Tall grass can catch fire from engine exhaust",
+        "Tall grass hides insects and small animals that attract birds",
+        "Short grass helps pilots see the runway lights",
+        "Short grass is cheaper to water in summer"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage explains that tall grass hides insects and small animals, which attract birds, so it is kept short."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-018",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC1",
+      "stem": "Why, according to the passage, does no single method of bird control work for long?",
+      "options": [
+        "Birds learn to ignore a sound or object that never changes",
+        "Local authorities do not allow it to continue",
+        "Airfield staff do not have enough time to use it",
+        "The equipment breaks down in bad weather"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says birds soon learn to ignore a sound or a scarecrow that never changes, which is why the safest airfields keep changing their methods."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-019",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC1",
+      "stem": "In the passage, the word 'chore' most nearly means",
+      "options": [
+        "a written report",
+        "a routine task",
+        "an expensive tool",
+        "a serious accident"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A 'chore' is a routine, often dull task. The passage contrasts a daily duty with an occasional chore."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-020",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC1",
+      "stem": "Which is the most suitable title for the passage?",
+      "options": [
+        "Keeping Birds Away from Runways",
+        "Garbage Dumps in Our Cities",
+        "How Engines Are Repaired",
+        "The Life of the Kite"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The whole passage is about why bird strikes are dangerous and how airfields try to keep birds away, so 'Keeping Birds Away from Runways' fits best."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-021",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Units and dimensions",
+      "stem": "What is the dimensional formula of force?",
+      "options": [
+        "$[MLT^{-1}]$",
+        "$[MLT^{-2}]$",
+        "$[ML^{-1}T^{-2}]$",
+        "$[ML^2T^{-2}]$"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Force = mass x acceleration, so its dimensions are $[M][LT^{-2}] = [MLT^{-2}]$. $[ML^2T^{-2}]$ is energy, $[MLT^{-1}]$ is momentum and $[ML^{-1}T^{-2}]$ is pressure."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-022",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Electrostatics",
+      "stem": "The distance between two point charges is made three times as large. The electrostatic force between them becomes",
+      "options": [
+        "three times",
+        "one-ninth",
+        "one-third",
+        "nine times"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Coulomb's law: $F \\propto 1/r^2$. Tripling r divides the force by $3^2 = 9$. One-third forgets to square the distance."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-023",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Thermal properties",
+      "stem": "A temperature of 77 °F is equal to",
+      "options": [
+        "25 °C",
+        "43 °C",
+        "45 °C",
+        "81 °C"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "C = (F - 32) x 5 / 9 = (77 - 32) x 5 / 9 = 45 x 5 / 9 = 25 °C. 45 °C forgets to multiply by 5/9, 43 °C multiplies 77 by 5/9 without first subtracting 32, and 81 °C multiplies 45 by 9/5 instead of 5/9."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-024",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Kinematics",
+      "stem": "A car starts from rest and accelerates uniformly to 20 m/s in 5 s. How far does it travel in this time?",
+      "options": [
+        "25 m",
+        "40 m",
+        "50 m",
+        "100 m"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Acceleration = 20 / 5 = 4 m/s². Distance = ½ x 4 x 5² = 50 m (or average speed 10 m/s x 5 s). 100 m comes from multiplying the final speed by the time, as if the car had moved at 20 m/s throughout."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-025",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Current electricity",
+      "stem": "Three resistors of 6 Ω each are connected in parallel. What is their equivalent resistance?",
+      "options": [
+        "2 Ω",
+        "3 Ω",
+        "6 Ω",
+        "18 Ω"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "1/R = 1/6 + 1/6 + 1/6 = 3/6, so R = 2 Ω. 18 Ω is the series value. A parallel combination is always smaller than the smallest resistor."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-026",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Thermodynamics",
+      "stem": "An ideal gas expands isothermally. What is the change in its internal energy?",
+      "options": [
+        "Zero",
+        "Equal to twice the work done",
+        "Equal to the work done",
+        "Equal to the heat supplied"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The internal energy of an ideal gas depends only on its temperature. In an isothermal process the temperature is constant, so ΔU = 0 and all the heat supplied is used to do work."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-027",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Projectile motion",
+      "stem": "A ball is thrown with a speed of 30 m/s at 30° above the horizontal. What is its time of flight? (g = 10 m/s²)",
+      "options": [
+        "1.5 s",
+        "3 s",
+        "5.2 s",
+        "6 s"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Time of flight T = 2u sin θ / g = 2 x 30 x 0.5 / 10 = 3 s. 6 s leaves out sin θ, 1.5 s is the time to the top only, and 5.2 s uses cos 30° instead of sin 30°."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-028",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Current electricity",
+      "stem": "A 24 V battery is connected across an 8 Ω resistor. How much power is dissipated in the resistor?",
+      "options": [
+        "3 W",
+        "9 W",
+        "24 W",
+        "72 W"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Current I = V / R = 24 / 8 = 3 A. Power P = VI = 24 x 3 = 72 W (or V²/R = 576 / 8). 9 W squares the current but leaves out R, 3 is the current in amperes, and 24 W takes the voltage as the power."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-029",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Laws of motion",
+      "stem": "A 2 kg block is pulled along a floor by a horizontal force of 10 N. The friction force on it is 4 N. What is its acceleration?",
+      "options": [
+        "3 m/s²",
+        "5 m/s²",
+        "6 m/s²",
+        "7 m/s²"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Net force = 10 - 4 = 6 N, so a = F / m = 6 / 2 = 3 m/s². 5 m/s² ignores friction, 7 m/s² adds the friction instead of subtracting it, and 6 is the net force in newtons, not yet divided by the mass."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-030",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Thermodynamics",
+      "stem": "A Carnot engine works between a source at 500 K and a sink at 300 K. What is its efficiency?",
+      "options": [
+        "0.4%",
+        "40%",
+        "60%",
+        "67%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Efficiency = 1 - T₂/T₁ = 1 - 300/500 = 0.4 = 40%. 60% is T₂/T₁ itself, 67% divides the 200 K difference by the sink temperature instead of the source, and 0.4% forgets that 0.4 is already 40%."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-031",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Capacitors",
+      "stem": "Capacitors of 2 µF and 3 µF are connected in series. What is their equivalent capacitance?",
+      "options": [
+        "1.2 µF",
+        "2.5 µF",
+        "5 µF",
+        "6 µF"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "In series, 1/C = 1/2 + 1/3 = 5/6, so C = 6/5 = 1.2 µF. 5 µF is the parallel value. Capacitors in series combine like resistors in parallel."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-032",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Laws of motion",
+      "stem": "Why do the action and reaction forces of Newton's third law not cancel each other?",
+      "options": [
+        "They act in the same direction",
+        "One of them is always larger",
+        "They act at different times",
+        "They act on two different bodies"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Action and reaction are equal and opposite but act on different bodies, so each affects the motion of its own body. Forces cancel only when they act on the same body."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-033",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Oscillations",
+      "stem": "The time period of a simple pendulum of small amplitude does NOT depend on",
+      "options": [
+        "the length of the string",
+        "the acceleration due to gravity",
+        "the place where it swings",
+        "the mass of the bob"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "$T = 2\\pi\\sqrt{L/g}$. It depends on the length and on g, which changes from place to place, but not on the mass of the bob."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-034",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Work, energy and power",
+      "stem": "What is the kinetic energy of a 0.5 kg ball moving at 4 m/s?",
+      "options": [
+        "1 J",
+        "2 J",
+        "4 J",
+        "8 J"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "KE = ½mv² = ½ x 0.5 x 4² = 4 J. 2 J is the momentum value (mv), 1 J forgets to square the speed, and 8 J leaves out the ½."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-035",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Magnetic effects of current",
+      "stem": "A charged particle moves parallel to a uniform magnetic field. What magnetic force acts on it?",
+      "options": [
+        "Maximum, at right angles to the field",
+        "Zero",
+        "Maximum, along the field",
+        "Equal to qvB along its motion"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The magnetic force is F = qvB sin θ. For motion parallel to the field, θ = 0 and sin 0 = 0, so there is no force and the particle keeps moving in a straight line."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-036",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Waves",
+      "stem": "A sound wave has a frequency of 500 Hz and a wavelength of 0.68 m. What is its speed?",
+      "options": [
+        "170 m/s",
+        "340 m/s",
+        "680 m/s",
+        "735 m/s"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Speed = frequency x wavelength = 500 x 0.68 = 340 m/s. 735 m/s divides 500 by 0.68 instead of multiplying."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-037",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Work, energy and power",
+      "stem": "A motor lifts a load of 100 kg through a height of 6 m in 20 s at a steady speed. What is its power output? (g = 10 m/s²)",
+      "options": [
+        "30 W",
+        "300 W",
+        "3000 W",
+        "6000 W"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Work = mgh = 100 x 10 x 6 = 6000 J. Power = work / time = 6000 / 20 = 300 W. 6000 is the work done, not the power."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-038",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Electromagnetic induction",
+      "stem": "Lenz's law, which gives the direction of an induced current, is a consequence of the conservation of",
+      "options": [
+        "mass",
+        "charge",
+        "momentum",
+        "energy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The induced current always opposes the change that produces it, so work must be done to keep the change going. If it helped the change, energy would be created from nothing."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-039",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Gravitation",
+      "stem": "At what height above the Earth's surface does the acceleration due to gravity become one-fourth of its value at the surface? (R is the radius of the Earth.)",
+      "options": [
+        "2R",
+        "4R",
+        "R",
+        "R/2"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "$g' = g R^2 / (R + h)^2$. For $g' = g/4$ we need $(R + h)^2 = 4R^2$, so $R + h = 2R$ and $h = R$."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-040",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ray optics",
+      "stem": "What is the power of a convex lens of focal length 40 cm?",
+      "options": [
+        "-2.5 D",
+        "-0.4 D",
+        "+0.4 D",
+        "+2.5 D"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Power = 1 / f in metres = 1 / 0.4 = +2.5 dioptres. A convex lens is converging, so its power is positive. +0.4 D uses the focal length in metres instead of its reciprocal, and the negative values belong to a concave (diverging) lens."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-041",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Alternating current",
+      "stem": "An ideal step-up transformer has 100 turns on its primary and 500 turns on its secondary. If the input is 220 V AC, what is the output voltage?",
+      "options": [
+        "44 V",
+        "220 V",
+        "550 V",
+        "1100 V"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Vs / Vp = Ns / Np, so Vs = 220 x 500 / 100 = 1100 V. 44 V inverts the turns ratio, which would be a step-down transformer."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-042",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Gravitation",
+      "stem": "The escape velocity of a body from the Earth's surface does NOT depend on",
+      "options": [
+        "the gravitational constant",
+        "the mass of the Earth",
+        "the mass of the body",
+        "the radius of the Earth"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Escape velocity $v_e = \\sqrt{2GM/R}$, where M and R are the Earth's mass and radius. The mass of the escaping body cancels out, so a stone and a satellite need the same escape speed."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-043",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ray optics",
+      "stem": "Optical fibres carry light signals over long distances by",
+      "options": [
+        "total internal reflection",
+        "diffraction",
+        "dispersion",
+        "polarisation"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Light inside the fibre's core strikes its boundary with the cladding at more than the critical angle, so it is totally reflected again and again and stays inside the fibre."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-044",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Dual nature of radiation",
+      "stem": "In the photoelectric effect, increasing the intensity of light (above the threshold frequency) increases",
+      "options": [
+        "the work function of the metal",
+        "the number of photoelectrons emitted per second",
+        "the maximum kinetic energy of the photoelectrons",
+        "the threshold frequency of the metal"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Brighter light means more photons each second, so more electrons are emitted. The maximum kinetic energy depends on the frequency, not the intensity, and the threshold frequency and work function belong to the metal."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-045",
+      "section": "phy",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rotational motion",
+      "stem": "What is the moment of inertia of a thin ring of mass M and radius R about an axis through its centre, perpendicular to its plane?",
+      "options": [
+        "$MR^2$",
+        "$\\frac{2}{3}MR^2$",
+        "$\\frac{1}{2}MR^2$",
+        "$\\frac{2}{5}MR^2$"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Every bit of a thin ring is at the same distance R from the axis, so $I = MR^2$. $\\frac{1}{2}MR^2$ is a uniform disc, $\\frac{2}{5}MR^2$ a solid sphere and $\\frac{2}{3}MR^2$ a hollow sphere."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-046",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sets",
+      "stem": "If $n(A) = 25$, $n(B) = 18$ and $n(A \\cap B) = 7$, what is $n(A \\cup B)$?",
+      "options": [
+        "29",
+        "36",
+        "43",
+        "50"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$n(A \\cup B) = n(A) + n(B) - n(A \\cap B) = 25 + 18 - 7 = 36$. 43 forgets to subtract the common elements, which counts them twice, 50 adds them instead, and 29 subtracts them twice."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-047",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "What is the value of $\\cos 45^\\circ \\cos 15^\\circ - \\sin 45^\\circ \\sin 15^\\circ$?",
+      "options": [
+        "$\\frac{1}{\\sqrt{2}}$",
+        "$1$",
+        "$\\frac{\\sqrt{3}}{2}$",
+        "$\\frac{1}{2}$"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "$\\cos A \\cos B - \\sin A \\sin B = \\cos(A + B)$, so the value is $\\cos 60^\\circ = \\frac{1}{2}$. $\\frac{\\sqrt{3}}{2}$ is $\\cos 30^\\circ$, the result of using $A - B$."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-048",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Limits",
+      "stem": "What is $\\lim_{x \\to 0} \\frac{\\tan 4x}{x}$?",
+      "options": [
+        "0",
+        "1/4",
+        "1",
+        "4"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\frac{\\tan 4x}{x} = 4 \\cdot \\frac{\\tan 4x}{4x}$, and $\\frac{\\tan \\theta}{\\theta} \\to 1$ as $\\theta \\to 0$. So the limit is 4."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-049",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Complex numbers",
+      "stem": "What is the value of $i^{102}$, where $i = \\sqrt{-1}$?",
+      "options": [
+        "$i$",
+        "$-1$",
+        "$1$",
+        "$-i$"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Powers of i repeat every 4: $i, -1, -i, 1$. 102 = 4 x 25 + 2, so $i^{102} = i^2 = -1$."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-050",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "What is $150^\\circ$ in radians?",
+      "options": [
+        "$\\frac{2\\pi}{3}$",
+        "$\\frac{5\\pi}{6}$",
+        "$\\frac{3\\pi}{4}$",
+        "$\\frac{5\\pi}{3}$"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Multiply by $\\frac{\\pi}{180}$: $150 \\times \\frac{\\pi}{180} = \\frac{5\\pi}{6}$. $\\frac{2\\pi}{3}$ is $120^\\circ$ and $\\frac{3\\pi}{4}$ is $135^\\circ$."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-051",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Derivatives",
+      "stem": "If $f(x) = x^3 + 2x$, what is $f'(1)$?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "$f'(x) = 3x^2 + 2$, so $f'(1) = 3 + 2 = 5$. 3 is $f(1)$, the value of the function, not its derivative."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-052",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "What is the sum of the roots of $2x^2 - 7x + 3 = 0$?",
+      "options": [
+        "-7/2",
+        "-3/2",
+        "3/2",
+        "7/2"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "For $ax^2 + bx + c = 0$ the sum of the roots is $-b/a = 7/2$. (The roots are 3 and 1/2.) 3/2 is the product $c/a$, and the negative options get the sign of $-b/a$ or $c/a$ wrong."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-053",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Heights and distances",
+      "stem": "From a point on level ground 40 m from the foot of a tower, the angle of elevation of its top is $60^\\circ$. How tall is the tower?",
+      "options": [
+        "$\\frac{40}{\\sqrt{3}}$ m",
+        "$80$ m",
+        "$40\\sqrt{3}$ m",
+        "$20$ m"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "$\\tan 60^\\circ = h / 40$, so $h = 40\\sqrt{3}$ m (about 69 m). $\\frac{40}{\\sqrt{3}}$ m uses $\\tan 30^\\circ$, 20 m multiplies by $\\cos 60^\\circ$, and 80 m is the length of the line of sight ($40 \\div \\cos 60^\\circ$), not the height."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-054",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Derivatives",
+      "stem": "What is $\\frac{d}{dx}\\left(e^{2x}\\right)$?",
+      "options": [
+        "$e^{2x}$",
+        "$2xe^{2x - 1}$",
+        "$2e^{2x}$",
+        "$\\frac{e^{2x}}{2}$"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "By the chain rule, $\\frac{d}{dx} e^{u} = e^{u} \\frac{du}{dx}$, with $u = 2x$, so the derivative is $2e^{2x}$. The power rule does not apply to $e^{x}$."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-055",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sequences and series",
+      "stem": "What is the 12th term of the arithmetic progression 4, 9, 14, 19, ...?",
+      "options": [
+        "59",
+        "60",
+        "64",
+        "69"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "$a_n = a + (n - 1)d = 4 + 11 \\times 5 = 59$. 64 uses n instead of n - 1, and 60 is 12 x 5."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-056",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coordinate geometry",
+      "stem": "What is the distance between the points (1, -1) and (6, 11)?",
+      "options": [
+        "12",
+        "13",
+        "17",
+        "169"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$d = \\sqrt{(6-1)^2 + (11-(-1))^2} = \\sqrt{25 + 144} = 13$. 169 forgets the square root, 17 adds the differences 5 and 12, and 12 is the vertical difference alone."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-057",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Definite integrals",
+      "stem": "What is $\\int_0^2 3x^2 \\, dx$?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\int 3x^2 \\, dx = x^3$, so the value is $2^3 - 0^3 = 8$. 12 substitutes 2 into $3x^2$ without integrating."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-058",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sequences and series",
+      "stem": "What is the sum of the infinite geometric series $1 + \\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\dots$?",
+      "options": [
+        "1",
+        "3/2",
+        "15/8",
+        "2"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "For $|r| < 1$, $S_\\infty = a / (1 - r) = 1 / (1 - \\frac{1}{2}) = 2$. 15/8 is the sum of only the first four terms; the sum gets closer and closer to 2 but never passes it."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-059",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coordinate geometry",
+      "stem": "What is the slope of the line 4x - 7y + 14 = 0?",
+      "options": [
+        "-4/7",
+        "4/7",
+        "7/4",
+        "2"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Rewrite as $y = \\frac{4}{7}x + 2$, so the slope is $\\frac{4}{7}$ (for $ax + by + c = 0$ the slope is $-a/b = -4/(-7)$). 2 is the y-intercept, $-\\frac{4}{7}$ drops the sign of b, and $\\frac{7}{4}$ inverts the fraction."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-060",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Maxima and minima",
+      "stem": "What is the minimum value of $f(x) = x^2 - 4x + 7$?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "7"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$f'(x) = 2x - 4 = 0$ at $x = 2$, and $f(2) = 4 - 8 + 7 = 3$. (Completing the square: $(x - 2)^2 + 3$.) 2 is where the minimum occurs, not its value."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-061",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Permutations and combinations",
+      "stem": "In how many ways can all the letters of the word PLANE be arranged?",
+      "options": [
+        "24",
+        "60",
+        "120",
+        "720"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The five letters are all different, so there are 5! = 5 x 4 x 3 x 2 x 1 = 120 arrangements. 24 is 4! and 720 is 6!."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-062",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coordinate geometry",
+      "stem": "What is the radius of the circle $x^2 + y^2 + 4x - 10y - 7 = 0$?",
+      "options": [
+        "7",
+        "6",
+        "$\\sqrt{22}$",
+        "36"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Complete the squares: $(x + 2)^2 + (y - 5)^2 = 7 + 4 + 25 = 36$. The centre is (-2, 5) and the radius is $\\sqrt{36} = 6$. 36 is $r^2$, and $\\sqrt{22}$ subtracts the 7 instead of adding it."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-063",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Differential equations",
+      "stem": "What is the order of the differential equation $\\frac{d^2y}{dx^2} + \\left(\\frac{dy}{dx}\\right)^3 + y = 0$?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The order is the highest derivative that appears, here the second derivative, so the order is 2. The cube on the first derivative affects the degree, not the order, so 3 is wrong, and the order is never found by adding or multiplying the powers."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-064",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Permutations and combinations",
+      "stem": "In how many ways can a team of 3 be chosen from 7 cadets?",
+      "options": [
+        "35",
+        "42",
+        "70",
+        "210"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Order does not matter, so use combinations: $^7C_3 = \\frac{7 \\times 6 \\times 5}{3 \\times 2 \\times 1} = 35$. 210 is $^7P_3$, which counts ordered selections, and 42 is just 7 x 6."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-065",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Vectors",
+      "stem": "What is the dot product of $\\vec{a} = 2\\hat{i} + 3\\hat{j}$ and $\\vec{b} = 4\\hat{i} - \\hat{j}$?",
+      "options": [
+        "5",
+        "7",
+        "8",
+        "11"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\vec{a} \\cdot \\vec{b} = (2)(4) + (3)(-1) = 8 - 3 = 5$. 11 ignores the minus sign on the $\\hat{j}$ part of $\\vec{b}$, and 8 uses only the $\\hat{i}$ parts."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-066",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "Two fair dice are thrown. What is the probability that the sum of the numbers is 11?",
+      "options": [
+        "1/18",
+        "1/12",
+        "1/9",
+        "1/6"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "There are 36 equally likely outcomes, and 2 of them give a sum of 11: (5,6) and (6,5). So the probability is 2/36 = 1/18. 1/12 (3/36) is the chance of a sum of 10, and 1/6 the chance of a sum of 7."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-067",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Binomial theorem",
+      "stem": "What is the coefficient of $x^2$ in the expansion of $(1 + 2x)^4$?",
+      "options": [
+        "6",
+        "12",
+        "16",
+        "24"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The term in $x^2$ is $^4C_2 (2x)^2 = 6 \\times 4x^2 = 24x^2$. 6 forgets the $2^2$, and 12 squares only one factor of 2."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-068",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Three-dimensional geometry",
+      "stem": "How far is the point (4, 4, 7) from the origin?",
+      "options": [
+        "7",
+        "9",
+        "15",
+        "81"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$d = \\sqrt{4^2 + 4^2 + 7^2} = \\sqrt{16 + 16 + 49} = \\sqrt{81} = 9$. 15 adds the coordinates, 81 forgets the square root, and 7 is the largest coordinate alone."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-069",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Statistics",
+      "stem": "What is the variance of the data 3, 6, 9, 12, 15?",
+      "options": [
+        "9",
+        "18",
+        "22.5",
+        "90"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Mean = 45 / 5 = 9. Squared deviations: 36, 9, 0, 9, 36, which add up to 90. Variance = 90 / 5 = 18. 9 is the mean, 90 is the sum of squared deviations before dividing, and 22.5 divides by 4 (n - 1) instead of 5, the sample formula, not the variance of the data."
+    },
+    {
+      "id": "AGNIVEERVAYU-T1-070",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Matrices and determinants",
+      "stem": "What is the value of the determinant $\\begin{vmatrix} 4 & 3 \\\\ 2 & 5 \\end{vmatrix}$?",
+      "options": [
+        "-14",
+        "7",
+        "14",
+        "26"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Determinant = (4 x 5) - (3 x 2) = 20 - 6 = 14. 26 adds the two products instead of subtracting, and -14 subtracts them in the wrong order."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-001",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nMy brother and I / goes / to the stadium every Sunday.",
+      "options": [
+        "My brother and I",
+        "goes",
+        "to the stadium every Sunday.",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Two subjects joined by 'and' make a plural subject, so the verb is 'go': 'My brother and I go to the stadium every Sunday.'"
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-002",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the word that is closest in meaning to the given word.\n\nFragile",
+      "options": [
+        "Delicate",
+        "Ancient",
+        "Heavy",
+        "Valuable"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Something 'fragile' breaks easily, so 'delicate' is the closest meaning. A fragile thing may also be valuable, but that is not what the word means."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-003",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nEvery officer and every airman / have to attend / the safety briefing.",
+      "options": [
+        "Every officer and every airman",
+        "have to attend",
+        "the safety briefing.",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "When 'each' or 'every' comes before nouns joined by 'and', the verb stays singular: 'Every officer and every airman has to attend the safety briefing.'"
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-004",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nI have met / your cousin yesterday / at the railway station.",
+      "options": [
+        "I have met",
+        "your cousin yesterday",
+        "at the railway station.",
+        "No error"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The present perfect cannot be used with a finished past time such as 'yesterday'. Use the simple past: 'I met your cousin yesterday.'"
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-005",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the word that is most nearly opposite in meaning to the given word.\n\nCordial",
+      "options": [
+        "Hostile",
+        "Sincere",
+        "Warm",
+        "Polite"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A 'cordial' welcome is warm and friendly. 'Hostile' means unfriendly and aggressive, the opposite; 'warm' is close in meaning to cordial, and 'polite' and 'sincere' describe related good manners."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-006",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nEvery cadet in the squadron takes pride ______ a smart turnout.",
+      "options": [
+        "with",
+        "on",
+        "in",
+        "at"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The fixed phrase is 'take pride in' something: 'takes pride in a smart turnout'. 'Pride' is not followed by 'at', 'on' or 'with' in this sense."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-007",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe pilot was blamed ______ the delay, although the weather was the real cause.",
+      "options": [
+        "on",
+        "with",
+        "for",
+        "of"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "We blame a person for something: 'The pilot was blamed for the delay.' 'Blame it on' puts the thing first (blamed the delay on the pilot); 'accused of' is a different verb."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-008",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the most appropriate meaning of the idiom.\n\nTo leave no stone unturned",
+      "options": [
+        "To try every possible way to achieve something",
+        "To destroy everything in one's path",
+        "To build something with great care",
+        "To refuse to change one's opinion"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "To 'leave no stone unturned' is to do everything possible to find something or get a result."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-009",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nWe will wait at the gate until the bus ______.",
+      "options": [
+        "arrived",
+        "arrives",
+        "has been arriving",
+        "will arrive"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In a time clause after 'until', 'when' or 'as soon as', the simple present is used for a future event: 'until the bus arrives', not 'until the bus will arrive'."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-010",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nPhysics __are__ my favourite subject.",
+      "options": [
+        "is",
+        "have been",
+        "were",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Names of subjects that end in -ics, such as physics, mathematics and economics, are singular when they mean the subject: 'Physics is my favourite subject.'"
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-011",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the word that can replace the given phrase.\n\nThe scientific study of the atmosphere and weather",
+      "options": [
+        "Astrology",
+        "Geology",
+        "Ecology",
+        "Meteorology"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Meteorology' is the study of the atmosphere and weather, which pilots and air traffic controllers rely on. Geology studies rocks, astrology claims to read the stars, and ecology studies living things and their surroundings."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-012",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nAll the equipment __were checked__ before the flight.",
+      "options": [
+        "was checked",
+        "have checked",
+        "were check",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Equipment' is an uncountable noun and takes a singular verb: 'All the equipment was checked before the flight.' It has no plural form 'equipments'."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-013",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nDid the engineers inspect the runway?",
+      "options": [
+        "Has the runway been inspecting by the engineers?",
+        "Was the runway inspect by the engineers?",
+        "Did the runway inspected by the engineers?",
+        "Was the runway inspected by the engineers?"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A simple past question with 'did' becomes 'was/were' + subject + past participle in the passive: 'Was the runway inspected by the engineers?'"
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-014",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spelling",
+      "stem": "Select the correctly spelt word.",
+      "options": [
+        "Parliment",
+        "Parliament",
+        "Parlament",
+        "Parliamant"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Parliament' keeps the silent i before the a: par-lia-ment."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-015",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Direct and indirect speech",
+      "stem": "Select the correct indirect form of the sentence.\n\nPriya said, \"I am reading a novel.\"",
+      "options": [
+        "Priya said that I was reading a novel.",
+        "Priya said that she is reading a novel.",
+        "Priya said that she has been reading a novel.",
+        "Priya said that she was reading a novel."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "With a past reporting verb, 'I' becomes 'she' and the present continuous 'am reading' moves back to the past continuous 'was reading'."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-016",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC2",
+      "stem": "Why were many elders doubtful about the solar panels at first?",
+      "options": [
+        "They wanted the money spent on a new road",
+        "They thought the panels would damage the roofs",
+        "They believed kerosene lamps gave better light",
+        "They felt a machine that needed no fuel could not be trusted"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says the elders felt that a machine which needed no fuel could not be trusted."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-017",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC2",
+      "stem": "What problem did the first monsoon bring?",
+      "options": [
+        "Cloudy days meant less power and the batteries ran low",
+        "The trained women left the village for the season",
+        "Heavy rain broke several panels on the school roof",
+        "The health centre had to close for two weeks"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "During the first monsoon, cloudy days reduced the power and the batteries ran low by midnight."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-018",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC2",
+      "stem": "How did the two trained women keep the health centre lit on cloudy evenings?",
+      "options": [
+        "They bought extra kerosene for the centre",
+        "They asked families to stay home after dark",
+        "They switched off less important loads",
+        "They moved the panels to the health centre roof"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says they learned to switch off the less important loads on cloudy evenings so that the health centre always had light."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-019",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC2",
+      "stem": "What does the passage suggest about the elders by the end?",
+      "options": [
+        "They had always supported the council's idea",
+        "They still refused to use solar power",
+        "They took charge of the school's evening classes",
+        "They changed their minds after seeing the results"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The elders who had laughed at the idea were among the first to ask for panels on their own homes, so they changed their minds."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-020",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC2",
+      "stem": "In the passage, the word 'proposed' most nearly means",
+      "options": [
+        "completed",
+        "suggested",
+        "refused",
+        "repaired"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To 'propose' is to put forward an idea for others to consider. The council suggested fixing the panels; the elders then had to decide."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-021",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Units and dimensions",
+      "stem": "Which is the SI unit of impulse?",
+      "options": [
+        "N m",
+        "N s",
+        "N/s",
+        "J/s"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Impulse = force x time, so its unit is the newton second (N s), the same as kg m/s for momentum. N m is the unit of work or torque and J/s is the watt."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-022",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Electrostatics",
+      "stem": "What is the electric field inside a charged, hollow conducting sphere?",
+      "options": [
+        "Maximum at the centre",
+        "Equal to the field at the surface",
+        "Zero",
+        "Directed towards the surface"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Charge on a conductor sits on its outer surface, and the field inside is zero. This is why a metal cage or an aircraft's body shields the people inside from a lightning strike."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-023",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Thermal properties",
+      "stem": "How much heat is needed to raise the temperature of 2 kg of water by 10 °C? (Specific heat of water = 4200 J/kg °C)",
+      "options": [
+        "0.84 kJ",
+        "8.4 kJ",
+        "42 kJ",
+        "84 kJ"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Q = mcΔT = 2 x 4200 x 10 = 84,000 J = 84 kJ. 42 kJ leaves out the mass of 2 kg, and 8.4 kJ and 0.84 kJ slip a power of ten when converting joules to kilojoules."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-024",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Kinematics",
+      "stem": "A stone dropped from the top of a tower reaches the ground in 4 s. What is the height of the tower? (g = 10 m/s²)",
+      "options": [
+        "16 m",
+        "20 m",
+        "40 m",
+        "80 m"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "h = ½gt² = ½ x 10 x 4² = 80 m. 20 m forgets to square the time, 40 is the speed on reaching the ground (gt = 40 m/s), and 16 is just t²."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-025",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Current electricity",
+      "stem": "Kirchhoff's junction rule (the current law) is based on the conservation of",
+      "options": [
+        "mass",
+        "charge",
+        "energy",
+        "momentum"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The current entering a junction equals the current leaving it, because charge cannot pile up or vanish at the junction. The loop rule is based on conservation of energy."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-026",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Thermal properties",
+      "stem": "Heat from the Sun reaches the Earth mainly by",
+      "options": [
+        "radiation",
+        "conduction",
+        "evaporation",
+        "convection"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Space between the Sun and the Earth is nearly empty, so there is no medium for conduction or convection. Heat travels as electromagnetic radiation, which needs no medium."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-027",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Kinematics",
+      "stem": "What does the area under a velocity-time graph give?",
+      "options": [
+        "Acceleration",
+        "Speed",
+        "Displacement",
+        "Force"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Area under a velocity-time graph = velocity x time = displacement. The slope of the same graph gives acceleration."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-028",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Current electricity",
+      "stem": "A wire is stretched uniformly to twice its original length. Its resistance becomes",
+      "options": [
+        "half",
+        "four times",
+        "twice",
+        "the same"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Stretching keeps the volume the same, so doubling the length halves the cross-sectional area. R = ρL/A, so R becomes 2 / (1/2) = 4 times."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-029",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Conservation of momentum",
+      "stem": "A gun of mass 4 kg fires a bullet of mass 20 g with a speed of 400 m/s. What is the recoil speed of the gun?",
+      "options": [
+        "0.2 m/s",
+        "2 m/s",
+        "8 m/s",
+        "20 m/s"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Momentum is conserved: 4 x V = 0.020 x 400 = 8, so V = 2 m/s. 0.2 m/s and 20 m/s come from slipping a power of ten when converting 20 g to kilograms, and 8 m/s is the bullet's momentum (8 kg m/s) not yet divided by the gun's mass."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-030",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Kinetic theory of gases",
+      "stem": "A gas occupies 6 L at a pressure of 2 atm. At the same temperature, what volume will it occupy at 3 atm?",
+      "options": [
+        "3 L",
+        "4 L",
+        "6 L",
+        "9 L"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Boyle's law: P₁V₁ = P₂V₂, so V₂ = 2 x 6 / 3 = 4 L. 9 L treats volume as rising with pressure, which is the opposite of Boyle's law."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-031",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Current electricity",
+      "stem": "What is the resistance of the filament of a bulb rated 100 W, 220 V when it is working normally?",
+      "options": [
+        "0.45 Ω",
+        "2.2 Ω",
+        "242 Ω",
+        "484 Ω"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "P = V²/R, so R = V²/P = 220² / 100 = 48400 / 100 = 484 Ω. 2.2 Ω is V/P, 242 Ω is half the right value (dividing by 2P) and 0.45 is P/V, which is the current in amperes."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-032",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Friction",
+      "stem": "The coefficient of static friction between a block and a plane is 0.75. At what angle of inclination will the block just begin to slide?",
+      "options": [
+        "37°",
+        "45°",
+        "53°",
+        "60°"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "At the angle of repose, tan θ = μ = 0.75 = 3/4, so θ is about 37°. 53° is the angle whose tangent is 4/3, 45° has tan θ = 1, and 60° has tan θ = 1.73."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-033",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Kinetic theory of gases",
+      "stem": "According to the kinetic theory of gases, the average kinetic energy of a gas molecule is directly proportional to",
+      "options": [
+        "the absolute temperature of the gas",
+        "the mass of the container",
+        "the volume of the gas",
+        "the square of the pressure"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Average kinetic energy per molecule = (3/2) kT, where T is the absolute temperature in kelvin. Doubling the absolute temperature doubles the average kinetic energy."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-034",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular motion",
+      "stem": "A car of mass 1000 kg goes round a curve of radius 50 m at a speed of 10 m/s. What centripetal force is needed?",
+      "options": [
+        "2 N",
+        "200 N",
+        "1000 N",
+        "2000 N"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "F = mv²/r = 1000 x 10² / 50 = 2000 N. 200 N forgets to square the speed, 1000 N is just the mass, and 2 N is v²/r, the acceleration, with the mass left out."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-035",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Magnetic effects of current",
+      "stem": "A galvanometer is converted into an ammeter by connecting",
+      "options": [
+        "a low resistance in parallel with it",
+        "a high resistance in parallel with it",
+        "a high resistance in series with it",
+        "a low resistance in series with it"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A small shunt resistance in parallel carries most of the current, so the meter can measure large currents and has a low total resistance. A high resistance in series turns it into a voltmeter."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-036",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Waves",
+      "stem": "The pitch of an ambulance siren seems higher as the ambulance approaches a listener. This is due to",
+      "options": [
+        "the reflection of sound",
+        "the interference of sound",
+        "the Doppler effect",
+        "resonance"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "When a source moves towards a listener, more wavefronts reach the listener each second, so the apparent frequency (pitch) is higher. This change with relative motion is the Doppler effect."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-037",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Work, energy and power",
+      "stem": "A spring of spring constant 200 N/m is stretched by 0.1 m. How much elastic potential energy does it store?",
+      "options": [
+        "1 J",
+        "2 J",
+        "10 J",
+        "20 J"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "U = ½kx² = ½ x 200 x 0.1² = 1 J. 2 J leaves out the ½, and 10 J and 20 J forget to square the extension."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-038",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alternating current",
+      "stem": "The mains supply is 220 V rms. What is its peak voltage, approximately?",
+      "options": [
+        "156 V",
+        "220 V",
+        "311 V",
+        "440 V"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Peak voltage $V_0 = \\sqrt{2} \\times V_{rms} = 1.414 \\times 220 \\approx 311$ V. 156 V divides by $\\sqrt{2}$ instead of multiplying."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-039",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Gravitation",
+      "stem": "How is the escape speed from the Earth's surface related to the orbital speed of a satellite orbiting just above the surface?",
+      "options": [
+        "Escape speed = orbital speed / $\\sqrt{2}$",
+        "Escape speed = $\\sqrt{2}$ x orbital speed",
+        "Escape speed = 2 x orbital speed",
+        "Escape speed = orbital speed"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Orbital speed near the surface is $v_o = \\sqrt{GM/R}$ and escape speed is $v_e = \\sqrt{2GM/R}$, so $v_e = \\sqrt{2}\\,v_o$, about 11.2 km/s against 7.9 km/s."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-040",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ray optics",
+      "stem": "The refractive index of water is 4/3. What is the speed of light in water? (Speed of light in vacuum = 3 x 10⁸ m/s)",
+      "options": [
+        "$1.33 \\times 10^8$ m/s",
+        "$2.25 \\times 10^8$ m/s",
+        "$3 \\times 10^8$ m/s",
+        "$4 \\times 10^8$ m/s"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$n = c / v$, so $v = c / n = 3 \\times 10^8 \\div \\frac{4}{3} = 2.25 \\times 10^8$ m/s. Light slows down in a denser medium; $4 \\times 10^8$ m/s multiplies by n instead of dividing, and $3 \\times 10^8$ m/s is its speed in vacuum."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-041",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Atoms",
+      "stem": "The energy of the electron in the ground state of a hydrogen atom is -13.6 eV. How much energy is needed to ionise the atom from this state?",
+      "options": [
+        "1.51 eV",
+        "3.4 eV",
+        "10.2 eV",
+        "13.6 eV"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Ionisation lifts the electron from -13.6 eV to 0 eV, so it needs 13.6 eV. 10.2 eV only lifts it to the first excited state (-3.4 eV)."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-042",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fluids",
+      "stem": "Which principle best explains the upward lift on an aircraft wing?",
+      "options": [
+        "Pascal's law",
+        "Archimedes' principle",
+        "Bernoulli's principle",
+        "Hooke's law"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Air moves faster over the curved upper surface of the wing than under it. By Bernoulli's principle, faster flow means lower pressure, so the higher pressure below pushes the wing up."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-043",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Wave optics",
+      "stem": "In Young's double-slit experiment, light of wavelength 600 nm falls on slits 0.5 mm apart, and the screen is 1 m away. What is the fringe width?",
+      "options": [
+        "0.6 mm",
+        "1.2 mm",
+        "2.4 mm",
+        "12 mm"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "β = λD / d = (600 x 10⁻⁹ x 1) / (0.5 x 10⁻³) = 1.2 x 10⁻³ m = 1.2 mm. 0.6 mm and 2.4 mm come from doubling or halving the slit separation, and 12 mm slips a power of ten."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-044",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semiconductors",
+      "stem": "A p-type semiconductor is made by adding to pure silicon a small amount of",
+      "options": [
+        "a pentavalent element such as phosphorus",
+        "a noble gas such as neon",
+        "a trivalent element such as boron",
+        "a metal such as copper"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A trivalent atom has one electron too few to complete the bonds, leaving a hole. Holes are the majority carriers in p-type material. A pentavalent dopant gives n-type."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-045",
+      "section": "phy",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Elasticity",
+      "stem": "Within the elastic limit, the ratio of stress to strain is called the",
+      "options": [
+        "coefficient of friction",
+        "bulk strain",
+        "Poisson's ratio",
+        "modulus of elasticity"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Hooke's law says stress is proportional to strain within the elastic limit; the constant ratio is the modulus of elasticity (Young's modulus for stretching). Poisson's ratio compares lateral and longitudinal strain."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-046",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sets",
+      "stem": "How many subsets does a set with 4 elements have?",
+      "options": [
+        "4",
+        "8",
+        "15",
+        "16"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "A set with n elements has $2^n$ subsets, so $2^4 = 16$, including the empty set and the set itself. 15 is the number of non-empty subsets."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-047",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "If $\\cos \\theta = \\frac{9}{41}$ and $\\theta$ is acute, what is $\\tan \\theta$?",
+      "options": [
+        "9/40",
+        "40/41",
+        "41/40",
+        "40/9"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "With adjacent side 9 and hypotenuse 41, the opposite side is $\\sqrt{1681 - 81} = \\sqrt{1600} = 40$. So $\\tan \\theta = 40/9$. 9/40 is $\\cot \\theta$, 40/41 is $\\sin \\theta$ and 41/40 is $\\csc \\theta$."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-048",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Limits",
+      "stem": "What is $\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$?",
+      "options": [
+        "0",
+        "2",
+        "4",
+        "8"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Factorise: $\\frac{(x - 2)(x + 2)}{x - 2} = x + 2$ for $x \\neq 2$. As $x \\to 2$ this tends to 4."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-049",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Complex numbers",
+      "stem": "What is the modulus of the complex number $39 - 80i$?",
+      "options": [
+        "41",
+        "89",
+        "119",
+        "7921"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$|a + bi| = \\sqrt{a^2 + b^2} = \\sqrt{1521 + 6400} = \\sqrt{7921} = 89$. 7921 forgets the square root, 119 adds 39 and 80, and 41 subtracts them."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-050",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "What is the period of the function $\\sin \\frac{x}{2}$?",
+      "options": [
+        "$\\pi$",
+        "$2\\pi$",
+        "$4\\pi$",
+        "$\\frac{\\pi}{2}$"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "$\\sin x$ has period $2\\pi$. For $\\sin kx$ the period is $2\\pi / k$; here $k = \\frac{1}{2}$, so the period is $2\\pi \\div \\frac{1}{2} = 4\\pi$. Halving x stretches the graph, so the period gets longer, not shorter."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-051",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Derivatives",
+      "stem": "What is $\\frac{d}{dx}\\left(\\ln x^2\\right)$ for $x > 0$?",
+      "options": [
+        "$\\frac{1}{2x}$",
+        "$2x$",
+        "$\\frac{1}{x^2}$",
+        "$\\frac{2}{x}$"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "$\\ln x^2 = 2 \\ln x$, whose derivative is $\\frac{2}{x}$. By the chain rule as well: $\\frac{1}{x^2} \\cdot 2x = \\frac{2}{x}$."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-052",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "For what value of k does $x^2 - 8x + k = 0$ have two equal roots?",
+      "options": [
+        "4",
+        "8",
+        "16",
+        "64"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Equal roots need the discriminant to be zero: $(-8)^2 - 4k = 0$, so $4k = 64$ and $k = 16$ (the root is 4). 64 forgets to divide by 4, and 4 is the repeated root, not k."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-053",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Heights and distances",
+      "stem": "A 10 m ladder leans against a wall and makes an angle of $60^\\circ$ with the ground. How far is its foot from the wall?",
+      "options": [
+        "5 m",
+        "8.66 m",
+        "10 m",
+        "20 m"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Distance from the wall = $10 \\cos 60^\\circ = 10 \\times \\frac{1}{2} = 5$ m. 8.66 m is $10 \\sin 60^\\circ$, the height the ladder reaches up the wall, and 20 m divides by $\\cos 60^\\circ$ instead of multiplying."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-054",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Applications of derivatives",
+      "stem": "What is the slope of the tangent to the curve $y = x^2$ at the point (3, 9)?",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "18"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\frac{dy}{dx} = 2x$, which is 6 at $x = 3$. 9 is the y-coordinate, and 18 is $2y$."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-055",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sequences and series",
+      "stem": "What is the sum of the first 20 natural numbers?",
+      "options": [
+        "190",
+        "200",
+        "210",
+        "420"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Sum = n(n + 1) / 2 = 20 x 21 / 2 = 210. 420 forgets to divide by 2."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-056",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coordinate geometry",
+      "stem": "What is the midpoint of the line segment joining (2, -4) and (6, 8)?",
+      "options": [
+        "(4, 2)",
+        "(2, 6)",
+        "(8, 4)",
+        "(4, 6)"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Midpoint = ((2 + 6)/2, (-4 + 8)/2) = (4, 2). (8, 4) adds the coordinates without halving them."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-057",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Indefinite integrals",
+      "stem": "What is $\\int \\cos x \\, dx$?",
+      "options": [
+        "$\\sin x + C$",
+        "$-\\sin x + C$",
+        "$\\cos x + C$",
+        "$-\\cos x + C$"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Since $\\frac{d}{dx} \\sin x = \\cos x$, the integral of $\\cos x$ is $\\sin x + C$. The minus sign belongs to $\\int \\sin x \\, dx = -\\cos x + C$."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-058",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sequences and series",
+      "stem": "What is the 5th term of the geometric progression 4, 12, 36, ...?",
+      "options": [
+        "36",
+        "81",
+        "108",
+        "324"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "$a_n = a r^{n-1} = 4 \\times 3^4 = 4 \\times 81 = 324$. 108 is the 4th term, 81 is $3^4$ without the first term 4, and 36 is the 3rd term."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-059",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coordinate geometry",
+      "stem": "What is the equation of the line with slope -2 that crosses the y-axis at (0, 5)?",
+      "options": [
+        "y = 2x + 5",
+        "y = -2x + 5",
+        "y = -2x - 5",
+        "y = 5x - 2"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The slope-intercept form is y = mx + c, with m = -2 and c = 5 (the y-intercept). So y = -2x + 5. y = 5x - 2 swaps the slope and the intercept."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-060",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Area under curves",
+      "stem": "What is the area between the line y = x, the x-axis and the line x = 4?",
+      "options": [
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Area = $\\int_0^4 x \\, dx = \\frac{4^2}{2} = 8$ square units, which is also the triangle with base 4 and height 4. 16 leaves out the ½."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-061",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Permutations and combinations",
+      "stem": "In how many ways can a captain and a vice-captain be chosen from 10 players?",
+      "options": [
+        "20",
+        "45",
+        "90",
+        "100"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The two posts are different, so order matters: $^{10}P_2 = 10 \\times 9 = 90$. 45 is $^{10}C_2$, which would treat the two posts as the same."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-062",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Conic sections",
+      "stem": "What is the focus of the parabola $x^2 = 16y$?",
+      "options": [
+        "(0, 16)",
+        "(0, 4)",
+        "(4, 0)",
+        "(0, 8)"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Compare with $x^2 = 4ay$, a parabola opening upward: $4a = 16$, so $a = 4$ and the focus is $(0, a) = (0, 4)$. (4, 0) puts it on the wrong axis, and (0, 16) uses 4a instead of a."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-063",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Applications of derivatives",
+      "stem": "The radius of a circle increases at 2 cm/s. How fast is its area increasing when the radius is 5 cm?",
+      "options": [
+        "$4\\pi$ cm²/s",
+        "$10\\pi$ cm²/s",
+        "$20\\pi$ cm²/s",
+        "$25\\pi$ cm²/s"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "$A = \\pi r^2$, so $\\frac{dA}{dt} = 2\\pi r \\frac{dr}{dt} = 2\\pi \\times 5 \\times 2 = 20\\pi$ cm²/s. $10\\pi$ forgets the rate of 2 cm/s."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-064",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Logarithms",
+      "stem": "What is the value of $\\log_2 64$?",
+      "options": [
+        "5",
+        "6",
+        "8",
+        "32"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$2^6 = 64$, so $\\log_2 64 = 6$. 32 is 64 / 2, 8 is $\\sqrt{64}$, and 5 is one power short ($2^5 = 32$)."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-065",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Vectors",
+      "stem": "What is the magnitude of the vector $2\\hat{i} - \\hat{j} + 2\\hat{k}$?",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$|\\vec{v}| = \\sqrt{2^2 + (-1)^2 + 2^2} = \\sqrt{9} = 3$. 9 forgets the square root."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-066",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "A card is drawn at random from a well-shuffled pack of 52 cards. What is the probability that it is a red face card (jack, queen or king)?",
+      "options": [
+        "1/26",
+        "3/26",
+        "3/13",
+        "1/4"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "There are 12 face cards, half of them red, so 6 red face cards. The probability is 6/52 = 3/26. 3/13 (12/52) counts face cards of both colours."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-067",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Matrices and determinants",
+      "stem": "A is a 2 x 3 matrix and B is a 3 x 4 matrix. What is the order of the product AB?",
+      "options": [
+        "4 x 2",
+        "2 x 4",
+        "2 x 3",
+        "3 x 3"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "AB is defined because A has 3 columns and B has 3 rows. The product takes the rows of A and the columns of B, so it is 2 x 4."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-068",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Vectors",
+      "stem": "For what value of $\\lambda$ are the vectors $2\\hat{i} + \\lambda\\hat{j} + \\hat{k}$ and $\\hat{i} - 2\\hat{j} + 4\\hat{k}$ perpendicular?",
+      "options": [
+        "-3",
+        "2",
+        "3",
+        "6"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Perpendicular vectors have a zero dot product: $2(1) + \\lambda(-2) + 1(4) = 0$, so $6 - 2\\lambda = 0$ and $\\lambda = 3$."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-069",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "A fair coin is tossed three times. What is the probability of getting at least one head?",
+      "options": [
+        "1/8",
+        "3/8",
+        "1/2",
+        "7/8"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "P(no heads) = (1/2)³ = 1/8, so P(at least one head) = 1 - 1/8 = 7/8. 3/8 is the chance of exactly one head."
+    },
+    {
+      "id": "AGNIVEERVAYU-T2-070",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Relations and functions",
+      "stem": "If $f(x) = 2x + 3$, what is $f^{-1}(7)$?",
+      "options": [
+        "1/2",
+        "2",
+        "5",
+        "17"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Solve $2x + 3 = 7$: $x = 2$. So $f^{-1}(7) = 2$. 17 is $f(7)$, not $f^{-1}(7)$."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-001",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe hostel warden / gave us / a few advices before the trek.",
+      "options": [
+        "The hostel warden",
+        "gave us",
+        "a few advices before the trek.",
+        "No error"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "'Advice' is uncountable, so it has no plural and does not take 'a few'. Say 'some advice' or 'a few pieces of advice'."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-002",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the word that is closest in meaning to the given word.\n\nArduous",
+      "options": [
+        "Difficult",
+        "Brief",
+        "Pleasant",
+        "Ordinary"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "An 'arduous' task needs a lot of effort, as an arduous route march does, so 'difficult' is the closest word."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-003",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe recruits were told / to report at sharp 6 a.m. / on the parade ground.",
+      "options": [
+        "The recruits were told",
+        "to report at sharp 6 a.m.",
+        "on the parade ground.",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Sharp' meaning exactly comes after the time: 'to report at 6 a.m. sharp'."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-004",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe flight was cancelled ______ heavy fog.",
+      "options": [
+        "due to",
+        "so that",
+        "because",
+        "since"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Due to' is followed by a noun phrase (heavy fog). 'Because' and 'since' need a full clause ('because the fog was heavy'), and 'so that' shows purpose."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-005",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the word that is most nearly opposite in meaning to the given word.\n\nMobile",
+      "options": [
+        "Active",
+        "Stationary",
+        "Movable",
+        "Portable"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Mobile' means able to move. 'Stationary' means not moving; 'movable' and 'portable' are close in meaning to mobile."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-006",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nOf all the runways at this airfield, the new one is the ______.",
+      "options": [
+        "longer",
+        "more longer",
+        "longest",
+        "most long"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Of all the runways' compares one with every other, so the superlative is needed. Short adjectives add -est: 'the longest'. 'More longer' marks the comparison twice."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-007",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe squadron welcomed ______ European delegation last week.",
+      "options": [
+        "few",
+        "a",
+        "much",
+        "an"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'European' begins with the sound /j/ (you-), a consonant sound, so it takes 'a', as in 'a uniform' and 'a university'. The article depends on the sound, not the letter. 'Much' and 'few' do not go with a singular countable noun."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-008",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the most appropriate meaning of the idiom.\n\nTo be all ears",
+      "options": [
+        "To refuse to listen",
+        "To listen very carefully",
+        "To talk without stopping",
+        "To hear rumours everywhere"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "If you are 'all ears', you are giving your full attention to what someone is about to say."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-009",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nPlease __reply my letter__ as soon as you can.",
+      "options": [
+        "replying my letter",
+        "reply to my letter",
+        "reply for my letter",
+        "No improvement"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Reply' needs 'to' before the thing answered: 'Please reply to my letter.' Compare 'answer my letter', which takes no preposition."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-010",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nThey will announce the results tomorrow.",
+      "options": [
+        "The results will be announced tomorrow.",
+        "The results are announced tomorrow.",
+        "The results will announced tomorrow.",
+        "The results would be announced tomorrow."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Simple future active ('will announce') becomes 'will be' + past participle. The vague agent 'they' is usually dropped in the passive."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-011",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the word that can replace the given phrase.\n\nA list of the items to be discussed at a meeting",
+      "options": [
+        "Manifesto",
+        "Memorandum",
+        "Agenda",
+        "Minutes"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An 'agenda' lists what a meeting will discuss. The 'minutes' record what was said afterwards, a 'memorandum' is a short note, and a 'manifesto' sets out a group's aims."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-012",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direct and indirect speech",
+      "stem": "Select the correct indirect form of the sentence.\n\nThe teacher said, \"Light travels faster than sound.\"",
+      "options": [
+        "The teacher said that light travels faster than sound.",
+        "The teacher said that light travelled faster than sound.",
+        "The teacher said that light was travelling faster than sound.",
+        "The teacher said that light had travelled faster than sound."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A universal truth keeps its present tense in reported speech even after a past reporting verb: 'light travels faster than sound'."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-013",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC3",
+      "stem": "What happens to a person's reaction time after about seventeen hours without sleep, according to the passage?",
+      "options": [
+        "It becomes faster for a short time",
+        "It stays the same if the person feels alert",
+        "It returns to normal after a cup of tea",
+        "It slows to a level like that after an alcoholic drink"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says reaction time slows to a level similar to that of someone who has had an alcoholic drink."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-014",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC3",
+      "stem": "Why, according to the passage, is tiredness especially dangerous?",
+      "options": [
+        "Tiredness spreads quickly to other crew members",
+        "Tired people always fall asleep on duty",
+        "Tiredness cannot be reduced by rest",
+        "Tired people rarely notice their own mistakes"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says the danger is that tired people rarely notice it themselves: they feel alert while making more and more small mistakes."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-015",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC3",
+      "stem": "What do round-the-clock organisations do about rest, according to the passage?",
+      "options": [
+        "They allow it only after a mistake",
+        "They reduce it during busy seasons",
+        "They plan it as carefully as work",
+        "They leave it to each worker to decide"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says organisations that work round the clock plan rest as carefully as they plan work."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-016",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "AGNIVEERVAYU-RC3",
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Warning lights are often faulty",
+        "Naps make workers lazy",
+        "Night shifts should be banned",
+        "Proper rest is essential for safe work"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage argues that sleep is not time lost and that rest is planned for safety; its last line sums this up."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-017",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Units and dimensions",
+      "stem": "Which of these is a vector quantity?",
+      "options": [
+        "Momentum",
+        "Work",
+        "Kinetic energy",
+        "Power"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Momentum (mass x velocity) has both size and direction, so it is a vector. Kinetic energy, power and work have size only."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-018",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Thermal properties",
+      "stem": "Which temperature is equal to 0 K (absolute zero)?",
+      "options": [
+        "-273.15 °C",
+        "-100 °C",
+        "0 °C",
+        "273.15 °C"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "K = °C + 273.15, so 0 K = -273.15 °C. Water freezes at 0 °C, which is 273.15 K; +273.15 °C would be 546.3 K."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-019",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Electrostatics",
+      "stem": "About how many electrons make up a charge of 1 coulomb?",
+      "options": [
+        "$6.25 \\times 10^{18}$",
+        "$1.6 \\times 10^{-19}$",
+        "$1.6 \\times 10^{19}$",
+        "$6.02 \\times 10^{23}$"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "One electron carries $1.6 \\times 10^{-19}$ C, so 1 C needs $1 / (1.6 \\times 10^{-19}) = 6.25 \\times 10^{18}$ electrons. $6.02 \\times 10^{23}$ is Avogadro's number."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-020",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Kinematics",
+      "stem": "Two trains run on parallel tracks in opposite directions at 60 km/h and 40 km/h. What is the speed of one relative to the other?",
+      "options": [
+        "20 km/h",
+        "50 km/h",
+        "60 km/h",
+        "100 km/h"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "When bodies move in opposite directions their relative speed is the sum of their speeds: 60 + 40 = 100 km/h. 20 km/h would be correct only if they moved in the same direction."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-021",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Thermodynamics",
+      "stem": "In an adiabatic process,",
+      "options": [
+        "the volume stays constant",
+        "the pressure stays constant",
+        "no heat enters or leaves the system",
+        "the temperature stays constant"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Adiabatic means no heat exchange with the surroundings (Q = 0). Constant temperature is isothermal, constant pressure isobaric and constant volume isochoric."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-022",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Electrostatics",
+      "stem": "How much work is done in moving a charge of 2 C through a potential difference of 5 V?",
+      "options": [
+        "0.4 J",
+        "2.5 J",
+        "7 J",
+        "10 J"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "W = qV = 2 x 5 = 10 J. 2.5 J divides V by q, 0.4 J divides q by V, and 7 J adds them."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-023",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Projectile motion",
+      "stem": "A ball is thrown at 20 m/s at the angle that gives the maximum horizontal range. What is that range? (g = 10 m/s²)",
+      "options": [
+        "2 m",
+        "20 m",
+        "34.6 m",
+        "40 m"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Maximum range is at 45°, where R = u² / g = 20² / 10 = 40 m. 20 m halves it, 34.6 m is the range at 30° or 60°, and 2 is u / g, the time in seconds to reach the top."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-024",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Thermal properties",
+      "stem": "Small gaps are left between lengths of railway track mainly because",
+      "options": [
+        "the rails shrink as they wear out",
+        "the gaps make the train run quieter",
+        "the gaps let rainwater drain away",
+        "the rails expand when they get hot"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Steel expands on heating. Without gaps, the rails would push against each other on hot days and could buckle."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-025",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Electromagnetic waves",
+      "stem": "Which of these electromagnetic radiations has the highest frequency?",
+      "options": [
+        "X-rays",
+        "Ultraviolet rays",
+        "Gamma rays",
+        "Microwaves"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In order of rising frequency: radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays. Gamma rays have the highest frequency and shortest wavelength."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-026",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Laws of motion",
+      "stem": "A person of mass 60 kg stands on a weighing scale in a lift that is accelerating upward at 2 m/s². What does the scale read? (g = 10 m/s²)",
+      "options": [
+        "120 N",
+        "480 N",
+        "600 N",
+        "720 N"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Apparent weight R = m(g + a) = 60 x (10 + 2) = 720 N. 600 N is the weight at rest, 480 N is for a lift accelerating downward, and 120 N is only the extra force ma."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-027",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Oscillations",
+      "stem": "If the length of a simple pendulum is made four times as long, its time period becomes",
+      "options": [
+        "sixteen times as long",
+        "half as long",
+        "twice as long",
+        "four times as long"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "$T \\propto \\sqrt{L}$, so multiplying the length by 4 multiplies the period by $\\sqrt{4} = 2$."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-028",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Nuclei",
+      "stem": "A radioactive sample has a half-life of 10 days. What fraction of it is left undecayed after 30 days?",
+      "options": [
+        "1/8",
+        "1/6",
+        "1/4",
+        "1/3"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "30 days is three half-lives, so the fraction left is (1/2)³ = 1/8. 1/3 wrongly divides 10 by 30."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-029",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Circular motion",
+      "stem": "A stone is whirled in a horizontal circle at constant speed on a string. How much work does the tension in the string do on it?",
+      "options": [
+        "Negative work every revolution",
+        "Work equal to its kinetic energy",
+        "Zero",
+        "Positive work every revolution"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The tension points to the centre, at right angles to the velocity, so W = F d cos 90° = 0. That is why the speed stays constant."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-030",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Waves",
+      "stem": "Two tuning forks of frequencies 256 Hz and 260 Hz are sounded together. How many beats are heard each second?",
+      "options": [
+        "4",
+        "8",
+        "258",
+        "516"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Beat frequency = difference of the two frequencies = 260 - 256 = 4 beats per second. 258 Hz is their average, the pitch of the combined sound, and 516 is their sum."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-031",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semiconductors",
+      "stem": "Which logic gate gives an output of 1 only when both of its inputs are 1?",
+      "options": [
+        "XOR",
+        "NAND",
+        "OR",
+        "AND"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "AND gives 1 only for inputs 1 and 1. OR gives 1 if either input is 1, NAND is the opposite of AND, and XOR gives 1 only when the inputs differ."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-032",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Gravitation",
+      "stem": "According to Kepler's third law, the square of a planet's period of revolution is proportional to",
+      "options": [
+        "the semi-major axis of its orbit",
+        "the square of its mass",
+        "the cube of its speed",
+        "the cube of the semi-major axis of its orbit"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Kepler's law of periods: $T^2 \\propto a^3$, where a is the semi-major axis. A planet farther from the Sun takes much longer to go round."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-033",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Waves",
+      "stem": "A soldier fires a starting pistol and hears the echo from a distant building 1.5 s later. If sound travels at 340 m/s, how far away is the building?",
+      "options": [
+        "170 m",
+        "227 m",
+        "255 m",
+        "510 m"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "In 1.5 s the sound travels 340 x 1.5 = 510 m, to the building and back, so the building is 510 / 2 = 255 m away. 510 m forgets the round trip, 170 m halves the speed only, and 227 m divides 340 by 1.5."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-034",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Magnetism and matter",
+      "stem": "Which kind of material is weakly repelled by a magnet?",
+      "options": [
+        "Ferromagnetic",
+        "Diamagnetic",
+        "Ferrimagnetic",
+        "Paramagnetic"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Diamagnetic materials such as bismuth, copper and water are weakly repelled. Paramagnetic materials are weakly attracted and ferromagnetic ones such as iron strongly attracted."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-035",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Rotational motion",
+      "stem": "A force of 20 N is applied at right angles to a spanner, 0.5 m from the nut. What is the torque on the nut?",
+      "options": [
+        "5 N m",
+        "10 N m",
+        "20 N m",
+        "40 N m"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Torque = force x perpendicular distance = 20 x 0.5 = 10 N m. 40 N m divides by 0.5 instead of multiplying."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-036",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ray optics",
+      "stem": "A ray of light passes through a glass prism in the position of minimum deviation. Inside the prism, the ray travels",
+      "options": [
+        "parallel to the base of the prism",
+        "along the second face of the prism",
+        "along the normal to the first face",
+        "at right angles to the base"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "At minimum deviation the ray passes symmetrically through the prism: the angle of incidence equals the angle of emergence, and the refracted ray inside the prism is parallel to the base."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-037",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Electromagnetic induction",
+      "stem": "What is the SI unit of self-inductance?",
+      "options": [
+        "Weber",
+        "Tesla",
+        "Farad",
+        "Henry"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Self-inductance is measured in henry (H). The tesla is the unit of magnetic field, the weber of magnetic flux, and the farad of capacitance."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-038",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuMechanics",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fluids",
+      "stem": "According to Stokes' law, the viscous drag on a small sphere of radius r moving slowly with speed v through a fluid of viscosity η is",
+      "options": [
+        "$6\\pi\\eta r^2 v$",
+        "$4\\pi\\eta r v^2$",
+        "$6\\pi\\eta r v$",
+        "$3\\pi\\eta r^2 v$"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Stokes' law: $F = 6\\pi\\eta r v$. The drag grows in direct proportion to both the radius and the speed, which is why a falling drop soon reaches a steady terminal velocity."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-039",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuHeatOptics",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ray optics",
+      "stem": "A short-sighted (myopic) person cannot see clearly beyond 2 m (the far point). What is the power of the lens needed to correct this?",
+      "options": [
+        "-2 D",
+        "-0.5 D",
+        "+0.5 D",
+        "+2 D"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The lens must form an image of a very distant object at the far point, so it is a concave lens of focal length -2 m. P = 1 / f = 1 / (-2) = -0.5 D. A short-sighted eye needs a diverging lens, so the positive powers are wrong, and -2 D uses the focal length in metres instead of its reciprocal."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-040",
+      "section": "phy",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuElectricity",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Dual nature of radiation",
+      "stem": "If the momentum of a particle is doubled, its de Broglie wavelength becomes",
+      "options": [
+        "half",
+        "one-fourth",
+        "four times",
+        "double"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "$\\lambda = h / p$, so the wavelength is inversely proportional to momentum. Doubling p halves λ."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-041",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Relations and functions",
+      "stem": "Set A has 2 elements and set B has 3 elements. How many different relations are there from A to B?",
+      "options": [
+        "6",
+        "8",
+        "32",
+        "64"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "A relation from A to B is any subset of A x B, which has 2 x 3 = 6 elements. So there are $2^6 = 64$ relations. 6 is the size of A x B itself."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-042",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "What is the exact value of $\\tan 15^\\circ$?",
+      "options": [
+        "$\\frac{1}{\\sqrt{3}}$",
+        "$\\sqrt{3} - 1$",
+        "$2 + \\sqrt{3}$",
+        "$2 - \\sqrt{3}$"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "$\\tan(45^\\circ - 30^\\circ) = \\frac{1 - \\frac{1}{\\sqrt{3}}}{1 + \\frac{1}{\\sqrt{3}}} = \\frac{\\sqrt{3} - 1}{\\sqrt{3} + 1} = 2 - \\sqrt{3}$ (about 0.268). $2 + \\sqrt{3}$ is $\\tan 75^\\circ$."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-043",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Continuity and differentiability",
+      "stem": "Which statement about a real function f at a point x = a is always true?",
+      "options": [
+        "If f is continuous at a, its graph is a straight line near a",
+        "If f has a sharp corner at a, it is differentiable at a",
+        "If f is differentiable at a, it is continuous at a",
+        "If f is continuous at a, it is differentiable at a"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Differentiability implies continuity, but not the other way round: a function can be continuous at a corner (where the slopes on the two sides differ) without being differentiable there."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-044",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Complex numbers",
+      "stem": "What is the value of $(5 + 2i)(5 - 2i)$?",
+      "options": [
+        "-21",
+        "21",
+        "25",
+        "29"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "$(a + bi)(a - bi) = a^2 + b^2$, so $(5 + 2i)(5 - 2i) = 25 - 4i^2 = 25 + 4 = 29$. 21 treats $i^2$ as +1, and 25 leaves the $i^2$ term out."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-045",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "If $\\sec \\theta + \\tan \\theta = 2$, what is $\\sec \\theta - \\tan \\theta$?",
+      "options": [
+        "-2",
+        "1/4",
+        "1/2",
+        "2"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\sec^2 \\theta - \\tan^2 \\theta = 1$, so $(\\sec \\theta + \\tan \\theta)(\\sec \\theta - \\tan \\theta) = 1$. Hence $\\sec \\theta - \\tan \\theta = 1/2$."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-046",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Limits",
+      "stem": "What is $\\lim_{x \\to \\infty} \\frac{3x + 1}{x + 2}$?",
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "3"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Divide the top and bottom by x: $\\frac{3 + 1/x}{1 + 2/x} \\to \\frac{3}{1} = 3$. 1/2 is the value of the fraction at $x = 0$."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-047",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "If the discriminant of a quadratic equation with real coefficients is negative, its roots are",
+      "options": [
+        "real and unequal",
+        "not real (a pair of complex conjugates)",
+        "real and equal",
+        "both zero"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Roots are $\\frac{-b \\pm \\sqrt{D}}{2a}$. If $D < 0$, $\\sqrt{D}$ is not real, so the roots are complex conjugates such as $1 \\pm 2i$."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-048",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coordinate geometry",
+      "stem": "What is the area of the triangle with vertices (0, 0), (6, 0) and (0, 8)?",
+      "options": [
+        "10",
+        "14",
+        "24",
+        "48"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "It is a right triangle with legs 6 and 8 along the axes, so its area is ½ x 6 x 8 = 24 square units. 48 leaves out the ½, 14 adds the legs, and 10 is the length of the third side."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-049",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Derivatives",
+      "stem": "What is $\\frac{d}{dx}(\\tan x)$?",
+      "options": [
+        "$\\sec x \\tan x$",
+        "$\\cot x$",
+        "$-\\csc^2 x$",
+        "$\\sec^2 x$"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "$\\frac{d}{dx} \\tan x = \\sec^2 x$. $\\sec x \\tan x$ is the derivative of $\\sec x$, and $-\\csc^2 x$ is the derivative of $\\cot x$."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-050",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sequences and series",
+      "stem": "Which term of the arithmetic progression 6, 13, 20, ... is 104?",
+      "options": [
+        "13th",
+        "14th",
+        "15th",
+        "16th"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "104 = 6 + (n - 1) x 7, so n - 1 = 98 / 7 = 14 and n = 15. The 14th term is 97; 14 is n - 1, not n."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-051",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coordinate geometry",
+      "stem": "What point divides the segment joining (2, 1) and (8, 10) internally in the ratio 1 : 2?",
+      "options": [
+        "(4, 4)",
+        "(6, 7)",
+        "(2, 3)",
+        "(5, 5.5)"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Section formula: ((1 x 8 + 2 x 2)/3, (1 x 10 + 2 x 1)/3) = (12/3, 12/3) = (4, 4). (6, 7) divides it in the ratio 2 : 1, and (5, 5.5) is the midpoint."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-052",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Definite integrals",
+      "stem": "What is $\\int_0^\\pi \\sin x \\, dx$?",
+      "options": [
+        "-2",
+        "0",
+        "1",
+        "2"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\int \\sin x \\, dx = -\\cos x$, so the value is $-\\cos \\pi - (-\\cos 0) = 1 + 1 = 2$. 0 would be the answer from 0 to $2\\pi$, where the negative half cancels the positive half."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-053",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Matrices and determinants",
+      "stem": "A square matrix has an inverse if and only if",
+      "options": [
+        "all its entries are positive",
+        "its determinant is zero",
+        "it is symmetric",
+        "its determinant is not zero"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "$A^{-1} = \\frac{1}{|A|}\\,\\text{adj}\\,A$, which is defined only when $|A| \\neq 0$. A matrix with zero determinant is singular and has no inverse."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-054",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Conic sections",
+      "stem": "What is the eccentricity of a circle?",
+      "options": [
+        "1",
+        "Between 0 and 1",
+        "Greater than 1",
+        "0"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A circle is an ellipse whose two foci coincide at the centre, so its eccentricity is 0. A parabola has e = 1, an ellipse 0 < e < 1 and a hyperbola e > 1."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-055",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Indefinite integrals",
+      "stem": "What is $\\int \\frac{1}{x} \\, dx$ for $x \\neq 0$?",
+      "options": [
+        "$-\\frac{1}{x^2} + C$",
+        "$x \\ln x + C$",
+        "$\\ln |x| + C$",
+        "$\\frac{x^0}{0} + C$"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The power rule $\\int x^n dx = \\frac{x^{n+1}}{n+1}$ fails for $n = -1$. Instead, since $\\frac{d}{dx} \\ln |x| = \\frac{1}{x}$, the integral is $\\ln |x| + C$."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-056",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Binomial theorem",
+      "stem": "What is the term independent of x in the expansion of $\\left(x + \\frac{1}{x}\\right)^6$?",
+      "options": [
+        "6",
+        "15",
+        "20",
+        "120"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The general term is $^6C_r\\, x^{6-r} x^{-r} = {}^6C_r\\, x^{6-2r}$. It is free of x when $r = 3$, giving $^6C_3 = 20$. 15 is $^6C_2$ and 120 is $^6P_3$."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-057",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Vectors",
+      "stem": "What is $\\hat{i} \\times \\hat{j}$?",
+      "options": [
+        "$0$",
+        "$-\\hat{k}$",
+        "$\\hat{k}$",
+        "$1$"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "For the right-handed unit vectors, $\\hat{i} \\times \\hat{j} = \\hat{k}$, while $\\hat{j} \\times \\hat{i} = -\\hat{k}$. The cross product of two vectors is a vector, so 0 and 1 (scalars) cannot be right."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-058",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Applications of derivatives",
+      "stem": "If $f'(x) > 0$ for every x in an interval, then on that interval f is",
+      "options": [
+        "strictly increasing",
+        "constant",
+        "at a maximum",
+        "strictly decreasing"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A positive derivative means a positive slope everywhere on the interval, so the function rises as x increases."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-059",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear inequalities",
+      "stem": "What is the solution of $5x + 2 > 17$?",
+      "options": [
+        "$x > 3$",
+        "$x < \\frac{19}{5}$",
+        "$x > \\frac{19}{5}$",
+        "$x < 3$"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Subtract 2 from both sides: $5x > 15$. Divide by 5 (a positive number, so the sign stays): $x > 3$. $\\frac{19}{5}$ comes from adding 2 instead of subtracting it."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-060",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Three-dimensional geometry",
+      "stem": "If l, m and n are the direction cosines of a line, then",
+      "options": [
+        "$lmn = 1$",
+        "$l^2 + m^2 + n^2 = 1$",
+        "$l^2 + m^2 + n^2 = 0$",
+        "$l + m + n = 1$"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Direction cosines are $\\cos \\alpha, \\cos \\beta, \\cos \\gamma$ of the angles a line makes with the axes, and the squares of these always add up to 1."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-061",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "A and B are independent events with P(A) = 0.7 and P(B) = 0.4. What is P(A and B)?",
+      "options": [
+        "0.28",
+        "0.3",
+        "0.82",
+        "1.1"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "For independent events P(A ∩ B) = P(A) x P(B) = 0.7 x 0.4 = 0.28. 1.1 adds the probabilities (no probability exceeds 1), 0.82 is P(A or B) = 0.7 + 0.4 - 0.28, and 0.3 is their difference."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-062",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Permutations and combinations",
+      "stem": "What is the value of $^6P_2 \\div {}^6C_2$?",
+      "options": [
+        "2",
+        "15",
+        "30",
+        "450"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "$^6P_2 = 6 \\times 5 = 30$ and $^6C_2 = 30 / 2! = 15$, so the ratio is 2. 450 multiplies the two instead of dividing. In general $^nP_r = r! \\times {}^nC_r$."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-063",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "What is the value of $\\cos^2 30^\\circ - \\sin^2 30^\\circ$?",
+      "options": [
+        "$0$",
+        "$1$",
+        "$\\frac{1}{2}$",
+        "$\\frac{\\sqrt{3}}{2}$"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "$\\cos^2 \\theta - \\sin^2 \\theta = \\cos 2\\theta$, so the value is $\\cos 60^\\circ = \\frac{1}{2}$. Check: $\\frac{3}{4} - \\frac{1}{4} = \\frac{1}{2}$. 1 is $\\cos^2 \\theta + \\sin^2 \\theta$."
+    },
+    {
+      "id": "AGNIVEERVAYU-D-064",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "agniveervayuCalculus",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Statistics",
+      "stem": "What is the median of 3, 9, 4, 7, 5?",
+      "options": [
+        "4",
+        "5",
+        "5.6",
+        "7"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Arrange in order: 3, 4, 5, 7, 9. The middle value is 5. 5.6 is the mean (28 / 5), and 4 is the middle of the numbers as written, before sorting."
+    }
+  ]
+}

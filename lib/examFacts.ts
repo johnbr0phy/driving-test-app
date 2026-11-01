@@ -2531,4 +2531,163 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the CSC examination announcements for the March and August 2026 CSE-PPT (No. 08, s. 2025 and No. 03, s. 2026) as reported, checked November 2026",
     source: { name: "Civil Service Commission", url: "https://csc.gov.ph" },
   },
+  upscse: {
+    answer:
+      "The UPSC Civil Services Preliminary Examination is the screening stage for the IAS, IPS, IFS and other central services. It has two compulsory objective papers of 200 marks each, two hours each, set in Hindi and English. General Studies Paper I decides who qualifies for the Main examination; Paper II (CSAT) is qualifying, with 33% needed. Every question has four options, and one-third of a question's marks is deducted for each wrong answer. Guides list 100 questions in Paper I and 80 in Paper II. Prelims marks are not counted in the final ranking.",
+    rows: [
+      { label: "Papers", value: "GS Paper I and GS Paper II (CSAT), 200 marks each" },
+      { label: "Time", value: "2 hours per paper" },
+      { label: "Questions", value: "Paper I 100, Paper II 80 (as guides list)" },
+      { label: "Negative marking", value: "One-third of the question's marks per wrong answer" },
+      { label: "CSAT", value: "Qualifying, 33% needed" },
+      { label: "Languages", value: "Hindi and English" },
+      { label: "Given by", value: "Union Public Service Commission (UPSC)" },
+    ],
+    basedOn: "UPSC Examination Notice No. 05/2026-CSE (4 February 2026); the 2027 Preliminary is scheduled for 23 May 2027",
+    source: { name: "Union Public Service Commission", url: "https://upsc.gov.in" },
+  },
+  ssccpo: {
+    answer:
+      "SSC CPO Paper-I is the first stage of the Staff Selection Commission's Sub-Inspector in Delhi Police and Central Armed Police Forces exam. From the 2026 notice it is a computer-based test of 100 multiple-choice questions in 1 hour, four parts of 25 (General Intelligence and Reasoning, General Knowledge and General Awareness, Quantitative Aptitude, English Comprehension), each with its own 15-minute timer. Each question carries 1 mark and a wrong answer loses 0.25. Paper-I shortlists candidates for the physical tests; the final merit list is made from Paper-II.",
+    rows: [
+      { label: "Questions", value: "100 (25 in each of four parts)" },
+      { label: "Time", value: "1 hour, 15 minutes per part" },
+      { label: "Marks", value: "1 per right answer, 100 in all" },
+      { label: "Negative marking", value: "0.25 per wrong answer (0.50 in Paper-II)" },
+      { label: "Parts", value: "Reasoning, General Knowledge, Quantitative Aptitude, English" },
+      { label: "Qualifying marks", value: "30% UR, 25% OBC/EWS, 20% others" },
+      { label: "Languages", value: "Hindi and English (English part in English)" },
+      { label: "Given by", value: "Staff Selection Commission, computer-based" },
+    ],
+    basedOn: "the SSC notice for the Sub-Inspector in Delhi Police and Central Armed Police Forces Examination, 2026 (10 September 2026), paragraphs 12 and 16",
+    source: { name: "Staff Selection Commission", url: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2026.pdf" },
+  },
+  rrbalp: {
+    answer:
+      "RRB ALP CBT 1 is the first-stage Computer Based Test that the Railway Recruitment Boards hold for Assistant Loco Pilot posts. Under CEN 01/2026 it has 75 multiple-choice questions in 60 minutes on Mathematics, General Intelligence and Reasoning and General Science at class 10 level; General Awareness, part of earlier ALP CBT 1 papers, was dropped. One third of a mark is deducted for each wrong answer. CBT 1 is a screening test: its marks do not count in the final merit, and shortlisted candidates go on to CBT 2 and a computer based aptitude test.",
+    rows: [
+      { label: "Questions", value: "75 multiple choice" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Subjects", value: "Mathematics, General Intelligence and Reasoning, General Science (class 10)" },
+      { label: "Negative marking", value: "1/3 mark per wrong answer" },
+      { label: "Qualifying marks (reported)", value: "UR and EWS 40%, OBC and SC 30%, ST 25%" },
+      { label: "Next stages", value: "CBT 2 (Part A and trade Part B), computer based aptitude test" },
+      { label: "Given by", value: "Railway Recruitment Boards (RRBs)" },
+    ],
+    basedOn: "the RRB Assistant Loco Pilot notice CEN 01/2026 (11,127 posts), as summarised by exam guides",
+    source: { name: "Railway Recruitment Boards", url: "https://www.rrbcdg.gov.in" },
+  },
+  rpfconst: {
+    answer:
+      "The RPF Constable exam is the Computer Based Test for Constable (Executive) posts in the Railway Protection Force and the Railway Protection Special Force. In the last recruitment, CEN RPF 02/2024 run by the Railway Recruitment Boards (CBT held in March 2025), it had 120 multiple-choice questions in 90 minutes: exam guides give 50 on General Awareness, 35 on Arithmetic and 35 on General Intelligence and Reasoning. One third of a mark is deducted for each wrong answer, and guides report minimum qualifying marks of 35 percent for UR, EWS and OBC and 30 percent for SC and ST. Shortlisted candidates then take the Physical Efficiency and Physical Measurement Tests (qualifying) and document verification. The next notice had not been published as of November 2026.",
+    rows: [
+      { label: "Questions", value: "120 multiple choice" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Sections", value: "General Awareness 50, Arithmetic 35, Reasoning 35 (as reported by guides)" },
+      { label: "Negative marking", value: "1/3 mark per wrong answer" },
+      { label: "Qualifying marks", value: "UR, EWS and OBC 35%, SC and ST 30% (as reported by guides)" },
+      { label: "Next stages", value: "PET and PMT (qualifying), document verification" },
+      { label: "Given by", value: "Railway Recruitment Boards (CEN RPF 02/2024)" },
+    ],
+    basedOn: "the RRB notice CEN RPF 02/2024 (Constable) and its March 2025 CBT",
+    source: { name: "Railway Recruitment Boards", url: "https://www.rrbcdg.gov.in" },
+  },
+  nda: {
+    answer:
+      "The NDA and NA exam is the Union Public Service Commission's written test, held twice a year, for entry to the National Defence Academy (Army, Navy and Air Force wings) and the Naval Academy. It has two objective papers of 2.5 hours each: Mathematics, 120 questions for 300 marks, and the General Ability Test, 150 questions for 600 marks, made up of English (200 marks) and General Knowledge (400 marks). A third of a question's marks is deducted for each wrong answer. Candidates who qualify go on to the 900-mark SSB interview.",
+    rows: [
+      { label: "Papers", value: "Mathematics; General Ability Test" },
+      { label: "Questions", value: "120 in Mathematics, 150 in the GAT" },
+      { label: "Time", value: "2.5 hours per paper" },
+      { label: "Marks", value: "Mathematics 300, GAT 600 (English 200, General Knowledge 400)" },
+      { label: "Negative marking", value: "One third of a question's marks per wrong answer" },
+      { label: "Next stage", value: "SSB interview, 900 marks" },
+      { label: "Sittings", value: "Twice a year: NDA (I) in April, NDA (II) in September" },
+      { label: "Given by", value: "Union Public Service Commission" },
+    ],
+    basedOn: "UPSC Examination Notice No. 10/2026-NDA-II of 20 May 2026 (exam 13 September 2026); question counts per the question papers",
+    source: { name: "Union Public Service Commission", url: "https://upsc.gov.in" },
+  },
+  agniveer: {
+    answer:
+      "The Agniveer (General Duty) Common Entrance Exam is the online written test that is the first step of Indian Army recruitment under the Agnipath scheme. Guides describe the GD paper as 50 multiple-choice questions for 100 marks in 60 minutes: 15 on General Knowledge, 15 on General Science, 15 on Mathematics and 5 on Logical Reasoning, 2 marks each with half a mark deducted for a wrong answer, and a pass mark of 35. The Army holds the CEE in 13 languages; shortlisted candidates then go to a recruitment rally for physical tests and a medical examination.",
+    rows: [
+      { label: "Questions", value: "50 multiple choice, 2 marks each (guides)" },
+      { label: "Time", value: "60 minutes (guides)" },
+      { label: "Sections", value: "GK 15, General Science 15, Maths 15, Reasoning 5 (guides)" },
+      { label: "Negative marking", value: "0.5 mark per wrong answer (guides)" },
+      { label: "Pass mark", value: "35 out of 100 for GD (guides)" },
+      { label: "Languages", value: "13 languages" },
+      { label: "Next stages", value: "Recruitment rally (physical tests), then medical" },
+      { label: "Given by", value: "Indian Army" },
+    ],
+    basedOn: "the Army's 2025-26 recruiting press release and the 2026 cycle notice (registration 13 February to 1 April 2026, extended to 10 April per news reports, CEE from June 2026), with the GD paper pattern as reported by guides",
+    source: { name: "Join Indian Army", url: "https://joinindianarmy.nic.in" },
+  },
+  agniveervayu: {
+    answer:
+      "The Agniveervayu Science subjects test is the Phase I online test for the Indian Air Force's Agnipath entry for candidates with Physics, Mathematics and English in Class 12. It lasts 60 minutes and covers English, Physics and Mathematics to the 10+2 CBSE syllabus; guides report 70 questions, 20 English, 25 Physics and 25 Mathematics. Each right answer earns 1 mark and each wrong answer loses 0.25. Questions are in English and Hindi except the English paper. Marks are normalised, and the cut-off for Phase II (fitness and adaptability tests) is set state by state.",
+    rows: [
+      { label: "Time", value: "60 minutes (Science subjects)" },
+      { label: "Subjects", value: "English, Physics, Mathematics (10+2 CBSE)" },
+      { label: "Questions", value: "70 as guides report: English 20, Physics 25, Maths 25" },
+      { label: "Marking", value: "+1 right, -0.25 wrong, 0 unattempted" },
+      { label: "Language", value: "English and Hindi, except the English paper" },
+      { label: "Cut-off", value: "Normalised marks; state-wise cut-offs for Phase II" },
+      { label: "Next stages", value: "Physical Fitness Test, Adaptability Tests I and II, medical" },
+      { label: "Given by", value: "Indian Air Force (CASB), online" },
+    ],
+    basedOn: "the IAF notification for Agniveervayu intake 01/2027 (January 2026), paragraphs 26 to 37",
+    source: { name: "Indian Air Force, CASB", url: "https://iafrecruitment.edcil.co.in" },
+  },
+  apworld: {
+    answer:
+      "The AP World History: Modern Exam is a fully digital, 3 hour 15 minute exam from the College Board. Section I has 55 multiple-choice questions in 55 minutes (40% of the score), usually in sets of three or four that share a primary or secondary source, plus 3 short-answer questions in 40 minutes (20%). Section II has a document-based question in 60 minutes (25%) and a long essay in 40 minutes (15%). The course runs from c. 1200 to the present in nine units; Units 3 to 6 are each 12% to 15% of the multiple-choice section and the other five units 8% to 10% each. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "55 questions, 55 minutes, 40% of score" },
+      { label: "Short answer", value: "3 questions, 40 minutes, 20%" },
+      { label: "Essays", value: "DBQ 60 minutes (25%), long essay 40 minutes (15%)" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Units", value: "9, from c. 1200 to the present" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+      { label: "Given by", value: "College Board, digital in the Bluebook app" },
+    ],
+    basedOn: "the College Board AP World History: Modern Course and Exam Description (effective fall 2026) and AP Central exam page",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-world-history/exam" },
+    tigertest:
+      "Tigertest has two full 55-question AP World History: Modern multiple-choice sections and six drills by unit, all free with no account required. The short-answer questions and essays are not included.",
+  },
+  aplang: {
+    answer:
+      "The AP English Language and Composition Exam is a fully digital, 3 hour 15 minute exam from the College Board. Section I has 45 multiple-choice questions in 60 minutes (45% of the score): 23 to 25 reading questions on nonfiction passages and 20 to 22 writing questions that ask how a draft could be revised, in five sets. Section II has three essays, synthesis, rhetorical analysis and argument, in 2 hours 15 minutes including a 15-minute reading period (55%). Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "45 questions, 60 minutes, 45% of score" },
+      { label: "Question types", value: "23-25 reading, 20-22 writing (revision)" },
+      { label: "Essays", value: "3 (synthesis, rhetorical analysis, argument), 2 hr 15 min, 55%" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Skill categories", value: "Rhetorical situation, claims and evidence, reasoning and organization, style" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+      { label: "Given by", value: "College Board, digital in the Bluebook app" },
+    ],
+    basedOn: "the College Board AP English Language and Composition Course and Exam Description (effective fall 2024) and AP Central exam page",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-english-language-and-composition/exam" },
+    tigertest:
+      "Tigertest has two full 45-question AP English Language multiple-choice sections and eight drills by skill category, all free with no account required. The essays are not included.",
+  },
+  phlet: {
+    answer:
+      "The Licensure Examination for Teachers (LET), officially the Licensure Examination for Professional Teachers (LEPT), is given by the Professional Regulation Commission (PRC) through the Board for Professional Teachers; a license is required to teach in Philippine schools. The elementary exam has two parts on one Sunday: General Education, 150 items from 8 to 10 a.m., and Professional Education, 150 items from 11 a.m. to 2 p.m. For elementary examinees without a specialization General Education is 40% of the rating and Professional Education 60%; secondary examinees, and elementary examinees with an early childhood or special needs specialization, also take a specialization part (20/40/40). To pass you need a general average of at least 75% with no rating below 50% in any part.",
+    rows: [
+      { label: "Run by", value: "PRC, Board for Professional Teachers" },
+      { label: "Elementary parts", value: "General Education 150 items, Professional Education 150 items" },
+      { label: "Time", value: "GenEd 2 hours (8 to 10 a.m.), ProfEd 3 hours (11 a.m. to 2 p.m.)" },
+      { label: "Weights (elementary)", value: "General Education 40%, Professional Education 60% (with a specialization, guides report 20/40/40)" },
+      { label: "Pass mark", value: "General average 75%, no part below 50%" },
+      { label: "Biggest area", value: "Curriculum, methods and educational technology, 45 of 150 ProfEd items" },
+      { label: "Sittings", value: "Usually twice a year (March and September); check PRC" },
+      { label: "Not modelled here", value: "Secondary and elementary specialization subjects" },
+    ],
+    basedOn: "PRC enhanced Table of Specifications for the LEPT (Board Resolution No. 11, s. 2022, Annex A, amended by Board Resolution No. 11, s. 2025), the PRC LEPT examination program and BPT Resolution No. 228, s. 1996, checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
 };

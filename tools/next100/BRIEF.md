@@ -1,7 +1,7 @@
 # Builder brief: one exam for the next-100 wave
 
 You build ONE practice exam for Tigertest. Up to ten builders work at once in the same checkout,
-`/home/user/driving-test-app` (branch `next100-batch2`), each on a different exam. The integrator
+`/home/user/driving-test-app` (branch `next100-batch3`), each on a different exam. The integrator
 applies shared-file changes, builds, screenshots and commits. Your exam's row is in the table at the
 bottom of this file and in `tools/next100/QUEUE.md`.
 
@@ -82,6 +82,11 @@ short.
   distractors so the key is sometimes the smallest or largest value (an overshooting error, an
   undershooting error). Across the bank the key should sit in an end slot about as often as chance
   (4 options about half the time, 5 options about 40%); otherwise test-wise candidates drop the ends.
+- Key-first, then sort: author every item's key as the first option and let build.py move it. If
+  the build sorts all-number options, it must find the key's value after sorting. One batch-2
+  bank wrote numeric options already ascending, so the smallest value was marked correct on 12
+  items. Before you finish, check each all-number item: the marked key must equal the value the
+  explanation arrives at.
 - `tools/validate_v2_bank.py` rewrites `lib/v2/bankSizes.ts`. Run it from a /tmp copy with that
   write stubbed out; put your bankSizes line in WIRING.md.
 - Duplicates: grep EVERY existing bank of your family (all India banks: ssccgl, rrbntpc, ibpspo,
@@ -94,38 +99,26 @@ short.
 - Hues: suggest one; the integrator settles clashes (rule: within 8 degrees of another theme,
   differ by 15 points of saturation or 8 of lightness; lightness 30 to 48%).
 
-## Batch 2
+## Batch 3
 
 | id | Test | Engine | Template | Region | slug | landing | suggested hue |
 |---|---|---|---|---|---|---|---|
-| sbiclerk | SBI Clerk (Junior Associates) Prelims | v2 | ibpsclerk | IN | /sbi-clerk | /sbi-clerk-prelims-practice-test | 205 75% 34% |
-| sbipo | SBI PO Prelims | v2 | ibpspo | IN | /sbi-po | /sbi-po-prelims-practice-test | 218 70% 30% |
-| ibpsrrb | IBPS RRB Office Assistant (Clerk) Prelims | v2 | ibpsclerk | IN | /ibps-rrb-clerk | /ibps-rrb-office-assistant-practice-test | 92 50% 30% |
-| biharpolice | Bihar Police Constable (CSBC) written exam | v2 | uppolice | IN | /bihar-police-constable | /bihar-police-constable-practice-test | 18 60% 40% |
-| rajpolice | Rajasthan Police Constable written exam | v2 | uppolice | IN | /rajasthan-police-constable | /rajasthan-police-constable-practice-test | 40 75% 34% |
-| delhipolice | Delhi Police Constable (Executive) CBE (SSC) | v2 | sscgd | IN | /delhi-police-constable | /delhi-police-constable-practice-test | 248 40% 36% |
-| mppolice | MP Police Constable (ESB) written exam | v2 | uppolice | IN | /mp-police-constable | /mp-police-constable-practice-test | 165 50% 30% |
-| apush | AP US History (multiple-choice section) | v2 | appsych | US | /ap-us-history | /ap-us-history-practice-test | 0 45% 38% |
-| apbio | AP Biology (multiple-choice section) | v2 | appsych | US | /ap-biology | /ap-biology-practice-test | 112 45% 34% |
-| phcse | Philippine Civil Service Exam (Professional and Subprofessional) | v2 | rrbntpc (one section) | PH | /civil-service-exam | /civil-service-exam-reviewer-practice-test | 222 60% 32% |
+| upscse | UPSC Civil Services Prelims, GS Paper I (with a CSAT drill) | v2 | rrbntpc | IN | /upsc-prelims | /upsc-prelims-practice-test | 28 45% 34% |
+| nda | NDA and NA exam (Mathematics + General Ability Test) | v2 | sscmts (two sections) | IN | /nda | /nda-exam-practice-test | 214 55% 32% |
+| agniveer | Agniveer Army CEE (General Duty) | v2 | rrbgroupd | IN | /agniveer-army | /agniveer-army-cee-practice-test | 95 40% 30% |
+| agniveervayu | Agniveer Vayu (Indian Air Force), Science group | v2 | sscmts (sections) | IN | /agniveer-vayu | /agniveer-vayu-practice-test | 205 60% 40% |
+| rrbalp | RRB ALP CBT 1 | v2 | rrbgroupd | IN | /rrb-alp | /rrb-alp-practice-test | 355 45% 34% |
+| rpfconst | RPF Constable CBT | v2 | rrbgroupd | IN | /rpf-constable | /rpf-constable-practice-test | 230 35% 34% |
+| ssccpo | SSC CPO (Sub-Inspector) Paper 1 | v2 | ssccgl | IN | /ssc-cpo | /ssc-cpo-practice-test | 262 40% 36% |
+| apworld | AP World History: Modern (multiple-choice section) | v2 | apush | US | /ap-world-history | /ap-world-history-practice-test | 30 30% 36% |
+| aplang | AP English Language and Composition (multiple-choice section) | v2 | apush (passage sets as stimuli) | US | /ap-english-language | /ap-english-language-practice-test | 200 25% 34% |
+| phlet | Philippines Licensure Examination for Professional Teachers (LET), General and Professional Education | v1 | tools/next30/rbt (v1 certification exam); idBase 13100, stateCode PHLET, prefix PHLET- | PH | /let-reviewer | /let-reviewer-practice-test | 160 45% 30% |
 
 Exam-specific notes:
-- `sbiclerk`, `sbipo`, `ibpsrrb`: confirm the latest official pattern from the SBI / IBPS notification
-  (sectional timing, counts, negative marking). Keep clear of ibpspo and ibpsclerk items.
-- State police exams: write General Hindi (Bihar, Rajasthan, MP) in Hindi like `uppolice`; state GK
-  is static facts about that state (history, geography, culture), never officeholders. Rajasthan's
-  paper has its own Rajasthan GK and computer sections; MP's ESB paper includes general science
-  and Hindi; Bihar's CSBC paper is Hindi, English, maths, science, social science and GK at class 10
-  level. Confirm each from the latest advertisement and date-stamp it. Physical tests not modelled.
-- `delhipolice`: SSC conducts it; reasoning, GK/current affairs (static only), quant and computer
-  fundamentals (MS Office, internet, email). Keep clear of the SSC banks.
-- `apush`, `apbio`: the current College Board course and exam description (download the CED PDF);
-  model Section I only (APUSH: stimulus-based sets of 3 or 4 on original primary-source-style excerpts
-  you write yourself, never real copyrighted passages beyond short public-domain quotes; AP Bio:
-  data and experiment sets). Free response not modelled; landing says so. Score as percent with a
-  note on the 1 to 5 scale. Put both, and appsych, into a new hub group "AP exams" in WIRING.md.
-- `phcse`: CSC's Career Service Examination, Pen and Paper (CSE-PPT) Professional and
-  Subprofessional: verbal, analytical, numerical ability, clerical (Subprofessional), and general
-  information (Philippine Constitution, RA 6713 Code of Conduct, peace and human rights, environment).
-  One bank serving both levels; say how they differ. US spelling as used in the Philippines, pesos.
+- India exams: the India bank family is now 18 banks; check against all of them while writing (see the list in REVIEW.md). Confirm each pattern from the latest official notification (UPSC, NDA via upsc.gov.in; Agniveer via joinindianarmy.nic.in and agnipathvayu.cdac.in; RRB CEN notices on the RRB regional sites; SSC via ssc.gov.in/api/attachment PDFs).
+- `upscse`: GS Paper I only for the tests (100 questions, 2 hours, 2 marks, 1/3 negative); CSAT Paper II is qualifying (33%), so offer it as one drill of comprehension, reasoning and basic numeracy, not a full test. Static GK only, never current affairs or office-holders.
+- `nda`: two sections like the real papers (Maths 120 in 150 min, GAT 150 in 150 min); model shorter at the real pace if needed and say so.
+- `agniveervayu`: Science subjects group (English, Physics, Mathematics); the Other-than-Science and combined options are not modelled; say so.
+- `apworld`, `aplang`: download the current CED PDF; Section I only; original stimuli (practice texts attributed to a kind of writer, never real copyrighted passages beyond short public-domain quotes). AP English Language passages are original nonfiction prose; the reading and writing (revision) item types both appear. Add both to the "AP exams" hub group.
+- `phlet`: PRC's LET, General Education and Professional Education parts (Elementary level; the Secondary major is not modelled). Philippine context, US spelling, pesos. Confirm the current PRC table of specifications and passing rule (75 general average, no rating below 50).
 

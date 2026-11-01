@@ -31,11 +31,16 @@ the lowest or highest slot about as often as chance (4 options: about half the t
 5 options: about 40%). Fix by choosing plausible distractors so the key is sometimes the smallest or
 largest value (common errors that overshoot, or that undershoot), never by unlocking the order.
 
+## 2c. Number keys match their explanations
+For every item whose options are all numbers, confirm the marked key equals the value the
+explanation arrives at (one bank had 12 items where the build marked the smallest value instead).
+
 ## 3. Duplicates across the wave
 Compare against every bank in your family: all India banks in `data/v2/` (ssccgl, rrbntpc, ibpspo,
 ctet, rrbgroupd, sscgd, sscchsl, sscmts, uppolice, ibpsclerk, jnvst, sbiclerk, sbipo, ibpsrrb,
-biharpolice, rajpolice, delhipolice, mppolice), the US school banks (appsych, apush, apbio, sat, act,
-psat, ged), and for phcse also the other Philippines and general aptitude banks. Compare your stems against all of them (normalised text,
+biharpolice, rajpolice, delhipolice, mppolice, upscse, nda, agniveer, agniveervayu, rrbalp, rpfconst,
+ssccpo), the US school banks (appsych, apush, apbio, apworld, aplang, sat, act, psat, ged, praxis), and
+the Philippines banks (phcse, phlet, and `data/philippines-lto-questions.json`). Compare your stems against all of them (normalised text,
 same numbers, same key fact). Rewrite YOUR item when it duplicates or near-duplicates another bank's
 item with the same numbers or the same fact and answer. Generic templates with different content
 are fine.

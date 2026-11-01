@@ -13,13 +13,14 @@ import { useTestLanguage } from "@/hooks/useTestLanguage";
  * question generators, plus what the dashboard's language choice needs.
  */
 export function useLocalizedExam(source: ExamConfig) {
-  const { lang, offered, setLang } = useTestLanguage(source.id, examLanguages(source), examBaseLanguage(source));
+  const { lang, offered, picked, setLang } = useTestLanguage(source.id, examLanguages(source), examBaseLanguage(source));
   return {
     exam: localizeExam(source, lang),
     routes: getExamRoutes(source.id, lang),
     ui: examUi(lang),
     lang,
     testLanguages: offered,
+    testLanguagePicked: picked,
     setTestLanguage: setLang,
   };
 }

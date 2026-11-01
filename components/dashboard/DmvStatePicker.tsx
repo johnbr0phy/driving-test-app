@@ -15,6 +15,8 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
 import { trackStateSelected } from "@/lib/analytics";
 import { trackFunnelStep } from "@/lib/funnel";
+import type { Language } from "@/i18n";
+import { LanguageLabel, TestLanguageChoice, TestSettingsLine } from "@/components/TestLanguageChoice";
 
 function useDmvStateChoice() {
   const { t } = useTranslation();
@@ -93,30 +95,65 @@ export function DmvStatePrompt({ nudge = 0 }: { nudge?: number }) {
 }
 
 /** One line in the dashboard hero: the chosen state and a Change control. */
-export function DmvStateLine() {
+/** The question-language part of a dashboard's settings (hooks/useTestLanguage.ts). */
+export type TestLanguageSetting = {
+  offered: Language[];
+  value: Language;
+  onChange: (lang: Language) => void;
+  /** Picked for this test, or the test is already under way: fold it into the line. */
+  settled: boolean;
+};
+
+export function DmvStateLine({ language }: { language?: TestLanguageSetting }) {
   const { t } = useTranslation();
   const { selectedState, choose } = useDmvStateChoice();
   const name = states.find((s) => s.code === selectedState)?.name;
   if (!selectedState || !name) return null;
 
+  const stateSelect = (trigger: React.ReactNode, triggerClass: string) => (
+    <Select onValueChange={choose} value={selectedState}>
+      <SelectTrigger aria-label={`${t("common.change")} (${name})`} className={triggerClass}>
+        {trigger}
+      </SelectTrigger>
+      <SelectContent>
+        {states.map((s) => (
+          <SelectItem key={s.code} value={s.code}>
+            {s.name}
+          </SelectItem>
+        ))}
+      </SelectContent>
+    </Select>
+  );
+  const choosesLanguage = !!language && language.offered.length > 1;
+
+  // State and language chosen: one line, both choices behind Change.
+  if (choosesLanguage && language.settled) {
+    return (
+      <TestSettingsLine
+        summary={
+          <>
+            {name} · <LanguageLabel lang={language.value} />
+          </>
+        }
+      >
+        {stateSelect(<SelectValue />, "h-9 w-full text-sm")}
+        <TestLanguageChoice offered={language.offered} value={language.value} onChange={language.onChange} className="justify-start" />
+      </TestSettingsLine>
+    );
+  }
+
   return (
-    <div className="mt-3 pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between gap-3 text-xs">
-      <span className="font-semibold text-gray-800 dark:text-gray-100 min-w-0">{name}</span>
-      <Select onValueChange={choose} value={selectedState}>
-        <SelectTrigger
-          aria-label={`${t("common.change")} (${name})`}
-          className="w-auto h-auto px-0 py-1 -my-1 border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand-dark font-medium text-xs gap-1 flex-shrink-0"
-        >
-          {t("common.change")}
-        </SelectTrigger>
-        <SelectContent>
-          {states.map((s) => (
-            <SelectItem key={s.code} value={s.code}>
-              {s.name}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
-    </div>
+    <>
+      <div className="mt-3 pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between gap-3 text-xs">
+        <span className="font-semibold text-gray-800 dark:text-gray-100 min-w-0">{name}</span>
+        {stateSelect(
+          t("common.change"),
+          "w-auto h-auto px-0 py-1 -my-1 border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand-dark font-medium text-xs gap-1 flex-shrink-0"
+        )}
+      </div>
+      {choosesLanguage && (
+        <TestLanguageChoice offered={language.offered} value={language.value} onChange={language.onChange} className="mt-3" />
+      )}
+    </>
   );
 }

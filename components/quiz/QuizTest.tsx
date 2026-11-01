@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Clock } from "lucide-react";
 import { QuestionCard } from "@/components/QuestionCard";
-import { TestPageHeader } from "@/components/TestPageHeader";
+import { FocusBar } from "@/components/FocusBar";
 import { useHydration } from "@/hooks/useHydration";
 import { shuffleQuestionOptions } from "@/lib/shuffleOptions";
 import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
@@ -168,8 +168,12 @@ export function QuizTest({ code }: { code: string }) {
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <TestPageHeader
-        backHref={quizDashboardPath(code)}
+      <FocusBar
+        exitHref={quizDashboardPath(code)}
+        title={quiz.title}
+        subtitle={`Question ${index + 1} of ${total}`}
+        progress={Object.keys(answers).length / total}
+        confirmExit
         right={
           <span className="inline-flex items-center gap-1.5 text-sm tabular-nums text-gray-700 dark:text-gray-200" aria-label="Time elapsed">
             <Clock className="w-4 h-4" aria-hidden="true" />
@@ -178,9 +182,6 @@ export function QuizTest({ code }: { code: string }) {
         }
       />
       <div className="relative container mx-auto px-4 py-8 max-w-lg md:max-w-2xl lg:max-w-4xl">
-        <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
-          {quiz.title} · Question {index + 1} of {total}
-        </p>
         <div className="mb-6">
           <QuestionCard key={current.questionId} question={current} selectedAnswer={answers[current.questionId]} onAnswerChange={answer} />
         </div>

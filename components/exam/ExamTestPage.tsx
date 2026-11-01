@@ -10,7 +10,7 @@ import Link from "next/link";
 import { QuestionCard } from "@/components/QuestionCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { TestPageHeader } from "@/components/TestPageHeader";
+import { FocusBar } from "@/components/FocusBar";
 import { generateExamTest, shuffleQuestionOptions } from "@/lib/examTestGenerator";
 import { ExamConfig } from "@/lib/exams";
 import { Question } from "@/types";
@@ -139,8 +139,12 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <TestPageHeader
-        backHref={routes.dashboard}
+      <FocusBar
+        exitHref={routes.dashboard}
+        title={ui.examTestN(exam.shortName, testNumber)}
+        subtitle={`${t("questionCard.questionOf")} ${currentQuestionIndex + 1} ${t("questionCard.of")} ${questions.length}`}
+        progress={Object.keys(answers).length / questions.length}
+        confirmExit
         right={
           !isGuest ? (
             <Link

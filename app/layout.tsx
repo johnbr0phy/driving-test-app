@@ -2,7 +2,7 @@ import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
-import { HeaderSwitch } from "@/components/HeaderSwitch";
+import { SiteHeader } from "@/components/SiteHeader";
 import { Footer } from "@/components/Footer";
 import { Providers } from "@/components/Providers";
 import { SuperAmazingFireworks } from "@/components/SuperAmazingFireworks";
@@ -112,7 +112,7 @@ export default function RootLayout({
         <Providers>
           <SuperAmazingFireworks />
           <a href="#main-content" className="skip-link">Skip to main content</a>
-          <HeaderSwitch />
+          <SiteHeader />
           <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col">{children}</main>
           <Footer />
         </Providers>

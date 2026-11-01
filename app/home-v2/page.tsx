@@ -18,7 +18,7 @@ export default async function HomeV2Page() {
   const saved = (await cookies()).get(REGION_COOKIE)?.value;
   const region: Region = isRegion(saved) ? saved : regionFromCountry((await headers()).get("x-vercel-ip-country")) ?? "US";
 
-  const { tests } = await getPopularTests(500);
+  const { tests, totalAnswered } = await getPopularTests(500);
   const popularity: Record<string, number> = {};
   for (const p of tests) popularity[p.test.id] = p.answered ?? 0;
 
@@ -40,5 +40,5 @@ export default async function HomeV2Page() {
     if (!trending.includes(name)) trending.push(name);
   }
 
-  return <SearchHome initialRegion={region} popularity={popularity} trending={trending} />;
+  return <SearchHome initialRegion={region} popularity={popularity} trending={trending} answeredThisWeek={totalAnswered} />;
 }

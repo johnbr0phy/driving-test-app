@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { TrainingCard } from "@/components/TrainingCard";
-import { TestPageHeader } from "@/components/TestPageHeader";
+import { FocusBar } from "@/components/FocusBar";
 import { Fireworks } from "@/components/Fireworks";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
@@ -205,7 +205,7 @@ export function QuizPractice({ code }: { code: string }) {
         </div>
       )}
 
-      <TestPageHeader backHref={home} right={<span className="text-sm text-gray-600 dark:text-gray-300 truncate max-w-[12rem]">{quiz.title}</span>} />
+      <FocusBar exitHref={home} title={quiz.title} />
       <div className="relative container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
         {current ? (
           <TrainingCard key={current.questionId} question={current} selectedAnswer={selected} onAnswerSelect={answer} onNext={loadNext} />

@@ -18,7 +18,7 @@ import { useSound } from "@/hooks/useSound";
 import { Fireworks } from "@/components/Fireworks";
 import { AchievementCelebration } from "@/components/AchievementCelebration";
 import { AccessibleOverlay } from "@/components/AccessibleOverlay";
-import { TestPageHeader } from "@/components/TestPageHeader";
+import { FocusBar } from "@/components/FocusBar";
 import Link from "next/link";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useAuth } from "@/contexts/AuthContext";
@@ -362,8 +362,11 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
         </AccessibleOverlay>
       )}
 
-      <TestPageHeader
-        backHref={routes.dashboard}
+      <FocusBar
+        exitHref={routes.dashboard}
+        title={isSetMode ? setLabel : exam.shortName}
+        subtitle={isSetMode && progress ? `${progress.correct}/${progress.total} ${t("trainingPage.questionsCorrect")}` : undefined}
+        progress={isSetMode && progress && progress.total > 0 ? progress.correct / progress.total : undefined}
         right={
           !isGuest ? (
             <Link

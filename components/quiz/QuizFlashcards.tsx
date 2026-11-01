@@ -8,7 +8,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { Check, RotateCcw, Shuffle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { TestPageHeader } from "@/components/TestPageHeader";
+import { FocusBar } from "@/components/FocusBar";
 import { useHydration } from "@/hooks/useHydration";
 import { recordQuizPlayOnce } from "@/lib/quizProgress";
 import { quizDashboardPath, quizQuestionId, type QuizQuestion } from "@/lib/quizzes";
@@ -102,8 +102,9 @@ export function QuizFlashcards({ code }: { code: string }) {
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <TestPageHeader
-        backHref={home}
+      <FocusBar
+        exitHref={home}
+        title={quiz.title}
         right={
           <button
             type="button"

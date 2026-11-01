@@ -460,7 +460,8 @@ const SEARCH_ALIASES: Record<string, string> = {
   pkdrive: "pakistan driving license test driving licence test pakistan e sign test esign test punjab sign test road signs pakistan traffic signs test dlims dastak learner permit islamabad driving license test itp karachi driving license sindh kpk driving license test lahore rawalpindi peshawar quetta motorway police nhmp",
 };
 
-function haystack(t: TestCatalogEntry): string {
+/** Everything a test can be found by (names, org, blurb, aliases), lowercased. */
+export function haystack(t: TestCatalogEntry): string {
   return [t.shortName, t.name, t.org, t.blurb, SEARCH_ALIASES[t.id] ?? ""].join(" ").toLowerCase();
 }
 

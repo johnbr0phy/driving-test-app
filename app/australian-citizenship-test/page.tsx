@@ -179,7 +179,7 @@ export default function AustralianCitizenshipLandingPage() {
                 {contentAreas.map((area) => (
                   <div key={area.name} className="flex items-center justify-between bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
                     <span className="font-medium text-gray-900 dark:text-gray-50">{area.name}</span>
-                    <span className="text-brand-dark font-semibold whitespace-nowrap ml-3">{area.weight}</span>
+                    <span className="text-right text-brand-dark font-semibold sm:whitespace-nowrap ml-3">{area.weight}</span>
                   </div>
                 ))}
               </div>

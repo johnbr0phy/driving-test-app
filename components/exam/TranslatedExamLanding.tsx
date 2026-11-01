@@ -157,7 +157,7 @@ export function TranslatedExamLanding({
             {c.facts.rows.map((row) => (
               <div key={row.label} className="flex justify-between gap-4 py-3 border-b border-gray-200 dark:border-gray-800">
                 <dt className="shrink-0 text-gray-500 dark:text-gray-400">{row.label}</dt>
-                <dd className="text-right font-medium text-gray-900 dark:text-gray-50">{row.value}</dd>
+                <dd className="min-w-0 text-right font-medium text-gray-900 dark:text-gray-50">{row.value}</dd>
               </div>
             ))}
           </dl>

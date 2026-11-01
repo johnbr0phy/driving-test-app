@@ -11,7 +11,7 @@
 //   4. Mistake notebook: every question got wrong, to retry in place.
 //
 // Premium is switched off for now (V2_STATS_PAYWALL): everything is free.
-// When on, US exams lock the plan past #1 and the notebook past two rows.
+// When on, every exam locks the plan past #1 and the notebook past two rows.
 // Common Mistakes (?tab=community) appears once the nightly cron has enough
 // answers for the exam.
 
@@ -34,11 +34,11 @@ import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { useCommunityAvailable, useExamCommunityStats } from "@/hooks/useCommunityStats";
 import { isClassStudent } from "@/lib/classProgress";
-import { regionOfTest } from "@/lib/region";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { PaywallModal } from "@/components/PaywallModal";
 import { GatedStatsList, LockedPreview, STATS_FREE_ROWS, StatsPageShell, StatsTab, StatsTabs } from "@/components/stats/StatsParts";
 import { V2StatsRow, plainStem } from "./V2StatsRow";
+import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
 /** Whether v2 stats sell Premium. Off: the whole plan and notebook are free. */
 const V2_STATS_PAYWALL = false;
@@ -56,6 +56,7 @@ export function StatsV2({ exam }: { exam: ExamV2Config }) {
 }
 
 function StatsV2Content({ exam }: { exam: ExamV2Config }) {
+  const price = usePremiumPrice();
   const routes = v2Routes(exam);
   const router = useRouter();
   const hydrated = useHydration();
@@ -68,12 +69,12 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   const isGuest = useStore((s) => s.isGuest || !s.userId);
 
   // Premium gate, off for now (Oct 31, 2026): every v2 stat is free. Flip
-  // V2_STATS_PAYWALL to bring back the v1 rule (US exams locked past the #1
-  // topic and two mistakes; class students and other countries free).
+  // V2_STATS_PAYWALL to bring back the v1 rule (locked past the #1 topic and
+  // two mistakes in every country; class students free).
   const { isPremium: paid, ready: premiumReady } = useIsPremium();
   const [inClass, setInClass] = useState(false);
   useEffect(() => setInClass(isClassStudent(exam.id)), [exam.id]);
-  const unlocked = !V2_STATS_PAYWALL || regionOfTest(exam.id) !== "US" || paid || inClass;
+  const unlocked = !V2_STATS_PAYWALL || paid || inClass;
   const upgrade = useUpgradeFlow(`${exam.id}_stats`, routes.stats);
   const openPaywall = (item: string, label: string) =>
     upgrade.openPaywall("full_stats", `${V2_PAYWALL_PREFIX}${exam.id}_${item}`, `${exam.shortName} ${label}`);
@@ -133,7 +134,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
           `Your full ${exam.shortName} study plan, every topic ranked by the points it's worth`,
           "The exact skills you keep missing in each topic",
           "Every mistake saved, to retry until it sticks",
-          "Full stats on every US exam, the DMV included",
+          "Full stats on every exam, the DMV included",
           "One payment, yours forever",
         ]}
         isGuest={isGuest}
@@ -237,7 +238,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                       }))}
                       title={lockedGain > 0 ? `${lockedPlan.length} more topics worth an estimated ${pct ? `+${lockedGain}%` : `+${lockedGain}\u00a0pts`}` : `${lockedPlan.length} more topics in your plan`}
                       subtitle="See every topic ranked by the points it's worth, and the exact skills you miss"
-                      cta="Unlock your full plan · $9.99"
+                      cta={`Unlock your full plan · ${price}`}
                       onUnlock={() => openPaywall("stats_plan", "Study Plan")}
                     />
                   )}
@@ -312,7 +313,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                     }))}
                     title={`${mistakes.length - FREE_MISTAKES} more mistakes saved`}
                     subtitle="Retry every question you've missed until it sticks"
-                    cta="Unlock Premium for $9.99"
+                    cta={`Unlock Premium for ${price}`}
                     onUnlock={() => openPaywall("stats_mistakes", "Mistake Notebook")}
                   />
                 )}

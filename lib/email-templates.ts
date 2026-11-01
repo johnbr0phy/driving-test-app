@@ -232,7 +232,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "Safety &amp; Emergencies and State Laws, 100 questions",
           "Practice tests C and D",
           "Every question you miss, on repeat",
-          "Full stats on every US exam you take next",
+          "Full stats on every exam you take next",
         ]),
         cta(DASH(v, "paywall_abandon"), "Pick Up Where You Left Off"),
         p("One payment, no subscription. A retest costs more."),
@@ -256,7 +256,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "Safety &amp; Emergencies and State Laws, 100 more questions",
           "Practice tests C and D",
           "Your stats page, showing what you always get wrong",
-          "Full stats on every US exam, not just this one",
+          "Full stats on every exam, not just this one",
         ]),
         cta(DASH(v, "upgrade_pitch"), "Upgrade to Premium - $9.99"),
         signoff(),
@@ -265,7 +265,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
 
   // Sent by the Stripe webhook the moment a purchase lands. Transactional, so
   // no unsubscribe link. Premium is the DMV's extra sets and tests plus the
-  // full stats page of every US exam (the SAT and ACT went free Oct 31, 2026,
+  // full stats page of every exam in every country (the SAT and ACT went free Oct 31, 2026,
   // so no v2 exam is sold any more). A buyer who paid from an exam's stats
   // page (v.id is that exam) is led back to those stats; everyone else gets
   // the DMV unlock first.
@@ -282,7 +282,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         : `${link(v.statsPath, `${v.shortName} stats`)}: every question you've answered, sorted by what you keep missing`
       : null;
     const dmvLine = `${link("/dmv/dashboard", "DMV permit test")}: Safety &amp; Emergencies and State Laws, practice tests C and D, and your stats page`;
-    const everyLine = "Full stats on every other US exam on Tigertest, from the CDL to nursing and real estate";
+    const everyLine = "Full stats on every other exam on Tigertest, in every country, from the CDL to nursing and real estate";
     const lines = examLine ? [examLine, everyLine, dmvLine] : [dmvLine, everyLine];
 
     return emailShell({

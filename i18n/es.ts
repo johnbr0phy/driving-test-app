@@ -1686,7 +1686,7 @@ export const es: TranslationKeys = {
       "Ve lo que sigues fallando",
       "Ve tu precisión en cada pregunta",
       "Las 50 preguntas que más gente falla",
-      "Estadísticas completas en todos los exámenes de EE. UU., no solo el DMV",
+      "Estadísticas completas en todos los exámenes, no solo el DMV",
       "Un solo pago, tuyo para siempre",
     ],
     oneTimePayment: "pago único",

@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getStripe, PREMIUM_PRICE_ID, PREMIUM_PRODUCT } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isPaywallVariant } from '@/lib/paywallTestIds';
+import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
+import { visitorCountry } from '@/lib/server/visitorCountry';
 
 export async function POST(request: NextRequest) {
   try {
@@ -76,18 +78,23 @@ export async function POST(request: NextRequest) {
     // Determine the base URL for redirects
     const baseUrl = returnUrl || process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
 
+    // Charge in the buyer's currency, the price the paywall showed them
+    // (lib/pricing.ts, both from the IP country). Dollars keep the Stripe price.
+    const country = visitorCountry(request);
+    const price = premiumPriceFor(country);
+
     // Create Checkout Session
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       mode: 'payment',
       payment_method_types: ['card'],
       line_items: [
-        PREMIUM_PRICE_ID
+        PREMIUM_PRICE_ID && price.currency === 'usd'
           ? { price: PREMIUM_PRICE_ID, quantity: 1 }
           : {
               price_data: {
-                currency: 'usd',
-                unit_amount: PREMIUM_PRODUCT.price,
+                currency: price.currency,
+                unit_amount: stripeUnitAmount(price),
                 product_data: {
                   name: PREMIUM_PRODUCT.name,
                   description: PREMIUM_PRODUCT.description,
@@ -102,6 +109,7 @@ export async function POST(request: NextRequest) {
         userId,
         email,
         ...(location && { location }),
+        ...(country && { country }),
         // Which side of the English paywall test (lib/paywallTest.ts) the buyer saw.
         ...(isPaywallVariant(paywallVariant) && { paywallVariant }),
       },

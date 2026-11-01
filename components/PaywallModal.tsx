@@ -16,6 +16,7 @@ import Image from "next/image";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { SupportPaywallModal } from "@/components/SupportPaywallModal";
 import { paywallVariant, recordPaywallTestView, type PaywallVariant } from "@/lib/paywallTest";
+import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
 interface PaywallModalProps {
   open: boolean;
@@ -46,6 +47,7 @@ export function PaywallModal({
   badge,
   hideSocialProof = false,
 }: PaywallModalProps) {
+  const price = usePremiumPrice();
   const { t, language } = useTranslation();
   const dict =
     language === "es" ? es : language === "vi" ? vi : language === "ko" ? ko : language === "zh" ? zh : en;
@@ -133,7 +135,7 @@ export function PaywallModal({
         {!(isNative && !isGuest) && (
           <div className="mb-5">
             <div className="flex items-baseline justify-between">
-              <span className="text-4xl font-bold text-gray-900 dark:text-gray-50">$9.99</span>
+              <span className="text-4xl font-bold text-gray-900 dark:text-gray-50">{price}</span>
               {badge !== null && (
                 <span className="border border-brand text-brand-dark text-xs font-semibold px-3 py-1 rounded-full">
                   {badge ?? t("paywall.cheaperThanRetest")}

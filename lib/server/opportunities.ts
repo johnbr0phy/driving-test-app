@@ -8,6 +8,7 @@ import { shareDailyCounts } from '@/lib/shareCounts';
 import { paywallHitFeature, purchaseExam, purchaseLocationLabel } from '@/lib/purchaseAttribution';
 import { PAYWALL_TEST_ID, PAYWALL_VARIANTS } from '@/lib/paywallTestIds';
 import { REGIONS, regionFromCountry, regionOfTest, type TestRegion } from '@/lib/region';
+import { paymentNetUsdCents } from '@/lib/pricing';
 
 // The /admin Today tab: where the next dollar and the next user come from.
 // The /admin Growth tab says how the site is doing; this page says what to do about it:
@@ -291,7 +292,6 @@ export async function buildOpportunities(
     const userId = typeof p.userId === 'string' ? p.userId : null;
     if ((userId && internalUids.has(userId)) || isInternalEmail(p.email as string | undefined)) continue;
     if (userId) paidUserIds.add(userId);
-    const amount = typeof p.amount === 'number' ? p.amount : 0;
     const refunded = Math.max(
       typeof p.refundedCents === 'number' ? p.refundedCents : 0,
       stripeFacts.refundedByPaymentIntent.get(doc.id) || 0,
@@ -306,8 +306,9 @@ export async function buildOpportunities(
     }
     payments.push({
       day: dayKey(p.createdAt),
-      net: Math.max(0, amount - refunded),
-      refunded,
+      // Both in US cents, whatever the buyer paid in (lib/pricing.ts).
+      net: paymentNetUsdCents(p, refunded),
+      refunded: paymentNetUsdCents(p, 0) - paymentNetUsdCents(p, refunded),
       location,
       exam: typeof p.exam === 'string' ? p.exam : purchaseExam(location),
       userId,

@@ -2,9 +2,10 @@
 
 // Shared stats page for registry exams: the DMV "Your Stats" tab, every
 // question in the bank as a re-answerable QuizRow sortable by what you keep
-// missing. On US exams it is Premium-gated like the DMV page (the first few
-// rows free, the rest behind the paywall), except for students in a class on
-// this exam; other countries' exams stay free (checkout is US dollars). A
+// missing. It is Premium-gated like the DMV page (the first few rows free,
+// the rest behind the paywall) on every exam, in every country (priced in the
+// visitor's currency, lib/pricing.ts), except for students in a class on this
+// exam. A
 // Common Mistakes tab joins it once the exam has enough answers
 // (lib/communityStats.ts); ?tab=community opens it, guests included.
 
@@ -18,7 +19,6 @@ import { auth } from "@/lib/firebase";
 import { trackBeginCheckout, trackDailyQuizAnswer, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
 import { isClassStudent } from "@/lib/classProgress";
-import { regionOfTest } from "@/lib/region";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { PaywallModal } from "@/components/PaywallModal";
 import { Question } from "@/types";
@@ -39,6 +39,7 @@ import {
   StatsTabs,
   accuracyChipColor,
 } from "@/components/stats/StatsParts";
+import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -65,6 +66,7 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
 }
 
 function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
+  const price = usePremiumPrice();
   const { exam, routes, ui, lang } = useLocalizedExam(source);
   const router = useRouter();
   const pathname = usePathname();
@@ -88,9 +90,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const showCommunity = communityOn && activeTab === "community";
   const [inClass, setInClass] = useState(false);
   useEffect(() => setInClass(isClassStudent(source.id) || (!!source.variantOf && isClassStudent(source.variantOf))), [source.id, source.variantOf]);
-  const usExam = regionOfTest(source.variantOf ?? source.id) === "US";
-  // Other countries' exams are never priced, so they never flash a lock while the store loads.
-  const isPremium = !usExam || (hydrated && (hasPremiumAccess() || inClass));
+  const isPremium = hydrated && (hasPremiumAccess() || inClass);
 
   // Paywall hits and checkouts are keyed "<examId>_stats" (the family id for a
   // state version, since the analytics keys allow no hyphens).
@@ -278,7 +278,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             benefits={[
               `See your accuracy on all ${examQuestions.length} ${exam.shortName} questions`,
               "See what you keep getting wrong, worst first",
-              "Full stats on every US exam, the DMV included",
+              "Full stats on every exam, the DMV included",
               "One payment, yours forever",
             ]}
             isGuest={isGuest}
@@ -336,7 +336,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             previewOf={(item) => ({ chip: chipFor(item), text: item.question.question })}
             lockTitle={`${sortedQuestions.length - STATS_FREE_ROWS} ${t("stats.moreQuestions")}`}
             lockSubtitle={t("stats.unlockPremiumStats")}
-            lockCta="Unlock Premium for $9.99"
+            lockCta={`Unlock Premium for ${price}`}
             onUnlock={() => { trackPaywallHit("stats_question_list", "Stats Question List", paywallLocation); trackViewItem(paywallLocation); setPaywallOpen(true); }}
           />
           </>)}

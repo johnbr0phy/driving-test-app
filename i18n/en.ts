@@ -1686,7 +1686,7 @@ export const en = {
       "See what you keep getting wrong",
       "See your accuracy on every question",
       "See the 50 questions most people fail",
-      "Full stats on every US exam, not just the DMV",
+      "Full stats on every exam, not just the DMV",
       "One payment, yours forever",
     ],
     oneTimePayment: "one-time payment",

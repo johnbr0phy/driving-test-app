@@ -1686,7 +1686,7 @@ export const vi: TranslationKeys = {
       "Xem những gì bạn cứ làm sai mãi",
       "Xem độ chính xác của bạn ở từng câu hỏi",
       "Xem 50 câu hỏi mà đa số hay làm sai nhất",
-      "Thống kê đầy đủ cho mọi kỳ thi tại Mỹ, không chỉ DMV",
+      "Thống kê đầy đủ cho mọi kỳ thi, không chỉ DMV",
       "Trả một lần, dùng mãi mãi",
     ],
     oneTimePayment: "thanh toán một lần",

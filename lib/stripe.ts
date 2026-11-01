@@ -13,12 +13,12 @@ export function getStripe(): Stripe {
   return stripeInstance;
 }
 
-// Price for premium access ($9.99)
+// Price for premium access in US dollars ($9.99); other currencies are priced
+// inline from lib/pricing.ts.
 export const PREMIUM_PRICE_ID = process.env.STRIPE_SINGLE_PRICE_ID;
 
 // Premium product metadata (used as fallback if no STRIPE_PRICE_ID configured)
 export const PREMIUM_PRODUCT = {
   name: 'Tigertest Premium',
-  description: 'One-time unlock: DMV Training Sets 3-4 and Practice Tests 3-4, plus full stats on every US exam',
-  price: 999, // $9.99 in cents
+  description: 'One-time unlock: DMV Training Sets 3-4 and Practice Tests 3-4, plus full stats on every exam',
 };

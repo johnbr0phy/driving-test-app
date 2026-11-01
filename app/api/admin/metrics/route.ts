@@ -6,6 +6,7 @@ import { isInternalEmail } from '@/lib/internal';
 import { getInternalUids } from '@/lib/server/internalUsers';
 import { TEST_REQUEST_PICKS } from '@/lib/test-requests';
 import type { DocumentSnapshot, QuerySnapshot } from 'firebase-admin/firestore';
+import { paymentNetUsdCents } from '@/lib/pricing';
 
 // Growth/revenue metrics for the /admin Growth tab. Everything here is derived from two
 // sources of truth: the users collection (signups, activity, subscription) and
@@ -167,7 +168,7 @@ async function buildMetrics() {
     // the $9.99 fallback below never counts them, but adds only what was kept.
     if (p.userId) paidUserIds.add(p.userId as string);
     if (p.status !== 'succeeded' && p.status !== 'partially_refunded') return;
-    const amount = (typeof p.amount === 'number' ? p.amount : 0) - (typeof p.refundedCents === 'number' ? p.refundedCents : 0);
+    const amount = paymentNetUsdCents(p, typeof p.refundedCents === 'number' ? p.refundedCents : 0);
     const day = typeof p.createdAt === 'string' ? dayKey(p.createdAt) : null;
     revenueAllTimeCents += amount;
     if (day) {

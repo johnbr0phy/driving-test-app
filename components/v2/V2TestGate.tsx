@@ -13,6 +13,7 @@ import { useIsPremium } from "@/hooks/useIsPremium";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
+import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
 /**
  * Stands in front of ExamRunner for a Premium test. A test the person
@@ -28,6 +29,7 @@ export function V2TestGate({
   testNumber: number;
   children: React.ReactNode;
 }) {
+  const price = usePremiumPrice();
   const hydrated = useHydration();
   const { isPremium, ready } = useIsPremium();
   const session = useV2Store((s) => s.sessions[sessionKey(exam.id, testNumber)]);
@@ -59,7 +61,7 @@ export function V2TestGate({
           onClick={() => paywall.open(`test_${testNumber}`, test?.name ?? `Practice Test ${testNumber}`)}
           className="mt-6 w-full rounded-xl bg-brand py-3.5 text-base font-bold text-white"
         >
-          Unlock with Premium{isNative ? "" : " · $9.99"}
+          Unlock with Premium{isNative ? "" : ` · ${price}`}
         </button>
         <Link href={routes.dashboard} className="mt-3 block text-sm font-semibold text-gray-500 dark:text-gray-400">
           Back to the dashboard

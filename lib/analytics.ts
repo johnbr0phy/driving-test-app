@@ -3,6 +3,8 @@ import { DMV_ANALYTICS_KEY, type ExamAnalyticsKey } from "@/lib/exams";
 import { getBrowserId, trackEnrollment } from "@/lib/enrollment";
 import { trackFunnelStep } from "@/lib/funnel";
 import { isInternalBrowser } from "@/lib/internal";
+import { knownPremiumPrice } from "@/lib/localPrice";
+import { USD_PRICE } from "@/lib/pricing";
 
 declare global {
   interface Window {
@@ -10,28 +12,27 @@ declare global {
   }
 }
 
-const PREMIUM_ITEM = {
-  item_id: "tigertest_premium",
-  item_name: "Tigertest Premium",
-  price: 9.99,
-  currency: "USD",
-  quantity: 1,
-};
+// GA4 value and currency: the visitor's local price once known (lib/localPrice.ts).
+function premiumValue() {
+  const p = knownPremiumPrice() ?? USD_PRICE;
+  const currency = p.currency.toUpperCase();
+  return {
+    currency,
+    value: p.amount,
+    items: [{ item_id: "tigertest_premium", item_name: "Tigertest Premium", price: p.amount, currency, quantity: 1 }],
+  };
+}
 
 export function trackViewItem(location?: string) {
   window.gtag?.("event", "view_item", {
-    currency: "USD",
-    value: 9.99,
-    items: [PREMIUM_ITEM],
+    ...premiumValue(),
     ...(location && { location }),
   });
 }
 
 export function trackBeginCheckout(location?: string) {
   window.gtag?.("event", "begin_checkout", {
-    currency: "USD",
-    value: 9.99,
-    items: [PREMIUM_ITEM],
+    ...premiumValue(),
     ...(location && { location }),
   });
 }
@@ -180,9 +181,7 @@ export function trackPaywallDismissed(location = "dashboard") {
 export function trackPurchase(transactionId: string) {
   window.gtag?.("event", "purchase", {
     transaction_id: transactionId,
-    currency: "USD",
-    value: 9.99,
-    items: [PREMIUM_ITEM],
+    ...premiumValue(),
   });
 }
 

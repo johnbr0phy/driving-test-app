@@ -1,0 +1,5414 @@
+{
+  "stimuli": [
+    {
+      "id": "SBIPO-T1-RC1",
+      "title": "Reading comprehension: passage 1",
+      "text": "Read the passage and answer the questions that follow.\n\nIndia grows more fruit and vegetables than almost any other country, yet a large share never reaches a plate. Tomatoes split in the heat of a truck, bananas ripen too fast in an open godown, and peas lose their sweetness long before they reach a market a few hundred kilometres away. The loss is counted in rupees, but it is also counted in the water, fertiliser and labour that went into growing food nobody eats.\n\nThe usual answer is a cold chain: a series of cooled spaces that carries produce from the field to the shop without a break. The weak link is rarely the large cold store in the city. It is the first mile, the hours between picking and the first cool room, when the produce is still warm from the field and most of the damage is done.\n\nSmall pack-houses near the farm, where crops are washed, sorted and pre-cooled, address exactly this gap. Some run on solar power and are owned by farmer producer organisations, so that the members share the cost. Farmers who use them report that they can wait for a better price instead of selling the same evening at whatever the trader offers.\n\nThe obstacle is less the machinery than its use through the year. A pack-house built for a single crop sits idle for months, and its owners struggle to repay the loan. Planners now favour units that can handle several crops in turn, so that the cooling never stops paying for itself."
+    },
+    {
+      "id": "SBIPO-T1-RC2",
+      "title": "Reading comprehension: passage 2",
+      "text": "Read the passage and answer the questions that follow.\n\nFor most of history, the question of how to pay for old age was answered by the family. Parents looked after their children, and children, in turn, looked after their parents. That arrangement is changing in India. Families are smaller, young people move to distant cities for work, and people live many years longer than their grandparents did.\n\nOnly a minority of workers, mostly in government or large companies, can count on a regular pension. The rest, including shopkeepers, farm workers and the self-employed, must save for themselves, and many do not start until they are well into middle age. By then, the power of compounding, which turns small, early savings into a large sum over decades, has had too little time to work.\n\nSeveral government-backed schemes now allow even a small monthly contribution, and digital payments have made it easier to keep paying without a trip to a branch. Yet enrolment is one thing and staying enrolled is another. A household that loses a month's income often stops contributing and never restarts.\n\nResearchers suggest a modest change in design: make the next payment automatic unless the saver chooses to stop. People tend to stick with whatever happens by default, and a habit that needs no fresh decision each month is far more likely to survive a difficult year."
+    },
+    {
+      "id": "SBIPO-T1-PJ",
+      "title": "Para jumble",
+      "text": "The six sentences below, labelled A to F, can be arranged to form a meaningful paragraph. Arrange them and answer the questions that follow.\n\nA. Her daughter suggested photographing the saris and listing them on a selling website.\n\nB. For thirty years, Meena sold the saris she wove only at the weekly market in her town.\n\nC. The first order came from a buyer in another state within a week.\n\nD. She was doubtful, since she had never sold anything to a customer she could not see.\n\nE. When the market was shut for several months, her income stopped almost overnight.\n\nF. Today, more than half of her sales are to people she has never met."
+    },
+    {
+      "id": "SBIPO-T1-CZ",
+      "title": "Cloze test",
+      "text": "Read the passage. Each numbered blank has a question below asking which word fits it best.\n\nWhen a bank decides whether to lend, it wants to know how a borrower has ........ (1) past loans. A credit score sums up that record in a single number. Paying instalments on time ........ (2) the score, while missed payments pull it down. Many young people are surprised to learn that having no record at all can be a ........ (3), because the lender has nothing to judge them by. A small loan or a credit card used ........ (4) and repaid in full can help build a record. Borrowers are also entitled to check their own report and ask for any error to be ........ (5). A wrong entry left ........ (6) can cost a borrower a loan years later."
+    },
+    {
+      "id": "SBIPO-T1-DI1",
+      "title": "Data interpretation: deposits by branch",
+      "text": "The table shows the fixed deposits (in ₹ lakh) received by five branches of a bank in two quarters.\n\n| Branch | Quarter 1 | Quarter 2 |\n|---|---|---|\n| K | 250 | 300 |\n| L | 320 | 288 |\n| M | 180 | 234 |\n| N | 400 | 440 |\n| O | 150 | 138 |"
+    },
+    {
+      "id": "SBIPO-T1-DI2",
+      "title": "Data interpretation: books sold",
+      "text": "The table shows the number of books sold by four shops in a month and the percentage of them sold online. Every book was sold either online or in the shop.\n\n| Shop | Books sold | Sold online (%) |\n|---|---|---|\n| W | 800 | 35 |\n| X | 640 | 25 |\n| Y | 900 | 40 |\n| Z | 560 | 50 |"
+    },
+    {
+      "id": "SBIPO-T1-PZ1",
+      "title": "Puzzle: floors and departments",
+      "text": "Seven persons K, L, M, N, P, R and T live on the seven floors of a building, one on each floor. The lowest floor is numbered 1 and the top floor 7. Each works in a different department: Loans, Audit, Treasury, IT, HR, Legal and Sales.\n\n- R lives on the middle floor.\n- Only two persons live between R and the person who works in Treasury.\n- N works in Treasury and lives above R.\n- L lives immediately below N.\n- The person who works in Audit lives on the lowest floor.\n- P works in Legal and lives immediately above the person who works in Audit.\n- Only one person lives between K and M, and K lives below M.\n- M works in IT and lives below R.\n- The person who works in HR lives immediately above R.\n- L does not work in Loans."
+    },
+    {
+      "id": "SBIPO-T1-PZ2",
+      "title": "Puzzle: circular seating",
+      "text": "Eight persons A, B, C, D, E, F, G and H sit around a circular table, equally spaced and all facing the centre, not necessarily in that order.\n\n- A sits opposite E.\n- C sits second to the left of A.\n- F sits between A and C.\n- H sits immediately to the right of E.\n- D sits immediately to the right of A.\n- B sits second to the right of D."
+    },
+    {
+      "id": "SBIPO-T1-PZ3",
+      "title": "Puzzle: training months and cities",
+      "text": "Six officers P, Q, R, S, T and U attend a training programme in six different months of the same year: January, March, April, June, September and November. Each goes to a different city: Delhi, Pune, Bhopal, Kochi, Ranchi and Shimla.\n\n- S goes to Bhopal and attends in the last of these months.\n- Only two persons attend between P and the person who goes to Bhopal.\n- The person who goes to Kochi attends in the first of these months.\n- T attends immediately after the person who goes to Kochi.\n- U attends immediately before R.\n- R goes to Ranchi.\n- P goes to neither Delhi nor Pune.\n- T does not go to Delhi."
+    },
+    {
+      "id": "SBIPO-T2-RC1",
+      "title": "Reading comprehension: passage 1",
+      "text": "Read the passage and answer the questions that follow.\n\nAlong parts of India's eastern coast, villages that sit behind a belt of mangrove forest have often come through cyclones better than villages a short distance away that have none. The trees do not stop a storm, but their tangled roots slow the water that a cyclone pushes onto the land, and the forest takes the first blow of the wind.\n\nFor decades, mangroves were treated as wasteland. They were cleared for fish and shrimp ponds, for salt pans and for new roads and houses. The ponds earned money quickly, but many were abandoned after a few years when disease struck or the soil turned too salty, leaving neither forest nor farm.\n\nReplanting has since become popular, and some projects have done well. Others have planted a single fast-growing species in neat rows on mudflats where mangroves never grew naturally, and most of the saplings died. Experts say the more reliable approach is to restore the flow of tidal water to areas where mangroves once stood, and let the forest return largely by itself.\n\nThe forests also support local livelihoods. Crabs, fish and honey from healthy mangroves provide income year after year, which gives villagers a reason to protect the forest long after a planting project has ended."
+    },
+    {
+      "id": "SBIPO-T2-RC2",
+      "title": "Reading comprehension: passage 2",
+      "text": "Read the passage and answer the questions that follow.\n\nEach year, millions of young Indians finish school or college and go looking for work, and employers in many industries still say they cannot find people with the right skills. The two complaints sound contradictory, but they point to the same gap: what is learnt in a classroom is often not what is needed on a factory floor or in a hospital ward.\n\nApprenticeships try to close that gap by letting a young person learn on the job while earning a stipend. The trainee works under an experienced employee, and the classroom part of the course is tied to tasks the trainee actually does. In countries where such training is common, a large share of apprentices are hired by the firm that trained them.\n\nIn India the numbers have grown, but they remain small for an economy of its size. Many smaller firms see apprentices as a cost rather than an investment, and fear that a worker they train will simply leave for a better offer. Large companies find the paperwork easier to manage.\n\nSupporters argue that the fear of losing trained workers is overstated. A trainee who has learnt the firm's own machines and methods is often more valuable to it than to anyone else, and many stay for that reason."
+    },
+    {
+      "id": "SBIPO-T2-PJ",
+      "title": "Para jumble",
+      "text": "The six sentences below, labelled A to F, can be arranged to form a meaningful paragraph. Arrange them and answer the questions that follow.\n\nA. They agreed to pool their milk and sell it together to a dairy in the nearest town.\n\nB. Each family in the village owned one or two cows and sold its milk to a trader who set the price.\n\nC. With a steady buyer, the society was soon able to install a cooling tank of its own.\n\nD. The price was low, and the families had no choice but to accept it.\n\nE. Some of them decided that the only way to bargain was as a group.\n\nF. Now the milk stays fresh for longer, and the society earns a better rate for it."
+    },
+    {
+      "id": "SBIPO-T2-CZ",
+      "title": "Cloze test",
+      "text": "Read the passage. Each numbered blank has a question below asking which word fits it best.\n\nMany Indian cities are replacing old diesel buses with electric ones. The new buses are quiet and give out no ........ (1) on the street, which matters in cities where the air is already heavily polluted. Their running costs are lower too, since electricity is cheaper per kilometre than diesel and the motors need less ........ (2). The main difficulty is the high price of the bus itself, most of which comes from the battery. To ........ (3) this, several cities now lease buses from private operators and pay them for every kilometre run, rather than buying the vehicles ........ (4). Charging also needs ........ (5) planning, because a large depot of buses can draw as much power as a small town. If the depot is not ready, new buses may stand ........ (6) for weeks."
+    },
+    {
+      "id": "SBIPO-T2-DI1",
+      "title": "Data interpretation: visitors to museums",
+      "text": "The table shows the number of visitors (in thousands) to five museums in 2024 and 2025.\n\n| Museum | 2024 | 2025 |\n|---|---|---|\n| A | 120 | 150 |\n| B | 200 | 170 |\n| C | 160 | 192 |\n| D | 90 | 117 |\n| E | 140 | 161 |"
+    },
+    {
+      "id": "SBIPO-T2-DI2",
+      "title": "Data interpretation: factory output",
+      "text": "The table shows the number of units made by four factories in a month and the ratio of units passed to units rejected at the quality check. Every unit was either passed or rejected.\n\n| Factory | Units made | Passed : Rejected |\n|---|---|---|\n| F1 | 1,200 | 9 : 1 |\n| F2 | 900 | 7 : 2 |\n| F3 | 1,500 | 4 : 1 |\n| F4 | 1,050 | 13 : 2 |"
+    },
+    {
+      "id": "SBIPO-T2-PZ1",
+      "title": "Puzzle: linear seating",
+      "text": "Eight persons J, K, L, M, N, O, Q and W sit in a straight row, all facing north, not necessarily in that order.\n\n- K sits fourth from the right end of the row.\n- Only two persons sit between K and Q.\n- Q does not sit at either end of the row.\n- M sits immediately to the left of Q.\n- N sits at one of the extreme ends of the row.\n- L sits immediately to the left of N.\n- O sits immediately to the left of K.\n- J is not an immediate neighbour of K."
+    },
+    {
+      "id": "SBIPO-T2-PZ2",
+      "title": "Puzzle: floors and cars",
+      "text": "Six persons Rohit, Sana, Tanvi, Uday, Vivek and Zara live on the six floors of a building, one on each floor. The lowest floor is numbered 1 and the top floor 6. Each owns a car of a different colour: White, Red, Blue, Silver, Black and Grey.\n\n- Tanvi lives on the top floor.\n- Only two persons live between Tanvi and the owner of the Blue car.\n- Zara owns the Blue car.\n- Rohit lives immediately above Zara and owns the Silver car.\n- The owner of the Black car lives immediately below Tanvi.\n- Sana lives on an even-numbered floor, and Vivek lives below Sana.\n- The owner of the Red car lives immediately above the owner of the White car."
+    },
+    {
+      "id": "SBIPO-T2-PZ3",
+      "title": "Puzzle: comparison of savings",
+      "text": "Six friends F, G, H, I, J and K have different amounts of savings.\n\n- F has more savings than J but less than K.\n- H has more savings than K.\n- G has more savings than only one person.\n- I has the least savings.\n- J has more savings than G."
+    },
+    {
+      "id": "SBIPO-D-RC",
+      "title": "Short passage",
+      "text": "Read the passage and answer the questions that follow.\n\nIn many villages the nearest bank branch is a bus ride away, and a day's wages can be lost just to deposit a small sum. Business correspondents help to fill this gap. They are local agents, often running a small shop, who open accounts, accept deposits and pay out withdrawals on behalf of a bank using a hand-held device.\n\nThe model works best where the agent is trusted and earns enough to stay in business. Where commissions are thin, agents tend to drift away to other work, and customers who had begun to save are left without a nearby point of service. Some banks now pay agents a small fixed amount each month as well as a commission, so that a quiet month does not drive them out."
+    },
+    {
+      "id": "SBIPO-D-DI",
+      "title": "Data interpretation: crop area",
+      "text": "The table shows the area (in hectares) sown with wheat and with mustard in four villages.\n\n| Village | Wheat | Mustard |\n|---|---|---|\n| Rampur | 360 | 120 |\n| Sitapur | 280 | 140 |\n| Devgarh | 450 | 90 |\n| Kalapur | 210 | 210 |"
+    },
+    {
+      "id": "SBIPO-D-PZ",
+      "title": "Puzzle: meeting schedule",
+      "text": "Five officers A, B, C, D and E each hold one meeting on a different day from Monday to Friday of the same week. Each meeting is on a different topic: Savings, Loans, Insurance, Pensions and Cards.\n\n- Only two meetings are held between C's meeting and B's meeting.\n- D's meeting is on Friday.\n- C's meeting is held before A's meeting.\n- E's meeting is immediately before A's meeting.\n- The Loans meeting is held immediately after C's meeting.\n- B's meeting is on Pensions.\n- The Cards meeting is the last of the week.\n- The Insurance meeting is not on Monday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "SBIPO-T1-001",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "SBIPO-T1-RC1",
+      "stem": "Which of the following best expresses the central idea of the passage?",
+      "options": [
+        "Solar power should run every cold store across India",
+        "City cold stores are the weakest link in the whole chain",
+        "Much produce spoils early, and cooling near the farm helps",
+        "Farmers should always sell their crops on the day of harvest",
+        "India grows too little fruit to feed its own people"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says most damage happens in the first mile and that pack-houses near the farm address that gap. It says India grows more produce than almost any country, and that the city cold store is rarely the weak link."
+    },
+    {
+      "id": "SBIPO-T1-002",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-T1-RC1",
+      "stem": "According to the passage, where is the weak link in the cold chain?",
+      "options": [
+        "The trucks that carry produce between states",
+        "The first hours between picking and cooling",
+        "The markets where traders set the price",
+        "The shops that sell produce to customers",
+        "The large cold stores in the cities"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Paragraph 2 says the weak link is rarely the city cold store but the first mile, the hours between picking and the first cool room."
+    },
+    {
+      "id": "SBIPO-T1-003",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "SBIPO-T1-RC1",
+      "stem": "Why can farmers who use pack-houses get a better price?",
+      "options": [
+        "They can store produce and wait to sell",
+        "Their crops grow faster after cooling",
+        "Their produce is sent straight abroad",
+        "The pack-house buys all their crops",
+        "Traders are required to pay them more"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Paragraph 3 says farmers can wait for a better price instead of selling the same evening at whatever the trader offers, which they can do only because the produce keeps."
+    },
+    {
+      "id": "SBIPO-T1-004",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-T1-RC1",
+      "stem": "What problem does the passage identify with pack-houses built for a single crop?",
+      "options": [
+        "They are too far away from the farms",
+        "They stand unused for much of the year",
+        "They damage the crops they are cooling",
+        "They cannot be run on solar power",
+        "They are too small for a whole village"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The last paragraph says a pack-house built for one crop sits idle for months and its owners struggle to repay the loan."
+    },
+    {
+      "id": "SBIPO-T1-005",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Vocabulary",
+      "stimulusId": "SBIPO-T1-RC1",
+      "stem": "Which word is most nearly the SAME in meaning as 'favour' as used in the passage?",
+      "options": [
+        "Request",
+        "Prefer",
+        "Oppose",
+        "Lend",
+        "Reward"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Planners now favour units that can handle several crops' means they prefer such units. 'Reward' is another sense of favour that does not fit here."
+    },
+    {
+      "id": "SBIPO-T1-006",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Vocabulary",
+      "stimulusId": "SBIPO-T1-RC1",
+      "stem": "Which word is most nearly OPPOSITE in meaning to 'idle' as used in the passage?",
+      "options": [
+        "Empty",
+        "Busy",
+        "Lazy",
+        "Closed",
+        "Quiet"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An idle pack-house is unused; the opposite is busy. Empty, quiet and closed are close to idle in meaning."
+    },
+    {
+      "id": "SBIPO-T1-007",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Title",
+      "stimulusId": "SBIPO-T1-RC2",
+      "stem": "Which of the following is the most suitable title for the passage?",
+      "options": [
+        "Saving for Old Age as Families Change",
+        "The End of Government Pensions",
+        "How Digital Payments Replaced Branches",
+        "Why Young People Move to the Cities",
+        "The History of the Joint Family"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage moves from the family's old role to the need for workers to save for themselves and how to keep them saving. The other titles pick out a single detail or something the passage does not say."
+    },
+    {
+      "id": "SBIPO-T1-008",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-T1-RC2",
+      "stem": "According to the passage, which workers can usually count on a regular pension?",
+      "options": [
+        "Those in government or large companies",
+        "Farm workers in most of the states",
+        "Anyone who holds a bank account",
+        "Shopkeepers and the self-employed",
+        "Workers who begin saving early"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Paragraph 2 says only a minority, mostly in government or large companies, can count on a regular pension."
+    },
+    {
+      "id": "SBIPO-T1-009",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "SBIPO-T1-RC2",
+      "stem": "According to the passage, why does starting to save late reduce the benefit?",
+      "options": [
+        "Older savers must pay much higher fees",
+        "Compounding has too little time to work",
+        "Schemes do not accept older members",
+        "Interest rates fall as savers grow older",
+        "Pension rules change every few years"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Paragraph 2 says that by middle age the power of compounding has had too little time to work."
+    },
+    {
+      "id": "SBIPO-T1-010",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-T1-RC2",
+      "stem": "What weakness of the savings schemes does the passage point out?",
+      "options": [
+        "They accept only large contributions",
+        "Many members stop paying after a bad month",
+        "They are open only to city residents",
+        "Too few people have ever heard of them",
+        "They need a visit to a branch each month"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Paragraph 3 says a household that loses a month's income often stops contributing and never restarts. The schemes allow small payments and work digitally."
+    },
+    {
+      "id": "SBIPO-T1-011",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "SBIPO-T1-RC2",
+      "stem": "The suggestion in the last paragraph relies on which tendency?",
+      "options": [
+        "People save more after a hard year",
+        "People save more when rates are high",
+        "People tend to stay with the default",
+        "People prefer cash to digital payments",
+        "People trust banks more than schemes"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The writer says people tend to stick with whatever happens by default, so an automatic payment is likely to continue."
+    },
+    {
+      "id": "SBIPO-T1-012",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Vocabulary",
+      "stimulusId": "SBIPO-T1-RC2",
+      "stem": "Which word is most nearly the SAME in meaning as 'modest' as used in the passage?",
+      "options": [
+        "Sudden",
+        "Humble",
+        "Costly",
+        "Shy",
+        "Small"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "'A modest change in design' is a small change. Humble and shy are senses of 'modest' that describe people."
+    },
+    {
+      "id": "SBIPO-T1-013",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Para jumble",
+      "stimulusId": "SBIPO-T1-PJ",
+      "stem": "Which sentence comes FIRST after rearrangement?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The correct order is B E A D C F. B sets the scene (thirty years at the weekly market); E shuts the market and stops her income; A gives the daughter's idea; D shows Meena's doubt; C brings the first order; F ends with 'Today'."
+    },
+    {
+      "id": "SBIPO-T1-014",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Para jumble",
+      "stimulusId": "SBIPO-T1-PJ",
+      "stem": "Which sentence comes THIRD after rearrangement?",
+      "options": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The correct order is B E A D C F. B sets the scene (thirty years at the weekly market); E shuts the market and stops her income; A gives the daughter's idea; D shows Meena's doubt; C brings the first order; F ends with 'Today'."
+    },
+    {
+      "id": "SBIPO-T1-015",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Para jumble",
+      "stimulusId": "SBIPO-T1-PJ",
+      "stem": "Which sentence comes FIFTH after rearrangement?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The correct order is B E A D C F. B sets the scene (thirty years at the weekly market); E shuts the market and stops her income; A gives the daughter's idea; D shows Meena's doubt; C brings the first order; F ends with 'Today'."
+    },
+    {
+      "id": "SBIPO-T1-016",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Para jumble",
+      "stimulusId": "SBIPO-T1-PJ",
+      "stem": "Which sentence comes LAST after rearrangement?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The correct order is B E A D C F. B sets the scene (thirty years at the weekly market); E shuts the market and stops her income; A gives the daughter's idea; D shows Meena's doubt; C brings the first order; F ends with 'Today'."
+    },
+    {
+      "id": "SBIPO-T1-017",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T1-CZ",
+      "stem": "Which word fits blank (1) best?",
+      "options": [
+        "handled",
+        "promised",
+        "borrowed",
+        "counted",
+        "lifted"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A bank wants to know how a borrower has handled, or managed, past loans. 'Borrowed past loans' repeats itself, and the other words do not fit."
+    },
+    {
+      "id": "SBIPO-T1-018",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T1-CZ",
+      "stem": "Which word fits blank (2) best?",
+      "options": [
+        "freezes",
+        "hides",
+        "lowers",
+        "fixes",
+        "raises"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The sentence contrasts on-time payments with missed payments that 'pull it down', so on-time payments raise the score."
+    },
+    {
+      "id": "SBIPO-T1-019",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T1-CZ",
+      "stem": "Which word fits blank (3) best?",
+      "options": [
+        "guarantee",
+        "shortcut",
+        "benefit",
+        "reward",
+        "drawback"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Having no record leaves the lender nothing to judge by, so it is a drawback. The young people are 'surprised', which rules out a benefit."
+    },
+    {
+      "id": "SBIPO-T1-020",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T1-CZ",
+      "stem": "Which word fits blank (4) best?",
+      "options": [
+        "wastefully",
+        "hastily",
+        "loosely",
+        "sensibly",
+        "secretly"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A card used sensibly and repaid in full builds a good record. Using it wastefully or hastily would not help."
+    },
+    {
+      "id": "SBIPO-T1-021",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T1-CZ",
+      "stem": "Which word fits blank (5) best?",
+      "options": [
+        "recorded",
+        "approved",
+        "repeated",
+        "ignored",
+        "corrected"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A borrower who finds an error asks for it to be corrected."
+    },
+    {
+      "id": "SBIPO-T1-022",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T1-CZ",
+      "stem": "Which word fits blank (6) best?",
+      "options": [
+        "unpaid",
+        "unwritten",
+        "unsigned",
+        "unchallenged",
+        "unopened"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A wrong entry that nobody disputes, left unchallenged, stays on the report and can cost a loan later."
+    },
+    {
+      "id": "SBIPO-T1-023",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fillers",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nThe committee decided to ........ the decision until all the members had read the report.",
+      "options": [
+        "refer",
+        "infer",
+        "defer",
+        "confer",
+        "differ"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Defer' means put off, which fits 'until all the members had read the report'. Differ, refer, infer and confer look alike but mean something else."
+    },
+    {
+      "id": "SBIPO-T1-024",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fillers",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nDespite the heavy rain, the match went ahead as .........",
+      "options": [
+        "delayed",
+        "abandoned",
+        "scheduled",
+        "postponed",
+        "cancelled"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Despite' signals that the match was not affected, so it went ahead as scheduled. The other words contradict 'went ahead'."
+    },
+    {
+      "id": "SBIPO-T1-025",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fillers",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nHer ........ to detail made her the best auditor in the branch.",
+      "options": [
+        "reference",
+        "addition",
+        "attention",
+        "objection",
+        "approach"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The fixed phrase is 'attention to detail', the quality that makes a good auditor."
+    },
+    {
+      "id": "SBIPO-T1-026",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Double fillers",
+      "stem": "Choose the pair of words that fits the two blanks, in order, to make the sentence meaningful.\n\nThe new policy was ........ to reduce paperwork, but in practice it ........ more forms than before.",
+      "options": [
+        "expected, cancelled",
+        "designed, reduced",
+        "refused, removed",
+        "intended, required",
+        "unable, needed"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'But in practice' signals a result opposite to the aim: it was intended to reduce paperwork, yet it required more forms. 'Designed, reduced' has no contrast."
+    },
+    {
+      "id": "SBIPO-T1-027",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Double fillers",
+      "stem": "Choose the pair of words that fits the two blanks, in order, to make the sentence meaningful.\n\nThe bank ........ its lending rates soon after the central bank ........ the repo rate.",
+      "options": [
+        "raised, increased",
+        "rose, increased",
+        "raised, lowered",
+        "lowered, raised",
+        "raised, risen"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Banks follow the repo rate, so a rise in one leads to a rise in the other. 'Rose' cannot take an object, and 'risen' needs 'had'."
+    },
+    {
+      "id": "SBIPO-T1-028",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fillers",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nThe auditor found several ........ between the ledger and the bank statement.",
+      "options": [
+        "resemblances",
+        "similarities",
+        "discrepancies",
+        "accounts",
+        "agreements"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An auditor looks for discrepancies, differences that need explaining, between two records."
+    },
+    {
+      "id": "SBIPO-T1-029",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nEither the clerks (A) / or the cashier (B) / have to sign (C) / the cash register. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "With 'either ... or', the verb agrees with the nearer subject. 'The cashier' is singular, so the verb is 'has to sign'."
+    },
+    {
+      "id": "SBIPO-T1-030",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe manager asked me (A) / that why I was (B) / late for (C) / the meeting. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "A reported question is joined by the question word alone, without 'that': 'asked me why I was late'."
+    },
+    {
+      "id": "SBIPO-T1-031",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe luggages (A) / of the passengers (B) / was kept (C) / in the cloakroom. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Luggage' is uncountable and has no plural form, so 'the luggage ... was kept' is correct."
+    },
+    {
+      "id": "SBIPO-T1-032",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe doctor told him (A) / to avoid (B) / to eat (C) / fried food. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "'Avoid' is followed by the -ing form, not the infinitive: 'to avoid eating fried food'."
+    },
+    {
+      "id": "SBIPO-T1-033",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe loan officer, along with (A) / his two clerks, (B) / is visiting the village (C) / to meet the borrowers. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence is correct. A phrase added with 'along with' does not change the subject, 'the loan officer', which takes the singular 'is'."
+    },
+    {
+      "id": "SBIPO-T1-034",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nHe insisted on (A) / paying the bill (B) / although he could (C) / hardly afforded it. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "After the modal 'could', the verb takes its base form: 'could hardly afford it'."
+    },
+    {
+      "id": "SBIPO-T1-035",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe committee has (A) / submitted its report (B) / and the members (C) / are satisfied with it. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence is correct. 'The committee' acting as one body takes 'has' and 'its', while 'the members' is plural and takes 'are'."
+    },
+    {
+      "id": "SBIPO-T1-036",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nThe meeting was postponed **due to the reason that** the chairman was ill.",
+      "options": [
+        "because",
+        "owing that",
+        "due to that",
+        "for reason that",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Due to the reason that' is wordy; 'because' says the same thing correctly."
+    },
+    {
+      "id": "SBIPO-T1-037",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nThe heavy rain **prevented us to go** out.",
+      "options": [
+        "prevented us from going",
+        "prevented us for going",
+        "prevented that we go",
+        "prevented us going to",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Prevent takes an object and from + -ing: prevented us from going out."
+    },
+    {
+      "id": "SBIPO-T1-038",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\n**Having finished the work,** the officer left for home.",
+      "options": [
+        "Having finish the work,",
+        "The work having finished,",
+        "After finishing of the work,",
+        "Finished the work,",
+        "No improvement"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence is correct: the participle phrase 'Having finished the work' refers to the subject, the officer."
+    },
+    {
+      "id": "SBIPO-T1-039",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nHe did not know **where was the file** kept.",
+      "options": [
+        "where had the file",
+        "that where the file was",
+        "where the file was",
+        "where was kept the file",
+        "No improvement"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "In a reported question the subject comes before the verb: 'where the file was kept'."
+    },
+    {
+      "id": "SBIPO-T1-040",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nThe officer **as well as his staff were** praised for the audit.",
+      "options": [
+        "as well as his staff were being",
+        "together with his staffs was",
+        "as well as his staffs were",
+        "as well as his staff was",
+        "No improvement"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "A phrase added with 'as well as' does not change the subject, 'the officer', so the verb is singular: 'was praised'. 'Staff' takes no -s here."
+    },
+    {
+      "id": "SBIPO-T1-041",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n45% of 840 + 3/8 of 960 = ?",
+      "options": [
+        "738",
+        "748",
+        "758",
+        "768",
+        "778"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "45% of 840 = 378 and 3/8 of 960 = 360, so the total is 738."
+    },
+    {
+      "id": "SBIPO-T1-042",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n(18 × 25) ÷ 9 + 7² = ?",
+      "options": [
+        "97",
+        "99",
+        "101",
+        "103",
+        "105"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "18 × 25 = 450, 450 ÷ 9 = 50, and 50 + 49 = 99."
+    },
+    {
+      "id": "SBIPO-T1-043",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n24.97% of 1,201 + 39.98 × 15.02 = ?",
+      "options": [
+        "900",
+        "960",
+        "1,020",
+        "1,080",
+        "1,140"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 25% of 1,200 = 300 and 40 × 15 = 600. The total is about 900."
+    },
+    {
+      "id": "SBIPO-T1-044",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n√1,443 × 12.03 − 199.9 = ?",
+      "options": [
+        "216",
+        "226",
+        "236",
+        "246",
+        "256"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "√1,443 is about 38 (38² = 1,444). 38 × 12 = 456, and 456 − 200 = 256."
+    },
+    {
+      "id": "SBIPO-T1-045",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n9, 19, 39, 79, 159, ?",
+      "options": [
+        "309",
+        "313",
+        "317",
+        "318",
+        "319"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is double the previous one plus 1: 159 × 2 + 1 = 319."
+    },
+    {
+      "id": "SBIPO-T1-046",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n5, 6, 14, 45, 184, ?",
+      "options": [
+        "905",
+        "910",
+        "915",
+        "920",
+        "925"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The pattern is ×1 + 1, ×2 + 2, ×3 + 3, ×4 + 4, so the next is 184 × 5 + 5 = 925."
+    },
+    {
+      "id": "SBIPO-T1-047",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n12, 19, 33, 54, 82, ?",
+      "options": [
+        "110",
+        "113",
+        "117",
+        "121",
+        "124"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are 7, 14, 21, 28, so the next difference is 35 and 82 + 35 = 117."
+    },
+    {
+      "id": "SBIPO-T1-048",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n8, 4, 6, 15, 52.5, ?",
+      "options": [
+        "157.5",
+        "183.75",
+        "210",
+        "231",
+        "236.25"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Multiply by 0.5, 1.5, 2.5, 3.5 and then 4.5: 52.5 × 4.5 = 236.25."
+    },
+    {
+      "id": "SBIPO-T1-049",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "Two equations, I and II, are given. Solve both and choose the correct relationship between x and y.\n\nI. x² − 13x + 40 = 0\n\nII. y² − 9y + 14 = 0",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or no relation can be established"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "I: (x − 5)(x − 8) = 0, so x = 5 or 8. II: (y − 2)(y − 7) = 0, so y = 2 or 7. x = 5 is less than 7 but x = 8 is greater than both, so no single relationship holds."
+    },
+    {
+      "id": "SBIPO-T1-050",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "Two equations, I and II, are given. Solve both and choose the correct relationship between x and y.\n\nI. 2x² − 9x + 10 = 0\n\nII. y² − 6y + 9 = 0",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or no relation can be established"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "I: (2x − 5)(x − 2) = 0, so x = 2.5 or 2. II: (y − 3)² = 0, so y = 3. Both values of x are below 3, so x < y."
+    },
+    {
+      "id": "SBIPO-T1-051",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "Two equations, I and II, are given. Solve both and choose the correct relationship between x and y.\n\nI. x² + 12x + 35 = 0\n\nII. y² + 3y − 10 = 0",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or no relation can be established"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "I: (x + 5)(x + 7) = 0, so x = −5 or −7. II: (y + 5)(y − 2) = 0, so y = −5 or 2. Pairs: −5 = −5, −5 < 2, −7 < −5, −7 < 2. So x ≤ y."
+    },
+    {
+      "id": "SBIPO-T1-052",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "Two equations, I and II, are given. Solve both and choose the correct relationship between x and y.\n\nI. x² = 81\n\nII. y² + 18y + 81 = 0",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or no relation can be established"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "I: x = 9 or −9. II: (y + 9)² = 0, so y = −9. x = 9 is greater than −9 and x = −9 equals it, so x ≥ y."
+    },
+    {
+      "id": "SBIPO-T1-053",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T1-DI1",
+      "stem": "What were the total fixed deposits (in ₹ lakh) of all five branches in Quarter 2?",
+      "options": [
+        "1,300",
+        "1,340",
+        "1,360",
+        "1,380",
+        "1,400"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "300 + 288 + 234 + 440 + 138 = 1,400."
+    },
+    {
+      "id": "SBIPO-T1-054",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T1-DI1",
+      "stem": "By what percentage did branch M's deposits rise from Quarter 1 to Quarter 2?",
+      "options": [
+        "12%",
+        "20%",
+        "25%",
+        "30%",
+        "35%"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "M rose from 180 to 234, an increase of 54. 54 ÷ 180 = 0.3, so 30%."
+    },
+    {
+      "id": "SBIPO-T1-055",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T1-DI1",
+      "stem": "What is the ratio of branch L's deposits in Quarter 1 to branch O's deposits in Quarter 2?",
+      "options": [
+        "40 : 17",
+        "80 : 39",
+        "32 : 15",
+        "16 : 7",
+        "160 : 69"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "320 : 138. Dividing both by 2 gives 160 : 69."
+    },
+    {
+      "id": "SBIPO-T1-056",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T1-DI1",
+      "stem": "What were the average Quarter 1 deposits (in ₹ lakh) of branches K, M, N and O?",
+      "options": [
+        "225",
+        "235",
+        "245",
+        "250",
+        "255"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "250 + 180 + 400 + 150 = 980, and 980 ÷ 4 = 245."
+    },
+    {
+      "id": "SBIPO-T1-057",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T1-DI2",
+      "stem": "How many books did the four shops sell online in all?",
+      "options": [
+        "1,040",
+        "1,080",
+        "1,120",
+        "1,160",
+        "1,200"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Online sales: W 280, X 160, Y 360 and Z 280. 280 + 160 + 360 + 280 = 1,080."
+    },
+    {
+      "id": "SBIPO-T1-058",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T1-DI2",
+      "stem": "The books shop Y sold in the shop (not online) are what percentage more than the books shop X sold in the shop?",
+      "options": [
+        "10%",
+        "11.5%",
+        "12.5%",
+        "15%",
+        "17.5%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Y sold 60% of 900 = 540 in the shop and X sold 75% of 640 = 480. 60 more on 480 is 12.5%."
+    },
+    {
+      "id": "SBIPO-T1-059",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T1-DI2",
+      "stem": "What is the ratio of the books sold online by shop W to those sold online by shop Z?",
+      "options": [
+        "5 : 4",
+        "8 : 7",
+        "4 : 5",
+        "1 : 1",
+        "7 : 8"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "W sold 35% of 800 = 280 online and Z sold 50% of 560 = 280 online, so the ratio is 1 : 1."
+    },
+    {
+      "id": "SBIPO-T1-060",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T1-DI2",
+      "stem": "Next month shop X sells the same total number of books, but its online sales rise by 50%. What percentage of its books are then sold online?",
+      "options": [
+        "30%",
+        "35%",
+        "37.5%",
+        "40%",
+        "75%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "X sold 25% of 640 = 160 online. A 50% rise gives 240, and 240 ÷ 640 = 37.5%. Adding 50% to the 25% share itself would wrongly give 75%."
+    },
+    {
+      "id": "SBIPO-T1-061",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A trader marks a mixer grinder 50% above its cost price and then allows a discount of 20%. What is his profit percentage?",
+      "options": [
+        "20%",
+        "22.5%",
+        "25%",
+        "30%",
+        "70%"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "On a cost of 100 the marked price is 150, and 20% off leaves 120. The profit is 20%. Subtracting 20 from 50 would wrongly give 30%."
+    },
+    {
+      "id": "SBIPO-T1-062",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "A sum of money earns simple interest of ₹2,880 in 3 years at 8% per annum. What is the sum?",
+      "options": [
+        "₹10,000",
+        "₹11,500",
+        "₹12,000",
+        "₹12,500",
+        "₹14,400"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Interest for 3 years at 8% is 24% of the sum. 2,880 ÷ 0.24 = 12,000."
+    },
+    {
+      "id": "SBIPO-T1-063",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "The difference between the compound interest and the simple interest on a sum for 2 years at 8% per annum, compounded annually, is ₹64. What is the sum?",
+      "options": [
+        "₹6,400",
+        "₹8,000",
+        "₹10,000",
+        "₹12,000",
+        "₹16,000"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "For 2 years the difference is P × (r/100)², so P × 0.0064 = 64 and P = 10,000."
+    },
+    {
+      "id": "SBIPO-T1-064",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "A can finish a piece of work in 15 days and B in 20 days. They work together for 6 days, and then A leaves. In how many days will B finish the remaining work?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Together they do 1/15 + 1/20 = 7/60 a day, so 42/60 = 7/10 in 6 days. B does the remaining 3/10 at 1/20 a day, which takes 6 days."
+    },
+    {
+      "id": "SBIPO-T1-065",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Speed, time and distance",
+      "stem": "A goods train 450 m long crosses a pole in 27 seconds. What is its speed in km/h?",
+      "options": [
+        "45",
+        "48",
+        "50",
+        "54",
+        "60"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "450 ÷ 27 = 50/3 m/s, and 50/3 × 18/5 = 60 km/h."
+    },
+    {
+      "id": "SBIPO-T1-066",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Boats and streams",
+      "stem": "A motorboat's speed in still water is 20 km/h and the river flows at 4 km/h. How many hours will it take to go 48 km downstream and return to the start?",
+      "options": [
+        "4.8",
+        "5",
+        "6",
+        "6.5",
+        "7"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Downstream speed is 24 km/h (2 hours) and upstream 16 km/h (3 hours), so 5 hours in all. Ignoring the current gives 4.8 hours."
+    },
+    {
+      "id": "SBIPO-T1-067",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ages",
+      "stem": "The present ages of A and B are in the ratio 5 : 7. After 6 years the ratio will be 3 : 4. What is B's present age in years?",
+      "options": [
+        "28",
+        "30",
+        "35",
+        "36",
+        "42"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Let the ages be 5x and 7x. (5x + 6) : (7x + 6) = 3 : 4 gives 20x + 24 = 21x + 18, so x = 6 and B is 42."
+    },
+    {
+      "id": "SBIPO-T1-068",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mixtures",
+      "stem": "60 litres of a mixture contain milk and water in the ratio 7 : 3. How many litres of water must be added to make the ratio 3 : 2?",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "15",
+        "18"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Milk is 42 litres and water 18. For 42 : (18 + w) = 3 : 2, 18 + w = 28, so w = 10."
+    },
+    {
+      "id": "SBIPO-T1-069",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Partnership",
+      "stem": "Farah invests ₹35,000 for 12 months and Gopal invests ₹45,000 for 8 months in a business. Out of a profit of ₹39,000, what is Farah's share?",
+      "options": [
+        "₹18,000",
+        "₹19,500",
+        "₹21,000",
+        "₹22,500",
+        "₹24,000"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The shares are in the ratio 35,000 × 12 : 45,000 × 8 = 420 : 360 = 7 : 6. Farah gets 7/13 of 39,000 = 21,000."
+    },
+    {
+      "id": "SBIPO-T1-070",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "A bag holds 5 red, 4 blue and 3 green balls. Two balls are drawn at random together. What is the probability that both are blue?",
+      "options": [
+        "4/33",
+        "1/6",
+        "1/11",
+        "2/11",
+        "1/9"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "There are 4C2 = 6 ways to pick two blue balls out of 12C2 = 66 ways in all, so 6/66 = 1/11."
+    },
+    {
+      "id": "SBIPO-T1-071",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: B ≤ C < D = E ≥ F\n\nI. B < E\n\nII. F ≤ D",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "I: B ≤ C < D = E gives B < E, true. II: D = E ≥ F gives D ≥ F, which is the same as F ≤ D, true. Both follow."
+    },
+    {
+      "id": "SBIPO-T1-072",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: G > H ≥ I ≤ J < K\n\nI. G > I\n\nII. K > H",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "I: G > H ≥ I gives G > I, true. II: H ≥ I and I ≤ J point in opposite directions, so H and K cannot be compared. Only I follows."
+    },
+    {
+      "id": "SBIPO-T1-073",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: P ≥ Q = R ≤ S\n\nI. P > R\n\nII. P = R",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "P ≥ Q = R, so P ≥ R. Neither 'P > R' nor 'P = R' is certain on its own, but one of them must be true. Either I or II follows."
+    },
+    {
+      "id": "SBIPO-T1-074",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: All pens are clips. Some clips are pins.\n\nI. Some pens are pins.\n\nII. Some pins are clips.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The pins that are clips need not be the clips that are pens, so I is only a possibility. 'Some clips are pins' converts to 'Some pins are clips', so II follows. Only II follows."
+    },
+    {
+      "id": "SBIPO-T1-075",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: No rose is a lily. All lilies are tulips.\n\nI. Some tulips are not roses.\n\nII. All roses are tulips.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The tulips that are lilies cannot be roses, so some tulips are not roses (I). Nothing says roses are tulips, so II does not follow. Only I follows."
+    },
+    {
+      "id": "SBIPO-T1-076",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: Some tickets are coupons. No coupon is a receipt.\n\nI. Some tickets are not receipts.\n\nII. No ticket is a receipt.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The tickets that are coupons cannot be receipts, so some tickets are not receipts (I). Other tickets may still be receipts, so II is not certain. Only I follows."
+    },
+    {
+      "id": "SBIPO-T1-077",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBIPO-T1-PZ1",
+      "stem": "Who lives on floor 5?",
+      "options": [
+        "P",
+        "L",
+        "K",
+        "T",
+        "M"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Floors 1 to 7: K (Audit), P (Legal), M (IT), R (Loans), T (HR), L (Sales), N (Treasury). R is on 4, so Treasury is on 1 or 7; N is above R, so N is on 7 and L on 6. Audit is on 1 and P on 2. M is below R and two floors from K, with K lower, so K is on 1 and M on 3, leaving T on 5, the HR floor. L is not Loans, so L is Sales and R Loans. T is on floor 5."
+    },
+    {
+      "id": "SBIPO-T1-078",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBIPO-T1-PZ1",
+      "stem": "In which department does R work?",
+      "options": [
+        "HR",
+        "Loans",
+        "Audit",
+        "IT",
+        "Sales"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Floors 1 to 7: K (Audit), P (Legal), M (IT), R (Loans), T (HR), L (Sales), N (Treasury). R is on 4, so Treasury is on 1 or 7; N is above R, so N is on 7 and L on 6. Audit is on 1 and P on 2. M is below R and two floors from K, with K lower, so K is on 1 and M on 3, leaving T on 5, the HR floor. L is not Loans, so L is Sales and R Loans."
+    },
+    {
+      "id": "SBIPO-T1-079",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBIPO-T1-PZ1",
+      "stem": "How many persons live between K and L?",
+      "options": [
+        "Two",
+        "Four",
+        "One",
+        "Three",
+        "Five"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Floors 1 to 7: K (Audit), P (Legal), M (IT), R (Loans), T (HR), L (Sales), N (Treasury). R is on 4, so Treasury is on 1 or 7; N is above R, so N is on 7 and L on 6. Audit is on 1 and P on 2. M is below R and two floors from K, with K lower, so K is on 1 and M on 3, leaving T on 5, the HR floor. L is not Loans, so L is Sales and R Loans. K is on 1 and L on 6, so P, M, R and T live between them."
+    },
+    {
+      "id": "SBIPO-T1-080",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBIPO-T1-PZ1",
+      "stem": "Who lives immediately above the person who works in IT?",
+      "options": [
+        "R",
+        "N",
+        "T",
+        "L",
+        "P"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Floors 1 to 7: K (Audit), P (Legal), M (IT), R (Loans), T (HR), L (Sales), N (Treasury). R is on 4, so Treasury is on 1 or 7; N is above R, so N is on 7 and L on 6. Audit is on 1 and P on 2. M is below R and two floors from K, with K lower, so K is on 1 and M on 3, leaving T on 5, the HR floor. L is not Loans, so L is Sales and R Loans. IT is M on floor 3, and R is on floor 4."
+    },
+    {
+      "id": "SBIPO-T1-081",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBIPO-T1-PZ1",
+      "stem": "Which of the following combinations is correct?",
+      "options": [
+        "K, floor 2, Audit",
+        "M, floor 3, Legal",
+        "P, floor 2, Audit",
+        "T, floor 5, HR",
+        "L, floor 6, Loans"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Floors 1 to 7: K (Audit), P (Legal), M (IT), R (Loans), T (HR), L (Sales), N (Treasury). R is on 4, so Treasury is on 1 or 7; N is above R, so N is on 7 and L on 6. Audit is on 1 and P on 2. M is below R and two floors from K, with K lower, so K is on 1 and M on 3, leaving T on 5, the HR floor. L is not Loans, so L is Sales and R Loans."
+    },
+    {
+      "id": "SBIPO-T1-082",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "SBIPO-T1-PZ2",
+      "stem": "Who sits opposite F?",
+      "options": [
+        "D",
+        "C",
+        "H",
+        "B",
+        "G"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Clockwise from A (facing the centre, a person's left is the next seat clockwise): A, F, C, H, E, B, G, D. C is second to A's left and F between them; E is opposite A and H on E's right; D is on A's right, B second to D's right, and G takes the last seat. F is in the 2nd seat and B four seats on, in the 6th."
+    },
+    {
+      "id": "SBIPO-T1-083",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "SBIPO-T1-PZ2",
+      "stem": "Who sits immediately to the left of G?",
+      "options": [
+        "D",
+        "B",
+        "E",
+        "H",
+        "A"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Clockwise from A (facing the centre, a person's left is the next seat clockwise): A, F, C, H, E, B, G, D. C is second to A's left and F between them; E is opposite A and H on E's right; D is on A's right, B second to D's right, and G takes the last seat. The next seat clockwise from G is D."
+    },
+    {
+      "id": "SBIPO-T1-084",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "SBIPO-T1-PZ2",
+      "stem": "Counting clockwise from C, how many persons sit between C and B?",
+      "options": [
+        "Three",
+        "Four",
+        "Five",
+        "One",
+        "Two"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Clockwise from A (facing the centre, a person's left is the next seat clockwise): A, F, C, H, E, B, G, D. C is second to A's left and F between them; E is opposite A and H on E's right; D is on A's right, B second to D's right, and G takes the last seat. Clockwise from C: H, E, then B."
+    },
+    {
+      "id": "SBIPO-T1-085",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "SBIPO-T1-PZ2",
+      "stem": "Who sits third to the left of E?",
+      "options": [
+        "G",
+        "D",
+        "B",
+        "F",
+        "A"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Clockwise from A (facing the centre, a person's left is the next seat clockwise): A, F, C, H, E, B, G, D. C is second to A's left and F between them; E is opposite A and H on E's right; D is on A's right, B second to D's right, and G takes the last seat. Clockwise from E: B, G, D. D is third to the left."
+    },
+    {
+      "id": "SBIPO-T1-086",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "SBIPO-T1-PZ2",
+      "stem": "Which of the following pairs sit next to each other?",
+      "options": [
+        "G and B",
+        "F and E",
+        "A and C",
+        "D and C",
+        "H and B"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Clockwise from A (facing the centre, a person's left is the next seat clockwise): A, F, C, H, E, B, G, D. C is second to A's left and F between them; E is opposite A and H on E's right; D is on A's right, B second to D's right, and G takes the last seat."
+    },
+    {
+      "id": "SBIPO-T1-087",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "SBIPO-T1-PZ3",
+      "stem": "Who goes to Kochi?",
+      "options": [
+        "Q",
+        "P",
+        "R",
+        "U",
+        "T"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In month order: Q (January, Kochi), T (March, Pune), P (April, Shimla), U (June, Delhi), R (September, Ranchi), S (November, Bhopal). S is last, so P is third, in April. Kochi is first and T second. U and R are consecutive in the free months, June and September, which leaves January to Q. P takes Shimla, and T, not Delhi, takes Pune."
+    },
+    {
+      "id": "SBIPO-T1-088",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "SBIPO-T1-PZ3",
+      "stem": "In which month does U attend?",
+      "options": [
+        "March",
+        "June",
+        "April",
+        "September",
+        "January"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In month order: Q (January, Kochi), T (March, Pune), P (April, Shimla), U (June, Delhi), R (September, Ranchi), S (November, Bhopal). S is last, so P is third, in April. Kochi is first and T second. U and R are consecutive in the free months, June and September, which leaves January to Q. P takes Shimla, and T, not Delhi, takes Pune."
+    },
+    {
+      "id": "SBIPO-T1-089",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "SBIPO-T1-PZ3",
+      "stem": "How many persons attend between T and R?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "None"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In month order: Q (January, Kochi), T (March, Pune), P (April, Shimla), U (June, Delhi), R (September, Ranchi), S (November, Bhopal). S is last, so P is third, in April. Kochi is first and T second. U and R are consecutive in the free months, June and September, which leaves January to Q. P takes Shimla, and T, not Delhi, takes Pune. P (April) and U (June) attend between T (March) and R (September)."
+    },
+    {
+      "id": "SBIPO-T1-090",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "SBIPO-T1-PZ3",
+      "stem": "To which city does the person who attends in September go?",
+      "options": [
+        "Pune",
+        "Ranchi",
+        "Delhi",
+        "Bhopal",
+        "Shimla"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In month order: Q (January, Kochi), T (March, Pune), P (April, Shimla), U (June, Delhi), R (September, Ranchi), S (November, Bhopal). S is last, so P is third, in April. Kochi is first and T second. U and R are consecutive in the free months, June and September, which leaves January to Q. P takes Shimla, and T, not Delhi, takes Pune."
+    },
+    {
+      "id": "SBIPO-T1-091",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "SBIPO-T1-PZ3",
+      "stem": "Who attends immediately before S?",
+      "options": [
+        "U",
+        "P",
+        "T",
+        "R",
+        "Q"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In month order: Q (January, Kochi), T (March, Pune), P (April, Shimla), U (June, Delhi), R (September, Ranchi), S (November, Bhopal). S is last, so P is third, in April. Kochi is first and T second. U and R are consecutive in the free months, June and September, which leaves January to Q. P takes Shimla, and T, not Delhi, takes Pune."
+    },
+    {
+      "id": "SBIPO-T1-092",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, 'DEBT' is written as 'EFCU'. How is 'FUND' written in that code?",
+      "options": [
+        "HVOE",
+        "GVOE",
+        "ETMC",
+        "GWOE",
+        "GVOF"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each letter moves one place forward: D→E, E→F, B→C, T→U. So F→G, U→V, N→O, D→E, giving GVOE."
+    },
+    {
+      "id": "SBIPO-T1-093",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, 'SAFE' is written as 'FGBT'. How is 'CASH' written in that code?",
+      "options": [
+        "DBTI",
+        "ITBD",
+        "IUBD",
+        "ITCD",
+        "GRZB"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The word is reversed (SAFE → EFAS) and each letter moves one place forward (E→F, F→G, A→B, S→T). CASH reversed is HSAC, which becomes ITBD."
+    },
+    {
+      "id": "SBIPO-T1-094",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, 'gold coin bank' is written as 'ta ri mo', 'coin is safe' as 'ri pe lu' and 'safe gold rate' as 'lu ta zi'. What is the code for 'bank'?",
+      "options": [
+        "ta",
+        "pe",
+        "ri",
+        "mo",
+        "zi"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'gold' is common to the first and third sentences, so gold = ta. 'coin' is common to the first and second, so coin = ri. That leaves bank = mo."
+    },
+    {
+      "id": "SBIPO-T1-095",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Pointing to a boy, Kavita said, 'He is the son of the only brother of my husband.' How is the boy related to Kavita?",
+      "options": [
+        "Brother-in-law",
+        "Son",
+        "Grandson",
+        "Cousin",
+        "Nephew"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The only brother of Kavita's husband is her brother-in-law, and his son is her nephew."
+    },
+    {
+      "id": "SBIPO-T1-096",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "A is the sister of B. B is the father of C, who is a boy. D is the mother of A. How is C related to D?",
+      "options": [
+        "Nephew",
+        "Son",
+        "Grandfather",
+        "Brother",
+        "Grandson"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "D is the mother of A and so of A's brother B. C is B's son, so C is D's grandson."
+    },
+    {
+      "id": "SBIPO-T1-097",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Ravi walks 10 m north, turns right and walks 9 m, turns right and walks 22 m, then turns left and walks 7 m. How far and in which direction is he from his starting point?",
+      "options": [
+        "20 m north-east",
+        "12 m south-west",
+        "20 m south-east",
+        "16 m south-east",
+        "28 m south-east"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "He ends 9 + 7 = 16 m east and 22 − 10 = 12 m south of the start. The distance is √(16² + 12²) = 20 m, towards the south-east."
+    },
+    {
+      "id": "SBIPO-T1-098",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Meera is facing west. She turns 90° clockwise and then 135° anticlockwise. Which direction is she facing now?",
+      "options": [
+        "South",
+        "North-east",
+        "South-east",
+        "North-west",
+        "South-west"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "From west, 90° clockwise is north. From north, 90° anticlockwise is west and 45° more is south-west."
+    },
+    {
+      "id": "SBIPO-T1-099",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "In a row of 45 students, Kavya is 16th from the left end and Mohit is 20th from the right end. How many students sit between them?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Mohit is 45 − 20 + 1 = 26th from the left. Between the 16th and 26th places there are 26 − 16 − 1 = 9 students."
+    },
+    {
+      "id": "SBIPO-T1-100",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "If the English alphabet is written in reverse order, from Z to A, which letter is 7th to the left of the 21st letter from the left?",
+      "options": [
+        "S",
+        "L",
+        "M",
+        "N",
+        "T"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In reverse order the 21st letter from the left is F, and 7th to its left is the 14th letter in the reversed list, which is M (Z is 1st, so the 14th is the 13th letter of the alphabet)."
+    },
+    {
+      "id": "SBIPO-T2-001",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "SBIPO-T2-RC1",
+      "stem": "Which of the following best expresses the central idea of the passage?",
+      "options": [
+        "Mangroves shield coasts and regrow best when tides return",
+        "Mangroves can stop a cyclone from reaching the coast",
+        "Planting saplings in neat rows is the surest way to restore forests",
+        "Shrimp ponds are the most profitable use of coastal land",
+        "Villagers should leave the coast before every cyclone"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage explains how mangroves reduce cyclone damage and says restoring tidal flow works better than planting in rows. It says plainly that the trees do not stop a storm."
+    },
+    {
+      "id": "SBIPO-T2-002",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-T2-RC1",
+      "stem": "How do mangroves reduce the damage done by a cyclone?",
+      "options": [
+        "They turn the wind away from the villages",
+        "They absorb all the rain that falls",
+        "They lower the level of the sea all year",
+        "Their roots slow the water pushed inland",
+        "They stop the storm before it reaches land"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Paragraph 1 says the roots slow the water a cyclone pushes onto the land and the forest takes the first blow of the wind. It says the trees do not stop a storm."
+    },
+    {
+      "id": "SBIPO-T2-003",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-T2-RC1",
+      "stem": "What happened to many of the ponds dug where mangroves were cleared?",
+      "options": [
+        "They were replanted with mangroves",
+        "They were turned into salt pans",
+        "They were sold to build new roads",
+        "They earned money for many decades",
+        "They were abandoned after a few years"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Paragraph 2 says many ponds were abandoned after a few years when disease struck or the soil turned too salty."
+    },
+    {
+      "id": "SBIPO-T2-004",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "SBIPO-T2-RC1",
+      "stem": "Why did most saplings in some replanting projects die?",
+      "options": [
+        "Villagers cut them down for firewood",
+        "They were planted where mangroves never grew",
+        "They were planted too late in the season",
+        "Cyclones washed them away each year",
+        "They were planted too far apart"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Paragraph 3 says some projects planted one species in rows on mudflats where mangroves never grew naturally, and most saplings died."
+    },
+    {
+      "id": "SBIPO-T2-005",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "SBIPO-T2-RC1",
+      "stem": "According to the last paragraph, what gives villagers a reason to protect healthy mangroves?",
+      "options": [
+        "Planting projects pay them to guard it",
+        "Officials watch over the forest for them",
+        "They fear fines from the government",
+        "The law forbids any use of the forest",
+        "The forest gives them income every year"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Crabs, fish and honey give income year after year, which gives villagers a reason to protect the forest after a project ends."
+    },
+    {
+      "id": "SBIPO-T2-006",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Vocabulary",
+      "stimulusId": "SBIPO-T2-RC1",
+      "stem": "Which word is most nearly OPPOSITE in meaning to 'abandoned' as used in the passage?",
+      "options": [
+        "Sold",
+        "Dug",
+        "Flooded",
+        "Deserted",
+        "Maintained"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "An abandoned pond is left behind and given up; a maintained one is kept up. Deserted means nearly the same as abandoned."
+    },
+    {
+      "id": "SBIPO-T2-007",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "SBIPO-T2-RC2",
+      "stem": "What is the passage mainly about?",
+      "options": [
+        "How schools should teach factory skills",
+        "Using apprenticeships to close a skills gap",
+        "Why graduates refuse to work in factories",
+        "How hospitals train their own nurses",
+        "Why large firms avoid hiring young people"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage describes the gap between classroom learning and job needs and how apprenticeships can close it, along with the obstacles in India."
+    },
+    {
+      "id": "SBIPO-T2-008",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-T2-RC2",
+      "stem": "What gap do the two complaints in the first paragraph point to?",
+      "options": [
+        "Classroom learning does not match job needs",
+        "Young people dislike work in factories",
+        "There are far too few jobs for graduates",
+        "Employers pay young workers too little",
+        "Colleges admit far too many students"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The writer says what is learnt in a classroom is often not what is needed on a factory floor or in a hospital ward."
+    },
+    {
+      "id": "SBIPO-T2-009",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-T2-RC2",
+      "stem": "How does an apprenticeship differ from ordinary classroom training, according to the passage?",
+      "options": [
+        "The trainee pays a fee to the employer",
+        "The trainee skips the classroom entirely",
+        "The trainee learns on the job for a stipend",
+        "The trainee studies only in the evenings",
+        "The trainee works without any guidance"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Paragraph 2 says the young person learns on the job while earning a stipend, under an experienced employee, with the classroom part tied to the job."
+    },
+    {
+      "id": "SBIPO-T2-010",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-T2-RC2",
+      "stem": "Why do many smaller firms hesitate to take apprentices?",
+      "options": [
+        "Apprentices must be hired for life",
+        "They may not legally pay a stipend",
+        "The training lasts too many years",
+        "They have no machines to train on",
+        "They fear trained workers will leave"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Paragraph 3 says smaller firms see apprentices as a cost and fear a worker they train will leave for a better offer."
+    },
+    {
+      "id": "SBIPO-T2-011",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "SBIPO-T2-RC2",
+      "stem": "What is the supporters' main argument in the last paragraph?",
+      "options": [
+        "Most apprentices go to work abroad",
+        "Trained workers rarely want better pay",
+        "Small firms should not train anyone",
+        "Paperwork is no burden for any firm",
+        "Skills tied to one firm make workers stay"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Supporters say a trainee who has learnt the firm's own machines and methods is worth more to it than to anyone else, so many stay."
+    },
+    {
+      "id": "SBIPO-T2-012",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Vocabulary",
+      "stimulusId": "SBIPO-T2-RC2",
+      "stem": "Which word is most nearly the SAME in meaning as 'overstated' as used in the passage?",
+      "options": [
+        "Repeated",
+        "Exaggerated",
+        "Hidden",
+        "Understood",
+        "Justified"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A fear that is overstated is made to seem bigger than it is, that is, exaggerated."
+    },
+    {
+      "id": "SBIPO-T2-013",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Para jumble",
+      "stimulusId": "SBIPO-T2-PJ",
+      "stem": "Which sentence comes FIRST after rearrangement?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The correct order is B D E A C F. B describes the families selling to a trader; D says the price was low; E has some decide to bargain as a group; A pools the milk; C says 'the society' could buy a cooling tank; F ends with what the tank achieved."
+    },
+    {
+      "id": "SBIPO-T2-014",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Para jumble",
+      "stimulusId": "SBIPO-T2-PJ",
+      "stem": "Which sentence comes SECOND after rearrangement?",
+      "options": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The correct order is B D E A C F. B describes the families selling to a trader; D says the price was low; E has some decide to bargain as a group; A pools the milk; C says 'the society' could buy a cooling tank; F ends with what the tank achieved."
+    },
+    {
+      "id": "SBIPO-T2-015",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Para jumble",
+      "stimulusId": "SBIPO-T2-PJ",
+      "stem": "Which sentence comes FOURTH after rearrangement?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The correct order is B D E A C F. B describes the families selling to a trader; D says the price was low; E has some decide to bargain as a group; A pools the milk; C says 'the society' could buy a cooling tank; F ends with what the tank achieved."
+    },
+    {
+      "id": "SBIPO-T2-016",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Para jumble",
+      "stimulusId": "SBIPO-T2-PJ",
+      "stem": "Which sentence comes LAST after rearrangement?",
+      "options": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The correct order is B D E A C F. B describes the families selling to a trader; D says the price was low; E has some decide to bargain as a group; A pools the milk; C says 'the society' could buy a cooling tank; F ends with what the tank achieved."
+    },
+    {
+      "id": "SBIPO-T2-017",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T2-CZ",
+      "stem": "Which word fits blank (1) best?",
+      "options": [
+        "light",
+        "tickets",
+        "signals",
+        "shade",
+        "fumes"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The next clause is about polluted air, so the buses give out no fumes on the street."
+    },
+    {
+      "id": "SBIPO-T2-018",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T2-CZ",
+      "stem": "Which word fits blank (2) best?",
+      "options": [
+        "permission",
+        "parking",
+        "lighting",
+        "maintenance",
+        "decoration"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Running costs are lower because electric motors need less maintenance than diesel engines."
+    },
+    {
+      "id": "SBIPO-T2-019",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T2-CZ",
+      "stem": "Which word fits blank (3) best?",
+      "options": [
+        "approve",
+        "increase",
+        "announce",
+        "offset",
+        "repeat"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Leasing is a way to offset, or balance out, the high price of the bus. Increasing it would make no sense."
+    },
+    {
+      "id": "SBIPO-T2-020",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T2-CZ",
+      "stem": "Which word fits blank (4) best?",
+      "options": [
+        "lately",
+        "upward",
+        "barely",
+        "outright",
+        "overhead"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Leasing is contrasted with buying the vehicles outright, that is, paying the full price at once."
+    },
+    {
+      "id": "SBIPO-T2-021",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T2-CZ",
+      "stem": "Which word fits blank (5) best?",
+      "options": [
+        "cheerful",
+        "rare",
+        "casual",
+        "careful",
+        "sudden"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A depot that draws as much power as a small town needs careful planning."
+    },
+    {
+      "id": "SBIPO-T2-022",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBIPO-T2-CZ",
+      "stem": "Which word fits blank (6) best?",
+      "options": [
+        "fast",
+        "late",
+        "idle",
+        "busy",
+        "crowded"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Without a ready depot the buses cannot be charged, so they stand idle, unused, for weeks."
+    },
+    {
+      "id": "SBIPO-T2-023",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fillers",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nThe manager asked the staff to ........ with the new safety rules from Monday.",
+      "options": [
+        "comply",
+        "compete",
+        "compile",
+        "complete",
+        "complain"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "One complies with rules. The other words look similar but do not fit 'with the new safety rules'."
+    },
+    {
+      "id": "SBIPO-T2-024",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fillers",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nThe village is so ........ that the nearest hospital is three hours away by road.",
+      "options": [
+        "modern",
+        "central",
+        "prosperous",
+        "remote",
+        "crowded"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A hospital three hours away shows the village is remote, far from towns."
+    },
+    {
+      "id": "SBIPO-T2-025",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fillers",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nHe was ........ of the risks, yet he signed the loan papers without reading them.",
+      "options": [
+        "aware",
+        "free",
+        "careless",
+        "unaware",
+        "proud"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Yet' signals a contrast: he knew the risks, yet he signed without reading. 'Unaware' removes the contrast, and 'careless of' is not the idiom."
+    },
+    {
+      "id": "SBIPO-T2-026",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Double fillers",
+      "stem": "Choose the pair of words that fits the two blanks, in order, to make the sentence meaningful.\n\nThe scheme was ........ last year and has already ........ over a million families.",
+      "options": [
+        "launched, refused",
+        "closed, reached",
+        "launched, reached",
+        "delayed, lost",
+        "planned, avoided"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A scheme launched last year that has 'already' reached a million families is the only pair that makes sense together."
+    },
+    {
+      "id": "SBIPO-T2-027",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Double fillers",
+      "stem": "Choose the pair of words that fits the two blanks, in order, to make the sentence meaningful.\n\nAs the demand for loans ........, the bank had to ........ more staff at its busiest branches.",
+      "options": [
+        "fell, add",
+        "grew, hire",
+        "grown, hire",
+        "grew, dismiss",
+        "fell, hire"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Rising demand at the busiest branches means more staff are hired. 'Grown' needs 'had', and falling demand would not call for more staff."
+    },
+    {
+      "id": "SBIPO-T2-028",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fillers",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nThe new app makes it ........ for customers to check their balance at any time.",
+      "options": [
+        "convenience",
+        "conveniently",
+        "convenient",
+        "inconvenience",
+        "convene"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "After 'makes it' the blank needs an adjective: 'makes it convenient for customers'."
+    },
+    {
+      "id": "SBIPO-T2-029",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nMy uncle (A) / gave me an useful (B) / book on banking (C) / for my birthday. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Useful' begins with a 'yoo' sound, which is a consonant sound, so it takes 'a': 'a useful book'."
+    },
+    {
+      "id": "SBIPO-T2-030",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe children were (A) / so tired that they (B) / could not hardly walk (C) / back home. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "'Hardly' is already negative, so 'could not hardly walk' is a double negative. It should be 'could hardly walk back home'."
+    },
+    {
+      "id": "SBIPO-T2-031",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nTen kilometres (A) / are a long distance (B) / to walk (C) / every day. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "An amount of distance treated as one quantity takes a singular verb: 'Ten kilometres is a long distance'."
+    },
+    {
+      "id": "SBIPO-T2-032",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe scenery of (A) / the hill station (B) / was so beautiful (C) / that we stayed longer. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence is correct. 'Scenery' is uncountable and takes the singular 'was'."
+    },
+    {
+      "id": "SBIPO-T2-033",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nLet him and I (A) / finish the report (B) / before the manager (C) / returns. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Let' takes object pronouns: 'Let him and me finish the report'."
+    },
+    {
+      "id": "SBIPO-T2-034",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nI have seen (A) / that film (B) / last week (C) / with my cousins. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "A finished past time such as 'last week' needs the simple past: 'I saw that film last week'."
+    },
+    {
+      "id": "SBIPO-T2-035",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nShe asked me (A) / where I was going (B) / and why did I (C) / look so worried. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "In reported speech the question takes statement order with no 'did': 'and why I looked so worried'."
+    },
+    {
+      "id": "SBIPO-T2-036",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nThe doctor advised him **to give up smoking**.",
+      "options": [
+        "to give off smoking",
+        "giving up to smoke",
+        "to give up to smoke",
+        "for giving up smoking",
+        "No improvement"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence is correct: 'advise someone to do something', and 'give up' is followed by the -ing form."
+    },
+    {
+      "id": "SBIPO-T2-037",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\n**Each of the clerks have** finished the training.",
+      "options": [
+        "Each of the clerks has",
+        "Each of the clerk has",
+        "Every of the clerks have",
+        "Each clerks have",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Each' is singular and takes 'has', while 'of the' is followed by the plural 'clerks'."
+    },
+    {
+      "id": "SBIPO-T2-038",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nSunita **married with** a doctor from Pune last year.",
+      "options": [
+        "married to",
+        "married",
+        "got married with",
+        "was married with",
+        "No improvement"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Marry takes a direct object with no preposition: Sunita married a doctor. (She was married to a doctor is also correct, but it describes a state, not the event last year.)"
+    },
+    {
+      "id": "SBIPO-T2-039",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nThe new manager is **more stricter than** the old one.",
+      "options": [
+        "most strict than",
+        "more strict then",
+        "stricter than",
+        "strictest than",
+        "No improvement"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "'Stricter' is already comparative, so 'more' is a double comparative. The correct form is 'stricter than'."
+    },
+    {
+      "id": "SBIPO-T2-040",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nHe **has gone to Delhi yesterday** for a training course.",
+      "options": [
+        "had gone to Delhi yesterday",
+        "was gone to Delhi yesterday",
+        "goes to Delhi yesterday",
+        "went to Delhi yesterday",
+        "No improvement"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "'Yesterday' is a finished past time, so the simple past is needed: 'went to Delhi yesterday'."
+    },
+    {
+      "id": "SBIPO-T2-041",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n64% of 750 + 5/6 of 492 = ?",
+      "options": [
+        "850",
+        "860",
+        "870",
+        "880",
+        "890"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "64% of 750 = 480 and 5/6 of 492 = 410, so the total is 890."
+    },
+    {
+      "id": "SBIPO-T2-042",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n1,296 ÷ 36 × 4 − 11² = ?",
+      "options": [
+        "23",
+        "25",
+        "27",
+        "29",
+        "31"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "1,296 ÷ 36 = 36, 36 × 4 = 144, and 144 − 121 = 23."
+    },
+    {
+      "id": "SBIPO-T2-043",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n59.98% of 449.9 + 14.99² = ?",
+      "options": [
+        "435",
+        "455",
+        "475",
+        "495",
+        "515"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 60% of 450 = 270 and 15² = 225. The total is about 495."
+    },
+    {
+      "id": "SBIPO-T2-044",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n3,599.8 ÷ 24.02 + 18.01 × 6.97 = ?",
+      "options": [
+        "256",
+        "266",
+        "276",
+        "296",
+        "316"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 3,600 ÷ 24 = 150 and 18 × 7 = 126. The total is about 276."
+    },
+    {
+      "id": "SBIPO-T2-045",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n4, 11, 25, 53, 109, ?",
+      "options": [
+        "211",
+        "215",
+        "217",
+        "219",
+        "221"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is double the previous one plus 3: 109 × 2 + 3 = 221."
+    },
+    {
+      "id": "SBIPO-T2-046",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n2, 3, 10, 39, 172, ?",
+      "options": [
+        "845",
+        "855",
+        "865",
+        "875",
+        "885"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The pattern is ×1 + 1², ×2 + 2², ×3 + 3², ×4 + 4², so the next is 172 × 5 + 25 = 885."
+    },
+    {
+      "id": "SBIPO-T2-047",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n10, 11, 15, 24, 40, ?",
+      "options": [
+        "65",
+        "66",
+        "69",
+        "72",
+        "74"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are the squares 1, 4, 9, 16, so the next difference is 25 and 40 + 25 = 65."
+    },
+    {
+      "id": "SBIPO-T2-048",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n2, 5, 16, 65, 326, ?",
+      "options": [
+        "1,630",
+        "1,632",
+        "1,957",
+        "1,958",
+        "2,282"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Multiply by 2, 3, 4, 5 and then 6, adding 1 each time: 326 × 6 + 1 = 1,957."
+    },
+    {
+      "id": "SBIPO-T2-049",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "Two equations, I and II, are given. Solve both and choose the correct relationship between x and y.\n\nI. x² − 17x + 72 = 0\n\nII. y² − 15y + 56 = 0",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or no relation can be established"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "I: x = 8 or 9. II: y = 7 or 8. Pairs: 8 > 7, 8 = 8, 9 > 7, 9 > 8. So x ≥ y."
+    },
+    {
+      "id": "SBIPO-T2-050",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "Two equations, I and II, are given. Solve both and choose the correct relationship between x and y.\n\nI. x² + 7x + 10 = 0\n\nII. y² + 9y + 20 = 0",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or no relation can be established"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "I: x = −2 or −5. II: y = −4 or −5. x = −2 is greater than both, but x = −5 is less than −4. No single relationship holds."
+    },
+    {
+      "id": "SBIPO-T2-051",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "Two equations, I and II, are given. Solve both and choose the correct relationship between x and y.\n\nI. 3x² + 11x + 6 = 0\n\nII. y² − 4y + 3 = 0",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or no relation can be established"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "I: (3x + 2)(x + 3) = 0, so x = −2/3 or −3. II: (y − 1)(y − 3) = 0, so y = 1 or 3. Both values of x are negative and both values of y positive, so x < y."
+    },
+    {
+      "id": "SBIPO-T2-052",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "Two equations, I and II, are given. Solve both and choose the correct relationship between x and y.\n\nI. x² − 20x + 99 = 0\n\nII. y² − 13y + 40 = 0",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or no relation can be established"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "I: (x − 9)(x − 11) = 0, so x = 9 or 11. II: y = 5 or 8. Every value of x is greater than every value of y, so x > y."
+    },
+    {
+      "id": "SBIPO-T2-053",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T2-DI1",
+      "stem": "Which museum had the highest percentage increase in visitors from 2024 to 2025?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "A rose 25%, C 20%, D 30% (27 on 90) and E 15%, while B fell. D had the highest percentage increase."
+    },
+    {
+      "id": "SBIPO-T2-054",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T2-DI1",
+      "stem": "What was the total number of visitors (in thousands) to all five museums in 2025?",
+      "options": [
+        "710",
+        "760",
+        "770",
+        "780",
+        "790"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "150 + 170 + 192 + 117 + 161 = 790 thousand. The 2024 total is 710 thousand."
+    },
+    {
+      "id": "SBIPO-T2-055",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T2-DI1",
+      "stem": "By what percentage did the number of visitors to museum B fall from 2024 to 2025?",
+      "options": [
+        "12%",
+        "15%",
+        "17.5%",
+        "20%",
+        "30%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "B fell from 200 to 170, a drop of 30. 30 ÷ 200 = 15%."
+    },
+    {
+      "id": "SBIPO-T2-056",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T2-DI1",
+      "stem": "What was the average number of visitors (in thousands) to museums A, C and E in 2024?",
+      "options": [
+        "140",
+        "145",
+        "150",
+        "155",
+        "160"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "120 + 160 + 140 = 420, and 420 ÷ 3 = 140."
+    },
+    {
+      "id": "SBIPO-T2-057",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T2-DI2",
+      "stem": "How many units were rejected by the four factories in all?",
+      "options": [
+        "700",
+        "720",
+        "740",
+        "760",
+        "800"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Rejected: F1 1/10 of 1,200 = 120, F2 2/9 of 900 = 200, F3 1/5 of 1,500 = 300, F4 2/15 of 1,050 = 140. The total is 760."
+    },
+    {
+      "id": "SBIPO-T2-058",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T2-DI2",
+      "stem": "The units rejected at F3 are what percentage more than the units rejected at F1?",
+      "options": [
+        "60%",
+        "100%",
+        "150%",
+        "180%",
+        "250%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "F3 rejected 300 and F1 rejected 120. The difference, 180, is 150% of 120."
+    },
+    {
+      "id": "SBIPO-T2-059",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T2-DI2",
+      "stem": "What is the ratio of units passed at F2 to units passed at F4?",
+      "options": [
+        "9 : 13",
+        "10 : 11",
+        "7 : 13",
+        "13 : 10",
+        "10 : 13"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "F2 passed 7/9 of 900 = 700 and F4 passed 13/15 of 1,050 = 910. 700 : 910 = 10 : 13."
+    },
+    {
+      "id": "SBIPO-T2-060",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-T2-DI2",
+      "stem": "What percentage of the units made at F4 were rejected?",
+      "options": [
+        "12 1/2%",
+        "13 1/3%",
+        "15%",
+        "14 2/7%",
+        "11 1/9%"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "2 of every 15 units were rejected, and 2/15 = 13 1/3%."
+    },
+    {
+      "id": "SBIPO-T2-061",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "By selling a cooler for ₹1,330, a trader loses 5%. At what price should he sell it to gain 15%?",
+      "options": [
+        "₹1,540",
+        "₹1,575",
+        "₹1,610",
+        "₹1,650",
+        "₹1,680"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The cost is 1,330 ÷ 0.95 = 1,400, and 1,400 × 1.15 = 1,610."
+    },
+    {
+      "id": "SBIPO-T2-062",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "What is the compound interest on ₹20,000 for 3 years at 10% per annum, compounded annually?",
+      "options": [
+        "₹6,000",
+        "₹6,200",
+        "₹6,300",
+        "₹6,600",
+        "₹6,620"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The amount is 20,000 × 1.1³ = 26,620, so the interest is 6,620. Simple interest would give 6,000."
+    },
+    {
+      "id": "SBIPO-T2-063",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "16 workers can lay a pipeline in 21 days. In how many days can 24 workers lay it, working at the same rate?",
+      "options": [
+        "12",
+        "14",
+        "18",
+        "28",
+        "32"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The job needs 16 × 21 = 336 worker-days, and 336 ÷ 24 = 14 days."
+    },
+    {
+      "id": "SBIPO-T2-064",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Pipes and cisterns",
+      "stem": "Pipe A can fill a tank in 12 minutes and pipe B in 18 minutes, while pipe C can empty it in 9 minutes. If all three are opened together on an empty tank, how many minutes will it take to fill?",
+      "options": [
+        "18",
+        "24",
+        "30",
+        "32",
+        "36"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Each minute fills 1/12 + 1/18 − 1/9 = (3 + 2 − 4)/36 = 1/36 of the tank, so it fills in 36 minutes."
+    },
+    {
+      "id": "SBIPO-T2-065",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speed, time and distance",
+      "stem": "Two trains 180 m and 240 m long run in opposite directions at 46 km/h and 62 km/h. How many seconds do they take to cross each other?",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "18",
+        "21"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The relative speed is 108 km/h = 30 m/s and the distance is 180 + 240 = 420 m, so 420 ÷ 30 = 14 seconds."
+    },
+    {
+      "id": "SBIPO-T2-066",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Averages",
+      "stem": "The average of six numbers is 35. When one number is removed, the average of the other five is 33. What number was removed?",
+      "options": [
+        "39",
+        "41",
+        "43",
+        "45",
+        "47"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The six numbers total 210 and the five left total 165, so the number removed is 45."
+    },
+    {
+      "id": "SBIPO-T2-067",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "Rani's salary is 60% more than Sohan's. By what percentage is Sohan's salary less than Rani's?",
+      "options": [
+        "30%",
+        "37.5%",
+        "40%",
+        "60%",
+        "62.5%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "If Sohan earns 100, Rani earns 160. Sohan is 60 less than 160, and 60 ÷ 160 = 37.5%."
+    },
+    {
+      "id": "SBIPO-T2-068",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "₹7,800 is divided among P, Q and R in the ratio 1/2 : 1/3 : 1/4. What is R's share?",
+      "options": [
+        "₹1,600",
+        "₹1,800",
+        "₹1,950",
+        "₹2,400",
+        "₹2,600"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Multiplying by 12 turns the ratio into 6 : 4 : 3, which has 13 parts. R gets 3/13 of 7,800 = 1,800."
+    },
+    {
+      "id": "SBIPO-T2-069",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "A rectangle is 24 cm long and 18 cm wide. A square has the same perimeter as the rectangle. By how many square centimetres does the square's area exceed the rectangle's?",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "8",
+        "9"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The perimeter is 84 cm, so the square's side is 21 cm and its area 441 cm². The rectangle's area is 432 cm², a difference of 9."
+    },
+    {
+      "id": "SBIPO-T2-070",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "Two fair dice are thrown together. What is the probability that the sum of the numbers shown is 9?",
+      "options": [
+        "1/12",
+        "1/9",
+        "7/36",
+        "1/6",
+        "5/36"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The pairs (3, 6), (4, 5), (5, 4) and (6, 3) give 9: four outcomes out of 36, which is 1/9."
+    },
+    {
+      "id": "SBIPO-T2-071",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: U < V ≤ W = X > Y\n\nI. U < X\n\nII. W > Y",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "I: U < V ≤ W = X gives U < X, true. II: W = X > Y gives W > Y, true. Both follow."
+    },
+    {
+      "id": "SBIPO-T2-072",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: M ≥ N > O ≤ P = Q\n\nI. M > O\n\nII. Q ≥ N",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "I: M ≥ N > O gives M > O, true. II: N > O and O ≤ P point in opposite directions, so N and Q cannot be compared. Only I follows."
+    },
+    {
+      "id": "SBIPO-T2-073",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: A = B ≥ C > D ≤ E\n\nI. A > E\n\nII. D < B",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "I: C > D and D ≤ E point in opposite directions, so A and E cannot be compared. II: B ≥ C > D gives B > D, true. Only II follows."
+    },
+    {
+      "id": "SBIPO-T2-074",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: All trains are buses. All buses are trucks.\n\nI. All trains are trucks.\n\nII. Some trucks are trains.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Every train is a bus and every bus a truck, so all trains are trucks (I), and so some trucks are trains (II). Both follow."
+    },
+    {
+      "id": "SBIPO-T2-075",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: Some lamps are bulbs. Some bulbs are switches.\n\nI. Some lamps are switches.\n\nII. No lamp is a switch.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Two 'some' statements give no definite link between lamps and switches. Yet either some lamps are switches or none is, so the pair is complementary. Either I or II follows."
+    },
+    {
+      "id": "SBIPO-T2-076",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: No wall is a door. Some doors are windows.\n\nI. Some windows are walls.\n\nII. All windows are doors.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Windows and walls are not linked definitely, so I is only a possibility. 'Some doors are windows' does not mean every window is a door. Neither follows."
+    },
+    {
+      "id": "SBIPO-T2-077",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBIPO-T2-PZ1",
+      "stem": "Who sits second to the right of K?",
+      "options": [
+        "O",
+        "J",
+        "L",
+        "W",
+        "N"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Left to right: M, Q, J, O, K, W, L, N. K is 4th from the right, the 5th seat. Q is three seats from K and not at an end, so Q is 2nd and M 1st. N is at the other end with L beside it. O is 4th, and J, not next to K, is 3rd, leaving W 6th."
+    },
+    {
+      "id": "SBIPO-T2-078",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBIPO-T2-PZ1",
+      "stem": "How many persons sit between M and W?",
+      "options": [
+        "Six",
+        "Five",
+        "Four",
+        "Three",
+        "Two"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Left to right: M, Q, J, O, K, W, L, N. K is 4th from the right, the 5th seat. Q is three seats from K and not at an end, so Q is 2nd and M 1st. N is at the other end with L beside it. O is 4th, and J, not next to K, is 3rd, leaving W 6th. M is 1st and W 6th, so Q, J, O and K sit between them."
+    },
+    {
+      "id": "SBIPO-T2-079",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBIPO-T2-PZ1",
+      "stem": "Who sits exactly between J and K?",
+      "options": [
+        "L",
+        "Q",
+        "M",
+        "O",
+        "W"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Left to right: M, Q, J, O, K, W, L, N. K is 4th from the right, the 5th seat. Q is three seats from K and not at an end, so Q is 2nd and M 1st. N is at the other end with L beside it. O is 4th, and J, not next to K, is 3rd, leaving W 6th."
+    },
+    {
+      "id": "SBIPO-T2-080",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBIPO-T2-PZ1",
+      "stem": "Which pair sits at the two ends of the row?",
+      "options": [
+        "M and N",
+        "Q and N",
+        "J and N",
+        "M and L",
+        "M and W"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Left to right: M, Q, J, O, K, W, L, N. K is 4th from the right, the 5th seat. Q is three seats from K and not at an end, so Q is 2nd and M 1st. N is at the other end with L beside it. O is 4th, and J, not next to K, is 3rd, leaving W 6th."
+    },
+    {
+      "id": "SBIPO-T2-081",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBIPO-T2-PZ1",
+      "stem": "Who sits second to the left of L?",
+      "options": [
+        "N",
+        "W",
+        "O",
+        "J",
+        "K"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Left to right: M, Q, J, O, K, W, L, N. K is 4th from the right, the 5th seat. Q is three seats from K and not at an end, so Q is 2nd and M 1st. N is at the other end with L beside it. O is 4th, and J, not next to K, is 3rd, leaving W 6th. L is 7th, so second to its left is the 5th seat, K."
+    },
+    {
+      "id": "SBIPO-T2-082",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBIPO-T2-PZ2",
+      "stem": "Who owns the Grey car?",
+      "options": [
+        "Tanvi",
+        "Sana",
+        "Vivek",
+        "Rohit",
+        "Uday"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Floors 1 to 6: Vivek (White), Sana (Red), Zara (Blue), Rohit (Silver), Uday (Black), Tanvi (Grey). Tanvi is on 6, so Blue (Zara) is on 3 and Rohit on 4. Black is on 5. Sana is on the only free even floor, 2, with Vivek below on 1, so Uday is on 5. Red is directly above White: Sana and Vivek. Tanvi has Grey."
+    },
+    {
+      "id": "SBIPO-T2-083",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBIPO-T2-PZ2",
+      "stem": "On which floor does Uday live?",
+      "options": [
+        "Second",
+        "First",
+        "Fifth",
+        "Third",
+        "Fourth"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Floors 1 to 6: Vivek (White), Sana (Red), Zara (Blue), Rohit (Silver), Uday (Black), Tanvi (Grey). Tanvi is on 6, so Blue (Zara) is on 3 and Rohit on 4. Black is on 5. Sana is on the only free even floor, 2, with Vivek below on 1, so Uday is on 5. Red is directly above White: Sana and Vivek. Tanvi has Grey."
+    },
+    {
+      "id": "SBIPO-T2-084",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBIPO-T2-PZ2",
+      "stem": "How many persons live between Sana and Uday?",
+      "options": [
+        "Four",
+        "Two",
+        "One",
+        "Three",
+        "None"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Floors 1 to 6: Vivek (White), Sana (Red), Zara (Blue), Rohit (Silver), Uday (Black), Tanvi (Grey). Tanvi is on 6, so Blue (Zara) is on 3 and Rohit on 4. Black is on 5. Sana is on the only free even floor, 2, with Vivek below on 1, so Uday is on 5. Red is directly above White: Sana and Vivek. Tanvi has Grey. Zara and Rohit live between floors 2 and 5."
+    },
+    {
+      "id": "SBIPO-T2-085",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBIPO-T2-PZ2",
+      "stem": "What colour is the car of the person who lives immediately below Rohit?",
+      "options": [
+        "Red",
+        "White",
+        "Grey",
+        "Black",
+        "Blue"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Floors 1 to 6: Vivek (White), Sana (Red), Zara (Blue), Rohit (Silver), Uday (Black), Tanvi (Grey). Tanvi is on 6, so Blue (Zara) is on 3 and Rohit on 4. Black is on 5. Sana is on the only free even floor, 2, with Vivek below on 1, so Uday is on 5. Red is directly above White: Sana and Vivek. Tanvi has Grey. Zara lives below Rohit and owns the Blue car."
+    },
+    {
+      "id": "SBIPO-T2-086",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBIPO-T2-PZ2",
+      "stem": "Who lives immediately above Vivek?",
+      "options": [
+        "Tanvi",
+        "Rohit",
+        "Uday",
+        "Sana",
+        "Zara"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Floors 1 to 6: Vivek (White), Sana (Red), Zara (Blue), Rohit (Silver), Uday (Black), Tanvi (Grey). Tanvi is on 6, so Blue (Zara) is on 3 and Rohit on 4. Black is on 5. Sana is on the only free even floor, 2, with Vivek below on 1, so Uday is on 5. Red is directly above White: Sana and Vivek. Tanvi has Grey."
+    },
+    {
+      "id": "SBIPO-T2-087",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Comparison",
+      "stimulusId": "SBIPO-T2-PZ3",
+      "stem": "Who has the second-highest savings?",
+      "options": [
+        "K",
+        "H",
+        "J",
+        "G",
+        "F"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Most to least: H, K, F, J, G, I. I is last and G fifth. K > F > J > G, and H > K, so H is first."
+    },
+    {
+      "id": "SBIPO-T2-088",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparison",
+      "stimulusId": "SBIPO-T2-PZ3",
+      "stem": "How many persons have less savings than F?",
+      "options": [
+        "Three",
+        "Four",
+        "Five",
+        "Two",
+        "One"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Most to least: H, K, F, J, G, I. I is last and G fifth. K > F > J > G, and H > K, so H is first. J, G and I have less than F."
+    },
+    {
+      "id": "SBIPO-T2-089",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparison",
+      "stimulusId": "SBIPO-T2-PZ3",
+      "stem": "Who has the third-lowest savings?",
+      "options": [
+        "K",
+        "I",
+        "F",
+        "J",
+        "G"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Most to least: H, K, F, J, G, I. I is last and G fifth. K > F > J > G, and H > K, so H is first. From the bottom: I, G, then J."
+    },
+    {
+      "id": "SBIPO-T2-090",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparison",
+      "stimulusId": "SBIPO-T2-PZ3",
+      "stem": "Which of the following is definitely true?",
+      "options": [
+        "G has more savings than I",
+        "I has more savings than G",
+        "J has less savings than G",
+        "F has more savings than K",
+        "K has the most savings"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Most to least: H, K, F, J, G, I. I is last and G fifth. K > F > J > G, and H > K, so H is first."
+    },
+    {
+      "id": "SBIPO-T2-091",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparison",
+      "stimulusId": "SBIPO-T2-PZ3",
+      "stem": "Who are third and fourth when the savings are arranged from highest to lowest?",
+      "options": [
+        "J and G",
+        "G and I",
+        "F and J",
+        "H and K",
+        "K and F"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Most to least: H, K, F, J, G, I. I is last and G fifth. K > F > J > G, and H > K, so H is first."
+    },
+    {
+      "id": "SBIPO-T2-092",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, 'PRICE' is written as 'OQHBD'. How is 'STOCK' written in that code?",
+      "options": [
+        "QSNBJ",
+        "RTNBJ",
+        "RSNBJ",
+        "RSNCJ",
+        "TUPDL"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each letter moves one place back: P→O, R→Q, I→H, C→B, E→D. So S→R, T→S, O→N, C→B, K→J, giving RSNBJ."
+    },
+    {
+      "id": "SBIPO-T2-093",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "If 'BAD' is coded as 7 because B = 2, A = 1 and D = 4 are added, how is 'FEED' coded?",
+      "options": [
+        "16",
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "F = 6, E = 5, E = 5 and D = 4, and 6 + 5 + 5 + 4 = 20."
+    },
+    {
+      "id": "SBIPO-T2-094",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, 'loan is easy' is written as 'ka mu so', 'easy to pay' as 'so ri ne' and 'pay the loan' as 'ne ka ti'. What is the code for 'to'?",
+      "options": [
+        "ne",
+        "mu",
+        "so",
+        "ri",
+        "ka"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "easy = so (first and second), loan = ka (first and third) and pay = ne (second and third). The remaining code in the second sentence, ri, is 'to'."
+    },
+    {
+      "id": "SBIPO-T2-095",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Introducing a woman, Arjun said, 'Her brother's father is my father's father's only son.' How is the woman related to Arjun?",
+      "options": [
+        "Cousin",
+        "Mother",
+        "Sister-in-law",
+        "Wife",
+        "Sister"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The only son of Arjun's grandfather is Arjun's father. The woman's brother's father is her own father, so she is a daughter of Arjun's father: Arjun's sister."
+    },
+    {
+      "id": "SBIPO-T2-096",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "P is the brother of Q, who is a girl. R is the wife of P. S is a son of Q's father, but S is not P. How is S related to R?",
+      "options": [
+        "Son",
+        "Brother",
+        "Brother-in-law",
+        "Husband",
+        "Father-in-law"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "S is another son of the same father, so S is P's brother. The brother of R's husband is her brother-in-law."
+    },
+    {
+      "id": "SBIPO-T2-097",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Sunil walks 15 m south, turns left and walks 8 m, then turns left again and walks 21 m. How far and in which direction is he from his starting point?",
+      "options": [
+        "8 m north-west",
+        "10 m north-west",
+        "10 m north-east",
+        "10 m south-east",
+        "14 m north-east"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Turning left from south faces east, and left again faces north. He ends 8 m east and 21 − 15 = 6 m north of the start, so √(8² + 6²) = 10 m to the north-east."
+    },
+    {
+      "id": "SBIPO-T2-098",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "If south-east is called north, north-east is called west, and every other direction is renamed in the same way, what is west called?",
+      "options": [
+        "North-east",
+        "South-west",
+        "North",
+        "East",
+        "South-east"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Each direction is turned 135° anticlockwise: south-east to north, north-east to west. Turning west 135° anticlockwise gives south-east."
+    },
+    {
+      "id": "SBIPO-T2-099",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "Neha is 11th from the top and 27th from the bottom in her class. How many students are in the class?",
+      "options": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Total = 11 + 27 − 1 = 37, because Neha is counted in both positions."
+    },
+    {
+      "id": "SBIPO-T2-100",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "How many letters lie between the 9th letter from the left and the 4th letter from the right in the English alphabet?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The 9th letter from the left is I and the 4th from the right is W (23rd). Between them are 23 − 9 − 1 = 13 letters."
+    },
+    {
+      "id": "SBIPO-D-001",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-D-RC",
+      "stem": "What do business correspondents do, according to the passage?",
+      "options": [
+        "Inspect branches for the government",
+        "Lend money from their own savings",
+        "Offer basic banking for a bank locally",
+        "Sell shop goods on credit to farmers",
+        "Run bus services to bank branches"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says they open accounts, accept deposits and pay out withdrawals on behalf of a bank, near where people live."
+    },
+    {
+      "id": "SBIPO-D-002",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-D-RC",
+      "stem": "Why do some agents drift away to other work?",
+      "options": [
+        "Customers do not trust them",
+        "Their commissions are too small",
+        "The devices are too hard to use",
+        "Villagers move to the cities",
+        "Banks forbid them to run shops"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says that where commissions are thin, agents drift away to other work."
+    },
+    {
+      "id": "SBIPO-D-003",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBIPO-D-RC",
+      "stem": "What change have some banks made to keep their agents?",
+      "options": [
+        "A rule that agents cannot quit",
+        "Higher fees charged to customers",
+        "Free hand-held devices for users",
+        "Larger branches in each village",
+        "A fixed monthly sum plus commission"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Some banks pay agents a small fixed amount each month as well as a commission, so a quiet month does not drive them out."
+    },
+    {
+      "id": "SBIPO-D-004",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Vocabulary",
+      "stimulusId": "SBIPO-D-RC",
+      "stem": "Which word is most nearly the SAME in meaning as 'thin' as used in the passage?",
+      "options": [
+        "Sharp",
+        "Slender",
+        "Steady",
+        "Watery",
+        "Meagre"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "'Where commissions are thin' means they are meagre, too small. Slender and watery are other senses of thin that describe objects and liquids."
+    },
+    {
+      "id": "SBIPO-D-005",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fillers",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nThe loan was ........ only after the borrower submitted proof of income.",
+      "options": [
+        "sanctioned",
+        "refused",
+        "rejected",
+        "repaid",
+        "requested"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A bank sanctions, or approves, a loan once it has proof of income. A loan is not repaid before it is given."
+    },
+    {
+      "id": "SBIPO-D-006",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fillers",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nSmall savings, made ........, can grow into a large sum over many years.",
+      "options": [
+        "regularly",
+        "randomly",
+        "recently",
+        "reluctantly",
+        "rarely"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Savings grow over many years when they are made regularly, month after month."
+    },
+    {
+      "id": "SBIPO-D-007",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Double fillers",
+      "stem": "Choose the pair of words that fits the two blanks, in order, to make the sentence meaningful.\n\nThe ........ of the new branch was ........ by a power cut on the opening day.",
+      "options": [
+        "delay, launched",
+        "launched, delay",
+        "launch, hastened",
+        "launch, delayed",
+        "closing, delayed"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A power cut on the opening day delays a launch. 'Launched, delay' and 'delay, launched' put the wrong parts of speech in the blanks."
+    },
+    {
+      "id": "SBIPO-D-008",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe teacher, as well as (A) / the students, (B) / were present (C) / at the function. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "A phrase added with 'as well as' does not change the subject. 'The teacher' is singular, so the verb is 'was present'."
+    },
+    {
+      "id": "SBIPO-D-009",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nScarcely had we (A) / sat down for dinner (B) / when the lights (C) / went out. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence is correct: 'scarcely' takes inverted word order and 'when'."
+    },
+    {
+      "id": "SBIPO-D-010",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nShe is **too much tired** to walk any further.",
+      "options": [
+        "very much tired",
+        "too tired",
+        "so much tired",
+        "too more tired",
+        "No improvement"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Before an adjective, 'too' is used alone: 'too tired to walk'. 'Much' does not go with 'tired' here."
+    },
+    {
+      "id": "SBIPO-D-011",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n7/12 of 1,080 − 35% of 600 = ?",
+      "options": [
+        "380",
+        "390",
+        "400",
+        "410",
+        "420"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "7/12 of 1,080 = 630 and 35% of 600 = 210, so the answer is 420."
+    },
+    {
+      "id": "SBIPO-D-012",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n14, 17, 23, 32, 44, ?",
+      "options": [
+        "54",
+        "56",
+        "57",
+        "58",
+        "59"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are 3, 6, 9, 12, so the next difference is 15 and 44 + 15 = 59."
+    },
+    {
+      "id": "SBIPO-D-013",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "Two equations, I and II, are given. Solve both and choose the correct relationship between x and y.\n\nI. x² − 9 = 0\n\nII. y² − 7y + 12 = 0",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or no relation can be established"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "I: x = 3 or −3. II: y = 3 or 4. x = 3 equals y = 3 and is below 4, and x = −3 is below both. So x ≤ y."
+    },
+    {
+      "id": "SBIPO-D-014",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-D-DI",
+      "stem": "What is the total area (in hectares) sown with wheat in the four villages?",
+      "options": [
+        "1,200",
+        "1,250",
+        "1,300",
+        "1,350",
+        "1,400"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "360 + 280 + 450 + 210 = 1,300 hectares."
+    },
+    {
+      "id": "SBIPO-D-015",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-D-DI",
+      "stem": "The wheat area of Devgarh is how many times its mustard area?",
+      "options": [
+        "3",
+        "4",
+        "4.5",
+        "5",
+        "6"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "450 ÷ 90 = 5."
+    },
+    {
+      "id": "SBIPO-D-016",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-D-DI",
+      "stem": "What is the ratio of the total wheat area to the total mustard area of the four villages?",
+      "options": [
+        "65 : 28",
+        "13 : 5",
+        "5 : 2",
+        "28 : 65",
+        "65 : 24"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Wheat totals 1,300 and mustard 120 + 140 + 90 + 210 = 560. 1,300 : 560 = 65 : 28."
+    },
+    {
+      "id": "SBIPO-D-017",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBIPO-D-DI",
+      "stem": "Sitapur's mustard area is what percentage of its wheat area?",
+      "options": [
+        "33.3%",
+        "40%",
+        "50%",
+        "60%",
+        "200%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "140 ÷ 280 = 0.5, so 50%."
+    },
+    {
+      "id": "SBIPO-D-018",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Discount",
+      "stem": "Two successive discounts of 25% and 12% are equal to a single discount of:",
+      "options": [
+        "30%",
+        "33%",
+        "34%",
+        "37%",
+        "40%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "After 25% off, 75 remains; 12% off that leaves 66. The single discount is 34%, not 37%."
+    },
+    {
+      "id": "SBIPO-D-019",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ages",
+      "stem": "The sum of the present ages of a mother and her daughter is 56 years. Four years ago the mother was three times as old as the daughter. What is the daughter's present age in years?",
+      "options": [
+        "16",
+        "18",
+        "20",
+        "22",
+        "24"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Let the daughter be d. Then 56 − d − 4 = 3(d − 4), so 52 − d = 3d − 12 and d = 16."
+    },
+    {
+      "id": "SBIPO-D-020",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speed, time and distance",
+      "stem": "A cyclist rides to a village at 30 km/h and returns along the same road at 45 km/h. What is her average speed for the whole journey in km/h?",
+      "options": [
+        "36",
+        "37.5",
+        "38",
+        "40",
+        "42"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "For equal distances the average speed is 2 × 30 × 45 ÷ (30 + 45) = 36 km/h, not the simple average of 37.5."
+    },
+    {
+      "id": "SBIPO-D-021",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: H < I = J ≥ K > L\n\nI. H < J\n\nII. L < I",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "I: H < I = J gives H < J, true. II: I = J ≥ K > L gives I > L, true. Both follow."
+    },
+    {
+      "id": "SBIPO-D-022",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: C ≤ D < E ≥ F = G\n\nI. C < F\n\nII. G ≤ E",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "I: D < E and E ≥ F point in opposite directions, so C and F cannot be compared. II: E ≥ F = G gives G ≤ E, true. Only II follows."
+    },
+    {
+      "id": "SBIPO-D-023",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: All apples are fruits. No fruit is a stone.\n\nI. No apple is a stone.\n\nII. Some stones are apples.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Every apple is a fruit and no fruit is a stone, so no apple is a stone (I). That makes II false. Only I follows."
+    },
+    {
+      "id": "SBIPO-D-024",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "SBIPO-D-PZ",
+      "stem": "On which day is A's meeting?",
+      "options": [
+        "Thursday",
+        "Tuesday",
+        "Monday",
+        "Friday",
+        "Wednesday"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Monday to Friday: C (Savings), E (Loans), A (Insurance), B (Pensions), D (Cards). D is Friday, so C and B, three days apart, are Monday and Thursday. E is just before A in the free days Tuesday and Wednesday, and C is before A, so C is Monday and B Thursday. Loans follows C's meeting; Insurance is not Monday, so it is Wednesday and Savings Monday."
+    },
+    {
+      "id": "SBIPO-D-025",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "SBIPO-D-PZ",
+      "stem": "Which topic does E's meeting cover?",
+      "options": [
+        "Insurance",
+        "Loans",
+        "Cards",
+        "Pensions",
+        "Savings"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Monday to Friday: C (Savings), E (Loans), A (Insurance), B (Pensions), D (Cards). D is Friday, so C and B, three days apart, are Monday and Thursday. E is just before A in the free days Tuesday and Wednesday, and C is before A, so C is Monday and B Thursday. Loans follows C's meeting; Insurance is not Monday, so it is Wednesday and Savings Monday."
+    },
+    {
+      "id": "SBIPO-D-026",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "SBIPO-D-PZ",
+      "stem": "How many meetings are held between C's and D's meetings?",
+      "options": [
+        "Three",
+        "One",
+        "Two",
+        "Four",
+        "None"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Monday to Friday: C (Savings), E (Loans), A (Insurance), B (Pensions), D (Cards). D is Friday, so C and B, three days apart, are Monday and Thursday. E is just before A in the free days Tuesday and Wednesday, and C is before A, so C is Monday and B Thursday. Loans follows C's meeting; Insurance is not Monday, so it is Wednesday and Savings Monday."
+    },
+    {
+      "id": "SBIPO-D-027",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "SBIPO-D-PZ",
+      "stem": "Which topic is covered on Thursday?",
+      "options": [
+        "Savings",
+        "Loans",
+        "Pensions",
+        "Insurance",
+        "Cards"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Monday to Friday: C (Savings), E (Loans), A (Insurance), B (Pensions), D (Cards). D is Friday, so C and B, three days apart, are Monday and Thursday. E is just before A in the free days Tuesday and Wednesday, and C is before A, so C is Monday and B Thursday. Loans follows C's meeting; Insurance is not Monday, so it is Wednesday and Savings Monday."
+    },
+    {
+      "id": "SBIPO-D-028",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "SBIPO-D-PZ",
+      "stem": "Whose meeting is on Savings?",
+      "options": [
+        "E",
+        "D",
+        "B",
+        "A",
+        "C"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Monday to Friday: C (Savings), E (Loans), A (Insurance), B (Pensions), D (Cards). D is Friday, so C and B, three days apart, are Monday and Thursday. E is just before A in the free days Tuesday and Wednesday, and C is before A, so C is Monday and B Thursday. Loans follows C's meeting; Insurance is not Monday, so it is Wednesday and Savings Monday."
+    },
+    {
+      "id": "SBIPO-D-029",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, 'GOLD' is written as 'IQNF'. How is 'CASH' written in that code?",
+      "options": [
+        "ECUI",
+        "ECUJ",
+        "FCUJ",
+        "DBTI",
+        "EDUJ"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each letter moves two places forward: G→I, O→Q, L→N, D→F. So C→E, A→C, S→U, H→J, giving ECUJ."
+    },
+    {
+      "id": "SBIPO-D-030",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "K is the daughter of L. L is the brother of M. M is the mother of N. How is N related to K?",
+      "options": [
+        "Cousin",
+        "Nephew",
+        "Uncle",
+        "Niece",
+        "Brother"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "L and M are brother and sister. K is L's child and N is M's child, so N is K's cousin."
+    },
+    {
+      "id": "SBIPO-D-031",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbipoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "In a queue, Raj is 12th from the front. Sita stands behind him with exactly 7 people between them, and she is 6th from the back. How many people are in the queue?",
+      "options": [
+        "23",
+        "25",
+        "26",
+        "27",
+        "28"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Sita is 12 + 7 + 1 = 20th from the front. The total is 20 + 6 − 1 = 25."
+    }
+  ]
+}

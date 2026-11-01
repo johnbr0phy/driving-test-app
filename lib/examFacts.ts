@@ -2370,4 +2370,165 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Provincial Motor Vehicles Ordinance 1965 (Punjab Transport Department copy amended to November 2023: section 4, Third, Tenth and Eleventh Schedules), road signs in Pakistan and provincial licensing guidance, checked November 2026",
     source: { name: "Punjab Driving License Information Management System (DLIMS)", url: "https://dlims.punjab.gov.pk/" },
   },
+  sbipo: {
+    answer:
+      "The SBI PO Preliminary Examination is an online objective test of 100 marks in one hour, with separate timing for each section: English Language 40 questions in 20 minutes, Quantitative Aptitude 30 questions in 20 minutes and Reasoning Ability 30 questions in 20 minutes. This is the pattern in SBI's 2026 advertisement; earlier cycles had 30, 35 and 35 questions. A quarter of a question's marks is deducted for every wrong answer. There is no sectional cut-off in the Prelims: candidates are ranked by category on their total marks and about ten times the vacancies are called for the Main Examination. Prelims marks are not counted in the final merit list.",
+    rows: [
+      { label: "Questions", value: "100" },
+      { label: "Time", value: "1 hour, 20 minutes per section" },
+      { label: "Sections", value: "English 40, Quantitative Aptitude 30, Reasoning Ability 30" },
+      { label: "Marks", value: "100 in all" },
+      { label: "Negative marking", value: "1/4 of the question's marks per wrong answer" },
+      { label: "Cut-off", value: "No sectional cut-off; about 10 times the vacancies per category go to the Mains" },
+      { label: "Given by", value: "State Bank of India (CRPD), online" },
+      { label: "Next stages", value: "Main Examination, then psychometric test, group exercise and interview" },
+    ],
+    basedOn: "the SBI advertisement CRPD/PO/2026-27/09 (Recruitment of Probationary Officers, 18 June 2026), section 8, Selection Procedure",
+    source: { name: "SBI Careers", url: "https://sbi.bank.in/web/careers/current-openings" },
+  },
+  sbiclerk: {
+    answer:
+      "The SBI Clerk (Junior Associates) Preliminary Examination is one online objective test of 100 questions for 100 marks in one hour, with each section timed separately: English Language 30 questions in 20 minutes, Numerical Ability 35 in 20 minutes and Reasoning Ability 35 in 20 minutes. A quarter of a question's marks is deducted for each wrong answer. There are no minimum qualifying marks for any section or for the total: SBI shortlists about ten times the vacancies in each category for the Main exam by aggregate marks, and only Main exam marks count in the final merit list. The 2026 advertisement set the Prelims tentatively for September 2026.",
+    rows: [
+      { label: "Questions", value: "100 (five options each in past papers)" },
+      { label: "Time", value: "1 hour, 20 minutes per section" },
+      { label: "Sections", value: "English 30, Numerical Ability 35, Reasoning Ability 35" },
+      { label: "Marks", value: "1 per question, 100 in all" },
+      { label: "Negative marking", value: "1/4 mark per wrong answer" },
+      { label: "Result", value: "No sectional cutoff; about 10 times the vacancies called to the Mains by total marks" },
+      { label: "Given by", value: "State Bank of India (CRPD), online" },
+      { label: "Medium", value: "English test in English; the others in English, Hindi and, in many states, the state's language" },
+    ],
+    basedOn: "SBI's Recruitment of Junior Associates (Customer Support & Sales) advertisement CRPD/CR/2026-27/17 (registration 11 to 31 August 2026), section 4, Selection Procedure",
+    source: { name: "State Bank of India Careers", url: "https://sbi.bank.in/web/careers/current-openings" },
+  },
+  ibpsrrb: {
+    answer:
+      "The IBPS RRB Office Assistant (Multipurpose) Preliminary Examination, often called IBPS RRB Clerk, is one online objective paper of 80 questions in 45 minutes, with each test timed separately: Reasoning 40 questions in 25 minutes and Numerical Ability 40 questions in 20 minutes. Each question carries one mark and a quarter of a mark is deducted for every wrong answer. Candidates must clear a minimum cutoff set by IBPS in both tests; Prelims is qualifying for the Main examination, and only Main marks count for the final merit list and provisional allotment to a Regional Rural Bank. Under the CRP RRBs-XV notification of 1 September 2026, the Prelims is scheduled for November or December 2026.",
+    rows: [
+      { label: "Questions", value: "80 (five options each in past papers)" },
+      { label: "Time", value: "45 minutes: Reasoning 25, Numerical Ability 20" },
+      { label: "Sections", value: "Reasoning 40, Numerical Ability 40" },
+      { label: "Marks", value: "1 per question, 80 in all" },
+      { label: "Negative marking", value: "1/4 mark per wrong answer" },
+      { label: "Result", value: "A cutoff in both tests, set by IBPS, then the Mains" },
+      { label: "Given by", value: "Institute of Banking Personnel Selection (IBPS), online" },
+      { label: "Medium", value: "English, Hindi or the state's listed language" },
+    ],
+    basedOn: "the IBPS CRP RRBs-XV notification of 1 September 2026, section D (Online Examination Structure) and E (Penalty for Wrong Answers)",
+    source: { name: "IBPS", url: "https://www.ibps.in" },
+  },
+  delhipolice: {
+    answer:
+      "The Delhi Police Constable (Executive) Computer Based Examination (CBE) is conducted by the Staff Selection Commission for Delhi Police. It is one objective paper of 100 multiple-choice questions for 100 marks in 90 minutes: General Knowledge and Current Affairs 50, Reasoning 25, Numerical Ability 15, and Computer Fundamentals, MS Excel, MS Word, Communication, Internet, WWW and Web Browsers 10, at matriculation level, in English and Hindi. Each wrong answer loses 0.25 marks. Candidates who reach the cut-off marks are shortlisted for the Physical Endurance and Measurement Test and document verification with Delhi Police, and the final merit list follows the CBE marks.",
+    rows: [
+      { label: "Questions", value: "100 (GK 50, Reasoning 25, Numerical Ability 15, Computer 10)" },
+      { label: "Time", value: "90 minutes, no sectional timing" },
+      { label: "Marks", value: "1 per right answer, 100 in all" },
+      { label: "Negative marking", value: "0.25 per wrong answer" },
+      { label: "Cut-off for PE&MT", value: "UR 35, SC/ST/OBC/EWS 30, ex-servicemen 25 (normalised marks)" },
+      { label: "Level", value: "Matriculation (Class 10)" },
+      { label: "Language", value: "English and Hindi" },
+      { label: "Next stages", value: "PE&MT and document verification by Delhi Police, medical examination" },
+      { label: "Given by", value: "Staff Selection Commission, computer-based, for Delhi Police" },
+    ],
+    basedOn: "the SSC notice for the Constable (Executive) Male and Female in Delhi Police Examination, 2025 (22 September 2025)",
+    source: { name: "Staff Selection Commission", url: "https://ssc.gov.in" },
+    tigertest:
+      "Tigertest has two full Delhi Police Constable mock tests of 100 questions in 90 minutes and eight topic drills: four for general knowledge, two for reasoning, one for numerical ability and one for computer. All of it is free with no account required; scores are percent correct, with negative marking explained rather than applied.",
+  },
+  biharpolice: {
+    answer:
+      "The Bihar Police Constable written exam is set by the Central Selection Board of Constable (CSBC), Bihar, for Constable posts in Bihar Police and the Bihar Special Armed Police. Under Advertisement No. 01/2025 (19,838 posts) it is one objective OMR paper of 100 questions in 2 hours, one mark each, at Class 10 (Matric) level on Hindi, English, Mathematics, Social Science, Science and General Knowledge with current affairs. The advertisement mentions no deduction for wrong answers. Candidates under 30% are out; the written exam only shortlists about five times the vacancies for the physical efficiency test, whose marks make the final merit list.",
+    rows: [
+      { label: "Questions", value: "100 objective (1 mark each, 100 marks), OMR sheet" },
+      { label: "Time", value: "2 hours" },
+      { label: "Subjects", value: "Hindi, English, Maths, Social Science, Science, GK and current affairs (Class 10 level)" },
+      { label: "Negative marking", value: "None mentioned in Advt. 01/2025; check your notice" },
+      { label: "Minimum", value: "30% to stay in; written exam is qualifying only" },
+      { label: "Latest exam", value: "16 July to 3 August 2025 (Advt. 01/2025, 19,838 posts)" },
+      { label: "Next stage", value: "Physical efficiency test (final merit on its marks)" },
+      { label: "Given by", value: "Central Selection Board of Constable (CSBC), Bihar" },
+    ],
+    basedOn: "CSBC Advertisement No. 01/2025 and its exam notice of 12 June 2025, checked November 2026",
+    source: { name: "Central Selection Board of Constable, Bihar", url: "https://csbc.bihar.gov.in" },
+  },
+  rajpolice: {
+    answer:
+      "The Rajasthan Police Constable written exam is set by Rajasthan Police for constable posts. As guides report the 2025 notification, it has 150 objective questions in 2 hours, in three parts: logical ability, reasoning and basic computer knowledge 60; general knowledge, general science, social science, current affairs and laws on crimes against women and children 45; and Rajasthan's history, culture, geography, economy and polity 45. A quarter of a question's marks is taken off for each wrong answer. There is no Hindi language section; the paper is set in Hindi and English. The latest written exam was held on 13 and 14 September 2025; candidates who clear it go on to physical tests and document checks.",
+    rows: [
+      { label: "Questions", value: "150 objective (1 mark each, per guides)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Parts", value: "Reasoning and computer 60, GK with laws on women and children 45, Rajasthan GK 45" },
+      { label: "Negative marking", value: "A quarter of a question's marks per wrong answer (per guides)" },
+      { label: "Latest exam", value: "13 and 14 September 2025 (notification of 9 April 2025)" },
+      { label: "Next stages", value: "Physical efficiency and standards tests, documents and medical" },
+      { label: "Given by", value: "Rajasthan Police" },
+    ],
+    basedOn: "the Rajasthan Police constable recruitment of 2025 as reported by exam guides, checked November 2026",
+    source: { name: "Rajasthan Police", url: "https://police.rajasthan.gov.in" },
+  },
+  mppolice: {
+    answer:
+      "The MP Police Constable written exam is the Police Constable Recruitment Test of the Madhya Pradesh Employees Selection Board (MPESB). Guides report 100 objective questions worth 1 mark each, 100 marks in all, in 2 hours, with no negative marking, in three parts: General Knowledge and Reasoning 40, Intellectual and Mental Ability 30, and Science and Simple Arithmetic 30. The latest recruitment, for 7,500 posts, held its online written exam from 30 October 2025; candidates shortlisted on written marks go on to the physical tests.",
+    rows: [
+      { label: "Questions", value: "100 objective (1 mark each, 100 marks)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Parts", value: "GK and Reasoning 40, Intellectual and Mental Ability 30, Science and Simple Arithmetic 30" },
+      { label: "Negative marking", value: "None (per guides)" },
+      { label: "Latest exam", value: "From 30 October 2025, online (7,500 posts)" },
+      { label: "Next stages", value: "Physical tests, document verification and medical" },
+      { label: "Given by", value: "Madhya Pradesh Employees Selection Board (MPESB)" },
+    ],
+    basedOn: "the MPESB Police Constable Recruitment Test 2025 as reported by exam guides, checked November 2026",
+    source: { name: "Madhya Pradesh Employees Selection Board", url: "https://esb.mp.gov.in" },
+  },
+  apush: {
+    answer:
+      "The AP U.S. History Exam is a fully digital, 3 hour 15 minute exam from the College Board. Section I has 55 multiple-choice questions in 55 minutes (40% of the score), usually in sets of three or four that share a primary or secondary source, plus 3 short-answer questions in 40 minutes (20%). Section II has a document-based question in 60 minutes (25%) and a long essay in 40 minutes (15%). The course runs from 1491 to the present in nine periods; Periods 3 to 8 are each 10% to 17% of the multiple-choice section. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "55 questions, 55 minutes, 40% of score" },
+      { label: "Short answer", value: "3 questions, 40 minutes, 20%" },
+      { label: "Essays", value: "DBQ 60 minutes (25%), long essay 40 minutes (15%)" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Periods", value: "9, from 1491 to the present" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+      { label: "Given by", value: "College Board, digital in the Bluebook app" },
+    ],
+    basedOn: "the College Board AP U.S. History Course and Exam Description (effective fall 2026) and AP Central exam page",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-united-states-history/exam" },
+    tigertest:
+      "Tigertest has two full 55-question AP U.S. History multiple-choice sections and seven drills by period, all free with no account required. The short-answer questions and essays are not included.",
+  },
+  apbio: {
+    answer:
+      "The AP Biology Exam is a 3-hour exam from the College Board, given in May. Section I has 60 multiple-choice questions with four choices in 90 minutes (50% of the score), some in sets of typically four to five that share a stimulus; Section II has 6 free-response questions in 90 minutes (50%). The exam is hybrid digital: multiple choice in the Bluebook app, free responses handwritten. A calculator is allowed and a formula sheet is provided. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "60 questions, 90 minutes, 50% of score" },
+      { label: "Free response", value: "6 questions (2 long, 4 short), 90 minutes, 50%" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Units", value: "8, from 8-11% (Chemistry of Life) to 13-20% (Natural Selection)" },
+      { label: "Calculator", value: "Four-function, scientific or graphing; formula sheet provided" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+    ],
+    basedOn: "the College Board AP Biology exam page and Course and Exam Description (effective fall 2025)",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-biology/exam" },
+    tigertest:
+      "Tigertest has two full 60-question AP Biology multiple-choice sections and eight drills, one per unit, all free with no account required. The free-response section is not included.",
+  },
+  phcse: {
+    answer:
+      "The Civil Service Exam (Career Service Examination, Pen and Paper Test or CSE-PPT) is the Civil Service Commission's test for eligibility for permanent government positions in the Philippines. It has two levels. Both test verbal ability (in English and Filipino), numerical ability and general information on the Philippine Constitution, R.A. 6713, peace and human rights, and the environment; the Professional level adds analytical ability and the Subprofessional level adds clerical ability. For the 2026 sittings the Professional level had 170 items in 3 hours and 10 minutes and the Subprofessional level 165 items in 2 hours and 40 minutes. You need a general rating of at least 80.00 to pass. Professional eligibility covers first and second level positions; Subprofessional covers first level positions only.",
+    rows: [
+      { label: "Professional", value: "170 items, 3 hours 10 minutes (2026)" },
+      { label: "Subprofessional", value: "165 items, 2 hours 40 minutes (2026)" },
+      { label: "Both levels", value: "Verbal, numerical, general information" },
+      { label: "Level-specific", value: "Analytical (Professional), clerical (Subprofessional)" },
+      { label: "Passing", value: "General rating of 80.00" },
+      { label: "2026 dates", value: "8 March and 9 August 2026" },
+      { label: "Run by", value: "Civil Service Commission (CSC)" },
+    ],
+    basedOn: "the CSC examination announcements for the March and August 2026 CSE-PPT (No. 08, s. 2025 and No. 03, s. 2026) as reported, checked November 2026",
+    source: { name: "Civil Service Commission", url: "https://csc.gov.ph" },
+  },
 };

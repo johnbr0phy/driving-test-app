@@ -23,10 +23,19 @@ Fix items in the Python sources (never hand-edit the JSON), keep the item count 
   (`sed '/bankSizes/...'` or copy `tools/validate_v2_bank.py` to /tmp and stub the write), with the
   plan in the builder's `WIRING.md`; it must report 0 problems. Key strictly longest under 25%.
 
+## 2b. Sorted number options must not give the key away
+Items whose options are all numbers are sorted ascending and locked. If distractors are written
+around the key, the key lands in a middle slot almost every time and a test-wise candidate can drop
+the smallest and largest. Count your bank: across all locked all-number items the key should sit in
+the lowest or highest slot about as often as chance (4 options: about half the time in an end slot;
+5 options: about 40%). Fix by choosing plausible distractors so the key is sometimes the smallest or
+largest value (common errors that overshoot, or that undershoot), never by unlocking the order.
+
 ## 3. Duplicates across the wave
-All ten batch-1 banks are final now: `data/v2/{rrbgroupd,sscgd,sscchsl,sscmts,uppolice,ibpsclerk,jnvst,
-jambeng,appsych}/questions.json` and `data/pakistan-driving-questions.json`, plus the older
-`data/v2/{ssccgl,rrbntpc,ibpspo,ctet}`. Compare your stems against all of them (normalised text,
+Compare against every bank in your family: all India banks in `data/v2/` (ssccgl, rrbntpc, ibpspo,
+ctet, rrbgroupd, sscgd, sscchsl, sscmts, uppolice, ibpsclerk, jnvst, sbiclerk, sbipo, ibpsrrb,
+biharpolice, rajpolice, delhipolice, mppolice), the US school banks (appsych, apush, apbio, sat, act,
+psat, ged), and for phcse also the other Philippines and general aptitude banks. Compare your stems against all of them (normalised text,
 same numbers, same key fact). Rewrite YOUR item when it duplicates or near-duplicates another bank's
 item with the same numbers or the same fact and answer. Generic templates with different content
 are fine.

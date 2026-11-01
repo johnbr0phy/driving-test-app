@@ -1,0 +1,4922 @@
+[
+  {
+    "id": "RAJPOLICE-T1-001",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Ammeter : Current :: Voltmeter : ?",
+    "options": [
+      "Resistance",
+      "Potential difference",
+      "Charge",
+      "Power"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An ammeter measures electric current and a voltmeter measures potential difference (voltage). Resistance is measured with an ohmmeter."
+  },
+  {
+    "id": "RAJPOLICE-T1-002",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Mohan is Ritu's mother's father, and Mohan has only one child. How is Ritu's mother related to Mohan's wife?",
+    "options": [
+      "Daughter-in-law",
+      "Daughter",
+      "Niece",
+      "Sister"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ritu's mother is Mohan's only child, so she is the daughter of Mohan and his wife."
+  },
+  {
+    "id": "RAJPOLICE-T1-003",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Computer basics",
+    "stem": "Which memory loses its contents when the computer is switched off?",
+    "options": [
+      "ROM",
+      "Pen drive",
+      "RAM",
+      "Hard disk"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "RAM is volatile, so whatever it holds is lost when the power goes. ROM, hard disks and pen drives keep their data."
+  },
+  {
+    "id": "RAJPOLICE-T1-004",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "6 : 42 :: 9 : ?",
+    "options": [
+      "63",
+      "72",
+      "81",
+      "90"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "6 × 7 = 42, so each number is multiplied by the next whole number. 9 × 10 = 90."
+  },
+  {
+    "id": "RAJPOLICE-T1-005",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "P is the mother of Q. R is the husband of P. S is the sister of R. How is S related to Q?",
+    "options": [
+      "Grandmother",
+      "Sister",
+      "Aunt (father's sister)",
+      "Mother"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "R is P's husband, so R is Q's father. S is R's sister, so S is Q's father's sister, Q's aunt (bua)."
+  },
+  {
+    "id": "RAJPOLICE-T1-006",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Storage",
+    "stem": "Which of these keeps its data without power and has no moving parts?",
+    "options": [
+      "Register",
+      "RAM",
+      "SSD",
+      "Cache"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A solid state drive (SSD) stores data on flash memory chips, so it keeps data when switched off. RAM, cache and registers are volatile."
+  },
+  {
+    "id": "RAJPOLICE-T1-007",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "CFI : DHL :: JMP : ?",
+    "options": [
+      "KOT",
+      "LOS",
+      "KNR",
+      "KOS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The first letter moves 1 place, the second 2 and the third 3: C to D, F to H, I to L. So J to K, M to O, P to S, giving KOS."
+  },
+  {
+    "id": "RAJPOLICE-T1-008",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Lata faces south. She turns 45° clockwise and then 180° anticlockwise. Which direction does she face now?",
+    "options": [
+      "North-east",
+      "South-east",
+      "South-west",
+      "North-west"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Clockwise from south is towards west, so 45° brings her to south-west. A 180° turn from south-west faces her north-east."
+  },
+  {
+    "id": "RAJPOLICE-T1-009",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Storage",
+    "stem": "Taking 1 GB = 1024 MB, as computer exams do, which is more storage: 2 GB or 2,000 MB?",
+    "options": [
+      "It depends on the file type",
+      "2 GB",
+      "2,000 MB",
+      "They are equal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "1 GB = 1024 MB, so 2 GB = 2048 MB, which is more than 2,000 MB."
+  },
+  {
+    "id": "RAJPOLICE-T1-010",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which number is the odd one out: 36, 49, 64, 75?",
+    "options": [
+      "36",
+      "49",
+      "64",
+      "75"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "36, 49 and 64 are perfect squares (6², 7², 8²). 75 is not a perfect square."
+  },
+  {
+    "id": "RAJPOLICE-T1-011",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Asha walks 4 km south, then 5 km east, then 16 km north. How far is she from her starting point, and in which direction?",
+    "options": [
+      "17 km, north-east",
+      "13 km, north-west",
+      "12 km, north",
+      "13 km, north-east"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Going 4 km south and then 16 km north leaves her 12 km north of the start, and she is also 5 km east. The distance is √(12² + 5²) = √169 = 13 km, towards the north-east."
+  },
+  {
+    "id": "RAJPOLICE-T1-012",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Input and output",
+    "stem": "Which of these is an output device?",
+    "options": [
+      "Mouse",
+      "Printer",
+      "Scanner",
+      "Keyboard"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A printer gives output on paper. A keyboard, mouse and scanner are input devices: they send data into the computer."
+  },
+  {
+    "id": "RAJPOLICE-T1-013",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Ghoomar, Kalbeliya, Bhangra, Chari.",
+    "options": [
+      "Bhangra",
+      "Ghoomar",
+      "Kalbeliya",
+      "Chari"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ghoomar, Kalbeliya and Chari are folk dances of Rajasthan. Bhangra is a folk dance of Punjab."
+  },
+  {
+    "id": "RAJPOLICE-T1-014",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a row of 33 children, Kavita is 21st from the right. What is her position from the left?",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Position from the left = total - position from the right + 1 = 33 - 21 + 1 = 13."
+  },
+  {
+    "id": "RAJPOLICE-T1-015",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Word",
+    "stem": "In MS Word, which shortcut makes the selected text bold?",
+    "options": [
+      "Ctrl + B",
+      "Ctrl + D",
+      "Ctrl + I",
+      "Ctrl + U"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ctrl + B is bold, Ctrl + I is italic and Ctrl + U is underline. Ctrl + D opens the Font dialog box."
+  },
+  {
+    "id": "RAJPOLICE-T1-016",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series 3, 9, 19, 33, 51, ?",
+    "options": [
+      "69",
+      "70",
+      "71",
+      "73"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The gaps are 6, 10, 14 and 18, growing by 4 each time. The next gap is 22, so 51 + 22 = 73."
+  },
+  {
+    "id": "RAJPOLICE-T1-017",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "Sita earns more than Gita but less than Mona. Rani earns more than Mona, and Tara earns the least of all five. Who earns the second highest?",
+    "options": [
+      "Mona",
+      "Sita",
+      "Gita",
+      "Rani"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "From highest the order is Rani, Mona, Sita, Gita, Tara. Mona is second."
+  },
+  {
+    "id": "RAJPOLICE-T1-018",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "MS Excel",
+    "stem": "In MS Excel, what does the formula =AVERAGE(B2:B5) work out?",
+    "options": [
+      "The largest value in B2 to B5",
+      "The number of cells from B2 to B5",
+      "The total of B2 and B5 only",
+      "The mean of the values in B2 to B5"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AVERAGE adds the values in the range B2:B5 and divides by how many there are. The colon means 'from B2 to B5'."
+  },
+  {
+    "id": "RAJPOLICE-T1-019",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series 3, 12, 48, 192, ?",
+    "options": [
+      "384",
+      "576",
+      "768",
+      "960"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is 4 times the one before: 192 × 4 = 768."
+  },
+  {
+    "id": "RAJPOLICE-T1-020",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All camels are animals. No animal is a machine. Conclusions: I. No camel is a machine. II. Some machines are camels. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Every camel is inside the group of animals, and no animal is a machine, so no camel is a machine: I follows. II contradicts I, so it does not follow."
+  },
+  {
+    "id": "RAJPOLICE-T1-021",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series 8, 17, 35, 71, ?",
+    "options": [
+      "139",
+      "141",
+      "142",
+      "143"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is doubled and 1 is added: 8 × 2 + 1 = 17, 17 × 2 + 1 = 35, 35 × 2 + 1 = 71, 71 × 2 + 1 = 143."
+  },
+  {
+    "id": "RAJPOLICE-T1-022",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If 1 January of a leap year is a Thursday, what day is 1 January of the next year?",
+    "options": [
+      "Saturday",
+      "Thursday",
+      "Sunday",
+      "Friday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A leap year has 366 days, which is 52 weeks and 2 odd days. So the day moves forward by two, to Saturday."
+  },
+  {
+    "id": "RAJPOLICE-T1-023",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Excel",
+    "stem": "In MS Excel, how is the cell in column C and row 5 written?",
+    "options": [
+      "C:5",
+      "R5C",
+      "5C",
+      "C5"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A cell address is the column letter followed by the row number, so column C, row 5 is C5."
+  },
+  {
+    "id": "RAJPOLICE-T1-024",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next in the series C, E, H, L, ?",
+    "options": [
+      "O",
+      "R",
+      "P",
+      "Q"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The gaps grow by one: C (3) +2 = E (5), +3 = H (8), +4 = L (12), +5 = Q (17)."
+  },
+  {
+    "id": "RAJPOLICE-T1-025",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If 11 October is a Saturday, what day of the week is 4 November of the same year?",
+    "options": [
+      "Monday",
+      "Saturday",
+      "Wednesday",
+      "Tuesday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "October has 31 days, so from 11 October to 4 November is 20 + 4 = 24 days, which is 3 weeks and 3 days. Three days after Saturday is Tuesday."
+  },
+  {
+    "id": "RAJPOLICE-T1-026",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "MS PowerPoint",
+    "stem": "Which key starts a PowerPoint slide show from the first slide?",
+    "options": [
+      "F5",
+      "F12",
+      "F1",
+      "F7"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "F5 starts the slide show from the beginning (Shift + F5 starts from the current slide). F7 is spelling check, F1 is Help and F12 is Save As."
+  },
+  {
+    "id": "RAJPOLICE-T1-027",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If TIGER is written as UJHFS, how is HORSE written in that code?",
+    "options": [
+      "IPSTF",
+      "IPTSF",
+      "IPSUF",
+      "GNQRD"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter moves one place forward: T to U, I to J and so on. HORSE becomes IPSTF."
+  },
+  {
+    "id": "RAJPOLICE-T1-028",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the smaller angle between the hour hand and the minute hand of a clock at 2:50?",
+    "options": [
+      "120°",
+      "145°",
+      "155°",
+      "215°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Angle = |30 × hours - 5.5 × minutes| = |60 - 275| = 215°. That is the larger angle, so the smaller one is 360° - 215° = 145°."
+  },
+  {
+    "id": "RAJPOLICE-T1-029",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Software",
+    "stem": "What is the main job of an operating system such as Windows or Linux?",
+    "options": [
+      "Checking spelling",
+      "Writing letters",
+      "Editing photographs",
+      "Managing the hardware and programs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The operating system manages memory, files and devices, and lets application programs run."
+  },
+  {
+    "id": "RAJPOLICE-T1-030",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a code, FORT is written as 6-15-18-20. How is WALL written in that code?",
+    "options": [
+      "23-1-12-12",
+      "22-1-12-12",
+      "23-1-11-11",
+      "23-2-12-12"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter is replaced by its position in the alphabet: F = 6, O = 15, R = 18, T = 20. W = 23, A = 1, L = 12, L = 12."
+  },
+  {
+    "id": "RAJPOLICE-T1-031",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "A clock shows 9:15. What time does its mirror image show?",
+    "options": [
+      "2:45",
+      "2:15",
+      "3:15",
+      "3:45"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For a mirror image subtract the time from 11:60 (that is, 12:00): 11:60 - 9:15 = 2:45."
+  },
+  {
+    "id": "RAJPOLICE-T1-032",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Email",
+    "stem": "In email, what does 'Cc' stand for?",
+    "options": [
+      "Clear contents",
+      "Closed copy",
+      "Carbon copy",
+      "Computer code"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cc sends a copy of the email to other people, and every receiver can see who got it. Bcc (blind carbon copy) hides those names."
+  },
+  {
+    "id": "RAJPOLICE-T1-033",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If CAMEL is coded as LEMAC, how is HORSE coded?",
+    "options": [
+      "HSROE",
+      "ESORH",
+      "EROSH",
+      "ESROH"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The word is written backwards: CAMEL reversed is LEMAC, so HORSE reversed is ESROH."
+  },
+  {
+    "id": "RAJPOLICE-T1-034",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arrangement",
+    "stem": "Five friends sit in a row facing north. Kamal is at the left end and Sohan at the right end. Ravi is to the immediate right of Amit, and Deepak sits between Kamal and Amit. Who sits in the middle?",
+    "options": [
+      "Kamal",
+      "Amit",
+      "Deepak",
+      "Ravi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "From the left the order is Kamal, Deepak, Amit, Ravi, Sohan. The middle (third) seat is Amit's."
+  },
+  {
+    "id": "RAJPOLICE-T1-035",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cyber safety",
+    "stem": "A text message asks you to share your bank OTP to stop your account being blocked. This is an example of:",
+    "options": [
+      "Debugging",
+      "Phishing",
+      "Encryption",
+      "A firewall"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Phishing tricks people into giving away passwords, OTPs or bank details by pretending to be a bank or another trusted body. Banks never ask for an OTP."
+  },
+  {
+    "id": "RAJPOLICE-T1-036",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alphabet test",
+    "stem": "Which letter is 8th to the right of the 9th letter from the right end of the English alphabet?",
+    "options": [
+      "Y",
+      "Q",
+      "J",
+      "Z"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The 9th letter from the right is the 18th from the left, R. Eight places to its right is the 26th letter, Z."
+  },
+  {
+    "id": "RAJPOLICE-T1-037",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Statement and conclusion",
+    "stem": "Statement: \"Wear a helmet while riding a two-wheeler; it can save your life.\" Conclusions: I. Helmets reduce head injuries in accidents. II. Everyone who wears a helmet is safe from all injuries. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The advice rests on helmets protecting the head, so I follows. 'Can save your life' does not mean a rider is safe from every injury, so II does not."
+  },
+  {
+    "id": "RAJPOLICE-T1-038",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cyber law",
+    "stem": "Which Act is India's main law on cyber crime and electronic records?",
+    "options": [
+      "Information Technology Act, 2000",
+      "Copyright Act, 1957",
+      "Consumer Protection Act, 2019",
+      "Indian Telegraph Act, 1885"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Information Technology Act, 2000 gives legal recognition to electronic records and digital signatures and defines cyber offences such as identity theft and hacking."
+  },
+  {
+    "id": "RAJPOLICE-T1-039",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Missing number",
+    "stem": "In each row the third number follows the same rule: (4, 9, 13), (7, 5, 12), (8, ?, 19). Find the missing number.",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "27"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The third number is the sum of the first two: 4 + 9 = 13, 7 + 5 = 12. So 8 + ? = 19 and ? = 11."
+  },
+  {
+    "id": "RAJPOLICE-T1-040",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inequality",
+    "stem": "If K < L ≤ M, M = N and N < O, which conclusions are definitely true? I. K < N II. O > L",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The chain is K < L ≤ M = N < O. So K < N is true, and L ≤ N < O gives O > L. Both follow."
+  },
+  {
+    "id": "RAJPOLICE-T1-041",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "The Rigveda is divided into how many books (mandalas)?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The Rigveda has 10 mandalas containing 1,028 hymns. It is the oldest of the four Vedas."
+  },
+  {
+    "id": "RAJPOLICE-T1-042",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "POCSO Act",
+    "stem": "Under the Protection of Children from Sexual Offences (POCSO) Act, 2012, a 'child' is a person below what age?",
+    "options": [
+      "14 years",
+      "16 years",
+      "18 years",
+      "21 years"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "POCSO defines a child as anyone below 18 years, boy or girl. The Act is gender-neutral."
+  },
+  {
+    "id": "RAJPOLICE-T1-043",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "The famous rust-free Iron Pillar of the Gupta period stands in which city?",
+    "options": [
+      "Prayagraj",
+      "Delhi",
+      "Ujjain",
+      "Patna"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Iron Pillar stands in the Qutub complex at Mehrauli, Delhi. It has resisted rust for about 1,600 years."
+  },
+  {
+    "id": "RAJPOLICE-T1-044",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "Maharaja Ranjit Singh's Sikh kingdom had its capital at:",
+    "options": [
+      "Peshawar",
+      "Lahore",
+      "Patiala",
+      "Amritsar"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ranjit Singh took Lahore in 1799 and made it his capital. The British annexed Punjab in 1849, ten years after his death."
+  },
+  {
+    "id": "RAJPOLICE-T1-045",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Domestic violence",
+    "stem": "Under the Protection of Women from Domestic Violence Act, 2005, which official helps an aggrieved woman make an application and get shelter or medical help?",
+    "options": [
+      "Lokayukta",
+      "Returning Officer",
+      "Protection Officer",
+      "Revenue Inspector"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Act provides for Protection Officers, who help the woman approach the Magistrate and reach shelter homes and medical facilities. The Act covers physical, sexual, verbal, emotional and economic abuse."
+  },
+  {
+    "id": "RAJPOLICE-T1-046",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "In which year did the British Parliament pass the Indian Independence Act?",
+    "options": [
+      "1945",
+      "1946",
+      "1947",
+      "1950"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The Indian Independence Act of July 1947 created India and Pakistan as independent dominions from 15 August 1947."
+  },
+  {
+    "id": "RAJPOLICE-T1-047",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "A government's fiscal deficit is the gap between its total spending and its total receipts other than:",
+    "options": [
+      "Grants",
+      "Tax revenue",
+      "Interest receipts",
+      "Borrowings"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fiscal deficit = total expenditure minus total receipts excluding borrowings. It shows how much the government must borrow in the year."
+  },
+  {
+    "id": "RAJPOLICE-T1-048",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Child marriage",
+    "stem": "Under the Prohibition of Child Marriage Act, 2006, what is the minimum age of marriage for a woman?",
+    "options": [
+      "14 years",
+      "15 years",
+      "16 years",
+      "18 years"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "A woman below 18 or a man below 21 is a 'child' for this Act, and a marriage involving a child can be voided at the option of that child."
+  },
+  {
+    "id": "RAJPOLICE-T1-049",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Science",
+    "stem": "A light year is a unit of:",
+    "options": [
+      "Time",
+      "Speed",
+      "Distance",
+      "Brightness"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A light year is the distance light travels in one year, about 9.46 trillion km."
+  },
+  {
+    "id": "RAJPOLICE-T1-050",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval India",
+    "stem": "The Bahmani kingdom of the Deccan was founded in 1347 by:",
+    "options": [
+      "Muhammad bin Tughlaq",
+      "Harihara I",
+      "Krishnadevaraya",
+      "Alauddin Hasan Bahman Shah"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Alauddin Hasan, also called Bahman Shah, rebelled against Muhammad bin Tughlaq and founded the Bahmani kingdom with its capital at Gulbarga."
+  },
+  {
+    "id": "RAJPOLICE-T1-051",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dowry",
+    "stem": "Giving or taking dowry is an offence under which Act?",
+    "options": [
+      "Indian Succession Act, 1925",
+      "Special Marriage Act, 1954",
+      "Hindu Marriage Act, 1955",
+      "Dowry Prohibition Act, 1961"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Dowry Prohibition Act, 1961 makes both giving and taking dowry, and demanding it, offences."
+  },
+  {
+    "id": "RAJPOLICE-T1-052",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Culture",
+    "stem": "Which pair of classical dance and state is correctly matched?",
+    "options": [
+      "Manipuri: Assam",
+      "Bharatanatyam: Tamil Nadu",
+      "Mohiniyattam: Odisha",
+      "Kathakali: Karnataka"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bharatanatyam developed in the temples of Tamil Nadu. Mohiniyattam and Kathakali belong to Kerala, and Manipuri to Manipur."
+  },
+  {
+    "id": "RAJPOLICE-T1-053",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Nagarjuna Sagar dam, one of India's largest masonry dams, is built on which river?",
+    "options": [
+      "Krishna",
+      "Tungabhadra",
+      "Kaveri",
+      "Godavari"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Nagarjuna Sagar stands on the Krishna on the border of Telangana and Andhra Pradesh. Its reservoir flooded the ancient Buddhist site of Nagarjunakonda, whose remains were moved to an island museum."
+  },
+  {
+    "id": "RAJPOLICE-T1-054",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Helplines",
+    "stem": "Which is the national helpline number for children in distress (CHILDLINE)?",
+    "options": [
+      "100",
+      "108",
+      "1076",
+      "1098"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "1098 connects a child in need of care or protection to help, day or night. 108 is an ambulance number."
+  },
+  {
+    "id": "RAJPOLICE-T1-055",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "The Hunter Commission of 1882 was appointed to review:",
+    "options": [
+      "Land revenue",
+      "Police reform",
+      "Education",
+      "Famine relief"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Hunter Commission (1882) reviewed primary and secondary education and urged more schools and grants-in-aid."
+  },
+  {
+    "id": "RAJPOLICE-T1-056",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which Kushan ruler held the Fourth Buddhist Council in Kashmir?",
+    "options": [
+      "Kanishka",
+      "Harsha",
+      "Kadphises I",
+      "Ashoka"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Fourth Buddhist Council met in Kashmir under Kanishka, the greatest Kushan king, whose capital was Purushapura (Peshawar). Ashoka held the Third Council."
+  },
+  {
+    "id": "RAJPOLICE-T1-057",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Workplace harassment",
+    "stem": "Under the Sexual Harassment of Women at Workplace Act, 2013, an employer with how many or more workers must set up an Internal Committee?",
+    "options": [
+      "10",
+      "20",
+      "50",
+      "100"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Every workplace with 10 or more workers must have an Internal Committee. For smaller workplaces a Local Committee is set up in each district."
+  },
+  {
+    "id": "RAJPOLICE-T1-058",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "The idea of the Concurrent List in the Constitution was borrowed from which country?",
+    "options": [
+      "Canada",
+      "Ireland",
+      "Japan",
+      "Australia"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Concurrent List, on which both the Union and the states can make laws, follows the Australian constitution."
+  },
+  {
+    "id": "RAJPOLICE-T1-059",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Which Indian state is known as the 'Spice Garden of India'?",
+    "options": [
+      "Kerala",
+      "Punjab",
+      "Bihar",
+      "Rajasthan"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kerala grows pepper, cardamom, cloves and many other spices, which is why it is called the Spice Garden of India."
+  },
+  {
+    "id": "RAJPOLICE-T1-060",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Right to education",
+    "stem": "Under the Right of Children to Free and Compulsory Education Act, 2009, what share of entry-class seats must private unaided schools give to children from weaker and disadvantaged groups?",
+    "options": [
+      "10%",
+      "15%",
+      "25%",
+      "33%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Section 12 of the RTE Act requires 25% of entry-level seats for such children, with the government paying their fees. The Act covers children from 6 to 14."
+  },
+  {
+    "id": "RAJPOLICE-T1-061",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Which river, like the Narmada, flows west through a rift valley into the Arabian Sea?",
+    "options": [
+      "Mahanadi",
+      "Krishna",
+      "Tapi",
+      "Godavari"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Narmada and the Tapi flow west through rift valleys and form estuaries. The Mahanadi, Godavari and Krishna flow east and form deltas."
+  },
+  {
+    "id": "RAJPOLICE-T1-062",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Under which Article can the President ask the Supreme Court for its advisory opinion?",
+    "options": [
+      "Article 32",
+      "Article 143",
+      "Article 72",
+      "Article 226"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 143 lets the President refer a question of law or fact of public importance to the Supreme Court. Article 72 is the President's power of pardon."
+  },
+  {
+    "id": "RAJPOLICE-T1-063",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Arrest of women",
+    "stem": "Under the criminal procedure law, a woman may be arrested after sunset and before sunrise only in exceptional cases, with the prior permission of:",
+    "options": [
+      "The Station House Officer",
+      "The District Collector",
+      "A Judicial Magistrate of the First Class",
+      "The Superintendent of Police"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "This safeguard, in the old CrPC and kept in the Bharatiya Nagarik Suraksha Sanhita, 2023, needs a written report to, and prior permission of, a Judicial Magistrate of the First Class."
+  },
+  {
+    "id": "RAJPOLICE-T1-064",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Which pair of hill station and state is correctly matched?",
+    "options": [
+      "Mahabaleshwar: Maharashtra",
+      "Ooty: Kerala",
+      "Darjeeling: Sikkim",
+      "Munnar: Tamil Nadu"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mahabaleshwar is in the Western Ghats of Maharashtra. Ooty is in Tamil Nadu, Darjeeling in West Bengal and Munnar in Kerala."
+  },
+  {
+    "id": "RAJPOLICE-T1-065",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Which plant hormone speeds up the ripening of fruit?",
+    "options": [
+      "Auxin",
+      "Ethylene",
+      "Gibberellin",
+      "Cytokinin"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ethylene is a gas that plants give off as fruit ripens. Auxins help shoots grow towards light and gibberellins lengthen stems."
+  },
+  {
+    "id": "RAJPOLICE-T1-066",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "FIR",
+    "stem": "What is a 'Zero FIR'?",
+    "options": [
+      "An FIR any police station must register, whatever the place of the crime",
+      "An FIR for an offence with no fine",
+      "An FIR that can be filed only online",
+      "An FIR closed without any investigation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A police station must record information about a cognisable offence even if the crime happened elsewhere, and then transfer it to the right station. The BNSS, 2023 gives this a clear legal basis."
+  },
+  {
+    "id": "RAJPOLICE-T1-067",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Where is the headquarters of the Securities and Exchange Board of India (SEBI)?",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SEBI, which regulates the stock and securities markets, is based in Mumbai. It was set up in 1988 and given statutory powers in 1992."
+  },
+  {
+    "id": "RAJPOLICE-T1-068",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Which scale measures the hardness of minerals?",
+    "options": [
+      "Richter scale",
+      "Kelvin scale",
+      "Mohs scale",
+      "Beaufort scale"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Mohs scale runs from 1 (talc) to 10 (diamond). The Richter scale measures earthquakes and the Beaufort scale wind force."
+  },
+  {
+    "id": "RAJPOLICE-T1-069",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Juvenile justice",
+    "stem": "Under the Juvenile Justice (Care and Protection of Children) Act, 2015, who first assesses whether a child of 16 to 18 accused of a heinous offence may be tried as an adult?",
+    "options": [
+      "The Lok Adalat",
+      "The Child Welfare Committee",
+      "The Juvenile Justice Board",
+      "The High Court"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Juvenile Justice Board makes a preliminary assessment of the child's mental and physical capacity before any transfer to the Children's Court. The Child Welfare Committee deals with children in need of care."
+  },
+  {
+    "id": "RAJPOLICE-T1-070",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "The Sensex is the main share price index of which institution?",
+    "options": [
+      "Bombay Stock Exchange",
+      "Reserve Bank of India",
+      "National Stock Exchange",
+      "State Bank of India"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Sensex tracks 30 large companies listed on the Bombay Stock Exchange (BSE). The Nifty 50 is the National Stock Exchange's index."
+  },
+  {
+    "id": "RAJPOLICE-T1-071",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Formation of Rajasthan",
+    "stem": "Rajasthan Day (Rajasthan Diwas) is celebrated every year on:",
+    "options": [
+      "26 January",
+      "1 November",
+      "18 March",
+      "30 March"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "On 30 March 1949 Greater Rajasthan was formed, with the big states of Jaipur, Jodhpur, Bikaner and Jaisalmer joining. That date is Rajasthan Day."
+  },
+  {
+    "id": "RAJPOLICE-T1-072",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Folk dance",
+    "stem": "Which folk dance, performed by women twirling in long ghagras, is often called the state dance of Rajasthan?",
+    "options": [
+      "Kachhi Ghodi",
+      "Chari",
+      "Ghoomar",
+      "Gair"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ghoomar began among the Bhils and was taken up by Rajput courts. Gair is danced by men with sticks, and Kachhi Ghodi uses dummy horses."
+  },
+  {
+    "id": "RAJPOLICE-T1-073",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Area",
+    "stem": "Rajasthan, India's largest state by area, covers about what share of the country?",
+    "options": [
+      "About 13%",
+      "About 5%",
+      "About 7.5%",
+      "About 10.4%"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rajasthan covers 342,239 sq km, about 10.4% of India's area. It became the largest state after Madhya Pradesh was split in 2000."
+  },
+  {
+    "id": "RAJPOLICE-T1-074",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Formation of Rajasthan",
+    "stem": "The first stage of the integration of Rajasthan, on 18 March 1948, created which union?",
+    "options": [
+      "United State of Rajasthan",
+      "Matsya Union",
+      "Rajputana Agency",
+      "Greater Rajasthan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Alwar, Bharatpur, Dholpur and Karauli formed the Matsya Union on 18 March 1948, a name suggested by K. M. Munshi."
+  },
+  {
+    "id": "RAJPOLICE-T1-075",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Folk dance",
+    "stem": "Which dance of a snake-charming community of Rajasthan was inscribed on UNESCO's intangible heritage list in 2010?",
+    "options": [
+      "Bhavai",
+      "Chari",
+      "Gair",
+      "Kalbeliya"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Kalbeliya dance, with swirling black skirts and the been, belongs to the Kalbeliya community. UNESCO listed it in 2010."
+  },
+  {
+    "id": "RAJPOLICE-T1-076",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Relief",
+    "stem": "What is the highest peak of Rajasthan and of the Aravalli range?",
+    "options": [
+      "Guru Shikhar",
+      "Ser",
+      "Taragarh",
+      "Achalgarh"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Guru Shikhar (1,722 m) is near Mount Abu in Sirohi district. Ser is the second highest peak."
+  },
+  {
+    "id": "RAJPOLICE-T1-077",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Formation of Rajasthan",
+    "stem": "In how many stages was the integration of Rajasthan completed, ending on 1 November 1956?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Integration took seven stages, from the Matsya Union in March 1948 to the merger of Ajmer-Merwara, Abu and Sunel Tappa on 1 November 1956."
+  },
+  {
+    "id": "RAJPOLICE-T1-078",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Painting",
+    "stem": "The famous 'Bani Thani' painting belongs to which school of painting?",
+    "options": [
+      "Nathdwara",
+      "Kishangarh",
+      "Mewar",
+      "Bundi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Nihal Chand painted Bani Thani at Kishangarh in the time of Raja Sawant Singh (Nagaridas). It is sometimes called India's Mona Lisa."
+  },
+  {
+    "id": "RAJPOLICE-T1-079",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Where does the Luni river, which rises near Ajmer, finally end?",
+    "options": [
+      "In the Rann of Kutch",
+      "In Sambhar lake",
+      "In the Chambal",
+      "In the Gulf of Khambhat"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Luni flows south-west and is lost in the marshes of the Rann of Kutch. Its water turns salty after Balotra."
+  },
+  {
+    "id": "RAJPOLICE-T1-080",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ancient Rajasthan",
+    "stem": "The Harappan site of Kalibangan, on the Ghaggar river, is in which district?",
+    "options": [
+      "Hanumangarh",
+      "Sikar",
+      "Jaipur",
+      "Udaipur"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kalibangan (Hanumangarh), whose name means 'black bangles', has given a ploughed field and fire altars. Ganeshwar (Sikar) and Ahar (Udaipur) are copper age sites."
+  },
+  {
+    "id": "RAJPOLICE-T1-081",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Painting",
+    "stem": "Phad scroll paintings, sung through the night by Bhopa priests, are linked mainly with which area?",
+    "options": [
+      "Shahpura in Bhilwara",
+      "Alwar",
+      "Jaisalmer",
+      "Sri Ganganagar"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Phad scrolls from Shahpura (Bhilwara) tell the stories of the folk deities Pabuji and Devnarayan. The Bhopa sings while his wife holds a lamp to the scenes."
+  },
+  {
+    "id": "RAJPOLICE-T1-082",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "The Rana Pratap Sagar dam at Rawatbhata is built on which river?",
+    "options": [
+      "Mahi",
+      "Chambal",
+      "Banas",
+      "Luni"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Chambal has four dams in a chain: Gandhi Sagar (in Madhya Pradesh), Rana Pratap Sagar, Jawahar Sagar and the Kota Barrage."
+  },
+  {
+    "id": "RAJPOLICE-T1-083",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mewar",
+    "stem": "In which year was the Battle of Haldighati fought between Maharana Pratap and the Mughal army?",
+    "options": [
+      "1527",
+      "1568",
+      "1576",
+      "1597"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Haldighati was fought on 18 June 1576. The Mughal army was led by Raja Man Singh of Amer."
+  },
+  {
+    "id": "RAJPOLICE-T1-084",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fairs",
+    "stem": "The Baneshwar fair, called the 'Kumbh of the tribals', is held at the meeting of the Som and Mahi rivers in which district?",
+    "options": [
+      "Dungarpur",
+      "Bharatpur",
+      "Pali",
+      "Churu"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Baneshwar fair, held around Magh Purnima near Dungarpur, draws large numbers of Bhils."
+  },
+  {
+    "id": "RAJPOLICE-T1-085",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Lakes",
+    "stem": "Lake Pichola is in which city of Rajasthan?",
+    "options": [
+      "Bikaner",
+      "Ajmer",
+      "Udaipur",
+      "Jaipur"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lake Pichola, an artificial lake from the 14th century, lies in Udaipur, the City of Lakes. The City Palace stands on its bank."
+  },
+  {
+    "id": "RAJPOLICE-T1-086",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Marwar",
+    "stem": "At the Battle of Girri-Sumel (1544), Sher Shah Suri narrowly defeated the army of:",
+    "options": [
+      "Rao Bika of Bikaner",
+      "Raja Man Singh of Amer",
+      "Rao Maldeo of Marwar",
+      "Rana Sanga of Mewar"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After his hard-won victory over Rao Maldeo's chiefs Jaita and Kumpa, Sher Shah is said to have remarked that for a handful of bajra he had nearly lost the empire of Hindustan."
+  },
+  {
+    "id": "RAJPOLICE-T1-087",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fairs",
+    "stem": "The Pushkar fair, famous for camel trading, is held in which Hindu month?",
+    "options": [
+      "Chaitra",
+      "Shravan",
+      "Magh",
+      "Kartik"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Pushkar fair runs up to Kartik Purnima (October or November), when pilgrims bathe in Pushkar lake."
+  },
+  {
+    "id": "RAJPOLICE-T1-088",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "The Bisalpur dam, a major source of drinking water for Jaipur and Ajmer, is on which river?",
+    "options": [
+      "Banas",
+      "Luni",
+      "Mahi",
+      "Chambal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bisalpur dam stands on the Banas in Tonk district and supplies water to Jaipur, Ajmer and Tonk."
+  },
+  {
+    "id": "RAJPOLICE-T1-089",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chauhans",
+    "stem": "Prithviraj Chauhan III won the First Battle of Tarain (1191) but lost the second in 1192 to:",
+    "options": [
+      "Mahmud of Ghazni",
+      "Qutbuddin Aibak",
+      "Muhammad Ghori",
+      "Alauddin Khalji"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Muhammad Ghori, defeated in 1191, returned in 1192 and defeated Prithviraj Chauhan at Tarain, opening north India to the Delhi Sultanate."
+  },
+  {
+    "id": "RAJPOLICE-T1-090",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Temples",
+    "stem": "The Karni Mata temple, where thousands of rats are revered, is at:",
+    "options": [
+      "Nathdwara",
+      "Salasar",
+      "Khatu",
+      "Deshnok"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Karni Mata's temple is at Deshnok near Bikaner. White rats seen there are thought especially lucky."
+  },
+  {
+    "id": "RAJPOLICE-T1-091",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Wildlife",
+    "stem": "The Desert National Park, a home of the Great Indian Bustard, is near which city?",
+    "options": [
+      "Kota",
+      "Jaisalmer",
+      "Bharatpur",
+      "Alwar"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Desert National Park spreads over Jaisalmer and Barmer districts and protects the Thar desert's dunes and its bustards."
+  },
+  {
+    "id": "RAJPOLICE-T1-092",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mewar",
+    "stem": "Who built the Vijay Stambh (Tower of Victory) at Chittorgarh?",
+    "options": [
+      "Maharana Pratap",
+      "Rana Kumbha",
+      "Rana Hammir",
+      "Rana Sanga"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rana Kumbha built the nine-storey Vijay Stambh to mark his victory over Mahmud Khilji of Malwa (Sarangpur, 1437)."
+  },
+  {
+    "id": "RAJPOLICE-T1-093",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Crafts",
+    "stem": "Blue pottery, made from quartz powder rather than clay, is a famous craft of:",
+    "options": [
+      "Jaipur",
+      "Kota",
+      "Barmer",
+      "Bikaner"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Jaipur's blue pottery uses quartz paste and a blue dye from cobalt oxide."
+  },
+  {
+    "id": "RAJPOLICE-T1-094",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "State symbols",
+    "stem": "Which bird is the state bird of Rajasthan?",
+    "options": [
+      "Sarus crane",
+      "Peacock",
+      "Demoiselle crane (Kurja)",
+      "Great Indian Bustard (Godawan)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Great Indian Bustard, critically endangered, lives mainly in the Desert National Park. The peacock is India's national bird."
+  },
+  {
+    "id": "RAJPOLICE-T1-095",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tribal movements",
+    "stem": "The Mangarh hill massacre of 17 November 1913, called the 'Jallianwala of Rajasthan', was of the Bhil followers of:",
+    "options": [
+      "Vijay Singh Pathik",
+      "Govind Guru",
+      "Kesari Singh Barhath",
+      "Motilal Tejawat"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Govind Guru led a Bhil reform movement (the Samp Sabha). British troops fired on his followers gathered at Mangarh in Banswara."
+  },
+  {
+    "id": "RAJPOLICE-T1-096",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Crafts",
+    "stem": "Thewa art, in which fine gold work is fused onto coloured glass, comes from:",
+    "options": [
+      "Pratapgarh",
+      "Bundi",
+      "Barmer",
+      "Bikaner"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Thewa is a family craft of Pratapgarh in southern Rajasthan, made by fusing gold sheet worked with patterns onto glass."
+  },
+  {
+    "id": "RAJPOLICE-T1-097",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "How many seats does the Rajasthan Legislative Assembly have?",
+    "options": [
+      "182",
+      "200",
+      "230",
+      "243"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The Rajasthan Vidhan Sabha has 200 seats. The state's legislature is unicameral, with no legislative council."
+  },
+  {
+    "id": "RAJPOLICE-T1-098",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Peasant movements",
+    "stem": "The Bijolia peasant movement, later led by Vijay Singh Pathik, began in a thikana of which princely state?",
+    "options": [
+      "Bikaner",
+      "Marwar",
+      "Jaipur",
+      "Mewar"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bijolia, a thikana of Mewar in today's Bhilwara district, saw one of India's longest peasant movements against heavy taxes, from 1897."
+  },
+  {
+    "id": "RAJPOLICE-T1-099",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Temples",
+    "stem": "The marble Dilwara Jain temples are at:",
+    "options": [
+      "Osian",
+      "Mount Abu",
+      "Ranakpur",
+      "Chittorgarh"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Dilwara temples at Mount Abu date from the 11th to 13th centuries; Vimal Vasahi was built by Vimal Shah in 1031."
+  },
+  {
+    "id": "RAJPOLICE-T1-100",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Where is the principal seat of the Rajasthan High Court?",
+    "options": [
+      "Udaipur",
+      "Jaipur",
+      "Ajmer",
+      "Jodhpur"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The High Court sits at Jodhpur and has a bench at Jaipur."
+  },
+  {
+    "id": "RAJPOLICE-T2-001",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Seismograph : Earthquake :: Sphygmomanometer : ?",
+    "options": [
+      "Blood sugar",
+      "Heartbeat",
+      "Blood pressure",
+      "Body temperature"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A seismograph records earthquakes and a sphygmomanometer measures blood pressure. A thermometer measures body temperature."
+  },
+  {
+    "id": "RAJPOLICE-T2-002",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Pointing to a boy, Shobha says, \"He is the grandson of my mother-in-law's only son.\" How is the boy related to Shobha?",
+    "options": [
+      "Brother-in-law",
+      "Grandson",
+      "Son",
+      "Nephew"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The only son of Shobha's mother-in-law is Shobha's husband, so the boy is her husband's grandson, and Shobha's grandson."
+  },
+  {
+    "id": "RAJPOLICE-T2-003",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Input and output",
+    "stem": "Which of these is an input device?",
+    "options": [
+      "Monitor",
+      "Microphone",
+      "Projector",
+      "Speaker"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A microphone sends sound into the computer. A monitor, speaker and projector are output devices."
+  },
+  {
+    "id": "RAJPOLICE-T2-004",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "5 : 126 :: 3 : ?",
+    "options": [
+      "10",
+      "26",
+      "27",
+      "28"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "5³ + 1 = 125 + 1 = 126. In the same way 3³ + 1 = 27 + 1 = 28."
+  },
+  {
+    "id": "RAJPOLICE-T2-005",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "P # Q means P is the mother of Q, P & Q means P is the brother of Q, and P @ Q means P is the wife of Q. What does X & Y # Z mean?",
+    "options": [
+      "X is the maternal uncle of Z",
+      "X is the father of Z",
+      "X is the brother of Z",
+      "X is the grandfather of Z"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "X & Y: X is Y's brother. Y # Z: Y is Z's mother. So X is the brother of Z's mother, Z's maternal uncle (mama)."
+  },
+  {
+    "id": "RAJPOLICE-T2-006",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Memory",
+    "stem": "What does ROM stand for?",
+    "options": [
+      "Read Only Memory",
+      "Read Output Memory",
+      "Rapid Output Machine",
+      "Random Operating Memory"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ROM is Read Only Memory. It keeps its contents without power and holds start-up instructions."
+  },
+  {
+    "id": "RAJPOLICE-T2-007",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "ACE : ZXV :: BDF : ?",
+    "options": [
+      "YWU",
+      "XWU",
+      "YWT",
+      "YVU"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter is replaced by its opposite in the alphabet (A and Z, C and X, E and V). The opposites of B, D and F are Y, W and U."
+  },
+  {
+    "id": "RAJPOLICE-T2-008",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Gopal walks 6 km west, turns right and walks 9 km, then turns right again and walks 6 km. Where is he now from his starting point?",
+    "options": [
+      "9 km south",
+      "9 km north",
+      "21 km north",
+      "6 km east"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Right from west is north, and right from north is east. The 6 km west and 6 km east cancel, leaving him 9 km north of the start."
+  },
+  {
+    "id": "RAJPOLICE-T2-009",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Storage",
+    "stem": "How many bytes are there in 4 KB?",
+    "options": [
+      "2048",
+      "4000",
+      "4096",
+      "8192"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "1 KB = 1024 bytes, so 4 KB = 4 × 1024 = 4096 bytes."
+  },
+  {
+    "id": "RAJPOLICE-T2-010",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which number is not a multiple of 7: 42, 63, 84, 94?",
+    "options": [
+      "42",
+      "63",
+      "84",
+      "94"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "42 = 7 × 6, 63 = 7 × 9 and 84 = 7 × 12. 94 leaves a remainder of 3 when divided by 7."
+  },
+  {
+    "id": "RAJPOLICE-T2-011",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Early in the morning Sunil's shadow falls straight behind him. Which direction is he facing?",
+    "options": [
+      "South",
+      "East",
+      "North",
+      "West"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The morning sun is in the east and shadows fall to the west. If his shadow is behind him, he is facing the sun, east."
+  },
+  {
+    "id": "RAJPOLICE-T2-012",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "What is the binary form of the decimal number 10?",
+    "options": [
+      "1010",
+      "1011",
+      "1100",
+      "1110"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "10 = 8 + 2 = 1 × 8 + 0 × 4 + 1 × 2 + 0 × 1, which is 1010 in binary."
+  },
+  {
+    "id": "RAJPOLICE-T2-013",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Square, Rectangle, Triangle, Rhombus.",
+    "options": [
+      "Square",
+      "Rhombus",
+      "Rectangle",
+      "Triangle"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A square, a rectangle and a rhombus each have four sides. A triangle has three."
+  },
+  {
+    "id": "RAJPOLICE-T2-014",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a queue there are 9 people ahead of Arun and 17 people behind him. How many people are in the queue?",
+    "options": [
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Count those ahead, those behind and Arun himself: 9 + 17 + 1 = 27."
+  },
+  {
+    "id": "RAJPOLICE-T2-015",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Word",
+    "stem": "In MS Word, what does Ctrl + Z do?",
+    "options": [
+      "Redoes the last action",
+      "Closes the document",
+      "Zooms in",
+      "Undoes the last action"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ctrl + Z is Undo. Ctrl + Y is Redo."
+  },
+  {
+    "id": "RAJPOLICE-T2-016",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series 2, 3, 7, 16, 32, ?",
+    "options": [
+      "48",
+      "52",
+      "57",
+      "64"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The gaps are 1, 4, 9 and 16, the squares of 1, 2, 3 and 4. The next gap is 5² = 25, so 32 + 25 = 57."
+  },
+  {
+    "id": "RAJPOLICE-T2-017",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "P is heavier than Q, R is lighter than Q, S is heavier than P, and T is lighter than R. Who is the second heaviest?",
+    "options": [
+      "S",
+      "R",
+      "Q",
+      "P"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "From heaviest the order is S, P, Q, R, T. The second heaviest is P."
+  },
+  {
+    "id": "RAJPOLICE-T2-018",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Excel",
+    "stem": "Which Excel function gives the smallest value in a range of cells?",
+    "options": [
+      "COUNT",
+      "SUM",
+      "MIN",
+      "MAX"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "=MIN(A1:A10) returns the smallest number. MAX gives the largest, SUM the total and COUNT the number of cells with numbers."
+  },
+  {
+    "id": "RAJPOLICE-T2-019",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series 2, 9, 28, 65, ?",
+    "options": [
+      "102",
+      "124",
+      "125",
+      "126"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The terms are 1³ + 1, 2³ + 1, 3³ + 1, 4³ + 1. Next is 5³ + 1 = 126."
+  },
+  {
+    "id": "RAJPOLICE-T2-020",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: Some constables are drivers. All drivers are trained. Conclusions: I. Some constables are trained. II. All trained persons are drivers. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The constables who are drivers are all trained, so some constables are trained: I follows. 'All drivers are trained' does not mean every trained person is a driver, so II does not."
+  },
+  {
+    "id": "RAJPOLICE-T2-021",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series 4, 6, 12, 14, 28, 30, ?",
+    "options": [
+      "32",
+      "58",
+      "60",
+      "62"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The steps alternate: add 2, then multiply by 2. 4 + 2 = 6, 6 × 2 = 12, 12 + 2 = 14, 14 × 2 = 28, 28 + 2 = 30, so next is 30 × 2 = 60."
+  },
+  {
+    "id": "RAJPOLICE-T2-022",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If today is Sunday, what day of the week will it be after 75 days?",
+    "options": [
+      "Saturday",
+      "Thursday",
+      "Wednesday",
+      "Friday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "75 days = 10 weeks and 5 days. Five days after Sunday is Friday."
+  },
+  {
+    "id": "RAJPOLICE-T2-023",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "File types",
+    "stem": "What is the file extension of a PowerPoint presentation saved in the default format (2007 and later)?",
+    "options": [
+      ".pptx",
+      ".docx",
+      ".txt",
+      ".xlsx"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": ".pptx is PowerPoint, .docx is Word, .xlsx is Excel and .txt is a plain text file."
+  },
+  {
+    "id": "RAJPOLICE-T2-024",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next in the series Y, V, R, M, ?",
+    "options": [
+      "G",
+      "H",
+      "I",
+      "F"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The letters move back by 3, 4, 5 and then 6: Y (25), V (22), R (18), M (13), then 13 - 6 = 7, which is G."
+  },
+  {
+    "id": "RAJPOLICE-T2-025",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "How many odd days are there in 200 years?",
+    "options": [
+      "0",
+      "2",
+      "3",
+      "5"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each 100 years gives 5 odd days, so 200 years give 10 odd days, which is 1 week and 3 days: 3 odd days."
+  },
+  {
+    "id": "RAJPOLICE-T2-026",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Internet",
+    "stem": "Who invented the World Wide Web?",
+    "options": [
+      "Charles Babbage",
+      "Tim Berners-Lee",
+      "Bill Gates",
+      "Vint Cerf"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tim Berners-Lee proposed the World Wide Web in 1989 at CERN. Charles Babbage designed early mechanical computers and Vint Cerf co-designed the internet's TCP/IP protocols."
+  },
+  {
+    "id": "RAJPOLICE-T2-027",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If PLANT is written as OKZMS, how is SEED written in that code?",
+    "options": [
+      "RDDC",
+      "RDDB",
+      "RDEC",
+      "TFFE"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter moves one place back: P to O, L to K, A to Z. SEED becomes RDDC."
+  },
+  {
+    "id": "RAJPOLICE-T2-028",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the smaller angle between the hands of a clock at 7:00?",
+    "options": [
+      "120°",
+      "140°",
+      "150°",
+      "210°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each hour mark is 30° apart. At 7:00 the hands are 7 marks apart one way (210°) and 5 the other way, so the smaller angle is 5 × 30° = 150°."
+  },
+  {
+    "id": "RAJPOLICE-T2-029",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cyber safety",
+    "stem": "What does 'https' with a padlock in the browser's address bar show?",
+    "options": [
+      "The site is run by the government",
+      "The page contains no advertisements",
+      "The connection is encrypted",
+      "The page has been saved offline"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "HTTPS means data between your browser and the site is encrypted. It does not prove the site itself is honest, so still check the address carefully."
+  },
+  {
+    "id": "RAJPOLICE-T2-030",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If BAG = 10 because 2 + 1 + 7 = 10, what is FISH in the same code?",
+    "options": [
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Add the alphabet positions of the letters: F = 6, I = 9, S = 19, H = 8, and 6 + 9 + 19 + 8 = 42."
+  },
+  {
+    "id": "RAJPOLICE-T2-031",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "A clock gains 5 minutes every hour. It is set right at 6 a.m. What time will it show at 6 p.m. the same day?",
+    "options": [
+      "6:55 p.m.",
+      "7:30 p.m.",
+      "7:00 p.m.",
+      "6:30 p.m."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From 6 a.m. to 6 p.m. is 12 hours, so the clock gains 12 × 5 = 60 minutes and shows 7:00 p.m."
+  },
+  {
+    "id": "RAJPOLICE-T2-032",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cyber safety",
+    "stem": "Malicious software that locks your files and demands money to unlock them is called:",
+    "options": [
+      "A firewall",
+      "Freeware",
+      "Spyware",
+      "Ransomware"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ransomware encrypts files and demands a ransom. Spyware secretly collects information; a firewall is a protection; freeware is free, legitimate software."
+  },
+  {
+    "id": "RAJPOLICE-T2-033",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a code language, 'sun is hot' is 'la mo pi', 'hot tea' is 'pi ka' and 'tea is ready' is 'ka mo ze'. What is the code for 'is'?",
+    "options": [
+      "mo",
+      "ka",
+      "la",
+      "pi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "'is' is in the first and third sentences, and the only code common to 'la mo pi' and 'ka mo ze' is mo. (pi is 'hot' and ka is 'tea'.)"
+  },
+  {
+    "id": "RAJPOLICE-T2-034",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arrangement",
+    "stem": "Six friends A, B, C, D, E and F stand in a row facing north. B is at the left end and E is fourth from the left. A is to the immediate right of E, F is at one of the ends, and C stands between B and D. Who is to the immediate left of E?",
+    "options": [
+      "F",
+      "D",
+      "C",
+      "A"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "B is 1st and E 4th, so A is 5th and F, at an end, is 6th. C between B and D puts C 2nd and D 3rd. From the left: B, C, D, E, A, F, so D is to E's immediate left."
+  },
+  {
+    "id": "RAJPOLICE-T2-035",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Networking",
+    "stem": "Which device connects a home network to the internet and directs data between networks?",
+    "options": [
+      "Router",
+      "Monitor",
+      "Printer",
+      "UPS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A router forwards data between networks, such as your home Wi-Fi and the internet. A UPS supplies backup power."
+  },
+  {
+    "id": "RAJPOLICE-T2-036",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alphabet test",
+    "stem": "If the English alphabet is written in reverse order (Z to A), which letter is 6th to the right of M?",
+    "options": [
+      "H",
+      "G",
+      "F",
+      "S"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Written from Z to A, the letters to the right of M run L, K, J, I, H, G. The 6th is G."
+  },
+  {
+    "id": "RAJPOLICE-T2-037",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statement and assumption",
+    "stem": "Statement: The traffic police announced that vehicles parked on the main road will be towed away. Assumptions: I. Vehicles parked on the main road obstruct traffic. II. People will ignore the announcement. Which assumption is implicit?",
+    "options": [
+      "Only I is implicit",
+      "Only II is implicit",
+      "Both are implicit",
+      "Neither is implicit"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The warning makes sense only if such parking causes a problem, so I is implicit. An announcement assumes people will heed it, not ignore it, so II is not."
+  },
+  {
+    "id": "RAJPOLICE-T2-038",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cyber safety",
+    "stem": "Logging in with a password plus a one-time code sent to your phone is an example of:",
+    "options": [
+      "Disk formatting",
+      "Cloud backup",
+      "Two-factor authentication",
+      "Data compression"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Two-factor authentication asks for two different proofs, something you know (password) and something you have (the phone that gets the code)."
+  },
+  {
+    "id": "RAJPOLICE-T2-039",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Missing number",
+    "stem": "If 3 ★ 5 = 34 and 4 ★ 6 = 52, what is 2 ★ 7?",
+    "options": [
+      "45",
+      "51",
+      "53",
+      "63"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "a ★ b = a² + b²: 9 + 25 = 34 and 16 + 36 = 52. So 2 ★ 7 = 4 + 49 = 53."
+  },
+  {
+    "id": "RAJPOLICE-T2-040",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Inequality",
+    "stem": "If A ≤ B < C = D > E, which conclusions are definitely true? I. A < D II. B > E",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A ≤ B < C = D gives A < D, so I follows. B and E are linked only through D (B < D > E), which fixes no order between them, so II does not follow."
+  },
+  {
+    "id": "RAJPOLICE-T2-041",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Nalanda Mahavihara was founded in the 5th century under which dynasty?",
+    "options": [
+      "Gupta",
+      "Maurya",
+      "Chola",
+      "Kushan"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Nalanda was founded under the Gupta ruler Kumaragupta I and later grew with help from Harsha and the Palas."
+  },
+  {
+    "id": "RAJPOLICE-T2-042",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Trafficking",
+    "stem": "Which Article of the Constitution forbids traffic in human beings and forced labour (begar)?",
+    "options": [
+      "Article 24",
+      "Article 17",
+      "Article 39",
+      "Article 23"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 23 bans human trafficking and forced labour. Article 24 bans child labour in factories, mines and hazardous work."
+  },
+  {
+    "id": "RAJPOLICE-T2-043",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "Who started the Bhoodan (land gift) Movement in 1951?",
+    "options": [
+      "Sunderlal Bahuguna",
+      "Jayaprakash Narayan",
+      "Vinoba Bhave",
+      "Baba Amte"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Vinoba Bhave began the Bhoodan Movement at Pochampally in 1951, asking landowners to give land to the landless."
+  },
+  {
+    "id": "RAJPOLICE-T2-044",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "In which year was the Gandhi-Irwin Pact signed?",
+    "options": [
+      "1929",
+      "1931",
+      "1935",
+      "1942"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The Gandhi-Irwin Pact of March 1931 ended the first phase of the Civil Disobedience Movement, and Gandhi then attended the Second Round Table Conference."
+  },
+  {
+    "id": "RAJPOLICE-T2-045",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Women's commission",
+    "stem": "The National Commission for Women was set up under an Act passed in which year?",
+    "options": [
+      "1986",
+      "1990",
+      "1995",
+      "2001"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The National Commission for Women Act was passed in 1990 and the Commission was constituted in January 1992."
+  },
+  {
+    "id": "RAJPOLICE-T2-046",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "Gandhiji gave the call 'Do or Die' during which movement?",
+    "options": [
+      "Civil Disobedience Movement",
+      "Khilafat Movement",
+      "Quit India Movement",
+      "Non-Cooperation Movement"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Quit India Movement was launched in Bombay on 8 August 1942 with the call 'Do or Die'."
+  },
+  {
+    "id": "RAJPOLICE-T2-047",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Jog Falls, one of India's highest waterfalls, is in which state?",
+    "options": [
+      "Tamil Nadu",
+      "Goa",
+      "Karnataka",
+      "Kerala"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Jog Falls is on the Sharavathi river in the Shivamogga district of Karnataka."
+  },
+  {
+    "id": "RAJPOLICE-T2-048",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Maternity benefit",
+    "stem": "After the 2017 amendment to the Maternity Benefit Act, how much paid maternity leave can a woman get for each of her first two children?",
+    "options": [
+      "12 weeks",
+      "18 weeks",
+      "24 weeks",
+      "26 weeks"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The Maternity Benefit (Amendment) Act, 2017 raised paid leave from 12 to 26 weeks for the first two children; it is 12 weeks from the third child."
+  },
+  {
+    "id": "RAJPOLICE-T2-049",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Gir National Park, the last home of the Asiatic lion in the wild, is in which state?",
+    "options": [
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Gujarat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gir, in the Saurashtra region of Gujarat, is the only place where Asiatic lions live in the wild."
+  },
+  {
+    "id": "RAJPOLICE-T2-050",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Which planet is called the Red Planet?",
+    "options": [
+      "Jupiter",
+      "Mercury",
+      "Venus",
+      "Mars"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Iron oxide (rust) in its soil makes Mars look red."
+  },
+  {
+    "id": "RAJPOLICE-T2-051",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sex determination",
+    "stem": "Which law bans the use of medical tests to find the sex of a foetus?",
+    "options": [
+      "MTP Act, 1971",
+      "Immoral Traffic (Prevention) Act, 1956",
+      "PCPNDT Act, 1994",
+      "Dowry Prohibition Act, 1961"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Pre-Conception and Pre-Natal Diagnostic Techniques (PCPNDT) Act, 1994 bans sex selection and sex determination, to stop female foeticide."
+  },
+  {
+    "id": "RAJPOLICE-T2-052",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Newton's first law of motion is also called the law of:",
+    "options": [
+      "Acceleration",
+      "Inertia",
+      "Gravitation",
+      "Action and reaction"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A body stays at rest or in uniform motion unless a force acts on it: this resistance to change is inertia. Action and reaction is the third law."
+  },
+  {
+    "id": "RAJPOLICE-T2-053",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "The Ghadar Party, founded in 1913 by Indians living abroad, had its headquarters in:",
+    "options": [
+      "Tokyo",
+      "Berlin",
+      "San Francisco",
+      "London"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Ghadar Party was set up by Indians on the Pacific coast of North America, with its headquarters in San Francisco, to end British rule by revolt."
+  },
+  {
+    "id": "RAJPOLICE-T2-054",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Child labour",
+    "stem": "After the 2016 amendment to the child labour law, an 'adolescent' is a person of what age?",
+    "options": [
+      "12 to 16 years",
+      "10 to 14 years",
+      "16 to 21 years",
+      "14 to 18 years"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Child and Adolescent Labour (Prohibition and Regulation) Act bans all work by children below 14 (except family work after school) and hazardous work by adolescents of 14 to 18."
+  },
+  {
+    "id": "RAJPOLICE-T2-055",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "The trials of officers of the Indian National Army (1945) were held at:",
+    "options": [
+      "The Red Fort, Delhi",
+      "Agra Fort",
+      "Cellular Jail, Port Blair",
+      "Fort William, Kolkata"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The INA trials at the Red Fort in 1945 caused protests across India; Bhulabhai Desai led the defence."
+  },
+  {
+    "id": "RAJPOLICE-T2-056",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "The Ilbert Bill controversy of 1883 was about:",
+    "options": [
+      "Banning sati",
+      "Letting Indian judges try Europeans",
+      "Partitioning Bengal",
+      "Building the railways"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Ilbert Bill proposed that Indian judges could try European offenders. Fierce European protest forced a compromise, which showed Indians the racial bias of the system."
+  },
+  {
+    "id": "RAJPOLICE-T2-057",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Child rights",
+    "stem": "The National Commission for Protection of Child Rights works under an Act of which year?",
+    "options": [
+      "1992",
+      "2000",
+      "2005",
+      "2012"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The Commissions for Protection of Child Rights Act, 2005 set up the NCPCR and state commissions. They also monitor the POCSO and RTE Acts."
+  },
+  {
+    "id": "RAJPOLICE-T2-058",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Medieval India",
+    "stem": "The eight Telugu poets known as the Ashtadiggajas adorned the court of which ruler?",
+    "options": [
+      "Akbar",
+      "Harsha",
+      "Raja Bhoj",
+      "Krishnadevaraya"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Krishnadevaraya of Vijayanagara, himself the author of the Telugu work Amuktamalyada, kept eight great poets, the Ashtadiggajas. Akbar's court had the Navaratnas."
+  },
+  {
+    "id": "RAJPOLICE-T2-059",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Which writ does a higher court issue to stop a lower court from going beyond its jurisdiction?",
+    "options": [
+      "Habeas corpus",
+      "Quo warranto",
+      "Mandamus",
+      "Prohibition"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Prohibition stops a case that is still pending in a lower court. Certiorari quashes an order already passed."
+  },
+  {
+    "id": "RAJPOLICE-T2-060",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "POCSO Act",
+    "stem": "Under the POCSO Act, sexual offences against children are tried by:",
+    "options": [
+      "A Gram Nyayalaya",
+      "A Lok Adalat",
+      "A Family Court",
+      "A Special Court"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "POCSO cases go to designated Special Courts, which should record the child's evidence quickly and in a child-friendly way, without the child facing the accused."
+  },
+  {
+    "id": "RAJPOLICE-T2-061",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "The Panchsheel agreement of 1954, setting out five principles of peaceful coexistence, was signed between India and:",
+    "options": [
+      "China",
+      "Pakistan",
+      "Nepal",
+      "Sri Lanka"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Panchsheel principles, including mutual respect for territory and non-interference, were set out in the 1954 India-China agreement on Tibet."
+  },
+  {
+    "id": "RAJPOLICE-T2-062",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The islands of Lakshadweep are mainly made of:",
+    "options": [
+      "Granite",
+      "Coral",
+      "Volcanic rock",
+      "Sandstone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lakshadweep's islands are coral atolls and reefs in the Arabian Sea. Barren Island in the Andamans is India's active volcano."
+  },
+  {
+    "id": "RAJPOLICE-T2-063",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reservation for women",
+    "stem": "Which constitutional amendment (2023) reserves one-third of the seats in the Lok Sabha and state assemblies for women?",
+    "options": [
+      "74th Amendment",
+      "101st Amendment",
+      "73rd Amendment",
+      "106th Amendment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Constitution (106th Amendment) Act, 2023, the Nari Shakti Vandan Adhiniyam, reserves one-third of seats for women. It applies after the next census and delimitation."
+  },
+  {
+    "id": "RAJPOLICE-T2-064",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Silent Valley National Park, a rainforest saved by public protest against a dam in the 1980s, is in which state?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Goa"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Silent Valley in Palakkad district, Kerala, is home to the lion-tailed macaque. A planned hydroelectric dam was dropped after a long campaign."
+  },
+  {
+    "id": "RAJPOLICE-T2-065",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science",
+    "stem": "The movement of water through a semi-permeable membrane from a dilute solution to a more concentrated one is called:",
+    "options": [
+      "Osmosis",
+      "Evaporation",
+      "Diffusion",
+      "Transpiration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Osmosis is how plant roots take in water and why raisins swell in water. Diffusion is the spreading of any substance from high to low concentration."
+  },
+  {
+    "id": "RAJPOLICE-T2-066",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reservation for women",
+    "stem": "What share of seats in Rajasthan's panchayati raj institutions is reserved for women?",
+    "options": [
+      "25%",
+      "33%",
+      "40%",
+      "50%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The 73rd Amendment requires at least one-third, and Rajasthan raised women's reservation in panchayats to 50% in 2008."
+  },
+  {
+    "id": "RAJPOLICE-T2-067",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Which part of the human eye contains the light-sensitive rod and cone cells?",
+    "options": [
+      "Lens",
+      "Iris",
+      "Cornea",
+      "Retina"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The retina at the back of the eye holds the rods, which work in dim light, and the cones, which see colour. The iris controls the pupil, and the cornea and lens focus the light."
+  },
+  {
+    "id": "RAJPOLICE-T2-068",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Which device converts mechanical energy into electrical energy?",
+    "options": [
+      "Generator",
+      "Electric motor",
+      "Battery",
+      "Transformer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A generator (dynamo) turns motion into electricity. A motor does the reverse, a transformer changes voltage and a battery stores chemical energy."
+  },
+  {
+    "id": "RAJPOLICE-T2-069",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Marriage law",
+    "stem": "The Muslim Women (Protection of Rights on Marriage) Act, 2019 made which practice an offence?",
+    "options": [
+      "Polygamy",
+      "Payment of mehr",
+      "Marriage registration",
+      "Instant triple talaq"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Act makes pronouncing instant triple talaq (talaq-e-biddat) void and punishable, following the Supreme Court's 2017 ruling."
+  },
+  {
+    "id": "RAJPOLICE-T2-070",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "The reverse repo rate is the rate at which:",
+    "options": [
+      "Banks pay interest on savings",
+      "The RBI borrows money from commercial banks",
+      "Banks lend to farmers",
+      "The government borrows from abroad"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At the reverse repo rate, banks park their surplus money with the RBI. The repo rate is the opposite: the RBI lends to banks."
+  },
+  {
+    "id": "RAJPOLICE-T2-071",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "1857 revolt",
+    "stem": "The 1857 revolt in Rajasthan began on 28 May 1857 at which cantonment?",
+    "options": [
+      "Deoli",
+      "Nasirabad",
+      "Kherwara",
+      "Erinpura"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Soldiers at Nasirabad (near Ajmer) rose on 28 May 1857. Neemuch, now in Madhya Pradesh, followed on 3 June."
+  },
+  {
+    "id": "RAJPOLICE-T2-072",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Folk music",
+    "stem": "The kamaicha, a bowed string instrument, is played mainly by which community of folk musicians?",
+    "options": [
+      "Bhopas",
+      "Manganiyars",
+      "Kalbeliyas",
+      "Kamads"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Manganiyars of the Jaisalmer and Barmer region sing with the kamaicha. Kamads perform Terah Tali and Bhopas sing the Phad."
+  },
+  {
+    "id": "RAJPOLICE-T2-073",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Which river of Rajasthan crosses the Tropic of Cancer twice?",
+    "options": [
+      "Mahi",
+      "Luni",
+      "Chambal",
+      "Banas"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Mahi rises in Madhya Pradesh, loops through Banswara (where the Mahi Bajaj Sagar dam stands) and crosses the Tropic of Cancer twice before reaching the Gulf of Khambhat."
+  },
+  {
+    "id": "RAJPOLICE-T2-074",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "1857 revolt",
+    "stem": "Thakur Kushal Singh led the resistance of 1857 in Marwar from which thikana?",
+    "options": [
+      "Salumber",
+      "Bijolia",
+      "Auwa",
+      "Kotda"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Kushal Singh of Auwa (Pali) joined the Erinpura rebels and defeated the forces of the British and Jodhpur state."
+  },
+  {
+    "id": "RAJPOLICE-T2-075",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Folk music",
+    "stem": "The ravanhatha, played by Bhopas while singing the tale of Pabuji, is a:",
+    "options": [
+      "Bowed string instrument",
+      "Wind instrument",
+      "Drum",
+      "Metal gong"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ravanhatha has strings over a coconut-shell or bamboo body and is played with a bow."
+  },
+  {
+    "id": "RAJPOLICE-T2-076",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Which river, called 'Van ki Aasha' (hope of the forest), is the longest river flowing wholly within Rajasthan?",
+    "options": [
+      "Banas",
+      "Chambal",
+      "Ghaggar",
+      "Mahi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Banas rises in the Khamnor hills near Kumbhalgarh and joins the Chambal."
+  },
+  {
+    "id": "RAJPOLICE-T2-077",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cities",
+    "stem": "In which year did Sawai Jai Singh II found the city of Jaipur?",
+    "options": [
+      "1699",
+      "1707",
+      "1719",
+      "1727"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Jaipur was founded in 1727 and planned on a grid by Vidyadhar Bhattacharya."
+  },
+  {
+    "id": "RAJPOLICE-T2-078",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Festivals",
+    "stem": "During Gangaur, women of Rajasthan worship:",
+    "options": [
+      "Krishna and Radha",
+      "Gauri (Parvati) and Isar (Shiva)",
+      "Rama and Sita",
+      "Vishnu and Lakshmi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gangaur begins the day after Holi and lasts 18 days. Women pray to Gauri for marital happiness; Jaipur's procession is famous."
+  },
+  {
+    "id": "RAJPOLICE-T2-079",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Minerals",
+    "stem": "The Zawar mines near Udaipur are known for:",
+    "options": [
+      "Mica",
+      "Copper",
+      "Gypsum",
+      "Zinc and lead"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Zawar has been mined for zinc and lead for centuries. Rajasthan produces almost all of India's lead and zinc."
+  },
+  {
+    "id": "RAJPOLICE-T2-080",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Marwar",
+    "stem": "Who founded Jodhpur and began the Mehrangarh fort in 1459?",
+    "options": [
+      "Rao Chandrasen",
+      "Rao Bika",
+      "Rao Maldeo",
+      "Rao Jodha"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rao Jodha of the Rathore clan moved his capital from Mandore to the new city of Jodhpur in 1459."
+  },
+  {
+    "id": "RAJPOLICE-T2-081",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Folk dance",
+    "stem": "In which dance do Gujjar women balance brass pots holding burning cotton seeds on their heads?",
+    "options": [
+      "Chari",
+      "Terah Tali",
+      "Kachhi Ghodi",
+      "Ghoomar"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Chari dance belongs to the Gujjar community, especially around Kishangarh. The pots (charis) carry lit cotton seeds soaked in oil."
+  },
+  {
+    "id": "RAJPOLICE-T2-082",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Minerals",
+    "stem": "Khetri in Jhunjhunu district is known for which mineral?",
+    "options": [
+      "Copper",
+      "Bauxite",
+      "Coal",
+      "Marble"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Khetri copper belt is one of India's main copper sources, with a Hindustan Copper plant."
+  },
+  {
+    "id": "RAJPOLICE-T2-083",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bikaner",
+    "stem": "Which city did Rao Bika, a son of Rao Jodha, found in 1488?",
+    "options": [
+      "Churu",
+      "Bikaner",
+      "Jaisalmer",
+      "Nagaur"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rao Bika founded Bikaner in 1488 in the Jangladesh region."
+  },
+  {
+    "id": "RAJPOLICE-T2-084",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Folk deities",
+    "stem": "The main temple of the folk deity Baba Ramdev, where a big fair is held in Bhadrapad, is at:",
+    "options": [
+      "Kolu",
+      "Kharnal",
+      "Gogamedi",
+      "Ramdevra (Runecha)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ramdevra (Runecha), near Pokaran in Jaisalmer district, is Ramdevji's samadhi. Kolu is linked with Pabuji, Gogamedi with Gogaji and Kharnal with Tejaji."
+  },
+  {
+    "id": "RAJPOLICE-T2-085",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Minerals",
+    "stem": "Makrana, whose stone was used in the Taj Mahal, is famous for:",
+    "options": [
+      "Slate",
+      "Red sandstone",
+      "Granite",
+      "White marble"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Makrana's white marble was used in the Taj Mahal and the Victoria Memorial in Kolkata."
+  },
+  {
+    "id": "RAJPOLICE-T2-086",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Jaisalmer",
+    "stem": "Who built the Jaisalmer fort, the 'Sonar Qila', in 1156?",
+    "options": [
+      "Rao Jodha",
+      "Rawal Jaisal",
+      "Rana Kumbha",
+      "Raja Man Singh"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rawal Jaisal, a Bhati Rajput, built the fort on Trikuta hill. Its yellow sandstone glows gold in the sun."
+  },
+  {
+    "id": "RAJPOLICE-T2-087",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dialects",
+    "stem": "The Dhundhari dialect is spoken mainly in the region around:",
+    "options": [
+      "Udaipur",
+      "Alwar",
+      "Jaipur",
+      "Kota"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dhundhari is the speech of the Jaipur (Dhundhar) region. Mewari is spoken around Udaipur, Hadoti around Kota and Mewati around Alwar."
+  },
+  {
+    "id": "RAJPOLICE-T2-088",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Energy",
+    "stem": "The Mangala oil field, one of India's largest onshore finds, is in which district?",
+    "options": [
+      "Sirohi",
+      "Barmer",
+      "Bhilwara",
+      "Kota"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mangala, discovered in 2004 in the Barmer basin, began producing crude oil in 2009."
+  },
+  {
+    "id": "RAJPOLICE-T2-089",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chittorgarh",
+    "stem": "The jauhar led by Rani Padmini at Chittorgarh in 1303 followed an attack by:",
+    "options": [
+      "Alauddin Khalji",
+      "Bahadur Shah of Gujarat",
+      "Muhammad Ghori",
+      "Akbar"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Alauddin Khalji captured Chittorgarh in 1303 from Rawal Ratan Singh. Bahadur Shah's siege (1535) led to the jauhar of Rani Karnavati."
+  },
+  {
+    "id": "RAJPOLICE-T2-090",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Crafts",
+    "stem": "Sanganer and Bagru near Jaipur are known for:",
+    "options": [
+      "Marble carving",
+      "Lac bangles",
+      "Hand block printing on cloth",
+      "Camel leather work"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sanganer and Bagru print cloth with carved wooden blocks. Bagru prints use natural dyes, often on a darker ground."
+  },
+  {
+    "id": "RAJPOLICE-T2-091",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Energy",
+    "stem": "The Rajasthan Atomic Power Station is at:",
+    "options": [
+      "Chhabra",
+      "Suratgarh",
+      "Rawatbhata",
+      "Pokhran"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The atomic power station stands at Rawatbhata on the Chambal in Chittorgarh district. Suratgarh and Chhabra have thermal plants; Pokhran is the nuclear test site."
+  },
+  {
+    "id": "RAJPOLICE-T2-092",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sources",
+    "stem": "Who wrote 'Annals and Antiquities of Rajasthan'?",
+    "options": [
+      "Muhnot Nainsi",
+      "Suryamal Mishran",
+      "James Tod",
+      "Chand Bardai"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Colonel James Tod, a British political agent in western Rajputana, published the Annals in 1829 and 1832."
+  },
+  {
+    "id": "RAJPOLICE-T2-093",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Crafts",
+    "stem": "Usta art, gold and lacquer work on camel hide, is a craft of:",
+    "options": [
+      "Ajmer",
+      "Udaipur",
+      "Bundi",
+      "Bikaner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Usta craftsmen of Bikaner decorate lamps, bottles and walls with gold relief work."
+  },
+  {
+    "id": "RAJPOLICE-T2-094",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "State symbols",
+    "stem": "Which tree, worshipped by the Bishnois, is the state tree of Rajasthan?",
+    "options": [
+      "Peepal",
+      "Rohida",
+      "Khejri",
+      "Neem"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Khejri survives deep in the desert. In 1730 at Khejarli, Amrita Devi Bishnoi and 362 others died protecting Khejri trees. Rohida is the state flower."
+  },
+  {
+    "id": "RAJPOLICE-T2-095",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Praja mandals",
+    "stem": "Who founded the Mewar Praja Mandal in 1938?",
+    "options": [
+      "Manikya Lal Verma",
+      "Jamnalal Bajaj",
+      "Jai Narayan Vyas",
+      "Arjun Lal Sethi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Manikya Lal Verma founded the Mewar Praja Mandal at Udaipur in 1938. Jai Narayan Vyas led the Marwar Lok Parishad."
+  },
+  {
+    "id": "RAJPOLICE-T2-096",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Monuments",
+    "stem": "Who built the Hawa Mahal of Jaipur in 1799?",
+    "options": [
+      "Raja Man Singh I",
+      "Sawai Jai Singh II",
+      "Sawai Madho Singh I",
+      "Sawai Pratap Singh"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sawai Pratap Singh built the Hawa Mahal, designed by Lal Chand Ustad, so the royal women could watch the street through its many windows."
+  },
+  {
+    "id": "RAJPOLICE-T2-097",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Administration",
+    "stem": "Where is the Rajasthan Public Service Commission headquartered?",
+    "options": [
+      "Jodhpur",
+      "Jaipur",
+      "Ajmer",
+      "Bikaner"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The RPSC is at Ajmer, as are the Board of Secondary Education and the Board of Revenue."
+  },
+  {
+    "id": "RAJPOLICE-T2-098",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tribal movements",
+    "stem": "Who led the Eki movement of the Bhils and Garasias in southern Rajasthan in 1921?",
+    "options": [
+      "Govind Guru",
+      "Seth Damodar Das",
+      "Motilal Tejawat",
+      "Ram Narayan Choudhary"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Motilal Tejawat, called 'Bawji', led the Eki (unity) movement against forced labour and heavy taxes. A firing at Neemda in 1922 killed many tribals."
+  },
+  {
+    "id": "RAJPOLICE-T2-099",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Monuments",
+    "stem": "Six forts are on the UNESCO World Heritage list as the 'Hill Forts of Rajasthan' (2013). Which of these is NOT one of them?",
+    "options": [
+      "Mehrangarh",
+      "Kumbhalgarh",
+      "Amer",
+      "Gagron"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The six are Chittorgarh, Kumbhalgarh, Ranthambore, Gagron, Amer and Jaisalmer. Jodhpur's Mehrangarh is not part of the listing."
+  },
+  {
+    "id": "RAJPOLICE-T2-100",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cities",
+    "stem": "Which city of Rajasthan is called the 'Blue City' for its blue-painted houses?",
+    "options": [
+      "Jaipur",
+      "Udaipur",
+      "Jodhpur",
+      "Jaisalmer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The old town below Mehrangarh in Jodhpur is full of blue houses. Jaipur is the Pink City, Udaipur the City of Lakes and Jaisalmer the Golden City."
+  },
+  {
+    "id": "RAJPOLICE-D-001",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Cobbler : Leather :: Carpenter : ?",
+    "options": [
+      "Wood",
+      "Furniture",
+      "Chisel",
+      "Nail"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A cobbler works with leather as his material; a carpenter works with wood. A chisel is a tool and furniture is the product."
+  },
+  {
+    "id": "RAJPOLICE-D-002",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Q is a girl. L is the father of Q, and K is the only sister of L. How is Q related to K?",
+    "options": [
+      "Cousin",
+      "Daughter",
+      "Niece",
+      "Sister"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "K is the sister of Q's father L, so K is Q's bua (father's sister). A girl is her father's sister's niece."
+  },
+  {
+    "id": "RAJPOLICE-D-003",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Word",
+    "stem": "In MS Word, which shortcut opens the box to find a word in the document?",
+    "options": [
+      "Ctrl + G",
+      "Ctrl + K",
+      "Ctrl + F",
+      "Ctrl + H"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ctrl + F opens Find. Ctrl + H opens Find and Replace, Ctrl + G Go To and Ctrl + K inserts a hyperlink."
+  },
+  {
+    "id": "RAJPOLICE-D-004",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next in the series 5, 10, 17, 26, 37, ?",
+    "options": [
+      "48",
+      "49",
+      "50",
+      "52"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The terms are 2² + 1, 3² + 1, 4² + 1, 5² + 1, 6² + 1. Next is 7² + 1 = 50."
+  },
+  {
+    "id": "RAJPOLICE-D-005",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A man faces west. He turns 45° anticlockwise and then 90° clockwise. Which direction does he face now?",
+    "options": [
+      "South-west",
+      "North-west",
+      "North-east",
+      "North"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Anticlockwise from west is towards south, so 45° brings him to south-west. A 90° clockwise turn from south-west passes west and ends at north-west."
+  },
+  {
+    "id": "RAJPOLICE-D-006",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Internet",
+    "stem": "Which of these is an example of cloud storage?",
+    "options": [
+      "A hard disk",
+      "Google Drive",
+      "A DVD",
+      "A pen drive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cloud storage keeps your files on servers on the internet, so you can reach them from any device. A pen drive, hard disk and DVD are local storage."
+  },
+  {
+    "id": "RAJPOLICE-D-007",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: ACE, FHJ, KMO, PRU.",
+    "options": [
+      "FHJ",
+      "KMO",
+      "PRU",
+      "ACE"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In ACE, FHJ and KMO each letter is two places after the one before. In PRU the last step is three (R to U), so it is the odd one."
+  },
+  {
+    "id": "RAJPOLICE-D-008",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All buses are vehicles. All vehicles are machines. Conclusions: I. All buses are machines. II. Some machines are buses. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Buses sit inside vehicles, which sit inside machines, so all buses are machines: I follows. Since there are buses and every one is a machine, some machines are buses: II follows too."
+  },
+  {
+    "id": "RAJPOLICE-D-009",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Excel",
+    "stem": "In MS Excel, the box where a row and a column meet is called a:",
+    "options": [
+      "Range",
+      "Tab",
+      "Sheet",
+      "Cell"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each row and column meet in a cell, which has an address such as B3. A range is a group of cells."
+  },
+  {
+    "id": "RAJPOLICE-D-010",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If ROAD is written as URDG, how is PATH written in that code?",
+    "options": [
+      "SEWK",
+      "SDVK",
+      "QBUI",
+      "SDWK"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each letter moves three places forward: R to U, O to R, A to D, D to G. PATH becomes SDWK."
+  },
+  {
+    "id": "RAJPOLICE-D-011",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If 3 August is a Monday, what day of the week is 3 September of the same year?",
+    "options": [
+      "Friday",
+      "Tuesday",
+      "Thursday",
+      "Wednesday"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "August has 31 days. 31 = 4 weeks and 3 days, so 3 September is 3 days after Monday: Thursday."
+  },
+  {
+    "id": "RAJPOLICE-D-012",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Email",
+    "stem": "In the email address ravi@example.com, what is 'example.com'?",
+    "options": [
+      "The subject",
+      "The password",
+      "The domain name",
+      "The user name"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In an email address the part before @ is the user name and the part after it is the domain of the mail service or organisation."
+  },
+  {
+    "id": "RAJPOLICE-D-013",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which city was the capital of the Pallavas?",
+    "options": [
+      "Thanjavur",
+      "Kanchipuram",
+      "Madurai",
+      "Badami"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Pallavas ruled from Kanchipuram. Madurai was the Pandya capital, Thanjavur the Chola capital and Badami the Chalukya capital."
+  },
+  {
+    "id": "RAJPOLICE-D-014",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Helplines",
+    "stem": "Which number is the national Women Helpline for women facing violence?",
+    "options": [
+      "108",
+      "181",
+      "1098",
+      "1930"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "181 is the Women Helpline. 1098 is for children, 1930 for cyber fraud and 108 for an ambulance."
+  },
+  {
+    "id": "RAJPOLICE-D-015",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Bhitarkanika National Park, known for its mangroves and saltwater crocodiles, is in which state?",
+    "options": [
+      "Andhra Pradesh",
+      "Gujarat",
+      "West Bengal",
+      "Odisha"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bhitarkanika in Kendrapara district, Odisha, has India's largest population of saltwater crocodiles."
+  },
+  {
+    "id": "RAJPOLICE-D-016",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "Which clause of the Constitution lets the State make special provisions for women and children?",
+    "options": [
+      "Article 19(1)",
+      "Article 25",
+      "Article 14",
+      "Article 15(3)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 15 forbids discrimination on grounds such as sex, but clause (3) allows special provisions for women and children, such as reserved seats."
+  },
+  {
+    "id": "RAJPOLICE-D-017",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "The Blue Revolution in India is linked to:",
+    "options": [
+      "Milk production",
+      "Egg production",
+      "Fish production",
+      "Oilseed production"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Blue Revolution raised fish and aquaculture output. The White Revolution was milk and the Yellow Revolution oilseeds."
+  },
+  {
+    "id": "RAJPOLICE-D-018",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "The fundamental duty to renounce practices derogatory to the dignity of women is in which clause?",
+    "options": [
+      "Article 51A(e)",
+      "Article 51A(h)",
+      "Article 51A(k)",
+      "Article 51A(a)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article 51A(e) asks citizens to promote harmony and renounce practices derogatory to the dignity of women. 51A(k) is the duty of parents to educate children."
+  },
+  {
+    "id": "RAJPOLICE-D-019",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Which layer of the Earth lies between the crust and the core?",
+    "options": [
+      "Mantle",
+      "Hydrosphere",
+      "Atmosphere",
+      "Lithosphere"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Earth has three main layers: crust, mantle and core. The mantle is the thickest."
+  },
+  {
+    "id": "RAJPOLICE-D-020",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajLaw",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trafficking",
+    "stem": "In which year was the Immoral Traffic (Prevention) Act passed?",
+    "options": [
+      "1956",
+      "1961",
+      "1971",
+      "2000"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The Act was passed in 1956 as the Suppression of Immoral Traffic in Women and Girls Act and took its present name in a 1986 amendment. It targets trafficking for commercial sexual exploitation. Article 23 of the Constitution bans human trafficking."
+  },
+  {
+    "id": "RAJPOLICE-D-021",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sources",
+    "stem": "Who wrote 'Nainsi ri Khyat', a chronicle of Marwar and its neighbours in the 17th century?",
+    "options": [
+      "Muhnot Nainsi",
+      "Chand Bardai",
+      "Suryamal Mishran",
+      "James Tod"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Muhnot Nainsi, a minister of Maharaja Jaswant Singh of Marwar, wrote the Khyat and the Marwar ra Pargana ri Vigat. Munshi Devi Prasad called him the Abul Fazl of Rajputana."
+  },
+  {
+    "id": "RAJPOLICE-D-022",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Folk dance",
+    "stem": "Terah Tali, in which women strike thirteen manjiras tied to their bodies, is performed by the Kamad community in honour of:",
+    "options": [
+      "Baba Ramdev",
+      "Tejaji",
+      "Gogaji",
+      "Pabuji"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kamad women perform Terah Tali at Ramdevra during the Ramdev fair."
+  },
+  {
+    "id": "RAJPOLICE-D-023",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Districts",
+    "stem": "Which is the largest district of Rajasthan by area?",
+    "options": [
+      "Jodhpur",
+      "Bikaner",
+      "Barmer",
+      "Jaisalmer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Jaisalmer, in the Thar desert on the Pakistan border, is the largest district of Rajasthan by area."
+  },
+  {
+    "id": "RAJPOLICE-D-024",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mewar",
+    "stem": "The Raj Prashasti, a large Sanskrit inscription on the bund of Rajsamand lake, was composed in the reign of:",
+    "options": [
+      "Maharana Udai Singh II",
+      "Maharana Amar Singh I",
+      "Maharana Raj Singh",
+      "Rana Kumbha"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Maharana Raj Singh built Rajsamand lake in the 17th century. Ranchhod Bhatt wrote the Raj Prashasti, carved on 25 slabs."
+  },
+  {
+    "id": "RAJPOLICE-D-025",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Crafts",
+    "stem": "Molela village, near Nathdwara, is known for:",
+    "options": [
+      "Terracotta plaques of deities",
+      "Marble statues",
+      "Silver jewellery",
+      "Woollen carpets"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Potters of Molela make terracotta plaques of folk deities such as Devnarayan for village shrines."
+  },
+  {
+    "id": "RAJPOLICE-D-026",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "How many Lok Sabha seats does Rajasthan have?",
+    "options": [
+      "10",
+      "20",
+      "25",
+      "30"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Rajasthan elects 25 members to the Lok Sabha and 10 to the Rajya Sabha."
+  },
+  {
+    "id": "RAJPOLICE-D-027",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mewar",
+    "stem": "Panna Dhai is remembered for sacrificing her own son to save which prince of Mewar?",
+    "options": [
+      "Rana Kumbha",
+      "Rana Sanga",
+      "Udai Singh II",
+      "Maharana Pratap"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When Banbir tried to kill the young prince, Panna Dhai put her son Chandan in his place and smuggled Udai Singh II to safety."
+  },
+  {
+    "id": "RAJPOLICE-D-028",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Folk arts",
+    "stem": "Kathputli, a traditional art of Rajasthan, is a form of:",
+    "options": [
+      "Stone carving",
+      "String puppetry",
+      "Wall painting",
+      "Folk wrestling"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Kathputli puppets are worked with strings by the Bhat community, often telling the story of Amar Singh Rathore."
+  },
+  {
+    "id": "RAJPOLICE-D-029",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Wildlife",
+    "stem": "Which tiger reserve is in Alwar district?",
+    "options": [
+      "Mukundra Hills",
+      "Sariska",
+      "Ranthambore",
+      "Ramgarh Vishdhari"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sariska is in Alwar. Ranthambore is in Sawai Madhopur, Mukundra Hills near Kota and Ramgarh Vishdhari in Bundi."
+  },
+  {
+    "id": "RAJPOLICE-D-030",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cities",
+    "stem": "In which year did Maharana Udai Singh II found Udaipur?",
+    "options": [
+      "1559",
+      "1568",
+      "1576",
+      "1615"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Udai Singh II founded Udaipur in 1559. Akbar took Chittorgarh in 1568, after which Udaipur became Mewar's capital."
+  },
+  {
+    "id": "RAJPOLICE-D-031",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajCulture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Painting",
+    "stem": "Which school of Rajasthani painting is best known for its lively hunting scenes?",
+    "options": [
+      "Nathdwara",
+      "Bikaner",
+      "Kota",
+      "Kishangarh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Kota painters showed rulers hunting tigers and lions in dense forests. Nathdwara is known for Pichhwai paintings of Shrinathji."
+  },
+  {
+    "id": "RAJPOLICE-D-032",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "rajGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "Rajasthan is India's largest producer of which crop?",
+    "options": [
+      "Tea",
+      "Jute",
+      "Rice",
+      "Bajra (pearl millet)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bajra suits the dry, sandy west of the state. Rajasthan also leads in mustard and in wool."
+  }
+]

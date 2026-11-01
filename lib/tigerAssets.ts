@@ -55,6 +55,9 @@ const BORROWED_SETS: Record<string, string> = {
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
   ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables",
   pkdrive: "driving",
+  // Bank exams wear the IBPS PO tiger; state police exams the police tiger.
+  sbipo: "ibpspo", sbiclerk: "ibpspo", ibpsrrb: "ibpspo",
+  delhipolice: "police", biharpolice: "police", rajpolice: "police", mppolice: "police",
 };
 
 export function hasTigerSet(examId: string): boolean {

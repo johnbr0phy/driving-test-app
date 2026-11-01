@@ -194,6 +194,11 @@ export function trackStateSelected(state: string, via: "picker" | "link") {
   if (via === "picker") trackFunnelStep("dmv_state");
 }
 
+// John's "tell a friend" ask in training (components/SharePromptStep).
+export function trackSharePrompt(action: "shown" | "skipped" | "share" | "copy", where: string) {
+  window.gtag?.("event", "share_prompt", { action, where });
+}
+
 export function trackGuestPrompt(action: "shown" | "skipped" | "google" | "email", where: string) {
   window.gtag?.("event", "guest_prompt", { action, where });
 }

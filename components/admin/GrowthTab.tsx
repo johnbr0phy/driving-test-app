@@ -506,6 +506,7 @@ const SOURCE_LABELS: [string, string][] = [
   ["claude", "Claude"],
   ["ai_other", "Other AI"],
   ["search", "Search engines"],
+  ["friend", "Friend's link"],
   ["direct", "Direct"],
   ["other", "Other sites"],
 ];

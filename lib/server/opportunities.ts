@@ -17,11 +17,11 @@ import { REGIONS, regionFromCountry, regionOfTest, type TestRegion } from '@/lib
 // (completed checkouts for the paywall each older payment came from, refunds,
 // and the webhook's subscribed events). Nothing here writes.
 
-export const VISIT_SOURCES = ['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'direct', 'other'] as const;
+export const VISIT_SOURCES = ['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'friend', 'direct', 'other'] as const;
 const AI_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other']);
 const SOURCE_LABELS: Record<string, string> = {
   chatgpt: 'ChatGPT', perplexity: 'Perplexity', gemini: 'Gemini', copilot: 'Copilot', claude: 'Claude',
-  ai_other: 'Other AI', search: 'Search engines', direct: 'Direct / unknown', other: 'Other sites',
+  ai_other: 'Other AI', search: 'Search engines', friend: "Friend's link (tell a friend)", direct: 'Direct / unknown', other: 'Other sites',
 };
 const PREMIUM_PRICE_CENTS = 999;
 
@@ -116,6 +116,12 @@ export interface OpportunitiesPayload {
     }[];
     /** Two-sided p-value for buyers per browser, john vs classic; null until both have buyers or views. */
     pValue: number | null;
+  } | null;
+  /** John's "tell a friend" prompt (components/SharePromptStep), null before it is first shown. */
+  sharePrompt: {
+    since: string | null;
+    actions: { id: 'shown' | 'skipped' | 'share' | 'copy'; label: string; total: number; last30d: number }[];
+    byWhere: { id: string; label: string; shown: number; shared: number }[];
   } | null;
   sourcesSince: string | null;
   sources: {
@@ -228,7 +234,7 @@ export async function buildOpportunities(
   now = Date.now(),
 ): Promise<OpportunitiesPayload> {
   const w = windows(now);
-  const [usersSnap, paymentsSnap, questionsDoc, funnelDoc, paywallsDoc, sharesDoc, originsSnap, studyTimesDoc, stripeFacts, paywallTestDoc] = await Promise.all([
+  const [usersSnap, paymentsSnap, questionsDoc, funnelDoc, paywallsDoc, sharesDoc, originsSnap, studyTimesDoc, stripeFacts, paywallTestDoc, sharePromptDoc] = await Promise.all([
     db.collection('users').select('createdAt', 'activeDates', 'lastUpdated', 'subscription', 'paywallHits').get(),
     db.collection('payments').get(),
     db.doc('analytics/questions').get(),
@@ -239,6 +245,7 @@ export async function buildOpportunities(
     db.doc('globalStats/studyTimes').get(),
     readStripe(stripe),
     db.doc('analytics/paywallTest').get(),
+    db.doc('analytics/sharePrompt').get(),
   ]);
 
   // ── Users ──────────────────────────────────────────────────────────────
@@ -432,6 +439,7 @@ export async function buildOpportunities(
     })
     .sort((a, b) => b.revenueAllCents - a.revenueAllCents || b.hits30d - a.hits30d);
   const paywallTest = buildPaywallTest(paywallTestDoc.data(), payments);
+  const sharePrompt = buildSharePrompt(sharePromptDoc.data(), w);
   const unattributed = payments.filter((p) => !p.location);
   if (unattributed.length > 0) {
     paywalls.push({
@@ -776,6 +784,7 @@ export async function buildOpportunities(
     exams,
     paywalls,
     paywallTest,
+    sharePrompt,
     sourcesSince: sourceSince,
     sources,
     sourceSignupsTracked,
@@ -783,6 +792,43 @@ export async function buildOpportunities(
     cohorts,
     health,
     insights,
+  };
+}
+
+// ─── Tell a friend prompt ────────────────────────────────────────────────────
+const SHARE_ACTION_LABELS = {
+  shown: 'Shown',
+  skipped: 'Keep practicing',
+  share: 'Shared (share sheet)',
+  copy: 'Copied the link',
+} as const;
+const SHARE_WHERE_LABELS: Record<string, string> = {
+  dmv_training: 'DMV training',
+  training: 'Exam training sets',
+  drill: 'Drills (SAT, ACT...)',
+};
+
+function buildSharePrompt(
+  doc: Record<string, any> | undefined,
+  w: { sum: (daily: Record<string, number> | undefined, from: number, to: number) => number },
+): OpportunitiesPayload['sharePrompt'] {
+  if (!doc) return null;
+  const actions = (doc.actions || {}) as Record<string, { total?: number; daily?: Record<string, number> }>;
+  const byWhere = (doc.byWhere || {}) as Record<string, Record<string, number>>;
+  return {
+    since: typeof doc.since === 'string' ? doc.since : null,
+    actions: (Object.keys(SHARE_ACTION_LABELS) as (keyof typeof SHARE_ACTION_LABELS)[]).map((id) => ({
+      id,
+      label: SHARE_ACTION_LABELS[id],
+      total: actions[id]?.total || 0,
+      last30d: w.sum(actions[id]?.daily, 29, 0),
+    })),
+    byWhere: Object.keys(SHARE_WHERE_LABELS).map((id) => ({
+      id,
+      label: SHARE_WHERE_LABELS[id],
+      shown: byWhere[id]?.shown || 0,
+      shared: (byWhere[id]?.share || 0) + (byWhere[id]?.copy || 0),
+    })),
   };
 }
 

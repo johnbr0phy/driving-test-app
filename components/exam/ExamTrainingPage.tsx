@@ -24,6 +24,9 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { useAuth } from "@/contexts/AuthContext";
 import { useGuestPrompt } from "@/hooks/useGuestPrompt";
 import { GuestPromptStep } from "@/components/GuestPromptStep";
+import { useSharePrompt } from "@/hooks/useSharePrompt";
+import { SharePromptStep } from "@/components/SharePromptStep";
+import { useIsPremium } from "@/hooks/useIsPremium";
 import { v1GuestCounts } from "@/components/GuestSaveCard";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 import { useTestSetMigration } from "@/hooks/useTestSetMigration";
@@ -37,7 +40,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
   const searchParams = useSearchParams();
   const hydrated = useHydration();
   const { playCorrectSound, playIncorrectSound } = useSound();
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   const isGuest = useStore((state) => state.isGuest);
   const completedTests = useStore((state) => state.completedTests);
@@ -46,6 +49,10 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
   const { user, loading: authLoading } = useAuth();
   // Signed-out visitors get the sign-up prompt in place of a question now and then.
   const guestPrompt = useGuestPrompt(!authLoading && !user, "training");
+  // Non-paying people on a roll get John's "tell a friend" ask the same way.
+  const { isPremium, ready: premiumReady } = useIsPremium();
+  const examAnswered = v1GuestCounts(exam.stateCode, completedTests, trainingAnswerHistory).answered;
+  const sharePrompt = useSharePrompt(premiumReady && !isPremium && language === "en", examAnswered, "training");
   useClassMissRecovery(exam.id);
   useTestSetMigration(exam);
 
@@ -226,6 +233,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
     }
 
     guestPrompt.record(isCorrect);
+    sharePrompt.record(isCorrect);
     recordClassAnswer(exam.id, currentQuestion, isCorrect, answer);
 
     // Track progress
@@ -243,12 +251,17 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
 
   const handleNext = () => {
     // Let the earned result come before an optional sign-up step.
-    if (!pendingCompletion.current && guestPrompt.takeStep()) return;
+    if (!pendingCompletion.current && (guestPrompt.takeStep() || sharePrompt.takeStep())) return;
     loadNextQuestion();
   };
 
   const handleSkipPrompt = () => {
     guestPrompt.skip();
+    loadNextQuestion();
+  };
+
+  const handleSkipShare = () => {
+    sharePrompt.skip();
     loadNextQuestion();
   };
 
@@ -362,10 +375,12 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
         {accessLocked ? null : guestPrompt.showing ? (
           <GuestPromptStep
             signupHref={`/signup?redirect=${encodeURIComponent(`${pathname}${searchParams.size ? `?${searchParams.toString()}` : ""}`)}`}
-            answered={v1GuestCounts(exam.stateCode, completedTests, trainingAnswerHistory).answered}
+            answered={examAnswered}
             where="training"
             onSkip={handleSkipPrompt}
           />
+        ) : sharePrompt.showing ? (
+          <SharePromptStep onShared={sharePrompt.shared} onSkip={handleSkipShare} />
         ) : currentQuestion ? (
           <TrainingCard
             key={currentQuestion.questionId}

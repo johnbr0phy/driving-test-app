@@ -11,6 +11,7 @@ import {
 import { TestIcon } from "@/components/TestIcon";
 import { CountUp } from "@/components/CountUp";
 import { hasTigerSet } from "@/lib/tigerAssets";
+import { getExamById } from "@/lib/exams";
 import { LANGUAGES, type Language } from "@/i18n";
 import { homeCopy } from "@/components/home/homeCopy";
 import { CountryPills, readRegionCookie } from "@/components/CountryPills";
@@ -22,6 +23,12 @@ import { Region, orderGroupsForRegion, regionOfTest } from "@/lib/region";
  * multilingual tests), a chip row (size, price) and the optional weekly count,
  * with a chevron on the right like the dashboard rows.
  */
+/** A test's landing in the page's language when it has one (the Spanish DGT
+ *  test on the Spanish homepage), else its usual landing. */
+function landingIn(test: TestCatalogEntry, lang: Language): string {
+  return getExamById(test.id)?.translations?.[lang]?.landingPath ?? test.href;
+}
+
 export function TestCard({ test, answered, headingLevel = 3, lang = "en" }: { test: TestCatalogEntry; answered?: number | null; headingLevel?: 3 | 4; lang?: Language }) {
   const tiger = hasTigerSet(test.id);
   const c = homeCopy(lang).card;
@@ -32,7 +39,7 @@ export function TestCard({ test, answered, headingLevel = 3, lang = "en" }: { te
   return (
     <div data-theme={test.theme} className="h-full">
       <Link
-        href={test.href}
+        href={landingIn(test, lang)}
         className="group flex h-full items-center gap-3 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 transition-all hover:border-brand hover:shadow-lg"
       >
         <div className="min-w-0 flex-1">

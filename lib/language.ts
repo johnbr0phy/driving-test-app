@@ -6,7 +6,9 @@
 import { isLanguage, type Language } from "@/i18n";
 import { isRegion, regionInfo, REGION_COOKIE, type Region } from "@/lib/region";
 
-export const LANG_COOKIE = "tt-lang";
+import { LANG_COOKIE } from "@/lib/homeLanguages";
+
+export { LANG_COOKIE };
 const LANG_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
 /** True once the person has picked a language. A stored language other than

@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useMemo, useCallback, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Language, createT } from "@/i18n";
 import { useStore } from "@/store/useStore";
 import { pageLanguage, testPageLanguage } from "@/lib/pageLanguage";
@@ -58,11 +58,15 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     testPageLanguage(pathname, preferredLanguage, testLanguages ?? {}, dmvState) ??
     pageLanguage(pathname, preferredLanguage, chosen);
 
+  const router = useRouter();
   const setLanguage = useCallback(
     (lang: Language) => {
       setStoreLanguage(lang);
+      // Homepages are rendered on the server in the picked language
+      // (middleware.ts reads the tt-lang cookie), so fetch the page again.
+      router.refresh();
     },
-    [setStoreLanguage]
+    [setStoreLanguage, router]
   );
 
   // Update the html lang attribute when the page's language changes

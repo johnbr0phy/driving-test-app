@@ -13,7 +13,7 @@ import {
 } from "@/lib/region";
 import { useStore } from "@/store/useStore";
 import type { Language } from "@/i18n";
-import { COUNTRY_NAMES, homeCopy } from "@/components/home/homeCopy";
+import { COUNTRY_NAMES, countryNameIn, homeCopy } from "@/components/home/homeCopy";
 
 export const FLAGS: Record<Region, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", IE: "🇮🇪", AU: "🇦🇺", NZ: "🇳🇿", IN: "🇮🇳",
   PH: "🇵🇭", MY: "🇲🇾", SG: "🇸🇬", HK: "🇭🇰", AE: "🇦🇪", ZA: "🇿🇦", NG: "🇳🇬", KE: "🇰🇪", PK: "🇵🇰", ES: "🇪🇸", PT: "🇵🇹", RO: "🇷🇴", SE: "🇸🇪", GR: "🇬🇷", DK: "🇩🇰", HU: "🇭🇺", BE: "🇧🇪", FI: "🇫🇮", MT: "🇲🇹", DE: "🇩🇪" };
@@ -160,7 +160,7 @@ export function CountryPills({ current, onChange, lang = "en" }: { current: Regi
     source === "chosen"
       ? c.saved
       : source === "geo" && current !== "US"
-        ? c.geo(regionInfo(current).inName)
+        ? c.geo(countryNameIn(current, lang))
         : null;
 
   // With about thirty countries the row is too long: it shows the current

@@ -1,0 +1,37 @@
+{
+  "id": "grdriving",
+  "stateCode": "GRDRIVE",
+  "idBase": 14100,
+  "prefix": "GRDRV-",
+  "slug": "/greece-driving-theory",
+  "landingPath": "/greece-driving-theory-test",
+  "dataFile": "data/greece-driving-questions.json",
+  "name": "Greece Driving Theory Test Practice",
+  "shortName": "Greece theory test",
+  "examLabel": "Greek driving theory test",
+  "fullName": "Greece driving theory test (category B car)",
+  "region": "GR",
+  "icon": "car",
+  "testCount": 6,
+  "questionsPerTest": 30,
+  "passPct": 96,
+  "categories": [
+    {"key": "grLicence", "label": "Licences, Alcohol & the Law", "perTest": 3, "pool": 20, "segment": "LIC"},
+    {"key": "grWarning", "label": "Warning Signs", "perTest": 4, "pool": 26, "segment": "WRN"},
+    {"key": "grRegulatory", "label": "Priority, Prohibition & Mandatory Signs", "perTest": 4, "pool": 26, "segment": "REG"},
+    {"key": "grInfo", "label": "Information Signs, Markings & Signals", "perTest": 4, "pool": 26, "segment": "INF"},
+    {"key": "grPriority", "label": "Junctions, Roundabouts & Priority", "perTest": 4, "pool": 26, "segment": "PRI"},
+    {"key": "grSpeed", "label": "Speed, Distances & Overtaking", "perTest": 4, "pool": 26, "segment": "SPD"},
+    {"key": "grParking", "label": "Parking & Sharing the Road", "perTest": 3, "pool": 20, "segment": "PRK"},
+    {"key": "grSafety", "label": "Vehicle, Passengers & Safe Driving", "perTest": 2, "pool": 14, "segment": "SAF"},
+    {"key": "grEmergency", "label": "Night, Weather, Motorways & Emergencies", "perTest": 2, "pool": 16, "segment": "EMG"}
+  ],
+  "notes": "Six real-length tests of 30 (6 x 30 = 180); each pool is 6x its per-test count plus spares, 20 training-only items in all (the last items of each pool by ID). passPct 96 = ceil(0.96 * 30) = 29, the 29 of 30 pass reported by guides and Greek motoring press. Dashboard = 5 topic sets + 6 tests = 11 steps. No set exceeds 60.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 14101, "name": "Warning Signs", "categories": ["grWarning"], "size": 26},
+    {"setNumber": 2, "id": 14102, "name": "Priority & Regulatory Signs", "categories": ["grRegulatory"], "size": 26},
+    {"setNumber": 3, "id": 14103, "name": "Markings, Signals & Junctions", "categories": ["grInfo", "grPriority"], "size": 52},
+    {"setNumber": 4, "id": 14104, "name": "Speed, Overtaking & Parking", "categories": ["grSpeed", "grParking"], "size": 46},
+    {"setNumber": 5, "id": 14105, "name": "Licences, Safety & Emergencies", "categories": ["grLicence", "grSafety", "grEmergency"], "size": 50}
+  ]
+}

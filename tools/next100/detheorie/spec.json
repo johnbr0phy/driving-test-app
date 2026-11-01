@@ -1,0 +1,36 @@
+{
+  "id": "detheorie",
+  "stateCode": "DETHEORIE",
+  "idBase": 14700,
+  "prefix": "DETH-",
+  "slug": "/fuehrerschein-theorie",
+  "landingPath": "/de/fuehrerschein-theorie-test",
+  "dataFile": "data/de-theorie-questions.json",
+  "language": "de",
+  "locale": "de-DE",
+  "name": "Führerschein Theorie Test Klasse B",
+  "shortName": "Führerschein Theorie",
+  "examLabel": "Theorieprüfung Klasse B",
+  "fullName": "Theoretische Fahrerlaubnisprüfung Klasse B (Pkw)",
+  "english": {
+    "name": "German Driving Theory Test (Class B)",
+    "shortName": "German driving theory test",
+    "fullName": "German driving licence theory test, class B car (Führerschein Klasse B), in German"
+  },
+  "icon": "car",
+  "testCount": 7,
+  "questionsPerTest": 30,
+  "passPct": 93,
+  "categories": [
+    {"key": "dethGefahren", "label": "Gefahrenlehre", "perTest": 7, "pool": 49, "segment": "GEF"},
+    {"key": "dethVerhalten", "label": "Verhalten im Verkehr", "perTest": 6, "pool": 42, "segment": "VER"},
+    {"key": "dethVorfahrt", "label": "Vorfahrt und Vorrang", "perTest": 4, "pool": 28, "segment": "VOR"},
+    {"key": "dethZeichen", "label": "Verkehrszeichen", "perTest": 5, "pool": 35, "segment": "VZ"},
+    {"key": "dethUmwelt", "label": "Umweltschutz", "perTest": 2, "pool": 14, "segment": "UMW"},
+    {"key": "dethBetrieb", "label": "Vorschriften über den Betrieb der Fahrzeuge", "perTest": 2, "pool": 14, "segment": "BET"},
+    {"key": "dethTechnik", "label": "Technik", "perTest": 2, "pool": 14, "segment": "TEC"},
+    {"key": "dethEignung", "label": "Eignung und Befähigung von Kraftfahrern", "perTest": 2, "pool": 14, "segment": "EIG"}
+  ],
+  "notes": "7 tests x 30 = 210, every item used once in tests (pools exactly 7x each count). Training: five topic sets 14701-14705 (Gefahrenlehre 49, Verhalten 42, Vorfahrt 28, Zeichen 35, Umwelt+Betrieb+Technik+Eignung 56), so the dashboard is 5 sets + 7 tests = 12 steps. passPct 93 = ceil(0.93 x 30) = 28 of 30 (at most two mistakes), Tigertest's target because point weighting (2 to 5 error points, max 10, two 5-pointers fail) is not modelled. Categories are the eight Sachgebiete of the official catalogue (FeV Anlage 7 Nr. 1.1); per-test weights are Tigertest's own.",
+  "trainingSets": "topic sets 14701-14705, see WIRING.md"
+}

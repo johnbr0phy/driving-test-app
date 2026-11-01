@@ -12,9 +12,14 @@ import {
   regionInfo,
 } from "@/lib/region";
 import { useStore } from "@/store/useStore";
+import type { Language } from "@/i18n";
+import { COUNTRY_NAMES, homeCopy } from "@/components/home/homeCopy";
 
 export const FLAGS: Record<Region, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", IE: "🇮🇪", AU: "🇦🇺", NZ: "🇳🇿", IN: "🇮🇳",
-  PH: "🇵🇭", MY: "🇲🇾", SG: "🇸🇬", HK: "🇭🇰", AE: "🇦🇪", ZA: "🇿🇦", NG: "🇳🇬", KE: "🇰🇪", PK: "🇵🇰" };
+  PH: "🇵🇭", MY: "🇲🇾", SG: "🇸🇬", HK: "🇭🇰", AE: "🇦🇪", ZA: "🇿🇦", NG: "🇳🇬", KE: "🇰🇪", PK: "🇵🇰", ES: "🇪🇸", PT: "🇵🇹", RO: "🇷🇴", SE: "🇸🇪", GR: "🇬🇷", DK: "🇩🇰", HU: "🇭🇺", BE: "🇧🇪", FI: "🇫🇮", MT: "🇲🇹", DE: "🇩🇪" };
+
+/** Always in the row: the countries with the most Tigertest tests and visitors. */
+const LARGEST: Region[] = ["US", "UK", "IN", "CA", "AU"];
 
 /** The saved country, if any (client only). */
 export function readRegionCookie(): Region | null {
@@ -67,9 +72,22 @@ export function saveRegion(r: Region) {
  * follow them too; a tap also saves the country (middleware.ts reads it). On
  * the /tests hub (`onChange` set) the pills are buttons and the hub reorders.
  */
-export function CountryPills({ current, onChange }: { current: Region; onChange?: (r: Region) => void }) {
+export function CountryPills({ current, onChange, lang = "en" }: { current: Region; onChange?: (r: Region) => void; lang?: Language }) {
   const [source, setSource] = useState<string | null>(null);
-  useEffect(() => setSource(readCookie(REGION_SOURCE_COOKIE)), []);
+  // The country this browser was placed in by location, if any (client only).
+  const [geo, setGeo] = useState<Region | null>(null);
+  const [open, setOpen] = useState(false);
+  // The row adds the visitor's own and last-picked countries only after
+  // mount, so the server HTML and the first client render match.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+    const src = readCookie(REGION_SOURCE_COOKIE);
+    setSource(src);
+    if (src === "geo") setGeo(readRegionCookie());
+  }, []);
+  const c = homeCopy(lang).pills;
+  const nameOf = (r: Region) => COUNTRY_NAMES[lang]?.[r] ?? regionInfo(r).name;
 
   // The account remembers the picked country (useStore region, synced like
   // primaryExam). Keep this device's cookie in step with it once the account
@@ -127,12 +145,31 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
     onChange?.(r);
   }
 
+  // A country link: save the pick, then a full page load (see below).
+  function go(e: React.MouseEvent, r: Region, on: boolean) {
+    // Let Cmd/Ctrl/Shift-click open the page in a new tab or window.
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    save(r);
+    if (on) return;
+    if (box.current) setPinnedTop(box.current.getBoundingClientRect().top);
+    window.location.assign(regionHomePath(r));
+  }
+
   const caption =
     source === "chosen"
-      ? "Saved for next time. Your progress is the same in every country."
+      ? c.saved
       : source === "geo" && current !== "US"
-        ? `Showing tests for ${regionInfo(current).inName} because that's where you are. Pick another country any time.`
+        ? c.geo(regionInfo(current).inName)
         : null;
+
+  // With about thirty countries the row is too long: it shows the current
+  // country, the visitor's own, the last one picked and the five largest, and
+  // "More countries" opens the rest (a plain list of links, in the page's HTML
+  // even while closed, so crawlers still reach every country page).
+  const inRow = new Set<Region>([current, ...LARGEST, ...(geo ? [geo] : []), ...(mounted && storeRegion ? [storeRegion] : [])]);
+  const rowRegions = REGIONS.filter((r) => inRow.has(r.code));
+  const moreRegions = REGIONS.filter((r) => !inRow.has(r.code));
 
   const pill = (on: boolean) =>
     // Text colours matter where flag emoji fall back to letters (Windows shows
@@ -143,28 +180,43 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
         : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
     }`;
   // Flags only; the country name is the accessible label and the hover title.
-  const label = (r: (typeof REGIONS)[number]) => (
+  const label = (r: { code: Region }) => (
     <span aria-hidden="true" className="text-2xl leading-none">{FLAGS[r.code]}</span>
   );
   // One row that scrolls sideways when the flags outgrow the screen, never a second line.
   const row = "relative flex max-w-full gap-1 overflow-x-auto rounded-full border border-brand-border bg-white dark:bg-gray-900 p-1 shadow-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden";
 
+  const moreButton = moreRegions.length > 0 && (
+    <button
+      type="button"
+      aria-expanded={open}
+      aria-controls="more-countries"
+      onClick={() => setOpen((o) => !o)}
+      title={c.moreCountries}
+      className="flex h-11 shrink-0 items-center gap-1 rounded-full px-3 text-sm font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+    >
+      <span className="sr-only sm:not-sr-only">{c.moreCountries}</span>
+      <span aria-hidden="true">{open ? "−" : "+"}</span>
+    </button>
+  );
+
   return (
     <div ref={box} className="flex flex-col items-center">
       {onChange ? (
-        <div role="radiogroup" aria-label="Show tests for" className={row}>
-          {REGIONS.map((r) => {
+        <div role="radiogroup" aria-label={c.showTestsFor} className={row}>
+          {rowRegions.map((r) => {
             const on = r.code === current;
             return (
-              <button key={r.code} type="button" role="radio" aria-checked={on} aria-label={r.name} title={r.name} onClick={() => !on && save(r.code)} className={pill(on)}>
+              <button key={r.code} type="button" role="radio" aria-checked={on} aria-label={nameOf(r.code)} title={nameOf(r.code)} onClick={() => !on && save(r.code)} className={pill(on)}>
                 {label(r)}
               </button>
             );
           })}
+          {moreButton}
         </div>
       ) : (
-        <nav aria-label="Tests by country" className={row}>
-          {REGIONS.map((r) => {
+        <nav aria-label={c.testsByCountry} className={row}>
+          {rowRegions.map((r) => {
             const on = r.code === current;
             return (
               // A plain link and a full page load, not the client router: the
@@ -174,25 +226,52 @@ export function CountryPills({ current, onChange }: { current: Region; onChange?
                 key={r.code}
                 href={regionHomePath(r.code)}
                 aria-current={on ? "page" : undefined}
-                aria-label={`${r.name} tests`}
-                title={r.name}
-                onClick={(e) => {
-                  // Let Cmd/Ctrl/Shift-click open the page in a new tab or window.
-                  if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-                  e.preventDefault();
-                  save(r.code);
-                  if (on) return;
-                  if (box.current) setPinnedTop(box.current.getBoundingClientRect().top);
-                  window.location.assign(regionHomePath(r.code));
-                }}
+                aria-label={c.countryTests(nameOf(r.code))}
+                title={nameOf(r.code)}
+                onClick={(e) => go(e, r.code, on)}
                 className={pill(on)}
               >
                 {label(r)}
               </a>
             );
           })}
+          {moreButton}
         </nav>
       )}
+      {/* Every other country, as plain links (or buttons on the hub). */}
+      <ul
+        id="more-countries"
+        hidden={!open}
+        aria-label={c.moreCountries}
+        className="mt-3 grid w-full max-w-xl grid-cols-2 gap-1 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-2 text-sm sm:grid-cols-3"
+      >
+        {moreRegions.map((r) => (
+          <li key={r.code}>
+            {onChange ? (
+              <button
+                type="button"
+                onClick={() => {
+                  save(r.code);
+                  setOpen(false);
+                }}
+                className="flex w-full items-center gap-2 rounded-lg px-2 py-2 text-left text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+              >
+                <span aria-hidden="true" className="text-lg leading-none">{FLAGS[r.code]}</span>
+                {nameOf(r.code)}
+              </button>
+            ) : (
+              <a
+                href={regionHomePath(r.code)}
+                onClick={(e) => go(e, r.code, false)}
+                className="flex items-center gap-2 rounded-lg px-2 py-2 text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+              >
+                <span aria-hidden="true" className="text-lg leading-none">{FLAGS[r.code]}</span>
+                {nameOf(r.code)}
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
       <p className="mt-2 min-h-5 text-center text-sm text-gray-500 dark:text-gray-400" aria-live="polite">
         {caption}
       </p>

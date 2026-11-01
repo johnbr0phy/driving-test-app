@@ -288,13 +288,15 @@ function TrainingPageContent() {
   }
 
   const dashboardHref = `${DMV_ROUTES.dashboard}?completed=training:${setNumber}`;
-  const celebrationCopy = {
+  const celebrationCopies = {
     en: { title: "You turned this step green!", set: "Training complete", progress: "See your progress", description: "Your practice paid off. This training set is now green on your dashboard." },
     es: { title: "¡Este paso ya está en verde!", set: "Entrenamiento completado", progress: "Ver tu progreso", description: "Tu práctica dio resultado. Este grupo ya está en verde en tu panel." },
     vi: { title: "Bước này đã chuyển sang màu xanh!", set: "Hoàn thành luyện tập", progress: "Xem tiến độ của bạn", description: "Việc luyện tập đã mang lại kết quả. Bộ luyện tập này giờ đã có màu xanh trên bảng tiến độ." },
     ko: { title: "이 단계가 초록색이 되었어요!", set: "학습 완료", progress: "내 진행 상황 보기", description: "연습의 결실이에요. 대시보드에서 이 학습 세트가 초록색으로 바뀌었어요." },
     zh: { title: "这一步变绿了！", set: "练习已完成", progress: "查看你的进度", description: "你的练习有了成果。面板上的这组练习现在变绿了。" },
-  }[language];
+  };
+  // DMV pages only run in DMV_LANGUAGES (lib/pageLanguage.ts).
+  const celebrationCopy = celebrationCopies[language as keyof typeof celebrationCopies] ?? celebrationCopies.en;
 
   return (
     <div className="flex-1 bg-gradient-to-br from-brand-light to-brand-gradient-to">

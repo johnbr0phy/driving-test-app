@@ -8,7 +8,7 @@ import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
 import { splitLegacySets } from '@/lib/legacySetSplits';
 import { queueAchievementCelebration } from '@/lib/achievementCelebration';
-import type { Language } from '@/i18n';
+import { isLanguage, type Language } from '@/i18n';
 import { examAnalyticsKey, examFamilyId, examTestIds, getExamById, getExamByStateCode, getExamForQuestionId, getExamForSetId, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
 
 /**
@@ -941,7 +941,7 @@ export const useStore = create<AppState>()(
             const data = userDoc.data();
             set({
               selectedState: data.selectedState || null,
-              language: data.language === 'en' || data.language === 'es' ? data.language : get().language,
+              language: isLanguage(data.language) ? data.language : get().language,
               currentTests: data.currentTests || {},
               completedTests: data.completedTests || [],
               testAttempts: data.testAttempts || [],

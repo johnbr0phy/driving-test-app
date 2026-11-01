@@ -2207,4 +2207,167 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the IBPS CRP PO/MT notification and Preliminary Examination pattern",
     source: { name: "IBPS", url: "https://www.ibps.in" },
   },
+  rrbgroupd: {
+    answer:
+      "The RRB Group D exam is the Computer Based Test that the Railway Recruitment Boards hold for Level 1 posts such as Track Maintainer Grade IV and Assistant (Points). It has 100 multiple-choice questions in 90 minutes: 25 on Mathematics, 30 on General Intelligence and Reasoning, 25 on General Science and 20 on General Awareness and Current Affairs, with 1/3 mark deducted for each wrong answer. The minimum qualifying marks are 40 percent for UR and EWS and 30 percent for OBC, SC and ST; candidates are then called to the Physical Efficiency Test on normalised marks.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "90 minutes (120 for eligible PwBD with a scribe)" },
+      { label: "Sections", value: "Maths 25, Reasoning 30, General Science 25, General Awareness 20" },
+      { label: "Negative marking", value: "1/3 mark per wrong answer" },
+      { label: "Qualifying marks", value: "UR and EWS 40%, OBC, SC and ST 30%" },
+      { label: "Next stages", value: "Physical Efficiency Test, document verification, medical" },
+      { label: "Given by", value: "Railway Recruitment Boards (RRBs)" },
+    ],
+    basedOn: "the RRB Level 1 notice CEN 09/2025 (updated 30 January 2026), the same pattern as CEN 08/2024",
+    source: { name: "Railway Recruitment Boards", url: "https://www.rrbcdg.gov.in" },
+  },
+
+  sscgd: {
+    answer:
+      "The SSC GD Constable Computer Based Examination (CBE) is the first stage of the Staff Selection Commission's recruitment of Constables (GD) in the Central Armed Police Forces (BSF, CISF, CRPF, SSB, ITBP) and the SSF, and Riflemen (GD) in the Assam Rifles. It has 80 multiple-choice questions in 60 minutes, in four parts of 20: General Intelligence and Reasoning, General Knowledge and General Awareness, Elementary Mathematics, and English or Hindi, at matriculation level. Each right answer earns 2 marks (160 in all) and each wrong answer loses 0.25 marks. Candidates who qualify go on to the Physical Efficiency Test and Physical Standard Test, a medical examination and document verification.",
+    rows: [
+      { label: "Questions", value: "80 (20 per part)" },
+      { label: "Time", value: "60 minutes, no sectional timing" },
+      { label: "Marks", value: "2 per right answer, 160 in all" },
+      { label: "Negative marking", value: "0.25 per wrong answer" },
+      { label: "Parts", value: "Reasoning, General Knowledge, Elementary Mathematics, English or Hindi" },
+      { label: "Minimum qualifying marks", value: "UR 30%, OBC and EWS 25%, all other categories 20%" },
+      { label: "Calculator", value: "Not allowed" },
+      { label: "Next stages", value: "PET and PST, medical examination, document verification" },
+      { label: "Given by", value: "Staff Selection Commission, computer-based, in English, Hindi and 13 regional languages" },
+    ],
+    basedOn: "the SSC Constable (GD) in CAPFs and SSF, and Rifleman (GD) in Assam Rifles Examination notice (2026 cycle, 1 December 2025)",
+    source: { name: "Staff Selection Commission", url: "https://ssc.gov.in" },
+    tigertest:
+      "Tigertest has two full SSC GD mock tests of 80 questions in 60 minutes and eight topic drills, two for each part. All of it is free with no account required; scores are percent correct, with negative marking explained rather than applied. Part D is practised in English.",
+  },
+
+  sscchsl: {
+    answer:
+      "SSC CHSL Tier 1 is a computer-based paper of 100 multiple-choice questions in 60 minutes, set by the Staff Selection Commission for LDC, JSA and Data Entry Operator posts. It has four parts of 25 questions: English Language, General Intelligence, Quantitative Aptitude and General Awareness, and the 2026 notice gives each part a sectional timer of 15 minutes. Each right answer earns 2 marks (200 in all) and each wrong answer loses 0.50 marks. Tier 1 is a qualifying stage: candidates who clear the category cut-off go on to Tier 2, which decides the final merit.",
+    rows: [
+      { label: "Questions", value: "100 (25 per part)" },
+      { label: "Time", value: "60 minutes, 15 per part (sectional timer)" },
+      { label: "Marks", value: "2 per right answer, 200 in all" },
+      { label: "Negative marking", value: "0.50 per wrong answer" },
+      { label: "Parts", value: "English, General Intelligence, Quantitative Aptitude, General Awareness" },
+      { label: "Minimum qualifying marks", value: "UR 30%, OBC/EWS 25%, others 20% (2026 notice)" },
+      { label: "Given by", value: "Staff Selection Commission, computer-based" },
+    ],
+    basedOn: "the SSC Combined Higher Secondary (10+2) Level Examination, 2026 notice and Tier 1 syllabus",
+    source: { name: "Staff Selection Commission", url: "https://ssc.gov.in" },
+  },
+  sscmts: {
+    answer:
+      "The SSC MTS and Havaldar exam is a computer-based test of 90 multiple-choice questions worth 270 marks, set by the Staff Selection Commission and taken in two sessions of 45 minutes each. Session 1 has 20 Numerical and Mathematical Ability and 20 Reasoning questions with no negative marking. Session 2 has 25 General Awareness and 25 English questions, and each wrong answer there loses 1 mark. Every question carries 3 marks and both sessions are compulsory; Havaldar candidates also take a walking test and physical measurements.",
+    rows: [
+      { label: "Questions", value: "90 (40 in Session 1, 50 in Session 2)" },
+      { label: "Time", value: "Two sessions of 45 minutes" },
+      { label: "Marks", value: "3 per right answer, 270 in all" },
+      { label: "Negative marking", value: "None in Session 1; 1 mark per wrong answer in Session 2" },
+      { label: "Session 1", value: "Maths 20, Reasoning 20" },
+      { label: "Session 2", value: "General Awareness 25, English 25" },
+      { label: "Qualifying marks", value: "30% UR, 25% OBC/EWS, 20% others, in each session" },
+      { label: "Given by", value: "Staff Selection Commission, computer-based" },
+    ],
+    basedOn: "the SSC Multi-Tasking (Non-Technical) Staff and Havaldar Examination, 2025 notice (26 June 2025), paragraphs 14 and 18",
+    source: { name: "Staff Selection Commission", url: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_mts_2025.pdf" },
+  },
+
+  uppolice: {
+    answer:
+      "The UP Police Constable written exam is set by the Uttar Pradesh Police Recruitment and Promotion Board (UPPRPB) for Constable Civil Police and equivalent posts. It has 150 objective questions worth 2 marks each, 300 marks in all, in 2 hours: General Knowledge 38, General Hindi 37, Numerical and Mental Ability 38, and Mental Aptitude, IQ and Reasoning 37. Guides disagree on negative marking (0.5 or 0.25 mark per wrong answer, or none); check the notification. The latest recruitment, Advt. 07/2025 for 32,679 posts, held its written exam on 8 to 10 June 2026; candidates who clear it go on to document verification and physical tests.",
+    rows: [
+      { label: "Questions", value: "150 objective (2 marks each, 300 marks)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Subjects", value: "GK 38, General Hindi 37, Numerical Ability 38, Reasoning 37" },
+      { label: "Negative marking", value: "Not confirmed: guides report 0.5, 0.25 or none; check your notice" },
+      { label: "Latest exam", value: "8 to 10 June 2026 (Advt. 07/2025, 32,679 posts)" },
+      { label: "Next stages", value: "Document verification and physical tests" },
+      { label: "Given by", value: "UP Police Recruitment and Promotion Board (UPPRPB)" },
+    ],
+    basedOn: "the UPPRPB constable recruitment of 2025 (Advt. 07/2025) as reported by exam guides, checked October 2026",
+    source: { name: "UP Police Recruitment and Promotion Board", url: "https://uppbpb.gov.in" },
+  },
+
+  ibpsclerk: {
+    answer:
+      "The IBPS Clerk Preliminary Examination is one online objective paper of 100 questions in 60 minutes, with each section timed separately: English Language 30 questions in 20 minutes, Numerical Ability 35 in 20 minutes and Reasoning Ability 35 in 20 minutes. Each question carries one mark and a quarter of a mark is deducted for every wrong answer. Candidates must clear a cutoff set by IBPS in each of the three tests (past cutoffs have differed by state and category); Prelims is qualifying for the Mains, and only Mains marks count in the final merit list. The 2026 Prelims (CRP CSA-XVI) was scheduled for October 2026.",
+    rows: [
+      { label: "Questions", value: "100 (five options each in past papers)" },
+      { label: "Time", value: "60 minutes, 20 per section" },
+      { label: "Sections", value: "English 30, Numerical Ability 35, Reasoning Ability 35" },
+      { label: "Marks", value: "1 per question, 100 in all" },
+      { label: "Negative marking", value: "1/4 mark per wrong answer" },
+      { label: "Result", value: "A cutoff in each test, set by IBPS, then the Mains" },
+      { label: "Given by", value: "Institute of Banking Personnel Selection (IBPS), online" },
+      { label: "Medium", value: "English test in English; the others in English, Hindi or a regional language by state" },
+    ],
+    basedOn: "the IBPS CRP CSA-XVI (Customer Service Associate) notification of 1 August 2026, section D (Structure of Examination) and E (Penalty for Wrong Answers)",
+    source: { name: "IBPS", url: "https://www.ibps.in" },
+  },
+
+  jnvst: {
+    answer:
+      "The JNVST (Jawahar Navodaya Vidyalaya Selection Test) Class VI is Navodaya Vidyalaya Samiti's entrance test for Class 5 students seeking a Class 6 seat at the Jawahar Navodaya Vidyalaya of their district. Under the JNVST 2027 prospectus it has 80 multiple-choice questions for 100 marks in 2 hours: Mental Ability 20 and Environmental Studies 20, Arithmetic 20 and Language 20 (four reading passages), with 1.25 marks per right answer and no negative marking. Candidates need at least 14 marks in Mental Ability and EVS, 7 in Arithmetic and 7 in Language; seats are then filled on merit district by district, with at least 75 percent for rural candidates and at least one third for girls.",
+    rows: [
+      { label: "Questions", value: "80 multiple choice, 100 marks" },
+      { label: "Time", value: "2 hours, no break (40 minutes extra for Divyang students)" },
+      { label: "Sections", value: "Mental Ability 20 and EVS 20, Arithmetic 20, Language 20" },
+      { label: "Marking", value: "1.25 marks per right answer, no negative marking" },
+      { label: "Qualifying marks", value: "14 in Mental Ability and EVS, 7 in Arithmetic, 7 in Language" },
+      { label: "Who can take it", value: "Class 5 students in the district, once only; birth dates set in each year's prospectus" },
+      { label: "Given by", value: "Navodaya Vidyalaya Samiti (NVS)" },
+    ],
+    basedOn: "the JNVST 2027 prospectus (Class VI admission 2027-28, test on 28 November 2026)",
+    source: { name: "Navodaya Vidyalaya Samiti", url: "https://navodaya.gov.in" },
+  },
+  jambeng: {
+    answer:
+      "Use of English is the compulsory subject of the JAMB Unified Tertiary Matriculation Examination (UTME), the computer-based test for admission to Nigerian universities, polytechnics and colleges of education. The UTME is 180 objective questions in 2 hours across four subjects: Use of English has 60 questions and each of the other three subjects 40. Each subject is scored out of 100, so the total is out of 400. The syllabus has three sections: Comprehension and Summary (including a cloze passage and a prescribed reading text that changes by cycle), Lexis and Structure, and Oral Forms. JAMB set minimum scores of 150 for universities and 100 for polytechnics and colleges of education for 2026 admissions; institutions and courses set their own, usually higher, cut-off marks.",
+    rows: [
+      { label: "Questions", value: "60 in Use of English (180 in the whole UTME)" },
+      { label: "Time", value: "2 hours for all four subjects" },
+      { label: "Format", value: "Computer-based, objective (multiple choice)" },
+      { label: "Sections", value: "Comprehension and Summary, Lexis and Structure, Oral Forms" },
+      { label: "Score", value: "Out of 100 per subject, 400 in all" },
+      { label: "2026 minimum score", value: "150 universities, 100 polytechnics and colleges of education" },
+      { label: "Run by", value: "Joint Admissions and Matriculation Board (JAMB)" },
+    ],
+    basedOn: "the JAMB website and widely reproduced UTME syllabus guides, checked October 2026. Section question counts are guides' figures, not JAMB's",
+    source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  appsych: {
+    answer:
+      "The AP Psychology Exam is a fully digital, 2 hour 40 minute exam from the College Board, redesigned for 2024-25. Section I has 75 multiple-choice questions with four choices in 90 minutes (66.7% of the score); Section II has 2 free-response questions in 70 minutes (33.3%): an Article Analysis Question and an Evidence-Based Question. Each of the five units is 15% to 25% of the multiple-choice section. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "75 questions, 90 minutes, 66.7% of score" },
+      { label: "Free response", value: "2 questions, 70 minutes, 33.3% of score" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Units", value: "5, each 15% to 25% of the multiple choice" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+      { label: "Given by", value: "College Board, digital in the Bluebook app" },
+    ],
+    basedOn: "the College Board AP Psychology exam page and course overview",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-psychology/exam" },
+    tigertest:
+      "Tigertest has two full 75-question AP Psychology multiple-choice sections and six drills, one per unit plus research methods and data, all free with no account required. The free-response section is not included.",
+  },
+  pkdrive: {
+    answer:
+      "There is no single national driving test in Pakistan. Punjab, Sindh, Khyber Pakhtunkhwa, Balochistan and the Islamabad Capital Territory each issue licences and run their own tests, and every province recognises the others' licences. Under the Motor Vehicles Ordinance you must be at least 18 for a private car licence (21 to drive for pay), hold a CNIC and pass an eyesight check. You start on a learner permit, driving only with a licensed driver beside you, then take a sign test (Punjab's computer e-sign test, or a theory and sign test elsewhere) and a practical road test. The question count, pass mark and waiting period are set by each licensing authority and are not published as one national rule.",
+    rows: [
+      { label: "Run by", value: "Provincial and ICT licensing authorities" },
+      { label: "Parts", value: "Learner permit, sign or theory test, road test" },
+      { label: "Sign test format", value: "Set by each authority (Punjab e-sign test reported as about 10 questions)" },
+      { label: "Pass mark", value: "Set by each authority, not published nationally" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 80% target" },
+      { label: "Minimum age (car)", value: "18" },
+      { label: "Also required", value: "CNIC, proof of residence, eyesight check" },
+      { label: "Study material", value: "Traffic signs, the Tenth Schedule driving regulations and the Highway Code (Motor Vehicles Ordinance, Third Schedule)" },
+    ],
+    basedOn: "Provincial Motor Vehicles Ordinance 1965 (Punjab Transport Department copy amended to November 2023: section 4, Third, Tenth and Eleventh Schedules), road signs in Pakistan and provincial licensing guidance, checked November 2026",
+    source: { name: "Punjab Driving License Information Management System (DLIMS)", url: "https://dlims.punjab.gov.pk/" },
+  },
 };

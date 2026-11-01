@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -8286,7 +8286,77 @@ const hkdrive: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+const pkdrive: ExamConfig = {
+  id: "pkdrive",
+  stateCode: "PKDRIVE",
+  idBase: 13000,
+  slug: "/pakistan-driving-test",
+  landingPath: "/pakistan-driving-licence-test",
+  name: "Pakistan Driving Licence Practice Test",
+  shortName: "Pakistan driving test",
+  examLabel: "Pakistan driving licence test",
+  fullName: "Pakistan driving licence sign and theory test (car)",
+  questionIdPrefix: "PKDRV-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Source: road signs in Pakistan (Manual of Signs, Signals and Markings 1989, Vienna Convention
+  // shapes) and the driving regulations of the Provincial Motor Vehicles Ordinance 1965 (Tenth
+  // Schedule: keep left, overtake on the right, give way to the right at uncontrolled
+  // intersections). Licences are issued by Punjab, Sindh, KP, Balochistan and ICT, each with its
+  // own sign/theory test; none publishes a national question count, pass mark or topic split
+  // (Punjab's e-sign test is reported as about 10 questions). Four 50-question tests at 80%
+  // (40 of 50) is Tigertest's target; topic weights are Tigertest's own, signs heaviest. Speed
+  // limit figures are not asked (NHMP cut and restored them in 2026). Checked 2026-10-31.
+  // Pools are exactly 4x each count (no spares). All items original.
+  blueprint: {
+    pkLicence: 5,
+    pkWarning: 7,
+    pkRegulatory: 8,
+    pkMarkings: 5,
+    pkJunctions: 6,
+    pkRoad: 6,
+    pkMotorway: 4,
+    pkSafety: 5,
+    pkEmergency: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 13001, name: "Warning Signs", categories: ["pkWarning"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 2, id: 13002, name: "Regulatory & Information Signs", categories: ["pkRegulatory"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 13003, name: "Markings, Signals & Junctions", categories: ["pkMarkings", "pkJunctions"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 13004, name: "Lanes, Speed & Motorways", categories: ["pkRoad", "pkMotorway"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 13005, name: "Licences, Safety & Emergencies", categories: ["pkLicence", "pkSafety", "pkEmergency"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pkLicence: "Licences, Documents & the Law",
+    pkWarning: "Warning Signs",
+    pkRegulatory: "Regulatory, Mandatory & Information Signs",
+    pkMarkings: "Markings, Lights & Signals",
+    pkJunctions: "Junctions, Roundabouts & Right of Way",
+    pkRoad: "Lanes, Overtaking, Speed & Parking",
+    pkMotorway: "Motorways & Highways",
+    pkSafety: "Seat Belts, Helmets & Safe Driving",
+    pkEmergency: "Night, Weather & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your driving licence test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the road signs and traffic rules every licensing centre in Pakistan tests. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 40 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Signs weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your sign test and road test.",
+    ],
+    sourceLine: "Based on Pakistan's road signs and the driving regulations of the Motor Vehicles Ordinance. Original questions; 50 per test, 80% is Tigertest's target.",
+    analyticsKey: "pkdrive",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

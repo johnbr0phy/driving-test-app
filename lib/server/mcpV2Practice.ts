@@ -59,6 +59,15 @@ import '@/lib/v2/banks/ssccgl';
 import '@/lib/v2/banks/rrbntpc';
 import '@/lib/v2/banks/ctet';
 import '@/lib/v2/banks/ibpspo';
+import '@/lib/v2/banks/rrbgroupd';
+import '@/lib/v2/banks/sscgd';
+import '@/lib/v2/banks/sscchsl';
+import '@/lib/v2/banks/sscmts';
+import '@/lib/v2/banks/uppolice';
+import '@/lib/v2/banks/ibpsclerk';
+import '@/lib/v2/banks/jnvst';
+import '@/lib/v2/banks/jambeng';
+import '@/lib/v2/banks/appsych';
 
 // MCP is another view of the site's drills, NOT a second mastery store.
 // The transport document only remembers the presented item/order and a

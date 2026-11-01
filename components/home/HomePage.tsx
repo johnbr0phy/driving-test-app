@@ -102,6 +102,7 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   ZA: "any driving licence testing centre",
   NG: "the FRSC",
   KE: "the NTSA",
+  PK: "any provincial or ICT licensing authority",
 };
 
 function faqsFor(region: Region) {

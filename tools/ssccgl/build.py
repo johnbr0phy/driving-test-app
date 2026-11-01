@@ -46,13 +46,29 @@ def S(t, d, skill, stem, opts, expl, stim=None, step=0):
     return q
 
 
+POSITIONAL = ("No error", "No improvement")
+
+
 def shuffled(q):
     seed = int(hashlib.sha256(q["stem"].encode()).hexdigest()[:12], 16)
     order = list(range(len(q["options"])))
     random.Random(seed).shuffle(order)
+    fixed = next((o for o in q["options"] if o in POSITIONAL), None)
+    if fixed:
+        # Positional options keep a natural order the app must not shuffle:
+        # error-spotting parts in sentence order, then "No error"; for sentence
+        # improvement the alternatives as shuffled, then "No improvement".
+        last = q["options"].index(fixed)
+        order = [i for i in order if i != last]
+        if fixed == "No error":
+            parts = [p.strip().rstrip(".") for p in q["stem"].split("\n")[-1].split(" / ")]
+            order.sort(key=lambda i: parts.index(q["options"][i].rstrip(".")))
+        order.append(last)
     out = dict(q)
     out["options"] = [q["options"][i] for i in order]
     out["correct"] = [order.index(0)]
+    if fixed:
+        out["lockedOrder"] = True
     return out
 
 
@@ -114,7 +130,7 @@ def build():
             q = shuffled(q)
             item = {"id": f"{PREFIX}-{tag}-{n:03d}", "section": SECTION, "test": test, "module": 1,
                     "domain": q["domain"], "difficulty": q["difficulty"], "format": "single", "skill": q["skill"]}
-            for k in ("stimulusId", "stem", "options", "correct", "explanation"):
+            for k in ("stimulusId", "stem", "options", "correct", "explanation", "lockedOrder"):
                 if k in q:
                     item[k] = q[k]
             out.append(item)

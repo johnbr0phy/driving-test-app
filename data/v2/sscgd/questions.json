@@ -1,0 +1,4421 @@
+{
+  "stimuli": [
+    {
+      "id": "SSCGD-CL1",
+      "title": "Cloze test: a morning at the border post",
+      "text": "Read the passage and choose the most appropriate word for each numbered blank.\n\nEvery morning the jawans at the border post (1) ........ up before sunrise. After a short prayer, they go out (2) ........ patrol in small groups. The path is narrow and rocky, so they walk slowly and look out (3) ........ any movement. By noon they return to the post. They are tired, (4) ........ they are still cheerful. In the evening they write letters to their families, who are (5) ........ of them."
+    },
+    {
+      "id": "SSCGD-RC1",
+      "title": "Reading comprehension: the village library",
+      "text": "When Meena returned to her village after college, she found that the children had almost no books to read outside their school texts. She collected old books from friends in the city and set up a small library in one room of the panchayat building.\n\nAt first only a few children came, and most of them only looked at the pictures. Meena began reading stories aloud every Sunday. Within a year, more than sixty children were borrowing books regularly, and some parents had started coming to read newspapers. The room that had once stored broken furniture had become the busiest place in the village."
+    },
+    {
+      "id": "SSCGD-CL2",
+      "title": "Cloze test: planting trees",
+      "text": "Read the passage and choose the most appropriate word for each numbered blank.\n\nLast monsoon, the students of our school decided to plant trees (1) ........ the playground. Each class was given ten saplings to look (2) ........ . The students watered them every day and put small fences around them (3) ........ goats would not eat the leaves. Today most of the saplings are taller (4) ........ the students who planted them. The school now plans to plant more trees (5) ........ year."
+    },
+    {
+      "id": "SSCGD-RC2",
+      "title": "Reading comprehension: the honest porter",
+      "text": "Ramesh worked as a porter at a busy railway station. One evening, after a crowded train had left, he found a leather bag lying on the platform. Inside were some clothes, a few books and an envelope full of money.\n\nRamesh could easily have kept the bag, but he took it straight to the station master. The next morning a worried teacher came looking for it; the money was meant for his daughter's college fees. He tried to give Ramesh a reward, but Ramesh politely refused. 'I only did my duty,' he said. The station master later praised him in front of all the staff."
+    }
+  ],
+  "questions": [
+    {
+      "id": "SSCGD-T1-001",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number analogy",
+      "stem": "Select the number that completes the analogy.\n\n2 : 8 :: 7 : ?",
+      "options": [
+        "343",
+        "336",
+        "49",
+        "56"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "8 is the cube of 2 (2 x 2 x 2), so the answer is the cube of 7: 7 x 7 x 7 = 343. 49 is only the square, and 56 multiplies by 8 as if 8 were 2 x 4."
+    },
+    {
+      "id": "SSCGD-T1-002",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Pointing to a man, Ravi said, \"He is the son of my father's only sister.\" How is the man related to Ravi?",
+      "options": [
+        "Cousin",
+        "Brother",
+        "Nephew",
+        "Uncle"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Ravi's father's sister is Ravi's aunt (bua), and her son is Ravi's cousin."
+    },
+    {
+      "id": "SSCGD-T1-003",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Word analogy",
+      "stem": "Select the word that completes the analogy.\n\nJudge : Court :: Farmer : ?",
+      "options": [
+        "Plough",
+        "Field",
+        "Village",
+        "Crop"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A judge works in a court, so a farmer works in a field. A plough is a tool and a crop is what is grown, not the place of work."
+    },
+    {
+      "id": "SSCGD-T1-004",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "Sunil walks 7 km north, turns right and walks 4 km, then turns right again and walks 7 km. How far is he from his starting point, and in which direction?",
+      "options": [
+        "4 km east",
+        "18 km north",
+        "4 km west",
+        "7 km east"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "North 7 km, then right is east 4 km, then right again is south 7 km. The north and south walks cancel, leaving him 4 km east of the start."
+    },
+    {
+      "id": "SSCGD-T1-005",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Select the odd number out.\n\n13, 17, 21, 29",
+      "options": [
+        "21",
+        "29",
+        "13",
+        "17"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "13, 17 and 29 are prime numbers. 21 = 3 x 7, so it is the odd one out."
+    },
+    {
+      "id": "SSCGD-T1-006",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "In a row of 41 students, Asha is 17th from the left. What is her position from the right?",
+      "options": [
+        "25th",
+        "24th",
+        "26th",
+        "23rd"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Position from the right = total - position from the left + 1 = 41 - 17 + 1 = 25."
+    },
+    {
+      "id": "SSCGD-T1-007",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Select the number that comes next in the series.\n\n3, 7, 15, 31, ?",
+      "options": [
+        "47",
+        "63",
+        "62",
+        "64"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each term is double the previous one plus 1: 3 x 2 + 1 = 7, 7 x 2 + 1 = 15, 15 x 2 + 1 = 31, so 31 x 2 + 1 = 63."
+    },
+    {
+      "id": "SSCGD-T1-008",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sign substitution",
+      "stem": "If '+' means 'multiply', '-' means 'add', 'x' means 'subtract' and '÷' means 'divide', what is the value of 6 + 4 - 8 x 2?",
+      "options": [
+        "26",
+        "22",
+        "30",
+        "34"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Replace the signs: 6 x 4 + 8 - 2. Multiply first: 24 + 8 - 2 = 30."
+    },
+    {
+      "id": "SSCGD-T1-009",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Select the letter that comes next in the series.\n\nC, G, K, O, ?",
+      "options": [
+        "T",
+        "S",
+        "Q",
+        "R"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each letter is four places after the one before: C (3), G (7), K (11), O (15), so the next is the 19th letter, S."
+    },
+    {
+      "id": "SSCGD-T1-010",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Calendar",
+      "stem": "In a year that is not a leap year, 1 January is a Monday. What day of the week is 1 February?",
+      "options": [
+        "Thursday",
+        "Wednesday",
+        "Friday",
+        "Tuesday"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "January has 31 days, which is 4 weeks and 3 odd days. Three days after Monday is Thursday."
+    },
+    {
+      "id": "SSCGD-T1-011",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, BOX is written as CPY. How is PEN written in that code?",
+      "options": [
+        "QEO",
+        "QFO",
+        "RFO",
+        "ODM"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each letter moves one place forward: B to C, O to P, X to Y. So P, E, N become Q, F, O. ODM moves each letter back instead."
+    },
+    {
+      "id": "SSCGD-T1-012",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ages",
+      "stem": "Priya is 4 years older than Neha. In 6 years, the sum of their ages will be 40. How old is Neha now?",
+      "options": [
+        "10 years",
+        "16 years",
+        "14 years",
+        "12 years"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In 6 years Neha is N + 6 and Priya is N + 10. So 2N + 16 = 40 and N = 12. Priya is 16 now, which is the trap option."
+    },
+    {
+      "id": "SSCGD-T1-013",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Select the word that does NOT belong with the others.\n\nWheat, Rice, Maize, Mustard",
+      "options": [
+        "Rice",
+        "Mustard",
+        "Maize",
+        "Wheat"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Wheat, rice and maize are cereal crops grown for grain. Mustard is an oilseed crop."
+    },
+    {
+      "id": "SSCGD-T1-014",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Clocks",
+      "stem": "What is the angle between the hour hand and the minute hand of a clock at exactly 5 o'clock?",
+      "options": [
+        "135 degrees",
+        "165 degrees",
+        "150 degrees",
+        "120 degrees"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "At 5 o'clock the minute hand is on 12 and the hour hand on 5. Each hour mark is 30 degrees apart, so the angle is 5 x 30 = 150 degrees."
+    },
+    {
+      "id": "SSCGD-T1-015",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Select the number that comes next in the series.\n\n2, 5, 10, 17, ?",
+      "options": [
+        "26",
+        "27",
+        "24",
+        "25"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The terms are 1² + 1, 2² + 1, 3² + 1 and 4² + 1. The next is 5² + 1 = 26. The gaps 3, 5, 7, 9 show the same pattern."
+    },
+    {
+      "id": "SSCGD-T1-016",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Statements and conclusions",
+      "stem": "Read the statements and decide which conclusion(s) logically follow from them, even if they seem to differ from commonly known facts.\n\nStatements: All pens are books. All books are bags.\nConclusion I: All pens are bags.\nConclusion II: All bags are pens.",
+      "options": [
+        "Only conclusion I follows",
+        "Only conclusion II follows",
+        "Both I and II follow",
+        "Neither I nor II follows"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Every pen is a book and every book is a bag, so every pen is a bag: I follows. Nothing says every bag is a pen, so II does not follow."
+    },
+    {
+      "id": "SSCGD-T1-017",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Dictionary order",
+      "stem": "Arrange the words in dictionary order. Which word comes third?\n\nSoldier, Solution, Solid, Sold",
+      "options": [
+        "Soldier",
+        "Sold",
+        "Solution",
+        "Solid"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "All four begin SOL. The fourth letters are D (Sold, Soldier), I (Solid) and U (Solution). Sold comes before Soldier, so the order is Sold, Soldier, Solid, Solution."
+    },
+    {
+      "id": "SSCGD-T1-018",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Seating arrangement",
+      "stem": "Five friends A, B, C, D and E sit in a row facing north. A is at the left end and E sits immediately to A's right. C is in the middle, B sits immediately to C's right and D is at the right end. Who sits second from the right end?",
+      "options": [
+        "E",
+        "C",
+        "B",
+        "D"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "From left to right the order is A, E, C, B, D. The right end is D, so second from the right is B."
+    },
+    {
+      "id": "SSCGD-T1-019",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Letter values",
+      "stem": "If A = 1, B = 2, C = 3 and so on, what is the sum of the letters of the word BAG?",
+      "options": [
+        "11",
+        "10",
+        "9",
+        "12"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "B = 2, A = 1 and G = 7, so the sum is 2 + 1 + 7 = 10."
+    },
+    {
+      "id": "SSCGD-T1-020",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Arithmetical reasoning",
+      "stem": "A farmer has some hens and some cows. Together they have 30 heads and 84 legs. How many cows does he have?",
+      "options": [
+        "18",
+        "10",
+        "14",
+        "12"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "If all 30 were hens there would be 60 legs. Each cow adds 2 more legs, and there are 84 - 60 = 24 extra legs, so there are 12 cows (and 18 hens)."
+    },
+    {
+      "id": "SSCGD-T1-021",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Modern India",
+      "stem": "Which ruler of Mysore, who fought the British in the Anglo-Mysore Wars, was called the 'Tiger of Mysore'?",
+      "options": [
+        "Krishnaraja Wadiyar",
+        "Tipu Sultan",
+        "Hyder Ali",
+        "Siraj-ud-Daulah"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Tipu Sultan, son of Hyder Ali, was called the Tiger of Mysore. He died defending Srirangapatna in 1799. Siraj-ud-Daulah was the Nawab of Bengal."
+    },
+    {
+      "id": "SSCGD-T1-022",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Solar system",
+      "stem": "Which is the largest planet in the solar system?",
+      "options": [
+        "Neptune",
+        "Earth",
+        "Saturn",
+        "Jupiter"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Jupiter is the largest planet, more than 11 times as wide as the Earth. Saturn is the second largest."
+    },
+    {
+      "id": "SSCGD-T1-023",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Religion and culture",
+      "stem": "The Harmandir Sahib (Golden Temple) is in which city?",
+      "options": [
+        "Amritsar",
+        "Ludhiana",
+        "Patiala",
+        "Anandpur Sahib"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Harmandir Sahib stands in Amritsar, Punjab. Guru Arjan Dev completed it, and Guru Gobind Singh founded the Khalsa at Anandpur Sahib in 1699."
+    },
+    {
+      "id": "SSCGD-T1-024",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Indian geography",
+      "stem": "The Thar Desert lies mainly in which state?",
+      "options": [
+        "Gujarat",
+        "Rajasthan",
+        "Haryana",
+        "Punjab"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Most of the Thar, or Great Indian Desert, lies in western Rajasthan, with smaller parts in Gujarat, Haryana and Punjab."
+    },
+    {
+      "id": "SSCGD-T1-025",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Patriotic songs",
+      "stem": "Who wrote the patriotic song 'Saare Jahan Se Achha'?",
+      "options": [
+        "Muhammad Iqbal",
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee",
+        "Sarojini Naidu"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Muhammad Iqbal wrote 'Saare Jahan Se Achha' in 1904. Tagore wrote the national anthem and Bankim Chandra the national song, Vande Mataram."
+    },
+    {
+      "id": "SSCGD-T1-026",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "How many bones are there in the skeleton of an adult human?",
+      "options": [
+        "186",
+        "212",
+        "300",
+        "206"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An adult has 206 bones. A newborn baby has about 300, but many of them join together as the child grows."
+    },
+    {
+      "id": "SSCGD-T1-027",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom struggle",
+      "stem": "Who took command of the Indian National Army (Azad Hind Fauj) in 1943?",
+      "options": [
+        "Lala Lajpat Rai",
+        "Chandra Shekhar Azad",
+        "Subhas Chandra Bose",
+        "Bhagat Singh"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Subhas Chandra Bose took over the Indian National Army in Singapore in 1943 and gave the call 'Dilli Chalo'."
+    },
+    {
+      "id": "SSCGD-T1-028",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which gas do green plants release during photosynthesis?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen",
+        "Methane"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Plants take in carbon dioxide and water and, using sunlight, make glucose and release oxygen."
+    },
+    {
+      "id": "SSCGD-T1-029",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Which Article of the Constitution says that 'India, that is Bharat, shall be a Union of States'?",
+      "options": [
+        "Article 3",
+        "Article 1",
+        "Article 12",
+        "Article 14"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Article 1 names the country and describes it as a Union of States. Article 3 deals with forming new states and Article 14 with equality before law."
+    },
+    {
+      "id": "SSCGD-T1-030",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "Manufacturing goods in factories belongs to which sector of the economy?",
+      "options": [
+        "Private sector",
+        "Primary sector",
+        "Secondary sector",
+        "Tertiary sector"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The secondary sector turns raw materials into goods, as in factories. The primary sector takes things from nature and the tertiary sector provides services."
+    },
+    {
+      "id": "SSCGD-T1-031",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "The Finance Commission is set up under which Article of the Constitution?",
+      "options": [
+        "Article 324",
+        "Article 280",
+        "Article 112",
+        "Article 360"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Article 280 provides for a Finance Commission every five years. Article 112 covers the annual budget, Article 324 the Election Commission and Article 360 a financial emergency."
+    },
+    {
+      "id": "SSCGD-T1-032",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sports",
+      "stem": "How many players from one team are on the court at a time in a volleyball match?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A volleyball team has 6 players on court. Basketball has 5 and kabaddi 7."
+    },
+    {
+      "id": "SSCGD-T1-033",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "How many languages are listed in the Eighth Schedule of the Constitution of India?",
+      "options": [
+        "18",
+        "24",
+        "15",
+        "22"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Eighth Schedule lists 22 languages. It began with 14 and reached 22 after the 92nd Amendment of 2003 added Bodo, Dogri, Maithili and Santhali."
+    },
+    {
+      "id": "SSCGD-T1-034",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sports",
+      "stem": "Which sport is played with a shuttlecock?",
+      "options": [
+        "Tennis",
+        "Badminton",
+        "Squash",
+        "Table tennis"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Badminton is played by hitting a shuttlecock over a net with a racket. Squash, tennis and table tennis all use a ball."
+    },
+    {
+      "id": "SSCGD-T1-035",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom struggle",
+      "stem": "Who founded the Swaraj Party in 1923 together with Motilal Nehru?",
+      "options": [
+        "C. R. Das",
+        "G. K. Gokhale",
+        "Bipin Chandra Pal",
+        "Lala Lajpat Rai"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Chittaranjan Das and Motilal Nehru formed the Swaraj Party to contest the council elections after the Non-Cooperation Movement ended."
+    },
+    {
+      "id": "SSCGD-T1-036",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Indian geography",
+      "stem": "According to the 2011 Census, which state has the largest population in India?",
+      "options": [
+        "Bihar",
+        "West Bengal",
+        "Maharashtra",
+        "Uttar Pradesh"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The 2011 Census counted about 20 crore people in Uttar Pradesh, the most of any state. Maharashtra was second."
+    },
+    {
+      "id": "SSCGD-T1-037",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Art and culture",
+      "stem": "Odissi is a classical dance form of which state?",
+      "options": [
+        "Kerala",
+        "Manipur",
+        "Odisha",
+        "Assam"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Odissi comes from the temples of Odisha. Sattriya is from Assam, Kathakali from Kerala and Manipuri from Manipur."
+    },
+    {
+      "id": "SSCGD-T1-038",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Physics",
+      "stem": "In which unit is the loudness of sound measured?",
+      "options": [
+        "Newton",
+        "Decibel",
+        "Hertz",
+        "Joule"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Loudness is measured in decibels (dB). Hertz measures frequency, which decides the pitch of a sound."
+    },
+    {
+      "id": "SSCGD-T1-039",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Art and culture",
+      "stem": "The Meenakshi Amman Temple is in which city?",
+      "options": [
+        "Thanjavur",
+        "Madurai",
+        "Kanchipuram",
+        "Rameswaram"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Meenakshi Amman Temple stands on the bank of the Vaigai in Madurai, Tamil Nadu. Thanjavur is known for the Chola-era Brihadeeswara Temple."
+    },
+    {
+      "id": "SSCGD-T1-040",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Health",
+      "stem": "Which disease is caused by the Plasmodium parasite and spread by the female Anopheles mosquito?",
+      "options": [
+        "Typhoid",
+        "Malaria",
+        "Dengue",
+        "Cholera"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Malaria is caused by Plasmodium. Dengue is a virus spread by the Aedes mosquito, while typhoid and cholera are bacterial and spread through dirty food and water."
+    },
+    {
+      "id": "SSCGD-T1-041",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "HCF and LCM",
+      "stem": "What is the HCF of 36 and 48?",
+      "options": [
+        "12",
+        "6",
+        "24",
+        "144"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "36 = 2² x 3² and 48 = 2⁴ x 3. Take the lowest power of each common prime: 2² x 3 = 12. 144 is their LCM."
+    },
+    {
+      "id": "SSCGD-T1-042",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A shopkeeper buys a bicycle for ₹2,500 and sells it for ₹2,200. What is his loss percent?",
+      "options": [
+        "13.6 percent",
+        "12 percent",
+        "10 percent",
+        "15 percent"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Loss = 2,500 - 2,200 = ₹300. Loss percent is on the cost price: 300 ÷ 2,500 x 100 = 12. Dividing by the selling price gives the wrong 13.6."
+    },
+    {
+      "id": "SSCGD-T1-043",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "Simplify: 25 + 15 ÷ 5 x 2 - 4",
+      "options": [
+        "31",
+        "27",
+        "24",
+        "12"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "By BODMAS, divide and multiply first, from left to right: 15 ÷ 5 = 3, then 3 x 2 = 6. So 25 + 6 - 4 = 27. Adding first gives the wrong answer 12."
+    },
+    {
+      "id": "SSCGD-T1-044",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Discount",
+      "stem": "A school bag is marked at ₹600 and sold at a discount of 15 percent. What is its selling price?",
+      "options": [
+        "₹500",
+        "₹515",
+        "₹510",
+        "₹585"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Discount = 15 percent of 600 = ₹90, so the selling price is 600 - 90 = ₹510."
+    },
+    {
+      "id": "SSCGD-T1-045",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Decimals and fractions",
+      "stem": "What is 3/8 written as a decimal?",
+      "options": [
+        "0.385",
+        "0.38",
+        "0.375",
+        "0.0375"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "3 ÷ 8 = 0.375. A quick check: 1/8 = 0.125, and 3 x 0.125 = 0.375."
+    },
+    {
+      "id": "SSCGD-T1-046",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "What is the simple interest on ₹8,000 at 6 percent per annum for 2 years?",
+      "options": [
+        "₹860",
+        "₹960",
+        "₹480",
+        "₹1,200"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "SI = P x R x T ÷ 100 = 8,000 x 6 x 2 ÷ 100 = ₹960. ₹480 is the interest for one year only."
+    },
+    {
+      "id": "SSCGD-T1-047",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "What is 15 percent of 240?",
+      "options": [
+        "32",
+        "40",
+        "36",
+        "24"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "10 percent of 240 is 24 and 5 percent is 12, so 15 percent is 24 + 12 = 36."
+    },
+    {
+      "id": "SSCGD-T1-048",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "Kavita can finish a job in 20 days and Lata in 30 days. How many days will they take working together?",
+      "options": [
+        "50 days",
+        "12 days",
+        "10 days",
+        "25 days"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In one day they do 1/20 + 1/30 = 3/60 + 2/60 = 5/60 = 1/12 of the job, so together they need 12 days. 25 is just the average of 20 and 30."
+    },
+    {
+      "id": "SSCGD-T1-049",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "₹720 is divided between Ram and Shyam in the ratio 5 : 3. What is Ram's share?",
+      "options": [
+        "₹450",
+        "₹480",
+        "₹270",
+        "₹400"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "There are 5 + 3 = 8 parts, so one part is 720 ÷ 8 = ₹90. Ram gets 5 x 90 = ₹450 and Shyam ₹270."
+    },
+    {
+      "id": "SSCGD-T1-050",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speed and distance",
+      "stem": "A bus covers 180 km in 4 hours. What is its speed in metres per second?",
+      "options": [
+        "15 m/s",
+        "45 m/s",
+        "10 m/s",
+        "12.5 m/s"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Speed = 180 ÷ 4 = 45 km/h. To change km/h to m/s, multiply by 5/18: 45 x 5/18 = 12.5 m/s."
+    },
+    {
+      "id": "SSCGD-T1-051",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Average",
+      "stem": "What is the average of all the odd numbers from 1 to 19?",
+      "options": [
+        "9.5",
+        "10",
+        "11",
+        "9"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "There are 10 odd numbers from 1 to 19 and their sum is 10² = 100, so the average is 100 ÷ 10 = 10. For an evenly spaced list, the average is also the mean of the first and last: (1 + 19) ÷ 2."
+    },
+    {
+      "id": "SSCGD-T1-052",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "A rectangular park is 15 m long and 8 m wide. What is its perimeter?",
+      "options": [
+        "23 m",
+        "92 m",
+        "46 m",
+        "120 m"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Perimeter = 2 x (length + breadth) = 2 x (15 + 8) = 46 m. 120 is the area in square metres."
+    },
+    {
+      "id": "SSCGD-T1-053",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Squares and roots",
+      "stem": "What is the square root of 3136?",
+      "options": [
+        "64",
+        "54",
+        "46",
+        "56"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "3136 ends in 6, so the root ends in 4 or 6. 55² = 3025 and 60² = 3600, so it lies between 55 and 60 and must be 56. Check: 56 x 56 = 3136."
+    },
+    {
+      "id": "SSCGD-T1-054",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the area of a circle of radius 28 cm? (Take π = 22/7.)",
+      "options": [
+        "176 cm²",
+        "616 cm²",
+        "2464 cm²",
+        "4928 cm²"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Area = πr² = 22/7 x 28 x 28 = 88 x 28 = 2464 cm². 176 is the circumference in cm (2πr), and 616 is the area for radius 14."
+    },
+    {
+      "id": "SSCGD-T1-055",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "HCF and LCM",
+      "stem": "What is the smallest number that is exactly divisible by 8, 12 and 15?",
+      "options": [
+        "240",
+        "60",
+        "360",
+        "120"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The smallest common multiple is the LCM. 8 = 2³, 12 = 2² x 3, 15 = 3 x 5, so LCM = 2³ x 3 x 5 = 120. 60 is not divisible by 8."
+    },
+    {
+      "id": "SSCGD-T1-056",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "What is the compound interest on ₹6,250 at 4 percent per annum for 2 years, compounded annually?",
+      "options": [
+        "₹520",
+        "₹500",
+        "₹490",
+        "₹510"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "First year: 4 percent of 6,250 = ₹250. Second year: 4 percent of 6,500 = ₹260. CI = 250 + 260 = ₹510. Simple interest would be ₹500."
+    },
+    {
+      "id": "SSCGD-T1-057",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "A student scores 54 marks out of 75. What is her percentage?",
+      "options": [
+        "70 percent",
+        "75 percent",
+        "68 percent",
+        "72 percent"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "54 ÷ 75 x 100 = 72. A quick way: 75 is 3/4 of 100, so 54 x 4/3 = 72."
+    },
+    {
+      "id": "SSCGD-T1-058",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "The cost price of 15 erasers equals the selling price of 12 erasers. What is the profit percent?",
+      "options": [
+        "20 percent",
+        "25 percent",
+        "30 percent",
+        "3 percent"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Let one eraser cost ₹1. Then 12 erasers sell for ₹15, so each sells for ₹1.25. Profit = 0.25 on 1, which is 25 percent. Dividing the gain of 3 by 15 instead of 12 gives the wrong 20 percent."
+    },
+    {
+      "id": "SSCGD-T1-059",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "Which of these numbers is a prime number?",
+      "options": [
+        "87",
+        "91",
+        "57",
+        "89"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "91 = 7 x 13, 87 = 3 x 29 and 57 = 3 x 19. 89 has no factor other than 1 and itself; checking the primes 2, 3, 5 and 7 is enough."
+    },
+    {
+      "id": "SSCGD-T1-060",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Trains",
+      "stem": "A train 200 m long runs at 72 km/h. How long does it take to cross a platform 300 m long?",
+      "options": [
+        "25 seconds",
+        "15 seconds",
+        "35 seconds",
+        "10 seconds"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "72 km/h = 72 x 5/18 = 20 m/s. To cross a platform the train covers its own length plus the platform: 200 + 300 = 500 m, and 500 ÷ 20 = 25 seconds."
+    },
+    {
+      "id": "SSCGD-T1-061",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nDIFFICULT",
+      "options": [
+        "Different",
+        "Easy",
+        "Hard",
+        "Simple"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Difficult means not easy to do, which is hard. Easy and simple are antonyms, and 'different' only looks similar."
+    },
+    {
+      "id": "SSCGD-T1-062",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nHe do not / like spicy food / at dinner.",
+      "options": [
+        "He do not",
+        "like spicy food",
+        "at dinner",
+        "No error"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "A singular subject in the present tense takes 'does': 'He does not like spicy food at dinner.'"
+    },
+    {
+      "id": "SSCGD-T1-063",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nGUILTY",
+      "options": [
+        "Innocent",
+        "Criminal",
+        "Ashamed",
+        "Sorry"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Guilty means having done wrong; its opposite is innocent. Ashamed and sorry describe feelings of a guilty person."
+    },
+    {
+      "id": "SSCGD-T1-064",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nEvery citizen should abide ______ the law.",
+      "options": [
+        "with",
+        "on",
+        "by",
+        "to"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Abide by' means to obey or follow a rule or law."
+    },
+    {
+      "id": "SSCGD-T1-065",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo bite the dust",
+      "options": [
+        "To eat quickly",
+        "To clean the floor",
+        "To fall ill",
+        "To be defeated"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'To bite the dust' means to be defeated, to fail or, in stories, to die."
+    },
+    {
+      "id": "SSCGD-T1-066",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nI __am knowing her__ for five years.",
+      "options": [
+        "knew her",
+        "have known her",
+        "am known her",
+        "No improvement"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "An action that started in the past and continues now, with 'for five years', takes the present perfect. 'Know' is a state verb and is not used in the continuous form."
+    },
+    {
+      "id": "SSCGD-T1-067",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA person who is new to a job or activity",
+      "options": [
+        "Expert",
+        "Pioneer",
+        "Veteran",
+        "Novice"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A novice is a beginner. A veteran has long experience, and a pioneer is one of the first to do something."
+    },
+    {
+      "id": "SSCGD-T1-068",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nSomeone has stolen my bicycle.",
+      "options": [
+        "My bicycle had been stolen.",
+        "My bicycle was stolen.",
+        "My bicycle has been stolen.",
+        "My bicycle is being stolen."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The active verb is present perfect ('has stolen'), so the passive is 'has been stolen'. 'Someone' is usually dropped in the passive."
+    },
+    {
+      "id": "SSCGD-T1-069",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spelling",
+      "stem": "Select the correctly spelt word. It means 'apart or not joined'.",
+      "options": [
+        "Seperate",
+        "Separate",
+        "Seperete",
+        "Separete"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Separate is spelt s-e-p-a-r-a-t-e, with 'par' in the middle. 'Seperate' is the most common misspelling."
+    },
+    {
+      "id": "SSCGD-T1-070",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direct and indirect speech",
+      "stem": "Select the correct indirect form of the sentence.\n\nShe said to me, \"Please help me.\"",
+      "options": [
+        "She told that I help her.",
+        "She requested me to help me.",
+        "She said me to help her.",
+        "She requested me to help her."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A polite request with 'please' is reported with 'requested' and a to-infinitive, and 'me' (the speaker) becomes 'her'. 'Said me' is wrong because 'said' does not take a direct object."
+    },
+    {
+      "id": "SSCGD-T1-071",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nASSIST",
+      "options": [
+        "Hinder",
+        "Hurry",
+        "Hold",
+        "Help"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "To assist is to help. Hinder means to get in the way, the opposite."
+    },
+    {
+      "id": "SSCGD-T1-072",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCGD-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (1).",
+      "options": [
+        "wakes",
+        "wake",
+        "waking",
+        "woke"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage describes a daily habit with 'every morning' and a plural subject, 'the jawans', so it needs the simple present plural verb 'wake'."
+    },
+    {
+      "id": "SSCGD-T1-073",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCGD-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (2).",
+      "options": [
+        "on",
+        "in",
+        "at",
+        "for"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Soldiers and police 'go on patrol'. The other prepositions do not form this phrase."
+    },
+    {
+      "id": "SSCGD-T1-074",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCGD-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (3).",
+      "options": [
+        "to",
+        "at",
+        "on",
+        "for"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Look out for' means to watch carefully so as to notice something, here any movement."
+    },
+    {
+      "id": "SSCGD-T1-075",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCGD-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (4).",
+      "options": [
+        "or",
+        "but",
+        "because",
+        "so"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Being tired and still being cheerful are in contrast, and 'still' signals it, so the linker is 'but'."
+    },
+    {
+      "id": "SSCGD-T1-076",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCGD-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (5).",
+      "options": [
+        "proud",
+        "jealous",
+        "afraid",
+        "tired"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Families of soldiers who serve at the border are 'proud of' them. 'Afraid of them' and 'jealous of them' do not fit the warm tone of the passage."
+    },
+    {
+      "id": "SSCGD-T1-077",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCGD-RC1",
+      "stem": "Reading passage 1: what did Meena notice when she came back to her village?",
+      "options": [
+        "The school had no teacher",
+        "The panchayat had no room",
+        "Children skipped school",
+        "Children had few books"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says the children had almost no books to read outside their school texts."
+    },
+    {
+      "id": "SSCGD-T1-078",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCGD-RC1",
+      "stem": "Reading passage 1: what did Meena do to bring more children to the library?",
+      "options": [
+        "She gave them prizes",
+        "She read stories aloud",
+        "She bought new books",
+        "She held weekly tests"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says Meena began reading stories aloud every Sunday, after which more children came. The books were collected from friends, not bought."
+    },
+    {
+      "id": "SSCGD-T1-079",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCGD-RC1",
+      "stem": "Reading passage 1: select the word closest in meaning to 'regularly' as used in the passage.",
+      "options": [
+        "Secretly",
+        "Rarely",
+        "Quickly",
+        "Habitually"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Children borrowing books regularly means they did it habitually, again and again over time."
+    },
+    {
+      "id": "SSCGD-T1-080",
+      "section": "cbe",
+      "test": 1,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCGD-RC1",
+      "stem": "Reading passage 1: which of these best states the main idea of the passage?",
+      "options": [
+        "Old furniture is still useful",
+        "One person changed a village",
+        "City books are better",
+        "Children dislike reading"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage shows how Meena's effort turned a storeroom into the busiest place in the village. The other options are not supported."
+    },
+    {
+      "id": "SSCGD-T2-001",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number analogy",
+      "stem": "Select the number that completes the analogy.\n\n7 : 49 :: 9 : ?",
+      "options": [
+        "90",
+        "72",
+        "81",
+        "64"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "49 is the square of 7, so the answer is the square of 9: 81. 64 is the square of 8, and 72 and 90 are 9 x 8 and 9 x 10."
+    },
+    {
+      "id": "SSCGD-T2-002",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "P is the sister of Q. Q is the son of R. S is the mother of P. How is R related to S?",
+      "options": [
+        "Father",
+        "Husband",
+        "Brother",
+        "Son"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "P and Q are sister and brother, so they share parents. S is their mother and R is the other parent of Q, so R is their father and S's husband."
+    },
+    {
+      "id": "SSCGD-T2-003",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Word analogy",
+      "stem": "Select the word that completes the analogy.\n\nHen : Chick :: Frog : ?",
+      "options": [
+        "Kitten",
+        "Cub",
+        "Foal",
+        "Tadpole"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A chick is the young of a hen, and a tadpole is the young of a frog. A kitten is a young cat, a cub a young lion or bear, and a foal a young horse."
+    },
+    {
+      "id": "SSCGD-T2-004",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "Arjun is facing north. He turns 90 degrees anticlockwise and then 180 degrees. Which direction is he facing now?",
+      "options": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Turning 90 degrees anticlockwise from north brings him to west. A further 180 degree turn faces him the opposite way, east."
+    },
+    {
+      "id": "SSCGD-T2-005",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Select the odd number out.\n\n25, 36, 49, 52",
+      "options": [
+        "36",
+        "52",
+        "49",
+        "25"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "25, 36 and 49 are perfect squares (5², 6², 7²). 52 is not a perfect square."
+    },
+    {
+      "id": "SSCGD-T2-006",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "Rohan is 11th from the top and 21st from the bottom in his class. How many students are in the class?",
+      "options": [
+        "33",
+        "31",
+        "32",
+        "30"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Total = position from top + position from bottom - 1 = 11 + 21 - 1 = 31. Rohan is counted in both positions, so one is taken away."
+    },
+    {
+      "id": "SSCGD-T2-007",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Select the number that comes next in the series.\n\n4, 8, 24, 96, ?",
+      "options": [
+        "192",
+        "384",
+        "480",
+        "576"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each term is the previous one multiplied by the next whole number: x2, x3, x4, so the next is 96 x 5 = 480. 192 doubles again and 384 multiplies by 4 again."
+    },
+    {
+      "id": "SSCGD-T2-008",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Clocks",
+      "stem": "What is the angle between the hour hand and the minute hand of a clock at 2:30?",
+      "options": [
+        "105 degrees",
+        "115 degrees",
+        "90 degrees",
+        "120 degrees"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "At 2:30 the minute hand is on 6 (180 degrees). The hour hand has moved halfway from 2 to 3: 2 x 30 + 15 = 75 degrees. The difference is 105 degrees."
+    },
+    {
+      "id": "SSCGD-T2-009",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Select the pair that comes next in the series.\n\nAZ, BY, CX, ?",
+      "options": [
+        "DV",
+        "EW",
+        "DX",
+        "DW"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The first letters move forward (A, B, C, D) and the second letters move backward from Z (Z, Y, X, W). So the next pair is DW."
+    },
+    {
+      "id": "SSCGD-T2-010",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Calendar",
+      "stem": "If today is Wednesday, what day of the week will it be 45 days from today?",
+      "options": [
+        "Sunday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "45 days is 6 weeks and 3 days. Three days after Wednesday is Saturday."
+    },
+    {
+      "id": "SSCGD-T2-011",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, PEN is written as 16-5-14. How is INK written in that code?",
+      "options": [
+        "9-14-12",
+        "10-14-11",
+        "9-13-11",
+        "9-14-11"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Each letter is replaced by its position in the alphabet: P = 16, E = 5, N = 14. So I = 9, N = 14 and K = 11."
+    },
+    {
+      "id": "SSCGD-T2-012",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sign substitution",
+      "stem": "If P means 'add', Q means 'subtract', R means 'multiply' and S means 'divide', what is the value of 18 S 3 P 4 R 5 Q 6?",
+      "options": [
+        "20",
+        "14",
+        "24",
+        "26"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The expression is 18 ÷ 3 + 4 x 5 - 6. Divide and multiply first: 6 + 20 - 6 = 20."
+    },
+    {
+      "id": "SSCGD-T2-013",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Select the word that does NOT belong with the others.\n\nCopper, Iron, Silver, Wood",
+      "options": [
+        "Silver",
+        "Iron",
+        "Copper",
+        "Wood"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Copper, iron and silver are metals. Wood comes from trees and is not a metal."
+    },
+    {
+      "id": "SSCGD-T2-014",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Statements and conclusions",
+      "stem": "Read the statements and decide which conclusion(s) logically follow from them, even if they seem to differ from commonly known facts.\n\nStatements: No stone is a fruit. All fruits are sweet.\nConclusion I: No stone is sweet.\nConclusion II: Some sweet things are fruits.",
+      "options": [
+        "Only conclusion I follows",
+        "Only conclusion II follows",
+        "Both I and II follow",
+        "Neither I nor II follows"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "All fruits are sweet, so some sweet things are fruits: II follows. Stones are not fruits, but they could still be sweet in some other way, so I does not follow."
+    },
+    {
+      "id": "SSCGD-T2-015",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alphabet positions",
+      "stem": "Which letter is 6th to the right of the 9th letter from the right end of the English alphabet?",
+      "options": [
+        "W",
+        "X",
+        "L",
+        "Y"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The 9th letter from the right is the 18th from the left, R. Six places to its right is the 24th letter, X. Counting to the left instead gives L."
+    },
+    {
+      "id": "SSCGD-T2-016",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ages",
+      "stem": "A father is three times as old as his son. After 12 years, he will be twice as old as his son. How old is the son now?",
+      "options": [
+        "14 years",
+        "12 years",
+        "16 years",
+        "10 years"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Let the son be s. Then 3s + 12 = 2(s + 12), so 3s + 12 = 2s + 24 and s = 12. The father is 36."
+    },
+    {
+      "id": "SSCGD-T2-017",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter analogy",
+      "stem": "Select the group that completes the analogy.\n\nBDF : CEG :: KMO : ?",
+      "options": [
+        "MOQ",
+        "LMP",
+        "LNP",
+        "KNP"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each letter of BDF moves one place forward to give CEG. In the same way K, M, O become L, N, P."
+    },
+    {
+      "id": "SSCGD-T2-018",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "In the evening, Kiran stands facing the setting sun. In which direction does his shadow fall?",
+      "options": [
+        "North",
+        "West",
+        "South",
+        "East"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The sun sets in the west, so Kiran faces west and his shadow falls behind him, to the east."
+    },
+    {
+      "id": "SSCGD-T2-019",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Select the number that comes next in the series.\n\n2, 3, 5, 8, 12, ?",
+      "options": [
+        "16",
+        "18",
+        "20",
+        "17"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The gaps grow by one each time: 1, 2, 3, 4, so the next gap is 5 and 12 + 5 = 17."
+    },
+    {
+      "id": "SSCGD-T2-020",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Counting in a sequence",
+      "stem": "In the sequence below, how many times is 5 immediately followed by 3?\n\n5 3 7 5 3 5 8 3 5 3 2 5",
+      "options": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Reading in pairs: 5 3 at the start, 5 3 in positions 4 and 5, and 5 3 in positions 9 and 10. The 5 before 8 and the last 5 are not followed by 3. That makes 3."
+    },
+    {
+      "id": "SSCGD-T2-021",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval India",
+      "stem": "Which Mughal emperor wrote his memoirs, the Baburnama (Tuzuk-i-Baburi), in Turki?",
+      "options": [
+        "Babur",
+        "Jahangir",
+        "Akbar",
+        "Humayun"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Babur wrote the Baburnama in his mother tongue, Chagatai Turki. Jahangir wrote the Tuzuk-i-Jahangiri, and Akbar's reign is described in Abul Fazl's Akbarnama."
+    },
+    {
+      "id": "SSCGD-T2-022",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Solar system",
+      "stem": "Which planet is closest to the Sun?",
+      "options": [
+        "Mercury",
+        "Mars",
+        "Venus",
+        "Earth"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Mercury is the closest planet to the Sun and also the smallest. Venus is second and is the hottest planet."
+    },
+    {
+      "id": "SSCGD-T2-023",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Books and authors",
+      "stem": "Who wrote the book 'The Discovery of India'?",
+      "options": [
+        "Jawaharlal Nehru",
+        "B. R. Ambedkar",
+        "Abul Kalam Azad",
+        "Mahatma Gandhi"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Jawaharlal Nehru wrote The Discovery of India while in Ahmednagar Fort prison in 1944. Gandhi's autobiography is 'The Story of My Experiments with Truth'."
+    },
+    {
+      "id": "SSCGD-T2-024",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "India and its neighbours",
+      "stem": "Thimphu is the capital of which neighbouring country of India?",
+      "options": [
+        "Bhutan",
+        "Myanmar",
+        "Sri Lanka",
+        "Nepal"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Thimphu is the capital of Bhutan. Kathmandu is the capital of Nepal and Naypyidaw of Myanmar."
+    },
+    {
+      "id": "SSCGD-T2-025",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Social reform",
+      "stem": "Who founded the Servants of India Society in 1905?",
+      "options": [
+        "M. G. Ranade",
+        "Annie Besant",
+        "B. G. Tilak",
+        "G. K. Gokhale"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Gopal Krishna Gokhale founded the Servants of India Society in Pune to train people for public service. Gandhi called Gokhale his political guru."
+    },
+    {
+      "id": "SSCGD-T2-026",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "World geography",
+      "stem": "Which is the largest continent by area?",
+      "options": [
+        "Africa",
+        "Asia",
+        "Europe",
+        "North America"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Asia is the largest continent by both area and population. Africa is second."
+    },
+    {
+      "id": "SSCGD-T2-027",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom struggle",
+      "stem": "Who was the first woman to be President of the Indian National Congress?",
+      "options": [
+        "Kasturba Gandhi",
+        "Sarojini Naidu",
+        "Annie Besant",
+        "Indira Gandhi"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Annie Besant presided over the Calcutta session of 1917. Sarojini Naidu, in 1925, was the first Indian woman to hold the post."
+    },
+    {
+      "id": "SSCGD-T2-028",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which blood cells carry oxygen from the lungs to the rest of the body?",
+      "options": [
+        "Platelets",
+        "Plasma cells",
+        "White blood cells",
+        "Red blood cells"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Red blood cells contain haemoglobin, which carries oxygen. White blood cells fight infection and platelets help blood clot."
+    },
+    {
+      "id": "SSCGD-T2-029",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Which Article of the Constitution forbids employing children below 14 years in factories, mines or other hazardous work?",
+      "options": [
+        "Article 17",
+        "Article 21",
+        "Article 24",
+        "Article 45"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Article 24 is a Fundamental Right against exploitation of children. Article 17 abolishes untouchability and Article 21 protects life and personal liberty."
+    },
+    {
+      "id": "SSCGD-T2-030",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Chemistry",
+      "stem": "Which acid gives lemons and oranges their sour taste?",
+      "options": [
+        "Lactic acid",
+        "Acetic acid",
+        "Formic acid",
+        "Citric acid"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Citrus fruits contain citric acid. Acetic acid is in vinegar, formic acid in ant stings and lactic acid in curd."
+    },
+    {
+      "id": "SSCGD-T2-031",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "In which Part of the Constitution are the Fundamental Duties found?",
+      "options": [
+        "Part V",
+        "Part IVA",
+        "Part IV",
+        "Part III"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Fundamental Duties are in Part IVA (Article 51A), added in 1976. Part III has the Fundamental Rights and Part IV the Directive Principles."
+    },
+    {
+      "id": "SSCGD-T2-032",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "Farm workers in many villages find work only during the sowing and harvest months. What kind of unemployment is this?",
+      "options": [
+        "Seasonal unemployment",
+        "Disguised unemployment",
+        "Frictional unemployment",
+        "Structural unemployment"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Seasonal unemployment comes from work that is available only at certain times of year. Disguised unemployment is when more people work on a farm than are needed."
+    },
+    {
+      "id": "SSCGD-T2-033",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "The anti-defection law is contained in which Schedule of the Constitution?",
+      "options": [
+        "Ninth Schedule",
+        "Seventh Schedule",
+        "Tenth Schedule",
+        "Eighth Schedule"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Tenth Schedule, added by the 52nd Amendment in 1985, covers disqualification of legislators for defection. The Seventh Schedule has the Union, State and Concurrent Lists."
+    },
+    {
+      "id": "SSCGD-T2-034",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sports",
+      "stem": "The term 'checkmate' is used in which game?",
+      "options": [
+        "Badminton",
+        "Polo",
+        "Carrom",
+        "Chess"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Checkmate ends a game of chess: the king is under attack and has no legal move to escape."
+    },
+    {
+      "id": "SSCGD-T2-035",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Which Article of the Constitution gives the President the power to grant pardons?",
+      "options": [
+        "Article 110",
+        "Article 72",
+        "Article 76",
+        "Article 61"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Article 72 lets the President grant pardons and suspend, remit or commute sentences. Article 61 covers impeachment of the President and Article 110 defines a Money Bill."
+    },
+    {
+      "id": "SSCGD-T2-036",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sports",
+      "stem": "The term 'googly' is associated with which sport?",
+      "options": [
+        "Golf",
+        "Cricket",
+        "Polo",
+        "Hockey"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A googly is a delivery by a leg-spin bowler that turns the opposite way to the usual leg break."
+    },
+    {
+      "id": "SSCGD-T2-037",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Art and culture",
+      "stem": "Lavani is a folk dance mainly associated with which state?",
+      "options": [
+        "Gujarat",
+        "Rajasthan",
+        "Maharashtra",
+        "Punjab"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Lavani, performed to the beat of the dholki, is from Maharashtra. Garba is from Gujarat, Ghoomar from Rajasthan and Bhangra from Punjab."
+    },
+    {
+      "id": "SSCGD-T2-038",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "India and its neighbours",
+      "stem": "Which line marks the boundary between India and China in the eastern sector?",
+      "options": [
+        "McMahon Line",
+        "Line of Control",
+        "Durand Line",
+        "Radcliffe Line"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The McMahon Line runs along the eastern Himalaya. The Radcliffe Line is the India-Pakistan border and the Durand Line divides Pakistan and Afghanistan."
+    },
+    {
+      "id": "SSCGD-T2-039",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Art and culture",
+      "stem": "The Khajuraho group of temples is in which state?",
+      "options": [
+        "Odisha",
+        "Madhya Pradesh",
+        "Rajasthan",
+        "Uttar Pradesh"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Khajuraho temples, built by the Chandela rulers, are in Chhatarpur district of Madhya Pradesh and are a UNESCO World Heritage Site."
+    },
+    {
+      "id": "SSCGD-T2-040",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Physics",
+      "stem": "Which instrument is used to test the purity of milk?",
+      "options": [
+        "Lactometer",
+        "Odometer",
+        "Barometer",
+        "Hygrometer"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A lactometer measures the density of milk, which shows whether water has been added. A hygrometer measures humidity."
+    },
+    {
+      "id": "SSCGD-T2-041",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "HCF and LCM",
+      "stem": "The product of two numbers is 960 and their HCF is 8. What is their LCM?",
+      "options": [
+        "120",
+        "96",
+        "7680",
+        "80"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "For two numbers, HCF x LCM = product of the numbers. So LCM = 960 ÷ 8 = 120. 7680 comes from multiplying instead of dividing."
+    },
+    {
+      "id": "SSCGD-T2-042",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A mobile phone is sold for ₹1,380 at a profit of 15 percent. What was its cost price?",
+      "options": [
+        "₹1,250",
+        "₹1,180",
+        "₹1,200",
+        "₹1,173"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Selling price = 115 percent of cost, so cost = 1,380 x 100 ÷ 115 = ₹1,200. Taking 15 percent off 1,380 gives the wrong ₹1,173."
+    },
+    {
+      "id": "SSCGD-T2-043",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Decimals and fractions",
+      "stem": "What is 3/4 + 2/3?",
+      "options": [
+        "5/12",
+        "17/12",
+        "5/7",
+        "6/7"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Use the common denominator 12: 3/4 = 9/12 and 2/3 = 8/12, so the sum is 17/12. Adding the tops and bottoms (5/7) is a common mistake."
+    },
+    {
+      "id": "SSCGD-T2-044",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Discount",
+      "stem": "A cooler marked at ₹2,000 is sold for ₹1,700. What is the discount percent?",
+      "options": [
+        "20 percent",
+        "12 percent",
+        "17.6 percent",
+        "15 percent"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Discount = ₹300, and discount percent is on the marked price: 300 ÷ 2,000 x 100 = 15."
+    },
+    {
+      "id": "SSCGD-T2-045",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Decimals and fractions",
+      "stem": "What is 0.6 x 0.05?",
+      "options": [
+        "0.003",
+        "0.3",
+        "0.03",
+        "0.0003"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "6 x 5 = 30, and there are three decimal places in all (one in 0.6 and two in 0.05), so the answer is 0.030 = 0.03."
+    },
+    {
+      "id": "SSCGD-T2-046",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "At what rate of simple interest per annum will ₹4,000 earn ₹1,200 in 5 years?",
+      "options": [
+        "5 percent",
+        "6 percent",
+        "4 percent",
+        "8 percent"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "R = SI x 100 ÷ (P x T) = 1,200 x 100 ÷ (4,000 x 5) = 6 percent."
+    },
+    {
+      "id": "SSCGD-T2-047",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "What percent of 180 is 45?",
+      "options": [
+        "30 percent",
+        "25 percent",
+        "20 percent",
+        "40 percent"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "45 ÷ 180 x 100 = 25. 45 is one quarter of 180."
+    },
+    {
+      "id": "SSCGD-T2-048",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "12 workers can build a wall in 20 days. How many days will 15 workers take to build the same wall?",
+      "options": [
+        "18 days",
+        "25 days",
+        "15 days",
+        "16 days"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The work is 12 x 20 = 240 worker-days. With 15 workers it takes 240 ÷ 15 = 16 days. More workers means fewer days, so 25 cannot be right."
+    },
+    {
+      "id": "SSCGD-T2-049",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "If a : b = 3 : 4 and b : c = 6 : 7, what is a : c?",
+      "options": [
+        "3 : 7",
+        "18 : 24",
+        "1 : 2",
+        "9 : 14"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Make b the same in both: a : b = 18 : 24 and b : c = 24 : 28. So a : c = 18 : 28 = 9 : 14. Equivalently a/c = 3/4 x 6/7 = 18/28 = 9/14."
+    },
+    {
+      "id": "SSCGD-T2-050",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Speed and distance",
+      "stem": "A cyclist rides at 12 km/h for 50 minutes. How far does he travel?",
+      "options": [
+        "12 km",
+        "6 km",
+        "10 km",
+        "8 km"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "50 minutes is 50/60 = 5/6 of an hour. Distance = 12 x 5/6 = 10 km."
+    },
+    {
+      "id": "SSCGD-T2-051",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Average",
+      "stem": "What is the average of 12, 18, 25, 33 and 42?",
+      "options": [
+        "24",
+        "27",
+        "26",
+        "25"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The sum is 12 + 18 + 25 + 33 + 42 = 130, and 130 ÷ 5 = 26."
+    },
+    {
+      "id": "SSCGD-T2-052",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the volume of a box (cuboid) that is 10 cm long, 6 cm wide and 4 cm high?",
+      "options": [
+        "240 cm³",
+        "248 cm³",
+        "20 cm³",
+        "120 cm³"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Volume = length x breadth x height = 10 x 6 x 4 = 240 cm³. 20 is the sum of the sides, not the volume."
+    },
+    {
+      "id": "SSCGD-T2-053",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Decimals and fractions",
+      "stem": "Which of these fractions is the largest?",
+      "options": [
+        "7/10",
+        "2/3",
+        "3/4",
+        "5/7"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "As decimals: 3/4 = 0.75, 5/7 = 0.714, 7/10 = 0.7 and 2/3 = 0.667. So 3/4 is the largest."
+    },
+    {
+      "id": "SSCGD-T2-054",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the area of a triangle with a base of 16 cm and a height of 11 cm?",
+      "options": [
+        "96 cm²",
+        "88 cm²",
+        "176 cm²",
+        "27 cm²"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Area = 1/2 x base x height = 1/2 x 16 x 11 = 88 cm². Forgetting the half gives 176."
+    },
+    {
+      "id": "SSCGD-T2-055",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "What is 1001 divided by 13?",
+      "options": [
+        "77",
+        "73",
+        "79",
+        "91"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "1001 = 7 x 11 x 13, so 1001 ÷ 13 = 7 x 11 = 77. 91 is 1001 ÷ 11."
+    },
+    {
+      "id": "SSCGD-T2-056",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speed and distance",
+      "stem": "Two trains start at the same time from stations 240 km apart and move towards each other at 45 km/h and 35 km/h. After how long do they meet?",
+      "options": [
+        "2.5 hours",
+        "24 hours",
+        "3 hours",
+        "4 hours"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Moving towards each other, their speeds add: 45 + 35 = 80 km/h. Time = 240 ÷ 80 = 3 hours. Subtracting the speeds gives the wrong 24 hours."
+    },
+    {
+      "id": "SSCGD-T2-057",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "The population of a village is 8,000. It grows by 10 percent in the first year and by 10 percent again in the second year. What is the population after two years?",
+      "options": [
+        "9,680",
+        "9,600",
+        "9,620",
+        "9,800"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "After one year: 8,000 x 1.1 = 8,800. After two: 8,800 x 1.1 = 9,680. Adding 20 percent of 8,000 in one go gives 9,600, which ignores growth on the first year's increase."
+    },
+    {
+      "id": "SSCGD-T2-058",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Discount",
+      "stem": "A trader marks his goods 30 percent above the cost price and then gives a discount of 10 percent. What is his profit percent?",
+      "options": [
+        "20 percent",
+        "17 percent",
+        "13 percent",
+        "15 percent"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Take cost = ₹100. Marked price = ₹130. After 10 percent off (₹13), selling price = ₹117, so the profit is 17 percent. Simply subtracting 30 - 10 gives the wrong 20."
+    },
+    {
+      "id": "SSCGD-T2-059",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "Which of these numbers is divisible by 9?",
+      "options": [
+        "4,536",
+        "4,538",
+        "4,355",
+        "6,532"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A number is divisible by 9 when the sum of its digits is. 4 + 5 + 3 + 6 = 18, which is divisible by 9. The others give 20, 17 and 16."
+    },
+    {
+      "id": "SSCGD-T2-060",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the circumference of a circle of diameter 35 cm? (Take π = 22/7.)",
+      "options": [
+        "55 cm",
+        "105 cm",
+        "110 cm",
+        "220 cm"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Circumference = π x diameter = 22/7 x 35 = 110 cm. Using 35 as the radius gives the wrong 220 cm."
+    },
+    {
+      "id": "SSCGD-T2-061",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nENORMOUS",
+      "options": [
+        "Huge",
+        "Heavy",
+        "Tiny",
+        "Noisy"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Enormous means very large, which is huge. Tiny is its antonym."
+    },
+    {
+      "id": "SSCGD-T2-062",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nNeither the teacher nor the students / was present / in the hall.",
+      "options": [
+        "Neither the teacher nor the students",
+        "was present",
+        "in the hall",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "With 'neither ... nor', the verb agrees with the nearer subject. 'Students' is plural, so the verb should be 'were present'."
+    },
+    {
+      "id": "SSCGD-T2-063",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nARTIFICIAL",
+      "options": [
+        "Simple",
+        "Fake",
+        "Natural",
+        "Plastic"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Artificial means made by people, not by nature; its opposite is natural. Fake is close to a synonym."
+    },
+    {
+      "id": "SSCGD-T2-064",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe train had left ______ we reached the station.",
+      "options": [
+        "after",
+        "before",
+        "unless",
+        "since"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The past perfect 'had left' shows the earlier of two past actions: the train left first, before we reached."
+    },
+    {
+      "id": "SSCGD-T2-065",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo burn the midnight oil",
+      "options": [
+        "To waste costly fuel",
+        "To work late at night",
+        "To light a lamp at dusk",
+        "To cook a late dinner"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To burn the midnight oil is to work or study late into the night, as students do before an exam."
+    },
+    {
+      "id": "SSCGD-T2-066",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nHe __did not came__ to school yesterday.",
+      "options": [
+        "had not came",
+        "did not come",
+        "does not came",
+        "No improvement"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "After 'did' (or 'do', 'does') the main verb takes its base form: 'did not come'."
+    },
+    {
+      "id": "SSCGD-T2-067",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA building where soldiers live",
+      "options": [
+        "Dockyard",
+        "Barracks",
+        "Arsenal",
+        "Hangar"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Soldiers live in barracks. An arsenal stores weapons, a hangar houses aircraft and a dockyard is where ships are built or repaired."
+    },
+    {
+      "id": "SSCGD-T2-068",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the active form of the sentence.\n\nThe letter was written by Anita.",
+      "options": [
+        "Anita wrote the letter.",
+        "Anita writes the letter.",
+        "Anita had written the letter.",
+        "Anita has written the letter."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Was written' is simple past passive, so the active is simple past: 'Anita wrote the letter.'"
+    },
+    {
+      "id": "SSCGD-T2-069",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spelling",
+      "stem": "Select the correctly spelt word. It means 'the group of people who run a country'.",
+      "options": [
+        "Governmant",
+        "Goverment",
+        "Government",
+        "Govermant"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Government keeps the n of 'govern': g-o-v-e-r-n-m-e-n-t. Dropping it ('goverment') is a common mistake."
+    },
+    {
+      "id": "SSCGD-T2-070",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direct and indirect speech",
+      "stem": "Select the correct indirect form of the sentence.\n\nHe said, \"I will go to Patna tomorrow.\"",
+      "options": [
+        "He said that he will go to Patna tomorrow.",
+        "He said that I would go to Patna the next day.",
+        "He said that he would go to Patna the next day.",
+        "He said that he would go to Patna yesterday."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "With a past reporting verb, 'will' becomes 'would', 'I' becomes 'he' and 'tomorrow' becomes 'the next day'."
+    },
+    {
+      "id": "SSCGD-T2-071",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nTEMPORARY",
+      "options": [
+        "Brief",
+        "Permanent",
+        "Passing",
+        "Seasonal"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Temporary means lasting a short time; permanent means lasting for ever. Brief and passing are close to temporary itself."
+    },
+    {
+      "id": "SSCGD-T2-072",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCGD-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (1).",
+      "options": [
+        "under",
+        "into",
+        "upon",
+        "around"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Trees are planted around (or along) the edge of a playground. 'Under', 'upon' and 'into' do not describe where trees are planted."
+    },
+    {
+      "id": "SSCGD-T2-073",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCGD-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (2).",
+      "options": [
+        "up",
+        "into",
+        "after",
+        "for"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Look after' means to take care of, which is what the students did by watering the saplings. 'Look for' means to search."
+    },
+    {
+      "id": "SSCGD-T2-074",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCGD-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (3).",
+      "options": [
+        "unless",
+        "because",
+        "so that",
+        "although"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The fences had a purpose: to stop goats eating the leaves. 'So that' introduces a purpose."
+    },
+    {
+      "id": "SSCGD-T2-075",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCGD-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (4).",
+      "options": [
+        "from",
+        "than",
+        "to",
+        "then"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A comparative such as 'taller' is followed by 'than'. 'Then' is about time and is a common spelling slip."
+    },
+    {
+      "id": "SSCGD-T2-076",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCGD-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (5).",
+      "options": [
+        "last",
+        "next",
+        "previous",
+        "ago"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Plans to plant' looks to the future, so the time phrase is 'next year'."
+    },
+    {
+      "id": "SSCGD-T2-077",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCGD-RC2",
+      "stem": "Reading passage 2: what did Ramesh find on the platform?",
+      "options": [
+        "A lost child",
+        "A train ticket",
+        "A gold watch",
+        "A leather bag"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says he found a leather bag with clothes, books and an envelope of money."
+    },
+    {
+      "id": "SSCGD-T2-078",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCGD-RC2",
+      "stem": "Reading passage 2: what did Ramesh do with what he found?",
+      "options": [
+        "Kept the money for himself",
+        "Took it to the station master",
+        "Took it to the police station",
+        "Left it on the platform"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "He took the bag straight to the station master, who kept it until the owner came."
+    },
+    {
+      "id": "SSCGD-T2-079",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCGD-RC2",
+      "stem": "Reading passage 2: why was the money important to the teacher?",
+      "options": [
+        "For a new house",
+        "For a train journey",
+        "For his daughter's fees",
+        "For his mother's treatment"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says the money was meant for his daughter's college fees."
+    },
+    {
+      "id": "SSCGD-T2-080",
+      "section": "cbe",
+      "test": 2,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCGD-RC2",
+      "stem": "Reading passage 2: which quality of Ramesh does the story mainly show?",
+      "options": [
+        "Courage",
+        "Patience",
+        "Honesty",
+        "Humour"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Ramesh returned a bag full of money and refused a reward, so the story is about his honesty."
+    },
+    {
+      "id": "SSCGD-D-001",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Select the word that does NOT belong with the others.\n\nTriangle, Square, Circle, Rectangle",
+      "options": [
+        "Circle",
+        "Rectangle",
+        "Square",
+        "Triangle"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A triangle, square and rectangle are made of straight sides. A circle has no straight sides."
+    },
+    {
+      "id": "SSCGD-D-002",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Meera's mother is the only daughter of Raju's father. How is Raju related to Meera?",
+      "options": [
+        "Brother",
+        "Maternal uncle",
+        "Father",
+        "Grandfather"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The only daughter of Raju's father is Raju's sister. She is Meera's mother, so Raju is Meera's mother's brother, her maternal uncle (mama)."
+    },
+    {
+      "id": "SSCGD-D-003",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number analogy",
+      "stem": "Select the number that completes the analogy.\n\n5 : 30 :: 7 : ?",
+      "options": [
+        "49",
+        "63",
+        "56",
+        "48"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "30 = 5² + 5, which is also 5 x 6. In the same way 7² + 7 = 7 x 8 = 56. 49 is only the square."
+    },
+    {
+      "id": "SSCGD-D-004",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "A man walks 20 km west and then 21 km north. How far is he from his starting point in a straight line?",
+      "options": [
+        "31 km",
+        "29 km",
+        "41 km",
+        "1 km"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The two walks are at right angles, so the distance is the hypotenuse: the square root of (400 + 441) = the square root of 841 = 29 km. 41 km is the distance walked, not the straight-line distance."
+    },
+    {
+      "id": "SSCGD-D-005",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Select the number that comes next in the series.\n\n100, 95, 85, 70, 50, ?",
+      "options": [
+        "30",
+        "25",
+        "20",
+        "35"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The amounts taken away grow by 5 each time: 5, 10, 15, 20, so the next is 25 and 50 - 25 = 25."
+    },
+    {
+      "id": "SSCGD-D-006",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "There are 20 people in a queue. Amit is 7th from the front and Sumit is 5 places behind Amit. What is Sumit's position from the back?",
+      "options": [
+        "13th",
+        "10th",
+        "8th",
+        "9th"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Sumit is 7 + 5 = 12th from the front. From the back he is 20 - 12 + 1 = 9th."
+    },
+    {
+      "id": "SSCGD-D-007",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, SUN is written as RTM. How is MOON written in that code?",
+      "options": [
+        "LMNM",
+        "LNNM",
+        "LNMM",
+        "NPPO"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each letter moves one place back: S to R, U to T, N to M. So M, O, O, N become L, N, N, M. NPPO moves forward instead."
+    },
+    {
+      "id": "SSCGD-D-008",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Calendar",
+      "stem": "If 8 June is a Thursday, what day of the week is 1 July of the same year?",
+      "options": [
+        "Saturday",
+        "Friday",
+        "Sunday",
+        "Thursday"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "June has 30 days, so 1 July is 22 + 1 = 23 days after 8 June. 23 days is 3 weeks and 2 days, and two days after Thursday is Saturday."
+    },
+    {
+      "id": "SSCGD-D-009",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Select the letter that comes next in the series.\n\nY, V, S, P, ?",
+      "options": [
+        "O",
+        "N",
+        "M",
+        "L"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The series goes backward three places each time: Y (25), V (22), S (19), P (16), so the next is the 13th letter, M."
+    },
+    {
+      "id": "SSCGD-D-010",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Arithmetical reasoning",
+      "stem": "A pen has some ducks and some goats, 20 animals in all, with 56 legs between them. How many goats are there?",
+      "options": [
+        "8",
+        "12",
+        "10",
+        "6"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "If all 20 were ducks there would be 40 legs. Each goat adds 2 legs, and there are 16 extra legs, so there are 8 goats (and 12 ducks)."
+    },
+    {
+      "id": "SSCGD-D-011",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Select the odd number out.\n\n26, 39, 52, 64",
+      "options": [
+        "52",
+        "26",
+        "64",
+        "39"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "26, 39 and 52 are multiples of 13 (13 x 2, 3 and 4). 64 is not; 13 x 5 = 65."
+    },
+    {
+      "id": "SSCGD-D-012",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Clocks",
+      "stem": "Through how many degrees does the hour hand of a clock turn in 3 hours?",
+      "options": [
+        "45 degrees",
+        "180 degrees",
+        "90 degrees",
+        "30 degrees"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The hour hand turns 360 degrees in 12 hours, which is 30 degrees an hour. In 3 hours it turns 3 x 30 = 90 degrees. 180 would be right for 6 hours."
+    },
+    {
+      "id": "SSCGD-D-013",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern India",
+      "stem": "Who was the last Mughal emperor?",
+      "options": [
+        "Shah Alam II",
+        "Aurangzeb",
+        "Bahadur Shah Zafar",
+        "Akbar II"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Bahadur Shah Zafar (Bahadur Shah II) was named leader of the Revolt of 1857 and was exiled to Rangoon by the British in 1858."
+    },
+    {
+      "id": "SSCGD-D-014",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "The smallest bone in the human body, the stapes, is found in the:",
+      "options": [
+        "Nose",
+        "Toe",
+        "Ear",
+        "Finger"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The stapes is one of the three tiny bones of the middle ear that pass sound to the inner ear. The longest bone is the femur, in the thigh."
+    },
+    {
+      "id": "SSCGD-D-015",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ancient India",
+      "stem": "Gautama Buddha attained enlightenment at which place?",
+      "options": [
+        "Bodh Gaya",
+        "Sarnath",
+        "Kushinagar",
+        "Lumbini"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Buddha attained enlightenment under the Bodhi tree at Bodh Gaya in Bihar. He was born at Lumbini, gave his first sermon at Sarnath and died at Kushinagar."
+    },
+    {
+      "id": "SSCGD-D-016",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "National symbols",
+      "stem": "Which is the national aquatic animal of India?",
+      "options": [
+        "Olive ridley turtle",
+        "Gharial",
+        "Blue whale",
+        "Gangetic dolphin"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Gangetic (Ganges river) dolphin was declared the national aquatic animal in 2009. It is nearly blind and finds its way by echolocation."
+    },
+    {
+      "id": "SSCGD-D-017",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Which Article of the Constitution guarantees freedom of speech and expression?",
+      "options": [
+        "Article 19",
+        "Article 21",
+        "Article 25",
+        "Article 14"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Article 19(1)(a) guarantees freedom of speech and expression. Article 25 covers freedom of religion."
+    },
+    {
+      "id": "SSCGD-D-018",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Agriculture",
+      "stem": "Which state is the largest producer of coffee in India?",
+      "options": [
+        "Tamil Nadu",
+        "Assam",
+        "Karnataka",
+        "Kerala"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Karnataka grows about 70 percent of India's coffee, mainly in Kodagu (Coorg), Chikkamagaluru and Hassan. Kerala is second."
+    },
+    {
+      "id": "SSCGD-D-019",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "National symbols",
+      "stem": "Who is credited with designing the Indian national flag?",
+      "options": [
+        "Pingali Venkayya",
+        "Bhikaiji Cama",
+        "Madan Mohan Malaviya",
+        "Rabindranath Tagore"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Pingali Venkayya designed the flag on which the tricolour is based. Bhikaiji Cama unfurled an early Indian flag at Stuttgart in 1907."
+    },
+    {
+      "id": "SSCGD-D-020",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Chemistry",
+      "stem": "Which gas is used to fill party balloons because it is lighter than air and does not burn?",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Hydrogen",
+        "Helium"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Helium is light and does not burn. Hydrogen is even lighter but catches fire easily, so it is unsafe."
+    },
+    {
+      "id": "SSCGD-D-021",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Under which Article of the Constitution is the Supreme Court of India established?",
+      "options": [
+        "Article 32",
+        "Article 124",
+        "Article 226",
+        "Article 214"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Article 124 establishes the Supreme Court. Article 214 provides for High Courts, and Articles 32 and 226 give the writ powers of the Supreme Court and High Courts."
+    },
+    {
+      "id": "SSCGD-D-022",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sports",
+      "stem": "How many players from each team are on the court at a time in a kabaddi match?",
+      "options": [
+        "7",
+        "6",
+        "9",
+        "11"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each kabaddi team has 7 players on court, with a few more as substitutes."
+    },
+    {
+      "id": "SSCGD-D-023",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Article 44, one of the Directive Principles of State Policy, asks the State to secure:",
+      "options": [
+        "Free legal aid",
+        "Equal pay for equal work",
+        "A uniform civil code",
+        "Village panchayats"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Article 44 asks the State to try to secure a uniform civil code for all citizens. Free legal aid is Article 39A and village panchayats Article 40."
+    },
+    {
+      "id": "SSCGD-D-024",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "World geography",
+      "stem": "What is the outermost layer of the Earth called?",
+      "options": [
+        "Mantle",
+        "Outer core",
+        "Crust",
+        "Inner core"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The crust is the thin rocky outer layer. Beneath it are the mantle, the liquid outer core and the solid inner core."
+    },
+    {
+      "id": "SSCGD-D-025",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "HCF and LCM",
+      "stem": "What is the HCF of 72 and 120?",
+      "options": [
+        "8",
+        "24",
+        "12",
+        "360"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "72 = 2³ x 3² and 120 = 2³ x 3 x 5. The HCF is 2³ x 3 = 24. 360 is the LCM."
+    },
+    {
+      "id": "SSCGD-D-026",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "Mohan sells a television for ₹9,000 at a loss of 10 percent. What was its cost price?",
+      "options": [
+        "₹8,100",
+        "₹9,500",
+        "₹9,900",
+        "₹10,000"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Selling price = 90 percent of cost, so cost = 9,000 x 100 ÷ 90 = ₹10,000. Adding 10 percent of 9,000 gives the wrong ₹9,900."
+    },
+    {
+      "id": "SSCGD-D-027",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "40 percent of a number is 64. What is the number?",
+      "options": [
+        "96",
+        "160",
+        "128",
+        "256"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "If 40 percent is 64, then 10 percent is 16 and 100 percent is 160."
+    },
+    {
+      "id": "SSCGD-D-028",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "In how many years will a sum of money double itself at 8 percent per annum simple interest?",
+      "options": [
+        "10 years",
+        "12.5 years",
+        "12 years",
+        "8 years"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To double, the interest must equal the principal, that is 100 percent. At 8 percent a year that takes 100 ÷ 8 = 12.5 years."
+    },
+    {
+      "id": "SSCGD-D-029",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "Simplify: 7 + 3 x (10 - 4) ÷ 2",
+      "options": [
+        "30",
+        "18",
+        "13",
+        "16"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Brackets first: 10 - 4 = 6. Then 3 x 6 = 18 and 18 ÷ 2 = 9. Finally 7 + 9 = 16. Working left to right without BODMAS gives 30."
+    },
+    {
+      "id": "SSCGD-D-030",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "Amit and Bimal together can finish a task in 10 days. Amit alone takes 15 days. How long will Bimal take alone?",
+      "options": [
+        "20 days",
+        "25 days",
+        "30 days",
+        "5 days"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Bimal's one-day work = 1/10 - 1/15 = 3/30 - 2/30 = 1/30, so he takes 30 days. Subtracting the days (15 - 10 = 5) is a common mistake."
+    },
+    {
+      "id": "SSCGD-D-031",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "Two numbers are in the ratio 3 : 4 and their sum is 63. What is the larger number?",
+      "options": [
+        "36",
+        "32",
+        "27",
+        "40"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "There are 3 + 4 = 7 parts, so one part is 63 ÷ 7 = 9. The larger number is 4 x 9 = 36 and the smaller 27."
+    },
+    {
+      "id": "SSCGD-D-032",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Speed and distance",
+      "stem": "Convert a speed of 108 km/h into metres per second.",
+      "options": [
+        "60 m/s",
+        "36 m/s",
+        "30 m/s",
+        "25 m/s"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Multiply by 5/18: 108 x 5/18 = 30 m/s. A quick check: 18 km/h is 5 m/s, and 108 is six times 18."
+    },
+    {
+      "id": "SSCGD-D-033",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Average",
+      "stem": "The average of six numbers is 15. If 4 is added to each number, what is the new average?",
+      "options": [
+        "15",
+        "19",
+        "21",
+        "24"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Adding the same amount to every number raises the average by that amount: 15 + 4 = 19."
+    },
+    {
+      "id": "SSCGD-D-034",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "The diagonal of a square is 10 cm. What is its area?",
+      "options": [
+        "40 cm²",
+        "50 cm²",
+        "100 cm²",
+        "25 cm²"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Area of a square = diagonal² ÷ 2 = 100 ÷ 2 = 50 cm². Squaring the diagonal without halving gives 100."
+    },
+    {
+      "id": "SSCGD-D-035",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Squares and roots",
+      "stem": "What is the square of 35?",
+      "options": [
+        "1225",
+        "1215",
+        "1125",
+        "1325"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "For a number ending in 5, multiply the tens digit by the next number and write 25 after it: 3 x 4 = 12, so 35² = 1225."
+    },
+    {
+      "id": "SSCGD-D-036",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "A rectangular field is 40 m long and 25 m wide. Fencing costs ₹12 per metre. What is the cost of fencing the field all round?",
+      "options": [
+        "₹1,300",
+        "₹12,000",
+        "₹780",
+        "₹1,560"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Perimeter = 2 x (40 + 25) = 130 m, so the cost is 130 x 12 = ₹1,560. ₹12,000 uses the area (1,000 m²) instead of the perimeter."
+    },
+    {
+      "id": "SSCGD-D-037",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe cattle / is grazing / in the field.",
+      "options": [
+        "The cattle",
+        "is grazing",
+        "in the field",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Cattle' is always plural, so it takes a plural verb: 'The cattle are grazing in the field.'"
+    },
+    {
+      "id": "SSCGD-D-038",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nANGER",
+      "options": [
+        "Rage",
+        "Fear",
+        "Joy",
+        "Calm"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Rage is strong anger. Calm is closer to an antonym."
+    },
+    {
+      "id": "SSCGD-D-039",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nMy uncle insisted ______ paying for the tickets.",
+      "options": [
+        "in",
+        "on",
+        "for",
+        "at"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Insist' is followed by 'on': to insist on doing something."
+    },
+    {
+      "id": "SSCGD-D-040",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nARRIVE",
+      "options": [
+        "Return",
+        "Enter",
+        "Reach",
+        "Depart"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "To arrive is to reach a place; to depart is to leave it. Reach is a synonym."
+    },
+    {
+      "id": "SSCGD-D-041",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nMr Thomas is ______ European.",
+      "options": [
+        "an",
+        "the",
+        "a",
+        "some"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'European' begins with a vowel letter but a 'yoo' (consonant) sound, so it takes 'a', as in 'a university'."
+    },
+    {
+      "id": "SSCGD-D-042",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo be over the moon",
+      "options": [
+        "To dream at night",
+        "To be very tired",
+        "To be very happy",
+        "To travel far away"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "To be over the moon is to be extremely happy or delighted about something."
+    },
+    {
+      "id": "SSCGD-D-043",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\n__If it will rain__, we will stay at home.",
+      "options": [
+        "If it rained",
+        "If it would rain",
+        "If it rains",
+        "No improvement"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "In a first conditional, the 'if' clause takes the simple present and the main clause takes 'will': 'If it rains, we will stay at home.'"
+    },
+    {
+      "id": "SSCGD-D-044",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA person who does not eat meat, fish or eggs",
+      "options": [
+        "Vegetarian",
+        "Carnivore",
+        "Omnivore",
+        "Cannibal"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A vegetarian eats only plant food (and often milk products). A carnivore eats meat and an omnivore eats both."
+    },
+    {
+      "id": "SSCGD-D-045",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nOpen the window.",
+      "options": [
+        "Let the window be opened.",
+        "The window was opened.",
+        "Let the window is opened.",
+        "The window is opened."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A command in the active becomes 'Let ... be + past participle' in the passive: 'Let the window be opened.'"
+    },
+    {
+      "id": "SSCGD-D-046",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spelling",
+      "stem": "Select the correctly spelt word. It means 'to get something that is given or sent'.",
+      "options": [
+        "Recieve",
+        "Riceive",
+        "Receive",
+        "Receeve"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Receive follows the rule 'i before e, except after c': r-e-c-e-i-v-e."
+    },
+    {
+      "id": "SSCGD-D-047",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nHe has been working here / since five years / and enjoys his job.",
+      "options": [
+        "He has been working here",
+        "since five years",
+        "and enjoys his job",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Since' is used with a point in time and 'for' with a period. Five years is a period, so it should be 'for five years'."
+    },
+    {
+      "id": "SSCGD-D-048",
+      "section": "cbe",
+      "test": 0,
+      "module": 1,
+      "domain": "sscgdVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nFAMOUS",
+      "options": [
+        "Wealthy",
+        "Unknown",
+        "Renowned",
+        "Ordinary"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Famous means known to many people, which is renowned. Unknown is the antonym."
+    }
+  ]
+}

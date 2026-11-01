@@ -1,0 +1,4269 @@
+{
+  "stimuli": [
+    {
+      "id": "APPSYCH-T1-S1",
+      "title": "Study summary",
+      "text": "Researchers wanted to know whether a full night's sleep helps memory. They randomly assigned 60 college student volunteers to sleep either 8 hours or 4 hours in a sleep laboratory on the night before a memory test. The next morning, every student studied the same list of 30 words for 5 minutes and then wrote down as many words as possible.\n\nStudents who slept 8 hours recalled a mean of 21 words; students who slept 4 hours recalled a mean of 15 words. The difference was statistically significant (p < .01). All students gave informed consent and were told they could leave the study at any time."
+    },
+    {
+      "id": "APPSYCH-T1-S2",
+      "title": "Study summary",
+      "text": "A school psychologist surveyed 400 high school students about how many hours they spend on screens after 9 p.m. and how many hours they usually sleep on school nights. She found a correlation of r = -0.42 between evening screen time and hours of sleep."
+    },
+    {
+      "id": "APPSYCH-T1-S3",
+      "title": "Data",
+      "text": "In a reaction-time study, seven participants pressed a key as soon as a light came on. Each participant's average reaction time is shown below.\n\n| Participant | Reaction time (milliseconds) |\n|---|---|\n| 1 | 250 |\n| 2 | 260 |\n| 3 | 265 |\n| 4 | 270 |\n| 5 | 275 |\n| 6 | 280 |\n| 7 | 600 |"
+    },
+    {
+      "id": "APPSYCH-T2-S1",
+      "title": "Study summary",
+      "text": "Researchers studied whether background music affects reading comprehension. They randomly assigned 90 ninth graders to read the same passage in one of three conditions: silence, instrumental music, or music with lyrics. Each student then answered 10 questions about the passage.\n\n| Condition | Mean score (out of 10) |\n|---|---|\n| Silence | 8.1 |\n| Instrumental music | 7.8 |\n| Music with lyrics | 6.2 |\n\nOnly the difference between the lyrics group and the silence group was statistically significant."
+    },
+    {
+      "id": "APPSYCH-T2-S2",
+      "title": "Data",
+      "text": "A teacher recorded the scores of 15 students on a 10-point psychology quiz.\n\n| Score | Number of students |\n|---|---|\n| 6 | 2 |\n| 7 | 5 |\n| 8 | 3 |\n| 9 | 3 |\n| 10 | 2 |"
+    },
+    {
+      "id": "APPSYCH-T2-S3",
+      "title": "Study summary",
+      "text": "A researcher wants to study how people react to failure. Participants complete a puzzle test and are told that they scored far below most other people, although the scores they are given are made up. The researcher then measures how long each participant keeps working on a second, unsolvable puzzle before giving up."
+    },
+    {
+      "id": "APPSYCH-D-S1",
+      "title": "Study summary",
+      "text": "A psychologist tested whether a mindfulness app reduces test anxiety. At one high school, students who chose to use the app for four weeks were compared with students who chose not to. Afterward, each student rated their test anxiety from 1 (none) to 10 (extreme). Students who used the app reported lower anxiety on average."
+    }
+  ],
+  "questions": [
+    {
+      "id": "APPSYCH-T1-001",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Heredity and environment",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Researchers find that identical twins raised in different homes are more alike in a trait than fraternal twins raised together. This finding most directly suggests that the trait",
+      "options": [
+        "is shaped mainly by parenting",
+        "cannot be measured reliably",
+        "is influenced by genes",
+        "is learned through modeling"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Identical twins share all their genes, so greater similarity even when raised apart points to a genetic influence. If parenting were the main cause, the fraternal twins raised together would be the more similar pair."
+    },
+    {
+      "id": "APPSYCH-T1-002",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The nervous system",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Moments before giving a speech, Dana's heart races and her mouth goes dry. Which division of the nervous system is most active?",
+      "options": [
+        "Parasympathetic nervous system",
+        "Somatic nervous system",
+        "Central nervous system",
+        "Sympathetic nervous system"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The sympathetic division of the autonomic nervous system arouses the body for fight or flight: faster heart rate, less saliva. The parasympathetic division does the opposite and calms the body afterward."
+    },
+    {
+      "id": "APPSYCH-T1-003",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The neuron and neural firing",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A neuron fires with the same strength whether the stimulus is just above threshold or far above it. This illustrates",
+      "options": [
+        "the refractory period",
+        "the all-or-none principle",
+        "the threshold of excitation",
+        "reuptake"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An action potential either happens at full strength or not at all once threshold is reached. A stronger stimulus changes how often neurons fire, not how strongly one fires. The refractory period is the brief pause after firing."
+    },
+    {
+      "id": "APPSYCH-T1-004",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Drugs and neural firing",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A drug that binds to receptor sites and mimics the effect of a neurotransmitter is called",
+      "options": [
+        "an agonist",
+        "a reuptake blocker",
+        "an antagonist",
+        "a hormone"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "An agonist activates the receptor the way the natural neurotransmitter would. An antagonist binds to the receptor but blocks it instead of activating it."
+    },
+    {
+      "id": "APPSYCH-T1-005",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The brain",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After a stroke, a patient understands speech well but speaks slowly in short, effortful phrases. The damage is most likely in",
+      "options": [
+        "the cerebellum",
+        "Wernicke's area",
+        "Broca's area",
+        "the occipital lobe"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Broca's area, in the left frontal lobe, controls the production of speech, so damage leaves comprehension largely intact but makes speaking labored. Damage to Wernicke's area does the reverse: fluent speech that makes little sense and poor comprehension."
+    },
+    {
+      "id": "APPSYCH-T1-006",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The brain",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After brain surgery, a patient recalls his childhood clearly but cannot form new long-term memories of facts and events. Which structure was most likely removed?",
+      "options": [
+        "The hypothalamus",
+        "The hippocampus",
+        "The amygdala",
+        "The medulla"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The hippocampus is needed to form new explicit memories, so its loss causes anterograde amnesia while older memories remain. The amygdala is involved mainly in emotion, especially fear."
+    },
+    {
+      "id": "APPSYCH-T1-007",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The brain",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A split-brain patient sees a picture of a key flashed only to his left visual field. What is he most likely to do?",
+      "options": [
+        "Say the word key out loud",
+        "Pick out a key with his right hand",
+        "Draw a key with his right hand",
+        "Pick out a key with his left hand"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The left visual field goes to the right hemisphere, which controls the left hand but usually lacks speech. With the corpus callosum cut, the left hemisphere, which controls speech and the right hand, never receives the image."
+    },
+    {
+      "id": "APPSYCH-T1-008",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Sleep",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "During which stage of sleep do vivid dreams and rapid eye movements occur while the major voluntary muscles are largely paralyzed?",
+      "options": [
+        "NREM stage 2",
+        "NREM stage 3",
+        "NREM stage 1",
+        "REM sleep"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "REM sleep brings rapid eye movements, a fast brain-wave pattern and most vivid dreaming, while the body's large muscles are relaxed almost to paralysis. NREM stage 3 is deep, slow-wave sleep."
+    },
+    {
+      "id": "APPSYCH-T1-009",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Sleep",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A traveler who flies from Los Angeles to Paris feels wide awake at 2 a.m. local time. This is best explained by a disruption of the traveler's",
+      "options": [
+        "circadian rhythm",
+        "sensory adaptation",
+        "REM rebound",
+        "sleep apnea"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The circadian rhythm is the body's roughly 24-hour clock, and jet lag happens when it is out of step with local time. REM rebound is the extra REM sleep that follows REM deprivation."
+    },
+    {
+      "id": "APPSYCH-T1-010",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Sensation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Mia notices when 1 pound is added to a 10-pound bag but not when 1 pound is added to a 50-pound bag. This illustrates",
+      "options": [
+        "the absolute threshold",
+        "sensory adaptation",
+        "Weber's law",
+        "signal detection theory"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Weber's law says the just noticeable difference is a constant proportion of the original stimulus, so a heavier bag needs a larger added weight to be noticed. The absolute threshold is the weakest stimulus that can be detected at all."
+    },
+    {
+      "id": "APPSYCH-T1-011",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Sensation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After staring at a red square for a minute and then looking at a white wall, Luis sees a green square. Which theory best explains this?",
+      "options": [
+        "Signal detection theory",
+        "Opponent-process theory",
+        "Place theory",
+        "Trichromatic theory"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Opponent-process theory pairs red with green and blue with yellow; tiring the red response lets the green response dominate, producing a green afterimage. Trichromatic theory explains color detection by three cone types but not afterimages."
+    },
+    {
+      "id": "APPSYCH-T1-012",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Experimental design",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APPSYCH-T1-S1",
+      "stem": "Based on the study summary, what is the independent variable?",
+      "options": [
+        "Number of words recalled",
+        "Amount of time spent on the list",
+        "Hours of sleep the night before",
+        "Length of the word list"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The independent variable is what the researchers manipulated: 8 or 4 hours of sleep. The number of words recalled is the dependent variable, the outcome they measured."
+    },
+    {
+      "id": "APPSYCH-T1-013",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Experimental design",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APPSYCH-T1-S1",
+      "stem": "Which feature of the study most allows the researchers to conclude that sleep affected recall?",
+      "options": [
+        "Using college student volunteers",
+        "Random assignment to sleep groups",
+        "Giving everyone the same word list",
+        "Testing students in the morning"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Random assignment makes the two groups alike on average before the manipulation, so a later difference can be attributed to sleep. The same word list helps too, but without random assignment the groups could differ from the start."
+    },
+    {
+      "id": "APPSYCH-T1-014",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Statistics",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APPSYCH-T1-S1",
+      "stem": "What does p < .01 indicate about the difference in recall?",
+      "options": [
+        "It is a very large difference",
+        "It is unlikely to be due to chance",
+        "It applies to all adults",
+        "Every rested student recalled more"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A p-value below .01 means a difference this large would occur less than 1 percent of the time if sleep had no effect. Statistical significance says nothing about how large the effect is or whether every individual followed the pattern."
+    },
+    {
+      "id": "APPSYCH-T1-015",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research design",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A researcher measures aggression as the number of times a child hits a toy during a 10-minute play session. This is",
+      "options": [
+        "an operational definition",
+        "a hypothesis",
+        "a theory",
+        "a confounding variable"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "An operational definition states exactly how a variable will be measured, so others can replicate the study. A hypothesis is a testable prediction."
+    },
+    {
+      "id": "APPSYCH-T1-016",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Perception",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Reading a messy handwritten note, Ari easily fills in a smudged word from the rest of the sentence. This relies most on",
+      "options": [
+        "sensory adaptation",
+        "top-down processing",
+        "bottom-up processing",
+        "feature detection"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Top-down processing uses knowledge and context to interpret input, here the meaning of the sentence. Bottom-up processing would build the word only from the marks on the page."
+    },
+    {
+      "id": "APPSYCH-T1-017",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Perception",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "People see a complete circle in a drawing made of curved segments with small gaps between them. Which Gestalt principle applies?",
+      "options": [
+        "Figure-ground",
+        "Similarity",
+        "Closure",
+        "Proximity"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Closure is the tendency to fill in gaps to perceive a whole object. Proximity is grouping things that are near each other."
+    },
+    {
+      "id": "APPSYCH-T1-018",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Perception",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which depth cue depends on the slightly different images the two eyes receive?",
+      "options": [
+        "Linear perspective",
+        "Interposition",
+        "Relative size",
+        "Retinal disparity"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Retinal (binocular) disparity is a binocular cue: the closer an object, the more the two eyes' images differ. Linear perspective, interposition and relative size are monocular cues that work with one eye."
+    },
+    {
+      "id": "APPSYCH-T1-019",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Perception",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "While counting basketball passes in a video, many viewers fail to notice a person in a gorilla suit walking through the scene. This is",
+      "options": [
+        "the cocktail party effect",
+        "inattentional blindness",
+        "change blindness",
+        "sensory adaptation"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Inattentional blindness is failing to see a visible object because attention is elsewhere. Change blindness is failing to notice that something in a scene has changed."
+    },
+    {
+      "id": "APPSYCH-T1-020",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Thinking and decision-making",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "After seeing news coverage of a plane crash, Rosa judges flying to be more dangerous than driving. She is most likely using",
+      "options": [
+        "an algorithm",
+        "the availability heuristic",
+        "the representativeness heuristic",
+        "functional fixedness"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The availability heuristic judges likelihood by how easily examples come to mind, and vivid crash coverage is easy to recall. The representativeness heuristic judges by how well something matches a prototype."
+    },
+    {
+      "id": "APPSYCH-T1-021",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Thinking and decision-making",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Needing a hammer, Kai never considers using the heavy wrench in his toolbox because he thinks of it only as a wrench. This is",
+      "options": [
+        "functional fixedness",
+        "confirmation bias",
+        "belief perseverance",
+        "the sunk-cost fallacy"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Functional fixedness is seeing an object only in its usual function, which blocks a creative solution. Belief perseverance is clinging to a belief after the evidence for it is discredited."
+    },
+    {
+      "id": "APPSYCH-T1-022",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Encoding memories",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Repeating a phone number to yourself while you dial it uses which part of Baddeley's working memory model?",
+      "options": [
+        "Long-term store",
+        "Episodic buffer",
+        "Visuospatial sketchpad",
+        "Phonological loop"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The phonological loop holds and rehearses sounds and words for a short time. The visuospatial sketchpad holds images and spatial layouts."
+    },
+    {
+      "id": "APPSYCH-T1-023",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Retrieving memories",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Asked to recall a list of 20 words, students remember the first few and the last few best. This is",
+      "options": [
+        "the testing effect",
+        "the serial position effect",
+        "the levels-of-processing effect",
+        "the spacing effect"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The serial position effect combines the primacy effect (early items rehearsed into long-term memory) and the recency effect (late items still in short-term memory). The spacing effect is about distributing study over time."
+    },
+    {
+      "id": "APPSYCH-T1-024",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Forgetting",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After learning her new locker combination, Priya can no longer remember last year's combination. This is",
+      "options": [
+        "anterograde amnesia",
+        "retroactive interference",
+        "decay of the memory trace",
+        "proactive interference"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In retroactive interference, new learning disrupts recall of older information. Proactive interference runs the other way: old learning disrupts recall of new information."
+    },
+    {
+      "id": "APPSYCH-T1-025",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Forgetting",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Witnesses who heard the word \"smashed\" in a question about a car crash later reported broken glass that was never there. This illustrates",
+      "options": [
+        "proactive interference",
+        "the serial position effect",
+        "the misinformation effect",
+        "the testing effect"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The misinformation effect is misleading information after an event changing the memory of it. Proactive interference involves earlier learning, not a leading question asked later."
+    },
+    {
+      "id": "APPSYCH-T1-026",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Intelligence and achievement",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A 25-year-old solves a new kind of logic puzzle faster than her grandmother, though her grandmother knows far more words. The young woman shows higher",
+      "options": [
+        "crystallized intelligence",
+        "practical intelligence",
+        "emotional intelligence",
+        "fluid intelligence"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Fluid intelligence is reasoning quickly in new situations and tends to decline with age. Crystallized intelligence, accumulated knowledge such as vocabulary, tends to hold or grow."
+    },
+    {
+      "id": "APPSYCH-T1-027",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Correlation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APPSYCH-T1-S2",
+      "stem": "The correlation in the summary indicates",
+      "options": [
+        "no meaningful relationship",
+        "a moderate positive relationship",
+        "a moderate negative relationship",
+        "a perfect negative relationship"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The negative sign means that as one variable goes up the other tends to go down; a size of 0.42 is moderate. A perfect relationship would be -1.00."
+    },
+    {
+      "id": "APPSYCH-T1-028",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Correlation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APPSYCH-T1-S2",
+      "stem": "Which conclusion is best supported by the survey?",
+      "options": [
+        "Screen time causes students to sleep less",
+        "More screen time goes with less sleep",
+        "Sleeping less makes students use screens",
+        "Screen time explains all sleep differences"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A correlation shows that two variables are related, not which one causes the other. A correlation of -0.42 also leaves most of the variation in sleep unexplained."
+    },
+    {
+      "id": "APPSYCH-T1-029",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Correlation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APPSYCH-T1-S2",
+      "stem": "Which of the following could explain the correlation without either variable causing the other?",
+      "options": [
+        "The wording of the survey",
+        "The negative sign of r",
+        "The sample size of 400",
+        "Anxiety that raises both"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A third variable, such as anxiety, could both keep students on their phones and keep them awake, producing the correlation. The sample size and the sign of r describe the result rather than explain it."
+    },
+    {
+      "id": "APPSYCH-T1-030",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research design",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In a study of a new reading program, all the students in the program group have more experienced teachers than students in the comparison group. Teacher experience is",
+      "options": [
+        "the dependent variable",
+        "a confounding variable",
+        "an operational definition",
+        "the independent variable"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A confounding variable differs between groups along with the independent variable, so it offers another explanation for any difference in results. Random assignment of classes would help control it."
+    },
+    {
+      "id": "APPSYCH-T1-031",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Themes and methods in development",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A researcher tests the same group of children every two years from age 4 to age 20. This is a",
+      "options": [
+        "cross-sectional study",
+        "naturalistic observation",
+        "case study",
+        "longitudinal study"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A longitudinal study follows the same people over time. A cross-sectional study compares different age groups at one point in time."
+    },
+    {
+      "id": "APPSYCH-T1-032",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Physical development",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Heavy drinking during pregnancy can cause facial abnormalities and intellectual disability in the child. In this case alcohol acts as",
+      "options": [
+        "a hormone",
+        "an agonist",
+        "a teratogen",
+        "a neurotransmitter"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A teratogen is any agent, such as alcohol or some drugs and viruses, that can harm a developing embryo or fetus. Fetal alcohol syndrome is the pattern described."
+    },
+    {
+      "id": "APPSYCH-T1-033",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Cognitive development",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A 10-month-old searches under a blanket for a toy she just watched being hidden there. She has developed",
+      "options": [
+        "a theory of mind",
+        "egocentrism",
+        "object permanence",
+        "conservation"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Object permanence, the understanding that things continue to exist when out of sight, develops during Piaget's sensorimotor stage. Conservation comes much later, in the concrete operational stage."
+    },
+    {
+      "id": "APPSYCH-T1-034",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Cognitive development",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Two rows of seven buttons are lined up one-to-one, and a 4-year-old agrees they are the same. After one row is spread out, he says the longer row has more buttons. He lacks",
+      "options": [
+        "accommodation",
+        "object permanence",
+        "stranger anxiety",
+        "conservation"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Conservation is understanding that a quantity, here the number of buttons, stays the same when its arrangement changes. Preoperational children focus on one dimension, such as the length of the row, and miss it."
+    },
+    {
+      "id": "APPSYCH-T1-035",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Cognitive development",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A parent helps a child with a puzzle she cannot yet finish alone, then steps back gradually as she improves. In Vygotsky's terms, this is",
+      "options": [
+        "shaping",
+        "assimilation",
+        "imprinting",
+        "scaffolding"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Scaffolding is temporary support within the zone of proximal development, withdrawn as the learner becomes able to do the task alone. Assimilation is Piaget's term for fitting new experiences into existing schemas."
+    },
+    {
+      "id": "APPSYCH-T1-036",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Language development",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A 3-year-old says \"I goed to the park\" and \"I saw two mouses.\" These errors show",
+      "options": [
+        "overgeneralization",
+        "a critical period",
+        "telegraphic speech",
+        "babbling"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Overgeneralization is applying a grammar rule, such as adding -ed or -s, to words that are exceptions. It shows the child has learned the rule. Telegraphic speech is the two-word stage, such as \"want milk.\""
+    },
+    {
+      "id": "APPSYCH-T1-037",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Social-emotional development",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In the strange situation, a toddler is upset when his mother leaves and is quickly comforted when she returns. He shows",
+      "options": [
+        "anxious attachment",
+        "secure attachment",
+        "disorganized attachment",
+        "avoidant attachment"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Securely attached children use the caregiver as a safe base: distress at separation and easy comfort at reunion. An anxiously attached child stays upset and may resist comfort when the caregiver returns."
+    },
+    {
+      "id": "APPSYCH-T1-038",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Social-emotional development",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Parents who set clear rules, explain their reasons and listen to their teenager's views have which parenting style?",
+      "options": [
+        "Authoritarian",
+        "Uninvolved",
+        "Permissive",
+        "Authoritative"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Authoritative parents combine high demands with warmth and discussion. Authoritarian parents set strict rules and expect obedience without explanation."
+    },
+    {
+      "id": "APPSYCH-T1-039",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Classical conditioning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A dog drools at the sound of a can opener that has often come just before its dinner. The sound of the can opener is",
+      "options": [
+        "a conditioned stimulus",
+        "an unconditioned stimulus",
+        "an unconditioned response",
+        "a conditioned response"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The sound was neutral until it was paired with food, so it is now a conditioned stimulus. The food itself is the unconditioned stimulus, and the drooling to the sound is the conditioned response."
+    },
+    {
+      "id": "APPSYCH-T1-040",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Operant conditioning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Mark buckles his seat belt to stop the car's beeping, and he now buckles up sooner each time. This is",
+      "options": [
+        "positive reinforcement",
+        "positive punishment",
+        "negative punishment",
+        "negative reinforcement"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Removing an unpleasant stimulus (the beeping) strengthens the behavior, so this is negative reinforcement. Punishment would weaken the behavior, not strengthen it."
+    },
+    {
+      "id": "APPSYCH-T1-041",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Social and cognitive factors in learning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "After watching an adult hit an inflatable doll, children in Bandura's study were more likely to hit the doll themselves. This shows",
+      "options": [
+        "observational learning",
+        "insight learning",
+        "classical conditioning",
+        "latent learning"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Observational learning, or modeling, is learning by watching others. Latent learning is learning that is not shown until there is a reason to show it."
+    },
+    {
+      "id": "APPSYCH-T1-042",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Descriptive statistics",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APPSYCH-T1-S3",
+      "stem": "What is the median reaction time?",
+      "options": [
+        "265 ms",
+        "270 ms",
+        "275 ms",
+        "314 ms"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "With the seven times in order, the median is the fourth: 270 ms. The mean, about 314 ms, is pulled up by the 600 ms score."
+    },
+    {
+      "id": "APPSYCH-T1-043",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Descriptive statistics",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APPSYCH-T1-S3",
+      "stem": "Which statistic best describes a typical reaction time in this data set?",
+      "options": [
+        "The range, because it shows spread",
+        "The mean, because it uses every score",
+        "The median, because of the outlier",
+        "The mode, because it is most common"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The 600 ms score is an outlier that pulls the mean well above six of the seven scores, so the median is more typical. There is no mode here, since every score appears once, and the range describes spread, not a typical value."
+    },
+    {
+      "id": "APPSYCH-T1-044",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Descriptive statistics",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APPSYCH-T1-S3",
+      "stem": "The distribution of these reaction times is best described as",
+      "options": [
+        "normally distributed",
+        "positively skewed",
+        "negatively skewed",
+        "bimodal"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "One unusually high score creates a long tail to the right, which is a positive skew. In a positively skewed distribution the mean is higher than the median."
+    },
+    {
+      "id": "APPSYCH-T1-045",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research design",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Neither the participants nor the researchers who work with them know who received the real drug and who received a placebo. This is",
+      "options": [
+        "a single-blind procedure",
+        "a case study",
+        "a double-blind procedure",
+        "random sampling"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In a double-blind procedure neither participants nor the staff collecting data know the condition, which controls both placebo effects and experimenter bias. In a single-blind procedure only the participants are unaware."
+    },
+    {
+      "id": "APPSYCH-T1-046",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Attribution and person perception",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "When a stranger cuts ahead of him in line, Omar assumes she is rude, without considering that she may be rushing to an emergency. This is",
+      "options": [
+        "the self-serving bias",
+        "the actor-observer bias",
+        "the out-group homogeneity effect",
+        "the fundamental attribution error"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The fundamental attribution error is overestimating personality and underestimating the situation when explaining others' behavior. The actor-observer bias adds a contrast with how we explain our own behavior, which the item does not describe."
+    },
+    {
+      "id": "APPSYCH-T1-047",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Attribution and person perception",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Sara credits her A to hard work but blames her C on an unfair test. This is",
+      "options": [
+        "the self-serving bias",
+        "the fundamental attribution error",
+        "the actor-observer bias",
+        "hindsight bias"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The self-serving bias takes credit for successes and blames failures on outside causes, protecting self-esteem."
+    },
+    {
+      "id": "APPSYCH-T1-048",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Attitude formation and change",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Students given only a tiny reward for telling others that a dull task was fun later rated the task as more enjoyable than students given a large reward. This is best explained by",
+      "options": [
+        "cognitive dissonance theory",
+        "drive-reduction theory",
+        "the foot-in-the-door technique",
+        "the mere exposure effect"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "With a tiny reward there was no outside reason for the lie, so the tension between the act and the belief was reduced by changing the belief. A large reward justified the lie, so there was little dissonance."
+    },
+    {
+      "id": "APPSYCH-T1-049",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Attitude formation and change",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A homeowner who first agreed to sign a petition later agreed to put a large sign on his lawn. This shows",
+      "options": [
+        "the door-in-the-face technique",
+        "the foot-in-the-door technique",
+        "group polarization",
+        "the mere exposure effect"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The foot-in-the-door technique gets agreement to a small request first, making a larger one more likely. The door-in-the-face technique starts with a large request that is refused."
+    },
+    {
+      "id": "APPSYCH-T1-050",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychology of social situations",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In Asch's line-judgment study, participants often gave an obviously wrong answer after hearing the rest of the group give it. This mainly showed",
+      "options": [
+        "deindividuation",
+        "obedience",
+        "social loafing",
+        "conformity"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Asch showed conformity, changing behavior to match a group, here through normative social influence. Obedience, studied by Milgram, is following the orders of an authority."
+    },
+    {
+      "id": "APPSYCH-T1-051",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychology of social situations",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A person who collapses on a crowded sidewalk is less likely to get help than one who collapses on a quiet street. This is",
+      "options": [
+        "the bystander effect",
+        "social facilitation",
+        "the mere exposure effect",
+        "groupthink"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In the bystander effect, the presence of many others makes each person less likely to help, partly through diffusion of responsibility."
+    },
+    {
+      "id": "APPSYCH-T1-052",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychology of social situations",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In a group project graded only as a team, some members put in less effort than they would working alone. This is",
+      "options": [
+        "deindividuation",
+        "social loafing",
+        "group polarization",
+        "social facilitation"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Social loafing is reduced effort when individual contributions are not identifiable. Social facilitation is better performance on simple or practiced tasks in front of others."
+    },
+    {
+      "id": "APPSYCH-T1-053",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychodynamic and humanistic theories",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After being scolded by his boss, Jay goes home and snaps at his dog. Freud would call this",
+      "options": [
+        "regression",
+        "projection",
+        "displacement",
+        "sublimation"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Displacement redirects an impulse from a threatening target (the boss) to a safer one (the dog). Sublimation redirects an impulse into a socially valued activity."
+    },
+    {
+      "id": "APPSYCH-T1-054",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychodynamic and humanistic theories",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A counselor accepts and values a client fully, whatever the client says or does. Carl Rogers called this",
+      "options": [
+        "unconditional positive regard",
+        "self-actualization",
+        "an internal locus of control",
+        "reaction formation"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Unconditional positive regard is acceptance without conditions, one of Rogers' requirements for growth along with genuineness and empathy. Self-actualization is the fulfilling of one's potential, which that acceptance supports."
+    },
+    {
+      "id": "APPSYCH-T1-055",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Social-cognitive and trait theories",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Someone who is organized, careful and dependable would score high on which Big Five trait?",
+      "options": [
+        "Openness to experience",
+        "Agreeableness",
+        "Extraversion",
+        "Conscientiousness"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Conscientiousness covers organization, self-discipline and reliability. Agreeableness covers warmth, trust and cooperation."
+    },
+    {
+      "id": "APPSYCH-T1-056",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Motivation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A pianist plays best when moderately nervous and worse when very calm or very anxious. This is predicted by",
+      "options": [
+        "self-determination theory",
+        "instinct theory",
+        "the Yerkes-Dodson law",
+        "drive-reduction theory"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Yerkes-Dodson law says performance peaks at a moderate level of arousal, with the best level lower for difficult tasks. Drive-reduction theory is about reducing needs such as hunger."
+    },
+    {
+      "id": "APPSYCH-T1-057",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research ethics",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Before a study, participants learn what they will be asked to do and that they may quit at any time, and then agree to take part. This is",
+      "options": [
+        "confidentiality",
+        "deception",
+        "informed consent",
+        "debriefing"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Informed consent is agreeing to participate after being told enough to decide. Debriefing comes after the study, when the researcher explains its purpose."
+    },
+    {
+      "id": "APPSYCH-T1-058",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research ethics",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "After a study that misled participants about its purpose, the researcher explains the true purpose and why deception was necessary. This is",
+      "options": [
+        "debriefing",
+        "replication",
+        "informed consent",
+        "random assignment"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Debriefing is explaining the study, including any deception, once participation is over. Ethics guidelines require it whenever deception is used."
+    },
+    {
+      "id": "APPSYCH-T1-059",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research methods",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A psychologist studies one patient with a rare brain injury in great depth over several years. A key limitation of this method is that",
+      "options": [
+        "it cannot describe behavior",
+        "it uses too many participants",
+        "it needs random assignment",
+        "results may not generalize"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A case study gives rich detail about one person, but that person may be unusual, so the findings may not apply to others. Case studies do not use random assignment."
+    },
+    {
+      "id": "APPSYCH-T1-060",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Sampling",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A researcher surveys members of a gym to estimate how often adults in the city exercise. The main problem is that",
+      "options": [
+        "there is no placebo group",
+        "the study lacks an independent variable",
+        "the questions are too short",
+        "the sample is not representative"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Gym members exercise more than typical adults, so the sample is biased. A survey does not need an independent variable or a placebo group."
+    },
+    {
+      "id": "APPSYCH-T1-061",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Health psychology",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In Selye's general adaptation syndrome, prolonged stress that drains the body's resources leads to which phase?",
+      "options": [
+        "Recovery",
+        "Exhaustion",
+        "Resistance",
+        "Alarm"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The general adaptation syndrome runs alarm, resistance, then exhaustion, when reserves run low and the risk of illness rises. In the resistance phase the body is still coping with the stressor."
+    },
+    {
+      "id": "APPSYCH-T1-062",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Health psychology",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Stressed about a failing grade, Jamal makes a study schedule and meets with his teacher. This is",
+      "options": [
+        "tend-and-befriend",
+        "problem-focused coping",
+        "emotion-focused coping",
+        "a defense mechanism"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Problem-focused coping tackles the stressor directly. Emotion-focused coping manages the feelings it causes, for example by seeking comfort or distraction."
+    },
+    {
+      "id": "APPSYCH-T1-063",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Health psychology",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "During months of caring for a sick parent while working full time, Dana catches colds far more often than usual. A health psychologist would most likely point to",
+      "options": [
+        "a tend-and-befriend response to stress",
+        "eustress from her new responsibilities",
+        "stress weakening her immune system",
+        "posttraumatic growth from the strain"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Long-lasting stress is linked to physical problems such as immune suppression, hypertension and headaches, so frequent illness fits chronic stress. Eustress is stress felt as motivating, and posttraumatic growth is positive change after a struggle."
+    },
+    {
+      "id": "APPSYCH-T1-064",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Explaining psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A person with a genetic vulnerability to depression develops it only after losing a job and a parent in the same year. This fits",
+      "options": [
+        "the humanistic model",
+        "the diathesis-stress model",
+        "the medical model",
+        "the learned helplessness model"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The diathesis-stress model says a predisposition (diathesis) produces a disorder when combined with enough environmental stress."
+    },
+    {
+      "id": "APPSYCH-T1-065",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Hearing voices that other people do not hear is which kind of symptom of schizophrenia?",
+      "options": [
+        "A positive symptom",
+        "A dissociative symptom",
+        "A negative symptom",
+        "A manic symptom"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Positive symptoms are added experiences or behaviors, such as hallucinations and delusions. Negative symptoms are reductions, such as flat affect or little speech."
+    },
+    {
+      "id": "APPSYCH-T1-066",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Mei has repeated, unexpected episodes of racing heart and terror, and she now worries constantly about having another. This best fits",
+      "options": [
+        "panic disorder",
+        "specific phobia",
+        "obsessive-compulsive disorder",
+        "generalized anxiety disorder"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Panic disorder is recurrent unexpected panic attacks plus persistent worry about future attacks. A specific phobia is fear tied to one object or situation."
+    },
+    {
+      "id": "APPSYCH-T1-067",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Will checks a dozen times that the stove is off before he leaves, to relieve intense anxiety that it could start a fire. This best fits",
+      "options": [
+        "generalized anxiety disorder",
+        "panic disorder",
+        "obsessive-compulsive disorder",
+        "posttraumatic stress disorder"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Intrusive anxious thoughts (obsessions) relieved by repeated acts (compulsions) define obsessive-compulsive disorder. Generalized anxiety is broad worry without ritual behaviors."
+    },
+    {
+      "id": "APPSYCH-T1-068",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Periods of elevated mood, little need for sleep and racing thoughts alternate with periods of deep depression. This best fits",
+      "options": [
+        "major depressive disorder",
+        "schizophrenia",
+        "bipolar disorder",
+        "borderline personality disorder"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Periods of mania alternating with periods of depression are the pattern of bipolar disorder; in bipolar I the elevated periods are full manic episodes. Major depressive disorder has depressive episodes with no mania."
+    },
+    {
+      "id": "APPSYCH-T1-069",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Treatment of psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A therapist teaches a client to relax, then has her imagine a series of spider scenes from least to most frightening while staying relaxed. This is",
+      "options": [
+        "systematic desensitization",
+        "aversive conditioning",
+        "a token economy",
+        "free association"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Systematic desensitization pairs relaxation with a graded hierarchy of feared situations, a form of counterconditioning. Aversive conditioning pairs an unwanted behavior with something unpleasant."
+    },
+    {
+      "id": "APPSYCH-T1-070",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Treatment of psychological disorders",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A therapist helps a client notice and challenge thoughts such as \"I fail at everything.\" This approach is",
+      "options": [
+        "client-centered therapy",
+        "psychodynamic therapy",
+        "cognitive therapy",
+        "aversive conditioning"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Cognitive therapy, such as Beck's, targets distorted automatic thoughts. Client-centered therapy offers empathy and acceptance rather than challenging thoughts."
+    },
+    {
+      "id": "APPSYCH-T1-071",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Treatment of psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which class of medication is most often prescribed for major depressive disorder and works by increasing available serotonin?",
+      "options": [
+        "Mood stabilizers",
+        "SSRIs",
+        "Antipsychotics",
+        "Benzodiazepines"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Selective serotonin reuptake inhibitors block the reuptake of serotonin. Benzodiazepines are anti-anxiety drugs that boost GABA."
+    },
+    {
+      "id": "APPSYCH-T1-072",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Descriptive statistics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "On a normal curve, about what percentage of scores fall within one standard deviation of the mean?",
+      "options": [
+        "50%",
+        "68%",
+        "95%",
+        "99.7%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "About 68 percent of scores fall within one standard deviation of the mean, about 95 percent within two and about 99.7 percent within three."
+    },
+    {
+      "id": "APPSYCH-T1-073",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research methods",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "To study play, a researcher watches children at a public park and records what they do without interacting with them. This method is",
+      "options": [
+        "a structured interview",
+        "a longitudinal survey",
+        "a controlled laboratory study",
+        "naturalistic observation"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Naturalistic observation records behavior in its natural setting without manipulating anything, so it describes behavior but cannot show cause and effect."
+    },
+    {
+      "id": "APPSYCH-T1-074",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Correlation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which correlation coefficient shows the strongest relationship between two variables?",
+      "options": [
+        "-0.85",
+        "-0.30",
+        "0.10",
+        "0.60"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Strength depends on how close the coefficient is to 1 or -1, whatever its sign. At -0.85, the negative correlation is the strongest of the four."
+    },
+    {
+      "id": "APPSYCH-T1-075",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research design",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Other laboratories repeat a study with new participants and get the same result. This increases confidence because the finding has been",
+      "options": [
+        "debriefed",
+        "randomized",
+        "replicated",
+        "operationalized"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Replication is repeating a study, often with different participants and settings, to see whether the result holds. A finding that replicates is more likely to be real."
+    },
+    {
+      "id": "APPSYCH-T2-001",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Heredity and environment",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A psychologist argues that fear of snakes is common because ancestors who avoided snakes were more likely to survive and reproduce. This reasoning reflects",
+      "options": [
+        "evolutionary psychology",
+        "social-cultural psychology",
+        "psychodynamic theory",
+        "behavioral psychology"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Evolutionary psychology explains behavior by natural selection: traits that helped ancestors survive and reproduce were passed on. A behaviorist would look for the fear in conditioning during the person's own life."
+    },
+    {
+      "id": "APPSYCH-T2-002",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The nervous system",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "After a frightening near-miss on the highway, a driver's heart rate slows and breathing returns to normal. Which division of the nervous system is calming the body?",
+      "options": [
+        "Somatic nervous system",
+        "Central nervous system",
+        "Sympathetic nervous system",
+        "Parasympathetic nervous system"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The parasympathetic division conserves energy and returns the body to rest after arousal. The sympathetic division produced the racing heart in the first place."
+    },
+    {
+      "id": "APPSYCH-T2-003",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The neuron and neural firing",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Multiple sclerosis damages the fatty coating around many axons. Which effect would most likely follow?",
+      "options": [
+        "Slower transmission of neural signals",
+        "Faster firing of action potentials",
+        "Shorter refractory periods",
+        "More neurotransmitter at each synapse"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The myelin sheath insulates axons and speeds signals as they jump between gaps in the sheath. Losing it slows or disrupts transmission, which is why multiple sclerosis affects movement and sensation."
+    },
+    {
+      "id": "APPSYCH-T2-004",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Drugs and neural firing",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Many antidepressants block the sending neuron from reabsorbing serotonin. As a result, more serotonin stays",
+      "options": [
+        "in the bloodstream",
+        "in the myelin sheath",
+        "in the synaptic gap",
+        "inside the vesicles"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Reuptake is the sending neuron reabsorbing a neurotransmitter from the synapse. Blocking it leaves more serotonin in the synaptic gap to act on receptors."
+    },
+    {
+      "id": "APPSYCH-T2-005",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The neuron and neural firing",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A runner feels little pain near the end of a marathon despite a badly blistered foot. Which neurotransmitter most likely explains this?",
+      "options": [
+        "Endorphins",
+        "Dopamine",
+        "Acetylcholine",
+        "Glutamate"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Endorphins are the body's natural opioids, released during stress and exertion to reduce pain. Acetylcholine mainly triggers muscle contraction and supports memory."
+    },
+    {
+      "id": "APPSYCH-T2-006",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The brain",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After damage to a network of neurons that runs through the brainstem, a patient cannot be roused to a state of alertness, though his breathing and heartbeat continue. Which structure was most likely damaged?",
+      "options": [
+        "Cerebellum",
+        "Amygdala",
+        "Reticular activating system",
+        "Corpus callosum"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The reticular activating system, a network in the brainstem, controls arousal and alertness, so damage to it can leave a person unable to wake. The cerebellum coordinates movement and balance, and the medulla, which keeps breathing and heartbeat going, is evidently still working."
+    },
+    {
+      "id": "APPSYCH-T2-007",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The endocrine system",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which structure links the nervous system to the endocrine system by directing the pituitary gland?",
+      "options": [
+        "Medulla",
+        "Thalamus",
+        "Hypothalamus",
+        "Hippocampus"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The hypothalamus sends signals and hormones that direct the pituitary, the endocrine system's master gland. The thalamus relays sensory information to the cortex."
+    },
+    {
+      "id": "APPSYCH-T2-008",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The brain",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After an injury takes away the use of one finger, a violinist's cortex devotes more area to her remaining fingers over several months. This illustrates",
+      "options": [
+        "the all-or-none principle",
+        "myelination",
+        "lateralization",
+        "neuroplasticity"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Neuroplasticity is the brain's ability to reorganize after injury or experience, here by reassigning cortical area to the fingers still in use. Lateralization is the specialization of the two hemispheres."
+    },
+    {
+      "id": "APPSYCH-T2-009",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Drugs and neural firing",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Alcohol slows reaction time and reduces inhibition. Which category of psychoactive drug does it belong to?",
+      "options": [
+        "Depressants",
+        "Stimulants",
+        "Opioids",
+        "Hallucinogens"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Alcohol is a depressant: it slows nervous system activity, partly by increasing the effect of the inhibitory neurotransmitter GABA. Stimulants such as caffeine speed activity up."
+    },
+    {
+      "id": "APPSYCH-T2-010",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Sleep",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Jordan falls suddenly into REM sleep during the day, sometimes while laughing at a joke. Which sleep disorder fits best?",
+      "options": [
+        "Sleep apnea",
+        "Insomnia",
+        "Sleepwalking",
+        "Narcolepsy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Narcolepsy brings sudden attacks of sleep, often straight into REM, and can be triggered by strong emotion. Sleep apnea is repeated pauses in breathing during sleep."
+    },
+    {
+      "id": "APPSYCH-T2-011",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Sensation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which theory explains how we hear high-pitched sounds by the location on the basilar membrane that vibrates most?",
+      "options": [
+        "Volley theory",
+        "Place theory",
+        "Frequency theory",
+        "Opponent-process theory"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Place theory links pitch to where the basilar membrane in the cochlea vibrates most, which works best for high pitches. Frequency theory links pitch to how fast the whole membrane and auditory nerve fire, which fits low pitches."
+    },
+    {
+      "id": "APPSYCH-T2-012",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Experimental design",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APPSYCH-T2-S1",
+      "stem": "Based on the study summary, what is the dependent variable?",
+      "options": [
+        "The length of the reading passage",
+        "The type of background music",
+        "The grade level of the students",
+        "Comprehension question scores"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The dependent variable is the outcome measured: the comprehension score. The type of background music is the independent variable that the researchers manipulated."
+    },
+    {
+      "id": "APPSYCH-T2-013",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Experimental design",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APPSYCH-T2-S1",
+      "stem": "Which group serves as the control group in this study?",
+      "options": [
+        "The silence group",
+        "The instrumental music group",
+        "The music with lyrics group",
+        "All 90 ninth graders"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The silence group receives no music, the treatment being tested, so it is the baseline the two music groups are compared with."
+    },
+    {
+      "id": "APPSYCH-T2-014",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Data interpretation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APPSYCH-T2-S1",
+      "stem": "Which conclusion do the results support?",
+      "options": [
+        "These results hold for readers of all ages",
+        "Music with lyrics lowered comprehension",
+        "Instrumental music raised scores",
+        "All music lowered comprehension"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Only the lyrics group differed significantly from silence. The small drop with instrumental music was not significant, and a sample of ninth graders does not license conclusions about readers of every age."
+    },
+    {
+      "id": "APPSYCH-T2-015",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research design",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The statement \"Students who eat breakfast will score higher on morning quizzes than students who skip breakfast\" is",
+      "options": [
+        "an operational definition",
+        "a hypothesis",
+        "a conclusion",
+        "a theory"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A hypothesis is a specific, testable prediction. A theory is a broader explanation that organizes many findings and generates hypotheses."
+    },
+    {
+      "id": "APPSYCH-T2-016",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Perception",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Told that a blurry image shows a duck, one group of students sees a duck; told it shows a rabbit, another group sees a rabbit. This illustrates",
+      "options": [
+        "the closure principle",
+        "perceptual set",
+        "perceptual constancy",
+        "retinal disparity"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A perceptual set is a readiness to perceive something in a particular way, created here by what the students were told. Perceptual constancy is seeing objects as unchanging despite changing input."
+    },
+    {
+      "id": "APPSYCH-T2-017",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Perception",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A door that is swinging open still looks rectangular even though its image on the retina becomes a trapezoid. This is",
+      "options": [
+        "size constancy",
+        "shape constancy",
+        "retinal disparity",
+        "figure-ground"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Shape constancy is perceiving an object's shape as stable while its retinal image changes. Size constancy is perceiving an object's size as stable as its distance changes."
+    },
+    {
+      "id": "APPSYCH-T2-018",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Perception",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "At a noisy party, Dev hears his name spoken across the room even though he was focused on his own conversation. This shows",
+      "options": [
+        "selective attention",
+        "change blindness",
+        "sensory adaptation",
+        "perceptual set"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Selective attention focuses on one input while still monitoring others for important cues, such as one's own name: the cocktail party effect. Sensory adaptation is reduced sensitivity to an unchanging stimulus."
+    },
+    {
+      "id": "APPSYCH-T2-019",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Thinking and decision-making",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Told that Tom is quiet and loves poetry, people guess he is a librarian rather than a salesperson, ignoring that salespeople are far more common. This reflects",
+      "options": [
+        "the availability heuristic",
+        "belief perseverance",
+        "the framing effect",
+        "the representativeness heuristic"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The representativeness heuristic judges by how well someone fits a prototype and ignores base rates. The availability heuristic judges by how easily examples come to mind."
+    },
+    {
+      "id": "APPSYCH-T2-020",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Thinking and decision-making",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Patients are more willing to have a surgery described as having a 90 percent survival rate than one with a 10 percent death rate. This shows",
+      "options": [
+        "mental set",
+        "confirmation bias",
+        "the gambler's fallacy",
+        "the framing effect"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The framing effect is the way the presentation of identical information changes decisions. The gambler's fallacy is believing past chance events change the odds of the next one."
+    },
+    {
+      "id": "APPSYCH-T2-021",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Thinking and decision-making",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A student who believes a supplement improves her memory remembers the days it seemed to work and overlooks the days it did not. This is",
+      "options": [
+        "the framing effect",
+        "hindsight bias",
+        "functional fixedness",
+        "confirmation bias"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Confirmation bias is seeking or remembering evidence that supports what one already believes. Hindsight bias is believing, after the fact, that one knew the outcome all along."
+    },
+    {
+      "id": "APPSYCH-T2-022",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Encoding memories",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Remembering 1-4-9-2-1-7-7-6 as the years 1492 and 1776 is an example of",
+      "options": [
+        "chunking",
+        "the method of loci",
+        "maintenance rehearsal",
+        "the spacing effect"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Chunking groups items into larger meaningful units, so eight digits become two years. The method of loci links items to places along a familiar route."
+    },
+    {
+      "id": "APPSYCH-T2-023",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Storing memories",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Two students each study for six hours. Lena studies one hour a day for six days; Max studies six hours the night before. Lena will likely remember more because of",
+      "options": [
+        "state-dependent memory",
+        "the spacing effect",
+        "the serial position effect",
+        "the primacy effect"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The spacing effect is better long-term retention from study spread out over time than from cramming. The serial position effect concerns an item's place in a list."
+    },
+    {
+      "id": "APPSYCH-T2-024",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Retrieving memories",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Scuba divers recall words learned underwater better when tested underwater than when tested on land. This is",
+      "options": [
+        "state-dependent memory",
+        "retrieval-induced forgetting",
+        "context-dependent memory",
+        "mood-congruent memory"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Context-dependent memory is better recall in the same external setting as learning. State-dependent memory depends on the person's internal state, such as being calm or intoxicated."
+    },
+    {
+      "id": "APPSYCH-T2-025",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Retrieving memories",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "During a week when she feels sad, Ella mostly recalls unhappy events from her past. This is",
+      "options": [
+        "retroactive interference",
+        "flashbulb memory",
+        "context-dependent memory",
+        "mood-congruent memory"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Mood-congruent memory is the tendency to recall experiences that match one's current mood. Context-dependent memory depends on the external setting, not on mood."
+    },
+    {
+      "id": "APPSYCH-T2-026",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Intelligence and achievement",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A new intelligence test gives people nearly the same score every time they retake it, but it predicts later school grades poorly. The test is",
+      "options": [
+        "standardized and valid",
+        "valid but not reliable",
+        "reliable but not valid",
+        "neither reliable nor valid"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Consistent scores on retesting show reliability; failing to predict what it should shows weak predictive validity. A test can be reliable without being valid, but not valid without being reliable."
+    },
+    {
+      "id": "APPSYCH-T2-027",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Descriptive statistics",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APPSYCH-T2-S2",
+      "stem": "What is the mode of the quiz scores?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The mode is the most frequent score. Five students scored 7, more than any other score."
+    },
+    {
+      "id": "APPSYCH-T2-028",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Descriptive statistics",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APPSYCH-T2-S2",
+      "stem": "What is the median quiz score?",
+      "options": [
+        "7",
+        "7.5",
+        "8",
+        "9"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "With 15 scores in order, the median is the 8th. The first two are 6, the next five are 7 (3rd to 7th), and the 8th score is 8."
+    },
+    {
+      "id": "APPSYCH-T2-029",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Descriptive statistics",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APPSYCH-T2-S2",
+      "stem": "What is the range of the quiz scores?",
+      "options": [
+        "2",
+        "4",
+        "5",
+        "10"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The range is the highest score minus the lowest: 10 - 6 = 4."
+    },
+    {
+      "id": "APPSYCH-T2-030",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Sampling",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Choosing participants so that every person in a population has an equal chance of being selected is",
+      "options": [
+        "random sampling",
+        "counterbalancing",
+        "a convenience sample",
+        "random assignment"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Random sampling selects a representative sample, which supports generalizing. Random assignment places participants who are already in the study into conditions."
+    },
+    {
+      "id": "APPSYCH-T2-031",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Themes and methods in development",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "To study memory and age, a researcher tests groups of 20-, 40- and 60-year-olds in the same month. A weakness of this design is",
+      "options": [
+        "practice effects from retesting",
+        "the years needed to finish",
+        "participants dropping out",
+        "differences between generations"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A cross-sectional study compares people born in different eras, so cohort differences such as schooling can be mistaken for age effects. Dropout and practice effects are problems of longitudinal studies."
+    },
+    {
+      "id": "APPSYCH-T2-032",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Physical development",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The first menstrual period, a milestone of puberty, is called",
+      "options": [
+        "menarche",
+        "spermarche",
+        "maturation",
+        "menopause"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Menarche is the first menstrual period. Spermarche is the first ejaculation, and menopause is the end of menstruation in midlife."
+    },
+    {
+      "id": "APPSYCH-T2-033",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Cognitive development",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A 3-year-old covers her own eyes and believes that others can no longer see her. Piaget would say she shows",
+      "options": [
+        "abstract reasoning",
+        "egocentrism",
+        "conservation",
+        "object permanence"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Egocentrism, in Piaget's preoperational stage, is difficulty taking another person's point of view. The child assumes others see what she sees."
+    },
+    {
+      "id": "APPSYCH-T2-034",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Cognitive development",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A 15-year-old can reason about hypothetical situations and test ideas systematically. Piaget would place her in which stage?",
+      "options": [
+        "Formal operational",
+        "Preoperational",
+        "Sensorimotor",
+        "Concrete operational"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The formal operational stage, from about age 12, adds abstract and hypothetical reasoning. Concrete operational thinkers reason logically about concrete events only."
+    },
+    {
+      "id": "APPSYCH-T2-035",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Cognitive development",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A toddler who called every man she met \"Daddy\" learns that only her father is Daddy and that other men are a different category. Piaget would call this change",
+      "options": [
+        "habituation",
+        "assimilation",
+        "accommodation",
+        "conservation"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Accommodation is changing a schema, or making a new one, to fit new information. Calling every man \"Daddy\" in the first place, fitting new people into the existing schema, would be assimilation."
+    },
+    {
+      "id": "APPSYCH-T2-036",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Cognitive development",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A child understands that her friend will look for a toy where the friend last saw it, not where it was moved while the friend was out of the room. The child has",
+      "options": [
+        "a gender schema",
+        "conservation",
+        "a theory of mind",
+        "object permanence"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A theory of mind is understanding that others have their own beliefs, which can be false. Object permanence concerns whether objects exist out of sight, not what other people believe."
+    },
+    {
+      "id": "APPSYCH-T2-037",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Social-emotional development",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Harlow's infant monkeys clung to a soft cloth mother rather than to a wire mother that gave milk. This showed the importance of",
+      "options": [
+        "food rewards",
+        "imprinting",
+        "contact comfort",
+        "stranger anxiety"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The monkeys sought the cloth mother for comfort, especially when frightened, showing that attachment rests on contact comfort more than on feeding."
+    },
+    {
+      "id": "APPSYCH-T2-038",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Social-emotional development",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Erikson, the main challenge of adolescence is",
+      "options": [
+        "generativity versus stagnation",
+        "industry versus inferiority",
+        "trust versus mistrust",
+        "identity versus role confusion"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Erikson saw adolescence as the time for forming a sense of self. Intimacy versus isolation follows in young adulthood, and industry versus inferiority comes in the school years."
+    },
+    {
+      "id": "APPSYCH-T2-039",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Classical conditioning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After a conditioned response has been extinguished, it reappears in weaker form following a rest period. This is",
+      "options": [
+        "spontaneous recovery",
+        "acquisition",
+        "stimulus generalization",
+        "higher-order conditioning"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Spontaneous recovery is the return of an extinguished conditioned response after a pause. It shows extinction suppresses the response rather than erasing it."
+    },
+    {
+      "id": "APPSYCH-T2-040",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Operant conditioning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Slot machines pay out after an unpredictable number of plays. This schedule of reinforcement is",
+      "options": [
+        "fixed-interval",
+        "variable-interval",
+        "fixed-ratio",
+        "variable-ratio"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Reinforcement after an unpredictable number of responses is variable-ratio. It produces high, steady responding that is hard to extinguish."
+    },
+    {
+      "id": "APPSYCH-T2-041",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Social and cognitive factors in learning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Rats that explored a maze without any reward ran it quickly once food was placed at the end. Tolman said they had formed a cognitive map, an example of",
+      "options": [
+        "classical conditioning",
+        "shaping",
+        "latent learning",
+        "observational learning"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Latent learning happens without reinforcement and shows up only when there is a reason to use it. Shaping requires reinforcing closer and closer approximations."
+    },
+    {
+      "id": "APPSYCH-T2-042",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research ethics",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APPSYCH-T2-S3",
+      "stem": "Which part of the study described involves deception?",
+      "options": [
+        "Asking people to take part",
+        "Giving participants false scores",
+        "Measuring persistence on a puzzle",
+        "Timing the second puzzle"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Telling participants they scored far below others, when the scores are made up, misleads them. Deception is allowed only when it is justified and followed by debriefing."
+    },
+    {
+      "id": "APPSYCH-T2-043",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research ethics",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APPSYCH-T2-S3",
+      "stem": "After the study, what should the researcher do to meet ethical guidelines?",
+      "options": [
+        "Reveal that the scores were false",
+        "Pay participants who gave up early",
+        "Keep the false scores a secret",
+        "Repeat the study with new people"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Debriefing must explain the deception and the study's purpose so participants do not leave believing they failed. Keeping the deception secret would leave possible harm in place."
+    },
+    {
+      "id": "APPSYCH-T2-044",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research ethics",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APPSYCH-T2-S3",
+      "stem": "Before the study begins, who should review the plan to make sure participants are protected?",
+      "options": [
+        "A journal editor",
+        "The participants' families",
+        "An institutional review board",
+        "The researcher's own assistants"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An institutional review board (IRB) reviews research with human participants and must approve a study before it starts, weighing risks such as deception against benefits."
+    },
+    {
+      "id": "APPSYCH-T2-045",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research design",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A participant feels better after taking a sugar pill she believes is medicine. This is",
+      "options": [
+        "social desirability bias",
+        "a placebo effect",
+        "a third variable",
+        "experimenter bias"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A placebo effect is improvement caused by the expectation of treatment rather than the treatment itself. Experimenter bias comes from the researcher's expectations, not the participant's."
+    },
+    {
+      "id": "APPSYCH-T2-046",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Attribution and person perception",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "When Lia trips, she blames the uneven sidewalk; when a classmate trips, she decides he is clumsy. This is",
+      "options": [
+        "the actor-observer bias",
+        "belief perseverance",
+        "the self-serving bias",
+        "the just-world phenomenon"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The actor-observer bias explains our own actions by the situation and others' by their dispositions. The self-serving bias is about successes and failures, not this contrast between self and others."
+    },
+    {
+      "id": "APPSYCH-T2-047",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Attribution and person perception",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A student believes that her grades depend on her own effort, not on luck or the teacher. She has",
+      "options": [
+        "an internal locus of control",
+        "learned helplessness",
+        "an external locus of control",
+        "a pessimistic explanatory style"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "An internal locus of control is the belief that one controls one's own outcomes. An external locus places control in luck, fate or other people."
+    },
+    {
+      "id": "APPSYCH-T2-048",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Attitude formation and change",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Students rated a classmate who came to more of their lectures as more likable, though they had never spoken to her. This is",
+      "options": [
+        "social facilitation",
+        "the bystander effect",
+        "the mere exposure effect",
+        "in-group bias"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The mere exposure effect is liking something more simply because it is familiar. The students never interacted with her, so only exposure differed."
+    },
+    {
+      "id": "APPSYCH-T2-049",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Attitude formation and change",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A car ad that lists crash-test results and fuel data is relying mainly on",
+      "options": [
+        "normative social influence",
+        "the central route to persuasion",
+        "the door-in-the-face technique",
+        "the peripheral route to persuasion"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The central route persuades with evidence and arguments for people who think carefully. The peripheral route relies on cues such as attractive spokespeople or catchy music."
+    },
+    {
+      "id": "APPSYCH-T2-050",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychology of social situations",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In Milgram's studies, most participants kept giving what they believed were painful shocks when an experimenter told them to. This showed the power of",
+      "options": [
+        "group polarization",
+        "obedience to authority",
+        "social facilitation",
+        "conformity to a peer group"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Milgram studied obedience: following direct orders from an authority figure. Conformity to peers is what Asch studied."
+    },
+    {
+      "id": "APPSYCH-T2-051",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychology of social situations",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A planning committee ignores warning signs and silences doubts to keep everyone in agreement. This is",
+      "options": [
+        "group polarization",
+        "groupthink",
+        "social loafing",
+        "deindividuation"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Groupthink is the drive for harmony overriding realistic judgment. Group polarization is a group's views becoming more extreme after discussion."
+    },
+    {
+      "id": "APPSYCH-T2-052",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychology of social situations",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "An expert cyclist rides faster when others are watching. This is",
+      "options": [
+        "the bystander effect",
+        "social loafing",
+        "deindividuation",
+        "social facilitation"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Social facilitation is improved performance on simple or well-practiced tasks in front of others. On new or difficult tasks, an audience tends to hurt performance."
+    },
+    {
+      "id": "APPSYCH-T2-053",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychodynamic and humanistic theories",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A man who feels strong attraction to a coworker treats her coldly and rudely. Freud would call this",
+      "options": [
+        "rationalization",
+        "sublimation",
+        "projection",
+        "reaction formation"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Reaction formation turns an unacceptable impulse into its opposite. Projection attributes one's own impulse to someone else."
+    },
+    {
+      "id": "APPSYCH-T2-054",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Social-cognitive and trait theories",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Bandura's term for a person's belief that he or she can succeed at a specific task is",
+      "options": [
+        "self-actualization",
+        "self-esteem",
+        "self-efficacy",
+        "self-concept"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Self-efficacy is confidence about a particular task. Self-esteem is a general feeling of self-worth."
+    },
+    {
+      "id": "APPSYCH-T2-055",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Emotion",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In Kenji's culture, adults are expected not to show sadness in front of coworkers, so he smiles politely at work the day after a loss. This best illustrates",
+      "options": [
+        "display rules",
+        "the facial-feedback hypothesis",
+        "the broaden-and-build theory",
+        "the mere exposure effect"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Display rules are a culture's norms for when and how emotions may be shown, and they can differ by culture, gender and age. The facial-feedback hypothesis is the idea that facial expressions themselves influence the emotion felt."
+    },
+    {
+      "id": "APPSYCH-T2-056",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Motivation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Children who loved drawing drew less after they began getting rewards for it. This illustrates",
+      "options": [
+        "the Yerkes-Dodson law",
+        "drive-reduction theory",
+        "the overjustification effect",
+        "the optimal arousal principle"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The overjustification effect is an external reward undermining intrinsic motivation for an activity people already enjoyed."
+    },
+    {
+      "id": "APPSYCH-T2-057",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research design",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A researcher who expects a drug to work rates the treated participants as calmer. This bias could best be reduced by",
+      "options": [
+        "a case study design",
+        "a correlational design",
+        "a larger sample",
+        "a double-blind design"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "If the person rating calmness does not know who got the drug, the researcher's expectations cannot shape the ratings. A larger sample does not remove a bias in the ratings."
+    },
+    {
+      "id": "APPSYCH-T2-058",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research methods",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "When asked how often they recycle, many survey respondents say they recycle more than they really do. This is",
+      "options": [
+        "the placebo effect",
+        "the experimenter bias effect",
+        "social desirability bias",
+        "sampling bias"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Social desirability bias is answering in ways that look good to others, a known weakness of self-report surveys. Sampling bias concerns who is surveyed, not how they answer."
+    },
+    {
+      "id": "APPSYCH-T2-059",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research methods",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A researcher compares the anxiety levels of only children with those of children who have siblings. Because having siblings cannot be assigned, the study is",
+      "options": [
+        "a case study",
+        "a quasi-experiment",
+        "a meta-analysis",
+        "a true experiment"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A quasi-experiment compares groups that already differ instead of randomly assigning people to conditions, so it cannot firmly establish cause and effect."
+    },
+    {
+      "id": "APPSYCH-T2-060",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research methods",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A researcher combines the results of 40 studies on exercise and mood to estimate the overall effect. This is",
+      "options": [
+        "a case study",
+        "a cross-sectional study",
+        "a meta-analysis",
+        "a replication"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A meta-analysis statistically combines the results of many studies on the same question. A replication repeats a single study."
+    },
+    {
+      "id": "APPSYCH-T2-061",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Health psychology",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The positive stress of training for a race you are excited about is called",
+      "options": [
+        "distress",
+        "burnout",
+        "exhaustion",
+        "eustress"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Eustress is stress experienced as a motivating challenge. Distress is stress experienced as harmful or overwhelming."
+    },
+    {
+      "id": "APPSYCH-T2-062",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Health psychology",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Under stress, some people respond by caring for others and seeking social support rather than fighting or fleeing. This is",
+      "options": [
+        "learned helplessness",
+        "fight-or-flight",
+        "displacement",
+        "tend-and-befriend"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The tend-and-befriend response, described especially in women, involves protecting others and turning to social bonds under stress."
+    },
+    {
+      "id": "APPSYCH-T2-063",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Positive psychology",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Feeling personal strength and deeper relationships after surviving a serious illness is called",
+      "options": [
+        "learned optimism",
+        "posttraumatic growth",
+        "posttraumatic stress",
+        "sublimation"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Posttraumatic growth is positive psychological change after a struggle with a highly challenging event, a topic studied in positive psychology."
+    },
+    {
+      "id": "APPSYCH-T2-064",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Explaining psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A psychologist explains a client's depression through brain chemistry, negative thinking habits and the loss of a support network. This reflects",
+      "options": [
+        "the social-cognitive approach",
+        "the biopsychosocial approach",
+        "the behavioral approach",
+        "the psychodynamic approach"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The biopsychosocial approach combines biological, psychological and social-cultural factors. The medical model treats a disorder mainly as a disease with physical causes."
+    },
+    {
+      "id": "APPSYCH-T2-065",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A patient with schizophrenia speaks very little and shows almost no emotion in face or voice. These are",
+      "options": [
+        "dissociative symptoms",
+        "manic symptoms",
+        "negative symptoms",
+        "positive symptoms"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Negative symptoms are the absence of normal behavior, such as flat affect and reduced speech. Hallucinations and delusions are positive symptoms."
+    },
+    {
+      "id": "APPSYCH-T2-066",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Months after a car crash, Leo has flashbacks and nightmares about it, avoids driving and startles easily. This best fits",
+      "options": [
+        "generalized anxiety disorder",
+        "posttraumatic stress disorder",
+        "obsessive-compulsive disorder",
+        "specific phobia"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Intrusive memories, avoidance and heightened arousal after a traumatic event lasting more than a month fit PTSD. A specific phobia would not include flashbacks and nightmares."
+    },
+    {
+      "id": "APPSYCH-T2-067",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A person shows two or more distinct identities that take control of her behavior at different times. This fits",
+      "options": [
+        "dissociative identity disorder",
+        "borderline personality disorder",
+        "schizophrenia",
+        "bipolar disorder"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Dissociative identity disorder involves separate identities. Schizophrenia is often confused with it but involves psychosis, not split identities."
+    },
+    {
+      "id": "APPSYCH-T2-068",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A teenager of significantly low body weight restricts food intensely and has an intense fear of gaining weight. This best fits",
+      "options": [
+        "binge-eating disorder",
+        "anorexia nervosa",
+        "bulimia nervosa",
+        "major depressive disorder"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Anorexia nervosa involves restricted intake, significantly low weight and fear of weight gain. People with bulimia nervosa binge and purge, usually at a typical weight."
+    },
+    {
+      "id": "APPSYCH-T2-069",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Treatment of psychological disorders",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A client is encouraged to say whatever comes to mind, and the therapist interprets hidden meanings in it. This is",
+      "options": [
+        "cognitive therapy",
+        "behavior therapy",
+        "psychodynamic therapy",
+        "client-centered therapy"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Free association and interpretation of unconscious meaning are psychodynamic techniques that come from Freud's psychoanalysis."
+    },
+    {
+      "id": "APPSYCH-T2-070",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Treatment of psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "On a hospital unit, patients earn points for making their beds and can trade the points for privileges. This is",
+      "options": [
+        "systematic desensitization",
+        "exposure therapy",
+        "a token economy",
+        "aversive conditioning"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A token economy is an operant technique in which tokens, a secondary reinforcer, are exchanged for rewards."
+    },
+    {
+      "id": "APPSYCH-T2-071",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Treatment of psychological disorders",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Long-term use of older antipsychotic drugs can cause involuntary movements of the face and tongue, known as",
+      "options": [
+        "echolalia",
+        "tardive dyskinesia",
+        "flat affect",
+        "catatonia"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Tardive dyskinesia is a movement side effect of long-term use of older antipsychotics, which block dopamine. Catatonia and flat affect are symptoms of disorders, not drug side effects."
+    },
+    {
+      "id": "APPSYCH-T2-072",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Correlation",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "On a scatterplot, points that rise from the lower left to the upper right show",
+      "options": [
+        "a negative correlation",
+        "a causal relationship",
+        "no correlation",
+        "a positive correlation"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "When both variables increase together, the correlation is positive. A scatterplot can never show causation on its own."
+    },
+    {
+      "id": "APPSYCH-T2-073",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Descriptive statistics",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A student scores at the 84th percentile on a test with normally distributed scores. About how many standard deviations above the mean is her score?",
+      "options": [
+        "0.5",
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Half the scores lie below the mean and about 34 percent lie between the mean and one standard deviation above it, so one standard deviation above the mean is about the 84th percentile."
+    },
+    {
+      "id": "APPSYCH-T2-074",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research ethics",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Researchers store participants' answers under code numbers so that no one can link answers to names. This protects",
+      "options": [
+        "confidentiality",
+        "random assignment",
+        "debriefing",
+        "informed consent"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Confidentiality means participants' personal information and responses are kept private. Informed consent is agreement to participate before the study."
+    },
+    {
+      "id": "APPSYCH-T2-075",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Statistics",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A study of 10,000 people finds a statistically significant but very small difference between two groups. This means the difference is",
+      "options": [
+        "real but small in practice",
+        "too small to be measured at all",
+        "large and important in practice",
+        "probably due to chance alone"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "With a very large sample, even a tiny difference can be statistically significant. Significance says the difference is unlikely to be chance; the effect size says how big it is."
+    },
+    {
+      "id": "APPSYCH-D-001",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The neuron and neural firing",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which cells support neurons by supplying nutrients and forming myelin, without sending neural messages themselves?",
+      "options": [
+        "Sensory neurons",
+        "Glial cells",
+        "Interneurons",
+        "Motor neurons"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Glial cells support, nourish and insulate neurons. Interneurons, motor neurons and sensory neurons all carry neural messages."
+    },
+    {
+      "id": "APPSYCH-D-002",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The nervous system",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Touching a hot pan, Sam jerks his hand away before he feels any pain. The withdrawal is controlled by",
+      "options": [
+        "the occipital lobe",
+        "a spinal reflex",
+        "the motor cortex",
+        "the amygdala"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In a reflex arc, sensory neurons connect through interneurons in the spinal cord straight to motor neurons, so the hand moves before the pain message reaches the brain."
+    },
+    {
+      "id": "APPSYCH-D-003",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Drugs and neural firing",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Naloxone reverses an opioid overdose by occupying opioid receptors without activating them. Naloxone acts as",
+      "options": [
+        "a reuptake blocker",
+        "an agonist",
+        "an antagonist",
+        "a stimulant"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An antagonist fits the receptor but does not activate it, so it blocks the drug from acting. An agonist would activate the receptor and add to the overdose."
+    },
+    {
+      "id": "APPSYCH-D-004",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Drugs and neural firing",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Over several months, a person needs more and more caffeine to feel the same alertness. This is",
+      "options": [
+        "withdrawal",
+        "REM rebound",
+        "reuptake",
+        "tolerance"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Tolerance is needing a larger dose to get the same effect. Withdrawal is the discomfort that follows stopping the drug."
+    },
+    {
+      "id": "APPSYCH-D-005",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The brain",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Stimulating a strip at the front of a patient's parietal lobe makes him report a tingling in his hand. Which area was stimulated?",
+      "options": [
+        "Visual cortex",
+        "Motor cortex",
+        "Somatosensory cortex",
+        "Auditory cortex"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The somatosensory cortex at the front of the parietal lobe processes touch, so stimulating it produces a felt sensation. The motor cortex, just in front of it in the frontal lobe, would make the hand move."
+    },
+    {
+      "id": "APPSYCH-D-006",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "The brain",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which method records the brain's electrical activity through electrodes placed on the scalp?",
+      "options": [
+        "PET scan",
+        "fMRI",
+        "EEG",
+        "CT scan"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An electroencephalogram (EEG) records electrical activity from the scalp, with fine timing. An fMRI tracks blood flow, and a CT scan shows structure only."
+    },
+    {
+      "id": "APPSYCH-D-007",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Sleep",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which theory proposes that dreams are the brain's attempt to make sense of random neural activity during REM sleep?",
+      "options": [
+        "Restoration theory",
+        "Information-processing theory",
+        "Consolidation theory",
+        "Activation-synthesis theory"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Activation-synthesis theory says the brainstem fires randomly during REM and the cortex weaves the signals into a story. Consolidation theory links dreaming to strengthening memories, and restoration theory explains why we sleep, not what we dream."
+    },
+    {
+      "id": "APPSYCH-D-008",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Sensation",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The conversion of light energy into neural signals by the rods and cones is called",
+      "options": [
+        "adaptation",
+        "perception",
+        "accommodation",
+        "transduction"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Transduction is turning one form of energy into neural impulses. Accommodation, in vision, is the lens changing shape to focus."
+    },
+    {
+      "id": "APPSYCH-D-009",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychBio",
+      "skill": "Sensation",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which receptors are packed into the fovea and detect fine detail and color?",
+      "options": [
+        "Rods",
+        "Cones",
+        "Ganglion cells",
+        "Bipolar cells"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Cones cluster in the fovea and handle color and fine detail in good light. Rods, found mostly toward the edges of the retina, work in dim light and do not detect color."
+    },
+    {
+      "id": "APPSYCH-D-010",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Storing memories",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Riding a bike years after you last rode one, without recalling how you learned, uses",
+      "options": [
+        "episodic memory",
+        "prospective memory",
+        "semantic memory",
+        "procedural memory"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Procedural memory is implicit memory for skills and habits. Episodic memory is explicit memory for personal events, such as the day you learned to ride."
+    },
+    {
+      "id": "APPSYCH-D-011",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Storing memories",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Knowing that Paris is the capital of France, without remembering when you learned it, is",
+      "options": [
+        "sensory memory",
+        "procedural memory",
+        "episodic memory",
+        "semantic memory"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Semantic memory holds general facts and knowledge. Episodic memory holds personal experiences tied to a time and place."
+    },
+    {
+      "id": "APPSYCH-D-012",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Encoding memories",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Students who decide whether each word describes them remember more of the words than students who judge whether each word is in capital letters. This supports",
+      "options": [
+        "the serial position effect",
+        "levels-of-processing theory",
+        "the encoding specificity principle",
+        "the spacing effect"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Levels-of-processing theory says deeper, meaningful encoding (here, relating words to oneself) produces better memory than shallow encoding of appearance."
+    },
+    {
+      "id": "APPSYCH-D-013",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Storing memories",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A brief, nearly complete visual image that lasts less than a second after a flash is",
+      "options": [
+        "flashbulb memory",
+        "echoic memory",
+        "working memory",
+        "iconic memory"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Iconic memory is visual sensory memory, lasting a fraction of a second. Echoic memory is auditory sensory memory and lasts a few seconds."
+    },
+    {
+      "id": "APPSYCH-D-014",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Forgetting",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Ebbinghaus found that most forgetting of newly learned nonsense syllables happens",
+      "options": [
+        "soon after learning",
+        "only during sleep",
+        "after about a month",
+        "at a steady rate"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "His forgetting curve drops steeply in the first hours and days, then levels off. Forgetting is not steady: what survives the first days tends to last."
+    },
+    {
+      "id": "APPSYCH-D-015",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Retrieving memories",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Quizzing yourself on material improves later recall more than rereading it for the same time. This is",
+      "options": [
+        "the testing effect",
+        "the spacing effect",
+        "the primacy effect",
+        "the recency effect"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The testing effect, also called retrieval practice, is the memory boost from practicing recall. The spacing effect is about when you study, not how."
+    },
+    {
+      "id": "APPSYCH-D-016",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Thinking and decision-making",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Trying every possible combination to open a three-digit lock is certain to work but takes a long time. This strategy is",
+      "options": [
+        "a mental set",
+        "insight",
+        "an algorithm",
+        "a heuristic"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An algorithm is a step-by-step procedure that guarantees a solution. A heuristic is a mental shortcut that is faster but can fail."
+    },
+    {
+      "id": "APPSYCH-D-017",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Intelligence and achievement",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "People who do well on vocabulary tests also tend to do well on puzzle and arithmetic tests. A psychologist who explains this with one broad mental ability is arguing for",
+      "options": [
+        "stereotype lift",
+        "general intelligence (g)",
+        "multiple intelligences",
+        "the Flynn effect"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "General intelligence, g, is a single ability thought to underlie performance on all kinds of mental tests, which would explain why scores on different tests rise and fall together. Theories of multiple intelligences argue instead for several relatively independent abilities."
+    },
+    {
+      "id": "APPSYCH-D-018",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychCognition",
+      "skill": "Intelligence and achievement",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Women who are reminded of a stereotype about math ability before a math test score lower than women who are not reminded. This is",
+      "options": [
+        "the Flynn effect",
+        "stereotype threat",
+        "learned helplessness",
+        "test bias"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Stereotype threat is worry about confirming a negative stereotype, which lowers performance. The Flynn effect is the rise in average intelligence test scores over generations."
+    },
+    {
+      "id": "APPSYCH-D-019",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Gender and sexual orientation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A boy sorts toys into toys for boys and toys for girls and plays only with the ones he thinks fit his own group. He is using",
+      "options": [
+        "a gender schema",
+        "object permanence",
+        "egocentrism",
+        "a sensitive period"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A gender schema is a mental framework for what is typical of each gender, which children use to organize experience and guide their behavior."
+    },
+    {
+      "id": "APPSYCH-D-020",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Physical development",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A newborn turns her head toward a touch on the cheek and opens her mouth. This is",
+      "options": [
+        "the rooting reflex",
+        "the grasping reflex",
+        "the Moro reflex",
+        "the Babinski reflex"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The rooting reflex helps a newborn find the nipple. The Moro reflex is the startle response: arms flung out, then pulled in."
+    },
+    {
+      "id": "APPSYCH-D-021",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Social-emotional development",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Lorenz's goslings followed him because he was the first moving object they saw soon after hatching. This is",
+      "options": [
+        "shaping",
+        "habituation",
+        "imprinting",
+        "contact comfort"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Imprinting is rapid attachment formed during a critical period early in life. Contact comfort is Harlow's finding about monkeys and soft mothers."
+    },
+    {
+      "id": "APPSYCH-D-022",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Operant conditioning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A trainer teaches a dog to roll over by rewarding it first for lying down, then for rolling onto its side, then for a full roll. This is",
+      "options": [
+        "modeling",
+        "generalization",
+        "shaping",
+        "extinction"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Shaping reinforces successive approximations of the target behavior. Modeling would mean the dog learns by watching another dog."
+    },
+    {
+      "id": "APPSYCH-D-023",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Classical conditioning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After getting sick hours after eating shrimp, Ana avoids shrimp for years. This learning is unusual because it formed from",
+      "options": [
+        "a reward that followed eating",
+        "one pairing with a long delay",
+        "many pairings over several weeks",
+        "watching someone else get sick"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Taste aversion can form from a single pairing even when illness comes hours later, which most classical conditioning does not allow. It shows biological preparedness to link taste with illness."
+    },
+    {
+      "id": "APPSYCH-D-024",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Operant conditioning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A cake is ready only after 30 minutes, so Leo rarely checks the oven at first and checks more often as 30 minutes approach. This pattern fits a",
+      "options": [
+        "fixed-interval schedule",
+        "fixed-ratio schedule",
+        "variable-interval schedule",
+        "variable-ratio schedule"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "On a fixed-interval schedule, reinforcement follows the first response after a set time, producing a scalloped pattern: little responding early and more as the time nears."
+    },
+    {
+      "id": "APPSYCH-D-025",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Operant conditioning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A teacher assigns extra homework when a student talks during a test, and the talking stops. This is",
+      "options": [
+        "positive punishment",
+        "negative punishment",
+        "positive reinforcement",
+        "negative reinforcement"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Adding something unpleasant (extra homework) to weaken a behavior is positive punishment. Negative punishment removes something pleasant, such as a privilege."
+    },
+    {
+      "id": "APPSYCH-D-026",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Social and cognitive factors in learning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Kohler's chimpanzee suddenly stacked boxes to reach bananas after a period with no progress. This is",
+      "options": [
+        "insight learning",
+        "latent learning",
+        "shaping",
+        "trial-and-error learning"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Insight learning is a sudden realization of a solution. Trial-and-error learning is gradual, through repeated attempts."
+    },
+    {
+      "id": "APPSYCH-D-027",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychDevLearning",
+      "skill": "Operant conditioning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Dogs that could not escape shocks in one setting later failed to escape even when escape was easy. This illustrates",
+      "options": [
+        "extinction",
+        "instinctive drift",
+        "spontaneous recovery",
+        "learned helplessness"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Learned helplessness is passive resignation after repeated uncontrollable bad events. Instinctive drift is an animal reverting to instinctive behavior during training."
+    },
+    {
+      "id": "APPSYCH-D-028",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychology of social situations",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "After discussing a policy with like-minded classmates, students hold more extreme views than before. This is",
+      "options": [
+        "deindividuation",
+        "social loafing",
+        "group polarization",
+        "groupthink"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Group polarization strengthens a group's existing leaning through discussion. Groupthink is about suppressing dissent to keep harmony, not about views becoming more extreme."
+    },
+    {
+      "id": "APPSYCH-D-029",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychology of social situations",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Fans in a large, anonymous crowd do things they would never do alone. This is",
+      "options": [
+        "conformity",
+        "group polarization",
+        "deindividuation",
+        "social facilitation"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Deindividuation is the loss of self-awareness and restraint in groups that give arousal and anonymity."
+    },
+    {
+      "id": "APPSYCH-D-030",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychodynamic and humanistic theories",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A student who often cheats accuses his classmates of cheating. Freud would call this",
+      "options": [
+        "displacement",
+        "projection",
+        "sublimation",
+        "denial"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Projection attributes one's own unacceptable thoughts or behavior to others. Denial is refusing to accept a painful reality."
+    },
+    {
+      "id": "APPSYCH-D-031",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychodynamic and humanistic theories",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A psychologist asks a client to tell stories about ambiguous pictures to reveal unconscious themes. This is",
+      "options": [
+        "a personality inventory",
+        "a projective test",
+        "an aptitude test",
+        "a factor analysis"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Projective tests, such as the Thematic Apperception Test, assume people project hidden feelings onto ambiguous stimuli. Personality inventories ask direct questions, such as true or false items."
+    },
+    {
+      "id": "APPSYCH-D-032",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Social-cognitive and trait theories",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Bandura's idea that behavior, personal factors and the environment all influence one another is called",
+      "options": [
+        "reciprocal determinism",
+        "unconditional positive regard",
+        "the trait approach",
+        "self-actualization"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Reciprocal determinism is the social-cognitive view that people both shape and are shaped by their situations. The trait approach describes stable characteristics instead."
+    },
+    {
+      "id": "APPSYCH-D-033",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Emotion",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Participants who held a pen in their teeth, which pulls the face into a smile, rated cartoons as a little funnier than participants who did not. This result is consistent with",
+      "options": [
+        "the broaden-and-build theory",
+        "the facial-feedback hypothesis",
+        "the overjustification effect",
+        "display rules"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The facial-feedback hypothesis says facial expressions can influence the emotion a person feels. Attempts to replicate studies like this one have produced mixed results. The broaden-and-build theory is about positive emotions widening thought and action."
+    },
+    {
+      "id": "APPSYCH-D-034",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Motivation",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A thirsty hiker drinks water to restore the body's balance. Which theory of motivation best explains this?",
+      "options": [
+        "Incentive theory",
+        "Instinct theory",
+        "Optimal arousal theory",
+        "Drive-reduction theory"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Drive-reduction theory says a physiological need creates a drive that pushes us to restore homeostasis. Incentive theory explains behavior by the pull of outside rewards."
+    },
+    {
+      "id": "APPSYCH-D-035",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Attitude formation and change",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Refusing to hire someone because of the person's ethnic group is an example of",
+      "options": [
+        "a stereotype",
+        "ethnocentrism",
+        "prejudice",
+        "discrimination"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Discrimination is unjustified negative behavior toward a group. Prejudice is the attitude and a stereotype is the belief that may lie behind it."
+    },
+    {
+      "id": "APPSYCH-D-036",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychSocial",
+      "skill": "Psychology of social situations",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Rival groups of boys at a summer camp cooperated after they had to work together to fix the camp's water supply. This shared aim is",
+      "options": [
+        "a superordinate goal",
+        "a self-fulfilling prophecy",
+        "a social trap",
+        "an in-group bias"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A superordinate goal is one that rival groups can reach only by cooperating, which reduces conflict between them. A social trap is a situation where pursuing self-interest leaves everyone worse off."
+    },
+    {
+      "id": "APPSYCH-D-037",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Avoiding all bridges because of an intense, irrational fear of them that disrupts daily life best fits",
+      "options": [
+        "a specific phobia",
+        "generalized anxiety disorder",
+        "obsessive-compulsive disorder",
+        "social anxiety disorder"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A specific phobia is a persistent, excessive fear of a particular object or situation. Social anxiety disorder is fear of being judged by others."
+    },
+    {
+      "id": "APPSYCH-D-038",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Treatment of psychological disorders",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which therapy uses active listening, genuineness and empathy, and lets the client lead the session?",
+      "options": [
+        "Behavior therapy",
+        "Cognitive therapy",
+        "Psychodynamic therapy",
+        "Client-centered therapy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Rogers' client-centered (person-centered) therapy is nondirective and humanistic. Psychodynamic therapists interpret the client's words instead."
+    },
+    {
+      "id": "APPSYCH-D-039",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Treatment of psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Pairing alcohol with a drug that causes nausea in order to reduce drinking is",
+      "options": [
+        "aversive conditioning",
+        "systematic desensitization",
+        "a token economy",
+        "exposure therapy"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Aversive conditioning links an unwanted behavior with an unpleasant state. Systematic desensitization does the reverse, linking a feared stimulus with relaxation."
+    },
+    {
+      "id": "APPSYCH-D-040",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Treatment of psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "For severe depression that has not responded to medication, a doctor may pass brief electrical currents through the brain under anesthesia. This is",
+      "options": [
+        "transcranial magnetic stimulation",
+        "psychosurgery",
+        "biofeedback",
+        "electroconvulsive therapy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Electroconvulsive therapy delivers a brief electric current under anesthesia. Transcranial magnetic stimulation uses magnetic pulses with the patient awake and no anesthesia."
+    },
+    {
+      "id": "APPSYCH-D-041",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Treatment of psychological disorders",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which medication is a long-standing mood stabilizer used to treat bipolar disorder?",
+      "options": [
+        "A stimulant",
+        "A benzodiazepine",
+        "An SSRI",
+        "Lithium"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Lithium evens out manic and depressive swings. An SSRI alone can trigger mania in some people with bipolar disorder."
+    },
+    {
+      "id": "APPSYCH-D-042",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Explaining psychological disorders",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which manual do clinicians in the United States commonly use to classify psychological disorders by their symptoms?",
+      "options": [
+        "The WAIS-IV",
+        "The DSM-5-TR",
+        "The MMPI-2",
+        "The Rorschach"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Diagnostic and Statistical Manual of Mental Disorders (current text revision, DSM-5-TR) lists disorders and their criteria. The MMPI-2 is a personality inventory and the WAIS-IV an intelligence test."
+    },
+    {
+      "id": "APPSYCH-D-043",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Tom has felt tense and worried about many different everyday things on most days for the past year. This best fits",
+      "options": [
+        "generalized anxiety disorder",
+        "panic disorder",
+        "specific phobia",
+        "bipolar disorder"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Generalized anxiety disorder is excessive worry about many things on most days for at least six months. Panic disorder centers on sudden panic attacks."
+    },
+    {
+      "id": "APPSYCH-D-044",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A persistent pattern of inattention, hyperactivity and impulsivity that begins in childhood is typical of",
+      "options": [
+        "bipolar disorder",
+        "autism spectrum disorder",
+        "conduct disorder",
+        "ADHD"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Attention-deficit/hyperactivity disorder is a neurodevelopmental disorder defined by inattention and hyperactivity-impulsivity. Autism spectrum disorder centers on social communication and restricted, repetitive behavior."
+    },
+    {
+      "id": "APPSYCH-D-045",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychHealth",
+      "skill": "Psychological disorders",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A man shows a lasting pattern of disregard for others' rights, frequent lying and lack of remorse. This best fits",
+      "options": [
+        "avoidant personality disorder",
+        "dissociative identity disorder",
+        "borderline personality disorder",
+        "antisocial personality disorder"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Antisocial personality disorder is marked by disregard for others, deceit and lack of remorse. Borderline personality disorder centers on unstable relationships, self-image and emotions."
+    },
+    {
+      "id": "APPSYCH-D-046",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research design",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APPSYCH-D-S1",
+      "stem": "What is the main weakness of this study's design?",
+      "options": [
+        "Anxiety was the dependent variable",
+        "The app was used for four weeks",
+        "The sample came from many schools",
+        "Students chose their own group"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Without random assignment, students who chose the app may have differed from the start, for example by being less anxious or more motivated. Every study needs a dependent variable, and this one used a single school."
+    },
+    {
+      "id": "APPSYCH-D-047",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research design",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APPSYCH-D-S1",
+      "stem": "Which change would most strengthen a conclusion that the app reduces anxiety?",
+      "options": [
+        "Let students choose how long to use it",
+        "Randomly assign students to groups",
+        "Remove the comparison group",
+        "Survey more students afterward"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Random assignment would make the groups alike before the app was used, turning the study into a true experiment. Removing the comparison group would make the design weaker, not stronger."
+    },
+    {
+      "id": "APPSYCH-D-048",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research methods",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APPSYCH-D-S1",
+      "stem": "Anxiety in this study was measured by asking students to rate it from 1 to 10. This is",
+      "options": [
+        "a projective test",
+        "a naturalistic observation",
+        "a physiological measure",
+        "a self-report measure"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A self-report measure asks people to describe their own experience, which is easy to collect but open to bias. A physiological measure would record something like heart rate."
+    },
+    {
+      "id": "APPSYCH-D-049",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Sampling",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Studying only college students limits a study's",
+      "options": [
+        "statistical power",
+        "generalizability",
+        "reliability",
+        "informed consent"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "If the sample is not representative of the wider population, findings may not generalize beyond people like those studied."
+    },
+    {
+      "id": "APPSYCH-D-050",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "appsychResearch",
+      "skill": "Research methods",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Two observers independently count a child's aggressive acts on the playground and get nearly the same totals. This shows high",
+      "options": [
+        "effect size",
+        "inter-rater reliability",
+        "predictive validity",
+        "statistical significance"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Inter-rater reliability is agreement between independent observers using the same measure. Predictive validity is whether a measure predicts a later outcome."
+    }
+  ]
+}

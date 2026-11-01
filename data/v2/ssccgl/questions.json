@@ -1629,15 +1629,16 @@
       "skill": "Spotting errors",
       "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nEach of the players / were given / a new kit before the match.",
       "options": [
-        "No error",
-        "a new kit before the match",
         "Each of the players",
-        "were given"
+        "were given",
+        "a new kit before the match",
+        "No error"
       ],
       "correct": [
-        3
+        1
       ],
-      "explanation": "'Each' is singular, so it takes a singular verb: 'Each of the players was given a new kit.'"
+      "explanation": "'Each' is singular, so it takes a singular verb: 'Each of the players was given a new kit.'",
+      "lockedOrder": true
     },
     {
       "id": "SSCCGL-T1-078",
@@ -1755,15 +1756,16 @@
       "skill": "Sentence improvement",
       "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nHe is __senior than me__ in the office.",
       "options": [
-        "No improvement",
         "senior from me",
         "senior to me",
-        "seniors than me"
+        "seniors than me",
+        "No improvement"
       ],
       "correct": [
-        2
+        1
       ],
-      "explanation": "Senior, junior, superior, inferior and prior are followed by 'to', not 'than'."
+      "explanation": "Senior, junior, superior, inferior and prior are followed by 'to', not 'than'.",
+      "lockedOrder": true
     },
     {
       "id": "SSCCGL-T1-084",
@@ -1881,15 +1883,16 @@
       "skill": "Spotting errors",
       "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe news / are / very encouraging today.",
       "options": [
-        "No error",
-        "very encouraging today",
+        "The news",
         "are",
-        "The news"
+        "very encouraging today",
+        "No error"
       ],
       "correct": [
-        2
+        1
       ],
-      "explanation": "'News' looks plural but is an uncountable noun and takes a singular verb: 'The news is very encouraging today.'"
+      "explanation": "'News' looks plural but is an uncountable noun and takes a singular verb: 'The news is very encouraging today.'",
+      "lockedOrder": true
     },
     {
       "id": "SSCCGL-T1-090",
@@ -3737,15 +3740,16 @@
       "skill": "Spotting errors",
       "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nOne of my friends / have gone / to Shimla for a holiday.",
       "options": [
-        "to Shimla for a holiday",
+        "One of my friends",
         "have gone",
-        "No error",
-        "One of my friends"
+        "to Shimla for a holiday",
+        "No error"
       ],
       "correct": [
         1
       ],
-      "explanation": "The subject is 'One', which is singular, so the verb must be 'has gone'."
+      "explanation": "The subject is 'One', which is singular, so the verb must be 'has gone'.",
+      "lockedOrder": true
     },
     {
       "id": "SSCCGL-T2-078",
@@ -3865,13 +3869,14 @@
       "options": [
         "In spite the rain",
         "Despite of rain",
-        "No improvement",
-        "Despite the rain"
+        "Despite the rain",
+        "No improvement"
       ],
       "correct": [
-        3
+        2
       ],
-      "explanation": "'Despite' is never followed by 'of'. Use 'despite the rain' or 'in spite of the rain'."
+      "explanation": "'Despite' is never followed by 'of'. Use 'despite the rain' or 'in spite of the rain'.",
+      "lockedOrder": true
     },
     {
       "id": "SSCCGL-T2-084",
@@ -3989,15 +3994,16 @@
       "skill": "Spotting errors",
       "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nHe did not / knew the answer / to the last question.",
       "options": [
-        "to the last question",
-        "knew the answer",
         "He did not",
+        "knew the answer",
+        "to the last question",
         "No error"
       ],
       "correct": [
         1
       ],
-      "explanation": "After 'did not' the verb takes its base form: 'He did not know the answer.'"
+      "explanation": "After 'did not' the verb takes its base form: 'He did not know the answer.'",
+      "lockedOrder": true
     },
     {
       "id": "SSCCGL-T2-090",
@@ -4753,15 +4759,16 @@
       "skill": "Spotting errors",
       "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe committee / have submitted / its final report.",
       "options": [
-        "have submitted",
-        "No error",
         "The committee",
-        "its final report"
+        "have submitted",
+        "its final report",
+        "No error"
       ],
       "correct": [
-        0
+        1
       ],
-      "explanation": "The committee acts as one body, shown by 'its', so the verb must also be singular: 'has submitted'."
+      "explanation": "The committee acts as one body, shown by 'its', so the verb must also be singular: 'has submitted'.",
+      "lockedOrder": true
     },
     {
       "id": "SSCCGL-D-026",
@@ -4837,15 +4844,16 @@
       "skill": "Sentence improvement",
       "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nI look forward __to meet you__ next week.",
       "options": [
-        "No improvement",
         "to meet with you",
         "for meeting you",
-        "to meeting you"
+        "to meeting you",
+        "No improvement"
       ],
       "correct": [
-        3
+        2
       ],
-      "explanation": "In 'look forward to', 'to' is a preposition, so it is followed by the -ing form: 'to meeting you'."
+      "explanation": "In 'look forward to', 'to' is a preposition, so it is followed by the -ing form: 'to meeting you'.",
+      "lockedOrder": true
     },
     {
       "id": "SSCCGL-D-030",

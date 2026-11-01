@@ -12,6 +12,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { trackSearch } from "@/lib/searchTracking";
 import { Region, TestRegion, regionInfo, regionOfTest } from "@/lib/region";
 import { normalizeQuery, searchAllTests, SearchHit, SearchResult } from "@/lib/testSearch";
+import { TEST_CATALOG } from "@/lib/testCatalog";
 
 const flagOf = (r: TestRegion) => (r === "GLOBAL" ? "🌐" : FLAGS[r]);
 const TRACK_DELAY_MS = 1200;
@@ -169,6 +170,8 @@ export function SearchHome({
           <Image src="/tiger.png" alt="" width={96} height={96} priority className={showResults ? "w-8 h-8" : "w-16 h-16 sm:w-24 sm:h-24"} />
           <h1 className={`font-extrabold tracking-tight text-gray-900 dark:text-gray-50 ${showResults ? "text-2xl" : "text-5xl sm:text-7xl"}`}>
             Tigertest
+            {/* What the page is, for search engines and screen readers; the wordmark stays the visible heading. */}
+            <span className="sr-only">: free practice tests for {TEST_CATALOG.length} exams</span>
           </h1>
         </div>
 

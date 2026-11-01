@@ -100,7 +100,7 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   HK: "the Transport Department",
   AE: "the RTA or any licensing authority",
   ZA: "any driving licence testing centre",
-  NG: "the FRSC",
+  NG: "the FRSC, JAMB, TRCN or any recruiting service",
   KE: "the NTSA",
   PK: "any provincial or ICT licensing authority",
 };

@@ -31,7 +31,7 @@ const hubs: Record<string, ShareCard> = {
   hk: { title: "Free practice tests for Hong Kong", lines: ["Free practice tests", "for Hong Kong"], description: "Driving theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/hk", color: "#A3007A", tint: "#FBE9F5", mascots: ["dmv", "sat", "aws"] },
   ae: { title: "Free practice tests for the UAE", lines: ["Free practice tests", "for the UAE"], description: "Driving theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ae", color: "#0C6B52", tint: "#E6F5F0", mascots: ["dmv", "sat", "aws"] },
   za: { title: "Free practice tests for South Africa", lines: ["Free practice tests", "for South Africa"], description: "K53 learner's test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/za", color: "#4F7408", tint: "#F0F6E3", mascots: ["dmv", "sat", "aws"] },
-  ng: { title: "Free practice tests for Nigeria", lines: ["Free practice tests", "for Nigeria"], description: "Highway Code driving test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ng", color: "#1B6B20", tint: "#E8F4E9", mascots: ["dmv", "sat", "aws"] },
+  ng: { title: "Free practice tests for Nigeria", lines: ["Free practice tests", "for Nigeria"], description: "JAMB UTME, recruitment tests, the TRCN PQE and the driving test.", footer: "Find your test at tigertest.io/ng", color: "#1B6B20", tint: "#E8F4E9", mascots: ["dmv", "sat", "aws"] },
   pk: { title: "Free practice tests for Pakistan", lines: ["Free practice tests", "for Pakistan"], description: "Driving licence sign test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/pk", color: "#0B5E3A", tint: "#E6F4EC", mascots: ["dmv", "sat", "aws"] },
   ke: { title: "Free practice tests for Kenya", lines: ["Free practice tests", "for Kenya"], description: "NTSA driving test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ke", color: "#066A6E", tint: "#E4F4F5", mascots: ["dmv", "sat", "aws"] },
 };
@@ -616,5 +616,25 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "phlet": {
     "color": "hsl(160, 25%, 40%)",
     "tint": "hsl(160, 35%, 95%)"
+  },
+  "ngpolice": {
+    "color": "hsl(235, 65%, 30%)",
+    "tint": "hsl(235, 75%, 95%)"
+  },
+  "cdcfib": {
+    "color": "hsl(10, 30%, 40%)",
+    "tint": "hsl(10, 40%, 95%)"
+  },
+  "ngarmy": {
+    "color": "hsl(80, 18%, 30%)",
+    "tint": "hsl(80, 28%, 95%)"
+  },
+  "ngcustoms": {
+    "color": "hsl(184, 20%, 33%)",
+    "tint": "hsl(184, 30%, 95%)"
+  },
+  "trcnpqe": {
+    "color": "hsl(170, 20%, 38%)",
+    "tint": "hsl(170, 30%, 95%)"
   }
 };

@@ -2856,4 +2856,163 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full 42-question AP Calculus AB multiple-choice sections and eight drills, one per unit, all free with no account required. The free-response section is not included.",
   },
+  jambmath: {
+    answer:
+      "Mathematics is one of the subjects of the JAMB Unified Tertiary Matriculation Examination (UTME), the computer-based test for admission to Nigerian universities, polytechnics and colleges of education, and is required for most science, engineering and social science courses. Guides give the UTME as 180 objective questions in 2 hours across four subjects: Use of English has 60 questions and each other subject, Mathematics included, 40. Each subject is scored out of 100, so the total is out of 400. The syllabus has five sections: Number and Numeration, Algebra, Geometry and Trigonometry, Calculus, and Statistics. Candidates may not bring a calculator; guides say the CBT has a basic on-screen one. JAMB set minimum scores of 150 for universities and 100 for polytechnics and colleges of education for 2026 admissions; institutions and courses set their own, usually higher, cut-off marks.",
+    rows: [
+      { label: "Questions", value: "40 in Mathematics (180 in the whole UTME)" },
+      { label: "Time", value: "2 hours for all four subjects" },
+      { label: "Format", value: "Computer-based, objective (multiple choice)" },
+      { label: "Sections", value: "Number and Numeration, Algebra, Geometry and Trigonometry, Calculus, Statistics" },
+      { label: "Score", value: "Out of 100 per subject, 400 in all" },
+      { label: "2026 minimum score", value: "150 universities, 100 polytechnics and colleges of education" },
+      { label: "Run by", value: "Joint Admissions and Matriculation Board (JAMB)" },
+    ],
+    basedOn: "the JAMB website and widely reproduced UTME syllabus guides, checked November 2026. Question counts are guides' figures; JAMB publishes no count per topic",
+    source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  jambbio: {
+    answer:
+      "Biology is one of the subjects in JAMB's Unified Tertiary Matriculation Examination (UTME), the computer-based test for admission to Nigerian universities, polytechnics and colleges of education, and is required for most medical, health, agricultural and life-science courses. The UTME is 180 objective questions in 2 hours across four subjects: Use of English has 60 questions and each of the other three subjects, Biology included, has 40. Each subject is scored out of 100, so the total is out of 400. The Biology syllabus has five sections: Variety of Organisms, Form and Functions, Ecology, Heredity and Variations, and Evolution. JAMB set minimum scores of 150 for universities and 100 for polytechnics and colleges of education for 2026 admissions; institutions and courses set their own, usually higher, cut-off marks.",
+    rows: [
+      { label: "Questions", value: "40 in Biology (180 in the whole UTME)" },
+      { label: "Time", value: "2 hours for all four subjects" },
+      { label: "Format", value: "Computer-based, objective (multiple choice)" },
+      { label: "Sections", value: "Variety of Organisms, Form and Functions, Ecology, Heredity and Variations, Evolution" },
+      { label: "Score", value: "Out of 100 per subject, 400 in all" },
+      { label: "2026 minimum score", value: "150 universities, 100 polytechnics and colleges of education" },
+      { label: "Run by", value: "Joint Admissions and Matriculation Board (JAMB)" },
+    ],
+    basedOn: "the JAMB website and widely reproduced UTME syllabus guides, checked November 2026. JAMB publishes no split of the 40 questions by topic",
+    source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  jambchem: {
+    answer:
+      "Chemistry is one of the subjects of the JAMB Unified Tertiary Matriculation Examination (UTME), the computer-based test for admission to Nigerian universities, polytechnics and colleges of education, and is required for courses such as medicine, pharmacy and engineering. The UTME is 180 objective questions in 2 hours across four subjects: Use of English has 60 questions and each other subject, including Chemistry, 40. Each subject is scored out of 100, so the total is out of 400. The JAMB Chemistry syllabus has 18 topics, from separation of mixtures and the mole to electrolysis, metals, organic compounds and astronomical chemistry. JAMB set minimum scores of 150 for universities and 100 for polytechnics and colleges of education for 2026 admissions; institutions and courses set their own, usually higher, cut-off marks.",
+    rows: [
+      { label: "Questions", value: "40 in Chemistry (180 in the whole UTME)" },
+      { label: "Time", value: "2 hours for all four subjects" },
+      { label: "Format", value: "Computer-based, four-option multiple choice" },
+      { label: "Syllabus", value: "18 topics, physical, inorganic and organic chemistry" },
+      { label: "Score", value: "Out of 100 per subject, 400 in all" },
+      { label: "2026 minimum score", value: "150 universities, 100 polytechnics and colleges of education" },
+      { label: "Run by", value: "Joint Admissions and Matriculation Board (JAMB)" },
+    ],
+    basedOn: "the JAMB UTME Chemistry syllabus (copy for the 2026/2027 cycle), the JAMB website and UTME guides, checked November 2026",
+    source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  jambphys: {
+    answer:
+      "Physics is one of the subjects candidates for science, engineering and medical courses take in the JAMB Unified Tertiary Matriculation Examination (UTME), the computer-based test for admission to Nigerian universities, polytechnics and colleges of education. Guides that reproduce the JAMB brochure give the UTME as 180 objective questions in 2 hours across four subjects: Use of English has 60 questions and each other subject, Physics included, has 40. Each subject is scored out of 100, so the total is out of 400. The Physics syllabus runs from measurement, motion and energy through heat, waves and light to electricity, magnetism, modern physics, electronics, and fibre optics and lasers. JAMB set minimum scores of 150 for universities and 100 for polytechnics and colleges of education for 2026 admissions; institutions and courses set their own, usually higher, cut-off marks.",
+    rows: [
+      { label: "Questions", value: "40 in Physics (180 in the whole UTME)" },
+      { label: "Time", value: "2 hours for all four subjects" },
+      { label: "Format", value: "Computer-based, four-option multiple choice" },
+      { label: "Syllabus", value: "Mechanics, heat, waves and optics, electricity and magnetism, modern physics and electronics" },
+      { label: "Score", value: "Out of 100 per subject, 400 in all" },
+      { label: "2026 minimum score", value: "150 universities, 100 polytechnics and colleges of education" },
+      { label: "Run by", value: "Joint Admissions and Matriculation Board (JAMB)" },
+    ],
+    basedOn: "the JAMB website and UTME Physics syllabus guides that reproduce the IBASS brochure, checked November 2026. Question counts are guides' figures; JAMB publishes no topic weights",
+    source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  apgov: {
+    answer:
+      "The AP U.S. Government and Politics Exam is a fully digital, 3-hour exam from the College Board. Section I has 55 multiple-choice questions in 80 minutes (50% of the score): about 30 stand alone and the rest come in sets on quantitative data, a foundational document or other text, and visuals such as maps and cartoons. Section II has four free-response questions in 100 minutes (50%): concept application, quantitative analysis, SCOTUS comparison and an argument essay. The course has five units and requires 13 foundational documents (four added for 2026-27) and 14 Supreme Court cases. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "55 questions, 80 minutes, 50% of score" },
+      { label: "Free response", value: "4 questions, 100 minutes, 50%" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Units", value: "5; Unit 2 (branches) is 25-36% of the multiple choice" },
+      { label: "Required content", value: "13 foundational documents, 14 Supreme Court cases" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+      { label: "Given by", value: "College Board, digital in the Bluebook app" },
+    ],
+    basedOn: "the College Board AP U.S. Government and Politics Course and Exam Description (effective fall 2026), its fall 2026 clarifications and the AP Central exam page",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-united-states-government-and-politics/exam" },
+    tigertest:
+      "Tigertest has two full 55-question AP U.S. Government and Politics multiple-choice sections and seven drills by unit, all free with no account required. The free-response questions are not included.",
+  },
+  ngpolice: {
+    answer:
+      "Constables are recruited into the Nigeria Police Force by the Police Service Commission (PSC), working with the Force. In the 2025/2026 exercise for 50,000 constables, applicants applied free on the PSC portal, then attended physical, medical and credentials screening, and those who passed sat a written aptitude test on 28 to 30 April 2026 at centres in all 36 states and the FCT, before background checks. In 2024 the PSC had JAMB run the test as a CBT. The PSC does not publish the number of questions, the time or a pass mark; guides describe English, mathematics, general knowledge and current affairs. General Duty applicants in 2025/2026 had to be 18 to 25 with five credits including English and Mathematics.",
+    rows: [
+      { label: "Run by", value: "Police Service Commission, with the Nigeria Police Force" },
+      { label: "Format", value: "Written aptitude test, computer based (CBT)" },
+      { label: "Questions and time", value: "Not published (guides: 60 to 100 questions in up to an hour)" },
+      { label: "Subjects (guides)", value: "English, mathematics, general knowledge, current affairs" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "Age (General Duty, 2025/2026)", value: "18 to 25" },
+      { label: "Education (General Duty)", value: "Five credits incl. English and Mathematics" },
+      { label: "Cost", value: "Free (the PSC warns against anyone charging)" },
+    ],
+    basedOn: "Police Service Commission notices of December 2025 to April 2026, the 2025/2026 recruitment advertisement and the PSC's 2024 statement on the JAMB-run CBT, checked November 2026",
+    source: { name: "Police Service Commission", url: "https://www.psc.gov.ng/" },
+  },
+  cdcfib: {
+    answer:
+      "The CDCFIB recruitment test is the computer-based test set by the Civil Defence, Correctional, Fire and Immigration Services Board, which recruits for four paramilitary services under the Federal Ministry of Interior: the Nigeria Security and Civil Defence Corps, the Nigerian Correctional Service, the Federal Fire Service and the Nigeria Immigration Service. You apply through the Board's recruitment portal when an exercise opens; shortlisted applicants take the test, then physical screening, document checks and a medical. In the 2025 exercise the test was online from 12 to 19 November, taken on a laptop, desktop or phone with camera and microphone and watched by AI proctoring. The Board does not publish the number of questions, the time limit, the subjects or a pass mark; guides describe multiple-choice questions on English, mathematics, reasoning, general knowledge and the services.",
+    rows: [
+      { label: "Run by", value: "Civil Defence, Correctional, Fire and Immigration Services Board (CDCFIB)" },
+      { label: "Services", value: "NSCDC, Correctional Service, Federal Fire Service, Immigration Service" },
+      { label: "Format (2025)", value: "Online CBT, multiple choice, AI-proctored, at a scheduled slot" },
+      { label: "Questions and time", value: "Not published by the Board (guides report 100; some candidates reported 40)" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Topics (guides)", value: "English, mathematics, reasoning, general knowledge, the four services" },
+      { label: "After the CBT", value: "Physical screening, document checks, medical" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+    ],
+    basedOn: "Board instructions for the November 2025 online CBT as reported by Nigerian news outlets, with the cdcfib.gov.ng portal under maintenance, checked November 2026",
+    source: { name: "CDCFIB", url: "https://cdcfib.gov.ng" },
+  },
+  ngarmy: {
+    answer:
+      "The Nigerian Army recruits soldiers through its Regular Recruits Intake (RRI) and officers through Short Service (SSC) and Direct Short Service (DSSC) courses, applied for free on its recruitment portal. It does not publish a syllabus, question count or pass mark for its written tests. For the 90th and 91st Regular Recruits Intakes (2025 and 2026), the Army said there would be no pre-selection computer-based test: shortlisted applicants were screened in their state of origin on documents, physical fitness and medical fitness (the 89th intake, in 2025, had announced one). Officer applicants go before a selection board; for Short Service Course 49/2026 it was reported to include document checks, physical, medical and academic tests and an oral interview. Candidates and guides describe written aptitude papers in English language, mathematics and general knowledge. For 91RRI, applicants needed at least four passes including English Language in no more than two sittings and had to apply through their state of origin.",
+    rows: [
+      { label: "Run by", value: "Nigerian Army (recruitment portal)" },
+      { label: "Routes", value: "Regular Recruits Intake, SSC and DSSC officer courses" },
+      { label: "Pre-selection CBT", value: "None in the 90th and 91st intakes (the 89th had one)" },
+      { label: "Recruit screening", value: "State of origin: documents, physical fitness, medical" },
+      { label: "Officer selection board", value: "Documents, physical, medical, academic tests, interview (SSC 49/2026, per reports)" },
+      { label: "Written test content", value: "Not published; guides say English, mathematics, general knowledge" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Recruit entry (91RRI)", value: "4 passes incl. English, 2 sittings max; NIN and BVN" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+    ],
+    basedOn: "the Army's 91RRI (2026), SSC 49/2026 and DSSC 29/2026 notices as reprinted in Nigerian news and job listings, checked November 2026; the portal itself could not be loaded",
+    source: { name: "Nigerian Army recruitment portal", url: "https://recruitment.army.mil.ng" },
+  },
+  ngcustoms: {
+    answer:
+      "The Nigeria Customs Service recruits through an online application, document screening and then a computer-based test (CBT). In the exercise advertised on 27 December 2024 for 3,927 places in the Superintendent, Inspectorate and Customs Assistant cadres, 573,523 people applied and 286,697 were invited to the CBT in September and October 2025. Candidates sat it online from any location, on a laptop or desktop with a webcam, after a compulsory pre-test two days earlier; Superintendent applicants were told to expect a further CBT. The Service has not published the number of questions, the time or the pass mark. Guides describe a general aptitude test in English, mathematics and general knowledge.",
+    rows: [
+      { label: "Run by", value: "Nigeria Customs Service" },
+      { label: "Cadres", value: "Superintendent, Inspectorate, Customs Assistant" },
+      { label: "Format", value: "Online CBT on a laptop or desktop with webcam (2025)" },
+      { label: "Pre-test", value: "Compulsory, two days before the CBT (2025)" },
+      { label: "Questions and pass mark", value: "Not published by the Service" },
+      { label: "Subjects (guides)", value: "English, mathematics, general knowledge" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "Latest exercise", value: "Advertised 27 December 2024; CBT September to October 2025" },
+    ],
+    basedOn: "Nigeria Customs Service press release on its recruitment CBT (September 2025) and news reports of the 9 October 2025 Inspectorate and Customs Assistant CBT, checked November 2026",
+    source: { name: "Nigeria Customs Service", url: "https://customs.gov.ng/" },
+  },
+  trcnpqe: {
+    answer:
+      "The Professional Qualifying Examination (PQE) is the computer-based exam candidates take as part of registration with the Teachers Registration Council of Nigeria (TRCN), the regulator set up by the TRCN Act of 1993. TRCN's PQE curriculum guide lists 60 questions in 60 minutes, held in batches in May and November diets, across five core areas worth 20% each: Pedagogy, Literacy, Numeracy, ICT and Safeguarding. Candidates need at least an NCE, PGDE or PDE in Education and sit under Category A (PhD), B (master's), C (bachelor's or PGDE) or D (NCE). TRCN does not publish a pass mark on its PQE pages.",
+    rows: [
+      { label: "Run by", value: "Teachers Registration Council of Nigeria (TRCN)" },
+      { label: "Questions", value: "60" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Format", value: "Computer-based, multiple choice" },
+      { label: "Areas", value: "Pedagogy, Literacy, Numeracy, ICT, Safeguarding, 20% each" },
+      { label: "Diets", value: "May and November, in batches" },
+      { label: "Eligibility", value: "At least an NCE, PGDE or PDE in Education" },
+      { label: "Pass mark", value: "Not published by TRCN (guides say 50%)" },
+    ],
+    basedOn: "the TRCN PQE curriculum guide, registration and PQE past questions pages on trcn.gov.ng, checked November 2026",
+    source: { name: "Teachers Registration Council of Nigeria", url: "https://trcn.gov.ng/pqe-curriculum" },
+  },
 };

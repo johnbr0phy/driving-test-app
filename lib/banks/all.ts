@@ -105,3 +105,8 @@ import "./mykpp";
 import "./hkdrive";
 import "./pkdrive";
 import "./phlet";
+import "./ngpolice";
+import "./cdcfib";
+import "./ngarmy";
+import "./ngcustoms";
+import "./trcnpqe";

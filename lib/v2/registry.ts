@@ -58,6 +58,10 @@ import { UPPOLICE } from "./exams/uppolice";
 import { IBPSCLERK } from "./exams/ibpsclerk";
 import { JNVST } from "./exams/jnvst";
 import { JAMBENG } from "./exams/jambeng";
+import { JAMBMATH } from "./exams/jambmath";
+import { JAMBBIO } from "./exams/jambbio";
+import { JAMBCHEM } from "./exams/jambchem";
+import { JAMBPHYS } from "./exams/jambphys";
 import { APPSYCH } from "./exams/appsych";
 import { SBICLERK } from "./exams/sbiclerk";
 import { SBIPO } from "./exams/sbipo";
@@ -67,6 +71,7 @@ import { RAJPOLICE } from "./exams/rajpolice";
 import { DELHIPOLICE } from "./exams/delhipolice";
 import { MPPOLICE } from "./exams/mppolice";
 import { APUSH } from "./exams/apush";
+import { APGOV } from "./exams/apgov";
 import { APBIO } from "./exams/apbio";
 import { PHCSE } from "./exams/phcse";
 import { UPSCSE } from "./exams/upscse";
@@ -89,7 +94,7 @@ import { AISSEE } from "./exams/aissee";
 import { APCALCAB } from "./exams/apcalcab";
 import { APHUG } from "./exams/aphug";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, APPSYCH, APUSH, APWORLD, APHUG, APLANG, APBIO, APCALCAB, GRE, GMAT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, CCNA, PMP, CAPM, PSM, ITIL, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
+export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, GRE, GMAT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, CCNA, PMP, CAPM, PSM, ITIL, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
 
 export function getExamV2(id: string): ExamV2Config {
   const exam = EXAMS_V2.find((e) => e.id === id);

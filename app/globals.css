@@ -2691,6 +2691,147 @@
     --brand-gradient-to: 69 25% 96%;
   }
 
+
+  /* JAMB Mathematics theme: deep green (v2 exam; matches lib/v2/exams/jambmath.ts theme) */
+  [data-theme="jambmath"] {
+    --brand: 151 45% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 151 45% 95%;
+    --brand-hover: 151 45% 26%;
+    --brand-dark: 151 45% 22%;
+    --brand-darker: 151 40% 12%;
+    --brand-muted: 151 20% 70%;
+    --brand-border: 151 30% 80%;
+    --brand-border-light: 151 30% 90%;
+    --brand-gradient-to: 131 40% 96%;
+  }
+
+  /* JAMB Biology theme: muted leaf green (v2 exam; matches lib/v2/exams/jambbio.ts theme) */
+  [data-theme="jambbio"] {
+    --brand: 135 30% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 135 30% 96%;
+    --brand-hover: 135 30% 32%;
+    --brand-dark: 135 30% 28%;
+    --brand-darker: 135 30% 18%;
+    --brand-muted: 135 20% 70%;
+    --brand-border: 135 25% 80%;
+    --brand-border-light: 135 25% 90%;
+    --brand-gradient-to: 125 30% 96%;
+  }
+
+  /* JAMB Chemistry theme: muted slate cyan (v2 exam; matches lib/v2/exams/jambchem.ts theme) */
+  [data-theme="jambchem"] {
+    --brand: 186 15% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 186 15% 96%;
+    --brand-hover: 186 15% 37%;
+    --brand-dark: 186 15% 32%;
+    --brand-darker: 186 15% 22%;
+    --brand-muted: 186 10% 70%;
+    --brand-border: 186 12% 80%;
+    --brand-border-light: 186 12% 90%;
+    --brand-gradient-to: 190 15% 97%;
+  }
+
+  /* JAMB Physics theme: slate indigo (v2 exam; matches lib/v2/exams/jambphys.ts theme) */
+  [data-theme="jambphys"] {
+    --brand: 231 36% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 231 36% 96%;
+    --brand-hover: 231 36% 34%;
+    --brand-dark: 231 36% 30%;
+    --brand-darker: 231 32% 16%;
+    --brand-muted: 231 20% 70%;
+    --brand-border: 231 28% 82%;
+    --brand-border-light: 231 28% 91%;
+    --brand-gradient-to: 225 30% 97%;
+  }
+
+  /* AP U.S. Government and Politics theme: deep brick (v2 exam; matches lib/v2/exams/apgov.ts theme) */
+  [data-theme="apgov"] {
+    --brand: 5 30% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 5 30% 96%;
+    --brand-hover: 5 30% 26%;
+    --brand-dark: 5 30% 24%;
+    --brand-darker: 5 30% 14%;
+    --brand-muted: 5 15% 70%;
+    --brand-border: 5 20% 82%;
+    --brand-border-light: 5 20% 91%;
+    --brand-gradient-to: 20 30% 96%;
+  }
+
+  /* Nigeria Police recruitment theme */
+  [data-theme="ngpolice"] {
+    --brand: 235 65% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 235 55% 95%;
+    --brand-hover: 235 65% 25%;
+    --brand-dark: 235 65% 22%;
+    --brand-darker: 235 60% 15%;
+    --brand-muted: 235 30% 68%;
+    --brand-border: 235 30% 78%;
+    --brand-border-light: 235 28% 88%;
+    --brand-gradient-to: 215 45% 95%;
+  }
+
+  /* CDCFIB recruitment theme */
+  [data-theme="cdcfib"] {
+    --brand: 10 30% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 10 40% 95%;
+    --brand-hover: 10 30% 35%;
+    --brand-dark: 10 30% 32%;
+    --brand-darker: 10 30% 23%;
+    --brand-muted: 10 20% 68%;
+    --brand-border: 10 22% 80%;
+    --brand-border-light: 10 22% 89%;
+    --brand-gradient-to: 31 40% 95%;
+  }
+
+  /* Nigerian Army recruitment theme */
+  [data-theme="ngarmy"] {
+    --brand: 80 18% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 80 25% 95%;
+    --brand-hover: 80 18% 26%;
+    --brand-dark: 80 18% 22%;
+    --brand-darker: 80 16% 16%;
+    --brand-muted: 80 12% 68%;
+    --brand-border: 80 12% 78%;
+    --brand-border-light: 80 12% 88%;
+    --brand-gradient-to: 60 25% 95%;
+  }
+
+  /* Nigeria Customs recruitment theme */
+  [data-theme="ngcustoms"] {
+    --brand: 184 20% 33%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 184 25% 95%;
+    --brand-hover: 184 20% 28%;
+    --brand-dark: 184 22% 24%;
+    --brand-darker: 184 24% 16%;
+    --brand-muted: 184 14% 66%;
+    --brand-border: 184 14% 78%;
+    --brand-border-light: 184 14% 88%;
+    --brand-gradient-to: 170 25% 95%;
+  }
+
+  /* Nigeria TRCN PQE theme */
+  [data-theme="trcnpqe"] {
+    --brand: 170 20% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 170 30% 95%;
+    --brand-hover: 170 20% 32%;
+    --brand-dark: 170 20% 27%;
+    --brand-darker: 170 20% 18%;
+    --brand-muted: 170 15% 70%;
+    --brand-border: 170 16% 80%;
+    --brand-border-light: 170 16% 89%;
+    --brand-gradient-to: 195 30% 95%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -4984,6 +5125,126 @@
     --brand-muted: 57 15% 45%;
     --brand-dark: 57 25% 65%;
     --brand-darker: 57 25% 78%;
+  }
+
+  .dark [data-theme="jambmath"] {
+    --brand: 151 45% 35.5%;
+    --brand-hover: 151 45% 27.5%;
+    --brand-light: 151 45% 13%;
+    --brand-gradient-to: 131 40% 11%;
+    --brand-border-light: 151 30% 24%;
+    --brand-border: 151 30% 34%;
+    --brand-muted: 151 20% 45%;
+    --brand-dark: 151 45% 65%;
+    --brand-darker: 151 40% 78%;
+  }
+
+  .dark [data-theme="jambbio"] {
+    --brand: 135 30% 39.1%;
+    --brand-hover: 135 30% 32%;
+    --brand-light: 135 30% 13%;
+    --brand-gradient-to: 125 30% 11%;
+    --brand-border-light: 135 25% 24%;
+    --brand-border: 135 25% 34%;
+    --brand-muted: 135 20% 45%;
+    --brand-dark: 135 30% 65%;
+    --brand-darker: 135 30% 78%;
+  }
+
+  .dark [data-theme="jambchem"] {
+    --brand: 186 15% 42.8%;
+    --brand-hover: 186 15% 37%;
+    --brand-light: 186 15% 13%;
+    --brand-gradient-to: 190 15% 11%;
+    --brand-border-light: 186 12% 24%;
+    --brand-border: 186 12% 34%;
+    --brand-muted: 186 10% 45%;
+    --brand-dark: 186 15% 65%;
+    --brand-darker: 186 15% 78%;
+  }
+
+  .dark [data-theme="jambphys"] {
+    --brand: 231 36% 50%;
+    --brand-hover: 231 36% 42%;
+    --brand-light: 231 36% 13%;
+    --brand-gradient-to: 225 30% 11%;
+    --brand-border-light: 231 28% 24%;
+    --brand-border: 231 28% 34%;
+    --brand-muted: 231 20% 45%;
+    --brand-dark: 231 36% 65%;
+    --brand-darker: 231 32% 78%;
+  }
+
+  .dark [data-theme="apgov"] {
+    --brand: 5 30% 50%;
+    --brand-hover: 5 30% 42%;
+    --brand-light: 5 30% 13%;
+    --brand-gradient-to: 20 30% 11%;
+    --brand-border-light: 5 20% 24%;
+    --brand-border: 5 20% 34%;
+    --brand-muted: 5 15% 45%;
+    --brand-dark: 5 30% 65%;
+    --brand-darker: 5 30% 78%;
+  }
+
+  .dark [data-theme="ngpolice"] {
+    --brand: 235 65% 50%;
+    --brand-hover: 235 65% 42%;
+    --brand-light: 235 45% 13%;
+    --brand-gradient-to: 215 40% 11%;
+    --brand-border-light: 235 28% 24%;
+    --brand-border: 235 30% 34%;
+    --brand-muted: 235 30% 45%;
+    --brand-dark: 235 65% 66%;
+    --brand-darker: 235 60% 78%;
+  }
+
+  .dark [data-theme="cdcfib"] {
+    --brand: 10 30% 49.3%;
+    --brand-hover: 10 30% 41.3%;
+    --brand-light: 10 40% 13%;
+    --brand-gradient-to: 31 40% 11%;
+    --brand-border-light: 10 22% 24%;
+    --brand-border: 10 22% 34%;
+    --brand-muted: 10 20% 45%;
+    --brand-dark: 10 30% 65%;
+    --brand-darker: 10 30% 78%;
+  }
+
+  .dark [data-theme="ngarmy"] {
+    --brand: 80 18% 40.5%;
+    --brand-hover: 80 18% 32.5%;
+    --brand-light: 80 25% 13%;
+    --brand-gradient-to: 60 25% 11%;
+    --brand-border-light: 80 12% 24%;
+    --brand-border: 80 12% 34%;
+    --brand-muted: 80 12% 45%;
+    --brand-dark: 80 18% 65%;
+    --brand-darker: 80 16% 78%;
+  }
+
+  .dark [data-theme="ngcustoms"] {
+    --brand: 184 20% 41.4%;
+    --brand-hover: 184 20% 33.4%;
+    --brand-light: 184 25% 13%;
+    --brand-gradient-to: 170 25% 11%;
+    --brand-border-light: 184 14% 24%;
+    --brand-border: 184 14% 34%;
+    --brand-muted: 184 14% 45%;
+    --brand-dark: 184 22% 65%;
+    --brand-darker: 184 24% 78%;
+  }
+
+  .dark [data-theme="trcnpqe"] {
+    --brand: 170 20% 40.8%;
+    --brand-hover: 170 20% 32.8%;
+    --brand-light: 170 30% 13%;
+    --brand-gradient-to: 195 30% 11%;
+    --brand-border-light: 170 16% 24%;
+    --brand-border: 170 16% 34%;
+    --brand-muted: 170 15% 45%;
+    --brand-dark: 170 20% 65%;
+    --brand-darker: 170 20% 78%;
   }
 
 }

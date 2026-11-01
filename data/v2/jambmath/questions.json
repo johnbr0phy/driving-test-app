@@ -1,0 +1,4360 @@
+[
+  {
+    "id": "JAMBMATH-T1-001",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Number bases",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Convert $213_{4}$ to a number in base ten.",
+    "options": [
+      "39",
+      "54",
+      "58",
+      "213"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$213_{4} = 2 \\times 4^2 + 1 \\times 4 + 3 = 32 + 4 + 3 = 39$. Reading the digits from the wrong end, $3 \\times 16 + 1 \\times 4 + 2$, gives 54, and treating them as base five gives 58."
+  },
+  {
+    "id": "JAMBMATH-T1-002",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Percentage error",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rod is 2.45 m long. Kunle measures it as 2.5 m. What is his percentage error, correct to 2 decimal places?",
+    "options": [
+      "1.96%",
+      "2.00%",
+      "2.04%",
+      "2.50%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Error = $2.5 - 2.45 = 0.05$ m. Percentage error = $\\frac{0.05}{2.45} \\times 100 = 2.04\\%$. Dividing by the measured value 2.5 instead of the true length gives 2.00%."
+  },
+  {
+    "id": "JAMBMATH-T1-003",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Fractional indices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $\\left(\\frac{8}{125}\\right)^{-\\frac{2}{3}}$.",
+    "options": [
+      "$\\frac{4}{25}$",
+      "$\\frac{5}{2}$",
+      "$\\frac{25}{8}$",
+      "$\\frac{25}{4}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The negative index inverts the fraction: $\\left(\\frac{125}{8}\\right)^{\\frac{2}{3}}$. The cube root is $\\frac{5}{2}$, and squaring gives $\\frac{25}{4}$. Forgetting to invert gives $\\frac{4}{25}$."
+  },
+  {
+    "id": "JAMBMATH-T1-004",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Laws of logarithms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Given that $\\log 2 = 0.3010$ and $\\log 3 = 0.4771$, find $\\log 72$.",
+    "options": [
+      "1.5562",
+      "1.7781",
+      "1.8572",
+      "2.0792"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$72 = 2^3 \\times 3^2$, so $\\log 72 = 3(0.3010) + 2(0.4771) = 0.9030 + 0.9542 = 1.8572$. The value 1.5562 is $\\log 36$, which uses only $2^2$."
+  },
+  {
+    "id": "JAMBMATH-T1-005",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Surds",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify $\\sqrt{75} - \\sqrt{27} + \\sqrt{12}$.",
+    "options": [
+      "$4\\sqrt{3}$",
+      "$\\sqrt{60}$",
+      "$5\\sqrt{3}$",
+      "$6\\sqrt{3}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sqrt{75} = 5\\sqrt{3}$, $\\sqrt{27} = 3\\sqrt{3}$ and $\\sqrt{12} = 2\\sqrt{3}$, so the expression is $(5 - 3 + 2)\\sqrt{3} = 4\\sqrt{3}$. Surds cannot be combined under one root sign, so $\\sqrt{75 - 27 + 12}$ is wrong."
+  },
+  {
+    "id": "JAMBMATH-T1-006",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Venn diagrams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a class of 50 students, 32 offer Physics, 26 offer Chemistry and 6 offer neither. How many offer both subjects?",
+    "options": [
+      "8",
+      "12",
+      "14",
+      "20"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$50 - 6 = 44$ students offer at least one. $32 + 26 - x = 44$, so $x = 14$. Forgetting the 6 who offer neither gives 8."
+  },
+  {
+    "id": "JAMBMATH-T1-007",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Remainder theorem",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the remainder when $2x^3 - 5x^2 + 4x - 7$ is divided by $x - 3$.",
+    "options": [
+      "-118",
+      "-10",
+      "2",
+      "14"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "By the remainder theorem the remainder is $f(3) = 54 - 45 + 12 - 7 = 14$. Substituting $x = -3$ instead gives $-118$."
+  },
+  {
+    "id": "JAMBMATH-T1-008",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Factor theorem",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $x + 2$ is a factor of $x^3 + kx^2 + 3x - 10$, find $k$.",
+    "options": [
+      "-6",
+      "-1",
+      "3",
+      "6"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$f(-2) = -8 + 4k - 6 - 10 = 4k - 24$. For a factor this is zero, so $k = 6$. Using $f(2) = 0$ instead gives $4k + 4 = 0$ and $k = -1$, and writing $3(-2)$ as $+6$ gives $k = 3$."
+  },
+  {
+    "id": "JAMBMATH-T1-009",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Change of subject",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Make $m$ the subject of $T = 2\\sqrt{\\frac{m + k}{p}}$.",
+    "options": [
+      "$m = \\frac{T^2}{4p} - k$",
+      "$m = \\frac{pT^2}{2} - k$",
+      "$m = \\frac{pT^2}{4} - k$",
+      "$m = \\frac{pT^2 - k}{4}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Divide by 2 and square: $\\frac{T^2}{4} = \\frac{m + k}{p}$. Multiply by $p$: $m + k = \\frac{pT^2}{4}$, so $m = \\frac{pT^2}{4} - k$. Forgetting to square the 2 gives $\\frac{pT^2}{2} - k$."
+  },
+  {
+    "id": "JAMBMATH-T1-010",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Joint variation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$y$ varies directly as $x$ and inversely as the square of $z$. When $x = 4$ and $z = 2$, $y = 6$. Find $y$ when $x = 10$ and $z = 5$.",
+    "options": [
+      "$\\frac{6}{5}$",
+      "$\\frac{12}{5}$",
+      "$6$",
+      "$15$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$y = \\frac{kx}{z^2}$, so $6 = \\frac{4k}{4}$ and $k = 6$. Then $y = \\frac{6 \\times 10}{25} = \\frac{12}{5}$. Forgetting to square $z$ gives $k = 3$ and $y = 6$."
+  },
+  {
+    "id": "JAMBMATH-T1-011",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Quadratic inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $x^2 - x - 12 < 0$.",
+    "options": [
+      "$-4 < x < 3$",
+      "$x < -4$ or $x > 3$",
+      "$-3 < x < 4$",
+      "$x < -3$ or $x > 4$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$x^2 - x - 12 = (x - 4)(x + 3)$, which is negative between its roots, so $-3 < x < 4$. Outside the roots the product is positive."
+  },
+  {
+    "id": "JAMBMATH-T1-012",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Arithmetic progression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The 4th term of an arithmetic progression is 17 and the 9th term is 42. Find the 15th term.",
+    "options": [
+      "72",
+      "75",
+      "77",
+      "87"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$a + 3d = 17$ and $a + 8d = 42$ give $5d = 25$, $d = 5$ and $a = 2$. The 15th term is $a + 14d = 2 + 70 = 72$. Using $a + 15d$ gives 77."
+  },
+  {
+    "id": "JAMBMATH-T1-013",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Sum to infinity of a GP",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the sum to infinity of the geometric progression $24, -12, 6, -3, \\ldots$",
+    "options": [
+      "16",
+      "24",
+      "36",
+      "48"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$r = -\\frac{12}{24} = -\\frac{1}{2}$, so $S_\\infty = \\frac{a}{1 - r} = \\frac{24}{1 + \\frac{1}{2}} = 16$. Taking $r = +\\frac{1}{2}$ gives 48."
+  },
+  {
+    "id": "JAMBMATH-T1-014",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Binary operations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A binary operation $*$ is defined on the real numbers by $a * b = a^2 - b$. Find $(3 * 5) * 7$.",
+    "options": [
+      "-9",
+      "4",
+      "9",
+      "16"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$3 * 5 = 9 - 5 = 4$, then $4 * 7 = 16 - 7 = 9$. Working from the right, $3 * (5 * 7) = 3 * 18 = -9$, which is a different value because $*$ is not associative."
+  },
+  {
+    "id": "JAMBMATH-T1-015",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Determinants",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $\\begin{vmatrix} 2 & 1 & -1 \\\\ 0 & 3 & 4 \\\\ 1 & -2 & 2 \\end{vmatrix}$.",
+    "options": [
+      "19",
+      "27",
+      "29",
+      "35"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Expand along the first row: $2(6 + 8) - 1(0 - 4) + (-1)(0 - 3) = 28 + 4 + 3 = 35$. Forgetting the minus sign on the middle term gives 27."
+  },
+  {
+    "id": "JAMBMATH-T1-016",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Inverse of a matrix",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the inverse of $\\begin{pmatrix} 3 & 2 \\\\ 4 & 5 \\end{pmatrix}$.",
+    "options": [
+      "$\\frac{1}{7}\\begin{pmatrix} -5 & 2 \\\\ 4 & -3 \\end{pmatrix}$",
+      "$\\frac{1}{7}\\begin{pmatrix} 3 & -2 \\\\ -4 & 5 \\end{pmatrix}$",
+      "$\\frac{1}{23}\\begin{pmatrix} 5 & -2 \\\\ -4 & 3 \\end{pmatrix}$",
+      "$\\frac{1}{7}\\begin{pmatrix} 5 & -2 \\\\ -4 & 3 \\end{pmatrix}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The determinant is $15 - 8 = 7$. Swap the leading diagonal, change the signs of the other two entries and divide by 7: $\\frac{1}{7}\\begin{pmatrix} 5 & -2 \\\\ -4 & 3 \\end{pmatrix}$. Adding the products gives 23, not the determinant."
+  },
+  {
+    "id": "JAMBMATH-T1-017",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Polygons",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Each interior angle of a regular polygon is 162°. How many sides does it have?",
+    "options": [
+      "9",
+      "10",
+      "18",
+      "20"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each exterior angle is $180° - 162° = 18°$, and the exterior angles add up to 360°, so there are $\\frac{360}{18} = 20$ sides. 18 is the exterior angle, and dividing 180 instead of 360 by it gives 10."
+  },
+  {
+    "id": "JAMBMATH-T1-018",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Angle properties of circles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A, B and C are points on a circle with centre O, and $\\angle ABC = 58°$ is the angle subtended at B by the minor arc AC. Find $\\angle AOC$.",
+    "options": [
+      "29°",
+      "58°",
+      "64°",
+      "116°"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The angle at the centre is twice the angle at the circumference on the same arc: $\\angle AOC = 2 \\times 58° = 116°$. Halving instead gives 29°."
+  },
+  {
+    "id": "JAMBMATH-T1-019",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Sectors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the area of a sector of a circle of radius 14 cm whose angle at the centre is 135°. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "154 cm²",
+      "231 cm²",
+      "308 cm²",
+      "616 cm²"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Area $= \\frac{135}{360} \\times \\frac{22}{7} \\times 14^2 = \\frac{3}{8} \\times 616 = 231$ cm². The whole circle is 616 cm²."
+  },
+  {
+    "id": "JAMBMATH-T1-020",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Volumes of solids",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cone has base radius 7 cm and height 12 cm. Find its volume. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "308 cm³",
+      "616 cm³",
+      "924 cm³",
+      "1,848 cm³"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3} \\times \\frac{22}{7} \\times 49 \\times 12 = 616$ cm³. Leaving out the $\\frac{1}{3}$ gives 1,848 cm³, the volume of a cylinder."
+  },
+  {
+    "id": "JAMBMATH-T1-021",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "The earth as a sphere",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two towns are on latitude 60°N, one on longitude 15°E and the other on longitude 45°W. Find the distance between them along the parallel of latitude, to the nearest km. (Take $\\pi = \\frac{22}{7}$ and $R = 6400$ km.)",
+    "options": [
+      "1676 km",
+      "3352 km",
+      "5806 km",
+      "6705 km"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The longitude difference is $15° + 45° = 60°$. Distance $= \\frac{60}{360} \\times 2\\pi R \\cos 60° = \\frac{1}{6} \\times 40228.6 \\times 0.5 = 3352$ km. Leaving out $\\cos 60°$ gives 6705 km."
+  },
+  {
+    "id": "JAMBMATH-T1-022",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Loci",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the locus of points in a plane that are equidistant from two fixed points P and Q?",
+    "options": [
+      "a line parallel to PQ",
+      "the perpendicular bisector of PQ",
+      "a circle with diameter PQ",
+      "the straight line through P and Q"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Every point on the perpendicular bisector of PQ is the same distance from P as from Q, and no other point is. A circle on diameter PQ is the locus of points where PQ subtends a right angle."
+  },
+  {
+    "id": "JAMBMATH-T1-023",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Distance between two points",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the distance between the points (-3, 5) and (4, -19).",
+    "options": [
+      "15",
+      "21",
+      "25",
+      "31"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$d = \\sqrt{(4 + 3)^2 + (-19 - 5)^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25$. Adding the differences, $7 + 24$, gives 31."
+  },
+  {
+    "id": "JAMBMATH-T1-024",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Perpendicular lines",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the equation of the line through (3, -2) that is perpendicular to $5x - 2y + 4 = 0$.",
+    "options": [
+      "$2x + 5y + 4 = 0$",
+      "$2x - 5y - 16 = 0$",
+      "$5x - 2y - 19 = 0$",
+      "$5x + 2y - 11 = 0$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The given line has gradient $\\frac{5}{2}$, so the perpendicular has gradient $-\\frac{2}{5}$: $y + 2 = -\\frac{2}{5}(x - 3)$, or $2x + 5y + 4 = 0$. All four lines pass through (3, -2); $5x - 2y - 19 = 0$ is the parallel one."
+  },
+  {
+    "id": "JAMBMATH-T1-025",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Bearings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Y is 5 km due east of X and Z is $5\\sqrt{3}$ km due north of X. Find the bearing of Y from Z.",
+    "options": [
+      "030°",
+      "060°",
+      "120°",
+      "150°"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "From Z, Y is south and east. In the right triangle, $\\tan \\angle XZY = \\frac{5}{5\\sqrt{3}} = \\frac{1}{\\sqrt{3}}$, so the angle from due south is 30°. The bearing is $180° - 30° = 150°$. 030° measures the same angle from north."
+  },
+  {
+    "id": "JAMBMATH-T1-026",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Angles of elevation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "From a point on level ground 18 m from the foot of a vertical tower, the angle of elevation of the top of the tower is 60°. Find the height of the tower.",
+    "options": [
+      "$9\\text{ m}$",
+      "$6\\sqrt{3}\\text{ m}$",
+      "$9\\sqrt{3}\\text{ m}$",
+      "$18\\sqrt{3}\\text{ m}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\tan 60° = \\frac{h}{18}$, so $h = 18\\sqrt{3}$ m (about 31 m). Using $\\tan 30° = \\frac{1}{\\sqrt{3}}$ gives $6\\sqrt{3}$ m, $\\cos 60°$ gives 9 m, and treating 18 m as the slant line with $\\sin 60°$ gives $9\\sqrt{3}$ m."
+  },
+  {
+    "id": "JAMBMATH-T1-027",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Cosine rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two sides of a triangle are 7 cm and 8 cm and the angle between them is 60°. Find the third side.",
+    "options": [
+      "$\\sqrt{57}\\text{ cm}$",
+      "$\\sqrt{85}\\text{ cm}$",
+      "$\\sqrt{113}\\text{ cm}$",
+      "$13\\text{ cm}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$c^2 = 7^2 + 8^2 - 2(7)(8)\\cos 60° = 49 + 64 - 56 = 57$, so $c = \\sqrt{57}$ cm. Adding the last term gives $\\sqrt{169} = 13$, and leaving it out gives $\\sqrt{113}$."
+  },
+  {
+    "id": "JAMBMATH-T1-028",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Limits",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $\\lim_{x \\to 3} \\frac{x^2 - 9}{x^2 - x - 6}$.",
+    "options": [
+      "$0$",
+      "$\\frac{3}{5}$",
+      "$1$",
+      "$\\frac{6}{5}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Factorise: $\\frac{(x - 3)(x + 3)}{(x - 3)(x + 2)} = \\frac{x + 3}{x + 2}$, which is $\\frac{6}{5}$ at $x = 3$. Substituting directly gives $\\frac{0}{0}$, not 0."
+  },
+  {
+    "id": "JAMBMATH-T1-029",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Differentiation of algebraic functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $y = \\frac{x^3 - 4x}{x^2}$, find $\\frac{dy}{dx}$.",
+    "options": [
+      "$1 + \\frac{4}{x^2}$",
+      "$1 - \\frac{4}{x^2}$",
+      "$1 + \\frac{4}{x}$",
+      "$\\frac{3x^2 - 4}{2x}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Simplify first: $y = x - 4x^{-1}$, so $\\frac{dy}{dx} = 1 + 4x^{-2} = 1 + \\frac{4}{x^2}$. Differentiating the top and bottom separately gives $\\frac{3x^2 - 4}{2x}$, which is wrong."
+  },
+  {
+    "id": "JAMBMATH-T1-030",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Maxima and minima",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A farmer has 120 m of fencing to enclose a rectangular pen against a long straight wall, so only three sides need fencing. What is the greatest area he can enclose?",
+    "options": [
+      "900 m²",
+      "1200 m²",
+      "1600 m²",
+      "1800 m²"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "With the two sides at right angles to the wall $x$ m long, the area is $A = x(120 - 2x)$. $\\frac{dA}{dx} = 120 - 4x = 0$ at $x = 30$, so $A = 30 \\times 60 = 1800$ m². A square with all four sides fenced would give 900 m²."
+  },
+  {
+    "id": "JAMBMATH-T1-031",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Area under a curve",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the area enclosed by $y = x^2 + 2$, the x-axis and the lines $x = 1$ and $x = 3$.",
+    "options": [
+      "$\\frac{26}{3}$",
+      "$\\frac{32}{3}$",
+      "$\\frac{38}{3}$",
+      "$\\frac{44}{3}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\int_1^3 (x^2 + 2)\\,dx = \\left[\\frac{x^3}{3} + 2x\\right]_1^3 = (9 + 6) - \\left(\\frac{1}{3} + 2\\right) = \\frac{38}{3}$. Leaving out the $2x$ term gives $\\frac{26}{3}$."
+  },
+  {
+    "id": "JAMBMATH-T1-032",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Pie charts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A family spends ₦18,000 on food, ₦12,000 on rent, ₦6,000 on transport and ₦9,000 on other items in a month. In a pie chart of this spending, what angle represents rent?",
+    "options": [
+      "48°",
+      "72°",
+      "96°",
+      "120°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Total spending is ₦45,000. Rent's angle is $\\frac{12000}{45000} \\times 360° = 96°$. 48° is the transport sector, and 72° the other items."
+  },
+  {
+    "id": "JAMBMATH-T1-033",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Mean of a frequency distribution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The scores 1, 2, 3, 4 and 5 occur with frequencies 3, 5, 8, 6 and 3. Find the mean score.",
+    "options": [
+      "3.04",
+      "3.2",
+      "3.8",
+      "15.2"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\Sigma fx = 3 + 10 + 24 + 24 + 15 = 76$ and $\\Sigma f = 25$, so the mean is $\\frac{76}{25} = 3.04$. Dividing by 5, the number of different scores, gives 15.2."
+  },
+  {
+    "id": "JAMBMATH-T1-034",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Median",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the median of 12, 7, 15, 9, 21, 7, 18 and 10.",
+    "options": [
+      "11",
+      "12",
+      "15",
+      "21"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "In order: 7, 7, 9, 10, 12, 15, 18, 21. With 8 values the median is the mean of the 4th and 5th: $\\frac{10 + 12}{2} = 11$. Taking the middle two of the unsorted list, 9 and 21, gives 15."
+  },
+  {
+    "id": "JAMBMATH-T1-035",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Standard deviation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the standard deviation of 3, 5, 9, 11 and 12.",
+    "options": [
+      "$\\frac{16}{5}$",
+      "$2\\sqrt{3}$",
+      "$\\sqrt{15}$",
+      "$12$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The mean is 8. The squared deviations are 25, 9, 1, 9 and 16, which add to 60, so the variance is $\\frac{60}{5} = 12$ and the standard deviation is $\\sqrt{12} = 2\\sqrt{3}$. Dividing by 4 gives $\\sqrt{15}$, and $\\frac{16}{5}$ is the mean deviation."
+  },
+  {
+    "id": "JAMBMATH-T1-036",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Mode",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Shoe sizes in a class are 38, 39, 40, 41, 42 and 43 with frequencies 4, 9, 15, 11, 6 and 2. What is the modal size?",
+    "options": [
+      "15",
+      "39",
+      "40",
+      "41"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The mode is the value with the greatest frequency: size 40 occurs 15 times. 15 is the frequency, not the size."
+  },
+  {
+    "id": "JAMBMATH-T1-037",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Arrangements with repeated objects",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In how many different ways can the letters of the word OSOGBO be arranged?",
+    "options": [
+      "60",
+      "120",
+      "360",
+      "720"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "OSOGBO has 6 letters with O repeated 3 times, so there are $\\frac{6!}{3!} = \\frac{720}{6} = 120$ arrangements. 720 ignores the repeated O's."
+  },
+  {
+    "id": "JAMBMATH-T1-038",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Combinations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A committee of 4 is to be chosen from 6 men and 5 women. In how many ways can it be chosen if it must have exactly 2 women?",
+    "options": [
+      "150",
+      "210",
+      "300",
+      "330"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Choose 2 of the 5 women in $^5C_2 = 10$ ways and 2 of the 6 men in $^6C_2 = 15$ ways: $10 \\times 15 = 150$. 330 is $^{11}C_4$, every committee of 4 with no condition."
+  },
+  {
+    "id": "JAMBMATH-T1-039",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Independent events",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The probability that Amaka passes an examination is $\\frac{3}{4}$ and the probability that Tobi passes is $\\frac{2}{3}$. Find the probability that exactly one of them passes.",
+    "options": [
+      "$\\frac{5}{12}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{7}{12}$",
+      "$\\frac{11}{12}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$P(\\text{Amaka only}) + P(\\text{Tobi only}) = \\frac{3}{4} \\times \\frac{1}{3} + \\frac{1}{4} \\times \\frac{2}{3} = \\frac{3}{12} + \\frac{2}{12} = \\frac{5}{12}$. $\\frac{1}{2}$ is the chance that both pass, and $\\frac{11}{12}$ that at least one does."
+  },
+  {
+    "id": "JAMBMATH-T1-040",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Multiplication of probabilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bag contains 7 red and 5 blue balls. Two balls are drawn one after the other without replacement. What is the probability that both are red?",
+    "options": [
+      "$\\frac{5}{33}$",
+      "$\\frac{7}{24}$",
+      "$\\frac{7}{22}$",
+      "$\\frac{49}{144}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$P = \\frac{7}{12} \\times \\frac{6}{11} = \\frac{42}{132} = \\frac{7}{22}$. With replacement it would be $\\frac{49}{144}$, keeping 12 as the second denominator gives $\\frac{7}{24}$, and $\\frac{5}{33}$ is the chance that both are blue."
+  },
+  {
+    "id": "JAMBMATH-T2-001",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Number bases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the digit $x$ if $1x3_{5} = 48_{10}$.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$1 \\times 25 + 5x + 3 = 48$, so $5x = 20$ and $x = 4$. A digit in base five can be at most 4, so the answer fits the base."
+  },
+  {
+    "id": "JAMBMATH-T2-002",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Simple interest",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ngozi saves ₦45,000 in a scheme that pays simple interest at 6% per annum. How much interest does she earn in 3 years?",
+    "options": [
+      "₦2,700",
+      "₦8,100",
+      "₦8,600",
+      "₦53,100"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$I = \\frac{PRT}{100} = \\frac{45000 \\times 6 \\times 3}{100} = 8100$, so ₦8,100. The amount at the end, interest plus principal, is ₦53,100; ₦2,700 is one year's interest."
+  },
+  {
+    "id": "JAMBMATH-T2-003",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Profit and loss",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A trader in Onitsha bought a bag of rice for ₦24,000 and sold it at a loss of 15%. What was the selling price?",
+    "options": [
+      "₦20,400",
+      "₦20,870",
+      "₦21,600",
+      "₦27,600"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Selling price = $85\\%$ of ₦24,000 = $0.85 \\times 24000 = 20400$. ₦27,600 is a 15% gain, and ₦20,870 comes from dividing by 1.15 instead of multiplying by 0.85."
+  },
+  {
+    "id": "JAMBMATH-T2-004",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Standard form and significant figures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Express 0.00048072 in standard form, correct to 3 significant figures.",
+    "options": [
+      "$4.80 \\times 10^{-4}$",
+      "$4.81 \\times 10^{-4}$",
+      "$4.81 \\times 10^{-3}$",
+      "$4.81 \\times 10^{4}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The first significant figure is the 4 in the fourth decimal place, so the power is $10^{-4}$. To 3 significant figures 4.8072 rounds up to 4.81 because the next digit is 7."
+  },
+  {
+    "id": "JAMBMATH-T2-005",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Logarithms to a given base",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $\\log_{3}(2x + 1) = 4$.",
+    "options": [
+      "$x = 5.5$",
+      "$x = 13$",
+      "$x = 31.5$",
+      "$x = 40$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$2x + 1 = 3^4 = 81$, so $2x = 80$ and $x = 40$. Using $3 \\times 4 = 12$ instead of $3^4$ gives 5.5, $4^3 = 64$ gives 31.5, and $3^3 = 27$ gives 13."
+  },
+  {
+    "id": "JAMBMATH-T2-006",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Algebra of sets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "P is the set of prime numbers less than 20 and Q is the set of odd numbers between 10 and 20. Find $P \\cap Q$.",
+    "options": [
+      "$\\{11, 13, 15, 17, 19\\}$",
+      "$\\{11, 13, 17\\}$",
+      "$\\{13, 17, 19\\}$",
+      "$\\{11, 13, 17, 19\\}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Q = {11, 13, 15, 17, 19}. All of these are prime except 15, so $P \\cap Q = \\{11, 13, 17, 19\\}$."
+  },
+  {
+    "id": "JAMBMATH-T2-007",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Linear and quadratic simultaneous equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve the simultaneous equations $y = 2x + 1$ and $y = x^2 - 2$.",
+    "options": [
+      "$(3, 7)$ and $(-1, -1)$",
+      "$(-3, -5)$ and $(1, 3)$",
+      "$(-1, -1)$ and $(2, 5)$",
+      "$(3, 7)$ and $(1, 3)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$x^2 - 2 = 2x + 1$ gives $x^2 - 2x - 3 = 0$, so $(x - 3)(x + 1) = 0$. Then $x = 3, y = 7$ or $x = -1, y = -1$. Both points satisfy both equations."
+  },
+  {
+    "id": "JAMBMATH-T2-008",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Factorisation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Factorise $6x^2 - 7x - 20$.",
+    "options": [
+      "$(3x - 4)(2x + 5)$",
+      "$(6x + 5)(x - 4)$",
+      "$(3x + 4)(2x - 5)$",
+      "$(2x + 4)(3x - 5)$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Look for two numbers with product $6 \\times (-20) = -120$ and sum $-7$: $-15$ and $8$. So $6x^2 - 15x + 8x - 20 = 3x(2x - 5) + 4(2x - 5) = (3x + 4)(2x - 5)$. Swapping the signs gives $+7x$."
+  },
+  {
+    "id": "JAMBMATH-T2-009",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Inverse variation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$P$ varies inversely as the square root of $Q$. $P = 9$ when $Q = 16$. Find $Q$ when $P = 12$.",
+    "options": [
+      "3",
+      "4.5",
+      "6",
+      "9"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$P = \\frac{k}{\\sqrt{Q}}$, so $k = 9 \\times 4 = 36$. When $P = 12$, $\\sqrt{Q} = 3$ and $Q = 9$. Stopping at $\\sqrt{Q} = 3$ gives the wrong answer 3."
+  },
+  {
+    "id": "JAMBMATH-T2-010",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Linear inequalities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Solve $\\frac{2x - 3}{4} - \\frac{x + 1}{3} \\geq 1$.",
+    "options": [
+      "$x \\geq \\frac{17}{2}$",
+      "$x \\leq \\frac{25}{2}$",
+      "$x \\geq \\frac{25}{2}$",
+      "$x \\geq 7$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Multiply by 12: $3(2x - 3) - 4(x + 1) \\geq 12$, so $6x - 9 - 4x - 4 \\geq 12$, $2x \\geq 25$ and $x \\geq \\frac{25}{2}$. Writing $-4(x + 1)$ as $-4x + 4$ gives $\\frac{17}{2}$."
+  },
+  {
+    "id": "JAMBMATH-T2-011",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Roots of quadratic equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "If $\\alpha$ and $\\beta$ are the roots of $3x^2 - 5x - 4 = 0$, find $\\alpha^2 + \\beta^2$.",
+    "options": [
+      "$\\frac{1}{9}$",
+      "$\\frac{17}{9}$",
+      "$\\frac{25}{9}$",
+      "$\\frac{49}{9}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\alpha + \\beta = \\frac{5}{3}$ and $\\alpha\\beta = -\\frac{4}{3}$. So $\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta = \\frac{25}{9} + \\frac{8}{3} = \\frac{49}{9}$. Subtracting $\\frac{8}{3}$ instead gives $\\frac{1}{9}$."
+  },
+  {
+    "id": "JAMBMATH-T2-012",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Sum of an AP",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the sum of the first 20 terms of the arithmetic progression $5, 9, 13, \\ldots$",
+    "options": [
+      "430",
+      "810",
+      "820",
+      "860"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$S_n = \\frac{n}{2}[2a + (n - 1)d] = 10(10 + 19 \\times 4) = 10 \\times 86 = 860$. Using $(n - 2)d$ instead of $(n - 1)d$ gives 820, $\\frac{n}{2} \\times l = 10 \\times 81$ without adding the first term gives 810, and 430 uses $\\frac{n}{4}$ in place of $\\frac{n}{2}$."
+  },
+  {
+    "id": "JAMBMATH-T2-013",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Geometric progression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The 3rd term of a geometric progression is 18 and the 6th term is 486. Find the first term.",
+    "options": [
+      "2",
+      "3",
+      "6",
+      "9"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$ar^2 = 18$ and $ar^5 = 486$, so $r^3 = 27$ and $r = 3$. Then $a = \\frac{18}{9} = 2$. The value 3 is the common ratio, not the first term."
+  },
+  {
+    "id": "JAMBMATH-T2-014",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Identity and inverse elements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The operation $\\circ$ is defined on the real numbers by $a \\circ b = a + b + 4$. Find the inverse of 3 under $\\circ$.",
+    "options": [
+      "-11",
+      "-7",
+      "-1",
+      "11"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Identity: $a + e + 4 = a$, so $e = -4$. Inverse of 3: $3 + b + 4 = -4$, so $b = -11$. Setting $3 + b + 4 = 0$ instead of the identity gives $-7$."
+  },
+  {
+    "id": "JAMBMATH-T2-015",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Matrix multiplication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $P = \\begin{pmatrix} 2 & -1 \\\\ 3 & 4 \\end{pmatrix}$ and $Q = \\begin{pmatrix} 1 & 5 \\\\ -2 & 0 \\end{pmatrix}$, find $PQ$.",
+    "options": [
+      "$\\begin{pmatrix} 2 & -5 \\\\ -6 & 0 \\end{pmatrix}$",
+      "$\\begin{pmatrix} 0 & 10 \\\\ -5 & 15 \\end{pmatrix}$",
+      "$\\begin{pmatrix} 4 & 10 \\\\ -5 & 15 \\end{pmatrix}$",
+      "$\\begin{pmatrix} 17 & 19 \\\\ -4 & 2 \\end{pmatrix}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Row by column: $2(1) + (-1)(-2) = 4$, $2(5) + (-1)(0) = 10$, $3(1) + 4(-2) = -5$ and $3(5) + 4(0) = 15$. Multiplying in the other order, $QP$, gives a different matrix."
+  },
+  {
+    "id": "JAMBMATH-T2-016",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Determinants",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find $x$ if $\\begin{vmatrix} x & 4 \\\\ 3 & x + 1 \\end{vmatrix} = 8$.",
+    "options": [
+      "$x = 4$ or $x = -5$",
+      "$x = 2$ or $x = -3$",
+      "$x = 4$ or $x = 5$",
+      "$x = -4$ or $x = 5$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$x(x + 1) - 12 = 8$ gives $x^2 + x - 20 = 0$, so $(x + 5)(x - 4) = 0$ and $x = 4$ or $x = -5$."
+  },
+  {
+    "id": "JAMBMATH-T2-017",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Triangles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In triangle PQR, PQ = PR and $\\angle QPR = 46°$. Find the exterior angle at R formed by producing QR beyond R.",
+    "options": [
+      "46°",
+      "67°",
+      "113°",
+      "134°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The base angles are equal: $\\frac{180° - 46°}{2} = 67°$. The exterior angle at R is $180° - 67° = 113°$. 67° is the interior angle."
+  },
+  {
+    "id": "JAMBMATH-T2-018",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Cyclic quadrilaterals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "ABCD is a cyclic quadrilateral with $\\angle DAB = 3x$ and $\\angle BCD = x + 24°$. Find $\\angle DAB$.",
+    "options": [
+      "39°",
+      "63°",
+      "99°",
+      "117°"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Opposite angles of a cyclic quadrilateral add up to 180°: $4x + 24 = 180$, so $x = 39$ and $\\angle DAB = 117°$. 39° is $x$, and 63° is $\\angle BCD$."
+  },
+  {
+    "id": "JAMBMATH-T2-019",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Chords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A chord of length 40 cm is 21 cm from the centre of a circle. Find the radius of the circle.",
+    "options": [
+      "29 cm",
+      "31 cm",
+      "37 cm",
+      "41 cm"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The perpendicular from the centre bisects the chord, so $r^2 = 20^2 + 21^2 = 400 + 441 = 841$ and $r = 29$ cm. Adding $20 + 21$ without squaring gives 41 cm."
+  },
+  {
+    "id": "JAMBMATH-T2-020",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Surface areas",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the total surface area of a closed cylinder of radius 3.5 cm and height 10 cm. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "220 cm²",
+      "258.5 cm²",
+      "297 cm²",
+      "385 cm²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Total surface area $= 2\\pi r(r + h) = 2 \\times \\frac{22}{7} \\times 3.5 \\times 13.5 = 297$ cm². The curved surface alone is 220 cm², and 385 is the volume in cm³."
+  },
+  {
+    "id": "JAMBMATH-T2-021",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Arcs",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An arc subtends 84° at the centre of a circle of radius 15 cm. Find the length of the arc. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "22 cm",
+      "33 cm",
+      "44 cm",
+      "165 cm"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Arc length $= \\frac{84}{360} \\times 2 \\times \\frac{22}{7} \\times 15 = \\frac{7}{30} \\times \\frac{660}{7} = 22$ cm. Using $\\pi r^2$ instead gives the sector area, 165 cm²."
+  },
+  {
+    "id": "JAMBMATH-T2-022",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Loci",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Find the equation of the locus of points equidistant from (1, 2) and (5, -4).",
+    "options": [
+      "$3x - 2y - 11 = 0$",
+      "$2x - 3y - 9 = 0$",
+      "$3x + 2y - 7 = 0$",
+      "$2x - 3y + 9 = 0$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The locus is the perpendicular bisector. Midpoint $(3, -1)$; the gradient of the segment is $\\frac{-6}{4} = -\\frac{3}{2}$, so the bisector has gradient $\\frac{2}{3}$: $y + 1 = \\frac{2}{3}(x - 3)$, or $2x - 3y - 9 = 0$. The line $3x + 2y - 7 = 0$ passes through the midpoint but is parallel to the segment."
+  },
+  {
+    "id": "JAMBMATH-T2-023",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Gradient of a line",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The gradient of the line through $(k, 3)$ and $(-2, 7)$ is $-\\frac{2}{3}$. Find $k$.",
+    "options": [
+      "-10",
+      "-4",
+      "2",
+      "4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{7 - 3}{-2 - k} = -\\frac{2}{3}$ gives $12 = -2(-2 - k) = 4 + 2k$, so $k = 4$. Check: $\\frac{4}{-6} = -\\frac{2}{3}$."
+  },
+  {
+    "id": "JAMBMATH-T2-024",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Parallel lines",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The lines $2y - kx + 3 = 0$ and $3y + 6x - 1 = 0$ are parallel. Find $k$.",
+    "options": [
+      "-4",
+      "-1",
+      "1",
+      "4"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The gradients are $\\frac{k}{2}$ and $-\\frac{6}{3} = -2$. Parallel lines have equal gradients, so $\\frac{k}{2} = -2$ and $k = -4$. Setting the product of the gradients to $-1$ (perpendicular) gives $k = 1$."
+  },
+  {
+    "id": "JAMBMATH-T2-025",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Trigonometric ratios",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $\\sin\\theta = \\frac{65}{97}$ and $\\theta$ is obtuse, find $\\tan\\theta$.",
+    "options": [
+      "$-\\frac{65}{72}$",
+      "$\\frac{72}{97}$",
+      "$\\frac{65}{72}$",
+      "$\\frac{97}{65}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The third side is $\\sqrt{97^2 - 65^2} = \\sqrt{5184} = 72$, so $\\cos\\theta = -\\frac{72}{97}$ for an obtuse angle. Then $\\tan\\theta = \\frac{65}{-72} = -\\frac{65}{72}$; the acute-angle answer has the wrong sign, $\\frac{72}{97}$ is the size of $\\cos\\theta$ and $\\frac{97}{65}$ is $\\csc\\theta$."
+  },
+  {
+    "id": "JAMBMATH-T2-026",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Sine rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In triangle ABC, $a = 10$ cm, $A = 30°$ and $B = 45°$. Find $b$.",
+    "options": [
+      "$10\\sqrt{2}\\text{ cm}$",
+      "$10\\sqrt{3}\\text{ cm}$",
+      "$20\\text{ cm}$",
+      "$10\\sqrt{6}\\text{ cm}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{b}{\\sin 45°} = \\frac{10}{\\sin 30°} = 20$, so $b = 20 \\times \\frac{\\sqrt{2}}{2} = 10\\sqrt{2}$ cm. Stopping at $\\frac{10}{\\sin 30°} = 20$ gives 20 cm."
+  },
+  {
+    "id": "JAMBMATH-T2-027",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Area of a triangle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the area of a triangle with two sides of 12 cm and 9 cm and an included angle of 150°.",
+    "options": [
+      "27 cm²",
+      "46.8 cm²",
+      "54 cm²",
+      "108 cm²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Area $= \\frac{1}{2}ab\\sin C = \\frac{1}{2} \\times 12 \\times 9 \\times \\sin 150° = 54 \\times \\frac{1}{2} = 27$ cm². Leaving out the $\\frac{1}{2}$ in front gives 54 cm², and using $\\sin 60°$ gives about 46.8 cm²."
+  },
+  {
+    "id": "JAMBMATH-T2-028",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Differentiation of trigonometric functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $y = 3\\sin x - 2\\cos x$, find $\\frac{dy}{dx}$.",
+    "options": [
+      "$3\\cos x - 2\\sin x$",
+      "$-3\\cos x + 2\\sin x$",
+      "$3\\sin x + 2\\cos x$",
+      "$3\\cos x + 2\\sin x$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$\\frac{d}{dx}\\sin x = \\cos x$ and $\\frac{d}{dx}\\cos x = -\\sin x$, so $\\frac{dy}{dx} = 3\\cos x - 2(-\\sin x) = 3\\cos x + 2\\sin x$."
+  },
+  {
+    "id": "JAMBMATH-T2-029",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Rate of change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The radius of a circular ink spot grows at 0.5 cm per second. At what rate, in cm² per second, is its area increasing when the radius is 8 cm?",
+    "options": [
+      "$8\\pi$",
+      "$16\\pi$",
+      "$32\\pi$",
+      "$64\\pi$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$A = \\pi r^2$, so $\\frac{dA}{dt} = 2\\pi r \\frac{dr}{dt} = 2\\pi \\times 8 \\times 0.5 = 8\\pi$. Forgetting the 0.5 gives $16\\pi$, and $64\\pi$ is the area itself."
+  },
+  {
+    "id": "JAMBMATH-T2-030",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Maxima and minima",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the maximum turning value of $y = 2x^3 - 3x^2 - 12x + 1$.",
+    "options": [
+      "-19",
+      "-1",
+      "2",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{dy}{dx} = 6x^2 - 6x - 12 = 6(x + 1)(x - 2) = 0$ at $x = -1$ and $x = 2$. $\\frac{d^2y}{dx^2} = 12x - 6$ is negative at $x = -1$, so the maximum value is $-2 - 3 + 12 + 1 = 8$. The value $-1$ is where it occurs, and $-19$ is the minimum value, at $x = 2$."
+  },
+  {
+    "id": "JAMBMATH-T2-031",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Integration of algebraic functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find $\\int (4x^3 - 6x + 5)\\,dx$.",
+    "options": [
+      "$x^4 - 6x^2 + 5x + C$",
+      "$x^4 - 3x^2 + 5x + C$",
+      "$12x^2 - 6 + C$",
+      "$x^4 - 3x^2 + 5 + C$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Raise each power by one and divide by the new power: $\\frac{4x^4}{4} - \\frac{6x^2}{2} + 5x + C = x^4 - 3x^2 + 5x + C$. $12x^2 - 6$ is the derivative, not the integral."
+  },
+  {
+    "id": "JAMBMATH-T2-032",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Mean deviation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the mean deviation of 3, 6, 8, 11 and 12.",
+    "options": [
+      "0",
+      "2.8",
+      "3.5",
+      "8"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The mean is 8. The absolute deviations are 5, 2, 0, 3 and 4, which add to 14, so the mean deviation is $\\frac{14}{5} = 2.8$. Without absolute values the deviations add to 0, dividing by 4 gives 3.5, and 8 is the mean itself."
+  },
+  {
+    "id": "JAMBMATH-T2-033",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Median of grouped data",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Marks are grouped as 0-9, 10-19, 20-29, 30-39 and 40-49 with frequencies 5, 8, 12, 10 and 5. Estimate the median mark, correct to 1 decimal place.",
+    "options": [
+      "25.3",
+      "25.8",
+      "26.7",
+      "29.5"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{N}{2} = 20$. The cumulative frequencies are 5, 13, 25, so the median class is 20-29. Median $= 19.5 + \\frac{20 - 13}{12} \\times 10 = 25.3$. Using the class limit 20 instead of the boundary 19.5 gives 25.8."
+  },
+  {
+    "id": "JAMBMATH-T2-034",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Variance of a frequency distribution",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The values 1, 2 and 3 occur with frequencies 2, 3 and 5. Find the variance.",
+    "options": [
+      "0.61",
+      "0.78",
+      "2.3",
+      "6.1"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Mean $= \\frac{2 + 6 + 15}{10} = 2.3$. Variance $= \\frac{2(1.69) + 3(0.09) + 5(0.49)}{10} = \\frac{6.1}{10} = 0.61$. Its square root, about 0.78, is the standard deviation."
+  },
+  {
+    "id": "JAMBMATH-T2-035",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Histograms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a histogram with unequal class widths, the class 40-70 has a frequency of 24. What is the height of its bar, the frequency density?",
+    "options": [
+      "0.8",
+      "1.25",
+      "8",
+      "24"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Frequency density $= \\frac{\\text{frequency}}{\\text{class width}} = \\frac{24}{30} = 0.8$. Dividing the width by the frequency gives 1.25."
+  },
+  {
+    "id": "JAMBMATH-T2-036",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Mean",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The mean of 5, $x$, 8, $2x$ and 11 is 9. Find $x$.",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10.5"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{24 + 3x}{5} = 9$, so $24 + 3x = 45$ and $x = 7$. Check: 5, 7, 8, 14, 11 add to 45."
+  },
+  {
+    "id": "JAMBMATH-T2-037",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Circular arrangements",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In how many ways can 7 people sit around a round table?",
+    "options": [
+      "720",
+      "1440",
+      "2520",
+      "5040"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Fix one person's seat and arrange the other 6: $(7 - 1)! = 720$. 5040 is $7!$, which counts rotations of the same seating as different."
+  },
+  {
+    "id": "JAMBMATH-T2-038",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Permutations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many three-digit numbers greater than 500 can be formed from the digits 1, 2, 3, 4, 5, 6 and 7 if no digit is repeated?",
+    "options": [
+      "90",
+      "120",
+      "147",
+      "210"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The first digit must be 5, 6 or 7 (3 ways), then 6 choices for the second and 5 for the third: $3 \\times 6 \\times 5 = 90$. With repetition allowed it would be $3 \\times 7 \\times 7 = 147$, letting 4 lead as well gives 120, and 210 is every three-digit arrangement, $^7P_3$."
+  },
+  {
+    "id": "JAMBMATH-T2-039",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Experimental probability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A die is thrown 150 times and a 4 appears 32 times. Based on these results, what is the probability of not getting a 4?",
+    "options": [
+      "$\\frac{1}{6}$",
+      "$\\frac{16}{75}$",
+      "$\\frac{59}{75}$",
+      "$\\frac{5}{6}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Experimental probability uses the results: $\\frac{150 - 32}{150} = \\frac{118}{150} = \\frac{59}{75}$. $\\frac{5}{6}$ is the theoretical probability for a fair die, not the experimental one."
+  },
+  {
+    "id": "JAMBMATH-T2-040",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Addition of probabilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A card is drawn at random from 30 cards numbered 1 to 30. What is the probability that its number is a multiple of 4 or a multiple of 7?",
+    "options": [
+      "$\\frac{7}{30}$",
+      "$\\frac{3}{10}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{11}{30}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 7 multiples of 4 and 4 multiples of 7, but 28 is in both, so $7 + 4 - 1 = 10$ cards and $P = \\frac{10}{30} = \\frac{1}{3}$. Counting 28 twice gives $\\frac{11}{30}$."
+  },
+  {
+    "id": "JAMBMATH-D-001",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Number bases",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Convert 46 (base ten) to base two.",
+    "options": [
+      "$110110_{2}$",
+      "$101110_{2}$",
+      "$101100_{2}$",
+      "$111010_{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Divide by 2 repeatedly: the remainders are 0, 1, 1, 1, 0, 1. Read upwards: $101110_{2}$. Check: $32 + 8 + 4 + 2 = 46$. Reading the remainders downwards gives $011101$."
+  },
+  {
+    "id": "JAMBMATH-D-002",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Operations in number bases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Add $1011_{2}$ and $111_{2}$.",
+    "options": [
+      "$10110_{2}$",
+      "$10010_{2}$",
+      "$11010_{2}$",
+      "$10001_{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$1011_{2} = 11$ and $111_{2} = 7$, so the sum is $18 = 16 + 2 = 10010_{2}$. In base two, $1 + 1 = 10$, so carry 1 each time."
+  },
+  {
+    "id": "JAMBMATH-D-003",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Operations in number bases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Multiply $23_{5}$ by $4_{5}$, giving the answer in base five.",
+    "options": [
+      "$142_{5}$",
+      "$122_{5}$",
+      "$202_{5}$",
+      "$212_{5}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$23_{5} = 13$, and $13 \\times 4 = 52 = 2 \\times 25 + 0 \\times 5 + 2 = 202_{5}$. Multiplying digit by digit without carrying fives gives a wrong number."
+  },
+  {
+    "id": "JAMBMATH-D-004",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Fractions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify $\\frac{2\\frac{1}{3} - 1\\frac{3}{4}}{1\\frac{1}{6}}$.",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{7}{12}$",
+      "$\\frac{49}{72}$",
+      "$2$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Numerator: $\\frac{7}{3} - \\frac{7}{4} = \\frac{28 - 21}{12} = \\frac{7}{12}$. Dividing by $\\frac{7}{6}$: $\\frac{7}{12} \\times \\frac{6}{7} = \\frac{1}{2}$. Multiplying by $\\frac{7}{6}$ instead gives $\\frac{49}{72}$."
+  },
+  {
+    "id": "JAMBMATH-D-005",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Decimal places",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $3.0472 \\times 0.25$, correct to 2 decimal places.",
+    "options": [
+      "0.75",
+      "0.76",
+      "0.77",
+      "7.62"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$3.0472 \\times 0.25 = 0.7618$. The third decimal digit is 1, so it rounds down to 0.76. Rounding 0.7618 up gives 0.77."
+  },
+  {
+    "id": "JAMBMATH-D-006",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Ratio and proportion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "₦72,000 is shared among Ada, Bello and Chinedu in the ratio 2 : 3 : 4. How much does Chinedu receive?",
+    "options": [
+      "₦16,000",
+      "₦24,000",
+      "₦32,000",
+      "₦36,000"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "There are $2 + 3 + 4 = 9$ parts, so one part is ₦8,000. Chinedu gets $4 \\times 8000 = 32000$. ₦24,000 is Bello's share."
+  },
+  {
+    "id": "JAMBMATH-D-007",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Percentages",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A phone costs ₦84,000 before tax. Suppose value added tax (VAT) of 8% is added. What does the buyer pay?",
+    "options": [
+      "₦6,720",
+      "₦77,280",
+      "₦84,672",
+      "₦90,720"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "VAT = $0.08 \\times 84000 = 6720$, so the buyer pays $84000 + 6720 = 90720$. ₦6,720 is the VAT alone, ₦77,280 subtracts it, and ₦84,672 uses 0.8%."
+  },
+  {
+    "id": "JAMBMATH-D-008",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Rates",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A car travels 252 km on 18 litres of fuel. At the same rate, how far does it travel on 25 litres?",
+    "options": [
+      "300 km",
+      "325 km",
+      "336 km",
+      "350 km"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Rate = $\\frac{252}{18} = 14$ km per litre, so 25 litres take it $14 \\times 25 = 350$ km. 336 km is the distance for 24 litres."
+  },
+  {
+    "id": "JAMBMATH-D-009",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Exponential equations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Solve $2^{3x - 1} = 32$.",
+    "options": [
+      "$x = 1$",
+      "$x = \\frac{3}{2}$",
+      "$x = \\frac{5}{3}$",
+      "$x = 2$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$32 = 2^5$, so $3x - 1 = 5$ and $x = 2$. Forgetting the $-1$ gives $3x = 5$ and $x = \\frac{5}{3}$."
+  },
+  {
+    "id": "JAMBMATH-D-010",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Laws of indices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify $\\frac{3^{n+2} - 3^{n}}{3^{n+1}}$.",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{8}{9}$",
+      "$2$",
+      "$\\frac{8}{3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Factor out $3^n$: $\\frac{3^n(9 - 1)}{3^n \\times 3} = \\frac{8}{3}$. Dividing by $3^{n+2}$ instead of $3^{n+1}$ gives $\\frac{8}{9}$."
+  },
+  {
+    "id": "JAMBMATH-D-011",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Laws of logarithms",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $\\log_{2} 48 - \\log_{2} 3$.",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\log_{2} 48 - \\log_{2} 3 = \\log_{2} \\frac{48}{3} = \\log_{2} 16 = 4$. The value 16 is the number whose logarithm is needed, not the logarithm."
+  },
+  {
+    "id": "JAMBMATH-D-012",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Rationalising surds",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Rationalise $\\frac{6}{\\sqrt{5} - \\sqrt{2}}$.",
+    "options": [
+      "$2(\\sqrt{5} - \\sqrt{2})$",
+      "$\\frac{6}{7}(\\sqrt{5} + \\sqrt{2})$",
+      "$2(\\sqrt{5} + \\sqrt{2})$",
+      "$6(\\sqrt{5} + \\sqrt{2})$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply top and bottom by $\\sqrt{5} + \\sqrt{2}$: the denominator becomes $5 - 2 = 3$, so the result is $\\frac{6(\\sqrt{5} + \\sqrt{2})}{3} = 2(\\sqrt{5} + \\sqrt{2})$. Adding instead of subtracting in the denominator gives $\\frac{6}{7}$."
+  },
+  {
+    "id": "JAMBMATH-D-013",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Venn diagrams",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Of 60 traders in a market, 28 sell cloth, 25 sell shoes and 20 sell bags. 9 sell cloth and shoes, 7 sell shoes and bags, 8 sell cloth and bags, and 3 sell all three. How many sell none of the three?",
+    "options": [
+      "8",
+      "11",
+      "14",
+      "17"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$n(C \\cup S \\cup B) = 28 + 25 + 20 - 9 - 7 - 8 + 3 = 52$, so $60 - 52 = 8$ sell none. Leaving out the $+3$ for those counted in every overlap gives 11."
+  },
+  {
+    "id": "JAMBMATH-D-014",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Types of sets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How many subsets does the set $\\{a, b, c, d, e\\}$ have?",
+    "options": [
+      "10",
+      "25",
+      "31",
+      "32"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "A set with $n$ elements has $2^n$ subsets, so $2^5 = 32$. That count includes the empty set and the set itself; 31 is the number of proper subsets."
+  },
+  {
+    "id": "JAMBMATH-D-015",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathNumber",
+    "skill": "Algebra of sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The universal set is $U = \\{1, 2, 3, \\ldots, 12\\}$, $A = \\{x : x \\text{ is a multiple of } 3\\}$ and $B = \\{x : x \\text{ is a factor of } 12\\}$. Find $(A \\cup B)'$.",
+    "options": [
+      "$\\{8, 9, 10, 11\\}$",
+      "$\\{3, 6, 12\\}$",
+      "$\\{5, 7, 8, 10, 11\\}$",
+      "$\\{5, 7, 10, 11\\}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$A = \\{3, 6, 9, 12\\}$ and $B = \\{1, 2, 3, 4, 6, 12\\}$, so $A \\cup B = \\{1, 2, 3, 4, 6, 9, 12\\}$. The elements of U not in it are 5, 7, 8, 10 and 11. $\\{3, 6, 12\\}$ is $A \\cap B$."
+  },
+  {
+    "id": "JAMBMATH-D-016",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Factor theorem",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these is a factor of $x^3 - 4x^2 + x + 6$?",
+    "options": [
+      "$x + 2$",
+      "$x - 1$",
+      "$x + 3$",
+      "$x - 3$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$f(3) = 27 - 36 + 3 + 6 = 0$, so $x - 3$ is a factor. $f(-3)$, $f(-2)$ and $f(1)$ are $-60$, $-20$ and $4$, none zero."
+  },
+  {
+    "id": "JAMBMATH-D-017",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Remainder theorem",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$x^3 - 2x^2 + px + 4$ leaves a remainder of 10 when divided by $x - 2$. Find $p$.",
+    "options": [
+      "-3",
+      "-2",
+      "1",
+      "3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$f(2) = 8 - 8 + 2p + 4 = 2p + 4 = 10$, so $p = 3$. Setting $f(2) = 0$ instead gives $p = -2$."
+  },
+  {
+    "id": "JAMBMATH-D-018",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Factorisation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Factorise completely $x^3 - 9x$.",
+    "options": [
+      "$(x^2 - 3)(x + 3)$",
+      "$x(x - 3)^2$",
+      "$x(x - 3)(x + 3)$",
+      "$x(x + 9)(x - 1)$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Take out $x$: $x(x^2 - 9)$, then use the difference of two squares: $x(x - 3)(x + 3)$."
+  },
+  {
+    "id": "JAMBMATH-D-019",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Quadratic equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $2x^2 + x - 15 = 0$.",
+    "options": [
+      "$x = -\\frac{5}{2}$ or $x = 3$",
+      "$x = 5$ or $x = -\\frac{3}{2}$",
+      "$x = \\frac{5}{2}$ or $x = -3$",
+      "$x = \\frac{3}{2}$ or $x = -5$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$2x^2 + x - 15 = (2x - 5)(x + 3)$, so $x = \\frac{5}{2}$ or $x = -3$. Check: $2(\\frac{25}{4}) + \\frac{5}{2} - 15 = 0$."
+  },
+  {
+    "id": "JAMBMATH-D-020",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Forming quadratic equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which equation has roots $\\frac{2}{3}$ and $-4$?",
+    "options": [
+      "$3x^2 - 14x + 8 = 0$",
+      "$3x^2 + 14x + 8 = 0$",
+      "$3x^2 + 10x - 8 = 0$",
+      "$3x^2 - 10x - 8 = 0$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$(3x - 2)(x + 4) = 3x^2 + 12x - 2x - 8 = 3x^2 + 10x - 8$. Sum of roots $-\\frac{10}{3}$ and product $-\\frac{8}{3}$ match $\\frac{2}{3} + (-4)$ and $\\frac{2}{3} \\times (-4)$."
+  },
+  {
+    "id": "JAMBMATH-D-021",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Partial variation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The cost, ₦C, of printing n copies of a school magazine is partly constant and partly varies as n. 20 copies cost ₦5,000 and 50 copies cost ₦6,500. Find the cost of 80 copies.",
+    "options": [
+      "₦8,000",
+      "₦9,500",
+      "₦10,400",
+      "₦20,000"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$C = a + bn$: $a + 20b = 5000$ and $a + 50b = 6500$, so $b = 50$ and $a = 4000$. Then $C = 4000 + 50 \\times 80 = 8000$. Treating C as varying directly with n gives ₦20,000."
+  },
+  {
+    "id": "JAMBMATH-D-022",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Joint variation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$z$ varies jointly as $x$ and $y$. $z = 36$ when $x = 3$ and $y = 4$. Find $x$ when $z = 90$ and $y = 5$.",
+    "options": [
+      "6",
+      "7.5",
+      "10",
+      "18"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$z = kxy$, so $36 = 12k$ and $k = 3$. Then $90 = 3 \\times x \\times 5$, giving $x = 6$. Forgetting $k$ gives $90 \\div 5 = 18$."
+  },
+  {
+    "id": "JAMBMATH-D-023",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Linear inequalities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Solve $-5 < 3x + 4 \\leq 13$.",
+    "options": [
+      "$-3 < x \\leq \\frac{17}{3}$",
+      "$-\\frac{1}{3} < x \\leq \\frac{17}{3}$",
+      "$-3 < x \\leq 3$",
+      "$-3 \\leq x < 3$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Subtract 4 from every part: $-9 < 3x \\leq 9$. Divide by 3: $-3 < x \\leq 3$. The inequality signs keep their direction because 3 is positive."
+  },
+  {
+    "id": "JAMBMATH-D-024",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Quadratic inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $2x^2 - 5x - 3 \\geq 0$.",
+    "options": [
+      "$-\\frac{1}{2} \\leq x \\leq 3$",
+      "$x \\leq -\\frac{1}{2}$ or $x \\geq 3$",
+      "$-3 \\leq x \\leq \\frac{1}{2}$",
+      "$x \\leq -3$ or $x \\geq \\frac{1}{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$2x^2 - 5x - 3 = (2x + 1)(x - 3)$, with roots $-\\frac{1}{2}$ and 3. The expression is positive outside the roots, so $x \\leq -\\frac{1}{2}$ or $x \\geq 3$."
+  },
+  {
+    "id": "JAMBMATH-D-025",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Symmetric expressions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $x + y = 7$ and $xy = 12$, find $x^2 + y^2$.",
+    "options": [
+      "25",
+      "37",
+      "49",
+      "61"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$x^2 + y^2 = (x + y)^2 - 2xy = 49 - 24 = 25$. Check with $x = 3$, $y = 4$: $9 + 16 = 25$. Subtracting $xy$ once gives 37."
+  },
+  {
+    "id": "JAMBMATH-D-026",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Change of subject",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Make $x$ the subject of $y = \\frac{2x + 5}{x - 3}$.",
+    "options": [
+      "$x = \\frac{3y + 5}{y - 2}$",
+      "$x = \\frac{3y - 5}{y + 2}$",
+      "$x = \\frac{5 - 3y}{y - 2}$",
+      "$x = \\frac{3y + 5}{2 - y}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$y(x - 3) = 2x + 5$, so $xy - 2x = 3y + 5$ and $x(y - 2) = 3y + 5$, giving $x = \\frac{3y + 5}{y - 2}$. Check: $y = 3$ gives $x = 14$, and $\\frac{33}{11} = 3$."
+  },
+  {
+    "id": "JAMBMATH-D-027",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Graphs of quadratic functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the minimum value of $y = 2x^2 + 8x - 3$?",
+    "options": [
+      "-19",
+      "-11",
+      "-3",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Complete the square: $2(x + 2)^2 - 8 - 3 = 2(x + 2)^2 - 11$. The least value of the square is 0, at $x = -2$, so the minimum is $-11$. The value $-3$ is where the graph meets the y-axis."
+  },
+  {
+    "id": "JAMBMATH-D-028",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Factor theorem",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "$x - 1$ and $x + 2$ are both factors of $x^3 + ax^2 + bx - 6$. Find $a$.",
+    "options": [
+      "-4",
+      "1",
+      "3",
+      "4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$f(1) = 1 + a + b - 6 = 0$ gives $a + b = 5$. $f(-2) = -8 + 4a - 2b - 6 = 0$ gives $2a - b = 7$. Adding: $3a = 12$, so $a = 4$ and $b = 1$."
+  },
+  {
+    "id": "JAMBMATH-D-029",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Direct variation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The distance $d$ m that a stone falls varies as the square of the time $t$ s. It falls 20 m in 2 s. How long does it take to fall 125 m?",
+    "options": [
+      "5 s",
+      "6.25 s",
+      "12.5 s",
+      "25 s"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$d = kt^2$ gives $20 = 4k$, so $k = 5$. Then $125 = 5t^2$, $t^2 = 25$ and $t = 5$. Treating $d$ as varying directly with $t$ gives 12.5 s."
+  },
+  {
+    "id": "JAMBMATH-D-030",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathAlgebra",
+    "skill": "Linear inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the least integer $x$ that satisfies $\\frac{x}{3} + \\frac{1}{2} < \\frac{2x - 1}{4}$?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply by 12: $4x + 6 < 6x - 3$, so $9 < 2x$ and $x > 4.5$. The least integer is 5; 4 does not satisfy a strict inequality above 4.5."
+  },
+  {
+    "id": "JAMBMATH-D-031",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Arithmetic progression",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How many terms are there in the arithmetic progression $9, 13, 17, \\ldots, 141$?",
+    "options": [
+      "30",
+      "32",
+      "33",
+      "34"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$a + (n - 1)d = 141$ gives $9 + 4(n - 1) = 141$, so $n - 1 = 33$ and $n = 34$. Stopping at $n - 1$ gives 33."
+  },
+  {
+    "id": "JAMBMATH-D-032",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Sum of an AP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The sum of the first 15 terms of an arithmetic progression is 375 and the first term is 4. Find the common difference.",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$375 = \\frac{15}{2}(8 + 14d)$, so $50 = 8 + 14d$ and $d = 3$. Check: the terms run from 4 to 46, and $\\frac{15}{2}(4 + 46) = 375$."
+  },
+  {
+    "id": "JAMBMATH-D-033",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Arithmetic means",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three arithmetic means are inserted between -4 and 20. What is the sum of the three means?",
+    "options": [
+      "16",
+      "18",
+      "20",
+      "24"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 5 terms, so $-4 + 4d = 20$ and $d = 6$. The means are 2, 8 and 14, which add to 24."
+  },
+  {
+    "id": "JAMBMATH-D-034",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Sum of a GP",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the sum of the first 6 terms of the geometric progression $3, 6, 12, \\ldots$",
+    "options": [
+      "63",
+      "93",
+      "96",
+      "189"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$S_n = \\frac{a(r^n - 1)}{r - 1} = \\frac{3(64 - 1)}{1} = 189$. The value 96 is the 6th term, 93 is the sum of 5 terms, and 63 forgets to multiply $r^n - 1$ by $a = 3$."
+  },
+  {
+    "id": "JAMBMATH-D-035",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Sum to infinity of a GP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The sum to infinity of a geometric progression is 45 and its first term is 15. Find the common ratio.",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{2}$",
+      "$3$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$45 = \\frac{15}{1 - r}$, so $1 - r = \\frac{1}{3}$ and $r = \\frac{2}{3}$. The value $\\frac{1}{3}$ is $1 - r$, not $r$."
+  },
+  {
+    "id": "JAMBMATH-D-036",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Recurring decimals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Express $0.\\dot{2}\\dot{7}$ (that is, $0.272727\\ldots$) as a fraction in its lowest terms.",
+    "options": [
+      "$\\frac{27}{1000}$",
+      "$\\frac{27}{100}$",
+      "$\\frac{3}{11}$",
+      "$\\frac{3}{10}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "As a GP: $\\frac{27}{100} + \\frac{27}{10000} + \\ldots = \\frac{27/100}{1 - 1/100} = \\frac{27}{99} = \\frac{3}{11}$. $\\frac{27}{100}$ is only the first term."
+  },
+  {
+    "id": "JAMBMATH-D-037",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Arithmetic progression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three numbers in arithmetic progression have a sum of 24 and a product of 440. Find the largest of them.",
+    "options": [
+      "9",
+      "11",
+      "13",
+      "14"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Write them as $8 - d$, $8$, $8 + d$. Then $8(64 - d^2) = 440$, so $d^2 = 9$ and $d = 3$. The numbers are 5, 8 and 11."
+  },
+  {
+    "id": "JAMBMATH-D-038",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Properties of binary operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these operations on the real numbers is commutative?",
+    "options": [
+      "$a * b = 2a + b$",
+      "$a * b = a + b - ab$",
+      "$a * b = a^2 b$",
+      "$a * b = a - b + ab$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Swapping $a$ and $b$ in $a + b - ab$ gives $b + a - ba$, the same value. In the others the result changes: for example $2a + b$ gives 4 for $(1, 2)$ but 5 for $(2, 1)$."
+  },
+  {
+    "id": "JAMBMATH-D-039",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Identity and inverse elements",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The operation $\\Delta$ is defined on the non-zero real numbers by $a \\Delta b = \\frac{ab}{2}$. Find the inverse of 5.",
+    "options": [
+      "$\\frac{1}{5}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{4}{5}$",
+      "$\\frac{5}{4}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Identity: $\\frac{ae}{2} = a$ gives $e = 2$. Inverse of 5: $\\frac{5b}{2} = 2$, so $b = \\frac{4}{5}$. Setting $\\frac{5b}{2} = 1$ gives $\\frac{2}{5}$, which assumes the identity is 1."
+  },
+  {
+    "id": "JAMBMATH-D-040",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Algebra of matrices",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $A = \\begin{pmatrix} 2 & 3 \\\\ -1 & 0 \\end{pmatrix}$ and $B = \\begin{pmatrix} 2 & -1 \\\\ 1 & 4 \\end{pmatrix}$, find $2A - 3B$.",
+    "options": [
+      "$\\begin{pmatrix} -2 & 9 \\\\ -5 & -12 \\end{pmatrix}$",
+      "$\\begin{pmatrix} 2 & -9 \\\\ 5 & 12 \\end{pmatrix}$",
+      "$\\begin{pmatrix} -2 & 9 \\\\ 1 & -12 \\end{pmatrix}$",
+      "$\\begin{pmatrix} -2 & 3 \\\\ -5 & -12 \\end{pmatrix}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$2A = \\begin{pmatrix} 4 & 6 \\\\ -2 & 0 \\end{pmatrix}$ and $3B = \\begin{pmatrix} 6 & -3 \\\\ 3 & 12 \\end{pmatrix}$. Subtract entry by entry: $\\begin{pmatrix} -2 & 9 \\\\ -5 & -12 \\end{pmatrix}$. Note $6 - (-3) = 9$, not 3, and $-2 - 3 = -5$, not 1."
+  },
+  {
+    "id": "JAMBMATH-D-041",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Determinants",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find $x$ if $\\begin{vmatrix} 2x & 3 \\\\ 5 & x \\end{vmatrix} = -7$.",
+    "options": [
+      "$x = \\pm 4$",
+      "$x = \\pm\\sqrt{11}$",
+      "$x = \\pm 2$",
+      "$x = \\pm 1$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$2x^2 - 15 = -7$, so $2x^2 = 8$, $x^2 = 4$ and $x = \\pm 2$. Dropping the minus sign on $-7$ gives $2x^2 = 22$ and $x = \\pm\\sqrt{11}$."
+  },
+  {
+    "id": "JAMBMATH-D-042",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Determinants",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $\\begin{vmatrix} 3 & 0 & 2 \\\\ 1 & -1 & 4 \\\\ 2 & 5 & 0 \\end{vmatrix}$.",
+    "options": [
+      "-66",
+      "-54",
+      "-46",
+      "46"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Along the first row: $3(0 - 20) - 0 + 2(5 + 2) = -60 + 14 = -46$. Taking $5 - 2$ instead of $5 - (-1)(2)$ in the last minor gives $-54$."
+  },
+  {
+    "id": "JAMBMATH-D-043",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Singular matrices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For what values of $k$ is $\\begin{pmatrix} k & 6 \\\\ 2 & k - 1 \\end{pmatrix}$ singular?",
+    "options": [
+      "$k = -4$ or $k = 3$",
+      "$k = 6$ or $k = -2$",
+      "$k = 4$ or $k = -3$",
+      "$k = 3$ or $k = 4$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A singular matrix has determinant 0: $k(k - 1) - 12 = 0$, so $k^2 - k - 12 = (k - 4)(k + 3) = 0$ and $k = 4$ or $k = -3$."
+  },
+  {
+    "id": "JAMBMATH-D-044",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Matrices and simultaneous equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $\\begin{pmatrix} 2 & 1 \\\\ 3 & -1 \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 7 \\\\ 8 \\end{pmatrix}$, find $x + y$.",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The equations are $2x + y = 7$ and $3x - y = 8$. Adding gives $5x = 15$, so $x = 3$ and $y = 1$, and $x + y = 4$."
+  },
+  {
+    "id": "JAMBMATH-D-045",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathSequences",
+    "skill": "Sum of an AP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Aisha saves ₦2,000 in the first month and ₦500 more each month than the month before. How much has she saved after 12 months?",
+    "options": [
+      "₦7,500",
+      "₦49,500",
+      "₦57,000",
+      "₦60,000"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "This is an AP with $a = 2000$ and $d = 500$: $S_{12} = 6(4000 + 11 \\times 500) = 6 \\times 9500 = 57000$. ₦7,500 is what she saves in the 12th month alone."
+  },
+  {
+    "id": "JAMBMATH-D-046",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Polygons",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The interior angles of a polygon add up to 1980°. How many sides does it have?",
+    "options": [
+      "9",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$(n - 2) \\times 180 = 1980$ gives $n - 2 = 11$, so $n = 13$. Stopping at $n - 2$ gives 11."
+  },
+  {
+    "id": "JAMBMATH-D-047",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Polygons",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a regular polygon each interior angle is $3\\frac{1}{2}$ times each exterior angle. How many sides does it have?",
+    "options": [
+      "7",
+      "9",
+      "10",
+      "18"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Let the exterior angle be $2x$ and the interior $7x$: $9x = 180°$, so $x = 20°$ and the exterior angle is 40°. Then $n = \\frac{360}{40} = 9$."
+  },
+  {
+    "id": "JAMBMATH-D-048",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Tangents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A point T is 41 cm from the centre of a circle of radius 9 cm. Find the length of the tangent from T to the circle.",
+    "options": [
+      "32 cm",
+      "36 cm",
+      "40 cm",
+      "44 cm"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The radius meets the tangent at a right angle, so the tangent length is $\\sqrt{41^2 - 9^2} = \\sqrt{1600} = 40$ cm. Subtracting the lengths, $41 - 9$, gives 32 cm."
+  },
+  {
+    "id": "JAMBMATH-D-049",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Angle properties of circles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The tangent to a circle at A makes an angle of 64° with the chord AB. C is a point on the major arc AB. Find $\\angle ACB$.",
+    "options": [
+      "26°",
+      "32°",
+      "64°",
+      "116°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment, so $\\angle ACB = 64°$. 116° is the angle in the other segment."
+  },
+  {
+    "id": "JAMBMATH-D-050",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Angle properties of circles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "AB is a diameter of a circle and C is a point on the circle. If $\\angle CAB = 37°$, find $\\angle ABC$.",
+    "options": [
+      "53°",
+      "106°",
+      "127°",
+      "143°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The angle in a semicircle is 90°, so $\\angle ACB = 90°$ and $\\angle ABC = 180° - 90° - 37° = 53°$."
+  },
+  {
+    "id": "JAMBMATH-D-051",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Intersecting chords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Chords AB and CD of a circle intersect at X inside the circle. AX = 6 cm, XB = 4 cm and CX = 3 cm. Find XD.",
+    "options": [
+      "2 cm",
+      "4.5 cm",
+      "7 cm",
+      "8 cm"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "For intersecting chords, $AX \\times XB = CX \\times XD$, so $24 = 3 \\times XD$ and $XD = 8$ cm. Using $AX \\times CX = XB \\times XD$ gives 4.5 cm."
+  },
+  {
+    "id": "JAMBMATH-D-052",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Similar figures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two similar triangles have corresponding sides of 4 cm and 10 cm. The area of the smaller triangle is 12 cm². Find the area of the larger.",
+    "options": [
+      "30 cm²",
+      "48 cm²",
+      "60 cm²",
+      "75 cm²"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Areas are in the ratio of the squares of the sides: $12 \\times \\left(\\frac{10}{4}\\right)^2 = 12 \\times \\frac{25}{4} = 75$ cm². Using the plain ratio $\\frac{10}{4}$ gives 30 cm²."
+  },
+  {
+    "id": "JAMBMATH-D-053",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Volumes of solids",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the volume of a sphere of radius 21 cm. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "5,544 cm³",
+      "9,702 cm³",
+      "29,106 cm³",
+      "38,808 cm³"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$V = \\frac{4}{3}\\pi r^3 = \\frac{4}{3} \\times \\frac{22}{7} \\times 9261 = 38808$ cm³. The surface area $4\\pi r^2$ is 5,544 cm², and $\\pi r^3$ alone is 29,106."
+  },
+  {
+    "id": "JAMBMATH-D-054",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Volumes of solids",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A rectangular tank measures 2.5 m by 1.6 m by 1.2 m. How many litres of water does it hold when full? (1 m³ = 1000 litres.)",
+    "options": [
+      "480 litres",
+      "4800 litres",
+      "5300 litres",
+      "48000 litres"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume $= 2.5 \\times 1.6 \\times 1.2 = 4.8$ m³, which is $4.8 \\times 1000 = 4800$ litres."
+  },
+  {
+    "id": "JAMBMATH-D-055",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "The earth as a sphere",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Town A is at latitude 12°N and town B is at latitude 38°S on the same meridian. Find the distance between them along the meridian, to the nearest km. (Take $\\pi = \\frac{22}{7}$ and $R = 6400$ km.)",
+    "options": [
+      "2905 km",
+      "5587 km",
+      "6705 km",
+      "11175 km"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "On opposite sides of the equator the latitudes add: $12° + 38° = 50°$. Distance $= \\frac{50}{360} \\times 2 \\times \\frac{22}{7} \\times 6400 = 5587$ km. Subtracting the latitudes gives 26° and 2905 km."
+  },
+  {
+    "id": "JAMBMATH-D-056",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "The earth as a sphere",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the length of the parallel of latitude 60°N, to the nearest km. (Take $\\pi = \\frac{22}{7}$ and $R = 6400$ km.)",
+    "options": [
+      "10057 km",
+      "20114 km",
+      "34839 km",
+      "40229 km"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The radius of the parallel is $R\\cos 60° = 3200$ km, so its length is $2 \\times \\frac{22}{7} \\times 3200 = 20114$ km. Using $\\sin 60°$ (or $\\cos 30°$) gives 34839 km."
+  },
+  {
+    "id": "JAMBMATH-D-057",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Loci",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the locus of points in a plane that are equidistant from two intersecting straight lines?",
+    "options": [
+      "the perpendicular to one line at the crossing",
+      "the pair of bisectors of the angles between them",
+      "a circle centred where the lines meet",
+      "a line parallel to one of the lines"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each point on a bisector of an angle between the lines is the same perpendicular distance from both lines. There are two such bisectors, at right angles to each other."
+  },
+  {
+    "id": "JAMBMATH-D-058",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Construction",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Using only a ruler and a pair of compasses, which of these angles cannot be constructed exactly?",
+    "options": [
+      "22.5°",
+      "40°",
+      "75°",
+      "105°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Constructions start from 60° (equilateral triangle) and 90°, then bisect, add and subtract: $75° = 45° + 30°$, $105° = 60° + 45°$ and $22.5° = \\frac{45°}{2}$. 40° cannot be built this way."
+  },
+  {
+    "id": "JAMBMATH-D-059",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Plane figures",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A trapezium has parallel sides of 9 cm and 15 cm, and the distance between them is 7 cm. Find its area.",
+    "options": [
+      "84 cm²",
+      "105 cm²",
+      "126 cm²",
+      "168 cm²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Area $= \\frac{1}{2}(9 + 15) \\times 7 = 12 \\times 7 = 84$ cm². Forgetting the $\\frac{1}{2}$ gives 168 cm²."
+  },
+  {
+    "id": "JAMBMATH-D-060",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathGeometry",
+    "skill": "Segments",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A chord subtends a right angle at the centre of a circle of radius 14 cm. Find the area of the minor segment. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "56 cm²",
+      "98 cm²",
+      "154 cm²",
+      "252 cm²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Sector area $= \\frac{90}{360} \\times \\frac{22}{7} \\times 196 = 154$ cm². Triangle area $= \\frac{1}{2} \\times 14 \\times 14 = 98$ cm². Segment $= 154 - 98 = 56$ cm²; adding them gives 252."
+  },
+  {
+    "id": "JAMBMATH-D-061",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Midpoint of a line segment",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "M(3, -2) is the midpoint of PQ, and P is (-1, 5). Find Q.",
+    "options": [
+      "$(-5, 12)$",
+      "$(7, -9)$",
+      "$(1, 1.5)$",
+      "$(5, -12)$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\frac{-1 + x}{2} = 3$ gives $x = 7$, and $\\frac{5 + y}{2} = -2$ gives $y = -9$. The point (1, 1.5) is the midpoint of PM."
+  },
+  {
+    "id": "JAMBMATH-D-062",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Equation of a straight line",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the equation of the line through (-2, 3) and (4, -9).",
+    "options": [
+      "$y = -2x + 7$",
+      "$y = 2x + 7$",
+      "$y = -\\frac{1}{2}x + 2$",
+      "$y = -2x - 1$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gradient $= \\frac{-9 - 3}{4 + 2} = -2$. Then $y - 3 = -2(x + 2)$, so $y = -2x - 1$. Check with (4, -9): $-8 - 1 = -9$."
+  },
+  {
+    "id": "JAMBMATH-D-063",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Distance between two points",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The distance between (1, k) and (7, 2) is 10 units. Find the positive value of k.",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$6^2 + (k - 2)^2 = 100$, so $(k - 2)^2 = 64$ and $k - 2 = \\pm 8$. The positive value is $k = 10$; the other is $-6$. Stopping at $k - 2 = 8$ gives 8."
+  },
+  {
+    "id": "JAMBMATH-D-064",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Intercepts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Where does the line $5x - 2y = 20$ cut the y-axis?",
+    "options": [
+      "y = 10",
+      "y = -10",
+      "y = -4",
+      "y = 4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "On the y-axis $x = 0$, so $-2y = 20$ and $y = -10$. The value 4 is where it cuts the x-axis."
+  },
+  {
+    "id": "JAMBMATH-D-065",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Perpendicular lines",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the gradient of a line perpendicular to $2x + 7y = 3$?",
+    "options": [
+      "$-\\frac{7}{2}$",
+      "$-\\frac{2}{7}$",
+      "$\\frac{2}{7}$",
+      "$\\frac{7}{2}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The given line has gradient $-\\frac{2}{7}$. A perpendicular gradient is the negative reciprocal, $\\frac{7}{2}$."
+  },
+  {
+    "id": "JAMBMATH-D-066",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Trigonometric ratios",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $\\sin 60° \\cos 30° - \\cos 60° \\sin 30°$.",
+    "options": [
+      "$0$",
+      "$\\frac{1}{2}$",
+      "$\\frac{\\sqrt{3}}{2}$",
+      "$1$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{\\sqrt{3}}{2} \\times \\frac{\\sqrt{3}}{2} - \\frac{1}{2} \\times \\frac{1}{2} = \\frac{3}{4} - \\frac{1}{4} = \\frac{1}{2}$."
+  },
+  {
+    "id": "JAMBMATH-D-067",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Trigonometric ratios",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "If $\\tan x = \\frac{9}{40}$ and $180° < x < 270°$, find $\\sin x + \\cos x$.",
+    "options": [
+      "$-\\frac{49}{41}$",
+      "$-\\frac{31}{41}$",
+      "$\\frac{31}{41}$",
+      "$\\frac{49}{41}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The hypotenuse is $\\sqrt{9^2 + 40^2} = 41$. In the third quadrant sine and cosine are both negative: $\\sin x = -\\frac{9}{41}$, $\\cos x = -\\frac{40}{41}$, so the sum is $-\\frac{49}{41}$."
+  },
+  {
+    "id": "JAMBMATH-D-068",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Angles of depression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "From the top of a cliff 80 m high, the angle of depression of a boat is 30°. How far is the boat from the foot of the cliff?",
+    "options": [
+      "$40\\text{ m}$",
+      "$\\frac{80\\sqrt{3}}{3}\\text{ m}$",
+      "$80\\sqrt{3}\\text{ m}$",
+      "$160\\text{ m}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The angle of elevation of the cliff top from the boat is also 30°, so $\\tan 30° = \\frac{80}{d}$ and $d = \\frac{80}{\\tan 30°} = 80\\sqrt{3}$ m. Multiplying by $\\tan 30°$ gives $\\frac{80\\sqrt{3}}{3}$ m."
+  },
+  {
+    "id": "JAMBMATH-D-069",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Bearings",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The bearing of A from B is 035°. What is the bearing of B from A?",
+    "options": [
+      "055°",
+      "145°",
+      "215°",
+      "325°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A back bearing differs by 180°: $035° + 180° = 215°$. 325° is $360° - 35°$, which is not a back bearing."
+  },
+  {
+    "id": "JAMBMATH-D-070",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Bearings and the cosine rule",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A boat sails 6 km on a bearing of 040° and then 10 km on a bearing of 100°. How far is it from its starting point?",
+    "options": [
+      "$\\sqrt{76}\\text{ km}$",
+      "$\\sqrt{136}\\text{ km}$",
+      "14 km",
+      "16 km"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The angle between the two legs at the turning point is $180° - (100° - 40°) = 120°$. Then $d^2 = 36 + 100 - 2(6)(10)\\cos 120° = 136 + 60 = 196$, so $d = 14$ km. Using $\\cos 60°$ gives $\\sqrt{76}$."
+  },
+  {
+    "id": "JAMBMATH-D-071",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Sine rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In triangle ABC, $a = 5$ cm, $b = 5\\sqrt{2}$ cm and $A = 30°$. Find the acute value of $B$.",
+    "options": [
+      "45°",
+      "60°",
+      "75°",
+      "90°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sin B = \\frac{b \\sin A}{a} = \\frac{5\\sqrt{2} \\times \\frac{1}{2}}{5} = \\frac{\\sqrt{2}}{2}$, so the acute value is $B = 45°$. (135° also fits, since $135° + 30° < 180°$.)"
+  },
+  {
+    "id": "JAMBMATH-D-072",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Graphs of sine and cosine",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the greatest value of $5 - 2\\cos x$?",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "7"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\cos x$ ranges from $-1$ to 1, so $-2\\cos x$ is largest, 2, when $\\cos x = -1$ (at $x = 180°$). The greatest value is $5 + 2 = 7$; 3 is the least value."
+  },
+  {
+    "id": "JAMBMATH-D-073",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Graphs of sine and cosine",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "For $0° \\leq x \\leq 360°$, at what value of x is $y = 2\\sin x$ least?",
+    "options": [
+      "90°",
+      "180°",
+      "270°",
+      "360°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sin x$ reaches its least value, $-1$, at $x = 270°$, so $y = -2$ there. At 90° the graph is at its highest point."
+  },
+  {
+    "id": "JAMBMATH-D-074",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Trigonometric equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $2\\cos x + 1 = 0$ for $0° \\leq x \\leq 360°$.",
+    "options": [
+      "120° and 240°",
+      "60° and 300°",
+      "120° and 300°",
+      "150° and 210°"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$\\cos x = -\\frac{1}{2}$. The reference angle is 60°, and cosine is negative in the second and third quadrants, so $x = 180° - 60° = 120°$ or $x = 180° + 60° = 240°$."
+  },
+  {
+    "id": "JAMBMATH-D-075",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCoordTrig",
+    "skill": "Area of a triangle",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Find the area of a triangle with sides 9 cm, 10 cm and 17 cm.",
+    "options": [
+      "36 cm²",
+      "45 cm²",
+      "54 cm²",
+      "72 cm²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "With $s = \\frac{9 + 10 + 17}{2} = 18$, Heron's formula gives $\\sqrt{18 \\times 9 \\times 8 \\times 1} = \\sqrt{1296} = 36$ cm². 72 cm² is double the area."
+  },
+  {
+    "id": "JAMBMATH-D-076",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $\\lim_{x \\to -1} \\frac{x^3 + 1}{x^2 - 1}$.",
+    "options": [
+      "$-\\frac{3}{2}$",
+      "$-\\frac{1}{2}$",
+      "$0$",
+      "$\\frac{3}{2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$x^3 + 1 = (x + 1)(x^2 - x + 1)$ and $x^2 - 1 = (x + 1)(x - 1)$. Cancel $x + 1$: $\\frac{x^2 - x + 1}{x - 1} = \\frac{3}{-2} = -\\frac{3}{2}$."
+  },
+  {
+    "id": "JAMBMATH-D-077",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $\\lim_{x \\to \\infty} \\frac{4x^2 - 3}{2x^2 + x}$.",
+    "options": [
+      "-3",
+      "0",
+      "2",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Divide the top and bottom by $x^2$: $\\frac{4 - \\frac{3}{x^2}}{2 + \\frac{1}{x}} \\to \\frac{4}{2} = 2$. Dividing only the top by $x^2$ gives the wrong value 4."
+  },
+  {
+    "id": "JAMBMATH-D-078",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Chain rule",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Differentiate $(2x - 5)^4$ with respect to $x$.",
+    "options": [
+      "$8(2x - 5)^4$",
+      "$4(2x - 5)^3$",
+      "$8(2x - 5)^3$",
+      "$2(2x - 5)^3$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "By the chain rule, $4(2x - 5)^3 \\times 2 = 8(2x - 5)^3$. Forgetting to multiply by the derivative of $2x - 5$ gives $4(2x - 5)^3$."
+  },
+  {
+    "id": "JAMBMATH-D-079",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Product rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $y = x^2 \\sin x$, find $\\frac{dy}{dx}$.",
+    "options": [
+      "$2x\\sin x + x^2\\cos x$",
+      "$2x\\sin x - x^2\\cos x$",
+      "$x^2\\cos x$",
+      "$2x\\cos x$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Product rule: $\\frac{d}{dx}(x^2)\\sin x + x^2\\frac{d}{dx}(\\sin x) = 2x\\sin x + x^2\\cos x$. Multiplying the two derivatives gives $2x\\cos x$."
+  },
+  {
+    "id": "JAMBMATH-D-080",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Quotient rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $y = \\frac{3x + 1}{x - 2}$, find $\\frac{dy}{dx}$.",
+    "options": [
+      "$\\frac{5}{(x - 2)^2}$",
+      "$\\frac{-7}{(x - 2)^2}$",
+      "$3$",
+      "$\\frac{7}{(x - 2)^2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\frac{3(x - 2) - (3x + 1)(1)}{(x - 2)^2} = \\frac{3x - 6 - 3x - 1}{(x - 2)^2} = \\frac{-7}{(x - 2)^2}$. Reversing the order of the numerator gives $+7$."
+  },
+  {
+    "id": "JAMBMATH-D-081",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Gradient of a curve",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the gradient of the curve $y = 2x^3 - 5x + 1$ at $x = -1$.",
+    "options": [
+      "-11",
+      "-5",
+      "-1",
+      "1"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{dy}{dx} = 6x^2 - 5$, which is $6 - 5 = 1$ at $x = -1$. Leaving out the $-5$ gives 6, and using $-6x^2$ gives $-11$."
+  },
+  {
+    "id": "JAMBMATH-D-082",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Tangents to curves",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the equation of the tangent to $y = x^2 - 3x + 4$ at the point where $x = 2$.",
+    "options": [
+      "$y = -x + 4$",
+      "$y = 2x - 2$",
+      "$y = x + 2$",
+      "$y = x$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "At $x = 2$, $y = 4 - 6 + 4 = 2$ and $\\frac{dy}{dx} = 2x - 3 = 1$. The tangent is $y - 2 = 1(x - 2)$, that is $y = x$."
+  },
+  {
+    "id": "JAMBMATH-D-083",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Maxima and minima",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the minimum value of $x + \\frac{16}{x}$ for $x > 0$.",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "17"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{d}{dx}\\left(x + 16x^{-1}\\right) = 1 - \\frac{16}{x^2} = 0$ at $x = 4$, where the value is $4 + 4 = 8$. The value 4 is where the minimum occurs."
+  },
+  {
+    "id": "JAMBMATH-D-084",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Rate of change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The radius of a spherical balloon increases at 0.2 cm per second. At what rate, in cm³ per second, is its volume increasing when the radius is 5 cm?",
+    "options": [
+      "$10\\pi$",
+      "$20\\pi$",
+      "$\\frac{100\\pi}{3}$",
+      "$100\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$V = \\frac{4}{3}\\pi r^3$, so $\\frac{dV}{dt} = 4\\pi r^2 \\frac{dr}{dt} = 4\\pi \\times 25 \\times 0.2 = 20\\pi$. Forgetting the 0.2 gives $100\\pi$."
+  },
+  {
+    "id": "JAMBMATH-D-085",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Rate of change",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A particle moves so that its distance in metres after $t$ seconds is $s = t^3 - 6t^2 + 12t$. Find its velocity when $t = 3$.",
+    "options": [
+      "0 m/s",
+      "3 m/s",
+      "9 m/s",
+      "27 m/s"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$v = \\frac{ds}{dt} = 3t^2 - 12t + 12$, which is $27 - 36 + 12 = 3$ m/s at $t = 3$. The value 9 is the distance $s$ at $t = 3$."
+  },
+  {
+    "id": "JAMBMATH-D-086",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Integration of trigonometric functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find $\\int (\\cos x - 2\\sin x)\\,dx$.",
+    "options": [
+      "$\\sin x - 2\\cos x + C$",
+      "$-\\sin x - 2\\cos x + C$",
+      "$\\sin x + 2\\cos x + C$",
+      "$-\\sin x + 2\\cos x + C$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$\\int \\cos x\\,dx = \\sin x$ and $\\int \\sin x\\,dx = -\\cos x$, so $\\int -2\\sin x\\,dx = 2\\cos x$. The result is $\\sin x + 2\\cos x + C$."
+  },
+  {
+    "id": "JAMBMATH-D-087",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Definite integrals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $\\int_0^{\\frac{\\pi}{2}} (2\\sin x + 1)\\,dx$.",
+    "options": [
+      "$\\frac{\\pi}{2} - 2$",
+      "$\\frac{\\pi}{2}$",
+      "$1 + \\frac{\\pi}{2}$",
+      "$2 + \\frac{\\pi}{2}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\left[-2\\cos x + x\\right]_0^{\\pi/2} = \\left(0 + \\frac{\\pi}{2}\\right) - (-2 + 0) = 2 + \\frac{\\pi}{2}$. Taking the integral of $\\sin x$ as $\\cos x$ gives $\\frac{\\pi}{2} - 2$."
+  },
+  {
+    "id": "JAMBMATH-D-088",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Area under a curve",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the area enclosed by the curve $y = 6x - x^2$ and the x-axis.",
+    "options": [
+      "18",
+      "36",
+      "72",
+      "108"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The curve meets the x-axis at $x = 0$ and $x = 6$. Area $= \\int_0^6 (6x - x^2)\\,dx = \\left[3x^2 - \\frac{x^3}{3}\\right]_0^6 = 108 - 72 = 36$ square units. 108 is the first term alone."
+  },
+  {
+    "id": "JAMBMATH-D-089",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Integration with a given condition",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The gradient of a curve is $3x^2 - 4$ and the curve passes through (2, 5). Find its equation.",
+    "options": [
+      "$y = x^3 - 4x + 1$",
+      "$y = x^3 - 4x + 5$",
+      "$y = x^3 - 4x - 3$",
+      "$y = 6x - 7$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$y = x^3 - 4x + c$. At $(2, 5)$: $5 = 8 - 8 + c$, so $c = 5$. Check: the gradient of $x^3 - 4x + 5$ is $3x^2 - 4$."
+  },
+  {
+    "id": "JAMBMATH-D-090",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathCalculus",
+    "skill": "Second derivative",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $y = 2x^4 - x^3 + 3$, find $\\frac{d^2y}{dx^2}$ when $x = 1$.",
+    "options": [
+      "5",
+      "6",
+      "12",
+      "18"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{dy}{dx} = 8x^3 - 3x^2$ and $\\frac{d^2y}{dx^2} = 24x^2 - 6x$, which is $24 - 6 = 18$ at $x = 1$. The first derivative there is 5."
+  },
+  {
+    "id": "JAMBMATH-D-091",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Mean of grouped data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the mean of the grouped data: classes 1-5, 6-10, 11-15 and 16-20 with frequencies 4, 7, 6 and 3.",
+    "options": [
+      "9.5",
+      "10",
+      "10.5",
+      "12"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Use class mid-values 3, 8, 13 and 18: $\\Sigma fx = 12 + 56 + 78 + 54 = 200$ and $\\Sigma f = 20$, so the mean is 10."
+  },
+  {
+    "id": "JAMBMATH-D-092",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Median of a frequency distribution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The values 0, 1, 2, 3 and 4 occur with frequencies 3, 6, 8, 5 and 2. Find the median.",
+    "options": [
+      "2",
+      "2.5",
+      "3",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 24 values, so the median is the mean of the 12th and 13th. The cumulative frequencies are 3, 9, 17, so both are 2 and the median is 2. 8 is a frequency, not a value."
+  },
+  {
+    "id": "JAMBMATH-D-093",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Bar charts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A bar chart shows the favourite subjects of a class: Mathematics 14, English 9, Biology 12 and Economics 5. What percentage chose Biology?",
+    "options": [
+      "12%",
+      "25%",
+      "30%",
+      "35%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The class has $14 + 9 + 12 + 5 = 40$ students, and $\\frac{12}{40} \\times 100 = 30\\%$. 35% is the share for Mathematics."
+  },
+  {
+    "id": "JAMBMATH-D-094",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Pie charts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A pie chart shows how 720 students travel to school. The sector for those who cycle has an angle of 50°. How many students cycle?",
+    "options": [
+      "36",
+      "50",
+      "72",
+      "100"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Number $= \\frac{50}{360} \\times 720 = 100$. Reading the angle as the number of students gives 50."
+  },
+  {
+    "id": "JAMBMATH-D-095",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Cumulative frequency",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a test, 6 candidates scored 20 or less, 18 scored 40 or less, 34 scored 60 or less, 46 scored 80 or less and all 50 scored 100 or less. How many scored more than 40 but not more than 80?",
+    "options": [
+      "12",
+      "16",
+      "28",
+      "34"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Subtract cumulative frequencies: $46 - 18 = 28$. 16 is the number in the 41-60 class only."
+  },
+  {
+    "id": "JAMBMATH-D-096",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Range",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the range of 2.4, 5.1, 3.8, 0.9 and 4.6.",
+    "options": [
+      "2.7",
+      "3.36",
+      "3.8",
+      "4.2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Range = largest minus smallest $= 5.1 - 0.9 = 4.2$. 3.36 is the mean, and 3.8 the median."
+  },
+  {
+    "id": "JAMBMATH-D-097",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Standard deviation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The values 2, 4 and 6 occur with frequencies 1, 2 and 1. Find the standard deviation.",
+    "options": [
+      "$\\sqrt{2}$",
+      "$2$",
+      "$2\\sqrt{2}$",
+      "$4$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The mean is 4. Variance $= \\frac{1(4) + 2(0) + 1(4)}{4} = 2$, so the standard deviation is $\\sqrt{2}$. The value 2 is the variance."
+  },
+  {
+    "id": "JAMBMATH-D-098",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Mode and median",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "For the data 3, 5, 5, 6, 7, 8, 8, 8, 9, find the mode minus the median.",
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The mode is 8 (three times) and the median is the 5th value, 7. So the difference is $8 - 7 = 1$."
+  },
+  {
+    "id": "JAMBMATH-D-099",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Mean",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The mean of 10 numbers is 14. When one number, 23, is removed, what is the mean of the rest?",
+    "options": [
+      "11.7",
+      "12",
+      "13",
+      "14"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The total is $10 \\times 14 = 140$. Removing 23 leaves 117 for 9 numbers, a mean of 13. Dividing 117 by 10 gives 11.7."
+  },
+  {
+    "id": "JAMBMATH-D-100",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Mode of grouped data",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The modal class of a distribution is 30-39 with frequency 14. The class before it has frequency 10 and the class after it has frequency 8. Estimate the mode.",
+    "options": [
+      "32",
+      "33.5",
+      "34",
+      "35.5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Mode $= L + \\frac{d_1}{d_1 + d_2} \\times c = 29.5 + \\frac{4}{4 + 6} \\times 10 = 33.5$. Using the lower limit 30 instead of the boundary 29.5 gives 34."
+  },
+  {
+    "id": "JAMBMATH-D-101",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Variance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the variance of 6, 8, 10, 12, 14 and 16.",
+    "options": [
+      "$\\sqrt{\\frac{35}{3}}$",
+      "$\\frac{35}{3}$",
+      "$14$",
+      "$\\frac{70}{3}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The mean is 11. The squared deviations are 25, 9, 1, 1, 9 and 25, which add to 70, so the variance is $\\frac{70}{6} = \\frac{35}{3}$. Dividing by 5 gives 14."
+  },
+  {
+    "id": "JAMBMATH-D-102",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Weighted mean",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student scores 60 in a test, 75 in an assignment and 80 in an examination, weighted 2, 3 and 5. Find the weighted mean.",
+    "options": [
+      "70",
+      "71.7",
+      "72",
+      "74.5"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Weighted mean $= \\frac{2(60) + 3(75) + 5(80)}{10} = \\frac{745}{10} = 74.5$. The plain mean of the three scores is about 71.7."
+  },
+  {
+    "id": "JAMBMATH-D-103",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Class boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What are the class boundaries of the class 40-49 when marks are whole numbers?",
+    "options": [
+      "40.5 and 49.5",
+      "39.5 and 48.5",
+      "40 and 49",
+      "39.5 and 49.5"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Class boundaries lie halfway between the classes: halfway between 39 and 40, and between 49 and 50. So they are 39.5 and 49.5; 40 and 49 are the class limits."
+  },
+  {
+    "id": "JAMBMATH-D-104",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Mean",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the mean of the first ten positive even numbers.",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "55"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The numbers are 2, 4, ..., 20, which add to 110. The mean is $\\frac{110}{10} = 11$. 55 is the sum of the first ten positive whole numbers."
+  },
+  {
+    "id": "JAMBMATH-D-105",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathStatistics",
+    "skill": "Mean of a frequency distribution",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The values 1, 2, 3 and 4 occur with frequencies 3, $k$, 4 and 2. The mean is 2.2. Find $k$.",
+    "options": [
+      "9",
+      "12",
+      "16",
+      "20"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{3 + 2k + 12 + 8}{9 + k} = 2.2$, so $23 + 2k = 19.8 + 2.2k$, $3.2 = 0.2k$ and $k = 16$. Check: $\\frac{55}{25} = 2.2$."
+  },
+  {
+    "id": "JAMBMATH-D-106",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Permutations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find $n$ if $^nP_2 = 56$.",
+    "options": [
+      "8",
+      "14",
+      "28",
+      "56"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$^nP_2 = n(n - 1) = 56 = 8 \\times 7$, so $n = 8$. 56 is the value of $^nP_2$, not $n$, and 28 is $^8C_2$."
+  },
+  {
+    "id": "JAMBMATH-D-107",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Combinations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find $n$ if $^nC_3 = {}^nC_7$.",
+    "options": [
+      "4",
+      "7",
+      "10",
+      "21"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$^nC_r = {}^nC_{n - r}$, so $n - 3 = 7$ and $n = 10$. Check: $^{10}C_3 = {}^{10}C_7 = 120$."
+  },
+  {
+    "id": "JAMBMATH-D-108",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Arrangements with repeated objects",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In how many ways can the letters of the word ABUJA be arranged?",
+    "options": [
+      "24",
+      "30",
+      "60",
+      "120"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "ABUJA has 5 letters with A twice: $\\frac{5!}{2!} = 60$. 120 treats the two A's as different."
+  },
+  {
+    "id": "JAMBMATH-D-109",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Permutations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In how many ways can the letters of the word LAGOS be arranged if L must come first?",
+    "options": [
+      "20",
+      "24",
+      "96",
+      "120"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "With L fixed in the first place, the other 4 letters can be arranged in $4! = 24$ ways. 120 is the number of arrangements with no condition."
+  },
+  {
+    "id": "JAMBMATH-D-110",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Circular arrangements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Five people sit around a round table. In how many ways can they sit if two particular people must sit next to each other?",
+    "options": [
+      "6",
+      "12",
+      "24",
+      "48"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Treat the pair as one unit: 4 units round a table give $(4 - 1)! = 6$ ways, and the pair can swap places, so $6 \\times 2 = 12$. Forgetting the swap gives 6."
+  },
+  {
+    "id": "JAMBMATH-D-111",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Combinations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In how many ways can 3 prefects be chosen from 9 candidates?",
+    "options": [
+      "27",
+      "84",
+      "126",
+      "504"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Order does not matter, so use $^9C_3 = \\frac{9 \\times 8 \\times 7}{3 \\times 2 \\times 1} = 84$. 504 is $^9P_3$, which counts different orders as different."
+  },
+  {
+    "id": "JAMBMATH-D-112",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Combinations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team of 5 is to be chosen from 4 girls and 6 boys. In how many ways can this be done if the team has at least 3 girls?",
+    "options": [
+      "66",
+      "70",
+      "90",
+      "252"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "3 girls and 2 boys: $^4C_3 \\times {}^6C_2 = 4 \\times 15 = 60$. 4 girls and 1 boy: $1 \\times 6 = 6$. Total 66. 252 is $^{10}C_5$ with no condition."
+  },
+  {
+    "id": "JAMBMATH-D-113",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Probability with two dice",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two fair dice are thrown. What is the probability that the sum of the scores is at least 10?",
+    "options": [
+      "$\\frac{1}{12}$",
+      "$\\frac{5}{36}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{4}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The outcomes are (4, 6), (5, 5), (6, 4), (5, 6), (6, 5) and (6, 6): 6 of 36, so $\\frac{1}{6}$. Counting only sums of exactly 10 gives $\\frac{3}{36} = \\frac{1}{12}$."
+  },
+  {
+    "id": "JAMBMATH-D-114",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Independent events",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The probability of rain on any one day in a town is 0.65. Assuming days are independent, what is the probability that it does not rain on either of the next two days?",
+    "options": [
+      "0.1225",
+      "0.35",
+      "0.4225",
+      "0.7"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$P(\\text{no rain}) = 1 - 0.65 = 0.35$ each day, so for both days $0.35^2 = 0.1225$. 0.4225 is the chance of rain on both days."
+  },
+  {
+    "id": "JAMBMATH-D-115",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Probability",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Three fair coins are tossed. What is the probability of getting at least two heads?",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{7}{8}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Of the 8 outcomes, HHT, HTH, THH and HHH have at least two heads: $\\frac{4}{8} = \\frac{1}{2}$. Exactly two heads alone is $\\frac{3}{8}$."
+  },
+  {
+    "id": "JAMBMATH-D-116",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Mutually exclusive events",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A and B are mutually exclusive events with P(A) = 0.25 and P(B) = 0.4. Find the probability that neither occurs.",
+    "options": [
+      "0.1",
+      "0.35",
+      "0.45",
+      "0.65"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Mutually exclusive events cannot both happen, so $P(A \\cup B) = 0.25 + 0.4 = 0.65$ and $P(\\text{neither}) = 1 - 0.65 = 0.35$. 0.45 wrongly treats A and B as independent, and 0.1 is $0.25 \\times 0.4$."
+  },
+  {
+    "id": "JAMBMATH-D-117",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Addition of probabilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A and B are independent events with $P(A) = \\frac{2}{5}$ and $P(B) = \\frac{1}{4}$. Find $P(A \\cup B)$.",
+    "options": [
+      "$\\frac{1}{10}$",
+      "$\\frac{3}{10}$",
+      "$\\frac{11}{20}$",
+      "$\\frac{13}{20}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$P(A \\cap B) = \\frac{2}{5} \\times \\frac{1}{4} = \\frac{1}{10}$, so $P(A \\cup B) = \\frac{2}{5} + \\frac{1}{4} - \\frac{1}{10} = \\frac{11}{20}$. Adding without subtracting the overlap gives $\\frac{13}{20}$."
+  },
+  {
+    "id": "JAMBMATH-D-118",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Probability",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A letter is chosen at random from the word MATHEMATICS. What is the probability that it is a vowel?",
+    "options": [
+      "$\\frac{2}{11}$",
+      "$\\frac{3}{11}$",
+      "$\\frac{4}{11}$",
+      "$\\frac{7}{11}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "MATHEMATICS has 11 letters and its vowels are A, E, A and I, so $P = \\frac{4}{11}$. Counting A only once gives $\\frac{3}{11}$, and $\\frac{7}{11}$ is the chance of a consonant."
+  },
+  {
+    "id": "JAMBMATH-D-119",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Experimental probability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bag holds 200 beads, some blue and the rest white. In 40 draws with replacement, 14 beads were blue. Estimate the number of blue beads in the bag.",
+    "options": [
+      "14",
+      "35",
+      "70",
+      "140"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The experimental probability of blue is $\\frac{14}{40} = 0.35$, so about $0.35 \\times 200 = 70$ beads are blue. 14 is the count in the sample, not in the bag."
+  },
+  {
+    "id": "JAMBMATH-D-120",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "jambmathProbability",
+    "skill": "Multiplication of probabilities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A bag contains 4 green and 6 yellow balls. Two balls are drawn without replacement. What is the probability that they are of different colours?",
+    "options": [
+      "$\\frac{4}{15}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{12}{25}$",
+      "$\\frac{8}{15}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Green then yellow: $\\frac{4}{10} \\times \\frac{6}{9} = \\frac{4}{15}$. Yellow then green is also $\\frac{4}{15}$, so the total is $\\frac{8}{15}$. Counting one order only gives $\\frac{4}{15}$, and drawing with replacement gives $\\frac{12}{25}$."
+  }
+]

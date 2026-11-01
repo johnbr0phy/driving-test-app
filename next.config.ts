@@ -6,14 +6,19 @@ import type { NextConfig } from "next";
 const BUILD_LAST_MODIFIED = new Date().toUTCString();
 
 const nextConfig: NextConfig = {
+  // OG cards read tiger faces from the 256 px copies in assets/og-tigers/
+  // (lib/server/ogTigers.ts, built by scripts/build-og-tigers.mjs), never from
+  // public/tigers/, which grows with every exam and pushed these functions past
+  // Vercel's 250 MB limit when it was traced in.
   outputFileTracingIncludes: {
-    "/api/og/score-card": ["./public/tiger_face_*.png", "./public/tigers/**/*.png"],
-    "/og/[examId]": ["./public/tigers/**/*.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
+    "/api/og/score-card": ["./assets/og-tigers/**/*.png"],
+    "/og/[examId]": ["./assets/og-tigers/*/tiger_face_03.png", "./public/fonts/share/*"],
     "/og/q/[code]": ["./public/tiger.png", "./public/tiger_face_03.png"],
   },
-  // The quiz card reads two images from public/; keep the big asset folders
-  // out of its function (it hit Vercel's 250 MB limit when they were traced in).
+  // Keep the big public asset folders out of the image functions.
   outputFileTracingExcludes: {
+    "/api/og/score-card": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
+    "/og/[examId]": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
     "/og/q/[code]": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
   },
   images: {

@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "fs/promises";
 import { join } from "path";
 import { getTigerAsset } from "@/lib/tigerAssets";
+import { readOgTiger } from "@/lib/server/ogTigers";
 import { getShareCard } from "@/lib/shareCards";
 
 export const runtime = "nodejs";
@@ -37,8 +38,8 @@ export async function GET(request: Request, { params }: { params: Promise<{ exam
   const top = lines.length > 2 ? 148 : 182;
   const descriptionTop = lines.length > 3 ? 368 : lines.length === 3 ? 383 : 370;
   const [images, brand, loadedFonts] = await Promise.all([
-    Promise.all(card.mascots.map(async id => `data:image/png;base64,${(await readFile(join(process.cwd(), "public", getTigerAsset(id, 3).slice(1)))).toString("base64")}`)),
-    readFile(join(process.cwd(), "public/tiger_face_03.png")).then(b => `data:image/png;base64,${b.toString("base64")}`),
+    Promise.all(card.mascots.map(id => readOgTiger(getTigerAsset(id, 3)))),
+    readOgTiger("/tiger_face_03.png"),
     loadFonts(),
   ]);
 

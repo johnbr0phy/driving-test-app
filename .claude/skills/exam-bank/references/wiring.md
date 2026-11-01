@@ -111,6 +111,13 @@ node_modules. Chromium is preinstalled in cloud sessions.)
 ## 12. Mascots (optional, later)
 `lib/tigerAssets.ts` lists exams with finished art under `public/tigers/<id>/`. New exams fall
 back to the DMV tiger automatically; add the id only once eight expressions exist.
+When you add a tiger set, build its small copies for the OG images (the score card and
+`/og/<id>` read 256 px faces from `assets/og-tigers/<id>/`, never `public/tigers/`, so the
+functions stay under Vercel's 250 MB limit), and commit them with the set:
+```bash
+node scripts/build-og-tigers.mjs
+node scripts/build-og-tigers.mjs --check   # fails if any set in public/tigers/ has no small copies
+```
 
 ## 13. Verify before committing
 ```bash

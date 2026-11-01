@@ -1,10 +1,9 @@
 import { ImageResponse } from "next/og";
 import { NextRequest } from "next/server";
-import { readFile } from "fs/promises";
-import { join } from "path";
 import { states } from "@/data/states";
 import { getExamByStateCode } from "@/lib/exams";
 import { getTigerFace } from "@/lib/resultsCopy";
+import { readOgTiger } from "@/lib/server/ogTigers";
 
 export const runtime = "nodejs";
 
@@ -116,10 +115,7 @@ export async function GET(request: NextRequest) {
   const passed = percentage >= 70;
 
   // Load tiger face image and fonts in parallel
-  const tigerFile = getTigerFace(percentage, exam?.id).slice(1);
-  const tigerPath = join(process.cwd(), "public", tigerFile);
-  const [tigerData, fonts] = await Promise.all([readFile(tigerPath), loadFonts()]);
-  const tigerBase64 = `data:image/png;base64,${tigerData.toString("base64")}`;
+  const [tigerBase64, fonts] = await Promise.all([readOgTiger(getTigerFace(percentage, exam?.id)), loadFonts()]);
 
   const tagline = isTraining && exam
     ? `MASTERED MY ${exam.shortName} TRAINING`

@@ -45,7 +45,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
   const result: TestResultV2 | undefined = history[0];
   if (!result) {
     return (
-      <div className="mx-auto max-w-xl px-4 py-12 text-center">
+      <div className="mx-auto w-full max-w-xl px-4 py-12 text-center">
         <h1 className="text-xl font-bold">No result yet for Practice Test {testNumber}</h1>
         <Link href={routes.test(testNumber)} className="mt-4 inline-block rounded-xl bg-brand px-5 py-3 font-bold text-white">Take the test</Link>
       </div>
@@ -67,7 +67,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
   const items = result.items.filter((it) => (filter === "all" || !it.correct) && (sectionFilter === "all" || it.section === sectionFilter));
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
+    <div className="mx-auto w-full max-w-3xl px-4 py-6 md:py-10">
       {earned && <Fireworks duration={5000} />}
       <div className="text-sm font-semibold uppercase tracking-wide text-brand-dark">{exam.shortName} · Practice Test {testNumber}</div>
       {result.composite >= goal ? (

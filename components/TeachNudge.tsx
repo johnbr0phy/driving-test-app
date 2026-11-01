@@ -47,6 +47,8 @@ const TEACHER_LED = new Set([
   "sbipo", "sbiclerk", "ibpsrrb", "delhipolice", "biharpolice", "rajpolice", "mppolice", "apush", "apbio", "phcse",
   // Next-100 batch 3 (November 2026)
   "upscse", "nda", "agniveer", "agniveervayu", "rrbalp", "rpfconst", "ssccpo", "apworld", "aplang", "phlet",
+  // Next-100 batch 4 (November 2026)
+  "neet", "jeemain", "mhtcet", "cuet", "ugcnet", "reet", "uptet", "aissee", "aphug", "apcalcab",
 ]);
 
 export function isTeacherLedExam(id: string): boolean {

@@ -5,7 +5,7 @@ const NEW_MASCOT_IDS = new Set(["uklitu", "cacit", "aucit", "pmp"]);
 const ROLE_MASCOT_IDS = new Set(["ffi", "police", "faapvt", "nasm", "barber", "jelec"]);
 
 // Exams that got their own short share copy (Oct 31) instead of the long catalog blurb.
-const SHARE_COPY_IDS = new Set(["jelec", "sie", "series7", "pcoc", "ffi", "police", "nasm", "rbt", "cpc", "iedtt", "cask", "cans", "ukseru", "nzroad", "netplus", "gcdl", "phlto", "zak53", "sgbtt", "aerta", "ngfrsc", "kentsa", "mykpp", "hkdrive", "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych", "pkdrive", "sbipo", "sbiclerk", "ibpsrrb", "delhipolice", "biharpolice", "rajpolice", "mppolice", "apush", "apbio", "phcse", "upscse", "ssccpo", "rrbalp", "rpfconst", "nda", "agniveer", "agniveervayu", "apworld", "aplang", "phlet"]);
+const SHARE_COPY_IDS = new Set(["jelec", "sie", "series7", "pcoc", "ffi", "police", "nasm", "rbt", "cpc", "iedtt", "cask", "cans", "ukseru", "nzroad", "netplus", "gcdl", "phlto", "zak53", "sgbtt", "aerta", "ngfrsc", "kentsa", "mykpp", "hkdrive", "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych", "pkdrive", "sbipo", "sbiclerk", "ibpsrrb", "delhipolice", "biharpolice", "rajpolice", "mppolice", "apush", "apbio", "phcse", "upscse", "ssccpo", "rrbalp", "rpfconst", "nda", "agniveer", "agniveervayu", "apworld", "aplang", "phlet", "jeemain", "neet", "mhtcet", "cuet", "reet", "uptet", "ugcnet", "aissee", "aphug", "apcalcab"]);
 
 const REMAINING_MASCOT_IDS = new Set(["capm", "psm", "itil", "cissp", "rbt", "cpc", "pcoc", "ukseru", "ibpspo", "ctet", "praxis", "gre", "gmat", "sie", "series7", "ssccgl", "rrbntpc"]);
 

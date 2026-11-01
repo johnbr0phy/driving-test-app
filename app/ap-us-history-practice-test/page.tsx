@@ -10,7 +10,7 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free AP US History Practice Test 2026 - APUSH Multiple Choice";
+const title = "Free AP US History Practice Test 2027 - APUSH Multiple Choice";
 const metaDescription =
   "Free APUSH practice tests: 55 source-based multiple-choice questions in 55 minutes, Period 1 to Period 9, 201 original questions with explanations.";
 const description =
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "AP US History practice test, APUSH practice test, free APUSH practice test, AP US History multiple choice, APUSH multiple choice practice, APUSH MCQ, AP US History exam 2026, APUSH periods, APUSH review",
+    "AP US History practice test, APUSH practice test, free APUSH practice test, AP US History multiple choice, APUSH multiple choice practice, APUSH MCQ, AP US History exam 2027, APUSH periods, APUSH review",
   alternates: {
     canonical: `${siteUrl}/ap-us-history-practice-test`,
   },
@@ -123,7 +123,7 @@ export default function ApUsHistoryLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            Free AP US History Practice Test 2026
+            Free AP US History Practice Test 2027
           </h1>
           <ExamLandingHero
             dashboardHref="/ap-us-history/dashboard"

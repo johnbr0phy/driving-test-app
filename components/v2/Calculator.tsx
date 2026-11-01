@@ -10,7 +10,9 @@ import { useState } from "react";
 
 type Tok = { t: "num"; v: number } | { t: "op"; v: string } | { t: "fn"; v: string } | { t: "("; v: "(" } | { t: ")"; v: ")" };
 
-const PREC: Record<string, number> = { "+": 1, "-": 1, "*": 2, "/": 2, "^": 3 };
+// "neg" is unary minus: binds tighter than * and / but looser than ^, so
+// -2^2 = -4 and e^-0.4 = e^(-0.4).
+const PREC: Record<string, number> = { "+": 1, "-": 1, "*": 2, "/": 2, neg: 2.5, "^": 3 };
 const FNS: Record<string, (x: number) => number> = {
   sin: (x) => Math.sin((x * Math.PI) / 180),
   cos: (x) => Math.cos((x * Math.PI) / 180),
@@ -64,7 +66,10 @@ export function evaluate(src: string): number {
     else if (tok.t === "op") {
       // unary minus
       if (tok.v === "-" && (!prev || (prev.t === "op") || prev.t === "(")) {
-        output.push({ t: "num", v: 0 });
+        const neg: Tok = { t: "op", v: "neg" };
+        ops.push(neg);
+        prev = neg;
+        continue;
       }
       while (ops.length) {
         const top = ops[ops.length - 1];
@@ -90,6 +95,7 @@ export function evaluate(src: string): number {
   for (const tok of output) {
     if (tok.t === "num") st.push(tok.v);
     else if (tok.t === "fn") st.push(FNS[tok.v](st.pop()!));
+    else if (tok.t === "op" && tok.v === "neg") st.push(-st.pop()!);
     else if (tok.t === "op") {
       const b = st.pop()!;
       const a = st.pop()!;

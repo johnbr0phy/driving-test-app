@@ -10,7 +10,7 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free AP English Language Practice Test 2026 - AP Lang Multiple Choice";
+const title = "Free AP English Language Practice Test 2027 - AP Lang Multiple Choice";
 const metaDescription =
   "Free AP Lang practice tests: 45 reading and writing multiple-choice questions in 60 minutes, 202 original questions on original passages and drafts, with explanations.";
 const description =
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "AP English Language practice test, AP Lang practice test, free AP Lang practice test, AP English Language multiple choice, AP Lang multiple choice practice, AP Lang MCQ, AP English Language exam 2026, AP Lang rhetorical analysis, AP Lang review",
+    "AP English Language practice test, AP Lang practice test, free AP Lang practice test, AP English Language multiple choice, AP Lang multiple choice practice, AP Lang MCQ, AP English Language exam 2027, AP Lang rhetorical analysis, AP Lang review",
   alternates: {
     canonical: `${siteUrl}/ap-english-language-practice-test`,
   },
@@ -122,7 +122,7 @@ export default function ApEnglishLanguageLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            Free AP English Language Practice Test 2026
+            Free AP English Language Practice Test 2027
           </h1>
           <ExamLandingHero
             dashboardHref="/ap-english-language/dashboard"

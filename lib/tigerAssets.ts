@@ -62,6 +62,10 @@ const BORROWED_SETS: Record<string, string> = {
   // the defence exams the military-entrance (ASVAB) tiger, the Philippine LET the teacher-licensing (Praxis) tiger.
   upscse: "ssccgl", ssccpo: "ssccgl", rrbalp: "rrbntpc", rpfconst: "police",
   nda: "asvab", agniveer: "asvab", agniveervayu: "asvab", phlet: "praxis",
+  // Next-100 batch 4: the college entrance exams the college-entrance (SAT) tiger, the teacher eligibility tests
+  // the CTET tiger, the Sainik School entrance the military-entrance (ASVAB) tiger.
+  jeemain: "sat", neet: "sat", mhtcet: "sat", cuet: "sat",
+  reet: "ctet", uptet: "ctet", ugcnet: "ctet", aissee: "asvab",
 };
 
 export function hasTigerSet(examId: string): boolean {

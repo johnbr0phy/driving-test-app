@@ -10,7 +10,7 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free AP World History Practice Test 2026 - AP World Multiple Choice";
+const title = "Free AP World History Practice Test 2027 - AP World Multiple Choice";
 const metaDescription =
   "Free AP World History: Modern practice tests: 55 source-based multiple-choice questions in 55 minutes, all nine units, 200 original questions with explanations.";
 const description =
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "AP World History practice test, AP World History Modern practice test, free AP World practice test, AP World History multiple choice, AP World MCQ, AP World History exam 2026, AP World History units, AP World review",
+    "AP World History practice test, AP World History Modern practice test, free AP World practice test, AP World History multiple choice, AP World MCQ, AP World History exam 2027, AP World History units, AP World review",
   alternates: {
     canonical: `${siteUrl}/ap-world-history-practice-test`,
   },
@@ -123,7 +123,7 @@ export default function ApWorldHistoryLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            Free AP World History Practice Test 2026
+            Free AP World History Practice Test 2027
           </h1>
           <ExamLandingHero
             dashboardHref="/ap-world-history/dashboard"

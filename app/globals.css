@@ -2551,6 +2551,146 @@
     --brand-gradient-to: 190 35% 95%;
   }
 
+  /* JEE Main theme: muted terracotta brown (v2 exam; matches lib/v2/exams/jeemain.ts theme) */
+  [data-theme="jeemain"] {
+    --brand: 18 30% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 18 30% 96%;
+    --brand-hover: 18 30% 27%;
+    --brand-dark: 18 30% 22%;
+    --brand-darker: 18 30% 14%;
+    --brand-muted: 18 18% 72%;
+    --brand-border: 18 21% 80%;
+    --brand-border-light: 18 21% 90%;
+    --brand-gradient-to: 30 30% 96%;
+  }
+
+  /* NEET theme: muted berry (v2 exam; matches lib/v2/exams/neet.ts theme) */
+  [data-theme="neet"] {
+    --brand: 330 38% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 330 38% 96%;
+    --brand-hover: 330 38% 35%;
+    --brand-dark: 330 38% 30%;
+    --brand-darker: 330 38% 20%;
+    --brand-muted: 330 23% 72%;
+    --brand-border: 330 27% 80%;
+    --brand-border-light: 330 27% 90%;
+    --brand-gradient-to: 342 38% 96%;
+  }
+
+  /* MHT-CET theme: muted sage green (v2 exam; matches lib/v2/exams/mhtcet.ts theme) */
+  [data-theme="mhtcet"] {
+    --brand: 104 30% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 104 30% 96%;
+    --brand-hover: 104 30% 33%;
+    --brand-dark: 104 30% 28%;
+    --brand-darker: 104 30% 18%;
+    --brand-muted: 104 18% 72%;
+    --brand-border: 104 21% 80%;
+    --brand-border-light: 104 21% 90%;
+    --brand-gradient-to: 116 30% 96%;
+  }
+
+  /* CUET (UG) General Aptitude Test theme: deep plum (v2 exam; matches lib/v2/exams/cuet.ts theme) */
+  [data-theme="cuet"] {
+    --brand: 280 30% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 30% 96%;
+    --brand-hover: 280 30% 25%;
+    --brand-dark: 280 30% 20%;
+    --brand-darker: 280 30% 14%;
+    --brand-muted: 280 18% 72%;
+    --brand-border: 280 21% 80%;
+    --brand-border-light: 280 21% 90%;
+    --brand-gradient-to: 292 30% 96%;
+  }
+
+  /* UGC-NET Paper 1 theme: muted slate indigo (v2 exam; matches lib/v2/exams/ugcnet.ts theme) */
+  [data-theme="ugcnet"] {
+    --brand: 240 22% 41%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 240 22% 96%;
+    --brand-hover: 240 22% 36%;
+    --brand-dark: 240 22% 31%;
+    --brand-darker: 240 22% 21%;
+    --brand-muted: 240 13% 72%;
+    --brand-border: 240 15% 80%;
+    --brand-border-light: 240 15% 90%;
+    --brand-gradient-to: 252 22% 96%;
+  }
+
+  /* REET Level 1 theme: Rajasthan sandstone brown (v2 exam; matches lib/v2/exams/reet.ts theme) */
+  [data-theme="reet"] {
+    --brand: 39 25% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 39 25% 96%;
+    --brand-hover: 39 25% 29%;
+    --brand-dark: 39 25% 24%;
+    --brand-darker: 39 25% 14%;
+    --brand-muted: 39 15% 72%;
+    --brand-border: 39 18% 80%;
+    --brand-border-light: 39 18% 90%;
+    --brand-gradient-to: 51 25% 96%;
+  }
+
+  /* UPTET Paper 1 theme: muted slate jade (v2 exam; matches lib/v2/exams/uptet.ts theme) */
+  [data-theme="uptet"] {
+    --brand: 156 30% 31%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 156 30% 96%;
+    --brand-hover: 156 30% 26%;
+    --brand-dark: 156 30% 21%;
+    --brand-darker: 156 30% 14%;
+    --brand-muted: 156 18% 72%;
+    --brand-border: 156 21% 80%;
+    --brand-border-light: 156 21% 90%;
+    --brand-gradient-to: 168 30% 96%;
+  }
+
+  /* AISSEE theme: muted cantonment green (v2 exam; matches lib/v2/exams/aissee.ts theme) */
+  [data-theme="aissee"] {
+    --brand: 120 22% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 120 22% 96%;
+    --brand-hover: 120 22% 29%;
+    --brand-dark: 120 22% 24%;
+    --brand-darker: 120 22% 14%;
+    --brand-muted: 120 13% 72%;
+    --brand-border: 120 15% 80%;
+    --brand-border-light: 120 15% 90%;
+    --brand-gradient-to: 132 22% 96%;
+  }
+
+  /* AP Calculus AB theme: slate blue (v2 exam; matches lib/v2/exams/apcalcab.ts theme) */
+  [data-theme="apcalcab"] {
+    --brand: 211 40% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 211 40% 96%;
+    --brand-hover: 211 40% 37%;
+    --brand-dark: 211 40% 32%;
+    --brand-darker: 211 40% 22%;
+    --brand-muted: 211 24% 72%;
+    --brand-border: 211 28% 80%;
+    --brand-border-light: 211 28% 90%;
+    --brand-gradient-to: 223 40% 96%;
+  }
+
+  /* AP Human Geography theme: muted olive ochre (v2 exam; matches lib/v2/exams/aphug.ts theme) */
+  [data-theme="aphug"] {
+    --brand: 57 25% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 57 25% 96%;
+    --brand-hover: 57 25% 29%;
+    --brand-dark: 57 25% 24%;
+    --brand-darker: 57 25% 14%;
+    --brand-muted: 57 15% 72%;
+    --brand-border: 57 18% 80%;
+    --brand-border-light: 57 18% 90%;
+    --brand-gradient-to: 69 25% 96%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -4724,6 +4864,126 @@
     --brand-muted: 160 18% 45%;
     --brand-dark: 160 25% 65%;
     --brand-darker: 160 25% 78%;
+  }
+
+  .dark [data-theme="jeemain"] {
+    --brand: 18 30% 46.9%;
+    --brand-hover: 18 30% 38.9%;
+    --brand-light: 18 30% 13%;
+    --brand-gradient-to: 30 30% 11%;
+    --brand-border-light: 18 21% 24%;
+    --brand-border: 18 21% 34%;
+    --brand-muted: 18 18% 45%;
+    --brand-dark: 18 30% 65%;
+    --brand-darker: 18 30% 78%;
+  }
+
+  .dark [data-theme="neet"] {
+    --brand: 330 38% 50%;
+    --brand-hover: 330 38% 42%;
+    --brand-light: 330 38% 13%;
+    --brand-gradient-to: 342 38% 11%;
+    --brand-border-light: 330 27% 24%;
+    --brand-border: 330 27% 34%;
+    --brand-muted: 330 23% 45%;
+    --brand-dark: 330 38% 65%;
+    --brand-darker: 330 38% 78%;
+  }
+
+  .dark [data-theme="mhtcet"] {
+    --brand: 104 30% 38.6%;
+    --brand-hover: 104 30% 33%;
+    --brand-light: 104 30% 13%;
+    --brand-gradient-to: 116 30% 11%;
+    --brand-border-light: 104 21% 24%;
+    --brand-border: 104 21% 34%;
+    --brand-muted: 104 18% 45%;
+    --brand-dark: 104 30% 65%;
+    --brand-darker: 104 30% 78%;
+  }
+
+  .dark [data-theme="cuet"] {
+    --brand: 280 30% 50%;
+    --brand-hover: 280 30% 42%;
+    --brand-light: 280 30% 13%;
+    --brand-gradient-to: 292 30% 11%;
+    --brand-border-light: 280 21% 24%;
+    --brand-border: 280 21% 34%;
+    --brand-muted: 280 18% 45%;
+    --brand-dark: 280 30% 65%;
+    --brand-darker: 280 30% 78%;
+  }
+
+  .dark [data-theme="ugcnet"] {
+    --brand: 240 22% 50%;
+    --brand-hover: 240 22% 42%;
+    --brand-light: 240 22% 13%;
+    --brand-gradient-to: 252 22% 11%;
+    --brand-border-light: 240 15% 24%;
+    --brand-border: 240 15% 34%;
+    --brand-muted: 240 13% 45%;
+    --brand-dark: 240 22% 65%;
+    --brand-darker: 240 22% 78%;
+  }
+
+  .dark [data-theme="reet"] {
+    --brand: 39 25% 41.8%;
+    --brand-hover: 39 25% 33.8%;
+    --brand-light: 39 25% 13%;
+    --brand-gradient-to: 51 25% 11%;
+    --brand-border-light: 39 18% 24%;
+    --brand-border: 39 18% 34%;
+    --brand-muted: 39 15% 45%;
+    --brand-dark: 39 25% 65%;
+    --brand-darker: 39 25% 78%;
+  }
+
+  .dark [data-theme="uptet"] {
+    --brand: 156 30% 38.7%;
+    --brand-hover: 156 30% 30.7%;
+    --brand-light: 156 30% 13%;
+    --brand-gradient-to: 168 30% 11%;
+    --brand-border-light: 156 21% 24%;
+    --brand-border: 156 21% 34%;
+    --brand-muted: 156 18% 45%;
+    --brand-dark: 156 30% 65%;
+    --brand-darker: 156 30% 78%;
+  }
+
+  .dark [data-theme="aissee"] {
+    --brand: 120 22% 41.1%;
+    --brand-hover: 120 22% 33.1%;
+    --brand-light: 120 22% 13%;
+    --brand-gradient-to: 132 22% 11%;
+    --brand-border-light: 120 15% 24%;
+    --brand-border: 120 15% 34%;
+    --brand-muted: 120 13% 45%;
+    --brand-dark: 120 22% 65%;
+    --brand-darker: 120 22% 78%;
+  }
+
+  .dark [data-theme="apcalcab"] {
+    --brand: 211 40% 47.7%;
+    --brand-hover: 211 40% 39.7%;
+    --brand-light: 211 40% 13%;
+    --brand-gradient-to: 223 40% 11%;
+    --brand-border-light: 211 28% 24%;
+    --brand-border: 211 28% 34%;
+    --brand-muted: 211 24% 45%;
+    --brand-dark: 211 40% 65%;
+    --brand-darker: 211 40% 78%;
+  }
+
+  .dark [data-theme="aphug"] {
+    --brand: 57 25% 38.1%;
+    --brand-hover: 57 25% 30.1%;
+    --brand-light: 57 25% 13%;
+    --brand-gradient-to: 69 25% 11%;
+    --brand-border-light: 57 18% 24%;
+    --brand-border: 57 18% 34%;
+    --brand-muted: 57 15% 45%;
+    --brand-dark: 57 25% 65%;
+    --brand-darker: 57 25% 78%;
   }
 
 }

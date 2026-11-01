@@ -1,0 +1,4671 @@
+{
+  "stimuli": [
+    {
+      "id": "APHUG-T1-S01",
+      "title": "Two maps of college attainment, described in words (hypothetical data)",
+      "text": "**Map 1** shows the share of adults with a college degree in each of a country's six provinces. All six provinces fall between 28 and 34 percent, so the map is shaded in a single color.\n\n**Map 2** shows the same measure for the 140 districts of one of those provinces, Province E, each district shaded by its value. District values range from 9 to 61 percent. The highest values cluster around the provincial capital and along a rail corridor that runs south from it; the lowest are in the mountain districts of the north."
+    },
+    {
+      "id": "APHUG-T2-S01",
+      "title": "Population and land in five countries (hypothetical data)",
+      "text": "| Country | Population (millions) | Land area (thousand sq km) | Arable land (% of land area) |\n|---|---|---|---|\n| P | 48 | 600 | 10 |\n| Q | 30 | 250 | 40 |\n| R | 12 | 1,000 | 3 |\n| S | 81 | 450 | 30 |\n| T | 20 | 80 | 50 |"
+    },
+    {
+      "id": "APHUG-D-S01",
+      "title": "Three world maps, described in words",
+      "text": "**Map 1:** Lines of latitude and longitude are straight and cross at right angles. Greenland looks about as large as Africa, although Africa is about 14 times larger in area.\n\n**Map 2:** Greenland and Africa are drawn in correct proportion to their areas, but Africa and South America look stretched from north to south and squeezed from east to west.\n\n**Map 3:** The lines of longitude curve toward the poles. No property is shown exactly; shape, area, distance and direction are all slightly distorted, with the worst distortion near the poles."
+    },
+    {
+      "id": "APHUG-T1-S02",
+      "title": "Population data for five countries (hypothetical data)",
+      "text": "| Country | Crude birth rate (per 1,000) | Crude death rate (per 1,000) | Total fertility rate | Infant mortality (per 1,000 live births) |\n|---|---|---|---|---|\n| A | 41 | 18 | 6.1 | 85 |\n| B | 33 | 7 | 4.2 | 30 |\n| C | 18 | 6 | 2.1 | 9 |\n| D | 9 | 11 | 1.3 | 3 |\n| E | 12 | 10 | 1.7 | 4 |"
+    },
+    {
+      "id": "APHUG-T2-S02",
+      "title": "Population pyramid of Country M, described in words (hypothetical data)",
+      "text": "Each bar from ages 0-4 up to 15-19 is narrower than the bar just above it, so the base of the pyramid is narrower than its middle. The widest bars are the age groups from 45-49 to 60-64. From age 70 upward, the bars for women are clearly wider than the bars for men. Country M's total population fell slightly over the last five years, even though more people moved into the country than left it."
+    },
+    {
+      "id": "APHUG-D-S02",
+      "title": "Migrants arriving in City K in one year, by where they lived before (hypothetical data)",
+      "text": "| Previous home | Migrants |\n|---|---|\n| Within 50 km | 18,400 |\n| 51 to 200 km | 7,100 |\n| 201 to 500 km | 2,600 |\n| More than 500 km, same country | 900 |\n| Another country | 1,500 |\n| Total | 30,500 |"
+    },
+    {
+      "id": "APHUG-T1-S03",
+      "title": "A city street, described in words (practice description)",
+      "text": "On one street in a large North American city, shop signs are written in English and Vietnamese. A Buddhist temple stands two doors from a church whose noticeboard lists services in both languages. Restaurants serve pho and burgers on the same menu, and a supermarket stocks produce imported from Southeast Asia. Older residents say the street was mostly Italian American in the 1950s; a few Italian bakeries and the building of a former Catholic school still stand."
+    },
+    {
+      "id": "APHUG-T2-S03",
+      "title": "The spread of a new sport in one country, described as a series of maps (hypothetical)",
+      "text": "**2005:** The first professional teams appear in the country's three largest cities.\n\n**2012:** Teams have been founded in the next ten largest cities, which are scattered across the country, but in almost no smaller places.\n\n**2020:** Amateur leagues have appeared in many small towns, usually first in the towns closest to a city that has a team, and then in the towns next to those."
+    },
+    {
+      "id": "APHUG-D-S03",
+      "title": "A pilgrimage town, described in words (practice description)",
+      "text": "Stone steps lead down to a broad river, where pilgrims bathe at dawn and set small oil lamps on the water. Cremation grounds lie at the river's edge. The lanes behind are lined with shrines and with shops selling flowers, incense and images of gods. During the main festival the town's population rises several times over, and the government sets up tent camps, clinics and extra trains."
+    },
+    {
+      "id": "APHUG-T1-S04",
+      "title": "Election results in State W's five legislative districts (hypothetical data)",
+      "text": "Each district casts 100,000 votes. The party with more votes wins the district's seat.\n\n| District | Party X votes | Party Y votes |\n|---|---|---|\n| 1 | 88,000 | 12,000 |\n| 2 | 85,000 | 15,000 |\n| 3 | 38,000 | 62,000 |\n| 4 | 41,000 | 59,000 |\n| 5 | 46,000 | 54,000 |"
+    },
+    {
+      "id": "APHUG-T2-S04",
+      "title": "Map of Country V, described in words (hypothetical)",
+      "text": "Country V is long and narrow, stretching about ten times farther from north to south than from east to west. Its capital lies on a central plain where most people speak the national language and share the majority religion. The mountainous far north is home to an ethnic group with its own language and religion; that region elects its own assembly, which runs its schools and police. Railways run from the capital to every region except the north, which is reached by a single highway through a mountain pass."
+    },
+    {
+      "id": "APHUG-D-S04",
+      "title": "Three international borders, described in words (hypothetical)",
+      "text": "**Border 1** follows the crest of a high mountain range that separated two farming peoples long before either state existed.\n\n**Border 2** is a straight line of longitude that two colonial powers agreed on in the 1800s. It crosses a dry grassland and divides the seasonal pastures of one herding people.\n\n**Border 3** winds between villages so that each village lies in the state whose language its people speak. It was drawn after a war in the 1900s, in an area that had long been settled."
+    },
+    {
+      "id": "APHUG-T1-S05",
+      "title": "Rural land use around a market town, described in words (hypothetical)",
+      "text": "A market town stands alone on a flat, uniform plain, and all farm goods are carried to it by cart. Around it lie four rings of land use.\n\n**Ring 1**, nearest the town: dairy farms and market gardens growing vegetables and fruit.\n\n**Ring 2:** woodland cut for firewood and building timber.\n\n**Ring 3:** fields of wheat and other grains.\n\n**Ring 4**, farthest out: cattle and sheep grazing. Beyond Ring 4 the land is not used."
+    },
+    {
+      "id": "APHUG-T2-S05",
+      "title": "Farming in five countries (hypothetical data)",
+      "text": "| Country | Workers in farming (% of all workers) | Average farm size (hectares) | Tractors per 100 farms | Farm output sold (%) |\n|---|---|---|---|---|\n| F | 4 | 180 | 140 | 98 |\n| G | 62 | 1.4 | 1 | 22 |\n| H | 35 | 6 | 9 | 55 |\n| J | 2 | 32 | 110 | 95 |\n| K | 12 | 4,500 | 20 | 99 |"
+    },
+    {
+      "id": "APHUG-D-S05",
+      "title": "A hillside farming landscape in a humid tropical region, described in words (practice description)",
+      "text": "The slopes are cut into narrow, stepped fields held up by low walls of earth and stone. Water runs from the highest field to the lowest through small channels, and families plant rice seedlings by hand in the flooded fields. Houses stand close together in a village at the foot of the slope, with small vegetable plots between them, and a few water buffalo graze along the paths."
+    },
+    {
+      "id": "APHUG-T1-S06",
+      "title": "The five largest cities of Country N (hypothetical data)",
+      "text": "| Rank | City | Metropolitan population |\n|---|---|---|\n| 1 | City A | 12.4 million |\n| 2 | City B | 1.9 million |\n| 3 | City C | 1.3 million |\n| 4 | City D | 0.9 million |\n| 5 | City E | 0.8 million |"
+    },
+    {
+      "id": "APHUG-T2-S06",
+      "title": "A large city, described in words (practice description)",
+      "text": "An old central plaza holds the cathedral, government offices and the main business district. A wide, tree-lined avenue runs out from the center with offices, shops, parks and upscale apartment towers along it, ending at a newer business district near the edge of the city. Middle-income neighborhoods form rings farther out; their houses, first built simply, have been enlarged and improved by the owners over many years. On the edge of the city, on steep hillsides and along a polluted river, lie self-built settlements without full water or sewer service."
+    },
+    {
+      "id": "APHUG-D-S06",
+      "title": "Four census tracts in one metropolitan area (hypothetical data)",
+      "text": "| Tract | Distance from the CBD (km) | People per square km | Homes built after 2000 (%) | Commuters using public transit (%) |\n|---|---|---|---|---|\n| 1 | 1 | 14,200 | 6 | 61 |\n| 2 | 6 | 7,800 | 12 | 38 |\n| 3 | 15 | 2,100 | 47 | 9 |\n| 4 | 32 | 380 | 71 | 2 |"
+    },
+    {
+      "id": "APHUG-T1-S07",
+      "title": "Employment by sector in Country T (hypothetical data, % of all workers)",
+      "text": "| Year | Primary | Secondary | Tertiary and higher |\n|---|---|---|---|\n| 1970 | 38 | 34 | 28 |\n| 1995 | 14 | 31 | 55 |\n| 2020 | 4 | 18 | 78 |"
+    },
+    {
+      "id": "APHUG-T2-S07",
+      "title": "Development measures for five countries (hypothetical data)",
+      "text": "| Country | Life expectancy (years) | Mean years of schooling, adults | Seats in parliament held by women (%) | Workers in agriculture (%) |\n|---|---|---|---|---|\n| L | 82 | 13 | 41 | 2 |\n| M | 64 | 5 | 12 | 58 |\n| N | 76 | 9 | 22 | 21 |\n| P | 79 | 12 | 9 | 3 |\n| R | 71 | 8 | 34 | 30 |"
+    },
+    {
+      "id": "APHUG-D-S07",
+      "title": "A new industrial district, described in words (practice description)",
+      "text": "A government sets aside a coastal district beside a deepwater port. Foreign companies that build factories there pay lower taxes and bring in parts without paying tariffs, as long as they export what they make. Within ten years the district holds electronics and clothing factories that employ mostly young women from inland provinces, and the fishing villages around it have grown into a city."
+    }
+  ],
+  "questions": [
+    {
+      "id": "APHUG-T1-001",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S01",
+      "stem": "Which conclusion is best supported by comparing the two maps?",
+      "options": [
+        "The rail corridor lowers attainment near it",
+        "Education levels are even across Province E",
+        "Mountain districts have the most graduates",
+        "National data can hide large local differences",
+        "Province-level data are more precise than district data"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Map 1 makes the provinces look alike, but Map 2 shows a range of 9 to 61 percent inside one of them. Changing the scale of analysis reveals variation that the larger units average away."
+    },
+    {
+      "id": "APHUG-T1-002",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S01",
+      "stem": "Map 2 is best described as which kind of map?",
+      "options": [
+        "A choropleth map",
+        "A reference map",
+        "An isoline map",
+        "A cartogram",
+        "A dot density map"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Map 2 shades each district by a rate, which is a choropleth map. An isoline map joins points of equal value with lines, and a cartogram resizes the districts themselves."
+    },
+    {
+      "id": "APHUG-T1-003",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S01",
+      "stem": "The high values around the capital and along the rail corridor are best explained by",
+      "options": [
+        "lower population density near the provincial capital",
+        "mountains in the north that block migration to the capital",
+        "colleges and skilled jobs clustered along transport links",
+        "forced resettlement of graduates from the north",
+        "a larger share of farmland along the rail line"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Universities and jobs that need degrees concentrate in the capital and in places well connected to it, so graduates live there. The mountain districts are less accessible and have fewer such jobs."
+    },
+    {
+      "id": "APHUG-T1-004",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A ship's navigator would choose a Mercator projection mainly because it",
+      "options": [
+        "shows lines of constant compass bearing as straight",
+        "keeps every distance from the map's center true",
+        "shows the true area of land at high latitudes",
+        "draws each pole as a single point without stretching",
+        "splits the oceans to reduce distortion of land"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "On a Mercator projection a line of constant compass direction is straight, which made it the standard sea chart. The price is a huge enlargement of area toward the poles."
+    },
+    {
+      "id": "APHUG-T1-005",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The delivery area of a city's daily newspaper, centered on its printing plant, is best described as",
+      "options": [
+        "an absolute location",
+        "a perceptual region",
+        "a cultural hearth",
+        "a formal region",
+        "a functional region"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A functional (nodal) region is organized around a central point and the links to it, here the plant and its delivery routes. A formal region shares one trait throughout, such as a language."
+    },
+    {
+      "id": "APHUG-T1-006",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A clinic finds that most of its patients live within 5 km and very few come from 30 km away. This pattern illustrates",
+      "options": [
+        "hierarchical diffusion",
+        "carrying capacity",
+        "time-space compression",
+        "distance decay",
+        "environmental determinism"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Distance decay is the drop in interaction as distance grows. Time-space compression is the opposite tendency, as technology makes distant places feel closer."
+    },
+    {
+      "id": "APHUG-T1-007",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S02",
+      "stem": "What is the rate of natural increase of Country B?",
+      "options": [
+        "0.26%",
+        "2.6%",
+        "3.3%",
+        "4.0%",
+        "26%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The rate of natural increase is the crude birth rate minus the crude death rate, as a percent: (33 - 7) / 1,000 = 2.6%. Adding the two rates gives 4.0%, and 26 is the gap per 1,000, not per 100."
+    },
+    {
+      "id": "APHUG-T1-008",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S02",
+      "stem": "Which country is most likely in stage 5 of the demographic transition model?",
+      "options": [
+        "Country C",
+        "Country D",
+        "Country B",
+        "Country A",
+        "Country E"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Stage 5 is natural decrease: Country D's death rate (11) is above its birth rate (9). Country E has low rates that still give slight growth, which is stage 4."
+    },
+    {
+      "id": "APHUG-T1-009",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S02",
+      "stem": "Country A's high total fertility rate is most likely linked to",
+      "options": [
+        "a high share of women finishing university degrees",
+        "mostly urban, service-sector jobs",
+        "an aging, shrinking workforce",
+        "low female education and a need for farm labor",
+        "low infant mortality rates"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Where few girls stay in school and families farm by hand, children add labor and many are born; Country A's high infant mortality adds to that. The other options describe places with low fertility."
+    },
+    {
+      "id": "APHUG-T1-010",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Ravenstein's laws of migration, most migrants",
+      "options": [
+        "move from cities to villages",
+        "travel to another continent",
+        "move as whole families",
+        "never return to their origin",
+        "move only a short distance"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Ravenstein found that most migration is over short distances, that long-distance migrants tend to head for large cities, and that every flow creates a counterflow."
+    },
+    {
+      "id": "APHUG-T1-011",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "For a farmer who leaves home after years of drought, the drought is",
+      "options": [
+        "an intervening obstacle",
+        "an intervening opportunity",
+        "an economic pull factor abroad",
+        "an environmental push factor",
+        "a political pull factor"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A push factor drives people out of their origin, and drought is an environmental one. An intervening obstacle lies along the route, not at home."
+    },
+    {
+      "id": "APHUG-T1-012",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the later stages of the epidemiological transition, the leading causes of death become",
+      "options": [
+        "famine and malnutrition",
+        "infectious and parasitic diseases",
+        "accidents among young workers",
+        "chronic and degenerative diseases",
+        "pandemics spread along trade routes"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "As sanitation, vaccines and medicine cut infectious disease, more people live long enough to die of heart disease, cancer and other chronic conditions of old age."
+    },
+    {
+      "id": "APHUG-T1-013",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Thomas Malthus argued that population would outgrow the food supply because",
+      "options": [
+        "population grows geometrically and food arithmetically",
+        "migration spreads people evenly over the land",
+        "food grows geometrically and population arithmetically",
+        "birth rates fall as people move to cities",
+        "new technology always raises crop yields"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Malthus held that population can double again and again while food output rises only by steady additions, so famine, disease or war would check growth. He did not foresee the gains in farm output."
+    },
+    {
+      "id": "APHUG-T1-014",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Data analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A country has 26 million people aged 0 to 14, 50 million aged 15 to 64 and 9 million aged 65 and over. What is its dependency ratio?",
+      "options": [
+        "18",
+        "41",
+        "52",
+        "70",
+        "143"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The dependency ratio is dependents (under 15 and 65 and over) per 100 people of working age: (26 + 9) / 50 x 100 = 70. Using only the young gives 52, only the old 18."
+    },
+    {
+      "id": "APHUG-T1-015",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A government that offers free contraception and rewards couples who have fewer children follows",
+      "options": [
+        "a pronatalist policy",
+        "a refugee resettlement plan",
+        "an immigration quota",
+        "a guest worker program",
+        "an antinatalist policy"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Antinatalist policies aim to lower the birth rate. Pronatalist policies, such as child allowances, try to raise it."
+    },
+    {
+      "id": "APHUG-T1-016",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S03",
+      "stem": "The street described is best identified as",
+      "options": [
+        "a greenbelt",
+        "an edge city",
+        "a central business district",
+        "a gated community",
+        "an ethnic enclave"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "An ethnic enclave is a neighborhood where one ethnic group clusters, with its own shops, worship and language on the signs. The street has none of the office towers of a CBD."
+    },
+    {
+      "id": "APHUG-T1-017",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S03",
+      "stem": "The surviving Italian bakeries and school building illustrate",
+      "options": [
+        "stimulus diffusion",
+        "ethnocentrism",
+        "sequent occupance",
+        "cultural relativism",
+        "environmental determinism"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Sequent occupance is the layering of the marks that successive groups leave on one place. The Italian American layer remains under the Vietnamese one."
+    },
+    {
+      "id": "APHUG-T1-018",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S03",
+      "stem": "Restaurants that serve pho and burgers on one menu are an example of",
+      "options": [
+        "cultural relativism",
+        "ethnocentrism",
+        "full assimilation",
+        "cultural syncretism",
+        "contagious diffusion"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Syncretism blends traits from different cultures into something new. Assimilation would mean the immigrant food giving way to the host culture's entirely."
+    },
+    {
+      "id": "APHUG-T1-019",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A rumor that spreads from neighbor to neighbor until most of a town has heard it shows",
+      "options": [
+        "hierarchical diffusion",
+        "reverse hierarchical diffusion",
+        "contagious diffusion",
+        "relocation diffusion",
+        "stimulus diffusion"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Contagious diffusion spreads outward through direct contact, reaching nearby people first, regardless of rank or status."
+    },
+    {
+      "id": "APHUG-T1-020",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The spread of a language to a new continent by the migrants who carry it there is",
+      "options": [
+        "expansion diffusion",
+        "hierarchical diffusion",
+        "relocation diffusion",
+        "contagious diffusion",
+        "stimulus diffusion"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In relocation diffusion the trait moves with people who leave the hearth. In expansion diffusion (contagious, hierarchical and stimulus) it spreads while staying strong at home."
+    },
+    {
+      "id": "APHUG-T1-021",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A fast-food chain sells vegetarian burgers in India, where many people avoid beef. The idea of the burger has spread by",
+      "options": [
+        "contagious diffusion",
+        "forced diffusion",
+        "relocation diffusion",
+        "stimulus diffusion",
+        "hierarchical diffusion"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In stimulus diffusion the underlying idea spreads but is changed to fit the local culture, here a burger without beef."
+    },
+    {
+      "id": "APHUG-T1-022",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which of these religions is an ethnic religion?",
+      "options": [
+        "Hinduism",
+        "Buddhism",
+        "Islam",
+        "Sikhism",
+        "Christianity"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Hinduism is closely tied to the people and landscapes of South Asia and does not seek converts. Buddhism, Christianity, Islam and Sikhism are universalizing religions."
+    },
+    {
+      "id": "APHUG-T1-023",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A language that people with different native languages use to trade with one another is",
+      "options": [
+        "a dialect",
+        "a creole",
+        "a lingua franca",
+        "a language family",
+        "a language isolate"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A lingua franca is a shared second language for trade or diplomacy, such as Swahili in much of East Africa. A creole is a mixed language that has become people's first language."
+    },
+    {
+      "id": "APHUG-T1-024",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "English and Hindi both belong to which language family?",
+      "options": [
+        "Indo-European",
+        "Afro-Asiatic",
+        "Niger-Congo",
+        "Austronesian",
+        "Sino-Tibetan"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Both descend from a common ancestor of the Indo-European family, English in its Germanic branch and Hindi in its Indo-Iranian branch."
+    },
+    {
+      "id": "APHUG-T1-025",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S04",
+      "stem": "What share of the total vote in State W did Party X win?",
+      "options": [
+        "38.0%",
+        "40.0%",
+        "40.4%",
+        "46.0%",
+        "59.6%"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Party X won 88,000 + 85,000 + 38,000 + 41,000 + 46,000 = 298,000 of 500,000 votes, or 59.6%. It won only 2 of 5 seats, which is 40% of the seats."
+    },
+    {
+      "id": "APHUG-T1-026",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S04",
+      "stem": "The lopsided results in Districts 1 and 2 show which redistricting technique?",
+      "options": [
+        "cracking",
+        "devolution",
+        "packing",
+        "reapportionment",
+        "annexation"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Packing crowds one party's voters into a few districts it wins by huge margins, wasting votes. Cracking spreads them thinly across many districts."
+    },
+    {
+      "id": "APHUG-T1-027",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S04",
+      "stem": "Taken as a whole, the results are best explained by",
+      "options": [
+        "gerrymandering that favors Party Y",
+        "reapportionment after a census",
+        "districts of very unequal population",
+        "fair representation by population",
+        "gerrymandering that favors Party X"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Party Y won 3 of 5 seats with about 40% of the vote because Party X's voters were packed into two districts. Every district casts the same number of votes, so unequal population is not the cause."
+    },
+    {
+      "id": "APHUG-T1-028",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A state whose people largely share one ethnic identity and language, such as Iceland, is",
+      "options": [
+        "a multinational state",
+        "a nation-state",
+        "a stateless nation",
+        "a supranational union",
+        "an autonomous region"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A nation-state is a state whose territory matches that of one nation. A multinational state contains several."
+    },
+    {
+      "id": "APHUG-T1-029",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The Kurds, a people spread across several states without a state of their own, are",
+      "options": [
+        "a microstate",
+        "a supranational organization",
+        "a stateless nation",
+        "a multinational state",
+        "a nation-state"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A stateless nation is a people with a shared identity and homeland but no sovereign state. Kurds live mainly in Turkey, Iraq, Iran and Syria."
+    },
+    {
+      "id": "APHUG-T1-030",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A boundary drawn across an area before it was densely settled is",
+      "options": [
+        "a relic boundary",
+        "a consequent boundary",
+        "an antecedent boundary",
+        "a superimposed boundary",
+        "a subsequent boundary"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Antecedent boundaries come before most settlement, so the cultural landscape grows up around them. Subsequent boundaries are drawn after settlement."
+    },
+    {
+      "id": "APHUG-T1-031",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Scale analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The European Union, whose member states share some laws and a single market, is",
+      "options": [
+        "a supranational organization",
+        "a stateless nation",
+        "a federal state",
+        "a nation-state",
+        "a multinational colonial empire"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A supranational organization joins three or more states that give up some sovereignty for shared goals. Its members remain separate sovereign states."
+    },
+    {
+      "id": "APHUG-T1-032",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which is most likely a centrifugal force for a state?",
+      "options": [
+        "A school curriculum shared nationwide",
+        "A road network reaching every region",
+        "A regional language group seeking autonomy",
+        "A national team that unites fans",
+        "A national holiday celebrated everywhere"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Centrifugal forces pull a state apart, and a regional group seeking autonomy is one. The other options are centripetal, binding the state together."
+    },
+    {
+      "id": "APHUG-T1-033",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A state that divides power between a central government and regional governments, each with powers of its own, has",
+      "options": [
+        "an absolute monarchy",
+        "a colonial administration",
+        "a theocracy",
+        "a federal system",
+        "a unitary system"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In a federal system, such as those of the United States, India or Germany, regional units hold powers the center cannot simply take away. A unitary system concentrates power at the center."
+    },
+    {
+      "id": "APHUG-T1-034",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S05",
+      "stem": "The pattern described matches which model?",
+      "options": [
+        "Rostow's stages of growth",
+        "Weber's least cost theory",
+        "Burgess's concentric zone model",
+        "Christaller's central place theory",
+        "von Thunen's land use model"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Von Thunen modeled rings of farm land use around a single market on a uniform plain, set by transport cost. Burgess's rings describe land use inside a city."
+    },
+    {
+      "id": "APHUG-T1-035",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S05",
+      "stem": "Dairying and market gardening lie closest to the town mainly because their products",
+      "options": [
+        "need the largest areas of land",
+        "need wood from the forest ring nearby",
+        "spoil quickly and are costly to carry far",
+        "are sold mainly to other countries",
+        "grow best in poor, dry soils"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Milk, vegetables and fruit are perishable and bulky for their value, so they pay the high rent near the market to keep transport short. Ranching, which needs the most land, is farthest out."
+    },
+    {
+      "id": "APHUG-T1-036",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Scale analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S05",
+      "stem": "Today, refrigerated trucks and air freight most directly",
+      "options": [
+        "move grain farming next to towns",
+        "raise the cost of shipping fresh food",
+        "make the rings described even sharper",
+        "weaken distance's effect on land use",
+        "end commercial farming near cities"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Fast refrigerated transport lets perishable food travel across continents, so global markets, not distance to one town, shape what farmers grow. The model's assumptions fit less well today."
+    },
+    {
+      "id": "APHUG-T1-037",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The Fertile Crescent of Southwest Asia is best known as",
+      "options": [
+        "the hearth of rice cultivation",
+        "the center of the Green Revolution",
+        "the first region of plantation farming",
+        "an early hearth of plant domestication",
+        "the origin of the potato and maize"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Wheat, barley and lentils were among the crops first domesticated in the Fertile Crescent, one of several independent hearths of the First Agricultural Revolution."
+    },
+    {
+      "id": "APHUG-T1-038",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A major criticism of the Green Revolution is that it",
+      "options": [
+        "relied on costly fertilizer, irrigation and seed",
+        "reduced the use of groundwater",
+        "ended the use of chemical pesticides",
+        "lowered wheat and rice yields in Asia",
+        "was adopted mainly by the poorest, landless farmers"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "High-yield varieties raised output but needed purchased inputs and water, so better-off farmers gained most, and heavy use of chemicals and groundwater harmed soils and aquifers."
+    },
+    {
+      "id": "APHUG-T1-039",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Shifting cultivation is practiced mainly in",
+      "options": [
+        "dry grasslands of Central Asia",
+        "crowded, irrigated river deltas of East Asia",
+        "humid tropical forests with poor soils",
+        "the boreal forests of Canada",
+        "the Mediterranean coasts of Europe"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Heavy tropical rain leaches nutrients from forest soils, so farmers burn a plot for its ash, farm it a few years and move on while the forest regrows. Crowded deltas are farmed intensively every year."
+    },
+    {
+      "id": "APHUG-T1-040",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Herders who move their animals up to mountain pastures in summer and down to valleys in winter practice",
+      "options": [
+        "shifting cultivation",
+        "transhumance",
+        "pastoral nomadism",
+        "ranching",
+        "sedentary farming"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Transhumance is a seasonal move between fixed pastures. Pastoral nomads move continually with their herds across dry lands, without a fixed home."
+    },
+    {
+      "id": "APHUG-T1-041",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A company that owns the farms, the processing plants and the stores that sell its food shows",
+      "options": [
+        "horizontal integration",
+        "vertical integration",
+        "subsistence farming",
+        "economies of scope",
+        "a commodity cooperative"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Vertical integration is control of several stages of one supply chain. Horizontal integration is buying up competitors at the same stage."
+    },
+    {
+      "id": "APHUG-T1-042",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A national survey that divides land into a grid of one-mile squares creates which pattern?",
+      "options": [
+        "the open-field system",
+        "metes and bounds",
+        "township and range",
+        "clustered villages",
+        "long lots"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The township and range system, used across much of the US interior, laid out square sections that still show in fields and roads. Metes and bounds follows natural features."
+    },
+    {
+      "id": "APHUG-T1-043",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S06",
+      "stem": "Under the rank-size rule, about how large would City C be expected to be?",
+      "options": [
+        "4.1 million",
+        "6.2 million",
+        "8.3 million",
+        "12.4 million",
+        "37.2 million"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The rank-size rule says the city of rank n has 1/n the population of the largest city: 12.4 million / 3 is about 4.1 million. Dividing by 2 gives the expected size of City B, 6.2 million."
+    },
+    {
+      "id": "APHUG-T1-044",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S06",
+      "stem": "City A is best described as",
+      "options": [
+        "a suburb",
+        "a boomburb",
+        "an edge city",
+        "a megalopolis",
+        "a primate city"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A primate city is more than twice the size of the next largest and dominates its country. City A is over six times the size of City B."
+    },
+    {
+      "id": "APHUG-T1-045",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S06",
+      "stem": "A pattern like Country N's is most common in countries that",
+      "options": [
+        "concentrate political and economic power in one city",
+        "have many evenly sized regional centers",
+        "have recently moved their capital to a small inland town",
+        "are large federations with strong regions",
+        "follow the rank-size rule closely"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Primacy develops where government, trade and investment focus on one city, often a former colonial capital or port. Federations with strong regional centers tend toward the rank-size pattern."
+    },
+    {
+      "id": "APHUG-T1-046",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the Burgess concentric zone model, the ring just outside the central business district is",
+      "options": [
+        "the industrial suburb",
+        "the commuters' zone",
+        "the zone in transition",
+        "the zone of better residences",
+        "the zone of workers' homes"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Burgess placed a zone in transition, with factories and poor, crowded housing, next to the CBD, then workers' homes, better residences and a commuters' zone."
+    },
+    {
+      "id": "APHUG-T1-047",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In central place theory, the minimum number of people needed to support a good or service is its",
+      "options": [
+        "hinterland",
+        "bid rent",
+        "range",
+        "market area",
+        "threshold"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The threshold is the smallest market that keeps a business going. The range is the maximum distance people will travel for it."
+    },
+    {
+      "id": "APHUG-T1-048",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A cluster of offices, malls and housing that grows near a highway interchange on the urban fringe is",
+      "options": [
+        "an edge city",
+        "a primate city",
+        "a central business district",
+        "an ethnic enclave",
+        "a greenbelt"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Edge cities grew around the outer beltways of North American metropolitan areas as jobs followed people to the suburbs."
+    },
+    {
+      "id": "APHUG-T1-049",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Middle-class newcomers renovating homes in an older inner-city neighborhood, pushing up rents, is",
+      "options": [
+        "counterurbanization",
+        "gentrification",
+        "urban sprawl",
+        "filtering",
+        "suburbanization"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Gentrification upgrades housing and attracts new businesses but can displace long-time, lower-income residents. Filtering is the reverse, as housing passes down to poorer households."
+    },
+    {
+      "id": "APHUG-T1-050",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Walkable, mixed-use neighborhoods with homes close to shops and transit are goals of",
+      "options": [
+        "the zone in transition",
+        "new urbanism",
+        "exclusionary zoning",
+        "redlining",
+        "urban sprawl"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "New urbanism designs compact neighborhoods where daily needs are a short walk away, in contrast to car-dependent sprawl."
+    },
+    {
+      "id": "APHUG-T1-051",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Bid-rent theory helps explain why",
+      "options": [
+        "every location in a city costs the same",
+        "land costs most near the city center",
+        "suburbs are denser than downtowns",
+        "farms are found next to the CBD",
+        "cities grow in wedges along rail lines"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Businesses bid most for the accessible land at the center, so rents and densities are highest there and fall with distance. Wedges along routes are Hoyt's sector model."
+    },
+    {
+      "id": "APHUG-T1-052",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S07",
+      "stem": "By how many percentage points did the secondary sector's share fall from 1995 to 2020?",
+      "options": [
+        "13",
+        "16",
+        "18",
+        "23",
+        "34"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The secondary share fell from 31% to 18%, a drop of 13 points. Measuring from 1970 (34%) gives 16, and 23 is the rise in the tertiary share."
+    },
+    {
+      "id": "APHUG-T1-053",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S07",
+      "stem": "The change in Country T's secondary sector from 1995 to 2020 is best described as",
+      "options": [
+        "agricultural intensification",
+        "deindustrialization",
+        "import substitution",
+        "industrialization",
+        "the Green Revolution"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Deindustrialization is the decline of manufacturing's share of jobs as a country shifts to services. Industrialization would raise the secondary share."
+    },
+    {
+      "id": "APHUG-T1-054",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T1-S07",
+      "stem": "Which global process most likely contributed to the fall in Country T's secondary sector?",
+      "options": [
+        "New tariffs that kept out goods made in other countries",
+        "Rapid population growth in rural areas",
+        "Factories moving to countries with lower wages",
+        "A fall in the number of service jobs",
+        "A rise in the share of farm workers"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "As transport and communication costs fell, many firms moved manufacturing to countries with cheaper labor, a new international division of labor, while services grew at home."
+    },
+    {
+      "id": "APHUG-T1-055",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In Rostow's stages of economic growth, the stage in which a few leading industries drive rapid growth is",
+      "options": [
+        "drive to maturity",
+        "high mass consumption",
+        "take-off",
+        "traditional society",
+        "preconditions for take-off"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Rostow's take-off stage sees a few manufacturing industries grow fast and investment rise. The drive to maturity spreads technology across the whole economy."
+    },
+    {
+      "id": "APHUG-T1-056",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In Wallerstein's world-systems theory, countries that mainly supply raw materials and low-wage labor to wealthier ones are the",
+      "options": [
+        "heartland",
+        "semi-periphery",
+        "core",
+        "rimland",
+        "periphery"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The periphery exports raw materials and low-value goods to the core, which keeps the high-value, high-profit activities."
+    },
+    {
+      "id": "APHUG-T1-057",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Under Weber's least cost theory, a copper smelter that removes most of the weight of the ore is best located",
+      "options": [
+        "in the largest city",
+        "midway between mine and market",
+        "wherever land is cheapest",
+        "near its market",
+        "near the mines"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A bulk-reducing industry locates near its raw material, because shipping the lighter finished metal costs less than shipping the heavy ore."
+    },
+    {
+      "id": "APHUG-T1-058",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Concepts and processes",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Besides reproductive health and political empowerment, the Gender Inequality Index measures",
+      "options": [
+        "gross national income per person",
+        "participation in the labor force",
+        "life expectancy at birth",
+        "access to the internet",
+        "literacy among young children"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The UN's Gender Inequality Index combines reproductive health, empowerment (seats in parliament and secondary education) and labor force participation. Income per person is part of the Human Development Index."
+    },
+    {
+      "id": "APHUG-T1-059",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A country with high income per person but short life expectancy and little schooling would most likely rank",
+      "options": [
+        "outside the HDI, which counts only income",
+        "near the top of the Gender Inequality Index",
+        "lower on the HDI than on income alone",
+        "the same on the HDI as on income alone",
+        "higher on the HDI than on income alone"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The HDI combines income per person with life expectancy and years of schooling, so weak health and education pull a rich country's HDI rank below its income rank, as in some oil exporters."
+    },
+    {
+      "id": "APHUG-T1-060",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Small loans to people, often women, who cannot borrow from ordinary banks are called",
+      "options": [
+        "foreign aid",
+        "remittances",
+        "structural adjustment loans",
+        "tariffs",
+        "microloans"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Microloans help people start or grow small businesses. Structural adjustment loans are large loans to governments with policy conditions."
+    },
+    {
+      "id": "APHUG-T2-001",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S01",
+      "stem": "What is the physiological density of Country S?",
+      "options": [
+        "60 people per square km",
+        "180 people per square km",
+        "270 people per square km",
+        "600 people per square km",
+        "2,700 people per square km"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Physiological density is people per unit of arable land. Country S has 81 million people and 30% of 450,000 sq km, or 135,000 sq km, of arable land: 81,000,000 / 135,000 = 600. The value 180 is its arithmetic density."
+    },
+    {
+      "id": "APHUG-T2-002",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Data analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S01",
+      "stem": "Which country's farmland has to support the most people per square kilometer?",
+      "options": [
+        "Country T",
+        "Country Q",
+        "Country P",
+        "Country S",
+        "Country R"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Country P's physiological density is 48 million / 60,000 sq km of arable land = 800, the highest. Country T has the highest arithmetic density (250), but half its land is arable, so its physiological density is only 500."
+    },
+    {
+      "id": "APHUG-T2-003",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S01",
+      "stem": "Country R's arithmetic density is low, yet its physiological density is many times higher. The most likely reason is that",
+      "options": [
+        "most of its farms grow crops for export",
+        "its census undercounts people in cities",
+        "its population is growing very fast",
+        "very little of its land can be farmed",
+        "most of its people live in rural villages"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Country R has 12 people per sq km overall but 400 per sq km of arable land, because only 3% of its land is arable, as in a country of desert, ice or mountains. Rural living or fast growth would not create that gap."
+    },
+    {
+      "id": "APHUG-T2-004",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Collecting data about Earth's surface from satellites or aircraft, without direct contact, is called",
+      "options": [
+        "field observation",
+        "a global positioning system",
+        "a national census",
+        "remote sensing",
+        "a geographic information system"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Remote sensing gathers images and readings from a distance. A GIS layers and analyzes data that may come from remote sensing, and GPS fixes a location."
+    },
+    {
+      "id": "APHUG-T2-005",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The view that the environment sets limits but people choose how to use it is called",
+      "options": [
+        "distance decay",
+        "possibilism",
+        "cultural relativism",
+        "environmental determinism",
+        "sequent occupance"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Possibilism holds that nature offers a range of options and culture decides among them. Environmental determinism, which it replaced, claimed that the environment dictates how societies develop."
+    },
+    {
+      "id": "APHUG-T2-006",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Overnight shipping and video calls have made faraway places feel much closer. Geographers call this",
+      "options": [
+        "carrying capacity",
+        "distance decay",
+        "stimulus diffusion",
+        "absolute distance",
+        "time-space compression"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Time-space compression is the shrinking of the time and effort needed to connect places, driven by transport and communication technology. Distance decay describes interaction falling with distance."
+    },
+    {
+      "id": "APHUG-T2-007",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S02",
+      "stem": "The narrow base of Country M's pyramid most likely reflects",
+      "options": [
+        "high birth rates in rural areas",
+        "a fertility rate below replacement level",
+        "a large inflow of young migrant families",
+        "a famine among older adults",
+        "a recent baby boom"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "When each younger age group is smaller than the one before it, fewer children are being born than in the past, the mark of fertility below about 2.1. A baby boom would widen the base."
+    },
+    {
+      "id": "APHUG-T2-008",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S02",
+      "stem": "The wider bars for women at ages 70 and over are best explained by",
+      "options": [
+        "sex-selective abortion of boys",
+        "older men moving into the country",
+        "longer life expectancy for women",
+        "more girls born than boys",
+        "emigration of older women"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Women outlive men in almost every country, so the oldest age groups have more women. More boys than girls are born, not fewer."
+    },
+    {
+      "id": "APHUG-T2-009",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S02",
+      "stem": "Which policy would Country M's government be most likely to adopt?",
+      "options": [
+        "Limits on the number of children per family",
+        "A lower retirement age for all workers",
+        "Paid parental leave and child allowances",
+        "Closing the border to all immigrants",
+        "Free sterilization for young couples"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A shrinking, aging population leads governments to pronatalist policies like paid leave and child allowances. Closing the border would cut the immigration that is slowing the decline."
+    },
+    {
+      "id": "APHUG-T2-010",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A country's population grows by 1.4% a year. At that rate, about how many years will it take to double?",
+      "options": [
+        "50 years",
+        "70 years",
+        "71 years",
+        "98 years",
+        "140 years"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "By the rule of 70, doubling time is about 70 divided by the growth rate in percent: 70 / 1.4 = 50 years. Seventy is the rule's numerator, not the answer."
+    },
+    {
+      "id": "APHUG-T2-011",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "People who flee persecution in their own country and cross an international border are",
+      "options": [
+        "refugees",
+        "economic migrants",
+        "internally displaced persons",
+        "guest workers",
+        "transhumant herders"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Refugees have crossed a border because of a well-founded fear of persecution. People displaced inside their own country are internally displaced persons."
+    },
+    {
+      "id": "APHUG-T2-012",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "People forced from their homes by conflict or disaster who remain inside their own country are",
+      "options": [
+        "asylum seekers",
+        "emigrants",
+        "internally displaced persons",
+        "guest workers",
+        "refugees under international law"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Internally displaced persons have not crossed an international border, so they fall outside the legal definition of a refugee and stay under their own government's protection."
+    },
+    {
+      "id": "APHUG-T2-013",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Migrants who follow relatives who have already settled in a city are part of",
+      "options": [
+        "forced migration",
+        "step migration",
+        "counterurbanization",
+        "chain migration",
+        "transhumance"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Chain migration follows links of family and community, as earlier migrants send information and help to those who follow. Step migration is a move made in stages."
+    },
+    {
+      "id": "APHUG-T2-014",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Scale analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Money that migrants working abroad send back to their families is called",
+      "options": [
+        "tithes",
+        "tariffs",
+        "remittances",
+        "microloans",
+        "subsidies"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Remittances are a large source of income for many countries of emigration, paying for housing, schooling and small businesses at home."
+    },
+    {
+      "id": "APHUG-T2-015",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Data analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A sex ratio at birth well above 105 boys per 100 girls most likely points to",
+      "options": [
+        "higher female life expectancy",
+        "more women than men emigrating each year",
+        "a large military population",
+        "a high total fertility rate",
+        "a strong cultural preference for sons"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "About 105 boys per 100 girls is the natural ratio at birth. A much higher ratio suggests sex-selective abortion driven by son preference. Life expectancy affects older ages, not births."
+    },
+    {
+      "id": "APHUG-T2-016",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S03",
+      "stem": "The spread of teams from 2005 to 2012 best illustrates",
+      "options": [
+        "hierarchical diffusion",
+        "sequent occupance",
+        "contagious diffusion",
+        "stimulus diffusion",
+        "relocation diffusion"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The sport jumped from the largest cities to the next largest, skipping the small places between them. Spread down the urban hierarchy is hierarchical diffusion."
+    },
+    {
+      "id": "APHUG-T2-017",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S03",
+      "stem": "The spread of amateur leagues from 2012 to 2020 adds which kind of diffusion?",
+      "options": [
+        "relocation diffusion",
+        "stimulus diffusion",
+        "contagious diffusion",
+        "forced diffusion",
+        "reverse hierarchical diffusion"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Leagues appeared first in the towns nearest a team city and then in the towns next to those, spreading through nearby places, which is contagious diffusion."
+    },
+    {
+      "id": "APHUG-T2-018",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S03",
+      "stem": "Which development would most likely have sped up the spread of the sport after 2012?",
+      "options": [
+        "A fall in the share of people living in cities",
+        "Teams moving to other countries",
+        "Streaming of games online and on television",
+        "Laws banning sports leagues in small towns",
+        "Mountain ranges between the largest cities"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Broadcast and online media let people far from a team city see the game, a form of time-space compression that speeds diffusion. The other options would slow it."
+    },
+    {
+      "id": "APHUG-T2-019",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Carl Sauer's idea of the cultural landscape refers to",
+      "options": [
+        "the physical landscape before people arrived",
+        "a region defined by a single religion",
+        "a natural landscape as people have changed it",
+        "the paintings and music a culture produces",
+        "a map of where a group's languages are spoken"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Sauer defined the cultural landscape as the natural area shaped by a culture: its fields, buildings, roads and sacred sites. The landscape before people is the natural landscape."
+    },
+    {
+      "id": "APHUG-T2-020",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Buddhism began in",
+      "options": [
+        "Southeast Asia",
+        "South Asia",
+        "Central Asia",
+        "Southwest Asia",
+        "East Asia"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Buddhism arose in what is now northern India and Nepal, then spread to East and Southeast Asia, where most Buddhists live today."
+    },
+    {
+      "id": "APHUG-T2-021",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A visitor who finds a local custom strange but tries to learn what it means to the people who practice it is showing",
+      "options": [
+        "cultural convergence",
+        "acculturation",
+        "ethnocentrism",
+        "assimilation",
+        "cultural relativism"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Cultural relativism seeks to understand a culture on its own terms. Ethnocentrism, its opposite, judges other cultures by the standards of one's own."
+    },
+    {
+      "id": "APHUG-T2-022",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "An immigrant group that gives up its language and customs and adopts those of the host society has undergone",
+      "options": [
+        "syncretism",
+        "ethnic revival",
+        "assimilation",
+        "multiculturalism",
+        "acculturation"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Assimilation is the full absorption of a group into the host culture. Acculturation adopts some host traits while keeping much of the group's own."
+    },
+    {
+      "id": "APHUG-T2-023",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Folk culture differs from popular culture in that folk culture",
+      "options": [
+        "belongs to small groups and changes slowly",
+        "is much the same in many countries",
+        "spreads quickly through mass media and the internet",
+        "is produced mainly by large companies",
+        "is found mostly in large cities"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Folk culture is traditional, practiced by small and often rural groups, and passed on by word of mouth. The other options describe popular culture."
+    },
+    {
+      "id": "APHUG-T2-024",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Concepts and processes",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Compared with universalizing religions, ethnic religions tend to",
+      "options": [
+        "have the most followers worldwide",
+        "seek converts in all parts of the world",
+        "trace back to a single founder known by name",
+        "be tied closely to their hearth's landscape",
+        "spread mainly down the urban hierarchy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Ethnic religions are bound to one people and place, with holy rivers, mountains and cycles of local seasons. Universalizing religions seek converts everywhere and usually have a known founder."
+    },
+    {
+      "id": "APHUG-T2-025",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S04",
+      "stem": "Country V's shape is best described as",
+      "options": [
+        "prorupted",
+        "fragmented",
+        "elongated",
+        "perforated",
+        "compact"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An elongated state is long and narrow, which makes it hard to connect its far ends to the capital. A compact state is roughly round."
+    },
+    {
+      "id": "APHUG-T2-026",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S04",
+      "stem": "The northern region's elected assembly, which runs its own schools and police, is an example of",
+      "options": [
+        "supranationalism",
+        "colonialism",
+        "irredentism",
+        "annexation",
+        "devolution"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Devolution transfers power from the central government to regional governments, often in response to ethnic or linguistic differences."
+    },
+    {
+      "id": "APHUG-T2-027",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Spatial relationships",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S04",
+      "stem": "Which feature of Country V most likely acts as a centrifugal force?",
+      "options": [
+        "Weak transport links to the north",
+        "Railways reaching most regions",
+        "The capital's central location",
+        "The single national currency",
+        "The shared language of the plain"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A region with a distinct culture that is hard to reach from the capital is less tied to the state, which can feed separatism. The central capital and the railways are centripetal."
+    },
+    {
+      "id": "APHUG-T2-028",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Under the UN Convention on the Law of the Sea, a coastal state's exclusive economic zone reaches",
+      "options": [
+        "200 nautical miles from its coast",
+        "24 nautical miles from its coast",
+        "350 nautical miles from its coast",
+        "50 nautical miles from its coast",
+        "12 nautical miles from its coast"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The exclusive economic zone gives a state rights to fish and seabed resources out to 200 nautical miles. Territorial waters end at 12 nautical miles."
+    },
+    {
+      "id": "APHUG-T2-029",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Scale analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Sovereignty means that a state",
+      "options": [
+        "is home to only one nation",
+        "has final authority over its own territory",
+        "belongs to a supranational union",
+        "is formally recognized by every other state",
+        "shares power with regional governments"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Sovereignty is a state's right to govern its territory without outside interference. Many sovereign states are multinational or federal."
+    },
+    {
+      "id": "APHUG-T2-030",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After a census, a fixed number of legislative seats is shared out again among states by population. This is",
+      "options": [
+        "redistricting",
+        "gerrymandering",
+        "reapportionment",
+        "devolution",
+        "annexation"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Reapportionment decides how many seats each state gets. Redistricting then redraws the district lines within a state."
+    },
+    {
+      "id": "APHUG-T2-031",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The line where a former wall divided a city, still visible in the street pattern though no longer a border, is",
+      "options": [
+        "a relic boundary",
+        "a superimposed boundary",
+        "an antecedent boundary",
+        "a geometric boundary",
+        "a consequent boundary"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A relic boundary has stopped functioning as a border but can still be seen in the cultural landscape."
+    },
+    {
+      "id": "APHUG-T2-032",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A state's claim to land across its border where people of its own ethnicity live is",
+      "options": [
+        "balkanization",
+        "devolution",
+        "self-determination",
+        "irredentism",
+        "supranationalism"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Irredentism seeks to bring an ethnic group living in a neighboring state, and the land it lives on, into the claiming state."
+    },
+    {
+      "id": "APHUG-T2-033",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Spatial relationships",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A region caught between stronger outside powers and divided within by ethnic or religious rivalries is",
+      "options": [
+        "a nation-state",
+        "a shatterbelt",
+        "a core region",
+        "a supranational bloc",
+        "an exclave"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In a shatterbelt, internal divisions and the rivalry of outside powers combine to produce repeated conflict."
+    },
+    {
+      "id": "APHUG-T2-034",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S05",
+      "stem": "Farming in which country is most likely mainly subsistence?",
+      "options": [
+        "Country J",
+        "Country G",
+        "Country H",
+        "Country K",
+        "Country F"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Country G has most workers in farming, tiny farms, almost no tractors and sells only 22% of its output, so most food is eaten by the families who grow it."
+    },
+    {
+      "id": "APHUG-T2-035",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S05",
+      "stem": "Country K's enormous farms, few tractors per farm and nearly all output sold most likely reflect",
+      "options": [
+        "shifting cultivation in rainforest",
+        "extensive ranching on dry grassland",
+        "intensive rice farming in flooded paddies",
+        "dairy farming on small plots",
+        "market gardening near large cities"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Farms of thousands of hectares with little machinery and commercial sales point to extensive livestock ranching on land too dry for crops."
+    },
+    {
+      "id": "APHUG-T2-036",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S05",
+      "stem": "As Country H develops, its share of workers in farming will most likely",
+      "options": [
+        "rise as more grassland is plowed for new crops",
+        "fall as farms grow smaller",
+        "rise as farms grow larger",
+        "stay the same because land is limited",
+        "fall as workers move to industry and services"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Mechanization and larger farms need fewer workers, and growing industries and services draw people to cities, as Countries F and J show."
+    },
+    {
+      "id": "APHUG-T2-037",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Second Agricultural Revolution, linked to the Industrial Revolution, brought",
+      "options": [
+        "the very first domestication of plants and animals",
+        "high-yield rice and wheat seeds",
+        "genetically modified crops",
+        "the spread of slash-and-burn farming",
+        "seed drills, crop rotation and new fertilizers"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "From the 1700s new tools, rotations, fertilizers and later machinery raised yields and freed labor for factories. High-yield seeds came with the Green Revolution in the 1900s."
+    },
+    {
+      "id": "APHUG-T2-038",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Crops whose genes have been altered in a laboratory, for example to resist pests, are",
+      "options": [
+        "heirloom varieties saved by farmers",
+        "genetically modified crops",
+        "organic crops",
+        "cover crops",
+        "hybrid fruit trees"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Genetic modification changes a plant's DNA directly. Organic farming forbids such crops."
+    },
+    {
+      "id": "APHUG-T2-039",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Large tropical estates that grow one cash crop for export, often owned by foreign firms, are",
+      "options": [
+        "collective farms",
+        "truck farms",
+        "subsistence plots",
+        "market gardens",
+        "plantations"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Plantations grow crops such as bananas, sugarcane or oil palm for distant markets, a pattern dating from colonial rule."
+    },
+    {
+      "id": "APHUG-T2-040",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Paddy rice farming in the densely populated river deltas of Asia is an example of",
+      "options": [
+        "extensive commercial grain farming",
+        "shifting cultivation",
+        "plantation agriculture",
+        "intensive subsistence agriculture",
+        "pastoral nomadism"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Intensive agriculture puts much labor into small areas of land to get high yields, which suits crowded deltas where land is scarce."
+    },
+    {
+      "id": "APHUG-T2-041",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "An urban area where few stores sell fresh, healthy food is",
+      "options": [
+        "a market garden",
+        "an urban farm",
+        "a food desert",
+        "a greenbelt",
+        "a milkshed"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Food deserts are common in low-income neighborhoods with few supermarkets, where residents rely on convenience stores and fast food."
+    },
+    {
+      "id": "APHUG-T2-042",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Scale analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Fair trade certification aims mainly to",
+      "options": [
+        "ban exports of cash crops",
+        "raise tariffs on imported coffee",
+        "lower prices for shoppers in rich countries",
+        "give small farmers stable and fair prices",
+        "replace small farms with plantations"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Fair trade links farmers in poorer countries with buyers who agree to pay a minimum price and a premium, shortening an unequal commodity chain."
+    },
+    {
+      "id": "APHUG-T2-043",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S06",
+      "stem": "The city described best fits which model?",
+      "options": [
+        "the multiple nuclei model",
+        "the Burgess concentric zone model",
+        "the Hoyt sector model",
+        "the Southeast Asian city model",
+        "the Latin American city model"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A colonial plaza and CBD, an elite spine, middle-class rings improved over time and peripheral squatter settlements are the parts of the Griffin-Ford Latin American city model."
+    },
+    {
+      "id": "APHUG-T2-044",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S06",
+      "stem": "In that model, the wide avenue lined with offices and upscale housing is called",
+      "options": [
+        "the periferico",
+        "the disamenity sector",
+        "the zone in transition",
+        "the zone of maturity",
+        "the spine"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The spine extends the CBD outward and is flanked by the elite residential sector. The disamenity sector holds the poorest housing, often on hazardous land."
+    },
+    {
+      "id": "APHUG-T2-045",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S06",
+      "stem": "The self-built settlements on the city's edge are most likely a result of",
+      "options": [
+        "gentrification of the outer rings",
+        "a falling urban population",
+        "rapid rural-to-urban migration",
+        "the flight of the rich to the suburbs",
+        "strict zoning that bans housing"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Migrants arrive faster than formal housing and services can be built, so they build their own homes on land no one else wants, such as steep or flood-prone sites."
+    },
+    {
+      "id": "APHUG-T2-046",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Hoyt's sector model holds that",
+      "options": [
+        "land use is the same in every direction",
+        "cities grow in wedges along transport routes",
+        "cities grow in rings around one center",
+        "cities grow around several separate business centers",
+        "every city has a colonial port zone"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Hoyt saw high-rent, industrial and low-rent sectors extending outward along railways, roads and rivers. Rings around one center are Burgess's model."
+    },
+    {
+      "id": "APHUG-T2-047",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The multiple nuclei model of Harris and Ullman differs from earlier models in",
+      "options": [
+        "dividing the city into wedges along railways",
+        "having a single dominant CBD",
+        "ignoring the role of cars",
+        "placing farms inside the city",
+        "having several centers of activity"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Harris and Ullman argued that cities grow around several nodes, such as a port, a university or an airport, each drawing related land uses."
+    },
+    {
+      "id": "APHUG-T2-048",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In central place theory, the greatest distance people will travel to buy a good or service is its",
+      "options": [
+        "range",
+        "agglomeration",
+        "threshold",
+        "hinterland",
+        "bid rent"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The range sets how far a market area can reach; the threshold is the minimum number of customers. Goods bought often have short ranges."
+    },
+    {
+      "id": "APHUG-T2-049",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The practice of refusing home loans in certain neighborhoods, often by race, is",
+      "options": [
+        "filtering",
+        "blockbusting",
+        "redlining",
+        "gentrification",
+        "zoning"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Redlining marked neighborhoods as too risky for lending, which starved them of investment. Blockbusting played on racial fears to get owners to sell cheaply."
+    },
+    {
+      "id": "APHUG-T2-050",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A city with more than 10 million people is",
+      "options": [
+        "an edge city",
+        "a primate city",
+        "a boomburb",
+        "a megacity",
+        "a megalopolis"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A megacity is defined by its population. A megalopolis is a chain of metropolitan areas that have grown together."
+    },
+    {
+      "id": "APHUG-T2-051",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Pavement and buildings that make a city warmer than the countryside around it create",
+      "options": [
+        "an urban heat island",
+        "a food desert",
+        "a greenbelt",
+        "a brownfield",
+        "an edge city"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Dark surfaces absorb heat and buildings release it at night, so cities stay warmer, especially where trees are few."
+    },
+    {
+      "id": "APHUG-T2-052",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S07",
+      "stem": "Which country is most likely the least developed?",
+      "options": [
+        "Country R",
+        "Country L",
+        "Country P",
+        "Country N",
+        "Country M"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Country M has the shortest lives, the least schooling and the most workers in agriculture, the profile of a least developed country."
+    },
+    {
+      "id": "APHUG-T2-053",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S07",
+      "stem": "Country P's figures show that",
+      "options": [
+        "high development can coexist with gender inequality",
+        "schooling has no link to life expectancy",
+        "low life expectancy always comes with few women in parliament",
+        "Country P is less developed than Country M",
+        "farming countries have the most women in parliament"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Country P has long lives, much schooling and few farm workers, yet the lowest share of women in parliament, 9%. Country R, less developed, has 34%."
+    },
+    {
+      "id": "APHUG-T2-054",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-T2-S07",
+      "stem": "Which measure would best capture the gap shown for Country P?",
+      "options": [
+        "The Gender Inequality Index",
+        "The Human Development Index",
+        "The dependency ratio",
+        "The total fertility rate",
+        "The rank-size rule"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Gender Inequality Index includes women's share of seats in parliament, so it would show Country P's gap. The HDI does not measure differences between women and men."
+    },
+    {
+      "id": "APHUG-T2-055",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Dependency theory argues that many poorer countries stay poor mainly because",
+      "options": [
+        "they lack natural resources entirely",
+        "they have not yet reached Rostow's take-off stage",
+        "their climates prevent development",
+        "trade and colonial ties favor rich countries",
+        "their populations are too small"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Dependency theorists hold that colonial history and unequal trade lock poorer countries into exporting raw materials to richer ones. Climate-based explanations are environmental determinism."
+    },
+    {
+      "id": "APHUG-T2-056",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In world-systems theory, a fast-industrializing exporter with a mix of core and peripheral activities is part of the",
+      "options": [
+        "semi-periphery",
+        "rimland",
+        "core",
+        "external arena",
+        "periphery"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The semi-periphery both is exploited by the core and exploits the periphery, and countries can move into or out of it."
+    },
+    {
+      "id": "APHUG-T2-057",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Software firms clustering in one region to share skilled workers, suppliers and ideas is",
+      "options": [
+        "dispersion",
+        "agglomeration",
+        "deglomeration",
+        "deindustrialization",
+        "outsourcing"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Agglomeration gives firms that cluster lower costs and better access to labor and know-how. Deglomeration is the move away from a crowded cluster."
+    },
+    {
+      "id": "APHUG-T2-058",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Foreign-owned factories in northern Mexico that assemble imported parts for export are",
+      "options": [
+        "plantations",
+        "cooperatives",
+        "maquiladoras",
+        "brownfields",
+        "cottage industries"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Maquiladoras grew after rules allowed duty-free import of parts for assembly and re-export, mainly to the United States."
+    },
+    {
+      "id": "APHUG-T2-059",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Concepts and processes",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Flexible, just-in-time production in small batches, with work spread among many suppliers, is a feature of",
+      "options": [
+        "the putting-out system",
+        "cottage industry",
+        "import substitution",
+        "Fordism",
+        "post-Fordism"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Fordism meant mass production of standard goods on assembly lines. Post-Fordist production adapts quickly to demand and outsources much of the work."
+    },
+    {
+      "id": "APHUG-T2-060",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Scale analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Tourism designed to protect natural areas and benefit local people is",
+      "options": [
+        "ecotourism",
+        "agritourism",
+        "mass tourism",
+        "medical tourism",
+        "heritage tourism"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Ecotourism aims to earn income from nature while conserving it, giving local communities a reason to protect forests and wildlife."
+    },
+    {
+      "id": "APHUG-D-001",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-D-S01",
+      "stem": "Map 2 most likely uses a projection that preserves",
+      "options": [
+        "true compass direction",
+        "the straightness of meridians",
+        "distance from the center",
+        "area",
+        "shape"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Map 2 keeps Greenland and Africa in correct proportion, so it is an equal-area projection, and it gives up shape to do so, which is why Africa looks stretched."
+    },
+    {
+      "id": "APHUG-D-002",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-D-S01",
+      "stem": "A student says Map 1 shows that Greenland is larger than Africa. The best response is that Map 1",
+      "options": [
+        "is confirmed by the shapes on Map 3",
+        "greatly enlarges land far from the equator",
+        "draws Africa at a smaller scale on purpose",
+        "shows Greenland as it was in the past",
+        "is a reference map, so its areas are exact"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Map 1 is a Mercator-type projection, which stretches area more and more toward the poles. Africa is about 14 times the area of Greenland."
+    },
+    {
+      "id": "APHUG-D-003",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Source analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APHUG-D-S01",
+      "stem": "Map 3 is best described as",
+      "options": [
+        "an azimuthal projection centered on a pole",
+        "a compromise projection that spreads distortion",
+        "a conformal projection made for navigation",
+        "an equal-area projection made for density maps",
+        "a cartogram sized by each country's population"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A compromise projection such as the Robinson keeps no property exactly but keeps all of them close for most of the world, which suits general reference world maps."
+    },
+    {
+      "id": "APHUG-D-004",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "To show where farms of one crop are concentrated, with each dot standing for 100 farms, a cartographer would use",
+      "options": [
+        "an isoline map",
+        "a cartogram",
+        "a flow-line map",
+        "a dot density map",
+        "a choropleth map"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A dot density map places one dot for a set number of features, so clusters show where they are concentrated. A choropleth shades whole areas by a rate instead."
+    },
+    {
+      "id": "APHUG-D-005",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Lines that join points of equal elevation or equal rainfall are the mark of",
+      "options": [
+        "a graduated symbol map",
+        "a dot density map",
+        "a cartogram",
+        "a choropleth map",
+        "an isoline map"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "An isoline map draws lines through points of equal value, such as contour lines of elevation or isohyets of rainfall."
+    },
+    {
+      "id": "APHUG-D-006",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A world map that redraws each country at a size set by its population is",
+      "options": [
+        "a choropleth map",
+        "a reference map",
+        "an isoline map",
+        "a cartogram",
+        "a dot density map"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A cartogram distorts the size of each unit to show a value such as population. A choropleth keeps true boundaries and shades them instead."
+    },
+    {
+      "id": "APHUG-D-007",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which statement describes the relative location of a town?",
+      "options": [
+        "It is built on a terrace above a river",
+        "It has a population of about 40,000",
+        "It lies 20 km north of a major port",
+        "It sits at 41 degrees north, 12 degrees east",
+        "Its average July temperature is 24 C"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Relative location places somewhere in relation to other places. Latitude and longitude give absolute location, and the river terrace describes the town's site."
+    },
+    {
+      "id": "APHUG-D-008",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The physical features of the land on which a city is built, such as a hilltop or a harbor, are its",
+      "options": [
+        "relative location",
+        "site",
+        "toponym",
+        "situation",
+        "hinterland"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Site is the physical character of the place itself. Situation is its location relative to other places, such as being on a trade route."
+    },
+    {
+      "id": "APHUG-D-009",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Regions such as the Bible Belt or the Midwest, whose borders differ from person to person, are",
+      "options": [
+        "formal regions",
+        "perceptual regions",
+        "political regions",
+        "functional regions",
+        "nodal regions"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A perceptual (vernacular) region exists in people's minds, so its boundaries vary by who is asked. Functional and nodal regions are the same idea, organized around a center."
+    },
+    {
+      "id": "APHUG-D-010",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Layering maps of roads, flood zones and existing schools to choose a site for a new school is a use of",
+      "options": [
+        "a global positioning system receiver",
+        "a geographic information system",
+        "a mental map",
+        "remote sensing alone",
+        "a national census"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A GIS stores data in layers and lets the user overlay and query them, which is what site selection needs. GPS only fixes a position."
+    },
+    {
+      "id": "APHUG-D-011",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The discredited idea that climate shapes the abilities and behavior of whole societies is",
+      "options": [
+        "possibilism",
+        "sustainability",
+        "environmental determinism",
+        "cultural ecology",
+        "the theory of sequent occupance"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Environmental determinism claimed that the physical environment causes human traits. Geographers rejected it, partly because it was used to justify colonial rule."
+    },
+    {
+      "id": "APHUG-D-012",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU1",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Clearing forest from steep slopes to make new farmland most directly increases the risk of",
+      "options": [
+        "a cooler local climate",
+        "richer soil over time",
+        "lower water tables near the coast",
+        "soil erosion and landslides",
+        "more groundwater in the valley"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Tree roots and leaf litter hold soil on slopes. Without them, rain washes soil away and saturated slopes slide more easily."
+    },
+    {
+      "id": "APHUG-D-013",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-D-S02",
+      "stem": "About what share of City K's migrants came from within 50 km?",
+      "options": [
+        "18%",
+        "30%",
+        "40%",
+        "60%",
+        "84%"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "18,400 / 30,500 = 0.603, about 60%. Adding the 51 to 200 km row too gives about 84%."
+    },
+    {
+      "id": "APHUG-D-014",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-D-S02",
+      "stem": "The pattern for migrants from within the country best illustrates",
+      "options": [
+        "brain drain",
+        "time-space compression",
+        "counterurbanization",
+        "hierarchical diffusion",
+        "distance decay"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The number of migrants falls steadily as distance from City K rises, which is distance decay."
+    },
+    {
+      "id": "APHUG-D-015",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Source analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APHUG-D-S02",
+      "stem": "Ravenstein would predict that City K draws long-distance migrants mainly because it",
+      "options": [
+        "has the most farmland around it",
+        "is close to the national border",
+        "has the oldest population in the country",
+        "is a large center of trade and industry",
+        "has a cooler climate than nearby towns"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Ravenstein observed that migrants who travel long distances usually head for great centers of commerce and industry, where jobs are most plentiful."
+    },
+    {
+      "id": "APHUG-D-016",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A family moves from a village to a market town and, years later, from the town to the capital. This is",
+      "options": [
+        "chain migration",
+        "step migration",
+        "forced migration",
+        "transhumance",
+        "return migration"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Step migration reaches a final destination through a series of smaller moves, often up the urban hierarchy."
+    },
+    {
+      "id": "APHUG-D-017",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A migrant heading for the capital who settles in a city along the way because she finds work there was drawn by",
+      "options": [
+        "chain migration",
+        "forced relocation",
+        "a push factor at home",
+        "an intervening opportunity",
+        "an intervening obstacle"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An intervening opportunity is a pull factor met on the way that ends the journey early. An intervening obstacle is a barrier, such as a border or a mountain range."
+    },
+    {
+      "id": "APHUG-D-018",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Workers allowed to live in a country for a set period to fill labor shortages are",
+      "options": [
+        "internally displaced persons",
+        "guest workers",
+        "naturalized citizens",
+        "asylum seekers",
+        "refugees"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Guest worker programs admit foreign workers on temporary permits, usually for farm, construction or factory work."
+    },
+    {
+      "id": "APHUG-D-019",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Ester Boserup argued that population growth",
+      "options": [
+        "always ends in famine and war",
+        "steadily lowers crop yields",
+        "has no effect on how land is farmed",
+        "makes farmers abandon their land for the cities",
+        "pushes farmers to adopt more intensive methods"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Boserup turned Malthus around: pressure from more people leads farmers to work land more intensively, with shorter fallow, irrigation and more labor, so output rises."
+    },
+    {
+      "id": "APHUG-D-020",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Neo-Malthusians differ from Malthus mainly in adding concern about",
+      "options": [
+        "rising wages for farm workers",
+        "resource depletion and environmental damage",
+        "the arithmetic growth of the food supply",
+        "migration from cities to suburbs",
+        "falling birth rates in Europe"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Neo-Malthusians argue that growth strains not only food but water, energy and ecosystems. The arithmetic growth of food was Malthus's own idea."
+    },
+    {
+      "id": "APHUG-D-021",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Most of the world's people live",
+      "options": [
+        "evenly across every continent",
+        "in the interiors of large deserts",
+        "at high elevations far away from the coasts and rivers",
+        "in lowlands with mild climates and fresh water",
+        "in high-latitude forests"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "People cluster where farming is easiest: river valleys, coastal plains and other lowlands with water and moderate climates, above all in East and South Asia."
+    },
+    {
+      "id": "APHUG-D-022",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The sharp drop in death rates in stage 2 of the demographic transition is mainly due to",
+      "options": [
+        "large-scale emigration",
+        "the spread of contraception",
+        "an aging population",
+        "falling birth rates as people move to cities",
+        "better food supply, sanitation and medicine"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Stage 2 begins when food, clean water and basic medicine lower death rates while birth rates stay high, so the population grows quickly."
+    },
+    {
+      "id": "APHUG-D-023",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Scale analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A country's fertility falls to replacement level, yet its population keeps growing for decades. This is mainly because",
+      "options": [
+        "many young adults are entering childbearing age",
+        "death rates rise sharply as the population grows older",
+        "fertility is still above 4",
+        "immigration has been stopped",
+        "life expectancy is falling"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Population momentum: a large young generation born when fertility was high is now having children, so births stay above deaths even at about 2.1 children per woman."
+    },
+    {
+      "id": "APHUG-D-024",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU2",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Within most less developed countries today, the largest internal migration flow is",
+      "options": [
+        "from the capital to small towns",
+        "from cities to farming frontiers",
+        "from cities to rural areas",
+        "from coasts to the mountains",
+        "from rural areas to cities"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Rural-to-urban migration, driven by jobs and services in cities, is the main internal flow in most less developed countries and drives their rapid urbanization."
+    },
+    {
+      "id": "APHUG-D-025",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-D-S03",
+      "stem": "The landscape described is most closely tied to which religion?",
+      "options": [
+        "Buddhism",
+        "Sikhism",
+        "Judaism",
+        "Islam",
+        "Hinduism"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Ritual bathing in a sacred river, cremation on its banks and shrines to many gods are features of Hindu sacred landscapes."
+    },
+    {
+      "id": "APHUG-D-026",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-D-S03",
+      "stem": "The festival crowds described are an example of",
+      "options": [
+        "counterurbanization",
+        "chain migration",
+        "pilgrimage",
+        "guest work",
+        "transhumance"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A pilgrimage is a journey to a sacred place for religious reasons, and its numbers swell at festivals."
+    },
+    {
+      "id": "APHUG-D-027",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-D-S03",
+      "stem": "The tent camps and extra trains show that a religious event can",
+      "options": [
+        "end the diffusion of a religion abroad",
+        "lower the town's population for good",
+        "change national borders at a global scale",
+        "turn an ethnic religion into a universalizing one",
+        "change land use and services at a local scale"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "For the festival weeks the town needs temporary housing, health care and transport, a local-scale effect of religion on land use."
+    },
+    {
+      "id": "APHUG-D-028",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After independence, a government renames streets and cities that had colonial names. This is an example of",
+      "options": [
+        "changing toponyms to assert identity",
+        "acculturation to colonial culture",
+        "relocation diffusion of a language",
+        "the creation of a lingua franca",
+        "stimulus diffusion of a custom"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Toponyms are place names. New states often replace colonial names to express national identity in the landscape."
+    },
+    {
+      "id": "APHUG-D-029",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A language that began as a pidgin and became the first language of a community is",
+      "options": [
+        "a language isolate",
+        "a lingua franca",
+        "a dialect",
+        "an official language",
+        "a creole"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A pidgin is a simplified contact language with no native speakers. When children grow up speaking it, it develops into a full creole."
+    },
+    {
+      "id": "APHUG-D-030",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Basque, which is not related to any other living language, is",
+      "options": [
+        "a lingua franca",
+        "a creole",
+        "an extinct language",
+        "a language isolate",
+        "a dialect of Spanish"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A language isolate has no known relatives in any language family. Basque is still spoken in northern Spain and southwestern France."
+    },
+    {
+      "id": "APHUG-D-031",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Sikhism's hearth is",
+      "options": [
+        "the Punjab region of South Asia",
+        "the Arabian Peninsula",
+        "the island of Sri Lanka",
+        "the Tibetan Plateau",
+        "the Ganges delta in Bengal"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Sikhism began in the Punjab, now divided between India and Pakistan, around 1500, and most Sikhs still live there."
+    },
+    {
+      "id": "APHUG-D-032",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Children of immigrants who speak the host language at school and work but keep their parents' religion and holidays show",
+      "options": [
+        "acculturation",
+        "relocation diffusion",
+        "ethnocentrism",
+        "assimilation",
+        "segregation"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Acculturation is adopting some traits of the host culture while keeping core traits of one's own. Full assimilation would mean giving up the religion and holidays too."
+    },
+    {
+      "id": "APHUG-D-033",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Spatial relationships",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A music style that began in poor urban neighborhoods and later spread to major labels and big cities shows",
+      "options": [
+        "sequent occupance",
+        "reverse hierarchical diffusion",
+        "stimulus diffusion",
+        "relocation diffusion",
+        "hierarchical diffusion from big cities"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Reverse hierarchical diffusion moves from people or places of lower status upward. Ordinary hierarchical diffusion starts at the top."
+    },
+    {
+      "id": "APHUG-D-034",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Scale analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Global media that lead teenagers in many countries to dress alike contribute to",
+      "options": [
+        "relocation diffusion",
+        "cultural convergence",
+        "cultural divergence",
+        "ethnic separatism",
+        "a folk culture revival"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Cultural convergence is the growing similarity of cultures as they come into contact, here through global media and brands."
+    },
+    {
+      "id": "APHUG-D-035",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Spanish, French and Italian are all",
+      "options": [
+        "language isolates with no relatives",
+        "Slavic languages descended from Greek",
+        "Celtic languages descended from Gaulish",
+        "Germanic languages descended from Norse",
+        "Romance languages descended from Latin"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The Romance branch of the Indo-European family grew out of the Latin spoken across the Roman Empire."
+    },
+    {
+      "id": "APHUG-D-036",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU3",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The belief that spirits live in natural features such as rivers, rocks and trees is",
+      "options": [
+        "secularism",
+        "deism",
+        "animism",
+        "monotheism",
+        "atheism"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Animism sees spirits in the natural world and is common in ethnic religions. Monotheism is belief in one god."
+    },
+    {
+      "id": "APHUG-D-037",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-D-S04",
+      "stem": "Border 2 is best classified as",
+      "options": [
+        "antecedent and physical",
+        "subsequent and physical",
+        "relic and no longer used",
+        "consequent and ethnic",
+        "superimposed and geometric"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Border 2 was imposed by outside powers without regard to the people living there, and it follows a line of longitude, so it is both superimposed and geometric."
+    },
+    {
+      "id": "APHUG-D-038",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-D-S04",
+      "stem": "Border 3 is best classified as",
+      "options": [
+        "a relic boundary",
+        "a superimposed boundary",
+        "a geometric boundary",
+        "an antecedent boundary",
+        "a consequent boundary"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A consequent (ethnographic) boundary is drawn to fit cultural differences such as language. It is also subsequent, since the area was settled first."
+    },
+    {
+      "id": "APHUG-D-039",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Scale analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APHUG-D-S04",
+      "stem": "Border 2 is most likely to cause which problem?",
+      "options": [
+        "Disputes over a shifting river channel",
+        "Arguments over which peak is highest",
+        "A landlocked state losing access to the sea",
+        "Language conflict inside each village",
+        "A divided people crossing it to reach pastures"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A border that splits the seasonal pastures of one herding people cuts across their way of life, so herders cross it and states clash over them."
+    },
+    {
+      "id": "APHUG-D-040",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A state with no coastline, which must rely on its neighbors for access to ports, is",
+      "options": [
+        "perforated",
+        "elongated",
+        "fragmented",
+        "prorupted",
+        "landlocked"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A landlocked state has no sea access of its own, so trade agreements and transit routes through neighbors matter greatly."
+    },
+    {
+      "id": "APHUG-D-041",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A state that completely surrounds another state is",
+      "options": [
+        "compact",
+        "perforated",
+        "fragmented",
+        "prorupted",
+        "elongated"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A perforated state has a hole in it formed by another state, as South Africa surrounds Lesotho."
+    },
+    {
+      "id": "APHUG-D-042",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A state made up of many islands or of separated pieces of territory is",
+      "options": [
+        "prorupted",
+        "elongated",
+        "compact",
+        "fragmented",
+        "perforated"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A fragmented state's territory is split by water or by other states, which makes it harder to govern and connect."
+    },
+    {
+      "id": "APHUG-D-043",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A state in which most power is held by the central government is",
+      "options": [
+        "an autonomous region",
+        "a supranational union",
+        "a unitary state",
+        "a confederation",
+        "a federal state"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A unitary state governs from the center, and any regional bodies have only the powers the center gives them."
+    },
+    {
+      "id": "APHUG-D-044",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The principle that a people should be free to choose its own government is",
+      "options": [
+        "gerrymandering",
+        "self-determination",
+        "irredentism",
+        "imperialism",
+        "sovereignty"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Self-determination underpinned the breakup of empires and decolonization after the world wars."
+    },
+    {
+      "id": "APHUG-D-045",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A district drawn so that a racial or ethnic minority makes up most of its voters is",
+      "options": [
+        "a reapportioned district",
+        "a packed district for the majority",
+        "a majority-minority district",
+        "a cracked district",
+        "an at-large district"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Majority-minority districts are drawn to give a minority group the chance to elect a representative of its choice."
+    },
+    {
+      "id": "APHUG-D-046",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Spreading one party's voters thinly across many districts, so that they are outvoted in each, is",
+      "options": [
+        "cracking",
+        "packing",
+        "annexation",
+        "reapportionment",
+        "devolution"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Cracking dilutes a party's voting strength by splitting its supporters. Packing concentrates them in a few districts."
+    },
+    {
+      "id": "APHUG-D-047",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Joining a supranational union most directly requires a state to",
+      "options": [
+        "abolish its national army",
+        "merge with its neighbors into one state",
+        "adopt the language of the largest member",
+        "give up some control over its own policies",
+        "give up its seat at the United Nations"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Members pool sovereignty in areas such as trade rules, so some decisions are made at the union level instead of nationally."
+    },
+    {
+      "id": "APHUG-D-048",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU4",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which would most likely act as a centripetal force?",
+      "options": [
+        "Poor transport to one region",
+        "A separatist political party",
+        "A sharp religious divide",
+        "A shared national language",
+        "Uneven development among regions"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A shared language helps bind a state's people together. The other options can pull a state apart."
+    },
+    {
+      "id": "APHUG-D-049",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-D-S05",
+      "stem": "The stepped fields described are",
+      "options": [
+        "long lots running back from a river",
+        "terraces that make flat land on slopes",
+        "feedlots for fattening cattle",
+        "center-pivot irrigation circles",
+        "fallow plots left to regrow forest"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Terracing cuts slopes into level steps that hold water and soil, allowing wet rice on steep land."
+    },
+    {
+      "id": "APHUG-D-050",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-D-S05",
+      "stem": "The village's settlement pattern is best described as",
+      "options": [
+        "dispersed",
+        "a grid of square sections",
+        "clustered",
+        "linear along a highway",
+        "a plantation estate"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The houses stand close together at the foot of the slope, a clustered pattern that leaves the slopes for fields."
+    },
+    {
+      "id": "APHUG-D-051",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-D-S05",
+      "stem": "The water buffalo in the landscape are most likely used mainly as",
+      "options": [
+        "a source of wool for sale",
+        "dairy animals for export",
+        "beef cattle for a feedlot",
+        "pack animals for long trade journeys",
+        "draft animals for plowing wet fields"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "In intensive rice farming water buffalo pull plows through flooded fields; the landscape shows hand labor and small plots, not commercial livestock."
+    },
+    {
+      "id": "APHUG-D-052",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Herding animals across dry lands with no permanent home is",
+      "options": [
+        "ranching",
+        "dairying",
+        "shifting cultivation",
+        "pastoral nomadism",
+        "transhumance"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Pastoral nomads move with their herds in search of water and grazing, mainly in dry regions of Africa and Asia."
+    },
+    {
+      "id": "APHUG-D-053",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Growing grapes, olives and citrus where summers are dry and winters are mild is",
+      "options": [
+        "intensive rice farming",
+        "dairying",
+        "Mediterranean agriculture",
+        "shifting cultivation",
+        "plantation agriculture"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Mediterranean agriculture is found around the Mediterranean Sea and in similar climates such as California and central Chile."
+    },
+    {
+      "id": "APHUG-D-054",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Green Revolution did least to raise yields of",
+      "options": [
+        "millet and cassava in sub-Saharan Africa",
+        "wheat in the Punjab of India and Pakistan",
+        "rice in the irrigated plains of Southeast Asia",
+        "rice in the Philippines",
+        "wheat in irrigated northwest Mexico"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The new varieties were bred for wheat and rice grown with irrigation and fertilizer. Africa's rain-fed staples such as millet, sorghum and cassava received little early research, and few farmers could afford the inputs."
+    },
+    {
+      "id": "APHUG-D-055",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The area around a city from which fresh milk can be delivered before it spoils is",
+      "options": [
+        "a watershed",
+        "a greenbelt",
+        "a milkshed",
+        "a hinterland of grain",
+        "a food desert"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The milkshed is the zone that supplies a city's milk. Refrigeration has made milksheds far larger than they once were."
+    },
+    {
+      "id": "APHUG-D-056",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Overgrazing and drought turning dry grasslands into desert is called",
+      "options": [
+        "eutrophication",
+        "deforestation",
+        "salinization",
+        "desertification",
+        "terracing"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Desertification is the spread of desert-like conditions, often at the edges of deserts such as the Sahel. Salinization is salt build-up from irrigation."
+    },
+    {
+      "id": "APHUG-D-057",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Planting different crops in a field from season to season to keep the soil healthy is",
+      "options": [
+        "slash and burn",
+        "fallowing",
+        "monocropping",
+        "double cropping",
+        "crop rotation"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Rotating crops, for example legumes after grain, restores nutrients and breaks pest cycles. Monocropping grows one crop year after year."
+    },
+    {
+      "id": "APHUG-D-058",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Agribusiness refers to",
+      "options": [
+        "farming run as a large, linked commercial system",
+        "government-owned collective farms",
+        "farming carried out by a nomadic group",
+        "food grown in city gardens",
+        "small family plots that feed only the farm household"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Agribusiness joins farming with seed, chemical, processing, transport and retail firms, often under one company or tight contracts."
+    },
+    {
+      "id": "APHUG-D-059",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Property lines that follow natural features such as streams, trees and large rocks are",
+      "options": [
+        "the open-field system",
+        "a grid of sections",
+        "township and range",
+        "metes and bounds",
+        "long lots"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The metes and bounds system describes land by landmarks and distances, which gives irregular field shapes."
+    },
+    {
+      "id": "APHUG-D-060",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU5",
+      "skill": "Scale analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "When shifting cultivators return to old plots before the forest has fully regrown, the main result is",
+      "options": [
+        "a shift to plantation farming",
+        "poorer soils and lower yields",
+        "richer soils and higher yields",
+        "more forest cover overall",
+        "less need for fallow land"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Shifting cultivation depends on a long fallow to rebuild soil. As population grows and fallow periods shorten, soils wear out."
+    },
+    {
+      "id": "APHUG-D-061",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-D-S06",
+      "stem": "Which statement is best supported by the data?",
+      "options": [
+        "Tract 4 is the most densely settled",
+        "Older homes are found mostly in the outer tracts",
+        "Transit use rises as distance from the CBD rises",
+        "Density falls as distance from the CBD rises",
+        "All four tracts have similar density"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Density drops from 14,200 to 380 people per square km between Tracts 1 and 4, while transit use falls and the share of new homes rises."
+    },
+    {
+      "id": "APHUG-D-062",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-D-S06",
+      "stem": "How many more people per square km live in Tract 2 than in Tract 3?",
+      "options": [
+        "1,720",
+        "5,700",
+        "7,420",
+        "9,900",
+        "12,100"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "7,800 - 2,100 = 5,700. Comparing Tract 1 with Tract 3 gives 12,100, and Tract 2 with Tract 4 gives 7,420."
+    },
+    {
+      "id": "APHUG-D-063",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-D-S06",
+      "stem": "Tract 4's figures are most consistent with",
+      "options": [
+        "a dense zone in transition",
+        "a high-rise central business district",
+        "low-density, car-dependent suburban growth",
+        "an old ethnic enclave near the CBD",
+        "a gentrifying inner-city district near the CBD"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Tract 4 is far from the CBD, sparsely settled, mostly built after 2000 and almost without transit riders: the profile of suburban sprawl."
+    },
+    {
+      "id": "APHUG-D-064",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Scale analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Cities that serve as command centers of the global economy, home to major banks and corporate headquarters, are",
+      "options": [
+        "edge cities",
+        "boomburbs",
+        "central places of low order",
+        "primate cities",
+        "world cities"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "World cities link national economies to global finance and trade. Not every primate city is a world city."
+    },
+    {
+      "id": "APHUG-D-065",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In McGee's model of the Southeast Asian city, the focus of the city is",
+      "options": [
+        "a central cathedral plaza",
+        "a market zone of street traders",
+        "the old colonial port zone",
+        "a ring of commuter suburbs",
+        "a single Western-style CBD"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "McGee found no single formal CBD; the city centers on the old colonial port zone, with commercial and government districts around it."
+    },
+    {
+      "id": "APHUG-D-066",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Informal settlements are best described as",
+      "options": [
+        "housing built without legal title or permits",
+        "gated communities for the wealthy",
+        "historic districts protected by law",
+        "suburbs built by large private developers on farmland",
+        "planned public housing towers"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Residents of informal settlements build on land they do not own, often without water, sewers or secure tenure."
+    },
+    {
+      "id": "APHUG-D-067",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Clearing old inner-city housing to make way for highways and new buildings, as many cities did in the mid-1900s, is",
+      "options": [
+        "new urbanism",
+        "gentrification",
+        "infilling",
+        "counterurbanization",
+        "urban renewal"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Urban renewal used public power to clear areas judged blighted, often displacing poor and minority residents."
+    },
+    {
+      "id": "APHUG-D-068",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Local laws that set which land uses are allowed in each part of a city are",
+      "options": [
+        "bid-rent curves",
+        "zoning ordinances",
+        "census tracts",
+        "redlining maps",
+        "property deeds"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Zoning separates residential, commercial and industrial uses and can set density and building height."
+    },
+    {
+      "id": "APHUG-D-069",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Spatial relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Movement of people from cities to rural areas and small towns is",
+      "options": [
+        "step migration",
+        "urban renewal",
+        "suburbanization",
+        "gentrification",
+        "counterurbanization"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Counterurbanization moves people out of the metropolitan area altogether, often as remote work and retirement free them from city jobs."
+    },
+    {
+      "id": "APHUG-D-070",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Smart growth policies aim mainly to",
+      "options": [
+        "limit sprawl with compact, mixed-use growth",
+        "spread new housing across farmland at the urban edge",
+        "move factories to the city center",
+        "separate homes from shops and offices",
+        "widen highways to the suburbs"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Smart growth steers new building toward existing areas with transit, protecting open land on the urban fringe."
+    },
+    {
+      "id": "APHUG-D-071",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The gravity model predicts that interaction between two cities grows with",
+      "options": [
+        "the number of borders between them",
+        "greater distance only",
+        "the age of each city",
+        "larger populations and shorter distance",
+        "smaller populations and greater distance"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Interaction is proportional to the product of the populations divided by the distance between them, often squared."
+    },
+    {
+      "id": "APHUG-D-072",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU6",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Cleaning up abandoned, possibly polluted industrial land so that it can be reused is",
+      "options": [
+        "redlining",
+        "deindustrialization",
+        "greenfield development",
+        "brownfield redevelopment",
+        "urban sprawl"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Brownfield redevelopment reuses land inside the city, unlike greenfield development on new land at the edge."
+    },
+    {
+      "id": "APHUG-D-073",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APHUG-D-S07",
+      "stem": "The district described is best identified as",
+      "options": [
+        "a food desert",
+        "a central business district",
+        "a cottage industry",
+        "a special economic zone",
+        "a greenbelt"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Special economic zones and export processing zones offer foreign firms lower taxes and duty-free inputs to attract export manufacturing."
+    },
+    {
+      "id": "APHUG-D-074",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APHUG-D-S07",
+      "stem": "The district's workforce most directly reflects",
+      "options": [
+        "rural-to-urban migration for factory jobs",
+        "a return of retirees to the coast",
+        "counterurbanization from inland cities",
+        "transhumance between the coast and inland",
+        "forced migration after a war"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Young women moved from inland farming provinces to take factory jobs, the internal migration that comes with export manufacturing."
+    },
+    {
+      "id": "APHUG-D-075",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Scale analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APHUG-D-S07",
+      "stem": "Which is a likely long-term criticism of the development model described?",
+      "options": [
+        "Reliance on foreign firms that may leave",
+        "Tariffs that block imported parts",
+        "A shortage of workers moving to the coast",
+        "Rising farm employment in the district",
+        "Too little foreign investment"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Firms drawn by tax breaks and low wages can move again when costs rise, and profits often leave the country, so growth may not last."
+    },
+    {
+      "id": "APHUG-D-076",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Under Weber's model, a soft drink bottler, whose product gains weight from local water, is best located",
+      "options": [
+        "midway along the route",
+        "near the sugar fields",
+        "at a port abroad",
+        "near its market",
+        "near the bottle factory"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A bulk-gaining industry locates near its customers, because water can be added locally and shipping the heavier finished product is costly."
+    },
+    {
+      "id": "APHUG-D-077",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A common criticism of Rostow's model is that it",
+      "options": [
+        "treats farming as the goal of development",
+        "assumes every country follows Europe's path",
+        "pays too much attention to colonialism",
+        "says growth needs no investment",
+        "ignores the role of industry"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Rostow based his stages on Western experience and gave little weight to colonial history and unequal trade, which dependency and world-systems theorists stress."
+    },
+    {
+      "id": "APHUG-D-078",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Concepts and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Street vending and other work that is untaxed and not regulated by the government make up",
+      "options": [
+        "the primary sector",
+        "the formal sector",
+        "the quaternary sector",
+        "the informal sector",
+        "the public sector"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The informal sector is large in many less developed countries and is missed by official employment and income figures."
+    },
+    {
+      "id": "APHUG-D-079",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Concepts and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Research, data analysis and other knowledge-based services are often classed as",
+      "options": [
+        "quaternary activities",
+        "primary activities",
+        "subsistence activities",
+        "secondary activities",
+        "cottage industries"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The quaternary sector handles information and knowledge; it is a subdivision of the broad service (tertiary) economy."
+    },
+    {
+      "id": "APHUG-D-080",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Concepts and processes",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A country that exports goods it can make at a lower opportunity cost than its trading partners is using",
+      "options": [
+        "absolute poverty",
+        "comparative advantage",
+        "economies of scale",
+        "import substitution",
+        "a trade deficit"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Comparative advantage holds that both partners gain when each specializes in what it gives up least to produce."
+    },
+    {
+      "id": "APHUG-D-081",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "An agreement among neighboring countries to remove tariffs on trade with one another creates",
+      "options": [
+        "an export processing zone",
+        "an import quota",
+        "a growth pole",
+        "a free trade area",
+        "a special economic zone"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A free trade area drops tariffs between its members, regional integration at a scale above the state. Export processing and special economic zones are areas inside one country."
+    },
+    {
+      "id": "APHUG-D-082",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Scale analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A company hiring another firm abroad to run its customer call center is",
+      "options": [
+        "import substitution",
+        "vertical integration",
+        "deglomeration",
+        "agglomeration",
+        "outsourcing"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Outsourcing moves a task to an outside firm, often in a country with lower wages, here for a service rather than manufacturing."
+    },
+    {
+      "id": "APHUG-D-083",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Spatial relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A large project placed in a lagging region to spark wider economic activity around it is",
+      "options": [
+        "a brownfield",
+        "a food desert",
+        "a periphery",
+        "a growth pole",
+        "a primate city"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A growth pole draws suppliers, workers and services, spreading development into the surrounding region."
+    },
+    {
+      "id": "APHUG-D-084",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "aphugU7",
+      "skill": "Scale analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The UN Sustainable Development Goals aim, among other things, to",
+      "options": [
+        "end extreme poverty while protecting the environment",
+        "move factories from poor to rich countries",
+        "raise tariffs to protect new industries",
+        "slow the spread of education for girls",
+        "replace national governments with a single world state"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The 17 goals adopted in 2015 cover poverty, hunger, health, education, gender equality, clean energy and climate, with targets for 2030."
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useMemo, useCallback, useState } 
 import { usePathname } from "next/navigation";
 import { Language, createT } from "@/i18n";
 import { useStore } from "@/store/useStore";
-import { pageLanguage } from "@/lib/pageLanguage";
+import { pageLanguage, testPageLanguage } from "@/lib/pageLanguage";
 import { countryLanguage, languageIsChosen, readLanguageCookie, writeLanguageCookie } from "@/lib/language";
 
 interface LanguageContextType {
@@ -51,7 +51,12 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   }, [chosen, storeLanguage]);
   // Landing pages keep the language of their URL; a country homepage shows in
   // its own language until the person picks one (lib/pageLanguage.ts).
-  const language = pageLanguage(pathname, preferredLanguage, chosen);
+  // A test's own pages run in the test's language (lib/pageLanguage.ts).
+  const testLanguages = useStore((state) => state.testLanguages);
+  const dmvState = useStore((state) => state.selectedState);
+  const language =
+    testPageLanguage(pathname, preferredLanguage, testLanguages ?? {}, dmvState) ??
+    pageLanguage(pathname, preferredLanguage, chosen);
 
   const setLanguage = useCallback(
     (lang: Language) => {

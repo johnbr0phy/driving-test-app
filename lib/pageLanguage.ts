@@ -7,7 +7,8 @@
 // contexts/LanguageContext.tsx applies this.
 
 import { DMV_LANGUAGES, type Language } from "@/i18n";
-import { examBaseLanguage, examLandingPath, getExamByPath } from "@/lib/exams";
+import { examBaseLanguage, examLandingPath, examLanguages, getExamByPath } from "@/lib/exams";
+import { dmvLanguagesFor, testLanguageFor } from "@/lib/testLanguage";
 import { REGIONS, regionHomePath } from "@/lib/region";
 
 // State landing suffixes in every DMV language (app/[slug], app/<lang>/[slug]).
@@ -54,4 +55,35 @@ export function pageLanguage(pathname: string | null | undefined, preferred: Lan
   const home = HOME_LANG.get(pathname);
   if (home && !chosen) return home;
   return preferred;
+}
+
+/**
+ * On a test's own pages (its dashboard, tests, training, results, stats) the
+ * whole page runs in the test's language, so picking "Questions in Español"
+ * turns the cards, buttons and questions Spanish together. Null elsewhere.
+ */
+/** True on a test's own pages, which run in the test's language. */
+export function isTestPagePath(pathname: string | null | undefined): boolean {
+  return testPageLanguage(pathname, "en", {}, null) !== null;
+}
+
+export function testPageLanguage(
+  pathname: string | null | undefined,
+  preferred: Language,
+  testLanguages: Partial<Record<string, Language>>,
+  dmvState: string | null
+): Language | null {
+  if (!pathname) return null;
+  const exam = getExamByPath(pathname);
+  if (exam) {
+    const onLanding =
+      pathname === examLandingPath(exam) ||
+      Object.values(exam.translations ?? {}).some((t) => t?.landingPath === pathname);
+    if (onLanding) return null;
+    return testLanguageFor(testLanguages[exam.id], examLanguages(exam), preferred, examBaseLanguage(exam));
+  }
+  if (DMV_BASES.some((b) => pathname === b || pathname.startsWith(`${b}/`))) {
+    return testLanguageFor(testLanguages.dmv, dmvLanguagesFor(dmvState), preferred, "en");
+  }
+  return null;
 }

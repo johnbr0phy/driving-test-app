@@ -3,27 +3,12 @@
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useStore } from "@/store/useStore";
 import type { Language } from "@/i18n";
-import { isViState } from "@/data/viStates";
-import { isKoState } from "@/data/koStates";
-import { isZhState } from "@/data/zhStates";
+import { dmvLanguagesFor, testLanguageFor } from "@/lib/testLanguage";
 
-/**
- * The language a test's questions are in, kept apart from the interface
- * language. Only languages the exam really exists in are offered; the
- * person's pick for this exam (useStore.testLanguages) wins, then their own
- * language when the exam has it, then the exam's own language.
- */
-export function testLanguageFor(
-  pick: Language | undefined,
-  offered: Language[],
-  preferred: Language,
-  base: Language
-): Language {
-  if (pick && offered.includes(pick)) return pick;
-  if (offered.includes(preferred)) return preferred;
-  return base;
-}
+export { dmvLanguagesFor, testLanguageFor };
 
+/** The language a test's questions are in (lib/testLanguage.ts), with its
+ *  choices and a setter for the dashboard's "Questions in". */
 export function useTestLanguage(examId: string, offered: Language[], base: Language = offered[0] ?? "en") {
   const { preferredLanguage } = useTranslation();
   const pick = useStore((s) => s.testLanguages?.[examId]);
@@ -35,16 +20,6 @@ export function useTestLanguage(examId: string, offered: Language[], base: Langu
     picked: !!pick && offered.includes(pick),
     setLang: (lang: Language) => setTestLanguage(examId, lang),
   };
-}
-
-/** The DMV's languages for a state: Spanish everywhere, Vietnamese, Korean and
- *  Chinese only in the states their state-specific questions cover. */
-export function dmvLanguagesFor(state: string | null | undefined): Language[] {
-  const langs: Language[] = ["en", "es"];
-  if (state && isViState(state)) langs.push("vi");
-  if (state && isKoState(state)) langs.push("ko");
-  if (state && isZhState(state)) langs.push("zh");
-  return langs;
 }
 
 /** The DMV's question language for the selected state. */

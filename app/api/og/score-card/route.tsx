@@ -30,6 +30,23 @@ async function loadFonts(): Promise<{ interBoldData: ArrayBuffer; interBlackData
   }
 }
 
+/**
+ * The tiger for this score. Exam tiger sets live in public/tigers (about
+ * 180 MB in all), far too big to bundle into this function (Vercel's 250 MB
+ * limit), so the image is fetched from the site's own static files. If that
+ * fails (a protected preview, say), the DMV face for the same score is read
+ * from disk instead: public/tiger_face_*.png is the only image bundled here.
+ */
+async function loadTiger(file: string, percentage: number, origin: string): Promise<Buffer> {
+  try {
+    const res = await fetch(new URL(file, origin));
+    if (res.ok) return Buffer.from(await res.arrayBuffer());
+  } catch {
+    // Fall through to the bundled DMV face.
+  }
+  return readFile(join(process.cwd(), "public", getTigerFace(percentage).slice(1)));
+}
+
 function getTagline(percentage: number, lang: string): string {
   if (lang === "es") {
     if (percentage >= 100) return "PUNTUACIÓN PERFECTA";
@@ -116,9 +133,8 @@ export async function GET(request: NextRequest) {
   const passed = percentage >= 70;
 
   // Load tiger face image and fonts in parallel
-  const tigerFile = getTigerFace(percentage, exam?.id).slice(1);
-  const tigerPath = join(process.cwd(), "public", tigerFile);
-  const [tigerData, fonts] = await Promise.all([readFile(tigerPath), loadFonts()]);
+  const tigerFile = getTigerFace(percentage, exam?.id);
+  const [tigerData, fonts] = await Promise.all([loadTiger(tigerFile, percentage, request.nextUrl.origin), loadFonts()]);
   const tigerBase64 = `data:image/png;base64,${tigerData.toString("base64")}`;
 
   const tagline = isTraining && exam

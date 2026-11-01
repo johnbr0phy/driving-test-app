@@ -7,7 +7,8 @@ const BUILD_LAST_MODIFIED = new Date().toUTCString();
 
 const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
-    "/api/og/score-card": ["./public/tiger_face_*.png", "./public/tigers/**/*.png"],
+    // Only the DMV faces: exam tigers are fetched over HTTP (see the route).
+    "/api/og/score-card": ["./public/tiger_face_*.png"],
     "/og/[examId]": ["./public/tigers/**/*.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
     "/og/q/[code]": ["./public/tiger.png", "./public/tiger_face_03.png"],
   },
@@ -15,6 +16,9 @@ const nextConfig: NextConfig = {
   // out of its function (it hit Vercel's 250 MB limit when they were traced in).
   outputFileTracingExcludes: {
     "/og/q/[code]": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
+    // The score card reads public/ by a computed path, so tracing would pull in
+    // all of it; it reads only tiger_face_*.png from disk (258 MB, Nov 2026).
+    "/api/og/score-card": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
   },
   images: {
     formats: ["image/avif", "image/webp"],
